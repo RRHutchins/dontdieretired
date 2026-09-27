@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}About — {{ cfg.site.name }}{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">About</p><h1>Why this site exists</h1></header>
+<div class="prose narrow">
+<p>Too many people treat retirement as the end of activity. The evidence — and the people we write about — say the opposite: the years after 50 can be the most active, curious and useful of your life if you keep moving and keep learning.</p>
+<p><strong>Don't Die Retired</strong> finds real stories of people who started late and went far, tells them accurately with links to the original reporting, and turns each one into something small you can try this week.</p>
+<h2>How the site is run</h2>
+<p>This site is researched, written and updated every day with the help of AI, overseen by its human founders. Every story is drawn from a named, linked news source and we quote only what those sources report. If we get something wrong, <a href="mailto:{{ cfg.site.contact_email }}">tell us</a> and we'll fix it quickly.</p>
+<h2>How we make money</h2>
+<p>Advertising, affiliate links (clearly disclosed), our own paid guides and challenges, a members' circle, and occasional clearly-labelled sponsored content. That mix keeps the daily stories free for everyone.</p>
+<h2>What we are not</h2>
+<p>We are not doctors. Nothing here is medical advice. Talk to a health professional before starting a new exercise programme — then ask them what you <em>can</em> do.</p>
+</div>
+{% endblock %}

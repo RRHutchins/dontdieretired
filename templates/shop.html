@@ -1,0 +1,22 @@
+{% extends "base.html" %}{% from "_macros.html" import affiliate_box %}
+{% block title %}Guides &amp; challenges — {{ cfg.site.name }}{% endblock %}
+{% block description %}Practical, printable plans for restarting after 50: strength, walking, learning and purpose.{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Shop</p><h1>Plans you can print and start on Monday</h1><p class="lead">Written by us, checked against the evidence, priced so they're an easy yes. Members get them all.</p></header>
+<div class="grid grid-3">
+{% for p in products.products %}
+<article class="card product">
+  <div class="card-body">
+    <p class="kicker">{{ p.kind }} · {{ categories[p.category].label }}</p>
+    <h3>{{ p.name }}</h3><p>{{ p.blurb }}</p>
+    <p class="price">{{ p.price }}</p>
+    <a class="btn btn-small" href="{{ p.url }}" target="_blank" rel="noopener" data-product="{{ p.id }}">Buy</a>
+  </div>
+</article>
+{% endfor %}
+</div>
+<h2>Kit we'd buy</h2>
+<div class="grid grid-2">
+{% for cid, c in categories.items() %}{% set picks = products.affiliate_picks | selectattr('category','equalto',cid) | list %}{% if picks %}{{ affiliate_box(picks, c.label) }}{% endif %}{% endfor %}
+</div>
+{% endblock %}

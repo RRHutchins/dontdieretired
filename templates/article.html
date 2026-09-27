@@ -1,0 +1,68 @@
+{% extends "base.html" %}{% from "_macros.html" import card, ad, affiliate_box, product_promo %}
+{% block title %}{{ a.title }} — {{ cfg.site.name }}{% endblock %}
+{% block description %}{{ a.excerpt }}{% endblock %}
+{% block ogtype %}article{% endblock %}
+{% block ogimage %}{{ a.image }}{% endblock %}
+{% block pagetype %}article{% endblock %}
+{% block head %}
+<script type="application/ld+json">
+{{ {"@context":"https://schema.org","@type":"Article","headline":a.title,"datePublished":a.date_iso,"dateModified":a.date_iso,
+    "image":cfg.site.url ~ a.image,"author":{"@type":"Organization","name":cfg.site.name},
+    "publisher":{"@type":"Organization","name":cfg.site.name,"url":cfg.site.url},"description":a.excerpt,"mainEntityOfPage":a.abs_url} | tojson }}
+</script>
+{% endblock %}
+{% block content %}
+<div class="article-layout">
+<article class="article" data-category="{{ a.category }}" data-tags="{{ a.tags|join(',') }}">
+  <p class="kicker"><a href="/{{ a.category }}/">{{ categories[a.category].label }}</a> · {{ a.date_human }} · {{ a.reading_time }} min read</p>
+  <h1>{{ a.title }}</h1>
+  {% if a.standfirst %}<p class="lead">{{ a.standfirst }}</p>{% endif %}
+  <img class="hero-img" src="{{ a.image }}" alt="" width="1200" height="630">
+
+  <div class="prose" data-ad-inject>
+    {{ a.html | safe }}
+  </div>
+
+  {% if a.try_this %}
+  <aside class="try-this">
+    <h3>Try this week</h3>
+    <ol>{% for t in a.try_this %}<li>{{ t }}</li>{% endfor %}</ol>
+  </aside>
+  {% endif %}
+
+  {% if a.sources %}
+  <section class="sources">
+    <h3>Sources</h3>
+    <ul>{% for s in a.sources %}<li><a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.title }}</a>{% if s.publisher %} — {{ s.publisher }}{% endif %}{% if s.date %}, {{ s.date }}{% endif %}</li>{% endfor %}</ul>
+    <p class="disclosure">Quotes are taken from the sources above. We link to the original reporting so you can read the full story.</p>
+  </section>
+  {% endif %}
+
+  <div class="share">
+    <span>Share:</span>
+    <a target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u={{ a.abs_url }}">Facebook</a>
+    <a target="_blank" rel="noopener" href="https://x.com/intent/tweet?url={{ a.abs_url }}&text={{ a.title|urlencode }}">X</a>
+    <a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?text={{ (a.title ~ ' ' ~ a.abs_url)|urlencode }}">WhatsApp</a>
+    <a href="mailto:?subject={{ a.title|urlencode }}&body={{ a.abs_url }}">Email</a>
+  </div>
+  <p class="tags">{% for t in a.tags %}<a href="/search/?q={{ t }}">#{{ t }}</a> {% endfor %}</p>
+</article>
+
+<aside class="sidebar">
+  {{ ad('sidebar') }}
+  {% set picks = products.affiliate_picks | selectattr('category', 'equalto', a.category) | list %}
+  {% if picks|length < 3 %}{% set picks = picks + (products.affiliate_picks | selectattr('category', 'equalto', 'move') | list) %}{% endif %}
+  {{ affiliate_box(picks[:4]) }}
+  {% set prod = (products.products | selectattr('category', 'equalto', a.category) | list + products.products) | first %}
+  {{ product_promo(prod) }}
+</aside>
+</div>
+
+{% if related %}
+<section>
+  <div class="section-head"><h2>Keep reading</h2></div>
+  <div class="grid grid-3">{% for r in related %}{{ card(r) }}{% endfor %}</div>
+</section>
+{% endif %}
+{{ ad('footer') }}
+{% endblock %}

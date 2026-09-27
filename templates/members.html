@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ cfg.membership.name }} — {{ cfg.site.name }}{% endblock %}
+{% block description %}Join a private circle of over-50s restarting together. Live Q&As, the full challenge library and an ad-free site.{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Membership</p><h1>{{ cfg.membership.name }}</h1><p class="lead">The site is free and always will be. Members keep it that way — and get more in return.</p></header>
+<div class="two-col">
+  <div class="prose">
+    <h2>What you get for {{ cfg.membership.price }}</h2>
+    <ul>
+      <li>Every 30-day challenge and printable plan, current and future</li>
+      <li>A monthly live Q&amp;A with a guest — a coach, physio, nutritionist or one of the people we've written about</li>
+      <li>A private members' group to report your week and cheer others on</li>
+      <li>Ad-free reading</li>
+      <li>A vote on what we cover next</li>
+    </ul>
+    <p>Cancel anytime. If it hasn't helped, we'll refund your first month.</p>
+  </div>
+  <div class="tier tier-paid">
+    <h2>Join</h2><p class="price">{{ cfg.membership.price }}</p>
+    <a class="btn" href="{{ cfg.membership.url }}" target="_blank" rel="noopener">Become a member</a>
+    <p class="meta">Payments handled by {{ cfg.membership.platform|capitalize }}.</p>
+  </div>
+</div>
+{% endblock %}

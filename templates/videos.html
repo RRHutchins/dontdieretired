@@ -1,0 +1,23 @@
+{% extends "base.html" %}{% from "_macros.html" import ad %}
+{% block title %}Inspiring videos — {{ cfg.site.name }}{% endblock %}
+{% block description %}Hand-picked films and talks about people who refused to slow down after 50.{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Watch</p><h1>Ten minutes that change how you think about age</h1><p class="lead">Curated daily. Every film features a real person, and we tell you why it earned its place.</p></header>
+<div class="video-grid video-grid-2">
+{% for v in videos %}
+<div class="video" data-tags="{{ v.tags|join(',') }}">
+  <div class="video-frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/{{ v.id }}" title="{{ v.title }}" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+  <h3>{{ v.title }}</h3>
+  <p class="meta">{{ v.channel }}</p>
+  <p>{{ v.blurb }}</p>
+  {% if v.why %}<p class="why"><strong>Why watch:</strong> {{ v.why }}</p>{% endif %}
+</div>
+{% if loop.index == 4 %}{{ ad('in_article') }}{% endif %}
+{% endfor %}
+</div>
+<aside class="promo">
+  <p class="kicker">Coming soon</p>
+  <h4>Our own short films</h4>
+  <p>We're producing 60-second "second start" stories for YouTube, Instagram and TikTok. <a href="{{ cfg.social.youtube }}">Subscribe on YouTube</a> to see them first.</p>
+</aside>
+{% endblock %}

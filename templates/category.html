@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% from "_macros.html" import card, ad %}
+{% block title %}{{ c.label }} — {{ cfg.site.name }}{% endblock %}
+{% block description %}{{ c.blurb }}{% endblock %}
+{% block content %}
+<header class="page-head cat-{{ cid }}"><p class="kicker">Section</p><h1>{{ c.label }}</h1><p class="lead">{{ c.blurb }}</p></header>
+<div class="grid grid-3">{% for a in items %}{{ card(a) }}{% endfor %}</div>
+{% if not items %}<p>New stories arrive here daily. <a href="/newsletter/">Get them by email.</a></p>{% endif %}
+{{ ad('footer') }}
+{% endblock %}

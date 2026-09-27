@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Sponsor &amp; advertise — {{ cfg.site.name }}{% endblock %}
+{% block description %}Reach an engaged, affluent over-50 audience who are actively investing in their health, learning and next chapter.{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Partners</p><h1>Reach people over 50 who are doing something about it</h1><p class="lead">Our readers are not "retirees". They are joining gyms, booking lessons, starting businesses and buying the kit to do it. If your product helps them, we'd like to talk.</p></header>
+<div class="two-col">
+  <div class="prose">
+    <h2>Who reads us</h2>
+    <p>Adults 50–80 in the UK, US, Canada and Australia. Interests: fitness after 50, strength training, running, swimming, cycling, walking holidays, learning, second careers and volunteering. Audience figures are updated monthly in our media kit — ask for the latest.</p>
+    <h2>What we offer</h2>
+    <table class="rate">
+      {% for r in cfg.sponsorship.rate_card %}<tr><td>{{ r.item }}</td><td>{{ r.price }}</td></tr>{% endfor %}
+    </table>
+    <p>All sponsored content is clearly labelled. We only work with products we would recommend to our own parents.</p>
+  </div>
+  <div class="tier"><h2>Get the media kit</h2><p>Email <a href="mailto:{{ cfg.site.contact_email }}?subject=Sponsorship">{{ cfg.site.contact_email }}</a> with what you sell and who it's for. We reply within two working days.</p></div>
+</div>
+{% endblock %}

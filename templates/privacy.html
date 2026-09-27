@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Privacy &amp; cookies — {{ cfg.site.name }}{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Legal</p><h1>Privacy &amp; cookies</h1></header>
+<div class="prose narrow">
+<p><strong>What we collect.</strong> If you join the newsletter we store your email address and, if you chose one, your reader profile (e.g. "Restarter") with our email provider ({{ cfg.newsletter.provider|capitalize }}). We use it to send you the email and nothing else.</p>
+<p><strong>Analytics.</strong> {% if cfg.analytics.plausible_domain %}We use Plausible, a privacy-friendly analytics tool that sets no cookies and collects no personal data.{% else %}We use analytics to see which pages are read.{% endif %}</p>
+<p><strong>Advertising cookies.</strong> If you accept cookies, our advertising partner (Google AdSense or equivalent) may set cookies to show relevant ads. Choose "Essential only" in the banner to opt out; you can change this anytime via "Change my profile" in the footer.</p>
+<p><strong>Your profile.</strong> Your chosen reader profile is stored in your browser only (localStorage) so we can put relevant stories first. It never leaves your device unless you join the newsletter.</p>
+<p><strong>Affiliate links.</strong> Some links are affiliate links (Amazon Associates and others). We may earn a commission at no extra cost to you.</p>
+<p><strong>Embedded videos.</strong> YouTube videos are loaded in privacy-enhanced mode (youtube-nocookie.com).</p>
+<p><strong>Contact / deletion.</strong> Email <a href="mailto:{{ cfg.site.contact_email }}">{{ cfg.site.contact_email }}</a> to ask what we hold or to delete it.</p>
+</div>
+{% endblock %}

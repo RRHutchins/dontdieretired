@@ -1,0 +1,63 @@
+{% extends "base.html" %}{% from "_macros.html" import card, ad, product_promo %}
+{% block pagetype %}home{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-text">
+    <p class="kicker">For everyone over 50 who isn't finished yet</p>
+    <h1>Retire from your job.<br>Never from your <em>life</em>.</h1>
+    <p class="lead">Real people who started running at 70, powerlifting at 65, a doctorate at 80. Every day we find another one — and give you one small thing to try.</p>
+    <div class="hero-actions">
+      <a class="btn" href="/start-here/">Start here</a>
+      <button class="btn btn-ghost" data-open-segments>Personalise this site</button>
+    </div>
+  </div>
+  <a href="{{ featured.url }}" class="hero-card">
+    <img src="{{ featured.image }}" alt="" width="1200" height="630">
+    <span class="kicker">Today's story</span>
+    <strong>{{ featured.title }}</strong>
+  </a>
+</section>
+
+<section class="for-you" id="for-you" hidden>
+  <h2>Picked for <span data-segment-label>you</span></h2>
+  <div class="grid grid-3" data-for-you></div>
+</section>
+
+<section>
+  <div class="section-head"><h2>Latest</h2><a href="/stories/">All stories →</a></div>
+  <div class="grid grid-3">
+    {% for a in latest %}{{ card(a) }}{% endfor %}
+  </div>
+</section>
+
+{{ ad('in_article') }}
+
+<section class="cats">
+  {% for cid, c in categories.items() %}
+  <a class="cat cat-{{ cid }}" href="/{{ cid }}/"><strong>{{ c.label }}</strong><span>{{ c.blurb }}</span></a>
+  {% endfor %}
+</section>
+
+<section class="two-col">
+  <div>
+    <div class="section-head"><h2>Watch</h2><a href="/videos/">All videos →</a></div>
+    <div class="video-grid">
+      {% for v in videos[:2] %}
+      <div class="video">
+        <div class="video-frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/{{ v.id }}" title="{{ v.title }}" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+        <p><strong>{{ v.title }}</strong><br><small>{{ v.channel }} — {{ v.blurb }}</small></p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div>
+    {{ product_promo(products.products[0]) }}
+    <aside class="promo promo-members">
+      <p class="kicker">{{ cfg.membership.name }}</p>
+      <h4>Join the members' circle <span class="price">{{ cfg.membership.price }}</span></h4>
+      <p>Monthly live Q&amp;A, the full challenge library, an ad-free site and a private group of people doing the same thing you are.</p>
+      <a class="btn btn-small" href="/members/">Find out more</a>
+    </aside>
+  </div>
+</section>
+{% endblock %}

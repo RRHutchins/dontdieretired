@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="{{ cfg.site.language }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ cfg.site.name }} — {{ cfg.site.tagline }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ cfg.site.description }}{% endblock %}">
+<link rel="canonical" href="{{ cfg.site.url }}{{ path }}">
+<link rel="alternate" type="application/rss+xml" title="{{ cfg.site.name }}" href="/feed.xml">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<meta property="og:site_name" content="{{ cfg.site.name }}">
+<meta property="og:type" content="{% block ogtype %}website{% endblock %}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ cfg.site.url }}{{ path }}">
+<meta property="og:image" content="{{ cfg.site.url }}{% block ogimage %}/static/og-default.png{% endblock %}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ cfg.site.twitter_handle }}">
+{% block head %}{% endblock %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+{% if cfg.analytics.plausible_domain %}<script defer data-domain="{{ cfg.analytics.plausible_domain }}" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>{% endif %}
+{% if cfg.ads.enabled and cfg.ads.adsense_client %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ cfg.ads.adsense_client }}" crossorigin="anonymous"></script>{% endif %}
+</head>
+<body data-page="{% block pagetype %}page{% endblock %}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/"><span class="brand-mark">▲</span> Don't Die <em>Retired</em></a>
+    <nav class="nav" aria-label="Main">
+      {% for cid, c in categories.items() %}<a href="/{{ cid }}/" {% if path.startswith('/' ~ cid ~ '/') %}aria-current="page"{% endif %}>{{ c.label }}</a>{% endfor %}
+      <a href="/videos/">Videos</a>
+      <a href="/start-here/">Start here</a>
+      <a href="/shop/">Shop</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-small" href="/newsletter/">Free weekly email</a>
+      <a class="icon-btn" href="/search/" aria-label="Search">⌕</a>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+{% block content %}{% endblock %}
+</main>
+
+<section class="wrap newsletter-band" id="newsletter">
+  <div class="nl-inner">
+    <div>
+      <h2>{{ cfg.newsletter.list_name }}</h2>
+      <p>One real story, one thing to try, every week. {{ cfg.newsletter.lead_magnet }} when you join.</p>
+    </div>
+    <form class="nl-form" action="{{ cfg.newsletter.form_action }}" method="post" target="_blank" data-nl>
+      <label class="sr-only" for="nl-email">Email address</label>
+      <input id="nl-email" type="email" name="email" placeholder="you@example.com" required>
+      <input type="hidden" name="tag" value="" data-segment-field>
+      <button class="btn" type="submit">Join free</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="brand-foot">Don't Die <em>Retired</em></p>
+      <p>{{ cfg.site.tagline }}</p>
+      <p class="social">
+        {% for k, v in cfg.social.items() if k != 'scheduler' %}<a href="{{ v }}" rel="me noopener" target="_blank">{{ k|capitalize }}</a>{% endfor %}
+      </p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      {% for cid, c in categories.items() %}<a href="/{{ cid }}/">{{ c.label }}</a>{% endfor %}
+      <a href="/videos/">Videos</a><a href="/feed.xml">RSS</a>
+    </div>
+    <div>
+      <h4>Support us</h4>
+      <a href="/newsletter/">Newsletter</a>
+      <a href="/shop/">Guides &amp; challenges</a>
+      <a href="/members/">{{ cfg.membership.name }}</a>
+      <a href="/sponsor/">Sponsor / advertise</a>
+    </div>
+    <div>
+      <h4>About</h4>
+      <a href="/about/">About &amp; how this site is run</a>
+      <a href="/privacy/">Privacy &amp; cookies</a>
+      <a href="mailto:{{ cfg.site.contact_email }}">Contact</a>
+      <button class="linklike" data-open-segments>Change my profile</button>
+    </div>
+  </div>
+  <div class="wrap footnote">
+    <p>{{ cfg.affiliates.disclosure }}</p>
+    <p>Nothing here is medical advice. Check with a health professional before starting a new exercise programme. © {{ now.year }} {{ cfg.site.name }}. Content is researched, written and updated daily with the help of AI and reviewed against the cited sources.</p>
+  </div>
+</footer>
+
+<!-- Audience targeting: who are you? -->
+<div class="modal" id="segment-modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="seg-title">
+    <h2 id="seg-title">Which of these sounds most like you?</h2>
+    <p>We'll put the most useful stories first. Takes two seconds, changes anytime.</p>
+    <div class="seg-grid">
+      {% for s in segments %}
+      <button class="seg" data-segment="{{ s.id }}"><strong>{{ s.label }}</strong><span>{{ s.blurb }}</span></button>
+      {% endfor %}
+    </div>
+    <button class="linklike" data-close-segments>Skip for now</button>
+  </div>
+</div>
+
+<!-- Consent banner (ads/analytics cookies) -->
+<div class="consent" id="consent" hidden>
+  <p>We use cookies for ads and to see which stories help most. <a href="/privacy/">Details</a>.</p>
+  <div><button class="btn btn-small" data-consent="all">Accept</button> <button class="btn btn-small btn-ghost" data-consent="essential">Essential only</button></div>
+</div>
+
+<script>
+window.DDR = {
+  ads: {{ cfg.ads | tojson }},
+  segments: {{ segments | tojson }},
+  affiliateTag: {{ cfg.affiliates.amazon_uk_tag | tojson }}
+};
+</script>
+<script src="/static/app.js" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

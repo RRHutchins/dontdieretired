@@ -1,0 +1,50 @@
+# Digital products (own IP — highest margin). URLs point at the Gumroad store; create each product there.
+products:
+  - id: restart30
+    name: "The 30-Day Restart"
+    kind: Challenge
+    category: move
+    price: "£9"
+    blurb: "A printable month of ten-minute movements for people who haven't exercised in years. Chair-to-walk-to-stairs progression, with a tick box for every day."
+    url: "https://dontdieretired.gumroad.com/l/restart30"
+  - id: strong60
+    name: "Strong at 60: the 12-week strength plan"
+    kind: Plan
+    category: move
+    price: "£14"
+    blurb: "Two sessions a week, home or gym, written for beginners over 50. Includes the 'why' behind every exercise and a progress log."
+    url: "https://dontdieretired.gumroad.com/l/strong60"
+  - id: sharp
+    name: "Sharp: 8 weeks to a learning habit"
+    kind: Course
+    category: think
+    price: "£12"
+    blurb: "How to learn a language, instrument or subject after 50 — spaced practice, the 20-minute slot, and a weekly review sheet."
+    url: "https://dontdieretired.gumroad.com/l/sharp"
+  - id: secondact
+    name: "Second Act: the 90-day venture workbook"
+    kind: Workbook
+    category: earn
+    price: "£19"
+    blurb: "From 'I've got an idea' to first paying customer in 90 days. Templates for the offer, the first ten conversations and the money."
+    url: "https://dontdieretired.gumroad.com/l/secondact"
+  - id: bundle
+    name: "Everything bundle"
+    kind: Bundle
+    category: stories
+    price: "£29"
+    blurb: "All four plans, plus every future release for a year. Members get this free."
+    url: "https://dontdieretired.gumroad.com/l/bundle"
+
+# Affiliate picks — Amazon UK search/product links; build.py/app.js append the Associates tag.
+affiliate_picks:
+  - {category: move, name: "Resistance band set with door anchor", why: "the cheapest way to start strength work at home", url: "https://www.amazon.co.uk/s?k=resistance+bands+set+door+anchor"}
+  - {category: move, name: "Adjustable dumbbells (2–20 kg)", why: "one pair replaces a rack; what most of our late-starting lifters began with", url: "https://www.amazon.co.uk/s?k=adjustable+dumbbells"}
+  - {category: move, name: "Cushioned walking shoes", why: "the single purchase that keeps a walking habit going", url: "https://www.amazon.co.uk/s?k=walking+shoes+cushioned"}
+  - {category: move, name: "Fitness tracker with step count and heart rate", why: "a number to beat, gently", url: "https://www.amazon.co.uk/s?k=fitness+tracker"}
+  - {category: think, name: "Noise-cancelling headphones", why: "for lessons, podcasts and audiobooks on the move", url: "https://www.amazon.co.uk/s?k=noise+cancelling+headphones"}
+  - {category: think, name: "A5 dotted notebook", why: "a learning log works better on paper", url: "https://www.amazon.co.uk/s?k=a5+dotted+notebook"}
+  - {category: earn, name: "The 100-Year Life (Gratton & Scott)", why: "the best book on why a 'second act' is now normal", url: "https://www.amazon.co.uk/s?k=the+100-year+life+gratton+scott"}
+  - {category: earn, name: "Laptop stand and keyboard", why: "if you're working again, protect your neck", url: "https://www.amazon.co.uk/s?k=laptop+stand+keyboard"}
+  - {category: connect, name: "Walking poles", why: "confidence on hills and group walks", url: "https://www.amazon.co.uk/s?k=walking+poles"}
+  - {category: stories, name: "Younger Next Year (Crowley & Lodge)", why: "the book most of our readers say started them", url: "https://www.amazon.co.uk/s?k=younger+next+year"}

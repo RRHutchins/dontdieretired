@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Free weekly email — {{ cfg.site.name }}{% endblock %}
+{% block description %}One real story and one thing to try, every week. Free, with a paid tier for those who want more.{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Newsletter</p><h1>{{ cfg.newsletter.list_name }}</h1><p class="lead">Every Sunday morning: one real story, one thing to try, one thing to read. No spam. Unsubscribe in one click.</p></header>
+<div class="two-col">
+  <div class="tier">
+    <h2>Free</h2><p class="price">£0</p>
+    <ul><li>The weekly email</li><li>{{ cfg.newsletter.lead_magnet }}</li><li>First look at new challenges</li></ul>
+    <form class="nl-form nl-form-page" action="{{ cfg.newsletter.form_action }}" method="post" target="_blank" data-nl>
+      <input type="email" name="email" placeholder="you@example.com" required aria-label="Email"><input type="hidden" name="tag" value="" data-segment-field>
+      <button class="btn" type="submit">Join free</button>
+    </form>
+  </div>
+  <div class="tier tier-paid">
+    <h2>Second Start Plus</h2><p class="price">{{ cfg.newsletter.paid_tier_price }}</p>
+    <ul><li>Everything in free</li><li>Full 30-day challenge library</li><li>Monthly members' Q&amp;A</li><li>Ad-free reading on the site</li><li>Printable weekly planners</li></ul>
+    {% if cfg.newsletter.paid_tier_url %}<a class="btn" href="{{ cfg.newsletter.paid_tier_url }}">Upgrade</a>{% else %}<a class="btn" href="/members/">See membership</a>{% endif %}
+  </div>
+</div>
+{% endblock %}

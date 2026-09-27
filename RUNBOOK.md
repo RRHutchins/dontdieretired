@@ -1,0 +1,62 @@
+# Don't Die Retired — Operations Runbook
+
+This is the instruction set Claude follows to run dontdieretired.com. It is written so a fresh Claude session with this repo can do the job without any other context.
+
+## 1. What the site is
+A static site for over-50s, encouraging physical and mental activity, run by AI with human founders. Every article is built on a real, named, linked news story. Tone: positive, plain, no hype, no medical claims, no "you must". British spelling.
+
+Repo layout: `site.yaml` (config), `content/articles/*.md`, `content/videos.yaml`, `content/products.yaml`, `templates/`, `static/`, `build.py` → `dist/`; `social/` gets a post pack per article.
+
+## 2. Daily job (runs every morning, ~06:00 UK)
+1. **Find a story.** Web-search for a genuine, recent story of someone 50+ starting or achieving something (sport, study, business, creative, volunteering). Prefer 2024–2026, reputable outlets (BBC, Guardian, regional UK press, ABC AU, CBC, NYT/AP, Guinness). Fetch and read the source. Only use facts and quotes visible on the page. Rotate: women/men, UK/international, physical/mental, ages 50s–90s, and rotate categories (move / think / earn / connect / stories).
+2. **Write it.** `python new_article.py "Title" --category X --tags a,b --segments restarter,mover`. Fill front matter: `hook` (≤120 chars, used on social + image), `lesson` (one sentence), `standfirst`, `summary`, 3 `try_this` actions, `sources` with URLs. Body 450–700 words: the story, 2–3 verified quotes, a "why this matters" section with the evidence, a practical section. Link to 1–2 related articles.
+3. **Check the videos page.** Once a week add one verified YouTube ID to `content/videos.yaml` (verify via `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=ID&format=json`).
+4. **Build + verify.** `python build.py`. Open `dist/<category>/<slug>/index.html`; confirm sources render, no template errors, image generated.
+5. **Publish.** `git add -A && git commit -m "Daily: <title>" && git push` (GitHub Actions deploys to Pages in ~1 min).
+6. **Social.** `python post_social.py social/<date>-<slug>` (needs scheduler credentials; otherwise the posts sit in `posts.md` for Zapier/manual). Image cards: `square.png` (IG/FB), `story.png` (Reels/Stories/TikTok cover), `landscape.png` (X/LinkedIn/FB link).
+7. **Short video.** Send `short_video_script.md` to the video tool (HeyGen/Pictory/InVideo API) when that account exists; upload to YouTube Shorts, Reels, TikTok via the scheduler.
+
+## 3. Weekly job (Sunday)
+- Newsletter: assemble the week's best story + one "try this" + one video into the provider's editor (Buttondown/Beehiiv) and send to the free list; a longer version with the printable planner to the paid list.
+- Analytics review (Plausible): top pages, entry pages, `segment` event split, `affiliate_click`, `product_click`, `newsletter_submit`, `scroll_depth`. Log the numbers in `reports/YYYY-WW.md`.
+- Apply the **improvement loop** in §5.
+
+## 4. Revenue stack — setup checklist (owner does these once; Claude wires them in `site.yaml`)
+| Stream | Account to create | Where it plugs in | Turns on when |
+|---|---|---|---|
+| Display ads | Google AdSense (day 1); apply to Ezoic at ~10k sessions/mo, Mediavine/Raptive at 50k+ | `ads.*` in site.yaml; slots already in templates; consent banner handles GDPR | AdSense approval (needs ~20+ articles, privacy page — done) |
+| Affiliate | Amazon Associates UK + US; later Awin/Impact for fitness brands, Decathlon, Wiggle etc. | `affiliates.amazon_uk_tag`; `content/products.yaml` picks; app.js appends tag | Immediately after approval (must make 3 sales in 180 days to keep Amazon account) |
+| Newsletter | Buttondown (free to 100 subs) or Beehiiv | `newsletter.form_action`; segment passed as tag | Day 1 |
+| Paid newsletter tier | Buttondown/Beehiiv paid subscriptions | `newsletter.paid_tier_url` | When free list > 500 |
+| Digital products | Gumroad (0 monthly fee, ~10% + fees) | `products.store_url`, `content/products.yaml` | Day 1 — Claude writes the PDFs (see §6) |
+| Membership | Ko-fi (0% platform fee on memberships) or Patreon | `membership.url` | When list > 1,000 or first live Q&A guest booked |
+| Sponsorship | None — email | `/sponsor/` page + rate card in site.yaml | Pitch from 10k monthly sessions |
+| Platform payouts | Meta (FB/IG) monetisation, X Creator Revenue, YouTube Partner, TikTok Creator Rewards | Scheduler posts drive it | At each platform's threshold (see plan document) |
+| Lead-gen / courses (later) | Own cohort course or Teachable | `/shop/` | When product sales prove demand |
+
+## 5. Improvement loop (the "if traffic grows, we improve" rule)
+Every Sunday, compare this week with the last four. Act on triggers:
+- **Article read depth**: if `scroll_depth 90` < 40% of `scroll_depth 50` on a format → shorten, add sub-heads, move "Try this" higher. Test one change for two weeks.
+- **Traffic > 1,000 sessions/week** → start the short-video pipeline properly (daily Reel/Short/TikTok from `short_video_script.md`), because video is the cheapest way to multiply reach at that stage.
+- **Traffic > 5,000/week** → commission/produce one longer YouTube piece per week (5–8 min "second start" story, script written by Claude); apply to Ezoic.
+- **Segment split** shows one profile > 40% → write 2 of 7 weekly articles for that segment; build the next digital product for it.
+- **Affiliate clicks > 2% of article views** on a category → add a "kit list" article for that category (higher-intent, better conversion).
+- **Newsletter signups < 1% of visitors** → change the lead magnet or move the form above the fold; test two weeks.
+- **Product clicks but no sales** → lower the price or add a preview PDF page.
+- **Any article shared > 50 times** → make a video of it and a follow-up article.
+
+## 6. Digital products Claude produces (own IP, ~90% margin)
+Write as Word/PDF with the docx skill: The 30-Day Restart (£9), Strong at 60 (£14), Sharp (£12), Second Act workbook (£19), Bundle (£29). Also the free lead magnet: 7-Day Restart Plan. Upload to Gumroad, paste the product URLs into `content/products.yaml`.
+
+## 7. Guard-rails
+- Never invent facts, quotes, ages or names. If the source can't be fetched, don't run the story.
+- Never give medical advice or dosing; always "check with a GP first".
+- Label sponsored content; keep the affiliate disclosure on every page (it's in the footer).
+- No ageist framing, no "despite their age" tone, no before/after body shaming.
+- Respect the `hidden`-by-default consent banner: ads load only after consent (handled in app.js).
+- Keep the same URL for an article once published (slug in front matter).
+
+## 8. Hosting and DNS (one-time)
+1. Create GitHub repo `dontdieretired`, push this folder. Settings → Pages → Source: GitHub Actions.
+2. At the registrar, add DNS: `A` records for `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153; `CNAME` `www` → `<github-user>.github.io`. Enable "Enforce HTTPS" in Pages once the certificate issues.
+3. Netlify alternative: "Import from Git", build command `pip install -r requirements.txt && python build.py --no-social`, publish dir `dist`.

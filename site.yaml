@@ -1,0 +1,82 @@
+# ---------------------------------------------------------------
+# Don't Die Retired — site configuration
+# Fill in the IDs as each account is created. Empty = feature hidden.
+# ---------------------------------------------------------------
+site:
+  name: "Don't Die Retired"
+  tagline: "Life after 50 is not a wind-down. It's a second start."
+  url: "https://dontdieretired.com"
+  description: "Real stories, practical plans and daily encouragement for people over 50 who intend to stay active in body and mind."
+  language: "en-GB"
+  author: "The Don't Die Retired team"
+  contact_email: "hello@dontdieretired.com"
+  twitter_handle: "@dontdieretired"
+
+analytics:
+  # Choose ONE. Plausible is privacy-friendly and needs no consent banner for basic stats.
+  plausible_domain: "dontdieretired.com"     # e.g. dontdieretired.com  (leave "" to disable)
+  ga4_id: ""                                 # e.g. G-XXXXXXXXXX
+  hotjar_or_clarity_id: ""                   # Microsoft Clarity project id (free heatmaps)
+
+ads:
+  enabled: false                             # set true once AdSense/Ezoic approved
+  network: "adsense"                         # adsense | ezoic | mediavine | raptive
+  adsense_client: ""                         # e.g. ca-pub-1234567890123456
+  slots:
+    in_article: ""                           # AdSense slot ids
+    sidebar: ""
+    footer: ""
+
+affiliates:
+  amazon_uk_tag: "dontdieretired-21"         # Amazon Associates UK tracking id
+  amazon_us_tag: "dontdieretired-20"
+  disclosure: "Some links on this page are affiliate links. If you buy through them we may earn a small commission at no extra cost to you. We only recommend things we would use ourselves."
+
+newsletter:
+  provider: "buttondown"                     # buttondown | beehiiv | mailerlite | kit
+  form_action: "https://buttondown.com/api/emails/embed-subscribe/dontdieretired"
+  list_name: "The Second Start — free weekly email"
+  lead_magnet: "Free: the 7-Day Restart Plan (PDF)"
+  paid_tier_url: ""                          # Buttondown/Beehiiv paid subscription link
+  paid_tier_price: "£4/month"
+
+products:
+  platform: "gumroad"                        # gumroad | lemonsqueezy | payhip
+  store_url: "https://dontdieretired.gumroad.com"
+
+membership:
+  platform: "kofi"                           # kofi | patreon | buymeacoffee
+  url: "https://ko-fi.com/dontdieretired"
+  price: "£5/month"
+  name: "The Restart Circle"
+
+sponsorship:
+  media_kit_url: "/sponsor/"
+  rate_card:
+    - {item: "Sponsored article (written by us, clearly labelled)", price: "from £250"}
+    - {item: "Newsletter sponsor slot", price: "from £150"}
+    - {item: "Video/short-form mention", price: "from £200"}
+    - {item: "Monthly category sponsorship", price: "from £600"}
+
+social:
+  facebook: "https://facebook.com/dontdieretired"
+  instagram: "https://instagram.com/dontdieretired"
+  x: "https://x.com/dontdieretired"
+  youtube: "https://youtube.com/@dontdieretired"
+  pinterest: "https://pinterest.com/dontdieretired"
+  tiktok: "https://tiktok.com/@dontdieretired"
+  scheduler: "buffer"                        # buffer | publer | zapier — used by RUNBOOK
+
+audience_segments:
+  - {id: "restarter", label: "The Restarter", blurb: "I've been inactive for a while and want a gentle, realistic way back.", tags: [beginner, walking, strength, mindset]}
+  - {id: "mover", label: "The Mover", blurb: "I'm already active and want the next challenge.", tags: [running, swimming, cycling, endurance, competition]}
+  - {id: "learner", label: "The Learner", blurb: "I want to keep my mind sharp — study, skills, creativity.", tags: [learning, brain, creativity, purpose]}
+  - {id: "carer", label: "The Carer", blurb: "I look after someone and need ways to stay well myself.", tags: [walking, mindset, community, beginner]}
+  - {id: "changer", label: "The Career Changer", blurb: "I'm not done working — I want a new venture or purpose.", tags: [business, purpose, learning, community]}
+
+categories:
+  move: {label: "Move", blurb: "Strength, running, swimming, cycling, walking — at any starting point."}
+  think: {label: "Think", blurb: "Learning, memory, creativity and study after 50."}
+  earn: {label: "Earn", blurb: "Second careers, side businesses and purpose-driven work."}
+  connect: {label: "Connect", blurb: "Community, volunteering and the people who keep us going."}
+  stories: {label: "Real Stories", blurb: "People who started late and went far."}
