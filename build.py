@@ -144,15 +144,20 @@ def make_card(title: str, kicker: str, category: str, out: Path, size=(1200, 630
     # colour band
     d.rectangle([0, 0, W, int(H * 0.055)], fill=fg)
     pad = int(W * 0.06)
-    kf = ImageFont.truetype(FONT_REG, int(H * 0.05))
-    tf = ImageFont.truetype(FONT_BOLD, int(H * 0.105) if len(title) < 60 else int(H * 0.085))
-    ff = ImageFont.truetype(FONT_REG, int(H * 0.045))
+    # Scale type off the shorter side so tall (story) cards don't get oversized text.
+    base = min(W, H)
+    kf = ImageFont.truetype(FONT_REG, int(base * 0.05))
+    title_scale = 0.105 if len(title) < 60 else (0.085 if len(title) < 95 else 0.068)
+    tf = ImageFont.truetype(FONT_BOLD, int(base * title_scale))
+    ff = ImageFont.truetype(FONT_REG, int(base * 0.045))
     y = int(H * 0.14)
     d.text((pad, y), kicker.upper(), font=kf, fill=fg)
-    y += int(H * 0.11)
-    for line in wrap_text(d, title, tf, W - 2 * pad)[:5]:
+    y += int(base * 0.11)
+    line_h = int(tf.size * 1.22)
+    max_lines = max(1, (H - pad - ff.size - int(base * 0.04) - y) // line_h)
+    for line in wrap_text(d, title, tf, W - 2 * pad)[:max_lines]:
         d.text((pad, y), line, font=tf, fill="#1A1A1A")
-        y += int(tf.size * 1.22)
+        y += line_h
     # footer
     d.text((pad, H - pad - ff.size), footer, font=ff, fill=fg)
     d.rectangle([W - pad - int(W * 0.12), H - pad - int(H * 0.012), W - pad, H - pad], fill=fg)
