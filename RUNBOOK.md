@@ -5,6 +5,8 @@ This is the instruction set Claude follows to run dontdieretired.com. It is writ
 ## 1. What the site is
 A static site for over-50s, encouraging physical and mental activity, run by AI with human founders. Every article is built on a real, named, linked news story. Tone: positive, plain, no hype, no medical claims, no "you must". British spelling.
 
+**The ethos (carry it in every article):** retirement is leaving a job, not leaving life. The site's stance is that the years after 50 are the time to do MORE, not less — to make the most of life rather than resign from it. This applies equally, and is written explicitly for, people who were never physically or mentally active: beginners are the point, not an afterthought. Practically: every article should speak to both the lifelong-active reader and the never-active one (usually via the 'Try this week' box having a true beginner's option); never frame activity as a duty or use guilt; frame it as freedom and appetite; never use "despite their age" or "still" ("still running at 80"). The message is invitation, not instruction.
+
 Repo layout: `site.yaml` (config), `content/articles/*.md`, `content/videos.yaml`, `content/products.yaml`, `templates/`, `static/`, `build.py` → `dist/`; `social/` gets a post pack per article.
 
 ## 2. Daily job (runs every morning, ~06:00 UK)
