@@ -6,7 +6,7 @@
 <div class="two-col">
   <div class="tier">
     <h2>Free</h2><p class="price">£0</p>
-    <ul><li>The weekly email</li><li>{{ cfg.newsletter.lead_magnet }}</li><li>First look at new challenges</li></ul>
+    <ul><li>The weekly email</li><li>{{ cfg.newsletter.lead_magnet }} — <a href="/static/downloads/7-Day-Restart-Plan.pdf">preview it</a></li><li>First look at new challenges</li></ul>
     <form class="nl-form nl-form-page" action="{{ cfg.newsletter.form_action }}" method="post" target="_blank" data-nl>
       <input type="email" name="email" placeholder="you@example.com" required aria-label="Email"><input type="hidden" name="tag" value="" data-segment-field>
       <button class="btn" type="submit">Join free</button>

@@ -45,8 +45,8 @@ Every Sunday, compare this week with the last four. Act on triggers:
 - **Product clicks but no sales** → lower the price or add a preview PDF page.
 - **Any article shared > 50 times** → make a video of it and a follow-up article.
 
-## 6. Digital products Claude produces (own IP, ~90% margin)
-Write as Word/PDF with the docx skill: The 30-Day Restart (£9), Strong at 60 (£14), Sharp (£12), Second Act workbook (£19), Bundle (£29). Also the free lead magnet: 7-Day Restart Plan. Upload to Gumroad, paste the product URLs into `content/products.yaml`.
+## 6. Digital products (own IP, ~90% margin)
+Built: `products/content/*.json` → `node products/build_product.js content/X.json` → docx → PDF (LibreOffice). Final PDFs in `products/pdf/`; the free plan is also served at `/static/downloads/7-Day-Restart-Plan.pdf`. To revise a product, edit its JSON and rebuild. Products: The 30-Day Restart (£9), Strong at 60 (£14), Sharp (£12), Second Act workbook (£19), Bundle (£29). Also the free lead magnet: 7-Day Restart Plan. Upload to Gumroad, paste the product URLs into `content/products.yaml`.
 
 ## 7. Guard-rails
 - Never invent facts, quotes, ages or names. If the source can't be fetched, don't run the story.
