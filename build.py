@@ -121,6 +121,13 @@ def load_articles(cfg):
         }
         arts.append(a)
     arts.sort(key=lambda a: a["date"], reverse=True)
+    # companion plans ("the plan behind the story")
+    plans = {}
+    for p in sorted((CONTENT / "plans").glob("*.md")) if (CONTENT / "plans").exists() else []:
+        fm, body = split_front_matter(p.read_text(encoding="utf-8"))
+        plans[fm["article"]] = {**fm, "html": render_md(body), "body_md": body, "url": f"/plans/{fm['article']}/"}
+    for a in arts:
+        a["plan"] = plans.get(a["slug"])
     return arts
 
 
@@ -132,6 +139,7 @@ PALETTE = {
     "earn": ("#8A4B08", "#FBF1E4"),
     "connect": ("#6D2E72", "#F5EAF6"),
     "stories": ("#B23A48", "#FBEBEC"),
+    "explore": ("#2F6B3A", "#EAF3EC"),
 }
 
 
@@ -281,6 +289,8 @@ def build(make_social=True):
                   DIST / "static" / "img" / f"{a['slug']}.png")
         related = [b for b in arts if b is not a and (b["category"] == a["category"] or set(b["tags"]) & set(a["tags"]))][:3]
         urls.append(out(a["url"], "article.html", a=a, related=related))
+        if a.get("plan"):
+            out(a["plan"]["url"], "plan.html", a=a, plan=a["plan"])  # not in sitemap: gated content
         if make_social:
             social_pack(a, cfg)
 

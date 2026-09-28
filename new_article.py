@@ -5,7 +5,7 @@ Claude fills in the body, quotes and sources from verified reporting, then runs 
 """
 import argparse, datetime as dt, re, pathlib
 ap = argparse.ArgumentParser()
-ap.add_argument("title"); ap.add_argument("--category", required=True, choices=["move","think","earn","connect","stories"])
+ap.add_argument("title"); ap.add_argument("--category", required=True, choices=["move","think","earn","connect","stories","explore"])
 ap.add_argument("--tags", default=""); ap.add_argument("--segments", default="")
 ap.add_argument("--date", default=dt.date.today().isoformat())
 a = ap.parse_args()

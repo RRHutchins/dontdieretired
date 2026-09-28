@@ -30,6 +30,25 @@
   </aside>
   {% endif %}
 
+  {% if a.plan %}
+  <aside class="plan-box" data-plan-box>
+    <p class="kicker">The plan behind the story</p>
+    <h3>{{ a.plan.title }}</h3>
+    <p>{{ a.plan.summary }} <span class="meta">{{ a.plan.duration }} · {{ a.plan.level }}</span></p>
+    <div data-plan-locked>
+      <p>Free for readers on our weekly email. Pop your address in and the plan opens straight away.</p>
+      <form class="nl-form" action="{{ cfg.newsletter.form_action }}" method="post" target="_blank" data-nl data-unlock-plan>
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email"><input type="hidden" name="tag" value="" data-segment-field>
+        <button class="btn" type="submit">Get the plan</button>
+      </form>
+      <p class="disclosure">One email a week, unsubscribe anytime. Already subscribed? <a href="{{ a.plan.url }}" data-plan-link>Open the plan</a>.</p>
+    </div>
+    <div data-plan-unlocked hidden>
+      <a class="btn" href="{{ a.plan.url }}">Open the plan →</a>
+    </div>
+  </aside>
+  {% endif %}
+
   {% if a.sources %}
   <section class="sources">
     <h3>Sources</h3>
