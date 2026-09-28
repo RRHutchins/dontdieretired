@@ -20,7 +20,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/style.css">
-{% if cfg.analytics.plausible_domain %}<script defer data-domain="{{ cfg.analytics.plausible_domain }}" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>{% endif %}
+{% if cfg.analytics.plausible_script_id %}<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/{{ cfg.analytics.plausible_script_id }}.js"></script>
+<script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>{% endif %}
 {% if cfg.ads.enabled and cfg.ads.adsense_client %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ cfg.ads.adsense_client }}" crossorigin="anonymous"></script>{% endif %}
 </head>
 <body data-page="{% block pagetype %}page{% endblock %}">
