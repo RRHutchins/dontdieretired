@@ -1,7 +1,7 @@
 :root{
   --ink:#1b1b1f;--muted:#5b5f6b;--paper:#fbfaf7;--card:#fff;--line:#e6e2da;
   --brand:#b23a48;--brand-ink:#7f2431;--accent:#0b6e4f;--gold:#c98a2b;
-  --move:#0b6e4f;--think:#1f4e79;--earn:#8a4b08;--connect:#6d2e72;--stories:#b23a48;--eat:#5e7d1e;--money:#2f5d50;--travel:#0e7490;--tech:#4b4f9c;
+  --move:#0b6e4f;--think:#1f4e79;--earn:#8a4b08;--connect:#6d2e72;--stories:#b23a48;--eat:#5e7d1e;--money:#2f5d50;--travel:#0e7490;--tech:#4b4f9c;--explore:#2f6b3a;
   --serif:"Fraunces",Georgia,serif;--sans:"Source Sans 3",system-ui,sans-serif;
   --r:14px;--shadow:0 6px 24px rgba(30,20,10,.08);
 }
@@ -57,15 +57,15 @@ em{color:var(--brand)}
 .card-body{padding:18px 20px 20px}
 .card h3 a{color:var(--ink);text-decoration:none}.card h3 a:hover{color:var(--brand)}
 .card-body p{margin:.4em 0}
-.cats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin:40px 0}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:40px 0}
 .cat{display:block;padding:18px;border-radius:var(--r);color:#fff;text-decoration:none}
 .cat strong{display:block;font-family:var(--serif);font-size:1.3rem}.cat span{font-size:.9rem;opacity:.92}
-.cat-move{background:var(--move)}.cat-think{background:var(--think)}.cat-earn{background:var(--earn)}.cat-connect{background:var(--connect)}.cat-stories{background:var(--stories)}.cat-eat{background:var(--eat)}.cat-money{background:var(--money)}.cat-travel{background:var(--travel)}.cat-tech{background:var(--tech)}
+.cat-move{background:var(--move)}.cat-think{background:var(--think)}.cat-earn{background:var(--earn)}.cat-connect{background:var(--connect)}.cat-stories{background:var(--stories)}.cat-eat{background:var(--eat)}.cat-money{background:var(--money)}.cat-travel{background:var(--travel)}.cat-tech{background:var(--tech)}--explore:#2f6b3a;
 @media (max-width:900px){.cats{grid-template-columns:repeat(2,1fr)}}
 .two-col{display:grid;grid-template-columns:2fr 1fr;gap:32px;margin:32px 0}
 @media (max-width:900px){.two-col{grid-template-columns:1fr}}
 .page-head{padding:40px 0 16px;max-width:820px}
-.page-head.cat-move h1{color:var(--move)}.page-head.cat-think h1{color:var(--think)}.page-head.cat-earn h1{color:var(--earn)}.page-head.cat-connect h1{color:var(--connect)}.page-head.cat-stories h1{color:var(--stories)}.page-head.cat-eat h1{color:var(--eat)}.page-head.cat-money h1{color:var(--money)}.page-head.cat-travel h1{color:var(--travel)}.page-head.cat-tech h1{color:var(--tech)}
+.page-head.cat-move h1{color:var(--move)}.page-head.cat-think h1{color:var(--think)}.page-head.cat-earn h1{color:var(--earn)}.page-head.cat-connect h1{color:var(--connect)}.page-head.cat-stories h1{color:var(--stories)}.page-head.cat-eat h1{color:var(--eat)}.page-head.cat-money h1{color:var(--money)}.page-head.cat-travel h1{color:var(--travel)}.page-head.cat-tech h1{color:var(--tech)}--explore:#2f6b3a;
 
 /* article */
 .article-layout{display:grid;grid-template-columns:minmax(0,720px) 300px;gap:48px;justify-content:center;padding-top:32px}
@@ -161,7 +161,7 @@ body[data-region=us] .tier .price::after{content:""}
 .shop-jump a:hover{border-color:var(--brand)}
 .shop-cat{margin:40px 0;scroll-margin-top:90px}
 .promo-bundle{margin:0 0 24px;border-left:6px solid var(--gold)}
-.cat-label-move{color:var(--move)}.cat-label-eat{color:var(--eat)}.cat-label-think{color:var(--think)}.cat-label-money{color:var(--money)}.cat-label-earn{color:var(--earn)}.cat-label-connect{color:var(--connect)}.cat-label-travel{color:var(--travel)}.cat-label-tech{color:var(--tech)}.cat-label-stories{color:var(--stories)}
+.cat-label-move{color:var(--move)}.cat-label-eat{color:var(--eat)}.cat-label-think{color:var(--think)}.cat-label-money{color:var(--money)}.cat-label-earn{color:var(--earn)}.cat-label-connect{color:var(--connect)}.cat-label-travel{color:var(--travel)}.cat-label-tech{color:var(--tech)}.cat-label-stories{color:var(--stories)}.cat-label-explore{color:var(--explore)}
 .nav{gap:14px}
 @media (max-width:820px){.cat-pillar{grid-template-columns:1fr}.cat-pillar > div{padding:0 18px 20px}}
 .page-head[class*="cat-"]{background:transparent}
@@ -169,4 +169,5 @@ body[data-region=us] .tier .price::after{content:""}
 .cat-pillar img{height:auto;object-fit:contain}
 .header-cta .btn{white-space:nowrap}
 @media (max-width:820px){.header-cta .btn{font-size:.85rem;padding:6px 12px}}
-@media (max-width:820px){.hide-sm{display:none}}
+@media (max-width:820px){.hide-sm{display:none}}--explore:#2f6b3a;
+.show-sm{display:none}@media (max-width:820px){.show-sm{display:inline}}

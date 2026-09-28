@@ -114,7 +114,13 @@
     a.addEventListener('click', () => track('affiliate_click', { url: a.href, segment: store.get('ddr_segment') || 'none', region: document.body.dataset.region }));
   });
   $$('[data-product]').forEach(a => a.addEventListener('click', () => track('product_click', { id: a.dataset.product, segment: store.get('ddr_segment') || 'none' })));
-  $$('form[data-nl]').forEach(f => f.addEventListener('submit', () => track('newsletter_submit', { segment: store.get('ddr_segment') || 'none' })));
+  $$('form[data-nl]').forEach(f => f.addEventListener('submit', () => track('newsletter_submit', { segment: store.get('ddr_segment') || 'none', unlock: f.hasAttribute('data-unlock-plan') ? 1 : 0 })));
+  // "Plan behind the story": unlock after any newsletter signup, remembered in this browser
+  const unlockPlans = () => { store.set('ddr_plans', '1'); $$('[data-plan-locked]').forEach(e => e.hidden = true); $$('[data-plan-unlocked]').forEach(e => e.hidden = false); };
+  if (store.get('ddr_plans')) unlockPlans();
+  $$('form[data-nl]').forEach(f => f.addEventListener('submit', () => setTimeout(unlockPlans, 300)));
+  $$('[data-plan-link]').forEach(a => a.addEventListener('click', () => store.set('ddr_plans', '1')));
+  $$('.plan-page').forEach(() => track('plan_view', { page: location.pathname }));
   $$('.share a').forEach(a => a.addEventListener('click', () => track('share', { via: a.textContent })));
 
   // Scroll depth (tells us whether article formats hold attention)

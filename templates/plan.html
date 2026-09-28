@@ -1,0 +1,23 @@
+{% extends "base.html" %}{% from "_macros.html" import card, product_promo %}
+{% block title %}{{ plan.title }} — {{ cfg.site.name }}{% endblock %}
+{% block description %}{{ plan.summary }}{% endblock %}
+{% block ogimage %}{{ a.image }}{% endblock %}
+{% block head %}<meta name="robots" content="noindex">{% endblock %}
+{% block pagetype %}plan{% endblock %}
+{% block content %}
+<div class="article-layout">
+<article class="article plan-page">
+  <p class="kicker">The plan behind the story · <a href="{{ a.url }}">{{ a.title }}</a></p>
+  <h1>{{ plan.title }}</h1>
+  <p class="lead">{{ plan.summary }}</p>
+  <p class="meta">{{ plan.duration }} · {{ plan.level }} · <button class="linklike" onclick="window.print()">Print this plan</button></p>
+  <div class="prose">{{ plan.html | safe }}</div>
+  <p class="disclosure">General information, not medical advice. Check with your GP before starting a new exercise programme.</p>
+</article>
+<aside class="sidebar">
+  {% set prod = (products.products | selectattr('category', 'equalto', a.category) | list + products.products) | first %}
+  {{ product_promo(prod) }}
+  <aside class="promo promo-members"><p class="kicker">Members</p><h4>Every plan, every course, ad-free</h4><p>{{ cfg.membership.name }} — {{ cfg.membership.price }}.</p><a class="btn btn-small" href="/members/">Find out more</a></aside>
+</aside>
+</div>
+{% endblock %}

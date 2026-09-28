@@ -4,9 +4,9 @@
 # ---------------------------------------------------------------
 site:
   name: "Don't Die Retired"
-  tagline: "Life after 50 is not a wind-down. It's a second start."
+  tagline: "Don't retire from life. This is the time to make the most of it."
   url: "https://dontdieretired.com"
-  description: "Real stories, practical plans and daily encouragement for people over 50 who intend to stay active in body and mind."
+  description: "For everyone over 50 — lifelong movers and people who never got round to it. Real stories, practical plans and daily encouragement to do more, not less, with the years ahead."
   language: "en-GB"
   author: "The Don't Die Retired team"
   contact_email: "hello@dontdieretired.com"
@@ -71,8 +71,8 @@ social:
 audience_segments:
   - {id: "restarter", label: "The Restarter", blurb: "I've been inactive for a while and want a gentle, realistic way back.", tags: [beginner, walking, strength, mindset]}
   - {id: "mover", label: "The Mover", blurb: "I'm already active and want the next challenge.", tags: [running, swimming, cycling, endurance, competition]}
-  - {id: "learner", label: "The Learner", blurb: "I want to keep my mind sharp — study, skills, creativity.", tags: [learning, brain, creativity, purpose]}
-  - {id: "carer", label: "The Carer", blurb: "I look after someone and need ways to stay well myself.", tags: [walking, mindset, community, beginner]}
+  - {id: "learner", label: "The Learner", blurb: "I want to keep my mind sharp — study, skills, creativity.", tags: [learning, brain, creativity, purpose, science, nature]}
+  - {id: "carer", label: "The Carer", blurb: "I look after someone and need ways to stay well myself.", tags: [walking, mindset, community, beginner, nature]}
   - {id: "changer", label: "The Career Changer", blurb: "I'm not done working — I want a new venture or purpose.", tags: [business, purpose, learning, community]}
 
 categories:
@@ -84,4 +84,5 @@ categories:
   connect: {label: "Connect", blurb: "Friends, clubs, volunteering, grandchildren and the people who keep us going."}
   travel: {label: "Travel", blurb: "Slow travel, walking holidays, trains, insurance and going solo."}
   tech: {label: "Tech", blurb: "Phones, online banking, scams and staying in touch — without the jargon."}
+  explore: {label: "Explore", blurb: "Science, nature and the outdoors — birds, stars, rocks, rivers, and the projects you can join."}
   stories: {label: "Real Stories", blurb: "Real, sourced stories of people who started late and went far."}

@@ -2,7 +2,7 @@
 {% block title %}Start here — {{ cfg.site.name }}{% endblock %}
 {% block description %}New to the site? Pick your starting point and get a plan you can begin this week.{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Start here</p><h1>Where are you starting from?</h1><p class="lead">Pick the one that sounds most like you. We'll show the right stories and a first-week plan.</p></header>
+<header class="page-head"><p class="kicker">Start here</p><h1>Where are you starting from?</h1><p class="lead">It doesn't matter whether you've been active all your life or never at all — there is a starting point for you here. Pick the one that sounds most like you and we'll show the right stories and a first-week plan.</p></header>
 <div class="seg-grid seg-grid-page">
   {% for s in segments %}
   <button class="seg" data-segment="{{ s.id }}" data-go="/start-here/#plan"><strong>{{ s.label }}</strong><span>{{ s.blurb }}</span></button>
