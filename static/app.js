@@ -97,9 +97,21 @@
   }
 
   /* ---------- 3. affiliate + revenue event tracking ---------- */
+  // Geo-aware Amazon links: US visitors → amazon.com + US tag; everyone else → amazon.co.uk + UK tag.
+  // Detection is by browser locale/timezone only (no IP lookup, no cookie), so it needs no consent.
+  const isUS = (() => { try {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+    const lang = (navigator.language || '').toLowerCase();
+    return /^America\/(?!Toronto|Vancouver|Edmonton|Winnipeg|Halifax|St_Johns|Regina|Mexico|Bogota|Lima|Sao_Paulo|Buenos_Aires|Santiago|Caracas)/.test(tz) || lang === 'en-us';
+  } catch { return false; } })();
+  document.body.dataset.region = isUS ? 'us' : 'row';
   $$('a[data-aff]').forEach(a => {
-    try { const u = new URL(a.href); if (u.hostname.includes('amazon.') && !u.searchParams.get('tag')) { u.searchParams.set('tag', DDR.affiliateTag); a.href = u.toString(); } } catch {}
-    a.addEventListener('click', () => track('affiliate_click', { url: a.href, segment: store.get('ddr_segment') || 'none' }));
+    try { const u = new URL(a.href);
+      if (u.hostname.includes('amazon.')) {
+        if (isUS && u.hostname.endsWith('amazon.co.uk')) { u.hostname = 'www.amazon.com'; u.searchParams.delete('tag'); }
+        if (!u.searchParams.get('tag')) u.searchParams.set('tag', u.hostname.endsWith('amazon.com') ? DDR.affiliateTagUS : DDR.affiliateTagUK);
+        a.href = u.toString(); } } catch {}
+    a.addEventListener('click', () => track('affiliate_click', { url: a.href, segment: store.get('ddr_segment') || 'none', region: document.body.dataset.region }));
   });
   $$('[data-product]').forEach(a => a.addEventListener('click', () => track('product_click', { id: a.dataset.product, segment: store.get('ddr_segment') || 'none' })));
   $$('form[data-nl]').forEach(f => f.addEventListener('submit', () => track('newsletter_submit', { segment: store.get('ddr_segment') || 'none' })));

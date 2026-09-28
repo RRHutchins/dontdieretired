@@ -36,7 +36,7 @@ products:
     blurb: "All four plans, plus every future release for a year. Members get this free."
     url: "https://dontdieretired.gumroad.com/l/bundle"
 
-# Affiliate picks — Amazon UK search/product links; build.py/app.js append the Associates tag.
+# Affiliate picks — Amazon UK search links. app.js rewrites to amazon.com + US tag for US visitors and appends the right Associates tag.
 affiliate_picks:
   - {category: move, name: "Resistance band set with door anchor", why: "the cheapest way to start strength work at home", url: "https://www.amazon.co.uk/s?k=resistance+bands+set+door+anchor"}
   - {category: move, name: "Adjustable dumbbells (2–20 kg)", why: "one pair replaces a rack; what most of our late-starting lifters began with", url: "https://www.amazon.co.uk/s?k=adjustable+dumbbells"}

@@ -141,3 +141,7 @@ em{color:var(--brand)}
 .consent p{margin:0;font-size:.95rem}
 [hidden]{display:none!important}
 #q{width:100%;max-width:560px;padding:.8em 1em;border-radius:999px;border:1px solid #ccc;font:inherit;font-size:1.1rem}
+
+/* US visitors: currency note */
+body[data-region=us] .price::after{content:" (charged in USD at checkout)";font-weight:400;font-size:.75em;color:var(--muted)}
+body[data-region=us] .tier .price::after{content:""}

@@ -121,7 +121,8 @@
 window.DDR = {
   ads: {{ cfg.ads | tojson }},
   segments: {{ segments | tojson }},
-  affiliateTag: {{ cfg.affiliates.amazon_uk_tag | tojson }}
+  affiliateTagUK: {{ cfg.affiliates.amazon_uk_tag | tojson }},
+  affiliateTagUS: {{ cfg.affiliates.amazon_us_tag | tojson }}
 };
 </script>
 <script src="/static/app.js" defer></script>
