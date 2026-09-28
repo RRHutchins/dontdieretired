@@ -1,4 +1,6 @@
-# Digital products (own IP — highest margin). URLs point at the Gumroad store; create each product there.
+# Digital products (own IP — highest margin). One or more per category.
+# URLs point at the Gumroad store; each product must be created there with the matching permalink (the id).
+# PDFs live in products/pdf/.
 products:
   - id: restart30
     name: "The 30-Day Restart"
@@ -14,6 +16,13 @@ products:
     price: "£14"
     blurb: "Two sessions a week, home or gym, written for beginners over 50. Includes the 'why' behind every exercise and a progress log."
     url: "https://dontdieretired.gumroad.com/l/strong60"
+  - id: eatstrong
+    name: "Eat Strong: the four-week kitchen planner"
+    kind: Planner
+    category: eat
+    price: "£12"
+    blurb: "Four weeks of simple meals built around protein at every meal, bones and fibre — with shopping lists, batch-cook days and portions for one or two."
+    url: "https://dontdieretired.gumroad.com/l/eatstrong"
   - id: sharp
     name: "Sharp: 8 weeks to a learning habit"
     kind: Course
@@ -21,6 +30,13 @@ products:
     price: "£12"
     blurb: "How to learn a language, instrument or subject after 50 — spaced practice, the 20-minute slot, and a weekly review sheet."
     url: "https://dontdieretired.gumroad.com/l/sharp"
+  - id: moneyreset
+    name: "The Money Reset: a 30-day workbook"
+    kind: Workbook
+    category: money
+    price: "£14"
+    blurb: "One small task a day for thirty days. At the end, your whole money picture on one page and a short list of what to check next. UK and US. General information, not financial advice."
+    url: "https://dontdieretired.gumroad.com/l/moneyreset"
   - id: secondact
     name: "Second Act: the 90-day venture workbook"
     kind: Workbook
@@ -28,23 +44,57 @@ products:
     price: "£19"
     blurb: "From 'I've got an idea' to first paying customer in 90 days. Templates for the offer, the first ten conversations and the money."
     url: "https://dontdieretired.gumroad.com/l/secondact"
+  - id: reconnect
+    name: "Reconnect: six weeks to a fuller social life"
+    kind: Plan
+    category: connect
+    price: "£9"
+    blurb: "A gentle six-week plan for rebuilding friendships and finding your people after 50 — one small, doable step each week."
+    url: "https://dontdieretired.gumroad.com/l/reconnect"
+  - id: slowtravel
+    name: "Slow Travel After 50: the planning workbook"
+    kind: Workbook
+    category: travel
+    price: "£12"
+    blurb: "Plan longer, calmer trips: budgets, routes, pacing, insurance checklists and packing lists — for walking holidays, rail journeys and long stays."
+    url: "https://dontdieretired.gumroad.com/l/slowtravel"
+  - id: techconfident
+    name: "Tech Confident: the scam-proof guide"
+    kind: Guide
+    category: tech
+    price: "£9"
+    blurb: "Your phone, your apps and your online life made safe and simple — with a four-week plan to set it all up properly."
+    url: "https://dontdieretired.gumroad.com/l/techconfident"
   - id: bundle
     name: "Everything bundle"
     kind: Bundle
     category: stories
-    price: "£29"
-    blurb: "All four plans, plus every future release for a year. Members get this free."
+    price: "£49"
+    blurb: "All nine plans and workbooks — Move, Eat, Think, Money, Earn, Connect, Travel and Tech — plus every future release for a year. Members get this free."
     url: "https://dontdieretired.gumroad.com/l/bundle"
 
 # Affiliate picks — Amazon UK search links. app.js rewrites to amazon.com + US tag for US visitors and appends the right Associates tag.
+# Keep the 'why' honest: describe what the item is for. Never claim readers, testing or popularity we can't show.
 affiliate_picks:
   - {category: move, name: "Resistance band set with door anchor", why: "the cheapest way to start strength work at home", url: "https://www.amazon.co.uk/s?k=resistance+bands+set+door+anchor"}
-  - {category: move, name: "Adjustable dumbbells (2–20 kg)", why: "one pair replaces a rack; what most of our late-starting lifters began with", url: "https://www.amazon.co.uk/s?k=adjustable+dumbbells"}
-  - {category: move, name: "Cushioned walking shoes", why: "the single purchase that keeps a walking habit going", url: "https://www.amazon.co.uk/s?k=walking+shoes+cushioned"}
+  - {category: move, name: "Adjustable dumbbells (2–20 kg)", why: "one pair does the job of a whole rack, and takes up less room", url: "https://www.amazon.co.uk/s?k=adjustable+dumbbells"}
+  - {category: move, name: "Cushioned walking shoes", why: "comfortable feet make a walking habit easier to keep", url: "https://www.amazon.co.uk/s?k=walking+shoes+cushioned"}
   - {category: move, name: "Fitness tracker with step count and heart rate", why: "a number to beat, gently", url: "https://www.amazon.co.uk/s?k=fitness+tracker"}
+  - {category: eat, name: "Slow cooker (3–4 litre)", why: "batch-cook stews and lentils for the week with almost no effort", url: "https://www.amazon.co.uk/s?k=slow+cooker+3.5+litre"}
+  - {category: eat, name: "Freezer-safe meal-prep containers", why: "cook once, portion for one or two, eat well on busy days", url: "https://www.amazon.co.uk/s?k=freezer+meal+prep+containers"}
+  - {category: eat, name: "Digital kitchen scales", why: "useful for following recipes and getting portions right", url: "https://www.amazon.co.uk/s?k=digital+kitchen+scales"}
   - {category: think, name: "Noise-cancelling headphones", why: "for lessons, podcasts and audiobooks on the move", url: "https://www.amazon.co.uk/s?k=noise+cancelling+headphones"}
-  - {category: think, name: "A5 dotted notebook", why: "a learning log works better on paper", url: "https://www.amazon.co.uk/s?k=a5+dotted+notebook"}
-  - {category: earn, name: "The 100-Year Life (Gratton & Scott)", why: "the best book on why a 'second act' is now normal", url: "https://www.amazon.co.uk/s?k=the+100-year+life+gratton+scott"}
+  - {category: think, name: "A5 dotted notebook", why: "a learning log is easy to keep on paper", url: "https://www.amazon.co.uk/s?k=a5+dotted+notebook"}
+  - {category: think, name: "E-reader with adjustable text size", why: "bigger text and a light that doesn't glare at night", url: "https://www.amazon.co.uk/s?k=e-reader+adjustable+text"}
+  - {category: money, name: "Lockable document box", why: "one place for pension letters, deeds and statements", url: "https://www.amazon.co.uk/s?k=lockable+document+box"}
+  - {category: money, name: "Cross-cut paper shredder", why: "old bank and pension paperwork is useful to fraudsters", url: "https://www.amazon.co.uk/s?k=cross+cut+paper+shredder"}
+  - {category: earn, name: "The 100-Year Life (Gratton & Scott)", why: "a well-known book on why careers now have several stages", url: "https://www.amazon.co.uk/s?k=the+100-year+life+gratton+scott"}
   - {category: earn, name: "Laptop stand and keyboard", why: "if you're working again, protect your neck", url: "https://www.amazon.co.uk/s?k=laptop+stand+keyboard"}
-  - {category: connect, name: "Walking poles", why: "confidence on hills and group walks", url: "https://www.amazon.co.uk/s?k=walking+poles"}
-  - {category: stories, name: "Younger Next Year (Crowley & Lodge)", why: "the book most of our readers say started them", url: "https://www.amazon.co.uk/s?k=younger+next+year"}
+  - {category: connect, name: "Walking poles", why: "extra stability on hills and group walks", url: "https://www.amazon.co.uk/s?k=walking+poles"}
+  - {category: connect, name: "Digital photo frame with app sharing", why: "family can send photos straight to it from their phones", url: "https://www.amazon.co.uk/s?k=digital+photo+frame+wifi"}
+  - {category: travel, name: "Lightweight carry-on suitcase with four wheels", why: "easier on shoulders and wrists on station platforms", url: "https://www.amazon.co.uk/s?k=lightweight+cabin+suitcase+4+wheels"}
+  - {category: travel, name: "Waterproof walking jacket", why: "the one piece of kit that decides whether a walking day is fun", url: "https://www.amazon.co.uk/s?k=waterproof+walking+jacket"}
+  - {category: travel, name: "Universal travel adaptor with USB", why: "one plug for every country and every charger", url: "https://www.amazon.co.uk/s?k=universal+travel+adaptor+usb"}
+  - {category: tech, name: "Phone stand for video calls", why: "hands-free calls without holding the phone at arm's length", url: "https://www.amazon.co.uk/s?k=phone+stand+desk"}
+  - {category: tech, name: "Webcam privacy covers", why: "a cheap, simple bit of peace of mind for laptops", url: "https://www.amazon.co.uk/s?k=webcam+cover"}
+  - {category: stories, name: "Younger Next Year (Crowley & Lodge)", why: "a popular book on staying active through your later decades", url: "https://www.amazon.co.uk/s?k=younger+next+year"}

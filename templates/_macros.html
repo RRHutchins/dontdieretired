@@ -40,6 +40,14 @@
   <p class="kicker">From our shop</p>
   <h4>{{ p.name }} <span class="price">{{ p.price }}</span></h4>
   <p>{{ p.blurb }}</p>
-  <a class="btn btn-small" href="{{ p.url }}" target="_blank" rel="noopener" data-product="{{ p.id }}">Get it</a>
+  {{ buy_button(p, 'Get it') }}
 </aside>
+{% endmacro %}
+
+{% macro buy_button(p, label='Buy') %}
+{% if cfg.products.store_live %}
+<a class="btn btn-small" href="{{ p.url }}" target="_blank" rel="noopener" data-product="{{ p.id }}">{{ label }}</a>
+{% else %}
+<a class="btn btn-small btn-ghost" href="/newsletter/?interest={{ p.id }}" data-product="{{ p.id }}" data-product-notify>Notify me when it's ready</a>
+{% endif %}
 {% endmacro %}

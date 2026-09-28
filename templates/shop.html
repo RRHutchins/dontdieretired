@@ -1,21 +1,45 @@
-{% extends "base.html" %}{% from "_macros.html" import affiliate_box %}
-{% block title %}Guides &amp; challenges — {{ cfg.site.name }}{% endblock %}
-{% block description %}Practical, printable plans for restarting after 50: strength, walking, learning and purpose.{% endblock %}
+{% extends "base.html" %}{% from "_macros.html" import affiliate_box, buy_button %}
+{% block title %}Plans, workbooks &amp; guides — {{ cfg.site.name }}{% endblock %}
+{% block description %}Practical, printable plans for life after 50: strength, food, learning, money, work, friendship, travel and tech.{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Shop</p><h1>Plans you can print and start on Monday</h1><p class="lead">Written by us, checked against the evidence, priced so they're an easy yes. Members get them all. Prices in pounds; US and other readers are charged in their own currency at checkout, tax included.</p></header>
-<div class="grid grid-3">
-{% for p in products.products %}
-<article class="card product">
-  <div class="card-body">
-    <p class="kicker">{{ p.kind }} · {{ categories[p.category].label }}</p>
-    <h3>{{ p.name }}</h3><p>{{ p.blurb }}</p>
-    <p class="price">{{ p.price }}</p>
-    <a class="btn btn-small" href="{{ p.url }}" target="_blank" rel="noopener" data-product="{{ p.id }}">Buy</a>
+<header class="page-head"><p class="kicker">Shop</p><h1>Plans you can print and start on Monday</h1><p class="lead">Written by us, checked against official guidance, priced so they're an easy yes. Every plan is a PDF you can print or read on screen. Members get them all. Prices in pounds; US and other readers are charged in their own currency at checkout, tax included.</p></header>
+
+<nav class="shop-jump" aria-label="Shop sections">
+{% for cid, c in categories.items() %}{% if products.products | selectattr('category','equalto',cid) | list %}<a href="#cat-{{ cid }}">{{ c.label }}</a>{% endif %}{% endfor %}
+</nav>
+
+{% set bundle = products.products | selectattr('id','equalto','bundle') | first %}
+{% if bundle %}
+<aside class="promo promo-bundle" id="bundle">
+  <p class="kicker">Best value</p>
+  <h4>{{ bundle.name }} <span class="price">{{ bundle.price }}</span></h4>
+  <p>{{ bundle.blurb }}</p>
+  {{ buy_button(bundle, 'Get the bundle') }}
+</aside>
+{% endif %}
+
+{% for cid, c in categories.items() %}
+{% set prods = products.products | selectattr('category','equalto',cid) | rejectattr('id','equalto','bundle') | list %}
+{% if prods %}
+<section class="shop-cat" id="cat-{{ cid }}">
+  <div class="section-head"><h2 class="cat-label-{{ cid }}">{{ c.label }}</h2><a href="/{{ cid }}/">Free {{ c.label | lower }} guides →</a></div>
+  <div class="grid grid-3">
+  {% for p in prods %}
+  <article class="card product" id="{{ p.id }}">
+    <div class="card-body">
+      <p class="kicker">{{ p.kind }}</p>
+      <h3>{{ p.name }}</h3><p>{{ p.blurb }}</p>
+      <p class="price">{{ p.price }}</p>
+      {{ buy_button(p) }}
+    </div>
+  </article>
+  {% endfor %}
   </div>
-</article>
+</section>
+{% endif %}
 {% endfor %}
-</div>
-<h2>Kit we'd buy</h2>
+
+<h2>Kit that helps</h2>
 <div class="grid grid-2">
 {% for cid, c in categories.items() %}{% set picks = products.affiliate_picks | selectattr('category','equalto',cid) | list %}{% if picks %}{{ affiliate_box(picks, c.label) }}{% endif %}{% endfor %}
 </div>

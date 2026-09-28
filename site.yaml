@@ -43,6 +43,7 @@ newsletter:
 products:
   platform: "gumroad"                        # gumroad | lemonsqueezy | payhip
   store_url: "https://dontdieretired.gumroad.com"
+  store_live: false                          # set true once every product in content/products.yaml exists on Gumroad at its URL; until then buttons say "Notify me"
 
 membership:
   platform: "kofi"                           # kofi | patreon | buymeacoffee
@@ -75,8 +76,12 @@ audience_segments:
   - {id: "changer", label: "The Career Changer", blurb: "I'm not done working — I want a new venture or purpose.", tags: [business, purpose, learning, community]}
 
 categories:
-  move: {label: "Move", blurb: "Strength, running, swimming, cycling, walking — at any starting point."}
-  think: {label: "Think", blurb: "Learning, memory, creativity and study after 50."}
-  earn: {label: "Earn", blurb: "Second careers, side businesses and purpose-driven work."}
-  connect: {label: "Connect", blurb: "Community, volunteering and the people who keep us going."}
-  stories: {label: "Real Stories", blurb: "People who started late and went far."}
+  move: {label: "Move", blurb: "Strength, walking, swimming, cycling and balance — from whatever starting point you're at."}
+  eat: {label: "Eat", blurb: "Protein, bones, fibre and cooking well for one or two — food that keeps you strong."}
+  think: {label: "Think", blurb: "Learning, memory, study and creativity after 50."}
+  money: {label: "Money", blurb: "Pensions, Social Security, downsizing, scams and making it last. General information, not financial advice."}
+  earn: {label: "Earn", blurb: "Second careers, job hunting, freelancing and side businesses."}
+  connect: {label: "Connect", blurb: "Friends, clubs, volunteering, grandchildren and the people who keep us going."}
+  travel: {label: "Travel", blurb: "Slow travel, walking holidays, trains, insurance and going solo."}
+  tech: {label: "Tech", blurb: "Phones, online banking, scams and staying in touch — without the jargon."}
+  stories: {label: "Real Stories", blurb: "Real, sourced stories of people who started late and went far."}

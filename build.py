@@ -132,6 +132,10 @@ PALETTE = {
     "earn": ("#8A4B08", "#FBF1E4"),
     "connect": ("#6D2E72", "#F5EAF6"),
     "stories": ("#B23A48", "#FBEBEC"),
+    "eat": ("#5E7D1E", "#F1F6E6"),
+    "money": ("#2F5D50", "#E7F1EE"),
+    "travel": ("#0E7490", "#E6F4F7"),
+    "tech": ("#4B4F9C", "#EDEEF8"),
 }
 
 
