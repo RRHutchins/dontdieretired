@@ -15,7 +15,7 @@ const THEMES = {
   moneyreset:    { c: '#0F5E63', tint: '#E3F1F1', accent: '#C98A2B', big: '30',  label: 'Money' },
   secondact:     { c: '#8A4B08', tint: '#F8EEE1', accent: '#1B2A41', big: '90',  label: 'Earn' },
   reconnect:     { c: '#6D2E72', tint: '#F3E8F4', accent: '#C98A2B', big: '6',   label: 'Connect' },
-  slowtravel:    { c: '#27608A', tint: '#E5EFF6', accent: '#C98A2B', big: '∞',   label: 'Travel' },
+  slowtravel:    { c: '#56662B', tint: '#EEF1E3', accent: '#C98A2B', big: '∞',   label: 'Travel' },
   techconfident: { c: '#3A4556', tint: '#EAEDF1', accent: '#B23A48', big: '4',   label: 'Tech' },
   'restart7-free': { c: '#B23A48', tint: '#FBEBEC', accent: '#C98A2B', big: '7', label: 'Free plan' },
 };
@@ -55,10 +55,12 @@ const ICON = {
 };
 const calloutKind = t => /stop|red flag|warning|caution|before you|safety|avoid|not advice/i.test(t) ? 'warn' : /united states|\bus\b|america/i.test(t) ? 'us' : /one last|remember|secret|summary|key|rule/i.test(t) ? 'star' : 'info';
 
-let secN = 0;
+const TIGHT = JSON.parse(process.env.TIGHT || '{}');
+let secN = 0, sinceHead = 99;
 function render(b, prev) {
-  if (isSectionHead(b, prev)) { secN++; const t = b.h1 || b.h2;
-    return `<section class="sec-head"><div class="sec-num">${String(secN).padStart(2, '0')}</div><h2>${md(t)}</h2></section>`; }
+  if (isSectionHead(b, prev)) { secN++; sinceHead = 0; const t = b.h1 || b.h2; const lvl = TIGHT[secN] || 0;
+    return `${secN > 1 ? '</div>' : ''}<section class="sec-head"><div class="sec-num">${String(secN).padStart(2, '0')}</div><h2>${md(t)}</h2></section><div class="sec t${lvl}" data-sec="${secN}">`; }
+  sinceHead++;
   if (b.h1) return `<h2 class="h1">${md(b.h1)}</h2>`;
   if (b.h2) return `<h3>${md(b.h2)}</h3>`;
   if (b.lead) return `<p class="lead">${md(b.lead)}</p>`;
@@ -73,11 +75,11 @@ function render(b, prev) {
     const tick = v => String(v).trim() === '☐' ? '<span class="box sm"></span>' : md(v ?? '');
     const writeIn = t.rows.some(r => r.some(c => !String(c).trim()));
     return `<table class="${writeIn ? 'write' : ''}"><thead><tr>${t.headers.map(h => `<th>${md(h)}</th>`).join('')}</tr></thead><tbody>${t.rows.map(r => `<tr>${r.map((c, i) => `<td class="${blankCols[i] ? 'blank' : ''}">${tick(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>`; }
-  if (b.week) return `<section class="week"><h3 class="week-t">${md(b.week.title)}</h3>${b.week.days.map(d => `<div class="day"><div class="dpill">${md(d.day)}</div><div class="dtask">${md(d.task)}${d.note ? `<div class="dnote">${md(d.note)}</div>` : ''}</div><div class="dtick"><span class="circle"></span><span class="line"></span></div></div>`).join('')}</section>`;
+  if (b.week) return `<section class="week${sinceHead <= 3 ? ' nobreak' : ''}"><h3 class="week-t">${md(b.week.title)}</h3>${b.week.days.map(d => `<div class="day"><div class="dpill">${md(d.day)}</div><div class="dtask">${md(d.task)}${d.note ? `<div class="dnote">${md(d.note)}</div>` : ''}</div><div class="dtick"><span class="circle"></span><span class="line"></span></div></div>`).join('')}</section>`;
   if (b.pagebreak) return '';  // layout decides breaks: section heads and weekly trackers start new pages
   return '';
 }
-const bodyHtml = blocks.map((b, i) => render(b, blocks[i - 1])).join('\n')
+const bodyHtml = '<div class="sec t' + (TIGHT[0] || 0) + '">' + blocks.map((b, i) => render(b, blocks[i - 1])).join('\n') + '</div>'
   .replace(/<div class="pb"><\/div>\s*(<section class="sec-head">)/g, '$1'); // section heads break themselves
 
 const disclaimer = C.disclaimer || "This guide is general information, not medical advice. Check with your GP or a health professional before starting a new exercise programme, especially if you have a heart condition, high blood pressure, joint problems or have been inactive for a long time. Stop and seek advice if anything hurts.";
@@ -175,7 +177,11 @@ tbody tr:nth-child(even) td{background:#FAF8F4}
 tr{break-inside:avoid}
 table.write td{height:10mm}
 td.blank{background:#fff!important}
-.week{margin:0 0 4mm;break-before:page}
+.week{margin:0 0 4mm;break-before:page}.week.nobreak{break-before:auto}
+.t1{font-size:10.3pt;line-height:1.47}.t1 p{margin-bottom:2mm}.t1 .call{padding:4mm 5mm;margin:3mm 0}.t1 h3{margin-top:5mm}.t1 table.write td{height:8.5mm}.t1 .day{padding:2.2mm 0}
+.t2{font-size:9.8pt;line-height:1.42}.t2 p{margin-bottom:1.6mm}.t2 .call{padding:3.4mm 4.5mm;margin:2.5mm 0}.t2 h3{margin-top:4mm}.t2 table{font-size:9pt}.t2 td{padding:1.6mm 2.6mm}.t2 table.write td{height:7.5mm}.t2 .day{padding:1.6mm 0}.t2 blockquote{padding:3.5mm 6mm 3.5mm 13mm}
+.t3{font-size:9.4pt;line-height:1.38}.t3 p{margin-bottom:1.3mm}.t3 .call{padding:3mm 4mm;margin:2mm 0}.t3 h3{margin-top:3.5mm}.t3 table{font-size:8.7pt}.t3 td{padding:1.3mm 2.4mm}.t3 table.write td{height:6.8mm}.t3 .day{padding:1.2mm 0}
+.t4{font-size:9.1pt;line-height:1.34}.t4 p{margin-bottom:1mm}.t4 .call{padding:2.6mm 3.6mm;margin:1.6mm 0}.t4 .call p{margin:0 0 .6mm;font-size:9pt}.t4 h3{margin-top:3mm}.t4 ul.bul li{margin-bottom:1.1mm}.t4 table{font-size:8.5pt}.t4 td{padding:1.2mm 2.2mm}
 .week-t{font-size:16pt;margin-top:0}
 .day{display:grid;grid-template-columns:19mm 1fr 30mm;gap:4mm;align-items:start;padding:3mm 0;border-bottom:.6pt solid var(--line);break-inside:avoid}
 .dpill{background:var(--c);color:#fff;font-weight:700;font-size:9pt;border-radius:99px;text-align:center;padding:1.2mm 0;margin-top:.3mm}
@@ -215,6 +221,7 @@ ${bodyHtml}
 </body></html>`;
 
 const out = n => path.join(__dirname, 'out', n);
+fs.writeFileSync(path.join(__dirname, 'out', `${id}-sections.json`), JSON.stringify(sections));
 fs.writeFileSync(out(`${id}-cover.html`), coverHtml); fs.writeFileSync(out(`${id}.html`), bodyDoc);
 if (process.argv.includes('--html-only')) process.exit(0);
 

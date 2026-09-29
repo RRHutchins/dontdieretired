@@ -37,6 +37,7 @@
 
 {% macro product_promo(p) %}
 <aside class="promo">
+  <img class="product-img" src="/static/img/products/{{ p.id }}.jpg" alt="" width="480" height="480" loading="lazy">
   <p class="kicker">From our shop</p>
   <h4>{{ p.name }} <span class="price">{{ p.price }}</span></h4>
   <p>{{ p.blurb }}</p>

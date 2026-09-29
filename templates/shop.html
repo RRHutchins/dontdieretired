@@ -11,6 +11,7 @@
 {% set bundle = products.products | selectattr('id','equalto','bundle') | first %}
 {% if bundle %}
 <aside class="promo promo-bundle" id="bundle">
+  <img class="product-img bundle-img" src="/static/img/products/bundle.jpg" alt="All nine plans and workbooks" width="480" height="480" loading="lazy">
   <p class="kicker">Best value</p>
   <h4>{{ bundle.name }} <span class="price">{{ bundle.price }}</span></h4>
   <p>{{ bundle.blurb }}</p>
@@ -26,6 +27,7 @@
   <div class="grid grid-3">
   {% for p in prods %}
   <article class="card product" id="{{ p.id }}">
+    <img class="product-img" src="/static/img/products/{{ p.id }}.jpg" alt="{{ p.name }} — printable PDF" width="480" height="480" loading="lazy">
     <div class="card-body">
       <p class="kicker">{{ p.kind }}</p>
       <h3>{{ p.name }}</h3><p>{{ p.blurb }}</p>
