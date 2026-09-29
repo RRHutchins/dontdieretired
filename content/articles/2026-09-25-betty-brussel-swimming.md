@@ -1,5 +1,5 @@
 ---
-title: "Betty Brussel started competing at 68. At 99 she broke three world records before lunch."
+title: "Three world records before lunch: Betty Brussel, 99, and a swimming career that began at 68"
 slug: betty-brussel-99-three-world-records
 date: 2026-09-25
 category: stories

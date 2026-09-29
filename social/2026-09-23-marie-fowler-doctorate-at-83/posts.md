@@ -42,7 +42,7 @@ https://dontdieretired.com/think/marie-fowler-doctorate-at-83/?utm_source=x&utm_
 
 ## pinterest
 
-Out of school since 1959, she went back at 80 and finished a doctorate at 83 | Commit to one semester; the doubt about whether your brain still works is answered by showing up. | https://dontdieretired.com/think/marie-fowler-doctorate-at-83/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+More than six decades after leaving school, Marie Fowler earns a doctorate at 83 | Commit to one semester; the doubt about whether your brain still works is answered by showing up. | https://dontdieretired.com/think/marie-fowler-doctorate-at-83/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

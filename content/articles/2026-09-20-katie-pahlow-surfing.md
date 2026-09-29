@@ -1,5 +1,5 @@
 ---
-title: "She bought a surfboard at 17 and never learned to ride it. At 60 she finally booked the lesson."
+title: "Forty-three years after buying the surfboard, Katie Pahlow finally books the lesson"
 slug: katie-pahlow-surfing-at-60
 date: 2026-09-20
 category: stories
@@ -16,7 +16,7 @@ try_this:
 sources:
   - {title: "Older women are taking up surfing in growing numbers", publisher: "ABC News (Australia)", date: "29 December 2025", url: "https://www.abc.net.au/news/2025-12-29/older-women-surfing-trends/105867538"}
 ---
-Most of us have a version of Katie Pahlow's surfboard. Something bought, or planned, or half-started decades ago, and then put in the shed while life happened.
+The surfboard cost Katie Pahlow $50, second-hand, from a newspaper advertisement in Melbourne. She was 17. It went into the shed, and life happened around it for the next 43 years.
 
 > "When I was literally 17, living in Melbourne in the western suburbs, I bought myself a surfboard in the paper second-hand for $50."
 > — Katie Pahlow, ABC News

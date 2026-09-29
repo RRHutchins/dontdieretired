@@ -42,7 +42,7 @@ https://dontdieretired.com/move/natalie-grabow-oldest-woman-ironman-80/?utm_sour
 
 ## pinterest
 
-She learned to swim at 59. At 80 she became the oldest woman to finish the Ironman World Championship. | Learning a 'basic' skill like swimming in your late fifties can open a 20-year athletic career. | https://dontdieretired.com/move/natalie-grabow-oldest-woman-ironman-80/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+The oldest woman to finish the Ironman World Championship learned to swim at 59 | Learning a 'basic' skill like swimming in your late fifties can open a 20-year athletic career. | https://dontdieretired.com/move/natalie-grabow-oldest-woman-ironman-80/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

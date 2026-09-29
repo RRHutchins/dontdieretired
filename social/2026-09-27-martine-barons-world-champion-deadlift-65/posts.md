@@ -42,7 +42,7 @@ https://dontdieretired.com/stories/martine-barons-world-champion-deadlift-65/?ut
 
 ## pinterest
 
-She picked up a barbell in lockdown at 62. At 65 she's a three-time world champion. | Strength training started in your sixties can rebuild your body faster than you think — say yes to the first invitation. | https://dontdieretired.com/stories/martine-barons-world-champion-deadlift-65/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+From a lockdown barbell to three world deadlift titles at 65 | Strength training started in your sixties can rebuild your body faster than you think — say yes to the first invitation. | https://dontdieretired.com/stories/martine-barons-world-champion-deadlift-65/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

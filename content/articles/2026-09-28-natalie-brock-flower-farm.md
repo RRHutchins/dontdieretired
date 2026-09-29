@@ -1,5 +1,5 @@
 ---
-title: "At 51, she put down the pen and picked up the pruning shears. Now the flowers pay the bills."
+title: "A teacher's quarter-acre flower farm, started at 51, now pays the family's bills"
 slug: natalie-brock-flower-farm-at-51
 date: 2026-09-28
 category: earn
@@ -16,9 +16,9 @@ try_this:
 sources:
   - {title: "Teacher-turned-florist proves it's never too late for a career change", publisher: "ABC News (Australia)", date: "14 January 2025", url: "https://www.abc.net.au/news/2025-01-14/teacher-turned-florist-natalie-brock-career-change/104796014"}
 ---
-Most career-change stories start with a leap. Natalie Brock's started with a birthday and a patch of weeds.
+Natalie Brock's career change started with a birthday and a patch of weeds.
 
-Brock had taught for more than a decade and was a school wellbeing leader in the Riverland, South Australia's fruit-and-wine country. She and her husband Aden, a viticulturist, live on 60 hectares of vineyard near Monash. Somewhere on that land was a quarter-acre nobody was using. Then she did the sum most of us avoid.
+Brock had taught for more than a decade and was a school wellbeing leader in the Riverland, South Australia's fruit-and-wine country. She and her husband Aden, a viticulturist, live on 60 hectares of vineyard near Monash. Somewhere on that land was a quarter-acre nobody was using. Then she did a sum.
 
 > "I thought to myself, 'If I'm going to stop teaching and I've got another 10 years of work ahead of me, I want to be doing something that I really love'."
 > — Natalie Brock, to ABC News

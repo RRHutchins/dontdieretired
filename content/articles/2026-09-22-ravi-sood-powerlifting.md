@@ -1,5 +1,5 @@
 ---
-title: "He started lifting at 70 to get ready for knee surgery. At 82 he holds a national record."
+title: "A training plan for knee surgery at 70 became a national powerlifting record at 82"
 slug: ravi-sood-powerlifting-record-82
 date: 2026-09-22
 category: move
@@ -16,7 +16,7 @@ try_this:
 sources:
   - {title: "Powerlifting champion, aged 82, ready to represent Australia", publisher: "ABC News (Australia)", date: "9 October 2025", url: "https://www.abc.net.au/news/2025-10-09/powerlifting-champion-aged-82-and-ready-to-represent-australia/105868066"}
 ---
-Most people facing a double knee replacement in their seventies think about how to get through it. Ravi Sood, from Canberra, thought about how to get *ready* for it.
+Ravi Sood, from Canberra, was in his seventies and facing a double knee replacement when his surgeon gave him a piece of advice that most patients would file under "get through it". Sood filed it under "get ready".
 
 > "Both my knees needed replacing, and the orthopaedic surgeon said that if I had my muscles in good condition, the surgery would be easier."
 > — Ravi Sood, ABC News

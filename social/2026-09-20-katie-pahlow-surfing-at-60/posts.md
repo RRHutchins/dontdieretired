@@ -42,7 +42,7 @@ https://dontdieretired.com/stories/katie-pahlow-surfing-at-60/?utm_source=x&utm_
 
 ## pinterest
 
-She bought a surfboard at 17 and never learned to ride it. At 60 she finally booked the lesson. | The thing you shelved at 17 is still available at 60 — book the lesson. | https://dontdieretired.com/stories/katie-pahlow-surfing-at-60/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Forty-three years after buying the surfboard, Katie Pahlow finally books the lesson | The thing you shelved at 17 is still available at 60 — book the lesson. | https://dontdieretired.com/stories/katie-pahlow-surfing-at-60/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

@@ -1,5 +1,5 @@
 ---
-title: "He retired from general practice and went looking for dinosaurs. At 68 he has named three new species."
+title: "In museum drawers on the Isle of Wight, a retired doctor finds three new dinosaurs"
 slug: jeremy-lockwood-three-new-dinosaurs-68
 date: 2026-09-29
 category: explore

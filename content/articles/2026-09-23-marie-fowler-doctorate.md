@@ -1,5 +1,5 @@
 ---
-title: "Out of school since 1959, she went back at 80 and finished a doctorate at 83"
+title: "More than six decades after leaving school, Marie Fowler earns a doctorate at 83"
 slug: marie-fowler-doctorate-at-83
 date: 2026-09-23
 category: think

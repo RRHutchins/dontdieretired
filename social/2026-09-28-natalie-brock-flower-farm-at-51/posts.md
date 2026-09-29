@@ -42,7 +42,7 @@ https://dontdieretired.com/earn/natalie-brock-flower-farm-at-51/?utm_source=x&ut
 
 ## pinterest
 
-At 51, she put down the pen and picked up the pruning shears. Now the flowers pay the bills. | If you have ten working years left, spend them on something you actually love — and start it small, alongside the day job. | https://dontdieretired.com/earn/natalie-brock-flower-farm-at-51/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+A teacher's quarter-acre flower farm, started at 51, now pays the family's bills | If you have ten working years left, spend them on something you actually love — and start it small, alongside the day job. | https://dontdieretired.com/earn/natalie-brock-flower-farm-at-51/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

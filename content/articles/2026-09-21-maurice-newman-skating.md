@@ -1,5 +1,5 @@
 ---
-title: "He put on roller skates for the first time on his 60th birthday. Twenty years on, he's still racing."
+title: "Twenty years of racing began with a pair of roller skates on a 60th birthday"
 slug: maurice-newman-skating-at-80
 date: 2026-09-21
 category: connect

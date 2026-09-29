@@ -1,5 +1,5 @@
 ---
-title: "At 83, he took up tap dancing. 'It gives me a reason to get up in the morning.'"
+title: "In a Dallas tap class, an 83-year-old finds his reason to get up in the morning"
 slug: gene-edwards-tap-dancing-83
 date: 2026-09-19
 category: connect
@@ -16,7 +16,7 @@ try_this:
 sources:
   - {title: "Feeling alive in 2025: 83-year-old finds joy and purpose through tap dancing", publisher: "CBS News Texas", date: "16 January 2025", url: "https://www.cbsnews.com/texas/news/feeling-alive-in-2025-83-year-old-finds-joy-and-purpose-through-tap-dancing"}
 ---
-Not every story on this site needs a medal at the end of it. Gene Edwards, 83, of Dallas, Texas, started tap dancing lessons around 2023. He takes a weekly class at the Dallas Conservatory. He competed in Frisco's Got Talent. And the thing he says about it is the thing every one of our stories is really about:
+Gene Edwards, 83, of Dallas, Texas, started tap dancing lessons around 2023. He takes a weekly class at the Dallas Conservatory, and he competed in Frisco's Got Talent. There is no medal at the end of this one. What there is, in his own words, is the thing every story on this site is really about:
 
 > "It gives me something to do; it gives me a reason to get up in the morning."
 > — Gene Edwards, CBS News Texas

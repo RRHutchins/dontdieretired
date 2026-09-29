@@ -42,7 +42,7 @@ https://dontdieretired.com/connect/gene-edwards-tap-dancing-83/?utm_source=x&utm
 
 ## pinterest
 
-At 83, he took up tap dancing. 'It gives me a reason to get up in the morning.' | Pick something that makes you smile while you do it; the fitness follows. | https://dontdieretired.com/connect/gene-edwards-tap-dancing-83/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+In a Dallas tap class, an 83-year-old finds his reason to get up in the morning | Pick something that makes you smile while you do it; the fitness follows. | https://dontdieretired.com/connect/gene-edwards-tap-dancing-83/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

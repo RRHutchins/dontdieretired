@@ -1,5 +1,5 @@
 ---
-title: "She learned to swim at 59. At 80 she became the oldest woman to finish the Ironman World Championship."
+title: "The oldest woman to finish the Ironman World Championship learned to swim at 59"
 slug: natalie-grabow-oldest-woman-ironman-80
 date: 2026-09-24
 category: move

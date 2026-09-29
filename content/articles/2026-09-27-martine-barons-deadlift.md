@@ -1,5 +1,5 @@
 ---
-title: "She picked up a barbell in lockdown at 62. At 65 she's a three-time world champion."
+title: "From a lockdown barbell to three world deadlift titles at 65"
 slug: martine-barons-world-champion-deadlift-65
 date: 2026-09-27
 category: stories
@@ -17,7 +17,7 @@ sources:
   - {title: "'Deadlifting grandma: I'm a world champion'", publisher: "BBC CWR, via Yahoo Sports", date: "17 September 2026", url: "https://sports.yahoo.com/articles/deadlifting-grandma-im-world-champion-053747104.html"}
   - {title: "65-year-old grandmother crowned world champion for third time", publisher: "People", date: "26 September 2026", url: "https://sports.yahoo.com/articles/65-old-grandmother-crowned-3-213000665.html"}
 ---
-Most of us used the lockdown to learn how to bake bread. Martine Barons, a University of Warwick academic then in her early sixties, used it to learn how to deadlift.
+Martine Barons, a University of Warwick academic then in her early sixties, spent the lockdown learning how to deadlift.
 
 A colleague who worked as a personal trainer showed her the lift. Around the same time she attended a seminar on menopause and weightlifting, and something clicked. She kept going. In mid-September 2026, aged 65, she won the AWPC World Powerlifting Championships in the 65–85 age group — her third world title in under three years.
 

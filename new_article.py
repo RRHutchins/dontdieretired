@@ -9,6 +9,14 @@ ap.add_argument("title"); ap.add_argument("--category", required=True, choices=[
 ap.add_argument("--tags", default=""); ap.add_argument("--segments", default="")
 ap.add_argument("--date", default=dt.date.today().isoformat())
 a = ap.parse_args()
+# House style (RUNBOOK §1a): no pronoun openers, no "X at 60. At 65 ..." formula, no "still"/"despite".
+_t = a.title.strip()
+_bad = []
+if re.match(r"^(he|she|they|his|her)\b", _t, re.I): _bad.append("starts with a pronoun")
+if re.search(r"\bat \d{2}\b.*[.!?] *at \d{2}\b", _t, re.I): _bad.append("uses the two-sentence age formula")
+if re.search(r"\b(still|despite)\b", _t, re.I): _bad.append("uses 'still' or 'despite'")
+if _bad:
+    raise SystemExit("Headline rejected (" + "; ".join(_bad) + "). See RUNBOOK §1a and rewrite it.")
 slug = re.sub(r"[^a-z0-9]+", "-", a.title.lower()).strip("-")[:70]
 p = pathlib.Path(__file__).parent / "content/articles" / f"{a.date}-{slug}.md"
 p.write_text(f'''---

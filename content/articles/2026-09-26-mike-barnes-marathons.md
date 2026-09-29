@@ -1,5 +1,5 @@
 ---
-title: "He started running at 70 to carry his daughter's memory. At 74 he ran three marathons in a fortnight."
+title: "Three marathons in a fortnight at 74, each one run for a daughter"
 slug: mike-barnes-three-marathons-74
 date: 2026-09-26
 category: move
@@ -17,7 +17,7 @@ sources:
   - {title: "'I'm 74 and running 3 marathons in a month in tribute to my daughter'", publisher: "Lancashire Evening Post", date: "15 April 2026", url: "https://www.lep.co.uk/news/im-74-and-running-3-marathons-in-a-month-in-tribute-to-my-daughter-6576589"}
   - {title: "Started running at 70 after daughter's death", publisher: "BBC North West, via AOL", date: "April 2026", url: "https://www.aol.com/news/started-running-70-daughters-death-052241789.html"}
 ---
-There is a type of story we run here often: someone starts a sport late and turns out to be good at it. Mike Barnes's story is different, and in some ways more useful. He did not start running because he wanted to be a runner. He started because he needed somewhere to put his grief.
+Mike Barnes did not start running because he wanted to be a runner. He started because he needed somewhere to put his grief.
 
 His eldest daughter, Laura, died of bowel cancer in December 2019. Barnes, a retired primary headteacher from Goosnargh in Lancashire, was 70. He began to run.
 

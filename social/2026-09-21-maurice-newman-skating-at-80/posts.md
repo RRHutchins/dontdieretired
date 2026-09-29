@@ -42,7 +42,7 @@ https://dontdieretired.com/connect/maurice-newman-skating-at-80/?utm_source=x&ut
 
 ## pinterest
 
-He put on roller skates for the first time on his 60th birthday. Twenty years on, he's still racing. | A milestone birthday is a fine excuse to start something 'unsuitable' — and to keep doing it for twenty years. | https://dontdieretired.com/connect/maurice-newman-skating-at-80/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Twenty years of racing began with a pair of roller skates on a 60th birthday | A milestone birthday is a fine excuse to start something 'unsuitable' — and to keep doing it for twenty years. | https://dontdieretired.com/connect/maurice-newman-skating-at-80/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 
