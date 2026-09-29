@@ -274,6 +274,11 @@ def build(make_social=True):
         shutil.rmtree(DIST)
     DIST.mkdir()
     shutil.copytree(STATIC, DIST / "static")
+    # the app (installable web app at /app/)
+    if (ROOT / "app").exists():
+        shutil.copytree(ROOT / "app", DIST / "app", ignore=shutil.ignore_patterns("build_data.py", "__pycache__"))
+        import subprocess, sys as _sys
+        subprocess.run([_sys.executable, str(ROOT / "app" / "build_data.py"), str(DIST / "app" / "data.json")], check=True)
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"),
                       autoescape=select_autoescape(["html"]))
