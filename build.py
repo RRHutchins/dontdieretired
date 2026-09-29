@@ -268,6 +268,7 @@ def build(make_social=True):
     cfg = load_yaml(ROOT / "site.yaml")
     videos = load_yaml(CONTENT / "videos.yaml").get("videos", [])
     products = load_yaml(CONTENT / "products.yaml")
+    local = load_yaml(CONTENT / "local.yaml") if (CONTENT / "local.yaml").exists() else {"regions": {}, "activities": {}}
     arts = load_articles(cfg)
 
     if DIST.exists():
@@ -283,7 +284,7 @@ def build(make_social=True):
     env = Environment(loader=FileSystemLoader(ROOT / "templates"),
                       autoescape=select_autoescape(["html"]))
     env.globals.update(cfg=cfg, now=dt.date.today(), videos=videos, products=products,
-                       articles=arts, categories=cfg["categories"], segments=cfg["audience_segments"])
+                       articles=arts, categories=cfg["categories"], segments=cfg["audience_segments"], local=local)
 
     def out(path: str, tpl: str, **ctx):
         p = DIST / path.strip("/") / "index.html" if path != "/" else DIST / "index.html"

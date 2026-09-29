@@ -1,0 +1,92 @@
+# "Try it near you" listings, shown on articles whose front matter has `local: <activity-id>`.
+# The reader's region is guessed from the browser's time zone (no IP lookup, no cookie, no consent needed)
+# and can be changed with the "Not your area?" selector.
+#
+# RULES (RUNBOOK §2c):
+# - Every entry is a real place checked on its own or an official page on the date given in `checked`.
+#   Prices change: say "from" and re-check entries older than 6 months.
+# - `sponsored: true` for anything a business paid for; it renders a "Sponsored" label. Never unlabelled.
+# - `aff: viator|getyourguide` marks a link that gets our affiliate id appended once the id is in site.yaml.
+# - Time zones cannot split the UK, so "uk" lists options across the country.
+
+regions:
+  uk:         {label: "UK",                  tz: ["Europe/London", "Europe/Belfast", "Europe/Jersey", "Europe/Guernsey", "Europe/Isle_of_Man"]}
+  us-east:    {label: "US East Coast",       tz: ["America/New_York", "America/Detroit", "America/Indiana/", "America/Kentucky/"]}
+  us-central: {label: "US Central (Texas, Midwest)", tz: ["America/Chicago", "America/Menominee", "America/North_Dakota/", "America/Indiana/Knox", "America/Indiana/Tell_City"]}
+  us-mountain: {label: "US Mountain West",   tz: ["America/Denver", "America/Boise", "America/Phoenix"]}
+  us-pacific: {label: "US West Coast",       tz: ["America/Los_Angeles", "America/Anchorage", "Pacific/Honolulu"]}
+  canada:     {label: "Canada",              tz: ["America/Toronto", "America/Vancouver", "America/Edmonton", "America/Winnipeg", "America/Halifax", "America/St_Johns", "America/Regina"]}
+  elsewhere:  {label: "Somewhere else",      tz: []}
+
+activities:
+  fossil-hunting:
+    label: "fossil hunting"
+    guide: /explore/fossil-hunting-for-beginners/
+    listings:
+      uk:
+        - name: "Guided fossil walk, Dinosaur Isle"
+          where: "Yaverland beach, Isle of Wight"
+          what: "Two hours on the beach with museum staff and a safety briefing. No tools needed; wellies recommended."
+          price: "£7 adults, £5 concessions"
+          url: "https://www.dinosaurisle.com/article/3024/Fossil-walks"
+          checked: 2026-09-29
+        - name: "Public fossil-hunting walk, Charmouth Heritage Coast Centre"
+          where: "Charmouth, Dorset (Jurassic Coast)"
+          what: "90 minutes along a mile of beach with wardens and volunteers. You keep what you find."
+          price: "£14 adults"
+          url: "https://charmouth.org/chcc/"
+          checked: 2026-09-29
+        - name: "Finding fossils on UK beaches, Natural History Museum"
+          where: "Anywhere in the UK, including the Yorkshire coast"
+          what: "The museum's own guide to where to look and how to stay safe, plus its free identification service for your finds."
+          price: "Free"
+          url: "https://www.nhm.ac.uk/discover/how-to-find-fossils-on-the-beach.html"
+          checked: 2026-09-29
+      us-east:
+        - name: "Calvert Cliffs State Park"
+          where: "Lusby, Maryland"
+          what: "Shark teeth and Miocene shells wash out onto the open beach, a 1.8-mile (2.9 km) trail from the car park. Collect on the beach only, never under the cliffs."
+          price: "$5 per vehicle ($7 out of state), cash only"
+          url: "https://dnr.maryland.gov/publiclands/Pages/southern/calvertcliffs.aspx"
+          checked: 2026-09-29
+        - name: "Aurora Fossil Museum and Fossil Park"
+          where: "Aurora, North Carolina"
+          what: "Dig in the museum's own fossil pits for shark teeth, whale and fish fossils. Seasonal opening."
+          price: "Free"
+          url: "https://aurorafossilmuseum.com"
+          checked: 2026-09-29
+      us-central:
+        - name: "Mineral Wells Fossil Park"
+          where: "Mineral Wells, Texas (about an hour west of Dallas–Fort Worth)"
+          what: "A city park where you can keep what you find: crinoids, brachiopods, sometimes trilobites and shark teeth. Surface collecting and small garden tools only."
+          price: "Free, open daily 8am–8:45pm"
+          url: "https://visitmineralwells.org/mineral-wells-fossil-park"
+          checked: 2026-09-29
+      us-mountain:
+        - name: "American Fossil quarry dig"
+          where: "Kemmerer, Wyoming"
+          what: "Split 50-million-year-old lake-bed shale for fossil fish and keep every one you find. No experience needed."
+          price: "From $89 for two hours (adults)"
+          url: "https://www.fishdig.com/"
+          checked: 2026-09-29
+      us-pacific:
+        - name: "Fossil beds behind Wheeler High School"
+          where: "Fossil, Oregon"
+          what: "Public plant-fossil beds (sycamore, maple, oak leaves) where collecting is allowed. The National Park Service sends visitors here because digging isn't allowed in the nearby John Day Fossil Beds."
+          price: "Check on arrival"
+          url: "https://www.nps.gov/joda/faqs.htm"
+          checked: 2026-09-29
+      canada:
+        - name: "Royal Tyrrell Museum public programmes"
+          where: "Drumheller, Alberta"
+          what: "Seasonal guided badlands hikes and a practice quarry dig, mostly spring and summer. Register online."
+          price: "Varies by programme"
+          url: "https://eservices.alberta.ca/royal-tyrrell-museum-public-programs.html"
+          checked: 2026-09-29
+      elsewhere:
+        - name: "Your nearest natural history museum"
+          where: "Wherever you are"
+          what: "Ask whether it runs fossil walks or identification days, and whether a local geological society meets there. Most welcome beginners."
+          price: "Usually free to ask"
+          url: "/explore/fossil-hunting-for-beginners/"
+          checked: 2026-09-29

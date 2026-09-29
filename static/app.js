@@ -123,6 +123,45 @@
   $$('.plan-page').forEach(() => track('plan_view', { page: location.pathname }));
   $$('.share a').forEach(a => a.addEventListener('click', () => track('share', { via: a.textContent })));
 
+
+  /* ---------- 5. "Try it near you" (local listings) ----------
+     Region is guessed from the browser time zone only: no IP lookup, no cookie, nothing leaves the browser.
+     The reader can override it; the choice is remembered in this browser. */
+  const nearBoxes = $$('[data-near-you]');
+  if (nearBoxes.length) {
+    let regions = {};
+    try { regions = JSON.parse(($('[data-region-map]') || {}).textContent || '{}'); } catch {}
+    const guessRegion = () => {
+      let tz = '';
+      try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch {}
+      // exact matches first (so America/Indiana/Knox beats the America/Indiana/ prefix), then prefixes
+      for (const [id, r] of Object.entries(regions)) if ((r.tz || []).includes(tz)) return id;
+      for (const [id, r] of Object.entries(regions)) if ((r.tz || []).some(p => p.endsWith('/') && tz.startsWith(p))) return id;
+      return 'elsewhere';
+    };
+    const chosen = store.get('ddr_local_region');
+    const initial = chosen || guessRegion();
+    const show = (box, id) => {
+      const avail = $$('[data-region]', box).map(d => d.dataset.region);
+      const pick = avail.includes(id) ? id : (avail.includes('elsewhere') ? 'elsewhere' : avail[0]);
+      $$('[data-region]', box).forEach(d => d.hidden = d.dataset.region !== pick);
+      const sel = $('[data-region-select]', box); if (sel) sel.value = pick;
+      box.dataset.shown = pick;
+    };
+    nearBoxes.forEach(box => {
+      show(box, initial);
+      const sel = $('[data-region-select]', box);
+      if (sel) sel.addEventListener('change', () => { store.set('ddr_local_region', sel.value); nearBoxes.forEach(b => show(b, sel.value)); track('local_region', { region: sel.value, guessed: initial }); });
+      // experience affiliate ids (Viator / GetYourGuide) once they exist in site.yaml
+      $$('a[data-aff-exp]', box).forEach(a => { try {
+        const u = new URL(a.href), ex = (window.DDR.experiences || {});
+        if (a.dataset.affExp === 'viator' && ex.viator) u.searchParams.set('pid', ex.viator);
+        if (a.dataset.affExp === 'getyourguide' && ex.getyourguide) u.searchParams.set('partner_id', ex.getyourguide);
+        a.href = u.toString(); } catch {} });
+      $$('a[data-local-link]', box).forEach(a => a.addEventListener('click', () => track('local_click', { activity: box.dataset.activity, region: box.dataset.shown, url: a.href })));
+    });
+  }
+
   // Scroll depth (tells us whether article formats hold attention)
   let marks = { 50: 0, 90: 0 };
   window.addEventListener('scroll', () => {

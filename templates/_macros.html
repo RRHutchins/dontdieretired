@@ -53,3 +53,36 @@
 <a class="btn btn-small btn-ghost" href="/newsletter/?interest={{ p.id }}" data-product="{{ p.id }}" data-product-notify>Notify me when it's ready</a>
 {% endif %}
 {% endmacro %}
+
+{% macro near_you(key) %}
+{% set act = local.activities.get(key) %}
+{% if act %}
+<aside class="near-you" data-near-you data-activity="{{ key }}">
+  <p class="kicker">Try it near you</p>
+  <h3>Where to start {{ act.label }}</h3>
+  {% for rid, reg in local.regions.items() %}
+  {% set items = act.listings.get(rid) %}
+  {% if items %}
+  <div class="near-region" data-region="{{ rid }}" {% if rid != 'uk' %}hidden{% endif %}>
+    <ul>
+    {% for it in items %}
+      <li>
+        <a href="{{ it.url }}" {% if it.url.startswith('http') %}target="_blank" rel="noopener{% if it.sponsored or it.aff %} sponsored{% endif %}"{% endif %} data-local-link {% if it.aff %}data-aff-exp="{{ it.aff }}"{% endif %}>{{ it.name }}</a>{% if it.sponsored %} <span class="sponsored-label">Sponsored</span>{% endif %}
+        <span class="near-where">{{ it.where }}</span>
+        <span class="near-what">{{ it.what }}</span>
+        {% if it.price %}<span class="near-price">{{ it.price }}</span>{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  {% endfor %}
+  <p class="near-switch"><label>Not your area?
+    <select data-region-select>
+      {% for rid, reg in local.regions.items() %}{% if act.listings.get(rid) %}<option value="{{ rid }}">{{ reg.label }}</option>{% endif %}{% endfor %}
+    </select></label></p>
+  <p class="disclosure">We check every listing ourselves. Prices were correct when checked and can change, so confirm before you go.{% if act.guide %} New to this? Read <a href="{{ act.guide }}">our beginner's guide</a>.{% endif %}</p>
+</aside>
+<script type="application/json" data-region-map>{{ local.regions | tojson }}</script>
+{% endif %}
+{% endmacro %}

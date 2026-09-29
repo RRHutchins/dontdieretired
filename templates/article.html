@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import card, ad, affiliate_box, product_promo %}
+{% extends "base.html" %}{% from "_macros.html" import card, ad, affiliate_box, product_promo, near_you %}
 {% block title %}{{ a.title }} — {{ cfg.site.name }}{% endblock %}
 {% block description %}{{ a.excerpt }}{% endblock %}
 {% block ogtype %}article{% endblock %}
@@ -29,6 +29,8 @@
     <ol>{% for t in a.try_this %}<li>{{ t }}</li>{% endfor %}</ol>
   </aside>
   {% endif %}
+
+  {% if a.local %}{{ near_you(a.local) }}{% endif %}
 
   {% if a.plan %}
   <aside class="plan-box" data-plan-box>

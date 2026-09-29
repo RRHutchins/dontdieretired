@@ -5,6 +5,7 @@ date: 2026-09-29
 category: explore
 tags: [science, nature, learning, outdoors, men, beginner]
 segments: [learner, restarter, carer]
+local: fossil-hunting
 hook: "Jeremy Lockwood retired as a GP, started a PhD and found three new dinosaurs in boxes nobody had looked at properly."
 lesson: "The thing you loved at ten is a perfectly good thing to pick up at sixty — and the beach is open every day."
 standfirst: "Jeremy Lockwood was a family doctor for years. Family holidays on the Isle of Wight brought back a childhood love of fossils, so he retired, enrolled for a PhD and started measuring bones that had sat in museum drawers for decades. Three of them turned out to be dinosaurs no one had described before."
@@ -54,6 +55,9 @@ The beach itself does measurable good. A University of Exeter study of nearly 20
 Give the walk a reason — a fossil, a bird, a rock — and it becomes a project, and projects get you out of the door on grey mornings in a way "exercise" rarely does.
 
 ## How to start looking
+
+Our [beginner's guide to fossil hunting](/explore/fossil-hunting-for-beginners/) covers the rules and the kit in more detail; the box below lists guided walks and fossil parks near you.
+
 
 - **Go with a guide first.** Dinosaur Isle runs two-hour fossil walks from Yaverland beach (£7 adults, £5 concessions; wellies and a towel, no tools needed). Dorset's Jurassic Coast has its own; in the US, try a fossil shore such as Calvert Cliffs State Park in Maryland, where shark teeth wash out onto the sand.
 - **Follow the collecting code.** Pick up what the sea has loosened, never hammer at cliffs, check tide times, and take anything unusual to the local museum. Some US states (Florida, for one) require a low-cost permit for vertebrate fossils.

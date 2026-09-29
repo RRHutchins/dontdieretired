@@ -30,6 +30,8 @@ ads:
 affiliates:
   amazon_uk_tag: "dontdieretired-21"         # Amazon Associates UK tracking id
   amazon_us_tag: "dontdieretired-20"
+  viator_pid: ""                             # Viator Partner Program id (experiences/lessons); appended to local listings marked aff: viator
+  getyourguide_partner_id: ""                # GetYourGuide Partner id; appended to listings marked aff: getyourguide
   disclosure: "Some links on this page are affiliate links. If you buy through them we may earn a small commission at no extra cost to you. We only recommend things we would use ourselves."
 
 newsletter:
