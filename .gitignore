@@ -2,3 +2,8 @@ dist/
 __pycache__/
 social/*/*.png
 products/out/
+
+# private: never commit
+products/upgrade.json
+products/pdf/*
+!products/pdf/7-Day-Restart-Plan-FREE.pdf

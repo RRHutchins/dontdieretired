@@ -1,0 +1,15 @@
+{
+  "name": "Don't Die Retired",
+  "short_name": "DDR",
+  "description": "Your plans, your progress and today's story — ten minutes a day.",
+  "start_url": "/app/",
+  "scope": "/app/",
+  "display": "standalone",
+  "background_color": "#FBFAF7",
+  "theme_color": "#B23A48",
+  "icons": [
+    { "src": "/app/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/app/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/app/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
