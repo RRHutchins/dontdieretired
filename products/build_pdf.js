@@ -28,6 +28,8 @@ const OTHERS = [
 ];
 
 const src = process.argv[2]; const id = path.basename(src, '.json');
+const UPF = path.join(__dirname, 'upgrade.json'); const UP = fs.existsSync(UPF) ? JSON.parse(fs.readFileSync(UPF, 'utf8')) : null;
+const MY = UP && UP.products[id];
 const C = JSON.parse(fs.readFileSync(src, 'utf8')); const T = THEMES[id] || THEMES.restart30;
 fs.mkdirSync(path.join(__dirname, 'out'), { recursive: true });
 
@@ -195,11 +197,17 @@ td.blank{background:#fff!important}
 .back .panel{background:var(--c);color:#FFFDF9;border-radius:5mm;padding:11mm 11mm}
 .back .panel h2{font-family:Fr;font-weight:900;font-size:26pt;line-height:1.05;margin:2mm 0 4mm}
 .back .panel p{font-size:11.5pt;margin:0 0 2mm;opacity:.95}
-.back .kick{color:#FFFDF9;opacity:.85}
+.back .panel .kick{color:#FFFDF9;opacity:.85}
 .shelf{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4mm;margin-top:8mm}
 .shelf div{border:.8pt solid var(--line);border-radius:3.5mm;padding:4mm}
 .shelf b{display:block;font-family:Fr;font-size:11pt;margin-bottom:.8mm}
 .shelf span{font-size:8.8pt;color:var(--muted)}
+.upgrade{display:grid;grid-template-columns:1fr 52mm;gap:6mm;margin-top:7mm;border:1.4pt solid var(--acc);border-radius:5mm;padding:7mm 8mm;background:#FFF9EF}
+.up-h{font-family:Fr;font-size:17pt;color:var(--ink);margin:1.5mm 0 2.5mm}.up-h::before{display:none}
+.upgrade p{font-size:10.2pt;margin:0 0 2mm}.up-small{font-size:8.8pt!important;color:var(--muted)}
+.up-r{text-decoration:none;background:var(--c);color:#FFFDF9;border-radius:4mm;padding:5mm;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.up-price{font-family:Fr;font-weight:900;font-size:34pt;line-height:1}.up-was{font-size:9pt;opacity:.85;margin-bottom:3mm}
+.up-link{font-size:7.6pt;word-break:break-all;background:rgba(255,255,255,.14);border-radius:2mm;padding:1.6mm}.up-code{font-size:8.5pt;margin-top:2mm}
 .sign{margin-top:auto;display:flex;align-items:center;gap:4mm;padding-top:8mm;border-top:.6pt solid var(--line)}
 .sign .mark{width:13mm;height:13mm}
 .sign b{font-family:Fr;font-size:14pt}.sign i{color:var(--c)}
@@ -214,7 +222,8 @@ td.blank{background:#fff!important}
 ${bodyHtml}
 <section class="back">
   <div class="panel"><div class="kick">Keep going</div><h2>This is the start, not the finish.</h2><p>Every day at <b>dontdieretired.com</b> we publish a true story of someone who began something late — and the plan behind it. Join the free Sunday email and you'll get one story, one idea and one thing to try each week.</p></div>
-  <div class="kick" style="margin-top:9mm">More from the shelf</div>
+  ${MY ? `<div class="upgrade"><div class="up-l"><div class="kick" style="color:var(--acc)">Your purchase counts in full</div><h3 class="up-h">Get the other eight plans for £${MY.upgrade}</h3><p>You've paid £${MY.paid} for this plan. We take that off the Everything bundle, so the rest of the shelf, worth £${MY.others_value} bought separately, is yours for <b>£${MY.upgrade}</b>. You'll also get every new plan we publish for a year.</p><p class="up-small">Bought more than one plan? Reply to your receipt and we'll credit everything you've paid.</p></div><a class="up-r" href="${MY.url}"><div class="up-price">£${MY.upgrade}</div><div class="up-was">instead of £${UP.bundle_price}</div><div class="up-link">${esc(MY.url.replace('https://', ''))}</div><div class="up-code">or use code <b>${MY.code}</b></div></a></div>` : ''}
+  <div class="kick" style="margin-top:8mm">More from the shelf</div>
   <div class="shelf">${OTHERS.filter(o => o[0] !== C.title).slice(0, 6).map(o => `<div><b>${esc(o[0])}</b><span>${esc(o[1])}</span></div>`).join('')}</div>
   <div class="sign">${MARK(T.c, '#FFFDF9')}<div><b>Don't Die <i>Retired</i></b><span>Retire from work if you like. Never from life. · dontdieretired.com · hello@dontdieretired.com</span></div></div>
 </section>
