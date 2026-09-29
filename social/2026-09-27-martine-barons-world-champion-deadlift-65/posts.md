@@ -1,6 +1,6 @@
 ## facebook
 
-A grandmother who started deadlifting at 62 just won her third world powerlifting title at 65.
+Martine Barons has just won her third world powerlifting title. She lifted her first barbell in lockdown.
 
 Martine Barons took up deadlifting during the UK lockdown at 62. Three years later she has three AWPC world titles and says her body feels twenty years younger.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/stories/martine-barons-world-
 
 ## instagram
 
-A grandmother who started deadlifting at 62 just won her third world powerlifting title at 65.
+Martine Barons has just won her third world powerlifting title. She lifted her first barbell in lockdown.
 
 Strength training started in your sixties can rebuild your body faster than you think — say yes to the first invitation.
 
@@ -20,13 +20,13 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-A grandmother who started deadlifting at 62 just won her third world powerlifting title at 65. Strength training started in your sixties can rebuild your body faster than you think — say yes to the…
+Martine Barons has just won her third world powerlifting title. She lifted her first barbell in lockdown. Strength training started in your sixties can rebuild your body faster than you think — say…
 
 https://dontdieretired.com/stories/martine-barons-world-champion-deadlift-65/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ A grandmother who started deadlifting at 62 just won her third world powerlifting title at 65.
+1/ Martine Barons has just won her third world powerlifting title. She lifted her first barbell in lockdown.
 
 ---
 
@@ -42,11 +42,11 @@ https://dontdieretired.com/stories/martine-barons-world-champion-deadlift-65/?ut
 
 ## pinterest
 
-From a lockdown barbell to three world deadlift titles at 65 | Strength training started in your sixties can rebuild your body faster than you think — say yes to the first invitation. | https://dontdieretired.com/stories/martine-barons-world-champion-deadlift-65/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Martine Barons, three-time world powerlifting champion, started with a barbell in lockdown | Strength training started in your sixties can rebuild your body faster than you think — say yes to the first invitation. | https://dontdieretired.com/stories/martine-barons-world-champion-deadlift-65/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 
-A grandmother who started deadlifting at 62 just won her third world powerlifting title at 65.
+Martine Barons has just won her third world powerlifting title. She lifted her first barbell in lockdown.
 
 Martine Barons took up deadlifting during the UK lockdown at 62. Three years later she has three AWPC world titles and says her body feels twenty years younger.
 

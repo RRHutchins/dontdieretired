@@ -1,5 +1,5 @@
 ---
-title: "In museum drawers on the Isle of Wight, a retired doctor finds three new dinosaurs"
+title: "Jeremy Lockwood, retired family doctor, found three new dinosaurs in museum drawers"
 slug: jeremy-lockwood-three-new-dinosaurs-68
 date: 2026-09-29
 category: explore

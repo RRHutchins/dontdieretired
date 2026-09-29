@@ -1,5 +1,5 @@
 ---
-title: "Three world records before lunch: Betty Brussel, 99, and a swimming career that began at 68"
+title: "Betty Brussel broke three swimming world records before lunch"
 slug: betty-brussel-99-three-world-records
 date: 2026-09-25
 category: stories

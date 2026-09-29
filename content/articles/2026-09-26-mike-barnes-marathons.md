@@ -1,5 +1,5 @@
 ---
-title: "Three marathons in a fortnight at 74, each one run for a daughter"
+title: "Mike Barnes ran three marathons in a fortnight, each one for his daughter Laura"
 slug: mike-barnes-three-marathons-74
 date: 2026-09-26
 category: move

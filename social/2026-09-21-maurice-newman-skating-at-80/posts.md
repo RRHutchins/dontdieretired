@@ -42,7 +42,7 @@ https://dontdieretired.com/connect/maurice-newman-skating-at-80/?utm_source=x&ut
 
 ## pinterest
 
-Twenty years of racing began with a pair of roller skates on a 60th birthday | A milestone birthday is a fine excuse to start something 'unsuitable' — and to keep doing it for twenty years. | https://dontdieretired.com/connect/maurice-newman-skating-at-80/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Maurice Newman has skated the Berlin Marathon 16 times and two 24-hour races at Le Mans | A milestone birthday is a fine excuse to start something 'unsuitable' — and to keep doing it for twenty years. | https://dontdieretired.com/connect/maurice-newman-skating-at-80/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

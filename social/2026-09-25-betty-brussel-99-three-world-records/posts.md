@@ -42,7 +42,7 @@ https://dontdieretired.com/stories/betty-brussel-99-three-world-records/?utm_sou
 
 ## pinterest
 
-Three world records before lunch: Betty Brussel, 99, and a swimming career that began at 68 | Starting at 68 still leaves room for three decades of improvement — and community is as much the point as the medals. | https://dontdieretired.com/stories/betty-brussel-99-three-world-records/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Betty Brussel broke three swimming world records before lunch | Starting at 68 still leaves room for three decades of improvement — and community is as much the point as the medals. | https://dontdieretired.com/stories/betty-brussel-99-three-world-records/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

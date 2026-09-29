@@ -15,6 +15,8 @@ _bad = []
 if re.match(r"^(he|she|they|his|her)\b", _t, re.I): _bad.append("starts with a pronoun")
 if re.search(r"\bat \d{2}\b.*[.!?] *at \d{2}\b", _t, re.I): _bad.append("uses the two-sentence age formula")
 if re.search(r"\b(still|despite)\b", _t, re.I): _bad.append("uses 'still' or 'despite'")
+if re.match(r"^(at \d{2}|an? \d{2}-year-old|\d{2}-year-old)", _t, re.I): _bad.append("leads with the age — lead with the person and the deed")
+if re.search(r"\bat \d{2}\b|-year-old", _t, re.I): print("Warning: headline contains an age. House style is to keep the age for the standfirst unless it is itself the record.")
 if _bad:
     raise SystemExit("Headline rejected (" + "; ".join(_bad) + "). See RUNBOOK §1a and rewrite it.")
 slug = re.sub(r"[^a-z0-9]+", "-", a.title.lower()).strip("-")[:70]

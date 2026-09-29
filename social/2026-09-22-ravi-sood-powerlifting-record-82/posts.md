@@ -42,7 +42,7 @@ https://dontdieretired.com/move/ravi-sood-powerlifting-record-82/?utm_source=x&u
 
 ## pinterest
 
-A training plan for knee surgery at 70 became a national powerlifting record at 82 | Training for a medical reason — 'prehab' before surgery — can turn into a passion, and a national record. | https://dontdieretired.com/move/ravi-sood-powerlifting-record-82/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Ravi Sood trained for knee surgery and came away with a national powerlifting record | Training for a medical reason — 'prehab' before surgery — can turn into a passion, and a national record. | https://dontdieretired.com/move/ravi-sood-powerlifting-record-82/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

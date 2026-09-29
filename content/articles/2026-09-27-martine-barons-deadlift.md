@@ -1,11 +1,11 @@
 ---
-title: "From a lockdown barbell to three world deadlift titles at 65"
+title: "Martine Barons, three-time world powerlifting champion, started with a barbell in lockdown"
 slug: martine-barons-world-champion-deadlift-65
 date: 2026-09-27
 category: stories
 tags: [strength, beginner, competition, women, mindset]
 segments: [restarter, mover]
-hook: "A grandmother who started deadlifting at 62 just won her third world powerlifting title at 65."
+hook: "Martine Barons has just won her third world powerlifting title. She lifted her first barbell in lockdown."
 lesson: "Strength training started in your sixties can rebuild your body faster than you think — say yes to the first invitation."
 standfirst: "Martine Barons is an academic at the University of Warwick. Until 2020 she had never lifted a weight in her life. This month she won her third world powerlifting title."
 summary: "Martine Barons took up deadlifting during the UK lockdown at 62. Three years later she has three AWPC world titles and says her body feels twenty years younger."

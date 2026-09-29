@@ -42,7 +42,7 @@ https://dontdieretired.com/move/mike-barnes-three-marathons-74/?utm_source=x&utm
 
 ## pinterest
 
-Three marathons in a fortnight at 74, each one run for a daughter | A purpose bigger than yourself — a cause, a person — can carry you through the first hard months of a new sport. | https://dontdieretired.com/move/mike-barnes-three-marathons-74/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Mike Barnes ran three marathons in a fortnight, each one for his daughter Laura | A purpose bigger than yourself — a cause, a person — can carry you through the first hard months of a new sport. | https://dontdieretired.com/move/mike-barnes-three-marathons-74/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

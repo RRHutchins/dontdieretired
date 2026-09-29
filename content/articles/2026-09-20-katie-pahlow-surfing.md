@@ -1,5 +1,5 @@
 ---
-title: "Forty-three years after buying the surfboard, Katie Pahlow finally books the lesson"
+title: "Katie Pahlow kept a surfboard in the shed for 43 years, then learned to ride it"
 slug: katie-pahlow-surfing-at-60
 date: 2026-09-20
 category: stories

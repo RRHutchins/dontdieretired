@@ -1,5 +1,5 @@
 ---
-title: "A teacher's quarter-acre flower farm, started at 51, now pays the family's bills"
+title: "Natalie Brock's quarter-acre flower farm now pays the family's bills"
 slug: natalie-brock-flower-farm-at-51
 date: 2026-09-28
 category: earn

@@ -1,5 +1,5 @@
 ---
-title: "In a Dallas tap class, an 83-year-old finds his reason to get up in the morning"
+title: "The Dallas tap dancer who found his reason to get up in the morning"
 slug: gene-edwards-tap-dancing-83
 date: 2026-09-19
 category: connect

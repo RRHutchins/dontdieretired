@@ -1,5 +1,5 @@
 ---
-title: "Twenty years of racing began with a pair of roller skates on a 60th birthday"
+title: "Maurice Newman has skated the Berlin Marathon 16 times and two 24-hour races at Le Mans"
 slug: maurice-newman-skating-at-80
 date: 2026-09-21
 category: connect

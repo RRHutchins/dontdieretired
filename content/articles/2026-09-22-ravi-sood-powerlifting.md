@@ -1,5 +1,5 @@
 ---
-title: "A training plan for knee surgery at 70 became a national powerlifting record at 82"
+title: "Ravi Sood trained for knee surgery and came away with a national powerlifting record"
 slug: ravi-sood-powerlifting-record-82
 date: 2026-09-22
 category: move

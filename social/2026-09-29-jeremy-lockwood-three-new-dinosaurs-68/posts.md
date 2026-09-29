@@ -42,7 +42,7 @@ https://dontdieretired.com/explore/jeremy-lockwood-three-new-dinosaurs-68/?utm_s
 
 ## pinterest
 
-In museum drawers on the Isle of Wight, a retired doctor finds three new dinosaurs | The thing you loved at ten is a perfectly good thing to pick up at sixty — and the beach is open every day. | https://dontdieretired.com/explore/jeremy-lockwood-three-new-dinosaurs-68/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Jeremy Lockwood, retired family doctor, found three new dinosaurs in museum drawers | The thing you loved at ten is a perfectly good thing to pick up at sixty — and the beach is open every day. | https://dontdieretired.com/explore/jeremy-lockwood-three-new-dinosaurs-68/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 
