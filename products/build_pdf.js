@@ -100,47 +100,48 @@ const VARS = `:root{--c:${T.c};--tint:${T.tint};--acc:${T.accent};--ink:#1B1B1F;
 const coverHtml = `<!doctype html><html><head><meta charset="utf-8"><style>${FONTFACE}${VARS}
 @page{size:A4;margin:0}*{box-sizing:border-box}html,body{margin:0}
 .cover{width:210mm;height:297mm;background:var(--c);color:#FFFDF9;position:relative;overflow:hidden;font-family:Src;padding:22mm 20mm}
-.cover .arcs{position:absolute;right:-60mm;bottom:-70mm;width:230mm;height:230mm;opacity:.13}
-.cover .big{position:absolute;right:14mm;bottom:28mm;font-family:Fr;font-weight:900;font-size:${T.big.length > 1 ? 210 : 260}pt;line-height:.8;color:#FFFDF9;opacity:.14;letter-spacing:-.04em}
+.cover .sun{position:absolute;left:0;bottom:0;width:210mm;height:120mm}
+.cover .big{position:absolute;left:126mm;width:76mm;text-align:center;bottom:9mm;font-family:Fr;font-weight:900;font-size:${T.big.length > 2 ? 74 : 96}pt;line-height:1;color:var(--c);letter-spacing:-.03em}
 .brand{display:flex;align-items:center;gap:4mm}.brand .mark{width:15mm;height:15mm}
 .brand span{font-family:Fr;font-weight:700;font-size:17pt}.brand i{font-weight:400}
-.pill{display:inline-block;margin-top:44mm;border:1.2pt solid rgba(255,253,249,.7);border-radius:99px;padding:2mm 5mm;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:9.5pt}
+.pill{display:inline-block;margin-top:40mm;border:1.2pt solid rgba(255,253,249,.7);border-radius:99px;padding:2mm 5.5mm;font-weight:700;letter-spacing:.01em;font-size:12pt}
 h1{font-family:Fr;font-weight:900;font-size:58pt;line-height:.98;margin:8mm 0 7mm;letter-spacing:-.015em;max-width:160mm}
 .sub{font-family:Fr;font-style:italic;font-size:19pt;line-height:1.3;max-width:140mm;opacity:.95}
 .rule{width:28mm;height:2.2mm;background:var(--acc);margin:12mm 0 0;border-radius:2mm}
-.foot{position:absolute;left:20mm;right:20mm;bottom:18mm;display:flex;justify-content:space-between;align-items:flex-end;font-size:10pt;letter-spacing:.04em}
-.foot b{display:block;font-size:11.5pt;letter-spacing:.02em}
+.foot{position:absolute;left:20mm;width:84mm;bottom:18mm;font-size:11pt;line-height:1.45}.foot .url{margin-top:3mm;opacity:.85}
+.foot b{display:block;font-size:12pt}
 </style></head><body><div class="cover">
-<svg class="arcs" viewBox="0 0 200 200"><g fill="none" stroke="#FFFDF9" stroke-width="7">${[90, 72, 54, 36].map(r => `<circle cx="100" cy="100" r="${r}"/>`).join('')}</g></svg>
+<svg class="sun" viewBox="0 0 210 120" preserveAspectRatio="xMidYMax meet"><g stroke="#F2B45A" stroke-opacity=".38" stroke-width="4.2" stroke-linecap="round">${[150, 122, 94, 66, 38, 12].map(a => { const t = a * Math.PI / 180, cx = 164, cy = 126, r1 = 62, r2 = 86;
+  return `<line x1="${(cx + r1 * Math.cos(t)).toFixed(1)}" y1="${(cy - r1 * Math.sin(t)).toFixed(1)}" x2="${(cx + r2 * Math.cos(t)).toFixed(1)}" y2="${(cy - r2 * Math.sin(t)).toFixed(1)}"/>`; }).join('')}</g><circle cx="164" cy="126" r="54" fill="#FFFDF9" fill-opacity=".12"/><circle cx="164" cy="126" r="50" fill="#F2B45A"/></svg>
 <div class="big">${esc(T.big)}</div>
 <div class="brand">${MARK('#FFFDF9', T.c)}<span>Don't Die <i>Retired</i></span></div>
 <div class="pill">${esc(C.kind)}</div>
 <h1>${esc(C.title)}</h1>
 <div class="sub">${esc(C.subtitle)}</div>
 <div class="rule"></div>
-<div class="foot"><div><b>Printable · Written for everyone over 50</b>Whether you've always been active or never got round to it</div><div>dontdieretired.com</div></div>
+<div class="foot"><b>Printable, and written for everyone over 50</b>Whether you've always been active or never got round to it<div class="url">dontdieretired.com</div></div>
 </div></body></html>`;
 
 // ---------- body ----------
 const bodyDoc = `<!doctype html><html><head><meta charset="utf-8"><style>${FONTFACE}${VARS}
 @page{size:A4;margin:17mm 17mm 19mm}
 *{box-sizing:border-box}html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-body{margin:0;font-family:Src;font-size:10.8pt;line-height:1.55;color:var(--ink);background:#fff}
+body{margin:0;font-family:Src;font-size:12.6pt;line-height:1.55;color:var(--ink);background:#fff}
 strong{font-weight:700;color:#111}
 /* inside cover */
 .inside{break-after:page;display:grid;grid-template-rows:auto auto 1fr auto;min-height:258mm}
 .inside .welcome{background:var(--tint);border-radius:5mm;padding:9mm 10mm}
-.kick{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:8.5pt;color:var(--c)}
+.kick{font-weight:700;letter-spacing:0;text-transform:none;font-size:10pt;color:var(--c)}
 .inside h2{font-family:Fr;font-weight:700;font-size:25pt;line-height:1.1;margin:2mm 0 3mm}
-.inside .welcome p{margin:0;font-size:11.5pt}
+.inside .welcome p{margin:0;font-size:13.5pt}
 .toc{margin:9mm 0 0;padding:0;list-style:none;columns:2;column-gap:10mm}
 .toc li{break-inside:avoid;display:flex;gap:4mm;align-items:baseline;padding:2.6mm 0;border-bottom:.6pt solid var(--line);font-weight:600}
 .toc .n{font-family:Fr;font-weight:900;color:var(--c);font-size:13pt;min-width:9mm}
 .how{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-top:9mm;align-self:start}
 .how div{border:.8pt solid var(--line);border-radius:4mm;padding:5mm}
-.how b{display:block;font-family:Fr;font-size:12.5pt;margin-bottom:1mm;color:var(--c)}
-.how span{font-size:9.8pt;color:#333}
-.disc{font-size:8.3pt;color:var(--muted);border-top:.6pt solid var(--line);padding-top:3mm;margin-top:6mm}
+.how b{display:block;font-family:Fr;font-size:14.6pt;margin-bottom:1mm;color:var(--c)}
+.how span{font-size:11.5pt;color:#333}
+.disc{font-size:10pt;color:var(--muted);border-top:.6pt solid var(--line);padding-top:3mm;margin-top:6mm}
 /* sections */
 .sec-head{break-before:page;margin:0 0 7mm;padding:0 0 5mm;border-bottom:1.4pt solid var(--c);display:flex;align-items:flex-end;gap:5mm}
 .sec-num{font-family:Fr;font-weight:900;font-size:40pt;line-height:.8;color:var(--c)}
@@ -156,7 +157,7 @@ ul.bul li{position:relative;padding-left:6mm;margin:0 0 1.8mm}
 ul.bul li::before{content:"";position:absolute;left:.6mm;top:2mm;width:2.2mm;height:2.2mm;border-radius:50%;background:var(--c)}
 ol.num{list-style:none;padding:0;margin:1mm 0 3mm}
 ol.num li{display:flex;gap:3.5mm;margin:0 0 2.4mm;break-inside:avoid}
-ol.num .n{flex:0 0 6.5mm;height:6.5mm;border-radius:50%;background:var(--c);color:#fff;font-weight:700;font-size:9.5pt;display:flex;align-items:center;justify-content:center;margin-top:.3mm}
+ol.num .n{flex:0 0 6.5mm;height:6.5mm;border-radius:50%;background:var(--c);color:#fff;font-weight:700;font-size:11.1pt;display:flex;align-items:center;justify-content:center;margin-top:.3mm}
 ul.chk{list-style:none;padding:0;margin:1mm 0 3mm}
 ul.chk li{display:flex;gap:3.5mm;margin:0 0 2.6mm;break-inside:avoid}
 .box{flex:0 0 5.2mm;height:5.2mm;border:1.3pt solid var(--c);border-radius:1.3mm;margin-top:.4mm;display:inline-block;background:#fff}
@@ -164,31 +165,31 @@ ul.chk li{display:flex;gap:3.5mm;margin:0 0 2.6mm;break-inside:avoid}
 blockquote{margin:5mm 0;padding:5mm 7mm 5mm 14mm;position:relative;background:var(--tint);border-radius:4mm;break-inside:avoid}
 blockquote::before{content:"\\201C";position:absolute;left:3.5mm;top:-2mm;font-family:Fr;font-weight:900;font-size:44pt;color:var(--c);line-height:1}
 blockquote p{font-family:Fr;font-style:italic;font-size:13.5pt;line-height:1.4;margin:0}
-blockquote cite{display:block;margin-top:2mm;font-style:normal;font-size:9pt;color:var(--muted);letter-spacing:.04em}
+blockquote cite{display:block;margin-top:2mm;font-style:normal;font-size:10.5pt;color:var(--muted);letter-spacing:.04em}
 .call{display:flex;gap:4mm;border-radius:4mm;padding:5mm 6mm;margin:4mm 0;break-inside:avoid;background:var(--tint)}
 .call .ic{flex:0 0 7mm;color:var(--c)}.call .ic svg{width:7mm;height:7mm}
-.call h4{margin:0 0 1.5mm;font-family:Fr;font-size:12pt}
-.call p{margin:0 0 1.2mm;font-size:10.2pt}
+.call h4{margin:0 0 1.5mm;font-family:Fr;font-size:14pt}
+.call p{margin:0 0 1.2mm;font-size:11.9pt}
 .call-warn{background:#FCEDEA}.call-warn .ic{color:#B23A48}.call-warn h4{color:#8E2433}
 .call-star{background:#FBF3E4}.call-star .ic{color:var(--acc)}
 .call-us{background:#EEF2F8}.call-us .ic{color:#1F4E79}
-table{width:100%;border-collapse:separate;border-spacing:0;margin:3mm 0 5mm;font-size:9.6pt;break-inside:auto;border:.8pt solid var(--line);border-radius:3mm;overflow:hidden}
-thead th{background:var(--c);color:#fff;text-align:left;font-weight:700;padding:2.4mm 3mm;font-size:9.3pt}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:3mm 0 5mm;font-size:11.2pt;break-inside:auto;border:.8pt solid var(--line);border-radius:3mm;overflow:hidden}
+thead th{background:var(--c);color:#fff;text-align:left;font-weight:700;padding:2.4mm 3mm;font-size:10.9pt}
 td{padding:2.2mm 3mm;border-top:.6pt solid var(--line);vertical-align:top}
 tbody tr:nth-child(even) td{background:#FAF8F4}
 tr{break-inside:avoid}
 table.write td{height:10mm}
 td.blank{background:#fff!important}
 .week{margin:0 0 4mm;break-before:page}.week.nobreak{break-before:auto}
-.t1{font-size:10.3pt;line-height:1.47}.t1 p{margin-bottom:2mm}.t1 .call{padding:4mm 5mm;margin:3mm 0}.t1 h3{margin-top:5mm}.t1 table.write td{height:8.5mm}.t1 .day{padding:2.2mm 0}
-.t2{font-size:9.8pt;line-height:1.42}.t2 p{margin-bottom:1.6mm}.t2 .call{padding:3.4mm 4.5mm;margin:2.5mm 0}.t2 h3{margin-top:4mm}.t2 table{font-size:9pt}.t2 td{padding:1.6mm 2.6mm}.t2 table.write td{height:7.5mm}.t2 .day{padding:1.6mm 0}.t2 blockquote{padding:3.5mm 6mm 3.5mm 13mm}
-.t3{font-size:9.4pt;line-height:1.38}.t3 p{margin-bottom:1.3mm}.t3 .call{padding:3mm 4mm;margin:2mm 0}.t3 h3{margin-top:3.5mm}.t3 table{font-size:8.7pt}.t3 td{padding:1.3mm 2.4mm}.t3 table.write td{height:6.8mm}.t3 .day{padding:1.2mm 0}
-.t4{font-size:9.1pt;line-height:1.34}.t4 p{margin-bottom:1mm}.t4 .call{padding:2.6mm 3.6mm;margin:1.6mm 0}.t4 .call p{margin:0 0 .6mm;font-size:9pt}.t4 h3{margin-top:3mm}.t4 ul.bul li{margin-bottom:1.1mm}.t4 table{font-size:8.5pt}.t4 td{padding:1.2mm 2.2mm}
+.t1{font-size:12.1pt;line-height:1.47}.t1 p{margin-bottom:2mm}.t1 .call{padding:4mm 5mm;margin:3mm 0}.t1 h3{margin-top:5mm}.t1 table.write td{height:8.5mm}.t1 .day{padding:2.2mm 0}
+.t2{font-size:11.5pt;line-height:1.42}.t2 p{margin-bottom:1.6mm}.t2 .call{padding:3.4mm 4.5mm;margin:2.5mm 0}.t2 h3{margin-top:4mm}.t2 table{font-size:10.5pt}.t2 td{padding:1.6mm 2.6mm}.t2 table.write td{height:7.5mm}.t2 .day{padding:1.6mm 0}.t2 blockquote{padding:3.5mm 6mm 3.5mm 13mm}
+.t3{font-size:11pt;line-height:1.38}.t3 p{margin-bottom:1.3mm}.t3 .call{padding:3mm 4mm;margin:2mm 0}.t3 h3{margin-top:3.5mm}.t3 table{font-size:10.2pt}.t3 td{padding:1.3mm 2.4mm}.t3 table.write td{height:6.8mm}.t3 .day{padding:1.2mm 0}
+.t4{font-size:10.6pt;line-height:1.34}.t4 p{margin-bottom:1mm}.t4 .call{padding:2.6mm 3.6mm;margin:1.6mm 0}.t4 .call p{margin:0 0 .6mm;font-size:10.5pt}.t4 h3{margin-top:3mm}.t4 ul.bul li{margin-bottom:1.1mm}.t4 table{font-size:10pt}.t4 td{padding:1.2mm 2.2mm}
 .week-t{font-size:16pt;margin-top:0}
 .day{display:grid;grid-template-columns:19mm 1fr 30mm;gap:4mm;align-items:start;padding:3mm 0;border-bottom:.6pt solid var(--line);break-inside:avoid}
-.dpill{background:var(--c);color:#fff;font-weight:700;font-size:9pt;border-radius:99px;text-align:center;padding:1.2mm 0;margin-top:.3mm}
-.dtask{font-size:10pt;line-height:1.45}
-.dnote{font-size:9pt;color:var(--muted);font-style:italic;margin-top:1mm}
+.dpill{background:var(--c);color:#fff;font-weight:700;font-size:10.5pt;border-radius:99px;text-align:center;padding:1.2mm 0;margin-top:.3mm}
+.dtask{font-size:11.7pt;line-height:1.45}
+.dnote{font-size:10.5pt;color:var(--muted);font-style:italic;margin-top:1mm}
 .dtick{display:flex;align-items:center;gap:2mm}
 .circle{flex:0 0 7mm;height:7mm;border:1.4pt solid var(--c);border-radius:50%}
 .line{flex:1;border-bottom:.8pt solid var(--line);height:6mm}
@@ -196,22 +197,22 @@ td.blank{background:#fff!important}
 .back{break-before:page;min-height:258mm;display:flex;flex-direction:column}
 .back .panel{background:var(--c);color:#FFFDF9;border-radius:5mm;padding:11mm 11mm}
 .back .panel h2{font-family:Fr;font-weight:900;font-size:26pt;line-height:1.05;margin:2mm 0 4mm}
-.back .panel p{font-size:11.5pt;margin:0 0 2mm;opacity:.95}
+.back .panel p{font-size:13.5pt;margin:0 0 2mm;opacity:.95}
 .back .panel .kick{color:#FFFDF9;opacity:.85}
 .shelf{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4mm;margin-top:8mm}
 .shelf div{border:.8pt solid var(--line);border-radius:3.5mm;padding:4mm}
-.shelf b{display:block;font-family:Fr;font-size:11pt;margin-bottom:.8mm}
-.shelf span{font-size:8.8pt;color:var(--muted)}
+.shelf b{display:block;font-family:Fr;font-size:12.9pt;margin-bottom:.8mm}
+.shelf span{font-size:10.3pt;color:var(--muted)}
 .upgrade{display:grid;grid-template-columns:1fr 52mm;gap:6mm;margin-top:7mm;border:1.4pt solid var(--acc);border-radius:5mm;padding:7mm 8mm;background:#FFF9EF}
 .up-h{font-family:Fr;font-size:17pt;color:var(--ink);margin:1.5mm 0 2.5mm}.up-h::before{display:none}
-.upgrade p{font-size:10.2pt;margin:0 0 2mm}.up-small{font-size:8.8pt!important;color:var(--muted)}
+.upgrade p{font-size:11.9pt;margin:0 0 2mm}.up-small{font-size:10.3pt!important;color:var(--muted)}
 .up-r{text-decoration:none;background:var(--c);color:#FFFDF9;border-radius:4mm;padding:5mm;text-align:center;display:flex;flex-direction:column;justify-content:center}
-.up-price{font-family:Fr;font-weight:900;font-size:34pt;line-height:1}.up-was{font-size:9pt;opacity:.85;margin-bottom:3mm}
-.up-link{font-size:7.6pt;word-break:break-all;background:rgba(255,255,255,.14);border-radius:2mm;padding:1.6mm}.up-code{font-size:8.5pt;margin-top:2mm}
+.up-price{font-family:Fr;font-weight:900;font-size:34pt;line-height:1}.up-was{font-size:10.5pt;opacity:.85;margin-bottom:3mm}
+.up-link{font-size:10pt;word-break:break-all;background:rgba(255,255,255,.14);border-radius:2mm;padding:1.6mm}.up-code{font-size:10pt;margin-top:2mm}
 .sign{margin-top:auto;display:flex;align-items:center;gap:4mm;padding-top:8mm;border-top:.6pt solid var(--line)}
 .sign .mark{width:13mm;height:13mm}
 .sign b{font-family:Fr;font-size:14pt}.sign i{color:var(--c)}
-.sign span{display:block;font-size:9pt;color:var(--muted)}
+.sign span{display:block;font-size:10.5pt;color:var(--muted)}
 </style></head><body>
 <section class="inside">
   <div class="welcome"><div class="kick">Welcome</div><h2>${esc(C.title)}</h2><p>${esc(C.subtitle)}. Retirement is a word for leaving a job, not a description of a person — and this ${esc(C.kind.toLowerCase())} is written for anyone over 50 who wants to do more, not less, whether you've always been active or never got round to it.</p></div>
