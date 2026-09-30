@@ -1,0 +1,46 @@
+# "Your say" — ideas readers can vote on.
+# status: open (voting) | planned (we're doing it) | done (shipped — shows under "You asked, we did")
+# kind: content | product | site
+# Claude reviews votes and suggestions monthly (RUNBOOK → Monthly), promotes good suggestions to new
+# proposals, and moves winners to planned/done with a one-line note of what was built.
+proposals:
+  - id: audio-ai
+    kind: product
+    status: open
+    title: "An audio course: AI for the over-50s"
+    blurb: "Short episodes you can listen to on a walk: what AI tools are, what they're good for, and how to use them safely."
+  - id: walking-finder
+    kind: site
+    status: open
+    title: "A finder for walking groups, swims and classes near you"
+    blurb: "Put in your town or ZIP code and see beginner-friendly groups nearby, checked by us."
+  - id: large-print
+    kind: product
+    status: open
+    title: "Large-print editions of every plan"
+    blurb: "The same plans set in bigger type with more space to write, for easier printing and reading."
+  - id: recipes
+    kind: content
+    status: open
+    title: "A weekly recipe for one or two"
+    blurb: "One simple, high-protein recipe a week, scaled for small households, with a shopping list."
+  - id: us-stories
+    kind: content
+    status: open
+    title: "More stories from the US and Canada"
+    blurb: "More real people and more local detail from North America: Medicare, senior games, community colleges."
+  - id: challenge-month
+    kind: content
+    status: open
+    title: "A monthly group challenge"
+    blurb: "One challenge a month that everyone does together, like 10,000 steps or learning 100 words, with a weekly email to keep going."
+  - id: app-full
+    kind: product
+    status: open
+    title: "The full Don't Die Retired app"
+    blurb: "Every plan in an app with timers, reminders and a progress log, so you don't need to print anything."
+  - id: explore-more
+    kind: content
+    status: open
+    title: "More on nature, stars and science to take part in"
+    blurb: "Birdwatching, fossil hunting, stargazing and citizen science projects you can join from home or nearby."

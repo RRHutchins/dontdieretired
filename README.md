@@ -418,7 +418,7 @@ Repo layout: `site.yaml` (config), `content/articles/*.md`, `content/videos.yaml
 | Newsletter | Buttondown (free to 100 subs) or Beehiiv | `newsletter.form_action`; segment passed as tag | Day 1 |
 | Paid newsletter tier | Buttondown/Beehiiv paid subscriptions | `newsletter.paid_tier_url` | When free list > 500 |
 | Digital products | Gumroad (0 monthly fee, ~10% + fees) | `products.store_url`, `content/products.yaml` | Day 1 — Claude writes the PDFs (see §6) |
-| Membership | Ko-fi (0% platform fee on memberships) or Patreon | `membership.url` | When list > 1,000 or first live Q&A guest booked |
+| Membership | Ko-fi (0% platform fee on memberships) or Patreon | `membership.url` | When list > 1,000 |
 | Sponsorship | None — email | `/sponsor/` page + rate card in site.yaml | Pitch from 10k monthly sessions |
 | Platform payouts | Meta (FB/IG) monetisation, X Creator Revenue, YouTube Partner, TikTok Creator Rewards | Scheduler posts drive it | At each platform's threshold (see plan document) |
 | Lead-gen / courses (later) | Own cohort course or Teachable | `/shop/` | When product sales prove demand |

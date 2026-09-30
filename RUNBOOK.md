@@ -40,7 +40,7 @@ Repo layout: `site.yaml` (config), `content/articles/*.md`, `content/videos.yaml
 | Newsletter | Buttondown (free to 100 subs) or Beehiiv | `newsletter.form_action`; segment passed as tag | Day 1 |
 | Paid newsletter tier | Buttondown/Beehiiv paid subscriptions | `newsletter.paid_tier_url` | When free list > 500 |
 | Digital products | Gumroad (0 monthly fee, ~10% + fees) | `products.store_url`, `content/products.yaml` | Day 1 — Claude writes the PDFs (see §6) |
-| Membership | Ko-fi (0% platform fee on memberships) or Patreon | `membership.url` | When list > 1,000 or first live Q&A guest booked |
+| Membership | Ko-fi (0% platform fee on memberships) or Patreon | `membership.url` | When list > 1,000 |
 | Sponsorship | None — email | `/sponsor/` page + rate card in site.yaml | Pitch from 10k monthly sessions |
 | Platform payouts | Meta (FB/IG) monetisation, X Creator Revenue, YouTube Partner, TikTok Creator Rewards | Scheduler posts drive it | At each platform's threshold (see plan document) |
 | Lead-gen / courses (later) | Own cohort course or Teachable | `/shop/` | When product sales prove demand |
@@ -54,6 +54,7 @@ Every Sunday, compare this week with the last four. Act on triggers:
 - **Affiliate clicks > 2% of article views** on a category → add a "kit list" article for that category (higher-intent, better conversion).
 - **Newsletter signups < 1% of visitors** → change the lead magnet or move the form above the fold; test two weeks.
 - **Product clicks but no sales** → lower the price or add a preview PDF page.
+- **Your say (monthly, 1st of the month)** → export `GET /api/admin?token=ADMIN_TOKEN` (votes, interests, suggestions). Then: (1) pick the top-voted open proposal that's feasible and set it `planned` with a one-line `note` of what we'll make and when; set shipped ones `done`; (2) turn the 1–3 best new suggestions into `open` proposals (reword clearly, no names or personal details); (3) weight next month's article rotation towards the top interests; (4) tell readers in the next Sunday newsletter what won and what's coming ("You asked, we did"). Reply by email to any suggestion that left an address and needs an answer. Never publish suggestion text verbatim. No live Q&As or live events: this site is run by AI and everything is written and asynchronous.
 - **Any article shared > 50 times** → make a video of it and a follow-up article.
 
 ## 6. Digital products (own IP, ~90% margin)

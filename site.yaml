@@ -47,6 +47,12 @@ products:
   store_url: "https://dontdieretired.gumroad.com"
   store_live: false                          # set true once every product in content/products.yaml exists on Gumroad at its URL; until then buttons say "Notify me"
 
+feedback:
+  # "Your say" page (/your-say/): interests, votes, suggestions. Needs the Cloudflare Pages Function in functions/api
+  # (D1 database bound as DB, secrets SALT and ADMIN_TOKEN). Set live: true once /api/say answers; that adds it to nav and sitemap.
+  live: false
+  endpoint: "/api"
+
 membership:
   platform: "kofi"                           # kofi | patreon | buymeacoffee
   url: "https://ko-fi.com/dontdieretired"

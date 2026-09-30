@@ -311,6 +311,9 @@ def build(make_social=True):
     urls.append(out("/start-here/", "start.html"))
     urls.append(out("/newsletter/", "newsletter.html"))
     urls.append(out("/shop/", "shop.html"))
+    proposals = (load_yaml(CONTENT / "proposals.yaml") or {}).get("proposals", []) if (CONTENT / "proposals.yaml").exists() else []
+    say = out("/your-say/", "your-say.html", proposals=proposals)
+    if cfg.get("feedback", {}).get("live"): urls.append(say)
     urls.append(out("/members/", "members.html"))
     urls.append(out("/sponsor/", "sponsor.html"))
     urls.append(out("/about/", "about.html"))

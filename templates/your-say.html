@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Have your say — {{ cfg.site.name }}{% endblock %}
+{% block description %}Tell us what you're interested in, vote on what we make next, and suggest anything we've missed.{% endblock %}
+{% block head %}{% if not cfg.feedback.live %}<meta name="robots" content="noindex">{% endif %}{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Your say</p><h1>You decide what we do next</h1>
+  <p class="lead">Tell us what you're into, vote for the ideas you'd actually use, and suggest anything we've missed. We read every suggestion and count the votes at the start of each month. The winners get made.</p></header>
+
+<p class="say-offline" data-say-offline hidden>Voting opens very soon. <a href="/newsletter/">Join the weekly email</a> and we'll tell you when it's live.</p>
+
+<section class="say-block" id="interests">
+  <h2><span class="say-num">1</span> What are you into?</h2>
+  <p>Pick as many as you like. We use the totals to decide what to write about, and this browser will put your topics first.</p>
+  <div class="chips" data-interests>
+    {% for cid, c in categories.items() %}<button type="button" class="chip" data-interest="{{ cid }}" aria-pressed="false">{{ c.label }}</button>{% endfor %}
+  </div>
+  <p class="say-status" data-interest-status aria-live="polite"></p>
+</section>
+
+<section class="say-block" id="vote">
+  <h2><span class="say-num">2</span> Vote on what we make next</h2>
+  <p>Vote for as many as you'd use. You can change your mind at any time.</p>
+  <div class="proposals">
+  {% for p in proposals if p.status == 'open' %}
+    <article class="proposal" data-proposal="{{ p.id }}">
+      <p class="kicker">{{ {'content':'New content','product':'New plan or product','site':'Website improvement'}[p.kind] }}</p>
+      <h3>{{ p.title }}</h3>
+      <p>{{ p.blurb }}</p>
+      <div class="vote-row">
+        <button type="button" class="btn btn-small btn-ghost vote-btn" data-vote="{{ p.id }}" aria-pressed="false"><span class="v-off">I'd use this</span><span class="v-on">✓ You voted</span></button>
+        <span class="vote-bar" aria-hidden="true"><span data-bar="{{ p.id }}"></span></span>
+        <span class="vote-count" data-count="{{ p.id }}"></span>
+      </div>
+    </article>
+  {% endfor %}
+  </div>
+</section>
+
+<section class="say-block" id="suggest">
+  <h2><span class="say-num">3</span> Suggest something</h2>
+  <p>A story you'd like us to cover, a plan you wish existed, or something on the site that's hard to use. The best ideas go up for a vote next month.</p>
+  <form class="suggest-form" data-suggest>
+    <label>What's it about?
+      <select name="kind"><option value="content">Something to read</option><option value="product">A plan or guide</option><option value="site">The website itself</option><option value="other">Something else</option></select>
+    </label>
+    <label>Your idea
+      <textarea name="text" rows="4" maxlength="800" required placeholder="e.g. A beginner's guide to bowls, or: the text on phones is too small"></textarea>
+    </label>
+    <label>Email (optional, only if you'd like a reply)
+      <input type="email" name="email" placeholder="you@example.com" autocomplete="email">
+    </label>
+    <label class="hp" aria-hidden="true">Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <button class="btn" type="submit">Send suggestion</button>
+    <p class="say-status" data-suggest-status aria-live="polite"></p>
+  </form>
+</section>
+
+{% set did = proposals | selectattr('status', 'in', ['planned', 'done']) | list %}
+<section class="say-block" id="you-asked">
+  <h2>You asked, we did</h2>
+  {% if did %}
+  <ul class="did-list">{% for p in did %}<li><span class="did-tag did-{{ p.status }}">{{ 'Done' if p.status == 'done' else 'On its way' }}</span> <strong>{{ p.title }}</strong>{% if p.note %}: {{ p.note }}{% endif %}</li>{% endfor %}</ul>
+  {% else %}
+  <p>The first results will be counted at the start of next month and shown here, with what we're making as a result.</p>
+  {% endif %}
+</section>
+
+<p class="disclosure say-privacy">No sign-in and no cookies. Your browser keeps a random number so you can't vote twice; we never store your IP address. We only keep your email if you type it in, and only to reply to you. <a href="/privacy/">Privacy</a>.</p>
+{% endblock %}
+{% block scripts %}<script>window.DDR_SAY = {api: {{ cfg.feedback.endpoint | tojson }}};</script><script src="/static/say.js" defer></script>{% endblock %}
