@@ -2,7 +2,7 @@
 {% block title %}Plans, workbooks &amp; guides — {{ cfg.site.name }}{% endblock %}
 {% block description %}Practical, printable plans for life after 50: strength, food, learning, money, work, friendship, travel and tech.{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Shop</p><h1>Plans you can print and start on Monday</h1><p class="lead">Written by us, checked against official guidance, priced so they're an easy yes. Every plan is a PDF you can print or read on screen. Members get them all. Prices in pounds; US and other readers are charged in their own currency at checkout, tax included.</p></header>
+<header class="page-head"><p class="kicker">Shop</p><h1>Plans you can print and start on Monday</h1><p class="lead">Written by us, checked against official guidance, priced so they're an easy yes. Every plan is a PDF you can print or read on screen. Members get them all. Prices shown include UK VAT, so what you see is what you pay. Readers outside the UK are shown the total in their own currency at checkout before paying.</p></header>
 
 <nav class="shop-jump" aria-label="Shop sections">
 {% for cid, c in categories.items() %}{% if products.products | selectattr('category','equalto',cid) | list %}<a href="#cat-{{ cid }}">{{ c.label }}</a>{% endif %}{% endfor %}
@@ -15,8 +15,8 @@
   <p class="kicker">Best value</p>
   <h4>{{ bundle.name }} <span class="price">{{ bundle.price }}</span></h4>
   <p>{{ bundle.blurb }}</p>
-  <p class="bundle-value"><s>£110</s> if bought separately · <strong>you save £61</strong></p>
-  <p class="bundle-promise"><strong>Start with one, no risk.</strong> Buy any single plan and what you paid counts in full towards the bundle. Your plan and receipt include a personal link to get the other eight for £49 minus what you've spent.</p>
+  <p class="bundle-value"><s>£66</s> if bought separately · <strong>you save £37</strong></p>
+  <p class="bundle-promise"><strong>Start with one, no risk.</strong> Buy any single plan and what you paid counts in full towards the bundle. Your plan and receipt include a personal link to get the other eight for £29 minus what you've spent.</p>
   {{ buy_button(bundle, 'Get the bundle') }}
 </aside>
 {% endif %}

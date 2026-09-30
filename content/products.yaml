@@ -1,4 +1,5 @@
 # Digital products (own IP — highest margin). One or more per category.
+# Prices shown INCLUDE UK VAT. Enter price/1.2 in Gumroad (it adds VAT at checkout).
 # URLs point at the Gumroad store; each product must be created there with the matching permalink (the id).
 # PDFs live in products/pdf/.
 products:
@@ -6,70 +7,70 @@ products:
     name: "The 30-Day Restart"
     kind: Challenge
     category: move
-    price: "£9"
+    price: "£5"
     blurb: "A printable month of ten-minute movements for people who haven't exercised in years. Chair-to-walk-to-stairs progression, with a tick box for every day."
     url: "https://dontdieretired.gumroad.com/l/restart30"
   - id: strong60
     name: "Strong at 60: the 12-week strength plan"
     kind: Plan
     category: move
-    price: "£14"
+    price: "£9"
     blurb: "Two sessions a week, home or gym, written for beginners over 50. Includes the 'why' behind every exercise and a progress log."
     url: "https://dontdieretired.gumroad.com/l/strong60"
   - id: eatstrong
     name: "Eat Strong: the four-week kitchen planner"
     kind: Planner
     category: eat
-    price: "£12"
+    price: "£7"
     blurb: "Four weeks of simple meals built around protein at every meal, bones and fibre — with shopping lists, batch-cook days and portions for one or two."
     url: "https://dontdieretired.gumroad.com/l/eatstrong"
   - id: sharp
     name: "Sharp: 8 weeks to a learning habit"
     kind: Course
     category: think
-    price: "£12"
+    price: "£7"
     blurb: "How to learn a language, instrument or subject after 50 — spaced practice, the 20-minute slot, and a weekly review sheet."
     url: "https://dontdieretired.gumroad.com/l/sharp"
   - id: moneyreset
     name: "The Money Reset: a 30-day workbook"
     kind: Workbook
     category: money
-    price: "£14"
+    price: "£9"
     blurb: "One small task a day for thirty days. At the end, your whole money picture on one page and a short list of what to check next. UK and US. General information, not financial advice."
     url: "https://dontdieretired.gumroad.com/l/moneyreset"
   - id: secondact
     name: "Second Act: the 90-day venture workbook"
     kind: Workbook
     category: earn
-    price: "£19"
+    price: "£12"
     blurb: "From 'I've got an idea' to first paying customer in 90 days. Templates for the offer, the first ten conversations and the money."
     url: "https://dontdieretired.gumroad.com/l/secondact"
   - id: reconnect
     name: "Reconnect: six weeks to a fuller social life"
     kind: Plan
     category: connect
-    price: "£9"
+    price: "£5"
     blurb: "A gentle six-week plan for rebuilding friendships and finding your people after 50 — one small, doable step each week."
     url: "https://dontdieretired.gumroad.com/l/reconnect"
   - id: slowtravel
     name: "Slow Travel After 50: the planning workbook"
     kind: Workbook
     category: travel
-    price: "£12"
+    price: "£7"
     blurb: "Plan longer, calmer trips: budgets, routes, pacing, insurance checklists and packing lists — for walking holidays, rail journeys and long stays."
     url: "https://dontdieretired.gumroad.com/l/slowtravel"
   - id: techconfident
     name: "Tech Confident: the scam-proof guide"
     kind: Guide
     category: tech
-    price: "£9"
+    price: "£5"
     blurb: "Your phone, your apps and your online life made safe and simple — with a four-week plan to set it all up properly."
     url: "https://dontdieretired.gumroad.com/l/techconfident"
   - id: bundle
     name: "Everything bundle"
     kind: Bundle
     category: stories
-    price: "£49"
+    price: "£29"
     blurb: "All nine plans and workbooks — Move, Eat, Think, Money, Earn, Connect, Travel and Tech — plus every future release for a year. Members get this free."
     url: "https://dontdieretired.gumroad.com/l/bundle"
 

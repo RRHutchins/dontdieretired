@@ -97,7 +97,7 @@ For many people over 50 the family is the community, and the family is 200 miles
 
 ## If you want a structure
 
-Everything above works better as a plan than as a resolution. If you would like it laid out as six weekly assignments — audit your circle, reconnect with lapsed friends, pick a group, go three times, host once, keep it going — our [Reconnect course](/shop/#reconnect) (£9, about $11) does exactly that.
+Everything above works better as a plan than as a resolution. If you would like it laid out as six weekly assignments — audit your circle, reconnect with lapsed friends, pick a group, go three times, host once, keep it going — our [Reconnect course](/shop/#reconnect) (£5, about $7) does exactly that.
 
 ## This week
 

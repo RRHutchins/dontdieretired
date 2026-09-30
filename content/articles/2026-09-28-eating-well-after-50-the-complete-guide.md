@@ -97,7 +97,7 @@ The fix is to stop cooking one meal at a time. Age UK's suggestion is the standa
 
 Good food does not have to be expensive. The cheapest sources of protein and fibre — eggs, tinned fish, dried or tinned pulses, oats, frozen vegetables, milk and yoghurt — are also among the best. The BDA and Age UK both say frozen, tinned and dried fruit and vegetables count towards your five a day, so there is no virtue in paying for fresh berries in January. Buy the wholegrain version of the things you already buy, and let the freezer take the strain of buying in bulk.
 
-If you want all of this laid out week by week — shopping lists, batch-cook days, a protein target for each meal — our [Eat Strong four-week kitchen planner](/shop/#eatstrong) does exactly that, for £12.
+If you want all of this laid out week by week — shopping lists, batch-cook days, a protein target for each meal — our [Eat Strong four-week kitchen planner](/shop/#eatstrong) does exactly that, for £7.
 
 ## Why diets fail (and what to do instead)
 

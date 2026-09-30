@@ -94,7 +94,7 @@ Three questions.
 
 **What fits 20 minutes a day?** Not two hours on Sunday. Twenty minutes, most days, with a way of testing yourself. For languages we lay out a 12-week plan in [Learning a language after 50](/think/learning-a-language-after-50/).
 
-If you want a structure that takes you from "I'd like to" to a habit that has survived eight weeks, our [Sharp course](/shop/#sharp) (£12, about $15) does exactly that — for a language, an instrument or a subject — using the methods above, not puzzles.
+If you want a structure that takes you from "I'd like to" to a habit that has survived eight weeks, our [Sharp course](/shop/#sharp) (£7, about $9) does exactly that — for a language, an instrument or a subject — using the methods above, not puzzles.
 
 ## This week
 

@@ -7,7 +7,7 @@ PLANS = [
     {"id": "restart7", "src": "restart7-free", "title": "The 7-Day Restart", "subtitle": "One week of ten-minute sessions to prove you can start",
      "colour": "#B23A48", "free": True, "open_days": 99, "shop": None},
     {"id": "restart30", "src": "restart30", "title": "The 30-Day Restart", "subtitle": "Ten minutes a day, from your chair to the top of the stairs",
-     "colour": "#0B6E4F", "free": False, "open_days": 3, "shop": "/shop/#restart30", "price": "£9"},
+     "colour": "#0B6E4F", "free": False, "open_days": 3, "shop": "/shop/#restart30", "price": "£5"},
 ]
 
 def movements(blocks):
