@@ -18,8 +18,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="{{ cfg.site.twitter_handle }}">
 {% block head %}{% endblock %}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/static/fonts/fraunces-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/static/style.css">
 {% if cfg.analytics.plausible_script_id %}<!-- Privacy-friendly analytics by Plausible -->
 <script async src="https://plausible.io/js/{{ cfg.analytics.plausible_script_id }}.js"></script>

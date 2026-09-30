@@ -16,9 +16,7 @@
   <span class="ad-label">{{ label }}</span>
   <ins class="adsbygoogle" style="display:block" data-ad-client="{{ cfg.ads.adsense_client }}" data-ad-slot="{{ cfg.ads.slots[slot] }}" data-ad-format="auto" data-full-width-responsive="true"></ins>
 </div>
-{% else %}
-<div class="ad ad-{{ slot }} ad-placeholder" data-ad-slot="{{ slot }}"><span class="ad-label">Ad slot ({{ slot }}) — activates when ads.enabled is true</span></div>
-{% endif %}
+{% endif %}{# nothing is shown to readers until ads are switched on in site.yaml #}
 {% endmacro %}
 
 {% macro affiliate_box(items, title="Kit that makes starting easier") %}

@@ -75,7 +75,7 @@
         let mine = []; try { mine = JSON.parse(store.get('ddr_interests') || '[]'); } catch {}
         const score = a => (a.segments.includes(id) ? 10 : 0) + a.tags.filter(t => seg.tags.includes(t)).length + (mine.includes(a.category) ? 3 : 0);
         const picks = idx.map(a => [score(a), a]).filter(x => x[0] > 0).sort((a, b) => b[0] - a[0]).slice(0, 3).map(x => x[1]);
-        holder.innerHTML = picks.map(a => `<article class="card"><a class="card-img" href="${a.url}"><img src="${a.image}" alt="" loading="lazy"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`).join('');
+        holder.innerHTML = picks.map(a => `<article class="card"><a class="card-img" href="${a.url}"><img src="${a.image}" alt="" loading="lazy"></a><div class="card-body"><p class="kicker">${a.category.charAt(0).toUpperCase()+a.category.slice(1)}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`).join('');
         const sec = $('#for-you'); if (sec && picks.length) sec.hidden = false;
       });
     }

@@ -40,8 +40,14 @@ SOCIAL = ROOT / "social"
 CONTENT = ROOT / "content"
 STATIC = ROOT / "static"
 
-FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
-FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+# Brand fonts live in the repo (SIL Open Font Licence) so images match the site
+# on any machine; fall back to DejaVu if they are ever missing.
+_FONTS = ROOT / "brand" / "fonts"
+def _font(name, fallback):
+    f = _FONTS / name
+    return str(f) if f.exists() else fallback
+FONT_BOLD = _font("Fraunces-Bold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf")
+FONT_REG = _font("SourceSans3-SemiBold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 
 # ---------------------------------------------------------------- helpers
 
@@ -147,32 +153,77 @@ PALETTE = {
 }
 
 
+def _mix(hex_a: str, hex_b: str, t: float):
+    a = [int(hex_a[i:i + 2], 16) for i in (1, 3, 5)]
+    b = [int(hex_b[i:i + 2], 16) for i in (1, 3, 5)]
+    return tuple(round(x + (y - x) * t) for x, y in zip(a, b))
+
+
 def make_card(title: str, kicker: str, category: str, out: Path, size=(1200, 630), footer="dontdieretired.com"):
-    """Brand-coloured typographic card used as article hero, OG image and social image."""
-    fg, bg = PALETTE.get(category, ("#333333", "#F3F3F3"))
-    W, H = size
-    img = Image.new("RGB", size, bg)
-    d = ImageDraw.Draw(img)
-    # colour band
-    d.rectangle([0, 0, W, int(H * 0.055)], fill=fg)
-    pad = int(W * 0.06)
-    # Scale type off the shorter side so tall (story) cards don't get oversized text.
+    """Brand card used as article hero, OG image and social image.
+
+    Deep topic colour, the logo's rising sun in the lower right, headline in
+    Fraunces. Drawn at 2x and downsampled so the sun and rays are smooth."""
+    fg, _bg = PALETTE.get(category, ("#333333", "#F3F3F3"))
+    cream = "#FBF6EE"
+    W0, H0 = size
+    S = 2
+    W, H = W0 * S, H0 * S
     base = min(W, H)
-    kf = ImageFont.truetype(FONT_REG, int(base * 0.05))
-    title_scale = 0.105 if len(title) < 60 else (0.085 if len(title) < 95 else 0.068)
-    tf = ImageFont.truetype(FONT_BOLD, int(base * title_scale))
-    ff = ImageFont.truetype(FONT_REG, int(base * 0.045))
-    y = int(H * 0.14)
-    d.text((pad, y), kicker.upper(), font=kf, fill=fg)
-    y += int(base * 0.11)
-    line_h = int(tf.size * 1.22)
-    max_lines = max(1, (H - pad - ff.size - int(base * 0.04) - y) // line_h)
-    for line in wrap_text(d, title, tf, W - 2 * pad)[:max_lines]:
-        d.text((pad, y), line, font=tf, fill="#1A1A1A")
+    img = Image.new("RGB", (W, H), fg)
+    d = ImageDraw.Draw(img)
+
+    # rising sun: half-disc on the bottom edge, rays fanning above it
+    wide_ = W > H * 1.2
+    r = int(base * (0.30 if wide_ else 0.24))
+    cx, cy = W - int(base * (0.10 if wide_ else 0.06)) - r, H + int(r * 0.12)
+    ray_col = _mix(fg, cream, 0.22)
+    import math
+    for i in range(7):
+        ang = math.radians(180 + 15 + i * 25)
+        x1, y1 = cx + math.cos(ang) * r * 1.22, cy + math.sin(ang) * r * 1.22
+        x2, y2 = cx + math.cos(ang) * r * 1.62, cy + math.sin(ang) * r * 1.62
+        d.line([(x1, y1), (x2, y2)], fill=ray_col, width=int(base * 0.028))
+        for (x, y) in ((x1, y1), (x2, y2)):  # round caps
+            rr = int(base * 0.014)
+            d.ellipse([x - rr, y - rr, x + rr, y + rr], fill=ray_col)
+    d.ellipse([cx - r * 1.06, cy - r * 1.06, cx + r * 1.06, cy + r * 1.06], fill=_mix(fg, cream, 0.12))
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=_mix(fg, "#F2B45A", 0.85))
+
+    pad = int(W * 0.065)
+    wide = W > H * 1.2
+    kf = ImageFont.truetype(FONT_REG, int(base * 0.052))
+    ff = ImageFont.truetype(FONT_REG, int(base * 0.044))
+    y0 = int(pad * 0.95)
+    d.text((pad, y0), kicker, font=kf, fill=_mix(fg, cream, 0.72))
+    y0 += int(base * 0.10)
+    if wide:
+        # headline sits beside the sun; footer bottom-left
+        text_w = int((W - 2 * pad) * 0.86)
+        limit_y = H - pad - ff.size - int(base * 0.05)
+        d.text((pad, H - pad - ff.size), footer, font=ff, fill=_mix(fg, cream, 0.72))
+    else:
+        # square / story: headline must finish above the rays
+        text_w = W - 2 * pad
+        limit_y = cy - r * 1.72
+    # shrink the headline until it fits, never below a readable floor
+    scale = 0.112 if len(title) < 60 else (0.09 if len(title) < 95 else 0.075)
+    while True:
+        tf = ImageFont.truetype(FONT_BOLD, int(base * scale))
+        line_h = int(tf.size * 1.14)
+        lines = wrap_text(d, title, tf, text_w)
+        if y0 + len(lines) * line_h <= limit_y or scale <= 0.056:
+            break
+        scale *= 0.92
+    max_lines = max(1, int((limit_y - y0) // line_h))
+    if len(lines) > max_lines:
+        lines = lines[:max_lines]
+        lines[-1] = lines[-1].rstrip(" ,;:.") + "…"
+    y = y0
+    for line in lines:
+        d.text((pad, y), line, font=tf, fill=cream)
         y += line_h
-    # footer
-    d.text((pad, H - pad - ff.size), footer, font=ff, fill=fg)
-    d.rectangle([W - pad - int(W * 0.12), H - pad - int(H * 0.012), W - pad, H - pad], fill=fg)
+    img = img.resize((W0, H0), Image.LANCZOS)
     out.parent.mkdir(parents=True, exist_ok=True)
     img.save(out, optimize=True)
 
