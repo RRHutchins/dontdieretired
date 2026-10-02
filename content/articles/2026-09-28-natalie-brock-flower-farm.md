@@ -26,10 +26,10 @@ Natalie Brock's career change started with a birthday and a patch of weeds.
 
 Brock had taught for more than a decade and was a school wellbeing leader in the Riverland, South Australia's fruit-and-wine country. She and her husband Aden, a viticulturist, live on 60 hectares of vineyard near Monash. Somewhere on that land was a quarter-acre nobody was using. Then she did a sum.
 
-> "I thought to myself, 'If I'm going to stop teaching and I've got another 10 years of work ahead of me, I want to be doing something that I really love'."
+> "If I'm going to stop teaching and I've got another 10 years of work ahead of me, I want to be doing something that I really love."
 > — Natalie Brock, to ABC News
 
-As ABC's Amelia Walters put it: "Celebrating her 51st birthday, she took her own advice, put down the pen and picked up the pruning shears."
+She took her own advice as she turned 51, ABC's Amelia Walters reported, and left the classroom for the flower beds.
 
 ## From weeds to dahlias
 
@@ -37,9 +37,9 @@ The neglected quarter-acre became Coco and Honey, a small flower farm growing da
 
 > "By investing in the soil, and using fewer pesticides and sprays, we have created a really healthy ecosystem."
 
-The flowers go to local customers — "People like the concept of homegrown flowers that are super fresh," she says — and the ones that are not quite good enough to sell but still have life in them are delivered to hospitals around the Riverland and given to patients. Anything wilted goes back to Aden as compost for the vines. Nothing is wasted.
+The flowers go to local customers, who she says like the idea of fresh, homegrown flowers, and the ones that are not quite good enough to sell but still have life in them are delivered to hospitals around the Riverland and given to patients. Anything wilted goes back to Aden as compost for the vines. Nothing is wasted.
 
-Then came the part nobody planned. A severe frost hit the Riverland's wine grapes. In the ABC's words, "the flower farm that was once the family's secondary income is now their breadwinning business."
+Then came the part nobody planned. A severe frost hit the Riverland's wine grapes. As the ABC reported, what had been the family's second income became its main one.
 
 Brock is clear-eyed about it. The grape industry, she told ABC, "is looking pretty dark at the moment", and she does not know whether the flowers can stay a full-time job. But the sideline she started at 51 is what is keeping the household afloat.
 

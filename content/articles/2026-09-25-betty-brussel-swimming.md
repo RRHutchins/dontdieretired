@@ -40,7 +40,7 @@ What she told the CBC about *why* she keeps going is the part of this story we w
 
 > "It's nice to get a medal. But when I have a good time, it's fine."
 
-> "When you get older, most of my friends have either died or gone in homes … and I like to be with people."
+Many of her friends have died or moved into homes, she said, and she likes to be with people.
 
 Sport after 70 is often sold as a way to stay physically well. It is. But Brussel is describing something else: a structure that keeps you among people, with a reason to leave the house, a place to be and a group who notice if you are not there. Loneliness in later life is as damaging to health as many physical conditions. A swimming club is a treatment for it.
 

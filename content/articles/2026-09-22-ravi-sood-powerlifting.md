@@ -41,7 +41,7 @@ What Sood's story shows is what happens if you *don't stop* once the surgery is 
 
 Sood is not chasing medals.
 
-> "I don't really care if I win any medals — just to represent my country at an international level, that's out of this world."
+Medals, he told ABC News, matter less to him than representing his country at international level.
 
 Notice the pattern across this week's stories. [Martine Barons](/stories/martine-barons-world-champion-deadlift-65/) talks about lifting grandchildren, not trophies. [Betty Brussel](/stories/betty-brussel-99-three-world-records/) talks about being with people. Sood talks about wearing the green and gold. None of them is motivated by the number on the bar. The number is a by-product of turning up.
 

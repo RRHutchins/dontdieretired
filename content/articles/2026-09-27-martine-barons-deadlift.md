@@ -27,7 +27,7 @@ Martine Barons, a University of Warwick academic then in her early sixties, spen
 
 A colleague who worked as a personal trainer showed her the lift. Around the same time she attended a seminar on menopause and weightlifting, and something clicked. She kept going. In mid-September 2026, aged 65, she won the AWPC World Powerlifting Championships in the 65–85 age group — her third world title in under three years.
 
-## "At least 20 years younger"
+## What changed
 
 What is striking in her interviews is not the medals. It is how ordinary the benefits sound.
 
@@ -38,7 +38,7 @@ What is striking in her interviews is not the medals. It is how ordinary the ben
 
 And the one that lands hardest for anyone with grandchildren:
 
-> "If I need to move furniture at home, I can do that, I can toss my grandchildren in the air."
+She can move furniture at home, she said, and throw her grandchildren in the air.
 
 That is what strength training is actually *for* after 50. Not the platform, not the singlet — the furniture, the grandchildren, the suitcase in the overhead locker, the decades of independence that follow from being strong enough to get up off the floor.
 

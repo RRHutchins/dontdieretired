@@ -125,6 +125,13 @@ def load_articles(cfg):
             "tags": fm.get("tags", []),
             "image": f"/static/img/{slug}.png",
         }
+        # Copyright guard (RUNBOOK §7a): news stories quote sparingly. Warn, never fail the build.
+        if fm.get("kind") != "guide":
+            _q = re.findall(r'["\u201c]([^"\u201d\n]{15,})["\u201d]', body)
+            _qw, _tot = sum(len(x.split()) for x in _q), max(len(body.split()), 1)
+            _long = max([len(x.split()) for x in _q] or [0])
+            if _long > 30 or _qw * 100 > 15 * _tot:
+                print(f"COPYRIGHT WARNING {p.name}: quoted {_qw}/{_tot} words ({_qw * 100 // _tot}%), longest quote {_long} words. Limits: 15% and 30 words. Paraphrase some.")
         arts.append(a)
     arts.sort(key=lambda a: a["date"], reverse=True)
     # companion plans ("the plan behind the story")

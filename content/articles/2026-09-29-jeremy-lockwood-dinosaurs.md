@@ -35,7 +35,7 @@ Lockwood, now 68, spent his working life as a GP (family doctor). He had loved f
 > "We'd spend hours walking the beaches where the dinosaur beds are, and we started finding bones. That brought it all back."
 > — Dr Jeremy Lockwood, to Isle of Wight Radio
 
-After years in practice he retired and enrolled for a PhD in dinosaur research at the University of Portsmouth. His method came straight from the surgery: "I was convinced that subtle differences between bones would reveal a new species, so I set out to measure, photograph and study the anatomy of each bone," he told ITV in 2021.
+After years in practice he retired and enrolled for a PhD in dinosaur research at the University of Portsmouth. His method came straight from the surgery. He was convinced that small differences between bones would point to a new species, he told ITV in 2021, so he measured, photographed and studied every one.
 
 ## Three dinosaurs from the drawers
 
@@ -47,7 +47,7 @@ He worked through thousands of bones held at Dinosaur Isle in Sandown and the Na
 
 His co-author Professor Susannah Maidment of the Natural History Museum put it plainly: "Over the past five years, Jeremy has single-handedly quadrupled the known diversity of the smaller iguanodontians on the Isle of Wight."
 
-> "Sometimes, the most remarkable discoveries are hiding in plain sight. To spend my later years helping to reveal new species and piece together an ancient ecosystem is extraordinary."
+> "Sometimes, the most remarkable discoveries are hiding in plain sight."
 > — Dr Jeremy Lockwood
 
 He does not think he is finished: "I'm sure there'll be more discoveries in the years to come."
@@ -56,7 +56,7 @@ He does not think he is finished: "I'm sure there'll be more discoveries in the 
 
 Lockwood's advantage was not youth or equipment but patience, curiosity and hours on a beach — all available to anyone.
 
-The beach itself does measurable good. A University of Exeter study of nearly 20,000 people in England found that those who spent at least 120 minutes a week in nature were consistently more likely to report good health and high wellbeing than those who spent none. It held for older adults and for people with long-term illnesses or disabilities, whether the two hours came in one walk or several. "Two hours a week is hopefully a realistic target for many people," said the lead author, Dr Mat White, "especially given that it can be spread over an entire week."
+The beach itself does measurable good. A University of Exeter study of nearly 20,000 people in England found that those who spent at least 120 minutes a week in nature were consistently more likely to report good health and high wellbeing than those who spent none. It held for older adults and for people with long-term illnesses or disabilities, whether the two hours came in one walk or several. The lead author, Dr Mat White, called two hours a week a realistic target for many people, since it can be spread across the week.
 
 Give the walk a reason — a fossil, a bird, a rock — and it becomes a project, and projects get you out of the door on grey mornings in a way "exercise" rarely does.
 

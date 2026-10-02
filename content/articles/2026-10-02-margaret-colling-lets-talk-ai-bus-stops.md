@@ -42,7 +42,7 @@ Colling came to the subject by chance. According to Beyond Radio, she was volunt
 
 The People's Panel on AI met in London in early November 2023, alongside the UK Government's AI Safety Summit. Its organiser, Connected by Data, says the members attended AI Fringe events, tried AI tools in small groups, talked one-to-one with scientists, then published recommendations to government, industry, civil society and academia.
 
-Colling described the four days in a speech to the AI UK conference the following March. She had travelled down apprehensive. "This alien environment spoke of machine learning, algorithms, Big Tech, generative and frontier AI," she said. She thanked "the team who brought us from ignorance to awareness….we can never look back."
+Colling described the four days in a speech to the AI UK conference the following March. She had travelled down apprehensive. The setting felt alien, she said, full of talk of machine learning, algorithms and frontier AI. She thanked the team who, in her words, had taken the group "from ignorance to awareness".
 
 What she learned, Beyond Radio reports, opened her eyes: AI being used to make decisions about people's benefits (welfare) and healthcare, scam emails becoming harder to spot, and her grandchildren using AI for schoolwork.
 
@@ -50,13 +50,13 @@ What she learned, Beyond Radio reports, opened her eyes: AI being used to make d
 
 Let's Talk AI is the result. Dr Susan Oman, a senior lecturer at Sheffield, and her team spent six months running research and community workshops in the three areas. The characters and storylines were drawn directly from those conversations. The artist Kitty McEwan drew them as webtoons, comics that scroll vertically on a phone. The first three cover AI in the media, in everyday life and in schools.
 
-"As a librarian I've always believed information should be for everyone, and right now when it comes to AI, it isn't," Colling said, in comments carried by The Star in Sheffield. "This pilot is in three locations, and I'd love to see it on bus stops up and down the country."
+"As a librarian I've always believed information should be for everyone, and right now when it comes to AI, it isn't," Colling said, in comments carried by The Star in Sheffield. The pilot runs in three locations; she would like to see it at bus stops across the country.
 
 ## Why this matters
 
 The gap Colling describes shows up in the numbers. A survey of 3,513 people, carried out by the National Centre for Social Research for the Ada Lovelace Institute and the Alan Turing Institute in October and November 2024, found that 61% had heard of large language models, the technology behind chatbots, and 40% had used one. But only 18% knew AI was being used in welfare assessments, and 24% knew it was used to decide eligibility for loans. And 72% supported laws to regulate AI.
 
-Dr Oman's argument is that official training misses most of those people. "Government AI skills initiatives focus on upskilling the workforce and schools, but there's nothing to encourage healthy discussions and informed usage for the rest of us," she said.
+Dr Oman's argument is that official training misses most of those people. Government AI skills schemes, she said, concentrate on the workforce and schools, and offer nothing to encourage discussion and informed use among everyone else.
 
 ## How to start
 

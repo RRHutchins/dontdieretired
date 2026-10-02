@@ -94,6 +94,16 @@ Category `ai` (/ai/). Its job: readers finish better able to use AI and harder t
 - Respect the `hidden`-by-default consent banner: ads load only after consent (handled in app.js).
 - Keep the same URL for an article once published (slug in front matter).
 
+### 7a. Copyright (set 2 Oct 2026 — applies to every article, guide, plan, product, image and social post)
+- **Write it yourself.** Facts are free to report; another writer's sentences are not. Read the source, then tell the story in our own words and our own structure. Never paste or lightly reword a passage, and never follow a source paragraph by paragraph.
+- **Quote people, sparingly.** At most three or four short quotes per story, each under about 30 words, and no more than 15 per cent of the body in total. Every quote is attributed to the speaker and the outlet, and the outlet is linked in `sources`. Prefer what the person said over the journalist's own prose; paraphrase the journalist. `build.py` prints a COPYRIGHT WARNING when a story goes over these limits: fix it before publishing.
+- **Never reproduce** song lyrics, poems, book passages, or more than a line or two of any article, even with credit. Name the work and describe it instead.
+- **Images.** Only images made by `build.py`, the product builder or our own brand files. Never copy a photograph, screenshot, chart, logo or illustration from a news site, social media, an image search or a stock library. If a licensed or commissioned image is ever added, record its source and licence in `docs/IMAGE_CREDITS.md` in the same commit.
+- **Video.** Embed with the official YouTube player only (as `videos.yaml` does). Never download, re-upload, clip or screenshot someone else's film. Blurbs are our own words.
+- **Fonts and code.** Fraunces and Source Sans 3 are used under the SIL Open Font License; keep the OFL text files beside the font files wherever they are stored. Check the licence before adding any other font, icon set or library.
+- **Names and brands.** Mention organisations and products by name only to refer to them. Never use another organisation's logo, or imply that a person or organisation in a story endorses the site or its products.
+- **If someone complains.** Any request to remove or correct something goes to Robin the same day; take the item down first if the claim looks plausible, then sort it out.
+
 ## 8. Hosting and DNS (one-time)
 1. Create GitHub repo `dontdieretired`, push this folder. Settings → Pages → Source: GitHub Actions.
 2. At the registrar, add DNS: `A` records for `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153; `CNAME` `www` → `<github-user>.github.io`. Enable "Enforce HTTPS" in Pages once the certificate issues.

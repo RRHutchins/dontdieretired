@@ -36,17 +36,17 @@ Three years later, in May 2024, she completed a Doctor of Ministry — and becam
 
 ## The doubt everyone has
 
-"I didn't know if I could retain information" is the single most common reason people over 60 give us for not taking up study. It feels like a fact about the brain. It is actually a prediction — and Fowler's story is what happens when you test it rather than believe it.
+Doubting whether new information will stick is a common worry about going back to study. It feels like a fact about the brain. It is actually a prediction — and Fowler's story is what happens when you test it rather than believe it.
 
 The research on learning in later life is more encouraging than most people expect. Processing speed slows, yes. But vocabulary, reasoning and the ability to integrate knowledge — exactly the skills a doctorate demands — hold up well into the 80s, and the brain keeps forming new connections in response to challenge. What older learners lack is rarely capacity. It is usually confidence, and a structure that gets them into the room.
 
 ## Her reason
 
-Fowler's motivation reached back generations. Her parents, she has said, "were born in an era when it was illegal for them to learn to read and write." A doctorate at 83 was not a hobby. It was a completion.
+Fowler's motivation reached back generations. Her parents, she has said, were born at a time when it was against the law for them to learn to read and write. A doctorate at 83 was not a hobby. It was a completion.
 
-Her professor, Alice Ogden Bellis, described her simply: "She was the life of the party. She knew what she wanted and she came here and she did that."
+Her professor, Alice Ogden Bellis, described her as "the life of the party": someone who knew what she wanted, came and did it.
 
-## "If I can do it, why not you?"
+## Her question for everyone else
 
 Fowler's message to others is direct:
 
