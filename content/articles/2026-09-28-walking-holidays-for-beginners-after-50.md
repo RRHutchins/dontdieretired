@@ -6,6 +6,7 @@ kind: guide
 category: travel
 tags: [walking, slow-travel, beginner, national-trails, camino, national-parks]
 segments: [restarter, mover, carer]
+level: starter
 hook: "You don't need to be a hiker. Pick the right daily distance, send your bag ahead, and walk a famous route at your own pace."
 lesson: "Choose a route by its daily distance, not its fame; walk that distance at home first; and let a baggage-transfer company carry the heavy bag."
 standfirst: "A walking holiday is the simplest form of slow travel: you move at three miles an hour and see everything. Here is how a beginner over 50 chooses a route in the UK, Spain or the US, picks a sensible daily distance, and avoids carrying a rucksack up a hill."
@@ -14,6 +15,10 @@ try_this:
   - "Walk the daily distance of the route you fancy — say 12 miles (20 km) — once this week, in the shoes you would take."
   - "Look up your nearest Ramblers group or Wellbeing Walk and join one to see how a led walk feels."
   - "Pick one National Trail page and read its official itinerary, then count the days honestly."
+try_this_plus:
+  - "Walk a complete long-distance trail of at least 150 km in one go, carrying your own pack and averaging 25 km a day."
+  - "Plan a self-guided hut-to-hut route in the mountains with over 1,000 metres of ascent on most days, and book the huts yourself."
+  - "Take a two-day navigation course covering map, compass and poor visibility, then lead a group on a route you have not walked."
 sources:
   - {title: "The Trails", publisher: "National Trails (England and Wales)", date: "accessed September 2026", url: "https://www.nationaltrail.co.uk/en_GB/trails/"}
   - {title: "South Downs Way", publisher: "National Trails", date: "accessed September 2026", url: "https://www.nationaltrail.co.uk/en_GB/trails/south-downs-way/"}

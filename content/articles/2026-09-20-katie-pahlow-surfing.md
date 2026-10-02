@@ -5,6 +5,8 @@ date: 2026-09-20
 category: stories
 tags: [beginner, mindset, women, fun, swimming]
 segments: [restarter, learner]
+level: active
+subject_age: 60
 hook: "Katie Pahlow bought a $50 second-hand surfboard at 17 and never learned. On turning 60 she finally booked surf lessons."
 lesson: "The thing you shelved at 17 is still available at 60 — book the lesson."
 standfirst: "Katie Pahlow is one of a growing number of older women taking up surfing on Australia's coast. Her story starts with a board she bought from the classifieds forty years earlier."
@@ -13,6 +15,10 @@ try_this:
   - "Write down the thing you 'always meant to do'. Not the sensible version — the one from when you were seventeen."
   - "Find the beginner's version of it: a taster session, a one-day course, a hire rather than a purchase."
   - "Book it for a date in the next 30 days, before you talk yourself out of it."
+try_this_plus:
+  - "Book a week-long surf coaching camp with video analysis and set one technical goal, such as a clean bottom turn on an unbroken wave."
+  - "Surf three dawn sessions a week for a month and log the conditions, the board you used and your wave count each time."
+  - "Paddle 400 metres in the pool without stopping twice a week to build the paddling fitness that longer sessions need."
 sources:
   - {title: "Older women are taking up surfing in growing numbers", publisher: "ABC News (Australia)", date: "29 December 2025", url: "https://www.abc.net.au/news/2025-12-29/older-women-surfing-trends/105867538"}
 ---

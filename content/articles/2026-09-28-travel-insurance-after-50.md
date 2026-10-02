@@ -6,6 +6,7 @@ kind: guide
 category: travel
 tags: [insurance, health, money, ghic, medicare, slow-travel]
 segments: [restarter, carer, mover]
+level: any
 hook: "Premiums rise after 50 and every condition must be declared. Here's how travel insurance really works — UK and US."
 lesson: "Declare everything you are asked, buy when you book, check the trip-length and age limits, and never rely on a GHIC or Medicare alone."
 standfirst: "Travel insurance is the part of a trip nobody enjoys arranging and everybody is grateful for. After 50 it gets dearer and the questions get more searching. Here is what changes, how to declare pre-existing conditions honestly, what the GHIC does for UK travellers, why Medicare does not travel, and where to compare."
@@ -14,6 +15,10 @@ try_this:
   - "List every condition, medicine and appointment from the last two years on one sheet before you ask for a quote."
   - "UK: check whether your GHIC is in date, and apply or renew on the NHS site — it is free."
   - "US: ring your Medigap or health plan and ask exactly what it covers outside the country, and get the answer in writing."
+try_this_plus:
+  - "Compare an annual multi-trip policy with single-trip cover for your next 12 months of travel, reading the exclusions line by line."
+  - "List every activity you plan to do abroad, such as skiing, diving or trekking above 3,000 metres, and confirm in writing that each is covered."
+  - "Check the medical evacuation and repatriation limits on your current policy against the most remote place on your itinerary."
 sources:
   - {title: "Travel insurance if you have a pre-existing medical condition or disability", publisher: "MoneyHelper", date: "accessed September 2026", url: "https://www.moneyhelper.org.uk/en/everyday-money/insurance/travel-insurance-if-you-have-a-medical-condition"}
   - {title: "What is travel insurance?", publisher: "MoneyHelper", date: "accessed September 2026", url: "https://www.moneyhelper.org.uk/en/everyday-money/insurance/what-is-travel-insurance"}

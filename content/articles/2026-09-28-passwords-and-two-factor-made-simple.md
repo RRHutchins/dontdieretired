@@ -6,6 +6,7 @@ kind: guide
 category: tech
 tags: [passwords, security, two-factor, email, banking]
 segments: [learner, carer]
+level: any
 hook: "You don't need a memory for passwords. You need one strong one for email, three random words, and a phone that remembers the rest."
 lesson: "Give your email its own three-random-words password, let your phone save the others, and turn on two-step verification for email and banking."
 standfirst: "Password advice used to be a punishment: capital letters, symbols, change it every month. The current official advice is kinder, shorter and works better. Here it is in plain English."
@@ -14,6 +15,10 @@ try_this:
   - "Change your email password to three random words that mean nothing to anyone but you — and use it nowhere else."
   - "Open your email account's security settings and turn on two-step verification. Write the backup codes down and put them with your passport."
   - "Type your email address into haveibeenpwned.com. If it appears in a breach, change the password for that site and anywhere you reused it."
+try_this_plus:
+  - "Move every account into a password manager, replace all reused passwords with unique ones, and work through the list over one weekend."
+  - "Switch your most important accounts from text-message codes to an authenticator app or a hardware security key."
+  - "Test your account recovery by signing in on a new device using only your backup codes, then store fresh codes safely."
 sources:
   - {title: "Three random words or #thinkrandom", publisher: "National Cyber Security Centre", date: "2016", url: "https://www.ncsc.gov.uk/blog-post/three-random-words-or-thinkrandom-0"}
   - {title: "Use a strong and separate password for your email", publisher: "National Cyber Security Centre", date: "n.d.", url: "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email"}

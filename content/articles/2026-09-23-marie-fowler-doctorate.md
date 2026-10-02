@@ -5,6 +5,8 @@ date: 2026-09-23
 category: think
 tags: [learning, brain, purpose, education, women]
 segments: [learner, changer]
+level: any
+subject_age: 83
 hook: "Marie Fowler hadn't been in a classroom since 1959. At 83 she became Howard University's oldest doctoral graduate."
 lesson: "Commit to one semester; the doubt about whether your brain still works is answered by showing up."
 standfirst: "Marie Fowler enrolled at Howard University School of Divinity intending to try one semester. Three years later she walked across the stage with a Doctor of Ministry."
@@ -13,6 +15,10 @@ try_this:
   - "Pick one course — online, adult education, a local college — and commit to a single term. Not a qualification. One term."
   - "Choose a 20-minute daily learning slot and defend it: same time, same chair, phone in another room."
   - "Tell someone what you're learning and teach them one thing from it this week. Explaining is how it sticks."
+try_this_plus:
+  - "Write a 500-word research proposal on a question you care about and send it to a potential supervisor this month."
+  - "Apply for a part-time master's or doctoral programme with a real deadline, and request your old transcripts this week."
+  - "Read one peer-reviewed paper a week in your chosen field and write a 300-word critique of each."
 sources:
   - {title: "83-year-old becomes Howard University's oldest doctoral graduate", publisher: "UPI", date: "13 May 2024", url: "https://www.upi.com/Odd_News/2024/05/13/Howard-University-83-year-old-graduate/2441715635517/"}
   - {title: "Howard University's oldest graduate earns doctoral degree", publisher: "WJLA-TV", date: "13 May 2024", url: "https://wjla.com/news/local/howard-university-graduation-ceremony-oldest-graduate-doctoral-degree-marie-fowler-alice-ogden-bellis-hebrew-bible-washington-dc-dmv"}

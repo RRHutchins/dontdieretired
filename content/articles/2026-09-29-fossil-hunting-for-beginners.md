@@ -6,6 +6,7 @@ kind: guide
 category: explore
 tags: [science, nature, outdoors, beginner, learning, walking]
 segments: [learner, restarter, carer]
+level: any
 local: fossil-hunting
 hook: "No tools, no training, no permit on most beaches. Fossil hunting is a walk with a treasure hunt built in."
 lesson: "Book one guided walk, learn what to look for, then go back to the same beach on a falling tide."
@@ -15,6 +16,10 @@ try_this:
   - "Book one guided fossil walk. It is the fastest way to learn what a fossil looks like among ordinary pebbles, and the guide will tell you the local rules."
   - "Check the tide table for your nearest fossil beach and pick a morning when the tide is falling. That is your first trip."
   - "Take a photograph of anything you find, with a coin for scale, and send it to a museum identification service. Learning what you have is half the pleasure."
+try_this_plus:
+  - "Join your regional geological society and go on a members' field trip to an inland quarry or a site closed to casual visitors."
+  - "Learn to log a section by recording the bed, the position and a photograph for every find, and label each specimen permanently."
+  - "Buy basic preparation tools, learn to clean a specimen out of its matrix, and show the result to a museum curator."
 sources:
   - {title: "How to find fossils on the beach", publisher: "Natural History Museum", date: "accessed 29 September 2026", url: "https://www.nhm.ac.uk/discover/how-to-find-fossils-on-the-beach.html"}
   - {title: "Fossil collecting in the UK", publisher: "The Palaeontological Association", date: "accessed 29 September 2026", url: "https://palass.org/fossil-collecting-uk"}

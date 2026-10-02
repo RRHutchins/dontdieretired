@@ -1,5 +1,5 @@
 // Offline support: app shell cached; data refreshed when online.
-const V = 'ddr-app-v1';
+const V = 'ddr-app-v2';
 const SHELL = ['/app/', '/app/index.html', '/app/app.css', '/app/app.js', '/app/data.json', '/app/manifest.webmanifest', '/app/icons/icon-192.png', '/static/favicon.svg',
   '/app/fonts/fraunces-latin-700-normal.woff2', '/app/fonts/fraunces-latin-900-normal.woff2', '/app/fonts/fraunces-latin-400-italic.woff2',
   '/app/fonts/source-sans-3-latin-400-normal.woff2', '/app/fonts/source-sans-3-latin-600-normal.woff2', '/app/fonts/source-sans-3-latin-700-normal.woff2'];

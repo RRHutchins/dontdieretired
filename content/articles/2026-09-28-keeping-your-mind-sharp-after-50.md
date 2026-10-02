@@ -7,6 +7,7 @@ pillar: true
 category: think
 tags: [brain, memory, learning, dementia, sleep, hearing, beginner]
 segments: [learner, restarter, carer]
+level: any
 hook: "Forgetting a name is normal at 60. The levers that protect your brain are mostly not puzzles — and they are cheap."
 lesson: "Move, sleep, get your hearing and blood pressure checked, see people, and learn one real thing properly."
 standfirst: "Everyone over 50 has had the moment: the word on the tip of the tongue, the walk into a room with no idea why. Here is what is normal, what is not, and what the evidence says actually helps."
@@ -15,6 +16,10 @@ try_this:
   - "Book a hearing test. Most UK high-street opticians and pharmacies offer one free; in the US, ask your doctor or an audiologist."
   - "Pick one thing you have always wanted to learn and put a 20-minute slot for it in your diary on three days this week."
   - "Phone or meet one person you have not spoken to in a month. Social contact is one of the levers, not a nice-to-have."
+try_this_plus:
+  - "Commit to one demanding skill with an external test, such as a graded music exam or a language certificate, and book the date."
+  - "Pair vigorous exercise with learning by adding two interval sessions a week alongside your study and keep both up for 12 weeks."
+  - "Teach what you know by running a six-week course or study group for others, preparing fresh material for every session."
 sources:
   - {title: "Memory Problems, Forgetfulness, and Aging", publisher: "National Institute on Aging", date: "2023", url: "https://www.nia.nih.gov/health/memory-loss-and-forgetfulness/memory-problems-forgetfulness-and-aging"}
   - {title: "Do I have dementia?", publisher: "Alzheimer's Society", date: "2024", url: "https://www.alzheimers.org.uk/about-dementia/worried-about-memory-problems/do-i-have-dementia-signs"}

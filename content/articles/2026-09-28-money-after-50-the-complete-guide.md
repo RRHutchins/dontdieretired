@@ -7,6 +7,7 @@ pillar: true
 category: money
 tags: [pensions, retirement, budgeting, scams, downsizing, beginner]
 segments: [restarter, changer, carer]
+level: any
 hook: "You don't need a spreadsheet the size of a house. You need one page, three official checks and a rule for scammers."
 lesson: "Get your whole money picture onto one page, check your own State Pension or Social Security forecast, then decide the big questions slowly."
 standfirst: "Most people over 50 have never seen their finances on a single page. This guide shows you how to build that page, where the free official help lives, and which decisions deserve real time."
@@ -15,6 +16,10 @@ try_this:
   - "Write down everything you own and everything you owe on one sheet of paper. Don't tidy it; just get it all on the page."
   - "Log in to Gov.uk's State Pension forecast (UK) or your my Social Security account (US) and note the figure and the date it applies from."
   - "Search for every pension or retirement account you think you have and list the provider and a rough value beside each one."
+try_this_plus:
+  - "Model three retirement-income scenarios on a spreadsheet, cautious, central and optimistic, each running year by year for 30 years."
+  - "Stress-test your plan against a 30 per cent fall in investments in the first two years and note what you would change."
+  - "Review the charges on every pension and investment you hold and write the total annual cost in pounds or dollars on one page."
 sources:
   - {title: "Check your State Pension forecast", publisher: "Gov.uk", date: "2026", url: "https://www.gov.uk/check-state-pension"}
   - {title: "Get Your Social Security Statement", publisher: "Social Security Administration", date: "2026", url: "https://www.ssa.gov/myaccount/statement.html"}

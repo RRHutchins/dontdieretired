@@ -6,6 +6,7 @@ kind: guide
 category: think
 tags: [music, learning, habit, hobby, beginner]
 segments: [learner, restarter]
+level: any
 hook: "People with no musical training took up piano at 69 and got measurably better in a year. Age didn't predict who improved."
 lesson: "Pick an instrument that suits your hands, ears and home, then practise 20 minutes most days with a teacher or group in the loop."
 standfirst: "The ukulele, the piano, the recorder your grandchild abandoned. Here is how to choose, how to practise, and what progress honestly looks like."
@@ -14,6 +15,10 @@ try_this:
   - "Borrow or rent before you buy. Music shops and some libraries lend instruments; a month's rental tells you more than any review."
   - "Book one lesson — not a term — with a teacher who has taught adult beginners before."
   - "Set a 15-minute timer, play one thing badly, stop when it rings. Repeat tomorrow."
+try_this_plus:
+  - "Join an amateur orchestra, band or ensemble that rehearses weekly and commit to playing in its next public concert."
+  - "Enter a graded exam one level above your current standard and prepare the three pieces, scales and sight-reading over a set 12 weeks."
+  - "Record yourself playing one piece each month, listen back critically, and take the recording to your teacher for detailed feedback."
 sources:
   - {title: "Acquisition of musical skills and abilities in older adults — results of 12 months of music training", publisher: "BMC Geriatrics", date: "2024", url: "https://link.springer.com/article/10.1186/s12877-024-05600-2"}
   - {title: "Strengthening the Student Toolbox: Study Strategies to Boost Learning", publisher: "American Educator (Dunlosky)", date: "2013", url: "https://www.aft.org/ae/fall2013/dunlosky"}

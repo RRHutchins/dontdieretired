@@ -6,6 +6,7 @@ kind: guide
 category: tech
 tags: [scams, fraud, phishing, banking, safety]
 segments: [learner, carer]
+level: any
 hook: "Scams change costume every week. The pressure underneath never does — learn it once and you'll see them all."
 lesson: "Feel urgency, secrecy or an odd way to pay? Hang up, and call back on the number printed on your card."
 standfirst: "Parcel texts, 'Hi Mum' messages, bank calls, pop-ups that say your computer is infected. Different disguises, same handful of tricks. Here is how to recognise the tricks."
@@ -14,6 +15,10 @@ try_this:
   - "Forward the next junk text you receive to 7726. It is free, takes ten seconds, and you will never again wonder how."
   - "Agree a family password or a question only your children could answer, for any 'new number, need money' message."
   - "Write 'Would a real bank say this?' on a sticky note by the landline. It is a surprisingly effective circuit-breaker."
+try_this_plus:
+  - "Run a 30-minute scam-spotting session for relatives or a community group using real examples from your own inbox."
+  - "Check every account that holds your card details, remove any you no longer use, and set transaction alerts on those that remain."
+  - "Report every scam message you receive for one month through the official channels in the article and keep a tally by type."
 sources:
   - {title: "How to spot a scam email, text message or call", publisher: "National Cyber Security Centre", date: "n.d.", url: "https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams"}
   - {title: "Avoid and report internet scams and phishing", publisher: "Gov.uk", date: "n.d.", url: "https://www.gov.uk/report-suspicious-emails-websites-phishing"}

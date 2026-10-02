@@ -5,6 +5,8 @@ date: 2026-09-21
 category: connect
 tags: [community, endurance, mindset, men, fun]
 segments: [restarter, carer, mover]
+level: active
+subject_age: 80
 hook: "Maurice Newman started roller skating on his 60th birthday. At 80 he skates with London Skaters, has done two 24-hour races and rides a unicycle."
 lesson: "A milestone birthday is a fine excuse to start something 'unsuitable' — and to keep doing it for twenty years."
 standfirst: "Maurice Newman skates the Berlin Marathon, joins London's Friday night street skates and rides a unicycle. He started all of it after 60."
@@ -13,6 +15,10 @@ try_this:
   - "Choose one activity you've always thought of as 'not for people my age'. Find where it happens near you."
   - "Go once as a spectator. Talk to the oldest person there. Ask how they started."
   - "Put your next milestone birthday in the diary as a start date, not a marker of time passing."
+try_this_plus:
+  - "Enter a skating marathon or a 50 km road event dated within the next nine months and build a 12-week training plan around it."
+  - "Join a weekly group street skate and work up to holding the main pack for a full 20 km route."
+  - "Book a coached session on braking, descending and skating in a pace line before you ride a mass-start event."
 sources:
   - {title: "Meet the Londoners who refuse to age gracefully", publisher: "Time Out London", date: "16 October 2024", url: "https://timeout.com/london/city-life/meet-the-londoners-who-refuse-to-age-gracefully"}
 ---

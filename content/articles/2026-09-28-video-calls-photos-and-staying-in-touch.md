@@ -6,6 +6,7 @@ kind: guide
 category: tech
 tags: [video-calls, photos, family, grandchildren, connection]
 segments: [learner, carer, restarter]
+level: any
 hook: "A fixed Sunday video call and one shared photo album will do more for your family life than any gadget."
 lesson: "Pick one app everyone already has, set a standing call time, and start a shared album — then let the habit do the work."
 standfirst: "The technology for staying close is mostly free and already on your phone. What makes it work is not the app but the routine around it."
@@ -14,6 +15,10 @@ try_this:
   - "Message one relative and propose a standing weekly video call — same day, same time. Put it in both diaries."
   - "Create one shared album called 'Family' and invite three people to add to it."
   - "Before your next call, sit facing a window or lamp and prop the phone at eye level. Notice how much better you look and sound."
+try_this_plus:
+  - "Digitise and caption the family's printed photographs, a box at a time, and share them in dated albums."
+  - "Record a series of ten-minute video interviews with older relatives about their lives and edit them into one family film."
+  - "Produce a printed photo book of the year from the shared album and send copies to each household."
 sources:
   - {title: "How to make a video call", publisher: "Age UK", date: "n.d.", url: "https://www.ageuk.org.uk/information-advice/work-learning/technology-internet/video-calling/"}
   - {title: "Make your meetings deaf aware", publisher: "RNID", date: "n.d.", url: "https://rnid.org.uk/information-and-support/deaf-awareness/make-your-meetings-deaf-aware/"}

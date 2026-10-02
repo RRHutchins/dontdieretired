@@ -6,6 +6,7 @@ kind: guide
 category: eat
 tags: [fibre, gut-health, breakfast, beginner]
 segments: [restarter, carer]
+level: any
 hook: "The UK target is 30g of fibre a day. Most adults manage about 18–20g. The gap is one breakfast and one swap wide."
 lesson: "Move your breakfast, bread and one snack to higher-fibre versions, increase gradually, and drink more water while you do it."
 standfirst: "Fibre is the least glamorous nutrient and one of the most useful after 50 — for your bowels, your heart and your blood sugar. Here is what the UK and US guidance says, which foods deliver, and the swaps that close the gap without a lecture."
@@ -14,6 +15,10 @@ try_this:
   - "Swap tomorrow's breakfast cereal for porridge or a plain wholewheat biscuit cereal and add a handful of fruit."
   - "Buy one tin of beans, lentils or chickpeas and tip it into something you already cook this week."
   - "Put a full glass of water beside every meal for seven days — fibre needs it."
+try_this_plus:
+  - "Count your fibre in grams for seven days and adjust meals until you reach 30 grams on at least five of them."
+  - "Eat 30 different plant foods in one week, counting each vegetable, fruit, pulse, grain, nut and seed once."
+  - "Replace one meat-based dinner a week with a pulse-based dish and learn to cook dried beans or lentils from scratch."
 sources:
   - {title: "How to get more fibre into your diet", publisher: "NHS", date: "2024", url: "https://www.nhs.uk/live-well/eat-well/digestive-health/how-to-get-more-fibre-into-your-diet/"}
   - {title: "Fibre", publisher: "British Dietetic Association", date: "2024", url: "https://www.bda.uk.com/resource/fibre.html"}

@@ -5,6 +5,8 @@ date: 2026-09-24
 category: move
 tags: [swimming, endurance, competition, women, cycling, running]
 segments: [mover]
+level: advanced
+subject_age: 80
 hook: "Natalie Grabow couldn't swim at 59. At 80 she finished the Ironman World Championship in Kona — the oldest woman ever to do it."
 lesson: "Learning a 'basic' skill like swimming in your late fifties can open a 20-year athletic career."
 standfirst: "3.8 km swim, 180 km bike, then a marathon. Natalie Grabow of New Jersey finished it in Hawaii in 16 hours 45 minutes, aged 80 — twenty-one years after she learned to swim."
@@ -13,6 +15,10 @@ try_this:
   - "Name the one skill you 'never learned' — swimming, cycling, running properly. Book one lesson in it this month."
   - "If you already do one sport, add a second for a month. Cross-training is how endurance athletes stay injury-free after 60."
   - "Study people better than you. Grabow's coach says she studies the men's results in her age group, not just the women's."
+try_this_plus:
+  - "Enter a middle-distance triathlon dated six to nine months away and build a 24-week plan with at least two sessions in each discipline per week."
+  - "Join a masters swim squad and work towards swimming 3,800 metres in open water without stopping."
+  - "Ride 90 km and run 5 km straight off the bike once a fortnight, and study your age-group results to set target splits."
 sources:
   - {title: "80-year-old woman who started triathlons in her 60s becomes oldest to finish an Ironman", publisher: "Guinness World Records", date: "14 November 2025", url: "https://www.guinnessworldrecords.com/news/2025/11/80-year-old-woman-who-started-triathlons-in-her-60s-becomes-oldest-to-finish-an-ironman"}
   - {title: "Natalie Grabow makes history at the Ironman World Championship in Kona", publisher: "TRI247", date: "14 October 2025", url: "https://www.tri247.com/triathlon-news/age-group/natalie-grabow-world-record-ironman-world-championship-kona"}

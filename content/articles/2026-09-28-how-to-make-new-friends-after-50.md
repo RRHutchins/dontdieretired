@@ -6,6 +6,7 @@ kind: guide
 category: connect
 tags: [friendship, community, mindset, beginner, loneliness]
 segments: [restarter, carer, changer]
+level: any
 hook: "Adult friendship runs on repeated, low-stakes contact. Join something weekly, go three times, and be the one who follows up."
 lesson: "Stop trying to make friends. Start turning up somewhere regularly, and let the friendships arrive as a side effect."
 standfirst: "Making friends at 25 happened by accident. At 55 it needs a little method — but far less courage than most people think."
@@ -14,6 +15,10 @@ try_this:
   - "Choose one weekly activity and book the next three sessions, not one. Decide whether it is for you after the third."
   - "At your next group, ask one person one question about themselves and remember the answer for next week."
   - "Send one follow-up message within 48 hours of meeting someone you liked: 'Good to meet you on Tuesday — see you next week?'"
+try_this_plus:
+  - "Start a small group of your own around something you do well, set a fixed weekly time, and recruit six people."
+  - "Invite three acquaintances from different groups to one shared activity and introduce them to each other properly."
+  - "Move one friendly acquaintance on a step each month by suggesting something outside the usual setting, such as a walk, a meal or a day trip."
 sources:
   - {title: "The strength of weak ties", publisher: "Stanford Report", date: "July 2023", url: "https://news.stanford.edu/stories/2023/07/strength-weak-ties"}
   - {title: "Disconnected: The Escalating Challenge of Loneliness Among Adults 45-Plus", publisher: "AARP Research", date: "3 December 2025", url: "https://www.aarp.org/pri/topics/social-leisure/relationships/loneliness-social-connections-2025/"}

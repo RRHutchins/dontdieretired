@@ -15,6 +15,32 @@
 
   document.documentElement.dataset.size = S.size;
 
+  // ---------- about you (shared with the website: same browser, same answers) ----------
+  const LS = { get: k => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
+  const J = (k, d) => { try { return JSON.parse(LS.get(k)) ?? d; } catch { return d; } };
+  const prof = () => ({ ...J('ddr_profile', {}), interests: J('ddr_interests', []) });
+  const setProf = p => { LS.set('ddr_profile', JSON.stringify({ level: p.level || '', age: p.age || '' })); LS.set('ddr_interests', JSON.stringify(p.interests || [])); };
+  const LEVEL_NAME = { starter: 'Getting going', active: 'Active', advanced: 'Fit' };
+  const AGE_MID = { u55: 51, '55-64': 60, '65-74': 70, '75plus': 80 };
+  const TOPICS = [['move', 'Move'], ['eat', 'Eat'], ['think', 'Think'], ['money', 'Money'], ['earn', 'Earn'], ['connect', 'Connect'], ['travel', 'Travel'], ['tech', 'Tech'], ['explore', 'Explore'], ['stories', 'Real stories']];
+  function fit(a, p, rank) {
+    const fb = J('ddr_fb', {}); let s = Math.max(0, 2 - rank * 0.1) + (fb[a.category] || 0);
+    if ((p.interests || []).includes(a.category)) s += 4;
+    const al = a.level || 'any';
+    if (p.level && al !== 'any') s += al === p.level ? 3 : al === 'starter' ? -6 : (p.level === 'starter' && al === 'advanced') ? -1 : 1;
+    const mid = AGE_MID[p.age]; if (mid && a.age) { const d = a.age - mid; s += (d >= -10 && d <= 12) ? 2 : d > 20 ? -3 : 0; }
+    return s;
+  }
+  const pickStory = () => { const p = prof(); return STORIES.map((a, i) => [fit(a, p, i), a]).sort((x, y) => y[0] - x[0])[0]?.[1]; };
+  // One challenge a week, pitched at the reader's level. Rotates by week number.
+  const CHALLENGES = {
+    starter: ['Walk for ten minutes after one meal, every day this week.', 'Take the stairs once a day when there\'s a lift.', 'Stand on one leg while the kettle boils, holding the worktop. Swap legs.', 'Walk to somebody\'s house, a shop or a bench you can see from your door, and back.', 'Do your ten-minute session before breakfast three times this week.', 'Carry your shopping in two bags, one in each hand, the whole way home.'],
+    active: ['Add one strength session this week: squats, press-ups against a worktop, rows with a band. Three sets of each.', 'Do one walk, swim or ride that\'s a third longer than your usual.', 'Try an activity you\'ve never done: a club night, a class, a parkrun.', 'Hill repeats: find a slope, go up briskly six times, walk down each time.', 'Time a favourite route. Next week, take 30 seconds off it.', 'Two strength sessions and three walks or rides. Tick all five.'],
+    advanced: ['Enter an event at least 12 weeks away and tell someone you\'ve done it.', 'One heavy strength session: five sets of five on a squat or deadlift you can do with good form.', 'Intervals: 6 x 3 minutes hard with 2 minutes easy, in your sport.', 'Book a coached technique session: swim stroke, running form, lifting.', 'A long one: 90 minutes or more at a pace you could talk at.', 'Take a proper easy week. Half the volume, same routine, then test yourself next week.'],
+  };
+  const weekKey = () => { const d = new Date(), a = new Date(d.getFullYear(), 0, 1); return `${d.getFullYear()}-${Math.ceil(((d - a) / 864e5 + a.getDay() + 1) / 7)}`; };
+  const challenge = lvl => { const l = CHALLENGES[lvl] || CHALLENGES.starter; return l[+weekKey().split('-')[1] % l.length]; };
+
   // ---------- data ----------
   let DATA = null, STORIES = [];
   const plan = id => DATA.plans.find(p => p.id === id);
@@ -45,10 +71,13 @@
     const i = nextIndex(p), d = p.days[i], st = streak();
     const finished = i >= p.days.length, locked = !finished && !isOpen(p, i);
     const doneToday = Object.values(P(p.id).done).includes(today());
-    const s0 = STORIES[0];
+    const s0 = pickStory() || STORIES[0], me = prof(), lvl = me.level || 'starter', fitter = lvl !== 'starter', wk = weekKey();
+    const feels = Object.values(P(p.id).feel).slice(-3), easy = feels.length === 3 && feels.every(f => f >= 4) && !S.stepAsked;
     return `
-    <p class="kick">${greet()}</p>
-    <h1>${doneToday ? 'Done for today. Well done.' : finished ? 'You finished the plan.' : 'Ten minutes today?'}</h1>
+    <p class="kick">${greet()}${S.name ? ', ' + esc(S.name) : ''}</p>
+    <h1>${fitter ? 'This week\'s challenge' : doneToday ? 'Done for today. Well done.' : finished ? 'You finished the plan.' : 'Ten minutes today?'}</h1>
+    ${fitter ? `<div class="card hero"><p class="kick">For you · ${LEVEL_NAME[lvl]}</p><h2>${esc(challenge(lvl))}</h2>${S.chal?.[wk] ? '<p><b>✓ Done this week.</b> A new one arrives on Monday.</p>' : '<button class="btn" data-action="chal">I did it ✓</button>'}</div><p class="muted" style="margin:4px 4px 14px">The guided plans below are written for people getting going. Use them as a warm-up or pass them on.</p>` : ''}
+    ${easy ? `<div class="card"><p class="kick">You said the last three felt good</p><h3>Ready for something harder?</h3><div class="row"><button class="btn small green" data-action="stepup">Yes, step me up</button><button class="btn small ghost" data-action="stepno">No, this is right</button></div></div>` : ''}
     <div class="stats">
       <div class="stat"><b>${st}</b><span>day streak</span></div>
       <div class="stat"><b>${doneCount(p)}/${p.days.length}</b><span>${esc(p.title.replace('The ', ''))}</span></div>
@@ -61,7 +90,7 @@
          <a class="btn" href="#/session/${p.id}/${i}">${doneToday ? 'Do the next one anyway' : 'Start'} →</a></div>
          ${doneToday ? '' : `<button class="btn ghost small" data-action="two">Short on time? The 2-minute version</button><div style="height:16px"></div>`}`}
     ${!S.tests[p.id]?.start && p.id === 'restart7' ? `<div class="card"><p class="kick">Before Day 1</p><h3>Take the 1-minute test</h3><p class="muted">How many times can you stand up from a chair in 30 seconds? You'll do it again on Day 7 and see the difference.</p><a class="btn green small" href="#/test/${p.id}/start">Take the test</a></div>` : ''}
-    ${s0 ? `<a class="card story" href="${s0.url}" target="_blank" rel="noopener"><p class="kick">Today's story</p>${s0.image ? `<img src="${s0.image}" alt="" loading="lazy">` : ''}<h3>${esc(s0.title)}</h3><p class="muted">${esc(s0.excerpt).slice(0, 150)}…</p></a>` : ''}
+    ${s0 ? `<a class="card story" href="${s0.url}" target="_blank" rel="noopener"><p class="kick">${me.level || me.interests.length ? 'Picked for you' : 'Today\'s story'}</p>${s0.image ? `<img src="${s0.image}" alt="" loading="lazy">` : ''}<h3>${esc(s0.title)}</h3><p class="muted">${esc(s0.excerpt).slice(0, 150)}…</p></a>` : ''}
     ${installCard()}`;
   }
 
@@ -111,10 +140,23 @@
     </svg><p class="muted" style="text-align:center;margin:0 0 10px">${unit}${rows[0][1] && rows[1][1] ? ` · <b style="color:var(--plan)">${rows[1][1] - rows[0][1] >= 0 ? '+' : ''}${rows[1][1] - rows[0][1]}</b>` : ''}</p>`;
   }
 
+  function You(first) {
+    setPlanColour(null); const p = prof();
+    const btn = (attr, v, label, on, sub) => `<button class="pick" data-action="you" data-k="${attr}" data-v="${v}" aria-pressed="${on}"><b>${label}</b>${sub ? `<span>${sub}</span>` : ''}</button>`;
+    return `<p class="kick">${first ? 'Welcome' : 'About you'}</p><h1>${first ? 'Three quick questions' : 'Your answers'}</h1>
+    <p class="muted">So the app shows what fits you. It stays on this phone, and you can change it any time.</p>
+    <div class="card"><h3>What should we call you? <span class="muted" style="font-weight:400">(optional)</span></h3><input id="yname" value="${esc(S.name || '')}" placeholder="First name" autocomplete="given-name" style="font:inherit;padding:12px;border-radius:12px;border:2px solid var(--line);width:100%;min-height:56px"></div>
+    <div class="card"><h3>How active are you at the moment?</h3><div class="picks col">${btn('level', 'starter', 'Getting going', p.level === 'starter', "I haven't done much for a while")}${btn('level', 'active', 'Active', p.level === 'active', 'I walk, swim, cycle or play most weeks')}${btn('level', 'advanced', 'Fit', p.level === 'advanced', 'I train, and I want a challenge')}</div></div>
+    <div class="card"><h3>Your age <span class="muted" style="font-weight:400">(optional)</span></h3><div class="picks">${btn('age', 'u55', 'Under 55', p.age === 'u55')}${btn('age', '55-64', '55 to 64', p.age === '55-64')}${btn('age', '65-74', '65 to 74', p.age === '65-74')}${btn('age', '75plus', '75 or over', p.age === '75plus')}</div></div>
+    <div class="card"><h3>What interests you?</h3><div class="picks">${TOPICS.map(([id, l]) => btn('interest', id, l, p.interests.includes(id))).join('')}</div></div>
+    <button class="btn" data-action="youdone">${first ? 'Show me what fits' : 'Save'} →</button>`;
+  }
+
   function More() {
     setPlanColour(null);
     return `<h1>More</h1>
     ${installCard(true)}
+    <div class="card"><h3>About you</h3><p class="muted">${(() => { const p = prof(); return p.level ? `Level: ${LEVEL_NAME[p.level]}. ` : 'Tell us your level and interests so the app fits you. '; })()}</p><a class="btn small" href="#/you">Change my answers</a></div>
     <div class="card"><h3>Daily reminder</h3><p class="muted">Add a ten-minute slot to your phone's calendar every day, at a time that suits you.</p>
       <div class="row"><input type="time" id="rtime" value="${S.remind || '09:30'}" style="font:inherit;padding:12px;border-radius:12px;border:2px solid var(--line);min-height:56px"><button class="btn small" data-action="ics">Add to calendar</button></div></div>
     <div class="card"><h3>Text size</h3><div class="row">${['Normal', 'Large', 'Largest'].map((l, i) => `<button class="btn small ${S.size == i ? '' : 'ghost'}" data-action="size" data-v="${i}">${l}</button>`).join('')}</div></div>
@@ -234,6 +276,8 @@
     else if (parts[0] === 'plan') html = PlanView(parts[1]);
     else if (parts[0] === 'progress') html = Progress();
     else if (parts[0] === 'more') html = More();
+    else if (parts[0] === 'you') html = You(false);
+    else if (!S.onboarded && !prof().level) html = You(true);
     else html = Today();
     view.innerHTML = `<div class="fade">${html}</div>`; window.scrollTo(0, 0);
   }
@@ -245,6 +289,13 @@
     const a = e.target.closest('[data-action]'); if (!a) return;
     const act = a.dataset.action;
     if (act === 'locked') { e.preventDefault(); const p = plan(a.dataset.id); sheet(`<h2>Unlock ${esc(p.title)}</h2><p>You've got the first ${p.open_days} days free. The whole plan is ${p.price}, and your progress so far is kept.</p><a class="btn" href="${p.shop}">Unlock for ${p.price}</a><div style="height:10px"></div><button class="btn ghost small" data-close>Not now</button>`); }
+    if (act === 'you') { const p = prof(), k = a.dataset.k, v = a.dataset.v; if ($('#yname')) S.name = $('#yname').value.trim().slice(0, 30);
+      if (k === 'interest') { const i = new Set(p.interests); i.has(v) ? i.delete(v) : i.add(v); p.interests = [...i]; } else p[k] = p[k] === v ? '' : v;
+      setProf(p); save(); const y = scrollY; view.innerHTML = `<div class="fade">${You(!S.onboarded)}</div>`; scrollTo(0, y); }
+    if (act === 'youdone') { if ($('#yname')) S.name = $('#yname').value.trim().slice(0, 30); S.onboarded = 1; save(); location.hash = '#/'; render(); }
+    if (act === 'chal') { (S.chal ||= {})[weekKey()] = today(); save(); beep(1046, 200); render(); }
+    if (act === 'stepup') { const p = prof(), o = ['starter', 'active', 'advanced']; p.level = o[Math.min(2, o.indexOf(p.level || 'starter') + 1)]; setProf(p); S.stepAsked = 1; save(); render(); }
+    if (act === 'stepno') { S.stepAsked = 1; save(); render(); }
     if (act === 'activate') { S.active = a.dataset.id; save(); location.hash = '#/'; }
     if (act === 'two') startSession(S.active, null, DATA.two_minute, '2-minute version');
     if (act === 'next') { clearInterval(tick); run.i++; drawStep(); }
@@ -265,7 +316,7 @@
     if (act === 'ics') { const t = ($('#rtime').value || '09:30').replace(':', ''); S.remind = $('#rtime').value; save();
       const d = today().replace(/-/g, ''); const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Dont Die Retired//App//EN', 'BEGIN:VEVENT', `UID:ddr-daily-${Date.now()}@dontdieretired.com`, `DTSTAMP:${d}T000000Z`, `DTSTART:${d}T${t}00`, 'DURATION:PT10M', 'RRULE:FREQ=DAILY', "SUMMARY:Ten minutes for me (Don't Die Retired)", 'DESCRIPTION:Open the app: https://dontdieretired.com/app/', 'BEGIN:VALARM', 'TRIGGER:PT0M', 'ACTION:DISPLAY', 'DESCRIPTION:Ten minutes for me', 'END:VALARM', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
       const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' })); const l = document.createElement('a'); l.href = url; l.download = 'daily-reminder.ics'; l.click(); }
-    if (act === 'reset' && confirm('Reset all your progress on this phone?')) { S = { active: 'restart7', size: S.size, plans: {}, tests: {}, unlocked: {} }; save(); render(); }
+    if (act === 'reset' && confirm('Reset all your progress on this phone?')) { S = { active: 'restart7', size: S.size, plans: {}, tests: {}, unlocked: {}, name: S.name, onboarded: S.onboarded }; save(); render(); }
   });
 
   // ---------- boot ----------

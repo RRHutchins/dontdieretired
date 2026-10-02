@@ -6,6 +6,7 @@ kind: guide
 category: think
 tags: [study, open-university, u3a, community-college, funding, online-courses]
 segments: [learner, changer]
+level: any
 hook: "You do not need A levels, a campus or a fortune. Here is where over-50s actually study, and who pays."
 lesson: "Choose the level of commitment you want — a free short course, a club, or a qualification — and look up the funding before you rule it out."
 standfirst: "From a free six-week online course to a part-time degree, there is a route back into formal learning for every budget and every amount of nerve. This is the map, for the UK and the US."
@@ -14,6 +15,10 @@ try_this:
   - "Join one free short course on FutureLearn or Coursera this week and do the first hour."
   - "Look up your local u3a (UK) or community college's continuing-education page (US) and read one course description that makes you curious."
   - "If a qualification tempts you, check the funding page for your nation or state before deciding it is unaffordable."
+try_this_plus:
+  - "Enrol on a credit-bearing module at degree level this academic year and submit every assessed assignment."
+  - "Draft a personal statement for a part-time degree or master's and ask a tutor in the department to read it."
+  - "Join or start a study group of four to six people and present a 15-minute seminar on your subject each term."
 sources:
   - {title: "Facts and figures", publisher: "The Open University", date: "2026", url: "https://about.open.ac.uk/policies-and-reports/facts-and-figures"}
   - {title: "About us", publisher: "u3a", date: "2026", url: "https://www.u3a.org.uk/about"}

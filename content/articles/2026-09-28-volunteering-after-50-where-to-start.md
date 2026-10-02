@@ -6,6 +6,7 @@ kind: guide
 category: connect
 tags: [volunteering, community, purpose, beginner, mindset]
 segments: [restarter, changer, carer, learner]
+level: any
 hook: "Volunteering is the fastest route to new people after 50 — and 75% of UK volunteers say it improved their mental wellbeing."
 lesson: "Pick a role that uses one thing you can already do, commit to a month, and let the people and the purpose follow."
 standfirst: "A role gives you somewhere to be, something to do and people to do it with. Here is how to find one in the UK or US, what the surveys say volunteers get back, and a plan for your first month."
@@ -14,6 +15,10 @@ try_this:
   - "Search Do IT (UK) or VolunteerMatch (US) for roles within 5 miles of home and shortlist three you could actually do."
   - "Write down two things you are good at that a charity might need — spreadsheets, driving, listening, DIY, minute-taking."
   - "Apply for one role and put the induction date in your diary before you change your mind."
+try_this_plus:
+  - "Apply for a trustee or board position at a charity whose work you know, and read its last two annual reports first."
+  - "Offer a defined skills-based project, such as a finance review, a website rebuild or a fundraising plan, with a clear end date."
+  - "Recruit, train and coordinate a team of five volunteers for one event or programme and see it through from start to finish."
 sources:
   - {title: "Find a volunteering opportunity", publisher: "NCVO", date: "2026", url: "https://www.ncvo.org.uk/ncvo-volunteering/i-want-to-volunteer"}
   - {title: "The UK's biggest volunteering database", publisher: "Do IT", date: "2026", url: "https://www.doit.life/volunteer"}

@@ -6,6 +6,7 @@ kind: guide
 category: eat
 tags: [protein, strength, breakfast, beginner]
 segments: [restarter, mover]
+level: any
 hook: "Half the protein in your body is in your muscle — and muscle is what you lose after 50 if you don't feed it."
 lesson: "Put a proper source of protein in every meal, starting with breakfast, and spread it across the day rather than saving it for dinner."
 standfirst: "Muscle is what keeps you independent, and protein is what keeps muscle. Here is how much the guidelines suggest, why timing matters, and the easiest foods to get it from."
@@ -14,6 +15,10 @@ try_this:
   - "Tomorrow, swap your usual breakfast for one with an egg, Greek yoghurt or baked beans, and notice whether you are less hungry mid-morning."
   - "Weigh yourself once, in kilograms, and multiply by 1 and by 1.2 to get a rough daily protein range to aim for — then compare it with a typical day."
   - "Add one plant protein to your weekly shop — a tin of chickpeas, a bag of red lentils or a block of tofu — and use it in something you already cook."
+try_this_plus:
+  - "Weigh and log your protein for seven days and adjust until each of three meals carries roughly a third of your daily target."
+  - "Plan what you eat within two hours of every strength session for a month and note how your recovery and lifts respond."
+  - "Cook two entirely plant-based days a week that still reach your full protein range, using pulses, tofu, nuts and grains."
 sources:
   - {title: "Nutrition Needs for Older Adults: Protein", publisher: "National Resource Center on Nutrition & Aging, via Administration for Community Living (US)", date: "18 February 2020", url: "https://acl.gov/sites/default/files/nutrition/Nutrition-Needs_Protein_FINAL-2.18.20_508.pdf"}
   - {title: "Protein", publisher: "British Nutrition Foundation", date: "reviewed October 2023", url: "https://www.nutrition.org.uk/nutritional-information/protein/"}

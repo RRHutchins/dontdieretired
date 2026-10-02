@@ -1,18 +1,15 @@
-{% extends "base.html" %}{% from "_macros.html" import card, product_promo %}
+{% extends "base.html" %}{% from "_macros.html" import card, product_promo, profile_form %}
 {% block title %}Start here — {{ cfg.site.name }}{% endblock %}
 {% block description %}New to the site? Pick your starting point and get a plan you can begin this week.{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Start here</p><h1>Where are you starting from?</h1><p class="lead">It doesn't matter whether you've been active all your life or never at all — there is a starting point for you here. Pick the one that sounds most like you and we'll show the right stories and a first-week plan.</p></header>
-<div class="seg-grid seg-grid-page">
-  {% for s in segments %}
-  <button class="seg" data-segment="{{ s.id }}" data-go="/start-here/#plan"><strong>{{ s.label }}</strong><span>{{ s.blurb }}</span></button>
-  {% endfor %}
-</div>
+<header class="page-head"><p class="kicker">Start here</p><h1>Where are you starting from?</h1><p class="lead">It doesn't matter whether you've been active all your life or never at all — there is a starting point for you here. Answer three quick questions and we'll show you stories that fit and a first week pitched at your level.</p></header>
+<section class="say-block">{{ profile_form('plan') }}</section>
 <section id="plan" class="plan" hidden>
-  <h2>Your first week, <span data-segment-label></span></h2>
+  <h2>Your first week</h2>
   <div data-plan></div>
+  <h3>Stories picked for you</h3>
   <div class="grid grid-3" data-for-you></div>
-  <p><a class="btn" href="/newsletter/">Send me the 7-Day Restart Plan (free)</a></p>
+  <p><a class="btn" href="/newsletter/">Get the weekly email that matches your answers</a></p>
 </section>
 <section class="two-col">
   <div class="prose">

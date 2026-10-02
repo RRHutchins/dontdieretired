@@ -3,15 +3,15 @@
 {% block content %}
 <section class="hero">
   <div class="hero-text">
-    <p class="kicker">For everyone over 50 — whether you've always been active or never got round to it</p>
+    <p class="kicker">For people over 50 who aren't finished: fit, unfit or somewhere in between</p>
     <h1>Retire from work if you like.<br>Never from <em>life</em>.</h1>
-    <p class="lead">The usual script says slow down, do less, wind down. We think the opposite: with more time and fewer obligations than at any point since you were twenty, this is the time to do more — move more, learn more, start things. It doesn't matter if you were never sporty or never studied. Every day we find a real person who began late, and give you one small thing to try.</p>
+    <p class="lead">The usual script says slow down, do less, wind down. We think the opposite: with more time and fewer obligations than at any point since you were twenty, this is the time to do more — move more, learn more, start things. Every day we find a real person doing something worth reading about, and give you one thing to try, pitched at your level.</p>
     <div class="hero-actions">
       <a class="btn" href="/start-here/">Start here</a>
-      <button class="btn btn-ghost" data-open-segments>Personalise this site</button>
+      <button class="btn btn-ghost" data-open-segments>Make it yours (20 seconds)</button>
     </div>
   </div>
-  <a href="{{ featured.url }}" class="hero-card">
+  <a href="{{ featured.url }}" class="hero-card" data-hero-card>
     <img src="{{ featured.image }}" alt="" width="1200" height="630">
     <span class="kicker">Today's story</span>
     <strong>{{ featured.title }}</strong>
@@ -24,13 +24,13 @@
   <h2>Retirement is a word for leaving a job. It was never meant to describe a person.</h2>
   <div class="grid grid-3 manifesto-grid">
     <div><h3>Do more, not less</h3><p>The years after 50 come with the thing you never had enough of: time. Spend it on your body, your mind and the things you always meant to do — not on shrinking your world to fit a smaller idea of yourself.</p></div>
-    <div><h3>Never active? Perfect.</h3><p>Most of the people we write about weren't. The body and brain respond to a new start at 60, 70 and 80 — the research is clear, and so are the stories. Beginners are welcome here; in fact they're the point.</p></div>
+    <div><h3>Wherever you're starting</h3><p>Fit at 50 and after a harder goal? Not exercised since school? Both belong here. Tell us where you are and what interests you, and we'll show you what fits: no chair exercises for runners, no marathons for people getting off the sofa.</p></div>
     <div><h3>Small, real, today</h3><p>No hype, no miracle cures, no "despite their age". One true story a day, sourced and linked, and one thing you can actually do this week. That's how lives change: a little, and then a lot.</p></div>
   </div>
 </section>
 
 <section class="for-you" id="for-you" hidden>
-  <h2>Picked for <span data-segment-label>you</span></h2>
+  <div class="section-head"><h2>Picked for you</h2><button class="linklike" data-open-segments>Change my answers</button></div>
   <div class="grid grid-3" data-for-you></div>
 </section>
 

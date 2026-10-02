@@ -5,6 +5,8 @@ date: 2026-09-19
 category: connect
 tags: [fun, community, brain, men, beginner, creativity]
 segments: [learner, carer, restarter]
+level: any
+subject_age: 83
 hook: "Gene Edwards started tap lessons in his eighties, takes a weekly class in Dallas and has competed in a local talent show."
 lesson: "Pick something that makes you smile while you do it; the fitness follows."
 standfirst: "Gene Edwards, 83, takes a weekly tap class at the Dallas Conservatory and has performed in a talent competition. He says it has opened up an entirely new world."
@@ -13,6 +15,10 @@ try_this:
   - "List three things you find fun — not worthy, fun. Dancing, singing, drawing, a sport you loved as a child."
   - "Find a beginners' class for one of them. Adult beginner classes exist for almost everything, including tap."
   - "Commit to four weeks. Judge it by whether you smiled, not whether you were good."
+try_this_plus:
+  - "Move up from a general class to a graded syllabus and book an exam or medal test within the next six months."
+  - "Enter a local talent show, festival or showcase and prepare a two-minute solo routine to perform in front of an audience."
+  - "Add a second weekly class in a contrasting style, such as jazz or rhythm tap, and practise for 20 minutes on three other days."
 sources:
   - {title: "Feeling alive in 2025: 83-year-old finds joy and purpose through tap dancing", publisher: "CBS News Texas", date: "16 January 2025", url: "https://www.cbsnews.com/texas/news/feeling-alive-in-2025-83-year-old-finds-joy-and-purpose-through-tap-dancing"}
 ---

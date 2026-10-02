@@ -1,5 +1,5 @@
 {% macro card(a, big=false) %}
-<article class="card {% if big %}card-big{% endif %}" data-tags="{{ a.tags|join(',') }}" data-segments="{{ a.segments|default([])|join(',') }}">
+<article class="card {% if big %}card-big{% endif %}" data-tags="{{ a.tags|join(',') }}" data-segments="{{ a.segments|default([])|join(',') }}" data-cat="{{ a.category }}" data-level="{{ a.level|default('any') }}" data-age="{{ a.subject_age|default('') }}">
   <a href="{{ a.url }}" class="card-img"><img src="{{ a.image }}" alt="" loading="lazy" width="1200" height="630"></a>
   <div class="card-body">
     <p class="kicker"><a href="/{{ a.category }}/">{{ categories[a.category].label }}</a> · {{ a.reading_time }} min read</p>
@@ -83,4 +83,25 @@
 </aside>
 <script type="application/json" data-region-map>{{ local.regions | tojson }}</script>
 {% endif %}
+{% endmacro %}
+
+{% macro profile_form(go='') %}
+<div class="profile-form" data-profile-form {% if go %}data-go="{{ go }}"{% endif %}>
+  <fieldset><legend>How active are you at the moment?</legend>
+    <div class="opt-grid">
+      <button type="button" class="opt" data-level="starter" aria-pressed="false"><strong>Getting going</strong><span>I haven't done much for a while</span></button>
+      <button type="button" class="opt" data-level="active" aria-pressed="false"><strong>Active</strong><span>I walk, swim, cycle or play most weeks</span></button>
+      <button type="button" class="opt" data-level="advanced" aria-pressed="false"><strong>Fit</strong><span>I train, and I want a challenge</span></button>
+    </div></fieldset>
+  <fieldset><legend>Your age <small>(optional)</small></legend>
+    <div class="chips">
+      <button type="button" class="chip" data-age="u55" aria-pressed="false">Under 55</button>
+      <button type="button" class="chip" data-age="55-64" aria-pressed="false">55 to 64</button>
+      <button type="button" class="chip" data-age="65-74" aria-pressed="false">65 to 74</button>
+      <button type="button" class="chip" data-age="75plus" aria-pressed="false">75 or over</button>
+    </div></fieldset>
+  <fieldset><legend>What interests you? <small>(pick any)</small></legend>
+    <div class="chips">{% for cid, c in categories.items() %}<button type="button" class="chip" data-interest="{{ cid }}" aria-pressed="false">{{ c.label }}</button>{% endfor %}</div></fieldset>
+  <button type="button" class="btn" data-profile-done>Show me what fits</button>
+</div>
 {% endmacro %}

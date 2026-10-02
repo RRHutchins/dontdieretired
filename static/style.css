@@ -313,3 +313,18 @@ body{background:var(--paper)}
 .try-this{background:var(--dawn);border-color:#f3d6b5}
 .promo,.aff-box,.tier,.plan,.say-block{box-shadow:none;border:1px solid var(--line)}
 .site-header{box-shadow:0 1px 0 var(--line)}
+
+/* ---------- personal profile ---------- */
+.profile-form fieldset{border:0;padding:0;margin:0 0 18px}
+.profile-form legend{font-family:var(--serif);font-weight:700;font-size:1.15rem;margin-bottom:8px}
+.profile-form legend small{font-family:var(--sans);font-weight:400;color:var(--muted);font-size:.85rem}
+.opt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.opt{font:inherit;text-align:left;padding:12px 14px;border:2px solid var(--line);border-radius:12px;background:#fff;cursor:pointer;display:grid;gap:2px;color:var(--ink)}
+.opt span{color:var(--muted);font-size:.9rem}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:#e8f3ee}
+.modal-card{max-height:92vh;overflow:auto}
+.try-label{font-weight:700;margin:.6em 0 .2em;color:var(--muted);text-transform:uppercase;font-size:.78rem;letter-spacing:.06em}
+.fit-box{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:24px 0;background:#fff}
+.fit-box p{margin:0 0 8px}.fit-box .chip{min-height:40px;padding:.4em .9em;font-size:.95rem}
+.fit-box .chip::before{content:none}
+@media(max-width:640px){.opt-grid{grid-template-columns:1fr}}

@@ -7,6 +7,7 @@ pillar: true
 category: eat
 tags: [protein, cooking, hydration, bones, beginner, budget]
 segments: [restarter, mover, carer]
+level: any
 hook: "After 50 you need fewer calories but more of the good stuff. Here's how to eat well without a diet."
 lesson: "Forget diets — build every day around protein, plants, fibre, fluids and a bit of planning, and let the rest look after itself."
 standfirst: "Your body's needs shift quietly after 50: appetite drops, thirst dulls, muscle and bone need more looking after. This is the start-here guide to eating well through all of it — no fads, no calorie counting."
@@ -15,6 +16,10 @@ try_this:
   - "At your next three breakfasts, add one protein food you don't usually have — an egg, a pot of Greek yoghurt, a handful of nuts on the porridge."
   - "Put a glass or mug in the same spot on the kitchen worktop and refill it every time you walk past. Six to eight a day is the target."
   - "Cook one meal this week in a double batch and freeze half in single portions, labelled with the date."
+try_this_plus:
+  - "Log everything you eat for seven days and score protein, fibre, calcium and vegetables against the guideline figures in the article."
+  - "Plan and cook a full week of meals that reaches 30 different plant foods, and write the list down as you go."
+  - "Match your eating to your training by spreading protein across three meals and planning what you eat within two hours of hard sessions."
 sources:
   - {title: "The Eatwell Guide", publisher: "NHS", date: "reviewed 29 November 2022", url: "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/the-eatwell-guide/"}
   - {title: "Dietary Guidelines for Americans, 2025–2030", publisher: "US Department of Agriculture and Department of Health and Human Services", date: "2026", url: "https://cdn.realfood.gov/DGA.pdf"}

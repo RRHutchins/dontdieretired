@@ -7,6 +7,7 @@ pillar: true
 category: travel
 tags: [slow-travel, walking, trains, insurance, solo, budget, accessibility, beginner]
 segments: [restarter, mover, learner, carer]
+level: any
 hook: "More time, less rush. The start-here guide to travelling after 50 — slower, longer, and properly insured."
 lesson: "Go to fewer places for longer, travel by land where you can, sort insurance and health early, and let the trip be unhurried."
 standfirst: "After 50 the calendar loosens and the body prefers not to be rushed. That is the perfect combination for a different kind of travel: fewer destinations, longer stays, trains instead of airports, and time to get to know a place. This is the start-here guide."
@@ -15,6 +16,10 @@ try_this:
   - "Check your passport's issue and expiry dates tonight against the rules for the country you most want to visit."
   - "Write down every medical condition, medicine and recent appointment on one sheet, ready for an insurance quote."
   - "Pick one trip from our five travel articles and read it properly, then put a possible month in the diary."
+try_this_plus:
+  - "Plan a three-month slow trip built on four bases of three weeks each, with a full budget for every stage."
+  - "Design one point-to-point overland journey of at least 2,000 km using only trains, buses and ferries, and book the first leg."
+  - "Choose a destination that needs real preparation, such as a high-altitude trek or a remote region, and set a 12-month plan to get ready."
 sources:
   - {title: "Before you travel", publisher: "NHS Fit for Travel", date: "accessed September 2026", url: "https://www.fitfortravel.nhs.uk/advice/general-travel-health-advice/before-you-travel"}
   - {title: "Senior Citizens", publisher: "CDC Travelers' Health", date: "accessed September 2026", url: "https://wwwnc.cdc.gov/travel/page/senior-citizens"}

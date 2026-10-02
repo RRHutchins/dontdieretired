@@ -6,6 +6,7 @@ kind: guide
 category: money
 tags: [pensions, retirement, state-pension, social-security, beginner]
 segments: [restarter, changer, carer]
+level: any
 hook: "Twenty minutes online tells you the biggest number in your retirement. Most people over 50 have never looked."
 lesson: "Log in, read your own forecast, and check for gaps while you still have years to fill them."
 standfirst: "The state pension is the biggest single source of retirement income for most people, and both the UK and US will show you your own figure for free. Here is how to read it, and what you can still do about it."
@@ -14,6 +15,10 @@ try_this:
   - "Sign in to Gov.uk's 'Check your State Pension forecast' or your my Social Security account and write down the figure and the date it applies from."
   - "UK: open your National Insurance record and count the years marked as not qualifying. US: read your earnings history line by line and flag any year that looks wrong."
   - "Put a note in your diary for the same week next year to check again."
+try_this_plus:
+  - "Model three claiming scenarios on a spreadsheet, earliest, standard and deferred, and work out the break-even year for each."
+  - "Compare the cost of filling each gap year in your record with the extra income it would add, year by year."
+  - "Combine your forecast with every private pension estimate into one year-by-year income table running 30 years ahead."
 sources:
   - {title: "Check your State Pension forecast", publisher: "Gov.uk", date: "2026", url: "https://www.gov.uk/check-state-pension"}
   - {title: "The new State Pension: eligibility", publisher: "Gov.uk", date: "2026", url: "https://www.gov.uk/new-state-pension/how-its-calculated"}

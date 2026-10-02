@@ -6,6 +6,7 @@ kind: guide
 category: connect
 tags: [family, grandchildren, community, carer, beginner]
 segments: [carer, restarter]
+level: any
 hook: "Distance does not decide whether grandchildren feel close to you. Routine does. A fixed weekly call beats a dozen good intentions."
 lesson: "Give the relationship a slot in the week, keep the tech simple, follow the parents' rules, and plan visits around the children's lives rather than yours."
 standfirst: "When the grandchildren are 200 miles or an ocean away, closeness has to be built on purpose. Here is what works — and where to turn if you are the one raising them."
@@ -14,6 +15,10 @@ try_this:
   - "Agree one fixed weekly call slot with the parents — same day, same time — and put it in everyone's calendar."
   - "Buy two copies of one children's book and read a chapter together over video this week."
   - "Start one shared project: a plant you both grow, a jigsaw you both do, a list of birds you both spot."
+try_this_plus:
+  - "Plan a week-long visit where you take sole charge of the grandchildren for two full days, agreed in detail with their parents first."
+  - "Start a year-long shared project with a visible result, such as a family history book or a jointly built model, with a monthly milestone."
+  - "Teach one real skill across six video sessions, such as chess, knitting or coding, and set a small task between calls."
 sources:
   - {title: "Kinship: the kinship care charity", publisher: "Kinship", date: "2026", url: "https://kinship.org.uk/"}
   - {title: "Grandfamilies and kinship care", publisher: "Generations United", date: "2026", url: "https://www.gu.org/explore-our-topics/grandfamilies/"}

@@ -375,6 +375,7 @@ def build(make_social=True):
     (DIST / "index.json").write_text(json.dumps([{
         "title": a["title"], "url": a["url"], "excerpt": a["excerpt"], "tags": a["tags"],
         "category": a["category"], "segments": a.get("segments", []), "date": a["date_iso"], "image": a["image"],
+        "level": a.get("level", "any"), "age": a.get("subject_age"),
     } for a in arts]), encoding="utf-8")
 
     write_rss(arts, cfg)

@@ -17,7 +17,7 @@
 <meta property="og:image" content="{{ cfg.site.url }}{% block ogimage %}/static/og-default.png{% endblock %}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="{{ cfg.site.twitter_handle }}">
-{% block head %}{% endblock %}
+{% from "_macros.html" import profile_form %}{% block head %}{% endblock %}
 <link rel="preload" href="/static/fonts/fraunces-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/static/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/static/style.css">
@@ -63,8 +63,7 @@
     <form class="nl-form" action="{{ cfg.newsletter.form_action }}" method="post" target="_blank" data-nl>
       <label class="sr-only" for="nl-email">Email address</label>
       <input id="nl-email" type="email" name="email" placeholder="you@example.com" required>
-      <input type="hidden" name="tag" value="" data-segment-field>
-      <button class="btn" type="submit">Join free</button>
+            <button class="btn" type="submit">Join free</button>
     </form>
   </div>
 </section>
@@ -105,16 +104,12 @@
   </div>
 </footer>
 
-<!-- Audience targeting: who are you? -->
+<!-- Personal profile: fitness level, age band, interests (kept in this browser) -->
 <div class="modal" id="segment-modal" hidden>
   <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="seg-title">
-    <h2 id="seg-title">Which of these sounds most like you?</h2>
-    <p>We'll put the most useful stories first. Takes two seconds, changes anytime.</p>
-    <div class="seg-grid">
-      {% for s in segments %}
-      <button class="seg" data-segment="{{ s.id }}"><strong>{{ s.label }}</strong><span>{{ s.blurb }}</span></button>
-      {% endfor %}
-    </div>
+    <h2 id="seg-title">Make this site yours</h2>
+    <p>Three quick questions and we'll show you what fits: no beginner tips if you're already fit, no marathons if you're just starting. It stays in this browser, and you can change it any time.</p>
+    {{ profile_form() }}
     <button class="linklike" data-close-segments>Skip for now</button>
   </div>
 </div>

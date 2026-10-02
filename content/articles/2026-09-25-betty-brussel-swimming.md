@@ -5,6 +5,8 @@ date: 2026-09-25
 category: stories
 tags: [swimming, community, competition, women, endurance]
 segments: [mover, carer, restarter]
+level: active
+subject_age: 99
 hook: "Betty Brussel didn't compete in swimming until she was 68. Thirty-one years later she set three world records in one day."
 lesson: "Starting at 68 still leaves room for three decades of improvement — and community is as much the point as the medals."
 standfirst: "The Dutch-born Canadian swimmer took nearly four minutes off a world record at 99. Ask her why she does it and she talks about people, not times."
@@ -13,6 +15,10 @@ try_this:
   - "Find your nearest pool's adult or 'masters' swimming session — most welcome complete beginners and improvers."
   - "If you can't swim, book a block of adult lessons. Learning at 60, 70 or 80 is common and instructors are used to it."
   - "Pick a local seniors' games, parkrun or club event 6 months away. Enter it. Then tell someone."
+try_this_plus:
+  - "Join a masters swimming club and enter a 400 metre freestyle at a sanctioned meet within the next six months."
+  - "Swim a timed 1,500 metres, note your splits per 100 metres, and repeat the test every six weeks."
+  - "Add one coached technique session a week and learn racing starts and tumble turns before your first gala."
 sources:
   - {title: "99-year-old swimmer Betty Brussel breaks three world records", publisher: "CBC Radio, The Current", date: "4 February 2024", url: "https://www.cbc.ca/radio/thecurrent/99-year-old-swimmer-betty-brussel-1.7101711"}
   - {title: "Betty Brussel, B.C. competitive swimmer", publisher: "The Globe and Mail", date: "January 2024", url: "https://www.theglobeandmail.com/sports/article-betty-brussel-bc-competitive-swimmer/"}

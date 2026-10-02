@@ -7,6 +7,7 @@ pillar: true
 category: earn
 tags: [business, purpose, changer, career, freelance, pensions, discrimination]
 segments: [changer, restarter, learner]
+level: any
 hook: "Working after 50 is not one decision. It is six options, a few rules worth knowing, and a way of choosing."
 lesson: "Pick the shape of work that fits the life you want next, test it small, and let the law and the pension rules work for you rather than against you."
 standfirst: "Whether you want to stay, switch, cut down or start something of your own, this is the start-here guide: the options, the rules on age and pensions, and how to decide."
@@ -15,6 +16,10 @@ try_this:
   - "Write down, in one line each, what you want work to give you over the next five years — money, people, purpose, structure, time. Rank them. That ranking is your filter for everything below."
   - "Pick one of the six options and spend one hour this week finding out the smallest possible version of it: one shift, one client, one conversation, one course."
   - "Check your State Pension or Social Security position online (the Gov.uk forecast or your my Social Security account) so you are choosing with real numbers, not guesses."
+try_this_plus:
+  - "Design a portfolio of three income streams and write a one-page plan for each, with target hours and earnings."
+  - "Negotiate a formal change to your current role, such as a four-day week or a phased retirement, with a written proposal for your employer."
+  - "Find a mentee and a mentor in the same month, one to pass experience on to and one who is ahead of you."
 sources:
   - {title: "Working after State Pension age", publisher: "Gov.uk", date: "accessed 28 September 2026", url: "https://www.gov.uk/working-retirement-pension-age"}
   - {title: "National Insurance and tax after State Pension age", publisher: "Gov.uk", date: "accessed 28 September 2026", url: "https://www.gov.uk/tax-national-insurance-after-state-pension-age"}

@@ -6,6 +6,7 @@ kind: guide
 category: tech
 tags: [phone, accessibility, hearing, eyesight, beginner]
 segments: [restarter, learner, carer]
+level: any
 hook: "Your phone can make its own text bigger, magnify a menu, caption a video and talk to your hearing aids. Nobody tells you where the switches are."
 lesson: "Spend ten minutes in the Accessibility section of Settings: bigger text first, then magnifier, captions and hearing devices."
 standfirst: "Every iPhone and Android phone ships with a set of tools built for eyes and ears that are not what they were at 25. They are free, they are already installed, and they are hidden under a menu called Accessibility. Here is where to find the useful ones."
@@ -14,6 +15,10 @@ try_this:
   - "Open Settings, find Accessibility, and make the text one notch bigger. Live with it for a day before deciding."
   - "Turn on the magnifier shortcut and use it on the smallest print in your kitchen — a medicine label or a jar."
   - "If you wear hearing aids, ask your audiologist whether they can pair directly with your phone, then follow the pairing steps below."
+try_this_plus:
+  - "Set up voice control and dictation and write every message by voice for one full week."
+  - "Build three automations or shortcuts for tasks you repeat daily, such as a single tap to start captions or call home."
+  - "Run a one-hour phone settings clinic at a library or community group and help five other people adjust theirs."
 sources:
   - {title: "Change the font size on your iPhone, iPad or iPod touch", publisher: "Apple Support", date: "2024", url: "https://support.apple.com/en-gb/HT202828"}
   - {title: "Use Magnifier on your iPhone or iPad", publisher: "Apple Support", date: "2025", url: "https://support.apple.com/en-gb/105102"}

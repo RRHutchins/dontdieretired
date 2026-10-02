@@ -7,6 +7,7 @@ pillar: true
 category: connect
 tags: [community, friendship, loneliness, volunteering, family, mindset, beginner]
 segments: [restarter, carer, changer, learner]
+level: any
 hook: "Social circles shrink after 50 for ordinary reasons. Rebuilding one is a skill, not luck — and the evidence says it matters."
 lesson: "Show up somewhere regularly, be the one who suggests the coffee, and treat friendship as something you do, not something that happens to you."
 standfirst: "Retirement, moves, bereavement and caring all quietly thin out the people around us. This is the Connect section's starting point: why it happens, what the research says it costs, and where people over 50 actually find each other."
@@ -15,6 +16,10 @@ try_this:
   - "Write down the names of everyone you have spoken to in person this week. If the list is short, that is information, not a verdict."
   - "Find one group that meets weekly within 20 minutes of home and put the next two sessions in your diary. Two, not one."
   - "Send one message today to someone you have lost touch with. Three lines is enough: hello, a memory, a question."
+try_this_plus:
+  - "Host a recurring gathering, such as a monthly supper or walk, and invite two people each time who do not yet know each other."
+  - "Take on an organising role in a group you already attend, such as secretary, walk leader or events coordinator, for one year."
+  - "Plan a weekend away with three friends you have known for less than five years and book it within a fortnight."
 sources:
   - {title: "Social connection linked to improved health and reduced risk of early death", publisher: "World Health Organization", date: "30 June 2025", url: "https://who.int/news/item/30-06-2025-social-connection-linked-to-improved-heath-and-reduced-risk-of-early-death"}
   - {title: "Social connection: questions and answers", publisher: "World Health Organization", date: "2025", url: "https://www.who.int/news-room/questions-and-answers/item/social-connection"}

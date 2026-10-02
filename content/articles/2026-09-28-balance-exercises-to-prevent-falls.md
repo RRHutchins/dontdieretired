@@ -6,6 +6,7 @@ kind: guide
 category: move
 tags: [balance, falls, beginner, tai chi]
 segments: [restarter, carer]
+level: starter
 hook: "More than one in four people over 65 fall each year. Two minutes a day of balance practice is the cheapest defence."
 lesson: "Practise standing on one leg and walking heel-to-toe, near a wall, every day."
 standfirst: "Nobody puts balance on their to-do list, and it fades without anyone noticing until a kerb or a rug catches them out. Here is why it matters and five safe ways to practise at home."
@@ -14,6 +15,10 @@ try_this:
   - "Stand on one leg with your fingertips on a wall for ten seconds, each side, while the kettle boils. Every day."
   - "Walk heel-to-toe along a line in the kitchen floor for five steps, fingers on the worktop, twice today."
   - "Look up a tai chi class near you this week — many are aimed at complete beginners over 50."
+try_this_plus:
+  - "Hold a single-leg stand for 30 seconds each side with your eyes closed, then progress to standing on a balance board or folded mat."
+  - "Do three sets of eight single-leg Romanian deadlifts each side twice a week, adding a kettlebell once the movement is steady."
+  - "Join a tai chi form class or a yoga class with standing balances and learn a full sequence to practise daily for eight weeks."
 sources:
   - {title: "Facts About Older Adult Falls", publisher: "CDC", date: "8 September 2026", url: "https://www.cdc.gov/falls/data-research/facts-stats/index.html"}
   - {title: "Patient & Caregiver Resources (STEADI)", publisher: "CDC", date: "8 September 2026", url: "https://www.cdc.gov/steadi/patient-resources/index.html"}

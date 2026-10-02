@@ -45,57 +45,123 @@
     }
   }
 
-  /* ---------- 2. audience targeting ---------- */
+  /* ---------- 2. personal profile: fitness level, age band, interests ----------
+     Stored in this browser only (shared with the app at /app/). Used to pick and order stories,
+     choose which "Try this" a reader sees, and tag newsletter sign-ups so emails match. */
+  const LEVELS = { starter: 'getting going', active: 'active', advanced: 'fit and after a challenge' };
+  const AGE_MID = { u55: 51, '55-64': 60, '65-74': 70, '75plus': 80 };
   const PLANS = {
-    restarter: ['Walk 10 minutes after one meal a day. That\'s it. Same time each day.', 'Stand up from a chair 5 times without using your hands, twice a day.', 'Book a GP or pharmacist chat: "What can I safely do more of?"', 'Tell one person what you\'re doing. Accountability doubles follow-through.'],
-    mover: ['Pick a next-level goal with a date: a 5k, a 1k swim, a 50-mile ride.', 'Add two strength sessions a week — the thing most active over-50s skip.', 'Find a club or masters group; competition is the best motivator we\'ve found.', 'Track one number (time, distance, weight). Beat it, slowly.'],
-    learner: ['Choose one skill and one 20-minute slot a day — same time, same chair.', 'Sign up for one structured thing: a course, a class, a choir, a language group.', 'Teach what you learn to someone within the week; it locks it in.', 'Walk while you listen — movement and learning reinforce each other.'],
-    carer: ['Protect 15 minutes a day that is only yours, and put it in the diary.', 'Do your movement with the person you care for where you can — a walk, chair exercises, music.', 'Find one carers\' group, online or local. You need people who get it.', 'Sleep first, exercise second, everything else third.'],
-    changer: ['Write down the one problem you\'d most like to solve for other people.', 'Talk to three people who\'ve done something similar after 50 — most say yes.', 'Start tiny: one paying customer, one volunteer shift, one blog post.', 'Set a 90-day experiment with a review date, not a lifetime decision.'],
+    starter: ['Walk 10 minutes after one meal a day. Same time each day.', 'Twice a day, stand up from a chair five times without using your hands.', 'Ask your GP or pharmacist one question: "What can I safely do more of?"', 'Tell one person what you\'re doing. It doubles the odds you keep going.'],
+    active: ['Pick a goal with a date on it: a 5k, a 1k open-water swim, a 50-mile ride, a hill you haven\'t climbed.', 'Add two strength sessions a week. It\'s the thing most active people skip, and the thing that protects everything else.', 'Join a club or masters group. Other people are the best training plan there is.', 'Track one number (time, distance or weight lifted) and beat it slowly.'],
+    advanced: ['Enter something at least 12 weeks away: a triathlon, a fell race, a masters meet, a long-distance trail.', 'Lift heavy twice a week: few reps, good form, more load over time. It protects speed and power.', 'Book one coached skill session a week: technique, open water, track, climbing wall.', 'Plan recovery like training: sleep, an easier week every fourth, protein at every meal.'],
   };
-  const modal = $('#segment-modal');
-  const segs = window.DDR.segments;
-  const labelOf = id => (segs.find(s => s.id === id) || {}).label || 'you';
+  const readProfile = () => {
+    let p = {}; try { p = JSON.parse(store.get('ddr_profile') || '{}'); } catch {}
+    try { p.interests = JSON.parse(store.get('ddr_interests') || '[]'); } catch { p.interests = []; }
+    // carry over the old "reader type" choice
+    if (!p.level) { const old = store.get('ddr_segment'); if (old === 'restarter') p.level = 'starter'; else if (old === 'mover') p.level = 'active'; }
+    return p;
+  };
+  const saveProfile = p => { store.set('ddr_profile', JSON.stringify({ level: p.level || '', age: p.age || '' })); store.set('ddr_interests', JSON.stringify(p.interests || [])); };
+  const hasProfile = p => !!(p.level || p.age || (p.interests || []).length);
+  let profile = readProfile();
+  let fb = {}; try { fb = JSON.parse(store.get('ddr_fb') || '{}'); } catch {}   // per-topic nudges from "Was this for you?"
 
-  function applySegment(id) {
-    if (!id) return;
-    store.set('ddr_segment', id);
-    $$('[data-segment-label]').forEach(el => el.textContent = labelOf(id));
-    $$('[data-segment-field]').forEach(el => el.value = id);
-    $$('.seg').forEach(b => b.setAttribute('aria-pressed', b.dataset.segment === id));
-    document.body.dataset.segment = id;
-    // Plan
-    const plan = $('[data-plan]');
-    if (plan) { plan.innerHTML = '<ol>' + PLANS[id].map(t => `<li>${t}</li>`).join('') + '</ol>'; const sec = $('#plan'); if (sec) sec.hidden = false; }
-    // Recommended articles
-    const holder = $('[data-for-you]');
-    if (holder) {
-      fetch('/index.json').then(r => r.json()).then(idx => {
-        const seg = segs.find(s => s.id === id);
-        let mine = []; try { mine = JSON.parse(store.get('ddr_interests') || '[]'); } catch {}
-        const score = a => (a.segments.includes(id) ? 10 : 0) + a.tags.filter(t => seg.tags.includes(t)).length + (mine.includes(a.category) ? 3 : 0);
-        const picks = idx.map(a => [score(a), a]).filter(x => x[0] > 0).sort((a, b) => b[0] - a[0]).slice(0, 3).map(x => x[1]);
-        holder.innerHTML = picks.map(a => `<article class="card"><a class="card-img" href="${a.url}"><img src="${a.image}" alt="" loading="lazy"></a><div class="card-body"><p class="kicker">${a.category.charAt(0).toUpperCase()+a.category.slice(1)}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`).join('');
-        const sec = $('#for-you'); if (sec && picks.length) sec.hidden = false;
-      });
+  // How well does an article fit this reader? Higher is better.
+  function fit(a, p, rank) {
+    let s = Math.max(0, 2 - (rank || 0) * 0.1);                       // newer first, gently
+    if ((p.interests || []).includes(a.category)) s += 4;
+    s += (fb[a.category] || 0);
+    const al = a.level || 'any', pl = p.level;
+    if (pl && al !== 'any') {
+      if (al === pl) s += 3;
+      else if (al === 'starter') s -= 6;                               // no beginner advice for people who are already fit
+      else if (pl === 'starter' && al === 'advanced') s -= 1;
+      else s += 1;
     }
+    const mid = AGE_MID[p.age];
+    if (mid && a.age) { const d = a.age - mid; if (d >= -10 && d <= 12) s += 2; else if (d > 20) s -= 3; }
+    return s;
   }
-  $$('.seg').forEach(b => b.addEventListener('click', () => {
-    applySegment(b.dataset.segment);
-    track('segment', { id: b.dataset.segment });
-    if (modal) modal.hidden = true;
-    if (b.dataset.go) location.hash = 'plan';
-  }));
+  const cardHTML = a => `<article class="card"><a class="card-img" href="${a.url}"><img src="${a.image}" alt="" loading="lazy"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`;
+
+  function applyProfile() {
+    profile = readProfile();
+    const on = hasProfile(profile);
+    document.body.dataset.level = profile.level || '';
+    $$('[data-profile-label]').forEach(el => el.textContent = profile.level ? LEVELS[profile.level] : 'you');
+    $$('[data-profile-form]').forEach(f => {
+      $$('[data-level]', f).forEach(b => b.setAttribute('aria-pressed', b.dataset.level === profile.level));
+      $$('[data-age]', f).forEach(b => b.setAttribute('aria-pressed', b.dataset.age === profile.age));
+      $$('[data-interest]', f).forEach(b => b.setAttribute('aria-pressed', (profile.interests || []).includes(b.dataset.interest)));
+    });
+    // "Try this": show the version that matches the reader
+    const hasPlus = !!$('[data-try="plus"]');
+    $$('[data-try]').forEach(el => { el.hidden = el.dataset.try === 'plus' ? profile.level === 'starter' : (hasPlus && (profile.level === 'active' || profile.level === 'advanced')); });
+    $$('[data-try-label]').forEach(el => el.hidden = !!profile.level);
+    if (!on) return;
+    const plan = $('[data-plan]');
+    if (plan && profile.level) { plan.innerHTML = '<ol>' + PLANS[profile.level].map(t => `<li>${t}</li>`).join('') + '</ol>'; const sec = $('#plan'); if (sec) sec.hidden = false; }
+    const holder = $('[data-for-you]');
+    if (holder) fetch('/index.json').then(r => r.json()).then(idx => {
+      const picks = idx.map((a, i) => [fit(a, profile, i), a]).sort((x, y) => y[0] - x[0]).slice(0, 6).map(x => x[1]);
+      holder.innerHTML = picks.map(cardHTML).join('');
+      const sec = $('#for-you'); if (sec) sec.hidden = false;
+      const hero = $('[data-hero-card]');   // lead with the reader's best match, not just the newest story
+      if (hero && picks[0]) { hero.href = picks[0].url; $('img', hero).src = picks[0].image; $('strong', hero).textContent = picks[0].title; $('.kicker', hero).textContent = 'Picked for you'; }
+    }).catch(() => {});
+    // category pages: best matches first
+    $$('[data-personalise]').forEach(g => [...g.children].map((c, i) => [fit({ category: c.dataset.cat, level: c.dataset.level, age: +c.dataset.age || null }, profile, i), c]).sort((x, y) => y[0] - x[0]).forEach(x => g.appendChild(x[1])));
+  }
+
+  const modal = $('#segment-modal');
+  $$('[data-profile-form]').forEach(f => {
+    f.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b || !f.contains(b)) return;
+      const p = readProfile();
+      if (b.dataset.level) p.level = p.level === b.dataset.level ? '' : b.dataset.level;
+      else if (b.dataset.age) p.age = p.age === b.dataset.age ? '' : b.dataset.age;
+      else if (b.dataset.interest) { const i = new Set(p.interests); i.has(b.dataset.interest) ? i.delete(b.dataset.interest) : i.add(b.dataset.interest); p.interests = [...i]; }
+      else if (b.hasAttribute('data-profile-done')) {
+        track('profile', { level: p.level || 'none', age: p.age || 'none', interests: (p.interests || []).length });
+        if (modal) modal.hidden = true;
+        if (f.dataset.go) location.hash = f.dataset.go;
+        return;
+      } else return;
+      saveProfile(p); applyProfile();
+    });
+  });
   $$('[data-open-segments]').forEach(b => b.addEventListener('click', () => { if (modal) modal.hidden = false; }));
   $$('[data-close-segments]').forEach(b => b.addEventListener('click', () => { modal.hidden = true; store.set('ddr_segment_skipped', '1'); }));
-
-  const saved = store.get('ddr_segment');
-  if (saved) applySegment(saved);
-  else if (document.body.dataset.page === 'home' && !store.get('ddr_segment_skipped') && modal) {
-    // ask after the reader has had a look around (scroll or 12s)
+  applyProfile();
+  if (!hasProfile(profile) && document.body.dataset.page === 'home' && !store.get('ddr_segment_skipped') && modal) {
     let asked = false; const ask = () => { if (!asked) { asked = true; modal.hidden = false; } };
     setTimeout(ask, 12000); window.addEventListener('scroll', () => { if (scrollY > 600) ask(); }, { passive: true });
   }
+
+  // "Was this for you?" under each article: teaches this browser what to show, and tells us what lands
+  $$('[data-fit-box]').forEach(box => {
+    const cat = box.dataset.cat, done = () => { box.innerHTML = '<p>Thanks. We\'ll show you more of what fits.</p>'; };
+    $$('button', box).forEach(b => b.addEventListener('click', () => {
+      const v = b.dataset.fit, p = readProfile(), order = ['starter', 'active', 'advanced'];
+      if (v === 'yes') fb[cat] = Math.min(4, (fb[cat] || 0) + 1);
+      if (v === 'topic') fb[cat] = Math.max(-4, (fb[cat] || 0) - 2);
+      if (v === 'easy') p.level = order[Math.min(2, order.indexOf(p.level || 'starter') + 1)];
+      if (v === 'hard') p.level = order[Math.max(0, order.indexOf(p.level || 'advanced') - 1)];
+      store.set('ddr_fb', JSON.stringify(fb)); saveProfile(p); applyProfile();
+      track('article_fit', { v, category: cat, level: box.dataset.level, page: location.pathname }); done();
+    }));
+  });
+
+  // Newsletter sign-ups carry the profile as tags, so each reader gets the edition that fits
+  const tagForms = () => $$('form[data-nl]').forEach(f => {
+    $$('input[data-ptag]', f).forEach(i => i.remove());
+    const p = readProfile(), add = (n, v) => { const i = document.createElement('input'); i.type = 'hidden'; i.name = n; i.value = v; i.dataset.ptag = '1'; f.appendChild(i); };
+    if (p.level) { add('tag', 'level-' + p.level); add('metadata__level', p.level); }
+    if (p.age) { add('tag', 'age-' + p.age); add('metadata__age', p.age); }
+    (p.interests || []).forEach(i => add('tag', 'int-' + i));
+  });
+  tagForms(); $$('form[data-nl]').forEach(f => f.addEventListener('submit', tagForms, true));
 
   /* ---------- 3. affiliate + revenue event tracking ---------- */
   // Geo-aware Amazon links: US visitors → amazon.com + US tag; everyone else → amazon.co.uk + UK tag.
@@ -112,10 +178,10 @@
         if (isUS && u.hostname.endsWith('amazon.co.uk')) { u.hostname = 'www.amazon.com'; u.searchParams.delete('tag'); }
         if (!u.searchParams.get('tag')) u.searchParams.set('tag', u.hostname.endsWith('amazon.com') ? DDR.affiliateTagUS : DDR.affiliateTagUK);
         a.href = u.toString(); } } catch {}
-    a.addEventListener('click', () => track('affiliate_click', { url: a.href, segment: store.get('ddr_segment') || 'none', region: document.body.dataset.region }));
+    a.addEventListener('click', () => track('affiliate_click', { url: a.href, level: (readProfile().level || 'none'), region: document.body.dataset.region }));
   });
-  $$('[data-product]').forEach(a => a.addEventListener('click', () => track('product_click', { id: a.dataset.product, segment: store.get('ddr_segment') || 'none' })));
-  $$('form[data-nl]').forEach(f => f.addEventListener('submit', () => track('newsletter_submit', { segment: store.get('ddr_segment') || 'none', unlock: f.hasAttribute('data-unlock-plan') ? 1 : 0 })));
+  $$('[data-product]').forEach(a => a.addEventListener('click', () => track('product_click', { id: a.dataset.product, level: (readProfile().level || 'none') })));
+  $$('form[data-nl]').forEach(f => f.addEventListener('submit', () => track('newsletter_submit', { level: (readProfile().level || 'none'), unlock: f.hasAttribute('data-unlock-plan') ? 1 : 0 })));
   // "Plan behind the story": unlock after any newsletter signup, remembered in this browser
   const unlockPlans = () => { store.set('ddr_plans', '1'); $$('[data-plan-locked]').forEach(e => e.hidden = true); $$('[data-plan-unlocked]').forEach(e => e.hidden = false); };
   if (store.get('ddr_plans')) unlockPlans();

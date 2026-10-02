@@ -6,6 +6,7 @@ kind: guide
 category: eat
 tags: [bones, calcium, vitamin-d, beginner]
 segments: [restarter, mover, carer]
+level: any
 hook: "Calcium builds bone and vitamin D lets you absorb it. Most of both can come from an ordinary shopping basket."
 lesson: "Aim for calcium from food at every meal, get vitamin D from daylight in summer, and ask your GP about the official autumn-and-winter guidance."
 standfirst: "Your skeleton is living tissue, and after 50 it needs feeding as deliberately as your muscles do. Here is what the UK and US guidance says about calcium and vitamin D, and which everyday foods actually carry them."
@@ -14,6 +15,10 @@ try_this:
   - "Pick one calcium-rich food from the table and put it in a meal where it was missing — yoghurt at breakfast, sardines at lunch, a glass of milk with dinner."
   - "Spend twenty minutes outside in daylight with your forearms uncovered, if the weather allows — a walk counts."
   - "Read the NHS vitamin D page and, if you are in the UK, note what it says about autumn and winter; raise it at your next GP appointment."
+try_this_plus:
+  - "Keep a seven-day food diary and total your calcium each day against the table, then fix the two lowest days."
+  - "Add two sessions a week of loaded, weight-bearing work such as squats, deadlifts and stair climbing with a pack, alongside what you already eat."
+  - "Build a week of dinners where every meal carries a calcium food and an oily fish or egg, and cook it in full."
 sources:
   - {title: "Calcium — Vitamins and minerals", publisher: "NHS", date: "2024", url: "https://www.nhs.uk/conditions/vitamins-and-minerals/calcium/"}
   - {title: "Vitamin D — Vitamins and minerals", publisher: "NHS", date: "2024", url: "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"}

@@ -91,3 +91,9 @@ body.in-session .tabs{display:none}
 .install{border:2px dashed var(--line);background:transparent;box-shadow:none}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 .fade{animation:fade .25s ease}@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+
+/* about you */
+.picks{display:flex;flex-wrap:wrap;gap:10px}.picks.col{flex-direction:column}
+.pick{font:inherit;text-align:left;padding:12px 16px;border-radius:14px;border:2px solid var(--line);background:#fff;color:inherit;min-height:52px;display:grid;gap:2px;cursor:pointer}
+.pick span{font-size:.85em;opacity:.7}
+.pick[aria-pressed="true"]{border-color:#0B6E4F;background:#e8f3ee}

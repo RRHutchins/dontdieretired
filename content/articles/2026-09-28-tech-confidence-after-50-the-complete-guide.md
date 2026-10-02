@@ -7,6 +7,7 @@ pillar: true
 category: tech
 tags: [phones, scams, passwords, video-calls, beginner, safety]
 segments: [learner, carer, restarter]
+level: any
 hook: "You cannot break your phone by tapping the wrong thing. Here is the confident, scam-proof way to use it."
 lesson: "Fix five settings, protect your email, learn the scam patterns and set one weekly video call — the rest follows."
 standfirst: "Most people over 50 use a smartphone every day and still feel one wrong tap from disaster. This guide is the calm version: what actually matters, what to ignore, and where to get free help."
@@ -15,6 +16,10 @@ try_this:
   - "Turn on two-step verification for your email account today — it is the one account that unlocks all the others."
   - "Make your phone's text size one notch bigger and add one emergency contact to your Medical ID (iPhone) or Safety app (Android)."
   - "Save the number 159 (UK) or your bank's card-back number in your contacts under 'BANK — call back', so the hang-up-and-call-back rule is easy."
+try_this_plus:
+  - "Set up automatic backups for your phone, photos and computer to two separate places and test restoring one file from each."
+  - "Audit every app's permissions for location, microphone, camera and contacts, and remove any app you have not opened in six months."
+  - "Become the person who helps by volunteering for a session at a local digital-skills drop-in or library."
 sources:
   - {title: "Three random words or #thinkrandom", publisher: "National Cyber Security Centre", date: "2016", url: "https://www.ncsc.gov.uk/blog-post/three-random-words-or-thinkrandom-0"}
   - {title: "Turn on 2-step verification (2SV)", publisher: "National Cyber Security Centre", date: "n.d.", url: "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/activate-2-step-verification-on-your-email"}

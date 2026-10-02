@@ -45,14 +45,14 @@
 {% if guides %}
 <section>
   <div class="section-head"><h2>Guides</h2><span class="meta">{{ guides|length + (1 if pillar else 0) }} practical guides, every figure sourced</span></div>
-  <div class="grid grid-3">{% for a in guides %}{{ card(a) }}{% endfor %}</div>
+  <div class="grid grid-3" data-personalise>{% for a in guides %}{{ card(a) }}{% endfor %}</div>
 </section>
 {% endif %}
 
 {% if stories %}
 <section>
   <div class="section-head"><h2>{{ 'Stories' if cid != 'stories' else 'All stories' }}</h2></div>
-  <div class="grid grid-3">{% for a in stories %}{{ card(a) }}{% endfor %}</div>
+  <div class="grid grid-3" data-personalise>{% for a in stories %}{{ card(a) }}{% endfor %}</div>
 </section>
 {% endif %}
 

@@ -5,6 +5,8 @@ date: 2026-09-28
 category: earn
 tags: [business, purpose, changer, women, creativity, outdoors]
 segments: [changer, learner]
+level: any
+subject_age: 51
 hook: "Natalie Brock left teaching at 51 to grow flowers on a neglected quarter-acre. It now pays the family's bills."
 lesson: "If you have ten working years left, spend them on something you actually love — and start it small, alongside the day job."
 standfirst: "Natalie Brock spent more than a decade in South Australian classrooms. On her 51st birthday she took her own advice and started a flower farm among the family's vines. When a frost wrecked the grape crop, the flowers became the business that kept them going."
@@ -13,6 +15,10 @@ try_this:
   - "Write down the one thing you would do for the next ten years if money were not the first question. Then write the smallest paid version of it — one stall, one client, one weekend."
   - "Test it before you leave anything. Sell ten of whatever it is — bunches, hours, lessons — to people who are not your friends, and see whether they come back."
   - "Find a local growers' market, craft fair or community centre and ask what a pitch costs for one Saturday. The number is usually smaller than you fear."
+try_this_plus:
+  - "Write a one-page plan with 12 months of projected sales and costs for your sideline, then compare it with your actual figures each month."
+  - "Secure three regular wholesale or subscription customers so that part of your income is committed before each season starts."
+  - "Add a second income line from the same land or skill, such as workshops or events, and test it with one paid pilot."
 sources:
   - {title: "Teacher-turned-florist proves it's never too late for a career change", publisher: "ABC News (Australia)", date: "14 January 2025", url: "https://www.abc.net.au/news/2025-01-14/teacher-turned-florist-natalie-brock-career-change/104796014"}
 ---

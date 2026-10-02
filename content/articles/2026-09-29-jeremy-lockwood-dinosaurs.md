@@ -5,6 +5,8 @@ date: 2026-09-29
 category: explore
 tags: [science, nature, learning, outdoors, men, beginner]
 segments: [learner, restarter, carer]
+level: any
+subject_age: 68
 local: fossil-hunting
 hook: "Jeremy Lockwood retired as a GP, started a PhD and found three new dinosaurs in boxes nobody had looked at properly."
 lesson: "The thing you loved at ten is a perfectly good thing to pick up at sixty — and the beach is open every day."
@@ -14,6 +16,10 @@ try_this:
   - "Never picked up a fossil? Book a two-hour guided beach walk. Dinosaur Isle runs them from Yaverland on the Isle of Wight (£7 adult, about $9, no tools needed); the Jurassic Coast in Dorset and many US state parks with fossil beds offer something similar."
   - "Spend the two hours a week the research points to outdoors, looking at something specific: pick a beach, a hedge or a patch of sky and go back to the same spot four weeks running."
   - "Ask what is hiding in plain sight near you. Your local museum, Wildlife Trust, Audubon chapter or Master Naturalist programme has drawers, records and surveys that need patient people. Ask if you can help."
+try_this_plus:
+  - "Volunteer with a museum's collections team and commit to a regular half-day a week cataloguing or preparing specimens."
+  - "Enrol on a university-level short course or part-time master's in palaeontology or earth sciences and complete the assessed work."
+  - "Choose one local site or collection, record it systematically for a year, and submit your findings to a recording scheme or society journal."
 sources:
   - {title: "Retired GP discovers three new dinosaur species on the Isle of Wight", publisher: "Isle of Wight Radio", date: "5 November 2025", url: "https://www.iwradio.co.uk/news-post/retired-gp-discovers-three-new-dinosaur-species-on-the-isle-of-wight"}
   - {title: "New sail-backed dinosaur species unearthed from Isle of Wight fossils", publisher: "Natural History Museum", date: "22 August 2025", url: "https://www.nhm.ac.uk/discover/news/2025/august/new-sail-backed-dinosaur-species-unearthed-isle-of-wight.html"}

@@ -5,6 +5,8 @@ date: 2026-09-22
 category: move
 tags: [strength, beginner, competition, men, health]
 segments: [restarter, mover]
+level: active
+subject_age: 82
 hook: "Ravi Sood took up weightlifting at 70 to strengthen his legs before double knee replacement. At 82 he holds the Australian deadlift record for his class."
 lesson: "Training for a medical reason — 'prehab' before surgery — can turn into a passion, and a national record."
 standfirst: "The Canberra pensioner's surgeon told him that strong muscles would make his knee operations easier. He took the advice further than anyone expected."
@@ -13,6 +15,10 @@ try_this:
   - "If you have an operation or a diagnosis coming, ask your consultant one question: 'What exercise would make this go better?' Then do it."
   - "Book a single session with a physiotherapist or qualified trainer who works with over-60s and ask them to teach you three strength movements."
   - "Do those three movements twice this week. Write down the weight or the reps. Next week, add one."
+try_this_plus:
+  - "Enter a masters powerlifting meet held within the next six months and train the squat, bench press and deadlift to competition standard."
+  - "Book a qualified powerlifting coach for a technique review and a 12-week programme built around five sets of three on the deadlift."
+  - "Test a true one-rep maximum on all three lifts under supervision and compare your total with the masters qualifying standards for your federation."
 sources:
   - {title: "Powerlifting champion, aged 82, ready to represent Australia", publisher: "ABC News (Australia)", date: "9 October 2025", url: "https://www.abc.net.au/news/2025-10-09/powerlifting-champion-aged-82-and-ready-to-represent-australia/105868066"}
 ---

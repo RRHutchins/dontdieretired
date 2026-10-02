@@ -6,6 +6,7 @@ kind: guide
 category: move
 tags: [swimming, cycling, low-impact, joints, e-bikes, beginner]
 segments: [restarter, mover]
+level: starter
 hook: "Knees complaining about running? Water and wheels carry your weight for you. Here is how to start, even from zero."
 lesson: "Pick the one you can get to easily, book a lesson if you need one, and build towards 150 minutes a week."
 standfirst: "If walking hurts or running is out of the question, swimming and cycling let you work your heart and lungs without pounding your joints. Both can be learnt at any age, and both count fully towards the activity guidelines."
@@ -14,6 +15,10 @@ try_this:
   - "Look up your nearest pool's adult lane-swim or adult-lessons timetable and put one session in the diary."
   - "Get the old bike out of the shed, pump the tyres, and ride round the block once — or book a 30-minute e-bike test ride at a local shop."
   - "Count how many minutes of moderate activity you did last week. That is your starting line, whatever the number."
+try_this_plus:
+  - "Join a masters swim squad and build up to a continuous 1,500 metres, then enter a 1.5 km open-water swim this season."
+  - "Enter a 100 km sportive dated three to four months away and build your long ride by 10 km each week."
+  - "Add one interval session a week in each sport, such as eight repeats of 100 metres hard or five four-minute hill efforts."
 sources:
   - {title: "UK Chief Medical Officers' physical activity guidelines", publisher: "Gov.uk", date: "2019", url: "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines"}
   - {title: "Physical activity guidelines for older adults", publisher: "NHS", date: "2024", url: "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-older-adults/"}

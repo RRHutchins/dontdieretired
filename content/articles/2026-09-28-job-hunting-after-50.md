@@ -6,6 +6,7 @@ kind: guide
 category: earn
 tags: [job-search, cv, resume, age-discrimination, employers, equality-act, adea]
 segments: [changer, restarter]
+level: any
 hook: "The law is on your side at 40 in the US and at any age in the UK. Your CV just needs to stop volunteering your birth year."
 lesson: "Trim the CV to the last ten years, know the two laws that protect you, and look first at employers who have publicly signed up to hiring over-50s."
 standfirst: "Looking for work in your fifties or sixties is a different game from the one you played at 30, but it is a game with rules. Here they are: what goes on the CV, what the law says, and which employers have put their names to hiring people your age."
@@ -14,6 +15,10 @@ try_this:
   - "Cut your CV to the last ten years of experience and delete every graduation date."
   - "Search the Centre for Ageing Better's list of Age-friendly Employer Pledge signatories (UK) or filter the AARP Job Board by pledge employers (US)."
   - "Rewrite the top three lines of your CV to answer the question 'what problem do I solve?'"
+try_this_plus:
+  - "Arrange five informational interviews with people in your target sector this month and ask each one for two further introductions."
+  - "Rewrite your CV into three tailored versions for three specific roles, each leading with measurable results from the past five years."
+  - "Record a mock competency interview on video, review it with a former colleague, and redo your three weakest answers."
 sources:
   - {title: "CV sections", publisher: "National Careers Service (Gov.uk)", date: "2026", url: "https://nationalcareers.service.gov.uk/careers-advice/cv-sections"}
   - {title: "How to age-proof your résumé for today's job market", publisher: "AARP", date: "30 January 2026", url: "https://www.aarp.org/work/job-search/age-proof-resume-tips/"}

@@ -6,6 +6,7 @@ kind: guide
 category: earn
 tags: [business, changer, purpose, startup, self-employed]
 segments: [changer, learner]
+level: any
 hook: "The advantages of starting a business after 50 are real: experience, a network, some capital, and patience."
 lesson: "Test the idea on real paying customers before you spend anything you would miss, then register and make the first 90 days about selling."
 standfirst: "The stereotype of the founder is 26 and sleeping under a desk. In practice, the person with three decades of judgement, contacts and a bit of savings has a head start — provided they test before they spend."
@@ -14,6 +15,10 @@ try_this:
   - "Describe your business idea in one sentence to three people who would actually buy it — not family — and write down the first question each of them asks."
   - "Sell one unit of the thing (an hour, a batch, a session, a sample) for real money before you spend anything on branding, premises or stock."
   - "Read the Gov.uk sole trader page (UK) or the IRS 'Choose a business structure' publication (US) so you know what registering will involve before you need to do it."
+try_this_plus:
+  - "Write a 12-month cash-flow forecast with a best, expected and worst case, and update it with actual figures every month."
+  - "Find ten paying customers who are not friends or family and interview each one about why they bought."
+  - "Document your three core processes so that someone else could run them, then hand one over to a contractor for a month."
 sources:
   - {title: "Set up as a sole trader", publisher: "Gov.uk", date: "accessed 28 September 2026", url: "https://www.gov.uk/set-up-sole-trader"}
   - {title: "Starting a new business? Choose a business structure (Publication 5868)", publisher: "Internal Revenue Service", date: "October 2023", url: "https://www.irs.gov/pub/irs-pdf/p5868.pdf"}

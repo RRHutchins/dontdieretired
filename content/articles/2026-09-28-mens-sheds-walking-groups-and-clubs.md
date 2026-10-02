@@ -6,6 +6,7 @@ kind: guide
 category: connect
 tags: [mens-sheds, parkrun, ramblers, u3a, clubs, volunteering, loneliness]
 segments: [restarter, carer]
+level: any
 hook: "Friendship after 50 rarely happens by accident. It happens at 9am on a Saturday in a park, or on a Tuesday in a shed."
 lesson: "Pick one ready-made group that meets every week, turn up twice, and let regularity do the work."
 standfirst: "The clubs that work for making friends later in life have three things in common: they meet often, they have a job to do, and nobody minds a newcomer. Here are the ones with proven form, in the UK and the US, and how to survive the first visit."
@@ -14,6 +15,10 @@ try_this:
   - "Find your nearest parkrun, Ramblers group or Men's Shed on the relevant website and note the day and time."
   - "Go once this week and stay for the coffee afterwards."
   - "Put the same session in the diary for next week before you leave."
+try_this_plus:
+  - "Train as a walk leader or run director and lead a session for your group at least once a month."
+  - "Take on a committee role, such as treasurer or secretary, at a club you already attend and serve a full year."
+  - "Start a new group where none exists, find a venue, set a weekly time, and run the first six sessions yourself."
 sources:
   - {title: "What is a Men's Shed?", publisher: "UK Men's Sheds Association", date: "2026", url: "https://menssheds.org.uk/about/what-is-a-mens-shed/"}
   - {title: "US Men's Shed Association", publisher: "US Men's Shed Association", date: "2026", url: "https://usmenssheds.org/"}

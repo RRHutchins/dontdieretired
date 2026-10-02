@@ -6,6 +6,7 @@ kind: guide
 category: eat
 tags: [hydration, alcohol, beginner, mindset]
 segments: [restarter, carer, mover]
+level: any
 hook: "After 50 your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough."
 lesson: "Drink on a routine rather than on thirst, know what a unit or a standard drink is, and keep several alcohol-free days a week."
 standfirst: "Two quiet changes after 50: you feel thirst less reliably, and alcohol hits harder. Here is what the NHS, the British Dietetic Association and the US guidelines say, and the habits that make it easy."
@@ -14,6 +15,10 @@ try_this:
   - "Pick three fixed 'drink points' in your day — with breakfast, with any tablets, and mid-afternoon — and have a full glass at each."
   - "Count your alcohol units for one ordinary week using the NHS figures, without changing anything. Just find out."
   - "Choose two days this week that will be alcohol-free, and decide now what you will drink instead."
+try_this_plus:
+  - "Weigh yourself before and after a hard one-hour training session to estimate your sweat loss, and plan your fluids for long sessions from that figure."
+  - "Complete a full alcohol-free month and record your sleep, resting heart rate and training quality each week."
+  - "Write a hydration plan for your next event or long hike, with set drinking points every 20 minutes and a way to carry enough."
 sources:
   - {title: "Hydration in older adults", publisher: "British Dietetic Association", date: "December 2022", url: "https://www.bda.uk.com/resource/hydration-in-older-adults.html"}
   - {title: "Nutrition for Older Adults", publisher: "MedlinePlus (US National Library of Medicine)", date: "updated 13 March 2024", url: "https://medlineplus.gov/nutritionforolderadults.html"}

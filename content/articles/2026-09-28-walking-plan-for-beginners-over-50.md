@@ -6,6 +6,7 @@ kind: guide
 category: move
 tags: [walking, beginner, plan, community]
 segments: [restarter, carer]
+level: starter
 hook: "From ten minutes a day to a proper half-hour walk in eight weeks — no kit, no gym, no heroics."
 lesson: "Walk a little most days, add a few minutes each week, and let the pace come to you."
 standfirst: "Walking is the exercise almost everyone can start today. This plan takes you from ten minutes to thirty-plus, at a pace that counts, without wrecking your knees or your enthusiasm."
@@ -14,6 +15,10 @@ try_this:
   - "Do the Week 1 walk today: ten minutes out of the door and back, at a pace where you can talk but not sing."
   - "Look up a Ramblers Wellbeing Walk (UK) or ask your local library or community centre (US) about walking groups this week."
   - "Check the shoes you would walk in. If they rub, pinch or have no grip, that is your one purchase."
+try_this_plus:
+  - "Enter an organised challenge walk of 40 km or more dated three to four months away and build your long walk by 5 km a fortnight."
+  - "Add one hill session a week of six repeats up a steep five-minute climb, carrying a pack of around 8 kg."
+  - "Walk a hilly 25 km route against the clock, record your time, and repeat it monthly to measure progress."
 sources:
   - {title: "Walking for health", publisher: "NHS", date: "15 December 2022", url: "https://www.nhs.uk/live-well/exercise/walking-for-health/"}
   - {title: "Physical activity guidelines for older adults", publisher: "NHS", date: "15 August 2024", url: "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-older-adults/"}

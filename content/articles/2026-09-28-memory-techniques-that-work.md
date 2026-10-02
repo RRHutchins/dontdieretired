@@ -6,6 +6,7 @@ kind: guide
 category: think
 tags: [memory, learning, study, sleep, technique]
 segments: [learner, changer]
+level: any
 hook: "Rereading and highlighting barely work. Testing yourself, spacing it out and sleeping on it do — at 25 or 75."
 lesson: "Test yourself instead of rereading, space the sessions out, and protect the night's sleep after you learn."
 standfirst: "These are study techniques, not medical treatments. They will help you learn a language, a score or a syllabus. They will not fix a memory problem that is worrying you — that is a conversation for your GP."
@@ -14,6 +15,10 @@ try_this:
   - "Take whatever you are learning, close the book, and write down everything you can remember for five minutes. Then check. That is retrieval practice."
   - "Move tonight's study to the morning and tomorrow's to the evening, so there is a night's sleep between them."
   - "Build a memory palace out of your own hallway and put the week's shopping list in it. Test it in the shop."
+try_this_plus:
+  - "Memorise a shuffled pack of 52 cards using a memory palace and time yourself weekly until you can do it in under ten minutes."
+  - "Build a spaced-repetition deck of 500 cards for a subject you are studying and review it daily for 90 days."
+  - "Learn a 40-line poem or speech by retrieval practice alone and recite it to an audience from memory."
 sources:
   - {title: "Strengthening the Student Toolbox: Study Strategies to Boost Learning", publisher: "American Educator (Dunlosky)", date: "2013", url: "https://www.aft.org/ae/fall2013/dunlosky"}
   - {title: "Sleep On It", publisher: "NIH News in Health", date: "2013", url: "https://newsinhealth.nih.gov/2013/04/sleep-it"}

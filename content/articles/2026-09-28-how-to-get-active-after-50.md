@@ -7,6 +7,7 @@ pillar: true
 category: move
 tags: [beginner, walking, strength, balance, mindset]
 segments: [restarter, carer]
+level: starter
 hook: "Four types of movement, one honest starting point, and the official guidelines in plain English."
 lesson: "Start with ten minutes of something you can do today, then add strength and balance twice a week."
 standfirst: "Whether you have not exercised since school or you are simply out of the habit, this is the whole picture: what the guidelines actually say, where to begin, and how to keep going."
@@ -15,6 +16,10 @@ try_this:
   - "Walk briskly for ten minutes today — fast enough that you can talk but not sing. That is the whole task."
   - "Stand up from a chair and sit back down five times, slowly, without using your hands. Do it twice this week."
   - "Pick one day next week and write it in your diary as 'movement'. Ten minutes counts."
+try_this_plus:
+  - "Audit your week against all four activity types and add a session for whichever one you train least."
+  - "Enter a dated event three to six months away, such as a 10 km race, a 100 km ride or a hill-walking challenge, and train towards it."
+  - "Add 75 minutes of vigorous work a week, such as hill repeats or intervals, on top of your existing routine and track it for eight weeks."
 sources:
   - {title: "Physical activity guidelines for older adults", publisher: "NHS", date: "15 August 2024", url: "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-older-adults/"}
   - {title: "UK Chief Medical Officers' physical activity guidelines", publisher: "Gov.uk", date: "2019, updated 10 July 2026", url: "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines"}

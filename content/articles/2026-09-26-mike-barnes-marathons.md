@@ -5,6 +5,8 @@ date: 2026-09-26
 category: move
 tags: [running, endurance, purpose, grief, men]
 segments: [mover, restarter]
+level: advanced
+subject_age: 74
 hook: "Retired headteacher Mike Barnes started running at 70. This spring, at 74, he ran Brighton, Manchester and London in about two weeks."
 lesson: "A purpose bigger than yourself — a cause, a person — can carry you through the first hard months of a new sport."
 standfirst: "Mike Barnes, a retired primary headteacher from Goosnargh near Preston, had never been a runner. Then his eldest daughter died, and he found a reason."
@@ -13,6 +15,10 @@ try_this:
   - "Pick a cause. Not a vague one — a charity, a person, a place. Write it on the inside of your wrist for your first walk-run."
   - "Try the simplest starter session there is: walk 4 minutes, jog 1 minute, repeat five times. Three times this week."
   - "Find your nearest parkrun (free, every Saturday, all paces welcome). Go and walk it. You'll see plenty of people your age."
+try_this_plus:
+  - "Enter a marathon dated five to six months away and follow a 16-week plan that builds your long run to 32 km."
+  - "Join a running club and do one coached interval session a week, such as six repeats of 800 metres at 10 km pace."
+  - "Set up a fundraising page for a cause that matters to you and commit publicly to a finish-time target."
 sources:
   - {title: "'I'm 74 and running 3 marathons in a month in tribute to my daughter'", publisher: "Lancashire Evening Post", date: "15 April 2026", url: "https://www.lep.co.uk/news/im-74-and-running-3-marathons-in-a-month-in-tribute-to-my-daughter-6576589"}
   - {title: "Started running at 70 after daughter's death", publisher: "BBC North West, via AOL", date: "April 2026", url: "https://www.aol.com/news/started-running-70-daughters-death-052241789.html"}

@@ -6,6 +6,7 @@ kind: guide
 category: eat
 tags: [cooking, budget, beginner, community]
 segments: [restarter, carer, changer]
+level: any
 hook: "Cooking for one is not a smaller version of cooking for four. It's a different job — and it's easier once you treat it that way."
 lesson: "Cook in batches, stock a small set of staples, build meals from components, and eat with other people when you can."
 standfirst: "A proper meal for one every night feels like too much effort for too little reward — so people stop bothering. Here is a way of running a small kitchen that takes less work, wastes less food and doesn't get dull."
@@ -14,6 +15,10 @@ try_this:
   - "Cook double of whatever you make on Sunday and freeze half in single portions, labelled with the name and date."
   - "Write a standing shopping list of your ten staples and stick it inside a cupboard door. Restock from it, not from memory."
   - "Invite one person to eat with you this week — or take a portion of what you batch-cooked round to a neighbour."
+try_this_plus:
+  - "Plan a four-week rotating menu using the component approach, with three base components cooked on Sunday and turned into five different dinners."
+  - "Learn one new technique each month, such as braising, making stock or baking bread, and cook it three times until it is routine."
+  - "Host a monthly supper for four to six people and cook a three-course menu you have not made before."
 sources:
   - {title: "Healthy eating guide", publisher: "Age UK", date: "updated 25 August 2026", url: "https://www.ageuk.org.uk/information-advice/health-wellbeing/healthy-eating/healthy-eating-guide/"}
   - {title: "Healthy Eating", publisher: "British Dietetic Association", date: "September 2024", url: "https://www.bda.uk.com/resource/healthy-eating.html"}

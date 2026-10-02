@@ -6,6 +6,7 @@ kind: guide
 category: think
 tags: [language, learning, memory, habit, beginner]
 segments: [learner, changer]
+level: any
 hook: "Adults learn languages differently, not worse. Twenty minutes a day, spaced and spoken, gets you further than you think."
 lesson: "Fix a daily 20-minute slot, use spaced repetition, and start speaking in week one."
 standfirst: "The idea that language learning shuts down after childhood is mostly myth. What adults need is a method that suits adults — and a plan short enough to survive."
@@ -14,6 +15,10 @@ try_this:
   - "Choose the language and write down one sentence about why: the place, the person, the film. Stick it where you will see it."
   - "Put a 20-minute slot in the diary for the next seven days, same time each day, and do the first one today."
   - "Say ten words out loud in the new language before you go to bed tonight. Badly is fine."
+try_this_plus:
+  - "Book a weekly conversation exchange and hold 15 minutes entirely in the language, with no English at any point."
+  - "Read one full novel in the language, noting ten new words per chapter and reviewing them with spaced repetition."
+  - "Register for a recognised proficiency exam one level above where you are now and work through two past papers under timed conditions."
 sources:
   - {title: "Why it's never too late to learn a language as an adult", publisher: "National Geographic", date: "2023", url: "https://www.nationalgeographic.com/science/article/second-language-learning-adult-benefits"}
   - {title: "Strengthening the Student Toolbox: Study Strategies to Boost Learning", publisher: "American Educator (Dunlosky)", date: "2013", url: "https://www.aft.org/ae/fall2013/dunlosky"}

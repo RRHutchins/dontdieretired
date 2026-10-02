@@ -6,6 +6,7 @@ kind: guide
 category: money
 tags: [pensions, retirement, 401k, lost-pensions, beginner]
 segments: [restarter, changer, carer]
+level: any
 hook: "That job you left in 1998 may still be holding money with your name on it. Here is how to find it, for free."
 lesson: "List every employer, run the official tracing services, then decide about combining pots slowly and only after checking what you'd lose."
 standfirst: "Most people over 50 have had more jobs than they have pension statements. The UK and US both run free official services to help you track old pots down, and there is a right order to do it in."
@@ -14,6 +15,10 @@ try_this:
   - "Write a list of every employer you have ever had, with rough start and end dates, even the six-month ones."
   - "Run the Pension Tracing Service (UK) or the Retirement Savings Lost and Found (US) for the first three employers on your list."
   - "For every pot you find, write down the provider, a rough value, and whether it has any guarantees attached, before you decide anything."
+try_this_plus:
+  - "Put every pot you have traced into one spreadsheet with its value, charges, guarantees and retirement date, and update it yearly."
+  - "Request a transfer value and a full charges statement from each provider and compare them side by side."
+  - "Check that the nominated beneficiary form on every pension and retirement account is current, and update any that are out of date."
 sources:
   - {title: "Find pension contact details (Pension Tracing Service)", publisher: "Gov.uk", date: "2026", url: "https://www.gov.uk/find-pension-contact-details"}
   - {title: "Tracing and finding lost pensions", publisher: "MoneyHelper", date: "2026", url: "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/tracing-and-finding-lost-pensions"}

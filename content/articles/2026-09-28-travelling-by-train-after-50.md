@@ -6,6 +6,7 @@ kind: guide
 category: travel
 tags: [trains, slow-travel, interrail, eurail, amtrak, railcard, sleeper-trains, budget]
 segments: [restarter, mover, learner]
+level: any
 hook: "Over 60? There's a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work."
 lesson: "Claim the age-based rail discounts, do the sums on a pass versus advance tickets, and use a sleeper to turn a travel day into a night's sleep."
 standfirst: "Trains put you in the middle of the city, rested, with your luggage, and turn the journey into part of the trip. This article explains the rail passes and discounts open to people over 50 in Europe, the UK and the US, and how sleeper trains work."
@@ -14,6 +15,10 @@ try_this:
   - "If you are in the UK and 60 or over, price your next two rail journeys with and without a Senior Railcard."
   - "Choose one overnight route — London to Scotland, Vienna to Venice, Chicago to the west coast — and read the official sleeper page."
   - "For any journey over four hours, plan to get up and walk the corridor every hour."
+try_this_plus:
+  - "Plan a three-week point-to-point rail trip across at least five countries on a single pass, with seat reservations booked for each leg."
+  - "Build an itinerary that links three sleeper trains in a row and time the connections so that no daytime travel is needed."
+  - "Cross a continent by rail in one journey, such as coast to coast or north to south, and plan two stopovers of two nights each."
 sources:
   - {title: "Interrail Global Pass", publisher: "Interrail", date: "accessed September 2026", url: "https://www.interrail.com/en/interrail-passes/global-pass"}
   - {title: "Eurail Global Pass", publisher: "Eurail (interrail.com international site)", date: "accessed September 2026", url: "https://www.interrail.com/en-int/interrail-passes/global-pass"}

@@ -5,7 +5,9 @@ Claude fills in the body, quotes and sources from verified reporting, then runs 
 """
 import argparse, datetime as dt, re, pathlib
 ap = argparse.ArgumentParser()
-ap.add_argument("title"); ap.add_argument("--category", required=True, choices=["move","think","earn","connect","stories","explore"])
+ap.add_argument("title"); ap.add_argument("--category", required=True, choices=["move","eat","think","money","earn","connect","travel","tech","explore","stories"])
+ap.add_argument("--level", default="any", choices=["starter","active","advanced","any"], help="who the practical advice is pitched at")
+ap.add_argument("--age", default="", help="age of the person in the story, if there is one")
 ap.add_argument("--tags", default=""); ap.add_argument("--segments", default="")
 ap.add_argument("--date", default=dt.date.today().isoformat())
 a = ap.parse_args()
@@ -28,11 +30,16 @@ date: {a.date}
 category: {a.category}
 tags: [{a.tags}]
 segments: [{a.segments}]
-hook: ""
+level: {a.level}
+{("subject_age: " + a.age + chr(10)) if a.age else ""}hook: ""
 lesson: ""
 standfirst: ""
 summary: ""
 try_this:
+  - ""
+  - ""
+  - ""
+try_this_plus:
   - ""
   - ""
   - ""

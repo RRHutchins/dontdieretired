@@ -6,6 +6,7 @@ kind: guide
 category: earn
 tags: [career, returners, changer, restarter, learning, CV]
 segments: [restarter, changer, carer]
+level: any
 hook: "Returnships are real, the gap is easier to explain than you think, and the free training routes are better than most people know."
 lesson: "Treat the return as a project: a rewritten CV, one honest line about the break, three practice interviews and one short course."
 standfirst: "Caring, illness, redundancy or simply a pause — a career break in your fifties or sixties does not close the door. Here is how to walk back through it, with the programmes and free courses that exist to help."
@@ -14,6 +15,10 @@ try_this:
   - "Rewrite the top third of your CV (résumé) so the first thing a reader sees is what you can do now, not the date you last worked."
   - "Write and say aloud one plain sentence about your break — what you did, and that you are ready to return — until it sounds like you."
   - "Search the National Careers Service course finder (UK) or your nearest community college (US) for one short course that fills your most obvious gap, and enquire about the next start date."
+try_this_plus:
+  - "Apply to three structured returner programmes this quarter and tailor each application to the role description."
+  - "Complete one recognised certification in your field within 12 weeks and add a finished project to your CV as proof."
+  - "Take on a paid short contract or a defined pro bono project to produce a recent, named reference."
 sources:
   - {title: "Returner Programmes: Best Practice Guidance for Employers", publisher: "Government Equalities Office", date: "March 2018", url: "https://assets.publishing.service.gov.uk/media/5a992dfc40f0b67aa5087d3f/Returner_Programmes_-_Best_Practice_Guidance_for_Employers.pdf"}
   - {title: "Skills Bootcamps", publisher: "JobHelp, Gov.uk", date: "accessed 28 September 2026", url: "https://jobhelp.campaign.gov.uk/skills-bootcamps/"}

@@ -6,6 +6,7 @@ kind: guide
 category: move
 tags: [strength, beginner, home, sarcopenia]
 segments: [restarter, mover]
+level: starter
 hook: "Muscle drifts away from your thirties onward unless you push back. Two short sessions a week is the push."
 lesson: "Learn six movements, do them twice a week, and add a little each fortnight."
 standfirst: "Walking keeps your heart going. Strength keeps you getting out of chairs, carrying shopping and living in your own home. Here is the why, and a no-kit way to begin."
@@ -14,6 +15,10 @@ try_this:
   - "Do five slow sit-to-stands from a dining chair, rest a minute, then do five more. That is your first strength session."
   - "Do ten wall press-ups against the kitchen wall, hands at shoulder height, twice this week."
   - "Pick two days on the calendar — say Tuesday and Friday — and write 'strength, 15 min' on both."
+try_this_plus:
+  - "Move to a barbell programme of three sessions a week built on squat, deadlift, press and row, working in sets of five."
+  - "Book a qualified strength coach to check your technique on the main lifts, then add weight every week for 12 weeks."
+  - "Work towards a deadlift equal to your own body weight for five repetitions and ten strict press-ups in one set."
 sources:
   - {title: "Slowing Sarcopenia", publisher: "NIH News in Health (National Institutes of Health)", date: "April 2025", url: "https://newsinhealth.nih.gov/2025/04/slowing-sarcopenia"}
   - {title: "Preserve your muscle mass", publisher: "Harvard Health Publishing", date: "19 February 2016", url: "https://www.health.harvard.edu/staying-healthy/preserve-your-muscle-mass"}

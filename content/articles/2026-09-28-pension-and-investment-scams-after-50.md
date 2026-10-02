@@ -6,6 +6,7 @@ kind: guide
 category: money
 tags: [scams, pensions, fraud, safety, beginner]
 segments: [restarter, carer, changer]
+level: any
 hook: "A pension cold call is illegal in the UK. That single fact stops most pension scams before they start."
 lesson: "Hang up on unexpected contact, check the firm on the official register yourself, and if you've already paid, act within hours, not days."
 standfirst: "People over 50 are targeted because they have pensions and savings worth stealing. The FCA, FTC and MoneyHelper have published exactly how these scams work and what to do. Here it is in plain English."
@@ -14,6 +15,10 @@ try_this:
   - "Save the FCA Firm Checker (UK) or Investor.gov (US) as a bookmark so the check is one click when a call comes."
   - "Agree with someone you trust that you'll never move pension or investment money without telling them first."
   - "If you've had an unexpected pension call, email or text this month, report it now; it takes ten minutes."
+try_this_plus:
+  - "Check every firm and adviser you already deal with against the official register and note their reference numbers in your records."
+  - "Ask for the full charges and the underlying holdings of each investment you own and question anything you cannot explain in a sentence."
+  - "Give a short talk on the warning signs to a club or community group, using the official checklists from the article."
 sources:
   - {title: "Protect yourself from scams (ScamSmart)", publisher: "FCA", date: "2026", url: "https://www.fca.org.uk/scamsmart"}
   - {title: "Pension scams", publisher: "FCA", date: "2026", url: "https://www.fca.org.uk/consumers/pension-scams"}

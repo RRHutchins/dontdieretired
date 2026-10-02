@@ -5,6 +5,8 @@ date: 2026-09-27
 category: stories
 tags: [strength, beginner, competition, women, mindset]
 segments: [restarter, mover]
+level: active
+subject_age: 65
 hook: "Martine Barons has just won her third world powerlifting title. She lifted her first barbell in lockdown."
 lesson: "Strength training started in your sixties can rebuild your body faster than you think — say yes to the first invitation."
 standfirst: "Martine Barons is an academic at the University of Warwick. Until 2020 she had never lifted a weight in her life. This month she won her third world powerlifting title."
@@ -13,6 +15,10 @@ try_this:
   - "Stand up from a chair five times without using your hands. Do it twice today. That is a squat."
   - "Find a gym or community centre offering a beginners' strength class for over-50s. Book one session — not a membership."
   - "Watch a ten-minute video on how to deadlift a light kettlebell with a straight back, then practise the movement with an empty bag."
+try_this_plus:
+  - "Enter a novice or masters powerlifting competition within six months and learn the commands and rules for each of the three lifts."
+  - "Train the deadlift twice a week for 12 weeks, alternating heavy sets of three with lighter sets of six, and log every session."
+  - "Book a session with a powerlifting coach to film your lifts from the side and correct your bar path before you add more weight."
 sources:
   - {title: "'Deadlifting grandma: I'm a world champion'", publisher: "BBC CWR, via Yahoo Sports", date: "17 September 2026", url: "https://sports.yahoo.com/articles/deadlifting-grandma-im-world-champion-053747104.html"}
   - {title: "65-year-old grandmother crowned world champion for third time", publisher: "People", date: "26 September 2026", url: "https://sports.yahoo.com/articles/65-old-grandmother-crowned-3-213000665.html"}

@@ -6,6 +6,7 @@ kind: guide
 category: money
 tags: [budgeting, benefits, pension-credit, cost-of-living, beginner]
 segments: [restarter, carer, changer]
+level: any
 hook: "Billions in benefits go unclaimed every year. A twenty-minute check might be the best-paid work you do this month."
 lesson: "Build one honest monthly budget, run a free benefits check, then plug the two or three leaks that matter."
 standfirst: "A fixed income is not a small life. It is a life that rewards knowing exactly where the money goes, claiming what you're entitled to, and fixing the handful of bills that quietly drain the rest."
@@ -14,6 +15,10 @@ try_this:
   - "Fill in MoneyHelper's free Budget Planner with real bank statements, not guesses. Note the monthly figure it gives you."
   - "Run Age UK's benefits calculator (UK) or check your state's Medicaid site for Medicare Savings Programs (US). It takes twenty minutes."
   - "Pick the single biggest bill on your list and spend one evening finding out if it can be cheaper."
+try_this_plus:
+  - "Track every transaction for 90 days, sort the spending into ten categories, and set a reduction target for the three largest."
+  - "Build a five-year cash-flow forecast with separate lines for one-off costs such as a boiler, a car and home repairs."
+  - "Review every contract and subscription renewal date for the year ahead and diarise a comparison two weeks before each one."
 sources:
   - {title: "Budget Planner", publisher: "MoneyHelper", date: "2026", url: "https://www.moneyhelper.org.uk/en/everyday-money/budgeting/budget-planner"}
   - {title: "Work out your budget", publisher: "Citizens Advice", date: "2026", url: "https://www.citizensadvice.org.uk/debt-and-money/budgeting/budgeting/work-out-your-budget/"}

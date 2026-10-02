@@ -6,6 +6,7 @@ kind: guide
 category: earn
 tags: [freelance, consulting, changer, business, self-employed]
 segments: [changer, learner]
+level: any
 hook: "Somebody will pay for thirty years of your judgement by the day. The work is naming the problem you solve and telling ten people."
 lesson: "Package one specific problem you solve, price by the day or project rather than the hour, and get your first three clients from people who already trust you."
 standfirst: "Consulting is the fastest business to start after 50 because the product already exists — it is you. What is missing is a clear offer, a sensible price and a short list of people to tell."
@@ -14,6 +15,10 @@ try_this:
   - "Write one sentence in the form 'I help [who] to [result] when [situation]'. Rewrite it until a stranger could repeat it back to you."
   - "List ten people who know your work and would take your call. Message three of them this week to say you are available for project work and to ask who they know."
   - "Draft a one-page agreement template: scope, deliverables, dates, price, payment terms, and what happens if either side needs to stop."
+try_this_plus:
+  - "Turn your best piece of client work into a fixed-scope package with a set price and offer it to five new prospects."
+  - "Write a 600-word case study with measurable results and ask the client for a named testimonial to publish alongside it."
+  - "Pitch a talk or workshop to one industry event or trade body this quarter to reach buyers outside your existing network."
 sources:
   - {title: "Set up as a sole trader", publisher: "Gov.uk", date: "accessed 28 September 2026", url: "https://www.gov.uk/set-up-sole-trader"}
   - {title: "Age discrimination: what the law says", publisher: "Acas", date: "accessed 28 September 2026", url: "https://www.acas.org.uk/age-discrimination"}

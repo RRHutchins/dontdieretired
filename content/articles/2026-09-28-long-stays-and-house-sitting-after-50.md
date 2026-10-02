@@ -6,6 +6,7 @@ kind: guide
 category: travel
 tags: [slow-travel, long-stay, house-sitting, schengen, visas, renting-abroad, budget]
 segments: [restarter, learner, changer]
+level: any
 hook: "A month in one place costs less per day and gives you more. Here's the 90/180 rule, visa basics, house-sitting and renting abroad."
 lesson: "Count your Schengen days, check passport and entry rules early, treat a house-sit as a job with a bed attached, and verify any rental before you pay."
 standfirst: "The best trips after 50 are often the ones where you unpack once. This article covers the practicalities of staying 30 to 90 days: the Schengen 90/180 rule and new EU border systems, visa basics for UK and US travellers, how house-sitting works, and how to rent abroad without being scammed."
@@ -14,6 +15,10 @@ try_this:
   - "Count the days you have spent in the Schengen area in the last 180 and write the number down."
   - "Check your passport's issue date and expiry date against the rules for your destination."
   - "Read one house-sitting listing as if it were a job description, and list what it would ask of you each day."
+try_this_plus:
+  - "Plan a 12-month itinerary of consecutive long stays that keeps within the 90 in 180 day rule, with every entry and exit date mapped."
+  - "Apply for a long-stay visa for one country you want to live in for six months and assemble the full document pack."
+  - "Arrange a home exchange or back-to-back house sits covering three months, with written agreements and a backup plan for each."
 sources:
   - {title: "Spain: entry requirements", publisher: "GOV.UK (FCDO)", date: "accessed September 2026", url: "https://www.gov.uk/foreign-travel-advice/spain/entry-requirements"}
   - {title: "European Entry/Exit System (EES)", publisher: "GOV.UK Travel Aware (FCDO)", date: "accessed September 2026", url: "https://travelaware.campaign.gov.uk/european-entry-exit-scheme/"}
