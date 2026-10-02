@@ -1,5 +1,5 @@
 ---
-title: "Protein after 50: how much, when, and the easy ways to get it"
+title: "Protein: how much, when, and the easy ways to get it"
 slug: protein-after-50-how-much-and-where-from
 date: 2026-09-28
 kind: guide

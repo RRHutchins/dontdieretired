@@ -42,7 +42,7 @@ https://dontdieretired.com/move/walking-plan-for-beginners-over-50/?utm_source=x
 
 ## pinterest
 
-The 8-week walking plan for beginners over 50 | Walk a little most days, add a few minutes each week, and let the pace come to you. | https://dontdieretired.com/move/walking-plan-for-beginners-over-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+The 8-week walking plan for beginners | Walk a little most days, add a few minutes each week, and let the pace come to you. | https://dontdieretired.com/move/walking-plan-for-beginners-over-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

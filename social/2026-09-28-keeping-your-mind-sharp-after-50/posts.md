@@ -42,7 +42,7 @@ https://dontdieretired.com/think/keeping-your-mind-sharp-after-50/?utm_source=x&
 
 ## pinterest
 
-Keeping your mind sharp after 50: what actually works | Move, sleep, get your hearing and blood pressure checked, see people, and learn one real thing properly. | https://dontdieretired.com/think/keeping-your-mind-sharp-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Keeping your mind sharp: what actually works | Move, sleep, get your hearing and blood pressure checked, see people, and learn one real thing properly. | https://dontdieretired.com/think/keeping-your-mind-sharp-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

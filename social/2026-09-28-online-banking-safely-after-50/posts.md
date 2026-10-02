@@ -42,7 +42,7 @@ https://dontdieretired.com/tech/online-banking-safely-after-50/?utm_source=x&utm
 
 ## pinterest
 
-Online banking safely after 50: how your bank contacts you, what it never asks, and what to do if you've paid a scammer | Never move money or share a code because someone told you to on the phone. Hang up, call the bank on the number on your card (or 159 in the UK), and check the payee name matches before you pay. | https://dontdieretired.com/tech/online-banking-safely-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Online banking safely: how your bank contacts you, what it never asks, and what to do if you've paid a scammer | Never move money or share a code because someone told you to on the phone. Hang up, call the bank on the number on your card (or 159 in the UK), and check the payee name matches before you pay. | https://dontdieretired.com/tech/online-banking-safely-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

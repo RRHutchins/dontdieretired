@@ -1,5 +1,5 @@
 ---
-title: "Travelling by train after 50: passes, discounts and sleeper trains explained"
+title: "Travelling by train: passes, discounts and sleeper trains explained"
 slug: travelling-by-train-after-50
 date: 2026-09-28
 kind: guide

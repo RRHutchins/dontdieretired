@@ -1,5 +1,5 @@
 ---
-title: "Pension and investment scams aimed at people over 50: how they work and what to do if you've been contacted"
+title: "Pension and investment scams: how they work and what to do if you've been contacted"
 slug: pension-and-investment-scams-after-50
 date: 2026-09-28
 kind: guide

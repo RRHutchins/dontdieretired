@@ -1,5 +1,5 @@
 ---
-title: "Online banking safely after 50: how your bank contacts you, what it never asks, and what to do if you've paid a scammer"
+title: "Online banking safely: how your bank contacts you, what it never asks, and what to do if you've paid a scammer"
 slug: online-banking-safely-after-50
 date: 2026-09-28
 kind: guide

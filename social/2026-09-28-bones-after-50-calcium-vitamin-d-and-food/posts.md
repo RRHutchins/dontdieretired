@@ -42,7 +42,7 @@ https://dontdieretired.com/eat/bones-after-50-calcium-vitamin-d-and-food/?utm_so
 
 ## pinterest
 
-Bones after 50: calcium, vitamin D and the foods that carry them | Aim for calcium from food at every meal, get vitamin D from daylight in summer, and ask your GP about the official autumn-and-winter guidance. | https://dontdieretired.com/eat/bones-after-50-calcium-vitamin-d-and-food/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Bones: calcium, vitamin D and the foods that carry them | Aim for calcium from food at every meal, get vitamin D from daylight in summer, and ask your GP about the official autumn-and-winter guidance. | https://dontdieretired.com/eat/bones-after-50-calcium-vitamin-d-and-food/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

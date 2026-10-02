@@ -42,7 +42,7 @@ https://dontdieretired.com/tech/tech-confidence-after-50-the-complete-guide/?utm
 
 ## pinterest
 
-Tech confidence after 50: the complete guide to your phone, your apps and staying safe online | Fix five settings, protect your email, learn the scam patterns and set one weekly video call — the rest follows. | https://dontdieretired.com/tech/tech-confidence-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Tech confidence: the complete guide to your phone, your apps and staying safe online | Fix five settings, protect your email, learn the scam patterns and set one weekly video call — the rest follows. | https://dontdieretired.com/tech/tech-confidence-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

@@ -1,5 +1,5 @@
 ---
-title: "Starting a business after 50: what's different, and what's in your favour"
+title: "Starting a business with experience behind you: what's different, and what's in your favour"
 slug: starting-a-business-after-50
 date: 2026-09-28
 kind: guide

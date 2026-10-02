@@ -42,7 +42,7 @@ https://dontdieretired.com/connect/how-to-make-new-friends-after-50/?utm_source=
 
 ## pinterest
 
-How to make new friends after 50 (without it feeling awkward) | Stop trying to make friends. Start turning up somewhere regularly, and let the friendships arrive as a side effect. | https://dontdieretired.com/connect/how-to-make-new-friends-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+How to make new friends as an adult (without it feeling awkward) | Stop trying to make friends. Start turning up somewhere regularly, and let the friendships arrive as a side effect. | https://dontdieretired.com/connect/how-to-make-new-friends-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

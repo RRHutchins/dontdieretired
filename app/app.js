@@ -21,7 +21,7 @@
   const prof = () => ({ ...J('ddr_profile', {}), interests: J('ddr_interests', []) });
   const setProf = p => { LS.set('ddr_profile', JSON.stringify({ level: p.level || '', age: p.age || '' })); LS.set('ddr_interests', JSON.stringify(p.interests || [])); };
   const LEVEL_NAME = { starter: 'Getting going', active: 'Active', advanced: 'Fit' };
-  const AGE_MID = { u55: 51, '55-64': 60, '65-74': 70, '75plus': 80 };
+  const AGE_MID = { u50: 44, u55: 52, '55-64': 60, '65-74': 70, '75plus': 80 };
   const TOPICS = [['move', 'Move'], ['eat', 'Eat'], ['think', 'Think'], ['money', 'Money'], ['earn', 'Earn'], ['connect', 'Connect'], ['travel', 'Travel'], ['tech', 'Tech'], ['ai', 'AI'], ['explore', 'Explore'], ['stories', 'Real stories']];
   function fit(a, p, rank) {
     const fb = J('ddr_fb', {}); let s = Math.max(0, 2 - rank * 0.1) + (fb[a.category] || 0);
@@ -147,7 +147,7 @@
     <p class="muted">So the app shows what fits you. It stays on this phone, and you can change it any time.</p>
     <div class="card"><h3>What should we call you? <span class="muted" style="font-weight:400">(optional)</span></h3><input id="yname" value="${esc(S.name || '')}" placeholder="First name" autocomplete="given-name" style="font:inherit;padding:12px;border-radius:12px;border:2px solid var(--line);width:100%;min-height:56px"></div>
     <div class="card"><h3>How active are you at the moment?</h3><div class="picks col">${btn('level', 'starter', 'Getting going', p.level === 'starter', "I haven't done much for a while")}${btn('level', 'active', 'Active', p.level === 'active', 'I walk, swim, cycle or play most weeks')}${btn('level', 'advanced', 'Fit', p.level === 'advanced', 'I train, and I want a challenge')}</div></div>
-    <div class="card"><h3>Your age <span class="muted" style="font-weight:400">(optional)</span></h3><div class="picks">${btn('age', 'u55', 'Under 55', p.age === 'u55')}${btn('age', '55-64', '55 to 64', p.age === '55-64')}${btn('age', '65-74', '65 to 74', p.age === '65-74')}${btn('age', '75plus', '75 or over', p.age === '75plus')}</div></div>
+    <div class="card"><h3>Your age <span class="muted" style="font-weight:400">(optional)</span></h3><div class="picks">${btn('age', 'u50', 'Under 50', p.age === 'u50')}${btn('age', 'u55', '50 to 54', p.age === 'u55')}${btn('age', '55-64', '55 to 64', p.age === '55-64')}${btn('age', '65-74', '65 to 74', p.age === '65-74')}${btn('age', '75plus', '75 or over', p.age === '75plus')}</div></div>
     <div class="card"><h3>What interests you?</h3><div class="picks">${TOPICS.map(([id, l]) => btn('interest', id, l, p.interests.includes(id))).join('')}</div></div>
     <button class="btn" data-action="youdone">${first ? 'Show me what fits' : 'Save'} →</button>`;
   }

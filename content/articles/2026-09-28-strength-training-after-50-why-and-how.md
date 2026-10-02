@@ -1,5 +1,5 @@
 ---
-title: "Why strength training matters more after 50 — and how to start at home"
+title: "Why strength training matters more every decade, and how to start at home"
 slug: strength-training-after-50-why-and-how
 date: 2026-09-28
 kind: guide

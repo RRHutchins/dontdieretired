@@ -42,7 +42,7 @@ https://dontdieretired.com/earn/job-hunting-after-50/?utm_source=x&utm_medium=so
 
 ## pinterest
 
-Job hunting after 50: CVs, age discrimination law and where the age-friendly employers are | Trim the CV to the last ten years, know the two laws that protect you, and look first at employers who have publicly signed up to hiring over-50s. | https://dontdieretired.com/earn/job-hunting-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Job hunting with experience: CVs, age discrimination law and where the age-friendly employers are | Trim the CV to the last ten years, know the two laws that protect you, and look first at employers who have publicly signed up to hiring over-50s. | https://dontdieretired.com/earn/job-hunting-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

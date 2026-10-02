@@ -1,5 +1,5 @@
 ---
-title: "Volunteering after 50: where to start and what it gives back"
+title: "Volunteering: where to start and what it gives back"
 slug: volunteering-after-50-where-to-start
 date: 2026-09-28
 kind: guide

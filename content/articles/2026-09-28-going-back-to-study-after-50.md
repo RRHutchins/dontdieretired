@@ -1,5 +1,5 @@
 ---
-title: "Going back to study after 50: Open University, community colleges, free courses and how to fund it"
+title: "Going back to study: Open University, community colleges, free courses and how to fund it"
 slug: going-back-to-study-after-50
 date: 2026-09-28
 kind: guide

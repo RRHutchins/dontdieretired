@@ -42,7 +42,7 @@ https://dontdieretired.com/earn/starting-a-business-after-50/?utm_source=x&utm_m
 
 ## pinterest
 
-Starting a business after 50: what's different, and what's in your favour | Test the idea on real paying customers before you spend anything you would miss, then register and make the first 90 days about selling. | https://dontdieretired.com/earn/starting-a-business-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Starting a business with experience behind you: what's different, and what's in your favour | Test the idea on real paying customers before you spend anything you would miss, then register and make the first 90 days about selling. | https://dontdieretired.com/earn/starting-a-business-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

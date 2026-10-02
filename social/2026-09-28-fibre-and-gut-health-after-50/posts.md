@@ -42,7 +42,7 @@ https://dontdieretired.com/eat/fibre-and-gut-health-after-50/?utm_source=x&utm_m
 
 ## pinterest
 
-Fibre and gut health after 50: how much, where from, and the easy swaps | Move your breakfast, bread and one snack to higher-fibre versions, increase gradually, and drink more water while you do it. | https://dontdieretired.com/eat/fibre-and-gut-health-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Fibre and gut health: how much, where from, and the easy swaps | Move your breakfast, bread and one snack to higher-fibre versions, increase gradually, and drink more water while you do it. | https://dontdieretired.com/eat/fibre-and-gut-health-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

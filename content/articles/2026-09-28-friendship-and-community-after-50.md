@@ -1,5 +1,5 @@
 ---
-title: "Friendship, family and community after 50: the complete guide"
+title: "Friendship, family and community: the complete guide"
 slug: friendship-and-community-after-50
 date: 2026-09-28
 kind: guide

@@ -42,7 +42,7 @@ https://dontdieretired.com/move/strength-training-after-50-why-and-how/?utm_sour
 
 ## pinterest
 
-Why strength training matters more after 50 — and how to start at home | Learn six movements, do them twice a week, and add a little each fortnight. | https://dontdieretired.com/move/strength-training-after-50-why-and-how/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Why strength training matters more every decade, and how to start at home | Learn six movements, do them twice a week, and add a little each fortnight. | https://dontdieretired.com/move/strength-training-after-50-why-and-how/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

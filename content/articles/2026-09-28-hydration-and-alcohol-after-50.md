@@ -1,5 +1,5 @@
 ---
-title: "Thirst, hydration and alcohol after 50: what changes and what to do"
+title: "Thirst, hydration and alcohol: what changes with age and what to do"
 slug: hydration-and-alcohol-after-50
 date: 2026-09-28
 kind: guide

@@ -42,7 +42,7 @@ https://dontdieretired.com/eat/hydration-and-alcohol-after-50/?utm_source=x&utm_
 
 ## pinterest
 
-Thirst, hydration and alcohol after 50: what changes and what to do | Drink on a routine rather than on thirst, know what a unit or a standard drink is, and keep several alcohol-free days a week. | https://dontdieretired.com/eat/hydration-and-alcohol-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Thirst, hydration and alcohol: what changes with age and what to do | Drink on a routine rather than on thirst, know what a unit or a standard drink is, and keep several alcohol-free days a week. | https://dontdieretired.com/eat/hydration-and-alcohol-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

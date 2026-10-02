@@ -42,7 +42,7 @@ https://dontdieretired.com/travel/solo-travel-after-50/?utm_source=x&utm_medium=
 
 ## pinterest
 
-Solo travel after 50: staying safe, dodging the single supplement and meeting people | Book the first night, tell someone your plan, use structure to meet people, and ask about single supplements before you pay. | https://dontdieretired.com/travel/solo-travel-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Solo travel: staying safe, dodging the single supplement and meeting people | Book the first night, tell someone your plan, use structure to meet people, and ask about single supplements before you pay. | https://dontdieretired.com/travel/solo-travel-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

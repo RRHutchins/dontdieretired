@@ -1,5 +1,5 @@
 ---
-title: "Bones after 50: calcium, vitamin D and the foods that carry them"
+title: "Bones: calcium, vitamin D and the foods that carry them"
 slug: bones-after-50-calcium-vitamin-d-and-food
 date: 2026-09-28
 kind: guide

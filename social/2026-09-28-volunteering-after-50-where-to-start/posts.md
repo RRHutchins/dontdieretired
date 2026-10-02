@@ -42,7 +42,7 @@ https://dontdieretired.com/connect/volunteering-after-50-where-to-start/?utm_sou
 
 ## pinterest
 
-Volunteering after 50: where to start and what it gives back | Pick a role that uses one thing you can already do, commit to a month, and let the people and the purpose follow. | https://dontdieretired.com/connect/volunteering-after-50-where-to-start/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Volunteering: where to start and what it gives back | Pick a role that uses one thing you can already do, commit to a month, and let the people and the purpose follow. | https://dontdieretired.com/connect/volunteering-after-50-where-to-start/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

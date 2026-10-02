@@ -1,5 +1,5 @@
 ---
-title: "AI after 50: the complete guide to using it well and not being fooled by it"
+title: "AI: the complete guide to using it well and not being fooled by it"
 slug: ai-after-50-the-complete-guide
 date: 2026-10-02
 kind: guide

@@ -42,7 +42,7 @@ https://dontdieretired.com/move/how-to-get-active-after-50/?utm_source=x&utm_med
 
 ## pinterest
 
-How to get active after 50: the complete starting guide | Start with ten minutes of something you can do today, then add strength and balance twice a week. | https://dontdieretired.com/move/how-to-get-active-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+How to get active again: the complete starting guide | Start with ten minutes of something you can do today, then add strength and balance twice a week. | https://dontdieretired.com/move/how-to-get-active-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

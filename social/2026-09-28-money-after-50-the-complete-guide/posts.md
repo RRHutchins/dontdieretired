@@ -42,7 +42,7 @@ https://dontdieretired.com/money/money-after-50-the-complete-guide/?utm_source=x
 
 ## pinterest
 
-Money after 50: the complete guide to getting clear and making it last | Get your whole money picture onto one page, check your own State Pension or Social Security forecast, then decide the big questions slowly. | https://dontdieretired.com/money/money-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Money: the complete guide to getting clear and making it last | Get your whole money picture onto one page, check your own State Pension or Social Security forecast, then decide the big questions slowly. | https://dontdieretired.com/money/money-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

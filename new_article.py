@@ -19,6 +19,7 @@ if re.search(r"\bat \d{2}\b.*[.!?] *at \d{2}\b", _t, re.I): _bad.append("uses th
 if re.search(r"\b(still|despite)\b", _t, re.I): _bad.append("uses 'still' or 'despite'")
 if re.match(r"^(at \d{2}|an? \d{2}-year-old|\d{2}-year-old)", _t, re.I): _bad.append("leads with the age — lead with the person and the deed")
 if re.search(r"\bat \d{2}\b|-year-old", _t, re.I): print("Warning: headline contains an age. House style is to keep the age for the standfirst unless it is itself the record.")
+if re.search(r"\b(over[- ]?50s?|after 50|over-50s|in your 50s|for seniors|later in life)\b", _t, re.I): _bad.append("names an age group; the site is for anyone, so headline the subject, not the age")
 if _bad:
     raise SystemExit("Headline rejected (" + "; ".join(_bad) + "). See RUNBOOK §1a and rewrite it.")
 slug = re.sub(r"[^a-z0-9]+", "-", a.title.lower()).strip("-")[:70]

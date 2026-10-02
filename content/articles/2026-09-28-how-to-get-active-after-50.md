@@ -1,5 +1,5 @@
 ---
-title: "How to get active after 50: the complete starting guide"
+title: "How to get active again: the complete starting guide"
 slug: how-to-get-active-after-50
 date: 2026-09-28
 kind: guide

@@ -42,7 +42,7 @@ https://dontdieretired.com/money/pension-and-investment-scams-after-50/?utm_sour
 
 ## pinterest
 
-Pension and investment scams aimed at people over 50: how they work and what to do if you've been contacted | Hang up on unexpected contact, check the firm on the official register yourself, and if you've already paid, act within hours, not days. | https://dontdieretired.com/money/pension-and-investment-scams-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Pension and investment scams: how they work and what to do if you've been contacted | Hang up on unexpected contact, check the firm on the official register yourself, and if you've already paid, act within hours, not days. | https://dontdieretired.com/money/pension-and-investment-scams-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

@@ -42,7 +42,7 @@ https://dontdieretired.com/move/balance-exercises-to-prevent-falls/?utm_source=x
 
 ## pinterest
 
-Balance: the exercise most people over 50 skip, and five ways to practise it | Practise standing on one leg and walking heel-to-toe, near a wall, every day. | https://dontdieretired.com/move/balance-exercises-to-prevent-falls/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Balance: the exercise most people skip, and five ways to practise it | Practise standing on one leg and walking heel-to-toe, near a wall, every day. | https://dontdieretired.com/move/balance-exercises-to-prevent-falls/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

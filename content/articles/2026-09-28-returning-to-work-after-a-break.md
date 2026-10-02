@@ -1,5 +1,5 @@
 ---
-title: "Returning to work after a career break in your 50s or 60s"
+title: "Returning to work after a career break"
 slug: returning-to-work-after-a-break
 date: 2026-09-28
 kind: guide

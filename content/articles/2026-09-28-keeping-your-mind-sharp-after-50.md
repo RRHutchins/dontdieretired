@@ -1,5 +1,5 @@
 ---
-title: "Keeping your mind sharp after 50: what actually works"
+title: "Keeping your mind sharp: what actually works"
 slug: keeping-your-mind-sharp-after-50
 date: 2026-09-28
 kind: guide

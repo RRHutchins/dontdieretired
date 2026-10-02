@@ -1,5 +1,5 @@
 ---
-title: "Solo travel after 50: staying safe, dodging the single supplement and meeting people"
+title: "Solo travel: staying safe, dodging the single supplement and meeting people"
 slug: solo-travel-after-50
 date: 2026-09-28
 kind: guide

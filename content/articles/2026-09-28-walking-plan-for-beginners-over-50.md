@@ -1,5 +1,5 @@
 ---
-title: "The 8-week walking plan for beginners over 50"
+title: "The 8-week walking plan for beginners"
 slug: walking-plan-for-beginners-over-50
 date: 2026-09-28
 kind: guide

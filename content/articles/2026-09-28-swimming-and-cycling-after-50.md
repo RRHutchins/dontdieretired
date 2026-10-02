@@ -1,5 +1,5 @@
 ---
-title: "Swimming and cycling after 50: the joint-friendly way back to fitness"
+title: "Swimming and cycling: the joint-friendly way back to fitness"
 slug: swimming-and-cycling-after-50
 date: 2026-09-28
 kind: guide

@@ -1,5 +1,5 @@
 ---
-title: "Travel after 50: the complete guide to going further, slower and for longer"
+title: "Travel: the complete guide to going further, slower and for longer"
 slug: travel-after-50-the-complete-guide
 date: 2026-09-28
 kind: guide

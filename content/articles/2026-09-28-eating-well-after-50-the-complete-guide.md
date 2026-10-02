@@ -1,5 +1,5 @@
 ---
-title: "Eating well after 50: the complete, no-fad guide"
+title: "Eating well: the complete, no-fad guide"
 slug: eating-well-after-50-the-complete-guide
 date: 2026-09-28
 kind: guide

@@ -42,7 +42,7 @@ https://dontdieretired.com/eat/protein-after-50-how-much-and-where-from/?utm_sou
 
 ## pinterest
 
-Protein after 50: how much, when, and the easy ways to get it | Put a proper source of protein in every meal, starting with breakfast, and spread it across the day rather than saving it for dinner. | https://dontdieretired.com/eat/protein-after-50-how-much-and-where-from/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Protein: how much, when, and the easy ways to get it | Put a proper source of protein in every meal, starting with breakfast, and spread it across the day rather than saving it for dinner. | https://dontdieretired.com/eat/protein-after-50-how-much-and-where-from/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

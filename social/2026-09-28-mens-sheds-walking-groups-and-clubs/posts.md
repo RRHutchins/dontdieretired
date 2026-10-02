@@ -42,7 +42,7 @@ https://dontdieretired.com/connect/mens-sheds-walking-groups-and-clubs/?utm_sour
 
 ## pinterest
 
-Men's Sheds, walking groups and clubs: how to find your people after 50 | Pick one ready-made group that meets every week, turn up twice, and let regularity do the work. | https://dontdieretired.com/connect/mens-sheds-walking-groups-and-clubs/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Men's Sheds, walking groups and clubs: how to find your people | Pick one ready-made group that meets every week, turn up twice, and let regularity do the work. | https://dontdieretired.com/connect/mens-sheds-walking-groups-and-clubs/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

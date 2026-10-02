@@ -1,5 +1,5 @@
 ---
-title: "Tech confidence after 50: the complete guide to your phone, your apps and staying safe online"
+title: "Tech confidence: the complete guide to your phone, your apps and staying safe online"
 slug: tech-confidence-after-50-the-complete-guide
 date: 2026-09-28
 kind: guide

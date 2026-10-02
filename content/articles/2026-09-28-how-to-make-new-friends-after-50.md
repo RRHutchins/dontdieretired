@@ -1,5 +1,5 @@
 ---
-title: "How to make new friends after 50 (without it feeling awkward)"
+title: "How to make new friends as an adult (without it feeling awkward)"
 slug: how-to-make-new-friends-after-50
 date: 2026-09-28
 kind: guide

@@ -42,7 +42,7 @@ https://dontdieretired.com/travel/travelling-by-train-after-50/?utm_source=x&utm
 
 ## pinterest
 
-Travelling by train after 50: passes, discounts and sleeper trains explained | Claim the age-based rail discounts, do the sums on a pass versus advance tickets, and use a sleeper to turn a travel day into a night's sleep. | https://dontdieretired.com/travel/travelling-by-train-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Travelling by train: passes, discounts and sleeper trains explained | Claim the age-based rail discounts, do the sums on a pass versus advance tickets, and use a sleeper to turn a travel day into a night's sleep. | https://dontdieretired.com/travel/travelling-by-train-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

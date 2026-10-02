@@ -42,7 +42,7 @@ https://dontdieretired.com/ai/ai-after-50-the-complete-guide/?utm_source=x&utm_m
 
 ## pinterest
 
-AI after 50: the complete guide to using it well and not being fooled by it | Treat an AI assistant as a quick, well-read helper whose work you check, and treat any urgent voice or video asking for money as unproven. | https://dontdieretired.com/ai/ai-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+AI: the complete guide to using it well and not being fooled by it | Treat an AI assistant as a quick, well-read helper whose work you check, and treat any urgent voice or video asking for money as unproven. | https://dontdieretired.com/ai/ai-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

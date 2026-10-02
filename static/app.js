@@ -49,7 +49,7 @@
      Stored in this browser only (shared with the app at /app/). Used to pick and order stories,
      choose which "Try this" a reader sees, and tag newsletter sign-ups so emails match. */
   const LEVELS = { starter: 'getting going', active: 'active', advanced: 'fit and after a challenge' };
-  const AGE_MID = { u55: 51, '55-64': 60, '65-74': 70, '75plus': 80 };
+  const AGE_MID = { u50: 44, u55: 52, '55-64': 60, '65-74': 70, '75plus': 80 };
   const PLANS = {
     starter: ['Walk 10 minutes after one meal a day. Same time each day.', 'Twice a day, stand up from a chair five times without using your hands.', 'Ask your GP or pharmacist one question: "What can I safely do more of?"', 'Tell one person what you\'re doing. It doubles the odds you keep going.'],
     active: ['Pick a goal with a date on it: a 5k, a 1k open-water swim, a 50-mile ride, a hill you haven\'t climbed.', 'Add two strength sessions a week. It\'s the thing most active people skip, and the thing that protects everything else.', 'Join a club or masters group. Other people are the best training plan there is.', 'Track one number (time, distance or weight lifted) and beat it slowly.'],

@@ -1,5 +1,5 @@
 ---
-title: "Learning a language after 50: a realistic plan"
+title: "Learning a language as an adult: a realistic plan"
 slug: learning-a-language-after-50
 date: 2026-09-28
 kind: guide

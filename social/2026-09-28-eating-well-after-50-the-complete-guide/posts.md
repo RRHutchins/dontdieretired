@@ -42,7 +42,7 @@ https://dontdieretired.com/eat/eating-well-after-50-the-complete-guide/?utm_sour
 
 ## pinterest
 
-Eating well after 50: the complete, no-fad guide | Forget diets — build every day around protein, plants, fibre, fluids and a bit of planning, and let the rest look after itself. | https://dontdieretired.com/eat/eating-well-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Eating well: the complete, no-fad guide | Forget diets — build every day around protein, plants, fibre, fluids and a bit of planning, and let the rest look after itself. | https://dontdieretired.com/eat/eating-well-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

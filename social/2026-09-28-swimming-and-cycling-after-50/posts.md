@@ -42,7 +42,7 @@ https://dontdieretired.com/move/swimming-and-cycling-after-50/?utm_source=x&utm_
 
 ## pinterest
 
-Swimming and cycling after 50: the joint-friendly way back to fitness | Pick the one you can get to easily, book a lesson if you need one, and build towards 150 minutes a week. | https://dontdieretired.com/move/swimming-and-cycling-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Swimming and cycling: the joint-friendly way back to fitness | Pick the one you can get to easily, book a lesson if you need one, and build towards 150 minutes a week. | https://dontdieretired.com/move/swimming-and-cycling-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

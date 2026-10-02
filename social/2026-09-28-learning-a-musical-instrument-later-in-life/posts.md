@@ -42,7 +42,7 @@ https://dontdieretired.com/think/learning-a-musical-instrument-later-in-life/?ut
 
 ## pinterest
 
-Taking up a musical instrument in your 50s, 60s or 70s | Pick an instrument that suits your hands, ears and home, then practise 20 minutes most days with a teacher or group in the loop. | https://dontdieretired.com/think/learning-a-musical-instrument-later-in-life/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Taking up a musical instrument as an adult | Pick an instrument that suits your hands, ears and home, then practise 20 minutes most days with a teacher or group in the loop. | https://dontdieretired.com/think/learning-a-musical-instrument-later-in-life/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

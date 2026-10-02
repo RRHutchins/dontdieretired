@@ -42,7 +42,7 @@ https://dontdieretired.com/travel/travel-after-50-the-complete-guide/?utm_source
 
 ## pinterest
 
-Travel after 50: the complete guide to going further, slower and for longer | Go to fewer places for longer, travel by land where you can, sort insurance and health early, and let the trip be unhurried. | https://dontdieretired.com/travel/travel-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Travel: the complete guide to going further, slower and for longer | Go to fewer places for longer, travel by land where you can, sort insurance and health early, and let the trip be unhurried. | https://dontdieretired.com/travel/travel-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

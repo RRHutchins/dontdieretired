@@ -18,6 +18,7 @@ Repo layout: `site.yaml` (config), `content/articles/*.md`, `content/videos.yaml
 
 ## 1b. Who we write for (set 2 Oct 2026 — read before choosing a story)
 Readers are **interested, not old**. A fit 50-year-old and an unfit 75-year-old both read this site, and neither wants the other's advice. So:
+- **Nobody is excluded by age.** The name implies the audience; the copy never needs to say it. Do not put "over 50", "after 50", "in your 50s", "seniors" or "later in life" in headlines, standfirsts, section blurbs or product names (`new_article.py` rejects such headlines). Readers under 50 are welcome and have their own age option in the profile (`u50`). Mention age in the body only where it changes the facts (bone density, insurance rules, pension ages).
 - **Lead with what is interesting** (the feat, the idea, the place, the science), never with the age. Ask: would this be worth reading if the person were 35? If not, find a better story.
 - **Spread the ages.** Across any two weeks at least half the people we write about should be in their 50s or early 60s. Stories about people 80+ are the exception, used when the story itself is remarkable.
 - **Rotate the level** of the practical advice: about 40% `active`, 30% `advanced`, 30% `starter`. Never assume the reader is unfit. Chair-based or "ten-minute walk" advice belongs only in `starter` pieces.

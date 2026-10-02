@@ -42,7 +42,7 @@ https://dontdieretired.com/earn/working-after-50-the-complete-guide/?utm_source=
 
 ## pinterest
 
-Working after 50: the complete guide to second careers, side incomes and going it alone | Pick the shape of work that fits the life you want next, test it small, and let the law and the pension rules work for you rather than against you. | https://dontdieretired.com/earn/working-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Work on your terms: the complete guide to second careers, side incomes and going it alone | Pick the shape of work that fits the life you want next, test it small, and let the law and the pension rules work for you rather than against you. | https://dontdieretired.com/earn/working-after-50-the-complete-guide/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

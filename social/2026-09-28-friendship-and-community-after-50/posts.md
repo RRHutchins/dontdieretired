@@ -42,7 +42,7 @@ https://dontdieretired.com/connect/friendship-and-community-after-50/?utm_source
 
 ## pinterest
 
-Friendship, family and community after 50: the complete guide | Show up somewhere regularly, be the one who suggests the coffee, and treat friendship as something you do, not something that happens to you. | https://dontdieretired.com/connect/friendship-and-community-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Friendship, family and community: the complete guide | Show up somewhere regularly, be the one who suggests the coffee, and treat friendship as something you do, not something that happens to you. | https://dontdieretired.com/connect/friendship-and-community-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

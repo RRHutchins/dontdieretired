@@ -1,5 +1,5 @@
 ---
-title: "Men's Sheds, walking groups and clubs: how to find your people after 50"
+title: "Men's Sheds, walking groups and clubs: how to find your people"
 slug: mens-sheds-walking-groups-and-clubs
 date: 2026-09-28
 kind: guide

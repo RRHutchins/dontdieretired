@@ -42,7 +42,7 @@ https://dontdieretired.com/think/going-back-to-study-after-50/?utm_source=x&utm_
 
 ## pinterest
 
-Going back to study after 50: Open University, community colleges, free courses and how to fund it | Choose the level of commitment you want — a free short course, a club, or a qualification — and look up the funding before you rule it out. | https://dontdieretired.com/think/going-back-to-study-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Going back to study: Open University, community colleges, free courses and how to fund it | Choose the level of commitment you want — a free short course, a club, or a qualification — and look up the funding before you rule it out. | https://dontdieretired.com/think/going-back-to-study-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

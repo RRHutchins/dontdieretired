@@ -1,5 +1,5 @@
 ---
-title: "Money after 50: the complete guide to getting clear and making it last"
+title: "Money: the complete guide to getting clear and making it last"
 slug: money-after-50-the-complete-guide
 date: 2026-09-28
 kind: guide

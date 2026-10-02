@@ -1,5 +1,5 @@
 ---
-title: "Balance: the exercise most people over 50 skip, and five ways to practise it"
+title: "Balance: the exercise most people skip, and five ways to practise it"
 slug: balance-exercises-to-prevent-falls
 date: 2026-09-28
 kind: guide

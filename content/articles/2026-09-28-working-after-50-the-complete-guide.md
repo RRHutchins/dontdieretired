@@ -1,5 +1,5 @@
 ---
-title: "Working after 50: the complete guide to second careers, side incomes and going it alone"
+title: "Work on your terms: the complete guide to second careers, side incomes and going it alone"
 slug: working-after-50-the-complete-guide
 date: 2026-09-28
 kind: guide

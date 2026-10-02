@@ -42,7 +42,7 @@ https://dontdieretired.com/earn/returning-to-work-after-a-break/?utm_source=x&ut
 
 ## pinterest
 
-Returning to work after a career break in your 50s or 60s | Treat the return as a project: a rewritten CV, one honest line about the break, three practice interviews and one short course. | https://dontdieretired.com/earn/returning-to-work-after-a-break/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Returning to work after a career break | Treat the return as a project: a rewritten CV, one honest line about the break, three practice interviews and one short course. | https://dontdieretired.com/earn/returning-to-work-after-a-break/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

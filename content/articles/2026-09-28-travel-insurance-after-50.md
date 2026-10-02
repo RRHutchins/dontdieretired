@@ -1,5 +1,5 @@
 ---
-title: "Travel insurance after 50: what changes, what to declare, and where to compare"
+title: "Travel insurance: what changes as you get older, what to declare, and where to compare"
 slug: travel-insurance-after-50
 date: 2026-09-28
 kind: guide

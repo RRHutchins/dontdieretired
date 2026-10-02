@@ -1,5 +1,5 @@
 ---
-title: "Fibre and gut health after 50: how much, where from, and the easy swaps"
+title: "Fibre and gut health: how much, where from, and the easy swaps"
 slug: fibre-and-gut-health-after-50
 date: 2026-09-28
 kind: guide

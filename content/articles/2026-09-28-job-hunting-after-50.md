@@ -1,5 +1,5 @@
 ---
-title: "Job hunting after 50: CVs, age discrimination law and where the age-friendly employers are"
+title: "Job hunting with experience: CVs, age discrimination law and where the age-friendly employers are"
 slug: job-hunting-after-50
 date: 2026-09-28
 kind: guide

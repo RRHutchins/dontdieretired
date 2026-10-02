@@ -1,5 +1,5 @@
 ---
-title: "Taking up a musical instrument in your 50s, 60s or 70s"
+title: "Taking up a musical instrument as an adult"
 slug: learning-a-musical-instrument-later-in-life
 date: 2026-09-28
 kind: guide

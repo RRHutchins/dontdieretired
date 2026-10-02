@@ -42,7 +42,7 @@ https://dontdieretired.com/travel/travel-insurance-after-50/?utm_source=x&utm_me
 
 ## pinterest
 
-Travel insurance after 50: what changes, what to declare, and where to compare | Declare everything you are asked, buy when you book, check the trip-length and age limits, and never rely on a GHIC or Medicare alone. | https://dontdieretired.com/travel/travel-insurance-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Travel insurance: what changes as you get older, what to declare, and where to compare | Declare everything you are asked, buy when you book, check the trip-length and age limits, and never rely on a GHIC or Medicare alone. | https://dontdieretired.com/travel/travel-insurance-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

@@ -42,7 +42,7 @@ https://dontdieretired.com/think/learning-a-language-after-50/?utm_source=x&utm_
 
 ## pinterest
 
-Learning a language after 50: a realistic plan | Fix a daily 20-minute slot, use spaced repetition, and start speaking in week one. | https://dontdieretired.com/think/learning-a-language-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+Learning a language as an adult: a realistic plan | Fix a daily 20-minute slot, use spaced repetition, and start speaking in week one. | https://dontdieretired.com/think/learning-a-language-after-50/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 
