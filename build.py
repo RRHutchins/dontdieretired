@@ -149,6 +149,7 @@ PALETTE = {
     "money": ("#2F5D50", "#E7F1EE"),
     "travel": ("#0E7490", "#E6F4F7"),
     "tech": ("#4B4F9C", "#EDEEF8"),
+    "ai": ("#3F4A54", "#ECEFF1"),
     "explore": ("#2F6B3A", "#EAF3EC"),
 }
 
@@ -355,7 +356,9 @@ def build(make_social=True):
         if make_social:
             social_pack(a, cfg)
 
-    urls.append(out("/", "index.html", featured=arts[0], latest=arts[1:7]))
+    # "Today's story" is the newest real story, not an evergreen guide published the same day
+    featured = next((a for a in arts if a.get("kind") != "guide"), arts[0])
+    urls.append(out("/", "index.html", featured=featured, latest=[a for a in arts if a is not featured][:6]))
     for cid, c in cfg["categories"].items():
         urls.append(out(f"/{cid}/", "category.html", cid=cid, c=c, items=[a for a in arts if a["category"] == cid]))
     urls.append(out("/videos/", "videos.html"))

@@ -26,7 +26,7 @@
 
 {% if prods %}
 <section class="cat-products">
-  <div class="section-head"><h2>Plans and workbooks for {{ c.label | lower }}</h2><a href="/shop/">Whole shop →</a></div>
+  <div class="section-head"><h2>Plans and workbooks for {{ c.label if cid == "ai" else c.label | lower }}</h2><a href="/shop/">Whole shop →</a></div>
   <div class="grid grid-{{ 3 if prods|length > 2 else 2 }}">
   {% for p in prods %}
   <article class="card product" id="{{ p.id }}">
@@ -58,7 +58,7 @@
 
 {% if not items %}<p>New guides arrive here soon. <a href="/newsletter/">Get them by email.</a></p>{% endif %}
 
-{% if picks %}<section class="cat-kit">{{ affiliate_box(picks, "Kit that helps with " ~ (c.label | lower)) }}</section>{% endif %}
+{% if picks %}<section class="cat-kit">{{ affiliate_box(picks, "Kit that helps with " ~ (c.label if cid == "ai" else c.label | lower)) }}</section>{% endif %}
 
 <aside class="promo promo-members">
   <p class="kicker">{{ cfg.newsletter.list_name }}</p>

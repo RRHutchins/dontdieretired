@@ -22,7 +22,7 @@
   const setProf = p => { LS.set('ddr_profile', JSON.stringify({ level: p.level || '', age: p.age || '' })); LS.set('ddr_interests', JSON.stringify(p.interests || [])); };
   const LEVEL_NAME = { starter: 'Getting going', active: 'Active', advanced: 'Fit' };
   const AGE_MID = { u55: 51, '55-64': 60, '65-74': 70, '75plus': 80 };
-  const TOPICS = [['move', 'Move'], ['eat', 'Eat'], ['think', 'Think'], ['money', 'Money'], ['earn', 'Earn'], ['connect', 'Connect'], ['travel', 'Travel'], ['tech', 'Tech'], ['explore', 'Explore'], ['stories', 'Real stories']];
+  const TOPICS = [['move', 'Move'], ['eat', 'Eat'], ['think', 'Think'], ['money', 'Money'], ['earn', 'Earn'], ['connect', 'Connect'], ['travel', 'Travel'], ['tech', 'Tech'], ['ai', 'AI'], ['explore', 'Explore'], ['stories', 'Real stories']];
   function fit(a, p, rank) {
     const fb = J('ddr_fb', {}); let s = Math.max(0, 2 - rank * 0.1) + (fb[a.category] || 0);
     if ((p.interests || []).includes(a.category)) s += 4;

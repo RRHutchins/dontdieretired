@@ -10,6 +10,14 @@ This brief governs every evergreen guide, article and product on dontdieretired.
 5. **No ageist framing.** No "despite their age", no "still", no body-shaming, no "seniors" as a label (say "people over 50", "in your sixties").
 6. **Positive and plain.** Encouraging, practical, warm, occasionally funny. No hype, no "you must", no guilt.
 
+## The AI section (category `ai`, added 2 Oct 2026)
+- Purpose: help readers make good use of AI and not be harmed or fooled by it. Calm, practical, curious; never hype, never fear.
+- Preferred sources, in addition to the list above: Ofcom, ICO, FCA, Action Fraud / Report Fraud, Take Five, FBI IC3, FCC, CISA, NIST, WHO, Pew Research, Senior Planet, university research you fetched, and the AI makers' own official help, policy and privacy pages when describing how their product behaves.
+- Be even-handed between AI makers: name several (ChatGPT, Claude, Copilot, Gemini) in alphabetical order, attribute each statement to its maker's own page, and never recommend one over another. If a caution is on more than one maker's page, do not pin it on one.
+- Products change fast: describe behaviour in durable terms, say "at the time of writing", avoid version numbers and prices, and give a menu path or retention period only if it is on the page you fetched.
+- Health, money and law: an assistant helps you prepare and understand, never decide. No article may suggest asking an AI whether to start, stop or change a medicine, whether a symptom can wait, or what to invest in. Emergencies go to 999 / 911.
+- Every guide tells the reader to keep names, account numbers and medical details out of what they type.
+
 ## Audience and voice
 - Readers are 50–85, UK (~40%) and USA (~40%), plus rest of world. Assume intelligent adults with no specialist knowledge.
 - **British spelling**, but gloss UK-only terms on first use: "GP (family doctor)", "NHS (the UK health service)", "State Pension (the UK's government pension; Social Security in the US)". Give distances and weights in both units where they matter; money as £/$ where it matters.
@@ -24,7 +32,7 @@ slug: kebab-case-slug
 date: 2026-09-28
 kind: guide            # guide = evergreen (pillar or article); omit for daily news stories
 pillar: true           # only on the ONE pillar guide per category
-category: eat          # move | think | earn | connect | eat | money | travel | tech
+category: eat          # move | think | earn | connect | eat | money | travel | tech | ai | explore
 tags: [protein, cooking, beginner]
 segments: [restarter, mover]   # from site.yaml audience_segments: restarter, mover, learner, carer, changer
 hook: "≤120 chars, the one-line takeaway used on social cards"

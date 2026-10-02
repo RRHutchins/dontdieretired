@@ -5,7 +5,7 @@ Claude fills in the body, quotes and sources from verified reporting, then runs 
 """
 import argparse, datetime as dt, re, pathlib
 ap = argparse.ArgumentParser()
-ap.add_argument("title"); ap.add_argument("--category", required=True, choices=["move","eat","think","money","earn","connect","travel","tech","explore","stories"])
+ap.add_argument("title"); ap.add_argument("--category", required=True, choices=["move","eat","think","money","earn","connect","travel","tech","ai","explore","stories"])
 ap.add_argument("--level", default="any", choices=["starter","active","advanced","any"], help="who the practical advice is pitched at")
 ap.add_argument("--age", default="", help="age of the person in the story, if there is one")
 ap.add_argument("--tags", default=""); ap.add_argument("--segments", default="")

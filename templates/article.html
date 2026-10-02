@@ -87,7 +87,8 @@
   {% set picks = products.affiliate_picks | selectattr('category', 'equalto', a.category) | list %}
   {% if picks|length < 3 %}{% set picks = picks + (products.affiliate_picks | selectattr('category', 'equalto', 'move') | list) %}{% endif %}
   {{ affiliate_box(picks[:4]) }}
-  {% set prod = (products.products | selectattr('category', 'equalto', a.category) | list + products.products) | first %}
+  {# no AI product yet: AI articles show the tech guide rather than the first product in the shop #}
+  {% set prod = (products.products | selectattr('category', 'equalto', a.category) | list + (products.products | selectattr('category', 'equalto', 'tech') | list if a.category == 'ai' else []) + products.products) | first %}
   {{ product_promo(prod) }}
 </aside>
 </div>

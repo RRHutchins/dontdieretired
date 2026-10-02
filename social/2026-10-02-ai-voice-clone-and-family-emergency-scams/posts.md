@@ -1,0 +1,55 @@
+## facebook
+
+A cloned voice can sound like your grandson. It cannot know the family safe word, or answer his real phone.
+
+How 'family emergency' calls work now that criminals can clone a voice from a short clip, and what the FTC, FBI, FCC, AARP and UK fraud bodies advise. The defences in order of usefulness: call back, a family safe word, no unusual payments, no secrets, plus where to report in the UK and US.
+
+Hang up, ring the person back on the number you already have, and agree a family safe word in person this week.
+
+Read the full story → https://dontdieretired.com/ai/ai-voice-clone-and-family-emergency-scams/?utm_source=facebook&utm_medium=social&utm_campaign=daily
+
+## instagram
+
+A cloned voice can sound like your grandson. It cannot know the family safe word, or answer his real phone.
+
+Hang up, ring the person back on the number you already have, and agree a family safe word in person this week.
+
+Full story at the link in our bio (dontdieretired.com).
+
+#ai #scams #voicecloning #family #fraud #safety #over50 #activeageing #dontdieretired
+
+## x
+
+A cloned voice can sound like your grandson. It cannot know the family safe word, or answer his real phone. Hang up, ring the person back on the number you already have, and agree a family safe word…
+
+https://dontdieretired.com/ai/ai-voice-clone-and-family-emergency-scams/?utm_source=x&utm_medium=social&utm_campaign=daily
+
+## x_thread
+
+1/ A cloned voice can sound like your grandson. It cannot know the family safe word, or answer his real phone.
+
+---
+
+2/ How 'family emergency' calls work now that criminals can clone a voice from a short clip, and what the FTC, FBI, FCC, AARP and UK fraud bodies advise. The defences in order of usefulness: call back, a family safe word, no unusual payments, no secrets, plus where to report in the UK and US.
+
+---
+
+3/ The lesson: Hang up, ring the person back on the number you already have, and agree a family safe word in person this week.
+
+---
+
+4/ Full story, sources and a plan you can start this week → https://dontdieretired.com/ai/ai-voice-clone-and-family-emergency-scams/?utm_source=x&utm_medium=social&utm_campaign=daily
+
+## pinterest
+
+Voice-clone and 'family emergency' scams: how they work, and the safe word that beats them | Hang up, ring the person back on the number you already have, and agree a family safe word in person this week. | https://dontdieretired.com/ai/ai-voice-clone-and-family-emergency-scams/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+
+## linkedin
+
+A cloned voice can sound like your grandson. It cannot know the family safe word, or answer his real phone.
+
+How 'family emergency' calls work now that criminals can clone a voice from a short clip, and what the FTC, FBI, FCC, AARP and UK fraud bodies advise. The defences in order of usefulness: call back, a family safe word, no unusual payments, no secrets, plus where to report in the UK and US.
+
+Why it matters for anyone over 50: Hang up, ring the person back on the number you already have, and agree a family safe word in person this week.
+
+https://dontdieretired.com/ai/ai-voice-clone-and-family-emergency-scams/?utm_source=linkedin&utm_medium=social&utm_campaign=daily
