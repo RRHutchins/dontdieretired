@@ -7,10 +7,10 @@ category: travel
 tags: [trains, slow-travel, interrail, eurail, amtrak, railcard, sleeper-trains, budget]
 segments: [restarter, mover, learner]
 level: any
-hook: "Over 60? There's a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work."
+hook: "Older travellers get a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work."
 lesson: "Claim the age-based rail discounts, do the sums on a pass versus advance tickets, and use a sleeper to turn a travel day into a night's sleep."
-standfirst: "Trains put you in the middle of the city, rested, with your luggage, and turn the journey into part of the trip. This article explains the rail passes and discounts open to people over 50 in Europe, the UK and the US, and how sleeper trains work."
-summary: "How rail travel works for people over 50: Interrail and Eurail senior passes, the UK Senior Railcard, Amtrak's senior discount, booking assistance, and what to expect on sleeper trains such as the Caledonian Sleeper, Nightjet and Amtrak roomettes."
+standfirst: "Trains put you in the middle of the city, rested, with your luggage, and turn the journey into part of the trip. This article explains the rail passes and discounts open to older travellers in Europe, the UK and the US, and how sleeper trains work."
+summary: "How rail travel works: Interrail and Eurail senior passes, the UK Senior Railcard, Amtrak's senior discount, booking assistance, and what to expect on sleeper trains such as the Caledonian Sleeper, Nightjet and Amtrak roomettes."
 try_this:
   - "If you are in the UK and 60 or over, price your next two rail journeys with and without a Senior Railcard."
   - "Choose one overnight route — London to Scotland, Vienna to Venice, Chicago to the west coast — and read the official sleeper page."

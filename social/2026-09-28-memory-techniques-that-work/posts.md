@@ -2,7 +2,7 @@
 
 Rereading and highlighting barely work. Testing yourself, spacing it out and sleeping on it do — at 25 or 75.
 
-Five evidence-backed memory techniques for learning after 50 — spaced repetition, retrieval practice, the memory palace, chunking and sleep — with an honest account of what the research shows and where the limits are.
+Five evidence-backed memory techniques for learning at any age — spaced repetition, retrieval practice, the memory palace, chunking and sleep — with an honest account of what the research shows and where the limits are.
 
 Test yourself instead of rereading, space the sessions out, and protect the night's sleep after you learn.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/think/memory-techniques-that-work/?utm_source=x&utm_m
 
 ---
 
-2/ Five evidence-backed memory techniques for learning after 50 — spaced repetition, retrieval practice, the memory palace, chunking and sleep — with an honest account of what the research shows and where the limits are.
+2/ Five evidence-backed memory techniques for learning at any age — spaced repetition, retrieval practice, the memory palace, chunking and sleep — with an honest account of what the research shows and where the limits are.
 
 ---
 
@@ -48,7 +48,7 @@ Five memory techniques that work at any age | Test yourself instead of rereading
 
 Rereading and highlighting barely work. Testing yourself, spacing it out and sleeping on it do — at 25 or 75.
 
-Five evidence-backed memory techniques for learning after 50 — spaced repetition, retrieval practice, the memory palace, chunking and sleep — with an honest account of what the research shows and where the limits are.
+Five evidence-backed memory techniques for learning at any age — spaced repetition, retrieval practice, the memory palace, chunking and sleep — with an honest account of what the research shows and where the limits are.
 
 Why it matters for anyone over 50: Test yourself instead of rereading, space the sessions out, and protect the night's sleep after you learn.
 

@@ -7,10 +7,10 @@ category: travel
 tags: [insurance, health, money, ghic, medicare, slow-travel]
 segments: [restarter, carer, mover]
 level: any
-hook: "Premiums rise after 50 and every condition must be declared. Here's how travel insurance really works — UK and US."
+hook: "Premiums rise with age and every condition must be declared. Here's how travel insurance really works — UK and US."
 lesson: "Declare everything you are asked, buy when you book, check the trip-length and age limits, and never rely on a GHIC or Medicare alone."
-standfirst: "Travel insurance is the part of a trip nobody enjoys arranging and everybody is grateful for. After 50 it gets dearer and the questions get more searching. Here is what changes, how to declare pre-existing conditions honestly, what the GHIC does for UK travellers, why Medicare does not travel, and where to compare."
-summary: "A plain guide to travel insurance for people over 50: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC)."
+standfirst: "Travel insurance is the part of a trip nobody enjoys arranging and everybody is grateful for. As you get older it gets dearer and the questions get more searching. Here is what changes, how to declare pre-existing conditions honestly, what the GHIC does for UK travellers, why Medicare does not travel, and where to compare."
+summary: "A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC)."
 try_this:
   - "List every condition, medicine and appointment from the last two years on one sheet before you ask for a quote."
   - "UK: check whether your GHIC is in date, and apply or renew on the NHS site — it is free."

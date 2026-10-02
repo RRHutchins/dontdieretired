@@ -8,10 +8,10 @@ category: connect
 tags: [community, friendship, loneliness, volunteering, family, mindset, beginner]
 segments: [restarter, carer, changer, learner]
 level: any
-hook: "Social circles shrink after 50 for ordinary reasons. Rebuilding one is a skill, not luck — and the evidence says it matters."
+hook: "Social circles shrink with age for ordinary reasons. Rebuilding one is a skill, not luck — and the evidence says it matters."
 lesson: "Show up somewhere regularly, be the one who suggests the coffee, and treat friendship as something you do, not something that happens to you."
-standfirst: "Retirement, moves, bereavement and caring all quietly thin out the people around us. This is the Connect section's starting point: why it happens, what the research says it costs, and where people over 50 actually find each other."
-summary: "A plain guide to friendship, family and community after 50: why circles shrink, what loneliness does to health according to the WHO, Campaign to End Loneliness and AARP, why acquaintances matter as much as close friends, and where to meet people in the UK and US. Start here for the Connect section."
+standfirst: "Retirement, moves, bereavement and caring all quietly thin out the people around us. This is the Connect section's starting point: why it happens, what the research says it costs, and where people actually find each other."
+summary: "A plain guide to friendship, family and community: why circles shrink, what loneliness does to health according to the WHO, Campaign to End Loneliness and AARP, why acquaintances matter as much as close friends, and where to meet people in the UK and US. Start here for the Connect section."
 try_this:
   - "Write down the names of everyone you have spoken to in person this week. If the list is short, that is information, not a verdict."
   - "Find one group that meets weekly within 20 minutes of home and put the next two sessions in your diary. Two, not one."

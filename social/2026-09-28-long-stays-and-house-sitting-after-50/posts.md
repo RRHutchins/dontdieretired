@@ -2,7 +2,7 @@
 
 A month in one place costs less per day and gives you more. Here's the 90/180 rule, visa basics, house-sitting and renting abroad.
 
-A guide to long stays after 50: how the Schengen 90-in-180-day rule works for UK and US passport holders, the EU Entry/Exit System and ETIAS, when you need a visa, what house-sitting platforms involve, and how to rent an apartment abroad safely using FTC guidance.
+A guide to long stays: how the Schengen 90-in-180-day rule works for UK and US passport holders, the EU Entry/Exit System and ETIAS, when you need a visa, what house-sitting platforms involve, and how to rent an apartment abroad safely using FTC guidance.
 
 Count your Schengen days, check passport and entry rules early, treat a house-sit as a job with a bed attached, and verify any rental before you pay.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/travel/long-stays-and-house-sitting-after-50/?utm_sou
 
 ---
 
-2/ A guide to long stays after 50: how the Schengen 90-in-180-day rule works for UK and US passport holders, the EU Entry/Exit System and ETIAS, when you need a visa, what house-sitting platforms involve, and how to rent an apartment abroad safely using FTC guidance.
+2/ A guide to long stays: how the Schengen 90-in-180-day rule works for UK and US passport holders, the EU Entry/Exit System and ETIAS, when you need a visa, what house-sitting platforms involve, and how to rent an apartment abroad safely using FTC guidance.
 
 ---
 
@@ -48,7 +48,7 @@ Long stays and house-sitting: how to spend 30 to 90 days somewhere else | Count 
 
 A month in one place costs less per day and gives you more. Here's the 90/180 rule, visa basics, house-sitting and renting abroad.
 
-A guide to long stays after 50: how the Schengen 90-in-180-day rule works for UK and US passport holders, the EU Entry/Exit System and ETIAS, when you need a visa, what house-sitting platforms involve, and how to rent an apartment abroad safely using FTC guidance.
+A guide to long stays: how the Schengen 90-in-180-day rule works for UK and US passport holders, the EU Entry/Exit System and ETIAS, when you need a visa, what house-sitting platforms involve, and how to rent an apartment abroad safely using FTC guidance.
 
 Why it matters for anyone over 50: Count your Schengen days, check passport and entry rules early, treat a house-sit as a job with a bed attached, and verify any rental before you pay.
 

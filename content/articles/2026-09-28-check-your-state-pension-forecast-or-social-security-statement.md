@@ -7,7 +7,7 @@ category: money
 tags: [pensions, retirement, state-pension, social-security, beginner]
 segments: [restarter, changer, carer]
 level: any
-hook: "Twenty minutes online tells you the biggest number in your retirement. Most people over 50 have never looked."
+hook: "Twenty minutes online tells you the biggest number in your retirement. Most people have never looked."
 lesson: "Log in, read your own forecast, and check for gaps while you still have years to fill them."
 standfirst: "The state pension is the biggest single source of retirement income for most people, and both the UK and US will show you your own figure for free. Here is how to read it, and what you can still do about it."
 summary: "How to get your UK State Pension forecast or US Social Security Statement, what the figures and dates mean, how National Insurance gaps and voluntary contributions work, and how claiming at 62, 67 or 70 changes a US benefit. General information, not financial advice."

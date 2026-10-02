@@ -7,10 +7,10 @@ category: eat
 tags: [protein, strength, breakfast, beginner]
 segments: [restarter, mover]
 level: any
-hook: "Half the protein in your body is in your muscle — and muscle is what you lose after 50 if you don't feed it."
+hook: "Half the protein in your body is in your muscle — and muscle is what you lose with age if you don't feed it."
 lesson: "Put a proper source of protein in every meal, starting with breakfast, and spread it across the day rather than saving it for dinner."
 standfirst: "Muscle is what keeps you independent, and protein is what keeps muscle. Here is how much the guidelines suggest, why timing matters, and the easiest foods to get it from."
-summary: "Why protein matters more after 50, what the UK and US guidelines suggest per kilogram of body weight, and a table of everyday foods with their protein content. Includes plant sources and simple breakfast fixes."
+summary: "Why protein matters more as you get older, what the UK and US guidelines suggest per kilogram of body weight, and a table of everyday foods with their protein content. Includes plant sources and simple breakfast fixes."
 try_this:
   - "Tomorrow, swap your usual breakfast for one with an egg, Greek yoghurt or baked beans, and notice whether you are less hungry mid-morning."
   - "Weigh yourself once, in kilograms, and multiply by 1 and by 1.2 to get a rough daily protein range to aim for — then compare it with a typical day."

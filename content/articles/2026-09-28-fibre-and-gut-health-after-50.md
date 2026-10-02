@@ -9,8 +9,8 @@ segments: [restarter, carer]
 level: any
 hook: "The UK target is 30g of fibre a day. Most adults manage about 18–20g. The gap is one breakfast and one swap wide."
 lesson: "Move your breakfast, bread and one snack to higher-fibre versions, increase gradually, and drink more water while you do it."
-standfirst: "Fibre is the least glamorous nutrient and one of the most useful after 50 — for your bowels, your heart and your blood sugar. Here is what the UK and US guidance says, which foods deliver, and the swaps that close the gap without a lecture."
-summary: "What fibre does, the UK 30g target and US figures for over-50s, how far most adults fall short, a list of high-fibre foods, and simple meal-by-meal swaps. Includes the two rules that stop a fibre increase turning into bloating."
+standfirst: "Fibre is the least glamorous nutrient and one of the most useful as you get older — for your bowels, your heart and your blood sugar. Here is what the UK and US guidance says, which foods deliver, and the swaps that close the gap without a lecture."
+summary: "What fibre does, the UK 30g target and US figures by age, how far most adults fall short, a list of high-fibre foods, and simple meal-by-meal swaps. Includes the two rules that stop a fibre increase turning into bloating."
 try_this:
   - "Swap tomorrow's breakfast cereal for porridge or a plain wholewheat biscuit cereal and add a handful of fruit."
   - "Buy one tin of beans, lentils or chickpeas and tip it into something you already cook this week."

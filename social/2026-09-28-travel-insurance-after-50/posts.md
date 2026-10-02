@@ -1,8 +1,8 @@
 ## facebook
 
-Premiums rise after 50 and every condition must be declared. Here's how travel insurance really works — UK and US.
+Premiums rise with age and every condition must be declared. Here's how travel insurance really works — UK and US.
 
-A plain guide to travel insurance for people over 50: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
+A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
 
 Declare everything you are asked, buy when you book, check the trip-length and age limits, and never rely on a GHIC or Medicare alone.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/travel/travel-insurance-after
 
 ## instagram
 
-Premiums rise after 50 and every condition must be declared. Here's how travel insurance really works — UK and US.
+Premiums rise with age and every condition must be declared. Here's how travel insurance really works — UK and US.
 
 Declare everything you are asked, buy when you book, check the trip-length and age limits, and never rely on a GHIC or Medicare alone.
 
@@ -20,17 +20,17 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-Premiums rise after 50 and every condition must be declared. Here's how travel insurance really works — UK and US. Declare everything you are asked, buy when you book, check the trip-length and age…
+Premiums rise with age and every condition must be declared. Here's how travel insurance really works — UK and US. Declare everything you are asked, buy when you book, check the trip-length and age…
 
 https://dontdieretired.com/travel/travel-insurance-after-50/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ Premiums rise after 50 and every condition must be declared. Here's how travel insurance really works — UK and US.
+1/ Premiums rise with age and every condition must be declared. Here's how travel insurance really works — UK and US.
 
 ---
 
-2/ A plain guide to travel insurance for people over 50: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
+2/ A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
 
 ---
 
@@ -46,9 +46,9 @@ Travel insurance: what changes as you get older, what to declare, and where to c
 
 ## linkedin
 
-Premiums rise after 50 and every condition must be declared. Here's how travel insurance really works — UK and US.
+Premiums rise with age and every condition must be declared. Here's how travel insurance really works — UK and US.
 
-A plain guide to travel insurance for people over 50: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
+A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
 
 Why it matters for anyone over 50: Declare everything you are asked, buy when you book, check the trip-length and age limits, and never rely on a GHIC or Medicare alone.
 

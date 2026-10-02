@@ -10,7 +10,7 @@ level: any
 hook: "Returnships are real, the gap is easier to explain than you think, and the free training routes are better than most people know."
 lesson: "Treat the return as a project: a rewritten CV, one honest line about the break, three practice interviews and one short course."
 standfirst: "Caring, illness, redundancy or simply a pause — a career break in your fifties or sixties does not close the door. Here is how to walk back through it, with the programmes and free courses that exist to help."
-summary: "How to return to work after a career break in your 50s or 60s: what returner programmes and returnships are, how to update a CV (résumé in the US), how to handle the gap honestly, interview practice, and the free upskilling routes in the UK (Skills Bootcamps, Multiply, Free Courses for Jobs) and the US (community colleges, AARP Foundation's BACK TO WORK 50+)."
+summary: "How to return to work after a career break: what returner programmes and returnships are, how to update a CV (résumé in the US), how to handle the gap honestly, interview practice, and the free upskilling routes in the UK (Skills Bootcamps, Multiply, Free Courses for Jobs) and the US (community colleges, AARP Foundation's BACK TO WORK 50+)."
 try_this:
   - "Rewrite the top third of your CV (résumé) so the first thing a reader sees is what you can do now, not the date you last worked."
   - "Write and say aloud one plain sentence about your break — what you did, and that you are ready to return — until it sounds like you."

@@ -10,8 +10,8 @@ segments: [learner, carer, restarter]
 level: any
 hook: "You cannot break your phone by tapping the wrong thing. Here is the confident, scam-proof way to use it."
 lesson: "Fix five settings, protect your email, learn the scam patterns and set one weekly video call — the rest follows."
-standfirst: "Most people over 50 use a smartphone every day and still feel one wrong tap from disaster. This guide is the calm version: what actually matters, what to ignore, and where to get free help."
-summary: "A start-here guide to using your phone and the internet with confidence after 50: the settings worth changing, passwords and two-factor authentication, how scams give themselves away, video calls, photo backup, online banking and where to find free help in the UK and US."
+standfirst: "Plenty of people use a smartphone every day and still feel one wrong tap from disaster. This guide is the calm version: what actually matters, what to ignore, and where to get free help."
+summary: "A start-here guide to using your phone and the internet with confidence: the settings worth changing, passwords and two-factor authentication, how scams give themselves away, video calls, photo backup, online banking and where to find free help in the UK and US."
 try_this:
   - "Turn on two-step verification for your email account today — it is the one account that unlocks all the others."
   - "Make your phone's text size one notch bigger and add one emergency contact to your Medical ID (iPhone) or Safety app (Android)."

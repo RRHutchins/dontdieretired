@@ -8,10 +8,10 @@ category: think
 tags: [brain, memory, learning, dementia, sleep, hearing, beginner]
 segments: [learner, restarter, carer]
 level: any
-hook: "Forgetting a name is normal at 60. The levers that protect your brain are mostly not puzzles — and they are cheap."
+hook: "Forgetting a name is normal at any age. The levers that protect your brain are mostly not puzzles — and they are cheap."
 lesson: "Move, sleep, get your hearing and blood pressure checked, see people, and learn one real thing properly."
-standfirst: "Everyone over 50 has had the moment: the word on the tip of the tongue, the walk into a room with no idea why. Here is what is normal, what is not, and what the evidence says actually helps."
-summary: "A plain guide to cognitive ageing after 50: the difference between normal forgetfulness and something to raise with a GP, the levers with real evidence behind them, and an honest look at brain-training apps. Start here for the Think section."
+standfirst: "Most of us have had the moment: the word on the tip of the tongue, the walk into a room with no idea why. Here is what is normal, what is not, and what the evidence says actually helps."
+summary: "A plain guide to cognitive ageing: the difference between normal forgetfulness and something to raise with a GP, the levers with real evidence behind them, and an honest look at brain-training apps. Start here for the Think section."
 try_this:
   - "Book a hearing test. Most UK high-street opticians and pharmacies offer one free; in the US, ask your doctor or an audiologist."
   - "Pick one thing you have always wanted to learn and put a 20-minute slot for it in your diary on three days this week."

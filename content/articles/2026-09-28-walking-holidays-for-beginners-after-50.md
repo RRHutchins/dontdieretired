@@ -9,8 +9,8 @@ segments: [restarter, mover, carer]
 level: starter
 hook: "You don't need to be a hiker. Pick the right daily distance, send your bag ahead, and walk a famous route at your own pace."
 lesson: "Choose a route by its daily distance, not its fame; walk that distance at home first; and let a baggage-transfer company carry the heavy bag."
-standfirst: "A walking holiday is the simplest form of slow travel: you move at three miles an hour and see everything. Here is how a beginner over 50 chooses a route in the UK, Spain or the US, picks a sensible daily distance, and avoids carrying a rucksack up a hill."
-summary: "A beginner's guide to walking holidays after 50: UK National Trails such as the South Downs Way and Hadrian's Wall Path, the Camino to Santiago, US National Park trails, how to choose a daily distance, baggage transfer, and where the Ramblers fit in."
+standfirst: "A walking holiday is the simplest form of slow travel: you move at three miles an hour and see everything. Here is how a beginner chooses a route in the UK, Spain or the US, picks a sensible daily distance, and avoids carrying a rucksack up a hill."
+summary: "A beginner's guide to walking holidays: UK National Trails such as the South Downs Way and Hadrian's Wall Path, the Camino to Santiago, US National Park trails, how to choose a daily distance, baggage transfer, and where the Ramblers fit in."
 try_this:
   - "Walk the daily distance of the route you fancy — say 12 miles (20 km) — once this week, in the shoes you would take."
   - "Look up your nearest Ramblers group or Wellbeing Walk and join one to see how a led walk feels."

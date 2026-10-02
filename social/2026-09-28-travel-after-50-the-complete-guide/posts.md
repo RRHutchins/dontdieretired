@@ -1,8 +1,8 @@
 ## facebook
 
-More time, less rush. The start-here guide to travelling after 50 — slower, longer, and properly insured.
+More time, less rush. The start-here guide to travelling well — slower, longer, and properly insured.
 
-A plain-English overview of travelling after 50: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
+A plain-English overview of travelling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
 
 Go to fewer places for longer, travel by land where you can, sort insurance and health early, and let the trip be unhurried.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/travel/travel-after-50-the-co
 
 ## instagram
 
-More time, less rush. The start-here guide to travelling after 50 — slower, longer, and properly insured.
+More time, less rush. The start-here guide to travelling well — slower, longer, and properly insured.
 
 Go to fewer places for longer, travel by land where you can, sort insurance and health early, and let the trip be unhurried.
 
@@ -20,17 +20,17 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-More time, less rush. The start-here guide to travelling after 50 — slower, longer, and properly insured. Go to fewer places for longer, travel by land where you can, sort insurance and health early,…
+More time, less rush. The start-here guide to travelling well — slower, longer, and properly insured. Go to fewer places for longer, travel by land where you can, sort insurance and health early, and…
 
 https://dontdieretired.com/travel/travel-after-50-the-complete-guide/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ More time, less rush. The start-here guide to travelling after 50 — slower, longer, and properly insured.
+1/ More time, less rush. The start-here guide to travelling well — slower, longer, and properly insured.
 
 ---
 
-2/ A plain-English overview of travelling after 50: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
+2/ A plain-English overview of travelling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
 
 ---
 
@@ -46,9 +46,9 @@ Travel: the complete guide to going further, slower and for longer | Go to fewer
 
 ## linkedin
 
-More time, less rush. The start-here guide to travelling after 50 — slower, longer, and properly insured.
+More time, less rush. The start-here guide to travelling well — slower, longer, and properly insured.
 
-A plain-English overview of travelling after 50: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
+A plain-English overview of travelling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
 
 Why it matters for anyone over 50: Go to fewer places for longer, travel by land where you can, sort insurance and health early, and let the trip be unhurried.
 

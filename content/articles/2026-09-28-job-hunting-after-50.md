@@ -8,9 +8,9 @@ tags: [job-search, cv, resume, age-discrimination, employers, equality-act, adea
 segments: [changer, restarter]
 level: any
 hook: "The law is on your side at 40 in the US and at any age in the UK. Your CV just needs to stop volunteering your birth year."
-lesson: "Trim the CV to the last ten years, know the two laws that protect you, and look first at employers who have publicly signed up to hiring over-50s."
+lesson: "Trim the CV to the last ten years, know the two laws that protect you, and look first at employers who have publicly signed up to age-friendly hiring."
 standfirst: "Looking for work in your fifties or sixties is a different game from the one you played at 30, but it is a game with rules. Here they are: what goes on the CV, what the law says, and which employers have put their names to hiring people your age."
-summary: "Practical CV and résumé advice for over-50s from the National Careers Service and AARP, a plain summary of the Equality Act 2010 and the US Age Discrimination in Employment Act with the time limits for complaints, and how to find employers signed up to the Age-friendly Employer Pledge and the AARP Employer Pledge."
+summary: "Practical CV and résumé advice from the National Careers Service and AARP, a plain summary of the Equality Act 2010 and the US Age Discrimination in Employment Act with the time limits for complaints, and how to find employers signed up to the Age-friendly Employer Pledge and the AARP Employer Pledge."
 try_this:
   - "Cut your CV to the last ten years of experience and delete every graduation date."
   - "Search the Centre for Ageing Better's list of Age-friendly Employer Pledge signatories (UK) or filter the AARP Job Board by pledge employers (US)."

@@ -1,6 +1,6 @@
 ## facebook
 
-Twenty minutes online tells you the biggest number in your retirement. Most people over 50 have never looked.
+Twenty minutes online tells you the biggest number in your retirement. Most people have never looked.
 
 How to get your UK State Pension forecast or US Social Security Statement, what the figures and dates mean, how National Insurance gaps and voluntary contributions work, and how claiming at 62, 67 or 70 changes a US benefit. General information, not financial advice.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/money/check-your-state-pensio
 
 ## instagram
 
-Twenty minutes online tells you the biggest number in your retirement. Most people over 50 have never looked.
+Twenty minutes online tells you the biggest number in your retirement. Most people have never looked.
 
 Log in, read your own forecast, and check for gaps while you still have years to fill them.
 
@@ -20,13 +20,13 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-Twenty minutes online tells you the biggest number in your retirement. Most people over 50 have never looked. Log in, read your own forecast, and check for gaps while you still have years to fill…
+Twenty minutes online tells you the biggest number in your retirement. Most people have never looked. Log in, read your own forecast, and check for gaps while you still have years to fill them.
 
 https://dontdieretired.com/money/check-your-state-pension-forecast-or-social-security-statement/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ Twenty minutes online tells you the biggest number in your retirement. Most people over 50 have never looked.
+1/ Twenty minutes online tells you the biggest number in your retirement. Most people have never looked.
 
 ---
 
@@ -46,7 +46,7 @@ Check your State Pension forecast or Social Security statement: what the numbers
 
 ## linkedin
 
-Twenty minutes online tells you the biggest number in your retirement. Most people over 50 have never looked.
+Twenty minutes online tells you the biggest number in your retirement. Most people have never looked.
 
 How to get your UK State Pension forecast or US Social Security Statement, what the figures and dates mean, how National Insurance gaps and voluntary contributions work, and how claiming at 62, 67 or 70 changes a US benefit. General information, not financial advice.
 

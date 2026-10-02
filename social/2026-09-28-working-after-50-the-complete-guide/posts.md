@@ -1,8 +1,8 @@
 ## facebook
 
-Working after 50 is not one decision. It is six options, a few rules worth knowing, and a way of choosing.
+Working later in your career is not one decision. It is six options, a few rules worth knowing, and a way of choosing.
 
-A start-here guide to working after 50 in the UK and US: staying or pivoting in employment, part-time, consulting, a small business, portfolio and seasonal work. It covers age discrimination law and how pensions and Social Security interact with earnings, and ends with a way to choose.
+A start-here guide to working later in your career in the UK and US: staying or pivoting in employment, part-time, consulting, a small business, portfolio and seasonal work. It covers age discrimination law and how pensions and Social Security interact with earnings, and ends with a way to choose.
 
 Pick the shape of work that fits the life you want next, test it small, and let the law and the pension rules work for you rather than against you.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/earn/working-after-50-the-com
 
 ## instagram
 
-Working after 50 is not one decision. It is six options, a few rules worth knowing, and a way of choosing.
+Working later in your career is not one decision. It is six options, a few rules worth knowing, and a way of choosing.
 
 Pick the shape of work that fits the life you want next, test it small, and let the law and the pension rules work for you rather than against you.
 
@@ -20,17 +20,17 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-Working after 50 is not one decision. It is six options, a few rules worth knowing, and a way of choosing. Pick the shape of work that fits the life you want next, test it small, and let the law and…
+Working later in your career is not one decision. It is six options, a few rules worth knowing, and a way of choosing. Pick the shape of work that fits the life you want next, test it small, and let…
 
 https://dontdieretired.com/earn/working-after-50-the-complete-guide/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ Working after 50 is not one decision. It is six options, a few rules worth knowing, and a way of choosing.
+1/ Working later in your career is not one decision. It is six options, a few rules worth knowing, and a way of choosing.
 
 ---
 
-2/ A start-here guide to working after 50 in the UK and US: staying or pivoting in employment, part-time, consulting, a small business, portfolio and seasonal work. It covers age discrimination law and how pensions and Social Security interact with earnings, and ends with a way to choose.
+2/ A start-here guide to working later in your career in the UK and US: staying or pivoting in employment, part-time, consulting, a small business, portfolio and seasonal work. It covers age discrimination law and how pensions and Social Security interact with earnings, and ends with a way to choose.
 
 ---
 
@@ -46,9 +46,9 @@ Work on your terms: the complete guide to second careers, side incomes and going
 
 ## linkedin
 
-Working after 50 is not one decision. It is six options, a few rules worth knowing, and a way of choosing.
+Working later in your career is not one decision. It is six options, a few rules worth knowing, and a way of choosing.
 
-A start-here guide to working after 50 in the UK and US: staying or pivoting in employment, part-time, consulting, a small business, portfolio and seasonal work. It covers age discrimination law and how pensions and Social Security interact with earnings, and ends with a way to choose.
+A start-here guide to working later in your career in the UK and US: staying or pivoting in employment, part-time, consulting, a small business, portfolio and seasonal work. It covers age discrimination law and how pensions and Social Security interact with earnings, and ends with a way to choose.
 
 Why it matters for anyone over 50: Pick the shape of work that fits the life you want next, test it small, and let the law and the pension rules work for you rather than against you.
 

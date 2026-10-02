@@ -2,7 +2,7 @@
 
 People with no musical training took up piano at 69 and got measurably better in a year. Age didn't predict who improved.
 
-A practical guide to starting an instrument after 50: choosing one for your hands, hearing, space and budget, structuring short daily practice, finding a teacher or group, and what to expect at one month, three months and a year.
+A practical guide to starting an instrument as an adult: choosing one for your hands, hearing, space and budget, structuring short daily practice, finding a teacher or group, and what to expect at one month, three months and a year.
 
 Pick an instrument that suits your hands, ears and home, then practise 20 minutes most days with a teacher or group in the loop.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/think/learning-a-musical-instrument-later-in-life/?ut
 
 ---
 
-2/ A practical guide to starting an instrument after 50: choosing one for your hands, hearing, space and budget, structuring short daily practice, finding a teacher or group, and what to expect at one month, three months and a year.
+2/ A practical guide to starting an instrument as an adult: choosing one for your hands, hearing, space and budget, structuring short daily practice, finding a teacher or group, and what to expect at one month, three months and a year.
 
 ---
 
@@ -48,7 +48,7 @@ Taking up a musical instrument as an adult | Pick an instrument that suits your 
 
 People with no musical training took up piano at 69 and got measurably better in a year. Age didn't predict who improved.
 
-A practical guide to starting an instrument after 50: choosing one for your hands, hearing, space and budget, structuring short daily practice, finding a teacher or group, and what to expect at one month, three months and a year.
+A practical guide to starting an instrument as an adult: choosing one for your hands, hearing, space and budget, structuring short daily practice, finding a teacher or group, and what to expect at one month, three months and a year.
 
 Why it matters for anyone over 50: Pick an instrument that suits your hands, ears and home, then practise 20 minutes most days with a teacher or group in the loop.
 

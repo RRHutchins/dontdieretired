@@ -8,10 +8,10 @@ category: eat
 tags: [protein, cooking, hydration, bones, beginner, budget]
 segments: [restarter, mover, carer]
 level: any
-hook: "After 50 you need fewer calories but more of the good stuff. Here's how to eat well without a diet."
+hook: "With age you need fewer calories but more of the good stuff. Here's how to eat well without a diet."
 lesson: "Forget diets — build every day around protein, plants, fibre, fluids and a bit of planning, and let the rest look after itself."
-standfirst: "Your body's needs shift quietly after 50: appetite drops, thirst dulls, muscle and bone need more looking after. This is the start-here guide to eating well through all of it — no fads, no calorie counting."
-summary: "A plain-English guide to eating well after 50, built on NHS, BDA and US Dietary Guidelines advice. What changes with age, how to get enough protein, fibre, calcium and vitamin D, sensible drinking, cooking for one or two, and why diets fail."
+standfirst: "Your body's needs shift quietly with age: appetite drops, thirst dulls, muscle and bone need more looking after. This is the start-here guide to eating well through all of it — no fads, no calorie counting."
+summary: "A plain-English guide to eating well, built on NHS, BDA and US Dietary Guidelines advice. What changes with age, how to get enough protein, fibre, calcium and vitamin D, sensible drinking, cooking for one or two, and why diets fail."
 try_this:
   - "At your next three breakfasts, add one protein food you don't usually have — an egg, a pot of Greek yoghurt, a handful of nuts on the porridge."
   - "Put a glass or mug in the same spot on the kitchen worktop and refill it every time you walk past. Six to eight a day is the target."

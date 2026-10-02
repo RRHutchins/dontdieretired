@@ -9,8 +9,8 @@ segments: [restarter, learner, changer]
 level: any
 hook: "A month in one place costs less per day and gives you more. Here's the 90/180 rule, visa basics, house-sitting and renting abroad."
 lesson: "Count your Schengen days, check passport and entry rules early, treat a house-sit as a job with a bed attached, and verify any rental before you pay."
-standfirst: "The best trips after 50 are often the ones where you unpack once. This article covers the practicalities of staying 30 to 90 days: the Schengen 90/180 rule and new EU border systems, visa basics for UK and US travellers, how house-sitting works, and how to rent abroad without being scammed."
-summary: "A guide to long stays after 50: how the Schengen 90-in-180-day rule works for UK and US passport holders, the EU Entry/Exit System and ETIAS, when you need a visa, what house-sitting platforms involve, and how to rent an apartment abroad safely using FTC guidance."
+standfirst: "The best trips are often the ones where you unpack once. This article covers the practicalities of staying 30 to 90 days: the Schengen 90/180 rule and new EU border systems, visa basics for UK and US travellers, how house-sitting works, and how to rent abroad without being scammed."
+summary: "A guide to long stays: how the Schengen 90-in-180-day rule works for UK and US passport holders, the EU Entry/Exit System and ETIAS, when you need a visa, what house-sitting platforms involve, and how to rent an apartment abroad safely using FTC guidance."
 try_this:
   - "Count the days you have spent in the Schengen area in the last 180 and write the number down."
   - "Check your passport's issue date and expiry date against the rules for your destination."

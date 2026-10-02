@@ -7,10 +7,10 @@ category: travel
 tags: [solo, slow-travel, safety, group-tours, community, beginner]
 segments: [restarter, learner, carer]
 level: any
-hook: "Travelling alone after 50 is common, safe with a few habits, and often the best company you'll have. Here's how."
+hook: "Travelling alone is common, safe with a few habits, and often the best company you'll have. Here's how."
 lesson: "Book the first night, tell someone your plan, use structure to meet people, and ask about single supplements before you pay."
-standfirst: "Whether by choice or circumstance, a lot of people over 50 travel on their own. Done with a few habits it is safe, sociable and freeing. This article covers the safety basics from official sources, how group tours work for solo travellers, the single-supplement problem, and how to meet people without trying too hard."
-summary: "A practical guide to solo travel after 50: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip."
+standfirst: "Whether by choice or circumstance, a lot of people travel on their own. Done with a few habits it is safe, sociable and freeing. This article covers the safety basics from official sources, how group tours work for solo travellers, the single-supplement problem, and how to meet people without trying too hard."
+summary: "A practical guide to solo travel: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip."
 try_this:
   - "Agree a check-in rhythm with one person at home — every evening, or every Sunday — and put it in both your diaries."
   - "Book a two-night solo trip somewhere in your own country as a rehearsal."

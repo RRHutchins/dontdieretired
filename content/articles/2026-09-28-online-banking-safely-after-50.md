@@ -10,7 +10,7 @@ level: any
 hook: "A genuine bank won't mind waiting while you think. A scammer can't afford to. That one difference does most of the work."
 lesson: "Never move money or share a code because someone told you to on the phone. Hang up, call the bank on the number on your card (or 159 in the UK), and check the payee name matches before you pay."
 standfirst: "Online banking is safer than a chequebook — if you know the handful of rules the scammers rely on you not knowing. Here is how banks actually contact you, the requests they will never make, the UK's name-check on payments, and the exact steps to take if money has already gone."
-summary: "Plain guidance from the FCA, FTC, CFPB, Financial Ombudsman and Gov.uk on banking safely online after 50: the warning signs of a scam, what a real bank never asks for, how Confirmation of Payee works in the UK, the UK reimbursement rules for bank-transfer scams, and where to report in the UK and US."
+summary: "Plain guidance from the FCA, FTC, CFPB, Financial Ombudsman and Gov.uk on banking safely online: the warning signs of a scam, what a real bank never asks for, how Confirmation of Payee works in the UK, the UK reimbursement rules for bank-transfer scams, and where to report in the UK and US."
 try_this:
   - "Write the phone number from the back of your bank card on a sticky note by the landline. That is the only number you ring the bank on."
   - "Next time you set up a new payee, read the Confirmation of Payee result out loud before you confirm — and stop if it says no match."

@@ -2,7 +2,7 @@
 
 You don't need to be a hiker. Pick the right daily distance, send your bag ahead, and walk a famous route at your own pace.
 
-A beginner's guide to walking holidays after 50: UK National Trails such as the South Downs Way and Hadrian's Wall Path, the Camino to Santiago, US National Park trails, how to choose a daily distance, baggage transfer, and where the Ramblers fit in.
+A beginner's guide to walking holidays: UK National Trails such as the South Downs Way and Hadrian's Wall Path, the Camino to Santiago, US National Park trails, how to choose a daily distance, baggage transfer, and where the Ramblers fit in.
 
 Choose a route by its daily distance, not its fame; walk that distance at home first; and let a baggage-transfer company carry the heavy bag.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/travel/walking-holidays-for-beginners-after-50/?utm_s
 
 ---
 
-2/ A beginner's guide to walking holidays after 50: UK National Trails such as the South Downs Way and Hadrian's Wall Path, the Camino to Santiago, US National Park trails, how to choose a daily distance, baggage transfer, and where the Ramblers fit in.
+2/ A beginner's guide to walking holidays: UK National Trails such as the South Downs Way and Hadrian's Wall Path, the Camino to Santiago, US National Park trails, how to choose a daily distance, baggage transfer, and where the Ramblers fit in.
 
 ---
 
@@ -48,7 +48,7 @@ Walking holidays for beginners: how to choose a route you'll actually enjoy | Ch
 
 You don't need to be a hiker. Pick the right daily distance, send your bag ahead, and walk a famous route at your own pace.
 
-A beginner's guide to walking holidays after 50: UK National Trails such as the South Downs Way and Hadrian's Wall Path, the Camino to Santiago, US National Park trails, how to choose a daily distance, baggage transfer, and where the Ramblers fit in.
+A beginner's guide to walking holidays: UK National Trails such as the South Downs Way and Hadrian's Wall Path, the Camino to Santiago, US National Park trails, how to choose a daily distance, baggage transfer, and where the Ramblers fit in.
 
 Why it matters for anyone over 50: Choose a route by its daily distance, not its fame; walk that distance at home first; and let a baggage-transfer company carry the heavy bag.
 

@@ -9,7 +9,7 @@ segments: [changer, learner]
 level: any
 hook: "Somebody will pay for thirty years of your judgement by the day. The work is naming the problem you solve and telling ten people."
 lesson: "Package one specific problem you solve, price by the day or project rather than the hour, and get your first three clients from people who already trust you."
-standfirst: "Consulting is the fastest business to start after 50 because the product already exists — it is you. What is missing is a clear offer, a sensible price and a short list of people to tell."
+standfirst: "Consulting is the fastest business to start because the product already exists — it is you. What is missing is a clear offer, a sensible price and a short list of people to tell."
 summary: "How to turn a long career into paid consulting or freelance work: packaging your expertise into a specific offer, the principles of pricing, finding your first three clients through your existing network, and the basics of contracts, invoicing and platforms."
 try_this:
   - "Write one sentence in the form 'I help [who] to [result] when [situation]'. Rewrite it until a stranger could repeat it back to you."

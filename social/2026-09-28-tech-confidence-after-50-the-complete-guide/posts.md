@@ -2,7 +2,7 @@
 
 You cannot break your phone by tapping the wrong thing. Here is the confident, scam-proof way to use it.
 
-A start-here guide to using your phone and the internet with confidence after 50: the settings worth changing, passwords and two-factor authentication, how scams give themselves away, video calls, photo backup, online banking and where to find free help in the UK and US.
+A start-here guide to using your phone and the internet with confidence: the settings worth changing, passwords and two-factor authentication, how scams give themselves away, video calls, photo backup, online banking and where to find free help in the UK and US.
 
 Fix five settings, protect your email, learn the scam patterns and set one weekly video call — the rest follows.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/tech/tech-confidence-after-50-the-complete-guide/?utm
 
 ---
 
-2/ A start-here guide to using your phone and the internet with confidence after 50: the settings worth changing, passwords and two-factor authentication, how scams give themselves away, video calls, photo backup, online banking and where to find free help in the UK and US.
+2/ A start-here guide to using your phone and the internet with confidence: the settings worth changing, passwords and two-factor authentication, how scams give themselves away, video calls, photo backup, online banking and where to find free help in the UK and US.
 
 ---
 
@@ -48,7 +48,7 @@ Tech confidence: the complete guide to your phone, your apps and staying safe on
 
 You cannot break your phone by tapping the wrong thing. Here is the confident, scam-proof way to use it.
 
-A start-here guide to using your phone and the internet with confidence after 50: the settings worth changing, passwords and two-factor authentication, how scams give themselves away, video calls, photo backup, online banking and where to find free help in the UK and US.
+A start-here guide to using your phone and the internet with confidence: the settings worth changing, passwords and two-factor authentication, how scams give themselves away, video calls, photo backup, online banking and where to find free help in the UK and US.
 
 Why it matters for anyone over 50: Fix five settings, protect your email, learn the scam patterns and set one weekly video call — the rest follows.
 

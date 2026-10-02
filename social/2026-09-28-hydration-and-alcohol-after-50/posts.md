@@ -1,6 +1,6 @@
 ## facebook
 
-After 50 your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough.
+As you get older your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough.
 
 Why older adults may not recognise thirst, how much to drink and how to make it automatic, the UK 14-unit guideline and US drink limits explained, the case for drink-free days, and when to talk to your GP.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/eat/hydration-and-alcohol-aft
 
 ## instagram
 
-After 50 your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough.
+As you get older your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough.
 
 Drink on a routine rather than on thirst, know what a unit or a standard drink is, and keep several alcohol-free days a week.
 
@@ -20,13 +20,13 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-After 50 your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough. Drink on a routine rather than on thirst, know what a unit or a standard drink is, and keep several…
+As you get older your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough. Drink on a routine rather than on thirst, know what a unit or a standard drink is, and keep…
 
 https://dontdieretired.com/eat/hydration-and-alcohol-after-50/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ After 50 your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough.
+1/ As you get older your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough.
 
 ---
 
@@ -46,7 +46,7 @@ Thirst, hydration and alcohol: what changes with age and what to do | Drink on a
 
 ## linkedin
 
-After 50 your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough.
+As you get older your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough.
 
 Why older adults may not recognise thirst, how much to drink and how to make it automatic, the UK 14-unit guideline and US drink limits explained, the case for drink-free days, and when to talk to your GP.
 

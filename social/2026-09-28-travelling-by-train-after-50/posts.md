@@ -1,8 +1,8 @@
 ## facebook
 
-Over 60? There's a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work.
+Older travellers get a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work.
 
-How rail travel works for people over 50: Interrail and Eurail senior passes, the UK Senior Railcard, Amtrak's senior discount, booking assistance, and what to expect on sleeper trains such as the Caledonian Sleeper, Nightjet and Amtrak roomettes.
+How rail travel works: Interrail and Eurail senior passes, the UK Senior Railcard, Amtrak's senior discount, booking assistance, and what to expect on sleeper trains such as the Caledonian Sleeper, Nightjet and Amtrak roomettes.
 
 Claim the age-based rail discounts, do the sums on a pass versus advance tickets, and use a sleeper to turn a travel day into a night's sleep.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/travel/travelling-by-train-af
 
 ## instagram
 
-Over 60? There's a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work.
+Older travellers get a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work.
 
 Claim the age-based rail discounts, do the sums on a pass versus advance tickets, and use a sleeper to turn a travel day into a night's sleep.
 
@@ -20,17 +20,17 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-Over 60? There's a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work. Claim the age-based rail discounts, do the sums on a pass…
+Older travellers get a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work. Claim the age-based rail discounts, do the sums on a pass…
 
 https://dontdieretired.com/travel/travelling-by-train-after-50/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ Over 60? There's a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work.
+1/ Older travellers get a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work.
 
 ---
 
-2/ How rail travel works for people over 50: Interrail and Eurail senior passes, the UK Senior Railcard, Amtrak's senior discount, booking assistance, and what to expect on sleeper trains such as the Caledonian Sleeper, Nightjet and Amtrak roomettes.
+2/ How rail travel works: Interrail and Eurail senior passes, the UK Senior Railcard, Amtrak's senior discount, booking assistance, and what to expect on sleeper trains such as the Caledonian Sleeper, Nightjet and Amtrak roomettes.
 
 ---
 
@@ -46,9 +46,9 @@ Travelling by train: passes, discounts and sleeper trains explained | Claim the 
 
 ## linkedin
 
-Over 60? There's a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work.
+Older travellers get a discount on almost every railway. Here's how Interrail, Eurail, the Senior Railcard, Amtrak and sleeper trains work.
 
-How rail travel works for people over 50: Interrail and Eurail senior passes, the UK Senior Railcard, Amtrak's senior discount, booking assistance, and what to expect on sleeper trains such as the Caledonian Sleeper, Nightjet and Amtrak roomettes.
+How rail travel works: Interrail and Eurail senior passes, the UK Senior Railcard, Amtrak's senior discount, booking assistance, and what to expect on sleeper trains such as the Caledonian Sleeper, Nightjet and Amtrak roomettes.
 
 Why it matters for anyone over 50: Claim the age-based rail discounts, do the sums on a pass versus advance tickets, and use a sleeper to turn a travel day into a night's sleep.
 

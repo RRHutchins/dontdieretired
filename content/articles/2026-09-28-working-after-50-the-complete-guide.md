@@ -8,10 +8,10 @@ category: earn
 tags: [business, purpose, changer, career, freelance, pensions, discrimination]
 segments: [changer, restarter, learner]
 level: any
-hook: "Working after 50 is not one decision. It is six options, a few rules worth knowing, and a way of choosing."
+hook: "Working later in your career is not one decision. It is six options, a few rules worth knowing, and a way of choosing."
 lesson: "Pick the shape of work that fits the life you want next, test it small, and let the law and the pension rules work for you rather than against you."
 standfirst: "Whether you want to stay, switch, cut down or start something of your own, this is the start-here guide: the options, the rules on age and pensions, and how to decide."
-summary: "A start-here guide to working after 50 in the UK and US: staying or pivoting in employment, part-time, consulting, a small business, portfolio and seasonal work. It covers age discrimination law and how pensions and Social Security interact with earnings, and ends with a way to choose."
+summary: "A start-here guide to working later in your career in the UK and US: staying or pivoting in employment, part-time, consulting, a small business, portfolio and seasonal work. It covers age discrimination law and how pensions and Social Security interact with earnings, and ends with a way to choose."
 try_this:
   - "Write down, in one line each, what you want work to give you over the next five years — money, people, purpose, structure, time. Rank them. That ranking is your filter for everything below."
   - "Pick one of the six options and spend one hour this week finding out the smallest possible version of it: one shift, one client, one conversation, one course."

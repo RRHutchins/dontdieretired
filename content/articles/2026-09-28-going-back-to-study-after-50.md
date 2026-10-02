@@ -7,10 +7,10 @@ category: think
 tags: [study, open-university, u3a, community-college, funding, online-courses]
 segments: [learner, changer]
 level: any
-hook: "You do not need A levels, a campus or a fortune. Here is where over-50s actually study, and who pays."
+hook: "You do not need A levels, a campus or a fortune. Here is where adult learners actually study, and who pays."
 lesson: "Choose the level of commitment you want — a free short course, a club, or a qualification — and look up the funding before you rule it out."
 standfirst: "From a free six-week online course to a part-time degree, there is a route back into formal learning for every budget and every amount of nerve. This is the map, for the UK and the US."
-summary: "The realistic options for studying after 50: the Open University, u3a, FutureLearn and Coursera, US community colleges and state tuition waivers for older residents, plus the UK Advanced Learner Loan, part-time student finance and the Lifelong Learning Entitlement."
+summary: "The realistic options for studying as an adult: the Open University, u3a, FutureLearn and Coursera, US community colleges and state tuition waivers for older residents, plus the UK Advanced Learner Loan, part-time student finance and the Lifelong Learning Entitlement."
 try_this:
   - "Join one free short course on FutureLearn or Coursera this week and do the first hour."
   - "Look up your local u3a (UK) or community college's continuing-education page (US) and read one course description that makes you curious."

@@ -11,7 +11,7 @@ level: any
 hook: "An AI assistant is a fluent helper that is sometimes wrong. Use it for drafts, check what matters, keep secrets out."
 lesson: "Treat an AI assistant as a quick, well-read helper whose work you check, and treat any urgent voice or video asking for money as unproven."
 standfirst: "AI assistants can draft a letter, untangle a confusing document and help you plan a trip. They can also state nonsense with complete confidence, and criminals use the same technology to fake voices and faces. This is the start-here guide to both sides."
-summary: "A start-here guide to AI for people over 50: what an AI assistant is, what it does well and badly, how to hold a first conversation, how to check its answers, what to keep private, how to use it before a health appointment and how to see through voice clones, deepfakes and fake reviews. It ends with free places to learn in the UK and US and a seven-day plan."
+summary: "A start-here guide to AI: what an AI assistant is, what it does well and badly, how to hold a first conversation, how to check its answers, what to keep private, how to use it before a health appointment and how to see through voice clones, deepfakes and fake reviews. It ends with free places to learn in the UK and US and a seven-day plan."
 try_this:
   - "Open one free AI assistant and ask it to explain something you already know well, such as your old job or your favourite recipe. Note what it gets right and wrong."
   - "Paste in a confusing paragraph from a letter, with names and account numbers removed, and ask for it in plain English."

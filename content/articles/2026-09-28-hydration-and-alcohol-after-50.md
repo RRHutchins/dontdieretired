@@ -7,9 +7,9 @@ category: eat
 tags: [hydration, alcohol, beginner, mindset]
 segments: [restarter, carer, mover]
 level: any
-hook: "After 50 your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough."
+hook: "As you get older your thirst signal gets quieter — so 'drink when you're thirsty' stops being good enough."
 lesson: "Drink on a routine rather than on thirst, know what a unit or a standard drink is, and keep several alcohol-free days a week."
-standfirst: "Two quiet changes after 50: you feel thirst less reliably, and alcohol hits harder. Here is what the NHS, the British Dietetic Association and the US guidelines say, and the habits that make it easy."
+standfirst: "Two quiet changes with age: you feel thirst less reliably, and alcohol hits harder. Here is what the NHS, the British Dietetic Association and the US guidelines say, and the habits that make it easy."
 summary: "Why older adults may not recognise thirst, how much to drink and how to make it automatic, the UK 14-unit guideline and US drink limits explained, the case for drink-free days, and when to talk to your GP."
 try_this:
   - "Pick three fixed 'drink points' in your day — with breakfast, with any tablets, and mid-afternoon — and have a full glass at each."

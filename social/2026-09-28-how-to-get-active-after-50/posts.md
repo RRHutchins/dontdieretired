@@ -2,7 +2,7 @@
 
 Four types of movement, one honest starting point, and the official guidelines in plain English.
 
-The complete starting guide to getting active after 50. Covers the four types of activity, what the UK, WHO and US guidelines recommend, starting from nothing, safety, choosing an activity and staying consistent.
+The complete starting guide to getting active. Covers the four types of activity, what the UK, WHO and US guidelines recommend, starting from nothing, safety, choosing an activity and staying consistent.
 
 Start with ten minutes of something you can do today, then add strength and balance twice a week.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/move/how-to-get-active-after-50/?utm_source=x&utm_med
 
 ---
 
-2/ The complete starting guide to getting active after 50. Covers the four types of activity, what the UK, WHO and US guidelines recommend, starting from nothing, safety, choosing an activity and staying consistent.
+2/ The complete starting guide to getting active. Covers the four types of activity, what the UK, WHO and US guidelines recommend, starting from nothing, safety, choosing an activity and staying consistent.
 
 ---
 
@@ -48,7 +48,7 @@ How to get active again: the complete starting guide | Start with ten minutes of
 
 Four types of movement, one honest starting point, and the official guidelines in plain English.
 
-The complete starting guide to getting active after 50. Covers the four types of activity, what the UK, WHO and US guidelines recommend, starting from nothing, safety, choosing an activity and staying consistent.
+The complete starting guide to getting active. Covers the four types of activity, what the UK, WHO and US guidelines recommend, starting from nothing, safety, choosing an activity and staying consistent.
 
 Why it matters for anyone over 50: Start with ten minutes of something you can do today, then add strength and balance twice a week.
 

@@ -10,7 +10,7 @@ level: any
 hook: "Three ways to get money out of your home. All three cost more than the brochure says. Here is what to ask."
 lesson: "Price the whole move, not just the house; treat equity release and reverse mortgages as expensive loans; and ask the questions the regulators say to ask."
 standfirst: "Selling up, releasing equity or taking a reverse mortgage can all free up money in later life. Each has real costs and real consequences for benefits, inheritance and where you live. This is what the official sources say to check before you decide."
-summary: "A plain guide to the three ways of releasing money from your home after 50: selling and downsizing, equity release in the UK, and reverse mortgages in the US. What each costs, what it does to benefits and inheritance, and the questions MoneyHelper, Age UK, the CFPB and the FTC say to ask. General information, not financial advice."
+summary: "A plain guide to the three ways of releasing money from your home: selling and downsizing, equity release in the UK, and reverse mortgages in the US. What each costs, what it does to benefits and inheritance, and the questions MoneyHelper, Age UK, the CFPB and the FTC say to ask. General information, not financial advice."
 try_this:
   - "Add up every cost of a move, both sides, using MoneyHelper's list, and write the total next to the price difference between your current home and the one you'd buy."
   - "If equity release or a reverse mortgage is on your mind, write down what the money is for and what you'd do if you later needed to move or fund care."

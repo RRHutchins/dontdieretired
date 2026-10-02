@@ -10,7 +10,7 @@ level: any
 hook: "People with no musical training took up piano at 69 and got measurably better in a year. Age didn't predict who improved."
 lesson: "Pick an instrument that suits your hands, ears and home, then practise 20 minutes most days with a teacher or group in the loop."
 standfirst: "The ukulele, the piano, the recorder your grandchild abandoned. Here is how to choose, how to practise, and what progress honestly looks like."
-summary: "A practical guide to starting an instrument after 50: choosing one for your hands, hearing, space and budget, structuring short daily practice, finding a teacher or group, and what to expect at one month, three months and a year."
+summary: "A practical guide to starting an instrument as an adult: choosing one for your hands, hearing, space and budget, structuring short daily practice, finding a teacher or group, and what to expect at one month, three months and a year."
 try_this:
   - "Borrow or rent before you buy. Music shops and some libraries lend instruments; a month's rental tells you more than any review."
   - "Book one lesson — not a term — with a teacher who has taught adult beginners before."

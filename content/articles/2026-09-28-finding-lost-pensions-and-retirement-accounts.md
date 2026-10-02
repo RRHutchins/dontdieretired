@@ -9,7 +9,7 @@ segments: [restarter, changer, carer]
 level: any
 hook: "That job you left in 1998 may still be holding money with your name on it. Here is how to find it, for free."
 lesson: "List every employer, run the official tracing services, then decide about combining pots slowly and only after checking what you'd lose."
-standfirst: "Most people over 50 have had more jobs than they have pension statements. The UK and US both run free official services to help you track old pots down, and there is a right order to do it in."
+standfirst: "Most people have had more jobs than they have pension statements. The UK and US both run free official services to help you track old pots down, and there is a right order to do it in."
 summary: "How to trace lost workplace and personal pensions using the UK Pension Tracing Service and MoneyHelper's four-step method, and lost US 401(k)s and pensions using the Department of Labor's Retirement Savings Lost and Found, PBGC and state unclaimed property. Plus what to check before consolidating. General information, not financial advice."
 try_this:
   - "Write a list of every employer you have ever had, with rough start and end dates, even the six-month ones."

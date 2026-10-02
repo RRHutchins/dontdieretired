@@ -10,7 +10,7 @@ level: starter
 hook: "From ten minutes a day to a proper half-hour walk in eight weeks — no kit, no gym, no heroics."
 lesson: "Walk a little most days, add a few minutes each week, and let the pace come to you."
 standfirst: "Walking is the exercise almost everyone can start today. This plan takes you from ten minutes to thirty-plus, at a pace that counts, without wrecking your knees or your enthusiasm."
-summary: "A progressive eight-week walking plan for people over 50 who are starting from little or nothing, with a week-by-week table, advice on shoes, pace and hills, and how to find a walking group in the UK or US."
+summary: "A progressive eight-week walking plan for people who are starting from little or nothing, with a week-by-week table, advice on shoes, pace and hills, and how to find a walking group in the UK or US."
 try_this:
   - "Do the Week 1 walk today: ten minutes out of the door and back, at a pace where you can talk but not sing."
   - "Look up a Ramblers Wellbeing Walk (UK) or ask your local library or community centre (US) about walking groups this week."

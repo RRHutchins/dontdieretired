@@ -1,8 +1,8 @@
 ## facebook
 
-You do not need A levels, a campus or a fortune. Here is where over-50s actually study, and who pays.
+You do not need A levels, a campus or a fortune. Here is where adult learners actually study, and who pays.
 
-The realistic options for studying after 50: the Open University, u3a, FutureLearn and Coursera, US community colleges and state tuition waivers for older residents, plus the UK Advanced Learner Loan, part-time student finance and the Lifelong Learning Entitlement.
+The realistic options for studying as an adult: the Open University, u3a, FutureLearn and Coursera, US community colleges and state tuition waivers for older residents, plus the UK Advanced Learner Loan, part-time student finance and the Lifelong Learning Entitlement.
 
 Choose the level of commitment you want — a free short course, a club, or a qualification — and look up the funding before you rule it out.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/think/going-back-to-study-aft
 
 ## instagram
 
-You do not need A levels, a campus or a fortune. Here is where over-50s actually study, and who pays.
+You do not need A levels, a campus or a fortune. Here is where adult learners actually study, and who pays.
 
 Choose the level of commitment you want — a free short course, a club, or a qualification — and look up the funding before you rule it out.
 
@@ -20,17 +20,17 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-You do not need A levels, a campus or a fortune. Here is where over-50s actually study, and who pays. Choose the level of commitment you want — a free short course, a club, or a qualification — and…
+You do not need A levels, a campus or a fortune. Here is where adult learners actually study, and who pays. Choose the level of commitment you want — a free short course, a club, or a qualification —…
 
 https://dontdieretired.com/think/going-back-to-study-after-50/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ You do not need A levels, a campus or a fortune. Here is where over-50s actually study, and who pays.
+1/ You do not need A levels, a campus or a fortune. Here is where adult learners actually study, and who pays.
 
 ---
 
-2/ The realistic options for studying after 50: the Open University, u3a, FutureLearn and Coursera, US community colleges and state tuition waivers for older residents, plus the UK Advanced Learner Loan, part-time student finance and the Lifelong Learning Entitlement.
+2/ The realistic options for studying as an adult: the Open University, u3a, FutureLearn and Coursera, US community colleges and state tuition waivers for older residents, plus the UK Advanced Learner Loan, part-time student finance and the Lifelong Learning Entitlement.
 
 ---
 
@@ -46,9 +46,9 @@ Going back to study: Open University, community colleges, free courses and how t
 
 ## linkedin
 
-You do not need A levels, a campus or a fortune. Here is where over-50s actually study, and who pays.
+You do not need A levels, a campus or a fortune. Here is where adult learners actually study, and who pays.
 
-The realistic options for studying after 50: the Open University, u3a, FutureLearn and Coursera, US community colleges and state tuition waivers for older residents, plus the UK Advanced Learner Loan, part-time student finance and the Lifelong Learning Entitlement.
+The realistic options for studying as an adult: the Open University, u3a, FutureLearn and Coursera, US community colleges and state tuition waivers for older residents, plus the UK Advanced Learner Loan, part-time student finance and the Lifelong Learning Entitlement.
 
 Why it matters for anyone over 50: Choose the level of commitment you want — a free short course, a club, or a qualification — and look up the funding before you rule it out.
 

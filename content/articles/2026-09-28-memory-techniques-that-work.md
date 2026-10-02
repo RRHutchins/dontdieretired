@@ -10,7 +10,7 @@ level: any
 hook: "Rereading and highlighting barely work. Testing yourself, spacing it out and sleeping on it do — at 25 or 75."
 lesson: "Test yourself instead of rereading, space the sessions out, and protect the night's sleep after you learn."
 standfirst: "These are study techniques, not medical treatments. They will help you learn a language, a score or a syllabus. They will not fix a memory problem that is worrying you — that is a conversation for your GP."
-summary: "Five evidence-backed memory techniques for learning after 50 — spaced repetition, retrieval practice, the memory palace, chunking and sleep — with an honest account of what the research shows and where the limits are."
+summary: "Five evidence-backed memory techniques for learning at any age — spaced repetition, retrieval practice, the memory palace, chunking and sleep — with an honest account of what the research shows and where the limits are."
 try_this:
   - "Take whatever you are learning, close the book, and write down everything you can remember for five minutes. Then check. That is retrieval practice."
   - "Move tonight's study to the morning and tomorrow's to the evening, so there is a night's sleep between them."

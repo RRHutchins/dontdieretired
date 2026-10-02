@@ -1,8 +1,8 @@
 ## facebook
 
-Forgetting a name is normal at 60. The levers that protect your brain are mostly not puzzles — and they are cheap.
+Forgetting a name is normal at any age. The levers that protect your brain are mostly not puzzles — and they are cheap.
 
-A plain guide to cognitive ageing after 50: the difference between normal forgetfulness and something to raise with a GP, the levers with real evidence behind them, and an honest look at brain-training apps. Start here for the Think section.
+A plain guide to cognitive ageing: the difference between normal forgetfulness and something to raise with a GP, the levers with real evidence behind them, and an honest look at brain-training apps. Start here for the Think section.
 
 Move, sleep, get your hearing and blood pressure checked, see people, and learn one real thing properly.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/think/keeping-your-mind-sharp
 
 ## instagram
 
-Forgetting a name is normal at 60. The levers that protect your brain are mostly not puzzles — and they are cheap.
+Forgetting a name is normal at any age. The levers that protect your brain are mostly not puzzles — and they are cheap.
 
 Move, sleep, get your hearing and blood pressure checked, see people, and learn one real thing properly.
 
@@ -20,17 +20,17 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-Forgetting a name is normal at 60. The levers that protect your brain are mostly not puzzles — and they are cheap. Move, sleep, get your hearing and blood pressure checked, see people, and learn one…
+Forgetting a name is normal at any age. The levers that protect your brain are mostly not puzzles — and they are cheap. Move, sleep, get your hearing and blood pressure checked, see people, and learn…
 
 https://dontdieretired.com/think/keeping-your-mind-sharp-after-50/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ Forgetting a name is normal at 60. The levers that protect your brain are mostly not puzzles — and they are cheap.
+1/ Forgetting a name is normal at any age. The levers that protect your brain are mostly not puzzles — and they are cheap.
 
 ---
 
-2/ A plain guide to cognitive ageing after 50: the difference between normal forgetfulness and something to raise with a GP, the levers with real evidence behind them, and an honest look at brain-training apps. Start here for the Think section.
+2/ A plain guide to cognitive ageing: the difference between normal forgetfulness and something to raise with a GP, the levers with real evidence behind them, and an honest look at brain-training apps. Start here for the Think section.
 
 ---
 
@@ -46,9 +46,9 @@ Keeping your mind sharp: what actually works | Move, sleep, get your hearing and
 
 ## linkedin
 
-Forgetting a name is normal at 60. The levers that protect your brain are mostly not puzzles — and they are cheap.
+Forgetting a name is normal at any age. The levers that protect your brain are mostly not puzzles — and they are cheap.
 
-A plain guide to cognitive ageing after 50: the difference between normal forgetfulness and something to raise with a GP, the levers with real evidence behind them, and an honest look at brain-training apps. Start here for the Think section.
+A plain guide to cognitive ageing: the difference between normal forgetfulness and something to raise with a GP, the levers with real evidence behind them, and an honest look at brain-training apps. Start here for the Think section.
 
 Why it matters for anyone over 50: Move, sleep, get your hearing and blood pressure checked, see people, and learn one real thing properly.
 

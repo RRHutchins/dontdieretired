@@ -2,7 +2,7 @@
 
 Billions in benefits go unclaimed every year. A twenty-minute check might be the best-paid work you do this month.
 
-How to budget on a fixed income after 50 using MoneyHelper's free planner, where the free help is (MoneyHelper, Citizens Advice, Age UK, AARP), which benefits to check (Pension Credit in the UK; SNAP, Medicare Savings Programs and Extra Help in the US), and the household bills where money most often leaks. General information, not financial advice.
+How to budget on a fixed income using MoneyHelper's free planner, where the free help is (MoneyHelper, Citizens Advice, Age UK, AARP), which benefits to check (Pension Credit in the UK; SNAP, Medicare Savings Programs and Extra Help in the US), and the household bills where money most often leaks. General information, not financial advice.
 
 Build one honest monthly budget, run a free benefits check, then plug the two or three leaks that matter.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/money/living-well-on-less-after-50/?utm_source=x&utm_
 
 ---
 
-2/ How to budget on a fixed income after 50 using MoneyHelper's free planner, where the free help is (MoneyHelper, Citizens Advice, Age UK, AARP), which benefits to check (Pension Credit in the UK; SNAP, Medicare Savings Programs and Extra Help in the US), and the household bills where money most often leaks. General information, not financial advice.
+2/ How to budget on a fixed income using MoneyHelper's free planner, where the free help is (MoneyHelper, Citizens Advice, Age UK, AARP), which benefits to check (Pension Credit in the UK; SNAP, Medicare Savings Programs and Extra Help in the US), and the household bills where money most often leaks. General information, not financial advice.
 
 ---
 
@@ -48,7 +48,7 @@ Living well on less: budgeting on a fixed income, the free help, and where the m
 
 Billions in benefits go unclaimed every year. A twenty-minute check might be the best-paid work you do this month.
 
-How to budget on a fixed income after 50 using MoneyHelper's free planner, where the free help is (MoneyHelper, Citizens Advice, Age UK, AARP), which benefits to check (Pension Credit in the UK; SNAP, Medicare Savings Programs and Extra Help in the US), and the household bills where money most often leaks. General information, not financial advice.
+How to budget on a fixed income using MoneyHelper's free planner, where the free help is (MoneyHelper, Citizens Advice, Age UK, AARP), which benefits to check (Pension Credit in the UK; SNAP, Medicare Savings Programs and Extra Help in the US), and the household bills where money most often leaks. General information, not financial advice.
 
 Why it matters for anyone over 50: Build one honest monthly budget, run a free benefits check, then plug the two or three leaks that matter.
 

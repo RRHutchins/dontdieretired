@@ -7,10 +7,10 @@ category: connect
 tags: [volunteering, community, purpose, beginner, mindset]
 segments: [restarter, changer, carer, learner]
 level: any
-hook: "Volunteering is the fastest route to new people after 50 — and 75% of UK volunteers say it improved their mental wellbeing."
+hook: "Volunteering is the fastest route to new people — and 75% of UK volunteers say it improved their mental wellbeing."
 lesson: "Pick a role that uses one thing you can already do, commit to a month, and let the people and the purpose follow."
 standfirst: "A role gives you somewhere to be, something to do and people to do it with. Here is how to find one in the UK or US, what the surveys say volunteers get back, and a plan for your first month."
-summary: "How to start volunteering after 50: the UK and US directories worth using (NCVO, Do IT, Royal Voluntary Service, Age UK, AmeriCorps Seniors, VolunteerMatch), skills-based roles and trusteeships, what the evidence says about wellbeing, and a simple first-month plan."
+summary: "How to start volunteering: the UK and US directories worth using (NCVO, Do IT, Royal Voluntary Service, Age UK, AmeriCorps Seniors, VolunteerMatch), skills-based roles and trusteeships, what the evidence says about wellbeing, and a simple first-month plan."
 try_this:
   - "Search Do IT (UK) or VolunteerMatch (US) for roles within 5 miles of home and shortlist three you could actually do."
   - "Write down two things you are good at that a charity might need — spreadsheets, driving, listening, DIY, minute-taking."

@@ -2,7 +2,7 @@
 
 You don't need a spreadsheet the size of a house. You need one page, three official checks and a rule for scammers.
 
-A start-here guide to money after 50: net worth and cashflow on one page, checking your State Pension or Social Security forecast, workplace and private pensions, free guidance, scams, and the big decisions. General information, not financial advice.
+A start-here guide to your money: net worth and cashflow on one page, checking your State Pension or Social Security forecast, workplace and private pensions, free guidance, scams, and the big decisions. General information, not financial advice.
 
 Get your whole money picture onto one page, check your own State Pension or Social Security forecast, then decide the big questions slowly.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/money/money-after-50-the-complete-guide/?utm_source=x
 
 ---
 
-2/ A start-here guide to money after 50: net worth and cashflow on one page, checking your State Pension or Social Security forecast, workplace and private pensions, free guidance, scams, and the big decisions. General information, not financial advice.
+2/ A start-here guide to your money: net worth and cashflow on one page, checking your State Pension or Social Security forecast, workplace and private pensions, free guidance, scams, and the big decisions. General information, not financial advice.
 
 ---
 
@@ -48,7 +48,7 @@ Money: the complete guide to getting clear and making it last | Get your whole m
 
 You don't need a spreadsheet the size of a house. You need one page, three official checks and a rule for scammers.
 
-A start-here guide to money after 50: net worth and cashflow on one page, checking your State Pension or Social Security forecast, workplace and private pensions, free guidance, scams, and the big decisions. General information, not financial advice.
+A start-here guide to your money: net worth and cashflow on one page, checking your State Pension or Social Security forecast, workplace and private pensions, free guidance, scams, and the big decisions. General information, not financial advice.
 
 Why it matters for anyone over 50: Get your whole money picture onto one page, check your own State Pension or Social Security forecast, then decide the big questions slowly.
 

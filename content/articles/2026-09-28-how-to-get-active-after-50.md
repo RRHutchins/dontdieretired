@@ -11,7 +11,7 @@ level: starter
 hook: "Four types of movement, one honest starting point, and the official guidelines in plain English."
 lesson: "Start with ten minutes of something you can do today, then add strength and balance twice a week."
 standfirst: "Whether you have not exercised since school or you are simply out of the habit, this is the whole picture: what the guidelines actually say, where to begin, and how to keep going."
-summary: "The complete starting guide to getting active after 50. Covers the four types of activity, what the UK, WHO and US guidelines recommend, starting from nothing, safety, choosing an activity and staying consistent."
+summary: "The complete starting guide to getting active. Covers the four types of activity, what the UK, WHO and US guidelines recommend, starting from nothing, safety, choosing an activity and staying consistent."
 try_this:
   - "Walk briskly for ten minutes today — fast enough that you can talk but not sing. That is the whole task."
   - "Stand up from a chair and sit back down five times, slowly, without using your hands. Do it twice this week."

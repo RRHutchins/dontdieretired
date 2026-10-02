@@ -7,10 +7,10 @@ category: connect
 tags: [mens-sheds, parkrun, ramblers, u3a, clubs, volunteering, loneliness]
 segments: [restarter, carer]
 level: any
-hook: "Friendship after 50 rarely happens by accident. It happens at 9am on a Saturday in a park, or on a Tuesday in a shed."
+hook: "Adult friendship rarely happens by accident. It happens at 9am on a Saturday in a park, or on a Tuesday in a shed."
 lesson: "Pick one ready-made group that meets every week, turn up twice, and let regularity do the work."
-standfirst: "The clubs that work for making friends later in life have three things in common: they meet often, they have a job to do, and nobody minds a newcomer. Here are the ones with proven form, in the UK and the US, and how to survive the first visit."
-summary: "A guide to the groups that reliably turn strangers into friends after 50 — Men's Sheds, parkrun (running, walking or volunteering), Ramblers walks, u3a, libraries and Meetup — with what each is, how to find one, and a plain method for turning up the first time."
+standfirst: "The clubs that work for making friends as an adult have three things in common: they meet often, they have a job to do, and nobody minds a newcomer. Here are the ones with proven form, in the UK and the US, and how to survive the first visit."
+summary: "A guide to the groups that reliably turn strangers into friends — Men's Sheds, parkrun (running, walking or volunteering), Ramblers walks, u3a, libraries and Meetup — with what each is, how to find one, and a plain method for turning up the first time."
 try_this:
   - "Find your nearest parkrun, Ramblers group or Men's Shed on the relevant website and note the day and time."
   - "Go once this week and stay for the coffee afterwards."

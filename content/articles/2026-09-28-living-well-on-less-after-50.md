@@ -10,7 +10,7 @@ level: any
 hook: "Billions in benefits go unclaimed every year. A twenty-minute check might be the best-paid work you do this month."
 lesson: "Build one honest monthly budget, run a free benefits check, then plug the two or three leaks that matter."
 standfirst: "A fixed income is not a small life. It is a life that rewards knowing exactly where the money goes, claiming what you're entitled to, and fixing the handful of bills that quietly drain the rest."
-summary: "How to budget on a fixed income after 50 using MoneyHelper's free planner, where the free help is (MoneyHelper, Citizens Advice, Age UK, AARP), which benefits to check (Pension Credit in the UK; SNAP, Medicare Savings Programs and Extra Help in the US), and the household bills where money most often leaks. General information, not financial advice."
+summary: "How to budget on a fixed income using MoneyHelper's free planner, where the free help is (MoneyHelper, Citizens Advice, Age UK, AARP), which benefits to check (Pension Credit in the UK; SNAP, Medicare Savings Programs and Extra Help in the US), and the household bills where money most often leaks. General information, not financial advice."
 try_this:
   - "Fill in MoneyHelper's free Budget Planner with real bank statements, not guesses. Note the monthly figure it gives you."
   - "Run Age UK's benefits calculator (UK) or check your state's Medicaid site for Medicare Savings Programs (US). It takes twenty minutes."

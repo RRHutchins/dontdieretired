@@ -9,8 +9,8 @@ segments: [restarter, carer, changer]
 level: any
 hook: "Adult friendship runs on repeated, low-stakes contact. Join something weekly, go three times, and be the one who follows up."
 lesson: "Stop trying to make friends. Start turning up somewhere regularly, and let the friendships arrive as a side effect."
-standfirst: "Making friends at 25 happened by accident. At 55 it needs a little method — but far less courage than most people think."
-summary: "A practical guide to making friends after 50: why repeated, low-stakes contact beats one-off events, the difference between joining and attending, what to expect from the first three visits, how to follow up, and what to do if you are shy. With clearly hypothetical scripts you can adapt."
+standfirst: "Making friends at 25 happened by accident. Now it needs a little method — but far less courage than most people think."
+summary: "A practical guide to making friends as an adult: why repeated, low-stakes contact beats one-off events, the difference between joining and attending, what to expect from the first three visits, how to follow up, and what to do if you are shy. With clearly hypothetical scripts you can adapt."
 try_this:
   - "Choose one weekly activity and book the next three sessions, not one. Decide whether it is for you after the third."
   - "At your next group, ask one person one question about themselves and remember the answer for next week."

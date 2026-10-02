@@ -8,10 +8,10 @@ category: travel
 tags: [slow-travel, walking, trains, insurance, solo, budget, accessibility, beginner]
 segments: [restarter, mover, learner, carer]
 level: any
-hook: "More time, less rush. The start-here guide to travelling after 50 — slower, longer, and properly insured."
+hook: "More time, less rush. The start-here guide to travelling well — slower, longer, and properly insured."
 lesson: "Go to fewer places for longer, travel by land where you can, sort insurance and health early, and let the trip be unhurried."
-standfirst: "After 50 the calendar loosens and the body prefers not to be rushed. That is the perfect combination for a different kind of travel: fewer destinations, longer stays, trains instead of airports, and time to get to know a place. This is the start-here guide."
-summary: "A plain-English overview of travelling after 50: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides."
+standfirst: "With age the calendar loosens and the body prefers not to be rushed. That is the perfect combination for a different kind of travel: fewer destinations, longer stays, trains instead of airports, and time to get to know a place. This is the start-here guide."
+summary: "A plain-English overview of travelling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides."
 try_this:
   - "Check your passport's issue and expiry dates tonight against the rules for the country you most want to visit."
   - "Write down every medical condition, medicine and recent appointment on one sheet, ready for an insurance quote."

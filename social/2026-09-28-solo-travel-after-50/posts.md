@@ -1,8 +1,8 @@
 ## facebook
 
-Travelling alone after 50 is common, safe with a few habits, and often the best company you'll have. Here's how.
+Travelling alone is common, safe with a few habits, and often the best company you'll have. Here's how.
 
-A practical guide to solo travel after 50: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
+A practical guide to solo travel: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
 
 Book the first night, tell someone your plan, use structure to meet people, and ask about single supplements before you pay.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/travel/solo-travel-after-50/?
 
 ## instagram
 
-Travelling alone after 50 is common, safe with a few habits, and often the best company you'll have. Here's how.
+Travelling alone is common, safe with a few habits, and often the best company you'll have. Here's how.
 
 Book the first night, tell someone your plan, use structure to meet people, and ask about single supplements before you pay.
 
@@ -20,17 +20,17 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-Travelling alone after 50 is common, safe with a few habits, and often the best company you'll have. Here's how. Book the first night, tell someone your plan, use structure to meet people, and ask…
+Travelling alone is common, safe with a few habits, and often the best company you'll have. Here's how. Book the first night, tell someone your plan, use structure to meet people, and ask about…
 
 https://dontdieretired.com/travel/solo-travel-after-50/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ Travelling alone after 50 is common, safe with a few habits, and often the best company you'll have. Here's how.
+1/ Travelling alone is common, safe with a few habits, and often the best company you'll have. Here's how.
 
 ---
 
-2/ A practical guide to solo travel after 50: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
+2/ A practical guide to solo travel: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
 
 ---
 
@@ -46,9 +46,9 @@ Solo travel: staying safe, dodging the single supplement and meeting people | Bo
 
 ## linkedin
 
-Travelling alone after 50 is common, safe with a few habits, and often the best company you'll have. Here's how.
+Travelling alone is common, safe with a few habits, and often the best company you'll have. Here's how.
 
-A practical guide to solo travel after 50: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
+A practical guide to solo travel: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
 
 Why it matters for anyone over 50: Book the first night, tell someone your plan, use structure to meet people, and ask about single supplements before you pay.
 

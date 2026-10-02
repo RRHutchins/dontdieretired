@@ -2,7 +2,7 @@
 
 A genuine bank won't mind waiting while you think. A scammer can't afford to. That one difference does most of the work.
 
-Plain guidance from the FCA, FTC, CFPB, Financial Ombudsman and Gov.uk on banking safely online after 50: the warning signs of a scam, what a real bank never asks for, how Confirmation of Payee works in the UK, the UK reimbursement rules for bank-transfer scams, and where to report in the UK and US.
+Plain guidance from the FCA, FTC, CFPB, Financial Ombudsman and Gov.uk on banking safely online: the warning signs of a scam, what a real bank never asks for, how Confirmation of Payee works in the UK, the UK reimbursement rules for bank-transfer scams, and where to report in the UK and US.
 
 Never move money or share a code because someone told you to on the phone. Hang up, call the bank on the number on your card (or 159 in the UK), and check the payee name matches before you pay.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/tech/online-banking-safely-after-50/?utm_source=x&utm
 
 ---
 
-2/ Plain guidance from the FCA, FTC, CFPB, Financial Ombudsman and Gov.uk on banking safely online after 50: the warning signs of a scam, what a real bank never asks for, how Confirmation of Payee works in the UK, the UK reimbursement rules for bank-transfer scams, and where to report in the UK and US.
+2/ Plain guidance from the FCA, FTC, CFPB, Financial Ombudsman and Gov.uk on banking safely online: the warning signs of a scam, what a real bank never asks for, how Confirmation of Payee works in the UK, the UK reimbursement rules for bank-transfer scams, and where to report in the UK and US.
 
 ---
 
@@ -48,7 +48,7 @@ Online banking safely: how your bank contacts you, what it never asks, and what 
 
 A genuine bank won't mind waiting while you think. A scammer can't afford to. That one difference does most of the work.
 
-Plain guidance from the FCA, FTC, CFPB, Financial Ombudsman and Gov.uk on banking safely online after 50: the warning signs of a scam, what a real bank never asks for, how Confirmation of Payee works in the UK, the UK reimbursement rules for bank-transfer scams, and where to report in the UK and US.
+Plain guidance from the FCA, FTC, CFPB, Financial Ombudsman and Gov.uk on banking safely online: the warning signs of a scam, what a real bank never asks for, how Confirmation of Payee works in the UK, the UK reimbursement rules for bank-transfer scams, and where to report in the UK and US.
 
 Why it matters for anyone over 50: Never move money or share a code because someone told you to on the phone. Hang up, call the bank on the number on your card (or 159 in the UK), and check the payee name matches before you pay.
 

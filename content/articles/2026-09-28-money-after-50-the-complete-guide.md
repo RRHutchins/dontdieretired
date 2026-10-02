@@ -10,8 +10,8 @@ segments: [restarter, changer, carer]
 level: any
 hook: "You don't need a spreadsheet the size of a house. You need one page, three official checks and a rule for scammers."
 lesson: "Get your whole money picture onto one page, check your own State Pension or Social Security forecast, then decide the big questions slowly."
-standfirst: "Most people over 50 have never seen their finances on a single page. This guide shows you how to build that page, where the free official help lives, and which decisions deserve real time."
-summary: "A start-here guide to money after 50: net worth and cashflow on one page, checking your State Pension or Social Security forecast, workplace and private pensions, free guidance, scams, and the big decisions. General information, not financial advice."
+standfirst: "Most people have never seen their finances on a single page. This guide shows you how to build that page, where the free official help lives, and which decisions deserve real time."
+summary: "A start-here guide to your money: net worth and cashflow on one page, checking your State Pension or Social Security forecast, workplace and private pensions, free guidance, scams, and the big decisions. General information, not financial advice."
 try_this:
   - "Write down everything you own and everything you owe on one sheet of paper. Don't tidy it; just get it all on the page."
   - "Log in to Gov.uk's State Pension forecast (UK) or your my Social Security account (US) and note the figure and the date it applies from."

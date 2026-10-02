@@ -2,7 +2,7 @@
 
 Three ways to get money out of your home. All three cost more than the brochure says. Here is what to ask.
 
-A plain guide to the three ways of releasing money from your home after 50: selling and downsizing, equity release in the UK, and reverse mortgages in the US. What each costs, what it does to benefits and inheritance, and the questions MoneyHelper, Age UK, the CFPB and the FTC say to ask. General information, not financial advice.
+A plain guide to the three ways of releasing money from your home: selling and downsizing, equity release in the UK, and reverse mortgages in the US. What each costs, what it does to benefits and inheritance, and the questions MoneyHelper, Age UK, the CFPB and the FTC say to ask. General information, not financial advice.
 
 Price the whole move, not just the house; treat equity release and reverse mortgages as expensive loans; and ask the questions the regulators say to ask.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/money/downsizing-your-home-after-50/?utm_source=x&utm
 
 ---
 
-2/ A plain guide to the three ways of releasing money from your home after 50: selling and downsizing, equity release in the UK, and reverse mortgages in the US. What each costs, what it does to benefits and inheritance, and the questions MoneyHelper, Age UK, the CFPB and the FTC say to ask. General information, not financial advice.
+2/ A plain guide to the three ways of releasing money from your home: selling and downsizing, equity release in the UK, and reverse mortgages in the US. What each costs, what it does to benefits and inheritance, and the questions MoneyHelper, Age UK, the CFPB and the FTC say to ask. General information, not financial advice.
 
 ---
 
@@ -48,7 +48,7 @@ Downsizing, equity release and reverse mortgages: the real costs of turning your
 
 Three ways to get money out of your home. All three cost more than the brochure says. Here is what to ask.
 
-A plain guide to the three ways of releasing money from your home after 50: selling and downsizing, equity release in the UK, and reverse mortgages in the US. What each costs, what it does to benefits and inheritance, and the questions MoneyHelper, Age UK, the CFPB and the FTC say to ask. General information, not financial advice.
+A plain guide to the three ways of releasing money from your home: selling and downsizing, equity release in the UK, and reverse mortgages in the US. What each costs, what it does to benefits and inheritance, and the questions MoneyHelper, Age UK, the CFPB and the FTC say to ask. General information, not financial advice.
 
 Why it matters for anyone over 50: Price the whole move, not just the house; treat equity release and reverse mortgages as expensive loans; and ask the questions the regulators say to ask.
 

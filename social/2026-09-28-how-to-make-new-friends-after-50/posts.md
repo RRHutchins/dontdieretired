@@ -2,7 +2,7 @@
 
 Adult friendship runs on repeated, low-stakes contact. Join something weekly, go three times, and be the one who follows up.
 
-A practical guide to making friends after 50: why repeated, low-stakes contact beats one-off events, the difference between joining and attending, what to expect from the first three visits, how to follow up, and what to do if you are shy. With clearly hypothetical scripts you can adapt.
+A practical guide to making friends as an adult: why repeated, low-stakes contact beats one-off events, the difference between joining and attending, what to expect from the first three visits, how to follow up, and what to do if you are shy. With clearly hypothetical scripts you can adapt.
 
 Stop trying to make friends. Start turning up somewhere regularly, and let the friendships arrive as a side effect.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/connect/how-to-make-new-friends-after-50/?utm_source=
 
 ---
 
-2/ A practical guide to making friends after 50: why repeated, low-stakes contact beats one-off events, the difference between joining and attending, what to expect from the first three visits, how to follow up, and what to do if you are shy. With clearly hypothetical scripts you can adapt.
+2/ A practical guide to making friends as an adult: why repeated, low-stakes contact beats one-off events, the difference between joining and attending, what to expect from the first three visits, how to follow up, and what to do if you are shy. With clearly hypothetical scripts you can adapt.
 
 ---
 
@@ -48,7 +48,7 @@ How to make new friends as an adult (without it feeling awkward) | Stop trying t
 
 Adult friendship runs on repeated, low-stakes contact. Join something weekly, go three times, and be the one who follows up.
 
-A practical guide to making friends after 50: why repeated, low-stakes contact beats one-off events, the difference between joining and attending, what to expect from the first three visits, how to follow up, and what to do if you are shy. With clearly hypothetical scripts you can adapt.
+A practical guide to making friends as an adult: why repeated, low-stakes contact beats one-off events, the difference between joining and attending, what to expect from the first three visits, how to follow up, and what to do if you are shy. With clearly hypothetical scripts you can adapt.
 
 Why it matters for anyone over 50: Stop trying to make friends. Start turning up somewhere regularly, and let the friendships arrive as a side effect.
 

@@ -1,6 +1,6 @@
 ## facebook
 
-The advantages of starting a business after 50 are real: experience, a network, some capital, and patience.
+The advantages of starting a business mid-career are real: experience, a network, some capital, and patience.
 
 What is genuinely different about starting a business in your fifties or sixties, why most of the differences work in your favour, how to test an idea cheaply, the registration basics in the UK and US, and what to do in the first 90 days.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/earn/starting-a-business-afte
 
 ## instagram
 
-The advantages of starting a business after 50 are real: experience, a network, some capital, and patience.
+The advantages of starting a business mid-career are real: experience, a network, some capital, and patience.
 
 Test the idea on real paying customers before you spend anything you would miss, then register and make the first 90 days about selling.
 
@@ -20,13 +20,13 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-The advantages of starting a business after 50 are real: experience, a network, some capital, and patience. Test the idea on real paying customers before you spend anything you would miss, then…
+The advantages of starting a business mid-career are real: experience, a network, some capital, and patience. Test the idea on real paying customers before you spend anything you would miss, then…
 
 https://dontdieretired.com/earn/starting-a-business-after-50/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ The advantages of starting a business after 50 are real: experience, a network, some capital, and patience.
+1/ The advantages of starting a business mid-career are real: experience, a network, some capital, and patience.
 
 ---
 
@@ -46,7 +46,7 @@ Starting a business with experience behind you: what's different, and what's in 
 
 ## linkedin
 
-The advantages of starting a business after 50 are real: experience, a network, some capital, and patience.
+The advantages of starting a business mid-career are real: experience, a network, some capital, and patience.
 
 What is genuinely different about starting a business in your fifties or sixties, why most of the differences work in your favour, how to test an idea cheaply, the registration basics in the UK and US, and what to do in the first 90 days.
 
