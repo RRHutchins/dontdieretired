@@ -73,7 +73,7 @@ social:
   x: "https://x.com/dontdieretired"
   youtube: "https://youtube.com/@dontdieretired"
   pinterest: "https://pinterest.com/dontdieretired"
-  tiktok: "https://tiktok.com/@dontdieretired"
+  tiktok: ""                                 # no account yet (3 Oct 2026); set to https://tiktok.com/@dontdieretired once created. Empty = hidden from footer
   scheduler: "buffer"                        # buffer | publer | zapier — used by RUNBOOK
 
 audience_segments:

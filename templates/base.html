@@ -74,7 +74,7 @@
       <p class="brand-foot"><img src="/static/logo-mark.svg" alt="" width="30" height="30"> Don't Die <em>Retired</em></p>
       <p>{{ cfg.site.tagline }}</p>
       <p class="social">
-        {% for k, v in cfg.social.items() if k != 'scheduler' %}<a href="{{ v }}" rel="me noopener" target="_blank">{{ k|capitalize }}</a>{% endfor %}
+        {% for k, v in cfg.social.items() if k != 'scheduler' and v %}<a href="{{ v }}" rel="me noopener" target="_blank">{{ k|capitalize }}</a>{% endfor %}
       </p>
     </div>
     <div>
