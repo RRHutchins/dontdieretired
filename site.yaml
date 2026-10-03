@@ -45,7 +45,7 @@ newsletter:
 products:
   platform: "gumroad"                        # gumroad | lemonsqueezy | payhip
   store_url: "https://dontdieretired.gumroad.com"
-  store_live: false                          # set true once every product in content/products.yaml exists on Gumroad at its URL; until then buttons say "Notify me"
+  store_live: true                           # all ten products verified live on Gumroad at VAT-exclusive prices, 3 Oct 2026. Set false to show "Notify me" instead of Buy
 
 feedback:
   # "Your say" page (/your-say/): interests, votes, suggestions. Needs the Cloudflare Pages Function in functions/api
