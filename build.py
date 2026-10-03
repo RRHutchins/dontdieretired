@@ -301,6 +301,7 @@ def write_rss(arts, cfg):
       <pubDate>{dt.datetime.combine(a['date'], dt.time(6)).strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>
       <category>{a['category']}</category>
       <description>{html.escape(a['excerpt'])}</description>
+      <enclosure url="{site['url']}{a['image']}" type="image/png" length="0"/>
     </item>""")
     rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
