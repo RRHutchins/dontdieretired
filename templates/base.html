@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% if cfg.social_verify.pinterest %}<meta name="p:domain_verify" content="{{ cfg.social_verify.pinterest }}"/>{% endif %}
 <title>{% block title %}{{ cfg.site.name }} — {{ cfg.site.tagline }}{% endblock %}</title>
 <meta name="description" content="{% block description %}{{ cfg.site.description }}{% endblock %}">
 <link rel="canonical" href="{{ cfg.site.url }}{{ path }}">

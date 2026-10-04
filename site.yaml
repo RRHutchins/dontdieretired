@@ -76,6 +76,9 @@ social:
   tiktok: ""                                 # no account yet (3 Oct 2026); set to https://tiktok.com/@dontdieretired once created. Empty = hidden from footer
   scheduler: "buffer"                        # buffer | publer | zapier — used by RUNBOOK
 
+social_verify:
+  pinterest: "fc92bd314fd9380bcfa0735f5536b8ea"   # Pinterest "claim your website" tag (public, not a secret). Keep it: removing it un-claims the site
+
 audience_segments:
   - {id: "restarter", label: "The Restarter", blurb: "I've been inactive for a while and want a gentle, realistic way back.", tags: [beginner, walking, strength, mindset]}
   - {id: "mover", label: "The Mover", blurb: "I'm already active and want the next challenge.", tags: [running, swimming, cycling, endurance, competition]}
