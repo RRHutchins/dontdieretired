@@ -3,30 +3,32 @@
 {% block content %}
 <section class="hero">
   <div class="hero-text">
-    <p class="kicker">For people who aren't finished: fit, unfit or somewhere in between</p>
     <h1>Retire from work if you like.<br>Never from <em>life</em>.</h1>
-    <p class="lead">The usual script says slow down, do less, wind down. We think the opposite: with more time and fewer obligations than at any point since you were twenty, this is the time to do more — move more, learn more, start things. Every day we find a real person doing something worth reading about, and give you one thing to try, pitched at your level.</p>
+    <p class="lead">One true story a day about someone doing something worth reading about, and one thing to try this week, pitched at your level: fit, unfit or somewhere in between.</p>
     <div class="hero-actions">
       <a class="btn" href="/start-here/">Start here</a>
       <button class="btn btn-ghost" data-open-segments>Make it yours (20 seconds)</button>
     </div>
   </div>
-  <a href="{{ featured.url }}" class="hero-card" data-hero-card>
-    <img src="{{ featured.image }}" alt="" width="1200" height="630">
-    <span class="kicker">Today's story</span>
-    <strong>{{ featured.title }}</strong>
-  </a>
-</section>
-
-
-<section class="manifesto">
-  <p class="kicker">What we believe</p>
-  <h2>Retirement is a word for leaving a job. It was never meant to describe a person.</h2>
-  <div class="grid grid-3 manifesto-grid">
-    <div><h3>Do more, not less</h3><p>The second half of life comes with the thing you never had enough of: time. Spend it on your body, your mind and the things you always meant to do — not on shrinking your world to fit a smaller idea of yourself.</p></div>
-    <div><h3>Wherever you're starting</h3><p>Fit at 50 and after a harder goal? Not exercised since school? Both belong here. Tell us where you are and what interests you, and we'll show you what fits: no chair exercises for runners, no marathons for people getting off the sofa.</p></div>
-    <div><h3>Small, real, today</h3><p>No hype, no miracle cures, no "despite their age". One true story a day, sourced and linked, and one thing you can actually do this week. That's how lives change: a little, and then a lot.</p></div>
+  <div class="hero-side">
+    <a href="{{ featured.url }}" class="hero-card" data-hero-card data-cat="{{ featured.category }}">
+      <span class="kicker">Today's story</span>
+      <strong>{{ featured.title }}</strong>
+      <span class="hero-sub" data-hero-sub>{{ featured.standfirst or featured.excerpt }}</span>
+      <span class="hero-read">Read the story</span>
+    </a>
+    <ul class="hero-more" aria-label="Also new">
+      {% for a in latest[:2] %}<li data-cat="{{ a.category }}"><a href="{{ a.url }}">{{ a.title }}</a></li>{% endfor %}
+    </ul>
   </div>
+  {# The sunrise, drawn in the site's own topic colours: think, travel, move, explore #}
+  <svg class="hero-land" aria-hidden="true" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#F2B45A" stroke-width="12" stroke-linecap="round" opacity=".75"><line x1="566" y1="130" x2="528" y2="120"/><line x1="594" y1="66" x2="566" y2="38"/><line x1="650" y1="22" x2="636" y2="0"/><line x1="790" y1="22" x2="804" y2="0"/><line x1="846" y1="66" x2="874" y2="38"/><line x1="874" y1="130" x2="912" y2="120"/></g>
+    <circle cx="720" cy="150" r="122" fill="#F2B45A"/>
+    <path d="M0,240 L0,150 Q180,96 360,138 T720,150 T1080,120 T1440,146 L1440,240 Z" fill="#1F4E79"/>
+    <path d="M0,240 L0,186 Q200,142 420,178 T860,176 T1240,160 T1440,182 L1440,240 Z" fill="#0E7490"/>
+    <path d="M0,240 L0,214 Q260,176 520,208 T1000,204 T1440,206 L1440,240 Z" fill="#0B6E4F"/>
+  </svg>
 </section>
 
 <section class="for-you" id="for-you" hidden>
@@ -38,6 +40,16 @@
   <div class="section-head"><h2>Latest</h2><a href="/stories/">All stories →</a></div>
   <div class="grid grid-3">
     {% for a in latest %}{{ card(a) }}{% endfor %}
+  </div>
+</section>
+
+<section class="manifesto">
+  <p class="kicker">What we believe</p>
+  <h2>Retirement is a word for leaving a job. It was never meant to describe a person.</h2>
+  <div class="grid grid-3 manifesto-grid">
+    <div><h3>Do more, not less</h3><p>The second half of life comes with the thing you never had enough of: time. Spend it on your body, your mind and the things you always meant to do — not on shrinking your world to fit a smaller idea of yourself.</p></div>
+    <div><h3>Wherever you're starting</h3><p>Fit at 50 and after a harder goal? Not exercised since school? Both belong here. Tell us where you are and what interests you, and we'll show you what fits: no chair exercises for runners, no marathons for people getting off the sofa.</p></div>
+    <div><h3>Small, real, today</h3><p>No hype, no miracle cures, no "despite their age". One true story a day, sourced and linked, and one thing you can actually do this week. That's how lives change: a little, and then a lot.</p></div>
   </div>
 </section>
 

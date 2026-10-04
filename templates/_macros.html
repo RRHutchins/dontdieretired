@@ -1,6 +1,6 @@
 {% macro card(a, big=false) %}
 <article class="card {% if big %}card-big{% endif %}" data-tags="{{ a.tags|join(',') }}" data-segments="{{ a.segments|default([])|join(',') }}" data-cat="{{ a.category }}" data-level="{{ a.level|default('any') }}" data-age="{{ a.subject_age|default('') }}">
-  <a href="{{ a.url }}" class="card-img"><img src="{{ a.image }}" alt="" loading="lazy" width="1200" height="630"></a>
+  <a href="{{ a.url }}" class="card-img"><img src="{{ a.art }}" alt="" loading="lazy" width="1200" height="630"></a>
   <div class="card-body">
     <p class="kicker"><a href="/{{ a.category }}/">{{ categories[a.category].label }}</a> · {{ a.reading_time }} min read</p>
     <h3><a href="{{ a.url }}">{{ a.title }}</a></h3>

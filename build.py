@@ -34,6 +34,8 @@ import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from PIL import Image, ImageDraw, ImageFont
 
+import art
+
 ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
 SOCIAL = ROOT / "social"
@@ -123,7 +125,11 @@ def load_articles(cfg):
             "reading_time": reading_time(body),
             "excerpt": fm.get("summary") or excerpt(body),
             "tags": fm.get("tags", []),
-            "image": f"/static/img/{slug}.png",
+            "image": f"/static/img/{slug}.png",          # headline card: social, og:image
+            # shown on the site: a credited photo if the article has one (`photo:` + `photo_credit:`,
+            # logged in docs/IMAGE_CREDITS.md), otherwise the sun-and-scene artwork from art.py
+            "art": fm.get("photo") or f"/static/art/{slug}.svg",
+            "scene": fm.get("art"),
         }
         # Copyright guard (RUNBOOK §7a): news stories quote sparingly. Warn, never fail the build.
         if fm.get("kind") != "guide":
@@ -357,6 +363,9 @@ def build(make_social=True):
     for a in arts:
         make_card(a.get("lesson") or a["title"], cfg["categories"][a["category"]]["label"], a["category"],
                   DIST / "static" / "img" / f"{a['slug']}.png")
+        (DIST / "static" / "art").mkdir(parents=True, exist_ok=True)
+        (DIST / "static" / "art" / f"{a['slug']}.svg").write_text(
+            art.scene_svg({**a, "art": a["scene"]}, PALETTE.get(a["category"], ("#333333",))[0]), encoding="utf-8")
         related = [b for b in arts if b is not a and (b["category"] == a["category"] or set(b["tags"]) & set(a["tags"]))][:3]
         urls.append(out(a["url"], "article.html", a=a, related=related))
         if a.get("plan"):
@@ -366,7 +375,16 @@ def build(make_social=True):
 
     # "Today's story" is the newest real story, not an evergreen guide published the same day
     featured = next((a for a in arts if a.get("kind") != "guide"), arts[0])
-    urls.append(out("/", "index.html", featured=featured, latest=[a for a in arts if a is not featured][:6]))
+    # Latest: newest first, but no topic takes more than two of the six places
+    latest, per = [], {}
+    for a in arts:
+        if a is featured or per.get(a["category"], 0) >= 2:
+            continue
+        per[a["category"]] = per.get(a["category"], 0) + 1
+        latest.append(a)
+        if len(latest) == 6:
+            break
+    urls.append(out("/", "index.html", featured=featured, latest=latest))
     for cid, c in cfg["categories"].items():
         urls.append(out(f"/{cid}/", "category.html", cid=cid, c=c, items=[a for a in arts if a["category"] == cid]))
     urls.append(out("/videos/", "videos.html"))
@@ -385,7 +403,7 @@ def build(make_social=True):
     # search index + article index for the front end
     (DIST / "index.json").write_text(json.dumps([{
         "title": a["title"], "url": a["url"], "excerpt": a["excerpt"], "tags": a["tags"],
-        "category": a["category"], "segments": a.get("segments", []), "date": a["date_iso"], "image": a["image"],
+        "category": a["category"], "segments": a.get("segments", []), "date": a["date_iso"], "image": a["image"], "art": a["art"],
         "level": a.get("level", "any"), "age": a.get("subject_age"),
     } for a in arts]), encoding="utf-8")
 

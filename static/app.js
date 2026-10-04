@@ -83,7 +83,7 @@
     if (mid && a.age) { const d = a.age - mid; if (d >= -10 && d <= 12) s += 2; else if (d > 20) s -= 3; }
     return s;
   }
-  const cardHTML = a => `<article class="card"><a class="card-img" href="${a.url}"><img src="${a.image}" alt="" loading="lazy"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`;
+  const cardHTML = a => `<article class="card"><a class="card-img" href="${a.url}"><img src="${a.art || a.image}" alt="" loading="lazy" width="1200" height="630"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`;
 
   function applyProfile() {
     profile = readProfile();
@@ -108,7 +108,7 @@
       holder.innerHTML = picks.map(cardHTML).join('');
       const sec = $('#for-you'); if (sec) sec.hidden = false;
       const hero = $('[data-hero-card]');   // lead with the reader's best match, not just the newest story
-      if (hero && picks[0]) { hero.href = picks[0].url; $('img', hero).src = picks[0].image; $('strong', hero).textContent = picks[0].title; $('.kicker', hero).textContent = 'Picked for you'; }
+      if (hero && picks[0]) { const p = picks[0], sub = $('[data-hero-sub]', hero); hero.href = p.url; $('strong', hero).textContent = p.title; $('.kicker', hero).textContent = 'Picked for you'; if (sub) sub.textContent = p.excerpt; hero.dataset.cat = p.category; }
     }).catch(() => {});
     // category pages: best matches first
     $$('[data-personalise]').forEach(g => [...g.children].map((c, i) => [fit({ category: c.dataset.cat, level: c.dataset.level, age: +c.dataset.age || null }, profile, i), c]).sort((x, y) => y[0] - x[0]).forEach(x => g.appendChild(x[1])));

@@ -12,7 +12,7 @@
   const p = new URLSearchParams(location.search).get('q'); if (p) q.value = p;
   const render = () => { const s = q.value.toLowerCase().trim();
     const hits = idx.filter(a => !s || (a.title+' '+a.excerpt+' '+a.tags.join(' ')).toLowerCase().includes(s));
-    out.innerHTML = hits.map(a => `<article class="card"><a class="card-img" href="${a.url}"><img src="${a.image}" alt="" loading="lazy"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`).join('') || '<p>Nothing yet — try another word.</p>'; };
+    out.innerHTML = hits.map(a => `<article class="card"><a class="card-img" href="${a.url}"><img src="${a.art || a.image}" alt="" loading="lazy"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`).join('') || '<p>Nothing yet — try another word.</p>'; };
   q.addEventListener('input', render); render();
 })();
 </script>{% endblock %}

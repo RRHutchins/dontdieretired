@@ -17,7 +17,7 @@
   <p class="kicker"><a href="/{{ a.category }}/">{{ categories[a.category].label }}</a> · {{ a.date_human }} · {{ a.reading_time }} min read</p>
   <h1>{{ a.title }}</h1>
   {% if a.standfirst %}<p class="lead">{{ a.standfirst }}</p>{% endif %}
-  <img class="hero-img" src="{{ a.image }}" alt="" width="1200" height="630">
+  {% if a.photo %}<figure class="hero-fig"><img class="hero-img" src="{{ a.art }}" alt="{{ a.photo_alt|default('') }}" width="1200" height="630">{% if a.photo_credit %}<figcaption>Photo: {{ a.photo_credit }}</figcaption>{% endif %}</figure>{% else %}<img class="hero-img" src="{{ a.art }}" alt="" width="1200" height="630">{% endif %}
 
   <div class="prose" data-ad-inject>
     {{ a.html | safe }}
