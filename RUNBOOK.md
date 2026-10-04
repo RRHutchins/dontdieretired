@@ -90,6 +90,11 @@ Category `ai` (/ai/). Its job: readers finish better able to use AI and harder t
 - **Between reviews:** if a daily run comes across a major change (a new law on fake reviews or deepfakes, a new official warning, a maker changing its training default), fix the affected guide that day and say so in the report.
 - **Weekly evergreen rule (§6a) applies:** `ai` launched with one pillar and six guides. Candidates for the next ones: AI in search results and how to read an AI summary; AI features already on your phone; using AI for letters, complaints and forms; AI for family history; AI for travel planning; AI and job hunting after 50; smart speakers and voice assistants; romance scams and AI-generated profiles; what the law says about AI where you live.
 
+## 6b. Social posting (state at 4 Oct 2026)
+- **Pinterest: live.** Pinterest itself auto-publishes from `https://dontdieretired.com/feed.xml` (Settings → Create Pins in bulk → Auto-publish). It needs the site to stay claimed, so keep `social_verify.pinterest` in site.yaml, and it needs the `<enclosure>` image on every feed item, so keep that in `write_rss`. Nothing to run.
+- **Facebook, Instagram, X: not posting yet.** Plan: Buffer free plan (3 channels) with its API key stored as the GitHub Actions secret `BUFFER_API_KEY`; `post_social.py` still targets Buffer's retired v1 API and must be rewritten and run from the deploy workflow (the cloud session's shell cannot reach Buffer). Zapier was ruled out: Pinterest and X need its paid plan.
+- **YouTube: account exists, nothing posted** (no videos yet). **TikTok: no account**; its footer link is hidden by the empty `social.tiktok`.
+
 ## 7. Guard-rails
 - Never invent facts, quotes, ages or names. If the source can't be fetched, don't run the story.
 - Never give medical advice or dosing; always "check with a GP first".
