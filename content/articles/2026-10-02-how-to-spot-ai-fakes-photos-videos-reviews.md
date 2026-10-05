@@ -21,6 +21,7 @@ try_this_plus:
   - "Run a 20-minute session for friends or family: show one real and one fabricated image, then walk through checking the source of each."
 sources:
   - {title: "Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud", publisher: "FBI Internet Crime Complaint Center (IC3)", date: "3 December 2024", url: "https://www.ic3.gov/PSA/2024/PSA241203"}
+  - {title: "Scammers Impersonating Law Enforcement and Government Officials in Fraud Schemes", publisher: "FBI Internet Crime Complaint Center (IC3)", date: "17 September 2026", url: "https://www.ic3.gov/PSA/2026/PSA260917"}
   - {title: "Deepfake Defences: Mitigating the Harms of Deceptive Deepfakes", publisher: "Ofcom", date: "23 July 2024", url: "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/deepfake-defences"}
   - {title: "Martin Lewis scam adverts", publisher: "MoneySavingExpert", date: "29 June 2026", url: "https://www.moneysavingexpert.com/shopping/fake-martin-lewis-ads/"}
   - {title: "Investment scams surge: how deepfakes and dodgy finfluencers put your money at risk", publisher: "Which?", date: "27 August 2026", url: "https://www.which.co.uk/news/article/investment-scams-surge-how-deepfakes-and-dodgy-finfluencers-put-your-money-at-risk-aaAKh0B7SkOM"}
@@ -45,6 +46,8 @@ The word for this is a deepfake: in Ofcom's definition (Ofcom is the UK communic
 **The celebrity investment video.** A familiar face on social media explains how they made a fortune from a trading scheme or cryptocurrency. Which? reported in August 2026 that these deepfake scams are common and have used AI images of Martin Lewis, Elon Musk, Bear Grylls and former Prime Minister Rishi Sunak, among others. MoneySavingExpert, the site Martin Lewis founded, says his face is used by scammers more than any other celebrity's, and its rule is blunt: "if you see an ad with Martin that does not link back to MSE, it's fake."
 
 **The romance or friendship scam.** The FBI says generated photos are used to build believable profiles for romance and investment fraud, and that deepfake video is used in fake video calls. The script is the old one the FTC (the US consumer protection agency) describes: someone who can never quite meet in person and eventually needs money.
+
+**The "official" on a video call.** In a warning issued in September 2026, the FBI said scammers posing as police officers or government officials now use AI to appear as those officials on video calls, "adding the appearance of legitimacy to the scam". It counted nearly 61,000 complaints about law enforcement or government impersonation scams between January 2025 and July 2026, with losses of more than $1.6 billion; those figures cover these impersonation scams as a whole. The FBI's advice is that law enforcement and government authorities will never contact you by telephone or text message to demand payment, and will never ask to be paid by prepaid card, cryptocurrency or courier. To check, find the agency's official, publicly listed contact details yourself and use those, not the ones the caller gives you. The warning is American, but the check works anywhere.
 
 **The fake review.** Plausible five-star write-ups, which AI can now generate to order.
 
@@ -95,3 +98,5 @@ Report it on the platform where you saw it. Then, for the scam versions:
 Keep some proportion. Most of what you see online is real: real photographs, real people, real opinions about real kettles. The aim is one habit, not suspicion of everything, applied at the moments that matter: before you share, buy or pay, ask where it came from.
 
 For the wider picture of using AI well, start with [AI after 50: the complete guide](/ai/ai-after-50-the-complete-guide/).
+
+Updated 5 October 2026: added the FBI's September 2026 warning about scammers using AI to pose as police or government officials on video calls.
