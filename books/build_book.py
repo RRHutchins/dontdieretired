@@ -30,8 +30,8 @@ PW, PH = 8.5 * 72, 11 * 72
 INNER, OUTER, TOPM, BOTM = .95 * 72, .7 * 72, .75 * 72, .8 * 72
 CW = PW - INNER - OUTER
 
-# The copyright holder printed in every book. Robin has still to choose the name
-# (his own or a pen name); change it here and rebuild.
+# The copyright holder printed in every book. Robin chose the brand name on 6 Oct 2026;
+# it is also the author name he enters on KDP. If it ever changes, change it here and rebuild.
 COPYRIGHT_LINE = "\u00a9 2026 Don't Die Retired. All rights reserved."
 
 BOOKS = {

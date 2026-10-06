@@ -37,6 +37,6 @@ seventeen kinds including Trees and presents, Star battle and Missing vowels).
   are four to a page and smaller; the copyright page says so. Keep to this in new books and new puzzle kinds.
 - **Kakuro** uses a repair method (see `kakuro` in puzzles.py), which makes 8, 9 and 10-square grids with one answer.
 - **Logic puzzles** are only accepted if their clues fit the page at 16 point above the answer table.
-- **Copyright holder.** `COPYRIGHT_LINE` in build_book.py still says "Don't Die Retired". Robin has to choose the
-  name (his own or a pen name). Changing it does not change page counts, so the covers stay valid.
+- **Author and copyright holder.** Robin decided on 6 Oct 2026 to publish as "Don't Die Retired": that is the author
+  name on KDP and the name in `COPYRIGHT_LINE` (build_book.py). Changing it does not change page counts.
 - The closing page must not promise anything the site is not doing (no weekly email or daily puzzle claims).
