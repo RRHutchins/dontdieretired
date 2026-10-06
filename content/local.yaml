@@ -90,3 +90,74 @@ activities:
           price: "Usually free to ask"
           url: "/explore/fossil-hunting-for-beginners/"
           checked: 2026-09-29
+  birdwatching:
+    label: "birdwatching"
+    guide: /explore/birdwatching-for-beginners/
+    listings:
+      uk:
+        - name: "RSPB Minsmere"
+          where: "Suffolk coast"
+          what: "Five hides with ramped or level entry, binocular hire at the shop, and guided walks through the year including Birds for Beginners. Check the reserve's events page for dates and prices."
+          price: "Binocular hire from £5 a day; entry and walks priced separately"
+          url: "https://www.rspb.org.uk/days-out/reserves/minsmere/facilities"
+          checked: 2026-10-06
+        - name: "RSPB Big Garden Birdwatch"
+          where: "Your garden, balcony or local park, anywhere in the UK"
+          what: "Count the birds you see for one hour over a weekend in late January and send in the result. You don't need to be a member. Registration for 2027 opens on 9 December."
+          price: "Free"
+          url: "https://www.rspb.org.uk/whats-happening/big-garden-birdwatch"
+          checked: 2026-10-06
+      us-east:
+        - name: "Great Backyard Bird Count"
+          where: "Anywhere: a yard, a park, a window"
+          what: "Count birds for as little as 15 minutes on one or more days, 12–15 February 2027, and report them online. Run by Audubon, the Cornell Lab of Ornithology and Birds Canada."
+          price: "Free"
+          url: "https://www.audubon.org/conservation/about-great-backyard-bird-count"
+          checked: 2026-10-06
+      us-central:
+        - name: "Aransas National Wildlife Refuge"
+          where: "Austwell, Texas (Gulf coast)"
+          what: "The refuge lends binoculars and field guides free at the visitor centre, and has run guided beginners' bird walks with short walks on refuge trails. Ask the visitor centre for the next date."
+          price: "Binocular loan free; check refuge entry fee on arrival"
+          url: "https://www.fws.gov/event/first-flight-beginners-birdwalk"
+          checked: 2026-10-06
+        - name: "Great Backyard Bird Count"
+          where: "Anywhere: a yard, a park, a window"
+          what: "Count birds for as little as 15 minutes on one or more days, 12–15 February 2027, and report them online."
+          price: "Free"
+          url: "https://www.audubon.org/conservation/about-great-backyard-bird-count"
+          checked: 2026-10-06
+      us-mountain:
+        - name: "Great Backyard Bird Count"
+          where: "Anywhere: a yard, a park, a window"
+          what: "Count birds for as little as 15 minutes on one or more days, 12–15 February 2027, and report them online. Run by Audubon, the Cornell Lab of Ornithology and Birds Canada."
+          price: "Free"
+          url: "https://www.audubon.org/conservation/about-great-backyard-bird-count"
+          checked: 2026-10-06
+      us-pacific:
+        - name: "Great Backyard Bird Count"
+          where: "Anywhere: a yard, a park, a window"
+          what: "Count birds for as little as 15 minutes on one or more days, 12–15 February 2027, and report them online. Run by Audubon, the Cornell Lab of Ornithology and Birds Canada."
+          price: "Free"
+          url: "https://www.audubon.org/conservation/about-great-backyard-bird-count"
+          checked: 2026-10-06
+      canada:
+        - name: "Festival of Birds, Point Pelee National Park"
+          where: "Point Pelee National Park, Ontario"
+          what: "Held each May for the spring songbird migration, with two-hour guided birding hikes led by experienced leaders. The 2026 festival ran 1–18 May; pre-registration was required."
+          price: "Guided hikes were $35 a person in 2026"
+          url: "https://parks.canada.ca/pn-np/on/pelee/activ/festival"
+          checked: 2026-10-06
+      elsewhere:
+        - name: "eBird Explore"
+          where: "Wherever you are"
+          what: "The Cornell Lab's free database shows the latest bird sightings from around the world, so you can see what has been recorded near you and where local birders go."
+          price: "Free"
+          url: "https://ebird.org/about"
+          checked: 2026-10-06
+        - name: "Great Backyard Bird Count"
+          where: "Anywhere in the world"
+          what: "Count birds for as little as 15 minutes on one or more days, 12–15 February 2027, and report them online."
+          price: "Free"
+          url: "https://www.audubon.org/conservation/about-great-backyard-bird-count"
+          checked: 2026-10-06
