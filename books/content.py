@@ -127,3 +127,81 @@ RULES = {
     "logic": "A small mystery with a single answer. Read each clue and note what it rules in and what it rules out, then combine clues. Nobody shares an activity, a place, an age or a month. Use the table to record your answer, and a scrap of paper for working.",
     "anagrams": "Each line is a single word with its letters shuffled. All ten answers belong to the theme at the top of the page.",
 }
+
+
+# ------------------------------------------------------------------ Christmas edition
+
+WORDSEARCH_XMAS = [
+    ("Christmas dinner", ["Turkey", "Stuffing", "Parsnips", "Sprouts", "Cranberry", "Gravy", "Chestnuts", "Bread sauce",
+                          "Red cabbage", "Roast potatoes", "Pudding", "Brandy butter", "Mince pies", "Trifle", "Crackers",
+                          "Chipolatas"]),
+    ("On the tree", ["Tinsel", "Baubles", "Lights", "Angel", "Star", "Garland", "Candy cane", "Ribbon", "Pine cone", "Icicle",
+                     "Lametta", "Bells", "Fairy", "Robin", "Snowflake", "Lantern"]),
+    ("Snow and ice", ["Blizzard", "Flurry", "Drift", "Sleet", "Slush", "Frost", "Glacier", "Avalanche", "Snowball", "Thaw",
+                      "Hail", "Powder", "Crystal", "Igloo", "Toboggan", "Snowdrift"]),
+    ("Carols", ["Silent Night", "Away in a Manger", "Joy to the World", "Deck the Halls", "We Three Kings", "O Holy Night",
+                "The First Nowell", "I Saw Three Ships", "Ding Dong Merrily", "Coventry Carol", "Sussex Carol", "Gaudete",
+                "In Dulci Jubilo", "Wassail", "Adeste Fideles", "Past Three O'Clock"]),
+    ("Winter warmers", ["Mulled wine", "Hot chocolate", "Eggnog", "Cocoa", "Toddy", "Sloe gin", "Sherry", "Port", "Cider",
+                        "Punch", "Ginger wine", "Brandy", "Chai", "Snowball", "Mead", "Hot buttered rum"]),
+    ("A Christmas Carol, by Charles Dickens", ["Scrooge", "Marley", "Cratchit", "Tiny Tim", "Fezziwig", "Belle", "Humbug",
+                                               "Ghost", "Counting house", "Gruel", "Goose", "Nephew", "Chains", "Spirit",
+                                               "Present", "Knocker"]),
+    ("The spice cupboard", ["Cinnamon", "Nutmeg", "Cloves", "Ginger", "Allspice", "Cardamom", "Star anise", "Vanilla", "Mace",
+                            "Saffron", "Juniper", "Peppercorn", "Caraway", "Coriander", "Bay leaf", "Orange peel"]),
+    ("Winter birds", ["Robin", "Wren", "Fieldfare", "Redwing", "Waxwing", "Brambling", "Blackbird", "Starling", "Bullfinch",
+                      "Goldcrest", "Siskin", "Nuthatch", "Dunnock", "Song thrush", "Tawny owl", "Cardinal"]),
+    ("Christmas food around the world", ["Stollen", "Panettone", "Lebkuchen", "Pavlova", "Tamales", "Bibingka", "Turron",
+                                         "Glogg", "Pierogi", "Julbord", "Pfeffernusse", "Buche de Noel", "Kutia", "Roscon",
+                                         "Lutefisk", "Hallaca"]),
+]
+
+ANAGRAMS_XMAS = [
+    ("Under the tree", ["Slippers", "Chocolates", "Perfume", "Jigsaw", "Binoculars", "Cardigan", "Notebook", "Calendar",
+                        "Headphones", "Umbrella"]),
+    ("The Christmas story", ["Shepherds", "Frankincense", "Bethlehem", "Nazareth", "Innkeeper", "Gabriel", "Donkey", "Nativity",
+                             "Joseph", "Epiphany"]),
+    ("Winter sports", ["Skating", "Toboggan", "Curling", "Snowboard", "Biathlon", "Slalom", "Bobsleigh", "Hockey", "Sledging",
+                       "Skiing"]),
+]
+
+NOVOWELS_XMAS = [
+    ("Carols", ["Silent Night", "Away in a Manger", "Joy to the World", "Deck the Halls", "We Three Kings", "O Holy Night",
+                "The First Nowell", "I Saw Three Ships", "Good King Wenceslas", "The Holly and the Ivy"]),
+    ("On the Christmas table", ["Roast potatoes", "Brussels sprouts", "Cranberry sauce", "Christmas pudding", "Brandy butter",
+                                "Mince pies", "Pigs in blankets", "Bread sauce", "Red cabbage", "Yule log"]),
+    ("Christmas greenery", ["Holly and ivy", "Mistletoe", "Poinsettia", "Christmas rose", "Norway spruce", "Scots pine",
+                            "Nordmann fir", "Amaryllis", "Cyclamen", "Winter jasmine"]),
+]
+
+# Carols and other lines long out of copyright. (text, source)
+QUOTES_XMAS = [
+    ("God bless us, every one!", "Charles Dickens, A Christmas Carol"),
+    ("Deck the halls with boughs of holly.", "Traditional carol"),
+    ("Marley was dead: to begin with.", "Charles Dickens, A Christmas Carol"),
+    ("In the bleak midwinter, frosty wind made moan.", "Christina Rossetti, A Christmas Carol"),
+    ("At Christmas play and make good cheer, for Christmas comes but once a year.", "Thomas Tusser"),
+    ("I will honour Christmas in my heart, and try to keep it all the year.", "Charles Dickens, A Christmas Carol"),
+    ("Ring out the old, ring in the new, ring, happy bells, across the snow.", "Alfred Tennyson, In Memoriam"),
+    ("Heap on more wood! The wind is chill; but let it whistle as it will, we'll keep our Christmas merry still.",
+     "Walter Scott, Marmion"),
+    ("There is nothing in the world so irresistibly contagious as laughter and good humour.",
+     "Charles Dickens, A Christmas Carol"),
+]
+
+# Festive word ladders: (from, to), two to a page, one page in each part.
+LADDERS_XMAS = [("cold", "warm"), ("wise", "king"), ("wood", "fire"), ("card", "post"), ("wine", "port"), ("walk", "home")]
+
+TITLES.update({"tents": "Trees and presents", "starbattle": "Star battle", "novowels": "Missing vowels"})
+SHORT.update({
+    "tents": "Put one present beside every tree: above, below, left or right. Presents never touch, even at a corner. The numbers count the presents in each row and column.",
+    "starbattle": "Place {n} stars: one in every row, every column and every outlined region. Stars never touch, even at a corner.",
+    "novowels": "The vowels have been taken out. Put them back. A dash stands for a word that was all vowels.",
+    "logic_xmas": "{k} neighbours each came to the Christmas party. Use the clues to work out who brought what. Nothing is shared.",
+})
+RULES.update({
+    "tents": "Each tree has exactly one present, in a square directly above, below, left or right of it, and each present belongs to one tree. No two presents may touch, not even diagonally. The numbers along the top and down the side tell you how many presents are in that column or row. Start with rows and columns marked 0, and with squares that have no tree beside them: both must stay empty. You may know this puzzle as Tents.",
+    "starbattle": "The grid is divided into outlined regions. Place stars so that every row, every column and every region contains exactly one. No two stars may touch, not even diagonally. Begin with the smallest regions and with regions that lie entirely in one row or column, because their star rules out the rest of that line.",
+    "novowels": "Each line is a title or phrase with the letters A, E, I, O and U removed. The spaces between words have been kept. A dash marks a word made only of vowels, such as A, I or O. All ten answers belong to the theme at the top of the page.",
+    "logic_xmas": "A small mystery with a single answer. Read each clue and note what it rules in and what it rules out, then combine clues. Nobody brought the same dish, wore the same colour of scarf or arrived at the same time. Use the table to record your answer, and a scrap of paper for working.",
+})

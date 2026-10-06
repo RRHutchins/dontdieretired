@@ -30,9 +30,15 @@ PW, PH = 8.5 * 72, 11 * 72
 INNER, OUTER, TOPM, BOTM = .95 * 72, .7 * 72, .75 * 72, .8 * 72
 CW = PW - INNER - OUTER
 
+# The copyright holder printed in every book. Robin has still to choose the name
+# (his own or a pen name); change it here and rebuild.
+COPYRIGHT_LINE = "\u00a9 2026 Don't Die Retired. All rights reserved."
+
 BOOKS = {
     "vol1": dict(
         seed=2026101, kind="std", title="The Don't Die Retired Puzzle Book", volume="Volume 1",
+        title_lines=("The", "Don't Die Retired", "Puzzle Book"), cover_lines=("The", "Don't Die", "Retired", "Puzzle Book"),
+        count_word="Thirteen", closing="If these were too gentle, The Hard Ones is the companion volume: thirteen kinds of puzzle, none of them a warm-up.",
         strap="Thirteen kinds of puzzle. No two pages in a row alike.", tiers=["Warm-up", "Steady", "Stretch"],
         colour="#0B6E4F", file="DDR-Puzzle-Book-Volume-1",
         mix={"sudoku": (4, 4, 4), "wordsearch": (4, 4, 4), "kakuro": (2, 2, 2), "futoshiki": (2, 2, 2), "calcudoku": (3, 3, 3),
@@ -45,6 +51,8 @@ BOOKS = {
                  "The print is large throughout, with room to write. Use a pencil."]),
     "hard": dict(
         seed=2026102, kind="hard", title="The Don't Die Retired Puzzle Book", volume="The Hard Ones",
+        title_lines=("The", "Don't Die Retired", "Puzzle Book"), cover_lines=("The", "Don't Die", "Retired", "Puzzle Book"),
+        count_word="Thirteen", closing="If you would like something to hand to a friend who is just getting started, Volume 1 has thirteen kinds of puzzle that build up from a warm-up.",
         strap="These puzzles are hard. That is the point.", tiers=["Hard", "Harder", "Hardest"],
         colour="#1F2A44", file="DDR-Puzzle-Book-The-Hard-Ones",
         mix={"sudoku": (4, 4, 4), "killer": (3, 3, 3), "kakuro": (3, 3, 3), "futoshiki": (3, 3, 3), "calcudoku": (3, 3, 3),
@@ -52,11 +60,32 @@ BOOKS = {
              "cryptogram": (3, 3, 3), "ladder": (2, 2, 2), "wordsearch": (2, 2, 2)},
         welcome=["These puzzles are hard. That is the point.",
                  "If you want a gentle half hour, this is the wrong book, and Volume 1 is the right one. This one holds {n} puzzles of thirteen kinds, in three parts: Hard, Harder and Hardest. Nothing here is a warm-up. Expect some of them to take more than one sitting.",
-                 "How the grading was done. Sudoku is graded by the reasoning it demands: Hard needs pairs and locked candidates, Harder needs triples or an X-wing, and Hardest cannot be finished with those alone. For futoshiki, and for skyscrapers and binary puzzles in the two harder parts, every clue that could be taken away without allowing a second answer has been taken away. The rest are graded by size and by how little they give you.",
+                 "How the grading was done. Sudoku is graded by the reasoning it demands: Hard needs pairs and locked candidates, Harder needs triples or an X-wing, and Hardest cannot be finished with those alone. For futoshiki, and for skyscrapers and binary puzzles in the two harder parts, every clue that could be taken away without allowing a second answer has been taken away. The kakuro grow from eight squares a side to ten. The rest are graded by size and by how little they give you.",
                  "Every logic puzzle has been checked by computer to have exactly one answer. However stuck you are, the answer can be reached by reasoning; none of them needs a lucky guess, though the Hardest sudoku may need you to follow a long chain of consequences.",
                  "The word searches come without a word list. The cryptograms come with almost no help. The solutions are at the back, and the page number is at the foot of each puzzle.",
                  "The print is large throughout, with room to write. Use a pencil, and keep a rubber handy."]),
+    "xmas": dict(
+        seed=2026103, kind="xmas", title="The Don't Die Retired Christmas Puzzle Book", volume="Christmas Edition",
+        title_lines=("The", "Don't Die Retired", "Christmas Puzzle Book"),
+        cover_lines=("The", "Don't Die", "Retired", "Christmas", "Puzzle Book"),
+        count_word="Seventeen", strap="Seventeen kinds of puzzle for the days when nobody has to be anywhere.",
+        tiers=["Gentle", "Steady", "Tricky"], colour="#8E1F2F", file="DDR-Puzzle-Book-Christmas-Edition",
+        closing="There are two more books in the series. Volume 1 has thirteen kinds of puzzle that build up from a warm-up. The Hard Ones has thirteen kinds and no warm-up at all.",
+        mix={"wordsearch": (3, 3, 3), "cryptogram": (3, 3, 3), "anagrams": (1, 1, 1), "novowels": (1, 1, 1), "ladder": (1, 1, 1),
+             "logic": (2, 2, 2), "nonogram": (3, 3, 3), "sudoku": (3, 3, 3), "killer": (1, 1, 1), "kakuro": (2, 2, 2),
+             "futoshiki": (2, 2, 2), "calcudoku": (2, 2, 2), "skyscrapers": (2, 2, 2), "binary": (2, 2, 2),
+             "bridges": (2, 2, 2), "tents": (3, 3, 3), "starbattle": (2, 2, 2)},
+        welcome=["Something to do between the pudding and the walk.",
+                 "This book holds {n} puzzles of seventeen kinds, and nearly all of them have something of Christmas or midwinter in them: carols with their vowels missing, lines from Dickens in code, pictures hidden in grids, presents to place beside trees, and a party where you must work out who brought the mince pies.",
+                 "There are three parts. Gentle is for the armchair. Steady asks for more. Tricky is for the quiet hour when everyone else has gone for a walk, or should have. Within each part the kinds are shuffled, so no two pages in a row ask the same thing of you.",
+                 "Some kinds will be old friends and some you may never have met. The next pages explain how each one works. Give the unfamiliar ones a fair try: a new kind of puzzle is a better present to yourself than a tenth sudoku.",
+                 "Every logic puzzle has been checked by computer to have exactly one answer, so there is always a way through that does not need a guess. The solutions are at the back, and the page number is at the foot of each puzzle.",
+                 "The puzzles and their instructions are in large print, with room to write. Use a pencil."]),
 }
+
+# The Christmas edition sits between the other two for difficulty: its three parts use
+# Volume 1's middle and top settings and The Hard Ones' first.
+XMAS_LEVEL = {1: ("std", 2), 2: ("std", 3), 3: ("hard", 1)}
 
 
 # ------------------------------------------------------------------ generation
@@ -67,9 +96,14 @@ def _seed(*parts):
 
 def _job(a):
     kind, typ, tier, seed = a
+    book, level = kind, tier
+    if kind == "xmas" and typ not in ("logic", "tents", "starbattle"):
+        book, level = ("hard", 1) if typ == "killer" else XMAS_LEVEL[tier]
     for attempt in range(5):            # a seed that finds nothing is retried with the next one
         try:
-            return getattr(P, typ)(tier, random.Random(seed + attempt), book=kind)
+            p = getattr(P, typ)(level, random.Random(seed + attempt), book=book)
+            p["tier"] = tier
+            return p
         except RuntimeError:
             continue
     raise RuntimeError(f"{typ} tier {tier}: no puzzle found")
@@ -81,7 +115,8 @@ def generate(book_id):
     if cache.exists():
         return pickle.loads(cache.read_bytes())
     kind, seed = b["kind"], b["seed"]
-    pooled = ("sudoku", "killer", "kakuro", "futoshiki", "calcudoku", "skyscrapers", "binary", "bridges", "logic")
+    pooled = ("sudoku", "killer", "kakuro", "futoshiki", "calcudoku", "skyscrapers", "binary", "bridges", "logic",
+              "tents", "starbattle")
     jobs = [(kind, t, tier, _seed(seed, t, tier, i)) for t in pooled if t in b["mix"]
             for tier in (1, 2, 3) for i in range(b["mix"][t][tier - 1])]
     pool_cache = OUT / f"{book_id}.pool.pkl"      # the slow, solver-checked puzzles, kept apart so layout work is quick
@@ -99,10 +134,15 @@ def generate(book_id):
         for i in range(b["mix"].get("nonogram", (0, 0, 0))[tier - 1]):
             made.append(P.nonogram(tier, rng, book=kind))
         for i in range(b["mix"].get("ladder", (0, 0, 0))[tier - 1]):
-            length, steps = ((4, (3, 4, 5)[tier - 1]) if kind == "std" else (5, (5, 6, 8)[tier - 1]))
-            made.append({"type": "ladder", "tier": tier, "items": [P.ladder(length, steps, rng) for _ in range(2)]})
-    quotes = C.QUOTES_STD if kind == "std" else C.QUOTES_HARD
-    hints = (3, 2, 1) if kind == "std" else (1, 0, 0)
+            if kind == "xmas":
+                items = [P.ladder_between(*pair) for pair in C.LADDERS_XMAS[(tier - 1) * 2:tier * 2]]
+                assert all(items), "a festive ladder has no route"
+            else:
+                length, steps = ((4, (3, 4, 5)[tier - 1]) if kind == "std" else (5, (5, 6, 8)[tier - 1]))
+                items = [P.ladder(length, steps, rng) for _ in range(2)]
+            made.append({"type": "ladder", "tier": tier, "items": items})
+    quotes = {"std": C.QUOTES_STD, "hard": C.QUOTES_HARD, "xmas": C.QUOTES_XMAS}[kind]
+    hints = {"std": (3, 2, 1), "hard": (1, 0, 0), "xmas": (3, 2, 0)}[kind]
     for i, (text, src) in enumerate(quotes):
         p = P.cryptogram(text, src, rng, hints[i // 3])
         p["tier"] = i // 3 + 1
@@ -115,6 +155,19 @@ def generate(book_id):
         for i, (theme, words) in enumerate(C.ANAGRAMS):
             p = P.anagrams(theme, words, rng)
             p["tier"] = i // 2 + 1
+            made.append(p)
+    elif kind == "xmas":
+        for i, (theme, words) in enumerate(C.WORDSEARCH_XMAS):
+            p = P.wordsearch(theme, words, rng, n=15)
+            p["tier"] = i // 3 + 1
+            made.append(p)
+        for i, (theme, words) in enumerate(C.ANAGRAMS_XMAS):
+            p = P.anagrams(theme, words, rng)
+            p["tier"] = i + 1
+            made.append(p)
+        for i, (theme, phrases) in enumerate(C.NOVOWELS_XMAS):
+            p = P.novowels(theme, phrases, rng)
+            p["tier"] = i + 1
             made.append(p)
     else:
         for i, (theme, words) in enumerate(C.WORDSEARCH_HARD):
@@ -172,15 +225,15 @@ def sun(c, cx, cy, r, colour, bars=True):
 
 
 def footer(c, n, note=""):
-    c.setFont("Body", 11.5)
-    c.setFillColor(L.GREY)
-    c.drawCentredString(PW / 2, BOTM - 30, str(n))
+    c.setFont("Body", 14)
+    c.setFillColor(L.DARK)
+    c.drawCentredString(PW / 2, BOTM - 32, str(n))
     if note:
         x = _x(n)
         if n % 2 == 1:
-            c.drawRightString(x + CW, BOTM - 30, note)
+            c.drawRightString(x + CW, BOTM - 32, note)
         else:
-            c.drawString(x, BOTM - 30, note)
+            c.drawString(x, BOTM - 32, note)
     c.setFillColor(black)
 
 
@@ -190,10 +243,10 @@ def short_rule(b, p):
         return C.SHORT["wordsearch_hard"].format(k=len(p["words"]), theme=p["theme"])
     if k == "wordsearch":
         return C.SHORT[k] + f" Theme: {p['theme']}."
-    if k == "anagrams":
+    if k in ("anagrams", "novowels"):
         return C.SHORT[k] + f" Theme: {p['theme']}."
     if k == "logic":
-        return C.SHORT[k].format(k={4: "Four", 5: "Five"}[len(p["solution"])])
+        return C.SHORT["logic_xmas" if b["kind"] == "xmas" else k].format(k={4: "Four", 5: "Five"}[len(p["solution"])])
     if k == "cryptogram" and p["given"]:
         return C.SHORT[k] + " A few letters are filled in to start you off."
     if k == "ladder":
@@ -211,17 +264,17 @@ def puzzle_page(c, b, p, n, sol_page):
     c.drawString(x + nw + 14, top - 26, C.TITLES[p["type"]])
     # tier: its name and one to three filled dots
     label = b["tiers"][p["tier"] - 1]
-    c.setFont("Semi", 14.5)
-    c.drawRightString(x + CW - 54, top - 25, label)
+    c.setFont("Semi", 16)
+    c.drawRightString(x + CW - 54, top - 25.5, label)
     for i in range(3):
         c.setLineWidth(1)
         c.circle(x + CW - 40 + i * 17, top - 20, 5.5, stroke=1, fill=1 if i < p["tier"] else 0)
-    y = L.para(c, short_rule(b, p), x, top - 58, CW, "Body", 15, 20, L.DARK) - 6
+    y = L.para(c, short_rule(b, p), x, top - 58, CW, "Body", 16, 20.5, L.DARK) - 6
     box = (x, BOTM, CW, y - BOTM - 2)
     if p["type"] == "ladder":
         half = CW / 2
         for i, item in enumerate(p["items"]):
-            c.setFont("Semi", 14)
+            c.setFont("Semi", 16)
             c.drawCentredString(x + half * i + half / 2, box[1] + box[3] - 14, "ab"[i] + ".")
             L.ladder(c, item, (x + half * i + 10, box[1], half - 20, box[3] - 34))
     else:
@@ -229,38 +282,39 @@ def puzzle_page(c, b, p, n, sol_page):
     footer(c, n, f"Solution: page {sol_page}")
 
 
-def solution_pages(c, b, puzzles, first_page):
-    """Six solutions to a page. Returns {puzzle number: page}."""
-    where = {p["no"]: first_page + i // 6 for i, p in enumerate(puzzles)}
-    return where
+PER_SOL_PAGE = 4
 
 
 def draw_solutions(c, b, puzzles, first_page):
-    slot_w, slot_h = (CW - 22) / 2, (PH - TOPM - BOTM - 50) / 3
+    """Four solutions to a page, so the answers can be read without a magnifying glass."""
+    slot_w, slot_h = (CW - 26) / 2, (PH - TOPM - BOTM - 50) / 2
     for i, p in enumerate(puzzles):
-        n = first_page + i // 6
-        if i % 6 == 0:
+        n = first_page + i // PER_SOL_PAGE
+        if i % PER_SOL_PAGE == 0:
             x = _x(n)
             c.setFont("Head", 20)
             c.drawString(x, PH - TOPM - 18, "Solutions")
-        k = i % 6
-        sx = _x(n) + (k % 2) * (slot_w + 22)
+        k = i % PER_SOL_PAGE
+        sx = _x(n) + (k % 2) * (slot_w + 26)
         sy = PH - TOPM - 44 - (k // 2 + 1) * slot_h
-        c.setFont("Semi", 11.5)
         title = f"{p['no']}  {C.TITLES[p['type']]}"
         if p["type"] == "nonogram":
             title += f": {p['name']}"
-        if p["type"] in ("wordsearch", "anagrams"):
+        if p["type"] in ("wordsearch", "anagrams", "novowels"):
             title += f": {p['theme']}"
-        c.drawString(sx, sy + slot_h - 16, title)
-        box = (sx, sy + 8, slot_w, slot_h - 34)
+        yy = sy + slot_h - 18
+        for line in L.wrap(title, "Semi", 14, slot_w):
+            c.setFont("Semi", 14)
+            c.drawString(sx, yy, line)
+            yy -= 17
+        box = (sx, sy + 12, slot_w, yy - sy - 6)
         if p["type"] == "ladder":
-            yy = box[1] + box[3] - 11
+            ty = box[1] + box[3] - 14
             for j, item in enumerate(p["items"]):
-                yy = L.para(c, "ab"[j] + ".  " + ", ".join(item["solution"]), box[0], yy, box[2], "Body", 9.5) - 6
+                ty = L.para(c, "ab"[j] + ".  " + ", ".join(item["solution"]), box[0], ty, box[2], "Body", 13) - 8
         else:
             L.DRAW[p["type"]](c, p, box, solved=True)
-        if k == 5 or i == len(puzzles) - 1:
+        if k == PER_SOL_PAGE - 1 or i == len(puzzles) - 1:
             footer(c, n)
             c.showPage()
 
@@ -282,11 +336,12 @@ def build(book_id):
         # 1 title
         c.setFont("Head", 40)
         yy = PH - 2.6 * 72
-        for line in ("The", "Don't Die Retired", "Puzzle Book"):
+        for line in b["title_lines"]:
             c.drawCentredString(PW / 2, yy, line)
             yy -= 50
         c.setFont("Head", 27)
-        c.drawCentredString(PW / 2, yy - 26, b["volume"])
+        if b["kind"] != "xmas":
+            c.drawCentredString(PW / 2, yy - 26, b["volume"])
         c.setFont("Body", 16)
         c.drawCentredString(PW / 2, yy - 62, b["strap"])
         sun(c, PW / 2, 2.5 * 72, 62, L.DARK)
@@ -295,12 +350,13 @@ def build(book_id):
         c.showPage(); n += 1
         # 2 copyright
         x = _x(n)
-        yy = 3.6 * 72
-        for t in (f"{b['title']}: {b['volume']}", "© 2026 Don't Die Retired. All rights reserved.",
+        yy = 4.8 * 72
+        for t in (f"{b['title']}: {b['volume']}" if b["kind"] != "xmas" else b["title"], COPYRIGHT_LINE,
                   "The puzzles in this book were generated by computer and each logic puzzle was checked by a solver to have exactly one solution. The word lists, instructions and layout are our own. Quotations used in the cryptograms are proverbs or come from works that are out of copyright.",
+                  "The puzzles and their instructions are set at 16 point or larger. Page numbers, this page and the solutions are smaller.",
                   "Set in Fraunces and Source Sans 3, used under the SIL Open Font License.",
                   "Found a mistake? Tell us: hello@dontdieretired.com", "dontdieretired.com"):
-            yy = L.para(c, t, x, yy, CW, "Body", 12.5, 17) - 9
+            yy = L.para(c, t, x, yy, CW, "Body", 14, 19) - 9
         c.showPage(); n += 1
         # 3 welcome
         x = _x(n)
@@ -323,10 +379,12 @@ def build(book_id):
         for k in kinds:
             if k == "wordsearch" and b["kind"] == "hard":
                 entries.append((C.TITLES[k], C.RULES["wordsearch_hard"]))
+            elif k == "logic" and b["kind"] == "xmas":
+                entries.append((C.TITLES[k], C.RULES["logic_xmas"]))
             else:
                 entries.append((C.TITLES[k], C.RULES[k]))
         for title, text in entries:
-            need = 26 + len(L.wrap(text, "Body", 15, CW)) * 20.5 + 14
+            need = 26 + len(L.wrap(text, "Body", 16, CW)) * 21.5 + 14
             if yy - need < BOTM:
                 footer(c, n)
                 c.showPage(); n += 1
@@ -334,7 +392,7 @@ def build(book_id):
                 yy = PH - TOPM - 20
             c.setFont("Head", 17)
             c.drawString(x, yy, title)
-            yy = L.para(c, text, x, yy - 24, CW, "Body", 15, 20.5) - 14
+            yy = L.para(c, text, x, yy - 24, CW, "Body", 16, 21.5) - 14
         footer(c, n)
         c.showPage(); n += 1
         # puzzle pages begin on a right-hand page
@@ -345,7 +403,7 @@ def build(book_id):
             plan.append(("part", tier))
             plan += [("puzzle", p) for p in puzzles if p["tier"] == tier]
         first_sol = n + len(plan) + 1          # after a "Solutions" divider
-        where = {p["no"]: first_sol + i // 6 for i, p in enumerate(puzzles)}
+        where = {p["no"]: first_sol + i // PER_SOL_PAGE for i, p in enumerate(puzzles)}
         for kind, item in plan:
             if kind == "part":
                 c.setFillColor(colour)
@@ -356,7 +414,7 @@ def build(book_id):
                 c.setFont("Head", 54)
                 c.drawCentredString(PW / 2, PH / 2 + 24, b["tiers"][item - 1])
                 cnt = [p for p in puzzles if p["tier"] == item]
-                c.setFont("Body", 15)
+                c.setFont("Body", 16)
                 c.drawCentredString(PW / 2, PH / 2 - 14, f"Puzzles {cnt[0]['no']} to {cnt[-1]['no']}")
                 sun(c, PW / 2, PH / 2 - 190, 52, gold, bars=False)
                 c.setFillColor(black)
@@ -369,13 +427,13 @@ def build(book_id):
         c.setFillColor(white)
         c.setFont("Head", 54)
         c.drawCentredString(PW / 2, PH / 2 + 24, "Solutions")
-        c.setFont("Body", 15)
+        c.setFont("Body", 16)
         c.drawCentredString(PW / 2, PH / 2 - 14, "Have one more go first.")
         c.setFillColor(black)
         c.showPage(); n += 1
         assert n == first_sol, (n, first_sol)
         draw_solutions(c, b, puzzles, n)
-        n += math.ceil(len(puzzles) / 6)
+        n += math.ceil(len(puzzles) / PER_SOL_PAGE)
         # closing page
         x = _x(n)
         c.setFont("Head", 26)
@@ -383,12 +441,10 @@ def build(book_id):
         for line in ("Retire from work if you like.", "Never from life."):
             c.drawString(x, yy, line)
             yy -= 34
-        other = ("If these were too gentle, The Hard Ones is the companion volume: thirteen kinds of puzzle, none of them a warm-up."
-                 if b["kind"] == "std" else
-                 "If you would like something to hand to a friend who is just getting started, Volume 1 has thirteen kinds of puzzle that build up from a warm-up.")
+        other = b["closing"]
         for t in ("Don't Die Retired is a website for people who have no intention of slowing down. Every day it tells one true story about someone doing something worth reading about, and gives you one thing to try this week, pitched at your level.",
-                  "There is a free weekly email, and a new puzzle on the site every day.", other, "dontdieretired.com"):
-            yy = L.para(c, t, x, yy - 10, CW, "Body", 15, 21.5) - 6
+                  other, "dontdieretired.com"):
+            yy = L.para(c, t, x, yy - 10, CW, "Body", 16, 22.5) - 6
         sun(c, PW / 2, 2.2 * 72, 56, L.DARK)
         c.showPage(); n += 1
         if (n - 1) % 2:                          # even page count for print
@@ -422,25 +478,43 @@ def cover(b, pages):
     p.moveTo(fx, 0); p.lineTo(fx, bleed + 1.7 * 72)
     p.curveTo(fx + PW * .3, bleed + 2.5 * 72, fx + PW * .62, bleed + 1.25 * 72, W, bleed + 2.1 * 72)
     p.lineTo(W, 0); p.close()
-    c.setFillColor(colour)
-    c.drawPath(p, stroke=0, fill=1)
-    c.setFillColor(HexColor("#000000")); c.setFillAlpha(.24)
-    c.drawPath(p, stroke=0, fill=1)
-    c.setFillAlpha(1)
+    if b["kind"] == "xmas":                      # a snow-covered hill, and snow falling
+        c.setFillColor(cream)
+        c.drawPath(p, stroke=0, fill=1)
+        flakes = random.Random(12)
+        for _ in range(70):
+            sx_, sy_ = fx + flakes.uniform(20, PW - 10), bleed + flakes.uniform(2.3 * 72, PH - 20)
+            if abs(sx_ - cx) < 150 and bleed + 1.9 * 72 < sy_ < bleed + 4.6 * 72:
+                continue                         # keep the sun clear
+            c.setFillAlpha(flakes.uniform(.35, .8))
+            c.circle(sx_, sy_, flakes.uniform(1.6, 3.6), stroke=0, fill=1)
+        c.setFillAlpha(1)
+    else:
+        c.setFillColor(colour)
+        c.drawPath(p, stroke=0, fill=1)
+        c.setFillColor(HexColor("#000000")); c.setFillAlpha(.24)
+        c.drawPath(p, stroke=0, fill=1)
+        c.setFillAlpha(1)
     c.setFillColor(cream)
     yy = bleed + PH - 1.25 * 72
-    for line in ("The", "Don't Die", "Retired", "Puzzle Book"):
-        c.setFont("Head", 30 if line == "The" else 62)
+    big = 62 if len(b["cover_lines"]) == 4 else 54
+    for line in b["cover_lines"]:
+        c.setFont("Head", 30 if line == "The" else big)
         c.drawCentredString(cx, yy, line)
-        yy -= 62 if line == "The" else 66
-    c.setFillColor(gold)
-    c.setFont("Head", 38)
-    c.drawCentredString(cx, yy - 6, b["volume"])
+        yy -= big if line == "The" else big + 4
+    if b["kind"] != "xmas":
+        c.setFillColor(gold)
+        c.setFont("Head", 38)
+        c.drawCentredString(cx, yy - 6, b["volume"])
+        yy -= 36
     c.setFillColor(cream)
-    c.setFont("Semi", 19)
-    c.drawCentredString(cx, yy - 42, b["strap"])
+    c.setFont("Semi", 19 if b["kind"] != "xmas" else 16.5)
+    for line in L.wrap(b["strap"], "Semi", 19 if b["kind"] != "xmas" else 16.5, PW - 90):
+        c.drawCentredString(cx, yy - 6, line)
+        yy -= 23
     c.setFont("Semi", 16)
-    c.drawCentredString(cx, bleed + .8 * 72, "Large print  \u2022  13 kinds of puzzle  \u2022  Solutions included")
+    c.setFillColor(HexColor(b["colour"]) if b["kind"] == "xmas" else cream)
+    c.drawCentredString(cx, bleed + .8 * 72, f"Large print  \u2022  {b['count_word']} kinds of puzzle  \u2022  Solutions included")
     # spine
     if pages >= 100:
         c.saveState()
@@ -448,7 +522,7 @@ def cover(b, pages):
         c.rotate(-90)
         c.setFont("Head", min(11, spine * .45))
         c.setFillColor(cream)
-        c.drawCentredString(0, -min(11, spine * .45) * .34, f"The Don't Die Retired Puzzle Book   {b['volume']}")
+        c.drawCentredString(0, -min(11, spine * .45) * .34, b["title"] if b["kind"] == "xmas" else f"{b['title']}   {b['volume']}")
         c.restoreState()
     # back
     bx = bleed + .8 * 72
@@ -459,7 +533,11 @@ def cover(b, pages):
     for line in L.wrap(b["welcome"][0], "Head", 30, bw):
         c.drawString(bx, yy, line)
         yy -= 38
-    blurb = (["Thirteen kinds of puzzle in one large-print book, arranged so that no two pages in a row ask the same thing of you.",
+    blurb = (["Seventeen kinds of puzzle for the days around Christmas, in large print.",
+              "Carols with their vowels missing. Lines from Dickens in code. Pictures hidden in grids. Presents to place beside trees, stars to place in the sky, and a party where you must work out who brought the mince pies. Sudoku, kakuro, word searches and more besides.",
+              "Three parts: Gentle, Steady and Tricky. Every logic puzzle is checked to have exactly one answer. Solutions at the back."]
+             if b["kind"] == "xmas" else
+             ["Thirteen kinds of puzzle in one large-print book, arranged so that no two pages in a row ask the same thing of you.",
               "Three parts: Warm-up, Steady and Stretch. Old friends such as sudoku and word searches sit beside kinds you may not have met: kakuro, futoshiki, skyscrapers, nonograms, bridges and more, each with clear instructions.",
               "Every logic puzzle is checked to have exactly one answer. Solutions at the back."]
              if b["kind"] == "std" else

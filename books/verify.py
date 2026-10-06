@@ -318,7 +318,80 @@ def check(p):
         for text, (kind, c1, v1, c2, v2, *oc) in zip(p["clues"], p["raw"]):
             if p["vals"][c1][v1].lower() not in text.lower() or p["vals"][c2][v2].lower() not in text.lower():
                 return False
-            if (kind == "not") != (" not " in text) or (kind == "lt") != ("younger than" in text or "earlier in the year than" in text):
+            if (kind == "not") != (" not " in text) or (kind == "lt") != any(w in text for w in p["lt_words"]):
+                return False
+        return True
+    if t == "tents":
+        n_ = p["n"]
+        trees = [tuple(q) for q in p["trees"]]
+        gifts = {tuple(q) for q in p["solution"]}
+        side = ((0, 1), (1, 0), (0, -1), (-1, 0))
+        x = {(r, c): m.NewBoolVar("") for r in range(n_) for c in range(n_) if (r, c) not in trees}
+        # pairing as a flow: pair[t][q] says tree t owns the present at q
+        pair = {}
+        for t_ in trees:
+            for dr, dc in side:
+                q = (t_[0] + dr, t_[1] + dc)
+                if q in x:
+                    pair[(t_, q)] = m.NewBoolVar("")
+        for t_ in trees:
+            m.Add(sum(v for (a, q), v in pair.items() if a == t_) == 1)
+        for q in x:
+            m.Add(sum(v for (a, qq), v in pair.items() if qq == q) == x[q])
+        for (r, c) in x:
+            for dr in (-1, 0, 1):
+                for dc in (-1, 0, 1):
+                    q = (r + dr, c + dc)
+                    if q in x and q > (r, c):
+                        m.Add(x[(r, c)] + x[q] <= 1)
+        for i in range(n_):
+            m.Add(sum(x[(i, c)] for c in range(n_) if (i, c) in x) == p["rows"][i])
+            m.Add(sum(x[(r, i)] for r in range(n_) if (r, i) in x) == p["cols"][i])
+        order = sorted(x)
+        seen = set()
+
+        def ok(vals):
+            key = tuple(vals)
+            if key in seen:
+                return False
+            seen.add(key)
+            return True
+        n, done, sols = count(m, [x[q] for q in order], ok)
+        return n == 1 and done and {q for q, v in zip(order, sols[0]) if v} == gifts
+    if t == "starbattle":
+        n_ = p["n"]
+        reg = p["region"]
+        # every region must be one connected piece
+        for g in range(n_):
+            cells = {(r, c) for r in range(n_) for c in range(n_) if reg[r][c] == g}
+            if not cells:
+                return False
+            seen, todo = set(), [next(iter(cells))]
+            while todo:
+                q = todo.pop()
+                if q in seen:
+                    continue
+                seen.add(q)
+                todo += [(q[0] + dr, q[1] + dc) for dr, dc in ((0, 1), (1, 0), (0, -1), (-1, 0)) if (q[0] + dr, q[1] + dc) in cells]
+            if seen != cells:
+                return False
+        x = [[m.NewBoolVar("") for _ in range(n_)] for _ in range(n_)]
+        for i in range(n_):
+            m.Add(sum(x[i]) == 1)
+            m.Add(sum(x[r][i] for r in range(n_)) == 1)
+            m.Add(sum(x[r][c] for r in range(n_) for c in range(n_) if reg[r][c] == i) == 1)
+        for r in range(n_):
+            for c in range(n_):
+                for dr, dc in ((0, 1), (1, -1), (1, 0), (1, 1)):
+                    if 0 <= r + dr < n_ and 0 <= c + dc < n_:
+                        m.Add(x[r][c] + x[r + dr][c + dc] <= 1)
+        n, done, sols = count(m, [v for row in x for v in row])
+        got = {(i // n_, i % n_) for i, v in enumerate(sols[0]) if v} if sols else set()
+        return n == 1 and done and got == {tuple(q) for q in p["solution"]}
+    if t == "novowels":
+        for short, full in p["items"]:
+            want = " ".join(("".join(ch for ch in w if ch not in "AEIOU") or "\u2013") if any(ch not in "AEIOU-'" for ch in w) else "\u2013" for w in full.split())
+            if short != want or not any(ch in "AEIOU" for ch in full):
                 return False
         return True
     raise ValueError(t)

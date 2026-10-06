@@ -392,41 +392,82 @@ def _kakuro_pattern(n, maxrun, rng):
     return white, runs
 
 
+def _kakuro_fill(white, runs, rng, fixed=None):
+    """A valid fill, biased towards runs whose totals have few possible digit sets."""
+    m = cp_model.CpModel()
+    x = {c: m.NewIntVar(1, 9, "") for c in white}
+    for _, run in runs:
+        m.AddAllDifferent([x[c] for c in run])
+    for c, v in (fixed or {}).items():
+        m.Add(x[c] == v)
+    m.Maximize(sum(rng.choice((-2, -1, 1, 2)) * sum(x[c] for c in run) for _, run in runs)
+               + sum(rng.randint(-1, 1) * x[c] for c in white))
+    s = cp_model.CpSolver()
+    s.parameters.num_workers = 1
+    s.parameters.max_time_in_seconds = 3
+    if s.Solve(m) not in (cp_model.OPTIMAL, cp_model.FEASIBLE):
+        return None
+    return {c: s.Value(x[c]) for c in white}
+
+
+def _kakuro_alts(white, runs, sol, k=12):
+    """Solve the puzzle that `sol` would print. Returns (solutions found up to k,
+    whether the search finished, cells where any solution differs from sol)."""
+    m = cp_model.CpModel()
+    order = sorted(white)
+    y = {c: m.NewIntVar(1, 9, "") for c in white}
+    for _, run in runs:
+        m.AddAllDifferent([y[c] for c in run])
+        m.Add(sum(y[c] for c in run) == sum(sol[c] for c in run))
+    s = cp_model.CpSolver()
+    s.parameters.enumerate_all_solutions = True
+    s.parameters.num_workers = 1
+    s.parameters.max_time_in_seconds = 4
+    cb = _Collect([y[c] for c in order], k, None, 100000)
+    st = s.Solve(m, cb)
+    done = st in (cp_model.OPTIMAL, cp_model.INFEASIBLE) and len(cb.sols) < k
+    diff = {c for vals in cb.sols for c, v in zip(order, vals) if v != sol[c]}
+    return len(cb.sols), done, diff
+
+
 def kakuro(tier, rng, n=None, book="hard"):
     """n is the side of the playing area (the clue row and column are extra).
-    Larger grids are filled so that more runs have sums with few possible
-    digit sets, which is what makes a unique answer reachable."""
-    n, maxrun, forcing = {"std": {1: (5, 3, True), 2: (6, 3, True), 3: (6, 4, True)},
-                          "hard": {1: (6, 4, False), 2: (7, 5, True), 3: (7, 5, True)}}[book][tier]
-    for _ in range(3000):
-        pt = _kakuro_pattern(n, maxrun, rng)
-        if not pt:
-            continue
-        white, runs = pt
-        for _fill in range(6):
-            m = cp_model.CpModel()
-            x = {cell: m.NewIntVar(1, 9, f"k{cell}") for cell in white}
-            for _, run in runs:
-                m.AddAllDifferent([x[c] for c in run])
-            if forcing:
-                m.Maximize(sum(rng.choice((-2, -1, 1, 2)) * sum(x[c] for c in run) for _, run in runs)
-                           + sum(rng.randint(-1, 1) * x[c] for c in white))
-            else:
-                m.Maximize(sum(rng.randint(-3, 3) * x[c] for c in white))
-            s = cp_model.CpSolver()
-            s.parameters.max_time_in_seconds = 3
-            s.parameters.num_workers = 1
-            if s.Solve(m) not in (cp_model.OPTIMAL, cp_model.FEASIBLE):
+
+    A random fill of a large grid almost never has a single answer, so the fill is
+    repaired: find the cells where other answers differ, refill only the runs through
+    those cells, and keep the change when fewer cells are in doubt. The result is
+    accepted only when a complete search finds exactly one answer."""
+    options = {"std": {1: [(5, 3)], 2: [(6, 3)], 3: [(6, 4)]},
+               "hard": {1: [(8, 5)], 2: [(9, 5)], 3: [(10, 6), (9, 6)]}}[book][tier]
+    for n, maxrun in options:
+        for _pattern in range(12):
+            pt = None
+            for _ in range(400):
+                pt = _kakuro_pattern(n, maxrun, rng)
+                if pt:
+                    break
+            if not pt:
+                break
+            white, runs = pt
+            sol = _kakuro_fill(white, runs, rng)
+            if not sol:
                 continue
-            sol = {c: s.Value(x[c]) for c in white}
-            m2 = cp_model.CpModel()
-            y = {cell: m2.NewIntVar(1, 9, f"k{cell}") for cell in white}
-            for _, run in runs:
-                m2.AddAllDifferent([y[c] for c in run])
-                m2.Add(sum(y[c] for c in run) == sum(sol[c] for c in run))
-            order = sorted(white)
-            cb = solutions(m2, [y[c] for c in order], 2)
-            if len(cb.sols) == 1 and cb.exhausted_ok:
+            cnt, done, diff = _kakuro_alts(white, runs, sol)
+            for _repair in range(60):
+                if (cnt == 1 and done) or not diff:
+                    break
+                region = set(diff)
+                for _, run in runs:
+                    if region & set(run):
+                        region |= set(run)
+                new = _kakuro_fill(white, runs, rng, {c: v for c, v in sol.items() if c not in region})
+                if not new:
+                    continue
+                c2, d2, diff2 = _kakuro_alts(white, runs, new)
+                if (c2 == 1 and d2) or len(diff2) <= len(diff):
+                    sol, cnt, done, diff = new, c2, d2, diff2
+            if cnt == 1 and done:
+                order = sorted(white)
                 return {"type": "kakuro", "tier": tier, "n": n, "white": order,
                         "runs": [(h, run, sum(sol[c] for c in run)) for h, run in runs],
                         "solution": {c: sol[c] for c in order}}
@@ -709,14 +750,58 @@ PICTURES = {
 }
 
 
+def _drawn_grid(name, n):
+    """Pictures the symbol font does not have, drawn large and reduced to an n x n grid."""
+    from PIL import Image, ImageDraw
+    S = 600
+    img = Image.new("L", (S, S), 0)
+    d = ImageDraw.Draw(img)
+    u = S / 100
+    P = lambda pts: d.polygon([(x * u, y * u) for x, y in pts], fill=255)
+    R = lambda x0, y0, x1, y1, f=255: d.rectangle([x0 * u, y0 * u, x1 * u, y1 * u], fill=f)
+    E = lambda x0, y0, x1, y1, f=255: d.ellipse([x0 * u, y0 * u, x1 * u, y1 * u], fill=f)
+    if name == "a Christmas tree":
+        P([(50, 2), (26, 34), (74, 34)]); P([(50, 20), (16, 60), (84, 60)]); P([(50, 44), (6, 86), (94, 86)])
+        R(42, 86, 58, 99)
+    elif name == "a snowman":
+        E(34, 14, 66, 46); E(22, 42, 78, 98); R(32, 12, 68, 18); R(38, 0, 62, 14)
+        E(42, 24, 47, 29, 0); E(53, 24, 58, 29, 0); E(47, 58, 53, 64, 0); E(47, 72, 53, 78, 0)
+    elif name == "a present":
+        R(8, 38, 92, 98); R(4, 28, 96, 42); R(44, 28, 56, 98, 0)
+        R(8, 62, 92, 70, 0); E(22, 4, 50, 30); E(50, 4, 78, 30); E(30, 11, 44, 23, 0); E(56, 11, 70, 23, 0)
+    elif name == "a candle":
+        R(34, 38, 66, 88); R(18, 88, 82, 99); P([(50, 2), (38, 24), (50, 36), (62, 24)]); R(48, 30, 52, 40)
+    elif name == "a bell":
+        E(26, 10, 74, 70); R(26, 40, 74, 76); P([(26, 62), (8, 84), (92, 84), (74, 62)]); E(42, 82, 58, 98); R(44, 2, 56, 14)
+    elif name == "a star":
+        import math
+        pts = []
+        for i in range(10):
+            ang = math.radians(-90 + i * 36)
+            rad = 49 if i % 2 == 0 else 21
+            pts.append((50 + rad * math.cos(ang), 52 + rad * math.sin(ang)))
+        P(pts)
+    else:
+        return None
+    small = img.resize((n, n), Image.BOX)
+    return [[1 if small.getpixel((c, r)) > 120 else 0 for c in range(n)] for r in range(n)]
+
+
+PICTURES["xmas"] = {
+    1: [("draw", "a candle", 10), ("draw", "a bell", 10), ("draw", "a Christmas tree", 12)],
+    2: [("draw", "a present", 12), ("\u266c", "musical notes", 12), ("draw", "a star", 12)],
+    3: [("draw", "a snowman", 15), ("\u2744", "a snowflake", 15), ("\u2654", "a crown", 15)],
+}
+
+
 def nonogram(tier, rng, n=None, book="hard"):
     for ch, name, size in PICTURES[book][tier]:
-        if (ch, book) in _nono_used:
+        if (ch, name, book) in _nono_used:
             continue
-        _nono_used.add((ch, book))
-        grid = _glyph_grid(ch, size)
+        _nono_used.add((ch, name, book))
+        grid = _drawn_grid(name, size) if ch == "draw" else _glyph_grid(ch, size)
         if grid is None:
-            raise RuntimeError(f"nonogram: the font has no symbol for {name}")
+            raise RuntimeError(f"nonogram: no picture for {name}")
         rows = [_line_clue(r) for r in grid]
         cols = [_line_clue([grid[r][c] for r in range(size)]) for c in range(size)]
         if not _nono_unique(rows, cols):
@@ -980,36 +1065,54 @@ CATS = {
     "activity": dict(values=["sea swimming", "pottery", "the cello", "fell running", "beekeeping", "life drawing", "rowing",
                              "Spanish", "bell ringing", "fencing", "stone carving", "the saxophone", "kayaking", "tap dancing",
                              "astronomy", "woodturning"],
-                     subj="the person who took up {}", pred="took up {}", neg="did not take up {}"),
+                     subj="the person who took up {}", pred="took up {}", neg="did not take up {}", head="Took up"),
     "place": dict(values=["Whitby", "Bath", "Dundee", "Ludlow", "Tenby", "Kendal", "Truro", "Buxton", "Oban", "Hexham",
                           "Santa Fe", "Savannah", "Asheville", "Duluth", "Sedona", "Portland"],
-                  subj="the person from {}", pred="is from {}", neg="is not from {}"),
-    "month": dict(values=["January", "March", "May", "July", "September", "November"],
-                  subj="the person who started in {}", pred="started in {}", neg="did not start in {}", ordered="earlier in the year"),
-    "age": dict(values=None, subj="the {}-year-old", pred="is {}", neg="is not {}", ordered="younger"),
-    "name": dict(subj="{}", pred="is {}", neg="is not {}"),
+                  subj="the person from {}", pred="is from {}", neg="is not from {}", head="From"),
+    "month": dict(values=["January", "March", "May", "July", "September", "November"], pick="ordered",
+                  subj="the person who started in {}", pred="started in {}", neg="did not start in {}",
+                  lt="started earlier in the year than", head="Started in"),
+    "age": dict(values=None, subj="the {}-year-old", pred="is {}", neg="is not {}", lt="is younger than", head="Age"),
+    "name": dict(subj="{}", pred="is {}", neg="is not {}", head="Name"),
+    # the Christmas edition: a party where everyone brings a dish
+    "dish": dict(values=["mince pies", "a trifle", "sausage rolls", "a Yule log", "mulled wine", "stollen", "a cheeseboard",
+                         "gingerbread", "a ham", "shortbread"],
+                 subj="the person who brought {}", pred="brought {}", neg="did not bring {}", head="Brought"),
+    "scarf": dict(values=["red", "green", "blue", "white", "gold", "silver", "purple"],
+                  subj="the person in the {} scarf", pred="wore the {} scarf", neg="did not wear the {} scarf",
+                  head="Scarf"),
+    "time": dict(values=["five o'clock", "half past five", "six o'clock", "half past six", "seven o'clock",
+                         "half past seven"], pick="ordered",
+                 subj="the person who arrived at {}", pred="arrived at {}", neg="did not arrive at {}",
+                 lt="arrived earlier than", head="Arrived at"),
+}
+THEMES = {
+    ("std", 1): ["name", "activity", "place"], ("std", 2): ["name", "activity", "place", "age"],
+    ("std", 3): ["name", "activity", "place", "age"],
+    # hard: four people with five things to pin down, then five people with four
+    ("hard", 1): ["name", "activity", "place", "age", "month"], ("hard", 2): ["name", "activity", "place", "age"],
+    ("hard", 3): ["name", "activity", "place", "age"],
+    ("xmas", 1): ["name", "dish", "scarf"], ("xmas", 2): ["name", "dish", "scarf", "time"],
+    ("xmas", 3): ["name", "dish", "scarf", "time"],
 }
 
 
 def _logic_once(tier, rng, book="hard"):
-    k = 4 if book == "std" else 5                       # people
-    cats = ["name", "activity", "place"] + (["age"] if book == "std" and tier > 1 else []) + (["age", "month"] if book == "hard" else [])
-    if book == "hard" and tier == 1:
-        cats = ["name", "activity", "place", "age"]
+    k = 5 if (book, tier) in (("hard", 2), ("hard", 3), ("xmas", 3)) else 4      # people
+    cats = THEMES[(book, tier)]
     vals = {}
     for c in cats:
         if c == "name":
             vals[c] = sorted(rng.sample(NAMES, k))
         elif c == "age":
-            base = rng.randint(50, 58)
-            vals[c] = [str(base + i * rng.choice((1, 2, 3))) for i in range(k)]
-            vals[c] = [str(v) for v in sorted({int(v) for v in vals[c]})]
-            while len(vals[c]) < k:
-                vals[c].append(str(int(vals[c][-1]) + 2))
-        elif c == "month":
-            ms = CATS[c]["values"]
-            idx = sorted(rng.sample(range(len(ms)), k))
-            vals[c] = [ms[i] for i in idx]
+            ages, v = [], rng.randint(50, 58)
+            for _ in range(k):
+                ages.append(str(v))
+                v += rng.choice((1, 2, 3))
+            vals[c] = ages
+        elif CATS[c].get("pick") == "ordered":
+            pool = CATS[c]["values"]
+            vals[c] = [pool[i] for i in sorted(rng.sample(range(len(pool)), k))]
         else:
             vals[c] = rng.sample(CATS[c]["values"], k)
     # truth[c][person] = index into vals[c]; names are the identity
@@ -1030,8 +1133,7 @@ def _logic_once(tier, rng, book="hard"):
                     clues.append(("is", c1, v1, c2, v2, f"{subj(c1, v1)} {CATS[c2]['pred'].format(vals[c2][v2])}."))
                 elif not same:
                     clues.append(("not", c1, v1, c2, v2, f"{subj(c1, v1)} {CATS[c2]['neg'].format(vals[c2][v2])}."))
-    for oc in [c for c in cats if CATS[c].get("ordered")]:
-        word = CATS[oc]["ordered"]
+    for oc in [c for c in cats if CATS[c].get("lt")]:
         for (c1, c2) in pairs:
             if oc in (c1, c2):
                 continue
@@ -1039,8 +1141,7 @@ def _logic_once(tier, rng, book="hard"):
                 for v2 in range(k):
                     p, q = holder[c1][v1], holder[c2][v2]
                     if p != q and truth[oc][p] < truth[oc][q]:
-                        text = (f"{subj(c1, v1)} is younger than {subj(c2, v2)}." if oc == "age"
-                                else f"{subj(c1, v1)} started earlier in the year than {subj(c2, v2)}.")
+                        text = f"{subj(c1, v1)} {CATS[oc]['lt']} {subj(c2, v2)}."
                         clues.append(("lt", c1, v1, c2, v2, text, oc))
 
     def is_unique(cl):
@@ -1074,7 +1175,7 @@ def _logic_once(tier, rng, book="hard"):
         return unique(m, [v for c in cats for row in b[c] for v in row])
 
     # favour indirect clues: few plain "is" statements, more comparisons and negatives
-    weight = {"is": 1.2, "not": 1.3, "lt": 1.6} if book == "std" else {"is": .6, "not": .7, "lt": 3}
+    weight = {"is": .6, "not": .7, "lt": 3} if book == "hard" else {"is": 1.2, "not": 1.3, "lt": 1.6}
     pool = sorted(clues, key=lambda cl_: rng.random() / weight[cl_[0]])
     chosen = []
     for cl_ in pool:
@@ -1092,16 +1193,18 @@ def _logic_once(tier, rng, book="hard"):
 
 
 def logic(tier, rng, book="hard"):
-    """Keep the clue list short enough to print in large type: try several and take a compact one."""
-    cap = {"std": 9, "hard": 14}[book]
-    best = None
-    for _ in range(40):
+    """A puzzle whose clues, set at 16 point, fit on the page above the answer table.
+    Tries many and keeps the first that fits."""
+    from layout import wrap
+    for _ in range(300):
         p = _logic_once(tier, rng, book)
-        if best is None or len(p["clues"]) < len(best["clues"]):
-            best = p
-        if len(best["clues"]) <= cap:
-            break
-    return best
+        people = len(p["solution"])
+        lines = sum(len(wrap(t, "Body", 16, 441)) for t in p["clues"])
+        if lines * 20 + len(p["clues"]) * 4 <= 544 - (people + 1) * 26:
+            p["heads"] = [CATS[c]["head"] for c in p["cats"]]
+            p["lt_words"] = [CATS[c]["lt"] for c in p["cats"] if CATS[c].get("lt")]
+            return p
+    raise RuntimeError("logic: no puzzle whose clues fit the page")
 
 
 # ------------------------------------------------------------------ anagrams
@@ -1117,3 +1220,180 @@ def anagrams(theme, words, rng):
                 break
         out.append(("".join(s), w.upper()))
     return {"type": "anagrams", "tier": 2, "theme": theme, "items": out}
+
+
+# ------------------------------------------------------------------ trees and presents (tents)
+
+def tents(tier, rng, book="xmas"):
+    """Every tree has one present beside it (above, below, left or right), each present
+    belongs to one tree, presents never touch each other even at a corner, and the
+    numbers give the presents in each row and column."""
+    n = {1: 6, 2: 7, 3: 9}[tier]
+    want = round(n * n * {1: .19, 2: .2, 3: .2}[tier])
+    around = [(dr, dc) for dr in (-1, 0, 1) for dc in (-1, 0, 1) if (dr, dc) != (0, 0)]
+    side = ((0, 1), (1, 0), (0, -1), (-1, 0))
+    inside = lambda r, c: 0 <= r < n and 0 <= c < n
+    for _ in range(600):
+        gifts, trees = set(), {}
+        cells = [(r, c) for r in range(n) for c in range(n)]
+        rng.shuffle(cells)
+        for (r, c) in cells:
+            if len(gifts) >= want:
+                break
+            if (r, c) in trees.values() or any((r + dr, c + dc) in gifts for dr, dc in around):
+                continue
+            spots = [(r + dr, c + dc) for dr, dc in side if inside(r + dr, c + dc)
+                     and (r + dr, c + dc) not in gifts and (r + dr, c + dc) not in trees.values()]
+            if not spots:
+                continue
+            gifts.add((r, c))
+            trees[(r, c)] = rng.choice(spots)
+        if len(gifts) < want:
+            continue
+        tree_cells = sorted(trees.values())
+        rows = [sum(1 for g in gifts if g[0] == r) for r in range(n)]
+        cols = [sum(1 for g in gifts if g[1] == c) for c in range(n)]
+        m = cp_model.CpModel()
+        x = {(r, c): m.NewBoolVar("") for r in range(n) for c in range(n) if (r, c) not in tree_cells}
+        link = {}
+        for t in tree_cells:
+            opts = [(t[0] + dr, t[1] + dc) for dr, dc in side if (t[0] + dr, t[1] + dc) in x]
+            for q in opts:
+                link[(t, q)] = m.NewBoolVar("")
+                m.AddImplication(link[(t, q)], x[q])
+            m.AddExactlyOne(link[(t, q)] for q in opts)
+        for q in x:
+            m.Add(sum(v for (t, qq), v in link.items() if qq == q) == x[q])
+            for dr, dc in around:
+                p2 = (q[0] + dr, q[1] + dc)
+                if p2 in x and p2 > q:
+                    m.AddBoolOr([x[q].Not(), x[p2].Not()])
+        for r in range(n):
+            m.Add(sum(x[(r, c)] for c in range(n) if (r, c) in x) == rows[r])
+        for c in range(n):
+            m.Add(sum(x[(r, c)] for r in range(n) if (r, c) in x) == cols[c])
+        order = sorted(x)
+        seen = set()
+
+        def fresh(vals):        # the same presents can pair with trees in more than one way: count the layout once
+            key = tuple(vals)
+            if key in seen:
+                return False
+            seen.add(key)
+            return True
+        cb = solutions(m, [x[q] for q in order], 2, fresh, cap=20000)
+        if len(cb.sols) == 1 and cb.exhausted_ok:
+            return {"type": "tents", "tier": tier, "n": n, "trees": tree_cells, "rows": rows, "cols": cols,
+                    "solution": sorted(gifts)}
+    raise RuntimeError("tents: none unique")
+
+
+# ------------------------------------------------------------------ star battle
+
+def starbattle(tier, rng, book="xmas"):
+    """One star in every row, every column and every outlined region; stars never touch,
+    even at a corner. Regions are grown from the intended stars, then repaired: while a
+    second answer exists, one of its star cells is moved into a neighbouring region,
+    which rules that answer out and leaves the intended one valid."""
+    n = {1: 5, 2: 6, 3: 8}[tier]
+    around = [(dr, dc) for dr in (-1, 0, 1) for dc in (-1, 0, 1) if (dr, dc) != (0, 0)]
+    side = ((0, 1), (1, 0), (0, -1), (-1, 0))
+    for _ in range(400):
+        cols = list(range(n))
+        rng.shuffle(cols)
+        if any(abs(cols[r] - cols[r + 1]) <= 1 for r in range(n - 1)):
+            continue
+        stars = [(r, cols[r]) for r in range(n)]
+        region = {s_: i for i, s_ in enumerate(stars)}
+        free = [(r, c) for r in range(n) for c in range(n) if (r, c) not in region]
+        while free:          # grow the regions outwards from the stars
+            rng.shuffle(free)
+            for cell in list(free):
+                nb = [region[(cell[0] + dr, cell[1] + dc)] for dr, dc in side if (cell[0] + dr, cell[1] + dc) in region]
+                if nb:
+                    region[cell] = rng.choice(nb)
+                    free.remove(cell)
+                    break
+
+        def other_answers():
+            m = cp_model.CpModel()
+            x = [[m.NewBoolVar("") for _ in range(n)] for _ in range(n)]
+            for i in range(n):
+                m.AddExactlyOne(x[i])
+                m.AddExactlyOne(x[r][i] for r in range(n))
+                m.AddExactlyOne(x[r][c] for (r, c), g in region.items() if g == i)
+            for r in range(n):
+                for c in range(n):
+                    for dr, dc in around:
+                        q = (r + dr, c + dc)
+                        if 0 <= q[0] < n and 0 <= q[1] < n and q > (r, c):
+                            m.AddBoolOr([x[r][c].Not(), x[q[0]][q[1]].Not()])
+            cb = solutions(m, _flat(x), 2)
+            found = [{(i // n, i % n) for i, v in enumerate(vals) if v} for vals in cb.sols]
+            return [f for f in found if f != set(stars)], cb.exhausted_ok or len(cb.sols) >= 2
+
+        ok = False
+        for _repair in range(150):
+            alts, done = other_answers()
+            if not alts:
+                ok = done
+                break
+            moved = False
+            cands = [q for q in alts[0] if q not in stars]
+            rng.shuffle(cands)
+            for q in cands:
+                home = region[q]
+                rest = {cell for cell, g in region.items() if g == home and cell != q}
+                targets = {region[(q[0] + dr, q[1] + dc)] for dr, dc in side if (q[0] + dr, q[1] + dc) in region} - {home}
+                if targets and rest and _connected(rest):
+                    region[q] = rng.choice(sorted(targets))
+                    moved = True
+                    break
+            if not moved:
+                break
+        sizes = [sum(1 for g in region.values() if g == i) for i in range(n)]
+        if ok and min(sizes) >= (2 if tier > 1 else 1):
+            return {"type": "starbattle", "tier": tier, "n": n,
+                    "region": [[region[(r, c)] for c in range(n)] for r in range(n)], "solution": sorted(stars)}
+    raise RuntimeError("starbattle: none unique")
+
+
+# ------------------------------------------------------------------ missing vowels
+
+def novowels(theme, phrases, rng):
+    out = []
+    for ph in phrases:
+        words = []
+        for w in ph.upper().split():
+            stripped = "".join(ch for ch in w if ch not in "AEIOU")
+            words.append(stripped if any(ch.isalpha() for ch in stripped) else "\u2013")
+        out.append((" ".join(words), ph.upper()))
+    return {"type": "novowels", "tier": 2, "theme": theme, "items": out}
+
+
+# ------------------------------------------------------------------ ladders between chosen words
+
+def ladder_between(a, b, max_steps=7):
+    """Shortest ladder from a to b, or None. Uses the full everyday word list."""
+    a, b = a.lower(), b.lower()
+    words = set(_ladder_words(len(a)))
+    if a not in words or b not in words:
+        return None
+    prev, frontier = {a: None}, [a]
+    for _ in range(max_steps):
+        nxt = []
+        for w in frontier:
+            for i in range(len(w)):
+                for ch in "abcdefghijklmnopqrstuvwxyz":
+                    v = w[:i] + ch + w[i + 1:]
+                    if v in words and v not in prev:
+                        prev[v] = w
+                        nxt.append(v)
+        frontier = nxt
+        if b in prev:
+            path = [b]
+            while prev[path[-1]] is not None:
+                path.append(prev[path[-1]])
+            path = [w.upper() for w in path[::-1]]
+            return {"type": "ladder", "tier": 2, "start": path[0], "end": path[-1], "steps": len(path) - 1, "solution": path}
+    return None

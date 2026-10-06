@@ -116,7 +116,7 @@ def killer(c, p, box, solved=False):
     c.setDash()
     for cage, total in zip(p["cages"], p["sums"]):
         r, col = min(cage)
-        size = s * .27
+        size = s * .32
         c.setFont("Semi", size)
         tw = pdfmetrics.stringWidth(str(total), "Semi", size)
         c.setFillColor(white)
@@ -154,9 +154,9 @@ def kakuro(c, p, box, solved=False):
                 c.line(L, T, L + s, T - s)
                 c.setStrokeColor(black)
                 if "a" in k:
-                    _txt(c, s, L + s * .68, T - s * .3, k["a"], "Semi", .36, white)
+                    _txt(c, s, L + s * .68, T - s * .29, k["a"], "Semi", .4, white)
                 if "d" in k:
-                    _txt(c, s, L + s * .3, T - s * .7, k["d"], "Semi", .36, white)
+                    _txt(c, s, L + s * .3, T - s * .71, k["d"], "Semi", .4, white)
             c.setFillColor(black)
     _lines(c, s, ox, top, n + 1, n + 1, thin=max(.6, s * .03))
 
@@ -265,7 +265,7 @@ def nonogram(c, p, box, solved=False):
     x, y, w, h = box
     L = max(len(r) for r in p["rows"])
     T = max(len(r) for r in p["cols"])
-    k = .62
+    k = .72
     s = min(w / (n + k * L), h / (n + k * T), 46)
     ox = x + (w - s * (n + k * L)) / 2 + s * k * L
     top = y + h - (h - s * (n + k * T)) / 2 - s * k * T
@@ -279,10 +279,10 @@ def nonogram(c, p, box, solved=False):
     _lines(c, s, ox, top, n, n, 5, thick=max(1.2, s * .06))
     for r, clue in enumerate(p["rows"]):
         for j, v in enumerate(reversed(clue)):
-            _txt(c, s, ox - (j + .5) * s * k, top - (r + .5) * s, v, "Semi", .46)
+            _txt(c, s, ox - (j + .5) * s * k, top - (r + .5) * s, v, "Semi", .58)
     for col, clue in enumerate(p["cols"]):
         for j, v in enumerate(reversed(clue)):
-            _txt(c, s, ox + (col + .5) * s, top + (j + .5) * s * k, v, "Semi", .46)
+            _txt(c, s, ox + (col + .5) * s, top + (j + .5) * s * k, v, "Semi", .58)
 
 
 def bridges(c, p, box, solved=False):
@@ -325,8 +325,8 @@ def wordsearch(c, p, box, solved=False):
     words = p["display"]
     list_h = 0
     if (not solved and not p["hard"]) or (solved and p["hard"]):   # the hard ones list their words only with the solution
-        cols = 3
-        fs = 13.5 if w > 300 else 6.6
+        cols = 3 if w > 300 else 2
+        fs = 16 if w > 300 else 8.5
         list_h = (-(-len(words) // cols)) * fs * 1.4 + fs
     s = min(w / n, (h - list_h) / n, 30)
     ox, top = x + (w - s * n) / 2, y + h
@@ -355,8 +355,8 @@ def wordsearch(c, p, box, solved=False):
 def cryptogram(c, p, box, solved=False):
     x, y, w, h = box
     if solved:
-        yy = para(c, p["plain"].capitalize() if False else p["plain"], x, y + h - 11, w, "Body", 9.5)
-        para(c, p["source"], x, yy - 2, w, "Body", 8.5, color=GREY)
+        yy = para(c, p["plain"], x, y + h - 14, w, "Body", 13)
+        para(c, p["source"], x, yy - 2, w, "Body", 12, color=DARK)
         return
     cw, rowh = 25, 66
     words = p["cipher"].split()
@@ -382,9 +382,9 @@ def cryptogram(c, p, box, solved=False):
                     if ch in p["given"]:
                         c.setFont("Semi", 18)
                         c.drawCentredString(xx + cw / 2 - .5, yy + 4, pl)
-                    c.setFont("Body", 15)
-                    c.setFillColor(GREY)
-                    c.drawCentredString(xx + cw / 2 - .5, yy - 17, ch)
+                    c.setFont("Body", 16)
+                    c.setFillColor(DARK)
+                    c.drawCentredString(xx + cw / 2 - .5, yy - 18, ch)
                     c.setFillColor(black)
                 else:
                     c.setFont("Semi", 18)
@@ -394,7 +394,7 @@ def cryptogram(c, p, box, solved=False):
         yy -= rowh
     # a place to keep track of the code
     yy -= 6
-    c.setFont("Body", 13)
+    c.setFont("Body", 16)
     c.drawString(x, yy, "Your working: write each code letter's real letter underneath.")
     yy -= 28
     bw = w / 13
@@ -405,17 +405,17 @@ def cryptogram(c, p, box, solved=False):
             c.setLineWidth(.7)
             c.rect(L, yy - 26, bw, 52)
             c.line(L, yy, L + bw, yy)
-            c.setFont("Semi", 15)
-            c.setFillColor(GREY)
+            c.setFont("Semi", 16)
+            c.setFillColor(DARK)
             c.drawCentredString(L + bw / 2, yy + 7, ch)
             c.setFillColor(black)
             if ch in p["given"]:
                 c.drawCentredString(L + bw / 2, yy - 19, p["given"][ch])
         yy -= 64
     if p["source"]:
-        c.setFont("Body", 13)
-        c.setFillColor(GREY)
-        c.drawString(x, yy + 14, "Source revealed with the solution.")
+        c.setFont("Body", 16)
+        c.setFillColor(DARK)
+        c.drawString(x, yy + 10, "The source is given with the solution.")
         c.setFillColor(black)
 
 
@@ -424,7 +424,7 @@ def ladder(c, p, box, solved=False):
     words = p["solution"]
     n, rows = len(words[0]), len(words)
     if solved:
-        para(c, ", ".join(words), x, y + h - 11, w, "Body", 9.5)
+        para(c, ", ".join(words), x, y + h - 14, w, "Body", 13)
         return
     s = min(40, w / n, h / rows)
     ox, top = x + (w - s * n) / 2, y + h
@@ -440,56 +440,49 @@ def ladder(c, p, box, solved=False):
 def logic(c, p, box, solved=False):
     x, y, w, h = box
     cats = p["cats"]
-    head = {"name": "Name", "activity": "Took up", "place": "From", "age": "Age", "month": "Started in"}
     k = len(p["solution"])
+    widths = {3: (.26, .44, .30), 4: (.21, .36, .25, .18), 5: (.18, .28, .2, .12, .22)}[len(cats)]
     if solved:
-        fs = 8.6
-        cw = [w * f for f in ({3: (.24, .42, .34), 4: (.2, .36, .28, .16), 5: (.17, .29, .22, .1, .22)}[len(cats)])]
-        yy = y + h - 10
+        fs = 11.5 if len(cats) < 5 else 10
+        yy = y + h - 14
         for row in p["solution"]:
             xx = x
             for i, v in enumerate(row):
                 c.setFont("Semi" if i == 0 else "Body", fs)
                 c.drawString(xx, yy, v)
-                xx += cw[i]
-            yy -= fs * 1.45
+                xx += w * widths[i]
+            yy -= fs * 1.5
         return
-    rowh = 32
-    table_h = (k + 1) * rowh
-    fs = 15
-    while fs > 12.5:        # shrink the clue text only as far as needed to leave room for the answer table
-        need = sum(len(wrap(t, "Body", fs, w - 28)) * fs * 1.34 + 5 for t in p["clues"])
-        if need <= h - table_h - 30:
-            break
-        fs -= .5
-    yy = y + h - 16
+    rowh = 26
+    yy = y + h - 18
     for i, text in enumerate(p["clues"], 1):
-        c.setFont("Semi", fs)
+        c.setFont("Semi", 16)
         c.drawString(x, yy, f"{i}.")
-        yy = para(c, text, x + 28, yy, w - 28, "Body", fs, fs * 1.34) - 5
-    top = y + table_h
-    cwid = w / len(cats)
+        yy = para(c, text, x + 28, yy, w - 28, "Body", 16, 20) - 4
+    top = y + (k + 1) * rowh
     c.setLineWidth(1)
     for r in range(k + 1):
+        xx = x
         for i, cat in enumerate(cats):
-            c.rect(x + i * cwid, top - (r + 1) * rowh, cwid, rowh)
+            cwid = w * widths[i]
+            c.rect(xx, top - (r + 1) * rowh, cwid, rowh)
             if r == 0:
-                c.setFont("Semi", 13.5)
-                c.drawString(x + i * cwid + 8, top - rowh + 10, head[cat])
+                c.setFont("Semi", 16)
+                c.drawString(xx + 6, top - rowh + 7, p["heads"][i])
             elif i == 0:
-                c.setFont("Body", 14)
-                c.drawString(x + 8, top - (r + 1) * rowh + 10, p["vals"]["name"][r - 1])
-    return top - (k + 1) * rowh
+                c.setFont("Body", 16)
+                c.drawString(xx + 6, top - (r + 1) * rowh + 7, p["vals"]["name"][r - 1])
+            xx += cwid
 
 
 def anagrams(c, p, box, solved=False):
     x, y, w, h = box
     if solved:
-        para(c, ", ".join(a for _, a in p["items"]), x, y + h - 11, w, "Body", 9.5)
+        para(c, ", ".join(a for _, a in p["items"]), x, y + h - 14, w, "Body", 13)
         return
     yy = y + h - 26
     for i, (scr, _ans) in enumerate(p["items"], 1):
-        c.setFont("Semi", 15)
+        c.setFont("Semi", 16)
         c.drawString(x, yy, f"{i}.")
         c.setFont("Semi", 19)
         c.drawString(x + 34, yy, "  ".join(scr))
@@ -498,5 +491,91 @@ def anagrams(c, p, box, solved=False):
         yy -= min(52, (h - 30) / len(p["items"]))
 
 
+def _tree(c, cx, cy, s):
+    c.setFillColor(DARK)
+    for i, (wd, y0) in enumerate(((.2, .36), (.29, .16), (.38, -.06))):
+        p = c.beginPath()
+        p.moveTo(cx, cy + s * (y0 + .22 - i * .02)); p.lineTo(cx - s * wd, cy + s * (y0 - .2)); p.lineTo(cx + s * wd, cy + s * (y0 - .2)); p.close()
+        c.drawPath(p, stroke=0, fill=1)
+    c.rect(cx - s * .06, cy - s * .4, s * .12, s * .16, stroke=0, fill=1)
+    c.setFillColor(black)
+
+
+def _gift(c, cx, cy, s):
+    c.setLineWidth(max(1, s * .05))
+    c.rect(cx - s * .26, cy - s * .28, s * .52, s * .44)
+    c.line(cx, cy - s * .28, cx, cy + s * .16)
+    c.line(cx - s * .26, cy - s * .06, cx + s * .26, cy - s * .06)
+    c.circle(cx - s * .1, cy + s * .25, s * .09)
+    c.circle(cx + s * .1, cy + s * .25, s * .09)
+
+
+def _star(c, cx, cy, r):
+    import math
+    p = c.beginPath()
+    for i in range(10):
+        a = math.radians(90 + i * 36)
+        rad = r if i % 2 == 0 else r * .42
+        (p.moveTo if i == 0 else p.lineTo)(cx + rad * math.cos(a), cy + rad * math.sin(a))
+    p.close()
+    c.setFillColor(DARK)
+    c.drawPath(p, stroke=0, fill=1)
+    c.setFillColor(black)
+
+
+def tents(c, p, box, solved=False):
+    n = p["n"]
+    s, ox, top = _grid(*box, n + 1, n + 1)
+    _lines(c, s, ox + s, top - s, n, n)
+    for i in range(n):
+        _txt(c, s, ox + s * .5, top - (i + 1.5) * s, p["rows"][i], "Semi", .5)
+        _txt(c, s, ox + (i + 1.5) * s, top - s * .5, p["cols"][i], "Semi", .5)
+    for r, col in p["trees"]:
+        _tree(c, ox + (col + 1.5) * s, top - (r + 1.5) * s, s)
+    if solved:
+        for r, col in p["solution"]:
+            _gift(c, ox + (col + 1.5) * s, top - (r + 1.5) * s, s)
+
+
+def starbattle(c, p, box, solved=False):
+    n = p["n"]
+    s, ox, top = _grid(*box, n, n)
+    reg = p["region"]
+    thin, thick = max(.5, s * .018), max(1.8, s * .075)
+    c.setLineCap(1)
+    for r in range(n):
+        for col in range(n):
+            L, T = ox + col * s, top - r * s
+            if col + 1 < n:
+                c.setLineWidth(thick if reg[r][col] != reg[r][col + 1] else thin)
+                c.line(L + s, T, L + s, T - s)
+            if r + 1 < n:
+                c.setLineWidth(thick if reg[r][col] != reg[r + 1][col] else thin)
+                c.line(L, T - s, L + s, T - s)
+    c.setLineWidth(thick)
+    c.rect(ox, top - n * s, n * s, n * s)
+    c.setLineCap(0)
+    if solved:
+        for r, col in p["solution"]:
+            _star(c, ox + (col + .5) * s, top - (r + .5) * s, s * .34)
+
+
+def novowels(c, p, box, solved=False):
+    x, y, w, h = box
+    if solved:
+        para(c, "; ".join(a for _, a in p["items"]), x, y + h - 14, w, "Body", 12.5)
+        return
+    step = min(54, (h - 20) / len(p["items"]))
+    yy = y + h - 24
+    for i, (short, _ans) in enumerate(p["items"], 1):
+        c.setFont("Semi", 16)
+        c.drawString(x, yy, f"{i}.")
+        c.setFont("Semi", 18)
+        c.drawString(x + 34, yy, short)
+        c.setLineWidth(.9)
+        c.line(x + 34, yy - step * .46, x + w, yy - step * .46)
+        yy -= step
+
+
 DRAW = {f.__name__: f for f in (sudoku, killer, kakuro, futoshiki, calcudoku, skyscrapers, binary, nonogram, bridges,
-                                wordsearch, cryptogram, ladder, logic, anagrams)}
+                                wordsearch, cryptogram, ladder, logic, anagrams, tents, starbattle, novowels)}
