@@ -32,3 +32,13 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+  social:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 post_social.py --check
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
