@@ -67,7 +67,7 @@ def existing_posts(org, channel_ids):
     q = """query($o: OrganizationId!, $c: [ChannelId!]) {
       posts(first: 50, input: {organizationId: $o, filter: {channelIds: $c},
                                sort: [{field: createdAt, direction: desc}]}) {
-        edges { node { id text status dueAt channelId } } } }"""
+        edges { node { id text status dueAt sentAt channelId channelService externalLink error { message } } } } }"""
     return [e["node"] for e in gql(q, {"o": org, "c": channel_ids})["posts"]["edges"]]
 
 
@@ -141,8 +141,10 @@ def post(named=None):
     for pack in packs:
         meta = json.loads((pack / "meta.json").read_text(encoding="utf-8"))
         slug = pack.name[11:]
-        todo = [c for c in ch if not any(p["channelId"] == c["id"] and norm(p["text"]) == norm(meta["posts"][SERVICES[c["service"]]])
-                                         for p in live)]
+        same = lambda c, pool: [p for p in pool if p["channelId"] == c["id"]
+                                and norm(p["text"]) == norm(meta["posts"][SERVICES[c["service"]]])]
+        # skip what Buffer already holds; retry a post that failed to publish once, not for ever
+        todo = [c for c in ch if not same(c, live) and len(same(c, have)) < 2]
         if not todo:
             lines.append(f"{slug}: already in Buffer on every channel"); continue
         when = pick_slot(taken, now); taken.append(when)
@@ -169,7 +171,17 @@ def post(named=None):
                 lines.append(f"{slug} / {svc}: {r['post']['status']} for {when.astimezone(UK):%a %d %b %H:%M} UK")
             else:
                 failed += 1; lines.append(f"{slug} / {svc}: FAILED ({r['__typename']}) {r.get('message', '')[:300]}")
-    say("error" if failed else "notice", "Social posting\n" + "\n".join(lines))
+    # what happened to the posts already handed over: Buffer only reports a publishing failure after the event
+    recent = [p for p in have if (p.get("sentAt") or p.get("dueAt") or "") >= (now - dt.timedelta(days=2)).strftime("%Y-%m-%d")]
+    for p in recent:
+        if p["status"] == "error":
+            lines.append(f"EARLIER POST FAILED on {p['channelService']}: {((p.get('error') or {}).get('message') or 'no reason given')[:300]} | {norm(p['text'])[:60]}")
+    sent = [p for p in recent if p["status"] == "sent"]
+    lines.append(f"Last two days in Buffer: {len(sent)} published, "
+                 f"{sum(p['status'] in ('scheduled', 'sending') for p in recent)} waiting, {sum(p['status'] == 'error' for p in recent)} failed")
+    lines += [f"published on {p['channelService']}: {p['externalLink']}" for p in sent[:6] if p.get("externalLink")]
+    bad = failed or any(p["status"] == "error" for p in recent)
+    say("error" if failed else "warning" if bad else "notice", "Social posting\n" + "\n".join(lines))
     return 1 if failed else 0
 
 
