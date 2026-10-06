@@ -68,7 +68,7 @@ The FTC's advice is to resist pressure, research the programme and the people on
 
 ## If you have been contacted
 
-Treat it as a near miss and report it. In the UK, MoneyHelper says to report to Report Fraud on 0300 123 2040 or at reportfraud.police.uk, and to the FCA on 0800 111 6768; in Scotland, Police Scotland on 101. In the US, report to the FBI's Internet Crime Complaint Center at ic3.gov or the FTC at ReportFraud.ftc.gov and, for investment fraud, the SEC at sec.gov/tcr.
+Treat it as a near miss and report it. In the UK, MoneyHelper says to report to Report Fraud on 0300 123 2040 or at reportfraud.police.uk, and to the FCA on 0800 111 6768; in Scotland, Police Scotland on 101. In the US, report to the FTC at ReportFraud.ftc.gov or the FBI's Internet Crime Complaint Center at ic3.gov and, for investment fraud, the SEC at sec.gov/tcr.
 
 If a transfer is already in motion, MoneyHelper's first step is to "contact your pension provider immediately".
 
@@ -98,4 +98,4 @@ Our guide to [finding lost pensions and retirement accounts](/money/finding-lost
 4. If money has already gone, ring your bank or card issuer first, then report, both within the day.
 5. Keep the rule by the phone: hang up, check, call back.
 
-Updated 6 October 2026: added the FBI's Internet Crime Complaint Center (ic3.gov) as a US reporting route.
+Updated 6 October 2026: added the FBI's Internet Crime Complaint Center (ic3.gov) as a second US reporting route.

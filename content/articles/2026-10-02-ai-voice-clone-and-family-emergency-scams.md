@@ -92,7 +92,7 @@ It happens to careful, clever people. Act quickly and without embarrassment.
 **Then report it.**
 
 - **UK:** Report Fraud, the City of London Police service that replaced Action Fraud in December 2025, at reportfraud.police.uk or on **0300 123 2040** (England, Wales and Northern Ireland). In Scotland, call Police Scotland on **101**.
-- **US:** the FBI's Internet Crime Complaint Center at **ic3.gov**, the FTC at **ReportFraud.ftc.gov**, and for a calm voice the free AARP Fraud Watch Network Helpline on **877-908-3360**, Monday to Friday, 8am to 8pm Eastern.
+- **US:** the FTC at **ReportFraud.ftc.gov**, the FBI at **ic3.gov**, and for a calm voice the free AARP Fraud Watch Network Helpline on **877-908-3360**, Monday to Friday, 8am to 8pm Eastern.
 
 The other disguises scammers use, and how to report texts and emails, are in [How to spot a scam text, email or call](/tech/how-to-spot-a-scam-text-email-or-call/).
 
@@ -103,5 +103,3 @@ Next time you see or ring your family, try something like this:
 > "There are scam calls now that can copy a voice. If any of us ever rings another asking for money in a hurry, we ask for the family word. Ours is ____. We never text it or write it online. And if you ring me in real trouble and I hang up and call you straight back, that isn't doubt. That's the plan."
 
 Then save their current numbers, and carry on answering the phone to the people you love.
-
-Updated 6 October 2026: US reporting routes now give the FBI's Internet Crime Complaint Center (ic3.gov) first, with the FTC's ReportFraud.ftc.gov alongside it.
