@@ -38,7 +38,8 @@
   </aside>
 
   {% if c.guide_art or c.story_art %}
-  <h2>Read first</h2>
+  <h2>From the site</h2>
+  {% if c.story_note %}<p>{{ c.story_note }}</p>{% endif %}
   <div class="grid grid-2">
     {% if c.guide_art %}{{ card(c.guide_art) }}{% endif %}
     {% if c.story_art %}{{ card(c.story_art) }}{% endif %}

@@ -67,5 +67,6 @@ The health case is modest by comparison and well established. The World Health O
 - **Start with a trail, not a continent.** Our guide to [choosing a first walking holiday](/travel/walking-holidays-for-beginners-after-50/) covers Hadrian's Wall Path, 84 miles (135 km), and the South Downs Way, 100 miles (160 km).
 - **Train for consecutive days.** One long walk tells you little. Two in a row tell you about your feet, your shoes and your pack.
 - **Make one rule.** A whole trail with no skipped sections. Every stage on foot from the station. Rules turn a holiday into a project.
+- **Or try the paratroopers' ten miles.** Bushby was a paratrooper before he was a walker. The [PARAS' 10](/list/paras-10/) is a 10-mile race based on the Parachute Regiment's own test march, and it is open to the public: you can run it, or march it in boots with a 35lb pack. He has no connection with the event; the link is ours.
 
 For a different kind of patience, [Amy Appelhans Gubser](/move/amy-gubser-golden-gate-farallon-swim-55/) spent five years planning a 17-hour swim. Bushby could use her this week.
