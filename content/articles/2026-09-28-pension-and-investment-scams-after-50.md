@@ -26,6 +26,7 @@ sources:
   - {title: "Investment Scams", publisher: "Federal Trade Commission", date: "2026", url: "https://consumer.ftc.gov/articles/investment-scams"}
   - {title: "How To Avoid a Scam", publisher: "Federal Trade Commission", date: "2026", url: "https://consumer.ftc.gov/articles/how-avoid-scam"}
   - {title: "What To Do if You Were Scammed", publisher: "Federal Trade Commission", date: "2026", url: "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"}
+  - {title: "Internet Crime Complaint Center (IC3)", publisher: "FBI", date: "n.d.", url: "https://www.ic3.gov/"}
 ---
 Scammers do not target people over 50 because they think you are foolish. They target you because you have the pension. The good news is that the patterns are well documented, and most collapse the moment you do one boring thing: stop, and check. This is general information, not financial advice.
 
@@ -67,7 +68,7 @@ The FTC's advice is to resist pressure, research the programme and the people on
 
 ## If you have been contacted
 
-Treat it as a near miss and report it. In the UK, MoneyHelper says to report to Report Fraud on 0300 123 2040 or at reportfraud.police.uk, and to the FCA on 0800 111 6768; in Scotland, Police Scotland on 101. In the US, report to the FTC at ReportFraud.ftc.gov and, for investment fraud, the SEC at sec.gov/tcr.
+Treat it as a near miss and report it. In the UK, MoneyHelper says to report to Report Fraud on 0300 123 2040 or at reportfraud.police.uk, and to the FCA on 0800 111 6768; in Scotland, Police Scotland on 101. In the US, report to the FBI's Internet Crime Complaint Center at ic3.gov or the FTC at ReportFraud.ftc.gov and, for investment fraud, the SEC at sec.gov/tcr.
 
 If a transfer is already in motion, MoneyHelper's first step is to "contact your pension provider immediately".
 
@@ -96,3 +97,5 @@ Our guide to [finding lost pensions and retirement accounts](/money/finding-lost
 3. Had any unsolicited pension or investment contact recently? Report it today.
 4. If money has already gone, ring your bank or card issuer first, then report, both within the day.
 5. Keep the rule by the phone: hang up, check, call back.
+
+Updated 6 October 2026: added the FBI's Internet Crime Complaint Center (ic3.gov) as a US reporting route.

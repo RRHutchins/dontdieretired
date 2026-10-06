@@ -91,7 +91,7 @@ Report it on the platform where you saw it. Then, for the scam versions:
 
 **UK:** Report Fraud, the City of London Police service that replaced Action Fraud in December 2025, at reportfraud.police.uk or on **0300 123 2040**; in Scotland, Police Scotland on **101**. Report suspect investment firms to the FCA on **0800 111 6768**. If money has left your account, ring your bank as well.
 
-**US:** **ReportFraud.ftc.gov**, and the FBI's Internet Crime Complaint Center at **ic3.gov**.
+**US:** the FBI's Internet Crime Complaint Center at **ic3.gov**, and the FTC at **ReportFraud.ftc.gov**.
 
 ## This week
 
@@ -100,3 +100,5 @@ Keep some proportion. Most of what you see online is real: real photographs, rea
 For the wider picture of using AI well, start with [AI after 50: the complete guide](/ai/ai-after-50-the-complete-guide/).
 
 Updated 5 October 2026: added the FBI's September 2026 warning about scammers using AI to pose as police or government officials on video calls.
+
+Updated 6 October 2026: US reporting routes now give the FBI's Internet Crime Complaint Center (ic3.gov) first, with the FTC's ReportFraud.ftc.gov alongside it.

@@ -31,6 +31,7 @@ sources:
   - {title: "How to recognize and avoid phishing scams", publisher: "FTC", date: "n.d.", url: "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"}
   - {title: "How to spot, avoid, and report tech support scams", publisher: "FTC", date: "n.d.", url: "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams"}
   - {title: "Report fraud to the AARP Fraud Watch Network Helpline", publisher: "AARP", date: "n.d.", url: "https://www.aarp.org/money/scams-fraud/helpline/"}
+  - {title: "Internet Crime Complaint Center (IC3)", publisher: "FBI", date: "n.d.", url: "https://www.ic3.gov/"}
 ---
 There is a comforting fact hidden inside the endless news about scams: the people running them are not creative. They have a small toolkit of psychological pressures, applied over and over in new packaging. Learn the toolkit and the packaging stops mattering.
 
@@ -83,7 +84,7 @@ Reporting takes a minute and feeds the systems that get scam sites taken down.
 
 **US**
 - Scam **texts**: forward to **7726** (SPAM).
-- Anything else: **ReportFraud.ftc.gov**.
+- Anything else: the FBI's Internet Crime Complaint Center at **ic3.gov**, or the FTC at **ReportFraud.ftc.gov**.
 - For guidance and a calm voice: the free **AARP Fraud Watch Network Helpline**, **877-908-3360**, Monday to Friday, 8am to 8pm Eastern.
 
 If you would like these numbers on a card for the fridge, along with the patterns above in checklist form, they are in our [Tech Confident guide](/shop/#techconfident).
@@ -91,3 +92,5 @@ If you would like these numbers on a card for the fridge, along with the pattern
 ## This week
 
 None of this requires you to become suspicious of the world — just one habit, pause then call back, and a little familiarity with the costumes. For the wider picture of settings, passwords and getting help, start with [the complete guide to tech confidence after 50](/tech/tech-confidence-after-50-the-complete-guide/). And since a reused password is what turns a phishing email into a real loss, [Passwords and two-factor authentication, made simple](/tech/passwords-and-two-factor-made-simple/) is the natural next read.
+
+Updated 6 October 2026: US reporting routes now give the FBI's Internet Crime Complaint Center (ic3.gov) first, with the FTC's ReportFraud.ftc.gov alongside it.

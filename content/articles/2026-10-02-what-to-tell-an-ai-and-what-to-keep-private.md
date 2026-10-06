@@ -20,15 +20,16 @@ try_this_plus:
   - "Use the temporary or incognito chat mode for one week of sensitive questions and note whether you miss the saved history."
   - "Read your assistant's privacy page from top to bottom and write down how long it keeps chats and whether people may review them."
 sources:
-  - {title: "Data controls in ChatGPT", publisher: "OpenAI Help Center", date: "n.d.", url: "https://help.openai.com/en/articles/7730893-data-controls-faq"}
+  - {title: "Data controls in ChatGPT", publisher: "OpenAI Help Center", date: "n.d.", url: "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"}
   - {title: "How your data is used to improve model performance", publisher: "OpenAI Help Center", date: "n.d.", url: "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance"}
   - {title: "Is my data used for model training?", publisher: "Anthropic Privacy Center", date: "16 March 2026", url: "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training"}
   - {title: "How long do you store my data?", publisher: "Anthropic Privacy Center", date: "1 July 2026", url: "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data"}
-  - {title: "Privacy FAQ for Microsoft Copilot", publisher: "Microsoft Support", date: "n.d.", url: "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f"}
+  - {title: "Privacy FAQ for Microsoft Copilot", publisher: "Microsoft Support", date: "n.d.", url: "https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot"}
   - {title: "Gemini Apps Privacy Hub", publisher: "Google", date: "24 September 2026", url: "https://support.google.com/gemini/answer/13594961?hl=en"}
   - {title: "ChatGPT and large language models: what's the risk?", publisher: "National Cyber Security Centre", date: "14 March 2023", url: "https://www.ncsc.gov.uk/blog-post/chatgpt-and-large-language-models-whats-the-risk"}
   - {title: "Your privacy and AI chatbots", publisher: "Office of the Privacy Commissioner of Canada", date: "n.d.", url: "https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/ai-chatbots_ind/"}
   - {title: "FTC Launches Inquiry into AI Chatbots Acting as Companions", publisher: "Federal Trade Commission", date: "11 September 2025", url: "https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions"}
+  - {title: "Use incognito chats", publisher: "Claude Help Center (Anthropic)", date: "n.d.", url: "https://support.claude.com/en/articles/12260368-use-incognito-chats"}
 ---
 An AI assistant feels like a private conversation. It is closer to a postcard addressed to a large company: useful, usually harmless, and not the place for your PIN.
 
@@ -87,7 +88,7 @@ Suppose a pension provider sends you a baffling letter. You have two safe routes
 
 **Delete old chats.** The makers named above all let you delete conversations. Anthropic says a deleted conversation is removed from its back-end systems within 30 days.
 
-**Use the temporary mode for sensitive questions.** At the time of writing, OpenAI offers "Temporary Chat", Anthropic "Incognito" chats and Google "Temporary chats". Each maker says these are not used to train its models. They are not instantly erased, though: OpenAI says temporary chats may be kept for up to 30 days for safety purposes, and Google says 72 hours. The Anthropic pages we read give no period for Incognito chats.
+**Use the temporary mode for sensitive questions.** At the time of writing, OpenAI offers "Temporary Chat", Anthropic "Incognito" chats and Google "Temporary chats". Each maker says these are not used to train its models. They are not instantly erased, though: OpenAI says temporary chats may be kept for up to 30 days for safety purposes, Anthropic says incognito chats are kept for 30 days by default, and Google says 72 hours.
 
 **Think before you connect.** Assistants increasingly offer to link to your email, files or calendar. Google's page says connected apps let Gemini access emails, files, events and photos. Useful, and a much bigger door than one pasted paragraph. Connect only what you will use.
 
@@ -105,3 +106,5 @@ Some apps offer an AI "friend". The US Federal Trade Commission (FTC), which ope
 4. Turn on two-step verification for the AI account.
 
 For where this fits in the bigger picture, start with [AI after 50: the complete guide](/ai/ai-after-50-the-complete-guide/).
+
+Updated 6 October 2026: added how long Anthropic says it keeps incognito chats.

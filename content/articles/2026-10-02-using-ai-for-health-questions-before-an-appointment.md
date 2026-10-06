@@ -22,7 +22,7 @@ try_this_plus:
 sources:
   - {title: "WHO calls for safe and ethical AI for health", publisher: "World Health Organization", date: "16 May 2023", url: "https://www.who.int/news/item/16-05-2023-who-calls-for-safe-and-ethical-ai-for-health"}
   - {title: "Usage policies", publisher: "OpenAI", date: "29 October 2025", url: "https://openai.com/policies/usage-policies/"}
-  - {title: "Usage Policy", publisher: "Anthropic", date: "15 September 2025", url: "https://www.anthropic.com/legal/aup"}
+  - {title: "Usage Policy", publisher: "Anthropic", date: "15 September 2025", url: "https://www.anthropic.com/aup"}
   - {title: "Copilot - Terms of Use", publisher: "Microsoft", date: "18 August 2026", url: "https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/termsofuse"}
   - {title: "Gemini Apps Privacy Hub", publisher: "Google", date: "24 September 2026", url: "https://support.google.com/gemini/answer/13594961?hl=en"}
   - {title: "What to ask your doctor or other healthcare professional", publisher: "NHS", date: "12 January 2023", url: "https://www.nhs.uk/nhs-services/gps/what-to-ask-your-doctor/"}

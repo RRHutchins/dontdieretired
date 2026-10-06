@@ -43,6 +43,7 @@ sources:
   - {title: "Free tech support & information", publisher: "AbilityNet", date: "n.d.", url: "https://abilitynet.org.uk/free-tech-support-and-info"}
   - {title: "Local library services", publisher: "Gov.uk", date: "n.d.", url: "https://www.gov.uk/book-internet-access-at-library"}
   - {title: "AARP joins with nonprofit to teach tech to older adults", publisher: "AARP", date: "n.d.", url: "https://www.aarp.org/about-aarp/oats-senior-planet/"}
+  - {title: "Internet Crime Complaint Center (IC3)", publisher: "FBI", date: "n.d.", url: "https://www.ic3.gov/"}
 ---
 Somewhere in the last fifteen years, a rule got written that nobody agreed to: if you were born before about 1975, technology is something that happens *to* you. Grandchildren sigh. Shop assistants speak slowly. You end up apologising to a machine.
 
@@ -96,7 +97,7 @@ Feel one of those pressures and you have found the scam, whatever it is wearing.
 
 The single most useful habit is the **hang-up-and-call-back rule**. If anyone contacts you about money, hang up, wait, and ring the number printed on the back of your bank card. In the UK you can dial **159**, a short code that connects you directly to your bank and, Stop Scams UK says, cannot be spoofed. Take Five (the UK banking industry's fraud campaign) adds that a genuine bank will never ask you to move money to a "safe account" or to give remote access to your device.
 
-To report: in the UK, forward scam texts to **7726** (free) and scam emails to **report@phishing.gov.uk**. In the US, the FTC asks you to forward texts to 7726 and report at **ReportFraud.ftc.gov**; AARP also runs a free Fraud Watch Network Helpline on **877-908-3360**.
+To report: in the UK, forward scam texts to **7726** (free) and scam emails to **report@phishing.gov.uk**. In the US, the FTC asks you to forward texts to 7726 and report at **ReportFraud.ftc.gov**; the FBI takes reports of online fraud at **ic3.gov**; AARP also runs a free Fraud Watch Network Helpline on **877-908-3360**.
 
 The patterns in detail, with examples of each costume, are in [How to spot a scam text, email or call](/tech/how-to-spot-a-scam-text-email-or-call/).
 
@@ -139,3 +140,5 @@ If you would rather have this as a single printable workbook — a checklist for
 - **Sunday:** The real video call. Put it in the diary for next week too.
 
 Seven small things. None of them can break your phone. All of them make you harder to fool and easier to reach — which is, when you strip away the jargon, all that "tech confidence" ever meant.
+
+Updated 6 October 2026: added the FBI's Internet Crime Complaint Center (ic3.gov) as a second US reporting route.

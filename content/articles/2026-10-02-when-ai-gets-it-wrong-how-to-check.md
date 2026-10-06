@@ -22,7 +22,7 @@ try_this_plus:
 sources:
   - {title: "Does ChatGPT tell the truth?", publisher: "OpenAI Help Center", date: "n.d.", url: "https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth"}
   - {title: "Claude is providing incorrect or misleading responses. What's going on?", publisher: "Anthropic (Claude Help Center)", date: "16 March 2026", url: "https://support.claude.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on"}
-  - {title: "Validate Copilot output before you act on it", publisher: "Microsoft Support", date: "2026", url: "https://support.microsoft.com/en-gb/microsoft-365-copilot/validate-copilot-output"}
+  - {title: "Validate Copilot output before you act on it", publisher: "Microsoft Support", date: "2026", url: "https://support.microsoft.com/en-us/microsoft-365-copilot/validate-copilot-output"}
   - {title: "Gemini Apps Privacy Hub", publisher: "Google (Gemini Apps Help)", date: "2026", url: "https://support.google.com/gemini/answer/13594961?hl=en"}
   - {title: "Largest study of its kind shows AI assistants misrepresent news content 45% of the time – regardless of language or territory", publisher: "European Broadcasting Union", date: "22 October 2025", url: "https://www.ebu.ch/news/2025/10/ai-s-systemic-distortion-of-news-is-consistent-across-languages-and-territories-international-study-by-public-service-broadcaste"}
   - {title: "Ayinde v London Borough of Haringey and Al-Haroun v Qatar National Bank [2025] EWHC 1383 (Admin)", publisher: "Courts and Tribunals Judiciary", date: "6 June 2025", url: "https://www.judiciary.uk/wp-content/uploads/2025/06/Ayinde-v-London-Borough-of-Haringey-and-Al-Haroun-v-Qatar-National-Bank.pdf"}

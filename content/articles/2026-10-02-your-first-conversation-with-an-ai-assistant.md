@@ -23,9 +23,9 @@ sources:
   - {title: "What is ChatGPT?", publisher: "OpenAI Help Center", date: "n.d.", url: "https://help.openai.com/en/articles/6783457-what-is-chatgpt"}
   - {title: "Download ChatGPT", publisher: "OpenAI", date: "n.d.", url: "https://chatgpt.com/download/"}
   - {title: "Prompt engineering best practices for ChatGPT", publisher: "OpenAI Help Center", date: "n.d.", url: "https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt"}
-  - {title: "Data controls in ChatGPT", publisher: "OpenAI Help Center", date: "n.d.", url: "https://help.openai.com/en/articles/7730893-data-controls-faq"}
-  - {title: "What is the Pro plan?", publisher: "Claude Help Center (Anthropic)", date: "n.d.", url: "https://support.claude.com/en/articles/8325606-what-is-claude"}
-  - {title: "Get started with Claude", publisher: "Claude Help Center (Anthropic)", date: "n.d.", url: "https://support.claude.com/en/articles/8114491-what-is-the-claude-app"}
+  - {title: "Data controls in ChatGPT", publisher: "OpenAI Help Center", date: "n.d.", url: "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"}
+  - {title: "What is the Pro plan?", publisher: "Claude Help Center (Anthropic)", date: "n.d.", url: "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"}
+  - {title: "Get started with Claude", publisher: "Claude Help Center (Anthropic)", date: "n.d.", url: "https://support.claude.com/en/articles/8114491-get-started-with-claude"}
   - {title: "Enjoy an AI Assistant Anywhere with Copilot for PC, Mac, Mobile, and more", publisher: "Microsoft", date: "n.d.", url: "https://www.microsoft.com/en-us/microsoft-copilot/for-individuals"}
   - {title: "Use Gemini Apps", publisher: "Gemini Apps Help (Google)", date: "n.d.", url: "https://support.google.com/gemini/answer/13275745?hl=en"}
   - {title: "Gemini Apps Privacy Hub", publisher: "Gemini Apps Help (Google)", date: "n.d.", url: "https://support.google.com/gemini/answer/13594961?hl=en"}
