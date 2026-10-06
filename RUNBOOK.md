@@ -93,7 +93,7 @@ Every Sunday, compare this week with the last four. Act on triggers:
 ## 6. Digital products (own IP, ~90% margin)
 Built: `products/content/*.json` → `node products/build_product.js content/X.json` → docx → PDF (LibreOffice). Final PDFs in `products/pdf/`; the free plan is also served at `/static/downloads/7-Day-Restart-Plan.pdf`. To revise a product, edit its JSON and rebuild. Prices (shown inc. UK VAT; enter price ÷ 1.2 in Gumroad, which adds VAT at checkout): £5 Restart30/Reconnect/Tech Confident; £7 Eat Strong/Sharp/Slow Travel; £9 Strong at 60/Money Reset; £12 Second Act; £29 bundle (£66 separately). Upgrade codes: fixed amount off the bundle = product price ÷ 1.2; values in products/upgrade.json. Never quote a product price in an article without checking content/products.yaml. Also the free lead magnet: 7-Day Restart Plan. Upload to Gumroad, paste the product URLs into `content/products.yaml`.
 
-### 6e. Product sources, versions and reviews (set 7 Oct 2026)
+### 6i. Product sources, versions and reviews (set 7 Oct 2026)
 - **Every product JSON carries** `version`, `reviewed` (month and year), `about` (how it was checked, the date sources were opened, what changed) and `sources` (group, publisher, title, year, url, supports). `build_pdf.js` renders them as the two closing sections, "About this guide" and "Where this comes from". A product without them must not be sold.
 - **A source goes in the list only if its page was opened in that session and supports the point.** Copy the title, publisher and date from the page; never from memory. Fetch one page at a time: many researchers fetching at once get the fetch service rate-limited (HTTP 429) and the run is cut short.
 - **Never claim a professional review.** The "What has not happened" box stays until a named, registered professional has signed off that exact version in writing (see the Expert review brief of 30 Sept 2026). Then replace the box with their name, registration and the date, and say so in the corrections log.
@@ -102,7 +102,7 @@ Built: `products/content/*.json` → `node products/build_product.js content/X.j
 - **Re-check dates.** Money Reset, Second Act, Slow Travel and Tech Confident state rules that change: re-open their sources every April (UK tax year) and October, and whenever a daily run meets a rule change (ETIAS starting, a tax threshold moving, a service renamed). The health guides: once a year, each October.
 - **Open items at 7 Oct 2026:** ETIAS start date could not be read on the EU's own page (Slow Travel says "not started on the pages we could read; check"); three papers are cited from university repository copies because the journal pages refuse automated readers (Fiatarone 1990, PROT-AGE 2013, Behm 2016).
 
-### 6f. Editorial policy and corrections (set 7 Oct 2026)
+### 6j. Editorial policy and corrections (set 7 Oct 2026)
 `/editorial-policy/` states the rules the site works to. Keep it true: if a practice changes, change the page in the same commit. When a correction changes the substance of a published article, add a line at the foot of the body, "Corrected <date>: <what changed>", and leave the `date` alone. Add product corrections and any serious article correction to the corrections log on that page.
 
 ## 6c. Puzzle books (rebuilt 4 Oct 2026, Christmas edition 6 Oct 2026)
