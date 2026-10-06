@@ -1,0 +1,173 @@
+# Scam help page (/scam-help/). RUNBOOK §6e.
+# Every tool and route here was confirmed on the organisation's own page on the `checked` date.
+# `tested: none` means we have NOT tried the tools hands-on; the page says so. Change it only after real testing.
+# Re-verify monthly (official pages only), update `checked`, and never add a number, address or link you have not fetched.
+checked: '2026-10-06'
+tested: none
+types:
+- id: message
+  label: A text, email or message
+  advice: Do not click any link, reply or call a number in the message; check it first, then contact the organisation using details you find yourself.
+  tools:
+    uk:
+    - name: Ask Silver scam checker
+      url: https://www.getsafeonline.org/asksilver
+      by: Ask Silver, in partnership with Get Safe Online
+      how: Upload a screenshot of the text, email or message (hide personal details first)
+      note: Free in a web browser; no account. Listed by Which? (May 2026)
+    - name: Citizens Advice online scams helper
+      url: https://www.citizensadvice.org.uk/consumer/scams/check-if-something-might-be-a-scam/
+      by: Citizens Advice
+      how: Answer a few questions about what happened
+      note: Free; gives advice on checking and next steps, not an automatic verdict
+    us:
+    - name: Norton Genie
+      url: https://us.norton.com/products/genie-scam-detector
+      by: Norton (Gen Digital Inc.)
+      how: Paste the message text or upload a screenshot in the app
+      note: Free app, needs installing; English only. Ranked second in KSL test (Jan 2026)
+    - name: BBB Scam Tracker
+      url: https://www.bbb.org/scamtracker
+      by: Better Business Bureau (BBB Institute for Marketplace Trust)
+      how: Search the sender's email address, phone number, website or business name
+      note: Free; shows scams other people have reported in the US and Canada
+- id: website
+  label: A website or online shop
+  advice: Do not enter card details, passwords or personal information until you have checked the web address, and never follow a link from an unexpected message to get there.
+  tools:
+    uk:
+    - name: 'Get Safe Online: Check a website'
+      url: https://www.getsafeonline.org/checkawebsite/
+      by: Get Safe Online with Cifas and ScamAdviser
+      how: Type or paste the website address (not shortened links)
+      note: Free; no account; gives a trust score in seconds
+    - name: ScamAdviser
+      url: https://www.scamadviser.com/
+      by: ScamAdviser
+      how: Type or paste the website address
+      note: Free; basic check needs no account. Listed by Which? (May 2026)
+    us:
+    - name: ScamAdviser
+      url: https://www.scamadviser.com/
+      by: ScamAdviser
+      how: Type or paste the website address
+      note: Free; basic check needs no account
+    - name: BBB Scam Tracker
+      url: https://www.bbb.org/scamtracker
+      by: Better Business Bureau (BBB Institute for Marketplace Trust)
+      how: Search the website address or business name
+      note: Free; shows scams other people have reported in the US and Canada
+- id: number
+  label: A missed call or a number you don't recognise
+  advice: Do not call back or reply; if the caller claimed to be your bank or another organisation, ring them on a number you already trust.
+  tools:
+    uk: []
+    us:
+    - name: BBB Scam Tracker
+      url: https://www.bbb.org/scamtracker
+      by: Better Business Bureau (BBB Institute for Marketplace Trust)
+      how: Search the phone number
+      note: Free; shows scams other people have reported in the US and Canada
+- id: image
+  label: A photo or profile that may be fake
+  advice: Treat any picture used to win your trust or ask for money as unproven until you have checked where else it appears online.
+  tools:
+    uk:
+    - name: 'Google: About this image'
+      url: https://support.google.com/websearch/answer/14177408?hl=en
+      by: Google
+      how: Find the image in Google Search, tap the information icon, choose to learn more
+      note: Free; shows when and where the image appeared; only available in some regions
+    us:
+    - name: 'Google: About this image'
+      url: https://support.google.com/websearch/answer/14177408?hl=en
+      by: Google
+      how: Find the image in Google Search, tap the information icon, choose to learn more
+      note: Free; shows when and where the image appeared; only available in some regions
+- id: call
+  label: A phone call
+  advice: Hang up, wait a few minutes, then ring the organisation yourself on a number you already trust; a genuine caller will never mind you checking.
+  tools:
+    uk: []
+    us: []
+- id: doorstep
+  label: Someone at the door
+  advice: Keep the door closed, do not agree to anything or hand over money or cards on the spot, and check who they are using contact details you find yourself.
+  tools:
+    uk: []
+    us: []
+routes:
+  uk:
+  - label: Forward a scam text
+    how: Forward the text to 7726. It is free and goes to your mobile provider.
+    source: https://www.ncsc.gov.uk/collection/phishing-scams/report-scam-text-message
+  - label: Forward a scam email
+    how: Forward the email to report@phishing.gov.uk without clicking any links in it.
+    source: https://www.gov.uk/report-suspicious-emails-websites-phishing
+  - label: Report fraud (England, Wales, Northern Ireland)
+    how: Report online to Report Fraud at reportfraud.police.uk or call 0300 123 2040.
+    source: https://www.reportfraud.police.uk/
+  - label: Report fraud (Scotland)
+    how: Call Police Scotland on 101.
+    source: https://stopthinkfraud.campaign.gov.uk/reporting-fraud
+  - label: Call your bank safely on 159
+    how: After an unexpected call about money, hang up and dial 159 to reach your own bank. Covers over 25 banks; call charges vary.
+    source: https://stopscamsuk.org.uk/159
+  - label: Get advice from Citizens Advice
+    how: Use the online scams helper; it asks questions, then advises on checking and next steps.
+    source: https://www.citizensadvice.org.uk/consumer/scams/check-if-something-might-be-a-scam/
+  us:
+  - label: Forward a scam text
+    how: Copy the message and forward it to 7726 (SPAM), then report it as junk in your messaging app.
+    source: https://consumer.ftc.gov/articles/how-recognize-and-report-spam-text-messages
+  - label: Forward a phishing email
+    how: Forward the email to the Anti-Phishing Working Group at reportphishing@apwg.org.
+    source: https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams
+  - label: Report to the FTC
+    how: Report any scam or phishing attempt to the Federal Trade Commission at ReportFraud.ftc.gov.
+    source: https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams
+  - label: Report online crime to the FBI
+    how: File a complaint with the FBI's Internet Crime Complaint Center at ic3.gov.
+    source: https://www.ic3.gov/
+  - label: AARP Fraud Watch Network Helpline
+    how: Call 877-908-3360, Monday to Friday, 8am to 8pm ET. Free; anyone can call, no membership needed.
+    source: https://www.aarp.org/money/scams-fraud/helpline/
+paid:
+  uk:
+  - Tell your bank or payment provider straight away using contact details you trust, or call 159.
+  - Report it to Report Fraud at reportfraud.police.uk or on 0300 123 2040; in Scotland call Police Scotland on 101.
+  - Forward the scam text to 7726 or the scam email to report@phishing.gov.uk so others are protected.
+  us:
+  - Contact whoever moved the money straight away (bank, card issuer, payment app, wire company, gift card issuer or crypto exchange) and ask them to reverse it.
+  - If you posted cash, call the U.S. Postal Inspection Service on 1-877-876-2455.
+  - If you gave a password, change it everywhere you use it and turn on two-factor authentication.
+  - If you gave your Social Security number, go to IdentityTheft.gov for a recovery plan.
+  - If you gave access to your device, update your security software, run a scan and change your passwords.
+  - Report the scam to the FTC at ReportFraud.ftc.gov.
+  sources:
+  - https://stopthinkfraud.campaign.gov.uk/reporting-fraud
+  - https://www.reportfraud.police.uk/
+  - https://consumer.ftc.gov/articles/what-do-if-you-were-scammed
+question_sources:
+- label: 'Stop! Think Fraud (UK Government): how to spot phone fraud'
+  url: https://stopthinkfraud.campaign.gov.uk/how-to-spot-fraud/how-to-spot-phone-fraud/
+- label: 'Stop! Think Fraud (UK Government): how to spot doorstep fraud'
+  url: https://stopthinkfraud.campaign.gov.uk/how-to-spot-fraud/how-to-spot-doorstep-fraud/
+- label: 'Federal Trade Commission: how to avoid a scam'
+  url: https://consumer.ftc.gov/articles/how-avoid-scam
+reviews:
+- label: 'Which?: scam-busting tools to know about (May 2026)'
+  url: https://www.which.co.uk/news/article/scam-busting-tools-to-know-about-aRrTa7a2zeiF
+- label: 'KSL: we tested four scam-detection apps (January 2026)'
+  url: https://www.ksl.com/article/51440941/we-tested-4-popular-scam-detection-apps-heres-what-actually-worked
+rejected:
+- name: McAfee Scam Detector
+  why: 'Not free on its own: McAfee says it is included in paid McAfee plans and needs the McAfee app, despite being the best performer in the KSL test.'
+- name: Bitdefender Scamio
+  why: Needs a Bitdefender account, and the KSL test (Jan 2026) found it least effective, often calling scams safe.
+- name: Trend Micro ScamCheck
+  why: KSL test (Jan 2026) found it failed to flag phishing and wrongly flagged a genuine message; official page not fetched.
+- name: Image Whisperer
+  why: Its page says free checks come with a free account; we only list tools that need no sign-up.
+- name: Who Called Me
+  why: Recommended by Which?, but we could not open its site to confirm the details on the day we checked, so it is not listed yet.

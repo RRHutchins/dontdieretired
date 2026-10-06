@@ -399,6 +399,22 @@ def build(make_social=True):
     for cid, c in cfg["categories"].items():
         urls.append(out(f"/{cid}/", "category.html", cid=cid, c=c, items=[a for a in arts if a["category"] == cid]))
     urls.append(out("/videos/", "videos.html"))
+    # standalone pages that search should find (title, url, excerpt, tags); written to pages.json
+    pages = []
+    # Scam help (RUNBOOK §6e)
+    scam = load_yaml(CONTENT / "scam_help.yaml") if (CONTENT / "scam_help.yaml").exists() else None
+    if scam:
+        checked = dt.date.fromisoformat(str(scam["checked"]))
+        if (dt.date.today() - checked).days > 120:
+            print(f"SCAM HELP WARNING: tools and routes were last verified {checked} (over 120 days ago). Re-verify per RUNBOOK §6e.")
+        guides = [a for a in arts if a.get("kind") == "guide" and any(w in (a["title"] + " " + " ".join(a["tags"])).lower() for w in ("scam", "fake", "fraud"))][:6]
+        tech_product = next((p for p in products.get("products", []) if p.get("id") == "techconfident"), None)
+        urls.append(out("/scam-help/", "scam-help.html", scam=scam, scam_checked=checked.strftime("%-d %B %Y"),
+                        scam_guides=guides, tech_product=tech_product))
+        pages.append({"title": "Scam help: check it before you act", "url": "/scam-help/", "category": "tech",
+                      "excerpt": "Pick what you received and we point you to a free tool that checks it, and to the official places to report it.",
+                      "tags": ["scam", "scams", "fraud", "phishing", "fake", "suspicious", "text", "email", "call"],
+                      "image": "/static/og-default.png", "art": "/static/og-default.png"})
     urls.append(out("/start-here/", "start.html"))
     urls.append(out("/newsletter/", "newsletter.html"))
     urls.append(out("/shop/", "shop.html"))
@@ -417,6 +433,8 @@ def build(make_social=True):
         "category": a["category"], "segments": a.get("segments", []), "date": a["date_iso"], "image": a["image"], "art": a["art"],
         "level": a.get("level", "any"), "age": a.get("subject_age"),
     } for a in arts]), encoding="utf-8")
+
+    (DIST / "pages.json").write_text(json.dumps(pages), encoding="utf-8")
 
     write_rss(arts, cfg)
     write_sitemap(urls, cfg)

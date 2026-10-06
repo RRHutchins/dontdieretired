@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import card, ad, affiliate_box, product_promo, near_you %}
+{% extends "base.html" %}{% from "_macros.html" import card, ad, affiliate_box, product_promo, near_you, share_button %}
 {% block title %}{{ a.title }} — {{ cfg.site.name }}{% endblock %}
 {% block description %}{{ a.excerpt }}{% endblock %}
 {% block ogtype %}article{% endblock %}
@@ -17,6 +17,7 @@
   <p class="kicker"><a href="/{{ a.category }}/">{{ categories[a.category].label }}</a> · {{ a.date_human }} · {{ a.reading_time }} min read</p>
   <h1>{{ a.title }}</h1>
   {% if a.standfirst %}<p class="lead">{{ a.standfirst }}</p>{% endif %}
+  {{ share_button(a.abs_url, a.title, 'article') }}
   {% if a.photo %}<figure class="hero-fig"><img class="hero-img" src="{{ a.art }}" alt="{{ a.photo_alt|default('') }}" width="1200" height="630">{% if a.photo_credit %}<figcaption>Photo: {{ a.photo_credit }}</figcaption>{% endif %}</figure>{% else %}<img class="hero-img" src="{{ a.art }}" alt="" width="1200" height="630">{% endif %}
 
   <div class="prose" data-ad-inject>
@@ -72,13 +73,7 @@
     </div>
   </div>
 
-  <div class="share">
-    <span>Share:</span>
-    <a target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u={{ a.abs_url }}">Facebook</a>
-    <a target="_blank" rel="noopener" href="https://x.com/intent/tweet?url={{ a.abs_url }}&text={{ a.title|urlencode }}">X</a>
-    <a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?text={{ (a.title ~ ' ' ~ a.abs_url)|urlencode }}">WhatsApp</a>
-    <a href="mailto:?subject={{ a.title|urlencode }}&body={{ a.abs_url }}">Email</a>
-  </div>
+  {{ share_button(a.abs_url, a.title, 'article') }}
   <p class="tags">{% for t in a.tags %}<a href="/search/?q={{ t }}">#{{ t }}</a> {% endfor %}</p>
 </article>
 

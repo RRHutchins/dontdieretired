@@ -106,3 +106,19 @@
   <button type="button" class="btn" data-profile-done>Show me what fits</button>
 </div>
 {% endmacro %}
+
+{% macro share_button(url, title, kind='page') %}
+{# Share: opens the phone's own share sheet where there is one, otherwise a small menu. Every shared link
+   carries ?via=friend so we can welcome the friend and count arrivals (static/app.js section 6). #}
+{% set u = url ~ '?via=friend' %}
+<div class="share-wrap" data-share data-url="{{ u }}" data-title="{{ title }}" data-kind="{{ kind }}">
+  <button type="button" class="share-btn" data-share-btn aria-expanded="false"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M7.5 7.5 12 3l4.5 4.5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg><span>Share</span></button>
+  <div class="share-menu" data-share-menu hidden>
+    <a target="_blank" rel="noopener" data-via="WhatsApp" href="https://api.whatsapp.com/send?text={{ (title ~ ' ' ~ u)|urlencode }}">WhatsApp</a>
+    <a target="_blank" rel="noopener" data-via="Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ u|urlencode }}">Facebook</a>
+    <a target="_blank" rel="noopener" data-via="X" href="https://x.com/intent/tweet?url={{ u|urlencode }}&text={{ title|urlencode }}">X</a>
+    <a data-via="Email" href="mailto:?subject={{ title|urlencode }}&body={{ u|urlencode }}">Email</a>
+    <button type="button" data-via="Copy link" data-share-copy>Copy link</button>
+  </div>
+</div>
+{% endmacro %}

@@ -370,3 +370,51 @@ body{background:var(--paper)}
 .card-img{display:block;background:var(--line)}
 .hero-fig{margin:20px 0 28px}.hero-fig .hero-img{margin:0}
 .hero-fig figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}
+
+/* Share button (macro share_button) */
+.share-wrap{position:relative;display:inline-block;margin:6px 0 14px}
+.share-btn{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--ink);border:1.5px solid var(--line);border-radius:999px;padding:.5em 1.1em;font:inherit;font-weight:600;cursor:pointer;min-height:44px}
+.share-btn:hover,.share-btn[aria-expanded=true]{border-color:var(--brand);color:var(--brand-ink)}
+.share-menu{position:absolute;left:0;top:calc(100% + 6px);z-index:15;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.12);padding:6px;min-width:220px;display:grid}
+.share-menu[hidden]{display:none}
+.share-menu a,.share-menu button{display:block;text-align:left;padding:11px 14px;border-radius:8px;border:0;background:none;font:inherit;color:var(--ink);text-decoration:none;cursor:pointer;min-height:44px}
+.share-menu a:hover,.share-menu button:hover{background:#f5f2ec}
+.page-head .share-wrap{margin-top:10px}
+@media print{.share-wrap,.friend-bar,.friend-more{display:none}}
+
+/* Welcome for someone who arrived from a friend's share: one line, in the flow, closable */
+.friend-bar{display:flex;align-items:flex-start;gap:12px;background:#fff6e8;border:1px solid #f0dfc2;border-radius:12px;padding:10px 14px;margin:16px 0 0;font-size:.98rem}
+.friend-bar p{margin:0;flex:1}
+.friend-bar button{flex:none;background:none;border:0;font-size:1.5rem;line-height:1;cursor:pointer;color:var(--muted);min-width:44px;min-height:44px;margin:-8px -10px -8px 0}
+.friend-more{color:var(--muted);font-size:.98rem;margin:22px 0 8px}
+
+/* Scam help */
+.hub-tool a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;text-decoration:none;color:var(--ink);margin:0 0 20px}
+.hub-tool a:hover{border-color:var(--brand)}
+.scam{max-width:860px}
+.scam-region{color:var(--muted);margin:0 0 14px}
+.scam-region select{font:inherit;padding:6px 10px;border-radius:8px;border:1.5px solid var(--line);background:#fff;min-height:44px}
+.scam-paid{background:#fdecee;border:1px solid #f2c9ce;border-radius:var(--r);padding:18px 22px;margin:0 0 28px}
+.scam-paid h2{margin-top:0;font-size:1.45rem;color:var(--brand-ink)}
+.scam-paid ol{margin:.3em 0 .6em;padding-left:1.3em}
+.scam-reg-label{font-weight:600;color:var(--muted);font-size:.9rem;margin:.9em 0 .2em}
+.scam-types{display:grid;gap:10px;margin-bottom:24px}
+.scam-type{background:#fff;border:1.5px solid var(--line);border-radius:12px}
+.scam-type[open]{border-color:var(--brand)}
+.scam-type summary{cursor:pointer;padding:16px 20px;font-family:var(--serif);font-weight:700;font-size:1.2rem;min-height:56px;list-style-position:inside}
+.scam-body{padding:0 20px 18px}
+.scam-tools,.scam-routes{list-style:none;padding:0;margin:.3em 0 1em;display:grid;gap:10px}
+.scam-tool{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);min-height:52px}
+.scam-tool:hover{border-color:var(--brand)}
+.scam-go{flex:none;font-weight:600;color:var(--brand-ink)}
+.scam-how{display:block;color:var(--muted);font-size:.95rem;margin:6px 2px 0}
+.scam-routes li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+.scam-src{white-space:nowrap;font-size:.92rem}
+.scam-note{background:#fff6e8;border-radius:12px;padding:4px 18px;margin:0 0 28px}
+.scam-q{border:0;padding:0;margin:0 0 14px}
+.scam-q legend{font-weight:600;padding:0;margin-bottom:6px}
+.scam-q .chip{min-width:84px;min-height:46px}
+.scam-verdict{border-radius:12px;padding:16px 18px;margin-top:8px;border:2px solid var(--line);background:#fff}
+.scam-verdict h3{margin-top:0}
+.scam-verdict.scam-scam{border-color:var(--brand);background:#fdecee}
+.scam-verdict.scam-suspicious{border-color:var(--gold);background:#fff6e8}

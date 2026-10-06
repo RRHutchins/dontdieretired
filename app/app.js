@@ -91,6 +91,8 @@
          ${doneToday ? '' : `<button class="btn ghost small" data-action="two">Short on time? The 2-minute version</button><div style="height:16px"></div>`}`}
     ${!S.tests[p.id]?.start && p.id === 'restart7' ? `<div class="card"><p class="kick">Before Day 1</p><h3>Take the 1-minute test</h3><p class="muted">How many times can you stand up from a chair in 30 seconds? You'll do it again on Day 7 and see the difference.</p><a class="btn green small" href="#/test/${p.id}/start">Take the test</a></div>` : ''}
     ${s0 ? `<a class="card story" href="${s0.url}" target="_blank" rel="noopener"><p class="kick">${me.level || me.interests.length ? 'Picked for you' : 'Today\'s story'}</p>${s0.image ? `<img src="${s0.image}" alt="" loading="lazy">` : ''}<h3>${esc(s0.title)}</h3><p class="muted">${esc(s0.excerpt).slice(0, 150)}…</p></a>` : ''}
+    ${s0 ? `<button class="btn ghost small" data-action="share" data-url="${esc(new URL(s0.url, location.origin).href)}" data-title="${esc(s0.title)}">Share this story</button><div style="height:16px"></div>` : ''}
+    <a class="card" href="/scam-help/" style="display:block;text-decoration:none"><p class="kick">Scam help</p><h3>Got something suspicious?</h3><p class="muted">A text, email, call or someone at the door: check it before you act. Opens the scam help page (needs a connection).</p></a>
     ${installCard()}`;
   }
 
@@ -293,6 +295,13 @@
       if (k === 'interest') { const i = new Set(p.interests); i.has(v) ? i.delete(v) : i.add(v); p.interests = [...i]; } else p[k] = p[k] === v ? '' : v;
       setProf(p); save(); const y = scrollY; view.innerHTML = `<div class="fade">${You(!S.onboarded)}</div>`; scrollTo(0, y); }
     if (act === 'youdone') { if ($('#yname')) S.name = $('#yname').value.trim().slice(0, 30); S.onboarded = 1; save(); location.hash = '#/'; render(); }
+    if (act === 'share') {   // shared links carry ?via=friend, as on the website
+      const u = new URL(a.dataset.url); u.searchParams.set('via', 'friend'); const url = u.href, title = a.dataset.title, label = a.textContent;
+      const done = t => { a.textContent = t; setTimeout(() => { a.textContent = label; }, 2500); };
+      if (navigator.share) navigator.share({ title, url }).then(() => window.plausible && plausible('share', { props: { via: 'device', kind: 'app' } })).catch(() => {});
+      else if (navigator.clipboard) navigator.clipboard.writeText(url).then(() => { done('Link copied'); window.plausible && plausible('share', { props: { via: 'Copy link', kind: 'app' } }); }).catch(() => done('Could not copy the link'));
+      else done('Sharing is not available here');
+    }
     if (act === 'chal') { (S.chal ||= {})[weekKey()] = today(); save(); beep(1046, 200); render(); }
     if (act === 'stepup') { const p = prof(), o = ['starter', 'active', 'advanced']; p.level = o[Math.min(2, o.indexOf(p.level || 'starter') + 1)]; setProf(p); S.stepAsked = 1; save(); render(); }
     if (act === 'stepno') { S.stepAsked = 1; save(); render(); }

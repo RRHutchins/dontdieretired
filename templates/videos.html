@@ -1,8 +1,9 @@
-{% extends "base.html" %}{% from "_macros.html" import ad %}
+{% extends "base.html" %}{% from "_macros.html" import ad, share_button %}
 {% block title %}Inspiring videos — {{ cfg.site.name }}{% endblock %}
 {% block description %}Hand-picked films and talks about people who refused to slow down after 50.{% endblock %}
 {% block content %}
 <header class="page-head"><p class="kicker">Watch</p><h1>Ten minutes that change how you think about age</h1><p class="lead">New films added every Monday, Wednesday and Friday. Every one features a real person, and we tell you why it earned its place.{% set last = videos | map(attribute='added') | select | map('string') | sort | last %}{% if last %} <span class="meta">Last added {{ last }}.</span>{% endif %}</p></header>
+{{ share_button(cfg.site.url ~ '/videos/', 'Films worth ten minutes — Don\'t Die Retired', 'videos') }}
 <div class="video-grid video-grid-2">
 {% for v in videos | sort(attribute='added', reverse=true) %}
 <div class="video" data-tags="{{ v.tags|join(',') }}" data-level="{{ v.level|default('any') }}">

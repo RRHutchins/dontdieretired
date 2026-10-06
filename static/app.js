@@ -13,6 +13,19 @@
   };
   const track = (name, props) => { if (window.plausible) window.plausible(name, { props }); };
 
+  /* ---------- 0. arrived from a friend's share? ----------
+     Share buttons add ?via=friend to the link. We note it for this visit, then tidy the address bar
+     so a bookmark or an onward share is clean. Nothing identifies the friend or the sender. */
+  const qs = new URLSearchParams(location.search);
+  const sess = { get: k => { try { return sessionStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { sessionStorage.setItem(k, v); } catch {} } };
+  const viaFriend = qs.get('via') === 'friend';
+  if (viaFriend) {
+    sess.set('ddr_friend', '1');
+    qs.delete('via');
+    try { history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : '') + location.hash); } catch {}
+  }
+  const friendVisit = sess.get('ddr_friend') === '1';
+
   /* ---------- 1. consent ---------- */
   const consent = $('#consent');
   const consentState = store.get('ddr_consent');
@@ -134,7 +147,8 @@
   $$('[data-open-segments]').forEach(b => b.addEventListener('click', () => { if (modal) modal.hidden = false; }));
   $$('[data-close-segments]').forEach(b => b.addEventListener('click', () => { modal.hidden = true; store.set('ddr_segment_skipped', '1'); }));
   applyProfile();
-  if (!hasProfile(profile) && document.body.dataset.page === 'home' && !store.get('ddr_segment_skipped') && modal) {
+  // never pop the profile questions at someone a friend has just sent here: it must be easy to ignore
+  if (!friendVisit && !hasProfile(profile) && document.body.dataset.page === 'home' && !store.get('ddr_segment_skipped') && modal) {
     let asked = false; const ask = () => { if (!asked) { asked = true; modal.hidden = false; } };
     setTimeout(ask, 12000); window.addEventListener('scroll', () => { if (scrollY > 600) ask(); }, { passive: true });
   }
@@ -188,7 +202,6 @@
   $$('form[data-nl]').forEach(f => f.addEventListener('submit', () => setTimeout(unlockPlans, 300)));
   $$('[data-plan-link]').forEach(a => a.addEventListener('click', () => store.set('ddr_plans', '1')));
   $$('.plan-page').forEach(() => track('plan_view', { page: location.pathname }));
-  $$('.share a').forEach(a => a.addEventListener('click', () => track('share', { via: a.textContent })));
 
 
   /* ---------- 5. "Try it near you" (local listings) ----------
@@ -227,6 +240,56 @@
         a.href = u.toString(); } catch {} });
       $$('a[data-local-link]', box).forEach(a => a.addEventListener('click', () => track('local_click', { activity: box.dataset.activity, region: box.dataset.shown, url: a.href })));
     });
+  }
+
+  /* ---------- 6. Share button and the welcome for a friend's arrival ---------- */
+  $$('[data-share]').forEach(w => {
+    const btn = $('[data-share-btn]', w), menu = $('[data-share-menu]', w), url = w.dataset.url, title = w.dataset.title, kind = w.dataset.kind;
+    const said = via => track('share', { via, kind, page: location.pathname });
+    btn.addEventListener('click', async () => {
+      if (navigator.share) {   // phones and tablets: the device's own share sheet
+        try { await navigator.share({ title, url }); said('device'); } catch {}
+        return;
+      }
+      menu.hidden = !menu.hidden; btn.setAttribute('aria-expanded', String(!menu.hidden));
+    });
+    $$('a', menu).forEach(a => a.addEventListener('click', () => said(a.dataset.via)));
+    const copy = $('[data-share-copy]', menu);
+    if (copy) copy.addEventListener('click', async () => {
+      let ok = false;
+      try { await navigator.clipboard.writeText(url); ok = true; } catch {
+        try { const t = document.createElement('textarea'); t.value = url; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select(); ok = document.execCommand('copy'); t.remove(); } catch {}
+      }
+      copy.textContent = ok ? 'Link copied' : 'Copy failed: press and hold the address bar instead';
+      if (ok) said('Copy link');
+      setTimeout(() => { copy.textContent = 'Copy link'; }, 2500);
+    });
+    document.addEventListener('click', e => { if (!w.contains(e.target) && !menu.hidden) { menu.hidden = true; btn.setAttribute('aria-expanded', 'false'); } });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !menu.hidden) { menu.hidden = true; btn.setAttribute('aria-expanded', 'false'); btn.focus(); } });
+  });
+
+  if (viaFriend) track('friend_arrival', { page: location.pathname });
+  if (friendVisit) {
+    // One slim line at the top, in the page flow (never an overlay), closable, and it stays closed.
+    const main = $('#main');
+    if (main && !store.get('ddr_friend_closed')) {
+      const bar = document.createElement('div');
+      bar.className = 'friend-bar';
+      bar.innerHTML = '<p>A friend thought you\'d like this. If they were right, <a href="/newsletter/">one story like it arrives by email each week</a>, free, with our 7-Day Restart Plan.</p><button type="button" aria-label="Close this message">×</button>';
+      $('button', bar).addEventListener('click', () => { bar.remove(); store.set('ddr_friend_closed', '1'); });
+      main.prepend(bar);
+    }
+    // After the story, one quiet optional line. No questions on arrival.
+    const art = $('article.article:not(.plan-page)');
+    if (art && !hasProfile(profile) && modal) {
+      const p = document.createElement('p');
+      p.className = 'friend-more';
+      p.innerHTML = 'Want more like this? <button type="button" class="linklike">Tell us what interests you</button> and the site will put those stories first.';
+      $('button', p).addEventListener('click', () => { modal.hidden = false; });
+      const anchor = $('.fit-box', art) || $('.prose', art);
+      if (anchor) anchor.before(p);
+    }
+    $$('form[data-nl]').forEach(f => f.addEventListener('submit', () => track('friend_signup', { page: location.pathname })));
   }
 
   // Scroll depth (tells us whether article formats hold attention)
