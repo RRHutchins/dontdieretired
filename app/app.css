@@ -15,7 +15,8 @@ em{color:var(--brand)}
 a{color:inherit}
 button{font:inherit;color:inherit}
 .bar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:calc(10px + env(safe-area-inset-top)) 18px 10px;background:rgba(251,250,247,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-family:Fr;font-weight:700;font-size:.95em}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-family:Fr;font-weight:700;font-size:clamp(16px,.95em,1.2em);min-width:0}
+.brand-name{white-space:nowrap;font-style:normal;color:inherit}
 .textsize{border:1.5px solid var(--line);background:#fff;border-radius:12px;min-width:52px;height:44px;font-family:Fr;font-weight:700;font-size:.8em}
 .textsize span{font-size:1.3em}
 main{max-width:640px;margin:0 auto;padding:18px 18px 30px;outline:none}

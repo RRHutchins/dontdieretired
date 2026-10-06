@@ -122,7 +122,7 @@ em{color:var(--brand)}
 .brand-foot{font-family:var(--serif);font-weight:700;font-size:1.3rem;margin:0}
 .social a{display:inline-block;margin-right:12px}
 .footnote{margin-top:28px;color:var(--muted);font-size:.8rem}
-@media (max-width:820px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:820px){.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div{min-width:0}.footer-grid>div:first-child{grid-column:1/-1}}
 
 /* videos */
 .video-grid{display:grid;gap:24px}.video-grid-2{grid-template-columns:repeat(2,1fr)}
@@ -202,10 +202,21 @@ body[data-region=us] .tier .price::after{content:""}
 @media (max-width:820px){
   .nav{display:flex!important;gap:14px;flex:1;justify-content:flex-end}
   .hide-sm{display:none!important}.show-sm{display:inline}
-  .brand span{font-size:1.1rem}
+  .brand{font-size:1.15rem}
   .topics .dd{position:fixed;left:12px;right:12px;top:70px;width:auto;grid-template-columns:1fr}
 }
-@media (max-width:480px){.brand span{display:none}}
+/* The name is always shown beside the mark, in one style (RUNBOOK §1c). On phones the header
+   becomes two rows (name and email button, then the menu) so nothing has to be hidden. */
+.brand-name{white-space:nowrap;font-style:normal;color:inherit}
+@media (max-width:560px){
+  .header-inner{flex-wrap:wrap;gap:4px 10px;min-height:0;padding-top:9px;padding-bottom:5px}
+  .brand{font-size:clamp(16px,5vw,21px);gap:7px}
+  .brand-mark{width:28px;height:28px}
+  .header-cta{margin-left:auto;gap:8px}
+  .header-cta .btn{padding:5px 10px}
+  .nav{order:3;flex:1 0 100%!important;justify-content:flex-start!important;gap:20px}
+  .topics .dd{top:98px}
+}
 
 .bundle-value{font-size:1.05rem}.bundle-value s{color:var(--muted)}
 .bundle-promise{background:#fff6e8;border-radius:10px;padding:10px 14px}

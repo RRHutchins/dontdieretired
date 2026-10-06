@@ -14,6 +14,14 @@ A static site for over-50s, encouraging physical and mental activity, run by AI 
 
 **Prose.** Short paragraphs, one idea per sentence, specific numbers over adjectives. Quotes carry the story; attribute with "said" or "told [outlet]", never "enthused", "beamed", "quipped". No rhetorical questions in the first half. Second person only in the practical section and the Try-this box. Cut clichés on sight: "age is just a number", "proving that…", "inspirational", "journey", "incredible". The tone is a well-edited newspaper feature: warm because the facts are, not because the adjectives are.
 
+### 1c. Name and wordmark (set 6 Oct 2026)
+- **One phrase, one style.** The name is always "Don't Die Retired" in full, with all three words in the same typeface, weight, upright style and colour (the bold serif in dark ink on light, light on dark). The red belongs to the sunrise mark, never to a word. Never italicise, colour or otherwise pick out one or two of the words, and never break a line as "Don't Die" / "Retired".
+- **Never "Don't Die" alone**: not as a heading, label, hashtag, abbreviation, image text or social handle. Where a short form is needed, use "DDR" or the mark alone.
+- **Always visible.** The full name sits beside the mark in the website header and the app header at every screen width, including small phones. Make it fit by shrinking the type or re-arranging the header, never by hiding it.
+- **Files.** `python tools/build_logos.py` rebuilds `brand/logo-horizontal-light.png`, `brand/logo-horizontal-dark.png` and both copies of `og-default.png`. The website header and footer use the `.brand-name` class; the app header matches. Product PDFs and Gumroad covers take the name from `products/build_pdf.js`.
+- **What the site is about.** Activity, purpose and making the most of life. Articles, guides, products and affiliate links stay out of longevity, life-extension, anti-ageing, supplements and medical testing, so that the statement in "Our ethos" (About page) stays true. No page names, links to or compares the site with another brand, person or movement in order to describe itself.
+- **"Our ethos"** lives on the About page (`/about/#ethos`) with one small footer link. It is meant to be available, not prominent: do not add it to the main menu, the home page, Start here, articles or the app unless Robin asks.
+
 Repo layout: `site.yaml` (config), `content/articles/*.md`, `content/videos.yaml`, `content/products.yaml`, `templates/`, `static/`, `build.py` → `dist/`; `social/` gets a post pack per article.
 
 ## 1b. Who we write for (set 2 Oct 2026 — read before choosing a story)

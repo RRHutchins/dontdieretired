@@ -114,7 +114,7 @@ h1{font-family:Fr;font-weight:900;font-size:58pt;line-height:.98;margin:8mm 0 7m
 <svg class="sun" viewBox="0 0 210 120" preserveAspectRatio="xMidYMax meet"><g stroke="#F2B45A" stroke-opacity=".38" stroke-width="4.2" stroke-linecap="round">${[150, 122, 94, 66, 38, 12].map(a => { const t = a * Math.PI / 180, cx = 164, cy = 126, r1 = 62, r2 = 86;
   return `<line x1="${(cx + r1 * Math.cos(t)).toFixed(1)}" y1="${(cy - r1 * Math.sin(t)).toFixed(1)}" x2="${(cx + r2 * Math.cos(t)).toFixed(1)}" y2="${(cy - r2 * Math.sin(t)).toFixed(1)}"/>`; }).join('')}</g><circle cx="164" cy="126" r="54" fill="#FFFDF9" fill-opacity=".12"/><circle cx="164" cy="126" r="50" fill="#F2B45A"/></svg>
 <div class="big">${esc(T.big)}</div>
-<div class="brand">${MARK('#FFFDF9', T.c)}<span>Don't Die <i>Retired</i></span></div>
+<div class="brand">${MARK('#FFFDF9', T.c)}<span>Don't Die Retired</span></div>
 <div class="pill">${esc(C.kind)}</div>
 <h1>${esc(C.title)}</h1>
 <div class="sub">${esc(C.subtitle)}</div>
@@ -226,7 +226,7 @@ ${bodyHtml}
   ${MY ? `<div class="upgrade"><div class="up-l"><div class="kick" style="color:var(--acc)">Your purchase counts in full</div><h3 class="up-h">Get the other eight plans for £${MY.upgrade}</h3><p>You've paid £${MY.paid} for this plan. We take that off the Everything bundle, so the rest of the shelf, worth £${MY.others_value} bought separately, is yours for <b>£${MY.upgrade}</b>. You'll also get every new plan we publish for a year.</p><p class="up-small">Bought more than one plan? Reply to your receipt and we'll credit everything you've paid.</p></div><a class="up-r" href="${MY.url}"><div class="up-price">£${MY.upgrade}</div><div class="up-was">instead of £${UP.bundle_price}</div><div class="up-link">${esc(MY.url.replace('https://', ''))}</div><div class="up-code">or use code <b>${MY.code}</b></div></a></div>` : ''}
   <div class="kick" style="margin-top:8mm">More from the shelf</div>
   <div class="shelf">${OTHERS.filter(o => o[0] !== C.title).slice(0, 6).map(o => `<div><b>${esc(o[0])}</b><span>${esc(o[1])}</span></div>`).join('')}</div>
-  <div class="sign">${MARK(T.c, '#FFFDF9')}<div><b>Don't Die <i>Retired</i></b><span>Retire from work if you like. Never from life. · dontdieretired.com · hello@dontdieretired.com</span></div></div>
+  <div class="sign">${MARK(T.c, '#FFFDF9')}<div><b>Don't Die Retired</b><span>Retire from work if you like. Never from life. · dontdieretired.com · hello@dontdieretired.com</span></div></div>
 </section>
 </body></html>`;
 
