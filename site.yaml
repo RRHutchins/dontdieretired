@@ -74,7 +74,7 @@ social:
   youtube: "https://youtube.com/@dontdieretired"
   pinterest: "https://pinterest.com/dontdieretired"
   tiktok: ""                                 # no account yet (3 Oct 2026); set to https://tiktok.com/@dontdieretired once created. Empty = hidden from footer
-  scheduler: "buffer"                        # buffer | publer | zapier — used by RUNBOOK
+  scheduler: "buffer"                        # Facebook, Instagram, X go out through Buffer from the deploy workflow (RUNBOOK §6d)
 
 social_verify:
   pinterest: "fc92bd314fd9380bcfa0735f5536b8ea"   # Pinterest "claim your website" tag (public, not a secret). Keep it: removing it un-claims the site

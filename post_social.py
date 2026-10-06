@@ -13,9 +13,16 @@ read back from the run without opening the log. Never prints the key.
 """
 import argparse, datetime as dt, json, os, pathlib, re, sys, urllib.error, urllib.request
 
+from zoneinfo import ZoneInfo
+
 ROOT = pathlib.Path(__file__).parent
 API = "https://api.buffer.com"
 KEY = os.environ.get("BUFFER_API_KEY", "").strip()
+SITE = "https://dontdieretired.com"
+UK = ZoneInfo("Europe/London")
+START_DATE = "2026-10-06"                # packs dated before this are never posted (no back-catalogue flood)
+SLOTS_UK = ["13:00", "18:00", "08:00"]   # in order of preference: 13:00 UK is 8am US Eastern, 18:00 UK is 1pm. One slot per article
+SERVICES = {"facebook": "facebook", "instagram": "instagram", "twitter": "x"}   # Buffer service -> key in meta.json posts
 
 
 def say(level, msg):
@@ -47,6 +54,123 @@ def channels():
                      {"o": o["id"]})["channels"]:
             found.append({**c, "org": o["id"]})
     return found
+
+
+# ---------------------------------------------------------------- posting
+
+def norm(t):
+    return re.sub(r"\s+", " ", t or "").strip()
+
+
+def existing_posts(org, channel_ids):
+    """The 50 newest posts Buffer holds for our channels (any state), for de-duplication and slot picking."""
+    q = """query($o: OrganizationId!, $c: [ChannelId!]) {
+      posts(first: 50, input: {organizationId: $o, filter: {channelIds: $c},
+                               sort: [{field: createdAt, direction: desc}]}) {
+        edges { node { id text status dueAt channelId } } } }"""
+    return [e["node"] for e in gql(q, {"o": org, "c": channel_ids})["posts"]["edges"]]
+
+
+def kind_of(slug):
+    """'guide' or 'story', read from the article's front matter (file names do not always match the slug)."""
+    for f in (ROOT / "content" / "articles").glob("*.md"):
+        head = f.read_text(encoding="utf-8")[:1500]
+        if re.search(rf"^slug:\s*['\"]?{re.escape(slug)}['\"]?\s*$", head, re.M) or f.stem.endswith(slug):
+            m = re.search(r"^kind:\s*['\"]?(\w+)", head, re.M)
+            return m.group(1) if m else "story"
+    return "story"
+
+
+def packs_to_post(named=None):
+    if named:
+        return [pathlib.Path(named)]
+    today = dt.datetime.now(UK).date()
+    days = {d.isoformat() for d in (today, today - dt.timedelta(days=1))}
+    found = [p for p in sorted((ROOT / "social").iterdir())
+             if p.name[:10] in days and p.name[:10] >= START_DATE and (p / "meta.json").exists()]
+    return sorted(found, key=lambda p: (p.name[:10], kind_of(p.name[11:]) == "guide", p.name))   # stories before guides
+
+
+def wait_for(url, tries=12):
+    """The deploy has finished, but give the CDN up to two minutes to serve a brand-new file."""
+    import time
+    for _ in range(tries):
+        try:
+            req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "dontdieretired-site/1.0"})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                if r.status == 200: return True
+        except Exception:
+            pass
+        time.sleep(10)
+    return False
+
+
+def pick_slot(taken, now):
+    """First free preferred UK slot still ahead today; if none, ten minutes from now, then every half hour."""
+    for hhmm in SLOTS_UK:
+        h, m = map(int, hhmm.split(":"))
+        t = now.astimezone(UK).replace(hour=h, minute=m, second=0, microsecond=0)
+        if t > now + dt.timedelta(minutes=10) and all(abs((t - x).total_seconds()) > 300 for x in taken):
+            return t
+    t = now + dt.timedelta(minutes=10)
+    while any(abs((t - x).total_seconds()) < 1500 for x in taken):
+        t += dt.timedelta(minutes=30)
+    return t
+
+
+CREATE = """mutation($input: CreatePostInput!) { createPost(input: $input) {
+  __typename ... on PostActionSuccess { post { id status dueAt } } ... on MutationError { message } } }"""
+
+
+def post(named=None):
+    packs = packs_to_post(named)
+    if not packs:
+        say("notice", "Social: no new article packs to post."); return 0
+    ch = [c for c in channels() if c["service"] in SERVICES]
+    missing = set(SERVICES) - {c["service"] for c in ch}
+    if missing:
+        say("warning", "Social: not connected in Buffer, so skipped: " + ", ".join(sorted(missing)))
+    if not ch:
+        say("error", "Social: Buffer has no Facebook, Instagram or X channel connected."); return 1
+    have = existing_posts(ch[0]["org"], [c["id"] for c in ch])     # if this fails we stop: never post blind
+    live = [p for p in have if p["status"] != "error"]
+    now = dt.datetime.now(dt.timezone.utc)
+    taken = [dt.datetime.fromisoformat(p["dueAt"].replace("Z", "+00:00")) for p in live
+             if p["status"] in ("scheduled", "needs_approval") and p.get("dueAt")]
+    failed, lines = 0, []
+    for pack in packs:
+        meta = json.loads((pack / "meta.json").read_text(encoding="utf-8"))
+        slug = pack.name[11:]
+        todo = [c for c in ch if not any(p["channelId"] == c["id"] and norm(p["text"]) == norm(meta["posts"][SERVICES[c["service"]]])
+                                         for p in live)]
+        if not todo:
+            lines.append(f"{slug}: already in Buffer on every channel"); continue
+        when = pick_slot(taken, now); taken.append(when)
+        cards = {"instagram": f"{SITE}/static/social/{slug}.png", "twitter": f"{SITE}/static/img/{slug}.png"}
+        for c in todo:
+            svc = c["service"]
+            inp = {"channelId": c["id"], "text": meta["posts"][SERVICES[svc]], "assets": [], "needsApproval": False,
+                   "schedulingType": "automatic", "mode": "customScheduled",
+                   "dueAt": when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")}
+            if svc == "facebook":      # link post: Facebook draws the preview card from the article's own og:image
+                inp["metadata"] = {"facebook": {"type": "post", "linkAttachment": {
+                    "url": meta["url"] + "?utm_source=facebook&utm_medium=social&utm_campaign=daily"}}}
+            else:
+                if not wait_for(cards[svc]):
+                    failed += 1; lines.append(f"{slug} / {svc}: FAILED, image not live at {cards[svc]}"); continue
+                inp["assets"] = [{"image": {"url": cards[svc], "metadata": {"altText": meta["title"][:400]}}}]
+                if svc == "instagram":
+                    inp["metadata"] = {"instagram": {"type": "post", "shouldShareToFeed": True}}
+            try:
+                r = gql(CREATE, {"input": inp})["createPost"]
+            except Exception as e:
+                r = {"__typename": "RequestError", "message": str(e)}
+            if r["__typename"] == "PostActionSuccess":
+                lines.append(f"{slug} / {svc}: {r['post']['status']} for {when.astimezone(UK):%a %d %b %H:%M} UK")
+            else:
+                failed += 1; lines.append(f"{slug} / {svc}: FAILED ({r['__typename']}) {r.get('message', '')[:300]}")
+    say("error" if failed else "notice", "Social posting\n" + "\n".join(lines))
+    return 1 if failed else 0
 
 
 # ---------------------------------------------------------------- --check
@@ -115,4 +239,7 @@ if __name__ == "__main__":
         say("error", "BUFFER_API_KEY is not set, so nothing was sent to Buffer."); sys.exit(1)
     if args.check:
         sys.exit(check())
-    say("error", "Posting is not switched on yet."); sys.exit(1)
+    try:
+        sys.exit(post(args.pack))
+    except Exception as e:
+        say("error", f"Social posting stopped before sending anything further: {e}"); sys.exit(1)

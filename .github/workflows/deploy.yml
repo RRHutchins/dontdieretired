@@ -39,6 +39,7 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
-      - run: python3 post_social.py --check
+      # schedules each new article's posts in Buffer (Facebook, Instagram, X); safe to re-run, it skips what Buffer already has
+      - run: python3 post_social.py
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}

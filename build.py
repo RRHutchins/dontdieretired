@@ -363,6 +363,10 @@ def build(make_social=True):
     for a in arts:
         make_card(a.get("lesson") or a["title"], cfg["categories"][a["category"]]["label"], a["category"],
                   DIST / "static" / "img" / f"{a['slug']}.png")
+        if (dt.date.today() - a["date"]).days <= 7:   # square card for Instagram (post_social.py); recent articles only
+            (DIST / "static" / "social").mkdir(parents=True, exist_ok=True)
+            make_card(a.get("hook") or a["title"], "Don't Die Retired", a["category"],
+                      DIST / "static" / "social" / f"{a['slug']}.png", size=(1080, 1080))
         (DIST / "static" / "art").mkdir(parents=True, exist_ok=True)
         (DIST / "static" / "art" / f"{a['slug']}.svg").write_text(
             art.scene_svg({**a, "art": a["scene"]}, PALETTE.get(a["category"], ("#333333",))[0]), encoding="utf-8")
