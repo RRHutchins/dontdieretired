@@ -20,9 +20,11 @@
   const track = (n, p) => { if (window.plausible) window.plausible(n, { props: p }); };
   const root = $('[data-scam]'); if (!root) return;
 
-  // country: United States from the site's own time-zone check, United Kingdom from UK time zones, otherwise both
+  // country: United Kingdom from UK time zones, United States from American ones, otherwise both
   let tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
-  const guess = document.body.dataset.region === 'us' ? 'us' : (/^Europe\/(London|Belfast|Jersey|Guernsey|Isle_of_Man)$/.test(tz) ? 'uk' : 'both');
+  // Time zone decides, not browser language: many UK browsers are set to US English.
+  const guess = /^Europe\/(London|Belfast|Jersey|Guernsey|Isle_of_Man)$/.test(tz) ? 'uk'
+    : (document.body.dataset.region === 'us' && /^(America\/|Pacific\/Honolulu|US\/)/.test(tz) ? 'us' : 'both');
   let saved = null; try { saved = localStorage.getItem('ddr_scam_region'); } catch (e) {}
   const sel = $('[data-scam-region]', root);
   const show = r => { $$('[data-reg]').forEach(d => d.hidden = !(r === 'both' || d.dataset.reg === r)); root.dataset.region = r; sel.value = r; render(); };
