@@ -1,0 +1,45 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button %}
+{% block title %}The Daily Wheel: today's word puzzle — {{ cfg.site.name }}{% endblock %}
+{% block description %}Nine letters, one in the middle, a new puzzle every day. Make as many words as you can, and keep your streak going.{% endblock %}
+{% block pagetype %}puzzle{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Daily puzzle</p><h1>The Daily Wheel</h1>
+<p class="lead">Nine letters. Make words of four letters or more, always using the one in the middle. There is at least one nine-letter word. Today's puzzle is gone at midnight.</p></header>
+
+<div class="pz" data-puzzle>
+  <div class="pz-streak" data-pz-streak aria-live="polite"></div>
+  <noscript><p>The puzzle needs JavaScript switched on.</p></noscript>
+  <div class="pz-play" data-pz-play hidden>
+    <div class="pz-word" data-pz-word aria-live="polite" aria-label="Your word"></div>
+    <p class="pz-msg" data-pz-msg role="status">&nbsp;</p>
+    <div class="pz-wheel" data-pz-wheel></div>
+    <div class="pz-keys">
+      <button type="button" class="chip" data-pz-act="del">Delete</button>
+      <button type="button" class="chip" data-pz-act="shuffle">Shuffle</button>
+      <button type="button" class="btn" data-pz-act="enter">Enter</button>
+    </div>
+    <div class="pz-progress" data-pz-progress></div>
+    <p class="pz-tools"><button type="button" class="linklike" data-pz-act="hint">Give me a hint</button></p>
+    <div class="pz-found"><h2>Words you've found</h2><p data-pz-found class="pz-list"></p></div>
+    <div class="pz-share" data-pz-share hidden></div>
+  </div>
+  <p class="pz-empty" data-pz-empty hidden>There is no puzzle to show right now. Please check your connection and try again; if it still isn't here, we'll have it fixed by tomorrow.</p>
+  <div class="pz-foot">
+    <p data-pz-next class="meta"></p>
+    <p data-pz-yesterday class="meta"></p>
+    <p class="meta">Your streak and today's progress are kept on this device, in this browser only. A day counts once you reach "Good". Both British and American spellings are accepted.</p>
+  </div>
+</div>
+
+<div class="prose narrow">
+<h2>How to play</h2>
+<ul>
+  <li>Tap the letters, or type, to build a word. Every word must use the middle letter.</li>
+  <li>Each letter can be used only as often as it appears in the wheel.</li>
+  <li>Four letters is the shortest word. No names, and no hyphens.</li>
+  <li>Reach <strong>Good</strong> and the day counts towards your streak. <strong>Very good</strong> and <strong>Excellent</strong> are there if you want more.</li>
+</ul>
+<p>One true story and one thing to try arrive by email each week: <a href="/newsletter/">join free</a>.</p>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/puzzle.js" defer></script>{% endblock %}

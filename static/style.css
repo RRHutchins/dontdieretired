@@ -418,3 +418,36 @@ body{background:var(--paper)}
 .scam-verdict h3{margin-top:0}
 .scam-verdict.scam-scam{border-color:var(--brand);background:#fdecee}
 .scam-verdict.scam-suspicious{border-color:var(--gold);background:#fff6e8}
+
+/* The Daily Wheel */
+.pz{max-width:560px;margin:0 auto 32px}
+.pz-streak{background:#fff6e8;border:1px solid #f0dfc2;border-radius:12px;padding:10px 16px;margin:0 0 16px;font-size:1.02rem}
+.pz-streak strong{font-family:var(--serif);font-size:1.35rem}
+.pz-word{min-height:58px;display:flex;justify-content:center;align-items:center;gap:2px;font-family:var(--serif);font-weight:700;font-size:clamp(1.7rem,8vw,2.4rem);text-transform:uppercase;letter-spacing:.04em;border-bottom:3px solid var(--line);margin:0 12px}
+.pz-word .pz-mid{color:var(--brand)}
+.pz-word .pz-ph{font-family:var(--sans);font-weight:400;font-size:1rem;letter-spacing:0;text-transform:none;color:var(--muted)}
+.pz-msg{text-align:center;min-height:1.7em;margin:8px 0 0;font-weight:600}
+.pz-msg[data-kind=no]{color:var(--brand-ink)}.pz-msg[data-kind=yes]{color:var(--accent)}.pz-msg[data-kind=hint]{color:var(--think)}
+.pz-wheel{position:relative;width:min(88vw,340px);aspect-ratio:1;margin:10px auto 14px}
+.pz-l{position:absolute;left:50%;top:50%;width:25%;aspect-ratio:1;border-radius:50%;border:2px solid var(--line);background:#fff;color:var(--ink);font-family:var(--serif);font-weight:700;font-size:clamp(1.5rem,7.5vw,2rem);text-transform:uppercase;cursor:pointer;
+  transform:translate(-50%,-50%) rotate(calc(var(--i)*45deg)) translateY(-148%) rotate(calc(var(--i)*-45deg));touch-action:manipulation}
+.pz-l:hover{border-color:var(--brand)}.pz-l:active{background:#f5f2ec}
+.pz-l.pz-c{transform:translate(-50%,-50%);background:var(--brand);border-color:var(--brand);color:#fff;width:28%}
+.pz-keys{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.pz-keys .chip,.pz-keys .btn{min-height:50px;min-width:92px}
+.pz-keys .chip::before{content:none}
+.pz-bar{position:relative;height:12px;border-radius:999px;background:var(--line);overflow:visible;margin:4px 0 8px}
+.pz-bar i{display:block;height:100%;border-radius:999px;background:var(--accent)}
+.pz-bar b{position:absolute;top:-3px;width:3px;height:18px;background:var(--ink);opacity:.45;transform:translateX(-2px)}
+.pz-progress p{margin:.2em 0}
+.pz-tools{text-align:center;margin:10px 0 18px}
+.pz-found h2{font-size:1.2rem;margin-bottom:.3em}
+.pz-list span{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:8px;padding:2px 9px;margin:0 2px 6px 0}
+.pz-list .pz-nine{border-color:var(--brand);font-weight:600}
+.pz-share{background:#EAF3EC;border:1px solid #cfe3d3;border-radius:12px;padding:6px 16px 14px;margin:18px 0}
+.pz-foot{margin-top:22px;border-top:1px solid var(--line);padding-top:10px}
+.pz-foot p{margin:.35em 0}
+.pz-card{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:28px 0;text-decoration:none;color:var(--ink)}
+.pz-card:hover{border-color:var(--brand)}
+.pz-card h3{margin:.1em 0 .2em}.pz-card p{margin:0}
+.pz-badge{background:#fff6e8;border:1px solid #f0dfc2;border-radius:999px;padding:3px 12px;font-weight:600;font-size:.92rem;white-space:nowrap}

@@ -434,6 +434,44 @@ def build(make_social=True):
         "level": a.get("level", "any"), "age": a.get("subject_age"),
     } for a in arts]), encoding="utf-8")
 
+    # Daily puzzle (RUNBOOK §6g): one small file per day, only for a short window around today,
+    # so yesterday's puzzle really is gone and tomorrow's is not sitting in one big readable file.
+    days_file = CONTENT / "puzzle_days.json"
+    if days_file.exists():
+        import base64, random as _random, sys as _s
+        _s.path.insert(0, str(ROOT / "tools"))
+        from build_puzzles import load_words, answers as _answers
+        from collections import Counter as _Counter
+        pdays = json.loads(days_file.read_text(encoding="utf-8"))
+        today = dt.date.today()
+        left = (dt.date.fromisoformat(max(pdays)) - today).days
+        if left < 60:
+            print(f"PUZZLE WARNING: only {left} days of puzzles left. Run: python tools/build_puzzles.py --extend 365 (RUNBOOK §6g).")
+        wc = [(w, _Counter(w)) for w in load_words()]
+        def _obf(text, key):   # light scrambling so answers are not readable at a glance; not security
+            k = key.encode()
+            return base64.b64encode(bytes(b ^ k[i % len(k)] ^ 0x5A for i, b in enumerate(text.encode()))).decode()
+        (DIST / "puzzle" / "d").mkdir(parents=True, exist_ok=True)
+        for off in range(-2, 15):
+            d = (today + dt.timedelta(days=off)).isoformat()
+            if d not in pdays:
+                continue
+            word, centre = pdays[d]
+            ans = sorted(_answers(word, centre, wc))
+            assert word in ans and all(len(a) >= 4 and centre in a for a in ans), f"bad puzzle {d}"
+            outer = list(word); outer.remove(centre)
+            _random.Random(d).shuffle(outer)
+            n = len(ans)
+            nines = [a for a in ans if len(a) == 9]
+            (DIST / "puzzle" / "d" / f"{d}.json").write_text(json.dumps({
+                "d": d, "c": centre, "o": "".join(outer), "n": n,
+                "t": [max(5, round(n * .25)), max(8, round(n * .40)), max(11, round(n * .60))],
+                "a": _obf(",".join(ans), d), "w": _obf(",".join(nines), d)}, separators=(",", ":")), encoding="utf-8")
+        urls.append(out("/puzzle/", "puzzle.html"))
+        pages.append({"title": "The Daily Wheel: today's word puzzle", "url": "/puzzle/", "category": "think",
+                      "excerpt": "Nine letters, one in the middle, a new puzzle every day. How many words can you make?",
+                      "tags": ["puzzle", "puzzles", "word", "wheel", "game", "daily", "streak"],
+                      "image": "/static/og-default.png", "art": "/static/og-default.png"})
     (DIST / "pages.json").write_text(json.dumps(pages), encoding="utf-8")
 
     write_rss(arts, cfg)

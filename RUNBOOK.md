@@ -134,6 +134,17 @@ Category `ai` (/ai/). Its job: readers finish better able to use AI and harder t
 - A visitor arriving with `?via=friend` sees one slim, closable line at the top ("A friend thought you'd like this…") with a link to the free weekly email. It sits in the page, never over it. **Never make this more intrusive**: no pop-up, no overlay, and no profile questions on arrival (the home-page profile prompt is switched off for these visitors). One quiet line after the story offers the interests picker.
 - Plausible events: `share` (props `via`, `kind`), `friend_arrival`, `friend_signup`. Review them weekly with the other numbers in §3: shares by route, arrivals, and how many arrivals join the email.
 
+## 6g. The Daily Wheel: daily puzzle with a streak (added 6 Oct 2026)
+`/puzzle/` is a word wheel: nine letters, every word uses the middle one, four letters minimum, at least one nine-letter word. One puzzle per calendar day, the same for everyone, changing at the reader's own midnight. It exists to give people a reason to come back each day.
+- **How it is built.** `content/puzzle_days.json` holds the nine-letter word and middle letter for each date. `build.py` works out the answers from `tools/wordlist/words.txt` (SCOWL; licence in `tools/wordlist/README.md`), minus `tools/wordlist/blocklist.txt`, and writes one small file per day to `dist/puzzle/d/`, only for two days back and fourteen ahead. So an old puzzle really is gone, and the site must be built at least once a fortnight (the daily job does this).
+- **Never change a day that is already in `puzzle_days.json`**: people may be part-way through it. To drop an unsuitable word that has not been played yet, edit that date's entry; to stop a word being an answer, add it to the blocklist.
+- **When `build.py` prints PUZZLE WARNING** (under 60 days left), run `pip install wordfreq` then `python tools/build_puzzles.py --extend 365`, build, and commit. Check this in the weekly job.
+- **Streak.** A day counts when the reader reaches "Good". The streak, best streak and today's progress are kept in the reader's browser only (`ddr_puzzle`), and the page says so. A missed day ends it with a kind line; never add warnings, countdown nags, pop-ups or notifications about streaks.
+- **No health claims.** Nothing about memory, "brain training" or dementia. It is there because it is enjoyable.
+- **Original work.** Do not copy the name, look or wording of any commercial puzzle.
+- **Plausible events:** `puzzle_start`, `puzzle_good`, `puzzle_excellent`, `puzzle_hint`, `puzzle_streak` (prop `length`: 1, 2-6, 7-29, 30+). Review weekly (§5): if people play, consider a second puzzle type on alternate days.
+- **Puzzle book.** The page mentions the printed puzzle books only once a real purchase link exists in `site.yaml` or `content/products.yaml`.
+
 ## 7. Guard-rails
 - Never invent facts, quotes, ages or names. If the source can't be fetched, don't run the story.
 - Never give medical advice or dosing; always "check with a GP first".
