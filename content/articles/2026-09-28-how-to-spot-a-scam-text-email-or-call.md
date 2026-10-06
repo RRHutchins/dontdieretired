@@ -22,7 +22,7 @@ try_this_plus:
 sources:
   - {title: "How to spot a scam email, text message or call", publisher: "National Cyber Security Centre", date: "n.d.", url: "https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams"}
   - {title: "Avoid and report internet scams and phishing", publisher: "Gov.uk", date: "n.d.", url: "https://www.gov.uk/report-suspicious-emails-websites-phishing"}
-  - {title: "Report a scam to Action Fraud", publisher: "Action Fraud", date: "n.d.", url: "https://www.actionfraud.police.uk/reportscam"}
+  - {title: "Report Fraud", publisher: "City of London Police", date: "2026", url: "https://www.reportfraud.police.uk/"}
   - {title: "159 phone number", publisher: "Stop Scams UK", date: "n.d.", url: "https://stopscamsuk.org.uk/our-work/159-phone-number/"}
   - {title: "Impersonation scams", publisher: "Take Five to Stop Fraud", date: "n.d.", url: "https://www.takefive-stopfraud.org.uk/protect-yourself/impersonation-fraud/"}
   - {title: "Notorious 'Hi Mum and Dad' scam spreads from WhatsApp to text message", publisher: "Which?", date: "7 September 2022", url: "https://www.which.co.uk/news/article/notorious-hi-mum-and-dad-scam-spreads-from-whatsapp-to-text-message-an7N34c0gVbP"}
@@ -79,7 +79,7 @@ Reporting takes a minute and feeds the systems that get scam sites taken down.
 **UK**
 - Scam **texts**: forward to **7726** (free).
 - Scam **emails**: forward to **report@phishing.gov.uk**.
-- If you have **lost money** in England, Wales or Northern Ireland: **Action Fraud**, online or on **0300 123 2040**. In Scotland, report to Police Scotland on 101.
+- If you have **lost money** in England, Wales or Northern Ireland: **Report Fraud** (which replaced Action Fraud in December 2025), at reportfraud.police.uk or on **0300 123 2040**. In Scotland, report to Police Scotland on 101.
 - Unexpected call about your **bank account**: hang up and dial **159**.
 
 **US**
@@ -94,3 +94,5 @@ If you would like these numbers on a card for the fridge, along with the pattern
 None of this requires you to become suspicious of the world — just one habit, pause then call back, and a little familiarity with the costumes. For the wider picture of settings, passwords and getting help, start with [the complete guide to tech confidence after 50](/tech/tech-confidence-after-50-the-complete-guide/). And since a reused password is what turns a phishing email into a real loss, [Passwords and two-factor authentication, made simple](/tech/passwords-and-two-factor-made-simple/) is the natural next read.
 
 Updated 6 October 2026: added the FBI's Internet Crime Complaint Center (ic3.gov) as a second US reporting route.
+
+Corrected 7 October 2026: the UK's fraud reporting service is now Report Fraud, which replaced Action Fraud in December 2025.

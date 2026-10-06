@@ -481,6 +481,7 @@ def build(make_social=True):
     urls.append(out("/sponsor/", "sponsor.html"))
     urls.append(out("/about/", "about.html"))
     urls.append(out("/privacy/", "privacy.html"))
+    urls.append(out("/editorial-policy/", "editorial-policy.html", corrections_total=217))
     urls.append(out("/search/", "search.html"))
 
     # search index + article index for the front end

@@ -14,14 +14,15 @@ for it in range(6):
     render(tight); n, txt = pages()
     secs = json.load(open(f"{HERE}/out/{ID}-sections.json"))
     cur, spills = 0, []
-    for p in range(2, n):  # skip cover (1) and inside page (2 in list index 1)
+    closing = {i for i, t in enumerate(secs, 1) if t in ('About this guide', 'Where this comes from')}
+    for p in range(3, n):  # skip the cover (1) and the inside page (2), whose contents list names every section
         t = txt[p - 1]; norm = re.sub(r"\s+", " ", t)
         for i, title in enumerate(secs, 1):
             if re.sub(r"\*\*", "", title)[:22] in norm: cur = i
         dense = len(re.sub(r"\s", "", t))
         nxt = txt[p] if p < n else ""
         next_is_head = any(re.sub(r"\*\*", "", tt)[:22] in re.sub(r"\s+", " ", nxt) for tt in secs)
-        if dense < 450 and (next_is_head or p == n - 1) and p > 2:
+        if dense < 450 and (next_is_head or p == n - 1) and p > 2 and cur not in closing:  # a short last page of sources is normal
             spills.append((p, cur))
     if not spills: break
     changed = False

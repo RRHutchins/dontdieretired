@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Editorial policy — {{ cfg.site.name }}{% endblock %}
+{% block description %}How Don't Die Retired finds and checks what it publishes, the part AI plays, how we correct mistakes and how the site earns money.{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">How we work</p><h1>Editorial policy</h1><p class="lead">What we publish, how we check it, the part AI plays, and what to do if we get something wrong.</p></header>
+<div class="prose narrow">
+
+<h2 id="who">Who is behind the site</h2>
+<p>Don't Die Retired is an independent website run by its founders. We are not doctors, dietitians, physiotherapists, financial advisers or lawyers. Nothing here is medical, financial or legal advice, and where a decision matters we say who to ask.</p>
+
+<h2 id="ai">The part AI plays</h2>
+<p>The site is researched, written and updated with the help of AI, directed and overseen by its founders. AI finds the stories, reads the sources, drafts the articles and guides, and compares what we have written with what the sources say. We tell you this on every page because you are entitled to know how what you are reading was made.</p>
+<p>AI makes mistakes, and so do people. That is why the rules below are about sources you can check for yourself, and why the corrections section exists.</p>
+
+<h2 id="stories">Stories</h2>
+<ul>
+<li><strong>Real people, real sources.</strong> Every story is about a real, named person and rests on reporting we link to at the foot of the article. If we cannot open and read the source, we do not run the story.</li>
+<li><strong>Nothing invented.</strong> We do not make up people, quotes, ages, readers, testimonials, reviews or sales figures.</li>
+<li><strong>Our own words.</strong> We tell each story ourselves and quote sparingly, with the speaker and the outlet named. To read the original reporting in full, follow the link.</li>
+<li><strong>Our own pictures.</strong> The artwork on our stories is illustration made by the site. It is not a photograph of the person in the story.</li>
+<li><strong>Honest dates.</strong> An article's date is the day it was published. We do not change dates to make old pages look new.</li>
+</ul>
+
+<h2 id="guides">Guides, plans and the workbooks we sell</h2>
+<ul>
+<li><strong>Sources listed.</strong> Advice on health, food, money, travel and technology follows published guidance from bodies such as the NHS, the UK Chief Medical Officers, the CDC, GOV.UK, MoneyHelper, the FCA, the FTC and the National Cyber Security Centre, and names the research it leans on. Each workbook ends with a page headed "Where this comes from".</li>
+<li><strong>Checked against those sources.</strong> In October 2026 every source listed in our ten workbooks was opened and read, and each workbook was compared with it. A second, separate check then opened every source again. Both checks were done with AI.</li>
+<li><strong>Not yet reviewed by a professional.</strong> No doctor, physiotherapist, dietitian, financial adviser or other qualified professional has reviewed our guides. If one does, the guide will carry their name, their registration and the date. We will never say or imply that a review has happened when it has not.</li>
+<li><strong>Versions.</strong> Each workbook carries a version number and the month it was last reviewed, on its "About this guide" page.</li>
+<li><strong>Things change.</strong> Tax figures, travel rules, phone numbers and app settings go out of date. Where a rule could have moved, we give the official page to check.</li>
+</ul>
+
+<h2 id="health">Health and safety</h2>
+<p>We encourage; we do not prescribe. We do not give doses or diagnoses, and we tell readers to speak to a GP (family doctor) before starting a new exercise programme if they have a health condition or have not exercised for some time. Emergency advice in our guides follows the NHS and, for readers in the United States, the CDC and the American Heart Association.</p>
+
+<h2 id="corrections">Corrections</h2>
+<p>If you think something here is wrong, out of date or unfair, email <a href="mailto:{{ cfg.site.contact_email }}">{{ cfg.site.contact_email }}</a> and tell us which page. We will check it against the source and, if you are right, correct it. When a correction changes the substance of an article, we say so at the foot of that article, with the date.</p>
+<p>Requests to remove or correct something about a person in a story go to the founders the same day.</p>
+<h3>Corrections log</h3>
+<ul>
+<li><strong>7 October 2026.</strong> All ten workbooks were checked against their sources and reissued as version 2, with {{ corrections_total }} corrections in all. The ones that mattered most: emergency advice in the two movement plans now says to ring 999 (911 in the US) for chest pain that spreads or does not ease, where it had said 111; fraud reporting now names Report Fraud, which replaced Action Fraud in December 2025; leftovers and cooked rice in Eat Strong now follow the Food Standards Agency's shorter times; Tech Confident no longer suggests sending a family safe word by text; and Second Act describes the research on older founders as it stands. If you bought an earlier version, email us and we will send you the new one.</li>
+</ul>
+
+<h2 id="money">How the site earns money, and what money cannot buy</h2>
+<ul>
+<li><strong>Our own workbooks</strong>, sold through Gumroad.</li>
+<li><strong>Affiliate links.</strong> Some links to products earn us a commission at no cost to you. They are disclosed beside the links and in the note at the foot of every page.</li>
+<li><strong>Advertising and sponsorship.</strong> Any advertisement or sponsored item is labelled as such.</li>
+</ul>
+<p>Nobody can pay to appear in a story, to change what we write, or to be recommended. A paid listing is labelled "Sponsored" wherever it appears.</p>
+
+<h2 id="more">More about us</h2>
+<p>Why the site exists, and what it is not, is on the <a href="/about/">About page</a>. How we handle your data is on the <a href="/privacy/">Privacy page</a>.</p>
+<p class="meta">This policy was last updated on 7 October 2026.</p>
+</div>
+{% endblock %}

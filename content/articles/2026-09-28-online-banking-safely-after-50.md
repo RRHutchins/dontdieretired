@@ -66,7 +66,7 @@ Speed matters more than embarrassment.
 
 **UK.** The Financial Ombudsman says "Contact your bank or payment services provider immediately." Since 7 October 2024, banks must reimburse most victims of bank-transfer scams made by Faster Payments or CHAPS "up to a maximum of £85,000", provided you tell the bank "no more than 13 months after the last payment you made." The bank "may deduct an excess of up to £100 for each scam claim" and can refuse if you showed "gross negligence". If it refuses or stalls, complain in writing, then go to the Financial Ombudsman.
 
-Then report it. In England or Wales, Gov.uk says to contact Action Fraud online or "call 0300 123 2040"; in Scotland, "report the crime to Police Scotland." Scam texts go to 7726 — "it's free" — and scam emails to report@phishing.gov.uk.
+Then report it. In England, Wales or Northern Ireland, contact Report Fraud (which replaced Action Fraud in December 2025) at reportfraud.police.uk or on 0300 123 2040; in Scotland, report it to Police Scotland on 101. Scam texts go to 7726 — "it's free" — and scam emails to report@phishing.gov.uk.
 
 **US.** The FTC gives instructions by payment method. Debit card: "Report it to your bank or credit union immediately... Ask them to refund your money." Bank transfer or Zelle: "Ask them to reverse the payment and refund your money." Wire transfer: "Report it to the wire transfer company immediately." Gift card: "Contact the gift card issuer immediately." If you gave away personal information, "go to IdentityTheft.gov". Then "report a scammer to the FTC at ReportFraud.ftc.gov."
 
@@ -83,3 +83,5 @@ Start with [Tech confidence after 50: the complete guide](/tech/tech-confidence-
 - Bank's real number on a note by the phone; 159 saved in your mobile if you are in the UK.
 - Tell someone you trust that you will never move money on the strength of a phone call, so they can remind you.
 - Forward one old scam text to 7726 (UK) or report it at ReportFraud.ftc.gov (US), to see how easy it is.
+
+Corrected 7 October 2026: the UK's fraud reporting service is now Report Fraud, which replaced Action Fraud in December 2025.

@@ -20,7 +20,7 @@ try_this_plus:
   - "Ask for the full charges and the underlying holdings of each investment you own and question anything you cannot explain in a sentence."
   - "Give a short talk on the warning signs to a club or community group, using the official checklists from the article."
 sources:
-  - {title: "Protect yourself from scams (ScamSmart)", publisher: "FCA", date: "2026", url: "https://www.fca.org.uk/scamsmart"}
+  - {title: "Protect yourself from scams", publisher: "FCA", date: "2026", url: "https://www.fca.org.uk/consumers/protect-yourself-scams"}
   - {title: "Pension scams", publisher: "FCA", date: "2026", url: "https://www.fca.org.uk/consumers/pension-scams"}
   - {title: "How to spot a pension scam", publisher: "MoneyHelper", date: "2026", url: "https://www.moneyhelper.org.uk/en/money-troubles/scams/how-to-spot-a-pension-scam"}
   - {title: "Investment Scams", publisher: "Federal Trade Commission", date: "2026", url: "https://consumer.ftc.gov/articles/investment-scams"}
@@ -42,7 +42,7 @@ The US versions are the investment scams the FTC lists: cryptocurrency schemes t
 
 ## The warning signs
 
-The FCA's ScamSmart red flags read like a script, because they are one:
+The FCA's red flags for scams read like a script, because they are one:
 
 - **Unexpected contact**, by phone, email, text, post, social media or doorstep.
 - **Pressure to act quickly**: a bonus for signing now, or "limited availability".
@@ -99,3 +99,5 @@ Our guide to [finding lost pensions and retirement accounts](/money/finding-lost
 5. Keep the rule by the phone: hang up, check, call back.
 
 Updated 6 October 2026: added the FBI's Internet Crime Complaint Center (ic3.gov) as a second US reporting route.
+
+Corrected 7 October 2026: the FCA retired the ScamSmart name in January 2026; its pages are now 'Protect yourself from scams'.

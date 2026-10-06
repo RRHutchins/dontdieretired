@@ -30,7 +30,7 @@ const OTHERS = [
 const src = process.argv[2]; const id = path.basename(src, '.json');
 const UPF = path.join(__dirname, 'upgrade.json'); const UP = fs.existsSync(UPF) ? JSON.parse(fs.readFileSync(UPF, 'utf8')) : null;
 const MY = UP && UP.products[id];
-const C = JSON.parse(fs.readFileSync(src, 'utf8')); const T = THEMES[id] || THEMES.restart30;
+const C = JSON.parse(fs.readFileSync(src, 'utf8')); const T = THEMES[C.theme || id] || THEMES.restart30;
 fs.mkdirSync(path.join(__dirname, 'out'), { recursive: true });
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -47,6 +47,9 @@ if (blocks[0] && blocks[0].h1 && blocks[0].h1.trim() === C.title.trim()) blocks.
 const h1s = blocks.filter(b => b.h1).length;
 const isSectionHead = (b, prev) => h1s >= 3 ? !!b.h1 : (!!b.h2 && (!prev || prev.pagebreak));
 const sections = []; blocks.forEach((b, i) => { if (isSectionHead(b, blocks[i - 1])) sections.push(b.h1 || b.h2); });
+const HAS_ABOUT = !!C.version, SRC = C.sources || [];
+if (HAS_ABOUT) sections.push('About this guide');
+if (SRC.length) sections.push('Where this comes from');
 
 // ---------- block renderers ----------
 const ICON = {
@@ -84,6 +87,41 @@ function render(b, prev) {
 const bodyHtml = '<div class="sec t' + (TIGHT[0] || 0) + '">' + blocks.map((b, i) => render(b, blocks[i - 1])).join('\n') + '</div>'
   .replace(/<div class="pb"><\/div>\s*(<section class="sec-head">)/g, '$1'); // section heads break themselves
 
+// ---------- closing sections: about this guide, sources ----------
+const KIND = {
+  restart30: 'move', 'restart7-free': 'move', strong60: 'move', eatstrong: 'eat', sharp: 'think', moneyreset: 'money',
+  secondact: 'earn', reconnect: 'connect', slowtravel: 'travel', techconfident: 'tech' }[id] || 'move';
+const PRO = {
+  move:    ['doctor, physiotherapist or other registered health professional', 'general information, not medical advice', 'your GP (family doctor) or a physiotherapist'],
+  eat:     ['doctor, registered dietitian or other health professional', 'general information about food, not dietary or medical advice', 'your GP (family doctor) or a registered dietitian'],
+  think:   ['doctor, psychologist or other qualified professional', 'general information, not medical advice', 'your GP (family doctor) if you are worried about your memory'],
+  money:   ['financial adviser, accountant, solicitor or other regulated professional', 'general information, not financial, tax or legal advice', 'MoneyHelper or Pension Wise (UK), or a regulated adviser'],
+  earn:    ['accountant, solicitor, business adviser or other qualified professional', 'general information, not tax, legal or financial advice', 'an accountant, or the official pages listed, before you rely on a figure'],
+  connect: ['doctor, counsellor or other qualified professional', 'general information, not medical or psychological advice', 'your GP (family doctor) if low mood lasts'],
+  travel:  ['doctor, travel-health nurse, insurer or lawyer', 'general information, not medical, legal or insurance advice', 'the official page for your own trip, and your insurer, before you book'],
+  tech:    ['security professional, bank or lawyer', 'general information, not legal or financial advice', 'your bank on a number you already trust, if money is involved'],
+}[KIND];
+function closeHead(title) { secN++; const lvl = TIGHT[secN] || 0;
+  return `</div><section class="sec-head"><div class="sec-num">${String(secN).padStart(2, '0')}</div><h2>${title}</h2></section><div class="sec t${lvl}" data-sec="${secN}">`; }
+const shortUrl = u => u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+let aboutHtml = '', sourcesHtml = '';
+if (HAS_ABOUT) {
+  const A = C.about || {};
+  aboutHtml = closeHead('About this guide') + `<div class="about">
+  <div class="ab"><h4>Who made it</h4><p>Don't Die Retired is an independent website, dontdieretired.com, run by its founders. We are not doctors, dietitians, financial advisers or lawyers, and this guide is ${PRO[1]}.</p></div>
+  <div class="ab"><h4>The part AI played</h4><p>This guide was researched and written with AI, directed and overseen by the site's founders. The AI drafted the text, searched for the sources and compared the guide with them. You are entitled to know that, so we say it here and not in small print.</p></div>
+  <div class="ab"><h4>How it was checked</h4><p>${esc(A.checked || '')}</p></div>
+  <div class="ab warn"><h4>What has not happened</h4><p>No ${PRO[0]} has reviewed this guide. If one does, this page will give their name, their registration and the date. Until then, treat it as careful general information and check with ${PRO[2]}.</p></div>
+  <div class="ab"><h4>Version</h4><p><b>Version ${esc(C.version)}</b>, ${esc(C.reviewed)}.${A.sources_checked ? ` Sources last opened and checked on ${esc(A.sources_checked)}.` : ''}</p>${(A.changes || []).length ? `<p>What changed in this version:</p><ul class="bul">${A.changes.map(x => `<li>${md(x)}</li>`).join('')}</ul>` : ''}</div>
+  <div class="ab"><h4>Found a mistake?</h4><p>Rules, prices, phone numbers and research all change. If something here is wrong or out of date, email <b>hello@dontdieretired.com</b>. We will check it against the source, correct it and say what changed. How we work is set out at <b>dontdieretired.com/editorial-policy</b>.</p></div>
+</div>`;
+}
+if (SRC.length) {
+  const groups = []; SRC.forEach(x => { const g = x.group || 'General'; let e = groups.find(y => y[0] === g); if (!e) groups.push(e = [g, []]); e[1].push(x); });
+  sourcesHtml = closeHead('Where this comes from') + `<p class="src-intro">These are the pages and papers this guide rests on. Each one was opened and read${(C.about || {}).sources_checked ? ' on ' + esc(C.about.sources_checked) : ''}, and the guide was compared with it. Web addresses change: if one no longer works, search for the title.</p>` +
+    '<div class="srcwrap">' + groups.map(([g, xs]) => `<h3 class="src-g">${md(g)}</h3><ol class="src">${xs.map(x => `<li><div class="s1"><b>${esc(x.publisher)}</b>${x.title ? `, <i>${esc(x.title)}</i>` : ''}${x.year ? ` (${esc(x.year)})` : ''}.</div><div class="s2">${md(x.supports)}</div><a class="s3" href="${esc(x.url)}">${esc(shortUrl(x.url))}</a></li>`).join('')}</ol>`).join('') + '</div>';
+}
+
 const disclaimer = C.disclaimer || "This guide is general information, not medical advice. Check with your GP or a health professional before starting a new exercise programme, especially if you have a heart condition, high blood pressure, joint problems or have been inactive for a long time. Stop and seek advice if anything hurts.";
 
 const FONTFACE = `
@@ -119,7 +157,7 @@ h1{font-family:Fr;font-weight:900;font-size:58pt;line-height:.98;margin:8mm 0 7m
 <h1>${esc(C.title)}</h1>
 <div class="sub">${esc(C.subtitle)}</div>
 <div class="rule"></div>
-<div class="foot"><b>Printable, and written for everyone over 50</b>Whether you've always been active or never got round to it<div class="url">dontdieretired.com</div></div>
+<div class="foot"><b>Printable, with every source listed</b>Whether you've always been active or never got round to it<div class="url">dontdieretired.com</div></div>
 </div></body></html>`;
 
 // ---------- body ----------
@@ -142,6 +180,8 @@ strong{font-weight:700;color:#111}
 .how b{display:block;font-family:Fr;font-size:14.6pt;margin-bottom:1mm;color:var(--c)}
 .how span{font-size:11.5pt;color:#333}
 .disc{font-size:10pt;color:var(--muted);border-top:.6pt solid var(--line);padding-top:3mm;margin-top:6mm}
+.tightin .welcome{padding:7mm 9mm}.tightin .welcome p{font-size:12.4pt}.tightin .toc{margin-top:6mm}.tightin .toc li{padding:1.7mm 0;font-size:11.6pt}
+.tightin .how{margin-top:6mm}.tightin .how div{padding:3.6mm 4.5mm}.tightin .how span{font-size:10.6pt}.tightin .disc{margin-top:4mm;font-size:9.6pt}.tightin .kick{margin-top:6mm!important}
 /* sections */
 .sec-head{break-before:page;margin:0 0 7mm;padding:0 0 5mm;border-bottom:1.4pt solid var(--c);display:flex;align-items:flex-end;gap:5mm}
 .sec-num{font-family:Fr;font-weight:900;font-size:40pt;line-height:.8;color:var(--c)}
@@ -193,6 +233,21 @@ td.blank{background:#fff!important}
 .dtick{display:flex;align-items:center;gap:2mm}
 .circle{flex:0 0 7mm;height:7mm;border:1.4pt solid var(--c);border-radius:50%}
 .line{flex:1;border-bottom:.8pt solid var(--line);height:6mm}
+/* about this guide + sources */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.ab{border:.8pt solid var(--line);border-radius:4mm;padding:4.2mm 5.4mm;break-inside:avoid}
+.ab h4{margin:0 0 1.6mm;font-family:Fr;font-size:14pt;color:var(--c)}
+.ab p{margin:0 0 1.4mm;font-size:11pt;line-height:1.45}
+.ab ul.bul{margin:1mm 0 0}.ab ul.bul li{font-size:10.6pt;margin-bottom:1mm}
+.ab.warn{background:#FCEDEA;border-color:#EBC7C1}.ab.warn h4{color:#8E2433}
+.src-intro{font-size:11.5pt;color:#333}
+.srcwrap{columns:2;column-gap:9mm}
+h3.src-g{font-size:12pt;margin:0 0 1mm;padding-top:4mm;break-after:avoid}.srcwrap h3.src-g:first-child{padding-top:0}
+ol.src{list-style:none;margin:0;padding:0;counter-reset:none}
+ol.src li{padding:2mm 0 2.2mm;border-bottom:.6pt solid var(--line);break-inside:avoid}
+.s1{font-size:10.9pt;line-height:1.4}.s1 b{font-weight:700}
+.s2{font-size:10.4pt;line-height:1.4;color:#333;margin-top:.5mm}
+.s3{display:block;font-size:10pt;line-height:1.35;color:var(--c);text-decoration:none;word-break:break-all;margin-top:.6mm}
 /* back page */
 .back{break-before:page;min-height:258mm;display:flex;flex-direction:column}
 .back .panel{background:var(--c);color:#FFFDF9;border-radius:5mm;padding:11mm 11mm}
@@ -214,15 +269,15 @@ td.blank{background:#fff!important}
 .sign b{font-family:Fr;font-size:14pt}.sign i{color:var(--c)}
 .sign span{display:block;font-size:10.5pt;color:var(--muted)}
 </style></head><body>
-<section class="inside">
-  <div class="welcome"><div class="kick">Welcome</div><h2>${esc(C.title)}</h2><p>${esc(C.subtitle)}. Retirement is a word for leaving a job, not a description of a person — and this ${esc(C.kind.toLowerCase())} is written for anyone over 50 who wants to do more, not less, whether you've always been active or never got round to it.</p></div>
+<section class="inside${(sections.length > 9 || disclaimer.length > 330) ? ' tightin' : ''}">
+  <div class="welcome"><div class="kick">Welcome</div><h2>${esc(C.title)}</h2><p>${esc(C.subtitle)}. Retirement is a word for leaving a job, not a description of a person — and this ${esc(C.kind.toLowerCase())} is written for anyone who wants to do more, not less, whether you've always been active or never got round to it.</p></div>
   <div><div class="kick" style="margin-top:9mm">Inside</div><ol class="toc">${sections.map((s, i) => `<li><span class="n">${String(i + 1).padStart(2, '0')}</span><span>${md(s)}</span></li>`).join('')}</ol></div>
   <div class="how"><div><b>Print it</b><span>It's made for paper. Pin the tracker pages somewhere you'll see them every day.</span></div><div><b>Start small</b><span>Every plan has a beginner's route. Doing a little, often, beats doing a lot once.</span></div><div><b>Tick the box</b><span>A row of ticks is surprisingly powerful. It's how a habit becomes part of your life.</span></div></div>
-  <p class="disc">${esc(disclaimer)} © Don't Die Retired. For personal use; please don't share or resell. Thank you for supporting an independent project.</p>
+  <p class="disc">${HAS_ABOUT ? `<b>Version ${esc(C.version)}, ${esc(C.reviewed)}.</b> Who made this guide, the part AI played and every source are set out in the last pages. ` : ''}${esc(disclaimer)} © Don't Die Retired. For personal use; please don't share or resell. Thank you for supporting an independent project.</p>
 </section>
-${bodyHtml}
+${bodyHtml.replace(/<\/div>$/, '')}${aboutHtml}${sourcesHtml}</div>
 <section class="back">
-  <div class="panel"><div class="kick">Keep going</div><h2>This is the start, not the finish.</h2><p>Every day at <b>dontdieretired.com</b> we publish a true story of someone who began something late — and the plan behind it. Join the free Sunday email and you'll get one story, one idea and one thing to try each week.</p></div>
+  <div class="panel"><div class="kick">Keep going</div><h2>This is the start, not the finish.</h2><p>Every day at <b>dontdieretired.com</b> we publish a true story of someone who began something late — and the plan behind it. New guides appear there too, and you can join the free email list at <b>dontdieretired.com/newsletter</b>.</p></div>
   ${MY ? `<div class="upgrade"><div class="up-l"><div class="kick" style="color:var(--acc)">Your purchase counts in full</div><h3 class="up-h">Get the other eight plans for £${MY.upgrade}</h3><p>You've paid £${MY.paid} for this plan. We take that off the Everything bundle, so the rest of the shelf, worth £${MY.others_value} bought separately, is yours for <b>£${MY.upgrade}</b>. You'll also get every new plan we publish for a year.</p><p class="up-small">Bought more than one plan? Reply to your receipt and we'll credit everything you've paid.</p></div><a class="up-r" href="${MY.url}"><div class="up-price">£${MY.upgrade}</div><div class="up-was">instead of £${UP.bundle_price}</div><div class="up-link">${esc(MY.url.replace('https://', ''))}</div><div class="up-code">or use code <b>${MY.code}</b></div></a></div>` : ''}
   <div class="kick" style="margin-top:8mm">More from the shelf</div>
   <div class="shelf">${OTHERS.filter(o => o[0] !== C.title).slice(0, 6).map(o => `<div><b>${esc(o[0])}</b><span>${esc(o[1])}</span></div>`).join('')}</div>

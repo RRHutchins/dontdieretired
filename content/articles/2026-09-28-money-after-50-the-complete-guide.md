@@ -27,7 +27,7 @@ sources:
   - {title: "About us", publisher: "MoneyHelper", date: "2026", url: "https://www.moneyhelper.org.uk/en/about-us"}
   - {title: "Do you need a financial adviser?", publisher: "MoneyHelper", date: "2026", url: "https://www.moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser"}
   - {title: "Retirement", publisher: "Consumer Financial Protection Bureau", date: "2026", url: "https://www.consumerfinance.gov/consumer-tools/retirement/"}
-  - {title: "Protect yourself from scams (ScamSmart)", publisher: "FCA", date: "2026", url: "https://www.fca.org.uk/scamsmart"}
+  - {title: "Protect yourself from scams", publisher: "FCA", date: "2026", url: "https://www.fca.org.uk/consumers/protect-yourself-scams"}
   - {title: "Pension scams", publisher: "FCA", date: "2026", url: "https://www.fca.org.uk/consumers/pension-scams"}
   - {title: "Check Out Your Investment Professional", publisher: "SEC Investor.gov", date: "2026", url: "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/check-out-your-investment-professional"}
 ---
@@ -81,7 +81,7 @@ Guidance, note, is not advice. It explains your options; it does not recommend a
 
 ## Scams: the one rule
 
-People over 50 are targeted because they have the pensions. The FCA (the UK's financial regulator) puts it plainly: "If you get a call out of the blue (a cold call) about your pension, the safest thing to do is hang up. It's illegal and probably a scam." Its ScamSmart pages list the signs — unexpected contact, pressure to act quickly, promises of high returns, claims that you have been specially selected — and its first recommended step is to check the firm on the FCA's own register and make sure the contact details match the ones you were given.
+People over 50 are targeted because they have the pensions. The FCA (the UK's financial regulator) puts it plainly: "If you get a call out of the blue (a cold call) about your pension, the safest thing to do is hang up. It's illegal and probably a scam." Its 'Protect yourself from scams' pages list the signs — unexpected contact, pressure to act quickly, promises of high returns, claims that you have been specially selected — and its first recommended step is to check the firm with the FCA's own Firm Checker or register and make sure the contact details match the ones you were given.
 
 The US equivalent is to check any investment professional on the SEC's IAPD or FINRA's BrokerCheck, which are free. Investor.gov notes that much investment fraud is committed by unlicensed, unregistered people.
 
@@ -116,3 +116,5 @@ You do not need to solve retirement this week. You need to see it.
 5. Decide which of the big questions is actually yours right now — and give it a month, not an afternoon.
 
 The rest of the Money section takes each of these further. Start with whichever one is keeping you up at night.
+
+Corrected 7 October 2026: the FCA retired the ScamSmart name in January 2026; its pages are now 'Protect yourself from scams' and its checking tool is the FCA Firm Checker.
