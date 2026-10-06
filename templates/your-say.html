@@ -67,4 +67,4 @@
 
 <p class="disclosure say-privacy">No sign-in and no cookies. Your browser keeps a random number so you can't vote twice; we never store your IP address. We only keep your email if you type it in, and only to reply to you. <a href="/privacy/">Privacy</a>.</p>
 {% endblock %}
-{% block scripts %}<script>window.DDR_SAY = {api: {{ cfg.feedback.endpoint | tojson }}};</script><script src="/static/say.js" defer></script>{% endblock %}
+{% block scripts %}<script>window.DDR_SAY = {api: {{ cfg.feedback.endpoint | tojson }}};</script><script src="/static/say.js?v={{ asset_v }}" defer></script>{% endblock %}

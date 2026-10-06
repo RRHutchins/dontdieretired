@@ -359,6 +359,13 @@ def build(make_social=True):
     env.globals.update(cfg=cfg, now=dt.date.today(), videos=videos, products=products,
                        articles=arts, categories=cfg["categories"], segments=cfg["audience_segments"], local=local)
 
+    # version stamp on the stylesheet and scripts, so a returning reader never gets a new page with last week's CSS
+    import hashlib
+    _h = hashlib.sha1()
+    for f in sorted(STATIC.glob("*.css")) + sorted(STATIC.glob("*.js")):
+        _h.update(f.read_bytes())
+    env.globals.update(asset_v=_h.hexdigest()[:8])
+
     def out(path: str, tpl: str, **ctx):
         p = DIST / path.strip("/") / "index.html" if path != "/" else DIST / "index.html"
         p.parent.mkdir(parents=True, exist_ok=True)

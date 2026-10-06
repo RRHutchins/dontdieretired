@@ -21,7 +21,7 @@
 {% from "_macros.html" import profile_form %}{% block head %}{% endblock %}
 <link rel="preload" href="/static/fonts/fraunces-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/static/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/style.css?v={{ asset_v }}">
 {% if cfg.analytics.plausible_script_id %}<!-- Privacy-friendly analytics by Plausible -->
 <script async src="https://plausible.io/js/{{ cfg.analytics.plausible_script_id }}.js"></script>
 <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>{% endif %}
@@ -133,7 +133,7 @@ window.DDR = {
   experiences: {viator: {{ (cfg.affiliates.viator_pid or '') | tojson }}, getyourguide: {{ (cfg.affiliates.getyourguide_partner_id or '') | tojson }}}
 };
 </script>
-<script src="/static/app.js" defer></script>
+<script src="/static/app.js?v={{ asset_v }}" defer></script>
 {% block scripts %}{% endblock %}
 </body>
 </html>
