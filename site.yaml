@@ -37,7 +37,11 @@ affiliates:
 newsletter:
   provider: "buttondown"                     # buttondown | beehiiv | mailerlite | kit
   form_action: "https://buttondown.com/api/emails/embed-subscribe/dontdieretired"
+  # sending: false until an edition is actually going out every week (RUNBOOK §3). While false the site says
+  # "email list" and makes no weekly promise; set true only after the first edition has been sent and the next is scheduled.
+  sending: false
   list_name: "The Second Start — free weekly email"
+  list_name_pending: "The Second Start — our free email list"
   lead_magnet: "Free: the 7-Day Restart Plan (PDF)"
   paid_tier_url: ""                          # Buttondown/Beehiiv paid subscription link
   paid_tier_price: "£4/month"

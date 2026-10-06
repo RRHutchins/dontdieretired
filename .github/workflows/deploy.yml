@@ -19,6 +19,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: sudo apt-get install -y fonts-dejavu-core && pip install -r requirements.txt
+      # asks YouTube about every film; build.py leaves off any it cannot confirm (result is an annotation on this job)
+      - run: python verify_videos.py
       - run: python build.py --no-social
       - uses: actions/upload-pages-artifact@v3
         with:

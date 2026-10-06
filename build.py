@@ -333,6 +333,13 @@ def write_sitemap(urls, cfg):
 def build(make_social=True):
     cfg = load_yaml(ROOT / "site.yaml")
     videos = load_yaml(CONTENT / "videos.yaml").get("videos", [])
+    # The deploy workflow runs verify_videos.py first; a film YouTube does not confirm is left off the page.
+    _vc = ROOT / ".videos_check.json"
+    if _vc.exists():
+        _res = json.loads(_vc.read_text(encoding="utf-8"))
+        _held = [v["id"] for v in videos if not _res.get(v["id"], {}).get("show", True)]
+        videos = [v for v in videos if v["id"] not in _held]
+        if _held: print("Videos held back (not verified with YouTube):", ", ".join(_held))
     products = load_yaml(CONTENT / "products.yaml")
     local = load_yaml(CONTENT / "local.yaml") if (CONTENT / "local.yaml").exists() else {"regions": {}, "activities": {}}
     arts = load_articles(cfg)

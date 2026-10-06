@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-{% block title %}Free weekly email — {{ cfg.site.name }}{% endblock %}
-{% block description %}One real story and one thing to try, every week. Free, with a paid tier for those who want more.{% endblock %}
+{% block title %}{{ "Free weekly email" if cfg.newsletter.sending else "Free email list" }} — {{ cfg.site.name }}{% endblock %}
+{% block description %}{% if cfg.newsletter.sending %}One real story and one thing to try, every week.{% else %}One real story and one thing to try, by email. Starting soon.{% endif %} Free, with a paid tier for those who want more.{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Newsletter</p><h1>{{ cfg.newsletter.list_name }}</h1><p class="lead">Every Sunday morning: one real story, one thing to try, one thing to read. No spam. Unsubscribe in one click.</p></header>
+<header class="page-head"><p class="kicker">Newsletter</p><h1>{{ cfg.newsletter.list_name if cfg.newsletter.sending else cfg.newsletter.list_name_pending }}</h1><p class="lead">{% if cfg.newsletter.sending %}Every Sunday morning: one real story, one thing to try, one thing to read.{% else %}Our email is starting soon: one real story, one thing to try, one thing to read. Join now and you will get the first edition.{% endif %} No spam. Unsubscribe in one click.</p></header>
 <div class="two-col">
   <div class="tier">
     <h2>Free</h2><p class="price">£0</p>
-    <ul><li>The weekly email</li><li>{{ cfg.newsletter.lead_magnet }} — <a href="/static/downloads/7-Day-Restart-Plan.pdf">preview it</a></li><li>First look at new challenges</li></ul>
+    <ul><li>{{ "The weekly email" if cfg.newsletter.sending else "Our email, from the first edition" }}</li><li>{{ cfg.newsletter.lead_magnet }} — <a href="/static/downloads/7-Day-Restart-Plan.pdf">preview it</a></li><li>First look at new challenges</li></ul>
     <form class="nl-form nl-form-page" action="{{ cfg.newsletter.form_action }}" method="post" target="_blank" data-nl>
       <input type="email" name="email" placeholder="you@example.com" required aria-label="Email">
       <button class="btn" type="submit">Join free</button>

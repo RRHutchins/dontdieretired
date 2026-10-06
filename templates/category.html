@@ -61,8 +61,8 @@
 {% if picks %}<section class="cat-kit">{{ affiliate_box(picks, "Kit that helps with " ~ (c.label if cid == "ai" else c.label | lower)) }}</section>{% endif %}
 
 <aside class="promo promo-members">
-  <p class="kicker">{{ cfg.newsletter.list_name }}</p>
-  <h4>One practical idea a week, free</h4>
+  <p class="kicker">{{ cfg.newsletter.list_name if cfg.newsletter.sending else cfg.newsletter.list_name_pending }}</p>
+  <h4>{{ "One practical idea a week, free" if cfg.newsletter.sending else "Practical ideas by email, free. Starting soon." }}</h4>
   <p>{{ cfg.newsletter.lead_magnet }} when you join.</p>
   <a class="btn btn-small" href="/newsletter/">Sign up</a>
 </aside>

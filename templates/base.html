@@ -45,7 +45,7 @@
       <a href="/shop/" {% if path.startswith('/shop/') %}aria-current="page"{% endif %}>Shop</a>
     </nav>
     <div class="header-cta">
-      <a class="btn btn-small" href="/newsletter/"><span class="hide-sm">Free weekly email</span><span class="show-sm">Email</span></a>
+      <a class="btn btn-small" href="/newsletter/"><span class="hide-sm">{{ "Free weekly email" if cfg.newsletter.sending else "Join the email list" }}</span><span class="show-sm">Email</span></a>
       <a class="icon-btn" href="/search/" aria-label="Search">⌕</a>
     </div>
   </div>
@@ -58,8 +58,8 @@
 <section class="wrap newsletter-band" id="newsletter">
   <div class="nl-inner">
     <div>
-      <h2>{{ cfg.newsletter.list_name }}</h2>
-      <p>One real story, one thing to try, every week. {{ cfg.newsletter.lead_magnet }} when you join.</p>
+      <h2>{{ cfg.newsletter.list_name if cfg.newsletter.sending else cfg.newsletter.list_name_pending }}</h2>
+      <p>{% if cfg.newsletter.sending %}One real story, one thing to try, every week.{% else %}Our email is starting soon: one real story and one thing to try. Join now to get the first one.{% endif %} {{ cfg.newsletter.lead_magnet }} when you join.</p>
     </div>
     <form class="nl-form" action="{{ cfg.newsletter.form_action }}" method="post" target="_blank" data-nl>
       <label class="sr-only" for="nl-email">Email address</label>

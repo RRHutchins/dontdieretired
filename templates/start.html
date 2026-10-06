@@ -9,7 +9,7 @@
   <div data-plan></div>
   <h3>Stories picked for you</h3>
   <div class="grid grid-3" data-for-you></div>
-  <p><a class="btn" href="/newsletter/">Get the weekly email that matches your answers</a></p>
+  <p><a class="btn" href="/newsletter/">{{ "Get the weekly email that matches your answers" if cfg.newsletter.sending else "Join the email list that matches your answers" }}</a></p>
 </section>
 <section class="two-col">
   <div class="prose">

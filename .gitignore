@@ -11,3 +11,6 @@ products/pdf/*
 # puzzle book output (for sale; this repo is public)
 books/out/
 __pycache__/
+
+# written by verify_videos.py in the deploy workflow
+.videos_check.json

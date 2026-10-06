@@ -161,7 +161,7 @@
       <div class="row"><input type="time" id="rtime" value="${S.remind || '09:30'}" style="font:inherit;padding:12px;border-radius:12px;border:2px solid var(--line);min-height:56px"><button class="btn small" data-action="ics">Add to calendar</button></div></div>
     <div class="card"><h3>Text size</h3><div class="row">${['Normal', 'Large', 'Largest'].map((l, i) => `<button class="btn small ${S.size == i ? '' : 'ghost'}" data-action="size" data-v="${i}">${l}</button>`).join('')}</div></div>
     <div class="card"><h3>Already bought a plan?</h3><p class="muted">In the full app, you'll unlock it here with the licence key from your receipt. For now, your PDF is in your email.</p></div>
-    <div class="card"><a class="btn ghost small" href="/">Read the stories on dontdieretired.com</a><div style="height:10px"></div><a class="btn ghost small" href="/newsletter/">Get the Sunday email</a></div>
+    <div class="card"><a class="btn ghost small" href="/">Read the stories on dontdieretired.com</a><div style="height:10px"></div><a class="btn ghost small" href="/newsletter/">Join the email list</a></div>
     <div class="card"><p class="muted" style="font-size:.8em">Your progress is saved on this phone only. This is general information, not medical advice: check with your GP before starting a new exercise programme, and stop if anything hurts.</p><button class="btn ghost small" data-action="reset">Reset my progress</button></div>`;
   }
 
