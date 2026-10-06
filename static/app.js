@@ -272,7 +272,7 @@
   if (friendVisit) {
     // One slim line at the top, in the page flow (never an overlay), closable, and it stays closed.
     const main = $('#main');
-    if (main && !store.get('ddr_friend_closed')) {
+    if (main && !store.get('ddr_friend_closed') && !qs.get('do')) {   // an invite to a challenge shows its own line instead (list.js)
       const bar = document.createElement('div');
       bar.className = 'friend-bar';
       bar.innerHTML = '<p>A friend thought you\'d like this. If they were right, <a href="/newsletter/">one story like it arrives by email each week</a>, free, with our 7-Day Restart Plan.</p><button type="button" aria-label="Close this message">×</button>';

@@ -1,0 +1,2445 @@
+# Fifty at Fifty: the challenge catalogue (/list/). RUNBOOK §6h.
+# RULES: an id is permanent (readers' saved lists point at it): never change or reuse one. Every link was fetched
+# on its `checked` date and found to be what the label says. No event dates or prices. `why` leads with what is
+# interesting and never mentions age. Optional: guide / story (article slugs), local (content/local.yaml id), season, safety.
+- id: paras-10
+  title: Take on the PARAS' 10
+  category: move
+  kind: event
+  effort: demanding
+  cost: low
+  time: months
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  why: This 10-mile endurance race is based on the 10 miler from The Parachute Regiment's P Company test week, and it is open to the public. You can run it, or enter the TAB and cover the same course in boots carrying a 35lb pack.
+  start:
+  - Read the official site and choose between the Run, the TAB and the canicross category.
+  - Pick a live event such as Catterick, or the virtual option, and enter online.
+  - Build up to ten miles on hilly ground, adding boots and a loaded pack gradually if you choose the TAB.
+  links:
+  - label: PARAS' 10 official site (run by SUPPORT OUR PARAS)
+    url: https://www.paras10.com/
+    region: uk
+    checked: '2026-10-06'
+- id: kitesurfing-lesson
+  title: Take a kitesurfing lesson
+  category: move
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: afternoon
+  setting: outdoors
+  company: others
+  season: Spring to autumn in the UK
+  regions:
+  - anywhere
+  why: Flying a power kite on a beach teaches you to read the wind in a way few other sports do. A first lesson covers kite control and safety on the sand before you go near a board.
+  start:
+  - Contact British Kitesports or look up an IKO centre to find a recognised school near a beach you can reach.
+  - Book a beginner lesson and ask what kit and wetsuit the school provides.
+  - Keep a second date free, as lessons move when the wind does not cooperate.
+  links:
+  - label: British Kitesports Association (UK governing body)
+    url: https://www.britishkitesports.org/
+    region: uk
+    checked: '2026-10-06'
+  - label: International Kiteboarding Organization (IKO)
+    url: https://www.ikointl.com/
+    region: any
+    checked: '2026-10-06'
+  safety: Learn with a recognised school rather than teaching yourself, as kites generate serious power in strong wind.
+- id: indoor-climbing
+  title: Try indoor rock climbing
+  category: move
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Every route on a climbing wall is a puzzle you solve with your whole body, and the grades let you start very gently. Walls are sociable places where strangers happily share how they got up a tricky section.
+  start:
+  - Use the BMC or USA Climbing finder to locate a wall or gym near you.
+  - Book a taster or induction session, which includes shoe and harness hire at most walls.
+  - Start on the easiest bouldering or top-rope routes and climb down as well as up.
+  links:
+  - label: BMC climbing wall finder
+    url: https://services.thebmc.co.uk/climbing-wall-finder
+    region: uk
+    checked: '2026-10-06'
+  - label: BMC indoor climbing guide
+    url: https://www.thebmc.co.uk/indoor-climbing
+    region: uk
+    checked: '2026-10-06'
+  - label: USA Climbing gym finder
+    url: https://usaclimbing.org/visit-your-local-climbing-gym/
+    region: us
+    checked: '2026-10-06'
+- id: climb-ben-nevis
+  title: Climb Ben Nevis
+  category: move
+  kind: experience
+  effort: demanding
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Summer for a first ascent
+  regions:
+  - uk
+  why: It is the highest mountain in the UK, and the Mountain Track takes you from the glen floor to the summit plateau on foot. Standing on top means there is nowhere higher to go in these islands.
+  start:
+  - Read Mountaineering Scotland's Ben Nevis guide and note the six to nine hours it suggests.
+  - Do two or three long hill days first, carrying the pack you plan to take.
+  - Check the mountain weather forecast and start early from the Glen Nevis visitor centre.
+  links:
+  - label: 'Mountaineering Scotland: Ben Nevis guide'
+    url: https://www.mountaineering.scot/activities/hillwalking/ben-nevis
+    region: uk
+    checked: '2026-10-06'
+  safety: Carry a map and compass and know how to use them, as the summit can be cold, cloudy and snow-covered even in summer.
+- id: climb-yr-wyddfa
+  title: Climb Yr Wyddfa (Snowdon)
+  category: move
+  kind: experience
+  effort: demanding
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Late spring to early autumn
+  regions:
+  - uk
+  why: The highest mountain in Eryri National Park has several distinct paths to the top, so you can choose a route that suits you. On a clear day the view runs from the mountains to the sea.
+  start:
+  - Read the Eryri National Park Authority page and choose a path that matches your experience.
+  - Plan how you will reach the start, as car parks such as Pen y Pass fill early.
+  - Check the forecast and the park's ground conditions report the day before you go.
+  links:
+  - label: 'Eryri National Park Authority: Yr Wyddfa'
+    url: https://eryri.gov.wales/visit/yr-wyddfa/
+    region: uk
+    checked: '2026-10-06'
+  safety: Read the park's safety advice and turn back if the weather closes in.
+- id: climb-scafell-pike
+  title: Climb Scafell Pike
+  category: move
+  kind: experience
+  effort: demanding
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Late spring to early autumn
+  regions:
+  - uk
+  why: England's highest mountain rises straight out of Wasdale, one of the quietest and most dramatic valleys in the Lake District. The Hollow Stones route is the most direct way up, and it is rough and rocky enough to feel like a proper mountain day.
+  start:
+  - Read the National Trust's Hollow Stones route description from Wasdale.
+  - Practise on a couple of smaller Lakeland fells with a map and compass.
+  - Pick a settled day, start early from Wasdale and allow plenty of time for the descent.
+  links:
+  - label: 'National Trust: Scafell Pike via Hollow Stones route'
+    url: https://www.nationaltrust.org.uk/wasdale/trails/scafell-pike-via-hollowstones-route
+    region: uk
+    checked: '2026-10-06'
+  safety: The summit plateau is stony and confusing in cloud, so carry a map and compass and be ready to turn round.
+- id: hike-half-dome
+  title: Hike to the top of Half Dome
+  category: move
+  kind: experience
+  effort: demanding
+  cost: mid
+  time: months
+  setting: outdoors
+  company: either
+  season: Summer, when the cables are up
+  regions:
+  - us
+  why: Yosemite's most recognisable summit is reached by a 14 to 16 mile round trip with 4,800 feet of climbing. The last 400 feet go up bare granite between two steel cables, which is unlike anything else on a walking route.
+  start:
+  - Read the National Park Service Half Dome page and its permit page in full.
+  - Apply for a day-hike permit through the preseason lottery, or try the daily lottery.
+  - Train with long hill days, as most hikers take ten to twelve hours.
+  links:
+  - label: 'National Park Service: Half Dome day hike'
+    url: https://www.nps.gov/yose/planyourvisit/halfdome.htm
+    region: us
+    checked: '2026-10-06'
+  - label: 'National Park Service: Half Dome permits'
+    url: https://www.nps.gov/yose/planyourvisit/hdpermits.htm
+    region: us
+    checked: '2026-10-06'
+  safety: Stay off the cables if the rock is wet or a storm is near.
+- id: hike-mount-whitney
+  title: Hike to the summit of Mount Whitney
+  category: move
+  kind: experience
+  effort: demanding
+  cost: mid
+  time: year
+  setting: outdoors
+  company: either
+  season: July to late September, when the trail is usually free of snow
+  regions:
+  - us
+  why: The trail from Whitney Portal gains more than 6,200 feet to a summit that is also the southern end of the John Muir Trail. When it is free of snow the Forest Service describes it as non-technical but strenuous, so it is a walk rather than a climb.
+  start:
+  - Read the Inyo National Forest page for Mount Whitney and its permit rules.
+  - Enter the permit lottery on Recreation.gov, choosing day use or an overnight trip.
+  - Spend time walking at altitude beforehand and build up to very long days.
+  links:
+  - label: 'US Forest Service: Mount Whitney (Inyo National Forest)'
+    url: https://www.fs.usda.gov/r05/inyo/wilderness/mount-whitney
+    region: us
+    checked: '2026-10-06'
+  safety: Outside the snow-free season this becomes a mountaineering route that needs specialist skills and equipment.
+- id: hike-mount-washington
+  title: Hike up Mount Washington, New Hampshire
+  category: move
+  kind: experience
+  effort: demanding
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Summer and early autumn
+  regions:
+  - us
+  why: The highest of New Hampshire's White Mountains has a staffed weather observatory on its summit and a reputation for some of the wildest weather in the country. Reaching the top on foot on a clear day is a real prize.
+  start:
+  - Choose a trail with a current guidebook or map and work out your turnaround time.
+  - Read the Mount Washington Observatory's Higher Summits Forecast on the morning of your hike.
+  - Pack warm layers, shelter, food and water, whatever the valley weather looks like.
+  links:
+  - label: 'Mount Washington Observatory: Higher Summits Forecast'
+    url: https://mountwashington.org/weather/higher-summits-forecast/
+    region: us
+    checked: '2026-10-06'
+  safety: Mountain weather here changes fast and can be extreme, so be willing to turn back.
+- id: walk-coast-to-coast
+  title: Walk the Coast to Coast Path
+  category: move
+  kind: project
+  effort: demanding
+  cost: high
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Late spring to early autumn
+  regions:
+  - uk
+  why: This 190-mile National Trail crosses England from St Bees on the Irish Sea to Robin Hood's Bay on the North Sea. It passes through three national parks, the Lake District, the Yorkshire Dales and the North York Moors, so the scenery changes every few days.
+  start:
+  - Read the National Trails page and decide between one continuous walk and several shorter trips.
+  - Sketch daily stages you are comfortable with and book accommodation well ahead.
+  - Walk two long days back to back with your full pack before you set off.
+  links:
+  - label: 'National Trails: Coast to Coast Path'
+    url: https://www.nationaltrail.co.uk/en_GB/trails/coast-to-coast/
+    region: uk
+    checked: '2026-10-06'
+  safety: The Lake District stages cross high fells, so carry a map and compass and check the forecast each morning.
+  guide: walking-holidays-for-beginners-after-50
+- id: walk-west-highland-way
+  title: Walk the West Highland Way
+  category: move
+  kind: project
+  effort: demanding
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Late spring to early autumn
+  regions:
+  - uk
+  why: The route runs 96 miles from Milngavie, on the edge of Glasgow, to Fort William in the Highlands. You walk out of a city suburb and finish at the foot of the UK's highest mountain.
+  start:
+  - Use the official West Highland Way website to plan your stages.
+  - Book beds or campsites along the route before fixing your travel.
+  - Break in your boots on consecutive long walks close to home.
+  links:
+  - label: Official West Highland Way website
+    url: https://www.westhighlandway.org/
+    region: uk
+    checked: '2026-10-06'
+  guide: walking-holidays-for-beginners-after-50
+- id: appalachian-trail-section
+  title: Hike a section of the Appalachian Trail
+  category: move
+  kind: project
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - us
+  why: The Appalachian Trail runs for more than 2,190 miles from Georgia to Maine, and you can sample it as a day hike or a few nights out. Section hikers piece the whole trail together over many years, one stretch at a time.
+  start:
+  - Use the Appalachian Trail Conservancy's hiking pages to pick a state and a section.
+  - Choose a stretch with road access at both ends and arrange a lift or shuttle.
+  - Start with a day hike or one night out before planning anything longer.
+  links:
+  - label: 'Appalachian Trail Conservancy: Hike the A.T.'
+    url: https://appalachiantrail.org/explore/hike-the-a-t/
+    region: us
+    checked: '2026-10-06'
+  - label: 'National Park Service: Appalachian National Scenic Trail'
+    url: https://www.nps.gov/appa/index.htm
+    region: us
+    checked: '2026-10-06'
+  safety: Tell someone your route and when you expect to finish, as much of the trail is remote.
+- id: parkrun
+  title: Do a parkrun
+  category: move
+  kind: event
+  effort: moderate
+  cost: free
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - anywhere
+  why: parkrun is a free, weekly, timed 5km held in parks around the world and open to everyone. You can run, jog or walk it, and you get a time to beat the next week.
+  start:
+  - Find your nearest event on the parkrun website and register once to get your barcode.
+  - Turn up a little early for the first-timers' welcome and bring your barcode.
+  - Go at your own pace and collect a finish token at the end.
+  links:
+  - label: parkrun
+    url: https://www.parkrun.com/
+    region: any
+    checked: '2026-10-06'
+  guide: how-to-get-active-after-50
+- id: open-water-swim
+  title: Swim in open water
+  category: move
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: others
+  season: Summer for a first swim
+  regions:
+  - anywhere
+  why: Swimming in a lake, river or the sea is a completely different experience from following a black line in a pool. You notice the water, the weather and the light in a way you never do indoors.
+  start:
+  - Read the Outdoor Swimming Society's getting started advice for the kind of water you have in mind.
+  - Choose a supervised venue or lifeguarded beach and go with someone who has swum there before.
+  - Get in slowly, stay close to the shore and keep your first swim short.
+  links:
+  - label: Outdoor Swimming Society
+    url: https://www.outdoorswimmingsociety.com/
+    region: uk
+    checked: '2026-10-06'
+  safety: Cold water affects breathing and strength quickly, so enter gradually and never swim alone.
+  story: amy-gubser-golden-gate-farallon-swim-55
+  guide: swimming-and-cycling-after-50
+- id: ride-a-sportive
+  title: Ride a sportive
+  category: move
+  kind: event
+  effort: demanding
+  cost: low
+  time: months
+  setting: outdoors
+  company: either
+  season: Spring to autumn
+  regions:
+  - uk
+  why: A sportive is a signposted, non-competitive road ride with feed stops, so you can take on a long route without navigating or carrying everything yourself. Most offer several distances, and British Cycling grades events so you can judge the difficulty beforehand.
+  start:
+  - Browse British Cycling's sportives page and read its guide to sportive grading.
+  - Enter the shortest route at an event within easy reach of home.
+  - Build your longest ride up steadily and practise eating and drinking on the bike.
+  links:
+  - label: 'British Cycling: sportives'
+    url: https://www.britishcycling.org.uk/sportives
+    region: uk
+    checked: '2026-10-06'
+  story: craig-johnston-record-ride-across-australia
+- id: masters-swimming
+  title: Join a masters swimming session
+  category: move
+  kind: habit
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Masters swimming is coached, structured swimming for adults, whether you want to race or simply swim better lengths. A coach on poolside and a lane of people at your pace make an hour in the water far more interesting.
+  start:
+  - Find a club through Swim England's Masters hub or the U.S. Masters Swimming club finder.
+  - Email the coach, say how far you can swim now and ask for a trial session.
+  - Go along, start in the slowest lane and ask what the session shorthand means.
+  links:
+  - label: Swim England Masters hub
+    url: https://www.swimming.org/masters/
+    region: uk
+    checked: '2026-10-06'
+  - label: U.S. Masters Swimming club finder
+    url: https://www.usms.org/clubs
+    region: us
+    checked: '2026-10-06'
+  story: betty-brussel-99-three-world-records
+  guide: swimming-and-cycling-after-50
+- id: walking-football
+  title: Play a game of walking football
+  category: move
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: either
+  company: others
+  regions:
+  - uk
+  why: 'It is small-sided football with one firm rule: no running, so one foot must be on the ground at all times. Passing and positioning matter more than pace, and the game is non-contact.'
+  start:
+  - Search the Walking Football Association's club directory for a session near you.
+  - Message the organiser and ask to join a taster game.
+  - Turn up in trainers and shin pads and expect to be put straight into a team.
+  links:
+  - label: Walking Football Association
+    url: https://www.thewfa.co.uk/
+    region: uk
+    checked: '2026-10-06'
+  - label: WFA club directory
+    url: https://thewfa.co.uk/club-directory/
+    region: uk
+    checked: '2026-10-06'
+  story: sandra-riley-walking-football-northampton-56
+- id: first-triathlon
+  title: Complete your first triathlon
+  category: move
+  kind: event
+  effort: demanding
+  cost: mid
+  time: months
+  setting: outdoors
+  company: either
+  season: Late spring to early autumn
+  regions:
+  - uk
+  - us
+  why: Swim, bike and run in one go, with the clock running through the changeovers. Training for three sports keeps the weeks varied, and short local events are designed as a way in.
+  start:
+  - Look at British Triathlon's GO TRI introduction or USA Triathlon's Get Racing guide.
+  - Choose a short local event with a pool swim and enter it.
+  - Practise each discipline weekly, then try a bike ride followed straight away by a short run.
+  links:
+  - label: British Triathlon
+    url: https://www.britishtriathlon.org/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'USA Triathlon: Get Racing'
+    url: https://www.usatriathlon.org/get-racing
+    region: us
+    checked: '2026-10-06'
+  story: natalie-grabow-oldest-woman-ironman-80
+- id: learn-to-row
+  title: Take a Learn to Row course
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Rowing is a rare sport where a whole crew has to move as one, and you feel it the moment the boat runs smoothly. British Rowing says most courses run over six weekly sessions, by which point you can steer, stop and turn a boat.
+  start:
+  - Find a club through British Rowing's Learn to Row page or the USRowing club finder.
+  - Ask when the next beginner course starts and book a place.
+  - Wear close-fitting layers you can move in, as no special kit is needed at first.
+  links:
+  - label: 'British Rowing: Learn to Row'
+    url: https://www.britishrowing.org/go-rowing/learn-to-row/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'USRowing: find a club'
+    url: https://usrowing.org/find-a-club
+    region: us
+    checked: '2026-10-06'
+- id: stand-up-paddleboarding
+  title: Try stand-up paddleboarding
+  category: move
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  season: Late spring to early autumn
+  regions:
+  - uk
+  - us
+  why: Standing on a board gives you a view down into the water and across it that you never get from a kayak or the bank. Most people are up and paddling within their first session on calm water.
+  start:
+  - Find a hire centre, club or instructor through Go Paddling or the American Canoe Association.
+  - Book a beginner session on sheltered, flat water.
+  - Start on your knees, stand when you feel steady and wear the buoyancy aid and leash provided.
+  links:
+  - label: Go Paddling (powered by Paddle UK)
+    url: https://gopaddling.info/
+    region: uk
+    checked: '2026-10-06'
+  - label: American Canoe Association
+    url: https://americancanoe.org/
+    region: us
+    checked: '2026-10-06'
+  safety: Wear a buoyancy aid and a leash, and avoid offshore winds, which can carry a board away from land.
+- id: scottish-country-dancing
+  title: Go to a Scottish country dance class
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - anywhere
+  why: Reels, jigs and strathspeys are danced in sets to lively music, with patterns you learn as you go. You do not need to bring a partner, and there are branches and groups in more than 50 countries.
+  start:
+  - Read the Royal Scottish Country Dance Society's page for newcomers.
+  - Use the branch and group finder to locate a beginners' class near you.
+  - Go along in soft, flat shoes and say it is your first time.
+  links:
+  - label: 'RSCDS: new to Scottish country dancing'
+    url: https://rscds.org/get-involved/new-scottish-country-dancing
+    region: any
+    checked: '2026-10-06'
+  - label: RSCDS branch and group finder
+    url: https://rscds.org/branches
+    region: any
+    checked: '2026-10-06'
+- id: yoga-class
+  title: Take a yoga class with a qualified teacher
+  category: move
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: A teacher in the room can adjust a posture for you in a way no video can. Styles vary enormously, from slow and quiet to strong and flowing, so one class tells you a lot about what you enjoy.
+  start:
+  - Search the British Wheel of Yoga or Yoga Alliance directories for a teacher nearby.
+  - Choose a class described as suitable for beginners and tell the teacher you are new.
+  - Borrow a mat if you can and try two different styles before deciding.
+  links:
+  - label: British Wheel of Yoga
+    url: https://www.bwy.org.uk/
+    region: uk
+    checked: '2026-10-06'
+  - label: Yoga Alliance
+    url: https://www.yogaalliance.org/
+    region: us
+    checked: '2026-10-06'
+- id: learn-tai-chi-form
+  title: Learn a tai chi form
+  category: move
+  kind: skill
+  effort: gentle
+  cost: low
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  why: A tai chi form is a long, slow sequence of linked movements that you memorise piece by piece, which makes it as much a mental exercise as a physical one. Once you know it, you can practise anywhere with no equipment.
+  start:
+  - Search the Tai Chi Union for Great Britain's instructor directory by postcode.
+  - Ask an instructor which style and form they teach to beginners.
+  - Attend weekly and practise the newest movements for a few minutes each day.
+  links:
+  - label: 'Tai Chi Union for Great Britain: find an instructor'
+    url: https://www.taichiunion.com/tai-chi-instructors/
+    region: uk
+    checked: '2026-10-06'
+- id: learn-to-lift-weights
+  title: Learn to lift with a barbell
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  why: Squat, press and deadlift are technical skills, and good coaching makes them satisfying to learn. Progress is easy to measure, because the numbers on the bar go up.
+  start:
+  - Use British Weight Lifting's finder to locate a club or partner gym near you.
+  - Book an introductory session and ask to be coached through the basic lifts.
+  - Write down what you lift each session and add weight in small steps.
+  links:
+  - label: 'British Weight Lifting: find a club or gym'
+    url: https://britishweightlifting.org/find-a-club
+    region: uk
+    checked: '2026-10-06'
+  story: martine-barons-world-champion-deadlift-65
+  guide: strength-training-after-50-why-and-how
+- id: lawn-bowls
+  title: Play a game of lawn bowls
+  category: move
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: others
+  season: Summer on outdoor greens
+  regions:
+  - uk
+  - us
+  why: The bowls are weighted to curve, so every delivery is a judgement of line and weight. It is tactical, sociable and far harder to do well than it looks.
+  start:
+  - Find a club through Bowls England or Bowls USA.
+  - Ask about an open day or taster session, where bowls are lent to newcomers.
+  - Wear flat-soled shoes to protect the green and ask a member to show you the delivery.
+  links:
+  - label: Bowls England
+    url: https://www.bowlsengland.com/
+    region: uk
+    checked: '2026-10-06'
+  - label: Bowls USA
+    url: https://www.bowlsusa.us/
+    region: us
+    checked: '2026-10-06'
+- id: orienteering-course
+  title: Complete an orienteering course
+  category: move
+  kind: event
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: You navigate between checkpoints on a detailed map, choosing your own route, so thinking counts as much as speed. Courses are colour-coded by difficulty and the beginner ones keep to paths.
+  start:
+  - Read British Orienteering's newcomers guide or find a club through Orienteering USA.
+  - Pick a local event and enter a beginner course such as White or Yellow.
+  - Walk it the first time and concentrate on keeping the map lined up with the ground.
+  links:
+  - label: 'British Orienteering: newcomers guide'
+    url: https://www.britishorienteering.org.uk/newcomers_guide
+    region: uk
+    checked: '2026-10-06'
+  - label: 'Orienteering USA: find a club'
+    url: https://orienteeringusa.org/events/clubs/
+    region: us
+    checked: '2026-10-06'
+- id: play-pickleball
+  title: Play a game of pickleball
+  category: move
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Played with a solid paddle and a perforated ball on a small court, pickleball is quick to pick up and produces long, lively rallies. Doubles is the usual format, so you meet people from the first game.
+  start:
+  - Find a club or court through Pickleball England or USA Pickleball's places to play page.
+  - Look for a taster or open play session where paddles are provided.
+  - Learn the serve and the kitchen rule, then join a doubles game.
+  links:
+  - label: Pickleball England
+    url: https://www.pickleballengland.org/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'USA Pickleball: places to play'
+    url: https://usapickleball.org/places-to-play/
+    region: us
+    checked: '2026-10-06'
+- id: learn-to-sail
+  title: Learn to sail a dinghy
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: others
+  season: Spring to autumn
+  regions:
+  - uk
+  why: Making a boat move using nothing but the wind is an absorbing skill that keeps unfolding the more you do it. The RYA says beginner courses run over a number of sessions or two full days, with boats and equipment provided.
+  start:
+  - Read the RYA's guide to getting started in sailing.
+  - Find a local club or training centre and book a beginner course.
+  - Bring old trainers and a change of clothes, and expect to get wet.
+  links:
+  - label: 'RYA: get started in sailing'
+    url: https://www.rya.org.uk/start-boating/boating-for-adults/learn-to-sail/get-started-in-sailing
+    region: uk
+    checked: '2026-10-06'
+  safety: Learn at a recognised training centre, where buoyancy aids and safety boat cover are part of the course.
+- id: walk-to-end-alzheimers
+  title: Join a Walk to End Alzheimer's
+  category: move
+  kind: event
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - us
+  why: The Alzheimer's Association describes this as the world's largest event raising awareness and funds for Alzheimer's care, support and research. Walks take place in more than 600 communities, so there is likely to be one within reach.
+  start:
+  - Use the Walk to End Alzheimer's site to find the walk nearest to you.
+  - Register as an individual, or start a team with friends or family.
+  - Set a fundraising target you are comfortable with and tell people why you are walking.
+  links:
+  - label: 'Alzheimer''s Association: Walk to End Alzheimer''s'
+    url: https://act.alz.org/walk_homepage
+    region: us
+    checked: '2026-10-06'
+- id: ride-great-allegheny-passage
+  title: Cycle the Great Allegheny Passage
+  category: move
+  kind: project
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Spring to autumn
+  regions:
+  - us
+  why: This 150-mile rail-trail through Pennsylvania and Maryland follows old railway lines on a crushed limestone surface, away from traffic. It links with the C&O Canal Towpath, so the ambitious can carry on to Washington, D.C.
+  start:
+  - Read the Rails to Trails Conservancy's account of the trail and decide how many days to take.
+  - Book places to stay in trail towns along the way and sort out bike transport.
+  - Ride two consecutive days on gravel paths with loaded panniers before you go.
+  links:
+  - label: 'Rails to Trails Conservancy: Great Allegheny Passage'
+    url: https://www.railstotrails.org/trailblog/pennsylvania-and-marylands-great-allegheny-passage/
+    region: us
+    checked: '2026-10-06'
+- id: guided-mushroom-foray
+  title: Go on a guided mushroom foray
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: others
+  season: Autumn
+  regions:
+  - uk
+  - us
+  why: Fungi are a hidden kingdom, and a wood you thought you knew turns out to hold dozens of species once someone shows you where to look. A foray with a local group teaches you to see, smell and name what you find.
+  start:
+  - Find your nearest fungus group or mushroom club through the national body's listings.
+  - Ask when their next beginner-friendly foray runs and book a place.
+  - Take a basket, a hand lens and a notebook, and write down every species named.
+  links:
+  - label: 'British Mycological Society: local fungus groups'
+    url: https://www.britmycolsoc.org.uk/field_mycology/recording-network/groups
+    region: uk
+    checked: '2026-10-06'
+  - label: 'North American Mycological Association: find a club'
+    url: https://namyco.org/clubs/
+    region: us
+    checked: '2026-10-06'
+  safety: Never eat a wild mushroom unless an expert has identified it; go on a guided foray first.
+- id: take-up-beekeeping
+  title: Take up beekeeping
+  category: explore
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: year
+  setting: outdoors
+  company: either
+  season: Courses often start in winter; the bee season is spring to autumn
+  regions:
+  - uk
+  - us
+  why: A hive is a working society of tens of thousands, and learning to read it is absorbing in a way few hobbies are. Local associations pair newcomers with experienced keepers, so you learn at an apiary before you buy anything.
+  start:
+  - Find your local beekeeping association and ask about taster days or a beginners' course.
+  - Handle bees at the association apiary before deciding to keep your own.
+  - Complete a full season with a mentor, then record your first hive inspection alone.
+  links:
+  - label: 'British Beekeepers Association: find beekeeping near you'
+    url: https://www.bbka.org.uk/find-beekeeping-near-you
+    region: uk
+    checked: '2026-10-06'
+  - label: American Beekeeping Federation
+    url: https://abfnet.org/
+    region: us
+    checked: '2026-10-06'
+  safety: Bee stings can cause serious allergic reactions; wear protective kit, learn with an association first and seek medical advice if you have reacted badly before.
+- id: big-garden-birdwatch
+  title: Take part in the RSPB Big Garden Birdwatch
+  category: explore
+  kind: event
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: either
+  company: either
+  season: Winter
+  regions:
+  - uk
+  why: For one hour you count the birds that land in a garden, balcony or park, and your tally joins hundreds of thousands of others. The results show how familiar species are faring across the country.
+  start:
+  - Check the RSPB page for this winter's Birdwatch and sign up.
+  - Choose your spot and learn the common garden birds beforehand.
+  - Count for one hour, then submit your results to the RSPB.
+  links:
+  - label: 'RSPB: Big Garden Birdwatch'
+    url: https://www.rspb.org.uk/whats-happening/big-garden-birdwatch
+    region: uk
+    checked: '2026-10-06'
+  story: peter-kaestner-10000-birds
+  guide: birdwatching-for-beginners
+  local: birdwatching
+- id: christmas-bird-count
+  title: Join an Audubon Christmas Bird Count
+  category: explore
+  kind: event
+  effort: moderate
+  cost: free
+  time: afternoon
+  setting: outdoors
+  company: others
+  season: Winter
+  regions:
+  - us
+  why: This is one of the world's longest-running community science projects, and each count circle spends a day tallying every bird it can find. You go out with experienced birders and your numbers feed real conservation research.
+  start:
+  - Read Audubon's guide to joining a count and find a circle near you.
+  - Contact the circle compiler and ask to be placed with a team.
+  - Practise beforehand by logging a few local checklists on eBird.
+  links:
+  - label: 'Audubon: Christmas Bird Count'
+    url: https://www.audubon.org/community-science/christmas-bird-count
+    region: us
+    checked: '2026-10-06'
+  - label: 'eBird: get started'
+    url: https://support.ebird.org/en/support/solutions/articles/48001158707-get-started-with-ebird
+    region: us
+    checked: '2026-10-06'
+  story: peter-kaestner-10000-birds
+  guide: birdwatching-for-beginners
+  local: birdwatching
+- id: zooniverse-project
+  title: Complete 500 classifications on a Zooniverse project
+  category: explore
+  kind: project
+  effort: gentle
+  cost: free
+  time: weeks
+  setting: indoors
+  company: solo
+  regions:
+  - anywhere
+  why: Researchers have more galaxies, wildlife photographs and old manuscripts than they can ever examine, so they ask volunteers to help sort them. You do real science from a laptop, and now and then a volunteer spots something nobody has seen before.
+  start:
+  - Browse the Zooniverse project list and pick a subject you are curious about.
+  - Work through the project tutorial and make your first ten classifications.
+  - Create a free account so your count is tracked, and keep going to 500.
+  links:
+  - label: 'Zooniverse: browse projects'
+    url: https://www.zooniverse.org/projects
+    region: any
+    checked: '2026-10-06'
+- id: city-nature-challenge
+  title: Record 50 species in the City Nature Challenge
+  category: explore
+  kind: event
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: outdoors
+  company: either
+  season: Spring
+  regions:
+  - anywhere
+  why: Cities around the world spend the same few days photographing every wild plant and animal they can find. You will be surprised how much lives on one street once you start looking closely.
+  start:
+  - Check the City Nature Challenge site to see whether your city or region is taking part.
+  - Install the iNaturalist app and practise by photographing ten wild species near home.
+  - During the challenge, upload observations until you reach 50 different species.
+  links:
+  - label: City Nature Challenge
+    url: https://www.citynaturechallenge.org/
+    region: any
+    checked: '2026-10-06'
+- id: dark-sky-place
+  title: Spend a night under the stars at an International Dark Sky Place
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  season: Best around a new moon
+  regions:
+  - anywhere
+  why: Most of us have never seen a properly dark sky, with the Milky Way bright enough to stop you mid-sentence. Certified Dark Sky Places protect that view and many run guided stargazing evenings.
+  start:
+  - Use the DarkSky finder to choose a certified place you can reach.
+  - Pick a night near the new moon and check the cloud forecast.
+  - Take warm layers and a red torch, and allow your eyes time to adjust.
+  links:
+  - label: 'DarkSky International: Dark Sky Place finder'
+    url: https://darksky.org/what-we-do/international-dark-sky-places/all-places/
+    region: any
+    checked: '2026-10-06'
+  safety: 'Dark Sky Places are often remote: tell someone where you are going, carry a torch and warm clothing, and check road and weather conditions.'
+- id: jurassic-coast-fossil-hunt
+  title: Find your own fossil on the Jurassic Coast
+  category: explore
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  season: Winter is best, after rough weather
+  regions:
+  - uk
+  why: On these beaches ammonites and belemnites wash out of the cliffs and lie among the pebbles, waiting for a sharp pair of eyes. Holding something that last saw daylight in the time of the dinosaurs is hard to forget.
+  start:
+  - Read the official Jurassic Coast guide on where to go and the collecting advice.
+  - Book a guided fossil walk for your first visit.
+  - Check the tide times and search the beach on a falling tide.
+  links:
+  - label: 'Jurassic Coast Trust: where to go fossil hunting'
+    url: https://jurassiccoast.org/visit/fossil-collecting/
+    region: uk
+    checked: '2026-10-06'
+  safety: Always check the tides and go on a falling tide; keep well away from cliffs, rockfalls and mudflows.
+  story: jeremy-lockwood-three-new-dinosaurs-68
+  guide: fossil-hunting-for-beginners
+  local: fossil-hunting
+- id: geopark-walk
+  title: Walk a geology trail in a UNESCO Global Geopark
+  category: explore
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - anywhere
+  why: A geopark is a landscape chosen because its rocks tell a remarkable story, from ancient volcanoes to vanished oceans. Walking one with a trail guide turns an ordinary hillside into a readable history.
+  start:
+  - Look through UNESCO's list of Global Geoparks and choose one you can reach.
+  - Find a marked geology trail or guided walk on that geopark's own website.
+  - Walk it with the trail guide and photograph three features you can now explain.
+  links:
+  - label: 'UNESCO: list of Global Geoparks'
+    url: https://www.unesco.org/en/iggp/geoparks
+    region: any
+    checked: '2026-10-06'
+  safety: 'Some geopark trails cross remote or coastal ground: carry a map, check the weather and tides, and tell someone your route.'
+- id: wild-swim
+  title: Go for your first wild swim
+  category: explore
+  kind: experience
+  effort: moderate
+  cost: free
+  time: afternoon
+  setting: outdoors
+  company: others
+  season: Summer for a first swim
+  regions:
+  - uk
+  - us
+  why: Swimming in a river, lake or the sea puts you inside the landscape instead of looking at it. The Outdoor Swimming Society's guidance covers everything a newcomer needs to choose a spot and get in well.
+  start:
+  - Read the Outdoor Swimming Society's getting started and cold water advice.
+  - Choose a known swimming spot with an easy way in and out.
+  - Go with an experienced swimmer, enter slowly and keep the first swim short.
+  links:
+  - label: Outdoor Swimming Society
+    url: https://www.outdoorswimmingsociety.com/
+    region: uk
+    checked: '2026-10-06'
+  safety: 'Cold water can incapacitate quickly: never swim alone, enter slowly, know your exit point and stay close to the bank.'
+  story: amy-gubser-golden-gate-farallon-swim-55
+- id: wildlife-trust-volunteer
+  title: Volunteer for your local Wildlife Trust
+  category: explore
+  kind: habit
+  effort: moderate
+  cost: free
+  time: months
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  why: You get behind the scenes of a nature reserve, doing the work that keeps it rich in wildlife, from clearing scrub to surveying otters. You pick up field skills from people who know the site intimately.
+  start:
+  - Use the Wildlife Trusts' postcode search to find volunteering near you.
+  - Contact your local Trust and sign up for a work party or survey.
+  - Attend six sessions and note what you learned at each.
+  links:
+  - label: 'The Wildlife Trusts: volunteer'
+    url: https://www.wildlifetrusts.org/closer-to-nature/volunteer
+    region: uk
+    checked: '2026-10-06'
+  guide: volunteering-after-50-where-to-start
+- id: master-naturalist
+  title: Become a certified Master Naturalist
+  category: explore
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: year
+  setting: either
+  company: others
+  regions:
+  - us
+  why: Master Naturalist programmes give you a thorough grounding in your own state's ecology, taught in the field by working scientists. Certification then asks you to put it to use through volunteer service, so the learning has a purpose.
+  start:
+  - Search for your state's Master Naturalist programme, usually run through a university extension service.
+  - Find your nearest chapter and apply for its next training class.
+  - Complete the required training and volunteer hours to earn certification.
+  links:
+  - label: 'Texas Master Naturalist: how to become one (example state programme)'
+    url: https://txmn.tamu.edu/about/want-to-be-a-master-naturalist/
+    region: us
+    checked: '2026-10-06'
+- id: plant-a-tree
+  title: Plant a native tree and see it through its first year
+  category: explore
+  kind: project
+  effort: moderate
+  cost: low
+  time: year
+  setting: outdoors
+  company: either
+  season: Winter planting season
+  regions:
+  - uk
+  why: A tree you plant yourself becomes a landmark you will check on for decades. Doing it properly, with the right species in the right place, is a small act with a very long life.
+  start:
+  - Read the Woodland Trust's advice on how and where to plant.
+  - Choose a native species suited to your soil and space.
+  - Plant it in the dormant season, then water and weed around it through its first summer.
+  links:
+  - label: 'Woodland Trust: how to plant trees'
+    url: https://www.woodlandtrust.org.uk/plant-trees/advice/how-to-plant/
+    region: uk
+    checked: '2026-10-06'
+- id: walk-a-camino
+  title: Walk a Camino route to Santiago de Compostela
+  category: travel
+  kind: experience
+  effort: demanding
+  cost: high
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Spring and autumn are popular
+  regions:
+  - anywhere
+  why: People have walked these paths across Spain for over a thousand years, and the rhythm of walking day after day with strangers from everywhere is unlike any other journey. You can choose a route and distance that suits you.
+  start:
+  - Read a pilgrim association's advice and choose a route and starting point.
+  - Get a pilgrim credential and build up to walking on consecutive days.
+  - Book travel to your start and walk to Santiago, collecting stamps along the way.
+  links:
+  - label: Confraternity of St James (UK)
+    url: https://www.csj.org.uk/
+    region: uk
+    checked: '2026-10-06'
+  - label: American Pilgrims on the Camino
+    url: https://americanpilgrims.org/
+    region: us
+    checked: '2026-10-06'
+  safety: 'Long days on foot in heat or on remote stretches need preparation: carry water, pace yourself and take out travel insurance.'
+  guide: walking-holidays-for-beginners-after-50
+- id: sleeper-train-journey
+  title: Take a sleeper train journey
+  category: travel
+  kind: experience
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: You board in a city in the evening, eat as the lights slide past, and wake somewhere completely different. It turns getting there into the best part of the trip.
+  start:
+  - 'Choose a route: London to the Highlands, or one of Amtrak''s long-distance trains.'
+  - Book a private room or berth well ahead.
+  - Plan a day at the far end before you travel home.
+  links:
+  - label: Caledonian Sleeper
+    url: https://www.sleeper.scot/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'Amtrak: routes and destinations'
+    url: https://www.amtrak.com/train-routes
+    region: us
+    checked: '2026-10-06'
+  guide: travelling-by-train-after-50
+- id: interrail-pass-trip
+  title: Cross Europe on a rail pass
+  category: travel
+  kind: experience
+  effort: moderate
+  cost: high
+  time: weeks
+  setting: either
+  company: either
+  regions:
+  - anywhere
+  why: One pass lets you string together cities, mountains and coastlines across dozens of countries, changing your plans whenever a place takes your fancy. Watching a continent unfold from a train window is a fine way to understand how it fits together.
+  start:
+  - Read the passes guide and choose a Global Pass or a single-country pass.
+  - Sketch a route of four or five stops and check which trains need reservations.
+  - Buy the pass, book the first night's stay and set off.
+  links:
+  - label: 'Interrail: passes guide'
+    url: https://www.interrail.com/en/interrail-passes
+    region: uk
+    checked: '2026-10-06'
+  - label: 'Global Pass: international site (eurail.com redirects here)'
+    url: https://www.interrail.com/en-int/interrail-passes/global-pass
+    region: us
+    checked: '2026-10-06'
+  guide: travelling-by-train-after-50
+- id: canal-boat-holiday
+  title: Skipper a canal boat holiday
+  category: travel
+  kind: experience
+  effort: moderate
+  cost: high
+  time: weeks
+  setting: outdoors
+  company: others
+  season: Spring to autumn
+  regions:
+  - uk
+  why: At walking pace the country looks entirely different, and working your first lock as a crew is deeply satisfying. Hire firms teach you to steer before you leave, so no experience is needed.
+  start:
+  - Read the Canal & River Trust's guidance for first-time boaters.
+  - Choose a route with a manageable number of locks and gather a crew.
+  - Hire a boat, take the handover lesson and steer it yourself.
+  links:
+  - label: 'Canal & River Trust: canal boat holidays and trips'
+    url: https://canalrivertrust.org.uk/boating/boat-trips-and-holidays
+    region: uk
+    checked: '2026-10-06'
+  safety: 'Locks and deep water carry real risk: follow the hire company''s safety briefing and wear a lifejacket when working locks.'
+- id: drive-a-scenic-byway
+  title: Drive a National Scenic Byway end to end
+  category: travel
+  kind: experience
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - us
+  why: America's Byways are roads chosen for their scenery, history or culture, and each has a clear beginning and end. Driving one whole gives a road trip a shape and takes you through places the interstates miss.
+  start:
+  - Browse the official America's Byways site and pick a route.
+  - Plan your overnight stops and a few places to get out and walk.
+  - Drive it from one end to the other, without shortcuts.
+  links:
+  - label: America's Byways (Federal Highway Administration)
+    url: https://fhwaapps.fhwa.dot.gov/bywaysp
+    region: us
+    checked: '2026-10-06'
+- id: unesco-world-heritage-site
+  title: Visit a UNESCO World Heritage Site you have never seen
+  category: travel
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: either
+  company: either
+  regions:
+  - anywhere
+  why: The World Heritage List gathers places judged to matter to all of humanity, from cathedrals and canals to reefs and rainforests. There is very likely one within a day's travel that you have never visited.
+  start:
+  - Search the World Heritage List by country and find the sites nearest you.
+  - Choose one you have not visited and read why it was inscribed.
+  - Go, and look for the features described in the listing.
+  links:
+  - label: UNESCO World Heritage List
+    url: https://whc.unesco.org/en/list/
+    region: any
+    checked: '2026-10-06'
+- id: long-distance-cycle-route
+  title: Ride a long-distance cycle route
+  category: travel
+  kind: experience
+  effort: demanding
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Late spring to early autumn
+  regions:
+  - uk
+  - us
+  why: Covering real distance under your own power changes your sense of how big a country is. Mapped, signed routes take care of the navigation so you can enjoy the riding.
+  start:
+  - Use the National Cycle Network route finder or the Adventure Cycling map to choose a route.
+  - Build up with day rides that match your planned daily distance.
+  - Book your overnight stops and ride the route from start to finish.
+  links:
+  - label: 'Walk Wheel Cycle Trust (formerly Sustrans): find a National Cycle Network route'
+    url: https://www.walkwheelcycletrust.org.uk/find-a-route-on-the-national-cycle-network/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'Adventure Cycling Association: interactive route network map'
+    url: https://www.adventurecycling.org/routes-and-maps/interactive-network-map/
+    region: us
+    checked: '2026-10-06'
+  safety: Wear a helmet, use lights, carry repair kit and water, and on remote sections tell someone your daily plan.
+  story: craig-johnston-record-ride-across-australia
+- id: solo-trip
+  title: Take a trip entirely on your own
+  category: travel
+  kind: experience
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: either
+  company: solo
+  regions:
+  - anywhere
+  why: Travelling alone means every decision is yours, from when to get up to which street to wander down. People talk to you more readily, and you notice far more.
+  start:
+  - Pick a destination you are curious about and decide how many nights.
+  - Read the official travel advice for it and book your first two nights.
+  - Go, and eat at least one dinner out by yourself.
+  links:
+  - label: 'GOV.UK: foreign travel advice'
+    url: https://www.gov.uk/foreign-travel-advice
+    region: uk
+    checked: '2026-10-06'
+  safety: Leave your itinerary with someone at home, keep copies of your documents and check official travel advice before you go.
+  guide: solo-travel-after-50
+- id: walk-a-national-trail
+  title: Walk a National Trail from end to end
+  category: travel
+  kind: experience
+  effort: demanding
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Spring to autumn
+  regions:
+  - uk
+  why: England and Wales have a family of waymarked long-distance paths, each following a coastline, ridge or ancient border. Finishing one gives you a line across the map that you have walked every step of.
+  start:
+  - Compare the trails on the official National Trails site and choose one.
+  - Decide whether to walk it in one go or in stages.
+  - Book accommodation along the route and walk to the final waymark.
+  links:
+  - label: 'National Trails (official site): Offa''s Dyke Path, with all trails in the menu'
+    url: https://www.nationaltrail.co.uk/en_GB/trails/offas-dyke-path/
+    region: uk
+    checked: '2026-10-06'
+  safety: 'Some sections are remote and exposed: carry a map, waterproofs, food and water, and tell someone your route each day.'
+  guide: walking-holidays-for-beginners-after-50
+- id: visit-national-parks
+  title: Visit five national parks you have never been to
+  category: travel
+  kind: project
+  effort: moderate
+  cost: mid
+  time: year
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: National parks hold a country's finest landscapes, and each has its own character, from moorland and fen to canyon and coast. Setting a number gives you a reason to go beyond the ones you already know.
+  start:
+  - List the national parks you have not visited, using the official directories.
+  - Choose five and pencil each into the year ahead.
+  - Do a proper walk in each one; US visitors can collect a passport stamp.
+  links:
+  - label: 'National Parks UK: all 15 parks'
+    url: https://www.nationalparks.uk/parks/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'US National Park Service: find a park'
+    url: https://www.nps.gov/findapark/index.htm
+    region: us
+    checked: '2026-10-06'
+  - label: 'America''s National Parks: Passport To Your National Parks'
+    url: https://americasnationalparks.org/passport-to-your-national-parks/
+    region: us
+    checked: '2026-10-06'
+  safety: In remote parks, check the weather, carry a map, water and warm layers, and tell someone your plans.
+- id: sourdough-from-starter
+  title: Bake a sourdough loaf from a starter you made yourself
+  category: eat
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: solo
+  regions:
+  - anywhere
+  why: With nothing but flour and water you can raise a living culture of wild yeast on your kitchen counter. The first loaf it lifts feels like a small piece of alchemy.
+  start:
+  - Mix flour and water to begin a starter, following a tested guide.
+  - Feed it daily until it is bubbly and doubles reliably after feeding.
+  - Bake your first loaf with it and keep some starter back for the next.
+  links:
+  - label: 'Real Bread Campaign: simple sourdough starter and care guide'
+    url: https://www.sustainweb.org/realbread/bake/jan19_simple_sourdough_starter/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'King Arthur Baking: create a sourdough starter'
+    url: https://www.kingarthurbaking.com/learn/guides/sourdough/create
+    region: us
+    checked: '2026-10-06'
+- id: take-on-an-allotment
+  title: Take on an allotment
+  category: eat
+  kind: project
+  effort: demanding
+  cost: low
+  time: year
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  why: An allotment gives you room to grow food on a scale a garden rarely allows, among neighbours who are generous with advice and spare seedlings. Eating a meal you grew from seed is a pleasure all of its own.
+  start:
+  - Contact your local council to apply for a plot or join the waiting list.
+  - Visit nearby sites and ask plot-holders what grows well there.
+  - When your plot comes, clear one bed first and sow something quick.
+  links:
+  - label: 'GOV.UK: apply for an allotment'
+    url: https://www.gov.uk/apply-allotment
+    region: uk
+    checked: '2026-10-06'
+  - label: 'National Allotment Society: how to find an allotment'
+    url: https://thenas.org.uk/findinganallotment
+    region: uk
+    checked: '2026-10-06'
+- id: community-garden-plot
+  title: Grow food in a community garden
+  category: eat
+  kind: project
+  effort: moderate
+  cost: low
+  time: months
+  setting: outdoors
+  company: others
+  season: Growing season
+  regions:
+  - us
+  why: A community garden gives you a bed of your own, shared tools and a set of neighbours who all want things to grow. You learn quickly from the plots around you.
+  start:
+  - Find gardens near you on the American Community Gardening Association map.
+  - Contact the nearest one and ask about a plot or volunteer days.
+  - Plant your bed and harvest something you can cook.
+  links:
+  - label: 'American Community Gardening Association: find a garden'
+    url: https://www.communitygarden.org/garden
+    region: us
+    checked: '2026-10-06'
+- id: preserve-a-seasons-fruit
+  title: Preserve a season's fruit
+  category: eat
+  kind: project
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  season: Summer to autumn
+  regions:
+  - uk
+  - us
+  why: Turning a glut of fruit into jars of jam, chutney or bottled fruit is practical kitchen chemistry with a delicious result. Opening a jar in midwinter brings the season straight back.
+  start:
+  - Pick or buy fruit at the height of its season.
+  - Choose a tested recipe and gather clean jars and new lids.
+  - Make at least six jars and label them with the fruit and year.
+  links:
+  - label: National Center for Home Food Preservation
+    url: https://nchfp.uga.edu/
+    region: us
+    checked: '2026-10-06'
+  safety: Use tested recipes and follow their jar preparation and processing instructions exactly, as badly preserved food can cause serious illness.
+- id: wset-wine-course
+  title: Pass a WSET wine course
+  category: eat
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - anywhere
+  why: A structured course teaches you to taste methodically and to understand why a wine tastes as it does, from grape to climate to cellar. You finish with a recognised qualification and a much sharper palate.
+  start:
+  - Use WSET's Where to Study finder to locate an approved course provider.
+  - Choose a level and a classroom or online course.
+  - Complete the course and sit the exam.
+  links:
+  - label: 'WSET: where to study'
+    url: https://www.wset.co.uk/where-to-study
+    region: any
+    checked: '2026-10-06'
+- id: grow-your-own-herbs
+  title: Grow five culinary herbs and cook with each
+  category: eat
+  kind: project
+  effort: gentle
+  cost: low
+  time: months
+  setting: either
+  company: solo
+  season: Spring to summer
+  regions:
+  - anywhere
+  why: Herbs are among the most rewarding things to grow, because a windowsill pot can change a dish in seconds. Raising them yourself teaches you how different each one is in habit and flavour.
+  start:
+  - Read the RHS guide and choose five herbs you cook with.
+  - Sow or plant them in pots somewhere sunny, close to the kitchen.
+  - Cook one dish built around each herb as it becomes ready.
+  links:
+  - label: 'RHS: growing and harvesting herbs'
+    url: https://www.rhs.org.uk/herbs/growing
+    region: uk
+    checked: '2026-10-06'
+- id: cook-a-community-meal
+  title: Cook for a community meal
+  category: eat
+  kind: experience
+  effort: moderate
+  cost: free
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Cooking for a full dining room alongside a team of volunteers is a different craft from cooking at home, and a sociable one. You turn surplus or donated food into a proper meal that people sit down to share.
+  start:
+  - Find a FoodCycle project or a local food bank meal programme near you.
+  - Register as a volunteer and complete the short food safety training.
+  - Sign up for a cooking shift and help serve what you made.
+  links:
+  - label: 'FoodCycle: volunteer in your community'
+    url: https://foodcycle.org.uk/volunteer/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'Feeding America: volunteer at your local food bank'
+    url: https://www.feedingamerica.org/take-action/volunteer
+    region: us
+    checked: '2026-10-06'
+- id: join-a-chess-club
+  title: Join a chess club and play a rated game
+  category: think
+  kind: habit
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: A club night gives you an opponent across a real board, a clock ticking and someone to talk the game through with afterwards. One rated game puts your name on the national grading list, which gives you a number to chase.
+  start:
+  - Search the English Chess Federation club finder for clubs near you.
+  - Email the club contact and ask which evening suits a first visit.
+  - Go along, play some friendly games, then ask about entering a rated match.
+  links:
+  - label: 'English Chess Federation: chess clubs'
+    url: https://www.englishchess.org.uk/clubs-home-page/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'English Chess Federation: club finder'
+    url: https://www.englishchess.org.uk/wp-content/uploads/2021/08/ECF-Club-Finder.html
+    region: uk
+    checked: '2026-10-06'
+- id: write-a-book
+  title: Write the first full draft of a book
+  category: think
+  kind: project
+  effort: demanding
+  cost: free
+  time: year
+  setting: indoors
+  company: solo
+  regions:
+  - anywhere
+  why: A finished draft, however rough, is something very few people who talk about writing a book ever hold in their hands. The daily habit of adding pages teaches you more about your subject and yourself than any amount of planning.
+  start:
+  - Work through the free Open University course Start writing fiction.
+  - Write one page describing the book, then set a weekly word target.
+  - Book a writing course or retreat to get feedback on your opening chapters.
+  links:
+  - label: 'OpenLearn (Open University): Start writing fiction, free course'
+    url: https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction/content-section-0
+    region: any
+    checked: '2026-10-06'
+  - label: 'Arvon: creative writing courses and retreats'
+    url: https://www.arvon.org/
+    region: uk
+    checked: '2026-10-06'
+- id: learn-a-language-to-b1
+  title: Learn a language to CEFR level B1
+  category: think
+  kind: skill
+  effort: demanding
+  cost: low
+  time: year
+  setting: either
+  company: either
+  regions:
+  - anywhere
+  why: B1 is the point where you can hold your own in a conversation, follow the gist of a radio programme and sort out most situations while travelling. The level has a published checklist of can-do statements, so you know exactly when you have arrived.
+  start:
+  - Pick one language and read the CEFR level descriptions for A1 to B1.
+  - Use the self-assessment grid to mark where you are today.
+  - Arrange a weekly lesson or conversation partner and set a date to test yourself.
+  links:
+  - label: 'Council of Europe: the CEFR levels'
+    url: https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions
+    region: any
+    checked: '2026-10-06'
+  guide: learning-a-language-after-50
+- id: play-one-piece-for-someone
+  title: Learn an instrument and play one piece for an audience
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - anywhere
+  why: Choosing one piece and one listener turns vague practice into a small performance with a date on it. Playing for somebody, even one friend in the front room, is a different experience from playing alone.
+  start:
+  - Choose the instrument and one short piece you would love to play.
+  - Book a first lesson with a local teacher and agree a practice plan.
+  - Name your listener and a date, then look for a leisure-time music group to join.
+  links:
+  - label: 'Making Music: support for leisure-time music groups'
+    url: https://www.makingmusic.org.uk/
+    region: uk
+    checked: '2026-10-06'
+  guide: learning-a-musical-instrument-later-in-life
+- id: finish-an-openlearn-course
+  title: Complete a free OpenLearn course and earn the statement of participation
+  category: think
+  kind: project
+  effort: gentle
+  cost: free
+  time: weeks
+  setting: indoors
+  company: solo
+  regions:
+  - anywhere
+  why: The Open University gives away hundreds of short courses written by its own academics, from astronomy to law. You can start one this evening and study at whatever pace suits you.
+  start:
+  - Browse the OpenLearn catalogue and shortlist three courses that catch your eye.
+  - Create a free account so your progress is tracked.
+  - Block out two study sessions a week until the final section is done.
+  links:
+  - label: 'OpenLearn (Open University): free courses catalogue'
+    url: https://www.open.edu/openlearn/free-courses/full-catalogue
+    region: any
+    checked: '2026-10-06'
+  guide: going-back-to-study-after-50
+  story: marie-fowler-doctorate-at-83
+- id: finish-a-university-mooc
+  title: Finish an online university course from start to end
+  category: think
+  kind: project
+  effort: moderate
+  cost: free
+  time: months
+  setting: indoors
+  company: solo
+  regions:
+  - anywhere
+  why: Universities around the world put real courses online, with lectures, assignments and fellow learners to argue with in the forums. Most people who enrol never reach the last week, so finishing is the challenge.
+  start:
+  - Search FutureLearn or edX for a subject you have always been curious about.
+  - Enrol in one course only and note how many weeks it runs.
+  - Do each week's work on a fixed day and post once in the discussion.
+  links:
+  - label: 'FutureLearn: online courses'
+    url: https://www.futurelearn.com/courses
+    region: any
+    checked: '2026-10-06'
+  - label: 'edX: online courses from universities'
+    url: https://www.edx.org/
+    region: any
+    checked: '2026-10-06'
+  guide: going-back-to-study-after-50
+- id: join-u3a-or-olli
+  title: Join a u3a or an Osher Lifelong Learning Institute and attend a group
+  category: think
+  kind: habit
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: These are learning groups run for the pleasure of it, with no exams and subjects ranging from geology to jazz. Members teach each other, so you may well end up leading a session yourself.
+  start:
+  - Look up your nearest u3a in the UK, or Osher institute at a US university.
+  - Read the list of interest groups or classes and pick one.
+  - Join, attend your first meeting and introduce yourself to the group leader.
+  links:
+  - label: 'u3a: home page'
+    url: https://www.u3a.org.uk/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'u3a: join a u3a'
+    url: https://www.u3a.org.uk/join
+    region: uk
+    checked: '2026-10-06'
+  - label: 'Bernard Osher Foundation: Osher Lifelong Learning Institutes'
+    url: https://www.osherfoundation.org/olli.html
+    region: us
+    checked: '2026-10-06'
+  guide: going-back-to-study-after-50
+- id: toastmasters-first-speech
+  title: Give your first prepared speech at a Toastmasters club
+  category: think
+  kind: event
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - anywhere
+  why: A first speech lasts a few minutes, is about a subject you know well, and is given to a room that wants you to do well. You come away with written feedback from people who have stood exactly where you stood.
+  start:
+  - Use the Toastmasters club finder to locate a club that meets near you or online.
+  - Visit as a guest and watch a full meeting.
+  - Join, ask for a speaking slot and draft a short talk about yourself.
+  links:
+  - label: 'Toastmasters International: find a club'
+    url: https://www.toastmasters.org/find-a-club
+    region: any
+    checked: '2026-10-06'
+- id: trace-family-to-great-great-grandparents
+  title: Trace one family line back to your great-great-grandparents
+  category: think
+  kind: project
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Census pages, service records and ship lists turn names into people with addresses, trades and neighbours. Each record you find tends to raise a better question than the one it answers.
+  start:
+  - Write down every name, date and place you already know and ask relatives for more.
+  - Read the national archives guidance for people starting family history.
+  - Pick one line and find it in the most recent open census.
+  links:
+  - label: 'The National Archives (UK): start here'
+    url: https://www.nationalarchives.gov.uk/help-with-your-research/start-here/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'US National Archives: resources for genealogists'
+    url: https://www.archives.gov/research/genealogy
+    region: us
+    checked: '2026-10-06'
+- id: learn-to-code-first-project
+  title: Learn to code and finish one small project
+  category: tech
+  kind: skill
+  effort: moderate
+  cost: free
+  time: months
+  setting: indoors
+  company: solo
+  regions:
+  - anywhere
+  why: Code is the nearest thing there is to making something from nothing, and the first working page you build is yours for good. A free course takes you from the first line to a finished project at your own pace.
+  start:
+  - Open freeCodeCamp and start the first lesson of the responsive web design course.
+  - 'Set a regular slot: three short sessions a week beats one long one.'
+  - Pick a small project that is useful to you and build it as soon as the course allows.
+  links:
+  - label: 'freeCodeCamp: learn to code for free'
+    url: https://www.freecodecamp.org/
+    region: any
+    checked: '2026-10-06'
+- id: free-digital-skills-course
+  title: Work through a free digital skills course
+  category: tech
+  kind: skill
+  effort: gentle
+  cost: free
+  time: weeks
+  setting: indoors
+  company: solo
+  regions:
+  - uk
+  why: Most of us picked up computers and phones by trial and error, and it leaves gaps. A short structured course fills them in, from staying safe online to doing more with the device you already own.
+  start:
+  - Open Learn My Way and choose the subject you are least sure about.
+  - Do one lesson at a sitting, with your own phone or computer beside you.
+  - Use what you learned on something real the same day.
+  links:
+  - label: 'Learn My Way: free online lessons for beginners'
+    url: https://www.learnmyway.com/
+    region: uk
+    checked: '2026-10-06'
+- id: two-factor-on-main-accounts
+  title: Put two-step sign-in on your three most important accounts
+  category: tech
+  kind: project
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: indoors
+  company: solo
+  regions:
+  - anywhere
+  why: 'An hour''s work closes the door that most account break-ins come through. Email first: whoever holds your email can reset everything else.'
+  start:
+  - Read our plain guide to passwords and two-step sign-in.
+  - Turn it on for your main email account, then your bank, then your phone account.
+  - Write the backup codes on paper and keep them somewhere safe at home.
+  links:
+  - label: 'Our guide: passwords and two-factor made simple'
+    url: https://dontdieretired.com/tech/passwords-and-two-factor-made-simple/
+    region: any
+    checked: '2026-10-06'
+  guide: passwords-and-two-factor-made-simple
+- id: elements-of-ai
+  title: Complete the Elements of AI course
+  category: ai
+  kind: skill
+  effort: moderate
+  cost: free
+  time: weeks
+  setting: indoors
+  company: solo
+  regions:
+  - anywhere
+  why: Artificial intelligence is easier to judge once you know roughly how it works. This free course from the University of Helsinki needs no programming and no maths beyond school level.
+  start:
+  - Sign up for Introduction to AI on the Elements of AI site.
+  - Work through one chapter a week and do the exercises, not just the reading.
+  - 'Explain one idea from each chapter to someone else: it shows you what has stuck.'
+  links:
+  - label: 'Elements of AI: free online course'
+    url: https://www.elementsofai.com/
+    region: any
+    checked: '2026-10-06'
+  guide: ai-after-50-the-complete-guide
+- id: plan-a-project-with-ai
+  title: Plan a real project with an AI assistant, and check its work
+  category: ai
+  kind: project
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: indoors
+  company: solo
+  regions:
+  - anywhere
+  why: The quickest way to find out what these assistants are good for is to give one a job you actually need doing. Checking what it tells you is half the skill, and it is learned by doing.
+  start:
+  - Read our guide to a first conversation with an AI assistant.
+  - 'Ask it to plan something real: a trip, a garden bed, a family gathering.'
+  - Pick three facts from its answer and check each against a source you trust.
+  links:
+  - label: 'Our guide: your first conversation with an AI assistant'
+    url: https://dontdieretired.com/ai/your-first-conversation-with-an-ai-assistant/
+    region: any
+    checked: '2026-10-06'
+  - label: 'Our guide: when AI gets it wrong, and how to check'
+    url: https://dontdieretired.com/ai/when-ai-gets-it-wrong-how-to-check/
+    region: any
+    checked: '2026-10-06'
+  guide: your-first-conversation-with-an-ai-assistant
+- id: get-your-state-pension-forecast
+  title: Get your State Pension forecast or Social Security statement
+  category: money
+  kind: project
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: indoors
+  company: solo
+  regions:
+  - uk
+  - us
+  why: The official forecast shows what your record says today, which is often different from what people assume. Having the figure in front of you makes every other plan easier to think about.
+  start:
+  - Go to the official government service for your country.
+  - Sign in or create an account, with your identity documents to hand.
+  - Download or print the forecast and check your record for gaps.
+  links:
+  - label: 'GOV.UK: check your State Pension forecast'
+    url: https://www.gov.uk/check-state-pension
+    region: uk
+    checked: '2026-10-06'
+  - label: 'US Social Security Administration: my Social Security account'
+    url: https://www.ssa.gov/myaccount/
+    region: us
+    checked: '2026-10-06'
+  guide: check-your-state-pension-forecast-or-social-security-statement
+- id: make-or-update-your-will
+  title: Make or update your will
+  category: money
+  kind: project
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  why: A will is the one document that puts your own decisions on record, in place of rules written by somebody else. Writing it prompts useful conversations that families tend to put off.
+  start:
+  - Read the GOV.UK guide to making a will.
+  - List what you own and who you would like to have it.
+  - Decide how you will have the will written, then get it signed and witnessed.
+  links:
+  - label: 'GOV.UK: making a will'
+    url: https://www.gov.uk/make-will
+    region: uk
+    checked: '2026-10-06'
+- id: set-up-a-lasting-power-of-attorney
+  title: Make and register a lasting power of attorney
+  category: money
+  kind: project
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: A lasting power of attorney lets you choose who would make decisions for you if you could not make them yourself. It is a practical thing to settle with the people you trust while everything is calm.
+  start:
+  - Read the GOV.UK guide and note the two types of lasting power of attorney.
+  - Talk to the people you would like to act as your attorneys.
+  - Complete the forms and send them for registration.
+  links:
+  - label: 'GOV.UK: make, register or end a lasting power of attorney'
+    url: https://www.gov.uk/power-of-attorney
+    region: uk
+    checked: '2026-10-06'
+- id: find-your-lost-pensions
+  title: Track down every pension from your past jobs
+  category: money
+  kind: project
+  effort: gentle
+  cost: free
+  time: weeks
+  setting: indoors
+  company: solo
+  regions:
+  - uk
+  why: Jobs from decades ago often came with a pension that has been quietly sitting there since you left. The government's tracing service gives you contact details for a scheme from nothing more than an employer's name.
+  start:
+  - List every employer you have worked for, with rough dates.
+  - Search the GOV.UK Pension Tracing Service for each one you have no paperwork for.
+  - Write to each scheme with your details and ask for a statement.
+  links:
+  - label: 'GOV.UK: find pension contact details (Pension Tracing Service)'
+    url: https://www.gov.uk/find-pension-contact-details
+    region: uk
+    checked: '2026-10-06'
+  guide: finding-lost-pensions-and-retirement-accounts
+- id: start-a-small-business
+  title: Start a small business and make your first sale
+  category: earn
+  kind: project
+  effort: demanding
+  cost: mid
+  time: months
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  why: Turning something you know into something a stranger pays for is a real test of an idea. The first sale, however small, tells you more than any business plan.
+  start:
+  - Read the official government guide to setting up a business in your country.
+  - Write one page covering what you sell, to whom, and what it costs you.
+  - Register in the way the guide describes, then ask for a free mentor if one is offered.
+  links:
+  - label: 'GOV.UK: set up a business'
+    url: https://www.gov.uk/set-up-business
+    region: uk
+    checked: '2026-10-06'
+  - label: 'US Small Business Administration: business guide'
+    url: https://www.sba.gov/business-guide
+    region: us
+    checked: '2026-10-06'
+  - label: 'SCORE: find a business mentor'
+    url: https://www.score.org/find-mentor
+    region: us
+    checked: '2026-10-06'
+  guide: starting-a-business-after-50
+  story: natalie-brock-flower-farm-at-51
+- id: mentor-a-founder
+  title: Become a volunteer mentor to a new business owner
+  category: earn
+  kind: habit
+  effort: moderate
+  cost: free
+  time: months
+  setting: either
+  company: others
+  regions:
+  - us
+  why: Things you learned the hard way about cash flow, customers and hiring are exactly what a first-time founder is missing. Mentoring puts that experience to work and keeps you close to new ideas.
+  start:
+  - Read the SCORE volunteer page and the roles it describes.
+  - Write a short summary of your business experience and complete the application.
+  - Meet your local chapter and take on your first mentoring client.
+  links:
+  - label: 'SCORE: volunteer'
+    url: https://www.score.org/volunteer
+    region: us
+    checked: '2026-10-06'
+- id: go-freelance-for-one-client
+  title: Go freelance and invoice your first client
+  category: earn
+  kind: project
+  effort: moderate
+  cost: free
+  time: months
+  setting: either
+  company: either
+  regions:
+  - uk
+  why: One client and one invoice is enough to find out whether working for yourself suits you. You choose the work, set the terms and see directly what your skills are worth to someone.
+  start:
+  - Read the GOV.UK guide to becoming a sole trader, including records and registration.
+  - Describe one service you could offer and tell five former colleagues about it.
+  - Agree the work and fee in writing, deliver it and send your invoice.
+  links:
+  - label: 'GOV.UK: become a sole trader'
+    url: https://www.gov.uk/set-up-sole-trader
+    region: uk
+    checked: '2026-10-06'
+  guide: freelancing-and-consulting-after-50
+- id: train-as-a-tourist-guide
+  title: Train as a qualified tourist guide
+  category: earn
+  kind: project
+  effort: demanding
+  cost: high
+  time: year
+  setting: either
+  company: others
+  regions:
+  - uk
+  why: Guides are paid to know a place better than anyone and to tell its stories well. The Institute of Tourist Guiding sets the standard for the Blue and Green Badge qualifications.
+  start:
+  - Read about the qualifications on the Institute of Tourist Guiding site.
+  - Take a tour with a qualified guide and ask how they trained.
+  - Find the accredited course for your area and its next intake.
+  links:
+  - label: Institute of Tourist Guiding
+    url: https://www.itg.org.uk/
+    region: uk
+    checked: '2026-10-06'
+- id: volunteer-national-trust
+  title: Volunteer with the National Trust
+  category: connect
+  kind: experience
+  effort: moderate
+  cost: free
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  why: You get behind the ropes of a historic house, garden or stretch of coast and help look after it alongside people who know the place well. Roles range from outdoor conservation work to welcoming visitors, so you can pick the side of a property that interests you most.
+  start:
+  - Open the National Trust volunteering page and search for opportunities near you.
+  - Read the volunteering frequently asked questions so you know how applying works.
+  - Apply for one role that suits your week and arrange a first visit.
+  links:
+  - label: 'National Trust: volunteer'
+    url: https://www.nationaltrust.org.uk/support-us/volunteer
+    region: uk
+    checked: '2026-10-06'
+  guide: volunteering-after-50-where-to-start
+- id: volunteer-us-national-park
+  title: Volunteer in a US national park
+  category: connect
+  kind: experience
+  effort: moderate
+  cost: free
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - us
+  why: The Volunteers-In-Parks programme lets you help care for some of the most remarkable landscapes and historic sites in the country. You can give a single day or commit year-round, close to home or somewhere you have always wanted to see.
+  start:
+  - Read the National Park Service volunteer pages to see what Volunteers-In-Parks involves.
+  - Search Volunteer.gov for opportunities at a park you can reach.
+  - Apply for one opportunity, or contact the park directly to ask what help it needs.
+  links:
+  - label: 'National Park Service: Volunteers-In-Parks'
+    url: https://www.nps.gov/subjects/volunteer/index.htm
+    region: us
+    checked: '2026-10-06'
+  - label: 'National Park Service: volunteer'
+    url: https://www.nps.gov/getinvolved/volunteer.htm
+    region: us
+    checked: '2026-10-06'
+  guide: volunteering-after-50-where-to-start
+- id: become-charity-trustee
+  title: Become a charity trustee
+  category: connect
+  kind: project
+  effort: demanding
+  cost: free
+  time: year
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: Trustees have overall control of a charity, so your judgement and working experience shape what it actually does. It is one of the few voluntary roles where you help steer an organisation rather than only lend a hand.
+  start:
+  - Read the Charity Commission guidance on what a trustee is responsible for.
+  - Create a profile on Reach Volunteering and search trustee roles that match your skills.
+  - Apply to one charity whose cause you care about and ask to observe a board meeting.
+  links:
+  - label: 'GOV.UK: charity trustee, what''s involved'
+    url: https://www.gov.uk/guidance/charity-trustee-whats-involved
+    region: uk
+    checked: '2026-10-06'
+  - label: Reach Volunteering
+    url: https://reachvolunteering.org.uk/
+    region: uk
+    checked: '2026-10-06'
+  guide: volunteering-after-50-where-to-start
+- id: join-rock-choir
+  title: Join a choir with no audition
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: Singing pop and rock songs in harmony with a room full of people is a quick way to feel part of something. Rock Choir asks for no audition and welcomes complete beginners, so the only requirement is turning up.
+  start:
+  - Use the Rock Choir site to find your nearest choir.
+  - Book a taster session at that choir.
+  - Go along, sing through the session, and decide whether to become a member.
+  links:
+  - label: Rock Choir
+    url: https://www.rockchoir.com/
+    region: uk
+    checked: '2026-10-06'
+- id: sing-barbershop-chorus
+  title: Sing with a barbershop chorus
+  category: connect
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - us
+  why: Barbershop is close four-part harmony sung without instruments, and the moment a chord locks into place is hard to forget. Chapters rehearse regularly, so you gain a standing weekly date with the same group of singers.
+  start:
+  - Visit the Barbershop Harmony Society site and open its chapter finder.
+  - Pick a chapter near you and ask to visit a rehearsal as a guest.
+  - Sing along at one rehearsal and find out which voice part suits you.
+  links:
+  - label: Barbershop Harmony Society
+    url: https://www.barbershop.org/
+    region: us
+    checked: '2026-10-06'
+- id: learn-first-aid
+  title: Complete a first aid course
+  category: connect
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Knowing what to do in the first minutes of an emergency makes you useful to everyone around you, from family to strangers. In-person classes include hands-on practice, which is what turns knowledge into something you could actually use.
+  start:
+  - 'Choose a provider: British Red Cross or St John Ambulance in the UK, American Red Cross in the US.'
+  - Pick a format that suits you, whether online, in person, or a blend of both.
+  - Book a place and complete the course through to the end.
+  links:
+  - label: 'British Red Cross: first aid'
+    url: https://www.redcross.org.uk/first-aid
+    region: uk
+    checked: '2026-10-06'
+  - label: 'St John Ambulance: training courses'
+    url: https://www.sja.org.uk/courses/
+    region: uk
+    checked: '2026-10-06'
+  - label: 'American Red Cross: first aid classes'
+    url: https://www.redcross.org/take-a-class/first-aid
+    region: us
+    checked: '2026-10-06'
+- id: learn-british-sign-language
+  title: Pass a British Sign Language Level 1 qualification
+  category: connect
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: BSL is a full language with its own grammar, and learning it opens conversations with people you could not otherwise talk to. Signature qualifications are nationally recognised, so Level 1 gives you a clear, assessed goal to aim at.
+  start:
+  - Read about the Level 1 qualification on the Signature website.
+  - Use the Signature course search to find a class, choosing face-to-face or online.
+  - Enrol with a centre and put the first lesson in your diary.
+  links:
+  - label: 'Signature: BSL qualifications'
+    url: https://www.signature.org.uk/
+    region: uk
+    checked: '2026-10-06'
+- id: learn-american-sign-language
+  title: Take a beginner course in American Sign Language
+  category: connect
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: either
+  company: others
+  regions:
+  - us
+  why: ASL is a complete visual language, and even a beginner's grasp lets you start real conversations with deaf signers. The National Association of the Deaf stresses practising with deaf signers and signing clearly rather than fast, which makes learning sociable from the start.
+  start:
+  - Read the National Association of the Deaf page on learning ASL.
+  - Contact your NAD state association and ask where classes are taught near you.
+  - Enrol in a beginner class and attend the first session.
+  links:
+  - label: 'National Association of the Deaf: learning ASL'
+    url: https://www.nad.org/resources/american-sign-language/learning-american-sign-language/
+    region: us
+    checked: '2026-10-06'
+- id: join-community-orchestra-or-band
+  title: Join a community orchestra or band
+  category: connect
+  kind: habit
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: Playing your part inside a full ensemble is a different thing entirely from practising alone at home. Leisure-time orchestras, jazz bands and other groups run across the UK, so an instrument sitting in a cupboard has somewhere to go.
+  start:
+  - Use the Making Music site to look for a group near you.
+  - Contact one group and ask whether you can sit in on a rehearsal.
+  - Take your instrument along to a rehearsal and play.
+  links:
+  - label: Making Music
+    url: https://www.makingmusic.org.uk/
+    region: uk
+    checked: '2026-10-06'
+- id: join-a-mens-shed
+  title: Spend a morning at a Men's Shed
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: A Shed is a shared workshop where people make and mend things side by side, and conversation happens over the workbench. You do not need tools, a project or any skill to walk in.
+  start:
+  - Use the UK Men's Sheds Association map to find the nearest Shed.
+  - Ring or email to ask which sessions suit a first visit.
+  - Go once with no plan beyond a cup of tea and a look round.
+  links:
+  - label: 'UK Men''s Sheds Association: find a Shed'
+    url: https://menssheds.org.uk/find-a-shed/
+    region: uk
+    checked: '2026-10-06'
+  guide: mens-sheds-walking-groups-and-clubs
+- id: become-a-magistrate
+  title: Apply to become a magistrate
+  category: connect
+  kind: project
+  effort: demanding
+  cost: free
+  time: year
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: Magistrates are volunteers who hear cases in their local courts, and no legal training is needed to apply. Few roles put ordinary judgement to such direct public use.
+  start:
+  - Read the official page on what magistrates do and who can apply.
+  - Sit in the public gallery of your local magistrates' court to watch a morning's cases.
+  - Check when your area is recruiting and prepare your application.
+  links:
+  - label: 'GOV.UK: become a magistrate'
+    url: https://www.gov.uk/become-magistrate
+    region: uk
+    checked: '2026-10-06'
+- id: mend-at-a-repair-cafe
+  title: Take something broken to a Repair Café, or go as a fixer
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - anywhere
+  why: At a Repair Café volunteers sit down with you and mend the thing together, so you leave with a working toaster and a new skill. If you are handy with a needle, a soldering iron or a bike, they want you on the other side of the table.
+  start:
+  - Find your nearest Repair Café on the official map.
+  - Take one broken item along and stay to watch it being fixed.
+  - If you can mend things yourself, ask the organisers about volunteering.
+  links:
+  - label: 'Repair Café: visit one near you'
+    url: https://www.repaircafe.org/en/visit/
+    region: any
+    checked: '2026-10-06'
+- id: record-a-life-story
+  title: Record a conversation with someone whose story should be kept
+  category: connect
+  kind: project
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: either
+  company: others
+  regions:
+  - anywhere
+  why: 'Forty minutes of someone talking about their life, in their own voice, is something a family keeps for generations. Asking the questions is its own reward: you will hear things you have never been told.'
+  start:
+  - Choose the person and ask them. Most people say yes.
+  - Use the StoryCorps question lists to prepare ten questions.
+  - Record somewhere quiet, then share the file with the family.
+  links:
+  - label: 'StoryCorps: record a conversation'
+    url: https://storycorps.org/participate/
+    region: any
+    checked: '2026-10-06'
+- id: host-a-big-lunch
+  title: Organise a Big Lunch for your street
+  category: connect
+  kind: event
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: others
+  season: Early summer
+  regions:
+  - uk
+  why: One afternoon of shared food is often all it takes to turn a row of front doors into neighbours. The Eden Project gives you a free pack and a date, which is most of the organising done.
+  start:
+  - Order the free pack from Eden Project Communities.
+  - Knock on three doors and ask those neighbours to help.
+  - 'Keep it simple: tables, chairs, and everyone brings a dish.'
+  links:
+  - label: 'Eden Project Communities: The Big Lunch'
+    url: https://www.edenprojectcommunities.com/the-big-lunch
+    region: uk
+    checked: '2026-10-06'
+- id: join-rotary
+  title: Go to a Rotary club meeting as a guest
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - anywhere
+  why: Rotary clubs are groups of local people who get practical things done, from fundraising to hands-on projects, in nearly every town in the world. Going once as a guest shows you whether it is your kind of room.
+  start:
+  - Find clubs near you on the Rotary site.
+  - Contact one and ask to come to a meeting as a guest.
+  - Ask what project they are working on and whether you could lend a hand.
+  links:
+  - label: 'Rotary International: our clubs'
+    url: https://www.rotary.org/en/get-involved/join
+    region: any
+    checked: '2026-10-06'
+- id: join-the-wi
+  title: Go along to a Women's Institute meeting
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: The WI is the largest women's organisation in the UK, and its groups run talks, crafts, walks, campaigns and a good deal else. Each one has its own character, so it is worth visiting more than one.
+  start:
+  - Use the WI site to find groups near you.
+  - Ask to come along to a meeting as a visitor.
+  - 'Try a second group before you decide: they differ.'
+  links:
+  - label: 'The WI: join and support'
+    url: https://www.thewi.org.uk/become-a-member
+    region: uk
+    checked: '2026-10-06'
+- id: join-a-wellbeing-walk
+  title: Join a Ramblers Wellbeing Walk
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  why: These are short, free, led walks where the pace is set by conversation, and nobody is left behind. It is the easiest way there is to meet people who live near you.
+  start:
+  - Find a Wellbeing Walk near you on the Ramblers site.
+  - 'Turn up in comfortable shoes: there is nothing to book for most walks.'
+  - Go three weeks running so that faces become familiar.
+  links:
+  - label: 'Ramblers: find a Wellbeing Walk'
+    url: https://www.ramblers.org.uk/go-walking/wellbeing-walks
+    region: uk
+    checked: '2026-10-06'
+  guide: mens-sheds-walking-groups-and-clubs
+- id: volunteer-at-a-food-bank
+  title: Volunteer a regular shift at a food bank
+  category: connect
+  kind: habit
+  effort: moderate
+  cost: free
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Food banks run on people who turn up on the same day each week to sort, pack and welcome. It is practical work with a team, and you see the difference it makes the same afternoon.
+  start:
+  - Find your nearest food bank through Trussell in the UK or Feeding America in the US.
+  - Ask which shifts they find hardest to fill.
+  - Commit to one shift a week for a month before deciding if it suits you.
+  links:
+  - label: 'Trussell: volunteer with us'
+    url: https://www.trussell.org.uk/support-us/volunteer
+    region: uk
+    checked: '2026-10-06'
+  - label: 'Feeding America: volunteer at your local food bank'
+    url: https://www.feedingamerica.org/take-action/volunteer
+    region: us
+    checked: '2026-10-06'
+  guide: volunteering-after-50-where-to-start
+- id: walk-a-dog-for-the-cinnamon-trust
+  title: Walk a dog for someone who no longer can
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: free
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  why: The Cinnamon Trust matches volunteers with people who can no longer walk their own dogs, so pet and owner can stay together. You get a walk with a purpose and a dog who is delighted to see you.
+  start:
+  - Read how volunteering works on the Cinnamon Trust site.
+  - Register as a volunteer for your area.
+  - Start with one walk a week and build up if it suits you both.
+  links:
+  - label: 'The Cinnamon Trust: how you can help'
+    url: https://cinnamon.org.uk/volunteers/
+    region: uk
+    checked: '2026-10-06'
+- id: volunteer-with-scouts
+  title: Help run a Scout group for a term
+  category: connect
+  kind: project
+  effort: moderate
+  cost: free
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  why: Scout groups have waiting lists because they are short of adults, not children. A term of helping with fires, knots, camps and games is as much fun for the volunteers as it looks.
+  start:
+  - Look at the volunteering pages on the Scouts site.
+  - Contact your nearest group and offer to help at one evening.
+  - Agree to a term, so you see a programme through from start to finish.
+  links:
+  - label: 'Scouts: volunteering'
+    url: https://www.scouts.org.uk/volunteers/
+    region: uk
+    checked: '2026-10-06'
+  guide: volunteering-after-50-where-to-start

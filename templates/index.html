@@ -43,6 +43,8 @@
   </div>
 </section>
 
+{% if list_total %}<a class="pz-card" href="/list/"><div><p class="kicker">Your list</p><h3>Fifty at Fifty</h3><p>{{ list_total }} things worth doing, with how to start each one. Pick your own, at any age, in your own time.</p></div><span class="pz-badge" data-fl-badge hidden></span></a>{% endif %}
+
 <a class="pz-card" href="/puzzle/"><div><p class="kicker">Today's puzzle</p><h3>The Daily Wheel</h3><p>Nine letters, one in the middle. A new one every day, gone at midnight.</p></div><span class="pz-badge" data-pz-badge hidden></span></a>
 
 <section class="manifesto">
@@ -86,4 +88,4 @@
   </div>
 </section>
 {% endblock %}
-{% block scripts %}<script src="/static/puzzle.js" defer></script>{% endblock %}
+{% block scripts %}<script src="/static/puzzle.js" defer></script><script src="/static/list-store.js" defer></script><script src="/static/list.js" defer></script>{% endblock %}

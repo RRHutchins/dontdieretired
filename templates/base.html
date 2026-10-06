@@ -42,6 +42,7 @@
       <a href="/start-here/" class="hide-sm" {% if path.startswith('/start-here/') %}aria-current="page"{% endif %}>Start here</a>
       <a href="/videos/" class="hide-sm" {% if path.startswith('/videos/') %}aria-current="page"{% endif %}>Videos</a>
       {% if cfg.feedback.live %}<a href="/your-say/" class="hide-sm" {% if path.startswith('/your-say/') %}aria-current="page"{% endif %}>Your say</a>{% endif %}
+      <a href="/list/" {% if path.startswith('/list/') %}aria-current="page"{% endif %}>Fifty at Fifty</a>
       <a href="/puzzle/" {% if path.startswith('/puzzle/') %}aria-current="page"{% endif %}>Puzzle</a>
       <a href="/shop/" {% if path.startswith('/shop/') %}aria-current="page"{% endif %}>Shop</a>
     </nav>
@@ -82,7 +83,7 @@
     <div>
       <h4>Explore</h4>
       {% for cid, c in categories.items() %}<a href="/{{ cid }}/">{{ c.label }}</a>{% endfor %}
-      <a href="/videos/">Videos</a><a href="/puzzle/">Daily puzzle</a><a href="/scam-help/">Scam help</a><a href="/feed.xml">RSS</a>
+      <a href="/videos/">Videos</a><a href="/list/">Fifty at Fifty</a><a href="/puzzle/">Daily puzzle</a><a href="/scam-help/">Scam help</a><a href="/feed.xml">RSS</a>
     </div>
     <div>
       <h4>Support us</h4>

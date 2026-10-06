@@ -1,0 +1,55 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button, near_you, card %}
+{% block title %}{{ c.title }} — Fifty at Fifty — {{ cfg.site.name }}{% endblock %}
+{% block description %}{{ c.why_short }}{% endblock %}
+{% block pagetype %}challenge{% endblock %}
+{% block content %}
+<article class="article fl-page" data-fl-challenge="{{ c.id }}" data-title="{{ c.title }}">
+  <p class="kicker"><a href="/list/">Fifty at Fifty</a> · <a href="/{{ c.category }}/">{{ categories[c.category].label }}</a></p>
+  <h1>{{ c.title }}</h1>
+  <div class="fl-invited" data-fl-invited hidden><p>A friend has invited you to do this with them.</p><button type="button" class="btn btn-small" data-fl-add="{{ c.id }}">Add to my list</button><button type="button" class="fl-x" aria-label="Close this message" data-fl-invited-close>×</button></div>
+  <p class="lead">{{ c.why }}</p>
+  <p class="fl-facts"><span>{{ L.effort[c.effort] }}</span><span>{{ L.cost[c.cost] }}</span><span>{{ L.time[c.time] }}</span><span>{{ L.setting[c.setting] }}</span><span>{{ L.company[c.company] }}</span>{% if c.region_label %}<span>{{ c.region_label }}</span>{% endif %}{% if c.season %}<span>{{ c.season }}</span>{% endif %}</p>
+
+  <div class="fl-cta">
+    <button type="button" class="btn fl-add" data-fl-add="{{ c.id }}" aria-pressed="false">Add to my list</button>
+    <a class="fl-mine-link" href="/list/#mine" data-fl-minelink hidden>See my list</a>
+    {{ share_button(cfg.site.url ~ '/list/' ~ c.id ~ '/', c.title, 'challenge') }}
+  </div>
+
+  <h2>How to start</h2>
+  <ol class="fl-start">{% for s in c.start %}<li>{{ s }}</li>{% endfor %}</ol>
+
+  <h2>Where to go</h2>
+  <ul class="fl-links">
+  {% for l in c.links %}<li><a href="{{ l.url }}" target="_blank" rel="noopener" data-fl-out>{{ l.label }}</a>{% if l.region == 'uk' and c.multi_region %} <span class="fl-reg">UK</span>{% elif l.region == 'us' and c.multi_region %} <span class="fl-reg">US</span>{% endif %}</li>{% endfor %}
+  </ul>
+  <p class="disclosure">We opened {{ 'this link' if c.links|length == 1 else 'these links' }} on {{ c.checked_human }} and found {{ 'it' if c.links|length == 1 else 'them' }} to be what we say. Dates, places and prices are on the official page, where they stay up to date.</p>
+
+  {% if c.safety %}<aside class="fl-safety"><strong>Worth knowing.</strong> {{ c.safety }}</aside>{% endif %}
+  {% if c.category in ('money', 'earn') %}<p class="disclosure">This is general information, not financial or business advice for your own circumstances.</p>{% endif %}
+
+  {% if c.local %}{{ near_you(c.local) }}{% endif %}
+
+  <aside class="fl-with">
+    <h3>Do this with someone</h3>
+    <p>Things get done when someone is expecting you. Send a friend this link and they can add it to their own list in one tap.</p>
+    <button type="button" class="btn btn-small btn-ghost" data-fl-invite data-url="{{ cfg.site.url }}/list/{{ c.id }}/?via=friend&amp;do={{ c.id }}">Invite a friend</button>
+    <span class="meta" data-fl-invite-msg role="status"></span>
+  </aside>
+
+  {% if c.guide_art or c.story_art %}
+  <h2>Read first</h2>
+  <div class="grid grid-2">
+    {% if c.guide_art %}{{ card(c.guide_art) }}{% endif %}
+    {% if c.story_art %}{{ card(c.story_art) }}{% endif %}
+  </div>
+  {% endif %}
+
+  {% if more %}
+  <h2>More like this</h2>
+  <ul class="fl-more">{% for m in more %}<li><a href="/list/{{ m.id }}/">{{ m.title }}</a> <span class="meta">{{ L.effort[m.effort] }}</span></li>{% endfor %}</ul>
+  {% endif %}
+  <p><a href="/list/">← All {{ total }} challenges</a></p>
+</article>
+{% endblock %}
+{% block scripts %}<script src="/static/list-store.js" defer></script><script src="/static/list.js" defer></script>{% endblock %}

@@ -1,0 +1,95 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button %}
+{% block title %}Fifty at Fifty: {{ challenges|length }} things worth doing, and a list of your own — {{ cfg.site.name }}{% endblock %}
+{% block description %}{{ challenges|length }} things worth doing, each with how to start and where to go. Build your own list at any age, choose your own number, and tick them off in your own time.{% endblock %}
+{% block pagetype %}list{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Your list</p><h1 data-fl-title>Fifty at Fifty</h1>
+<p class="lead">{{ challenges|length }} things worth doing, each with how to start and where to go. Make a list of your own at any age: choose your own number and take as long as you like. You don't have to do them all.</p>
+{{ share_button(cfg.site.url ~ '/list/', 'Fifty at Fifty: things worth doing, and a list of your own', 'list') }}</header>
+
+<div class="fl" data-fl>
+  <div class="fl-tabs" role="tablist">
+    <button type="button" role="tab" class="fl-tab" data-fl-tab="find" aria-selected="true">Find things to do</button>
+    <button type="button" role="tab" class="fl-tab" data-fl-tab="mine" aria-selected="false">My list <span data-fl-n></span></button>
+  </div>
+  <noscript><p>You can read every challenge below. Keeping a list of your own needs JavaScript switched on.</p></noscript>
+
+  <section data-fl-view="find">
+    <div class="fl-suggest" data-fl-suggest hidden></div>
+    <p class="fl-quiet" data-fl-ask hidden>Want suggestions? <button type="button" class="linklike" data-open-segments>Tell us what interests you</button> and we'll pick some out. Or just browse.</p>
+
+    <div class="fl-filters">
+      <label class="fl-search"><span class="sr-only">Search the challenges</span><input type="search" placeholder="Search: swim, write, volunteer…" data-fl-q></label>
+      <div class="fl-selects">
+        <label>Topic<select data-fl-f="category"><option value="">Any</option>{% for cid, c in categories.items() %}{% if cid in used_cats %}<option value="{{ cid }}">{{ c.label }}</option>{% endif %}{% endfor %}</select></label>
+        <label>Effort<select data-fl-f="effort"><option value="">Any</option>{% for k, v in L.effort.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
+        <label>Cost<select data-fl-f="cost"><option value="">Any</option>{% for k, v in L.cost.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
+        <label>Takes<select data-fl-f="time"><option value="">Any</option>{% for k, v in L.time.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
+        <label>Where<select data-fl-f="setting"><option value="">Any</option><option value="indoors">Indoors</option><option value="outdoors">Outdoors</option></select></label>
+        <label>Company<select data-fl-f="company"><option value="">Any</option><option value="solo">On my own</option><option value="others">With others</option></select></label>
+        <label>Country<select data-fl-f="region"><option value="">All of them</option><option value="uk">UK</option><option value="us">US</option><option value="anywhere">Can be done anywhere</option></select></label>
+      </div>
+      <p class="fl-actions"><button type="button" class="btn btn-small" data-fl-surprise>Surprise me</button> <button type="button" class="linklike" data-fl-clear hidden>Clear filters</button></p>
+    </div>
+    <p class="meta" data-fl-count aria-live="polite"></p>
+
+    <ul class="fl-grid" data-fl-grid>
+    {% for c in challenges %}
+      <li class="fl-item" data-id="{{ c.id }}" data-title="{{ c.title }}" data-category="{{ c.category }}" data-effort="{{ c.effort }}" data-cost="{{ c.cost }}" data-time="{{ c.time }}" data-setting="{{ c.setting }}" data-company="{{ c.company }}" data-regions="{{ c.regions|join(' ') }}" data-kind="{{ c.kind }}" data-text="{{ (c.title ~ ' ' ~ c.why ~ ' ' ~ categories[c.category].label ~ ' ' ~ c.kind)|lower }}">
+        <p class="kicker">{{ categories[c.category].label }} · {{ L.effort[c.effort] }}</p>
+        <h3><a href="/list/{{ c.id }}/">{{ c.title }}</a></h3>
+        <p class="fl-why">{{ c.why_short }}</p>
+        <p class="fl-meta">{{ L.cost[c.cost] }} · {{ L.time[c.time] }}{% if c.region_label %} · {{ c.region_label }}{% endif %}</p>
+        <button type="button" class="chip fl-add" data-fl-add="{{ c.id }}" aria-pressed="false">Add to my list</button>
+      </li>
+    {% endfor %}
+    </ul>
+    <p class="fl-quiet" data-fl-none hidden>Nothing matches all of those. <button type="button" class="linklike" data-fl-clear2>Clear the filters</button> or add a challenge of your own under My list.</p>
+  </section>
+
+  <section data-fl-view="mine" hidden>
+    <div class="fl-progress" data-fl-progress></div>
+    <p class="fl-kind" data-fl-kind role="status" aria-live="polite"></p>
+    <div class="fl-invited" data-fl-empty hidden><p>Nothing on your list yet. Browse <button type="button" class="linklike" data-fl-tab="find">the challenges</button> and add the ones you fancy, or write your own below.</p></div>
+    <ol class="fl-rows" data-fl-rows></ol>
+
+    <form class="fl-custom" data-fl-custom>
+      <label for="fl-own">Add a challenge of your own</label>
+      <div><input id="fl-own" type="text" maxlength="120" placeholder="Something that isn't in our list" required> <button class="btn btn-small" type="submit">Add</button></div>
+    </form>
+
+    <p class="fl-remind" data-fl-remind hidden><span>Your list is kept on this device only. It's worth saving a backup now and then.</span> <button type="button" class="linklike" data-fl-backup>Save a backup</button> <button type="button" aria-label="Close this reminder" data-fl-remind-close>×</button></p>
+
+    <details class="fl-settings">
+      <summary>Name your list and choose your number</summary>
+      <div class="fl-set-grid">
+        <label>What it's called<input type="text" maxlength="60" list="fl-names" data-fl-name></label>
+        <datalist id="fl-names"><option value="Forty at Forty"><option value="Fifty at Fifty"><option value="Sixty at Sixty"><option value="Seventy at Seventy"><option value="My list"></datalist>
+        <label>How many you're aiming for<input type="number" min="1" max="500" inputmode="numeric" data-fl-target></label>
+      </div>
+      <p class="meta">The number is yours to choose and change. There is no deadline, and nothing happens if you stop at twelve.</p>
+    </details>
+
+    <div class="fl-tools">
+      <button type="button" class="chip" data-fl-print>Print my list</button>
+      <button type="button" class="chip" data-fl-backup>Save a backup</button>
+      <label class="chip fl-file">Restore from backup<input type="file" accept="application/json,.json" data-fl-restore hidden></label>
+      <a class="chip" data-fl-email href="mailto:">Email my list to myself</a>
+    </div>
+    <p class="fl-kind" data-fl-toolmsg role="status"></p>
+    <p class="meta fl-small">Your list is kept on this device, in this browser only. We never see it, and there is no account. A backup is a small file you keep: restoring it adds to what is here and never wipes anything. "Email my list" opens your own email app; the address never reaches us. On an iPhone or iPad, Safari can clear a website's saved data if you don't visit for a while, and the app on your home screen keeps a separate copy from the website, so a backup is worth having.</p>
+    <ol class="fl-print" data-fl-printout></ol>
+  </section>
+</div>
+
+<div class="prose narrow fl-about">
+<h2>How it works</h2>
+<ul>
+  <li><strong>Every link was checked by us.</strong> Each challenge links to the official event, governing body or club finder, opened and read on the date shown. We don't list dates or prices that go out of date: the official page has those.</li>
+  <li><strong>It's free.</strong> The list, the suggestions and the tracking cost nothing.</li>
+  <li><strong>Do it with someone.</strong> Every challenge has an invite link you can send to a friend. For company beyond that, the clubs and groups in each challenge are the place to start{% if cfg.social.facebook %}, and you can tell us how you get on at <a href="{{ cfg.social.facebook }}" target="_blank" rel="noopener">our Facebook page</a>{% endif %}.</li>
+  <li><strong>Something missing?</strong> Add it to your own list, and <a href="mailto:{{ cfg.site.contact_email }}?subject=Fifty%20at%20Fifty%20idea">tell us</a>: we add new challenges as we verify them.</li>
+</ul>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/list-store.js" defer></script><script src="/static/list.js" defer></script>{% endblock %}

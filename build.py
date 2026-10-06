@@ -366,6 +366,11 @@ def build(make_social=True):
         return path
 
     urls = []
+    # Fifty at Fifty: which challenges belong under which story or guide (the pages themselves are built further down)
+    _chs = load_yaml(CONTENT / "challenges.yaml") if (CONTENT / "challenges.yaml").exists() else []
+    for a in arts:
+        a["challenges"] = [c for c in _chs if a["slug"] in (c.get("guide"), c.get("story"))]
+    env.globals.update(list_total=len(_chs))
     # article hero/og images
     for a in arts:
         make_card(a.get("lesson") or a["title"], cfg["categories"][a["category"]]["label"], a["category"],
@@ -415,6 +420,50 @@ def build(make_social=True):
                       "excerpt": "Pick what you received and we point you to a free tool that checks it, and to the official places to report it.",
                       "tags": ["scam", "scams", "fraud", "phishing", "fake", "suspicious", "text", "email", "call"],
                       "image": "/static/og-default.png", "art": "/static/og-default.png"})
+    # Fifty at Fifty (RUNBOOK §6h): the challenge catalogue, one page per challenge
+    ch_file = CONTENT / "challenges.yaml"
+    if ch_file.exists():
+        chs = load_yaml(ch_file)
+        by_slug = {a["slug"]: a for a in arts}
+        LBL = {"effort": {"gentle": "Gentle", "moderate": "Moderate", "demanding": "Demanding"},
+               "cost": {"free": "Free", "low": "Under £100 / $130", "mid": "£100 to £500 / $130 to $650", "high": "Over £500 / $650"},
+               "time": {"afternoon": "An afternoon", "weeks": "A few weeks", "months": "Months", "year": "A year or more"},
+               "setting": {"indoors": "Indoors", "outdoors": "Outdoors", "either": "Indoors or out"},
+               "company": {"solo": "On your own", "others": "With others", "either": "Alone or with others"}}
+        need = ("id", "title", "category", "kind", "effort", "cost", "time", "setting", "company", "regions", "why", "start", "links")
+        seen, stale = set(), 0
+        for c in chs:
+            miss = [k for k in need if not c.get(k)]
+            assert not miss, f"challenge {c.get('id')}: missing {miss}"
+            assert c["id"] not in seen and re.fullmatch(r"[a-z0-9-]+", c["id"]), f"challenge id {c['id']} is duplicated or malformed"
+            seen.add(c["id"])
+            assert c["category"] in cfg["categories"] and all(c[k] in LBL[k] for k in LBL), f"challenge {c['id']}: unknown category or band"
+            assert all(str(l.get("url", "")).startswith("https://") and l.get("label") and l.get("checked") for l in c["links"]), f"challenge {c['id']}: every link needs url, label, checked"
+            first = re.split(r"(?<=[.!?])\s", c["why"].strip())[0]
+            c["why_short"] = first if len(first) <= 170 else first[:167].rsplit(" ", 1)[0] + "…"
+            r = c["regions"]
+            c["region_label"] = "" if "anywhere" in r else " and ".join(x.upper() for x in r)
+            c["multi_region"] = len({l.get("region") for l in c["links"]}) > 1
+            oldest = min(dt.date.fromisoformat(str(l["checked"])) for l in c["links"])
+            c["checked_human"] = oldest.strftime("%-d %B %Y")
+            stale += (dt.date.today() - oldest).days > 183
+            c["guide_art"], c["story_art"] = by_slug.get(c.get("guide")), by_slug.get(c.get("story"))
+            for k in ("guide", "story"):
+                if c.get(k) and c[k] not in by_slug: print(f"LIST WARNING: challenge {c['id']} points at a {k} that does not exist: {c[k]}")
+            if c.get("local") and c["local"] not in local.get("activities", {}): c["local"] = None
+        if stale: print(f"LIST WARNING: {stale} challenges have a link last checked over six months ago. Re-verify per RUNBOOK §6h.")
+        urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}))
+        pages.append({"title": f"Fifty at Fifty: {len(chs)} things worth doing, and a list of your own", "url": "/list/", "category": "explore",
+                      "excerpt": "Pick the ones you fancy, at any age. Each has how to start and where to go. Choose your own number and tick them off in your own time.",
+                      "tags": ["list", "fifty", "challenge", "challenges", "bucket", "goals", "things", "to", "do"],
+                      "image": "/static/og-default.png", "art": "/static/og-default.png"})
+        for c in chs:
+            more = [m for m in chs if m is not c and m["category"] == c["category"]]
+            more = sorted(more, key=lambda m: (m["effort"] != c["effort"], m["kind"] != c["kind"]))[:4]
+            urls.append(out(f"/list/{c['id']}/", "challenge.html", c=c, L=LBL, more=more, total=len(chs)))
+            pages.append({"title": c["title"], "url": f"/list/{c['id']}/", "category": c["category"], "excerpt": c["why_short"],
+                          "tags": ["challenge", c["kind"], c["effort"]] + c["id"].split("-"),
+                          "image": "/static/og-default.png", "art": "/static/og-default.png"})
     urls.append(out("/start-here/", "start.html"))
     urls.append(out("/newsletter/", "newsletter.html"))
     urls.append(out("/shop/", "shop.html"))

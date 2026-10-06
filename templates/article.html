@@ -34,6 +34,10 @@
   </aside>
   {% endif %}
 
+  {% if a.challenges %}
+  <p class="fl-line"><strong>Add this to your list.</strong> On <a href="/list/">Fifty at Fifty</a>: {% for c in a.challenges[:3] %}<a href="/list/{{ c.id }}/">{{ c.title }}</a>{{ ", " if not loop.last else "" }}{% endfor %}{% if a.challenges|length > 3 %}, and <a href="/list/?topic={{ a.category }}">more</a>{% endif %}.</p>
+  {% endif %}
+
   {% if a.local %}{{ near_you(a.local) }}{% endif %}
 
   {% if a.plan %}
