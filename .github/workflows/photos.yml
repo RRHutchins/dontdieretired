@@ -1,0 +1,55 @@
+name: Photos
+# Openly licensed photographs from Wikimedia Commons (RUNBOOK §6l). The cloud session cannot reach
+# Wikimedia, so this job does the fetching:
+#   fetch   downloads the file each article names in `photo_file:`, checks its licence with the Commons API,
+#           and commits the resized copies (static/photos/) and the credits (content/photo_credits.yaml).
+#   search  lists candidates for the queries in tools/photo_queries.yaml on the `photo-research` branch,
+#           with small previews, so a session can look before choosing. That branch is never deployed.
+# A commit made here does not start a deploy. Photos go live on the next ordinary push, after a session
+# has looked at them and set `photo_checked:` on the article.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/articles/**"
+      - "tools/photo_queries.yaml"
+      - "tools/photos.py"
+      - ".github/workflows/photos.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: photos
+  cancel-in-progress: false
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml pillow
+      - name: Fetch the photos articles ask for
+        run: python tools/photos.py fetch
+      - name: Commit photos and credits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add static/photos content/photo_credits.yaml docs/IMAGE_CREDITS.md || true
+          git diff --cached --quiet || (git commit -m "Photos: fetched from Wikimedia Commons with credits" && git pull --rebase -q && git push)
+      - name: Search for candidates
+        run: |
+          if [ -s tools/photo_queries.yaml ] && grep -q '^[a-z0-9]' tools/photo_queries.yaml; then
+            python tools/photos.py search --research /tmp/photo-research
+            cp tools/photo_queries.yaml /tmp/photo-research/queries.yaml
+            git switch --orphan photo-research
+            git rm -rfq --cached . 2>/dev/null || true
+            git clean -fdxq
+            cp -r /tmp/photo-research/. .
+            git add -A
+            git commit -qm "Photo candidates (research only, not deployed)"
+            git push -f origin photo-research
+          else
+            echo "No queries; nothing to search."
+          fi
