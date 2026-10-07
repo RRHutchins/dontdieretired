@@ -122,3 +122,6 @@
   </div>
 </div>
 {% endmacro %}
+
+{# Contact link. Uses the email address only when site.contact_email_live is true; otherwise the fallback page in site.contact_url. #}
+{% macro contact(text='', subject='') %}{% if cfg.site.contact_email_live %}<a href="mailto:{{ cfg.site.contact_email }}{% if subject %}?subject={{ subject|urlencode }}{% endif %}">{{ text or cfg.site.contact_email }}</a>{% else %}<a href="{{ cfg.site.contact_url }}" rel="noopener" target="_blank">{{ text or cfg.site.contact_label }}</a>{% endif %}{% endmacro %}

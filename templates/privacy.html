@@ -13,6 +13,6 @@
 <p><strong>Your list (Fifty at Fifty).</strong> The list you build, your notes, dates and your own challenges are kept in your browser on your device. They are never sent to us. We count, anonymously, that a challenge was added or done (by its catalogue name), never what you wrote. An invite link carries the name of the challenge and nothing about you or your friend.</p>
 <p><strong>Affiliate links.</strong> Some links are affiliate links (Amazon Associates and others). We may earn a commission at no extra cost to you.</p>
 <p><strong>Embedded videos.</strong> YouTube videos are loaded in privacy-enhanced mode (youtube-nocookie.com).</p>
-<p><strong>Contact / deletion.</strong> Email <a href="mailto:{{ cfg.site.contact_email }}">{{ cfg.site.contact_email }}</a> to ask what we hold or to delete it.</p>
+<p><strong>Contact / deletion.</strong> {% if cfg.site.contact_email_live %}Email {{ contact() }}{% else %}Message us through {{ contact() }}{% endif %} to ask what we hold or to delete it.</p>
 </div>
 {% endblock %}

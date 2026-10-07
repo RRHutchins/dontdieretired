@@ -19,9 +19,10 @@
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="{{ cfg.site.twitter_handle }}">
-{% from "_macros.html" import profile_form %}{% block head %}{% endblock %}
+{% from "_macros.html" import profile_form, contact %}{% block head %}{% endblock %}
+{% set org_email = {"email": cfg.site.contact_email} if cfg.site.contact_email_live else {} %}
 <script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
- {"@type":"Organization","@id":cfg.site.url ~ "/#org","name":cfg.site.name,"url":cfg.site.url,"logo":{"@type":"ImageObject","url":cfg.site.url ~ "/static/apple-touch-icon.png"},"email":cfg.site.contact_email,"publishingPrinciples":cfg.site.url ~ "/editorial-policy/","sameAs":same_as},
+ dict({"@type":"Organization","@id":cfg.site.url ~ "/#org","name":cfg.site.name,"url":cfg.site.url,"logo":{"@type":"ImageObject","url":cfg.site.url ~ "/static/apple-touch-icon.png"},"publishingPrinciples":cfg.site.url ~ "/editorial-policy/","sameAs":same_as}, **org_email),
  {"@type":"WebSite","@id":cfg.site.url ~ "/#site","name":cfg.site.name,"url":cfg.site.url,"inLanguage":"en-GB","publisher":{"@id":cfg.site.url ~ "/#org"}}]} | tojson }}</script>
 <link rel="preload" href="/static/fonts/fraunces-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/static/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -107,7 +108,7 @@
       <a href="/editorial-policy/">Editorial policy &amp; corrections</a>
       <a href="/photo-credits/">Photo and film credits</a>
       <a href="/privacy/">Privacy &amp; cookies</a>
-      <a href="mailto:{{ cfg.site.contact_email }}">Contact</a>
+      {{ contact('Contact') }}
       <button class="linklike" data-open-segments>Change my profile</button>
     </div>
   </div>

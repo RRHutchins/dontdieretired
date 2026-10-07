@@ -61,7 +61,7 @@
 <p><strong>What we checked, and what we did not.</strong> On {{ scam_checked }} we opened each organisation's own page and confirmed who runs the tool, what it accepts and that it is free, and we confirmed every reporting route from an official page. {% if scam.tested == 'none' %}We have not tested how accurate the tools are ourselves. {% endif %}Independent reviews we read: {% for x in scam.reviews %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "." }}{% endfor %}</p>
 <p><strong>What we left out.</strong> {% for x in scam.rejected %}{{ x.name }}: {{ x.why }} {% endfor %}</p>
 <p><strong>The six questions</strong> for calls and doorstep visits use fixed rules drawn from official guidance: {% for x in scam.question_sources %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "." }}{% endfor %} They are a prompt to stop and think, not a verdict.</p>
-<p>Spotted something out of date? <a href="mailto:{{ cfg.site.contact_email }}?subject=Scam%20help%20page">Tell us</a> and we will fix it.</p>
+<p>Spotted something out of date? {{ contact('Tell us', 'Scam help page') }} and we will fix it.</p>
 <h2>Read more</h2>
 <ul>{% for g in scam_guides %}<li><a href="{{ g.url }}">{{ g.title }}</a></li>{% endfor %}</ul>
 <p>For one story and one thing to try each week, <a href="/newsletter/">join the free weekly email</a>.{% if tech_product %} Our own guide, <a href="/shop/#{{ tech_product.id }}">{{ tech_product.name }}</a>, goes through the common scams step by step.{% endif %}</p>

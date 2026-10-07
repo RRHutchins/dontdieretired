@@ -35,7 +35,7 @@
 <p>We encourage; we do not prescribe. We do not give doses or diagnoses, and we tell readers to speak to a GP (family doctor) before starting a new exercise programme if they have a health condition or have not exercised for some time. Emergency advice in our guides follows the NHS and, for readers in the United States, the CDC and the American Heart Association.</p>
 
 <h2 id="corrections">Corrections</h2>
-<p>If you think something here is wrong, out of date or unfair, email <a href="mailto:{{ cfg.site.contact_email }}">{{ cfg.site.contact_email }}</a> and tell us which page. We will check it against the source and, if you are right, correct it. When a correction changes the substance of an article, we say so at the foot of that article, with the date.</p>
+<p>If you think something here is wrong, out of date or unfair, {% if cfg.site.contact_email_live %}email {{ contact() }}{% else %}message us through {{ contact() }}{% endif %} and tell us which page. We will check it against the source and, if you are right, correct it. When a correction changes the substance of an article, we say so at the foot of that article, with the date.</p>
 <p>Requests to remove or correct something about a person in a story go to the founders the same day.</p>
 <h3>Corrections log</h3>
 <ul>

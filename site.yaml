@@ -10,6 +10,9 @@ site:
   language: "en-GB"
   author: "The Don't Die Retired team"
   contact_email: "hello@dontdieretired.com"
+  contact_email_live: false                  # false since 7 Oct 2026: the domain has no mail (MX) records, so this address bounces. While false the site shows contact_url instead and never prints the address. Set true only after a test email to it has arrived.
+  contact_url: "https://www.facebook.com/dontdieretired"
+  contact_label: "our Facebook page"
   twitter_handle: "@dontdieretired"
 
 analytics:

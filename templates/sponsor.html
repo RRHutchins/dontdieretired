@@ -13,6 +13,6 @@
     </table>
     <p>All sponsored content is clearly labelled. We only work with products we would recommend to our own parents.</p>
   </div>
-  <div class="tier"><h2>Get the media kit</h2><p>Email <a href="mailto:{{ cfg.site.contact_email }}?subject=Sponsorship">{{ cfg.site.contact_email }}</a> with what you sell and who it's for. We reply within two working days.</p></div>
+  <div class="tier"><h2>Get the media kit</h2><p>{% if cfg.site.contact_email_live %}Email {{ contact('', 'Sponsorship') }} with what you sell and who it's for. We reply within two working days.{% else %}Message us through {{ contact() }} with what you sell and who it's for.{% endif %}</p></div>
 </div>
 {% endblock %}

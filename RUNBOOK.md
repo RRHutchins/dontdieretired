@@ -246,6 +246,9 @@ A scripted probe (axe-core plus keyboard and zoom tests) took the site from 388 
 - **Names and brands.** Mention organisations and products by name only to refer to them. Never use another organisation's logo, or imply that a person or organisation in a story endorses the site or its products.
 - **If someone complains.** Any request to remove or correct something goes to Robin the same day; take the item down first if the claim looks plausible, then sort it out.
 
+## 7b. Contact address (state at 7 Oct 2026)
+`hello@dontdieretired.com` **bounces**: the domain has no mail (MX) records. Robin has the steps to set up forwarding (GoDaddy's "Forwards" if his account has it, otherwise ImprovMX with two MX records and one SPF TXT record at GoDaddy). Until a test email to it has arrived, `site.contact_email_live` stays `false` and every contact link on the site goes to the Facebook page (`site.contact_url`) through the `contact()` macro in `_macros.html`; the address is not printed anywhere on the site. **Always use `contact()` for a contact link, never a bare `mailto:` with the address.** To switch back: check `https://dns.google/resolve?name=dontdieretired.com&type=MX` shows records, have Robin confirm a test email arrived, set `contact_email_live: true`, rebuild. The sponsor page's "We reply within two working days" only shows when the address is live: confirm with Robin that someone reads the inbox before turning it on. The address is still printed on the back page of the nine product PDFs on Gumroad (v2), which is one reason to get forwarding working rather than change the address.
+
 ## 8. Hosting and DNS (one-time)
 1. Create GitHub repo `dontdieretired`, push this folder. Settings → Pages → Source: GitHub Actions.
 2. At the registrar, add DNS: `A` records for `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153; `CNAME` `www` → `<github-user>.github.io`. Enable "Enforce HTTPS" in Pages once the certificate issues.

@@ -88,7 +88,7 @@
   <li><strong>Every link was checked by us.</strong> Each challenge links to the official event, governing body or club finder, opened and read on the date shown. We don't list dates or prices that go out of date: the official page has those.</li>
   <li><strong>It's free.</strong> The list, the suggestions and the tracking cost nothing.</li>
   <li><strong>Do it with someone.</strong> Every challenge has an invite link you can send to a friend. For company beyond that, the clubs and groups in each challenge are the place to start{% if cfg.social.facebook %}, and you can tell us how you get on at <a href="{{ cfg.social.facebook }}" target="_blank" rel="noopener">our Facebook page</a>{% endif %}.</li>
-  <li><strong>Something missing?</strong> Add it to your own list, and <a href="mailto:{{ cfg.site.contact_email }}?subject=Fifty%20at%20Fifty%20idea">tell us</a>: we add new challenges as we verify them.</li>
+  <li><strong>Something missing?</strong> Add it to your own list, and {{ contact('tell us', 'Fifty at Fifty idea') }}: we add new challenges as we verify them.</li>
 </ul>
 </div>
 {% endblock %}
