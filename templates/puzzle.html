@@ -1,45 +1,119 @@
-{% extends "base.html" %}{% from "_macros.html" import share_button %}
-{% block title %}The Daily Wheel: today's word puzzle — {{ cfg.site.name }}{% endblock %}
-{% block description %}Nine letters, one in the middle, a new puzzle every day. Make as many words as you can, and keep your streak going.{% endblock %}
+{% extends "base.html" %}
+{% block title %}Daily puzzles: four new ones every day — {{ cfg.site.name }}{% endblock %}
+{% block description %}Four puzzles a day: a word wheel, a word ladder, a sudoku and a numbers target. Choose gentle, steady or hard, and keep your streak going.{% endblock %}
 {% block pagetype %}puzzle{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Daily puzzle</p><h1>The Daily Wheel</h1>
-<p class="lead">Nine letters. Make words of four letters or more, always using the one in the middle. There is at least one nine-letter word. Today's puzzle is gone at midnight.</p></header>
+<header class="page-head"><p class="kicker">Daily puzzles</p><h1>Four puzzles, new every day</h1>
+<p class="lead">A word wheel, a word ladder, a sudoku and a numbers target. Do one or do all four. Today's are gone at midnight.</p></header>
 
 <div class="pz" data-puzzle>
   <div class="pz-streak" data-pz-streak aria-live="polite"></div>
-  <noscript><p>The puzzle needs JavaScript switched on.</p></noscript>
-  <div class="pz-play" data-pz-play hidden>
-    <div class="pz-word" data-pz-word aria-live="polite" aria-label="Your word"></div>
-    <p class="pz-msg" data-pz-msg role="status">&nbsp;</p>
-    <div class="pz-wheel" data-pz-wheel></div>
-    <div class="pz-keys">
-      <button type="button" class="chip" data-pz-act="del">Delete</button>
-      <button type="button" class="chip" data-pz-act="shuffle">Shuffle</button>
-      <button type="button" class="btn" data-pz-act="enter">Enter</button>
+  <noscript><p>The puzzles need JavaScript switched on.</p></noscript>
+
+  <div class="pz-level" data-pz-levelbox hidden>
+    <span id="pz-level-label">How hard?</span>
+    <div class="chips" role="group" aria-labelledby="pz-level-label">
+      <button type="button" class="chip" data-pz-level="g" aria-pressed="false">Gentle</button>
+      <button type="button" class="chip" data-pz-level="s" aria-pressed="false">Steady</button>
+      <button type="button" class="chip" data-pz-level="h" aria-pressed="false">Hard</button>
     </div>
-    <div class="pz-progress" data-pz-progress></div>
-    <p class="pz-tools"><button type="button" class="linklike" data-pz-act="hint">Give me a hint</button></p>
-    <div class="pz-found"><h2>Words you've found</h2><p data-pz-found class="pz-list"></p></div>
-    <div class="pz-share" data-pz-share hidden></div>
   </div>
-  <p class="pz-empty" data-pz-empty hidden>There is no puzzle to show right now. Please check your connection and try again; if it still isn't here, we'll have it fixed by tomorrow.</p>
+
+  <nav class="pz-tabs" aria-label="Today's puzzles" data-pz-tabs hidden>
+    <button type="button" data-pz-tab="wheel" aria-pressed="false"><strong>Wheel</strong><span data-pz-status="wheel"></span></button>
+    <button type="button" data-pz-tab="ladder" aria-pressed="false"><strong>Ladder</strong><span data-pz-status="ladder"></span></button>
+    <button type="button" data-pz-tab="sudoku" aria-pressed="false"><strong>Sudoku</strong><span data-pz-status="sudoku"></span></button>
+    <button type="button" data-pz-tab="numbers" aria-pressed="false"><strong>Numbers</strong><span data-pz-status="numbers"></span></button>
+  </nav>
+
+  <!-- 1. The Wheel -->
+  <section class="pz-panel" data-pz-panel="wheel" aria-labelledby="pz-h-wheel" hidden>
+    <h2 id="pz-h-wheel">The Wheel</h2>
+    <p class="pz-how">Make words of four letters or more, always using the middle letter. There is at least one nine-letter word. <span data-pz-goal></span></p>
+    <div class="pz-play" data-pz-play>
+      <div class="pz-word" data-pz-word aria-live="polite" aria-label="Your word"></div>
+      <p class="pz-msg" data-pz-msg role="status">&nbsp;</p>
+      <div class="pz-wheel" data-pz-wheel></div>
+      <div class="pz-keys">
+        <button type="button" class="chip" data-pz-act="del">Delete</button>
+        <button type="button" class="chip" data-pz-act="shuffle">Shuffle</button>
+        <button type="button" class="btn" data-pz-act="enter">Enter</button>
+      </div>
+      <div class="pz-progress" data-pz-progress></div>
+      <p class="pz-tools"><button type="button" class="linklike" data-pz-act="hint">Give me a hint</button></p>
+      <div class="pz-found"><h3>Words you've found</h3><p data-pz-found class="pz-list"></p></div>
+    </div>
+  </section>
+
+  <!-- 2. The Ladder -->
+  <section class="pz-panel" data-pz-panel="ladder" aria-labelledby="pz-h-ladder" hidden>
+    <h2 id="pz-h-ladder">The Ladder</h2>
+    <p class="pz-how">Climb from the top word to the bottom one. Each rung changes exactly one letter of the word above it, and every rung must be a real word.</p>
+    <div data-lad></div>
+    <p class="pz-msg" data-lad-msg role="status">&nbsp;</p>
+    <div class="pz-keys">
+      <button type="button" class="chip" data-lad-act="clear">Start again</button>
+      <button type="button" class="btn" data-lad-act="check">Check my ladder</button>
+    </div>
+    <p class="pz-tools"><button type="button" class="linklike" data-lad-act="hint">Give me a rung</button></p>
+  </section>
+
+  <!-- 3. Sudoku -->
+  <section class="pz-panel" data-pz-panel="sudoku" aria-labelledby="pz-h-sudoku" hidden>
+    <h2 id="pz-h-sudoku">Sudoku</h2>
+    <p class="pz-how" data-sud-how></p>
+    <div class="sud" data-sud role="group" aria-label="Sudoku grid"></div>
+    <p class="pz-msg" data-sud-msg role="status">&nbsp;</p>
+    <div class="sud-pad" data-sud-pad></div>
+    <div class="pz-keys">
+      <button type="button" class="chip" data-sud-act="notes" aria-pressed="false">Notes</button>
+      <button type="button" class="chip" data-sud-act="erase">Erase</button>
+      <button type="button" class="btn" data-sud-act="check">Check</button>
+    </div>
+    <p class="pz-tools"><button type="button" class="linklike" data-sud-act="hint">Fill in one square for me</button> · <button type="button" class="linklike" data-sud-act="clear">Start again</button></p>
+  </section>
+
+  <!-- 4. Numbers -->
+  <section class="pz-panel" data-pz-panel="numbers" aria-labelledby="pz-h-numbers" hidden>
+    <h2 id="pz-h-numbers">Numbers</h2>
+    <p class="pz-how">Make the target. Tap a number, then a sign, then another number: the two become their answer. Use each number once at most. You do not have to use them all.</p>
+    <p class="num-target">Target <strong data-num-target></strong></p>
+    <div class="num-tiles" data-num-tiles></div>
+    <div class="num-ops" data-num-ops role="group" aria-label="Signs">
+      <button type="button" data-num-op="+" aria-label="plus" aria-pressed="false">+</button>
+      <button type="button" data-num-op="-" aria-label="minus" aria-pressed="false">−</button>
+      <button type="button" data-num-op="x" aria-label="times" aria-pressed="false">×</button>
+      <button type="button" data-num-op="/" aria-label="divided by" aria-pressed="false">÷</button>
+    </div>
+    <p class="pz-msg" data-num-msg role="status">&nbsp;</p>
+    <ol class="num-steps" data-num-steps></ol>
+    <div class="pz-keys">
+      <button type="button" class="chip" data-num-act="undo">Undo</button>
+      <button type="button" class="chip" data-num-act="clear">Start again</button>
+    </div>
+    <p class="pz-tools"><button type="button" class="linklike" data-num-act="hint">Give me a hint</button></p>
+  </section>
+
+  <div class="pz-share" data-pz-share hidden></div>
+  <p class="pz-empty" data-pz-empty hidden>There are no puzzles to show right now. Please check your connection and try again; if they still aren't here, we'll have it fixed by tomorrow.</p>
   <div class="pz-foot">
     <p data-pz-next class="meta"></p>
-    <p data-pz-yesterday class="meta"></p>
-    <p class="meta">Your streak and today's progress are kept on this device, in this browser only. A day counts once you reach "Good". Both British and American spellings are accepted.</p>
+    <details class="pz-yest" data-pz-yesterday hidden><summary>Yesterday's answers</summary><div data-pz-yest-body></div></details>
+    <p class="meta">Your streak, your level and today's progress are kept on this device, in this browser only. A day counts towards your streak when you finish any one of the four, at any level.</p>
   </div>
 </div>
 
 <div class="prose narrow">
-<h2>How to play</h2>
+<h2>How it works</h2>
 <ul>
-  <li>Tap the letters, or type, to build a word. Every word must use the middle letter.</li>
-  <li>Each letter can be used only as often as it appears in the wheel.</li>
-  <li>Four letters is the shortest word. No names, and no hyphens.</li>
-  <li>Reach <strong>Good</strong> and the day counts towards your streak. <strong>Very good</strong> and <strong>Excellent</strong> are there if you want more.</li>
+  <li><strong>Four different puzzles a day</strong>, the same for everyone, changing at your own midnight.</li>
+  <li><strong>Three levels.</strong> Gentle, Steady and Hard are separate puzzles, not the same one with fewer hints, so you can do the Gentle ladder and the Hard sudoku on the same day. Change level whenever you like.</li>
+  <li><strong>The Wheel:</strong> each letter can be used only as often as it appears. No names and no hyphens. British and American spellings both count. The harder the level, the more words you need.</li>
+  <li><strong>The Ladder:</strong> any real word will do for a rung, as long as only one letter changes each time.</li>
+  <li><strong>Sudoku:</strong> every row, column and outlined box holds each number once. Gentle is a small six-by-six grid. Every grid has exactly one answer.</li>
+  <li><strong>Numbers:</strong> add, subtract, multiply or divide. Every answer along the way must be a whole number above zero. Every target can be reached.</li>
 </ul>
-<p>One true story and one thing to try arrive by email each week: <a href="/newsletter/">join free</a>.</p>
+<p>Hints are free and never cost you your streak.</p>
 </div>
 {% endblock %}
 {% block scripts %}<script src="/static/puzzle.js?v={{ asset_v }}" defer></script>{% endblock %}

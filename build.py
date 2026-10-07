@@ -609,6 +609,40 @@ def build(make_social=True):
             k = key.encode()
             return base64.b64encode(bytes(b ^ k[i % len(k)] ^ 0x5A for i, b in enumerate(text.encode()))).decode()
         (DIST / "puzzle" / "d").mkdir(parents=True, exist_ok=True)
+        # The three other daily puzzles (ladder, sudoku, numbers; tools/build_daily.py), each at three levels.
+        extra_file = CONTENT / "puzzle_extra.json"
+        extra = json.loads(extra_file.read_text(encoding="utf-8")) if extra_file.exists() else {}
+        if extra:
+            from build_daily import accept_words as _accept
+            _ok = {n: set(_accept(n)) for n in (4, 5)}
+            for n in (4, 5):   # every word a reader may use as a rung
+                (DIST / "puzzle" / f"w{n}.txt").write_text("\n".join(sorted(_ok[n])), encoding="utf-8")
+            if (dt.date.fromisoformat(max(extra)) - today).days < 60:
+                print("PUZZLE WARNING: under 60 days of ladder, sudoku and numbers puzzles left. Run: python tools/build_daily.py (RUNBOOK §6g).")
+
+        def _extra_day(d):
+            """Today's other three puzzles, re-checked here with plain code before they go out."""
+            x, o = extra[d], {"L": {}, "K": {}, "N": {}}
+            for lv in "gsh":
+                path = x["ladder"][lv]
+                assert all(w in _ok[len(w)] for w in path) and all(sum(a != b for a, b in zip(p, q)) == 1 for p, q in zip(path, path[1:])), f"bad ladder {d} {lv}"
+                o["L"][lv] = {"a": path[0], "b": path[-1], "n": len(path) - 1, "s": _obf(",".join(path), d)}
+                puz, sol = x["sudoku"][lv]
+                n = int(len(sol) ** .5); br = 2 if n == 6 else 3
+                rows = [sol[r * n:(r + 1) * n] for r in range(n)]
+                groups = rows + ["".join(r[c] for r in rows) for c in range(n)] + ["".join(rows[r0 + i][c0 + j] for i in range(br) for j in range(3)) for r0 in range(0, n, br) for c0 in range(0, n, 3)]
+                assert all(sorted(g) == [str(k) for k in range(1, n + 1)] for g in groups) and all(p in ("0", s) for p, s in zip(puz, sol)), f"bad sudoku {d} {lv}"
+                o["K"][lv] = {"p": puz, "s": _obf(sol, d)}
+                num = x["numbers"][lv]; tiles = list(num["n"]); last = None
+                for step in num["w"]:
+                    a, op, b, _eq, r = step.split(); a, b, r = int(a), int(b), int(r)
+                    tiles.remove(a); tiles.remove(b)
+                    assert r > 0 and r == {"+": a + b, "-": a - b, "x": a * b, "/": a // b if a % b == 0 else -1}[op], f"bad numbers {d} {lv}"
+                    tiles.append(r); last = r
+                assert last == num["t"], f"bad numbers {d} {lv}"
+                o["N"][lv] = {"n": num["n"], "t": num["t"], "w": _obf(";".join(num["w"]), d)}
+            return o
+
         for off in range(-2, 15):
             d = (today + dt.timedelta(days=off)).isoformat()
             if d not in pdays:
@@ -623,11 +657,12 @@ def build(make_social=True):
             (DIST / "puzzle" / "d" / f"{d}.json").write_text(json.dumps({
                 "d": d, "c": centre, "o": "".join(outer), "n": n,
                 "t": [max(5, round(n * .25)), max(8, round(n * .40)), max(11, round(n * .60))],
-                "a": _obf(",".join(ans), d), "w": _obf(",".join(nines), d)}, separators=(",", ":")), encoding="utf-8")
+                "a": _obf(",".join(ans), d), "w": _obf(",".join(nines), d),
+                **(_extra_day(d) if d in extra else {})}, separators=(",", ":")), encoding="utf-8")
         urls.append(out("/puzzle/", "puzzle.html"))
-        pages.append({"title": "The Daily Wheel: today's word puzzle", "url": "/puzzle/", "category": "think",
-                      "excerpt": "Nine letters, one in the middle, a new puzzle every day. How many words can you make?",
-                      "tags": ["puzzle", "puzzles", "word", "wheel", "game", "daily", "streak"],
+        pages.append({"title": "Daily puzzles: a word wheel, a word ladder, a sudoku and a numbers target", "url": "/puzzle/", "category": "think",
+                      "excerpt": "Four new puzzles every day, each at three levels: gentle, steady or hard. Gone at midnight.",
+                      "tags": ["puzzle", "puzzles", "word", "wheel", "ladder", "sudoku", "numbers", "game", "daily", "streak"],
                       "image": "/static/og-default.png", "art": "/static/og-default.png"})
     (DIST / "pages.json").write_text(json.dumps(pages), encoding="utf-8")
 
