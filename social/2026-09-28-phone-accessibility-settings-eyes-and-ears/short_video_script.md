@@ -4,4 +4,4 @@
 [3-15s] VO: Step-by-step, from Apple's and Google's own support pages, for making text larger, using the built-in magnifier, turning on live captions and pairing hearing aids on iPhone and Android. Includes what to search for when the menu names differ.
 [15-35s] VO: Spend ten minutes in the Accessibility section of Settings: bigger text first, then magnifier, captions and hearing devices.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

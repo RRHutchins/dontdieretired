@@ -4,4 +4,4 @@
 [3-15s] VO: What the makers of ChatGPT, Claude, Copilot and Gemini say happens to your chats, and what the UK's NCSC and Canada's privacy commissioner advise. A plain never-list, a fine-to-share list, and how to get help with a private document without handing it over.
 [15-35s] VO: Give an AI assistant context, never credentials: strip names and numbers from anything private before you paste it.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

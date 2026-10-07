@@ -4,4 +4,4 @@
 [3-15s] VO: How to use an AI assistant to prepare for a medical appointment: a short timeline, three priority questions, plain-word explanations of terms you have already been given, and a write-up afterwards. Plus what the WHO and the AI makers themselves say about its limits, and a clear list of what not to ask it.
 [15-35s] VO: Let an AI assistant tidy your timeline and sharpen your questions, then take both to a clinician who can examine you.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

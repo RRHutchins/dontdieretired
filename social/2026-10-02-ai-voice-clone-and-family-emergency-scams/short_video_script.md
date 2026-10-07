@@ -4,4 +4,4 @@
 [3-15s] VO: How 'family emergency' calls work now that criminals can clone a voice from a short clip, and what the FTC, FBI, FCC, AARP and UK fraud bodies advise. The defences in order of usefulness: call back, a family safe word, no unusual payments, no secrets, plus where to report in the UK and US.
 [15-35s] VO: Hang up, ring the person back on the number you already have, and agree a family safe word in person this week.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

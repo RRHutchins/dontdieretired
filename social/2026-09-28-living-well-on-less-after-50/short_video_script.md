@@ -4,4 +4,4 @@
 [3-15s] VO: How to budget on a fixed income using MoneyHelper's free planner, where the free help is (MoneyHelper, Citizens Advice, Age UK, AARP), which benefits to check (Pension Credit in the UK; SNAP, Medicare Savings Programs and Extra Help in the US), and the household bills where money most often leaks. General information, not financial advice.
 [15-35s] VO: Build one honest monthly budget, run a free benefits check, then plug the two or three leaks that matter.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

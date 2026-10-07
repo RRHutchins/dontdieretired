@@ -4,4 +4,4 @@
 [3-15s] VO: Ravi Sood began weightlifting at 70 before double knee replacement surgery. At 82 he holds the Australian age-group deadlift record (115 kg) and was selected to represent Australia at the World Masters Powerlifting Championships.
 [15-35s] VO: Training for a medical reason — 'prehab' before surgery — can turn into a passion, and a national record.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

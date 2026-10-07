@@ -4,4 +4,4 @@
 [3-15s] VO: A start-here guide to using your phone and the internet with confidence: the settings worth changing, passwords and two-factor authentication, how scams give themselves away, video calls, photo backup, online banking and where to find free help in the UK and US.
 [15-35s] VO: Fix five settings, protect your email, learn the scam patterns and set one weekly video call — the rest follows.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

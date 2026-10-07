@@ -4,4 +4,4 @@
 [3-15s] VO: Katie Pahlow booked her first surf lessons on turning 60 in July 2023, four decades after buying a second-hand board she never learned to ride. She is part of a rising wave of women over 50 taking up the sport, according to ABC News.
 [15-35s] VO: The thing you shelved at 17 is still available at 60 — book the lesson.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

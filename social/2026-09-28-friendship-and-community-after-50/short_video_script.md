@@ -4,4 +4,4 @@
 [3-15s] VO: A plain guide to friendship, family and community: why circles shrink, what loneliness does to health according to the WHO, Campaign to End Loneliness and AARP, why acquaintances matter as much as close friends, and where to meet people in the UK and US. Start here for the Connect section.
 [15-35s] VO: Show up somewhere regularly, be the one who suggests the coffee, and treat friendship as something you do, not something that happens to you.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

@@ -4,4 +4,4 @@
 [3-15s] VO: A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
 [15-35s] VO: Declare everything you are asked, buy when you book, check the trip-length and age limits, and never rely on a GHIC or Medicare alone.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

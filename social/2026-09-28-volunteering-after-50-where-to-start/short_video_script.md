@@ -4,4 +4,4 @@
 [3-15s] VO: How to start volunteering: the UK and US directories worth using (NCVO, Do IT, Royal Voluntary Service, Age UK, AmeriCorps Seniors, VolunteerMatch), skills-based roles and trusteeships, what the evidence says about wellbeing, and a simple first-month plan.
 [15-35s] VO: Pick a role that uses one thing you can already do, commit to a month, and let the people and the purpose follow.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

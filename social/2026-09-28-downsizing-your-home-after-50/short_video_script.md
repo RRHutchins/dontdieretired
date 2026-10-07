@@ -4,4 +4,4 @@
 [3-15s] VO: A plain guide to the three ways of releasing money from your home: selling and downsizing, equity release in the UK, and reverse mortgages in the US. What each costs, what it does to benefits and inheritance, and the questions MoneyHelper, Age UK, the CFPB and the FTC say to ask. General information, not financial advice.
 [15-35s] VO: Price the whole move, not just the house; treat equity release and reverse mortgages as expensive loans; and ask the questions the regulators say to ask.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

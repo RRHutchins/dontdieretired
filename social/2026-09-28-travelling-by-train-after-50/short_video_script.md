@@ -4,4 +4,4 @@
 [3-15s] VO: How rail travel works: Interrail and Eurail senior passes, the UK Senior Railcard, Amtrak's senior discount, booking assistance, and what to expect on sleeper trains such as the Caledonian Sleeper, Nightjet and Amtrak roomettes.
 [15-35s] VO: Claim the age-based rail discounts, do the sums on a pass versus advance tickets, and use a sleeper to turn a travel day into a night's sleep.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

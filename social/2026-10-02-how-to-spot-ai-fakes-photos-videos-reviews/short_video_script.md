@@ -4,4 +4,4 @@
 [3-15s] VO: Where people actually meet AI fakes (celebrity investment videos, romance scams, fake reviews, breaking-news images) and a six-step method for checking them. Includes what UK and US law now says about fake reviews and where to report the scam versions.
 [15-35s] VO: Before you share, buy or pay, find out who posted it and whether it appears anywhere you already trust.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

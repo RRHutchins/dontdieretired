@@ -4,4 +4,4 @@
 [3-15s] VO: What calcium and vitamin D do for bones as you age, the daily amounts the NHS, Royal Osteoporosis Society and US National Institutes of Health suggest, and a table of everyday foods with their calcium content. No supplement regimes — just the official guidance and where to find it.
 [15-35s] VO: Aim for calcium from food at every meal, get vitamin D from daylight in summer, and ask your GP about the official autumn-and-winter guidance.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

@@ -4,4 +4,4 @@
 [3-15s] VO: A beginner's guide to walking holidays: UK National Trails such as the South Downs Way and Hadrian's Wall Path, the Camino to Santiago, US National Park trails, how to choose a daily distance, baggage transfer, and where the Ramblers fit in.
 [15-35s] VO: Choose a route by its daily distance, not its fame; walk that distance at home first; and let a baggage-transfer company carry the heavy bag.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

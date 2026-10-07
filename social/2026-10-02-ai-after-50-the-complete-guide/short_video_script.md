@@ -4,4 +4,4 @@
 [3-15s] VO: A start-here guide to AI: what an AI assistant is, what it does well and badly, how to hold a first conversation, how to check its answers, what to keep private, how to use it before a health appointment and how to see through voice clones, deepfakes and fake reviews. It ends with free places to learn in the UK and US and a seven-day plan.
 [15-35s] VO: Treat an AI assistant as a quick, well-read helper whose work you check, and treat any urgent voice or video asking for money as unproven.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.

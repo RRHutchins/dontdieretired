@@ -4,4 +4,4 @@
 [3-15s] VO: The complete starting guide to getting active. Covers the four types of activity, what the UK, WHO and US guidelines recommend, starting from nothing, safety, choosing an activity and staying consistent.
 [15-35s] VO: Start with ten minutes of something you can do today, then add strength and balance twice a week.
 [35-45s] VO: "If they can start, so can you. One small step today."  ON SCREEN: dontdieretired.com
-B-roll: stock footage of older adults active outdoors; captions on; upbeat acoustic track.
+Pictures: the site's own artwork and the story's own licensed photograph only (RUNBOOK §6l): no stock footage of models, no AI-generated people or places. Captions on.
