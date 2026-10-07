@@ -153,7 +153,7 @@
   }
   root.addEventListener('click', e => {
     if (e.target.closest('[data-fl-more]')) { turn++; renderSuggest(); }
-    if (e.target.closest('[data-open-segments2]')) { const m = $('#segment-modal'); if (m) m.hidden = false; }
+    if (e.target.closest('[data-open-segments2]')) { if (window.DDR && DDR.openProfile) DDR.openProfile(); }
   });
   // when the reader finishes or skips the profile questions, refresh the suggestions
   document.addEventListener('click', e => { if (e.target.closest('[data-profile-done],[data-close-segments]')) setTimeout(renderSuggest, 50); });

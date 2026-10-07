@@ -8,7 +8,7 @@
     <h2>Free</h2><p class="price">£0</p>
     <ul><li>{{ "The weekly email" if cfg.newsletter.sending else "Our email, from the first edition" }}</li><li>{{ cfg.newsletter.lead_magnet }} — <a href="/static/downloads/7-Day-Restart-Plan.pdf">preview it</a></li><li>First look at new challenges</li></ul>
     <form class="nl-form nl-form-page" action="{{ cfg.newsletter.form_action }}" method="post" target="_blank" data-nl>
-      <input type="email" name="email" placeholder="you@example.com" required aria-label="Email">
+      <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required aria-label="Email address">
       <button class="btn" type="submit">Join free</button>
     </form>
   </div>

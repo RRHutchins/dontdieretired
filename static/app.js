@@ -96,7 +96,7 @@
     if (mid && a.age) { const d = a.age - mid; if (d >= -10 && d <= 12) s += 2; else if (d > 20) s -= 3; }
     return s;
   }
-  const cardHTML = a => `<article class="card"><a class="card-img" href="${a.url}"><img src="${a.art || a.image}" alt="" loading="lazy" width="1200" height="630"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`;
+  const cardHTML = a => `<article class="card"><a class="card-img" href="${a.url}" aria-hidden="true" tabindex="-1"><img src="${a.art || a.image}" alt="" loading="lazy" width="1200" height="630"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`;
 
   function applyProfile() {
     profile = readProfile();
@@ -128,6 +128,12 @@
   }
 
   const modal = $('#segment-modal');
+  // The profile questions are a native <dialog>: the browser keeps focus inside it, Escape closes it,
+  // and focus goes back to whatever opened it. It never opens by itself.
+  const openModal = () => { if (!modal || modal.open) return; if (modal.showModal) modal.showModal(); else modal.setAttribute('open', ''); };
+  const closeModal = () => { if (!modal) return; if (modal.close) modal.close(); else modal.removeAttribute('open'); };
+  window.DDR.openProfile = openModal;
+  if (modal) modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });   // a click on the backdrop closes it
   $$('[data-profile-form]').forEach(f => {
     f.addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b || !f.contains(b)) return;
@@ -137,21 +143,25 @@
       else if (b.dataset.interest) { const i = new Set(p.interests); i.has(b.dataset.interest) ? i.delete(b.dataset.interest) : i.add(b.dataset.interest); p.interests = [...i]; }
       else if (b.hasAttribute('data-profile-done')) {
         track('profile', { level: p.level || 'none', age: p.age || 'none', interests: (p.interests || []).length });
-        if (modal) modal.hidden = true;
+        closeModal();
         if (f.dataset.go) location.hash = f.dataset.go;
         return;
       } else return;
       saveProfile(p); applyProfile();
     });
   });
-  $$('[data-open-segments]').forEach(b => b.addEventListener('click', () => { if (modal) modal.hidden = false; }));
-  $$('[data-close-segments]').forEach(b => b.addEventListener('click', () => { modal.hidden = true; store.set('ddr_segment_skipped', '1'); }));
+  $$('[data-open-segments]').forEach(b => b.addEventListener('click', openModal));
+  $$('[data-close-segments]').forEach(b => b.addEventListener('click', () => { closeModal(); store.set('ddr_segment_skipped', '1'); }));
   applyProfile();
-  // never pop the profile questions at someone a friend has just sent here: it must be easy to ignore
-  if (!friendVisit && !hasProfile(profile) && document.body.dataset.page === 'home' && !store.get('ddr_segment_skipped') && modal) {
-    let asked = false; const ask = () => { if (!asked) { asked = true; modal.hidden = false; } };
-    setTimeout(ask, 12000); window.addEventListener('scroll', () => { if (scrollY > 600) ask(); }, { passive: true });
-  }
+  // The questions are never sprung on anyone: the home page has a button for them, and that is enough.
+
+  // Topics menu: close with Escape, a click elsewhere, or when the keyboard moves on
+  $$('[data-topics]').forEach(d => {
+    const sum = $('summary', d), shut = back => { if (d.open) { d.open = false; if (back) sum.focus(); } };
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') shut(d.contains(document.activeElement)); });
+    document.addEventListener('click', e => { if (!d.contains(e.target)) shut(false); });
+    d.addEventListener('focusout', e => { if (e.relatedTarget && !d.contains(e.relatedTarget)) shut(false); });
+  });
 
   // "Was this for you?" under each article: teaches this browser what to show, and tells us what lands
   $$('[data-fit-box]').forEach(box => {
@@ -285,7 +295,7 @@
       const p = document.createElement('p');
       p.className = 'friend-more';
       p.innerHTML = 'Want more like this? <button type="button" class="linklike">Tell us what interests you</button> and the site will put those stories first.';
-      $('button', p).addEventListener('click', () => { modal.hidden = false; });
+      $('button', p).addEventListener('click', openModal);
       const anchor = $('.fit-box', art) || $('.prose', art);
       if (anchor) anchor.before(p);
     }

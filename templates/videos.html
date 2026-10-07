@@ -8,7 +8,7 @@
 {% for v in videos | sort(attribute='added', reverse=true) %}
 <div class="video" data-tags="{{ v.tags|join(',') }}" data-level="{{ v.level|default('any') }}">
   <div class="video-frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/{{ v.id }}" title="{{ v.title }}" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
-  <h3>{{ v.title }}</h3>
+  <h2 class="h3">{{ v.title }}</h2>
   <p class="meta">{{ v.channel }}</p>
   <p>{{ v.blurb }}</p>
   {% if v.why %}<p class="why"><strong>Why watch:</strong> {{ v.why }}</p>{% endif %}
@@ -18,7 +18,7 @@
 </div>
 <aside class="promo">
   <p class="kicker">Coming soon</p>
-  <h4>Our own short films</h4>
+  <h2 class="h4">Our own short films</h2>
   <p>Short video versions of our stories are planned for YouTube and Instagram. We haven't started making them yet. <a href="{{ cfg.social.youtube }}">Subscribe on YouTube</a> to see them when we do.</p>
 </aside>
 {% endblock %}

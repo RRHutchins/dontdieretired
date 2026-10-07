@@ -1,6 +1,6 @@
 {% extends "base.html" %}{% from "_macros.html" import card, ad, affiliate_box, buy_button %}
 {% block title %}{{ c.label }} — {{ cfg.site.name }}{% endblock %}
-{% block description %}{{ c.blurb }}{% endblock %}
+{% block description %}{{ (c.label ~ ": " ~ c.blurb ~ " Real stories, practical guides and plans from Don't Die Retired.") | metadesc }}{% endblock %}
 {% block content %}
 {% set pillar = items | selectattr('pillar') | first %}
 {% set guides = items | rejectattr('pillar') | selectattr('kind', 'equalto', 'guide') | list %}
@@ -63,7 +63,7 @@
 
 <aside class="promo promo-members">
   <p class="kicker">{{ cfg.newsletter.list_name if cfg.newsletter.sending else cfg.newsletter.list_name_pending }}</p>
-  <h4>{{ "One practical idea a week, free" if cfg.newsletter.sending else "Practical ideas by email, free. Starting soon." }}</h4>
+  <h3 class="h4">{{ "One practical idea a week, free" if cfg.newsletter.sending else "Practical ideas by email, free. Starting soon." }}</h3>
   <p>{{ cfg.newsletter.lead_magnet }} when you join.</p>
   <a class="btn btn-small" href="/newsletter/">Sign up</a>
 </aside>

@@ -1,15 +1,19 @@
 {% extends "base.html" %}{% from "_macros.html" import card, ad, affiliate_box, product_promo, near_you, share_button %}
-{% block title %}{{ a.title }} — {{ cfg.site.name }}{% endblock %}
-{% block description %}{{ a.excerpt }}{% endblock %}
+{% block title %}{{ a.seo_title }}{% endblock %}
+{% block description %}{{ a.meta_description }}{% endblock %}
 {% block ogtype %}article{% endblock %}
 {% block ogimage %}{{ a.image }}{% endblock %}
 {% block pagetype %}article{% endblock %}
 {% block head %}
 <script type="application/ld+json">
-{{ {"@context":"https://schema.org","@type":"Article","headline":a.title,"datePublished":a.date_iso,"dateModified":a.date_iso,
-    "image":cfg.site.url ~ a.image,"author":{"@type":"Organization","name":cfg.site.name},
-    "publisher":{"@type":"Organization","name":cfg.site.name,"url":cfg.site.url},"description":a.excerpt,"mainEntityOfPage":a.abs_url} | tojson }}
+{{ {"@context":"https://schema.org","@type":"Article","headline":a.title,"datePublished":a.date_iso,"dateModified":a.modified_iso,
+    "image":cfg.site.url ~ a.image,"inLanguage":"en-GB",
+    "author":{"@type":"Organization","@id":cfg.site.url ~ "/#org","name":cfg.site.name,"url":cfg.site.url ~ "/about/"},
+    "publisher":{"@type":"Organization","@id":cfg.site.url ~ "/#org","name":cfg.site.name,"url":cfg.site.url,"logo":{"@type":"ImageObject","url":cfg.site.url ~ "/static/apple-touch-icon.png"}},
+    "description":a.meta_description,"mainEntityOfPage":a.abs_url} | tojson }}
 </script>
+<meta property="article:published_time" content="{{ a.date_iso }}">
+<meta property="article:modified_time" content="{{ a.modified_iso }}">
 {% endblock %}
 {% block content %}
 <div class="article-layout">
@@ -48,7 +52,7 @@
     <div data-plan-locked>
       <p>Free for readers on our {{ "weekly email" if cfg.newsletter.sending else "email list" }}. Pop your address in and the plan opens straight away.</p>
       <form class="nl-form" action="{{ cfg.newsletter.form_action }}" method="post" target="_blank" data-nl data-unlock-plan>
-        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email">
+        <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required aria-label="Email address">
         <button class="btn" type="submit">Get the plan</button>
       </form>
       <p class="disclosure">{{ "One email a week" if cfg.newsletter.sending else "No more than one email a week" }}, unsubscribe anytime. Already subscribed? <a href="{{ a.plan.url }}" data-plan-link>Open the plan</a>.</p>

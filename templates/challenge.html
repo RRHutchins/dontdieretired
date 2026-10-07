@@ -1,6 +1,6 @@
 {% extends "base.html" %}{% from "_macros.html" import share_button, near_you, card %}
-{% block title %}{{ c.title }} — Fifty at Fifty — {{ cfg.site.name }}{% endblock %}
-{% block description %}{{ c.why_short }}{% endblock %}
+{% block title %}{{ (c.title ~ " — Fifty at Fifty") | seotitle }}{% endblock %}
+{% block description %}{{ c.why_short | metadesc }}{% endblock %}
 {% block pagetype %}challenge{% endblock %}
 {% block content %}
 <article class="article fl-page" data-fl-challenge="{{ c.id }}" data-title="{{ c.title }}">

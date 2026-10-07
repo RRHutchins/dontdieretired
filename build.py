@@ -74,6 +74,36 @@ def reading_time(md_text: str) -> int:
     return max(1, round(words / 220))
 
 
+def metadesc(text, n=155) -> str:
+    """Search-result description: plain text, at most n characters, ending at a sentence if one fits, else at a word."""
+    t = re.sub(r"\s+", " ", re.sub(r"[#>*_`\[\]]", "", str(text or ""))).strip()
+    if len(t) <= n:
+        return t
+    cut = t[:n]
+    end = max(cut.rfind(". "), cut.rfind("? "), cut.rfind("! "))
+    if end >= 90:
+        return cut[:end + 1]
+    return cut[:cut.rfind(" ")].rstrip(" ,;:—-") + "…"
+
+
+_MONTHS = {m: i for i, m in enumerate("January February March April May June July August September October November December".split(), 1)}
+
+
+def modified_date(body: str, published: dt.date) -> dt.date:
+    """Latest 'Updated/Corrected 7 October 2026: ...' line at the foot of an article, else the publication date."""
+    best = published
+    for d, m, y in re.findall(r"^(?:Updated|Corrected) (\d{1,2}) ([A-Z][a-z]+) (\d{4}):", body, re.M):
+        if m in _MONTHS:
+            best = max(best, dt.date(int(y), _MONTHS[m], int(d)))
+    return best
+
+
+def seo_title(title: str, site: str, n=60) -> str:
+    """Page title for search results: the headline, with the site name only when the two fit together."""
+    full = f"{title} — {site}"
+    return full if len(full) <= n else title
+
+
 def excerpt(md_text: str, n=180) -> str:
     plain = re.sub(r"[#>*_`\[\]()!]", "", md_text)
     plain = re.sub(r"\s+", " ", plain).strip()
@@ -124,6 +154,10 @@ def load_articles(cfg):
             "body_md": body,
             "reading_time": reading_time(body),
             "excerpt": fm.get("summary") or excerpt(body),
+            # search engines: a short description of its own (`description:` in front matter wins) and honest dates
+            "meta_description": metadesc(fm.get("description") or fm.get("standfirst") or fm.get("summary") or excerpt(body)),
+            "seo_title": seo_title(fm.get("seo_title") or fm["title"], cfg["site"]["name"]),
+            "modified_iso": modified_date(body, date).isoformat(),
             "tags": fm.get("tags", []),
             "image": f"/static/img/{slug}.png",          # headline card: social, og:image
             # shown on the site: a credited photo if the article has one (`photo:` + `photo_credit:`,
@@ -321,7 +355,8 @@ def write_rss(arts, cfg):
 
 def write_sitemap(urls, cfg):
     site = cfg["site"]
-    body = "".join(f"<url><loc>{site['url']}{u}</loc></url>" for u in urls)
+    lastmod = getattr(write_sitemap, "lastmod", {})   # articles only: the date the text last changed, never the build date
+    body = "".join(f"<url><loc>{site['url']}{u}</loc>" + (f"<lastmod>{lastmod[u]}</lastmod>" if u in lastmod else "") + "</url>" for u in urls)
     (DIST / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{body}</urlset>',
         encoding="utf-8")
@@ -365,6 +400,9 @@ def build(make_social=True):
     for f in sorted(STATIC.glob("*.css")) + sorted(STATIC.glob("*.js")):
         _h.update(f.read_bytes())
     env.globals.update(asset_v=_h.hexdigest()[:8])
+    env.filters["metadesc"] = metadesc
+    env.filters["seotitle"] = lambda t: seo_title(t, cfg["site"]["name"])
+    env.globals.update(same_as=[v for k, v in cfg.get("social", {}).items() if isinstance(v, str) and v.startswith("http")])
 
     def out(path: str, tpl: str, **ctx):
         p = DIST / path.strip("/") / "index.html" if path != "/" else DIST / "index.html"
@@ -532,6 +570,7 @@ def build(make_social=True):
     (DIST / "pages.json").write_text(json.dumps(pages), encoding="utf-8")
 
     write_rss(arts, cfg)
+    write_sitemap.lastmod = {a["url"]: a["modified_iso"] for a in arts}
     write_sitemap(urls, cfg)
     (DIST / "CNAME").write_text("dontdieretired.com\n")
     (DIST / "404.html").write_text(env.get_template("404.html").render(path="/404"), encoding="utf-8")

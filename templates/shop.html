@@ -10,10 +10,10 @@
 
 {% set bundle = products.products | selectattr('id','equalto','bundle') | first %}
 {% if bundle %}
-<aside class="promo promo-bundle" id="bundle">
+<aside class="promo promo-bundle" id="bundle" aria-label="The Everything bundle">
   <img class="product-img bundle-img" src="/static/img/products/bundle.jpg" alt="All nine plans and workbooks" width="480" height="480" loading="lazy">
   <p class="kicker">Best value</p>
-  <h4>{{ bundle.name }} <span class="price">{{ bundle.price }}</span></h4>
+  <h2 class="h4">{{ bundle.name }} <span class="price">{{ bundle.price }}</span></h2>
   <p>{{ bundle.blurb }}</p>
   <p class="bundle-value"><s>£66</s> if bought separately · <strong>you save £37</strong></p>
   <p class="bundle-promise"><strong>Start with one, no risk.</strong> Buy any single plan and what you paid counts in full towards the bundle. Your plan and receipt include a personal link to get the other eight for £29 minus what you've spent.</p>

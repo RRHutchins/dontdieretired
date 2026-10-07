@@ -1,6 +1,6 @@
 {% extends "base.html" %}{% from "_macros.html" import card, product_promo, share_button %}
-{% block title %}{{ plan.title }} — {{ cfg.site.name }}{% endblock %}
-{% block description %}{{ plan.summary }}{% endblock %}
+{% block title %}{{ plan.title | seotitle }}{% endblock %}
+{% block description %}{{ plan.summary | metadesc }}{% endblock %}
 {% block ogimage %}{{ a.image }}{% endblock %}
 {% block head %}<meta name="robots" content="noindex">{% endblock %}
 {% block pagetype %}plan{% endblock %}
@@ -19,7 +19,7 @@
 <aside class="sidebar">
   {% set prod = (products.products | selectattr('category', 'equalto', a.category) | list + products.products) | first %}
   {{ product_promo(prod) }}
-  <aside class="promo promo-members"><p class="kicker">Members</p><h4>Every plan, every course, ad-free</h4><p>{{ cfg.membership.name }} — {{ cfg.membership.price }}.</p><a class="btn btn-small" href="/members/">Find out more</a></aside>
+  <aside class="promo promo-members"><p class="kicker">Members</p><h3 class="h4">Every plan, every course, ad-free</h3><p>{{ cfg.membership.name }} — {{ cfg.membership.price }}.</p><a class="btn btn-small" href="/members/">Find out more</a></aside>
 </aside>
 </div>
 {% endblock %}

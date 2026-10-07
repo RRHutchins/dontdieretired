@@ -173,6 +173,16 @@ Category `ai` (/ai/). Its job: readers finish better able to use AI and harder t
 - **Plausible events:** `list_add` (id, from), `list_done` (id, or "own"), `list_invite`, `list_invite_arrival`, `list_custom` (a count only: never the reader's words), `list_backup` (save / restore / email), `list_link`, `list_surprise`, `list_print`, and **`list_active`**: once per browser per calendar month when someone with three or more items opens the list. `list_active` is the number Robin uses to decide when accounts are worth building; report it monthly.
 - **Stage 2, not built, Robin's decision:** seeing and connecting with other people doing the same challenge. It needs accounts, a database, moderation and safeguarding. Paid extras come after that; nothing free today may be locked later.
 
+### 6k. Accessibility and search basics (set 7 Oct 2026: keep these when changing templates or styles)
+A scripted probe (axe-core plus keyboard and zoom tests) took the site from 388 automated failures to 4. The rules that got it there:
+- **The profile questions are a native `<dialog>`** opened with `DDR.openProfile()` (static/app.js). It never opens by itself: no timers, no scroll triggers. It has a 44px close button at the top; Escape closes it and focus returns to the opener.
+- **The Topics menu scrolls inside itself** (`max-height` + `overflow-y`) and closes on Escape, an outside click or when focus leaves. The header wraps to two rows at 1040px and below, so adding a menu item must never cause sideways scroll: after any header change, check widths from 320 to 1280.
+- **A picture link beside a text link to the same place is hidden from assistive tech** (`aria-hidden="true" tabindex="-1"` on `.card-img`). Links inside grey label text are underlined. Tap targets are at least 44px on touch screens. The focus ring is `--focus` (dark gold), not `--gold`.
+- **Headings go in order**: one `h1`, then `h2`, then `h3`. Use the classes `.h3` / `.h4` / `.foot-h` to get a smaller look without skipping a level.
+- **Search results.** Article `<title>` is the headline, with the site name added only if both fit in 60 characters (`seo_title` in front matter overrides the headline). The description is `description:` from front matter if present, else the standfirst, cut to 155 characters at a sentence (`metadesc`). New articles should set `description:` (one plain sentence, 120 to 155 characters).
+- **Honest freshness.** `dateModified` and the sitemap `<lastmod>` come from the last "Updated <date>:" or "Corrected <date>:" line at the foot of the article, else the publication date. Never the build date.
+- Still worth a human pass some day: a screen reader (VoiceOver, TalkBack) on the dialog, the app and the Gumroad hand-off; Search Console once there is traffic.
+
 ## 7. Guard-rails
 - Never invent facts, quotes, ages or names. If the source can't be fetched, don't run the story.
 - Never give medical advice or dosing; always "check with a GP first".
