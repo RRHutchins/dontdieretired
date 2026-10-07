@@ -12,13 +12,9 @@
 <p class="scam-region">Showing advice for
   <select data-scam-region aria-label="Country"><option value="uk">the United Kingdom</option><option value="us">the United States</option><option value="both">both countries</option></select></p>
 
-<section class="scam-paid" aria-labelledby="paid-h">
-  <h2 id="paid-h">Already paid, or given your details?</h2>
-  <p>Do this first. The sooner your bank knows, the better the chance of stopping or recovering the money.</p>
-  {% for r, name in regs.items() %}<div data-reg="{{ r }}"><p class="scam-reg-label">{{ name }}</p><ol>{% for s in scam.paid[r] %}<li>{{ s }}</li>{% endfor %}</ol></div>{% endfor %}
-</section>
+<p class="scam-jump"><a href="#paid">Already paid, or given your details? Do this first ↓</a></p>
 
-<h2>What have you got?</h2>
+<h2>What do you want to check?</h2>
 <div class="scam-types">
 {% for t in scam.types %}
 <details class="scam-type" data-type="{{ t.id }}">
@@ -44,6 +40,12 @@
 
 <section class="scam-note">
   <p><strong>No tool is certain.</strong> A convincing scam can pass every check, and a genuine message can look odd. Whatever a tool says, the safe step is always the same: contact the organisation yourself, on a number or web address you already trust, not one given in the message or by the caller.</p>
+</section>
+
+<section class="scam-paid" id="paid" aria-labelledby="paid-h">
+  <h2 id="paid-h">Already paid, or given your details?</h2>
+  <p>Do this straight away. The sooner your bank knows, the better the chance of stopping or recovering the money.</p>
+  {% for r, name in regs.items() %}<div data-reg="{{ r }}"><p class="scam-reg-label">{{ name }}</p><ol>{% for s in scam.paid[r] %}<li>{{ s }}</li>{% endfor %}</ol></div>{% endfor %}
 </section>
 
 <h2>Where to report it</h2>

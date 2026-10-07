@@ -576,3 +576,5 @@ dialog.modal-card::backdrop{background:rgba(0,0,0,.55)}
 @media (max-width:560px){.brand{font-size:clamp(15px,4.3vw,19px)!important}}
 @media (max-width:440px){.scam-btn svg{display:none}.brand{gap:6px!important}.brand-mark{width:26px!important;height:26px!important}}
 @media (max-width:374px){.nav{gap:10px!important}.brand{font-size:15px!important;gap:5px!important}.brand-mark{width:24px!important;height:24px!important}.scam-btn{font-size:.76rem;padding:0 9px}.header-inner{column-gap:6px!important}.header-cta .icon-btn{min-width:38px}}
+.scam-jump{margin:0 0 6px;font-size:.98rem}.scam-jump a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
+.scam-paid{scroll-margin-top:150px}
