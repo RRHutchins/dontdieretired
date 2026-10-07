@@ -31,6 +31,7 @@ sources:
   - {title: "159 phone number", publisher: "Stop Scams UK", date: "n.d.", url: "https://stopscamsuk.org.uk/our-work/159-phone-number/"}
   - {title: "Report Fraud: New service from City of London Police", publisher: "Gov.uk (Serious Fraud Office)", date: "4 December 2025", url: "https://www.gov.uk/government/news/report-fraud-new-service-from-city-of-london-police"}
   - {title: "UK's Home for Reporting Cyber Crime & Fraud", publisher: "Report Fraud", date: "n.d.", url: "https://www.reportfraud.police.uk/"}
+  - {title: "Criminals using AI to clone voices and set up direct debits", publisher: "Press Association via The Irish News", date: "5 February 2026", url: "https://www.irishnews.com/news/uk/criminals-using-ai-to-clone-voices-and-set-up-direct-debits-LHIMTE2XMVPSFCJ7BHDI2R2XJQ"}
   - {title: "What To Do if You Were Scammed", publisher: "FTC", date: "June 2026", url: "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"}
 ---
 The phone rings and the voice is your grandson's. He has crashed the car, he is in a police station, and he needs bail money within the hour. Then a second voice comes on the line, calm and official, to explain where to send it. "Please don't tell Mum."
@@ -81,6 +82,8 @@ The FBI suggests, "if possible", limiting online content of your image or voice,
 
 The FCC's advice on unknown numbers is blunt: "Don't answer calls from unknown numbers." Our own addition: let them go to voicemail, and ring back the ones that leave a message you recognise.
 
+One newer route to your voice is the fake survey. In February 2026 National Trading Standards, the UK body that tackles scams, warned that criminals are ringing people with bogus "lifestyle surveys" to draw out personal, health and financial details, then using AI to clone the voice they have recorded and set up direct debits (automatic bank payments) with it. Victims often do not notice the money leaving. Nobody is obliged to answer a survey from a caller they were not expecting: decline and hang up. "Genuine callers won't mind," Lisa Webb of Which?, the UK consumer group, told the Press Association. Then read your bank statement each month and query any direct debit you do not recognise, using the number on your card.
+
 For the wider toolkit of AI skills and safeguards, see [AI after 50: the complete guide](/ai/ai-after-50-the-complete-guide/).
 
 ## If it has already happened
@@ -103,3 +106,5 @@ Next time you see or ring your family, try something like this:
 > "There are scam calls now that can copy a voice. If any of us ever rings another asking for money in a hurry, we ask for the family word. Ours is ____. We never text it or write it online. And if you ring me in real trouble and I hang up and call you straight back, that isn't doubt. That's the plan."
 
 Then save their current numbers, and carry on answering the phone to the people you love.
+
+Updated 7 October 2026: added National Trading Standards' February 2026 warning about fake "lifestyle survey" calls used to clone a voice and set up direct debits.

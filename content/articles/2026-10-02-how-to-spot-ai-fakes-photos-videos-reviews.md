@@ -22,6 +22,7 @@ try_this_plus:
 sources:
   - {title: "Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud", publisher: "FBI Internet Crime Complaint Center (IC3)", date: "3 December 2024", url: "https://www.ic3.gov/PSA/2024/PSA241203"}
   - {title: "Scammers Impersonating Law Enforcement and Government Officials in Fraud Schemes", publisher: "FBI Internet Crime Complaint Center (IC3)", date: "17 September 2026", url: "https://www.ic3.gov/PSA/2026/PSA260917"}
+  - {title: "AI Makes It Next to Impossible to Detect Scams. Now What?", publisher: "AARP", date: "19 March 2026", url: "https://www.aarp.org/money/scams-fraud/detecting-ai-fraud/"}
   - {title: "Deepfake Defences: Mitigating the Harms of Deceptive Deepfakes", publisher: "Ofcom", date: "23 July 2024", url: "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/deepfake-defences"}
   - {title: "Martin Lewis scam adverts", publisher: "MoneySavingExpert", date: "29 June 2026", url: "https://www.moneysavingexpert.com/shopping/fake-martin-lewis-ads/"}
   - {title: "Investment scams surge: how deepfakes and dodgy finfluencers put your money at risk", publisher: "Which?", date: "27 August 2026", url: "https://www.which.co.uk/news/article/investment-scams-surge-how-deepfakes-and-dodgy-finfluencers-put-your-money-at-risk-aaAKh0B7SkOM"}
@@ -48,6 +49,8 @@ The word for this is a deepfake: in Ofcom's definition (Ofcom is the UK communic
 **The romance or friendship scam.** The FBI says generated photos are used to build believable profiles for romance and investment fraud, and that deepfake video is used in fake video calls. The script is the old one the FTC (the US consumer protection agency) describes: someone who can never quite meet in person and eventually needs money.
 
 **The "official" on a video call.** In a warning issued in September 2026, the FBI said scammers posing as police officers or government officials now use AI to appear as those officials on video calls, "adding the appearance of legitimacy to the scam". It counted nearly 61,000 complaints about law enforcement or government impersonation scams between January 2025 and July 2026, with losses of more than $1.6 billion; those figures cover these impersonation scams as a whole. The FBI's advice is that law enforcement and government authorities will never contact you by telephone or text message to demand payment, and will never ask to be paid by prepaid card, cryptocurrency or courier. To check, find the agency's official, publicly listed contact details yourself and use those, not the ones the caller gives you. The warning is American, but the check works anywhere.
+
+**The job interview with nobody there.** In March 2026 AARP, the US membership organisation for people aged 50 and over, described a 65-year-old communications executive who applied for a well-paid remote job and was interviewed by text on WhatsApp by what turned out to be a chatbot. It responded to his answers and asked him to say more. A 10-page job description followed, then a 30-minute phone interview with a synthesised voice, and a job offer within three days. The speed made him suspicious, and he broke off before any harm was done. AARP's advice is to slow down, check independently and guard your personal details. A real employer can be reached through the contact details on its own website. Our guide to [job hunting](/earn/job-hunting-after-50/) covers the rest.
 
 **The fake review.** Plausible five-star write-ups, which AI can now generate to order.
 
@@ -100,3 +103,5 @@ Keep some proportion. Most of what you see online is real: real photographs, rea
 For the wider picture of using AI well, start with [AI after 50: the complete guide](/ai/ai-after-50-the-complete-guide/).
 
 Updated 5 October 2026: added the FBI's September 2026 warning about scammers using AI to pose as police or government officials on video calls.
+
+Updated 7 October 2026: added AARP's March 2026 account of an AI chatbot running a fake job interview.
