@@ -219,7 +219,13 @@ A scripted probe (axe-core plus keyboard and zoom tests) took the site from 388 
 - **Headings go in order**: one `h1`, then `h2`, then `h3`. Use the classes `.h3` / `.h4` / `.foot-h` to get a smaller look without skipping a level.
 - **Search results.** Article `<title>` is the headline, with the site name added only if both fit in 60 characters (`seo_title` in front matter overrides the headline). The description is `description:` from front matter if present, else the standfirst, cut to 155 characters at a sentence (`metadesc`). New articles should set `description:` (one plain sentence, 120 to 155 characters).
 - **Honest freshness.** `dateModified` and the sitemap `<lastmod>` come from the last "Updated <date>:" or "Corrected <date>:" line at the foot of the article, else the publication date. Never the build date.
-- Still worth a human pass some day: a screen reader (VoiceOver, TalkBack) on the dialog, the app and the Gumroad hand-off; Search Console once there is traffic.
+- Still worth a human pass some day: a screen reader (VoiceOver, TalkBack) on the dialog, the app and the Gumroad hand-off.
+- **Search Console, state at 7 Oct 2026** (read in Robin's browser; the cloud session cannot reach it). 51 pages indexed, 28 not: 21 "Crawled - currently not indexed", 4 "Alternative page with proper canonical tag", 3 "Excluded by noindex". The build itself is clean (203 sitemap pages, each with a matching canonical, no internal link to a redirect). What was wrong:
+  - **`http://` pages answered 200 instead of redirecting**, because "Enforce HTTPS" was off in the repo's Settings → Pages, so Google met every page twice; about half the "not indexed" examples were the `http://` copies. Only Robin can tick it (the Pages API is closed to the cloud session). Check from a browser, not the shell: `http://dontdieretired.com/connect/` must end up on `https://`.
+  - **`https://www.dontdieretired.com` has no valid certificate** (DNS is right: `www` CNAME → `rrhutchins.github.io`). Removing and re-saving the custom domain in Settings → Pages makes GitHub issue one covering both names.
+  - The plans are `noindex` on purpose (email-gated), `/search/?q=…` and `?via=friend` addresses are alternates on purpose: those rows are expected and need no fix.
+  - Do not write `href="${…}"` inside an inline script: crawlers read it as a real link (the search page produced `/search/${a.url}`, a 404). Spell the attribute through a variable, as `templates/search.html` now does.
+  - "Crawled - currently not indexed" on `https://` pages of a nine-day-old site is Google deciding in its own time; do not churn the pages or their dates to chase it. Re-read the report weekly once Enforce HTTPS is on.
 
 ## 7. Guard-rails
 - Never invent facts, quotes, ages or names. If the source can't be fetched, don't run the story.
