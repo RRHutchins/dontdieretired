@@ -5,8 +5,8 @@
 {% block content %}
 {% set regs = {'uk': 'United Kingdom', 'us': 'United States'} %}
 <header class="page-head"><p class="kicker"><a href="/tech/">Tech</a> · Free, no sign-up</p><h1>Scam checker</h1>
-<p class="lead">Pick what it was. We'll point you to a free tool that can check it, and tell you what to do next. Scams catch careful people every day, so checking is never a silly thing to do.</p>
-{{ share_button(cfg.site.url ~ '/scam-help/', 'Scam checker: check it before you act') }}</header>
+<p class="lead">Pick what you want to check. We'll point you to a free tool and tell you what to do next. Scams catch careful people every day, so checking is never a silly thing to do.</p>
+</header>
 
 <div class="scam" data-scam>
 <p class="scam-region">Showing advice for
@@ -18,7 +18,7 @@
 <div class="scam-types">
 {% for t in scam.types %}
 <details class="scam-type" data-type="{{ t.id }}">
-  <summary>{{ t.label }}</summary>
+  <summary><span class="scam-what">{{ t.label }}</span><span class="scam-cta"><span class="scam-cta-closed">Check it</span><span class="scam-cta-open">Close</span></span></summary>
   <div class="scam-body">
     <p><strong>First:</strong> {{ t.advice }}</p>
     {% if t.id in ['call', 'doorstep'] %}
@@ -41,6 +41,7 @@
 <section class="scam-note">
   <p><strong>No tool is certain.</strong> A convincing scam can pass every check, and a genuine message can look odd. Whatever a tool says, the safe step is always the same: contact the organisation yourself, on a number or web address you already trust, not one given in the message or by the caller.</p>
 </section>
+<p>Know someone who would use this? {{ share_button(cfg.site.url ~ '/scam-help/', 'Scam checker: check it before you act') }}</p>
 
 <section class="scam-paid" id="paid" aria-labelledby="paid-h">
   <h2 id="paid-h">Already paid, or given your details?</h2>
