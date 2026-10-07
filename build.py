@@ -461,7 +461,7 @@ def build(make_social=True):
         tech_product = next((p for p in products.get("products", []) if p.get("id") == "techconfident"), None)
         urls.append(out("/scam-help/", "scam-help.html", scam=scam, scam_checked=checked.strftime("%-d %B %Y"),
                         scam_guides=guides, tech_product=tech_product))
-        pages.append({"title": "Scam help: check it before you act", "url": "/scam-help/", "category": "tech",
+        pages.append({"title": "Scam checker: check it before you act", "url": "/scam-help/", "category": "tech",
                       "excerpt": "Pick what you received and we point you to a free tool that checks it, and to the official places to report it.",
                       "tags": ["scam", "scams", "fraud", "phishing", "fake", "suspicious", "text", "email", "call"],
                       "image": "/static/og-default.png", "art": "/static/og-default.png"})

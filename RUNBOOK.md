@@ -134,6 +134,7 @@ Category `ai` (/ai/). Its job: readers finish better able to use AI and harder t
 - **YouTube: account exists, nothing posted** (no videos yet). **TikTok: no account**; its footer link is hidden by the empty `social.tiktok`.
 
 ## 6e. Scam help page (added 6 Oct 2026)
+**Name and placement (set 7 Oct 2026, Robin):** readers see it as **Scam checker** everywhere (page title, menus, cards, app); the address stays `/scam-help/`. It is a green button in the header on every screen size, because we want people to feel confident using it often. On phones it sits beside the name and the email link moves into the menu row. Do not rename it or bury it.
 `/scam-help/` sends each kind of suspected scam to an existing free checking tool, and has our own six questions for phone calls and doorstep visits, which no tool can check. Data: `content/scam_help.yaml`; page: `templates/scam-help.html`; questions and country switch: `static/scam.js` (the rules are written out in its opening comment).
 - **Only what we have confirmed.** A tool or reporting route goes in only after its own official page has been fetched that day and says what the entry says. Never add a phone number, short code, email address or link from memory. If it cannot be confirmed, leave it out and say so in the report.
 - **Never claim testing we have not done.** `tested: none` in the YAML makes the page say we have not tested the tools' accuracy ourselves. Change it only after real hands-on testing, and then describe exactly what was tried.
