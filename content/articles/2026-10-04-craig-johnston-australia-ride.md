@@ -28,6 +28,7 @@ sources:
 photo_file: "File:Eyre Highway, Nullarbor, SA, 2017 (02).jpg"
 photo_caption: "The Eyre Highway on the Nullarbor Plain, South Australia."
 photo_alt: "An empty two-lane road running dead straight to the horizon through low scrub under a clear sky."
+photo_checked: 2026-10-07
 ---
 On 23 July Craig Johnston wheeled a loaded bicycle to Byron Bay, the most easterly point of mainland Australia, and pointed it at the other side of the country. Steep Point, in Western Australia, is the most westerly. Between the two lie about 6,300 km (3,900 miles), three deserts and the Nullarbor Plain.
 

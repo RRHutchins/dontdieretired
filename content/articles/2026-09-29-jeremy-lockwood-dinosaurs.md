@@ -34,6 +34,7 @@ video:
 photo_file: "File:Dinosaur Isle.JPG"
 photo_caption: "Dinosaur Isle, the museum at Sandown on the Isle of Wight where many of the bones he studied are kept."
 photo_alt: "A low grey museum building with a pointed white entrance canopy, behind a road and flower beds."
+photo_checked: 2026-10-07
 ---
 The fossils Jeremy Lockwood has made his name on were not dug out of a cliff. They were already in museum drawers, waiting for someone to look at them properly.
 

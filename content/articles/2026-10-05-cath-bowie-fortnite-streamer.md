@@ -32,7 +32,8 @@ video:
   channel: "Guinness World Records"
 photo_file: "File:Aberdeen - Union Street - geograph.org.uk - 5269444.jpg"
 photo_caption: "Union Street, Aberdeen."
-photo_alt: "A sunlit street of grey granite buildings with a bus and people crossing."
+photo_alt: "A sunlit street corner of grey granite buildings under a blue sky, with a bus and people crossing."
+photo_checked: 2026-10-07
 ---
 In 2017 Cath Bowie walked into her grandson's bedroom in Aberdeen and found him playing a new game called Fortnite. He was 17. She was, in her own words to Guinness World Records, "instantly intrigued".
 

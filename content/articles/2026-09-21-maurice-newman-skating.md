@@ -23,7 +23,8 @@ sources:
   - {title: "Meet the Londoners who refuse to age gracefully", publisher: "Time Out London", date: "16 October 2024", url: "https://timeout.com/london/city-life/meet-the-londoners-who-refuse-to-age-gracefully"}
 photo_file: "File:Berlin inlinemarathon riesengrppe.JPG"
 photo_caption: "The main field in the Berlin Inline Marathon, 2009. The picture shows the race, not Maurice Newman."
-photo_alt: "A long, dense pack of inline skaters in helmets rounding a bend on a city street, watched from the kerb."
+photo_alt: "A dense pack of inline skaters in helmets and racing kit rounding a bend on a city street, with spectators at the kerb."
+photo_checked: 2026-10-07
 ---
 Sixtieth birthdays tend to be marked with a meal, a card about being "over the hill" and, if you are lucky, a decent bottle of something. Maurice Newman marked his by putting on a pair of roller skates for the first time.
 

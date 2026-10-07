@@ -32,6 +32,7 @@ video:
 photo_file: "File:Remains of Farallon Islands Light in 2014.jpg"
 photo_caption: "Southeast Farallon Island in 2014, with the old lighthouse on its summit."
 photo_alt: "Steep bare rock rising from a grey sea, with a small building on the highest point."
+photo_checked: 2026-10-07
 ---
 The water under the Golden Gate Bridge was 57°F (14°C) when Amy Appelhans Gubser got in. By the time she reached the Farallon Islands, 29.7 miles (47.8 km) out in the Pacific, it was 43°F (6°C). She was wearing a swimsuit, a cap, goggles and ear protection.
 

@@ -25,6 +25,7 @@ sources:
 photo_file: "File:Deadlift grip.JPG"
 photo_caption: "Hands on the bar before a lift. The picture is not of Martine Barons."
 photo_alt: "Close view of two hands gripping a barbell near the floor."
+photo_checked: 2026-10-07
 ---
 Martine Barons, a University of Warwick academic then in her early sixties, spent the lockdown learning how to deadlift.
 

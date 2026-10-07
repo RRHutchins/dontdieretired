@@ -29,6 +29,7 @@ video:
 photo_file: "File:US Navy 051015-N-9419C-004 Almost 2,000 triathletes begin the 2.4-mile swim at the Ironman World Championship triathlon, held in Kailua-Kona, Hawaii.jpg"
 photo_caption: "The swim start of the Ironman World Championship at Kailua-Kona, Hawaii, photographed in 2005."
 photo_alt: "Hundreds of swimmers in coloured caps churning the sea white at the start of a race."
+photo_checked: 2026-10-07
 ---
 An Ironman is a 3.8 km open-water swim, a 180 km bike ride and then a full 26.2-mile marathon, one after the other, with a cut-off of 17 hours. It is the hardest one-day event most amateur athletes will ever attempt.
 

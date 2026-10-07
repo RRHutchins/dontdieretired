@@ -21,7 +21,7 @@
 {% if photo_arts %}
 <ul class="credit-list">
 {% for a in photo_arts %}{% if a.photo.open %}
-<li><a href="{{ a.url }}">{{ a.title }}</a><br>{{ a.photo.caption }} {{ a.photo.label }} by {{ a.photo.author }}, licensed {% if a.photo.licence_url %}<a href="{{ a.photo.licence_url }}" rel="noopener license">{{ a.photo.licence }}</a>{% else %}{{ a.photo.licence }}{% endif %}. <a href="{{ a.photo.page }}" rel="noopener">The original on Wikimedia Commons</a>.</li>
+<li><a href="{{ a.url }}">{{ a.title }}</a><br>{{ a.photo.caption }} {{ a.photo.label }} by {{ a.photo.author }}, {% if a.photo.licence_url %}licensed <a href="{{ a.photo.licence_url }}" rel="noopener license">{{ a.photo.licence }}</a>{% elif 'ublic' in a.photo.licence %}in the public domain{% else %}licensed {{ a.photo.licence }}{% endif %}. <a href="{{ a.photo.page }}" rel="noopener">The original on Wikimedia Commons</a>.</li>
 {% else %}
 <li><a href="{{ a.url }}">{{ a.title }}</a><br>{{ a.photo.caption }} Photo: {{ a.photo.author }}, used with permission.</li>
 {% endif %}{% endfor %}

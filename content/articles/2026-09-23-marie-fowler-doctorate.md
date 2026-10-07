@@ -29,6 +29,7 @@ video:
 photo_file: "File:Howard University Washington DC - Founders Library.jpg"
 photo_caption: "Founders Library at Howard University in Washington, DC."
 photo_alt: "A red-brick library with a white clock tower, behind a lawn and trees."
+photo_checked: 2026-10-07
 ---
 Marie Fowler already had a bachelor's degree and two master's degrees from Maple Springs Baptist Bible College and Seminary. What she did not have was any recent experience of a classroom. She had been out of school, as she puts it, since 1959.
 

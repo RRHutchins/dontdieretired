@@ -34,6 +34,7 @@ video:
 photo_file: "File:Cap Blanc-Nez, view to the cliffs of Dover.JPG"
 photo_caption: "The white cliffs of England, seen across the Channel from Cap Blanc-Nez on the French coast."
 photo_alt: "A pale line of chalk cliffs on the horizon beyond a wide stretch of blue sea, with a small boat crossing."
+photo_checked: 2026-10-07
 ---
 On 1 November 1998 Karl Bushby stood in Punta Arenas, at the southern end of Chile, with about $500 and two rules. He would use no mechanical transport of any kind. And he would not go home to Hull, in the north of England, until he had walked there.
 

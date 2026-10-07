@@ -37,6 +37,7 @@ video:
 photo_file: "File:Arachnothera flammifera Keulemans (cropped).jpg"
 photo_caption: "The orange-tufted spiderhunter, the 10,000th species on his list, in a plate by the bird artist John Gerrard Keulemans."
 photo_alt: "A painting of two olive-green birds with long curved bills and orange patches on their sides, perched among leaves."
+photo_checked: 2026-10-07
 photo_label: "Illustration"
 ---
 Near Bislig, on the Philippine island of Mindanao, on 9 February 2024, a local guide named Felizardo Goring helped an American visitor find an orange-tufted spiderhunter. For the visitor, it was bird number 10,000.

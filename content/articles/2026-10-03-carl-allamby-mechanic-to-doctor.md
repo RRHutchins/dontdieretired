@@ -31,7 +31,8 @@ video:
   channel: "News 5 Cleveland"
 photo_file: "File:Cleveland, Ohio Skyline at Sunrise at Edgewater Park (8668179983).jpg"
 photo_caption: "Cleveland, Ohio, before sunrise, seen from Edgewater Park."
-photo_alt: "A city skyline lit up against an orange dawn sky across dark water."
+photo_alt: "A city skyline with its lights on against an orange and blue dawn sky, across dark water."
+photo_checked: 2026-10-07
 ---
 The biology class was compulsory. Carl Allamby was in his thirties, owned a car repair business in Cleveland, Ohio, and was studying at night for a business degree he hoped would help him expand it. The course required one science module. He had put it off until near the end.
 

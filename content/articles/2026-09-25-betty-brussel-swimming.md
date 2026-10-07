@@ -28,7 +28,8 @@ video:
   channel: "CBC British Columbia"
 photo_file: "File:Swimming pool with lane ropes in place.jpg"
 photo_caption: "A competition pool set up for a meet in Edmonton, Alberta. It is not the pool in the story."
-photo_alt: "An empty indoor racing pool with blue and yellow lane ropes and flags overhead."
+photo_alt: "An indoor racing pool with blue and yellow lane ropes, blue flags overhead and people on the far poolside."
+photo_checked: 2026-10-07
 ---
 On 20 January 2024, at a pool in British Columbia, a 99-year-old woman swam 400 metres freestyle in 12 minutes 50.3 seconds. The previous world record for her age group was 16:36.80. She beat it by nearly four minutes.
 

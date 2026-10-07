@@ -28,6 +28,7 @@ video:
 photo_file: "File:Steppesko.jpeg"
 photo_caption: "A pair of tap shoes."
 photo_alt: "A pair of red and white tap shoes on a dark floor."
+photo_checked: 2026-10-07
 ---
 Gene Edwards, 83, of Dallas, Texas, started tap dancing lessons around 2023. He takes a weekly class at the Dallas Conservatory, and he competed in Frisco's Got Talent. There is no medal at the end of this one. What there is, in his own words, is the thing every story on this site is really about:
 

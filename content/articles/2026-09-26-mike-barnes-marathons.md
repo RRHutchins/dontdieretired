@@ -25,6 +25,7 @@ sources:
 photo_file: "File:The bridge at Goosnargh Mill - geograph.org.uk - 4516969.jpg"
 photo_caption: "The lane at Goosnargh Mill, in Mike Barnes's home village in Lancashire."
 photo_alt: "A narrow country lane crossing a small stone bridge under trees."
+photo_checked: 2026-10-07
 ---
 Mike Barnes did not start running because he wanted to be a runner. He started because he needed somewhere to put his grief.
 

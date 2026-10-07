@@ -31,6 +31,7 @@ sources:
 photo_file: "File:Morecambe Seafront - geograph.org.uk - 8002998.jpg"
 photo_caption: "The promenade at Morecambe, Lancashire."
 photo_alt: "A red-surfaced seafront promenade with blue railings curving beside the bay."
+photo_checked: 2026-10-07
 ---
 The posters went up in April on bus stops in three areas, Sheffield, Plymouth, and Morecambe and Lancaster: comic strips about artificial intelligence, placed where people wait.
 

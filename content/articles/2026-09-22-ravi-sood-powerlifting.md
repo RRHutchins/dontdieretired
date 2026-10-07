@@ -27,7 +27,8 @@ video:
   channel: "ABC News (Australia)"
 photo_file: "File:2025 Skelton Gym Powerlifting Competition (9326219).jpg"
 photo_caption: "Plates going on the bar at a powerlifting competition."
-photo_alt: "Hands sliding a heavy black weight plate on to a loaded barbell."
+photo_alt: "Hands steadying a stack of heavy black weight plates on a barbell on a gym floor."
+photo_checked: 2026-10-07
 ---
 Ravi Sood, from Canberra, was in his seventies and facing a double knee replacement when his surgeon gave him a piece of advice that most patients would file under "get through it". Sood filed it under "get ready".
 
