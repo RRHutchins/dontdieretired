@@ -22,6 +22,13 @@ try_this_plus:
 sources:
   - {title: "99-year-old swimmer Betty Brussel breaks three world records", publisher: "CBC Radio, The Current", date: "4 February 2024", url: "https://www.cbc.ca/radio/thecurrent/99-year-old-swimmer-betty-brussel-1.7101711"}
   - {title: "Betty Brussel, B.C. competitive swimmer", publisher: "The Globe and Mail", date: "January 2024", url: "https://www.theglobeandmail.com/sports/article-betty-brussel-bc-competitive-swimmer/"}
+video:
+  id: "43xon8T4PCI"
+  title: "99-year-old swimmer making waves on the competition circuit has no plans to slow down"
+  channel: "CBC British Columbia"
+photo_file: "File:Swimming pool with lane ropes in place.jpg"
+photo_caption: "A competition pool set up for a meet in Edmonton, Alberta. It is not the pool in the story."
+photo_alt: "An empty indoor racing pool with blue and yellow lane ropes and flags overhead."
 ---
 On 20 January 2024, at a pool in British Columbia, a 99-year-old woman swam 400 metres freestyle in 12 minutes 50.3 seconds. The previous world record for her age group was 16:36.80. She beat it by nearly four minutes.
 

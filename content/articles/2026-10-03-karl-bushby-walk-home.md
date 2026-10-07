@@ -27,6 +27,13 @@ sources:
   - {title: "Karl Bushby left Chile in 1998 to walk home to Hull; 28 years later, he will swim the Channel", publisher: "The Times of India, via inkl", date: "September 2026", url: "https://www.inkl.com/news/karl-bushby-left-chile-in-1998-to-walk-home-to-hull-28-years-later-he-will-swim-the-channel"}
   - {title: "Adventurer's 'mixed feelings' as journey nears end", publisher: "BBC News, via AOL", date: "2026", url: "https://www.aol.com/articles/adventurers-mixed-feelings-journey-nears-014907395.html"}
   - {title: "Physical activity fact sheet", publisher: "World Health Organization, Europe", date: "1 September 2021", url: "https://www.who.int/europe/news-room/fact-sheets/item/physical-activity"}
+video:
+  id: "q0OIsOCHcJE"
+  title: "British globe trekker tackles final leg of 27-year journey | REUTERS"
+  channel: "Reuters"
+photo_file: "File:Cap Blanc-Nez, view to the cliffs of Dover.JPG"
+photo_caption: "The white cliffs of England, seen across the Channel from Cap Blanc-Nez on the French coast."
+photo_alt: "A pale line of chalk cliffs on the horizon beyond a wide stretch of blue sea, with a small boat crossing."
 ---
 On 1 November 1998 Karl Bushby stood in Punta Arenas, at the southern end of Chile, with about $500 and two rules. He would use no mechanical transport of any kind. And he would not go home to Hull, in the north of England, until he had walked there.
 

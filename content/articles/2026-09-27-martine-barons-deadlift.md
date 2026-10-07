@@ -22,6 +22,9 @@ try_this_plus:
 sources:
   - {title: "'Deadlifting grandma: I'm a world champion'", publisher: "BBC CWR, via Yahoo Sports", date: "17 September 2026", url: "https://sports.yahoo.com/articles/deadlifting-grandma-im-world-champion-053747104.html"}
   - {title: "65-year-old grandmother crowned world champion for third time", publisher: "People", date: "26 September 2026", url: "https://sports.yahoo.com/articles/65-old-grandmother-crowned-3-213000665.html"}
+photo_file: "File:Deadlift grip.JPG"
+photo_caption: "Hands on the bar before a lift. The picture is not of Martine Barons."
+photo_alt: "Close view of two hands gripping a barbell near the floor."
 ---
 Martine Barons, a University of Warwick academic then in her early sixties, spent the lockdown learning how to deadlift.
 

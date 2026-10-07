@@ -28,6 +28,9 @@ sources:
   - {title: "People's Panel on AI", publisher: "Connected by Data", date: "2023", url: "https://connectedbydata.org/projects/2023-peoples-panel-on-ai"}
   - {title: "How does the public feel about Artificial Intelligence (AI)?", publisher: "National Centre for Social Research, for the Ada Lovelace Institute and the Alan Turing Institute", date: "1 March 2025", url: "https://natcen.ac.uk/publications/how-does-public-feel-about-artificial-intelligence-ai"}
   - {title: "Retired AI learner proves age is no barrier", publisher: "Lincolnshire County Council", date: "30 July 2026", url: "https://www.lincolnshire.gov.uk/news/article/2859/retired-ai-learner-proves-age-is-no-barrier"}
+photo_file: "File:Morecambe Seafront - geograph.org.uk - 8002998.jpg"
+photo_caption: "The promenade at Morecambe, Lancashire."
+photo_alt: "A red-surfaced seafront promenade with blue railings curving beside the bay."
 ---
 The posters went up in April on bus stops in three areas, Sheffield, Plymouth, and Morecambe and Lancaster: comic strips about artificial intelligence, placed where people wait.
 

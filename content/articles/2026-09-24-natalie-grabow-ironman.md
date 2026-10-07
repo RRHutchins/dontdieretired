@@ -22,6 +22,13 @@ try_this_plus:
 sources:
   - {title: "80-year-old woman who started triathlons in her 60s becomes oldest to finish an Ironman", publisher: "Guinness World Records", date: "14 November 2025", url: "https://www.guinnessworldrecords.com/news/2025/11/80-year-old-woman-who-started-triathlons-in-her-60s-becomes-oldest-to-finish-an-ironman"}
   - {title: "Natalie Grabow makes history at the Ironman World Championship in Kona", publisher: "TRI247", date: "14 October 2025", url: "https://www.tri247.com/triathlon-news/age-group/natalie-grabow-world-record-ironman-world-championship-kona"}
+video:
+  id: "qNGPtG4Y7h4"
+  title: "Natalie Grabow, 80, becomes oldest woman to finish Ironman World Championship"
+  channel: "NewsNation"
+photo_file: "File:US Navy 051015-N-9419C-004 Almost 2,000 triathletes begin the 2.4-mile swim at the Ironman World Championship triathlon, held in Kailua-Kona, Hawaii.jpg"
+photo_caption: "The swim start of the Ironman World Championship at Kailua-Kona, Hawaii, photographed in 2005."
+photo_alt: "Hundreds of swimmers in coloured caps churning the sea white at the start of a race."
 ---
 An Ironman is a 3.8 km open-water swim, a 180 km bike ride and then a full 26.2-mile marathon, one after the other, with a cut-off of 17 hours. It is the hardest one-day event most amateur athletes will ever attempt.
 

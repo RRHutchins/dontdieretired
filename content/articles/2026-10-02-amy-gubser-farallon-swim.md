@@ -25,6 +25,13 @@ sources:
   - {title: "Amy Appelhans Gubser becomes first person to swim from Golden Gate Bridge to Farallon Islands", publisher: "SwimSwam", date: "June 2024", url: "https://swimswam.com/amy-appelhans-gubser-becomes-first-person-to-swim-from-golden-gate-bridge-to-farallon-islands/"}
   - {title: "U-M alumnus Appelhans Gubser completes swim from Golden Gate Bridge to Farallon Islands", publisher: "University of Michigan Athletics", date: "4 June 2024", url: "https://mgoblue.com/news/2024/6/4/womens-swimming-diving-u-m-alumnus-appelhans-gubser-completes-swim-from-golden-gate-bridge-to-farallon-islands"}
   - {title: "Walking football in Portugal adds life to years (WHO activity recommendations)", publisher: "World Health Organization, Europe", date: "29 August 2024", url: "https://www.who.int/europe/news/item/29-08-2024-walking-football-in-portugal-adds-life-to-years"}
+video:
+  id: "55k5B1aHPZk"
+  title: "Pacifica woman becomes first to swim to Farallon Islands from Golden Gate Bridge"
+  channel: "KPIX | CBS News Bay Area"
+photo_file: "File:Remains of Farallon Islands Light in 2014.jpg"
+photo_caption: "Southeast Farallon Island in 2014, with the old lighthouse on its summit."
+photo_alt: "Steep bare rock rising from a grey sea, with a small building on the highest point."
 ---
 The water under the Golden Gate Bridge was 57°F (14°C) when Amy Appelhans Gubser got in. By the time she reached the Farallon Islands, 29.7 miles (47.8 km) out in the Pacific, it was 43°F (6°C). She was wearing a swimsuit, a cap, goggles and ear protection.
 

@@ -22,6 +22,9 @@ try_this_plus:
 sources:
   - {title: "'I'm 74 and running 3 marathons in a month in tribute to my daughter'", publisher: "Lancashire Evening Post", date: "15 April 2026", url: "https://www.lep.co.uk/news/im-74-and-running-3-marathons-in-a-month-in-tribute-to-my-daughter-6576589"}
   - {title: "Started running at 70 after daughter's death", publisher: "BBC North West, via AOL", date: "April 2026", url: "https://www.aol.com/news/started-running-70-daughters-death-052241789.html"}
+photo_file: "File:The bridge at Goosnargh Mill - geograph.org.uk - 4516969.jpg"
+photo_caption: "The lane at Goosnargh Mill, in Mike Barnes's home village in Lancashire."
+photo_alt: "A narrow country lane crossing a small stone bridge under trees."
 ---
 Mike Barnes did not start running because he wanted to be a runner. He started because he needed somewhere to put his grief.
 

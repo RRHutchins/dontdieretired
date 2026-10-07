@@ -21,6 +21,9 @@ try_this_plus:
   - "Paddle 400 metres in the pool without stopping twice a week to build the paddling fitness that longer sessions need."
 sources:
   - {title: "Older women are taking up surfing in growing numbers", publisher: "ABC News (Australia)", date: "29 December 2025", url: "https://www.abc.net.au/news/2025-12-29/older-women-surfing-trends/105867538"}
+photo_file: "File:Split Point, Aireys Inlet, West view 20230218 1.jpg"
+photo_caption: "Split Point at Aireys Inlet, on the coast of Victoria, Australia."
+photo_alt: "A white lighthouse on ochre cliffs above a sandy beach and shallow surf."
 ---
 The surfboard cost Katie Pahlow $50, second-hand, from a newspaper advertisement in Melbourne. She was 17. It went into the shed, and life happened around it for the next 43 years.
 

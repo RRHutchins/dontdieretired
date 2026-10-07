@@ -12,6 +12,7 @@
   </div>
   <div class="hero-side">
     <a href="{{ featured.url }}" class="hero-card" data-hero-card data-cat="{{ featured.category }}">
+      {% if featured.photo %}<span class="hero-card-photo has-photo"><img src="{{ featured.photo.small }}" alt="" width="{{ featured.photo.w }}" height="{{ featured.photo.h }}" fetchpriority="high"></span>{% endif %}
       <span class="kicker">Today's story</span>
       <strong>{{ featured.title }}</strong>
       <span class="hero-sub" data-hero-sub>{{ featured.standfirst or featured.excerpt }}</span>

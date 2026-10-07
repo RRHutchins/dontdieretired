@@ -26,6 +26,13 @@ sources:
   - {title: "Gaming granny earns Guinness World Record", publisher: "NPR All Things Considered (via Texas Public Radio)", date: "28 September 2026", url: "https://www.tpr.org/2026-09-28/gaming-granny-earns-guinness-world-record"}
   - {title: "Playing 3-D video games can boost memory formation, UCI study finds", publisher: "University of California, Irvine", date: "8 December 2015", url: "https://news.uci.edu/faculty/playing-3-d-video-games-can-boost-memory-formation-uci-study-finds"}
   - {title: "Super Mario for memory: video games give boost to aging brains", publisher: "Technology Networks", date: "2020", url: "https://www.technologynetworks.com/tn/news/super-mario-for-memory-video-games-give-boost-to-aging-brains-348893"}
+video:
+  id: "-VQUhPY9RPw"
+  title: "OLDEST Female Fortnite Streamer | Guinness World Records"
+  channel: "Guinness World Records"
+photo_file: "File:Aberdeen - Union Street - geograph.org.uk - 5269444.jpg"
+photo_caption: "Union Street, Aberdeen."
+photo_alt: "A sunlit street of grey granite buildings with a bus and people crossing."
 ---
 In 2017 Cath Bowie walked into her grandson's bedroom in Aberdeen and found him playing a new game called Fortnite. He was 17. She was, in her own words to Guinness World Records, "instantly intrigued".
 

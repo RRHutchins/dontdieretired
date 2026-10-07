@@ -96,7 +96,7 @@
     if (mid && a.age) { const d = a.age - mid; if (d >= -10 && d <= 12) s += 2; else if (d > 20) s -= 3; }
     return s;
   }
-  const cardHTML = a => `<article class="card"><a class="card-img" href="${a.url}" aria-hidden="true" tabindex="-1"><img src="${a.art || a.image}" alt="" loading="lazy" width="1200" height="630"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`;
+  const cardHTML = a => `<article class="card${a.photo ? ' has-photo' : ''}" data-cat="${a.category}"><a class="card-img" href="${a.url}" aria-hidden="true" tabindex="-1"><img src="${a.art || a.image}" alt="" loading="lazy" width="1200" height="630"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`;
 
   function applyProfile() {
     profile = readProfile();

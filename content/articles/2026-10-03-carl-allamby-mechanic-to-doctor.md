@@ -25,6 +25,13 @@ sources:
   - {title: "Cleveland auto mechanic becomes doctor at age 51, inspires others to pursue their dreams", publisher: "Fox News, via FOX 32 Chicago", date: "20 September 2022", url: "https://www.fox32chicago.com/news/cleveland-auto-mechanic-becomes-doctor-at-age-51-inspires-others-to-pursue-their-dreams"}
   - {title: "Here's how a former mechanic transitioned into an Ohio ER physician", publisher: "WDIV ClickOnDetroit", date: "31 March 2023", url: "https://clickondetroit.com/health/2023/03/31/heres-how-a-former-mechanic-transitioned-into-an-ohio-er-physician"}
   - {title: "Which study strategies make the grade?", publisher: "Association for Psychological Science", date: "30 January 2013", url: "https://www.psychologicalscience.org/observer/which-study-strategies-make-the-grade-2"}
+video:
+  id: "fMQ_ijYUmWw"
+  title: "East Cleveland man becomes doctor after 25 years of owning his own auto repair business"
+  channel: "News 5 Cleveland"
+photo_file: "File:Cleveland, Ohio Skyline at Sunrise at Edgewater Park (8668179983).jpg"
+photo_caption: "Cleveland, Ohio, before sunrise, seen from Edgewater Park."
+photo_alt: "A city skyline lit up against an orange dawn sky across dark water."
 ---
 The biology class was compulsory. Carl Allamby was in his thirties, owned a car repair business in Cleveland, Ohio, and was studying at night for a business degree he hoped would help him expand it. The course required one science module. He had put it off until near the end.
 

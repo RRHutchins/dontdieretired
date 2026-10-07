@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Photo and film credits — {{ cfg.site.name }}{% endblock %}
+{% block description %}Who took each photograph on Don't Die Retired, the licence it is used under, and who made each film we embed.{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">How we work</p><h1>Photo and film credits</h1><p class="lead">Who took each photograph on the site, the licence we use it under, and who made each film we show.</p></header>
+<div class="prose narrow">
+
+<h2 id="rules">What you are looking at</h2>
+<ul>
+<li><strong>Photographs show the place or the activity.</strong> Unless a caption names the person, a photograph on a story is of where it happened or of the activity itself. It is not a picture of the person we wrote about, and the caption says what it shows.</li>
+<li><strong>Used under an open licence.</strong> Each one comes from Wikimedia Commons under a Creative Commons or public-domain licence that allows reuse. We name the photographer and the licence under the picture and again here.</li>
+<li><strong>Resized, not altered.</strong> We make each photograph smaller so the page loads quickly. We do not crop the file, retouch it or draw on it. On screen, the frame may trim the edges; the link below each entry goes to the whole picture.</li>
+<li><strong>No AI-generated photographs.</strong> We do not make or use AI-generated pictures of people or places.</li>
+<li><strong>Illustrations are ours.</strong> Where a story has no photograph, the picture is an illustration drawn by the site.</li>
+<li><strong>Films belong to their makers.</strong> A film on a story page plays from YouTube, from the channel of the broadcaster or organisation that made it. We do not copy, clip or re-upload anyone's film. If its owner takes it down, it disappears from our page too.</li>
+<li><strong>No endorsement.</strong> A photographer, broadcaster or anyone pictured has no connection with this site and has not endorsed it.</li>
+</ul>
+<p>If a photograph is yours and something here is wrong, or you would like it removed, <a href="mailto:{{ cfg.site.contact_email }}">tell us</a> and we will put it right.</p>
+
+<h2 id="photos">Photographs</h2>
+{% if photo_arts %}
+<ul class="credit-list">
+{% for a in photo_arts %}{% if a.photo.open %}
+<li><a href="{{ a.url }}">{{ a.title }}</a><br>{{ a.photo.caption }} {{ a.photo.label }} by {{ a.photo.author }}, licensed {% if a.photo.licence_url %}<a href="{{ a.photo.licence_url }}" rel="noopener license">{{ a.photo.licence }}</a>{% else %}{{ a.photo.licence }}{% endif %}. <a href="{{ a.photo.page }}" rel="noopener">The original on Wikimedia Commons</a>.</li>
+{% else %}
+<li><a href="{{ a.url }}">{{ a.title }}</a><br>{{ a.photo.caption }} Photo: {{ a.photo.author }}, used with permission.</li>
+{% endif %}{% endfor %}
+</ul>
+{% else %}<p>There are no photographs on the site yet.</p>{% endif %}
+
+<h2 id="films">Films on story pages</h2>
+{% if film_arts %}
+<ul class="credit-list">
+{% for a in film_arts %}
+<li><a href="{{ a.url }}">{{ a.title }}</a><br>“{{ a.video.title }}”, {{ a.video.channel }}. <a href="https://www.youtube.com/watch?v={{ a.video.id }}" rel="noopener">Watch it on YouTube</a>.</li>
+{% endfor %}
+</ul>
+{% else %}<p>No story has a film yet.</p>{% endif %}
+<p>More films are on the <a href="/videos/">videos page</a>.</p>
+</div>
+{% endblock %}

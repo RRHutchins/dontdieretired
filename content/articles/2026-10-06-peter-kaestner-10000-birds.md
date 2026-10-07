@@ -30,6 +30,14 @@ sources:
   - {title: "Feeling chirpy: being around birds is linked to lasting mental health benefits", publisher: "King's College London", date: "27 October 2022", url: "https://www.kcl.ac.uk/news/feeling-chirpy-being-around-birds-is-linked-to-lasting-mental-health-benefits"}
   - {title: "About eBird", publisher: "Cornell Lab of Ornithology", date: "accessed 6 October 2026", url: "https://ebird.org/about"}
   - {title: "Big Garden Birdwatch FAQs", publisher: "RSPB", date: "accessed 6 October 2026", url: "https://www.rspb.org.uk/whats-happening/big-garden-birdwatch/faqs"}
+video:
+  id: "s-TdzbomFXc"
+  title: "10,000 Birds and (Still) Counting: One Man's Global Checklist"
+  channel: "Denver Field Ornithologists"
+photo_file: "File:Arachnothera flammifera Keulemans (cropped).jpg"
+photo_caption: "The orange-tufted spiderhunter, the 10,000th species on his list, in a plate by the bird artist John Gerrard Keulemans."
+photo_alt: "A painting of two olive-green birds with long curved bills and orange patches on their sides, perched among leaves."
+photo_label: "Illustration"
 ---
 Near Bislig, on the Philippine island of Mindanao, on 9 February 2024, a local guide named Felizardo Goring helped an American visitor find an orange-tufted spiderhunter. For the visitor, it was bird number 10,000.
 

@@ -27,6 +27,13 @@ sources:
   - {title: "Retired doctor discovers dinosaur with 'unusually large' nose", publisher: "ITV Meridian", date: "11 November 2021", url: "https://www.itv.com/news/meridian/2021-11-11/retired-doctor-discovers-dinosaur-with-unusually-large-nose"}
   - {title: "Two hour 'nature dose' boosts health and wellbeing", publisher: "European Centre for Environment and Human Health, University of Exeter", date: "13 June 2019", url: "https://ecehh.org/news/2hr-nature-dose"}
   - {title: "Fossil walks", publisher: "Dinosaur Isle", date: "2025", url: "https://www.dinosaurisle.com/article/3024/Fossil-walks"}
+video:
+  id: "BWLxGz3WbQc"
+  title: "Retired GP discovers new species of dinosaur in the UK | ABC News"
+  channel: "ABC News (Australia)"
+photo_file: "File:Dinosaur Isle.JPG"
+photo_caption: "Dinosaur Isle, the museum at Sandown on the Isle of Wight where many of the bones he studied are kept."
+photo_alt: "A low grey museum building with a pointed white entrance canopy, behind a road and flower beds."
 ---
 The fossils Jeremy Lockwood has made his name on were not dug out of a cliff. They were already in museum drawers, waiting for someone to look at them properly.
 

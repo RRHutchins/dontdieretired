@@ -592,3 +592,28 @@ dialog.modal-card::backdrop{background:rgba(0,0,0,.55)}
 .scam-type[open] summary{border-radius:14px 14px 0 0;box-shadow:none}
 .scam-type[open]{background:#fff;box-shadow:0 0 0 2px var(--accent)}
 .scam-type[open] .scam-body{padding-top:16px}
+
+/* ================= Photographs and films on stories, 7 Oct 2026 (RUNBOOK §6l) =================
+   A photo sits in a fixed frame; the file itself is never cropped. The sunrise mark rides on the
+   corner in the topic colour, so a photographed story still looks like one of ours. */
+.hero-fig{margin:20px 0 28px}
+.hero-photo{position:relative;border-radius:12px;overflow:hidden;background:var(--line)}
+.hero-photo .hero-img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0;border-radius:0}
+.hero-fig figcaption{font-size:.92rem;line-height:1.45;color:var(--muted);margin-top:8px}
+.hero-fig figcaption .credit{display:inline-block}
+.hero-fig figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.has-photo .card-img,.hero-card-photo{position:relative}
+.has-photo .card-img::before,.hero-photo::before,.hero-card-photo::before{content:"";position:absolute;left:0;bottom:0;width:58px;height:44px;background:var(--paper);border-top-right-radius:14px;z-index:1}
+.has-photo .card-img::after,.hero-photo::after,.hero-card-photo::after{content:"";position:absolute;left:11px;bottom:9px;width:36px;height:23px;background:var(--c,var(--brand));
+  -webkit-mask:url(/static/sun-tab.svg) center/contain no-repeat;mask:url(/static/sun-tab.svg) center/contain no-repeat;z-index:2}
+.card.has-photo .card-img::before{background:var(--card)}
+.card.has-photo{border-bottom:5px solid var(--c,var(--brand))}
+.hero-photo::before{width:76px;height:56px;border-top-right-radius:18px}
+.hero-photo::after{left:15px;bottom:12px;width:46px;height:30px}
+.hero-card-photo{display:block;margin:-22px -26px 18px;overflow:hidden;border-radius:8px 8px 0 0}
+.hero-card-photo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.hero-card-photo::before{background:var(--card)}
+.story-film{margin:28px 0}
+.story-film figcaption{font-size:.92rem;line-height:1.45;color:var(--muted);margin-top:8px}
+.credit-list{padding-left:1.1em}.credit-list li{margin:0 0 14px}
+@media (max-width:600px){.hero-photo .hero-img{aspect-ratio:4/3}.hero-photo::before{width:62px;height:46px}.hero-photo::after{left:12px;bottom:10px;width:38px;height:24px}}

@@ -21,6 +21,13 @@ try_this_plus:
   - "Test a true one-rep maximum on all three lifts under supervision and compare your total with the masters qualifying standards for your federation."
 sources:
   - {title: "Powerlifting champion, aged 82, ready to represent Australia", publisher: "ABC News (Australia)", date: "9 October 2025", url: "https://www.abc.net.au/news/2025-10-09/powerlifting-champion-aged-82-and-ready-to-represent-australia/105868066"}
+video:
+  id: "fc5PQrSkW-Y"
+  title: "The 82-year-old headed to the powerlifting world championships | ABC NEWS"
+  channel: "ABC News (Australia)"
+photo_file: "File:2025 Skelton Gym Powerlifting Competition (9326219).jpg"
+photo_caption: "Plates going on the bar at a powerlifting competition."
+photo_alt: "Hands sliding a heavy black weight plate on to a loaded barbell."
 ---
 Ravi Sood, from Canberra, was in his seventies and facing a double knee replacement when his surgeon gave him a piece of advice that most patients would file under "get through it". Sood filed it under "get ready".
 

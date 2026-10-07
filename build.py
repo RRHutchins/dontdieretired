@@ -132,9 +132,60 @@ def wrap_text(draw, text, font, max_width):
     return lines
 
 
+
+# ---------------------------------------------------------------- photographs and films (RUNBOOK §6l)
+
+def story_photo(fm, slug, credits):
+    """The photograph for an article, or None (the article then keeps its artwork).
+
+    Two kinds. (1) An openly licensed photo from Wikimedia Commons: front matter `photo_file` names the
+    Commons file, tools/photos.py (in GitHub Actions) downloads it and records author and licence in
+    content/photo_credits.yaml, and a session sets `photo_checked` once it has looked at the file.
+    All three must agree or the photo is not shown. (2) A photo we hold written permission for:
+    `photo:` (a path under /static/photos/), `photo_credit:` and `photo_alt:`."""
+    cap, alt = fm.get("photo_caption", ""), fm.get("photo_alt", "")
+    if fm.get("photo_file"):
+        c = credits.get(slug) or {}
+        f = STATIC / "photos" / f"{slug}.jpg"
+        why = ("has no photo_checked date" if not fm.get("photo_checked") else
+               "is not in content/photo_credits.yaml yet (the Photos workflow fetches it)" if c.get("file") != fm["photo_file"] else
+               "has no file in static/photos/" if not f.exists() else
+               "has no photo_caption" if not cap else "has no photo_alt" if not alt else "")
+        if why:
+            print(f"PHOTO NOTE {slug}: photo not shown, it {why}.")
+            return None
+        return {"src": f"/static/photos/{slug}.jpg", "small": f"/static/photos/{slug}-800.jpg", "w": c["width"], "h": c["height"],
+                "caption": cap, "alt": alt, "author": c["author"], "licence": c["licence"], "licence_url": c.get("licence_url", ""),
+                "page": c["page"], "file": c["file"], "open": True, "label": fm.get("photo_label", "Photo")}
+    if fm.get("photo") and fm.get("photo_credit"):
+        return {"src": fm["photo"], "small": fm["photo"], "w": 1600, "h": 900, "caption": cap, "alt": alt,
+                "author": fm["photo_credit"], "licence": "", "licence_url": "", "page": "", "file": "", "open": False, "label": fm.get("photo_label", "Photo")}
+    return None
+
+
+def story_video(fm, held):
+    """A film of the person in the story, played with YouTube's own player. `video: {id, title, channel}`;
+    the title and channel are copied from YouTube. verify_videos.py checks it before every deploy."""
+    v = fm.get("video")
+    if not isinstance(v, dict) or not re.fullmatch(r"[A-Za-z0-9_-]{11}", str(v.get("id", ""))) or not v.get("title") or not v.get("channel"):
+        return None
+    return None if v["id"] in held else {"id": v["id"], "title": str(v["title"]), "channel": str(v["channel"])}
+
+
+def place_video(body_html, v):
+    """Put the player after the second paragraph, so the story opens in words and the film follows."""
+    e = html.escape
+    fig = (f'<figure class="story-film"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/{v["id"]}" '
+           f'title="{e(v["title"], quote=True)}" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>'
+           f'<figcaption><strong>Watch.</strong> “{e(v["title"])}”, from {e(v["channel"])}. It plays here from YouTube; the film is theirs, not ours.</figcaption></figure>')
+    ends = [m.end() for m in re.finditer(r"</p>", body_html)]
+    at = ends[1] if len(ends) > 2 else (ends[0] if ends else 0)
+    return body_html[:at] + "\n" + fig + body_html[at:]
+
+
 # ---------------------------------------------------------------- content
 
-def load_articles(cfg):
+def load_articles(cfg, credits=None, held=None):
     arts = []
     for p in sorted((CONTENT / "articles").glob("*.md")):
         fm, body = split_front_matter(p.read_text(encoding="utf-8"))
@@ -162,9 +213,15 @@ def load_articles(cfg):
             "image": f"/static/img/{slug}.png",          # headline card: social, og:image
             # shown on the site: a credited photo if the article has one (`photo:` + `photo_credit:`,
             # logged in docs/IMAGE_CREDITS.md), otherwise the sun-and-scene artwork from art.py
-            "art": fm.get("photo") or f"/static/art/{slug}.svg",
+            "art": f"/static/art/{slug}.svg",
             "scene": fm.get("art"),
         }
+        a["photo"] = story_photo(fm, slug, credits or {})
+        if a["photo"]:
+            a["art"] = a["photo"]["small"]
+        a["video"] = story_video(fm, held or set())
+        if a["video"]:
+            a["html"] = place_video(a["html"], a["video"])
         # Copyright guard (RUNBOOK §7a): news stories quote sparingly. Warn, never fail the build.
         if fm.get("kind") != "guide":
             _q = re.findall(r'["\u201c]([^"\u201d\n]{15,})["\u201d]', body)
@@ -377,7 +434,10 @@ def build(make_social=True):
         if _held: print("Videos held back (not verified with YouTube):", ", ".join(_held))
     products = load_yaml(CONTENT / "products.yaml")
     local = load_yaml(CONTENT / "local.yaml") if (CONTENT / "local.yaml").exists() else {"regions": {}, "activities": {}}
-    arts = load_articles(cfg)
+    _pc = CONTENT / "photo_credits.yaml"
+    credits = (load_yaml(_pc) if _pc.exists() else {}) or {}
+    _shown = {k: v.get("show", True) for k, v in (json.loads(_vc.read_text(encoding="utf-8")) if _vc.exists() else {}).items()}
+    arts = load_articles(cfg, credits, {k for k, ok in _shown.items() if not ok})
 
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -520,6 +580,7 @@ def build(make_social=True):
     urls.append(out("/about/", "about.html"))
     urls.append(out("/privacy/", "privacy.html"))
     urls.append(out("/editorial-policy/", "editorial-policy.html", corrections_total=217))
+    urls.append(out("/photo-credits/", "photo-credits.html", photo_arts=[a for a in arts if a["photo"]], film_arts=[a for a in arts if a["video"]]))
     urls.append(out("/search/", "search.html"))
 
     # search index + article index for the front end
@@ -527,6 +588,7 @@ def build(make_social=True):
         "title": a["title"], "url": a["url"], "excerpt": a["excerpt"], "tags": a["tags"],
         "category": a["category"], "segments": a.get("segments", []), "date": a["date_iso"], "image": a["image"], "art": a["art"],
         "level": a.get("level", "any"), "age": a.get("subject_age"),
+        "photo": bool(a["photo"]), "film": bool(a["video"]),
     } for a in arts]), encoding="utf-8")
 
     # Daily puzzle (RUNBOOK §6g): one small file per day, only for a short window around today,

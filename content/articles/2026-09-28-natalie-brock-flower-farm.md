@@ -21,6 +21,9 @@ try_this_plus:
   - "Add a second income line from the same land or skill, such as workshops or events, and test it with one paid pilot."
 sources:
   - {title: "Teacher-turned-florist proves it's never too late for a career change", publisher: "ABC News (Australia)", date: "14 January 2025", url: "https://www.abc.net.au/news/2025-01-14/teacher-turned-florist-natalie-brock-career-change/104796014"}
+photo_file: "File:Renmark South Australia Vineyard.jpg"
+photo_caption: "Vineyards at Renmark in the Riverland, South Australia."
+photo_alt: "Rows of vines in autumn colour stretching to farm buildings and a flat horizon."
 ---
 Natalie Brock's career change started with a birthday and a patch of weeds.
 

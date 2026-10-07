@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check every film in content/videos.yaml against YouTube before the site is built.
+"""Check every film in content/videos.yaml, and every film on a story page, against YouTube before the site is built.
 
 Runs in the deploy workflow (GitHub Actions can reach YouTube; the cloud session's shell cannot).
 For each film it asks YouTube's oEmbed endpoint whether the ID exists and is embeddable, and
@@ -56,6 +56,15 @@ def check(v):
 
 def main():
     videos = (yaml.safe_load((ROOT / "content" / "videos.yaml").read_text(encoding="utf-8")) or {}).get("videos", [])
+    # films shown on story pages (front matter `video: {id, title, channel}`, RUNBOOK §6l) get the same check
+    listed = {v["id"] for v in videos}
+    for p in sorted((ROOT / "content" / "articles").glob("*.md")):
+        m = re.match(r"^---\s*\n(.*?)\n---\s*\n", p.read_text(encoding="utf-8"), re.S)
+        fm = yaml.safe_load(m.group(1)) if m else {}
+        v = fm.get("video")
+        if isinstance(v, dict) and v.get("id") and v["id"] not in listed:
+            listed.add(v["id"])
+            videos.append({"id": v["id"], "title": v.get("title", ""), "added": fm.get("date"), "story": True})
     today = dt.date.today()
     results, hidden, unknown_kept = {}, [], []
     for v in videos:
@@ -69,9 +78,9 @@ def main():
         elif status == "unknown":
             unknown_kept.append(v["id"])
     (ROOT / ".videos_check.json").write_text(json.dumps(results, indent=1), encoding="utf-8")
-    newest = max((v["added"] for v in videos if isinstance(v.get("added"), dt.date) and results[v["id"]]["show"]), default=None)
+    newest = max((v["added"] for v in videos if not v.get("story") and isinstance(v.get("added"), dt.date) and results[v["id"]]["show"]), default=None)
     ok = sum(1 for r in results.values() if r["status"] == "ok")
-    msg = f"Videos: {ok} of {len(videos)} verified with YouTube; {len(hidden)} held back; newest film shown was added {newest}."
+    msg = f"Videos: {ok} of {len(videos)} verified with YouTube (videos page and story pages); {len(hidden)} held back; newest film on the videos page was added {newest}."
     if unknown_kept:
         msg += f" Could not check {len(unknown_kept)} older film(s) this run; kept."
     if hidden:
