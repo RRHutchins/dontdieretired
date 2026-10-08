@@ -507,7 +507,7 @@ def build(make_social=True):
             break
     urls.append(out("/", "index.html", featured=featured, latest=latest))
     for cid, c in cfg["categories"].items():
-        urls.append(out(f"/{cid}/", "category.html", cid=cid, c=c, items=[a for a in arts if a["category"] == cid]))
+        urls.append(out(f"/{cid}/", "category.html", cid=cid, c=c, items=[a for a in arts if a["category"] == cid], acts=[x for x in _chs if x.get("category") == cid]))
     urls.append(out("/videos/", "videos.html"))
     # standalone pages that search should find (title, url, excerpt, tags); written to pages.json
     pages = []
@@ -535,6 +535,10 @@ def build(make_social=True):
                "time": {"afternoon": "An afternoon", "weeks": "A few weeks", "months": "Months", "year": "A year or more"},
                "setting": {"indoors": "Indoors", "outdoors": "Outdoors", "either": "Indoors or out"},
                "company": {"solo": "On your own", "others": "With others", "either": "Alone or with others"}}
+        # Named groups of activities, each with its own page at /list/<slug>/ (Robin, 8 Oct 2026). A slug is permanent once live.
+        COLLECTIONS = {"military": {"slug": "military-physical-challenges", "label": "Military physical challenge", "plural": "Military physical challenges",
+                                    "blurb": "Marches, runs and loaded carries that are based on military tests or run by forces charities, and that members of the public can enter. Each is hard in its own way, and each has an official page with the entry rules.",
+                                    "note": "We list an event here only when its official page shows that the public can enter and that it is still being run. Being listed does not mean the armed forces, or any charity, endorse this site."}}
         need = ("id", "title", "category", "kind", "effort", "cost", "time", "setting", "company", "regions", "why", "start", "links")
         seen, stale = set(), 0
         for c in chs:
@@ -544,10 +548,17 @@ def build(make_social=True):
             seen.add(c["id"])
             assert c["category"] in cfg["categories"] and all(c[k] in LBL[k] for k in LBL), f"challenge {c['id']}: unknown category or band"
             assert all(str(l.get("url", "")).startswith("https://") and l.get("label") and l.get("checked") for l in c["links"]), f"challenge {c['id']}: every link needs url, label, checked"
+            assert not c.get("collection") or c["collection"] in COLLECTIONS, f"challenge {c['id']}: unknown collection {c.get('collection')}"
+            assert c["id"] not in {v["slug"] for v in COLLECTIONS.values()}, f"challenge id {c['id']} clashes with a collection page"
+            c["coll"] = COLLECTIONS.get(c.get("collection"))
             first = re.split(r"(?<=[.!?])\s", c["why"].strip())[0]
             c["why_short"] = first if len(first) <= 170 else first[:167].rsplit(" ", 1)[0] + "…"
             r = c["regions"]
             c["region_label"] = "" if "anywhere" in r else " and ".join(x.upper() for x in r)
+            # what a search result shows: the activity, then what the page gives (how to start, the official links)
+            c["seo"] = next((t for t in (c["title"] + ": how to start and where to go", c["title"] + ": how to start", c["title"]) if len(t) <= 60), c["title"])
+            tail = " How to start, and the official " + ("link." if len(c["links"]) == 1 else "links.")
+            c["meta"] = c["why_short"] + tail if len(c["why_short"]) + len(tail) <= 155 else c["why_short"]
             c["multi_region"] = len({l.get("region") for l in c["links"]}) > 1
             oldest = min(dt.date.fromisoformat(str(l["checked"])) for l in c["links"])
             c["checked_human"] = oldest.strftime("%-d %B %Y")
@@ -557,17 +568,25 @@ def build(make_social=True):
                 if c.get(k) and c[k] not in by_slug: print(f"LIST WARNING: challenge {c['id']} points at a {k} that does not exist: {c[k]}")
             if c.get("local") and c["local"] not in local.get("activities", {}): c["local"] = None
         if stale: print(f"LIST WARNING: {stale} challenges have a link last checked over six months ago. Re-verify per RUNBOOK §6h.")
-        urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}))
+        colls = [dict(v, id=k, acts=[c for c in chs if c.get("collection") == k]) for k, v in COLLECTIONS.items()]
+        colls = [v for v in colls if v["acts"]]
+        urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}, colls=colls))
+        for v in colls:
+            item_list = [{"@type": "ListItem", "position": n, "name": c["title"], "url": f"{cfg['site']['url']}/list/{c['id']}/"} for n, c in enumerate(v["acts"], 1)]
+            urls.append(out(f"/list/{v['slug']}/", "collection.html", coll=v, L=LBL, total=len(chs), item_list=item_list))
+            pages.append({"title": f"{v['plural']} you can enter", "url": f"/list/{v['slug']}/", "category": "move", "excerpt": v["blurb"],
+                          "tags": ["military", "challenge", "challenges", "march", "tab", "ruck", "yomp", "army", "marines", "paras", "activities"],
+                          "image": "/static/og-default.png", "art": "/static/og-default.png"})
         pages.append({"title": f"Fifty at Fifty: {len(chs)} things worth doing, and a list of your own", "url": "/list/", "category": "explore",
                       "excerpt": "Pick the ones you fancy, at any age. Each has how to start and where to go. Choose your own number and tick them off in your own time.",
-                      "tags": ["list", "fifty", "challenge", "challenges", "bucket", "goals", "things", "to", "do"],
+                      "tags": ["list", "fifty", "activity", "activities", "challenge", "challenges", "bucket", "goals", "things", "to", "do"],
                       "image": "/static/og-default.png", "art": "/static/og-default.png"})
         for c in chs:
             more = [m for m in chs if m is not c and m["category"] == c["category"]]
-            more = sorted(more, key=lambda m: (m["effort"] != c["effort"], m["kind"] != c["kind"]))[:4]
+            more = sorted(more, key=lambda m: (not (c.get("collection") and m.get("collection") == c.get("collection")), m["effort"] != c["effort"], m["kind"] != c["kind"]))[:6 if c.get("collection") else 4]
             urls.append(out(f"/list/{c['id']}/", "challenge.html", c=c, L=LBL, more=more, total=len(chs)))
             pages.append({"title": c["title"], "url": f"/list/{c['id']}/", "category": c["category"], "excerpt": c["why_short"],
-                          "tags": ["challenge", c["kind"], c["effort"]] + c["id"].split("-"),
+                          "tags": ["activity", "challenge", c["kind"], c["effort"]] + ([c["collection"]] if c.get("collection") else []) + c["id"].split("-"),
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})
     urls.append(out("/start-here/", "start.html"))
     urls.append(out("/newsletter/", "newsletter.html"))

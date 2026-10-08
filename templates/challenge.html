@@ -1,10 +1,14 @@
 {% extends "base.html" %}{% from "_macros.html" import share_button, near_you, card %}
-{% block title %}{{ (c.title ~ " — Fifty at Fifty") | seotitle }}{% endblock %}
-{% block description %}{{ c.why_short | metadesc }}{% endblock %}
+{% block title %}{{ c.seo }}{% endblock %}
+{% block description %}{{ c.meta | metadesc }}{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":
+ ([{"@type":"ListItem","position":1,"name":"Fifty at Fifty","item":cfg.site.url ~ "/list/"}]
+  + ([{"@type":"ListItem","position":2,"name":c.coll.plural,"item":cfg.site.url ~ "/list/" ~ c.coll.slug ~ "/"}] if c.coll else [])
+  + [{"@type":"ListItem","position":(3 if c.coll else 2),"name":c.title,"item":cfg.site.url ~ "/list/" ~ c.id ~ "/"}])} | tojson }}</script>{% endblock %}
 {% block pagetype %}challenge{% endblock %}
 {% block content %}
 <article class="article fl-page" data-fl-challenge="{{ c.id }}" data-title="{{ c.title }}">
-  <p class="kicker"><a href="/list/">Fifty at Fifty</a> · <a href="/{{ c.category }}/">{{ categories[c.category].label }}</a></p>
+  <p class="kicker"><a href="/list/">Fifty at Fifty</a> · {% if c.coll %}<a href="/list/{{ c.coll.slug }}/">{{ c.coll.label }}</a>{% else %}<a href="/{{ c.category }}/">{{ categories[c.category].label }}</a>{% endif %}</p>
   <h1>{{ c.title }}</h1>
   <div class="fl-invited" data-fl-invited hidden><p>A friend has invited you to do this with them.</p><button type="button" class="btn btn-small" data-fl-add="{{ c.id }}">Add to my list</button><button type="button" class="fl-x" aria-label="Close this message" data-fl-invited-close>×</button></div>
   <p class="lead">{{ c.why }}</p>
@@ -50,7 +54,8 @@
   <h2>More like this</h2>
   <ul class="fl-more">{% for m in more %}<li><a href="/list/{{ m.id }}/">{{ m.title }}</a> <span class="meta">{{ L.effort[m.effort] }}</span></li>{% endfor %}</ul>
   {% endif %}
-  <p><a href="/list/">← All {{ total }} challenges</a></p>
+  {% if c.coll %}<p><a href="/list/{{ c.coll.slug }}/">All {{ c.coll.plural | lower }} →</a></p>{% endif %}
+  <p><a href="/list/">← All {{ total }} activities</a></p>
 </article>
 {% endblock %}
 {% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script>{% endblock %}

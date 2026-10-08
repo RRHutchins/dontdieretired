@@ -85,6 +85,7 @@
   /* ---------- search and filters ---------- */
   const q = $('[data-fl-q]', root), sels = $$('[data-fl-f]', root), countEl = $('[data-fl-count]', root), none = $('[data-fl-none]', root), clear = $('[data-fl-clear]', root);
   const regSel = sels.find(s => s.dataset.flF === 'region');
+  try { const tp = new URLSearchParams(location.search).get('topic'), cs = sels.find(s => s.dataset.flF === 'category'); if (tp && cs && [...cs.options].some(o => o.value === tp)) cs.value = tp; } catch (e) {}   // /list/?topic=move arrives with that topic chosen
   if (region) regSel.value = region;   // start with what can be done from where the reader is; one tap shows everything
   function matches(li) {
     const words = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
@@ -99,7 +100,7 @@
   function filter() {
     let n = 0; items.forEach(li => { const m = matches(li); li.hidden = !m; if (m) n++; li.classList.remove('fl-picked'); });
     const filtered = q.value.trim() || sels.some(s => s.value);
-    countEl.textContent = n === items.length ? 'All ' + n + ' challenges' : 'Showing ' + n + ' of ' + items.length + ' challenges' + (regSel.value === region && region && !q.value.trim() && sels.every(s => s === regSel || !s.value) ? ' (the ones you can do from the ' + region.toUpperCase() + ')' : '');
+    countEl.textContent = n === items.length ? 'All ' + n + ' activities' : 'Showing ' + n + ' of ' + items.length + ' activities' + (regSel.value === region && region && !q.value.trim() && sels.every(s => s === regSel || !s.value) ? ' (the ones you can do from the ' + region.toUpperCase() + ')' : '');
     none.hidden = n > 0; clear.hidden = !filtered;
     return n;
   }
@@ -178,7 +179,7 @@
     rows.innerHTML = l.map((it, i) => {
       const t = titleOf(it), gone = it.cid && t === null;
       return '<li class="fl-row' + (it.status === 'done' ? ' is-done' : '') + '" data-id="' + esc(it.id) + '">'
-        + '<div class="fl-row-main"><span class="fl-row-title">' + (it.cid && !gone ? '<a href="/list/' + esc(it.cid) + '/">' + esc(t) + '</a>' : esc(gone ? 'A challenge we no longer list (' + it.cid + ')' : t)) + (it.cid ? '' : ' <span class="fl-reg">Yours</span>') + '</span>'
+        + '<div class="fl-row-main"><span class="fl-row-title">' + (it.cid && !gone ? '<a href="/list/' + esc(it.cid) + '/">' + esc(t) + '</a>' : esc(gone ? 'An activity we no longer list (' + it.cid + ')' : t)) + (it.cid ? '' : ' <span class="fl-reg">Yours</span>') + '</span>'
         + '<label class="sr-only" for="st-' + i + '">Status</label><select id="st-' + i + '" data-fl-status>' + L.STATUSES.map(s => '<option value="' + s + '"' + (s === it.status ? ' selected' : '') + '>' + STATUS[s] + '</option>').join('') + '</select></div>'
         + '<details><summary>' + (it.date || it.note ? esc([it.date ? new Date(it.date + 'T12:00').toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : '', it.note].filter(Boolean).join(' · ').slice(0, 70)) : 'Date, note, move') + '</summary>'
         + '<div class="fl-row-more"><label>Date <small>(planned for, or done on)</small><input type="date" data-fl-date value="' + esc(it.date) + '"></label>'

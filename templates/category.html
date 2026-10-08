@@ -57,6 +57,13 @@
 </section>
 {% endif %}
 
+{% if acts %}
+<section class="cat-acts">
+  <div class="section-head"><h2>Things to do</h2><a href="/list/?topic={{ cid }}">All {{ acts|length }} on Fifty at Fifty →</a></div>
+  <ul class="fl-more cat-acts-list">{% for x in acts[:12] %}<li><a href="/list/{{ x.id }}/">{{ x.title }}</a></li>{% endfor %}</ul>
+</section>
+{% endif %}
+
 {% if not items %}<p>New guides arrive here soon. <a href="/newsletter/">Get them by email.</a></p>{% endif %}
 
 {% if picks %}<section class="cat-kit">{{ affiliate_box(picks, "Kit that helps with " ~ (c.label if cid == "ai" else c.label | lower)) }}</section>{% endif %}

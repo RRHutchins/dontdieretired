@@ -1,0 +1,33 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button %}
+{% block title %}{{ (coll.plural ~ " you can enter") | seotitle }}{% endblock %}
+{% block description %}{{ (coll.acts|length ~ " " ~ coll.plural|lower ~ " open to the public, each with how to start and a link to the official page. " ~ coll.blurb) | metadesc }}{% endblock %}
+{% block pagetype %}list{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
+ {"@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Fifty at Fifty","item":cfg.site.url ~ "/list/"},
+  {"@type":"ListItem","position":2,"name":coll.plural,"item":cfg.site.url ~ "/list/" ~ coll.slug ~ "/"}]},
+ {"@type":"ItemList","name":coll.plural,"numberOfItems":coll.acts|length,"itemListElement":item_list}]} | tojson }}</script>{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker"><a href="/list/">Fifty at Fifty</a></p><h1>{{ coll.plural }}</h1>
+<p class="lead">{{ coll.blurb }}</p>
+{{ share_button(cfg.site.url ~ '/list/' ~ coll.slug ~ '/', coll.plural, 'list') }}</header>
+
+<ul class="fl-grid">
+{% for c in coll.acts %}
+  <li class="fl-item" data-id="{{ c.id }}" data-title="{{ c.title }}">
+    <p class="kicker">{{ L.effort[c.effort] }}{% if c.region_label %} · {{ c.region_label }}{% endif %}</p>
+    <h2 class="h3"><a href="/list/{{ c.id }}/">{{ c.title }}</a></h2>
+    <p class="fl-why">{{ c.why_short }}</p>
+    <p class="fl-meta">{{ L.cost[c.cost] }} · {{ L.time[c.time] }}</p>
+    <button type="button" class="chip fl-add" data-fl-add="{{ c.id }}" aria-pressed="false">Add to my list</button>
+  </li>
+{% endfor %}
+</ul>
+
+<div class="prose narrow fl-about">
+<p>{{ coll.note }}</p>
+<p>Every link was opened and read by us on the date shown on its page. Dates, places, prices and entry rules are on the official page, where they stay up to date. These are demanding events: read the organiser's kit list and medical guidance before you enter.</p>
+<p><a href="/list/">← All {{ total }} activities</a></p>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script>{% endblock %}
