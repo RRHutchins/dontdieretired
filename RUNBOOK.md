@@ -243,6 +243,14 @@ A scripted probe (axe-core plus keyboard and zoom tests) took the site from 388 
   - Do not write `href="${…}"` inside an inline script: crawlers read it as a real link (the search page produced `/search/${a.url}`, a 404). Spell the attribute through a variable, as `templates/search.html` now does.
   - "Crawled - currently not indexed" on `https://` pages of a nine-day-old site is Google deciding in its own time; do not churn the pages or their dates to chase it. Re-read the report weekly once Enforce HTTPS is on.
 
+### 6n. Personalised order must never hide the new story (Robin, 9 Oct 2026)
+Readers who answer the profile questions (level, age band, interests) get pages reordered in `static/app.js` (`fit()`). Robin found that after answering them the site looked the same every day. Rules now:
+- **The home page hero is always today's story**, for everyone. Personalisation never replaces it.
+- **"Picked for you"** (home page, from `/index.json`) never repeats the hero. Newness weighs as much as interests: a story from today or yesterday gets +6, within three days +3, within a week +1, on top of a newest-first rank bonus. Stories this browser has already opened (`ddr_seen`, article paths only, kept on the device, last 300) drop by 8, so the list changes as the reader reads. Cards from the last day that the reader has not opened carry a "New" tag.
+- **Topic pages** reorder with the same score (cards carry `data-date` and `data-url`).
+- **`/stories/` (Real Stories) lists every daily story from every topic, newest first**, not only the few filed under `stories`.
+- If you change the scoring, check with a saved profile that today's story is still first on the home page and near the top of "Picked for you" the morning after a new one is published.
+
 ## 7. Guard-rails
 - Never invent facts, quotes, ages or names. If the source can't be fetched, don't run the story.
 - Never give medical advice or dosing; always "check with a GP first".

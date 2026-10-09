@@ -81,8 +81,17 @@
   let fb = {}; try { fb = JSON.parse(store.get('ddr_fb') || '{}'); } catch {}   // per-topic nudges from "Was this for you?"
 
   // How well does an article fit this reader? Higher is better.
+  // What this browser has already opened (article paths, newest last). Kept on this device only.
+  let seen = []; try { seen = JSON.parse(store.get('ddr_seen') || '[]'); } catch {}
+  if (document.body.dataset.page === 'article') { const u = location.pathname; seen = seen.filter(x => x !== u).concat(u).slice(-300); store.set('ddr_seen', JSON.stringify(seen)); }
+  const daysOld = d => { const t = Date.parse(d); return isNaN(t) ? 99 : Math.floor((Date.now() - t) / 864e5); };
+
+  // How well does an article fit this reader? Higher is better. Newness counts as much as interests,
+  // so a reader with a profile still meets each day's new story first (Robin, 9 Oct 2026).
   function fit(a, p, rank) {
-    let s = Math.max(0, 2 - (rank || 0) * 0.1);                       // newer first, gently
+    let s = Math.max(0, 6 - (rank || 0) * 0.5);                       // newest first: the order the page or index gives
+    if (a.date) { const d = daysOld(a.date); s += d <= 1 ? 6 : d <= 3 ? 3 : d <= 7 ? 1 : 0; }
+    if (a.url && seen.includes(a.url)) s -= 8;                         // already read on this device: let something new through
     if ((p.interests || []).includes(a.category)) s += 4;
     s += (fb[a.category] || 0);
     const al = a.level || 'any', pl = p.level;
@@ -96,7 +105,7 @@
     if (mid && a.age) { const d = a.age - mid; if (d >= -10 && d <= 12) s += 2; else if (d > 20) s -= 3; }
     return s;
   }
-  const cardHTML = a => `<article class="card${a.photo ? ' has-photo' : ''}" data-cat="${a.category}"><a class="card-img" href="${a.url}" aria-hidden="true" tabindex="-1"><img src="${a.art || a.image}" alt="" loading="lazy" width="1200" height="630"></a><div class="card-body"><p class="kicker">${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`;
+  const cardHTML = a => `<article class="card${a.photo ? ' has-photo' : ''}" data-cat="${a.category}"><a class="card-img" href="${a.url}" aria-hidden="true" tabindex="-1"><img src="${a.art || a.image}" alt="" loading="lazy" width="1200" height="630"></a><div class="card-body"><p class="kicker">${daysOld(a.date) <= 1 && !seen.includes(a.url) ? '<span class="new-tag">New</span> ' : ''}${a.category}</p><h3><a href="${a.url}">${a.title}</a></h3><p>${a.excerpt}</p></div></article>`;
 
   function applyProfile() {
     profile = readProfile();
@@ -117,14 +126,15 @@
     if (plan && profile.level) { plan.innerHTML = '<ol>' + PLANS[profile.level].map(t => `<li>${t}</li>`).join('') + '</ol>'; const sec = $('#plan'); if (sec) sec.hidden = false; }
     const holder = $('[data-for-you]');
     if (holder) fetch('/index.json').then(r => r.json()).then(idx => {
-      const picks = idx.map((a, i) => [fit(a, profile, i), a]).sort((x, y) => y[0] - x[0]).slice(0, 6).map(x => x[1]);
+      // The hero always stays as today's story, for everyone. "Picked for you" sits below it and changes as new
+      // stories arrive and as the reader opens them; it never repeats the hero.
+      const hero = $('[data-hero-card]'), heroUrl = hero ? new URL(hero.href, location.href).pathname : '';
+      const picks = idx.filter(a => a.url !== heroUrl).map((a, i) => [fit(a, profile, i), a]).sort((x, y) => y[0] - x[0]).slice(0, 6).map(x => x[1]);
       holder.innerHTML = picks.map(cardHTML).join('');
       const sec = $('#for-you'); if (sec) sec.hidden = false;
-      const hero = $('[data-hero-card]');   // lead with the reader's best match, not just the newest story
-      if (hero && picks[0]) { const p = picks[0], sub = $('[data-hero-sub]', hero); hero.href = p.url; $('strong', hero).textContent = p.title; $('.kicker', hero).textContent = 'Picked for you'; if (sub) sub.textContent = p.excerpt; hero.dataset.cat = p.category; }
     }).catch(() => {});
     // category pages: best matches first
-    $$('[data-personalise]').forEach(g => [...g.children].map((c, i) => [fit({ category: c.dataset.cat, level: c.dataset.level, age: +c.dataset.age || null }, profile, i), c]).sort((x, y) => y[0] - x[0]).forEach(x => g.appendChild(x[1])));
+    $$('[data-personalise]').forEach(g => [...g.children].map((c, i) => [fit({ category: c.dataset.cat, level: c.dataset.level, age: +c.dataset.age || null, date: c.dataset.date, url: c.dataset.url }, profile, i), c]).sort((x, y) => y[0] - x[0]).forEach(x => g.appendChild(x[1])));
   }
 
   const modal = $('#segment-modal');

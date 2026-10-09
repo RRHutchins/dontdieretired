@@ -507,7 +507,7 @@ def build(make_social=True):
             break
     urls.append(out("/", "index.html", featured=featured, latest=latest))
     for cid, c in cfg["categories"].items():
-        urls.append(out(f"/{cid}/", "category.html", cid=cid, c=c, items=[a for a in arts if a["category"] == cid], acts=[x for x in _chs if x.get("category") == cid]))
+        urls.append(out(f"/{cid}/", "category.html", cid=cid, c=c, items=([a for a in arts if a.get("kind") != "guide"] if cid == "stories" else [a for a in arts if a["category"] == cid]), acts=[x for x in _chs if x.get("category") == cid]))
     urls.append(out("/videos/", "videos.html"))
     # standalone pages that search should find (title, url, excerpt, tags); written to pages.json
     pages = []

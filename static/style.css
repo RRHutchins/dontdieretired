@@ -689,3 +689,4 @@ body[data-page=puzzle] .page-head .lead{font-size:1.02rem;margin:0}
 @media (max-width:480px){.num-tiles{gap:8px}.num-tiles button{min-width:52px;padding:0 8px;font-size:1.4rem}}
 .fl-colls{margin:0 0 10px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}.fl-colls .chip{text-decoration:none}
 .cat-acts{margin:36px 0}.cat-acts-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:6px 24px}
+.new-tag{display:inline-block;background:var(--brand);color:#fff;border-radius:999px;padding:0 8px;font-size:.78rem;font-weight:700;margin-right:4px}
