@@ -1,0 +1,21 @@
+name: Weekly email drafts
+# Puts each new edition in newsletters/ into Buttondown as a draft (never sends). RUNBOOK §3.
+on:
+  push:
+    branches: [main]
+    paths: ["newsletters/**", "send_newsletter.py"]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: newsletter
+  cancel-in-progress: false
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pyyaml
+      - run: python3 send_newsletter.py
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}

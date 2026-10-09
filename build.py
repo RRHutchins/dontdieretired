@@ -328,6 +328,8 @@ def make_card(title: str, kicker: str, category: str, out: Path, size=(1200, 630
     for line in lines:
         d.text((pad, y), line, font=tf, fill=cream)
         y += line_h
+    if H > W * 1.3 and footer:   # tall pins and story cards: say where it is from, under the headline
+        d.text((pad, y + int(line_h * 0.6)), footer, font=ff, fill=_mix(fg, cream, 0.72))
     img = img.resize((W0, H0), Image.LANCZOS)
     out.parent.mkdir(parents=True, exist_ok=True)
     img.save(out, optimize=True)
@@ -387,10 +389,14 @@ def social_pack(a, cfg):
 # ---------------------------------------------------------------- feeds
 
 def write_rss(arts, cfg):
+    """feed.xml (every article) and feed/<topic>.xml (one per topic, for one Pinterest board each).
+    The image in each item is the tall pin, which is what Pinterest auto-publish uses (RUNBOOK §6d)."""
     site = cfg["site"]
-    items = []
-    for a in arts[:30]:
-        items.append(f"""
+
+    def feed(items_src, title, path):
+        items = []
+        for a in items_src[:30]:
+            items.append(f"""
     <item>
       <title>{html.escape(a['title'])}</title>
       <link>{a['abs_url']}</link>
@@ -398,16 +404,23 @@ def write_rss(arts, cfg):
       <pubDate>{dt.datetime.combine(a['date'], dt.time(6)).strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>
       <category>{a['category']}</category>
       <description>{html.escape(a['excerpt'])}</description>
-      <enclosure url="{site['url']}{a['image']}" type="image/png" length="0"/>
+      <enclosure url="{site['url']}/static/pin/{a['slug']}.png" type="image/png" length="0"/>
     </item>""")
-    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+        rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
-  <title>{html.escape(site['name'])}</title>
+  <title>{html.escape(title)}</title>
   <link>{site['url']}</link>
   <description>{html.escape(site['description'])}</description>
   <language>{site['language']}</language>{''.join(items)}
 </channel></rss>"""
-    (DIST / "feed.xml").write_text(rss, encoding="utf-8")
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(rss, encoding="utf-8")
+
+    feed(arts, site["name"], DIST / "feed.xml")
+    for cid, c in cfg["categories"].items():
+        mine = [a for a in arts if a.get("kind") != "guide"] if cid == "stories" else [a for a in arts if a["category"] == cid]
+        if mine:
+            feed(mine, f"{site['name']}: {c['label']}", DIST / "feed" / f"{cid}.xml")
 
 
 def write_sitemap(urls, cfg):
@@ -484,6 +497,10 @@ def build(make_social=True):
             (DIST / "static" / "social").mkdir(parents=True, exist_ok=True)
             make_card(a.get("hook") or a["title"], "Don't Die Retired", a["category"],
                       DIST / "static" / "social" / f"{a['slug']}.png", size=(1080, 1080))
+        # tall 2:3 pin for Pinterest (the feed's image); the headline, so a pin reads like the article it links to
+        (DIST / "static" / "pin").mkdir(parents=True, exist_ok=True)
+        make_card(a["title"], cfg["categories"][a["category"]]["label"], a["category"],
+                  DIST / "static" / "pin" / f"{a['slug']}.png", size=(1000, 1500))
         (DIST / "static" / "art").mkdir(parents=True, exist_ok=True)
         (DIST / "static" / "art" / f"{a['slug']}.svg").write_text(
             art.scene_svg({**a, "art": a["scene"]}, PALETTE.get(a["category"], ("#333333",))[0]), encoding="utf-8")
