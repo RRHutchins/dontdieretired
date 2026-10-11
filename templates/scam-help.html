@@ -64,7 +64,7 @@
 <p>Spotted something out of date? {{ contact('Tell us', 'Scam help page') }} and we will fix it.</p>
 <h2>Read more</h2>
 <ul>{% for g in scam_guides %}<li><a href="{{ g.url }}">{{ g.title }}</a></li>{% endfor %}</ul>
-<p>For one story and one thing to try each week, <a href="/newsletter/">join the free weekly email</a>.{% if tech_product %} Our own guide, <a href="/shop/#{{ tech_product.id }}">{{ tech_product.name }}</a>, goes through the common scams step by step.{% endif %}</p>
+<p>{% if cfg.newsletter.sending %}For one story and one thing to try each week, <a href="/newsletter/">join the free weekly email</a>.{% else %}For one story and one thing to try by email, <a href="/newsletter/">join our email list</a>.{% endif %}{% if tech_product %} Our own guide, <a href="/shop/#{{ tech_product.id }}">{{ tech_product.name }}</a>, goes through the common scams step by step.{% endif %}</p>
 </div>
 {% endblock %}
 {% block scripts %}<script src="/static/scam.js?v={{ asset_v }}" defer></script>{% endblock %}

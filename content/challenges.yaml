@@ -6727,3 +6727,26 @@
     url: https://www.si.edu/visit/museums
     region: us
     checked: '2026-10-08'
+- id: tile-a-table-with-the-hat
+  title: Cover a table with the hat tile
+  category: think
+  kind: project
+  effort: gentle
+  cost: free
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - anywhere
+  why: The hat is a 13-sided shape that covers a flat surface without gaps but never in a repeating pattern, the first single tile known to do so. Its authors' page has a browser app that builds patches of hats and saves them as pictures, so the only kit you need is a printer, card and scissors.
+  start:
+  - Open the hat page and try the browser app, or the Mathigon polypad it links to, to see how the tiles fit.
+  - Save a patch as a picture, print it and cut out 30 tiles from thin card.
+  - Fit them together on a table, flipping tiles where you need to, and photograph the biggest patch you make.
+  links:
+  - label: '"An aperiodic monotile": the authors'' page, with the paper and browser apps (Craig S. Kaplan, University of Waterloo)'
+    url: https://cs.uwaterloo.ca/~csk/hat/
+    region: any
+    checked: '2026-10-11'
+  story: david-smith-hat-einstein-tile
+  story_note: David Smith, who found the hat, cut 60 of them from card to see how they fitted, Quanta Magazine reported. He is one of the four authors of the page linked here.

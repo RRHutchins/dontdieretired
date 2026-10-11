@@ -295,7 +295,7 @@
     if (main && !store.get('ddr_friend_closed') && !qs.get('do')) {   // an invite to a challenge shows its own line instead (list.js)
       const bar = document.createElement('div');
       bar.className = 'friend-bar';
-      bar.innerHTML = '<p>A friend thought you\'d like this. If they were right, <a href="/newsletter/">one story like it arrives by email each week</a>, free, with our 7-Day Restart Plan.</p><button type="button" aria-label="Close this message">×</button>';
+      bar.innerHTML = '<p>A friend thought you\'d like this. If they were right, <a href="/newsletter/">join our free email list</a> for more like it, with our 7-Day Restart Plan.</p><button type="button" aria-label="Close this message">×</button>';
       $('button', bar).addEventListener('click', () => { bar.remove(); store.set('ddr_friend_closed', '1'); });
       main.prepend(bar);
     }
