@@ -243,6 +243,7 @@ A scripted probe (axe-core plus keyboard and zoom tests) took the site from 388 
   - **`https://www.dontdieretired.com` has no valid certificate** (DNS is right: `www` CNAME → `rrhutchins.github.io`). Removing and re-saving the custom domain in Settings → Pages makes GitHub issue one covering both names.
   - The plans are `noindex` on purpose (email-gated), `/search/?q=…` and `?via=friend` addresses are alternates on purpose: those rows are expected and need no fix.
   - Do not write `href="${…}"` inside an inline script: crawlers read it as a real link (the search page produced `/search/${a.url}`, a 404). Spell the attribute through a variable, as `templates/search.html` now does.
+  - **Re-read 12 Oct 2026:** 93 indexed, 46 not (32 alternate-canonical, 10 noindex, 2 redirect, 2 crawled-not-indexed: the newest story and `feed.xml`). The `www` certificate is now fixed (`https://www…` redirects to the bare domain), but `http://` pages still answer 200 without redirecting, so "Enforce HTTPS" is still off; every one of the 32 alternate-canonical rows is an `http://` copy. The 10 noindex rows are plans and Your say, as intended.
   - "Crawled - currently not indexed" on `https://` pages of a nine-day-old site is Google deciding in its own time; do not churn the pages or their dates to chase it. Re-read the report weekly once Enforce HTTPS is on.
 
 ### 6n. Personalised order must never hide the new story (Robin, 9 Oct 2026)
