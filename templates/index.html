@@ -1,35 +1,26 @@
 {% extends "base.html" %}{% from "_macros.html" import card, ad, product_promo %}
 {% block pagetype %}home{% endblock %}
 {% block content %}
-<section class="hero">
-  <div class="hero-text">
-    <h1>Retire from work.<br>Never from <em>life</em>.</h1>
-    <p class="lead">One true story a day about someone doing something worth reading about, and one thing to try this week, pitched at your level: fit, unfit or somewhere in between.</p>
-    <div class="hero-actions">
-      <a class="btn" href="/start-here/">Start here</a>
-      <button class="btn btn-ghost" data-open-segments>Make it yours (20 seconds)</button>
+<section class="hero hero-v3">
+  <div class="hero-intro">
+    <h1>Retire from work.<br>Never from life.</h1>
+    <div class="hero-intro-side">
+      <p class="lead">One true story a day about someone doing something worth reading about, and one thing to try this week, pitched at your level: fit, unfit or somewhere in between.</p>
+      <div class="hero-actions">
+        <a class="btn" href="/start-here/">Start here</a>
+        <button class="btn btn-ghost" data-open-segments>Make it yours (20 seconds)</button>
+      </div>
     </div>
   </div>
-  <div class="hero-side">
-    <a href="{{ featured.url }}" class="hero-card" data-hero-card data-cat="{{ featured.category }}">
-      {% if featured.photo %}<span class="hero-card-photo has-photo"><img src="{{ featured.photo.small }}" alt="" width="{{ featured.photo.w }}" height="{{ featured.photo.h }}" fetchpriority="high"></span>{% endif %}
-      <span class="kicker">Today's story</span>
+  <a href="{{ featured.url }}" class="lead-story" data-hero-card data-cat="{{ featured.category }}">
+    <span class="lead-img{% if featured.photo %} has-photo{% endif %}"><img src="{{ featured.art }}" alt="" {% if featured.photo %}width="{{ featured.photo.w }}" height="{{ featured.photo.h }}"{% else %}width="1200" height="630"{% endif %} fetchpriority="high"></span>
+    <span class="lead-text">
+      <span class="kicker">Today's story <span class="lead-cat">{{ categories[featured.category].label }}</span></span>
       <strong>{{ featured.title }}</strong>
       <span class="hero-sub" data-hero-sub>{{ featured.standfirst or featured.excerpt }}</span>
       <span class="hero-read">Read the story</span>
-    </a>
-    <ul class="hero-more" aria-label="Also new">
-      {% for a in latest[:2] %}<li data-cat="{{ a.category }}"><a href="{{ a.url }}">{{ a.title }}</a></li>{% endfor %}
-    </ul>
-  </div>
-  {# The sunrise, drawn in the site's own topic colours: think, travel, move, explore #}
-  <svg class="hero-land" aria-hidden="true" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
-    <g stroke="#F2B45A" stroke-width="12" stroke-linecap="round" opacity=".75"><line x1="566" y1="130" x2="528" y2="120"/><line x1="594" y1="66" x2="566" y2="38"/><line x1="650" y1="22" x2="636" y2="0"/><line x1="790" y1="22" x2="804" y2="0"/><line x1="846" y1="66" x2="874" y2="38"/><line x1="874" y1="130" x2="912" y2="120"/></g>
-    <circle cx="720" cy="150" r="122" fill="#F2B45A"/>
-    <path d="M0,240 L0,150 Q180,96 360,138 T720,150 T1080,120 T1440,146 L1440,240 Z" fill="#1F4E79"/>
-    <path d="M0,240 L0,186 Q200,142 420,178 T860,176 T1240,160 T1440,182 L1440,240 Z" fill="#0E7490"/>
-    <path d="M0,240 L0,214 Q260,176 520,208 T1000,204 T1440,206 L1440,240 Z" fill="#0B6E4F"/>
-  </svg>
+    </span>
+  </a>
 </section>
 
 <section class="for-you" id="for-you" hidden>
@@ -38,19 +29,19 @@
 </section>
 
 <section>
-  <div class="section-head"><h2>Latest</h2><a href="/stories/">All stories →</a></div>
-  <div class="grid grid-3">
-    {% for a in latest %}{{ card(a) }}{% endfor %}
+  <div class="section-head"><h2>Latest</h2><a href="/stories/">All stories</a></div>
+  <div class="grid grid-3 latest-grid">
+    {% for a in latest[:5] %}{{ card(a) }}{% endfor %}
   </div>
 </section>
 
-{% if list_total %}<a class="pz-card" href="/list/"><div><p class="kicker">Your list</p><h3>Fifty at Fifty</h3><p>{{ list_total }} things worth doing, with how to start each one. Pick your own, at any age, in your own time.</p></div><span class="pz-badge" data-fl-badge hidden></span></a>{% endif %}
+<section class="tiles" aria-label="Things to do here">
+  {% if list_total %}<a class="tile tile-list" href="/list/"><span class="tile-k">Your list</span><strong>Fifty at Fifty</strong><span>{{ list_total }} things worth doing, with how to start each one. Pick your own, at any age.</span><span class="pz-badge" data-fl-badge hidden></span></a>{% endif %}
+  <a class="tile tile-puzzle" href="/puzzle/"><span class="tile-k">Today's puzzles</span><strong>Four a day</strong><span>Wheel, Ladder, Sudoku and Numbers. Gentle, steady or hard. New every day.</span><span class="pz-badge" data-pz-badge hidden></span></a>
+  <a class="tile tile-scam" href="/scam-help/"><span class="tile-k">Use it as often as you like</span><strong>Scam checker</strong><span>A text, an email, a call or someone at the door: check it before you act.</span></a>
+</section>
 
-<a class="pz-card" href="/scam-help/"><div><p class="kicker">Use it as often as you like</p><h3>Scam checker</h3><p>A text, an email, a call or someone at the door: check it here before you act, and see where to report it.</p></div></a>
-
-<a class="pz-card" href="/puzzle/"><div><p class="kicker">Today's puzzles</p><h3>Four a day: Wheel, Ladder, Sudoku, Numbers</h3><p>Gentle, steady or hard, as you like. New every day, gone at midnight.</p></div><span class="pz-badge" data-pz-badge hidden></span></a>
-
-<section class="manifesto">
+<section class="manifesto band">
   <p class="kicker">What we believe</p>
   <h2>Retirement is a word for leaving a job. It was never meant to describe a person.</h2>
   <div class="grid grid-3 manifesto-grid">
@@ -62,15 +53,15 @@
 
 {{ ad('in_article') }}
 
-<section class="cats">
+<section class="cats-wrap"><div class="section-head"><h2>Find your thing</h2></div><div class="cats">
   {% for cid, c in categories.items() %}
   <a class="cat cat-{{ cid }}" href="/{{ cid }}/"><strong>{{ c.label }}</strong><span>{{ c.blurb }}</span></a>
   {% endfor %}
-</section>
+</div></section>
 
 <section class="two-col">
   <div>
-    <div class="section-head"><h2>Watch</h2><a href="/videos/">All videos →</a></div>
+    <div class="section-head"><h2>Watch</h2><a href="/videos/">All videos</a></div>
     <div class="video-grid">
       {% for v in videos[:2] %}
       <div class="video">

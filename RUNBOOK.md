@@ -22,6 +22,14 @@ A static site for over-50s, encouraging physical and mental activity, run by AI 
 - **What the site is about.** Activity, purpose and making the most of life. Articles, guides, products and affiliate links stay out of longevity, life-extension, anti-ageing, supplements and medical testing, so that the statement in "Our ethos" (About page) stays true. No page names, links to or compares the site with another brand, person or movement in order to describe itself.
 - **"Our ethos"** lives on the About page (`/about/#ethos`) with one small footer link. It is meant to be available, not prominent: do not add it to the main menu, the home page, Start here, articles or the app unless Robin asks.
 
+### 1d. Look (refreshed 14 Oct 2026, after feedback that the site looked dated)
+Compared with Saga Magazine, Rest Less and AARP, the site was led by an illustration, boxed everything in hairline outlines and set every title in heavy serif. The refresh (the last block of `static/style.css`) keeps the brand (Fraunces, Source Sans 3, crimson, the sunrise mark, topic colours) and changes how it is used:
+- **Picture first.** Home opens with the promise, then today's story as a large picture beside its headline. Cards are picture, topic, title, two lines, date: no box, no shadow. The newest story in "Latest" is wider. A photograph (§6l) makes all of this far stronger than the artwork, so give new stories one wherever an honest one exists.
+- **White and quiet.** White page, one soft stone colour (`--stone`) for bands and side panels, no outlines on cards or panels. Crimson is for the main action only.
+- **Plain titles.** Card and small headings in Source Sans 3 semibold; Fraunces 600 for page headlines, the lead story and section heads. No italic or coloured word in a headline.
+- **Solid topic colour.** Topic tiles and the three "things to do" tiles (Fifty at Fifty, puzzles, Scam checker) are solid colour with white text. The topic's colour also labels each card (`[data-cat]` sets `--c`).
+- Check any template change at 320, 390, 1040 and 1366px wide, as before.
+
 Repo layout: `site.yaml` (config), `content/articles/*.md`, `content/videos.yaml`, `content/photo_credits.yaml` and `static/photos/` (written by the Photos workflow, §6l), `content/products.yaml`, `templates/`, `static/`, `build.py` → `dist/`; `social/` gets a post pack per article.
 
 ## 1b. Who we write for (set 2 Oct 2026 — read before choosing a story)
