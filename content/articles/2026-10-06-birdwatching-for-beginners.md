@@ -31,6 +31,9 @@ sources:
   - {title: "First Flight: a beginner's birdwalk", publisher: "Aransas National Wildlife Refuge, US Fish & Wildlife Service", date: "accessed 6 October 2026", url: "https://www.fws.gov/event/first-flight-beginners-birdwalk"}
   - {title: "Festival of Birds", publisher: "Point Pelee National Park, Parks Canada", date: "accessed 6 October 2026", url: "https://parks.canada.ca/pn-np/on/pelee/activ/festival"}
   - {title: "Feeling chirpy: being around birds is linked to lasting mental health benefits", publisher: "King's College London", date: "27 October 2022", url: "https://www.kcl.ac.uk/news/feeling-chirpy-being-around-birds-is-linked-to-lasting-mental-health-benefits"}
+photo_file: "File:Birdwatching hide at Leighton Moss RSPB Reserve - geograph.org.uk - 4335331.jpg"
+photo_caption: "Inside a birdwatching hide at Leighton Moss RSPB reserve, Lancashire, in 2009."
+photo_alt: "Empty chairs facing wide open windows that look out over reeds and water."
 ---
 Birdwatching used to start with a field guide and a long apprenticeship. It now starts with a phone held up in a park. An app listens, names what is singing, and you look up to find it. The apprenticeship is still there if you want it, and it lasts a lifetime, but the first morning is easy.
 

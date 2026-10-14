@@ -30,6 +30,9 @@ sources:
   - {title: "An Evening With Lhakpa Sherpa: 16th Annual Visionary Leadership Award", publisher: "International Festival of Arts & Ideas", date: "opened 10 October 2026", url: "https://www.artidea.org/vla2026"}
   - {title: "Altitude sickness", publisher: "NHS", date: "reviewed 31 July 2023", url: "https://www.nhs.uk/conditions/altitude-sickness/"}
   - {title: "Famous U.S. Summits: Mount Washington, New Hampshire", publisher: "REI Co-op", date: "opened 10 October 2026", url: "https://www.rei.com/blog/climb/famous-u-s-summits-mount-washington-new-hampshire"}
+photo_file: "File:Close Up View of Mount Everest from Kala Patthar (5644 m) in 2023-IMG-3485.jpg"
+photo_caption: "Mount Everest seen from Kala Patthar, Nepal, in 2023."
+photo_alt: "A dark rocky summit streaked with snow under a deep blue sky, with a plume of cloud at its peak and snowy ridges in front."
 ---
 At about 9.30 on the morning of Sunday 17 May, Lhakpa Sherpa stood on the summit of Everest. She had left Camp 4 in the night. A client was climbing with her, because this time she was there to work.
 

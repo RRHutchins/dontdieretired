@@ -28,6 +28,9 @@ sources:
   - {title: "Trick of the hat: finding the elusive 'einstein' tile", publisher: "University of Waterloo, Cheriton School of Computer Science", date: "13 April 2023", url: "https://cs.uwaterloo.ca/news/trick-of-the-hat-finding-the-elusive-einstein-tile"}
   - {title: "An aperiodic monotile (the paper, the browser apps and the tile outlines)", publisher: "Craig S. Kaplan, University of Waterloo", date: "opened 11 October 2026", url: "https://cs.uwaterloo.ca/~csk/hat/"}
   - {title: "The Path to Aperiodic Monotiles", publisher: "Craig S. Kaplan, arXiv (first printed in Eureka, issue 67)", date: "2 September 2025", url: "https://arxiv.org/abs/2509.12216"}
+photo_file: "File:Playing with hat tiles (wheels).jpg"
+photo_caption: "Hat tiles cut out and fitted together on a table, made by a Wikimedia contributor in 2023."
+photo_alt: "Pale wooden cut-out tiles of the same many-sided shape fitted together on a brown surface, with hexagon-shaped gaps between them."
 ---
 The shape has 13 sides and no symmetry, and it is known as the hat. In November 2022 there were sixty of them, cut from card, spread across a table in Bridlington, a seaside town on the Yorkshire coast of England.
 

@@ -32,6 +32,9 @@ sources:
   - {title: "Daily programs", publisher: "Griffith Observatory", date: "accessed 14 October 2026", url: "https://griffithobservatory.lacity.gov/explore/daily-programs/"}
   - {title: "Public events: Observatory Nights", publisher: "Center for Astrophysics, Harvard & Smithsonian", date: "accessed 14 October 2026", url: "https://cfa.harvard.edu/events/public-events"}
   - {title: "RASC Centres", publisher: "Royal Astronomical Society of Canada", date: "accessed 14 October 2026", url: "https://rasc.ca/centres"}
+photo_file: "File:Searching the night sky.jpg"
+photo_caption: "Searching the night sky through a telescope."
+photo_alt: "A person kneeling in silhouette beside a small telescope on a tripod under a dark, starry sky."
 ---
 Stargazing is the oldest science there is, and the only equipment it ever needed was a pair of eyes and a dark night. You still need nothing else to begin. A telescope helps later, and you can borrow a look through one for a few pounds or dollars, or for nothing, before you think of buying.
 

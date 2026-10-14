@@ -26,6 +26,9 @@ sources:
   - {title: "Kona in Numbers: The Official Stats of the Ironman World Championship", publisher: "Triathlon Today", date: "9 October 2026", url: "https://tri-today.com/2026/10/kona-in-numbers-the-official-stats-of-the-ironman-world-championship/"}
   - {title: "Physical activity guidelines for adults aged 19 to 64", publisher: "NHS", date: "reviewed 22 May 2024", url: "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/"}
   - {title: "Adult Activity: An Overview", publisher: "CDC", date: "20 December 2023", url: "https://cdc.gov/physical-activity-basics/guidelines/adults.html"}
+photo_file: "File:US Navy 051015-N-9419C-004 Almost 2,000 triathletes begin the 2.4-mile swim at the Ironman World Championship triathlon, held in Kailua-Kona, Hawaii.jpg"
+photo_caption: "Almost 2,000 triathletes begin the 2.4-mile swim at the Ironman World Championship in Kailua-Kona, Hawaii, in 2005. The picture is not of José Graca."
+photo_alt: "Hundreds of swimmers in coloured caps thrashing through bright, splashing sea water."
 ---
 The last mile of the Ironman World Championship runs into Kailua-Kona, on Hawaii's Big Island. On Saturday José Graca ran it with another man at his shoulder, after more than nine hours of racing.
 

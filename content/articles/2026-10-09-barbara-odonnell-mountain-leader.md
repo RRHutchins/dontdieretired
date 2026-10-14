@@ -28,6 +28,9 @@ sources:
   - {title: "Mountain Leader", publisher: "Mountaineering Ireland", date: "opened 9 October 2026", url: "https://www.mountaineering.ie/content/MountainLeader/102"}
   - {title: "Path to Leadership", publisher: "Appalachian Mountain Club, New York–North Jersey Chapter", date: "opened 9 October 2026", url: "https://amc-ny.org/education-leadership-training/path-to-leadership/"}
   - {title: "Physical activity guidelines for adults aged 19 to 64", publisher: "NHS", date: "reviewed 22 May 2024", url: "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/"}
+photo_file: "File:Comeragh Mountains Lake.jpg"
+photo_caption: "A lake in the Comeragh Mountains, County Waterford, in 2012."
+photo_alt: "A deep blue lake in a steep green and grey hollow, seen from a grassy edge above it."
 ---
 At the end of a training climb, the assessor held out a fist. Barbara O'Donnell bumped it, and understood that she had passed. She was a mountain leader.
 
