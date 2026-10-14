@@ -31,6 +31,7 @@ sources:
 photo_file: "File:Comeragh Mountains Lake.jpg"
 photo_caption: "A lake in the Comeragh Mountains, County Waterford, in 2012."
 photo_alt: "A deep blue lake in a steep green and grey hollow, seen from a grassy edge above it."
+photo_checked: 2026-10-14
 ---
 At the end of a training climb, the assessor held out a fist. Barbara O'Donnell bumped it, and understood that she had passed. She was a mountain leader.
 

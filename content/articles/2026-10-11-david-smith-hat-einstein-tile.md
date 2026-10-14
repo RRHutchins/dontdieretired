@@ -31,6 +31,7 @@ sources:
 photo_file: "File:Playing with hat tiles (wheels).jpg"
 photo_caption: "Hat tiles cut out and fitted together on a table, made by a Wikimedia contributor in 2023."
 photo_alt: "Pale wooden cut-out tiles of the same many-sided shape fitted together on a brown surface, with hexagon-shaped gaps between them."
+photo_checked: 2026-10-14
 ---
 The shape has 13 sides and no symmetry, and it is known as the hat. In November 2022 there were sixty of them, cut from card, spread across a table in Bridlington, a seaside town on the Yorkshire coast of England.
 

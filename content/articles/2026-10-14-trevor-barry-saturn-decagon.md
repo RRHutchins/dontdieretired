@@ -33,7 +33,8 @@ sources:
   - {title: "Want to get into astronomy without buying a telescope or binoculars?", publisher: "Royal Museums Greenwich", date: "accessed 14 October 2026", url: "https://www.rmg.co.uk/stories/topics/astronomy-naked-eye"}
 photo_file: "File:Top view of the rings of Saturn by Cassini - October 10, 2013.jpg"
 photo_caption: "Saturn and its main rings, seen from high above by NASA's Cassini spacecraft in October 2013, in natural colour."
-photo_alt: "The planet Saturn, pale gold, ringed by wide circular bands against a black sky."
+photo_alt: "The planet Saturn, pale gold, seen from above at an angle inside its wide rings, with the planet's shadow falling across them, against a black sky."
+photo_checked: 2026-10-14
 ---
 In mid-2024 Trevor Barry was taking pictures of Saturn from a dome in his back yard in Broken Hill, in outback New South Wales, when he noticed a pattern of bright spots near the planet's south pole. He described it to the professor he works with as a ripple.
 

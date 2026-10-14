@@ -806,3 +806,9 @@ h1{line-height:1.04}
 .nl-form input[type=email]{border-radius:12px}
 .site-footer{background:var(--stone);border-top:0}
 @media (prefers-reduced-motion:reduce){.card-img img{transition:none}.card:hover .card-img img{transform:none}}
+/* photos in the open cards: no coloured bar underneath; the sunrise corner mark stays (RUNBOOK §6l) */
+.card.has-photo{border-bottom:0}
+.card.has-photo .card-img::before{background:#fff}
+.lead-img.has-photo{position:relative}
+.lead-img.has-photo::before{content:"";position:absolute;left:0;bottom:0;width:58px;height:44px;background:var(--stone);border-top-right-radius:14px;z-index:1}
+.lead-img.has-photo::after{content:"";position:absolute;left:11px;bottom:9px;width:36px;height:23px;background:var(--c,var(--brand));-webkit-mask:url(/static/sun-tab.svg) center/contain no-repeat;mask:url(/static/sun-tab.svg) center/contain no-repeat;z-index:2}

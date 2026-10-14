@@ -29,6 +29,7 @@ sources:
 photo_file: "File:US Navy 051015-N-9419C-004 Almost 2,000 triathletes begin the 2.4-mile swim at the Ironman World Championship triathlon, held in Kailua-Kona, Hawaii.jpg"
 photo_caption: "Almost 2,000 triathletes begin the 2.4-mile swim at the Ironman World Championship in Kailua-Kona, Hawaii, in 2005. The picture is not of José Graca."
 photo_alt: "Hundreds of swimmers in coloured caps thrashing through bright, splashing sea water."
+photo_checked: 2026-10-14
 ---
 The last mile of the Ironman World Championship runs into Kailua-Kona, on Hawaii's Big Island. On Saturday José Graca ran it with another man at his shoulder, after more than nine hours of racing.
 

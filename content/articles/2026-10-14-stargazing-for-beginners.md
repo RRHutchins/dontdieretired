@@ -35,6 +35,7 @@ sources:
 photo_file: "File:Searching the night sky.jpg"
 photo_caption: "Searching the night sky through a telescope."
 photo_alt: "A person kneeling in silhouette beside a small telescope on a tripod under a dark, starry sky."
+photo_checked: 2026-10-14
 ---
 Stargazing is the oldest science there is, and the only equipment it ever needed was a pair of eyes and a dark night. You still need nothing else to begin. A telescope helps later, and you can borrow a look through one for a few pounds or dollars, or for nothing, before you think of buying.
 

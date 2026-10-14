@@ -27,8 +27,9 @@ sources:
   - {title: "Physical activity guidelines for adults aged 19 to 64", publisher: "NHS", date: "reviewed 22 May 2024", url: "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/"}
   - {title: "New: Track walking", publisher: "CityStrides Community", date: "15 August 2015", url: "https://community.citystrides.com/t/new-track-walking/80"}
 photo_file: "File:Shops and Pub, Harborne High Street - geograph.org.uk - 6939665.jpg"
-photo_caption: "Shops and a pub on Harborne High Street, Birmingham, in 2021."
-photo_alt: "A row of red-brick shops and a black-and-white pub on a street corner under a grey sky."
+photo_caption: "Shops and a pub on Harborne High Street, Birmingham, in 2021. The picture is not of Nigel Beecroft."
+photo_alt: "A row of red-brick shops and a black-and-white pub on a street corner under a grey sky, with two people walking past in the distance."
+photo_checked: 2026-10-14
 ---
 In a garden in Handsworth, in north-west Birmingham, there are six ice cream vans. Nigel Beecroft knows this because he has run past it, as he has run past every other garden in the city.
 
