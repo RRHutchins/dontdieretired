@@ -161,3 +161,55 @@ activities:
           price: "Free"
           url: "https://www.audubon.org/conservation/about-great-backyard-bird-count"
           checked: 2026-10-06
+  stargazing:
+    label: "stargazing"
+    guide: /explore/stargazing-for-beginners/
+    listings:
+      uk:
+        - name: "Evening with the Stars, Royal Observatory Greenwich"
+          where: "Greenwich Park, London"
+          what: "About two hours: a live planetarium show, then, weather permitting, astronomers guide you round the sky with modern telescopes and the 130-year-old Great Equatorial Telescope. Talks and a tour if it is cloudy. Ages 7 and up; dress warmly."
+          price: "From £24 adults on the page we read; check the current season's dates"
+          url: "https://rmg.co.uk/whats-on/royal-observatory/evening-stars"
+          checked: 2026-10-14
+        - name: "Kielder Observatory"
+          where: "Kielder Forest, Northumberland, inside a Gold-tier International Dark Sky Park"
+          what: "A public observatory run by an astronomy charity. Its late-night events run for two hours at the darkest part of the night, with talks, a tour of the instruments and observing if the sky allows."
+          price: "Ticketed; prices on each event page"
+          url: "https://kielderobservatory.org/"
+          checked: 2026-10-14
+      us-east:
+        - name: "Observatory Nights, Center for Astrophysics, Harvard & Smithsonian"
+          where: "60 Garden St, Cambridge, Massachusetts"
+          what: "A non-technical talk, then telescope observing from the observatory roof if the weather allows. Free parking on event nights. Join the mailing list on the page for dates."
+          price: "Free; limited tickets"
+          url: "https://cfa.harvard.edu/events/public-events"
+          checked: 2026-10-14
+      us-central:
+        - name: "Star Party, McDonald Observatory"
+          where: "Fort Davis, West Texas"
+          what: "Two hours: an open-air constellation tour and live telescope views. Times vary by season and popular nights sell out, so book ahead. Check in at the Frank N. Bash Visitor Center."
+          price: "$5–$25"
+          url: "https://mcdonaldobservatory.org/visit/"
+          checked: 2026-10-14
+      us-mountain:
+        - name: "Lowell Observatory"
+          where: "Flagstaff, Arizona"
+          what: "General admission includes evening stargazing, weather permitting. The site has the six telescopes of the Giovale Open Deck Observatory and the dome where Pluto was discovered. Closed Tuesdays."
+          price: "$29 adults, $26 seniors (55+), through 1 November"
+          url: "https://lowell.edu/experiences/general-admission-ticket/"
+          checked: 2026-10-14
+      us-pacific:
+        - name: "Griffith Observatory public telescopes"
+          where: "Griffith Park, Los Angeles"
+          what: "Free viewing through the telescopes on the roof and lawn every evening the observatory is open and the sky is clear, usually from about 7pm, with the line closing by 9:30pm. Closed Mondays."
+          price: "Free"
+          url: "https://griffithobservatory.lacity.gov/explore/daily-programs/"
+          checked: 2026-10-14
+      canada:
+        - name: "Royal Astronomical Society of Canada centres"
+          where: "30 local centres from the Atlantic to British Columbia and the North"
+          what: "Each centre runs its own meetings, star parties and outreach. Find yours on this page, then check its own website for public observing nights."
+          price: "Varies by centre"
+          url: "https://rasc.ca/centres"
+          checked: 2026-10-14
