@@ -28,6 +28,7 @@ Compared with Saga Magazine, Rest Less and AARP, the site was led by an illustra
 - **White and quiet.** White page, one soft stone colour (`--stone`) for bands and side panels, no outlines on cards or panels. Crimson is for the main action only.
 - **Plain titles.** Card and small headings in Source Sans 3 semibold; Fraunces 600 for page headlines, the lead story and section heads. No italic or coloured word in a headline.
 - **Solid topic colour.** Topic tiles and the three "things to do" tiles (Fifty at Fifty, puzzles, Scam checker) are solid colour with white text. The topic's colour also labels each card (`[data-cat]` sets `--c`).
+- **The app (`/app/`) follows the same rules** (last block of `app/app.css`, 14 Oct 2026): white screens, stone panels with no shadow, sentence-case labels, plain titles in cards, numbers in Source Sans, the story picture first, Fifty at Fifty / puzzles / Scam checker as solid tiles, and a soft pill behind the current tab. When `app.css`, `app.js` or the fonts change, raise the cache name `V` in `app/sw.js` so installed copies update.
 - Check any template change at 320, 390, 1040 and 1366px wide, as before.
 
 Repo layout: `site.yaml` (config), `content/articles/*.md`, `content/videos.yaml`, `content/photo_credits.yaml` and `static/photos/` (written by the Photos workflow, §6l), `content/products.yaml`, `templates/`, `static/`, `build.py` → `dist/`; `social/` gets a post pack per article.

@@ -98,3 +98,83 @@ body.in-session .tabs{display:none}
 .pick{font:inherit;text-align:left;padding:12px 16px;border-radius:14px;border:2px solid var(--line);background:#fff;color:inherit;min-height:52px;display:grid;gap:2px;cursor:pointer}
 .pick span{font-size:.85em;opacity:.7}
 .pick[aria-pressed="true"]{border-color:#0B6E4F;background:#e8f3ee}
+
+/* ================= Look refresh, 14 Oct 2026 (matches the website, RUNBOOK §1d) =================
+   White and quiet, panels in soft stone instead of shadowed boxes, plain titles, sentence-case labels,
+   pictures first, solid colour tiles. Brand colours, fonts and the sunrise mark are unchanged. */
+@font-face{font-family:Fr;font-weight:600;font-display:swap;src:url(/app/fonts/fraunces-latin-600-normal.woff2) format("woff2")}
+:root{--paper:#fff;--stone:#f3f2f0;--line:#e7e4df;--r:20px;
+  --move:#0b6e4f;--eat:#5e7d1e;--think:#1f4e79;--money:#2f5d50;--earn:#8a4b08;--connect:#6d2e72;--travel:#0e7490;--tech:#4b4f9c;--ai:#3f4a54;--explore:#2f6b3a;--stories:#b23a48}
+[data-cat=move]{--c:var(--move)}[data-cat=eat]{--c:var(--eat)}[data-cat=think]{--c:var(--think)}[data-cat=money]{--c:var(--money)}[data-cat=earn]{--c:var(--earn)}[data-cat=connect]{--c:var(--connect)}[data-cat=travel]{--c:var(--travel)}[data-cat=tech]{--c:var(--tech)}[data-cat=ai]{--c:var(--ai)}[data-cat=explore]{--c:var(--explore)}[data-cat=stories]{--c:var(--stories)}
+html,body{background:var(--paper)}
+h1,h2,h3{font-weight:600;letter-spacing:-.015em}
+h1{font-size:1.85em;line-height:1.08}
+.card h3,.card h2:not(.hero h2),.story h3,.plancard h3{font-family:Src,system-ui,sans-serif;font-weight:700;letter-spacing:-.005em}
+.kick{text-transform:none;letter-spacing:0;font-weight:600;font-size:.82em;color:var(--muted)}
+.bar{background:#fff;backdrop-filter:none}
+.brand{font-weight:700}
+.textsize{background:var(--stone);border:0}
+
+/* panels: stone, no shadow, no outline */
+.card{background:var(--stone);box-shadow:none;border:0;border-radius:var(--r)}
+.card.hero{background:var(--plan);border-radius:24px;padding:24px 22px}
+.hero h2{font-family:Fr,Georgia,serif;font-weight:600;font-size:1.55em;line-height:1.12}
+.hero .kick{color:rgba(255,255,255,.88)}
+.card.warn{background:#fcedea}
+.install{background:transparent;border:2px dashed var(--line)}
+
+/* buttons */
+.btn{border-radius:14px;min-height:60px}
+.btn.ghost{background:var(--stone);border:0;color:var(--ink)}
+.hero .btn.ghost{background:rgba(255,255,255,.18);color:#fff}
+.btn.small{border-radius:12px}
+
+/* numbers: one strip, plain figures */
+.stats{gap:0;background:var(--stone);border-radius:var(--r);padding:6px 0}
+.stat{background:transparent;border:0;border-radius:0;padding:12px 8px}
+.stat+.stat{border-left:1px solid var(--line)}
+.stat b{font-family:Src,system-ui,sans-serif;font-weight:700;font-size:1.65em;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.stat span{font-size:.75em}
+
+/* the story: picture first, no box */
+.story{display:block;text-decoration:none;color:var(--ink);margin:8px 0 14px}
+.story-img{display:block;border-radius:var(--r);overflow:hidden;margin:0 0 12px;background:var(--line)}
+.story-img img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;margin:0;border-radius:0}
+.story .kick{color:var(--c,var(--brand))}
+.story h3{font-size:1.2em;line-height:1.25;margin:.1em 0 .3em}
+.story .muted{margin:0}
+
+/* three things to do: solid colour tiles, as on the website */
+.tile{display:block;text-decoration:none;color:#fff;border-radius:var(--r);padding:18px 20px 20px;margin:0 0 12px}
+.tile .kick{color:rgba(255,255,255,.85)}
+.tile h3{font-family:Fr,Georgia,serif;font-weight:600;font-size:1.35em;margin:.05em 0 .2em}
+.tile .muted{color:rgba(255,255,255,.9);margin:0;font-size:.92em}
+.tile-list{background:var(--connect)}.tile-puzzle{background:var(--think)}.tile-scam{background:var(--green)}
+.tile:active{transform:scale(.99)}
+
+/* plans */
+.plancard .sw{border-radius:14px;font-family:Src,system-ui,sans-serif;font-weight:700;width:64px;height:64px;flex:0 0 64px}
+.bar-prog{background:#fff}
+.tag{text-transform:none;letter-spacing:0;font-size:.72em;background:#fff}
+.tag.free{background:#e7f3ee}
+.dot{background:#fff;border-color:var(--line)}
+.num{background:var(--plan)}
+
+/* session: big plain figures */
+.target{font-family:Fr,Georgia,serif;font-weight:600;letter-spacing:-.02em}
+.timer b{font-family:Src,system-ui,sans-serif;font-weight:700;font-variant-numeric:tabular-nums}
+.progress i{background:var(--stone)}
+.faces button{background:var(--stone);border-color:transparent}
+.pick{background:#fff;border-color:var(--line)}
+.card .pick{background:#fff}
+.tap{font-family:Src,system-ui,sans-serif;font-weight:700}
+
+/* tab bar: labels in plain weight, the current tab marked by a soft pill behind its icon */
+.tabs{border-top:1px solid var(--line);background:#fff}
+.tabs a{font-weight:600;font-size:.7em;gap:4px;padding-top:8px}
+.tabs svg{width:56px;height:30px;padding:3px 15px;border-radius:99px;box-sizing:border-box}
+.tabs a[aria-current]{color:var(--ink)}
+.tabs a[aria-current] svg{background:color-mix(in srgb,var(--brand) 14%,#fff);color:var(--brand)}
+.sheet>div{background:#fff}
+.hero h2.chal{font-family:Src,system-ui,sans-serif;font-weight:700;font-size:1.3em;line-height:1.3;letter-spacing:-.005em}
+.card .btn.ghost,.card .pick{background:#fff}
