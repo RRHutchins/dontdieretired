@@ -709,7 +709,7 @@ h1{line-height:1.04}
 .btn-ghost:hover{background:var(--ink);border-color:var(--ink);color:#fff}
 
 /* header: quieter, lighter rule */
-.site-header{box-shadow:none;border-bottom:1px solid var(--line);background:rgba(255,255,255,.96)}
+.site-header{box-shadow:none;border-bottom:1px solid var(--line);background:#fff}
 .nav a,.topics summary{font-weight:400}
 .nav a[aria-current],.topics[open] summary{font-weight:600}
 
