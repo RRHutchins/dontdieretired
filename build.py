@@ -615,6 +615,7 @@ def build(make_social=True):
     urls.append(out("/sponsor/", "sponsor.html"))
     urls.append(out("/about/", "about.html"))
     urls.append(out("/privacy/", "privacy.html"))
+    urls.append(out("/follow/", "follow.html"))
     urls.append(out("/editorial-policy/", "editorial-policy.html", corrections_total=217))
     urls.append(out("/photo-credits/", "photo-credits.html", photo_arts=[a for a in arts if a["photo"]], film_arts=[a for a in arts if a["video"]]))
     urls.append(out("/search/", "search.html"))

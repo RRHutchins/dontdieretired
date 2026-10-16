@@ -812,3 +812,7 @@ h1{line-height:1.04}
 .lead-img.has-photo{position:relative}
 .lead-img.has-photo::before{content:"";position:absolute;left:0;bottom:0;width:58px;height:44px;background:var(--stone);border-top-right-radius:14px;z-index:1}
 .lead-img.has-photo::after{content:"";position:absolute;left:11px;bottom:9px;width:36px;height:23px;background:var(--c,var(--brand));-webkit-mask:url(/static/sun-tab.svg) center/contain no-repeat;mask:url(/static/sun-tab.svg) center/contain no-repeat;z-index:2}
+/* feed reader page */
+.feed-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.feed-row code{background:var(--stone);border-radius:8px;padding:6px 10px;font-size:.92rem;overflow-wrap:anywhere}
+.feed-list{list-style:none;padding:0}.feed-list li{margin:0 0 14px}

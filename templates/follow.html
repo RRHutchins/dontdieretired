@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Follow new stories in a feed reader — {{ cfg.site.name }}{% endblock %}
+{% block description %}Get every new story and guide in a feed reader app, for the whole site or one topic at a time. Copy an address and paste it into your reader.{% endblock %}
+{% block content %}
+<header class="page-head"><h1>Follow new stories in a feed reader</h1>
+<p class="lead">If you use a feed reader app (Feedly, Inoreader, NetNewsWire, or the one built into your email), it can show every new story and guide from us as soon as it is published. Copy one of the addresses below and paste it into your reader's "add" or "follow" box.</p></header>
+<div class="prose narrow">
+<p>Opening an address in an ordinary browser tab shows the raw feed, which is written for reader apps rather than people. That is normal: the feed works when you paste it into a reader.</p>
+<h2>Everything</h2>
+<p class="feed-row"><code data-feed>{{ cfg.site.url }}/feed.xml</code> <button class="btn btn-small btn-ghost" data-copy-feed>Copy</button></p>
+<h2>One topic</h2>
+<ul class="feed-list">
+{% for cid, c in categories.items() %}<li><strong>{{ c.label }}</strong><br><span class="feed-row"><code data-feed>{{ cfg.site.url }}/feed/{{ cid }}.xml</code> <button class="btn btn-small btn-ghost" data-copy-feed>Copy</button></span></li>
+{% endfor %}</ul>
+<p>Prefer email? <a href="/newsletter/">Join the email list</a> instead.</p>
+</div>
+<script>
+document.addEventListener('click', e => { const b = e.target.closest('[data-copy-feed]'); if (!b) return;
+  const t = b.parentElement.querySelector('[data-feed]').textContent.trim();
+  (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(() => { b.textContent = 'Copied'; setTimeout(() => b.textContent = 'Copy', 2000); }).catch(() => { const r = document.createRange(); r.selectNodeContents(b.parentElement.querySelector('[data-feed]')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected: press copy'; });
+});
+</script>
+{% endblock %}
