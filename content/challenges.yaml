@@ -2296,7 +2296,13 @@
   - label: 'Repair Café: visit one near you'
     url: https://www.repaircafe.org/en/visit/
     region: any
-    checked: '2026-10-06'
+    checked: '2026-10-21'
+  - label: 'PIRG: the Community Repair Hub (US repair events)'
+    url: https://pirg.org/resources/community-repair-hub/
+    region: us
+    checked: '2026-10-21'
+  story: cincinnati-tinker-team-repairs
+  story_note: The Tinker Team in this story is a volunteer repair group at a Cincinnati recycling centre rather than a Repair Café, but the idea is the same.
 - id: record-a-life-story
   title: Record a conversation with someone whose story should be kept
   category: connect
