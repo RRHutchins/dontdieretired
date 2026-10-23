@@ -37,7 +37,7 @@ COPYRIGHT_LINE = "\u00a9 2026 Don't Die Retired. All rights reserved."
 BOOKS = {
     "vol1": dict(
         seed=2026101, kind="std", title="The Don't Die Retired Puzzle Book", volume="Volume 1",
-        title_lines=("The", "Don't Die Retired", "Puzzle Book"), cover_lines=("The", "Don't Die", "Retired", "Puzzle Book"),
+        title_lines=("The", "Don't Die Retired", "Puzzle Book"), cover_lines=("The", "Don't Die Retired", "Puzzle Book"),
         count_word="Thirteen", closing="If these were too gentle, The Hard Ones is the companion volume: thirteen kinds of puzzle, none of them a warm-up.",
         strap="Thirteen kinds of puzzle. No two pages in a row alike.", tiers=["Warm-up", "Steady", "Stretch"],
         colour="#0B6E4F", file="DDR-Puzzle-Book-Volume-1",
@@ -51,7 +51,7 @@ BOOKS = {
                  "The print is large throughout, with room to write. Use a pencil."]),
     "hard": dict(
         seed=2026102, kind="hard", title="The Don't Die Retired Puzzle Book", volume="The Hard Ones",
-        title_lines=("The", "Don't Die Retired", "Puzzle Book"), cover_lines=("The", "Don't Die", "Retired", "Puzzle Book"),
+        title_lines=("The", "Don't Die Retired", "Puzzle Book"), cover_lines=("The", "Don't Die Retired", "Puzzle Book"),
         count_word="Thirteen", closing="If you would like something to hand to a friend who is just getting started, Volume 1 has thirteen kinds of puzzle that build up from a warm-up.",
         strap="These puzzles are hard. That is the point.", tiers=["Hard", "Harder", "Hardest"],
         colour="#1F2A44", file="DDR-Puzzle-Book-The-Hard-Ones",
@@ -67,7 +67,7 @@ BOOKS = {
     "xmas": dict(
         seed=2026103, kind="xmas", title="The Don't Die Retired Christmas Puzzle Book", volume="Christmas Edition",
         title_lines=("The", "Don't Die Retired", "Christmas Puzzle Book"),
-        cover_lines=("The", "Don't Die", "Retired", "Christmas", "Puzzle Book"),
+        cover_lines=("The", "Don't Die Retired", "Christmas", "Puzzle Book"),
         count_word="Seventeen", strap="Seventeen kinds of puzzle for the days when nobody has to be anywhere.",
         tiers=["Gentle", "Steady", "Tricky"], colour="#8E1F2F", file="DDR-Puzzle-Book-Christmas-Edition",
         closing="There are two more books in the series. Volume 1 has thirteen kinds of puzzle that build up from a warm-up. The Hard Ones has thirteen kinds and no warm-up at all.",
@@ -497,7 +497,11 @@ def cover(b, pages):
         c.setFillAlpha(1)
     c.setFillColor(cream)
     yy = bleed + PH - 1.25 * 72
-    big = 62 if len(b["cover_lines"]) == 4 else 54
+    # The name stays on one line, all three words alike (brand rule); every title line shares the size that fits it.
+    from reportlab.pdfbase.pdfmetrics import stringWidth
+    big = 62 if len(b["cover_lines"]) <= 3 else 54
+    big = min(big, max(stringWidth(l, "Head", 1) for l in b["cover_lines"] if l != "The") and
+              (PW - 0.9 * 72) / max(stringWidth(l, "Head", 1) for l in b["cover_lines"] if l != "The"))
     for line in b["cover_lines"]:
         c.setFont("Head", 30 if line == "The" else big)
         c.drawCentredString(cx, yy, line)
