@@ -1,0 +1,136 @@
+# Questions for the Don't Die Retired Christmas Quiz Book (UK and US editions). See books/README.md, "Quiz books".
+# Each round: id, title, editions ([uk], [us] or [uk, us]), intro (one line for the quizmaster to read out),
+# questions: q (question), a (answer), level (1 easy, 2 medium, 3 hard), note (optional, printed with the answer),
+# accept (optional: other answers to allow), source {title, publisher, url}, checked (date the source was opened
+# and confirmed the answer). A question with no `checked` date is not printed.
+# Spelling is British in both editions; a question can carry `q_us` / `a_us` where the US edition needs other words.
+
+rounds:
+  - id: christmas-around-the-world
+    title: Christmas around the world
+    editions: [uk, us]
+    intro: "How other countries keep Christmas, from Reykjavik to Tokyo."
+    questions:
+      - q: "Every year since 1947, which country has given London the Christmas tree that stands in Trafalgar Square?"
+        a: "Norway"
+        note: "A thank-you for Britain's support during the Second World War. The tree is shipped from Oslo."
+        level: 1
+        source: {title: "London's Christmas tree: Norway's gift", publisher: "OnLondon", url: "https://www.onlondon.co.uk/londons-christmas-tree-norways-gift"}
+        checked: 2026-10-24
+      - q: "In Japan, a 1974 advertising campaign made a meal from which fast-food chain a Christmas tradition?"
+        a: "KFC (Kentucky Fried Chicken)"
+        note: "The campaign was called Kentucky for Christmas."
+        level: 1
+        source: {title: "How Kentucky for Christmas began in Japan", publisher: "KFC Global", url: "https://global.kfc.com/stories/how-kentucky-for-christmas-began-in-japan/"}
+        checked: 2026-10-24
+      - q: "In Iceland, how many Yule Lads come down from the mountains, one each night, in the run-up to Christmas?"
+        a: "Thirteen"
+        note: "The first arrives on 12 December. Their mother is the ogress Grýla."
+        level: 2
+        source: {title: "The 13 Yule Lads and Christmas in Iceland", publisher: "Icelandic Tourist Board", url: "https://www.ferdamalastofa.is/en/news/the-13-yule-lads-and-christmas-in-iceland-1"}
+        checked: 2026-10-24
+      - q: "La Befana, a kindly old woman on a broomstick, brings sweets or coal to children at Epiphany in which country?"
+        a: "Italy"
+        note: "Her name comes from Epifania, the Italian word for Epiphany, 6 January."
+        level: 1
+        source: {title: "The legend of La Befana", publisher: "The Florentine", url: "https://www.theflorentine.net/2006/12/14/the-legend-of-la-befana/"}
+        checked: 2026-10-24
+      - q: "The Striezelmarkt, first held in 1434, is one of Europe's oldest Christmas markets. In which German city is it held?"
+        a: "Dresden"
+        level: 3
+        source: {title: "Europe's oldest continuously operating Christmas market", publisher: "Islands", url: "https://www.islands.com/1730165/europe-oldest-continuously-operated-open-christmas-market-enchant-locals-tourists-germany-striezelmarkt"}
+        checked: 2026-10-24
+      - q: "Since 1966 the Swedish town of Gävle has built a giant Christmas goat each year. What is it made of?"
+        a: "Straw"
+        note: "It stands about 13 metres tall, and more often than not it is burned, stolen or vandalised before Christmas is over."
+        level: 2
+        source: {title: "Swedish straw goat survives third Christmas in a row", publisher: "The Local Sweden", url: "https://www.thelocal.se/20200102/new-year-record-swedish-straw-goat-survives-third-christmas-in-a-row"}
+        checked: 2026-10-24
+      - q: "The poinsettia, with its bright red leaves, grows wild in which country?"
+        a: "Mexico"
+        note: "It is named after Joel Poinsett, the first US ambassador to Mexico, who grew it in South Carolina."
+        level: 2
+        source: {title: "January 3, 2020: Poinsettia", publisher: "Barton Arboretum and Nature Preserve", url: "https://bartonarboretum.org/january-3-2020-poinsettia/"}
+        checked: 2026-10-24
+      - q: "In Sweden, on what date in December is Lucia Day, when a girl wears a crown of candles?"
+        a: "13 December"
+        accept: "December 13"
+        level: 2
+        source: {title: "Lucia", publisher: "Visit Luleå", url: "https://visitlulea.se/en/events/christmas-in-lulea/articles-christmas/lucia"}
+        checked: 2026-10-24
+      - q: "In Alpine folklore, the horned figure Krampus punishes naughty children. Which saint does he travel with?"
+        a: "St Nicholas"
+        note: "Krampus Night is 5 December, the eve of St Nicholas's Day."
+        level: 2
+        source: {title: "Krampusnacht", publisher: "USC Digital Folklore Archives", url: "https://folklore.usc.edu/krampusnacht/"}
+        checked: 2026-10-24
+      - q: "In Sydney, Australia, which season is it on Christmas Day?"
+        a: "Summer"
+        note: "Australian summer runs from December to February."
+        level: 1
+        source: {title: "Solstices, equinoxes and the seasons", publisher: "Bureau of Meteorology", url: "https://www.bom.gov.au/news-and-media/solstices-equinoxes-and-the-seasons"}
+        checked: 2026-10-24
+
+  - id: a-very-british-christmas
+    title: A very British Christmas
+    editions: [uk]
+    intro: "Cards, crackers, kings and Dickens: where our Christmas came from."
+    questions:
+      - q: "In 1843 Henry Cole, later the first director of the V&A, had 1,000 copies of a picture printed to save himself writing letters. What had he invented?"
+        a: "The Christmas card"
+        note: "Designed by his friend John Callcott Horsley, they sold for a shilling each and were a commercial flop."
+        level: 1
+        source: {title: "The first Christmas card", publisher: "Victoria and Albert Museum", url: "https://www.vam.ac.uk/articles/the-first-christmas-card"}
+        checked: 2026-10-24
+      - q: "Which London confectioner, inspired by French sugared almonds, made the Christmas cracker popular from the 1840s?"
+        a: "Tom Smith"
+        note: "He probably did not invent the cracker, but he turned it into a mass-produced Christmas fixture."
+        level: 2
+        source: {title: "The Christmas cracker memorial in Finsbury Square", publisher: "ianVisits", url: "https://www.ianvisits.co.uk/blog/2021/12/08/the-christmas-cracker-memorial-in-finsbury-square/"}
+        checked: 2026-10-24
+      - q: "Which king gave the first royal Christmas broadcast, by radio from Sandringham in 1932?"
+        a: "George V"
+        level: 2
+        source: {title: "The Christmas Broadcast", publisher: "The Royal Family (royal.uk)", url: "https://www.royal.uk/the-christmas-broadcast"}
+        checked: 2026-10-24
+      - q: "Which author of The Jungle Book wrote the words of that first royal Christmas broadcast?"
+        a: "Rudyard Kipling"
+        level: 3
+        source: {title: "The Christmas Broadcast", publisher: "The Royal Family (royal.uk)", url: "https://www.royal.uk/the-christmas-broadcast"}
+        checked: 2026-10-24
+      - q: "In which year was the royal Christmas message first shown on television: 1937, 1957 or 1967?"
+        a: "1957"
+        note: "Queen Elizabeth II, broadcast live."
+        level: 2
+        source: {title: "The Christmas Broadcast", publisher: "The Royal Family (royal.uk)", url: "https://www.royal.uk/the-christmas-broadcast"}
+        checked: 2026-10-24
+      - q: "Which Charles Dickens story, first published in 1843, introduced the world to Ebenezer Scrooge?"
+        a: "A Christmas Carol"
+        level: 1
+        source: {title: "First edition of A Christmas Carol", publisher: "Charles Dickens Museum", url: "https://dickensmuseum.com/blogs/explore/first-edition-of-a-christmas-carol"}
+        checked: 2026-10-24
+      - q: "In pantomime, the comic older woman, such as Widow Twankey, is traditionally played by whom?"
+        a: "A man"
+        note: "The most famous Victorian dame, Dan Leno, played at Drury Lane every Christmas for 15 years."
+        level: 1
+        source: {title: "The story of pantomime", publisher: "Victoria and Albert Museum", url: "https://www.vam.ac.uk/articles/the-story-of-pantomime"}
+        checked: 2026-10-24
+      - q: "Boxing Day, 26 December, is also the feast day of which saint?"
+        a: "St Stephen"
+        note: "Remembered as the first Christian martyr."
+        level: 2
+        source: {title: "Boxing Day", publisher: "The Canadian Encyclopedia", url: "https://thecanadianencyclopedia.ca/en/article/boxing-day"}
+        checked: 2026-10-24
+      - q: "Prince Albert usually gets the credit, but which earlier queen, the German-born wife of George III, put up a Christmas tree in the late 18th century?"
+        a: "Queen Charlotte"
+        note: "Hers was a yew. Victoria and Albert made the tree popular after a picture of theirs appeared in 1848."
+        level: 3
+        source: {title: "A royal Christmas", publisher: "Royal Collection Trust", url: "https://www.rct.uk/collection/stories/a-royal-christmas"}
+        checked: 2026-10-24
+      - q: "Early mince pies contained an ingredient that today's almost never do. What was it?"
+        a: "Meat"
+        accept: "Minced beef, mutton or pork; tongue"
+        note: "A recipe of 1591 uses lean mutton or beef. The suet is the last trace of it."
+        level: 2
+        source: {title: "Recipe for real mince pies", publisher: "English Heritage", url: "https://www.english-heritage.org.uk/visit/inspire-me/blog/blog-posts/recipe-for-real-mince-pies/"}
+        checked: 2026-10-24

@@ -40,3 +40,27 @@ seventeen kinds including Trees and presents, Star battle and Missing vowels).
 - **Author and copyright holder.** Robin decided on 6 Oct 2026 to publish as "Don't Die Retired": that is the author
   name on KDP and the name in `COPYRIGHT_LINE` (build_book.py). Changing it does not change page counts.
 - The closing page must not promise anything the site is not doing (no weekly email or daily puzzle claims).
+
+## Quiz books (started 24 October 2026)
+Robin asked for a Christmas quiz book in two editions, UK and US, of 300 questions each, for family quiz nights:
+30 rounds of ten, read aloud by a quizmaster, answers at the back. `build_quiz.py uk|us [--sample]` builds a
+6 x 9 in interior from `quiz/rounds.yaml`; questions and answers are 16 point, rounds start on a left-hand page
+so the whole round is in view, and each round's foot gives the page of its answers.
+
+- **Rounds.** 20 shared rounds (`editions: [uk, us]`) and 10 for each edition. Planned shared rounds: Christmas
+  around the world (done), Christmas food and drink, carols and Christmas music (facts only, never lyrics after
+  1928), Christmas at the cinema, winter wildlife, snow ice and weather, the night sky, inventions, famous firsts,
+  explorers, words and where they come from, numbers, animals, the human body, food around the world, art,
+  classical music, books and authors, world sport, countries and capitals. UK: a very British Christmas (done),
+  kings and queens, British history, around the UK, British inventions, Christmas telly and radio, UK sport,
+  Christmas number ones, famous Britons, panto and the stage. US: an American Christmas, presidents, American
+  history, the fifty states, American inventions, holiday films and TV, US sport, American music, national parks
+  and landmarks, famous Americans.
+- **Checking.** Every answer is confirmed on a page opened that day (museum, national library, official body,
+  learned society, well-edited reference; Wikipedia only to find sources), recorded in `source` with the date in
+  `checked`. Questions without `checked` are not printed. Notes add nothing the source does not say. Where
+  accounts differ, the question avoids the disputed point or the note says so. Mix in each round: about four easy,
+  four medium, two hard.
+- **Not yet built:** cover, score sheet, the three "night" title pages in a full build, a checker for duplicate
+  answers across rounds. Amazon may treat two editions sharing two-thirds of their questions as near-duplicates:
+  keep titles, covers and descriptions clearly marked UK and American, and watch for a KDP query.
