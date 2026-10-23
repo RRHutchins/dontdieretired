@@ -56,6 +56,14 @@ so the whole round is in view, and each round's foot gives the page of its answe
   Christmas number ones, famous Britons, panto and the stage. US: an American Christmas, presidents, American
   history, the fifty states, American inventions, holiday films and TV, US sport, American music, national parks
   and landmarks, famous Americans.
+- **Audience (Robin, 24 Oct 2026).** A family quiz for all ages, sold as a stocking filler to (or for) whoever hosts
+  Christmas, and played round the table from grandparents to grandchildren. So every round has three questions a child
+  of 8 to 12 could answer (`level: 1`, printed as "anyone"), five for grown-ups (`level: 2`) and two hard ones
+  (`level: 3`). Prefer questions with a story in them: a child should enjoy hearing the answer even if they did not
+  know it. Each night (ten rounds) also has one **junior round** (pitched for children, shared by both editions) and
+  one **swap round** (grown-ups answer about the children's world, children about the grown-ups'; per edition, and
+  nothing that will date before Christmas or that needs a source we cannot open). That makes each edition 3 junior
+  + 3 swap + 17 shared general + 7 edition-only rounds.
 - **Checking.** Every answer is confirmed on a page opened that day (museum, national library, official body,
   learned society, well-edited reference; Wikipedia only to find sources), recorded in `source` with the date in
   `checked`. Questions without `checked` are not printed. Notes add nothing the source does not say. Where

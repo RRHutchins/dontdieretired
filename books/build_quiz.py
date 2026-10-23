@@ -28,7 +28,7 @@ RED, GOLD, INK = HexColor("#8E1F2F"), HexColor("#C98A2B"), HexColor("#1B1B1F")
 Q_SIZE, Q_LEAD = 16, 21.5          # large print: questions and answers 16 point
 NOTE_SIZE, NOTE_LEAD = 14, 18.5    # the "did you know" notes in the answers
 DOTS = {1: "●○○", 2: "●●○", 3: "●●●"}
-LEVEL = {1: "easy", 2: "medium", 3: "hard"}
+LEVEL = {1: "anyone", 2: "grown-ups", 3: "hard"}
 NIGHTS = ["Christmas Eve", "Christmas Day", "Boxing Day"]
 
 EDITIONS = {
@@ -144,8 +144,11 @@ class Book:
             "One person is the quizmaster and reads each round aloud. Everyone else plays alone or in teams; teams of two to four work best.",
             "The book is three nights of quizzing: ten rounds for Christmas Eve, ten for Christmas Day and ten for Boxing Day. "
             "Play them in any order, or all in one go.",
-            "Every round has ten questions, a point each. Under each question, the dots show how hard it is: one for easy, "
-            "two for medium, three for hard. Each round has easy ones for the youngest player and hard ones for the know-all.",
+            "Every round has ten questions, a point each, and something for everyone. The dots under each question show who it is "
+            "for: one dot, anyone (the youngest players should get these); two dots, the grown-ups; three dots, a hard one for "
+            "the know-all.",
+            "Each night also has a junior round, pitched for children and fun for everyone, and a swap round: the grown-ups "
+            "answer questions from the children's world, and the children answer questions from the grown-ups'.",
             "The answers are at the back, with the page given at the foot of each round, so the quizmaster can check them "
             "without anyone seeing. Where we would also accept another answer, we say so.",
             "Pens, paper, no phones.",

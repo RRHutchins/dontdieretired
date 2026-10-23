@@ -1,6 +1,6 @@
 # Questions for the Don't Die Retired Christmas Quiz Book (UK and US editions). See books/README.md, "Quiz books".
 # Each round: id, title, editions ([uk], [us] or [uk, us]), intro (one line for the quizmaster to read out),
-# questions: q (question), a (answer), level (1 easy, 2 medium, 3 hard), note (optional, printed with the answer),
+# questions: q (question), a (answer), level (1 anyone: a child of 8-12 could answer; 2 grown-ups; 3 hard), note (optional, printed with the answer),
 # accept (optional: other answers to allow), source {title, publisher, url}, checked (date the source was opened
 # and confirmed the answer). A question with no `checked` date is not printed.
 # Spelling is British in both editions; a question can carry `q_us` / `a_us` where the US edition needs other words.
@@ -14,7 +14,7 @@ rounds:
       - q: "Every year since 1947, which country has given London the Christmas tree that stands in Trafalgar Square?"
         a: "Norway"
         note: "A thank-you for Britain's support during the Second World War. The tree is shipped from Oslo."
-        level: 1
+        level: 2
         source: {title: "London's Christmas tree: Norway's gift", publisher: "OnLondon", url: "https://www.onlondon.co.uk/londons-christmas-tree-norways-gift"}
         checked: 2026-10-24
       - q: "In Japan, a 1974 advertising campaign made a meal from which fast-food chain a Christmas tradition?"
@@ -32,7 +32,7 @@ rounds:
       - q: "La Befana, a kindly old woman on a broomstick, brings sweets or coal to children at Epiphany in which country?"
         a: "Italy"
         note: "Her name comes from Epifania, the Italian word for Epiphany, 6 January."
-        level: 1
+        level: 2
         source: {title: "The legend of La Befana", publisher: "The Florentine", url: "https://www.theflorentine.net/2006/12/14/the-legend-of-la-befana/"}
         checked: 2026-10-24
       - q: "The Striezelmarkt, first held in 1434, is one of Europe's oldest Christmas markets. In which German city is it held?"
@@ -49,14 +49,14 @@ rounds:
       - q: "The poinsettia, with its bright red leaves, grows wild in which country?"
         a: "Mexico"
         note: "It is named after Joel Poinsett, the first US ambassador to Mexico, who grew it in South Carolina."
-        level: 2
+        level: 3
         source: {title: "January 3, 2020: Poinsettia", publisher: "Barton Arboretum and Nature Preserve", url: "https://bartonarboretum.org/january-3-2020-poinsettia/"}
         checked: 2026-10-24
-      - q: "In Sweden, on what date in December is Lucia Day, when a girl wears a crown of candles?"
-        a: "13 December"
-        accept: "December 13"
-        level: 2
-        source: {title: "Lucia", publisher: "Visit Luleå", url: "https://visitlulea.se/en/events/christmas-in-lulea/articles-christmas/lucia"}
+      - q: "In Iceland, what do children put on the windowsill each night before Christmas for the Yule Lads to fill?"
+        a: "A shoe"
+        note: "Good children find a small present in it. Naughty ones might find a raw potato."
+        level: 1
+        source: {title: "The 13 Yule Lads and Christmas in Iceland", publisher: "Icelandic Tourist Board", url: "https://www.ferdamalastofa.is/en/news/the-13-yule-lads-and-christmas-in-iceland-1"}
         checked: 2026-10-24
       - q: "In Alpine folklore, the horned figure Krampus punishes naughty children. Which saint does he travel with?"
         a: "St Nicholas"
