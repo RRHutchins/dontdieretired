@@ -9,7 +9,8 @@ level: any
 social_date: 2026-10-26
 photo_file: "File:James Caird bow.jpg"
 photo_caption: "The James Caird on display at Dulwich College, south London."
-photo_alt: "A white wooden open boat with three cream sails, the name James Caird on its side, resting on pebbles behind black railings in a brick hall with tall arched windows."
+photo_checked: 2026-10-23
+photo_alt: "A white wooden open boat with three cream sails, the name James Caird on its side, resting on pebbles behind black railings in a brick hall with tall arched windows, beside a penguin in a glass case."
 art: sea
 hook: "A 22-foot boat, six men, gales most of the way, and a navigator who got four chances to see where he was. They hit the island."
 lesson: "Under pressure, the people who come through are usually the ones who mastered the basics long before they needed them."
