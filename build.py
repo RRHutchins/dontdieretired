@@ -255,6 +255,7 @@ PALETTE = {
     "tech": ("#4B4F9C", "#EDEEF8"),
     "ai": ("#3F4A54", "#ECEFF1"),
     "explore": ("#2F6B3A", "#EAF3EC"),
+    "curious": ("#6A4C2E", "#F4EEE7"),
 }
 
 
@@ -355,7 +356,7 @@ def social_pack(a, cfg):
             f"1/ {hook}",
             f"2/ {a['excerpt']}",
             f"3/ The lesson: {lesson}",
-            f"4/ Full story, sources and a plan you can start this week → {utm('x')}",
+            f"4/ Full story, sources" + (" and a plan you can start this week" if a.get("plan") else "") + f" → {utm('x')}",
         ]),
         "pinterest": f"{a['title']} | {lesson} | {utm('pinterest')}",
         "linkedin": f"{hook}\n\n{a['excerpt']}\n\nWhy it matters for anyone over 50: {lesson}\n\n{utm('linkedin')}",
@@ -418,7 +419,7 @@ def write_rss(arts, cfg):
 
     feed(arts, site["name"], DIST / "feed.xml")
     for cid, c in cfg["categories"].items():
-        mine = [a for a in arts if a.get("kind") != "guide"] if cid == "stories" else [a for a in arts if a["category"] == cid]
+        mine = [a for a in arts if a.get("kind") != "guide" and a["category"] != "curious"] if cid == "stories" else [a for a in arts if a["category"] == cid]
         if mine:
             feed(mine, f"{site['name']}: {c['label']}", DIST / "feed" / f"{cid}.xml")
 
@@ -524,7 +525,7 @@ def build(make_social=True):
             break
     urls.append(out("/", "index.html", featured=featured, latest=latest))
     for cid, c in cfg["categories"].items():
-        urls.append(out(f"/{cid}/", "category.html", cid=cid, c=c, items=([a for a in arts if a.get("kind") != "guide"] if cid == "stories" else [a for a in arts if a["category"] == cid]), acts=[x for x in _chs if x.get("category") == cid]))
+        urls.append(out(f"/{cid}/", "category.html", cid=cid, c=c, items=([a for a in arts if a.get("kind") != "guide" and a["category"] != "curious"] if cid == "stories" else [a for a in arts if a["category"] == cid]), acts=[x for x in _chs if x.get("category") == cid]))
     urls.append(out("/videos/", "videos.html"))
     # standalone pages that search should find (title, url, excerpt, tags); written to pages.json
     pages = []

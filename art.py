@@ -267,7 +267,7 @@ RULES = [
     (r"walk|hik|balance|active|football|skat|tap", "hills"),
 ]
 BY_TOPIC = {"move": "hills", "eat": "fields", "think": "books", "money": "steps", "earn": "city", "connect": "houses",
-            "travel": "mountains", "tech": "city", "ai": "grid", "explore": "forest", "stories": "hills"}
+            "travel": "mountains", "tech": "city", "ai": "grid", "explore": "forest", "curious": "books", "stories": "hills"}
 
 
 def pick_scene(a: dict) -> str:

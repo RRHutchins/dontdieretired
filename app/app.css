@@ -104,8 +104,8 @@ body.in-session .tabs{display:none}
    pictures first, solid colour tiles. Brand colours, fonts and the sunrise mark are unchanged. */
 @font-face{font-family:Fr;font-weight:600;font-display:swap;src:url(/app/fonts/fraunces-latin-600-normal.woff2) format("woff2")}
 :root{--paper:#fff;--stone:#f3f2f0;--line:#e7e4df;--r:20px;
-  --move:#0b6e4f;--eat:#5e7d1e;--think:#1f4e79;--money:#2f5d50;--earn:#8a4b08;--connect:#6d2e72;--travel:#0e7490;--tech:#4b4f9c;--ai:#3f4a54;--explore:#2f6b3a;--stories:#b23a48}
-[data-cat=move]{--c:var(--move)}[data-cat=eat]{--c:var(--eat)}[data-cat=think]{--c:var(--think)}[data-cat=money]{--c:var(--money)}[data-cat=earn]{--c:var(--earn)}[data-cat=connect]{--c:var(--connect)}[data-cat=travel]{--c:var(--travel)}[data-cat=tech]{--c:var(--tech)}[data-cat=ai]{--c:var(--ai)}[data-cat=explore]{--c:var(--explore)}[data-cat=stories]{--c:var(--stories)}
+  --move:#0b6e4f;--eat:#5e7d1e;--think:#1f4e79;--money:#2f5d50;--earn:#8a4b08;--connect:#6d2e72;--travel:#0e7490;--tech:#4b4f9c;--ai:#3f4a54;--explore:#2f6b3a;--curious:#6a4c2e;--stories:#b23a48}
+[data-cat=move]{--c:var(--move)}[data-cat=eat]{--c:var(--eat)}[data-cat=think]{--c:var(--think)}[data-cat=money]{--c:var(--money)}[data-cat=earn]{--c:var(--earn)}[data-cat=connect]{--c:var(--connect)}[data-cat=travel]{--c:var(--travel)}[data-cat=tech]{--c:var(--tech)}[data-cat=ai]{--c:var(--ai)}[data-cat=explore]{--c:var(--explore)}[data-cat=curious]{--c:var(--curious)}[data-cat=stories]{--c:var(--stories)}
 html,body{background:var(--paper)}
 h1,h2,h3{font-weight:600;letter-spacing:-.015em}
 h1{font-size:1.85em;line-height:1.08}
