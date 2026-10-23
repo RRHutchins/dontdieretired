@@ -38,7 +38,7 @@ https://dontdieretired.com/ai/ai-voice-clone-and-family-emergency-scams/?utm_sou
 
 ---
 
-4/ Full story, sources and a plan you can start this week → https://dontdieretired.com/ai/ai-voice-clone-and-family-emergency-scams/?utm_source=x&utm_medium=social&utm_campaign=daily
+4/ Full story, sources → https://dontdieretired.com/ai/ai-voice-clone-and-family-emergency-scams/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## pinterest
 

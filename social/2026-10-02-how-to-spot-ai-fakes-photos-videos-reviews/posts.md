@@ -38,7 +38,7 @@ https://dontdieretired.com/ai/how-to-spot-ai-fakes-photos-videos-reviews/?utm_so
 
 ---
 
-4/ Full story, sources and a plan you can start this week → https://dontdieretired.com/ai/how-to-spot-ai-fakes-photos-videos-reviews/?utm_source=x&utm_medium=social&utm_campaign=daily
+4/ Full story, sources → https://dontdieretired.com/ai/how-to-spot-ai-fakes-photos-videos-reviews/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## pinterest
 

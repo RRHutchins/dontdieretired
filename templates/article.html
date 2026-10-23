@@ -91,7 +91,7 @@
 <aside class="sidebar">
   {{ ad('sidebar') }}
   {% set picks = products.affiliate_picks | selectattr('category', 'equalto', a.category) | list %}
-  {% if picks|length < 3 %}{% set picks = picks + (products.affiliate_picks | selectattr('category', 'equalto', 'move') | list) %}{% endif %}
+  {% if picks|length < 3 and a.category != 'curious' %}{% set picks = picks + (products.affiliate_picks | selectattr('category', 'equalto', 'move') | list) %}{% endif %}
   {{ affiliate_box(picks[:4]) }}
   {# no AI product yet: AI articles show the tech guide rather than the first product in the shop #}
   {% set prod = (products.products | selectattr('category', 'equalto', a.category) | list + (products.products | selectattr('category', 'equalto', 'tech') | list if a.category == 'ai' else []) + products.products) | first %}

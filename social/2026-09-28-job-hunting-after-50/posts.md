@@ -38,7 +38,7 @@ https://dontdieretired.com/earn/job-hunting-after-50/?utm_source=x&utm_medium=so
 
 ---
 
-4/ Full story, sources and a plan you can start this week → https://dontdieretired.com/earn/job-hunting-after-50/?utm_source=x&utm_medium=social&utm_campaign=daily
+4/ Full story, sources → https://dontdieretired.com/earn/job-hunting-after-50/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## pinterest
 

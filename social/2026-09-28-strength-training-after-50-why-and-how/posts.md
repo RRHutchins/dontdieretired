@@ -38,7 +38,7 @@ https://dontdieretired.com/move/strength-training-after-50-why-and-how/?utm_sour
 
 ---
 
-4/ Full story, sources and a plan you can start this week → https://dontdieretired.com/move/strength-training-after-50-why-and-how/?utm_source=x&utm_medium=social&utm_campaign=daily
+4/ Full story, sources → https://dontdieretired.com/move/strength-training-after-50-why-and-how/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## pinterest
 

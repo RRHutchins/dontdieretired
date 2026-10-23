@@ -38,7 +38,7 @@ https://dontdieretired.com/tech/tech-confidence-after-50-the-complete-guide/?utm
 
 ---
 
-4/ Full story, sources and a plan you can start this week → https://dontdieretired.com/tech/tech-confidence-after-50-the-complete-guide/?utm_source=x&utm_medium=social&utm_campaign=daily
+4/ Full story, sources → https://dontdieretired.com/tech/tech-confidence-after-50-the-complete-guide/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## pinterest
 

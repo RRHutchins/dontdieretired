@@ -38,7 +38,7 @@ https://dontdieretired.com/ai/when-ai-gets-it-wrong-how-to-check/?utm_source=x&u
 
 ---
 
-4/ Full story, sources and a plan you can start this week → https://dontdieretired.com/ai/when-ai-gets-it-wrong-how-to-check/?utm_source=x&utm_medium=social&utm_campaign=daily
+4/ Full story, sources → https://dontdieretired.com/ai/when-ai-gets-it-wrong-how-to-check/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## pinterest
 
