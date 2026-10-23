@@ -6,6 +6,7 @@ category: curious
 tags: [inventions, history, science, kitchen, radar]
 segments: [learner, changer]
 level: any
+social_date: 2026-10-25
 art: grid
 hook: "The story says a chocolate bar melted in a radar engineer's pocket. The truth is slower, and more interesting."
 lesson: "Lucky accidents tend to happen to people who are already paying attention and know what they are looking at."

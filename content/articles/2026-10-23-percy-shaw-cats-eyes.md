@@ -6,6 +6,7 @@ category: curious
 tags: [inventions, history, roads, engineering, yorkshire]
 segments: [learner, changer]
 level: any
+social_date: 2026-10-24
 art: road
 hook: "A road with a steep drop, no street lights and a lot of fog. Percy Shaw's answer now lines roads around the world."
 lesson: "Good inventions often start with one person paying close attention to a problem they meet every day."

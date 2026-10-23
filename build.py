@@ -341,7 +341,10 @@ def make_card(title: str, kicker: str, category: str, out: Path, size=(1200, 630
 def social_pack(a, cfg):
     """Write ready-to-post social content for one article."""
     site = cfg["site"]
-    folder = SOCIAL / f"{a['date_iso']}-{a['slug']}"
+    # `social_date` (optional, front matter) holds an article's social posts back to a later day, so several pieces
+    # published together go out one a day instead of all at once (RUNBOOK §6o). It never changes the article's own date.
+    sdate = str(a.get("social_date") or a["date_iso"])
+    folder = SOCIAL / f"{sdate}-{a['slug']}"
     folder.mkdir(parents=True, exist_ok=True)
     utm = lambda src: f"{a['abs_url']}?utm_source={src}&utm_medium=social&utm_campaign=daily"
     hook = a.get("hook") or a["title"]
@@ -380,7 +383,7 @@ def social_pack(a, cfg):
     make_card(hook, "Don't Die Retired", a["category"], folder / "landscape.png", size=(1200, 630))
 
     (folder / "meta.json").write_text(json.dumps({
-        "title": a["title"], "url": a["abs_url"], "date": a["date_iso"],
+        "title": a["title"], "url": a["abs_url"], "date": sdate,
         "category": a["category"], "tags": a["tags"], "segments": a.get("segments", []),
         "posts": posts,
     }, indent=2), encoding="utf-8")

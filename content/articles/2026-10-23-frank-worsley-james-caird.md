@@ -6,6 +6,7 @@ category: curious
 tags: [history, exploration, sailing, navigation, antarctica]
 segments: [learner, mover]
 level: any
+social_date: 2026-10-26
 art: sea
 hook: "A 22-foot boat, six men, gales most of the way, and a navigator who got four chances to see where he was. They hit the island."
 lesson: "Under pressure, the people who come through are usually the ones who mastered the basics long before they needed them."
