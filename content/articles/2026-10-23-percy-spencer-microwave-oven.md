@@ -7,6 +7,9 @@ tags: [inventions, history, science, kitchen, radar]
 segments: [learner, changer]
 level: any
 social_date: 2026-10-25
+photo_file: "File:Amana Radarange Microwave Oven.jpg"
+photo_caption: "An Amana Radarange microwave oven, a later model of the countertop ovens Amana first sold for homes in 1967."
+photo_alt: "A brushed-metal microwave oven with a dark glass door and a keypad on the right, the name Radarange at top left and Amana below the door, sitting on a red shelf."
 art: grid
 hook: "The story says a chocolate bar melted in a radar engineer's pocket. The truth is slower, and more interesting."
 lesson: "Lucky accidents tend to happen to people who are already paying attention and know what they are looking at."

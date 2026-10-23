@@ -7,6 +7,9 @@ tags: [inventions, history, roads, engineering, yorkshire]
 segments: [learner, changer]
 level: any
 social_date: 2026-10-24
+photo_file: "File:Display in honour of Percy Shaw, inventor of the cat's eye road studs. Midgley - geograph.org.uk - 5787099.jpg"
+photo_caption: "A roadside display in honour of Percy Shaw at Midgley, West Yorkshire, photographed in 2018."
+photo_alt: "A white board shaped like a road sign, painted with a black cat and pinned with pictures, set into a dry-stone wall beside a grassy hillside, with toy black cats on the wall."
 art: road
 hook: "A road with a steep drop, no street lights and a lot of fog. Percy Shaw's answer now lines roads around the world."
 lesson: "Good inventions often start with one person paying close attention to a problem they meet every day."
