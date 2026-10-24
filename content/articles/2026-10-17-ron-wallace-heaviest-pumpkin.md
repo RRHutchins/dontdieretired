@@ -8,6 +8,9 @@ segments: [restarter, learner]
 level: starter
 subject_age: 60
 art: fields
+photo_file: "File:3PumpkinsonPallets F+S.jpg"
+photo_caption: "Three contestant pumpkins at a weigh-off in Ohio in 2009. They are not Ron Wallace's pumpkins."
+photo_alt: "A huge pale, ribbed pumpkin sitting on a wooden pallet on gravel, with an orange giant pumpkin on one side and another pale one on the other."
 hook: "3,156lb, on a farm scale in Rhode Island. A week after a new world record, Ron Wallace's pumpkin beat it by nearly 300lb."
 lesson: "Every giant starts as one seed in a small pot in April, and the ground for it can be got ready this month."
 standfirst: "Ron Wallace, 60, of Coventry, Rhode Island, brought a 3,156lb (1,431.5kg) pumpkin to a weigh-off in Warren, seven days after Ian Paton set a world record in England. It was Wallace's first year growing in a greenhouse."

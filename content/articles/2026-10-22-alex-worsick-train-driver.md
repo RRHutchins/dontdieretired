@@ -7,6 +7,9 @@ tags: [career-change, rail, trains, women, learning, work]
 segments: [changer, learner]
 level: any
 art: rails
+photo_file: "File:Cab of a Class 317 (2).jpg"
+photo_caption: "The driver's cab of a British Rail Class 317 electric train, photographed in 2007. It is not the train in the story."
+photo_alt: "A train driver's desk with dials, switches and a control handle, seen close up below the cab window."
 hook: "Alex Worsick spent 22 years at the BBC. A train driver's interview on air sent her to train driver school."
 lesson: "The job you have never thought of may be one you have already heard someone describe, so ask them how they got in."
 standfirst: "Alex Worsick spent 22 years at the BBC, most recently as a producer at BBC Radio Lancashire. Then she edited an interview with a Northern train driver, applied in her mid-40s, and is now learning five routes through Lancashire and Merseyside."

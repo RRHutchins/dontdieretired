@@ -8,6 +8,9 @@ segments: [mover, restarter]
 level: active
 subject_age: 56
 art: road
+photo_file: "File:Land's End Signpost - geograph.org.uk - 4499713.jpg"
+photo_caption: "The signpost at Land's End, Cornwall, photographed in 2015."
+photo_alt: "A white signpost on a stone base on a paved viewpoint, with the sea, rocks and a green clifftop behind it."
 hook: "900 miles in 30 days, pub to pub, for the people behind the bar. More than 83,000 others joined Gary McKee online."
 lesson: "Miles run for someone else are easier to keep going with, and easier for other people to join."
 standfirst: "Gary McKee, 56, a nuclear plant worker from Cleator Moor in Cumbria, ran the length of Britain this summer, about 30 miles a day, to raise money for the charity that supports pub and bar staff. It came four months after he finished 100 marathons in 100 days."

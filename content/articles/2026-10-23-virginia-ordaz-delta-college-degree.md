@@ -8,6 +8,9 @@ segments: [learner, restarter]
 level: any
 subject_age: 55
 art: books
+photo_file: "File:Delta College Campus.jpg"
+photo_caption: "Dolores Huerta Plaza on the main campus of San Joaquin Delta College in Stockton, California, photographed in 2015."
+photo_alt: "A landscaped plaza with lawns, young trees, a picnic table and paths, in front of a long white college building under a blue sky."
 hook: "Virginia Ordaz first enrolled at Delta College in 1989. In May she graduated, on the President's List, beside her mother."
 lesson: "An unfinished course is rarely a blank page: ask someone to count what you have already done before you decide how far you have to go."
 standfirst: "Virginia Ordaz, 55, started at San Joaquin Delta College in California in 1989, then left to work as a fire dispatcher and raise a family. After she retired she went back a few units short, made the President's List, and graduated in May in the same class as her mother, Veronica Smith, 80."
