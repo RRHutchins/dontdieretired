@@ -7,6 +7,9 @@ tags: [discoveries, history, art, archaeology, france]
 segments: [learner, changer]
 level: any
 art: hills
+photo_file: "File:Lascaux IV - 43.jpg"
+photo_caption: "A painted aurochs head in Lascaux IV, the complete replica of the cave at Montignac-Lascaux, photographed in 2024."
+photo_alt: "The head of a horned wild ox drawn in thick black lines on a pale, uneven rock wall, its long curved horns sweeping up and to the right, with patches of red paint below."
 hook: "A hole in a hillside, a home-made lamp and a wall of painted horses. How Lascaux was found in September 1940."
 lesson: "Some of the world's great finds were made by people who simply went and looked, then told someone who knew more."
 standfirst: "In September 1940 an apprentice mechanic and three friends squeezed into a hole above Montignac in south-west France and found walls of Ice Age animals. The cave has been closed to visitors since 1963, but the story of how it was found, dog included, is still being told and retold."
