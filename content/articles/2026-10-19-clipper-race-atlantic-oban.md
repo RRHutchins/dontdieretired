@@ -10,6 +10,7 @@ subject_age: 56
 art: sea
 photo_file: "File:Oban harbour at dawn - geograph.org.uk - 5229949.jpg"
 photo_caption: "Oban harbour at dawn, photographed in 2015."
+photo_checked: 2026-10-24
 photo_alt: "A ferry lit up at the quay in a still harbour at dawn, with red-roofed harbour buildings and misty hills behind, reflected in the water."
 hook: "3,115 nautical miles from Washington DC to Oban on a 70ft race yacht, crewed by people who are not professional sailors."
 lesson: "Some of the biggest adventures are built to take people who arrive with no experience, as long as they do the training."

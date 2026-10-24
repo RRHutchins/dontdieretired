@@ -9,6 +9,7 @@ level: any
 art: rails
 photo_file: "File:Cab of a Class 317 (2).jpg"
 photo_caption: "The driver's cab of a British Rail Class 317 electric train, photographed in 2007. It is not the train in the story."
+photo_checked: 2026-10-24
 photo_alt: "A train driver's desk with dials, switches and a control handle, seen close up below the cab window."
 hook: "Alex Worsick spent 22 years at the BBC. A train driver's interview on air sent her to train driver school."
 lesson: "The job you have never thought of may be one you have already heard someone describe, so ask them how they got in."

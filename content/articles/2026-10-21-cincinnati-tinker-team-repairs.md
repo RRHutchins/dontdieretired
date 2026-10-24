@@ -9,6 +9,7 @@ level: starter
 art: houses
 photo_file: "File:Repair Cafe Katze Cat.jpg"
 photo_caption: "Hands repairing a toy cat at a Repair Café in Germany in 2020. The picture is not of the Cincinnati Tinker Team."
+photo_checked: 2026-10-24
 photo_alt: "Hands holding a fluffy white toy cat on its back on a spotted tablecloth, with wires, a soldering iron and tools around it."
 hook: "Nearly 1,400 toasters, fans and vacuums saved from landfill, mended by volunteers who need no experience to join."
 lesson: "Most broken things are less broken than they look, and the quickest way to learn to fix them is to sit beside someone who already can."

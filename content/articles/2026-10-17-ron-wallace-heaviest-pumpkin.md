@@ -10,6 +10,7 @@ subject_age: 60
 art: fields
 photo_file: "File:3PumpkinsonPallets F+S.jpg"
 photo_caption: "Three contestant pumpkins at a weigh-off in Ohio in 2009. They are not Ron Wallace's pumpkins."
+photo_checked: 2026-10-24
 photo_alt: "A huge pale, ribbed pumpkin sitting on a wooden pallet on gravel, with an orange giant pumpkin on one side and another pale one on the other."
 hook: "3,156lb, on a farm scale in Rhode Island. A week after a new world record, Ron Wallace's pumpkin beat it by nearly 300lb."
 lesson: "Every giant starts as one seed in a small pot in April, and the ground for it can be got ready this month."

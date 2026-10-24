@@ -9,6 +9,7 @@ level: any
 art: city
 photo_file: "File:Miraikan.jpg"
 photo_caption: "Miraikan, the National Museum of Emerging Science and Innovation in Tokyo, photographed in 2006."
+photo_checked: 2026-10-24
 photo_alt: "A large curved building of glass and metal under a blue sky, with trees and a lawn in front."
 hook: "LiDAR, three depth cameras and a handle that buzzes before each turn. Chieko Asakawa's AI suitcase now leads museum tours."
 lesson: "The most useful AI often starts with one ordinary annoyance, noticed by someone who will not let it go."
