@@ -6,15 +6,20 @@ Each photo is resized for the web and not otherwise changed.
 
 | Article | File | Author | Licence | Source | Fetched |
 |---|---|---|---|---|---|
+| alex-worsick-train-driver | File:Cab of a Class 317 (2).jpg | Matthew Black from London, UK | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Cab_of_a_Class_317_(2).jpg | 2026-10-24 |
 | amy-gubser-golden-gate-farallon-swim-55 | File:Remains of Farallon Islands Light in 2014.jpg | Frank Schulenburg | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Remains_of_Farallon_Islands_Light_in_2014.jpg | 2026-10-07 |
 | barbara-odonnell-mountain-leader | File:Comeragh Mountains Lake.jpg | Mik Herman | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Comeragh_Mountains_Lake.jpg | 2026-10-14 |
 | betty-brussel-99-three-world-records | File:Swimming pool with lane ropes in place.jpg | Xander from Yellowknife, NT, Canada | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Swimming_pool_with_lane_ropes_in_place.jpg | 2026-10-07 |
 | birdwatching-for-beginners | File:Birdwatching hide at Leighton Moss RSPB Reserve - geograph.org.uk - 4335331.jpg | Jonathan Hutchins | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Birdwatching_hide_at_Leighton_Moss_RSPB_Reserve_-_geograph.org.uk_-_4335331.jpg | 2026-10-14 |
 | carl-allamby-mechanic-to-emergency-doctor | File:Cleveland, Ohio Skyline at Sunrise at Edgewater Park (8668179983).jpg | Erik Drost | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Cleveland,_Ohio_Skyline_at_Sunrise_at_Edgewater_Park_(8668179983).jpg | 2026-10-07 |
 | cath-bowie-fortnite-streamer-aberdeen | File:Aberdeen - Union Street - geograph.org.uk - 5269444.jpg | Colin Smith | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Aberdeen_-_Union_Street_-_geograph.org.uk_-_5269444.jpg | 2026-10-07 |
+| chieko-asakawa-ai-suitcase | File:Miraikan.jpg | Jason Ruck | Public domain | https://commons.wikimedia.org/wiki/File:Miraikan.jpg | 2026-10-24 |
+| cincinnati-tinker-team-repairs | File:Repair Cafe Katze Cat.jpg | WeltveraenderereV | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Repair_Cafe_Katze_Cat.jpg | 2026-10-24 |
+| clipper-race-atlantic-oban | File:Oban harbour at dawn - geograph.org.uk - 5229949.jpg | Andy Campbell | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Oban_harbour_at_dawn_-_geograph.org.uk_-_5229949.jpg | 2026-10-24 |
 | craig-johnston-record-ride-across-australia | File:Eyre Highway, Nullarbor, SA, 2017 (02).jpg | Bahnfrend | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Eyre_Highway,_Nullarbor,_SA,_2017_(02).jpg | 2026-10-07 |
 | david-smith-hat-einstein-tile | File:Playing with hat tiles (wheels).jpg | Aschroet | CC0 | https://commons.wikimedia.org/wiki/File:Playing_with_hat_tiles_(wheels).jpg | 2026-10-14 |
 | frank-worsley-james-caird | File:James Caird bow.jpg | Rumping | Public domain | https://commons.wikimedia.org/wiki/File:James_Caird_bow.jpg | 2026-10-23 |
+| gary-mckee-jogle-pub-run | File:Land's End Signpost - geograph.org.uk - 4499713.jpg | Richard Cooke | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Land%27s_End_Signpost_-_geograph.org.uk_-_4499713.jpg | 2026-10-24 |
 | gene-edwards-tap-dancing-83 | File:Steppesko.jpeg | Steppdans | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Steppesko.jpeg | 2026-10-07 |
 | jeremy-lockwood-three-new-dinosaurs-68 | File:Dinosaur Isle.JPG | Editor5807 | Public domain | https://commons.wikimedia.org/wiki/File:Dinosaur_Isle.JPG | 2026-10-07 |
 | jose-graca-kona-ironman-podium | File:US Navy 051015-N-9419C-004 Almost 2,000 triathletes begin the 2.4-mile swim at the Ironman World Championship triathlon, held in Kailua-Kona, Hawaii.jpg | U.S. Navy photo by Chief Journalist Deborah Carson | Public domain | https://commons.wikimedia.org/wiki/File:US_Navy_051015-N-9419C-004_Almost_2,000_triathletes_begin_the_2.4-mile_swim_at_the_Ironman_World_Championship_triathlon,_held_in_Kailua-Kona,_Hawaii.jpg | 2026-10-14 |
@@ -33,5 +38,7 @@ Each photo is resized for the web and not otherwise changed.
 | percy-spencer-microwave-oven | File:Amana Radarange Microwave Oven.jpg | TaurusEmerald | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Amana_Radarange_Microwave_Oven.jpg | 2026-10-23 |
 | peter-kaestner-10000-birds | File:Arachnothera flammifera Keulemans (cropped).jpg | John Gerrard Keulemans | Public domain | https://commons.wikimedia.org/wiki/File:Arachnothera_flammifera_Keulemans_(cropped).jpg | 2026-10-07 |
 | ravi-sood-powerlifting-record-82 | File:2025 Skelton Gym Powerlifting Competition (9326219).jpg | U.S. Air Force photo by Senior Airman Haiden Morris | Public domain | https://commons.wikimedia.org/wiki/File:2025_Skelton_Gym_Powerlifting_Competition_(9326219).jpg | 2026-10-07 |
+| ron-wallace-heaviest-pumpkin | File:3PumpkinsonPallets F+S.jpg | David.politzer | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:3PumpkinsonPallets_F%2BS.jpg | 2026-10-24 |
 | stargazing-for-beginners | File:Searching the night sky.jpg | Annatsach | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Searching_the_night_sky.jpg | 2026-10-14 |
 | trevor-barry-saturn-decagon | File:Top view of the rings of Saturn by Cassini - October 10, 2013.jpg | NASA / JPL-Caltech / SSI / Cornell | Public domain | https://commons.wikimedia.org/wiki/File:Top_view_of_the_rings_of_Saturn_by_Cassini_-_October_10,_2013.jpg | 2026-10-14 |
+| virginia-ordaz-delta-college-degree | File:Delta College Campus.jpg | BronzeAnubis | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Delta_College_Campus.jpg | 2026-10-24 |
