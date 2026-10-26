@@ -134,3 +134,195 @@ rounds:
         level: 2
         source: {title: "Recipe for real mince pies", publisher: "English Heritage", url: "https://www.english-heritage.org.uk/visit/inspire-me/blog/blog-posts/recipe-for-real-mince-pies/"}
         checked: 2026-10-24
+
+  - id: winter-animals
+    title: Winter animals
+    kind: junior
+    editions: [uk, us]
+    intro: "A round for the youngest players. Grown-ups, no shouting out!"
+    questions:
+      - q: "True or false: only boy reindeer grow antlers."
+        a: "False"
+        note: "Both male and female reindeer grow antlers, unlike most other deer."
+        level: 1
+        source: {title: "Fun facts about reindeer and caribou", publisher: "US Food and Drug Administration", url: "https://www.fda.gov/animal-veterinary/animal-health-literacy/fun-facts-about-reindeer-and-caribou"}
+        checked: 2026-10-26
+      - q: "Reindeer dig through the snow with their hooves to find food. Is it carrots, lichen or grass?"
+        a: "Lichen"
+        note: "It is also called reindeer moss."
+        level: 1
+        source: {title: "Fun facts about reindeer and caribou", publisher: "US Food and Drug Administration", url: "https://www.fda.gov/animal-veterinary/animal-health-literacy/fun-facts-about-reindeer-and-caribou"}
+        checked: 2026-10-26
+      - q: "In North America, wild reindeer are called by another name. What is it?"
+        a: "Caribou"
+        level: 2
+        source: {title: "Fun facts about reindeer and caribou", publisher: "US Food and Drug Administration", url: "https://www.fda.gov/animal-veterinary/animal-health-literacy/fun-facts-about-reindeer-and-caribou"}
+        checked: 2026-10-26
+      - q: "Polar bears look white. What colour is the skin under their fur?"
+        a: "Black"
+        level: 1
+        source: {title: "Why do polar bears have white fur? And 10 other polar bear facts", publisher: "WWF (World Wildlife Fund)", url: "https://www.worldwildlife.org/resources/facts/why-do-polar-bears-have-white-fur-and-10-other-polar-bear-facts/"}
+        checked: 2026-10-26
+      - q: "Do polar bears live near the North Pole or the South Pole?"
+        a: "The North Pole (the Arctic)"
+        level: 1
+        source: {title: "Why do polar bears have white fur? And 10 other polar bear facts", publisher: "WWF (World Wildlife Fund)", url: "https://www.worldwildlife.org/resources/facts/why-do-polar-bears-have-white-fur-and-10-other-polar-bear-facts/"}
+        checked: 2026-10-26
+      - q: "What is a polar bear's favourite food: fish, seals or berries?"
+        a: "Seals"
+        note: "Mostly ringed seals, which give them lots of fat."
+        level: 1
+        source: {title: "Why do polar bears have white fur? And 10 other polar bear facts", publisher: "WWF (World Wildlife Fund)", url: "https://www.worldwildlife.org/resources/facts/why-do-polar-bears-have-white-fur-and-10-other-polar-bear-facts/"}
+        checked: 2026-10-26
+      - q: "Emperor penguins keep their egg warm on their feet all through the Antarctic winter. Is it the mum or the dad who does it?"
+        a: "The dad"
+        note: "For about two months, eating nothing but snow, while the mum goes to sea to feed."
+        level: 1
+        source: {title: "Male emperor penguins and their eggs", publisher: "EarthSky", url: "https://earthsky.org/earth/male-penguin-eggs"}
+        checked: 2026-10-26
+      - q: "Which of these animals sleeps through the winter: a hedgehog, a fox or a badger?"
+        a: "A hedgehog"
+        note: "In the UK only hedgehogs, dormice and bats truly hibernate. Foxes and badgers grow thicker coats."
+        level: 1
+        source: {title: "Hibernation: wildlife's winter survival strategy", publisher: "The Wildlife Trusts", url: "https://www.wildlifetrusts.org/node/5560432"}
+        checked: 2026-10-26
+      - q: "In summer the Arctic fox is brown and black. What colour does its coat turn in winter?"
+        a: "White"
+        level: 1
+        source: {title: "Arctic fox", publisher: "US National Park Service (Kobuk Valley)", url: "https://www.nps.gov/kova/learn/nature/arctic-fox.htm"}
+        checked: 2026-10-26
+      - q: "Some birds, such as swallows, leave before winter. Where do they go?"
+        a: "Somewhere warmer (they fly south)"
+        accept: "South; a warmer country; Africa"
+        level: 2
+        source: {title: "Hibernation: wildlife's winter survival strategy", publisher: "The Wildlife Trusts", url: "https://www.wildlifetrusts.org/node/5560432"}
+        checked: 2026-10-26
+
+  - id: the-night-sky
+    title: The night sky
+    editions: [uk, us]
+    intro: "Long winter nights are the best time to look up."
+    questions:
+      - q: "How many stars make up Orion's Belt?"
+        a: "Three"
+        note: "Alnitak, Alnilam and Mintaka."
+        level: 1
+        source: {title: "Discovering the universe through the constellation Orion", publisher: "NASA Science", url: "https://science.nasa.gov/universe/discovering-the-universe-through-the-constellation-orion"}
+        checked: 2026-10-26
+      - q: "Who was the first person to walk on the Moon, in July 1969?"
+        a: "Neil Armstrong"
+        level: 1
+        source: {title: "Apollo 11", publisher: "NASA", url: "https://www.nasa.gov/mission/apollo-11/"}
+        checked: 2026-10-26
+      - q: "Polaris is the star sailors used to find north. What is its everyday name?"
+        a: "The North Star"
+        accept: "The Pole Star"
+        level: 1
+        source: {title: "Ursa Minor, the Little Bear, and Polaris", publisher: "Royal Museums Greenwich", url: "https://www.rmg.co.uk/stories/space-astronomy/ursa-minor-little-bear-polaris"}
+        checked: 2026-10-26
+      - q: "In Greek myth, who or what was Orion?"
+        a: "A hunter"
+        level: 2
+        source: {title: "Discovering the universe through the constellation Orion", publisher: "NASA Science", url: "https://science.nasa.gov/universe/discovering-the-universe-through-the-constellation-orion"}
+        checked: 2026-10-26
+      - q: "The North Star sits at the end of the tail of which constellation: the Little Bear, the Great Bear or the Swan?"
+        a: "The Little Bear (Ursa Minor)"
+        note: "In North America it is called the Little Dipper. To find it, follow the two end stars of the Plough (Big Dipper)."
+        level: 2
+        source: {title: "Ursa Minor, the Little Bear, and Polaris", publisher: "Royal Museums Greenwich", url: "https://www.rmg.co.uk/stories/space-astronomy/ursa-minor-little-bear-polaris"}
+        checked: 2026-10-26
+      - q: "About how long does sunlight take to reach Earth: 8 seconds, 8 minutes or 8 hours?"
+        a: "8 minutes"
+        note: "About 8 minutes and 20 seconds, across roughly 150 million kilometres (93 million miles)."
+        level: 2
+        source: {title: "How long does it take light from the Sun to get to Earth?", publisher: "Smithsonian National Air and Space Museum", url: "https://howthingsfly.si.edu/ask-an-explainer/how-long-does-it-take-light-sun-get-earth"}
+        checked: 2026-10-26
+      - q: "Every mid-December, a meteor shower seems to come from the constellation Gemini. What is it called?"
+        a: "The Geminids"
+        note: "Up to 120 an hour in perfect conditions. They come from an asteroid, 3200 Phaethon, not a comet."
+        level: 2
+        source: {title: "Geminids", publisher: "NASA Science", url: "https://science.nasa.gov/solar-system/meteors-meteorites/geminids"}
+        checked: 2026-10-26
+      - q: "What is the most common colour of the northern lights?"
+        a: "Green"
+        note: "It comes from oxygen about 60 miles above the Earth."
+        level: 2
+        source: {title: "What are the Northern Lights and what causes them?", publisher: "Met Office", url: "https://www.metoffice.gov.uk/blog/2025/what-causes-the-northern-lights"}
+        checked: 2026-10-26
+      - q: "Mercury is closest to the Sun, but which planet is the hottest? (It is also the brightest planet in our sky.)"
+        a: "Venus"
+        note: "About 480°C (900°F) at the surface."
+        level: 3
+        source: {title: "Venus: our twin planet", publisher: "timeanddate.com", url: "https://www.timeanddate.com/astronomy/planets/venus"}
+        checked: 2026-10-26
+      - q: "What was the name of Apollo 11's lunar module, the craft that landed on the Moon?"
+        a: "Eagle"
+        note: "Michael Collins stayed in orbit while Armstrong and Aldrin landed."
+        level: 3
+        source: {title: "Apollo 11", publisher: "NASA", url: "https://www.nasa.gov/mission/apollo-11/"}
+        checked: 2026-10-26
+
+  - id: christmas-food
+    title: Christmas food
+    editions: [uk, us]
+    intro: "Where the things on the table came from."
+    questions:
+      - q: "Turkeys first came from which continent?"
+        a: "North America"
+        note: "Wild turkeys lived across the present-day US and Mexico. People in Mexico were keeping them more than 2,000 years ago."
+        level: 1
+        source: {title: "Native Americans domesticated turkeys long before the Pilgrims arrived", publisher: "Audubon", url: "https://www.audubon.org/news/native-americans-domesticated-turkeys-long-pilgrims-arrived"}
+        checked: 2026-10-26
+      - q: "How do Brussels sprouts grow: under the ground, up a tall stalk, or on a tree?"
+        a: "Up a tall stalk"
+        note: "The stem grows 2 to 3 feet tall, with sprouts all the way up it."
+        level: 1
+        source: {title: "Brussels sprouts", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/plant/Brussels-sprouts"}
+        checked: 2026-10-26
+      - q: "In which fairy tale, collected by the Brothers Grimm, do two children find a house covered in sweets?"
+        a: "Hansel and Gretel"
+        note: "Some say it inspired German bakers to make the first gingerbread houses."
+        level: 1
+        source: {title: "The history of the gingerbread house", publisher: "The Bubble", url: "https://www.thebubble.org.uk/?p=44420"}
+        checked: 2026-10-26
+      - q: "Brussels sprouts are a kind of which bigger vegetable?"
+        a: "Cabbage"
+        note: "They are the same species as cabbage, Brassica oleracea."
+        level: 2
+        source: {title: "Brussels sprouts", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/plant/Brussels-sprouts"}
+        checked: 2026-10-26
+      - q: "Cranberry growers flood their fields at harvest time. Why?"
+        a: "Ripe cranberries float, so they can be gathered off the top of the water"
+        accept: "They float"
+        note: "The berries have tiny air pockets inside. They grow on dry beds the rest of the year."
+        level: 2
+        source: {title: "Cranberries don't grow underwater, so why are the bogs flooded every fall?", publisher: "Farmers' Almanac", url: "https://www.farmersalmanac.com/why-are-cranberries-harvested-underwater"}
+        checked: 2026-10-26
+      - q: "Panettone, the tall Christmas bread full of candied fruit, comes from which Italian city?"
+        a: "Milan"
+        level: 2
+        source: {title: "The traditional dishes of Milano: panettone", publisher: "YesMilano (City of Milan)", url: "https://www.yesmilano.it/en/articles/panettone"}
+        checked: 2026-10-26
+      - q: "The bûche de Noël, a chocolate cake made to look like a log, is a Christmas favourite in which country?"
+        a: "France"
+        level: 2
+        source: {title: "What is a yule log, the Christmas dessert?", publisher: "National Geographic", url: "https://www.nationalgeographic.com/travel/article/what-is-yule-log-christmas-dessert"}
+        checked: 2026-10-26
+      - q: "True or false: the candy cane was invented in 1670 by a choirmaster in Cologne, to keep children quiet in church."
+        a: "False, as far as anyone can prove"
+        accept: "False"
+        note: "It is a popular story, but nobody has found any record of it. The earliest known candy-cane-style recipe is from 1844."
+        level: 2
+        source: {title: "Is the Christmas candy cane a religious symbol? Fact check", publisher: "That's Nonsense", url: "https://www.thatsnonsense.com/is-the-christmas-candy-cane-a-religious-symbol-fact-check/"}
+        checked: 2026-10-26
+      - q: "Germany's Christmas stollen is said to be shaped to look like what?"
+        a: "The baby Jesus wrapped in swaddling clothes"
+        level: 3
+        source: {title: "Christmas classic: the stollen", publisher: "deutschland.de", url: "https://www.deutschland.de/en/topic/life/lifestyle-cuisine/christmas-classic-the-stollen"}
+        checked: 2026-10-26
+      - q: "The yule log cake copies a much older custom with a real log. What was done with it?"
+        a: "It was burned"
+        note: "Lit on Christmas Eve and kept burning until Twelfth Night."
+        level: 3
+        source: {title: "What is a yule log, the Christmas dessert?", publisher: "National Geographic", url: "https://www.nationalgeographic.com/travel/article/what-is-yule-log-christmas-dessert"}
+        checked: 2026-10-26
