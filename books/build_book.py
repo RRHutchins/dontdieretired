@@ -201,6 +201,17 @@ def _x(page_no):
     return INNER if page_no % 2 == 1 else OUTER
 
 
+def divider_panel(c, page_no, colour):
+    """Coloured panel for part and Solutions pages, kept inside the page margins. The interior has no bleed,
+    so nothing may run to the paper edge: KDP rejects a full-page fill ("object outside the margins", 26 Oct 2026).
+    Returns the centre x of the panel."""
+    x0 = _x(page_no)
+    w = PW - INNER - OUTER
+    c.setFillColor(colour)
+    c.roundRect(x0, BOTM, w, PH - TOPM - BOTM, 18, stroke=0, fill=1)
+    return x0 + w / 2
+
+
 def sun(c, cx, cy, r, colour, bars=True):
     c.setFillColor(colour)
     c.setStrokeColor(colour)
@@ -406,29 +417,27 @@ def build(book_id):
         where = {p["no"]: first_sol + i // PER_SOL_PAGE for i, p in enumerate(puzzles)}
         for kind, item in plan:
             if kind == "part":
-                c.setFillColor(colour)
-                c.rect(0, 0, PW, PH, stroke=0, fill=1)
+                cx = divider_panel(c, n, colour)
                 c.setFillColor(white)
                 c.setFont("Semi", 17)
-                c.drawCentredString(PW / 2, PH / 2 + 86, f"Part {item}")
+                c.drawCentredString(cx, PH / 2 + 86, f"Part {item}")
                 c.setFont("Head", 54)
-                c.drawCentredString(PW / 2, PH / 2 + 24, b["tiers"][item - 1])
+                c.drawCentredString(cx, PH / 2 + 24, b["tiers"][item - 1])
                 cnt = [p for p in puzzles if p["tier"] == item]
                 c.setFont("Body", 16)
-                c.drawCentredString(PW / 2, PH / 2 - 14, f"Puzzles {cnt[0]['no']} to {cnt[-1]['no']}")
-                sun(c, PW / 2, PH / 2 - 190, 52, gold, bars=False)
+                c.drawCentredString(cx, PH / 2 - 14, f"Puzzles {cnt[0]['no']} to {cnt[-1]['no']}")
+                sun(c, cx, PH / 2 - 190, 52, gold, bars=False)
                 c.setFillColor(black)
             else:
                 puzzle_page(c, b, item, n, where[item["no"]])
             c.showPage(); n += 1
         # solutions divider
-        c.setFillColor(colour)
-        c.rect(0, 0, PW, PH, stroke=0, fill=1)
+        cx = divider_panel(c, n, colour)
         c.setFillColor(white)
         c.setFont("Head", 54)
-        c.drawCentredString(PW / 2, PH / 2 + 24, "Solutions")
+        c.drawCentredString(cx, PH / 2 + 24, "Solutions")
         c.setFont("Body", 16)
-        c.drawCentredString(PW / 2, PH / 2 - 14, "Have one more go first.")
+        c.drawCentredString(cx, PH / 2 - 14, "Have one more go first.")
         c.setFillColor(black)
         c.showPage(); n += 1
         assert n == first_sol, (n, first_sol)

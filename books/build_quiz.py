@@ -202,10 +202,12 @@ class Book:
         c = self.c
         if self.n % 2 == 0:
             self.end_page(); self.page()
-        c.setFillColor(RED); c.rect(0, 0, PW, PH, stroke=0, fill=1)
+        # inside the margins: the interior has no bleed, and KDP rejects a full-page fill (26 Oct 2026)
+        c.setFillColor(RED); c.roundRect(x0(self.n), BOTM, CW, PH - TOPM - BOTM, 14, stroke=0, fill=1)
+        cx = x0(self.n) + CW / 2
         c.setFillColor(HexColor("#FBF6EE")); c.setFont("Head", 34)
-        c.drawCentredString(PW / 2, PH / 2 + 20, title)
-        sun(c, PW / 2, PH / 2 - 70, 34, GOLD)
+        c.drawCentredString(cx, PH / 2 + 20, title)
+        sun(c, cx, PH / 2 - 70, 34, GOLD)
         c.setFillColor(black)
 
     def end_page_round(self, i):
