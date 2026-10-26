@@ -489,6 +489,32 @@ def cover(b, pages):
             c.setFillAlpha(flakes.uniform(.35, .8))
             c.circle(sx_, sy_, flakes.uniform(1.6, 3.6), stroke=0, fill=1)
         c.setFillAlpha(1)
+        # two fir trees on the snowy hill, either side of the sun (Robin, 26 Oct 2026: "add a Christmas tree")
+        def _hill(t):
+            pts = [(fx, bleed + 1.7 * 72), (fx + PW * .3, bleed + 2.5 * 72), (fx + PW * .62, bleed + 1.25 * 72), (W, bleed + 2.1 * 72)]
+            return tuple((1 - t) ** 3 * a + 3 * (1 - t) ** 2 * t * b_ + 3 * (1 - t) * t ** 2 * c_ + t ** 3 * d
+                         for a, b_, c_, d in zip(*pts))
+        for t, h in ((.13, 150), (.86, 118)):
+            tx, ty = _hill(t)
+            ty -= 10
+            c.setFillColor(HexColor("#5A3A22"))
+            c.rect(tx - h * .045, ty, h * .09, h * .12, stroke=0, fill=1)
+            for k, (w, y0, y1) in enumerate(((.62, .1, .52), (.48, .34, .76), (.34, .58, 1.0))):
+                tp = c.beginPath()
+                tp.moveTo(tx - h * w / 2, ty + h * y0); tp.lineTo(tx + h * w / 2, ty + h * y0); tp.lineTo(tx, ty + h * y1); tp.close()
+                c.setFillColor(HexColor("#1E5631")); c.drawPath(tp, stroke=0, fill=1)
+                sp = c.beginPath()   # snow along the lower edge of each tier
+                sp.moveTo(tx - h * w / 2, ty + h * y0); sp.lineTo(tx + h * w / 2, ty + h * y0)
+                sp.lineTo(tx + h * w * .36, ty + h * (y0 + .05)); sp.lineTo(tx - h * w * .36, ty + h * (y0 + .05)); sp.close()
+                c.setFillColor(cream); c.drawPath(sp, stroke=0, fill=1)
+            c.setFillColor(gold)   # a star on top
+            st = c.beginPath()
+            r1, r2 = h * .075, h * .032
+            for i in range(10):
+                a = math.radians(90 + i * 36)
+                rr = r1 if i % 2 == 0 else r2
+                (st.moveTo if i == 0 else st.lineTo)(tx + rr * math.cos(a), ty + h * 1.02 + rr * math.sin(a))
+            st.close(); c.drawPath(st, stroke=0, fill=1)
     else:
         c.setFillColor(colour)
         c.drawPath(p, stroke=0, fill=1)
