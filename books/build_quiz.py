@@ -154,7 +154,7 @@ class Book:
             "Pens, paper, no phones.",
         ]
         for t in how:
-            y = L.para(c, t, x0(self.n), y, CW, "Body", Q_SIZE, Q_LEAD) - 10
+            y = L.para(c, t, x0(self.n), y, CW, "Body", 15, 19.5) - 8
         self.end_page()
 
     # --- rounds ------------------------------------------------------------------------------
