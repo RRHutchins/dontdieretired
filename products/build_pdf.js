@@ -281,7 +281,7 @@ ${bodyHtml.replace(/<\/div>$/, '')}${aboutHtml}${sourcesHtml}</div>
   ${MY ? `<div class="upgrade"><div class="up-l"><div class="kick" style="color:var(--acc)">Your purchase counts in full</div><h3 class="up-h">Get the other eight plans for £${MY.upgrade}</h3><p>You've paid £${MY.paid} for this plan. We take that off the Everything bundle, so the rest of the shelf, worth £${MY.others_value} bought separately, is yours for <b>£${MY.upgrade}</b>. You'll also get every new plan we publish for a year.</p><p class="up-small">Bought more than one plan? Reply to your receipt and we'll credit everything you've paid.</p></div><a class="up-r" href="${MY.url}"><div class="up-price">£${MY.upgrade}</div><div class="up-was">instead of £${UP.bundle_price}</div><div class="up-link">${esc(MY.url.replace('https://', ''))}</div><div class="up-code">or use code <b>${MY.code}</b></div></a></div>` : ''}
   <div class="kick" style="margin-top:8mm">More from the shelf</div>
   <div class="shelf">${OTHERS.filter(o => o[0] !== C.title).slice(0, 6).map(o => `<div><b>${esc(o[0])}</b><span>${esc(o[1])}</span></div>`).join('')}</div>
-  <div class="sign">${MARK(T.c, '#FFFDF9')}<div><b>Don't Die Retired</b><span>Retire from work if you like. Never from life. · dontdieretired.com · hello@dontdieretired.com</span></div></div>
+  <div class="sign">${MARK(T.c, '#FFFDF9')}<div><b>Don't Die Retired</b><span>Never retire from life. · dontdieretired.com · hello@dontdieretired.com</span></div></div>
 </section>
 </body></html>`;
 

@@ -88,7 +88,7 @@ def og(out, size=(1200, 630)):
     d.text((pad + mark + round(H * 0.045) - l, round(H * 0.115) + (mark - (b - t)) // 2 - t), NAME, font=f, fill=PAPER)
     hf = ImageFont.truetype(BOLD, round(H * 0.128))
     y = round(H * 0.335)
-    for line in ("Retire from work if", "you like. Never from", "life."):
+    for line in ("Never retire", "from life."):
         d.text((pad, y), line, font=hf, fill=PAPER)
         y += round(hf.size * 1.06)
     sf = ImageFont.truetype(SANS, round(H * 0.043))

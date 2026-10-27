@@ -447,7 +447,7 @@ def build(book_id):
         x = _x(n)
         c.setFont("Head", 26)
         yy = PH - TOPM - 30
-        for line in ("Retire from work if you like.", "Never from life."):
+        for line in ("Never retire from life.",):
             c.drawString(x, yy, line)
             yy -= 34
         other = b["closing"]

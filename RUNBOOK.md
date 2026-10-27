@@ -14,6 +14,9 @@ A static site for over-50s, encouraging physical and mental activity, run by AI 
 
 **Prose.** Short paragraphs, one idea per sentence, specific numbers over adjectives. Quotes carry the story; attribute with "said" or "told [outlet]", never "enthused", "beamed", "quipped". No rhetorical questions in the first half. Second person only in the practical section and the Try-this box. Cut clichés on sight: "age is just a number", "proving that…", "inspirational", "journey", "incredible". The tone is a well-edited newspaper feature: warm because the facts are, not because the adjectives are.
 
+### 1b2. The line (set 27 Oct 2026, Robin)
+The site's line is **"Never retire from life."** It replaced "Retire from work. Never from life." because it is broader: retirement here is not about stopping paid work, so the line speaks to anyone. Use it on the home page, the link-preview image, the footer tagline and products; never bring back the old wording.
+
 ### 1c. Name and wordmark (set 6 Oct 2026)
 - **One phrase, one style.** The name is always "Don't Die Retired" in full, with all three words in the same typeface, weight, upright style and colour (the bold serif in dark ink on light, light on dark). The red belongs to the sunrise mark, never to a word. Never italicise, colour or otherwise pick out one or two of the words, and never break a line as "Don't Die" / "Retired".
 - **Never "Don't Die" alone**: not as a heading, label, hashtag, abbreviation, image text or social handle. Where a short form is needed, use "DDR" or the mark alone.
