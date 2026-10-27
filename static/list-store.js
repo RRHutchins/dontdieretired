@@ -18,7 +18,7 @@
   const KEY = 'ddr_list', VERSION = 1;
   const STATUSES = ['want', 'planned', 'doing', 'done'];
   const now = () => new Date().toISOString();
-  const empty = () => ({ version: VERSION, title: 'Fifty at Fifty', target: 50, settings_updated_at: '', items: [] });
+  const empty = () => ({ version: VERSION, title: 'My list', target: 50, settings_updated_at: '', items: [] });
   const str = (v, n) => (typeof v === 'string' ? v : '').slice(0, n);
 
   // Make anything (old data, a backup file, a hand-edited file) into a well-formed list. Never throws.

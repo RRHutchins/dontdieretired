@@ -59,7 +59,7 @@
 
 {% if acts %}
 <section class="cat-acts">
-  <div class="section-head"><h2>Things to do</h2><a href="/list/?topic={{ cid }}">All {{ acts|length }} on Fifty at Fifty →</a></div>
+  <div class="section-head"><h2>Things to do</h2><a href="/list/?topic={{ cid }}">All {{ acts|length }} in Get involved →</a></div>
   <ul class="fl-more cat-acts-list">{% for x in acts[:12] %}<li><a href="/list/{{ x.id }}/">{{ x.title }}</a></li>{% endfor %}</ul>
 </section>
 {% endif %}

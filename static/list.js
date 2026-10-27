@@ -97,15 +97,37 @@
       return li.dataset[k] === v;
     });
   }
-  function filter() {
-    let n = 0; items.forEach(li => { const m = matches(li); li.hidden = !m; if (m) n++; li.classList.remove('fl-picked'); });
-    const filtered = q.value.trim() || sels.some(s => s.value);
-    countEl.textContent = n === items.length ? 'All ' + n + ' activities' : 'Showing ' + n + ' of ' + items.length + ' activities' + (regSel.value === region && region && !q.value.trim() && sels.every(s => s === regSel || !s.value) ? ' (the ones you can do from the ' + region.toUpperCase() + ')' : '');
+  // Results bar (27 Oct 2026, Robin: make it obvious that results have arrived): a solid bar that says
+  // how many matched and what was searched for, flashes on each change, and the matching cards fade in.
+  const calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const replay = (el, cls) => { el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); };
+  function filter(fromUser) {
+    let n = 0; const shown = [];
+    items.forEach(li => { const m = matches(li); li.hidden = !m; if (m) { n++; shown.push(li); } li.classList.remove('fl-picked'); });
+    const words = q.value.trim(), filtered = words || sels.some(s => s.value);
+    const regionOnly = regSel.value === region && region && !words && sels.every(s => s === regSel || !s.value);
+    const what = n === 1 ? '1 activity' : n + ' activities';
+    let html;
+    if (!filtered) html = '<strong>All ' + n + ' activities</strong>';
+    else if (regionOnly) html = '<strong>' + what + '</strong> you can do from the ' + region.toUpperCase() + ' <span class="fl-results-of">of ' + items.length + '</span>';
+    else if (!n) html = '<strong>No activities match</strong>' + (words ? ' “' + esc(words) + '”' : ' those filters');
+    else html = '<strong>' + what + '</strong> ' + (words ? 'match “' + esc(words) + '”' : 'match your filters') + ' <span class="fl-results-of">of ' + items.length + '</span>';
+    countEl.innerHTML = html;
+    countEl.classList.toggle('is-filtered', !!filtered); countEl.classList.toggle('is-none', !n);
+    if (fromUser === true && !calm) {
+      replay(countEl, 'fl-flash');
+      shown.slice(0, 12).forEach((li, i) => { li.style.setProperty('--i', i); replay(li, 'fl-in'); });
+    }
     none.hidden = n > 0; clear.hidden = !filtered;
     return n;
   }
-  const reset = () => { q.value = ''; sels.forEach(s => { s.value = ''; }); filter(); };
-  q.addEventListener('input', filter); sels.forEach(s => s.addEventListener('change', filter));
+  // bring the results into view when the reader has finished choosing (Enter in the box, or a filter picked),
+  // but never while they are still typing, so the box does not jump away from under them
+  const toResults = () => { const r = countEl.getBoundingClientRect(); if (r.top < 70 || r.top > innerHeight * 0.6) countEl.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' }); };
+  const reset = () => { q.value = ''; sels.forEach(s => { s.value = ''; }); filter(true); };
+  q.addEventListener('input', () => filter(true));
+  q.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); filter(true); q.blur(); toResults(); } });
+  sels.forEach(s => s.addEventListener('change', () => { filter(true); toResults(); }));
   clear.addEventListener('click', reset); $('[data-fl-clear2]', root).addEventListener('click', reset);
   $('[data-fl-surprise]', root).addEventListener('click', () => {
     let pool = items.filter(li => !li.hidden && !L.has(li.dataset.id));
@@ -146,7 +168,7 @@
     const stretch = ints.length ? rot(by(pool.filter(li => !ints.includes(li.dataset.category) && score(li) >= 0)), 2) : [];
     if (!picks.length && !stretch.length) { box.hidden = true; return; }
     const why = li => ints.includes(li.dataset.category) ? 'Because you picked ' + catLabel(li) + (lvl && FIT[lvl][li.dataset.effort] === 3 ? '. ' + LEVEL_WHY[lvl] : '') : LEVEL_WHY[lvl] || '';
-    const cardOf = (li, reason) => '<li><p class="kicker">' + esc(reason) + '</p><h3><a href="/list/' + li.dataset.id + '/">' + esc(li.dataset.title) + '</a></h3><p class="fl-meta">' + esc($('.fl-meta', li).textContent) + '</p><button type="button" class="chip fl-add" data-fl-add="' + li.dataset.id + '" aria-pressed="false">Add to my list</button></li>';
+    const cardOf = (li, reason) => '<li data-cat="' + esc(li.dataset.category) + '"><p class="kicker">' + esc(reason) + '</p><h3><a href="/list/' + li.dataset.id + '/">' + esc(li.dataset.title) + '</a></h3><p class="fl-meta">' + esc($('.fl-meta', li).textContent) + '</p><p class="fl-go" aria-hidden="true">How to start and where to go <span>→</span></p><button type="button" class="chip fl-add" data-fl-add="' + li.dataset.id + '" aria-pressed="false">Add to my list</button></li>';
     box.innerHTML = '<div class="fl-suggest-head"><h2>Suggested for you</h2><p class="meta">From the interests and starting point you gave us. <button type="button" class="linklike" data-open-segments2>Change them</button></p></div><ul class="fl-grid">'
       + picks.map(li => cardOf(li, why(li))).join('') + stretch.map(li => cardOf(li, 'Something different: ' + catLabel(li))).join('')
       + '</ul>' + (mine.length > 4 ? '<p><button type="button" class="linklike" data-fl-more>Show me different ones</button></p>' : '');

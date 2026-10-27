@@ -816,3 +816,51 @@ h1{line-height:1.04}
 .feed-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .feed-row code{background:var(--stone);border-radius:8px;padding:6px 10px;font-size:.92rem;overflow-wrap:anywhere}
 .feed-list{list-style:none;padding:0}.feed-list li{margin:0 0 14px}
+
+/* ---- Get involved (27 Oct 2026, Robin): renamed from Fifty at Fifty; home panel after the second story;
+   activity cards in their topic colour; a results bar that makes it obvious a search has answered ---- */
+.get-involved{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:14px 32px;padding:28px 32px;border-radius:var(--r);background:var(--connect);color:#fff;text-decoration:none}
+.get-involved .gi-text{display:flex;flex-direction:column;gap:4px;max-width:44em}
+.get-involved .tile-k{font-weight:600;font-size:.9rem;opacity:.9;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.get-involved strong{font-family:var(--serif);font-weight:600;font-size:clamp(1.6rem,3vw,2.1rem);line-height:1.1}
+.get-involved .pz-badge{position:static;background:#fff;color:var(--ink);border:0}
+.gi-go{display:inline-flex;align-items:center;min-height:44px;background:#fff;color:var(--connect);font-weight:600;padding:.6em 1.3em;border-radius:999px;white-space:nowrap}
+.get-involved:hover .gi-go{text-decoration:underline;text-underline-offset:3px}
+.get-involved:focus-visible{outline:3px solid var(--focus,#8a5a12);outline-offset:3px}
+@media (min-width:601px) and (max-width:900px){.latest-grid{grid-auto-flow:row dense}}
+@media (max-width:640px){.get-involved{grid-template-columns:1fr;padding:22px 20px}.gi-go{justify-self:start}}
+.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:820px){.tiles{grid-template-columns:1fr}}
+
+.fl-grid>li[data-cat]{background:var(--c);border-color:transparent;color:#fff}
+.fl-grid>li[data-cat] .kicker,.fl-grid>li[data-cat] .fl-meta{color:#fff;opacity:.9}
+.fl-grid>li[data-cat] h3 a,.fl-grid>li[data-cat] .h3 a{color:#fff}
+.fl-grid>li[data-cat] h3 a:hover,.fl-grid>li[data-cat] .h3 a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.fl-grid>li[data-cat] .fl-add{background:transparent;border-color:rgba(255,255,255,.8);color:#fff}
+.fl-grid>li[data-cat] .fl-add:hover{background:rgba(255,255,255,.15)}
+.fl-grid>li[data-cat] .fl-add[aria-pressed=true]{background:#fff;border-color:#fff;color:var(--c)}
+.fl-grid>li[data-cat] a:focus-visible,.fl-grid>li[data-cat] button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.fl-grid>li.fl-picked{outline:4px solid var(--gold);outline-offset:3px}
+.fl-mine-title{font-size:1.4rem;margin:0 0 10px}
+
+.fl-results{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;margin:0 0 16px;padding:12px 18px;border-radius:12px;background:var(--stone);color:var(--ink);font-size:1.05rem;scroll-margin-top:150px}
+.fl-results strong{font-size:1.2rem}
+.fl-results.is-filtered{background:var(--ink);color:#fff}
+.fl-results.is-none{background:var(--brand);color:#fff}
+.fl-results-of{opacity:.75;font-size:.92rem}
+.fl-flash{animation:fl-flash .9s ease-out}
+@keyframes fl-flash{0%{box-shadow:0 0 0 0 rgba(201,138,43,.95);transform:scale(1.015)}100%{box-shadow:0 0 0 16px rgba(201,138,43,0);transform:none}}
+.fl-in{animation:fl-in .45s ease-out both;animation-delay:calc(var(--i,0) * 35ms)}
+@keyframes fl-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.fl-flash,.fl-in{animation:none}}
+/* the whole card opens the activity page (27 Oct 2026, Robin: make it clear a card leads to the next stage) */
+.fl-grid>li{position:relative;transition:transform .15s ease,box-shadow .15s ease}
+.fl-grid>li h3 a::after,.fl-grid>li .h3 a::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.fl-grid>li .fl-add{position:relative;z-index:1}
+.fl-grid>li:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(20,20,30,.18)}
+.fl-go{margin:0 0 .9em;font-weight:700;font-size:.98rem}
+.fl-go span{display:inline-block;transition:transform .15s ease}
+.fl-grid>li:hover .fl-go span{transform:translateX(4px)}
+.fl-grid>li:hover h3 a{text-decoration:underline;text-underline-offset:3px}
+.fl-grid>li:has(h3 a:focus-visible),.fl-grid>li:has(.h3 a:focus-visible){outline:3px solid var(--gold);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.fl-grid>li,.fl-go span{transition:none}.fl-grid>li:hover{transform:none}}

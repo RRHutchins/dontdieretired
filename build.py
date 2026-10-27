@@ -598,7 +598,7 @@ def build(make_social=True):
             pages.append({"title": f"{v['plural']} you can enter", "url": f"/list/{v['slug']}/", "category": "move", "excerpt": v["blurb"],
                           "tags": ["military", "challenge", "challenges", "march", "tab", "ruck", "yomp", "army", "marines", "paras", "activities"],
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})
-        pages.append({"title": f"Fifty at Fifty: {len(chs)} things worth doing, and a list of your own", "url": "/list/", "category": "explore",
+        pages.append({"title": f"Get involved: {len(chs)} things worth doing, and a list of your own", "url": "/list/", "category": "explore",
                       "excerpt": "Pick the ones you fancy, at any age. Each has how to start and where to go. Choose your own number and tick them off in your own time.",
                       "tags": ["list", "fifty", "activity", "activities", "challenge", "challenges", "bucket", "goals", "things", "to", "do"],
                       "image": "/static/og-default.png", "art": "/static/og-default.png"})
