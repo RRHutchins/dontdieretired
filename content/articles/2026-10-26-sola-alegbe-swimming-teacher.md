@@ -7,6 +7,9 @@ tags: [swimming, learning, confidence, women, teaching, london]
 segments: [restarter, learner, changer]
 level: starter
 art: city
+photo_file: "File:Swimming pool with lane ropes in place.jpg"
+photo_caption: "Lane ropes stretched across an indoor pool in Edmonton, Canada, before a swimming meet. It is not a pool from the story."
+photo_alt: "Looking down the length of an empty indoor pool, its clear blue water divided by blue and yellow lane ropes, with flags and spectators far off at the end."
 hook: "Sola Alegbe nearly drowned at school and feared water for 30 years. She took her first lesson at 48. Now she teaches swimming."
 lesson: "The first step does not have to be a jump: holding the rail and blowing bubbles counts."
 standfirst: "Sola Alegbe was pushed into the deep end at school and was afraid of water for more than 30 years. At 48, on an exercise bike at her local leisure centre, she watched a swimmer and booked a lesson. She now teaches children, adults and families across London, and has written a book about it."

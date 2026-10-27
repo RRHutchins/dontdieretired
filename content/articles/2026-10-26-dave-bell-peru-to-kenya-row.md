@@ -8,6 +8,9 @@ segments: [mover, changer]
 level: advanced
 subject_age: 54
 art: sea
+photo_file: "File:Seaside in Kilifi, Kenya.jpg"
+photo_caption: "A beach at Kilifi, on the Kenyan coast. Dave Bell came ashore at Kilifi on 2 October 2026."
+photo_alt: "A wide, empty white-sand beach under a deep blue sky, with a band of pale green shallows and the dark blue sea to the horizon."
 hook: "Dave Bell left Lima in a rowing boat in November 2025. He next touched land in Kenya, 327 days and two oceans later."
 lesson: "A huge goal is survived one problem at a time: fix what breaks, or find a way to manage without it."
 standfirst: "Dave Bell, 54, a former Royal Marine from Dorset, rowed alone and unsupported from Lima, Peru, across the Pacific and Indian Oceans to Kilifi in Kenya. He was at sea for 327 days, waited out a cyclone season, lost two oars and was followed for weeks by sharks."
