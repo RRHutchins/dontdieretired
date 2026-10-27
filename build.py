@@ -704,6 +704,8 @@ def build(make_social=True):
                     if not _shown.get(it["id"], True): print(f"LIST WARNING: film {it['id']} on {c['id']} held back (not confirmed by YouTube)"); continue
                 ins.append(it)
             c["inspire_items"] = ins
+            # Photograph (extra job 28 Oct 2026): same rules, licences and checks as a story's (RUNBOOK §6l), keyed list-<id>
+            c["photo"] = story_photo(c, f"list-{c['id']}", credits)
             for k in c.get("kit") or []:
                 assert k.get("name") and k.get("why") and str(k.get("url", "")).startswith("https://www.amazon.co.uk/"), f"challenge {c['id']}: kit items need name, why and an amazon.co.uk url (app.js swaps in the US store)"
             for b in c.get("book") or []:
@@ -786,7 +788,8 @@ def build(make_social=True):
     urls.append(out("/privacy/", "privacy.html"))
     urls.append(out("/follow/", "follow.html"))
     urls.append(out("/editorial-policy/", "editorial-policy.html", corrections_total=217))
-    urls.append(out("/photo-credits/", "photo-credits.html", photo_arts=[a for a in arts if a["photo"]], film_arts=[a for a in arts if a["video"]]))
+    urls.append(out("/photo-credits/", "photo-credits.html", photo_arts=[a for a in arts if a["photo"]], film_arts=[a for a in arts if a["video"]],
+                    photo_acts=[c for c in (chs if ch_file.exists() else []) if c.get("photo")]))
     urls.append(out("/search/", "search.html"))
 
     # search index + article index for the front end

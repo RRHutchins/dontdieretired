@@ -125,6 +125,8 @@ def fmt(v, unit):
     if unit == "hours":
         h = round(v * 2) / 2
         return f"{h:g} hour" + ("" if h == 1 else "s")
+    if unit == "minutes":
+        return f"{max(5, round(v / 5) * 5):g} minutes"
     if unit in ("miles", "km"):
         return f"{round(v):g} {unit}" + (f" ({round(v * 1.609):g} km)" if unit == "miles" else f" ({round(v / 1.609):g} miles)")
     return f"{v:g} {unit}"
@@ -190,15 +192,15 @@ def plan(event, weeks=None, level="active"):
           f"| Week | Tue | Thu | Sat: {ks['name']} | Notes |", "|---|---|---|---|---|"]
     build = weeks - taper
     for w, v in enumerate(vals, 1):
-        tue = f"{e['second_session']['name']}, {e['second_session']['minutes']} min, easy"
-        thu = (f"{sp['name']}" if sp and w >= sp.get("from_week", 1) and w <= build else f"{e['second_session']['name']}, {e['second_session']['minutes']} min, easy")
+        tue = f"{e['second_session']['name']}, {e['second_session']['minutes']} min" + ("" if e['second_session']['name'].startswith("easy") else ", easy")
+        thu = (f"{sp['name']}" if sp and w >= sp.get("from_week", 1) and w <= build else f"{e['second_session']['name']}, {e['second_session']['minutes']} min" + ("" if e['second_session']['name'].startswith("easy") else ", easy"))
         notes = []
         if "cutback-weeks" in has and w <= build and w % 3 == 0: notes.append("easier week")
         if pack_from and w == pack_from: notes.append("start carrying your loaded pack on the long session")
         if b2b_from and "back-to-back" in has and w >= b2b_from and w <= build and w % 3 != 0: notes.append(f"add a second, shorter long day on Sunday instead of strength")
         if w == build + 1: notes.append("taper begins: same sessions, less of each")
         if v is None:
-            sat = "**the challenge**"; tue = f"{e['second_session']['name']}, 20 min, easy"; thu = "rest"; notes = ["event week: rest, sleep, eat well"]
+            sat = "**the challenge**"; tue = f"{e['second_session']['name']}, 20 min" + ("" if e['second_session']['name'].startswith("easy") else ", easy"); thu = "rest"; notes = ["event week: rest, sleep, eat well"]
         else:
             sat = fmt(v, unit)
         L.append(f"| {w} | {tue} | {thu} | {sat} | {'; '.join(notes)} |")

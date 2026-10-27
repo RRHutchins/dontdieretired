@@ -1,7 +1,7 @@
 name: Photos
 # Openly licensed photographs from Wikimedia Commons (RUNBOOK §6l). The cloud session cannot reach
 # Wikimedia, so this job does the fetching:
-#   fetch   downloads the file each article names in `photo_file:`, checks its licence with the Commons API,
+#   fetch   downloads the file each article or activity names in `photo_file:`, checks its licence with the Commons API,
 #           and commits the resized copies (static/photos/) and the credits (content/photo_credits.yaml).
 #   search  lists candidates for the queries in tools/photo_queries.yaml on the `photo-research` branch,
 #           with small previews, so a session can look before choosing. That branch is never deployed.
@@ -12,6 +12,7 @@ on:
     branches: [main]
     paths:
       - "content/articles/**"
+      - "content/challenges.yaml"
       - "tools/photo_queries.yaml"
       - "tools/photos.py"
       - ".github/workflows/photos.yml"

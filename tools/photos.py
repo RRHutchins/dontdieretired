@@ -4,7 +4,8 @@
 Runs in GitHub Actions (.github/workflows/photos.yml): the cloud session cannot reach Wikimedia.
 
   python tools/photos.py fetch [--research DIR]
-      For every article whose front matter names a Commons file (`photo_file: "File:….jpg"`), ask the
+      For every article whose front matter names a Commons file (`photo_file: "File:….jpg"`), and every
+      activity in content/challenges.yaml that does (saved as list-<id>.jpg, credited as list-<id>), ask the
       Commons API for that file's author and licence, refuse anything outside the licence list below,
       download it, and save two resized copies in static/photos/ (<slug>.jpg at 1600px wide,
       <slug>-800.jpg). The author, licence and source page are written to content/photo_credits.yaml,
@@ -12,7 +13,7 @@ Runs in GitHub Actions (.github/workflows/photos.yml): the cloud session cannot 
       A photo is only resized, never cropped, retouched or drawn on.
 
   python tools/photos.py search --research DIR
-      For every query in tools/photo_queries.yaml, list candidate files (title, size, author, licence,
+      For every query in tools/photo_queries.yaml (keys are article slugs, or list-<id> for an activity), list candidate files (title, size, author, licence,
       description) in DIR/candidates.json and save a small preview of each in DIR/<slug>/, so a
       session can look at them before choosing. The workflow pushes DIR to the `photo-research`
       branch, which is never deployed.
@@ -117,7 +118,7 @@ def write_credits_doc(credits):
              "Every photograph on the site that we did not make ourselves, with its author, licence and source.",
              "Written by `tools/photos.py`; do not edit by hand. The same list is public at /photo-credits/.",
              "Each photo is resized for the web and not otherwise changed.", "",
-             "| Article | File | Author | Licence | Source | Fetched |", "|---|---|---|---|---|---|"]
+             "| Page | File | Author | Licence | Source | Fetched |", "|---|---|---|---|---|---|"]
     for slug, c in sorted(credits.items()):
         lines.append(f"| {slug} | {c['file']} | {c['author']} | {c['licence']} | {c['page']} | {c['fetched']} |")
     (ROOT / "docs" / "IMAGE_CREDITS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -131,6 +132,12 @@ def fetch():
         fm = front_matter(p)
         if fm.get("photo_file"):
             wanted[fm.get("slug")] = str(fm["photo_file"]).strip()
+    # Activities (RUNBOOK §6h, 28 Oct 2026): an entry in content/challenges.yaml may name a Commons file too.
+    # Its key, and its file names, are "list-<id>", so they can never collide with an article slug.
+    chf = ROOT / "content" / "challenges.yaml"
+    for c in (yaml.safe_load(chf.read_text(encoding="utf-8")) if chf.exists() else None) or []:
+        if c.get("photo_file"):
+            wanted[f"list-{c['id']}"] = str(c["photo_file"]).strip()
     for slug, title in wanted.items():
         have = credits.get(slug, {})
         if have.get("file") == title and (PHOTOS / f"{slug}.jpg").exists():

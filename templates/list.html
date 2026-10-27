@@ -50,6 +50,7 @@
     <ul class="fl-grid" data-fl-grid>
     {% for c in challenges %}
       <li class="fl-item" data-cat="{{ c.category }}" data-id="{{ c.id }}" data-title="{{ c.title }}" data-category="{{ c.category }}" data-effort="{{ c.effort }}" data-cost="{{ c.cost }}" data-time="{{ c.time }}" data-setting="{{ c.setting }}" data-company="{{ c.company }}" data-regions="{{ c.regions|join(' ') }}" data-places="{{ (c.places or [])|join(' ') }}" data-insp="{{ ('story ' if c.has_story else '') ~ ('film' if c.has_film else '') }}" data-kind="{{ c.kind }}" data-text="{{ (c.title ~ ' ' ~ c.why ~ ' ' ~ categories[c.category].label ~ ' ' ~ c.kind ~ ' activity ' ~ (c.coll.plural if c.coll else '') ~ ' ' ~ (c.place_label or ''))|lower }}">
+        {% if c.photo %}<img class="fl-photo" src="{{ c.photo.small }}" alt="" width="800" height="450" loading="lazy" decoding="async">{% endif %}
         <p class="kicker">{{ c.coll.label if c.coll else categories[c.category].label }} · {{ L.effort[c.effort] }}</p>
         <h3><a href="/list/{{ c.id }}/">{{ c.title }}</a></h3>
         <p class="fl-why">{{ c.why_short }}</p>

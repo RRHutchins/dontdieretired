@@ -939,3 +939,6 @@ h1{line-height:1.04}
 .fl-map path.jump{fill:var(--think)}
 @media (min-width:820px){.fl-map-world{grid-column:1 / -1;grid-row:auto}}
 .fl-book{margin:18px 0}
+
+/* Activity photographs (RUNBOOK §6h, 28 Oct 2026): the card picture bleeds to the card's edges; the page uses .hero-fig */
+.fl-grid>li .fl-photo{display:block;width:calc(100% + 36px);max-width:none;height:auto;aspect-ratio:16/9;object-fit:cover;margin:-16px -18px 12px;border-radius:11px 11px 0 0}

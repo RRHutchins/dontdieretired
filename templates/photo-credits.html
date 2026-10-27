@@ -27,6 +27,14 @@
 {% endif %}{% endfor %}
 </ul>
 {% else %}<p>There are no photographs on the site yet.</p>{% endif %}
+{% if photo_acts %}
+<h3 class="h4" id="activity-photos">On activity pages</h3>
+<ul class="credit-list">
+{% for c in photo_acts %}
+<li><a href="/list/{{ c.id }}/">{{ c.title }}</a><br>{{ c.photo.caption }} {{ c.photo.label }} by {{ c.photo.author }}, {% if c.photo.licence_url %}licensed <a href="{{ c.photo.licence_url }}" rel="noopener license">{{ c.photo.licence }}</a>{% elif 'ublic' in c.photo.licence %}in the public domain{% else %}licensed {{ c.photo.licence }}{% endif %}. <a href="{{ c.photo.page }}" rel="noopener">The original on Wikimedia Commons</a>.</li>
+{% endfor %}
+</ul>
+{% endif %}
 
 <h2 id="films">Films on story pages</h2>
 {% if film_arts %}

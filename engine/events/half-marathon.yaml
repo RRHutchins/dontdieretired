@@ -1,0 +1,17 @@
+id: half-marathon
+name: A first half marathon
+kinds: [endurance, running]
+activity: run-great-north-run
+demands: "13.1 miles (21.1 km) of running, or running and walking."
+sources: [greatrun-half-plan, greatrun-how-to-half]
+key_session:
+  name: long run
+  unit: minutes
+  start: {starter: 30, active: 40, advanced: 50}
+  peak: 80
+  note: at an easy pace; it is about time, not distance, and walking breaks are fine
+second_session: {name: easy run, minutes: 30}
+specific: null
+pack_from_fraction: null
+weeks: {default: 12, min: 10}
+prerequisite: "If you cannot yet run for 30 minutes without stopping, do the NHS Couch to 5K first: it ends with 30-minute runs three times a week."
