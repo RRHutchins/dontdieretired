@@ -69,7 +69,8 @@ def validate(src, gd, ev):
         for k in ("topic", "applies", "use", "text", "for"):
             if not g.get(k): errs.append(f"guidance {g['id']}: missing {k}")
         if set(g.get("applies", [])) - KINDS: errs.append(f"guidance {g['id']}: unknown kind in applies")
-        if g.get("use") not in ("rule", "advice", "safety"): errs.append(f"guidance {g['id']}: use must be rule, advice or safety")
+        if g.get("use") not in ("rule", "advice", "safety", "why"): errs.append(f"guidance {g['id']}: use must be rule, advice, safety or why")
+        if g.get("use") == "why" and not (g.get("role") and g.get("short")): errs.append(f"guidance {g['id']}: a why statement needs role and short")
         for i in (g.get("for") or []) + (g.get("against") or []):
             if i not in src: errs.append(f"guidance {g['id']}: unknown source {i}")
         if g.get("against") and not g.get("note"): errs.append(f"guidance {g['id']}: say in `note` how the disagreement is resolved")
@@ -182,9 +183,9 @@ def plan(event, weeks=None, level="active"):
     L += [f"- {g['text']} {cite(g['id'])}" for g in use if g["topic"] == "before you start"]
     if warn: L += ["", f"> **This plan is too short for your starting point.** {warn}"]
     L += ["", "## How the plan works", ""]
-    L += [f"- {g['text']} {cite(g['id'])}" for g in use if g["use"] == "rule" and g["topic"] not in ("before you start",)]
+    L += [f"- {g['text']} {cite(g['id'])}" for g in use if g["use"] == "rule" and g["topic"] not in ("before you start", "why")]
     L += ["", "## Week by week", "",
-          "Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine below) on Wednesdays and Sundays. "
+          "Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine below) on Wednesdays and Sundays. Why each part is there, and what changes each week, follows the table. "
           f"The Saturday {ks['name']} is the key session: {ks.get('note', '')}.", "",
           f"| Week | Tue | Thu | Sat: {ks['name']} | Notes |", "|---|---|---|---|---|"]
     build = weeks - taper
@@ -202,6 +203,64 @@ def plan(event, weeks=None, level="active"):
             sat = fmt(v, unit)
         L.append(f"| {w} | {tue} | {thu} | {sat} | {'; '.join(notes)} |")
     if sp: L += ["", f"*{sp['name'].capitalize()}*: {sp['text']}. {cite('specific-training') if 'specific-training' in has else ''}"]
+    # ---- why each part is there, then week by week (Robin, 27 Oct 2026) ----
+    why = {g["role"]: g for g in use if g["use"] == "why"}
+    def W(role, full=False):
+        g = why.get(role)
+        return (g["text"] if full else g["short"]) + " " + cite(g["id"]) if g else ""
+    sname = e['second_session']['name']; easy_name = sname if sname.startswith("easy") else "easy " + sname
+    names = {"long": f"The Saturday {ks['name']}", "easy": f"The {easy_name}s", "specific": (sp['name'].capitalize() if sp else ""),
+             "strength": "Strength and balance", "rest": "Rest days", "cutback": "Easier weeks", "pack": "Carrying your pack", "taper": "The taper"}
+    L += ["", "## What each part of the plan is for", ""]
+    for r in ("long", "easy", "specific", "strength", "rest", "cutback", "pack", "taper"):
+        if r in why and (r != "specific" or sp) and (r != "pack" or pack_from):
+            L.append(f"- **{names[r]}.** {W(r, True)}")
+    L += ["", "## Each week, and why", ""]
+    peak_w = max((w for w, v in enumerate(vals, 1) if v is not None), key=lambda w: vals[w - 1])
+    prev = None
+    for w, v in enumerate(vals, 1):
+        cut = "cutback-weeks" in has and w <= build and w % 3 == 0
+        if v is None:
+            L += [f"**Week {w}: the challenge.**", "",
+                  f"- Two short, easy outings early in the week and plenty of rest: {W('taper')}",
+                  "- No strength sessions this week; arrive rested.", ""]
+            break
+        if w > build:
+            head, lead = "taper", f"The {ks['name']} drops to {fmt(v, unit)}, but you keep every session"
+        elif cut:
+            head, lead = "an easier week", f"The {ks['name']} eases back to {fmt(v, unit)}"
+        elif w == peak_w:
+            head, lead = "your biggest week", f"Your longest {ks['name']} of the plan, {fmt(v, unit)}, as close to the real day as training gets"
+        elif w == 1:
+            head, lead = "setting the pattern", f"Five sessions and two rest days. The {ks['name']} starts at {fmt(v, unit)}"
+        else:
+            head, lead = "building", f"The {ks['name']} grows to {fmt(v, unit)}" + (f", up from {fmt(prev, unit)} in your last full week" if prev else "")
+        B = [f"**Week {w}: {head}.**", "", f"- {lead}."]
+        if w > build:
+            B.append(f"- Why less now: {W('taper')}")
+        elif cut:
+            B.append(f"- Why ease off: {W('cutback')}")
+        else:
+            if w == 1 or w == peak_w or w % 3 == 1 or "no-big-jumps" not in has:
+                B.append(f"- Why the long session: {W('long')}")
+            else:
+                B.append(f"- Why only this much more: big jumps from one week to the next are linked with overuse injuries. {cite('no-big-jumps')}")
+        if sp and w == sp.get("from_week", 1) and w <= build:
+            B.append(f"- New this week, {sp['name']} on Thursday: {W('specific')}")
+        elif sp and sp.get("from_week", 1) < w <= build and w % 4 == 0:
+            B.append(f"- {sp['name'].capitalize()} again on Thursday: {W('specific')}")
+        if pack_from and w == pack_from:
+            B.append(f"- New this week, your loaded pack on the long session: {W('pack')}")
+        if w == 1 or w % 3 == 1 or w == build + 1:
+            B.append(f"- Tuesday's {easy_name}: {W('easy')}")
+        if w > build:
+            B.append("- Keep both strength sessions but make them lighter: same sessions, less of each.")
+        elif w in (1, 2) or w % 3 == 2:
+            B.append(f"- Strength and balance, Wednesday and Sunday: {W('strength')}")
+        if w in (1, 3) or w % 3 == 0 or w == build + 1:
+            B.append(f"- Rest on Monday and Friday: {W('rest')}")
+        L += B + [""]
+        if not cut and w <= build: prev = v
     L += ["", "## Looking after your body", ""]
     L += [f"- {g['text']} {cite(g['id'])}" for g in use if g["topic"] in ("body maintenance", "recovery") and g["use"] != "rule"]
     L += ["", "**Strength and balance routine (twice a week).** Squats, lunges, a core exercise such as a plank, and a balance exercise such as standing on one leg. "

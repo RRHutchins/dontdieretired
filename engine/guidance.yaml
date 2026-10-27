@@ -243,3 +243,69 @@ guidance:
     use: safety
     text: Stop if something does not feel right, and get it checked rather than training through it.
     for: [nhs-c25k, ea-pavey-marathon]
+
+  # ---------- why each part of a plan is there (use: why; `role` ties it to a session; `short` is the one-line weekly version) ----------
+  - id: why-long
+    topic: why
+    role: long
+    applies: [endurance]
+    use: why
+    text: The long session prepares you for the length of the day itself. Its pace does not matter; covering the time or distance does, so keep it at a conversational effort.
+    short: it gets you used to the hours you will spend out on the day; pace does not matter
+    for: [higdon-novice1, bmc-hill-fit, ydnpa-three-peaks]
+  - id: why-easy
+    topic: why
+    role: easy
+    applies: [endurance]
+    use: why
+    text: Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort.
+    short: it adds fitness while leaving you fresh for the long session
+    for: [ea-training-pace, ijspp-2010-intensity]
+  - id: why-specific
+    topic: why
+    role: specific
+    applies: [hill]
+    use: why
+    text: Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control.
+    short: it practises the climbing and the controlled descents the challenge is made of
+    for: [bmc-hill-fit, ydnpa-three-peaks]
+  - id: why-strength
+    topic: why
+    role: strength
+    applies: [all]
+    use: why
+    text: Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground.
+    short: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground
+    for: [lauersen-2014, cmo-2019, bmc-hill-fit]
+  - id: why-rest
+    topic: why
+    role: rest
+    applies: [all]
+    use: why
+    text: Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run.
+    short: your body recovers and adapts on the days you rest, not the days you train
+    for: [nhs-c25k, rc-down-weeks]
+  - id: why-cutback
+    topic: why
+    role: cutback
+    applies: [endurance]
+    use: why
+    text: An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again.
+    short: it lets the last two weeks' tiredness clear so your fitness can catch up
+    for: [rc-down-weeks, higdon-novice1]
+  - id: why-pack
+    topic: why
+    role: pack
+    applies: [walking, multiday]
+    use: why
+    text: Training with your loaded pack matches the conditions of the day and shows you what you really need to carry.
+    short: it matches the conditions of the day and shows you what you really need to carry
+    for: [wanderlust-trek-prep, bmc-hill-fit]
+  - id: why-taper
+    topic: why
+    role: taper
+    applies: [endurance]
+    use: why
+    text: Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance.
+    short: your muscles recover and your body refuels, so you arrive fresh
+    for: [bosquet-2007, ea-pavey-marathon]
