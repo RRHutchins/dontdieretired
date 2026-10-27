@@ -17,6 +17,7 @@ Each photo is resized for the web and not otherwise changed.
 | cincinnati-tinker-team-repairs | File:Repair Cafe Katze Cat.jpg | WeltveraenderereV | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Repair_Cafe_Katze_Cat.jpg | 2026-10-24 |
 | clipper-race-atlantic-oban | File:Oban harbour at dawn - geograph.org.uk - 5229949.jpg | Andy Campbell | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Oban_harbour_at_dawn_-_geograph.org.uk_-_5229949.jpg | 2026-10-24 |
 | craig-johnston-record-ride-across-australia | File:Eyre Highway, Nullarbor, SA, 2017 (02).jpg | Bahnfrend | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Eyre_Highway,_Nullarbor,_SA,_2017_(02).jpg | 2026-10-07 |
+| dave-bell-peru-to-kenya-row | File:Seaside in Kilifi, Kenya.jpg | Arankaka | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Seaside_in_Kilifi,_Kenya.jpg | 2026-10-27 |
 | david-smith-hat-einstein-tile | File:Playing with hat tiles (wheels).jpg | Aschroet | CC0 | https://commons.wikimedia.org/wiki/File:Playing_with_hat_tiles_(wheels).jpg | 2026-10-14 |
 | frank-worsley-james-caird | File:James Caird bow.jpg | Rumping | Public domain | https://commons.wikimedia.org/wiki/File:James_Caird_bow.jpg | 2026-10-23 |
 | gary-mckee-jogle-pub-run | File:Land's End Signpost - geograph.org.uk - 4499713.jpg | Richard Cooke | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Land%27s_End_Signpost_-_geograph.org.uk_-_4499713.jpg | 2026-10-24 |
@@ -40,6 +41,7 @@ Each photo is resized for the web and not otherwise changed.
 | peter-kaestner-10000-birds | File:Arachnothera flammifera Keulemans (cropped).jpg | John Gerrard Keulemans | Public domain | https://commons.wikimedia.org/wiki/File:Arachnothera_flammifera_Keulemans_(cropped).jpg | 2026-10-07 |
 | ravi-sood-powerlifting-record-82 | File:2025 Skelton Gym Powerlifting Competition (9326219).jpg | U.S. Air Force photo by Senior Airman Haiden Morris | Public domain | https://commons.wikimedia.org/wiki/File:2025_Skelton_Gym_Powerlifting_Competition_(9326219).jpg | 2026-10-07 |
 | ron-wallace-heaviest-pumpkin | File:3PumpkinsonPallets F+S.jpg | David.politzer | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:3PumpkinsonPallets_F%2BS.jpg | 2026-10-24 |
+| sola-alegbe-swimming-teacher | File:Swimming pool with lane ropes in place.jpg | Xander from Yellowknife, NT, Canada | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Swimming_pool_with_lane_ropes_in_place.jpg | 2026-10-27 |
 | stargazing-for-beginners | File:Searching the night sky.jpg | Annatsach | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Searching_the_night_sky.jpg | 2026-10-14 |
 | trevor-barry-saturn-decagon | File:Top view of the rings of Saturn by Cassini - October 10, 2013.jpg | NASA / JPL-Caltech / SSI / Cornell | Public domain | https://commons.wikimedia.org/wiki/File:Top_view_of_the_rings_of_Saturn_by_Cassini_-_October_10,_2013.jpg | 2026-10-14 |
 | virginia-ordaz-delta-college-degree | File:Delta College Campus.jpg | BronzeAnubis | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Delta_College_Campus.jpg | 2026-10-24 |
