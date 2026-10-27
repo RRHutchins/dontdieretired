@@ -326,3 +326,345 @@ rounds:
         level: 3
         source: {title: "What is a yule log, the Christmas dessert?", publisher: "National Geographic", url: "https://www.nationalgeographic.com/travel/article/what-is-yule-log-christmas-dessert"}
         checked: 2026-10-26
+
+  - id: dinosaurs
+    title: Dinosaurs
+    kind: junior
+    editions: [uk, us]
+    intro: "A round for the youngest players, about the giants that ruled the Earth. Grown-ups, no shouting out!"
+    questions:
+      - q: "The word dinosaur comes from Greek. Does it mean terrible lizard, giant bird or old dragon?"
+        a: "Terrible lizard"
+        note: "The man who coined the name, Richard Owen, also called them 'fearfully great', because they were so big."
+        level: 1
+        source: {title: "Dinosauria: How the 'terrible lizards' got their name", publisher: "Natural History Museum", url: "https://www.nhm.ac.uk/discover/how-dinosaurs-got-their-name.html"}
+        checked: 2026-10-27
+      - q: "Triceratops means three-horned face. Did it eat plants or meat?"
+        a: "Plants"
+        note: "It had a beak for plucking low plants, and jaws strong enough to cut through small trees."
+        level: 1
+        source: {title: "Triceratops", publisher: "Redpath Museum, McGill University", url: "https://www.mcgill.ca/redpath/education/resources/dinosaurs/triceratops"}
+        checked: 2026-10-27
+      - q: "Tyrannosaurus rex had tiny arms. How many fingers, or claws, were on each hand: two, three or five?"
+        a: "Two"
+        note: "Scientists once thought it had three. A skeleton found in 1988, with its arms complete, showed it had only two."
+        level: 1
+        source: {title: "How T. rex Lost Its Third Claw", publisher: "American Museum of Natural History", url: "https://www.amnh.org/explore/news-blogs/t-rex-third-claw"}
+        checked: 2026-10-27
+      - q: "Most scientists say one group of dinosaurs is still alive today. You may see one out of the window. What are they?"
+        a: "Birds"
+        level: 1
+        source: {title: "Dinosaurs Among Us Opens at the American Museum of Natural History", publisher: "American Museum of Natural History", url: "https://www.amnh.org/about/press-center/dinosaurs-among-us-opens-at-the-american-museum-of-natural-history"}
+        checked: 2026-10-27
+      - q: "What crashed into the Earth 66 million years ago and ended the age of the dinosaurs: an asteroid, the Moon or a comet made of ice?"
+        a: "An asteroid"
+        note: "It ended the reign of all the dinosaurs except the birds."
+        level: 1
+        source: {title: "The Last American Dinosaurs: Discovering a Lost World", publisher: "Smithsonian National Museum of Natural History", url: "https://naturalhistory.si.edu/exhibits/last-american-dinosaurs-discovering-lost-world"}
+        checked: 2026-10-27
+      - q: "Iguanodon's spiky thumb was first put in the wrong place. Where: on its nose, its tail or its back?"
+        a: "On its nose"
+        note: "They thought the spike was a horn. Only in the 1870s was it shown to be a thumb."
+        level: 1
+        source: {title: "Iguanodon: the teeth that led to a dinosaur discovery", publisher: "Natural History Museum", url: "https://www.nhm.ac.uk/discover/the-discovery-of-iguanodon.html"}
+        checked: 2026-10-27
+      - q: "As a girl, Mary Anning dug a skeleton out of the beach at Lyme Regis. Was it a dinosaur, a sea reptile or a giant fish?"
+        a: "A sea reptile"
+        accept: "An ichthyosaur"
+        note: "Her brother spotted the skull in 1811, when she was 12. It was an ichthyosaur, 'neither fish nor lizard, but a marine reptile', the first ever studied by scientists."
+        level: 1
+        source: {title: "Mary Anning: The unsung hero of fossil discovery", publisher: "Natural History Museum", url: "https://www.nhm.ac.uk/discover/mary-anning-unsung-hero.html"}
+        checked: 2026-10-27
+      - q: "Iguanodon was named because its teeth looked like the teeth of which lizard?"
+        a: "An iguana"
+        note: "Iguanodon means 'iguana tooth'."
+        level: 2
+        source: {title: "Iguanodon: the teeth that led to a dinosaur discovery", publisher: "Natural History Museum", url: "https://www.nhm.ac.uk/discover/the-discovery-of-iguanodon.html"}
+        checked: 2026-10-27
+      - q: "Which British scientist gave the dinosaurs their name, in a report published in 1842?"
+        a: "Richard Owen"
+        accept: "Sir Richard Owen"
+        level: 2
+        source: {title: "Dinosauria: How the 'terrible lizards' got their name", publisher: "Natural History Museum", url: "https://www.nhm.ac.uk/discover/how-dinosaurs-got-their-name.html"}
+        checked: 2026-10-27
+      - q: "Which dinosaur, described in 1824, is thought to be the first ever named by a scientist: Megalosaurus, Stegosaurus or Diplodocus?"
+        a: "Megalosaurus"
+        level: 2
+        source: {title: "Dinosauria: How the 'terrible lizards' got their name", publisher: "Natural History Museum", url: "https://www.nhm.ac.uk/discover/how-dinosaurs-got-their-name.html"}
+        checked: 2026-10-27
+
+  - id: toys-and-games
+    title: Toys and games
+    kind: junior
+    editions: [uk, us]
+    intro: "A round for the youngest players, about the toys under the tree and where they came from."
+    questions:
+      - q: "The teddy bear is named after a president who refused to shoot a bear tied to a tree. Was he George Washington, Theodore Roosevelt or Abraham Lincoln?"
+        a: "Theodore Roosevelt"
+        accept: "Teddy Roosevelt"
+        note: "It happened on a hunting trip in Mississippi in 1902. A New York sweet-shop couple, Rose and Morris Michtom, made the first teddy after seeing a cartoon of it."
+        level: 1
+        source: {title: "Discover How President Theodore Roosevelt Inspired the World's First Teddy Bear, Which Went on Sale on This Day in 1903", publisher: "Smithsonian Magazine", url: "https://www.smithsonianmag.com/smart-news/discover-how-president-theodore-roosevelt-inspired-the-worlds-first-teddy-bear-which-went-on-sale-on-this-day-in-1903-180986052/"}
+        checked: 2026-10-27
+      - q: "LEGO began in 1932 with a carpenter who made wooden toys. In which country: Denmark, Germany or Japan?"
+        a: "Denmark"
+        level: 1
+        source: {title: "A 90 year history of the LEGO name", publisher: "The LEGO Group", url: "https://www.lego.com/de-lu/aboutus/news/2026/february/90-year-history-of-the-lego-name"}
+        checked: 2026-10-27
+      - q: "Before it was a toy, Play-Doh was sold to clean something in people's houses. Was it windows, wallpaper or shoes?"
+        a: "Wallpaper"
+        note: "Coal fires left soot on the walls. When homes switched to oil and gas, a teacher, Kay Zufall, suggested it would make a good toy."
+        level: 1
+        source: {title: "The History of Play-Doh: Good, Clean Fun!", publisher: "The Strong National Museum of Play", url: "https://www.museumofplay.org/blog/the-history-of-play-doh-good-clean-fun/"}
+        checked: 2026-10-27
+      - q: "The Slinky was invented when an engineer knocked something off his desk and watched it walk across the floor. What was it?"
+        a: "A spring"
+        note: "Richard James was making springs for ships' instruments. His wife Betty gave the toy its name."
+        level: 1
+        source: {title: "Accidental Toy Inventions", publisher: "The Henry Ford", url: "https://www.thehenryford.org/collections/explore/articles/accidental-toy-inventions"}
+        checked: 2026-10-27
+      - q: "The Super Soaker water gun was invented by a scientist who worked for which space agency?"
+        a: "NASA"
+        note: "Lonnie Johnson was testing an idea at home, fixed a nozzle to his bathroom tap and saw the jet of water."
+        level: 1
+        source: {title: "Accidental Toy Inventions", publisher: "The Henry Ford", url: "https://www.thehenryford.org/collections/explore/articles/accidental-toy-inventions"}
+        checked: 2026-10-27
+      - q: "The Rubik's Cube was invented in Budapest. Which country is that: Hungary, Russia or Japan?"
+        a: "Hungary"
+        note: "Ernő Rubik built geometric models as a hobby. A cube can be mixed up in about 43 quintillion ways."
+        level: 1
+        source: {title: "Erno Rubik", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/biography/Erno-Rubik"}
+        checked: 2026-10-27
+      - q: "Snakes and ladders is thought to come from an old game from which country: India, China or Egypt?"
+        q_us: "Snakes and ladders (Chutes and Ladders) is thought to come from an old game from which country: India, China or Egypt?"
+        a: "India"
+        note: "It taught a lesson: ladders for good qualities like patience and courage, snakes for bad ones like greed and temper."
+        level: 1
+        source: {title: "Snakes and Ladders", publisher: "Victoria and Albert Museum", url: "https://collections.vam.ac.uk/item/O190496/"}
+        checked: 2026-10-27
+      - q: "LEGO's name is made from two Danish words, leg godt. What do they mean?"
+        a: "Play well"
+        level: 2
+        source: {title: "A 90 year history of the LEGO name", publisher: "The LEGO Group", url: "https://www.lego.com/de-lu/aboutus/news/2026/february/90-year-history-of-the-lego-name"}
+        checked: 2026-10-27
+      - q: "The first jigsaw puzzles, made in the 1760s, were pictures cut up to help children learn. Pictures of what?"
+        a: "Maps"
+        note: "The invention is usually credited to John Spilsbury."
+        level: 2
+        source: {title: "Maps for learning and play", publisher: "National Library of Wales", url: "https://www.library.wales/news/article/maps-for-learning-and-play"}
+        checked: 2026-10-27
+      - q: "Silly Putty was invented by a chemist who was trying to make a replacement for which material?"
+        a: "Rubber"
+        note: "It bounced and stretched, but it was no good as rubber. It became a toy instead."
+        level: 2
+        source: {title: "Accidental Toy Inventions", publisher: "The Henry Ford", url: "https://www.thehenryford.org/collections/explore/articles/accidental-toy-inventions"}
+        checked: 2026-10-27
+
+  - id: snow-ice-and-weather
+    title: Snow, ice and weather
+    editions: [uk, us]
+    intro: "Whatever it is doing outside the window, here is a round about it."
+    questions:
+      - q: "Look closely at a snow crystal. How many sides or arms does it have: four, six or eight?"
+        a: "Six"
+        level: 1
+        source: {title: "Wilson A. Bentley: Pioneering photographer of snowflakes", publisher: "Smithsonian Institution Archives", url: "https://torch.si.edu/2015/02/wilson-a-bentley-pioneering-photographer-of-snowflakes"}
+        checked: 2026-10-27
+      - q: "Which is colder, the North Pole or the South Pole?"
+        a: "The South Pole"
+        note: "It sits on an ice sheet more than 9,000 feet (2,700 metres) high, on top of a continent. The North Pole is floating sea ice, and the ocean beneath keeps it warmer."
+        level: 1
+        source: {title: "Why is the South Pole colder than the North Pole?", publisher: "Scientific American", url: "https://www.scientificamerican.com/article/why-is-the-south-pole-col/"}
+        checked: 2026-10-27
+      - q: "What do we call the balls of ice that fall from thunderstorms: hail, sleet or frost?"
+        a: "Hail"
+        note: "The largest found in the United States, at Vivian, South Dakota, in 2010, was 8 inches (20 cm) across."
+        level: 1
+        source: {title: "Severe Weather 101: Hail Basics", publisher: "NOAA National Severe Storms Laboratory", url: "https://www.nssl.noaa.gov/education/svrwx101/hail/"}
+        checked: 2026-10-27
+      - q: "For the Met Office to declare a white Christmas in the UK, how much snow has to be seen falling on Christmas Day?"
+        a: "A single snowflake"
+        accept: "One snowflake"
+        note: "It must be seen by an official observer or a Met Office weather station."
+        level: 2
+        source: {title: "White Christmas and UK Christmas weather records", publisher: "Met Office", url: "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/snow/white-christmas"}
+        checked: 2026-10-27
+      - q: "The Beaufort scale, devised by a Royal Navy officer in 1805, measures what?"
+        a: "Wind speed"
+        accept: "The wind; wind force"
+        note: "It runs from 0, calm, to 12, hurricane."
+        level: 2
+        source: {title: "The Beaufort Wind Scale", publisher: "Royal Meteorological Society", url: "https://www.rmets.org/metmatters/beaufort-scale"}
+        checked: 2026-10-27
+      - q: "Roughly how much of an iceberg is hidden below the water: a tenth, half, or nine-tenths?"
+        a: "Nine-tenths"
+        accept: "90 per cent"
+        level: 2
+        source: {title: "Ninety percent of an iceberg is below the waterline", publisher: "US Geological Survey", url: "https://usgs.gov/media/images/ninety-percent-iceberg-below-waterline"}
+        checked: 2026-10-27
+      - q: "Lightning can heat the air around it to about five times hotter than the surface of what?"
+        a: "The Sun"
+        note: "The air expands so fast that it makes the sound we hear as thunder."
+        level: 2
+        source: {title: "Understanding Lightning: Thunder", publisher: "US National Weather Service", url: "https://www.weather.gov/safety/lightning-science-thunder"}
+        checked: 2026-10-27
+      - q: "Black ice on the roads is not really black. Why is it called that?"
+        a: "It is clear, so you see the dark road through it"
+        accept: "It is see-through; it looks like the road"
+        note: "That is why drivers find it so hard to spot."
+        level: 2
+        source: {title: "What is frost and ice?", publisher: "Met Office", url: "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/frost-and-ice"}
+        checked: 2026-10-27
+      - q: "Which Vermont farmer, nicknamed 'Snowflake', photographed more than 5,000 snow crystals from 1885 onwards?"
+        a: "Wilson Bentley"
+        accept: "Bentley"
+        note: "He believed no two snowflakes were alike."
+        level: 3
+        source: {title: "Wilson A. Bentley: Pioneering photographer of snowflakes", publisher: "Smithsonian Institution Archives", url: "https://torch.si.edu/2015/02/wilson-a-bentley-pioneering-photographer-of-snowflakes"}
+        checked: 2026-10-27
+      - q: "The lowest air temperature ever recorded at the Earth's surface, minus 89.2°C in 1983, was measured on which continent?"
+        q_us: "The lowest air temperature ever recorded at the Earth's surface, about minus 128.6°F in 1983, was measured on which continent?"
+        a: "Antarctica"
+        note: "At Vostok Station, on 21 July 1983."
+        level: 3
+        source: {title: "Record low surface air temperature at Vostok Station, Antarctica", publisher: "British Antarctic Survey", url: "https://www.bas.ac.uk/data/our-data/publication/record-low-surface-air-temperature-at-vostok-station-antarctica/"}
+        checked: 2026-10-27
+
+  - id: inventions
+    title: Inventions
+    editions: [uk, us]
+    intro: "Happy accidents, bright ideas and the people who had them."
+    questions:
+      - q: "In 1903 the first powered aeroplane flight lasted just 12 seconds. Which brothers built the plane?"
+        q_us: "In 1903 the first powered airplane flight lasted just 12 seconds. Which brothers built the plane?"
+        a: "The Wright brothers"
+        accept: "Orville and Wilbur Wright"
+        note: "Orville flew 120 feet (about 37 metres) at Kitty Hawk, North Carolina. Wilbur's best flight that day lasted 59 seconds."
+        level: 1
+        source: {title: "How high did the Wright Brothers fly?", publisher: "Smithsonian Institution Archives", url: "https://torch.si.edu/2018/09/how-high-did-the-wright-brothers-fly"}
+        checked: 2026-10-27
+      - q: "An engineer working on radar noticed that the chocolate bar in his pocket had melted. Which kitchen machine did that lead to?"
+        a: "The microwave oven"
+        note: "Percy Spencer's next test was a bag of popcorn kernels, which popped."
+        level: 1
+        source: {title: "Percy Spencer", publisher: "Lemelson-MIT Program, Massachusetts Institute of Technology", url: "https://lemelson.mit.edu/resources/percy-spencer"}
+        checked: 2026-10-27
+      - q: "At just 15, a French boy who had lost his sight invented a way of reading by touching raised dots. What is it called?"
+        a: "Braille"
+        note: "Louis Braille's letters are each made from a cell of six dots."
+        level: 1
+        source: {title: "Overview - Louis Braille: His Legacy and Influence", publisher: "Library of Congress", url: "https://www.loc.gov/exhibits/louis-braille/overview.html"}
+        checked: 2026-10-27
+      - q: "After a walk in 1941, a Swiss engineer found burrs stuck all over his dog's fur. Which fastener did they inspire?"
+        a: "Velcro"
+        accept: "Hook-and-loop fastener"
+        note: "Under a microscope, George de Mestral saw each burr was covered in tiny hooks. The name comes from the French velours (velvet) and crochet (hook)."
+        level: 2
+        source: {title: "How Did a Walk in the Woods Lead to the Invention of VELCRO Fasteners?", publisher: "National Inventors Hall of Fame", url: "https://www.invent.org/blog/inventors/walk-in-the-woods-velcro"}
+        checked: 2026-10-27
+      - q: "Which British scientist invented the World Wide Web in 1989, while working at CERN?"
+        a: "Tim Berners-Lee"
+        note: "It was built so that scientists at universities around the world could share information."
+        level: 2
+        source: {title: "The birth of the Web", publisher: "CERN", url: "https://home.cern/science/computing/the-birth-of-the-web/"}
+        checked: 2026-10-27
+      - q: "In 1877 Thomas Edison made a machine that recorded sound on tinfoil and played it back. What was it called?"
+        a: "The phonograph"
+        note: "The foil tore after a few plays, so those first recordings cannot be heard today."
+        level: 2
+        source: {title: "The Phonograph", publisher: "Thomas Edison National Historical Park (US National Park Service)", url: "https://www.nps.gov/edis/learn/kidsyouth/the-phonograph.htm"}
+        checked: 2026-10-27
+      - q: "In 1816 a French doctor rolled some paper into a tube to listen to a patient's heart. What had he invented?"
+        a: "The stethoscope"
+        note: "René Laennec did it to avoid putting his ear to her chest. He named it from stethos, the Greek for chest."
+        level: 2
+        source: {title: "Laennec's stethoscope", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/objects/co90986/laennecs-stethoscope"}
+        checked: 2026-10-27
+      - q: "In 1892 James Dewar made a flask to keep very cold gases cold. By what brand name do we often know it now?"
+        a: "Thermos"
+        accept: "Vacuum flask"
+        note: "Dewar never patented it. A company set up by two German glassblowers did, in 1904."
+        level: 2
+        source: {title: "James Dewar's vacuum flask", publisher: "Royal Institution", url: "https://www.rigb.org/explore-science/explore/collection/james-dewars-vacuum-flask"}
+        checked: 2026-10-27
+      - q: "In 1886 Josephine Cochrane, tired of her best china being chipped, patented a machine to do which household job?"
+        a: "Washing the dishes"
+        accept: "Dishwasher"
+        note: "Earlier hand-cranked machines existed. Hers was the first to clean with water pressure instead of scrubbers."
+        level: 3
+        source: {title: "This Socialite Hated Washing Dishes So Much That She Invented the Automated Dishwasher", publisher: "IEEE Spectrum", url: "https://spectrum.ieee.org/who-invented-the-dishwasher"}
+        checked: 2026-10-27
+      - q: "Ruth Wakefield's 1938 recipe, from the Toll House Inn in Massachusetts, is thought to be the first for which biscuit?"
+        q_us: "Ruth Wakefield's 1938 recipe, from the Toll House Inn in Massachusetts, is thought to be the first for which cookie?"
+        a: "The chocolate chip cookie"
+        note: "Stories say it happened by accident. She later said chopping up the chocolate bar was intentional."
+        level: 3
+        source: {title: "Ruth Wakefield and Her Chocolate Crunch Cookie", publisher: "Library of Congress (Inside Adams blog)", url: "https://blogs.loc.gov/inside_adams/2025/12/ruthwakefield/"}
+        checked: 2026-10-27
+
+  - id: famous-firsts
+    title: Famous firsts
+    editions: [uk, us]
+    intro: "Somebody had to be first. Who, what and where?"
+    questions:
+      - q: "The first animals ever sent into space, in 1947, came home safely. Were they fruit flies, mice or monkeys?"
+        a: "Fruit flies"
+        level: 1
+        source: {title: "What was the first animal sent into space?", publisher: "Royal Museums Greenwich", url: "https://www.rmg.co.uk/stories/space-astronomy/what-was-first-animal-space"}
+        checked: 2026-10-27
+      - q: "In 1968 the first animals to travel round the Moon and come home safely were two of which animal: rabbits, tortoises or cats?"
+        a: "Tortoises"
+        note: "Two Russian tortoises, aboard the Soviet spacecraft Zond 5."
+        level: 1
+        source: {title: "What was the first animal sent into space?", publisher: "Royal Museums Greenwich", url: "https://www.rmg.co.uk/stories/space-astronomy/what-was-first-animal-space"}
+        checked: 2026-10-27
+      - q: "The first modern Olympic Games were held in 1896 in the country where the ancient Olympics began. Which country?"
+        a: "Greece"
+        accept: "Athens"
+        note: "The marathon was won by a Greek runner, Spyridon Louis, by more than seven minutes."
+        level: 1
+        source: {title: "Athens 1896 - 125 years of shared Olympic values", publisher: "International Olympic Committee (olympics.com)", url: "https://olympics.com/ioc/news/athens-1896-125-years-of-shared-olympic-values"}
+        checked: 2026-10-27
+      - q: "In 1961, who became the first person to travel into space?"
+        a: "Yuri Gagarin"
+        note: "His flight in Vostok 1 lasted 108 minutes."
+        level: 2
+        source: {title: "April 1961 - First Human Entered Space", publisher: "NASA", url: "https://www.nasa.gov/image-article/april-1961-first-human-entered-space/"}
+        checked: 2026-10-27
+      - q: "Who was the first woman to win a Nobel Prize, in 1903?"
+        a: "Marie Curie"
+        accept: "Marie Skłodowska-Curie"
+        note: "She won a second, for chemistry, in 1911. With her husband Pierre she discovered polonium and radium."
+        level: 2
+        source: {title: "Marie Skłodowska-Curie (1867-1934)", publisher: "London School of Hygiene & Tropical Medicine", url: "https://www.lshtm.ac.uk/aboutus/introducing/history/frieze/marie-sklodowska-curie"}
+        checked: 2026-10-27
+      - q: "The world's first postage stamp, the Penny Black of 1840, showed whose head?"
+        a: "Queen Victoria"
+        note: "The portrait was based on a sketch of her at the age of 15."
+        level: 2
+        source: {title: "The first ever stamp: the Penny Black", publisher: "The Postal Museum", url: "https://www.postalmuseum.org/?p=24603"}
+        checked: 2026-10-27
+      - q: "In 1932, who became the first woman to fly solo across the Atlantic?"
+        a: "Amelia Earhart"
+        note: "She was aiming for Paris but came down in Northern Ireland."
+        level: 2
+        source: {title: "Amelia Earhart", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/biography/Amelia-Earhart"}
+        checked: 2026-10-27
+      - q: "In 1954, on a running track in Oxford, which medical student became the first person to run a mile in under four minutes?"
+        a: "Roger Bannister"
+        note: "He went on to become a neurologist."
+        level: 2
+        source: {title: "Roger Bannister", publisher: "University of Oxford", url: "https://www.ox.ac.uk/node/16573"}
+        checked: 2026-10-27
+      - q: "The first crossword, printed in a New York newspaper in December 1913, was not square. What shape was it?"
+        a: "A diamond"
+        note: "It was called a Word-Cross and is credited to Arthur Wynne."
+        level: 3
+        source: {title: "Free Puzzles: Word Cross, Crosswords, and Acrostics", publisher: "Library of Congress (Headlines & Heroes blog)", url: "https://blogs.loc.gov/headlinesandheroes/2021/11/free-puzzles-word-cross-crosswords-and-acrostics/"}
+        checked: 2026-10-27
+      - q: "In 1960, which country, then called Ceylon, gave the world its first woman prime minister?"
+        a: "Sri Lanka"
+        note: "Sirimavo Bandaranaike."
+        level: 3
+        source: {title: "Sirimavo Bandaranaike", publisher: "Encyclopaedia Britannica (100 Women Trailblazers)", url: "https://www.britannica.com/explore/100women/?p=673"}
+        checked: 2026-10-27
