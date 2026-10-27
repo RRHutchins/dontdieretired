@@ -278,6 +278,12 @@ Robin felt the daily stories leaned too heavily on what individuals have just ac
 - **Several at once.** If more than one Curious piece is published on the same day, give the later ones `social_date: YYYY-MM-DD` (one a day) so their social posts go out on separate days. It changes only the social pack's date, never the article's date.
 - **State at 23 Oct 2026.** Launched with three pieces: Percy Shaw and the cat's eye, Percy Spencer and the microwave oven, Frank Worsley and the James Caird (social posts held to 24, 25 and 26 Oct).
 
+### 6p. Links between pages (Robin, 27 Oct 2026: "if a person is in one page they are naturally led to others")
+- **Foot of every story and guide:** "Try it yourself" shows up to three activity cards: the activities tied to the piece (`story:`/`guide:`), then those sharing its subject (activity id words against the piece's tags, ignoring place names and loose words), then a stable pick from the same topic. "Keep reading" shows three pieces ranked by shared tags, then topic, newest first.
+- **Activity pages:** "Read next" (two stories or guides on the same subject, else the same topic) and "More like this" as coloured cards.
+- **Links in the text:** `content/link_terms.yaml` maps a term to a page. The build links its first mention in story bodies and in activity guide sections: at most four links a page, never in headings, quotes, captions or other links, never to the page itself. Capitalised terms match exactly; lower-case terms ignore case. When a run writes a new activity with a distinctive name (a mountain, trail, event, sport), add its term. Never add a word that can mean more than one thing.
+- Tags are what the matching runs on, so give every new piece specific subject tags (swimming, rowing, birds), not only general ones (women, history).
+
 ### 6k. Accessibility and search basics (set 7 Oct 2026: keep these when changing templates or styles)
 A scripted probe (axe-core plus keyboard and zoom tests) took the site from 388 automated failures to 4. The rules that got it there:
 - **The profile questions are a native `<dialog>`** opened with `DDR.openProfile()` (static/app.js). It never opens by itself: no timers, no scroll triggers. It has a 44px close button at the top; Escape closes it and focus returns to the opener.

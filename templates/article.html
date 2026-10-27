@@ -41,8 +41,12 @@
   </aside>
   {% endif %}
 
-  {% if a.challenges %}
-  <p class="fl-line"><strong>Add this to your list.</strong> In <a href="/list/">Get involved</a>: {% for c in a.challenges[:3] %}<a href="/list/{{ c.id }}/">{{ c.title }}</a>{{ ", " if not loop.last else "" }}{% endfor %}{% if a.challenges|length > 3 %}, and <a href="/list/?topic={{ a.category }}">more</a>{% endif %}.</p>
+  {% if things %}
+  <section class="next-acts" aria-labelledby="next-acts-h">
+    <h2 class="h3" id="next-acts-h">Try it yourself</h2>
+    <ul class="fl-grid fl-grid-mini">{% for c in things %}<li data-cat="{{ c.category }}"><p class="kicker">{{ categories[c.category].label }}</p><h3><a href="/list/{{ c.id }}/">{{ c.title }}</a></h3><p class="fl-go" aria-hidden="true">How to start and where to go <span>→</span></p></li>{% endfor %}</ul>
+    <p class="meta"><a href="/list/?topic={{ a.category }}">More things to do in {{ categories[a.category].label }} →</a></p>
+  </section>
   {% endif %}
 
   {% if a.local %}{{ near_you(a.local) }}{% endif %}

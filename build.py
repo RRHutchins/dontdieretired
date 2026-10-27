@@ -172,6 +172,70 @@ def story_video(fm, held):
     return None if v["id"] in held else {"id": v["id"], "title": str(v["title"]), "channel": str(v["channel"])}
 
 
+# ---- Links between pages (RUNBOOK §6p, Robin 27 Oct 2026: readers are led naturally from one page to the next) ----
+_NOLINK = {"a", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote", "figcaption", "code", "button", "summary", "th", "script", "style"}
+_GENERIC = {"women", "men", "family", "history", "adventure", "learning", "confidence", "endurance", "inventions", "discoveries",
+            "science", "second-chance", "solitude", "teaching", "study", "health", "fitness", "retirement", "life", "people"}
+_STOP = {"a", "an", "the", "and", "or", "of", "to", "in", "on", "for", "at", "your", "you", "with", "from", "by", "up", "into", "as",
+         "do", "go", "take", "try", "get", "make", "join", "learn", "first", "own", "one", "how", "out", "back", "it", "is"}
+
+
+def kw(*texts):
+    """Lower-case content words, crudely singular, from tags, ids and titles."""
+    out = set()
+    for t in texts:
+        for w in re.findall(r"[a-z]+", str(t).lower()):
+            if w in _STOP or len(w) < 3: continue
+            out.add(w[:-1] if w.endswith("s") and len(w) > 4 else w)
+    return out
+
+
+def load_terms():
+    f = CONTENT / "link_terms.yaml"
+    d = (yaml.safe_load(f.read_text(encoding="utf-8")) if f.exists() else None) or {}
+    return sorted(d.items(), key=lambda kv: -len(kv[0]))
+
+
+class Linker:
+    """Turn the first mention of a known term into a link. One Linker per page, so the four-link limit spans the page."""
+    def __init__(self, terms, self_url, limit=4):
+        self.terms, self.self_url, self.limit, self.used = terms, self_url, limit, set()
+
+    def _text(self, text):
+        hits = []
+        for term, url in self.terms:
+            if url == self.self_url or url in self.used: continue
+            flags = 0 if term[:1].isupper() else re.I
+            m = re.search(r"(?<![\w-])" + re.escape(term) + r"(?![\w-])", text, flags)
+            if m and not any(m.start() < e and s_ < m.end() for s_, e, _ in hits):
+                hits.append((m.start(), m.end(), url)); self.used.add(url)
+        hits = sorted(hits)
+        out, pos = [], 0
+        for st, en, url in hits:
+            if self.limit <= 0: self.used.discard(url); continue
+            out.append(text[pos:st]); out.append(f'<a href="{url}" class="auto-link">{text[st:en]}</a>'); pos = en; self.limit -= 1
+        out.append(text[pos:])
+        return "".join(out)
+
+    def html(self, html):
+        depth, out = 0, []
+        for part in re.split(r"(<[^>]+>)", html):
+            if part.startswith("<"):
+                m = re.match(r"</?\s*([a-zA-Z0-9]+)", part)
+                if m and m.group(1).lower() in _NOLINK and not part.endswith("/>"):
+                    depth += -1 if part.startswith("</") else 1
+                out.append(part)
+            elif depth > 0 or self.limit <= 0 or not part.strip():
+                out.append(part)
+            else:
+                out.append(self._text(part))
+        return "".join(out)
+
+    def plain(self, text):
+        from markupsafe import Markup, escape
+        return Markup(self.html(str(escape(text))))
+
+
 def place_video(body_html, v):
     """Put the player after the second paragraph, so the story opens in words and the film follows."""
     e = html.escape
@@ -493,6 +557,40 @@ def build(make_social=True):
     for a in arts:
         a["challenges"] = [c for c in _chs if a["slug"] in (c.get("guide"), c.get("story"))]
     env.globals.update(list_total=len(_chs))
+    terms = load_terms()
+    # match on subjects only: activity ids and story tags (people's names in slugs and titles caused false matches)
+    _ch_kw = {c["id"]: kw(c["id"].replace("-", " ")) for c in _chs}
+    _art_kw = {x["slug"]: kw(*[t.replace("-", " ") for t in x["tags"] if t not in _GENERIC]) for x in arts}
+    # place names and loose words (london, yorkshire, road) count for little: a shared place is not a shared interest
+    _ms = CONTENT / "map_shapes.json"
+    _weak = {"road", "london", "coast", "sea", "ocean", "water", "city", "town", "trip", "day", "week", "year", "great", "new", "national", "park", "england", "britain", "america", "usa", "world", "record", "life", "story", "site", "time", "long", "big", "old", "home"}
+    if _ms.exists():
+        for k in ("uk", "us"):
+            for ar in json.loads(_ms.read_text(encoding="utf-8"))[k]["areas"]: _weak |= kw(ar["name"])
+    _ch_kw = {k: v - _weak for k, v in _ch_kw.items()}
+    _art_kw = {k: v - _weak for k, v in _art_kw.items()}
+
+    def related_for(a):
+        """Three stories to read next: shared subjects first, then the same topic; newest wins a tie; never the same piece."""
+        mine = set(t for t in a["tags"] if t not in _GENERIC)
+        def score(b):
+            return 3 * len(mine & set(b["tags"])) + 2 * (b["category"] == a["category"]) + len(set(a["tags"]) & set(b["tags"]) & _GENERIC)
+        pool = [b for b in arts if b is not a and (b.get("kind") != "guide" or score(b) >= 3)]
+        ranked = sorted(pool, key=lambda b: (-score(b), -b["date"].toordinal()))
+        return [b for b in ranked if score(b) > 0][:3] or ranked[:3]
+
+    def things_for(a):
+        """Up to three activities to try after reading: the ones tied to this piece first, then those sharing its subject."""
+        tied = [c for c in _chs if a["slug"] in (c.get("guide"), c.get("story"))]
+        mk = _art_kw[a["slug"]]
+        scored = sorted(((3 * len(mk & _ch_kw[c["id"]]) + (c["category"] == a["category"]), c) for c in _chs if c not in tied), key=lambda x: -x[0])
+        picks = (tied + [c for sc, c in scored if sc >= 3])[:3]
+        if len(picks) < 3:   # fill from the same topic, a different trio for each story (stable per slug), richer pages first
+            import zlib
+            same = [c for c in _chs if c["category"] == a["category"] and c not in picks] or [c for c in _chs if c["category"] in ("explore", "think", "travel") and c not in picks]
+            same.sort(key=lambda c: (not (c.get("detail") or c.get("inspire") or c.get("story")), zlib.crc32((a["slug"] + c["id"]).encode())))
+            picks += same[:3 - len(picks)]
+        return picks
     # article hero/og images
     for a in arts:
         make_card(a.get("lesson") or a["title"], cfg["categories"][a["category"]]["label"], a["category"],
@@ -508,8 +606,9 @@ def build(make_social=True):
         (DIST / "static" / "art").mkdir(parents=True, exist_ok=True)
         (DIST / "static" / "art" / f"{a['slug']}.svg").write_text(
             art.scene_svg({**a, "art": a["scene"]}, PALETTE.get(a["category"], ("#333333",))[0]), encoding="utf-8")
-        related = [b for b in arts if b is not a and (b["category"] == a["category"] or set(b["tags"]) & set(a["tags"]))][:3]
-        urls.append(out(a["url"], "article.html", a=a, related=related))
+        related = related_for(a)
+        a["html"] = Linker(terms, a["url"]).html(a["html"])
+        urls.append(out(a["url"], "article.html", a=a, related=related, things=things_for(a)))
         if a.get("plan"):
             out(a["plan"]["url"], "plan.html", a=a, plan=a["plan"])  # not in sitemap: gated content
         if make_social:
@@ -616,6 +715,15 @@ def build(make_social=True):
             if c.get("detail") or c.get("faq"):
                 assert c.get("sources") and all(str(x.get("url", "")).startswith("https://") and x.get("label") and x.get("checked") for x in c["sources"]), f"challenge {c['id']}: detail and faq need sources with url, label, checked"
             if c.get("sources"): c["sources_checked"] = max(dt.date.fromisoformat(str(x["checked"])) for x in c["sources"]).strftime("%-d %B %Y")
+            lk = Linker(terms, f"/list/{c['id']}/")
+            for sec in c.get("detail") or []:
+                ps = sec.get("p") or []
+                sec["p_html"] = [lk.plain(x) for x in ([ps] if isinstance(ps, str) else ps)]
+                if sec.get("after"): sec["after_html"] = lk.plain(sec["after"])
+            mk = _ch_kw.get(c["id"], set())
+            shown = {c.get("story"), c.get("guide")}
+            rn = sorted((a for a in arts if a["slug"] not in shown), key=lambda a: (-(3 * len(mk & _art_kw[a["slug"]]) + (a["category"] == c["category"])), -a["date"].toordinal()))
+            c["read_next"] = [a for a in rn if 3 * len(mk & _art_kw[a["slug"]]) + (a["category"] == c["category"]) >= 3][:2] or [a for a in rn if a["category"] == c["category"]][:2]
             if c.get("seo_title"): c["seo"] = c["seo_title"]
             if c.get("description"): c["meta"] = c["description"]
             c["has_story"] = bool(c["story_art"]) or any(i["kind"] == "read" for i in ins)

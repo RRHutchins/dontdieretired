@@ -36,10 +36,10 @@
   {% for sec in c.detail or [] %}
   <section class="fl-detail">
     <h2>{{ sec.h }}</h2>
-    {% for para in (sec.p if sec.p is not string else [sec.p]) if sec.p %}<p>{{ para }}</p>{% endfor %}
+    {% for para in sec.p_html or [] %}<p>{{ para }}</p>{% endfor %}
     {% if sec.table %}<div class="fl-table-wrap"><table class="fl-table"><thead><tr>{% for h in sec.table.head %}<th scope="col">{{ h }}</th>{% endfor %}</tr></thead><tbody>{% for r in sec.table.rows %}<tr>{% for cell in r %}{% if loop.first %}<th scope="row">{{ cell }}</th>{% else %}<td>{{ cell }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody></table></div>{% endif %}
     {% if sec.list %}<ul>{% for li in sec.list %}<li>{{ li }}</li>{% endfor %}</ul>{% endif %}
-    {% if sec.after %}<p>{{ sec.after }}</p>{% endif %}
+    {% if sec.after_html %}<p>{{ sec.after_html }}</p>{% endif %}
   </section>
   {% endfor %}
 
@@ -79,9 +79,13 @@
   <div class="grid grid-2">{{ card(c.guide_art) }}</div>
   {% endif %}
 
+  {% if c.read_next %}
+  <h2>Read next</h2>
+  <div class="grid grid-2">{% for r in c.read_next %}{{ card(r) }}{% endfor %}</div>
+  {% endif %}
   {% if more %}
   <h2>More like this</h2>
-  <ul class="fl-more">{% for m in more %}<li><a href="/list/{{ m.id }}/">{{ m.title }}</a> <span class="meta">{{ L.effort[m.effort] }}</span></li>{% endfor %}</ul>
+  <ul class="fl-grid fl-grid-mini">{% for m in more %}<li data-cat="{{ m.category }}"><p class="kicker">{{ L.effort[m.effort] }}{% if m.place_label %} · {{ m.place_label }}{% endif %}</p><h3><a href="/list/{{ m.id }}/">{{ m.title }}</a></h3><p class="fl-go" aria-hidden="true">How to start and where to go <span>→</span></p></li>{% endfor %}</ul>
   {% endif %}
   {% if c.coll %}<p><a href="/list/{{ c.coll.slug }}/">All {{ c.coll.plural | lower }} →</a></p>{% endif %}
   <p><a href="/list/">← All activities</a></p>
