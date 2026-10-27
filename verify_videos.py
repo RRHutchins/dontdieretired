@@ -65,6 +65,13 @@ def main():
         if isinstance(v, dict) and v.get("id") and v["id"] not in listed:
             listed.add(v["id"])
             videos.append({"id": v["id"], "title": v.get("title", ""), "added": fm.get("date"), "story": True})
+    # films on activity pages (content/challenges.yaml `inspire` items of kind film, RUNBOOK §6h) get the same check
+    for c in yaml.safe_load((ROOT / "content" / "challenges.yaml").read_text(encoding="utf-8")) or []:
+        for it in c.get("inspire") or []:
+            if it.get("kind") == "film" and it.get("id") and it["id"] not in listed:
+                listed.add(it["id"])
+                chk = it.get("checked")
+                videos.append({"id": it["id"], "title": it.get("title", ""), "added": dt.date.fromisoformat(str(chk)) if chk else None, "activity": c.get("id")})
     today = dt.date.today()
     results, hidden, unknown_kept = {}, [], []
     for v in videos:

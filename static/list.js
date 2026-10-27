@@ -87,12 +87,19 @@
   const regSel = sels.find(s => s.dataset.flF === 'region');
   try { const tp = new URLSearchParams(location.search).get('topic'), cs = sels.find(s => s.dataset.flF === 'category'); if (tp && cs && [...cs.options].some(o => o.value === tp)) cs.value = tp; } catch (e) {}   // /list/?topic=move arrives with that topic chosen
   if (region) regSel.value = region;   // start with what can be done from where the reader is; one tap shows everything
+  // The map (27 Oct 2026, Robin): tap a UK area or a US state to see the activities tied to that place.
+  let place = '';
+  const mapBox = $('[data-fl-map]', root);
+  const areaName = id => { const pth = mapBox && $('[data-area="' + id + '"]', mapBox); return pth ? pth.dataset.name : id; };
+  const areaCountry = id => (/^[A-Z]{2}$/.test(id) ? 'us' : 'uk');
   function matches(li) {
+    if (place && !(' ' + li.dataset.places + ' ').includes(' ' + place + ' ')) return false;
     const words = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
     if (!words.every(w => li.dataset.text.includes(w))) return false;
     return sels.every(s => {
       const k = s.dataset.flF, v = s.value; if (!v) return true;
       if (k === 'region') return inRegion(li, v);
+      if (k === 'insp') return v === 'film' ? li.dataset.insp.includes('film') : !!li.dataset.insp.trim();
       if (k === 'setting' || k === 'company') return li.dataset[k] === v || li.dataset[k] === 'either';
       return li.dataset[k] === v;
     });
@@ -104,30 +111,59 @@
   function filter(fromUser) {
     let n = 0; const shown = [];
     items.forEach(li => { const m = matches(li); li.hidden = !m; if (m) { n++; shown.push(li); } li.classList.remove('fl-picked'); });
-    const words = q.value.trim(), filtered = words || sels.some(s => s.value);
-    const regionOnly = regSel.value === region && region && !words && sels.every(s => s === regSel || !s.value);
+    const words = q.value.trim(), filtered = words || place || sels.some(s => s.value);
+    const regionOnly = !place && regSel.value === region && region && !words && sels.every(s => s === regSel || !s.value);
     const what = n === 1 ? '1 activity' : n + ' activities';
     let html;
-    if (!filtered) html = '<strong>All ' + n + ' activities</strong>';
-    else if (regionOnly) html = '<strong>' + what + '</strong> you can do from the ' + region.toUpperCase() + ' <span class="fl-results-of">of ' + items.length + '</span>';
+    if (place) {
+      const c = areaCountry(place), cn = c === 'us' ? 'the USA' : 'the UK';
+      html = (n ? '<strong>' + what + '</strong> tied to ' + esc(areaName(place)) : '<strong>Nothing tied to ' + esc(areaName(place)) + ' yet</strong>')
+        + ' <button type="button" class="fl-results-btn" data-map-wide="' + c + '">See everything you can do in ' + cn + ' →</button>';
+    }
+    else if (!filtered) html = '<strong>Everything</strong> <span class="fl-results-of">Search, pick a filter or tap the map to narrow it down</span>';
+    else if (regionOnly) html = '<strong>' + what + '</strong> you can do from the ' + region.toUpperCase();
     else if (!n) html = '<strong>No activities match</strong>' + (words ? ' “' + esc(words) + '”' : ' those filters');
-    else html = '<strong>' + what + '</strong> ' + (words ? 'match “' + esc(words) + '”' : 'match your filters') + ' <span class="fl-results-of">of ' + items.length + '</span>';
+    else html = '<strong>' + what + '</strong> ' + (words ? 'match “' + esc(words) + '”' : 'match your filters');
     countEl.innerHTML = html;
     countEl.classList.toggle('is-filtered', !!filtered); countEl.classList.toggle('is-none', !n);
     if (fromUser === true && !calm) {
       replay(countEl, 'fl-flash');
       shown.slice(0, 12).forEach((li, i) => { li.style.setProperty('--i', i); replay(li, 'fl-in'); });
     }
-    none.hidden = n > 0; clear.hidden = !filtered;
+    none.hidden = n > 0 || !!place; clear.hidden = !filtered;
+    if (mapBox) $$('[data-area]', mapBox).forEach(pth => pth.classList.toggle('sel', pth.dataset.area === place));
     return n;
   }
-  // bring the results into view when the reader has finished choosing (Enter in the box, or a filter picked),
+  // bring the results into view when the reader has finished choosing (Enter in the box, a filter or an area picked),
   // but never while they are still typing, so the box does not jump away from under them
   const toResults = () => { const r = countEl.getBoundingClientRect(); if (r.top < 70 || r.top > innerHeight * 0.6) countEl.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' }); };
-  const reset = () => { q.value = ''; sels.forEach(s => { s.value = ''; }); filter(true); };
+  const reset = () => { q.value = ''; place = ''; sels.forEach(s => { s.value = ''; }); const pk = mapBox && $('[data-map-pick]', mapBox); if (pk) pk.value = ''; filter(true); };
   q.addEventListener('input', () => filter(true));
   q.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); filter(true); q.blur(); toResults(); } });
   sels.forEach(s => s.addEventListener('change', () => { filter(true); toResults(); }));
+  if (mapBox) {
+    const showMap = k => {
+      $$('[data-map]', mapBox).forEach(w => { w.hidden = w.dataset.map !== k; });
+      $$('[data-map-show]', mapBox).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mapShow === k)));
+      $('[data-map-cname]', mapBox).textContent = k === 'us' ? 'USA' : 'UK'; mapBox.dataset.country = k;
+    };
+    const pickArea = id => {
+      // an area narrows to that place only: clear the other filters so nothing hides what the reader just asked for
+      place = id; q.value = ''; sels.forEach(s => { s.value = ''; });
+      showMap(areaCountry(id)); $('[data-map-pick]', mapBox).value = id;
+      filter(true); toResults(); track('list_map', { area: id });
+    };
+    const wide = c => { place = ''; q.value = ''; sels.forEach(s => { s.value = ''; }); regSel.value = c; $('[data-map-pick]', mapBox).value = ''; showMap(c); filter(true); toResults(); };
+    showMap(region === 'us' ? 'us' : 'uk');
+    mapBox.addEventListener('click', e => {
+      const a = e.target.closest('path.has'); if (a) return pickArea(a.dataset.area);
+      const t = e.target.closest('[data-map-show]'); if (t) return showMap(t.dataset.mapShow);
+      if (e.target.closest('[data-map-country]')) wide(mapBox.dataset.country);
+    });
+    mapBox.addEventListener('keydown', e => { const a = e.target.closest('path.has'); if (a && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); pickArea(a.dataset.area); } });
+    $('[data-map-pick]', mapBox).addEventListener('change', e => { if (e.target.value) pickArea(e.target.value); else { place = ''; filter(true); } });
+    countEl.addEventListener('click', e => { const b = e.target.closest('[data-map-wide]'); if (b) wide(b.dataset.mapWide); });
+  }
   clear.addEventListener('click', reset); $('[data-fl-clear2]', root).addEventListener('click', reset);
   $('[data-fl-surprise]', root).addEventListener('click', () => {
     let pool = items.filter(li => !li.hidden && !L.has(li.dataset.id));

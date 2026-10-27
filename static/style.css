@@ -864,3 +864,54 @@ h1{line-height:1.04}
 .fl-grid>li:hover h3 a{text-decoration:underline;text-underline-offset:3px}
 .fl-grid>li:has(h3 a:focus-visible),.fl-grid>li:has(.h3 a:focus-visible){outline:3px solid var(--gold);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.fl-grid>li,.fl-go span{transition:none}.fl-grid>li:hover{transform:none}}
+
+/* ---- Get involved: the map and "Someone who has done it" (27 Oct 2026, Robin) ---- */
+.fl-map{background:var(--stone);border-radius:16px;padding:18px 18px 10px;margin:0 0 16px}
+.fl-map-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.fl-map-head h2{font-size:1.35rem;margin:0}
+.fl-map-tabs{display:flex;gap:8px}.fl-map-tabs .chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.fl-map-help{margin:.5em 0 .6em}
+.fl-map-wrap svg{display:block;width:100%;height:auto}
+.fl-map-uk svg{max-height:440px;max-width:300px;margin:0 auto}
+.fl-map-us svg{max-height:460px}
+.fl-map path{fill:#dcd8d1;stroke:#fff;stroke-width:1;vector-effect:non-scaling-stroke}
+.fl-map path.has{fill:var(--connect);cursor:pointer;transition:fill .15s}
+.fl-map path.has:hover,.fl-map path.has:focus-visible{fill:var(--gold);outline:none}
+.fl-map path.sel{fill:var(--brand)}
+.fl-map-pick{display:flex;flex-direction:column;gap:4px;font-size:.82rem;font-weight:600;color:var(--muted);margin:10px 0 0;max-width:320px}
+.fl-map-pick select{font:inherit;font-size:1rem;font-weight:400;color:var(--ink);padding:.5em .6em;border:1px solid var(--line);border-radius:8px;background:#fff;min-height:44px}
+.fl-map-credit{font-size:.78rem;margin:8px 0 0}
+.fl-results-btn{font:inherit;font-weight:600;background:#fff;color:var(--ink);border:0;border-radius:999px;padding:.4em 1em;min-height:40px;cursor:pointer;margin-left:auto}
+.fl-insp{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 .8em}
+.fl-insp span{font-size:.8rem;font-weight:700;border-radius:999px;padding:2px 10px;background:rgba(255,255,255,.95);color:var(--c,var(--ink))}
+.fl-inspire{margin:8px 0 24px}
+.fl-inspire-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:0 0 14px}
+.fl-ins-card{display:flex;flex-direction:column;gap:4px;padding:16px 18px;border-radius:12px;background:var(--c,var(--connect));color:#fff;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.fl-ins-card .kicker{color:#fff;opacity:.9;margin:0}
+.fl-ins-card strong{font-family:var(--serif);font-weight:600;font-size:1.2rem;line-height:1.2}
+.fl-ins-card .fl-go{margin:.4em 0 0}
+.fl-ins-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(20,20,30,.18)}
+.fl-ins-card:hover .fl-go span{transform:translateX(4px)}
+.fl-ins-film{margin:0 0 14px}.fl-ins-film figcaption{margin-top:8px}
+@media (prefers-reduced-motion:reduce){.fl-ins-card{transition:none}.fl-ins-card:hover{transform:none}}
+.fl-map-wrap[hidden]{display:none}
+@media (min-width:820px){
+  .fl-map{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);column-gap:28px;align-content:start;padding:24px}
+  .fl-map>*{grid-column:1}
+  .fl-map-wrap{grid-column:2;grid-row:1 / span 5;align-self:center}
+  .fl-map-head{align-items:flex-start;flex-direction:column}
+  .fl-map-uk svg{max-height:520px;max-width:360px}
+}
+
+/* Topics menu: each topic is a solid button in its own colour (27 Oct 2026, Robin: "it looks like a list") */
+.topics .dd{gap:10px;padding:12px}
+.topics .dd a{position:relative;background:var(--c,var(--ink));color:#fff;border-radius:12px;padding:12px 40px 12px 14px;box-shadow:0 2px 0 rgba(0,0,0,.12);transition:transform .12s ease,box-shadow .12s ease,filter .12s ease}
+.topics .dd a.dd-scam{--c:var(--accent)}
+.topics .dd a strong{font-family:var(--sans);font-weight:700;font-size:1.05rem;color:#fff}
+.topics .dd a span{color:#fff;opacity:.88}
+.topics .dd a::after{content:"→";position:absolute;right:14px;top:50%;transform:translateY(-50%);font-weight:700;color:#fff;transition:transform .12s ease}
+.topics .dd a:hover,.topics .dd a[aria-current]{background:var(--c,var(--ink));filter:brightness(1.1);transform:translateY(-1px);box-shadow:0 6px 14px rgba(0,0,0,.18)}
+.topics .dd a:hover::after{transform:translate(4px,-50%)}
+.topics .dd a[aria-current]{outline:3px solid var(--gold);outline-offset:2px}
+.topics .dd a:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.topics .dd a,.topics .dd a::after{transition:none}.topics .dd a:hover{transform:none}}

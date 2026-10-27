@@ -562,6 +562,10 @@ def build(make_social=True):
                                     "note": "We list an event here only when its official page shows that the public can enter and that it is still being run. Being listed does not mean the armed forces, or any charity, endorse this site."}}
         need = ("id", "title", "category", "kind", "effort", "cost", "time", "setting", "company", "regions", "why", "start", "links")
         seen, stale = set(), 0
+        # The map (RUNBOOK §6h): UK areas and US states, shapes made once by tools/build_map.py from Natural Earth (public domain)
+        _ms = CONTENT / "map_shapes.json"
+        shapes = json.loads(_ms.read_text(encoding="utf-8")) if _ms.exists() else {"uk": {"areas": []}, "us": {"areas": []}}
+        AREA = {a["id"]: (k, a["name"]) for k in ("uk", "us") for a in shapes[k]["areas"]}
         for c in chs:
             miss = [k for k in need if not c.get(k)]
             assert not miss, f"challenge {c.get('id')}: missing {miss}"
@@ -585,20 +589,40 @@ def build(make_social=True):
             c["checked_human"] = oldest.strftime("%-d %B %Y")
             stale += (dt.date.today() - oldest).days > 183
             c["guide_art"], c["story_art"] = by_slug.get(c.get("guide")), by_slug.get(c.get("story"))
+            for pl in c.get("places") or []:
+                assert pl in AREA and AREA[pl][0] in c["regions"], f"challenge {c['id']}: place {pl} is unknown or outside its regions"
+            c["place_label"] = ", ".join(AREA[pl][1] for pl in (c.get("places") or [])[:3]) + (f" and {len(c['places']) - 3} more" if len(c.get("places") or []) > 3 else "")
+            # Inspiration (Robin, 27 Oct 2026): real people who have done it. `read` = an outside article, `film` = a YouTube film.
+            ins = []
+            for it in c.get("inspire") or []:
+                k = it.get("kind")
+                assert k in ("read", "film") and it.get("person") and it.get("line") and it.get("checked"), f"challenge {c['id']}: inspire items need kind read/film, person, line, checked"
+                if k == "read":
+                    assert str(it.get("url", "")).startswith("https://") and it.get("title") and it.get("outlet"), f"challenge {c['id']}: a read needs url, title, outlet"
+                else:
+                    assert re.fullmatch(r"[A-Za-z0-9_-]{11}", str(it.get("id", ""))) and it.get("title") and it.get("channel"), f"challenge {c['id']}: a film needs id, title, channel"
+                    if not _shown.get(it["id"], True): print(f"LIST WARNING: film {it['id']} on {c['id']} held back (not confirmed by YouTube)"); continue
+                ins.append(it)
+            c["inspire_items"] = ins
+            c["has_story"] = bool(c["story_art"]) or any(i["kind"] == "read" for i in ins)
+            c["has_film"] = any(i["kind"] == "film" for i in ins)
             for k in ("guide", "story"):
                 if c.get(k) and c[k] not in by_slug: print(f"LIST WARNING: challenge {c['id']} points at a {k} that does not exist: {c[k]}")
             if c.get("local") and c["local"] not in local.get("activities", {}): c["local"] = None
         if stale: print(f"LIST WARNING: {stale} challenges have a link last checked over six months ago. Re-verify per RUNBOOK §6h.")
         colls = [dict(v, id=k, acts=[c for c in chs if c.get("collection") == k]) for k, v in COLLECTIONS.items()]
         colls = [v for v in colls if v["acts"]]
-        urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}, colls=colls))
+        area_n = {}
+        for c in chs:
+            for pl in c.get("places") or []: area_n[pl] = area_n.get(pl, 0) + 1
+        urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}, colls=colls, shapes=shapes, area_n=area_n))
         for v in colls:
             item_list = [{"@type": "ListItem", "position": n, "name": c["title"], "url": f"{cfg['site']['url']}/list/{c['id']}/"} for n, c in enumerate(v["acts"], 1)]
             urls.append(out(f"/list/{v['slug']}/", "collection.html", coll=v, L=LBL, total=len(chs), item_list=item_list))
             pages.append({"title": f"{v['plural']} you can enter", "url": f"/list/{v['slug']}/", "category": "move", "excerpt": v["blurb"],
                           "tags": ["military", "challenge", "challenges", "march", "tab", "ruck", "yomp", "army", "marines", "paras", "activities"],
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})
-        pages.append({"title": f"Get involved: {len(chs)} things worth doing, and a list of your own", "url": "/list/", "category": "explore",
+        pages.append({"title": "Get involved: things worth doing, and a list of your own", "url": "/list/", "category": "explore",
                       "excerpt": "Pick the ones you fancy, at any age. Each has how to start and where to go. Choose your own number and tick them off in your own time.",
                       "tags": ["list", "fifty", "activity", "activities", "challenge", "challenges", "bucket", "goals", "things", "to", "do"],
                       "image": "/static/og-default.png", "art": "/static/og-default.png"})

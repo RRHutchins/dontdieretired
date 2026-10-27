@@ -1,6 +1,6 @@
 {% extends "base.html" %}{% from "_macros.html" import share_button %}
 {% block title %}{{ (coll.plural ~ " you can enter") | seotitle }}{% endblock %}
-{% block description %}{{ (coll.acts|length ~ " " ~ coll.plural|lower ~ " open to the public, each with how to start and a link to the official page. " ~ coll.blurb) | metadesc }}{% endblock %}
+{% block description %}{{ (coll.plural ~ " open to the public, each with how to start and a link to the official page. " ~ coll.blurb) | metadesc }}{% endblock %}
 {% block pagetype %}list{% endblock %}
 {% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
  {"@type":"BreadcrumbList","itemListElement":[
@@ -28,7 +28,7 @@
 <div class="prose narrow fl-about">
 <p>{{ coll.note }}</p>
 <p>Every link was opened and read by us on the date shown on its page. Dates, places, prices and entry rules are on the official page, where they stay up to date. These are demanding events: read the organiser's kit list and medical guidance before you enter.</p>
-<p><a href="/list/">← All {{ total }} activities</a></p>
+<p><a href="/list/">← All activities</a></p>
 </div>
 {% endblock %}
 {% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script>{% endblock %}

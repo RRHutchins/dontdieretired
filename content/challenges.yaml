@@ -2,7 +2,9 @@
 # RULES: an id is permanent (readers' saved lists point at it): never change or reuse one. Every link was fetched
 # on its `checked` date and found to be what the label says. No event dates or prices. `why` leads with what is
 # interesting and never mentions age. Optional: guide / story (article slugs), local (content/local.yaml id), season, safety,
-# collection (a named group with its own page: see COLLECTIONS in build.py; today only military).
+# collection (a named group with its own page: see COLLECTIONS in build.py; today only military),
+# places (only for an activity tied to one place: UK area keys or US postal codes from content/map_shapes.json),
+# inspire (real people who have done it: outside articles and YouTube films, each opened on its `checked` date; RUNBOOK §6h).
 - id: paras-10
   title: Take on the PARAS' 10
   category: move
@@ -96,6 +98,7 @@
   season: Summer for a first ascent
   regions:
   - uk
+  places: [scotland]
   why: It is the highest mountain in the UK, and the Mountain Track takes you from the glen floor to the summit plateau on foot. Standing on top means there is nowhere higher to go in these islands.
   start:
   - Read Mountaineering Scotland's Ben Nevis guide and note the six to nine hours it suggests.
@@ -107,6 +110,14 @@
     region: uk
     checked: '2026-10-06'
   safety: Carry a map and compass and know how to use them, as the summit can be cold, cloudy and snow-covered even in summer.
+  inspire:
+  - kind: read
+    person: Martin Haigh
+    line: A hillwalker who climbed Ben Nevis by the Carn Mor Dearg ridge as his 200th Munro, and went on to finish all the Munros in 2018.
+    title: "My Nevis: Martin Haigh"
+    outlet: John Muir Trust
+    url: https://johnmuirtrust.org/resources/769-my-nevis-martin-haigh
+    checked: '2026-10-27'
 - id: climb-yr-wyddfa
   title: Climb Yr Wyddfa (Snowdon)
   category: move
@@ -119,6 +130,7 @@
   season: Late spring to early autumn
   regions:
   - uk
+  places: [wales]
   why: The highest mountain in Eryri National Park has several distinct paths to the top, so you can choose a route that suits you. On a clear day the view runs from the mountains to the sea.
   start:
   - Read the Eryri National Park Authority page and choose a path that matches your experience.
@@ -130,6 +142,14 @@
     region: uk
     checked: '2026-10-06'
   safety: Read the park's safety advice and turn back if the weather closes in.
+  inspire:
+  - kind: read
+    person: Andrew Craig, from Caernarfon
+    line: A retained firefighter who climbed Yr Wyddfa 52 times in a year, by every main path including Crib Goch, and raised almost £15,000 for breast cancer research.
+    title: Walker's 52 Snowdon ascents raise thousands for charity
+    outlet: grough
+    url: https://www.grough.co.uk/magazine/2011/01/01/walkers-52-snowdon-ascents-raise-thousands-for-charity
+    checked: '2026-10-27'
 - id: climb-scafell-pike
   title: Climb Scafell Pike
   category: move
@@ -142,6 +162,7 @@
   season: Late spring to early autumn
   regions:
   - uk
+  places: [north-west]
   why: England's highest mountain rises straight out of Wasdale, one of the quietest and most dramatic valleys in the Lake District. The Hollow Stones route is the most direct way up, and it is rough and rocky enough to feel like a proper mountain day.
   start:
   - Read the National Trust's Hollow Stones route description from Wasdale.
@@ -165,6 +186,7 @@
   season: Summer, when the cables are up
   regions:
   - us
+  places: [CA]
   why: Yosemite's most recognisable summit is reached by a 14 to 16 mile round trip with 4,800 feet of climbing. The last 400 feet go up bare granite between two steel cables, which is unlike anything else on a walking route.
   start:
   - Read the National Park Service Half Dome page and its permit page in full.
@@ -192,6 +214,7 @@
   season: July to late September, when the trail is usually free of snow
   regions:
   - us
+  places: [CA]
   why: The trail from Whitney Portal gains more than 6,200 feet to a summit that is also the southern end of the John Muir Trail. When it is free of snow the Forest Service describes it as non-technical but strenuous, so it is a walk rather than a climb.
   start:
   - Read the Inyo National Forest page for Mount Whitney and its permit rules.
@@ -215,6 +238,7 @@
   season: Summer and early autumn
   regions:
   - us
+  places: [NH]
   why: The highest of New Hampshire's White Mountains has a staffed weather observatory on its summit and a reputation for some of the wildest weather in the country. Reaching the top on foot on a clear day is a real prize.
   start:
   - Choose a trail with a current guidebook or map and work out your turnaround time.
@@ -264,6 +288,7 @@
   season: Late spring to early autumn
   regions:
   - uk
+  places: [north-west, yorkshire]
   why: This 190-mile National Trail crosses England from St Bees on the Irish Sea to Robin Hood's Bay on the North Sea. It passes through three national parks, the Lake District, the Yorkshire Dales and the North York Moors, so the scenery changes every few days.
   start:
   - Read the National Trails page and decide between one continuous walk and several shorter trips.
@@ -288,6 +313,7 @@
   season: Late spring to early autumn
   regions:
   - uk
+  places: [scotland]
   why: The route runs 96 miles from Milngavie, on the edge of Glasgow, to Fort William in the Highlands. You walk out of a city suburb and finish at the foot of the UK's highest mountain.
   start:
   - Use the official West Highland Way website to plan your stages.
@@ -299,6 +325,14 @@
     region: uk
     checked: '2026-10-06'
   guide: walking-holidays-for-beginners-after-50
+  inspire:
+  - kind: read
+    person: Linda and her son Darren, from Wishaw
+    line: A mother and son who walked the 96 miles from Milngavie to Fort William in six days to raise money for Erskine, the veterans' charity.
+    title: Walking the West Highland Way for Erskine
+    outlet: Erskine
+    url: https://www.erskine.org.uk/news/walking-the-west-highland-way-for-erskine
+    checked: '2026-10-27'
 - id: appalachian-trail-section
   title: Hike a section of the Appalachian Trail
   category: move
@@ -310,6 +344,7 @@
   company: either
   regions:
   - us
+  places: [GA, NC, TN, VA, WV, MD, PA, NJ, NY, CT, MA, VT, NH, ME]
   why: The Appalachian Trail runs for more than 2,190 miles from Georgia to Maine, and you can sample it as a day hike or a few nights out. Section hikers piece the whole trail together over many years, one stretch at a time.
   start:
   - Use the Appalachian Trail Conservancy's hiking pages to pick a state and a section.
@@ -325,6 +360,14 @@
     region: us
     checked: '2026-10-06'
   safety: Tell someone your route and when you expect to finish, as much of the trail is remote.
+  inspire:
+  - kind: read
+    person: M.J. "Sunny" Eberhart, the Nimblewill Nomad
+    line: A retired optometrist who walked the trail from Georgia to Maine in sections, adding hundreds of extra miles, and became the oldest person recorded to finish it.
+    title: "'Nimblewill Nomad,' 83, is the oldest to hike the Appalachian Trail"
+    outlet: NPR
+    url: https://www.npr.org/2021/11/07/1053389943/nimblewill-nomad-oldest-hiker-appalachian-trail
+    checked: '2026-10-27'
 - id: parkrun
   title: Do a parkrun
   category: move
@@ -763,6 +806,7 @@
   season: Spring to autumn
   regions:
   - us
+  places: [PA, MD]
   why: This 150-mile rail-trail through Pennsylvania and Maryland follows old railway lines on a crushed limestone surface, away from traffic. It links with the C&O Canal Towpath, so the ambitious can carry on to Washington, D.C.
   start:
   - Read the Rails to Trails Conservancy's account of the trail and decide how many days to take.
@@ -961,6 +1005,7 @@
   season: Winter is best, after rough weather
   regions:
   - uk
+  places: [south-west]
   why: On these beaches ammonites and belemnites wash out of the cliffs and lie among the pebbles, waiting for a sharp pair of eyes. Holding something that last saw daylight in the time of the dinosaurs is hard to forget.
   start:
   - Read the official Jurassic Coast guide on where to go and the collecting advice.
@@ -2922,6 +2967,7 @@
   company: either
   regions:
   - uk
+  places: [london]
   why: The MoonWalk London sets off after dark and takes walkers through the streets of the capital overnight, many of them in decorated bras. It is a challenge and not a race, with no time limit, and the Full Moon route is the marathon distance of 26.2 miles.
   start:
   - Read the MoonWalk London page on the Walk the Walk site and choose between the Full Moon, the Half Moon and the shorter routes.
@@ -2943,6 +2989,7 @@
   company: either
   regions:
   - uk
+  places: [london, south-east]
   why: The British Heart Foundation's ride covers 54 miles from Clapham Common in south London to the seafront at Brighton, mostly on roads closed to traffic. Almost any sort of bike is welcome, from road bikes to tandems, folding bikes and recumbents.
   start:
   - Read the British Heart Foundation's London to Brighton Bike Ride page and check which entry routes are open, such as the ballot or a charity place.
@@ -2965,6 +3012,7 @@
   company: either
   regions:
   - uk
+  places: [north-east]
   why: The organisers call it the world's biggest half marathon, a single mass of runners heading from the Central Motorway in Newcastle to the coast at South Shields. Places are in such demand that most are handed out by ballot.
   start:
   - Read the Great North Run page on the Great Run site and sign up for a reminder of the next ballot.
@@ -2975,6 +3023,14 @@
     url: https://www.greatrun.org/events/great-north-run/
     region: uk
     checked: '2026-10-07'
+  inspire:
+  - kind: read
+    person: Eddie Maddison, Sunderland Harriers
+    line: Has run every Great North Run since the first in 1981; his best time, 1:13:24, came when he was 39.
+    title: Sunderland's Great North Run Stalwarts Ready To Tackle Half Marathon Again
+    outlet: Sunderland Harriers
+    url: https://www.sunderlandharriers.org.uk/articles/view/328/sunderland-s-great-north-run-stalwarts-ready-to-tackle-half-marathon-again
+    checked: '2026-10-27'
 - id: enter-senior-games
   title: Compete at a state Senior Games
   category: move
@@ -3034,6 +3090,7 @@
   season: Spring to early autumn
   regions:
   - uk
+  places: [yorkshire]
   why: Pen-y-ghent, Whernside and Ingleborough are usually climbed in a single day on a 24-mile circuit with about 5,000 feet of ascent. The route follows public rights of way and open access land, so there is nothing to book and you can start anywhere on the loop.
   start:
   - Read the Yorkshire Dales National Park Authority's Walking the Yorkshire Three Peaks page and download its route map or GPX file.
@@ -3057,6 +3114,7 @@
   season: Spring and autumn are kinder than summer heat or winter ice
   regions:
   - us
+  places: [AZ]
   why: Most visitors look down from the rim, but a short way down the Bright Angel or South Kaibab Trail the canyon walls rise around you and the scale changes completely. It is a mountain walk in reverse, with the easy downhill first and the climb saved for the way back.
   start:
   - Read the National Park Service Day Hiking page for Grand Canyon and choose a trail and a turnaround point before you set off.
@@ -3068,6 +3126,14 @@
     region: us
     checked: '2026-10-07'
   safety: The Park Service warns against trying to hike from the rim to the river and back in one day, and summer heat in the canyon can be life-threatening.
+  inspire:
+  - kind: read
+    person: Alfredo Aliaga Burdio, from Berlin
+    line: Crossed the canyon on foot from the North Rim to the South Rim over two days in October 2023, a Guinness World Record, after training by walking eight miles a day.
+    title: 92-year-old becomes oldest person to hike Grand Canyon rim to rim
+    outlet: ABC15 Arizona
+    url: https://www.abc15.com/92-year-old-becomes-oldest-person-to-hike-grand-canyon-rim-to-rim
+    checked: '2026-10-27'
 - id: play-tennis
   title: Get back on a tennis court
   category: move
@@ -3860,6 +3926,7 @@
   company: either
   regions:
   - uk
+  places: [wales]
   why: Wales is one of a few countries in the world with a continuous footpath along its coastline, running 870 miles from the outskirts of Chester to Chepstow. It is divided into eight sections, so a single day can take in cliffs, estuaries or a promenade, with short, easy stretches alongside the longer hikes.
   start:
   - Read the official About the Path page to see the eight sections and choose a region.
@@ -3887,6 +3954,7 @@
   season: Summer to early autumn in the high country
   regions:
   - us
+  places: [CA, OR, WA]
   why: The Pacific Crest Trail runs about 2,650 miles from Mexico to Canada through desert, the Sierra Nevada, deep forest and the volcanic peaks of the Cascades. It is divided into 29 sections of manageable length, so you can walk one piece of a continental route without giving up half a year.
   start:
   - Read the Pacific Crest Trail Association's Discover the Trail pages and choose a section in California, Oregon or Washington.
@@ -3898,6 +3966,14 @@
     region: us
     checked: '2026-10-07'
   safety: This is remote mountain and desert country, so carry navigation, enough water and shelter, and check for snow, fire closures and river crossings before you go.
+  inspire:
+  - kind: read
+    person: Mike Wheeler, from Brainerd, Minnesota
+    line: A retiree who walked the whole trail southbound, from the Canadian border to Mexico, in about four and a half months, through snowy passes and a 30-mile stretch without water.
+    title: Going wild on the Pacific Crest Trail
+    outlet: Brainerd Dispatch
+    url: https://www.brainerddispatch.com/news/going-wild-on-the-pacific-crest-trail
+    checked: '2026-10-27'
 - id: ride-a-rail-trail
   title: Walk or ride a rail trail
   category: travel
@@ -4023,6 +4099,7 @@
   season: Spring to early autumn
   regions:
   - uk
+  places: [scotland]
   why: Caledonian MacBrayne, known as CalMac, sails to about 30 destinations along Scotland's west coast, from Arran in the south to Harris and Lewis in the north. Several crossings can be strung together into one trip, so each day ends on a different island.
   start:
   - Read CalMac's island hopping page and pick one of its suggested itineraries, such as the Hebridean route.
@@ -4050,6 +4127,7 @@
   season: Late spring to early autumn
   regions:
   - uk
+  places: [scotland]
   why: The North Coast 500 is a 516-mile loop around the far north of Scotland, through the Black Isle, Caithness, Sutherland and Wester Ross. It strings together white beaches, bare mountains and remote fishing villages on roads that are often a single lane wide.
   start:
   - Read the planning pages and sample itineraries on the official North Coast 500 site and decide how many days to allow.
@@ -4072,6 +4150,7 @@
   company: either
   regions:
   - us
+  places: [IL, MO, KS, OK, TX, NM, AZ, CA]
   why: US Highway 66, the Mother Road, became a symbol of American mobility, and long stretches of the old alignment can be driven today. More than 250 buildings, bridges and other sites along it are on the National Register of Historic Places, among them hotels, filling stations and restaurants.
   start:
   - Open the National Park Service Travel Route 66 itinerary and choose one state's stretch to drive.
@@ -4140,6 +4219,7 @@
   company: either
   regions:
   - uk
+  places: [scotland]
   why: The West Highland Line leaves Glasgow Queen Street and splits at Crianlarich, one arm running to Oban and the other climbing over Rannoch Moor to Fort William and Mallaig. It passes Corrour, the highest railway station in the UK, and crosses the curved Glenfinnan Viaduct.
   start:
   - Read ScotRail's West Highland Line page and choose between the Oban and the Mallaig branch.
@@ -4183,6 +4263,7 @@
   season: August
   regions:
   - uk
+  places: [scotland]
   why: The Fringe began in 1947 when eight theatre groups turned up uninvited to the Edinburgh International Festival, and it now fills the city with performing arts for three weeks. A single day can take in a play in a cellar, a comic in a lecture hall and performers in the street.
   start:
   - Read the Fringe Society's About page and download the official Fringe app to browse the programme.
@@ -4205,6 +4286,7 @@
   season: Spring to autumn
   regions:
   - uk
+  places: [london]
   why: Standing in the yard at Shakespeare's Globe in London puts you where the groundlings stood, on your feet under the open sky with the actors within arm's reach. Yard tickets are the cheapest in the house, and the theatre releases a limited batch each week through its Rush scheme.
   start:
   - Read the Globe's Rush page to see how and when the weekly release of Yard standing tickets works.
@@ -4227,6 +4309,7 @@
   season: Late June to mid July
   regions:
   - uk
+  places: [london]
   why: Wimbledon is one of the few great sporting events where you can turn up on the day and buy a ticket, provided you are willing to queue. The Queue has its own official guide, numbered cards that fix your place and a code of conduct, and many people camp overnight for a Show Court seat.
   start:
   - Read the official Queue page and the current Queue Guide on wimbledon.com before you travel.
@@ -4253,6 +4336,7 @@
   season: Summer
   regions:
   - us
+  places: [NY]
   why: Joseph Papp founded Free Shakespeare in the Park to make great theatre open to everyone, and The Public Theater continues to stage it at the open-air Delacorte Theater in Central Park. Tickets are free but have to be won, by queueing in the park, entering a lottery or waiting on standby.
   start:
   - Read The Public Theater's Free Shakespeare in the Park page to see what is being staged.
@@ -4301,6 +4385,7 @@
   season: Late summer
   regions:
   - us
+  places: [DC]
   why: The Library of Congress National Book Festival brings best-selling authors and book fans together in Washington, DC, for a day of author talks, panel discussions and book signings. Admission is free for everyone, and the Library posts videos of the conversations online afterwards.
   start:
   - Check the Library of Congress festival page at loc.gov/bookfest for this year's announcement and author line-up.
@@ -4576,6 +4661,7 @@
   company: either
   regions:
   - uk
+  places: [london]
   why: London's blue plaques scheme, begun in 1866 and thought to be the oldest of its kind in the world, marks the buildings where notable people lived and worked. English Heritage now runs it, and its searchable list of more than 1,000 plaques turns any borough into a walking route.
   start:
   - Open the English Heritage Find a Plaque search and filter by London borough or by category.
@@ -6141,6 +6227,7 @@
   company: others
   regions:
   - uk
+  places: [scotland]
   collection: military
   why: The Cateran Yomp asks teams to walk up to 54 miles in 24 hours through the Perthshire hills from Blairgowrie, with shorter 22 and 36 mile options. The Army Benevolent Fund, a charity, organises it and says it is based on a long-distance military training march, and civilians can enter.
   start:
@@ -6188,6 +6275,7 @@
   company: others
   regions:
   - uk
+  places: [south-east]
   collection: military
   why: Teams of four trek or run 100km non-stop along the South Downs Way, aiming to finish in under 30 hours with a support crew meeting them along the route. The Gurkha Welfare Trust, a charity, organises Trailwalker and says the event originated as a Gurkha training exercise, with military teams taking part alongside civilians.
   start:
@@ -6257,6 +6345,7 @@
   company: either
   regions:
   - us
+  places: [NM]
   collection: military
   why: This memorial march at White Sands Missile Range in New Mexico offers a full marathon-length course and a shorter honorary course, and it remembers the surrender at Bataan in April 1942 and the march that followed. The official site says Army ROTC at New Mexico State University began it in 1989 and that many civilians now take part.
   start:
@@ -6284,6 +6373,7 @@
   company: either
   regions:
   - us
+  places: [DC, VA]
   collection: military
   why: Known as The People's Marathon, this race offers no prize money and runs through Arlington, Virginia, and Washington. It is organised by the Marine Corps Marathon Organization, and the official site describes the course as managed by the United States Marines.
   start:
@@ -6296,6 +6386,14 @@
     region: us
     checked: '2026-10-08'
   safety: A marathon puts heavy strain on the body, so build up over months and slow down or stop if you feel unwell on the day.
+  inspire:
+  - kind: read
+    person: Al Richmond
+    line: A former Marine who helped plan the first Marine Corps Marathon in 1976, then ran every one for more than 40 years; his fastest was 3:16:21 in 1979.
+    title: The Last MCM Groundpounder
+    outlet: RunWashington
+    url: https://www.runwashington.com/2017/10/20/last-mcm-groundpounder/
+    checked: '2026-10-27'
 - id: army-ten-miler
   title: Run the Army Ten-Miler
   category: move
@@ -6307,6 +6405,7 @@
   company: either
   regions:
   - us
+  places: [DC, VA]
   collection: military
   why: This ten-mile road race has been held each October since 1985 and is based at the Pentagon, just outside Washington. It is a United States Army event whose stated aims include building esprit de corps and community relations, and the official site says general registration is open to everyone.
   start:
@@ -6398,6 +6497,7 @@
   season: Summer
   regions:
   - us
+  places: [CO]
   why: A fourteener is a peak higher than 14,000 feet, and Colorado has more of them than any other state, several with walking routes that need no ropes. The Colorado Fourteeners Initiative, a non-profit that looks after the peaks, publishes video series on mountain safety, gear and altitude illness for people planning a first ascent.
   start:
   - Watch the Colorado Fourteeners Initiative's mountain safety, gear and altitude illness video series.
@@ -6425,6 +6525,7 @@
   season: Late spring to early autumn
   regions:
   - uk
+  places: [london]
   why: The Serpentine Lido lets you swim in open water in the middle of Hyde Park, inside a buoyed area of the lake watched by lifeguards. The Royal Parks describes the Serpentine Swimming Club, whose members swim there early each morning and race on Christmas Day, as the oldest swimming club in Britain.
   start:
   - Check The Royal Parks' Serpentine Lido page for this year's opening season and session types.
@@ -6628,6 +6729,7 @@
   season: Midsummer and midwinter
   regions:
   - uk
+  places: [south-west]
   why: Stonehenge was built to line up with the sun at the solstices, and at midsummer the sun rises behind the Heel Stone and its first rays shine into the heart of the monument. English Heritage, which looks after the site, publishes how to attend the summer solstice and the conditions of entry.
   start:
   - Read English Heritage's Stonehenge solstice page and its summer solstice visitor information.
@@ -6649,6 +6751,7 @@
   company: either
   regions:
   - uk
+  places: [north-east]
   why: Twice a day the sea covers the road to Holy Island, also called Lindisfarne, off the Northumberland coast, so every visit has to be timed around the tide. Northumberland County Council publishes safe crossing times for the causeway road, and separate warnings for the marked walking route over the sands.
   start:
   - Look up the safe crossing times for your date on Northumberland County Council's Holy Island page.
@@ -6671,6 +6774,7 @@
   company: either
   regions:
   - uk
+  places: [yorkshire, north-west]
   why: This railway crosses the high country between the Yorkshire Dales and Cumbria, carrying ordinary passenger trains over the stone arches of the Ribblehead Viaduct. Its stations, among them Settle and Appleby, are starting points for walks, so the journey can be a day out in itself.
   start:
   - Read the Settle-Carlisle Railway's official site for the route and its stations.
@@ -6693,6 +6797,7 @@
   season: Spring
   regions:
   - us
+  places: [DC]
   why: The cherry trees around the Tidal Basin were a gift from Japan in 1912, and for a short spell each spring they turn the memorials pink and white. The National Park Service, which cares for the trees, runs a Bloom Watch explaining how the timing is predicted and the stages the buds pass through.
   start:
   - Follow the National Park Service's Bloom Watch as spring approaches to see when the trees are expected to flower.
@@ -6714,6 +6819,7 @@
   company: either
   regions:
   - us
+  places: [VA, NC]
   why: The Blue Ridge Parkway winds for 469 miles through the mountains of Virginia and North Carolina, a road built for slow driving and long views over the Appalachian Highlands. The National Park Service, which runs it, lists about 300 miles of walking trails along the way and updates its road closures page daily.
   start:
   - Read the National Park Service's Plan Your Visit pages for the Parkway and choose your start and finish.
@@ -6737,6 +6843,7 @@
   season: Summer
   regions:
   - us
+  places: [DC]
   why: Established in 1967, this festival brings master artisans, musicians and other tradition bearers to the National Mall in Washington each summer to show how their crafts and customs are practised. The Smithsonian Center for Folklife and Cultural Heritage produces it, with free performances, workshops and demonstrations.
   start:
   - Read the Visit section of the official festival site for general information, the map and accessibility details.
@@ -6758,6 +6865,7 @@
   company: either
   regions:
   - us
+  places: [DC]
   why: The Smithsonian calls itself the world's largest museum complex, and most of its museums stand on or near the National Mall, with admission free at every Washington location. Ticking off the whole set takes you from aircraft and natural history to portraits, postage stamps and African and Asian art.
   start:
   - Print the Smithsonian's official list of museums and mark those in and around Washington.
@@ -7001,3 +7109,232 @@
     checked: '2026-10-24'
   story: lascaux-cave-discovery
   story_note: Our Curious piece tells how four friends found the cave in 1940; the visits linked here are to the replicas, not the original cave.
+- id: climb-mount-st-helens
+  title: Climb to the crater rim of Mount St. Helens
+  category: move
+  kind: experience
+  effort: demanding
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  season: Permits are needed all year; daily numbers are capped from April to October
+  regions:
+  - us
+  places: [WA]
+  why: You climb a volcano that blew off its top in 1980, from a summit of 9,677 feet down to a crater rim that now reaches 8,365. The Forest Service calls it strenuous but not technical, so it is open to fit walkers who are happy scrambling on steep, rough ground.
+  start:
+  - Read the climbing permit page on Recreation.gov and note when the next month's permits are released.
+  - Book a permit for your group, and plan to sign the climbers' register at the trailhead before and after.
+  - Train on long, steep days with scrambling, and pack the Ten Essentials rather than relying on a phone.
+  links:
+  - label: Recreation.gov, Mount St. Helens climbing permit (Gifford Pinchot National Forest)
+    url: https://recreation.gov/permits/4675309
+    region: us
+    checked: '2026-10-27'
+  safety: The Forest Service warns that volcanic hazards can come without warning and that steep snow needs extreme care; going into the crater is not allowed.
+- id: walk-oregon-coast-trail
+  title: Walk a stretch of the Oregon Coast Trail
+  category: move
+  kind: project
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - us
+  places: [OR]
+  why: The trail follows Oregon's 362-mile coastline from the Columbia River to California, mostly on the beach and over headlands, through 28 coastal towns. Nearly every coastal state park keeps first-come tent sites for hikers and cyclists, so it can be done a section at a time.
+  start:
+  - Download the map for one of the trail's ten sections from Oregon State Parks.
+  - Check the tide times, as some stretches can only be passed at low tide, and note any gap sections that use the road.
+  - Walk one day of it first, then plan a multi-day section using the hiker and biker camps.
+  links:
+  - label: Oregon State Parks, Oregon Coast Trail
+    url: https://stateparks.oregon.gov/index.cfm?do=v.page&id=95
+    region: us
+    checked: '2026-10-27'
+  safety: Some sections can only be walked at low tide and about a tenth of the route runs along road shoulders, so check tides and the official maps before each day.
+- id: walk-hadrians-wall-path
+  title: Walk Hadrian's Wall Path
+  category: move
+  kind: project
+  effort: demanding
+  cost: high
+  time: weeks
+  setting: outdoors
+  company: either
+  season: May to October
+  regions:
+  - uk
+  places: [north-east, north-west]
+  why: This 84-mile National Trail follows a Roman frontier across England from Wallsend, near Newcastle, to the Solway coast beyond Carlisle. Most walkers take six or seven days, and the high central section along the wall itself is one of the best day walks in the country.
+  start:
+  - Read the National Trails page and choose between the whole path and a day on the central section.
+  - Plan for May to October, when the ground is drier and buses and accommodation are running.
+  - Allow extra time for the Roman forts and museums along the way.
+  links:
+  - label: National Trails, Hadrian's Wall Path trail information
+    url: https://www.nationaltrail.co.uk/en_GB/trails/hadrians-wall-path/trail-information/
+    region: uk
+    checked: '2026-10-27'
+  safety: Two low stretches on the Solway coast can flood at high tide, so check tide times before that section.
+- id: walk-giants-causeway-clifftop
+  title: Walk the clifftops above the Giant's Causeway
+  category: explore
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  places: [northern-ireland]
+  why: The National Trust's Red Trail runs along the cliffs above the Causeway's basalt columns, with views out over the North Channel, then drops back down 162 stone steps. It is two miles and takes about an hour and a half, which leaves time to see the columns from the shore.
+  start:
+  - Read the National Trust's Red Trail page and start from car park 1 by the Causeway Hotel.
+  - Check the wind forecast before you go, as the cliff edges are unfenced.
+  - Take the full two-mile loop, or the short trail if time is tight.
+  links:
+  - label: National Trust, Giant's Causeway Red Trail
+    url: https://nationaltrust.org.uk/visit/northern-ireland/giants-causeway/giants-causeway-red-trail
+    region: uk
+    checked: '2026-10-27'
+  safety: The National Trust warns of unfenced cliff edges, rock falls and high winds; the Green Trail is the step-free option.
+- id: hike-angels-landing
+  title: Hike Angels Landing in Zion
+  category: move
+  kind: experience
+  effort: demanding
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - us
+  places: [UT]
+  why: The last part of this hike climbs a narrow sandstone fin from Scout Lookout to the summit, holding a chain for much of the way. Zion National Park runs a permit lottery for that section, so it is something you plan for rather than turn up and do.
+  start:
+  - Read the Angels Landing permit page on Recreation.gov and enter the seasonal lottery one to three months ahead.
+  - If you miss out, enter the day-before lottery while you are near the park.
+  - Start early from the Grotto trailhead with two to four litres of water, as there is none on the trail.
+  links:
+  - label: Recreation.gov, Angels Landing permit (Zion National Park)
+    url: https://www.recreation.gov/permits/4675324
+    region: us
+    checked: '2026-10-27'
+  safety: The park warns of extreme heat from May to September and says the trail is extremely dangerous in thunderstorms, so check the forecast and turn back if conditions change.
+- id: ride-the-katy-trail
+  title: Ride the Katy Trail across Missouri
+  category: travel
+  kind: project
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - us
+  places: [MO]
+  why: The Katy Trail runs 240 miles across Missouri on the bed of the old Missouri-Kansas-Texas Railroad, mostly beside the Missouri River. With 26 trailheads and four restored railroad depots, you can ride a single day out and back or cross the state.
+  start:
+  - Read the Missouri State Parks page and pick a trailhead for a first out-and-back ride.
+  - Plan stages between towns along the river if you want to ride end to end, from Clinton to Machens.
+  - Ride two longer days back to back on a loaded bike before a multi-day trip.
+  links:
+  - label: Missouri State Parks, Katy Trail State Park
+    url: https://mostateparks.com/park/katy-trail-state-park
+    region: us
+    checked: '2026-10-27'
+- id: paddle-the-broads
+  title: Paddle a canoe trail on the Norfolk Broads
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  places: [east]
+  why: The Broads are Britain's largest protected wetland, and the calm upper rivers are made for a canoe or paddleboard. There are mapped canoe trails from Bungay, Geldeston, Norwich and Salhouse Broad, and hire centres if you do not have a boat.
+  start:
+  - Download one of the canoe trail maps from Visit the Broads and choose a short, non-tidal one first.
+  - Hire a canoe or kayak, or check you have a Broads Authority toll or a Paddle UK membership if you bring your own.
+  - Wear a buoyancy aid the whole time and keep away from reed edges in the bird breeding season.
+  links:
+  - label: Visit the Broads, canoeing, kayaking and paddleboarding (with trail maps)
+    url: https://www.visitthebroads.co.uk/canoe-kayak-sup/
+    region: uk
+    checked: '2026-10-27'
+  safety: The lower, tidal rivers are for experienced paddlers only; stay on the upper rivers and broads until you have built up experience.
+- id: walk-the-monsal-trail
+  title: Walk or cycle the Monsal Trail through its tunnels
+  category: move
+  kind: experience
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  places: [east-midlands]
+  why: This flat 8.5-mile trail follows an old Midland Railway line through the Peak District between Bakewell and Blackwell Mill, crossing the Headstone Viaduct. Four of its tunnels are about 400 metres long and lit in daylight hours, which makes it a ride unlike any other.
+  start:
+  - Read the Peak District National Park's Monsal Trail page and check for temporary closures.
+  - Start from Bakewell and go as far as the viaduct, or ride the whole trail and back.
+  - Bring your own bike or hire one nearby, as there is no hire on the trail itself.
+  links:
+  - label: Peak District National Park, Monsal Trail
+    url: https://www.peakdistrict.gov.uk/visiting/places-to-visit/trails/monsaltrail
+    region: uk
+    checked: '2026-10-27'
+- id: walk-south-west-coast-path
+  title: Walk a stretch of the South West Coast Path
+  category: move
+  kind: project
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  places: [south-west]
+  why: England's longest National Trail runs 630 miles around the South West peninsula, from Minehead in Somerset to Poole Harbour in Dorset. You can take a day walk, a short break or work through the whole path in stages over years.
+  start:
+  - Browse the day walks and short breaks on the South West Coast Path Association's site and pick one stretch.
+  - Check the bus or train that will bring you back to your start.
+  - Note the next stretch along, so each walk sets up the one after.
+  links:
+  - label: South West Coast Path Association, the Coast Path
+    url: https://www.southwestcoastpath.org.uk/about-coast-path/swcp/
+    region: uk
+    checked: '2026-10-27'
+  safety: Much of the path runs along cliff edges, so keep to the path in high wind and wet weather.
+- id: walk-the-malvern-ridge
+  title: Walk the Malvern Hills from end to end
+  category: move
+  kind: experience
+  effort: moderate
+  cost: free
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  places: [west-midlands]
+  why: The Malvern ridge rises straight out of the Severn plain, and a walk along its crest from Chase End to North Hill takes in every main summit, with views across several counties. Visit Worcestershire puts it at about five hours.
+  start:
+  - Read the end-to-end route on Visit Worcestershire and arrange to be dropped at Chase End.
+  - If you drive, use the Malvern Hills Trust car park at Hollybush, as Chase End holds only a few cars.
+  - Split it at British Camp or the Wyche if you would rather walk it over two days.
+  links:
+  - label: Visit Worcestershire, End to End Malvern Hills
+    url: https://visitworcestershire.org/itineraries/end-to-end-malvern-hills
+    region: uk
+    checked: '2026-10-27'

@@ -1,10 +1,10 @@
 {% extends "base.html" %}{% from "_macros.html" import share_button %}
-{% block title %}Get involved: {{ challenges|length }} things worth doing — {{ cfg.site.name }}{% endblock %}
-{% block description %}{{ challenges|length }} things worth doing, each with how to start and where to go. Build your own list at any age, choose your own number, and tick them off in your own time.{% endblock %}
+{% block title %}Get involved: things worth doing — {{ cfg.site.name }}{% endblock %}
+{% block description %}Things worth doing near you and anywhere, each with how to start and where to go. Build your own list at any age, choose your own number, and tick them off in your own time.{% endblock %}
 {% block pagetype %}list{% endblock %}
 {% block content %}
 <header class="page-head"><p class="kicker">Things to do</p><h1>Get involved</h1>
-<p class="lead">{{ challenges|length }} things worth doing, each with how to start and where to go. Make a list of your own at any age: choose your own number and take as long as you like. You don't have to do them all.</p>
+<p class="lead">Things worth doing, near you and anywhere, each with how to start, where to go and, for more and more of them, someone who has done it. Make a list of your own at any age: choose your own number and take as long as you like. You don't have to do them all.</p>
 {{ share_button(cfg.site.url ~ '/list/', 'Get involved: things worth doing, and a list of your own', 'list') }}</header>
 
 <div class="fl" data-fl>
@@ -18,6 +18,17 @@
     <div class="fl-suggest" data-fl-suggest hidden></div>
     <p class="fl-quiet" data-fl-ask hidden>Want suggestions? <button type="button" class="linklike" data-open-segments>Tell us what interests you</button> and we'll pick some out. Or just browse.</p>
 
+    <section class="fl-map" data-fl-map aria-labelledby="fl-map-h">
+      <div class="fl-map-head"><h2 id="fl-map-h">Find things near you</h2>
+        <div class="fl-map-tabs" role="group" aria-label="Choose a map"><button type="button" class="chip" data-map-show="uk" aria-pressed="true">UK</button><button type="button" class="chip" data-map-show="us" aria-pressed="false">USA</button></div></div>
+      <p class="meta fl-map-help">Tap a coloured area to see the activities tied to that place. Most can be done almost anywhere, so you can also <button type="button" class="linklike" data-map-country>see everything you can do in the <span data-map-cname>UK</span></button>.</p>
+      {% for k in ('uk', 'us') %}<div class="fl-map-wrap fl-map-{{ k }}" data-map="{{ k }}"{% if k == 'us' %} hidden{% endif %}>
+        <svg viewBox="{{ shapes[k].viewBox }}" aria-label="Map of the {{ 'UK' if k == 'uk' else 'USA' }}" role="group" focusable="false">{% for a in shapes[k].areas %}<path d="{{ a.d }}" data-area="{{ a.id }}" data-name="{{ a.name }}"{% if area_n.get(a.id) %} class="has" tabindex="0" role="button" aria-label="{{ a.name }}: {{ area_n[a.id] }} {{ 'activity' if area_n[a.id] == 1 else 'activities' }} tied to this area"{% else %} aria-hidden="true"{% endif %}><title>{{ a.name }}{% if area_n.get(a.id) %}: {{ area_n[a.id] }}{% endif %}</title></path>{% endfor %}</svg>
+      </div>{% endfor %}
+      <label class="fl-map-pick">Or choose an area<select data-map-pick><option value="">Choose…</option>{% for k in ('uk', 'us') %}<optgroup label="{{ 'UK' if k == 'uk' else 'USA' }}">{% for a in shapes[k].areas|sort(attribute='name') %}<option value="{{ a.id }}" data-country="{{ k }}">{{ a.name }}{% if area_n.get(a.id) %} ({{ area_n[a.id] }}){% endif %}</option>{% endfor %}</optgroup>{% endfor %}</select></label>
+      <p class="meta fl-map-credit">Boundaries from Natural Earth (public domain).</p>
+    </section>
+
     <div class="fl-filters">
       <label class="fl-search"><span class="sr-only">Search the activities</span><input type="search" placeholder="Search: swim, write, volunteer…" data-fl-q></label>
       <div class="fl-selects">
@@ -27,6 +38,7 @@
         <label>Takes<select data-fl-f="time"><option value="">Any</option>{% for k, v in L.time.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
         <label>Where<select data-fl-f="setting"><option value="">Any</option><option value="indoors">Indoors</option><option value="outdoors">Outdoors</option></select></label>
         <label>Company<select data-fl-f="company"><option value="">Any</option><option value="solo">On my own</option><option value="others">With others</option></select></label>
+        <label>Inspiration<select data-fl-f="insp"><option value="">Any</option><option value="yes">Someone who did it</option><option value="film">With a film</option></select></label>
         <label>Country<select data-fl-f="region"><option value="">All of them</option><option value="uk">UK</option><option value="us">US</option><option value="anywhere">Can be done anywhere</option></select></label>
       </div>
       <p class="fl-actions"><button type="button" class="btn btn-small" data-fl-surprise>Surprise me</button> <button type="button" class="linklike" data-fl-clear hidden>Clear filters</button></p>
@@ -36,11 +48,12 @@
 
     <ul class="fl-grid" data-fl-grid>
     {% for c in challenges %}
-      <li class="fl-item" data-cat="{{ c.category }}" data-id="{{ c.id }}" data-title="{{ c.title }}" data-category="{{ c.category }}" data-effort="{{ c.effort }}" data-cost="{{ c.cost }}" data-time="{{ c.time }}" data-setting="{{ c.setting }}" data-company="{{ c.company }}" data-regions="{{ c.regions|join(' ') }}" data-kind="{{ c.kind }}" data-text="{{ (c.title ~ ' ' ~ c.why ~ ' ' ~ categories[c.category].label ~ ' ' ~ c.kind ~ ' activity ' ~ (c.coll.plural if c.coll else ''))|lower }}">
+      <li class="fl-item" data-cat="{{ c.category }}" data-id="{{ c.id }}" data-title="{{ c.title }}" data-category="{{ c.category }}" data-effort="{{ c.effort }}" data-cost="{{ c.cost }}" data-time="{{ c.time }}" data-setting="{{ c.setting }}" data-company="{{ c.company }}" data-regions="{{ c.regions|join(' ') }}" data-places="{{ (c.places or [])|join(' ') }}" data-insp="{{ ('story ' if c.has_story else '') ~ ('film' if c.has_film else '') }}" data-kind="{{ c.kind }}" data-text="{{ (c.title ~ ' ' ~ c.why ~ ' ' ~ categories[c.category].label ~ ' ' ~ c.kind ~ ' activity ' ~ (c.coll.plural if c.coll else '') ~ ' ' ~ (c.place_label or ''))|lower }}">
         <p class="kicker">{{ c.coll.label if c.coll else categories[c.category].label }} · {{ L.effort[c.effort] }}</p>
         <h3><a href="/list/{{ c.id }}/">{{ c.title }}</a></h3>
         <p class="fl-why">{{ c.why_short }}</p>
-        <p class="fl-meta">{{ L.cost[c.cost] }} · {{ L.time[c.time] }}{% if c.region_label %} · {{ c.region_label }}{% endif %}</p>
+        <p class="fl-meta">{{ L.cost[c.cost] }} · {{ L.time[c.time] }}{% if c.place_label %} · {{ c.place_label }}{% elif c.region_label %} · {{ c.region_label }}{% endif %}</p>
+        {% if c.has_story or c.has_film %}<p class="fl-insp">{% if c.has_story %}<span>Someone who did it</span>{% endif %}{% if c.has_film %}<span>Film</span>{% endif %}</p>{% endif %}
         <p class="fl-go" aria-hidden="true">How to start and where to go <span>→</span></p>
         <button type="button" class="chip fl-add" data-fl-add="{{ c.id }}" aria-pressed="false">Add to my list</button>
       </li>

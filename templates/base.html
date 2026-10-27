@@ -41,8 +41,8 @@
       <details class="topics" data-topics>
         <summary>Topics</summary>
         <div class="dd">
-          {% for cid, c in categories.items() %}<a href="/{{ cid }}/" {% if path.startswith('/' ~ cid ~ '/') %}aria-current="page"{% endif %}><strong>{{ c.label }}</strong><span>{{ c.blurb }}</span></a>{% endfor %}
-          <a href="/scam-help/" {% if path.startswith('/scam-help/') %}aria-current="page"{% endif %}><strong>Scam checker</strong><span>Got a suspicious text, email, call or visitor? Check it before you act.</span></a>
+          {% for cid, c in categories.items() %}<a href="/{{ cid }}/" data-cat="{{ cid }}" {% if path.startswith('/' ~ cid ~ '/') %}aria-current="page"{% endif %}><strong>{{ c.label }}</strong><span>{{ c.blurb }}</span></a>{% endfor %}
+          <a href="/scam-help/" class="dd-scam" {% if path.startswith('/scam-help/') %}aria-current="page"{% endif %}><strong>Scam checker</strong><span>Got a suspicious text, email, call or visitor? Check it before you act.</span></a>
         </div>
       </details>
       <a href="/start-here/" class="hide-sm" {% if path.startswith('/start-here/') %}aria-current="page"{% endif %}>Start here</a>

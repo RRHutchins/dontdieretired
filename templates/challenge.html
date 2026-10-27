@@ -12,13 +12,26 @@
   <h1>{{ c.title }}</h1>
   <div class="fl-invited" data-fl-invited hidden><p>A friend has invited you to do this with them.</p><button type="button" class="btn btn-small" data-fl-add="{{ c.id }}">Add to my list</button><button type="button" class="fl-x" aria-label="Close this message" data-fl-invited-close>×</button></div>
   <p class="lead">{{ c.why }}</p>
-  <p class="fl-facts"><span>{{ L.effort[c.effort] }}</span><span>{{ L.cost[c.cost] }}</span><span>{{ L.time[c.time] }}</span><span>{{ L.setting[c.setting] }}</span><span>{{ L.company[c.company] }}</span>{% if c.region_label %}<span>{{ c.region_label }}</span>{% endif %}{% if c.season %}<span>{{ c.season }}</span>{% endif %}</p>
+  <p class="fl-facts"><span>{{ L.effort[c.effort] }}</span><span>{{ L.cost[c.cost] }}</span><span>{{ L.time[c.time] }}</span><span>{{ L.setting[c.setting] }}</span><span>{{ L.company[c.company] }}</span>{% if c.place_label %}<span>{{ c.place_label }}</span>{% elif c.region_label %}<span>{{ c.region_label }}</span>{% endif %}{% if c.season %}<span>{{ c.season }}</span>{% endif %}</p>
 
   <div class="fl-cta">
     <button type="button" class="btn fl-add" data-fl-add="{{ c.id }}" aria-pressed="false">Add to my list</button>
     <a class="fl-mine-link" href="/list/#mine" data-fl-minelink hidden>See my list</a>
     {{ share_button(cfg.site.url ~ '/list/' ~ c.id ~ '/', c.title, 'challenge') }}
   </div>
+
+  {% if c.story_art or c.inspire_items %}
+  <section class="fl-inspire" data-cat="{{ c.category }}" aria-labelledby="fl-ins-h">
+    <h2 id="fl-ins-h">Someone who has done it</h2>
+    {% if c.story_note and c.story_art %}<p>{{ c.story_note }}</p>{% endif %}
+    <div class="fl-inspire-grid">
+      {% if c.story_art %}<a class="fl-ins-card" href="{{ c.story_art.url }}"><span class="kicker">On this site</span><strong>{{ c.story_art.title }}</strong><span class="fl-go">Read the story <span aria-hidden="true">→</span></span></a>{% endif %}
+      {% for i in c.inspire_items if i.kind == 'read' %}<a class="fl-ins-card" href="{{ i.url }}" target="_blank" rel="noopener" data-fl-out><span class="kicker">{{ i.outlet }}</span><strong>{{ i.person }}</strong><span>{{ i.line }}</span><span class="fl-go">Read “{{ i.title }}” <span aria-hidden="true">→</span></span></a>{% endfor %}
+    </div>
+    {% for i in c.inspire_items if i.kind == 'film' %}<figure class="fl-ins-film"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/{{ i.id }}" title="{{ i.title }}" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div><figcaption><strong>{{ i.person }}</strong>: {{ i.line }} <span class="meta">Film: “{{ i.title }}”, from {{ i.channel }} on YouTube.</span></figcaption></figure>{% endfor %}
+    {% if c.inspire_items %}<p class="disclosure">These are real people who did this, as reported by the outlets named. We opened each one before linking it. None of them is connected with this site.</p>{% endif %}
+  </section>
+  {% endif %}
 
   <h2>How to start</h2>
   <ol class="fl-start">{% for s in c.start %}<li>{{ s }}</li>{% endfor %}</ol>
@@ -41,13 +54,9 @@
     <span class="meta" data-fl-invite-msg role="status"></span>
   </aside>
 
-  {% if c.guide_art or c.story_art %}
+  {% if c.guide_art %}
   <h2>From the site</h2>
-  {% if c.story_note %}<p>{{ c.story_note }}</p>{% endif %}
-  <div class="grid grid-2">
-    {% if c.guide_art %}{{ card(c.guide_art) }}{% endif %}
-    {% if c.story_art %}{{ card(c.story_art) }}{% endif %}
-  </div>
+  <div class="grid grid-2">{{ card(c.guide_art) }}</div>
   {% endif %}
 
   {% if more %}
@@ -55,7 +64,7 @@
   <ul class="fl-more">{% for m in more %}<li><a href="/list/{{ m.id }}/">{{ m.title }}</a> <span class="meta">{{ L.effort[m.effort] }}</span></li>{% endfor %}</ul>
   {% endif %}
   {% if c.coll %}<p><a href="/list/{{ c.coll.slug }}/">All {{ c.coll.plural | lower }} →</a></p>{% endif %}
-  <p><a href="/list/">← All {{ total }} activities</a></p>
+  <p><a href="/list/">← All activities</a></p>
 </article>
 {% endblock %}
 {% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script>{% endblock %}
