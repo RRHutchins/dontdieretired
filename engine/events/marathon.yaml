@@ -1,0 +1,16 @@
+id: marathon
+name: A first marathon
+kinds: [endurance, running]
+demands: "26.2 miles (42.2 km) of running."
+sources: [lme-start-training, higdon-novice1]
+key_session:
+  name: long run
+  unit: miles
+  start: {starter: 6, active: 8, advanced: 10}
+  peak: 20
+  note: at an easy, conversational pace; walking breaks are fine
+second_session: {name: easy run, minutes: 40}
+specific: {name: steady run, from_week: 4, text: "a run at a comfortably steady effort, about 5 to 6 out of 10, for 30 to 45 minutes"}
+pack_from_fraction: null
+weeks: {default: 18, min: 16}
+prerequisite: "If you cannot yet run for 30 minutes without stopping, do the NHS Couch to 5K first: it ends with 30-minute runs three times a week."

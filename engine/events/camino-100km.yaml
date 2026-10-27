@@ -1,0 +1,17 @@
+id: camino-100km
+name: The last 100 km of a Camino
+kinds: [endurance, walking, multiday]
+activity: walk-the-camino-to-santiago
+demands: "At least 100 km on foot over consecutive days to Santiago de Compostela, often five to seven days of 15 to 25 km."
+sources: [bmc-long-distance]
+key_session:
+  name: long walk in the boots you will wear
+  unit: km
+  start: {starter: 8, active: 14, advanced: 18}
+  peak: 22
+  note: on mixed ground including some hills
+second_session: {name: brisk walk, minutes: 45}
+specific: null
+pack_from_fraction: 0.4
+back_to_back_from_fraction: 0.5
+weeks: {default: 12, min: 8}

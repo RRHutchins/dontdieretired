@@ -1,0 +1,186 @@
+# The guidance engine's library of sources (RUNBOOK §6r). Every source here was opened and read on its `opened` date.
+# tier = how much weight its guidance carries (the engine ranks by this, then by how many independent sources agree):
+#   5  official health body or government guidance (NHS, UK Chief Medical Officers, UKHSA/NaTHNaC, CDC), or an
+#      international expert consensus statement
+#   4  peer-reviewed systematic review, meta-analysis or large prospective study
+#   3  national governing body, national coaching body, or the authority that runs the route or event
+#   2  recognised coach or elite athlete, published by a governing body or reputable outlet
+#   1  general media, commercial or personal sites (used only to find better sources; never enough on its own)
+# `independent` groups sources that are really one voice (e.g. two NHS pages): agreement counts once per group.
+sources:
+  - id: cmo-2019
+    tier: 5
+    group: uk-cmo
+    publisher: UK Chief Medical Officers (Department of Health and Social Care)
+    title: UK Chief Medical Officers' physical activity guidelines
+    year: 2019
+    url: https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines
+    opened: '2026-10-27'
+  - id: nhs-c25k
+    tier: 5
+    group: nhs
+    publisher: NHS (Better Health)
+    title: Couch to 5K running plan
+    year: 2026
+    url: https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/
+    opened: '2026-10-27'
+  - id: nhs-blisters
+    tier: 5
+    group: nhs
+    publisher: NHS
+    title: Blisters (last reviewed 22 November 2023)
+    year: 2023
+    url: https://www.nhs.uk/conditions/blisters/
+    opened: '2026-10-27'
+  - id: nhs-heart-attack
+    tier: 5
+    group: nhs
+    publisher: NHS
+    title: Symptoms of a heart attack (last reviewed 31 March 2026)
+    year: 2026
+    url: https://www.nhs.uk/conditions/heart-attack/symptoms/
+    opened: '2026-10-27'
+  - id: nhs-altitude
+    tier: 5
+    group: nhs
+    publisher: NHS
+    title: Altitude sickness (last reviewed 31 July 2023)
+    year: 2023
+    url: https://www.nhs.uk/conditions/altitude-sickness/
+    opened: '2026-10-27'
+  - id: nathnac-altitude
+    tier: 5
+    group: nathnac
+    publisher: National Travel Health Network and Centre (TravelHealthPro)
+    title: Altitude illness factsheet (updated 9 February 2023)
+    year: 2023
+    url: https://travelhealthpro.org.uk/factsheets/altitude-illness
+    opened: '2026-10-27'
+  - id: eah-consensus-2015
+    tier: 5
+    group: eah-consensus
+    publisher: Clinical Journal of Sport Medicine, reported by Wolters Kluwer
+    title: Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)
+    year: 2015
+    url: https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise
+    opened: '2026-10-27'
+  - id: bosquet-2007
+    tier: 4
+    group: bosquet-2007
+    publisher: Medicine & Science in Sports & Exercise 39(8)
+    title: Effects of tapering on performance, a meta-analysis of 27 studies
+    year: 2007
+    url: https://pubmed.ncbi.nlm.nih.gov/17762369/
+    opened: '2026-10-27'
+  - id: lauersen-2014
+    tier: 4
+    group: lauersen-2014
+    publisher: British Journal of Sports Medicine 48(11)
+    title: The effectiveness of exercise interventions to prevent sports injuries, a meta-analysis of 25 randomised trials (Lauersen, Bertelsen and Andersen)
+    year: 2014
+    url: https://bjsm.bmj.com/content/48/11/871
+    opened: '2026-10-27'
+  - id: nielsen-2014
+    tier: 4
+    group: nielsen-2014
+    publisher: Journal of Orthopaedic and Sports Physical Therapy 44(10)
+    title: Excessive progression in weekly running distance and risk of running-related injuries, a one-year study of 874 novice runners (Nielsen and colleagues)
+    year: 2014
+    url: https://vbn.aau.dk/da/publications/excessive-progression-in-weekly-running-distance-and-risk-of-runn
+    opened: '2026-10-27'
+  - id: ijspp-2010-intensity
+    tier: 4
+    group: ijspp-2010
+    publisher: International Journal of Sports Physiology and Performance 5(3)
+    title: What is best practice for training intensity and duration distribution in endurance athletes? (review)
+    year: 2010
+    url: https://pubmed.ncbi.nlm.nih.gov/20861519/
+    opened: '2026-10-27'
+  - id: ea-training-pace
+    tier: 3
+    group: england-athletics
+    publisher: England Athletics (Tom Craggs, National Endurance Manager)
+    title: Simplifying the running jargon, training pace
+    year: 2024
+    url: https://www.englandathletics.org/news/simplifying-the-running-jargon-training-pace-2/
+    opened: '2026-10-27'
+  - id: ydnpa-three-peaks
+    tier: 3
+    group: ydnpa
+    publisher: Yorkshire Dales National Park Authority
+    title: Walking the Yorkshire Three Peaks
+    year: 2026
+    url: https://www.yorkshiredales.org.uk/things-to-do/get-outdoors/yorkshire-three-peaks/walking-the-yorkshire-three-peaks/
+    opened: '2026-10-27'
+  - id: tanapa-kili
+    tier: 3
+    group: tanapa
+    publisher: Tanzania National Parks, Kilimanjaro National Park
+    title: Visitor guide
+    year: 2026
+    url: https://tanzaniaparks.go.tz/kilimanjaro/visitor-guide
+    opened: '2026-10-27'
+  - id: lme-start-training
+    tier: 3
+    group: london-marathon-events
+    publisher: London Marathon Events
+    title: Start training (16-week Beginner, Improver and Advanced plans)
+    year: 2026
+    url: https://www.londonmarathonevents.co.uk/london-marathon/start-training
+    opened: '2026-10-27'
+  - id: bmc-hill-fit
+    tier: 2
+    group: bmc-ridgway
+    publisher: British Mountaineering Council (Sarah Ridgway, international fell runner and guide)
+    title: 12 tips for staying fit on the hills
+    year: 2026
+    url: https://www.thebmc.co.uk/en/hill-skills-how-to-stay-hill-fit-12-tips
+    opened: '2026-10-27'
+  - id: bmc-long-distance
+    tier: 2
+    group: bmc-townsend
+    publisher: British Mountaineering Council (Chris Townsend, long-distance walker)
+    title: How to get into long-distance walking
+    year: 2026
+    url: https://thebmc.co.uk/en/beginner-long-distance-walks-tips-chris-townsend
+    opened: '2026-10-27'
+  - id: ea-pavey-marathon
+    tier: 2
+    group: pavey
+    publisher: England Athletics (Jo Pavey, five-time Olympian)
+    title: Top marathon tips from five-time Olympian Jo Pavey
+    year: 2023
+    url: https://www.englandathletics.org/news/top-marathon-tips-from-five-time-olympian-jo-pavey/
+    opened: '2026-10-27'
+  - id: higdon-novice1
+    tier: 2
+    group: higdon
+    publisher: Hal Higdon (marathon coach and author)
+    title: Novice 1 marathon training programme
+    year: 2026
+    url: https://www.halhigdon.com/training-programs/marathon-training/novice-1-marathon/
+    opened: '2026-10-27'
+  - id: issn-ultra-2019
+    tier: 4
+    group: issn-2019
+    publisher: Journal of the International Society of Sports Nutrition (Tiller and colleagues)
+    title: "International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing"
+    year: 2019
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/
+    opened: '2026-10-27'
+  - id: rc-down-weeks
+    tier: 2
+    group: runnersconnect
+    publisher: RunnersConnect (Jeff Gaudette, running coach since 2005 and former Olympic Trials qualifier)
+    title: What is a down week in running? How and when to take one
+    year: 2026
+    url: https://runnersconnect.net/why-planned-down-weeks-are-important/
+    opened: '2026-10-27'
+  - id: wanderlust-trek-prep
+    tier: 1
+    group: wanderlust
+    publisher: Wanderlust (with advice from the Long Distance Walkers Association and experienced trekkers)
+    title: How to prepare for a long-distance trek
+    year: 2026
+    url: https://www.wanderlust.co.uk/content/how-to-prepare-long-distance-trek
+    opened: '2026-10-27'

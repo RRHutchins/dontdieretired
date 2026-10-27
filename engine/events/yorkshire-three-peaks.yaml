@@ -1,0 +1,17 @@
+id: yorkshire-three-peaks
+name: The Yorkshire Three Peaks
+kinds: [endurance, walking, hill]
+activity: walk-yorkshire-three-peaks
+demands: "24 miles (38.6 km) with about 5,000 feet (1,600 m) of climbing over Pen-y-Ghent, Ingleborough and Whernside, usually in one day."
+sources: [ydnpa-three-peaks]
+key_session:
+  name: long hill walk
+  unit: hours
+  start: {starter: 2, active: 4, advanced: 6}
+  peak: 9
+  note: on hilly ground where you can, building the climbing as well as the hours
+second_session: {name: brisk walk, minutes: 45}
+specific: {name: hill repeats, from_week: 3, text: "climb a steep road, hill or stairs for 50 to 100 metres of height, four to six times, coming down slowly"}
+pack_from_fraction: 0.5
+weeks: {default: 12, min: 8}
+kit: "Rucksack with dry bags, worn-in boots, layers, waterproofs, hat, gloves, spare warm clothes, food, water, map (OS Explorer OL2), compass, whistle, first aid kit, sun protection, torch with spare batteries, charged phone, emergency shelter, poles if you use them."

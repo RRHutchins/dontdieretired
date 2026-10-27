@@ -1,0 +1,17 @@
+id: kilimanjaro
+name: Climbing Kilimanjaro
+kinds: [endurance, walking, hill, multiday, altitude]
+activity: climb-kilimanjaro
+demands: "A multi-day trek to 5,895 m (19,341 ft) with a licensed operator; summit day is long, cold and at high altitude."
+sources: [tanapa-kili, nhs-altitude, nathnac-altitude]
+key_session:
+  name: long hill walk with your pack
+  unit: hours
+  start: {starter: 2, active: 4, advanced: 5}
+  peak: 7
+  note: on the steepest ground you can find
+second_session: {name: brisk walk or cross-training, minutes: 45}
+specific: {name: hill repeats, from_week: 3, text: "climb a steep hill or stairs for 50 to 100 metres of height, four to six times, coming down slowly"}
+pack_from_fraction: 0.3
+back_to_back_from_fraction: 0.6
+weeks: {default: 20, min: 12}
