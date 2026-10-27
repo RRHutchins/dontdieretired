@@ -4,7 +4,7 @@ Every photograph on the site that we did not make ourselves, with its author, li
 Written by `tools/photos.py`; do not edit by hand. The same list is public at /photo-credits/.
 Each photo is resized for the web and not otherwise changed.
 
-| Article | File | Author | Licence | Source | Fetched |
+| Page | File | Author | Licence | Source | Fetched |
 |---|---|---|---|---|---|
 | alex-worsick-train-driver | File:Cab of a Class 317 (2).jpg | Matthew Black from London, UK | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Cab_of_a_Class_317_(2).jpg | 2026-10-24 |
 | amy-gubser-golden-gate-farallon-swim-55 | File:Remains of Farallon Islands Light in 2014.jpg | Frank Schulenburg | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Remains_of_Farallon_Islands_Light_in_2014.jpg | 2026-10-07 |
