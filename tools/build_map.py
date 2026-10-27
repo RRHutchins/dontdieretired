@@ -3,9 +3,11 @@
 
 Source: Natural Earth 1:10m admin-1 states and provinces (public domain, naturalearthdata.com), from
   https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson
-Download that file anywhere, then:  python tools/build_map.py <path to the .geojson>
+Download that file anywhere, then:  python tools/build_map.py <admin-1 .geojson> [<admin-0 countries .geojson>]
 Writes content/map_shapes.json: SVG path data for the 50 US states plus DC (Alaska and Hawaii as insets)
-and twelve UK areas (the nine English regions, Scotland, Wales, Northern Ireland). Run it again only to
+and twelve UK areas (the nine English regions, Scotland, Wales, Northern Ireland). With a second argument, the
+Natural Earth 1:50m admin-0 countries file (public domain, same repository, geojson/ne_50m_admin_0_countries.geojson),
+it also writes a world map of every country in the Equal Earth projection. Run it again only to
 change the shapes; the build reads the JSON and never needs the big file.
 Needs: pip install shapely
 """
@@ -61,7 +63,37 @@ def fit(geoms, w, h, proj, pad=6):
     return lambda lon, lat: (ox + s * (proj(lon, lat)[0] - min(xs)), oy + s * (max(ys) - proj(lon, lat)[1]))
 
 
-def main(src):
+def equal_earth(lon, lat):
+    A1, A2, A3, A4, M = 1.340264, -0.081106, 0.000893, 0.003796, math.sqrt(3) / 2
+    lam, phi = math.radians(max(-180, min(180, lon))), math.radians(lat)
+    th = math.asin(M * math.sin(phi))
+    x = 2 * math.sqrt(3) * lam * math.cos(th) / (3 * (9 * A4 * th ** 8 + 7 * A3 * th ** 6 + 3 * A2 * th ** 2 + A1))
+    y = th * (A4 * th ** 8 + A3 * th ** 6 + A2 * th ** 2 + A1)
+    return x, y
+
+
+def world(src):
+    """Every country (and Antarctica), keyed by its three-letter Natural Earth code, with its continent."""
+    feats = json.loads(pathlib.Path(src).read_text(encoding="utf-8"))["features"]
+    W, H = 1000, 500
+    sx = 1000 / (2 * equal_earth(180, 0)[0]); top = equal_earth(0, 84)[1]
+    fx = lambda lon, lat: ((equal_earth(lon, lat)[0] + equal_earth(180, 0)[0]) * sx, (top - equal_earth(lon, lat)[1]) * sx + 4)
+    areas = []
+    for f in feats:
+        pr = f["properties"]
+        if pr.get("CONTINENT") == "Seven seas (open ocean)" and pr.get("NAME") not in ("Mauritius", "Seychelles", "Maldives"): continue
+        g = shape(f["geometry"]).buffer(0)
+        polys = list(g.geoms) if g.geom_type == "MultiPolygon" else [g]
+        big = max(polys, key=lambda p_: p_.area)
+        keep = unary_union([p_ for p_ in polys if p_.area > 0.08 or p_ is big])
+        tol = 0.12 if keep.area > 2 else 0.02
+        areas.append({"id": pr["ADM0_A3"], "name": pr["NAME"], "continent": pr["CONTINENT"].replace("Seven seas (open ocean)", "Africa"),
+                      "d": to_d(keep.simplify(tol, preserve_topology=True), fx)})
+    ys = [float(n) for a_ in areas for n in __import__("re").findall(r"[\d.]+,([\d.]+)", a_["d"])]
+    return {"viewBox": f"0 0 {W} {math.ceil(max(ys)) + 4}", "areas": sorted(areas, key=lambda a_: a_["name"])}
+
+
+def main(src, world_src=None):
     feats = json.loads(pathlib.Path(src).read_text(encoding="utf-8"))["features"]
     # ---- UK: dissolve counties into the twelve areas
     gb = [f for f in feats if f["properties"].get("adm0_a3") == "GBR"]
@@ -89,12 +121,14 @@ def main(src):
     hi = unary_union([p for p in (hi.geoms if hi.geom_type == "MultiPolygon" else [hi]) if p.bounds[0] > -161])  # the eight main islands only
     hifx_raw = fit([hi], 120, 80, lambda lon, lat: (lon * math.cos(math.radians(20.5)), lat))
     us_out.append({"id": "HI", "name": hi_name, "d": to_d(hi.simplify(0.01, preserve_topology=True), lambda x, y: (hifx_raw(x, y)[0] + 230, hifx_raw(x, y)[1] + H - 100))})
-    out = {"source": "Natural Earth 1:10m admin-1 (public domain), simplified by tools/build_map.py",
+    out = {"source": "Natural Earth 1:10m admin-1 and 1:50m admin-0 (public domain), simplified by tools/build_map.py",
            "uk": {"viewBox": "0 0 360 560", "areas": uk_out}, "us": {"viewBox": f"0 0 {W} {H}", "areas": us_out}}
+    if world_src:
+        out["world"] = world(world_src)
     dest = ROOT / "content" / "map_shapes.json"
     dest.write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
     print(f"wrote {dest} ({dest.stat().st_size // 1024} KB): {len(uk_out)} UK areas, {len(us_out)} US states")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None)

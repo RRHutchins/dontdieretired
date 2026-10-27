@@ -19,13 +19,14 @@
     <p class="fl-quiet" data-fl-ask hidden>Want suggestions? <button type="button" class="linklike" data-open-segments>Tell us what interests you</button> and we'll pick some out. Or just browse.</p>
 
     <section class="fl-map" data-fl-map aria-labelledby="fl-map-h">
-      <div class="fl-map-head"><h2 id="fl-map-h">Find things near you</h2>
-        <div class="fl-map-tabs" role="group" aria-label="Choose a map"><button type="button" class="chip" data-map-show="uk" aria-pressed="true">UK</button><button type="button" class="chip" data-map-show="us" aria-pressed="false">USA</button></div></div>
+      <div class="fl-map-head"><h2 id="fl-map-h">Find things to do, near and far</h2>
+        <div class="fl-map-tabs" role="group" aria-label="Choose a map"><button type="button" class="chip" data-map-show="uk" aria-pressed="true">UK</button><button type="button" class="chip" data-map-show="us" aria-pressed="false">USA</button>{% if shapes.world %}<button type="button" class="chip" data-map-show="world" aria-pressed="false">World</button>{% endif %}</div></div>
       <p class="meta fl-map-help">Tap a coloured area to see the activities tied to that place. Most can be done almost anywhere, so you can also <button type="button" class="linklike" data-map-country>see everything you can do in the <span data-map-cname>UK</span></button>.</p>
       {% for k in ('uk', 'us') %}<div class="fl-map-wrap fl-map-{{ k }}" data-map="{{ k }}"{% if k == 'us' %} hidden{% endif %}>
         <svg viewBox="{{ shapes[k].viewBox }}" aria-label="Map of the {{ 'UK' if k == 'uk' else 'USA' }}" role="group" focusable="false">{% for a in shapes[k].areas %}<path d="{{ a.d }}" data-area="{{ a.id }}" data-name="{{ a.name }}"{% if area_n.get(a.id) %} class="has" tabindex="0" role="button" aria-label="{{ a.name }}: {{ area_n[a.id] }} {{ 'activity' if area_n[a.id] == 1 else 'activities' }} tied to this area"{% else %} aria-hidden="true"{% endif %}><title>{{ a.name }}{% if area_n.get(a.id) %}: {{ area_n[a.id] }}{% endif %}</title></path>{% endfor %}</svg>
       </div>{% endfor %}
-      <label class="fl-map-pick">Or choose an area<select data-map-pick><option value="">Choose…</option>{% for k in ('uk', 'us') %}<optgroup label="{{ 'UK' if k == 'uk' else 'USA' }}">{% for a in shapes[k].areas|sort(attribute='name') %}<option value="{{ a.id }}" data-country="{{ k }}">{{ a.name }}{% if area_n.get(a.id) %} ({{ area_n[a.id] }}){% endif %}</option>{% endfor %}</optgroup>{% endfor %}</select></label>
+      {% if shapes.world %}<div class="fl-map-wrap fl-map-world" data-map="world" data-src="/static/map/world.svg?v={{ asset_v }}" hidden><p class="meta">Loading the world map…</p></div>{% endif %}
+      <label class="fl-map-pick">Or choose an area<select data-map-pick><option value="">Choose…</option>{% for k in ('uk', 'us') %}<optgroup label="{{ 'UK' if k == 'uk' else 'USA' }}">{% for a in shapes[k].areas|sort(attribute='name') %}<option value="{{ a.id }}" data-country="{{ k }}">{{ a.name }}{% if area_n.get(a.id) %} ({{ area_n[a.id] }}){% endif %}</option>{% endfor %}</optgroup>{% endfor %}{% if shapes.world %}{% for cont, grp in shapes.world.areas|rejectattr('id', 'in', ['GBR', 'USA'])|groupby('continent') %}<optgroup label="{{ cont }}">{% for a in grp %}<option value="{{ a.id }}" data-country="world">{{ a.name }}{% if area_n.get(a.id) %} ({{ area_n[a.id] }}){% endif %}</option>{% endfor %}</optgroup>{% endfor %}{% endif %}</select></label>
       <p class="meta fl-map-credit">Boundaries from Natural Earth (public domain).</p>
     </section>
 
@@ -39,7 +40,7 @@
         <label>Where<select data-fl-f="setting"><option value="">Any</option><option value="indoors">Indoors</option><option value="outdoors">Outdoors</option></select></label>
         <label>Company<select data-fl-f="company"><option value="">Any</option><option value="solo">On my own</option><option value="others">With others</option></select></label>
         <label>Inspiration<select data-fl-f="insp"><option value="">Any</option><option value="yes">Someone who did it</option><option value="film">With a film</option></select></label>
-        <label>Country<select data-fl-f="region"><option value="">All of them</option><option value="uk">UK</option><option value="us">US</option><option value="anywhere">Can be done anywhere</option></select></label>
+        <label>Country<select data-fl-f="region"><option value="">All of them</option><option value="uk">UK</option><option value="us">US</option><option value="world">Rest of the world</option><option value="anywhere">Can be done anywhere</option></select></label>
       </div>
       <p class="fl-actions"><button type="button" class="btn btn-small" data-fl-surprise>Surprise me</button> <button type="button" class="linklike" data-fl-clear hidden>Clear filters</button></p>
     </div>

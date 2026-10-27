@@ -935,3 +935,6 @@ h1{line-height:1.04}
 .next-acts{margin:28px 0}
 .next-acts .meta a{font-weight:600}
 .auto-link{text-decoration-thickness:1px;text-underline-offset:3px}
+.fl-map-world svg{display:block;width:100%;height:auto}
+.fl-map path.jump{fill:var(--think)}
+@media (min-width:820px){.fl-map-world{grid-column:1 / -1;grid-row:auto}}

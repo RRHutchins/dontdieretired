@@ -664,7 +664,8 @@ def build(make_social=True):
         # The map (RUNBOOK §6h): UK areas and US states, shapes made once by tools/build_map.py from Natural Earth (public domain)
         _ms = CONTENT / "map_shapes.json"
         shapes = json.loads(_ms.read_text(encoding="utf-8")) if _ms.exists() else {"uk": {"areas": []}, "us": {"areas": []}}
-        AREA = {a["id"]: (k, a["name"]) for k in ("uk", "us") for a in shapes[k]["areas"]}
+        MAPS = [k for k in ("uk", "us", "world") if k in shapes]
+        AREA = {a["id"]: (k, a["name"]) for k in MAPS for a in shapes[k]["areas"] if not (k == "world" and a["id"] in ("GBR", "USA"))}
         for c in chs:
             miss = [k for k in need if not c.get(k)]
             assert not miss, f"challenge {c.get('id')}: missing {miss}"
@@ -678,7 +679,7 @@ def build(make_social=True):
             first = re.split(r"(?<=[.!?])\s", c["why"].strip())[0]
             c["why_short"] = first if len(first) <= 170 else first[:167].rsplit(" ", 1)[0] + "…"
             r = c["regions"]
-            c["region_label"] = "" if "anywhere" in r else " and ".join(x.upper() for x in r)
+            c["region_label"] = "" if "anywhere" in r else " and ".join(x.upper() for x in r if x != "world")
             # what a search result shows: the activity, then what the page gives (how to start, the official links)
             c["seo"] = next((t for t in (c["title"] + ": how to start and where to go", c["title"] + ": how to start", c["title"]) if len(t) <= 60), c["title"])
             tail = " How to start, and the official " + ("link." if len(c["links"]) == 1 else "links.")
@@ -738,6 +739,20 @@ def build(make_social=True):
         for c in chs:
             for pl in c.get("places") or []: area_n[pl] = area_n.get(pl, 0) + 1
         urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}, colls=colls, shapes=shapes, area_n=area_n))
+        # the world map is loaded only when a reader opens its tab: a file of clickable country shapes
+        if "world" in shapes:
+            (DIST / "static" / "map").mkdir(parents=True, exist_ok=True)
+            parts = []
+            for a in shapes["world"]["areas"]:
+                n, nm = area_n.get(a["id"], 0), html.escape(a["name"])
+                if a["id"] in ("GBR", "USA"):   # these open their own detailed maps
+                    k = "uk" if a["id"] == "GBR" else "us"
+                    parts.append(f'<path d="{a["d"]}" class="has jump" data-jump="{k}" data-name="{nm}" tabindex="0" role="button" aria-label="{nm}: open the detailed map"><title>{nm}: open the detailed map</title></path>')
+                elif n:
+                    parts.append(f'<path d="{a["d"]}" class="has" data-area="{a["id"]}" data-name="{nm}" tabindex="0" role="button" aria-label="{nm}: {n} {"activity" if n == 1 else "activities"}"><title>{nm}: {n}</title></path>')
+                else:
+                    parts.append(f'<path d="{a["d"]}" data-area="{a["id"]}" data-name="{nm}" aria-hidden="true"><title>{nm}</title></path>')
+            (DIST / "static" / "map" / "world.svg").write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{shapes["world"]["viewBox"]}" role="group" aria-label="Map of the world">{"".join(parts)}</svg>', encoding="utf-8")
         for v in colls:
             item_list = [{"@type": "ListItem", "position": n, "name": c["title"], "url": f"{cfg['site']['url']}/list/{c['id']}/"} for n, c in enumerate(v["acts"], 1)]
             urls.append(out(f"/list/{v['slug']}/", "collection.html", coll=v, L=LBL, total=len(chs), item_list=item_list))

@@ -91,7 +91,8 @@
   let place = '';
   const mapBox = $('[data-fl-map]', root);
   const areaName = id => { const pth = mapBox && $('[data-area="' + id + '"]', mapBox); return pth ? pth.dataset.name : id; };
-  const areaCountry = id => (/^[A-Z]{2}$/.test(id) ? 'us' : 'uk');
+  const areaCountry = id => (/^[A-Z]{3}$/.test(id) ? 'world' : /^[A-Z]{2}$/.test(id) ? 'us' : 'uk');
+  const CNAME = { uk: 'the UK', us: 'the USA', world: 'the rest of the world' };
   function matches(li) {
     if (place && !(' ' + li.dataset.places + ' ').includes(' ' + place + ' ')) return false;
     const words = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
@@ -116,7 +117,7 @@
     const what = n === 1 ? '1 activity' : n + ' activities';
     let html;
     if (place) {
-      const c = areaCountry(place), cn = c === 'us' ? 'the USA' : 'the UK';
+      const c = areaCountry(place), cn = CNAME[c];
       html = (n ? '<strong>' + what + '</strong> tied to ' + esc(areaName(place)) : '<strong>Nothing tied to ' + esc(areaName(place)) + ' yet</strong>')
         + ' <button type="button" class="fl-results-btn" data-map-wide="' + c + '">See everything you can do in ' + cn + ' →</button>';
     }
@@ -145,7 +146,12 @@
     const showMap = k => {
       $$('[data-map]', mapBox).forEach(w => { w.hidden = w.dataset.map !== k; });
       $$('[data-map-show]', mapBox).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mapShow === k)));
-      $('[data-map-cname]', mapBox).textContent = k === 'us' ? 'USA' : 'UK'; mapBox.dataset.country = k;
+      $('[data-map-cname]', mapBox).textContent = { uk: 'UK', us: 'USA', world: 'rest of the world' }[k]; mapBox.dataset.country = k;
+      const w = $('[data-map="' + k + '"][data-src]', mapBox);
+      if (w && !w.dataset.loaded) {   // the world map is a separate file, fetched the first time its tab is opened
+        w.dataset.loaded = '1';
+        fetch(w.dataset.src).then(r => r.text()).then(t => { w.innerHTML = t; filter(); }).catch(() => { w.innerHTML = '<p class="meta">The world map could not load. Use the list below it instead.</p>'; });
+      }
     };
     const pickArea = id => {
       // an area narrows to that place only: clear the other filters so nothing hides what the reader just asked for
@@ -154,13 +160,14 @@
       filter(true); toResults(); track('list_map', { area: id });
     };
     const wide = c => { place = ''; q.value = ''; sels.forEach(s => { s.value = ''; }); regSel.value = c; $('[data-map-pick]', mapBox).value = ''; showMap(c); filter(true); toResults(); };
-    showMap(region === 'us' ? 'us' : 'uk');
+    showMap(region === 'us' ? 'us' : region === 'uk' ? 'uk' : ($('[data-map="world"]', mapBox) ? 'world' : 'uk'));
     mapBox.addEventListener('click', e => {
+      const j = e.target.closest('path.jump'); if (j) return showMap(j.dataset.jump);
       const a = e.target.closest('path.has'); if (a) return pickArea(a.dataset.area);
       const t = e.target.closest('[data-map-show]'); if (t) return showMap(t.dataset.mapShow);
       if (e.target.closest('[data-map-country]')) wide(mapBox.dataset.country);
     });
-    mapBox.addEventListener('keydown', e => { const a = e.target.closest('path.has'); if (a && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); pickArea(a.dataset.area); } });
+    mapBox.addEventListener('keydown', e => { const a = e.target.closest('path.has'); if (a && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); if (a.dataset.jump) showMap(a.dataset.jump); else pickArea(a.dataset.area); } });
     $('[data-map-pick]', mapBox).addEventListener('change', e => { if (e.target.value) pickArea(e.target.value); else { place = ''; filter(true); } });
     countEl.addEventListener('click', e => { const b = e.target.closest('[data-map-wide]'); if (b) wide(b.dataset.mapWide); });
   }
