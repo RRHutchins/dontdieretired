@@ -33,6 +33,16 @@
   </section>
   {% endif %}
 
+  {% for sec in c.detail or [] %}
+  <section class="fl-detail">
+    <h2>{{ sec.h }}</h2>
+    {% for para in (sec.p if sec.p is not string else [sec.p]) if sec.p %}<p>{{ para }}</p>{% endfor %}
+    {% if sec.table %}<div class="fl-table-wrap"><table class="fl-table"><thead><tr>{% for h in sec.table.head %}<th scope="col">{{ h }}</th>{% endfor %}</tr></thead><tbody>{% for r in sec.table.rows %}<tr>{% for cell in r %}{% if loop.first %}<th scope="row">{{ cell }}</th>{% else %}<td>{{ cell }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody></table></div>{% endif %}
+    {% if sec.list %}<ul>{% for li in sec.list %}<li>{{ li }}</li>{% endfor %}</ul>{% endif %}
+    {% if sec.after %}<p>{{ sec.after }}</p>{% endif %}
+  </section>
+  {% endfor %}
+
   <h2>How to start</h2>
   <ol class="fl-start">{% for s in c.start %}<li>{{ s }}</li>{% endfor %}</ol>
 
@@ -46,6 +56,16 @@
   {% if c.category in ('money', 'earn') %}<p class="disclosure">This is general information, not financial or business advice for your own circumstances.</p>{% endif %}
 
   {% if c.local %}{{ near_you(c.local) }}{% endif %}
+
+  {% if c.faq %}
+  <section class="fl-faq">
+    <h2>Questions people ask</h2>
+    {% for f in c.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
+  </section>
+  {% endif %}
+  {% if c.sources %}
+  <p class="disclosure fl-sources">Where this comes from: {% for x in c.sources %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "" }}{% endfor %}. Opened {{ c.sources_checked }}.</p>
+  {% endif %}
 
   <aside class="fl-with">
     <h3>Do this with someone</h3>

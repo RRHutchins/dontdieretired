@@ -150,6 +150,58 @@
     outlet: grough
     url: https://www.grough.co.uk/magazine/2011/01/01/walkers-52-snowdon-ascents-raise-thousands-for-charity
     checked: '2026-10-27'
+  seo_title: "How to climb Yr Wyddfa (Snowdon): the six paths compared"
+  description: The six paths up Yr Wyddfa (Snowdon) compared by distance and time, what to wear and carry, how to get there, and how to plan a first climb.
+  detail:
+  - h: What it's like
+    p:
+    - Yr Wyddfa, the Welsh name for Snowdon, is the highest mountain in Eryri National Park at 1,085 metres (3,560 feet). More than 600,000 people climb it every year, so on a summer day you will rarely be alone on the way up.
+    - Busy does not mean easy. The National Park Authority rates every main path as hard and strenuous, and most people take four to seven hours there and back. The top is colder, wetter and windier than the car park, the weather can turn within minutes, and the way down is often harder on the legs than the way up.
+  - h: The six main paths
+    table:
+      head: [Path, Round trip, Typical time]
+      rows:
+      - [Llanberis Path, 14.5 km (9 miles), 7 hours]
+      - [Miners' Track, 13 km (8 miles), 6 hours]
+      - [Pyg Track, 11 km (6.8 miles), 6 hours]
+      - [Watkin Path, 13 km (8 miles), 6 hours]
+      - [Rhyd Ddu Path, 12 km (7.5 miles), 6 hours]
+      - [Snowdon Ranger Path, 13 km (8 miles), 6 hours]
+    after: The Llanberis Path is the longest and the Pyg Track the shortest. The Miners' Track starts at Pen y Pass and passes three lakes, Llyn Teyrn, Llyn Llydaw and Glaslyn, before a steep, loose second half with some scrambling; it climbs 723 metres (2,372 feet). The park suggests building up on an easier walk before you try the mountain.
+  - h: What to wear and carry
+    list:
+    - Walking boots with thick soles and high sides. The park is plain that trainers are not suitable.
+    - Waterproof and warm layers, because the summit is far colder than the start.
+    - A map and compass, and the skill to use them. Signs at path junctions are not enough to navigate by.
+    - Food, drink, a small first aid kit and a torch.
+    - A fully charged phone, kept for emergencies.
+  - h: Getting there
+    p:
+    - Every path has a car park at its foot, but Llanberis, Pen y Pass, Nant Peris and Pont Bethania fill early in spring and summer. The Sherpa'r Wyddfa bus runs between the paths, which also lets you go up one path and down another.
+  - h: In winter
+    p:
+    - Snow can cover the summit through the winter and turns slippery when packed down. Reaching the top in winter conditions needs crampons, an ice axe and the skills to use them, and the park publishes a daily ground conditions report in that season. For a first climb, plan for late spring to early autumn.
+  faq:
+  - q: How long does it take to climb Snowdon?
+    a: The National Park Authority says four to seven hours there and back, depending on fitness, experience and weather. Its own figure is about six hours for most paths and seven for the Llanberis Path.
+  - q: Which is the shortest path up Snowdon?
+    a: The Pyg Track, at 11 km (6.8 miles) there and back. The longest is the Llanberis Path at 14.5 km (9 miles).
+  - q: Can I climb Snowdon in trainers?
+    a: The park says trainers are not suitable. Wear walking boots with thick soles and high sides.
+  - q: How high is Snowdon?
+    a: 1,085 metres, or about 3,560 feet. It is the highest mountain in Eryri National Park.
+  - q: What should I do in an emergency on the mountain?
+    a: Call 999, ask for the police and then Mountain Rescue. Deaf or speech-impaired walkers can use emergency text after registering by texting "register" to 999.
+  sources:
+  - label: Eryri National Park Authority, Climbing Snowdon
+    url: https://eryri.gov.wales/visit/snowdon/climbing-yr-wyddfa/
+    checked: '2026-10-27'
+  - label: Eryri National Park Authority, Miners' Track
+    url: https://eryri.gov.wales/walk/miners-track/
+    checked: '2026-10-27'
+  - label: grough, Walker's 52 Snowdon ascents raise thousands for charity (height of the summit)
+    url: https://www.grough.co.uk/magazine/2011/01/01/walkers-52-snowdon-ascents-raise-thousands-for-charity
+    checked: '2026-10-27'
 - id: climb-scafell-pike
   title: Climb Scafell Pike
   category: move

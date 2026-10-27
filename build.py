@@ -604,6 +604,20 @@ def build(make_social=True):
                     if not _shown.get(it["id"], True): print(f"LIST WARNING: film {it['id']} on {c['id']} held back (not confirmed by YouTube)"); continue
                 ins.append(it)
             c["inspire_items"] = ins
+            # Depth for search (Robin, 27 Oct 2026: someone who types the activity into Google should land on our page and
+            # find it informative and inspiring). `detail` = headed sections, `faq` = the questions people actually search,
+            # `sources` = every page the extra text rests on, opened on its `checked` date. `seo_title`/`description` override.
+            for sec in c.get("detail") or []:
+                assert sec.get("h") and (sec.get("p") or sec.get("list") or sec.get("table")), f"challenge {c['id']}: each detail section needs h and p, list or table"
+                if sec.get("table"):
+                    assert sec["table"].get("head") and all(len(r) == len(sec["table"]["head"]) for r in sec["table"].get("rows", [])), f"challenge {c['id']}: table rows must match head"
+            for f in c.get("faq") or []:
+                assert f.get("q") and f.get("a"), f"challenge {c['id']}: each faq needs q and a"
+            if c.get("detail") or c.get("faq"):
+                assert c.get("sources") and all(str(x.get("url", "")).startswith("https://") and x.get("label") and x.get("checked") for x in c["sources"]), f"challenge {c['id']}: detail and faq need sources with url, label, checked"
+            if c.get("sources"): c["sources_checked"] = max(dt.date.fromisoformat(str(x["checked"])) for x in c["sources"]).strftime("%-d %B %Y")
+            if c.get("seo_title"): c["seo"] = c["seo_title"]
+            if c.get("description"): c["meta"] = c["description"]
             c["has_story"] = bool(c["story_art"]) or any(i["kind"] == "read" for i in ins)
             c["has_film"] = any(i["kind"] == "film" for i in ins)
             for k in ("guide", "story"):
