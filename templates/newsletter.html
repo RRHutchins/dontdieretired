@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block title %}{{ "Free weekly email" if cfg.newsletter.sending else "Free email list" }} — {{ cfg.site.name }}{% endblock %}
-{% block description %}{% if cfg.newsletter.sending %}One real story and one thing to try, every week.{% else %}One real story and one thing to try, by email. Starting soon.{% endif %} Free, with a paid tier for those who want more.{% endblock %}
+{% block description %}{% if cfg.newsletter.sending %}One real story and one thing to try, every week.{% else %}One real story and one thing to try, by email. Starting soon.{% endif %}{% endblock %}
 {% block content %}
 <header class="page-head"><p class="kicker">Newsletter</p><h1>{{ cfg.newsletter.list_name if cfg.newsletter.sending else cfg.newsletter.list_name_pending }}</h1><p class="lead">{% if cfg.newsletter.sending %}Every Sunday morning: one real story, one thing to try, one thing to read.{% else %}Our email is starting soon: one real story, one thing to try, one thing to read. Join now and you will get the first edition.{% endif %} No spam. Unsubscribe in one click.</p></header>
-<div class="two-col">
+<div class="narrow">
   <div class="tier">
     <h2>Free</h2><p class="price">£0</p>
     <ul><li>{{ "The weekly email" if cfg.newsletter.sending else "Our email, from the first edition" }}</li><li>{{ cfg.newsletter.lead_magnet }} — <a href="/static/downloads/7-Day-Restart-Plan.pdf">preview it</a></li><li>First look at new challenges</li></ul>
@@ -11,11 +11,6 @@
       <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required aria-label="Email address">
       <button class="btn" type="submit">Join free</button>
     </form>
-  </div>
-  <div class="tier tier-paid">
-    <h2>Second Start Plus</h2><p class="price">{{ cfg.newsletter.paid_tier_price }}</p>
-    <ul><li>Everything in free</li><li>Full 30-day challenge library</li><li>Monthly letter answering your questions</li><li>Ad-free reading on the site</li><li>Printable weekly planners</li></ul>
-    {% if cfg.newsletter.paid_tier_url %}<a class="btn" href="{{ cfg.newsletter.paid_tier_url }}">Upgrade</a>{% else %}<a class="btn" href="/members/">See membership</a>{% endif %}
   </div>
 </div>
 {% endblock %}

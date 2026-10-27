@@ -704,6 +704,10 @@ def build(make_social=True):
                     if not _shown.get(it["id"], True): print(f"LIST WARNING: film {it['id']} on {c['id']} held back (not confirmed by YouTube)"); continue
                 ins.append(it)
             c["inspire_items"] = ins
+            for k in c.get("kit") or []:
+                assert k.get("name") and k.get("why") and str(k.get("url", "")).startswith("https://www.amazon.co.uk/"), f"challenge {c['id']}: kit items need name, why and an amazon.co.uk url (app.js swaps in the US store)"
+            for b in c.get("book") or []:
+                assert b.get("label") and b.get("why") and str(b.get("url", "")).startswith("https://") and b.get("aff") in (None, "viator", "getyourguide"), f"challenge {c['id']}: book items need label, why, url and aff viator/getyourguide or none"
             # Depth for search (Robin, 27 Oct 2026: someone who types the activity into Google should land on our page and
             # find it informative and inspiring). `detail` = headed sections, `faq` = the questions people actually search,
             # `sources` = every page the extra text rests on, opened on its `checked` date. `seo_title`/`description` override.
@@ -776,7 +780,7 @@ def build(make_social=True):
     proposals = (load_yaml(CONTENT / "proposals.yaml") or {}).get("proposals", []) if (CONTENT / "proposals.yaml").exists() else []
     say = out("/your-say/", "your-say.html", proposals=proposals)
     if cfg.get("feedback", {}).get("live"): urls.append(say)
-    urls.append(out("/members/", "members.html"))
+    # /members/ is not built (27 Oct 2026): the membership it described is not running, and the site never claims what it is not doing
     urls.append(out("/sponsor/", "sponsor.html"))
     urls.append(out("/about/", "about.html"))
     urls.append(out("/privacy/", "privacy.html"))

@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import share_button, near_you, card %}
+{% extends "base.html" %}{% from "_macros.html" import share_button, near_you, card, affiliate_box %}
 {% block title %}{{ c.seo }}{% endblock %}
 {% block description %}{{ c.meta | metadesc }}{% endblock %}
 {% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":
@@ -51,6 +51,15 @@
   {% for l in c.links %}<li><a href="{{ l.url }}" target="_blank" rel="noopener" data-fl-out>{{ l.label }}</a>{% if l.region == 'uk' and c.multi_region %} <span class="fl-reg">UK</span>{% elif l.region == 'us' and c.multi_region %} <span class="fl-reg">US</span>{% endif %}</li>{% endfor %}
   </ul>
   <p class="disclosure">We opened {{ 'this link' if c.links|length == 1 else 'these links' }} on {{ c.checked_human }} and found {{ 'it' if c.links|length == 1 else 'them' }} to be what we say. Dates, places and prices are on the official page, where they stay up to date.</p>
+
+  {% if c.book %}
+  <aside class="aff-box fl-book" data-book>
+    <h3 class="h4">Book it</h3>
+    <ul>{% for b in c.book %}<li><a href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}</a> — {{ b.why }}</li>{% endfor %}</ul>
+    <p class="disclosure">Some of these are affiliate links: if you book through them we may earn a commission at no extra cost to you. Compare operators, and check what is included before you pay.</p>
+  </aside>
+  {% endif %}
+  {% if c.kit %}{{ affiliate_box(c.kit, "Kit for this") }}{% endif %}
 
   {% if c.safety %}<aside class="fl-safety"><strong>Worth knowing.</strong> {{ c.safety }}</aside>{% endif %}
   {% if c.category in ('money', 'earn') %}<p class="disclosure">This is general information, not financial or business advice for your own circumstances.</p>{% endif %}

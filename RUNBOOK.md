@@ -279,6 +279,13 @@ Robin felt the daily stories leaned too heavily on what individuals have just ac
 - **Several at once.** If more than one Curious piece is published on the same day, give the later ones `social_date: YYYY-MM-DD` (one a day) so their social posts go out on separate days. It changes only the social pack's date, never the article's date.
 - **State at 23 Oct 2026.** Launched with three pieces: Percy Shaw and the cat's eye, Percy Spencer and the microwave oven, Frank Worsley and the James Caird (social posts held to 24, 25 and 26 Oct).
 
+### 6q. Revenue plan (Robin, 27 Oct 2026: "the paid-for guides won't take off; we need to be more advanced in the offering and cost less")
+1. **Booking and kit links on activity pages.** `book:` (label, why, url, `aff: viator|getyourguide`) renders a "Book it" box and `kit:` (name, why, Amazon UK search url) a "Kit for this" box. Viator and GetYourGuide earn only once Robin's partner ids are in `site.yaml` → `affiliates` (both empty on 27 Oct 2026; app.js adds them to the links). Put them on activities where people book a trip, course or experience; `why` says what it is for and what to check, never claims about readers or quality.
+2. **Specific, cheap challenge plans** (about £3–£4) for named challenges people search for (first three: Kilimanjaro, the Camino, the Yorkshire Three Peaks) instead of pushing the general guides. **On hold until Robin agrees how they are checked** (see the note of 27 Oct below): they must be genuinely good, so a plan is not sold until a suitably qualified person has reviewed it, and the site may say so only once that has happened (house rule on professional review).
+3. Puzzle and quiz books on KDP for Christmas (in hand).
+4. Display ads only from about 10,000 visits a month.
+- **Membership removed (27 Oct 2026):** the home, plan and newsletter pages promised a £5/month "Restart Circle" and a "Second Start Plus" tier (monthly letter, ad-free site, private group) that were not running. Those promises and `/members/` are gone. Bring a membership back only when there is something real behind it.
+
 ### 6p. Links between pages (Robin, 27 Oct 2026: "if a person is in one page they are naturally led to others")
 - **Foot of every story and guide:** "Try it yourself" shows up to three activity cards: the activities tied to the piece (`story:`/`guide:`), then those sharing its subject (activity id words against the piece's tags, ignoring place names and loose words), then a stable pick from the same topic. "Keep reading" shows three pieces ranked by shared tags, then topic, newest first.
 - **Activity pages:** "Read next" (two stories or guides on the same subject, else the same topic) and "More like this" as coloured cards.

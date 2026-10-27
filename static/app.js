@@ -214,6 +214,12 @@
         a.href = u.toString(); } } catch {}
     a.addEventListener('click', () => track('affiliate_click', { url: a.href, level: (readProfile().level || 'none'), region: document.body.dataset.region }));
   });
+  $$('[data-book] a[data-aff-exp]').forEach(a => { try {
+    const u = new URL(a.href), ex = (window.DDR.experiences || {});
+    if (a.dataset.affExp === 'viator' && ex.viator) u.searchParams.set('pid', ex.viator);
+    if (a.dataset.affExp === 'getyourguide' && ex.getyourguide) u.searchParams.set('partner_id', ex.getyourguide);
+    a.href = u.toString(); } catch {} });
+  $$('a[data-aff-book]').forEach(a => a.addEventListener('click', () => track('affiliate_click', { url: a.href, kind: 'book', region: document.body.dataset.region })));
   $$('[data-product]').forEach(a => a.addEventListener('click', () => track('product_click', { id: a.dataset.product, level: (readProfile().level || 'none') })));
   $$('form[data-nl]').forEach(f => f.addEventListener('submit', () => track('newsletter_submit', { level: (readProfile().level || 'none'), unlock: f.hasAttribute('data-unlock-plan') ? 1 : 0 })));
   // "Plan behind the story": unlock after any newsletter signup, remembered in this browser

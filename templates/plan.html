@@ -19,7 +19,6 @@
 <aside class="sidebar">
   {% set prod = (products.products | selectattr('category', 'equalto', a.category) | list + products.products) | first %}
   {{ product_promo(prod) }}
-  <aside class="promo promo-members"><p class="kicker">Members</p><h3 class="h4">Every plan, every course, ad-free</h3><p>{{ cfg.membership.name }} — {{ cfg.membership.price }}.</p><a class="btn btn-small" href="/members/">Find out more</a></aside>
 </aside>
 </div>
 {% endblock %}
