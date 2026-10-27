@@ -19,6 +19,7 @@ Each photo is resized for the web and not otherwise changed.
 | craig-johnston-record-ride-across-australia | File:Eyre Highway, Nullarbor, SA, 2017 (02).jpg | Bahnfrend | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Eyre_Highway,_Nullarbor,_SA,_2017_(02).jpg | 2026-10-07 |
 | dave-bell-peru-to-kenya-row | File:Seaside in Kilifi, Kenya.jpg | Arankaka | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Seaside_in_Kilifi,_Kenya.jpg | 2026-10-27 |
 | david-smith-hat-einstein-tile | File:Playing with hat tiles (wheels).jpg | Aschroet | CC0 | https://commons.wikimedia.org/wiki/File:Playing_with_hat_tiles_(wheels).jpg | 2026-10-14 |
+| david-warren-black-box-flight-recorder | File:Minifon 221-2 Portable Wire Recorder - 1958.jpg | Marcin Wichary from San Francisco, U.S.A. | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Minifon_221-2_Portable_Wire_Recorder_-_1958.jpg | 2026-10-27 |
 | frank-worsley-james-caird | File:James Caird bow.jpg | Rumping | Public domain | https://commons.wikimedia.org/wiki/File:James_Caird_bow.jpg | 2026-10-23 |
 | gary-mckee-jogle-pub-run | File:Land's End Signpost - geograph.org.uk - 4499713.jpg | Richard Cooke | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Land%27s_End_Signpost_-_geograph.org.uk_-_4499713.jpg | 2026-10-24 |
 | gene-edwards-tap-dancing-83 | File:Steppesko.jpeg | Steppdans | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Steppesko.jpeg | 2026-10-07 |
