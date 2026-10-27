@@ -9,7 +9,8 @@ level: any
 art: grid
 photo_file: "File:Minifon 221-2 Portable Wire Recorder - 1958.jpg"
 photo_caption: "A Minifon 221-2 portable wire recorder from 1958, shown at the CBC Museum beside a box of recording wire. Warren saw an earlier Minifon at a trade fair."
-photo_alt: "A small metal recorder behind a clear front, showing a large spool of fine steel wire, with a red and cream box of recording wire in front and a bilingual museum label below."
+photo_alt: "A small metal recorder behind a clear front, showing a large spool of fine steel wire, with a red and cream box of recording wire in front and a small spare spool beside it and a bilingual museum label below."
+photo_checked: 2026-10-27
 hook: "A pocket dictation machine, a run of jet crashes and a boss who said no. How the black box flight recorder began in Melbourne."
 lesson: "A good idea can wait years for the one person who sees what it is for, so keep it ready to show."
 standfirst: "In 1954 a fuels chemist in Melbourne proposed recording the last minutes inside an aircraft's cockpit. Australian officials and pilots turned it down. A visitor from Britain saw it over lunch, and the flight recorder went on to every major airliner."
