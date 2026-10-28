@@ -8,6 +8,9 @@ segments: [learner, changer]
 level: any
 subject_age: 58
 art: books
+photo_file: "File:Pigpen cipher on paper (3027069236).jpg"
+photo_caption: "Pages of a message written in the pigpen cipher, made by a student for a maths group project in Canada in 2008. It is not one of the ciphers on Tomokiyo's list."
+photo_alt: "Sheets of lined paper on a wooden desk, covered in rows of angular cipher symbols made of lines and dots, with handwritten notes and a white laptop behind."
 hook: "A Japanese patent engineer kept a list of codes nobody could crack. Since September, AI has reportedly solved most of them."
 lesson: "When a machine can do the hard part, the human skill that matters most is checking whether the answer is right."
 standfirst: "Satoshi Tomokiyo, 58, a patent engineer, keeps one of the best-known lists of unsolved historical ciphers. This autumn AI began working through it, starting with a letter written on Napoleon's orders in 1809. He checked the answer himself, and says his feelings are mixed."
