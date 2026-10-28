@@ -9,7 +9,7 @@ level: any
 subject_age: 58
 art: books
 photo_file: "File:Pigpen cipher on paper (3027069236).jpg"
-photo_caption: "Pages of a message written in the pigpen cipher, written for a student maths project and photographed in 2008. It is not one of the ciphers on Tomokiyo's list."
+photo_caption: "Pages of a message in the pigpen cipher, written for a student maths project and photographed in 2008. It is not one of the ciphers on Tomokiyo's list."
 photo_alt: "Sheets of lined paper on a wooden desk, covered in rows of angular cipher symbols made of lines and dots, with a card showing the cipher's key grids in red, handwritten notes and a white laptop behind."
 photo_checked: 2026-10-28
 hook: "A Japanese patent engineer kept a list of codes nobody could crack. Since September, AI has reportedly solved most of them."
