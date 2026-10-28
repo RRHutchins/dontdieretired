@@ -23,6 +23,13 @@
   </a>
 </section>
 
+{% if list_total %}<section class="gi-wrap" aria-label="Things to do">
+  <a class="get-involved" href="/list/">
+      <span class="gi-text"><span class="tile-k">Things to do <span class="pz-badge" data-fl-badge hidden></span></span><strong>Get involved</strong><span>Things worth doing, near you and anywhere, each with how to start and where to go. Pick your own, at any age, and keep a list of what you've done.</span></span>
+      <span class="gi-go">See what you could do <span aria-hidden="true">→</span></span>
+    </a>
+</section>{% endif %}
+
 <section class="for-you" id="for-you" hidden>
   <div class="section-head"><h2>Picked for you</h2><button class="linklike" data-open-segments>Change my answers</button></div>
   <div class="grid grid-3" data-for-you></div>
@@ -31,11 +38,7 @@
 <section>
   <div class="section-head"><h2>Latest</h2><a href="/stories/">All stories</a></div>
   <div class="grid grid-3 latest-grid">
-    {% for a in latest[:5] %}{{ card(a) }}{% if loop.index == 2 and list_total %}
-    <a class="get-involved" href="/list/">
-      <span class="gi-text"><span class="tile-k">Things to do <span class="pz-badge" data-fl-badge hidden></span></span><strong>Get involved</strong><span>Things worth doing, near you and anywhere, each with how to start and where to go. Pick your own, at any age, and keep a list of what you've done.</span></span>
-      <span class="gi-go">See what you could do <span aria-hidden="true">→</span></span>
-    </a>{% endif %}{% endfor %}
+    {% for a in latest[:5] %}{{ card(a) }}{% endfor %}
   </div>
 </section>
 
