@@ -1,11 +1,11 @@
 {% extends "base.html" %}{% from "_macros.html" import share_button %}
-{% block title %}Get involved: things worth doing — {{ cfg.site.name }}{% endblock %}
+{% block title %}Things to do: activities worth trying, with how to start — {{ cfg.site.name }}{% endblock %}
 {% block description %}Things worth doing near you and anywhere, each with how to start and where to go. Build your own list at any age, choose your own number, and tick them off in your own time.{% endblock %}
 {% block pagetype %}list{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Things to do</p><h1>Get involved</h1>
+<header class="page-head"><p class="kicker">Have a go</p><h1>Things to do</h1>
 <p class="lead">Things worth doing, near you and anywhere, each with how to start, where to go and, for more and more of them, someone who has done it. Make a list of your own at any age: choose your own number and take as long as you like. You don't have to do them all.</p>
-{{ share_button(cfg.site.url ~ '/list/', 'Get involved: things worth doing, and a list of your own', 'list') }}</header>
+{{ share_button(cfg.site.url ~ '/list/', 'Things to do: activities worth trying, and a list of your own', 'list') }}</header>
 
 <div class="fl" data-fl>
   <div class="fl-tabs" role="tablist">
@@ -106,7 +106,7 @@
   <li><strong>Every link was checked by us.</strong> Each activity links to the official event, governing body or club finder, opened and read on the date shown. We don't list dates or prices that go out of date: the official page has those.</li>
   <li><strong>It's free.</strong> The list, the suggestions and the tracking cost nothing.</li>
   <li><strong>Do it with someone.</strong> Every activity has an invite link you can send to a friend. For company beyond that, the clubs and groups in each activity are the place to start{% if cfg.social.facebook %}, and you can tell us how you get on at <a href="{{ cfg.social.facebook }}" target="_blank" rel="noopener">our Facebook page</a>{% endif %}.</li>
-  <li><strong>Something missing?</strong> Add it to your own list, and {{ contact('tell us', 'Get involved idea') }}: we add new activities as we verify them.</li>
+  <li><strong>Something missing?</strong> Add it to your own list, and {{ contact('tell us', 'Things to do idea') }}: we add new activities as we verify them.</li>
 </ul>
 </div>
 {% endblock %}

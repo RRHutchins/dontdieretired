@@ -4,11 +4,11 @@
 {% block pagetype %}list{% endblock %}
 {% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
  {"@type":"BreadcrumbList","itemListElement":[
-  {"@type":"ListItem","position":1,"name":"Get involved","item":cfg.site.url ~ "/list/"},
+  {"@type":"ListItem","position":1,"name":"Things to do","item":cfg.site.url ~ "/list/"},
   {"@type":"ListItem","position":2,"name":coll.plural,"item":cfg.site.url ~ "/list/" ~ coll.slug ~ "/"}]},
  {"@type":"ItemList","name":coll.plural,"numberOfItems":coll.acts|length,"itemListElement":item_list}]} | tojson }}</script>{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker"><a href="/list/">Get involved</a></p><h1>{{ coll.plural }}</h1>
+<header class="page-head"><p class="kicker"><a href="/list/">Things to do</a></p><h1>{{ coll.plural }}</h1>
 <p class="lead">{{ coll.blurb }}</p>
 {{ share_button(cfg.site.url ~ '/list/' ~ coll.slug ~ '/', coll.plural, 'list') }}</header>
 
