@@ -668,3 +668,325 @@ rounds:
         level: 3
         source: {title: "Sirimavo Bandaranaike", publisher: "Encyclopaedia Britannica (100 Women Trailblazers)", url: "https://www.britannica.com/explore/100women/?p=673"}
         checked: 2026-10-27
+  - id: explorers
+    title: Explorers
+    editions: [uk, us]
+    intro: "Ships, sledges, rafts and mountains: the people who went to see what was out there."
+    questions:
+      - q: "In 1492 Christopher Columbus sailed west from Spain, hoping to reach Asia. Where did he land: the Bahamas, Iceland or Australia?"
+        a: "The Bahamas"
+        note: "He sailed with three ships, the Niña, the Pinta and the Santa Maria, and a crew of 90. The crossing took 61 days."
+        level: 1
+        source: {title: "Aug 3, 1492 CE: Columbus Sets Sail", publisher: "National Geographic Society", url: "https://education.nationalgeographic.org/resource/columbus-sets-sail"}
+        checked: 2026-10-28
+      - q: "Roald Amundsen's team reached the South Pole first, in 1911. What pulled their sledges: dogs, ponies or reindeer?"
+        a: "Dogs"
+        note: "The men skied alongside. Captain Scott's team reached the Pole more than a month later."
+        level: 1
+        source: {title: "100th Anniversary of Roald Amundsen Reaching South Pole: How the Grueling Race Was Won", publisher: "National Geographic", url: "https://www.nationalgeographic.com/adventure/article/100th-anniversary-of-norwegian-roald-amundsen-reaching-south-polefind-out-how-the-grueling-race-was"}
+        checked: 2026-10-28
+      - q: "Shackleton's ship was crushed by Antarctic ice in 1915 and found in 2022. Was it the Endeavour, the Endurance or the Discovery?"
+        a: "The Endurance"
+        note: "It lies about 3,000 metres (10,000 feet) down in the Weddell Sea, in what the expedition's director called a brilliant state of preservation."
+        level: 1
+        source: {title: "WATCH: Antarctic explorer Ernest Shackleton's sunken ship found after a century", publisher: "PBS NewsHour (Associated Press)", url: "https://www.pbs.org/newshour/science/watch-antarctic-explorer-ernest-shackletons-sunken-ship-found-after-a-century"}
+        checked: 2026-10-28
+      - q: "In 1953 Edmund Hillary and which Sherpa mountaineer became the first people to stand on top of Mount Everest?"
+        a: "Tenzing Norgay"
+        accept: "Tensing Norgay"
+        note: "Hillary was a beekeeper from New Zealand. They reached the summit on 29 May 1953, four days before the coronation of Queen Elizabeth II."
+        level: 2
+        source: {title: "Hillary and Tenzing reach summit of Everest", publisher: "Manatū Taonga, Ministry for Culture and Heritage (NZHistory)", url: "https://nzhistory.govt.nz/edmund-hillary-and-tensing-norgay-reach-summit-of-everest"}
+        checked: 2026-10-28
+      - q: "Which Venetian merchant reached the court of Kublai Khan in about 1274, and told of his travels in a famous book?"
+        a: "Marco Polo"
+        note: "He told his story to a writer, Rustichello, while both were in prison. The book became known as Il milione."
+        level: 2
+        source: {title: "Marco Polo summary", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/summary/Marco-Polo"}
+        checked: 2026-10-28
+      - q: "Which Shoshone woman guided Lewis and Clark across North America, carrying her baby son on her back?"
+        a: "Sacagawea"
+        accept: "Sacajawea"
+        note: "Her son, Jean-Baptiste, was born in February 1805, and Clark nicknamed him Pomp. A woman with a baby showed the tribes they met that the party came in peace."
+        level: 2
+        source: {title: "Biography: Sacagawea", publisher: "National Women's History Museum", url: "https://www.womenshistory.org/node/781"}
+        checked: 2026-10-28
+      - q: "In 1947, who sailed a balsa-wood raft called Kon-Tiki from Peru to Polynesia, with five other men and a parrot?"
+        a: "Thor Heyerdahl"
+        note: "They were at sea for 101 days."
+        level: 2
+        source: {title: "Kon-Tiki, 1947", publisher: "Kon-Tiki Museum, Oslo", url: "https://www.kon-tiki.no/en/heyerdahls-expeditions/kon-tiki"}
+        checked: 2026-10-28
+      - q: "In 1943, which ocean explorer helped invent the Aqua-Lung for divers?"
+        a: "Jacques Cousteau"
+        note: "Developed with Émile Gagnan, it let divers swim freely underwater for long periods."
+        level: 2
+        source: {title: "Aqua-Lung", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/technology/Aqua-Lung"}
+        checked: 2026-10-28
+      - q: "Magellan died on the first voyage round the world. Which navigator brought the last ship home to Spain in 1522?"
+        a: "Juan Sebastián Elcano"
+        accept: "Elcano; del Cano"
+        note: "A Basque, he sailed into port with 18 survivors. Magellan had died in the Philippines."
+        level: 3
+        source: {title: "Scientist of the Day: Juan Elcano", publisher: "Linda Hall Library", url: "https://www.lindahall.org/about/news/scientist-of-the-day/juan-elcano/"}
+        checked: 2026-10-28
+      - q: "Which traveller from Tangier, Morocco, journeyed some 75,000 miles in the 1300s and wrote a famous book, the Rihlah?"
+        a: "Ibn Battuta"
+        accept: "Ibn Battutah"
+        level: 3
+        source: {title: "Ibn Battuta", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/biography/Ibn-Battuta"}
+        checked: 2026-10-28
+  - id: the-human-body
+    title: The human body
+    editions: [uk, us]
+    intro: "Bones, skin, nerves and hiccups: a tour of the one thing everyone at the table has brought with them."
+    questions:
+      - q: "How many bones are in a grown-up's skeleton: 26, 206 or 2,006?"
+        a: "206"
+        note: "A baby has many more, because some of its bones have not yet joined together."
+        level: 1
+        source: {title: "human skeleton: Facts & Related Content", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/facts/human-skeleton"}
+        checked: 2026-10-28
+      - q: "What is the biggest organ of your body: your skin, your brain or your stomach?"
+        a: "Your skin"
+        level: 1
+        source: {title: "Skin Conditions", publisher: "MedlinePlus, US National Library of Medicine", url: "https://medlineplus.gov/skinconditions.html"}
+        checked: 2026-10-28
+      - q: "The smallest bone in your body is called the stirrup. Where is it: in your ear, your toe or your nose?"
+        a: "In your ear"
+        note: "Its neighbours in the middle ear are called the hammer and the anvil."
+        level: 1
+        source: {title: "Human ear: Eardrum, Ossicles, Hearing", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/science/ear/Tympanic-membrane-and-middle-ear"}
+        checked: 2026-10-28
+      - q: "Which vitamin does your body make when sunlight falls on your skin?"
+        a: "Vitamin D"
+        level: 2
+        source: {title: "Vitamin D", publisher: "NHS", url: "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"}
+        checked: 2026-10-28
+      - q: "When you bang your 'funny bone' and feel that tingling jolt, it isn't really a bone you've hit. What is it?"
+        a: "A nerve"
+        accept: "The ulnar nerve"
+        note: "The ulnar nerve passes just under the skin near the elbow."
+        level: 2
+        source: {title: "Ulnar nerve dysfunction", publisher: "MedlinePlus Medical Encyclopedia, US National Library of Medicine", url: "https://medlineplus.gov/ency/article/000789.htm"}
+        checked: 2026-10-28
+      - q: "What is the hardest substance in the human body?"
+        a: "Tooth enamel"
+        level: 2
+        source: {title: "Complexity of human tooth enamel revealed at atomic level in NIH-funded study", publisher: "National Institutes of Health", url: "https://www.nih.gov/news-events/news-releases/complexity-human-tooth-enamel-revealed-atomic-level-nih-funded-study"}
+        checked: 2026-10-28
+      - q: "Hiccups happen when the big sheet of muscle between your chest and your tummy suddenly jerks. What is that muscle called?"
+        a: "The diaphragm"
+        note: "The 'hic' is the sound of the breath being cut off as the gap between your vocal cords snaps shut."
+        level: 2
+        source: {title: "Hiccup", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/science/hiccup"}
+        checked: 2026-10-28
+      - q: "The longest and strongest bone in your body is in your thigh. What is its proper name?"
+        a: "The femur"
+        level: 2
+        source: {title: "Thigh", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/science/thigh"}
+        checked: 2026-10-28
+      - q: "Which English doctor, who served King Charles I, published a book in 1628 showing that blood travels round and round the body instead of being used up?"
+        a: "William Harvey"
+        level: 3
+        source: {title: "Scientist of the Day: William Harvey", publisher: "Linda Hall Library", url: "https://www.lindahall.org/about/news/scientist-of-the-day/william-harvey/"}
+        checked: 2026-10-28
+      - q: "In 1895 a scientist discovered mysterious rays and called them X-rays, because X stands for something unknown. One of his first pictures showed the bones of his wife's hand, ring and all. What was his name?"
+        a: "Wilhelm Röntgen"
+        accept: "Roentgen"
+        note: "In 1901 he received the very first Nobel Prize in Physics."
+        level: 3
+        source: {title: "Speed read: An illuminating accident", publisher: "NobelPrize.org", url: "https://www.nobelprize.org/prizes/physics/1901/speedread/"}
+        checked: 2026-10-28
+  - id: countries-and-capitals
+    title: Countries and capitals
+    editions: [uk, us]
+    intro: "A spin of the globe, with a few capital cities that had to be argued over."
+    questions:
+      - q: "Which is the biggest country in the world: China, Russia or Canada?"
+        a: "Russia"
+        level: 1
+        source: {title: "Russia", publisher: "Britannica Kids (Encyclopaedia Britannica)", url: "https://kids.britannica.com/kids/article/Russia/345773"}
+        checked: 2026-10-28
+      - q: "What is the capital city of Japan: Tokyo, Kyoto or Osaka?"
+        a: "Tokyo"
+        note: "Its name means Eastern Capital. It was called Edo until 1868, when it replaced Kyoto as the imperial capital."
+        level: 1
+        source: {title: "Tokyo summary", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/summary/Tokyo"}
+        checked: 2026-10-28
+      - q: "What is the capital of Canada: Toronto, Ottawa or Vancouver?"
+        a: "Ottawa"
+        note: "Toronto, Montreal, Kingston and Quebec all wanted the job. In 1857 Queen Victoria was asked to settle the argument, and she chose Ottawa."
+        level: 1
+        source: {title: "Canada's Capital National Historic Event", publisher: "Parks Canada", url: "https://parks.canada.ca/culture/designation/lieu-site/capitale-capital"}
+        checked: 2026-10-28
+      - q: "Australia's constitution said its new capital had to be at least 100 miles from Sydney, and Parliament met in Melbourne until it was built. Which city is it?"
+        a: "Canberra"
+        note: "The name probably comes from an Aboriginal word meaning meeting place. At the naming ceremony in 1913, Lady Denman reminded everyone that 'the accent is on the Can'."
+        level: 2
+        source: {title: "The Siting and Naming of Canberra", publisher: "National Capital Authority (Australia)", url: "https://www.nca.gov.au/education/canberras-history/siting-and-naming-canberra"}
+        checked: 2026-10-28
+      - q: "The world's smallest country covers just 0.44 square kilometres (0.17 square mile). Which is it?"
+        a: "Vatican City"
+        accept: "The Vatican"
+        level: 2
+        source: {title: "List of the smallest countries by area", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/topic/list-of-the-smallest-countries-by-area"}
+        checked: 2026-10-28
+      - q: "La Paz, more than 3,000 metres (10,000 feet) above sea level, is the world's highest national capital. Which South American country is it in?"
+        a: "Bolivia"
+        note: "Strictly, La Paz is the seat of government; Sucre is Bolivia's constitutional capital."
+        level: 2
+        source: {title: "La Paz", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/place/La-Paz-Bolivia"}
+        checked: 2026-10-28
+      - q: "Which country has three capital cities: Pretoria, Cape Town and Bloemfontein?"
+        a: "South Africa"
+        note: "Pretoria is the administrative capital, Cape Town the legislative (Parliament) and Bloemfontein the judicial (the courts)."
+        level: 2
+        source: {title: "South Africa at a glance", publisher: "South African Government", url: "https://www.gov.za/about-sa/south-africa-glance-1"}
+        checked: 2026-10-28
+      - q: "Which Scandinavian capital is built on 14 islands, with more than 30,000 more just beyond it?"
+        a: "Stockholm"
+        level: 2
+        source: {title: "30 014 islands. Endless possibilities.", publisher: "Visit Stockholm (Stockholm Business Region)", url: "https://www.visitstockholm.com/islands-of-possibilities/"}
+        checked: 2026-10-28
+      - q: "Which capital city was built from scratch between 1956 and 1960, to a plan often compared to a bird in flight?"
+        a: "Brasília"
+        accept: "Brasilia"
+        note: "It was planned by Lúcio Costa, with buildings by the architect Oscar Niemeyer."
+        level: 3
+        source: {title: "Brasilia", publisher: "UNESCO World Heritage Centre", url: "https://whc.unesco.org/en/list/445/"}
+        checked: 2026-10-28
+      - q: "Ulaanbaatar, where the average January temperature is about minus 26°C (15°F below zero), is the capital of which country?"
+        a: "Mongolia"
+        level: 3
+        source: {title: "Ulaanbaatar", publisher: "Britannica (Students)", url: "https://kids.britannica.com/students/article/Ulaanbaatar/277487"}
+        checked: 2026-10-28
+  - id: art
+    title: Art
+    editions: [uk, us]
+    intro: "Famous pictures, and the stories behind them."
+    questions:
+      - q: "Who painted the Mona Lisa: Leonardo da Vinci, Picasso or Van Gogh?"
+        a: "Leonardo da Vinci"
+        accept: "Leonardo"
+        note: "In 1911 it was stolen from the Louvre in Paris, and nobody noticed it was gone for 26 hours. It turned up in Florence in December 1913, when the thief tried to sell it to an art dealer."
+        level: 1
+        source: {title: "Stolen: How the Mona Lisa Became the World's Most Famous Painting", publisher: "Smithsonian Magazine", url: "https://www.smithsonianmag.com/arts-culture/stolen-how-the-mona-lisa-became-the-worlds-most-famous-painting-16406234/"}
+        checked: 2026-10-28
+      - q: "Van Gogh painted a picture 'all in yellow' for a friend's visit. Which flowers are in it?"
+        a: "Sunflowers"
+        note: "He painted them in Arles, ready for a visit from the artist Paul Gauguin. He made seven versions in all."
+        level: 1
+        source: {title: "Vincent van Gogh, 'Sunflowers', 1888", publisher: "The National Gallery, London", url: "https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers"}
+        checked: 2026-10-28
+      - q: "Edvard Munch painted a picture after a walk under a red sunset sky. Is it The Shout, The Scream or The Sneeze?"
+        a: "The Scream"
+        note: "Munch wrote that he 'sensed an infinite scream passing through nature'. The 1893 painting belongs to the National Museum in Oslo."
+        level: 1
+        source: {title: "Edvard Munch, The Scream", publisher: "Nasjonalmuseet (National Museum of Norway)", url: "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939"}
+        checked: 2026-10-28
+      - q: "Who painted the ceiling of the Sistine Chapel, finishing in 1512?"
+        a: "Michelangelo"
+        note: "Pope Julius II gave him the job in 1508. Years later he went back to paint the Last Judgment on the altar wall."
+        level: 2
+        source: {title: "Sistine Chapel", publisher: "Vatican Museums", url: "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/storia-cappella-sistina.html"}
+        checked: 2026-10-28
+      - q: "Late in life, which artist would 'paint with scissors', making pictures such as The Snail from coloured paper?"
+        a: "Henri Matisse"
+        note: "The Snail, made in 1953, is a spiral of coloured paper shapes."
+        level: 2
+        source: {title: "Collage a Matisse Snail", publisher: "Tate Kids", url: "https://www.tate.org.uk/kids/make/cut-paste/collage-matisse-snail"}
+        checked: 2026-10-28
+      - q: "Picasso and Braque began which style of art around 1907, after a critic said Braque reduced everything to cubes?"
+        a: "Cubism"
+        level: 2
+        source: {title: "Cubism", publisher: "Tate", url: "https://www.tate.org.uk/art/art-terms/c/cubism"}
+        checked: 2026-10-28
+      - q: "Which Dutch artist from Delft painted Girl with a Pearl Earring, in about 1665?"
+        a: "Johannes Vermeer"
+        note: "She is not a portrait of a real sitter but an imaginary figure, and the museum says the pearl is too large to be real. Vermeer painted it with about two brushstrokes."
+        level: 2
+        source: {title: "Girl with a Pearl Earring", publisher: "Mauritshuis, The Hague", url: "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring"}
+        checked: 2026-10-28
+      - q: "The Bayeux Tapestry tells the story of which battle, fought on 14 October 1066?"
+        a: "The Battle of Hastings"
+        note: "The winner, William, became known as the Conqueror, and was crowned King of England in Westminster Abbey on Christmas Day 1066."
+        level: 2
+        source: {title: "The Battle of Hastings", publisher: "Bayeux Museum", url: "https://www.bayeuxmuseum.com/en/the-bayeux-tapestry/discover-the-bayeux-tapestry/the_battle_of_hastings/"}
+        checked: 2026-10-28
+      - q: "Which artist made the woodblock print The Great Wave, one of his Thirty-six Views of Mount Fuji?"
+        a: "Hokusai"
+        note: "It was published around 1831. Look closely: fishermen cower in three boats under the wave, and Mount Fuji sits small in its hollow."
+        level: 3
+        source: {title: "Under the Wave off Kanagawa (Kanagawa-oki nami-ura)", publisher: "The British Museum", url: "https://www.britishmuseum.org/collection/object/A_1906-1220-0-533"}
+        checked: 2026-10-28
+      - q: "Who painted Impression, Sunrise, the picture that gave the Impressionists their name?"
+        a: "Claude Monet"
+        note: "The critic Louis Leroy coined the name in 1874 to mock them. The painters took it up anyway."
+        level: 3
+        source: {title: "Impression: Sunrise", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/topic/Impression-Sunrise"}
+        checked: 2026-10-28
+  - id: books-and-authors
+    title: Books and authors
+    editions: [uk, us]
+    intro: "Stories everyone at the table has read, or been read, and where they came from."
+    questions:
+      - q: "Who wrote Charlie and the Chocolate Factory, Matilda and The BFG?"
+        a: "Roald Dahl"
+        note: "Before he wrote books he was a fighter pilot. He was born in Llandaff, Wales, in 1916."
+        level: 1
+        source: {title: "Roald Dahl", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/biography/Roald-Dahl"}
+        checked: 2026-10-28
+      - q: "In The Lion, the Witch and the Wardrobe, who rules Narnia and keeps it in winter all the time?"
+        a: "The White Witch"
+        accept: "The Queen; Jadis"
+        note: "Lucy gets to Narnia through a wardrobe full of fur coats. The book came out in 1950."
+        level: 1
+        source: {title: "The Lion, the Witch, and the Wardrobe", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/print/article/686718"}
+        checked: 2026-10-28
+      - q: "What does the Very Hungry Caterpillar turn into at the end of Eric Carle's book?"
+        a: "A butterfly"
+        note: "Carle first planned a book about a greedy worm; his editor suggested a caterpillar. The idea came from a hole punch: the holes made him think of a bookworm."
+        level: 1
+        source: {title: "The making of Eric Carle's The Very Hungry Caterpillar", publisher: "Penguin Books", url: "https://www.penguin.co.uk/articles/2021/05/making-eric-carle-very-hungry-caterpillar-story-behind"}
+        checked: 2026-10-28
+      - q: "Who first told the story of Peter Rabbit in a picture letter to a sick five-year-old boy in 1893?"
+        a: "Beatrix Potter"
+        note: "Peter was based on her own pet rabbit, Peter Piper. She first published the book herself, in 1901."
+        level: 2
+        source: {title: "Peter Rabbit: the tale of 'The Tale'", publisher: "Victoria and Albert Museum", url: "https://www.vam.ac.uk/articles/peter-rabbit-the-tale-of-the-tale"}
+        checked: 2026-10-28
+      - q: "In 1816 Lord Byron challenged friends near Geneva to write ghost stories. Which novel did Mary Shelley begin?"
+        a: "Frankenstein"
+        note: "It was published in 1818. Strictly, Frankenstein is the scientist, though the name is now more often used for the creature he makes."
+        level: 2
+        source: {title: "Frankenstein; or, The Modern Prometheus", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/topic/Frankenstein-or-The-Modern-Prometheus"}
+        checked: 2026-10-28
+      - q: "Which author, a doctor who trained in Edinburgh, created the detective Sherlock Holmes?"
+        a: "Arthur Conan Doyle"
+        note: "His teacher, Dr Joseph Bell, had a gift for diagnosis that helped shape Holmes."
+        level: 2
+        source: {title: "Arthur Conan Doyle (300 years of medicine)", publisher: "University of Edinburgh", url: "https://medicine-vet-medicine.ed.ac.uk/300-years-of-medicine/300-faces-of-edinburgh-medical-school/300-faces-c-e/arthur-conan-doyle"}
+        checked: 2026-10-28
+      - q: "The author J. M. Barrie gave all his rights in which story to Great Ormond Street, the children's hospital in London?"
+        a: "Peter Pan"
+        note: "A unique clause in UK copyright law now lets the hospital receive royalties from Peter Pan for ever."
+        level: 2
+        source: {title: "Peter Pan at Great Ormond Street Hospital", publisher: "Great Ormond Street Hospital for Children NHS Foundation Trust", url: "https://www.gosh.nhs.uk/about-us/our-history/peter-pan-at-great-ormond-street-hospital/"}
+        checked: 2026-10-28
+      - q: "Meg, Jo, Beth and Amy March are the four sisters in which novel by Louisa May Alcott, first published in 1868?"
+        a: "Little Women"
+        level: 2
+        source: {title: "Little Women", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/topic/Little-Women-novel-by-Alcott"}
+        checked: 2026-10-28
+      - q: "Lewis Carroll first made up the story of Alice on a boat trip in July 1862, for three sisters, one of them called Alice. What was their surname?"
+        a: "Liddell"
+        note: "Their father was the Dean of Christ Church, Oxford. Lewis Carroll's real name was Charles Dodgson, and he was a mathematician there."
+        level: 3
+        source: {title: "Alice's day", publisher: "Lady Margaret Hall, University of Oxford", url: "https://www.lmh.ox.ac.uk/about-lmh/lmh-objects/alices-day"}
+        checked: 2026-10-28
+      - q: "Jane Austen's first published novel (1811) said only 'By a Lady' on its title page. What was it?"
+        a: "Sense and Sensibility"
+        level: 3
+        source: {title: "Sense and Sensibility", publisher: "Jane Austen's House", url: "https://janeaustens.house/jane-austen/novels/sense-and-sensibility/"}
+        checked: 2026-10-28
