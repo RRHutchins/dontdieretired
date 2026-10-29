@@ -990,3 +990,349 @@ rounds:
         level: 3
         source: {title: "Sense and Sensibility", publisher: "Jane Austen's House", url: "https://janeaustens.house/jane-austen/novels/sense-and-sensibility/"}
         checked: 2026-10-28
+  - id: carols-and-christmas-music
+    title: Carols and Christmas music
+    editions: [uk, us]
+    intro: "The stories behind the songs we sing every December."
+    questions:
+      - q: "In 1965, two astronauts played the first music in space, on a harmonica and bells. Which Christmas song?"
+        a: "Jingle Bells"
+        note: "Tom Stafford and Wally Schirra, on Gemini 6, first radioed that they could see something like a satellite, as if Santa were flying past. The harmonica and bells are now at the Smithsonian's National Air and Space Museum."
+        level: 1
+        source: {title: "Sixty Years Ago, When Instruments Were Played in Space for the First Time, It Was 'Jingle Bells' All the Way", publisher: "Smithsonian Magazine", url: "https://www.smithsonianmag.com/smithsonian-institution/sixty-years-ago-when-instruments-were-played-in-space-for-the-first-time-it-was-jingle-bells-all-the-way-180987851/"}
+        checked: 2026-10-29
+      - q: "The Twelve Days of Christmas probably began as a party game. Was it a memory game, a hide-and-seek game or a board game?"
+        a: "A memory game"
+        note: "Players repeated the verses, and anyone who made a mistake paid a forfeit and dropped out. The earliest known printed version is from 1780."
+        level: 1
+        source: {title: "12 Facts About 'The 12 Days of Christmas'", publisher: "Smithsonian Magazine", url: "https://www.smithsonianmag.com/smart-news/12-facts-about-12-days-christmas-180967569/"}
+        checked: 2026-10-29
+      - q: "Which singer released All I Want for Christmas Is You in 1994?"
+        a: "Mariah Carey"
+        note: "It took 25 years to reach number one on America's Billboard Hot 100: it finally got there in December 2019."
+        level: 1
+        source: {title: "Mariah Carey's \"All I Want For Christmas Is You\" Hits No. 1 25 Years After Its Initial Release", publisher: "Recording Academy (Grammy.com)", url: "https://www.grammy.com/news/mariah-careys-all-i-want-christmas-you-hits-no-1-25-years-after-its-initial-release"}
+        checked: 2026-10-29
+      - q: "Silent Night was first sung in an Austrian church on Christmas Eve 1818. Which instrument played along?"
+        a: "A guitar"
+        note: "Not the organ: it was written for two voices and guitar. There is a famous story that the organ was broken, but there is no evidence for it. The words, Stille Nacht, were by the priest Joseph Mohr; the tune by the organist Franz Gruber."
+        level: 2
+        source: {title: "The First Performance of 'Silent Night'", publisher: "History Today", url: "https://www.historytoday.com/archive/months-past/first-performance-silent-night"}
+        checked: 2026-10-29
+      - q: "Rudolph the Red-Nosed Reindeer's creator nearly gave him another name. Was it Reginald, Rupert or Roger?"
+        a: "Reginald"
+        note: "Robert May dreamed him up in 1939 for a free booklet from an American department store, and also thought about Romeo and Rodney. About ten years later his brother-in-law, Johnny Marks, turned the story into the song."
+        level: 2
+        source: {title: "Rudolph the Red-Nosed Reindeer was a very shiny marketing tool", publisher: "Smithsonian Institution", url: "https://si.edu/stories/where-did-rudolph-get-his-shiny-nose"}
+        checked: 2026-10-29
+      - q: "Which singer first performed Irving Berlin's White Christmas, on his radio show on Christmas Day 1941?"
+        a: "Bing Crosby"
+        note: "Berlin wrote it for the film Holiday Inn, which came out in the summer of 1942, and it won the Oscar for best original song."
+        level: 2
+        source: {title: "Trending: A White Christmas", publisher: "Library of Congress", url: "https://blogs.loc.gov/loc/2014/11/trending-a-white-christmas/"}
+        checked: 2026-10-29
+      - q: "Good King Wenceslas was real, but in his lifetime only a duke. Of which land, now part of the Czech Republic?"
+        a: "Bohemia"
+        note: "He lived in the 10th century and is the patron saint of the Czech nation. The English words of the carol were written by John Mason Neale in 1853."
+        level: 2
+        source: {title: "Popular British carol sings the praises of St. Václav", publisher: "Radio Prague International", url: "https://english.radio.cz/node/8173346"}
+        checked: 2026-10-29
+      - q: "Which carol always opens the Festival of Nine Lessons and Carols at King's College, Cambridge?"
+        a: "Once in Royal David's City"
+        note: "Its first verse is sung by one boy alone. The service has been held on Christmas Eve since 1918, and the BBC first broadcast it in 1928."
+        level: 2
+        source: {title: "What is the Festival of Nine Lessons and Carols?", publisher: "BBC Music Magazine (classical-music.com)", url: "https://www.classical-music.com/articles/what-is-the-festival-of-nine-lessons-and-carols"}
+        checked: 2026-10-29
+      - q: "In which city was Handel's Messiah first performed, in April 1742?"
+        a: "Dublin"
+        note: "To make room, ladies were asked to leave their hooped skirts at home and gentlemen their swords. About 700 people squeezed into a hall in Fishamble Street built for about 600."
+        level: 3
+        source: {title: "Handel Messiah: the work that caused traffic jams at its Dublin premiere", publisher: "BBC Music Magazine (classical-music.com)", url: "https://www.classical-music.com/articles/hallelujah-story-handel-s-messiah"}
+        checked: 2026-10-29
+      - q: "Mendelssohn wrote the tune of Hark! The Herald Angels Sing in 1840 for the 400th anniversary of which invention?"
+        a: "The printing press"
+        accept: "Printing"
+        note: "In 1855 the English organist William Hayman Cummings put the tune together with the words, first written by Charles Wesley in 1739."
+        level: 3
+        source: {title: "Hark! The Herald Angels Sing", publisher: "Library of Congress", url: "https://blogs.loc.gov/music/2016/12/hark-the-herald-angels-sing-an-illustrated-history/"}
+        checked: 2026-10-29
+  - id: words-and-where-they-come-from
+    title: Words and where they come from
+    editions: [uk, us]
+    intro: "Everyday words with surprising stories hidden inside them."
+    questions:
+      - q: "The dandelion's name comes from French words meaning a lion's what: tooth, mane or tail?"
+        a: "Tooth"
+        note: "Dent de lion. Look at a dandelion leaf: its deep notches look like rows of sharp teeth."
+        level: 1
+        source: {title: "DANDELIONS Definition & Meaning", publisher: "Merriam-Webster", url: "https://www.merriam-webster.com/dictionary/DANDELIONS"}
+        checked: 2026-10-29
+      - q: "The word hippopotamus comes from Greek. Does it mean river horse, water pig or big mouth?"
+        a: "River horse"
+        note: "A good name for an animal that spends most of its time in water, though hippos are more closely related to pigs than to horses."
+        level: 1
+        source: {title: "HIPPOPOTAMUS Definition & Meaning", publisher: "Merriam-Webster", url: "https://www.merriam-webster.com/dictionary/Hippopotamus"}
+        checked: 2026-10-29
+      - q: "The sandwich is said to be named after an earl who would not stop his game to eat. Was he playing cards, football or the piano?"
+        a: "Cards"
+        note: "The story goes that John Montagu, 4th Earl of Sandwich, stayed at the card table all night and asked for meat between two slices of bread. It is a good story, but nobody can prove it."
+        level: 1
+        source: {title: "SANDWICH Definition & Meaning", publisher: "Merriam-Webster", url: "https://www.merriam-webster.com/dictionary/sandwich"}
+        checked: 2026-10-29
+      - q: "The word muscle comes from a Latin word meaning a little what: mouse, snake or fish?"
+        a: "A mouse"
+        accept: "Mouse"
+        note: "The ancient Romans thought the big muscles in people's arms and legs looked like little mice."
+        level: 2
+        source: {title: "MUSCLE Definition & Meaning", publisher: "Merriam-Webster", url: "https://www.merriam-webster.com/dictionary/MUSCLE"}
+        checked: 2026-10-29
+      - q: "The word window comes from the Old Norse words for wind and what?"
+        a: "Eye"
+        note: "Vindauga: a wind eye, a hole that lets in the air and lets you see out."
+        level: 2
+        source: {title: "Definition of window noun from the Oxford Advanced Learner's Dictionary", publisher: "Oxford University Press", url: "https://www.oxfordlearnersdictionaries.com/definition/english/window?q=window"}
+        checked: 2026-10-29
+      - q: "Quarantine comes from the Italian for how many days ships had to wait before entering port in the 1300s?"
+        a: "Forty"
+        note: "Quaranta giorni, in case they carried the plague. The rule was first used in Dubrovnik, now in Croatia, which was then under Venetian rule."
+        level: 2
+        source: {title: "The Word \"Quarantine\" Comes from the Italian Word \"Forty Days\"", publisher: "McGill University Office for Science and Society", url: "https://www.mcgill.ca/oss/node/8102"}
+        checked: 2026-10-29
+      - q: "The word robot comes from an old Slavic word, robota. Does it mean forced labour, metal man or thinking machine?"
+        a: "Forced labour"
+        accept: "Drudgery; servitude; hard work"
+        note: "It first appeared in a 1920 play by the Czech writer Karel Čapek, who first wanted to call his machine-workers labori. His brother Josef suggested roboti instead."
+        level: 2
+        source: {title: "The Origin Of The Word 'Robot'", publisher: "Science Friday", url: "https://www.sciencefriday.com/segments/the-origin-of-the-word-robot/"}
+        checked: 2026-10-29
+      - q: "In which author's 1950 book, If I Ran the Zoo, is the word nerd thought to have first appeared in print?"
+        a: "Dr Seuss"
+        accept: "Theodor Seuss Geisel"
+        note: "In the book a Nerd is one of the made-up creatures the narrator would collect. Nobody is sure whether Seuss invented the word or borrowed it."
+        level: 2
+        source: {title: "Nerd! How the word popularized by Dr. Seuss went from geeky insult to mainstream", publisher: "NPR", url: "https://www.npr.org/2025/08/20/nx-s1-5507053/nerd-dr-seuss-word-of-week"}
+        checked: 2026-10-29
+      - q: "Which writer invented the word serendipity, in a letter of 1754?"
+        a: "Horace Walpole"
+        note: "He was inspired by a Persian fairy tale, The Three Princes of Serendip. Serendip is an old name for Sri Lanka."
+        level: 3
+        source: {title: "The delightful history behind serendipity suggests it's not mere luck", publisher: "NPR", url: "https://www.npr.org/2026/01/07/nx-s1-5667595/serendipity-origin-history-word-of-the-week"}
+        checked: 2026-10-29
+      - q: "Denim, the cloth used for jeans, is named after which French town?"
+        a: "Nîmes"
+        note: "From serge de Nîmes. Serge is a type of cloth."
+        level: 3
+        source: {title: "Definition of denim noun from the Oxford Advanced Learner's Dictionary", publisher: "Oxford University Press", url: "https://www.oxfordlearnersdictionaries.com/definition/english/denim"}
+        checked: 2026-10-29
+  - id: numbers
+    title: Numbers
+    editions: [uk, us]
+    intro: "Counting, calendars and some very big numbers, with the stories behind them."
+    questions:
+      - q: "How many minutes are there in an hour?"
+        a: "Sixty"
+        accept: "60"
+        note: "We count time in sixties thanks to the Sumerians and Babylonians, more than 4,000 years ago. Sixty is handy: it is the smallest number that 1, 2, 3, 4, 5 and 6 all divide into."
+        level: 1
+        source: {title: "Why is a minute divided into 60 seconds, an hour into 60 minutes, yet there are only 24 hours in a day?", publisher: "Scientific American", url: "https://scientificamerican.com/article/experts-time-division-days-hours-minutes"}
+        checked: 2026-10-29
+      - q: "In Roman numerals, which number is written as the letter X: 5, 10 or 100?"
+        a: "Ten"
+        accept: "10"
+        note: "V is 5, L is 50, C is 100, D is 500 and M is 1,000. Old documents sometimes wrote a final i as a j, so 2 could be written ij."
+        level: 1
+        source: {title: "Roman numerals", publisher: "The National Archives (UK)", url: "https://www.nationalarchives.gov.uk/help-with-your-research/reading-old-documents/roman-numerals/"}
+        checked: 2026-10-29
+      - q: "In an old story, the inventor of chess asks a king for one grain of wheat on the first square, two on the next, doubling each time. Could the king pay?"
+        a: "No"
+        note: "It was far too much. The doubling grows so fast that by the 41st square the count passes a trillion grains. The tale is told by the medieval historian Ibn Khallikan."
+        level: 1
+        source: {title: "The Ancient Riddle Of Geometric Increase", publisher: "Indiana Public Media (A Moment of Science)", url: "https://www.ipm.org/show/amomentofscience/2019-11-11/the-ancient-riddle-of-geometric-increase"}
+        checked: 2026-10-29
+      - q: "The Romans had no numeral for one number that we use every day. Which?"
+        a: "Zero"
+        accept: "Nought; nothing"
+        note: "The first clearly documented study of zero as a number comes from India, in the 7th century AD."
+        level: 2
+        source: {title: "Zero", publisher: "Florida State University, Department of Mathematics", url: "https://www.math.fsu.edu/~wooland/hm2ed/Part1Module1/zero.html"}
+        checked: 2026-10-29
+      - q: "A googol is the number 1 followed by how many zeros? The name was made up by a nine-year-old boy."
+        a: "A hundred"
+        accept: "100"
+        note: "Milton Sirotta coined it, and his uncle, the mathematician Edward Kasner, was the first to use it. The search engine Google took its name from it."
+        level: 2
+        source: {title: "GOOGOL Definition & Meaning", publisher: "Merriam-Webster", url: "https://www.merriam-webster.com/dictionary/Googol"}
+        checked: 2026-10-29
+      - q: "Pi begins 3.14. On which date is Pi Day held each year?"
+        a: "14 March"
+        a_us: "March 14"
+        note: "Pi is the distance round a circle divided by the distance across it. Pi Day was started in 1988 by the physicist Larry Shaw at the Exploratorium science museum in San Francisco, with a walk in a circle that ended with pie."
+        level: 2
+        source: {title: "Pi Day has San Francisco roots", publisher: "ABC7 San Francisco", url: "https://abc7news.com/post/pi-day-has-san-francisco-roots/3211980/"}
+        checked: 2026-10-29
+      - q: "Fibonacci's sequence, 1, 1, 2, 3, 5, 8, 13, first appeared in 1202 in a puzzle about breeding which animals?"
+        a: "Rabbits"
+        note: "Each number is the two before it added together. His book, Liber abaci, also made popular in Europe the Hindu-Arabic numerals we use today."
+        level: 2
+        source: {title: "Liber abaci", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/topic/Liber-abaci"}
+        checked: 2026-10-29
+      - q: "Most years that divide by four are leap years. Which of these was not a leap year: 1900, 1996 or 2000?"
+        a: "1900"
+        note: "A century year is a leap year only if it divides by 400. So 1900 was not, 2000 was, and 2100 will not be."
+        level: 2
+        source: {title: "Why February has 29 days in a leap year", publisher: "BBC Sky at Night Magazine", url: "https://www.skyatnightmagazine.com/space-science/leap-year-february-29-days"}
+        checked: 2026-10-29
+      - q: "In about AD 150, which astronomer split each degree into 60 parts, and those into 60 again, giving us minutes and seconds?"
+        a: "Ptolemy"
+        note: "He did it in his great book, the Almagest. Minutes were not used in everyday timekeeping until clocks showed them, near the end of the 1500s."
+        level: 3
+        source: {title: "Why is a minute divided into 60 seconds, an hour into 60 minutes, yet there are only 24 hours in a day?", publisher: "Scientific American", url: "https://scientificamerican.com/article/experts-time-division-days-hours-minutes"}
+        checked: 2026-10-29
+      - q: "When G. H. Hardy said his taxi number, 1729, seemed dull, which Indian mathematician told him it was very interesting?"
+        a: "Srinivasa Ramanujan"
+        accept: "Ramanujan"
+        note: "Hardy was visiting him, ill, in Putney. It is the smallest number that is the sum of two cubes in two different ways: 1 cubed plus 12 cubed, and 9 cubed plus 10 cubed."
+        level: 3
+        source: {title: "Mystery number: Solution", publisher: "Plus Magazine", url: "https://plus.maths.org/mystery-number-solution"}
+        checked: 2026-10-29
+  - id: classical-music
+    title: Classical music
+    editions: [uk, us]
+    intro: "Great composers, famous tunes, and a few musical jokes."
+    questions:
+      - q: "Who wrote the music for The Nutcracker ballet: Tchaikovsky, Mozart or Bach?"
+        a: "Tchaikovsky"
+        accept: "Pyotr Ilyich Tchaikovsky"
+        note: "The tinkling Dance of the Sugar Plum Fairy is played on the celesta, an instrument invented only in 1886."
+        level: 1
+        source: {title: "The celesta: the magical instrument that adds a touch of enchantment to music", publisher: "BBC Music Magazine (classical-music.com)", url: "https://classical-music.com/articles/discover-sound-sugar-plum-fairy"}
+        checked: 2026-10-29
+      - q: "In Peter and the Wolf, which animal does the flute play: the bird, the duck or the cat?"
+        a: "The bird"
+        note: "The duck is an oboe, the cat a clarinet, Grandfather a bassoon and the wolf the horns. Prokofiev wrote it for a children's theatre in Moscow in 1936."
+        level: 1
+        source: {title: "Peter and the Wolf", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com:443/print/article/878917"}
+        checked: 2026-10-29
+      - q: "Which composer was so deaf at the first performance of his Ninth Symphony that he had to be turned round to see the clapping: Beethoven, Bach or Chopin?"
+        a: "Beethoven"
+        accept: "Ludwig van Beethoven"
+        note: "It was in Vienna in 1824; one of the soloists turned him to face the audience. Its last movement, the Ode to Joy, sets a poem by Friedrich Schiller."
+        level: 1
+        source: {title: "Beethoven's iconic Ninth", publisher: "Royal Concertgebouw Orchestra", url: "https://www.concertgebouworkest.nl/en/stories/beethovens-iconic-ninth/"}
+        checked: 2026-10-29
+      - q: "Mozart wrote variations on a French folk song whose tune English-speaking children sing as which nursery rhyme?"
+        a: "Twinkle, Twinkle, Little Star"
+        note: "The song is Ah, vous dirai-je, Maman. Mozart did not write the tune himself. His variations were published in Vienna in 1785."
+        level: 2
+        source: {title: "Twelve Variations on \"Ah, vous dirai-je, Maman,\" K 265", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/print/article/1941980"}
+        checked: 2026-10-29
+      - q: "Which Italian composer wrote The Four Seasons, four violin concertos each with a poem about its season?"
+        a: "Antonio Vivaldi"
+        accept: "Vivaldi"
+        note: "They were published in Amsterdam in 1725. The poems may have been written by Vivaldi himself."
+        level: 2
+        source: {title: "The Four Seasons", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/print/article/215043"}
+        checked: 2026-10-29
+      - q: "Which composer wrote The Planets, which includes Mars, the Bringer of War?"
+        a: "Gustav Holst"
+        accept: "Holst"
+        note: "It was first performed in 1918. Pluto is not in it: it was not discovered until 1930. Why he left out Earth, nobody knows."
+        level: 2
+        source: {title: "Programme Note \"The Planets\"", publisher: "Berliner Philharmoniker", url: "https://www.berliner-philharmoniker.de/en/programme-notes/gustav-holst-the-planets/"}
+        checked: 2026-10-29
+      - q: "Where was Handel's Water Music first played, in July 1717, for King George I?"
+        a: "On a barge on the River Thames"
+        accept: "On the Thames; on a boat"
+        note: "About 50 musicians played on a barge beside the King's, from Whitehall up to Chelsea. He liked it so much he had it played three times."
+        level: 2
+        source: {title: "Handel Water Music: the musical work that launched the booze cruise", publisher: "BBC Music Magazine (classical-music.com)", url: "https://www.classical-music.com/features/works/handel-water-music"}
+        checked: 2026-10-29
+      - q: "Which composer's march is sung in Britain as Land of Hope and Glory and played at graduations across America?"
+        a: "Edward Elgar"
+        accept: "Elgar"
+        note: "It is his Pomp and Circumstance March No. 1. When he was given an honorary degree at Yale in 1905, the march was played at the ceremony. Princeton, Chicago and Columbia followed."
+        level: 2
+        source: {title: "Why is Elgar’s Pomp and Circumstance March No.1 the US graduation song?", publisher: "Classic FM", url: "https://www.classicfm.com/composers/elgar/guides/american-graduation-song/"}
+        checked: 2026-10-29
+      - q: "In Saint-Saëns's Carnival of the Animals, which instrument plays the tune of The Swan?"
+        a: "The cello"
+        accept: "Cello"
+        note: "He wrote the Carnival as a joke for a party and let only The Swan be published in his lifetime. Two pianos play the rippling water."
+        level: 3
+        source: {title: "How a composer's joke melodies became his unexpected legacy", publisher: "PBS NewsHour", url: "https://www.pbs.org/newshour/show/composers-joke-melodies-became-unexpected-legacy"}
+        checked: 2026-10-29
+      - q: "Which composer's Surprise Symphony is named after a sudden loud chord in the middle of a soft, slow movement?"
+        a: "Joseph Haydn"
+        accept: "Haydn"
+        note: "It was first played in London in 1792. Nobody knows for sure why he added it. One story says it was to wake a listener snoring in the front row."
+        level: 3
+        source: {title: "Surprise Symphony", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/print/article/1319418"}
+        checked: 2026-10-29
+  - id: food-around-the-world
+    title: Food around the world
+    editions: [uk, us]
+    intro: "Where our favourite foods first came from, and some tasty stories."
+    questions:
+      - q: "Chocolate is made from the beans of which tree: the cacao tree, the coconut palm or the coffee tree?"
+        a: "The cacao tree"
+        accept: "Cacao; cocoa"
+        note: "In Latin America, cacao beans were once used as money: one bean could buy a tamale, and 100 could buy a turkey hen."
+        level: 1
+        source: {title: "A Brief History of Chocolate", publisher: "Smithsonian Magazine", url: "https://www.smithsonianmag.com/history/a-brief-history-of-chocolate-21860917/"}
+        checked: 2026-10-29
+      - q: "Potatoes were first grown by people living in which mountains: the Andes, the Alps or the Himalayas?"
+        a: "The Andes"
+        note: "Andean farmers freeze-dried potatoes by leaving them out on frosty nights and thawing them in the morning sun. The result, chuño, keeps for years, and it fed the Inca armies."
+        level: 1
+        source: {title: "How the Potato Changed the World", publisher: "Smithsonian Magazine", url: "https://www.smithsonianmag.com/history/how-the-potato-changed-the-world-108470605/"}
+        checked: 2026-10-29
+      - q: "Kimchi, spicy pickled vegetables, is a favourite food of which country: Korea, India or Brazil?"
+        a: "Korea"
+        accept: "South Korea"
+        note: "In late autumn, whole communities get together to make and share huge amounts of it. The custom is called kimjang."
+        level: 1
+        source: {title: "Kimjang, making and sharing kimchi in the Republic of Korea", publisher: "UNESCO", url: "https://ich.unesco.org/en/RL/00881"}
+        checked: 2026-10-29
+      - q: "There is no ham in a hamburger. It is named after which German city?"
+        a: "Hamburg"
+        level: 2
+        source: {title: "HAMBURGER STEAK Definition & Meaning", publisher: "Merriam-Webster", url: "https://www.merriam-webster.com/dictionary/hamburger%20steak"}
+        checked: 2026-10-29
+      - q: "Paella was invented among the rice fields near which Spanish city?"
+        a: "Valencia"
+        note: "In L'Albufera, a natural park just outside the city."
+        level: 2
+        source: {title: "L'Albufera of Valencia", publisher: "Visit València", url: "https://www.visitvalencia.com/en/what-to-see-valencia/albufera"}
+        checked: 2026-10-29
+      - q: "Which spice, the world's most expensive, is picked by hand from the middle of crocus flowers?"
+        a: "Saffron"
+        note: "Each flower has just three threads. A pound of saffron, about 450 grams, takes 75,000 flowers."
+        level: 2
+        source: {title: "Saffron", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/topic/saffron"}
+        checked: 2026-10-29
+      - q: "Vanilla comes from the seed pods of what kind of flower: an orchid, a rose or a tulip?"
+        a: "An orchid"
+        accept: "Orchid"
+        note: "In 1841, on the island now called Réunion, a 12-year-old boy born into slavery, Edmond Albius, showed how to pollinate vanilla flowers by hand. That made vanilla farming possible on a large scale."
+        level: 2
+        source: {title: "Edmond Albius: the boy who revolutionised the vanilla industry", publisher: "The Linnean Society of London", url: "https://linnean.org/news/2019/10/16/edmond-albius"}
+        checked: 2026-10-29
+      - q: "The croissant was inspired by the kipferl, a crescent-shaped pastry from which country?"
+        a: "Austria"
+        note: "An Austrian, August Zang, opened a Viennese bakery in Paris in the late 1830s. A popular story links the croissant to the siege of Vienna in 1683, but that is generally thought to be just a good story."
+        level: 2
+        source: {title: "The history of the croissant", publisher: "Europeana", url: "https://europeana.eu/mt/stories/the-history-of-the-croissant"}
+        checked: 2026-10-29
+      - q: "Worcestershire sauce was a failure until its forgotten barrel turned out, 18 months later, to have improved. Which small fish is in it?"
+        a: "Anchovies"
+        accept: "Anchovy"
+        note: "The chemists John Lea and William Perrins of Worcester put it on sale in 1837, from a recipe a former governor of Bengal had brought back."
+        level: 3
+        source: {title: "Worcestershire sauce", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/print/article/647899"}
+        checked: 2026-10-29
+      - q: "The Japanese scientist Kikunae Ikeda named a fifth basic taste, which he tracked down in kelp. What did he call it?"
+        a: "Umami"
+        note: "It is Japanese for scrumptiousness. In 1907 he boiled down 90 pounds of kelp to find it. The substance behind it turned out to be glutamate."
+        level: 3
+        source: {title: "The Science of Satisfaction", publisher: "Science History Institute (Distillations)", url: "https://www.sciencehistory.org/stories/magazine/the-science-of-satisfaction/"}
+        checked: 2026-10-29
