@@ -216,7 +216,7 @@
   });
   $$('[data-book] a[data-aff-exp]').forEach(a => { try {
     const u = new URL(a.href), ex = (window.DDR.experiences || {});
-    if (a.dataset.affExp === 'viator' && ex.viator) u.searchParams.set('pid', ex.viator);
+    if (a.dataset.affExp === 'viator' && ex.viator) { u.searchParams.set('pid', ex.viator); u.searchParams.set('mcid', '42383'); u.searchParams.set('medium', 'link'); }
     if (a.dataset.affExp === 'getyourguide' && ex.getyourguide) u.searchParams.set('partner_id', ex.getyourguide);
     a.href = u.toString(); } catch {} });
   $$('a[data-aff-book]').forEach(a => a.addEventListener('click', () => track('affiliate_click', { url: a.href, kind: 'book', region: document.body.dataset.region })));
@@ -261,7 +261,7 @@
       // experience affiliate ids (Viator / GetYourGuide) once they exist in site.yaml
       $$('a[data-aff-exp]', box).forEach(a => { try {
         const u = new URL(a.href), ex = (window.DDR.experiences || {});
-        if (a.dataset.affExp === 'viator' && ex.viator) u.searchParams.set('pid', ex.viator);
+        if (a.dataset.affExp === 'viator' && ex.viator) { u.searchParams.set('pid', ex.viator); u.searchParams.set('mcid', '42383'); u.searchParams.set('medium', 'link'); }
         if (a.dataset.affExp === 'getyourguide' && ex.getyourguide) u.searchParams.set('partner_id', ex.getyourguide);
         a.href = u.toString(); } catch {} });
       $$('a[data-local-link]', box).forEach(a => a.addEventListener('click', () => track('local_click', { activity: box.dataset.activity, region: box.dataset.shown, url: a.href })));
