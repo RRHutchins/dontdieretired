@@ -7,6 +7,9 @@ tags: [discoveries, history, fossils, human-evolution, ethiopia, africa, museums
 segments: [learner, changer]
 level: any
 art: cliffs
+photo_file: "File:Replica dei resti di australopithecus afarensis detto lucy o dinknesh, da hadar (afar), 3,2 milioni di anni fa 02.jpg"
+photo_caption: "A replica of Lucy's bones laid out in a case at the National Museum of Ethiopia in Addis Ababa, where the original fossils are kept."
+photo_alt: "Pale brown fossil bones laid out in the shape of a small skeleton on a dark grey surface inside a glass case, with two thigh-bone pieces in the foreground."
 hook: "A scrap of elbow, a Beatles song in camp and 3.2 million years. How Lucy was found in Ethiopia in 1974."
 lesson: "The big find often comes on the walk back, when you are tired and nearly done, so keep looking."
 standfirst: "On 24 November 1974, heading back to the Land Rover in the Afar region of Ethiopia, Donald Johanson spotted a fragment of elbow. It was the first piece of Lucy, the 3.2-million-year-old skeleton that showed our ancestors walked upright before their brains grew large."
