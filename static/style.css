@@ -943,3 +943,21 @@ h1{line-height:1.04}
 /* Activity photographs (RUNBOOK §6h, 28 Oct 2026): the card picture bleeds to the card's edges; the page uses .hero-fig */
 .fl-grid>li .fl-photo{display:block;width:calc(100% + 36px);max-width:none;height:auto;aspect-ratio:16/9;object-fit:cover;margin:-16px -18px 12px;border-radius:11px 11px 0 0}
 .gi-wrap{margin:28px 0 0}
+
+/* Puzzle books (RUNBOOK §6s, 29 Oct 2026): the book page, the shop panel, the home tile and the line on /puzzle/ */
+.tile-book{background:#8E1F2F}
+.book{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:48px;align-items:start;margin:24px 0 40px}
+.book-cover img{display:block;width:100%;height:auto;border-radius:6px;box-shadow:0 14px 34px rgba(30,20,10,.18)}
+.book-text h2{margin:.2em 0 .4em}
+.book-lead{font-size:1.15rem}
+.book-facts{padding-left:1.1em;margin:0 0 24px}.book-facts li{margin:.45em 0}
+.book-small{font-size:.92rem;color:var(--muted)}
+.book-kinds{background:var(--stone);border-radius:var(--r);padding:24px 28px;margin:0 0 32px}
+.book-kind-list{columns:3 200px;column-gap:28px;padding-left:1.1em;margin:12px 0 16px}.book-kind-list li{break-inside:avoid;margin:.2em 0}
+.book-promo{display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:center;background:var(--stone);border-radius:var(--r);padding:20px 24px;margin:0 0 24px;border-left:6px solid #8E1F2F}
+.book-promo-img{display:block;width:120px;height:auto;border-radius:4px}
+.book-promo h2 a{color:inherit}
+.pz-book{margin:-4px 0 20px}.pz-book a{display:inline-block;padding:10px 14px;min-height:44px;border-radius:12px;background:var(--stone);color:var(--ink);text-decoration:none}
+.pz-book a:hover{text-decoration:underline}
+@media (max-width:720px){.book{grid-template-columns:1fr;gap:24px}.book-cover{max-width:260px}.book-promo{grid-template-columns:84px minmax(0,1fr);gap:16px;padding:16px}.book-promo-img{width:84px}}
+@media (min-width:821px){.tiles:has(.tile-book){grid-template-columns:repeat(3,minmax(0,1fr))}}

@@ -54,6 +54,19 @@ products:
   store_url: "https://dontdieretired.gumroad.com"
   store_live: true                           # all ten products verified live on Gumroad at VAT-exclusive prices, 3 Oct 2026. Set false to show "Notify me" instead of Buy
 
+books:
+  # Printed puzzle books on Amazon KDP (RUNBOOK §6c, §6s). A book appears on the site only once it has a real Amazon link here.
+  # The link is amazon.co.uk with the UK tag; app.js sends US readers to amazon.com with the US tag (same ASIN).
+  # until: the last day the home-page tile and the puzzle-page line show it (seasonal books). Never state a price: Amazon shows it.
+  - id: christmas
+    title: "The Don't Die Retired Christmas Puzzle Book"
+    short: "Christmas Puzzle Book"
+    asin: "B0HPMJKZ7J"
+    amazon: "https://www.amazon.co.uk/dp/B0HPMJKZ7J?tag=dontdieretired-21"
+    live_since: "2026-10-29"                 # Robin confirmed the listing is live, 29 Oct 2026
+    until: "2026-12-25"
+    cover: "/static/img/books/christmas.png"
+
 feedback:
   # "Your say" page (/your-say/): interests, votes, suggestions. Needs the Cloudflare Pages Function in functions/api
   # (D1 database bound as DB, secrets SALT and ADMIN_TOKEN). Set live: true once /api/say answers; that adds it to nav and sitemap.

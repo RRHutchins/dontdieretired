@@ -544,6 +544,10 @@ def build(make_social=True):
     env.filters["metadesc"] = metadesc
     env.filters["seotitle"] = lambda t: seo_title(t, cfg["site"]["name"])
     env.globals.update(same_as=[v for k, v in cfg.get("social", {}).items() if isinstance(v, str) and v.startswith("http")])
+    # Printed puzzle books (RUNBOOK §6s): only books with a real Amazon link; seasonal ones leave the home tile after `until`
+    _books = [b for b in (cfg.get("books") or []) if str(b.get("amazon", "")).startswith("https://www.amazon.")]
+    _today = dt.date.today().isoformat()
+    env.globals.update(books=_books, books_now=[b for b in _books if str(b.get("until") or "9999") >= _today])
 
     def out(path: str, tpl: str, **ctx):
         p = DIST / path.strip("/") / "index.html" if path != "/" else DIST / "index.html"
@@ -779,6 +783,16 @@ def build(make_social=True):
     urls.append(out("/start-here/", "start.html"))
     urls.append(out("/newsletter/", "newsletter.html"))
     urls.append(out("/shop/", "shop.html"))
+    if _books:
+        urls.append(out("/puzzle-books/", "puzzle-books.html"))
+        import importlib.util as _ilu   # the book's link-preview image and its social cards (tools/book_posts.py)
+        _spec = _ilu.spec_from_file_location("book_posts", ROOT / "tools" / "book_posts.py")
+        _bp = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_bp)
+        print(f"book cards: {_bp.draw_all(DIST)} posts")
+        pages.append({"title": "The Don't Die Retired puzzle books", "url": "/puzzle-books/", "category": "think",
+                      "excerpt": "Large-print puzzle books in print on Amazon, made by the people behind the daily puzzles.",
+                      "tags": ["puzzle", "puzzles", "book", "books", "christmas", "gift", "present", "sudoku", "large", "print"],
+                      "image": "/static/og-default.png", "art": "/static/og-default.png"})
     proposals = (load_yaml(CONTENT / "proposals.yaml") or {}).get("proposals", []) if (CONTENT / "proposals.yaml").exists() else []
     say = out("/your-say/", "your-say.html", proposals=proposals)
     if cfg.get("feedback", {}).get("live"): urls.append(say)

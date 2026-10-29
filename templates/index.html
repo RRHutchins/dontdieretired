@@ -45,6 +45,7 @@
 <section class="tiles" aria-label="Things to do here">
   <a class="tile tile-puzzle" href="/puzzle/"><span class="tile-k">Today's puzzles</span><strong>Four a day</strong><span>Wheel, Ladder, Sudoku and Numbers. Gentle, steady or hard. New every day.</span><span class="pz-badge" data-pz-badge hidden></span></a>
   <a class="tile tile-scam" href="/scam-help/"><span class="tile-k">Use it as often as you like</span><strong>Scam checker</strong><span>A text, an email, a call or someone at the door: check it before you act.</span></a>
+  {% for b in books_now[:1] %}<a class="tile tile-book" href="/puzzle-books/"><span class="tile-k">New on Amazon</span><strong>{{ b.short }}</strong><span>105 large-print puzzles of seventeen kinds, for the days when nobody has to be anywhere.</span></a>{% endfor %}
 </section>
 
 <section class="manifesto band">

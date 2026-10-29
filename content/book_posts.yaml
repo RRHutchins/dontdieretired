@@ -1,0 +1,59 @@
+# Social posts for the printed puzzle books (RUNBOOK §6s). Not articles: each post has its own image card and links to /puzzle-books/.
+# `python tools/book_posts.py` writes social/<date>-<slug>/meta.json for each one; build.py draws the cards
+# (static/social/<slug>.png for Instagram, static/img/<slug>.png for X). The deploy's Buffer job sends a pack on its date
+# (or the day after), like any other pack. Never edit the text of a post once its date has passed: it would post again.
+# Facts only from the book itself (books/build_book.py, verify.py) and site.yaml. No prices, no delivery promises, no reviews.
+book: christmas
+posts:
+  - date: "2026-10-30"
+    slug: book-christmas-out
+    card: "Our Christmas Puzzle Book is out"
+    text: "It's here: The Don't Die Retired Christmas Puzzle Book. 105 puzzles of seventeen kinds, in large print, for the days around Christmas when nobody has to be anywhere. It's a paperback on Amazon now."
+  - date: "2026-11-03"
+    slug: book-christmas-seventeen-kinds
+    card: "Seventeen kinds of puzzle in one book"
+    text: "Sudoku and word searches, yes. But also star battle, kakuro, bridges, nonograms, and Trees and presents, where you put a present beside every tree. Seventeen kinds in all, each explained at the front of our Christmas Puzzle Book."
+  - date: "2026-11-07"
+    slug: book-christmas-three-levels
+    card: "Gentle, Steady or Tricky"
+    text: "Our Christmas Puzzle Book comes in three parts. Gentle is for the armchair. Steady asks for more. Tricky is for the quiet hour when everyone else has gone for a walk."
+  - date: "2026-11-11"
+    slug: book-christmas-mince-pies
+    card: "Who brought the mince pies?"
+    text: "One of the logic puzzles in our Christmas Puzzle Book is a party where you work out who brought what. Every logic puzzle in the book has exactly one answer, checked by computer, so there is always a way through without guessing."
+  - date: "2026-11-15"
+    slug: book-christmas-stocking-filler
+    card: "A stocking filler for whoever hosts Christmas"
+    text: "Looking for a small present for the person doing the cooking? Our Christmas Puzzle Book has 105 puzzles for the quiet days afterwards, in a big 8.5 x 11 inch paperback with room to write."
+  - date: "2026-11-19"
+    slug: book-christmas-missing-vowels
+    card: "Carols with the vowels taken out"
+    text: "Missing vowels: a carol or a Christmas title with every A, E, I, O and U removed. Put them back. It's one of the seventeen kinds of puzzle in our Christmas Puzzle Book."
+  - date: "2026-11-23"
+    slug: book-christmas-large-print
+    card: "Large print, and room to write"
+    text: "Every puzzle in our Christmas Puzzle Book, and every instruction, is in 16-point type or larger, on a big page. Find a pencil and settle in."
+  - date: "2026-11-27"
+    slug: book-christmas-dickens-code
+    card: "Dickens, in code"
+    text: "The cryptograms in our Christmas Puzzle Book hide lines from A Christmas Carol and other classic Christmas writing. Each letter stands for another. Crack the code to read the line."
+  - date: "2026-12-01"
+    slug: book-christmas-december
+    card: "A puzzle a day until Christmas?"
+    text: "December is here. There are 105 puzzles in our Christmas Puzzle Book, so even one a day from now leaves plenty for Boxing Day and beyond."
+  - date: "2026-12-05"
+    slug: book-christmas-nonograms
+    card: "A picture hidden in a grid"
+    text: "Shade the right squares and a picture appears; the numbers tell you which. Nonograms are one of the kinds in our Christmas Puzzle Book that you may not have met before."
+  - date: "2026-12-09"
+    slug: book-christmas-answers
+    card: "The answers are at the back"
+    text: "Stuck? Every solution in our Christmas Puzzle Book is at the back, and the page number is at the foot of each puzzle. No peeking until you've had a proper go."
+  - date: "2026-12-13"
+    slug: book-christmas-pudding-walk
+    card: "Something to do between the pudding and the walk"
+    text: "That's what our Christmas Puzzle Book is for: 105 puzzles, seventeen kinds, three levels, in large print. It's on Amazon now."
+  - date: "2026-12-17"
+    slug: book-christmas-last-call
+    card: "Still looking for a stocking filler?"
+    text: "Our Christmas Puzzle Book is on Amazon. It gets busy before Christmas, so check the delivery date on Amazon's page before you order."

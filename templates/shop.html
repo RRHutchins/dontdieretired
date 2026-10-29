@@ -2,7 +2,17 @@
 {% block title %}Plans, workbooks &amp; guides — {{ cfg.site.name }}{% endblock %}
 {% block description %}Practical, printable plans for doing more with your life: strength, food, learning, money, work, friendship, travel and tech.{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Shop</p><h1>Plans you can print and start on Monday</h1><p class="lead">Written by us, checked against official guidance, priced so they're an easy yes. Every plan is a PDF you can print or read on screen. Members get them all. Prices shown include UK VAT, so what you see is what you pay. Readers outside the UK are shown the total in their own currency at checkout before paying.</p></header>
+<header class="page-head"><p class="kicker">Shop</p><h1>Plans you can print and start on Monday</h1><p class="lead">Written by us, checked against official guidance, priced so they're an easy yes. Every plan is a PDF you can print or read on screen. Prices shown include UK VAT, so what you see is what you pay. Readers outside the UK are shown the total in their own currency at checkout before paying.</p></header>
+
+{% for b in books %}
+<aside class="promo book-promo" aria-label="{{ b.short }}">
+  <a href="/puzzle-books/" aria-hidden="true" tabindex="-1"><img class="book-promo-img" src="{{ b.cover }}" alt="" width="160" height="207" loading="lazy"></a>
+  <div><p class="kicker">Puzzle book, in print on Amazon</p>
+  <h2 class="h4"><a href="/puzzle-books/">{{ b.title }}</a></h2>
+  <p>105 large-print puzzles of seventeen kinds, in three levels, with the solutions at the back.</p>
+  <p><a class="btn btn-small" href="{{ b.amazon }}" target="_blank" rel="sponsored noopener" data-aff>See it on Amazon</a> <a href="/puzzle-books/">What's inside →</a></p></div>
+</aside>
+{% endfor %}
 
 <nav class="shop-jump" aria-label="Shop sections">
 {% for cid, c in categories.items() %}{% if products.products | selectattr('category','equalto',cid) | list %}<a href="#cat-{{ cid }}">{{ c.label }}</a>{% endif %}{% endfor %}

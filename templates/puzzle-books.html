@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Puzzle books: the Christmas Puzzle Book in large print — {{ cfg.site.name }}{% endblock %}
+{% block description %}{{ books[0].title }}: 105 large-print puzzles of seventeen kinds, in three levels, with every solution at the back. A paperback on Amazon.{% endblock %}
+{% block ogimage %}/static/img/books/og-christmas.png{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Puzzle books</p><h1>Puzzles on paper, for the days when nobody has to be anywhere</h1>
+<p class="lead">Our printed puzzle books are made by the same people as the <a href="/puzzle/">daily puzzles</a>. They are paperbacks, sold and delivered by Amazon.</p></header>
+
+{% for b in books %}
+<section class="book" id="{{ b.id }}">
+  <a class="book-cover" href="{{ b.amazon }}" target="_blank" rel="sponsored noopener" data-aff aria-hidden="true" tabindex="-1">
+    <img src="{{ b.cover }}" alt="" width="800" height="1035" loading="eager">
+  </a>
+  <div class="book-text">
+    {% if b.id == "christmas" %}
+    <p class="kicker">New for Christmas {{ b.live_since[:4] }}</p>
+    <h2>{{ b.title }}</h2>
+    <p class="book-lead">Something to do between the pudding and the walk: 105 puzzles of seventeen kinds, nearly all with something of Christmas or midwinter in them.</p>
+    <ul class="book-facts">
+      <li><strong>Three parts.</strong> Gentle for the armchair, Steady when you want more, and Tricky for the quiet hour when everyone else has gone for a walk.</li>
+      <li><strong>Large print.</strong> Every puzzle and its instructions are in 16-point type or larger, with room to write.</li>
+      <li><strong>One answer each.</strong> Every logic puzzle was checked by computer to have exactly one answer, so there is always a way through without guessing. The solutions are at the back.</li>
+      <li><strong>A big page.</strong> A paperback of 146 pages, 8.5 × 11 inches (21.6 × 27.9 cm).</li>
+    </ul>
+    <p><a class="btn" href="{{ b.amazon }}" target="_blank" rel="sponsored noopener" data-aff>See it on Amazon</a></p>
+    <p class="book-small">Amazon shows the price and delivery dates. Readers in the US are taken to Amazon.com. It is our own book, and the link also carries our Amazon affiliate tag, so Amazon may pay us a small commission on top.</p>
+    {% endif %}
+  </div>
+</section>
+
+{% if b.id == "christmas" %}
+<section class="book-kinds">
+  <h2 class="h3">What's inside</h2>
+  <p>Some will be old friends and some you may never have met. The front of the book explains how each one works.</p>
+  <ul class="book-kind-list">
+    <li>Word search</li><li>Cryptograms (including lines from Dickens, in code)</li><li>Anagrams</li><li>Missing vowels</li><li>Word ladders</li>
+    <li>Logic puzzles (who brought the mince pies?)</li><li>Nonograms (pictures hidden in a grid)</li><li>Sudoku</li><li>Killer sudoku</li><li>Kakuro</li>
+    <li>Futoshiki</li><li>Calcudoku</li><li>Skyscrapers</li><li>Binary puzzles</li><li>Bridges</li><li>Trees and presents</li><li>Star battle</li>
+  </ul>
+  <p class="book-small">How it was made: the puzzles come from our own program and a second, separate program re-checks every one. The book's words and pictures were made with AI and checked by us, and Amazon was told that when it was published.</p>
+</section>
+{% endif %}
+{% endfor %}
+
+<p>Want a puzzle right now? There are <a href="/puzzle/">four free ones on the site every day</a>, at three levels.</p>
+{% endblock %}

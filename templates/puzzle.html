@@ -5,6 +5,7 @@
 {% block content %}
 <header class="page-head"><p class="kicker">Daily puzzles</p><h1>Four puzzles, new every day</h1>
 <p class="lead">A word wheel, a word ladder, a sudoku and a numbers target. Do one or do all four. Today's are gone at midnight.</p></header>
+{% for b in books_now %}<p class="pz-book"><a href="/puzzle-books/"><strong>Prefer paper?</strong> {{ b.title }}: 105 puzzles of seventeen kinds, in large print →</a></p>{% endfor %}
 
 <div class="pz" data-puzzle>
   <div class="pz-streak" data-pz-streak aria-live="polite"></div>
