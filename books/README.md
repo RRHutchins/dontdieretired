@@ -69,6 +69,9 @@ so the whole round is in view, and each round's foot gives the page of its answe
   `checked`. Questions without `checked` are not printed. Notes add nothing the source does not say. Where
   accounts differ, the question avoids the disputed point or the note says so. Mix in each round: about four easy,
   four medium, two hard.
+- **Length.** A round must fit on its two facing pages. Keep each round's questions to about 1,000 characters in
+  all (most under 120 each) and put the story in the `note`; five rounds written on 29 Oct 2026 first ran to a third
+  page until shortened. Check the sample build for any round with two "(continued)" pages.
 - **Not yet built:** cover, score sheet, the three "night" title pages in a full build, a checker for duplicate
   answers across rounds. Amazon may treat two editions sharing two-thirds of their questions as near-duplicates:
   keep titles, covers and descriptions clearly marked UK and American, and watch for a KDP query.
