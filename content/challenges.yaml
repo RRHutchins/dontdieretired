@@ -7397,6 +7397,35 @@
     checked: '2026-10-24'
   story: lascaux-cave-discovery
   story_note: Our Curious piece tells how four friends found the cave in 1940; the visits linked here are to the replicas, not the original cave.
+- id: walk-through-human-evolution-at-the-natural-history-museum
+  title: Walk through seven million years of human evolution
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  places:
+  - london
+  why: The Natural History Museum's free Human Evolution gallery in London runs from the first hominins to modern humans, with a 3.5-million-year-old canine from Laetoli, the first adult Neanderthal skull ever found and the 420,000-year-old Clacton spear. You can also handle Lucy's hip bone online, in a free 3D lab, before or after you go.
+  start:
+  - Read our Curious piece on how Lucy was found, so you know why walking upright matters.
+  - Go to the ground floor of the museum's East Wing and look for the Laetoli canine, the oldest hominin fossil in the collection.
+  - At home, open the University of Wisconsin's virtual lab and turn Lucy's hip bone beside a chimpanzee's and a human's.
+  links:
+  - label: Human Evolution gallery (Natural History Museum, London)
+    url: https://www.nhm.ac.uk/visit/galleries-and-museum-map/human-evolution.html
+    region: uk
+    checked: '2026-10-29'
+  - label: 'Virtual lab: afarensis pelvis (John Hawks Laboratory, University of Wisconsin-Madison)'
+    url: https://hominin.anthropology.wisc.edu/virtual-lab-afarensis-pelvis.html
+    region: any
+    checked: '2026-10-29'
+  story: lucy-fossil-hadar-discovery
+  story_note: Our Curious piece tells how Lucy was found in Ethiopia in 1974; the gallery does not list Lucy among its highlights.
 - id: climb-mount-st-helens
   title: Climb to the crater rim of Mount St. Helens
   category: move
