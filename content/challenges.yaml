@@ -5,6 +5,7 @@
 # collection (a named group with its own page: see COLLECTIONS in build.py; today only military),
 # places (only for an activity tied to one place: UK area keys or US postal codes from content/map_shapes.json),
 # inspire (real people who have done it: outside articles and YouTube films, each opened on its `checked` date; RUNBOOK §6h).
+# Planner (RUNBOOK §6s): when (best months), lead_weeks, plan_event. A new `season` phrase must also be added to content/planner.yaml.
 - id: paras-10
   title: Take on the PARAS' 10
   category: move
@@ -6653,6 +6654,7 @@
     checked: '2026-10-08'
   safety: This is a long march in open desert, so carry water, protect yourself from the sun and use the aid stations.
 - id: marine-corps-marathon
+  plan_event: marathon
   title: Run the Marine Corps Marathon
   category: move
   kind: event

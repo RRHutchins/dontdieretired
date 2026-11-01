@@ -743,6 +743,16 @@ def build(make_social=True):
                 if c.get(k) and c[k] not in by_slug: print(f"LIST WARNING: challenge {c['id']} points at a {k} that does not exist: {c[k]}")
             if c.get("local") and c["local"] not in local.get("activities", {}): c["local"] = None
         if stale: print(f"LIST WARNING: {stale} challenges have a link last checked over six months ago. Re-verify per RUNBOOK §6h.")
+        # My year, the planner (RUNBOOK §6s): planning fields checked here; the planner pages read dist/planner/activities.json
+        import importlib.util as _ilu
+        _ps = _ilu.spec_from_file_location("planner", ROOT / "tools" / "planner.py")
+        _pl = _ilu.module_from_spec(_ps); _ps.loader.exec_module(_pl)
+        _pdata, _pwarn = _pl.prepare(chs, ROOT)
+        for w in _pwarn: print(f"LIST WARNING: planner: {w}")
+        (DIST / "planner").mkdir(parents=True, exist_ok=True)
+        (DIST / "planner" / "activities.json").write_text(json.dumps(_pdata, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        _pby = {a["id"]: a for a in _pdata["activities"]}
+        for c in chs: c["plan"] = _pby[c["id"]]
         colls = [dict(v, id=k, acts=[c for c in chs if c.get("collection") == k]) for k, v in COLLECTIONS.items()]
         colls = [v for v in colls if v["acts"]]
         area_n = {}

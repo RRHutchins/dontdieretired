@@ -1,0 +1,101 @@
+# My year: the planner (RUNBOOK §6s). Settings the planner uses to turn an activity and a date into a get-ready plan.
+# Checked by tools/planner.py at every build. Nothing here is shown to readers as a fact about the world: lead times are
+# our planning defaults, and `seasons` is our reading of each activity's own `season` line (which came from its sources).
+#
+# Per-activity overrides in content/challenges.yaml (all optional):
+#   when: [5, 6, 7]        best months to do it (1 = January). Overrides the season reading. Use [] for "any time".
+#   lead_weeks: 8          how many weeks before the date the plan starts. Overrides the kind's default.
+#   plan_event: marathon   an engine event (engine/events/<id>.yaml) that supplies the training. Needed only when the
+#                          event's own `activity:` does not already point at this activity.
+
+# One plan shape per kind of activity. Strands, in the order the plan introduces them:
+#   book   find it, check dates, book a place or tickets (booking deadlines, entry, courses)
+#   learn  read, visit, try a taster, practise between sessions
+#   train  physical preparation, only from the guidance engine (never written freehand)
+#   travel getting there and somewhere to stay
+#   kit    what to take or buy, at three levels, with the reason for each
+kinds:
+  skill:
+    label: Skill or course
+    lead_weeks: 10
+    strands: [book, learn, kit]
+    why: "Courses and classes have start dates and can fill up, so the plan begins with finding and booking one. Kit comes after the first session, once you know what you need."
+  experience:
+    label: Experience or day out
+    lead_weeks: 6
+    strands: [book, travel, kit]
+    why: "The hard part of a day out is the timing: the right season, tickets and getting there. The plan watches the calendar for you."
+  event:
+    label: Event
+    lead_weeks: 12
+    strands: [book, learn, travel, kit]
+    why: "Events have fixed dates and entry or ticket deadlines. Physical events add a training plan from our guidance engine, and its length is set by the engine, not by the date you would like."
+  project:
+    label: Project
+    lead_weeks: 4
+    strands: [learn, book, kit]
+    why: "Projects run over months and stall without a rhythm, so the plan sets milestones you can see."
+  habit:
+    label: Habit
+    lead_weeks: 1
+    strands: [book, learn]
+    why: "A habit needs a fixed slot in the week more than a plan, so the planner gives it one and checks in gently."
+
+# Lead weeks for an activity tied to an engine event come from the event's `weeks.default` (never fewer than `weeks.min`).
+
+# Our reading of each `season` phrase used in content/challenges.yaml, as best months (1 = January).
+# Northern hemisphere unless the phrase says otherwise. null = no particular months (any time of year).
+# A phrase missing from this list prints a LIST WARNING and the activity is treated as any time until it is added here.
+seasons:
+  "Late spring to early autumn": [5, 6, 7, 8, 9]
+  "Spring to autumn": [3, 4, 5, 6, 7, 8, 9, 10]
+  "Summer": [6, 7, 8]
+  "Spring to early autumn": [3, 4, 5, 6, 7, 8, 9]
+  "Summer for a first swim": [6, 7, 8]
+  "Winter": [12, 1, 2]
+  "Spring": [3, 4, 5]
+  "Spring to autumn in the UK": [3, 4, 5, 6, 7, 8, 9, 10]
+  "Summer for a first ascent": [6, 7, 8]
+  "Summer, when the cables are up": [6, 7, 8]
+  "July to late September, when the trail is usually free of snow": [7, 8, 9]
+  "Summer and early autumn": [6, 7, 8, 9]
+  "Summer on outdoor greens": [6, 7, 8]
+  "Autumn": [9, 10, 11]
+  "Courses often start in winter; the bee season is spring to autumn": [3, 4, 5, 6, 7, 8, 9, 10]
+  "Best around a new moon": null
+  "Winter is best, after rough weather": [12, 1, 2]
+  "Winter planting season": [12, 1, 2]
+  "Spring and autumn are popular": [3, 4, 5, 9, 10, 11]
+  "Growing season": [3, 4, 5, 6, 7, 8, 9, 10]
+  "Summer to autumn": [6, 7, 8, 9, 10, 11]
+  "Spring to summer": [3, 4, 5, 6, 7, 8]
+  "Early summer": [6]
+  "Autumn to spring, when the curling rinks have ice": [9, 10, 11, 12, 1, 2, 3, 4]
+  "Spring and autumn are kinder than summer heat or winter ice": [3, 4, 5, 9, 10, 11]
+  "February": [2]
+  "Autumn evenings in 2026, while Saturn is up for most of the night": [9, 10, 11]
+  "Autumn to spring, when nights are dark": [9, 10, 11, 12, 1, 2, 3]
+  "Spring and summer": [3, 4, 5, 6, 7, 8]
+  "Put it up by late winter and watch through spring": [12, 1, 2]
+  "Mostly summer": [6, 7, 8]
+  "Summer to early autumn in the high country": [6, 7, 8, 9]
+  "Mostly summer and early autumn": [6, 7, 8, 9]
+  "August": [8]
+  "Late June to mid July": [6, 7]
+  "September": [9]
+  "Late summer": [8]
+  "Late summer to autumn": [8, 9, 10, 11]
+  "Seville oranges are in the shops in midwinter": [12, 1]
+  "Late autumn": [11]
+  "Summer boating season": [6, 7, 8]
+  "Christmas, with applications opening in the autumn": [12]
+  "Main season in spring and summer": [3, 4, 5, 6, 7, 8]
+  "Midsummer and midwinter": [6, 12]
+  "Sow in spring, harvest in autumn": [3, 4, 5, 6, 7, 8, 9, 10]
+  "Permits are needed all year; daily numbers are capped from April to October": null
+  "July to October": [7, 8, 9, 10]
+  "May to October": [5, 6, 7, 8, 9, 10]
+  "November to April without alpine skills; May to October is winter": [11, 12, 1, 2, 3, 4]
+  "April to October (the trail closes every February)": [4, 5, 6, 7, 8, 9, 10]
+  "May to October without a guide": [5, 6, 7, 8, 9, 10]
+  "Mid-June to mid-October": [6, 7, 8, 9, 10]

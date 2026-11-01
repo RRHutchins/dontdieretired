@@ -307,6 +307,33 @@ Every training plan the site publishes or sells is generated from `engine/` (see
 - **27 Oct 2026, build-out run:** 27 sources (added NHS strength exercises and WHO 2011 recommendations for 65+ at tier 5; the LDWA's Trailwalker training and Great Run's half marathon plan and advice at tier 3), 48 statements (30 core, 18 supported, 0 thin): the legs-and-core and back-to-back statements are now supported; new running statements (three runs a week, long run in minutes, dynamic warm-up); new event `half-marathon` (12 weeks, long run measured in minutes). Note for later: Great Run's how-to page says to do long runs at target race pace, which conflicts with its own plan page and with the mostly-easy evidence; it is not used for that point. Next: cycling and swimming have no statements of their own.
 - **State at 27 Oct 2026 (morning):** 22 sources, 37 statements (23 core, 12 supported, 2 thin: back-to-back days before a multi-day trip, and the legs-and-core strength detail), 4 events (Yorkshire Three Peaks, first marathon, Kilimanjaro, last 100 km of a Camino). Sample plans in `engine/plans/` are drafts for Robin.
 
+### 6s. My year: the planner (Robin, 28 Oct 2026; build started 1 Nov 2026)
+Robin's idea: a reader picks things to do this year, gives each a date or a season, and the planner builds a get-ready plan backwards from that date, with a step and the reason for it, on one timeline that drops into their own calendar and the app's Today screen. In his words it is "an enabler for enjoying life", **not a fitness site, but not moved away from fitness either**: a typical month holds one fitness goal and many other things (a course, a day out, a festival, a weekly habit). Language: "get ready" and "things to look forward to", not "train" and "challenges", except for a physical event's training plan. The plan document is `DDR-My-Year-Planner-Plan.docx` (sent to Robin 28 Oct 2026).
+- **Free first, Plus later.** The free planner (no account, stored in the browser through `static/list-store.js`, like the list) is built now. Planner Plus (synced account, reminders, re-planning, a live calendar feed) is sold only once it exists (house rule; see §6q on the removed membership). Nothing free may be locked later.
+- **Where the settings live.** `content/planner.yaml`: one plan shape per `kind` (label, default `lead_weeks`, the strands in order: book, learn, train, travel, kit, and why), and `seasons`, our reading of every `season` phrase in `content/challenges.yaml` as best months. `content/dates.yaml`: things that happen at the same time every year (months, an optional `next` date with its source, the page it came from, re-checked yearly). `tools/planner.py` checks both and every activity at each build and writes `dist/planner/activities.json` (what the planner pages read); `python3 tools/planner.py` prints a summary.
+- **Planning fields on an activity (all optional):** `when: [months]` (overrides the season reading; `[]` = any time), `lead_weeks` (overrides the kind's default; never below an engine event's minimum), `plan_event` (an `engine/events` id, only when the event's own `activity:` does not already point here). The build refuses a malformed one.
+- **When writing or editing activities (including the scheduled build-out):** if you give an activity a `season` phrase that is not yet in `content/planner.yaml` → `seasons`, add it there in the same commit with its best months (the build prints a LIST WARNING until you do). Put anything with a fixed yearly date in `content/dates.yaml` from its official page.
+- **Training only from the engine (§6r).** The train strand appears only on activities tied to an engine event, and its length is the engine's. The planner never adds sessions to make room for other plans; it only moves flexible steps and says why.
+- **Money:** Book, Travel and Kit carry disclosed affiliate links only where a reader would book or buy anyway; non-paying options (local associations, adult education) are linked just the same. "On sale" is never claimed without a live price.
+- **Build log.** Day 1 (1 Nov): `content/planner.yaml`, `content/dates.yaml` (2 entries: Edinburgh Fringe, National Book Festival), `tools/planner.py`, the check in `build.py`, `plan_event: marathon` on `marine-corps-marathon`. Five activities have an engine training plan; 79 have best months, 233 are any time.
+- **Two-week build (one session a day, from the plan document):**
+  | Day | Date | Work |
+  |---|---|---|
+  | 1 | 1 Nov | Planning fields, validation, dates file (done) |
+  | 2 | 2 Nov | Generator: activity + date → dated steps with reasons for each kind |
+  | 3 | 3 Nov | "Plan this" on every activity page |
+  | 4 | 4 Nov | My year page: month and year views of all plans together, clashes flagged, flexible steps moved; list-store merge tests extended |
+  | 5 | 5 Nov | Add to my calendar (.ics) per plan |
+  | 6 | 6 Nov | Train strand: engine plans as dated daily steps |
+  | 7 | 7 Nov | Checkpoint with Robin on real plans |
+  | 8 | 8 Nov | Twenty or more courses, seasonal days out and festivals from official pages (start with the "to source" items in the Project doc activity-backlog.md) |
+  | 9 | 9 Nov | Getting there and where to stay |
+  | 10 | 10 Nov | Kit at three levels for the most planned-for activities |
+  | 11 | 11 Nov | Today screen in the app |
+  | 12 | 12 Nov | Planner Plus waiting list; Plausible events plan_create, plan_ics, plan_step_view |
+  | 13 | 13 Nov | Review: links, sources, accessibility |
+  | 14 | 14 Nov | Launch the free planner; report to Robin |
+
 ### 6p. Links between pages (Robin, 27 Oct 2026: "if a person is in one page they are naturally led to others")
 - **Foot of every story and guide:** "Try it yourself" shows up to three activity cards: the activities tied to the piece (`story:`/`guide:`), then those sharing its subject (activity id words against the piece's tags, ignoring place names and loose words), then a stable pick from the same topic. "Keep reading" shows three pieces ranked by shared tags, then topic, newest first.
 - **Activity pages:** "Read next" (two stories or guides on the same subject, else the same topic) and "More like this" as coloured cards.

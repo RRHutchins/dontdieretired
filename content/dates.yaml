@@ -1,0 +1,18 @@
+# My year: when things happen every year (RUNBOOK §6s). The planner's year view uses this to suggest what is coming up
+# and to put a fixed-date activity in the right place. Checked by tools/planner.py at every build.
+#
+# RULES
+# - `activity` is an id in content/challenges.yaml. Every entry is written from a page opened on its `checked` date, and
+#   `source` is that page. Copy only what the page says.
+# - `months` are the months it usually falls in (1 = January). If the page gives this year's date, put it in `next`
+#   (YYYY-MM-DD) with `next_source`; the build ignores a `next` date once it has passed. Never guess a date.
+# - Re-check every entry once a year: dates move.
+dates:
+  - activity: go-to-edinburgh-fringe
+    months: [8]
+    note: Runs for three weeks each August.
+    source: {label: "Britannica: the Fringe", url: "https://www.britannica.com/art/the-Fringe", checked: "2026-11-01"}
+  - activity: go-to-national-book-festival
+    months: [8, 9]
+    note: A single Saturday. The 2026 festival was on 22 August; the 2025 festival was on 6 September.
+    source: {label: "Library of Congress Bookmarked blog: 2026 National Book Festival date announced", url: "https://blogs.loc.gov/bookmarked/2026/02/18/2026-national-book-festival-date-announced-plus-learn-about-exhibiting-at-the-festival-this-year/", checked: "2026-11-01"}
