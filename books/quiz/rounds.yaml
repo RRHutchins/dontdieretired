@@ -1336,3 +1336,347 @@ rounds:
         level: 3
         source: {title: "The Science of Satisfaction", publisher: "Science History Institute (Distillations)", url: "https://www.sciencehistory.org/stories/magazine/the-science-of-satisfaction/"}
         checked: 2026-10-29
+
+  - id: animals
+    title: Animals
+    editions: [uk, us]
+    intro: "Hearts, hands and very odd poo: the animal kingdom at its strangest."
+    questions:
+      - q: "Which is the heaviest animal that has ever lived: the blue whale, Tyrannosaurus rex or the African elephant?"
+        a: "The blue whale"
+        level: 1
+        source: {title: "Blue whale", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/animal/blue-whale"}
+        checked: 2026-11-01
+      - q: "A baby kangaroo lives in its mother's pouch. Is it called a joey, a kid or a cub?"
+        a: "A joey"
+        note: "A red kangaroo is born about the size of a jelly bean, then spends about eight months growing in the pouch."
+        level: 1
+        source: {title: "Peeping from the pouch", publisher: "Zoo Berlin", url: "https://www.zoo-berlin.de/en/latest/news/detail/peeping-from-the-pouch"}
+        checked: 2026-11-01
+      - q: "Which Australian animal does cube-shaped poo: the wombat, the koala or the kangaroo?"
+        q_us: "Which Australian animal does cube-shaped poop: the wombat, the koala or the kangaroo?"
+        a: "The wombat"
+        note: "Stretchy grooves in its gut help shape the cubes. Wombats use their droppings to mark their territory."
+        level: 1
+        source: {title: "Wombats have buns of steel, and they poop in cubes. Here's why.", publisher: "National Geographic", url: "https://www.nationalgeographic.com/animals/2018/11/wombat-poop-cube-why-is-it-square-shaped"}
+        checked: 2026-11-01
+      - q: "Which tiny bird can hover in mid-air and is the only bird that can fly backwards?"
+        a: "The hummingbird"
+        note: "When hovering, its wings beat between 720 and 5,400 times a minute."
+        level: 2
+        source: {title: "Interesting Facts on Hummingbirds", publisher: "Hummingbird Health and Conservation Program, University of California, Davis", url: "https://hummingbirds.vetmed.ucdavis.edu/node/871"}
+        checked: 2026-11-01
+      - q: "Flamingo chicks hatch with white-grey feathers. What turns the grown-ups pink?"
+        a: "Their food"
+        accept: "Algae and brine shrimp; what they eat"
+        note: "Pigments in the algae and brine shrimp they eat turn their feathers pink."
+        level: 2
+        source: {title: "Why Are Flamingos Pink? And Other Flamingo Facts", publisher: "Smithsonian's National Zoo and Conservation Biology Institute", url: "https://nationalzoo.si.edu/animals/news/why-are-flamingos-pink-and-other-flamingo-facts"}
+        checked: 2026-11-01
+      - q: "Why do sea otters sometimes hold paws while they nap on the sea?"
+        a: "So they don't drift apart"
+        note: "They float together in groups called rafts, and linking paws keeps them safe from the currents."
+        level: 2
+        source: {title: "6 Things You Otter Know about Otters", publisher: "Denver Museum of Nature & Science", url: "https://dmns.org/catalyst/museum-stories/6-things-you-otter-know-about-otters/"}
+        checked: 2026-11-01
+      - q: "Which is the only kind of mammal that truly flies, on wings of skin stretched over very long fingers?"
+        a: "The bat"
+        accept: "Bats"
+        level: 2
+        source: {title: "Vertebrate Flight: Chiropteran Flight", publisher: "University of California Museum of Paleontology", url: "https://ucmp.berkeley.edu/vertebrates/flight/bats.html"}
+        checked: 2026-11-01
+      - q: "How long is a mother elephant pregnant: about six months, about a year or nearly two years?"
+        a: "Nearly two years"
+        note: "An Asian elephant carries her calf for 18 to 22 months. Smithsonian's National Zoo calls it the longest pregnancy of any animal."
+        level: 2
+        source: {title: "Elephant FAQs", publisher: "Smithsonian's National Zoo and Conservation Biology Institute", url: "https://nationalzoo.si.edu/animals/asian-elephant-faqs"}
+        checked: 2026-11-01
+      - q: "Which eight-legged animal, about a millimetre long and nicknamed the water bear, has survived ten days in outer space?"
+        a: "The tardigrade"
+        accept: "Moss piglet"
+        note: "In 2007 European scientists sent dried-out tardigrades into space. Most of the shielded ones came back to life."
+        level: 3
+        source: {title: "How Does the Tiny Waterbear Survive in Outer Space?", publisher: "Smithsonian Magazine", url: "https://www.smithsonianmag.com/science-nature/how-does-the-tiny-waterbear-survive-in-outer-space-30891298/"}
+        checked: 2026-11-01
+      - q: "Only two kinds of mammal lay eggs. One is the platypus. What is the other?"
+        a: "The echidna"
+        accept: "Spiny anteater"
+        note: "Together they are called monotremes."
+        level: 3
+        source: {title: "What is a monotreme?", publisher: "The Australian Museum", url: "https://australian.museum/learn/species-identification/ask-an-expert/what-is-a-monotreme/"}
+        checked: 2026-11-01
+
+  - id: an-american-christmas
+    title: An American Christmas
+    editions: [us]
+    intro: "Santa's hotline, the Sun's famous reply and the first national tree."
+    questions:
+      - q: "How many reindeer pull the sleigh in the 1823 poem 'Twas the Night Before Christmas?"
+        a: "Eight"
+        note: "Two were first called Dunder and Blixem. By 1844 they had become Donder and Blitzen."
+        level: 1
+        source: {title: "Twas the Night Before Christmas", publisher: "William L. Clements Library, University of Michigan", url: "https://clements.umich.edu/twas-the-night-before-christmas/"}
+        checked: 2026-11-01
+      - q: "Since 1955, what has a US military command done every Christmas Eve?"
+        a: "Tracks Santa"
+        accept: "NORAD tracks Santa; Follows Santa on radar"
+        note: "A misprinted advert sent children's calls for Santa to a secret military hotline. Colonel Harry Shoup answered, expecting an emergency. When a boy asked if he was really Santa, he played along and had his radar team look out for the sleigh."
+        level: 1
+        source: {title: "The Beginning of a Great Holiday Tradition", publisher: "U.S. Government Publishing Office (Government Book Talk)", url: "https://govbooktalk.gpo.gov/tag/norad/"}
+        checked: 2026-11-01
+      - q: "What colour are the Salvation Army's Christmas collecting kettles, first set out in 1891?"
+        a: "Red"
+        note: "It paid for a Christmas meal for people in need. Captain Joseph McFee put an iron pot, called a Simpson's Pot, at the Oakland Ferry Landing, where crowds would pass it."
+        level: 1
+        source: {title: "History of The Salvation Army: red kettle", publisher: "The Salvation Army USA", url: "https://salvationarmyusa.org/usn/red-kettle-history"}
+        checked: 2026-11-01
+      - q: "Builders put up the first Christmas tree at which New York landmark, in 1931?"
+        a: "Rockefeller Center"
+        note: "They hung it with garlands their families made. The first official lighting came two years later, with just 700 lights."
+        level: 2
+        source: {title: "The Rockefeller Center Christmas tree's 91 years of history", publisher: "ABC7 New York", url: "https://abc7ny.com/society/history-of-the-rockefeller-center-christmas-tree/5735546/"}
+        checked: 2026-11-01
+      - q: "Which cartoonist drew the jolly Santa we know today, for Harper's Weekly magazine?"
+        a: "Thomas Nast"
+        note: "His first, Santa Claus in Camp, appeared in January 1863. The Metropolitan Museum of Art says it introduced our modern image of Santa."
+        level: 2
+        source: {title: "Thomas Nast: Santa Claus in Camp (published in Harper's Weekly, January 3, 1863)", publisher: "The Metropolitan Museum of Art", url: "https://www.metmuseum.org/art/collection/search/427502"}
+        checked: 2026-11-01
+      - q: "In 1897 Virginia O'Hanlon asked a New York newspaper if Santa was real. Which paper replied, 'Yes, Virginia, there is a Santa Claus'?"
+        a: "The New York Sun"
+        accept: "The Sun"
+        note: "The reply was unsigned. Its writer, Francis Pharcellus Church, was named only after his death in 1906."
+        level: 2
+        source: {title: "1897 One Hundred Years Ago: The Big Question", publisher: "American Heritage", url: "https://americanheritage.com/1897-one-hundred-years-ago-1"}
+        checked: 2026-11-01
+      - q: "Which president lit the first National Christmas Tree, on Christmas Eve 1923?"
+        a: "Calvin Coolidge"
+        accept: "Coolidge"
+        note: "It stood on the Ellipse, south of the White House, a gift from Middlebury College in his home state of Vermont."
+        level: 2
+        source: {title: "1923 Tree Lighting", publisher: "U.S. National Park Service (The White House and President's Park)", url: "https://home.nps.gov/whho/learn/historyculture/1923-tree-lighting.htm"}
+        checked: 2026-11-01
+      - q: "Which Indiana town gets letters to Santa from all over America, because of its name?"
+        a: "Santa Claus"
+        note: "It was nearly called Santa Fe, but Indiana already had one. Its post office opened in 1856, and in 1914 postmaster James Martin began writing back to children."
+        level: 2
+        source: {title: "Santa Claus, Indiana: 'A Land of Fantasy'", publisher: "Indiana Historical Bureau (The Indiana History Blog)", url: "https://blog.history.in.gov/tag/santa-claus/"}
+        checked: 2026-11-01
+      - q: "In which year did Congress first make Christmas Day a federal holiday: 1776, 1870 or 1941?"
+        a: "1870"
+        note: "New Year's Day and the Fourth of July were made holidays in the same act. At first it covered only federal workers in Washington, DC. Congress extended it to the rest of the country in 1885."
+        level: 3
+        source: {title: "Federal Holidays: Evolution and Application (CRS Report 98-301)", publisher: "Congressional Research Service, Library of Congress", url: "https://www.everycrsreport.com/files/19990208_98-301_b846147ccab7f4548954317025736af29fb19cc3.html"}
+        checked: 2026-11-01
+      - q: "More than half of America's cut Christmas trees grow in two states. One is Oregon. What is the other?"
+        a: "North Carolina"
+        note: "US tree farms cut more than 14.5 million Christmas trees in 2022, according to the US Department of Agriculture."
+        level: 3
+        source: {title: "2022 Census of Agriculture: U.S. tree farms cut more than 14.5 million Christmas trees in 2022", publisher: "USDA Economic Research Service", url: "https://www.ers.usda.gov/data-products/charts-of-note/110530"}
+        checked: 2026-11-01
+
+  - id: kings-and-queens
+    title: Kings and queens
+    editions: [uk]
+    intro: "Burnt cakes, a car park and a Christmas Day coronation."
+    questions:
+      - q: "Which Tudor king had six wives: Henry VIII, Edward VII or Charles II?"
+        a: "Henry VIII"
+        note: "Three were called Katherine, Catherine and Kateryn, and two were called Anne."
+        level: 1
+        source: {title: "King Henry VIII & his six wives (teacher's fact sheet)", publisher: "Historic Royal Palaces", url: "https://www.hrp.org.uk/media/1229/teach005-factsheet_henry6wives.pdf"}
+        checked: 2026-11-01
+      - q: "In an old legend, King Alfred hid from the Vikings in a cottage in Somerset and got told off for letting something burn. What?"
+        a: "The cakes"
+        accept: "Loaves"
+        note: "The swineherd's wife had asked him to watch them. It is a legend, told by the 11th century, not recorded history."
+        level: 1
+        source: {title: "King Alfred the Great", publisher: "South West Heritage Trust", url: "https://swheritage.org.uk/king-alfred-the-great/"}
+        checked: 2026-11-01
+      - q: "Buckingham Palace has 775 rooms. How many of them are bathrooms: 8, 78 or 778?"
+        a: "78"
+        note: "It also has 240 bedrooms and 92 offices."
+        level: 1
+        source: {title: "Royal Residences: Buckingham Palace", publisher: "The Royal Family (royal.uk)", url: "https://www.royal.uk/royal-residences-buckingham-palace"}
+        checked: 2026-11-01
+      - q: "In 1215, in a meadow at Runnymede beside the Thames, which king put his seal to Magna Carta?"
+        a: "King John"
+        accept: "John"
+        note: "He sealed it rather than signed it. Only four copies of the 1215 charter survive."
+        level: 2
+        source: {title: "What's the Magna Carta? 10 Surprises on Its 800th Birthday", publisher: "National Geographic", url: "https://www.nationalgeographic.com/history/article/150614-magna-carta-history-britain-law-king"}
+        checked: 2026-11-01
+      - q: "Which king was crowned in Westminster Abbey on Christmas Day 1066?"
+        a: "William the Conqueror"
+        accept: "William I"
+        note: "Soldiers outside mistook the cheering for an attack and set fire to nearby houses. The service went on in the smoke."
+        level: 2
+        source: {title: "William I (the Conqueror)", publisher: "Westminster Abbey", url: "https://www.westminster-abbey.org/abbey-commemorations/royals/william-i-the-conqueror"}
+        checked: 2026-11-01
+      - q: "In 2012 archaeologists found the skeleton of which king under a council car park in Leicester?"
+        a: "Richard III"
+        note: "Tests including ancient DNA confirmed in 2013 that it was him, beyond reasonable doubt."
+        level: 2
+        source: {title: "Richard III: Discovery and identification", publisher: "University of Leicester", url: "https://le.ac.uk/richard-iii/grey-friars"}
+        checked: 2026-11-01
+      - q: "In 1603, which king of Scotland, king there since the age of one, also became king of England?"
+        a: "James VI"
+        accept: "James I; James VI and I"
+        note: "He became James I of England when Elizabeth I died."
+        level: 2
+        source: {title: "A brief history of James VI and I", publisher: "National Museums Scotland", url: "https://www.nms.ac.uk/discover-catalogue/a-brief-history-of-james-vi-and-i"}
+        checked: 2026-11-01
+      - q: "In 1952, which princess learned while on a tour of Kenya that her father had died and she was now queen?"
+        a: "Elizabeth II"
+        accept: "Princess Elizabeth; Queen Elizabeth II"
+        note: "On 9 September 2015 she became the longest-reigning monarch in British history."
+        level: 2
+        source: {title: "Queen Elizabeth II: the longest reigning monarch", publisher: "The Gazette", url: "https://thegazette.co.uk/all-notices/content/100279"}
+        checked: 2026-11-01
+      - q: "Who was queen of England for just nine days, in July 1553, before Mary I took the throne?"
+        a: "Lady Jane Grey"
+        accept: "Jane Grey; Queen Jane"
+        level: 3
+        source: {title: "Lady Jane Grey: The 'Nine Day Queen'", publisher: "Historic Royal Palaces", url: "https://www.hrp.org.uk/tower-of-london/history-and-stories/lady-jane-grey/"}
+        checked: 2026-11-01
+      - q: "In December 1936 Edward VIII gave up the throne. Which king, his younger brother, took his place?"
+        a: "George VI"
+        note: "Until then he was the Duke of York. He had struggled with a severe stammer since childhood."
+        level: 3
+        source: {title: "George VI", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/biography/George-VI"}
+        checked: 2026-11-01
+
+  - id: the-fifty-states
+    title: The fifty states
+    editions: [us]
+    intro: "From the First State to the fiftieth: how well do you know the map?"
+    questions:
+      - q: "Which is the biggest of the fifty states: Alaska, Texas or California?"
+        a: "Alaska"
+        note: "It is more than twice the size of Texas. The United States bought it from Russia in 1867 for $7.2 million."
+        level: 1
+        source: {title: "Alaska", publisher: "Britannica Kids (Encyclopaedia Britannica)", url: "https://kids.britannica.com/students/article/Alaska/272772"}
+        checked: 2026-11-01
+      - q: "Which state, made up of eight islands in the Pacific, joined in August 1959 as the fiftieth?"
+        a: "Hawaii"
+        note: "It has the only royal palace in the United States, 'Iolani Palace, and two official languages, English and Hawaiian."
+        level: 1
+        source: {title: "50 Fun Facts about the 50th State", publisher: "Office of the Governor, State of Hawai'i", url: "https://governor.hawaii.gov/wp-content/uploads/2022/11/50-Fun-Facts-about-the-50th-State.pdf"}
+        checked: 2026-11-01
+      - q: "Which state is known as the Sunshine State: Florida, Maine or Montana?"
+        a: "Florida"
+        level: 1
+        source: {title: "Florida State Symbols (CIR1467)", publisher: "University of Florida IFAS Extension (EDIS)", url: "https://journals.flvc.org/edis/article/view/114952"}
+        checked: 2026-11-01
+      - q: "Which is the smallest of the fifty states, nicknamed the Ocean State?"
+        a: "Rhode Island"
+        note: "Despite the name, most of it is on the mainland. Aquidneck, or Rhode, Island lies in Narragansett Bay."
+        level: 2
+        source: {title: "Rhode Island", publisher: "Britannica Kids (Encyclopaedia Britannica)", url: "https://kids.britannica.com/students/article/Rhode-Island/276715"}
+        checked: 2026-11-01
+      - q: "Which state is called the First State, because on 7 December 1787 it was the first to approve the Constitution?"
+        q_us: "Which state is called the First State, because on December 7, 1787, it was the first to approve the Constitution?"
+        a: "Delaware"
+        note: "Its delegates approved it quickly and unanimously."
+        level: 2
+        source: {title: "Ratification Document", publisher: "Delaware Public Archives", url: "https://archives.delaware.gov/ratification-document"}
+        checked: 2026-11-01
+      - q: "Which state's name comes from a Spanish word for snow, though it is the driest state in the country?"
+        a: "Nevada"
+        note: "It takes its name from the snow-capped Sierra Nevada mountains, and is nicknamed the Silver State."
+        level: 2
+        source: {title: "Nevada Pictures and Facts", publisher: "National Geographic Kids", url: "https://kids.nationalgeographic.com/geography/states/article/nevada"}
+        checked: 2026-11-01
+      - q: "Which is the only state made of two separate peninsulas? It won the western part of the upper one in a deal that ended a quarrel with Ohio over Toledo."
+        a: "Michigan"
+        level: 2
+        source: {title: "Why does Michigan have two peninsulas?", publisher: "Michigan Public", url: "https://www.michiganpublic.org/section/stateside/2026-04-03/why-does-michigan-have-two-peninsulas"}
+        checked: 2026-11-01
+      - q: "Which state was an independent republic for almost ten years, with Sam Houston as one of its presidents, before it joined the Union in 1845?"
+        a: "Texas"
+        note: "It declared independence from Mexico on March 2, 1836, and became the 28th state on December 29, 1845."
+        level: 2
+        source: {title: "Annexation Process: 1836-1845 A Summary Timeline", publisher: "Texas State Library and Archives Commission", url: "https://www.tsl.texas.gov/ref/abouttx/annexation/timeline.html"}
+        checked: 2026-11-01
+      - q: "Every state flag is a rectangle except one, a swallowtail pennant with two points. Which state's?"
+        a: "Ohio"
+        note: "Cleveland architect John Eisenmann designed it for the 1901 Pan-American Exposition. The state adopted it in 1902."
+        level: 3
+        source: {title: "A Swallowtail What? The History of Ohio's State Flag", publisher: "Ohio Memory (Ohio History Connection and State Library of Ohio)", url: "https://ohiomemory.ohiohistory.org/archives/6169"}
+        checked: 2026-11-01
+      - q: "Which state capital was renamed in 1873 after a German chancellor, in the hope of attracting German money for a railroad?"
+        a: "Bismarck"
+        accept: "Bismarck, North Dakota"
+        note: "It had been called Edwinton. The plan did not bring much money, but the name stuck, and Otto von Bismarck sent his thanks."
+        level: 3
+        source: {title: "Otto Von Bismarck (Dakota Datebook)", publisher: "Prairie Public", url: "https://news.prairiepublic.org/show/dakota-datebook-archive/2022-05-21/otto-von-bismarck"}
+        checked: 2026-11-01
+
+  - id: around-the-uk
+    title: Around the UK
+    editions: [uk]
+    intro: "Giants, volcanoes and a very decorated bus shelter."
+    questions:
+      - q: "What is the highest mountain in the UK: Yr Wyddfa (Snowdon), Ben Nevis or Scafell Pike?"
+        a: "Ben Nevis"
+        note: "More than 130,000 people climb to its summit each year."
+        level: 1
+        source: {title: "Ben Nevis", publisher: "John Muir Trust", url: "https://johnmuirtrust.org/trust-land/ben-nevis"}
+        checked: 2026-11-01
+      - q: "Which is the UK's longest river, 220 miles long: the Thames, the Severn or the Trent?"
+        a: "The Severn"
+        accept: "River Severn"
+        note: "It starts in the mountains of Wales. At very high tides a wave called the Severn Bore rushes up it as far as Gloucester."
+        level: 1
+        source: {title: "River Severn Navigation", publisher: "Canal & River Trust", url: "https://canalrivertrust.org.uk/canals-and-rivers/river-severn"}
+        checked: 2026-11-01
+      - q: "Edinburgh Castle sits on top of what: an old volcano, an old glacier or an old pyramid?"
+        a: "An old volcano"
+        accept: "A volcano"
+        note: "Edinburgh's volcanoes are at least 350 million years old and will not erupt again."
+        level: 1
+        source: {title: "I am trying to find information on a volcano that's located in Edinburgh, Scotland", publisher: "Volcano World, Oregon State University", url: "https://volcano.oregonstate.edu/faq/i-am-trying-find-information-volcano-%E2%80%99s-located-edinburgh-scotland-united-kingdom-scottish"}
+        checked: 2026-11-01
+      - q: "Legend says the giant Finn McCool built a causeway of about 40,000 stone columns to reach Scotland. In which part of the UK is it?"
+        a: "Northern Ireland"
+        accept: "County Antrim"
+        note: "In fact the columns are basalt, formed as lava cooled 50 to 60 million years ago."
+        level: 2
+        source: {title: "Giant's Causeway", publisher: "Encyclopaedia Britannica", url: "https://www.Britannica.Com/print/article/233107"}
+        checked: 2026-11-01
+      - q: "Which is the largest freshwater lake in the UK: Loch Lomond, Lough Neagh or Windermere?"
+        a: "Lough Neagh"
+        note: "It covers 383 square kilometres (about 148 square miles)."
+        level: 2
+        source: {title: "Lough Neagh and Lough Beg RAMSAR", publisher: "Department of Agriculture, Environment and Rural Affairs (Northern Ireland)", url: "https://www.daera-ni.gov.uk/protected-areas/lough-neagh-and-lough-beg-ramsar-daera"}
+        checked: 2026-11-01
+      - q: "Which Scottish loch holds more water than all the lakes of England and Wales put together?"
+        a: "Loch Ness"
+        note: "About 7,452 million cubic metres. Loch Morar is deeper, and Loch Lomond is bigger on the surface."
+        level: 2
+        source: {title: "Freshwater lochs", publisher: "NatureScot", url: "https://www.nature.scot/node/4027480"}
+        checked: 2026-11-01
+      - q: "The smaller 'bluestones' of Stonehenge travelled about 240 km (150 miles) to Wiltshire. From which country?"
+        a: "Wales"
+        note: "They came from the Preseli Hills in south-west Wales."
+        level: 2
+        source: {title: "30 things you might not know about Stonehenge", publisher: "English Heritage", url: "https://english-heritage.org.uk/visit/inspire-me/blog/blog-posts/30-things-you-might-not-know-about-stonehenge"}
+        checked: 2026-11-01
+      - q: "The Romans called this English city Aquae Sulis, 'the waters of Sulis', after its hot springs. What is it called now?"
+        a: "Bath"
+        note: "The water still bubbles up at well over 40°C (104°F)."
+        level: 2
+        source: {title: "Roman Baths", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/place/Roman-Baths"}
+        checked: 2026-11-01
+      - q: "Which Shetland island is Britain's most northerly inhabited island, famous for a bus shelter decorated in a new theme through the year?"
+        a: "Unst"
+        note: "It is called Bobby's Bus Shelter."
+        level: 3
+        source: {title: "Unst visitor leaflet: Welcome to Unst", publisher: "Shetland.org", url: "https://shetland.org/leaflets/unst-visitor-leaflet"}
+        checked: 2026-11-01
+      - q: "Hadrian's Wall runs 73 miles from Bowness-on-Solway in the west. At which town, whose name says what is there, does it end in the east?"
+        a: "Wallsend"
+        note: "Building began in AD 122, on the orders of the Emperor Hadrian."
+        level: 3
+        source: {title: "Hadrian's Wall facts and FAQs", publisher: "English Heritage", url: "https://www.english-heritage.org.uk/faqs-hadrians-wall/"}
+        checked: 2026-11-01
