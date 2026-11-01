@@ -1,0 +1,20 @@
+id: open-water-mile
+name: A first open water mile
+kinds: [endurance, swimming]
+activity: open-water-swim
+demands: "About 1.6 km (1 mile) of continuous swimming outdoors, with no lane ropes or walls to rest on, often in cold water."
+sources: [usms-open-water, swimeng-stay-safe, rnli-cold-water-2025]
+key_session:
+  name: continuous swim
+  unit: metres
+  start: {starter: 400, active: 800, advanced: 1200}
+  peak: 1600
+  note: at a steady pace you could keep up all day, in the pool at first and later at a supervised open water venue with others
+second_session: {name: easy swim, minutes: 30}
+specific:
+  name: sighting and breathing drills
+  text: in the pool, lift your eyes to sight every five to ten strokes and breathe to both sides, and practise treading water
+  from_week: 2
+pack_from_fraction: null
+weeks: {default: 10, min: 8}
+prerequisite: "If you cannot yet swim 400 metres without stopping, build up to it in the pool, or take lessons, before you start this plan."

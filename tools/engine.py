@@ -127,6 +127,8 @@ def fmt(v, unit):
         return f"{h:g} hour" + ("" if h == 1 else "s")
     if unit == "minutes":
         return f"{max(5, round(v / 5) * 5):g} minutes"
+    if unit == "metres":
+        return f"{max(50, round(v / 50) * 50):,.0f} metres"
     if unit in ("miles", "km"):
         return f"{round(v):g} {unit}" + (f" ({round(v * 1.609):g} km)" if unit == "miles" else f" ({round(v / 1.609):g} miles)")
     return f"{v:g} {unit}"

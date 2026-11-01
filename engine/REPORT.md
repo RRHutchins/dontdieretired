@@ -1,6 +1,6 @@
-# Guidance engine report (2026-10-27)
+# Guidance engine report (2026-11-01)
 
-27 sources, 48 statements, 5 event profiles. Core 30, supported 18, thin 0, contested 0.
+32 sources, 62 statements, 7 event profiles. Core 39, supported 23, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -30,6 +30,11 @@
 - Long Distance Walkers Association (Catharine Gregory), *Training for Trailwalker: 100 km along the South Downs Way* (2026). Opened 2026-10-27.
 - Great Run (organiser of the Great North Run), *Half marathon training plan (12-week Run/Walk, Beginner and Improver plans)* (2026). Opened 2026-10-27.
 - Great Run (organiser of the Great North Run), *How to train for a half marathon* (2026). Opened 2026-10-27.
+- RNLI (Royal National Lifeboat Institution), *RNLI reminds New Year dippers and open water swimmers of risks* (2025). Opened 2026-11-01.
+- Swim England (Open Water Swimming Hub), *How to stay safe swimming outdoors (updated 23 September 2022)* (2022). Opened 2026-11-01.
+- U.S. Masters Swimming (Elaine K. Howley and Scott Bay), *The definitive guide to open water swimming* (2026). Opened 2026-11-01.
+- British Cycling (Insight Zone), *Weeks 1-8 of Sofa to 50km training plan* (2015). Opened 2026-11-01.
+- Cycling UK, *10-week training plan for a 100km ride* (2025). Opened 2026-11-01.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -49,15 +54,18 @@
 | core | 15 | before you start | Start from your current level and build up gradually; repeating a week is fine and is part of the plan, not a failure. | cmo-2019, nhs-c25k, who-2011-older |
 | core | 14 | body maintenance | Include balance work; for older adults the official guidance pairs it with strength on two days a week, and balance (proprioception) training also reduced injuries in trials. | cmo-2019, lauersen-2014, who-2011-older |
 | core | 13 | altitude | Above 3,000 metres, sleep no more than 500 metres higher than the night before and take a rest day at the same height every three or four days. Avoid going from below 1,200 metres to above 3,500 metres in a day. | nhs-altitude, nathnac-altitude, tanapa-kili |
+| core | 12 | intensity | Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. | ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km |
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
 | core | 11 | taper | In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. | bosquet-2007, ea-pavey-marathon, higdon-novice1, greatrun-half-plan |
 | core | 11 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. | lauersen-2014, cmo-2019, bmc-hill-fit |
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
 | core | 10 | altitude | Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. | nhs-altitude, nathnac-altitude |
 | core | 10 | altitude | See your GP or a travel clinic before a high-altitude trip, especially if you have a health condition or have had altitude sickness before; they can discuss preventive medicine. Make sure your insurance covers evacuation. | nhs-altitude, nathnac-altitude |
-| core | 9 | intensity | Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. | ea-training-pace, ijspp-2010-intensity, higdon-novice1 |
 | core | 9 | recovery | Plan rest days into every week, and take an easier day when your legs are heavy. | nhs-c25k, higdon-novice1, bmc-long-distance |
 | core | 9 | feet | Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. | nhs-blisters, ea-pavey-marathon, bmc-long-distance |
+| core | 9 | on the day | Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
+| core | 9 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe |
+| core | 9 | on the day | Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
 | core | 8 | altitude | Being fit does not protect you from altitude sickness. Choose an itinerary with acclimatisation days and climb slowly however strong you feel. | nathnac-altitude, tanapa-kili |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 7 | body maintenance | Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground. | bmc-hill-fit, nhs-strength-exercises |
@@ -72,12 +80,19 @@
 | core | 6 | fuel and drink | Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. | ea-pavey-marathon, issn-ultra-2019 |
 | core | 6 | kit | In the later weeks, train with the pack and the kit you will carry on the day so nothing is new. | bmc-hill-fit, ydnpa-three-peaks, wanderlust-trek-prep |
 | core | 6 | why | Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. | bosquet-2007, ea-pavey-marathon |
+| core | 6 | warning signs | In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. | rnli-cold-water-2025, swimeng-stay-safe |
+| core | 6 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water |
+| core | 6 | warning signs | If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. | rnli-cold-water-2025, swimeng-stay-safe |
+| core | 6 | key session | Build one long ride a week at an easy pace, growing gradually towards the distance of the event; Cycling UK's plan for a 100 km ride takes the long ride from 15 to 25 km up to 90 to 100 km over nine weeks. | cyclinguk-100km, bc-sofa-50km |
+| core | 6 | intensity | Judge effort by talking. On easy rides you can hold a conversation, on steady efforts you can manage short sentences, and only the short hard efforts should leave you out of breath. | cyclinguk-100km, bc-sofa-50km |
+| core | 6 | kit | Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. | cyclinguk-100km, bc-sofa-50km |
+| core | 6 | fuel and drink | On long rides eat something every 20 to 30 minutes, and carry enough food and drink for the whole ride rather than relying on finding a shop. | bc-sofa-50km, cyclinguk-100km |
 | core | 5 | body maintenance | Weight-bearing activity such as walking and running helps keep bones strong. | cmo-2019 |
-| core | 5 | fuel and drink | Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. | eah-consensus-2015 |
 | core | 5 | warning signs | Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. | nhs-heart-attack |
 | supported | 5 | key session | Train for the ground you will cover. For hill challenges walk hills fast, or use stairs, and add short hill repeats of 50 to 100 metres of climb, four to six times, coming down slowly. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 5 | key session | Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them. | ydnpa-three-peaks, bmc-hill-fit |
 | supported | 5 | key session | Low-impact exercise such as cycling, swimming or rowing builds fitness with less pounding and is useful for everyone, not just the injured. | ea-training-pace, higdon-novice1 |
+| supported | 5 | fuel and drink | Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. | eah-consensus-2015 (against: bc-sofa-50km) |
 | supported | 5 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit |
 | supported | 5 | on the day | Start slower than you think you need to; early miles feel easy and are where most people overdo it. | ea-pavey-marathon, ea-training-pace |
 | supported | 5 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker |
@@ -93,18 +108,23 @@
 | supported | 3 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit |
 | supported | 3 | key session | For a first half marathon, think of the long run in minutes rather than miles, at an easy pace, building to about 80 minutes by two weeks before the race. | greatrun-half-plan |
 | supported | 3 | on the day | Warm up for 5 to 10 minutes before you run, moving the whole body with dynamic movements rather than held stretches. | greatrun-how-to-half |
+| supported | 3 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure, so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water |
+| supported | 3 | key session | Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest. | usms-open-water |
+| supported | 3 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water |
+| supported | 3 | on the day | Start every ride at an easy pace for about five minutes to warm up, and finish with five to ten minutes of slower riding. | cyclinguk-100km |
 
 ## Coverage by kind of challenge
 
 - altitude: 4 usable statements of its own
-- cycling: 0 usable statements of its own (needs sources)
+- cycling: 5 usable statements of its own
 - endurance: 16 usable statements of its own
 - hill: 6 usable statements of its own
 - multiday: 7 usable statements of its own
 - running: 6 usable statements of its own
-- swimming: 0 usable statements of its own (needs sources)
+- swimming: 9 usable statements of its own
 - walking: 7 usable statements of its own
 
 ## Disagreements and how they were resolved
 
 - **strength-twice-weekly**: Higdon's beginner marathon plan suggests people new to weights wait. The official guidance and the injury evidence carry more weight, so plans include strength work, starting light with body weight.
+- **drink-to-thirst**: British Cycling's beginner plan suggests sipping every 10 to 15 minutes on a ride. The international consensus statement outranks it, so plans say drink to thirst and the cycling statement on fuel does not set a drinking schedule.

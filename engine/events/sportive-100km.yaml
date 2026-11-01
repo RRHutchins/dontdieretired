@@ -1,0 +1,17 @@
+id: sportive-100km
+name: A first 100 km sportive or long ride
+kinds: [endurance, cycling]
+activity: ride-a-sportive
+demands: "100 km (62 miles) in the saddle in a day, often with hills and food stops along the way."
+sources: [cyclinguk-100km, bc-sofa-50km]
+key_session:
+  name: long ride
+  unit: km
+  start: {starter: 30, active: 40, advanced: 50}
+  peak: 95
+  note: at an easy, conversational pace, eating and drinking as you go
+second_session: {name: easy ride, minutes: 45}
+specific: null
+pack_from_fraction: null
+weeks: {default: 12, min: 10}
+prerequisite: "If you cannot yet ride for an hour comfortably, start with British Cycling's eight-week Sofa to 50km plan, which builds from three short rides a week to a 50 km ride."
