@@ -1680,3 +1680,332 @@ rounds:
         level: 3
         source: {title: "Hadrian's Wall facts and FAQs", publisher: "English Heritage", url: "https://www.english-heritage.org.uk/faqs-hadrians-wall/"}
         checked: 2026-11-01
+
+  - id: national-parks-and-landmarks
+    title: National parks and landmarks
+    editions: [us]
+    intro: "Geysers, giant trees and a very orange bridge."
+    questions:
+      - q: "The Statue of Liberty holds a tablet in her left arm. What does she hold up in her right hand?"
+        a: "A torch"
+        note: "The torch stands for enlightenment. Broken chains lie at her feet."
+        level: 1
+        source: {title: "Statue of Liberty Facts", publisher: "U.S. National Park Service", url: "https://nps.gov/stli/learn/statue-of-liberty-facts.htm"}
+        checked: 2026-11-02
+      - q: "How many presidents' faces are carved into Mount Rushmore: two, four or six?"
+        a: "Four"
+        note: "George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln."
+        level: 1
+        source: {title: "Why These Four Presidents?", publisher: "U.S. National Park Service", url: "https://www.nps.gov/articles/why-these-four-presidents.htm"}
+        checked: 2026-11-02
+      - q: "General Sherman, in Sequoia National Park, is the biggest tree in the world by volume. What kind of tree is it?"
+        a: "A giant sequoia"
+        accept: ["Sequoia", "Redwood"]
+        note: "Its trunk holds about 52,500 cubic feet of wood."
+        level: 1
+        source: {title: "The General Sherman Tree", publisher: "U.S. National Park Service", url: "https://nps.gov/seki/learn/nature/sherman.htm"}
+        checked: 2026-11-02
+      - q: "Which park, set up on 1 March 1872, was the first national park in the world?"
+        a: "Yellowstone"
+        level: 2
+        source: {title: "Yellowstone National Park", publisher: "U.S. National Park Service", url: "https://www.nps.gov/yell/index.htm"}
+        checked: 2026-11-02
+      - q: "Which river has carved the Grand Canyon over about six million years?"
+        a: "The Colorado River"
+        level: 2
+        source: {title: "Fly-through Grand Canyon Animation", publisher: "U.S. National Park Service", url: "https://home.nps.gov/grca/learn/photosmultimedia/fly-through.htm"}
+        checked: 2026-11-02
+      - q: "The Golden Gate Bridge is not golden. What is the name of its colour?"
+        q_us: "The Golden Gate Bridge is not golden. What is the name of its color?"
+        a: "International Orange"
+        accept: ["Orange"]
+        note: "The architect Irving Morrow chose it after seeing the red primer on the steel. Black and grey were turned down."
+        level: 2
+        source: {title: "Bridge Features", publisher: "Golden Gate Bridge, Highway and Transportation District", url: "https://www.goldengate.org/bridge/history-research/bridge-features/color-art-deco-styling/"}
+        checked: 2026-11-02
+      - q: "Which national park in Kentucky has the longest known cave system in the world?"
+        a: "Mammoth Cave"
+        note: "More than 400 miles of it have been surveyed so far."
+        level: 2
+        source: {title: "Mammoth Cave National Park", publisher: "U.S. National Park Service", url: "https://www.nps.gov/places/mammoth-cave-national-park.htm"}
+        checked: 2026-11-02
+      - q: "The Gateway Arch, 630 feet high and America's tallest monument, stands in which city?"
+        a: "St Louis"
+        accept: ["St. Louis"]
+        level: 2
+        source: {title: "How Tall is it?", publisher: "U.S. National Park Service", url: "https://www.nps.gov/jeff/planyourvisit/arch-height.htm"}
+        checked: 2026-11-02
+      - q: "Which national park in California recorded 134°F on 10 July 1913, the hottest day the park service says was ever recorded?"
+        a: "Death Valley"
+        level: 3
+        source: {title: "Death Valley NP Celebrates 100th Anniversary of Hottest Temperature Ever Recorded", publisher: "U.S. National Park Service", url: "https://www.nps.gov/deva/learn/news/centennial-celebration-7-10-13.htm"}
+        checked: 2026-11-02
+      - q: "The largest national park in the United States is as big as six Yellowstones. Name it."
+        a: "Wrangell-St Elias"
+        accept: ["Wrangell-St. Elias"]
+        note: "It is in Alaska. One glacier flowing out of it is bigger than the state of Rhode Island."
+        level: 3
+        source: {title: "What's So Special About This Place?", publisher: "U.S. National Park Service", url: "https://home.nps.gov/wrst/whats-so-special.htm"}
+        checked: 2026-11-02
+
+  - id: panto-and-the-stage
+    title: Panto and the stage
+    editions: [uk]
+    intro: "Oh yes it is: dames, clowns and the longest-running show on Earth."
+    questions:
+      - q: "In the panto Cinderella, what is the name of the cheerful servant boy: Buttons, Zips or Laces?"
+        a: "Buttons"
+        note: "He first appeared in H. J. Byron's 1860 version, described as 'gard'ner, butler, groom, odd boy, what not'."
+        level: 1
+        source: {title: "Pantomime, Burlesque, and Children's Drama", publisher: "Robbins Library Digital Projects, University of Rochester", url: "https://d.lib.rochester.edu/cinderella/text/pantomime-burlesque-and-childrens-drama.html"}
+        checked: 2026-11-02
+      - q: "Which panto still has a magical transformation scene, often with real Shetland ponies pulling a coach?"
+        a: "Cinderella"
+        level: 1
+        source: {title: "The story of pantomime", publisher: "Victoria and Albert Museum", url: "https://www.vam.ac.uk/articles/the-story-of-pantomime"}
+        checked: 2026-11-02
+      - q: "In Peter Pan, what is the name of Peter's fairy friend?"
+        a: "Tinker Bell"
+        accept: ["Tinkerbell"]
+        level: 1
+        source: {title: "Peter Pan at Great Ormond Street Hospital", publisher: "Great Ormond Street Hospital for Children NHS Foundation Trust", url: "https://gosh.nhs.uk/about-us/our-history/peter-pan-at-great-ormond-street-hospital"}
+        checked: 2026-11-02
+      - q: "J. M. Barrie gave all his rights in Peter Pan to which London children's hospital?"
+        a: "Great Ormond Street"
+        note: "The play first ran in London in 1904. In 1988 Parliament gave the hospital the right to royalties for ever."
+        level: 2
+        source: {title: "Peter Pan at Great Ormond Street Hospital", publisher: "Great Ormond Street Hospital for Children NHS Foundation Trust", url: "https://gosh.nhs.uk/about-us/our-history/peter-pan-at-great-ormond-street-hospital"}
+        checked: 2026-11-02
+      - q: "Widow Twankey, the dame in Aladdin, was named after a cheap kind of what?"
+        a: "Tea"
+        note: "Twankay tea came from China. The character was created by H. J. Byron in 1861."
+        level: 2
+        source: {title: "The story of pantomime", publisher: "Victoria and Albert Museum", url: "https://www.vam.ac.uk/articles/the-story-of-pantomime"}
+        checked: 2026-11-02
+      - q: "By the late 1800s, who by custom played the panto hero, the principal boy?"
+        a: "A woman"
+        note: "Music hall stars such as Vesta Tilley and Marie Lloyd played principal boys."
+        level: 2
+        source: {title: "The story of pantomime", publisher: "Victoria and Albert Museum", url: "https://www.vam.ac.uk/articles/the-story-of-pantomime"}
+        checked: 2026-11-02
+      - q: "Dick Whittington was a real man who died in 1423. What did he become in London?"
+        a: "Mayor of London"
+        accept: ["Lord Mayor"]
+        note: "And the cat? The V&A says there is no evidence he ever owned one."
+        level: 2
+        source: {title: "The story of pantomime", publisher: "Victoria and Albert Museum", url: "https://www.vam.ac.uk/articles/the-story-of-pantomime"}
+        checked: 2026-11-02
+      - q: "Which Agatha Christie murder mystery, first staged in 1952, is the longest-running show of any kind in the world?"
+        a: "The Mousetrap"
+        note: "It began as a radio play for Queen Mary. At the end, audiences are asked to keep the secret."
+        level: 2
+        source: {title: "Agatha Christie's The Mousetrap: The Facts", publisher: "Agatha Christie Limited", url: "https://www.agathachristie.com/en/news/2019/agatha-christies-the-mousetrap-the-facts"}
+        checked: 2026-11-02
+      - q: "Joseph Grimaldi was such a hit in Mother Goose in 1806 that his character pushed Harlequin aside as the star of panto. Who did he play?"
+        a: "Clown"
+        level: 3
+        source: {title: "The story of pantomime", publisher: "Victoria and Albert Museum", url: "https://www.vam.ac.uk/articles/the-story-of-pantomime"}
+        checked: 2026-11-02
+      - q: "Harlequin hit the scenery with a wooden bat to make it change. Which word for knockabout comedy comes from that bat?"
+        a: "Slapstick"
+        level: 3
+        source: {title: "The story of pantomime", publisher: "Victoria and Albert Museum", url: "https://www.vam.ac.uk/articles/the-story-of-pantomime"}
+        checked: 2026-11-02
+
+  - id: american-history
+    title: American history
+    editions: [us]
+    intro: "Tea, gold, ponies and a cracked bell."
+    questions:
+      - q: "At the Boston Tea Party in 1773, protesters tipped chests of what into Boston Harbor?"
+        a: "Tea"
+        note: "About 90,000 pounds of it. The Massachusetts Historical Society still has a bottle of tea leaves gathered on the shore next morning."
+        level: 1
+        source: {title: "Tangible Connections to the Boston Tea Party", publisher: "Massachusetts Historical Society", url: "https://masshist.org/features/boston-tea-party"}
+        checked: 2026-11-02
+      - q: "In 1620 the Pilgrims sailed to America in a ship with a flowery name. What was it?"
+        a: "The Mayflower"
+        note: "They landed at Plymouth, Massachusetts. The crossing took 66 days."
+        level: 1
+        source: {title: "Plymouth History for Grades 4 Through 6", publisher: "Pilgrim Hall Museum", url: "https://pilgrimhall.org/edu_grade_4_grade_6.htm"}
+        checked: 2026-11-02
+      - q: "The Liberty Bell, with its famous crack, is in which city: Boston, Philadelphia or New York?"
+        a: "Philadelphia"
+        note: "Nobody wrote down when or why it first cracked. Campaigners against slavery gave it the name Liberty Bell in 1835."
+        level: 1
+        source: {title: "The Liberty Bell", publisher: "U.S. National Park Service", url: "https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm"}
+        checked: 2026-11-02
+      - q: "In 1803 the US doubled in size by buying land from France. Which president made the deal?"
+        a: "Thomas Jefferson"
+        note: "The Louisiana Purchase: 828,000 square miles for $15 million, about 4 cents an acre."
+        level: 2
+        source: {title: "Louisiana Purchase Treaty (1803)", publisher: "National Archives (US)", url: "https://www.archives.gov/milestone-documents/louisiana-purchase-treaty"}
+        checked: 2026-11-02
+      - q: "From 1860 to 1861, relay riders carried mail from Missouri to California. What was the service called?"
+        a: "The Pony Express"
+        note: "The first rider's mail took ten days. The telegraph soon put it out of business."
+        level: 2
+        source: {title: "Pony Express", publisher: "U.S. Postal Service (Postal Facts)", url: "https://facts.usps.com/pony-express-history/"}
+        checked: 2026-11-02
+      - q: "Who was arrested in Montgomery, Alabama, in 1955 for refusing to give up her bus seat?"
+        a: "Rosa Parks"
+        level: 2
+        source: {title: "Rosa Parks Arrested (Rosa Parks: In Her Own Words)", publisher: "Library of Congress", url: "https://www.loc.gov/exhibitions/rosa-parks-in-her-own-words/about-this-exhibition/the-bus-boycott/rosa-parks-arrested/"}
+        checked: 2026-11-02
+      - q: "Which woman, nicknamed 'Moses', led about 70 people out of slavery on the Underground Railroad?"
+        a: "Harriet Tubman"
+        note: "She said: 'I never ran my train off the track and I never lost a passenger.'"
+        level: 2
+        source: {title: "Harriet Tubman and the Underground Railroad", publisher: "U.S. National Park Service", url: "https://www.nps.gov/articles/harriet-tubman-and-the-underground-railroad.htm"}
+        checked: 2026-11-02
+      - q: "In 1848 James Marshall found gold at Sutter's sawmill, starting a famous rush. In which state?"
+        a: "California"
+        note: "The mill was at Coloma, in El Dorado County."
+        level: 2
+        source: {title: "Gold Discovery Site", publisher: "California State Parks", url: "https://www.parks.ca.gov/ListedResources/Detail/530"}
+        checked: 2026-11-02
+      - q: "In 1869 the first railroad across America was completed at Promontory Summit. In which state?"
+        a: "Utah"
+        level: 3
+        source: {title: "The Last Spike: History at a Glance", publisher: "U.S. National Park Service", url: "https://nps.gov/gosp/learn/historyculture/the-last-spike-history-at-a-glance.htm"}
+        checked: 2026-11-02
+      - q: "The Erie Canal, finished in 1825, joined the Great Lakes to New York City by way of which river?"
+        a: "The Hudson"
+        accept: ["Hudson River"]
+        note: "Governor DeWitt Clinton poured a keg of Lake Erie water into the Atlantic: the 'marriage of the waters'."
+        level: 3
+        source: {title: "Erie Canal", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/topic/Erie-Canal"}
+        checked: 2026-11-02
+
+  - id: british-history
+    title: British history
+    editions: [uk]
+    intro: "Vikings, a bakery fire and a very famous lantern."
+    questions:
+      - q: "The Great Fire of London began in September 1666 in what kind of shop on Pudding Lane?"
+        a: "A bakery"
+        note: "It belonged to Thomas Farriner. The fire destroyed 13,200 houses and 87 churches."
+        level: 1
+        source: {title: "The Great Fire of London", publisher: "London Museum", url: "https://www.londonmuseum.org.uk/collections/london-stories/great-fire-of-london/"}
+        checked: 2026-11-02
+      - q: "On Bonfire Night we remember a plot in 1605 to blow up what?"
+        a: "The Houses of Parliament"
+        accept: ["Parliament"]
+        note: "The lantern Guy Fawkes is said to have carried when he was caught is in the Ashmolean Museum in Oxford."
+        level: 1
+        source: {title: "Guy Fawkes' Lantern", publisher: "Ashmolean Museum, University of Oxford", url: "https://britisharchaeology.ashmus.ox.ac.uk/highlights/guy-fawkes-lantern.html"}
+        checked: 2026-11-02
+      - q: "Legend says if certain birds leave the Tower of London, the kingdom will fall. Ravens, pigeons or parrots?"
+        a: "Ravens"
+        note: "At least six are kept, cared for by the Ravenmaster. Their treat is biscuits soaked in blood."
+        level: 1
+        source: {title: "The ravens", publisher: "Historic Royal Palaces", url: "https://www.hrp.org.uk/tower-of-london/whats-on/the-ravens/"}
+        checked: 2026-11-02
+      - q: "At Christmas 1085 William the Conqueror ordered a survey of his kingdom. What do we call the record?"
+        a: "Domesday Book"
+        note: "It even notes fines for brewing bad beer."
+        level: 2
+        source: {title: "Spotlight On: Domesday Book – transcript", publisher: "The National Archives (UK)", url: "https://www.nationalarchives.gov.uk/education/students/videos/spotlight-on/spotlight-on-domesday-book/spotlight-on-domesday-book-transcript/"}
+        checked: 2026-11-02
+      - q: "The rich burial found at Sutton Hoo in Suffolk had been laid inside a whole what?"
+        a: "A ship"
+        note: "It was found on Edith Pretty's land, the richest burial ever found in medieval Europe. She gave all the treasure, including a famous iron helmet, to the nation."
+        level: 2
+        source: {title: "Edith Pretty", publisher: "British Museum", url: "https://www.britishmuseum.org/about-us/british-museum-story/people-behind-collection/edith-pretty"}
+        checked: 2026-11-02
+      - q: "In which city was the Titanic built and launched in 1911?"
+        a: "Belfast"
+        note: "Harland and Wolff built her at the Queen's Island shipyard."
+        level: 2
+        source: {title: "Education Leaflet 1: R.M.S. Titanic", publisher: "Public Record Office of Northern Ireland", url: "https://www.proni.gov.uk/files/proni/2025-12/Education%20Leaflet%201%20-%20RMS%20Titanic.pdf"}
+        checked: 2026-11-02
+      - q: "Henry VIII's warship sank in the Solent in 1545 and was raised in the 1980s. What was it called?"
+        a: "The Mary Rose"
+        note: "Only about 30 of her crew were rescued."
+        level: 2
+        source: {title: "Mary Rose", publisher: "Royal Museums Greenwich", url: "https://www.rmg.co.uk/stories/maritime-history/mary-rose"}
+        checked: 2026-11-02
+      - q: "Which nurse, 'the Lady with the Lamp', checked on soldiers at night during the Crimean War?"
+        a: "Florence Nightingale"
+        note: "She kept a pet owl called Athena, rescued in Athens, and was the first woman elected a fellow of the Royal Statistical Society."
+        level: 2
+        source: {title: "Celebrate Florence Nightingale's 200th Birthday With Exhibit Featuring Her Famed Lamp, Pet Owl", publisher: "Smithsonian magazine", url: "https://www.smithsonianmag.com/smart-news/exhibition-celebrates-florence-nightingale-through-200-objectsincluding-her-famed-lamp-180974357/"}
+        checked: 2026-11-02
+      - q: "In 793 Vikings raided a monastery on which island off Northumberland?"
+        a: "Lindisfarne"
+        accept: ["Holy Island"]
+        level: 3
+        source: {title: "The Viking Raid on Lindisfarne", publisher: "English Heritage", url: "https://www.english-heritage.org.uk/visit/places/lindisfarne-priory/history/viking-raid/"}
+        checked: 2026-11-02
+      - q: "In 1918 some women won the vote in Britain for the first time. Over what age did they have to be?"
+        a: "30"
+        accept: ["Thirty"]
+        note: "Women over 21 won the vote on the same terms as men ten years later, in 1928."
+        level: 3
+        source: {title: "Representation of the People Act 1918", publisher: "The Gazette", url: "https://www.thegazette.co.uk/all-notices/content/149"}
+        checked: 2026-11-02
+
+  - id: presidents
+    title: Presidents
+    editions: [us]
+    intro: "Pennies, peanuts and a very long speech."
+    questions:
+      - q: "The first president of the United States never got to live in the White House. Who was he?"
+        a: "George Washington"
+        level: 1
+        source: {title: "Designing the White House: 1792 - 1830", publisher: "White House Historical Association", url: "https://www.whitehousehistory.org/educational-resources/designing-the-white-house-1792-1830/p2"}
+        checked: 2026-11-02
+      - q: "In 1909, whose face became the first of any president's on an everyday American coin, the penny?"
+        a: "Abraham Lincoln"
+        note: "The new penny marked a hundred years since his birth."
+        level: 1
+        source: {title: "The History of Presidents on Our Coins", publisher: "United States Mint", url: "https://www.usmint.gov/learn/history/historical-documents/history-of-presidents-on-our-coins"}
+        checked: 2026-11-02
+      - q: "When the president is aboard any US Air Force plane, what is its radio call sign?"
+        a: "Air Force One"
+        note: "Its two kitchens can serve up to 100 meals at one sitting."
+        level: 1
+        source: {title: "VC-25 - Air Force One", publisher: "U.S. Air Force", url: "https://www.af.mil/About-Us/Fact-Sheets/Display/article/104588/vc-25-air-force-one/"}
+        checked: 2026-11-02
+      - q: "Who was the first president to live in the White House, moving in with his wife Abigail in 1800?"
+        a: "John Adams"
+        level: 2
+        source: {title: "Designing the White House: 1792 - 1830", publisher: "White House Historical Association", url: "https://www.whitehousehistory.org/educational-resources/designing-the-white-house-1792-1830/p2"}
+        checked: 2026-11-02
+      - q: "Who is the only president to have been elected and sworn in four times?"
+        a: "Franklin D. Roosevelt"
+        accept: ["FDR"]
+        level: 2
+        source: {title: "Four Presidential Inaugurations", publisher: "FDR Presidential Library & Museum", url: "https://www.fdrlibrary.org/inaugurations"}
+        checked: 2026-11-02
+      - q: "At 43, who was the youngest man ever elected president?"
+        a: "John F. Kennedy"
+        accept: ["JFK"]
+        note: "His book Profiles in Courage won a Pulitzer Prize in 1957."
+        level: 2
+        source: {title: "Life of John F. Kennedy", publisher: "John F. Kennedy Presidential Library and Museum", url: "https://www.jfklibrary.org/learn/about-jfk/life-of-john-f-kennedy"}
+        checked: 2026-11-02
+      - q: "Which tune, first written for a stage version of Walter Scott's The Lady of the Lake, is played to honour the president?"
+        q_us: "Which tune, first written for a stage version of Walter Scott's The Lady of the Lake, is played to honor the president?"
+        a: "Hail to the Chief"
+        note: "'The President's Own' US Marine Band plays it."
+        level: 2
+        source: {title: "Hail to the Chief", publisher: "United States Marine Band", url: "https://www.marineband.marines.mil/Audio-Resources/Hail-to-the-Chief/"}
+        checked: 2026-11-02
+      - q: "A 13-foot smiling peanut in Plains, Georgia, recalls which president's earlier career as a peanut farmer?"
+        a: "Jimmy Carter"
+        level: 2
+        source: {title: "Smiling Peanut", publisher: "U.S. National Park Service", url: "https://www.nps.gov/places/smiling-peanut.htm"}
+        checked: 2026-11-02
+      - q: "Which president later became Chief Justice, the only person ever to hold both jobs?"
+        a: "William Howard Taft"
+        note: "He was Chief Justice from 1921 to 1930."
+        level: 3
+        source: {title: "Previous Chief Justices: William Howard Taft, 1921-1930", publisher: "Supreme Court Historical Society", url: "https://supremecourthistory.org/chief-justices/william-howard-taft-1921-1930/"}
+        checked: 2026-11-02
+      - q: "In 1841 which president gave an inaugural speech of almost two hours, then became the first to die in office, after just one month?"
+        a: "William Henry Harrison"
+        note: "He spoke in cold drizzle with no gloves or overcoat."
+        level: 3
+        source: {title: "William Henry Harrison", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/biography/William-Henry-Harrison"}
+        checked: 2026-11-02
