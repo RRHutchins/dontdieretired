@@ -5,10 +5,14 @@
 # Per-activity overrides in content/challenges.yaml (all optional):
 #   when: [5, 6, 7]        best months to do it (1 = January). Overrides the season reading. Use [] for "any time".
 #   lead_weeks: 8          how many weeks before the date the plan starts. Overrides the kind's default.
+#   start_at: [first, second, day]   where each of the activity's `start` steps goes in a plan: first, second, ongoing,
+#                          after_start (the rules under `steps` below) or day (shown with the day itself). Only where the
+#                          default placement reads wrongly (see static/planner.js).
 #   plan_event: marathon   an engine event (engine/events/<id>.yaml) that supplies the training. Needed only when the
 #                          event's own `activity:` does not already point at this activity.
 
-# One plan shape per kind of activity. Strands, in the order the plan introduces them:
+# One plan shape per kind of activity. `lead_weeks_local` is the shorter run-up for a one-off afternoon that is not tied to
+# a far-off place (a taster session, a local open day): six weeks' notice for a climbing wall would just be noise. Strands, in the order the plan introduces them:
 #   book   find it, check dates, book a place or tickets (booking deadlines, entry, courses)
 #   learn  read, visit, try a taster, practise between sessions
 #   train  physical preparation, only from the guidance engine (never written freehand)
@@ -18,22 +22,26 @@ kinds:
   skill:
     label: Skill or course
     lead_weeks: 10
+    lead_weeks_local: 3
     strands: [book, learn, kit]
     why: "Courses and classes have start dates and can fill up, so the plan begins with finding and booking one. Kit comes after the first session, once you know what you need."
   experience:
     label: Experience or day out
     lead_weeks: 6
+    lead_weeks_local: 2
     strands: [book, travel, kit]
     why: "The hard part of a day out is the timing: the right season, tickets and getting there. The plan watches the calendar for you."
   event:
     label: Event
     lead_weeks: 12
+    lead_weeks_local: 4
     strands: [book, learn, travel, kit]
     why: "Events have fixed dates and entry or ticket deadlines. Physical events add a training plan from our guidance engine, and its length is set by the engine, not by the date you would like."
   project:
     label: Project
     lead_weeks: 4
-    strands: [learn, book, kit]
+    lead_weeks_local: 1
+    strands: [learn, book, travel, kit]
     why: "Projects run over months and stall without a rhythm, so the plan sets milestones you can see."
   habit:
     label: Habit
@@ -100,3 +108,74 @@ seasons:
   "April to October (the trail closes every February)": [4, 5, 6, 7, 8, 9, 10]
   "May to October without a guide": [5, 6, 7, 8, 9, 10]
   "Mid-June to mid-October": [6, 7, 8, 9, 10]
+
+# The words the generator (static/planner.js) puts around an activity's own steps (RUNBOOK §6s, day 2).
+# What to DO always comes from the activity itself (start, links, book, kit, safety) or from dates.yaml and the engine;
+# these lines only say WHEN and WHY. `text` is a short step title, `why` the reason for its timing. Placeholders:
+# {title} activity title, {weeks} weeks, {event} engine event name, {months} best months, {date} the reader's date.
+# Each `at` is days relative to the reader's date (negative = before), or a fraction of the lead time ("lead*0.5"),
+# or "start" (the first day of the plan). The generator never puts a step before today: a short run-up squeezes the
+# flexible steps closer together and says so.
+steps:
+  first:
+    at: start
+    why: "First, because everything after it depends on what you find out here."
+  second:
+    at: "start+7"
+    why: "Once you have read up, so you know what you are committing to."
+  ongoing:
+    at: "lead*0.5"
+    why: "From the middle of the run-up, so there is time to get used to it before the day."
+  after_start:
+    at: 14
+    why: "Once you have made a start: this is the next stretch, and what turns a first go into something you can do."
+  dates:
+    at: start
+    text: "Check this year's dates"
+    why: "It happens at the same time every year, but dates move, so check the official page before you plan round it."
+  book:
+    at: "start+7"
+    text: "Compare and book"
+    why: "Places on courses, trips and events can fill up, so booking early keeps your date."
+  travel:
+    at: "lead*0.6"
+    text: "Sort out getting there, and somewhere to stay if you need it"
+    why: "It is tied to one place, and travel and rooms are easier to get, and often cheaper, well ahead."
+  kit_before:
+    at: -14
+    text: "Get your kit"
+    why: "Two weeks before, so anything new has time to arrive and you can try it out first."
+  kit_after:
+    at: 7
+    text: "Get your kit"
+    why: "After your first session, once you know what you need and what you can borrow or hire."
+  safety:
+    at: -1
+    text: "Before you go: stay safe"
+    why: "The day before, while there is still time to change plans."
+  day:
+    at: 0
+    text: "{title}"
+    why: "Your date."
+  day_month:
+    text: "{title}"
+    why: "You chose {date} rather than a day, so the plan has everything ready by the start of the month."
+  train_start:
+    text: "Start the {weeks}-week training plan for {event}"
+    why: "The training comes from our guidance engine, built from the sources it lists, and its plan for your date runs {weeks} weeks. It starts here so that it ends on the day."
+  look_back:
+    at: 28
+    text: "Four weeks in: look back"
+    why: "A month is long enough to know whether the time slot works. Keep it, move it or try something else."
+  take_stock:
+    at: 28
+    text: "A month in: take stock"
+    why: "Projects stall without a rhythm, so a look a month in shows whether it is moving and what the next stretch is."
+
+# Notes the generator adds to a plan when they apply.
+notes:
+  squeezed: "Your date is closer than our usual {weeks}-week run-up, so the steps are closer together."
+  outside: "{date} is outside the best months for this ({months}), by our reading of its season: \"{season}\"."
+  too_soon: "{event} needs at least {weeks} weeks of training, and your date is sooner than that. The earliest date that leaves enough time is {earliest}."
+  train_short: "{event} usually takes {usual} weeks of training. Your date leaves {weeks}, which is not below the engine's minimum of {min}, so the plan runs {weeks} weeks."
+  past: "That date has already gone. Pick a date from today on."

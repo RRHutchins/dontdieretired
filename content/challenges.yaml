@@ -3392,6 +3392,7 @@
   - Read the Yorkshire Dales National Park Authority's Walking the Yorkshire Three Peaks page and download its route map or GPX file.
   - Buy the OS Explorer OL2 map, learn to use it with a compass and walk each peak separately first.
   - Choose a long summer day, check the forecast and leave your route plan with someone.
+  start_at: [first, second, day]
   links:
   - label: Yorkshire Dales National Park Authority Walking the Yorkshire Three Peaks page
     url: https://www.yorkshiredales.org.uk/things-to-do/get-outdoors/yorkshire-three-peaks/walking-the-yorkshire-three-peaks/
@@ -7364,7 +7365,7 @@
   start:
   - Download the free Be My Eyes app and choose the sighted volunteer option.
   - Allow the camera, microphone and notifications, and pick your language.
-  - Stay logged in: calls come only during your daytime hours (8am to 9pm), from people who speak your language. Volunteers must be 17 or over.
+  - 'Stay logged in: calls come only during your daytime hours (8am to 9pm), from people who speak your language. Volunteers must be 17 or over.'
   links:
   - label: 'Be My Eyes: getting started'
     url: https://support.bemyeyes.com/hc/en-us/articles/360005536558-Getting-Started-with-Be-My-Eyes

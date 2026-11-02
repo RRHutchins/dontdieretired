@@ -8,12 +8,16 @@ Run on its own for a summary:  python3 tools/planner.py
 from __future__ import annotations
 
 import datetime as dt
+import re
 from pathlib import Path
 
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 STRANDS = ("book", "learn", "train", "travel", "kit")
+STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock")
+START_AT = ("first", "second", "ongoing", "after_start", "day")
+NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past")
 
 
 def _load(p: Path):
@@ -33,9 +37,20 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
 
     for k, v in kinds.items():
         assert v.get("label") and v.get("why") and isinstance(v.get("lead_weeks"), int) and v["lead_weeks"] >= 0, f"planner kind {k}: needs label, why, lead_weeks"
+        assert "lead_weeks_local" not in v or (isinstance(v["lead_weeks_local"], int) and 0 <= v["lead_weeks_local"] <= v["lead_weeks"]), f"planner kind {k}: lead_weeks_local must be a whole number no bigger than lead_weeks"
         assert v.get("strands") and all(s in STRANDS for s in v["strands"]), f"planner kind {k}: strands must be from {STRANDS}"
     for phrase, m in seasons.items():
         assert m is None or _months_ok(m), f"planner season {phrase!r}: months must be distinct numbers 1-12, or null"
+
+    # Step wording (static/planner.js): when and why only; what to do comes from the activity itself
+    steps, notes = cfg.get("steps") or {}, cfg.get("notes") or {}
+    at_ok = lambda a: isinstance(a, int) or a == "start" or bool(re.fullmatch(r"start\+\d+|lead\*(0(\.\d+)?|1(\.0+)?)", str(a)))
+    for k in STEP_KEYS:
+        v = steps.get(k) or {}
+        assert v.get("why"), f"planner steps.{k}: needs why"
+        if k not in ("day_month", "train_start"): assert "at" in v and at_ok(v["at"]), f"planner steps.{k}: at must be days, 'start', 'start+N' or 'lead*F'"
+        if k not in ("first", "second", "ongoing", "after_start"): assert v.get("text"), f"planner steps.{k}: needs text"
+    for k in NOTE_KEYS: assert notes.get(k), f"planner notes.{k}: missing"
 
     # Engine events (engine/events/*.yaml): the only source of training plans.
     events = {}
@@ -44,7 +59,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         eid = e.get("id") or f.stem
         w = e.get("weeks") or {}
         assert isinstance(w.get("default"), int) and isinstance(w.get("min"), int) and w["min"] <= w["default"], f"engine event {eid}: weeks.default and weeks.min needed"
-        events[eid] = {"id": eid, "name": e.get("name", eid), "activity": e.get("activity"), "weeks": w["default"], "min_weeks": w["min"]}
+        events[eid] = {"id": eid, "name": e.get("name", eid), "activity": e.get("activity"), "weeks": w["default"], "min_weeks": w["min"], "prerequisite": e.get("prerequisite", "")}
     by_act = {e["activity"]: e["id"] for e in events.values() if e.get("activity")}
 
     ids = {c["id"] for c in chs}
@@ -71,6 +86,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
     out = []
     for c in chs:
         cid, kind = c["id"], c["kind"]
+        assert isinstance(c.get("start"), list) and c["start"] and all(isinstance(x, str) for x in c["start"]), f"challenge {cid}: every start step must be plain text (quote a step that contains a colon)"
         assert kind in kinds, f"challenge {cid}: kind {kind} has no plan shape in content/planner.yaml"
         k = kinds[kind]
         # best months: explicit `when`, else a fixed date's months, else our reading of the season line
@@ -97,7 +113,10 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
             lead = c["lead_weeks"]
             if ev: assert lead >= ev["min_weeks"], f"challenge {cid}: lead_weeks {lead} is shorter than the engine's minimum for {eid} ({ev['min_weeks']})"
         else:
-            lead = ev["weeks"] if ev else k["lead_weeks"]
+            local = c["time"] == "afternoon" and not c.get("places") and cid not in dates
+            lead = ev["weeks"] if ev else k.get("lead_weeks_local", k["lead_weeks"]) if local else k["lead_weeks"]
+        if "start_at" in c:
+            assert isinstance(c["start_at"], list) and len(c["start_at"]) == len(c["start"]) and all(x in START_AT for x in c["start_at"]), f"challenge {cid}: start_at needs one of {START_AT} per start step"
         strands = list(k["strands"])
         if ev and "train" not in strands: strands.insert(1, "train")
         if c.get("book") and "book" not in strands: strands.insert(0, "book")
@@ -106,22 +125,24 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
             "id": cid, "title": c["title"], "category": c["category"], "kind": kind, "effort": c["effort"], "time": c["time"],
             "when": sorted(when), "when_from": when_from, "season": c.get("season", ""),
             "lead_weeks": lead, "strands": strands, "event": ({"id": ev["id"], "name": ev["name"], "weeks": ev["weeks"], "min_weeks": ev["min_weeks"]} if ev else None),
-            "dates": dates.get(cid),
-            "start": c["start"], "safety": c.get("safety", ""),
+            "dates": dates.get(cid), "place_tied": bool(c.get("places")),
+            "start": c["start"], "start_at": c.get("start_at"), "safety": c.get("safety", ""),
             "links": [{"label": l["label"], "url": l["url"], "region": l.get("region", "any")} for l in c["links"]],
             "book": [{"label": b["label"], "why": b["why"], "url": b["url"], "aff": b.get("aff")} for b in c.get("book") or []],
             "kit": [{"name": x["name"], "why": x["why"], "url": x["url"]} for x in c.get("kit") or []],
         })
     data = {"version": 1, "built": today.isoformat(),
             "kinds": {k: {"label": v["label"], "why": v["why"], "lead_weeks": v["lead_weeks"], "strands": v["strands"]} for k, v in kinds.items()},
-            "events": events, "activities": out}
+            "steps": steps, "notes": notes, "events": events, "activities": out}
     return data, warn
 
 
 if __name__ == "__main__":
-    import collections
+    import collections, json, sys
     chs = _load(ROOT / "content" / "challenges.yaml")
     data, warn = prepare(chs)
+    if "--json" in sys.argv:   # for tools/test_planner.js
+        print(json.dumps(data, ensure_ascii=False)); sys.exit(0)
     acts = data["activities"]
     print(f"{len(acts)} activities ready to plan")
     print("best months from:", dict(collections.Counter(a["when_from"] for a in acts)))
