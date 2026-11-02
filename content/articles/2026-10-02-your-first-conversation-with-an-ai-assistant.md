@@ -26,7 +26,7 @@ sources:
   - {title: "Data controls in ChatGPT", publisher: "OpenAI Help Center", date: "n.d.", url: "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"}
   - {title: "What is the Pro plan?", publisher: "Claude Help Center (Anthropic)", date: "n.d.", url: "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"}
   - {title: "Get started with Claude", publisher: "Claude Help Center (Anthropic)", date: "n.d.", url: "https://support.claude.com/en/articles/8114491-get-started-with-claude"}
-  - {title: "Enjoy an AI Assistant Anywhere with Copilot for PC, Mac, Mobile, and more", publisher: "Microsoft", date: "n.d.", url: "https://www.microsoft.com/en-us/microsoft-copilot/for-individuals"}
+  - {title: "What's the difference between Microsoft Copilot (free) and Copilot in Microsoft 365?", publisher: "Microsoft Support", date: "accessed 2 November 2026", url: "https://support.microsoft.com/en-us/microsoft-365-copilot/what-s-the-difference-between-microsoft-copilot-free-and-copilot-in-microsoft-365"}
   - {title: "Use Gemini Apps", publisher: "Gemini Apps Help (Google)", date: "n.d.", url: "https://support.google.com/gemini/answer/13275745?hl=en"}
   - {title: "Gemini Apps Privacy Hub", publisher: "Gemini Apps Help (Google)", date: "n.d.", url: "https://support.google.com/gemini/answer/13594961?hl=en"}
   - {title: "AARP Joins With Nonprofit to Teach Tech to Older Adults", publisher: "AARP", date: "8 February 2021", url: "https://www.aarp.org/about-aarp/oats-senior-planet/"}
@@ -41,7 +41,7 @@ A phone or a computer, and a few minutes. Four of the best-known assistants, in 
 
 - **ChatGPT** (OpenAI). The help centre says it "is free to use", with paid subscriptions alongside. You reach it at chatgpt.com or through the phone apps.
 - **Claude** (Anthropic). The help centre says you can use the free version by going to claude.ai and signing up with an email address. There are phone and desktop apps.
-- **Copilot** (Microsoft). Microsoft describes "a free baseline experience", online at copilot.microsoft.com or through its phone app.
+- **Copilot** (Microsoft). Microsoft's help centre says Copilot is "available at no cost", online at copilot.cloud.microsoft or through its phone and desktop apps. You can try it without signing in; signing in adds chat history and longer conversations.
 - **Gemini** (Google). Google's help page sends you to gemini.google.com. Some features work without signing in; the rest need a Google Account.
 
 They do broadly the same job. Type the address yourself rather than following a link in an email or an advert.
@@ -105,3 +105,5 @@ We could not confirm from those pages which of these currently teach AI specific
 Choose one assistant and one of the five requests. Type it, read the answer, and reply at least twice before you judge it. Then try a question of your own, on a subject you know well enough to spot a mistake.
 
 For the wider picture, including privacy, scams and health questions, start with [AI after 50: the complete guide](/ai/ai-after-50-the-complete-guide/).
+
+Updated 2 November 2026: Copilot's address and free access, from Microsoft's current help page.

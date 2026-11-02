@@ -10,6 +10,7 @@ subject_age: 63
 art: mountains
 photo_file: "File:Ives Peak and Cispus River basin.jpg"
 photo_caption: "The Pacific Crest Trail below Ives Peak and the Cispus River basin in the Goat Rocks Wilderness, Gifford Pinchot National Forest, Washington, in 2013. The picture is not of Nancy Zelick."
+photo_checked: 2026-11-02
 photo_alt: "A narrow dirt path runs along a grassy mountainside towards a broad green valley dotted with fir trees, under bare reddish-grey peaks with patches of snow and a cloudy sky. A tiny walker is far off on the slope."
 hook: "Nancy Zelick retired from Intel, then walked the Pacific Crest Trail from Mexico to Canada. Slowly, on purpose."
 lesson: "On a long walk, going slowly is not a weakness: it is how you reach the end."

@@ -24,8 +24,8 @@ types:
     - name: Norton Genie
       url: https://us.norton.com/products/genie-scam-detector
       by: Norton (Gen Digital Inc.)
-      how: Paste the message text or upload a screenshot in the app
-      note: Free app, needs installing; English only. Ranked second in KSL test (Jan 2026)
+      how: Paste the message text or upload a screenshot, on the website (Genie.Norton.com) or in the phone app
+      note: Free; works in a web browser or the phone app. Ranked second in KSL test (Jan 2026)
     - name: BBB Scam Tracker
       url: https://www.bbb.org/scamtracker
       by: Better Business Bureau (BBB Institute for Marketplace Trust)
@@ -131,6 +131,7 @@ routes:
     source: https://www.ic3.gov/
   - label: AARP Fraud Watch Network Helpline
     how: Call 877-908-3360, Monday to Friday, 8am to 8pm ET. Free; anyone can call, no membership needed.
+    # "available to anyone" is stated at https://www-s.aarp.org/money/scams-fraud/about-fraud-watch-network/ (read 2 Nov 2026)
     source: https://www.aarp.org/money/scams-fraud/helpline/
 paid:
   uk:

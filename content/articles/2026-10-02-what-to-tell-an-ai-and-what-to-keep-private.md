@@ -24,7 +24,8 @@ sources:
   - {title: "How your data is used to improve model performance", publisher: "OpenAI Help Center", date: "n.d.", url: "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance"}
   - {title: "Is my data used for model training?", publisher: "Anthropic Privacy Center", date: "16 March 2026", url: "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training"}
   - {title: "How long do you store my data?", publisher: "Anthropic Privacy Center", date: "1 July 2026", url: "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data"}
-  - {title: "Privacy FAQ for Microsoft Copilot", publisher: "Microsoft Support", date: "n.d.", url: "https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot"}
+  - {title: "Privacy FAQ for Microsoft Copilot (older version of the app)", publisher: "Microsoft Support", date: "accessed 2 November 2026", url: "https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot"}
+  - {title: "Microsoft Copilot activity history", publisher: "Microsoft Support", date: "accessed 2 November 2026", url: "https://support.microsoft.com/en-us/privacy/microsoft-copilot/activity-history"}
   - {title: "Gemini Apps Privacy Hub", publisher: "Google", date: "24 September 2026", url: "https://support.google.com/gemini/answer/13594961?hl=en"}
   - {title: "ChatGPT and large language models: what's the risk?", publisher: "National Cyber Security Centre", date: "14 March 2023", url: "https://www.ncsc.gov.uk/blog-post/chatgpt-and-large-language-models-whats-the-risk"}
   - {title: "Your privacy and AI chatbots", publisher: "Office of the Privacy Commissioner of Canada", date: "n.d.", url: "https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/ai-chatbots_ind/"}
@@ -39,10 +40,10 @@ Whatever you type is sent to the company that runs the assistant. The makers say
 
 - **ChatGPT.** OpenAI's help pages say it may use your content to train its models, and that you can switch this off with a setting called "Improve the model for everyone", under Settings, then Data controls.
 - **Claude.** Anthropic's privacy pages say chats are used to improve Claude if you choose to allow it, through a "Model Improvement" option in its privacy settings, and that conversations flagged for safety review may also be analysed. If you allow training, Anthropic says it may keep your data in de-identified form for up to five years.
-- **Copilot.** Microsoft's privacy FAQ says it uses Copilot conversations for AI training unless you have opted out or fall into an excluded group, that signed-in users can opt out, that some conversations are subject to automated and human review, and that conversations are stored for 18 months by default.
+- **Copilot.** Microsoft released an updated Copilot app on 18 August 2026. Its help page for that app says that, when you are signed in with a personal Microsoft account, "Prompts, responses, and your file contents when using the Microsoft Copilot app aren't used to train foundation models." It does not say how long conversations are kept. Microsoft's older privacy FAQ, which it now says applies only to the previous version of the app, says conversations there are used for AI training unless you opt out, that some are subject to automated and human review, and that they are stored for 18 months by default.
 - **Gemini.** Google's privacy page says chats are used to improve its services, including its AI models, while a setting called "Keep Activity" is on. It says a subset of chats is read by human reviewers, and that reviewed chats can be kept for up to three years even if you delete your activity.
 
-Google puts the conclusion more plainly than we could: "Please don't enter confidential information that you wouldn't want a reviewer to see or Google to use to improve our services, including machine-learning technologies." Microsoft says much the same: "You shouldn't provide any confidential or sensitive personal data that you would not want Microsoft to use for purposes explained in this FAQ and in the Microsoft Privacy Statement."
+Google puts the conclusion more plainly than we could: "Please don't enter confidential information that you wouldn't want a reviewer to see or Google to use to improve our services, including machine-learning technologies." Microsoft's privacy FAQ for the older Copilot app says much the same: "You shouldn't provide any confidential or sensitive personal data that you would not want Microsoft to use for purposes explained in this FAQ and in the Microsoft Privacy Statement."
 
 Names and menus change. The durable version: each assistant has a setting that controls whether your chats are used for training. Look under Settings for data or privacy controls.
 
@@ -108,3 +109,5 @@ Some apps offer an AI "friend". The US Federal Trade Commission (FTC), which ope
 For where this fits in the bigger picture, start with [AI after 50: the complete guide](/ai/ai-after-50-the-complete-guide/).
 
 Updated 6 October 2026: added how long Anthropic says it keeps incognito chats.
+
+Updated 2 November 2026: Copilot's privacy terms for the updated app Microsoft released in August 2026 (not used to train foundation models); the 18-month and opt-out details now apply only to the older app.
