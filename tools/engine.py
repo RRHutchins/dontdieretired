@@ -74,6 +74,8 @@ def validate(src, gd, ev):
         for i in (g.get("for") or []) + (g.get("against") or []):
             if i not in src: errs.append(f"guidance {g['id']}: unknown source {i}")
         if g.get("against") and not g.get("note"): errs.append(f"guidance {g['id']}: say in `note` how the disagreement is resolved")
+        for i in g.get("events") or []:
+            if i not in ev: errs.append(f"guidance {g['id']}: unknown event {i} in events")
     for k, e in ev.items():
         for f in ("id", "name", "kinds", "demands", "key_session", "weeks"):
             if f not in e: errs.append(f"event {k}: missing {f}")
@@ -164,7 +166,8 @@ def plan(event, weeks=None, level="active"):
     e = ev[event]; weeks = weeks or e["weeks"]["default"]
     if weeks < e["weeks"]["min"]:
         sys.exit(f"{e['name']} needs at least {e['weeks']['min']} weeks.")
-    use = [g for g in gd if g["status"] in ("core", "supported") and applies(g, e["kinds"])]
+    # `events:` on a statement limits it to those event profiles (e.g. advice that is only about a 10k)
+    use = [g for g in gd if g["status"] in ("core", "supported") and applies(g, e["kinds"]) and (not g.get("events") or event in g["events"])]
     refs, order = {}, []
     def cite(*ids):
         nums = []

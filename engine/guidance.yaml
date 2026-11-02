@@ -1,6 +1,7 @@
 # The guidance engine's statements (RUNBOOK §6r). Each is written in our own words and says only what its sources say.
 # applies: which kinds of challenge it covers: all, endurance, running, walking, hill, multiday, altitude
 # for: sources that support it. against: sources that say otherwise (the engine weighs both and reports the result).
+# events: optional; limits a statement to those event profiles (e.g. advice only about a 10k).
 # use: how a plan uses it (rule = shapes the schedule; advice = printed in the plan; safety = printed in the safety box).
 guidance:
   # ---------- before you start ----------
@@ -79,15 +80,15 @@ guidance:
     applies: [all]
     use: rule
     text: Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third.
-    for: [cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older]
+    for: [cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older, nhs-bones-65]
     against: [higdon-novice1]
     note: Higdon's beginner marathon plan suggests people new to weights wait. The official guidance and the injury evidence carry more weight, so plans include strength work, starting light with body weight.
   - id: balance-work
     topic: body maintenance
     applies: [all]
     use: advice
-    text: Include balance work; for older adults the official guidance pairs it with strength on two days a week, and balance (proprioception) training also reduced injuries in trials.
-    for: [cmo-2019, lauersen-2014, who-2011-older]
+    text: Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials.
+    for: [cmo-2019, lauersen-2014, who-2011-older, nhs-bones-65]
   - id: legs-and-core
     topic: body maintenance
     applies: [hill, walking, running]
@@ -106,6 +107,12 @@ guidance:
     use: advice
     text: Weight-bearing activity such as walking and running helps keep bones strong.
     for: [cmo-2019]
+  - id: bones-impact-caution
+    topic: body maintenance
+    applies: [all]
+    use: safety
+    text: If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it.
+    for: [nhs-bones-65]
   - id: sleep-routine
     topic: recovery
     applies: [endurance]
@@ -329,8 +336,24 @@ guidance:
     topic: on the day
     applies: [running]
     use: advice
-    text: Warm up for 5 to 10 minutes before you run, moving the whole body with dynamic movements rather than held stretches.
-    for: [greatrun-how-to-half]
+    text: Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches.
+    for: [greatrun-how-to-half, nhs-warm-up]
+
+  # ---------- 10k (added 2 Nov 2026) ----------
+  - id: tenk-long-run
+    events: [first-10k]
+    topic: key session
+    applies: [running]
+    use: advice
+    text: For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60.
+    for: [greatrun-10k-plans]
+  - id: tenk-allow-time
+    events: [first-10k]
+    topic: before you start
+    applies: [running]
+    use: advice
+    text: If you are new to running, give yourself 8 to 12 weeks to get ready for a 10k rather than 6, and if time is short use a run-walk approach.
+    for: [greatrun-10k-how-long, greatrun-10k-plans]
 
   # ---------- open water swimming (added 1 Nov 2026) ----------
   - id: ow-never-alone
@@ -373,8 +396,8 @@ guidance:
     topic: key session
     applies: [swimming]
     use: advice
-    text: Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure, so keep swimming outdoors as the water cools rather than starting in the coldest months.
-    for: [usms-open-water]
+    text: Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months.
+    for: [usms-open-water, barwood-2024]
   - id: ow-pool-skills
     topic: key session
     applies: [swimming]

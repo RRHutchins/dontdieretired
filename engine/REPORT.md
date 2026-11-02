@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-01)
+# Guidance engine report (2026-11-02)
 
-32 sources, 62 statements, 7 event profiles. Core 39, supported 23, thin 0, contested 0.
+37 sources, 65 statements, 8 event profiles. Core 42, supported 23, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -14,6 +14,8 @@
 - Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Opened 2026-10-27.
 - NHS, *Strength exercises (last reviewed 28 February 2024)* (2024). Opened 2026-10-27.
 - World Health Organization, *Global recommendations on physical activity for health, adults aged 65 and above* (2011). Opened 2026-10-27.
+- NHS, *How to warm up before exercising (last reviewed 24 June 2026)* (2026). Opened 2026-11-02.
+- NHS, *Keep bones healthy over 65 (last reviewed 31 October 2023)* (2023). Opened 2026-11-02.
 
 **4. Peer-reviewed review or large study**
 - Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Opened 2026-10-27.
@@ -21,6 +23,7 @@
 - Journal of Orthopaedic and Sports Physical Therapy 44(10), *Excessive progression in weekly running distance and risk of running-related injuries, a one-year study of 874 novice runners (Nielsen and colleagues)* (2014). Opened 2026-10-27.
 - International Journal of Sports Physiology and Performance 5(3), *What is best practice for training intensity and duration distribution in endurance athletes? (review)* (2010). Opened 2026-10-27.
 - Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Opened 2026-10-27.
+- Journal of Thermal Biology 119 (Barwood, Eglin, Hills, Johnston, Massey, McMorris, Tipton, Wakabayashi and Webster), *Habituation of the cold shock response, a systematic review and meta-analysis* (2024). Opened 2026-11-02.
 
 **3. Governing body or route authority**
 - England Athletics (Tom Craggs, National Endurance Manager), *Simplifying the running jargon, training pace* (2024). Opened 2026-10-27.
@@ -35,6 +38,8 @@
 - U.S. Masters Swimming (Elaine K. Howley and Scott Bay), *The definitive guide to open water swimming* (2026). Opened 2026-11-01.
 - British Cycling (Insight Zone), *Weeks 1-8 of Sofa to 50km training plan* (2015). Opened 2026-11-01.
 - Cycling UK, *10-week training plan for a 100km ride* (2025). Opened 2026-11-01.
+- Great Run (organiser of the Great North Run), *10k training plans (16-week Beginner, 8-week Run/Walk and 12-week Improver plans)* (2026). Opened 2026-11-02.
+- Great Run (organiser of the Great North Run), *How long does it take to train for a 10k?* (2024). Opened 2026-11-02.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -50,9 +55,9 @@
 
 | Status | Weight | Topic | Statement | Sources |
 |---|---|---|---|---|
-| core | 16 | body maintenance | Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. | cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older (against: higdon-novice1) |
+| core | 21 | body maintenance | Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. | cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older, nhs-bones-65 (against: higdon-novice1) |
+| core | 19 | body maintenance | Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. | cmo-2019, lauersen-2014, who-2011-older, nhs-bones-65 |
 | core | 15 | before you start | Start from your current level and build up gradually; repeating a week is fine and is part of the plan, not a failure. | cmo-2019, nhs-c25k, who-2011-older |
-| core | 14 | body maintenance | Include balance work; for older adults the official guidance pairs it with strength on two days a week, and balance (proprioception) training also reduced injuries in trials. | cmo-2019, lauersen-2014, who-2011-older |
 | core | 13 | altitude | Above 3,000 metres, sleep no more than 500 metres higher than the night before and take a rest day at the same height every three or four days. Avoid going from below 1,200 metres to above 3,500 metres in a day. | nhs-altitude, nathnac-altitude, tanapa-kili |
 | core | 12 | intensity | Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. | ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km |
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
@@ -68,6 +73,7 @@
 | core | 9 | on the day | Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
 | core | 8 | altitude | Being fit does not protect you from altitude sickness. Choose an itinerary with acclimatisation days and climb slowly however strong you feel. | nathnac-altitude, tanapa-kili |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
+| core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
 | core | 7 | body maintenance | Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground. | bmc-hill-fit, nhs-strength-exercises |
 | core | 7 | recovery | If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. | ea-pavey-marathon, nhs-c25k |
 | core | 7 | feet | Deal with a hot spot as soon as you feel it. Cover a blister with a soft or padded plaster and do not burst it; get advice if it shows signs of infection. | nhs-blisters, bmc-long-distance |
@@ -75,6 +81,7 @@
 | core | 7 | why | The long session prepares you for the length of the day itself. Its pace does not matter; covering the time or distance does, so keep it at a conversational effort. | higdon-novice1, bmc-hill-fit, ydnpa-three-peaks |
 | core | 7 | why | Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. | ea-training-pace, ijspp-2010-intensity |
 | core | 7 | why | Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. | nhs-c25k, rc-down-weeks |
+| core | 7 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water, barwood-2024 |
 | core | 6 | body maintenance | Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. | lauersen-2014, bmc-hill-fit |
 | core | 6 | fuel and drink | On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. | bmc-hill-fit, issn-ultra-2019 |
 | core | 6 | fuel and drink | Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. | ea-pavey-marathon, issn-ultra-2019 |
@@ -88,6 +95,7 @@
 | core | 6 | kit | Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. | cyclinguk-100km, bc-sofa-50km |
 | core | 6 | fuel and drink | On long rides eat something every 20 to 30 minutes, and carry enough food and drink for the whole ride rather than relying on finding a shop. | bc-sofa-50km, cyclinguk-100km |
 | core | 5 | body maintenance | Weight-bearing activity such as walking and running helps keep bones strong. | cmo-2019 |
+| core | 5 | body maintenance | If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. | nhs-bones-65 |
 | core | 5 | warning signs | Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. | nhs-heart-attack |
 | supported | 5 | key session | Train for the ground you will cover. For hill challenges walk hills fast, or use stairs, and add short hill repeats of 50 to 100 metres of climb, four to six times, coming down slowly. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 5 | key session | Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them. | ydnpa-three-peaks, bmc-hill-fit |
@@ -107,8 +115,8 @@
 | supported | 3 | key session | Build your training walks from a few miles up to a full day's distance, carrying the pack you will use. | wanderlust-trek-prep, bmc-hill-fit |
 | supported | 3 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit |
 | supported | 3 | key session | For a first half marathon, think of the long run in minutes rather than miles, at an easy pace, building to about 80 minutes by two weeks before the race. | greatrun-half-plan |
-| supported | 3 | on the day | Warm up for 5 to 10 minutes before you run, moving the whole body with dynamic movements rather than held stretches. | greatrun-how-to-half |
-| supported | 3 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure, so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water |
+| supported | 3 | key session | For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60. | greatrun-10k-plans |
+| supported | 3 | before you start | If you are new to running, give yourself 8 to 12 weeks to get ready for a 10k rather than 6, and if time is short use a run-walk approach. | greatrun-10k-how-long, greatrun-10k-plans |
 | supported | 3 | key session | Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest. | usms-open-water |
 | supported | 3 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water |
 | supported | 3 | on the day | Start every ride at an easy pace for about five minutes to warm up, and finish with five to ten minutes of slower riding. | cyclinguk-100km |
@@ -120,7 +128,7 @@
 - endurance: 16 usable statements of its own
 - hill: 6 usable statements of its own
 - multiday: 7 usable statements of its own
-- running: 6 usable statements of its own
+- running: 8 usable statements of its own
 - swimming: 9 usable statements of its own
 - walking: 7 usable statements of its own
 

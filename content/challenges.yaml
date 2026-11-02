@@ -114,11 +114,11 @@
   inspire:
   - kind: read
     person: Martin Haigh
-    line: A hillwalker who climbed Ben Nevis by the Carn Mor Dearg ridge as his 200th Munro, and went on to finish all the Munros in 2018.
+    line: A hillwalker who climbed Ben Nevis via Carn Mor Dearg as his 200th Munro, and went on to finish all the Munros in 2018.
     title: "My Nevis: Martin Haigh"
     outlet: John Muir Trust
     url: https://johnmuirtrust.org/resources/769-my-nevis-martin-haigh
-    checked: '2026-10-27'
+    checked: '2026-11-02'
   book:
   - label: Guided Ben Nevis walks on Viator
     why: go with a guide on your first time up
@@ -402,16 +402,73 @@
   - label: 'National Park Service: Half Dome day hike'
     url: https://www.nps.gov/yose/planyourvisit/halfdome.htm
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-02'
   - label: 'National Park Service: Half Dome permits'
     url: https://www.nps.gov/yose/planyourvisit/hdpermits.htm
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-02'
   safety: Stay off the cables if the rock is wet or a storm is near.
   photo_file: "File:Half Dome from Glacier Point, Yosemite NP - Diliff.jpg"
   photo_caption: "Half Dome seen from Glacier Point, Yosemite National Park, 2013."
   photo_alt: "The sheer granite face of Half Dome lit by low sun, above forested valleys."
   photo_checked: '2026-11-01'
+  inspire:
+  - kind: read
+    person: Everett Kalin, from California
+    line: Reached the summit of Half Dome by the cables with his son and granddaughter, having trained by climbing the stairs of his 16-storey apartment building.
+    title: 93-year-old becomes oldest person to climb Yosemite's Half Dome
+    outlet: WFLA
+    url: https://www.wfla.com/news/national/video-93-year-old-becomes-oldest-person-to-climb-yosemites-half-dome/amp
+    checked: '2026-11-02'
+  seo_title: "Half Dome hike: permits, cables and how to prepare"
+  description: How the Half Dome day hike works, from the permit lotteries and the cables on the last 400 feet to how long it takes, what to carry and when to turn back.
+  detail:
+  - h: What it's like
+    p:
+    - Half Dome rises nearly 5,000 feet (about 1,500 metres) above the floor of Yosemite Valley, to 8,800 feet (about 2,680 metres) above sea level. The day hike is 14 to 16 miles (23 to 26 km) there and back with about 4,800 feet (1,460 metres) of climbing, and the National Park Service says most hikers take 10 to 12 hours, some longer.
+    - Most people start at Happy Isles (shuttle stop 16) and share the first part of the way with the Vernal and Nevada Falls trail, then continue past Little Yosemite Valley. The summit is typically 15 to 20°F (8 to 11°C) cooler than the valley, and wind is common.
+  - h: The cables
+    p:
+    - Two metal cables let hikers climb the last 400 feet (about 120 metres) of bare granite without climbing equipment. They are usually put up on the Friday before Memorial Day and taken down the day after the second Monday in October, but the dates can change with conditions.
+    - The park says relatively few people have fallen and died on the cables since 1919, and that nearly all fatal falls happened when the rock was wet. Do not start up the cables if there are storm clouds about or the rock is wet. Be patient with slower hikers, let faster ones pass where you can, and stay on the inside of the cables. Sturdy gloves with a good grip help; pack them out afterwards.
+  - h: Getting a permit
+    table:
+      head: [What, Preseason lottery, Daily lottery]
+      rows:
+      - [When you apply, 1 to 31 March, Two days before your hike (midnight to 4 pm Pacific)]
+      - [Results, Mid-April by email, Late that night by email]
+      - [Who goes on it, Up to six people; name an alternate if you can, The permit holder only; no alternate]
+    after: A permit is needed every day the cables are up, for anyone going beyond the base of the subdome, where rangers check them. The park allows up to 300 people a day, about 225 day hikers and 75 backpackers (who get theirs with a wilderness permit). Bring photo ID and the email confirming the permit is paid. Permits cannot be passed to someone else.
+  - h: What to carry
+    list:
+    - Well broken-in boots with good ankle support and grip. Blisters and ankle injuries are among the most common injuries on the trail.
+    - Water. The park says carry at least 1 quart (1 litre) to the top of Vernal Fall, 2 quarts (2 litres) to the top of Nevada Fall and 1 gallon (4 litres) to the top of Half Dome. The only treated water is a summer drinking fountain at the Vernal Fall footbridge; river water must be boiled, treated or filtered.
+    - Salty snacks, to go with the water.
+    - A headlamp or torch with spare batteries. The park is plain that a phone does not count, and many hikers struggle coming down in the dark without one.
+    - A map and compass, and the skill to use them.
+    - Keep food within arm's reach or on your back: bears are common and will take packs.
+  - h: Timing and turning back
+    p:
+    - Leave around sunrise or earlier and set a firm turnaround time; the park's own example is 3.30 pm, after which you turn back whether you have reached the top or not. Thunderstorms are more common in the afternoon, and the summit is a dangerous place in a lightning storm, so if one is near, do not go on; if you are on top, leave.
+    - The park also warns of heat exhaustion, dehydration and hyponatremia (low blood sodium), and of altitude sickness. A severe headache with nausea is a reason to go down.
+  faq:
+  - q: How long does the Half Dome hike take?
+    a: Most hikers take 10 to 12 hours for the 14 to 16 mile (23 to 26 km) round trip, and some take longer.
+  - q: Do I need a permit to hike Half Dome?
+    a: Yes, every day the cables are up, to go beyond the base of the subdome. Apply in the preseason lottery in March, or in the daily lottery two days before your hike.
+  - q: When are the Half Dome cables up?
+    a: Usually from the Friday before Memorial Day to the day after the second Monday in October. The dates can change, so check the park's conditions page.
+  - q: How dangerous are the Half Dome cables?
+    a: The park says relatively few people have died on the cables since 1919, and nearly all fatal falls were on wet rock. Stay off them if the rock is wet or a storm is near.
+  - q: How much water do I need for Half Dome?
+    a: The park says at least 1 gallon (4 litres) to the top, more in hot weather. Any water from the river must be treated before you drink it.
+  sources:
+  - label: National Park Service, Half Dome day hike
+    url: https://www.nps.gov/yose/planyourvisit/halfdome.htm
+    checked: '2026-11-02'
+  - label: National Park Service, Half Dome permits for day hikers
+    url: https://www.nps.gov/yose/planyourvisit/hdpermits.htm
+    checked: '2026-11-02'
 - id: hike-mount-whitney
   title: Hike to the summit of Mount Whitney
   category: move
@@ -673,6 +730,60 @@
     outlet: parkrun Ireland blog
     url: https://blog.parkrun.com/ie/2024/02/06/250-parkruns-at-70-never-too-late-to-start-parkrunning/
     checked: '2026-10-27'
+  seo_title: "What is parkrun? How the free weekly 5k works"
+  description: How parkrun works, the free Saturday 5k you can run, jog or walk, from registering for your barcode to the first-timers' briefing, results and junior parkrun.
+  detail:
+  - h: What it is
+    p:
+    - parkrun is a free 5 km (3.1 mile) event every Saturday morning, organised by local volunteers in parks in 22 countries. You can walk, jog or run it, there is no time limit, and every event has a volunteer tail walker, so nobody finishes last.
+    - It began in Bushy Park, Teddington, on 2 October 2004, with 13 runners, five volunteers, a stopwatch and washers from a hardware shop as finish tokens. As more people have come to walk and jog it, the average finish time has slowed, from 22 minutes 17 seconds in 2005 to 32 minutes 30 seconds in 2020.
+  - h: Your first parkrun, step by step
+    list:
+    - Register once, free, on the parkrun site for your country. You get a personal barcode that works at every parkrun in the world.
+    - Find an event near you by postcode, town or event name, and aim to arrive 15 to 20 minutes before the start. There is no signing in.
+    - Most events hold a short welcome for first-timers 10 to 15 minutes before the start, where you can ask questions and hear about the course. Then the run director gives a briefing and counts down from three.
+    - The course is signposted and marshals line the route, so you do not need a map. Be considerate to other people using the park.
+    - At the finish, stay in order in the funnel and take a finish token. Volunteers scan your barcode and the token. If you forget your barcode you can still take part, but you will not get a time.
+    - Your time and position arrive by email or text, usually within 48 hours.
+  - h: When it starts
+    table:
+      head: [Where, What, When]
+      rows:
+      - [England and Wales, 5 km parkrun, Saturday 9am]
+      - [Scotland and Northern Ireland, 5 km parkrun, Saturday 9.30am]
+      - [United States, 5 km parkrun, Saturday morning; check your event's page]
+      - [UK and Ireland and Australia only, 2 km junior parkrun for 4 to 14 year olds, Sunday]
+    after: Check the page for the event you choose before you go.
+  - h: Volunteering, and building up to it
+    p:
+    - Every event is run by volunteers, from the run director to the barcode scanners, marshals and tail walker, and parkrun says no experience is needed for any role. Volunteering is a way to take part on a week you are not walking or running.
+    - If 5 km feels a long way, walk it, or mix walking and running; parkrun says stopping, run-walking or doing part of the course is all fine. To build up to running the whole way, the NHS Couch to 5K plan is a free place to start.
+  faq:
+  - q: Is parkrun free?
+    a: Yes. It is free to register and free to take part, every week.
+  - q: Can you walk a parkrun?
+    a: Yes. Walking, jogging and running are all welcome, there is no cut-off time, and a volunteer tail walker always finishes last.
+  - q: What time does parkrun start?
+    a: 9am in England and Wales and 9.30am in Scotland and Northern Ireland, on Saturday mornings. In the US and elsewhere it is Saturday morning; check your event's page for the time.
+  - q: Do I need to register for parkrun?
+    a: Once only. Registering gives you a barcode that you can use every week at any parkrun in the world.
+  - q: What is junior parkrun?
+    a: A free 2 km event on Sundays for 4 to 14 year olds, held in the UK, Ireland and Australia.
+  - q: How long do parkrun results take?
+    a: Results are processed after everyone has finished and usually arrive by email or text within 48 hours.
+  sources:
+  - label: parkrun UK blog, How does parkrun actually work? (9 February 2023)
+    url: https://blog.parkrun.com/uk/2023/02/09/how-does-parkrun-actually-work/
+    checked: '2026-11-02'
+  - label: parkrun, Join us
+    url: https://www.parkrun.com/about/join-us/
+    checked: '2026-11-02'
+  - label: parkrun, Our story
+    url: https://www.parkrun.com/about/our-story/
+    checked: '2026-11-02'
+  - label: parkrun US blog, Welcome to parkrun! (30 March 2022)
+    url: https://blog.parkrun.com/us/2022/03/30/welcome-to-parkrun/
+    checked: '2026-11-02'
 - id: open-water-swim
   title: Swim in open water
   category: move
@@ -3326,7 +3437,7 @@
     title: Sunderland's Great North Run Stalwarts Ready To Tackle Half Marathon Again
     outlet: Sunderland Harriers
     url: https://www.sunderlandharriers.org.uk/articles/view/328/sunderland-s-great-north-run-stalwarts-ready-to-tackle-half-marathon-again
-    checked: '2026-10-27'
+    checked: '2026-11-02'
 - id: enter-senior-games
   title: Compete at a state Senior Games
   category: move
@@ -3594,12 +3705,12 @@
   story_note: Sola Alegbe took her first adult lesson at 48 and now teaches swimming in London.
   inspire:
   - kind: read
-    person: Maria Rodriguez, from Venice, Florida
+    person: Maria Rodriguez, who learned at the YMCA in Venice, Florida
     line: Signed up for lessons at her local YMCA, learned backstroke and then freestyle, and can now jump into the deep end and level off.
     title: How I Learned to Swim After Age 50
     outlet: AARP
     url: https://www.aarp.org/health/healthy-living/learning-to-swim/
-    checked: '2026-11-01'
+    checked: '2026-11-02'
 - id: cycle-confidence-lesson
   title: Take a cycling confidence lesson
   category: move
@@ -7634,12 +7745,70 @@
   - label: National Trails, Hadrian's Wall Path trail information
     url: https://www.nationaltrail.co.uk/en_GB/trails/hadrians-wall-path/trail-information/
     region: uk
-    checked: '2026-10-27'
+    checked: '2026-11-02'
   safety: Two low stretches on the Solway coast can flood at high tide, so check tide times before that section.
   photo_file: "File:Hadrian's Wall at Cawfields - geograph.org.uk - 3175284.jpg"
   photo_caption: "Hadrian's Wall at Cawfields, 2012."
   photo_alt: "A low stone wall runs over green grassland to a crag above a small lake."
   photo_checked: '2026-11-01'
+  inspire:
+  - kind: read
+    person: Warren Callender, with Craig and Glynn Abbott
+    line: Walked the Hadrian's Wall Path with two friends at 15 miles a day for a week, carrying 18kg packs, and raised more than £1,600 for Pendleside Hospice.
+    title: Hiking trio complete Hadrian's Wall challenge for Pendleside Hospice
+    outlet: Burnley Express
+    url: https://burnleyexpress.net/news/people/hiking-trio-complete-hadrians-wall-challenge-for-pendleside-hospice-3296981
+    checked: '2026-11-02'
+  seo_title: "Walking Hadrian's Wall Path: days, sections and tips"
+  description: How to walk Hadrian's Wall Path, 84 miles in six or seven days, with the six sections, the best months, the Passport, getting there and the Solway tides.
+  detail:
+  - h: What it's like
+    p:
+    - The path runs 84 miles (135 km) coast to coast across northern England beside Hadrian's Wall, a UNESCO World Heritage Site, through moorland and rolling fields. It starts at the Roman fort of Segedunum in Wallsend, near Newcastle, and ends at Bowness-on-Solway beyond Carlisle. The official guidebook describes it east to west, and the path is a little longer than the wall itself, which was 80 Roman miles long.
+    - National Trails says anyone reasonably fit should manage it, but that it is not an easy walk. The 23 miles (37 km) between Chollerford and Birdoswald are a switchback of short climbs and descents, and the highest point, Windshields Crags, is 345 metres (1,131 feet). Most of the path is grass; only the Tyneside section is tarmac.
+  - h: The six sections
+    table:
+      head: [Section, What to expect]
+      rows:
+      - [Wallsend to Heddon-on-the-Wall, Starts at Segedunum fort; the Tyneside stretch is the only part on tarmac]
+      - [Heddon-on-the-Wall to Chollerford, Leaving Tyneside behind on the way to Chollerford]
+      - [Chollerford to Steel Rigg, From Wall-mile 35 the classic switchback of the central section comes into view]
+      - [Steel Rigg to Walton, Over Windshields Crags; from Walltown Crags you can see southern Scotland and the North Pennines]
+      - [Walton to Carlisle, The last standing stretch of wall going west is at Hare Hill]
+      - [Carlisle to Bowness-on-Solway, Two stretches at sea level flood at high tide; the last Passport stamp is at Bowness]
+    after: National Trails suggests experienced walkers allow six or seven days for the whole path, plus time for the Roman sites. A day on the central section, between Chollerford and Walton, is the classic taste of it.
+  - h: When to go, and the Passport
+    p:
+    - Walk between May and October, when the ground is normally dry; late July and August are the busiest weeks. Walking on dry ground matters here because the path crosses buried archaeology.
+    - For the same conservation reason, the Passport season runs from Easter to the end of October. You collect stamps at stations along the way, and at Bowness-on-Solway you can buy a badge and certificate. Passports are sold online and at places on the route, including Segedunum, The Sill and Walltown.
+  - h: Getting there and where to stay
+    list:
+    - The start at Wallsend is a ten-minute Metro ride from Newcastle station. The Tyne Valley railway between Newcastle and Carlisle stops at Corbridge, Hexham and Haltwhistle.
+    - The seasonal AD122 Hadrian's Wall bus is the main service along the wall; check Go North East for current times. Bowness-on-Solway has no car park, so use the 93 bus.
+    - Accommodation near the path fills up quickly. Book ahead, and start on a weekday if you can.
+    - There are plenty of campsites, but there is normally no right to wild camp, so ask the landowner first.
+  - h: What to carry, and the tides
+    p:
+    - Take a map or guidebook (and consider a compass), good footwear, waterproofs, warm layers, water and plasters for your feet. Mobile signal is weakest in the high central section, so charge your phone fully and, if you walk alone, tell someone your plans.
+    - Between Dykesfield and Drumburgh, and between Port Carlisle and Bowness-on-Solway, the path is at sea level and can flood. Avoid those stretches for an hour either side of high tide, using the Silloth tide tables or the notice boards at Dykesfield and Bowness.
+  faq:
+  - q: How long does it take to walk Hadrian's Wall Path?
+    a: National Trails suggests experienced walkers allow six or seven days for the whole 84 miles (135 km), with extra time for the Roman forts and museums.
+  - q: When is the best time to walk Hadrian's Wall?
+    a: May to October, when the ground is normally dry. Avoid late July and August if you want quieter paths.
+  - q: Which direction should I walk Hadrian's Wall Path?
+    a: Either works, but the official guidebook describes it east to west, from Wallsend to Bowness-on-Solway.
+  - q: Is Hadrian's Wall Path hard?
+    a: Anyone reasonably fit should manage it, but it is not easy. The central section between Chollerford and Birdoswald is a long run of short, steep ups and downs.
+  - q: Can you wild camp on Hadrian's Wall Path?
+    a: Normally not without permission, as there is no right to wild camp. There are plenty of campsites along the way.
+  sources:
+  - label: National Trails, Hadrian's Wall Path trail information
+    url: https://www.nationaltrail.co.uk/en_GB/trails/hadrians-wall-path/trail-information/
+    checked: '2026-11-02'
+  - label: National Trails, Hadrian's Wall Path route description
+    url: https://www.nationaltrail.co.uk/en_GB/trails/hadrians-wall-path/route/
+    checked: '2026-11-02'
 - id: walk-giants-causeway-clifftop
   title: Walk the clifftops above the Giant's Causeway
   category: explore
@@ -7784,6 +7953,14 @@
     region: uk
     checked: '2026-10-27'
   safety: Much of the path runs along cliff edges, so keep to the path in high wind and wet weather.
+  inspire:
+  - kind: read
+    person: Sue Furner, from Peel, Isle of Man
+    line: Walked the whole 630-mile South West Coast Path from Minehead to Poole and raised £3,000 for the RNLI.
+    title: Sue raises £3,000 for the RNLI in 630-mile coast walk
+    outlet: Isle of Man Today
+    url: https://www.iomtoday.co.im/news/sue-raises-ps3000-for-the-rnli-in-630-mile-coast-walk-566367
+    checked: '2026-11-02'
 - id: walk-the-malvern-ridge
   title: Walk the Malvern Hills from end to end
   category: move
@@ -8005,7 +8182,7 @@
     title: Manx women raise nearly £5000 with Kilimanjaro climb
     outlet: Manx Radio
     url: https://gold.manxradio.com/news/isle-of-man-news/manx-resident-raises-over-1300-with-killimanjaro-climb/
-    checked: '2026-10-27'
+    checked: '2026-11-02'
   seo_title: "How to climb Kilimanjaro: routes, seasons and altitude"
   description: Kilimanjaro's routes compared, the best months to climb, how altitude affects you, the park's rules, and how many days to allow for Africa's highest peak.
   detail:
@@ -8263,7 +8440,7 @@
   - label: 'Visit Norway: Hiking to Preikestolen'
     url: https://www.visitnorway.com/places-to-go/fjord-norway/ryfylke/the-lysefjord-area/hiking-to-preikestolen/
     region: world
-    checked: '2026-10-27'
+    checked: '2026-11-02'
   safety: Do not set out in forecast strong wind, heavy rain or fog, and take a guide if you are new to mountain walking.
   book:
   - label: Guided Preikestolen hikes on Viator
@@ -8349,9 +8526,9 @@
   - Plan for wading, since at least three rivers on the route have no bridge, and pack layers and waterproofs for fast-changing weather.
   links:
   - label: 'Ferðafélag Íslands (Touring Club of Iceland): the Laugavegur trail'
-    url: https://www.fi.is/en/hiking-trails/trails/laugavegur
+    url: https://www.fi.is/en/hiking-trails/trails/view/laugavegur
     region: world
-    checked: '2026-11-01'
+    checked: '2026-11-02'
   safety: Fog is common, phone signal is unreliable and snow bridges can be unstable, so follow the trail markers closely, talk to the wardens at each hut and call 112 in an emergency.
 - id: climb-to-the-monastery-at-petra
   title: Climb to the Monastery at Petra
@@ -8406,3 +8583,110 @@
     region: us
     checked: '2026-11-01'
   safety: Stay on the boardwalks and trails in thermal areas and keep children within reach, because the ground can be a thin crust over boiling water.
+- id: watch-sunrise-from-haleakala
+  title: Watch the sunrise from the summit of Haleakalā
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - us
+  places: [HI]
+  why: Watching dawn break from the summit of Haleakalā, more than 10,000 feet (3,000 metres) up on Maui, takes a reservation from the National Park Service. Sunset and the night sky need no booking, and the Keoneheʻeheʻe (Sliding Sands) Trail leads walkers down into the crater.
+  start:
+  - Book a sunrise reservation for the 3am to 7am slot on Recreation.gov; the park releases them well ahead, plus a few about 48 hours before each date, and does not refund them for bad weather.
+  - Pack warm layers, water and food and fill up with fuel before you go, as the park sells no food, clothing or gas and the summit is regularly wet, windy and below freezing before dawn.
+  - Allow about 30 minutes to drive from the entrance gate to the summit, on a road with no street lights or guard rails, and respect any Native Hawaiian cultural practices you see, as the mountain is sacred to Native Hawaiians.
+  links:
+  - label: 'Haleakalā National Park (NPS): sunrise'
+    url: https://www.nps.gov/hale/planyourvisit/sunrise.htm
+    region: us
+    checked: '2026-11-02'
+  - label: 'National Park Service: top 10 tips for visiting Haleakalā'
+    url: https://home.nps.gov/articles/000/plan-like-a-park-ranger-top-10-tips-for-visiting-haleakala-national-park.htm
+    region: us
+    checked: '2026-11-02'
+  safety: The summit is at high altitude, so slow down, take your time and drink plenty of water.
+- id: ride-the-bus-into-denali
+  title: Ride the park bus into Denali National Park
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: outdoors
+  company: others
+  season: Summer, when the park buses run from mid-May to mid-September
+  regions:
+  - us
+  places: [AK]
+  why: Only the first 15 miles of the gravel road into Denali National Park are open to private cars, so most visitors go deeper into the Alaskan wilderness on park buses. On a clear day the mountain itself, Denali, can be seen from as early as Mile 9, and wildlife may appear at any bend, though sightings are never guaranteed.
+  start:
+  - Read the park's guide to exploring Denali and choose between a narrated tour bus and a cheaper transit bus that lets you get off to walk and catch a later bus back.
+  - Book with the park's bus concessioner, and check the park's alerts for how far buses go this year; the park has reported the road closed at Mile 43 because of the Pretty Rocks landslide.
+  - With less time, use the free buses on the first part of the road and join a ranger programme at the sled dog kennels.
+  links:
+  - label: 'Denali National Park and Preserve (NPS): how to explore Denali'
+    url: https://www.nps.gov/dena/planyourvisit/visiting-denali.htm
+    region: us
+    checked: '2026-11-02'
+- id: walk-the-streets-of-pompeii
+  title: Walk the streets of Pompeii
+  category: travel
+  kind: experience
+  effort: moderate
+  cost: mid
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - world
+  places: [ITA]
+  why: Pompeii was buried by the eruption of AD 79, and today you can walk its excavated streets, go inside its open houses and see the plaster casts shown in the park's exhibition on the eruption. Archaeologists are still digging there, so new finds keep being announced.
+  start:
+  - Buy your ticket from the park's official site; tickets carry each visitor's name, and entry is by time slot with a daily limit.
+  - Choose an entrance, Porta Marina or Piazza Anfiteatro, and think about the park's own 90-minute guided tours, Civic Pompeii from Porta Marina Superiore or Daily Pompeii from Piazza Anfiteatro.
+  - Bring only a small bag (30 x 30 x 15 cm at most) and check which houses are open on your day, as each building has its own hours.
+  links:
+  - label: Pompeii Archaeological Park (official site)
+    url: https://pompeiisites.org/en/
+    region: world
+    checked: '2026-11-02'
+  - label: 'Pompeii Archaeological Park: how to visit the excavations'
+    url: https://pompeiisites.org/en/visiting-info/how-to-visit-the-excavations/
+    region: world
+    checked: '2026-11-02'
+  book:
+  - label: Pompeii guided tours on GetYourGuide
+    why: a guide brings the streets to life; check the tour includes your named entry ticket
+    url: https://www.getyourguide.com/s/?q=Pompeii+guided+tour
+    aff: getyourguide
+- id: see-wildlife-in-the-galapagos
+  title: See the wildlife of the Galápagos Islands
+  category: explore
+  kind: experience
+  effort: moderate
+  cost: high
+  time: weeks
+  setting: outdoors
+  company: others
+  regions:
+  - world
+  places: [ECU]
+  why: The Galápagos National Park manages 176 visitor sites across the islands, 85 on land for walking and 91 at sea for snorkelling, kayaking, diving and panga rides. In this Natural World Heritage Site, visitors are asked to keep two metres from the animals, cameras included.
+  start:
+  - Read the Galápagos National Park Directorate's visitor pages, which list the visitor sites and what you may do at each.
+  - Book with authorised tour operators only, as the park asks every visitor to do.
+  - Learn the visit rules before you go; keep your distance from wildlife, never touch or feed the animals, stay on the trails and take nothing away, not even stones or sand.
+  links:
+  - label: 'Galápagos National Park Directorate: visitor sites'
+    url: https://www.galapagos.gob.ec/en/sitios-de-visita/
+    region: world
+    checked: '2026-11-02'
+  - label: 'Galápagos National Park Directorate: the visit rules (in Spanish)'
+    url: https://galapagos.gob.ec/campana-yo-si-cumplo-promueve-el-respeto-de-las-reglas-de-visita-en-galapagos/
+    region: world
+    checked: '2026-11-02'

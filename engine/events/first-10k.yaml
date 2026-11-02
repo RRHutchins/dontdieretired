@@ -1,0 +1,16 @@
+id: first-10k
+name: A first 10k
+kinds: [endurance, running]
+demands: "10 km (6.2 miles) of running, or running and walking."
+sources: [greatrun-10k-plans, greatrun-10k-how-long]
+key_session:
+  name: long run
+  unit: minutes
+  start: {starter: 20, active: 30, advanced: 40}
+  peak: 50
+  note: at an easy pace; it is about time, not distance, and walking breaks are fine
+second_session: {name: easy run, minutes: 25}
+specific: null
+pack_from_fraction: null
+weeks: {default: 10, min: 8}
+prerequisite: "If you cannot yet run for 20 minutes without stopping, do the NHS Couch to 5K first, or start with Great Run's run-walk plan."
