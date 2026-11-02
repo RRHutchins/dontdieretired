@@ -30,6 +30,8 @@
 {% if cfg.analytics.plausible_script_id %}<!-- Privacy-friendly analytics by Plausible -->
 <script async src="https://plausible.io/js/{{ cfg.analytics.plausible_script_id }}.js"></script>
 <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>{% endif %}
+{% if cfg.analytics.cloudflare_token %}<!-- Cookie-free analytics by Cloudflare -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ cfg.analytics.cloudflare_token }}"}'></script>{% endif %}
 {% if cfg.ads.enabled and cfg.ads.adsense_client %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ cfg.ads.adsense_client }}" crossorigin="anonymous"></script>{% endif %}
 </head>
 <body data-page="{% block pagetype %}page{% endblock %}">
