@@ -10,6 +10,7 @@ subject_age: 50
 art: forest
 photo_file: "File:Roaring Fork Valley 2.JPG"
 photo_caption: "Part of Colorado's Roaring Fork Valley, between Aspen Airport and Woody Creek, looking down the valley in October 2025."
+photo_checked: 2026-11-03
 photo_alt: "A wide valley floor with yellow and green autumn trees and scattered houses, framed by brown hills and distant mountains under a grey sky. No people are visible."
 hook: "A women's mountain bike group near Aspen has ridden singletrack together for nearly 15 years. Its rule: no one left behind."
 lesson: "A regular ride with people who wait for you is how a hard sport becomes a lasting habit."

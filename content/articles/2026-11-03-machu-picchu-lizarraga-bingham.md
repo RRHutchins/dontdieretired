@@ -9,6 +9,7 @@ level: any
 art: mountains
 photo_file: "File:The three-windowed temple facing the plaza in Machu Picchu 1911.jpg"
 photo_caption: "The Temple of the Three Windows at Machu Picchu, in Hiram Bingham's first photograph of the site, July 1911."
+photo_checked: 2026-11-03
 photo_alt: "An old sepia photograph of a long wall of fitted stone blocks with window openings, half hidden by tall plants and shrubs in the foreground. No people are visible."
 hook: "Bingham reached Machu Picchu in 1911. Farmers were already working its terraces, and a local man had signed a wall nine years before."
 lesson: "A 'discovery' is often the moment the outside world hears about something local people already knew, and the details of who got there first are worth checking."
