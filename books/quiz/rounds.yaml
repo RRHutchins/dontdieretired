@@ -4,6 +4,8 @@
 # accept (optional: other answers to allow), source {title, publisher, url}, checked (date the source was opened
 # and confirmed the answer). A question with no `checked` date is not printed.
 # Spelling is British in both editions; a question can carry `q_us` / `a_us` where the US edition needs other words.
+# kind (optional): junior (pitched for children) or swap (grown-ups answer about the children's world and children about the
+# grown-ups'); in a swap round each question carries `for: grown-ups` or `for: children`, printed in place of the level word.
 
 rounds:
   - id: christmas-around-the-world
@@ -2009,3 +2011,357 @@ rounds:
         level: 3
         source: {title: "William Henry Harrison", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/biography/William-Henry-Harrison"}
         checked: 2026-11-02
+
+  - id: famous-britons
+    title: Famous Britons
+    editions: [uk]
+    intro: "Writers, scientists and a lighthouse heroine."
+    questions:
+      - q: "Shakespeare was born in 1564 in a house on Henley Street, in which Warwickshire town?"
+        a: "Stratford-upon-Avon"
+        accept: ["Stratford"]
+        note: "He was the third of eight children and the first boy. The house is still there, and you can visit it."
+        level: 1
+        source: {title: "Shakespeare's Birthplace", publisher: "Shakespeare Birthplace Trust", url: "https://www.shakespeare.org.uk/see-where-it-all-began/"}
+        checked: 2026-11-03
+      - q: "Isaac Newton is said to have begun thinking about gravity after seeing which fruit fall?"
+        a: "An apple"
+        note: "The National Trust calls it a legend that is believed to be broadly true. The tree still grows at Woolsthorpe Manor, where Newton went home to escape the plague of 1665."
+        level: 1
+        source: {title: "Woolsthorpe Manor's history", publisher: "National Trust", url: "https://nationaltrust.org.uk/visit/nottinghamshire-lincolnshire/woolsthorpe-manor/history-of-woolsthorpe-manor"}
+        checked: 2026-11-03
+      - q: "Charles Darwin spent almost five years at sea on a ship named like a breed of dog. What was it?"
+        a: "HMS Beagle"
+        accept: ["The Beagle"]
+        note: "He was the ship's naturalist. On the way he visited the Galápagos Islands and studied the giant tortoises."
+        level: 1
+        source: {title: "Charles Darwin (1809–82)", publisher: "The Linnean Society of London", url: "https://www.linnean.org/the-society/history-of-science/charles-darwin"}
+        checked: 2026-11-03
+      - q: "Mary Anning, a famous fossil hunter born in 1799, searched the cliffs of which seaside town on the Jurassic Coast?"
+        a: "Lyme Regis"
+        note: "When she was 12, her brother found a strange skull. Mary dug out the rest of the skeleton: an ichthyosaur."
+        level: 2
+        source: {title: "Mary Anning: The unsung hero of fossil discovery", publisher: "Natural History Museum", url: "https://www.nhm.ac.uk/discover/mary-anning-unsung-hero.html"}
+        checked: 2026-11-03
+      - q: "Which engineer, appointed at just 24, designed the Clifton Suspension Bridge and called it 'my first child, my darling'?"
+        a: "Isambard Kingdom Brunel"
+        accept: ["Brunel"]
+        note: "The bridge took 33 years to complete and opened in December 1864."
+        level: 2
+        source: {title: "History", publisher: "Clifton Suspension Bridge Trust", url: "https://cliftonbridge.org.uk/history/"}
+        checked: 2026-11-03
+      - q: "Which wartime codebreaker and computer pioneer appears on the plastic £50 note that came out in 2021?"
+        a: "Alan Turing"
+        note: "It entered circulation on 23 June 2021, his birthday, and his date of birth is hidden in its design in binary code."
+        level: 2
+        source: {title: "£50 banknote featuring Alan Turing", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/objects/co8809078/50-banknote-featuring-alan-turing-banknote"}
+        checked: 2026-11-03
+      - q: "Emmeline Pankhurst's campaigners for women's votes took a name meant as an insult. What was it?"
+        a: "Suffragettes"
+        note: "It began as a Daily Mail slur. Her group was founded in Manchester in 1903, and all women over 21 won the vote in 1928."
+        level: 2
+        source: {title: "Emmeline Pankhurst", publisher: "The National Archives", url: "https://www.nationalarchives.gov.uk/explore-the-collection/stories/emmeline-pankhurst"}
+        checked: 2026-11-03
+      - q: "Edward Jenner named his way of protecting people from smallpox 'vaccination', after the Latin word for which animal?"
+        a: "A cow"
+        note: "In 1796 he took matter from a milkmaid's cowpox sore and put it into the arm of a local boy, James Phipps, who then proved immune to smallpox."
+        level: 2
+        source: {title: "Edward Jenner", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/people/cp37470"}
+        checked: 2026-11-03
+      - q: "Winston Churchill won a Nobel Prize in 1953. Was it the prize for peace, physics or literature?"
+        a: "Literature"
+        note: "For his writing of history and biography, and for his speeches."
+        level: 3
+        source: {title: "Nobel Prize in Literature 1953", publisher: "Nobel Prize Outreach (NobelPrize.org)", url: "https://www.nobelprize.org/prizes/literature/1953/summary/"}
+        checked: 2026-11-03
+      - q: "In 1838 Grace Darling and her father rowed out from their lighthouse to save nine shipwrecked people. Off which islands?"
+        a: "The Farne Islands"
+        note: "Off the Northumberland coast. Grace was 22, and the ship was the Forfarshire."
+        level: 3
+        source: {title: "Grace Darling", publisher: "Royal Museums Greenwich", url: "https://www.rmg.co.uk/stories/maritime-history/grace-darling"}
+        checked: 2026-11-03
+
+  - id: famous-americans
+    title: Famous Americans
+    editions: [us]
+    intro: "Inventors, astronauts and one very famous mouse."
+    questions:
+      - q: "In 1752 Benjamin Franklin flew a kite in a storm. What did he show lightning was: electricity, fire or ice?"
+        a: "Electricity"
+        note: "A metal key hung from the string. The kite was never actually struck by lightning: it picked up electric charge from the storm. Never try it."
+        level: 1
+        source: {title: "Benjamin Franklin and the Kite Experiment", publisher: "The Franklin Institute", url: "https://fi.edu/en/science-and-education/benjamin-franklin/kite-key-experiment"}
+        checked: 2026-11-03
+      - q: "Which cartoon character starred in Steamboat Willie in 1928: Mickey Mouse, Bugs Bunny or Popeye?"
+        a: "Mickey Mouse"
+        note: "For his 60th birthday in 1988, six of the earliest drawings of him went to the Smithsonian's National Museum of American History."
+        level: 1
+        source: {title: "Donation of 'Steamboat Willie' Drawings to National Museum of American History", publisher: "Smithsonian Institution Archives", url: "https://siarchives.si.edu/collections/siris_arc_396533"}
+        checked: 2026-11-03
+      - q: "Was the jazz star Louis Armstrong famous for playing the trumpet, the violin or the drums?"
+        a: "The trumpet"
+        accept: ["Cornet"]
+        note: "He was born in New Orleans and learned on the cornet as a boy. His nickname, Satchmo, was short for 'Satchel Mouth'."
+        level: 1
+        source: {title: "Louis Armstrong", publisher: "Encyclopaedia Britannica", url: "https://www.eb.com/biography/Louis-Armstrong"}
+        checked: 2026-11-03
+      - q: "Deaf and blind from a baby, Helen Keller first understood a word when her teacher spelled it into her hand at a pump. Which word?"
+        a: "Water"
+        note: "She lost her sight and hearing to an illness at 19 months. The word was spelled at a water pump by her teacher, Anne Sullivan, and Helen learned 30 words that day."
+        level: 2
+        source: {title: "Childhood 1880-1894", publisher: "American Foundation for the Blind", url: "https://afb.org/about-afb/history/online-museums/helen-keller-museum/childhood"}
+        checked: 2026-11-03
+      - q: "In August 1963 Martin Luther King Jr gave his 'I Have a Dream' speech on the steps of which memorial in Washington?"
+        a: "The Lincoln Memorial"
+        note: "An inscription in the step marks the spot where he stood."
+        level: 2
+        source: {title: "Lincoln Memorial: I Have a Dream marker", publisher: "U.S. National Park Service", url: "https://home.nps.gov/places/000/lincoln-memorial-i-have-a-dream-marker.htm"}
+        checked: 2026-11-03
+      - q: "In 1997 Major League Baseball retired one shirt number on every team, in honour of Jackie Robinson. Which number?"
+        q_us: "In 1997 Major League Baseball retired one jersey number on every team, in honour of Jackie Robinson. Which number?"
+        a: "42"
+        note: "He broke baseball's colour line with the Brooklyn Dodgers in April 1947. Players already wearing 42 could keep it; the last was Mariano Rivera."
+        level: 2
+        source: {title: "April 15, 1997: Jackie Robinson's Number Retired", publisher: "National Baseball Hall of Fame and Museum", url: "https://baseballhall.org/discover-more/stories/inside-pitch/jackie-robinson-number-retired-throughout-baseball"}
+        checked: 2026-11-03
+      - q: "In 1983, aboard the space shuttle Challenger, who became the first American woman to fly in space?"
+        a: "Sally Ride"
+        note: "Before she was an astronaut she was a nationally ranked tennis player."
+        level: 2
+        source: {title: "Sally Ride", publisher: "National Air and Space Museum, Smithsonian Institution", url: "https://airandspace.si.edu/explore/stories/sally-ride"}
+        checked: 2026-11-03
+      - q: "The scientist George Washington Carver created 325 uses for which crop?"
+        a: "The peanut"
+        accept: ["Peanuts"]
+        note: "And 108 for the sweet potato. Most of his work was done at Tuskegee."
+        level: 2
+        source: {title: "George Washington Carver", publisher: "U.S. National Park Service", url: "https://www.nps.gov/home/learn/historyculture/george-washington-carver.htm"}
+        checked: 2026-11-03
+      - q: "Johnny Appleseed, who planted apple trees across the Midwest, was a real man born in 1774. What was his real name?"
+        a: "John Chapman"
+        note: "He is said to have worn a cooking pot as a cap."
+        level: 3
+        source: {title: "Johnny Appleseed (Today in History: September 26)", publisher: "Library of Congress", url: "https://www.loc.gov/item/today-in-history/september-26/"}
+        checked: 2026-11-03
+      - q: "'Mark twain' was a riverboat call telling how deep the water was. How deep?"
+        a: "Two fathoms (about 12 feet)"
+        accept: ["Two fathoms", "12 feet"]
+        note: "Many scholars believe Samuel Clemens took it as his pen name because he had been a riverboat pilot."
+        level: 3
+        source: {title: "What is Mark Twain's real name?", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/question/What-is-Mark-Twains-real-name"}
+        checked: 2026-11-03
+
+  - id: british-inventions
+    title: British inventions
+    editions: [uk]
+    intro: "Stamps, steam, cat's eyes and a coat for the rain."
+    questions:
+      - q: "The world's first postage stamp, from 1840, was black and cost a penny. What was it called?"
+        a: "The Penny Black"
+        note: "It showed Queen Victoria. Its red cancelling mark could be cleaned off, so within a year the stamp was printed red-brown and the mark black."
+        level: 1
+        source: {title: "The first ever stamp: the Penny Black", publisher: "The Postal Museum", url: "https://www.postalmuseum.org/?p=24603"}
+        checked: 2026-11-03
+      - q: "Percy Shaw invented reflecting road studs after seeing an animal's eyes shining on a foggy night. Which animal?"
+        a: "A cat"
+        note: "He patented his Catseyes in 1934. They clean themselves: a tyre pushes a rubber cushion over the glass and wipes it with rainwater."
+        level: 1
+        source: {title: "Percy Shaw", publisher: "Calderdale Museums, Calderdale Council", url: "https://museums.calderdale.gov.uk/explore/famous-figures/percy-shaw"}
+        checked: 2026-11-03
+      - q: "In 1829 the Stephensons' steam engine won the Rainhill trials. Was it called Rocket, Comet or Bullet?"
+        a: "Rocket"
+        note: "It reached 30 miles an hour, was the only engine to finish, and won a £500 prize."
+        level: 1
+        source: {title: "Rocket locomotive", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/objects/co26704"}
+        checked: 2026-11-03
+      - q: "In January 1926, in his laboratory in Soho, London, who gave the first demonstration of television?"
+        a: "John Logie Baird"
+        note: "His audience included members of the Royal Institution and a reporter from The Times."
+        level: 2
+        source: {title: "Experimental television receiver used by JL Baird in demonstration, made 1925-1926", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/objects/co34789"}
+        checked: 2026-11-03
+      - q: "In 1928 Alexander Fleming saw that a stray mould had killed the germs around it. What did he call the germ-killer?"
+        a: "Penicillin"
+        note: "In 1945 he shared the Nobel Prize with Howard Florey and Ernst Chain, who turned it into a medicine."
+        level: 2
+        source: {title: "Alexander Fleming", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/people/cp93672/alexander-fleming"}
+        checked: 2026-11-03
+      - q: "In 1959 Christopher Cockerell crossed the Channel in his invention, which rides on a cushion of air. What is it?"
+        a: "The hovercraft"
+        note: "He tested an early model by tying it to a rowing boat and flying it round his boatyard on the Norfolk Broads."
+        level: 2
+        source: {title: "Flying on a cushion of air", publisher: "Science Museum", url: "https://blog.sciencemuseum.org.uk/flying-on-a-cushion-of-air"}
+        checked: 2026-11-03
+      - q: "Which coat is named after the Scottish chemist who in 1823 made cloth waterproof with rubber?"
+        a: "The mackintosh"
+        accept: ["Mac", "Macintosh"]
+        note: "Charles Macintosh glued two layers of cloth together with rubber dissolved in coal-tar naphtha."
+        level: 2
+        source: {title: "Charles Macintosh", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/print/article/354755"}
+        checked: 2026-11-03
+      - q: "In 1913 Harry Brearley of Sheffield made a steel that lemon juice and vinegar could not harm. What do we call it?"
+        a: "Stainless steel"
+        note: "He called it 'rustless steel' and saw it would be perfect for cutlery. The secret ingredient is chromium."
+        level: 2
+        source: {title: "100 Years Of Stainless Steel", publisher: "Science Museum", url: "https://blog.sciencemuseum.org.uk/100-years-of-stainless-steel"}
+        checked: 2026-11-03
+      - q: "Edwin Budding's lawnmower of 1830 borrowed the rotary blades used to finish what in the mills?"
+        a: "Woollen cloth"
+        accept: ["Cloth", "Wool"]
+        note: "He worked at the Phoenix Iron Works in Stroud. Before mowers, lawns were cut with scythes."
+        level: 3
+        source: {title: "Budding's Patent Lawn Mower, 1832", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/objects/co38796"}
+        checked: 2026-11-03
+      - q: "In 1930 Frank Whittle, an RAF man, patented a new kind of aircraft engine. What kind?"
+        a: "The jet engine"
+        accept: ["Turbojet"]
+        note: "He trained with the RAF at Cranwell. Britain's first jet aircraft, the Gloster E.28/39, flew on 15 May 1941."
+        level: 3
+        source: {title: "Forward Thinkers: Aerospace pioneer Sir Frank Whittle, inventor of the turbojet engine", publisher: "Institution of Mechanical Engineers (Professional Engineering)", url: "https://imeche.org/news/news-article/forward-thinkers-aerospace-pioneer-sir-frank-whittle-inventor-of-the-turbojet-engine"}
+        checked: 2026-11-03
+
+  - id: holiday-films-and-tv
+    title: Holiday films and TV
+    editions: [us]
+    intro: "Angels, elves, burglars and one small, sad tree."
+    questions:
+      - q: "In Home Alone (1990), eight-year-old Kevin is left behind when his family flies off on holiday to which city?"
+        q_us: "In Home Alone (1990), eight-year-old Kevin is left behind when his family flies off on vacation to which city?"
+        a: "Paris"
+        note: "It was the highest-earning film of 1990, taking more than $470 million around the world."
+        level: 1
+        source: {title: "Home Alone", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/topic/Home-Alone"}
+        checked: 2026-11-03
+      - q: "In the 1964 TV special Rudolph the Red-Nosed Reindeer, Hermey the elf doesn't want to make toys. What does he want to be: a dentist, a pilot or a chef?"
+        a: "A dentist"
+        note: "Hermey and Rudolph run away together and end up on the Island of Misfit Toys."
+        level: 1
+        source: {title: "The 'True' Hollywood Story: Rudolph", publisher: "PBS NewsHour", url: "https://www.pbs.org/newshour/arts/the-true-hollywood-story-rudolph"}
+        checked: 2026-11-03
+      - q: "In A Charlie Brown Christmas (1965), what kind of tree does Charlie Brown choose: a giant shiny one or a small, scrawny one?"
+        a: "A small, scrawny one"
+        note: "'This little green one here seems to need a home,' he says. Linus is not so sure."
+        level: 1
+        source: {title: "50 Years Of 'A Charlie Brown Christmas': Share Your Sad Tree Photos", publisher: "NPR", url: "https://www.npr.org/sections/thetwo-way/2014/12/01/367848354/50-years-of-a-charlie-brown-christmas-share-your-sad-tree-photos"}
+        checked: 2026-11-03
+      - q: "In Home Alone, Kevin defends the house against two burglars. One is Harry. What is the other one called?"
+        a: "Marv"
+        note: "Harry was played by Joe Pesci and Marv by Daniel Stern."
+        level: 2
+        source: {title: "Home Alone", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/topic/Home-Alone"}
+        checked: 2026-11-03
+      - q: "In It's a Wonderful Life (1946), what is the angel Clarence hoping to earn?"
+        a: "His wings"
+        note: "A bell ringing on the Christmas tree tells us he has them. The film disappointed at the box office and became a favourite through Christmas TV showings."
+        level: 2
+        source: {title: "It's a Wonderful Life", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/print/article/298037"}
+        checked: 2026-11-03
+      - q: "In Miracle on 34th Street (1947), a kindly old man is hired to play Santa at which New York department store?"
+        a: "Macy's"
+        note: "The store has often decorated its windows with scenes from the film."
+        level: 2
+        source: {title: "Miracle on 34th Street", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/print/article/662017"}
+        checked: 2026-11-03
+      - q: "Edmund Gwenn won an Oscar for playing that old man, who says he is the real Santa. What name does he go by?"
+        a: "Kris Kringle"
+        note: "Natalie Wood played Susan, the girl who doubts that Santa is real."
+        level: 2
+        source: {title: "Miracle on 34th Street", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/print/article/662017"}
+        checked: 2026-11-03
+      - q: "In the Rudolph TV special, the prospector Yukon Cornelius is hunting for gold and silver that tastes like what?"
+        a: "Peppermint"
+        note: "Sam the Snowman, who tells the story, was voiced by Burl Ives."
+        level: 2
+        source: {title: "The 'True' Hollywood Story: Rudolph", publisher: "PBS NewsHour", url: "https://www.pbs.org/newshour/arts/the-true-hollywood-story-rudolph"}
+        checked: 2026-11-03
+      - q: "Which Vince Guaraldi tune, written in 1963 for a documentary that was never sold, became famous in A Charlie Brown Christmas?"
+        a: "Linus and Lucy"
+        note: "The soundtrack album has been recorded by more than a hundred other artists, including Tony Bennett and Dave Brubeck."
+        level: 3
+        source: {title: "A Charlie Brown Christmas, Vince Guaraldi Trio (1970) was selected to be in The Library of Congress Music Registry", publisher: "Charles M. Schulz Museum", url: "https://schulzmuseum.org/a-charlie-brown-christmas-vince-guaraldi-trio-1970-was-selected-to-be-in-the-library-of-congress-music-registry/"}
+        checked: 2026-11-03
+      - q: "In It's a Wonderful Life, George Bailey lives in which small town?"
+        a: "Bedford Falls"
+        note: "Frank Capra directed it, with James Stewart as George and Donna Reed as Mary."
+        level: 3
+        source: {title: "It's a Wonderful Life", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/print/article/298037"}
+        checked: 2026-11-03
+
+  - id: swap-round-uk-1
+    title: "Swap round: then and now"
+    kind: swap
+    editions: [uk]
+    intro: "Grown-ups, these are from the children's world. Children, these are from the grown-ups'. No helping each other!"
+    questions:
+      - q: "Grown-ups: in the cartoon Bluey, what is the name of Bluey's little sister?"
+        a: "Bingo"
+        note: "Bluey is a blue heeler dog, and the series is made in Australia."
+        level: 2
+        for: grown-ups
+        source: {title: "About Bluey", publisher: "Bluey official website (Ludo Studio and BBC Studios)", url: "https://www.bluey.tv/media-hub/about-bluey/"}
+        checked: 2026-11-03
+      - q: "Children: Britain's classic telephone boxes, designed in 1935, were painted which colour so they were easy to spot?"
+        a: "Red"
+        note: "The K6 box was designed by Sir Giles Gilbert Scott to celebrate King George V's Silver Jubilee."
+        level: 1
+        for: children
+        source: {title: "K6 Telephone Box", publisher: "Design Museum", url: "https://designmuseum.org/discover-design/all-design-objects/k6-telephone-box"}
+        checked: 2026-11-03
+      - q: "Grown-ups: in Minecraft, which green creature creeps up on players and then explodes?"
+        a: "The Creeper"
+        note: "The V&A says it was apparently made by accident, when Minecraft's creator got the code for a pig wrong."
+        level: 2
+        for: grown-ups
+        source: {title: "Creeper", publisher: "Victoria and Albert Museum", url: "https://collections.vam.ac.uk/item/O1350002"}
+        checked: 2026-11-03
+      - q: "Children: in 1979 Sony brought out the Walkman. Was it a music player you could carry, a walking robot or a running shoe?"
+        a: "A music player you could carry"
+        note: "It played cassette tapes. Two people could share one, and a little microphone let them talk without taking their headphones off."
+        level: 1
+        for: children
+        source: {title: "Sony TPS-L2 'Walkman' Cassette Player", publisher: "National Museum of American History, Smithsonian Institution", url: "https://music.si.edu/node/1231"}
+        checked: 2026-11-03
+      - q: "Grown-ups: Pikachu, the famous yellow Pokémon, is which type: Fire, Water or Electric?"
+        a: "Electric"
+        note: "Give Pikachu a Thunder Stone and it evolves into Raichu."
+        level: 2
+        for: grown-ups
+        source: {title: "Everything You Need to Know About Pikachu!", publisher: "Nintendo (Play Nintendo)", url: "https://play.nintendo.com/news-tips/tips-tricks/get-know-pikachu/"}
+        checked: 2026-11-03
+      - q: "Children: the first ever text message was sent in December 1992. Did it say Merry Christmas, Hello Mum or Happy Birthday?"
+        a: "Merry Christmas"
+        note: "That is Vodafone's official account; one of its managers remembers an earlier test that just said 'test'. The phone it went to weighed 2.1 kg."
+        level: 1
+        for: children
+        source: {title: "'Merry Christmas': The 30th anniversary of the first text message", publisher: "Vodafone UK News Centre", url: "https://www.vodafone.co.uk/newscentre/features/merry-christmas-the-30th-anniversary-of-the-first-text-message/"}
+        checked: 2026-11-03
+      - q: "Grown-ups: in Disney's Frozen, what is the name of Kristoff's loyal reindeer?"
+        a: "Sven"
+        note: "The snowman is Olaf. Frozen won two Oscars, one of them for the song Let It Go."
+        level: 2
+        for: grown-ups
+        source: {title: "Frozen (film)", publisher: "D23 (The Walt Disney Company)", url: "https://d23.com/?p=10750"}
+        checked: 2026-11-03
+      - q: "Children: in the late 1990s lots of today's grown-ups had a Tamagotchi. What did you have to look after on its little screen?"
+        a: "A digital pet"
+        accept: ["A pet"]
+        note: "You had to feed it, train it and clean up after it. The name comes from the Japanese for 'egg' and 'watch'."
+        level: 2
+        for: children
+        source: {title: "Tamagotchi", publisher: "Victoria and Albert Museum", url: "https://collections.vam.ac.uk/item/O37315/"}
+        checked: 2026-11-03
+      - q: "Grown-ups: Minecraft was created by a games designer nicknamed Notch. Which country is he from?"
+        a: "Sweden"
+        note: "Markus Persson. The game came out in full in November 2011."
+        level: 3
+        for: grown-ups
+        source: {title: "Creeper", publisher: "Victoria and Albert Museum", url: "https://collections.vam.ac.uk/item/O1350002"}
+        checked: 2026-11-03
+      - q: "Children: before 1971, a pound was worth 240 pennies. How many shillings were there in a pound?"
+        a: "Twenty"
+        accept: ["20"]
+        note: "So a shilling was 12 pennies. The £ sign comes from L, for libra, the Latin for a pound."
+        level: 3
+        for: children
+        source: {title: "Pounds, Shillings and Pence", publisher: "Royal Mint Museum", url: "https://www.royalmintmuseum.org.uk/journal/history/pounds-shillings-and-pence/"}
+        checked: 2026-11-03

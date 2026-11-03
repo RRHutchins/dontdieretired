@@ -72,6 +72,9 @@ so the whole round is in view, and each round's foot gives the page of its answe
 - **Length.** A round must fit on its two facing pages. Keep each round's questions to about 1,000 characters in
   all (most under 120 each) and put the story in the `note`; five rounds written on 29 Oct 2026 first ran to a third
   page until shortened. Check the sample build for any round with two "(continued)" pages.
+- **Swap rounds** carry `kind: swap`, and each question a `for: grown-ups` or `for: children`, which prints in place of the
+  level word ("for the children"). Start each question with "Grown-ups:" or "Children:" so the quizmaster reads it out.
+  Keep round titles short (under about 34 characters): the answers heading does not wrap.
 - **Not yet built:** cover, score sheet, the three "night" title pages in a full build, a checker for duplicate
   answers across rounds. Amazon may treat two editions sharing two-thirds of their questions as near-duplicates:
   keep titles, covers and descriptions clearly marked UK and American, and watch for a KDP query.

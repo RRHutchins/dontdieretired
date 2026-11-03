@@ -29,6 +29,7 @@ Q_SIZE, Q_LEAD = 16, 21.5          # large print: questions and answers 16 point
 NOTE_SIZE, NOTE_LEAD = 14, 18.5    # the "did you know" notes in the answers
 DOTS = {1: "●○○", 2: "●●○", 3: "●●●"}
 LEVEL = {1: "anyone", 2: "grown-ups", 3: "hard"}
+FOR = {"children": "for the children", "grown-ups": "for the grown-ups"}   # swap rounds (kind: swap)
 NIGHTS = ["Christmas Eve", "Christmas Day", "Boxing Day"]
 
 EDITIONS = {
@@ -193,7 +194,8 @@ class Book:
                 y = L.para(c, q["q"], x0(self.n) + 30, y, CW - 30, "Body", Q_SIZE, Q_LEAD)
                 dots(c, x0(self.n) + 30, y + 7, q["level"])
                 c.setFont("Body", 12); c.setFillColor(L.GREY)
-                c.drawString(x0(self.n) + 30 + 34, y + 3, LEVEL[q["level"]])
+                # swap rounds say who answers ("for the children" / "for the grown-ups") instead of the level word
+                c.drawString(x0(self.n) + 30 + 34, y + 3, FOR[q["for"]] if q.get("for") else LEVEL[q["level"]])
                 c.setFillColor(black)
                 y -= 20
             self.end_page_round(i)
@@ -240,7 +242,9 @@ class Book:
             c.setFillColor(black)
             y -= 28
             for k, q in enumerate(r["questions"], 1):
-                a = q["a"] + (f" (also accept: {q['accept']})" if q.get("accept") else "")
+                acc = q.get("accept")
+                acc = ", ".join(acc) if isinstance(acc, list) else acc   # accept is a list in rounds.yaml
+                a = q["a"] + (f" (also accept: {acc})" if acc else "")
                 h = len(L.wrap(a, "Semi", Q_SIZE, CW - 30)) * Q_LEAD
                 if q.get("note"):
                     h += len(L.wrap(q["note"], "Body", NOTE_SIZE, CW - 30)) * NOTE_LEAD
