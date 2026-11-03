@@ -1,0 +1,20 @@
+id: sprint-triathlon
+name: A first sprint triathlon
+kinds: [endurance, swimming]
+activity: first-triathlon
+demands: "A 400 m pool swim or 750 m open water swim, a 20 km (12.4 mile) ride and a 5 km (3.1 mile) run, one straight after another, usually 75 to 90 minutes in all."
+sources: [britri-distances, tri-ireland-first, usat-brick]
+key_session:
+  name: brick session (a ride, then a run straight away)
+  unit: minutes
+  start: {starter: 30, active: 40, advanced: 50}
+  peak: 75
+  note: mostly riding at a steady, conversational effort, then a quick change and an easy run that starts at about 10 minutes
+second_session: {name: "easy run or ride, taking turns week by week", minutes: 30}
+specific:
+  name: swim technique session
+  text: in the pool, work on calm breathing, lift your eyes to sight every five to ten strokes and breathe to both sides
+  from_week: 1
+pack_from_fraction: null
+weeks: {default: 10, min: 8}
+prerequisite: "If you cannot yet swim 400 metres (16 lengths of a 25-metre pool) without stopping, take lessons or build up in the pool first, and choose a super sprint or a sprint with a pool swim."

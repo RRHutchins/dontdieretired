@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-02)
+# Guidance engine report (2026-11-03)
 
-37 sources, 65 statements, 8 event profiles. Core 42, supported 23, thin 0, contested 0.
+43 sources, 71 statements, 9 event profiles. Core 46, supported 25, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -16,6 +16,7 @@
 - World Health Organization, *Global recommendations on physical activity for health, adults aged 65 and above* (2011). Opened 2026-10-27.
 - NHS, *How to warm up before exercising (last reviewed 24 June 2026)* (2026). Opened 2026-11-02.
 - NHS, *Keep bones healthy over 65 (last reviewed 31 October 2023)* (2023). Opened 2026-11-02.
+- Centers for Disease Control and Prevention (CDC), *Older adult activity, an overview (last reviewed 4 December 2025)* (2025). Opened 2026-11-03.
 
 **4. Peer-reviewed review or large study**
 - Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Opened 2026-10-27.
@@ -40,6 +41,11 @@
 - Cycling UK, *10-week training plan for a 100km ride* (2025). Opened 2026-11-01.
 - Great Run (organiser of the Great North Run), *10k training plans (16-week Beginner, 8-week Run/Walk and 12-week Improver plans)* (2026). Opened 2026-11-02.
 - Great Run (organiser of the Great North Run), *How long does it take to train for a 10k?* (2024). Opened 2026-11-02.
+- Edinburgh Marathon Festival, *How to train for your first half marathon, a beginner's guide to going the distance* (2026). Opened 2026-11-03.
+- British Triathlon, *Triathlon distances explained* (2026). Opened 2026-11-03.
+- British Triathlon (Wales), *Beginners guide to triathlon* (2026). Opened 2026-11-03.
+- Triathlon Ireland (coaching team, with development coach Jo Sweetman), *10 things to know before your first triathlon* (2026). Opened 2026-11-03.
+- USA Triathlon (John Hansen), *How to use brick workouts in triathlon training* (2021). Opened 2026-11-03.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -55,13 +61,13 @@
 
 | Status | Weight | Topic | Statement | Sources |
 |---|---|---|---|---|
-| core | 21 | body maintenance | Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. | cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older, nhs-bones-65 (against: higdon-novice1) |
-| core | 19 | body maintenance | Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. | cmo-2019, lauersen-2014, who-2011-older, nhs-bones-65 |
+| core | 26 | body maintenance | Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. | cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older, nhs-bones-65, cdc-older-adults (against: higdon-novice1) |
+| core | 24 | body maintenance | Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. | cmo-2019, lauersen-2014, who-2011-older, nhs-bones-65, cdc-older-adults |
 | core | 15 | before you start | Start from your current level and build up gradually; repeating a week is fine and is part of the plan, not a failure. | cmo-2019, nhs-c25k, who-2011-older |
+| core | 14 | taper | In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. | bosquet-2007, ea-pavey-marathon, higdon-novice1, greatrun-half-plan, emf-half-beginner |
 | core | 13 | altitude | Above 3,000 metres, sleep no more than 500 metres higher than the night before and take a rest day at the same height every three or four days. Avoid going from below 1,200 metres to above 3,500 metres in a day. | nhs-altitude, nathnac-altitude, tanapa-kili |
 | core | 12 | intensity | Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. | ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km |
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
-| core | 11 | taper | In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. | bosquet-2007, ea-pavey-marathon, higdon-novice1, greatrun-half-plan |
 | core | 11 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. | lauersen-2014, cmo-2019, bmc-hill-fit |
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
 | core | 10 | altitude | Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. | nhs-altitude, nathnac-altitude |
@@ -74,6 +80,7 @@
 | core | 8 | altitude | Being fit does not protect you from altitude sickness. Choose an itinerary with acclimatisation days and climb slowly however strong you feel. | nathnac-altitude, tanapa-kili |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
+| core | 7 | key session | Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. | higdon-novice1, bmc-hill-fit, emf-half-beginner |
 | core | 7 | body maintenance | Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground. | bmc-hill-fit, nhs-strength-exercises |
 | core | 7 | recovery | If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. | ea-pavey-marathon, nhs-c25k |
 | core | 7 | feet | Deal with a hot spot as soon as you feel it. Cover a blister with a soft or padded plaster and do not burst it; get advice if it shows signs of infection. | nhs-blisters, bmc-long-distance |
@@ -94,6 +101,9 @@
 | core | 6 | intensity | Judge effort by talking. On easy rides you can hold a conversation, on steady efforts you can manage short sentences, and only the short hard efforts should leave you out of breath. | cyclinguk-100km, bc-sofa-50km |
 | core | 6 | kit | Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. | cyclinguk-100km, bc-sofa-50km |
 | core | 6 | fuel and drink | On long rides eat something every 20 to 30 minutes, and carry enough food and drink for the whole ride rather than relying on finding a shop. | bc-sofa-50km, cyclinguk-100km |
+| core | 6 | before you start | For a first triathlon, start with a super sprint or a sprint rather than a longer race. A sprint is a 400 metre pool swim or 750 metre open water swim, a 20 km (12.4 mile) ride and a 5 km (3.1 mile) run, and usually takes 75 to 90 minutes. | britri-distances, tri-ireland-first |
+| core | 6 | key session | Practise running straight after riding (a brick session), starting with about 10 minutes of easy running after a ride. Running off the bike feels heavy and uncoordinated at first, and practising it helps your pacing, your transitions and your confidence. | tri-ireland-first, usat-brick |
+| core | 6 | before you start | Build water confidence in the pool first, working on calm breathing, with lessons if you need them; move to open water later with a wetsuit, a tow float and someone watching. | tri-ireland-first, usms-open-water |
 | core | 5 | body maintenance | Weight-bearing activity such as walking and running helps keep bones strong. | cmo-2019 |
 | core | 5 | body maintenance | If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. | nhs-bones-65 |
 | core | 5 | warning signs | Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. | nhs-heart-attack |
@@ -106,7 +116,6 @@
 | supported | 5 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker |
 | supported | 5 | why | Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 4 | progression | Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. | higdon-novice1, rc-down-weeks |
-| supported | 4 | key session | Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. | higdon-novice1, bmc-hill-fit |
 | supported | 4 | recovery | Keep a regular sleep routine through training; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. | ea-pavey-marathon, bmc-long-distance |
 | supported | 4 | why | An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. | rc-down-weeks, higdon-novice1 |
 | supported | 3 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace |
@@ -120,6 +129,9 @@
 | supported | 3 | key session | Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest. | usms-open-water |
 | supported | 3 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water |
 | supported | 3 | on the day | Start every ride at an easy pace for about five minutes to warm up, and finish with five to ten minutes of slower riding. | cyclinguk-100km |
+| supported | 3 | key session | With three days a week, swim once or twice working on technique, ride once at a steady pace and run twice, one easy and one a little faster. Regular sessions of 30 to 45 minutes are enough to start, rather than long, hard ones. | tri-ireland-first |
+| supported | 3 | on the day | Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast. | usat-brick |
+| supported | 3 | on the day | In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. | britri-beginners-wales |
 
 ## Coverage by kind of challenge
 
@@ -129,7 +141,7 @@
 - hill: 6 usable statements of its own
 - multiday: 7 usable statements of its own
 - running: 8 usable statements of its own
-- swimming: 9 usable statements of its own
+- swimming: 15 usable statements of its own
 - walking: 7 usable statements of its own
 
 ## Disagreements and how they were resolved

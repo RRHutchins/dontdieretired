@@ -576,6 +576,14 @@
     checked: '2026-10-06'
   safety: The Lake District stages cross high fells, so carry a map and compass and check the forecast each morning.
   guide: walking-holidays-for-beginners-after-50
+  inspire:
+  - kind: read
+    person: Dominic Close, a helpline adviser with Royal Mail's HR Services
+    line: Walked the Coast to Coast alone from St Bees to Robin Hood's Bay in 13 days, camping every night with all his kit on his back, for the Children's Heart Surgery Fund.
+    title: Dominic said his 201-mile Wainwright Challenge was a 'truly amazing experience'
+    outlet: myroyalmail
+    url: https://www.myroyalmail.com/news/2019/05/coast-coast
+    checked: '2026-11-03'
 - id: walk-west-highland-way
   title: Walk the West Highland Way
   category: move
@@ -700,6 +708,14 @@
     outlet: NPR
     url: https://www.npr.org/2021/11/07/1053389943/nimblewill-nomad-oldest-hiker-appalachian-trail
     checked: '2026-10-27'
+  inspire:
+  - kind: read
+    person: Emma Gatewood
+    line: Became the first woman to hike the whole Appalachian Trail alone in 1955, carrying a hand-sewn bag with a shower curtain and no tent or sleeping bag, and went on to hike it twice more.
+    title: Do You Know the Story of The First Woman to Hike the Appalachian Trail?
+    outlet: Sierra (Sierra Club)
+    url: https://sierraclub.org/sierra/2016-2-march-april/green-life/do-you-know-story-first-woman-hike-appalachian-trail
+    checked: '2026-11-03'
 - id: parkrun
   title: Do a parkrun
   category: move
@@ -914,6 +930,70 @@
     region: us
     checked: '2026-10-06'
   story: natalie-grabow-oldest-woman-ironman-80
+  seo_title: "How to do your first triathlon: distances and training"
+  description: Super sprint or sprint? Triathlon distances explained, the kit you really need, how to train three days a week, and how transitions work on the day.
+  detail:
+  - h: What it's like
+    p:
+    - A triathlon is a swim, then a bike ride, then a run, with the clock running through the two changeovers, called transitions. The swim can be in a pool, a lake or the sea. Short beginner events are designed as a way in; as Triathlon Ireland's development coach puts it, beginners are genuinely welcome.
+    - The part that surprises people is the run. Running straight off the bike feels heavy and uncoordinated at first; USA Triathlon describes the feeling of running on numb feet and legs. Practising it in training takes most of the shock away.
+  - h: Choosing a distance
+    table:
+      head: [Format, Swim, Bike, Run, Typical finish]
+      rows:
+      - [Super sprint, "400 m (16 lengths of a 25 m pool)", 10 km (6.2 miles), 2.5 km (1.5 miles), 45 to 60 minutes]
+      - [Sprint, "400 m in a pool or 750 m in open water", 20 km (12.4 miles), 5 km (3.1 miles), 75 to 90 minutes]
+      - [Standard (Olympic), 1.5 km (just under 1 mile), 40 km (25 miles), 10 km (6.2 miles), 2½ to 3 hours]
+    after: British Triathlon suggests starting with the shorter distances and building up. A super sprint is aimed at beginners, and a sprint is a good first event and a chance to practise transitions. In the UK, GO TRI events are relaxed, short and open to all abilities, and include duathlons (run and bike) and aquathlons (swim and run). Races beyond these introductory events need a race licence, bought for the day or through membership.
+  - h: What you need
+    list:
+    - One bike in good working order. Triathlon Ireland says a road, hybrid or mountain bike is fine.
+    - A properly fitted helmet, fastened before you even touch your bike in transition.
+    - A swimsuit or tri suit, goggles and a swim cap, and a wetsuit if the swim is in open water.
+    - Running shoes, and padded cycling shorts for comfort on the bike.
+    - Nice to have but not needed, a race belt for your number, elastic laces, a bottle cage, a puncture repair kit and sunglasses.
+  - h: How to train
+    p:
+    - Triathlon Ireland's coaches suggest regular sessions rather than long, hard ones. With three days a week, that means one or two swims working on technique, one steady ride (a gym bike will do in bad weather) and two runs, one easy and one a little faster. Sessions of 30 to 45 minutes are enough to start.
+    - They put eight weeks as ideal for a sprint, though six-week programmes also work. The first four weeks build general fitness, weeks five and six make the sessions longer, and the last two practise the race itself, including transitions.
+    - Practise a "brick", a ride followed straight away by a short run of about 10 minutes. USA Triathlon's beginner brick is a 30-minute ride, a quick change and a 10-minute easy run. Ride the last part of the bike in an easier gear, then shorten your stride and keep the first half mile to a mile controlled.
+    - Build water confidence in the pool first, working on breathing and staying calm, with lessons if you need them. Move to open water later, with a wetsuit, a tow float and someone watching from the bank.
+  - h: How transitions work
+    list:
+    - "Swim to bike (T1): take off your wetsuit, goggles and cap and leave them neatly in your space, then put on your helmet and fasten it before you touch the bike. Push the bike to the mount line and get on only once you are past it."
+    - "Bike to run (T2): get off before the dismount line, rack your bike, and only then take off your helmet. Change shoes if you rode in cycling shoes, and go."
+  faq:
+  - q: What is a sprint triathlon?
+    a: A 400 m pool swim or 750 m open water swim, a 20 km (12.4 mile) ride and a 5 km (3.1 mile) run. British Triathlon puts the typical finish at 75 to 90 minutes.
+  - q: How long does it take to train for a first triathlon?
+    a: Triathlon Ireland's coaches say eight weeks is ideal for a sprint, though six-week programmes also work. A super sprint is shorter still.
+  - q: Do I need a special bike for a triathlon?
+    a: No. A road, hybrid or mountain bike is fine as long as it is in good working order, with a properly fitted helmet.
+  - q: Do I need a wetsuit for a triathlon?
+    a: For an open water swim, Triathlon Ireland lists one as essential. For a pool swim, a swimsuit or tri suit, goggles and a cap are enough.
+  - q: What is a brick session in triathlon?
+    a: A bike ride followed straight away by a run, so your legs get used to the change. A short run of about 10 minutes after a ride is enough to start.
+  sources:
+  - label: British Triathlon, Triathlon distances explained
+    url: https://www.britishtriathlon.org/tips-and-advice/beginner-tips-and-advice/triathlon-distances-explained
+    checked: '2026-11-03'
+  - label: British Triathlon (Wales), Beginners guide to triathlon
+    url: https://www.britishtriathlon.org/wales/news/beginners-guide-to-triathlon---how_12969
+    checked: '2026-11-03'
+  - label: Triathlon Ireland, 10 things to know before your first triathlon (8 April 2026)
+    url: https://www.triathlonireland.com/news/first-triathlon/
+    checked: '2026-11-03'
+  - label: USA Triathlon, How to use brick workouts in triathlon training (John Hansen, 2021)
+    url: https://www.usatriathlon.org/articles/training-tips/how-to-use-brick-workouts-in-triathlon-training
+    checked: '2026-11-03'
+  inspire:
+  - kind: read
+    person: Shaun West
+    line: Came to triathlon through a GO TRI beginner event, moved on to longer distances and set his sights on qualifying for the Great Britain age-group team.
+    title: "Shaun West: It all started with a GO TRI"
+    outlet: British Triathlon
+    url: https://www.britishtriathlon.org/news/shaun-west%3A-it-all-started-with-a-go-tri_12086
+    checked: '2026-11-03'
 - id: learn-to-row
   title: Take a Learn to Row course
   category: move
@@ -2977,6 +3057,60 @@
     outlet: Triathlon Trust
     url: https://triathlontrust.org/uncategorized/judith-from-couch-to-5k-to-half-marathons/
     checked: '2026-11-01'
+  seo_title: "Couch to 5K: the NHS nine-week plan explained"
+  description: How the free NHS Couch to 5K plan builds week by week, what to wear and eat, what to do if a week feels too hard, and where to run next.
+  detail:
+  - h: What it's like
+    p:
+    - Couch to 5K is a free nine-week plan from the NHS (the UK health service). You run three times a week with a rest day between each run, and by the last week you are running for 30 minutes without stopping. The NHS says it is for everyone, whatever your fitness, and is aimed at complete beginners.
+    - Every session starts with a five-minute brisk walk to warm up and ends with a five-minute walk to cool down. In between, the early weeks mix short runs with walking, and the walks shrink as the runs grow.
+  - h: How the nine weeks build
+    table:
+      head: [Week, Each run, Time with warm-up and cool-down]
+      rows:
+      - ['1', Eight 1-minute runs with 1½-minute walks between, 28½ minutes]
+      - ['2', Six 1½-minute runs with 2-minute walks between, 29 minutes]
+      - ['3', "Runs of 1½ and 3 minutes, twice through, with walks between", 25 minutes]
+      - ['4', "Runs of 3 and 5 minutes, twice through, with walks between", 31½ minutes]
+      - ['5', "Run 1: three 5-minute runs. Run 2: two 8-minute runs. Run 3: 20 minutes without stopping", 30 to 31 minutes]
+      - ['6', "Run 1: 5, 8 and 5 minutes. Run 2: two 10-minute runs. Run 3: 25 minutes without stopping", 33 to 35 minutes]
+      - ['7', 25 minutes without stopping, 35 minutes]
+      - ['8', 28 minutes without stopping, 38 minutes]
+      - ['9', 30 minutes without stopping, 40 minutes]
+    after: The third run of week 5 is the big step, your first 20 minutes with no walking. The NHS says it is fine to repeat a week, or a single run, if you are not ready to move on, and you can come back to the plan at any time.
+  - h: The honest hard parts
+    p:
+    - The plan is gentle, but some runs will feel hard, and week 5 is where many people slow down. That is what repeating a week is for. Rest days matter too; the NHS calls them just as important as the runs, because they let your body recover and help prevent injury.
+    - On the longer runs the NHS suggests breathing in for three steps and out for two, keeping your head up, back straight and shoulders relaxed. In hot weather, run in the morning while it is cooler.
+  - h: What you need
+    list:
+    - Running shoes that support your feet, comfortable clothes you can move in, and a supportive sports bra if you need one.
+    - Reflective clothing and well-lit routes if you run when it is getting dark.
+    - Something to time the runs. The free NHS app (App Store and Google Play) times every run for you, with a trainer's voice in your ear, and works with your music. The NHS also has a printable plan.
+    - A light snack with some carbohydrate one to two hours before, such as a banana or a slice of toast, and water for sips on warm days.
+  - h: After week 9
+    p:
+    - The NHS points finishers towards parkrun, a free weekly 5 km event that you can walk, jog or run, with no time limit. It is a good way to keep three runs a week going with other people around you.
+  faq:
+  - q: How long does Couch to 5K take?
+    a: Nine weeks, with three runs a week. The last week is three runs of 30 minutes without stopping, about 40 minutes with the warm-up and cool-down walks.
+  - q: Can I repeat a week of Couch to 5K?
+    a: Yes. The NHS says it is fine to repeat a week, or a single run, if you are not ready to move on, and you can pick the plan up again at any time.
+  - q: Do I need the Couch to 5K app?
+    a: No, but it helps. The free NHS app times each run and talks you through it; you can also use the printable plan and a watch or phone timer.
+  - q: Should I see a doctor before starting Couch to 5K?
+    a: The NHS says to speak to a GP (family doctor) first if you are worried about your health.
+  - q: What should I eat before a run?
+    a: The NHS suggests a light snack with some carbohydrate one to two hours before, such as a banana or a slice of toast.
+  - q: What should I do after Couch to 5K?
+    a: The NHS suggests parkrun, a free weekly 5 km event you can walk, jog or run with no time limit.
+  sources:
+  - label: NHS Better Health, Couch to 5K running plan
+    url: https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/
+    checked: '2026-11-03'
+  - label: NHS, Get running with Couch to 5K
+    url: https://www.nhs.uk/live-well/exercise/get-running-with-couch-to-5k/
+    checked: '2026-11-03'
 - id: nordic-walking-lesson
   title: Take a Nordic walking lesson
   category: move
@@ -3627,6 +3761,54 @@
   photo_caption: "Roughly the first two miles of the Bright Angel Trail, seen from First Trailview Overlook, 2009."
   photo_alt: "A trail zigzags down the layered red and cream walls of the Grand Canyon."
   photo_checked: '2026-11-01'
+  seo_title: "Grand Canyon day hikes: Bright Angel and South Kaibab"
+  description: Where to turn round on the Bright Angel and South Kaibab trails, how long the climb out takes, and what to know about heat, water and mules.
+  detail:
+  - h: What it's like
+    p:
+    - '"There are no easy trails into or out of the Grand Canyon," the National Park Service says. A day hike from the South Rim starts downhill, which feels easy, and ends with a long climb in the heat of the day. The Park Service tells hikers to plan for at least twice as long coming back up as going down.'
+    - The two main trails from the South Rim are the Bright Angel Trail, which starts just west of Bright Angel Lodge at 6,860 feet (2,093 metres), and the South Kaibab Trail, which starts south of Yaki Point at 7,260 feet (2,213 metres) and is reached by the park shuttle bus. More than 300 people are rescued from the canyon every year, so the most important choice is where you will turn round.
+  - h: Where to turn round
+    table:
+      head: [Turnaround, Trail, Round trip, Height below the rim]
+      rows:
+      - [Mile-and-a-Half Resthouse, Bright Angel, About 3 miles (5 km), "1,131 feet (345 m)"]
+      - [Three-Mile Resthouse, Bright Angel, About 6 miles (10 km), "2,112 feet (644 m)"]
+      - [Havasupai Gardens, Bright Angel, "9 miles (14.5 km), 6 to 9 hours", "About 3,000 feet (930 m)"]
+      - [Cedar Ridge, South Kaibab, 3 miles (4.8 km), "1,140 feet (348 m)"]
+      - [Skeleton Point, South Kaibab, 6 miles (9.7 km), "2,040 feet (622 m)"]
+    after: The Park Service calls the South Kaibab the best views for a relatively short hike, but it is steep, with no water and little shade. It asks you to check with a ranger before trying Havasupai Gardens as a day hike, and says places below it are not recommended day hikes. Do not try to hike from the rim to the river and back in one day. On the North Rim, the North Kaibab Trail to Roaring Springs is 9.4 miles (15 km) there and back, 3,050 feet (930 metres) down, and takes seven to eight hours; start before 7 a.m.
+  - h: Heat, water and food
+    p:
+    - In summer the temperature in the shade below the rim often passes 100°F (38°C), and the Park Service advises against hiking between 10 a.m. and 4 p.m. Spring and autumn are kinder; the upper parts of both trails can be icy from late autumn to early spring, when over-the-shoe traction devices are strongly recommended.
+    - Water on the Bright Angel Trail is seasonal at the two resthouses and year-round at Havasupai Gardens, but pipeline breaks turn it off; in September 2026 all three were off. Carry all the water you need and check at the Visitor Center or Backcountry Information Center before you go. Too little water can lead to heat stroke, and drinking a lot of water without enough salt can cause hyponatremia, a dangerous drop in the body's salt, so eat salty snacks as you go. The Park Service says hikers can burn about twice their usual exercise calories on a summer canyon hike.
+  - h: On the trail
+    list:
+    - Mules use the trails. Step off on the uphill side, away from the edge, stay quiet and still, follow the wranglers' instructions, and wait until the last mule is 50 feet (15 metres) past.
+    - From July to September, monsoon lightning storms build quickly; take shelter at once.
+    - Tell someone your plan and when you expect to be back, and ask them to call 911 if you are overdue.
+    - The Park Service's list of what to carry includes a sun hat, sunscreen, water and a way to treat it, salty snacks, a trail map, a torch, a whistle, a first aid kit, an emergency blanket, a jacket and a phone.
+  faq:
+  - q: Do I need a permit to hike into the Grand Canyon?
+    a: Not for a day hike that is not run commercially. Camping anywhere below the rim needs a backcountry permit.
+  - q: Can you hike to the Colorado River and back in a day?
+    a: The National Park Service says not to try it, especially between May and September, when the heat can quickly become life-threatening.
+  - q: How long does it take to hike back up the Grand Canyon?
+    a: Plan for at least twice as long as it took you to go down, the Park Service says.
+  - q: Which Grand Canyon trail is best for a first day hike?
+    a: The South Kaibab to Cedar Ridge is 3 miles (4.8 km) there and back with big views, but no water and little shade. The Bright Angel to Mile-and-a-Half Resthouse is a similar length with some shade and seasonal water.
+  - q: Is there water on the Bright Angel Trail?
+    a: Sometimes. It is seasonal at the resthouses and year-round at Havasupai Gardens, but pipeline breaks turn it off, so carry all you need and check before you go.
+  sources:
+  - label: National Park Service, Day Hiking, Grand Canyon National Park
+    url: https://www.nps.gov/grca/planyourvisit/day-hiking.htm
+    checked: '2026-11-03'
+  - label: National Park Service, Bright Angel Trail
+    url: https://www.nps.gov/places/000/bright-angel-trail.htm
+    checked: '2026-11-03'
+  - label: National Park Service, Backcountry Trail Distances
+    url: https://www.nps.gov/grca/planyourvisit/trail-distances.htm
+    checked: '2026-11-03'
 - id: play-tennis
   title: Get back on a tennis court
   category: move
@@ -8690,3 +8872,114 @@
     url: https://galapagos.gob.ec/campana-yo-si-cumplo-promueve-el-respeto-de-las-reglas-de-visita-en-galapagos/
     region: world
     checked: '2026-11-02'
+- id: walk-the-lakes-of-plitvice
+  title: Walk among the lakes and waterfalls of Plitvice
+  category: explore
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  season: Spring to autumn
+  regions:
+  - world
+  places: [HRV]
+  why: In Croatia's first national park, 16 named lakes cascade one into the next over natural tufa barriers, from the twelve Upper Lakes down to four Lower Lakes in a deep limestone canyon, on the UNESCO World Heritage List since 1979. You explore on marked walking routes, with an electric boat across Lake Kozjak and a panoramic train included in the ticket.
+  start:
+  - Read the park's own visitor tips and choose one of its eight tour programmes, from a few hours to a full day; A, B and F are easier walks around the Lower Lakes, while C and H take in the Upper and Lower Lakes and need more fitness.
+  - Buy your ticket online in advance for a set entrance and time, which the park highly recommends, especially in summer.
+  - Plan around the season; in winter the Upper Lakes usually close, reopening in early April depending on the weather.
+  links:
+  - label: 'Plitvice Lakes National Park: tips for your visit'
+    url: https://np-plitvicka-jezera.hr/en/discover-the-magic-tips-and-tricks-for-your-visit-to-the-plitvice-lakes-national-park/
+    region: world
+    checked: '2026-11-03'
+  - label: 'Plitvice Lakes National Park: frequently asked questions'
+    url: https://np-plitvicka-jezera.hr/en/faq/
+    region: world
+    checked: '2026-11-03'
+  - label: 'Plitvice Lakes National Park: general information'
+    url: https://np-plitvicka-jezera.hr/en/about-the-park/general-information/
+    region: world
+    checked: '2026-11-03'
+- id: see-the-taj-mahal-at-sunrise
+  title: See the Taj Mahal at sunrise
+  category: travel
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - world
+  places: [IND]
+  why: The white marble tomb that the Mughal emperor Shah Jahan began in 1631 for Mumtaz Mahal took about 17 years and some 22,000 artisans to complete, and stands beside the Yamuna River in Agra behind formal gardens and reflecting pools. The gates open half an hour before sunrise, so you can be inside as the day begins.
+  start:
+  - Read the official visiting hours; the Taj Mahal opens 30 minutes before sunrise and closes 30 minutes before sunset, and is closed to visitors on Fridays.
+  - Buy your ticket online from the Archaeological Survey of India's ticketing site to avoid queuing at the counter.
+  - If you would like to see it by moonlight, check the night viewing dates, held around the full moon with a separate ticket, never on Fridays or during Ramzan.
+  links:
+  - label: 'Taj Mahal official website (Uttar Pradesh Tourism): visiting hours'
+    url: https://tajmahal.gov.in/visiting-hours.aspx
+    region: world
+    checked: '2026-11-03'
+  - label: 'District Agra: Taj Mahal'
+    url: https://agra.nic.in/tourist-place/tajmahal/
+    region: world
+    checked: '2026-11-03'
+- id: drive-going-to-the-sun-road
+  title: Drive the Going-to-the-Sun Road in Glacier National Park
+  category: travel
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  season: Early July to mid-October
+  regions:
+  - us
+  places: [MT]
+  why: Built in the late 1920s and early 1930s, this road crosses Glacier National Park for about 50 miles, climbing past glacier-carved peaks and alpine lakes to Logan Pass at 6,646 feet (2,026 metres). Stops along the way include the Trail of the Cedars, St. Mary Falls and the short hike to Hidden Lake Overlook from the pass.
+  start:
+  - Check the Park Service's road status page and whether you need a vehicle reservation for the dates you have in mind; the full road is usually open from early July to the third Monday of October.
+  - Allow a whole day; the drive alone takes about two hours, and the Park Service suggests three to eight with stops.
+  - Leave a large vehicle behind or take the free park shuttle between Apgar and St. Mary, as vehicles over 21 feet long or 8 feet wide are not allowed between Avalanche Creek and Rising Sun.
+  links:
+  - label: 'National Park Service: Going-to-the-Sun Road general information'
+    url: https://www.nps.gov/glac/planyourvisit/gtsrinfo.htm
+    region: us
+    checked: '2026-11-03'
+  - label: 'National Park Service: Drive the Going-to-the-Sun Road'
+    url: https://www.nps.gov/thingstodo/drive-gtsr.htm
+    region: us
+    checked: '2026-11-03'
+- id: track-mountain-gorillas-in-bwindi
+  title: Track mountain gorillas in Uganda
+  category: explore
+  kind: experience
+  effort: moderate
+  cost: high
+  time: weeks
+  setting: outdoors
+  company: others
+  regions:
+  - world
+  places: [UGA]
+  why: Bwindi Impenetrable National Park, a UNESCO World Heritage site in south-west Uganda, is home to roughly half the world's mountain gorillas. After a forest trek of two to seven hours, you spend one hour with a habituated gorilla family.
+  start:
+  - Read the Uganda Wildlife Authority's gorilla tracking page and choose between Bwindi's four sectors, Buhoma, Ruhija, Rushaga and Nkuringo, or Mgahinga Gorilla National Park.
+  - Book your permit well in advance through the Uganda Wildlife Authority or a registered tour operator, and check the minimum age, which the authority's park guide gives as 15.
+  - Build up to long walks on rough ground, as treks take two to seven hours and need moderate fitness, and pack waterproofs and warm layers, as the forest is wet and can be cold in the mornings.
+  links:
+  - label: 'Uganda Wildlife Authority: gorilla tracking'
+    url: https://ugandawildlife.org/activities/gorilla-tracking/
+    region: world
+    checked: '2026-11-03'
+  - label: 'Uganda Wildlife Authority: Bwindi Impenetrable National Park at a glance'
+    url: https://ugandawildlife.org/wp-content/uploads/2024/05/Bwindi-cc-2018-2.pdf
+    region: world
+    checked: '2026-11-03'
+  safety: Read the UK Foreign Office's advice for Uganda before booking, use a registered operator, and never take a tour that crosses into the Democratic Republic of Congo.

@@ -48,7 +48,7 @@ guidance:
     applies: [endurance]
     use: rule
     text: Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself.
-    for: [higdon-novice1, bmc-hill-fit]
+    for: [higdon-novice1, bmc-hill-fit, emf-half-beginner]
   - id: specific-training
     topic: key session
     applies: [hill, walking]
@@ -80,7 +80,7 @@ guidance:
     applies: [all]
     use: rule
     text: Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third.
-    for: [cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older, nhs-bones-65]
+    for: [cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older, nhs-bones-65, cdc-older-adults]
     against: [higdon-novice1]
     note: Higdon's beginner marathon plan suggests people new to weights wait. The official guidance and the injury evidence carry more weight, so plans include strength work, starting light with body weight.
   - id: balance-work
@@ -88,7 +88,7 @@ guidance:
     applies: [all]
     use: advice
     text: Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials.
-    for: [cmo-2019, lauersen-2014, who-2011-older, nhs-bones-65]
+    for: [cmo-2019, lauersen-2014, who-2011-older, nhs-bones-65, cdc-older-adults]
   - id: legs-and-core
     topic: body maintenance
     applies: [hill, walking, running]
@@ -178,7 +178,7 @@ guidance:
     applies: [endurance]
     use: rule
     text: In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh.
-    for: [bosquet-2007, ea-pavey-marathon, higdon-novice1, greatrun-half-plan]
+    for: [bosquet-2007, ea-pavey-marathon, higdon-novice1, greatrun-half-plan, emf-half-beginner]
     note: The meta-analysis studied competitive athletes and found two weeks best; Higdon's beginner plan uses three. Plans use two to three weeks depending on length.
   - id: pace-the-start
     topic: on the day
@@ -327,6 +327,7 @@ guidance:
     text: Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week.
     for: [nhs-c25k, greatrun-how-to-half, greatrun-half-plan]
   - id: long-run-by-time
+    events: [half-marathon]
     topic: key session
     applies: [running]
     use: advice
@@ -444,3 +445,47 @@ guidance:
     use: advice
     text: Start every ride at an easy pace for about five minutes to warm up, and finish with five to ten minutes of slower riding.
     for: [cyclinguk-100km]
+
+  # ---------- triathlon (added 3 Nov 2026) ----------
+  - id: tri-start-short
+    events: [sprint-triathlon]
+    topic: before you start
+    applies: [swimming]
+    use: advice
+    text: For a first triathlon, start with a super sprint or a sprint rather than a longer race. A sprint is a 400 metre pool swim or 750 metre open water swim, a 20 km (12.4 mile) ride and a 5 km (3.1 mile) run, and usually takes 75 to 90 minutes.
+    for: [britri-distances, tri-ireland-first]
+  - id: tri-week-mix
+    events: [sprint-triathlon]
+    topic: key session
+    applies: [swimming]
+    use: rule
+    text: With three days a week, swim once or twice working on technique, ride once at a steady pace and run twice, one easy and one a little faster. Regular sessions of 30 to 45 minutes are enough to start, rather than long, hard ones.
+    for: [tri-ireland-first]
+  - id: tri-brick
+    events: [sprint-triathlon]
+    topic: key session
+    applies: [swimming]
+    use: rule
+    text: Practise running straight after riding (a brick session), starting with about 10 minutes of easy running after a ride. Running off the bike feels heavy and uncoordinated at first, and practising it helps your pacing, your transitions and your confidence.
+    for: [tri-ireland-first, usat-brick]
+  - id: tri-run-off-bike
+    events: [sprint-triathlon]
+    topic: on the day
+    applies: [swimming]
+    use: advice
+    text: Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast.
+    for: [usat-brick]
+  - id: tri-helmet
+    events: [sprint-triathlon]
+    topic: on the day
+    applies: [swimming]
+    use: safety
+    text: In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack.
+    for: [britri-beginners-wales]
+  - id: tri-water-confidence
+    events: [sprint-triathlon]
+    topic: before you start
+    applies: [swimming]
+    use: advice
+    text: Build water confidence in the pool first, working on calm breathing, with lessons if you need them; move to open water later with a wetsuit, a tow float and someone watching.
+    for: [tri-ireland-first, usms-open-water]
