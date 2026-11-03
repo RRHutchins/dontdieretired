@@ -7,6 +7,9 @@ tags: [discoveries, history, archaeology, machu-picchu, inca, peru, south-americ
 segments: [learner, changer]
 level: any
 art: mountains
+photo_file: "File:The three-windowed temple facing the plaza in Machu Picchu 1911.jpg"
+photo_caption: "The Temple of the Three Windows at Machu Picchu, in Hiram Bingham's first photograph of the site, July 1911."
+photo_alt: "An old sepia photograph of a long wall of fitted stone blocks with window openings, half hidden by tall plants and shrubs in the foreground. No people are visible."
 hook: "Bingham reached Machu Picchu in 1911. Farmers were already working its terraces, and a local man had signed a wall nine years before."
 lesson: "A 'discovery' is often the moment the outside world hears about something local people already knew, and the details of who got there first are worth checking."
 standfirst: "On 24 July 1911 a Yale lecturer, Hiram Bingham, climbed to the ruins of Machu Picchu above Peru's Urubamba valley. The world remembers it as a discovery. Peru's own archaeologists tell a fuller story: a local guide, families farming the terraces, a name in charcoal from 1902, and a site that may not even have been called Machu Picchu."
