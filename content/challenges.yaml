@@ -57,6 +57,13 @@
     region: any
     checked: '2026-10-06'
   safety: Learn with a recognised school rather than teaching yourself, as kites generate serious power in strong wind.
+  kit:
+  - name: Rash vest
+    why: sun and chafe protection on the water
+    url: https://www.amazon.co.uk/s?k=rash+vest+adult+long+sleeve
+  - name: Surf booties
+    why: for stony beaches and colder water
+    url: https://www.amazon.co.uk/s?k=surf+booties
 - id: indoor-climbing
   title: Try indoor rock climbing
   category: move
@@ -87,6 +94,13 @@
     url: https://usaclimbing.org/visit-your-local-climbing-gym/
     region: us
     checked: '2026-10-06'
+  kit:
+  - name: Climbing shoes
+    why: you can usually hire them at the wall; buy your own if you keep going, fitted snug but not painful
+    url: https://www.amazon.co.uk/s?k=climbing+shoes+beginner
+  - name: Chalk bag
+    why: keeps your hands dry for grip
+    url: https://www.amazon.co.uk/s?k=climbing+chalk+bag
 - id: climb-ben-nevis
   title: Climb Ben Nevis
   category: move
@@ -380,6 +394,19 @@
   photo_caption: "Scafell Pike, 2012."
   photo_alt: "A broad rocky mountain top under a clear sky, with boulders in the foreground."
   photo_checked: '2026-11-01'
+  kit:
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: Waterproof map case
+    why: keeps a paper map readable in rain and wind
+    url: https://www.amazon.co.uk/s?k=waterproof+map+case
 - id: hike-half-dome
   title: Hike to the top of Half Dome
   category: move
@@ -469,6 +496,19 @@
   - label: National Park Service, Half Dome permits for day hikers
     url: https://www.nps.gov/yose/planyourvisit/hdpermits.htm
     checked: '2026-11-02'
+  kit:
+  - name: Work gloves with grip
+    why: for grip on the cables on the final climb; take them home afterwards, as the park asks
+    url: https://www.amazon.co.uk/s?k=grip+work+gloves
+  - name: Insulated water bottle
+    why: keeps water cool on hot days and stops it freezing on cold ones
+    url: https://www.amazon.co.uk/s?k=insulated+water+bottle
+  - name: Head torch
+    why: for early starts and anything that runs into dusk
+    url: https://www.amazon.co.uk/s?k=head+torch+rechargeable
+  - name: Sun hat with a brim
+    why: shade for the face and neck on open ground
+    url: https://www.amazon.co.uk/s?k=sun+hat+wide+brim+hiking
 - id: hike-mount-whitney
   title: Hike to the summit of Mount Whitney
   category: move
@@ -497,6 +537,19 @@
   photo_caption: "The foot of the switchbacks on the Mount Whitney Trail, beside High Camp, 2007."
   photo_alt: "A rocky basin with patches of snow below jagged granite peaks, with three small figures of hikers among the boulders."
   photo_checked: '2026-11-01'
+  kit:
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: Head torch
+    why: for early starts and anything that runs into dusk
+    url: https://www.amazon.co.uk/s?k=head+torch+rechargeable
+  - name: Water filter bottle
+    why: for refilling from streams on long routes; check what it filters before you trust it
+    url: https://www.amazon.co.uk/s?k=water+filter+bottle+hiking
+  - name: High-factor sun cream
+    why: sun and wind on high or open ground burn faster than you expect
+    url: https://www.amazon.co.uk/s?k=sun+cream+spf+50
 - id: hike-mount-washington
   title: Hike up Mount Washington, New Hampshire
   category: move
@@ -527,6 +580,19 @@
   photo_caption: "The view north from the summit of Mount Washington, New Hampshire, 2016."
   photo_alt: "Rocky ground in the foreground and rolling mountain ridges stretching to the horizon."
   photo_checked: '2026-11-01'
+  kit:
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Waterproof overtrousers
+    why: for rain and wind on exposed ground; side zips let you pull them on over boots
+    url: https://www.amazon.co.uk/s?k=waterproof+overtrousers
+  - name: Fleece mid layer
+    why: warmth you can add or take off as you climb and stop
+    url: https://www.amazon.co.uk/s?k=fleece+mid+layer
+  - name: Warm hat and gloves
+    why: you stand still a lot, and it gets cold
+    url: https://www.amazon.co.uk/s?k=thermal+hat+gloves+set
 - id: reach-your-state-high-point
   title: Stand on the highest point in your state
   category: explore
@@ -551,6 +617,16 @@
   safety: Some state high points are serious mountains that need experience, equipment and often a guide, so check what yours involves before setting out.
   story: lhakpa-sherpa-eleventh-everest
   story_note: Lhakpa Sherpa told We-Ha.com she wants to take her daughters to the highest point in each state. She has no connection with the Highpointers Club.
+  kit:
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Daypack (20 to 30 litres)
+    why: room for water, waterproofs, food and a warm layer
+    url: https://www.amazon.co.uk/s?k=hiking+daypack+25+litre
+  - name: Small first aid kit
+    why: plasters, a bandage and tape for minor knocks on the trail
+    url: https://www.amazon.co.uk/s?k=hiking+first+aid+kit
 - id: walk-coast-to-coast
   title: Walk the Coast to Coast Path
   category: move
@@ -584,6 +660,19 @@
     outlet: myroyalmail
     url: https://www.myroyalmail.com/news/2019/05/coast-coast
     checked: '2026-11-03'
+  kit:
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Merino walking socks
+    why: fewer blisters on long days; bring a spare pair
+    url: https://www.amazon.co.uk/s?k=merino+walking+socks
+  - name: Blister plasters
+    why: put one on at the first hot spot, before it becomes a blister
+    url: https://www.amazon.co.uk/s?k=blister+plasters
+  - name: Waterproof map case
+    why: keeps a paper map readable in rain and wind
+    url: https://www.amazon.co.uk/s?k=waterproof+map+case
 - id: walk-west-highland-way
   title: Walk the West Highland Way
   category: move
@@ -673,6 +762,19 @@
   photo_caption: "The West Highland Way crossing Rannoch Moor, 2016."
   photo_alt: "A gravel track runs across brown open moorland towards distant hills."
   photo_checked: '2026-11-01'
+  kit:
+  - name: Midge net and repellent
+    why: for midges on still, damp days in the Highlands
+    url: https://www.amazon.co.uk/s?k=midge+head+net+repellent
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Blister plasters
+    why: put one on at the first hot spot, before it becomes a blister
+    url: https://www.amazon.co.uk/s?k=blister+plasters
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
 - id: appalachian-trail-section
   title: Hike a section of the Appalachian Trail
   category: move
@@ -716,6 +818,19 @@
     outlet: Sierra (Sierra Club)
     url: https://sierraclub.org/sierra/2016-2-march-april/green-life/do-you-know-story-first-woman-hike-appalachian-trail
     checked: '2026-11-03'
+  kit:
+  - name: Water filter bottle
+    why: for refilling from streams on long routes; check what it filters before you trust it
+    url: https://www.amazon.co.uk/s?k=water+filter+bottle+hiking
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: Sleeping mat
+    why: insulates you from the cold ground; check its warmth (R-value)
+    url: https://www.amazon.co.uk/s?k=sleeping+mat+camping
+  - name: Small camping stove
+    why: for hot food and drinks; check what fuel it takes and where you may use it
+    url: https://www.amazon.co.uk/s?k=camping+stove+lightweight
 - id: parkrun
   title: Do a parkrun
   category: move
@@ -800,6 +915,16 @@
   - label: parkrun US blog, Welcome to parkrun! (30 March 2022)
     url: https://blog.parkrun.com/us/2022/03/30/welcome-to-parkrun/
     checked: '2026-11-02'
+  kit:
+  - name: Running shoes
+    why: the one thing worth spending on; a running shop can watch you run and suggest a fit
+    url: https://www.amazon.co.uk/s?k=running+shoes
+  - name: Simple running watch
+    why: times your runs and walk breaks; a phone app does the same for free
+    url: https://www.amazon.co.uk/s?k=running+watch+gps
+  - name: Barcode wristband or tag
+    why: you bring your own barcode to get a time; a band or tag survives the rain
+    url: https://www.amazon.co.uk/s?k=parkrun+barcode+wristband
 - id: open-water-swim
   title: Swim in open water
   category: move
@@ -825,6 +950,19 @@
   safety: Cold water affects breathing and strength quickly, so enter gradually and never swim alone.
   story: amy-gubser-golden-gate-farallon-swim-55
   guide: swimming-and-cycling-after-50
+  kit:
+  - name: Bright tow float
+    why: makes you easy to see in open water and gives you something to hold if you need a rest
+    url: https://www.amazon.co.uk/s?k=swim+tow+float
+  - name: Swim cap
+    why: keeps hair out of the way and, in a bright colour, makes you easier to see outdoors
+    url: https://www.amazon.co.uk/s?k=swim+cap+silicone+bright
+  - name: Swimming wetsuit
+    why: a swim-specific wetsuit, not a surf one, fits closer and lets your arms move; many open water venues hire them, so try one first
+    url: https://www.amazon.co.uk/s?k=open+water+swimming+wetsuit
+  - name: Changing robe
+    why: to change and warm up quickly on the bank or beach
+    url: https://www.amazon.co.uk/s?k=changing+robe+waterproof
 - id: ride-a-sportive
   title: Ride a sportive
   category: move
@@ -848,6 +986,19 @@
     region: uk
     checked: '2026-10-06'
   story: craig-johnston-record-ride-across-australia
+  kit:
+  - name: Cycle helmet
+    why: check it fits snugly and sits level, two fingers above your eyebrows
+    url: https://www.amazon.co.uk/s?k=cycle+helmet+adult
+  - name: Mini pump and puncture kit
+    why: so a flat tyre doesn't end the ride
+    url: https://www.amazon.co.uk/s?k=bike+mini+pump+puncture+repair+kit
+  - name: Saddle bag
+    why: carries the pump, a spare tube and a snack
+    url: https://www.amazon.co.uk/s?k=bike+saddle+bag
+  - name: Padded cycling shorts
+    why: more comfortable on rides of an hour or more
+    url: https://www.amazon.co.uk/s?k=padded+cycling+shorts
 - id: masters-swimming
   title: Join a masters swimming session
   category: move
@@ -876,6 +1027,16 @@
     checked: '2026-10-06'
   story: betty-brussel-99-three-world-records
   guide: swimming-and-cycling-after-50
+  kit:
+  - name: Swimming goggles
+    why: try a few; a good seal matters more than the price
+    url: https://www.amazon.co.uk/s?k=swimming+goggles+adult
+  - name: Swim cap
+    why: keeps hair out of the way and, in a bright colour, makes you easier to see outdoors
+    url: https://www.amazon.co.uk/s?k=swim+cap+silicone+bright
+  - name: Pull buoy
+    why: a float between the legs for arm drills
+    url: https://www.amazon.co.uk/s?k=pull+buoy
 - id: walking-football
   title: Play a game of walking football
   category: move
@@ -902,6 +1063,10 @@
     region: uk
     checked: '2026-10-06'
   story: sandra-riley-walking-football-northampton-56
+  kit:
+  - name: Astro turf trainers
+    why: grip on artificial pitches
+    url: https://www.amazon.co.uk/s?k=astro+turf+trainers
 - id: first-triathlon
   title: Complete your first triathlon
   category: move
@@ -994,6 +1159,16 @@
     outlet: British Triathlon
     url: https://www.britishtriathlon.org/news/shaun-west%3A-it-all-started-with-a-go-tri_12086
     checked: '2026-11-03'
+  kit:
+  - name: Cycle helmet
+    why: check it fits snugly and sits level, two fingers above your eyebrows
+    url: https://www.amazon.co.uk/s?k=cycle+helmet+adult
+  - name: Triathlon race belt
+    why: holds your number so you can swing it round from bike to run
+    url: https://www.amazon.co.uk/s?k=triathlon+race+belt
+  - name: Elastic laces
+    why: quicker shoe changes in transition
+    url: https://www.amazon.co.uk/s?k=elastic+laces+triathlon
 - id: learn-to-row
   title: Take a Learn to Row course
   category: move
@@ -1022,6 +1197,10 @@
     checked: '2026-10-06'
   story: dave-bell-peru-to-kenya-row
   story_note: Dave Bell rowed alone from Peru to Kenya; a club beginner course is where most rowers take their first strokes.
+  kit:
+  - name: Close-fitting sportswear
+    why: loose clothes catch in the slide and the oar handles
+    url: https://www.amazon.co.uk/s?k=close+fitting+sports+leggings
 - id: stand-up-paddleboarding
   title: Try stand-up paddleboarding
   category: move
@@ -1050,6 +1229,16 @@
     region: us
     checked: '2026-10-06'
   safety: Wear a buoyancy aid and a leash, and avoid offshore winds, which can carry a board away from land.
+  kit:
+  - name: Buoyancy aid
+    why: hire centres and clubs often lend one; buy your own once you paddle often, sized for your weight
+    url: https://www.amazon.co.uk/s?k=buoyancy+aid+kayak+adult
+  - name: Dry bag
+    why: keeps your phone, keys and a spare layer dry on the water
+    url: https://www.amazon.co.uk/s?k=dry+bag+10+litre
+  - name: Board leash
+    why: keeps the board close if you fall off; the right type depends on where you paddle
+    url: https://www.amazon.co.uk/s?k=paddle+board+leash
 - id: scottish-country-dancing
   title: Go to a Scottish country dance class
   category: move
@@ -1101,6 +1290,13 @@
     url: https://www.yogaalliance.org/
     region: us
     checked: '2026-10-06'
+  kit:
+  - name: Yoga mat
+    why: a non-slip mat for classes and practice at home
+    url: https://www.amazon.co.uk/s?k=yoga+mat+non+slip
+  - name: Yoga blocks
+    why: bring the floor closer while you work on flexibility
+    url: https://www.amazon.co.uk/s?k=yoga+blocks
 - id: learn-tai-chi-form
   title: Learn a tai chi form
   category: move
@@ -1122,6 +1318,10 @@
     url: https://www.taichiunion.com/tai-chi-instructors/
     region: uk
     checked: '2026-10-06'
+  kit:
+  - name: Flat, flexible shoes
+    why: tai chi is easier in light shoes with thin soles
+    url: https://www.amazon.co.uk/s?k=tai+chi+shoes
 - id: learn-to-lift-weights
   title: Learn to lift with a barbell
   category: move
@@ -1145,6 +1345,13 @@
     checked: '2026-10-06'
   story: martine-barons-world-champion-deadlift-65
   guide: strength-training-after-50-why-and-how
+  kit:
+  - name: Gym gloves
+    why: for grip and to save the skin on your palms
+    url: https://www.amazon.co.uk/s?k=gym+gloves
+  - name: Training notebook
+    why: write down what you lift so you can add a little each week
+    url: https://www.amazon.co.uk/s?k=workout+log+book
 - id: lawn-bowls
   title: Play a game of lawn bowls
   category: move
@@ -1198,6 +1405,13 @@
     url: https://orienteeringusa.org/events/clubs/
     region: us
     checked: '2026-10-06'
+  kit:
+  - name: Baseplate compass
+    why: the kind used with a paper map; learn it before you rely on it
+    url: https://www.amazon.co.uk/s?k=baseplate+compass+navigation
+  - name: Trail running shoes
+    why: grip on grass, mud and woodland paths
+    url: https://www.amazon.co.uk/s?k=trail+running+shoes
 - id: play-pickleball
   title: Play a game of pickleball
   category: move
@@ -1224,6 +1438,13 @@
     url: https://usapickleball.org/places-to-play/
     region: us
     checked: '2026-10-06'
+  kit:
+  - name: Pickleball paddle set
+    why: a starter set has paddles and balls to try with a friend
+    url: https://www.amazon.co.uk/s?k=pickleball+paddle+set
+  - name: Court shoes
+    why: grip and side-to-side support; running shoes are not made for it
+    url: https://www.amazon.co.uk/s?k=indoor+court+shoes
 - id: learn-to-sail
   title: Learn to sail a dinghy
   category: move
@@ -1247,6 +1468,16 @@
     region: uk
     checked: '2026-10-06'
   safety: Learn at a recognised training centre, where buoyancy aids and safety boat cover are part of the course.
+  kit:
+  - name: Sailing gloves
+    why: for grip on ropes and to save your hands
+    url: https://www.amazon.co.uk/s?k=sailing+gloves
+  - name: Water shoes
+    why: for slippery launch spots and rocky entries
+    url: https://www.amazon.co.uk/s?k=water+shoes+adult
+  - name: Dry bag
+    why: keeps your phone, keys and a spare layer dry on the water
+    url: https://www.amazon.co.uk/s?k=dry+bag+10+litre
 - id: walk-to-end-alzheimers
   title: Join a Walk to End Alzheimer's
   category: move
@@ -1291,6 +1522,16 @@
     url: https://www.railstotrails.org/trailblog/pennsylvania-and-marylands-great-allegheny-passage/
     region: us
     checked: '2026-10-06'
+  kit:
+  - name: Cycle helmet
+    why: check it fits snugly and sits level, two fingers above your eyebrows
+    url: https://www.amazon.co.uk/s?k=cycle+helmet+adult
+  - name: Mini pump and puncture kit
+    why: so a flat tyre doesn't end the ride
+    url: https://www.amazon.co.uk/s?k=bike+mini+pump+puncture+repair+kit
+  - name: Bike panniers
+    why: carry your things on the bike, not your back
+    url: https://www.amazon.co.uk/s?k=bike+panniers
 - id: guided-mushroom-foray
   title: Go on a guided mushroom foray
   category: explore
@@ -1319,6 +1560,13 @@
     region: us
     checked: '2026-10-06'
   safety: Never eat a wild mushroom unless an expert has identified it; go on a guided foray first.
+  kit:
+  - name: Mushroom field guide
+    why: for learning names; never eat a wild mushroom on the strength of a book
+    url: https://www.amazon.co.uk/s?k=mushroom+field+guide
+  - name: Flat basket
+    why: carry finds without crushing them
+    url: https://www.amazon.co.uk/s?k=foraging+basket
 - id: take-up-beekeeping
   title: Take up beekeeping
   category: explore
@@ -1347,6 +1595,10 @@
     region: us
     checked: '2026-10-06'
   safety: Bee stings can cause serious allergic reactions; wear protective kit, learn with an association first and seek medical advice if you have reacted badly before.
+  kit:
+  - name: Beekeeping suit
+    why: a full suit with a veil; your local association will advise before you buy a hive
+    url: https://www.amazon.co.uk/s?k=beekeeping+suit
 - id: big-garden-birdwatch
   title: Take part in the RSPB Big Garden Birdwatch
   category: explore
@@ -1372,6 +1624,13 @@
   story: peter-kaestner-10000-birds
   guide: birdwatching-for-beginners
   local: birdwatching
+  kit:
+  - name: Binoculars (8x42)
+    why: a common all-round size for birds and wildlife; try the weight before you buy
+    url: https://www.amazon.co.uk/s?k=binoculars+8x42
+  - name: Bird feeder
+    why: puts birds where you can see them from the window
+    url: https://www.amazon.co.uk/s?k=bird+feeder
 - id: christmas-bird-count
   title: Join an Audubon Christmas Bird Count
   category: explore
@@ -1401,6 +1660,16 @@
   story: peter-kaestner-10000-birds
   guide: birdwatching-for-beginners
   local: birdwatching
+  kit:
+  - name: Binoculars (8x42)
+    why: a common all-round size for birds and wildlife; try the weight before you buy
+    url: https://www.amazon.co.uk/s?k=binoculars+8x42
+  - name: Warm hat and gloves
+    why: you stand still a lot, and it gets cold
+    url: https://www.amazon.co.uk/s?k=thermal+hat+gloves+set
+  - name: Waterproof notebook
+    why: for notes and sketches outdoors, even in drizzle
+    url: https://www.amazon.co.uk/s?k=waterproof+notebook
 - id: zooniverse-project
   title: Complete 500 classifications on a Zooniverse project
   category: explore
@@ -1467,6 +1736,16 @@
     region: any
     checked: '2026-10-06'
   safety: 'Dark Sky Places are often remote: tell someone where you are going, carry a torch and warm clothing, and check road and weather conditions.'
+  kit:
+  - name: Planisphere (star wheel)
+    why: turn it to the date and time to see which stars are up
+    url: https://www.amazon.co.uk/s?k=planisphere+star+chart
+  - name: Red-light torch
+    why: lets you read a chart without losing your night vision
+    url: https://www.amazon.co.uk/s?k=red+light+torch+astronomy
+  - name: Warm hat and gloves
+    why: you stand still a lot, and it gets cold
+    url: https://www.amazon.co.uk/s?k=thermal+hat+gloves+set
 - id: jurassic-coast-fossil-hunt
   title: Find your own fossil on the Jurassic Coast
   category: explore
@@ -1494,6 +1773,16 @@
   story: jeremy-lockwood-three-new-dinosaurs-68
   guide: fossil-hunting-for-beginners
   local: fossil-hunting
+  kit:
+  - name: Hand lens (10x)
+    why: for looking closely at fossils, rocks, insects and plants
+    url: https://www.amazon.co.uk/s?k=hand+lens+10x+loupe
+  - name: Small specimen bags
+    why: to keep finds apart and labelled
+    url: https://www.amazon.co.uk/s?k=specimen+bags+small+zip
+  - name: Water shoes
+    why: for slippery launch spots and rocky entries
+    url: https://www.amazon.co.uk/s?k=water+shoes+adult
 - id: geopark-walk
   title: Walk a geology trail in a UNESCO Global Geopark
   category: explore
@@ -1516,6 +1805,13 @@
     region: any
     checked: '2026-10-06'
   safety: 'Some geopark trails cross remote or coastal ground: carry a map, check the weather and tides, and tell someone your route.'
+  kit:
+  - name: Hand lens (10x)
+    why: for looking closely at fossils, rocks, insects and plants
+    url: https://www.amazon.co.uk/s?k=hand+lens+10x+loupe
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
 - id: wild-swim
   title: Go for your first wild swim
   category: explore
@@ -1541,6 +1837,19 @@
     checked: '2026-10-06'
   safety: 'Cold water can incapacitate quickly: never swim alone, enter slowly, know your exit point and stay close to the bank.'
   story: amy-gubser-golden-gate-farallon-swim-55
+  kit:
+  - name: Bright tow float
+    why: makes you easy to see in open water and gives you something to hold if you need a rest
+    url: https://www.amazon.co.uk/s?k=swim+tow+float
+  - name: Changing robe
+    why: to change and warm up quickly on the bank or beach
+    url: https://www.amazon.co.uk/s?k=changing+robe+waterproof
+  - name: Neoprene swim socks and gloves
+    why: for colder months and rough entries; check the thickness
+    url: https://www.amazon.co.uk/s?k=neoprene+swim+socks+gloves
+  - name: Flask
+    why: a hot drink after a cold swim or a long watch
+    url: https://www.amazon.co.uk/s?k=vacuum+flask
 - id: wildlife-trust-volunteer
   title: Volunteer for your local Wildlife Trust
   category: explore
@@ -1606,6 +1915,13 @@
     url: https://www.woodlandtrust.org.uk/plant-trees/advice/how-to-plant/
     region: uk
     checked: '2026-10-06'
+  kit:
+  - name: Gardening gloves
+    why: for brambles, nettles and rough work
+    url: https://www.amazon.co.uk/s?k=gardening+gloves
+  - name: Spade
+    why: a border spade is easier to handle
+    url: https://www.amazon.co.uk/s?k=garden+spade
 - id: walk-a-camino
   title: Walk a Camino route to Santiago de Compostela
   category: travel
@@ -1634,6 +1950,16 @@
     checked: '2026-10-06'
   safety: 'Long days on foot in heat or on remote stretches need preparation: carry water, pace yourself and take out travel insurance.'
   guide: walking-holidays-for-beginners-after-50
+  kit:
+  - name: Blister plasters
+    why: put one on at the first hot spot, before it becomes a blister
+    url: https://www.amazon.co.uk/s?k=blister+plasters
+  - name: Merino walking socks
+    why: fewer blisters on long days; bring a spare pair
+    url: https://www.amazon.co.uk/s?k=merino+walking+socks
+  - name: Daypack (20 to 30 litres)
+    why: room for water, waterproofs, food and a warm layer
+    url: https://www.amazon.co.uk/s?k=hiking+daypack+25+litre
 - id: sleeper-train-journey
   title: Take a sleeper train journey
   category: travel
@@ -1661,6 +1987,10 @@
     region: us
     checked: '2026-10-06'
   guide: travelling-by-train-after-50
+  kit:
+  - name: Eye mask and ear plugs
+    why: for sleeping on a moving train
+    url: https://www.amazon.co.uk/s?k=eye+mask+ear+plugs+travel
 - id: interrail-pass-trip
   title: Cross Europe on a rail pass
   category: travel
@@ -1687,6 +2017,10 @@
     region: us
     checked: '2026-10-06'
   guide: travelling-by-train-after-50
+  kit:
+  - name: Travel backpack
+    why: carry-on size is easier on and off trains
+    url: https://www.amazon.co.uk/s?k=travel+backpack+carry+on
 - id: canal-boat-holiday
   title: Skipper a canal boat holiday
   category: travel
@@ -1710,6 +2044,10 @@
     region: uk
     checked: '2026-10-06'
   safety: 'Locks and deep water carry real risk: follow the hire company''s safety briefing and wear a lifejacket when working locks.'
+  kit:
+  - name: Non-slip deck shoes
+    why: the roof and gunwales get slippery
+    url: https://www.amazon.co.uk/s?k=non+slip+deck+shoes
 - id: drive-a-scenic-byway
   title: Drive a National Scenic Byway end to end
   category: travel
@@ -1781,6 +2119,19 @@
     checked: '2026-10-06'
   safety: Wear a helmet, use lights, carry repair kit and water, and on remote sections tell someone your daily plan.
   story: craig-johnston-record-ride-across-australia
+  kit:
+  - name: Cycle helmet
+    why: check it fits snugly and sits level, two fingers above your eyebrows
+    url: https://www.amazon.co.uk/s?k=cycle+helmet+adult
+  - name: Mini pump and puncture kit
+    why: so a flat tyre doesn't end the ride
+    url: https://www.amazon.co.uk/s?k=bike+mini+pump+puncture+repair+kit
+  - name: Bike panniers
+    why: carry your things on the bike, not your back
+    url: https://www.amazon.co.uk/s?k=bike+panniers
+  - name: Bike lock
+    why: for café stops on the way; check its security rating
+    url: https://www.amazon.co.uk/s?k=bike+lock+d+lock
 - id: solo-trip
   title: Take a trip entirely on your own
   category: travel
@@ -1829,6 +2180,16 @@
   safety: 'Some sections are remote and exposed: carry a map, waterproofs, food and water, and tell someone your route each day.'
   guide: walking-holidays-for-beginners-after-50
   story: karl-bushby-walk-home-channel
+  kit:
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Daypack (20 to 30 litres)
+    why: room for water, waterproofs, food and a warm layer
+    url: https://www.amazon.co.uk/s?k=hiking+daypack+25+litre
+  - name: Blister plasters
+    why: put one on at the first hot spot, before it becomes a blister
+    url: https://www.amazon.co.uk/s?k=blister+plasters
 - id: visit-national-parks
   title: Visit five national parks you have never been to
   category: travel
@@ -1885,6 +2246,13 @@
     url: https://www.kingarthurbaking.com/learn/guides/sourdough/create
     region: us
     checked: '2026-10-06'
+  kit:
+  - name: Proving basket (banneton)
+    why: holds the dough's shape as it rises
+    url: https://www.amazon.co.uk/s?k=banneton+proving+basket
+  - name: Kitchen scales
+    why: bread is easier by weight than by cup
+    url: https://www.amazon.co.uk/s?k=digital+kitchen+scales
 - id: take-on-an-allotment
   title: Take on an allotment
   category: eat
@@ -1910,6 +2278,16 @@
     url: https://thenas.org.uk/findinganallotment
     region: uk
     checked: '2026-10-06'
+  kit:
+  - name: Gardening gloves
+    why: for brambles, nettles and rough work
+    url: https://www.amazon.co.uk/s?k=gardening+gloves
+  - name: Garden kneeler
+    why: saves your knees on weeding and planting days
+    url: https://www.amazon.co.uk/s?k=garden+kneeler
+  - name: Hand trowel and fork set
+    why: for planting and weeding
+    url: https://www.amazon.co.uk/s?k=hand+trowel+fork+set
 - id: community-garden-plot
   title: Grow food in a community garden
   category: eat
@@ -1932,6 +2310,16 @@
     url: https://www.communitygarden.org/garden
     region: us
     checked: '2026-10-06'
+  kit:
+  - name: Gardening gloves
+    why: for brambles, nettles and rough work
+    url: https://www.amazon.co.uk/s?k=gardening+gloves
+  - name: Garden kneeler
+    why: saves your knees on weeding and planting days
+    url: https://www.amazon.co.uk/s?k=garden+kneeler
+  - name: Hand trowel and fork set
+    why: for planting and weeding
+    url: https://www.amazon.co.uk/s?k=hand+trowel+fork+set
 - id: preserve-a-seasons-fruit
   title: Preserve a season's fruit
   category: eat
@@ -1956,6 +2344,13 @@
     region: us
     checked: '2026-10-06'
   safety: Use tested recipes and follow their jar preparation and processing instructions exactly, as badly preserved food can cause serious illness.
+  kit:
+  - name: Preserving jars
+    why: with new lids or seals each time
+    url: https://www.amazon.co.uk/s?k=preserving+jars+kilner
+  - name: Jam thermometer
+    why: tells you when jam reaches setting point
+    url: https://www.amazon.co.uk/s?k=jam+thermometer
 - id: wset-wine-course
   title: Pass a WSET wine course
   category: eat
@@ -1999,6 +2394,13 @@
     url: https://www.rhs.org.uk/herbs/growing
     region: uk
     checked: '2026-10-06'
+  kit:
+  - name: Herb pots and compost
+    why: most herbs want drainage and sun
+    url: https://www.amazon.co.uk/s?k=herb+pots+set
+  - name: Hand trowel and fork set
+    why: for planting and weeding
+    url: https://www.amazon.co.uk/s?k=hand+trowel+fork+set
 - id: cook-a-community-meal
   title: Cook for a community meal
   category: eat
@@ -2050,6 +2452,10 @@
     url: https://www.englishchess.org.uk/wp-content/uploads/2021/08/ECF-Club-Finder.html
     region: uk
     checked: '2026-10-06'
+  kit:
+  - name: Chess set and clock
+    why: clubs play with a clock; get used to one at home
+    url: https://www.amazon.co.uk/s?k=chess+set+clock
 - id: write-a-book
   title: Write the first full draft of a book
   category: think
@@ -2119,6 +2525,10 @@
     region: uk
     checked: '2026-10-06'
   guide: learning-a-musical-instrument-later-in-life
+  kit:
+  - name: Music stand
+    why: folding stands are easy to carry
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
 - id: finish-an-openlearn-course
   title: Complete a free OpenLearn course and earn the statement of participation
   category: think
@@ -2691,6 +3101,10 @@
     url: https://www.redcross.org/take-a-class/first-aid
     region: us
     checked: '2026-10-06'
+  kit:
+  - name: Home first aid kit
+    why: keep one in the house and one in the car
+    url: https://www.amazon.co.uk/s?k=first+aid+kit+home
 - id: learn-british-sign-language
   title: Pass a British Sign Language Level 1 qualification
   category: connect
@@ -2931,6 +3345,10 @@
     region: uk
     checked: '2026-10-06'
   guide: mens-sheds-walking-groups-and-clubs
+  kit:
+  - name: Comfortable walking shoes
+    why: cushioned and supportive for regular walks
+    url: https://www.amazon.co.uk/s?k=walking+shoes+comfortable
 - id: volunteer-at-a-food-bank
   title: Volunteer a regular shift at a food bank
   category: connect
@@ -3111,6 +3529,16 @@
   - label: NHS, Get running with Couch to 5K
     url: https://www.nhs.uk/live-well/exercise/get-running-with-couch-to-5k/
     checked: '2026-11-03'
+  kit:
+  - name: Running shoes
+    why: the one thing worth spending on; a running shop can watch you run and suggest a fit
+    url: https://www.amazon.co.uk/s?k=running+shoes
+  - name: High-visibility running vest
+    why: so drivers see you on dark mornings and evenings
+    url: https://www.amazon.co.uk/s?k=high+visibility+running+vest
+  - name: Running belt
+    why: holds a phone, key and card without bouncing
+    url: https://www.amazon.co.uk/s?k=running+belt+phone
 - id: nordic-walking-lesson
   title: Take a Nordic walking lesson
   category: move
@@ -3132,6 +3560,10 @@
     url: https://britishnordicwalking.org.uk/
     region: uk
     checked: '2026-10-07'
+  kit:
+  - name: Nordic walking poles
+    why: 'different from trekking poles: they have a glove-like strap; many classes lend them first'
+    url: https://www.amazon.co.uk/s?k=nordic+walking+poles
 - id: try-archery
   title: Shoot a beginners' archery course
   category: move
@@ -3159,6 +3591,10 @@
     region: us
     checked: '2026-10-07'
   safety: Shoot only on a supervised range and never draw a bow when anyone is forward of the shooting line.
+  kit:
+  - name: Arm guard
+    why: clubs lend kit for beginners; this protects your inner forearm from the string
+    url: https://www.amazon.co.uk/s?k=archery+arm+guard
 - id: learn-to-fence
   title: Learn to fence
   category: move
@@ -3267,6 +3703,10 @@
     url: https://www.pga.com/coach
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Golf glove
+    why: for grip; get it fitted to your leading hand
+    url: https://www.amazon.co.uk/s?k=golf+glove
 - id: walking-netball
   title: Join a walking netball session
   category: move
@@ -3314,6 +3754,10 @@
     url: https://www.usatt.org/
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Table tennis bat
+    why: a ready-made bat is fine for a beginner
+    url: https://www.amazon.co.uk/s?k=table+tennis+bat
 - id: learn-to-ice-skate
   title: Learn to ice skate
   category: move
@@ -3341,6 +3785,10 @@
     region: us
     checked: '2026-10-07'
   safety: Falls on ice are hard, so wear gloves and learn to fall and get up in your first lesson.
+  kit:
+  - name: Padded gloves
+    why: for the first few falls
+    url: https://www.amazon.co.uk/s?k=padded+gloves
 - id: learn-to-kayak
   title: Learn to paddle a kayak
   category: move
@@ -3369,6 +3817,16 @@
     region: us
     checked: '2026-10-07'
   safety: Wear a buoyancy aid every time you are afloat and learn on sheltered water with an instructor.
+  kit:
+  - name: Buoyancy aid
+    why: hire centres and clubs often lend one; buy your own once you paddle often, sized for your weight
+    url: https://www.amazon.co.uk/s?k=buoyancy+aid+kayak+adult
+  - name: Dry bag
+    why: keeps your phone, keys and a spare layer dry on the water
+    url: https://www.amazon.co.uk/s?k=dry+bag+10+litre
+  - name: Water shoes
+    why: for slippery launch spots and rocky entries
+    url: https://www.amazon.co.uk/s?k=water+shoes+adult
 - id: paddle-a-dragon-boat
   title: Paddle in a dragon boat crew
   category: move
@@ -3396,6 +3854,13 @@
     region: us
     checked: '2026-10-07'
   safety: Wear the buoyancy aid the club gives you and tell the helm if you are not a confident swimmer.
+  kit:
+  - name: Paddling gloves
+    why: for grip and to save your hands from blisters
+    url: https://www.amazon.co.uk/s?k=paddling+gloves
+  - name: Water shoes
+    why: for slippery launch spots and rocky entries
+    url: https://www.amazon.co.uk/s?k=water+shoes+adult
 - id: try-scuba-diving
   title: Breathe underwater on a try dive
   category: move
@@ -3422,6 +3887,10 @@
     region: any
     checked: '2026-10-07'
   safety: Dive only with a qualified instructor, answer the medical form honestly and never hold your breath on scuba.
+  kit:
+  - name: Snorkel and mask set
+    why: 'the mask matters most: press it to your face without the strap, and it should stay'
+    url: https://www.amazon.co.uk/s?k=snorkel+mask+set+adult
 - id: learn-to-surf
   title: Catch your first wave
   category: move
@@ -3449,6 +3918,16 @@
     why: group and private lessons with the board and wetsuit included
     url: https://www.getyourguide.com/s/?q=surf+lesson
     aff: getyourguide
+  kit:
+  - name: Surf wetsuit
+    why: most lessons include one; buy your own once you surf regularly, thickness to suit the season
+    url: https://www.amazon.co.uk/s?k=surf+wetsuit
+  - name: Changing robe
+    why: to change and warm up quickly on the bank or beach
+    url: https://www.amazon.co.uk/s?k=changing+robe+waterproof
+  - name: Rash vest
+    why: sun and chafe protection on the water
+    url: https://www.amazon.co.uk/s?k=rash+vest+adult+long+sleeve
 - id: horse-riding-lesson
   title: Have a riding lesson
   category: move
@@ -3476,6 +3955,10 @@
     region: us
     checked: '2026-10-07'
   safety: Wear a properly fitted riding hat and ride only under instruction on a horse the centre has chosen for you.
+  kit:
+  - name: Riding hat
+    why: riding schools often lend one; if you buy, check it meets a current safety standard and is fitted in a shop
+    url: https://www.amazon.co.uk/s?k=riding+hat
 - id: swim-swimathon
   title: Swim a Swimathon distance
   category: move
@@ -3497,6 +3980,13 @@
     url: https://www.swimathon.org/
     region: uk
     checked: '2026-10-07'
+  kit:
+  - name: Swimming goggles
+    why: try a few; a good seal matters more than the price
+    url: https://www.amazon.co.uk/s?k=swimming+goggles+adult
+  - name: Swim cap
+    why: keeps hair out of the way and, in a bright colour, makes you easier to see outdoors
+    url: https://www.amazon.co.uk/s?k=swim+cap+silicone+bright
 - id: walk-the-moonwalk
   title: Walk a marathon at night at the MoonWalk
   category: move
@@ -3519,6 +4009,16 @@
     url: https://walkthewalk.org/challenges/the-moonwalk-london/
     region: uk
     checked: '2026-10-07'
+  kit:
+  - name: Blister plasters
+    why: put one on at the first hot spot, before it becomes a blister
+    url: https://www.amazon.co.uk/s?k=blister+plasters
+  - name: Merino walking socks
+    why: fewer blisters on long days; bring a spare pair
+    url: https://www.amazon.co.uk/s?k=merino+walking+socks
+  - name: Head torch
+    why: for early starts and anything that runs into dusk
+    url: https://www.amazon.co.uk/s?k=head+torch+rechargeable
 - id: ride-london-to-brighton
   title: Ride from London to Brighton
   category: move
@@ -3542,6 +4042,16 @@
     region: uk
     checked: '2026-10-07'
   safety: Helmets are compulsory, and part of the route is on roads that stay open to traffic.
+  kit:
+  - name: Cycle helmet
+    why: check it fits snugly and sits level, two fingers above your eyebrows
+    url: https://www.amazon.co.uk/s?k=cycle+helmet+adult
+  - name: Mini pump and puncture kit
+    why: so a flat tyre doesn't end the ride
+    url: https://www.amazon.co.uk/s?k=bike+mini+pump+puncture+repair+kit
+  - name: Padded cycling shorts
+    why: more comfortable on rides of an hour or more
+    url: https://www.amazon.co.uk/s?k=padded+cycling+shorts
 - id: run-great-north-run
   title: Run the Great North Run
   category: move
@@ -3572,6 +4082,16 @@
     outlet: Sunderland Harriers
     url: https://www.sunderlandharriers.org.uk/articles/view/328/sunderland-s-great-north-run-stalwarts-ready-to-tackle-half-marathon-again
     checked: '2026-11-02'
+  kit:
+  - name: Running shoes
+    why: the one thing worth spending on; a running shop can watch you run and suggest a fit
+    url: https://www.amazon.co.uk/s?k=running+shoes
+  - name: Running belt
+    why: holds a phone, key and card without bouncing
+    url: https://www.amazon.co.uk/s?k=running+belt+phone
+  - name: Anti-chafe balm
+    why: for long runs; try it in training, not on the day
+    url: https://www.amazon.co.uk/s?k=anti+chafe+balm
 - id: enter-senior-games
   title: Compete at a state Senior Games
   category: move
@@ -3809,6 +4329,19 @@
   - label: National Park Service, Backcountry Trail Distances
     url: https://www.nps.gov/grca/planyourvisit/trail-distances.htm
     checked: '2026-11-03'
+  kit:
+  - name: Insulated water bottle
+    why: keeps water cool on hot days and stops it freezing on cold ones
+    url: https://www.amazon.co.uk/s?k=insulated+water+bottle
+  - name: Sun hat with a brim
+    why: shade for the face and neck on open ground
+    url: https://www.amazon.co.uk/s?k=sun+hat+wide+brim+hiking
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: Electrolyte tablets
+    why: to add to your water on hot, long days
+    url: https://www.amazon.co.uk/s?k=electrolyte+tablets
 - id: play-tennis
   title: Get back on a tennis court
   category: move
@@ -3835,6 +4368,10 @@
     url: https://www.usta.com/en/home/play/adult-tennis.html
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Tennis racket
+    why: clubs often lend one; a lighter racket is easier to start with
+    url: https://www.amazon.co.uk/s?k=tennis+racket+adult
 - id: play-disc-golf
   title: Play a round of disc golf
   category: move
@@ -3856,6 +4393,10 @@
     url: https://www.pdga.com/course-directory/advanced/search
     region: any
     checked: '2026-10-07'
+  kit:
+  - name: Disc golf starter set
+    why: a driver, a mid-range and a putter, which is all you need to start
+    url: https://www.amazon.co.uk/s?k=disc+golf+starter+set
 - id: learn-to-swim-adult
   title: Learn to swim as an adult
   category: move
@@ -3893,6 +4434,16 @@
     outlet: AARP
     url: https://www.aarp.org/health/healthy-living/learning-to-swim/
     checked: '2026-11-02'
+  kit:
+  - name: Swimming goggles
+    why: try a few; a good seal matters more than the price
+    url: https://www.amazon.co.uk/s?k=swimming+goggles+adult
+  - name: Swim cap
+    why: keeps hair out of the way and, in a bright colour, makes you easier to see outdoors
+    url: https://www.amazon.co.uk/s?k=swim+cap+silicone+bright
+  - name: Kickboard
+    why: for practising your legs and breathing
+    url: https://www.amazon.co.uk/s?k=swimming+kickboard
 - id: cycle-confidence-lesson
   title: Take a cycling confidence lesson
   category: move
@@ -3915,6 +4466,16 @@
     region: uk
     checked: '2026-10-07'
   safety: Practise away from traffic until your instructor judges you ready for the road.
+  kit:
+  - name: Cycle helmet
+    why: check it fits snugly and sits level, two fingers above your eyebrows
+    url: https://www.amazon.co.uk/s?k=cycle+helmet+adult
+  - name: Bike lights, front and rear
+    why: for dull days and any ride that runs late
+    url: https://www.amazon.co.uk/s?k=bike+lights+rechargeable+set
+  - name: Bike lock
+    why: for café stops on the way; check its security rating
+    url: https://www.amazon.co.uk/s?k=bike+lock+d+lock
 - id: join-a-guided-bike-ride
   title: Join a guided group bike ride
   category: move
@@ -3937,6 +4498,16 @@
     region: uk
     checked: '2026-10-07'
   safety: Wear a helmet and follow the Ride Leader's instructions at junctions.
+  kit:
+  - name: Cycle helmet
+    why: check it fits snugly and sits level, two fingers above your eyebrows
+    url: https://www.amazon.co.uk/s?k=cycle+helmet+adult
+  - name: Mini pump and puncture kit
+    why: so a flat tyre doesn't end the ride
+    url: https://www.amazon.co.uk/s?k=bike+mini+pump+puncture+repair+kit
+  - name: Bike lights, front and rear
+    why: for dull days and any ride that runs late
+    url: https://www.amazon.co.uk/s?k=bike+lights+rechargeable+set
 - id: tandem-skydive
   title: Make a tandem skydive
   category: move
@@ -4017,6 +4588,13 @@
     url: https://www.geocaching.com/guide/
     region: any
     checked: '2026-10-07'
+  kit:
+  - name: Handheld GPS
+    why: a phone app works; a handheld GPS lasts longer away from signal
+    url: https://www.amazon.co.uk/s?k=handheld+gps+hiking
+  - name: Small trinkets to swap
+    why: 'many caches hold small swaps: take one, leave one'
+    url: https://www.amazon.co.uk/s?k=small+trinkets
 - id: go-on-a-guided-bird-walk
   title: Go on a guided bird walk
   category: explore
@@ -4043,6 +4621,13 @@
     url: https://www.audubon.org/about/audubon-near-you
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Binoculars (8x42)
+    why: a common all-round size for birds and wildlife; try the weight before you buy
+    url: https://www.amazon.co.uk/s?k=binoculars+8x42
+  - name: Bird field guide
+    why: a pocket guide with pictures helps you put a name to what you saw
+    url: https://www.amazon.co.uk/s?k=bird+field+guide+book
 - id: big-butterfly-count
   title: Count butterflies for the Big Butterfly Count
   category: explore
@@ -4065,6 +4650,10 @@
     url: https://butterfly-conservation.org/news-and-blog/your-big-butterfly-count-questions-answered
     region: uk
     checked: '2026-10-07'
+  kit:
+  - name: Butterfly field guide
+    why: pictures to put a name to what you see
+    url: https://www.amazon.co.uk/s?k=butterfly+identification+guide
 - id: great-backyard-bird-count
   title: Join the Great Backyard Bird Count
   category: explore
@@ -4087,6 +4676,13 @@
     url: https://www.birdcount.org/participate/
     region: any
     checked: '2026-10-07'
+  kit:
+  - name: Binoculars (8x42)
+    why: a common all-round size for birds and wildlife; try the weight before you buy
+    url: https://www.amazon.co.uk/s?k=binoculars+8x42
+  - name: Bird feeder
+    why: puts birds where you can see them from the window
+    url: https://www.amazon.co.uk/s?k=bird+feeder
 - id: first-ebird-checklist
   title: Submit your first eBird checklist
   category: explore
@@ -4108,6 +4704,13 @@
     url: https://support.ebird.org/en/support/solutions/articles/48001158707-get-started-with-ebird
     region: any
     checked: '2026-10-07'
+  kit:
+  - name: Binoculars (8x42)
+    why: a common all-round size for birds and wildlife; try the weight before you buy
+    url: https://www.amazon.co.uk/s?k=binoculars+8x42
+  - name: Bird field guide
+    why: a pocket guide with pictures helps you put a name to what you saw
+    url: https://www.amazon.co.uk/s?k=bird+field+guide+book
 - id: go-on-a-bat-walk
   title: Go on a bat walk at dusk
   category: explore
@@ -4134,6 +4737,10 @@
     url: https://www.bats.org.uk/resources/education-outreach-resources/outdoor-bat-activities
     region: uk
     checked: '2026-10-07'
+  kit:
+  - name: Bat detector
+    why: turns bat calls into sounds you can hear; walks often lend them
+    url: https://www.amazon.co.uk/s?k=bat+detector
 - id: go-rockpooling
   title: Spend a low tide rockpooling
   category: explore
@@ -4156,6 +4763,16 @@
     region: uk
     checked: '2026-10-07'
   safety: Check tide times before you set out and leave before the incoming tide can cut you off, as wet rock and seaweed are slippery.
+  kit:
+  - name: Water shoes
+    why: for slippery launch spots and rocky entries
+    url: https://www.amazon.co.uk/s?k=water+shoes+adult
+  - name: Clear bucket or viewer
+    why: look at creatures in water, then put them back where you found them
+    url: https://www.amazon.co.uk/s?k=rock+pool+bucket+viewer
+  - name: Hand lens (10x)
+    why: for looking closely at fossils, rocks, insects and plants
+    url: https://www.amazon.co.uk/s?k=hand+lens+10x+loupe
 - id: join-a-beach-clean
   title: Join a beach clean
   category: explore
@@ -4182,6 +4799,13 @@
     url: https://oceanconservancy.org/work/plastics/cleanups-icc/
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Gardening gloves
+    why: for brambles, nettles and rough work
+    url: https://www.amazon.co.uk/s?k=gardening+gloves
+  - name: Litter picker
+    why: saves bending and keeps hands off sharp things
+    url: https://www.amazon.co.uk/s?k=litter+picker+grabber
 - id: see-saturns-rings
   title: See Saturn's rings through a telescope
   category: explore
@@ -4213,6 +4837,16 @@
   story: trevor-barry-saturn-decagon
   story_note: Trevor Barry has collected images of Saturn from his own backyard observatory in Broken Hill since the early 2000s. He has no connection with the observatories linked here.
   local: stargazing
+  kit:
+  - name: Beginner telescope
+    why: a small refractor or reflector shows the rings on a clear night; an astronomy society can help you choose
+    url: https://www.amazon.co.uk/s?k=beginner+telescope+astronomy
+  - name: Planisphere (star wheel)
+    why: turn it to the date and time to see which stars are up
+    url: https://www.amazon.co.uk/s?k=planisphere+star+chart
+  - name: Red-light torch
+    why: lets you read a chart without losing your night vision
+    url: https://www.amazon.co.uk/s?k=red+light+torch+astronomy
 - id: join-an-astronomy-society
   title: Look through a telescope at an astronomy society
   category: explore
@@ -4239,6 +4873,16 @@
     url: https://science.nasa.gov/skywatching/night-sky-network/
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Planisphere (star wheel)
+    why: turn it to the date and time to see which stars are up
+    url: https://www.amazon.co.uk/s?k=planisphere+star+chart
+  - name: Red-light torch
+    why: lets you read a chart without losing your night vision
+    url: https://www.amazon.co.uk/s?k=red+light+torch+astronomy
+  - name: Folding camping chair
+    why: for a long wait outdoors
+    url: https://www.amazon.co.uk/s?k=folding+camping+chair+lightweight
 - id: see-the-northern-lights
   title: See the northern lights
   category: explore
@@ -4266,6 +4910,16 @@
     url: https://www.spaceweather.gov/products/aurora-30-minute-forecast
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Warm hat and gloves
+    why: you stand still a lot, and it gets cold
+    url: https://www.amazon.co.uk/s?k=thermal+hat+gloves+set
+  - name: Thermal base layers
+    why: you wait a long time standing still in the cold
+    url: https://www.amazon.co.uk/s?k=thermal+base+layer
+  - name: Folding camping chair
+    why: for a long wait outdoors
+    url: https://www.amazon.co.uk/s?k=folding+camping+chair+lightweight
 - id: see-a-total-solar-eclipse
   title: Stand in the shadow of a total solar eclipse
   category: explore
@@ -4288,6 +4942,10 @@
     region: any
     checked: '2026-10-07'
   safety: Look at the Sun only through eclipse glasses or a proper solar filter, except during the brief period of totality, as ordinary sunglasses are not safe.
+  kit:
+  - name: Eclipse glasses
+    why: only solar viewers made to the ISO 12312-2 standard are safe for looking at the Sun; ordinary sunglasses are not
+    url: https://www.amazon.co.uk/s?k=eclipse+glasses+iso+12312-2
 - id: grow-a-wildflower-patch
   title: Let a patch of lawn grow wild
   category: explore
@@ -4310,6 +4968,10 @@
     url: https://www.plantlife.org.uk/campaigns/nomowmay/
     region: uk
     checked: '2026-10-07'
+  kit:
+  - name: Native wildflower seed mix
+    why: check the mix suits your soil and is of native species
+    url: https://www.amazon.co.uk/s?k=native+wildflower+seed+mix
 - id: dig-a-wildlife-pond
   title: Dig a wildlife pond
   category: explore
@@ -4336,6 +4998,10 @@
     region: uk
     checked: '2026-10-07'
   safety: Fence or cover any pond where small children visit, as even shallow water is a drowning risk.
+  kit:
+  - name: Pond liner
+    why: measure the hole first; underlay stops stones piercing it
+    url: https://www.amazon.co.uk/s?k=pond+liner+underlay
 - id: put-up-a-nest-box
   title: Put up a nest box and watch it
   category: explore
@@ -4364,6 +5030,10 @@
     region: us
     checked: '2026-10-07'
   safety: Have someone hold the ladder when you fix the box, and keep it at a height you can reach safely.
+  kit:
+  - name: Bird nest box
+    why: check the hole size suits the birds you want
+    url: https://www.amazon.co.uk/s?k=bird+nest+box
 - id: identify-twenty-trees
   title: Learn to identify twenty trees
   category: explore
@@ -4390,6 +5060,13 @@
     url: https://treeid.arborday.org/
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Tree identification guide
+    why: leaves, bark, buds and seeds, with pictures
+    url: https://www.amazon.co.uk/s?k=tree+identification+book
+  - name: Hand lens (10x)
+    why: for looking closely at fossils, rocks, insects and plants
+    url: https://www.amazon.co.uk/s?k=hand+lens+10x+loupe
 - id: visit-a-national-wildlife-refuge
   title: Visit a National Wildlife Refuge
   category: explore
@@ -4415,6 +5092,13 @@
     url: https://www.fws.gov/faq/how-can-i-find-national-wildlife-refuge-my-state-or-territory
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Binoculars (8x42)
+    why: a common all-round size for birds and wildlife; try the weight before you buy
+    url: https://www.amazon.co.uk/s?k=binoculars+8x42
+  - name: Bird field guide
+    why: a pocket guide with pictures helps you put a name to what you saw
+    url: https://www.amazon.co.uk/s?k=bird+field+guide+book
 - id: watch-for-whales-from-shore
   title: Watch for whales and dolphins from the shore
   category: explore
@@ -4446,6 +5130,16 @@
     region: us
     checked: '2026-10-07'
   safety: Keep well back from cliff edges and watch your footing on wet rock, especially in wind.
+  kit:
+  - name: Binoculars (8x42)
+    why: a common all-round size for birds and wildlife; try the weight before you buy
+    url: https://www.amazon.co.uk/s?k=binoculars+8x42
+  - name: Warm hat and gloves
+    why: you stand still a lot, and it gets cold
+    url: https://www.amazon.co.uk/s?k=thermal+hat+gloves+set
+  - name: Folding camping chair
+    why: for a long wait outdoors
+    url: https://www.amazon.co.uk/s?k=folding+camping+chair+lightweight
 - id: learn-map-and-compass
   title: Learn to navigate with a map and compass
   category: explore
@@ -4471,6 +5165,16 @@
     url: https://osmaps.com/discover/guides/beginners-guides-map-reading/
     region: uk
     checked: '2026-10-07'
+  kit:
+  - name: Baseplate compass
+    why: the kind used with a paper map; learn it before you rely on it
+    url: https://www.amazon.co.uk/s?k=baseplate+compass+navigation
+  - name: Waterproof map case
+    why: keeps a paper map readable in rain and wind
+    url: https://www.amazon.co.uk/s?k=waterproof+map+case
+  - name: Waterproof notebook
+    why: for notes and sketches outdoors, even in drizzle
+    url: https://www.amazon.co.uk/s?k=waterproof+notebook
 - id: stay-in-a-bothy
   title: Spend a night in a mountain bothy
   category: explore
@@ -4497,6 +5201,19 @@
     region: uk
     checked: '2026-10-07'
   safety: Bothies sit in remote hill country, so carry a map, compass and enough kit to camp out if the bothy is full or you cannot reach it.
+  kit:
+  - name: Sleeping bag
+    why: check its comfort temperature against the nights you expect
+    url: https://www.amazon.co.uk/s?k=sleeping+bag+3+season
+  - name: Sleeping mat
+    why: insulates you from the cold ground; check its warmth (R-value)
+    url: https://www.amazon.co.uk/s?k=sleeping+mat+camping
+  - name: Small camping stove
+    why: for hot food and drinks; check what fuel it takes and where you may use it
+    url: https://www.amazon.co.uk/s?k=camping+stove+lightweight
+  - name: Head torch
+    why: for early starts and anything that runs into dusk
+    url: https://www.amazon.co.uk/s?k=head+torch+rechargeable
 - id: visit-an-open-garden
   title: Visit a private garden on an open day
   category: explore
@@ -4549,6 +5266,10 @@
     url: https://finds.org.uk/getinvolved/guides/guidancelandowners
     region: uk
     checked: '2026-10-07'
+  kit:
+  - name: Finds bags and labels
+    why: write where and when you found it
+    url: https://www.amazon.co.uk/s?k=finds+bags+archaeology
 - id: join-an-archaeology-dig
   title: Dig on an archaeological excavation
   category: explore
@@ -4603,6 +5324,13 @@
     region: us
     checked: '2026-10-07'
   safety: Take care on wet banks and near deep or fast water, and handle hooks with care.
+  kit:
+  - name: Beginner fishing rod and reel combo
+    why: check the type suits where you'll fish (river, lake or sea)
+    url: https://www.amazon.co.uk/s?k=beginner+fishing+rod+reel+combo
+  - name: Polarised sunglasses
+    why: cut glare on the water
+    url: https://www.amazon.co.uk/s?k=polarised+sunglasses
 - id: walk-wales-coast-path
   title: Walk a stretch of the Wales Coast Path
   category: travel
@@ -4630,6 +5358,16 @@
     region: uk
     checked: '2026-10-07'
   safety: Keep to the path on cliff sections and check the weather and tide times before coastal stretches.
+  kit:
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Merino walking socks
+    why: fewer blisters on long days; bring a spare pair
+    url: https://www.amazon.co.uk/s?k=merino+walking+socks
 - id: hike-pacific-crest-trail-section
   title: Hike a section of the Pacific Crest Trail
   category: travel
@@ -4664,6 +5402,19 @@
     outlet: Brainerd Dispatch
     url: https://www.brainerddispatch.com/news/going-wild-on-the-pacific-crest-trail
     checked: '2026-10-27'
+  kit:
+  - name: Water filter bottle
+    why: for refilling from streams on long routes; check what it filters before you trust it
+    url: https://www.amazon.co.uk/s?k=water+filter+bottle+hiking
+  - name: Sun hat with a brim
+    why: shade for the face and neck on open ground
+    url: https://www.amazon.co.uk/s?k=sun+hat+wide+brim+hiking
+  - name: Sleeping mat
+    why: insulates you from the cold ground; check its warmth (R-value)
+    url: https://www.amazon.co.uk/s?k=sleeping+mat+camping
+  - name: Small camping stove
+    why: for hot food and drinks; check what fuel it takes and where you may use it
+    url: https://www.amazon.co.uk/s?k=camping+stove+lightweight
 - id: ride-a-rail-trail
   title: Walk or ride a rail trail
   category: travel
@@ -4685,6 +5436,16 @@
     url: https://www.railstotrails.org/site/traillink/
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Cycle helmet
+    why: check it fits snugly and sits level, two fingers above your eyebrows
+    url: https://www.amazon.co.uk/s?k=cycle+helmet+adult
+  - name: Mini pump and puncture kit
+    why: so a flat tyre doesn't end the ride
+    url: https://www.amazon.co.uk/s?k=bike+mini+pump+puncture+repair+kit
+  - name: Bike lock
+    why: for café stops on the way; check its security rating
+    url: https://www.amazon.co.uk/s?k=bike+lock+d+lock
 - id: stay-in-a-fire-lookout
   title: Sleep in a fire lookout tower
   category: travel
@@ -4730,6 +5491,13 @@
     region: uk
     checked: '2026-10-07'
   safety: Stone is heavy and sharp-edged, so lift with care and wear protective boots and gloves.
+  kit:
+  - name: Rigger gloves
+    why: for handling rough stone
+    url: https://www.amazon.co.uk/s?k=rigger+gloves
+  - name: Safety boots
+    why: for dropped stones
+    url: https://www.amazon.co.uk/s?k=safety+boots
 - id: cross-america-by-train
   title: Cross America by train
   category: travel
@@ -4805,6 +5573,13 @@
     region: uk
     checked: '2026-10-07'
   safety: Sailings are cancelled in rough weather, so keep spare days in hand rather than racing for a connection.
+  kit:
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Binoculars (8x42)
+    why: a common all-round size for birds and wildlife; try the weight before you buy
+    url: https://www.amazon.co.uk/s?k=binoculars+8x42
 - id: drive-north-coast-500
   title: Drive the North Coast 500
   category: travel
@@ -4829,6 +5604,13 @@
     region: uk
     checked: '2026-10-07'
   safety: Much of the route is single-track road with passing places, so drive slowly, pull in to let others by and never park in a passing place.
+  kit:
+  - name: Midge net and repellent
+    why: for midges on still, damp days in the Highlands
+    url: https://www.amazon.co.uk/s?k=midge+head+net+repellent
+  - name: Binoculars (8x42)
+    why: a common all-round size for birds and wildlife; try the weight before you buy
+    url: https://www.amazon.co.uk/s?k=binoculars+8x42
 - id: drive-route-66
   title: Drive a stretch of Route 66
   category: travel
@@ -4898,6 +5680,16 @@
     url: https://www.britishpilgrimage.org/routes
     region: uk
     checked: '2026-10-07'
+  kit:
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Merino walking socks
+    why: fewer blisters on long days; bring a spare pair
+    url: https://www.amazon.co.uk/s?k=merino+walking+socks
+  - name: Blister plasters
+    why: put one on at the first hot spot, before it becomes a blister
+    url: https://www.amazon.co.uk/s?k=blister+plasters
 - id: ride-west-highland-line
   title: Ride the West Highland Line
   category: travel
@@ -5116,6 +5908,10 @@
     url: https://nawb.org.uk/who-we-are/
     region: uk
     checked: '2026-10-07'
+  kit:
+  - name: Beer brewing starter kit
+    why: a fermenter, airlock and hydrometer are the basics
+    url: https://www.amazon.co.uk/s?k=home+brew+beer+starter+kit
 - id: rehome-hens
   title: Give a home to ex-commercial hens
   category: eat
@@ -5206,6 +6002,10 @@
     url: https://seedsavers.org/
     region: us
     checked: '2026-10-07'
+  kit:
+  - name: Seed envelopes
+    why: label the plant and the year
+    url: https://www.amazon.co.uk/s?k=seed+envelopes
 - id: enter-marmalade-awards
   title: Enter the World's Original Marmalade Awards
   category: eat
@@ -5228,6 +6028,13 @@
     url: https://www.dalemain.com/competition-entry
     region: any
     checked: '2026-10-07'
+  kit:
+  - name: Preserving pan
+    why: a wide pan helps marmalade reach a set
+    url: https://www.amazon.co.uk/s?k=preserving+pan
+  - name: Jam thermometer
+    why: tells you when marmalade reaches setting point
+    url: https://www.amazon.co.uk/s?k=jam+thermometer
 - id: plant-a-community-orchard
   title: Help plant or tend a community orchard
   category: eat
@@ -5433,6 +6240,13 @@
     url: https://urbansketchers.org/chapters/
     region: any
     checked: '2026-10-08'
+  kit:
+  - name: Sketchbook
+    why: a small one fits in a pocket
+    url: https://www.amazon.co.uk/s?k=sketchbook+a5
+  - name: Travel watercolour set
+    why: a small paint box with a water brush
+    url: https://www.amazon.co.uk/s?k=travel+watercolour+set
 - id: learn-a-heritage-craft
   title: Learn an endangered heritage craft
   category: think
@@ -5488,6 +6302,10 @@
     url: https://www.projectlinus.org/chapters/
     region: us
     checked: '2026-10-08'
+  kit:
+  - name: Knitting needles and yarn
+    why: check the charity's guidance on sizes and yarn
+    url: https://www.amazon.co.uk/s?k=knitting+needles+yarn+starter
 - id: learn-to-ring-church-bells
   title: Learn to ring church bells
   category: think
@@ -5595,6 +6413,10 @@
     url: https://www.acbl.org/learn/
     region: us
     checked: '2026-10-08'
+  kit:
+  - name: Bridge playing cards
+    why: two packs with different backs, as at a club
+    url: https://www.amazon.co.uk/s?k=bridge+playing+cards
 - id: get-an-amateur-radio-licence
   title: Get an amateur radio licence
   category: tech
@@ -5621,6 +6443,10 @@
     url: https://www.arrl.org/getting-licensed
     region: us
     checked: '2026-10-08'
+  kit:
+  - name: Handheld amateur radio
+    why: only transmit once you hold your licence
+    url: https://www.amazon.co.uk/s?k=handheld+amateur+radio
 - id: build-a-raspberry-pi-project
   title: Build something with a Raspberry Pi
   category: tech
@@ -5646,6 +6472,10 @@
     url: https://www.raspberrypi.com/resources/learn/
     region: any
     checked: '2026-10-08'
+  kit:
+  - name: Raspberry Pi starter kit
+    why: the board, power supply, case and memory card in one box
+    url: https://www.amazon.co.uk/s?k=raspberry+pi+starter+kit
 - id: make-your-first-wikipedia-edit
   title: Make your first edit to Wikipedia
   category: tech
@@ -5774,6 +6604,10 @@
     url: https://consumer.ftc.gov/media/79923
     region: us
     checked: '2026-10-08'
+  kit:
+  - name: External hard drive
+    why: a second copy kept at home alongside one online
+    url: https://www.amazon.co.uk/s?k=external+hard+drive
 - id: set-up-passkeys
   title: Switch an account to a passkey
   category: tech
@@ -5874,6 +6708,10 @@
     url: https://thepagb.org.uk/repagb/find-a-club/
     region: uk
     checked: '2026-10-08'
+  kit:
+  - name: Camera tripod
+    why: for low light and steady landscapes
+    url: https://www.amazon.co.uk/s?k=camera+tripod+lightweight
 - id: join-amateur-theatre
   title: Join an amateur theatre company
   category: connect
@@ -5931,6 +6769,10 @@
     region: us
     checked: '2026-10-08'
   safety: Wear eye and face protection and learn from an experienced turner, as a lathe spins wood at speed and uses sharp tools.
+  kit:
+  - name: Full face shield
+    why: woodturning throws chips; clubs will advise on what else you need
+    url: https://www.amazon.co.uk/s?k=face+shield+woodturning
 - id: trace-your-house-history
   title: Trace the history of your house
   category: think
@@ -6004,6 +6846,10 @@
     region: us
     checked: '2026-10-08'
   safety: Motorcycling carries a real risk of serious injury, so learn with an approved training provider and wear full protective kit.
+  kit:
+  - name: Motorbike gloves
+    why: protect your hands from the first lesson
+    url: https://www.amazon.co.uk/s?k=motorcycle+gloves
 - id: take-an-advanced-driving-course
   title: Take an advanced driving course
   category: think
@@ -6051,6 +6897,16 @@
     url: https://www.mountain-training.org/qualifications/walking/lowland-leader
     region: uk
     checked: '2026-10-08'
+  kit:
+  - name: Small first aid kit
+    why: plasters, a bandage and tape for minor knocks on the trail
+    url: https://www.amazon.co.uk/s?k=hiking+first+aid+kit
+  - name: Baseplate compass
+    why: the kind used with a paper map; learn it before you rely on it
+    url: https://www.amazon.co.uk/s?k=baseplate+compass+navigation
+  - name: Group shelter
+    why: a lightweight shelter a group can sit under out of the wind
+    url: https://www.amazon.co.uk/s?k=group+bothy+bag+shelter
 - id: qualify-as-a-mountain-leader
   title: Qualify as a Mountain Leader
   category: earn
@@ -6376,6 +7232,16 @@
     region: us
     checked: '2026-10-08'
   safety: Always use a litter-picker and gloves, keep away from fast roads, and leave needles and other sharp objects alone.
+  kit:
+  - name: Gardening gloves
+    why: for brambles, nettles and rough work
+    url: https://www.amazon.co.uk/s?k=gardening+gloves
+  - name: Litter picker
+    why: saves bending and keeps hands off sharp things
+    url: https://www.amazon.co.uk/s?k=litter+picker+grabber
+  - name: High-visibility running vest
+    why: so drivers see you on dark mornings and evenings
+    url: https://www.amazon.co.uk/s?k=high+visibility+running+vest
 - id: host-an-international-student
   title: Host an international student for a weekend
   category: connect
@@ -6481,6 +7347,16 @@
     url: https://www.ramblers.org.uk/go-walking/group-walks
     region: uk
     checked: '2026-10-08'
+  kit:
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Daypack (20 to 30 litres)
+    why: room for water, waterproofs, food and a warm layer
+    url: https://www.amazon.co.uk/s?k=hiking+daypack+25+litre
 - id: become-a-dementia-friend
   title: Become a Dementia Friend
   category: connect
@@ -6671,6 +7547,10 @@
     url: https://raceforlife.cancerresearchuk.org/
     region: uk
     checked: '2026-10-08'
+  kit:
+  - name: Running shoes
+    why: the one thing worth spending on; a running shop can watch you run and suggest a fit
+    url: https://www.amazon.co.uk/s?k=running+shoes
 - id: host-a-coffee-morning
   title: Host a Macmillan Coffee Morning
   category: connect
@@ -6954,6 +7834,16 @@
     region: any
     checked: '2026-10-08'
   safety: Four long days on roads in summer heat punish feet and hydration, so drink regularly and deal with blisters as soon as they start.
+  kit:
+  - name: Blister plasters
+    why: put one on at the first hot spot, before it becomes a blister
+    url: https://www.amazon.co.uk/s?k=blister+plasters
+  - name: Merino walking socks
+    why: fewer blisters on long days; bring a spare pair
+    url: https://www.amazon.co.uk/s?k=merino+walking+socks
+  - name: Sun hat with a brim
+    why: shade for the face and neck on open ground
+    url: https://www.amazon.co.uk/s?k=sun+hat+wide+brim+hiking
 - id: trailwalker-south-downs
   title: Walk 100km at Trailwalker
   category: move
@@ -6978,6 +7868,19 @@
     region: uk
     checked: '2026-10-08'
   safety: Walking 100km without sleep brings real risk of exhaustion and injury, so stay with your team and use the checkpoints.
+  kit:
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: Blister plasters
+    why: put one on at the first hot spot, before it becomes a blister
+    url: https://www.amazon.co.uk/s?k=blister+plasters
+  - name: Head torch
+    why: for early starts and anything that runs into dusk
+    url: https://www.amazon.co.uk/s?k=head+torch+rechargeable
+  - name: Merino walking socks
+    why: fewer blisters on long days; bring a spare pair
+    url: https://www.amazon.co.uk/s?k=merino+walking+socks
 - id: gurkha-doko-challenge
   title: Take on the Gurkha Doko Challenge
   category: move
@@ -7085,6 +7988,16 @@
     outlet: RunWashington
     url: https://www.runwashington.com/2017/10/20/last-mcm-groundpounder/
     checked: '2026-10-27'
+  kit:
+  - name: Running shoes
+    why: the one thing worth spending on; a running shop can watch you run and suggest a fit
+    url: https://www.amazon.co.uk/s?k=running+shoes
+  - name: Running belt
+    why: holds a phone, key and card without bouncing
+    url: https://www.amazon.co.uk/s?k=running+belt+phone
+  - name: Anti-chafe balm
+    why: for long runs; try it in training, not on the day
+    url: https://www.amazon.co.uk/s?k=anti+chafe+balm
 - id: army-ten-miler
   title: Run the Army Ten-Miler
   category: move
@@ -7109,6 +8022,13 @@
     region: us
     checked: '2026-10-08'
   safety: Ten miles on the road is a serious effort, so train up to the distance and ease off if you feel unwell.
+  kit:
+  - name: Running shoes
+    why: the one thing worth spending on; a running shop can watch you run and suggest a fit
+    url: https://www.amazon.co.uk/s?k=running+shoes
+  - name: Simple running watch
+    why: times your runs and walk breaks; a phone app does the same for free
+    url: https://www.amazon.co.uk/s?k=running+watch+gps
 - id: goruck-challenge
   title: Finish a GORUCK event
   category: move
@@ -7176,6 +8096,16 @@
     url: https://www.walk1000miles.co.uk/
     region: any
     checked: '2026-10-08'
+  kit:
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Merino walking socks
+    why: fewer blisters on long days; bring a spare pair
+    url: https://www.amazon.co.uk/s?k=merino+walking+socks
+  - name: Step counter or pedometer
+    why: an easy way to keep a tally
+    url: https://www.amazon.co.uk/s?k=pedometer
 - id: hike-a-fourteener
   title: Climb a Colorado fourteener
   category: move
@@ -7204,6 +8134,19 @@
     region: us
     checked: '2026-10-08'
   safety: Altitude sickness and afternoon thunderstorms are real dangers above the treeline, so start early and turn round if either threatens.
+  kit:
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: High-factor sun cream
+    why: sun and wind on high or open ground burn faster than you expect
+    url: https://www.amazon.co.uk/s?k=sun+cream+spf+50
+  - name: Insulated water bottle
+    why: keeps water cool on hot days and stops it freezing on cold ones
+    url: https://www.amazon.co.uk/s?k=insulated+water+bottle
 - id: swim-the-serpentine
   title: Swim in the Serpentine
   category: move
@@ -7232,6 +8175,16 @@
     region: uk
     checked: '2026-10-08'
   safety: Lake water is colder than a pool, so get in gradually and swim only when a lifeguard is on duty.
+  kit:
+  - name: Bright tow float
+    why: makes you easy to see in open water and gives you something to hold if you need a rest
+    url: https://www.amazon.co.uk/s?k=swim+tow+float
+  - name: Changing robe
+    why: to change and warm up quickly on the bank or beach
+    url: https://www.amazon.co.uk/s?k=changing+robe+waterproof
+  - name: Flask
+    why: a hot drink after a cold swim or a long watch
+    url: https://www.amazon.co.uk/s?k=vacuum+flask
 - id: cycle-a-velodrome
   title: Ride a velodrome track
   category: move
@@ -7327,6 +8280,10 @@
     url: https://www.britishrowing.org/indoor-rowing/
     region: uk
     checked: '2026-10-08'
+  kit:
+  - name: Gel seat pad
+    why: makes long sessions on a rowing machine more comfortable
+    url: https://www.amazon.co.uk/s?k=rowing+machine+seat+cushion
 - id: learn-to-snorkel
   title: Snorkel over a reef or kelp bed
   category: explore
@@ -7354,6 +8311,16 @@
     region: us
     checked: '2026-10-08'
   safety: Never snorkel alone, and check tides, currents and boat traffic before you get in.
+  kit:
+  - name: Snorkel and mask set
+    why: 'the mask matters most: press it to your face without the strap, and it should stay'
+    url: https://www.amazon.co.uk/s?k=snorkel+mask+set+adult
+  - name: Snorkelling fins
+    why: make swimming easier and faster; try the fit with bare feet or socks as you'll use them
+    url: https://www.amazon.co.uk/s?k=snorkelling+fins+adult
+  - name: Rash vest
+    why: sun and chafe protection on the water
+    url: https://www.amazon.co.uk/s?k=rash+vest+adult+long+sleeve
 - id: canoe-a-river-trail
   title: Paddle a marked canoe trail
   category: travel
@@ -7381,6 +8348,16 @@
     region: us
     checked: '2026-10-08'
   safety: Wear a buoyancy aid on the water and check river levels and weather before setting out.
+  kit:
+  - name: Buoyancy aid
+    why: hire centres and clubs often lend one; buy your own once you paddle often, sized for your weight
+    url: https://www.amazon.co.uk/s?k=buoyancy+aid+kayak+adult
+  - name: Dry bag
+    why: keeps your phone, keys and a spare layer dry on the water
+    url: https://www.amazon.co.uk/s?k=dry+bag+10+litre
+  - name: Waterproof phone pouch
+    why: so you can carry a phone for emergencies on the water
+    url: https://www.amazon.co.uk/s?k=waterproof+phone+pouch
 - id: sleep-under-the-stars
   title: Camp for a night in a national park
   category: travel
@@ -7408,6 +8385,19 @@
     region: us
     checked: '2026-10-08'
   safety: Check the forecast, carry warm layers and a map, and on Dartmoor check the military firing times before you go.
+  kit:
+  - name: Bivvy bag
+    why: a waterproof cover for your sleeping bag if you sleep without a tent
+    url: https://www.amazon.co.uk/s?k=bivvy+bag
+  - name: Sleeping mat
+    why: insulates you from the cold ground; check its warmth (R-value)
+    url: https://www.amazon.co.uk/s?k=sleeping+mat+camping
+  - name: Sleeping bag
+    why: check its comfort temperature against the nights you expect
+    url: https://www.amazon.co.uk/s?k=sleeping+bag+3+season
+  - name: Red-light torch
+    why: lets you read a chart without losing your night vision
+    url: https://www.amazon.co.uk/s?k=red+light+torch+astronomy
 - id: visit-a-stone-circle-at-solstice
   title: Watch the midsummer sunrise at Stonehenge
   category: travel
@@ -7614,6 +8604,10 @@
     checked: '2026-10-16'
   story: donnajean-wilde-five-hour-plank
   story_note: DonnaJean Wilde held a forearm plank for five hours at the Huntsman World Senior Games in October 2026. She has no connection with the guide linked here.
+  kit:
+  - name: Yoga mat
+    why: a non-slip mat for classes and practice at home
+    url: https://www.amazon.co.uk/s?k=yoga+mat+non+slip
 - id: grow-a-pumpkin-from-seed
   title: Grow a pumpkin from seed
   category: eat
@@ -7643,6 +8637,13 @@
     checked: '2026-10-17'
   story: ron-wallace-heaviest-pumpkin
   story_note: Ron Wallace grew the world's heaviest pumpkin, 3,156lb, in Rhode Island in 2026. He has no connection with the guides linked here.
+  kit:
+  - name: Pumpkin seeds
+    why: pick a variety that suits the size you're after
+    url: https://www.amazon.co.uk/s?k=pumpkin+seeds
+  - name: Gardening gloves
+    why: for brambles, nettles and rough work
+    url: https://www.amazon.co.uk/s?k=gardening+gloves
 - id: volunteer-with-be-my-eyes
   title: Answer a call as a Be My Eyes volunteer
   category: ai
@@ -7696,6 +8697,16 @@
   safety: Learn with a recognised school, which provides safety briefings and equipment, and check with your GP (family doctor) first if you have a heart, joint or balance problem.
   story: clipper-race-atlantic-oban
   story_note: Joanne Currie and Sue Smith sailed in the Clipper Race, which runs its own crew training; these courses are a separate first step.
+  kit:
+  - name: Sailing jacket
+    why: a waterproof jacket with a high collar for spray and wind
+    url: https://www.amazon.co.uk/s?k=sailing+jacket+offshore
+  - name: Deck shoes
+    why: non-marking soles with grip on a wet deck
+    url: https://www.amazon.co.uk/s?k=deck+shoes
+  - name: Dry bag
+    why: keeps your phone, keys and a spare layer dry on the water
+    url: https://www.amazon.co.uk/s?k=dry+bag+10+litre
 - id: learn-to-skateboard
   title: Learn to skateboard
   category: move
@@ -7720,6 +8731,13 @@
   safety: Wear a helmet every time and learn with a coach, and check with your GP (family doctor) first if you have a balance, bone or joint problem.
   story: darren-miles-slalom-skateboarding
   story_note: Darren Miles has skated since 1977 and took up slalom in 2020; a lesson is the first step for anyone new to a board.
+  kit:
+  - name: Skate helmet
+    why: wear one from the first session
+    url: https://www.amazon.co.uk/s?k=skateboard+helmet+adult
+  - name: Wrist, knee and elbow pads
+    why: falls are part of learning; pads take the sting out
+    url: https://www.amazon.co.uk/s?k=skate+pads+set+adult
 - id: test-drive-a-new-career
   title: Test-drive a new career with a free careers adviser
   category: earn
@@ -7858,6 +8876,16 @@
   photo_caption: "Looking north from near the summit of Mount St. Helens to the lava dome in the crater, July 2014."
   photo_alt: "A grey crater with patches of snow and a lava dome, below a rim of jagged rock."
   photo_checked: '2026-11-01'
+  kit:
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: High-factor sun cream
+    why: sun and wind on high or open ground burn faster than you expect
+    url: https://www.amazon.co.uk/s?k=sun+cream+spf+50
+  - name: Gaiters
+    why: keep ash, grit and snow out of your boots
+    url: https://www.amazon.co.uk/s?k=hiking+gaiters
 - id: walk-oregon-coast-trail
   title: Walk a stretch of the Oregon Coast Trail
   category: move
@@ -7881,6 +8909,16 @@
     region: us
     checked: '2026-10-27'
   safety: Some sections can only be walked at low tide and about a tenth of the route runs along road shoulders, so check tides and the official maps before each day.
+  kit:
+  - name: Water shoes
+    why: for slippery launch spots and rocky entries
+    url: https://www.amazon.co.uk/s?k=water+shoes+adult
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Tide tables
+    why: for planning the beach stretches around the tides; check the state park's advice on crossings
+    url: https://www.amazon.co.uk/s?k=tide+table+book
 - id: walk-the-timberline-trail-around-mount-hood
   title: Walk the Timberline Trail around Mount Hood
   category: explore
@@ -7905,6 +8943,19 @@
     region: us
     checked: '2026-10-30'
   safety: The trail is not fully maintained and its river fords (the Forest Service names the Newton, Coe, Muddy Fork, Sandy and White Rivers) can be dangerous, so check conditions and cross early in the day.
+  kit:
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: Water filter bottle
+    why: for refilling from streams on long routes; check what it filters before you trust it
+    url: https://www.amazon.co.uk/s?k=water+filter+bottle+hiking
+  - name: Sleeping mat
+    why: insulates you from the cold ground; check its warmth (R-value)
+    url: https://www.amazon.co.uk/s?k=sleeping+mat+camping
+  - name: Small camping stove
+    why: for hot food and drinks; check what fuel it takes and where you may use it
+    url: https://www.amazon.co.uk/s?k=camping+stove+lightweight
 - id: walk-hadrians-wall-path
   title: Walk Hadrian's Wall Path
   category: move
@@ -7991,6 +9042,19 @@
   - label: National Trails, Hadrian's Wall Path route description
     url: https://www.nationaltrail.co.uk/en_GB/trails/hadrians-wall-path/route/
     checked: '2026-11-02'
+  kit:
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Merino walking socks
+    why: fewer blisters on long days; bring a spare pair
+    url: https://www.amazon.co.uk/s?k=merino+walking+socks
+  - name: Blister plasters
+    why: put one on at the first hot spot, before it becomes a blister
+    url: https://www.amazon.co.uk/s?k=blister+plasters
+  - name: Daypack (20 to 30 litres)
+    why: room for water, waterproofs, food and a warm layer
+    url: https://www.amazon.co.uk/s?k=hiking+daypack+25+litre
 - id: walk-giants-causeway-clifftop
   title: Walk the clifftops above the Giant's Causeway
   category: explore
@@ -8045,6 +9109,16 @@
   photo_caption: "Angels Landing and the Great White Throne in Zion National Park, 2012."
   photo_alt: "Two huge red and cream sandstone peaks against a blue sky."
   photo_checked: '2026-11-01'
+  kit:
+  - name: Insulated water bottle
+    why: keeps water cool on hot days and stops it freezing on cold ones
+    url: https://www.amazon.co.uk/s?k=insulated+water+bottle
+  - name: Sun hat with a brim
+    why: shade for the face and neck on open ground
+    url: https://www.amazon.co.uk/s?k=sun+hat+wide+brim+hiking
+  - name: Walking shoes with sticky soles
+    why: grip matters on the rock sections
+    url: https://www.amazon.co.uk/s?k=hiking+shoes+grip
 - id: ride-the-katy-trail
   title: Ride the Katy Trail across Missouri
   category: travel
@@ -8067,6 +9141,16 @@
     url: https://mostateparks.com/park/katy-trail-state-park
     region: us
     checked: '2026-10-27'
+  kit:
+  - name: Cycle helmet
+    why: check it fits snugly and sits level, two fingers above your eyebrows
+    url: https://www.amazon.co.uk/s?k=cycle+helmet+adult
+  - name: Mini pump and puncture kit
+    why: so a flat tyre doesn't end the ride
+    url: https://www.amazon.co.uk/s?k=bike+mini+pump+puncture+repair+kit
+  - name: Saddle bag
+    why: carries the pump, a spare tube and a snack
+    url: https://www.amazon.co.uk/s?k=bike+saddle+bag
 - id: paddle-the-broads
   title: Paddle a canoe trail on the Norfolk Broads
   category: explore
@@ -8090,6 +9174,16 @@
     region: uk
     checked: '2026-10-27'
   safety: The lower, tidal rivers are for experienced paddlers only; stay on the upper rivers and broads until you have built up experience.
+  kit:
+  - name: Buoyancy aid
+    why: hire centres and clubs often lend one; buy your own once you paddle often, sized for your weight
+    url: https://www.amazon.co.uk/s?k=buoyancy+aid+kayak+adult
+  - name: Dry bag
+    why: keeps your phone, keys and a spare layer dry on the water
+    url: https://www.amazon.co.uk/s?k=dry+bag+10+litre
+  - name: Binoculars (8x42)
+    why: a common all-round size for birds and wildlife; try the weight before you buy
+    url: https://www.amazon.co.uk/s?k=binoculars+8x42
 - id: walk-the-monsal-trail
   title: Walk or cycle the Monsal Trail through its tunnels
   category: move
@@ -8143,6 +9237,16 @@
     outlet: Isle of Man Today
     url: https://www.iomtoday.co.im/news/sue-raises-ps3000-for-the-rnli-in-630-mile-coast-walk-566367
     checked: '2026-11-02'
+  kit:
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: High-factor sun cream
+    why: sun and wind on high or open ground burn faster than you expect
+    url: https://www.amazon.co.uk/s?k=sun+cream+spf+50
 - id: walk-the-malvern-ridge
   title: Walk the Malvern Hills from end to end
   category: move
@@ -8569,6 +9673,19 @@
   photo_caption: "Above the Wiñay Wayna ruins on the Inca Trail to Machu Picchu, 2016."
   photo_alt: "Stone terraces and ruins on a steep, green mountainside."
   photo_checked: '2026-11-01'
+  kit:
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Head torch
+    why: for early starts and anything that runs into dusk
+    url: https://www.amazon.co.uk/s?k=head+torch+rechargeable
+  - name: Merino walking socks
+    why: fewer blisters on long days; bring a spare pair
+    url: https://www.amazon.co.uk/s?k=merino+walking+socks
 - id: walk-a-section-of-the-larapinta-trail
   title: Walk a section of the Larapinta Trail in Australia
   category: travel
@@ -8600,6 +9717,16 @@
   photo_caption: "Looking south from Reveal Saddle on section 4 of the Larapinta Trail, 2021."
   photo_alt: "Red ridges and green scrub stretch away under a pale blue sky."
   photo_checked: '2026-11-01'
+  kit:
+  - name: Sun hat with a brim
+    why: shade for the face and neck on open ground
+    url: https://www.amazon.co.uk/s?k=sun+hat+wide+brim+hiking
+  - name: Water filter bottle
+    why: for refilling from streams on long routes; check what it filters before you trust it
+    url: https://www.amazon.co.uk/s?k=water+filter+bottle+hiking
+  - name: Fly net for your hat
+    why: flies in the outback can be relentless
+    url: https://www.amazon.co.uk/s?k=head+fly+net
 - id: hike-to-preikestolen
   title: Hike to Preikestolen (Pulpit Rock) in Norway
   category: travel
@@ -8633,6 +9760,16 @@
   photo_caption: "A panorama of Lysefjord, with Preikestolen on the right, 2007."
   photo_alt: "A wide fjord between rocky mountains, with a flat-topped cliff on the right."
   photo_checked: '2026-11-01'
+  kit:
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Daypack (20 to 30 litres)
+    why: room for water, waterproofs, food and a warm layer
+    url: https://www.amazon.co.uk/s?k=hiking+daypack+25+litre
 - id: hike-to-the-lake-agnes-teahouse
   title: Hike to the Lake Agnes teahouse above Lake Louise
   category: travel
@@ -8688,6 +9825,16 @@
     region: world
     checked: '2026-11-01'
   safety: Weather on the mountain changes quickly and the cableway can close without warning, so be ready to walk back down the way you came.
+  kit:
+  - name: Insulated water bottle
+    why: keeps water cool on hot days and stops it freezing on cold ones
+    url: https://www.amazon.co.uk/s?k=insulated+water+bottle
+  - name: Sun hat with a brim
+    why: shade for the face and neck on open ground
+    url: https://www.amazon.co.uk/s?k=sun+hat+wide+brim+hiking
+  - name: Daypack (20 to 30 litres)
+    why: room for water, waterproofs, food and a warm layer
+    url: https://www.amazon.co.uk/s?k=hiking+daypack+25+litre
 - id: walk-the-laugavegur-trail
   title: Walk the Laugavegur trail in Iceland
   category: move
@@ -8712,6 +9859,19 @@
     region: world
     checked: '2026-11-02'
   safety: Fog is common, phone signal is unreliable and snow bridges can be unstable, so follow the trail markers closely, talk to the wardens at each hut and call 112 in an emergency.
+  kit:
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Waterproof overtrousers
+    why: for rain and wind on exposed ground; side zips let you pull them on over boots
+    url: https://www.amazon.co.uk/s?k=waterproof+overtrousers
+  - name: Trekking poles
+    why: they take some of the load off your knees on long descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  - name: Water shoes
+    why: for slippery launch spots and rocky entries
+    url: https://www.amazon.co.uk/s?k=water+shoes+adult
 - id: climb-to-the-monastery-at-petra
   title: Climb to the Monastery at Petra
   category: travel
@@ -8792,6 +9952,13 @@
     region: us
     checked: '2026-11-02'
   safety: The summit is at high altitude, so slow down, take your time and drink plenty of water.
+  kit:
+  - name: Warm hat and gloves
+    why: you stand still a lot, and it gets cold
+    url: https://www.amazon.co.uk/s?k=thermal+hat+gloves+set
+  - name: Fleece mid layer
+    why: warmth you can add or take off as you climb and stop
+    url: https://www.amazon.co.uk/s?k=fleece+mid+layer
 - id: ride-the-bus-into-denali
   title: Ride the park bus into Denali National Park
   category: explore
@@ -8872,6 +10039,16 @@
     url: https://galapagos.gob.ec/campana-yo-si-cumplo-promueve-el-respeto-de-las-reglas-de-visita-en-galapagos/
     region: world
     checked: '2026-11-02'
+  kit:
+  - name: Snorkel and mask set
+    why: 'the mask matters most: press it to your face without the strap, and it should stay'
+    url: https://www.amazon.co.uk/s?k=snorkel+mask+set+adult
+  - name: Sun hat with a brim
+    why: shade for the face and neck on open ground
+    url: https://www.amazon.co.uk/s?k=sun+hat+wide+brim+hiking
+  - name: Rash vest
+    why: sun and chafe protection on the water
+    url: https://www.amazon.co.uk/s?k=rash+vest+adult+long+sleeve
 - id: walk-the-lakes-of-plitvice
   title: Walk among the lakes and waterfalls of Plitvice
   category: explore
@@ -8983,3 +10160,13 @@
     region: world
     checked: '2026-11-03'
   safety: Read the UK Foreign Office's advice for Uganda before booking, use a registered operator, and never take a tour that crosses into the Democratic Republic of Congo.
+  kit:
+  - name: Gardening gloves
+    why: for grabbing vines and nettles on steep forest slopes
+    url: https://www.amazon.co.uk/s?k=gardening+gloves
+  - name: Waterproof walking jacket
+    why: hill weather turns fast, and a proper hood matters
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Walking boots
+    why: try them on in the afternoon with your walking socks, and break them in before a long day
+    url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
