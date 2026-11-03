@@ -7,6 +7,9 @@ tags: [discoveries, history, archaeology, terracotta-army, china, asia, museums]
 segments: [learner, changer]
 level: any
 art: fields
+photo_file: "File:Qin Terracotta Army, Pit 1 09.jpg"
+photo_caption: "Terracotta warriors standing in Pit 1 near Xi'an, photographed in 2011."
+photo_alt: "Close view of several grey clay soldiers in rows, each with a different face, topknot hairstyle and moustache, standing beside a rough wall of reddish-brown earth."
 social_date: 2026-11-03
 hook: "Farmers digging a well in 1974 hit broken clay. It turned out to be an army of about 8,000 soldiers, buried for 2,200 years."
 lesson: "Discoveries often belong to more than one person, and the argument over who found something can last longer than the dig."
