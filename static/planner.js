@@ -63,17 +63,18 @@
   const BOOKISH = /\b(book|enter|register|apply|enrol|enroll|sign up|reserve|buy (?:a |your )?tickets?)\b/i;
 
   /* The suggested date for an activity: this year's fixed date if dates.yaml has one far enough ahead, else the start of
-     the next best month that leaves the full run-up, else (any time) the full run-up from today. */
+     the next best month that leaves the full run-up, else (any time) the full run-up from today.
+     `why` says which: fixed | season | any (the words are content/planner.yaml → notes.suggest_*). */
   function suggest(a, opts) {
     const today = todayUTC(opts && opts.today), lead = a.lead_weeks * 7;
-    if (a.dates && a.dates.next) { const n = parse(a.dates.next); if (n && diffDays(today, n) >= lead) return { date: a.dates.next }; }
+    if (a.dates && a.dates.next) { const n = parse(a.dates.next); if (n && diffDays(today, n) >= lead) return { date: a.dates.next, why: 'fixed' }; }
     const months = (a.dates && a.dates.months) || a.when || [];
-    if (!months.length) return { date: iso(addDays(today, Math.max(lead, 7))) };
+    if (!months.length) return { date: iso(addDays(today, Math.max(lead, 7))), why: 'any' };
     for (let i = 0; i < 36; i++) {
       const d = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() + i, 1));
-      if (months.includes(d.getUTCMonth() + 1) && diffDays(today, d) >= lead) return { month: iso(d).slice(0, 7) };
+      if (months.includes(d.getUTCMonth() + 1) && diffDays(today, d) >= lead) return { month: iso(d).slice(0, 7), why: 'season' };
     }
-    return { date: iso(addDays(today, lead)) };
+    return { date: iso(addDays(today, lead)), why: 'any' };
   }
 
   function build(a, settings, opts) {
@@ -177,5 +178,5 @@
     return plan;
   }
 
-  return { VERSION, build, suggest, monthsText, longDate: s => longDate(parse(s)), parse };
+  return { VERSION, build, suggest, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

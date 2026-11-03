@@ -961,3 +961,50 @@ h1{line-height:1.04}
 .pz-book a:hover{text-decoration:underline}
 @media (max-width:720px){.book{grid-template-columns:1fr;gap:24px}.book-cover{max-width:260px}.book-promo{grid-template-columns:84px minmax(0,1fr);gap:16px;padding:16px}.book-promo-img{width:84px}}
 @media (min-width:821px){.tiles:has(.tile-book){grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* My year: "Plan this" on activity pages (RUNBOOK §6s, day 3) */
+.pl{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:32px 0;scroll-margin-top:96px}
+.pl:focus{outline:none}.pl:focus-visible{outline:3px solid var(--focus,#8a5a00);outline-offset:3px}
+.pl>h2{margin-top:0}
+.pl fieldset{border:0;padding:0;margin:0 0 8px;min-width:0}
+.pl legend{font-weight:600;padding:0;margin-bottom:6px}
+.pl-when{display:flex;flex-wrap:wrap;gap:4px 18px}
+.pl-choice{display:inline-flex;align-items:center;gap:8px;min-height:44px;cursor:pointer}
+.pl-choice input{width:20px;height:20px;margin:0;accent-color:var(--brand)}
+.pl-pick input,.pl-pick select{font:inherit;font-size:1rem;color:var(--ink);padding:.5em .6em;border:1px solid var(--line);border-radius:8px;background:#fff;min-height:44px;max-width:100%}
+.pl-suggest{margin:6px 0 0}
+.pl-err{color:var(--brand-ink);font-weight:600;margin:8px 0 0}
+.pl-acts{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
+.pl-acts .btn{min-height:44px}
+.pl-out:empty{display:none}
+.pl-out{border-top:1px solid var(--line);margin-top:18px;padding-top:6px}
+.pl-head h3{margin:.6em 0 .1em}.pl-head h3:focus{outline:none}.pl-head h3:focus-visible{outline:3px solid var(--focus,#8a5a00);outline-offset:2px}
+.pl-head .meta{margin:0 0 .6em}
+.pl-notes{background:#f7f2e6;border-radius:10px;padding:10px 14px 10px 32px;margin:10px 0;font-size:.95rem}
+.pl-month{font-family:var(--serif);font-size:1.05rem;margin:22px 0 8px;color:var(--brand-ink)}
+.pl-steps{list-style:none;margin:0;padding:0 0 0 18px;border-left:3px solid var(--line)}
+.pl-step{position:relative;margin:0 0 16px;padding:0 0 0 4px}
+.pl-step::before{content:"";position:absolute;left:-27px;top:.45em;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid var(--gold)}
+.pl-step.is-day::before{background:var(--brand);border-color:var(--brand)}
+.pl-step[data-strand="train"]::before{border-color:var(--move)}
+.pl-step[data-strand="safety"]::before{border-color:var(--brand)}
+.pl-step p{margin:0 0 4px}
+.pl-date{font-size:.9rem;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.pl-date time{font-weight:600;color:var(--ink)}
+.pl-tag{font-size:.72rem;font-weight:600;letter-spacing:.04em;border:1px solid var(--line);border-radius:999px;padding:1px 8px;white-space:nowrap}
+.pl-tag-gone{background:#f1efea}
+.pl-text{font-weight:600;font-size:1.02rem}
+.pl-step.is-day .pl-text{font-family:var(--serif);font-size:1.15rem}
+.pl-detail{font-size:.95rem}
+.pl-links{margin:2px 0 6px;padding-left:20px;font-size:.95rem}
+.pl-links li{margin:2px 0}
+.pl-links li{line-height:1.9}.pl-links a{padding:6px 0;overflow-wrap:anywhere}
+.pl-why{font-size:.9rem;color:var(--muted)}
+.pl-why span{font-weight:600}
+.pl-step.is-gone .pl-text,.pl-step.is-gone .pl-detail{color:var(--muted)}
+.pl-saved{background:#eef6f1;border-radius:10px;padding:12px 16px;margin:16px 0 0}
+.pl-saved p{margin:0 0 4px}.pl-saved a{display:inline-block;padding:8px 0}
+.pl-safety{margin:16px 0}
+.pl-open{min-height:44px}
+@media print{.pl-form,.pl-acts{display:none}}
+.fl-row-plan{margin:0 0 8px}.fl-row-plan a{display:inline-block;padding:10px 0;font-weight:600}
+.pl-lwhy{display:block;color:var(--ink);margin:-4px 0 6px}

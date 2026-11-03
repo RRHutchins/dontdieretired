@@ -20,6 +20,7 @@
 
   <div class="fl-cta">
     <button type="button" class="btn fl-add" data-fl-add="{{ c.id }}" aria-pressed="false">Add to my list</button>
+    <a class="btn btn-ghost pl-open" href="#plan" data-pl-open hidden>Plan this</a>
     <a class="fl-mine-link" href="/list/#mine" data-fl-minelink hidden>See my list</a>
     {{ share_button(cfg.site.url ~ '/list/' ~ c.id ~ '/', c.title, 'challenge') }}
   </div>
@@ -68,6 +69,29 @@
   {% if c.safety %}<aside class="fl-safety"><strong>Worth knowing.</strong> {{ c.safety }}</aside>{% endif %}
   {% if c.category in ('money', 'earn') %}<p class="disclosure">This is general information, not financial or business advice for your own circumstances.</p>{% endif %}
 
+  <section class="pl" id="plan" data-pl hidden aria-labelledby="pl-h" tabindex="-1">
+    <h2 id="pl-h">Plan this</h2>
+    <p>Pick a day, or a month, and we will set out how to get ready, step by step, with a date and a reason for each. {{ pkind.why }}</p>
+    <form class="pl-form" data-pl-form novalidate>
+      <fieldset>
+        <legend>When do you want to do it?</legend>
+        <div class="pl-when">
+          <label class="pl-choice"><input type="radio" name="pl-by" value="date" data-pl-by> On a day</label>
+          <label class="pl-choice"><input type="radio" name="pl-by" value="month" data-pl-by> Some time in a month</label>
+        </div>
+        <div class="pl-pick">
+          <label data-pl-datewrap><span class="sr-only">The day</span><input type="date" data-pl-date></label>
+          <label data-pl-monthwrap hidden><span class="sr-only">The month</span><select data-pl-month></select></label>
+        </div>
+      </fieldset>
+      <p class="meta pl-suggest" data-pl-suggest></p>
+      <p class="pl-err" data-pl-err role="alert" hidden></p>
+      <p class="pl-acts"><button type="submit" class="btn">Show my plan</button></p>
+    </form>
+    <div class="pl-out" data-pl-out aria-live="polite"></div>
+  </section>
+  <script type="application/json" id="pl-data">{{ {"a": c.plan, "s": pset} | tojson }}</script>
+
   {% if c.local %}{{ near_you(c.local) }}{% endif %}
 
   {% if c.faq %}
@@ -104,4 +128,4 @@
   <p><a href="/list/">← All activities</a></p>
 </article>
 {% endblock %}
-{% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script>{% endblock %}
+{% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script><script src="/static/planner.js?v={{ asset_v }}" defer></script><script src="/static/plan-page.js?v={{ asset_v }}" defer></script>{% endblock %}

@@ -5,12 +5,16 @@
 
    Stored shape, version 1:
    { version: 1, title, target, settings_updated_at,
-     items: [ { id, cid, title, status, date, note, pos, added_at, updated_at, deleted } ] }
+     items: [ { id, cid, title, status, date, month, plan_made, note, pos, added_at, updated_at, deleted } ] }
    - id: for a catalogue challenge it IS the challenge id (so two devices adding the same challenge
      merge into one); for a reader's own challenge it is "x-" + random.
    - cid: the catalogue id, or null for the reader's own. title is kept only for the reader's own.
    - status: want | planned | doing | done.   - deleted: true instead of removing, so merges are safe.
-   - updated_at: ISO time of the last change to that item. Newest wins in a merge. */
+   - updated_at: ISO time of the last change to that item. Newest wins in a merge.
+   - My year (RUNBOOK §6s, added 3 Nov 2026; additive, so still version 1): a planned item has EITHER a `date`
+     (YYYY-MM-DD, the day itself) OR a `month` (YYYY-MM, "some time in"), never both, and `plan_made` (YYYY-MM-DD),
+     the day the plan was made. The plan's steps are not stored: static/planner.js rebuilds them from these fields
+     with today = plan_made, so a saved plan does not shift as the days pass. */
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api; else root.DDRList = api;
@@ -20,6 +24,7 @@
   const now = () => new Date().toISOString();
   const empty = () => ({ version: VERSION, title: 'My list', target: 50, settings_updated_at: '', items: [] });
   const str = (v, n) => (typeof v === 'string' ? v : '').slice(0, n);
+  const DAY = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/, MONTH = /^\d{4}-(0[1-9]|1[0-2])$/;
 
   // Make anything (old data, a backup file, a hand-edited file) into a well-formed list. Never throws.
   function clean(d) {
@@ -35,10 +40,12 @@
       out.items.push({
         id: it.id.slice(0, 80), cid: typeof it.cid === 'string' ? it.cid.slice(0, 80) : null,
         title: str(it.title, 120), status: STATUSES.includes(it.status) ? it.status : 'want',
-        date: /^\d{4}-\d{2}-\d{2}$/.test(it.date || '') ? it.date : '', note: str(it.note, 500),
+        date: DAY.test(it.date || '') ? it.date : '', month: '', plan_made: DAY.test(it.plan_made || '') ? it.plan_made : '', note: str(it.note, 500),
         pos: typeof it.pos === 'number' && isFinite(it.pos) ? it.pos : i,
         added_at: str(it.added_at, 30) || str(it.updated_at, 30), updated_at: str(it.updated_at, 30), deleted: !!it.deleted,
       });
+      const o = out.items[out.items.length - 1];
+      if (!o.date && MONTH.test(it.month || '')) o.month = it.month;   // a date wins over a month: never both
     });
     return out;
   }
@@ -76,14 +83,32 @@
     const id = cid || 'x-' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
     const cur = find(d, id), pos = d.items.reduce((m, it) => Math.max(m, it.pos), -1) + 1;
     if (cur) Object.assign(cur, { deleted: false, status: cur.deleted ? 'want' : cur.status, updated_at: t, pos: cur.deleted ? pos : cur.pos });
-    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', note: '', pos, added_at: t, updated_at: t, deleted: false });
+    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', month: '', plan_made: '', note: '', pos, added_at: t, updated_at: t, deleted: false });
     save(d); return d;
   }
   function update(id, changes) {
     const d = load(), it = find(d, id); if (!it) return d;
     ['status', 'date', 'note', 'title'].forEach(k => { if (k in changes) it[k] = changes[k]; });
+    if (changes.date) it.month = '';   // a day chosen on the list replaces a month
     it.updated_at = now(); save(d); return load();
   }
+  /* My year: save a plan for a catalogue activity (adding it to the list if needed), or clear it with when = null.
+     when = { date: 'YYYY-MM-DD' } or { month: 'YYYY-MM' }; today = the reader's day (YYYY-MM-DD) the plan is made. */
+  function plan(cid, when, today) {
+    if (!has(cid)) add(cid);
+    const d = load(), it = find(d, cid);
+    if (when && (DAY.test(when.date || '') || MONTH.test(when.month || ''))) {
+      it.date = when.date && DAY.test(when.date) ? when.date : '';
+      it.month = it.date ? '' : when.month;
+      it.plan_made = DAY.test(today || '') ? today : now().slice(0, 10);
+      if (it.status === 'want') it.status = 'planned';
+    } else {
+      it.date = ''; it.month = ''; it.plan_made = '';
+      if (it.status === 'planned') it.status = 'want';
+    }
+    it.updated_at = now(); save(d); return load();
+  }
+  const get = id => { const it = find(load(), id); return it && !it.deleted ? it : null; };
   function remove(id) { const d = load(), it = find(d, id); if (it) { it.deleted = true; it.updated_at = now(); save(d); } return d; }
   function move(id, dir) {   // dir -1 up, +1 down, among the items still on the list
     const d = load(), l = live(d).sort((x, y) => x.pos - y.pos), i = l.findIndex(it => it.id === id), j = i + dir;
@@ -97,5 +122,5 @@
   const flag = (name, value) => { try { if (value === undefined) return localStorage.getItem(KEY + '_' + name); localStorage.setItem(KEY + '_' + name, value); } catch (e) {} return null; };
   const has = id => { const it = find(load(), id); return !!(it && !it.deleted); };
 
-  return { KEY, VERSION, STATUSES, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag };
+  return { KEY, VERSION, STATUSES, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get };
 });

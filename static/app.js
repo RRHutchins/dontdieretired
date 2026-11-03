@@ -206,6 +206,16 @@
     return /^America\/(?!Toronto|Vancouver|Edmonton|Winnipeg|Halifax|St_Johns|Regina|Mexico|Bogota|Lima|Sao_Paulo|Buenos_Aires|Santiago|Caracas)/.test(tz) || lang === 'en-us';
   } catch { return false; } })();
   document.body.dataset.region = isUS ? 'us' : 'row';
+  // For links drawn by page scripts (the planner, RUNBOOK §6s): the same partner ids as the links below.
+  window.DDR.affUrl = (href, kind) => { try {
+    const u = new URL(href), ex = (window.DDR.experiences || {});
+    if (kind === 'amazon' && u.hostname.includes('amazon.')) {
+      if (isUS && u.hostname.endsWith('amazon.co.uk')) { u.hostname = 'www.amazon.com'; u.searchParams.delete('tag'); }
+      if (!u.searchParams.get('tag')) u.searchParams.set('tag', u.hostname.endsWith('amazon.com') ? DDR.affiliateTagUS : DDR.affiliateTagUK);
+    }
+    if (kind === 'viator' && ex.viator) { u.searchParams.set('pid', ex.viator); u.searchParams.set('mcid', '42383'); u.searchParams.set('medium', 'link'); }
+    if (kind === 'getyourguide' && ex.getyourguide) u.searchParams.set('partner_id', ex.getyourguide);
+    return u.toString(); } catch { return href; } };
   $$('a[data-aff]').forEach(a => {
     try { const u = new URL(a.href);
       if (u.hostname.includes('amazon.')) {

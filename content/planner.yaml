@@ -133,7 +133,7 @@ steps:
   dates:
     at: start
     text: "Check this year's dates"
-    why: "It happens at the same time every year, but dates move, so check the official page before you plan round it."
+    why: "It happens at the same time every year, but dates move: check this year's on the organiser's own website before you plan round it. The link here is where we read when it usually happens."
   book:
     at: "start+7"
     text: "Compare and book"
@@ -180,3 +180,11 @@ notes:
   too_soon: "{event} needs at least {weeks} weeks of training, and your date is sooner than that. The earliest date that leaves enough time is {earliest}."
   train_short: "{event} usually takes {usual} weeks of training. Your date leaves {weeks}, which is not below the engine's minimum of {min}, so the plan runs {weeks} weeks."
   past: "That date has already gone. Pick a date from today on."
+  # Under the date picker on an activity page (RUNBOOK §6s, day 3): why the date we fill in was chosen.
+  suggest_fixed: "We have filled in the next date we found published. Check it on the organiser's own website before you book anything."
+  suggest_season: "We have filled in the first of its best months ({months}) that leaves our usual {weeks}-week run-up. Change it to suit you."
+  suggest_any: "Any time of year suits this, so we have filled in a date that leaves our usual {weeks}-week run-up. Change it to suit you."
+  # Shown with a saved plan.
+  saved: "Saved on this device only, with your list. Clearing this browser's data clears it too, so save a backup from your list now and then."
+  saved_past: "Your date, {date}, has passed. Mark it done on your list, or pick a new date."
+  affiliate: "Some of the links in this plan are affiliate links: if you book or buy through them we may earn a commission at no extra cost to you."
