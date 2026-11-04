@@ -433,7 +433,7 @@ rounds:
         checked: 2026-10-27
       - q: "The Rubik's Cube was invented in Budapest. Which country is that: Hungary, Russia or Japan?"
         a: "Hungary"
-        note: "Ernő Rubik built geometric models as a hobby. A cube can be mixed up in about 43 quintillion ways."
+        note: "Erno Rubik built geometric models as a hobby. A cube can be mixed up in about 43 quintillion ways."
         level: 1
         source: {title: "Erno Rubik", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/biography/Erno-Rubik"}
         checked: 2026-10-27
@@ -2365,3 +2365,409 @@ rounds:
         for: children
         source: {title: "Pounds, Shillings and Pence", publisher: "Royal Mint Museum", url: "https://www.royalmintmuseum.org.uk/journal/history/pounds-shillings-and-pence/"}
         checked: 2026-11-03
+  - id: swap-round-uk-2
+    title: "Swap round: telly and toys"
+    kind: swap
+    editions: [uk]
+    intro: "Grown-ups, these are from the children's world. Children, these are from the grown-ups'. No helping each other!"
+    questions:
+      - q: "Grown-ups: in Peppa Pig, what is the name of Peppa's little brother, who takes his toy dinosaur everywhere?"
+        a: "George"
+        note: "He calls it a \"dine-saw\". Peppa's favourite thing is jumping up and down in muddy puddles."
+        level: 2
+        for: grown-ups
+        source: {title: "Meet The Characters From Peppa Pig", publisher: "Paramount+", url: "https://www.paramountplus.com/shows/peppa-pig/news/1010752/meet-the-characters-from-peppa-pig/"}
+        checked: 2026-11-04
+      - q: "Children: from the outside, Doctor Who's time machine, the TARDIS, looks like what: a red phone box, a blue police box or a post box?"
+        a: "A police box"
+        accept: ["A police telephone box", "A blue police box"]
+        note: "It is much bigger on the inside. TARDIS stands for Time and Relative Dimension in Space, and it first appeared in 1963."
+        level: 1
+        for: children
+        source: {title: "What is the TARDIS? | Doctor Who", publisher: "BBC Studios (Doctor Who official website)", url: "https://www.doctorwho.tv/news-and-features/what-is-the-tardis"}
+        checked: 2026-11-04
+      - q: "Grown-ups: in PAW Patrol, what is the name of the ten-year-old boy who leads the rescue pups?"
+        a: "Ryder"
+        note: "His pups include Chase, a German shepherd police pup who is keen on solving mysteries."
+        level: 2
+        for: grown-ups
+        source: {title: "PAW Patrol Characters & Cast: A Parent's Guide To Adventure City's Finest", publisher: "Paramount+ (Sneak Peak)", url: "https://www.paramountplus.com/sneak-peak/paw-patrol-characters-cast"}
+        checked: 2026-11-04
+      - q: "Children: the Space Hopper bounced into Britain in 1968. What colour was the most popular one: orange, purple or green?"
+        a: "Orange"
+        note: "The very first ones were blue. It has a face printed on the front and two handles at the top like horns, and it was a huge craze in the 1970s."
+        level: 1
+        for: children
+        source: {title: "Space Hopper", publisher: "Victoria and Albert Museum", url: "https://collections.vam.ac.uk/item/O180413/space-hopper-ride-on-toy-mettoy-playcraft-ltd/"}
+        checked: 2026-11-04
+      - q: "Grown-ups: in Hey Duggee, what do the Squirrels earn at the end of each adventure?"
+        a: "A badge"
+        note: "Duggee is a big, lovable dog who runs the Squirrel Club. The series has won six BAFTAs and three International Emmys."
+        level: 2
+        for: grown-ups
+        source: {title: "Hey Duggee", publisher: "Studio AKA", url: "https://studioaka.co.uk/?p=1132"}
+        checked: 2026-11-04
+      - q: "Children: Spirograph, a 1960s toy, used plastic cogs and a pen. What did it draw: swirly patterns, maps or cartoons?"
+        a: "Swirly patterns"
+        accept: ["Patterns", "Curly patterns"]
+        note: "It was invented by Denys Fisher, who first showed it at a toy fair in Nuremberg in 1965. It won Educational Toy of the Year in the UK."
+        level: 1
+        for: children
+        source: {title: "Spirograph | Denys Fisher", publisher: "Victoria and Albert Museum", url: "https://collections.vam.ac.uk/item/O1243825/"}
+        checked: 2026-11-04
+      - q: "Grown-ups: who wrote The Gruffalo, the picture book about a clever mouse in a deep dark wood?"
+        a: "Julia Donaldson"
+        note: "It is illustrated by Axel Scheffler. On his walk the mouse meets an owl, a snake and a hungry Gruffalo."
+        level: 2
+        for: grown-ups
+        source: {title: "The Gruffalo", publisher: "Pan Macmillan", url: "https://panmacmillan.co.in/authors/julia-donaldson/the-gruffalo/9781509815128"}
+        checked: 2026-11-04
+      - q: "Children: Concorde flew from London to New York in about three hours. Did it fly at the speed of sound, or twice the speed of sound?"
+        a: "Twice the speed of sound"
+        accept: ["Mach 2"]
+        note: "It flew until 2003. Britain and France built it together, and it cruised at 60,000 feet. The first prototype flew in 1969."
+        level: 2
+        for: children
+        source: {title: "Concorde prototype aircraft", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/objects/co29806/concorde-prototype-aircraft"}
+        checked: 2026-11-04
+      - q: "Grown-ups: what is the name of the hero you play in The Legend of Zelda games?"
+        a: "Link"
+        note: "Shigeru Miyamoto says he was named Link because he connects people together."
+        level: 3
+        for: grown-ups
+        source: {title: "Get to know Link and his many adventures!", publisher: "Nintendo", url: "https://nintendo.com/au/news-and-articles/get-to-know-link-and-his-many-adventures"}
+        checked: 2026-11-04
+      - q: "Children: when Erno Rubik made his famous cube in the 1970s, what was it first called?"
+        a: "The Magic Cube"
+        accept: ["Magic Cube"]
+        note: "Erno Rubik taught interior design in Budapest. More than 100 million cubes had been sold around the world by 1981."
+        level: 3
+        for: children
+        source: {title: "Erno Rubik", publisher: "Lemelson-MIT Program, Massachusetts Institute of Technology", url: "https://lemelson.mit.edu/resources/erno-rubik"}
+        checked: 2026-11-04
+  - id: swap-round-uk-3
+    title: "Swap round: games and gadgets"
+    kind: swap
+    editions: [uk]
+    intro: "Grown-ups, these are from the children's world. Children, these are from the grown-ups'. No helping each other!"
+    questions:
+      - q: "Grown-ups: SpongeBob SquarePants lives under the sea in Bikini Bottom. What fruit is his house?"
+        a: "A pineapple"
+        note: "He lives there with his pet snail, Gary, and works as a fry cook at the Krusty Krab."
+        level: 2
+        for: grown-ups
+        source: {title: "SpongeBob SquarePants", publisher: "Australian Centre for the Moving Image (ACMI)", url: "https://www.acmi.net.au/works/61083--spongebob-squarepants/"}
+        checked: 2026-11-04
+      - q: "Children: Pac-Man, the 1980s arcade game hero, was reportedly inspired by which food with one slice taken out?"
+        a: "A pizza"
+        note: "He was designed by Toru Iwatani at the Japanese games company Namco."
+        level: 1
+        for: children
+        source: {title: "Pac-Man Telephone, 1982", publisher: "National Museum of American History, Smithsonian Institution", url: "https://insider.si.edu/?p=37170"}
+        checked: 2026-11-04
+      - q: "Grown-ups: what is the first name of the boy who keeps the diary in Diary of a Wimpy Kid?"
+        a: "Greg"
+        accept: ["Greg Heffley"]
+        note: "Jeff Kinney first put the story online, a little each day, in 2004. The books are now published in more than 50 languages."
+        level: 2
+        for: grown-ups
+        source: {title: "Jeff Kinney", publisher: "Britannica Kids (Encyclopaedia Britannica)", url: "https://kids.britannica.com/students/article/Jeff-Kinney/570794"}
+        checked: 2026-11-04
+      - q: "Children: the penny-farthing bicycle had one huge wheel and one tiny one. Was it named after two coins, two horses or two inventors?"
+        a: "Two coins"
+        accept: ["Coins", "A penny and a farthing"]
+        note: "The big wheel was the penny and the little one the farthing. The one in the Science Museum's collection was made in Coventry in 1884."
+        level: 1
+        for: children
+        source: {title: "Rudge 'ordinary' or 'penny farthing' bicycle", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/objects/co25834/rudge-ordinary-or-penny-farthing-bicycle"}
+        checked: 2026-11-04
+      - q: "Grown-ups: Dog Man, star of Dav Pilkey's comic books, has the head of a dog and the body of what?"
+        a: "A police officer"
+        accept: ["A policeman", "A cop", "A human"]
+        note: "A police dog and his officer partner were hurt on the job, and an operation joined the dog's head to the officer's body. Dav Pilkey also created Captain Underpants."
+        level: 2
+        for: grown-ups
+        source: {title: "Dog Man", publisher: "Scholastic New Zealand", url: "https://www.scholastic.co.nz/books/book-promotion/christmas-list-2016/dog-man"}
+        checked: 2026-11-04
+      - q: "Children: when Mr Potato Head first went on sale in 1952, what did children stick his eyes, nose and mouth into?"
+        a: "A real potato"
+        accept: ["A potato"]
+        note: "The kit came without a body, so families used their own potatoes. Mr Potato Head was the first toy ever advertised on television; plastic bodies came in 1964."
+        level: 1
+        for: children
+        source: {title: "Me and My Spuds", publisher: "Pentacrest Museums, The University of Iowa", url: "https://pentacrestmuseums.uiowa.edu/me-and-my-spuds"}
+        checked: 2026-11-04
+      - q: "Grown-ups: in Disney's Moana, what kind of animal is Heihei?"
+        a: "A rooster"
+        accept: ["A cockerel", "A chicken"]
+        note: "In early versions he was smarter and snarkier. The film-makers made him much dimmer so that he could stay in the film."
+        level: 2
+        for: grown-ups
+        source: {title: "5 Things You Might Not Know About Moana", publisher: "D23 (The Walt Disney Company)", url: "https://d23.com/5-things-you-might-not-know-about-moana/"}
+        checked: 2026-11-04
+      - q: "Children: in Tetris, the falling-blocks game from 1984, how many squares make up each piece?"
+        a: "Four"
+        accept: ["4"]
+        note: "It was made by Alexey Pajitnov, a programmer in the Soviet Union. Nintendo packaged it with the Game Boy when it launched in 1989."
+        level: 2
+        for: children
+        source: {title: "Tetris", publisher: "The Strong National Museum of Play", url: "https://www.museumofplay.org/?p=2331"}
+        checked: 2026-11-04
+      - q: "Grown-ups: in Disney's Encanto, what is the surname of the family who live in a magical house in Colombia?"
+        a: "Madrigal"
+        accept: ["The Madrigals"]
+        note: "Mirabel is the only child in the family without a magical gift. Her sister Luisa is incredibly strong."
+        level: 3
+        for: grown-ups
+        source: {title: "Meet the Characters of Encanto", publisher: "D23 (The Walt Disney Company)", url: "https://d23.com/meet-the-characters-of-encanto/"}
+        checked: 2026-11-04
+      - q: "Children: the Etch A Sketch was invented by a Frenchman, André Cassagnes, who called it L'Écran Magique. What does that mean?"
+        a: "The magic screen"
+        accept: ["Magic screen"]
+        note: "Inside, aluminium powder and tiny plastic beads cling to the back of the screen, and a stylus draws a line on the back of the screen."
+        level: 3
+        for: children
+        source: {title: "Etch A Sketch | National Toy Hall of Fame", publisher: "The Strong National Museum of Play", url: "https://www.museumofplay.org/?p=2105"}
+        checked: 2026-11-04
+  - id: swap-round-us-1
+    title: "Swap round: toys through time"
+    kind: swap
+    editions: [us]
+    intro: "Grown-ups, these are from the children's world. Children, these are from the grown-ups'. No helping each other!"
+    questions:
+      - q: "Grown-ups: Daniel Tiger, the little tiger on PBS Kids, is the son of a puppet from which much older TV show?"
+        a: "Mister Rogers' Neighborhood"
+        accept: ["Mister Rogers"]
+        note: "His dad was Daniel Striped Tiger. Like Mister Rogers, Daniel starts his day by putting on a red sweater and tying his sneakers."
+        level: 2
+        for: grown-ups
+        source: {title: "DANIEL TIGER'S NEIGHBORHOOD Debuts Monday, September 3, on PBS KIDS", publisher: "PBS", url: "https://www.pbs.org/about/about-pbs/blogs/news/daniel-tigers-neighborhood-debuts-monday-september-3-on-pbs-kids/"}
+        checked: 2026-11-04
+      - q: "Children: the Easy-Bake Oven, a toy from 1963, baked little cakes using the heat from what: a candle, a light bulb or a hair dryer?"
+        a: "A light bulb"
+        note: "About 500,000 were sold in the first year, and more than 23 million since."
+        level: 1
+        for: children
+        source: {title: "How the Easy-Bake Oven, an Appliance That Allowed Kids to Heat Treats With a Light Bulb, Revolutionized the Toy Industry", publisher: "Smithsonian Magazine", url: "https://www.smithsonianmag.com/smithsonian-institution/how-the-easy-bake-oven-an-appliance-that-allowed-kids-to-heat-treats-with-a-light-bulb-revolutionized-the-toy-industry-180988181/"}
+        checked: 2026-11-04
+      - q: "Grown-ups: Pikachu, the yellow Pokémon, keeps its electricity in which part of its body?"
+        a: "Its cheeks"
+        accept: ["Cheeks"]
+        note: "It has electric sacs on both cheeks. Give it a Thunder Stone and it evolves into Raichu."
+        level: 2
+        for: grown-ups
+        source: {title: "Pikachu Printable Crafts, Quizzes & Puzzles for Kids", publisher: "Nintendo (Play Nintendo)", url: "https://play.nintendo.com/themes/friends/pikachu"}
+        checked: 2026-11-04
+      - q: "Children: the Frisbee is named after a bakery whose tin plates students were said to throw across the grass. Did the bakery make pies, bread or doughnuts?"
+        a: "Pies"
+        note: "The Frisbie Pie Company was founded in Bridgeport, Connecticut, in 1871. Toymakers in California made the plastic version in the 1950s."
+        level: 1
+        for: children
+        source: {title: "Frisbie's Pies Plate, circa 1935", publisher: "The Henry Ford", url: "https://www.thehenryford.org/collections-and-research/digital-collections/artifact/350954"}
+        checked: 2026-11-04
+      - q: "Grown-ups: in Mo Willems's books, Piggie's best friend Gerald is what kind of animal?"
+        a: "An elephant"
+        note: "Mo Willems wrote for Sesame Street for nine years and won six Emmys there. His book Don't Let the Pigeon Drive the Bus! was a Caldecott Honor Book in 2004."
+        level: 2
+        for: grown-ups
+        source: {title: "Mo Willems", publisher: "Britannica Kids (Encyclopaedia Britannica)", url: "https://kids.britannica.com/students/article/Mo-Willems/628349"}
+        checked: 2026-11-04
+      - q: "Children: on Sesame Street, which began in 1969, where does Oscar the Grouch live?"
+        a: "In a trash can"
+        accept: ["A trash can", "A garbage can", "A dustbin"]
+        note: "In the very first season his fur was orange. He turned green in the second."
+        level: 1
+        for: children
+        source: {title: "Oscar the Grouch puppet", publisher: "National Museum of American History, Smithsonian Institution", url: "https://americanhistory.si.edu/collections/object/nmah_1182904"}
+        checked: 2026-11-04
+      - q: "Grown-ups: what kind of animal is Gary, SpongeBob SquarePants's pet?"
+        a: "A snail"
+        note: "SpongeBob and Gary live in a pineapple under the sea in Bikini Bottom."
+        level: 2
+        for: grown-ups
+        source: {title: "SpongeBob SquarePants", publisher: "Australian Centre for the Moving Image (ACMI)", url: "https://www.acmi.net.au/works/61083--spongebob-squarepants/"}
+        checked: 2026-11-04
+      - q: "Children: the Slinky was invented after a navy engineer knocked a spring off a shelf in 1943. What did the spring do?"
+        a: "It walked down to the floor"
+        accept: ["It stepped down", "It walked"]
+        note: "Richard James's wife, Betty, found the name in a dictionary. The first 400 sold out in 90 minutes at Gimbels in Philadelphia at Christmas 1945."
+        level: 2
+        for: children
+        source: {title: "The Slinky", publisher: "Heinz History Center", url: "https://www.heinzhistorycenter.org/blog/collection-spotlight-the-slinky-a-spring-a-spring-a-marvelous-thing/"}
+        checked: 2026-11-04
+      - q: "Grown-ups: Minecraft's green Creeper was apparently made by accident when its creator got the code wrong for which farm animal?"
+        a: "A pig"
+        note: "The Creeper creeps up on players and then explodes. Minecraft was made by the Swedish designer Markus 'Notch' Persson."
+        level: 3
+        for: grown-ups
+        source: {title: "Creeper", publisher: "Victoria and Albert Museum", url: "https://collections.vam.ac.uk/item/O1350002"}
+        checked: 2026-11-04
+      - q: "Children: the name Crayola comes partly from craie, the French word for what?"
+        a: "Chalk"
+        note: "The first box, in 1903, held eight colours and cost five cents. The name was thought up by Alice Binney, a former teacher."
+        level: 3
+        for: children
+        source: {title: "Who Invented Crayola Crayons? Meet Edwin Binney", publisher: "National Inventors Hall of Fame", url: "https://www.invent.org/blog/inventors/crayola-crayons"}
+        checked: 2026-11-04
+  - id: swap-round-us-2
+    title: "Swap round: screens and games"
+    kind: swap
+    editions: [us]
+    intro: "Grown-ups, these are from the children's world. Children, these are from the grown-ups'. No helping each other!"
+    questions:
+      - q: "Grown-ups: in PAW Patrol, what is the name of the ten-year-old boy who leads the rescue pups?"
+        a: "Ryder"
+        note: "His pups include Chase, a German shepherd police pup who is keen on solving mysteries."
+        level: 2
+        for: grown-ups
+        source: {title: "PAW Patrol Characters & Cast: A Parent's Guide To Adventure City's Finest", publisher: "Paramount+ (Sneak Peak)", url: "https://www.paramountplus.com/sneak-peak/paw-patrol-characters-cast"}
+        checked: 2026-11-04
+      - q: "Children: Pac-Man, the 1980s arcade game hero, was reportedly inspired by which food with one slice taken out?"
+        a: "A pizza"
+        note: "He was designed by Toru Iwatani at the Japanese games company Namco."
+        level: 1
+        for: children
+        source: {title: "Pac-Man Telephone, 1982", publisher: "National Museum of American History, Smithsonian Institution", url: "https://insider.si.edu/?p=37170"}
+        checked: 2026-11-04
+      - q: "Grown-ups: in Peppa Pig, what is the name of Peppa's little brother, who takes his toy dinosaur everywhere?"
+        a: "George"
+        note: "He calls it a \"dine-saw\". Peppa's favourite thing is jumping up and down in muddy puddles."
+        level: 2
+        for: grown-ups
+        source: {title: "Meet The Characters From Peppa Pig", publisher: "Paramount+", url: "https://www.paramountplus.com/shows/peppa-pig/news/1010752/meet-the-characters-from-peppa-pig/"}
+        checked: 2026-11-04
+      - q: "Children: Sony's Walkman, from 1979, was a music player you could carry. What did it play: cassette tapes, video games or DVDs?"
+        a: "Cassette tapes"
+        accept: ["Tapes", "Cassettes"]
+        note: "It was first introduced as the Soundabout. Two people could listen at once, and a little microphone let them talk without taking their headphones off."
+        level: 1
+        for: children
+        source: {title: "Sony TPS-L2 \"Walkman\" Cassette Player", publisher: "National Museum of American History, Smithsonian Institution", url: "https://music.si.edu/node/1231"}
+        checked: 2026-11-04
+      - q: "Grown-ups: in Disney's Moana, what kind of animal is Heihei?"
+        a: "A rooster"
+        accept: ["A chicken"]
+        note: "In early versions he was smarter and snarkier. The filmmakers made him much dimmer so that he could stay in the film."
+        level: 2
+        for: grown-ups
+        source: {title: "5 Things You Might Not Know About Moana", publisher: "D23 (The Walt Disney Company)", url: "https://d23.com/5-things-you-might-not-know-about-moana/"}
+        checked: 2026-11-04
+      - q: "Children: how do you wipe a drawing off an Etch A Sketch?"
+        a: "Turn it over and shake it"
+        accept: ["Shake it"]
+        note: "Inside, aluminium powder and tiny plastic beads cling to the back of the screen. Its French inventor called it L'Écran Magique, the magic screen."
+        level: 1
+        for: children
+        source: {title: "Etch A Sketch | National Toy Hall of Fame", publisher: "The Strong National Museum of Play", url: "https://www.museumofplay.org/?p=2105"}
+        checked: 2026-11-04
+      - q: "Grown-ups: who wrote The Gruffalo, the picture book about a clever mouse in a deep dark wood?"
+        a: "Julia Donaldson"
+        note: "It is illustrated by Axel Scheffler. On his walk the mouse meets an owl, a snake and a hungry Gruffalo."
+        level: 2
+        for: grown-ups
+        source: {title: "The Gruffalo", publisher: "Pan Macmillan", url: "https://panmacmillan.co.in/authors/julia-donaldson/the-gruffalo/9781509815128"}
+        checked: 2026-11-04
+      - q: "Children: Wham-O's Hula Hoop, from 1957, was such a craze that 25 million were sold in how long: two days, two months or two years?"
+        a: "Two months"
+        note: "It was named after the Hawaiian hula dance. The idea came from people in Australia swivelling wooden hoops."
+        level: 2
+        for: children
+        source: {title: "Hula Hoop | National Toy Hall of Fame", publisher: "The Strong National Museum of Play", url: "https://www.museumofplay.org/toys/hula-hoop/"}
+        checked: 2026-11-04
+      - q: "Grown-ups: what is the name of the hero you play in The Legend of Zelda games?"
+        a: "Link"
+        note: "Shigeru Miyamoto says he was named Link because he connects people together."
+        level: 3
+        for: grown-ups
+        source: {title: "Get to know Link and his many adventures!", publisher: "Nintendo", url: "https://nintendo.com/au/news-and-articles/get-to-know-link-and-his-many-adventures"}
+        checked: 2026-11-04
+      - q: "Children: which puzzle game came packaged with the Nintendo Game Boy when it launched in 1989?"
+        a: "Tetris"
+        note: "Each Tetris piece is made of four squares. It was made by Alexey Pajitnov, a programmer in the Soviet Union, in 1984."
+        level: 3
+        for: children
+        source: {title: "Tetris", publisher: "The Strong National Museum of Play", url: "https://www.museumofplay.org/?p=2331"}
+        checked: 2026-11-04
+  - id: swap-round-us-3
+    title: "Swap round: home and play"
+    kind: swap
+    editions: [us]
+    intro: "Grown-ups, these are from the children's world. Children, these are from the grown-ups'. No helping each other!"
+    questions:
+      - q: "Grown-ups: what is the first name of the boy who keeps the diary in Diary of a Wimpy Kid?"
+        a: "Greg"
+        accept: ["Greg Heffley"]
+        note: "Jeff Kinney first put the story online, a little each day, in 2004. The books are now published in more than 50 languages."
+        level: 2
+        for: grown-ups
+        source: {title: "Jeff Kinney", publisher: "Britannica Kids (Encyclopaedia Britannica)", url: "https://kids.britannica.com/students/article/Jeff-Kinney/570794"}
+        checked: 2026-11-04
+      - q: "Children: when Mr Potato Head first went on sale in 1952, what did children stick his eyes, nose and mouth into?"
+        a: "A real potato"
+        accept: ["A potato"]
+        note: "The kit came without a body, so families used their own potatoes. Mr Potato Head was the first toy ever advertised on television."
+        level: 1
+        for: children
+        source: {title: "Me and My Spuds", publisher: "Pentacrest Museums, The University of Iowa", url: "https://pentacrestmuseums.uiowa.edu/me-and-my-spuds"}
+        checked: 2026-11-04
+      - q: "Grown-ups: Dog Man, star of Dav Pilkey's comic books, has the head of a dog and the body of what?"
+        a: "A police officer"
+        accept: ["A policeman", "A cop", "A human"]
+        note: "A police dog and his officer partner were hurt on the job, and an operation joined the dog's head to the officer's body. Dav Pilkey also created Captain Underpants."
+        level: 2
+        for: grown-ups
+        source: {title: "Dog Man", publisher: "Scholastic New Zealand", url: "https://www.scholastic.co.nz/books/book-promotion/christmas-list-2016/dog-man"}
+        checked: 2026-11-04
+      - q: "Children: the wooden building toy Lincoln Logs was invented by the son of a famous what: architect, astronaut or baseball player?"
+        a: "Architect"
+        accept: ["An architect"]
+        note: "John Lloyd Wright, son of Frank Lloyd Wright, based it on the interlocking beams of his father's Imperial Hotel in Tokyo, built to sway in earthquakes."
+        level: 1
+        for: children
+        source: {title: "The Birth of Lincoln Logs", publisher: "HISTORY (A&E Television Networks)", url: "https://www.history.com/news/the-birth-of-lincoln-logs"}
+        checked: 2026-11-04
+      - q: "Grown-ups: in Disney's Moana, Maui is not quite a god. What is he?"
+        a: "A demigod"
+        accept: ["Demigod"]
+        note: "He is the demigod of the land and sea, voiced by Dwayne Johnson. His moving tattoo, Mini Maui, was drawn by hand."
+        level: 2
+        for: grown-ups
+        source: {title: "5 Things You Might Not Know About Moana", publisher: "D23 (The Walt Disney Company)", url: "https://d23.com/5-things-you-might-not-know-about-moana/"}
+        checked: 2026-11-04
+      - q: "Children: the red cardigan Fred Rogers wore on TV, now in the Smithsonian, was knitted by whom: his mother, his wife or his neighbour?"
+        a: "His mother"
+        note: "At the start of each show he changed into a sweater and tennis shoes and sang his theme song."
+        level: 1
+        for: children
+        source: {title: "Mister Rogers' Sweater", publisher: "National Museum of American History, Smithsonian Institution", url: "https://www.si.edu/object/nmah_680637"}
+        checked: 2026-11-04
+      - q: "Grown-ups: in Disney's Frozen, what is the name of Kristoff's reindeer?"
+        a: "Sven"
+        note: "Frozen came out in 2013 and won two Oscars, one for Best Animated Feature and one for the song Let It Go."
+        level: 2
+        for: grown-ups
+        source: {title: "Frozen (film)", publisher: "D23 (The Walt Disney Company)", url: "https://d23.com/a-to-z/frozen-film/"}
+        checked: 2026-11-04
+      - q: "Children: the first TV dinners were made in 1953 because a company had far too much of which Thanksgiving food left over?"
+        a: "Turkey"
+        note: "C.A. Swanson & Sons had ten railroad cars holding 520,000 pounds of turkey. The meals cost 98 cents and sold more than ten million in the first year."
+        level: 2
+        for: children
+        source: {title: "How Leftover Turkey Launched The TV Dinner", publisher: "National Geographic", url: "https://www.nationalgeographic.com/culture/article/how-leftover-turkey-launched-the-tv-dinner"}
+        checked: 2026-11-04
+      - q: "Grown-ups: in Disney's Encanto, what is the surname of the family who live in a magical house in Colombia?"
+        a: "Madrigal"
+        accept: ["The Madrigals"]
+        note: "Mirabel is the only child in the family without a magical gift. Her sister Luisa is incredibly strong."
+        level: 3
+        for: grown-ups
+        source: {title: "Meet the Characters of Encanto", publisher: "D23 (The Walt Disney Company)", url: "https://d23.com/meet-the-characters-of-encanto/"}
+        checked: 2026-11-04
+      - q: "Children: Monopoly grew out of an earlier board game that Lizzie Magie patented in 1904. What was it called?"
+        a: "The Landlord's Game"
+        accept: ["Landlord's Game"]
+        note: "She made it to show how monopolies harm people. The Atlantic City street names came in 1929, and Parker Brothers bought the rights in 1935."
+        level: 3
+        for: children
+        source: {title: "Monopoly", publisher: "Encyclopedia of Greater Philadelphia (Rutgers University-Camden)", url: "https://philadelphiaencyclopedia.org/essays/monopoly/"}
+        checked: 2026-11-04
