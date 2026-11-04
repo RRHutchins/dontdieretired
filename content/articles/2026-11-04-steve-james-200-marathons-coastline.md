@@ -8,6 +8,9 @@ segments: [mover, restarter]
 level: advanced
 subject_age: 66
 art: cliffs
+photo_file: "File:Topsham Quay (geograph 5423434).jpg"
+photo_caption: "Topsham Quay on the River Exe in Devon, where Steve James started and finished his run around Britain."
+photo_alt: "A dark blue fishing boat moored against a stone quay on a wide estuary under heavy grey clouds, with small boats out on the water, a brick warehouse and parked cars on the quayside."
 hook: "200 marathons in 200 days, 5,240 miles of coast, seven pairs of trainers. Steve James ran all the way round Britain."
 lesson: "A huge challenge is mostly a small one done again tomorrow: one marathon, then the next."
 standfirst: "Steve James, a retired banker from Dartmoor, set off from Topsham Quay in Devon on 16 April 2025 and ran a marathon every day around the coast of mainland Britain. He finished back on the quay 200 days later, a year ago this week, and turned 66 on the last leg. University of Exeter scientists measured him all the way."
