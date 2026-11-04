@@ -758,6 +758,7 @@ def build(make_social=True):
         area_n = {}
         for c in chs:
             for pl in c.get("places") or []: area_n[pl] = area_n.get(pl, 0) + 1
+        out("/my-year/", "my-year.html")   # My year (RUNBOOK §6s): not in the sitemap until the planner launches (day 14)
         urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}, colls=colls, shapes=shapes, area_n=area_n))
         # the world map is loaded only when a reader opens its tab: a file of clickable country shapes
         if "world" in shapes:

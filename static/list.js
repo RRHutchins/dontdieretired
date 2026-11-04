@@ -243,6 +243,7 @@
   function renderMine() {
     if (!rows) return;
     const l = L.live(L.load()).sort((a, b) => a.pos - b.pos);
+    const my = $('[data-fl-myyear]', root); if (my) my.hidden = !l.some(it => it.date || it.month);
     rows.innerHTML = l.map((it, i) => {
       const t = titleOf(it), gone = it.cid && t === null;
       return '<li class="fl-row' + (it.status === 'done' ? ' is-done' : '') + '" data-id="' + esc(it.id) + '">'

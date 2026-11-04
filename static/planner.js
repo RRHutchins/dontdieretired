@@ -178,5 +178,120 @@
     return plan;
   }
 
-  return { VERSION, build, suggest, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+
+  /* ---------------- My year (RUNBOOK §6s, day 4): all of a reader's plans together ----------------
+     window(plan, step, today): the days a flexible step may move to. A step before the day stays between the day the plan
+     was made (or today, if later) and the day before; a step after the day stays after it (up to 90 days). null = it
+     cannot move (not flexible, or already gone by). */
+  function window_(plan, st, today) {
+    if (!st.flexible || st.date < today) return null;
+    const day = plan.date;
+    if (st.date < day) { const min = plan.made > today ? plan.made : today, max = iso(addDays(parse(day), -1)); return min <= max ? { min, max } : null; }
+    if (st.date > day) { const min = iso(addDays(parse(day), 1)); return { min: min > today ? min : today, max: iso(addDays(parse(day), 90)) }; }
+    return null;
+  }
+  // Where a stored move may land, whatever today is: inside the plan's own run-up, or within 90 days after the day.
+  function allowed(plan, st, to) {
+    if (!st.flexible || !parse(to)) return false;
+    if (st.date < plan.date) return to >= plan.made && to < plan.date;
+    if (st.date > plan.date) return to > plan.date && to <= iso(addDays(parse(plan.date), 90));
+    return false;
+  }
+  // The reader's own marks on one saved plan (ticks and moves, from static/list-store.js). Returns new steps, sorted.
+  function applyMarks(plan, item, settings, opts) {
+    const N = settings.notes, ticks = (item && item.ticks) || {}, moves = (item && item.moves) || {};
+    const steps = plan.steps.map(st => {
+      const o = Object.assign({}, st, { done: !!(ticks[st.id] && ticks[st.id].done) });
+      const to = moves[st.id] && moves[st.id].date;
+      if (to && to !== st.date && st.flexible && allowed(plan, st, to)) {
+        o.moved = { from: st.date, by: 'you', why: fill(N.moved_you, { from: longDate(parse(st.date)) }) };
+        o.date = to;
+      }
+      return o;
+    });
+    return sortSteps(steps);
+  }
+  function sortSteps(steps) {
+    steps.forEach((s, i) => { s._i = i; });
+    steps.sort((x, y) => (x.date < y.date ? -1 : x.date > y.date ? 1 : 0) || (STRAND_ORDER[x.strand] - STRAND_ORDER[y.strand]) || x._i - y._i);
+    steps.forEach(s => { delete s._i; });
+    return steps;
+  }
+
+  /* combine(entries, settings, { today }) → { plans, steps, clashes }   PURE.
+     entries: [{ id, title, item, activity }]: item is the list item (date | month, plan_made, ticks, moves, status),
+     activity the planner entry for a catalogue activity, or null (the reader's own, or no longer listed).
+     - Every saved plan is rebuilt with today = the day it was made, then the reader's ticks and moves are applied.
+     - Clashes are flagged, never fixed for the reader: two things on the same day; two training plans that overlap.
+     - Flexible steps (never training, safety, booking dates or the day itself) are moved automatically, and each says why:
+       off the day of another of the reader's plans, and off a day where several plans already have more than
+       settings.busy steps. They move to the nearest day that is free, inside their own plan's run-up. A step the reader
+       moved or ticked, or one already gone by, stays where it is. */
+  function combine(entries, settings, opts) {
+    const N = settings.notes, today = iso(todayUTC(opts && opts.today)), BUSY = settings.busy || 3;
+    const plans = [], steps = [], clashes = [];
+    (entries || []).forEach(e => {
+      const it = e.item || {};
+      if (!it.date && !it.month) return;
+      const p = { id: e.id, title: e.title, cid: e.activity ? e.activity.id : null, date: it.date || '', month: it.month || '', status: it.status || 'planned',
+        label: it.date ? longDate(parse(it.date)) : monthYear(parse(it.month + '-01')), plan: null };
+      if (e.activity && it.plan_made) {
+        const b = build(e.activity, settings, Object.assign({ today: it.plan_made }, it.date ? { date: it.date } : { month: it.month }));
+        p.plan = b;
+        if (b.status === 'ok') applyMarks(b, it, settings, { today }).forEach(st => steps.push(Object.assign(st, { pid: e.id, ptitle: e.title, by_month: b.by_month })));
+      } else {
+        // a date or month on the list with no saved plan: shown as the day only
+        steps.push({ id: 'day', strand: 'day', date: it.date || it.month + '-01', flexible: false, text: e.title, why: '', links: [], done: false, pid: e.id, ptitle: e.title, by_month: !it.date, bare: true });
+      }
+      plans.push(p);
+    });
+    plans.sort((a, b) => ((a.date || a.month + '-01') < (b.date || b.month + '-01') ? -1 : (a.date || a.month + '-01') > (b.date || b.month + '-01') ? 1 : a.id < b.id ? -1 : 1));
+    const live = plans.filter(p => p.status !== 'done');
+    const titles = ps => { const t = ps.map(p => p.title); return t.length < 3 ? t.join(' and ') : t.slice(0, -1).join(', ') + ' and ' + t[t.length - 1]; };
+
+    // Clash: two (or more) things on the same day
+    const byDay = {};
+    live.filter(p => p.date && p.date >= today).forEach(p => { (byDay[p.date] = byDay[p.date] || []).push(p); });
+    Object.keys(byDay).sort().forEach(d => { const ps = byDay[d]; if (ps.length > 1) clashes.push({ kind: 'day', date: d, ids: ps.map(p => p.id), text: fill(N.clash_day, { titles: titles(ps), date: longDate(parse(d)) }) }); });
+    // Clash: two training plans at once (the engine builds each one on its own)
+    const trains = live.filter(p => p.plan && p.plan.status === 'ok').map(p => ({ p, st: steps.find(s => s.pid === p.id && s.strand === 'train') })).filter(x => x.st);
+    for (let i = 0; i < trains.length; i++) for (let j = i + 1; j < trains.length; j++) {
+      const a = trains[i], b = trains[j];
+      const from = a.st.date > b.st.date ? a.st.date : b.st.date, to = a.p.plan.date < b.p.plan.date ? a.p.plan.date : b.p.plan.date;
+      if (from <= to && to >= today) clashes.push({ kind: 'train', from, to, ids: [a.p.id, b.p.id], text: fill(N.clash_train, { a: a.p.title, b: b.p.title, from: longDate(parse(from > today ? from : today)), to: longDate(parse(to)) }) });
+    }
+
+    // Moving flexible steps
+    const dayOf = {};   // date → titles of the reader's things on that day (date plans only)
+    live.filter(p => p.date).forEach(p => { (dayOf[p.date] = dayOf[p.date] || []).push(p); });
+    const count = {}, pidsOn = {};
+    steps.forEach(s => { count[s.date] = (count[s.date] || 0) + 1; (pidsOn[s.date] = pidsOn[s.date] || new Set()).add(s.pid); });
+    const planOf = id => plans.find(p => p.id === id);
+    const otherDay = (date, pid) => (dayOf[date] || []).filter(p => p.id !== pid);
+    const free = (date, pid) => !otherDay(date, pid).length && (count[date] || 0) < BUSY;
+    const movable = s => s.flexible && !s.moved && !s.done && !s.bare && s.date >= today;
+    function relocate(s, why, other) {
+      const p = planOf(s.pid), w = window_(p.plan, s, today); if (!w) return false;
+      const after = s.date > p.plan.date;
+      for (let k = 1; k <= 10; k++) {
+        for (const d of after ? [k, -k] : [-k, k]) {
+          const to = iso(addDays(parse(s.date), d));
+          if (to < w.min || to > w.max || !free(to, s.pid)) continue;
+          count[s.date]--; count[to] = (count[to] || 0) + 1; (pidsOn[to] = pidsOn[to] || new Set()).add(s.pid);
+          s.moved = { from: s.date, by: why, why: fill(why === 'day' ? N.moved_day : N.moved_busy, { from: longDate(parse(s.date)), other, n: BUSY }) };
+          s.date = to; return true;
+        }
+      }
+      return false;
+    }
+    // the plans whose own day is furthest off have the most room, so their steps move first
+    const order = plans.map(p => p.id).reverse();
+    const queue = steps.filter(movable).sort((x, y) => order.indexOf(x.pid) - order.indexOf(y.pid) || (x.date < y.date ? -1 : 1));
+    queue.forEach(s => { const o = otherDay(s.date, s.pid); if (o.length) relocate(s, 'day', titles(o)); });
+    queue.forEach(s => { if (!s.moved && count[s.date] > BUSY && pidsOn[s.date].size > 1) relocate(s, 'busy', ''); });
+
+    return { plans, steps: sortSteps(steps), clashes };
+  }
+
+  return { VERSION, build, suggest, combine, applyMarks, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

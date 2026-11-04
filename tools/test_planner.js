@@ -144,4 +144,89 @@ t('same inputs, same plan', () => {
   const a = byId['climb-kilimanjaro'];
   assert.deepStrictEqual(P.build(a, data, { date: '2027-06-20', today: TODAY }), P.build(a, data, { date: '2027-06-20', today: TODAY }));
 });
+/* ---- My year (day 4): combine() puts every saved plan together ---- */
+const entry = (id, item) => ({ id, title: byId[id] ? byId[id].title : id, item: Object.assign({ status: 'planned', plan_made: TODAY }, item), activity: byId[id] || null });
+const anyFlex = acts.filter(a => !a.event && !a.dates && a.kit.length && a.kind === 'experience');
+t('one plan alone: the same steps as build(), nothing moved, no clashes', () => {
+  const a = byId['walk-yorkshire-three-peaks'], c = P.combine([entry(a.id, { date: '2027-06-19' })], data, { today: TODAY });
+  const b = P.build(a, data, { date: '2027-06-19', today: TODAY });
+  assert.deepStrictEqual(c.steps.map(s => [s.id, s.date]), b.steps.map(s => [s.id, s.date]));
+  assert.ok(c.steps.every(s => !s.moved && s.pid === a.id)); assert.strictEqual(c.clashes.length, 0);
+});
+t('two things on the same day are flagged, not moved', () => {
+  const [a, b] = anyFlex;
+  const c = P.combine([entry(a.id, { date: '2027-05-15' }), entry(b.id, { date: '2027-05-15' })], data, { today: TODAY });
+  const cl = c.clashes.filter(x => x.kind === 'day'); assert.strictEqual(cl.length, 1); assert.deepStrictEqual(cl[0].ids.sort(), [a.id, b.id].sort());
+  assert.ok(cl[0].text.includes(a.title) && cl[0].text.includes('15 May 2027'));
+  assert.ok(c.steps.filter(s => s.id === 'day').every(s => s.date === '2027-05-15'));
+});
+t('a done item does not clash', () => {
+  const [a, b] = anyFlex;
+  assert.strictEqual(P.combine([entry(a.id, { date: '2027-05-15', status: 'done' }), entry(b.id, { date: '2027-05-15' })], data, { today: TODAY }).clashes.length, 0);
+});
+t('two training plans at once are flagged with the overlap', () => {
+  const c = P.combine([entry('climb-kilimanjaro', { date: '2027-09-10' }), entry('walk-yorkshire-three-peaks', { date: '2027-08-14' })], data, { today: TODAY });
+  const cl = c.clashes.find(x => x.kind === 'train'); assert.ok(cl, 'overlap flagged');
+  const ts = c.steps.filter(s => s.strand === 'train').map(s => s.date).sort();
+  assert.strictEqual(cl.from, ts[1]); assert.strictEqual(cl.to, '2027-08-14');
+  const far = P.combine([entry('climb-kilimanjaro', { date: '2027-09-10' }), entry('walk-yorkshire-three-peaks', { date: '2027-03-06' })], data, { today: TODAY });
+  assert.ok(!far.clashes.some(x => x.kind === 'train'), 'no overlap, no flag');
+});
+t('a flexible step on the day of another plan moves off it, inside its own run-up, and says why', () => {
+  // find a plan with a flexible step, then put another activity's day on that step's date
+  const a = anyFlex[0], pa = P.build(a, data, { date: '2027-06-19', today: TODAY }), st = pa.steps.find(s => s.flexible && s.date < pa.date);
+  const b = anyFlex.find(x => x.id !== a.id && x.time === 'afternoon') || anyFlex[1];
+  const c = P.combine([entry(a.id, { date: '2027-06-19' }), entry(b.id, { date: st.date })], data, { today: TODAY });
+  const moved = c.steps.find(s => s.pid === a.id && s.id === st.id);
+  assert.ok(moved.moved && moved.moved.by === 'day'); assert.notStrictEqual(moved.date, st.date);
+  assert.ok(moved.date >= TODAY && moved.date < pa.date, 'stays in its run-up');
+  assert.ok(moved.moved.why.includes(b.title));
+  assert.ok(fills(data.notes.moved_day).test(moved.moved.why));
+});
+t('a busy day is spread out; fixed steps never move', () => {
+  const four = anyFlex.slice(0, 4).map(a => entry(a.id, { date: '2027-07-24' }));
+  const c = P.combine(four, data, { today: TODAY });
+  const per = {}; c.steps.forEach(s => { per[s.date] = (per[s.date] || 0) + 1; });
+  const kitDay = '2027-07-10';
+  assert.ok(per[kitDay] <= data.busy, 'kit day no longer over-full: ' + per[kitDay]);
+  c.steps.filter(s => s.moved).forEach(s => { assert.ok(s.flexible); assert.strictEqual(s.moved.by, 'busy'); assert.ok(fills(data.notes.moved_busy).test(s.moved.why)); });
+  assert.ok(c.steps.some(s => s.moved));
+});
+t('the reader\'s own moves and ticks are kept; a move outside the run-up is ignored', () => {
+  const a = anyFlex[0], pa = P.build(a, data, { date: '2027-06-19', today: TODAY }), st = pa.steps.find(s => s.flexible && s.date < pa.date);
+  const fixed = pa.steps.find(s => !s.flexible && s.id !== 'day');
+  const ok = P.combine([entry(a.id, { date: '2027-06-19', moves: { [st.id]: { date: '2027-06-18' } }, ticks: { [fixed.id]: { done: true } } })], data, { today: TODAY });
+  const m = ok.steps.find(s => s.id === st.id); assert.strictEqual(m.date, '2027-06-18'); assert.strictEqual(m.moved.by, 'you');
+  assert.ok(ok.steps.find(s => s.id === fixed.id).done);
+  const bad = P.combine([entry(a.id, { date: '2027-06-19', moves: { [st.id]: { date: '2027-06-25' }, [fixed.id]: { date: '2027-06-01' } } })], data, { today: TODAY });
+  assert.strictEqual(bad.steps.find(s => s.id === st.id).date, st.date); assert.strictEqual(bad.steps.find(s => s.id === fixed.id).date, fixed.date);
+});
+t('a date on the list without a saved plan, and the reader\'s own items, show as the day only', () => {
+  const c = P.combine([{ id: 'x-abc', title: 'Paint the shed', item: { status: 'want', date: '2027-04-03' }, activity: null }, entry('parkrun', { month: '2027-05', plan_made: '' })], data, { today: TODAY });
+  assert.strictEqual(c.steps.length, 2); assert.ok(c.steps.every(s => s.bare && s.id === 'day'));
+  assert.strictEqual(c.steps[1].date, '2027-05-01'); assert.ok(c.steps[1].by_month);
+});
+t('combine over many random mixes: nothing lost, only flexible steps move, always inside their window', () => {
+  let seed = 7; const rnd = n => { seed = (seed * 1103515245 + 12345) % 2147483648; return seed % n; };
+  for (let r = 0; r < 150; r++) {
+    const picks = [...new Set(Array.from({ length: 2 + rnd(6) }, () => acts[rnd(acts.length)]))];
+    const es = picks.map(a => { const sug = P.suggest(a, { today: TODAY }); return entry(a.id, rnd(3) ? { date: plus('2027-01-01', rnd(240)) } : sug.month ? { month: sug.month } : { date: sug.date }); });
+    const c = P.combine(es, data, { today: TODAY });
+    let total = 0;
+    es.forEach(e => {
+      const b = P.build(e.activity, data, Object.assign({ today: TODAY }, e.item.date ? { date: e.item.date } : { month: e.item.month }));
+      const mine = c.steps.filter(s => s.pid === e.id);
+      if (b.status !== 'ok') { assert.strictEqual(mine.length, 0); return; }
+      total += b.steps.length;
+      assert.deepStrictEqual(mine.map(s => s.id).sort(), b.steps.map(s => s.id).sort(), e.id + ': steps lost');
+      mine.forEach(s => {
+        const o = b.steps.find(x => x.id === s.id);
+        if (!o.flexible) assert.strictEqual(s.date, o.date, e.id + ': a fixed step moved: ' + s.id);
+        if (s.moved) { assert.ok(s.date >= TODAY); assert.ok(o.date < b.date ? s.date < b.date : s.date > b.date, e.id + ': moved across its day'); }
+      });
+    });
+    assert.strictEqual(c.steps.length, total);
+    assert.deepStrictEqual(P.combine(es, data, { today: TODAY }), c, 'same inputs, same result');
+  }
+});
 console.log(n + ' tests passed');

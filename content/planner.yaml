@@ -174,6 +174,9 @@ steps:
     text: "A month in: take stock"
     why: "Projects stall without a rhythm, so a look a month in shows whether it is moving and what the next stretch is."
 
+# My year: a day with more than this many steps from two or more of the reader's plans is busy, and flexible steps move off it.
+busy_day: 3
+
 # Notes the generator adds to a plan when they apply.
 notes:
   squeezed: "Your date is closer than our usual {weeks}-week run-up, so the steps are closer together."
@@ -188,4 +191,11 @@ notes:
   # Shown with a saved plan.
   saved: "Saved on this device only, with your list. Clearing this browser's data clears it too, so save a backup from your list now and then."
   saved_past: "Your date, {date}, has passed. Mark it done on your list, or pick a new date."
+  # The My year page (RUNBOOK §6s, day 4): all of a reader's plans together. The planner flags clashes and leaves the
+  # choice to the reader; it only moves flexible steps (never training, safety, a booking date or the day itself).
+  moved_you: "You moved this from {from}."
+  moved_day: "Moved from {from}, the day of {other}, so that day is kept clear for it."
+  moved_busy: "Moved from {from} to spread out a busy day: your plans had more than {n} steps on it."
+  clash_day: "{titles} are on the same day, {date}. If that is not what you meant, change the date of one of them."
+  clash_train: "The training plans for {a} and {b} overlap from {from} to {to}. Each plan was built on its own, so check you can fit both into your week, or set the dates further apart."
   affiliate: "Some of the links in this plan are affiliate links: if you book or buy through them we may earn a commission at no extra cost to you."

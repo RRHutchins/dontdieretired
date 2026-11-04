@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}My year: your plans, month by month — {{ cfg.site.name }}{% endblock %}
+{% block description %}Everything you have planned from Things to do, together: the days to look forward to and the steps to get ready for each, month by month.{% endblock %}
+{# Not in the sitemap and not indexed until the planner launches (RUNBOOK §6s, day 14): it is empty for anyone without plans. #}
+{% block robots %}<meta name="robots" content="noindex">{% endblock %}
+{% block pagetype %}my-year{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker"><a href="/list/">Things to do</a></p><h1>My year</h1>
+<p class="lead">Everything you have planned, together: the days to look forward to, and the steps to get ready for each, month by month.</p></header>
+
+<div class="my" data-my aria-busy="true">
+  <noscript><p>My year is made in your browser from the plans on your list, so it needs JavaScript switched on. Every activity page still works without it.</p></noscript>
+  <p class="meta" data-my-loading>Putting your plans together…</p>
+  <p class="pl-err" data-my-fail role="alert" hidden>Your plans could not be loaded just now. Check your connection and reload the page. They are still saved on this device.</p>
+
+  <div class="my-empty" data-my-empty hidden>
+    <h2>Nothing planned yet</h2>
+    <p>Open anything in <a href="/list/">Things to do</a>, press <strong>Plan this</strong>, choose a day or a month and save the plan. It appears here with your other plans, and you can tick off each step as you go.</p>
+  </div>
+
+  <div data-my-main hidden>
+    <section class="my-clashes" data-my-clashes hidden aria-labelledby="my-cl-h">
+      <h2 id="my-cl-h" class="h3">Worth a look</h2>
+      <ul data-my-clash-list></ul>
+    </section>
+
+    <div class="my-switch" role="group" aria-label="Show">
+      <button type="button" class="chip" data-my-view="year" aria-pressed="true">The year</button>
+      <button type="button" class="chip" data-my-view="month" aria-pressed="false">Month by month</button>
+    </div>
+
+    <section data-my-year aria-labelledby="my-y-h">
+      <h2 id="my-y-h" class="sr-only">The year ahead</h2>
+      <ol class="my-grid" data-my-grid></ol>
+    </section>
+
+    <section data-my-month hidden aria-labelledby="my-m-h" tabindex="-1">
+      <div class="my-mnav">
+        <button type="button" class="btn btn-small btn-ghost" data-my-step="-1"><span aria-hidden="true">←</span> <span data-my-prev></span></button>
+        <h2 id="my-m-h" data-my-mtitle></h2>
+        <button type="button" class="btn btn-small btn-ghost" data-my-step="1"><span data-my-next></span> <span aria-hidden="true">→</span></button>
+      </div>
+      <div data-my-mbody></div>
+    </section>
+    <p class="my-msg" data-my-msg role="status" aria-live="polite"></p>
+
+    <p class="meta" data-my-undated hidden></p>
+    <p class="disclosure" data-my-aff hidden></p>
+    <p class="meta my-small" data-my-saved></p>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/planner.js?v={{ asset_v }}" defer></script><script src="/static/my-year.js?v={{ asset_v }}" defer></script>{% endblock %}

@@ -14,7 +14,11 @@
    - My year (RUNBOOK §6s, added 3 Nov 2026; additive, so still version 1): a planned item has EITHER a `date`
      (YYYY-MM-DD, the day itself) OR a `month` (YYYY-MM, "some time in"), never both, and `plan_made` (YYYY-MM-DD),
      the day the plan was made. The plan's steps are not stored: static/planner.js rebuilds them from these fields
-     with today = plan_made, so a saved plan does not shift as the days pass. */
+     with today = plan_made, so a saved plan does not shift as the days pass.
+   - My year page (added 4 Nov 2026; additive, still version 1): `ticks` { stepId: { done, at } } and `moves`
+     { stepId: { date, at } } (date '' = back to the plan's own date) belong to the plan they were made on. They are
+     cleared when the plan's date, month or plan_made changes, and merge() unions them key by key (newest `at` wins)
+     when both copies are the same plan, so ticking different steps on two devices loses neither. */
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api; else root.DDRList = api;
@@ -25,6 +29,20 @@
   const empty = () => ({ version: VERSION, title: 'My list', target: 50, settings_updated_at: '', items: [] });
   const str = (v, n) => (typeof v === 'string' ? v : '').slice(0, n);
   const DAY = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/, MONTH = /^\d{4}-(0[1-9]|1[0-2])$/;
+  const STEP = /^[a-z0-9-]{1,40}$/, MAX_STEPS = 80;
+  // per-step marks on a saved plan: { stepId: { done: bool, at } } or { stepId: { date: 'YYYY-MM-DD' | '', at } }
+  function cleanMarks(m, field) {
+    const out = {};
+    if (!m || typeof m !== 'object' || Array.isArray(m)) return out;
+    Object.keys(m).slice(0, MAX_STEPS).forEach(k => {
+      const v = m[k];
+      if (!STEP.test(k) || !v || typeof v !== 'object') return;
+      if (field === 'done') out[k] = { done: !!v.done, at: str(v.at, 30) };
+      else if (v.date === '' || DAY.test(v.date || '')) out[k] = { date: v.date, at: str(v.at, 30) };
+    });
+    return out;
+  }
+  const planKey = it => (it.date || '') + '|' + (it.month || '') + '|' + (it.plan_made || '');
 
   // Make anything (old data, a backup file, a hand-edited file) into a well-formed list. Never throws.
   function clean(d) {
@@ -46,6 +64,8 @@
       });
       const o = out.items[out.items.length - 1];
       if (!o.date && MONTH.test(it.month || '')) o.month = it.month;   // a date wins over a month: never both
+      o.ticks = o.plan_made ? cleanMarks(it.ticks, 'done') : {};
+      o.moves = o.plan_made ? cleanMarks(it.moves, 'date') : {};
     });
     return out;
   }
@@ -63,6 +83,12 @@
       if (!cur) by.set(it.id, it);
       else if (newer(it, cur)) by.set(it.id, it);
       else if (!newer(cur, it) && cur.deleted && !it.deleted) by.set(it.id, it);   // exact tie: keep the live one
+      // the same saved plan on both sides: keep every tick and move, newest per step
+      const win = by.get(it.id), lose = win === it ? cur : it;
+      if (lose && win.plan_made && planKey(win) === planKey(lose)) {
+        const union = (x, y) => { const o = { ...x }; Object.keys(y).forEach(k => { if (!o[k] || (y[k].at || '') > (o[k].at || '')) o[k] = y[k]; }); return o; };
+        by.set(it.id, { ...win, ticks: union(win.ticks, lose.ticks), moves: union(win.moves, lose.moves) });
+      }
     });
     out.items = [...by.values()].map(it => ({ ...it })).sort((x, y) => x.pos - y.pos || (x.added_at < y.added_at ? -1 : x.added_at > y.added_at ? 1 : 0) || (x.id < y.id ? -1 : 1));
     out.items.forEach((it, i) => { it.pos = i; });
@@ -83,13 +109,15 @@
     const id = cid || 'x-' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
     const cur = find(d, id), pos = d.items.reduce((m, it) => Math.max(m, it.pos), -1) + 1;
     if (cur) Object.assign(cur, { deleted: false, status: cur.deleted ? 'want' : cur.status, updated_at: t, pos: cur.deleted ? pos : cur.pos });
-    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', month: '', plan_made: '', note: '', pos, added_at: t, updated_at: t, deleted: false });
+    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', month: '', plan_made: '', ticks: {}, moves: {}, note: '', pos, added_at: t, updated_at: t, deleted: false });
     save(d); return d;
   }
   function update(id, changes) {
     const d = load(), it = find(d, id); if (!it) return d;
+    const key = planKey(it);
     ['status', 'date', 'note', 'title'].forEach(k => { if (k in changes) it[k] = changes[k]; });
     if (changes.date) it.month = '';   // a day chosen on the list replaces a month
+    if (planKey(it) !== key) { it.ticks = {}; it.moves = {}; }   // a new date is a new plan: old ticks and moves do not carry over
     it.updated_at = now(); save(d); return load();
   }
   /* My year: save a plan for a catalogue activity (adding it to the list if needed), or clear it with when = null.
@@ -97,6 +125,7 @@
   function plan(cid, when, today) {
     if (!has(cid)) add(cid);
     const d = load(), it = find(d, cid);
+    it.ticks = {}; it.moves = {};   // a new or removed plan starts clean
     if (when && (DAY.test(when.date || '') || MONTH.test(when.month || ''))) {
       it.date = when.date && DAY.test(when.date) ? when.date : '';
       it.month = it.date ? '' : when.month;
@@ -108,6 +137,19 @@
     }
     it.updated_at = now(); save(d); return load();
   }
+  /* My year: tick a step of a saved plan done (or not), or move one of its flexible steps to another day ('' = back to
+     where the plan put it). Which steps may move, and to where, is the page's job (static/planner.js combine()). */
+  function mark(id, stepId, field, value) {
+    const d = load(), it = find(d, id);
+    if (!it || it.deleted || !it.plan_made || !STEP.test(stepId || '')) return d;
+    const t = now();
+    if (field === 'done') it.ticks[stepId] = { done: !!value, at: t };
+    else if (value === '' || DAY.test(value || '')) it.moves[stepId] = { date: value, at: t };
+    else return d;
+    it.updated_at = t; save(d); return load();
+  }
+  const tick = (id, stepId, done) => mark(id, stepId, 'done', done);
+  const shift = (id, stepId, date) => mark(id, stepId, 'date', date);
   const get = id => { const it = find(load(), id); return it && !it.deleted ? it : null; };
   function remove(id) { const d = load(), it = find(d, id); if (it) { it.deleted = true; it.updated_at = now(); save(d); } return d; }
   function move(id, dir) {   // dir -1 up, +1 down, among the items still on the list
@@ -122,5 +164,5 @@
   const flag = (name, value) => { try { if (value === undefined) return localStorage.getItem(KEY + '_' + name); localStorage.setItem(KEY + '_' + name, value); } catch (e) {} return null; };
   const has = id => { const it = find(load(), id); return !!(it && !it.deleted); };
 
-  return { KEY, VERSION, STATUSES, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get };
+  return { KEY, VERSION, STATUSES, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get, tick, shift };
 });

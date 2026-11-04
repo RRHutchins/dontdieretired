@@ -84,7 +84,7 @@
     // the safety line is its own dated step ("Before you go: stay safe"), and stays on the page above
     if (hasAff) html += '<p class="disclosure">' + esc(N.affiliate) + '</p>';
     html += saved
-      ? '<div class="pl-saved"><p><strong>Saved to your list ✓</strong> <a href="/list/#mine">See my list</a></p><p class="meta">' + esc(N.saved) + '</p>'
+      ? '<div class="pl-saved"><p><strong>Saved to your list ✓</strong> <a href="/list/#mine">See my list</a> · <a href="/my-year/#' + plan.date.slice(0, 7) + '">See it with your other plans in My year</a></p><p class="meta">' + esc(N.saved) + '</p>'
         + '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-pl-change>Change the date</button><button type="button" class="btn btn-small btn-ghost" data-pl-clear>Remove this plan</button></p></div>'
       : '<p class="pl-acts"><button type="button" class="btn" data-pl-save>Save this plan to my list</button></p><p class="meta">' + esc(N.saved) + '</p>';
     out.innerHTML = html;

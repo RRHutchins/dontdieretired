@@ -80,6 +80,44 @@ t('re-planning on another device: newest plan wins', () => {
   const b = item('a', { status: 'planned', date: '2027-07-04', plan_made: '2026-11-05', updated_at: '2026-11-05T00:00:00.000Z' });
   for (const m of [L.merge(list([a]), list([b])), L.merge(list([b]), list([a]))]) { assert.strictEqual(m.items[0].date, '2027-07-04'); assert.strictEqual(m.items[0].month, ''); }
 });
+/* ---- My year page (RUNBOOK §6s, day 4): ticks and moves on a saved plan ---- */
+const P1 = { status: 'planned', date: '2027-06-19', plan_made: '2026-11-04' };
+const T = (h) => '2026-11-0' + h + 'T00:00:00.000Z';
+t('ticks and moves are kept through clean', () => {
+  const c = L.clean(list([item('a', { ...P1, ticks: { 'start-0': { done: true, at: T(5) } }, moves: { kit: { date: '2027-06-01', at: T(5) } } })]));
+  assert.deepStrictEqual(c.items[0].ticks, { 'start-0': { done: true, at: T(5) } }); assert.deepStrictEqual(c.items[0].moves, { kit: { date: '2027-06-01', at: T(5) } });
+});
+t('bad ticks and moves are cleaned away, and none without a saved plan', () => {
+  const c = L.clean(list([item('a', { ...P1, ticks: { 'Bad Key!': { done: true }, ok: 'yes', kit: { done: 1 } }, moves: { kit: { date: 'soon' }, book: { date: '' } } }), item('b', { ticks: { kit: { done: true } } })]));
+  assert.deepStrictEqual(c.items[0].ticks, { kit: { done: true, at: '' } }); assert.deepStrictEqual(c.items[0].moves, { book: { date: '', at: '' } });
+  assert.deepStrictEqual(c.items[1].ticks, {});
+  assert.deepStrictEqual(L.clean(list([item('c', { ...P1, ticks: [1, 2] })])).items[0].ticks, {});
+});
+t('old saved plans without ticks or moves still load', () => {
+  const c = L.clean(list([item('a', P1)])); assert.deepStrictEqual(c.items[0].ticks, {}); assert.deepStrictEqual(c.items[0].moves, {});
+});
+t('same plan on two devices: ticks of different steps are both kept', () => {
+  const a = item('a', { ...P1, updated_at: T(5), ticks: { 'start-0': { done: true, at: T(5) } } });
+  const b = item('a', { ...P1, updated_at: T(6), ticks: { book: { done: true, at: T(6) } }, moves: { kit: { date: '2027-06-02', at: T(6) } } });
+  for (const m of [L.merge(list([a]), list([b])), L.merge(list([b]), list([a]))]) {
+    assert.deepStrictEqual(Object.keys(m.items[0].ticks).sort(), ['book', 'start-0']); assert.strictEqual(m.items[0].moves.kit.date, '2027-06-02');
+  }
+});
+t('same step on two devices: the newest tick wins, even inside the older copy', () => {
+  const a = item('a', { ...P1, updated_at: T(7), ticks: { kit: { done: false, at: T(5) } } });
+  const b = item('a', { ...P1, updated_at: T(6), ticks: { kit: { done: true, at: T(6) } } });
+  for (const m of [L.merge(list([a]), list([b])), L.merge(list([b]), list([a]))]) assert.strictEqual(m.items[0].ticks.kit.done, true);
+});
+t('a re-planned item does not take ticks from the old plan', () => {
+  const old = item('a', { ...P1, updated_at: T(5), ticks: { kit: { done: true, at: T(5) } } });
+  const neu = item('a', { ...P1, date: '2027-07-10', plan_made: '2026-11-06', updated_at: T(6) });
+  for (const m of [L.merge(list([old]), list([neu])), L.merge(list([neu]), list([old]))]) { assert.strictEqual(m.items[0].date, '2027-07-10'); assert.deepStrictEqual(m.items[0].ticks, {}); }
+});
+t('merging ticks twice changes nothing more', () => {
+  const a = list([item('a', { ...P1, updated_at: T(5), ticks: { 'start-0': { done: true, at: T(5) } } })]);
+  const b = list([item('a', { ...P1, updated_at: T(6), ticks: { book: { done: true, at: T(6) } } })]);
+  const once = L.merge(a, b); assert.deepStrictEqual(L.merge(once, a), once); assert.deepStrictEqual(L.merge(once, b), once);
+});
 // The helpers, with a stand-in for the browser's storage
 {
   const mem = {}; global.localStorage = { getItem: k => (k in mem ? mem[k] : null), setItem: (k, v) => { mem[k] = String(v); }, removeItem: k => { delete mem[k]; } };
@@ -103,6 +141,24 @@ t('re-planning on another device: newest plan wins', () => {
   });
   t('a nonsense plan is treated as clearing, never stored', () => {
     L.plan('wild-swim', { month: 'June' }, '2026-11-03'); const it = L.get('wild-swim'); assert.strictEqual(it.month, ''); assert.strictEqual(it.status, 'want');
+  });
+  t('tick() and shift() mark a saved plan, and newest wins per step', () => {
+    L.plan('climb-ben-nevis', { date: '2027-06-19' }, '2026-11-04');
+    L.tick('climb-ben-nevis', 'start-0', true); L.shift('climb-ben-nevis', 'kit', '2027-06-01');
+    let it = L.get('climb-ben-nevis'); assert.strictEqual(it.ticks['start-0'].done, true); assert.strictEqual(it.moves.kit.date, '2027-06-01');
+    L.tick('climb-ben-nevis', 'start-0', false); L.shift('climb-ben-nevis', 'kit', '');
+    it = L.get('climb-ben-nevis'); assert.strictEqual(it.ticks['start-0'].done, false); assert.strictEqual(it.moves.kit.date, '');
+  });
+  t('tick() and shift() refuse bad input and items without a plan', () => {
+    L.shift('climb-ben-nevis', 'kit', 'next week'); assert.strictEqual(L.get('climb-ben-nevis').moves.kit.date, '');
+    L.tick('climb-ben-nevis', 'Not A Step', true); assert.ok(!('Not A Step' in L.get('climb-ben-nevis').ticks));
+    L.add('learn-to-knit'); L.tick('learn-to-knit', 'kit', true); assert.deepStrictEqual(L.get('learn-to-knit').ticks, {});
+  });
+  t('changing the date, on the plan or on the list, clears ticks and moves', () => {
+    L.tick('climb-ben-nevis', 'book', true); L.update('climb-ben-nevis', { date: '2027-07-03' });
+    assert.deepStrictEqual(L.get('climb-ben-nevis').ticks, {});
+    L.tick('climb-ben-nevis', 'book', true); L.update('climb-ben-nevis', { note: 'With Jo' }); assert.strictEqual(L.get('climb-ben-nevis').ticks.book.done, true);
+    L.plan('climb-ben-nevis', { month: '2027-08' }, '2026-11-05'); assert.deepStrictEqual(L.get('climb-ben-nevis').ticks, {});
   });
 }
 console.log(n + ' tests passed');

@@ -1008,3 +1008,45 @@ h1{line-height:1.04}
 @media print{.pl-form,.pl-acts{display:none}}
 .fl-row-plan{margin:0 0 8px}.fl-row-plan a{display:inline-block;padding:10px 0;font-weight:600}
 .pl-lwhy{display:block;color:var(--ink);margin:-4px 0 6px}
+
+/* My year (RUNBOOK §6s, day 4): every saved plan together */
+.my{max-width:820px;margin:0 0 40px}
+.my-empty{background:#f7f2e6;border-radius:var(--r);padding:16px 20px}
+.my-clashes{background:#fbeceb;border-left:4px solid var(--brand);border-radius:10px;padding:12px 16px;margin:0 0 18px}
+.my-clashes ul{margin:0;padding-left:20px}.my-clashes li{margin:4px 0}
+.my-cl-links{display:flex;flex-wrap:wrap;gap:0 14px}.my-cl-links a{display:inline-block;padding:10px 0;font-weight:600}
+.my-switch{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.my-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.my-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:flex;flex-direction:column;min-width:0}
+.my-card.has-day{border-color:var(--gold);box-shadow:inset 4px 0 0 var(--gold)}
+.my-card h3{margin:0 0 6px}
+.my-card .meta{margin:0 0 6px}
+.my-things{list-style:none;margin:0 0 6px;padding:0}
+.my-thing{margin:0 0 6px;line-height:1.35;overflow-wrap:anywhere}
+.my-thing a{font-weight:600}
+.my-thing.is-done a{color:var(--muted)}
+.my-when{display:block;font-size:.85rem;color:var(--muted)}
+.my-open{margin-top:auto;align-self:flex-start}
+.my-tag-clash{background:#fbeceb;border-color:var(--brand);color:var(--brand-ink)}
+.my-tag-moved{background:#f7f2e6}
+.my-mnav{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:8px;margin:0 0 18px}
+.my-mnav h2{margin:0;font-size:clamp(1.4rem,3vw,1.8rem);grid-column:1/-1;order:-1}
+.my-mnav [data-my-step="-1"]{justify-self:start}.my-mnav [data-my-step="1"]{justify-self:end;grid-column:2}
+.pl-step.is-day .pl-text a{color:var(--ink)}
+.my-mnav .btn{min-height:44px}
+[data-my-month]:focus{outline:none}
+.my-for{font-size:.92rem;margin:0 0 2px}.my-for a{font-weight:600;display:inline-block;padding:4px 0}
+.my-moved{font-style:italic}
+.my-acts{display:flex;flex-wrap:wrap;align-items:flex-start;gap:4px 18px;margin:4px 0 0}
+.my-tick{display:inline-flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;font-weight:600}
+.my-tick input{width:22px;height:22px;margin:0;accent-color:var(--accent)}
+.my-move summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--brand-ink);text-decoration:underline}
+.my-move-in{padding:4px 0 8px}
+.my-move-in input{font:inherit;font-size:1rem;padding:.4em .6em;border:1px solid var(--line);border-radius:8px;min-height:44px;max-width:100%}
+.my-move-in .btn{min-height:44px;margin-top:6px}
+.pl-step.is-done .pl-text{text-decoration:line-through;text-decoration-thickness:1px;color:var(--muted)}
+.pl-step.is-done::before{background:var(--accent);border-color:var(--accent)}
+.my-msg:empty{display:none}.my-msg{font-weight:600;color:var(--accent)}
+.my-small{margin-top:24px}
+@media print{.my-switch,.my-acts,.my-mnav .btn,.my-open{display:none}}
+.fl-myyear{margin:6px 0 12px}.fl-myyear a{display:inline-block;padding:10px 0;font-weight:600}

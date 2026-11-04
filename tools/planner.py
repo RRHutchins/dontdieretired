@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 STRANDS = ("book", "learn", "train", "travel", "kit")
 STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock")
 START_AT = ("first", "second", "ongoing", "after_start", "day")
-NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate")
+NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train")
 
 
 def _load(p: Path):
@@ -51,6 +51,8 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         if k not in ("day_month", "train_start"): assert "at" in v and at_ok(v["at"]), f"planner steps.{k}: at must be days, 'start', 'start+N' or 'lead*F'"
         if k not in ("first", "second", "ongoing", "after_start"): assert v.get("text"), f"planner steps.{k}: needs text"
     for k in NOTE_KEYS: assert notes.get(k), f"planner notes.{k}: missing"
+    busy = cfg.get("busy_day", 3)
+    assert isinstance(busy, int) and 2 <= busy <= 10, "planner busy_day: a whole number from 2 to 10"
 
     # Engine events (engine/events/*.yaml): the only source of training plans.
     events = {}
@@ -133,7 +135,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         })
     data = {"version": 1, "built": today.isoformat(),
             "kinds": {k: {"label": v["label"], "why": v["why"], "lead_weeks": v["lead_weeks"], "strands": v["strands"]} for k, v in kinds.items()},
-            "steps": steps, "notes": notes, "events": events, "activities": out}
+            "steps": steps, "notes": notes, "busy": busy, "events": events, "activities": out}
     return data, warn
 
 
