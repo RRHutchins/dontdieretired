@@ -219,25 +219,31 @@ guidance:
     applies: [altitude]
     use: safety
     text: Above 3,000 metres, sleep no more than 500 metres higher than the night before and take a rest day at the same height every three or four days. Avoid going from below 1,200 metres to above 3,500 metres in a day.
-    for: [nhs-altitude, nathnac-altitude, tanapa-kili]
+    for: [nhs-altitude, nathnac-altitude, tanapa-kili, cdc-altitude]
   - id: altitude-fitness-not-protective
     topic: altitude
     applies: [altitude]
     use: safety
     text: Being fit does not protect you from altitude sickness. Choose an itinerary with acclimatisation days and climb slowly however strong you feel.
-    for: [nathnac-altitude, tanapa-kili]
+    for: [nathnac-altitude, tanapa-kili, cdc-altitude]
   - id: altitude-symptoms
     topic: altitude
     applies: [altitude]
     use: safety
     text: Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help.
-    for: [nhs-altitude, nathnac-altitude]
+    for: [nhs-altitude, nathnac-altitude, cdc-altitude]
   - id: altitude-see-gp
     topic: altitude
     applies: [altitude]
     use: safety
     text: See your GP or a travel clinic before a high-altitude trip, especially if you have a health condition or have had altitude sickness before; they can discuss preventive medicine. Make sure your insurance covers evacuation.
-    for: [nhs-altitude, nathnac-altitude]
+    for: [nhs-altitude, nathnac-altitude, cdc-altitude]
+  - id: altitude-arrive-early
+    topic: altitude
+    applies: [altitude]
+    use: safety
+    text: If you fly or drive straight to a high town, rest there for a day or two before you walk any higher, drink enough water, and avoid alcohol for the first two days.
+    for: [nhs-altitude, cdc-altitude, promperu-inca]
 
   # ---------- warning signs ----------
   - id: emergency-heart

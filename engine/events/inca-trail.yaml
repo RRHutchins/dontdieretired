@@ -1,0 +1,17 @@
+id: inca-trail
+name: The classic Inca Trail to Machu Picchu
+kinds: [endurance, walking, hill, multiday, altitude]
+activity: hike-the-inca-trail-to-machu-picchu
+demands: "43 km (27 miles) over four days with a licensed agency, on mountain paths that climb above 4,000 m (13,100 ft), after a few days in Cusco at about 3,400 m (11,150 ft)."
+sources: [promperu-inca, nhs-altitude, cdc-altitude, cdc-peru]
+key_session:
+  name: long hill walk with your daypack
+  unit: hours
+  start: {starter: 2, active: 3, advanced: 4}
+  peak: 6
+  note: on the steepest ground you can find, including long descents
+second_session: {name: brisk walk or cross-training, minutes: 45}
+specific: {name: hill or stair repeats, from_week: 3, text: "climb a steep hill or stairs for 50 to 100 metres of height, four to six times, coming down slowly"}
+pack_from_fraction: 0.3
+back_to_back_from_fraction: 0.6
+weeks: {default: 16, min: 10}

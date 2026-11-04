@@ -4896,11 +4896,11 @@
   regions:
   - uk
   - us
-  why: The aurora is charged particles from the Sun lighting up the upper atmosphere, and during strong activity it reaches far further south than its Arctic reputation suggests. It can be seen from as much as 1,000 kilometres away when bright, so the skill lies in watching the alerts and being ready to go.
+  why: The aurora is charged particles from the Sun lighting up the upper atmosphere, and during strong activity it reaches far further south than its Arctic reputation suggests. From a hilltop with a clear view north it can be seen as much as 1,000 kilometres away, so the skill lies in watching the alerts and being ready to go.
   start:
   - Follow AuroraWatch UK's alerts in the UK, or bookmark the NOAA aurora forecast map in the US.
   - Pick a dark spot near you with a clear view to the north, away from street lights.
-  - Go out when an amber or red alert coincides with a clear sky, and take a camera, which picks up faint colour the eye can miss.
+  - Go out when an amber or red alert coincides with a clear sky, and take a camera or a phone with a night mode.
   links:
   - label: AuroraWatch UK alerts (Lancaster University)
     url: https://aurorawatch.lancs.ac.uk/alerts/
@@ -4910,6 +4910,18 @@
     url: https://www.spaceweather.gov/products/aurora-30-minute-forecast
     region: us
     checked: '2026-10-07'
+  - label: 'VisitScotland: the northern lights in Scotland'
+    url: https://www.visitscotland.com/things-to-do/nature-outdoors/northern-lights
+    region: uk
+    checked: '2026-11-04'
+  - label: 'Visit Norway: the northern lights in Norway'
+    url: https://www.visitnorway.com/things-to-do/nature-attractions/northern-lights/?lang=uk
+    region: world
+    checked: '2026-11-04'
+  - label: 'Explore Fairbanks: aurora season in Alaska'
+    url: https://www.explorefairbanks.com/aurora
+    region: us
+    checked: '2026-11-04'
   kit:
   - name: Warm hat and gloves
     why: you stand still a lot, and it gets cold
@@ -4920,6 +4932,115 @@
   - name: Folding camping chair
     why: for a long wait outdoors
     url: https://www.amazon.co.uk/s?k=folding+camping+chair+lightweight
+  inspire:
+  - kind: read
+    person: Owen Humphries, North East England
+    line: A photographer who got hooked on the aurora at St Mary's Lighthouse near Whitley Bay, and who photographed the best display he had seen in the North East at Bamburgh in Northumberland.
+    title: Photographer's mission to chase the Northern Lights in the North East's dark skies
+    outlet: ITV News Tyne Tees
+    url: https://itv.com/news/tyne-tees/2024-01-01/finding-the-northern-lights-in-the-north-easts-dark-skies
+    checked: '2026-11-04'
+  book:
+  - label: Northern lights trips from Tromsø on Viator
+    why: a guided night out in northern Norway; check what happens if the sky stays cloudy
+    url: https://www.viator.com/searchResults/all?text=Tromso+northern+lights
+    aff: viator
+  seo_title: 'How to see the northern lights: alerts, places, timing'
+  description: How to read aurora alerts and the Kp index, the best time of night and year, where to go in Scotland, Norway and Alaska, and how to photograph it.
+  detail:
+  - h: What it's really like
+    p:
+    - On most nights the northern lights are not the vivid curtains of the photographs. Fairbanks, Alaska, describes its displays as mostly green, teal and white, with a purple or magenta edge when they are intense, in curtains, bands, rays or a corona overhead.
+    - A display can last a few minutes or several hours, and nobody can promise one. What you can control is being somewhere dark, facing north, under a clear sky, at the right time of night. Most of an evening out is waiting, often in the cold, so warm layers and a hot drink matter more than any gadget.
+  - h: How to read the alerts
+    table:
+      head:
+      - Alert or index
+      - What it means
+      - What to do
+      rows:
+      - - AuroraWatch UK green
+        - Aurora unlikely to be visible by eye or camera anywhere in the UK
+        - Stay in
+      - - AuroraWatch UK yellow
+        - May be visible by eye from Scotland, and by camera from Scotland, northern England and Northern Ireland
+        - Worth a look from a dark spot in Scotland
+      - - AuroraWatch UK amber
+        - Likely visible by eye from Scotland, northern England and Northern Ireland, possibly elsewhere; photographs likely from anywhere in the UK
+        - Go out if the sky is clear
+      - - AuroraWatch UK red
+        - Likely visible by eye and camera from anywhere in the UK
+        - Go out wherever you are, away from lights
+      - - NOAA Kp 3 to 5
+        - The aurora moves further from the poles and grows brighter and more active
+        - Good nights in the far north; from further south, find a hilltop
+      - - NOAA Kp 6 to 7
+        - Possibly visible from the northern edge of the United States
+        - 'Northern states: find a dark view to the north'
+      - - NOAA Kp 8 to 9
+        - Very bright and active; may be overhead in the northern states
+        - Worth trying across much of the northern US
+    after: The UK alert levels are AuroraWatch UK's, run by Lancaster University; the Kp scale, from 0 to 9, is the one NOAA's Space Weather Prediction Center forecasts for North America. NOAA's rough rule is that the edge of the aurora sits near 66 degrees geomagnetic latitude at Kp 0 and moves about 2 degrees towards the equator for each step up the scale. A bright display can be seen hundreds of kilometres (miles) away, so a hill with a clear northern horizon helps.
+  - h: When to go
+    p:
+    - Darkness comes first. NOAA notes that the aurora may still be there in summer but can only be seen when the sky is dark, which is why summer trips to the far north usually disappoint. NOAA says displays are usually strongest within an hour or two of midnight, between 10pm and 2am local time, and that the weeks around the spring and autumn equinoxes tend to bring larger geomagnetic storms. A full moon makes the aurora look fainter.
+    - Visit Norway says aurora activity began peaking in 2024 and expects the highest levels in 11 years through 2026, so this winter and next spring are a good time to try.
+  - h: Where to travel for them
+    table:
+      head:
+      - Where
+      - Season the tourist board gives
+      - Worth knowing
+      rows:
+      - - 'Scotland: Shetland, Orkney, Lewis and Harris, Caithness, Galloway Forest Park'
+        - October to March
+        - Shetland calls the lights the Mirrie Dancers. Caithness and the North Coast 500 need no ferry. Galloway Forest Park was the UK's first Dark Sky Park.
+      - - 'Northern Norway: Tromsø, Alta, Lyngen, Senja, Lofoten, Bodø'
+        - Late September to late March
+        - Direct international flights to Tromsø; Bodø also has an international airport. Tromsø is busy in winter, so Visit Norway suggests autumn or the quieter places nearby. Coastal ships sail between Tromsø and Kirkenes.
+      - - Fairbanks, Alaska
+        - 21 August to 21 April
+        - Under the auroral oval, with low rainfall and often clear skies. Explore Fairbanks says the aurora shows on about four clear, dark nights in five.
+    after: 'Explore Fairbanks puts the chance at more than 90 per cent for visitors who stay at least three nights and are out late, but no tourist board can guarantee a sighting: you need a clear, dark sky as well as activity. Plan spare nights rather than pinning everything on one.'
+  - h: Taking a photograph
+    list:
+    - A phone's night mode can work. For a camera, VisitScotland suggests a sturdy tripod and a wide-angle lens.
+    - Explore Fairbanks suggests manual mode, the highest ISO and the widest aperture, with exposures of about 5 to 10 seconds; longer exposures are brighter but blur the aurora and streak the stars. A remote shutter helps.
+    - Bring extra batteries and a head torch, and find somewhere with as little light pollution as you can.
+  faq:
+  - q: Can you see the northern lights from England?
+    a: Yes, on strong nights. At an AuroraWatch UK amber alert the aurora is likely to be visible by eye from northern England and photographs are likely from anywhere in the UK; at red it is likely to be visible by eye from anywhere in the UK.
+  - q: What time of night is best for the northern lights?
+    a: NOAA says usually within an hour or two of midnight, between 10pm and 2am local time. VisitScotland gives 9pm to 2am, and says activity can come earlier or later.
+  - q: What Kp do you need to see the aurora?
+    a: NOAA says that at Kp 6 to 7 it may be visible from the northern edge of the United States, and at Kp 8 to 9 it may be overhead in the northern states. In the far north, Kp 3 to 5 brings brighter, more active displays.
+  - q: What is the best month to see the northern lights?
+    a: NOAA says the weeks around the spring and autumn equinoxes tend to bring bigger storms. Visit Norway gives late September to late March, with most activity in September and October and in March and April; VisitScotland says October to March.
+  - q: Do I need to book a tour?
+    a: No. Explore Fairbanks lists driving to a vantage point and waiting as one option, alongside guided tours and heated cabins. At home, watching the alerts and going to a dark spot with a view north is enough.
+  - q: How many nights should I allow?
+    a: Explore Fairbanks puts the chance above 90 per cent for visitors who stay at least three nights and are out late. Nowhere can promise it, so allow spare nights for cloud.
+  sources:
+  - label: AuroraWatch UK (Lancaster University), alert status descriptions
+    url: https://aurorawatch.lancs.ac.uk/api-info/0.2/status-descriptions.xml.txt
+    checked: '2026-11-04'
+  - label: NOAA Space Weather Prediction Center, Tips on viewing the aurora
+    url: https://www.spaceweather.gov/content/tips-viewing-aurora
+    checked: '2026-11-04'
+  - label: Visit Norway, The northern lights in Norway
+    url: https://www.visitnorway.com/things-to-do/nature-attractions/northern-lights/?lang=uk
+    checked: '2026-11-04'
+  - label: Explore Fairbanks, Aurora
+    url: https://www.explorefairbanks.com/aurora
+    checked: '2026-11-04'
+  - label: VisitScotland, Northern lights
+    url: https://www.visitscotland.com/things-to-do/nature-outdoors/northern-lights
+    checked: '2026-11-04'
+  related:
+  - dark-sky-place
+  - drive-north-coast-500
+  - see-saturns-rings
+  - see-a-total-solar-eclipse
 - id: see-a-total-solar-eclipse
   title: Stand in the shadow of a total solar eclipse
   category: explore
@@ -9093,21 +9214,26 @@
   company: either
   regions:
   - us
-  places: [UT]
+  places:
+  - UT
   why: The last part of this hike climbs a narrow sandstone fin from Scout Lookout to the summit, holding a chain for much of the way. Zion National Park runs a permit lottery for that section, so it is something you plan for rather than turn up and do.
   start:
-  - Read the Angels Landing permit page on Recreation.gov and enter the seasonal lottery one to three months ahead.
-  - If you miss out, enter the day-before lottery while you are near the park.
-  - Start early from the Grotto trailhead with two to four litres of water, as there is none on the trail.
+  - Read the park's Angels Landing permit page and enter the seasonal lottery in the window before the season you want.
+  - If you miss out, enter the day-before lottery while you are near the park, or hike to Scout Lookout, which needs no permit.
+  - 'Start early from the Grotto trailhead with plenty of water: the park advises at least a gallon (about 4 litres) per person per day.'
   links:
   - label: Recreation.gov, Angels Landing permit (Zion National Park)
     url: https://www.recreation.gov/permits/4675324
     region: us
     checked: '2026-10-27'
-  safety: The park warns of extreme heat from May to September and says the trail is extremely dangerous in thunderstorms, so check the forecast and turn back if conditions change.
-  photo_file: "File:Angels Landing and the Great White Throne.jpg"
-  photo_caption: "Angels Landing and the Great White Throne in Zion National Park, 2012."
-  photo_alt: "Two huge red and cream sandstone peaks against a blue sky."
+  - label: Zion National Park (NPS), Angels Landing hiking permits
+    url: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
+    region: us
+    checked: '2026-11-04'
+  safety: 'Falls from Zion''s cliffs have killed people, and summers bring extreme heat and thunderstorms: check the forecast, carry plenty of water, hold the chains and turn back if conditions change.'
+  photo_file: File:Angels Landing and the Great White Throne.jpg
+  photo_caption: Angels Landing and the Great White Throne in Zion National Park, 2012.
+  photo_alt: Two huge red and cream sandstone peaks against a blue sky.
   photo_checked: '2026-11-01'
   kit:
   - name: Insulated water bottle
@@ -9119,6 +9245,106 @@
   - name: Walking shoes with sticky soles
     why: grip matters on the rock sections
     url: https://www.amazon.co.uk/s?k=hiking+shoes+grip
+  inspire:
+  - kind: read
+    person: Debbie Caban, Bedford
+    line: Climbed the chains to the summit of Angels Landing with four friends, a group whose average age was about 70, after one of them won a 9am permit in the lottery, on a guided tour of Utah's parks.
+    title: Conquering Angels Landing in Zion National Park
+    outlet: The Bedford Citizen
+    url: https://thebedfordcitizen.org/2025/10/conquering-angels-landing-in-zion-national-park/
+    checked: '2026-11-04'
+  seo_title: 'Angels Landing permit: the lottery and the hike explained'
+  description: How the Angels Landing permit lotteries work, the fees and rules, the 5.4-mile hike and its chains, heat and storms, and what to do if you miss out.
+  detail:
+  - h: What it's really like
+    p:
+    - Angels Landing is a 5.4-mile (8.7 km) round trip from the Grotto, shuttle stop 6 in Zion Canyon, with 1,488 feet (454 metres) of climbing; the park says most hikers take about four hours. The first 2.25 miles (3.6 km) climb about 1,000 feet (305 metres) up the West Rim Trail to Scout Lookout, and anyone may walk that far without a permit.
+    - The last half-mile is why people come and why there is a permit. Beyond Scout Lookout the route follows a narrow fin of rock, in places less than three feet (about a metre) wide, with steep drop-offs and chains fixed to hold. Zion issues more than 200,000 permits a year for it, and the park credits the system with less crowding and safer conditions on the chains.
+    - The park is plain that falls from cliffs on its trails have killed people and that your safety is your responsibility. If the exposure is not for you, Scout Lookout is a real destination in its own right.
+  - h: The two lotteries
+    table:
+      head:
+      - Lottery
+      - When you apply
+      - Results
+      - Changes and refunds
+      rows:
+      - - Seasonal
+        - In a window before each season (dates below); list up to seven dates, times or ranges
+        - A few days after the window closes
+        - Cancel up to two days before for a refund of the per-person fee
+      - - Day-before
+        - 12:01am to 3pm Mountain Time on the day before you hike
+        - 4pm Mountain Time that day
+        - No changes; all fees non-refundable
+    after: Both run on Recreation.gov. Everyone on the chains section needs a permit, whatever the season.
+  - h: How the 2026 seasonal lotteries ran
+    table:
+      head:
+      - Hike dates
+      - Lottery open
+      - Permits issued
+      rows:
+      - - 1 March to 31 May 2026
+        - 13 to 25 February
+        - 26 February
+      - - 1 June to 31 August 2026
+        - 1 to 20 April
+        - 25 April
+      - - 1 September to 30 November 2026
+        - 1 to 20 July
+        - 25 July
+      - - 1 December 2026 to 28 February 2027
+        - 1 to 20 October
+        - 25 October
+    after: The park announces each year's dates in advance, so check the 2027 windows on its permit page. For hikes before the end of February 2027, the seasonal lottery has closed and the day-before lottery is the way in.
+  - h: Fees and rules
+    list:
+    - A $6 application fee, which is not refunded, then $3 a person if you win, plus the park entrance fee unless you hold a federal recreation pass.
+    - 'Up to six people, including you, on one application. Apply only once: if you submit more than one application, all of them are cancelled and nothing is refunded.'
+    - The permit holder or the named alternate must be on the hike, carrying photo ID that matches the application. Permits cannot be transferred and you cannot add people later.
+    - Save the confirmation before you set out. Most phones get no signal in Zion Canyon, and rangers may ask to see permits anywhere on the trail at any time.
+    - The time on your permit is when you must be at the Grotto, so allow for the shuttle. The shuttle and park entry need no reservation, but check the time of the last shuttle back.
+  - h: Heat, storms and what to carry
+    list:
+    - Zion's summers bring extreme heat, thunderstorms and rain, and the monsoon season runs from July to September. Flash floods can happen at any time.
+    - 'Carry and drink plenty of water: the park advises at least a gallon (about 4 litres) per person per day.'
+    - Take a torch or head torch with new batteries, food, layers and proper footwear, in case you are out later than planned.
+    - In an emergency, try 911 first. If there is no signal, find a ranger or park volunteer.
+  faq:
+  - q: Do you need a permit for Angels Landing?
+    a: Yes, for the chains section from Scout Lookout to the summit, in every season. You can hike the West Rim Trail to Scout Lookout without one.
+  - q: How much is the Angels Landing permit?
+    a: A $6 application fee, which is not refunded, then $3 a person if you win, plus the park entrance fee unless you have a federal recreation pass.
+  - q: How long does it take to hike Angels Landing?
+    a: The park says most hikers take about four hours for the 5.4-mile (8.7 km) round trip, and some take longer.
+  - q: What if I don't win the Angels Landing lottery?
+    a: Enter the day-before lottery between 12:01am and 3pm Mountain Time the day before you want to hike; results come at 4pm. Or hike to Scout Lookout, which needs no permit.
+  - q: How many people can go on one Angels Landing permit?
+    a: Up to six, including the person who applies.
+  - q: Is Angels Landing dangerous?
+    a: Parts of the route are less than three feet wide with steep drop-offs, and the park says falls from cliffs on its trails have caused deaths. Use the chains, stay back from edges, and check the weather before you go.
+  sources:
+  - label: Zion National Park (NPS), Announces 2026 Angels Landing seasonal lottery dates (11 February 2026)
+    url: https://www.nps.gov/zion/learn/news/2026-02-11-angels-landing.htm
+    checked: '2026-11-04'
+  - label: Zion National Park (NPS), Angels Landing hiking permits
+    url: https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm
+    checked: '2026-11-04'
+  - label: Recreation.gov, Angels Landing permit (spring)
+    url: https://www.recreation.gov/permits/4675310
+    checked: '2026-11-04'
+  - label: Zion National Park (NPS), Zion Canyon trails
+    url: https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm
+    checked: '2026-11-04'
+  - label: Zion National Park (NPS), Safety
+    url: https://www.nps.gov/zion/planyourvisit/safety.htm
+    checked: '2026-11-04'
+  related:
+  - hike-half-dome
+  - hike-into-grand-canyon
+  - hike-mount-whitney
+  - watch-old-faithful-erupt
 - id: ride-the-katy-trail
   title: Ride the Katy Trail across Missouri
   category: travel
@@ -9624,7 +9850,8 @@
   company: others
   regions:
   - world
-  places: [ATA]
+  places:
+  - ATA
   why: Most visitors reach Antarctica by expedition ship from Ushuaia in Argentina, Punta Arenas in Chile or Montevideo in Uruguay, crossing to the Antarctic Peninsula. Smaller expedition ships are the ones that put people ashore; ships carrying more than 500 passengers cannot land anyone.
   start:
   - Read the IAATO frequently asked questions about getting there and choosing a trip.
@@ -9635,11 +9862,103 @@
     url: https://iaato.org/faqs
     region: world
     checked: '2026-10-27'
+  - label: 'GOV.UK: Antarctica travel advice, entry requirements (permits for British visitors)'
+    url: https://www.gov.uk/foreign-travel-advice/antarctica-british-antarctic-territory/entry-requirements
+    region: uk
+    checked: '2026-11-04'
   book:
   - label: Compare Antarctica expedition cruises on Viator
     why: 'check the ship''s size: smaller ships are the ones that land passengers'
     url: https://www.viator.com/searchResults/all?text=Antarctica+expedition+cruise
     aff: viator
+  safety: Help is a very long way off, so take medical and travel insurance that covers the whole journey, as IAATO advises, and follow your expedition team's instructions ashore.
+  inspire:
+  - kind: read
+    person: Judy Shaw, Ohio
+    line: Sailed to the Antarctic coast on a three-week January cruise from South America, by way of the Beagle Channel and the Falklands, to fulfil her late husband Bruce's wish that she see the seventh continent.
+    title: Kent woman honors husband with cruise to Antarctica | Along the Way
+    outlet: Record-Courier, via Yahoo News
+    url: https://www.yahoo.com/news/kent-woman-honors-husband-cruise-092110870.html
+    checked: '2026-11-04'
+  seo_title: 'How to visit Antarctica: ships, ports, season and rules'
+  description: 'Getting to Antarctica: ports, the summer season, why the size of your ship decides whether you land, the rules ashore and choosing an operator.'
+  detail:
+  - h: What it's really like
+    p:
+    - Almost every visitor to Antarctica arrives by sea, in the southern summer. Germany's Environment Agency puts the season at November to March, mostly in the waters of the Antarctic Peninsula, and IAATO, the tour operators' association, says 98 per cent of tourism voyages work in the Peninsula region.
+    - 'It is busier than its reputation: IAATO counted 118,491 visitors in the 2024-25 season, after 122,072 the season before. Days are planned around weather and ice. The UK Foreign Office warns that landings can be difficult because of westerly winds and a lack of sheltered anchorages, so an itinerary is a set of chances rather than a timetable.'
+  - h: 'The choice that matters most: the size of the ship'
+    table:
+      head:
+      - IAATO category
+      - Passengers
+      - Landings
+      rows:
+      - - YA
+        - Up to 12
+        - Sailing or motor yachts
+      - - C1
+        - 13 to 200
+        - Can land passengers
+      - - C2
+        - 201 to 500
+        - Can land passengers
+      - - CR
+        - More than 500
+        - 'No landings: you see Antarctica from the ship'
+    after: Under the Antarctic Treaty measures summarised by Germany's Environment Agency, no more than 100 people may be ashore at once, only one ship may use a landing site at a time, and each group of up to 20 visitors goes with a trained guide. So on a larger ship that lands, passengers go ashore in turns. If standing on the continent matters to you, ask an operator for the ship's category before anything else.
+  - h: Getting there
+    p:
+    - IAATO says most voyages leave from Ushuaia in Argentina, Punta Arenas in Chile or Montevideo in Uruguay. Trips to the Ross Sea side leave from Hobart in Tasmania or from Lyttelton or Bluff in New Zealand, and a few Peninsula voyages start or end in Cape Town or Port Elizabeth. Germany's Environment Agency notes that more visitors now arrive by plane.
+    - You need no visa for Antarctica itself, but you may need one for the country you sail from, usually Argentina or Chile. Anyone on a British expedition, or taking a British ship or aircraft into Antarctica, needs a permit from the Foreign Office's Polar Regions Department; on an organised trip the tour operator usually arranges it, so ask if you are not sure.
+  - h: Choosing an operator
+    list:
+    - Look the company up in IAATO's membership directory. Not every company that carries visitors is a member, though most are; members follow rules on staffing, distances from wildlife and waste, and have emergency plans.
+    - Ask the ship's IAATO category and passenger numbers, and how many landings the itinerary plans if the weather allows.
+    - Ask about the expedition team. IAATO expects at least 80 per cent of field staff to have relevant experience and half to have been to Antarctica before, and its members run talks on wildlife, geology, ice, history and the Antarctic Treaty.
+    - Check that your medical and travel insurance covers the whole journey, as IAATO advises.
+  - h: 'Ashore: the rules'
+    list:
+    - 'Keep at least 5 metres (about 16 feet) from wildlife: the precautionary distance in the Antarctic Treaty''s general guidelines for visitors.'
+    - IAATO members do not allow recreational drones in Antarctica's coastal areas, and review that ban each May.
+    - Follow your operator's biosecurity checks. IAATO publishes "Don't Pack a Pest" guidance and avian influenza protocols for the 2026-27 season.
+  faq:
+  - q: When can you visit Antarctica?
+    a: In the southern summer. Germany's Environment Agency gives November to March; the UK Foreign Office says summer is November to February and the continent is inaccessible from March to October.
+  - q: Can you land in Antarctica from a cruise ship?
+    a: Only from ships carrying 500 passengers or fewer. IAATO says ships with more than 500 passengers may not land anyone, and under the Treaty rules no more than 100 people may be ashore at once.
+  - q: Where do Antarctica cruises leave from?
+    a: Mostly Ushuaia, Punta Arenas or Montevideo for the Antarctic Peninsula, and Hobart, Lyttelton or Bluff for the Ross Sea.
+  - q: Do I need a visa or a permit to visit Antarctica?
+    a: No visa for Antarctica itself, though you may need one for Argentina or Chile. Anyone on a British expedition or ship needs a Foreign Office permit, which tour operators usually arrange.
+  - q: How many people visit Antarctica each year?
+    a: IAATO counted 118,491 visitors in 2024-25 and 122,072 in 2023-24.
+  - q: Can I fly a drone in Antarctica?
+    a: 'Not for fun near the coast on an IAATO member's trip: members ban recreational drones in coastal areas. Other uses need a permit.'
+  sources:
+  - label: IAATO, Frequently asked questions
+    url: https://iaato.org/faqs
+    checked: '2026-11-04'
+  - label: IAATO, Preparing for your expedition
+    url: https://iaato.org/visiting-antarctica/preparing-for-your-expedition
+    checked: '2026-11-04'
+  - label: Umweltbundesamt (German Environment Agency), Tourists in Antarctica
+    url: https://www.umweltbundesamt.de/en/tourists-in-antarctica
+    checked: '2026-11-04'
+  - label: 'GOV.UK, Antarctica/British Antarctic Territory travel advice: entry requirements'
+    url: https://www.gov.uk/foreign-travel-advice/antarctica-british-antarctic-territory/entry-requirements
+    checked: '2026-11-04'
+  - label: 'GOV.UK, Antarctica/British Antarctic Territory travel advice: safety and security'
+    url: https://www.gov.uk/foreign-travel-advice/antarctica-british-antarctic-territory/safety-and-security
+    checked: '2026-11-04'
+  - label: MercoPress, Another Antarctica season of over 100,000 visitors according to IAATO (3 May 2026)
+    url: https://en.mercopress.com/2026/05/03/another-antarctica-season-of-over-100.000-visitors-according-to-iaato
+    checked: '2026-11-04'
+  related:
+  - see-wildlife-in-the-galapagos
+  - hike-torres-del-paine-w
+  - see-the-northern-lights
+  - watch-for-whales-from-shore
 - id: hike-the-inca-trail-to-machu-picchu
   title: Hike the Inca Trail to Machu Picchu
   category: travel
@@ -9652,8 +9971,9 @@
   season: April to October (the trail closes every February)
   regions:
   - world
-  places: [PER]
-  why: The classic Inca Trail covers 43 km over four days and climbs above 4,000 metres, passing Inca sites on the way before you arrive at Machu Picchu on foot. Peru allows only 500 people a day on the trail, and 300 of those places go to guides, porters and other workers.
+  places:
+  - PER
+  why: The classic Inca Trail covers 43 km over four days and climbs above 4,000 metres, passing Inca sites on the way before you arrive at Machu Picchu on foot. Peru allows only 500 people a day on the trail, and 300 of those places go to workers such as tour guides.
   start:
   - Read PromPerú's Inca Trail tips and choose between the four-day classic route and the shorter two-day and one-day versions.
   - Book through a formal agency listed in the Peruvian government's directory of qualified tourism providers, months ahead for the classic route.
@@ -9663,15 +9983,15 @@
     url: https://www.peru.travel/stories/inka-trail-5-tips-for-exploring-one-of-the-best-trekking-routes-in-the-world
     region: world
     checked: '2026-10-27'
-  safety: The trail goes above 4,000 metres, so read the NHS advice on altitude sickness and see your GP or a travel clinic before you book.
+  safety: 'The trail goes above 4,000 metres (13,100 feet): read the NHS advice on altitude sickness, see your GP or a travel clinic before you book, and in Peru call 106 for an ambulance.'
   book:
   - label: Inca Trail treks on Viator
     why: compare operators, and check each one holds the official permits for your dates
     url: https://www.viator.com/searchResults/all?text=Inca+Trail+Machu+Picchu
     aff: viator
-  photo_file: "File:Above the Winay Wayna ruins on the one-day Inca Trail to Machu Picchu.jpg"
-  photo_caption: "Above the Wiñay Wayna ruins on the Inca Trail to Machu Picchu, 2016."
-  photo_alt: "Stone terraces and ruins on a steep, green mountainside."
+  photo_file: File:Above the Winay Wayna ruins on the one-day Inca Trail to Machu Picchu.jpg
+  photo_caption: Above the Wiñay Wayna ruins on the Inca Trail to Machu Picchu, 2016.
+  photo_alt: Stone terraces and ruins on a steep, green mountainside.
   photo_checked: '2026-11-01'
   kit:
   - name: Trekking poles
@@ -9686,6 +10006,102 @@
   - name: Merino walking socks
     why: fewer blisters on long days; bring a spare pair
     url: https://www.amazon.co.uk/s?k=merino+walking+socks
+  inspire:
+  - kind: read
+    person: Bethan Scott
+    line: Walked the Inca Trail over Dead Woman's Pass to the Sun Gate in memory of her husband Dave, with a group from Nightingale House Hospice that was on track to raise £100,000.
+    title: Intrepid fundraisers complete the Inca Trail challenge in aid of local hospice
+    outlet: Wrexham.com
+    url: https://www.wrexham.com/news/intrepid-fundraisers-complete-the-inca-trail-challenge-in-aid-of-local-hospice-221827.html
+    checked: '2026-11-04'
+  seo_title: 'Inca Trail to Machu Picchu: permits, routes and altitude'
+  description: The classic four-day Inca Trail and the two-day and one-day routes, how bookings work, the February closure, altitude and what to pack.
+  detail:
+  - h: What it's really like
+    p:
+    - The classic Inca Trail is a four-day, three-night trek of 43 km (27 miles) through the Andes, past Inca sites, to Intipunku, the Sun Gate, where Machu Picchu comes into view. PromPerú, Peru's tourist board, calls it the most requested route. It climbs above 4,000 metres (13,100 feet); a hospice group from Wrexham who walked it reached 4,200 metres (13,800 feet) at Dead Woman's Pass, the highest point.
+    - Peru allows 500 people a day on the trail, and 300 of those places go to workers such as tour guides, so trekker places are scarce. PromPerú advises booking through a formal agency listed in the government's National Directory of Qualified Tourism Service Providers. Forty-three kilometres over four days is a modest distance; the altitude is what makes it hard.
+  - h: The three routes
+    table:
+      head:
+      - Route
+      - Days
+      - Trekking distance
+      rows:
+      - - Classic
+        - 4 days, 3 nights
+        - 43 km (27 miles)
+      - - Short
+        - 2 days, 1 night
+        - 12 km (7.5 miles)
+      - - Express
+        - 1 day
+        - 11 km (6.8 miles)
+    after: All three are PromPerú's figures. The classic route is the most requested, and PromPerú advises booking it months ahead.
+  - h: Bookings, dates and the February closure
+    p:
+    - For 2026, Peru's state news agency Andina reported that bookings for 2026 Inca Trail treks opened in stages from 17 to 25 November 2025. If you are planning for 2027, ask an agency now whether bookings have opened. Machu Picchu itself has separate entry tickets, sold on the Ministry of Culture's tuboleto.cultura.pe, and you need a passport or other valid ID to enter.
+    - The trail closes in February for maintenance. In 2026 routes 1, 2, 3, 5 and 6 closed until 28 February and reopened on 1 March; in 2025 the closure ran into late March after heavy rain. PromPerú's best months are April to October, the dry season. The UK Foreign Office says the rainy season runs from November to May, when rockslides and mudslides can disrupt walking routes, roads and railways in the mountains.
+  - h: 'Altitude: the real challenge'
+    p:
+    - Cusco, where most trekkers stay before the trail, is at about 3,400 metres (11,150 feet), according to the US CDC. The NHS says altitude sickness can start above about 2,500 metres, usually 6 to 10 hours after arriving, with headache, nausea, tiredness, dizziness and poor sleep. PromPerú advises arriving in Cusco one or two days before the trek and resting, eating lightly and drinking plenty of water. The CDC adds that fitness does not protect you, and advises no alcohol for the first 48 hours at altitude.
+    - 'If symptoms come on, stop climbing and rest; if they get worse or have not improved after a day, go down. Confusion, poor balance, breathlessness at rest, or a cough with frothy or bloody spit are emergencies: get help and descend at once. See your GP or a travel clinic before you book, especially if you have had altitude sickness before or have a heart or lung condition.'
+  - h: What to pack
+    list:
+    - Light clothes for walking and warm layers for the nights
+    - A sleeping bag
+    - Insect repellent, sun cream, a hat and sunglasses
+    - Proper walking footwear
+    - Water and a small first aid kit
+    - A torch with spare batteries
+    - Your passport or ID documents and some cash
+    after: This is PromPerú's list; your agency will say what it provides.
+  faq:
+  - q: How hard is the Inca Trail?
+    a: The classic route is 43 km over four days, so the distance is modest, but it climbs above 4,000 metres. Arrive in Cusco a day or two early to get used to the altitude, as PromPerú advises.
+  - q: Can you hike the Inca Trail without a guide?
+    a: Plan on going with a licensed agency. Only 500 people a day are allowed, 300 of them for workers such as tour guides, and PromPerú advises booking through a formal agency in the government's directory.
+  - q: When is the Inca Trail closed?
+    a: In February, for maintenance. In 2026 it reopened on 1 March; in 2025 the closure ran into late March after heavy rain.
+  - q: How far ahead do I need to book the Inca Trail?
+    a: Months ahead for the classic route, PromPerú says. Bookings for 2026 treks opened in stages from 17 to 25 November 2025.
+  - q: Is there a shorter Inca Trail?
+    a: 'Yes: a two-day, one-night route of 12 km and a one-day route of 11 km.'
+  - q: What is the best time of year to hike the Inca Trail?
+    a: April to October, the dry months. The rainy season runs from November to May.
+  sources:
+  - label: 'PromPerú (peru.travel), Inka Trail: 5 tips for exploring one of the best trekking routes in the world'
+    url: https://www.peru.travel/stories/inka-trail-5-tips-for-exploring-one-of-the-best-trekking-routes-in-the-world
+    checked: '2026-11-04'
+  - label: 'Andina, Inca Trail to Machu Picchu: learn which sections will be closed to tourists in February (27 January 2026)'
+    url: https://andina.pe/ingles/noticia-inca-trail-to-machu-picchu-learn-which-sections-will-be-closed-to-tourists-in-february-1060802.aspx
+    checked: '2026-11-04'
+  - label: Andina, ¿Irás a Machu Picchu en 2026? (25 December 2025, in Spanish)
+    url: https://andina.pe/agencia/noticia-iras-a-machu-picchu-2026-ten-cuenta-estas-medidas-para-una-optima-visita-1056293.aspx
+    checked: '2026-11-04'
+  - label: NHS, Altitude sickness
+    url: https://www.nhs.uk/conditions/altitude-sickness/
+    checked: '2026-11-04'
+  - label: CDC Yellow Book 2026, Peru
+    url: https://www.cdc.gov/yellow-book/hcp/americas-caribbean/peru.html
+    checked: '2026-11-04'
+  - label: CDC Yellow Book 2026, High-altitude travel and altitude illness
+    url: https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html
+    checked: '2026-11-04'
+  - label: 'GOV.UK, Peru travel advice: safety and security'
+    url: https://www.gov.uk/foreign-travel-advice/peru/safety-and-security
+    checked: '2026-11-04'
+  - label: 'GOV.UK, Peru travel advice: health'
+    url: https://www.gov.uk/foreign-travel-advice/peru/health
+    checked: '2026-11-04'
+  - label: Wrexham.com, Intrepid fundraisers complete the Inca Trail challenge (height of Dead Woman's Pass)
+    url: https://www.wrexham.com/news/intrepid-fundraisers-complete-the-inca-trail-challenge-in-aid-of-local-hospice-221827.html
+    checked: '2026-11-04'
+  related:
+  - climb-kilimanjaro
+  - walk-the-camino-to-santiago
+  - hike-torres-del-paine-w
+  - see-wildlife-in-the-galapagos
 - id: walk-a-section-of-the-larapinta-trail
   title: Walk a section of the Larapinta Trail in Australia
   category: travel
