@@ -71,6 +71,7 @@ Each photo is resized for the web and not otherwise changed.
 | satoshi-tomokiyo-ai-ciphers | File:Pigpen cipher on paper (3027069236).jpg | Andie from Nanaimo, Canada | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Pigpen_cipher_on_paper_(3027069236).jpg | 2026-10-28 |
 | sola-alegbe-swimming-teacher | File:Swimming pool with lane ropes in place.jpg | Xander from Yellowknife, NT, Canada | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Swimming_pool_with_lane_ropes_in_place.jpg | 2026-10-27 |
 | stargazing-for-beginners | File:Searching the night sky.jpg | Annatsach | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Searching_the_night_sky.jpg | 2026-10-14 |
+| steve-james-200-marathons-coastline | File:Topsham Quay (geograph 5423434).jpg | Derek Harper | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Topsham_Quay_(geograph_5423434).jpg | 2026-11-04 |
 | terracotta-army-discovery | File:Qin Terracotta Army, Pit 1 09.jpg | Gary Lee Todd, Ph.D. | CC0 | https://commons.wikimedia.org/wiki/File:Qin_Terracotta_Army,_Pit_1_09.jpg | 2026-11-03 |
 | trevor-barry-saturn-decagon | File:Top view of the rings of Saturn by Cassini - October 10, 2013.jpg | NASA / JPL-Caltech / SSI / Cornell | Public domain | https://commons.wikimedia.org/wiki/File:Top_view_of_the_rings_of_Saturn_by_Cassini_-_October_10,_2013.jpg | 2026-10-14 |
 | virginia-ordaz-delta-college-degree | File:Delta College Campus.jpg | BronzeAnubis | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Delta_College_Campus.jpg | 2026-10-24 |
