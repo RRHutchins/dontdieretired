@@ -7,6 +7,9 @@ tags: [inventions, history, chemistry, kevlar, fibres, materials, women-in-scien
 segments: [learner, changer]
 level: any
 art: books
+photo_file: "File:Staal van aramidevezel van het merk Kevlar.jpg"
+photo_caption: "A sample of Kevlar aramid fibre made by DuPont, in the collection of the Industriemuseum in Ghent, Belgium."
+photo_alt: "A loose skein of golden-brown fibre lies in a clear plastic box, with a small handwritten label reading 100% Kevlar."
 hook: "A thin, cloudy liquid that colleagues doubted, and a chemist who kept asking for it to be spun. How Kevlar began."
 lesson: "When a result looks wrong, test it before throwing it out: the odd batch is sometimes the discovery."
 standfirst: "In the mid-1960s a DuPont chemist in Wilmington, Delaware, was looking for a light, strong fibre for car tyres. She made a cloudy solution that colleagues doubted, persuaded them to spin it, and found a fibre that DuPont would sell as Kevlar."
