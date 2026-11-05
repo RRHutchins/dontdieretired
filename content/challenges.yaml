@@ -521,8 +521,10 @@
   season: July to late September, when the trail is usually free of snow
   regions:
   - us
-  places: [CA]
-  why: The trail from Whitney Portal gains more than 6,200 feet to a summit that is also the southern end of the John Muir Trail. When it is free of snow the Forest Service describes it as non-technical but strenuous, so it is a walk rather than a climb.
+  places:
+  - CA
+  why: The trail from Whitney Portal gains more than 6,200 feet to a summit that is also the southern end of the John Muir Trail. When it is free of snow the Forest Service describes it as non-technical
+    but strenuous, so it is a walk rather than a climb.
   start:
   - Read the Inyo National Forest page for Mount Whitney and its permit rules.
   - Enter the permit lottery on Recreation.gov, choosing day use or an overnight trip.
@@ -532,10 +534,15 @@
     url: https://www.fs.usda.gov/r05/inyo/wilderness/mount-whitney
     region: us
     checked: '2026-10-06'
-  safety: Outside the snow-free season this becomes a mountaineering route that needs specialist skills and equipment.
-  photo_file: "File:High Camp.jpg"
-  photo_caption: "The foot of the switchbacks on the Mount Whitney Trail, beside High Camp, 2007."
-  photo_alt: "A rocky basin with patches of snow below jagged granite peaks, with three small figures of hikers among the boulders."
+  - label: 'Recreation.gov: Mt. Whitney permit and lottery'
+    url: https://www.recreation.gov/permits/233260
+    region: us
+    checked: '2026-11-05'
+  safety: Outside the snow-free season this becomes a mountaineering route that needs ice axe, crampons and the skills to use them. Leave the summit by noon if thunderstorms are forecast, and go down if
+    altitude symptoms are more than mild.
+  photo_file: File:High Camp.jpg
+  photo_caption: The foot of the switchbacks on the Mount Whitney Trail, beside High Camp, 2007.
+  photo_alt: A rocky basin with patches of snow below jagged granite peaks, with three small figures of hikers among the boulders.
   photo_checked: '2026-11-01'
   kit:
   - name: Trekking poles
@@ -550,6 +557,123 @@
   - name: High-factor sun cream
     why: sun and wind on high or open ground burn faster than you expect
     url: https://www.amazon.co.uk/s?k=sun+cream+spf+50
+  inspire:
+  - kind: read
+    person: Dave Dolan
+    line: Hiked to the summit of Mount Whitney with his friend Dan Ruiz, fifty years after his first ascent.
+    title: Dave Dolan conquers Mt. Whitney 50 years after first ascent
+    outlet: Valley News (Anza Valley Outlook)
+    url: https://myvalleynews.com/?p=52073
+    checked: '2026-11-05'
+  seo_title: 'Mount Whitney permit and hike: lottery, route, altitude'
+  description: How the Mount Whitney permit lottery works, the 22-mile day hike or overnight trip, altitude and storms, the snow-free season and what to carry.
+  detail:
+  - h: What it's really like
+    p:
+    - The summit of Mount Whitney sits at 14,505 feet (4,421 metres). The trail starts at Whitney Portal, about 8,300 feet (2,530 metres) up and 13 miles (21 km) west of the town of Lone Pine, and it climbs
+      more than 6,200 feet (1,890 metres) on the way to the top.
+    - 'The round trip is 22 miles (35 km). The Inyo National Forest calls it a strenuous but non-technical route when it is free of snow: there is no climbing, but there is a very long day with more than
+      12,000 feet (3,660 metres) of ascent and descent added together, most of it in thin air.'
+    - Outpost Camp, 3.8 miles (6.1 km) in at 10,300 feet (3,140 metres), and Trail Camp, 6 miles (9.7 km) in at 12,000 feet (3,660 metres), are the two camps on the trail. Trail Camp is above the tree line
+      and exposed to wind. Above it, the Forest Service warns that from the cables to Trail Crest there are places where a slip or fall can cause injury or death.
+  - h: 'Day hike or overnight: the two permits'
+    table:
+      head:
+      - ''
+      - Day use
+      - Overnight
+      rows:
+      - - People allowed each day (1 May to 1 November)
+        - '100'
+        - '60'
+      - - How long it lasts
+        - One day, midnight to midnight; no back-to-back day permits
+        - Several nights, and you may leave by another trail
+      - - Food storage
+        - '-'
+        - Bear-resistant containers required for food and rubbish
+      - - Human waste
+        - Pack it out in a kit
+        - Pack it out in a kit
+      - - Fees
+        - $6 per reservation, then $15 a person
+        - $6 per reservation, then $15 a person
+    after: Everyone who enters the Mount Whitney Zone needs a permit, including day hikers, all year round. An overnight trip spreads the 22 miles over more than one day; a day hike means all of it in one
+      go.
+  - h: How the lottery works
+    table:
+      head:
+      - Step
+      - When
+      - What happens
+      rows:
+      - - Apply
+        - 1 February to 1 March
+        - Enter the lottery on Recreation.gov for day use or overnight
+      - - Results
+        - 15 March
+        - Look for your lottery application in your Recreation.gov account
+      - - Claim
+        - By 9pm Pacific time on 21 April
+        - Pay the $15 a person and complete the details, or lose the date
+      - - Leftover dates
+        - From 7am Pacific time on 22 April
+        - Unclaimed dates go on sale first come, first served for the rest of the season
+      - - Outside the quota season
+        - 2 November to 30 April
+        - Permits are not limited; book online up to two weeks ahead
+    after: The Forest Service gives these dates without a year, so check its Mount Whitney page in January before the 2027 window opens. There are no refunds. You can print the permit from a week before
+      the trip, and it is cancelled as a no-show if it is not printed before the deadline. Only the group leader or the alternate named on the reservation can pick it up or use it.
+  - h: Snow, storms and altitude
+    list:
+    - The Forest Service says the trail is usually free of snow from July to late September, and to expect ice and snow until the beginning of July. Its trail page gives a slightly wider window, late June
+      to mid-October, and the National Park Service says ice axes and crampons are needed in spring and early summer.
+    - High winds, freezing temperatures, rain or snow can come in any month, and winter storms can bring winds of more than 100 mph (160 km/h).
+    - Thunderstorms and lightning are a serious hazard. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge.
+    - Altitude sickness shows as a headache that will not go, with poor sleep, dizziness, tiredness, loss of appetite, nausea or vomiting. Symptoms get worse if you keep climbing; if they are more than
+      mild, go down at once, and always go down with a group member who is weak or ill.
+  - h: Rules and what to carry
+    list:
+    - Pack out all solid human waste and paper, all year. Kits are available at the visitor centre and the trailhead, and there is a disposal box near the Whitney Portal toilets.
+    - Bears are very active at the trailhead. Take all food and rubbish out of your car and put it in the bear-proof lockers and bins.
+    - Overnight hikers must keep food and rubbish in a bear-resistant container.
+    - Layers for freezing, windy weather, waterproofs, a head torch, and food and water for a very long day.
+    - Build up first with long hill days that gain a lot of height, so the distance is not the thing that stops you.
+  faq:
+  - q: How hard is the Mount Whitney hike?
+    a: The Forest Service calls it strenuous but non-technical when it is free of snow. It is 22 miles (35 km) there and back and climbs more than 6,200 feet (1,890 metres) to 14,505 feet.
+  - q: When is the Mount Whitney lottery?
+    a: Applications run from 1 February to 1 March on Recreation.gov, results come out on 15 March, and winners must claim their date by 9pm Pacific time on 21 April.
+  - q: Do you need a permit to day hike Mount Whitney?
+    a: Yes. Everyone entering the Mount Whitney Zone needs a permit, day hikers included, all year round.
+  - q: How much does a Mount Whitney permit cost?
+    a: A $6 reservation fee, which is not refunded, plus $15 for each person entering the Whitney Zone. There are no refunds on Whitney reservations.
+  - q: What if I don't win the Mount Whitney lottery?
+    a: Unclaimed dates go on sale first come, first served from 7am Pacific time on 22 April. From 2 November to 30 April permits are not limited, but the mountain is usually under snow and needs winter
+      skills.
+  - q: What is the best month to hike Mount Whitney?
+    a: The trail is usually free of snow from July to late September. Expect ice and snow before July, and plan to be off the summit by noon if thunderstorms are forecast.
+  sources:
+  - label: Inyo National Forest (USDA Forest Service), Mount Whitney (updated 16 December 2025)
+    url: https://www.fs.usda.gov/r05/inyo/wilderness/mount-whitney
+    checked: '2026-11-05'
+  - label: Recreation.gov, Mt. Whitney permit (Inyo National Forest)
+    url: https://www.recreation.gov/permits/233260
+    checked: '2026-11-05'
+  - label: Inyo National Forest, Mt. Whitney Trail (updated 27 April 2026)
+    url: https://www.fs.usda.gov/r05/inyo/recreation/trails/mt-whitney-trail
+    checked: '2026-11-05'
+  - label: 'Inyo National Forest, Hiking the Mt. Whitney Trail (leaflet, November 2013: camps, hazards, weather and altitude)'
+    url: https://www.fs.usda.gov/media/122795
+    checked: '2026-11-05'
+  - label: Sequoia & Kings Canyon National Parks (NPS), Seeing and climbing Mt. Whitney (updated 25 August 2025)
+    url: https://www.nps.gov/seki/planyourvisit/whitney.htm
+    checked: '2026-11-05'
+  related:
+  - hike-a-fourteener
+  - hike-half-dome
+  - hike-angels-landing
+  - hike-pacific-crest-trail-section
 - id: hike-mount-washington
   title: Hike up Mount Washington, New Hampshire
   category: move
@@ -2002,7 +2126,8 @@
   company: either
   regions:
   - anywhere
-  why: One pass lets you string together cities, mountains and coastlines across dozens of countries, changing your plans whenever a place takes your fancy. Watching a continent unfold from a train window is a fine way to understand how it fits together.
+  why: One pass lets you string together cities, mountains and coastlines across dozens of countries, changing your plans whenever a place takes your fancy. Watching a continent unfold from a train window
+    is a fine way to understand how it fits together.
   start:
   - Read the passes guide and choose a Global Pass or a single-country pass.
   - Sketch a route of four or five stops and check which trains need reservations.
@@ -2021,6 +2146,133 @@
   - name: Travel backpack
     why: carry-on size is easier on and off trains
     url: https://www.amazon.co.uk/s?k=travel+backpack+carry+on
+  inspire:
+  - kind: read
+    person: Tom Chesshyre, author
+    line: Went Interrailing from London to Istanbul with a college friend when they had both just turned 50.
+    title: Author Tom Chesshyre on going interrailing at 50
+    outlet: RTÉ
+    url: https://www.rte.ie/lifestyle/travel/2024/0617/1455127-author-tom-chesshyre-on-going-interrailing-at-50
+    checked: '2026-11-05'
+  seo_title: 'Interrail pass guide: prices, seniors, reservations'
+  description: 'How an Interrail pass works now that anyone can buy one: flexi and continuous passes, the senior discount, seat reservations, and when a pass pays.'
+  detail:
+  - h: How the pass works now
+    p:
+    - Eurail and Interrail merged on 9 September 2026. Since then anyone can buy an Interrail pass, whatever their nationality or country of residence. One Global Pass covers 33 countries.
+    - There are two kinds of pass. A flexi pass gives you a number of travel days within a longer period (4, 5 or 7 days in a month, or 10 or 15 days in two months). A continuous pass lets you travel every
+      day for 15 days, 22 days, or one, two or three months. A travel day runs from midnight to 11.59pm local time, and on most trains you simply add the journey to the app.
+    - If you live in one of the 33 countries, the pass covers one journey out of your own country and one back in, each with as many connections as you need to cross the border.
+  - h: What it costs
+    table:
+      head:
+      - Global Pass
+      - Adult, 2nd class
+      - Senior (60+), 2nd class
+      - Adult, 1st class
+      rows:
+      - - 4 days in 1 month
+        - €283
+        - €255
+        - €367
+      - - 7 days in 1 month
+        - €381
+        - €343
+        - €495
+      - - 15 days in 2 months
+        - €553
+        - €498
+        - €718
+      - - 22 days continuous
+        - €586
+        - €527
+        - €761
+      - - 1 month continuous
+        - €696
+        - €626
+        - €904
+    after: These are the euro fares on a 2026 Global Pass price list published by CFR Călători, Romania's state railway, which sells the pass. Interrail's own site shows today's price in your currency.
+      Travellers who are 60 or over on the first day of the pass get 10% off; 12 to 27-year-olds get 25% off, and up to two children aged 4 to 11 travel free with one adult. A 1st class pass is valid in
+      both classes.
+  - h: 'Seat reservations: where you pay extra'
+    table:
+      head:
+      - Reservations are…
+      - Countries (Interrail's list)
+      rows:
+      - - Needed on most long-distance trains
+        - Croatia, France, Greece, Hungary, Italy, Norway, Poland, Romania, Serbia, Slovakia, Spain, Sweden, Türkiye
+      - - Mostly optional
+        - Austria, Czechia, Estonia, Finland, Germany, Great Britain, Ireland, Lithuania, Luxembourg, Montenegro, North Macedonia, Portugal, Slovenia
+      - - Rarely or never needed
+        - Belgium, Bosnia-Herzegovina, Bulgaria, Denmark, Latvia, the Netherlands, Switzerland
+    after: Every night train and most high-speed trains need a reservation. Interrail's indicative fees include €10 to €20 for a French TGV INOUI, €13 for an Italian Frecciarossa and €10 for a Spanish AVE
+      in 2nd class. Germany now requires reservations on many ICE trains from 1 June to 1 September. Eurostar has special pass-holder fares, €35 in Standard and €40 in Plus between London and France or
+      Belgium, but they are limited and sell out, so book early.
+  - h: Is a pass worth it?
+    p:
+    - 'Not always. The Man in Seat 61, the independent rail guide, is blunt: the cheapest advance tickets for each journey cost less than a pass. But a pass can beat tickets bought at short notice, and
+      it is much cheaper than fully flexible fares on most longer journeys. Stringing together a stack of advance tickets for a long trip may save money, but Seat 61 calls that risky.'
+    - So a pass suits a trip with many stops, where you want to decide as you go, and especially one through countries where reservations are optional. If you will mostly ride French, Italian or Spanish
+      high-speed trains, add €10 or more per journey for reservations, as Seat 61 suggests, before you compare.
+  - h: Night trains and travel days
+    list:
+    - A night train that leaves before midnight uses one travel day, the day it leaves, as long as you do not change trains after midnight.
+    - Changing trains after midnight uses two travel days.
+    - You cannot take a night train on the last day your pass is valid.
+    - Every night train needs a reservation, so book the sleeper or couchette as soon as your dates are firm.
+  faq:
+  - q: Can Americans buy an Interrail pass?
+    a: Yes. Since Eurail and Interrail merged on 9 September 2026, anyone can buy an Interrail pass regardless of nationality or where they live.
+  - q: Is there a senior discount on Interrail?
+    a: Yes. If you are 60 or over on the day the pass starts, you get 10% off the adult price.
+  - q: Do I need seat reservations with an Interrail pass?
+    a: For all night trains and most high-speed trains, yes, and in France, Italy and Spain for most long-distance trains. In Austria, Switzerland and the Netherlands most trains need none.
+  - q: Is Interrail cheaper than buying tickets?
+    a: Not if you book the cheapest advance tickets for each journey. A pass usually beats tickets bought at short notice and fully flexible fares, and it lets you change plans as you go.
+  - q: Can I use my Interrail pass in my own country?
+    a: A Global Pass covers one journey out of your country of residence and one back in. If you live outside the 33 countries, that rule does not apply to you.
+  - q: Can I use Interrail on the Eurostar?
+    a: Pass holders can book special Eurostar fares, €35 in Standard or €40 in Plus between London and France or Belgium. Seats are limited, so book well ahead.
+  sources:
+  - label: 'The Man in Seat 61, Interrail guide 2026: how do Interrail passes work?'
+    url: https://www.seat61.com/how-to-use-an-interrail-pass.htm
+    checked: '2026-11-05'
+  - label: Interrail, Pass purchase conditions (version 9, updated 10 September 2026)
+    url: https://www.interrail.com/en/terms-conditions/pass-purchase-conditions
+    checked: '2026-11-05'
+  - label: Interrail, All you need to know about Interrail
+    url: https://www.interrail.com/en-int/interrail-passes/what-is-interrail
+    checked: '2026-11-05'
+  - label: Interrail, Global Pass
+    url: https://www.interrail.com/en/interrail-passes/global-pass
+    checked: '2026-11-05'
+  - label: Interrail, Does Interrail offer any discounts?
+    url: https://www.interrail.com/en/support/interested-in-interrailing/do-you-offer-any-discounts
+    checked: '2026-11-05'
+  - label: CFR Călători, Interrail Global Pass price list (June 2026)
+    url: https://www.cfrcalatori.ro/wp-content/uploads/2026/01/Interrail-Global-Pass-iunie-2026-EN.pdf
+    checked: '2026-11-05'
+  - label: Interrail, Which trains require seat reservations?
+    url: https://www.interrail.com/en/support/reservations/which-trains-require-seat-reservations
+    checked: '2026-11-05'
+  - label: Interrail, Domestic train reservation fees
+    url: https://www.interrail.com/en-int/book-reservations/reservation-fees/domestic-train-reservation-fees
+    checked: '2026-11-05'
+  - label: Interrail, Eurostar
+    url: https://www.interrail.com/en/plan-your-trip/tips-and-tricks/trains-europe/high-speed-trains/eurostar
+    checked: '2026-11-05'
+  - label: Interrail, What is a travel day?
+    url: https://www.interrail.com/en/support/interested-in-interrailing/what-is-a-travel-day
+    checked: '2026-11-05'
+  - label: Interrail, Travel in your own country
+    url: https://www.interrail.com/en/interrail-passes/what-is-interrail/travel-your-own-country
+    checked: '2026-11-05'
+  related:
+  - sleeper-train-journey
+  - cross-america-by-train
+  - ride-west-highland-line
+  - ride-the-settle-carlisle
 - id: canal-boat-holiday
   title: Skipper a canal boat holiday
   category: travel
@@ -2043,11 +2295,142 @@
     url: https://canalrivertrust.org.uk/boating/boat-trips-and-holidays
     region: uk
     checked: '2026-10-06'
-  safety: 'Locks and deep water carry real risk: follow the hire company''s safety briefing and wear a lifejacket when working locks.'
+  - label: 'Erie Canalway (New York): narrowboat and cruiser hire'
+    url: https://eriecanalway.org/explore/boating/tours-rentals
+    region: us
+    checked: '2026-11-05'
+  safety: 'Locks and deep water carry real risk: keep the boat well forward of the cill, keep fingers clear of ropes on bollards, consider a lifejacket (children, non-swimmers and lone boaters should wear
+    one on deck), and never jump in after someone who has fallen in; throw them a line.'
   kit:
   - name: Non-slip deck shoes
     why: the roof and gunwales get slippery
     url: https://www.amazon.co.uk/s?k=non+slip+deck+shoes
+  inspire:
+  - kind: read
+    person: Jon Reynolds, York
+    line: Spent about ten years exploring England's canals and rivers on his 52ft narrowboat Borderline, covering more than 7,000 miles and 3,500 locks.
+    title: 'There and back again: an epic canal journey'
+    outlet: Canal & River Trust
+    url: https://canalrivertrust.org.uk/news-and-views/blogs/waterfront/there-and-back-again-an-epic-canal-journey
+    checked: '2026-11-05'
+  seo_title: 'Canal boat holiday for beginners: locks, routes, costs'
+  description: 'Your first narrowboat holiday: no licence needed, how far you get at 4 mph, how to work a lock safely, easy first routes and what a week costs.'
+  detail:
+  - h: What it's really like
+    p:
+    - 'You don''t need a licence or any experience to take a hire boat out. The hire company gives you a detailed explanation, including the safety information, when you arrive: how to steer, the simple
+      checks to do each morning and how to work a lock. Then the boat is yours.'
+    - The pace is the point. The speed limit on narrow canals is 4 mph, and you will travel at 3 to 4 mph. Hire companies generally do not allow cruising after dark, so check the small print. Most of the
+      work, and most of the fun, is at the locks, where the crew winds the paddles and pushes the gates while the steerer brings the boat in. The Canal & River Trust looks after more than 2,000 miles of
+      canals and rivers in England and Wales.
+  - h: How far you will get
+    p:
+    - 'Two rules of thumb are worth knowing. ABC Boat Hire adds the number of locks to the miles and divides by three to get hours: 12 miles and 9 locks makes about seven hours. The Inland Waterways Association
+      allows 3 miles an hour and ten minutes for each lock. The Canal & River Trust says each lock will take at least 15 minutes.'
+    - 'ABC suggests planning no more than about eight hours'' cruising in a day. On a first trip, plan less than you think: a route with few locks leaves time to stop at the pub, walk the towpath and moor
+      up somewhere quiet.'
+  - h: Easy routes for a first trip
+    table:
+      head:
+      - Canal
+      - Stretch
+      - Locks
+      rows:
+      - - Monmouthshire & Brecon
+        - Brecon to Pontymoile Basin, 35 miles
+        - Few
+      - - Ashby Canal
+        - 22 miles
+        - None
+      - - Shropshire Union
+        - Brewood to Shebdon, about 6 hours
+        - '1'
+      - - Kennet & Avon
+        - Bradford on Avon to Bath, about 6 hours
+        - '1'
+      - - Llangollen Canal
+        - From Chirk, over the Chirk and Pontcysyllte aqueducts
+        - '4'
+      - - Trent & Mersey
+        - To Fradley Junction and back, about 12 hours
+        - 5 each way
+    after: 'The Pontcysyllte Aqueduct, completed in 1805 and one of Thomas Telford''s greatest works, is the longest and highest in the UK: 1,007 feet (307 metres) long and 127 feet (39 metres) above the
+      River Dee, and part of a UNESCO World Heritage Site. For a stretch on a later trip, the Caen Hill flight at Devizes on the Kennet & Avon has 16 locks in a steep line, 29 in the whole flight, and takes
+      five to six hours; boats must enter by 2pm from April to September and by 1pm from October to March.'
+  - h: Working a lock safely
+    list:
+    - Check the lock first, and let any boat already coming through finish before you start.
+    - Keep the back of the boat well forward of the cill, the ledge below the top gates. If the boat starts to tilt on it, close all the paddles straight away.
+    - 'Never try to hold the boat with a rope alone: take one turn round a bollard, and keep your fingers clear of the rope and the bollard.'
+    - 'Use a windlass that fits the spindle snugly, always use the safety catch on the paddle gear, and never leave the windlass on the spindle: a flying windlass can cause serious injury.'
+    - Children, non-swimmers and anyone boating alone should wear a lifejacket whenever they are on deck, and the Trust says it is always safer for everyone to wear one.
+    - If someone falls in, never jump in after them. Stop the engine, close the paddles, keep them in sight and throw a line or lifebuoy.
+  - h: What it costs and when to go
+    p:
+    - The main hire season runs from about March to October or November. Prices rise sharply in summer. ABC Boat Hire put a week at around £959 in low season and upwards of £2,899 in peak summer in July
+      2026, with short breaks, Thursday to Monday or Monday to Friday, from around £688. Drifters, which hires from 35 bases in England, Scotland and Wales, lists 2027 short breaks from £650 for a boat
+      for four and weeks from £900. Tuition is included, and fuel is usually paid by deposit. Ask the hire firm about parking, fuel and the damage waiver before you book.
+    - In the United States, the Erie Canalway in New York lists firms that hire English-style narrowboats and cruisers for several days, with lessons in steering, docking and working the locks before you
+      set off.
+  faq:
+  - q: Do you need a licence to drive a canal boat?
+    a: No. The Canal & River Trust says you don't need a licence or permit to drive a holiday boat, and the hire company teaches you before you leave.
+  - q: How fast do canal boats go?
+    a: The speed limit on narrow canals is 4 mph, and you will usually travel at 3 to 4 mph.
+  - q: How long does it take to go through a lock?
+    a: The Canal & River Trust says at least 15 minutes for each one. The Inland Waterways Association's planning rule allows ten minutes a lock.
+  - q: How much does a canal boat holiday cost?
+    a: For 2026 and 2027, the big hire firms list short breaks from about £650 to £690 and weeks from about £900 to £960 in low season, rising to well over £2,000 for a week in summer.
+  - q: Do you have to wear a lifejacket on a canal boat?
+    a: The Canal & River Trust's handbook says children, non-swimmers and lone boaters should wear one whenever they are on deck, and that it is always safer to wear one. ABC Boat Hire, for one, lends buoyancy
+      aids free.
+  - q: Can you drive a canal boat at night?
+    a: Usually not. The Canal & River Trust's handbook says hire companies do not permit cruising after dark; check your hire firm's terms.
+  sources:
+  - label: Canal & River Trust, Information for first-time holiday boaters (edited 19 October 2026)
+    url: https://canalrivertrust.org.uk/boating/go-boating/boat-holidays-and-trips/information-for-first-time-holiday-boaters
+    checked: '2026-11-05'
+  - label: Canal & River Trust, Holiday routes for first-time boaters
+    url: https://canalrivertrust.org.uk/boating/go-boating/boat-holidays-and-trips/information-for-first-time-holiday-boaters/holiday-routes-for-first-time-boaters
+    checked: '2026-11-05'
+  - label: Canal & River Trust, The Boater's Handbook (2022 revision)
+    url: https://canalrivertrust.org.uk/media/document/QtaK2WURWJ0WUtb9wOLDzw/1HsyCpfe0NTebkDiThJHTsDWt5RJVQ1FVxWKHOfuPfg/aHR0cHM6Ly9jcnRwcm9kY21zdWtzMDEuYmxvYi5jb3JlLndpbmRvd3MubmV0L2RvY3VtZW50Lw/0189917d-375a-7b04-bb9b-e40e9abf68d2.pdf
+    checked: '2026-11-05'
+  - label: Canal & River Trust, Summer water safety tips for boaters
+    url: https://canalrivertrust.org.uk/support-us/our-campaigns/safety-on-our-waterways/water-safety-tips-for-boaters/summer-water-safety-tips-for-boaters
+    checked: '2026-11-05'
+  - label: Canal & River Trust, Caen Hill Locks
+    url: https://canalrivertrust.org.uk/canals-and-rivers/places-to-visit/caen-hill-locks
+    checked: '2026-11-05'
+  - label: Canal & River Trust, Boating through Caen Hill
+    url: https://canalrivertrust.org.uk/canals-and-rivers/places-to-visit/caen-hill-locks/boating-through-caen-hill
+    checked: '2026-11-05'
+  - label: Canal & River Trust, Walk to Pontcysyllte Aqueduct
+    url: https://canalrivertrust.org.uk/things-to-do/walking/canal-and-river-walks-near-me/walk-to-pontcysyllte-aqueduct
+    checked: '2026-11-05'
+  - label: ABC Boat Hire, Canal boat FAQs
+    url: https://www.abcboathire.com/more-information/faq
+    checked: '2026-11-05'
+  - label: ABC Boat Hire, How much does it cost to hire a canal boat in 2026? (15 July 2026)
+    url: https://www.abcboathire.com/blog/how-much-is-it-to-hire-a-canal-boat
+    checked: '2026-11-05'
+  - label: Drifters, Canal boat holidays facts and figures
+    url: https://www.drifters.co.uk/drifters-canal-boat-holidays-facts-and-figures/
+    checked: '2026-11-05'
+  - label: Drifters, Handover and tuition
+    url: https://drifters.co.uk/handover.htm
+    checked: '2026-11-05'
+  - label: Inland Waterways Association, Canal and river route planning
+    url: https://waterways.org.uk/waterways/using-the-waterways/boating/route-planning
+    checked: '2026-11-05'
+  - label: Erie Canalway National Heritage Corridor, Boat rentals and tours
+    url: https://eriecanalway.org/explore/boating/tours-rentals
+    checked: '2026-11-05'
+  related:
+  - volunteer-lock-keeper
+  - paddle-the-broads
+  - canoe-a-river-trail
+  - ride-a-heritage-railway
 - id: drive-a-scenic-byway
   title: Drive a National Scenic Byway end to end
   category: travel
@@ -5871,8 +6254,10 @@
   season: Late spring to early autumn
   regions:
   - uk
-  places: [scotland]
-  why: The North Coast 500 is a 516-mile loop around the far north of Scotland, through the Black Isle, Caithness, Sutherland and Wester Ross. It strings together white beaches, bare mountains and remote fishing villages on roads that are often a single lane wide.
+  places:
+  - scotland
+  why: The North Coast 500 is a 516-mile loop around the far north of Scotland, through the Black Isle, Caithness, Sutherland and Wester Ross. It strings together white beaches, bare mountains and remote
+    fishing villages on roads that are often a single lane wide.
   start:
   - Read the planning pages and sample itineraries on the official North Coast 500 site and decide how many days to allow.
   - Book your overnight stops before you set off, as beds are scarce in the smaller villages.
@@ -5882,7 +6267,12 @@
     url: https://www.northcoast500.com/
     region: uk
     checked: '2026-10-07'
-  safety: Much of the route is single-track road with passing places, so drive slowly, pull in to let others by and never park in a passing place.
+  - label: 'VisitScotland: North Coast 500'
+    url: https://www.visitscotland.com/planning/travel-in-scotland/driving-road-trips/north-coast-500
+    region: uk
+    checked: '2026-11-05'
+  safety: 'Much of the route is single-track road with unfenced stretches where sheep, cows and deer wander: drive slowly, pull in to passing places, never park in one, and keep large motorhomes off the
+    Bealach na Bà.'
   kit:
   - name: Midge net and repellent
     why: for midges on still, damp days in the Highlands
@@ -5890,6 +6280,114 @@
   - name: Binoculars (8x42)
     why: a common all-round size for birds and wildlife; try the weight before you buy
     url: https://www.amazon.co.uk/s?k=binoculars+8x42
+  inspire:
+  - kind: read
+    person: Janet Kerr, a former teacher from Lochgelly, Fife
+    line: Cycled the North Coast 500 on her own in nine days, setting out from Inverness and riding 87 miles on her last day.
+    title: 'Inspiring cyclists: Cycling the North Coast 500 with Parkinson''s'
+    outlet: Cycling UK
+    url: https://www.cyclinguk.org/real-life-stories/inspiring-cyclists-cycling-north-coast-500-parkinsons
+    checked: '2026-11-05'
+  seo_title: 'North Coast 500: how many days, route and driving tips'
+  description: 'Plan the North Coast 500: how many days to allow, which way round, when to go, single-track roads and passing places, Bealach na Bà and campervan rules.'
+  detail:
+  - h: What it's really like
+    p:
+    - The North Coast 500 is a 516-mile (830 km) loop that starts and finishes in Inverness. It runs through Inverness-shire, the Black Isle, Easter Ross, Caithness, Sutherland and Wester Ross, and you
+      can drive it either way round.
+    - 'The roads are the adventure. Parts of the route are single-track with passing places, long lengths are unfenced, so cows, sheep, goats and deer wander onto the road, and phone reception can be patchy,
+      especially in remote areas. The route''s own road safety page puts it simply: the North Coast 500 is not a racetrack.'
+  - h: How many days, and when to go
+    p:
+    - The official site recommends at least five to seven days, and VisitScotland says most visitors spend five to seven. The official site calls booking accommodation, vehicle hire and activities in advance
+      essential.
+    table:
+      head:
+      - Months
+      - What to expect
+      rows:
+      - - April to June
+        - One of the two windows VisitScotland suggests; midges start in May
+      - - July and August
+        - Within May to September, when most visitors come; midges at their peak in midsummer
+      - - September and October
+        - VisitScotland's other suggested window; midges until October
+      - - November to March
+        - The official site calls the route a year-round destination, though most visitors come from May to September
+    after: Midges are worst early and late in the day, on calm, overcast days, and mainly in the west Highlands. VisitScotland suggests checking the midge forecast before you plan the day. The official
+      site suggests heading up the east coast from Inverness first.
+  - h: Single-track roads and passing places
+    list:
+    - Pull into a passing place on your left to let an oncoming car or a driver behind you get by. If the passing place is on the right, wait opposite it.
+    - Give way to traffic coming uphill when you can, and reverse to a passing place if you need to.
+    - Never park in a passing place.
+    - On a single-track road, drive so you can stop in half the distance you can see to be clear.
+    - Give cyclists at least 1.5 metres (about 5 feet) when you pass.
+    - The drink-drive limit in Scotland is 22 micrograms of alcohol in 100 millilitres of breath.
+  - h: The Bealach na Bà and the Drumbeg road
+    p:
+    - The Bealach na Bà, the pass over to Applecross, was built in 1822 and has gradients that approach 20%. The sign at the foot says it rises to 2,053 feet (626 metres) with gradients of 1 in 5 and hairpin
+      bends, and is not advised for learner drivers, large vehicles or caravans.
+    - 'The official site says the Bealach na Bà and the B869 Drumbeg road are not recommended for larger vehicles and motorhomes. If your motorhome is bigger than a standard VW T5 conversion (about 16 to
+      18 feet, or 5 to 5.5 metres), it asks you not to attempt either: take the A832 instead of the Bealach na Bà, and the A894 instead of the Drumbeg road. Its test for any vehicle: if you cannot reverse
+      accurately for several hundred yards on a narrow single-track road, choose the main road.'
+  - h: Campervans, motorhomes and where to stay
+    list:
+    - Scotland's right of access does not include motor vehicles, so wild camping in a campervan or motorhome is not covered by the Scottish Outdoor Access Code. Wild camping is for people on foot, by bike
+      or with other non-motorised transport.
+    - You may rest in a designated formal lay-by, including overnight in a motorhome, but use the campsites along the route where you can; some take no bookings.
+    - 'Empty chemical toilets and grey water only at a designated waste point: public toilets are not suitable.'
+    - Never drive onto beaches or grass verges, and obey any parking restrictions a landowner sets.
+    - Check the size of your vehicle against the route before you set off.
+  faq:
+  - q: How many days do you need for the NC500?
+    a: The official site recommends at least five to seven days, and seven or more if you want time to stop. Most visitors spend five to seven.
+  - q: How long is the North Coast 500?
+    a: 516 miles (830 km), starting and finishing in Inverness.
+  - q: Which way round should you drive the NC500?
+    a: Either way works. The official site suggests going up the east coast from Inverness first.
+  - q: Can you wild camp in a campervan on the NC500?
+    a: Not under the Scottish Outdoor Access Code, which does not cover motor vehicles. Use campsites, or rest in a designated formal lay-by.
+  - q: When is the best time to drive the North Coast 500?
+    a: The official site says late spring and early autumn; VisitScotland suggests April to June or September and October. Midges are around from May to October.
+  - q: Can you drive the Bealach na Bà in a motorhome?
+    a: The official site asks drivers not to attempt it in anything bigger than a standard VW T5 conversion, about 16 to 18 feet long. Take the A832 instead.
+  sources:
+  - label: North Coast 500, North Coast 500 travel guide (July 2026)
+    url: https://www.northcoast500.com/2026/07/north-coast-500-travel-guide/
+    checked: '2026-11-05'
+  - label: North Coast 500, Planning your North Coast 500 adventure
+    url: https://www.northcoast500.com/top-tips-hitting-route/planning-your-north-coast-500-adventure/
+    checked: '2026-11-05'
+  - label: North Coast 500, Road safety
+    url: https://www.northcoast500.com/top-tips-hitting-route/road-safety/
+    checked: '2026-11-05'
+  - label: North Coast 500, Motorhomes and campervans
+    url: https://www.northcoast500.com/top-tips-hitting-route/motorhomes-and-campervan-advice/
+    checked: '2026-11-05'
+  - label: nidirect, The Highway Code rules 103 to 158 (rule 155, single-track roads)
+    url: https://www.nidirect.gov.uk/articles/rules-and-advice-drivers-and-riders-103-158
+    checked: '2026-11-05'
+  - label: Scottish Outdoor Access Code (NatureScot), Campervans, motorhomes and roof-top tents
+    url: https://www.outdooraccess-scotland.scot/practical-guide-all/camping/campervans-motorhomes-and-roof-top-tents
+    checked: '2026-11-05'
+  - label: VisitScotland, North Coast 500
+    url: https://www.visitscotland.com/planning/travel-in-scotland/driving-road-trips/north-coast-500
+    checked: '2026-11-05'
+  - label: VisitScotland, A guide to midges and ticks in Scotland
+    url: https://www.visitscotland.com/travel-planning/midges-ticks-scotland
+    checked: '2026-11-05'
+  - label: 'The Scotsman, Allan Brown: The long and winding road to Applecross (the Bealach na Bà sign)'
+    url: https://www.scotsman.com/lifestyle/cars/allan-brown-long-and-winding-road-applecross-1617752
+    checked: '2026-11-05'
+  - label: Press and Journal, Tourists failing to heed campervan warning on busy section of NC500
+    url: https://www.pressandjournal.co.uk/fp/news/highlands/1736567/video-tourists-failing-to-heed-campervan-warning-on-busy-section-of-nc500
+    checked: '2026-11-05'
+  related:
+  - ride-west-highland-line
+  - walk-west-highland-way
+  - stay-in-a-bothy
+  - drive-route-66
 - id: drive-route-66
   title: Drive a stretch of Route 66
   category: travel

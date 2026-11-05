@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-04)
+# Guidance engine report (2026-11-05)
 
-46 sources, 72 statements, 10 event profiles. Core 47, supported 25, thin 0, contested 0.
+48 sources, 74 statements, 11 event profiles. Core 47, supported 27, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -49,6 +49,8 @@
 - Triathlon Ireland (coaching team, with development coach Jo Sweetman), *10 things to know before your first triathlon* (2026). Opened 2026-11-03.
 - USA Triathlon (John Hansen), *How to use brick workouts in triathlon training* (2021). Opened 2026-11-03.
 - PromPerú (Peru's tourism board, peru.travel), *Inka Trail: 5 tips for exploring one of the best trekking routes in the world* (2026). Opened 2026-11-04.
+- USDA Forest Service, Inyo National Forest, *Mount Whitney (permits, quotas and season; last updated 16 December 2025)* (2025). Opened 2026-11-05.
+- USDA Forest Service, Inyo National Forest, *Hiking the Mt. Whitney Trail (visitor leaflet, November 2013)* (2013). Opened 2026-11-05.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -67,8 +69,8 @@
 | core | 26 | body maintenance | Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. | cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older, nhs-bones-65, cdc-older-adults (against: higdon-novice1) |
 | core | 24 | body maintenance | Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. | cmo-2019, lauersen-2014, who-2011-older, nhs-bones-65, cdc-older-adults |
 | core | 18 | altitude | Above 3,000 metres, sleep no more than 500 metres higher than the night before and take a rest day at the same height every three or four days. Avoid going from below 1,200 metres to above 3,500 metres in a day. | nhs-altitude, nathnac-altitude, tanapa-kili, cdc-altitude |
+| core | 18 | altitude | Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. | nhs-altitude, nathnac-altitude, cdc-altitude, inyo-whitney-leaflet |
 | core | 15 | before you start | Start from your current level and build up gradually; repeating a week is fine and is part of the plan, not a failure. | cmo-2019, nhs-c25k, who-2011-older |
-| core | 15 | altitude | Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. | nhs-altitude, nathnac-altitude, cdc-altitude |
 | core | 15 | altitude | See your GP or a travel clinic before a high-altitude trip, especially if you have a health condition or have had altitude sickness before; they can discuss preventive medicine. Make sure your insurance covers evacuation. | nhs-altitude, nathnac-altitude, cdc-altitude |
 | core | 14 | taper | In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. | bosquet-2007, ea-pavey-marathon, higdon-novice1, greatrun-half-plan, emf-half-beginner |
 | core | 13 | altitude | Being fit does not protect you from altitude sickness. Choose an itinerary with acclimatisation days and climb slowly however strong you feel. | nathnac-altitude, tanapa-kili, cdc-altitude |
@@ -124,6 +126,8 @@
 | supported | 4 | why | An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. | rc-down-weeks, higdon-novice1 |
 | supported | 3 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace |
 | supported | 3 | on the day | Check the forecast, walk in daylight, leave your route with someone, and turn back if conditions get beyond you. Summits are colder than valleys. | ydnpa-three-peaks |
+| supported | 3 | on the day | Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month. | inyo-whitney-leaflet |
+| supported | 3 | before you start | Plan for the snow-free season, usually July to late September. When snow or ice is on the mountain it needs winter mountaineering skills and equipment. | inyo-whitney, inyo-whitney-leaflet |
 | supported | 3 | on the day | On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. | bmc-long-distance, wanderlust-trek-prep |
 | supported | 3 | key session | Build your training walks from a few miles up to a full day's distance, carrying the pack you will use. | wanderlust-trek-prep, bmc-hill-fit |
 | supported | 3 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit |
@@ -142,7 +146,7 @@
 - altitude: 5 usable statements of its own
 - cycling: 5 usable statements of its own
 - endurance: 16 usable statements of its own
-- hill: 6 usable statements of its own
+- hill: 8 usable statements of its own
 - multiday: 7 usable statements of its own
 - running: 8 usable statements of its own
 - swimming: 15 usable statements of its own

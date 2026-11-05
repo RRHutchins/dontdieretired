@@ -192,6 +192,20 @@ guidance:
     use: safety
     text: Check the forecast, walk in daylight, leave your route with someone, and turn back if conditions get beyond you. Summits are colder than valleys.
     for: [ydnpa-three-peaks]
+  - id: storms-off-summit-early
+    topic: on the day
+    applies: [hill]
+    events: [mount-whitney]
+    use: safety
+    text: Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month.
+    for: [inyo-whitney-leaflet]
+  - id: whitney-snow-season
+    topic: before you start
+    applies: [hill]
+    events: [mount-whitney]
+    use: safety
+    text: Plan for the snow-free season, usually July to late September. When snow or ice is on the mountain it needs winter mountaineering skills and equipment.
+    for: [inyo-whitney, inyo-whitney-leaflet]
 
   # ---------- multi-day ----------
   - id: back-to-back
@@ -231,7 +245,7 @@ guidance:
     applies: [altitude]
     use: safety
     text: Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help.
-    for: [nhs-altitude, nathnac-altitude, cdc-altitude]
+    for: [nhs-altitude, nathnac-altitude, cdc-altitude, inyo-whitney-leaflet]
   - id: altitude-see-gp
     topic: altitude
     applies: [altitude]
