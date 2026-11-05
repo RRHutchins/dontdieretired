@@ -293,5 +293,55 @@
     return { plans, steps: sortSteps(steps), clashes };
   }
 
-  return { VERSION, build, suggest, combine, applyMarks, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  /* ---------------- Add to my calendar (RUNBOOK §6s, day 5) ----------------
+     ics(groups, settings, { today, stamp, site, name }) → the text of an iCalendar (.ics) file.   PURE.
+     groups: [{ id, cid, title, by_month, label, steps }], one per plan (steps as build/applyMarks/combine give them).
+     One all-day event per step from today on that is not ticked off; a month plan's day sits on the 1st and says
+     "some time in <month>". Every word is the step's own (text, detail, why, links, kit) or content/planner.yaml →
+     notes.cal_*. Links are written plain, without affiliate tags: the plan page, where the disclosure is shown, carries
+     those. No alarms: the reader's own calendar decides about reminders. UIDs are stable per activity and step, so a
+     calendar that honours them updates a step when the file is added again rather than copying it. */
+  const utf8len = ch => { const c = ch.codePointAt(0); return c < 0x80 ? 1 : c < 0x800 ? 2 : c < 0x10000 ? 3 : 4; };
+  function fold(line) {   // at most 75 octets a line; a continuation line starts with one space; never split a character
+    const out = []; let cur = '', bytes = 0;
+    for (const ch of line) { const b = utf8len(ch); if (bytes + b > 75) { out.push(cur); cur = ' '; bytes = 1; } cur += ch; bytes += b; }
+    out.push(cur); return out.join('\r\n');
+  }
+  const icsText = s => String(s == null ? '' : s).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
+  const icsDate = s => s.replace(/-/g, '');
+  const uidPart = s => String(s).replace(/[^A-Za-z0-9._-]/g, '-');
+  function ics(groups, settings, opts) {
+    opts = opts || {};
+    const N = settings.notes, today = iso(todayUTC(opts.today)), site = (opts.site || 'https://dontdieretired.com').replace(/\/$/, '');
+    const stamp = opts.stamp || new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '');
+    const L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Don\'t Die Retired//My year//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH'];
+    if (opts.name) L.push('X-WR-CALNAME:' + icsText(opts.name));
+    let count = 0;
+    (groups || []).forEach(g => {
+      const page = g.cid ? site + '/list/' + encodeURIComponent(g.cid) + '/#plan' : site + '/list/#mine';
+      (g.steps || []).forEach(st => {
+        if (st.done || st.date < today) return;
+        const isDay = st.strand === 'day';
+        const summary = isDay ? (g.by_month ? fill(N.cal_day_month, { title: g.title, month: g.label }) : g.title) : fill(N.cal_step, { title: g.title, text: st.text });
+        const body = [];
+        if (isDay && st.text && st.text !== g.title) body.push(st.text);
+        if (st.detail) body.push(st.detail);
+        (st.items || []).forEach(x => body.push(x.name + (x.why ? ': ' + x.why : '') + '\n' + x.url));
+        (st.links || []).forEach(l => body.push(l.label + (l.region === 'uk' ? ' (UK)' : l.region === 'us' ? ' (US)' : '') + '\n' + l.url));
+        if (st.why && !st.bare) body.push(fill(N.cal_why, { why: st.why }));
+        if (st.moved) body.push(st.moved.why);
+        body.push(fill(N.cal_plan, { url: page }));
+        const end = iso(addDays(parse(st.date), 1));
+        L.push('BEGIN:VEVENT', 'UID:ddr-' + uidPart(g.cid || g.id) + '-' + uidPart(st.id) + '@dontdieretired.com', 'DTSTAMP:' + stamp,
+          'DTSTART;VALUE=DATE:' + icsDate(st.date), 'DTEND;VALUE=DATE:' + icsDate(end),
+          'SUMMARY:' + icsText(summary), 'DESCRIPTION:' + icsText(body.join('\n\n')), 'URL:' + page,
+          'TRANSP:' + (isDay ? 'OPAQUE' : 'TRANSPARENT'), 'END:VEVENT');
+        count++;
+      });
+    });
+    L.push('END:VCALENDAR');
+    return { text: L.map(fold).join('\r\n') + '\r\n', count };
+  }
+
+  return { VERSION, build, suggest, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

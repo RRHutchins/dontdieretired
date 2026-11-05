@@ -72,22 +72,30 @@
       const gone = st.date < today;
       const links = st.links || [];
       if (links.some(l => l.aff) || (st.items || []).some(x => x.aff)) hasAff = true;
-      html += '<li class="pl-step' + (st.strand === 'day' ? ' is-day' : '') + (gone ? ' is-gone' : '') + '" data-strand="' + esc(st.strand) + '">'
-        + '<p class="pl-date"><time datetime="' + st.date + '">' + esc(dayText(st.date)) + '</time> <span class="pl-tag">' + esc(STRAND[st.strand] || st.strand) + '</span>' + (gone ? ' <span class="pl-tag pl-tag-gone">Gone by</span>' : '') + '</p>'
+      html += '<li class="pl-step' + (st.strand === 'day' ? ' is-day' : '') + (gone && !st.done ? ' is-gone' : '') + (st.done ? ' is-done' : '') + '" data-strand="' + esc(st.strand) + '">'
+        + '<p class="pl-date"><time datetime="' + st.date + '">' + esc(dayText(st.date)) + '</time> <span class="pl-tag">' + esc(STRAND[st.strand] || st.strand) + '</span>'
+        + (st.done ? ' <span class="pl-tag">Done</span>' : '') + (st.moved ? ' <span class="pl-tag my-tag-moved">Moved</span>' : '') + (gone && !st.done ? ' <span class="pl-tag pl-tag-gone">Gone by</span>' : '') + '</p>'
         + '<p class="pl-text">' + esc(st.text) + '</p>'
         + (st.detail ? '<p class="pl-detail">' + esc(st.detail) + '</p>' : '')
         + (links.length ? '<ul class="pl-links">' + links.map(l => linkHtml(l, multi)).join('') + '</ul>' : '')
         + ((st.items || []).length ? '<ul class="pl-links pl-kit">' + st.items.map(x => '<li><a href="' + esc(x.aff ? affUrl(x.url, x.aff) : x.url) + '" target="_blank" rel="' + (x.aff ? AFF_REL : 'noopener') + '">' + esc(x.name) + '</a><span class="pl-lwhy">' + esc(x.why) + '</span></li>').join('') + '</ul>' : '')
-        + '<p class="pl-why"><span>Why then:</span> ' + esc(st.why) + '</p></li>';
+        + '<p class="pl-why"><span>Why then:</span> ' + esc(st.why) + '</p>'
+        + (st.moved ? '<p class="pl-why my-moved">' + esc(st.moved.why) + '</p>' : '') + '</li>';
     });
     html += '</ol>';
     // the safety line is its own dated step ("Before you go: stay safe"), and stays on the page above
     if (hasAff) html += '<p class="disclosure">' + esc(N.affiliate) + '</p>';
     html += saved
       ? '<div class="pl-saved"><p><strong>Saved to your list ✓</strong> <a href="/list/#mine">See my list</a> · <a href="/my-year/#' + plan.date.slice(0, 7) + '">See it with your other plans in My year</a></p><p class="meta">' + esc(N.saved) + '</p>'
+        + '<div class="pl-cal"><p class="pl-acts"><button type="button" class="btn btn-small" data-pl-ics>Add to my calendar</button></p><p class="meta">' + esc(N.cal_help) + '</p><p class="pl-calmsg" data-pl-calmsg role="status" aria-live="polite"></p></div>'
         + '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-pl-change>Change the date</button><button type="button" class="btn btn-small btn-ghost" data-pl-clear>Remove this plan</button></p></div>'
       : '<p class="pl-acts"><button type="button" class="btn" data-pl-save>Save this plan to my list</button></p><p class="meta">' + esc(N.saved) + '</p>';
     out.innerHTML = html;
+  }
+  function saveFile(text, name) {   // a download made in the browser: nothing is sent anywhere
+    const u = URL.createObjectURL(new Blob([text], { type: 'text/calendar;charset=utf-8' })), a = document.createElement('a');
+    a.href = u; a.download = name; a.hidden = true; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(u), 10000);
   }
   function focusHead() {
     const h = $('[data-pl-h]'); if (!h) return;
@@ -102,7 +110,9 @@
     if (!it || !(it.date || it.month) || !it.plan_made) return false;
     const when = it.date ? { date: it.date } : { month: it.month };
     setWhen(when); sug.textContent = '';
-    current = { when, plan: make(when, it.plan_made) }; draw(current.plan, true); form.hidden = true;
+    const plan = make(when, it.plan_made);
+    if (plan.status === 'ok') plan.steps = P.applyMarks(plan, it, S);   // the reader's ticks and moves from My year
+    current = { when, plan }; draw(current.plan, true); form.hidden = true;
     return true;
   }
   function reset() { form.hidden = false; setWhen(suggestion()); }
@@ -123,6 +133,14 @@
     const use = e.target.closest('[data-pl-use]');
     if (use) { setWhen({ date: use.dataset.plUse }); form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true })); return; }
     if (e.target.closest('[data-pl-save]') && current && current.plan.status === 'ok') { L.plan(id, current.when, today); showSaved(); paintList(); focusHead(); return; }
+    if (e.target.closest('[data-pl-ics]') && current && current.plan.status === 'ok') {
+      const p = current.plan, msg = $('[data-pl-calmsg]');
+      const f = P.ics([{ id, cid: id, title: A.title, by_month: p.by_month, label: p.label, steps: p.steps }], S, { today, site: location.origin, name: 'My year: ' + A.title });
+      if (!f.count) { msg.textContent = 'Nothing left to add: every step is done or has gone by.'; return; }
+      saveFile(f.text, 'my-year-' + id + '.ics');
+      msg.textContent = 'Calendar file saved, with ' + f.count + (f.count === 1 ? ' entry.' : ' entries.') + ' Open it to add them to your calendar.';
+      return;
+    }
     if (e.target.closest('[data-pl-change]')) { form.hidden = false; suggestion(); (by() === 'month' ? monthSel : dateIn).focus(); return; }
     if (e.target.closest('[data-pl-clear]')) {
       L.plan(id, null); paintList(); out.innerHTML = '<p role="status">Plan removed. The activity stays on your list.</p>'; current = null; reset();

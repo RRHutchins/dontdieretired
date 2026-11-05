@@ -1050,3 +1050,10 @@ h1{line-height:1.04}
 .my-small{margin-top:24px}
 @media print{.my-switch,.my-acts,.my-mnav .btn,.my-open{display:none}}
 .fl-myyear{margin:6px 0 12px}.fl-myyear a{display:inline-block;padding:10px 0;font-weight:600}
+/* Add to my calendar (planner day 5) */
+.pl-cal{margin:10px 0 6px}
+.pl-cal .meta{max-width:62ch}
+.pl-calmsg{margin:6px 0 0;font-weight:600}
+.pl-calmsg:empty{display:none}
+.my-cal{border-top:1px solid var(--line);padding-top:14px;margin-top:22px}
+@media print{.pl-cal{display:none}}

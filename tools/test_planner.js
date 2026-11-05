@@ -229,4 +229,75 @@ t('combine over many random mixes: nothing lost, only flexible steps move, alway
     assert.deepStrictEqual(P.combine(es, data, { today: TODAY }), c, 'same inputs, same result');
   }
 });
+
+/* ---- Add to my calendar (day 5): ics() ---- */
+const unfold = txt => txt.replace(/\r\n /g, '');
+const events = txt => unfold(txt).split('BEGIN:VEVENT').slice(1).map(b => Object.fromEntries(b.split('\r\n').filter(l => /^[A-Z-]+[;:]/.test(l)).map(l => { const i = l.search(/[;:]/); return [l.slice(0, i), l.slice(l.indexOf(':') + 1)]; })));
+const unesc = s => s.replace(/\\n/g, '\n').replace(/\\([,;\\])/g, '$1');
+const grp = (a, p, steps) => ({ id: a.id, cid: a.id, title: a.title, by_month: p.by_month, label: p.label, steps: steps || p.steps });
+const STAMP = '20261102T090000Z';
+t('calendar file: well formed, CRLF, every line at most 75 octets, one event per step still to do', () => {
+  for (const a of acts) {
+    const s = P.suggest(a, { today: TODAY }), p = P.build(a, data, Object.assign({ today: TODAY }, s.month ? { month: s.month } : { date: s.date }));
+    if (p.status !== 'ok') continue;
+    const f = P.ics([grp(a, p)], data, { today: TODAY, stamp: STAMP });
+    assert.ok(f.text.startsWith('BEGIN:VCALENDAR\r\nVERSION:2.0\r\n') && f.text.endsWith('END:VCALENDAR\r\n'), a.id);
+    assert.ok(!/[^\r]\n/.test(f.text), a.id + ': bare LF');
+    f.text.split('\r\n').forEach(l => assert.ok(Buffer.byteLength(l) <= 75, a.id + ': long line ' + l));
+    const ev = events(f.text);
+    assert.strictEqual(ev.length, p.steps.length); assert.strictEqual(f.count, p.steps.length);
+    assert.strictEqual(new Set(ev.map(e => e.UID)).size, ev.length, a.id + ': UIDs not unique');
+    ev.forEach((e, i) => {
+      const st = p.steps[i];
+      assert.strictEqual(e.DTSTART, st.date.replace(/-/g, '')); assert.strictEqual(e.DTEND, plus(st.date, 1).replace(/-/g, ''));
+      const d = unesc(e.DESCRIPTION);
+      if (st.detail) assert.ok(d.includes(st.detail), a.id + ': detail missing');
+      if (st.strand === 'safety') assert.ok(d.includes(a.safety), a.id + ': safety line missing from the calendar');
+      (st.links || []).forEach(l => assert.ok(d.includes(l.url), a.id + ': link missing'));
+      (st.items || []).forEach(k => assert.ok(d.includes(k.name) && d.includes(k.url), a.id + ': kit missing'));
+      assert.ok(d.includes('/list/' + a.id + '/#plan'));
+      assert.ok(!/[?&](tag|pid|partner_id)=/.test(d), a.id + ': affiliate tag in the calendar');
+    });
+  }
+});
+t('calendar file: summaries and reasons come from planner.yaml; a month plan says so; text is escaped', () => {
+  const a = byId['take-up-beekeeping'], p = P.build(a, data, { month: '2027-03', today: TODAY });
+  const ev = events(P.ics([grp(a, p)], data, { today: TODAY, stamp: STAMP }).text);
+  const day = ev.find(e => e.UID.endsWith('-day@dontdieretired.com'));
+  assert.strictEqual(unesc(day.SUMMARY), data.notes.cal_day_month.replace('{title}', a.title).replace('{month}', 'March 2027'));
+  assert.strictEqual(day.TRANSP, 'OPAQUE');
+  ev.filter(e => e !== day).forEach(e => { assert.ok(fills(data.notes.cal_step).test(unesc(e.SUMMARY))); assert.strictEqual(e.TRANSP, 'TRANSPARENT'); assert.ok(/Why then: /.test(unesc(e.DESCRIPTION))); });
+  const odd = { id: 'x-1', cid: null, title: 'Tea; cake, and a\\nap\nnow', by_month: false, label: '', steps: [{ id: 'day', strand: 'day', date: '2026-12-01', text: 'Tea; cake, and a\\nap\nnow', why: '', links: [], bare: true }] };
+  const t2 = P.ics([odd], data, { today: TODAY, stamp: STAMP }).text;
+  assert.ok(unfold(t2).includes('SUMMARY:Tea\\; cake\\, and a\\\\nap\\nnow\r\n'));
+  assert.ok(unfold(t2).includes('UID:ddr-x-1-day@dontdieretired.com'));
+});
+t('calendar file: ticked steps and steps gone by are left out; moved steps go on their new day; long Unicode folds whole', () => {
+  const a = byId['take-up-beekeeping'], p = P.build(a, data, { date: '2027-04-10', today: TODAY });
+  const flex = p.steps.find(s => s.flexible && s.date < p.date), fixed = p.steps.find(s => !s.flexible && s.strand !== 'day');
+  const to = plus(flex.date, -2);
+  const marked = P.applyMarks(p, { ticks: { [fixed.id]: { done: true, at: 'x' } }, moves: { [flex.id]: { date: to, at: 'x' } } }, data);
+  const ev = events(P.ics([grp(a, p, marked)], data, { today: TODAY, stamp: STAMP }).text);
+  assert.strictEqual(ev.length, p.steps.length - 1);
+  assert.ok(!ev.some(e => e.UID.endsWith('-' + fixed.id + '@dontdieretired.com')));
+  const m = ev.find(e => e.UID.endsWith('-' + flex.id + '@dontdieretired.com'));
+  assert.strictEqual(m.DTSTART, to.replace(/-/g, '')); assert.ok(unesc(m.DESCRIPTION).includes('You moved this from'));
+  const later = P.ics([grp(a, p)], data, { today: plus(p.steps[2].date, 1), stamp: STAMP });
+  assert.strictEqual(later.count, p.steps.filter(s => s.date > p.steps[2].date).length);
+  const u = { id: 'x-2', cid: null, title: 'Café ☕ '.repeat(30), by_month: false, label: '', steps: [{ id: 'day', strand: 'day', date: '2026-12-01', text: 'x', why: '', links: [], bare: true }] };
+  const tx = P.ics([u], data, { today: TODAY, stamp: STAMP }).text;
+  tx.split('\r\n').forEach(l => assert.ok(Buffer.byteLength(l) <= 75));
+  assert.ok(Buffer.from(tx).toString() === tx && !tx.includes('�'));
+  assert.strictEqual(unesc(events(tx)[0].SUMMARY), u.title);
+});
+t('calendar file from My year: every plan together, auto-moves kept, done plans and their steps still left to the caller', () => {
+  const ids = anyFlex.slice(0, 3).map(a => a.id);
+  const es = ids.map(id => entry(id, { date: '2027-05-15' }));
+  const c = P.combine(es, data, { today: TODAY });
+  const groups = c.plans.map(p => ({ id: p.id, cid: p.cid, title: p.title, by_month: !p.date, label: p.label, steps: c.steps.filter(s => s.pid === p.id) }));
+  const ev = events(P.ics(groups, data, { today: TODAY, stamp: STAMP }).text);
+  assert.strictEqual(ev.length, c.steps.length);
+  c.steps.filter(s => s.moved).forEach(s => { const e = ev.find(x => x.UID === 'ddr-' + s.pid + '-' + s.id + '@dontdieretired.com'); assert.strictEqual(e.DTSTART, s.date.replace(/-/g, '')); assert.ok(unesc(e.DESCRIPTION).includes(s.moved.why)); });
+  assert.deepStrictEqual(P.ics(groups, data, { today: TODAY, stamp: STAMP }), P.ics(groups, data, { today: TODAY, stamp: STAMP }), 'same inputs, same file');
+});
 console.log(n + ' tests passed');

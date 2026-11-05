@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 STRANDS = ("book", "learn", "train", "travel", "kit")
 STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock")
 START_AT = ("first", "second", "ongoing", "after_start", "day")
-NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train")
+NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help")
 
 
 def _load(p: Path):

@@ -136,6 +136,20 @@
     const aff = all.steps.some(s => (s.links || []).some(l => l.aff) || (s.items || []).some(x => x.aff));
     const ad = $('[data-my-aff]'); ad.hidden = !(aff && view === 'month'); ad.textContent = S.notes.affiliate;
     $('[data-my-saved]').textContent = S.notes.saved;
+    $('[data-my-calhelp]').textContent = S.notes.cal_help;
+  }
+  /* ---------- Add to my calendar (day 5): every plan still to come, as this page shows it (moves included) ---------- */
+  function saveCalendar() {
+    gather();
+    const msg = $('[data-my-calmsg]');
+    const groups = all.plans.filter(p => p.status !== 'done').map(p => ({ id: p.id, cid: p.cid, title: p.title, by_month: !p.date, label: p.label,
+      steps: all.steps.filter(s => s.pid === p.id) }));
+    const f = P.ics(groups, S, { today, site: location.origin, name: 'My year' });
+    if (!f.count) { msg.textContent = 'Nothing left to add: every step is done or has gone by.'; return; }
+    const u = URL.createObjectURL(new Blob([f.text], { type: 'text/calendar;charset=utf-8' })), a = document.createElement('a');
+    a.href = u; a.download = 'my-year.ics'; a.hidden = true; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(u), 10000);
+    msg.textContent = 'Calendar file saved, with ' + f.count + (f.count === 1 ? ' entry' : ' entries') + ' from ' + groups.length + (groups.length === 1 ? ' plan.' : ' plans.') + ' Open it to add them to your calendar.';
   }
   function setHash() { try { history.replaceState(null, '', view === 'month' ? '#' + month : '#year'); } catch (e) {} }
   const say = t => { const m = $('[data-my-msg]'); m.textContent = ''; setTimeout(() => { m.textContent = t; }, 30); };
@@ -147,6 +161,7 @@
     if (g) { view = 'month'; month = g.dataset.myGoto; draw(true); setHash(); return; }
     const st = e.target.closest('[data-my-step]');
     if (st) { month = addMonths(month, +st.dataset.myStep); draw(); setHash(); if (st.hidden) $('[data-my-month]').focus({ preventScroll: true }); return; }
+    if (e.target.closest('[data-my-ics]')) { saveCalendar(); return; }
     const li = e.target.closest('[data-sid]'); if (!li) return;
     const pid = li.dataset.pid, sid = li.dataset.sid;
     if (e.target.closest('[data-my-shift]')) {
