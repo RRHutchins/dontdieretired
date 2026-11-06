@@ -8,6 +8,9 @@ segments: [learner, changer]
 level: any
 local: stargazing
 art: mountains
+photo_file: "File:USGS Lava on Makamae Street.jpg"
+photo_caption: "A lava flow moving along Makamae Street in Leilani Estates on the morning of 6 May 2018, during the Kīlauea eruption."
+photo_alt: "A low wall of glowing orange lava and dark rock spreading across the end of a paved road, with smoke rising between green trees."
 hook: "No telescope, no astronomy degree: Todd Fisher found a new asteroid in archive images and named it for his sister's lost home."
 lesson: "Some of the most useful science left to do needs patient eyes more than expensive kit, and anyone with a computer can lend theirs."
 standfirst: "Todd Fisher, a volunteer with a background in economics and political science, took up astronomy in 2023. Searching archive images from the Subaru Telescope on Maunakea, he found a small body nobody had recorded. In April it was officially named Leilani, after the Hawaiian neighbourhood the 2018 Kīlauea eruption swept away."
