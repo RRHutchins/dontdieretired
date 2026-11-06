@@ -34,7 +34,8 @@ NIGHTS = ["Christmas Eve", "Christmas Day", "Boxing Day"]
 
 EDITIONS = {
     "uk": dict(title=("The", "Don't Die Retired", "Christmas Quiz Book"), file="DDR-Christmas-Quiz-UK",
-               strap="Three nights of family quizzing: 300 questions, every answer checked."),
+               strap="Three nights of family quizzing: 300 questions, every answer checked.",
+               edition_line="UK edition"),
     "us": dict(title=("The", "Don't Die Retired", "Christmas Quiz Book"), file="DDR-Christmas-Quiz-US",
                strap="Three nights of family quizzing: 300 questions, every answer checked.",
                edition_line="American edition"),
@@ -259,6 +260,104 @@ class Book:
         self.end_page()
 
 
+# ------------------------------------------------------------------ cover
+# 6 x 9 in paperback wrap for KDP: back, spine, front, 0.125 in bleed. Spine for black ink on white paper,
+# 0.002252 in a page (KDP's figure, as in build_book.cover). The two editions differ in colour, edition band,
+# spine and back-cover text, so KDP and readers can tell them apart.
+COVER = {
+    "uk": dict(colour="#1D4E35", band="UK edition",
+               edition_rounds="Kings and queens, panto and the stage, a very British Christmas, famous Britons, "
+                              "British history and more, alongside Christmas around the world, the night sky, dinosaurs "
+                              "and inventions."),
+    "us": dict(colour="#1B3A63", band="American edition",
+               edition_rounds="Presidents, the fifty states, national parks and landmarks, an American Christmas, "
+                              "holiday films and TV and more, alongside Christmas around the world, the night sky, "
+                              "dinosaurs and inventions."),
+}
+
+
+def cover(edition, pages):
+    import math, random
+    from reportlab.lib.colors import white
+    from reportlab.pdfbase.pdfmetrics import stringWidth
+    b, k = EDITIONS[edition], COVER[edition]
+    spine = pages * 0.002252 * 72
+    bleed = .125 * 72
+    W, H = bleed * 2 + PW * 2 + spine, PH + bleed * 2
+    colour, cream, gold, crimson = HexColor(k["colour"]), HexColor("#FBF6EE"), HexColor("#F2B45A"), HexColor("#B23A48")
+    path = OUT / f"{b['file']}-cover.pdf"
+    c = canvas.Canvas(str(path), pagesize=(W, H), initialFontName="Body")
+    c.setTitle(f"{' '.join(b['title'])} ({k['band']}) cover")
+    c.setFillColor(colour); c.rect(0, 0, W, H, stroke=0, fill=1)
+    fx = bleed + PW + spine
+    cx = fx + PW / 2
+    # front: the sunrise over a snowy hill, snow falling
+    sun(c, cx, bleed + 1.95 * 72, 118, gold, bars=False)
+    hill = [(fx, bleed + 1.6 * 72), (fx + PW * .32, bleed + 2.4 * 72), (fx + PW * .64, bleed + 1.2 * 72), (W, bleed + 2.0 * 72)]
+    p = c.beginPath(); p.moveTo(fx, 0); p.lineTo(*hill[0]); p.curveTo(*hill[1], *hill[2], *hill[3]); p.lineTo(W, 0); p.close()
+    c.setFillColor(cream); c.drawPath(p, stroke=0, fill=1)
+    rnd = random.Random(31 if edition == "uk" else 47)
+    c.setFillColor(cream)
+    for _ in range(70):
+        x, y = fx + rnd.uniform(14, PW - 8), bleed + rnd.uniform(2.3 * 72, PH - 14)
+        if abs(x - cx) < 140 and bleed + 1.9 * 72 < y < bleed + 4.3 * 72:
+            continue
+        c.setFillAlpha(rnd.uniform(.35, .8)); c.circle(x, y, rnd.uniform(1.4, 3.2), stroke=0, fill=1)
+    c.setFillAlpha(1)
+    # title: the name on one line, all three words alike
+    lines = ["Don't Die Retired", "Christmas", "Quiz Book"]
+    big = min(52, (PW - .9 * 72) / stringWidth(lines[0], "Head", 1))
+    y = bleed + PH - 1.05 * 72
+    c.setFillColor(cream); c.setFont("Head", 26); c.drawCentredString(cx, y, "The"); y -= big * .95
+    for ln in lines:
+        c.setFont("Head", big); c.drawCentredString(cx, y, ln); y -= big + 2
+    # edition band
+    bw_, bh_ = 2.9 * 72, 30
+    c.setFillColor(crimson); c.roundRect(cx - bw_ / 2, y - 10, bw_, bh_, 15, stroke=0, fill=1)
+    c.setFillColor(white); c.setFont("Semi", 17); c.drawCentredString(cx, y - 10 + 9.5, k["band"])
+    y -= 44
+    c.setFillColor(cream); c.setFont("Semi", 17)
+    for ln in ("300 questions in 30 rounds", "for three nights of family quizzing"):
+        c.drawCentredString(cx, y, ln); y -= 22
+    c.setFillColor(colour); c.setFont("Semi", 15)
+    c.drawCentredString(cx, bleed + .7 * 72, "For all ages  \u2022  Every answer checked  \u2022  Answers at the back")
+    # spine (KDP: text needs 0.0625 in clear either side; 116 pages gives about 0.26 in)
+    c.saveState(); c.translate(bleed + PW + spine / 2, H / 2); c.rotate(-90)
+    fs = min(9.5, spine * .48)
+    c.setFillColor(cream); c.setFont("Head", fs)
+    c.drawCentredString(0, -fs * .34, f"The Don't Die Retired Christmas Quiz Book  \u2022  {k['band']}")
+    c.restoreState()
+    # back
+    bx, bw = bleed + .75 * 72, PW - 1.5 * 72
+    y = bleed + PH - 1.3 * 72
+    c.setFillColor(cream)
+    for ln in L.wrap("Three nights of quizzing round the table", "Head", 25, bw):
+        c.setFont("Head", 25); c.drawString(bx, y, ln); y -= 30
+    blurb = [
+        "300 questions in 30 rounds of ten: one night for Christmas Eve, one for Christmas Day and one for Boxing Day. "
+        "One person reads, everyone plays, from grandparents to grandchildren.",
+        "Every round mixes questions anyone can try, questions for the grown-ups and hard ones for the know-all. "
+        "Each night has a junior round, and a swap round where the grown-ups answer about the children's world "
+        "and the children about the grown-ups'.",
+        k["edition_rounds"],
+        "Every answer was checked against a published source, and many come with a short note to read out.",
+    ]
+    for t in blurb:
+        y = L.para(c, t, bx, y - 9, bw, "Body", 13.5, 18.5, cream) - 3
+    assert y > bleed + 1.75 * 72, f"back-cover text runs into the foot ({y / 72:.2f} in)"
+    c.setFont("Semi", 15); c.setFillColor(gold)
+    sun(c, bx + 12, bleed + 1.15 * 72, 9, gold)
+    c.drawString(bx + 34, bleed + 1.08 * 72, "Never retire from life.")
+    c.setFillColor(cream); c.setFont("Body", 13.5)
+    c.drawString(bx + 34, bleed + .8 * 72, "dontdieretired.com")
+    # clear panel for KDP's barcode (2 x 1.2 in, lower right of the back)
+    c.setFillColor(white)
+    c.rect(bleed + PW - .25 * 72 - 2 * 72, bleed + .25 * 72, 2 * 72, 1.2 * 72, stroke=0, fill=1)
+    c.save()
+    print(f"{edition}: cover {W / 72:.3f} x {H / 72:.3f} in, spine {spine / 72:.4f} in -> {path.name}")
+    return path
+
+
 def build(edition, sample=False):
     rounds = load(edition)
     if not rounds:
@@ -272,6 +371,8 @@ def build(edition, sample=False):
         bk.c.save()
         ans = bk.ans_page
     print(f"{edition}: {sum(len(r['questions']) for r in rounds)} questions in {len(rounds)} rounds, {bk.n} pages -> {bk.path.name}")
+    if not sample:
+        cover(edition, bk.n)
     return bk.path, bk.n
 
 
