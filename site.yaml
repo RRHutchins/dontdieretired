@@ -15,6 +15,14 @@ site:
   contact_label: "our Facebook page"
   twitter_handle: "@dontdieretired"
 
+company:
+  # Legal operator of the site (Robin, 6 Nov 2026). Shown in the footer, About, Editorial policy and Privacy pages.
+  # Keep identical to Paws on the Sand and the other Norifico sites.
+  name: "Norifico Ltd"
+  number: "17560328"
+  registered_in: "England and Wales"
+  registered_office: "Fairfields, Carlton Road, South Godstone, Godstone, RH9 8LG"
+
 analytics:
   # Cloudflare Web Analytics: free and cookie-free, so no consent banner is needed for it.
   cloudflare_token: ""                       # from Cloudflare > Analytics & Logs > Web Analytics > dontdieretired.com > the token in the JS snippet (leave "" to disable)

@@ -116,6 +116,7 @@
   <div class="wrap footnote">
     <p>{{ cfg.affiliates.disclosure }}</p>
     <p>Nothing here is medical advice. Check with a health professional before starting a new exercise programme. © {{ now.year }} {{ cfg.site.name }}. Content is researched, written and updated daily with the help of AI and reviewed against the cited sources.</p>
+    {% if cfg.company %}<p class="company-line">{{ cfg.site.name }} is operated by {{ cfg.company.name }}, company number {{ cfg.company.number }}, registered in {{ cfg.company.registered_in }}. Registered office: {{ cfg.company.registered_office }}.</p>{% endif %}
   </div>
 </footer>
 

@@ -4,6 +4,7 @@
 {% block content %}
 <header class="page-head"><p class="kicker">Legal</p><h1>Privacy &amp; cookies</h1></header>
 <div class="prose narrow">
+<p><strong>Who we are.</strong> {{ cfg.site.name }} is operated by {{ cfg.company.name }} (company number {{ cfg.company.number }}, registered in {{ cfg.company.registered_in }}), registered office {{ cfg.company.registered_office }}. {{ cfg.company.name }} is responsible for the personal information described on this page.</p>
 <p><strong>What we collect.</strong> If you join the newsletter we store your email address and, if you chose one, your reader profile (e.g. "Restarter") with our email provider ({{ cfg.newsletter.provider|capitalize }}). We use it to send you the email and nothing else.</p>
 <p><strong>Analytics.</strong> {% if cfg.analytics.cloudflare_token %}We use Cloudflare Web Analytics, which sets no cookies and does not track you across sites; it counts page views, where visits come from and the type of device.{% elif cfg.analytics.plausible_script_id %}We use Plausible, a privacy-friendly analytics tool that sets no cookies and collects no personal data.{% else %}We use analytics to see which pages are read.{% endif %}</p>
 <p><strong>Advertising cookies.</strong> If you accept cookies, our advertising partner (Google AdSense or equivalent) may set cookies to show relevant ads. Choose "Essential only" in the banner to opt out; you can change this anytime via "Change my profile" in the footer.</p>
