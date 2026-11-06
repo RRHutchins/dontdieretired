@@ -5,7 +5,7 @@
 
    Stored shape, version 1:
    { version: 1, title, target, settings_updated_at,
-     items: [ { id, cid, title, status, date, month, plan_made, note, pos, added_at, updated_at, deleted } ] }
+     items: [ { id, cid, title, status, date, month, plan_made, level, ticks, moves, note, pos, added_at, updated_at, deleted } ] }
    - id: for a catalogue challenge it IS the challenge id (so two devices adding the same challenge
      merge into one); for a reader's own challenge it is "x-" + random.
    - cid: the catalogue id, or null for the reader's own. title is kept only for the reader's own.
@@ -18,7 +18,11 @@
    - My year page (added 4 Nov 2026; additive, still version 1): `ticks` { stepId: { done, at } } and `moves`
      { stepId: { date, at } } (date '' = back to the plan's own date) belong to the plan they were made on. They are
      cleared when the plan's date, month or plan_made changes, and merge() unions them key by key (newest `at` wins)
-     when both copies are the same plan, so ticking different steps on two devices loses neither. */
+     when both copies are the same plan, so ticking different steps on two devices loses neither.
+   - Dated training (added 6 Nov 2026; additive, still version 1): `level` ('starter' | 'active' | 'advanced', or ''
+     for none chosen, which the planner reads as the engine's default, active) is the starting point the engine's
+     training sessions were worked out for. It is part of the plan: changing it is a new plan, so ticks and moves are
+     cleared. A plan with training has a step per session (up to about a hundred), so up to MAX_STEPS marks are kept. */
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api; else root.DDRList = api;
@@ -29,7 +33,7 @@
   const empty = () => ({ version: VERSION, title: 'My list', target: 50, settings_updated_at: '', items: [] });
   const str = (v, n) => (typeof v === 'string' ? v : '').slice(0, n);
   const DAY = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/, MONTH = /^\d{4}-(0[1-9]|1[0-2])$/;
-  const STEP = /^[a-z0-9-]{1,40}$/, MAX_STEPS = 80;
+  const STEP = /^[a-z0-9-]{1,40}$/, MAX_STEPS = 300, LEVELS = ['starter', 'active', 'advanced'];
   // per-step marks on a saved plan: { stepId: { done: bool, at } } or { stepId: { date: 'YYYY-MM-DD' | '', at } }
   function cleanMarks(m, field) {
     const out = {};
@@ -42,7 +46,7 @@
     });
     return out;
   }
-  const planKey = it => (it.date || '') + '|' + (it.month || '') + '|' + (it.plan_made || '');
+  const planKey = it => (it.date || '') + '|' + (it.month || '') + '|' + (it.plan_made || '') + '|' + (it.level || '');
 
   // Make anything (old data, a backup file, a hand-edited file) into a well-formed list. Never throws.
   function clean(d) {
@@ -58,12 +62,13 @@
       out.items.push({
         id: it.id.slice(0, 80), cid: typeof it.cid === 'string' ? it.cid.slice(0, 80) : null,
         title: str(it.title, 120), status: STATUSES.includes(it.status) ? it.status : 'want',
-        date: DAY.test(it.date || '') ? it.date : '', month: '', plan_made: DAY.test(it.plan_made || '') ? it.plan_made : '', note: str(it.note, 500),
+        date: DAY.test(it.date || '') ? it.date : '', month: '', plan_made: DAY.test(it.plan_made || '') ? it.plan_made : '', level: '', note: str(it.note, 500),
         pos: typeof it.pos === 'number' && isFinite(it.pos) ? it.pos : i,
         added_at: str(it.added_at, 30) || str(it.updated_at, 30), updated_at: str(it.updated_at, 30), deleted: !!it.deleted,
       });
       const o = out.items[out.items.length - 1];
       if (!o.date && MONTH.test(it.month || '')) o.month = it.month;   // a date wins over a month: never both
+      if (o.plan_made && LEVELS.includes(it.level)) o.level = it.level;
       o.ticks = o.plan_made ? cleanMarks(it.ticks, 'done') : {};
       o.moves = o.plan_made ? cleanMarks(it.moves, 'date') : {};
     });
@@ -109,7 +114,7 @@
     const id = cid || 'x-' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
     const cur = find(d, id), pos = d.items.reduce((m, it) => Math.max(m, it.pos), -1) + 1;
     if (cur) Object.assign(cur, { deleted: false, status: cur.deleted ? 'want' : cur.status, updated_at: t, pos: cur.deleted ? pos : cur.pos });
-    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', month: '', plan_made: '', ticks: {}, moves: {}, note: '', pos, added_at: t, updated_at: t, deleted: false });
+    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', month: '', plan_made: '', level: '', ticks: {}, moves: {}, note: '', pos, added_at: t, updated_at: t, deleted: false });
     save(d); return d;
   }
   function update(id, changes) {
@@ -121,7 +126,7 @@
     it.updated_at = now(); save(d); return load();
   }
   /* My year: save a plan for a catalogue activity (adding it to the list if needed), or clear it with when = null.
-     when = { date: 'YYYY-MM-DD' } or { month: 'YYYY-MM' }; today = the reader's day (YYYY-MM-DD) the plan is made. */
+     when = { date: 'YYYY-MM-DD' } or { month: 'YYYY-MM' }, with an optional level for a plan with training; today = the reader's day (YYYY-MM-DD) the plan is made. */
   function plan(cid, when, today) {
     if (!has(cid)) add(cid);
     const d = load(), it = find(d, cid);
@@ -130,9 +135,10 @@
       it.date = when.date && DAY.test(when.date) ? when.date : '';
       it.month = it.date ? '' : when.month;
       it.plan_made = DAY.test(today || '') ? today : now().slice(0, 10);
+      it.level = LEVELS.includes(when.level) ? when.level : '';
       if (it.status === 'want') it.status = 'planned';
     } else {
-      it.date = ''; it.month = ''; it.plan_made = '';
+      it.date = ''; it.month = ''; it.plan_made = ''; it.level = '';
       if (it.status === 'planned') it.status = 'want';
     }
     it.updated_at = now(); save(d); return load();
@@ -164,5 +170,5 @@
   const flag = (name, value) => { try { if (value === undefined) return localStorage.getItem(KEY + '_' + name); localStorage.setItem(KEY + '_' + name, value); } catch (e) {} return null; };
   const has = id => { const it = find(load(), id); return !!(it && !it.deleted); };
 
-  return { KEY, VERSION, STATUSES, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get, tick, shift };
+  return { KEY, VERSION, STATUSES, LEVELS, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get, tick, shift };
 });

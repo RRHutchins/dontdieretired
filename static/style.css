@@ -1057,3 +1057,26 @@ h1{line-height:1.04}
 .pl-calmsg:empty{display:none}
 .my-cal{border-top:1px solid var(--line);padding-top:14px;margin-top:22px}
 @media print{.pl-cal{display:none}}
+/* My year, day 6: the engine's training a week at a time (RUNBOOK §6s) */
+.pl-level{margin-top:10px}
+.pl-levels{display:flex;flex-direction:column;gap:0}
+.pl-levels .pl-choice{align-items:flex-start;padding:10px 0;min-height:44px;line-height:1.35}
+.pl-levels .pl-choice input{flex:none;margin-top:1px}
+.pl-level .meta{margin:4px 0 0;max-width:62ch}
+.pl-wk{margin:4px 0 2px}
+.pl-wk>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--brand-ink);text-decoration:underline;font-size:.95rem}
+.pl-wk[open]>summary{margin-bottom:4px}
+.pl-sessions{list-style:none;margin:0 0 8px;padding:0}
+.pl-ses{border-top:1px solid var(--line);padding:8px 0 4px}
+.pl-ses p{margin:0 0 3px}
+.pl-stext{font-weight:600}
+.pl-ses.is-done .pl-stext{text-decoration:line-through;text-decoration-thickness:1px;color:var(--muted)}
+.pl-ses.is-gone .pl-stext,.pl-ses.is-gone .pl-detail{color:var(--muted)}
+.pl-wkh{font-weight:600;margin:10px 0 2px !important;font-size:.95rem}
+.pl-wkwhy{margin:0 0 6px;padding-left:20px;font-size:.95rem}
+.pl-wkwhy li{margin:3px 0}
+.pl-about{background:#f3f7f5;border-radius:10px;padding:10px 14px;margin:8px 0 4px;font-size:.95rem}
+.pl-about p{margin:0 0 6px}
+.pl-draft{font-style:italic;color:var(--muted)}
+.pl-src{font-size:.9rem}
+.pl-week .my-acts{margin:0}

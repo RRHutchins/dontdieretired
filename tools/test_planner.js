@@ -20,7 +20,16 @@ function checkSourced(a, plan) {
   const okWhy = s => Object.values(S).some(v => fills(v.why).test(s.why));
   const urls = new Set([...a.links, ...a.book].map(l => l.url).concat(a.dates ? [a.dates.source.url] : []));
   const kit = new Set(a.kit.map(k => k.url));
+  // training sessions: every word is one of the engine's own strings, with only the day names put in
+  const TR = a.event && data.training[a.event.id], DAYRX = /\b(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\b/g;
+  const engineWords = TR ? new Set(TR.t.map(x => x.replace(/\{d\d\}/g, '{d}'))) : new Set();
+  const fromEngine = x => engineWords.has(String(x)) || engineWords.has(String(x).replace(DAYRX, '{d}'));
   for (const s of plan.steps) {
+    if (s.week) {
+      assert.ok(TR && s.strand === 'train' && !s.flexible, `${a.id}: a training session without the engine`);
+      ['text', 'detail', 'why'].forEach(k => assert.ok((k === 'detail' && s[k] === undefined) || fromEngine(s[k]), `${a.id}: training ${k} not the engine's: ${s[k]}`));
+      continue;
+    }
     assert.ok(okText(s), `${a.id}: step text not from the activity or settings: ${s.text}`);
     assert.ok(s.why && okWhy(s), `${a.id}: step reason not from settings: ${s.why}`);
     (s.links || []).forEach(l => assert.ok(urls.has(l.url), `${a.id}: link not from the activity: ${l.url}`));
@@ -83,8 +92,11 @@ t('training comes only from the engine, never shorter than its minimum', () => {
     const p = P.build(a, data, { date: plus(TODAY, 400), today: TODAY });
     const tr = p.steps.filter(s => s.strand === 'train');
     if (!a.event) { assert.strictEqual(tr.length, 0, `${a.id}: training without an engine event`); continue; }
-    assert.strictEqual(tr.length, 1); assert.strictEqual(tr[0].weeks, a.event.weeks);
-    assert.strictEqual(tr[0].date, plus(p.date, -7 * a.event.weeks));
+    const start = tr.filter(s => s.id === 'train-start');
+    assert.strictEqual(start.length, 1); assert.strictEqual(start[0].weeks, a.event.weeks);
+    // the plan starts on the first day of the engine's first week (its Monday, counted back from the reader's day)
+    assert.strictEqual(start[0].date, plus(p.date, -7 * a.event.weeks + 2));
+    assert.ok(tr.filter(s => s.week).length > 3 * a.event.weeks, `${a.id}: the sessions are dated`);
     // one day short of the minimum: no plan, and the earliest date offered does work
     const short = P.build(a, data, { date: plus(TODAY, 7 * a.event.min_weeks - 1), today: TODAY });
     assert.strictEqual(short.status, 'too_soon'); assert.strictEqual(short.earliest, plus(TODAY, 7 * a.event.min_weeks));
@@ -144,6 +156,81 @@ t('same inputs, same plan', () => {
   const a = byId['climb-kilimanjaro'];
   assert.deepStrictEqual(P.build(a, data, { date: '2027-06-20', today: TODAY }), P.build(a, data, { date: '2027-06-20', today: TODAY }));
 });
+
+/* ---- Day 6: the engine's training as dated sessions ---- */
+const WD = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const dow = d => new Date(d + 'T00:00:00Z').getUTCDay();
+t('every engine plan, at every level and length, on every day of the week: sessions in their weeks, the key one on the reader\'s weekday, rest days kept, nothing on or after the day', () => {
+  for (const a of acts.filter(x => x.event)) {
+    const TR = data.training[a.event.id];
+    for (const level of P.LEVELS) for (let W = a.event.min_weeks; W <= TR.full[level]; W++) for (let k = 0; k < 7; k++) {
+      const date = plus(TODAY, 7 * W + k);   // leaves exactly W weeks (k < 7), and walks the day of the week round
+      const p = P.build(a, data, { date, today: TODAY, level });
+      assert.strictEqual(p.status, 'ok'); assert.strictEqual(p.train.weeks, W); assert.strictEqual(p.train.level, level);
+      const ses = p.steps.filter(x => x.week), tp = TR.plans[level + '-' + W];
+      assert.strictEqual(ses.length, tp.weeks.reduce((n, wk) => n + wk[2].length, 0), `${a.id} ${level}-${W}: a session lost`);
+      assert.strictEqual(p.train.list.length, W);
+      ses.forEach(x => {
+        assert.ok(x.date >= TODAY && x.date < date, `${a.id}: a session outside the run-up`);
+        const lo = plus(date, -(W - x.week) * 7 - 5), hi = plus(date, -(W - x.week) * 7 + 1);
+        assert.ok(x.date >= lo && x.date <= hi, `${a.id} ${level}-${W}: week ${x.week} session ${x.date} outside its week`);
+        assert.ok(![dow(plus(date, -5)), dow(plus(date, -1))].includes(dow(x.date)), `${a.id}: a session on a rest day`);
+      });
+      const keys = ses.filter(x => x.id.endsWith('-5'));
+      assert.strictEqual(keys.length, W - 1, `${a.id}: one key session a week, the challenge itself being the day`);
+      keys.forEach(x => assert.strictEqual(dow(x.date), dow(date)));
+      assert.ok(p.train.intro.includes('The ' + WD[dow(date)] + ' ' + TR.key), `${a.id}: the key session is named on the reader's day: ${p.train.intro}`);
+      assert.ok(!/\{d\d\}/.test(JSON.stringify(p)), 'every day name filled in');
+      assert.strictEqual(p.steps.find(x => x.id === 'train-start').date, plus(date, -7 * W + 2));
+      assert.strictEqual(!!p.train.warn, tp.warn != null); if (p.train.warn) assert.ok(p.notes.includes(p.train.warn));
+      checkSourced(a, p);
+    }
+  }
+});
+t('the starting level changes the sessions, and the engine\'s warning about too fast a build shows on the plan', () => {
+  const a = byId['walk-yorkshire-three-peaks'], d = plus(TODAY, 7 * 12 + 3);
+  const first = lv => P.build(a, data, { date: d, today: TODAY, level: lv }).steps.find(x => x.id === 't1-5').text;
+  assert.ok(first('starter').includes('2 hours') && first('active').includes('4 hours') && first('advanced').includes('6 hours'));
+  assert.strictEqual(P.build(a, data, { date: d, today: TODAY }).train.level, 'active', 'no level means the engine\'s own default, active');
+  // the engine says to choose more weeks when its default would build too fast from a starting point: the planner does
+  const long = P.build(a, data, { date: plus(TODAY, 7 * 20), today: TODAY, level: 'starter' });
+  assert.strictEqual(long.train.weeks, data.training[a.event.id].full.starter); assert.ok(long.train.weeks > a.event.weeks);
+  assert.ok(!long.train.warn && long.notes.some(x => fills(data.notes.train_level_long).test(x)) && !long.fuller);
+  const mid = P.build(a, data, { date: d, today: TODAY, level: 'starter' });
+  assert.strictEqual(mid.train.weeks, 12); assert.ok(mid.train.warn && mid.notes.some(x => fills(data.notes.train_level_short).test(x)));
+  assert.strictEqual(mid.fuller, plus(TODAY, 7 * long.train.weeks));
+  assert.ok(!P.build(a, data, { date: mid.fuller, today: TODAY, level: 'starter' }).train.warn, 'the date offered gives the whole plan, with no warning');
+  const short = P.build(a, data, { date: plus(TODAY, 7 * 8 + 3), today: TODAY, level: 'starter' });
+  assert.ok(short.notes.some(x => x.startsWith('This plan is too short for your starting point.')));
+  assert.ok(!P.build(a, data, { date: d, today: TODAY, level: 'active' }).notes.some(x => x.includes('too short for your starting point')));
+});
+t('the engine event\'s "before this plan" line is on the training step', () => {
+  for (const a of acts.filter(x => x.event && x.event.prerequisite)) {
+    const p = P.build(a, data, { date: plus(TODAY, 7 * a.event.weeks), today: TODAY });
+    assert.ok(p.steps.find(x => x.id === 'train-start').detail.includes(a.event.prerequisite), a.id);
+  }
+});
+t('a month plan, or a page without the engine\'s data, shows when to start and says why, with no sessions', () => {
+  const a = byId['climb-kilimanjaro'];
+  const m = P.build(a, data, { month: '2027-09', today: TODAY });
+  assert.ok(!m.steps.some(x => x.week) && m.steps.some(x => x.id === 'train-start') && m.notes.includes(data.notes.train_month) && !m.train);
+  const bare = Object.assign({}, data, { training: undefined });
+  const o = P.build(a, bare, { date: '2027-09-10', today: TODAY });
+  assert.ok(!o.steps.some(x => x.week) && o.notes.includes(data.notes.train_offline));
+});
+t('My year rebuilds a saved plan at its own level; the calendar has every session still to do, with the engine\'s reason', () => {
+  const c = P.combine([{ id: 'walk-yorkshire-three-peaks', title: 'Y', activity: byId['walk-yorkshire-three-peaks'], item: { status: 'planned', plan_made: TODAY, date: '2027-06-19', level: 'starter' } }], data, { today: TODAY });
+  assert.ok(c.steps.find(x => x.id === 't1-5').text.includes('2 hours'));
+  const ses = c.steps.filter(x => x.week);
+  const tick = { ticks: { [ses[0].id]: { done: true, at: 'x' } } };
+  const b = P.build(byId['walk-yorkshire-three-peaks'], data, { date: '2027-06-19', today: TODAY, level: 'starter' });
+  const f = P.ics([{ id: 'y', cid: 'walk-yorkshire-three-peaks', title: 'Y', label: b.label, steps: P.applyMarks(b, tick, data) }], data, { today: TODAY, stamp: '20261106T000000Z' });
+  assert.strictEqual(f.count, b.steps.length - 1);
+  const un = f.text.replace(/\r\n /g, '');
+  assert.ok(un.includes('UID:ddr-walk-yorkshire-three-peaks-' + ses[1].id + '@') && !un.includes('-' + ses[0].id + '@'));
+  assert.ok(un.includes(P.build(byId['walk-yorkshire-three-peaks'], data, { date: '2027-06-19', today: TODAY }).steps.find(x => x.week).why.split(' ').slice(0, 3).join(' ')));
+  assert.ok(/Why: it /.test(un.replace(/\\,/g, ',')), 'training reasons are labelled Why:, not Why then:');
+});
 /* ---- My year (day 4): combine() puts every saved plan together ---- */
 const entry = (id, item) => ({ id, title: byId[id] ? byId[id].title : id, item: Object.assign({ status: 'planned', plan_made: TODAY }, item), activity: byId[id] || null });
 const anyFlex = acts.filter(a => !a.event && !a.dates && a.kit.length && a.kind === 'experience');
@@ -167,7 +254,7 @@ t('a done item does not clash', () => {
 t('two training plans at once are flagged with the overlap', () => {
   const c = P.combine([entry('climb-kilimanjaro', { date: '2027-09-10' }), entry('walk-yorkshire-three-peaks', { date: '2027-08-14' })], data, { today: TODAY });
   const cl = c.clashes.find(x => x.kind === 'train'); assert.ok(cl, 'overlap flagged');
-  const ts = c.steps.filter(s => s.strand === 'train').map(s => s.date).sort();
+  const ts = c.steps.filter(s => s.id === 'train-start').map(s => s.date).sort();
   assert.strictEqual(cl.from, ts[1]); assert.strictEqual(cl.to, '2027-08-14');
   const far = P.combine([entry('climb-kilimanjaro', { date: '2027-09-10' }), entry('walk-yorkshire-three-peaks', { date: '2027-03-06' })], data, { today: TODAY });
   assert.ok(!far.clashes.some(x => x.kind === 'train'), 'no overlap, no flag');

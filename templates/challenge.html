@@ -84,6 +84,16 @@
           <label data-pl-monthwrap hidden><span class="sr-only">The month</span><select data-pl-month></select></label>
         </div>
       </fieldset>
+      {% if c.plan.event %}{% set ev = c.plan.event %}{% set N = pset.notes %}
+      <fieldset class="pl-level">
+        <legend>{{ N.level_q }}</legend>
+        <div class="pl-levels">
+          {% for lv in ('starter', 'active', 'advanced') %}<label class="pl-choice"><input type="radio" name="pl-level" value="{{ lv }}" data-pl-level{% if lv == 'active' %} checked{% endif %}> {{ N.level_opt | replace('{label}', N['level_' ~ lv]) | replace('{key}', ev.key) | replace('{start}', ev.levels[lv]) }}</label>
+          {% endfor %}
+        </div>
+        <p class="meta">{{ N.level_help | replace('{key}', ev.key) }}{% if ev.prerequisite %} {{ ev.prerequisite }}{% endif %}</p>
+      </fieldset>
+      {% endif %}
       <p class="meta pl-suggest" data-pl-suggest></p>
       <p class="pl-err" data-pl-err role="alert" hidden></p>
       <p class="pl-acts"><button type="submit" class="btn">Show my plan</button></p>

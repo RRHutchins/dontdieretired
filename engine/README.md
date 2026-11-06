@@ -8,6 +8,7 @@ A growing library of training guidance that every Don't Die Retired plan is buil
 - `events/`: profiles of challenges (demands, the key session, how it builds).
 - `python3 tools/engine.py check` validates everything, ranks every statement and writes `REPORT.md`.
 - `python3 tools/engine.py plan <event> [--weeks N] [--level starter|active|advanced]` writes a plan to `plans/`.
+- `export(event)` (used by `tools/planner.py`, RUNBOOK §6s day 6) gives the same week-by-week plan, from the same `weekly()` function, as data for the My year planner: every length and level, day names left for the planner to fill in.
 
 A statement's weight is the sum of the best tier from each independent group of sources that supports it.
 Core (weight 6 or more, or backed by tier 4-5 with nothing against) and supported (3 or more) statements are used in plans;

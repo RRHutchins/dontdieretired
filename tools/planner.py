@@ -17,7 +17,8 @@ ROOT = Path(__file__).resolve().parent.parent
 STRANDS = ("book", "learn", "train", "travel", "kit")
 STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock")
 START_AT = ("first", "second", "ongoing", "after_start", "day")
-NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help")
+NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help",
+             "level_q", "level_opt", "level_starter", "level_active", "level_advanced", "level_help", "train_month", "train_offline", "train_week", "train_about", "cal_why_train", "train_level_long", "train_level_short")
 
 
 def _load(p: Path):
@@ -61,7 +62,9 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         eid = e.get("id") or f.stem
         w = e.get("weeks") or {}
         assert isinstance(w.get("default"), int) and isinstance(w.get("min"), int) and w["min"] <= w["default"], f"engine event {eid}: weeks.default and weeks.min needed"
-        events[eid] = {"id": eid, "name": e.get("name", eid), "activity": e.get("activity"), "weeks": w["default"], "min_weeks": w["min"], "prerequisite": e.get("prerequisite", "")}
+        ks = e.get("key_session") or {}
+        events[eid] = {"id": eid, "name": e.get("name", eid), "activity": e.get("activity"), "weeks": w["default"], "min_weeks": w["min"], "prerequisite": e.get("prerequisite", ""),
+                       "key": ks.get("name", ""), "levels": {lv: _engine(root).fmt(ks["start"][lv], ks["unit"]) for lv in ("starter", "active", "advanced")}}
     by_act = {e["activity"]: e["id"] for e in events.values() if e.get("activity")}
 
     ids = {c["id"] for c in chs}
@@ -126,7 +129,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         out.append({
             "id": cid, "title": c["title"], "category": c["category"], "kind": kind, "effort": c["effort"], "time": c["time"],
             "when": sorted(when), "when_from": when_from, "season": c.get("season", ""),
-            "lead_weeks": lead, "strands": strands, "event": ({"id": ev["id"], "name": ev["name"], "weeks": ev["weeks"], "min_weeks": ev["min_weeks"]} if ev else None),
+            "lead_weeks": lead, "strands": strands, "event": ({"id": ev["id"], "name": ev["name"], "weeks": ev["weeks"], "min_weeks": ev["min_weeks"], "prerequisite": ev["prerequisite"], "key": ev["key"], "levels": ev["levels"]} if ev else None),
             "dates": dates.get(cid), "place_tied": bool(c.get("places")),
             "start": c["start"], "start_at": c.get("start_at"), "safety": c.get("safety", ""),
             "links": [{"label": l["label"], "url": l["url"], "region": l.get("region", "any")} for l in c["links"]],
@@ -139,11 +142,39 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
     return data, warn
 
 
+_ENG = {}
+def _engine(root: Path = ROOT):
+    """tools/engine.py, loaded once (it is a script, not a package)."""
+    if root not in _ENG:
+        import importlib.util as ilu
+        spec = ilu.spec_from_file_location("ddr_engine", root / "tools" / "engine.py")
+        m = ilu.module_from_spec(spec); spec.loader.exec_module(m); _ENG[root] = m
+    return _ENG[root]
+
+
+def training(data: dict, root: Path = ROOT) -> dict:
+    """The engine's dated-training data (tools/engine.py export()) for every event an activity plans with: one file each,
+    dist/planner/training/<event>.json, loaded by the planner pages only when a plan has training (RUNBOOK §6s, day 6)."""
+    eng = _engine(root)
+    out = {}
+    for a in data["activities"]:
+        e = a.get("event")
+        if e and e["id"] not in out:
+            x = eng.export(e["id"])
+            assert x["min"] == e["min_weeks"] and x["default"] == e["weeks"], f"engine event {e['id']}: export and planner disagree on weeks"
+            for k, p in x["plans"].items():
+                for wk in p["weeks"]:
+                    assert all(s[0] in (1, 2, 3, 5, 6) and x["t"][s[2]] for s in wk[2]), f"engine event {e['id']} {k}: a session with no day or no words"
+            out[e["id"]] = x
+    return out
+
+
 if __name__ == "__main__":
     import collections, json, sys
     chs = _load(ROOT / "content" / "challenges.yaml")
     data, warn = prepare(chs)
-    if "--json" in sys.argv:   # for tools/test_planner.js
+    if "--json" in sys.argv:   # for tools/test_planner.js (with the engine's training, which the site serves separately)
+        data["training"] = training(data)
         print(json.dumps(data, ensure_ascii=False)); sys.exit(0)
     acts = data["activities"]
     print(f"{len(acts)} activities ready to plan")
@@ -152,4 +183,6 @@ if __name__ == "__main__":
     print("with a fixed date:", [a["id"] for a in acts if a["dates"]])
     by_m = collections.Counter(m for a in acts for m in a["when"])
     print("month-bound activities per month:", {m: by_m[m] for m in range(1, 13)})
+    tr = training(data)
+    print("dated training from the engine:", {k: f"{v['min']}-{v['default']} weeks, {len(v['plans'])} plans" for k, v in tr.items()})
     for w in warn: print("LIST WARNING:", w)

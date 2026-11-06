@@ -6,8 +6,9 @@
    Where the words come from (house rule: nothing freehand):
    - what to do: the activity's own sourced fields (start, links, book, kit, safety) and content/dates.yaml;
    - when and why: content/planner.yaml → steps and notes (passed in as `settings`, from dist/planner/activities.json);
-   - training: only the guidance engine. Today the plan carries one "start the N-week plan" step whose length is the
-     engine's (never below its minimum); day 6 expands it into the engine's dated sessions.
+   - training: only the guidance engine. A "start the N-week plan" step whose length is the engine's (never below its
+     minimum), then (day 6) every session of the engine's plan for that length and starting level, dated
+     (settings.training, from tools/engine.py export; opts.level = starter | active | advanced, default active).
 
    `activity` and `settings` are the shapes tools/planner.py writes to dist/planner/activities.json
    (settings = that file's { kinds, steps, notes }). */
@@ -17,6 +18,8 @@
 })(typeof self !== 'undefined' ? self : this, function () {
   const VERSION = 1;
   const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const LEVELS = ['starter', 'active', 'advanced'];   // the engine's starting levels (RUNBOOK §6r)
   const STRAND_ORDER = { book: 0, learn: 1, train: 2, travel: 3, kit: 4, safety: 5, day: 6, after: 7 };
 
   /* ---- dates, all as UTC midnight so no daylight-saving surprises ---- */
@@ -105,8 +108,16 @@
         plan.notes.push(fill(N.too_soon, { event: a.event.name, weeks: a.event.min_weeks, earliest: longDate(addDays(today, a.event.min_weeks * 7)) }));
         return plan;   // no plan at all rather than one without enough training
       }
-      trainWeeks = Math.min(a.event.weeks, w);
+      // the engine's full length for this starting point: its default, or longer where the engine says the default would
+      // build too fast from there ("choose more weeks"); only with its dated data and a day, as that is where it shows
+      const lv = LEVELS.includes(opts.level) ? opts.level : 'active', TRd = settings.training && settings.training[a.event.id];
+      const full = TRd && !byMonth && TRd.full ? Math.max(a.event.weeks, TRd.full[lv] || 0) : a.event.weeks;
+      trainWeeks = Math.min(full, w);
       if (trainWeeks < a.event.weeks) plan.notes.push(fill(N.train_short, { event: a.event.name, usual: a.event.weeks, weeks: trainWeeks, min: a.event.min_weeks }));
+      if (full > a.event.weeks) {
+        plan.notes.push(fill(trainWeeks < full ? N.train_level_short : N.train_level_long, { level: lc(N['level_' + lv]), full, usual: a.event.weeks, earliest: longDate(addDays(today, full * 7)) }));
+        if (trainWeeks < full) plan.fuller = iso(addDays(today, full * 7));
+      }
     }
     if (squeeze < 1 && !a.event) plan.notes.push(fill(N.squeezed, { weeks: a.lead_weeks }));
     const when = (a.dates && a.dates.months) || a.when || [];
@@ -149,11 +160,38 @@
     if (a.dates) add('dates', 'book', S.dates.at, false, { text: S.dates.text, detail: a.dates.note, why: S.dates.why, links: [{ label: a.dates.source.label, url: a.dates.source.url, region: 'any', why: '', aff: null }] });
     // 3. Booking options the activity lists
     if (a.book && a.book.length) add('book', 'book', S.book.at, false, { text: S.book.text, why: S.book.why, links: links(a.book) });
-    // 4. Training, from the engine only
+    // 4. Training, from the engine only. With the engine's dated data (settings.training[event], from tools/engine.py
+    //    export) and a day, every session is a dated step; for a month, or if the data could not be loaded, the plan
+    //    shows only when to start and says why.
     if (a.event && trainWeeks) {
-      steps.push({ id: 'train-start', strand: 'train', date: iso(addDays(anchor, -trainWeeks * 7)), flexible: false,
-        text: fill(S.train_start.text, { weeks: trainWeeks, event: lc(a.event.name) }), detail: [a.event.prerequisite].concat(trainNotes).filter(Boolean).join(' '),
-        why: fill(S.train_start.why, { weeks: trainWeeks, event: lc(a.event.name) }), links: [], event: a.event.id, weeks: trainWeeks });
+      const level = LEVELS.includes(opts.level) ? opts.level : 'active', W = trainWeeks;
+      const TR = settings.training && settings.training[a.event.id];
+      const tp = TR && !byMonth ? TR.plans[level + '-' + W] : null;
+      if (TR && !byMonth && !tp) throw new Error('planner: the engine has no ' + level + ' plan of ' + W + ' weeks for ' + a.event.id);
+      // the engine's week runs Monday to Sunday with the key session on Saturday (slot 5) and the challenge closing the
+      // last week; here slot 5 is the reader's own day of the week, and the rest keep their places around it
+      const at = (w, slot) => iso(addDays(anchor, -(W - w) * 7 + (slot - 5)));
+      steps.push({ id: 'train-start', strand: 'train', date: tp ? at(1, 0) : iso(addDays(anchor, -W * 7)), flexible: false,
+        text: fill(S.train_start.text, { weeks: W, event: lc(a.event.name) }), detail: [a.event.prerequisite].concat(trainNotes).filter(Boolean).join(' '),
+        why: fill(S.train_start.why, { weeks: W, event: lc(a.event.name) }), links: [], event: a.event.id, weeks: W });
+      if (byMonth) plan.notes.push(N.train_month);
+      else if (!TR) plan.notes.push(N.train_offline);
+      if (tp) {
+        const T = TR.t, dn = [0, 1, 2, 3, 4, 5, 6].map(i => DAY_NAMES[addDays(anchor, i - 5).getUTCDay()]);
+        const fd = x => String(x).replace(/\{d(\d)\}/g, (m, i) => dn[+i]);
+        const tr = plan.train = { event: a.event.id, level, weeks: W, key: TR.key, start: TR.levels[level], draft: TR.draft, intro: fd(TR.intro),
+          warn: tp.warn != null ? T[tp.warn] : '', parts: TR.parts.map(x => [fd(x[0]), fd(x[1])]), before: TR.before.slice(), safety: TR.safety.slice(),
+          sources: TR.sources.map(x => Object.assign({}, x)), list: [] };
+        if (tr.warn) plan.notes.push(tr.warn);
+        tp.weeks.forEach((wk, i) => {
+          const w = i + 1, ss = [];
+          wk[2].forEach(x => {
+            const st = { id: 't' + w + '-' + x[0], strand: 'train', date: at(w, x[0]), flexible: false, text: fd(T[x[2]]), detail: fd(T[x[3]]), why: fd(T[x[4]]), links: [], week: w, role: x[1] };
+            if (st.date < plan.date) { steps.push(st); ss.push(st.date); }
+          });
+          tr.list.push({ w, head: fd(T[wk[0]]), bullets: wk[1].map(b => fd(T[b])), from: ss[0] || '', to: ss[ss.length - 1] || '' });
+        });
+      }
     }
     // 5. Getting there, only for something tied to a place
     if (strands.has('travel') && a.place_tied) add('travel', 'travel', S.travel.at, true, { text: S.travel.text, why: S.travel.why, links: [] });
@@ -236,7 +274,7 @@
       const p = { id: e.id, title: e.title, cid: e.activity ? e.activity.id : null, date: it.date || '', month: it.month || '', status: it.status || 'planned',
         label: it.date ? longDate(parse(it.date)) : monthYear(parse(it.month + '-01')), plan: null };
       if (e.activity && it.plan_made) {
-        const b = build(e.activity, settings, Object.assign({ today: it.plan_made }, it.date ? { date: it.date } : { month: it.month }));
+        const b = build(e.activity, settings, Object.assign({ today: it.plan_made, level: it.level }, it.date ? { date: it.date } : { month: it.month }));
         p.plan = b;
         if (b.status === 'ok') applyMarks(b, it, settings, { today }).forEach(st => steps.push(Object.assign(st, { pid: e.id, ptitle: e.title, by_month: b.by_month })));
       } else {
@@ -328,7 +366,7 @@
         if (st.detail) body.push(st.detail);
         (st.items || []).forEach(x => body.push(x.name + (x.why ? ': ' + x.why : '') + '\n' + x.url));
         (st.links || []).forEach(l => body.push(l.label + (l.region === 'uk' ? ' (UK)' : l.region === 'us' ? ' (US)' : '') + '\n' + l.url));
-        if (st.why && !st.bare) body.push(fill(N.cal_why, { why: st.why }));
+        if (st.why && !st.bare) body.push(fill(st.week ? N.cal_why_train : N.cal_why, { why: st.why }));
         if (st.moved) body.push(st.moved.why);
         body.push(fill(N.cal_plan, { url: page }));
         const end = iso(addDays(parse(st.date), 1));
@@ -343,5 +381,5 @@
     return { text: L.map(fold).join('\r\n') + '\r\n', count };
   }
 
-  return { VERSION, build, suggest, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  return { VERSION, LEVELS, build, suggest, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

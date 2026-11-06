@@ -1,7 +1,8 @@
 /* My year: every saved plan together (RUNBOOK §6s, day 4).
    Reads the reader's list ONLY through static/list-store.js (DDRList) and the planner data from /planner/activities.json;
    static/planner.js (DDRPlan.combine) rebuilds each saved plan, flags clashes and moves flexible steps, each with its reason.
-   Ticks and the reader's own moves are saved through DDRList.tick / DDRList.shift. Every word of a plan comes from the
+   Ticks and the reader's own moves are saved through DDRList.tick / DDRList.shift. A plan's training sessions (from the
+   guidance engine, /planner/training/<event>.json, day 6) are shown a week at a time, each with its own Done box. Every word of a plan comes from the
    activity's own fields or content/planner.yaml; the words around it (headings, buttons) are this page's. Nothing leaves
    the browser. */
 (function () {
@@ -53,8 +54,9 @@
     const clashDays = new Set(all.clashes.filter(c => c.kind === 'day').map(c => c.date));
     $('[data-my-grid]').innerHTML = months().map(m => {
       const days = all.steps.filter(s => s.id === 'day' && s.date.slice(0, 7) === m);
-      const prep = all.steps.filter(s => s.id !== 'day' && s.date.slice(0, 7) === m);
-      const open = prep.filter(s => !s.done && s.date >= today).length;
+      const inM = all.steps.filter(s => s.id !== 'day' && s.date.slice(0, 7) === m);
+      const prep = inM.filter(s => !s.week), ses = inM.filter(s => s.week);
+      const open = prep.filter(s => !s.done && s.date >= today).length, sopen = ses.filter(s => !s.done && s.date >= today).length;
       const things = days.map(s => {
         const p = planOf(s.pid);
         return '<li class="my-thing' + (p.status === 'done' ? ' is-done' : '') + '"><span class="my-when">' + (s.by_month ? 'Some time this month' : '<time datetime="' + s.date + '">' + esc(dayText(s.date)) + '</time>') + '</span> '
@@ -62,9 +64,10 @@
       }).join('');
       const label = P.monthYear(m);
       return '<li class="my-card' + (days.length ? ' has-day' : '') + '"><h3 class="h4">' + esc(label) + '</h3>'
-        + (things ? '<ul class="my-things">' + things + '</ul>' : '<p class="meta">' + (prep.length ? 'Getting ready' : 'Nothing planned') + '</p>')
+        + (things ? '<ul class="my-things">' + things + '</ul>' : '<p class="meta">' + (inM.length ? 'Getting ready' : 'Nothing planned') + '</p>')
         + (prep.length ? '<p class="meta">' + prep.length + (prep.length === 1 ? ' step' : ' steps') + ' to get ready' + (open && open < prep.length ? ', ' + open + ' still to do' : '') + '</p>' : '')
-        + (days.length || prep.length ? '<button type="button" class="chip my-open" data-my-goto="' + m + '">See ' + esc(P.MONTHS[+m.slice(5) - 1]) + '<span class="sr-only"> ' + m.slice(0, 4) + '</span></button>' : '')
+        + (ses.length ? '<p class="meta">' + ses.length + (ses.length === 1 ? ' training session' : ' training sessions') + (sopen && sopen < ses.length ? ', ' + sopen + ' still to do' : '') + '</p>' : '')
+        + (days.length || inM.length ? '<button type="button" class="chip my-open" data-my-goto="' + m + '">See ' + esc(P.MONTHS[+m.slice(5) - 1]) + '<span class="sr-only"> ' + m.slice(0, 4) + '</span></button>' : '')
         + '</li>';
     }).join('');
   }
@@ -102,6 +105,34 @@
         + '</div>')
       + '</li>';
   }
+  /* the engine's training sessions (day 6): one block per plan and week, each session with its own Done box */
+  function weekHtml(s, steps, n) {
+    const p = planOf(s.pid), tr = p.plan.train, wk = tr.list[s.week - 1];
+    const ss = steps.filter(x => x.pid === s.pid && x.week === s.week), done = ss.filter(x => x.done).length;
+    const first = ss[0].date, last = ss[ss.length - 1].date;
+    return '<li class="pl-step pl-week' + (done === ss.length ? ' is-done' : '') + '" data-strand="train">'
+      + '<p class="pl-date"><time datetime="' + first + '">' + esc(first === last ? dayText(first) : dayText(first) + ' to ' + dayText(last)) + '</time> <span class="pl-tag">Train</span>'
+      + (done ? ' <span class="pl-tag">' + done + ' of ' + ss.length + ' done</span>' : '') + '</p>'
+      + '<p class="my-for"><a href="' + link(p) + '">' + esc(p.title) + '</a></p>'
+      + '<p class="pl-text">' + esc(fill(S.notes.train_week, { w: s.week, weeks: tr.weeks, head: wk.head })) + '</p>'
+      + '<p class="pl-detail">' + esc(wk.bullets[0]) + '</p>'
+      + '<details class="pl-wk"' + (ss.some(x => x.date === today) ? ' open' : '') + '><summary>The ' + ss.length + (ss.length === 1 ? ' session' : ' sessions') + (wk.from.slice(0, 7) !== month || wk.to.slice(0, 7) !== month ? ' of this week in ' + P.MONTHS[+month.slice(5) - 1] : ' this week') + ', and why</summary><ol class="pl-sessions">'
+      + ss.map(x => { const gone = x.date < today && !x.done; return '<li class="pl-ses' + (x.done ? ' is-done' : '') + (gone ? ' is-gone' : '') + '" data-pid="' + esc(x.pid) + '" data-sid="' + esc(x.id) + '">'
+        + '<p class="pl-date"><time datetime="' + x.date + '">' + esc(dayText(x.date)) + '</time>' + (gone ? ' <span class="pl-tag pl-tag-gone">Gone by</span>' : '') + '</p>'
+        + '<p class="pl-stext">' + esc(x.text) + '</p>' + (x.detail ? '<p class="pl-detail">' + esc(x.detail) + '</p>' : '')
+        + '<p class="pl-why"><span>Why:</span> ' + esc(x.why) + '</p>'
+        + '<div class="my-acts"><label class="my-tick"><input type="checkbox" data-my-tick' + (x.done ? ' checked' : '') + '> Done<span class="sr-only">: ' + esc(dayText(x.date) + ', ' + x.text) + '</span></label></div></li>'; }).join('')
+      + '</ol>' + (wk.bullets.length > 1 ? '<p class="pl-wkh">Why this week looks like this</p><ul class="pl-wkwhy">' + wk.bullets.slice(1).map(b => '<li>' + esc(b) + '</li>').join('') + '</ul>' : '')
+      + '</details></li>';
+  }
+  const fill = (t, v) => String(t || '').replace(/\{(\w+)\}/g, (m, k) => (k in v ? v[k] : m));
+  function listHtml(steps, n0) {
+    let n = n0; const seen = new Set();
+    return steps.map(s => {
+      if (s.week) { const k = s.pid + '|' + s.week; if (seen.has(k)) return ''; seen.add(k); return weekHtml(s, steps, n++); }
+      return stepHtml(s, n++);
+    }).join('');
+  }
   function drawMonth(focus) {
     const ms = months(), first = all.steps.length && all.steps[0].date.slice(0, 7) < thisMonth ? all.steps[0].date.slice(0, 7) : thisMonth, last = ms[ms.length - 1];
     if (month < first) month = first; if (month > last) month = last;
@@ -114,7 +145,7 @@
     const head = steps.filter(s => s.strand === 'day' && s.by_month), rest = steps.filter(s => !(s.strand === 'day' && s.by_month));
     let html = '', n = 0;
     if (head.length) html += '<h3 class="pl-month">Some time this month</h3><ol class="pl-steps">' + head.map(s => stepHtml(s, n++)).join('') + '</ol>';
-    if (rest.length) html += (head.length ? '<h3 class="pl-month">Day by day</h3>' : '') + '<ol class="pl-steps">' + rest.map(s => stepHtml(s, n++)).join('') + '</ol>';
+    if (rest.length) html += (head.length ? '<h3 class="pl-month">Day by day</h3>' : '') + '<ol class="pl-steps">' + listHtml(rest, n) + '</ol>';
     if (!steps.length) html = '<p class="meta">Nothing planned this month.</p>';
     $('[data-my-mbody]').innerHTML = html;
     if (focus) { const sec = $('[data-my-month]'); sec.focus({ preventScroll: true }); sec.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' }); }
@@ -189,6 +220,11 @@
   const h = location.hash.slice(1);
   if (/^\d{4}-\d{2}$/.test(h)) { view = 'month'; month = h; }
   fetch('/planner/activities.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
-    S = d; d.activities.forEach(a => { byId[a.id] = a; }); draw();
+    S = d; d.activities.forEach(a => { byId[a.id] = a; });
+    // the engine's training (day 6), only for the events in the reader's saved plans; without it a plan shows when to start
+    const evs = [...new Set(L.live(L.load()).filter(it => it.cid && it.plan_made && byId[it.cid] && byId[it.cid].event).map(it => byId[it.cid].event.id))];
+    S.training = {};
+    return Promise.all(evs.map(e => fetch('/planner/training/' + encodeURIComponent(e) + '.json').then(r => (r.ok ? r.json() : null)).then(x => { if (x) S.training[e] = x; }).catch(() => {})))
+      .then(() => draw());
   }).catch(() => { root.removeAttribute('aria-busy'); $('[data-my-loading]').hidden = true; $('[data-my-fail]').hidden = false; });
 })();

@@ -83,6 +83,15 @@ t('re-planning on another device: newest plan wins', () => {
 /* ---- My year page (RUNBOOK §6s, day 4): ticks and moves on a saved plan ---- */
 const P1 = { status: 'planned', date: '2027-06-19', plan_made: '2026-11-04' };
 const T = (h) => '2026-11-0' + h + 'T00:00:00.000Z';
+t('the starting level survives clean only on a saved plan, and two copies at different levels are different plans', () => {
+  assert.strictEqual(L.clean(list([item('a', { ...P1, level: 'advanced' })])).items[0].level, 'advanced');
+  assert.strictEqual(L.clean(list([item('a', { level: 'advanced' })])).items[0].level, '', 'no plan, no level');
+  assert.strictEqual(L.clean(list([item('a', { ...P1, level: 'pro' })])).items[0].level, '');
+  const a = item('a', { ...P1, level: 'starter', ticks: { 't1-5': { done: true, at: T(5) } }, updated_at: T(5) });
+  const b = item('a', { ...P1, level: 'active', ticks: { 't2-5': { done: true, at: T(6) } }, updated_at: T(6) });
+  const m = L.merge(list([a]), list([b])).items[0];
+  assert.strictEqual(m.level, 'active'); assert.deepStrictEqual(Object.keys(m.ticks), ['t2-5'], 'ticks from the other level are not carried over');
+});
 t('ticks and moves are kept through clean', () => {
   const c = L.clean(list([item('a', { ...P1, ticks: { 'start-0': { done: true, at: T(5) } }, moves: { kit: { date: '2027-06-01', at: T(5) } } })]));
   assert.deepStrictEqual(c.items[0].ticks, { 'start-0': { done: true, at: T(5) } }); assert.deepStrictEqual(c.items[0].moves, { kit: { date: '2027-06-01', at: T(5) } });
@@ -159,6 +168,25 @@ t('merging ticks twice changes nothing more', () => {
     assert.deepStrictEqual(L.get('climb-ben-nevis').ticks, {});
     L.tick('climb-ben-nevis', 'book', true); L.update('climb-ben-nevis', { note: 'With Jo' }); assert.strictEqual(L.get('climb-ben-nevis').ticks.book.done, true);
     L.plan('climb-ben-nevis', { month: '2027-08' }, '2026-11-05'); assert.deepStrictEqual(L.get('climb-ben-nevis').ticks, {});
+  });
+  /* Day 6: a plan with dated training stores the starting level */
+  t('plan() stores a starting level for training; a bad one, or none, is stored as none', () => {
+    L.plan('walk-yorkshire-three-peaks', { date: '2027-06-19', level: 'starter' }, '2026-11-06');
+    assert.strictEqual(L.get('walk-yorkshire-three-peaks').level, 'starter');
+    L.plan('walk-yorkshire-three-peaks', { date: '2027-06-19', level: 'elite' }, '2026-11-06'); assert.strictEqual(L.get('walk-yorkshire-three-peaks').level, '');
+    L.plan('walk-yorkshire-three-peaks', { date: '2027-06-19' }, '2026-11-06'); assert.strictEqual(L.get('walk-yorkshire-three-peaks').level, '');
+    L.plan('walk-yorkshire-three-peaks', null); assert.strictEqual(L.get('walk-yorkshire-three-peaks').level, '');
+  });
+  t('changing the level is a new plan: ticks and moves go', () => {
+    L.plan('walk-yorkshire-three-peaks', { date: '2027-06-19', level: 'active' }, '2026-11-06');
+    L.tick('walk-yorkshire-three-peaks', 't1-5', true); assert.ok(L.get('walk-yorkshire-three-peaks').ticks['t1-5'].done);
+    L.plan('walk-yorkshire-three-peaks', { date: '2027-06-19', level: 'starter' }, '2026-11-06');
+    assert.deepStrictEqual(L.get('walk-yorkshire-three-peaks').ticks, {});
+  });
+  t('a plan with a hundred training sessions keeps every tick', () => {
+    L.plan('climb-kilimanjaro', { date: '2027-09-10', level: 'active' }, '2026-11-06');
+    for (let w = 1; w <= 20; w++) for (const sl of [1, 2, 3, 5, 6]) L.tick('climb-kilimanjaro', 't' + w + '-' + sl, true);
+    assert.strictEqual(Object.keys(L.get('climb-kilimanjaro').ticks).length, 100);
   });
 }
 console.log(n + ' tests passed');

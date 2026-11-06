@@ -751,6 +751,10 @@ def build(make_social=True):
         for w in _pwarn: print(f"LIST WARNING: planner: {w}")
         (DIST / "planner").mkdir(parents=True, exist_ok=True)
         (DIST / "planner" / "activities.json").write_text(json.dumps(_pdata, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        # the engine's training, dated by the planner (day 6): one file per event, loaded only by a plan that trains
+        (DIST / "planner" / "training").mkdir(parents=True, exist_ok=True)
+        for _eid, _tr in _pl.training(_pdata, ROOT).items():
+            (DIST / "planner" / "training" / f"{_eid}.json").write_text(json.dumps(_tr, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         _pby = {a["id"]: a for a in _pdata["activities"]}
         for c in chs: c["plan"] = _pby[c["id"]]
         colls = [dict(v, id=k, acts=[c for c in chs if c.get("collection") == k]) for k, v in COLLECTIONS.items()]
