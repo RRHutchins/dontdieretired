@@ -37,6 +37,7 @@ Each photo is resized for the web and not otherwise changed.
 | list-climb-mount-st-helens | File:Mount St. Helens lava dome panorama July 2014.jpg | Moxfyre | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Mount_St._Helens_lava_dome_panorama_July_2014.jpg | 2026-11-01 |
 | list-climb-scafell-pike | File:Scafell Pike - geograph.org.uk - 2879640.jpg | Michael Graham | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Scafell_Pike_-_geograph.org.uk_-_2879640.jpg | 2026-11-01 |
 | list-climb-yr-wyddfa | File:Yr Wyddfa towards Llyn Llydaw Crib Goch 2019 01.jpg | Julian Herzog ( Website ) | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Yr_Wyddfa_towards_Llyn_Llydaw_Crib_Goch_2019_01.jpg | 2026-11-01 |
+| list-drive-north-coast-500 | File:Kylesku Bridge 2016.jpg | DeFacto | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kylesku_Bridge_2016.jpg | 2026-11-06 |
 | list-hike-angels-landing | File:Angels Landing and the Great White Throne.jpg | Óðinn | CC BY-SA 2.5 ca | https://commons.wikimedia.org/wiki/File:Angels_Landing_and_the_Great_White_Throne.jpg | 2026-11-01 |
 | list-hike-half-dome | File:Half Dome from Glacier Point, Yosemite NP - Diliff.jpg | Diliff | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg | 2026-11-01 |
 | list-hike-into-grand-canyon | File:Grand Canyon National Park, Top of Bright Angel Trail 0084 - Flickr - Grand Canyon NPS.jpg | Grand Canyon National Park | Public domain | https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park,_Top_of_Bright_Angel_Trail_0084_-_Flickr_-_Grand_Canyon_NPS.jpg | 2026-11-01 |
@@ -78,5 +79,6 @@ Each photo is resized for the web and not otherwise changed.
 | stephanie-kwolek-kevlar | File:Staal van aramidevezel van het merk Kevlar.jpg | Industriemuseum Gent | CC0 | https://commons.wikimedia.org/wiki/File:Staal_van_aramidevezel_van_het_merk_Kevlar.jpg | 2026-11-05 |
 | steve-james-200-marathons-coastline | File:Topsham Quay (geograph 5423434).jpg | Derek Harper | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Topsham_Quay_(geograph_5423434).jpg | 2026-11-04 |
 | terracotta-army-discovery | File:Qin Terracotta Army, Pit 1 09.jpg | Gary Lee Todd, Ph.D. | CC0 | https://commons.wikimedia.org/wiki/File:Qin_Terracotta_Army,_Pit_1_09.jpg | 2026-11-03 |
+| todd-fisher-asteroid-leilani | File:USGS Lava on Makamae Street.jpg | USGS | Public domain | https://commons.wikimedia.org/wiki/File:USGS_Lava_on_Makamae_Street.jpg | 2026-11-06 |
 | trevor-barry-saturn-decagon | File:Top view of the rings of Saturn by Cassini - October 10, 2013.jpg | NASA / JPL-Caltech / SSI / Cornell | Public domain | https://commons.wikimedia.org/wiki/File:Top_view_of_the_rings_of_Saturn_by_Cassini_-_October_10,_2013.jpg | 2026-10-14 |
 | virginia-ordaz-delta-college-degree | File:Delta College Campus.jpg | BronzeAnubis | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Delta_College_Campus.jpg | 2026-10-24 |
