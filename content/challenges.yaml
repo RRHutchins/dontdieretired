@@ -1794,6 +1794,32 @@
   - name: Waterproof notebook
     why: for notes and sketches outdoors, even in drizzle
     url: https://www.amazon.co.uk/s?k=waterproof+notebook
+- id: measure-asteroids-coias
+  title: Search real telescope images for unknown asteroids
+  category: explore
+  kind: project
+  effort: gentle
+  cost: free
+  time: weeks
+  setting: indoors
+  company: solo
+  regions:
+  - anywhere
+  why: COIAS lets anyone search archive images from the Subaru Telescope on Maunakea for small bodies that have never been recorded. By July 2026 more than 3,000 people had taken part, and a handful of volunteers' finds have been officially named.
+  start:
+  - Read the Subaru Telescope's account of the project and how a volunteer's find was named.
+  - Work through the COIAS walk-through before measuring anything.
+  - Keep a log of evenings, minutes and objects measured, and aim for 100 measurements.
+  links:
+  - label: 'Subaru Telescope: asteroid discovered through COIAS receives Hawaiian name'
+    url: https://subarutelescope.org/en/news/topics/2026/08/05/3747.html
+    region: any
+    checked: '2026-11-06'
+  - label: 'SciStarter: COIAS (Come On! Impacting ASteroids)'
+    url: https://scistarter.org/coias-come-on-impacting-asteroids
+    region: any
+    checked: '2026-11-06'
+  story: todd-fisher-asteroid-leilani
 - id: zooniverse-project
   title: Complete 500 classifications on a Zooniverse project
   category: explore
@@ -2117,6 +2143,9 @@
     url: https://www.amazon.co.uk/s?k=eye+mask+ear+plugs+travel
 - id: interrail-pass-trip
   title: Cross Europe on a rail pass
+  photo_file: "File:RhB ABe 4-4 III Kreisviadukt Brusio.jpg"
+  photo_caption: "A Rhaetian Railway local train from St. Moritz to Tirano crossing the Brusio spiral viaduct on the Bernina line, Switzerland, 2012."
+  photo_alt: "A red and grey train curving around a stone spiral viaduct with arches, among green fields and autumn trees in a valley."
   category: travel
   kind: experience
   effort: moderate
@@ -2275,6 +2304,9 @@
   - ride-the-settle-carlisle
 - id: canal-boat-holiday
   title: Skipper a canal boat holiday
+  photo_file: "File:Narrowboat on Pontcysyllte Aqueduct.jpg"
+  photo_caption: "A narrowboat crossing the Pontcysyllte Aqueduct on the Llangollen Canal, between Trevor and Froncysyllte, Wrexham, North Wales, 2025."
+  photo_alt: "A narrow channel of water high above a wooded valley, with a railed towpath beside it and a narrowboat further along, with a few people small in the distance."
   category: travel
   kind: experience
   effort: moderate
