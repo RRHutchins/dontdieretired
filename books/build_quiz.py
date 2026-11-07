@@ -233,13 +233,25 @@ class Book:
         c.setFillColor(black)
         y -= 40
         self.ans_page = {}
+        def ans_h(q):
+            acc = q.get("accept")
+            acc = ", ".join(acc) if isinstance(acc, list) else acc
+            h = len(L.wrap(q["a"] + (f" (also accept: {acc})" if acc else ""), "Semi", Q_SIZE, CW - 30)) * Q_LEAD
+            if q.get("note"):
+                h += len(L.wrap(q["note"], "Body", NOTE_SIZE, CW - 30)) * NOTE_LEAD
+            return h
         for i, r in enumerate(rounds):
-            need = 70
+            need = 28 + ans_h(r["questions"][0]) + 6   # never leave a round's heading alone at the foot of a page
             if y - need < BOTM:
                 self.end_page(); self.page(); y = PH - TOPM - 6
             self.ans_page[i] = self.n
-            c.setFont("Head", 18); c.setFillColor(RED)
-            c.drawString(x0(self.n), y, f"Round {i + 1}: {r['title']}")
+            head = f"Round {i + 1}: {r['title']}"
+            from reportlab.pdfbase.pdfmetrics import stringWidth
+            hs = 18
+            while stringWidth(head, "Head", hs) > CW and hs > 13:   # long swap-round titles: shrink rather than run off the page
+                hs -= .5
+            c.setFont("Head", hs); c.setFillColor(RED)
+            c.drawString(x0(self.n), y, head)
             c.setFillColor(black)
             y -= 28
             for k, q in enumerate(r["questions"], 1):
@@ -258,6 +270,8 @@ class Book:
                 y -= 8
             y -= 18
         self.end_page()
+        if self.n % 2:   # print books need an even page count; the cover's spine is sized from it
+            self.page(); self.end_page()
 
 
 # ------------------------------------------------------------------ cover

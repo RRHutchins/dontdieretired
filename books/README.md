@@ -75,6 +75,22 @@ so the whole round is in view, and each round's foot gives the page of its answe
 - **Swap rounds** carry `kind: swap`, and each question a `for: grown-ups` or `for: children`, which prints in place of the
   level word ("for the children"). Start each question with "Grown-ups:" or "Children:" so the quizmaster reads it out.
   Keep round titles short (under about 34 characters): the answers heading does not wrap.
-- **Not yet built:** cover, score sheet, the three "night" title pages in a full build, a checker for duplicate
-  answers across rounds. Amazon may treat two editions sharing two-thirds of their questions as near-duplicates:
-  keep titles, covers and descriptions clearly marked UK and American, and watch for a KDP query.
+- **Covers** (`cover()` in build_quiz.py, built with every full build): 6 x 9 in wrap, 0.125 in bleed, spine for white
+  paper at 0.002252 in a page (0.261 in at 116 pages), clear 2 x 1.2 in barcode panel. UK edition green (#1D4E35),
+  American edition navy (#1B3A63); each has its edition band on the front, the edition on the spine, and its own
+  back-cover list of edition-only rounds, so KDP and buyers can tell them apart. The title page also names the edition.
+  The book is padded to an even page count; if the page count changes, the spine changes with it.
+- **State on 7 November 2026: finished, with Robin to upload.** Both editions 300 questions, 116 pages. An independent
+  checker re-opened every source (6-7 Nov 2026): 336 confirmed; 17 wording problems fixed (premises and notes cut back
+  to what the page says); 47 whose pages the fetch tool could not open were re-sourced by two further helpers and by
+  this session, each on a page opened 7 Nov 2026 (`checked: 2026-11-07`). No answer repeats within an edition.
+  Robin's decisions (6 Nov 2026): white paper, list price GBP 7.99 / USD 9.99 (exactly the 60% royalty threshold on
+  both; about GBP 2.78 / USD 3.60 a copy at 116 pages, from KDP's help pages on 7 Nov 2026), author "Don't Die
+  Retired", free KDP ISBN. The KDP sheets (every field, descriptions, keywords, categories, upload steps, risk
+  register) were sent to Robin as a Word file; they are not in the repo.
+- **Fetching sources from the cloud session:** WebFetch only opens a URL that has appeared in a WebSearch result (or
+  that the user pasted), so a checker must search for each page before fetching it, one at a time. Links pasted by
+  the main session into an agent's prompt do not unlock it.
+- **Still open:** a checker for duplicate answers is a one-line script, not yet in the repo; no score sheet. Amazon may
+  treat the two editions as near-duplicates: if KDP asks, they are separate UK and American editions with seven
+  edition-only rounds and different swap rounds each.
