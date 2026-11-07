@@ -660,7 +660,11 @@ def build(make_social=True):
                "setting": {"indoors": "Indoors", "outdoors": "Outdoors", "either": "Indoors or out"},
                "company": {"solo": "On your own", "others": "With others", "either": "Alone or with others"}}
         # Named groups of activities, each with its own page at /list/<slug>/ (Robin, 8 Oct 2026). A slug is permanent once live.
-        COLLECTIONS = {"military": {"slug": "military-physical-challenges", "label": "Military physical challenge", "plural": "Military physical challenges",
+        COLLECTIONS = {"arts": {"slug": "arts-and-crafts", "label": "Arts and crafts", "plural": "Arts, crafts and music",
+                                "blurb": "Drawing, painting, pottery, printmaking, glass, lettering, yarn, music and writing: things to make and play, with what a first class is really like, what it costs and where to find one in the UK and the US.",
+                                "title": "Arts and crafts classes for beginners: where to start", "meta": "Life drawing, pottery, watercolour, linocut, stained glass, calligraphy, ukulele, knitting and writing: what a first class is like and where to find one.",
+                                "note": "Course prices and dates come from each provider's own page on the day we checked it, and change; the provider's page is always the one to trust."},
+                       "military": {"slug": "military-physical-challenges", "label": "Military physical challenge", "plural": "Military physical challenges",
                                     "blurb": "Marches, runs and loaded carries that are based on military tests or run by forces charities, and that members of the public can enter. Each is hard in its own way, and each has an official page with the entry rules.",
                                     "note": "We list an event here only when its official page shows that the public can enter and that it is still being run. Being listed does not mean the armed forces, or any charity, endorse this site."}}
         need = ("id", "title", "category", "kind", "effort", "cost", "time", "setting", "company", "regions", "why", "start", "links")
@@ -796,7 +800,9 @@ def build(make_social=True):
             for r in c.get("related") or []:
                 assert r in _by_id and r != c["id"], f"challenge {c['id']}: related id {r} does not exist"
             rel = [_by_id[r] for r in c.get("related") or []]
-            more = (rel + [m for m in more if m not in rel])[:max(6 if c.get("collection") else 4, len(rel))]
+            # reverse links (Robin, 7 Nov 2026: related activities should lead readers on): pages that list this one as related
+            rel += [m for m in chs if m is not c and c["id"] in (m.get("related") or []) and m not in rel]
+            more = (rel + [m for m in more if m not in rel])[:max(6 if c.get("collection") else 4, min(len(rel), 8))]
             urls.append(out(f"/list/{c['id']}/", "challenge.html", c=c, L=LBL, more=more, total=len(chs), pset={"steps": _pdata["steps"], "notes": _pdata["notes"]}, pkind=_pdata["kinds"][c["kind"]]))
             pages.append({"title": c["title"], "url": f"/list/{c['id']}/", "category": c["category"], "excerpt": c["why_short"],
                           "tags": ["activity", "challenge", c["kind"], c["effort"]] + ([c["collection"]] if c.get("collection") else []) + c["id"].split("-"),

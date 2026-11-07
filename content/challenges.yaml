@@ -3207,6 +3207,7 @@
   time: year
   setting: indoors
   company: solo
+  collection: arts
   regions:
   - anywhere
   why: A finished draft, however rough, is something very few people who talk about writing a book ever hold in their hands. The daily habit of adding pages teaches you more about your subject and yourself than any amount of planning.
@@ -3254,6 +3255,7 @@
   time: months
   setting: indoors
   company: either
+  collection: arts
   regions:
   - anywhere
   why: Choosing one piece and one listener turns vague practice into a small performance with a date on it. Playing for somebody, even one friend in the front room, is a different experience from playing alone.
@@ -3780,6 +3782,7 @@
   time: months
   setting: indoors
   company: others
+  collection: arts
   regions:
   - uk
   why: Singing pop and rock songs in harmony with a room full of people is a quick way to feel part of something. Rock Choir asks for no audition and welcomes complete beginners, so the only requirement is turning up.
@@ -3801,6 +3804,7 @@
   time: months
   setting: indoors
   company: others
+  collection: arts
   regions:
   - us
   why: Barbershop is close four-part harmony sung without instruments, and the moment a chord locks into place is hard to forget. Chapters rehearse regularly, so you gain a standing weekly date with the same group of singers.
@@ -3898,6 +3902,7 @@
   time: months
   setting: indoors
   company: others
+  collection: arts
   regions:
   - uk
   why: Playing your part inside a full ensemble is a different thing entirely from practising alone at home. Leisure-time orchestras, jazz bands and other groups run across the UK, so an instrument sitting in a cupboard has somewhere to go.
@@ -7253,6 +7258,7 @@
   setting: indoors
   company: others
   season: Late autumn
+  collection: arts
   regions:
   - uk
   why: The Really Big Chorus fills the Royal Albert Hall in London with singers for Messiah from Scratch, a performance in which the choir is the audience. It is open to anyone who can sing, with no audition, so a first-timer may find themselves beside someone who has sung it for decades.
@@ -7339,6 +7345,7 @@
   time: months
   setting: indoors
   company: solo
+  collection: arts
   regions:
   - anywhere
   why: The Royal Academy of Arts in London describes its Summer Exhibition as the world's largest open-submission exhibition, and the judges first look at every entry as a digital image. Shortlisted works are then delivered to the Academy for a final round, so a first-time entrant gets the same first look as anyone else.
@@ -7364,6 +7371,7 @@
   time: afternoon
   setting: outdoors
   company: others
+  collection: arts
   regions:
   - anywhere
   why: Urban Sketchers is a worldwide network of local chapters, each a community that meets to sketch on location and share the results. The organisation says it never charges its members to attend a sketch session, so a sketchbook and a pen are enough to take part.
@@ -7396,6 +7404,7 @@
   time: weeks
   setting: either
   company: either
+  collection: arts
   regions:
   - uk
   why: The charity Heritage Crafts publishes the Red List of Endangered Crafts, which ranks traditional crafts by how likely they are to survive to the next generation. Many of these skills are in the hands of individuals with no one to pass them on to, and the charity's directory includes craftspeople who teach.
@@ -7421,6 +7430,7 @@
   time: weeks
   setting: indoors
   company: either
+  collection: arts
   regions:
   - uk
   - us
@@ -7455,6 +7465,7 @@
   time: months
   setting: indoors
   company: others
+  collection: arts
   regions:
   - uk
   - us
@@ -7486,6 +7497,7 @@
   time: months
   setting: indoors
   company: solo
+  collection: arts
   regions:
   - anywhere
   why: A graded music exam gives your playing or singing a fixed target, on a ladder that runs up to Grade 8. ABRSM's Performance Grades are assessed from a video recording, with no booking periods or exam sessions, so you choose when to book, record and submit.
@@ -7836,6 +7848,7 @@
   time: months
   setting: either
   company: others
+  collection: arts
   regions:
   - uk
   why: A camera club puts your photographs in front of other photographers, which is a quick way to find out what works in a picture and what does not. The Photographic Alliance of Great Britain serves clubs and societies through 15 regional federations and runs inter-club competitions.
@@ -7861,6 +7874,7 @@
   time: months
   setting: indoors
   company: others
+  collection: arts
   regions:
   - uk
   - us
@@ -7891,6 +7905,7 @@
   time: weeks
   setting: indoors
   company: either
+  collection: arts
   regions:
   - uk
   - us
@@ -9863,6 +9878,7 @@
   time: weeks
   setting: indoors
   company: either
+  collection: arts
   regions:
   - anywhere
   why: The hat is a 13-sided shape that covers a flat surface without gaps but never in a repeating pattern, the first single tile known to do so. Its authors' page has a browser app that builds patches of hats and saves them as pictures, so the only kit you need is a printer, card and scissors.
@@ -11928,3 +11944,985 @@
   - name: Walking boots
     why: try them on in the afternoon with your walking socks, and break them in before a long day
     url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
+- id: go-to-a-life-drawing-class
+  title: Go to a life drawing class
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Drawing a person from life, in poses that last from a few seconds to twenty minutes, trains your eye faster than almost anything else. Evening classes and drop-in sessions run in cities and towns
+    on both sides of the Atlantic, and most supply the paper and charcoal.
+  start:
+  - Find a beginners' class or a drop-in session near you, such as City Lit in London or the Art Students League in New York.
+  - Check whether paper, charcoal and boards are provided, and buy what is not.
+  - Arrive early for your first session and expect quick warm-up poses before longer ones.
+  links:
+  - label: 'City Lit: beginners'' life drawing and portraiture courses (London)'
+    url: https://www.citylit.ac.uk/courses/art-and-design/drawing-courses/life-drawing-portraiture/beginners
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Royal Drawing School: evening life drawing (London)'
+    url: https://royaldrawingschool.org/fact-sheet-tuesday-evening-life-drawing-4th-floor-autumn-2026
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Art Students League of New York: open sessions'
+    url: https://artstudentsleague.org/open-sessions
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Life drawing classes for beginners: what to expect'
+  description: What happens at a first life drawing class, how long the poses last, what to bring, what it costs, and where to find a class in the UK and the US.
+  detail:
+  - h: What it's really like
+    p:
+    - A class usually begins with very short poses, often called gesture poses, before the model holds longer ones. One studio's guide tells students to expect poses from several seconds up to 20 minutes,
+      with a break of 10 to 15 minutes about halfway through. Most classes draw with pencil, chunky graphite or charcoal.
+    - The honest hard part is the first evening. A London school's guide says that at first you may be drawing stick figures and struggling to see any likeness, and that drawing from life can feel daunting
+      if you have never done it. It also says life models are professionals, and a Seattle studio's etiquette sheet says almost all studio etiquette rests on respect for the model.
+  - h: Ways in, side by side
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Beginners' courses, evening and weekend
+        - Life drawing for beginners £249, or £199 senior; after-work courses from £179
+      - - Royal Drawing School, London
+        - Tuesday evening course, 2½ hours a week, a different model each week; charcoal, easels, boards and paper provided
+        - See the school's page
+      - - Lauderdale House, London
+        - Five Monday evenings, two hours each, for new and experienced students
+        - £135 (£27 a session)
+      - - Art Students League, New York
+        - Uninstructed open sessions with a model; supplies not provided
+        - $15 for the weekday early-evening sketch, $18 on Friday evenings, $22 at weekends; up to three visits before the $100 yearly registration
+    after: 'Many towns have their own drop-in sessions at arts centres and colleges. Ask whether materials are provided before you go: some classes supply paper and charcoal, others expect you to bring
+      everything.'
+  faq:
+  - q: Do I need to be able to draw to go to life drawing?
+    a: No. City Lit runs courses at beginners' level, and Lauderdale House's course is open to new and experienced students alike.
+  - q: What should I bring to a life drawing class?
+    a: It depends on the class. The Royal Drawing School provides charcoal, paper, easels and boards; Lauderdale House asks you to bring charcoal, soft pencils and a putty rubber, and sells paper in class.
+  - q: How long is a life drawing session?
+    a: 'Usually two to three hours: two at Lauderdale House, two and a half at the Royal Drawing School, and up to three and three-quarter hours at the Art Students League at weekends.'
+  - q: Is it awkward drawing a nude model?
+    a: A London school's guide says life models are professionals and a good teacher puts nerves at rest quickly; a Seattle studio says etiquette rests on respect for the model.
+  sources:
+  - label: City Lit, Beginners life drawing and portraiture courses
+    url: https://www.citylit.ac.uk/courses/art-and-design/drawing-courses/life-drawing-portraiture/beginners
+    checked: '2026-11-07'
+  - label: 'Royal Drawing School, Fact sheet: Tuesday evening life drawing, autumn 2026'
+    url: https://royaldrawingschool.org/fact-sheet-tuesday-evening-life-drawing-4th-floor-autumn-2026
+    checked: '2026-11-07'
+  - label: Lauderdale House, Life drawing five-week evening course
+    url: https://www.lauderdalehouse.org.uk/whats-on/life-drawing-course
+    checked: '2026-11-07'
+  - label: Art Students League of New York, Open sessions
+    url: https://artstudentsleague.org/open-sessions
+    checked: '2026-11-07'
+  - label: City Academy, What to expect in a beginners life drawing class (2021)
+    url: https://www.city-academy.com/news/what-to-expect-in-a-beginners-life-drawing-class/
+    checked: '2026-11-07'
+  - label: Gage Academy of Art, Life room etiquette
+    url: https://gageacademy.org/storage/learn_more/gageacademy/4f3e221f8c06f405773970410b3bf4b9bfaa121b.pdf
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Elsie Wigmore, North Yorkshire
+    line: A retired art teacher who kept her life drawing to herself until about 60, she found models at the Crescent Arts Centre in Scarborough and went on to a first solo exhibition in Danby.
+    title: Art laid bare
+    outlet: Teesside Gazette
+    url: https://www.gazettelive.co.uk/news/local-news/art-laid-bare-3769696
+    checked: '2026-11-07'
+  kit:
+  - name: Willow charcoal
+    why: the usual first drawing material in a life class
+    url: https://www.amazon.co.uk/s?k=willow+charcoal+sticks
+  - name: Putty rubber
+    why: lifts charcoal without smudging the paper
+    url: https://www.amazon.co.uk/s?k=putty+rubber+kneaded+eraser
+  - name: A2 drawing board and clips
+    why: for classes that do not provide boards
+    url: https://www.amazon.co.uk/s?k=a2+drawing+board+clips
+  related:
+  - join-an-urban-sketchers-meet
+  - paint-in-watercolour
+  - enter-the-summer-exhibition
+  - try-pottery-on-the-wheel
+- id: try-pottery-on-the-wheel
+  title: Learn to throw a pot on the wheel
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Centring a lump of clay and pulling it up into a bowl is harder than it looks and absorbing from the first minute. Beginners' wheel courses usually run for four to six weeks and include the clay,
+    glazes and firing, so you go home with pots you made.
+  start:
+  - 'Look for a beginners'' wheel-throwing course: an adult education college, a community college or a pottery studio.'
+  - Check that the course includes time on the wheel, not just hand-building, and whether clay, glazes and firing are in the fee.
+  - Wear old clothes and bring a towel and an apron to the first session.
+  links:
+  - label: 'City Lit: pottery and ceramics courses for beginners (London)'
+    url: https://www.citylit.ac.uk/courses/art-and-design/sculpture/ceramics-and-pottery/beginners
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Scottish Potters Association: classes'
+    url: https://www.scottishpotters.org/classes/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'A-B Tech Community College: Beginning Wheel Made Easy (North Carolina)'
+    url: https://abtech.edu/continuing-education/pottery-beginning-wheel-made-easy-102
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Pottery wheel classes for beginners: what to expect'
+  description: What a beginners' pottery wheel course teaches, what is included, what to wear, what it costs in the UK and US, and how to find a class near you.
+  detail:
+  - h: What it's really like
+    p:
+    - Beginners start with simple forms and the basic skills of centring the clay, pulling up the walls and trimming. One US course warns that throwing can be a bit of a workout for your arms and core.
+    - Not every ceramics course is a wheel course. At City Lit, for example, the Introduction to ceramics gives only a taster of the wheel in its final session, while Pottery for beginners covers both hand-building
+      and throwing. Read the description before you book.
+  - h: What beginners pay
+    table:
+      head:
+      - Where
+      - Course
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Pottery for beginners: hand-building and throwing, glazing and firing'
+        - £649, or £519 senior and £422 concession
+      - - Oklahoma State University arts centre
+        - Four weeks, three hours a week; 10 lb of clay, tools, glazes and firing included
+        - $135
+      - - A-B Tech Community College, North Carolina
+        - Six weekly sessions; a bag of clay, glazes and firing included
+        - $186, plus a $15 tool kit
+    after: The A-B Tech course asks students to bring a towel, an apron and a small notebook and to wear clothes suitable for clay. The Oklahoma course needs no previous experience and is open from age
+      15.
+  faq:
+  - q: Is the pottery wheel hard to learn?
+    a: It takes practice. Courses start with simple forms and centring, and one US course warns that throwing is a workout for your arms and core.
+  - q: Do I need any experience to take a pottery wheel class?
+    a: No. Oklahoma State University's arts centre says no prior experience is necessary, and A-B Tech's course is for beginners only.
+  - q: What should I wear to a pottery class?
+    a: Clothes you do not mind getting clay on, with an apron and a towel. A-B Tech asks students to bring both.
+  - q: Is the clay and firing included in a pottery course?
+    a: Often, but check. The A-B Tech and Oklahoma State University courses include clay, glazes and firing in the fee.
+  sources:
+  - label: City Lit, Pottery classes and ceramics workshops for beginners
+    url: https://www.citylit.ac.uk/courses/art-and-design/sculpture/ceramics-and-pottery/beginners
+    checked: '2026-11-07'
+  - label: Scottish Potters Association, Classes
+    url: https://www.scottishpotters.org/classes/
+    checked: '2026-11-07'
+  - label: 'A-B Tech Community College, Pottery: Beginning Wheel Made Easy'
+    url: https://abtech.edu/continuing-education/pottery-beginning-wheel-made-easy-102
+    checked: '2026-11-07'
+  - label: Oklahoma State University arts centre, Beginning wheel throwing class
+    url: https://artscenter.okstate.edu/adult-classes/pottery/1795-beginning-wheel-throwing-class-9
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Peter, from Woburn Sands, Buckinghamshire
+    line: Came back to pottery in his mid-forties, reached the final of Channel 4's The Great Pottery Throw Down and went on to start his own pottery business.
+    title: 70-year-old Milton Keynes teacher reflects on his experiences as a Great Pottery Throwdown finalist
+    outlet: Milton Keynes Citizen
+    url: https://miltonkeynes.co.uk/arts-and-culture/film-and-tv/70-year-old-milton-keynes-teacher-reflects-on-his-experiences-as-a-great-pottery-throwdown-finalist-3167134
+    checked: '2026-11-07'
+  kit:
+  - name: Pottery tool set
+    why: ribs, wire, loop tools and sponge for practice at home or class
+    url: https://www.amazon.co.uk/s?k=pottery+tool+set+beginner
+  - name: Canvas apron
+    why: clay gets everywhere
+    url: https://www.amazon.co.uk/s?k=pottery+apron+canvas
+  related:
+  - go-to-a-life-drawing-class
+  - make-a-stained-glass-panel
+  - join-a-woodturning-club
+  - learn-a-heritage-craft
+- id: paint-in-watercolour
+  title: Learn to paint in watercolour
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: 'Watercolour needs only a small box of paints, a few brushes and good paper, and it goes anywhere: a kitchen table, a garden, a hillside. A term of weekly classes teaches the washes and colour mixing
+    that take the guesswork out of it.'
+  start:
+  - Find a beginners' watercolour class at an adult education college, a community college or an art society.
+  - 'Ask for the supply list before the first session and buy the paper first: it matters more than anything else.'
+  - Paint something small every week between classes, working from light to dark.
+  links:
+  - label: 'Royal Watercolour Society: events and workshops'
+    url: https://www.royalwatercoloursociety.co.uk/events/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Brockenhurst College: Watercolour for beginners (Hampshire)'
+    url: https://www.brock.ac.uk/course/watercolour-beginners/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Anne Arundel Community College: Watercolor for Beginners (Maryland)'
+    url: https://www.aacc.edu/course-search/course/watercolor-for-beginners.php
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Watercolour painting for beginners: kit and classes'
+  description: 'How to start watercolour painting: the paper, paints and brushes beginners are asked to buy, what a class costs in the UK and US, and the honest hard parts.'
+  detail:
+  - h: What you need
+    list:
+    - Watercolour paper. One US college's list asks for 140 (lb) cold or hot press paper, which is 300 gsm, and says that if you splurge on anything, splurge on paper.
+    - 'Paints: a pan set or tubes. Brockenhurst College asks for the three primaries plus black; Clark College suggests a set of 12 or more.'
+    - Round and flat brushes in several sizes, such as 2, 4, 6, 8 and 10.
+    - A palette with a large mixing well, a water pot, an HB pencil and an eraser. Brockenhurst also asks for masking fluid and tape.
+    after: Clark College reminds students that all supplies are recommendations and that it is fine if sizes or colours are a little different.
+  - h: What it's really like
+    p:
+    - 'Country Life''s guide puts it simply: the basics of watercolour are simple, but a little tuition never goes amiss. Its tips from the painter Gerard Stamp are to keep to four or five colours, mix
+      more paint than you think you need, and work from light to dark with big washes.'
+    - The honest hard part is the paper. A paper supplier's guide says paper of 140 lb or lighter needs stretching to stop it buckling when wet; heavier paper used on a board may not. A beginners' class
+      covers this in the first weeks.
+  - h: Classes and costs
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Brockenhurst College, Hampshire
+        - 'Tuesday mornings for a term: mark making, line, tone, perspective and colour'
+        - £140 a term
+      - - Royal Watercolour Society, London
+        - Workshops, including a December series of two-hour practical sessions at the RWS Gallery
+        - See the events page
+      - - Anne Arundel Community College, Maryland
+        - Afternoon classes; no prior art experience required
+        - From $142, including a $25 fee
+  faq:
+  - q: What watercolour paper should a beginner use?
+    a: One US college asks for 140 lb (300 gsm) cold or hot press paper. A paper supplier says paper of 140 lb or lighter needs stretching to stop it buckling; heavier paper on a board may not.
+  - q: How many colours do I need to start watercolour?
+    a: Fewer than you think. Country Life's guide says four or five are quite enough; Brockenhurst College asks beginners for the three primaries plus black.
+  - q: Do I need any art experience for a watercolour class?
+    a: No. Anne Arundel Community College's beginners' class says no prior art experience is required and all levels are welcome.
+  - q: Is watercolour hard for beginners?
+    a: The basics are simple, according to Country Life's guide, but a little tuition helps, especially with washes and paper.
+  sources:
+  - label: Royal Watercolour Society, Events
+    url: https://www.royalwatercoloursociety.co.uk/events/
+    checked: '2026-11-07'
+  - label: 'Brockenhurst College, Watercolour: beginners'
+    url: https://www.brock.ac.uk/course/watercolour-beginners/
+    checked: '2026-11-07'
+  - label: Anne Arundel Community College, Watercolor for Beginners
+    url: https://www.aacc.edu/course-search/course/watercolor-for-beginners.php
+    checked: '2026-11-07'
+  - label: Clark College Community Education, Watercolor for beginners supply list, winter 2026
+    url: https://www.clark.edu/cce/class-resources/supply-lists/watercolor-for-beginners-winter26.pdf
+    checked: '2026-11-07'
+  - label: 'Country Life, Watercolours: getting started (2014)'
+    url: https://www.countrylife.co.uk/country-life/watercolours-getting-started-2897
+    checked: '2026-11-07'
+  - label: Ken Bromley Art Supplies, A beginners guide to buying watercolour paper
+    url: https://www.artsupplies.co.uk/blog/a-beginners-guide-to-buying-watercolour-paper/
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Margaret Crutchley, a Barnet artist
+    line: Has painted landscapes since retiring from a career in science, exhibited with the Royal Watercolour Society and had her own show at Chipping Barnet library in 2024.
+    title: New watercolour exhibition for Chipping Barnet library
+    outlet: Barnet Post
+    url: https://barnetpost.co.uk/2024/04/01/new-watercolour-exhibition-for-chipping-barnet-library/
+    checked: '2026-11-07'
+  kit:
+  - name: Watercolour paper pad, 300gsm
+    why: heavier paper buckles less when wet
+    url: https://www.amazon.co.uk/s?k=watercolour+paper+300gsm+pad
+  - name: Watercolour paint set
+    why: pans or tubes; a small set is enough to start
+    url: https://www.amazon.co.uk/s?k=watercolour+paint+set
+  - name: Watercolour brush set
+    why: round and flat brushes in several sizes
+    url: https://www.amazon.co.uk/s?k=watercolour+brush+set
+  related:
+  - join-an-urban-sketchers-meet
+  - go-to-a-life-drawing-class
+  - make-a-linocut-print
+  - enter-the-summer-exhibition
+- id: make-a-linocut-print
+  title: Make a linocut print
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Carve a design into a block of lino, roll ink over it and press paper onto it, and you can pull the same picture again and again. A one-day class or a short evening course is enough to go home with
+    your own block and prints.
+  start:
+  - Book a beginners' linocut or relief printmaking class at an adult education college or a print studio.
+  - Bring a few drawings or photos to work from.
+  - Once you have the knack, buy a small starter kit and keep printing at the kitchen table.
+  links:
+  - label: 'City Lit: printmaking courses for beginners (London)'
+    url: https://www.citylit.ac.uk/courses/art-and-design/printmaking/beginners-keeley_street
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Penland School of Craft: printmaking and letterpress workshops (North Carolina)'
+    url: https://penland.org/?p=904
+    region: us
+    checked: '2026-11-07'
+  - label: 'Pyramid Atlantic Art Center: introduction to linoleum relief printmaking (Maryland)'
+    url: https://pyramidatlanticartcenter.org/event/introduction-to-linoleum-relief-printmaking-jan2026/
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Linocut for beginners: kit, cutting safely and classes'
+  description: 'How to make your first linocut: the tools and kit you need, how to cut safely, the steps from drawing to print, and where to find a class in the UK and US.'
+  detail:
+  - h: How a linocut is made
+    list:
+    - Draw your design on the lino.
+    - Cut round the shapes with a V tool, then clear larger areas with a U tool. Whatever you cut away stays white.
+    - Roll a thin layer of ink onto an inking plate, then onto the block.
+    - Lay paper on the block and rub the back with a baren or a spoon, then peel it off. Plain 80 gsm copy paper is fine to start.
+    after: That is the method set out in a printmaking supplier's beginners' guide, which lists lino, cutting tools, a roller, ink, an inking plate and paper as the kit. A press is not needed.
+  - h: The honest hard parts
+    p:
+    - The tools are sharp. One supplier's guide says to hold the handle in your palm rather than like a pencil and keep your other hand behind the blade. Another says always cut away from yourself, use
+      a bench hook to stop the block slipping, and keep tools sharp, since a blunt tool needs more force and is harder to control.
+    - Do not carve too deep, or you can go right through the lino. Cheap lino can crumble, and harder lino may need warming, for example for about 30 seconds with a hairdryer.
+    table:
+      head:
+      - Class
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Evening linocut and woodblock courses
+        - £249, or £199 senior and £162 concession
+      - - Pyramid Atlantic, Maryland
+        - One six-hour beginners' day, materials included
+        - $184, including a $25 materials fee
+      - - Penland School of Craft, North Carolina
+        - Workshops of four days and longer; beginners welcome
+        - See the school's page
+  faq:
+  - q: What do I need to start linocut?
+    a: Lino, a set of cutting tools, a roller, block printing ink, an inking plate and paper. A baren or a spoon does the job of a press.
+  - q: How do I cut lino safely?
+    a: Hold the tool in your palm, always cut away from yourself, keep your other hand behind the blade and use a bench hook to hold the block.
+  - q: Do I need a printing press for linocut?
+    a: No. You can print by rubbing the back of the paper with a baren, a spoon or your hand.
+  - q: Which lino tools should a beginner buy?
+    a: One supplier suggests a handle with interchangeable blades to start, with a V tool for outlines and a U tool for clearing.
+  sources:
+  - label: City Lit, Printmaking courses for beginners
+    url: https://www.citylit.ac.uk/courses/art-and-design/printmaking/beginners-keeley_street
+    checked: '2026-11-07'
+  - label: Penland School of Craft, Printmaking and letterpress workshops
+    url: https://penland.org/?p=904
+    checked: '2026-11-07'
+  - label: Pyramid Atlantic Art Center, Introduction to linoleum relief printmaking
+    url: https://pyramidatlanticartcenter.org/event/introduction-to-linoleum-relief-printmaking-jan2026/
+    checked: '2026-11-07'
+  - label: Handprinted, Introduction to linocut for beginners (2021)
+    url: https://handprinted.co.uk/blogs/blog/introduction-to-linocut-for-beginners
+    checked: '2026-11-07'
+  - label: Hickman Design, What is the best way to cut lino?
+    url: https://hickmandesign.co.uk/resources/printmaking-guides/lino-printing-process/how-to-cut-linocut
+    checked: '2026-11-07'
+  kit:
+  - name: Lino cutting tool set
+    why: a handle with interchangeable V and U blades
+    url: https://www.amazon.co.uk/s?k=lino+cutting+tool+set
+  - name: Lino printing starter kit
+    why: lino, roller and water-based ink to start at home
+    url: https://www.amazon.co.uk/s?k=lino+printing+starter+kit
+  - name: Bench hook
+    why: holds the block still so your hand stays clear
+    url: https://www.amazon.co.uk/s?k=lino+bench+hook
+  related:
+  - paint-in-watercolour
+  - learn-calligraphy
+  - go-to-a-life-drawing-class
+  - make-a-stained-glass-panel
+- id: make-a-stained-glass-panel
+  title: Make a stained glass panel
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: On a beginners' course you design a small panel, cut the glass, lead it up, solder the joints and take home a window piece that catches the light. Colleges and arts centres teach it from scratch.
+  start:
+  - Read the British Society of Master Glass Painters' list of short courses, or search for a stained glass class at a US arts centre.
+  - Check which method the course teaches, leaded or copper foil, and what materials are included.
+  - Bring sturdy closed shoes and an apron, and read the course's safety notes about lead.
+  links:
+  - label: 'British Society of Master Glass Painters: stained glass training'
+    url: https://www.bsmgp.org.uk/resources/stained-glass-training/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'West Dean College: stained glass for beginners (West Sussex)'
+    url: https://www.westdean.ac.uk/short-courses/slw39985-stained-glass-for-beginners
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Visual Arts Center of Richmond: stained glass (Virginia)'
+    url: https://visarts.org/?p=14912040
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Stained glass courses for beginners: what you make'
+  description: What a beginners' stained glass course teaches, the panel you make, lead safety, lead came or copper foil, costs in the UK and US, and how to find a class.
+  detail:
+  - h: What it's really like
+    p:
+    - West Dean College's beginners' course takes you through glass cutting, design, choosing glass, leading, soldering, cementing and finishing, and you make a panel about 30 cm square or 25 by 40 cm.
+      Morley College in London has students make a small practice panel first, then design their own.
+    - 'Expect a lot of standing. The two methods you will hear about are lead came and copper foil: one glass supplier says lead came is easier for simple patterns, while copper foil takes more technique
+      and time, and suggests trying both on small pieces.'
+  - h: Lead and safety
+    list:
+    - Lead and solder are a lead source. Michigan's health department advises washing your hands before eating or drinking, working in a well-ventilated space away from the home, and washing work clothes
+      separately.
+    - West Dean asks pregnant or breastfeeding students to talk to their GP (family doctor) first; Morley does not recommend its course in pregnancy.
+    - Wear sturdy closed shoes, tie back long hair and avoid loose clothing and dangling jewellery. West Dean asks students to bring a face mask for cementing and cleaning.
+  - h: Courses and costs
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - West Dean College, West Sussex
+        - Residential short course, 9.15am to 5pm daily; glass and materials included
+        - £671, accommodation extra
+      - - Morley College, London
+        - Eleven weekly three-hour sessions; tools and materials for the first panel provided
+        - £430, or £325 concession
+      - - Visual Arts Center of Richmond, Virginia
+        - 'Weekly evening class in the copper-foil method: cutting, foiling, soldering and framing'
+        - $360, or $324 for members, plus fees
+    after: The British Society of Master Glass Painters lists short courses by region but does not vet or recommend them, and advises checking that a glass course really covers stained glass.
+  faq:
+  - q: Is stained glass hard to learn?
+    a: The basics can be learned on a short course. One supplier says lead came is easier for simple patterns, and copper foil takes more technique.
+  - q: Is the lead in stained glass dangerous?
+    a: Lead is a hazard. Wash your hands before eating or drinking, work in a ventilated space and wash work clothes separately; if you are pregnant, talk to your doctor before a course.
+  - q: What will I make on a beginners' stained glass course?
+    a: Usually one small panel. West Dean's is about 30 cm square or 25 by 40 cm; Morley students make a practice panel and then one of their own design.
+  - q: How long does a stained glass course take?
+    a: From a few days residential, as at West Dean, to eleven weekly sessions of three hours at Morley College.
+  sources:
+  - label: British Society of Master Glass Painters, Stained glass training
+    url: https://www.bsmgp.org.uk/resources/stained-glass-training/
+    checked: '2026-11-07'
+  - label: West Dean College, Stained glass for beginners
+    url: https://www.westdean.ac.uk/short-courses/slw39985-stained-glass-for-beginners
+    checked: '2026-11-07'
+  - label: Morley College London, An introduction to working with stained glass
+    url: https://morleycollege.ac.uk/?p=467723
+    checked: '2026-11-07'
+  - label: Visual Arts Center of Richmond, Stained glass
+    url: https://visarts.org/?p=14912040
+    checked: '2026-11-07'
+  - label: Michigan Department of Health and Human Services, Jobs and hobbies (lead)
+    url: https://www.michigan.gov/mileadsafe/learn/jobs-hobbies
+    checked: '2026-11-07'
+  - label: Hollander Fusing and Art Glass, Lead came vs copper foil (2025)
+    url: https://hollanderfusingcenter.com/blogs/news/lead-came-vs-copper-foil-for-stained-glass-projects
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Eileen Stoyanoff, Abingdon, Virginia
+    line: Took up stained glass through a local class and, after three decades in corporate computing, opened her own studio making window hangings, lamps, lanterns and kaleidoscopes.
+    title: Retirement brings out new creativity for artist
+    outlet: A! Magazine for the Arts
+    url: https://aamearts.org/magazine/article/retirement-brings-out-new-creativity-for-artist/2014012515535186085
+    checked: '2026-11-07'
+  kit:
+  - name: Glass cutter
+    why: an oil-fed cutter scores glass more evenly
+    url: https://www.amazon.co.uk/s?k=stained+glass+oil+cutter
+  - name: Safety glasses
+    why: for cutting and breaking glass
+    url: https://www.amazon.co.uk/s?k=safety+glasses+clear
+  related:
+  - try-pottery-on-the-wheel
+  - learn-a-heritage-craft
+  - make-a-linocut-print
+  - learn-calligraphy
+- id: learn-calligraphy
+  title: Learn calligraphy
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A broad-edged pen and a steady rhythm turn ordinary handwriting into lettering worth framing. Calligraphy societies run local groups, online courses and tutors for complete beginners on both sides
+    of the Atlantic.
+  start:
+  - Find a local group or an online beginners' course through the Calligraphy and Lettering Arts Society (UK) or a guild such as the Washington Calligraphers Guild (US).
+  - Start with one hand, such as Foundational or Italic, and a beginner's pen or a broad nib.
+  - Practise for 15 to 20 minutes three or four times a week rather than in long sessions.
+  links:
+  - label: 'Calligraphy and Lettering Arts Society (CLAS): groups and courses'
+    url: https://www.clas.co.uk/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Society of Scribes and Illuminators: tutors and correspondence course'
+    url: https://calligraphyonline.org/project_category/tutor
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Washington Calligraphers Guild: classes'
+    url: https://calligraphersguild.org/classes
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Calligraphy for beginners: pens, paper and courses'
+  description: 'How to start calligraphy: which hand to learn first, the pens, nibs and paper beginners use, how often to practise, and where to find a class or group.'
+  detail:
+  - h: What you need
+    list:
+    - A pen. North Seattle College's beginners' class uses a Pilot Parallel pen. A calligraphy supplier suggests a William Mitchell Round Hand nib for broad-edged lettering, or a Nikko G nib for pointed-pen
+      styles such as Copperplate.
+    - Smooth calligraphy paper or a good layout pad. The same supplier says printer paper will feather and bleed with most calligraphy inks.
+  - h: What it's really like
+    p:
+    - 'CLAS admits calligraphy can be frustrating when a nib will not work or you cannot fit a reservoir, and its beginners'' guides page has videos on ink flow and tips for left-handers. A supplier''s
+      guide suggests short, regular practice: 15 to 20 minutes, three or four times a week.'
+    table:
+      head:
+      - Way in
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - CLAS LiveOnline (UK, online)
+        - Beginners' courses of four two-hour sessions in Foundational, Roman Capitals or Copperplate
+        - £95 members, £120 non-members
+      - - City Lit, London
+        - Ten three-hour sessions for complete beginners; no equipment needed for the first
+        - £499, or £399 senior
+      - - Society of Scribes and Illuminators
+        - A 24-lesson correspondence course in four units, or a Fellow as a private tutor
+        - £250 a unit of six lessons; tutors £60 an hour (£50 for members)
+      - - Washington Calligraphers Guild (US)
+        - A list of teachers and classes, including community colleges and Smithsonian Associates
+        - See each class
+  faq:
+  - q: What pen should a beginner use for calligraphy?
+    a: A Pilot Parallel pen is used on North Seattle College's beginners' class. For dip pens, one supplier suggests a William Mitchell Round Hand nib for broad-edged lettering.
+  - q: Is calligraphy hard to learn?
+    a: It takes patience. CLAS says it can be frustrating when you cannot get a nib working or fit a reservoir, and a supplier suggests short, regular practice.
+  - q: Can I learn calligraphy online?
+    a: Yes. CLAS runs LiveOnline beginners' courses, and the Society of Scribes and Illuminators has a 24-lesson correspondence course.
+  - q: What paper is best for calligraphy practice?
+    a: Smooth calligraphy paper or a good layout pad. Printer paper feathers and bleeds with most calligraphy inks.
+  sources:
+  - label: Calligraphy and Lettering Arts Society, home page
+    url: https://www.clas.co.uk/
+    checked: '2026-11-07'
+  - label: Calligraphy and Lettering Arts Society, CLAS LiveOnline
+    url: https://www.clas.co.uk/clas-live-online/
+    checked: '2026-11-07'
+  - label: Calligraphy and Lettering Arts Society, Beginners' guides
+    url: https://clas.co.uk/?p=8753
+    checked: '2026-11-07'
+  - label: Society of Scribes and Illuminators, Tutors
+    url: https://calligraphyonline.org/project_category/tutor
+    checked: '2026-11-07'
+  - label: 'City Lit, Calligraphy: 10 projects for beginners'
+    url: https://www.citylit.ac.uk/courses/calligraphy-10-projects-for-beginners
+    checked: '2026-11-07'
+  - label: Washington Calligraphers Guild, Classes
+    url: https://calligraphersguild.org/classes
+    checked: '2026-11-07'
+  - label: North Seattle College, Calligraphy for beginners
+    url: https://conted.northseattle.edu/sites/continuingeducation.northseattle.edu/files/2025-07/Calligraphy%20for%20Beginners.pdf
+    checked: '2026-11-07'
+  - label: Scribblers Calligraphy, What do I need to start calligraphy? (2026)
+    url: https://scribblers.co.uk/blogs/news/what-do-i-need-to-start-calligraphy
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Coreen Campbell, Oxley, Wolverhampton
+    line: Went to a calligraphy workshop about seven years ago, loved it, and now teaches her own modern calligraphy workshops in Wolverhampton and Stourbridge.
+    title: I loved learning calligraphy so much, I now teach others at workshops in Wolverhampton and Stourbridge
+    outlet: Express & Star
+    url: https://www.expressandstar.com/entertainment/2025/09/20/i-loved-learning-calligraphy-so-much-i-now-teach-others-at-workshops-in-wolverhampton-and-stourbridge
+    checked: '2026-11-07'
+  kit:
+  - name: Pilot Parallel pen set
+    why: a cartridge pen with a broad edge, used on beginners' classes
+    url: https://www.amazon.co.uk/s?k=pilot+parallel+pen+set
+  - name: Calligraphy layout pad
+    why: smooth paper that does not bleed
+    url: https://www.amazon.co.uk/s?k=calligraphy+layout+paper+pad
+  related:
+  - make-a-linocut-print
+  - paint-in-watercolour
+  - take-a-creative-writing-course
+  - learn-a-heritage-craft
+- id: learn-the-ukulele
+  title: Learn the ukulele
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: With four strings and a handful of chords you can strum along to songs within a few lessons, and ukulele groups meet in halls, pubs and libraries to play together. The u3a says about £35 buys a starter
+    instrument and a tuner.
+  start:
+  - Buy or borrow a soprano ukulele and an electronic tuner; some libraries lend them.
+  - Learn three or four easy chords from a beginners' course, such as the u3a's downloadable one.
+  - Find a local ukulele group or a u3a group and go along to a session.
+  links:
+  - label: 'u3a: ukulele subject page and beginners'' course'
+    url: https://www.u3a.org.uk/learning/subjects/ukulele
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Nashville Public Library: borrow a ukulele (an example of library loans)'
+    url: https://nashvillepubliclibrary.org/services/ukuleles
+    region: us
+    checked: '2026-11-07'
+  - label: 'Meetup: ukulele groups'
+    url: https://meetup.com/topics/ukulele
+    region: any
+    checked: '2026-11-07'
+  seo_title: 'Learn the ukulele: which size, first chords and groups'
+  description: 'How to start the ukulele: which size to buy, what a starter costs, how quickly you can play, free beginners'' courses, and how to find a group to play with.'
+  detail:
+  - h: What it's really like
+    p:
+    - The u3a, which runs ukulele groups across the UK, says you can start from absolute zero, need no music reading, and can play in just a few lessons, beginning with three or four easy chords. Its downloadable
+      beginners' course covers choosing and tuning, strumming and the first 16 chords, and a second stage moves on to barre chords and fingerpicking.
+    - 'The honest part, in the u3a''s words: competence comes only from practice. Groups mostly strum chords to songs from the 1920s to today, reading from song sheets; one ukulele magazine notes that groups
+      which only strum can sound monotonous, and some clubs add a workshop or an open mic.'
+  - h: Which ukulele to buy
+    table:
+      head:
+      - Size
+      - Notes
+      rows:
+      - - Soprano
+        - The smallest, about 21 inches (53 cm) long; the usual first choice
+      - - Concert
+        - A little bigger; try it if your hands feel cramped on a soprano
+      - - Tenor
+        - Larger again, tuned the same as soprano and concert (G-C-E-A)
+      - - Baritone
+        - About 30 inches (76 cm), tuned like the top four strings of a guitar
+    after: 'The u3a says £35 will buy a starter instrument and an electronic tuner. A beginners'' guide warns against the very cheapest toy instruments, whose unstable tuning pegs can make a beginner think
+      the problem is them. In the US, check your library: Nashville Public Library lends a ukulele, case, tuner and booklet for three weeks.'
+  faq:
+  - q: Is the ukulele easy to learn?
+    a: The u3a says you can play in just a few lessons, starting from absolute zero with three or four easy chords and no need to read music.
+  - q: Which ukulele size should a beginner buy?
+    a: A soprano, the smallest at about 21 inches. If your hands feel cramped, try a concert.
+  - q: How much does a beginner ukulele cost?
+    a: The u3a says about £35 buys a starter instrument and an electronic tuner. Avoid the very cheapest, which may not stay in tune.
+  - q: Where can I find a ukulele group?
+    a: Ask your local u3a, whose ukulele groups run across the country, or look for groups on Meetup and at your library.
+  sources:
+  - label: u3a, Ukulele subject page
+    url: https://www.u3a.org.uk/learning/subjects/ukulele
+    checked: '2026-11-07'
+  - label: 'UkeBuddy, Beginner: choosing a ukulele'
+    url: https://ukebuddy.com/ukulele-guide/beginner-choosing-a-ukulele
+    checked: '2026-11-07'
+  - label: Ukulele Magazine, Building a ukulele club (2023)
+    url: https://ukulelemagazine.com/stories/building-a-ukulele-club-how-to-make-your-group-fun-strong-and-successful
+    checked: '2026-11-07'
+  - label: Nashville Public Library, Borrow a ukulele
+    url: https://nashvillepubliclibrary.org/services/ukuleles
+    checked: '2026-11-07'
+  - label: Meetup, Ukulele groups
+    url: https://meetup.com/topics/ukulele
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: John Davies, Alvechurch, Worcestershire
+    line: Took up the ukulele after retiring and formed The 6-5 Specials with four other retirees; the group plays around the Midlands and has raised more than £5,000 for charity.
+    title: Uke can do it – sprightly John Davies in the running for seniors award
+    outlet: Redditch Standard
+    url: https://redditchstandard.co.uk/news/uke-can-do-it-sprightly-john-davies-in-the-running-for-seniors-award/
+    checked: '2026-11-07'
+  kit:
+  - name: Soprano ukulele
+    why: the usual first size; avoid toy-grade instruments
+    url: https://www.amazon.co.uk/s?k=soprano+ukulele+beginner
+  - name: Clip-on tuner
+    why: keeps you in tune in seconds
+    url: https://www.amazon.co.uk/s?k=clip+on+ukulele+tuner
+  related:
+  - join-rock-choir
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+  - play-one-piece-for-someone
+- id: join-a-knitting-group
+  title: Join a knitting or crochet group
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: free
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A knit and natter group is a cup of tea, conversation and a project on your needles, and many meet free in libraries and cafés. Guilds on both sides of the Atlantic run local branches, teach beginners
+    and share free how-to guides.
+  start:
+  - Ask your library about a knit and natter group, or find a branch through the Knitting & Crochet Guild (UK) or a guild chapter (US).
+  - Pick up a pair of needles or a crochet hook and some yarn, or learn from a free guide first.
+  - Bring a simple project to the group and ask for help with the next step.
+  links:
+  - label: 'Knitting & Crochet Guild: branches, groups and learning'
+    url: https://kcguild.org.uk/sharing/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Craft Yarn Council: knit and crochet guilds and groups'
+    url: https://craftyarncouncil.com/node/131
+    region: us
+    checked: '2026-11-07'
+  - label: 'Crochet Guild of America: join and find a chapter'
+    url: https://crochet.org/join-cgoa/
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Knitting and crochet groups: how to find one and start'
+  description: How to find a knit and natter or crochet group, what to bring, free learn-to-knit and crochet guides, whether crochet is easier, and what guilds cost.
+  detail:
+  - h: What it's really like
+    p:
+    - 'A typical library group is two hours of knitting, a cuppa and conversation: Staffordshire''s Norton Canes library describes its Friday afternoon knit and natter as free, as long as you bring your
+      own knitting. The Knitting & Crochet Guild, a UK charity run by volunteers, has branches that meet regularly and points to local knit and natter groups too.'
+    - Getting started costs little. AARP's guide says all you need is yarn and a pair of needles, and that the idea knitting is hard is wrong. The Craft Yarn Council's Learning Center and the Guild's downloadable
+      Start to Crochet guide teach the first stitches.
+  - h: Knitting or crochet?
+    table:
+      head:
+      - ''
+      - Knitting
+      - Crochet
+      rows:
+      - - Tools
+        - A pair of needles
+        - One hook; a basic set covers most projects
+      - - How stitches work
+        - Stitches pass from one needle to the other
+        - No transferring of stitches between tools
+      - - Who it suits
+        - People who want more tools and more complex designs
+        - Beginners who want convenience; called slightly more accessible
+    after: 'The comparison is from a Martha Stewart guide. Joining a guild is optional: the Crochet Guild of America is $35 a year digital or $40 traditional, and US guilds such as The Knitting Guild Association
+      have local chapters across the country.'
+  faq:
+  - q: Where can I find a knitting group near me?
+    a: Ask your library, many of which run free knit and natter groups, or use the Knitting & Crochet Guild's list of branches in the UK and guild chapters in the US.
+  - q: Is crochet easier than knitting?
+    a: One guide suggests crochet for beginners who want convenience and versatility, calling it slightly more accessible, because you use one hook and do not pass stitches between tools.
+  - q: What do I need to start knitting?
+    a: Yarn and a pair of needles. AARP's guide says you can use expensive or inexpensive materials.
+  - q: Are knitting groups free?
+    a: 'Many are. Library knit and natter groups are often free: you just bring your own knitting.'
+  sources:
+  - label: Knitting & Crochet Guild, Sharing
+    url: https://kcguild.org.uk/sharing/
+    checked: '2026-11-07'
+  - label: Knitting & Crochet Guild, home page
+    url: https://kcguild.org.uk
+    checked: '2026-11-07'
+  - label: Knitting & Crochet Guild, Learn to crochet
+    url: https://kcguild.org.uk/sharing/learning/learn-crochet/
+    checked: '2026-11-07'
+  - label: Staffordshire County Council, Norton Canes library knit and natter
+    url: https://www.staffordshire.gov.uk/libraries-0/library-events/norton-canes-library-knit-and-natter
+    checked: '2026-11-07'
+  - label: Craft Yarn Council, Guilds and groups
+    url: https://craftyarncouncil.com/node/131
+    checked: '2026-11-07'
+  - label: Craft Yarn Council, Learning Center
+    url: https://craftyarncouncil.com/node/3
+    checked: '2026-11-07'
+  - label: Crochet Guild of America, Join CGOA
+    url: https://crochet.org/join-cgoa/
+    checked: '2026-11-07'
+  - label: AARP, How to get started knitting (2019)
+    url: https://www.aarp.org/home-family/your-home/info-2019/knitting-is-back
+    checked: '2026-11-07'
+  - label: Martha Stewart (via Yahoo Life), Knitting versus crocheting (2019)
+    url: https://www.yahoo.com/lifestyle/knitting-versus-crocheting-whats-difference-192546886.html
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Cynthia Jones, Leeds
+    line: Went back to crochet after taking early retirement from about 30 years in the NHS as a medical secretary, showed her designs at a fashion show and set out to start a crocheted clothing business.
+    title: Meet the former Leeds medical secretary who found a crafty passion after taking early retirement
+    outlet: Yorkshire Evening Post
+    url: https://www.YorkshireEveningPost.co.uk/news/people/meet-the-former-leeds-medical-secretary-who-found-a-crafty-passion-after-taking-early-retirement-4097930
+    checked: '2026-11-07'
+  kit:
+  - name: Beginner knitting kit
+    why: needles and yarn for a first project
+    url: https://www.amazon.co.uk/s?k=beginner+knitting+kit
+  - name: Crochet hook set
+    why: one basic set covers most projects
+    url: https://www.amazon.co.uk/s?k=crochet+hook+set+ergonomic
+  related:
+  - make-a-blanket-for-project-linus
+  - learn-a-heritage-craft
+  - host-a-chatter-and-natter-table
+  - join-the-wi
+- id: take-a-creative-writing-course
+  title: Take a creative writing course
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A course gives you exercises, deadlines and readers, which is most of what a new writer lacks. You can start free online with the Open University, take an evening class, or go away for a week with
+    a writers' retreat.
+  start:
+  - Try the Open University's free OpenLearn course, Start writing fiction, to see whether you enjoy regular writing.
+  - If you do, book a beginners' class with feedback, in person or online.
+  - Keep a journal of ideas and share your work with a few other writers.
+  links:
+  - label: 'OpenLearn (Open University): Start writing fiction, free'
+    url: https://www.open.edu/openlearn/mod/oucontent/view.php?id=101090
+    region: any
+    checked: '2026-11-07'
+  - label: 'City Lit: creative writing for beginners (London and online)'
+    url: https://www.citylit.ac.uk/courses/writing/introductory-and-general-creative-writing-courses/beginners
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Gotham Writers Workshop: Creative Writing 101 (New York and online)'
+    url: https://wp.writingclasses.com/courses/creative-writing-101/
+    region: us
+    checked: '2026-11-07'
+  seo_title: Creative writing courses for beginners, free and paid
+  description: 'Free and paid creative writing courses for beginners: the Open University''s free course, evening classes, Arvon retreats and Gotham, with costs and what to expect.'
+  detail:
+  - h: What it's really like
+    p:
+    - Most beginners' courses mix short exercises with reading like a writer and feedback on what you write. Gotham Writers Workshop's Creative Writing 101 is for beginners or anyone wanting a refresher,
+      with no pressure to work on a particular project. An Arvon residential week has morning workshops, one-to-one tutorials in the afternoons and readings in the evenings, and ends with participants reading
+      their own work.
+    - 'The honest part comes from the Open University''s free course: writing usually cannot be done quickly, you need to live with it and return to it again and again, and even a short paragraph can take
+      a while to get right. It advises sharing work with other writers.'
+  - h: Ways in, from free to a week away
+    table:
+      head:
+      - Course
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - 'OpenLearn: Start writing fiction'
+        - Online, 24 hours over 8 weeks; free statement of participation
+        - Free
+      - - City Lit, London and online
+        - Short classes and longer courses, in person and online
+        - £19 to £269 (concessions from £12)
+      - - 'Arvon: Starting to Write'
+        - Six days residential, with published writers as tutors; meals included
+        - £995 single room; a limited number of concessions at £696.50, and a grant scheme
+      - - Gotham Writers Workshop, New York
+        - Creative Writing 101, six weeks, in person, on Zoom or online
+        - $364 to $380 including registration
+    after: In the US, the 124 Osher Lifelong Learning Institutes run classes for their members; the University of Utah's has included a six-session class on writing your own stories.
+  faq:
+  - q: Are there free creative writing courses?
+    a: 'Yes. The Open University''s OpenLearn course Start writing fiction is free: about 24 hours over 8 weeks, with a free statement of participation.'
+  - q: Do I need experience to take a creative writing course?
+    a: No. Gotham's Creative Writing 101 is for beginners, and Arvon's Starting to Write is for people starting out.
+  - q: How much does a writing retreat cost?
+    a: Arvon's six-day Starting to Write course was £995 for a single room, with a limited number of concession places.
+  - q: How long does a beginners' writing course take?
+    a: OpenLearn's is 8 weeks at about three hours a week; Gotham's is six weeks; an Arvon residential is six days.
+  sources:
+  - label: 'The Open University (OpenLearn), Start writing fiction: characters and stories'
+    url: https://www.open.edu/openlearn/mod/oucontent/view.php?id=101090
+    checked: '2026-11-07'
+  - label: City Lit, Creative writing for beginners
+    url: https://www.citylit.ac.uk/courses/writing/introductory-and-general-creative-writing-courses/beginners
+    checked: '2026-11-07'
+  - label: 'Arvon, Residential writing course: Starting to Write'
+    url: https://www.arvon.org/writing-courses/courses-retreats/residential-writing-course-starting-to-write-4/
+    checked: '2026-11-07'
+  - label: Gotham Writers Workshop, Creative Writing 101
+    url: https://wp.writingclasses.com/courses/creative-writing-101/
+    checked: '2026-11-07'
+  - label: Osher Lifelong Learning Institutes, National Resource Center (Northwestern University)
+    url: https://sps.northwestern.edu/oshernrc
+    checked: '2026-11-07'
+  - label: University of Utah OLLI, Writing your stories
+    url: https://continue.utah.edu/osher/class/osher_473_writing_your_stories_part_one
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Kathy Biggs, Wales
+    line: Took creative writing modules through Aberystwyth University's lifelong learning programme after being made redundant, and published her debut novel, The Luck, in 2022.
+    title: Creative Writing Lifelong Learning student publishes debut novel
+    outlet: Aberystwyth University
+    url: https://www.aber.ac.uk/en/news/archive/2022/10/title-259343-en.html
+    checked: '2026-11-07'
+  kit:
+  - name: Writer's notebook
+    why: for ideas, scraps and the daily page
+    url: https://www.amazon.co.uk/s?k=a5+notebook+writing+journal
+  related:
+  - write-a-book
+  - record-a-life-story
+  - learn-calligraphy
+  - finish-an-openlearn-course

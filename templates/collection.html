@@ -1,6 +1,6 @@
 {% extends "base.html" %}{% from "_macros.html" import share_button %}
-{% block title %}{{ (coll.plural ~ " you can enter") | seotitle }}{% endblock %}
-{% block description %}{{ (coll.plural ~ " open to the public, each with how to start and a link to the official page. " ~ coll.blurb) | metadesc }}{% endblock %}
+{% block title %}{{ (coll.title or (coll.plural ~ " you can enter")) | seotitle }}{% endblock %}
+{% block description %}{{ (coll.meta or (coll.plural ~ " open to the public, each with how to start and a link to the official page. " ~ coll.blurb)) | metadesc }}{% endblock %}
 {% block pagetype %}list{% endblock %}
 {% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
  {"@type":"BreadcrumbList","itemListElement":[
@@ -27,7 +27,7 @@
 
 <div class="prose narrow fl-about">
 <p>{{ coll.note }}</p>
-<p>Every link was opened and read by us on the date shown on its page. Dates, places, prices and entry rules are on the official page, where they stay up to date. These are demanding events: read the organiser's kit list and medical guidance before you enter.</p>
+<p>Every link was opened and read by us on the date shown on its page. Dates, places, prices and entry rules are on the official page, where they stay up to date.{% if coll.id == "military" %} These are demanding events: read the organiser's kit list and medical guidance before you enter.{% endif %}</p>
 <p><a href="/list/">← All activities</a></p>
 </div>
 {% endblock %}
