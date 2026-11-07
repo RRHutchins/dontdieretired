@@ -434,7 +434,7 @@ The same rules apply to both: links only where honest, no invented recommendatio
 | 22 | 22 Nov | Robin switches Stripe to live and makes one real purchase and refund; Christmas gift posts written (facts only) |
 | 23–24 | 23–24 Nov | Spare days for anything left over |
 | 25 | 25 Nov | Launch: Plus and gifts on sale; report to Robin. Days after this: fixes, more places and activities |
-Dates may slip by a day or two; the launch date is the one to protect, and quality comes before it. If a day cannot be done honestly or well, do less and say why.
+**Two build runs a day from 7 Nov 2026** (Robin raised his usage plan and wants it used): the rows are a sequence, not fixed dates. Each run does the next unfinished row, so the build can get ahead of the dates. Launch as soon as every row before it is done, Robin has tried it and his own steps (Stripe live, accounts) are in place, and not before. Dates may slip by a day or two; the launch date is the one to protect, and quality comes before it. If a day cannot be done honestly or well, do less and say why.
 
 ### 6p. Links between pages (Robin, 27 Oct 2026: "if a person is in one page they are naturally led to others")
 - **Foot of every story and guide:** "Try it yourself" shows up to three activity cards: the activities tied to the piece (`story:`/`guide:`), then those sharing its subject (activity id words against the piece's tags, ignoring place names and loose words), then a stable pick from the same topic. "Keep reading" shows three pieces ranked by shared tags, then topic, newest first.
