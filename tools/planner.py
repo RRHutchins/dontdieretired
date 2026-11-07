@@ -15,13 +15,13 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 STRANDS = ("book", "learn", "train", "travel", "kit")
-STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock", "safety_month", "later")
+STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock", "safety_month", "later", "day_span")
 START_AT = ("first", "second", "ongoing", "after_start", "later", "travel", "day")
 NO_TEXT = ("first", "second", "ongoing", "after_start", "later")   # an activity's own start step supplies the words
-TRIP_KEYS = ("head", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs")
+TRIP_KEYS = ("head", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs", "getting_help_span")
 COUNTRY = re.compile(r"[A-Z]{2}")
 NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help",
-             "level_q", "level_opt", "level_starter", "level_active", "level_advanced", "level_help", "train_month", "train_offline", "train_week", "train_about", "cal_why_train", "train_level_long", "train_level_short")
+             "level_q", "level_opt", "level_starter", "level_active", "level_advanced", "level_help", "train_month", "train_offline", "train_week", "train_about", "cal_why_train", "train_level_long", "train_level_short", "clash_span", "span_q", "span_last", "span_help", "span_err")
 
 
 def _load(p: Path):
@@ -52,7 +52,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
     for k in STEP_KEYS:
         v = steps.get(k) or {}
         assert v.get("why"), f"planner steps.{k}: needs why"
-        if k not in ("day_month", "train_start"): assert "at" in v and at_ok(v["at"]), f"planner steps.{k}: at must be days, 'start', 'start+N' or 'lead*F'"
+        if k not in ("day_month", "day_span", "train_start"): assert "at" in v and at_ok(v["at"]), f"planner steps.{k}: at must be days, 'start', 'start+N' or 'lead*F'"
         if k not in NO_TEXT: assert v.get("text"), f"planner steps.{k}: needs text"
     for k in NOTE_KEYS: assert notes.get(k), f"planner notes.{k}: missing"
     # Where it is and getting there (Planner Plus day 8): the words, and the searches built from a place

@@ -164,6 +164,9 @@ steps:
     at: 0
     text: "{title}"
     why: "Your date."
+  day_span:
+    text: "{title}"
+    why: "Your dates, {date}. Everything above is ready by the first day."
   day_month:
     text: "{title}"
     why: "You chose {date} rather than a day, so the plan has everything ready by the start of the month."
@@ -205,6 +208,7 @@ notes:
   moved_day: "Moved from {from}, the day of {other}, so that day is kept clear for it."
   moved_busy: "Moved from {from} to spread out a busy day: your plans had more than {n} steps on it."
   clash_day: "{titles} are on the same day, {date}. If that is not what you meant, change the date of one of them."
+  clash_span: "{a} ({adates}) and {b} ({bdates}) overlap. If that is not what you meant, change the dates of one of them."
   clash_train: "The training plans for {a} and {b} overlap from {from} to {to}. Each plan was built on its own, so check you can fit both into your week, or set the dates further apart."
   affiliate: "Some of the links in this plan are affiliate links: if you book or buy through them we may earn a commission at no extra cost to you."
   # Add to my calendar (RUNBOOK §6s, day 5): the words around each step in the .ics file, and the line under the button.
@@ -214,6 +218,11 @@ notes:
   cal_plan: "Your plan on Don't Die Retired (it opens on the device where you saved it): {url}"
   cal_help: "This saves a calendar file (.ics) with one all-day entry for each step still to do. Open it with your calendar app, or use the app's import option, to add them. Nothing is sent anywhere. The calendar does not change when your plan does: if you change the plan, save the file again, and check for steps you no longer need, as some calendar apps keep both."
   cal_why_train: "Why: {why}"
+  # More than one day (Robin, 7 Nov 2026): a plan on a day may have a last day too, up to 30 days on.
+  span_q: "I'm going for more than one day"
+  span_last: "Last day"
+  span_help: "Everything is made ready by the first day, and the whole stay shows as one block in My year and your calendar."
+  span_err: "Choose a last day after the first day, and no more than 30 days later."
   # Dated training (RUNBOOK §6s, day 6). The sessions themselves, their order and every reason for them come from the
   # guidance engine (tools/engine.py export); these are only the words around them.
   level_q: "Where are you starting from?"
@@ -246,6 +255,7 @@ trip:
   where_change: "Change the place"
   where_source: "From {label}, checked {checked}. Check the organiser's own page before you travel: venues and start points can change."
   when_none: "the day you go"
+  getting_help_span: "Each link opens a search for you to run: put in {from} to travel there and {to} to come back, and where you are setting off from."
   getting: "Getting there"
   getting_help: "Each link opens a search for you to run: put in {when}, and where you are setting off from."
   my_needs: "Add where it is on its plan page to see the map and journey planners."

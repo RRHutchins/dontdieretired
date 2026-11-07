@@ -208,5 +208,27 @@ t('merging ticks twice changes nothing more', () => {
     assert.strictEqual(L.merge(old, a).items[0].where, 'Northiam');
     assert.strictEqual(L.clean(list([item('parkrun', { where: 42 })])).items[0].where, '');
   });
+  /* More than one day (Robin, 7 Nov 2026) */
+  t('plan() stores a last day only after the first and within 30 days; a month never has one', () => {
+    L.plan('go-to-edinburgh-fringe', { date: '2027-08-14', until: '2027-08-18' }, '2026-11-07');
+    assert.strictEqual(L.get('go-to-edinburgh-fringe').until, '2027-08-18');
+    L.plan('go-to-edinburgh-fringe', { date: '2027-08-14', until: '2027-08-14' }, '2026-11-07'); assert.strictEqual(L.get('go-to-edinburgh-fringe').until, '');
+    L.plan('go-to-edinburgh-fringe', { date: '2027-08-14', until: '2027-09-14' }, '2026-11-07'); assert.strictEqual(L.get('go-to-edinburgh-fringe').until, '');
+    L.plan('go-to-edinburgh-fringe', { date: '2027-08-14', until: '2027-09-13' }, '2026-11-07'); assert.strictEqual(L.get('go-to-edinburgh-fringe').until, '2027-09-13');
+    L.plan('go-to-edinburgh-fringe', { month: '2027-08', until: '2027-08-18' }, '2026-11-07'); assert.strictEqual(L.get('go-to-edinburgh-fringe').until, '');
+    L.plan('go-to-edinburgh-fringe', { date: '2027-08-14', until: '2027-08-18' }, '2026-11-07');
+    L.update('go-to-edinburgh-fringe', { date: '2027-08-20' }); assert.strictEqual(L.get('go-to-edinburgh-fringe').until, '');
+    L.plan('go-to-edinburgh-fringe', { date: '2027-08-14', until: '2027-08-18' }, '2026-11-07'); L.plan('go-to-edinburgh-fringe', null);
+    assert.strictEqual(L.get('go-to-edinburgh-fringe').until, '');
+  });
+  t('a last day is cleaned and merged with the item, and does not clear the plan\'s ticks', () => {
+    assert.strictEqual(L.clean(list([item('parkrun', { date: '2027-01-01', until: 'soon' })])).items[0].until, '');
+    assert.strictEqual(L.clean(list([item('parkrun', { until: '2027-01-02' })])).items[0].until, '');
+    const base = { date: '2027-08-14', plan_made: '2026-11-07' };
+    const a = list([item('go-to-edinburgh-fringe', { ...base, until: '2027-08-16', ticks: { book: { done: true, at: '2026-11-08T10:00:00.000Z' } }, updated_at: '2026-11-08T10:00:00.000Z' })]);
+    const b = list([item('go-to-edinburgh-fringe', { ...base, until: '2027-08-18', ticks: { kit: { done: true, at: '2026-11-08T11:00:00.000Z' } }, updated_at: '2026-11-08T11:00:00.000Z' })]);
+    const m = L.merge(a, b).items[0];
+    assert.strictEqual(m.until, '2027-08-18'); assert.deepStrictEqual(Object.keys(m.ticks).sort(), ['book', 'kit']);
+  });
 }
 console.log(n + ' tests passed');

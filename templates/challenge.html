@@ -80,9 +80,16 @@
           <label class="pl-choice"><input type="radio" name="pl-by" value="month" data-pl-by> Some time in a month</label>
         </div>
         <div class="pl-pick">
-          <label data-pl-datewrap><span class="sr-only">The day</span><input type="date" data-pl-date></label>
+          <label data-pl-datewrap><span class="sr-only" data-pl-daylbl>The day</span><span class="pl-dlbl" data-pl-firstlbl hidden>First day</span><input type="date" data-pl-date></label>
           <label data-pl-monthwrap hidden><span class="sr-only">The month</span><select data-pl-month></select></label>
         </div>
+        {% if c.kind != 'habit' %}<div class="pl-span" data-pl-spanwrap>
+          <label class="pl-choice"><input type="checkbox" data-pl-span> {{ pset.notes.span_q }}</label>
+          <div class="pl-pick" data-pl-spanpick hidden>
+            <label><span class="pl-dlbl">{{ pset.notes.span_last }}</span><input type="date" data-pl-until></label>
+            <p class="meta">{{ pset.notes.span_help }}</p>
+          </div>
+        </div>{% endif %}
       </fieldset>
       {% if c.plan.event %}{% set ev = c.plan.event %}{% set N = pset.notes %}
       <fieldset class="pl-level">

@@ -23,6 +23,22 @@
   const form = $('[data-pl-form]'), out = $('[data-pl-out]'), err = $('[data-pl-err]');
   const dateIn = $('[data-pl-date]'), monthSel = $('[data-pl-month]'), sug = $('[data-pl-suggest]');
   const radios = $$('[data-pl-by]'), levels = $$('[data-pl-level]');
+  // more than one day (Robin, 7 Nov 2026): a last day as well as the first; not offered for a habit (no box on the page)
+  const spanBox = $('[data-pl-span]'), untilIn = $('[data-pl-until]'), spanPick = $('[data-pl-spanpick]'), spanWrap = $('[data-pl-spanwrap]');
+  const spanOn = () => !!(spanBox && spanBox.checked && by() === 'date');
+  function setSpan(on, until) {
+    if (!spanBox) return;
+    spanBox.checked = !!on; spanPick.hidden = !on;
+    $('[data-pl-firstlbl]').hidden = !on; $('[data-pl-daylbl]').hidden = !!on;
+    if (until !== undefined) untilIn.value = until || '';
+    spanLimits();
+  }
+  function spanLimits() {
+    if (!untilIn) return;
+    const d = P.parse(dateIn.value); if (!d) { untilIn.removeAttribute('min'); untilIn.removeAttribute('max'); return; }
+    const plus = n => { const x = new Date(d.getTime() + n * 86400000); return x.toISOString().slice(0, 10); };
+    untilIn.min = plus(1); untilIn.max = plus(P.MAX_SPAN);
+  }
   const level = () => (levels.find(r => r.checked) || {}).value || 'active';
   const setLevel = v => { const lv = P.LEVELS.includes(v) ? v : 'active'; levels.forEach(r => { r.checked = r.value === lv; }); };
 
@@ -35,11 +51,14 @@
   function setBy(v) {
     radios.forEach(r => { r.checked = r.value === v; });
     $('[data-pl-datewrap]').hidden = v !== 'date'; $('[data-pl-monthwrap]').hidden = v !== 'month';
+    if (spanWrap) spanWrap.hidden = v !== 'date';
   }
+  if (spanBox) { spanBox.addEventListener('change', () => { setSpan(spanBox.checked); if (spanBox.checked) untilIn.focus(); }); dateIn.addEventListener('change', spanLimits); }
   radios.forEach(r => r.addEventListener('change', () => setBy(r.value)));
   function setWhen(w) {
     if (w.month) { if (![...monthSel.options].some(o => o.value === w.month)) { const o = document.createElement('option'); o.value = w.month; o.textContent = P.monthYear(w.month); monthSel.insertBefore(o, monthSel.firstChild); } monthSel.value = w.month; setBy('month'); }
     else { dateIn.value = w.date; setBy('date'); }
+    setSpan(!!w.until, w.until || '');
   }
   function suggestion() {
     const s = P.suggest(A, { today });
@@ -91,7 +110,7 @@
   /* ---------- where it is and getting there (Planner Plus day 8): with the day itself ---------- */
   function tripHtml(plan) {
     const T = S.trip; if (!T || !current) return '';
-    const r = P.trip(A, S, { place: current.place || '', when: plan.label });
+    const r = P.trip(A, S, Object.assign({ place: current.place || '', when: plan.label }, plan.until ? { from: P.longDate(plan.date), to: P.longDate(plan.until) } : {}));
     let h = '<div class="pl-trip" data-pl-trip><h5 class="pl-triph" tabindex="-1" data-pl-triph>' + esc(T.head) + '</h5>';
     if (r.needs || (current.editPlace && !r.sourced)) {
       return h + '<div class="pl-where-ask"><label class="pl-whereq" for="pl-where-in">' + esc(T.where_q) + '</label>'
@@ -145,7 +164,7 @@
       const links = st.links || [];
       if (links.some(l => l.aff) || (st.items || []).some(x => x.aff)) hasAff = true;
       html += '<li class="pl-step' + (st.strand === 'day' ? ' is-day' : '') + (gone && !st.done ? ' is-gone' : '') + (st.done ? ' is-done' : '') + '" data-strand="' + esc(st.strand) + '">'
-        + '<p class="pl-date"><time datetime="' + st.date + '">' + esc(dayText(st.date)) + '</time> <span class="pl-tag">' + esc(STRAND[st.strand] || st.strand) + '</span>'
+        + '<p class="pl-date"><time datetime="' + st.date + '">' + esc(st.until ? range(st.date, st.until) : dayText(st.date)) + '</time> <span class="pl-tag">' + esc(STRAND[st.strand] || st.strand) + '</span>'
         + (st.done ? ' <span class="pl-tag">Done</span>' : '') + (st.moved ? ' <span class="pl-tag my-tag-moved">Moved</span>' : '') + (gone && !st.done ? ' <span class="pl-tag pl-tag-gone">Gone by</span>' : '') + '</p>'
         + '<p class="pl-text">' + esc(st.text) + '</p>'
         + (st.detail ? '<p class="pl-detail">' + esc(st.detail) + '</p>' : '')
@@ -184,7 +203,7 @@
   function showSaved() {
     const it = L.get(id);
     if (!it || !(it.date || it.month) || !it.plan_made) return false;
-    const when = it.date ? { date: it.date } : { month: it.month };
+    const when = it.date ? (it.until ? { date: it.date, until: it.until } : { date: it.date }) : { month: it.month };
     setWhen(when); setLevel(it.level); sug.textContent = '';
     const plan = make(when, it.plan_made, it.level);
     if (plan.status === 'ok') plan.steps = P.applyMarks(plan, it, S);   // the reader's ticks and moves from My year
@@ -202,6 +221,10 @@
     e.preventDefault(); err.hidden = true;
     const when = by() === 'month' ? { month: monthSel.value } : { date: dateIn.value };
     if (when.date !== undefined && !P.parse(when.date)) { err.textContent = 'Choose a day, or pick "Some time in a month".'; err.hidden = false; dateIn.focus(); return; }
+    if (spanOn()) {
+      if (!P.okUntil(when.date, untilIn.value)) { err.textContent = N.span_err; err.hidden = false; untilIn.focus(); return; }
+      when.until = untilIn.value;
+    }
     const lv = A.event ? level() : '';
     const place = current ? current.place : ((L.get(id) || {}).where || '');   // a place already typed stays
     ready.then(() => { current = { when, level: lv, plan: make(when, today, lv), place }; draw(current.plan, false); focusHead(); });

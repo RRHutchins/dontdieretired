@@ -15,6 +15,7 @@
   const now = new Date(), today = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate()), thisMonth = today.slice(0, 7);
   const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], MON = P.MONTHS.map(m => m.slice(0, 3));
   const dayText = s => { const d = P.parse(s); return DAYS[d.getUTCDay()] + ' ' + d.getUTCDate() + ' ' + MON[d.getUTCMonth()]; };
+  const daysText = s => (s.until ? dayText(s.date) + ' to ' + dayText(s.until) : dayText(s.date));   // a stay of more than one day
   const STRAND = { book: 'Book', learn: 'Get ready', train: 'Train', travel: 'Getting there', kit: 'Kit', safety: 'Stay safe', day: 'The day', after: 'Afterwards' };
   const AFF_REL = 'sponsored nofollow noopener', affUrl = (u, k) => (window.DDR && DDR.affUrl ? DDR.affUrl(u, k) : u);
   const addMonths = (m, n) => { const y = +m.slice(0, 4), mo = +m.slice(5, 7) - 1 + n; return (y + Math.floor(mo / 12)) + '-' + pad(((mo % 12) + 12) % 12 + 1); };
@@ -52,6 +53,7 @@
   }
   function drawYear() {
     const clashDays = new Set(all.clashes.filter(c => c.kind === 'day').map(c => c.date));
+    const overlaps = new Set([].concat(...all.clashes.filter(c => c.kind === 'span').map(c => c.ids)));
     $('[data-my-grid]').innerHTML = months().map(m => {
       const days = all.steps.filter(s => s.id === 'day' && s.date.slice(0, 7) === m);
       const inM = all.steps.filter(s => s.id !== 'day' && s.date.slice(0, 7) === m);
@@ -59,8 +61,8 @@
       const open = prep.filter(s => !s.done && s.date >= today).length, sopen = ses.filter(s => !s.done && s.date >= today).length;
       const things = days.map(s => {
         const p = planOf(s.pid);
-        return '<li class="my-thing' + (p.status === 'done' ? ' is-done' : '') + '"><span class="my-when">' + (s.by_month ? 'Some time this month' : '<time datetime="' + s.date + '">' + esc(dayText(s.date)) + '</time>') + '</span> '
-          + '<a href="' + link(p) + '">' + esc(p.title) + '</a>' + (p.status === 'done' ? ' <span class="pl-tag">Done</span>' : '') + (clashDays.has(s.date) && !s.by_month ? ' <span class="pl-tag my-tag-clash">Same day</span>' : '') + '</li>';
+        return '<li class="my-thing' + (p.status === 'done' ? ' is-done' : '') + '"><span class="my-when">' + (s.by_month ? 'Some time this month' : '<time datetime="' + s.date + '">' + esc(daysText(s)) + '</time>') + '</span> '
+          + '<a href="' + link(p) + '">' + esc(p.title) + '</a>' + (p.status === 'done' ? ' <span class="pl-tag">Done</span>' : '') + (clashDays.has(s.date) && !s.by_month ? ' <span class="pl-tag my-tag-clash">Same day</span>' : overlaps.has(s.pid) && !s.by_month ? ' <span class="pl-tag my-tag-clash">Overlaps</span>' : '') + '</li>';
       }).join('');
       const label = P.monthYear(m);
       return '<li class="my-card' + (days.length ? ' has-day' : '') + '"><h3 class="h4">' + esc(label) + '</h3>'
@@ -80,7 +82,7 @@
   /* Where it is and getting there (Planner Plus day 8): opens from the day; the place is changed on the activity's plan page */
   function tripHtml(p, s) {
     const T = S.trip, a = p.cid ? byId[p.cid] : null; if (!T || !a) return '';
-    const it = all.items[p.id] || {}, r = P.trip(a, S, { place: it.where || '', when: p.plan.label });
+    const it = all.items[p.id] || {}, r = P.trip(a, S, Object.assign({ place: it.where || '', when: p.plan.label }, p.plan.until ? { from: P.longDate(p.plan.date), to: P.longDate(p.plan.until) } : {}));
     let h = '<details class="pl-trip my-trip"><summary>' + esc(T.head) + '</summary>';
     if (r.needs) return h + '<p class="meta"><a href="' + link(p) + '">' + esc(T.my_needs) + '</a></p></details>';
     h += '<p class="pl-where"><strong>' + esc(T.where_label) + ':</strong> ' + esc(r.label) + '</p>' + (r.note ? '<p class="pl-detail">' + esc(r.note) + '</p>' : '');
@@ -90,7 +92,7 @@
   function stepHtml(s, n) {
     const p = planOf(s.pid), gone = s.date < today && !s.done, uid = 'my-s' + n;
     if (s.bare) {
-      return '<li class="pl-step is-day" data-strand="day"><p class="pl-date"><time datetime="' + s.date + '">' + esc(s.by_month ? 'Some time this month' : dayText(s.date)) + '</time> <span class="pl-tag">The day</span>' + (p.status === 'done' ? ' <span class="pl-tag">Done</span>' : '') + '</p>'
+      return '<li class="pl-step is-day" data-strand="day"><p class="pl-date"><time datetime="' + s.date + '">' + esc(s.by_month ? 'Some time this month' : daysText(s)) + '</time> <span class="pl-tag">The day</span>' + (p.status === 'done' ? ' <span class="pl-tag">Done</span>' : '') + '</p>'
         + '<p class="pl-text">' + esc(s.text) + '</p>'
         + '<p class="pl-why">' + (p.cid ? 'No get-ready plan saved for this yet. <a href="' + link(p) + '">Plan this</a>' : 'One of your own, so there is no get-ready plan for it. <a href="/list/#mine">Change it on your list</a>') + '</p></li>';
     }
@@ -99,7 +101,7 @@
     const after = (s.moved ? s.moved.from : s.date) > p.plan.date;
     const links = s.links || [], items = s.items || [];
     return '<li class="pl-step' + (s.strand === 'day' ? ' is-day' : '') + (gone ? ' is-gone' : '') + (s.done ? ' is-done' : '') + '" data-strand="' + esc(s.strand) + '" data-pid="' + esc(s.pid) + '" data-sid="' + esc(s.id) + '">'
-      + '<p class="pl-date"><time datetime="' + s.date + '">' + esc(s.by_month && s.strand === 'day' ? 'Some time this month' : dayText(s.date)) + '</time> <span class="pl-tag">' + esc(STRAND[s.strand] || s.strand) + '</span>'
+      + '<p class="pl-date"><time datetime="' + s.date + '">' + esc(s.by_month && s.strand === 'day' ? 'Some time this month' : s.strand === 'day' ? daysText(s) : dayText(s.date)) + '</time> <span class="pl-tag">' + esc(STRAND[s.strand] || s.strand) + '</span>'
       + (s.moved ? ' <span class="pl-tag my-tag-moved">Moved</span>' : '') + (gone ? ' <span class="pl-tag pl-tag-gone">Gone by</span>' : '') + '</p>'
       + (s.strand === 'day' ? '<p class="pl-text"><a href="' + link(p) + '">' + esc(s.text) + '</a></p>' : '<p class="my-for"><a href="' + link(p) + '">' + esc(p.title) + '</a></p><p class="pl-text">' + esc(s.text) + '</p>')
       + (s.detail ? '<p class="pl-detail">' + esc(s.detail) + '</p>' : '')

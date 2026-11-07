@@ -5,7 +5,7 @@
 
    Stored shape, version 1:
    { version: 1, title, target, settings_updated_at,
-     items: [ { id, cid, title, status, date, month, plan_made, level, ticks, moves, where, note, pos, added_at, updated_at, deleted } ] }
+     items: [ { id, cid, title, status, date, until, month, plan_made, level, ticks, moves, where, note, pos, added_at, updated_at, deleted } ] }
    - id: for a catalogue challenge it IS the challenge id (so two devices adding the same challenge
      merge into one); for a reader's own challenge it is "x-" + random.
    - cid: the catalogue id, or null for the reader's own. title is kept only for the reader's own.
@@ -26,7 +26,10 @@
    - Where (Planner Plus day 8, 8 Nov 2026; additive, still version 1): `where` is the town, venue or postcode the reader
      typed for an activity with no place of its own (up to 120 characters, control characters and < > removed). It belongs
      to the item, not to one plan, so changing the date keeps it; removing the plan clears it. Newest wins in a merge,
-     like the rest of the item. */
+     like the rest of the item.
+   - More than one day (Robin, 7 Nov 2026; additive, still version 1): `until` (YYYY-MM-DD) is the last day of a stay that
+     starts on `date`: after it, and no more than MAX_SPAN (30) days later; never with a month. It is not part of the
+     plan's identity (the get-ready steps hang off the first day), so it does not clear ticks in a merge. */
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api; else root.DDRList = api;
@@ -51,6 +54,8 @@
     return out;
   }
   const cleanPlace = t => (typeof t === 'string' ? t : '').replace(/[\u0000-\u001f\u007f<>]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120);
+  const MAX_SPAN = 30;
+  const spanOk = (date, until) => { if (!DAY.test(date || '') || !DAY.test(until || '')) return false; const n = Math.round((Date.parse(until + 'T00:00:00Z') - Date.parse(date + 'T00:00:00Z')) / 86400000); return n >= 1 && n <= MAX_SPAN; };
   const planKey = it => (it.date || '') + '|' + (it.month || '') + '|' + (it.plan_made || '') + '|' + (it.level || '');
 
   // Make anything (old data, a backup file, a hand-edited file) into a well-formed list. Never throws.
@@ -77,6 +82,7 @@
       o.ticks = o.plan_made ? cleanMarks(it.ticks, 'done') : {};
       o.moves = o.plan_made ? cleanMarks(it.moves, 'date') : {};
       o.where = cleanPlace(it.where);
+      o.until = o.date && spanOk(o.date, it.until) ? it.until : '';
     });
     return out;
   }
@@ -120,7 +126,7 @@
     const id = cid || 'x-' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
     const cur = find(d, id), pos = d.items.reduce((m, it) => Math.max(m, it.pos), -1) + 1;
     if (cur) Object.assign(cur, { deleted: false, status: cur.deleted ? 'want' : cur.status, updated_at: t, pos: cur.deleted ? pos : cur.pos });
-    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', month: '', plan_made: '', level: '', ticks: {}, moves: {}, where: '', note: '', pos, added_at: t, updated_at: t, deleted: false });
+    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', until: '', month: '', plan_made: '', level: '', ticks: {}, moves: {}, where: '', note: '', pos, added_at: t, updated_at: t, deleted: false });
     save(d); return d;
   }
   function update(id, changes) {
@@ -128,6 +134,7 @@
     const key = planKey(it);
     ['status', 'date', 'note', 'title'].forEach(k => { if (k in changes) it[k] = changes[k]; });
     if (changes.date) it.month = '';   // a day chosen on the list replaces a month
+    if (!spanOk(it.date, it.until)) it.until = '';   // a last day must still follow the first
     if (planKey(it) !== key) { it.ticks = {}; it.moves = {}; }   // a new date is a new plan: old ticks and moves do not carry over
     it.updated_at = now(); save(d); return load();
   }
@@ -140,11 +147,12 @@
     if (when && (DAY.test(when.date || '') || MONTH.test(when.month || ''))) {
       it.date = when.date && DAY.test(when.date) ? when.date : '';
       it.month = it.date ? '' : when.month;
+      it.until = it.date && spanOk(it.date, when.until) ? when.until : '';
       it.plan_made = DAY.test(today || '') ? today : now().slice(0, 10);
       it.level = LEVELS.includes(when.level) ? when.level : '';
       if (it.status === 'want') it.status = 'planned';
     } else {
-      it.date = ''; it.month = ''; it.plan_made = ''; it.level = ''; it.where = '';
+      it.date = ''; it.until = ''; it.month = ''; it.plan_made = ''; it.level = ''; it.where = '';
       if (it.status === 'planned') it.status = 'want';
     }
     it.updated_at = now(); save(d); return load();
@@ -181,5 +189,5 @@
   const flag = (name, value) => { try { if (value === undefined) return localStorage.getItem(KEY + '_' + name); localStorage.setItem(KEY + '_' + name, value); } catch (e) {} return null; };
   const has = id => { const it = find(load(), id); return !!(it && !it.deleted); };
 
-  return { KEY, VERSION, STATUSES, LEVELS, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get, tick, shift, where, cleanPlace };
+  return { KEY, VERSION, STATUSES, LEVELS, MAX_SPAN, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get, tick, shift, where, cleanPlace };
 });

@@ -29,6 +29,16 @@
   const diffDays = (a, b) => Math.round((b.getTime() - a.getTime()) / 86400000);   // b - a
   const longDate = d => d.getUTCDate() + ' ' + MONTHS[d.getUTCMonth()] + ' ' + d.getUTCFullYear();
   const monthYear = d => MONTHS[d.getUTCMonth()] + ' ' + d.getUTCFullYear();
+  /* More than one day (Robin, 7 Nov 2026): a plan on a day may also have a last day, `until`, up to MAX_SPAN days later.
+     Everything gets ready by the first day; the stay is one block. "14 to 18 August 2027", "30 July to 2 August 2027". */
+  const MAX_SPAN = 30;
+  function spanLabel(a, b) {
+    if (a.getUTCFullYear() !== b.getUTCFullYear()) return longDate(a) + ' to ' + longDate(b);
+    if (a.getUTCMonth() !== b.getUTCMonth()) return a.getUTCDate() + ' ' + MONTHS[a.getUTCMonth()] + ' to ' + longDate(b);
+    return a.getUTCDate() + ' to ' + longDate(b);
+  }
+  // the last day, if it is a real date after the first and no more than MAX_SPAN days on; else ''
+  const okUntil = (date, until) => { const a = parse(date), b = parse(until); if (!a || !b) return ''; const n = diffDays(a, b); return n >= 1 && n <= MAX_SPAN ? until : ''; };
   function todayUTC(today) {
     if (today) return typeof today === 'string' ? parse(today) : new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
     const n = new Date(); return new Date(Date.UTC(n.getFullYear(), n.getMonth(), n.getDate()));   // the reader's own calendar day
@@ -85,7 +95,7 @@
      (opts.place); with neither, `needs` is true and the page asks. Every link is one of content/planner.yaml → trip.links,
      a search the reader runs themselves; the place goes into it URL-encoded and nothing else does (no home address:
      the map asks for, or uses, the reader's own starting point).
-     trip(activity, settings, { place, when }) → { needs, label, sourced, note, source, where: [links], getting: [links], help } */
+     trip(activity, settings, { place, when, from, to }) (from/to: a stay's first and last days, in words) → { needs, label, sourced, note, source, where: [links], getting: [links], help } */
   const cleanPlace = t => String(t == null ? '' : t).replace(/[\u0000-\u001f\u007f<>]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120);
   function trip(a, settings, opts) {
     opts = opts || {};
@@ -104,7 +114,7 @@
       const link = { id: l.id, label: l.label, url: l.url.replace('{q}', encodeURIComponent(q)), why: l.why, region: 'any', aff: null };
       (l.section === 'where' ? out.where : out.getting).push(link);
     });
-    out.help = fill(T.getting_help, { when: opts.when || T.when_none });
+    out.help = opts.from && opts.to && T.getting_help_span ? fill(T.getting_help_span, { from: opts.from, to: opts.to }) : fill(T.getting_help, { when: opts.when || T.when_none });
     return out;
   }
 
@@ -115,8 +125,9 @@
     if (opts.month) { const m = /^(\d{4})-(\d{2})$/.exec(opts.month); anchor = m && parse(m[1] + '-' + m[2] + '-01'); byMonth = !!anchor; }
     else anchor = parse(opts.date);
     if (!anchor) throw new Error('planner: give a date (YYYY-MM-DD) or a month (YYYY-MM)');
-    const plan = { version: VERSION, activity: a.id, title: a.title, kind: a.kind, date: iso(anchor), by_month: byMonth,
-      label: byMonth ? monthYear(anchor) : longDate(anchor), made: iso(today), lead_weeks: a.lead_weeks,
+    const until = byMonth || a.kind === 'habit' ? '' : okUntil(iso(anchor), opts.until);
+    const plan = { version: VERSION, activity: a.id, title: a.title, kind: a.kind, date: iso(anchor), until, by_month: byMonth,
+      label: byMonth ? monthYear(anchor) : until ? spanLabel(anchor, parse(until)) : longDate(anchor), made: iso(today), lead_weeks: a.lead_weeks,
       status: 'ok', notes: [], safety: a.safety || '', steps: [] };
     const label = plan.label;
     // a month that has already begun counts as now, not as gone
@@ -175,7 +186,7 @@
     const lastOnDay = a.time === 'afternoon' || a.kind === 'habit';
     const lastAfter = !lastOnDay && (a.kind === 'skill' || a.kind === 'project');
     const startStrand = t => (strands.has('book') && BOOKISH.test(t) ? 'book' : 'learn');
-    let dayDetail = '';
+    let dayDetail = '', travelOwn = false;
     const trainNotes = [];
     st.forEach((t, i) => {
       if (a.event && i > 0 && TRAINING.test(t)) { trainNotes.push(t); return; }   // kept, with the engine's training step
@@ -183,7 +194,9 @@
       const name = a.start_at ? a.start_at[i] : i === 0 ? 'first' : i === 1 ? 'second' : last && lastOnDay ? 'day' : last && lastAfter ? 'after_start' : 'ongoing';
       if (name === 'day') { dayDetail = dayDetail ? dayDetail + ' ' + t : t; return; }
       // 'travel': shown with getting there (e.g. "reserve your train and somewhere to stay"), at the same point in the run-up
-      add('start-' + i, name === 'travel' ? 'travel' : startStrand(t), S[name].at, i > 0, { text: t, why: S[name].why, links: i === 0 ? links(a.links) : [] });
+      // it then stands in for the general "Sort out getting there" step, so the plan does not say the same thing twice
+      if (name === 'travel') travelOwn = true;
+      add('start-' + i, name === 'travel' ? 'travel' : startStrand(t), S[name].at, i > 0, Object.assign({ text: t, why: S[name].why, links: i === 0 ? links(a.links) : [] }, name === 'travel' && settings.trip ? { detail: settings.trip.step_detail } : {}));
     });
     // 2. Fixed yearly dates (dates.yaml)
     if (a.dates) add('dates', 'book', S.dates.at, false, { text: S.dates.text, detail: a.dates.note, why: S.dates.why, links: [{ label: a.dates.source.label, url: a.dates.source.url, region: 'any', why: '', aff: null }] });
@@ -223,7 +236,7 @@
       }
     }
     // 5. Getting there, only for something tied to a place
-    if (strands.has('travel') && a.place_tied) add('travel', 'travel', S.travel.at, true, { text: S.travel.text, detail: settings.trip ? settings.trip.step_detail : '', why: S.travel.why, links: [] });
+    if (strands.has('travel') && a.place_tied && !travelOwn) add('travel', 'travel', S.travel.at, true, { text: S.travel.text, detail: settings.trip ? settings.trip.step_detail : '', why: S.travel.why, links: [] });
     // 6. Kit the activity lists: after the first session for a course, two weeks before anything else
     if (a.kit && a.kit.length) {
       const k = a.kind === 'skill' ? S.kit_after : S.kit_before;
@@ -234,8 +247,8 @@
     const SF = byMonth && S.safety_month ? S.safety_month : S.safety;
     if (a.safety) add('safety', 'safety', SF.at, false, { text: SF.text, detail: a.safety, why: SF.why, links: [] });
     // 8. The day (or the month)
-    const D = byMonth ? S.day_month : S.day;
-    steps.push({ id: 'day', strand: 'day', date: iso(anchor), flexible: false, text: fill(D.text, vars), detail: dayDetail, why: fill(D.why, vars), links: [] });
+    const D = byMonth ? S.day_month : until && S.day_span ? S.day_span : S.day;
+    steps.push(Object.assign({ id: 'day', strand: 'day', date: iso(anchor), flexible: false, text: fill(D.text, vars), detail: dayDetail, why: fill(D.why, vars), links: [] }, until ? { until } : {}));
     // 9. After: a look back for a habit, a check a month into a longer project
     if (a.kind === 'habit') add('look-back', 'after', S.look_back.at, true, { text: S.look_back.text, why: S.look_back.why, links: [] });
     if (a.kind === 'project' && !a.event && (a.time === 'months' || a.time === 'year')) add('take-stock', 'after', S.take_stock.at, true, { text: S.take_stock.text, why: S.take_stock.why, links: [] });
@@ -254,16 +267,16 @@
      cannot move (not flexible, or already gone by). */
   function window_(plan, st, today) {
     if (!st.flexible || st.date < today) return null;
-    const day = plan.date;
+    const day = plan.date, end = plan.until || day;
     if (st.date < day) { const min = plan.made > today ? plan.made : today, max = iso(addDays(parse(day), -1)); return min <= max ? { min, max } : null; }
-    if (st.date > day) { const min = iso(addDays(parse(day), 1)); return { min: min > today ? min : today, max: iso(addDays(parse(day), 90)) }; }
+    if (st.date > day) { const min = iso(addDays(parse(end), 1)); return { min: min > today ? min : today, max: iso(addDays(parse(end), 90)) }; }
     return null;
   }
   // Where a stored move may land, whatever today is: inside the plan's own run-up, or within 90 days after the day.
   function allowed(plan, st, to) {
     if (!st.flexible || !parse(to)) return false;
     if (st.date < plan.date) return to >= plan.made && to < plan.date;
-    if (st.date > plan.date) return to > plan.date && to <= iso(addDays(parse(plan.date), 90));
+    if (st.date > plan.date) { const end = plan.until || plan.date; return to > end && to <= iso(addDays(parse(end), 90)); }
     return false;
   }
   // The reader's own marks on one saved plan (ticks and moves, from static/list-store.js). Returns new steps, sorted.
@@ -302,15 +315,18 @@
     (entries || []).forEach(e => {
       const it = e.item || {};
       if (!it.date && !it.month) return;
-      const p = { id: e.id, title: e.title, cid: e.activity ? e.activity.id : null, date: it.date || '', month: it.month || '', status: it.status || 'planned',
-        label: it.date ? longDate(parse(it.date)) : monthYear(parse(it.month + '-01')), plan: null };
+      const until = it.date ? okUntil(it.date, it.until) : '';
+      const p = { id: e.id, title: e.title, cid: e.activity ? e.activity.id : null, date: it.date || '', until, month: it.month || '', status: it.status || 'planned',
+        label: it.date ? (until ? spanLabel(parse(it.date), parse(until)) : longDate(parse(it.date))) : monthYear(parse(it.month + '-01')), plan: null };
       if (e.activity && it.plan_made) {
-        const b = build(e.activity, settings, Object.assign({ today: it.plan_made, level: it.level }, it.date ? { date: it.date } : { month: it.month }));
+        const b = build(e.activity, settings, Object.assign({ today: it.plan_made, level: it.level }, it.date ? { date: it.date, until } : { month: it.month }));
+        if (b.status === 'ok' && !b.until) p.until = '';   // e.g. a habit: no stay
+        if (b.status === 'ok') p.label = b.label;
         p.plan = b;
         if (b.status === 'ok') applyMarks(b, it, settings, { today }).forEach(st => steps.push(Object.assign(st, { pid: e.id, ptitle: e.title, by_month: b.by_month })));
       } else {
         // a date or month on the list with no saved plan: shown as the day only
-        steps.push({ id: 'day', strand: 'day', date: it.date || it.month + '-01', flexible: false, text: e.title, why: '', links: [], done: false, pid: e.id, ptitle: e.title, by_month: !it.date, bare: true });
+        steps.push(Object.assign({ id: 'day', strand: 'day', date: it.date || it.month + '-01', flexible: false, text: e.title, why: '', links: [], done: false, pid: e.id, ptitle: e.title, by_month: !it.date, bare: true }, until ? { until } : {}));
       }
       plans.push(p);
     });
@@ -319,9 +335,17 @@
     const titles = ps => { const t = ps.map(p => p.title); return t.length < 3 ? t.join(' and ') : t.slice(0, -1).join(', ') + ' and ' + t[t.length - 1]; };
 
     // Clash: two (or more) things on the same day
-    const byDay = {};
-    live.filter(p => p.date && p.date >= today).forEach(p => { (byDay[p.date] = byDay[p.date] || []).push(p); });
+    const byDay = {}, endOf = p => p.until || p.date;
+    live.filter(p => p.date && !p.until && p.date >= today).forEach(p => { (byDay[p.date] = byDay[p.date] || []).push(p); });
     Object.keys(byDay).sort().forEach(d => { const ps = byDay[d]; if (ps.length > 1) clashes.push({ kind: 'day', date: d, ids: ps.map(p => p.id), text: fill(N.clash_day, { titles: titles(ps), date: longDate(parse(d)) }) }); });
+    // Clash: a stay of more than one day that overlaps another of the reader's days or stays
+    const dated = live.filter(p => p.date && endOf(p) >= today);
+    for (let i = 0; i < dated.length; i++) for (let j = i + 1; j < dated.length; j++) {
+      const a = dated[i], b = dated[j];
+      if (!a.until && !b.until) continue;
+      const from = a.date > b.date ? a.date : b.date, to = endOf(a) < endOf(b) ? endOf(a) : endOf(b);
+      if (from <= to) clashes.push({ kind: 'span', date: from, from, to, ids: [a.id, b.id], text: fill(N.clash_span, { a: a.title, b: b.title, adates: a.label, bdates: b.label }) });
+    }
     // Clash: two training plans at once (the engine builds each one on its own)
     const trains = live.filter(p => p.plan && p.plan.status === 'ok').map(p => ({ p, st: steps.find(s => s.pid === p.id && s.strand === 'train') })).filter(x => x.st);
     for (let i = 0; i < trains.length; i++) for (let j = i + 1; j < trains.length; j++) {
@@ -331,8 +355,8 @@
     }
 
     // Moving flexible steps
-    const dayOf = {};   // date → titles of the reader's things on that day (date plans only)
-    live.filter(p => p.date).forEach(p => { (dayOf[p.date] = dayOf[p.date] || []).push(p); });
+    const dayOf = {};   // date → the reader's things on that day (date plans only; every day of a stay)
+    live.filter(p => p.date).forEach(p => { for (let d = p.date; d <= endOf(p); d = iso(addDays(parse(d), 1))) (dayOf[d] = dayOf[d] || []).push(p); });
     const count = {}, pidsOn = {};
     steps.forEach(s => { count[s.date] = (count[s.date] || 0) + 1; (pidsOn[s.date] = pidsOn[s.date] || new Set()).add(s.pid); });
     const planOf = id => plans.find(p => p.id === id);
@@ -400,7 +424,7 @@
         if (st.why && !st.bare) body.push(fill(st.week ? N.cal_why_train : N.cal_why, { why: st.why }));
         if (st.moved) body.push(st.moved.why);
         body.push(fill(N.cal_plan, { url: page }));
-        const end = iso(addDays(parse(st.date), 1));
+        const end = iso(addDays(parse(isDay && st.until ? st.until : st.date), 1));   // a stay is one block
         L.push('BEGIN:VEVENT', 'UID:ddr-' + uidPart(g.cid || g.id) + '-' + uidPart(st.id) + '@dontdieretired.com', 'DTSTAMP:' + stamp,
           'DTSTART;VALUE=DATE:' + icsDate(st.date), 'DTEND;VALUE=DATE:' + icsDate(end),
           'SUMMARY:' + icsText(summary), 'DESCRIPTION:' + icsText(body.join('\n\n')), 'URL:' + page,
@@ -412,5 +436,5 @@
     return { text: L.map(fold).join('\r\n') + '\r\n', count };
   }
 
-  return { VERSION, LEVELS, build, suggest, trip, cleanPlace, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  return { VERSION, LEVELS, MAX_SPAN, okUntil, build, suggest, trip, cleanPlace, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

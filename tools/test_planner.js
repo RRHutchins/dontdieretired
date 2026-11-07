@@ -420,7 +420,10 @@ t('checkpoint fixes: Fringe travel step in the run-up; beekeeping in season; mon
   const s2 = f.steps.find(s => s.id === 'start-2');
   assert.ok(s2 && s2.strand === 'travel' && s2.date < f.date);
   assert.ok(!(f.steps.find(s => s.id === 'day').detail || '').includes('Reserve your train'));
-  assert.ok(f.steps.find(s => s.id === 'travel').detail === data.trip.step_detail);
+  assert.ok(!f.steps.some(s => s.id === 'travel'), 'the Fringe\'s own travel step stands in for the general one');
+  assert.strictEqual(s2.detail, data.trip.step_detail);
+  const gn = P.build(byId['run-great-north-run'], data, { date: '2027-09-12', today: TODAY });
+  if (byId['run-great-north-run'].place_tied) assert.ok(gn.steps.find(s => s.id === 'travel').detail === data.trip.step_detail);
   const b = P.build(byId['take-up-beekeeping'], data, { month: '2027-03', today: TODAY });
   const hb = b.steps.find(s => s.id === 'start-1'), fs = b.steps.find(s => s.id === 'start-2');
   assert.ok(hb.date >= '2027-03-01' && fs.date > hb.date, JSON.stringify([hb.date, fs.date]));
@@ -429,5 +432,38 @@ t('checkpoint fixes: Fringe travel step in the run-up; beekeeping in season; mon
   const day = P.build(byId['go-to-edinburgh-fringe'], data, { date: '2027-08-14', today: TODAY }).steps.find(s => s.id === 'safety');
   if (day) assert.strictEqual(day.text, data.steps.safety.text);
   assert.ok(!/training plan/.test(data.kinds.event.why) && /training plan/.test(data.kinds.event.why_train));
+});
+
+/* More than one day (Robin, 7 Nov 2026) */
+t('a stay: ready by the first day, one day step carrying the last day, the label reads as a range; bad last days are ignored', () => {
+  const a = byId['go-to-edinburgh-fringe'];
+  const one = P.build(a, data, { date: '2027-08-14', today: TODAY }), p = P.build(a, data, { date: '2027-08-14', until: '2027-08-18', today: TODAY });
+  assert.strictEqual(p.label, '14 to 18 August 2027'); assert.strictEqual(p.until, '2027-08-18');
+  assert.deepStrictEqual(p.steps.filter(s => s.strand !== 'day').map(s => [s.id, s.date]), one.steps.filter(s => s.strand !== 'day').map(s => [s.id, s.date]));
+  const d = p.steps.find(s => s.id === 'day'); assert.strictEqual(d.date, '2027-08-14'); assert.strictEqual(d.until, '2027-08-18');
+  assert.strictEqual(d.why, data.steps.day_span.why.replace('{date}', p.label));
+  assert.strictEqual(P.build(a, data, { date: '2027-07-30', until: '2027-08-02', today: TODAY }).label, '30 July to 2 August 2027');
+  assert.strictEqual(P.build(a, data, { date: '2027-12-30', until: '2028-01-02', today: TODAY }).label, '30 December 2027 to 2 January 2028');
+  for (const bad of ['2027-08-14', '2027-08-10', '2027-09-14', 'x', undefined]) assert.strictEqual(P.build(a, data, { date: '2027-08-14', until: bad, today: TODAY }).until, '');
+  assert.strictEqual(P.build(a, data, { month: '2027-08', until: '2027-08-18', today: TODAY }).until, '');
+  const tr = P.trip(a, data, { place: 'Edinburgh', when: p.label, from: '14 August 2027', to: '18 August 2027' });
+  assert.ok(tr.help.includes('14 August 2027 to travel there') && tr.help.includes('18 August 2027 to come back'));
+  const habit = acts.find(x => x.kind === 'habit'); assert.strictEqual(P.build(habit, data, { date: '2027-03-01', until: '2027-03-05', today: TODAY }).until, '');
+});
+t('a stay in My year: one calendar block, overlaps flagged, flexible steps kept off every day of it', () => {
+  const f = byId['go-to-edinburgh-fringe'], g = byId['visit-an-open-garden'];
+  const ent = [
+    { id: f.id, title: f.title, activity: f, item: { date: '2027-08-14', until: '2027-08-18', plan_made: TODAY, status: 'planned' } },
+    { id: g.id, title: g.title, activity: g, item: { date: '2027-08-16', plan_made: TODAY, status: 'planned' } },
+  ];
+  const c = P.combine(ent, data, { today: TODAY });
+  const sp = c.clashes.filter(x => x.kind === 'span'); assert.strictEqual(sp.length, 1);
+  assert.ok(sp[0].text.includes('14 to 18 August 2027') && sp[0].text.includes(g.title));
+  assert.ok(!c.steps.some(s => s.flexible && s.pid === g.id && s.date >= '2027-08-14' && s.date <= '2027-08-18' && s.strand !== 'day'));
+  const fp = c.plans.find(p => p.id === f.id);
+  const ev = events(P.ics([{ id: f.id, cid: f.id, title: f.title, by_month: false, label: fp.label, steps: c.steps.filter(s => s.pid === f.id) }], data, { today: TODAY, stamp: STAMP }).text);
+  const day = ev.find(e => e.UID.endsWith('-day@dontdieretired.com'));
+  assert.strictEqual(day.DTSTART, '20270814'); assert.strictEqual(day.DTEND, '20270819');
+  const w = P.window(fp.plan, { flexible: true, date: '2027-08-20' }, TODAY); assert.strictEqual(w.min, '2027-08-19');
 });
 console.log(n + ' tests passed');

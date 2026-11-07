@@ -1091,3 +1091,7 @@ h1{line-height:1.04}
 .my-trip summary{cursor:pointer;font-weight:600;color:var(--travel);min-height:44px;display:flex;align-items:center}
 .my-trip[open] summary{margin-bottom:4px}
 .pl-trip .pl-links li{line-height:1.45;margin:4px 0 8px}.pl-trip .pl-links a{display:inline-block;padding:10px 0 2px}.pl-trip .pl-lwhy{display:block}
+/* More than one day (Robin, 7 Nov 2026) */
+.pl-span{margin:6px 0 0}
+.pl-dlbl{display:block;font-weight:600;margin:6px 0 2px}
+.pl-span .pl-pick{margin:0 0 4px}
