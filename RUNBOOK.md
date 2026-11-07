@@ -325,7 +325,7 @@ Every training plan the site publishes or sells is generated from `engine/` (see
 
 ### 6s. My year: the planner (Robin, 28 Oct 2026; build started 1 Nov 2026)
 Robin's idea: a reader picks things to do this year, gives each a date or a season, and the planner builds a get-ready plan backwards from that date, with a step and the reason for it, on one timeline that drops into their own calendar and the app's Today screen. In his words it is "an enabler for enjoying life", **not a fitness site, but not moved away from fitness either**: a typical month holds one fitness goal and many other things (a course, a day out, a festival, a weekly habit). Language: "get ready" and "things to look forward to", not "train" and "challenges", except for a physical event's training plan. The plan document is `DDR-My-Year-Planner-Plan.docx` (sent to Robin 28 Oct 2026).
-- **Free first, Plus later.** The free planner (no account, stored in the browser through `static/list-store.js`, like the list) is built now. Planner Plus (synced account, reminders, re-planning, a live calendar feed) is sold only once it exists (house rule; see §6q on the removed membership). Nothing free may be locked later.
+- **Planner Plus, paid only (Robin, 7 Nov 2026; replaces "free first, Plus later").** The planner is a paid product, **Planner Plus**: £2 a month or £20 a year (prices include any VAT due), plus a £20 one-year gift for Christmas. There is no free planner. Non-members see one full worked **sample plan** (and what Plus does), never a plan for themselves. See §6t for the scope, the build and the rules. Robin's words: the planner is "absolutely to help the customer make the most of the year. It is not a training guide, but training guides are part of it." The earlier rule "nothing free may be locked later" is withdrawn for the planner only, because it was never launched or promoted; it still holds for the list, stories, guides and everything else free on the site.
 - **Where the settings live.** `content/planner.yaml`: one plan shape per `kind` (label, default `lead_weeks`, the strands in order: book, learn, train, travel, kit, and why), and `seasons`, our reading of every `season` phrase in `content/challenges.yaml` as best months. `content/dates.yaml`: things that happen at the same time every year (months, an optional `next` date with its source, the page it came from, re-checked yearly). `tools/planner.py` checks both and every activity at each build and writes `dist/planner/activities.json` (what the planner pages read); `python3 tools/planner.py` prints a summary.
 - **Planning fields on an activity (all optional):** `when: [months]` (overrides the season reading; `[]` = any time), `lead_weeks` (overrides the kind's default; never below an engine event's minimum), `plan_event` (an `engine/events` id, only when the event's own `activity:` does not already point here). The build refuses a malformed one.
 - **When writing or editing activities (including the scheduled build-out):** if you give an activity a `season` phrase that is not yet in `content/planner.yaml` → `seasons`, add it there in the same commit with its best months (the build prints a LIST WARNING until you do). Put anything with a fixed yearly date in `content/dates.yaml` from its official page.
@@ -365,6 +365,7 @@ Robin's idea: a reader picks things to do this year, gives each a date or a seas
   - **Tests:** `node tools/test_planner.js` 30 (new: every engine activity, every level, every length from the minimum to `full`, the date on each day of the week: sessions inside their week, key session on the reader's weekday, none on a rest day, none on or after the day, every word one of the engine's strings; levels and "choose more weeks"; month and offline; My year at a saved level and the calendar). `node tools/test_list_merge.js` 40 (level stored, cleaned, part of the plan in a merge; 100 ticks kept).
   - **Words added** to `content/planner.yaml` → notes: `level_*`, `train_month`, `train_offline`, `train_week`, `train_about`, `train_level_long`, `train_level_short`, `cal_why_train` (checked by `tools/planner.py`).
   - **For the day 7 checkpoint:** the engine's event week says "two short, easy outings early in the week" but its table has one (Tuesday, 20 minutes; Thursday rest); it is the engine's own wording and is shown as is: worth fixing in the engine (§6r) on a build-out run. A Sunday event puts strength on the Monday before and Thursday, rest on Tuesday and Saturday: the pattern is kept, not re-thought. Sessions cannot be moved (training is never flexible, §6s), so a reader who cannot train on a given day has no way to say so yet. The plan page is long for a 17-week plan even with weeks folded; consider showing only the next few weeks open by default.
+- **Superseded 7 Nov 2026 by §6t (Planner Plus).** Days 1–6 below were built; days 7–14 are folded into the §6t table.
 - **Two-week build (one session a day, from the plan document):**
   | Day | Date | Work |
   |---|---|---|
@@ -382,6 +383,53 @@ Robin's idea: a reader picks things to do this year, gives each a date or a seas
   | 12 | 12 Nov | Planner Plus waiting list; Plausible events plan_create, plan_ics, plan_step_view |
   | 13 | 13 Nov | Review: links, sources, accessibility |
   | 14 | 14 Nov | Launch the free planner; report to Robin |
+
+### 6t. Planner Plus: the paid planner (Robin, 7 Nov 2026)
+**What it is.** A paid planner that helps a member make the most of their year: any activity on the site (a course, festival, day out, trip, habit or physical event) or their own, put on one calendar with everything needed to do it well. Training plans from the engine (§6r) are one part, for physical events only. Target: **open for sale, including gifts, by 25 Nov 2026, and no later than 1 Dec.**
+
+**For each thing in a member's year, the plan gives:**
+1. **Get ready:** what the existing planner does (§6s): booking dates, start steps, kit, safety, engine training where there is one.
+2. **Where:** the activity's place (`places`) or, for anything not tied to one place, a town, venue or postcode the member types. Everything below hangs off this.
+3. **Getting there:** journey-planner links for that place and day (UK: National Rail and Traveline; US: Amtrak and the local transit finder; everywhere: a map directions link from the member's home town). Affiliate train or travel links only once Robin has joined a scheme and put the id in `site.yaml` → `affiliates`.
+4. **Where to stay:** for anything away from home (more than a set distance, or over a night), hotel search links for that town and those dates (affiliate once Robin has joined a hotel scheme), plus non-paying options where they exist (YHA, campsites, the venue's own list).
+5. **Where to eat:** a map search for places to eat near the venue. **Never name or recommend a restaurant we have not checked** (no invented recommendations); a named place appears only from an official or venue page opened in a session.
+6. **While you're there:** other Things to do in the same area (same `places` key), plus a Viator / GetYourGuide search for that town (affiliate, disclosed). Each has **Add to my year**, which plans it on a free day of the same trip.
+7. **One calendar** on the member's account, on any device, with a live calendar feed they subscribe to once (Plus only), as well as the .ics download.
+
+**Money from links (Robin, 7 Nov 2026):** the planner should earn from the events, travel, stays and tours it links to, as well as subscriptions. Rules as §6q: disclosed affiliate links only where a member would book anyway; non-paying options shown just the same; no "best", "on sale" or prices we have not checked live; no affiliate tags inside calendar files.
+
+**Payments: Stripe** (Robin's choice, 7 Nov 2026). Stripe Checkout for the monthly and yearly subscriptions and the one-off gift; Stripe's Customer Portal for cancelling and changing card; a webhook sets membership. Build and test in **test mode** first; Robin switches to live. The Stripe account currently connected is named "Paws on the Sand" (both sites belong to Norifico Ltd): ask Robin whether to use it (and what customers see on their statement) or open a separate account for DDR before going live. **Tax:** Stripe does not act as merchant of record, so VAT and sales tax are Norifico's to handle. Ask Robin to check with his accountant before launch, in particular selling to EU customers; until he answers, sell to UK and US buyers only. Say only general information about tax; never advise.
+
+**Accounts.** A small server on Robin's Cloudflare account (a Worker with a D1 database): sign-in by an emailed link (no passwords), membership status from Stripe, and the member's list and plans stored through the existing `DDRList` data and `merge()` (§6h "Ready for accounts"; never bypass it). Plans already saved in a browser stay theirs: on first sign-in they merge into the account; a non-member with plans saved before 7 Nov keeps seeing them read-only. Store as little personal data as possible (email, Stripe customer id, the list); update `/privacy/` in the same commit that starts collecting anything.
+
+**Gifts.** A £20 one-off payment gives a code and a printable card (PDF) to put under the tree. Redeeming it gives 12 months of Plus with **no automatic renewal**; near the end the member is asked whether to subscribe. Codes are single-use and the card says how to redeem.
+
+**Honesty (house rules apply).** Nothing is sold until it works end to end in test mode and Robin has tried it himself. The sales page describes only features that exist on launch day; anything later is labelled "coming". No member counts, reviews or "most popular". Cancelling must be as easy as subscribing. Subscription terms, the 14-day cancellation right for UK consumers and what happens when access starts straight away, and refunds go on a plain-English terms page before launch (general information; Robin to have it checked if he wishes).
+
+**What only Robin can do (tell him exact steps when the day comes):** decide on the Stripe account and statement name; switch Stripe to live; ask his accountant about VAT/EU sales; join a hotel and a train/travel affiliate scheme and send the ids; sign up for an email-sending service for sign-in emails and add its DNS records in Cloudflare; create a Cloudflare API token for the Worker and add it as a GitHub secret; join Amazon Associates (still pending from 3 Nov).
+
+**Build (one session a day; the daily planner task follows this table):**
+| Day | Date | Work |
+|---|---|---|
+| 7 | 7 Nov | Checkpoint: real sample plans with screenshots for Robin (as planned), framed as Plus; no new features |
+| 8 | 8 Nov | Where + Getting there: the place field, journey-planner and map links per plan |
+| 9 | 9 Nov | Where to stay and where to eat: dated hotel searches for trips away, map search for food, non-paying options |
+| 10 | 10 Nov | While you're there: nearby Things to do and tour searches, Add to my year onto the same trip |
+| 11 | 11 Nov | Activities for the thin months (courses, festivals, days out) from official pages; start with the "to source" items in the Project doc activity-backlog.md |
+| 12 | 12 Nov | Accounts: Cloudflare Worker + D1, emailed sign-in link (works in a dev/test setup if Robin's accounts are not ready) |
+| 13 | 13 Nov | Sync: list and plans on the account through DDRList merge(), browser plans merged on first sign-in |
+| 14 | 14 Nov | Stripe (test mode): products and prices (£2/month, £20/year, £20 gift), Checkout, webhook, Customer Portal |
+| 15 | 15 Nov | Paywall and the sample plan page; existing browser plans kept read-only for non-members |
+| 16 | 16 Nov | Gifts: buy, code, printable card, redeem page; 12 months, no auto-renew |
+| 17 | 17 Nov | Live calendar feed for members; kit at three levels for the most planned activities |
+| 18 | 18 Nov | Today screen in the app for members |
+| 19 | 19 Nov | Terms, cancellation and refunds page; privacy page update; the Plus sales page and gift page |
+| 20 | 20 Nov | End-to-end test in test mode (subscribe, cancel, gift, redeem, two devices); a separate checker agent reviews security (no member data in URLs, webhook signature checked, codes unguessable) |
+| 21 | 21 Nov | Fix what the tests found; accessibility pass at 320–1280px; Robin tries it on his phone |
+| 22 | 22 Nov | Robin switches Stripe to live and makes one real purchase and refund; Christmas gift posts written (facts only) |
+| 23–24 | 23–24 Nov | Spare days for anything left over |
+| 25 | 25 Nov | Launch: Plus and gifts on sale; report to Robin. Days after this: fixes, more places and activities |
+Dates may slip by a day or two; the launch date is the one to protect, and quality comes before it. If a day cannot be done honestly or well, do less and say why.
 
 ### 6p. Links between pages (Robin, 27 Oct 2026: "if a person is in one page they are naturally led to others")
 - **Foot of every story and guide:** "Try it yourself" shows up to three activity cards: the activities tied to the piece (`story:`/`guide:`), then those sharing its subject (activity id words against the piece's tags, ignoring place names and loose words), then a stable pick from the same topic. "Keep reading" shows three pieces ranked by shared tags, then topic, newest first.
