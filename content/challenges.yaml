@@ -1045,8 +1045,23 @@
   company: either
   regions:
   - us
-  places: [GA, NC, TN, VA, WV, MD, PA, NJ, NY, CT, MA, VT, NH, ME]
-  why: The Appalachian Trail runs for more than 2,190 miles from Georgia to Maine, and you can sample it as a day hike or a few nights out. Section hikers piece the whole trail together over many years, one stretch at a time.
+  places:
+  - GA
+  - NC
+  - TN
+  - VA
+  - WV
+  - MD
+  - PA
+  - NJ
+  - NY
+  - CT
+  - MA
+  - VT
+  - NH
+  - ME
+  why: The Appalachian Trail runs for more than 2,190 miles from Georgia to Maine, and you can sample it as a day hike or a few nights out. Section hikers piece the whole trail together over many years,
+    one stretch at a time.
   start:
   - Use the Appalachian Trail Conservancy's hiking pages to pick a state and a section.
   - Choose a stretch with road access at both ends and arrange a lift or shuttle.
@@ -1060,15 +1075,27 @@
     url: https://www.nps.gov/appa/index.htm
     region: us
     checked: '2026-10-06'
+  - label: 'Appalachian Trail Conservancy: Permits, Fees and Regulations'
+    url: https://appalachiantrail.org/?p=6070
+    region: us
+    checked: '2026-11-07'
+  - label: 'Recreation.gov: Great Smoky Mountains backcountry permits'
+    url: https://www.recreation.gov/permits/4675347
+    region: us
+    checked: '2026-11-07'
+  - label: 'Recreation.gov: Shenandoah National Park backcountry permits'
+    url: https://www.recreation.gov/permits/4675336
+    region: us
+    checked: '2026-11-07'
+  - label: 'Baxter State Park: The AT (Katahdin hiker permits)'
+    url: https://baxterstatepark.org/general-info/the-at/
+    region: us
+    checked: '2026-11-07'
+  - label: 'Appalachian Trail Conservancy: Apply for 2,000-miler recognition'
+    url: https://appalachiantrail.org/apply-2000-miler
+    region: us
+    checked: '2026-11-07'
   safety: Tell someone your route and when you expect to finish, as much of the trail is remote.
-  inspire:
-  - kind: read
-    person: M.J. "Sunny" Eberhart, the Nimblewill Nomad
-    line: A retired optometrist who walked the trail from Georgia to Maine in sections, adding hundreds of extra miles, and became the oldest person recorded to finish it.
-    title: "'Nimblewill Nomad,' 83, is the oldest to hike the Appalachian Trail"
-    outlet: NPR
-    url: https://www.npr.org/2021/11/07/1053389943/nimblewill-nomad-oldest-hiker-appalachian-trail
-    checked: '2026-10-27'
   inspire:
   - kind: read
     person: Emma Gatewood
@@ -1077,6 +1104,14 @@
     outlet: Sierra (Sierra Club)
     url: https://sierraclub.org/sierra/2016-2-march-april/green-life/do-you-know-story-first-woman-hike-appalachian-trail
     checked: '2026-11-03'
+  - kind: read
+    person: Jeff Buell, from Placitas, New Mexico
+    line: Walked the trail to Katahdin in 2023 after skipping about 150 miles (241 km) in Virginia, then went back three years later to walk the gap from Harpers Ferry to the southern end of Shenandoah
+      National Park and complete the whole route.
+    title: Choosing people over perfection
+    outlet: Albuquerque Journal
+    url: https://www.abqjournal.com/lifestyles/choosing-people-over-perfection/3121870
+    checked: '2026-11-07'
   kit:
   - name: Water filter bottle
     why: for refilling from streams on long routes; check what it filters before you trust it
@@ -1090,6 +1125,156 @@
   - name: Small camping stove
     why: for hot food and drinks; check what fuel it takes and where you may use it
     url: https://www.amazon.co.uk/s?k=camping+stove+lightweight
+  seo_title: 'Hiking a section of the Appalachian Trail: where to start'
+  description: Five well-known Appalachian Trail sections compared, the permit each one needs, when to go, and how section hikes add up to 2,000-miler status.
+  detail:
+  - h: What section hiking is really like
+    p:
+    - 'The Appalachian Trail Conservancy (ATC) gives the official length for 2026 as 2,197.9 miles (3,537 km). The figure moves a little every year as stretches of path are rerouted and measured more accurately:
+      the 2026 total grew by half a mile after a steep stretch in Virginia''s Mountain Lake Wilderness was replaced with a gentler one.'
+    - A section hike is any part of that, from a day out to several weeks. You walk between road crossings, sleep in three-sided wooden lean-tos or at campsites, and refill water from springs and creeks.
+      The ATC counts more than 250 shelters, on average about 8 miles (13 km) apart, and except in Great Smoky Mountains National Park they are first come, first served. The ATC still tells hikers to carry
+      a tent or hammock, because shelters fill quickly.
+    - The rules change as you cross from one land manager to the next. Most of the trail has no fees beyond parking at some parks, but a few places need a permit or charge for overnight sites, and those
+      happen to be some of the best-known sections.
+  - h: Five well-known sections compared
+    table:
+      head:
+      - Section
+      - State
+      - Trail length (official figure)
+      - Overnight permit or rule (as last listed)
+      rows:
+      - - Great Smoky Mountains National Park
+        - North Carolina and Tennessee
+        - Part of about 217.8 miles (350 km) on the NC/TN state line
+        - 'Backcountry permit needed for every overnight stay: $8 per person per night plus a $6 fee per permit, booked on Recreation.gov up to a month ahead. If your plan includes a shelter, you must use
+          it.'
+      - - Shenandoah National Park
+        - Virginia
+        - 101 miles (163 km) through the park
+        - 'Backcountry permit needed year-round: $9 per person plus a $6 reservation fee, up to 3 months ahead, and not sold in the park. Entry is $15 on foot or $30 per vehicle.'
+      - - Harpers Ferry and Maryland
+        - West Virginia and Maryland
+        - 2.4 miles (3.9 km) in West Virginia and 40.9 miles (65.8 km) in Maryland
+        - No camping in Harpers Ferry town or park; in Maryland, camping only at designated overnight sites.
+      - - White Mountains
+        - New Hampshire
+        - 160.9 miles (259 km) in the state, 15.2 miles (24.5 km) above treeline
+        - Appalachian Mountain Club high-use campsites cost about $10 per person per night, with no permit or reservation; reservations recommended at the staffed huts.
+      - - 100-Mile Wilderness and Katahdin
+        - Maine
+        - 282 miles (454 km) in the state
+        - A free Baxter State Park permit, collected in person at Katahdin Stream Campground and valid for 7 days, is needed before you climb Katahdin. Section hikers need one too.
+    after: Lengths are from the ATC's state pages and the National Park Service; permit details are from the parks, Recreation.gov and the ATC. On 30 April 2026 Great Smoky Mountains added a $6 fee per
+      permit, raised its A.T. thru-hiker pass from $40 to $44.50 and moved permits to Recreation.gov. Check each park's own page before you book.
+  - h: The hard parts
+    p:
+    - The ATC calls Maine's Mahoosuc Notch, a canyon full of boulders, the trail's hardest mile, and says it is more scrambling than walking. Maine also has 21 unbridged stream crossings that can be dangerous
+      after snowmelt or heavy rain; the widest, the Kennebec River, has a canoe ferry sponsored by the ATC in the hiking season. In New Hampshire the ATC advises very good fitness and strong knees, and
+      notes that the Presidential Range has had snow in every month of the year.
+    - Elevation changes everything. Kuwohi (formerly Clingmans Dome), at 6,643 feet (2,025 m), is the trail's highest point, and the Park Service says winters at the top can be quite severe. Hurricane Helene
+      badly damaged the trail on the North Carolina and Tennessee border in autumn 2024, and some temporary detours were still in place when the 2026 mileage was published, so check the ATC's trail updates
+      for your stretch.
+    - Shelters bring their own small hazards. About half have bear boxes, cables or poles for food. Eat at least 200 feet (60 m) from the shelter, and do not sweep a shelter where there are rodents or droppings,
+      because of the risk of Hantavirus.
+  - h: When to go
+    list:
+    - 'Spring: true spring does not reach the high ridges until mid-April or May, later in New England. Avoid Vermont, New Hampshire and Maine in April and May, which the ATC calls mud season.'
+    - 'Summer: can be hot and humid, so start early to avoid afternoon thunderstorms. The ATC suggests June at the earliest for Vermont and July for New Hampshire and Maine; August in the north has fewer
+      bugs but more people.'
+    - 'Autumn: leaves peak in October and September is quiet in many places, but snow can fall high in New Hampshire and Maine from September. Hunting season means bright orange clothing; on Pennsylvania
+      State Game Lands it is required from 15 November to 15 December.'
+    - 'Katahdin: Baxter State Park strongly recommends A.T. hikers summit before 15 October, and the trails close for part of the late autumn.'
+  - h: Counting sections towards 2,000 miles
+    p:
+    - The ATC recognises everyone who reports walking the whole trail as a 2,000-miler, and section hikers count equally. Anyone who takes more than 12 months is a section hiker, and the order, direction
+      and speed do not matter. It runs on an honour system, and ignoring Leave No Trace or the A.T. Hiker Pledge can get an application turned down. Approved hikers get a certificate, an A.T. patch and
+      a 2,000-miler rocker patch.
+    - In 2024 the ATC recognised 996 people as 2,000-milers, and 117 of them were section hikers. If you are aiming for the whole trail, keep a record of each stretch as you go, and note that miles walked
+      between 31 March 2020 and 11 May 2021 do not count. Before an overnight trip anywhere on the trail, the ATC also encourages free, voluntary registration through its ATCamp system, which helps spread
+      hikers out.
+  faq:
+  - q: How long is the Appalachian Trail?
+    a: The ATC's official 2026 length is 2,197.9 miles (3,537 km). It changes slightly each year as the path is rerouted and remeasured.
+  - q: Do you need a permit to hike the Appalachian Trail?
+    a: Not for most of it. You need a backcountry permit to camp in Great Smoky Mountains and Shenandoah national parks, a free Baxter State Park permit to climb Katahdin, and you pay for some overnight
+      sites in New Hampshire and southern Maine.
+  - q: How much is a Smoky Mountains backcountry permit for the Appalachian Trail?
+    a: As last listed, $8 per person per night plus a $6 fee per permit, booked on Recreation.gov. The A.T. thru-hiker pass is $44.50.
+  - q: Can you section hike the Appalachian Trail and still be a 2,000-miler?
+    a: Yes. The ATC recognises section hikers equally with thru-hikers, and anyone who takes more than 12 months counts as a section hiker. The order and direction do not matter.
+  - q: When is the best time to hike the Appalachian Trail?
+    a: It depends on the section. The ATC suggests waiting until July for good conditions in New Hampshire and Maine, avoiding mud season in northern New England in April and May, and notes September is
+      quiet in many places.
+  - q: Do I need a tent if the Appalachian Trail has shelters?
+    a: Yes. The ATC tells hikers to carry their own tent or hammock because shelters fill quickly and most are first come, first served.
+  sources:
+  - label: Appalachian Trail Conservancy, Appalachian Trail Becomes a Half Mile Longer in 2026
+    url: https://appalachiantrail.org/news-stories/2026-official-mileage/
+    checked: '2026-11-07'
+  - label: Appalachian Trail Conservancy, Permits, Fees and Regulations
+    url: https://appalachiantrail.org/?p=6070
+    checked: '2026-11-07'
+  - label: Appalachian Trail Conservancy, Submit Your Application (2,000-miler recognition)
+    url: https://appalachiantrail.org/apply-2000-miler
+    checked: '2026-11-07'
+  - label: Appalachian Trail Conservancy, Camping & Shelters
+    url: https://appalachiantrail.org/explore/hike-the-a-t/thru-hiking/camping/
+    checked: '2026-11-07'
+  - label: Appalachian Trail Conservancy, Best Times to Hike
+    url: https://appalachiantrail.org/explore/hike-the-a-t/day-hiking/best-times-to-day-hike/
+    checked: '2026-11-07'
+  - label: Appalachian Trail Conservancy, North Carolina
+    url: https://appalachiantrail.org/explore/explore-by-state/north-carolina
+    checked: '2026-11-07'
+  - label: Appalachian Trail Conservancy, Tennessee
+    url: https://appalachiantrail.org/explore/explore-by-state/tennessee/
+    checked: '2026-11-07'
+  - label: Appalachian Trail Conservancy, West Virginia
+    url: https://appalachiantrail.org/explore/explore-by-state/west-virginia
+    checked: '2026-11-07'
+  - label: Appalachian Trail Conservancy, Maryland
+    url: https://appalachiantrail.org/explore/explore-by-state/maryland
+    checked: '2026-11-07'
+  - label: Appalachian Trail Conservancy, New Hampshire
+    url: https://appalachiantrail.org/explore/explore-by-state/new-hampshire/
+    checked: '2026-11-07'
+  - label: Appalachian Trail Conservancy, Maine
+    url: https://appalachiantrail.org/explore/explore-by-state/maine/
+    checked: '2026-11-07'
+  - label: A.T. Journeys (ATC), Celebrating the 2024 2,000-Milers
+    url: https://journeys.appalachiantrail.org/issue/spring-2025/celebrating-the-2024-2000-milers/
+    checked: '2026-11-07'
+  - label: National Park Service, Great Smoky Mountains, Backcountry Camping
+    url: https://www.nps.gov/grsm/planyourvisit/backcountry-camping.htm
+    checked: '2026-11-07'
+  - label: National Park Service, Great Smoky Mountains, Backcountry camping fee change takes effect on April 30
+    url: https://www.nps.gov/grsm/learn/news/backcountry-camping-fee-change-takes-effect-on-april-30-at-great-smoky-mountains-national-park.htm
+    checked: '2026-11-07'
+  - label: National Park Service, Clingmans Dome (highest point on the A.T.)
+    url: https://www.nps.gov/grsm/planyourvisit/clingmansdome.htm?vm=r
+    checked: '2026-11-07'
+  - label: National Park Service, Ancient Name Returns to Smokies' Highest Peak
+    url: https://www.nps.gov/articles/000/ancient-name-returns-to-smokies-highest-peak.htm
+    checked: '2026-11-07'
+  - label: National Park Service, Stony Man, The Appalachian Trail (miles in Shenandoah)
+    url: https://www.nps.gov/places/000/stony-man-the-appalachian-trail.htm
+    checked: '2026-11-07'
+  - label: Recreation.gov, Great Smoky Mountains Backcountry Permits
+    url: https://www.recreation.gov/permits/4675347
+    checked: '2026-11-07'
+  - label: Recreation.gov, Shenandoah National Park Backcountry Permits
+    url: https://www.recreation.gov/permits/4675336
+    checked: '2026-11-07'
+  - label: Baxter State Park, The AT
+    url: https://baxterstatepark.org/general-info/the-at/
+    checked: '2026-11-07'
+  related:
+  - hike-pacific-crest-trail-section
+  - hike-mount-washington
+  - hike-shenandoah-with-your-dog
+  - drive-the-blue-ridge-parkway
 - id: parkrun
   title: Do a parkrun
   category: move
@@ -1683,7 +1868,8 @@
   regions:
   - uk
   - us
-  why: Played with a solid paddle and a perforated ball on a small court, pickleball is quick to pick up and produces long, lively rallies. Doubles is the usual format, so you meet people from the first game.
+  why: Played with a solid paddle and a perforated ball on a small court, pickleball is quick to pick up and produces long, lively rallies. Doubles is the usual format, so you meet people from the first
+    game.
   start:
   - Find a club or court through Pickleball England or USA Pickleball's places to play page.
   - Look for a taster or open play session where paddles are provided.
@@ -1704,6 +1890,14 @@
   - name: Court shoes
     why: grip and side-to-side support; running shoes are not made for it
     url: https://www.amazon.co.uk/s?k=indoor+court+shoes
+  inspire:
+  - kind: read
+    person: Steve Vozza, from Chesterfield County, Virginia
+    line: Gave up martial arts, bowling and golf for pickleball, which he has played for more than a decade, and now plays four or five times a week and enters tournaments.
+    title: How this 60-year-old is taking a new popular sport by storm
+    outlet: WTVR CBS 6 News
+    url: https://www.wtvr.com/community/a-list-events/how-this-60-year-old-is-taking-a-new-popular-sport-by-storm
+    checked: '2026-11-07'
 - id: learn-to-sail
   title: Learn to sail a dinghy
   category: move
@@ -1716,7 +1910,8 @@
   season: Spring to autumn
   regions:
   - uk
-  why: Making a boat move using nothing but the wind is an absorbing skill that keeps unfolding the more you do it. The RYA says beginner courses run over a number of sessions or two full days, with boats and equipment provided.
+  why: Making a boat move using nothing but the wind is an absorbing skill that keeps unfolding the more you do it. The RYA says beginner courses run over a number of sessions or two full days, with boats
+    and equipment provided.
   start:
   - Read the RYA's guide to getting started in sailing.
   - Find a local club or training centre and book a beginner course.
@@ -1737,6 +1932,15 @@
   - name: Dry bag
     why: keeps your phone, keys and a spare layer dry on the water
     url: https://www.amazon.co.uk/s?k=dry+bag+10+litre
+  inspire:
+  - kind: read
+    person: Margaret Norris
+    line: Discovered dinghy sailing when, driving a school minibus to a dinghy session, a teacher put her in a Topper; she worked through the RYA Dinghy courses and became an RYA Senior Instructor at Hengistbury
+      Head Outdoor Activity Centre.
+    title: It's never too late
+    outlet: Royal Yachting Association
+    url: https://www.rya.org.uk/stories/its-never-too-late/
+    checked: '2026-11-07'
 - id: walk-to-end-alzheimers
   title: Join a Walk to End Alzheimer's
   category: move
@@ -1839,12 +2043,16 @@
   regions:
   - uk
   - us
-  why: A hive is a working society of tens of thousands, and learning to read it is absorbing in a way few hobbies are. Local associations pair newcomers with experienced keepers, so you learn at an apiary before you buy anything.
+  why: A hive is a working society of tens of thousands, and learning to read it is absorbing in a way few hobbies are. Local associations pair newcomers with experienced keepers, so you learn at an apiary
+    before you buy anything.
   start:
   - Find your local beekeeping association and ask about taster days or a beginners' course.
   - Handle bees at the association apiary before deciding to keep your own.
   - Complete a full season with a mentor, then record your first hive inspection alone.
-  start_at: [first, after_start, later]
+  start_at:
+  - first
+  - after_start
+  - later
   links:
   - label: 'British Beekeepers Association: find beekeeping near you'
     url: https://www.bbka.org.uk/find-beekeeping-near-you
@@ -1859,6 +2067,14 @@
   - name: Beekeeping suit
     why: a full suit with a veil; your local association will advise before you buy a hive
     url: https://www.amazon.co.uk/s?k=beekeeping+suit
+  inspire:
+  - kind: read
+    person: Catherine Carton
+    line: Signed up for a beginners' course with the Fingal Beekeepers' Association, then took on a small colony of native Irish honey bees that she has looked after for just over a year.
+    title: Catherine Carton on her year of beekeeping
+    outlet: RTÉ
+    url: https://www.rte.ie/lifestyle/living/2025/0518/1512621-catherine-carton-on-her-year-of-beekeeping
+    checked: '2026-11-07'
 - id: big-garden-birdwatch
   title: Take part in the RSPB Big Garden Birdwatch
   category: explore
@@ -6213,7 +6429,8 @@
   company: either
   regions:
   - uk
-  why: A bothy is a simple shelter in remote country, kept up by the volunteers of the Mountain Bothies Association for anyone who loves wild and lonely places. Expect no tap, no beds and no lights, so you carry in everything you would take camping except the tent, and share the floor with whoever else walks in.
+  why: A bothy is a simple shelter in remote country, kept up by the volunteers of the Mountain Bothies Association for anyone who loves wild and lonely places. Expect no tap, no beds and no lights, so
+    you carry in everything you would take camping except the tent, and share the floor with whoever else walks in.
   start:
   - Read the Mountain Bothies Association's What is a Bothy page and its Bothy Code before you plan anything.
   - Choose a bothy from the Association's list by area, in Scotland, northern England or Wales, and plan the walk in on a map.
@@ -6241,6 +6458,14 @@
   - name: Head torch
     why: for early starts and anything that runs into dusk
     url: https://www.amazon.co.uk/s?k=head+torch+rechargeable
+  inspire:
+  - kind: read
+    person: John Davidson
+    line: Spent a wintry night of sub-zero temperatures with his young children at Coulags bothy in Coire Fionnaraich, with friends arriving in the darkness to join them.
+    title: Bright idea to enjoy winter’s night at Coulags bothy
+    outlet: John O'Groat Journal
+    url: https://www.johnogroat-journal.co.uk/news/bright-idea-to-enjoy-winter-s-night-at-coulags-bothy-372402
+    checked: '2026-11-07'
 - id: visit-an-open-garden
   title: Visit a private garden on an open day
   category: explore
@@ -9275,11 +9500,13 @@
   season: Summer
   regions:
   - us
-  places: [CO]
-  why: A fourteener is a peak higher than 14,000 feet, and Colorado has more of them than any other state, several with walking routes that need no ropes. The Colorado Fourteeners Initiative, a non-profit that looks after the peaks, publishes video series on mountain safety, gear and altitude illness for people planning a first ascent.
+  places:
+  - CO
+  why: A fourteener is a peak higher than 14,000 feet, and Colorado has more of them than any other state, several with walking routes that need no ropes. The Colorado Fourteeners Initiative, a non-profit
+    that looks after the peaks, publishes video series on mountain safety, gear and altitude illness for people planning a first ascent.
   start:
   - Watch the Colorado Fourteeners Initiative's mountain safety, gear and altitude illness video series.
-  - Choose a peak with a straightforward walking route and go with someone who has climbed one before.
+  - Choose a peak with a Class 1 route, where a trail runs all the way to the top, and go with someone who has climbed one before.
   - Spend a few days at altitude in Colorado before the climb and start walking at dawn.
   links:
   - label: Colorado Fourteeners Initiative (non-profit stewardship body)
@@ -9290,7 +9517,178 @@
     url: https://www.14ers.org/mountain-safety/
     region: us
     checked: '2026-10-08'
+  - label: 'US Forest Service: Quandary Peak trailhead (parking reservation or shuttle in summer)'
+    url: https://www.fs.usda.gov/r02/whiteriver/recreation/quandary-peak-th-47
+    region: us
+    checked: '2026-11-07'
+  - label: 'US Forest Service: Mount Elbert (Fourteener)'
+    url: https://www.fs.usda.gov/r02/psicc/recreation/mount-elbert-fourteener
+    region: us
+    checked: '2026-11-07'
+  - label: '14ers.com: Easiest 14ers in Colorado'
+    url: https://www.14ers.com/easiest-14ers
+    region: us
+    checked: '2026-11-07'
   safety: Altitude sickness and afternoon thunderstorms are real dangers above the treeline, so start early and turn round if either threatens.
+  seo_title: 'Easiest 14ers in Colorado: a first fourteener guide'
+  description: Five beginner fourteeners in Colorado compared by height, distance and climb, plus parking rules, altitude, lightning, kit and when to go.
+  detail:
+  - h: What it's really like
+    p:
+    - 'A fourteener is a summit above 14,000 feet (4,267 metres). The Colorado Fourteeners Initiative estimates that 256,000 people hiked the state''s fourteeners in 2025. The easiest routes are Class 1:
+      there is a defined trail all the way to the top.'
+    - Easy is relative. The Forest Service calls Quandary Peak one of the easier, least technical fourteeners, then adds that none of them are easy hikes, because of the height and the weather. Expect a
+      long climb in thin air above the treeline, where the weather can change quickly.
+  - h: Five first fourteeners compared
+    table:
+      head:
+      - Peak and route
+      - Height
+      - Round trip
+      - Height gain
+      - Class
+      - Getting there (as last listed)
+      rows:
+      - - Quandary Peak, East Ridge
+        - 14,272 ft (4,350 m)
+        - 6.75 miles (10.9 km)
+        - 3,450 ft (1,052 m)
+        - Class 1
+        - In summer the trailhead is reached only with a parking reservation or by shuttle from Breckenridge; no roadside parking
+      - - Grays Peak, North Slopes
+        - 14,270 ft (4,350 m)
+        - 7.5 miles (12.1 km)
+        - 3,000 ft (914 m)
+        - Class 1
+        - Stevens Gulch Road is rough and at times needs 4WD; early and late in the season you may have to walk from the parking area off I-70
+      - - Mount Bierstadt, West Slopes
+        - 14,063 ft (4,286 m)
+        - 7.25 miles (11.7 km)
+        - 2,850 ft (869 m)
+        - Class 2
+        - Guanella Pass road is paved; park in the designated lots only; free self-issue wilderness permit at the trailhead; trail closed 1 April to 15 June for mud season
+      - - Mount Sherman, Southwest Ridge
+        - 14,043 ft (4,280 m)
+        - 5.25 miles (8.4 km)
+        - 2,100 ft (640 m)
+        - Class 1
+        - Fourmile Creek Road; ordinary cars manage the first several miles but the last mile is rocky and rutted
+      - - Mount Elbert, Northeast Ridge (North Mount Elbert Trail)
+        - 14,433 ft (4,399 m)
+        - 9.75 miles (15.7 km)
+        - 4,500 ft (1,372 m)
+        - Class 1
+        - No fee listed; no toilets or drinking water at the site
+    after: 'Route figures and Class ratings come from 14ers.com''s easiest-14ers table; heights from the Forest Service, the Colorado Fourteeners Initiative and 14ers.com. The Forest Service gives slightly
+      different figures for Elbert: 4.3 miles (6.9 km) and 4,400 feet (1,341 m) of climb on the North Mount Elbert Trail, or 5.8 miles (9.3 km) and 4,800 feet (1,463 m) on the South Mount Elbert Trail,
+      which it calls the easiest route. Sherman is the shortest of the five; Elbert, the highest summit in Colorado, is the longest. Access on the Decalibron loop (Democrat, Cameron, Lincoln and Bross)
+      has changed several times: the Forest Service took over the Mount Democrat land at the end of 2023, but the summit of Bross was still closed then, so check the current position before you plan it.'
+  - h: The hard parts
+    p:
+    - Altitude. The NHS says altitude sickness usually starts above 2,500 metres (about 8,200 feet), often 6 to 10 hours after you arrive. Headache, nausea, tiredness, dizziness and poor sleep are the usual
+      signs. Its advice is not to go from below 1,200 metres to above 3,500 metres in a single day, to drink enough water and to avoid alcohol. If symptoms get worse, go down. Confusion, poor balance or
+      breathlessness at rest need medical help at once.
+    - Lightning. The National Weather Service office in Pueblo counts 95 deaths and 472 injuries from lightning in Colorado between 1980 and 2016, and advises planning outdoor activity for early in the
+      day, as storms tend to build later. The Forest Service says there is always a strong chance of afternoon thunderstorms with lightning on Quandary, and on Elbert to get below the treeline at the first
+      sign of one. So start early in the morning, as the Forest Service advises, and be ready to turn back if cloud builds.
+    - Sun and cold. High-altitude sun is intense and the air is dry, so wear a hat and sun cream and drink plenty. The weather changes quickly, so carry rain gear and warm layers even on a bright morning.
+  - h: What to carry
+    list:
+    - Waterproof jacket and warm layers, including a hat and gloves.
+    - Sun cream, sunglasses and a sun hat.
+    - Plenty of water and food. Elbert's trailheads have no drinking water.
+    - A map and compass, and the skill to use them, as the Forest Service advises.
+    - Trekking poles for the descent, and a charged phone for emergencies.
+  - h: When to go and how to build up
+    p:
+    - 14ers.com puts the summer hiking season at mid-June to early September, when the snow is off the trails; by October most peaks have some snow. The Forest Service says Bierstadt and Grays are generally
+      not snow-free until late June or July, so July and August give the best chance of a clear trail.
+    - 'Climb in order of difficulty: a few Class 1 peaks first, then Class 2, and leave harder peaks such as Longs Peak until much later. Class 2 still means walking, but on rougher ground that may have
+      no trail. 14ers.com also suggests building fitness and endurance on the easier peaks first. Before the climb, follow the NHS advice and spend a few days below 2,500 metres (about 8,200 feet) before
+      going higher.'
+  faq:
+  - q: What is the easiest 14er in Colorado for beginners?
+    a: 14ers.com lists Quandary Peak, Grays and Torreys, Mount Sherman, Mount Bierstadt and Handies Peak among the easiest. Mount Sherman's standard route is the shortest at 5.25 miles (8.4 km) round trip
+      with 2,100 feet (640 m) of climbing.
+  - q: Do you need a reservation to hike Quandary Peak?
+    a: In summer, the Forest Service says the trailhead is reached only with a parking reservation or by the shuttle from Breckenridge. Parking on Highway 9 and the nearby roads is not allowed.
+  - q: What time should I start hiking a 14er?
+    a: Early. The Forest Service warns of a strong chance of afternoon thunderstorms with lightning, and the National Weather Service advises planning outdoor activities for early in the day, so plan to
+      be walking early in the morning.
+  - q: What does Class 1 and Class 2 mean on a 14er?
+    a: Class 1 means a defined trail all the way to the summit. Class 2 is still walking, but on rougher ground where there may be no trail, so it takes more time and effort.
+  - q: How do I avoid altitude sickness on a 14er?
+    a: The NHS advises going up slowly, spending a few days at moderate height first, drinking enough water and avoiding alcohol. If symptoms such as headache or nausea get worse, go down.
+  - q: When is the best time to hike a 14er?
+    a: Mid-June to early September, when the trails are mostly clear of snow. Snow can linger on some routes until late June or July, and most peaks have some snow by October.
+  sources:
+  - label: US Forest Service, White River National Forest, Quandary Peak TH
+    url: https://www.fs.usda.gov/r02/whiteriver/recreation/quandary-peak-th-47
+    checked: '2026-11-07'
+  - label: US Forest Service, Pike-San Isabel National Forests, Mount Elbert (Fourteener)
+    url: https://www.fs.usda.gov/r02/psicc/recreation/mount-elbert-fourteener
+    checked: '2026-11-07'
+  - label: US Forest Service, Arapaho and Roosevelt National Forests, Bierstadt Trailhead
+    url: https://www.fs.usda.gov/r02/arp/recreation/bierstadt-trailhead
+    checked: '2026-11-07'
+  - label: US Forest Service, Pike-San Isabel National Forests, Mount Bierstadt Trail
+    url: https://www.fs.usda.gov/r02/psicc/recreation/trails/mount-bierstadt-trail-711
+    checked: '2026-11-07'
+  - label: US Forest Service, Arapaho and Roosevelt National Forests, Grays Peak Trailhead
+    url: https://www.fs.usda.gov/r02/arp/recreation/grays-peak-trailhead
+    checked: '2026-11-07'
+  - label: US Forest Service, Arapaho and Roosevelt National Forests, Grays Peak Trail
+    url: https://www.fs.usda.gov/r02/arp/recreation/trails/grays-peak-trail
+    checked: '2026-11-07'
+  - label: National Weather Service Pueblo, Lightning
+    url: https://www.weather.gov/pub/SWAW6lightningfriday
+    checked: '2026-11-07'
+  - label: NHS, Altitude sickness
+    url: https://www.nhs.uk/conditions/altitude-sickness/
+    checked: '2026-11-07'
+  - label: Town of Blue River, Quandary Trail
+    url: https://townofblueriver.colorado.gov/quandary-trail
+    checked: '2026-11-07'
+  - label: Colorado Fourteeners Initiative, 2025 Colorado 14er Hiking Use Estimates
+    url: https://www.14ers.org/2025-colorado-14er-hiking-use-estimates/
+    checked: '2026-11-07'
+  - label: Colorado Fourteeners Initiative, 2024 Colorado 14er Hiking Use Estimates (Decalibron Loop reopening)
+    url: https://www.14ers.org/2024-colorado-14er-hiking-use-estimates/
+    checked: '2026-11-07'
+  - label: Colorado Fourteeners Initiative, Grays Peak
+    url: https://www.14ers.org/?p=361
+    checked: '2026-11-07'
+  - label: Colorado Fourteeners Initiative, Quandary Peak
+    url: https://www.14ers.org/peaks/mosquito-range/quandary-peak/
+    checked: '2026-11-07'
+  - label: 14ers.com, Easiest 14ers in Colorado
+    url: https://www.14ers.com/easiest-14ers
+    checked: '2026-11-07'
+  - label: 14ers.com, Climbing 14ers, Getting Started
+    url: https://www.14ers.com/getting-started
+    checked: '2026-11-07'
+  - label: 14ers.com, Quandary Peak
+    url: https://www.14ers.com/peaks/10013/quandary-peak
+    checked: '2026-11-07'
+  - label: 14ers.com, Mt. Sherman
+    url: https://www.14ers.com/peaks/10045/mount-sherman
+    checked: '2026-11-07'
+  - label: Denver7, Mount Democrat trail and summit near Alma is now property of the USFS
+    url: https://www.denver7.com/news/local-news/mount-democrat-trail-and-summit-near-alma-is-now-property-of-the-usfs
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Mike Bale, Oklahoma State University
+    line: Climbed all 58 of Colorado's fourteeners, finishing in September 2015 about 20 years after his first, which he joined through a university extension class at colleagues' invitation.
+    title: OSU employee achieves long-term fitness goal
+    outlet: Oklahoma State University News and Media
+    url: https://news.okstate.edu/articles/communications/2015/osu-employee-achieves-long-term-fitness-goal
+    checked: '2026-11-07'
+  related:
+  - hike-mount-whitney
+  - climb-kilimanjaro
+  - hike-half-dome
+  - climb-mount-st-helens
   kit:
   - name: Trekking poles
     why: they take some of the load off your knees on long descents
@@ -10863,18 +11261,144 @@
   season: November to April without alpine skills; May to October is winter
   regions:
   - world
-  places: [NZL]
-  why: This one-way crossing in New Zealand's Tongariro National Park climbs to Red Crater at 1,886 metres (6,188 feet), past steaming vents, lava flows and the vivid Emerald Lakes. The Department of Conservation allows seven to eight hours in summer and asks for high fitness.
+  places:
+  - NZL
+  why: This one-way crossing in New Zealand's Tongariro National Park climbs to Red Crater at 1,886 metres (6,188 feet), past steaming vents, lava flows and the vivid Emerald Lakes. The Department of Conservation
+    allows seven to eight hours in summer and asks for high fitness.
   start:
   - Read the Department of Conservation's track page and book your walk, which is free and needed for shuttles.
   - Book a shuttle, as there is no visitor parking at the Mangatepōpō start in summer.
-  - Check the NIWA forecast and the park's daily advisory the evening before, and walk another time if it says not today.
+  - Check the NIWA forecast the evening before, and on the morning check DOC's "Not Recommended Today" advisory (issued at 6am in summer); walk another time if it says not today.
   links:
   - label: Department of Conservation, Tongariro Alpine Crossing
     url: https://doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-alpine-crossing
     region: world
     checked: '2026-10-27'
+  - label: Department of Conservation, Tongariro Northern Circuit (hut and campsite bookings)
+    url: https://doc.govt.nz/tongarironortherncircuit
+    region: world
+    checked: '2026-11-07'
+  - label: Tongariro Crossing website, stage-by-stage track description and toilet locations
+    url: https://tongarirocrossing.org.nz/the-track
+    region: world
+    checked: '2026-11-07'
   safety: The track crosses an active volcanic area and the weather changes fast; stay on the marked track and away from steam vents, and in winter go with a guide.
+  seo_title: 'Tongariro Alpine Crossing: booking, how hard, what to bring'
+  description: How hard the Tongariro Alpine Crossing is, how to book it for free, shuttles and parking, winter rules, and how it compares with the Northern Circuit.
+  detail:
+  - h: What it's really like
+    p:
+    - The crossing is a one-way day walk across the volcanic heart of Tongariro National Park, which was set up in 1894 and in 1993 became the first site listed as a World Heritage cultural landscape. Figures
+      for its length vary slightly between sources, from 19.4 to 20.4 km (about 12 to 12.7 miles). It starts at 1,120 metres (3,675 feet) in the Mangatepōpō Valley and finishes at Ketetahi Road at 760 metres
+      (2,493 feet), with about 1,196 metres (3,924 feet) of climbing and descending in between.
+    - The first stretch is gentle, fairly flat and boardwalked in wet places; its first 5.4 km (3.4 miles) is shared with the Soda Springs Walk. Then comes the Devil's Staircase, a steep climb from about
+      1,400 to 1,600 metres (4,593 to 5,249 feet), to the flat floor of South Crater. An exposed ridge leads up to Red Crater, the high point at 1,886 metres (6,188 feet). From there you drop down loose
+      scree to Ngā Rotopounamu, the Emerald Lakes, whose colour comes from minerals leached out of the rock, then pass Blue Lake before a long zig-zag descent, with views over Lake Rotoaira and Lake Taupō,
+      into forest at Ketetahi.
+    - The mountains and waters are sacred to Ngāti Hikairo ki Tongariro of Ngāti Tūwharetoa, who act as kaitiaki (guardians). DOC asks walkers not to touch or enter any of the lakes or streams. Blue Lake
+      is tapu, and the Tongariro Crossing site says it is disrespectful to touch, enter, eat or drink around its shores. The Ketetahi springs are on private land, so stay on the track.
+  - h: The hard parts
+    p:
+    - 'DOC rates the fitness needed as high and the gradient as steep and undulating. The Mountain Safety Council says the crossing has had more search and rescues than any other walking track in New Zealand:
+      292 people over seven years, and nearly a fifth of all tramper search and rescues in the country in the 2016-17 summer. It names the weather, rough ground and the length of the day as the main hazards.'
+    - Two sections catch people out. The loose rock on the steep slopes of Red Crater is, in DOC's words, a major slip hazard on the way down to the Emerald Lakes. And the long zig-zag steps off the northern
+      slopes are hard on weaker knees at the end of the day. Very cold temperatures, strong wind, heavy rain and poor visibility are common even in summer. Be ready to turn back if conditions turn or you
+      are moving too slowly; the Tongariro Crossing site advises against going if winds of 60 km/h or more are forecast.
+    - It is also an active volcanic area. DOC says an eruption is unlikely but possible, the steam vents are very hot, the ground near them can be unstable, and severe burns are possible.
+  - h: Booking, shuttles and parking
+    p:
+    - DOC recommends that everyone using any part of the track books, and a booking is needed to use a shuttle or guided walk. As last listed, there is no cost to book. Because the walk is one way, DOC
+      says a shuttle from a nearby town is the best way to reach it, at about NZ$40 as last listed. In summer there is no parking at the Mangatepōpō car park for people doing the crossing; the Tongariro
+      Crossing site says a four-hour limit applies at both the Mangatepōpō and Ketetahi road ends from mid-October to May. There is a private car park near the Ketetahi end, and DOC does not recommend parking
+      on state highways.
+    - Toilets are roughly every one to two hours along the track. If there is a queue at the start, there are public toilets at Mangatepōpō Hut on a short side track; the next on the track are just past
+      Soda Springs. Bring your own toilet paper.
+  - h: What to carry
+    list:
+    - Two to three litres of water each. DOC says the water along the track is not safe to drink.
+    - In summer, everything on DOC's day hikes gear list, which its track page links to.
+    - In winter (May to late October), DOC adds waterproof trousers, crampons, an ice axe, a helmet, an avalanche transceiver, probe and shovel, a personal locator beacon, a head torch and a map and compass
+      or GPS.
+    - A charged phone, plus the NIWA park forecast and GeoNet volcanic alert level checked before you go.
+  - h: The real choices
+    table:
+      head:
+      - Option
+      - Distance and time
+      - Booking and cost (as last listed)
+      - Who it suits
+      rows:
+      - - Summer crossing on your own (November to April)
+        - 19.4 to 20.4 km (12 to 12.7 miles), one way; 7 to 8 hours
+        - Free DOC booking; shuttle about NZ$40
+        - Fit walkers happy with a long day in mountain weather
+      - - Guided winter crossing (May to late October)
+        - Same route; DOC says allow 9 hours
+        - DOC booking needed for a guided trip; DOC lists the guiding companies
+        - Anyone without alpine skills who wants to cross in snow and ice
+      - - Tongariro Northern Circuit
+        - 35.5 km (22 miles) for 2026/27; 3 to 4 days
+        - Huts or campsites must be booked year-round; adult hut NZ$66 a night (international) or NZ$44 (New Zealander), 23 October to 30 April
+        - Walkers who want to stay out overnight in huts
+      - - Soda Springs Walk
+        - Shares the first 5.4 km (3.4 miles); about 2 hours return
+        - Not stated
+        - A taste of the crossing without the climb
+      - - Taranaki Falls Walk
+        - 2-hour loop from Whakapapa Village to a 20-metre (66-foot) waterfall
+        - No booking mentioned
+        - An easy walk on a poor-weather day
+    after: DOC says it is best to go with a guide in winter, when the track has ice, snow and avalanche risk and shuttles generally do not run; guided trips include transport. The Northern Circuit shares
+      the Mangatepōpō to Emerald Lakes section with the crossing, and a circuit hut or campsite booking covers it. As last listed, DOC said the circuit was not running as a Great Walk while Oturere Hut
+      is replaced, that the Great Walk would be available for 2026/27, and that the Whakapapa Village to Mangatepōpō section stays closed after the 2025 fire, so the circuit starts at Mangatepōpō car park.
+      Check the DOC page before you plan.
+  faq:
+  - q: Do you need to book the Tongariro Alpine Crossing?
+    a: DOC recommends that everyone books, and you must book to use a shuttle or a guided walk. As last listed, booking is free.
+  - q: How hard is the Tongariro Crossing?
+    a: DOC rates it as needing high fitness, with steep and undulating ground and about 1,196 metres (3,924 feet) of height change. The steep Devil's Staircase climb and the loose descent from Red Crater
+      are the hardest parts.
+  - q: How long is the Tongariro Alpine Crossing?
+    a: About 19.4 to 20.4 km (12 to 12.7 miles) one way, depending on the source. DOC allows seven to eight hours from November to April and nine hours from May to October.
+  - q: Can you park at the start of the Tongariro Crossing?
+    a: Not in summer. DOC says there is no parking for crossing walkers at Mangatepōpō in summer, so most people use a shuttle; there is a private car park near the Ketetahi end.
+  - q: Can you do the Tongariro Alpine Crossing in winter?
+    a: Only with alpine skills, equipment and experience, as there is ice, snow and avalanche risk from May to late October. DOC says it is best to go with a guide.
+  - q: Is there water on the Tongariro Crossing?
+    a: No safe drinking water. DOC says to carry two to three litres each.
+  sources:
+  - label: Department of Conservation, Tongariro Alpine Crossing
+    url: https://doc.govt.nz/tongariroalpinecrossing
+    checked: '2026-11-07'
+  - label: Department of Conservation, Tongariro Northern Circuit
+    url: https://doc.govt.nz/tongarironortherncircuit
+    checked: '2026-11-07'
+  - label: Department of Conservation, Taranaki Falls Walk
+    url: https://doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/taranaki-falls-walking-track
+    checked: '2026-11-07'
+  - label: New Zealand Mountain Safety Council, Tramping - Tongariro Alpine Crossing
+    url: https://www.mountainsafety.org.nz/explore/local-prevention-initiatives/tramping-tongariro-alpine-crossing
+    checked: '2026-11-07'
+  - label: Tongariro Alpine Crossing | Stage by stage description of what to expect on the track
+    url: https://tongarirocrossing.org.nz/the-track
+    checked: '2026-11-07'
+  - label: Tongariro Alpine Crossing | Frequently Asked Questions - what you need to know pre-hike
+    url: https://www.tongarirocrossing.org.nz/tongariro-crossing/national-park/faqs
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Lifang Chen
+    line: Walked the crossing with four work colleagues, setting out from Rotorua in February 2026 after training on local tracks, and wrote about the steep sections, a teammate's cramp and the green shoots
+      after the fires.
+    title: 'Tongariro Crossing: How our team tackled the iconic one day walk - Opinion'
+    outlet: Rotorua Daily Post (NZ Herald)
+    url: https://www.nzherald.co.nz/rotorua-daily-post/news/tongariro-crossing-how-our-team-tackled-the-iconic-one-day-walk-opinion/IX42ZUD4CNARFOACTL3XNUWIJI/
+    checked: '2026-11-07'
+  related:
+  - climb-mount-st-helens
+  - walk-yorkshire-three-peaks
+  - hike-mount-washington
+  - climb-yr-wyddfa
   book:
   - label: Tongariro Alpine Crossing shuttles and guided walks on Viator
     why: there is no summer parking at the start, so most people book a shuttle
@@ -10887,9 +11411,12 @@
   - name: Trekking poles
     why: they take some of the load off your knees on long descents
     url: https://www.amazon.co.uk/s?k=trekking+poles
-  photo_file: "File:Emerald Lakes, NZ.jpg"
-  photo_caption: "The Emerald Lakes seen from Red Crater on the Tongariro Alpine Crossing, 2018."
-  photo_alt: "Bright green crater lakes in a barren volcanic landscape below a rust-coloured peak."
+  - name: Hydration bladder
+    why: there is no safe drinking water on the track, so check it holds at least two litres
+    url: https://www.amazon.co.uk/s?k=hydration+bladder+2+litre
+  photo_file: File:Emerald Lakes, NZ.jpg
+  photo_caption: The Emerald Lakes seen from Red Crater on the Tongariro Alpine Crossing, 2018.
+  photo_alt: Bright green crater lakes in a barren volcanic landscape below a rust-coloured peak.
   photo_checked: '2026-11-01'
 - id: walk-the-camino-to-santiago
   title: Walk the last 100 km of a Camino to Santiago
@@ -11121,18 +11648,171 @@
   company: either
   regions:
   - world
-  places: [CHL]
-  why: The W Trek takes you through the granite towers, glaciers and lakes of Torres del Paine National Park in Chilean Patagonia. It needs reservations; if you only have a day, the walk to the base of the towers does not.
+  places:
+  - CHL
+  why: The W Trek takes you through the granite towers, glaciers and lakes of Torres del Paine National Park in Chilean Patagonia. It needs reservations; if you only have a day, the walk to the base of
+    the towers does not.
   start:
   - Read the park's 2026 travel advice and its reservation system page, and book your nights on the W first.
   - Pack for rain, wind and snow in one day, with three layers and good waterproofs.
-  - Register at every ranger station on the way, as the trails have no phone signal.
+  - Register at every ranger station on the way, as phone signal is not guaranteed on the trails.
   links:
   - label: Parque Nacional Torres del Paine, recommendations for your 2026 trip
     url: https://parquetorresdelpaine.cl/recomendaciones-para-su-viaje-2026/
     region: world
     checked: '2026-10-27'
+  - label: 'Chile Travel: W Circuit day-by-day itinerary (Spanish)'
+    url: https://chile.travel/itinerarios/circuito-w-de-torres-del-paine-la-guia-definitiva/
+    region: world
+    checked: '2026-11-07'
+  - label: 'Las Torres Patagonia: how to buy the park admission pass'
+    url: https://helpcenter.lastorres.com/en/help-center-las-torres-patagonia/admission-pass
+    region: world
+    checked: '2026-11-07'
+  - label: 'Vertice Travel: how to reach its refuges and campsites'
+    url: https://verticetravel.freshdesk.com/en/support/solutions/articles/42000115686-how-to-reach-our-refuges-and-campsites
+    region: world
+    checked: '2026-11-07'
+  - label: 'GOV.UK: Chile entry requirements'
+    url: https://gov.uk/foreign-travel-advice/chile/entry-requirements
+    region: uk
+    checked: '2026-11-07'
   safety: Patagonian weather changes quickly and rivers rise after rain or thaw; do not cross if the water is above your knees.
+  inspire:
+  - kind: read
+    person: Sharon Quigley, from Ireland
+    line: Hiked alone for seven days in Torres del Paine, carrying her own tent and food, and when the Gardner Pass was closed as unsafe she turned back and finished on the western leg of the W towards
+      Glacier Grey.
+    title: 'Going solo: A walk like no other in Patagonia'
+    outlet: The Irish Times
+    url: https://www.irishtimes.com/life-and-style/travel/long-haul/going-solo-a-walk-like-no-other-in-patagonia-1.3352096
+    checked: '2026-11-07'
+  seo_title: 'W Trek Torres del Paine: how to book, and the itinerary'
+  description: How to book and plan the W Trek in Torres del Paine, with the route and distances, campsites and refugios, park tickets, the Base Torres climb and seasons.
+  detail:
+  - h: What the W is really like
+    p:
+    - The W is a linear route of about 70 km (43 miles) through Torres del Paine National Park in Chilean Patagonia. Its three "arms" run up to the base of the granite towers, into the Valle del Francés
+      and out to Glacier Grey, and you finish a long way from where you started. Chile's tourism board describes it as four to six days of demanding walking, with days of up to eight hours.
+    - Chile Travel's own five-day plan starts at the Laguna Amarga gate, about two hours by road from Puerto Natales. Day one walks to Refugio Central; day two climbs to the Base of the Towers and back,
+      which takes eight to ten hours; day three follows Lago Nordenskjöld to Los Cuernos or the Francés sector; day four climbs the Valle del Francés, with your big pack left at Campamento Italiano, then
+      carries on to Paine Grande; day five is a round trip of about eight hours to the Grey viewpoints before the catamaran across Lago Pehoé to Pudeto and the bus out.
+    - Puerto Natales itself is about three hours (250 km, 155 miles) by road from Punta Arenas airport, and Puerto Natales has its own airfield with direct flights, mainly in high season.
+  - h: Book your nights first, then the park ticket
+    p:
+    - Book every night before anything else. The park's mountain protocol says you need a confirmed campsite or refugio reservation for each night, and without one you cannot stay more than a day on the
+      W. Chile Travel suggests booking six months or more ahead.
+    - Different companies run different sites. Vertice runs Paine Grande, Grey, Dickson and Los Perros, and says none of its sites can be reached by car; Paine Grande is reached by the Lago Pehoé boat and
+      Grey by the Lago Grey boat plus a walk along the beach. Other campsites and huts on the W are run by Las Torres Patagonia.
+    - 'The entry ticket comes from CONAF, the national parks service, and is sold online only, in advance, at pasesparques.cl. Since 1 May 2026 there are two kinds: a one-day ticket, and a ticket for two
+      or more days that covers up to ten days in a row. Prices are listed on that site. There is no internet at the park entrance, so carry it printed or as a screenshot.'
+    - You register on the way in at one of three gates (Laguna Amarga, Sarmiento or Serrano), and the ranger posts on the trails keep sign-in books asking for your name, document number, where you are staying
+      and when you expect to leave.
+    - The catamaran from Pudeto to Paine Grande takes about 30 minutes and was last listed at 27,000 Chilean pesos for 2025-26. You need the ticket's QR code and your ID to board.
+  - h: The hard parts
+    list:
+    - Wind. The path to the Base of the Towers crosses the Paso de los Vientos, a narrow, exposed stretch where you can expect wind, and rangers can close any sector at once if conditions turn dangerous.
+    - Weather that changes by the hour. Las Torres Patagonia warns of cold wind in the morning and strong sun later; one Irish Times writer went from sunscreen to snow within minutes.
+    - The final climb to the towers. The last section, La Morrena, is a steep, rocky moraine with no shade. The route tops out at about 850 metres (2,790 feet), and the round trip from Hotel Las Torres
+      is 22 km (13.7 miles), about eight hours.
+    - Long days with fixed hours. Walking outside the park's set hours or at night is not allowed, so plan each day to finish in time.
+    - Logistics. The W ends far from where it starts, so buses, the Pehoé catamaran and your bookings all have to line up.
+  - h: When to go and what to carry
+    p:
+    - Chile Travel recommends spring and summer in the southern hemisphere. Winter rules normally start on 1 May (in 2026 CONAF started them on 27 April because of the weather), and in winter anyone on
+      the W or the Base Torres trail must have a CONAF-approved guide.
+    - Pack layers (thermal, fleece and waterproof), high-cut waterproof walking boots that are already broken in, a hat, gloves and sunscreen. Carry a refillable bottle (you can fill it at Refugio Chileno
+      on the way to the towers) and a bag for all your rubbish, as there are no bins on the trail. Poles help on the moraine and the descents. In winter conditions the park adds microspikes, gloves and
+      goggles to its kit list. Fires are banned.
+  - h: Refugios, camping, a guide, a day hike or the O
+    table:
+      head:
+      - Option
+      - Length (as listed)
+      - What you book
+      - What you carry
+      - Good to know
+      rows:
+      - - Independent with refugios
+        - 4 to 6 days; about 70 km (43 miles)
+        - A refugio bed for every night
+        - Clothes and trail food
+        - The five-day Chile Travel plan uses Central, Los Cuernos or Francés, and Paine Grande
+      - - Independent camping
+        - 4 to 6 days; about 70 km (43 miles)
+        - A campsite pitch for every night
+        - Tent, stove and food
+        - 'The same rule applies: no reservation means no more than one day on the W'
+      - - Guided tour
+        - Set by the operator
+        - Check what the tour includes
+        - Depends on the tour
+        - Required by CONAF in winter on the W and Base Torres; the park suggests accredited guides at other times
+      - - Day hike to Base Torres only
+        - 22 km (13.7 miles) round trip; about 8 hours
+        - Park entry ticket; no overnight booking
+        - Day pack
+        - Starts from Hotel Las Torres; its Welcome Center opens at 9am
+      - - The O circuit
+        - 9 days; 93 km (58 miles)
+        - Every campsite or refugio before you enter the park
+        - Full pack
+        - Crosses the John Gardner Pass at 1,200 m (3,940 ft) on a 10 to 12 hour day; rated as needing very good fitness and experience
+    after: Which way round? Chile Travel's itinerary runs east to west, starting at Laguna Amarga with the towers and ending with the boat from Paine Grande. Walk it the other way and you start with the
+      catamaran from Pudeto and finish at the towers. Whichever you choose, your bookings must match the order you walk, so fix the direction before you reserve.
+  faq:
+  - q: How many days do you need for the W Trek?
+    a: Chile Travel describes the W as four to six days of walking. Its own day-by-day itinerary takes five days and four nights.
+  - q: How long is the W Trek in km and miles?
+    a: About 70 km (43 miles), as Chile Travel gives it. It is a linear route, so you finish at a different point from where you start.
+  - q: Do you need reservations to hike the W Trek?
+    a: Yes. CONAF requires a confirmed campsite or refugio reservation for every night, and without one you cannot stay more than one day on the W.
+  - q: How do I buy a Torres del Paine entrance ticket?
+    a: Online only, in advance, from CONAF at pasesparques.cl. Since 1 May 2026 there is a one-day ticket and a ticket for two or more days that is valid for up to ten days in a row.
+  - q: How long is the hike to Base Torres?
+    a: Las Torres Patagonia gives 22 km (13.7 miles) there and back from Hotel Las Torres, about four hours each way. The last stretch is a steep, rocky moraine.
+  - q: Can you hike the W Trek in winter?
+    a: Only with a guide. From the start of the winter season, normally 1 May, CONAF requires anyone on the W or the Base Torres trail to have an approved guide.
+  sources:
+  - label: CONAF, Protocolo de Operación en Circuitos de Montaña, Parque Nacional Torres del Paine (PDF)
+    url: https://parquetorresdelpaine.cl/wp-content/uploads/2026/01/Protocolo-de-Operaciones-en-Montana.pdf
+    checked: '2026-11-07'
+  - label: Chile Travel, Circuito W de Torres del Paine, La guía definitiva
+    url: https://chile.travel/itinerarios/circuito-w-de-torres-del-paine-la-guia-definitiva/
+    checked: '2026-11-07'
+  - label: Chile Travel, Circuito W
+    url: https://chile.travel/atractivos/circuito-w/
+    checked: '2026-11-07'
+  - label: 'Chile Travel, Torres del Paine O Circuit: The ultimate adventure'
+    url: https://chile.travel/en/itineraries/torres-del-paine-o-circuit-the-ultimate-adventure/
+    checked: '2026-11-07'
+  - label: GOV.UK, Chile travel advice, entry requirements
+    url: https://gov.uk/foreign-travel-advice/chile/entry-requirements
+    checked: '2026-11-07'
+  - label: 'CNN Chile, Conaf informa: Desde este viernes 1 de mayo comienza a regir nuevo sistema tarifario para entrar a Torres del Paine'
+    url: https://www.cnnchile.com/pais/conaf-informa-desde-viernes-1-de-mayo-comienza-a-regir-nuevo-sistema-tarifario-para-entrar-a-torres-del-paine/
+    checked: '2026-11-07'
+  - label: 'El Mostrador, Torres del Paine cambia su sistema de tarifas desde el 1 de mayo: cómo funciona y dónde comprar las entradas'
+    url: https://www.elmostrador.cl/datos-utiles/2026/06/10/torres-del-paine-nuevo-sistema-tarifario-1-mayo-2026-precios-como-funciona/
+    checked: '2026-11-07'
+  - label: Las Torres Patagonia Help Center, Admission pass
+    url: https://helpcenter.lastorres.com/en/help-center-las-torres-patagonia/admission-pass
+    checked: '2026-11-07'
+  - label: Las Torres Patagonia Help Center, Time to Base Torres
+    url: https://helpcenter.lastorres.com/en/help-center-las-torres-patagonia/time-to-base-torres
+    checked: '2026-11-07'
+  - label: Las Torres Patagonia Sustainability, 5 Must-Dos to Reach Base Torres
+    url: https://sustainability.lastorres.com/blog/5-must-dos-to-reach-base-torres
+    checked: '2026-11-07'
+  - label: Vertice Travel, How to Reach Our Refuges and Campsites
+    url: https://verticetravel.freshdesk.com/en/support/solutions/articles/42000115686-how-to-reach-our-refuges-and-campsites
+    checked: '2026-11-07'
+  - label: Catamaran Lago Pehoé on WeTravel, PUDETO - PAINE GRANDE /2025-26
+    url: https://www.wetravel.com/trips/pudeto-paine-grande-2025-26-catamaran-lago-pehoe-74946194
+    checked: '2026-11-07'
+  - label: 'The Irish Times, Going solo: A walk like no other in Patagonia'
+    url: https://www.irishtimes.com/life-and-style/travel/long-haul/going-solo-a-walk-like-no-other-in-patagonia-1.3352096
+    checked: '2026-11-07'
   book:
   - label: Compare W Trek tours on Viator
     why: trips that include the refuge or campsite bookings the W needs
@@ -11152,9 +11832,14 @@
   - name: Waterproof overtrousers
     why: Patagonian rain and wind come sideways
     url: https://www.amazon.co.uk/s?k=waterproof+overtrousers
-  photo_file: "File:Las Torres, Torres del Paine, Chile.jpg"
-  photo_caption: "Las Torres, the towers of Torres del Paine, Patagonia, 2018."
-  photo_alt: "Three granite towers rise above a turquoise glacial lake and rocky slopes."
+  related:
+  - hike-the-inca-trail-to-machu-picchu
+  - walk-the-laugavegur-trail
+  - walk-tongariro-alpine-crossing
+  - climb-kilimanjaro
+  photo_file: File:Las Torres, Torres del Paine, Chile.jpg
+  photo_caption: Las Torres, the towers of Torres del Paine, Patagonia, 2018.
+  photo_alt: Three granite towers rise above a turquoise glacial lake and rocky slopes.
   photo_checked: '2026-11-01'
 - id: walk-the-kumano-kodo
   title: Walk the Kumano Kodo pilgrimage trail in Japan
@@ -12928,3 +13613,1721 @@
   - record-a-life-story
   - learn-calligraphy
   - finish-an-openlearn-course
+- id: paint-in-acrylics
+  title: Learn to paint in acrylics
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Acrylic is a water-based paint that dries fast, and with more or less water it can look like watercolour or like oil. That makes it a forgiving first paint, and many beginners' painting courses start
+    with it.
+  start:
+  - 'Find a beginners'' painting course that uses acrylics: an adult education college such as City Lit or Morley College in London, or an art centre such as 92NY in New York.'
+  - Ask for the supply list before you book, and check whether paint, brushes and boards are included in the fee.
+  - Buy a small set of paints (the three primaries plus black and white is a common list), a few round and flat brushes, and a pad of acrylic paper or some canvas boards.
+  links:
+  - label: 'City Lit: beginners'' painting courses (London)'
+    url: https://www.citylit.ac.uk/courses/art-and-design/painting/beginners
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Morley College: Painting for Beginners (London)'
+    url: https://morleycollege.ac.uk/courses/short-courses/painting-for-beginners/
+    region: uk
+    checked: '2026-11-07'
+  - label: '92NY: Acrylic Painting for Absolute Beginners (New York)'
+    url: https://www.92ny.org/class/acrylic-painting-for-absolute-beginners
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Acrylic painting classes for beginners: what to expect'
+  description: What a beginners' acrylic painting class covers, the brushes and paints you are asked to bring, and what courses cost in London and New York.
+  detail:
+  - h: What it's really like
+    p:
+    - Tate describes acrylic as a water-based, fast-drying paint, first made in the 1950s, that uses a synthetic resin to bind the pigment. Thinned with water it can look like watercolour; used thick it
+      can look like oil. Once dry it is waterproof. David Hockney was an early champion and used it for some of his best-known 1960s pictures.
+    - Beginners' classes are mostly about looking and mixing. Morley College's Painting for Beginners starts with acrylic and also covers watercolour and oil, and has you practise different brushes and
+      marks while painting objects, images and portraits from observation. 92NY's beginners' class covers basic forms, perspective, value and tone, texture and the basics of colour theory.
+    - Most courses expect you to bring your own kit. Morley's list asks for red, yellow and blue plus black and white, hog or synthetic round, flat and filbert brushes in several sizes, a water jar, kitchen
+      towel, a B pencil and a pad of A3 acrylic paper or canvas boards.
+  - h: Ways in, side by side
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Painting for beginners, including acrylic from still life; four dates from January 2027
+        - £179, or £143 senior and £116 concession
+      - - Morley College, London
+        - Painting for Beginners, ten Wednesday evenings of three hours, starting with acrylic; from January 2027
+        - £450, or £340 concession
+      - - 92NY, New York
+        - Acrylic Painting for Absolute Beginners, weekly classes from November to December; no experience necessary
+        - $350 for the two-hour evening classes, $420 for the two-and-a-half-hour daytime ones
+    after: Check whether materials are included. Morley's page lists everything as something to bring; 92NY links to a separate supply list.
+  faq:
+  - q: Is acrylic easier than watercolour for beginners?
+    a: They behave differently. Tate says acrylic dries fast and is waterproof once dry, and that with water it can be made to look like watercolour or oil. Morley College's beginners' course starts with
+      acrylic before watercolour and oil.
+  - q: What do I need for an acrylic painting class?
+    a: 'A typical list from Morley College: red, yellow and blue paint plus black and white, round, flat and filbert brushes, a water jar, kitchen towel, a B pencil and A3 acrylic paper or canvas boards.'
+  - q: Do I need any experience for a beginners' acrylic class?
+    a: No. 92NY's Acrylic Painting for Absolute Beginners says no experience is necessary, and Morley's course suits beginners and people wanting a refresher.
+  - q: How much does an acrylic painting course cost?
+    a: As last listed, City Lit's Painting for beginners is £179 (less for seniors and concessions), Morley's ten-week course is £450, and 92NY's beginners' class in New York is $350 to $420.
+  sources:
+  - label: Tate, Acrylic paint (art term)
+    url: https://www.tate.org.uk/art/art-terms/acrylic-paint
+    checked: '2026-11-07'
+  - label: City Lit, Beginners painting courses
+    url: https://www.citylit.ac.uk/courses/art-and-design/painting/beginners
+    checked: '2026-11-07'
+  - label: Morley College London, Painting for Beginners
+    url: https://morleycollege.ac.uk/courses/short-courses/painting-for-beginners/
+    checked: '2026-11-07'
+  - label: 92NY, Acrylic Painting for Absolute Beginners
+    url: https://www.92ny.org/class/acrylic-painting-for-absolute-beginners
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Robert Preece, Benalla, Victoria, Australia
+    line: Started painting landscapes in acrylics in January 2024, working from his own photos and those of family and friends, and had his first exhibition at Benalla Art Gallery's shop in June 2026.
+    title: Benalla Art Gallery supports artist's new creative journey
+    outlet: Benalla Ensign (Country News)
+    url: https://www.countrynews.com.au/news/benalla-art-gallery-supports-artists-new-creative-journey/
+    checked: '2026-11-07'
+  kit:
+  - name: Acrylic paint set
+    why: a basic set of colours to start; check it includes white, which you use a lot of
+    url: https://www.amazon.co.uk/s?k=acrylic+paint+set
+  - name: Acrylic brush set
+    why: round, flat and filbert brushes in several sizes, synthetic or hog
+    url: https://www.amazon.co.uk/s?k=acrylic+brush+set+synthetic
+  - name: A3 acrylic paper pad or canvas boards
+    why: a surface that takes acrylic; check the size your class asks for
+    url: https://www.amazon.co.uk/s?k=a3+acrylic+paper+pad
+  - name: Stay-wet palette
+    why: keeps fast-drying acrylic paint workable for longer while you paint
+    url: https://www.amazon.co.uk/s?k=stay+wet+palette+acrylic
+  related:
+  - paint-in-watercolour
+  - learn-to-draw
+  - enter-the-summer-exhibition
+  - make-a-linocut-print
+- id: learn-to-draw
+  title: Learn to draw
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Drawing is mostly a way of looking, and a short beginners' course teaches the basics of line, tone, proportion and perspective that everything else in art builds on. All you need is a pencil, an
+    eraser and paper.
+  start:
+  - Book a short beginners' drawing course at an adult education college, a council adult learning service or an art centre.
+  - 'Buy the basics if they are not supplied: an HB and a 2B pencil, a kneadable eraser and an A4 sketchbook.'
+  - Draw one simple object at home between sessions, looking more at the object than at the paper.
+  links:
+  - label: 'City Lit: Drawing for beginners (London)'
+    url: https://www.citylit.ac.uk/courses/drawing-for-beginners
+    region: uk
+    checked: '2026-11-07'
+  - label: 'City Lit: all beginners'' drawing courses'
+    url: https://www.citylit.ac.uk/courses/art-and-design/drawing-courses/beginners
+    region: uk
+    checked: '2026-11-07'
+  - label: '92NY: Drawing for Beginners (New York)'
+    url: https://www.92ny.org/class/drawing-for-beginners
+    region: us
+    checked: '2026-11-07'
+  - label: 'Art Students League of New York: how to get started'
+    url: https://www.artstudentsleague.org/resources/how-to-get-started
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Drawing classes for beginners: what you learn and cost'
+  description: What a beginners' drawing course teaches, from line and tone to perspective, what to bring, and what classes cost in the UK and New York.
+  detail:
+  - h: What it's really like
+    p:
+    - A beginners' course starts with simple objects. City Lit's Drawing for beginners works through mark-making, tone from light to dark, the way light falls on basic forms, positive and negative space,
+      and simple composition. It is aimed at people with little or no drawing experience, and paper and drawing media are provided.
+    - Some courses are more traditional. A Cumbrian adult learning course has beginners copy a lithograph from the Charles Bargue drawing course, with lessons in measuring, proportion and using tone to
+      make forms look solid. 92NY in New York covers line, shape, shadow, value, tone, form and perspective, with demonstrations and critiques.
+    - The hard part is that three evenings is only a start. City Lit points students on to Drawing 1, Life drawing for beginners or Portraits 1, and the Art Students League in New York runs classes month
+      by month with no entrance requirements, so you can keep going.
+  - h: Ways in, side by side
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Drawing for beginners, three evenings of three hours, or two Sundays; materials provided
+        - £179 evening or £209 weekend; less for seniors and concessions
+      - - Penrith Adult Learning, Cumbria
+        - Beginners Drawing, Classical Drawing Foundations, four Wednesday afternoons; spring 2026 run
+        - £65, or £32.50 concessionary
+      - - 92NY, New York
+        - Drawing for Beginners, weekly from November to December; pencil, eraser and paper
+        - $350 to $480 depending on the session
+      - - Art Students League of New York
+        - Ongoing monthly classes; no entrance requirements or examinations
+        - Monthly tuition plus a $100 annual registration fee
+    after: The Art Students League also runs open sketch sessions you can try up to three times before paying the annual fee.
+  faq:
+  - q: Can anyone learn to draw?
+    a: Beginners' courses are built on that idea. City Lit's course is for people with little or no drawing experience, and the Art Students League has no entrance requirements or examinations.
+  - q: What do you learn in a beginners' drawing class?
+    a: Typically line, tone, light and shade, proportion and perspective. 92NY's class lists line, shape, shadow, value, tone, form and perspective.
+  - q: What do I need to bring to a drawing class?
+    a: Often very little. City Lit provides all materials for Drawing for beginners; a Cumbrian course asked for an A4 sketchbook, 2B and HB pencils, a kneadable eraser and a drawing board.
+  - q: How much is a beginners' drawing course?
+    a: As last listed, from £65 for four afternoons in Penrith and £179 for City Lit's three evenings in London, to $350 to $480 for a term at 92NY in New York.
+  sources:
+  - label: City Lit, Drawing for beginners
+    url: https://www.citylit.ac.uk/courses/drawing-for-beginners
+    checked: '2026-11-07'
+  - label: City Lit, Beginners drawing courses
+    url: https://www.citylit.ac.uk/courses/art-and-design/drawing-courses/beginners
+    checked: '2026-11-07'
+  - label: Adult Learning Cumbria, Beginners Drawing - Classical Drawing Foundations (PEN25T115)
+    url: https://adultlearningcumbria.org/search-courses-0/beginners-drawing-classical-drawing-foundations-pen25t115
+    checked: '2026-11-07'
+  - label: 92NY, Drawing for Beginners
+    url: https://www.92ny.org/class/drawing-for-beginners
+    checked: '2026-11-07'
+  - label: Art Students League of New York, How to get started
+    url: https://www.artstudentsleague.org/resources/how-to-get-started
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Jesse Lee Kercheval, Madison, Wisconsin
+    line: The poet and novelist began drawing one picture a day in 2020 while living in Uruguay, went on to publish the graphic memoir French Girl, and had her first solo show, Drawn Lives, at Edgewood
+      University Gallery in Madison.
+    title: Prolific Wisconsin author picks up drawing later in life, lands solo exhibition
+    outlet: Wisconsin Public Radio
+    url: https://www.wpr.org/culture/wisconsin-author-jesse-lee-kercheval-drawing-exhibition
+    checked: '2026-11-07'
+  kit:
+  - name: Sketching pencil set
+    why: a range of grades from hard to soft; HB and 2B are the ones most classes ask for
+    url: https://www.amazon.co.uk/s?k=sketching+pencils+set
+  - name: Kneadable eraser
+    why: lifts graphite to lighten tone without rubbing holes in the paper
+    url: https://www.amazon.co.uk/s?k=kneadable+eraser
+  - name: A4 sketchbook
+    why: for practice between classes; check the paper weight suits pencil
+    url: https://www.amazon.co.uk/s?k=a4+sketchbook
+  related:
+  - go-to-a-life-drawing-class
+  - join-an-urban-sketchers-meet
+  - paint-in-acrylics
+  - learn-botanical-illustration
+- id: learn-botanical-illustration
+  title: Learn botanical illustration
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Botanical illustration means drawing a plant accurately enough to identify it, measured and observed leaf by leaf. Botanic gardens on both sides of the Atlantic run beginners' courses, and some lead
+    to full certificates and diplomas.
+  start:
+  - Book a short introductory course at a botanic garden, such as the two-day Introduction to Botanical Drawing at the Royal Botanic Garden Edinburgh.
+  - Buy the materials on the course list before you go; most courses do not supply them.
+  - If you want to keep going, look at the certificate routes, such as Lewis Ginter Botanical Garden's in Virginia or the Society of Botanical Artists' distance learning diploma.
+  links:
+  - label: 'Royal Botanic Garden Edinburgh: Introduction to Botanical Drawing'
+    url: https://rbgeshop.org/en-us/products/introduction-to-botanical-drawing-4
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Kew Gardens: short courses'
+    url: https://www.kew.org/learning/short-courses
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Lewis Ginter Botanical Garden: Botanical Illustration Certificate Program (Virginia)'
+    url: https://www.lewisginter.org/learn/adult-classes/garden-education-certificate-program/botanical-illustration-certificate-program/
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Botanical illustration courses for beginners: UK and US'
+  description: How to start botanical illustration, from a two-day beginners' course at a botanic garden to certificates and diplomas, with costs in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - It starts with drawing, not painting. The Royal Botanic Garden Edinburgh's two-day introduction has you look closely at plant specimens and make accurate measured drawings, then use tone to make them
+      look three-dimensional. Kew's five-day Fundamentals course covers drawing flowers and leaves using measurement and perspective, then watercolour and colour mixing.
+    - The longer routes are a serious commitment. RBGE's online Diploma in Botanical Illustration takes three years, recommends around 20 hours of study a week, is not designed for beginners, and costs
+      £4,950; RBGE recommends its Certificate first. The Society of Botanical Artists' distance learning diploma runs for 27 months, with 12 assignments posted to tutors for critique.
+    - Most courses expect you to bring your own materials. RBGE tells students what to buy before the course starts, and Kew links to a separate materials list.
+  - h: Ways in, side by side
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - Royal Botanic Garden Edinburgh
+        - Introduction to Botanical Drawing, two days, 21 and 22 November 2026; 14 places
+        - £140, or £126 for RBGE members
+      - - Kew Gardens, London
+        - Fundamentals of botanical illustration, five days; suitable for beginners (last run February 2026)
+        - £470, or £460 for Kew members
+      - - City Lit, London
+        - Drawing from plants and flowers, from January 2027
+        - £349, or £279 senior and £227 concession
+      - - Lewis Ginter Botanical Garden, Virginia
+        - Certificate of at least 303 hours; start with Introduction to Botanical Drawing I or Botanical Art History
+        - Certificate enrolment free; classes $12 to $15 an hour plus materials
+    after: The Society of Botanical Artists' 27-month diploma is taught by post, in graphite, pen and ink and a choice of watercolour, gouache or coloured pencil. Ask the Society for current fees.
+  faq:
+  - q: Can a beginner learn botanical illustration?
+    a: Yes. RBGE's two-day introduction is a beginners' course, and Kew's Fundamentals course says it suits beginners. Diplomas such as RBGE's are not designed for beginners.
+  - q: Do I need to be able to paint to learn botanical illustration?
+    a: No. RBGE's introduction is a drawing course using measurement and tone. Kew's Fundamentals course starts with drawing and then moves on to watercolour and colour mixing.
+  - q: How long does a botanical illustration diploma take?
+    a: RBGE's online diploma takes three years at around 20 hours a week. The Society of Botanical Artists' distance learning diploma runs for 27 months.
+  - q: How much does a botanical illustration course cost?
+    a: As last listed, £140 for RBGE's two-day introduction, £470 for Kew's five-day course, $12 to $15 an hour for classes at Lewis Ginter in Virginia, and £4,950 for RBGE's diploma.
+  sources:
+  - label: Royal Botanic Garden Edinburgh (Botanics Shop), Introduction to Botanical Drawing
+    url: https://rbgeshop.org/en-us/products/introduction-to-botanical-drawing-4
+    checked: '2026-11-07'
+  - label: Royal Botanic Garden Edinburgh, RBGE Diploma in Botanical Illustration (online) 2026
+    url: https://www.rbge.org.uk/media/cdfjbr1p/rbge-dip-bi-online-2026.pdf
+    checked: '2026-11-07'
+  - label: Kew Gardens, Fundamentals of botanical illustration
+    url: https://www.kew.org/kew-gardens/whats-on/fundamentals-of-botanical-illustration
+    checked: '2026-11-07'
+  - label: Kew Gardens, Short courses
+    url: https://www.kew.org/learning/short-courses
+    checked: '2026-11-07'
+  - label: City Lit, Beginners drawing courses
+    url: https://www.citylit.ac.uk/courses/art-and-design/drawing-courses/beginners
+    checked: '2026-11-07'
+  - label: Lewis Ginter Botanical Garden, Botanical Illustration Certificate Program
+    url: https://www.lewisginter.org/learn/adult-classes/garden-education-certificate-program/botanical-illustration-certificate-program/
+    checked: '2026-11-07'
+  - label: 'Mall Galleries, Rooted in Tradition: Celebrating the 2025 Graduates of the Society of Botanical Artists'' DLDC (2025)'
+    url: https://www.mallgalleries.org.uk/node/140586
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Caroline Jane Buckley, botanical artist
+    line: Graduated from the Society of Botanical Artists' distance learning diploma in 2023 with Distinction and became the first Artist-in-Residence for RHS Plant Review magazine.
+    title: 'Rooted in Tradition: Celebrating the 2025 Graduates of the Society of Botanical Artists'' DLDC'
+    outlet: Mall Galleries
+    url: https://www.mallgalleries.org.uk/node/140586
+    checked: '2026-11-07'
+  kit:
+  - name: Graphite pencil set
+    why: botanical drawing starts in graphite; a range of grades for line and tone
+    url: https://www.amazon.co.uk/s?k=graphite+drawing+pencils+set
+  - name: Dividers or a small ruler
+    why: for taking measurements from the specimen
+    url: https://www.amazon.co.uk/s?k=drawing+dividers
+  - name: Magnifying glass
+    why: for looking at small plant details; check the size and strength
+    url: https://www.amazon.co.uk/s?k=magnifying+glass+hand+lens
+  - name: Hot-pressed watercolour paper
+    why: smooth paper used for fine botanical detail; check the course list before buying
+    url: https://www.amazon.co.uk/s?k=hot+pressed+watercolour+paper
+  related:
+  - learn-to-draw
+  - paint-in-watercolour
+  - visit-an-open-garden
+  - become-a-master-gardener
+- id: learn-the-piano
+  title: Learn the piano as an adult beginner
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: year
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Group piano classes now run in digital piano labs, one instrument and a pair of headphones each, so you can start without owning a piano. City Lit's first year takes a complete beginner from the
+    layout of the keyboard to simple pieces with both hands together, reading music along the way.
+  start:
+  - Book a beginners' group class at an adult education college or a community college, or find a private teacher through EPTA UK or MTNA.
+  - 'Arrange something to practise on at home: City Lit says a digital piano will do for beginners, with full-size keys and 88 of them.'
+  - Practise little and often between lessons, and buy the class books before the first session.
+  links:
+  - label: 'City Lit: Piano/keyboards 1A, for absolute beginners (London)'
+    url: https://www.citylit.ac.uk/courses/piano-keyboards-1a/me206a-2425
+    region: uk
+    checked: '2026-11-07'
+  - label: 'EPTA UK: find a piano teacher by town, county or online'
+    url: https://epta-uk.org/find-a-teacher/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Music Teachers National Association: find a teacher by zip code and instrument'
+    url: https://certification.mtna.org/cgi/page.cgi/Find-a-Teacher.html
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Piano lessons for adult beginners: what to expect'
+  description: What adult beginners' piano classes cover, whether you need a piano at home, what group classes and teachers cost, and how to find a teacher.
+  detail:
+  - h: What it's really like
+    p:
+    - City Lit splits its piano teaching into levels that roughly match the ABRSM grades. Year 1 (classes 1A to 1C) starts with complete beginners and ends with simple pieces played hands together; Year
+      2 works up to grade 1 pieces. The first level, 1A, covers posture and hand shape, fingering in C position, note names and the treble and bass clefs.
+    - In-person classes take up to 15 students, each at a digital piano with headphones. Online classes need your own instrument. For home practice City Lit prefers an acoustic piano but says a digital
+      one suits beginners up to about its fourth level, and it suggests budgeting about £12 a term for music books.
+    - Expect steady rather than fast progress. Beverly Zweiben, interviewed by the Washington Post about ten years after her first lesson, was working on a Bartók piece called Slow Dance.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Piano/keyboards 1A: 11 weekly 90-minute group classes for absolute beginners'
+        - £249, or £199 senior on daytime classes and £174 concession (autumn 2025 listing)
+      - - Shoreline Community College continuing education
+        - 'Adult Piano - Beginner: seven 50-minute Monday evening classes, winter 2026'
+        - $299
+      - - Private teacher (UK)
+        - One-to-one lessons; EPTA UK lists member teachers by town and county, including online teachers
+        - Set by each teacher; EPTA's page gives no fees
+      - - Private teacher (US)
+        - One-to-one lessons; MTNA's finder searches by zip code and teaching area, with an online lessons option
+        - Set by each teacher; MTNA's page gives no fees
+    after: MTNA's advice is to interview several teachers before choosing, ask for their written studio policy, ask how much daily practice they expect, and ask if you can attend a student recital.
+  faq:
+  - q: Do I need a piano at home to learn the piano?
+    a: For practice, yes. City Lit says a digital piano suits beginners up to about its fourth level and advises full-size keys and 88 of them. Its in-person classes provide a digital piano and headphones
+      for each student.
+  - q: Can adults learn piano in a group class?
+    a: Yes. City Lit runs beginners' piano classes of up to 15 students, and some US community colleges run adult beginner classes through their continuing education programmes.
+  - q: How much do adult piano lessons cost?
+    a: As last listed, City Lit's 11-week beginners' class was £249 and Shoreline Community College's seven-week adult class $299. Private teachers set their own fees, so ask before booking.
+  - q: How do I find a good piano teacher?
+    a: Search EPTA UK's directory in the UK or MTNA's finder in the US. MTNA suggests interviewing several teachers and asking about their training, studio policy and practice expectations.
+  sources:
+  - label: City Lit, Piano at City Lit (1 July 2022)
+    url: https://www.citylit.ac.uk/blog/choosing-piano-class-city-lit
+    checked: '2026-11-07'
+  - label: City Lit, Piano/keyboards 1A
+    url: https://www.citylit.ac.uk/courses/piano-keyboards-1a/me206a-2425
+    checked: '2026-11-07'
+  - label: Shoreline Community College continuing education, Youth and Adult Piano, Winter 2026 (PDF)
+    url: https://www.shoreline.edu/continuing-ed/documents/web-Cascade%20%E2%80%93%20Youth%20and%20Adult%20Piano%20-%20Winter2026.pdf
+    checked: '2026-11-07'
+  - label: The European Piano Teachers Association (UK), Find a Teacher
+    url: https://epta-uk.org/find-a-teacher/
+    checked: '2026-11-07'
+  - label: Music Teachers National Association, Find a Teacher
+    url: https://certification.mtna.org/cgi/page.cgi/Find-a-Teacher.html
+    checked: '2026-11-07'
+  - label: Music Teachers National Association, Choosing a Music Teacher
+    url: https://www.mtna.org/Choosing_a_Music_Teacher.html
+    checked: '2026-11-07'
+  - label: The Spokesman-Review (from the Washington Post), More older adults learn it's never too late to pick up a musical instrument (14 November 2016)
+    url: https://www.spokesman.com/stories/2016/nov/14/more-older-adults-learn-its-never-too-late-to-pick
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Beverly Zweiben
+    line: Signed up for piano lessons after seeing a teacher's offer at her workplace and, ten years on, was learning Bartók's Slow Dance.
+    title: More older adults learn it's never too late to pick up a musical instrument
+    outlet: The Spokesman-Review (from the Washington Post)
+    url: https://www.spokesman.com/stories/2016/nov/14/more-older-adults-learn-its-never-too-late-to-pick
+    checked: '2026-11-07'
+  kit:
+  - name: Digital piano
+    why: for practice at home; check it has 88 full-size keys, as City Lit advises
+    url: https://www.amazon.co.uk/s?k=digital+piano+88+keys
+  - name: Piano headphones
+    why: practise without disturbing anyone; check the plug fits your piano's socket
+    url: https://www.amazon.co.uk/s?k=headphones+for+digital+piano
+  - name: Adjustable piano stool
+    why: sets you at the right height for good posture at the keys
+    url: https://www.amazon.co.uk/s?k=adjustable+piano+stool
+  related:
+  - take-a-music-grade
+  - play-one-piece-for-someone
+  - learn-the-ukulele
+  - join-community-orchestra-or-band
+- id: learn-the-guitar
+  title: Learn the guitar
+  category: think
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A handful of chords and a strumming pattern are enough to play along to songs, and the same instrument leads to folk, blues, rock or classical music. Beginners' classes at colleges in the UK and
+    US teach tuning, chords and tablature in a term.
+  start:
+  - Choose a beginners' class at an adult education college or a community college, and check which kind of guitar it asks you to bring.
+  - Borrow or buy a guitar and a clip-on tuner, and ask a music shop to check that the strings are not set too high.
+  - Play for 10 to 15 minutes every day while your fingertips toughen up.
+  links:
+  - label: 'Abingdon & Witney College: Guitar - Beginners'
+    url: https://abingdon-witney.ac.uk/courses/guitar-beginners-2157085
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Imperial College London evening classes: introduction to guitar'
+    url: https://www.imperial.ac.uk/evening-classes/winter-courses-list/introduction-to-guitar/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'North Seattle College continuing education: Beginning Guitar'
+    url: https://conted.northseattle.edu/courses/beginning-guitar
+    region: us
+    checked: '2026-11-07'
+  - label: 'Music Teachers National Association: find a guitar teacher by zip code'
+    url: https://certification.mtna.org/cgi/page.cgi/Find-a-Teacher.html
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Guitar lessons for adult beginners: classes and costs'
+  description: How to start the guitar as an adult beginner, which guitar to bring, why fingertips hurt at first, and what college classes cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - Beginners' classes start with tuning, hand position and a set of common chords, then add strumming patterns, tablature (TAB, a simple way of writing where to put your fingers) and songs. Abingdon
+      & Witney's class also teaches reading music; Imperial's covers pop, rock, blues and folk and asks for short nails.
+    - 'The hard part comes first: sore fingertips. Fender says the soreness can last a week or more and eases as calluses form. Its advice is to play a little every day, about 10 to 15 minutes, to press
+      no harder than you need, and to have a shop check the action (the height of the strings above the neck) if fretting feels hard.'
+    - Nylon-string classical guitars are easier on the fingers than steel-string acoustics, Fender says, and electrics use lighter strings again. All three classes below ask you to bring your own guitar,
+      and two specify an acoustic. If you want classical guitar, City Lit runs a separate course from 1A for complete beginners upwards.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - Abingdon & Witney College, at Cheney School
+        - Weekly 90-minute Monday evening class for absolute beginners, autumn 2025; bring your own guitar
+        - £137.28, or £68.64 reduced fee
+      - - Imperial College London evening classes, South Kensington
+        - 20 weeks of two-hour Monday classes across two terms, 2025-26; acoustic guitar needed
+        - £560 standard (£504 early bird)
+      - - North Seattle College continuing education
+        - Beginning Guitar, fall 2026; bring an acoustic guitar and the two required method books
+        - $170
+    after: For one-to-one lessons in the US, MTNA's teacher finder lets you choose guitar as the teaching area and search by zip code or for online lessons.
+  faq:
+  - q: Which guitar is best for a beginner, acoustic, classical or electric?
+    a: It depends on the class and the music you want to play. Fender says nylon-string classical guitars are easier on the fingers than steel-string acoustics and electrics use lighter strings; many beginners'
+      classes ask for an acoustic.
+  - q: How long do your fingers hurt when learning guitar?
+    a: Fender says the soreness can last a week or more and eases as calluses form. It suggests 10 to 15 minutes of playing a day at first.
+  - q: Do I need my own guitar for guitar lessons?
+    a: Usually. Abingdon & Witney, Imperial College and North Seattle College all ask beginners to bring their own guitar.
+  - q: Do I need to read music to learn the guitar?
+    a: No. Beginners' classes teach chords and tablature, and Imperial's course says no previous experience of music is needed. Some classes, such as Abingdon & Witney's, also teach reading music.
+  sources:
+  - label: Abingdon & Witney College, Guitar - Beginners
+    url: https://abingdon-witney.ac.uk/courses/guitar-beginners-2157085
+    checked: '2026-11-07'
+  - label: Imperial College London evening classes, Introduction to guitar
+    url: https://www.imperial.ac.uk/evening-classes/winter-courses-list/introduction-to-guitar/
+    checked: '2026-11-07'
+  - label: North Seattle College continuing education, Beginning Guitar
+    url: https://conted.northseattle.edu/courses/beginning-guitar
+    checked: '2026-11-07'
+  - label: Fender, How to minimize finger pain playing guitar
+    url: https://www.fender.com/articles/techniques/how-to-minimize-finger-pain-playing-guitar
+    checked: '2026-11-07'
+  - label: City Lit, Choosing a String class at City Lit (13 June 2022)
+    url: https://www.citylit.ac.uk/blog/choosing-string-class-city-lit
+    checked: '2026-11-07'
+  - label: Music Teachers National Association, Find a Teacher
+    url: https://certification.mtna.org/cgi/page.cgi/Find-a-Teacher.html
+    checked: '2026-11-07'
+  - label: Malay Mail (AFP), Guitar-slinging Singapore granny shreds stereotypes (8 August 2017)
+    url: https://www.malaymail.com/news/life/2017/08/08/guitar-slinging-singapore-granny-shreds-stereotypes/1438111
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Mary Ho, Singapore
+    line: Taught herself acoustic guitar from a book, found a teacher to learn Santana's Samba Pa Ti, and has since recorded an album and been booked to play Singapore's National Day Parade.
+    title: Guitar-slinging Singapore granny shreds stereotypes
+    outlet: Malay Mail (AFP)
+    url: https://www.malaymail.com/news/life/2017/08/08/guitar-slinging-singapore-granny-shreds-stereotypes/1438111
+    checked: '2026-11-07'
+  kit:
+  - name: Clip-on guitar tuner
+    why: tunes the guitar before every practice; check it works for guitar
+    url: https://www.amazon.co.uk/s?k=clip+on+guitar+tuner
+  - name: Spare strings
+    why: for when one breaks; check nylon or steel to match your guitar
+    url: https://www.amazon.co.uk/s?k=acoustic+guitar+strings+light
+  - name: Guitar stand
+    why: keeps the guitar out and ready, so short daily practice is easier
+    url: https://www.amazon.co.uk/s?k=guitar+stand
+  related:
+  - learn-the-ukulele
+  - play-one-piece-for-someone
+  - join-rock-choir
+  - take-a-music-grade
+- id: learn-the-violin
+  title: Learn the violin or fiddle
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: year
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The violin and the fiddle are the same instrument; the difference is whether you play classical music from the page or folk, country and bluegrass, often by ear. Adult beginners can learn in groups,
+    and some late starters' orchestras put you in an orchestra from your first session.
+  start:
+  - Hire a violin before buying one, and get a bow, rosin and a shoulder rest with it.
+  - Book a beginners' class for complete beginners, such as City Lit's Violin and viola 1A or a community college adult strings group.
+  - Look for a late starters' orchestra or beginners' string group near you, so you play with others from the start.
+  links:
+  - label: 'City Lit: Violin and viola 1A, for complete beginners (London)'
+    url: https://www.citylit.ac.uk/courses/violin-and-viola-1a
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Making Music: the East London Late Starters Orchestra story'
+    url: https://www.makingmusic.org.uk/node/47609
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Laramie County Community College: Adult Orchestra - Beginner (Wyoming)'
+    url: https://lccc.coursestorm.com/course/orchestra-adult-beginner
+    region: us
+    checked: '2026-11-07'
+  - label: 'Music Teachers National Association: find a violin teacher by zip code'
+    url: https://certification.mtna.org/cgi/page.cgi/Find-a-Teacher.html
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Violin lessons for adult beginners: classes and orchestras'
+  description: How adult beginners learn the violin or fiddle, what a first class covers, whether you need your own instrument, and where beginners play together.
+  detail:
+  - h: What it's really like
+    p:
+    - A first term covers how to hold the violin and the bow, posture, simple fingering patterns, listening to whether you are in tune, and reading simple notation. That is City Lit's Violin and viola 1A,
+      the start of a ladder of levels that reach about grade 4 before its workshops.
+    - It is slow at first. Ron Sharp, who plays with the Late Starters Orchestra in New York, told NPR that after about ten years of lessons he was almost at the intermediate level.
+    - Fiddle or violin is a choice of style, not instrument. Yamaha's guide says fiddlers often learn by ear and stay in first position, near the tuning pegs, while classical violinists read the notation
+      closely and use the whole fingerboard. Some fiddles have a flatter bridge and steel-core strings.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Violin and viola 1A: 11 Tuesday evening classes from 15 September 2026; bring your own violin, bow, rosin and shoulder rest'
+        - £229 (a £160 rate is also shown)
+      - - East London Late Starters Orchestra
+        - Saturday music school for adult string players, beginners to experienced; beginners join an orchestra from the first session; no auditions or exams
+        - Not given in Making Music's article; instruments can be hired cheaply and member-supported funding allows reduced fees
+      - - Laramie County Community College, Cheyenne, Wyoming
+        - 'Adult Orchestra - Beginner: six Monday evening sessions for violin, viola or cello, autumn 2026'
+        - $56
+    after: Once you reach about grade 1, groups such as Greenwich Music School's Adults' String Ensemble (£45 a month as listed) are the next step. In the US, MTNA's teacher finder lets you search for a
+      violin teacher by zip code.
+  faq:
+  - q: Is a fiddle the same as a violin?
+    a: Yes. Yamaha's guide says there is no significant physical difference; fiddlers play folk, country and bluegrass, often by ear, and some set up the instrument with a flatter bridge.
+  - q: Can you learn the violin as a complete beginner adult?
+    a: Yes. City Lit's Violin and viola 1A is for complete beginners, and the East London Late Starters Orchestra takes adults from their first session with no auditions.
+  - q: Do I need to buy a violin before lessons?
+    a: City Lit asks you to bring your own violin, bow, rosin and shoulder rest, and says some shops hire instruments. The East London Late Starters Orchestra hires instruments cheaply.
+  - q: Where can adult beginners play the violin with others?
+    a: Late starters' orchestras such as the one in east London, and community college groups such as Laramie County Community College's Adult Orchestra - Beginner.
+  sources:
+  - label: City Lit, Violin and viola 1A
+    url: https://www.citylit.ac.uk/courses/violin-and-viola-1a
+    checked: '2026-11-07'
+  - label: City Lit, Choosing a String class at City Lit (13 June 2022)
+    url: https://www.citylit.ac.uk/blog/choosing-string-class-city-lit
+    checked: '2026-11-07'
+  - label: 'Making Music, It''s never too late to start: the East London Late Starters Orchestra story'
+    url: https://www.makingmusic.org.uk/node/47609
+    checked: '2026-11-07'
+  - label: Laramie County Community College, Adult Orchestra - Beginner
+    url: https://lccc.coursestorm.com/course/orchestra-adult-beginner
+    checked: '2026-11-07'
+  - label: Greenwich Music School, Adults' String Ensemble
+    url: https://greenwichmusicschool.org.uk/courses-tuition/courses-for-adults/adults-string-ensemble
+    checked: '2026-11-07'
+  - label: Yamaha Music, What's the Difference Between Fiddle and Violin? (16 March 2026)
+    url: https://hub.yamaha.com/strings/s-acoustic/whats-the-difference-between-fiddle-and-violin/
+    checked: '2026-11-07'
+  - label: 'NPR, Almost Intermediate: Adults Learn Lessons In ''Late Starters Orchestra'' (2014)'
+    url: https://www.npr.org/transcripts/324480108
+    checked: '2026-11-07'
+  - label: Music Teachers National Association, Find a Teacher
+    url: https://certification.mtna.org/cgi/page.cgi/Find-a-Teacher.html
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Ron Sharp, Late Starters Orchestra, New York
+    line: Took up the violin after a friend left a catalogue in his apartment and, after about ten years of lessons, plays with the Late Starters Orchestra in New York.
+    title: 'Almost Intermediate: Adults Learn Lessons In ''Late Starters Orchestra'''
+    outlet: NPR
+    url: https://www.npr.org/transcripts/324480108
+    checked: '2026-11-07'
+  kit:
+  - name: Violin shoulder rest
+    why: City Lit asks beginners to bring one; check it fits your violin size
+    url: https://www.amazon.co.uk/s?k=violin+shoulder+rest
+  - name: Violin rosin
+    why: on the bow hair so the strings sound; also on City Lit's list
+    url: https://www.amazon.co.uk/s?k=violin+rosin
+  - name: Clip-on violin tuner
+    why: helps you check the open strings are in tune before you play
+    url: https://www.amazon.co.uk/s?k=clip+on+violin+tuner
+  related:
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+  - go-to-a-folk-dance
+  - play-one-piece-for-someone
+- id: learn-to-crochet
+  title: Learn to crochet
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Crochet needs one hook and a ball of yarn, and a handful of stitches built on a simple chain will make a dishcloth, a scarf or a blanket square. A beginners' class gets you past the awkward first
+    rows and teaches you to read a pattern, which opens up everything else.
+  start:
+  - Book a beginners' crochet class at an adult education college, a community college or a library, and ask whether a hook and yarn are provided for the first session.
+  - Start with smooth, light-coloured DK or chunky yarn and the hook size printed on the ball band, so you can see each stitch.
+  - 'Before you buy a pattern, check whether it uses UK or US terms: the same stitch names mean different stitches.'
+  links:
+  - label: 'Coleg Gwent: Crochet for Beginners (Blaenau Gwent)'
+    url: https://coleggwent.ac.uk/course/CE3195
+    region: uk
+    checked: '2026-11-07'
+  - label: 'University of Utah Continuing Education: Beginning Crochet (Salt Lake City)'
+    url: https://continue.utah.edu/class/LLCFT/295
+    region: us
+    checked: '2026-11-07'
+  - label: 'Craft Yarn Council: guilds and groups, including Crochet Guild of America chapters'
+    url: https://craftyarncouncil.com/node/131
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Learn to crochet: hooks, yarn and beginners'' classes'
+  description: 'How to start crochet: which yarn and hook to pick, UK and US stitch names, what a beginners'' class covers and what it costs in the UK and US.'
+  detail:
+  - h: What it's really like
+    p:
+    - Everything starts with a chain. Beginners then learn a few basic stitches, how to turn at the end of a row, how to work in the round, and how to increase and decrease. Coleg Gwent's course also teaches
+      reading and following a pattern, and the University of Utah's class adds changing colour, with a dishcloth and a scarf as suggested projects.
+    - Yarn and hook go together. The Craft Yarn Council's standard system puts DK in category 3, with hooks of 4.5 to 5.5 mm, and chunky in category 5, with hooks of 6.5 to 9 mm. It calls these guidelines
+      only. Coleg Gwent starts its students on chunky yarn and a 6 mm hook.
+    - The confusing part is the names. Simply Crochet explains that UK terms sit one step above US ones, so a UK double crochet is a US single crochet and a UK treble is a US double. If a pattern mentions
+      single crochet (sc), it is written in US terms. Coleg Gwent teaches in US terms.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - Coleg Gwent, Blaenau Gwent Learning Zone
+        - 'Crochet for Beginners: 29 weeks, Mondays 4pm to 6pm, from October 2026; yarn and a 6 mm hook provided in week one'
+        - £50 (£30 tuition plus £20 other fees); half-price tuition on means-tested benefits
+      - - University of Utah Continuing Education, Salt Lake City
+        - 'Beginning Crochet: four Thursday evenings in March 2027, two hours each'
+        - $170 ($125 tuition plus a $45 fee for shared supplies)
+      - - Crochet Guild of America chapters
+        - Local chapters; the Craft Yarn Council says many local crochet groups are CGOA chapters
+        - See the guild's website
+    after: Coleg Gwent says students will need more hooks, DK and chunky yarns and a tapestry needle for weaving in ends as the course goes on. Utah's class asks students to bring some of their own materials
+      from a supply list.
+  faq:
+  - q: What size crochet hook should a beginner use?
+    a: Match the hook to the yarn. The Craft Yarn Council suggests 4.5 to 5.5 mm for DK and 6.5 to 9 mm for chunky; Coleg Gwent starts beginners on chunky yarn with a 6 mm hook.
+  - q: What is the difference between UK and US crochet terms?
+    a: UK names are one step up from US ones, so a UK double crochet is a US single crochet. A pattern that uses single crochet (sc) is in US terms.
+  - q: How long does it take to learn to crochet?
+    a: A short course covers the basic stitches and a first project. The University of Utah's beginners' class runs for four evenings; Coleg Gwent's runs weekly through the year and goes on to garments
+      and decorative pieces.
+  - q: Do I need to bring my own yarn to a crochet class?
+    a: It depends on the course, so ask. Coleg Gwent provides yarn and a hook in the first week and then asks students to buy their own.
+  sources:
+  - label: Coleg Gwent, Crochet For Beginners
+    url: https://coleggwent.ac.uk/course/CE3195
+    checked: '2026-11-07'
+  - label: University of Utah Continuing Education, Beginning Crochet
+    url: https://continue.utah.edu/class/LLCFT/295
+    checked: '2026-11-07'
+  - label: Craft Yarn Council, Standard yarn weight system
+    url: https://craftyarncouncil.com/standards/yarn-weight-system
+    checked: '2026-11-07'
+  - label: Craft Yarn Council, Guilds & Groups
+    url: https://craftyarncouncil.com/node/131
+    checked: '2026-11-07'
+  - label: Simply Crochet (gathered.how), Crochet abbreviations and UK to US crochet terms
+    url: https://gathered.how/yarn/crochet/simply-crochet-abbreviations-and-conversions/
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Subashri Natarajan, India
+    line: Led the Mother India's Crochet Queens campaign, in which more than 1,000 people from India and 13 other countries made the world's largest crochet blanket, then gave its squares to people in need
+      through charities.
+    title: Indian women make largest crochet blanket ever then donate it to charity
+    outlet: Guinness World Records
+    url: https://www.guinnessworldrecords.com/news/2016/2/indian-women-make-largest-crochet-blanket-ever-then-donate-it-to-charity-415230
+    checked: '2026-11-07'
+  kit:
+  - name: Crochet hook set
+    why: hooks in several sizes so you can match the hook to the yarn; check it includes 4 to 6 mm
+    url: https://www.amazon.co.uk/s?k=crochet+hook+set
+  - name: Chunky yarn
+    why: thick yarn shows each stitch clearly while you learn; check the hook size on the ball band
+    url: https://www.amazon.co.uk/s?k=chunky+yarn+light+colour
+  - name: Tapestry needles
+    why: blunt, large-eyed needles for sewing up and weaving in ends
+    url: https://www.amazon.co.uk/s?k=tapestry+needles+large+eye
+  related:
+  - join-a-knitting-group
+  - make-a-blanket-for-project-linus
+  - learn-a-heritage-craft
+  - mend-at-a-repair-cafe
+- id: learn-to-sew-your-own-clothes
+  title: Learn to sew your own clothes
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Making a garment that fits you, in a fabric you chose, is a different thing from buying one, and the same skills let you alter and mend what you already own. Beginners' courses start with the sewing
+    machine itself and work up to reading a pattern and laying out fabric.
+  start:
+  - 'Take a beginners'' sewing-machine course first: threading, tension, changing needles and basic maintenance come before any garment.'
+  - Read the course description to see what you will make; some first courses make bags and samples, not clothes.
+  - Ask whether machines are provided or whether you must bring your own, with its foot pedal, bobbins and manual.
+  links:
+  - label: 'Morley College London: Clothes Making Beginners, Introduction to the Sewing Machine'
+    url: https://morleycollege.ac.uk/courses/short-courses/clothes-making-beginners-introduction-to-the-sewing-machine/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Abingdon & Witney College: Sewing, Dressmaking, Beginners (Oxfordshire)'
+    url: https://abingdon-witney.ac.uk/courses/sewing-dressmaking-beginners-2172420
+    region: uk
+    checked: '2026-11-07'
+  - label: 'North Seattle College Continuing Education: Beginning Sewing'
+    url: https://conted.northseattle.edu/node/95656
+    region: us
+    checked: '2026-11-07'
+  - label: 'American Sewing Guild: membership, chapters and online classes'
+    url: https://www.asg.org/benefits-member-asg/
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Learn to sew clothes: beginners'' dressmaking courses'
+  description: 'How to learn dressmaking from scratch: what a beginners'' sewing course covers, what to bring, and what courses cost in the UK and US as last listed.'
+  detail:
+  - h: What it's really like
+    p:
+    - You start with the machine, not the dress. Morley College's one-day introduction covers setting up the machine, its features, sorting out common errors and sewing sample stitches. Abingdon & Witney's
+      dressmaking course for beginners spends its first term on threading, tension, needles, maintenance and the machine's attachments, and its main project is a tote bag. It is part one of three.
+    - Patterns and fabric come next. North Seattle College's beginners' class covers reading a pattern, choosing fabric and laying it out, with three projects sewn in class from fabric and patterns the
+      tutor supplies.
+    - Expect a kit list. Abingdon & Witney asks for fabric scissors and paper scissors, coloured-head pins, needles, a tape measure, tailor's chalk and a metre of plain cotton or calico for samples. Machines
+      are provided there; North Seattle asks you to bring your own in good working order.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - Morley College, Waterloo, London
+        - 'Introduction to the Sewing Machine: one Saturday, 10am to 4.30pm; leads on to Beginners Clothes Making'
+        - £115, plus a tutor's pack of up to £10
+      - - Abingdon & Witney College, Oxfordshire
+        - 'Dressmaking, Beginners (part one of three): Monday evenings, September to December 2026; machines provided'
+        - £274.45, or £137.23 reduced fee
+      - - North Seattle College Continuing Education
+        - 'Beginning Sewing: eight Thursday evenings; bring your own machine'
+        - $245, plus a $35 cash supply fee
+      - - American Sewing Guild
+        - Local chapters and neighbourhood groups, plus more than 150 online classes and projects for members
+        - See the ASG website
+    after: Morley says its short courses are subsidised by up to 50% by the Greater London Authority. The ASG says members with no local chapter can join as members-at-large.
+  faq:
+  - q: Can a complete beginner learn to make clothes?
+    a: Yes. Morley College and Abingdon & Witney College both run courses for people with no sewing experience, starting with how to use the machine.
+  - q: Do I need my own sewing machine for a sewing class?
+    a: Not always. Abingdon & Witney provides machines; North Seattle College asks students to bring their own, with the power cord, foot control, bobbins and manual.
+  - q: What do I need for a beginners' dressmaking class?
+    a: A basic sewing kit. Abingdon & Witney lists fabric and paper scissors, pins, needles, a tape measure, tailor's chalk, tacking thread and a metre of plain cotton or calico.
+  - q: How much does a sewing course cost?
+    a: As last listed, from £115 for a one-day introduction at Morley College to £274.45 for a term at Abingdon & Witney College, and $245 plus a $35 supply fee in Seattle.
+  sources:
+  - label: Morley College London, Clothes Making Beginners, Introduction to the Sewing Machine
+    url: https://morleycollege.ac.uk/courses/short-courses/clothes-making-beginners-introduction-to-the-sewing-machine/
+    checked: '2026-11-07'
+  - label: Abingdon & Witney College, Sewing - Dressmaking - Beginners
+    url: https://abingdon-witney.ac.uk/courses/sewing-dressmaking-beginners-2172420
+    checked: '2026-11-07'
+  - label: North Seattle College Continuing Education, Beginning Sewing
+    url: https://conted.northseattle.edu/node/95656
+    checked: '2026-11-07'
+  - label: American Sewing Guild, Benefits of membership
+    url: https://www.asg.org/benefits-member-asg/
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Clare Bradley, Winchester
+    line: Took up sewing seriously again because she could not find trousers that fitted, and went on to win series six of BBC's The Great British Sewing Bee with a pleated kilt and a 1930s-style gown.
+    title: Clare Bradley - Winchester's Queen of the Sewing Bee
+    outlet: Great British Life
+    url: https://www.greatbritishlife.co.uk/people/clare-bradley-great-british-sewing-bee-7285042
+    checked: '2026-11-07'
+  kit:
+  - name: Fabric scissors
+    why: for cutting fabric only; keep a separate pair for paper patterns
+    url: https://www.amazon.co.uk/s?k=dressmaking+fabric+scissors
+  - name: Dressmaking pins
+    why: coloured-head pins are on Abingdon & Witney's kit list; check they are fine enough for cotton
+    url: https://www.amazon.co.uk/s?k=coloured+head+dressmaking+pins
+  - name: Tailor's chalk
+    why: for marking pattern lines on fabric
+    url: https://www.amazon.co.uk/s?k=tailors+chalk
+  - name: Calico
+    why: plain cotton for practice samples; one metre is enough for a first term's samplers
+    url: https://www.amazon.co.uk/s?k=calico+fabric+by+the+metre
+  related:
+  - mend-at-a-repair-cafe
+  - learn-a-heritage-craft
+  - make-a-blanket-for-project-linus
+  - try-pottery-on-the-wheel
+- id: make-a-patchwork-quilt
+  title: Make your first patchwork quilt
+  category: think
+  kind: project
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A patchwork quilt is a set of simple steps, cutting, sewing blocks, layering, quilting and binding, that add up to something you will use for years. A six-week beginners' course takes you through
+    every stage, so you finish knowing how the whole thing goes together.
+  start:
+  - Book a beginners' patchwork course that covers the whole process, from cutting and piecing to layering, quilting and binding.
+  - Ask what is provided; some courses lend rotary cutters and mats, and some need you to bring a sewing machine.
+  - Gather cotton fabrics of a similar weight that do not stretch, and keep backing and wadding for the last stage.
+  links:
+  - label: 'The Quilters'' Guild: communities, regions and affiliated groups'
+    url: https://www.quiltersguild.org.uk/pages/communities-and-groups
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Bristol Folk House: How to Make a Patchwork Quilt (Beginners)'
+    url: https://www.bristolfolkhouse.co.uk/courses/print/20386
+    region: uk
+    checked: '2026-11-07'
+  - label: 'A-B Tech Community College: Quilting, Beginning (North Carolina)'
+    url: https://abtech.edu/continuing-education/quilting-beginning-18
+    region: us
+    checked: '2026-11-07'
+  - label: 'The Modern Quilt Guild: guild directory'
+    url: https://community.themodernquiltguild.com/membership/findaguild
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'How to make your first patchwork quilt: beginners'' classes'
+  description: What a beginners' patchwork quilt course covers, what you need to bring, and what courses cost in the UK and US, plus how to find a quilting group.
+  detail:
+  - h: What it's really like
+    p:
+    - A first quilt goes in stages. Bristol Folk House's six-week beginners' course covers cutting fabric and sewing it into blocks of different designs, machine and hand applique, then layering, quilting
+      and binding the finished piece. A-B Tech in North Carolina teaches colour and design, cutting with rotary equipment and matching points.
+    - Do not expect to finish a big bed quilt in a short course. A-B Tech says students complete most of a small sample quilt over six sessions. Bristol asks for backing fabric and wadding of about 1.5
+      m (5 ft) square, needed only in the last two sessions.
+    - Fabric matters more than pattern at first. Bristol asks for cotton or linen, new or secondhand, of similar thickness and not stretchy. It provides the rotary cutter and mat, templates, pins and thread.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - Bristol Folk House
+        - 'How to Make a Patchwork Quilt (Beginners): six Tuesday mornings, three hours each'
+        - £196, or £176.40 over-65s and £156.80 on benefits
+      - - A-B Tech Community College, Asheville, North Carolina
+        - 'Quilting, Beginning: six Wednesday afternoons; supply list given at the first class'
+        - $80
+      - - North Seattle College Continuing Education
+        - 'Quilting Basics: colour, a quilt block, piecing, sandwiching layers and binding; fabrics provided, bring a machine'
+        - $270, plus a $45 cash supply fee
+      - - The Quilters' Guild (UK) and The Modern Quilt Guild (US)
+        - 'Local groups: the Quilters'' Guild has 17 regions and a directory of affiliated groups; the MQG has a map of member guilds'
+        - See each guild's website
+  faq:
+  - q: How long does it take to make a first quilt?
+    a: Beginners' courses run over about six weeks. A-B Tech says students finish most of a small sample quilt in that time.
+  - q: What do I need to start quilting?
+    a: Cotton fabric of a similar weight, fabric scissors, and backing and wadding for the final layers. Bristol Folk House provides the rotary cutter, mat and templates for its course.
+  - q: Do I need a sewing machine to make a quilt?
+    a: Check with the course. North Seattle College asks students to bring a machine in good working order; Bristol Folk House teaches both machine and hand applique, so ask the office whether to bring
+      a machine.
+  - q: How do I find a quilting group near me?
+    a: In the UK, the Quilters' Guild has a directory of affiliated groups and 17 regions. In the US, The Modern Quilt Guild's directory maps its member guilds.
+  sources:
+  - label: The Quilters' Guild, Communities & Groups
+    url: https://www.quiltersguild.org.uk/pages/communities-and-groups
+    checked: '2026-11-07'
+  - label: The Modern Quilt Guild, Guild Directory
+    url: https://community.themodernquiltguild.com/membership/findaguild
+    checked: '2026-11-07'
+  - label: Bristol Folk House, How to Make a Patchwork Quilt (Beginners)
+    url: https://www.bristolfolkhouse.co.uk/courses/print/20386
+    checked: '2026-11-07'
+  - label: A-B Tech Community College, Quilting, Beginning
+    url: https://abtech.edu/continuing-education/quilting-beginning-18
+    checked: '2026-11-07'
+  - label: North Seattle College Continuing Education, Quilting Basics
+    url: https://conted.northseattle.edu/node/91301
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Janette Chilver, East Bergholt, Suffolk
+    line: Turned a patchwork habit into a quilting business and, on her first entry, won the overall title at the Festival of Quilts in Birmingham from 1,800 entries with a quilt made for her own bed.
+    title: Janette Chilver named best in show at Festival of Quilts
+    outlet: Daily Gazette (Colchester)
+    url: https://www.Daily Gazette (Colchester)/news/13625246.janette-chilver-named-best-in-show-at-festival-of-quilts/
+    checked: '2026-11-07'
+  kit:
+  - name: Rotary cutter
+    why: cuts several layers of fabric at once against a ruler; check the blade size and that it has a safety guard
+    url: https://www.amazon.co.uk/s?k=rotary+cutter+quilting
+  - name: Self-healing cutting mat
+    why: to use under a rotary cutter; check it has a printed grid
+    url: https://www.amazon.co.uk/s?k=self+healing+cutting+mat+a2
+  - name: Quilting ruler
+    why: clear acrylic ruler for straight, measured cuts
+    url: https://www.amazon.co.uk/s?k=patchwork+quilting+ruler
+  - name: Fat quarters
+    why: pre-cut cotton pieces for a first set of blocks; check they are 100% cotton
+    url: https://www.amazon.co.uk/s?k=fat+quarters+cotton+bundle
+  related:
+  - make-a-blanket-for-project-linus
+  - learn-a-heritage-craft
+  - join-a-knitting-group
+  - mend-at-a-repair-cafe
+- id: carve-a-wooden-spoon
+  title: Carve a wooden spoon
+  category: think
+  kind: skill
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Spoon carving turns a split log of fresh, unseasoned wood into something you can stir a pan with, using little more than an axe and two knives. A one-day course supplies the wood and the tools, so
+    you can find out whether you like it before you buy anything.
+  start:
+  - Book a one-day beginners' spoon carving course where green wood and tools are provided, such as those at West Dean College or the Weald & Downland Living Museum.
+  - If you are left-handed, ask for left-handed tools when you book; West Dean says you can request them.
+  - Wear covered shoes and old clothes or an apron, and take a pencil for marking out.
+  links:
+  - label: 'West Dean College: Spoon Carving with Annie Slack (West Sussex)'
+    url: https://www.westdean.ac.uk/short-courses/s1d41794-spoon-carving
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Weald & Downland Living Museum: Spoon Carving for Beginners (West Sussex)'
+    url: https://www.wealddown.co.uk/events/spoon-carving-beginners-course/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'North House Folk School: Wooden Spoon Carving Traditions (Minnesota)'
+    url: https://northhouse.org/course-session/wooden-spoon-carving-traditions-3-13-2027-0900
+    region: us
+    checked: '2026-11-07'
+  - label: 'John C. Campbell Folk School: Traditional Hewing and Carving Spoons and Bowls (North Carolina)'
+    url: https://folkschool.configio.com/pd/3974/traditional-hewing-and-carving-spoons-and-bow
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Spoon carving courses for beginners: what to expect'
+  description: What a beginners' spoon carving course covers, the tools you use, what to wear, and what green woodworking courses cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - You start with a billet of green wood and use an axe to rough out a spoon blank, then refine the shape with straight and curved knives. At West Dean the knife grips taught are based on the Swedish
+      sloyd tradition, and the Weald & Downland course teaches safe knife grips and how to work with the grain.
+    - It needs steady hands. West Dean asks that students have strength and stability in their hands and can take instruction, because the sharp tools are used close to the body. North House asks for basic
+      hand strength, stamina and focus, and gives being able to open a sealed jar as an example.
+    - This is carving by hand, not turning on a lathe. If you would rather work at a pole lathe or a powered lathe, a woodturning club is the other way in.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - Weald & Downland Living Museum, West Sussex
+        - 'One day: carve a version of a spoon found on the Mary Rose with an axe and knife; tools provided'
+        - £90
+      - - North House Folk School, Minnesota
+        - 'Wooden Spoon Carving Traditions: three days, open to all levels; bring a fixed-blade carving knife'
+        - $335, plus $10 materials
+      - - John C. Campbell Folk School, North Carolina
+        - 'Traditional Hewing and Carving Spoons and Bowls: one week, all skill levels; spoons and at least one bowl'
+        - $730, plus a $25 Folk School fee and $90 materials
+    after: West Dean College also runs a one-day spoon carving course and a two-hour taster with lime spoon blanks; the course pages did not show a price, so check with the college. The taster is listed
+      as suitable for beginners.
+  faq:
+  - q: Do I need my own tools for a spoon carving course?
+    a: Often not. West Dean lends carving knives and axes and supplies the timber, and the Weald & Downland course provides all tools. North House asks you to bring a fixed-blade carving knife.
+  - q: What wood is used for carving spoons?
+    a: Courses use green, unseasoned wood. West Dean's taster session uses lime spoon blanks, and John C. Campbell students work mainly with green wood from several species.
+  - q: What should I wear to a spoon carving class?
+    a: Covered, closed-toe shoes and clothes you do not mind marking. West Dean does not allow sandals or open-toed shoes, and John C. Campbell asks for leather gloves and a carving glove or thumb guard.
+  - q: How long does it take to carve a wooden spoon?
+    a: Beginners can carve a spoon in a day. Both the West Dean and Weald & Downland one-day courses aim for you to make a spoon.
+  safety: Wear closed shoes and use a carving glove or thumb guard as courses ask, because the knives are used close to your body.
+  sources:
+  - label: West Dean College, Spoon Carving with Annie Slack
+    url: https://www.westdean.ac.uk/short-courses/s1d41794-spoon-carving
+    checked: '2026-11-07'
+  - label: West Dean College, An introduction to wooden spoon carving - Taster session with Annie Slack
+    url: https://www.westdean.ac.uk/short-courses/sta41571-an-introduction-to-wooden-spoon-carving-taster-session
+    checked: '2026-11-07'
+  - label: Weald & Downland Living Museum, Spoon Carving for Beginners
+    url: https://www.wealddown.co.uk/events/spoon-carving-beginners-course/
+    checked: '2026-11-07'
+  - label: North House Folk School, Wooden Spoon Carving Traditions
+    url: https://northhouse.org/course-session/wooden-spoon-carving-traditions-3-13-2027-0900
+    checked: '2026-11-07'
+  - label: John C. Campbell Folk School, Traditional Hewing and Carving Spoons and Bowls
+    url: https://folkschool.configio.com/pd/3974/traditional-hewing-and-carving-spoons-and-bow
+    checked: '2026-11-07'
+  kit:
+  - name: Fixed-blade carving knife
+    why: the main tool for shaping; North House suggests a Mora 106 or 120, so check the course list first
+    url: https://www.amazon.co.uk/s?k=mora+106+carving+knife
+  - name: Spoon hook knife
+    why: hollows out the bowl of the spoon; check it is made for your hand, left or right
+    url: https://www.amazon.co.uk/s?k=spoon+carving+hook+knife
+  - name: Carving glove or thumb guard
+    why: protects the hand holding the wood; check the size
+    url: https://www.amazon.co.uk/s?k=wood+carving+glove+thumb+guard
+  related:
+  - join-a-woodturning-club
+  - learn-a-heritage-craft
+  - try-pottery-on-the-wheel
+  inspire:
+  - kind: read
+    person: Steven Shattuck, from Colchester
+    line: Taught himself to carve wooden spoons from YouTube videos and trial and error, using wood he gathers from his backyard, parks and roadsides, and his first spoon took him about eight hours.
+    title: The man behind the spoon
+    outlet: Colchester Sun, via the St. Albans Messenger (Vermont)
+    url: https://www.samessenger.com/colchester/the-man-behind-the-spoon/article_54c67836-1d05-11ea-a2a3-7bfb07607f45.html
+    checked: '2026-11-07'
+- id: learn-bookbinding
+  title: Learn bookbinding
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Folding, sewing and covering your own book shows you how every book on your shelf is put together, and the first projects use paper, cloth, board and a few hand tools. A short evening or weekly course
+    takes you from a simple sewn booklet to hard covers.
+  start:
+  - Find a beginners' bookbinding course at an adult education college, a book arts centre, or through the Society of Bookbinders' course list (UK) or the Guild of Book Workers' study list (US).
+  - Check whether materials are in the fee; at City Lit they are, at Morley College you buy them at the first class.
+  - Take a pencil, metal ruler and craft knife if you have them, and a bone folder if you own one.
+  links:
+  - label: 'Society of Bookbinders: bookbinding courses by county'
+    url: https://www.societyofbookbinders.com/education/bookbinding-courses/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Morley College: Bookbinding, Beginner and Intermediate (London)'
+    url: https://morleycollege.ac.uk/courses/short-courses/bookbinding-beginner-and-intermediate-wednesday-evening/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Guild of Book Workers: study opportunities'
+    url: https://guildofbookworkers.org/study-opportunities
+    region: us
+    checked: '2026-11-07'
+  - label: 'Center for Book Arts: drumleaf binding classes (New York)'
+    url: https://shop.centerforbookarts.org/collections/all-classes-shopify/drumleaf
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Bookbinding classes for beginners: what you learn and cost'
+  description: What a beginners' bookbinding course teaches, the tools to bring, whether materials are included, and what classes cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - Beginners learn to fold and sew paper into sections, then make soft and hard covers from paper, cloth and board. City Lit's six-week course also covers non-adhesive bindings, single-section sewing,
+      simple boxes and why the grain direction of paper matters.
+    - It rewards care more than strength. City Lit says you need some manual dexterity and attention to detail, and should be able to follow simple instructions and do simple measuring and sums. Morley
+      College notes that you work standing up, so raise any difficulty with standing before you enrol.
+    - The Society of Bookbinders keeps a list of courses by county, and the Guild of Book Workers keeps a list of over 130 teachers and schools. The Guild says it makes no claims about the teachers listed,
+      so contact them before you book.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - Morley College, London
+        - 'Bookbinding, Beginner and Intermediate: five Wednesday evenings, 2.5 hours each; buy materials at class'
+        - £195, or £145 concession
+      - - City Lit, London
+        - 'Beginners'' bookbinding: six Fridays, 10.30 to 16.30; project materials included'
+        - £399, or £319 senior and £259 concession
+      - - Center for Book Arts, New York
+        - 'Bookbinding I: Intro to Softcover Binding, a weekend class; evening series also listed'
+        - $445 for a weekend class; $550 for an evening series (2025 classes)
+    after: The Guild of Book Workers' list also names Penland School of Craft and John C. Campbell Folk School in North Carolina, and North Bennet Street School in Boston, among the places that teach book
+      arts.
+  faq:
+  - q: Is bookbinding hard to learn?
+    a: Beginners' courses start with folding and sewing simple books. City Lit says you need some manual dexterity, attention to detail and simple measuring skills.
+  - q: What tools do I need to start bookbinding?
+    a: Morley College suggests a notebook, pencil, rubber, metal ruler, craft knife, bone folder and scissors if you have them. City Lit's bindery has most hand tools.
+  - q: Are materials included in a bookbinding course?
+    a: It varies. City Lit includes project materials in the fee, while Morley College says you can buy materials and tools at the first class.
+  - q: How do I find a bookbinding class near me?
+    a: In the UK, the Society of Bookbinders lists courses by county. In the US, the Guild of Book Workers keeps a list of teachers and schools organised by location.
+  sources:
+  - label: City Lit, Beginners' bookbinding
+    url: https://www.citylit.ac.uk/courses/beginners-bookbinding
+    checked: '2026-11-07'
+  - label: 'Morley College London, Bookbinding: Beginner and Intermediate - Wednesday Evening'
+    url: https://morleycollege.ac.uk/courses/short-courses/bookbinding-beginner-and-intermediate-wednesday-evening/
+    checked: '2026-11-07'
+  - label: Society of Bookbinders, bookbinding courses
+    url: https://www.societyofbookbinders.com/education/bookbinding-courses/
+    checked: '2026-11-07'
+  - label: Guild of Book Workers, Study Opportunities
+    url: https://guildofbookworkers.org/study-opportunities
+    checked: '2026-11-07'
+  - label: Center for Book Arts, All Classes
+    url: https://shop.centerforbookarts.org/collections/all-classes-shopify/drumleaf
+    checked: '2026-11-07'
+  kit:
+  - name: Bone folder
+    why: for creasing folds sharply; one of the tools Morley College suggests bringing
+    url: https://www.amazon.co.uk/s?k=bone+folder+bookbinding
+  - name: Bookbinding awl
+    why: pierces sewing holes through the folded sections
+    url: https://www.amazon.co.uk/s?k=bookbinding+awl
+  - name: Waxed linen thread
+    why: for sewing sections together; check the thickness suits your paper
+    url: https://www.amazon.co.uk/s?k=waxed+linen+bookbinding+thread
+  - name: Metal ruler
+    why: a straight edge for measuring and cutting with a craft knife
+    url: https://www.amazon.co.uk/s?k=metal+ruler+30cm+cork+back
+  related:
+  - learn-calligraphy
+  - make-a-linocut-print
+  - write-a-book
+  - take-a-creative-writing-course
+  inspire:
+  - kind: read
+    person: Robin Canham
+    line: Got hooked on bookbinding at a Friday-night event in a Toronto bindery, and now binds books, many recording her travels, in a studio at home while working as a librarian.
+    title: Bookbinding experiencing a resurgence in Saskatchewan
+    outlet: CBC News
+    url: https://amp.cbc.ca/news/canada/saskatchewan/made-to-last-bookbinding-1.5403310
+    checked: '2026-11-07'
+- id: try-screen-printing
+  title: Try screen printing
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Screen printing uses a stencil on a screen to print your own design, one colour layer at a time, and to run off a numbered edition of the same image. A day workshop can take a drawing of yours to
+    finished prints.
+  start:
+  - Book a beginners' day at a screen printing studio or a short course at an adult education college or art school.
+  - Prepare a simple black-and-white design; Print Club London asks for one A4 copyright-free design on a USB stick, plus a backup.
+  - Wear closed shoes and clothes you do not mind getting ink on.
+  links:
+  - label: 'Print Club London: Beginners Screen Print Workshop'
+    url: https://printclublondon.com/shop/beginner-workshop
+    region: uk
+    checked: '2026-11-07'
+  - label: 'City Lit: Screen printing workshop (London)'
+    url: https://www.citylit.ac.uk/courses/screen-printing-workshop
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Pennsylvania Academy of the Fine Arts: Screenprinting and Beyond (Philadelphia)'
+    url: https://pafa-ce.coursestorm.com/course/screenprinting-and-beyond-in-person10
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Screen printing workshops for beginners: what to expect'
+  description: What happens at a beginners' screen printing workshop, what to bring and wear, and what day workshops and courses cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - 'City Lit''s course sets out the steps: make a stencil from paper, drawing or a digital file; coat the screen with light-sensitive emulsion; expose and wash out your artwork; mix the ink; then line
+      up and print each colour on paper.'
+    - A day workshop moves quicker. Print Club London asks you to bring your own A4 black-and-white design, and supplies the inks and paper. City Lit's one-day course has used ready-made photographic screens
+      so beginners can print a two-colour image in a day.
+    - Unlike a linocut, there is no block to carve: the image is carried by a stencil on the screen. PAFA's course teaches printing editions on registered paper, and notes the method also works on fabric
+        and other surfaces.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - Print Club London, Dalston
+        - Beginners' workshop, one day; inks and paper included; no experience needed
+        - £75
+      - - City Lit, London
+        - Screen printing workshop, two Saturdays, two weekends or five three-hour sessions; all levels
+        - £229 to £349, or £183 to £279 senior and £149 to £227 concession
+      - - Pennsylvania Academy of the Fine Arts, Philadelphia
+        - 'Screenprinting and Beyond: 12 weekly three-hour sessions for beginners'
+        - $570, including a $30 lab fee
+    after: City Lit says basic Photoshop skills help but are not essential, and it does not allow open-toed shoes in the studio.
+  faq:
+  - q: Do I need experience to do a screen printing workshop?
+    a: No. Print Club London says no experience is needed, and City Lit's workshop welcomes complete beginners.
+  - q: What do I need to bring to a screen printing class?
+    a: Print Club London asks for an A4 black-and-white design saved as a JPEG, PDF or PSD file on a USB stick. City Lit asks for closed footwear and provides protective equipment.
+  - q: How is the stencil made in screen printing?
+    a: City Lit teaches paper stencils, hand-drawn artwork and digital stencils, and how to coat a screen with light-sensitive emulsion and expose your artwork onto it.
+  - q: Can you screen print on fabric?
+    a: Yes. PAFA's course notes that screen printing works on paper, fabric and other surfaces.
+  sources:
+  - label: City Lit, Screen printing workshop
+    url: https://www.citylit.ac.uk/courses/screen-printing-workshop
+    checked: '2026-11-07'
+  - label: City Lit, Screenprinting for beginners
+    url: https://www.citylit.ac.uk/courses/screenprinting-for-beginners
+    checked: '2026-11-07'
+  - label: Print Club London, Beginners Workshop
+    url: https://printclublondon.com/shop/beginner-workshop
+    checked: '2026-11-07'
+  - label: Pennsylvania Academy of the Fine Arts Continuing Education, Screenprinting and Beyond (In-Person)
+    url: https://pafa-ce.coursestorm.com/course/screenprinting-and-beyond-in-person10
+    checked: '2026-11-07'
+  kit:
+  - name: Screen printing starter kit
+    why: frame, squeegee and ink for printing at home; check the mesh count and screen size
+    url: https://www.amazon.co.uk/s?k=screen+printing+starter+kit
+  - name: Water-based screen printing ink
+    why: for paper or fabric; check which the ink is made for
+    url: https://www.amazon.co.uk/s?k=water+based+screen+printing+ink
+  - name: Squeegee
+    why: pulls ink across the screen; check it is a little wider than your design
+    url: https://www.amazon.co.uk/s?k=screen+printing+squeegee
+  related:
+  - make-a-linocut-print
+  - go-to-a-life-drawing-class
+  - learn-calligraphy
+  - paint-in-watercolour
+  inspire:
+  - kind: read
+    person: Erick Sahler, from Salisbury, Maryland
+    line: Retired as managing editor of his local paper to concentrate on silk-screen prints of Eastern Shore scenes, blending every colour by hand and limiting each print to 120 copies.
+    title: Former Editor Prints Limited Edition Silk Screen
+    outlet: CBS News Baltimore
+    url: https://www.cbsnews.com/baltimore/news/former-editor-prints-limited-edition-silk-screen
+    checked: '2026-11-07'
+- id: make-silver-jewellery
+  title: Make a silver ring or pendant
+  category: think
+  kind: project
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Sawing, filing, soldering and polishing a strip of silver into a ring you can wear is a small, exact piece of metalwork that you finish in a weekend. Beginners' courses start with a simple textured
+    band, and several then let you design a second piece of your own.
+  start:
+  - 'Find a beginners'' jewellery or silversmithing course: an adult education college, a craft school or a residential college short course.'
+  - Check whether silver is in the fee or bought on the day, and whether the course includes soldering, which is the skill that holds most pieces together.
+  - Wear closed shoes, tie long hair back and take an apron to the first session.
+  links:
+  - label: 'West Dean College: jewellery and silversmithing short courses'
+    url: https://www.westdean.ac.uk/short-courses/jewellery-silversmithing
+    region: uk
+    checked: '2026-11-07'
+  - label: 'City Lit: Beginners'' jewellery I (London)'
+    url: https://www.citylit.ac.uk/courses/beginners-jewellery-i
+    region: uk
+    checked: '2026-11-07'
+  - label: '92NY: Jewelry for Absolute Beginners, Adult Intensive (New York)'
+    url: https://www.92ny.org/class/absolute-beginners-jewelry-adult-intensive
+    region: us
+    checked: '2026-11-07'
+  - label: 'John C. Campbell Folk School: jewelry classes (North Carolina)'
+    url: https://www.folkschool.org/find-a-class/jewelry/
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Silver jewellery making course for beginners: what to expect'
+  description: What a beginners' silver jewellery course teaches, what you make, whether the silver is included, what to wear and what it costs in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - The core skills are the same everywhere you look. Beginners learn to cut and saw metal, file, form and texture it, solder joins, then sand and polish. West Dean's beginners' weekend starts with a
+      textured silver ring and then a second piece agreed with the tutor, such as earrings, a bracelet or another ring.
+    - Not every course works in silver from the start. City Lit's six-week course has you practise on copper first, making a pendant, a ring and earrings, before you design your own piece. Silver is extra
+      there, and the college says students generally spend £5 to £20 on their first pieces.
+    - Expect a workshop with flames and sharp tools. West Dean asks for stout covered shoes and long hair tied back, and City Lit does not allow sandals or open shoes in its studio.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - West Dean College
+        - 'Jewellery making for beginners: a weekend; a textured silver ring plus one piece of your choice; silver and copper sheet, silver wire and solder included'
+        - £338
+      - - City Lit, London
+        - 'Beginners'' jewellery I: six Sundays, 10:30 to 16:30; copper provided, silver extra'
+        - £429, or £343 senior and £279 concession
+      - - 92NY, New York
+        - 'Jewelry for Absolute Beginners, Adult Intensive: condensed course of rings, bezels and cabochon stone settings; supply list required'
+        - $715
+      - - John C. Campbell Folk School, North Carolina
+        - 'Beginning Jewelry: a week in copper, brass and sterling silver, including bezel setting'
+        - $870 tuition, plus $75 to $95 materials
+    after: Stone setting is not covered on West Dean's beginners' weekend, while 92NY includes cabochon setting and the Folk School includes stone and bezel setting. The Folk School warns that changes in
+      metal prices can alter its materials estimate.
+  faq:
+  - q: Can a complete beginner make a silver ring?
+    a: Yes. West Dean's beginners' weekend has a textured silver ring as its first step-by-step project, and City Lit's course is for complete beginners.
+  - q: Is the silver included in a jewellery making course?
+    a: It depends. West Dean includes a set amount of silver sheet and wire, while City Lit provides copper and asks you to buy silver, which it says usually costs £5 to £20 for a first piece.
+  - q: What should I wear to a jewellery making class?
+    a: Closed shoes and an apron, with long hair tied back. City Lit bans sandals and open shoes from its jewellery studio.
+  - q: Do beginners learn soldering?
+    a: Usually. West Dean, City Lit, 92NY and the John C. Campbell Folk School all list soldering in their beginners' courses.
+  sources:
+  - label: West Dean College, Jewellery making for beginners with Laila Smith
+    url: https://www.westdean.ac.uk/short-courses/ssw37603-jewellery-making-beginners
+    checked: '2026-11-07'
+  - label: West Dean College, jewellery silversmithing
+    url: https://www.westdean.ac.uk/short-courses/jewellery-silversmithing
+    checked: '2026-11-07'
+  - label: City Lit, Beginners' jewellery I
+    url: https://www.citylit.ac.uk/courses/beginners-jewellery-i
+    checked: '2026-11-07'
+  - label: 92NY, Jewelry for Absolute Beginners - Adult Intensive
+    url: https://www.92ny.org/class/absolute-beginners-jewelry-adult-intensive
+    checked: '2026-11-07'
+  - label: John C. Campbell Folk School, Beginning Jewelry
+    url: https://folkschool.configio.com/pd/4197/beginning-jewelry
+    checked: '2026-11-07'
+  - label: John C. Campbell Folk School, Jewelry Classes
+    url: https://www.folkschool.org/find-a-class/jewelry/
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Ellen Monaghan, jeweller, Norfolk
+    line: Began jewellery and silversmithing classes at Wensum Lodge, went on to study jewellery in London and now runs her own jewellery business in Norfolk.
+    title: A career instigated by Wensum Lodge
+    outlet: WISEArchive
+    url: https://www.wisearchive.co.uk/story/a-career-instigated-by-wensum-lodge/
+    checked: '2026-11-07'
+  kit:
+  - name: Jeweller's piercing saw and blades
+    why: for cutting sheet metal; check the blade size suits the thickness of metal you will use
+    url: https://www.amazon.co.uk/s?k=jewellers+piercing+saw+blades
+  - name: Needle file set
+    why: for shaping and smoothing small pieces between classes
+    url: https://www.amazon.co.uk/s?k=needle+file+set+jewellery
+  - name: Ring mandrel
+    why: a tapered steel rod for shaping and sizing rings; check it is marked with UK ring sizes
+    url: https://www.amazon.co.uk/s?k=ring+mandrel+uk+sizes
+  related:
+  - try-pottery-on-the-wheel
+  - make-a-stained-glass-panel
+  - learn-a-heritage-craft
+  - join-a-woodturning-club
+- id: try-blacksmithing
+  title: Try blacksmithing
+  category: think
+  kind: experience
+  effort: demanding
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Heating steel in a forge and hammering it into a twisted toasting fork teaches you how metal moves in a single day. The British Artist Blacksmiths Association suggests starting with a short taster
+    course, and many of these suit people who just want to have a go.
+  start:
+  - Book a one-day taster or a short beginners' course at a forge, a craft college or a continuing education programme.
+  - Read the kit list before you go; some forges will not let you work without steel-toe-capped boots.
+  - Wear natural-fibre clothes that are not loose, and long trousers rather than shorts, and take a large bottle of water.
+  links:
+  - label: 'British Artist Blacksmiths Association: education and training'
+    url: https://baba.org.uk/Education-and-Training
+    region: uk
+    checked: '2026-11-07'
+  - label: 'West Dean College: Blacksmithing Experience, barbeque fork and bottle opener'
+    url: https://www.westdean.ac.uk/short-courses/s1d41511-blacksmithing-experience-barbeque-fork-and-bottle-opener
+    region: uk
+    checked: '2026-11-07'
+  - label: 'ABANA: list of blacksmithing schools'
+    url: https://abana.org/community/list-of-schools/
+    region: us
+    checked: '2026-11-07'
+  - label: 'University of Utah Continuing Education: Blacksmithing, An Introduction'
+    url: https://continue.utah.edu/lifelong/class/llcft_274_blacksmithing_an_introduction
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Blacksmithing for beginners: forge days and courses'
+  description: What happens on a beginners' blacksmithing day or course, what you make, what to wear, the safety kit forges insist on, and what it costs in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - 'A first day covers the basic moves: drawing out, tapering, twisting and forming hot steel. On West Dean''s one-day taster you make a barbeque toasting fork, and a bottle opener if there is time.
+      Longer courses give you your own forge and anvil and build up hammer control and how to strike the anvil.'
+    - It is hot, noisy work. The University of Utah course warns that it is hot and thirsty, West Dean and Brinsbury provide or lend eye and ear protection and other kit, while Utah asks you to bring leather
+      gloves and safety glasses. West Dean makes steel-toe-capped boots compulsory and turns away anyone without them.
+    - Clothing matters. Both West Dean and Brinsbury College rule out shorts, West Dean prefers cotton or wool to synthetics, Utah asks for natural fibres, and Brinsbury asks for denim rather than loose
+      cotton.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - West Dean College
+        - 'Blacksmithing Experience: one day, 9:15am to 5pm; a toasting fork; fuel, steel and lunch included'
+        - £206
+      - - Brinsbury College
+        - 'Blacksmithing Short Course: six Saturday mornings of three hours; own forge, anvil and vice; up to 10 students'
+        - £750
+      - - University of Utah Continuing Education, with Wasatch Forge
+        - 'Blacksmithing, An Introduction: six weekly evening sessions of three hours'
+        - $345 tuition plus a $100 supplies and studio fee
+    after: In the US, ABANA's list of schools includes residential craft schools such as the John C. Campbell Folk School, Penland School of Craft and Peters Valley School of Craft. ABANA asks prospective
+      students to do their own checks before choosing a class.
+  faq:
+  - q: Can a complete beginner do a blacksmithing course?
+    a: Yes. West Dean's one-day experience is for complete beginners, and Brinsbury College's short course is designed for absolute beginners.
+  - q: What should I wear to a blacksmithing class?
+    a: Natural-fibre clothes, long trousers and sturdy safety footwear. West Dean will not let you take part without steel-toe-capped boots, and the Utah course asks you to bring leather work gloves and
+      safety glasses.
+  - q: What will I make on a blacksmithing taster day?
+    a: A small item. West Dean's day produces a barbeque toasting fork, and a bottle opener if time allows.
+  - q: How do I find blacksmithing classes near me?
+    a: In the UK, the British Artist Blacksmiths Association points beginners to short taster courses through its directory. In the US, ABANA publishes a list of schools offering classes.
+  safety: Courses provide or require eye and ear protection, West Dean insists on steel-toe-capped boots, and it says a tutor must supervise all work in its forge.
+  sources:
+  - label: British Artist Blacksmiths Association, Education and Training
+    url: https://baba.org.uk/Education-and-Training
+    checked: '2026-11-07'
+  - label: ABANA, List of Schools
+    url: https://abana.org/community/list-of-schools/
+    checked: '2026-11-07'
+  - label: 'West Dean College, Blacksmithing Experience: Barbeque Fork and Bottle Opener with Joe Tyler'
+    url: https://www.westdean.ac.uk/short-courses/s1d41511-blacksmithing-experience-barbeque-fork-and-bottle-opener
+    checked: '2026-11-07'
+  - label: Brinsbury College, Blacksmithing Short Course
+    url: https://www.brinsbury.ac.uk/courses/blacksmithing-for-beginners-short-course/
+    checked: '2026-11-07'
+  - label: 'University of Utah Continuing Education, Blacksmithing: An Introduction'
+    url: https://continue.utah.edu/lifelong/class/llcft_274_blacksmithing_an_introduction
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Marsha Trattner, Brooklyn, New York
+    line: Learned blacksmithing from another metalworker in the 1990s and now runs her own metalwork business from a Red Hook studio that was a blacksmith's shop in the 1800s, and teaches classes.
+    title: Iron woman forges career in blacksmithing at Red Hook studio
+    outlet: News 12
+    url: https://brooklyn.news12.com/iron-woman-forges-career-in-blacksmithing-at-red-hook-studio
+    checked: '2026-11-07'
+  kit:
+  - name: Steel toe cap boots
+    why: some forges will not let you work without them; check they meet the safety standard the course asks for
+    url: https://www.amazon.co.uk/s?k=steel+toe+cap+safety+boots
+  - name: Leather work gloves
+    why: for handling tools near the fire; the Utah course asks for gloves that reach above the wrist
+    url: https://www.amazon.co.uk/s?k=leather+work+gloves+gauntlet
+  - name: Safety glasses
+    why: to protect your eyes from scale and sparks if the course asks you to bring your own
+    url: https://www.amazon.co.uk/s?k=safety+glasses
+  related:
+  - learn-a-heritage-craft
+  - join-a-woodturning-club
+  - learn-dry-stone-walling
+  - mend-at-a-repair-cafe
+- id: weave-a-willow-basket
+  title: Weave a willow basket
+  category: think
+  kind: project
+  effort: moderate
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A bundle of soaked willow rods becomes a usable bread or fruit basket in two evenings, using techniques called upsett, wale and a trac border. Some beginners' classes provide the willow, and others
+    teach you how to sort and soak it yourself.
+  start:
+  - Look for a beginners' willow basketry class at an adult education college, a craft school or through the Basketmakers' Association's listings.
+  - Check whether the willow is included or whether you must buy and soak your own, and what tools the class asks for.
+  - Expect some hand and arm work; City Lit advises contacting its Visual Arts department first if you have concerns about the strength needed.
+  links:
+  - label: 'The Basketmakers'' Association: what''s on (workshops by members)'
+    url: https://basketmakersassociation.org.uk/whats-on/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'City Lit: Make a willow basket in two evenings (London)'
+    url: https://www.citylit.ac.uk/courses/make-a-willow-basket-in-two-evenings/vc240-2526
+    region: uk
+    checked: '2026-11-07'
+  - label: 'John C. Campbell Folk School: Stake & Strand Willow Baskets (North Carolina)'
+    url: https://folkschool.configio.com/pd/3394/stake-strand-willow-baskets
+    region: us
+    checked: '2026-11-07'
+  seo_title: 'Willow basket making for beginners: classes and costs'
+  description: What a beginners' willow basket class teaches, what you make, whether the willow is included, the tools to buy, and what classes cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - A first basket follows a set order. City Lit's beginners pair a base, insert the stakes, then work the upsett and wale, weave the sides and finish with a simple border, ending up with a small basket
+      for bread or fruit.
+    - Willow has to be prepared before you weave it. The John C. Campbell Folk School's week covers growing, harvesting, sorting and soaking willow as well as weaving, and one UK course asks students to
+      buy and prepare their own willow after guidance.
+    - It takes some strength in the hands. City Lit notes that willow basketry needs some physical strength. Easton College asks students on its five-week course to buy secateurs and a small shop knife.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course/format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Make a willow basket in two evenings: two three-hour sessions; materials provided; all levels'
+        - £129 (same for full, senior and concession)
+      - - Easton College, Norwich
+        - 'Willow Basketry: five Tuesday evenings; a tension tray, a berry basket, a plant support and a basket base and an asymmetric hand basket'
+        - Fee to be confirmed
+      - - John C. Campbell Folk School, North Carolina
+        - 'Stake & Strand Willow Baskets: a week; two or three baskets depending on skill; all levels'
+        - $870 tuition, plus $200 materials
+    after: City Lit's last listed dates were in 2025, so check for new runs. The Basketmakers' Association lists workshops run by its members around the UK, though its listings do not always show level
+      or price.
+  faq:
+  - q: How long does it take to make a willow basket?
+    a: A small one can be done on a beginners' class. City Lit's course makes a bread or fruit basket in two three-hour evenings.
+  - q: Do I need to soak willow before weaving?
+    a: Willow is soaked to prepare it for weaving. The John C. Campbell Folk School's willow class teaches sorting and soaking alongside weaving.
+  - q: What tools do I need for willow basket making?
+    a: Classes usually provide what you need on the day. Easton College asks students to buy secateurs and a small shop knife for its course.
+  - q: Is willow basket weaving hard on the hands?
+    a: It needs some strength. City Lit says so in its course notes and suggests contacting the department first if you are concerned.
+  sources:
+  - label: City Lit, Make a willow basket in two evenings
+    url: https://www.citylit.ac.uk/courses/make-a-willow-basket-in-two-evenings/vc240-2526
+    checked: '2026-11-07'
+  - label: Easton College, Willow Basketry
+    url: https://easton.ac.uk/adults/leisure-learning/course/willow-basketry
+    checked: '2026-11-07'
+  - label: John C. Campbell Folk School, Stake & Strand Willow Baskets
+    url: https://folkschool.configio.com/pd/3394/stake-strand-willow-baskets
+    checked: '2026-11-07'
+  - label: 'National Basketry Organization, Sandra Kehoe: Stake and Strand Willow Baskets'
+    url: https://nationalbasketry.org/events/sandra-kehoe-stake-and-strand-willow-baskets/
+    checked: '2026-11-07'
+  - label: The Basketmakers' Association, What's on
+    url: https://basketmakersassociation.org.uk/whats-on/
+    checked: '2026-11-07'
+  - label: The Basketmakers' Association, Beginners' Basketmaking Course January 2023
+    url: https://basketmakersassociation.org.uk/whats-on/beginners-basketmaking-course/
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Sandra Kehoe, New York State
+    line: Took a week of willow basketry at the John C. Campbell Folk School in 2016, kept coming back, and now teaches basketry and grows about 50 varieties of willow on her own basket farm.
+    title: 'The Folk School Changes You: Willow Basketry Instructor Sandra Kehoe Tells Her Story'
+    outlet: John C. Campbell Folk School
+    url: https://www.folkschool.org/2023/02/06/kehoe
+    checked: '2026-11-07'
+  kit:
+  - name: Secateurs
+    why: for trimming willow rods; Easton College asks students to bring a pair
+    url: https://www.amazon.co.uk/s?k=secateurs+bypass
+  - name: Small craft knife
+    why: for cutting willow rods; Easton College asks students to bring a small shop knife
+    url: https://www.amazon.co.uk/s?k=small+craft+knife+fixed+blade
+  related:
+  - learn-a-heritage-craft
+  - try-pottery-on-the-wheel
+  - learn-dry-stone-walling
+  - join-a-woodturning-club

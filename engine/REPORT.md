@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-07)
 
-51 sources, 77 statements, 12 event profiles. Core 48, supported 29, thin 0, contested 0.
+53 sources, 78 statements, 12 event profiles. Core 49, supported 29, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -54,6 +54,8 @@
 - Department for Environment, Food & Rural Affairs (GOV.UK), National Trails, *Coast to Coast Path: National Trail (published 24 June 2026)* (2026). Opened 2026-11-07.
 - Mountain Rescue England and Wales, *Be AdventureSmart (safety advice leaflet)* (2025). Opened 2026-11-07.
 - South West Coast Path Association, *Safety advice* (2026). Opened 2026-11-07.
+- National Weather Service (NOAA), *Lightning safety outdoors, "When a Safe Building or Vehicle is Nearby"* (2026). Opened 2026-11-07.
+- USDA Forest Service, Pike-San Isabel National Forests, *Mount Elbert (Fourteener) (last updated 15 April 2026)* (2026). Opened 2026-11-07.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -103,6 +105,7 @@
 | core | 6 | fuel and drink | On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. | bmc-hill-fit, issn-ultra-2019 |
 | core | 6 | fuel and drink | Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. | ea-pavey-marathon, issn-ultra-2019 |
 | core | 6 | kit | In the later weeks, train with the pack and the kit you will carry on the day so nothing is new. | bmc-hill-fit, ydnpa-three-peaks, wanderlust-trek-prep |
+| core | 6 | on the day | In high mountains thunderstorms usually build in the afternoon. Check the forecast before you go and stay away if a high chance of thunderstorms is forecast; start early and plan to be down by noon; keep off hilltops and ridge tops in a storm, and at the first sign of one get below the treeline. Carry rain gear and warm layers. | nws-lightning-outdoors, usfs-elbert |
 | core | 6 | why | Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. | bosquet-2007, ea-pavey-marathon |
 | core | 6 | warning signs | In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. | rnli-cold-water-2025, swimeng-stay-safe |
 | core | 6 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water |
@@ -152,7 +155,7 @@
 - altitude: 5 usable statements of its own
 - cycling: 5 usable statements of its own
 - endurance: 16 usable statements of its own
-- hill: 9 usable statements of its own
+- hill: 10 usable statements of its own
 - multiday: 8 usable statements of its own
 - running: 8 usable statements of its own
 - swimming: 15 usable statements of its own

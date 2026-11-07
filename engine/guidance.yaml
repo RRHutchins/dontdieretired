@@ -199,6 +199,13 @@ guidance:
     use: safety
     text: Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month.
     for: [inyo-whitney-leaflet]
+  - id: mountain-afternoon-storms
+    topic: on the day
+    applies: [hill]
+    events: [mount-whitney]
+    use: safety
+    text: In high mountains thunderstorms usually build in the afternoon. Check the forecast before you go and stay away if a high chance of thunderstorms is forecast; start early and plan to be down by noon; keep off hilltops and ridge tops in a storm, and at the first sign of one get below the treeline. Carry rain gear and warm layers.
+    for: [nws-lightning-outdoors, usfs-elbert]
   - id: whitney-snow-season
     topic: before you start
     applies: [hill]

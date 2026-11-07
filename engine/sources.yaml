@@ -378,7 +378,7 @@ sources:
     opened: '2026-11-04'
   - id: inyo-whitney
     tier: 3
-    group: inyo
+    group: usfs
     publisher: USDA Forest Service, Inyo National Forest
     title: Mount Whitney (permits, quotas and season; last updated 16 December 2025)
     year: 2025
@@ -386,7 +386,7 @@ sources:
     opened: '2026-11-05'
   - id: inyo-whitney-leaflet
     tier: 3
-    group: inyo
+    group: usfs
     publisher: USDA Forest Service, Inyo National Forest
     title: Hiking the Mt. Whitney Trail (visitor leaflet, November 2013)
     year: 2013
@@ -415,4 +415,20 @@ sources:
     title: Safety advice
     year: 2026
     url: https://www.southwestcoastpath.org.uk/faq/safety-advice/
+    opened: '2026-11-07'
+  - id: nws-lightning-outdoors
+    tier: 3
+    group: nws
+    publisher: National Weather Service (NOAA)
+    title: Lightning safety outdoors, "When a Safe Building or Vehicle is Nearby"
+    year: 2026
+    url: https://www.weather.gov/safety/lightning-outdoors
+    opened: '2026-11-07'
+  - id: usfs-elbert
+    tier: 3
+    group: usfs
+    publisher: USDA Forest Service, Pike-San Isabel National Forests
+    title: Mount Elbert (Fourteener) (last updated 15 April 2026)
+    year: 2026
+    url: https://www.fs.usda.gov/r02/psicc/recreation/mount-elbert-fourteener
     opened: '2026-11-07'
