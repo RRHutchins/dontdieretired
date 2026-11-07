@@ -2307,13 +2307,13 @@ rounds:
         for: children
         source: {title: "K6 Telephone Box", publisher: "Design Museum", url: "https://designmuseum.org/discover-design/all-design-objects/k6-telephone-box"}
         checked: 2026-11-03
-      - q: "Grown-ups: in Minecraft, which green creature creeps up on players and then explodes?"
+      - q: "Grown-ups: in Minecraft, which creature creeps up on players and then explodes?"
         a: "The Creeper"
         note: "The V&A says it was apparently made by accident, when Minecraft's creator got the code for a pig wrong."
         level: 2
         for: grown-ups
         source: {title: "Creeper", publisher: "Victoria and Albert Museum", url: "https://collections.vam.ac.uk/item/O1350002"}
-        checked: 2026-11-03
+        checked: 2026-11-07
       - q: "Children: in 1979 Sony brought out the Walkman. Was it a music player you could carry, a walking robot or a running shoe?"
         a: "A music player you could carry"
         note: "It played cassette tapes. Two people could share one, and a little microphone let them talk without taking their headphones off."
@@ -2425,11 +2425,11 @@ rounds:
       - q: "Children: Concorde flew from London to New York in about three hours. Did it fly at the speed of sound, or twice the speed of sound?"
         a: "Twice the speed of sound"
         accept: ["Mach 2"]
-        note: "It flew until 2003. Britain and France built it together, and it cruised at 60,000 feet. The first prototype flew in 1969."
+        note: "It flew until 2003. Britain and France built it together, and it cruised at 60,000 feet. The prototype 002 first flew in 1969."
         level: 2
         for: children
         source: {title: "Concorde prototype aircraft", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/objects/co29806/concorde-prototype-aircraft"}
-        checked: 2026-11-04
+        checked: 2026-11-07
       - q: "Grown-ups: what is the name of the hero you play in The Legend of Zelda games?"
         a: "Link"
         note: "Shigeru Miyamoto says he was named Link because he connects people together."
@@ -2481,14 +2481,13 @@ rounds:
         for: children
         source: {title: "Rudge 'ordinary' or 'penny farthing' bicycle", publisher: "Science Museum Group", url: "https://collection.sciencemuseumgroup.org.uk/objects/co25834/rudge-ordinary-or-penny-farthing-bicycle"}
         checked: 2026-11-04
-      - q: "Grown-ups: Dog Man, star of Dav Pilkey's comic books, has the head of a dog and the body of what?"
-        a: "A police officer"
-        accept: ["A policeman", "A cop", "A human"]
-        note: "A police dog and his officer partner were hurt on the job, and an operation joined the dog's head to the officer's body. Dav Pilkey also created Captain Underpants."
+      - q: "Grown-ups: Dog Man, star of Dav Pilkey's comic books, has the head of a dog and the body of what: a human, a horse or a robot?"
+        a: "A human"
+        note: "He was born when Greg the police dog and his police officer partner were injured and saved by an operation. Dav Pilkey also created Captain Underpants."
         level: 2
         for: grown-ups
         source: {title: "Dog Man", publisher: "Scholastic New Zealand", url: "https://www.scholastic.co.nz/books/book-promotion/christmas-list-2016/dog-man"}
-        checked: 2026-11-04
+        checked: 2026-11-07
       - q: "Children: when Mr Potato Head first went on sale in 1952, what did children stick his eyes, nose and mouth into?"
         a: "A real potato"
         accept: ["A potato"]
@@ -2538,11 +2537,11 @@ rounds:
       - q: "Grown-ups: Daniel Tiger, the little tiger on PBS Kids, is the son of a puppet from which much older TV show?"
         a: "Mister Rogers' Neighborhood"
         accept: ["Mister Rogers"]
-        note: "His dad was Daniel Striped Tiger. Like Mister Rogers, Daniel starts his day by putting on a red sweater and tying his sneakers."
+        note: "His dad was Daniel Striped Tiger. Daniel starts his day by putting on a red sweater and tying his sneakers."
         level: 2
         for: grown-ups
         source: {title: "DANIEL TIGER'S NEIGHBORHOOD Debuts Monday, September 3, on PBS KIDS", publisher: "PBS", url: "https://www.pbs.org/about/about-pbs/blogs/news/daniel-tigers-neighborhood-debuts-monday-september-3-on-pbs-kids/"}
-        checked: 2026-11-04
+        checked: 2026-11-07
       - q: "Children: the Easy-Bake Oven, a toy from 1963, baked little cakes using the heat from what: a candle, a light bulb or a hair dryer?"
         a: "A light bulb"
         note: "About 500,000 were sold in the first year, and more than 23 million since."
@@ -2550,14 +2549,14 @@ rounds:
         for: children
         source: {title: "How the Easy-Bake Oven, an Appliance That Allowed Kids to Heat Treats With a Light Bulb, Revolutionized the Toy Industry", publisher: "Smithsonian Magazine", url: "https://www.smithsonianmag.com/smithsonian-institution/how-the-easy-bake-oven-an-appliance-that-allowed-kids-to-heat-treats-with-a-light-bulb-revolutionized-the-toy-industry-180988181/"}
         checked: 2026-11-04
-      - q: "Grown-ups: Pikachu, the yellow Pokémon, keeps its electricity in which part of its body?"
+      - q: "Grown-ups: Pikachu, the electric Pokémon, keeps its electricity in which part of its body?"
         a: "Its cheeks"
         accept: ["Cheeks"]
         note: "It has electric sacs on both cheeks. Give it a Thunder Stone and it evolves into Raichu."
         level: 2
         for: grown-ups
         source: {title: "Pikachu Printable Crafts, Quizzes & Puzzles for Kids", publisher: "Nintendo (Play Nintendo)", url: "https://play.nintendo.com/themes/friends/pikachu"}
-        checked: 2026-11-04
+        checked: 2026-11-07
       - q: "Children: the Frisbee is named after a bakery whose tin plates students were said to throw across the grass. Did the bakery make pies, bread or doughnuts?"
         a: "Pies"
         note: "The Frisbie Pie Company was founded in Bridgeport, Connecticut, in 1871. Toymakers in California made the plastic version in the 1950s."
@@ -2595,13 +2594,13 @@ rounds:
         for: children
         source: {title: "The Slinky", publisher: "Heinz History Center", url: "https://www.heinzhistorycenter.org/blog/collection-spotlight-the-slinky-a-spring-a-spring-a-marvelous-thing/"}
         checked: 2026-11-04
-      - q: "Grown-ups: Minecraft's green Creeper was apparently made by accident when its creator got the code wrong for which farm animal?"
+      - q: "Grown-ups: Minecraft's Creeper was apparently made by accident when its creator got the code wrong for which farm animal?"
         a: "A pig"
         note: "The Creeper creeps up on players and then explodes. Minecraft was made by the Swedish designer Markus 'Notch' Persson."
         level: 3
         for: grown-ups
         source: {title: "Creeper", publisher: "Victoria and Albert Museum", url: "https://collections.vam.ac.uk/item/O1350002"}
-        checked: 2026-11-04
+        checked: 2026-11-07
       - q: "Children: the name Crayola comes partly from craie, the French word for what?"
         a: "Chalk"
         note: "The first box, in 1903, held eight colours and cost five cents. The name was thought up by Alice Binney, a former teacher."
@@ -2710,14 +2709,13 @@ rounds:
         for: children
         source: {title: "Me and My Spuds", publisher: "Pentacrest Museums, The University of Iowa", url: "https://pentacrestmuseums.uiowa.edu/me-and-my-spuds"}
         checked: 2026-11-04
-      - q: "Grown-ups: Dog Man, star of Dav Pilkey's comic books, has the head of a dog and the body of what?"
-        a: "A police officer"
-        accept: ["A policeman", "A cop", "A human"]
-        note: "A police dog and his officer partner were hurt on the job, and an operation joined the dog's head to the officer's body. Dav Pilkey also created Captain Underpants."
+      - q: "Grown-ups: Dog Man, star of Dav Pilkey's comic books, has the head of a dog and the body of what: a human, a horse or a robot?"
+        a: "A human"
+        note: "He was born when Greg the police dog and his police officer partner were injured and saved by an operation. Dav Pilkey also created Captain Underpants."
         level: 2
         for: grown-ups
         source: {title: "Dog Man", publisher: "Scholastic New Zealand", url: "https://www.scholastic.co.nz/books/book-promotion/christmas-list-2016/dog-man"}
-        checked: 2026-11-04
+        checked: 2026-11-07
       - q: "Children: the wooden building toy Lincoln Logs was invented by the son of a famous what: architect, astronaut or baseball player?"
         a: "Architect"
         accept: ["An architect"]
