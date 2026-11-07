@@ -763,8 +763,11 @@
   season: Late spring to early autumn
   regions:
   - uk
-  places: [north-west, yorkshire]
-  why: This 190-mile National Trail crosses England from St Bees on the Irish Sea to Robin Hood's Bay on the North Sea. It passes through three national parks, the Lake District, the Yorkshire Dales and the North York Moors, so the scenery changes every few days.
+  places:
+  - north-west
+  - yorkshire
+  why: This 190-mile National Trail crosses England from St Bees on the Irish Sea to Robin Hood's Bay on the North Sea. It passes through three national parks, the Lake District, the Yorkshire Dales and
+    the North York Moors, so the scenery changes every few days.
   start:
   - Read the National Trails page and decide between one continuous walk and several shorter trips.
   - Sketch daily stages you are comfortable with and book accommodation well ahead.
@@ -774,7 +777,12 @@
     url: https://www.nationaltrail.co.uk/en_GB/trails/coast-to-coast/
     region: uk
     checked: '2026-10-06'
-  safety: The Lake District stages cross high fells, so carry a map and compass and check the forecast each morning.
+  - label: 'GOV.UK: Coast to Coast Path National Trail'
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/coast-to-coast-path-national-trail
+    region: uk
+    checked: '2026-11-07'
+  safety: 'The Lake District stages cross high, remote fells where waymarks stop: carry a map and compass, check the mountain forecast each morning, take the low-level options in bad weather, and in an
+    emergency call 999 or 112 and ask for Police, then Mountain Rescue.'
   guide: walking-holidays-for-beginners-after-50
   inspire:
   - kind: read
@@ -797,6 +805,133 @@
   - name: Waterproof map case
     why: keeps a paper map readable in rain and wind
     url: https://www.amazon.co.uk/s?k=waterproof+map+case
+  seo_title: 'Coast to Coast walk: stages, days and how hard it is'
+  description: 'Plan the Coast to Coast Path: the 12 stages from St Bees to Robin Hood''s Bay, how many days, which way to walk, the hard sections and low-level options.'
+  detail:
+  - h: What it's really like
+    p:
+    - Alfred Wainwright described his Coast to Coast walk in a book in 1973. On 26 March 2026 it became England's newest National Trail, after a £5.5 million upgrade, begun in November 2022, that brought
+      new signs, better surfaces, about 5 km of new flagstone path near Nine Standards Rigg and White Mossy Hill, and an accessible route along the shore of Ennerdale Water.
+    - The official route runs 190 miles (306 km) from St Bees on the Irish Sea to Robin Hood's Bay on the North Sea, through the Lake District, the Yorkshire Dales and the North York Moors. GOV.UK says
+      it takes around 13 days, including a rest day, and more than 6,000 people finish it each year. Natural England's 2022 proposal for the trail said over a quarter of them are international visitors.
+    - Most people walk west to east, with the prevailing wind behind them, and the path is signed in both directions. Other sources give 192 to 197 miles; the 190-mile figure is the National Trail as it
+      opened in 2026.
+  - h: The 12 stages
+    table:
+      head:
+      - Stage
+      - From and to
+      - What to know
+      rows:
+      - - '1'
+        - St Bees to Ennerdale Bridge
+        - The start on the Irish Sea coast
+      - - '2'
+        - Ennerdale Bridge to Rosthwaite
+        - An optional, more accessible route runs along the north shore of Ennerdale Water; the other goes through Ennerdale Forest past Black Sail Youth Hostel
+      - - '3'
+        - Rosthwaite to Patterdale
+        - High Lake District fells, where waymarking usually stops above the fell wall
+      - - '4'
+        - Patterdale to Shap
+        - Over Kidsty Pike and down past Kidsty Howes
+      - - '5'
+        - Shap to Kirkby Stephen
+        - —
+      - - '6'
+        - Kirkby Stephen to Keld
+        - Nine Standards Rigg, with new flagstones over the boggy ground and winter alternative routes
+      - - '7'
+        - Keld to Reeth
+        - Keld is the halfway point. A high moorland route past old lead mines, or a low, gentler riverside path through Swaledale
+      - - '8'
+        - Reeth to Richmond
+        - —
+      - - '9'
+        - Richmond to Ingleby Cross
+        - The route avoids crossing the A19 at Ingleby Arncliffe and follows a diversion north to a bridge near East Rounton
+      - - '10'
+        - Ingleby Cross to Clay Bank Top
+        - Into the North York Moors, over Scarth Wood Moor
+      - - '11'
+        - Clay Bank Top to Glaisdale
+        - Over Urra Moor and Round Hill
+      - - '12'
+        - Glaisdale to Robin Hood's Bay
+        - The finish on the North Sea coast
+    after: GOV.UK lists these twelve sections without distances. Split evenly, 190 miles works out at about 16 miles (25 km) a stage, but the stages are not equal, so plan each day from a route guide or
+      the National Trails website.
+  - h: The honest hard parts
+    p:
+    - 'GOV.UK is plain about it: overall this is a demanding trail, with several hilly, steep and remote sections, and the western end through the Lake District is the hardest. In the Lake District the
+      waymarks usually stop above the fell wall so they do not spoil the landscape, so you need to navigate across the high fells yourself.'
+    - The path is open all year, but some high-level sections may be difficult in winter or bad weather, and there are low-level options to avoid them. On Nine Standards Rigg, where erosion washed peat
+      into the streams, the Yorkshire Dales National Park Authority has set alternative routes for the winter months; one guidebook describes the green route as the December-to-April and bad-weather option.
+      Follow the signs on the ground.
+    list:
+    - Map and compass, and the skill to use them. Mountain Rescue England and Wales lists map and compass skills first; phone batteries and signal fail.
+    - Warm, windproof and waterproof layers, with a hat and gloves, even in summer.
+    - The mountain forecast each morning from the Mountain Weather Information Service or Lake District Weatherline.
+    - Your route and expected arrival time left with someone each day.
+  - h: Getting there and building up
+    p:
+    - St Bees is on the Cumbrian Coast railway line. The Mountaineers, a US hiking club, suggests that American walkers fly into London Heathrow or Manchester, then take the train from London Euston to
+      Carlisle (about three hours) and change for St Bees. At the far end, Arriva's X93 and X94 buses link Robin Hood's Bay with Whitby, Scarborough and Middlesbrough. Natural England says the route is
+      well served by public transport, including community buses in the Dales and the Moors.
+    - Thirteen days in a row is the real test. Before you go, walk two long days back to back with the pack you will carry. Most walkers sleep in local accommodation along the way (77% in a 2025 survey
+      reported by Natural England), so plan your beds before you set off.
+  faq:
+  - q: How long is the Coast to Coast walk?
+    a: 190 miles (306 km) from St Bees to Robin Hood's Bay, on the National Trail that opened in March 2026. Other sources give 192 to 197 miles.
+  - q: How many days does the Coast to Coast take?
+    a: GOV.UK says around 13 days, including a rest day. The Lake District National Park Authority says it is often walked as a continuous two-week journey.
+  - q: Which direction should you walk the Coast to Coast?
+    a: 'Either way: it is signed both ways. Most people walk west to east, from St Bees to Robin Hood''s Bay, with the prevailing wind behind them.'
+  - q: Is the Coast to Coast walk hard?
+    a: GOV.UK calls it a demanding trail, with hilly, steep and remote sections. The Lake District stages at the western end are the hardest.
+  - q: Is the Coast to Coast waymarked?
+    a: Yes, with the National Trail acorn or the trail name, and "AW" on some wooden signs. In the Lake District the waymarks usually stop above the fell wall, so carry a map and compass.
+  - q: Is the Coast to Coast a National Trail?
+    a: Yes. Wainwright's route was officially opened as England's newest National Trail on 26 March 2026.
+  sources:
+  - label: 'GOV.UK (Defra), Coast to Coast Path: National Trail'
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/coast-to-coast-path-national-trail
+    checked: '2026-11-07'
+  - label: Natural England and Defra, 'Wainwright way' becomes England's newest National Trail (26 March 2026)
+    url: https://www.gov.uk/government/news/wainwright-way-becomes-englands-newest-national-trail
+    checked: '2026-11-07'
+  - label: National Trails, Coast to Coast Path National Trail
+    url: https://nationaltrail.co.uk/en_GB/?p=229354
+    checked: '2026-11-07'
+  - label: Lake District National Park Authority, Upgrade of Wainwright's Coast to Coast to National Trail
+    url: https://www.lakedistrict.gov.uk/caringfor/projects/upgrade-of-wainwrights-coast-to-coast-to-national-trail
+    checked: '2026-11-07'
+  - label: Natural England, National Trail Proposal for the Coast to Coast Path (NE777, 2022)
+    url: https://publications.naturalengland.org.uk/publication/5224470032941056
+    checked: '2026-11-07'
+  - label: North York Moors National Park, Coast to Coast Path National Trail
+    url: https://www.northyorkmoors.org.uk/things-to-do/walking/coast-to-coast
+    checked: '2026-11-07'
+  - label: 'British Mountaineering Council, Coast to Coast: raising the standard (2017)'
+    url: https://services.thebmc.co.uk/coast-to-coast-walk-raising-the-standard
+    checked: '2026-11-07'
+  - label: The Great Outdoors, extract from Vivienne Crow's Walking in Cumbria's Eden Valley (Cicerone)
+    url: https://www.thegreatoutdoorsmag.com/?p=27981
+    checked: '2026-11-07'
+  - label: Mountain Rescue England and Wales, Be AdventureSmart safety advice
+    url: https://new.cro.org.uk/wp-content/uploads/2025/04/MREWSafetyAdvice.pdf
+    checked: '2026-11-07'
+  - label: The Mountaineers, Hike the Coast to Coast Trail from St Bees to Robin Hood's Bay
+    url: https://www.mountaineers.org/activities/routes-places/global-adventures/hike-the-coast-to-coast-trail-from-st-bees-to-robin-hoods-bay-england
+    checked: '2026-11-07'
+  - label: Arriva, X93/X94 Whitby to Scarborough
+    url: https://www.arrivabus.co.uk/offers-promotions/x93-sightseeing-tour
+    checked: '2026-11-07'
+  related:
+  - walk-hadrians-wall-path
+  - walk-west-highland-way
+  - climb-scafell-pike
+  - walk-yorkshire-three-peaks
 - id: walk-west-highland-way
   title: Walk the West Highland Way
   category: move
@@ -1896,6 +2031,196 @@
   - name: Warm hat and gloves
     why: you stand still a lot, and it gets cold
     url: https://www.amazon.co.uk/s?k=thermal+hat+gloves+set
+  guide: stargazing-for-beginners
+  local: stargazing
+  inspire:
+  - kind: read
+    person: Steve Tonkin, Dark Sky Advisor at Cranborne Chase National Landscape
+    line: Volunteered on Cranborne Chase's bid to become an International Dark Sky Reserve, taking sky quality readings and helping at stargazing evenings, after 35 years teaching physics, maths and astronomy.
+    title: Steve Tonkin - Cranborne Chase National Landscape
+    outlet: Cranborne Chase National Landscape
+    url: https://cranbornechase.org.uk/team/steve-tonkin/
+    checked: '2026-11-07'
+  seo_title: 'Dark Sky Parks: where and when to see the Milky Way'
+  description: 'How to see the Milky Way at a Dark Sky Park or Reserve: the five kinds of Dark Sky Place, the best UK and US parks, new moon dates and what to take.'
+  detail:
+  - h: What it's really like
+    p:
+    - 'On a clear night in Galloway Forest Park, Forestry and Land Scotland says more than 7,000 stars and planets can be seen with the naked eye, and the Milky Way is usually easy to pick out. The Royal
+      Observatory Greenwich puts the difference plainly: in a city you see stars down to about magnitude 3, while at a dark site you can see them as faint as magnitude 6.'
+    - The view does not arrive at once. The US National Park Service says your eyes take 20 to 30 minutes to adjust to low light, and Forestry and Land Scotland says to give them 30. One glance at a white
+      phone screen undoes it, which is why parks ask for red torches and phones kept away. The honest hard parts are cloud, which no park can control, the Moon, whose light washes out faint stars, and the
+      cold of standing still for an hour.
+  - h: The five kinds of Dark Sky Place
+    table:
+      head:
+      - Type
+      - What DarkSky International means by it
+      rows:
+      - - Dark Sky Park
+        - Land with an exceptional quality of starry nights, protected for its science, nature, heritage or public enjoyment
+      - - Dark Sky Reserve
+        - A core area that meets minimum standards for sky quality and natural darkness, with a surrounding peripheral area
+      - - Dark Sky Sanctuary
+        - Like a park, but usually in a very remote place
+      - - Dark Sky Community
+        - A town or city that has adopted and enforces a good outdoor lighting ordinance and teaches about dark skies
+      - - Urban Night Sky Place
+        - A park or open space in or near a city, designed to give an authentic night-time experience despite the lights around it
+    after: For a first night under a truly dark sky, a park or reserve is the place to aim for. Many of those below have marked viewing spots, and several run guided evenings.
+  - h: Where to go in the UK and US
+    table:
+      head:
+      - Place
+      - Status
+      - What's there
+      rows:
+      - - Galloway Forest Park, south-west Scotland
+        - Dark Sky Park, 2009, Gold Tier
+        - Viewing at Clatteringshaws Loch, Stroan Loch and Glentrool; star-spotting information at the Kirroughtree visitor hub
+      - - Northumberland National Park and Kielder Water and Forest Park
+        - Dark Sky Park, December 2013, Gold Tier
+        - Kielder Observatory runs ticketed evenings; the North East Dark Skies Festival is on 12 to 20 February 2027
+      - - Exmoor National Park
+        - Europe's first Dark Sky Reserve, 2011
+        - A 3.2 km (2 mile) Dark Sky Discovery Trail out to Larkbarrow Farm and back, about 1½ hours; the 2026 Dark Skies Festival ran from 16 October to 1 November
+      - - South Downs National Park
+        - Dark Sky Reserve, 2016
+        - Ten Dark Sky Discovery Sites, including Butser Hill, Harting Down, Devil's Dyke, Ditchling Beacon and Birling Gap
+      - - Bannau Brycheiniog (Brecon Beacons)
+        - Dark Sky Reserve, 2013, the world's fifth
+        - Wales's first Dark Sky Reserve
+      - - Cherry Springs State Park, Pennsylvania
+        - Dark Sky Park, 2008
+        - A public viewing area for a few hours, and an overnight astronomy field where white light is banned
+      - - Big Bend National Park, Texas
+        - Dark Sky Park, 2012
+        - The least light pollution of any national park unit in the lower 48 states; free ranger night-sky programmes
+      - - Great Basin National Park, Nevada
+        - Dark Sky Park, 2016, Gold Tier
+        - Ranger astronomy programmes Thursday to Sunday, roughly Memorial Day to Labor Day, and an astronomy festival each September
+      - - Natural Bridges National Monument, Utah
+        - The first International Dark Sky Park, 2007
+        - Ranger stargazing programmes in spring and summer
+    after: Eryri National Park says it is one of 18 International Dark Sky Reserves in the world. Use DarkSky International's place finder for the full list, and each park's own page for this season's events.
+  - h: 'When to go: the new moon'
+    p:
+    - Plan around the Moon. The National Park Service says the best nights are at new moon, or before moonrise or after moonset. NASA says the brightest part of the Milky Way is a summer sight in the northern
+      hemisphere, rising in the south-east near Scorpius and Sagittarius, and is best seen when the Moon is new or a crescent.
+    table:
+      head:
+      - New moon
+      - Time (UT)
+      rows:
+      - - 9 November 2026
+        - 07:02
+      - - 9 December 2026
+        - 00:52
+      - - 7 January 2027
+        - '20:24'
+      - - 6 February 2027
+        - '15:56'
+      - - 8 March 2027
+        - 09:29
+      - - 6 April 2027
+        - '23:51'
+      - - 6 May 2027
+        - '10:58'
+      - - 4 June 2027
+        - '19:40'
+      - - 4 July 2027
+        - 03:02
+    after: 'Dates from the US Naval Observatory. UT is the same as GMT: add an hour for British Summer Time, and take off five hours for US Eastern time (four in summer).'
+  - h: What to take, and how to behave
+    list:
+    - A red torch, or a red filter on your torch and phone screen. Great Basin bans white lights at its talks to protect everyone's night vision.
+    - 'Warm layers, a hat and a chair: you will be standing or sitting still for a long time.'
+    - Binoculars if you have them. Big Bend suggests them; nothing more is needed to start.
+    - A cloud forecast, checked before you leave.
+    - Park only in designated car parks, never on verges, and expect few facilities at night viewing spots.
+    - 'Follow local signs: Galloway is checking how recent storms have affected its forests, and Exmoor asks walkers on its dark sky trail to keep away from cattle from May to September.'
+  faq:
+  - q: What is a Dark Sky Park?
+    a: An area that DarkSky International has certified for an exceptional quality of starry nights, protected for its science, nature, heritage or public enjoyment.
+  - q: What is the difference between a Dark Sky Park and a Dark Sky Reserve?
+    a: A reserve has a dark core area that meets minimum standards for sky quality, with a surrounding peripheral area; a park is protected land with an exceptional quality of starry nights.
+  - q: When is the best time to see the Milky Way?
+    a: In the northern hemisphere its brightest part is a summer sight, rising in the south-east. Go near a new moon on a clear night, well away from lights.
+  - q: How long does it take your eyes to adjust to the dark?
+    a: The US National Park Service says 20 to 30 minutes; Forestry and Land Scotland says to allow 30. Use a red light and keep your phone away so you do not have to start again.
+  - q: Do I need a telescope to stargaze at a Dark Sky Park?
+    a: No. In Galloway more than 7,000 stars and planets can be seen with the naked eye, and binoculars are a good next step.
+  - q: Where is the first International Dark Sky Park?
+    a: Natural Bridges National Monument in Utah, named in 2007. In the UK, Galloway Forest Park was one of the first in the world, in 2009.
+  sources:
+  - label: DarkSky International, Dark Sky Place types
+    url: https://darksky.org/what-we-do/international-dark-sky-places/dark-sky-place-types/
+    checked: '2026-11-07'
+  - label: DarkSky International, Cherry Springs State Park
+    url: https://darksky.org/places/cherry-springs-state-park-dark-sky-park
+    checked: '2026-11-07'
+  - label: Forestry and Land Scotland, Galloway International Dark Sky Park
+    url: https://forestryandland.gov.scot/visit/forest-parks/galloway-forest-park/dark-skies
+    checked: '2026-11-07'
+  - label: Kielder Observatory Astronomical Society, Northumberland International Dark Sky Park
+    url: https://kielderobservatory.org/outreach/dark-skies/82-northumberland-international-dark-sky-park
+    checked: '2026-11-07'
+  - label: Visit Northumberland, North East Dark Skies Festival 2027
+    url: https://www.visitnorthumberland.com/explore/things-to-do/events/star-gazing-events/north-east-dark-skies-festival
+    checked: '2026-11-07'
+  - label: Exmoor National Park, Our Dark Sky Reserve
+    url: https://exmoor-nationalpark.gov.uk/exmoor-for-everyone/stargazing-and-dark-skies/our-dark-sky-reserve
+    checked: '2026-11-07'
+  - label: Exmoor National Park, Dark Sky Discovery Trail
+    url: https://www.exmoor-nationalpark.gov.uk/exmoor-for-everyone/things-to-do/walking/darksky
+    checked: '2026-11-07'
+  - label: Exmoor National Park, Dark Sky Festival events 2026
+    url: https://www.exmoor-nationalpark.gov.uk/exmoor-for-everyone/stargazing-and-dark-skies/exmoor-dark-skies-festival/dark-sky-festival-events
+    checked: '2026-11-07'
+  - label: South Downs National Park Authority, International Dark Sky Reserve status (10 May 2016)
+    url: https://www.southdowns.gov.uk/south-downs-national-park-wins-international-dark-sky-reserve-status/
+    checked: '2026-11-07'
+  - label: South Downs National Park Authority, Dark Sky Discovery Sites
+    url: https://www.southdowns.gov.uk/?p=18358
+    checked: '2026-11-07'
+  - label: Bannau Brycheiniog National Park Authority, the world's 5th International Dark Sky Reserve (February 2013)
+    url: https://beacons-npa.gov.uk/the-authority/press-and-news/archive/2013-2/february-2013/brecon-beacons-becomes-the-world2019s-5th-international-dark-sky-reserve/
+    checked: '2026-11-07'
+  - label: Eryri National Park Authority, Dark Skies
+    url: https://eryri.gov.wales/?p=2121
+    checked: '2026-11-07'
+  - label: Pennsylvania DCNR, Stargazing at Cherry Springs State Park
+    url: https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/cherry-springs-state-park/stargazing.html
+    checked: '2026-11-07'
+  - label: National Park Service, Night Skies and Stargazing, Big Bend
+    url: https://www.nps.gov/bibe/planyourvisit/stargazing.htm
+    checked: '2026-11-07'
+  - label: National Park Service, Astronomy Programs, Great Basin
+    url: https://www.nps.gov/grba/planyourvisit/astronomy-programs.htm
+    checked: '2026-11-07'
+  - label: National Park Service, Stargazing, Natural Bridges
+    url: https://www.nps.gov/nabr/planyourvisit/stargazing.htm
+    checked: '2026-11-07'
+  - label: National Park Service, Astronomy
+    url: https://home.nps.gov/articles/000/astronomy.htm
+    checked: '2026-11-07'
+  - label: 'NASA Science, August''s Night Sky Notes: The Great Rift'
+    url: https://science.nasa.gov/solar-system/skywatching/night-sky-network/augusts-night-sky-notes-the-great-rift/
+    checked: '2026-11-07'
+  - label: Royal Observatory Greenwich, Your guide to observing the night sky
+    url: https://www.rmg.co.uk/sites/default/files/Guide%20to%20observing%20the%20night%20sky.pdf
+    checked: '2026-11-07'
+  - label: US Naval Observatory, Phases of the Moon 2026
+    url: https://aa.usno.navy.mil/calculated/moon/phases?year=2026
+    checked: '2026-11-07'
+  - label: US Naval Observatory, Phases of the Moon 2027
+    url: https://aa.usno.navy.mil/calculated/moon/phases?year=2027
+    checked: '2026-11-07'
+  related:
+  - see-saturns-rings
+  - see-the-northern-lights
+  - sleep-under-the-stars
+  - visit-a-stone-circle-at-solstice
 - id: jurassic-coast-fossil-hunt
   title: Find your own fossil on the Jurassic Coast
   category: explore
@@ -9214,7 +9539,7 @@
     why: lets you read a chart without losing your night vision
     url: https://www.amazon.co.uk/s?k=red+light+torch+astronomy
 - id: visit-a-stone-circle-at-solstice
-  title: Watch the midsummer sunrise at Stonehenge
+  title: Watch the solstice sunrise at Stonehenge
   category: travel
   kind: experience
   effort: gentle
@@ -9225,8 +9550,10 @@
   season: Midsummer and midwinter
   regions:
   - uk
-  places: [south-west]
-  why: Stonehenge was built to line up with the sun at the solstices, and at midsummer the sun rises behind the Heel Stone and its first rays shine into the heart of the monument. English Heritage, which looks after the site, publishes how to attend the summer solstice and the conditions of entry.
+  places:
+  - south-west
+  why: Stonehenge's stones frame the rising sun at midsummer and the setting sun at midwinter, and at each solstice English Heritage opens the stone circle to everyone, free. It publishes the times, the
+    travel options and the conditions of entry for every gathering.
   start:
   - Read English Heritage's Stonehenge solstice page and its summer solstice visitor information.
   - Plan your travel by public transport through Salisbury, as parking at the site is limited and must be booked.
@@ -9236,6 +9563,161 @@
     url: https://www.english-heritage.org.uk/visit/places/stonehenge/things-to-do/solstice/
     region: uk
     checked: '2026-10-08'
+  - label: 'English Heritage: Winter Solstice 2026 at Stonehenge'
+    url: https://www.english-heritage.org.uk/visit/places/stonehenge/things-to-do/solstice/winter-solstice-2026/
+    region: uk
+    checked: '2026-11-07'
+  - label: 'Cahokia Mounds State Historic Site: solstice sunrise observance (Illinois)'
+    url: https://cahokiamounds.org/?p=45294
+    region: us
+    checked: '2026-11-07'
+  inspire:
+  - kind: read
+    person: Deirdre O'Shea, of Killarney, Co Kerry
+    line: Was one of the few people inside the Newgrange chamber at the 2023 winter solstice, with her mother Cecilia, and watched it fill with light as the sun rose.
+    title: Onlookers observe 'magical' Winter Solstice at Newgrange
+    outlet: RTÉ News
+    url: https://www.rte.ie/news/leinster/2023/1221/1423137-winter-solstice
+    checked: '2026-11-07'
+  seo_title: 'Stonehenge solstice sunrise: times, parking and rules'
+  description: 'How to see the solstice sunrise at Stonehenge: winter 2026 times, free entry, parking and buses, what you cannot bring, and other ancient sites to try.'
+  detail:
+  - h: What it's really like
+    p:
+    - At the solstice, English Heritage opens Stonehenge free of charge and lets people walk up to the stone circle itself. On an ordinary day, getting inside the circle means booking a guided Stone Circle
+      Experience. The next solstice opening is the winter gathering on Tuesday 22 December 2026, with sunrise at about 8:09am.
+    - 'The Royal Observatory Greenwich puts the solstice itself at 8.50pm GMT on Monday 21 December, so the celebration is the sunrise that follows. It is a crowded, dark, early start: the car park opens
+      at 5:15am, the queue to get in by car can last up to two hours, and Wiltshire Police and the ambulance service are on site.'
+    - Go with the right spirit. English Heritage asks visitors to respect others, because for many people who come, Stonehenge is a sacred place. You may not touch or climb on the stones, and any chair
+      has to stay at least 2 metres (about 6 feet) away from standing or fallen stones.
+  - h: Winter solstice 2026 at a glance
+    table:
+      head:
+      - What
+      - Detail
+      rows:
+      - - Date
+        - Tuesday 22 December 2026
+      - - Entry
+        - Free
+      - - Car park opens
+        - 5:15am
+      - - Last parking for the sunrise
+        - 7:00am
+      - - Sunrise
+        - About 8:09am
+      - - Last parking admission
+        - 9:00am
+      - - Everyone out of the car park
+        - By 11:00am
+      - - Parking
+        - 'Must be booked ahead: £16 a car or van, £21 a motorhome, £5 a motorbike; a few Blue Badge spaces at £16'
+      - - Watch from home
+        - Free livestream on the official Stonehenge and English Heritage Facebook pages and the English Heritage YouTube channel
+    after: These are English Heritage's own times, checked on 7 November 2026, and it calls them approximate. Check its Winter Solstice 2026 page before you set off. It also warns about fake pages and scammers,
+      so book parking only through English Heritage.
+  - h: Getting there without a car
+    p:
+    - 'English Heritage strongly advises against driving: sat navs are unreliable because of temporary road closures, and drivers have to follow the yellow "Solstice – Ticket Holders" signs. Salisbury Reds
+      runs special buses from Salisbury railway station and the city centre (New Canal) through Amesbury to Stonehenge, with times on the Salisbury Reds website. There are taxis at Salisbury station, but
+      book one ahead.'
+    - Stonehenge is a 2½ mile (4 km) walk from Amesbury. From the visitor centre a shuttle bus runs to the stone circle, or the walk takes 25 to 30 minutes on the signed pedestrian route.
+  - h: What you can and cannot bring
+    list:
+    - No drugs or alcohol anywhere on the site. Alcohol is taken off you.
+    - No camping, tents, sleeping bags or duvets. Sleeping on the ground is a trip hazard.
+    - No glass, which can hurt the livestock and wildlife.
+    - No drones, bladed items or naked flames, including candles and fireworks, and no smoking or vaping in the stone circle.
+    - Small bags only, about 30 x 25 x 15 cm (12 x 10 x 6 inches), which may be searched. No large umbrellas.
+    - No pets except assistance dogs.
+    - Acoustic instruments are fine; amplified music is not.
+    - Outdoor chairs only, kept at least 2 metres from the stones. Take your rubbish home, or bag it and bin it at a marked point.
+  - h: Other places to see the solstice sun
+    table:
+      head:
+      - Place
+      - What happens
+      - How to go
+      rows:
+      - - Stonehenge, Wiltshire (any time of year)
+        - 'The Stone Circle Experience: an hour inside the circle with a guide, early morning or evening, at most 52 people'
+        - Book ahead, from £70 an adult and £40 for ages 5 to 17; booking to March 2027, none in October or November
+      - - Avebury, Wiltshire (National Trust)
+        - The Trust calls the summer solstice an extremely busy time; there is no camping and the stones may not be climbed
+        - Bus 49 or 42 to the Red Lion (the 42 does not run on Sundays); parking £8 all day
+      - - Newgrange, Co Meath, Ireland
+        - On winter solstice mornings, 19 to 23 December, sunlight enters the passage tomb through the roof box above the entrance; on the shortest day it shines in for 17 minutes
+        - 'A public lottery: 38 winners, each with a guest; 34,263 people entered for 2026'
+      - - Maeshowe, Orkney
+        - The setting sun shines down the passage for about three weeks either side of the winter solstice
+        - Timed tickets; Historic Environment Scotland suggests the 2pm tour, late November to mid-January
+      - - Castlerigg, near Keswick, Cumbria
+        - 38 standing stones about 4,500 years old, in a ring of fells
+        - Free, open at any reasonable time in daylight; limited parking, or about 30 minutes on foot from Keswick
+      - - Calanais, Isle of Lewis
+        - Neolithic standing stones with over 5,000 years of history, reached through the visitor centre
+        - Book through Urras nan Tursachan; an entry fee was approved in November 2025, with prices still to be published
+      - - Cahokia Mounds, Illinois, US
+        - A free sunrise talk by an archaeologist at the reconstructed Woodhenge, on the Sunday closest to each solstice and equinox
+        - Free entry and parking, no booking; check the events page for the date
+    after: Newgrange's 2026 draw has already been made; the Office of Public Works will livestream the 2026 solstice on Monday 21 December. Cahokia asks that no ceremonies are held at its observances, out
+      of respect for Native American cultures.
+  faq:
+  - q: When is the winter solstice at Stonehenge in 2026?
+    a: English Heritage opens Stonehenge for the winter solstice on Tuesday 22 December 2026, with sunrise at about 8:09am. The solstice itself falls at 8.50pm GMT on Monday 21 December.
+  - q: Is the Stonehenge solstice free?
+    a: 'Entry is free. If you drive, you must book parking ahead: £16 for a car or van, £21 for a motorhome and £5 for a motorbike.'
+  - q: Can you touch the stones at Stonehenge on the solstice?
+    a: No. English Heritage asks you not to touch or climb on the stones, and to keep chairs at least 2 metres away from them.
+  - q: When is the summer solstice in 2027?
+    a: The Royal Observatory Greenwich gives Monday 21 June 2027. On 7 November 2026 English Heritage had not yet published its 2027 arrangements, so check its solstice page in the spring.
+  - q: Can I watch the Stonehenge solstice sunrise online?
+    a: Yes. English Heritage livestreams it free on the official Stonehenge and English Heritage Facebook pages and the English Heritage YouTube channel.
+  - q: Can you go inside the Stonehenge circle on a normal day?
+    a: Only on English Heritage's Stone Circle Experience, a guided hour outside normal opening times, from £70 for an adult. It is booking to March 2027, with no visits in October or November.
+  safety: 'It is dark and crowded before dawn: keep to the signed pedestrian routes, leave candles and anything with a flame at home, and find a steward, police officer or ambulance crew if you need help.'
+  sources:
+  - label: English Heritage, Winter Solstice 2026
+    url: https://www.english-heritage.org.uk/visit/places/stonehenge/things-to-do/solstice/winter-solstice-2026/
+    checked: '2026-11-07'
+  - label: English Heritage, Stonehenge Stone Circle Experience
+    url: https://www.english-heritage.org.uk/visit/places/stonehenge/things-to-do/stone-circle-access-visits/
+    checked: '2026-11-07'
+  - label: Royal Observatory Greenwich, When is the winter solstice?
+    url: https://www.rmg.co.uk/stories/time/when-winter-solstice-shortest-day
+    checked: '2026-11-07'
+  - label: Royal Observatory Greenwich, Summer solstice
+    url: https://www.rmg.co.uk/stories/time/summer-solstice
+    checked: '2026-11-07'
+  - label: National Trust, Summer Solstice at Avebury
+    url: https://www.nationaltrust.org.uk/visit/wiltshire/avebury/visiting-between-20-22-june
+    checked: '2026-11-07'
+  - label: English Heritage, Castlerigg Stone Circle
+    url: https://english-heritage.org.uk/visit/places/castlerigg-stone-circle
+    checked: '2026-11-07'
+  - label: 'Historic Environment Scotland, Calanais Standing Stones: plan your visit'
+    url: https://www.historicenvironment.scot/visit/all/calanais-standing-stones/plan-your-visit/
+    checked: '2026-11-07'
+  - label: Historic Environment Scotland, Entry fee introduced at Calanais Standing Stones (24 November 2025)
+    url: https://www.historicenvironment.scot/about-us/news/entry-fee-introduced-to-protect-5-000-years-of-history-at-calanais-standing-stones/
+    checked: '2026-11-07'
+  - label: Historic Environment Scotland, Maeshowe Chambered Cairn
+    url: https://www.historicenvironment.scot/visit/all/maeshowe-chambered-cairn/
+    checked: '2026-11-07'
+  - label: Heritage Ireland, Newgrange Winter Solstice
+    url: https://heritageireland.ie/learn/newgrange-winter-solstice
+    checked: '2026-11-07'
+  - label: Office of Public Works, Winners of the 2026 Winter Solstice lottery draw (15 October 2026)
+    url: https://www.gov.ie/en/office-of-public-works/press-releases/opw-announces-winners-of-the-2026-winter-solstice-lottery-draw-at-br%C3%BA-na-b%C3%B3inne-visitor-centre-co-meath/
+    checked: '2026-11-07'
+  - label: Cahokia Mounds State Historic Site, Summer Solstice Observation
+    url: https://cahokiamounds.org/?p=45294
+    checked: '2026-11-07'
+  related:
+  - dark-sky-place
+  - see-ice-age-cave-art
+  - walk-the-streets-of-pompeii
+  - see-the-taj-mahal-at-sunrise
 - id: walk-across-a-tidal-causeway
   title: Cross the tidal causeway to Holy Island
   category: travel
@@ -10137,8 +10619,10 @@
   company: either
   regions:
   - uk
-  places: [south-west]
-  why: England's longest National Trail runs 630 miles around the South West peninsula, from Minehead in Somerset to Poole Harbour in Dorset. You can take a day walk, a short break or work through the whole path in stages over years.
+  places:
+  - south-west
+  why: England's longest National Trail runs 630 miles around the South West peninsula, from Minehead in Somerset to Poole Harbour in Dorset. You can take a day walk, a short break or work through the whole
+    path in stages over years.
   start:
   - Browse the day walks and short breaks on the South West Coast Path Association's site and pick one stretch.
   - Check the bus or train that will bring you back to your start.
@@ -10148,7 +10632,7 @@
     url: https://www.southwestcoastpath.org.uk/about-coast-path/swcp/
     region: uk
     checked: '2026-10-27'
-  safety: Much of the path runs along cliff edges, so keep to the path in high wind and wet weather.
+  safety: 'Cliff edges can be unstable and the tide can cut you off: keep to the path and away from the edge, know the tide times, and in an emergency call 999 or 112 and ask for the Coastguard.'
   inspire:
   - kind: read
     person: Sue Furner, from Peel, Isle of Man
@@ -10167,6 +10651,166 @@
   - name: High-factor sun cream
     why: sun and wind on high or open ground burn faster than you expect
     url: https://www.amazon.co.uk/s?k=sun+cream+spf+50
+  seo_title: 'South West Coast Path: sections, ferries and planning'
+  description: 'Plan the South West Coast Path: its seven sections, how long it takes, the toughest day, every ferry and tidal crossing, Lulworth Ranges and where to start.'
+  detail:
+  - h: What it's really like
+    p:
+    - The South West Coast Path runs 630 miles (1,014 km) from Minehead in Somerset to South Haven Point on Poole Harbour in Dorset, and has been a National Trail since 1978. It is not flat. The South West
+      Coast Path Association counts more than 115,000 feet (35,000 metres) of ascent and descent, which it says is like climbing Everest four times.
+    - 'Walking the whole path typically takes seven to eight weeks at a leisurely pace; a very fit, fast walker might manage about 30 days. The Association''s itinerary splits it into 52 day-long sections,
+      graded easy, moderate, strenuous or severe, and most walkers go anticlockwise, from Minehead to Poole. You do not have to walk it all at once: the Association also suggests day walks and short breaks.'
+  - h: The seven sections
+    table:
+      head:
+      - Section
+      - Distance
+      rows:
+      - - Somerset and Exmoor
+        - 35 miles (56 km)
+      - - North Devon
+        - 80 miles (129 km)
+      - - North Cornwall
+        - 76 miles (122 km)
+      - - West Cornwall
+        - 144 miles (232 km)
+      - - South Cornwall
+        - 76 miles (122 km)
+      - - South Devon
+        - 104 miles (167 km)
+      - - Jurassic Coast
+        - 115 miles (185 km)
+    after: 'The Association''s short-break ideas start and finish where transport is easy: two to three days from Bude to Tintagel or Charmouth to Abbotsbury, five to seven from St Ives to Penzance, and
+      seven to ten for the whole Jurassic Coast. For a first taste, its rail-to-trail walks include Penzance to Mousehole (3.6 miles) and a 3.4-mile circular from Minehead.'
+  - h: The honest hard parts
+    p:
+    - The Association's walk page says Hartland Quay to Bude, 15.2 miles (24.5 km) graded challenging to severe, is said to be the toughest part of the entire path, with relentless climbs and descents.
+      Its itinerary describes the week from Westward Ho! to Padstow as the one many consider the toughest, and one of the most spectacular.
+    - 'Cliffs and the sea set the rules. Some cliffs overhang or are unstable without obvious signs, and short grass is slippery when wet. Cliff falls and landslips close sections and send walkers on temporary
+      inland diversions: in early 2026 coastal instability, subsidence and landslips closed or diverted stretches at Tregonhawke, Under Hooken near Branscombe, The Ness at Shaldon and Newquay''s North Pier,
+      and flooding washed the path away at Tintagel in December 2025. Check the Association''s route changes page before you go, and follow the signs on the ground.'
+    list:
+    - Keep to the path and away from cliff edges, especially in high wind.
+    - Know the tide times so you are not cut off, and keep clear of the base of cliffs.
+    - 'Check the forecast: mist, fog and high winds are more likely on the coast.'
+    - Phone signal is patchy. Fingerposts carry location signs, and What3Words or OS Locate can give your position.
+    - Walk around cattle, not between them. If cattle chase you and your dog, let go of the lead.
+  - h: Ferries and tidal crossings
+    table:
+      head:
+      - Crossing
+      - When it runs
+      rows:
+      - - 'Torridge: Appledore to Instow'
+        - 1 April to 31 October
+      - - 'Camel: Padstow to Rock'
+        - All year; the last ferry varies by season, with a water taxi in the evening
+      - - 'Gannel: Newquay (Fern Pit) to Crantock'
+        - End of May to mid-September, 9:30am to 6pm, weather permitting
+      - - 'Fal: Falmouth to St Mawes'
+        - All year, seven days a week
+      - - St Mawes to Place
+        - April to October, 9:15am to 4pm
+      - - Helford
+        - 1 April to 31 October, 9:30am to 5pm, on demand. Otherwise a 13-mile walk round the river, or a taxi
+      - - Gillan Creek
+        - Ferry 1 April to 31 October; the stepping stones are under water for about three hours either side of high tide
+      - - Fowey to Polruan
+        - All year, with shorter hours from October to April
+      - - 'Tamar: Cremyll to Plymouth'
+        - Check the operator's website
+      - - 'Plym: Sutton Harbour to Mount Batten'
+        - Summer hours 24 April to 27 September, then winter hours
+      - - 'Yealm: Wembury to Noss Mayo'
+        - 1 April to 30 September, 10am to 4pm
+      - - 'Erme: Mothecombe to Wonwell'
+        - No ferry. Wade across for about an hour either side of low tide
+      - - 'Avon: Bigbury to Bantham'
+        - April to September, 10am to noon and 2pm to 4pm
+      - - Salcombe to East Portlemouth
+        - All year, every half hour
+      - - 'Dart: Dartmouth to Kingswear (Lower Ferry)'
+        - All year, about 7am to 11pm
+      - - 'Teign: Shaldon to Teignmouth'
+        - All year, 10am to 4:30pm, later in warmer months; cash only
+      - - 'Exe: Starcross to Exmouth'
+        - Daily, 1 April to 31 October; cash only
+      - - Sandbanks Ferry, South Haven Point
+        - 7am to 11pm
+    after: As listed by the South West Coast Path Association, checked on 7 November 2026. Ferries change with the weather, the tides and the time of day, so check each operator before you rely on one;
+      in winter, plan around the seasonal ones.
+  - h: Lulworth Ranges, seasons and getting there
+    p:
+    - In Dorset the path crosses the Lulworth army ranges, which are open to walkers every weekend apart from a few closures (the last of 2026 is 14 to 15 November) and every day over holidays, including
+      19 December 2026 to 3 January 2027. After weekday firing the gates open as near as possible to 4:30pm on Friday and stay open until 8am on Monday. The Defence Infrastructure Organisation publishes
+      the times on GOV.UK, and its general information line is 01929 404714.
+    - The Association says spring and late summer are the best times to walk, autumn often stays warm enough to swim, and from mid-July to early September the coast is very busy and beds are harder to find.
+      National Trails recommends booking accommodation in advance, as it is limited in some areas. Several companies will move your bag between overnight stops; one, Luggage Transfers, runs from March to
+      October from £18 a day. National Express coaches serve the main towns, and National Trails lists airports at Exeter, Newquay, Bournemouth and Bristol.
+  faq:
+  - q: How long is the South West Coast Path?
+    a: 630 miles (1,014 km), from Minehead in Somerset to South Haven Point on Poole Harbour.
+  - q: How long does it take to walk the whole South West Coast Path?
+    a: Typically seven to eight weeks at a leisurely pace, or about 30 days for a very fit, fast walker. The Association suggests a 52-day itinerary.
+  - q: What is the hardest section of the South West Coast Path?
+    a: Hartland Quay to Bude, 15.2 miles (24.5 km), which the Association says is said to be the toughest part of the entire path.
+  - q: Do the South West Coast Path ferries run in winter?
+    a: Some do, including Falmouth to St Mawes, Fowey to Polruan, Salcombe, the Dartmouth Lower Ferry, Shaldon and Padstow to Rock. Many others run only from about April to October, so check each one.
+  - q: Is the coast path through the Lulworth Ranges open?
+    a: Most weekends and every day over the main holidays, but not when the army is firing. Check the range walk times on GOV.UK before you go.
+  - q: Can you walk the South West Coast Path with a dog?
+    a: Yes. Keep your dog away from cliff edges, use a short lead near sheep, cows and horses, carry water for it, and if cattle threaten you, let go of the lead.
+  sources:
+  - label: South West Coast Path Association, The South West Coast Path
+    url: https://www.southwestcoastpath.org.uk/walk-coast-path/south-west-coast-path-national-trail/
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, 52 day itinerary
+    url: https://southwestcoastpath.org.uk/walk-coast-path/trip-planning/SWCP-itinerary
+    checked: '2026-11-07'
+  - label: National Trails, South West Coast Path map and information
+    url: https://www.nationaltrail.co.uk/en_GB/trails/south-west-coast-path/trail-information/
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, Estuaries and ferries
+    url: https://www.southwestcoastpath.org.uk/walk-coast-path/trip-planning/travel-information/estuaries-and-ferries/
+    checked: '2026-11-07'
+  - label: Defence Infrastructure Organisation (GOV.UK), Lulworth range walks and Tyneham village access times 2026
+    url: https://www.gov.uk/government/publications/lulworth-access-times/lulworth-range-walks-and-tyneham-village-access-times-2026
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, Hartland Quay to Bude
+    url: https://www.southwestcoastpath.org.uk/walksdb/145/
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, Short breaks
+    url: https://www.southwestcoastpath.org.uk/walk-coast-path/short-breaks/
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, Top 10 rail to trail walks (2024)
+    url: https://blog.southwestcoastpath.org.uk/2024/09/04/top-10-rail-to-trail-walks/
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, When to visit
+    url: https://www.southwestcoastpath.org.uk/walk-coast-path/trip-planning/south-west-coast-path-weather/
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, Baggage transfer
+    url: https://www.southwestcoastpath.org.uk/walk-coast-path/trip-planning/baggage-transfer/
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, Getting to the path by bus
+    url: https://www.southwestcoastpath.org.uk/walk-coast-path/trip-planning/travel-information/getting-bus/
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, Safety advice
+    url: https://www.southwestcoastpath.org.uk/faq/safety-advice/
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, Safety advice for dogs
+    url: https://www.southwestcoastpath.org.uk/walk-coast-path/south-west-coast-path-national-trail/dogs-coastpath/safety/
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, Route changes
+    url: https://southwestcoastpath.org.uk/walk-coast-path/south-west-coast-path-national-trail/route-changes
+    checked: '2026-11-07'
+  - label: South West Coast Path Association, About the charity
+    url: https://www.southwestcoastpath.org.uk/about-coast-path/about-us/
+    checked: '2026-11-07'
+  related:
+  - walk-wales-coast-path
+  - jurassic-coast-fossil-hunt
+  - walk-coast-to-coast
+  - walk-oregon-coast-trail
 - id: walk-the-malvern-ridge
   title: Walk the Malvern Hills from end to end
   category: move

@@ -1,0 +1,17 @@
+id: coast-to-coast
+name: The Coast to Coast Path, St Bees to Robin Hood's Bay
+kinds: [endurance, walking, hill, multiday]
+activity: walk-coast-to-coast
+demands: "190 miles (306 km) on foot across England through three national parks, usually in around 13 days including a rest day; the western end through the Lake District is the most demanding."
+sources: [govuk-c2c, mrew-safety, bmc-long-distance]
+key_session:
+  name: long walk in the boots and pack you will carry
+  unit: km
+  start: {starter: 8, active: 14, advanced: 18}
+  peak: 25
+  note: on hilly ground, including some days on rough fell paths
+second_session: {name: brisk walk or cross-training, minutes: 45}
+specific: {name: hill repeats, from_week: 3, text: "climb a steep hill or stairs for 50 to 100 metres of height, four to six times, coming down slowly"}
+pack_from_fraction: 0.3
+back_to_back_from_fraction: 0.5
+weeks: {default: 16, min: 12}

@@ -170,7 +170,7 @@ guidance:
     applies: [hill]
     use: advice
     text: Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail.
-    for: [ydnpa-three-peaks, bmc-hill-fit]
+    for: [ydnpa-three-peaks, bmc-hill-fit, mrew-safety]
 
   # ---------- the event itself ----------
   - id: taper
@@ -272,6 +272,27 @@ guidance:
     use: safety
     text: Stop if something does not feel right, and get it checked rather than training through it.
     for: [nhs-c25k, ea-pavey-marathon]
+
+  - id: mountain-rescue-call
+    topic: warning signs
+    applies: [hill]
+    use: safety
+    text: In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999.
+    for: [mrew-safety]
+  - id: c2c-low-level
+    topic: before you start
+    applies: [multiday]
+    events: [coast-to-coast]
+    use: safety
+    text: The Coast to Coast is a demanding trail, hardest at the western end through the Lake District, where waymarks usually stop above the fell wall. Some high sections may be difficult in winter or bad weather; know the low-level options and use them when the weather is poor.
+    for: [govuk-c2c]
+  - id: coast-cliff-safety
+    topic: on the day
+    applies: [walking]
+    events: [coast-to-coast]
+    use: safety
+    text: On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard.
+    for: [swcpa-safety]
 
   # ---------- why each part of a plan is there (use: why; `role` ties it to a session; `short` is the one-line weekly version) ----------
   - id: why-long

@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-05)
+# Guidance engine report (2026-11-07)
 
-48 sources, 74 statements, 11 event profiles. Core 47, supported 27, thin 0, contested 0.
+51 sources, 77 statements, 12 event profiles. Core 48, supported 29, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -51,6 +51,9 @@
 - PromPerú (Peru's tourism board, peru.travel), *Inka Trail: 5 tips for exploring one of the best trekking routes in the world* (2026). Opened 2026-11-04.
 - USDA Forest Service, Inyo National Forest, *Mount Whitney (permits, quotas and season; last updated 16 December 2025)* (2025). Opened 2026-11-05.
 - USDA Forest Service, Inyo National Forest, *Hiking the Mt. Whitney Trail (visitor leaflet, November 2013)* (2013). Opened 2026-11-05.
+- Department for Environment, Food & Rural Affairs (GOV.UK), National Trails, *Coast to Coast Path: National Trail (published 24 June 2026)* (2026). Opened 2026-11-07.
+- Mountain Rescue England and Wales, *Be AdventureSmart (safety advice leaflet)* (2025). Opened 2026-11-07.
+- South West Coast Path Association, *Safety advice* (2026). Opened 2026-11-07.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -84,6 +87,7 @@
 | core | 9 | on the day | Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
 | core | 9 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe |
 | core | 9 | on the day | Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
+| core | 8 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
 | core | 7 | key session | Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. | higdon-novice1, bmc-hill-fit, emf-half-beginner |
@@ -117,7 +121,6 @@
 | supported | 5 | key session | Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them. | ydnpa-three-peaks, bmc-hill-fit |
 | supported | 5 | key session | Low-impact exercise such as cycling, swimming or rowing builds fitness with less pounding and is useful for everyone, not just the injured. | ea-training-pace, higdon-novice1 |
 | supported | 5 | fuel and drink | Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. | eah-consensus-2015 (against: bc-sofa-50km) |
-| supported | 5 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit |
 | supported | 5 | on the day | Start slower than you think you need to; early miles feel easy and are where most people overdo it. | ea-pavey-marathon, ea-training-pace |
 | supported | 5 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker |
 | supported | 5 | why | Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control. | bmc-hill-fit, ydnpa-three-peaks |
@@ -130,6 +133,9 @@
 | supported | 3 | before you start | Plan for the snow-free season, usually July to late September. When snow or ice is on the mountain it needs winter mountaineering skills and equipment. | inyo-whitney, inyo-whitney-leaflet |
 | supported | 3 | on the day | On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. | bmc-long-distance, wanderlust-trek-prep |
 | supported | 3 | key session | Build your training walks from a few miles up to a full day's distance, carrying the pack you will use. | wanderlust-trek-prep, bmc-hill-fit |
+| supported | 3 | warning signs | In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. | mrew-safety |
+| supported | 3 | before you start | The Coast to Coast is a demanding trail, hardest at the western end through the Lake District, where waymarks usually stop above the fell wall. Some high sections may be difficult in winter or bad weather; know the low-level options and use them when the weather is poor. | govuk-c2c |
+| supported | 3 | on the day | On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard. | swcpa-safety |
 | supported | 3 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit |
 | supported | 3 | key session | For a first half marathon, think of the long run in minutes rather than miles, at an easy pace, building to about 80 minutes by two weeks before the race. | greatrun-half-plan |
 | supported | 3 | key session | For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60. | greatrun-10k-plans |
@@ -146,11 +152,11 @@
 - altitude: 5 usable statements of its own
 - cycling: 5 usable statements of its own
 - endurance: 16 usable statements of its own
-- hill: 8 usable statements of its own
-- multiday: 7 usable statements of its own
+- hill: 9 usable statements of its own
+- multiday: 8 usable statements of its own
 - running: 8 usable statements of its own
 - swimming: 15 usable statements of its own
-- walking: 7 usable statements of its own
+- walking: 8 usable statements of its own
 
 ## Disagreements and how they were resolved
 
