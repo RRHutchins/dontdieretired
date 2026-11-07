@@ -803,7 +803,7 @@ def build(make_social=True):
             # reverse links (Robin, 7 Nov 2026: related activities should lead readers on): pages that list this one as related
             rel += [m for m in chs if m is not c and c["id"] in (m.get("related") or []) and m not in rel]
             more = (rel + [m for m in more if m not in rel])[:max(6 if c.get("collection") else 4, min(len(rel), 8))]
-            urls.append(out(f"/list/{c['id']}/", "challenge.html", c=c, L=LBL, more=more, total=len(chs), pset={"steps": _pdata["steps"], "notes": _pdata["notes"]}, pkind=_pdata["kinds"][c["kind"]]))
+            urls.append(out(f"/list/{c['id']}/", "challenge.html", c=c, L=LBL, more=more, total=len(chs), pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"]}, pkind=_pdata["kinds"][c["kind"]]))
             pages.append({"title": c["title"], "url": f"/list/{c['id']}/", "category": c["category"], "excerpt": c["why_short"],
                           "tags": ["activity", "challenge", c["kind"], c["effort"]] + ([c["collection"]] if c.get("collection") else []) + c["id"].split("-"),
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})

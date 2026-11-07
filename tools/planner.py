@@ -15,8 +15,11 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 STRANDS = ("book", "learn", "train", "travel", "kit")
-STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock")
-START_AT = ("first", "second", "ongoing", "after_start", "day")
+STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock", "safety_month", "later")
+START_AT = ("first", "second", "ongoing", "after_start", "later", "travel", "day")
+NO_TEXT = ("first", "second", "ongoing", "after_start", "later")   # an activity's own start step supplies the words
+TRIP_KEYS = ("head", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs")
+COUNTRY = re.compile(r"[A-Z]{2}")
 NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help",
              "level_q", "level_opt", "level_starter", "level_active", "level_advanced", "level_help", "train_month", "train_offline", "train_week", "train_about", "cal_why_train", "train_level_long", "train_level_short")
 
@@ -50,8 +53,21 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         v = steps.get(k) or {}
         assert v.get("why"), f"planner steps.{k}: needs why"
         if k not in ("day_month", "train_start"): assert "at" in v and at_ok(v["at"]), f"planner steps.{k}: at must be days, 'start', 'start+N' or 'lead*F'"
-        if k not in ("first", "second", "ongoing", "after_start"): assert v.get("text"), f"planner steps.{k}: needs text"
+        if k not in NO_TEXT: assert v.get("text"), f"planner steps.{k}: needs text"
     for k in NOTE_KEYS: assert notes.get(k), f"planner notes.{k}: missing"
+    # Where it is and getting there (Planner Plus day 8): the words, and the searches built from a place
+    trip = cfg.get("trip") or {}
+    for k in TRIP_KEYS: assert trip.get(k), f"planner trip.{k}: missing"
+    tids = set()
+    for l in trip.get("links") or []:
+        assert l.get("id") and l["id"] not in tids and l.get("label") and l.get("why"), f"planner trip link {l.get('id')}: needs a unique id, label and why"
+        tids.add(l["id"])
+        u = str(l.get("url", ""))
+        assert u.startswith("https://") and not re.search(r"\{(?!q\})", u), f"planner trip link {l['id']}: url must be https:// and use only {{q}}"
+        assert l.get("section") in ("where", "getting"), f"planner trip link {l['id']}: section is where or getting"
+        c_ = l.get("countries")
+        assert c_ == "any" or (isinstance(c_, list) and c_ and all(isinstance(x, str) and COUNTRY.fullmatch(x) for x in c_)), f"planner trip link {l['id']}: countries is any or a list of two-letter codes"
+    assert any(l["section"] == "where" for l in trip.get("links") or []), "planner trip: needs a map link (section: where)"
     busy = cfg.get("busy_day", 3)
     assert isinstance(busy, int) and 2 <= busy <= 10, "planner busy_day: a whole number from 2 to 10"
 
@@ -122,6 +138,21 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
             lead = ev["weeks"] if ev else k.get("lead_weeks_local", k["lead_weeks"]) if local else k["lead_weeks"]
         if "start_at" in c:
             assert isinstance(c["start_at"], list) and len(c["start_at"]) == len(c["start"]) and all(x in START_AT for x in c["start_at"]), f"challenge {cid}: start_at needs one of {START_AT} per start step"
+        where = None
+        if "where" in c:   # the activity's own place (Planner Plus day 8), from its official page
+            w = c["where"]
+            assert isinstance(w, dict) and set(w) <= {"town", "venue", "postcode", "country", "note", "source"}, f"challenge {cid}: where takes town, venue, postcode, country, note, source"
+            assert isinstance(w.get("town"), str) and w["town"].strip(), f"challenge {cid}: where needs a town"
+            assert isinstance(w.get("country"), str) and COUNTRY.fullmatch(w["country"]), f"challenge {cid}: where.country is a two-letter code (GB, US, FR...)"
+            for f_ in ("venue", "postcode", "note"):
+                assert f_ not in w or (isinstance(w[f_], str) and w[f_].strip()), f"challenge {cid}: where.{f_} must be text"
+            src = w.get("source") or {}
+            assert str(src.get("url", "")).startswith("https://") and src.get("label") and src.get("checked"), f"challenge {cid}: where needs a source with url, label and checked (the official page it came from)"
+            dt.date.fromisoformat(str(src["checked"]))
+            where = {"town": w["town"], "venue": w.get("venue", ""), "postcode": w.get("postcode", ""), "country": w["country"], "note": w.get("note", ""),
+                     "source": {"label": src["label"], "url": src["url"], "checked": str(src["checked"])}}
+        regs = c.get("regions") or []
+        country = where["country"] if where else "GB" if regs == ["uk"] else "US" if regs == ["us"] else ""
         strands = list(k["strands"])
         if ev and "train" not in strands: strands.insert(1, "train")
         if c.get("book") and "book" not in strands: strands.insert(0, "book")
@@ -131,14 +162,15 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
             "when": sorted(when), "when_from": when_from, "season": c.get("season", ""),
             "lead_weeks": lead, "strands": strands, "event": ({"id": ev["id"], "name": ev["name"], "weeks": ev["weeks"], "min_weeks": ev["min_weeks"], "prerequisite": ev["prerequisite"], "key": ev["key"], "levels": ev["levels"]} if ev else None),
             "dates": dates.get(cid), "place_tied": bool(c.get("places")),
+            "where": where, "country": country, "area": c.get("place_label", ""),
             "start": c["start"], "start_at": c.get("start_at"), "safety": c.get("safety", ""),
             "links": [{"label": l["label"], "url": l["url"], "region": l.get("region", "any")} for l in c["links"]],
             "book": [{"label": b["label"], "why": b["why"], "url": b["url"], "aff": b.get("aff")} for b in c.get("book") or []],
             "kit": [{"name": x["name"], "why": x["why"], "url": x["url"]} for x in c.get("kit") or []],
         })
     data = {"version": 1, "built": today.isoformat(),
-            "kinds": {k: {"label": v["label"], "why": v["why"], "lead_weeks": v["lead_weeks"], "strands": v["strands"]} for k, v in kinds.items()},
-            "steps": steps, "notes": notes, "busy": busy, "events": events, "activities": out}
+            "kinds": {k: {"label": v["label"], "why": v["why"], "why_train": v.get("why_train", ""), "lead_weeks": v["lead_weeks"], "strands": v["strands"]} for k, v in kinds.items()},
+            "steps": steps, "notes": notes, "trip": trip, "busy": busy, "events": events, "activities": out}
     return data, warn
 
 

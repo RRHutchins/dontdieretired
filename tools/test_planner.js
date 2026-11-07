@@ -35,7 +35,7 @@ function checkSourced(a, plan) {
     (s.links || []).forEach(l => assert.ok(urls.has(l.url), `${a.id}: link not from the activity: ${l.url}`));
     (s.items || []).forEach(k => assert.ok(kit.has(k.url), `${a.id}: kit not from the activity: ${k.url}`));
     if (s.detail) {
-      const pieces = [a.safety, a.dates && a.dates.note, a.event && a.event.prerequisite, ...a.start].filter(Boolean);
+      const pieces = [a.safety, a.dates && a.dates.note, a.event && a.event.prerequisite, data.trip.step_detail, ...a.start].filter(Boolean);
       let rest = s.detail; pieces.forEach(p => { rest = rest.split(p).join(''); });
       assert.strictEqual(rest.trim(), '', `${a.id}: step detail not from the activity: ${s.detail}`);
     }
@@ -360,7 +360,7 @@ t('calendar file: summaries and reasons come from planner.yaml; a month plan say
   assert.ok(unfold(t2).includes('UID:ddr-x-1-day@dontdieretired.com'));
 });
 t('calendar file: ticked steps and steps gone by are left out; moved steps go on their new day; long Unicode folds whole', () => {
-  const a = byId['take-up-beekeeping'], p = P.build(a, data, { date: '2027-04-10', today: TODAY });
+  const a = byId['kitesurfing-lesson'], p = P.build(a, data, { date: '2027-04-10', today: TODAY });
   const flex = p.steps.find(s => s.flexible && s.date < p.date), fixed = p.steps.find(s => !s.flexible && s.strand !== 'day');
   const to = plus(flex.date, -2);
   const marked = P.applyMarks(p, { ticks: { [fixed.id]: { done: true, at: 'x' } }, moves: { [flex.id]: { date: to, at: 'x' } } }, data);
@@ -386,5 +386,48 @@ t('calendar file from My year: every plan together, auto-moves kept, done plans 
   assert.strictEqual(ev.length, c.steps.length);
   c.steps.filter(s => s.moved).forEach(s => { const e = ev.find(x => x.UID === 'ddr-' + s.pid + '-' + s.id + '@dontdieretired.com'); assert.strictEqual(e.DTSTART, s.date.replace(/-/g, '')); assert.ok(unesc(e.DESCRIPTION).includes(s.moved.why)); });
   assert.deepStrictEqual(P.ics(groups, data, { today: TODAY, stamp: STAMP }), P.ics(groups, data, { today: TODAY, stamp: STAMP }), 'same inputs, same file');
+});
+
+/* Planner Plus day 8: where it is and getting there; checkpoint fixes */
+t('trip: no place asks for one; a typed place gives only the planner.yaml searches, the place URL-encoded and nothing else', () => {
+  const T = data.trip, any = acts.find(a => !a.where && a.country === ''), uk = acts.find(a => !a.where && a.country === 'GB'), us = acts.find(a => !a.where && a.country === 'US');
+  assert.ok(P.trip(any, data, {}).needs); assert.ok(P.trip(any, data, { place: '   ' }).needs);
+  const tpl = T.links.map(l => new RegExp('^' + l.url.replace(/[.*+?^$()|[\]\\]/g, '\\$&').replace('{q}', '[^&#]*') + '$'));
+  for (const [a, place] of [[any, 'Hay-on-Wye'], [uk, 'Bath & "Wells" #2'], [us, 'Portland, ME']]) {
+    const r = P.trip(a, data, { place, when: '14 August 2027' });
+    assert.ok(!r.needs && !r.sourced); assert.strictEqual(r.label, place);
+    const all = r.where.concat(r.getting);
+    assert.ok(r.where.length >= 1 && r.where.every(l => l.id === 'map'));
+    all.forEach(l => { assert.ok(tpl.some(x => x.test(l.url)), 'not a planner.yaml link: ' + l.url); assert.ok(!/[{}<>"\s]/.test(l.url)); assert.strictEqual(l.aff, null); });
+    const ids = all.map(l => l.id);
+    assert.strictEqual(ids.includes('national-rail'), a.country === 'GB'); assert.strictEqual(ids.includes('amtrak'), a.country === 'US');
+    assert.ok(r.help.includes('14 August 2027'));
+  }
+  const m = P.trip(uk, data, { place: 'Bath & "Wells" #2' }).where[0].url;
+  assert.ok(m.endsWith(encodeURIComponent('Bath & "Wells" #2, UK')), m);
+  assert.ok(P.trip(uk, data, { place: 'Leeds, UK' }).where[0].url.endsWith(encodeURIComponent('Leeds, UK')));
+  assert.ok(P.trip(any, data, {}).help === '' && P.trip(any, data, { place: 'x' }).help.includes(data.trip.when_none));
+  assert.strictEqual(P.trip(any, data, { place: 'a<script>\u0000b' }).label, 'a script b');
+});
+t('trip: an activity\'s own sourced place wins over a typed one and carries its source', () => {
+  const a = Object.assign({}, acts.find(x => x.id === 'go-to-edinburgh-fringe'), { where: { town: 'Edinburgh', venue: 'Test venue', postcode: 'EH1 1AA', country: 'GB', note: 'A note.', source: { label: 'Example', url: 'https://example.org/', checked: '2026-11-08' } } });
+  const r = P.trip(a, data, { place: 'Glasgow' });
+  assert.ok(r.sourced); assert.strictEqual(r.label, 'Test venue, Edinburgh, EH1 1AA'); assert.strictEqual(r.source.url, 'https://example.org/');
+  assert.ok(r.getting.some(l => l.id === 'national-rail'));
+});
+t('checkpoint fixes: Fringe travel step in the run-up; beekeeping in season; month safety "before you start"; event intro split', () => {
+  const f = P.build(byId['go-to-edinburgh-fringe'], data, { date: '2027-08-14', today: TODAY });
+  const s2 = f.steps.find(s => s.id === 'start-2');
+  assert.ok(s2 && s2.strand === 'travel' && s2.date < f.date);
+  assert.ok(!(f.steps.find(s => s.id === 'day').detail || '').includes('Reserve your train'));
+  assert.ok(f.steps.find(s => s.id === 'travel').detail === data.trip.step_detail);
+  const b = P.build(byId['take-up-beekeeping'], data, { month: '2027-03', today: TODAY });
+  const hb = b.steps.find(s => s.id === 'start-1'), fs = b.steps.find(s => s.id === 'start-2');
+  assert.ok(hb.date >= '2027-03-01' && fs.date > hb.date, JSON.stringify([hb.date, fs.date]));
+  const sf = b.steps.find(s => s.id === 'safety');
+  if (sf) assert.strictEqual(sf.text, data.steps.safety_month.text);
+  const day = P.build(byId['go-to-edinburgh-fringe'], data, { date: '2027-08-14', today: TODAY }).steps.find(s => s.id === 'safety');
+  if (day) assert.strictEqual(day.text, data.steps.safety.text);
+  assert.ok(!/training plan/.test(data.kinds.event.why) && /training plan/.test(data.kinds.event.why_train));
 });
 console.log(n + ' tests passed');

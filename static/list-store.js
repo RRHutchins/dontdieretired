@@ -5,7 +5,7 @@
 
    Stored shape, version 1:
    { version: 1, title, target, settings_updated_at,
-     items: [ { id, cid, title, status, date, month, plan_made, level, ticks, moves, note, pos, added_at, updated_at, deleted } ] }
+     items: [ { id, cid, title, status, date, month, plan_made, level, ticks, moves, where, note, pos, added_at, updated_at, deleted } ] }
    - id: for a catalogue challenge it IS the challenge id (so two devices adding the same challenge
      merge into one); for a reader's own challenge it is "x-" + random.
    - cid: the catalogue id, or null for the reader's own. title is kept only for the reader's own.
@@ -22,7 +22,11 @@
    - Dated training (added 6 Nov 2026; additive, still version 1): `level` ('starter' | 'active' | 'advanced', or ''
      for none chosen, which the planner reads as the engine's default, active) is the starting point the engine's
      training sessions were worked out for. It is part of the plan: changing it is a new plan, so ticks and moves are
-     cleared. A plan with training has a step per session (up to about a hundred), so up to MAX_STEPS marks are kept. */
+     cleared. A plan with training has a step per session (up to about a hundred), so up to MAX_STEPS marks are kept.
+   - Where (Planner Plus day 8, 8 Nov 2026; additive, still version 1): `where` is the town, venue or postcode the reader
+     typed for an activity with no place of its own (up to 120 characters, control characters and < > removed). It belongs
+     to the item, not to one plan, so changing the date keeps it; removing the plan clears it. Newest wins in a merge,
+     like the rest of the item. */
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api; else root.DDRList = api;
@@ -46,6 +50,7 @@
     });
     return out;
   }
+  const cleanPlace = t => (typeof t === 'string' ? t : '').replace(/[\u0000-\u001f\u007f<>]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120);
   const planKey = it => (it.date || '') + '|' + (it.month || '') + '|' + (it.plan_made || '') + '|' + (it.level || '');
 
   // Make anything (old data, a backup file, a hand-edited file) into a well-formed list. Never throws.
@@ -71,6 +76,7 @@
       if (o.plan_made && LEVELS.includes(it.level)) o.level = it.level;
       o.ticks = o.plan_made ? cleanMarks(it.ticks, 'done') : {};
       o.moves = o.plan_made ? cleanMarks(it.moves, 'date') : {};
+      o.where = cleanPlace(it.where);
     });
     return out;
   }
@@ -114,7 +120,7 @@
     const id = cid || 'x-' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
     const cur = find(d, id), pos = d.items.reduce((m, it) => Math.max(m, it.pos), -1) + 1;
     if (cur) Object.assign(cur, { deleted: false, status: cur.deleted ? 'want' : cur.status, updated_at: t, pos: cur.deleted ? pos : cur.pos });
-    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', month: '', plan_made: '', level: '', ticks: {}, moves: {}, note: '', pos, added_at: t, updated_at: t, deleted: false });
+    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', month: '', plan_made: '', level: '', ticks: {}, moves: {}, where: '', note: '', pos, added_at: t, updated_at: t, deleted: false });
     save(d); return d;
   }
   function update(id, changes) {
@@ -138,7 +144,7 @@
       it.level = LEVELS.includes(when.level) ? when.level : '';
       if (it.status === 'want') it.status = 'planned';
     } else {
-      it.date = ''; it.month = ''; it.plan_made = ''; it.level = '';
+      it.date = ''; it.month = ''; it.plan_made = ''; it.level = ''; it.where = '';
       if (it.status === 'planned') it.status = 'want';
     }
     it.updated_at = now(); save(d); return load();
@@ -153,6 +159,11 @@
     else if (value === '' || DAY.test(value || '')) it.moves[stepId] = { date: value, at: t };
     else return d;
     it.updated_at = t; save(d); return load();
+  }
+  /* Planner Plus: the place the reader typed for an activity ('' clears it) */
+  function where(id, text) {
+    const d = load(), it = find(d, id); if (!it || it.deleted) return d;
+    it.where = cleanPlace(text); it.updated_at = now(); save(d); return load();
   }
   const tick = (id, stepId, done) => mark(id, stepId, 'done', done);
   const shift = (id, stepId, date) => mark(id, stepId, 'date', date);
@@ -170,5 +181,5 @@
   const flag = (name, value) => { try { if (value === undefined) return localStorage.getItem(KEY + '_' + name); localStorage.setItem(KEY + '_' + name, value); } catch (e) {} return null; };
   const has = id => { const it = find(load(), id); return !!(it && !it.deleted); };
 
-  return { KEY, VERSION, STATUSES, LEVELS, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get, tick, shift };
+  return { KEY, VERSION, STATUSES, LEVELS, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get, tick, shift, where, cleanPlace };
 });

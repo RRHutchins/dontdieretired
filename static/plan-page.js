@@ -88,8 +88,35 @@
       + '</details></div>';
   }
 
+  /* ---------- where it is and getting there (Planner Plus day 8): with the day itself ---------- */
+  function tripHtml(plan) {
+    const T = S.trip; if (!T || !current) return '';
+    const r = P.trip(A, S, { place: current.place || '', when: plan.label });
+    let h = '<div class="pl-trip" data-pl-trip><h5 class="pl-triph" tabindex="-1" data-pl-triph>' + esc(T.head) + '</h5>';
+    if (r.needs || (current.editPlace && !r.sourced)) {
+      return h + '<div class="pl-where-ask"><label class="pl-whereq" for="pl-where-in">' + esc(T.where_q) + '</label>'
+        + '<input id="pl-where-in" class="pl-wherein" type="text" maxlength="120" autocomplete="off" spellcheck="false" value="' + esc(current.place || '') + '" data-pl-where-in>'
+        + (A.area ? '<p class="meta">' + esc(fill(T.where_hint, { area: A.area })) + '</p>' : '')
+        + '<p class="meta">' + esc(T.where_help) + '</p>'
+        + '<p class="pl-acts"><button type="button" class="btn btn-small" data-pl-where-save>' + esc(T.where_save) + '</button></p></div></div>';
+    }
+    h += '<p class="pl-where"><strong>' + esc(T.where_label) + ':</strong> ' + esc(r.label) + '</p>' + (r.note ? '<p class="pl-detail">' + esc(r.note) + '</p>' : '');
+    if (r.source) h += '<p class="meta">' + esc(T.where_source).replace('{label}', '<a href="' + esc(r.source.url) + '" target="_blank" rel="noopener">' + esc(r.source.label) + '</a>').replace('{checked}', esc(P.longDate(r.source.checked))) + '</p>';
+    h += '<ul class="pl-links">' + r.where.map(l => linkHtml(l, false)).join('') + '</ul>';
+    if (!r.sourced) h += '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-pl-where-change>' + esc(T.where_change) + '</button></p>';
+    h += '<p class="pl-wkh">' + esc(T.getting) + '</p><p class="meta">' + esc(r.help) + '</p><ul class="pl-links">' + r.getting.map(l => linkHtml(l, false)).join('') + '</ul>';
+    return h + '</div>';
+  }
+  function setPlace(v) {
+    current.place = P.cleanPlace(v); current.editPlace = false;
+    if (current.saved) L.where(id, current.place);
+    draw(current.plan, current.saved);
+    const h = $('[data-pl-triph]'); if (h) h.focus();
+  }
+
   function draw(plan, saved) {
     let html = '', hasAff = false;
+    if (current) current.saved = !!saved;
     const notes = plan.notes.slice();
     if (saved) {
       const end = plan.by_month ? P.parse(plan.date.slice(0, 8) + '01') : P.parse(plan.date);
@@ -126,7 +153,7 @@
         + ((st.items || []).length ? '<ul class="pl-links pl-kit">' + st.items.map(x => '<li><a href="' + esc(x.aff ? affUrl(x.url, x.aff) : x.url) + '" target="_blank" rel="' + (x.aff ? AFF_REL : 'noopener') + '">' + esc(x.name) + '</a><span class="pl-lwhy">' + esc(x.why) + '</span></li>').join('') + '</ul>' : '')
         + '<p class="pl-why"><span>Why then:</span> ' + esc(st.why) + '</p>'
         + (st.moved ? '<p class="pl-why my-moved">' + esc(st.moved.why) + '</p>' : '')
-        + (st.id === 'train-start' && plan.train ? aboutHtml(plan.train) : '') + '</li>';
+        + (st.id === 'train-start' && plan.train ? aboutHtml(plan.train) : '') + (st.strand === 'day' ? tripHtml(plan) : '') + '</li>';
     });
     html += '</ol>';
     // the safety line is its own dated step ("Before you go: stay safe"), and stays on the page above
@@ -161,7 +188,7 @@
     setWhen(when); setLevel(it.level); sug.textContent = '';
     const plan = make(when, it.plan_made, it.level);
     if (plan.status === 'ok') plan.steps = P.applyMarks(plan, it, S);   // the reader's ticks and moves from My year
-    current = { when, level: it.level, plan }; draw(current.plan, true); form.hidden = true;
+    current = { when, level: it.level, plan, place: it.where || '' }; draw(current.plan, true); form.hidden = true;
     return true;
   }
   function reset() { form.hidden = false; setWhen(suggestion()); }
@@ -176,12 +203,15 @@
     const when = by() === 'month' ? { month: monthSel.value } : { date: dateIn.value };
     if (when.date !== undefined && !P.parse(when.date)) { err.textContent = 'Choose a day, or pick "Some time in a month".'; err.hidden = false; dateIn.focus(); return; }
     const lv = A.event ? level() : '';
-    ready.then(() => { current = { when, level: lv, plan: make(when, today, lv) }; draw(current.plan, false); focusHead(); });
+    const place = current ? current.place : ((L.get(id) || {}).where || '');   // a place already typed stays
+    ready.then(() => { current = { when, level: lv, plan: make(when, today, lv), place }; draw(current.plan, false); focusHead(); });
   });
   out.addEventListener('click', e => {
     const use = e.target.closest('[data-pl-use]');
     if (use) { setWhen({ date: use.dataset.plUse }); form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true })); return; }
-    if (e.target.closest('[data-pl-save]') && current && current.plan.status === 'ok') { L.plan(id, Object.assign({ level: current.level }, current.when), today); showSaved(); paintList(); focusHead(); return; }
+    if (e.target.closest('[data-pl-save]') && current && current.plan.status === 'ok') { L.plan(id, Object.assign({ level: current.level }, current.when), today); if (current.place) L.where(id, current.place); showSaved(); paintList(); focusHead(); return; }
+    if (e.target.closest('[data-pl-where-save]') && current) { const i = $('[data-pl-where-in]'); if (i && P.cleanPlace(i.value)) setPlace(i.value); else if (i) i.focus(); return; }
+    if (e.target.closest('[data-pl-where-change]') && current) { current.editPlace = true; draw(current.plan, current.saved); const i = $('[data-pl-where-in]'); if (i) i.focus(); return; }
     if (e.target.closest('[data-pl-ics]') && current && current.plan.status === 'ok') {
       const p = current.plan, msg = $('[data-pl-calmsg]');
       const f = P.ics([{ id, cid: id, title: A.title, by_month: p.by_month, label: p.label, steps: p.steps }], S, { today, site: location.origin, name: 'My year: ' + A.title });
@@ -195,6 +225,9 @@
       L.plan(id, null); paintList(); out.innerHTML = '<p role="status">Plan removed. The activity stays on your list.</p>'; current = null; reset();
       radios.find(r => r.checked).focus();
     }
+  });
+  out.addEventListener('keydown', e => {   // Enter in the place box shows the links (it is not inside a form)
+    if (e.key === 'Enter' && e.target.matches && e.target.matches('[data-pl-where-in]')) { e.preventDefault(); if (P.cleanPlace(e.target.value)) setPlace(e.target.value); }
   });
   // A saved plan changes elsewhere (the list page in another tab): show the new one
   window.addEventListener('storage', ev => { if (ev.key === L.KEY && !showSaved()) { if (form.hidden) { out.innerHTML = ''; reset(); } } });

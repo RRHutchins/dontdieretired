@@ -77,6 +77,16 @@
     const aff = l.aff || null, reg = l.region === 'uk' ? ' <span class="fl-reg">UK</span>' : l.region === 'us' ? ' <span class="fl-reg">US</span>' : '';
     return '<li><a href="' + esc(aff ? affUrl(l.url, aff) : l.url) + '" target="_blank" rel="' + (aff ? AFF_REL : 'noopener') + '">' + esc(l.label) + '</a>' + reg + (l.why ? '<span class="pl-lwhy">' + esc(l.why) + '</span>' : '') + '</li>';
   }
+  /* Where it is and getting there (Planner Plus day 8): opens from the day; the place is changed on the activity's plan page */
+  function tripHtml(p, s) {
+    const T = S.trip, a = p.cid ? byId[p.cid] : null; if (!T || !a) return '';
+    const it = all.items[p.id] || {}, r = P.trip(a, S, { place: it.where || '', when: p.plan.label });
+    let h = '<details class="pl-trip my-trip"><summary>' + esc(T.head) + '</summary>';
+    if (r.needs) return h + '<p class="meta"><a href="' + link(p) + '">' + esc(T.my_needs) + '</a></p></details>';
+    h += '<p class="pl-where"><strong>' + esc(T.where_label) + ':</strong> ' + esc(r.label) + '</p>' + (r.note ? '<p class="pl-detail">' + esc(r.note) + '</p>' : '');
+    if (r.source) h += '<p class="meta">' + esc(T.where_source).replace('{label}', '<a href="' + esc(r.source.url) + '" target="_blank" rel="noopener">' + esc(r.source.label) + '</a>').replace('{checked}', esc(P.longDate(r.source.checked))) + '</p>';
+    return h + '<ul class="pl-links">' + r.where.map(linkHtml).join('') + '</ul><p class="pl-wkh">' + esc(T.getting) + '</p><p class="meta">' + esc(r.help) + '</p><ul class="pl-links">' + r.getting.map(linkHtml).join('') + '</ul></details>';
+  }
   function stepHtml(s, n) {
     const p = planOf(s.pid), gone = s.date < today && !s.done, uid = 'my-s' + n;
     if (s.bare) {
@@ -97,7 +107,7 @@
       + (items.length ? '<ul class="pl-links pl-kit">' + items.map(x => '<li><a href="' + esc(x.aff ? affUrl(x.url, x.aff) : x.url) + '" target="_blank" rel="' + (x.aff ? AFF_REL : 'noopener') + '">' + esc(x.name) + '</a><span class="pl-lwhy">' + esc(x.why) + '</span></li>').join('') + '</ul>' : '')
       + (s.why ? '<p class="pl-why"><span>Why then:</span> ' + esc(s.why) + '</p>' : '')
       + (s.moved ? '<p class="pl-why my-moved">' + esc(s.moved.why) + '</p>' : '')
-      + (s.strand === 'day' ? '' : '<div class="my-acts">'
+      + (s.strand === 'day' ? tripHtml(p, s) : '<div class="my-acts">'
         + '<label class="my-tick"><input type="checkbox" data-my-tick' + (s.done ? ' checked' : '') + '> Done</label>'
         + (w ? '<details class="my-move"><summary>Move this step</summary><div class="my-move-in"><label for="' + uid + '">Move to</label> <input type="date" id="' + uid + '" min="' + w.min + '" max="' + w.max + '" value="' + s.date + '" data-my-to> '
           + '<button type="button" class="btn btn-small" data-my-shift>Move</button>' + (s.moved && s.moved.by === 'you' ? ' <button type="button" class="btn btn-small btn-ghost" data-my-back>Put it back</button>' : '')

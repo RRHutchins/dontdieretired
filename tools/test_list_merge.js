@@ -188,5 +188,25 @@ t('merging ticks twice changes nothing more', () => {
     for (let w = 1; w <= 20; w++) for (const sl of [1, 2, 3, 5, 6]) L.tick('climb-kilimanjaro', 't' + w + '-' + sl, true);
     assert.strictEqual(Object.keys(L.get('climb-kilimanjaro').ticks).length, 100);
   });
+  /* Planner Plus day 8: the place the reader typed */
+  t('where() stores a typed place, cleaned; a date change keeps it; removing the plan clears it', () => {
+    L.plan('visit-an-open-garden', { date: '2027-06-12' }, '2026-11-08');
+    L.where('visit-an-open-garden', '  Great   Dixter,\n Northiam <b>  ');
+    assert.strictEqual(L.get('visit-an-open-garden').where, 'Great Dixter, Northiam b');
+    L.where('visit-an-open-garden', 'x'.repeat(300)); assert.strictEqual(L.get('visit-an-open-garden').where.length, 120);
+    L.where('visit-an-open-garden', 'Northiam');
+    L.plan('visit-an-open-garden', { date: '2027-07-10' }, '2026-11-08'); assert.strictEqual(L.get('visit-an-open-garden').where, 'Northiam');
+    L.update('visit-an-open-garden', { date: '2027-07-17' }); assert.strictEqual(L.get('visit-an-open-garden').where, 'Northiam');
+    L.plan('visit-an-open-garden', null); assert.strictEqual(L.get('visit-an-open-garden').where, '');
+    L.where('not-on-the-list', 'Leeds'); assert.strictEqual(L.get('not-on-the-list'), null);
+  });
+  t('a typed place merges like the rest of the item: newest wins, an old copy without one does not wipe it', () => {
+    const a = list([item('visit-an-open-garden', { where: 'Northiam', updated_at: '2026-11-08T10:00:00.000Z' })]);
+    const b = list([item('visit-an-open-garden', { where: 'Sissinghurst', updated_at: '2026-11-08T11:00:00.000Z' })]);
+    assert.strictEqual(L.merge(a, b).items[0].where, 'Sissinghurst'); assert.strictEqual(L.merge(b, a).items[0].where, 'Sissinghurst');
+    const old = list([item('visit-an-open-garden', { updated_at: '2026-10-01T00:00:00.000Z' })]);
+    assert.strictEqual(L.merge(old, a).items[0].where, 'Northiam');
+    assert.strictEqual(L.clean(list([item('parkrun', { where: 42 })])).items[0].where, '');
+  });
 }
 console.log(n + ' tests passed');

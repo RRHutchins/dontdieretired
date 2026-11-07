@@ -80,6 +80,34 @@
     return { date: iso(addDays(today, lead)), why: 'any' };
   }
 
+  /* Where it is and getting there (RUNBOOK §6t, Planner Plus day 8). PURE. The same links serve the free "plan it
+     yourself" box and the paid plan. The place is the activity's own sourced `where`, else what the member typed
+     (opts.place); with neither, `needs` is true and the page asks. Every link is one of content/planner.yaml → trip.links,
+     a search the reader runs themselves; the place goes into it URL-encoded and nothing else does (no home address:
+     the map asks for, or uses, the reader's own starting point).
+     trip(activity, settings, { place, when }) → { needs, label, sourced, note, source, where: [links], getting: [links], help } */
+  const cleanPlace = t => String(t == null ? '' : t).replace(/[\u0000-\u001f\u007f<>]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120);
+  function trip(a, settings, opts) {
+    opts = opts || {};
+    const T = settings.trip || {}, w = a.where || null, own = cleanPlace(opts.place);
+    const out = { needs: false, label: '', sourced: false, note: '', source: null, where: [], getting: [], help: '' };
+    if (w) {
+      out.label = [w.venue, w.town, w.postcode].filter(Boolean).join(', '); out.sourced = true; out.note = w.note || '';
+      out.source = { label: w.source.label, url: w.source.url, checked: w.source.checked };
+    } else if (own) out.label = own;
+    else { out.needs = true; return out; }
+    const country = (w && w.country) || a.country || '';
+    const cq = (T.country_q || {})[country];
+    const q = cq && out.label.toLowerCase().indexOf(cq.toLowerCase()) < 0 ? out.label + ', ' + cq : out.label;
+    (T.links || []).forEach(l => {
+      if (l.countries !== 'any' && !(country && l.countries.indexOf(country) >= 0)) return;
+      const link = { id: l.id, label: l.label, url: l.url.replace('{q}', encodeURIComponent(q)), why: l.why, region: 'any', aff: null };
+      (l.section === 'where' ? out.where : out.getting).push(link);
+    });
+    out.help = fill(T.getting_help, { when: opts.when || T.when_none });
+    return out;
+  }
+
   function build(a, settings, opts) {
     opts = opts || {};
     const S = settings.steps, N = settings.notes, today = todayUTC(opts.today);
@@ -154,7 +182,8 @@
       const last = i === st.length - 1;
       const name = a.start_at ? a.start_at[i] : i === 0 ? 'first' : i === 1 ? 'second' : last && lastOnDay ? 'day' : last && lastAfter ? 'after_start' : 'ongoing';
       if (name === 'day') { dayDetail = dayDetail ? dayDetail + ' ' + t : t; return; }
-      add('start-' + i, startStrand(t), S[name].at, i > 0, { text: t, why: S[name].why, links: i === 0 ? links(a.links) : [] });
+      // 'travel': shown with getting there (e.g. "reserve your train and somewhere to stay"), at the same point in the run-up
+      add('start-' + i, name === 'travel' ? 'travel' : startStrand(t), S[name].at, i > 0, { text: t, why: S[name].why, links: i === 0 ? links(a.links) : [] });
     });
     // 2. Fixed yearly dates (dates.yaml)
     if (a.dates) add('dates', 'book', S.dates.at, false, { text: S.dates.text, detail: a.dates.note, why: S.dates.why, links: [{ label: a.dates.source.label, url: a.dates.source.url, region: 'any', why: '', aff: null }] });
@@ -194,14 +223,16 @@
       }
     }
     // 5. Getting there, only for something tied to a place
-    if (strands.has('travel') && a.place_tied) add('travel', 'travel', S.travel.at, true, { text: S.travel.text, why: S.travel.why, links: [] });
+    if (strands.has('travel') && a.place_tied) add('travel', 'travel', S.travel.at, true, { text: S.travel.text, detail: settings.trip ? settings.trip.step_detail : '', why: S.travel.why, links: [] });
     // 6. Kit the activity lists: after the first session for a course, two weeks before anything else
     if (a.kit && a.kit.length) {
       const k = a.kind === 'skill' ? S.kit_after : S.kit_before;
       add('kit', 'kit', k.at, true, { text: k.text, why: k.why, links: [], items: a.kit.map(x => ({ name: x.name, why: x.why, url: x.url, aff: /amazon\./.test(x.url) ? 'amazon' : null })) });
     }
     // 7. Safety, every line kept
-    if (a.safety) add('safety', 'safety', S.safety.at, false, { text: S.safety.text, detail: a.safety, why: S.safety.why, links: [] });
+    //    (for a month plan the step is "before you start": there is no single day to be the day before)
+    const SF = byMonth && S.safety_month ? S.safety_month : S.safety;
+    if (a.safety) add('safety', 'safety', SF.at, false, { text: SF.text, detail: a.safety, why: SF.why, links: [] });
     // 8. The day (or the month)
     const D = byMonth ? S.day_month : S.day;
     steps.push({ id: 'day', strand: 'day', date: iso(anchor), flexible: false, text: fill(D.text, vars), detail: dayDetail, why: fill(D.why, vars), links: [] });
@@ -381,5 +412,5 @@
     return { text: L.map(fold).join('\r\n') + '\r\n', count };
   }
 
-  return { VERSION, LEVELS, build, suggest, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  return { VERSION, LEVELS, build, suggest, trip, cleanPlace, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

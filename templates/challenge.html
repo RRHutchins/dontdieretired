@@ -71,7 +71,7 @@
 
   <section class="pl" id="plan" data-pl hidden aria-labelledby="pl-h" tabindex="-1">
     <h2 id="pl-h">Plan this</h2>
-    <p>Pick a day, or a month, and we will set out how to get ready, step by step, with a date and a reason for each. {{ pkind.why }}</p>
+    <p>Pick a day, or a month, and we will set out how to get ready, step by step, with a date and a reason for each. {{ pkind.why }}{% if c.plan.event and pkind.why_train %} {{ pkind.why_train }}{% endif %}</p>
     <form class="pl-form" data-pl-form novalidate>
       <fieldset>
         <legend>When do you want to do it?</legend>

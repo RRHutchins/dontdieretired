@@ -1080,3 +1080,14 @@ h1{line-height:1.04}
 .pl-draft{font-style:italic;color:var(--muted)}
 .pl-src{font-size:.9rem}
 .pl-week .my-acts{margin:0}
+/* Planner Plus day 8: where it is and getting there, with the day itself */
+.pl-trip{background:#eef5f8;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:10px 0 4px;font-size:.95rem}
+.pl-trip p{margin:0 0 6px}
+.pl-triph{font-family:var(--serif);font-size:1.05rem;margin:0 0 6px;color:var(--travel)}
+.pl-triph:focus{outline:none}.pl-triph:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.pl-whereq{display:block;font-weight:600;margin:0 0 4px}
+.pl-wherein{width:100%;max-width:28rem;box-sizing:border-box;min-height:44px;padding:8px 10px;font:inherit;font-size:1rem;border:1px solid #8a8f9a;border-radius:8px;background:#fff;color:var(--ink);margin:0 0 6px}
+.pl-wherein:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
+.my-trip summary{cursor:pointer;font-weight:600;color:var(--travel);min-height:44px;display:flex;align-items:center}
+.my-trip[open] summary{margin-bottom:4px}
+.pl-trip .pl-links li{line-height:1.45;margin:4px 0 8px}.pl-trip .pl-links a{display:inline-block;padding:10px 0 2px}.pl-trip .pl-lwhy{display:block}

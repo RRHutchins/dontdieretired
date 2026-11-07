@@ -36,7 +36,8 @@ kinds:
     lead_weeks: 12
     lead_weeks_local: 4
     strands: [book, learn, travel, kit]
-    why: "Events have fixed dates and entry or ticket deadlines. Physical events add a training plan from our guidance engine, and its length is set by the engine, not by the date you would like."
+    why: "Events have fixed dates and entry or ticket deadlines."
+    why_train: "Physical events add a training plan from our guidance engine, and its length is set by the engine, not by the date you would like."
   project:
     label: Project
     lead_weeks: 4
@@ -155,6 +156,10 @@ steps:
     at: -1
     text: "Before you go: stay safe"
     why: "The day before, while there is still time to change plans."
+  safety_month:
+    at: -1
+    text: "Before you start: stay safe"
+    why: "Just before your month begins, while there is still time to change plans."
   day:
     at: 0
     text: "{title}"
@@ -165,6 +170,9 @@ steps:
   train_start:
     text: "Start the {weeks}-week training plan for {event}"
     why: "The training comes from our guidance engine, built from the sources it lists, and its plan for your date runs {weeks} weeks. It starts here so that it ends on the day."
+  later:
+    at: 28
+    why: "Once you have begun: this is the longer stretch that runs on from here, so it sits a month in as a reminder rather than a deadline."
   look_back:
     at: 28
     text: "Four weeks in: look back"
@@ -220,3 +228,64 @@ notes:
   train_about: "Your {weeks}-week training plan, {level}, from our guidance engine"
   train_level_long: "From your starting point ({level}) the engine builds up over {full} weeks rather than its usual {usual}, so the long session never grows too fast from one week to the next."
   train_level_short: "From your starting point ({level}) the engine's plan builds up over {full} weeks, and your date leaves fewer, so the plan below cannot build up to the full length safely. A date on or after {earliest} gives the whole plan."
+
+# Where it is and getting there (RUNBOOK §6t, Planner Plus day 8). static/planner.js trip() builds these links from the
+# place: an activity's sourced `where:` (content/challenges.yaml), or the town, venue or postcode the member types.
+# The same links serve the free "plan it yourself" box and the paid plan. Each link is a search the reader runs
+# themselves: no recommendation, no price. `url` placeholders: {q} the place (URL-encoded). `countries`: GB, US, or
+# any. Affiliate travel links go here only once Robin has an id in site.yaml → affiliates (none yet, 8 Nov 2026).
+# The Google Maps forms are Google's documented Maps URLs (api=1); with no origin, Google asks for one or uses the
+# device's own location, so the member's home is never in our links.
+trip:
+  head: "Where it is and getting there"
+  where_label: "Where"
+  where_q: "Where will you do it?"
+  where_help: "Type a town, venue or postcode. It is kept with your plan on this device, and goes to the map or journey planner only if you open one of the links."
+  where_hint: "Our page for this lists {area}."
+  where_save: "Show the links"
+  where_change: "Change the place"
+  where_source: "From {label}, checked {checked}. Check the organiser's own page before you travel: venues and start points can change."
+  when_none: "the day you go"
+  getting: "Getting there"
+  getting_help: "Each link opens a search for you to run: put in {when}, and where you are setting off from."
+  my_needs: "Add where it is on its plan page to see the map and journey planners."
+  step_detail: "The links are with the day itself, under \"Where it is and getting there\"."
+  # added to a typed place when the activity is in one country only, so "Bath" finds Bath in Somerset, not Maine
+  country_q: {GB: "UK", US: "USA"}
+  links:
+    - id: map
+      label: "See it on a map"
+      url: "https://www.google.com/maps/search/?api=1&query={q}"
+      why: "Google Maps, to see where it is and what is around it."
+      countries: any
+      section: where
+    - id: transit
+      label: "Directions by public transport"
+      url: "https://www.google.com/maps/dir/?api=1&destination={q}&travelmode=transit"
+      why: "Google Maps directions from where you are, by train, bus or coach."
+      countries: any
+      section: getting
+    - id: drive
+      label: "Directions by car"
+      url: "https://www.google.com/maps/dir/?api=1&destination={q}&travelmode=driving"
+      why: "Google Maps driving directions from where you are."
+      countries: any
+      section: getting
+    - id: national-rail
+      label: "National Rail Enquiries"
+      url: "https://www.nationalrail.co.uk/"
+      why: "Train times and tickets in England, Scotland and Wales."
+      countries: [GB]
+      section: getting
+    - id: traveline
+      label: "Traveline"
+      url: "https://www.traveline.info/"
+      why: "Bus, coach and local journeys across Great Britain."
+      countries: [GB]
+      section: getting
+    - id: amtrak
+      label: "Amtrak"
+      url: "https://www.amtrak.com/"
+      why: "Train times and tickets between US cities."
+      countries: [US]
+      section: getting
