@@ -7,6 +7,9 @@ tags: [inventions, history, clocks, longitude, navigation, sea, greenwich, uk]
 segments: [learner, changer]
 level: any
 art: sea
+photo_file: "File:Clock that changed the world (H4, 1759) - Flickr - Tatters ❀.jpg"
+photo_caption: "The engraved movement of John Harrison's H4, photographed on display at the Royal Observatory Greenwich in September 2016."
+photo_alt: "A round gold watch movement, its plate covered in pierced and engraved scrollwork set with small blue jewels, lit against a dark background."
 hook: "A self-taught carpenter, a watch that ticked five times a second, and decades spent finding a ship's place at sea."
 lesson: "A breakthrough is only half the work: proving it, and persuading the people who must accept it, can take as long again."
 standfirst: "Sailors in the 1700s could tell how far north they were, but not how far east or west. A carpenter from Lincolnshire spent most of his life building clocks that could, and then years more arguing about whether he had done it."
