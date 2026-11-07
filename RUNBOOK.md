@@ -387,6 +387,11 @@ Robin's idea: a reader picks things to do this year, gives each a date or a seas
 ### 6t. Planner Plus: the paid planner (Robin, 7 Nov 2026)
 **What it is.** A paid planner that helps a member make the most of their year: any activity on the site (a course, festival, day out, trip, habit or physical event) or their own, put on one calendar with everything needed to do it well. Training plans from the engine (§6r) are one part, for physical events only. Target: **open for sale, including gifts, by 25 Nov 2026, and no later than 1 Dec.**
 
+**"Plan this" on every activity page: two choices (Robin, 7 Nov 2026).**
+1. **Plan it yourself (free):** the page lists the links needed to do it (book it, getting there, where to stay, places to eat, things to do nearby), built from the activity's place, with disclosed affiliate links where we have them, so a free reader's clicks can still earn. No dated plan, no calendar, nothing saved.
+2. **Plan it with Planner Plus (paid):** opens the planner (the dated get-ready plan, the trip sections below, Add to my year, one calendar on any device) with the option to pay £2 a month or £20 a year. Non-members see the sample plan and the price before paying.
+The same rules apply to both: links only where honest, no invented recommendations, affiliate disclosure beside the links.
+
 **For each thing in a member's year, the plan gives:**
 1. **Get ready:** what the existing planner does (§6s): booking dates, start steps, kit, safety, engine training where there is one.
 2. **Where:** the activity's place (`places`) or, for anything not tied to one place, a town, venue or postcode the member types. Everything below hangs off this.
@@ -412,14 +417,14 @@ Robin's idea: a reader picks things to do this year, gives each a date or a seas
 | Day | Date | Work |
 |---|---|---|
 | 7 | 7 Nov | Checkpoint: real sample plans with screenshots for Robin (as planned), framed as Plus; no new features |
-| 8 | 8 Nov | Where + Getting there: the place field, journey-planner and map links per plan |
+| 8 | 8 Nov | Where + Getting there: the place field, journey-planner and map links (written so the free "plan it yourself" links and the paid plan share them) |
 | 9 | 9 Nov | Where to stay and where to eat: dated hotel searches for trips away, map search for food, non-paying options |
 | 10 | 10 Nov | While you're there: nearby Things to do and tour searches, Add to my year onto the same trip |
 | 11 | 11 Nov | Activities for the thin months (courses, festivals, days out) from official pages; start with the "to source" items in the Project doc activity-backlog.md |
 | 12 | 12 Nov | Accounts: Cloudflare Worker + D1, emailed sign-in link (works in a dev/test setup if Robin's accounts are not ready) |
 | 13 | 13 Nov | Sync: list and plans on the account through DDRList merge(), browser plans merged on first sign-in |
 | 14 | 14 Nov | Stripe (test mode): products and prices (£2/month, £20/year, £20 gift), Checkout, webhook, Customer Portal |
-| 15 | 15 Nov | Paywall and the sample plan page; existing browser plans kept read-only for non-members |
+| 15 | 15 Nov | "Plan this" box with the two choices (plan it yourself: free links; Planner Plus: paywall); the sample plan page; existing browser plans kept read-only for non-members |
 | 16 | 16 Nov | Gifts: buy, code, printable card, redeem page; 12 months, no auto-renew |
 | 17 | 17 Nov | Live calendar feed for members; kit at three levels for the most planned activities |
 | 18 | 18 Nov | Today screen in the app for members |
