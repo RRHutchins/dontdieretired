@@ -87,7 +87,30 @@
     if (r.needs) return h + '<p class="meta"><a href="' + link(p) + '">' + esc(T.my_needs) + '</a></p></details>';
     h += '<p class="pl-where"><strong>' + esc(T.where_label) + ':</strong> ' + esc(r.label) + '</p>' + (r.note ? '<p class="pl-detail">' + esc(r.note) + '</p>' : '');
     if (r.source) h += '<p class="meta">' + esc(T.where_source).replace('{label}', '<a href="' + esc(r.source.url) + '" target="_blank" rel="noopener">' + esc(r.source.label) + '</a>').replace('{checked}', esc(P.longDate(r.source.checked))) + '</p>';
-    return h + '<ul class="pl-links">' + r.where.map(linkHtml).join('') + '</ul><p class="pl-wkh">' + esc(T.getting) + '</p><p class="meta">' + esc(r.help) + '</p><ul class="pl-links">' + r.getting.map(linkHtml).join('') + '</ul>' + stayEatHtml(r, T) + '</details>';
+    return h + '<ul class="pl-links">' + r.where.map(linkHtml).join('') + '</ul><p class="pl-wkh">' + esc(T.getting) + '</p><p class="meta">' + esc(r.help) + '</p><ul class="pl-links">' + r.getting.map(linkHtml).join('') + '</ul>' + stayEatHtml(r, T) + nearHtml(r, T, p) + '</details>';
+  }
+  /* While you're there and Goes well with (Planner Plus day 10), as on the activity's plan page */
+  const ex = p => P.extras(byId[p.cid], S, { plan: p.plan, items: all.items, acts: byId, today });
+  function xHtml(e, T) {
+    let h = '<li class="pl-x" data-my-x="' + esc(e.id) + '"><p class="pl-xt"><a href="' + esc(e.url) + '" data-my-xt>' + esc(e.title) + '</a>'
+      + (e.area ? ' <span class="pl-lwhy pl-xarea">' + esc(fill(T.near_area, { area: e.area })) + '</span>' : '') + '</p>';
+    if (e.planned) h += '<p class="meta">' + esc(fill(T.added, { when: e.planned })) + ' · <a href="' + esc(e.url) + '#plan">' + esc(T.see_plan) + '</a></p>';
+    else if (e.when) h += '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-my-add="' + esc(e.id) + '" data-my-when="' + esc(JSON.stringify(e.when)) + '"' + (e.with ? ' data-my-with="' + esc(e.with) + '"' : '') + '>'
+      + esc(T.add) + ' <span class="pl-xwhen">' + esc(fill(T.add_on, { when: e.when.date ? P.longDate(e.when.date) : P.monthYear(e.when.month) })) + '</span></button></p>';
+    else h += '<p class="meta"><a href="' + esc(e.url) + '#plan">' + esc(T.pick_date) + '</a>' + (e.pick === 'event' ? ': ' + esc(T.pick_why_event) : e.pick === 'fixed' ? ': ' + esc(T.pick_why_fixed) : e.pick === 'long' ? ': ' + esc(T.pick_why_long) : '') + '</p>';
+    return h + '</li>';
+  }
+  function nearHtml(r, T, p) {
+    if (!r.near || !T.near) return '';
+    const n = ex(p).nearby;
+    let h = '<p class="pl-wkh">' + esc(T.near) + '</p>';
+    if (n.length) h += '<p class="meta">' + esc(T.near_help) + '</p><ul class="pl-xs">' + n.map(e => xHtml(e, T)).join('') + '</ul>';
+    return h + '<p class="pl-wkh pl-wkh-sub">' + esc(r.near.head) + '</p><p class="meta">' + esc(r.near.help) + '</p><ul class="pl-links">' + r.near.links.map(linkHtml).join('') + '</ul>';
+  }
+  function goesHtml(p) {
+    const T = S.trip; if (!T || !T.goes || !p.cid || !byId[p.cid] || !p.plan || p.plan.status !== 'ok') return '';
+    const g = ex(p).goes; if (!g.length) return '';
+    return '<details class="pl-trip my-trip my-goes"><summary>' + esc(T.goes) + '</summary><p class="meta">' + esc(T.goes_help) + '</p><ul class="pl-xs">' + g.map(e => xHtml(e, T)).join('') + '</ul></details>';
   }
   /* Where to stay and where to eat (Planner Plus day 9), as on the activity's plan page */
   function stayEatHtml(r, T) {
@@ -121,7 +144,8 @@
       + (items.length ? '<ul class="pl-links pl-kit">' + items.map(x => '<li><a href="' + esc(x.aff ? affUrl(x.url, x.aff) : x.url) + '" target="_blank" rel="' + (x.aff ? AFF_REL : 'noopener') + '">' + esc(x.name) + '</a><span class="pl-lwhy">' + esc(x.why) + '</span></li>').join('') + '</ul>' : '')
       + (s.why ? '<p class="pl-why"><span>Why then:</span> ' + esc(s.why) + '</p>' : '')
       + (s.moved ? '<p class="pl-why my-moved">' + esc(s.moved.why) + '</p>' : '')
-      + (s.strand === 'day' ? tripHtml(p, s) : '<div class="my-acts">'
+      + (s.with ? '<p class="meta my-with">' + esc(s.with) + '</p>' : '')
+      + (s.strand === 'day' ? tripHtml(p, s) + goesHtml(p) : '<div class="my-acts">'
         + '<label class="my-tick"><input type="checkbox" data-my-tick' + (s.done ? ' checked' : '') + '> Done</label>'
         + (w ? '<details class="my-move"><summary>Move this step</summary><div class="my-move-in"><label for="' + uid + '">Move to</label> <input type="date" id="' + uid + '" min="' + w.min + '" max="' + w.max + '" value="' + s.date + '" data-my-to> '
           + '<button type="button" class="btn btn-small" data-my-shift>Move</button>' + (s.moved && s.moved.by === 'you' ? ' <button type="button" class="btn btn-small btn-ghost" data-my-back>Put it back</button>' : '')
@@ -188,7 +212,9 @@
     if (view === 'year') drawYear(); else drawMonth(focus);
     const u = $('[data-my-undated]');
     u.hidden = !all.undated; u.innerHTML = all.undated ? (all.undated === 1 ? 'One more thing on <a href="/list/#mine">your list</a> has no date yet.' : all.undated + ' more things on <a href="/list/#mine">your list</a> have no date yet.') + ' Give one a day or a month with Plan this on its page.' : '';
-    const aff = all.steps.some(s => (s.links || []).some(l => l.aff) || (s.items || []).some(x => x.aff));
+    // the tour searches under "While you're there" (day 10) carry affiliate ids too
+    const aff = all.steps.some(s => (s.links || []).some(l => l.aff) || (s.items || []).some(x => x.aff)) || all.plans.some(p => p.plan && p.plan.status === 'ok' && p.away && p.cid && byId[p.cid]
+      && P.trip(byId[p.cid], S, { place: (all.items[p.id] || {}).where || '', until: p.until }).near);
     const ad = $('[data-my-aff]'); ad.hidden = !(aff && view === 'month'); ad.textContent = S.notes.affiliate;
     $('[data-my-saved]').textContent = S.notes.saved;
     $('[data-my-calhelp]').textContent = S.notes.cal_help;
@@ -217,6 +243,17 @@
     const st = e.target.closest('[data-my-step]');
     if (st) { month = addMonths(month, +st.dataset.myStep); draw(); setHash(); if (st.hidden) $('[data-my-month]').focus({ preventScroll: true }); return; }
     if (e.target.closest('[data-my-ics]')) { saveCalendar(); return; }
+    const add = e.target.closest('[data-my-add]');
+    if (add) {   // Add to my year (day 10): a plan of its own for that activity, on the date shown
+      let w; try { w = JSON.parse(add.dataset.myWhen); } catch (x) { return; }
+      const xid = add.dataset.myAdd, open = [...$$('details[open]')].map(d => { const li = d.closest('[data-sid]'); return li ? li.dataset.pid + '|' + d.className : ''; });
+      L.plan(xid, Object.assign({}, w, add.dataset.myWith ? { with: add.dataset.myWith } : {}), today);
+      draw();
+      $$('details').forEach(d => { const li = d.closest('[data-sid]'); if (li && open.includes(li.dataset.pid + '|' + d.className)) d.open = true; });
+      const row = $$('[data-my-x]').find(x => x.dataset.myX === xid && x.closest('details[open]')), t = row && $('[data-my-xt]', row); if (t) t.focus();
+      say('Added to your year: ' + (byId[xid] ? byId[xid].title : '') + ', ' + (w.date ? P.longDate(w.date) : P.monthYear(w.month)) + '.');
+      return;
+    }
     const li = e.target.closest('[data-sid]'); if (!li) return;
     const pid = li.dataset.pid, sid = li.dataset.sid;
     if (e.target.closest('[data-my-shift]')) {

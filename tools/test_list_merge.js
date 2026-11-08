@@ -230,5 +230,26 @@ t('merging ticks twice changes nothing more', () => {
     const m = L.merge(a, b).items[0];
     assert.strictEqual(m.until, '2027-08-18'); assert.deepStrictEqual(Object.keys(m.ticks).sort(), ['book', 'kit']);
   });
+  /* While you're there (Planner Plus day 10): `with`, the trip a plan was added to */
+  t('plan() stores the trip a plan was added to; a new plan without it, or removing the plan, clears it', () => {
+    L.plan('climb-ben-nevis', { date: '2027-08-16', with: 'go-to-edinburgh-fringe' }, '2026-11-08');
+    assert.strictEqual(L.get('climb-ben-nevis').with, 'go-to-edinburgh-fringe');
+    L.plan('climb-ben-nevis', { date: '2027-08-17' }, '2026-11-08'); assert.strictEqual(L.get('climb-ben-nevis').with, '');
+    L.plan('climb-ben-nevis', { month: '2027-08', with: 'go-to-edinburgh-fringe' }, '2026-11-08'); assert.strictEqual(L.get('climb-ben-nevis').with, 'go-to-edinburgh-fringe');
+    L.plan('climb-ben-nevis', null); assert.strictEqual(L.get('climb-ben-nevis').with, '');
+    L.plan('climb-ben-nevis', { date: '2027-08-16', with: 'climb-ben-nevis' }, '2026-11-08'); assert.strictEqual(L.get('climb-ben-nevis').with, '', 'never itself');
+    L.plan('climb-ben-nevis', { date: '2027-08-16', with: '<script>' }, '2026-11-08'); assert.strictEqual(L.get('climb-ben-nevis').with, '', 'only an id');
+  });
+  t('`with` is cleaned (an id, only on a saved plan) and newest wins in a merge without clearing ticks', () => {
+    assert.strictEqual(L.clean(list([item('parkrun', { with: 'go-to-edinburgh-fringe' })])).items[0].with, '', 'no plan, no trip');
+    assert.strictEqual(L.clean(list([item('parkrun', { date: '2027-01-01', plan_made: '2026-11-08', with: 'Bad Id!' })])).items[0].with, '');
+    assert.strictEqual(L.clean(list([item('parkrun', { date: '2027-01-01', plan_made: '2026-11-08', with: 7 })])).items[0].with, '');
+    const base = { date: '2027-08-16', plan_made: '2026-11-08' };
+    const a = list([item('climb-ben-nevis', { ...base, ticks: { book: { done: true, at: '2026-11-08T10:00:00.000Z' } }, updated_at: '2026-11-08T10:00:00.000Z' })]);
+    const b = list([item('climb-ben-nevis', { ...base, with: 'go-to-edinburgh-fringe', ticks: { kit: { done: true, at: '2026-11-08T11:00:00.000Z' } }, updated_at: '2026-11-08T11:00:00.000Z' })]);
+    for (const m of [L.merge(a, b).items[0], L.merge(b, a).items[0]]) {
+      assert.strictEqual(m.with, 'go-to-edinburgh-fringe'); assert.deepStrictEqual(Object.keys(m.ticks).sort(), ['book', 'kit']);
+    }
+  });
 }
 console.log(n + ' tests passed');

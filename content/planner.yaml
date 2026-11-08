@@ -209,6 +209,12 @@ notes:
   moved_busy: "Moved from {from} to spread out a busy day: your plans had more than {n} steps on it."
   clash_day: "{titles} are on the same day, {date}. If that is not what you meant, change the date of one of them."
   clash_span: "{a} ({adates}) and {b} ({bdates}) overlap. If that is not what you meant, change the dates of one of them."
+  # Planner Plus day 10: a trip away that falls on, or ends the day before, training sessions of another plan (a fact, not advice)
+  trip_train: "{a} ({dates}) falls on {n} of the training sessions in your plan for {b}{key}. Each plan was built on its own, so check how you will fit them around your trip."
+  trip_train_key: ", including the {key} on {day}"
+  trip_train_eve: "{a} ({dates}) ends the day before the {key} in your plan for {b}, on {day}. Each plan was built on its own, so check how the travel home fits with it."
+  # Something added with "Add to my year" from a trip's "While you're there": not flagged as a clash with that trip
+  with_trip: "Part of your trip for {title}."
   clash_train: "The training plans for {a} and {b} overlap from {from} to {to}. Each plan was built on its own, so check you can fit both into your week, or set the dates further apart."
   affiliate: "Some of the links in this plan are affiliate links: if you book or buy through them we may earn a commission at no extra cost to you."
   # Add to my calendar (RUNBOOK §6s, day 5): the words around each step in the .ics file, and the line under the button.
@@ -272,8 +278,24 @@ trip:
   stay_help_month: "Choose your nights in the search once you have picked your day."
   stay_more: "Hostels and campsites"
   eat: "Where to eat"
+  # Planner Plus day 10: other things to do on the same trip, and things that go well with this one
+  near: "While you're there"
+  near_help: "Other things on our list in the same area. Add to my year puts one on a free day of this trip; its own plan then shows how to get ready."
+  near_area: "Also in {area}"
+  near_tours: "Tours and things to do near {place}"
+  near_tours_help: "Searches for you to run. We have not checked or chosen any of these tours."
+  goes: "Goes well with"
+  goes_help: "Activities that go with this one. Add to my year gives one its own plan, on the date shown; change it on its page."
+  add: "Add to my year"
+  add_on: "for {when}"
+  added: "In your year: {when}"
+  see_plan: "See its plan"
+  pick_date: "Choose a date on its page"
+  pick_why_event: "It has a training plan, so choose its date and starting point on its page."
+  pick_why_fixed: "It happens on set dates, so check them on its page."
+  pick_why_long: "It takes more than an afternoon, so give it its own dates on its page."
   # the words put in front of the place for the map searches above ({q_hotels} and so on)
-  near: {hotels: "hotels near", campsites: "campsites near", eat: "restaurants near", cafes: "cafes near"}
+  near_q: {hotels: "hotels near", campsites: "campsites near", eat: "restaurants near", cafes: "cafes near"}
   eat_help: "Map searches near {place}. We have not checked or chosen any of these places: see what is open on your day."
   # added to a typed place when the activity is in one country only, so "Bath" finds Bath in Somerset, not Maine
   country_q: {GB: "UK", US: "USA"}
@@ -355,6 +377,23 @@ trip:
       countries: any
       section: stay
       more: true
+    # Planner Plus day 10: "While you're there". Tour and activity searches for the place (affiliate: viator and
+    # getyourguide are the only ids Robin has sent, site.yaml → affiliates; the disclosure shows beside them, and they
+    # are written plain in calendar files). Same search forms as the "Book it" boxes on activity pages.
+    - id: viator
+      label: "Tours and activities on Viator"
+      url: "https://www.viator.com/searchResults/all?text={q}"
+      why: "Guided tours, tastings and day trips that run near there. Read what is included and the meeting point before you book."
+      countries: any
+      section: near
+      aff: viator
+    - id: getyourguide
+      label: "Tours and activities on GetYourGuide"
+      url: "https://www.getyourguide.com/s/?q={q}"
+      why: "Another search of tours, tickets and day trips near there, to compare."
+      countries: any
+      section: near
+      aff: getyourguide
     - id: eat-map
       label: "Places to eat nearby"
       url: "https://www.google.com/maps/search/?api=1&query={q_eat}"

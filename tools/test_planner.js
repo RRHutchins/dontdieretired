@@ -480,7 +480,7 @@ t('trip day 9: where to stay for a trip away (dated nights), folded for a single
   assert.ok(r.stay.more.some(l => l.id === 'yha') && !r.stay.more.some(l => l.id === 'hi-usa'));
   const all = r.where.concat(r.getting, r.stay.links, r.stay.more, r.eat.links);
   all.forEach(l => { assert.ok(tpl.some(x => x.test(l.url)), 'not a planner.yaml link: ' + l.url); assert.ok(!/[{}<>"\s]/.test(l.url), l.url); assert.strictEqual(l.aff, null); });
-  assert.ok(r.eat.links.find(l => l.id === 'eat-map').url.endsWith(encodeURIComponent(T.near.eat + ' Edinburgh, UK')));
+  assert.ok(r.eat.links.find(l => l.id === 'eat-map').url.endsWith(encodeURIComponent(T.near_q.eat + ' Edinburgh, UK')));
   assert.ok(r.eat.help.includes('Edinburgh'));
   // a single day away: folded, that night
   const one = P.trip(f, data, { place: 'Edinburgh', date: '2027-08-14' });
@@ -502,5 +502,139 @@ t('trip day 9: where to stay for a trip away (dated nights), folded for a single
     const x = P.trip(a, data, { place: 'Town & "Place"', date: '2027-06-05', until: '2027-06-07' });
     [].concat(x.where, x.getting, x.stay ? x.stay.links.concat(x.stay.more) : [], x.eat ? x.eat.links : []).forEach(l => { assert.ok(!/[{}<>"\s]/.test(l.url), a.id + ' ' + l.url); assert.strictEqual(l.aff, null); });
   }
+});
+
+/* ---------------- Planner Plus day 10: while you're there, goes well with, trips and training ---------------- */
+const TOUR_AFF = ['viator', 'getyourguide'];
+t('trip day 10: tour searches only for a trip away, with the place in them and only the tour affiliate ids', () => {
+  const T = data.trip, f = byId['go-to-edinburgh-fringe'];
+  const r = P.trip(f, data, { place: 'Edinburgh', date: '2027-08-14', until: '2027-08-18' });
+  assert.ok(r.near && r.near.links.length === 2 && r.near.head.includes('Edinburgh') && r.near.help === T.near_tours_help);
+  r.near.links.forEach(l => { assert.ok(TOUR_AFF.includes(l.aff)); assert.ok(l.url.includes(encodeURIComponent('Edinburgh, UK')), l.url); });
+  assert.ok(r.near.links.find(l => l.aff === 'viator').url.startsWith('https://www.viator.com/searchResults/all?text='));
+  assert.ok(r.near.links.find(l => l.aff === 'getyourguide').url.startsWith('https://www.getyourguide.com/s/?q='));
+  const local = acts.find(x => !x.place_tied && x.kind !== 'habit' && !x.where), habit = acts.find(x => x.kind === 'habit' && !x.where);
+  assert.strictEqual(P.trip(local, data, { place: 'Leeds', date: '2027-03-01' }).near, null);
+  assert.ok(P.trip(local, data, { place: 'Leeds', date: '2027-03-01', until: '2027-03-02' }).near);
+  assert.strictEqual(P.trip(habit, data, { place: 'Leeds', date: '2027-03-01' }).near, null);
+  assert.strictEqual(P.trip(f, data, { date: '2027-08-14' }).near, null, 'no place yet: nothing to search');
+  // only planner.yaml links of section near carry an affiliate id, and only these two
+  data.trip.links.forEach(l => assert.ok(!l.aff || (l.section === 'near' && TOUR_AFF.includes(l.aff)), l.id));
+  for (const a of acts) {
+    const x = P.trip(a, data, { place: 'Town & "Place"', date: '2027-06-05', until: '2027-06-07' });
+    (x.near ? x.near.links : []).forEach(l => { assert.ok(!/[{}<>"\s]/.test(l.url), a.id + ' ' + l.url); assert.ok(TOUR_AFF.includes(l.aff)); });
+  }
+});
+const planFor = (id, when, made) => P.build(byId[id], data, Object.assign({ today: made || TODAY }, when));
+t('trip day 10: nearby activities share an area, never the activity itself or a weekly habit; goes well with starts with related', () => {
+  for (const a of acts) {
+    assert.ok(Array.isArray(a.nearby) && a.nearby.length <= 6 && Array.isArray(a.goes) && a.goes.length <= 4, a.id);
+    a.nearby.forEach(([id, area]) => { const m = byId[id]; assert.ok(m && id !== a.id && m.kind !== 'habit' && typeof area === 'string' && area, a.id + ' ' + id); assert.ok(a.place_tied); });
+    a.goes.forEach(id => assert.ok(byId[id] && id !== a.id, a.id + ' goes ' + id));
+    assert.strictEqual(new Set(a.goes).size, a.goes.length);
+  }
+  assert.ok(byId['go-to-edinburgh-fringe'].nearby.length > 0);
+});
+t('trip day 10: Add to my year puts a nearby activity on a free day of the same trip; events and set dates go to their own page', () => {
+  const f = byId['go-to-edinburgh-fringe'], plan = planFor('go-to-edinburgh-fringe', { date: '2027-08-14', until: '2027-08-18' });
+  const items = { 'go-to-edinburgh-fringe': { date: '2027-08-14', until: '2027-08-18', plan_made: TODAY } };
+  const x = P.extras(f, data, { plan, items, acts: byId, today: TODAY });
+  assert.strictEqual(x.nearby.length, f.nearby.length);
+  x.nearby.forEach(e => {
+    const m = byId[e.id];
+    assert.strictEqual(e.with, f.id); assert.ok(e.area && e.url === '/list/' + e.id + '/');
+    if (m.event) assert.ok(!e.when && e.pick === 'event');
+    else if (m.dates || m.kind === 'event') assert.ok(!e.when && e.pick === 'fixed');
+    else if (m.time !== 'afternoon') assert.ok(!e.when && e.pick === 'long', e.id);
+    else if (e.when) { assert.strictEqual(e.when.date, '2027-08-15', 'the second day of the stay'); assert.strictEqual(planFor(e.id, e.when).status, 'ok'); }
+  });
+  const free = x.nearby.find(e => e.when); assert.ok(free, 'at least one nearby activity can be added');
+  // a day already taken by another of the reader's plans is skipped; the trip itself and the activity do not count
+  const busy = Object.assign({}, items, { other: { date: '2027-08-15' }, [free.id]: { date: '', month: '' } });
+  assert.strictEqual(P.extras(f, data, { plan, items: busy, acts: byId, today: TODAY }).nearby.find(e => e.id === free.id).when.date, '2027-08-16');
+  const full = Object.assign({}, items, { o2: { date: '2027-08-15', until: '2027-08-18' } });
+  assert.strictEqual(P.extras(f, data, { plan, items: full, acts: byId, today: TODAY }).nearby.find(e => e.id === free.id).when.date, '2027-08-14', 'then the first day');
+  // already in the reader's year: nothing offered, so nothing is overwritten
+  const had = Object.assign({}, items, { [free.id]: { date: '2027-09-01', plan_made: TODAY } });
+  const h = P.extras(f, data, { plan, items: had, acts: byId, today: TODAY }).nearby.find(e => e.id === free.id);
+  assert.ok(!h.when && h.planned === '1 September 2027');
+  // one day: that day; a month: that month; nothing for a plan that is not ok
+  const one = P.extras(f, data, { plan: planFor('go-to-edinburgh-fringe', { date: '2027-08-14' }), items: {}, acts: byId, today: TODAY }).nearby.find(e => e.id === free.id);
+  assert.strictEqual(one.when.date, '2027-08-14');
+  const mo = P.extras(f, data, { plan: planFor('go-to-edinburgh-fringe', { month: '2027-08' }), items: {}, acts: byId, today: TODAY }).nearby.find(e => e.id === free.id);
+  assert.deepStrictEqual(mo.when, { month: '2027-08' });
+  assert.deepStrictEqual(P.extras(f, data, { plan: planFor('go-to-edinburgh-fringe', { date: '2026-10-01' }), acts: byId, today: TODAY }), { nearby: [], goes: [] });
+  // a habit or a thing not tied to a place has no nearby list
+  const local = acts.find(a => !a.place_tied && a.kind !== 'habit' && a.goes.length);
+  if (local) assert.strictEqual(P.extras(local, data, { plan: planFor(local.id, { date: '2027-05-01' }), acts: byId, today: TODAY }).nearby.length, 0);
+});
+t('trip day 10: goes well with, for every real activity: its own suggested date, a plan that works, training and set-date events sent to their page', () => {
+  let offered = 0;
+  for (const a of acts) {
+    if (!a.goes.length) continue;
+    const plan = planFor(a.id, P.suggest(a, { today: TODAY }));
+    if (plan.status !== 'ok') continue;
+    const x = P.extras(a, data, { plan, items: {}, acts: byId, today: TODAY });
+    assert.ok(x.goes.every(e => e.id !== a.id && !e.with));
+    x.goes.forEach(e => {
+      const m = byId[e.id];
+      if (m.event) return assert.ok(!e.when && e.pick === 'event', e.id);
+      if (!e.when) return assert.ok(['fixed', 'date'].includes(e.pick), e.id);
+      offered++;
+      const sg = P.suggest(m, { today: TODAY }); assert.deepStrictEqual(e.when, sg.date ? { date: sg.date } : { month: sg.month });
+      assert.strictEqual(planFor(e.id, e.when).status, 'ok', e.id);
+    });
+    // nearby, for every place-tied activity on a stay: every date offered builds, and lies inside the stay
+    if (a.place_tied && a.kind !== 'habit' && plan.date && !plan.by_month) {
+      const st = planFor(a.id, { date: plan.date, until: P.parse(plan.date) && new Date(P.parse(plan.date).getTime() + 3 * 864e5).toISOString().slice(0, 10) });
+      P.extras(a, data, { plan: st, items: {}, acts: byId, today: TODAY }).nearby.filter(e => e.when).forEach(e => {
+        assert.ok(e.when.date >= st.date && e.when.date <= st.until, a.id + ' ' + e.id); assert.strictEqual(planFor(e.id, e.when).status, 'ok');
+      });
+    }
+  }
+  assert.ok(offered > 20);
+});
+t('trip day 10: My year does not flag something added to a trip as a clash with it, only while it stays inside the trip', () => {
+  const near = byId['go-to-edinburgh-fringe'].nearby.map(n => n[0]).find(id => !byId[id].event && !byId[id].dates && byId[id].kind !== 'event' && byId[id].time === 'afternoon');
+  const fr = entry('go-to-edinburgh-fringe', { date: '2027-08-14', until: '2027-08-18' });
+  const inTrip = P.combine([fr, entry(near, { date: '2027-08-15', with: 'go-to-edinburgh-fringe' })], data, { today: TODAY });
+  assert.strictEqual(inTrip.clashes.length, 0);
+  assert.strictEqual(inTrip.steps.find(s => s.pid === near && s.strand === 'day').with, data.notes.with_trip.replace('{title}', byId['go-to-edinburgh-fringe'].title));
+  const loose = P.combine([fr, entry(near, { date: '2027-08-15' })], data, { today: TODAY });
+  assert.ok(loose.clashes.some(c => c.kind === 'span'), 'without with it is an overlap');
+  const moved = P.combine([fr, entry(near, { date: '2027-08-20', with: 'go-to-edinburgh-fringe' })], data, { today: TODAY });
+  assert.ok(!moved.steps.find(s => s.pid === near && s.strand === 'day').with && moved.plans.find(p => p.id === near).with === '');
+  // one day: the trip and what was added to it share the day without a clash; a third thing on that day still clashes
+  const day = [entry('go-to-edinburgh-fringe', { date: '2027-08-14' }), entry(near, { date: '2027-08-14', with: 'go-to-edinburgh-fringe' })];
+  assert.strictEqual(P.combine(day, data, { today: TODAY }).clashes.filter(c => c.kind === 'day').length, 0);
+  const third = acts.find(a => !a.event && !a.place_tied && a.kind !== 'habit');
+  assert.strictEqual(P.combine(day.concat(entry(third.id, { date: '2027-08-14' })), data, { today: TODAY }).clashes.filter(c => c.kind === 'day').length, 1);
+  // a month plan added to a trip in the same month
+  const mo = P.combine([entry('go-to-edinburgh-fringe', { month: '2027-08' }), entry(near, { month: '2027-08', with: 'go-to-edinburgh-fringe' })], data, { today: TODAY });
+  assert.strictEqual(mo.plans.find(p => p.id === near).with, 'go-to-edinburgh-fringe');
+});
+t('trip day 10: a trip away over training sessions of another plan, or ending the day before its long session, is pointed out as a fact', () => {
+  const g = byId['run-great-north-run'], N = data.notes;
+  const gp = P.build(g, data, { date: '2027-09-12', today: '2027-05-01', level: 'active' });
+  const longs = gp.steps.filter(s => s.role === 'long'), any = gp.steps.filter(s => s.week);
+  assert.ok(longs.length > 3);
+  const L0 = longs[longs.length - 3].date, d = (x, k) => plus(x, k);
+  const gr = { id: g.id, title: g.title, item: { status: 'planned', plan_made: '2027-05-01', date: '2027-09-12', level: 'active' }, activity: g };
+  const fr = (from, to) => ({ id: 'go-to-edinburgh-fringe', title: byId['go-to-edinburgh-fringe'].title, item: { status: 'planned', plan_made: '2027-05-01', date: from, until: to }, activity: byId['go-to-edinburgh-fringe'] });
+  // over the long session
+  let c = P.combine([gr, fr(d(L0, -2), d(L0, 1))], data, { today: '2027-05-01' }).clashes.filter(x => x.kind === 'trip');
+  assert.strictEqual(c.length, 1); assert.ok(fills(N.trip_train).test(c[0].text), c[0].text);
+  const n = any.filter(s => s.date >= d(L0, -2) && s.date <= d(L0, 1)).length;
+  assert.ok(c[0].text.includes(' ' + n + ' of the training sessions') && c[0].text.includes(g.event.key) && c[0].text.includes(P.longDate(L0)));
+  assert.deepStrictEqual(c[0].ids, ['go-to-edinburgh-fringe', g.id]);
+  // ending the day before it, with no session inside the trip (a day away, on the rest day before the long session)
+  const eve = d(L0, -1);
+  assert.ok(!any.some(s => s.date === eve), 'the engine rests the day before the long session');
+  const fd = fr(eve, ''); delete fd.item.until;
+  c = P.combine([gr, fd], data, { today: '2027-05-01' }).clashes.filter(x => x.kind === 'trip');
+  assert.strictEqual(c.length, 1); assert.ok(fills(N.trip_train_eve).test(c[0].text), c[0].text); assert.ok(c[0].text.includes(P.longDate(L0)));
+  // a trip well away from the training says nothing; nor does a plan with no training
+  assert.strictEqual(P.combine([gr, fr('2027-10-01', '2027-10-03')], data, { today: '2027-05-01' }).clashes.filter(x => x.kind === 'trip').length, 0);
+  assert.strictEqual(P.combine([fr(d(L0, -2), d(L0, 1))], data, { today: '2027-05-01' }).clashes.length, 0);
 });
 console.log(n + ' tests passed');

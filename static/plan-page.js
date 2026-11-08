@@ -8,7 +8,7 @@
   const P = window.DDRPlan, L = window.DDRList, box = document.querySelector('[data-pl]'), raw = document.getElementById('pl-data');
   if (!P || !L || !box || !raw) return;
   let data; try { data = JSON.parse(raw.textContent); } catch (e) { return; }
-  const A = data.a, S = data.s, N = S.notes, id = A.id;
+  const A = data.a, S = data.s, N = S.notes, id = A.id, X = data.x || {};   // X: the planner entries of the nearby and goes-well-with activities (day 10)
   const $ = (s, r = box) => r.querySelector(s), $$ = (s, r = box) => [...r.querySelectorAll(s)];
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const fill = (t, v) => String(t || '').replace(/\{(\w+)\}/g, (m, k) => (k in v ? v[k] : m));
@@ -124,7 +124,32 @@
     h += '<ul class="pl-links">' + r.where.map(l => linkHtml(l, false)).join('') + '</ul>';
     if (!r.sourced) h += '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-pl-where-change>' + esc(T.where_change) + '</button></p>';
     h += '<p class="pl-wkh">' + esc(T.getting) + '</p><p class="meta">' + esc(r.help) + '</p><ul class="pl-links">' + r.getting.map(l => linkHtml(l, false)).join('') + '</ul>';
-    return h + stayEatHtml(r, T, l => linkHtml(l, false)) + '</div>';
+    return h + stayEatHtml(r, T, l => linkHtml(l, false)) + nearHtml(r, T, plan) + '</div>';
+  }
+  /* While you're there and Goes well with (Planner Plus day 10). Add to my year only once this plan is saved (a nearby
+     one goes on a free day of this trip); before that, links to the activities' own pages. */
+  const items = () => Object.fromEntries(L.live(L.load()).map(it => [it.id, it]));
+  const ex = plan => P.extras(A, S, { plan, items: items(), acts: X, today });
+  function xHtml(e, T, saved) {
+    let h = '<li class="pl-x" data-pl-x="' + esc(e.id) + '"><p class="pl-xt"><a href="' + esc(e.url) + '" data-pl-xt>' + esc(e.title) + '</a>'
+      + (e.area ? ' <span class="pl-lwhy pl-xarea">' + esc(fill(T.near_area, { area: e.area })) + '</span>' : '') + '</p>';
+    if (e.planned) h += '<p class="meta">' + esc(fill(T.added, { when: e.planned })) + ' · <a href="' + esc(e.url) + '#plan">' + esc(T.see_plan) + '</a></p>';
+    else if (e.when && saved) h += '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-pl-add="' + esc(e.id) + '" data-pl-when="' + esc(JSON.stringify(e.when)) + '"' + (e.with ? ' data-pl-with="' + esc(e.with) + '"' : '') + '>'
+      + esc(T.add) + ' <span class="pl-xwhen">' + esc(fill(T.add_on, { when: e.when.date ? P.longDate(e.when.date) : P.monthYear(e.when.month) })) + '</span></button></p>';
+    else h += '<p class="meta"><a href="' + esc(e.url) + '#plan">' + esc(T.pick_date) + '</a>' + (e.pick === 'event' ? ': ' + esc(T.pick_why_event) : e.pick === 'fixed' ? ': ' + esc(T.pick_why_fixed) : e.pick === 'long' ? ': ' + esc(T.pick_why_long) : '') + '</p>';
+    return h + '</li>';
+  }
+  function nearHtml(r, T, plan) {
+    if (!r.near || !T.near) return '';
+    const n = ex(plan).nearby, saved = !!(current && current.saved);
+    let h = '<p class="pl-wkh">' + esc(T.near) + '</p>';
+    if (n.length) h += '<p class="meta">' + esc(T.near_help) + '</p><ul class="pl-xs">' + n.map(e => xHtml(e, T, saved)).join('') + '</ul>';
+    return h + '<p class="pl-wkh pl-wkh-sub">' + esc(r.near.head) + '</p><p class="meta">' + esc(r.near.help) + '</p><ul class="pl-links">' + r.near.links.map(l => linkHtml(l, false)).join('') + '</ul>';
+  }
+  function goesHtml(plan) {
+    const T = S.trip; if (!T || !T.goes) return '';
+    const g = ex(plan).goes; if (!g.length) return '';
+    return '<div class="pl-goes"><h4 class="pl-month">' + esc(T.goes) + '</h4><p class="meta">' + esc(T.goes_help) + '</p><ul class="pl-xs">' + g.map(e => xHtml(e, T, true)).join('') + '</ul></div>';
   }
   /* Where to stay and where to eat (Planner Plus day 9): open for a stay, folded for a single day away */
   function stayEatHtml(r, T, li) {
@@ -186,7 +211,8 @@
         + (st.moved ? '<p class="pl-why my-moved">' + esc(st.moved.why) + '</p>' : '')
         + (st.id === 'train-start' && plan.train ? aboutHtml(plan.train) : '') + (st.strand === 'day' ? tripHtml(plan) : '') + '</li>';
     });
-    html += '</ol>';
+    html += '</ol>' + goesHtml(plan);
+    if (plan.steps.some(st => st.strand === 'day') && S.trip && P.trip(A, S, { place: (current && current.place) || '', until: plan.until }).near) hasAff = true;   // the tour searches
     // the safety line is its own dated step ("Before you go: stay safe"), and stays on the page above
     if (hasAff) html += '<p class="disclosure">' + esc(N.affiliate) + '</p>';
     html += saved
@@ -253,6 +279,15 @@
       if (!f.count) { msg.textContent = 'Nothing left to add: every step is done or has gone by.'; return; }
       saveFile(f.text, 'my-year-' + id + '.ics');
       msg.textContent = 'Calendar file saved, with ' + f.count + (f.count === 1 ? ' entry.' : ' entries.') + ' Open it to add them to your calendar.';
+      return;
+    }
+    const add = e.target.closest('[data-pl-add]');
+    if (add && current) {   // Add to my year (day 10): a plan of its own for that activity, on the date shown
+      let w; try { w = JSON.parse(add.dataset.plWhen); } catch (x) { return; }
+      const xid = add.dataset.plAdd;
+      L.plan(xid, Object.assign({}, w, add.dataset.plWith ? { with: add.dataset.plWith } : {}), today);
+      draw(current.plan, current.saved); paintList();
+      const row = $$('[data-pl-x]').find(x => x.dataset.plX === xid), t = row && $('[data-pl-xt]', row); if (t) t.focus();
       return;
     }
     if (e.target.closest('[data-pl-change]')) { form.hidden = false; suggestion(); (by() === 'month' ? monthSel : dateIn).focus(); return; }

@@ -5,7 +5,7 @@
 
    Stored shape, version 1:
    { version: 1, title, target, settings_updated_at,
-     items: [ { id, cid, title, status, date, until, month, plan_made, level, ticks, moves, where, note, pos, added_at, updated_at, deleted } ] }
+     items: [ { id, cid, title, status, date, until, month, plan_made, level, ticks, moves, where, with, note, pos, added_at, updated_at, deleted } ] }
    - id: for a catalogue challenge it IS the challenge id (so two devices adding the same challenge
      merge into one); for a reader's own challenge it is "x-" + random.
    - cid: the catalogue id, or null for the reader's own. title is kept only for the reader's own.
@@ -29,7 +29,11 @@
      like the rest of the item.
    - More than one day (Robin, 7 Nov 2026; additive, still version 1): `until` (YYYY-MM-DD) is the last day of a stay that
      starts on `date`: after it, and no more than MAX_SPAN (30) days later; never with a month. It is not part of the
-     plan's identity (the get-ready steps hang off the first day), so it does not clear ticks in a merge. */
+     plan's identity (the get-ready steps hang off the first day), so it does not clear ticks in a merge.
+   - While you're there (Planner Plus day 10, 8 Nov 2026; additive, still version 1): `with` is the catalogue id of the
+     trip a plan was added to from that trip's "While you're there" (only with a date or month; never the item itself).
+     It belongs to the plan: a new plan without it, or removing the plan, clears it. Not part of the plan's identity.
+     static/planner.js combine() only honours it while the date still falls inside that trip. Newest wins in a merge. */
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api; else root.DDRList = api;
@@ -40,6 +44,7 @@
   const empty = () => ({ version: VERSION, title: 'My list', target: 50, settings_updated_at: '', items: [] });
   const str = (v, n) => (typeof v === 'string' ? v : '').slice(0, n);
   const DAY = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/, MONTH = /^\d{4}-(0[1-9]|1[0-2])$/;
+  const CID = /^[a-z0-9-]{1,80}$/;
   const STEP = /^[a-z0-9-]{1,40}$/, MAX_STEPS = 300, LEVELS = ['starter', 'active', 'advanced'];
   // per-step marks on a saved plan: { stepId: { done: bool, at } } or { stepId: { date: 'YYYY-MM-DD' | '', at } }
   function cleanMarks(m, field) {
@@ -83,6 +88,7 @@
       o.moves = o.plan_made ? cleanMarks(it.moves, 'date') : {};
       o.where = cleanPlace(it.where);
       o.until = o.date && spanOk(o.date, it.until) ? it.until : '';
+      o.with = (o.date || o.month) && o.plan_made && typeof it.with === 'string' && CID.test(it.with) && it.with !== o.id ? it.with : '';
     });
     return out;
   }
@@ -126,7 +132,7 @@
     const id = cid || 'x-' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
     const cur = find(d, id), pos = d.items.reduce((m, it) => Math.max(m, it.pos), -1) + 1;
     if (cur) Object.assign(cur, { deleted: false, status: cur.deleted ? 'want' : cur.status, updated_at: t, pos: cur.deleted ? pos : cur.pos });
-    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', until: '', month: '', plan_made: '', level: '', ticks: {}, moves: {}, where: '', note: '', pos, added_at: t, updated_at: t, deleted: false });
+    else d.items.push({ id, cid: cid || null, title: cid ? '' : str(customTitle, 120), status: 'want', date: '', until: '', month: '', plan_made: '', level: '', ticks: {}, moves: {}, where: '', with: '', note: '', pos, added_at: t, updated_at: t, deleted: false });
     save(d); return d;
   }
   function update(id, changes) {
@@ -139,7 +145,8 @@
     it.updated_at = now(); save(d); return load();
   }
   /* My year: save a plan for a catalogue activity (adding it to the list if needed), or clear it with when = null.
-     when = { date: 'YYYY-MM-DD' } or { month: 'YYYY-MM' }, with an optional level for a plan with training; today = the reader's day (YYYY-MM-DD) the plan is made. */
+     when = { date: 'YYYY-MM-DD' } or { month: 'YYYY-MM' }, with an optional level for a plan with training and an optional
+     `with` (the trip it was added to, Planner Plus day 10); today = the reader's day (YYYY-MM-DD) the plan is made. */
   function plan(cid, when, today) {
     if (!has(cid)) add(cid);
     const d = load(), it = find(d, cid);
@@ -150,9 +157,10 @@
       it.until = it.date && spanOk(it.date, when.until) ? when.until : '';
       it.plan_made = DAY.test(today || '') ? today : now().slice(0, 10);
       it.level = LEVELS.includes(when.level) ? when.level : '';
+      it.with = typeof when.with === 'string' && CID.test(when.with) && when.with !== cid ? when.with : '';
       if (it.status === 'want') it.status = 'planned';
     } else {
-      it.date = ''; it.until = ''; it.month = ''; it.plan_made = ''; it.level = ''; it.where = '';
+      it.date = ''; it.until = ''; it.month = ''; it.plan_made = ''; it.level = ''; it.where = ''; it.with = '';
       if (it.status === 'planned') it.status = 'want';
     }
     it.updated_at = now(); save(d); return load();

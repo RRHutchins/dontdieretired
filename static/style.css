@@ -1094,6 +1094,17 @@ h1{line-height:1.04}
 .pl-stay summary:focus-visible,.my-trip summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .pl-wkh-sub{font-size:.9rem}
 .pl-trip .pl-links li{line-height:1.45;margin:4px 0 8px}.pl-trip .pl-links a{display:inline-block;padding:10px 0 2px}.pl-trip .pl-lwhy{display:block}
+/* While you're there and Goes well with (Planner Plus day 10) */
+.pl-xs{list-style:none;margin:4px 0 10px;padding:0}
+.pl-x{border-top:1px solid var(--line);padding:6px 0 4px}.pl-x:first-child{border-top:0}
+.pl-x .pl-xt{margin:0 0 2px;line-height:1.45}.pl-x .pl-xt a{display:inline-block;padding:10px 0 2px;font-weight:600;overflow-wrap:anywhere}
+.pl-xarea{display:block}
+.pl-x .pl-acts{margin:2px 0 4px}.pl-x .btn-small{min-height:44px;text-align:left;white-space:normal}
+.pl-xwhen{font-weight:400}
+.pl-x .meta a{display:inline-block;padding:10px 0}
+.pl-goes{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 14px 6px;margin:14px 0 6px}
+.pl-goes .pl-month{margin-top:8px}
+.my-with{margin:0 0 6px}
 /* More than one day (Robin, 7 Nov 2026) */
 .pl-span{margin:6px 0 0}
 .pl-dlbl{display:block;font-weight:600;margin:6px 0 2px}

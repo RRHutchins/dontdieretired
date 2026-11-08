@@ -108,7 +108,7 @@
     const T = settings.trip || {}, w = a.where || null, own = cleanPlace(opts.place);
     const away = !!opts.until || (!!a.place_tied && a.kind !== 'habit');
     const out = { needs: false, label: '', sourced: false, note: '', source: null, away, head: (away && T.head_away) || T.head || '', where: [], getting: [], help: '',
-      stay: null, eat: null };
+      stay: null, eat: null, near: null };
     if (w) {
       out.label = [w.venue, w.town, w.postcode].filter(Boolean).join(', '); out.sourced = true; out.note = w.note || '';
       out.source = { label: w.source.label, url: w.source.url, checked: w.source.checked };
@@ -120,21 +120,82 @@
     // the nights for a hotel search: first to last day of a stay, the night of a single day, none for a month
     const d0 = !opts.by_month && parse(opts.date), d1 = d0 && opts.until && parse(opts.until) > d0 ? parse(opts.until) : null;
     const nights = d0 ? { in: iso(d0), out: iso(d1 || addDays(d0, 1)) } : null;
-    const near = T.near || {};
+    const near = T.near_q || {};
     const put = u => u.replace(/\{(q(?:_[a-z]+)?|in|out)\}/g, (m, k) => k === 'q' ? encodeURIComponent(q) : k === 'in' || k === 'out' ? (nights ? nights[k] : m)
       : near[k.slice(2)] ? encodeURIComponent(near[k.slice(2)] + ' ' + q) : m);
     if (away && T.stay) out.stay = { open: !!d1, help: d1 ? fill(T.stay_help_span, { from: opts.from || longDate(d0), to: opts.to || longDate(d1) })
       : nights ? fill(T.stay_help_day, { day: longDate(d0) }) : T.stay_help_month, links: [], more: [] };
     if (a.kind !== 'habit' && T.eat) out.eat = { help: fill(T.eat_help, { place: out.label }), links: [] };
+    if (away && T.near) out.near = { head: fill(T.near_tours, { place: out.label }), help: T.near_tours_help, links: [] };
     (T.links || []).forEach(l => {
       if (l.countries !== 'any' && !(country && l.countries.indexOf(country) >= 0)) return;
       const sec = l.section || 'getting';
-      if ((sec === 'stay' && !out.stay) || (sec === 'eat' && !out.eat)) return;
-      const link = { id: l.id, label: l.label, url: put(nights && l.url_dated ? l.url_dated : l.url), why: l.why, region: 'any', aff: null };
+      if ((sec === 'stay' && !out.stay) || (sec === 'eat' && !out.eat) || (sec === 'near' && !out.near)) return;
+      // affiliate ids only on the tour searches (tools/planner.py refuses one anywhere else)
+      const link = { id: l.id, label: l.label, url: put(nights && l.url_dated ? l.url_dated : l.url), why: l.why, region: 'any', aff: sec === 'near' && l.aff ? l.aff : null };
       if (sec === 'where') out.where.push(link); else if (sec === 'stay') out.stay[l.more ? 'more' : 'links'].push(link);
-      else if (sec === 'eat') out.eat.links.push(link); else out.getting.push(link);
+      else if (sec === 'eat') out.eat.links.push(link); else if (sec === 'near') out.near.links.push(link); else out.getting.push(link);
     });
     out.help = opts.from && opts.to && T.getting_help_span ? fill(T.getting_help_span, { from: opts.from, to: opts.to }) : fill(T.getting_help, { when: opts.when || T.when_none });
+    return out;
+  }
+
+  /* While you're there and Goes well with (RUNBOOK §6t, Planner Plus day 10).   PURE.
+     extras(activity, settings, { plan, items, acts, today }) → { nearby: [entry], goes: [entry] }
+     plan: this activity's plan (build()); items: the reader's list items by id (from static/list-store.js); acts: planner
+     entries by id (activities.json, or the few a page carries). An entry is { id, title, area, url, when, with, planned,
+     pick }: `when` is what Add to my year saves ({ date } or { month }), or null with `pick` saying why the reader should
+     choose on its own page ('event': it has training; 'fixed': it happens on set dates; 'long': it takes more than an
+     afternoon, so more than a free day on a trip; 'date': no date here works). Only an afternoon's activity goes on a trip.
+     `planned` is the label of a date or month the reader already gave it (then nothing is offered, so nothing is
+     overwritten). Nearby (only for a trip away): activities tied to the same area, each on a free day of THIS trip
+     (a stay: its second day on, the first day last; one day: that day; a month: that month), with `with` = this
+     activity's id so My year does not flag it as a clash with the trip. Goes well with: each on its own suggested date. */
+  function whenLabel(it) {
+    if (!it) return '';
+    if (it.date) { const u = okUntil(it.date, it.until); return u ? spanLabel(parse(it.date), parse(u)) : longDate(parse(it.date)); }
+    return it.month ? monthYear(parse(it.month + '-01')) : '';
+  }
+  function tripWhen(plan, items, self, target) {
+    if (plan.by_month) return { month: plan.date.slice(0, 7) };
+    const taken = new Set();
+    Object.keys(items || {}).forEach(k => {
+      const it = items[k]; if (!it || it.deleted || k === self || k === target || !it.date) return;
+      const end = okUntil(it.date, it.until) || it.date;
+      for (let d = it.date; d <= end; d = iso(addDays(parse(d), 1))) taken.add(d);
+    });
+    const days = [];
+    if (plan.until) for (let d = iso(addDays(parse(plan.date), 1)); d <= plan.until; d = iso(addDays(parse(d), 1))) days.push(d);
+    days.push(plan.date);
+    return { date: days.find(d => !taken.has(d)) || days[0] };
+  }
+  function extras(a, settings, opts) {
+    opts = opts || {};
+    const plan = opts.plan, items = opts.items || {}, acts = opts.acts || {}, today = iso(todayUTC(opts.today));
+    const out = { nearby: [], goes: [] };
+    if (!plan || plan.status !== 'ok') return out;
+    const entry = (id, area, nearby) => {
+      const t = acts[id]; if (!t) return null;
+      const e = { id, title: t.title, area: area || '', url: '/list/' + id + '/', when: null, with: nearby ? a.id : '', planned: whenLabel(items[id]), pick: '' };
+      if (e.planned) return e;
+      if (t.event) { e.pick = 'event'; return e; }
+      if (nearby) {
+        if (t.dates || t.kind === 'event') { e.pick = 'fixed'; return e; }
+        if (t.time !== 'afternoon') { e.pick = 'long'; return e; }   // weeks, months or a year: more than a free day on a trip
+        e.when = tripWhen(plan, items, a.id, id);
+      } else {
+        const sg = suggest(t, { today });
+        if (t.kind === 'event' && sg.why === 'any') { e.pick = 'fixed'; return e; }
+        e.when = sg.date ? { date: sg.date } : { month: sg.month };
+      }
+      // only a date its own plan can work from (not gone by; no training needed, as checked above)
+      const b = build(t, settings, Object.assign({ today }, e.when));
+      if (b.status !== 'ok') { e.when = null; e.pick = 'date'; }
+      return e;
+    };
+    const away = !!plan.until || (!!a.place_tied && a.kind !== 'habit');
+    if (away) (a.nearby || []).forEach(n => { const e = entry(n[0], n[1], true); if (e) out.nearby.push(e); });
+    (a.goes || []).forEach(id => { if (out.nearby.some(e => e.id === id)) return; const e = entry(id, '', false); if (e) out.goes.push(e); });
     return out;
   }
 
@@ -337,7 +398,8 @@
       if (!it.date && !it.month) return;
       const until = it.date ? okUntil(it.date, it.until) : '';
       const p = { id: e.id, title: e.title, cid: e.activity ? e.activity.id : null, date: it.date || '', until, month: it.month || '', status: it.status || 'planned',
-        label: it.date ? (until ? spanLabel(parse(it.date), parse(until)) : longDate(parse(it.date))) : monthYear(parse(it.month + '-01')), plan: null };
+        label: it.date ? (until ? spanLabel(parse(it.date), parse(until)) : longDate(parse(it.date))) : monthYear(parse(it.month + '-01')), plan: null,
+        with: typeof it.with === 'string' ? it.with : '', away: !!until || !!(e.activity && e.activity.place_tied && e.activity.kind !== 'habit') };
       if (e.activity && it.plan_made) {
         const b = build(e.activity, settings, Object.assign({ today: it.plan_made, level: it.level }, it.date ? { date: it.date, until } : { month: it.month }));
         if (b.status === 'ok' && !b.until) p.until = '';   // e.g. a habit: no stay
@@ -351,18 +413,30 @@
       plans.push(p);
     });
     plans.sort((a, b) => ((a.date || a.month + '-01') < (b.date || b.month + '-01') ? -1 : (a.date || a.month + '-01') > (b.date || b.month + '-01') ? 1 : a.id < b.id ? -1 : 1));
+    // Planner Plus day 10: something added from a trip's "While you're there" belongs to that trip while it still falls
+    // inside it (same days, or the same month); otherwise it stands on its own again
+    const endOf = p => p.until || p.date;
+    plans.forEach(p => {
+      const t = p.with && p.with !== p.id ? plans.find(x => x.id === p.with) : null;
+      const inside = t && (p.date ? !!t.date && p.date >= t.date && p.date <= endOf(t) : !!p.month && (t.month || t.date.slice(0, 7)) === p.month);
+      p.with = inside ? t.id : '';
+      if (inside) steps.forEach(s => { if (s.pid === p.id && s.strand === 'day') s.with = fill(N.with_trip, { title: t.title }); });
+    });
+    const sameTrip = (x, y) => x.with === y.id || y.with === x.id || (!!x.with && x.with === y.with);
     const live = plans.filter(p => p.status !== 'done');
     const titles = ps => { const t = ps.map(p => p.title); return t.length < 3 ? t.join(' and ') : t.slice(0, -1).join(', ') + ' and ' + t[t.length - 1]; };
 
     // Clash: two (or more) things on the same day
-    const byDay = {}, endOf = p => p.until || p.date;
+    const byDay = {};
     live.filter(p => p.date && !p.until && p.date >= today).forEach(p => { (byDay[p.date] = byDay[p.date] || []).push(p); });
-    Object.keys(byDay).sort().forEach(d => { const ps = byDay[d]; if (ps.length > 1) clashes.push({ kind: 'day', date: d, ids: ps.map(p => p.id), text: fill(N.clash_day, { titles: titles(ps), date: longDate(parse(d)) }) }); });
+    // things on one trip together are not a clash with each other (only with something else on that day)
+    const tripsOn = ps => new Set(ps.map(p => (p.with && ps.some(x => x.id === p.with) ? p.with : p.id))).size;
+    Object.keys(byDay).sort().forEach(d => { const ps = byDay[d]; if (tripsOn(ps) > 1) clashes.push({ kind: 'day', date: d, ids: ps.map(p => p.id), text: fill(N.clash_day, { titles: titles(ps), date: longDate(parse(d)) }) }); });
     // Clash: a stay of more than one day that overlaps another of the reader's days or stays
     const dated = live.filter(p => p.date && endOf(p) >= today);
     for (let i = 0; i < dated.length; i++) for (let j = i + 1; j < dated.length; j++) {
       const a = dated[i], b = dated[j];
-      if (!a.until && !b.until) continue;
+      if ((!a.until && !b.until) || sameTrip(a, b)) continue;
       const from = a.date > b.date ? a.date : b.date, to = endOf(a) < endOf(b) ? endOf(a) : endOf(b);
       if (from <= to) clashes.push({ kind: 'span', date: from, from, to, ids: [a.id, b.id], text: fill(N.clash_span, { a: a.title, b: b.title, adates: a.label, bdates: b.label }) });
     }
@@ -373,6 +447,25 @@
       const from = a.st.date > b.st.date ? a.st.date : b.st.date, to = a.p.plan.date < b.p.plan.date ? a.p.plan.date : b.p.plan.date;
       if (from <= to && to >= today) clashes.push({ kind: 'train', from, to, ids: [a.p.id, b.p.id], text: fill(N.clash_train, { a: a.p.title, b: b.p.title, from: longDate(parse(from > today ? from : today)), to: longDate(parse(to)) }) });
     }
+
+    // Planner Plus day 10: a trip away over the training sessions of another plan, or ending the day before its key
+    // session (the engine's long session). Said as a fact; the reader decides.
+    const sessions = id => steps.filter(s => s.pid === id && s.week && s.date >= today);
+    // (something added to a trip is covered by the trip's own note)
+    live.filter(p => p.date && p.away && !p.with && endOf(p) >= today).forEach(t => {
+      trains.forEach(({ p: r }) => {
+        if (r.id === t.id || !r.plan.train) return;
+        const ss = sessions(r.id), on = ss.filter(s => s.date >= t.date && s.date <= endOf(t)), key = r.plan.train.key;
+        if (on.length) {
+          const k = on.find(s => s.role === 'long');
+          clashes.push({ kind: 'trip', date: t.date, ids: [t.id, r.id], text: fill(N.trip_train, { a: t.title, dates: t.label, n: on.length === 1 ? 'one' : on.length, b: r.title,
+            key: k ? fill(N.trip_train_key, { key, day: longDate(parse(k.date)) }) : '' }) });
+          return;
+        }
+        const next = iso(addDays(parse(endOf(t)), 1)), k = ss.find(s => s.date === next && s.role === 'long');
+        if (k) clashes.push({ kind: 'trip', date: t.date, ids: [t.id, r.id], text: fill(N.trip_train_eve, { a: t.title, dates: t.label, key, b: r.title, day: longDate(parse(k.date)) }) });
+      });
+    });
 
     // Moving flexible steps
     const dayOf = {};   // date → the reader's things on that day (date plans only; every day of a stay)
@@ -456,5 +549,5 @@
     return { text: L.map(fold).join('\r\n') + '\r\n', count };
   }
 
-  return { VERSION, LEVELS, MAX_SPAN, okUntil, build, suggest, trip, cleanPlace, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  return { VERSION, LEVELS, MAX_SPAN, okUntil, build, suggest, trip, extras, whenLabel, cleanPlace, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

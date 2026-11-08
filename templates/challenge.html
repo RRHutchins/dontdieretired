@@ -107,7 +107,7 @@
     </form>
     <div class="pl-out" data-pl-out aria-live="polite"></div>
   </section>
-  <script type="application/json" id="pl-data">{{ {"a": c.plan, "s": pset} | tojson }}</script>
+  <script type="application/json" id="pl-data">{{ {"a": c.plan, "s": pset, "x": pext} | tojson }}</script>
 
   {% if c.local %}{{ near_you(c.local) }}{% endif %}
 

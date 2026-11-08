@@ -19,10 +19,14 @@ STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "trav
 START_AT = ("first", "second", "ongoing", "after_start", "later", "travel", "day")
 NO_TEXT = ("first", "second", "ongoing", "after_start", "later")   # an activity's own start step supplies the words
 TRIP_KEYS = ("head", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs", "getting_help_span",
-             "head_away", "stay", "stay_fold", "stay_help_span", "stay_help_day", "stay_help_month", "stay_more", "eat", "eat_help")
+             "head_away", "stay", "stay_fold", "stay_help_span", "stay_help_day", "stay_help_month", "stay_more", "eat", "eat_help",
+             "near", "near_help", "near_area", "near_tours", "near_tours_help", "goes", "goes_help", "add", "add_on", "added", "see_plan", "pick_date", "pick_why_event", "pick_why_fixed", "pick_why_long")
+TOUR_AFF = ("viator", "getyourguide")   # the only travel-side affiliate schemes Robin has joined (site.yaml → affiliates)
+NEAR_MAX, GOES_MAX = 6, 4
 COUNTRY = re.compile(r"[A-Z]{2}")
 NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help",
-             "level_q", "level_opt", "level_starter", "level_active", "level_advanced", "level_help", "train_month", "train_offline", "train_week", "train_about", "cal_why_train", "train_level_long", "train_level_short", "clash_span", "span_q", "span_last", "span_help", "span_err")
+             "level_q", "level_opt", "level_starter", "level_active", "level_advanced", "level_help", "train_month", "train_offline", "train_week", "train_about", "cal_why_train", "train_level_long", "train_level_short", "clash_span", "span_q", "span_last", "span_help", "span_err",
+             "trip_train", "trip_train_key", "trip_train_eve", "with_trip")
 
 
 def _load(p: Path):
@@ -63,17 +67,19 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
     for l in trip.get("links") or []:
         assert l.get("id") and l["id"] not in tids and l.get("label") and l.get("why"), f"planner trip link {l.get('id')}: needs a unique id, label and why"
         tids.add(l["id"])
-        near = trip.get("near") or {}
-        assert isinstance(near, dict) and all(isinstance(v, str) and v.strip() for v in near.values()), "planner trip.near: words for each {q_<key>}"
+        near = trip.get("near_q") or {}
+        assert isinstance(near, dict) and all(isinstance(v, str) and v.strip() for v in near.values()), "planner trip.near_q: words for each {q_<key>}"
         ph = lambda u: set(re.findall(r"\{([^}]*)\}", u))
         okq = lambda x: x == "q" or (x.startswith("q_") and x[2:] in near)
         u = str(l.get("url", ""))
-        assert u.startswith("https://") and all(okq(x) for x in ph(u)), f"planner trip link {l['id']}: url must be https:// and use only {{q}} or {{q_<key in trip.near>}}"
-        assert l.get("section") in ("where", "getting", "stay", "eat"), f"planner trip link {l['id']}: section is where, getting, stay or eat"
+        assert u.startswith("https://") and all(okq(x) for x in ph(u)), f"planner trip link {l['id']}: url must be https:// and use only {{q}} or {{q_<key in trip.near_q>}}"
+        assert l.get("section") in ("where", "getting", "stay", "eat", "near"), f"planner trip link {l['id']}: section is where, getting, stay, eat or near"
         if "url_dated" in l:
             d_ = str(l["url_dated"])
             assert l["section"] == "stay" and d_.startswith("https://") and {"in", "out"} <= ph(d_) and all(okq(x) or x in ("in", "out") for x in ph(d_)), f"planner trip link {l['id']}: url_dated is for stay links, https://, with {{in}} and {{out}}"
-        assert not l.get("aff"), f"planner trip link {l['id']}: no affiliate travel ids yet (add them only once Robin has sent one, RUNBOOK §6t)"
+        # affiliate ids only where Robin has sent one: tours (Viator, GetYourGuide) under "While you're there" (day 10);
+        # none yet for trains or hotels (RUNBOOK §6t)
+        assert not l.get("aff") or (l["section"] == "near" and l["aff"] in TOUR_AFF), f"planner trip link {l['id']}: affiliate ids only on tour searches (section near, aff {'/'.join(TOUR_AFF)}); none yet for travel or hotels"
         c_ = l.get("countries")
         assert c_ == "any" or (isinstance(c_, list) and c_ and all(isinstance(x, str) and COUNTRY.fullmatch(x) for x in c_)), f"planner trip link {l['id']}: countries is any or a list of two-letter codes"
     assert any(l["section"] == "where" for l in trip.get("links") or []), "planner trip: needs a map link (section: where)"
@@ -177,10 +183,40 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
             "book": [{"label": b["label"], "why": b["why"], "url": b["url"], "aff": b.get("aff")} for b in c.get("book") or []],
             "kit": [{"name": x["name"], "why": x["why"], "url": x["url"]} for x in c.get("kit") or []],
         })
+    # Planner Plus day 10: "While you're there" (other activities tied to the same area: same `places` key; not a weekly
+    # habit, which is not something you do on a trip) and "Goes well with" (the activity's `related`, then the activities
+    # that list it as related, then the rest of its collection). Ids only; the pages look up titles and plans.
+    area_names = _areas(root)
+    by_c = {c["id"]: c for c in chs}
+    for a in out:
+        c = by_c[a["id"]]
+        mine = list(c.get("places") or [])
+        near = []
+        if mine:
+            for m in chs:
+                if m is c or m.get("kind") == "habit": continue
+                shared = [pl for pl in mine if pl in (m.get("places") or [])]
+                if shared: near.append((-len(shared), m.get("time") != "afternoon", m["title"].lower(), m["id"], area_names.get(shared[0], shared[0])))
+        a["nearby"] = [[x[3], x[4]] for x in sorted(near)[:NEAR_MAX]]
+        goes = []
+        for r in c.get("related") or []:
+            assert r in by_c and r != c["id"], f"challenge {c['id']}: related id {r} does not exist"
+            if r not in goes: goes.append(r)
+        goes += [m["id"] for m in chs if m is not c and c["id"] in (m.get("related") or []) and m["id"] not in goes]
+        if c.get("collection"):
+            goes += [m["id"] for m in chs if m is not c and m.get("collection") == c["collection"] and m["id"] not in goes]
+        a["goes"] = goes[:GOES_MAX]
     data = {"version": 1, "built": today.isoformat(),
             "kinds": {k: {"label": v["label"], "why": v["why"], "why_train": v.get("why_train", ""), "lead_weeks": v["lead_weeks"], "strands": v["strands"]} for k, v in kinds.items()},
             "steps": steps, "notes": notes, "trip": trip, "busy": busy, "events": events, "activities": out}
     return data, warn
+
+
+def _areas(root: Path = ROOT) -> dict:
+    """Area key → name, from content/map_shapes.json (the same names build.py shows as an activity's place label)."""
+    shapes = _load(root / "content" / "map_shapes.json") or {}
+    return {a["id"]: a["name"] for k in ("uk", "us", "world") for a in (shapes.get(k) or {}).get("areas", [])
+            if not (k == "world" and a["id"] in ("GBR", "USA"))}
 
 
 _ENG = {}
@@ -222,6 +258,7 @@ if __name__ == "__main__":
     print("best months from:", dict(collections.Counter(a["when_from"] for a in acts)))
     print("with an engine training plan:", [a["id"] for a in acts if a["event"]])
     print("with a fixed date:", [a["id"] for a in acts if a["dates"]])
+    print("with something else in the same area:", sum(1 for a in acts if a["nearby"]), "· with goes-well-with:", sum(1 for a in acts if a["goes"]))
     by_m = collections.Counter(m for a in acts for m in a["when"])
     print("month-bound activities per month:", {m: by_m[m] for m in range(1, 13)})
     tr = training(data)
