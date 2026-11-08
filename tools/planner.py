@@ -18,7 +18,8 @@ STRANDS = ("book", "learn", "train", "travel", "kit")
 STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock", "safety_month", "later", "day_span")
 START_AT = ("first", "second", "ongoing", "after_start", "later", "travel", "day")
 NO_TEXT = ("first", "second", "ongoing", "after_start", "later")   # an activity's own start step supplies the words
-TRIP_KEYS = ("head", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs", "getting_help_span")
+TRIP_KEYS = ("head", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs", "getting_help_span",
+             "head_away", "stay", "stay_fold", "stay_help_span", "stay_help_day", "stay_help_month", "stay_more", "eat", "eat_help")
 COUNTRY = re.compile(r"[A-Z]{2}")
 NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help",
              "level_q", "level_opt", "level_starter", "level_active", "level_advanced", "level_help", "train_month", "train_offline", "train_week", "train_about", "cal_why_train", "train_level_long", "train_level_short", "clash_span", "span_q", "span_last", "span_help", "span_err")
@@ -62,9 +63,17 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
     for l in trip.get("links") or []:
         assert l.get("id") and l["id"] not in tids and l.get("label") and l.get("why"), f"planner trip link {l.get('id')}: needs a unique id, label and why"
         tids.add(l["id"])
+        near = trip.get("near") or {}
+        assert isinstance(near, dict) and all(isinstance(v, str) and v.strip() for v in near.values()), "planner trip.near: words for each {q_<key>}"
+        ph = lambda u: set(re.findall(r"\{([^}]*)\}", u))
+        okq = lambda x: x == "q" or (x.startswith("q_") and x[2:] in near)
         u = str(l.get("url", ""))
-        assert u.startswith("https://") and not re.search(r"\{(?!q\})", u), f"planner trip link {l['id']}: url must be https:// and use only {{q}}"
-        assert l.get("section") in ("where", "getting"), f"planner trip link {l['id']}: section is where or getting"
+        assert u.startswith("https://") and all(okq(x) for x in ph(u)), f"planner trip link {l['id']}: url must be https:// and use only {{q}} or {{q_<key in trip.near>}}"
+        assert l.get("section") in ("where", "getting", "stay", "eat"), f"planner trip link {l['id']}: section is where, getting, stay or eat"
+        if "url_dated" in l:
+            d_ = str(l["url_dated"])
+            assert l["section"] == "stay" and d_.startswith("https://") and {"in", "out"} <= ph(d_) and all(okq(x) or x in ("in", "out") for x in ph(d_)), f"planner trip link {l['id']}: url_dated is for stay links, https://, with {{in}} and {{out}}"
+        assert not l.get("aff"), f"planner trip link {l['id']}: no affiliate travel ids yet (add them only once Robin has sent one, RUNBOOK §6t)"
         c_ = l.get("countries")
         assert c_ == "any" or (isinstance(c_, list) and c_ and all(isinstance(x, str) and COUNTRY.fullmatch(x) for x in c_)), f"planner trip link {l['id']}: countries is any or a list of two-letter codes"
     assert any(l["section"] == "where" for l in trip.get("links") or []), "planner trip: needs a map link (section: where)"

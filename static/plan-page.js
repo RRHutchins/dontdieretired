@@ -110,8 +110,8 @@
   /* ---------- where it is and getting there (Planner Plus day 8): with the day itself ---------- */
   function tripHtml(plan) {
     const T = S.trip; if (!T || !current) return '';
-    const r = P.trip(A, S, Object.assign({ place: current.place || '', when: plan.label }, plan.until ? { from: P.longDate(plan.date), to: P.longDate(plan.until) } : {}));
-    let h = '<div class="pl-trip" data-pl-trip><h5 class="pl-triph" tabindex="-1" data-pl-triph>' + esc(T.head) + '</h5>';
+    const r = P.trip(A, S, Object.assign({ place: current.place || '', when: plan.label, date: plan.date, until: plan.until, by_month: plan.by_month }, plan.until ? { from: P.longDate(plan.date), to: P.longDate(plan.until) } : {}));
+    let h = '<div class="pl-trip" data-pl-trip><h5 class="pl-triph" tabindex="-1" data-pl-triph>' + esc(r.head) + '</h5>';
     if (r.needs || (current.editPlace && !r.sourced)) {
       return h + '<div class="pl-where-ask"><label class="pl-whereq" for="pl-where-in">' + esc(T.where_q) + '</label>'
         + '<input id="pl-where-in" class="pl-wherein" type="text" maxlength="120" autocomplete="off" spellcheck="false" value="' + esc(current.place || '') + '" data-pl-where-in>'
@@ -124,7 +124,19 @@
     h += '<ul class="pl-links">' + r.where.map(l => linkHtml(l, false)).join('') + '</ul>';
     if (!r.sourced) h += '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-pl-where-change>' + esc(T.where_change) + '</button></p>';
     h += '<p class="pl-wkh">' + esc(T.getting) + '</p><p class="meta">' + esc(r.help) + '</p><ul class="pl-links">' + r.getting.map(l => linkHtml(l, false)).join('') + '</ul>';
-    return h + '</div>';
+    return h + stayEatHtml(r, T, l => linkHtml(l, false)) + '</div>';
+  }
+  /* Where to stay and where to eat (Planner Plus day 9): open for a stay, folded for a single day away */
+  function stayEatHtml(r, T, li) {
+    let h = '';
+    if (r.stay) {
+      const body = '<p class="meta">' + esc(r.stay.help) + '</p><ul class="pl-links">' + r.stay.links.map(li).join('') + '</ul>'
+        + (r.stay.more.length ? '<p class="pl-wkh pl-wkh-sub">' + esc(T.stay_more) + '</p><ul class="pl-links">' + r.stay.more.map(li).join('') + '</ul>' : '');
+      h += r.stay.open ? '<p class="pl-wkh">' + esc(T.stay) + '</p>' + body
+        : '<details class="pl-stay"><summary>' + esc(T.stay) + ': ' + esc(T.stay_fold) + '</summary>' + body + '</details>';
+    }
+    if (r.eat) h += '<p class="pl-wkh">' + esc(T.eat) + '</p><p class="meta">' + esc(r.eat.help) + '</p><ul class="pl-links">' + r.eat.links.map(li).join('') + '</ul>';
+    return h;
   }
   function setPlace(v) {
     current.place = P.cleanPlace(v); current.editPlace = false;

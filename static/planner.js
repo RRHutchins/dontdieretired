@@ -95,12 +95,20 @@
      (opts.place); with neither, `needs` is true and the page asks. Every link is one of content/planner.yaml → trip.links,
      a search the reader runs themselves; the place goes into it URL-encoded and nothing else does (no home address:
      the map asks for, or uses, the reader's own starting point).
-     trip(activity, settings, { place, when, from, to }) (from/to: a stay's first and last days, in words) → { needs, label, sourced, note, source, where: [links], getting: [links], help } */
+     trip(activity, settings, { place, when, from, to, date, until, by_month }) (from/to: a stay's first and last days, in
+     words; date/until: the plan's days, YYYY-MM-DD) → { needs, label, sourced, note, source, away, head, where: [links],
+     getting: [links], help, stay: { open, help, links, more }, eat: { help, links } }
+     Day 9: a trip away (a stay over more than one day, or an activity tied to a place, not a weekly habit) gets "Where to
+     stay": dated hotel searches for those nights (the first to the last day; a single day, that night; a month, no
+     dates), and the hostels and campsites; open for a stay, folded ("Staying the night?") for a single day. Everything
+     but a habit gets "Where to eat": map searches near the place. Nothing names a place to stay or eat. */
   const cleanPlace = t => String(t == null ? '' : t).replace(/[\u0000-\u001f\u007f<>]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120);
   function trip(a, settings, opts) {
     opts = opts || {};
     const T = settings.trip || {}, w = a.where || null, own = cleanPlace(opts.place);
-    const out = { needs: false, label: '', sourced: false, note: '', source: null, where: [], getting: [], help: '' };
+    const away = !!opts.until || (!!a.place_tied && a.kind !== 'habit');
+    const out = { needs: false, label: '', sourced: false, note: '', source: null, away, head: (away && T.head_away) || T.head || '', where: [], getting: [], help: '',
+      stay: null, eat: null };
     if (w) {
       out.label = [w.venue, w.town, w.postcode].filter(Boolean).join(', '); out.sourced = true; out.note = w.note || '';
       out.source = { label: w.source.label, url: w.source.url, checked: w.source.checked };
@@ -109,10 +117,22 @@
     const country = (w && w.country) || a.country || '';
     const cq = (T.country_q || {})[country];
     const q = cq && out.label.toLowerCase().indexOf(cq.toLowerCase()) < 0 ? out.label + ', ' + cq : out.label;
+    // the nights for a hotel search: first to last day of a stay, the night of a single day, none for a month
+    const d0 = !opts.by_month && parse(opts.date), d1 = d0 && opts.until && parse(opts.until) > d0 ? parse(opts.until) : null;
+    const nights = d0 ? { in: iso(d0), out: iso(d1 || addDays(d0, 1)) } : null;
+    const near = T.near || {};
+    const put = u => u.replace(/\{(q(?:_[a-z]+)?|in|out)\}/g, (m, k) => k === 'q' ? encodeURIComponent(q) : k === 'in' || k === 'out' ? (nights ? nights[k] : m)
+      : near[k.slice(2)] ? encodeURIComponent(near[k.slice(2)] + ' ' + q) : m);
+    if (away && T.stay) out.stay = { open: !!d1, help: d1 ? fill(T.stay_help_span, { from: opts.from || longDate(d0), to: opts.to || longDate(d1) })
+      : nights ? fill(T.stay_help_day, { day: longDate(d0) }) : T.stay_help_month, links: [], more: [] };
+    if (a.kind !== 'habit' && T.eat) out.eat = { help: fill(T.eat_help, { place: out.label }), links: [] };
     (T.links || []).forEach(l => {
       if (l.countries !== 'any' && !(country && l.countries.indexOf(country) >= 0)) return;
-      const link = { id: l.id, label: l.label, url: l.url.replace('{q}', encodeURIComponent(q)), why: l.why, region: 'any', aff: null };
-      (l.section === 'where' ? out.where : out.getting).push(link);
+      const sec = l.section || 'getting';
+      if ((sec === 'stay' && !out.stay) || (sec === 'eat' && !out.eat)) return;
+      const link = { id: l.id, label: l.label, url: put(nights && l.url_dated ? l.url_dated : l.url), why: l.why, region: 'any', aff: null };
+      if (sec === 'where') out.where.push(link); else if (sec === 'stay') out.stay[l.more ? 'more' : 'links'].push(link);
+      else if (sec === 'eat') out.eat.links.push(link); else out.getting.push(link);
     });
     out.help = opts.from && opts.to && T.getting_help_span ? fill(T.getting_help_span, { from: opts.from, to: opts.to }) : fill(T.getting_help, { when: opts.when || T.when_none });
     return out;

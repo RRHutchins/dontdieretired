@@ -243,10 +243,15 @@ notes:
 # The same links serve the free "plan it yourself" box and the paid plan. Each link is a search the reader runs
 # themselves: no recommendation, no price. `url` placeholders: {q} the place (URL-encoded). `countries`: GB, US, or
 # any. Affiliate travel links go here only once Robin has an id in site.yaml → affiliates (none yet, 8 Nov 2026).
+# Day 9 (8 Nov 2026): `section: stay` (where to stay) shows for a trip away: a plan over more than one day, or an
+# activity tied to a place (not a weekly habit). `url_dated` is the same search with the nights filled in ({in} and
+# {out}, YYYY-MM-DD: the first and last days of a stay, or the night of a single day); a month plan uses `url`.
+# `section: eat` is a map search near the place. Never name or recommend a place to stay or eat that we have not checked.
 # The Google Maps forms are Google's documented Maps URLs (api=1); with no origin, Google asks for one or uses the
 # device's own location, so the member's home is never in our links.
 trip:
   head: "Where it is and getting there"
+  head_away: "Your trip"
   where_label: "Where"
   where_q: "Where will you do it?"
   where_help: "Type a town, venue or postcode. It is kept with your plan on this device, and goes to the map or journey planner only if you open one of the links."
@@ -258,8 +263,18 @@ trip:
   getting_help_span: "Each link opens a search for you to run: put in {from} to travel there and {to} to come back, and where you are setting off from."
   getting: "Getting there"
   getting_help: "Each link opens a search for you to run: put in {when}, and where you are setting off from."
-  my_needs: "Add where it is on its plan page to see the map and journey planners."
-  step_detail: "The links are with the day itself, under \"Where it is and getting there\"."
+  my_needs: "Add where it is on its plan page to see the map, journey planners, places to stay and places to eat."
+  step_detail: "The links are with the day itself, under \"Your trip\": getting there, where to stay and where to eat."
+  stay: "Where to stay"
+  stay_fold: "Staying the night?"
+  stay_help_span: "The hotel search is set for {from} to {to}. Change the dates in the search if you arrive the night before or leave the day after."
+  stay_help_day: "The hotel search is set for the night of {day}. If it starts early, you could choose the night before instead."
+  stay_help_month: "Choose your nights in the search once you have picked your day."
+  stay_more: "Hostels and campsites"
+  eat: "Where to eat"
+  # the words put in front of the place for the map searches above ({q_hotels} and so on)
+  near: {hotels: "hotels near", campsites: "campsites near", eat: "restaurants near", cafes: "cafes near"}
+  eat_help: "Map searches near {place}. We have not checked or chosen any of these places: see what is open on your day."
   # added to a typed place when the activity is in one country only, so "Bath" finds Bath in Somerset, not Maine
   country_q: {GB: "UK", US: "USA"}
   links:
@@ -299,3 +314,56 @@ trip:
       why: "Train times and tickets between US cities."
       countries: [US]
       section: getting
+    - id: hotels
+      label: "Search hotels on Booking.com"
+      url: "https://www.booking.com/searchresults.en-gb.html?ss={q}"
+      url_dated: "https://www.booking.com/searchresults.en-gb.html?ss={q}&checkin={in}&checkout={out}"
+      why: "Hotels, guest houses and flats near there, with prices for your nights. Check the address against the venue before you book."
+      countries: any
+      section: stay
+    - id: hotels-map
+      label: "Places to stay on a map"
+      url: "https://www.google.com/maps/search/?api=1&query={q_hotels}"
+      why: "Google Maps, to see how far each one is from where you are going."
+      countries: any
+      section: stay
+    - id: yha
+      label: "YHA hostels (England and Wales)"
+      url: "https://www.yha.org.uk/"
+      why: "Hostels in England and Wales. Check the hostel's own page for rooms and ages."
+      countries: [GB]
+      section: stay
+      more: true
+    - id: hostelling-scotland
+      label: "Hostelling Scotland"
+      url: "https://www.hostellingscotland.org.uk/"
+      why: "Hostels across Scotland."
+      countries: [GB]
+      section: stay
+      more: true
+    - id: hi-usa
+      label: "HI USA hostels"
+      url: "https://www.hiusa.org/"
+      why: "Hostelling International hostels in the US."
+      countries: [US]
+      section: stay
+      more: true
+    - id: campsites-map
+      label: "Campsites on a map"
+      url: "https://www.google.com/maps/search/?api=1&query={q_campsites}"
+      why: "Google Maps, for campsites and caravan sites near there."
+      countries: any
+      section: stay
+      more: true
+    - id: eat-map
+      label: "Places to eat nearby"
+      url: "https://www.google.com/maps/search/?api=1&query={q_eat}"
+      why: "Google Maps: restaurants near there."
+      countries: any
+      section: eat
+    - id: cafes-map
+      label: "Cafés nearby"
+      url: "https://www.google.com/maps/search/?api=1&query={q_cafes}"
+      why: "Google Maps: cafés near there, for something lighter."
+      countries: any
+      section: eat

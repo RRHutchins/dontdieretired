@@ -466,4 +466,41 @@ t('a stay in My year: one calendar block, overlaps flagged, flexible steps kept 
   assert.strictEqual(day.DTSTART, '20270814'); assert.strictEqual(day.DTEND, '20270819');
   const w = P.window(fp.plan, { flexible: true, date: '2027-08-20' }, TODAY); assert.strictEqual(w.min, '2027-08-19');
 });
+t('trip day 9: where to stay for a trip away (dated nights), folded for a single day, none for a habit or a local thing; where to eat near the place', () => {
+  const T = data.trip, esc_ = x => x.replace(/[.*+?^$()|[\]\\]/g, '\\$&');
+  const tpl = T.links.flatMap(l => [l.url, l.url_dated].filter(Boolean)).map(u => new RegExp('^' + esc_(u).replace(/\\\{(q(?:_[a-z]+)?)\\\}|\{(q(?:_[a-z]+)?)\}/g, '[^&#]*').replace(/\{(in|out)\}/g, '\\d{4}-\\d{2}-\\d{2}') + '$'));
+  const f = byId['go-to-edinburgh-fringe'];
+  assert.ok(f.place_tied);
+  // a stay over several days: open, the first and last days as the nights, the help names them
+  const r = P.trip(f, data, { place: 'Edinburgh', date: '2027-08-14', until: '2027-08-18', from: '14 August 2027', to: '18 August 2027' });
+  assert.ok(r.away && r.head === T.head_away && r.stay.open);
+  const bk = r.stay.links.find(l => l.id === 'hotels');
+  assert.ok(bk.url.includes('ss=' + encodeURIComponent('Edinburgh, UK')) && bk.url.includes('checkin=2027-08-14') && bk.url.includes('checkout=2027-08-18'));
+  assert.ok(r.stay.help.includes('14 August 2027') && r.stay.help.includes('18 August 2027'));
+  assert.ok(r.stay.more.some(l => l.id === 'yha') && !r.stay.more.some(l => l.id === 'hi-usa'));
+  const all = r.where.concat(r.getting, r.stay.links, r.stay.more, r.eat.links);
+  all.forEach(l => { assert.ok(tpl.some(x => x.test(l.url)), 'not a planner.yaml link: ' + l.url); assert.ok(!/[{}<>"\s]/.test(l.url), l.url); assert.strictEqual(l.aff, null); });
+  assert.ok(r.eat.links.find(l => l.id === 'eat-map').url.endsWith(encodeURIComponent(T.near.eat + ' Edinburgh, UK')));
+  assert.ok(r.eat.help.includes('Edinburgh'));
+  // a single day away: folded, that night
+  const one = P.trip(f, data, { place: 'Edinburgh', date: '2027-08-14' });
+  assert.ok(!one.stay.open && one.stay.links[0].url.includes('checkin=2027-08-14&checkout=2027-08-15') && one.stay.help.includes('14 August 2027'));
+  // a month: no dates in the search
+  const m = P.trip(f, data, { place: 'Edinburgh', date: '2027-08-01', by_month: true });
+  assert.ok(!/checkin|checkout/.test(m.stay.links[0].url) && m.stay.help === T.stay_help_month);
+  // a habit: no stay, no eat; a thing not tied to a place on one day: eat only; but over several days it is away
+  const habit = acts.find(x => x.kind === 'habit' && !x.where), local = acts.find(x => !x.place_tied && x.kind !== 'habit' && !x.where);
+  const h = P.trip(habit, data, { place: 'Leeds', date: '2027-03-01' }); assert.ok(!h.stay && !h.eat && h.head === T.head && !h.away);
+  const lo = P.trip(local, data, { place: 'Leeds', date: '2027-03-01' }); assert.ok(!lo.stay && lo.eat && lo.head === T.head);
+  assert.ok(P.trip(local, data, { place: 'Leeds', date: '2027-03-01', until: '2027-03-03' }).stay.open);
+  // US places get US hostels, not British ones; no place still asks first
+  const us = acts.find(a => !a.where && a.country === 'US' && a.place_tied && a.kind !== 'habit');
+  if (us) { const u = P.trip(us, data, { place: 'Portland, ME', date: '2027-05-01' }); assert.ok(u.stay.more.some(l => l.id === 'hi-usa') && !u.stay.more.some(l => l.id === 'yha')); }
+  const nd = P.trip(f, data, { date: '2027-08-14' }); assert.ok(nd.needs && !nd.stay && nd.head === T.head_away);
+  // every real activity: links only from planner.yaml, never an affiliate id, never a raw placeholder
+  for (const a of acts) {
+    const x = P.trip(a, data, { place: 'Town & "Place"', date: '2027-06-05', until: '2027-06-07' });
+    [].concat(x.where, x.getting, x.stay ? x.stay.links.concat(x.stay.more) : [], x.eat ? x.eat.links : []).forEach(l => { assert.ok(!/[{}<>"\s]/.test(l.url), a.id + ' ' + l.url); assert.strictEqual(l.aff, null); });
+  }
+});
 console.log(n + ' tests passed');

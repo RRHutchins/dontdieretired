@@ -82,12 +82,24 @@
   /* Where it is and getting there (Planner Plus day 8): opens from the day; the place is changed on the activity's plan page */
   function tripHtml(p, s) {
     const T = S.trip, a = p.cid ? byId[p.cid] : null; if (!T || !a) return '';
-    const it = all.items[p.id] || {}, r = P.trip(a, S, Object.assign({ place: it.where || '', when: p.plan.label }, p.plan.until ? { from: P.longDate(p.plan.date), to: P.longDate(p.plan.until) } : {}));
-    let h = '<details class="pl-trip my-trip"><summary>' + esc(T.head) + '</summary>';
+    const it = all.items[p.id] || {}, r = P.trip(a, S, Object.assign({ place: it.where || '', when: p.plan.label, date: p.plan.date, until: p.plan.until, by_month: p.plan.by_month }, p.plan.until ? { from: P.longDate(p.plan.date), to: P.longDate(p.plan.until) } : {}));
+    let h = '<details class="pl-trip my-trip"><summary>' + esc(r.head) + '</summary>';
     if (r.needs) return h + '<p class="meta"><a href="' + link(p) + '">' + esc(T.my_needs) + '</a></p></details>';
     h += '<p class="pl-where"><strong>' + esc(T.where_label) + ':</strong> ' + esc(r.label) + '</p>' + (r.note ? '<p class="pl-detail">' + esc(r.note) + '</p>' : '');
     if (r.source) h += '<p class="meta">' + esc(T.where_source).replace('{label}', '<a href="' + esc(r.source.url) + '" target="_blank" rel="noopener">' + esc(r.source.label) + '</a>').replace('{checked}', esc(P.longDate(r.source.checked))) + '</p>';
-    return h + '<ul class="pl-links">' + r.where.map(linkHtml).join('') + '</ul><p class="pl-wkh">' + esc(T.getting) + '</p><p class="meta">' + esc(r.help) + '</p><ul class="pl-links">' + r.getting.map(linkHtml).join('') + '</ul></details>';
+    return h + '<ul class="pl-links">' + r.where.map(linkHtml).join('') + '</ul><p class="pl-wkh">' + esc(T.getting) + '</p><p class="meta">' + esc(r.help) + '</p><ul class="pl-links">' + r.getting.map(linkHtml).join('') + '</ul>' + stayEatHtml(r, T) + '</details>';
+  }
+  /* Where to stay and where to eat (Planner Plus day 9), as on the activity's plan page */
+  function stayEatHtml(r, T) {
+    let h = '';
+    if (r.stay) {
+      const body = '<p class="meta">' + esc(r.stay.help) + '</p><ul class="pl-links">' + r.stay.links.map(linkHtml).join('') + '</ul>'
+        + (r.stay.more.length ? '<p class="pl-wkh pl-wkh-sub">' + esc(T.stay_more) + '</p><ul class="pl-links">' + r.stay.more.map(linkHtml).join('') + '</ul>' : '');
+      h += r.stay.open ? '<p class="pl-wkh">' + esc(T.stay) + '</p>' + body
+        : '<details class="pl-stay"><summary>' + esc(T.stay) + ': ' + esc(T.stay_fold) + '</summary>' + body + '</details>';
+    }
+    if (r.eat) h += '<p class="pl-wkh">' + esc(T.eat) + '</p><p class="meta">' + esc(r.eat.help) + '</p><ul class="pl-links">' + r.eat.links.map(linkHtml).join('') + '</ul>';
+    return h;
   }
   function stepHtml(s, n) {
     const p = planOf(s.pid), gone = s.date < today && !s.done, uid = 'my-s' + n;
