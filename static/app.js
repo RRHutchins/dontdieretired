@@ -211,7 +211,7 @@
     const u = new URL(href), ex = (window.DDR.experiences || {});
     if (kind === 'amazon' && u.hostname.includes('amazon.')) {
       if (isUS && u.hostname.endsWith('amazon.co.uk')) { u.hostname = 'www.amazon.com'; u.searchParams.delete('tag'); }
-      if (!u.searchParams.get('tag')) u.searchParams.set('tag', u.hostname.endsWith('amazon.com') ? DDR.affiliateTagUS : DDR.affiliateTagUK);
+      if (!u.searchParams.get('tag')) { const t = u.hostname.endsWith('amazon.com') ? DDR.affiliateTagUS : DDR.affiliateTagUK; if (t) u.searchParams.set('tag', t); }
     }
     if (kind === 'viator' && ex.viator) { u.searchParams.set('pid', ex.viator); u.searchParams.set('mcid', '42383'); u.searchParams.set('medium', 'link'); }
     if (kind === 'getyourguide' && ex.getyourguide) u.searchParams.set('partner_id', ex.getyourguide);
@@ -220,7 +220,7 @@
     try { const u = new URL(a.href);
       if (u.hostname.includes('amazon.')) {
         if (isUS && u.hostname.endsWith('amazon.co.uk')) { u.hostname = 'www.amazon.com'; u.searchParams.delete('tag'); }
-        if (!u.searchParams.get('tag')) u.searchParams.set('tag', u.hostname.endsWith('amazon.com') ? DDR.affiliateTagUS : DDR.affiliateTagUK);
+        if (!u.searchParams.get('tag')) { const t = u.hostname.endsWith('amazon.com') ? DDR.affiliateTagUS : DDR.affiliateTagUK; if (t) u.searchParams.set('tag', t); }
         a.href = u.toString(); } } catch {}
     a.addEventListener('click', () => track('affiliate_click', { url: a.href, level: (readProfile().level || 'none'), region: document.body.dataset.region }));
   });

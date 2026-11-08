@@ -41,8 +41,8 @@ ads:
     footer: ""
 
 affiliates:
-  amazon_uk_tag: "dontdieretired-21"         # Amazon Associates UK tracking id
-  amazon_us_tag: "dontdieretired-20"
+  amazon_uk_tag: "norofico-21"              # Amazon Associates UK tracking id (Robin, 8 Nov 2026)
+  amazon_us_tag: ""                         # no Amazon US (Associates US) id yet; "" = US readers get amazon.com untagged
   viator_pid: "P00328792"                           # Viator Partner Program id (experiences/lessons); appended to local listings marked aff: viator
   getyourguide_partner_id: "NQBPMKU"                # GetYourGuide Partner id; appended to listings marked aff: getyourguide
   disclosure: "Some links on this page are affiliate links. If you buy through them we may earn a small commission at no extra cost to you. They are options to start you off, not things we have tested, so check they suit you before you buy."
@@ -72,7 +72,7 @@ books:
     title: "The Don't Die Retired Christmas Puzzle Book"
     short: "Christmas Puzzle Book"
     asin: "B0HPMJKZ7J"
-    amazon: "https://www.amazon.co.uk/dp/B0HPMJKZ7J?tag=dontdieretired-21"
+    amazon: "https://www.amazon.co.uk/dp/B0HPMJKZ7J?tag=norofico-21"
     live_since: "2026-10-29"                 # Robin confirmed the listing is live, 29 Oct 2026
     until: "2026-12-25"
     cover: "/static/img/books/christmas.png"
