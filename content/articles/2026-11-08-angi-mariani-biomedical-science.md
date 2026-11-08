@@ -9,6 +9,9 @@ level: any
 subject_age: 60
 seo_title: "From music bar to lab: Angi Mariani's science degree"
 art: city
+photo_file: "File:RS1497 Waterfront location (32)-lpr.jpg"
+photo_caption: "The University of Suffolk's Waterfront campus seen across the marina in Ipswich, 2020."
+photo_alt: "Yachts moored in a marina under a blue sky, with brick flats and a large curved building clad in grey and white panels behind."
 hook: "Six years of part-time study, much of it on the train from Brighton to Ipswich, ended in a first-class science degree."
 lesson: "A long course becomes possible when it is built into the week you already have: the commute, the job, the people who will help."
 standfirst: "Angi Mariani, 60, ran a Brighton music bar for 17 years and helped start a local TV channel. Last month she graduated from the University of Suffolk with a first in biomedical science, studied part-time over six years while she worked in a hospital laboratory."
