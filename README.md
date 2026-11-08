@@ -481,7 +481,7 @@ ads:
 
 affiliates:
   amazon_uk_tag: "norofico-21"         # Amazon Associates UK tracking id
-  amazon_us_tag: ""
+  amazon_us_tag: "norofico-20"
   disclosure: "Some links on this page are affiliate links. If you buy through them we may earn a small commission at no extra cost to you. We only recommend things we would use ourselves."
 
 newsletter:
