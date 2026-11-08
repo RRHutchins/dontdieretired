@@ -1666,21 +1666,35 @@
   regions:
   - uk
   - us
-  why: Standing on a board gives you a view down into the water and across it that you never get from a kayak or the bank. Most people are up and paddling within their first session on calm water.
+  why: Standing up gives you a higher view down into the water and across it than you get sitting in a kayak. The Canal & River Trust says most people are standing up by the end of their first taster session,
+    which usually lasts one to two hours.
   start:
-  - Find a hire centre, club or instructor through Go Paddling or the American Canoe Association.
-  - Book a beginner session on sheltered, flat water.
-  - Start on your knees, stand when you feel steady and wear the buoyancy aid and leash provided.
+  - Find a club, centre or route on Go Paddling's PaddlePoints map, or a class through the American Canoe Association.
+  - Book a beginner session on sheltered, flat water; a club arranges the licence and lends you a buoyancy aid.
+  - Before you go out on your own, check whether the water needs a licence and which leash suits it, and look at the wind forecast.
   links:
-  - label: Go Paddling (powered by Paddle UK)
-    url: https://gopaddling.info/
+  - label: 'Go Paddling: how to use PaddlePoints'
+    url: https://gopaddling.info/blog/explore/how-to-use-paddlepoints/
     region: uk
-    checked: '2026-10-06'
-  - label: American Canoe Association
-    url: https://americancanoe.org/
+    checked: '2026-11-08'
+  - label: 'Canal & River Trust: A beginner''s guide to paddleboarding'
+    url: https://canalrivertrust.org.uk/things-to-do/canoeing-and-kayaking-near-me/starting-canoeing-kayaking-or-paddleboarding/a-beginners-guide-to-paddleboarding
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Paddle UK: Do I need a waterways licence to paddle?'
+    url: https://paddleuk.org.uk/do-i-need-a-waterways-licence-to-paddle/
+    region: uk
+    checked: '2026-11-08'
+  - label: 'American Canoe Association: take a paddling class'
+    url: https://americancanoe.org/education/take-a-paddling-class/
     region: us
-    checked: '2026-10-06'
-  safety: Wear a buoyancy aid and a leash, and avoid offshore winds, which can carry a board away from land.
+    checked: '2026-11-08'
+  - label: 'US Coast Guard Boating Safety: frequently asked questions'
+    url: https://uscgboating.org/content/frequently-asked-questions.php
+    region: us
+    checked: '2026-11-08'
+  safety: Always wear a buoyancy aid and the right leash for the water, avoid offshore winds and carry a way to call for help; in the UK, if you see anyone in difficulty on the sea, call 999 and ask for
+    the Coastguard.
   kit:
   - name: Buoyancy aid
     why: hire centres and clubs often lend one; buy your own once you paddle often, sized for your weight
@@ -1691,6 +1705,143 @@
   - name: Board leash
     why: keeps the board close if you fall off; the right type depends on where you paddle
     url: https://www.amazon.co.uk/s?k=paddle+board+leash
+  inspire:
+  - kind: read
+    person: Lizzie Carr
+    line: Paddleboarded 400 miles (about 644 km) of England's canals and rivers in 22 days, from the River Wey in Surrey to the top of the Lancaster Canal, to draw attention to plastic pollution.
+    title: 'An adventure on home turf: paddleboarding the length of England'
+    outlet: Countryfile
+    url: https://www.countryfile.com/go-outdoors/get-active/an-adventure-on-home-turf-paddleboarding-the-length-of-england
+    checked: '2026-11-08'
+  seo_title: 'Paddleboarding for beginners: lessons, licences and leashes'
+  description: How to start stand-up paddleboarding, with lessons in the UK and US, where you need a licence, which leash to use on which water, and the main risks.
+  detail:
+  - h: What it's really like
+    p:
+    - A first session is usually a one to two hour taster with a club or centre. The Canal & River Trust says it normally covers water safety, standing up, basic paddling and how to get back on the board,
+      and that standing up is the hardest part. Most people manage it by the end of the session.
+    - Go Paddling suggests beginners use an inflatable or a wide, stable hard board, and a paddle about 6 to 8 inches (15 to 20 cm) taller than you. Wear clothes you do not mind getting wet, layers when
+      it is cooler, neoprene shoes for warm feet, and pack spare clothes in a waterproof bag. Paddle UK says a buoyancy aid is essential wherever you paddle.
+  - h: Where to paddle, and the rules for each
+    table:
+      head:
+      - Water
+      - Licence or rule
+      - Leash (Paddle UK)
+      - Main risk
+      rows:
+      - - Canal
+        - Licence needed on Canal & River Trust canals; Paddle UK membership covers it. Paddleboards are not allowed through locks, so you carry round, and some tunnels and aqueducts are closed to them
+        - Coiled ankle or calf leash
+        - Locks, tunnels and boat traffic
+      - - Managed river (non-tidal)
+        - Licence needed on many managed rivers in England and Wales, including Environment Agency waters; Paddle UK membership covers them
+        - Quick-release waist belt
+        - Weirs, low bridges, and fixed obstacles such as pontoons, moored boats and buoys
+      - - Tidal river or estuary
+        - On the Thames, the Port of London Authority requires a quick-release waist belt rather than an ankle leash
+        - Quick-release waist belt
+        - Tidal flow, which Paddle UK says can be deceptive around slack water at high and low tide
+      - - White water (grades 1 to 6)
+        - Paddle UK recommends no leash at all
+        - No leash
+        - Snagging or entrapment in fast water
+      - - Lake or broad
+        - The Broads Authority's waters are covered by Paddle UK membership; a Canal & River Trust licence does not cover the Trust's reservoirs, though the Trust says some have sailing clubs you may be
+          able to join
+        - Coiled ankle or calf leash
+        - Ferries and other boats on busy lakes such as Windermere
+      - - Sea
+        - The RNLI says wear a flotation device and a leash, avoid offshore winds and carry a means of calling for help
+        - Coiled ankle or calf leash
+        - Offshore wind
+    after: Paddle UK's "On the Water" membership means you do not need to license your board with the Canal & River Trust, the Environment Agency, the Broads Authority, the Basingstoke Canal, the Cam Conservators
+      or the Avon Navigation Trust. For Welsh canals and rivers, the Trust points paddlers to Canoe Wales membership. Without a valid licence you can be fined up to £1,000 or have your board removed.
+  - h: Which leash, where
+    table:
+      head:
+      - Leash
+      - Where Paddle UK says to use it
+      - Why
+      rows:
+      - - Coiled leash on the ankle or calf
+        - Lakes, canals, sea, coastal bays and surf where there is no risk of snagging
+        - Paddle UK says a coiled leash is normally preferred for general paddleboarding
+      - - Straight leash on the ankle or calf
+        - Mainly surfing
+        - Paddle UK says straight leashes are mainly for surfing
+      - - Coiled leash on a quick-release waist belt
+        - Rivers, tidal rivers, estuaries and tidal races
+        - Paddlers have hit pontoons, moored boats and buoys in moving water and could not free themselves
+      - - No leash
+        - White water rivers, grades 1 to 6
+        - Paddle UK's recommendation for all white water
+    after: Wear the waist belt below your buoyancy aid, or high on the chest if worn on top of it. If you use an ankle leash, put it on the same leg every time so you know which side to reach for.
+  - h: Paddleboarding in the US
+    p:
+    - The US Coast Guard says a paddleboard used beyond the narrow limits of a swimming, surfing or bathing area counts as a vessel, and so, under its federal rules, you need to carry a life jacket on it.
+      Its federal guide says every recreational vessel must carry one wearable life jacket for each person on board, and that some states require all vessels to be registered, including those propelled
+      by hand, so check with your state boating agency.
+    - The American Canoe Association runs a course calendar and an instructor finder. Its Level 1 Introduction to SUP course teaches safety, gear and techniques for staying on the board on flat water.
+  faq:
+  - q: Do I need a licence to paddleboard on a canal?
+    a: Yes. The Canal & River Trust says you need a licence on its canals. A club arranges it for you; on your own, Paddle UK membership covers it, or Trust licences start from around £5 a day, as last
+      listed.
+  - q: How long does it take to learn to paddleboard?
+    a: The Canal & River Trust says taster sessions usually last one to two hours and most people are standing up by the end of the first one.
+  - q: What leash should I use for paddleboarding on a river?
+    a: Paddle UK recommends a coiled leash on a quick-release waist belt on rivers, tidal rivers and estuaries. On white water rivers it recommends no leash at all.
+  - q: Can you paddleboard through a canal lock?
+    a: No. The Canal & River Trust does not allow paddleboards through locks, so you carry your board round and get back on beyond the lock.
+  - q: Do you need a life jacket on a paddleboard in the US?
+    a: Yes, once you are beyond a swimming, surfing or bathing area. The US Coast Guard counts a paddleboard as a vessel there.
+  - q: What should I do if someone is in trouble at sea?
+    a: The RNLI says that if you see anyone in difficulty on the sea, call 999 and ask for the Coastguard.
+  sources:
+  - label: Canal & River Trust, A beginner's guide to paddleboarding
+    url: https://canalrivertrust.org.uk/things-to-do/canoeing-and-kayaking-near-me/starting-canoeing-kayaking-or-paddleboarding/a-beginners-guide-to-paddleboarding
+    checked: '2026-11-08'
+  - label: Canal & River Trust, Small craft licence
+    url: https://canalrivertrust.org.uk/enjoy-the-waterways/canoeing-and-kayaking-near-me/licensing-your-canoe
+    checked: '2026-11-08'
+  - label: Paddle UK, Do I need a waterways licence to paddle?
+    url: https://paddleuk.org.uk/do-i-need-a-waterways-licence-to-paddle/
+    checked: '2026-11-08'
+  - label: Paddle UK, SUP safety, choosing the right leash
+    url: https://paddleuk.org.uk/stand-up-paddleboard-sup-safety-choosing-the-right-leash/
+    checked: '2026-11-08'
+  - label: Go Paddling, Stand up paddleboarding gear for beginners
+    url: https://gopaddling.info/blog/tips-and-advice/stand-up-paddleboarding-gear-for-beginners/
+    checked: '2026-11-08'
+  - label: Go Paddling, Where to SUP near me?
+    url: https://gopaddling.info/blog/tips-and-advice/where-to-sup-near-me/
+    checked: '2026-11-08'
+  - label: Go Paddling, How to use PaddlePoints
+    url: https://gopaddling.info/blog/explore/how-to-use-paddlepoints/
+    checked: '2026-11-08'
+  - label: RNLI, Penlee RNLI support for paddle boarders (safety advice)
+    url: https://rnli.org/news-and-media/2026/april/09/penlee-rnli-support-for-paddle-boarders
+    checked: '2026-11-08'
+  - label: US Coast Guard Boating Safety, frequently asked questions
+    url: https://uscgboating.org/content/frequently-asked-questions.php
+    checked: '2026-11-08'
+  - label: US Coast Guard, A boater's guide to the federal requirements for recreational boats
+    url: https://www.uscgboating.org/assets/1/AssetManager/Boaters-Guide-to-Federal-Requirements-for-Receational-Boats-20231108.pdf
+    checked: '2026-11-08'
+  - label: American Canoe Association, Take a paddling class
+    url: https://americancanoe.org/education/take-a-paddling-class/
+    checked: '2026-11-08'
+  - label: American Canoe Association, Level 1 Introduction to SUP skills course
+    url: https://americancanoe.org/event/level-1-introduction-to-sup-skills-course/
+    checked: '2026-11-08'
+  - label: 'Countryfile, An adventure on home turf: paddleboarding the length of England'
+    url: https://www.countryfile.com/go-outdoors/get-active/an-adventure-on-home-turf-paddleboarding-the-length-of-england
+    checked: '2026-11-08'
+  related:
+  - learn-to-kayak
+  - canoe-a-river-trail
+  - wild-swim
+  - open-water-swim
 - id: scottish-country-dancing
   title: Go to a Scottish country dance class
   category: move
@@ -1876,21 +2027,29 @@
   regions:
   - uk
   - us
-  why: Played with a solid paddle and a perforated ball on a small court, pickleball is quick to pick up and produces long, lively rallies. Doubles is the usual format, so you meet people from the first
-    game.
+  why: Played with a solid paddle and a plastic ball full of holes on a small court with a low net, pickleball is quick to pick up and produces long, lively rallies. It is often played as doubles, so you
+    meet people from the first game.
   start:
-  - Find a club or court through Pickleball England or USA Pickleball's places to play page.
-  - Look for a taster or open play session where paddles are provided.
-  - Learn the serve and the kitchen rule, then join a doubles game.
+  - Find a club or court through Pickleball England, the LTA's pickleball courts page or USA Pickleball's places to play page.
+  - Ask the venue about a taster or open play session, and whether paddles and balls are provided.
+  - Learn three rules before you go, the underhand serve, the two-bounce rule and the kitchen, then join a doubles game.
   links:
   - label: Pickleball England
-    url: https://www.pickleballengland.org/
+    url: https://pickleballengland.org/
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-08'
+  - label: 'LTA: Pickleball courts in Britain'
+    url: https://www.lta.org.uk/play/ways-to-play/pickleball/pickleball-courts-in-britain/
+    region: uk
+    checked: '2026-11-08'
   - label: 'USA Pickleball: places to play'
     url: https://usapickleball.org/places-to-play/
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-08'
+  - label: 'USA Pickleball: basic rules summary (PDF)'
+    url: https://usapickleball.org/docs/rules/USAP-Rules-Summary.pdf
+    region: any
+    checked: '2026-11-08'
   kit:
   - name: Pickleball paddle set
     why: a starter set has paddles and balls to try with a friend
@@ -1906,6 +2065,129 @@
     outlet: WTVR CBS 6 News
     url: https://www.wtvr.com/community/a-list-events/how-this-60-year-old-is-taking-a-new-popular-sport-by-storm
     checked: '2026-11-07'
+  seo_title: 'How to play pickleball: the rules for beginners explained'
+  description: How to play pickleball, with the serve, two-bounce rule, kitchen and 0-0-2 score call explained, and the court compared with tennis and badminton.
+  detail:
+  - h: What it's really like
+    p:
+    - Pickleball was invented in 1965 on Bainbridge Island, Washington, by three fathers, Joel Pritchard, Bill Bell and Barney McCallum, who used ping-pong paddles, a wiffle ball and a lowered badminton
+      net. The game still feels like that mix. Paddles are solid, with no strings, and the plastic ball has 26 to 40 holes, so it bounces lower than a tennis ball.
+    - The court is 20 feet wide by 44 feet long (6.1 by 13.4 metres), the same for singles and doubles, and the LTA says up to four pickleball courts fit on one tennis court. The net is lower than a tennis
+      net, which the LTA says makes it easier for beginners to get the ball over. Alongside the usual groundstrokes and volleys there is the dink, a very soft shot played near the net or in the kitchen,
+      much like a tennis drop shot.
+  - h: Pickleball, tennis and badminton compared
+    table:
+      head:
+      - Sport
+      - Court (doubles)
+      - Net height at the centre
+      - Ball
+      - Scoring
+      rows:
+      - - Pickleball
+        - 20 x 44 ft (6.1 x 13.4 m); the same court for singles
+        - 34 in (0.86 m); 36 in (0.91 m) at the sidelines
+        - Plastic, with 26 to 40 holes
+        - Games to 11, win by 2; only the serving side scores in the traditional format
+      - - Tennis
+        - 23.77 x 10.97 m (78 x 36 ft); 8.23 m wide for singles
+        - 0.91 m (3 ft); 1.07 m (3 ft 6 in) at the posts
+        - Pressurised rubber with a felt cover
+        - Points go 15, 30, 40, game; a set is six games with a two-game lead
+      - - Badminton
+        - 13.4 x 6.1 m (44 x 20 ft); 5.18 m wide for singles
+        - 1.524 m (5 ft); 1.55 m over the doubles sidelines
+        - Shuttle of 16 feathers, or synthetic
+        - Games to 21 with a point on every rally, win by 2, capped at 30; best of three games
+    after: A pickleball court is almost exactly the size of a badminton doubles court. Badminton's scoring is changing. USA Badminton reports that the Badminton World Federation voted to adopt a 3 x 15
+      system, which comes into effect on 4 January 2027.
+  - h: The rules a beginner needs
+    list:
+    - The serve is underhand. The arm must move in an upward arc, with contact no higher than the waist with the paddle head no higher than the wrist, or you can drop the ball and hit it after it bounces.
+      Keep at least one foot behind the baseline, serve diagonally across the court, and you get one attempt.
+    - The serve must clear the kitchen. A serve that touches the kitchen line is short, and a fault. Any other ball touching a line is in.
+    - The two-bounce rule. The receiving side must let the serve bounce, and the serving side must let the return bounce. After those two bounces, either side may volley (hit the ball before it bounces)
+      or play it off the bounce.
+    - The kitchen. The non-volley zone runs 7 feet (2.13 metres) from the net on each side. You cannot volley while standing in it or on its line, or if your momentum carries you into it after a volley.
+      You can step in to play a ball that has bounced.
+    - Faults include hitting into the net or out, volleying before both bounces, letting the ball bounce twice, and touching the net or posts while the ball is in play.
+  - h: How the score is called, and why it starts at 0-0-2
+    p:
+    - In doubles the score has three numbers, called before each serve, the serving side's score, the receiving side's score, then the server number, 1 or 2. The LTA's example is 5-3-2, which means the
+      serving side leads 5-3 and its second server is serving.
+    - Both partners serve in turn before the serve passes to the other side, which is called a side-out. The exception is the first serve of the game, when the serving side gets only one server, which is
+      why USA Pickleball says a game traditionally starts with the call "0-0-2". You serve from the right-hand court when your side's score is even and from the left when it is odd. Only the serving side
+      scores in this traditional format; USA Pickleball's summary also describes rally scoring, where a point goes to whoever wins each rally.
+  - h: Where to find a game
+    table:
+      head:
+      - Where
+      - What you will find
+      - Cost (as last listed)
+      rows:
+      - - Pickleball England (England)
+        - The national body's club locator, outdoor courts list and taster sessions
+        - Not listed; set by each club
+      - - LTA (Britain)
+        - Its pickleball courts page says there are over 270 venues in the UK, and suggests asking your local tennis club or venue
+        - Not listed; set by each venue
+      - - USA Pickleball (US)
+        - Its official court and game finder, run by Pickleheads, with open play times
+        - Not listed; set by each court
+    after: A tennis court can be turned into a pickleball court. The LTA's method uses the tennis net lowered to 34 inches (86.36 cm) at the centre, with cones or markers for the 44 x 20 foot court.
+  faq:
+  - q: What is the kitchen rule in pickleball?
+    a: The kitchen is the non-volley zone, 7 feet (2.13 metres) from the net on each side. You cannot volley from inside it or on its line, but you can step in to play a ball after it has bounced.
+  - q: What does 0-0-2 mean in pickleball?
+    a: It is the doubles score call at the start of a game, the serving side's score, the receiving side's score and the server number. The first serving side gets only one server, so the game starts on
+      server 2.
+  - q: What is the two-bounce rule in pickleball?
+    a: After the serve, the receiving side must let the ball bounce, and then the serving side must let the return bounce. Only after those two bounces can anyone volley.
+  - q: How many points is a game of pickleball?
+    a: Most games are played to 11 points, and you must win by 2. Tournament games may go to 15 or 21, still won by 2.
+  - q: How big is a pickleball court?
+    a: 20 feet wide by 44 feet long (6.1 by 13.4 metres), the same for singles and doubles. The net is 34 inches (0.86 metres) high at the centre and 36 inches (0.91 metres) at the sidelines.
+  - q: Can you play pickleball on a tennis court?
+    a: Yes. The LTA says up to four pickleball courts fit on one tennis court, using the tennis net lowered to 34 inches at the centre and cones or markers for the lines.
+  sources:
+  - label: USA Pickleball, basic rules summary
+    url: https://usapickleball.org/docs/rules/USAP-Rules-Summary.pdf
+    checked: '2026-11-08'
+  - label: USA Pickleball, What is pickleball?
+    url: https://usapickleball.org/what-is-pickleball/
+    checked: '2026-11-08'
+  - label: USA Pickleball, How to play pickleball
+    url: https://usapickleball.org/strategies/how-to-play-pickleball/
+    checked: '2026-11-08'
+  - label: USA Pickleball, places to play
+    url: https://usapickleball.org/places-to-play/
+    checked: '2026-11-08'
+  - label: Pickleball England
+    url: https://pickleballengland.org/
+    checked: '2026-11-08'
+  - label: LTA, Tennis vs pickleball
+    url: https://www.lta.org.uk/play/ways-to-play/pickleball/tennis-vs-pickleball/
+    checked: '2026-11-08'
+  - label: LTA, Pickleball courts in Britain
+    url: https://www.lta.org.uk/play/ways-to-play/pickleball/pickleball-courts-in-britain/
+    checked: '2026-11-08'
+  - label: LTA, recommended tennis court dimensions
+    url: https://www.lta.org.uk/support-centre/venue-support/facilities-and-funding/facilities-support/what-are-the-lta-recommended-court-dimensions/
+    checked: '2026-11-08'
+  - label: LTA, Tennis vs badminton
+    url: https://www.lta.org.uk/play/tennis-vs-badminton/
+    checked: '2026-11-08'
+  - label: Badminton World Federation, Laws of Badminton
+    url: https://system.bwfbadminton.com/documents/folder_1_81/Statutes/CHAPTER-4---RULES-OF-THE-GAME/SECTION%204.1-%20Laws%20of%20Badminton.pdf
+    checked: '2026-11-08'
+  - label: USA Badminton, BWF approves 3x15 scoring system
+    url: https://usabadminton.org/bwf-approves-3x15-scoring-system/
+    checked: '2026-11-08'
+  related:
+  - play-tennis
+  - play-table-tennis
+  - walking-netball
+  - walking-football
 - id: learn-to-sail
   title: Learn to sail a dinghy
   category: move
@@ -2529,17 +2811,51 @@
   regions:
   - uk
   - us
-  why: Swimming in a river, lake or the sea puts you inside the landscape instead of looking at it. The Outdoor Swimming Society's guidance covers everything a newcomer needs to choose a spot and get in well.
+  why: Swimming in a river, lake or the sea puts you inside the landscape instead of looking at it. England alone has 464 designated bathing waters, tested from mid-May to the end of September, and you
+    can check each one's water quality before you set off.
   start:
-  - Read the Outdoor Swimming Society's getting started and cold water advice.
-  - Choose a known swimming spot with an easy way in and out.
-  - Go with an experienced swimmer, enter slowly and keep the first swim short.
+  - Read the Outdoor Swimming Society's beginners' guide and the RNLI's Float to Live advice.
+  - Choose a lifeguarded beach or a managed open water venue, and check the water quality on Swimfo or the Safer Seas & Rivers Service before you go.
+  - Go with someone, enter slowly, take a minute for your breathing to settle and keep the first swim short.
   links:
-  - label: Outdoor Swimming Society
-    url: https://www.outdoorswimmingsociety.com/
+  - label: 'Outdoor Swimming Society: expert tips for beginner swimmers'
+    url: https://www.outdoorswimmingsociety.com/beginners-guide-to-outdoor-swimming/
     region: uk
-    checked: '2026-10-06'
-  safety: 'Cold water can incapacitate quickly: never swim alone, enter slowly, know your exit point and stay close to the bank.'
+    checked: '2026-11-08'
+  - label: 'Outdoor Swimming Society: risks of cold water'
+    url: https://www.outdoorswimmingsociety.com/risks-cold-water/
+    region: uk
+    checked: '2026-11-08'
+  - label: 'RNLI: Float to Live'
+    url: https://rnli.org/float
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Swim England: open water safety'
+    url: https://www.swimming.org/openwater/open-water-safety/
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Environment Agency Swimfo: find a bathing water (England)'
+    url: https://environment.data.gov.uk/bwq/profiles/
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Surfers Against Sewage: Safer Seas & Rivers Service'
+    url: https://www.sas.org.uk/safer-seas-service
+    region: uk
+    checked: '2026-11-08'
+  - label: 'US EPA: state and local beach programs (beach advisories and closings)'
+    url: https://www.epa.gov/beaches/state-and-local-beach-programs
+    region: us
+    checked: '2026-11-08'
+  - label: 'U.S. Masters Swimming: safety tips for open water swimming'
+    url: https://www.usms.org/fitness-and-training/articles-and-videos/articles/safety-tips-for-open-water-swimming
+    region: us
+    checked: '2026-11-08'
+  - label: 'National Weather Service: rip current safety'
+    url: https://weather.gov/news/242205-rip-current-safety
+    region: us
+    checked: '2026-11-08'
+  safety: Water below 15°C (59°F) can make you gasp and lose control of your breathing, so never swim alone, enter slowly, stay within your depth and, in the UK, call 999 or 112 and ask for the Coastguard
+    if anyone gets into trouble (911 in the US).
   story: amy-gubser-golden-gate-farallon-swim-55
   kit:
   - name: Bright tow float
@@ -2554,6 +2870,144 @@
   - name: Flask
     why: a hot drink after a cold swim or a long watch
     url: https://www.amazon.co.uk/s?k=vacuum+flask
+  seo_title: 'Wild swimming for beginners: where to go, how to stay safe'
+  description: Wild swimming for beginners in the sea, rivers and lakes, with the risks of each, cold water shock, and how to check water quality in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - The first thing you notice is the cold. The RNLI counts anything below 15°C (59°F) as cold water, and gives the average sea temperature around the UK and Ireland as 12°C (about 54°F). In winter the
+      sea falls to 6 to 10°C (43 to 50°F) and is coldest around March. Swim England warns that open water can be very cold even on hot days, and that deeper water is colder.
+    - The shock passes. The RNLI says the first gasping and fast breathing settle in less than a minute, which is why its advice is to take a minute before you try to swim. The Outdoor Swimming Society
+      says it is much easier to start in summer, and its advice for a first swim is to keep it very short and get out while you are still enjoying it. Getting used to the cold can take a few swims, or weeks
+      to months.
+  - h: 'Where to swim: sea, river, lake or venue'
+    table:
+      head:
+      - Where
+      - Main risks
+      - What to check before you get in
+      rows:
+      - - Sea
+        - Tides, rip currents and waves; the water is cold for most of the year
+        - Tide times, weather and wave height. The Outdoor Swimming Society suggests swimming on an incoming tide; the RNLI says stay within your depth and swim parallel to the shore.
+      - - River
+        - Fast or high water, weirs, sluices and locks, and pollution washed in by rain
+        - The level and flow, which may be higher and faster after rain. Plan your exit, and stay well clear of weirs, sluices and locks.
+      - - Lake or reservoir
+        - Deeper water is colder; underwater objects you cannot see
+        - Safety signs, which you should follow. Stay near the shore.
+      - - Managed open water venue
+        - Fewer unknowns, as staff can give safety advice and help you get used to open water
+        - The water temperature. Swim England says open water swimming should be in water of 11°C (52°F) or above unless you are an experienced cold water swimmer.
+    after: Kate Rew of the Outdoor Swimming Society puts it plainly, that there is no such thing as a safe swim spot, only a safe swimmer. Swim England advises swimming under lifeguard supervision until
+      you are a competent open water swimmer, and starting at an accredited or recognised venue where staff can advise you.
+  - h: How to check the water quality
+    table:
+      head:
+      - Where
+      - Service
+      - What it tells you
+      rows:
+      - - England
+        - Environment Agency Swimfo
+        - Weekly water quality from May to September for each of England's 464 designated bathing waters, an annual rating of excellent, good, sufficient or poor, daily pollution risk forecasts at some
+          sites, and a flag where there is advice against bathing.
+      - - Wales, Scotland and Northern Ireland
+        - Natural Resources Wales, SEPA and DAERA
+        - Each runs its own bathing water results; Swimfo links to all three.
+      - - England, Scotland and Wales
+        - Surfers Against Sewage, Safer Seas & Rivers Service (free app)
+        - Alerts when sewer overflows discharge sewage at more than 390 beaches, plus daily pollution risk forecasts for 200 locations and some rivers.
+      - - United States
+        - EPA BEACON, and your state, Tribal or territorial beach program
+        - State-reported beach monitoring, advisories and closings. Reports can reach EPA days to months late, so for a particular beach the EPA points you to the local program's contact or monitoring website.
+    after: Rivers and lakes that are not designated bathing waters are not regularly tested against bathing standards, so the Environment Agency says the risks are less certain there. Both it and the Outdoor
+      Swimming Society advise against swimming after recent heavy rain; the society suggests waiting a couple of days, covering cuts and washing your hands before you eat.
+  - h: Getting in and getting out
+    list:
+    - Get warm before you start. Swimmers interviewed by the Outdoor Swimming Society suggest warm clothes, a hot water bottle or a short jog, with your kit laid out ready.
+    - Walk in gradually rather than jumping, and stay in the shallows until your breathing is under control.
+    - If the cold takes your breath, float. The RNLI's Float to Live advice is to tilt your head back with your ears under, relax and control your breathing, and move your hands and legs gently. Your legs
+      may sink, and that is fine.
+    - Wear a bright swim hat so boats and others can see you; the RNLI also suggests considering a tow float. In a current, be ready to release the float quickly.
+    - Know that it can catch up with you. After a couple of minutes you may feel comfortable, then grow cold again; your muscles weaken and your hands stop working well. One swimmer interviewed by the society,
+      Calum Maclean, gets out when his little finger stops working with the rest of his hand.
+    - Get dry, dressed and warm as soon as you are out. You can feel colder after leaving the water than in it, an effect called afterdrop.
+  - h: If something goes wrong
+    p:
+    - In the UK, call 999 or 112 and ask for the Coastguard. In the US, the National Weather Service says that if no lifeguard is present you should call 911, so make sure someone in your group has a phone.
+    - If a current carries you, the Outdoor Swimming Society says lie on your back, feet first and out in front, and stay calm. Caught in a rip, the National Weather Service and U.S. Masters Swimming both
+      say do not swim against it. The weather service says swim parallel to the shore until it weakens; U.S. Masters Swimming says ride it until it weakens, then swim out parallel to the shore. If someone
+      else is in trouble, throw them something that floats; the weather service warns that many people have died trying to rescue rip current victims, and never to go in without a flotation device.
+  faq:
+  - q: Is wild swimming safe for beginners?
+    a: It carries real risks, mainly from cold water. Swim England advises beginners to swim under lifeguard supervision, at an accredited or recognised venue, never alone, and to tell someone where they
+      are going.
+  - q: How cold is the sea in the UK?
+    a: The RNLI gives the average as 12°C (about 54°F), falling to 6 to 10°C (43 to 50°F) in winter and coldest around March. It counts anything below 15°C (59°F) as cold water.
+  - q: What is cold water shock?
+    a: A gasp reflex and fast, uncontrolled breathing when you hit cold water, with a quick rise in heart rate and blood pressure. The RNLI says the first effects pass in less than a minute, so float and
+      wait for your breathing to settle.
+  - q: How do I know if the water is clean enough to swim in?
+    a: In England, look up the spot on the Environment Agency's Swimfo or the Safer Seas & Rivers Service app. In the US, check your state's beach program. Everywhere, avoid swimming after heavy rain.
+  - q: Do I need a wetsuit for wild swimming?
+    a: No. The Outdoor Swimming Society says you need very little to start, though the RNLI suggests considering a wetsuit for warmth and buoyancy. A bright swim hat and a tow float help others see you.
+  - q: Who do I call if someone gets into trouble in the water?
+    a: In the UK, call 999 or 112 and ask for the Coastguard. In the US, call 911.
+  sources:
+  - label: Outdoor Swimming Society, Expert tips for beginner swimmers
+    url: https://www.outdoorswimmingsociety.com/beginners-guide-to-outdoor-swimming/
+    checked: '2026-11-08'
+  - label: Outdoor Swimming Society, Risks of cold water
+    url: https://www.outdoorswimmingsociety.com/risks-cold-water/
+    checked: '2026-11-08'
+  - label: RNLI, Float to Live
+    url: https://rnli.org/float
+    checked: '2026-11-08'
+  - label: RNLI, RNLI reminds New Year dippers and open water swimmers of risks (30 December 2025)
+    url: https://rnli.org/news-and-media/2025/december/30/rnli-reminds-new-year-dippers-and-open-water-swimmers-of-risks
+    checked: '2026-11-08'
+  - label: Swim England, Open water safety
+    url: https://www.swimming.org/openwater/open-water-safety/
+    checked: '2026-11-08'
+  - label: Environment Agency blog, Helping you choose where and when to swim in open water (9 July 2026)
+    url: https://environmentagency.blog.gov.uk/2026/07/09/get-the-most-out-of-a-visit-to-a-beach-lake-or-river/
+    checked: '2026-11-08'
+  - label: Environment Agency, Swimfo
+    url: https://environment.data.gov.uk/bwq/profiles/
+    checked: '2026-11-08'
+  - label: Surfers Against Sewage, What is the Safer Seas & Rivers Service?
+    url: https://www.sas.org.uk/safer-seas-service
+    checked: '2026-11-08'
+  - label: US EPA, BEACON (Beach Advisory and Closing Online Notification)
+    url: https://epa.gov/waterdata/beacon-beach-advisory-and-closing-online-notification
+    checked: '2026-11-08'
+  - label: US EPA, State and local beach programs
+    url: https://www.epa.gov/beaches/state-and-local-beach-programs
+    checked: '2026-11-08'
+  - label: U.S. Masters Swimming, Safety tips for open water swimming (Yvette McKechnie)
+    url: https://www.usms.org/fitness-and-training/articles-and-videos/articles/safety-tips-for-open-water-swimming
+    checked: '2026-11-08'
+  - label: National Weather Service, Rip current safety (22 May 2024)
+    url: https://weather.gov/news/242205-rip-current-safety
+    checked: '2026-11-08'
+  - label: Points of Light, The Bluetits Chill Swimmers
+    url: https://www.pointsoflight.gov.uk/the-bluetits-chill-swimmers/
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: Sian Richardson, from Pembrokeshire
+    line: After years of triathlons and marathons she tried cold water swimming, and in 2014 started the Bluetits Chill Swimmers for people who did not want to swim alone, which has since grown into a global
+      community.
+    title: The Bluetits Chill Swimmers
+    outlet: Points of Light (UK Prime Minister's award)
+    url: https://www.pointsoflight.gov.uk/the-bluetits-chill-swimmers/
+    checked: '2026-11-08'
+  related:
+  - open-water-swim
+  - swim-the-serpentine
+  - learn-to-swim-adult
+  - stand-up-paddleboarding
 - id: wildlife-trust-volunteer
   title: Volunteer for your local Wildlife Trust
   category: explore
@@ -5539,20 +5993,41 @@
   regions:
   - uk
   - us
-  why: Swimming is a skill plenty of adults never had the chance to learn, and both national bodies run programmes written for grown-up beginners. Swim England's Adult Swimming Framework has four stages, and U.S. Masters Swimming keeps a directory of instructors who teach adults.
+  why: Swimming is a skill plenty of adults never had the chance to learn, and both national bodies run programmes written for grown-up beginners. Swim England's Adult Swimming Framework has four stages,
+    the first for people who are nervous of water, and U.S. Masters Swimming keeps a directory of instructors who teach adults.
   start:
-  - Search Swim England's Poolfinder for a pool offering adult Learn to Swim lessons, or use Find an Instructor on the U.S. Masters Swimming Learn to Swim page.
-  - Tell the teacher exactly where you are starting from, including any fear of deep water.
-  - Book a block of lessons and visit the pool between them to practise floating and breathing.
+  - Search Swim England's Poolfinder by postcode for a nearby pool and ask about adult lessons, or use Find an Instructor on the U.S. Masters Swimming Learn to Swim page.
+  - Tell the teacher exactly where you are starting from, including any fear of deep water, and agree what you want to be able to do.
+  - Book a block of lessons and visit the pool between them to practise floating, breathing and kicking.
   links:
-  - label: Swim England Adult Swimming Framework (governing body for swimming in England)
-    url: https://www.swimming.org/learntoswim/swim-england-adult-swimming-framework/
+  - label: 'Swim England: Adult Swimming Framework'
+    url: https://www.swimming.org/swimengland/adult-swimming/
     region: uk
-    checked: '2026-10-07'
+    checked: '2026-11-08'
+  - label: 'Swim England Poolfinder: find a pool by postcode'
+    url: https://www.swimming.org/poolfinder/
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Nuffield Health: adult swimming lessons'
+    url: https://www.nuffieldhealth.com/gyms/services/swimming-lessons/adult-swimming-lessons
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Better: adult swimming lessons'
+    url: https://www.better.org.uk/swim-doctor
+    region: uk
+    checked: '2026-11-08'
   - label: 'U.S. Masters Swimming: Adult Learn to Swim'
     url: https://www.usms.org/alts-central/learn-to-swim
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-08'
+  - label: 'U.S. Masters Swimming: Adult Learn-to-Swim initiatives'
+    url: https://www.usms.org/alts-central/alts-initiatives
+    region: us
+    checked: '2026-11-08'
+  - label: 'YMCA of Central Florida: group swim lessons for adults'
+    url: https://ymcacf.org/programs/swim/swim-lessons/group-swim-lessons-adults/
+    region: us
+    checked: '2026-11-08'
   safety: Stay in water you can stand up in, with a teacher or lifeguard present, until you can swim.
   story: sola-alegbe-swimming-teacher
   story_note: Sola Alegbe took her first adult lesson at 48 and now teaches swimming in London.
@@ -5574,6 +6049,141 @@
   - name: Kickboard
     why: for practising your legs and breathing
     url: https://www.amazon.co.uk/s?k=swimming+kickboard
+  seo_title: 'Adult swimming lessons: how to learn to swim as an adult'
+  description: How adult swimming lessons work in the UK and US, Swim England's four stages, what lessons cost as last listed, and where to start if you fear water.
+  detail:
+  - h: What it's really like
+    p:
+    - You will not be the only beginner. In 2019 Swim England said 14.2 million adults in England, 31 per cent, could not swim one length of a 25m (27-yard) pool. U.S. Masters Swimming, citing the CDC,
+      says more than a third of US adults cannot swim the length of a pool.
+    - Lessons are short and small. Nuffield Health's adult lessons last 30 minutes, in groups of up to four or one to one. The YMCA of Central Florida runs 30-minute group lessons with one instructor to
+      eight adults, sold in packs of four, and suggests two lessons a week. Swim England asks teachers to work out with each adult why they have come and to set personal targets.
+  - h: Swim England's four adult stages
+    table:
+      head:
+      - Stage
+      - Who it is for
+      - What it covers
+      rows:
+      - - 1. Be Water Confident
+        - Nervous swimmers, or those new to swimming
+        - Building confidence and comfort in the water
+      - - 2. Be a Swimmer
+        - Those ready to swim without support
+        - The skills to swim on your own over short distances, without support or floats
+      - - 3. Be a Better Swimmer
+        - Those who can swim 25 metres (27 yards) or more
+        - Better technique and more stamina
+      - - 4. Be a Master Swimmer
+        - Swimmers who want to compete or join a club
+        - More advanced skills, enough to compete or join a club's masters section
+    after: Alongside the stages, Swim England's Adult Distance Awards mark 5, 10, 25, 50, 100, 200 and 800 metres and one mile. Nuffield Health, which teaches to the same four stages, describes Be a Swimmer
+      as covering 5 to 10 metres and Be a Better Swimmer as up to 400 metres (437 yards).
+  - h: Ways in, UK and US
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Nuffield Health (UK gyms)
+        - Groups of up to four, or one to one and two to one; 30 minutes; 16 and over; non-members at most centres
+        - Not listed online, ask your centre; members get 25 per cent off; group lessons paid monthly by Direct Debit
+      - - Better (UK leisure centres)
+        - Group classes for beginners and improvers, including adults afraid of water, or private lessons
+        - Varies by centre
+      - - Live Borders (Scottish Borders pools)
+        - Classes of up to 12, for non-swimmers and improvers, at all its pools
+        - £26.50 a month by Direct Debit
+      - - YMCA of Central Florida (US)
+        - Group lessons for 18 and over by skill level; 30 minutes; one instructor to eight; packs of four lessons
+        - Not listed online; the Y says members save up to 50 per cent
+      - - Ric Nuber YMCA, YMCA of Memphis (US)
+        - Private or semi-private, four 30-minute sessions, open to all ages from 3; or small groups of three to four
+        - Private $110 members, $150 non-members; semi-private $75 and $100; small group $45 and $60
+      - - U.S. Masters Swimming certified instructors (US)
+        - Instructors trained in methods for adult learners, found through the USMS search
+        - Set by each instructor; many USMS clubs and instructors offer low- or no-cost lessons in April, Adult Learn-to-Swim Month
+    after: In England, Scotland and Wales, Swim England's Poolfinder finds pools and clubs by postcode. In the US, U.S. Masters Swimming will also help find an instructor by email at membership@usmastersswimming.org.
+  - h: If you are nervous of water
+    list:
+    - Start at Swim England's first stage, Be Water Confident, which is written for nervous swimmers.
+    - Tell your teacher what worries you and what you want to manage first, perhaps feeling at ease in the shallow end, floating or treading water. The YMCA of Metropolitan Washington's advice is not to
+      hold back your concerns.
+    - Spend time in the shallow end, walking through the water, dipping your face and blowing bubbles.
+    - Take slow, deep breaths before you get in, and go at your own pace.
+    - Count small wins, such as putting your face in the water or floating without help.
+  - h: Between lessons
+    p:
+    - Use your pool's public sessions to practise. The YMCA of Metropolitan Washington suggests working on breathing, floating, kicking and simple glides, and says even 15 to 20 minutes in the water helps.
+      The RNLI also suggests practising its Float to Live technique in a supervised place such as a pool.
+    - For the first lesson, the same YMCA suggests a secure swimsuit, a cap, snug goggles, a towel, flip-flops and a water bottle, arriving early to change, and showering before you get in.
+  faq:
+  - q: How do I find adult swimming lessons near me?
+    a: In Britain, search Swim England's Poolfinder by postcode, or ask your local leisure centre. In the US, use the Find an Instructor search on the U.S. Masters Swimming Learn to Swim page, or ask your
+      local YMCA.
+  - q: How much do adult swimming lessons cost?
+    a: It varies by provider and centre. As last listed, Live Borders charged £26.50 a month, and one Memphis YMCA charged $45 for members and $60 for non-members for small group lessons, or $110 and $150
+      for four private sessions.
+  - q: Can you learn to swim as an adult if you are scared of water?
+    a: Yes. Swim England's first adult stage, Be Water Confident, is written for nervous swimmers, and providers such as Better run classes that include adults afraid of the water. Tell your teacher about
+      your fear at the start.
+  - q: How many adults can't swim?
+    a: In 2019 Swim England said 14.2 million adults in England, 31 per cent, could not swim one length of a 25m pool. U.S. Masters Swimming, citing the CDC, says more than a third of US adults cannot swim
+      the length of a pool.
+  - q: What should I bring to my first adult swimming lesson?
+    a: The YMCA of Metropolitan Washington suggests a comfortable, secure swimsuit, a swim cap, goggles that fit snugly, a towel or robe, flip-flops and a water bottle.
+  sources:
+  - label: Swim England, Adult swimming
+    url: https://www.swimming.org/swimengland/adult-swimming/
+    checked: '2026-11-08'
+  - label: Swim England, Adult swimming awards
+    url: https://www.swimming.org/swimengland/adult-swimming-awards/
+    checked: '2026-11-08'
+  - label: Swim England, New Poolfinder site (10 March 2020)
+    url: https://www.swimming.org/swimengland/new-poolfinder-site/
+    checked: '2026-11-08'
+  - label: Swim England, Poolfinder
+    url: https://www.swimming.org/poolfinder/
+    checked: '2026-11-08'
+  - label: Swim England via GM Moving, New statistics reveal more than 14 million adults in England cannot swim (22 October 2019)
+    url: https://www.gmmoving.co.uk/news/new-statistics-reveal-more-than-14-million-adults-in-england-cannot-swim
+    checked: '2026-11-08'
+  - label: Nuffield Health, Adult swimming lessons
+    url: https://www.nuffieldhealth.com/gyms/services/swimming-lessons/adult-swimming-lessons
+    checked: '2026-11-08'
+  - label: Better, Swimming lessons
+    url: https://www.better.org.uk/swim-doctor
+    checked: '2026-11-08'
+  - label: Live Borders, Adult swimming lessons
+    url: https://www.liveborders.org.uk/health/swimming/swimming-classes/adult-swimming-lessons/
+    checked: '2026-11-08'
+  - label: Be Well (Tower Hamlets Council), Adult Swimming Framework
+    url: https://be-well.org.uk/what-we-offer/swimming-lessons/adult-swimming-framework
+    checked: '2026-11-08'
+  - label: U.S. Masters Swimming, Adult Learn to Swim
+    url: https://www.usms.org/alts-central/learn-to-swim
+    checked: '2026-11-08'
+  - label: U.S. Masters Swimming, Adult Learn-to-Swim initiatives
+    url: https://www.usms.org/alts-central/alts-initiatives
+    checked: '2026-11-08'
+  - label: YMCA of Central Florida, Group swim lessons for adults
+    url: https://ymcacf.org/programs/swim/swim-lessons/group-swim-lessons-adults/
+    checked: '2026-11-08'
+  - label: YMCA of Memphis, Ric Nuber YMCA swim lessons
+    url: https://www.ymcamemphis.org/micro-site-ric-nuber-ymca/swim-lessons/
+    checked: '2026-11-08'
+  - label: YMCA of Metropolitan Washington, How to prepare for adult swim lessons at the YMCA (25 November 2024)
+    url: https://www.ymcadc.org/how-to-prepare-for-adult-swim-lessons-at-the-ymca/
+    checked: '2026-11-08'
+  - label: RNLI, Float to Live
+    url: https://rnli.org/float
+    checked: '2026-11-08'
+  related:
+  - masters-swimming
+  - swim-swimathon
+  - wild-swim
+  - learn-first-aid
 - id: cycle-confidence-lesson
   title: Take a cycling confidence lesson
   category: move
@@ -17360,3 +17970,1429 @@
   - learn-to-sew-your-own-clothes
   - carve-a-wooden-spoon
   - try-blacksmithing
+- id: learn-felt-making
+  title: Learn to make felt by hand
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Felt is made by persuading loose wool fibres to lock together, and different sheep breeds do it in different ways and at different speeds. A beginners' class can take you from a tray of fleece to
+    a finished landscape picture, bowl or brooch in a few sessions.
+  start:
+  - 'Book a short beginners'' class: adult learning services and colleges run them, often with all materials provided.'
+  - Check whether the course teaches wet felting, needle felting or both, and what you need to bring; one US class asks for old towels and a plastic bag.
+  - To carry on at home, try the International Feltmakers Association's self-paced online course, which has its own fibre pack.
+  links:
+  - label: 'Cumbria Adult Learning: Introduction to Felt Making, wet-felted and embroidered landscape (Kendal)'
+    url: https://adultlearningcumbria.org/search-courses-0/beginners-textiles-introduction-felt-making-making-wet-felted-and-embroidered
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Capel Manor College: Introduction to the Art of Wet and Needle Felting for Beginners'
+    url: https://www.capel.ac.uk/?p=14500
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Wisconsin Union: Felted Vessels, a beginners'' wet felting class (Madison)'
+    url: https://today.wisc.edu/events/view/221745
+    region: us
+    checked: '2026-11-08'
+  - label: 'International Feltmakers Association: Discovering Feltmaking 1, online course'
+    url: https://www.feltmakers.com/discovering-feltmaking-1/
+    region: any
+    checked: '2026-11-08'
+  - label: 'International Feltmakers Association: tutor list'
+    url: https://www.feltmakers.com/ifa-tutors-list/
+    region: any
+    checked: '2026-11-08'
+  seo_title: 'Felt making classes for beginners: wet and needle felting'
+  description: What a beginners' felt making class covers, wet felting and needle felting, what to bring, and what courses cost in the UK, the US and online.
+  detail:
+  - h: What it's really like
+    p:
+    - Most first courses start with wet felting and add needle felting for detail. Cumbria Adult Learning's three-week class in Kendal Library teaches learners to wet felt, lay out a landscape image, then
+      add needle felting and embroidery. No experience is needed and the materials are provided.
+    - Capel Manor College's beginners' course covers equipment, natural and man-made wools, preparing and carding wool, then a run of small projects, from a colour sample and a wet-felted soap to needle-felted
+      shapes, a brooch, a wet-felted landscape and wall-hanging methods.
+    - The wool matters. The International Feltmakers Association's online Basics course has you make samples from different breeds, because they do not felt in the same way or in the same time.
+  - h: What beginners pay
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Cumbria Adult Learning, Kendal Library
+        - Three weeks, 4.30pm to 6.30pm, from 11 May 2027; wet felting, needle felting and embroidery; materials provided
+        - £50, or £27.50 concession
+      - - Wisconsin Union, Madison
+        - 'Felted Vessels: one four-hour class on wool, layout and shaping a vessel over a resist; no experience necessary'
+        - $100
+      - - International Feltmakers Association, online
+        - 'DF1 Basics: self-paced, about 18 hours, with a forum for questions to a mentor; sessions in January/February, May/June and October/November'
+        - $60 (about £46), plus £14.50 for an optional fibre pack
+    after: The Wisconsin class asks students to bring four old towels (two bath towels and two hand towels) and a kitchen-size plastic bag. The IFA's tutor list is a yearly list of members who teach; the
+      IFA says inclusion is not an endorsement.
+  faq:
+  - q: Do I need any experience to take a felting class?
+    a: No. Cumbria Adult Learning says no prior experience is required, and the Wisconsin Union's Felted Vessels class says no experience is necessary.
+  - q: What is the difference between wet felting and needle felting?
+    a: They are two techniques, and many beginners' courses teach both. Capel Manor College's course mixes wet-felted pieces such as a soap and a landscape with needle-felted shapes and a brooch.
+  - q: What should I bring to a felting class?
+    a: Check the listing. Cumbria Adult Learning provides everything, while the Wisconsin Union class asks for four old towels and a kitchen-size plastic bag, plus an apron if you like.
+  - q: Can I learn felt making online?
+    a: Yes. The International Feltmakers Association's DF1 Basics course is self-paced through an online platform, costs $60 and takes about 18 hours for the first exploration.
+  sources:
+  - label: Cumbria Adult Learning, Beginners Textiles, Introduction to Felt Making (KEN26T096)
+    url: https://adultlearningcumbria.org/search-courses-0/beginners-textiles-introduction-felt-making-making-wet-felted-and-embroidered
+    checked: '2026-11-08'
+  - label: Capel Manor College, Introduction to the Art of Wet and Needle Felting for Beginners
+    url: https://www.capel.ac.uk/?p=14500
+    checked: '2026-11-08'
+  - label: Wisconsin Union, Felted Vessels (UW-Madison events)
+    url: https://today.wisc.edu/events/view/221745
+    checked: '2026-11-08'
+  - label: International Feltmakers Association, DF1 Basics
+    url: https://www.feltmakers.com/discovering-feltmaking-1/
+    checked: '2026-11-08'
+  - label: International Feltmakers Association, IFA Tutor List
+    url: https://www.feltmakers.com/ifa-tutors-list/
+    checked: '2026-11-08'
+  - label: International Feltmakers Association, workshops
+    url: https://www.feltmakers.com/ifa-feltmaking-courses/
+    checked: '2026-11-08'
+  - label: Boothbay Register, Laura McNelly fiber art show at River Arts (23 October 2023)
+    url: https://boothbayregister.com/node/179715
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: Laura McNelly, Waldoboro, Maine
+    line: Was introduced to felting while volunteering at a local school, built her skills through online classes and showed her felted art and wearables at River Arts Gallery in Damariscotta.
+    title: Laura McNelly fiber art show at River Arts
+    outlet: Boothbay Register
+    url: https://boothbayregister.com/node/179715
+    checked: '2026-11-08'
+  kit:
+  - name: Felting needles
+    why: barbed needles for shaping wool and adding detail in needle felting
+    url: https://www.amazon.co.uk/s?k=felting+needles+set
+  - name: Merino wool tops
+    why: loose carded wool to lay out and felt
+    url: https://www.amazon.co.uk/s?k=merino+wool+tops+felting
+  - name: Needle felting foam pad
+    why: a surface to work on so the needle does not hit the table
+    url: https://www.amazon.co.uk/s?k=needle+felting+foam+pad
+  related:
+  - learn-embroidery
+  - learn-to-weave-on-a-loom
+  - join-a-knitting-group
+  - learn-a-heritage-craft
+- id: learn-to-spin-yarn
+  title: Learn to spin your own yarn
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Spinning turns a cloud of wool into yarn you can knit or weave, and the first lesson usually starts with a simple drop spindle before moving to the wheel. An eight-week beginners' course in Oregon
+    sends students home with two or more skeins of their own handspun.
+  start:
+  - Find a local guild of spinners, weavers and dyers or a beginners' course; some guilds lend spinning wheels to members.
+  - Start with a drop spindle, which is how several beginners' courses open, before moving on to a treadle wheel.
+  - Ask whether wheels and fibre are provided before you buy any equipment of your own.
+  links:
+  - label: 'Durham Guild of Spinners, Weavers and Dyers: about the guild'
+    url: https://www.durhamguild.com/about-us
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Craft Courses: spinning courses in the UK'
+    url: https://craftcourses.com/courses/spinning-for-beginners
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Willamette Heritage Center: beginners'' spinning classes (Salem, Oregon)'
+    url: https://www.willametteheritage.org/spinning-classes/
+    region: us
+    checked: '2026-11-08'
+  - label: 'Duluth Fiber Guild: Beginning Spinning on the Wheel (Minnesota)'
+    url: https://duluthfiberguild.org/product/beginning-spinning-on-the-wheel/
+    region: us
+    checked: '2026-11-08'
+  seo_title: 'Learn to spin yarn: wheel and drop spindle classes'
+  description: How beginners learn to spin wool on a drop spindle and a wheel, whether you need your own wheel, and what spinning courses cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - Courses often begin with a drop spindle and move on to the wheel. At the Willamette Heritage Center in Salem, Oregon, weeks one to three of an eight-week course cover the drop spindle and weeks four
+      to eight the treadle wheel. No experience, equipment or fibre is needed, and students who finish take home two or more usable skeins of handspun yarn.
+    - A weekend wheel course packs in more. The Duluth Fiber Guild's beginners' class covers how the wheel works, choosing and preparing fibre, worsted and woollen spinning and finishing, over a Friday
+      evening and two full days.
+    - Guilds are where many spinners carry on. The Durham Guild of Spinners, Weavers and Dyers meets on the first Saturday of each month and lends spinning and weaving equipment to members so they can try
+      before they buy. It is affiliated to the national Association of Guilds of Weavers, Spinners and Dyers.
+  - h: What beginners pay
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Cartmel Handspun, Lindale-in-Cartmel, Cumbria (via Craft Courses)
+        - 'Hand spinning for beginners: one day, next listed 17 January 2027'
+        - £125
+      - - Willamette Heritage Center, Salem, Oregon
+        - Eight Saturday sessions of 90 minutes; drop spindle then wheel; fibre and wheels provided
+        - $225, plus a $100 deposit to take a wheel home from week four
+      - - Duluth Fiber Guild, Minnesota
+        - Friday evening plus two full days on the wheel; bring your own wheel or borrow one from the guild
+        - $225 for members, $255 for non-members, plus a $25 materials fee
+      - - Durham Guild of Spinners, Weavers and Dyers
+        - Monthly Saturday meetings with workshops and skill sharing; equipment loans for members
+        - £36 a year for adults, or £5 a visit
+  faq:
+  - q: Do I need my own spinning wheel to learn to spin?
+    a: Not usually. The Willamette Heritage Center provides wheels, the Duluth Fiber Guild lends them for its beginners' class, and the Durham guild lends equipment to members.
+  - q: Should I learn on a drop spindle or a spinning wheel?
+    a: Many courses teach both, starting with the spindle. The Willamette Heritage Center's course spends three weeks on the drop spindle before moving to the treadle wheel.
+  - q: How long does it take to learn to spin yarn?
+    a: Beginners' courses run from a single day to eight weeks. Students who finish the eight-week Willamette course take home two or more usable skeins.
+  - q: How do I find a spinning guild near me?
+    a: In the UK, many local guilds are affiliated to the Association of Guilds of Weavers, Spinners and Dyers, a charity that runs summer schools and exhibitions; Durham's guild is one. In the US, guilds
+      such as the Duluth Fiber Guild run their own classes.
+  sources:
+  - label: Durham Guild of Spinners, Weavers and Dyers, About us
+    url: https://www.durhamguild.com/about-us
+    checked: '2026-11-08'
+  - label: Charity Commission, The Association of Guilds of Weavers, Spinners and Dyers (289590)
+    url: https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/289590/full-print
+    checked: '2026-11-08'
+  - label: Craft Courses, spinning courses listing
+    url: https://craftcourses.com/courses/spinning-for-beginners
+    checked: '2026-11-08'
+  - label: Willamette Heritage Center, Beginners Spinning Class Offerings
+    url: https://www.willametteheritage.org/spinning-classes/
+    checked: '2026-11-08'
+  - label: Duluth Fiber Guild, Beginning Spinning on the Wheel
+    url: https://duluthfiberguild.org/product/beginning-spinning-on-the-wheel/
+    checked: '2026-11-08'
+  - label: Austin Daily Herald, Wool spinning group keeps ancient art alive in Lyle (8 July 2022)
+    url: https://www.austindailyherald.com/?p=819347
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: Nancy Sunderman
+    line: Started spinning in a community education class in Rochester, rented her first wheel and ended up owning it, and has spun wool for 35 years, now with the Twilight Treadlers club in Lyle.
+    title: Wool spinning group keeps ancient art alive in Lyle
+    outlet: Austin Daily Herald
+    url: https://www.austindailyherald.com/?p=819347
+    checked: '2026-11-08'
+  kit:
+  - name: Drop spindle
+    why: a simple hand tool for first spinning practice without a wheel
+    url: https://www.amazon.co.uk/s?k=drop+spindle+beginner
+  - name: Wool tops for spinning
+    why: prepared fibre ready to draft and spin
+    url: https://www.amazon.co.uk/s?k=wool+tops+for+spinning
+  - name: Niddy noddy
+    why: for winding finished yarn into a skein
+    url: https://www.amazon.co.uk/s?k=niddy+noddy
+  related:
+  - learn-to-weave-on-a-loom
+  - join-a-knitting-group
+  - learn-to-crochet
+  - learn-a-heritage-craft
+- id: learn-macrame
+  title: Learn macramé
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Macramé uses a handful of knots, the lark's head, square knot and half hitch among them, to turn plain cord into plant hangers and wall hangings. A beginners' class can be a single afternoon, and
+    some English adult learning courses are free for people on certain benefits.
+  start:
+  - Look for a beginners' class at an adult learning service, a library, a college or a community arts centre.
+  - Ask what is supplied; one US workshop asks students to bring a macramé board and T-pins or a spring clipboard, and a hanging piece about 18cm (7in) long such as a rod or narrow branch (the instructor
+    provides a dowel).
+  - Start with a small project such as a plant hanger or keyring, then follow a pattern for a wall hanging.
+  links:
+  - label: 'Inspire: Macrame for Beginners, Mansfield Central Library (Nottinghamshire)'
+    url: https://www.inspireculture.org.uk/skills-learning/adult-learning/macrame-for-beginners-768
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Herefordshire, Ludlow and North Shropshire College: Macramé (Oswestry)'
+    url: https://hlnsc.ac.uk/hlnsc-courses/macrame/
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Olympic College Continuing Education: Beginning Macrame Plant Hangers (Washington)'
+    url: https://www.olympic.edu/events-calendar/beginning-macrame-plant-hangers
+    region: us
+    checked: '2026-11-08'
+  - label: 'Carlisle Arts Learning Center: Macramé 101 (Pennsylvania)'
+    url: https://carlislearts.squarespace.com/fiber-arts-workshops/macrame
+    region: us
+    checked: '2026-11-08'
+  seo_title: 'Macramé classes for beginners: knots, projects and costs'
+  description: What a beginners' macramé class teaches, the basic knots, what to bring, what you can make, and what courses cost in the UK and the US.
+  detail:
+  - h: What it's really like
+    p:
+    - A first course is mostly about a few knots. Inspire's three-session Macrame for Beginners at Mansfield Central Library covers types of cord, the lark's head, double half hitch, square knot and half
+      knot, and reading and following a basic pattern. It also looks at costing your time and materials and at selling on sites such as Etsy or Instagram.
+    - Plant hangers are a common first project. Olympic College's three-hour class teaches measuring and cutting cord, the square knot, half hitch and wrapping knot, and how to start and finish a piece
+      cleanly.
+    - Longer courses go further. Herefordshire, Ludlow and North Shropshire College's six-week evening course covers basic and intermediate knots, pattern construction, design and finishing, with learners
+      making wall hangings, plant holders, keyrings and accessories.
+  - h: What beginners pay
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Inspire, Mansfield Central Library, Nottinghamshire
+        - Three Monday morning sessions of two hours; groups of 5 to 12; no experience needed
+        - Free to £24
+      - - Herefordshire, Ludlow and North Shropshire College, Oswestry
+        - About six weeks, Mondays 5.30pm to 7pm; certificate of participation
+        - £70
+      - - Olympic College Continuing Education, Shelton, Washington
+        - One three-hour plant hanger class, 25 April 2026
+        - $69
+      - - Carlisle Arts Learning Center, Pennsylvania
+        - One four-hour workshop on knots, design and colour; start a small wall hanging
+        - $80 for members, $95 for non-members, plus an $18 materials fee
+    after: Inspire's courses are free for learners on certain benefits, and enrolment requires living in England and three years' UK residence, with some exceptions.
+  faq:
+  - q: What are the basic macramé knots?
+    a: Beginners' courses usually start with the lark's head, square knot, half knot and half hitch. Inspire's beginners' course teaches all four, and Olympic College adds a wrapping knot for finishing.
+  - q: What can you make in a beginners' macramé class?
+    a: Usually a plant hanger or a small wall hanging. Herefordshire, Ludlow and North Shropshire College's course also includes keyrings and decorative accessories.
+  - q: What do I need to bring to a macramé class?
+    a: Check the listing. Carlisle Arts Learning Center asks for a macramé board and T-pins or a spring clipboard, and a hanging piece about 18cm (7in) long such as a rod or narrow branch (the instructor
+      provides a dowel), and charges an $18 materials fee.
+  - q: Are there free macramé classes?
+    a: Some adult learning courses in England are free for people on certain benefits; Inspire's Mansfield course is listed at free to £24.
+  sources:
+  - label: Inspire, Macrame for Beginners, Mansfield Central Library
+    url: https://www.inspireculture.org.uk/skills-learning/adult-learning/macrame-for-beginners-768
+    checked: '2026-11-08'
+  - label: Herefordshire, Ludlow and North Shropshire College, Macramé
+    url: https://hlnsc.ac.uk/hlnsc-courses/macrame/
+    checked: '2026-11-08'
+  - label: Olympic College, Beginning Macrame Plant Hangers
+    url: https://www.olympic.edu/events-calendar/beginning-macrame-plant-hangers
+    checked: '2026-11-08'
+  - label: Carlisle Arts Learning Center, Macramé 101
+    url: https://carlislearts.squarespace.com/fiber-arts-workshops/macrame
+    checked: '2026-11-08'
+  - label: The Tribune (Ironton), South Point woman specializes in macramé creations (18 January 2023)
+    url: https://www.irontontribune.com/?p=447192
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: Kelsie Sayre, South Point
+    line: Taught herself macramé from online patterns and videos in 2020 and now makes tapestries from about 30cm (12in) to 2.1m (7ft), plus plant holders and other pieces, as Macramé by Kelsie.
+    title: South Point woman specializes in macramé creations
+    outlet: The Tribune (Ironton)
+    url: https://www.irontontribune.com/?p=447192
+    checked: '2026-11-08'
+  kit:
+  - name: Macramé cord
+    why: the cotton cord most beginners' projects are knotted from
+    url: https://www.amazon.co.uk/s?k=macrame+cord+cotton
+  - name: Wooden dowels and rings
+    why: to hang a wall hanging or start a plant hanger
+    url: https://www.amazon.co.uk/s?k=macrame+wooden+dowel+rings
+  - name: Macramé board
+    why: holds the cords steady while you knot
+    url: https://www.amazon.co.uk/s?k=macrame+board
+  related:
+  - learn-to-crochet
+  - weave-a-willow-basket
+  - learn-embroidery
+  - learn-to-weave-on-a-loom
+- id: learn-to-paint-with-pastels
+  title: Learn to paint with pastels
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Soft pastel is close to pure pigment, so colour goes straight onto the paper with no mixing palette and no waiting for paint to dry. A short beginners' course covers blending, layering and building
+    tone, and the London and Salt Lake City courses below ask you to bring your own pastels and paper.
+  start:
+  - 'Book a beginners'' pastel course: an adult education college, a university evening class or a pastel society''s studio classes.'
+  - Wait for the tutor's materials list before you buy; Imperial College and the University of Utah both send or link one before the first class.
+  - Take a photograph you would like to work from; Utah's course asks for an 8x10 reference photo for its final two classes.
+  links:
+  - label: 'City Lit: beginners'' drawing courses, including colour pastel techniques (London)'
+    url: https://www.citylit.ac.uk/courses/art-and-design/drawing-courses/techniques-and-processes/beginners
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Imperial College after:hours: Art with Pastels for Beginners (London)'
+    url: https://www.imperial.ac.uk/evening-classes/winter-courses-list/art-with-pastels-for-beginners-daytime/
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Pastel Society of America: classes at the National Arts Club (New York) and on Zoom'
+    url: https://www.pastelsocietyofamerica.org/classes/
+    region: us
+    checked: '2026-11-08'
+  - label: 'University of Utah Continuing Education: Pastel Drawing, an Introduction (Salt Lake City)'
+    url: https://continue.utah.edu/class/LLART/415
+    region: us
+    checked: '2026-11-08'
+  seo_title: 'Pastel painting classes for beginners: UK and US'
+  description: What a beginners' pastel painting course covers, what materials you need to bring, and what classes cost in London, New York and Salt Lake City.
+  detail:
+  - h: What it's really like
+    p:
+    - The University of Utah describes soft pastel as a dry, pure pigment. Its autumn introduction covers soft pastels and pastel pencils, value, layering colour, and how to protect and frame a finished
+      piece.
+    - Imperial College's eight-week beginners' course works through blending and layering colour, building tone and creating texture, moving from careful observation to looser, more expressive work. Neither
+      course supplies materials; you buy your own from the tutor's list.
+    - Pastel societies are a cheap way to watch before you buy. During its 2026 annual exhibition at the Mall Galleries in London, the Pastel Society ran free demonstrations, open studio sessions and a
+      talk billed as a beginner's guide to still life in pastel, all included with gallery admission.
+  - h: What beginners pay
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Drawing: colour pastel techniques; from Thursday 12 November 2026'
+        - £229, or £183 senior and £149 concession
+      - - Imperial College after:hours, London
+        - Eight Friday mornings of two hours from 16 October 2026; bring your own materials
+        - £249 standard
+      - - Pastel Society of America, New York
+        - Ongoing classes of two and a half to three hours in studio, hybrid or on Zoom, including pastel landscape, still life and portrait
+        - $210 for six classes, or $45 for one
+      - - University of Utah Continuing Education, Salt Lake City
+        - Monday evenings from 9 November to 7 December 2026; bring your own materials
+        - $159
+    after: The Utah autumn section was listed as full, with a waiting list. The Pastel Society of America says its fees are subject to change and payment is due two business days before a class starts.
+  faq:
+  - q: Do I need experience to take a pastel class?
+    a: Not for a beginners' course. Imperial College says its pastel course is open to complete beginners, and Utah's is an introduction open to anyone 18 or over.
+  - q: Are materials included in a pastel course?
+    a: Often not. Imperial College and the University of Utah both ask students to buy their own pastels and paper from a list sent or linked before the course starts.
+  - q: What is the difference between soft pastels and pastel pencils?
+    a: Soft pastel is a dry, pure pigment in stick form; pastel pencils hold it in a pencil for finer detail. Utah's introductory course teaches both.
+  - q: Can I take a pastel class online?
+    a: Yes. The Pastel Society of America runs some of its weekly classes on Zoom or as hybrid classes, and one price list covers studio, hybrid and Zoom classes.
+  sources:
+  - label: City Lit, Drawing techniques and processes, beginners
+    url: https://www.citylit.ac.uk/courses/art-and-design/drawing-courses/techniques-and-processes/beginners
+    checked: '2026-11-08'
+  - label: Imperial College after:hours, Art with Pastels for Beginners (daytime)
+    url: https://www.imperial.ac.uk/evening-classes/winter-courses-list/art-with-pastels-for-beginners-daytime/
+    checked: '2026-11-08'
+  - label: Pastel Society of America, Classes
+    url: https://www.pastelsocietyofamerica.org/classes/
+    checked: '2026-11-08'
+  - label: 'University of Utah Continuing Education, Pastel Drawing: An Introduction (LLART 415)'
+    url: https://continue.utah.edu/class/LLART/415
+    checked: '2026-11-08'
+  - label: 'Mall Galleries, Pastel Society: events programme 2026'
+    url: https://www.mallgalleries.org.uk/node/140846
+    checked: '2026-11-08'
+  - label: Herald Community Newspapers, West Hempstead artist revisits her passion for painting (19 December 2019)
+    url: https://liherald.com/westhempstead/stories/west-hempstead-artist-revisits-her-passion-for-painting,120994
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: Terry Simon, West Hempstead, New York
+    line: Tried pastels for the first time after more than 30 years without painting, joined a weekly pastels class run through the Town of Hempstead and held her first solo exhibition at the West Hempstead
+      Public Library.
+    title: West Hempstead artist revisits her passion for painting
+    outlet: Herald Community Newspapers
+    url: https://liherald.com/westhempstead/stories/west-hempstead-artist-revisits-her-passion-for-painting,120994
+    checked: '2026-11-08'
+  kit:
+  - name: Soft pastel set
+    why: sticks of pigment for blocking in and layering colour
+    url: https://www.amazon.co.uk/s?k=soft+pastels+set
+  - name: Pastel pencils
+    why: for finer lines and detail over soft pastel
+    url: https://www.amazon.co.uk/s?k=pastel+pencils+set
+  - name: Pastel paper pad
+    why: a textured surface that holds layers of pastel
+    url: https://www.amazon.co.uk/s?k=pastel+paper+pad
+  related:
+  - paint-in-watercolour
+  - learn-to-draw
+  - paint-in-acrylics
+  - go-to-a-life-drawing-class
+- id: try-etching
+  title: Make your first etching
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: In etching the image is bitten into a zinc or copper plate with a mordant, then the plate is inked and printed on paper with an etching press. Drypoint skips the mordant and scratches the line straight
+    into the plate, so a one-day workshop can send you home with prints.
+  start:
+  - 'Pick a format: a one-day drypoint workshop, a weekend etching course, or a weekly class at a print studio or art centre.'
+  - Check whether you need any drawing experience; City Lit prefers some for its drypoint day, and Dunedin Fine Art Center asks for basic drawing ability.
+  - Wear cotton clothes and closed-toe shoes; Indianapolis Art Center asks students to wear cotton, long trousers and closed-toe shoes, with no sandals, shorts or synthetics.
+  links:
+  - label: 'City Lit: beginners'' etching, drypoint and intaglio courses (London)'
+    url: https://www.citylit.ac.uk/courses/art-and-design/printmaking/etching-intaglio-lithography/beginners
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Edinburgh Printmakers: Etching Weekend Course'
+    url: https://edinburgh-printmakers.odoo.com/event/etching-weekend-course-16/register
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Indianapolis Art Center: Intro to Intaglio Printmaking, all levels'
+    url: https://origin-a3.active.com/indianapolis-in/classes/intro-to-intaglio-printmaking-all-levels-2026
+    region: us
+    checked: '2026-11-08'
+  - label: 'Dunedin Fine Art Center: Beginner Intaglio Etching (Florida)'
+    url: https://www.dfac.org/class/pr504-beginner-intaglio-etching-with-holly-bird-3
+    region: us
+    checked: '2026-11-08'
+  seo_title: Etching and drypoint classes for beginners
+  description: What happens on a beginners' etching or drypoint course, how safe modern etching is, and what workshops cost in London, Edinburgh and the US.
+  detail:
+  - h: What it's really like
+    p:
+    - Drypoint is the quickest way in. City Lit describes it as cutting grooves into a solid surface to make a drawn line, then printing with intaglio inking; its one-day workshop is open to all levels,
+      though some drawing experience is preferred.
+    - Etching takes longer because the plate is bitten in a mordant. City Lit's etching workshop uses zinc plates to build line, texture and tone and prints in monochrome and colour. Edinburgh Printmakers'
+      weekend course has you work two 152 x 203mm (6 x 8in) plates, one image on each.
+    - Many studios have moved away from strong acids and solvents. Edinburgh Printmakers uses newer acid resists that it calls a healthier process, and Dunedin Fine Art Center teaches non-acid etching on
+      copper with ferric chloride.
+  - h: What beginners pay
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Drypoint and intaglio printmaking in a day, from 2 March 2027
+        - £149
+      - - City Lit, London
+        - Etching workshop on zinc plates, Tuesday evenings from 17 November 2026
+        - £229, or £183 senior and £149 concession
+      - - Edinburgh Printmakers
+        - Two-day etching weekend, 10am to 5.30pm; includes three months' associate studio membership
+        - £187 to £220
+      - - Indianapolis Art Center
+        - 'Intro to intaglio: drypoint, etching and basic collagraph, Wednesdays from 14 October to 25 November 2026'
+        - $376 (members pay less)
+      - - Dunedin Fine Art Center, Florida
+        - Six weekly three-hour morning classes in non-acid etching on copper
+        - $215, plus a $25 lab fee
+      - - Manhattan Graphics Center, New York
+        - Weekly intaglio class covering etching, drypoint, aquatint and grounds, with 30 hours of open studio time
+        - $680
+    after: The Edinburgh weekend listed here was for May 2026 and the Manhattan Graphics Center class has ended; check each studio for its next dates.
+  faq:
+  - q: What is the difference between etching and drypoint?
+    a: In drypoint you scratch the line straight into the plate. In etching the line is bitten into a metal plate by a mordant; both are printed by intaglio inking.
+  - q: Is etching dangerous?
+    a: It uses mordants, but many studios now use safer methods. Edinburgh Printmakers uses acid resists without dangerous acids or solvents, and Dunedin Fine Art Center etches copper with ferric chloride
+      rather than acid.
+  - q: Do I need drawing experience for an etching class?
+    a: It helps. City Lit prefers some drawing experience for its drypoint day, and Dunedin Fine Art Center asks for a drawing class or basic drawing ability, but no printmaking experience.
+  - q: Can I carry on printing after the course?
+    a: Some studios make it easy. Edinburgh Printmakers' weekend includes three months' associate membership for studio use, and Manhattan Graphics Center gives non-members 30 hours of open studio time
+      with its class.
+  sources:
+  - label: City Lit, Etching, intaglio and lithography courses for beginners
+    url: https://www.citylit.ac.uk/courses/art-and-design/printmaking/etching-intaglio-lithography/beginners
+    checked: '2026-11-08'
+  - label: Edinburgh Printmakers, Etching Weekend Course
+    url: https://edinburgh-printmakers.odoo.com/event/etching-weekend-course-16/register
+    checked: '2026-11-08'
+  - label: Indianapolis Art Center, Intro to Intaglio Printmaking, All Levels (ACTIVE listing)
+    url: https://origin-a3.active.com/indianapolis-in/classes/intro-to-intaglio-printmaking-all-levels-2026
+    checked: '2026-11-08'
+  - label: Dunedin Fine Art Center, PR504 Beginner Intaglio Etching
+    url: https://www.dfac.org/class/pr504-beginner-intaglio-etching-with-holly-bird-3
+    checked: '2026-11-08'
+  - label: Manhattan Graphics Center, Wednesday Intaglio / Etching with Vijay
+    url: https://mgc.powerhousearts.org/service-page/wednesday-intaglio-etching-with-vijay-3
+    checked: '2026-11-08'
+  - label: New York Teacher (UFT), Etching is her passion (9 September 2021)
+    url: https://www.uft.org/news/retired-teachers-chapter-news/rtc-second-act/etching-her-passion
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: Barbara Zietchick, New Hope, Pennsylvania
+    line: Learned printmaking while teaching kindergarten on Staten Island, bought a small etching press after leaving the classroom and has won awards at many juried shows.
+    title: Etching is her passion
+    outlet: New York Teacher (United Federation of Teachers)
+    url: https://www.uft.org/news/retired-teachers-chapter-news/rtc-second-act/etching-her-passion
+    checked: '2026-11-08'
+  safety: Etching uses mordants to bite the plate, so follow the studio's rules on clothing, gloves and handling, and ask which etching method it uses.
+  kit:
+  - name: Drypoint etching needle
+    why: for scratching lines into a plate
+    url: https://www.amazon.co.uk/s?k=drypoint+etching+needle
+  - name: Printmaking apron
+    why: keeps ink off your clothes in the studio
+    url: https://www.amazon.co.uk/s?k=printmaking+apron
+  related:
+  - make-a-linocut-print
+  - try-screen-printing
+  - learn-to-draw
+  - learn-calligraphy
+- id: learn-lacemaking
+  title: Learn to make bobbin lace
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Bobbin lace is worked with pins, thread and pairs of bobbins on a lace pillow, following a pattern called a pricking. Beginners learn three or four stitches over a weekend and go home with a bookmark
+    or sampler.
+  start:
+  - Do not buy kit first; several teachers lend pillows and bobbins, and one Surrey tutor advises against buying beforehand.
+  - 'Find a teacher or group: the Lace Guild keeps UK lists by county, and the International Organization of Lace (IOLI) runs a teacher database in the US.'
+  - Book a beginners' weekend or join a local lace group's regular sessions.
+  links:
+  - label: 'The Lace Guild: UK lace groups and teachers, listed by county'
+    url: https://www.laceguild.org/group-and-tutor-lists
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Tina''s Bobbin Lacemaking: weekend beginners'' workshop (Effingham, Surrey)'
+    url: https://www.craftcourses.com/courses/beginners-lace-making-taster-workshop
+    region: uk
+    checked: '2026-11-08'
+  - label: 'International Organization of Lace (IOLI): looking for a lace teacher'
+    url: https://main.internationalorganizationoflace.org/learning-resources/looking-for-a-lace-teacher
+    region: us
+    checked: '2026-11-08'
+  - label: 'Textile Arts Center: Bobbin Lace 101 weekend intensive (Brooklyn)'
+    url: https://www.active.com/brooklyn-ny/classes/bobbin-lace-101-weekend-intensive-2027
+    region: us
+    checked: '2026-11-08'
+  - label: 'Brooklyn Lace Guild: beginners'' bobbin lace classes at folk schools and studios'
+    url: https://brookyln-laceguild.squarespace.com/classes
+    region: us
+    checked: '2026-11-08'
+  seo_title: 'Bobbin lace classes for beginners: how to start'
+  description: How to start bobbin lacemaking, what a beginners' class teaches, whether you need your own pillow and bobbins, and how to find a lace group or teacher.
+  detail:
+  - h: What it's really like
+    p:
+    - A first weekend covers winding bobbins, preparing a pricking, a handful of stitches and keeping the tension even. Tina's Bobbin Lacemaking's two-day course in Surrey teaches half, whole (cloth) and
+      double stitch, edges and a central vein, aiming at a first traditional piece; the Textile Arts Center in Brooklyn starts with Torchon basics and a sampler.
+    - Kit is often lent. The Surrey tutor has second-hand equipment to use, borrow or buy, and a beginners' workshop in Ipswich, Massachusetts, run by New England Lace Group members, includes 12 pairs of
+      bobbins to keep, pins, thread and patterns, with loaner pillows.
+    - Groups keep people going after the class. The Lace Guild lists UK groups and teachers by county, with full contact details from its office, and its quarterly magazine for new lacemakers, Early Days
+      In Lacemaking, carries patterns with detailed instructions for new lacemakers.
+  - h: What beginners pay
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Tina's Bobbin Lacemaking, Effingham, Surrey
+        - Two-day beginners' weekend, 10am to 3pm, up to five students; next dates from 21 November 2026
+        - £120
+      - - Lace classes, Stoke d'Abernon, Surrey (craftcourses.com)
+        - Weekly five-hour daytime mixed lace class
+        - £25 (as listed)
+      - - New England Lace Group members, Ipswich, Massachusetts
+        - 12-hour beginners' workshop over a weekend; bobbins, pins, thread, patterns and IOLI curriculum included
+        - $350 ($300 plus $50 materials)
+      - - Textile Arts Center, Brooklyn
+        - Bobbin Lace 101 weekend intensive, 23-24 January 2027; materials for sample making included
+        - $450
+    after: The Brooklyn Lace Guild's class calendar lists beginners' bobbin lace courses at John C. Campbell Folk School, Peters Valley, Snow Farm and other US craft schools; prices are on each school's
+      booking page.
+  faq:
+  - q: Do I need to buy a lace pillow and bobbins before a class?
+    a: Usually not. The Surrey tutor lends or sells second-hand equipment and advises against buying first, and the Ipswich workshop supplies bobbins and loaner pillows.
+  - q: What lace should a beginner start with?
+    a: Many classes begin with Torchon. The Textile Arts Center's Bobbin Lace 101 teaches Torchon basics, half stitch, linen stitch and whole stitch.
+  - q: How do I find a lace group near me?
+    a: In the UK, the Lace Guild publishes lists of groups and teachers by county and gives full contact details through its office. In the US, IOLI guilds and members can request details from its teacher
+      database.
+  - q: How long does it take to learn bobbin lace?
+    a: The basic stitches fit into a weekend. The Surrey course aims for a first finished piece plus one or two more in two days, and the Ipswich workshop covers a stitch sampler and a bookmark in 12 hours.
+  sources:
+  - label: The Lace Guild, Groups and teachers
+    url: https://www.laceguild.org/group-and-tutor-lists
+    checked: '2026-11-08'
+  - label: The Lace Guild, Membership
+    url: https://www.laceguild.org/guild-membership
+    checked: '2026-11-08'
+  - label: The Lace Guild, New to lacemaking
+    url: https://laceguild.org/post/new-to-lacemaking
+    checked: '2026-11-08'
+  - label: craftcourses.com, Weekend Beginners In-depth Workshops, Tina's Bobbin Lacemaking
+    url: https://www.craftcourses.com/courses/beginners-lace-making-taster-workshop
+    checked: '2026-11-08'
+  - label: craftcourses.com, Lace making courses in Surrey
+    url: https://www.craftcourses.com/courses/two-day-bobbin-lace-making-daytime-mixed-lace-workshops-stoke-d-abernon
+    checked: '2026-11-08'
+  - label: International Organization of Lace, Looking for a lace teacher?
+    url: https://main.internationalorganizationoflace.org/learning-resources/looking-for-a-lace-teacher
+    checked: '2026-11-08'
+  - label: The Boston Calendar, 12-Hour Intensive Beginner Bobbin Lace Workshop, Ipswich MA
+    url: https://www.thebostoncalendar.com/events/12-hour-intensive-beginner-bobbin-lace-workshop-ipswich-ma-nov-7-8
+    checked: '2026-11-08'
+  - label: Textile Arts Center, Bobbin Lace 101 (Weekend Intensive) (ACTIVE listing)
+    url: https://www.active.com/brooklyn-ny/classes/bobbin-lace-101-weekend-intensive-2027
+    checked: '2026-11-08'
+  - label: Brooklyn Lace Guild, Classes
+    url: https://brookyln-laceguild.squarespace.com/classes
+    checked: '2026-11-08'
+  - label: Seven Days, A Place for Lace (30 July 2008)
+    url: https://www.sevendaysvt.com/arts-culture/a-place-for-lace-2134414/
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: Evelyn Gant, Putnamville, Vermont
+    line: Began studying bobbin lace with Katharine Dopp, whom she met at the Shelburne Museum, went on to make silk neck laces for wedding gowns and has hosted a monthly lace group at her home.
+    title: A Place for Lace
+    outlet: Seven Days
+    url: https://www.sevendaysvt.com/arts-culture/a-place-for-lace-2134414/
+    checked: '2026-11-08'
+  kit:
+  - name: Lace bobbins
+    why: to wind the thread on; one Brooklyn class's supply list asks for 24
+    url: https://www.amazon.co.uk/s?k=bobbin+lace+bobbins
+  - name: Bobbin lace pillow
+    why: a firm base to pin the pricking and work on
+    url: https://www.amazon.co.uk/s?k=bobbin+lace+pillow
+  - name: Beginners' bobbin lace book
+    why: patterns and step-by-step stitches to practise between classes
+    url: https://www.amazon.co.uk/s?k=beginning+bobbin+lace+book
+  related:
+  - learn-embroidery
+  - learn-to-crochet
+  - join-a-knitting-group
+  - learn-a-heritage-craft
+- id: learn-the-saxophone
+  title: Learn to play the saxophone
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A first saxophone course gets you from embouchure and breath control to reading music, playing tunes in popular styles and improvising short phrases. Adult beginner bands in the US take people who
+    have never played a band instrument and teach them to read music as they go.
+  start:
+  - Book a beginners' class at an adult education college or a beginning band at a community music school; City Lit's Saxophone 1A needs no previous saxophone experience.
+  - Get an alto or tenor saxophone, bought or hired; City Lit does not recommend soprano or baritone for its beginners' course, and some music shops hire out a beginner alto by the month.
+  - Buy a box of reeds and the tutor book your teacher recommends, and plan on about 20 minutes' practice on at least four days a week.
+  links:
+  - label: 'City Lit: Saxophone 1A, for beginners (London)'
+    url: https://www.citylit.ac.uk/courses/saxophone-1a
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Morley College: Big Band Beginners, for saxophone and other players at Grade 3-4 (London)'
+    url: https://morleycollege.ac.uk/?p=486057
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Museum of Making Music: New Horizons Beginning Band, fall 2026 (Carlsbad, California)'
+    url: https://www.museumofmakingmusic.org/education/new-horizons-fall-band-session-2026
+    region: us
+    checked: '2026-11-08'
+  - label: 'Eastman Community Music School: New Horizons Green Band for beginners (Rochester, New York)'
+    url: https://www.esm.rochester.edu/community/?p=220
+    region: us
+    checked: '2026-11-08'
+  seo_title: 'Saxophone lessons for adult beginners: classes and bands'
+  description: What a beginners' saxophone course covers, which sax to start on, hiring an instrument, and what classes and beginner bands cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - City Lit's Saxophone 1A, an 11-week Saturday course in London, covers embouchure, breath control and tonguing, reading music for the saxophone, counting time, long notes, scales and studies, repertoire
+      in popular styles and improvisation. It is the first of three modules that make up the first year, and the college suggests about 20 minutes' practice on at least four days a week.
+    - You need your own instrument from the first week. City Lit asks for an alto or tenor saxophone, strength 2 reeds and a tutor book the tutor will recommend. Hiring is one way round the upfront cost;
+      Dawkes Music's beginner alto rental comes with a mouthpiece, two reeds, a case, a cleaning swab, cork grease and a neck strap.
+    - In the US, New Horizons bands are built for adults learning or relearning a band instrument. The University of Miami says its New Horizons Band is one of over 200 bands and orchestras in the New Horizons
+      International Music Association. The Museum of Making Music's Beginning Band in Carlsbad, California, is designed for adults who have never learned a concert band instrument and teaches them to read
+      music.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Saxophone 1A: 11 Saturday sessions of 90 minutes from 19 September 2026; no saxophone experience needed; bring your own alto or tenor'
+        - £229
+      - - Morley College, London
+        - 'Big Band Beginners: 12 Tuesday evenings of two hours from 15 September 2026; for players at about Grade 3-4 with little or no band experience'
+        - £285, or £215 concession
+      - - Museum of Making Music, Carlsbad, California
+        - 'New Horizons Beginning Band: Wednesdays, 12 August to 9 December 2026; for adults who have never learned a band instrument; alto, tenor and baritone sax among the instruments'
+        - $125 for the session
+      - - Eastman Community Music School, Rochester, New York
+        - 'New Horizons Green Band: Wednesday mornings for a year in two semesters; true beginners welcome; bring your own instrument'
+        - $210 a semester (2026-27)
+    after: Dawkes Music listed its Yamaha YAS-280 alto saxophone rental at £35 a month including VAT, with a three-month minimum, maintenance and insurance included and a £50 excess for loss, theft or damage
+      beyond repair.
+  faq:
+  - q: Which saxophone should a beginner start on?
+    a: Alto or tenor. City Lit's beginners' course asks for one of these and does not recommend soprano or baritone.
+  - q: Can I rent a saxophone instead of buying one?
+    a: Yes, from some music shops. Dawkes Music listed a beginner alto at £35 a month with a three-month minimum, and from month four half of each payment can be credited towards buying an instrument from
+      them.
+  - q: Do I need to read music to learn the saxophone?
+    a: No. City Lit's Saxophone 1A needs no previous saxophone experience and teaches music theory and reading as part of the course, and the Museum of Making Music's Beginning Band teaches students to
+      read music.
+  - q: How much should I practise the saxophone as a beginner?
+    a: City Lit suggests about 20 minutes on at least four days a week, using long notes, scales and studies.
+  sources:
+  - label: City Lit, Saxophone 1A (ME611A)
+    url: https://www.citylit.ac.uk/courses/saxophone-1a
+    checked: '2026-11-08'
+  - label: Morley College, Big Band Beginners (W26JPMA02A)
+    url: https://morleycollege.ac.uk/?p=486057
+    checked: '2026-11-08'
+  - label: Dawkes Music, Rent an alto saxophone
+    url: https://www.dawkes.co.uk/rent-an-alto-saxophone
+    checked: '2026-11-08'
+  - label: Museum of Making Music, New Horizons Fall Band Session 2026
+    url: https://www.museumofmakingmusic.org/education/new-horizons-fall-band-session-2026
+    checked: '2026-11-08'
+  - label: Eastman Community Music School, New Horizons Green Band
+    url: https://www.esm.rochester.edu/community/?p=220
+    checked: '2026-11-08'
+  - label: University of Miami Frost School of Music, New Horizons Band
+    url: https://www.musiced.frost.miami.edu/about/community-engagement/new-horizons-band/index.html
+    checked: '2026-11-08'
+  - label: Daily Herald, Prospect Heights retiree finds meaning in making music (1 March 2017)
+    url: https://www.dailyherald.com/?p=325910
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: George Blinick, Prospect Heights, Illinois
+    line: Took up the baritone saxophone after retiring as a pharmacist, having never played an instrument, learned to read music and became one of two charter members of the North Shore New Horizons Band.
+    title: Prospect Heights retiree finds meaning in making music
+    outlet: Daily Herald
+    url: https://www.dailyherald.com/?p=325910
+    checked: '2026-11-08'
+  kit:
+  - name: Saxophone reeds
+    why: City Lit asks beginners to bring strength 2 reeds to class
+    url: https://www.amazon.co.uk/s?k=alto+saxophone+reeds+strength+2
+  - name: Saxophone neck strap
+    why: takes the weight of the instrument while you play
+    url: https://www.amazon.co.uk/s?k=saxophone+neck+strap
+  related:
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+  - learn-the-piano
+  - learn-the-guitar
+- id: learn-the-flute
+  title: Learn to play the flute
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Beginners on the flute start by making a sound on the head joint alone, then build up embouchure, breath control and tonguing until they can read and play simple tunes. Once you can manage a few
+    notes, there are flute choirs and beginner bands that welcome players of all abilities.
+  start:
+  - Book a beginners' class at an adult education college or a community music school; City Lit's Flute 1A suits complete beginners and returning players.
+  - Get a student flute, bought or hired by the month from a music shop, and the tutor books your course asks for.
+  - Once you can play a few notes, look up a flute choir near you in the British Flute Society's directory, or join a beginner band.
+  links:
+  - label: 'City Lit: Flute 1A, for beginners (London)'
+    url: https://www.citylit.ac.uk/courses/flute-1a
+    region: uk
+    checked: '2026-11-08'
+  - label: 'British Flute Society: UK flute choir directory'
+    url: https://bfs.org.uk/flute-choir-directory
+    region: uk
+    checked: '2026-11-08'
+  - label: 'National Flute Association: Adult Flutist and Amateur Resources Committee'
+    url: https://www.nfaonline.org/committees/committee-web-pages/adult-flutist-amateur-resources-committee
+    region: us
+    checked: '2026-11-08'
+  - label: 'Museum of Making Music: New Horizons Beginning Band, fall 2026 (Carlsbad, California)'
+    url: https://www.museumofmakingmusic.org/education/new-horizons-fall-band-session-2026
+    region: us
+    checked: '2026-11-08'
+  seo_title: 'Flute lessons for adult beginners: classes and flute choirs'
+  description: What a beginners' flute course covers, hiring a flute, joining a flute choir or beginner band, and what classes cost in the UK and the US.
+  detail:
+  - h: What it's really like
+    p:
+    - City Lit's Flute 1A, an 11-session Friday evening course in London, starts with first sounds on the head joint, then embouchure, breath control, tone, posture, tonguing and slurring, reading the treble
+      clef and playing tunes, with introductory scales and arpeggios. You do not need to read music beforehand. The college suggests at least 20 minutes' practice a day on at least four days a week.
+    - You bring your own flute and cleaning accessories, plus two tutor books. Hiring is an option; Dawkes Music's beginner flute rental includes a hard case, a cleaning rod and a cleaning swab.
+    - Playing with others comes early. The British Flute Society's directory lists flute choirs by region, and some take beginners. In the US, the National Flute Association has a committee for adult amateurs,
+      from beginners to returning players, which runs an adult flute choir at its convention.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Flute 1A: 11 Friday evening sessions of 90 minutes from 18 September 2026; complete beginners and returners; bring your own flute'
+        - £229
+      - - Oldham Music Service, Oldham
+        - 'Late Starters band (Adult Training Wind Band): Wednesday evenings; for players with basic knowledge who can play and read a few notes'
+        - £71 a term
+      - - Flute-It!, Portsmouth (British Flute Society directory)
+        - 'Flute choir: Thursday evenings; all ages and abilities welcome'
+        - £3 a session
+      - - Museum of Making Music, Carlsbad, California
+        - 'New Horizons Beginning Band: Wednesdays, 12 August to 9 December 2026; for adults who have never learned a band instrument; flute among the instruments'
+        - $125 for the session
+    after: Dawkes Music listed its Yamaha YFL-212 beginner flute rental at £25 a month including VAT, with a three-month minimum and maintenance and insurance included.
+  faq:
+  - q: Do I need to read music to learn the flute?
+    a: No. City Lit says you do not need to read music before Flute 1A; reading treble clef notation is taught on the course.
+  - q: Can I hire a flute instead of buying one?
+    a: Yes, from some music shops. Dawkes Music listed a beginner flute at £25 a month with a three-month minimum, and from month four half of each payment can be credited towards buying an instrument from
+      them.
+  - q: Are there flute choirs for beginners?
+    a: Some. The British Flute Society's directory lists Piccolissimo in Southampton for beginners up to Grade 5, and groups such as Flute-It! in Portsmouth and the Chiddingfold Flute Group in Surrey welcome
+      all abilities.
+  - q: How much should I practise the flute?
+    a: City Lit suggests at least 20 minutes a day on at least four days a week for its beginners' course.
+  sources:
+  - label: City Lit, Flute 1A (ME111A)
+    url: https://www.citylit.ac.uk/courses/flute-1a
+    checked: '2026-11-08'
+  - label: Dawkes Music, Rent a flute in C
+    url: https://www.dawkes.co.uk/rent-a-flute-in-c
+    checked: '2026-11-08'
+  - label: British Flute Society, Flute choir directory
+    url: https://bfs.org.uk/flute-choir-directory
+    checked: '2026-11-08'
+  - label: British Flute Society, home page
+    url: https://bfs.org.uk
+    checked: '2026-11-08'
+  - label: Oldham Council, Adult Community Wind Band
+    url: https://www.oldham.gov.uk/info/200362/community_and_adult_groups/210/adult_community_wind_band
+    checked: '2026-11-08'
+  - label: National Flute Association, Adult Flutist and Amateur Resources Committee
+    url: https://www.nfaonline.org/committees/committee-web-pages/adult-flutist-amateur-resources-committee
+    checked: '2026-11-08'
+  - label: Museum of Making Music, New Horizons Fall Band Session 2026
+    url: https://www.museumofmakingmusic.org/education/new-horizons-fall-band-session-2026
+    checked: '2026-11-08'
+  - label: SUNY Fredonia news, James Gibbons of the New Horizons Band of Western New York (1 April 2009)
+    url: https://www.fredonia.edu/news/footballs-%E2%80%A6-flutes-retired-coach-trades-whistles-woodwinds
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: James Gibbons, South Buffalo, New York
+    line: Took up the flute after four decades of coaching football, with no musical background, and became a regular member of the New Horizons Band of Western New York at SUNY Fredonia.
+    title: James Gibbons of the New Horizons Band of Western New York
+    outlet: SUNY Fredonia
+    url: https://www.fredonia.edu/news/footballs-%E2%80%A6-flutes-retired-coach-trades-whistles-woodwinds
+    checked: '2026-11-08'
+  kit:
+  - name: Flute cleaning rod and cloth
+    why: for drying the inside of the flute after you play
+    url: https://www.amazon.co.uk/s?k=flute+cleaning+rod+cloth
+  - name: Folding music stand
+    why: holds your tutor book at eye level while you practise
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  related:
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+  - learn-the-piano
+  - learn-the-ukulele
+- id: learn-swing-dancing
+  title: Learn to swing dance (Lindy Hop)
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Lindy Hop is the partnered swing dance that grew up in Harlem's Black communities in the 1920s and 1930s, danced to jazz and full of improvisation. Beginners' classes such as Swing Patrol's rotate
+    partners, so you can turn up on your own.
+  start:
+  - Find a beginners' class or a one-day introduction run by a swing dance school, society or college near you.
+  - Sign up as a lead or a follow; you do not need to bring a partner.
+  - Go to the social dance after class if one is included; the Houston Swing Dance Society's beginner series comes with Sunday social dances.
+  links:
+  - label: 'Bishopsgate Institute: Dance in a Day, Lindy Hop with Swing Patrol (London)'
+    url: https://www.bishopsgate.org.uk/whats-on/activity/260426-dance-in-a-day-lindy-hop-2
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Morley College: Swing Dance for Absolute Beginners (London)'
+    url: https://morleycollege.ac.uk/courses/short-courses/swing-dance-for-absolute-beginners/
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Portland Community College: Lindy Hop Beginners (Oregon)'
+    url: https://www.pcc.edu/schedule/winter/dan/9dan620l
+    region: us
+    checked: '2026-11-08'
+  - label: 'Houston Swing Dance Society: book classes (Texas)'
+    url: https://www.hsds.org/book-classes
+    region: us
+    checked: '2026-11-08'
+  seo_title: 'Lindy Hop classes for beginners: swing dance near you'
+  description: What a beginners' Lindy Hop class teaches, whether you need a partner, and what swing dance classes and one-day courses cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - Beginners learn the six-count basic first. Portland Community College's four-week class covers six-count basics and the Lindy Circle, with the emphasis on connecting to the music and improvising.
+      The Houston Swing Dance Society splits its first level into four-week topics, six-count, eight-count, Charleston and swingouts, and you can start with any of them.
+    - It is a partnered dance with leads and follows, but you do not need to bring anyone. At the Bishopsgate Institute's Dance in a Day, taught by Swing Patrol, you sign up as a lead or a follow and partners
+      rotate through the afternoon.
+    - Social dancing is part of the deal. The Houston series includes Sunday social dances, and the Dallas Swing Dance Society holds dances on the second, third and fourth Saturdays of each month.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Bishopsgate Institute with Swing Patrol, London
+        - 'Dance in a Day: one Sunday afternoon, 14:00-17:30, covering six-beat and eight-beat Lindy Hop and Lindy Charleston; no experience necessary; dates listed April to September 2026'
+        - £45
+      - - Morley College, London
+        - Swing Dance Beginners' Taster on 9 January 2027, then a nine-week Saturday afternoon course from 16 January 2027
+        - £25 taster; course £215, or £160 concession
+      - - Portland Community College, Oregon
+        - 'Lindy Hop Beginners: Wednesday evenings, four weeks from 6 January or 3 February 2027; no need to bring a partner'
+        - $65 (three-week March section $49)
+      - - Houston Swing Dance Society, Texas
+        - Four-week Level 1 series, new topics from the first Sunday of each month; Sunday social dances included; no partner or experience needed
+        - $80
+  faq:
+  - q: Do I need a partner to learn Lindy Hop?
+    a: No. Portland Community College and the Houston Swing Dance Society both say no partner is needed, and at the Bishopsgate Institute's Dance in a Day partners rotate during the sessions.
+  - q: What is the difference between six-count and eight-count Lindy Hop?
+    a: They are two sets of basic steps, and beginners learn both. The Houston Swing Dance Society teaches six-count basics and eight-count basics as separate four-week topics.
+  - q: How much do swing dance classes cost?
+    a: Prices vary. Morley College listed a £25 taster and a nine-week course at £215, and the Houston Swing Dance Society listed $80 for a four-week series including social dances.
+  sources:
+  - label: Bishopsgate Institute, Dance in a Day, Lindy Hop
+    url: https://www.bishopsgate.org.uk/whats-on/activity/260426-dance-in-a-day-lindy-hop-2
+    checked: '2026-11-08'
+  - label: Morley College, Swing Dance for Absolute Beginners
+    url: https://morleycollege.ac.uk/courses/short-courses/swing-dance-for-absolute-beginners/
+    checked: '2026-11-08'
+  - label: Portland Community College, Lindy Hop Beginners (Winter 2027)
+    url: https://www.pcc.edu/schedule/winter/dan/9dan620l
+    checked: '2026-11-08'
+  - label: Houston Swing Dance Society, Book classes
+    url: https://www.hsds.org/book-classes
+    checked: '2026-11-08'
+  - label: KERA News, 'Like recess for adults.' How a Dallas dance club is preserving history
+    url: https://www.keranews.org/arts-culture/2026-08-20/like-recess-for-adults-how-a-dallas-dance-club-is-preserving-history
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: Leo Guajardo, Dallas, Texas
+    line: Arrived at the Dallas Swing Dance Society as a dance novice, built up his skills over time and now leads classes there.
+    title: '''Like recess for adults.'' How a Dallas dance club is preserving history'
+    outlet: KERA News
+    url: https://www.keranews.org/arts-culture/2026-08-20/like-recess-for-adults-how-a-dallas-dance-club-is-preserving-history
+    checked: '2026-11-08'
+  kit:
+  - name: Suede-soled dance shoes
+    why: a smooth sole for turning and sliding on a wooden dance floor
+    url: https://www.amazon.co.uk/s?k=suede+sole+dance+shoes
+  related:
+  - take-a-ballroom-class
+  - go-to-a-folk-dance
+  - scottish-country-dancing
+- id: learn-tap-dancing
+  title: Learn to tap dance
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Tap turns your feet into a percussion instrument, so the first thing you learn is rhythm, not a routine. Short beginners' courses run for four to eight weeks, and some let you start in hard-soled
+    shoes before you buy taps.
+  start:
+  - 'Book a taster or a short beginners'' course: City Lit in London runs a one-off taster, Pineapple Dance Studios a six-week introduction, and 92NY in New York an absolute-beginner class.'
+  - Check the footwear rule before the first class; some introductions accept hard-soled shoes or trainers, while City Lit's beginners' course says tap shoes are essential.
+  - If you want a goal later on, ask your teacher about the ISTD's adult tap tests, which run at Bronze, Silver and Gold.
+  links:
+  - label: 'City Lit: beginners'' tap dance courses and taster (London)'
+    url: https://www.citylit.ac.uk/courses/performing-arts/dance/tap-dance/beginners
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Pineapple Dance Studios: Introduction to Tap, six-week course'
+    url: https://www.pineapple.uk.com/blogs/dance-courses-at-pineapple-dance-studios/introduction-to-tap-course-with-amy-ireland
+    region: uk
+    checked: '2026-11-08'
+  - label: '92NY: Tap (Absolute Beginner), adult dance class (New York)'
+    url: https://www.92ny.org/class/tap-absolute-beginner
+    region: us
+    checked: '2026-11-08'
+  - label: 'Broadway Dance Center: Absolute Beginner Workshops, including tap'
+    url: https://broadwaydancecenter.com/abw
+    region: us
+    checked: '2026-11-08'
+  seo_title: 'Tap dance classes for adult beginners: what to expect'
+  description: What a beginners' tap course covers, whether you need tap shoes on day one, what classes cost in the UK and US, and where to find one.
+  detail:
+  - h: What it's really like
+    p:
+    - First classes are about rhythm and a handful of basic steps. Pineapple Dance Studios' six-week introduction covers tap elements, rhythm basics and musicality, and aims to get absolute beginners ready
+      for a regular beginners' class. Its other introductory course builds the steps into a routine over five weeks and spends the sixth on a recap.
+    - Shoe rules differ, so read the listing. Pineapple says tap shoes are not needed for its introduction and hard-soled shoes or trainers will do, and Broadway Dance Center's beginners can wear tap shoes
+      or any hard-soled shoe that makes a loud sound. City Lit says no special footwear is needed to get started, but its beginners' course (eight dates from 11 January 2027) lists tap shoes as essential.
+  - h: Ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Tap dance: taster, Tuesday evening from 8 December 2026'
+        - £29
+      - - City Lit, London
+        - 'Tap dance: beginners, eight Monday evening dates from 11 January 2027; tap shoes essential'
+        - £199, or £139 concession
+      - - Pineapple Dance Studios
+        - 'Introduction to Tap: six Sunday classes of 60 minutes (spring 2026); hard-soled shoes or trainers'
+        - £89, including the membership fee
+      - - 92NY, New York
+        - 'Tap (Absolute Beginner): Wednesdays 12-1pm, 18 November to 20 January'
+        - $154
+      - - Broadway Dance Center
+        - 'Absolute Beginner Workshops: four or six weekly classes of 90 minutes, age 18 and over'
+        - Not listed on the page
+    after: Pineapple's courses are non-refundable, but cancelling at least 48 hours before the start gets account credit. Broadway Dance Center gives no refunds after the first class.
+  faq:
+  - q: Do I need tap shoes for my first tap class?
+    a: Not always. Pineapple Dance Studios' introduction accepts hard-soled shoes or trainers, but City Lit's beginners' course says tap shoes are essential, so check the listing.
+  - q: Can adults learn tap dancing from scratch?
+    a: Yes. City Lit, Pineapple, 92NY and Broadway Dance Center all run classes for complete beginners; Broadway Dance Center's workshops are for adults aged 18 and over with no experience.
+  - q: What do you learn in a beginner tap class?
+    a: Basic steps, rhythm and musicality. 92NY's absolute-beginner class also covers basic tap vocabulary, warm-ups and class etiquette.
+  - q: Are there tap exams for adults?
+    a: The ISTD sells notes for its adult popular tap tests at Bronze, Silver and Gold. Its graded tap class examinations run from Grade 1 to Grade 6 and are taken in the usual class with an examiner watching.
+  sources:
+  - label: City Lit, Tap dance courses for beginners
+    url: https://www.citylit.ac.uk/courses/performing-arts/dance/tap-dance/beginners
+    checked: '2026-11-08'
+  - label: Pineapple Dance Studios, Introduction to Tap with Amy Ireland (6 weeks)
+    url: https://www.pineapple.uk.com/blogs/dance-courses-at-pineapple-dance-studios/introduction-to-tap-course-with-amy-ireland
+    checked: '2026-11-08'
+  - label: Pineapple Dance Studios, Intro to Tap with Connor Hughes (6 weeks)
+    url: https://pineapple.uk.com/blogs/dance-courses-at-pineapple-dance-studios/intro-to-tap-with-connor-hughes-6wk
+    checked: '2026-11-08'
+  - label: 92NY, Tap (Absolute Beginner)
+    url: https://www.92ny.org/class/tap-absolute-beginner
+    checked: '2026-11-08'
+  - label: Broadway Dance Center, Absolute Beginner Workshops
+    url: https://broadwaydancecenter.com/abw
+    checked: '2026-11-08'
+  - label: ISTD shop, Adult Popular Tap Notes for Bronze, Silver and Gold
+    url: https://shop.istd.org/shop/examination-specifications/item-adult-senior-medal-tap-tests-bronze-to-gold
+    checked: '2026-11-08'
+  - label: ISTD, Tap class examinations
+    url: https://www.istd.org/examinations/examinations-structure/tap-class-examinations/
+    checked: '2026-11-08'
+  - label: Next Avenue, 85-Year-Old Can Now Cross Tap Dancing Off His Bucket List
+    url: https://www.nextavenue.org/85-year-old-can-now-cross-tap-dancing-off-his-bucket-list/
+    checked: '2026-11-08'
+  kit:
+  - name: Tap shoes
+    why: shoes with metal plates on the toe and heel that make the sound; some beginners' courses require them
+    url: https://www.amazon.co.uk/s?k=tap+shoes+adult
+  - name: Practice tap board
+    why: a portable surface for practising steps at home
+    url: https://www.amazon.co.uk/s?k=tap+dance+practice+board
+  related:
+  - take-a-ballroom-class
+  - learn-the-drums
+  - scottish-country-dancing
+  - yoga-class
+- id: learn-salsa
+  title: Learn to dance salsa
+  category: connect
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Salsa is a social dance, and most beginners' classes rotate partners, so you can turn up alone. Four- to eight-week courses teach the basic footwork, leading and following, and a few turns.
+  start:
+  - Choose a style to start with; LA-style courses teach the cross-body lead, while Cuban courses teach dancing in hold, the open "casino" position and often the group wheel, or rueda.
+  - 'Book a short beginners'' course: an adult education college, a community college or an arts centre. You do not need to bring a partner.'
+  - Wear comfortable shoes that let you turn; City Lit asks students to avoid stilettos, sandals and platforms.
+  links:
+  - label: 'City Lit: Salsa dance, beginners (London)'
+    url: https://www.citylit.ac.uk/courses/salsa-dance-beginners/ddp041-2526
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Falmouth University arts centre: Cuban salsa course for adult beginners (Cornwall)'
+    url: https://www.falmouth.ac.uk/arts-centre/whats-on/cuban-salsa-dance-beginners-spring-2026
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Portland Community College: Salsa Beginners, non-credit (Oregon)'
+    url: https://www.pcc.edu/schedule/fall/dan/9dan601w/
+    region: us
+    checked: '2026-11-08'
+  - label: 'Merrymeeting Adult Education: Cuban Salsa, Beginners (Maine)'
+    url: https://merrymeeting.maineadulted.com/course/cuban-salsa-beginners
+    region: us
+    checked: '2026-11-08'
+  seo_title: 'Salsa classes for beginners: what to expect and cost'
+  description: What a beginners' salsa course teaches, whether you need a partner, Cuban or LA style, what to wear, and what courses cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - Classes are taught in a group and partners change during the class. City Lit says you will often be paired with a partner but need not bring one, and Portland Community College notes that partners
+      rotate. Falmouth's Cuban course asks only whether you would like to lead, follow or do either.
+    - A session usually runs warm-up, steps, then practice. City Lit's beginners' course opens with a warm-up and stretch, teaches steps and patterns, and ends with a short routine. Falmouth's Thursday-evening
+      course covers footwork, dancing in hold, the open "casino" position and inside and outside turns, and the rueda (wheel), and finishes each session with social practice to music.
+  - h: Ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Salsa dance, beginners; six Monday mornings, autumn 2025; LA-style cross-body lead plus Cuban dances such as mambo, pachanga and rumba
+        - £119, or £83 concession
+      - - Falmouth University arts centre, Cornwall
+        - Cuban salsa for adult beginners; four Thursday evenings of two and a half hours, spring 2026
+        - £36
+      - - Portland Community College, Oregon
+        - Salsa Beginners, non-credit; four- to six-week evening sections, autumn 2026
+        - $65 to $95 depending on section
+      - - Merrymeeting Adult Education, Topsham, Maine
+        - Cuban Salsa, Beginners; five Wednesday evenings, spring 2026; includes an introduction to rueda
+        - $75
+    after: Merrymeeting recommends coming with a partner. Portland Community College also offers optional extra practice times.
+  faq:
+  - q: Do I need a partner to learn salsa?
+    a: No. City Lit and Portland Community College teach in groups and rotate partners; Merrymeeting Adult Education recommends a partner.
+  - q: What is the difference between Cuban and LA-style salsa?
+    a: Beginners' LA-style courses teach the cross-body lead. Cuban courses such as Falmouth's teach dancing in hold, the open "casino" position and the rueda, a group dance in a wheel.
+  - q: What shoes should I wear to a salsa class?
+    a: Comfortable, breathable shoes you can turn in. City Lit asks students to avoid stilettos, sandals and platforms, and to skip tight or restrictive clothing.
+  - q: How long does it take to learn salsa?
+    a: A first course runs four to eight weeks and covers basic footwork, timing, leading and following and a few turns. Falmouth suggests that people who took a few classes long ago join the beginners'
+      sessions again.
+  sources:
+  - label: City Lit, Salsa dance, beginners (DDP041)
+    url: https://www.citylit.ac.uk/courses/salsa-dance-beginners/ddp041-2526
+    checked: '2026-11-08'
+  - label: City Lit, Salsa dance, beginners
+    url: https://www.citylit.ac.uk/courses/salsa-dance-beginners
+    checked: '2026-11-08'
+  - label: 'Falmouth University arts centre, Cuban Salsa Dance Course for Adult Beginners: Spring 2026'
+    url: https://www.falmouth.ac.uk/arts-centre/whats-on/cuban-salsa-dance-beginners-spring-2026
+    checked: '2026-11-08'
+  - label: Portland Community College, Salsa Beginners (9DAN601W), fall 2026
+    url: https://www.pcc.edu/schedule/fall/dan/9dan601w/
+    checked: '2026-11-08'
+  - label: 'Merrymeeting Adult Education, Cuban Salsa: Beginners'
+    url: https://merrymeeting.maineadulted.com/course/cuban-salsa-beginners
+    checked: '2026-11-08'
+  - label: Express & Star, Salsa granny shimmies to title
+    url: https://www.expressandstar.com/news/2009/12/10/salsa-granny-shimmies-to-title
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: Paddy Jones, originally from Stourbridge
+    line: Began salsa dancing after her husband died and five years later won the Spanish version of Britain's Got Talent with an acrobatic salsa routine.
+    title: Salsa granny shimmies to title
+    outlet: Express & Star
+    url: https://www.expressandstar.com/news/2009/12/10/salsa-granny-shimmies-to-title
+    checked: '2026-11-08'
+  kit:
+  - name: Latin dance shoes
+    why: a smooth sole for turning on a studio or social dance floor
+    url: https://www.amazon.co.uk/s?k=latin+salsa+dance+shoes
+  - name: Suede shoe brush
+    why: cleans suede dance soles so they keep the same slide
+    url: https://www.amazon.co.uk/s?k=suede+dance+shoe+brush
+  related:
+  - take-a-ballroom-class
+  - go-to-a-folk-dance
+  - scottish-country-dancing
+  - join-u3a-or-olli
+- id: try-line-dancing
+  title: Try a line dancing class
+  category: move
+  kind: experience
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Line dancing needs no partner and no physical contact, and a first class teaches two or three short dances built from a few named steps such as the grapevine. Council and adult-education courses
+    cost a few pounds a session.
+  start:
+  - Look for a beginners' course at an adult-education service, a community college or a parks and recreation centre; Coventry's adult education runs five-week beginners' courses.
+  - Check the footwear advice for your class, as it varies; Bristol Folk House asks for shoes without grip, Dance City lists dance sneakers.
+  - Once you know a few dances, try a free lesson at a dance hall such as Category 10 in Nashville, where instructors call popular dances for all levels.
+  links:
+  - label: 'Coventry adult education: Line Dancing Beginners, Central Hall'
+    url: https://www.coventry.gov.uk/directory-record/105257/line-dancing-beginners-central-hall
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Bristol Folk House: Line Dance Beginners (evening class)'
+    url: https://www.bristolfolkhouse.co.uk/courses/print/21308
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Dance City: line dancing class for absolute beginners (Newcastle)'
+    url: https://www.dancecity.co.uk/class/295699/line-dancing-with-victoria-18
+    region: uk
+    checked: '2026-11-08'
+  - label: 'Prince George Parks & Recreation: Line Dancing, Beginner (Virginia)'
+    url: https://www.active.com/prince-george-va/dance/classes/line-dancing-beginner-november-2026
+    region: us
+    checked: '2026-11-08'
+  - label: 'Category 10 Nashville: free line dance lessons'
+    url: https://www.category10.com/?p=8183
+    region: us
+    checked: '2026-11-08'
+  seo_title: 'Line dancing for beginners: classes near you and cost'
+  description: What happens in a beginners' line dancing class, what to wear on your feet, and what council, college and dance-hall classes cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - Each week adds a dance. Dance City's Thursday-morning beginners' class in Newcastle teaches two or three basic dances and steps such as the grapevine in week one, then recaps and adds one new dance
+      each week, mostly to country music. Coventry's beginners' course covers grapevines, weaves, hitches and shuffles in traditional and modern routines at varied tempos.
+    - It is danced on your own in rows, so there is no partner to find. Bristol Folk House describes it as a sociable dance that needs neither a partner nor physical contact.
+  - h: Ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Coventry adult education, Central Hall
+        - Five Monday afternoons of one hour from 21 September 2026, for new or returning dancers
+        - £22.50, or £10 with GoCV+
+      - - Bristol Folk House
+        - Five Monday evenings of 45 minutes from 8 June 2026
+        - £36, £32.40 over 65, £28.80 on benefits
+      - - Prince George Parks & Recreation, Virginia
+        - Five Thursday evenings of 45 minutes, 5 November to 10 December 2026, ages 18 to 99; limited to 25
+        - $25 per participant per class (five weeks)
+      - - Category 10, Nashville
+        - Free lessons on select days Thursday to Sunday in Hurricane Hall; 21 and over after 8pm
+        - Free
+    after: Coventry asks students to bring water and wear loose, comfortable clothing. Prince George's registration closes the day before the first class or when the class is full.
+  faq:
+  - q: Do I need a partner for line dancing?
+    a: No. Bristol Folk House describes line dancing as a sociable dance that needs no partner or physical contact.
+  - q: What shoes should I wear for line dancing?
+    a: Ask your teacher, because advice varies. Bristol Folk House asks for shoes without grip, Coventry asks for flexible, non-slip, supportive footwear, and Dance City lists dance sneakers.
+  - q: What do you learn in a beginners' line dancing class?
+    a: Two or three basic dances in the first week at Dance City, with one new dance added each week. Coventry's course covers steps such as grapevines, weaves, hitches and shuffles.
+  - q: How much do line dancing classes cost?
+    a: Coventry adult education listed £22.50 for a five-week beginners' course and Bristol Folk House £36. Category 10 in Nashville lists its lessons as free.
+  sources:
+  - label: Coventry City Council, Line Dancing Beginners, Central Hall (CH-LFD26501)
+    url: https://www.coventry.gov.uk/directory-record/105257/line-dancing-beginners-central-hall
+    checked: '2026-11-08'
+  - label: Bristol Folk House, Line Dance Beginners (Evening Class)
+    url: https://www.bristolfolkhouse.co.uk/courses/print/21308
+    checked: '2026-11-08'
+  - label: Dance City, Line dancing with Victoria
+    url: https://www.dancecity.co.uk/class/295699/line-dancing-with-victoria-18
+    checked: '2026-11-08'
+  - label: Prince George Parks & Recreation, Line Dancing Beginner, November 2026 (ACTIVE listing)
+    url: https://www.active.com/prince-george-va/dance/classes/line-dancing-beginner-november-2026
+    checked: '2026-11-08'
+  - label: Category 10 Nashville, Free Line Dancing
+    url: https://www.category10.com/?p=8183
+    checked: '2026-11-08'
+  - label: Category 10 Nashville, Line Dancing Lessons
+    url: https://www.category10.com/?p=2895
+    checked: '2026-11-08'
+  - label: Spenborough Guardian, Anne dances into retirement (30 September 2014)
+    url: https://www.spenboroughguardian.co.uk/news/anne-dances-retirement-2265414
+    checked: '2026-11-08'
+  inspire:
+  - kind: read
+    person: Anne Whitfield, Cleckheaton
+    line: Joined U3A line dancing classes and went on to tutor the group at Cleckheaton Town Hall for ten years, running it weekly rather than fortnightly.
+    title: Anne dances into retirement
+    outlet: Spenborough Guardian
+    url: https://www.spenboroughguardian.co.uk/news/anne-dances-retirement-2265414
+    checked: '2026-11-08'
+  kit:
+  - name: Dance sneakers
+    why: trainers made for dancing; Dance City lists them for its beginners' class
+    url: https://www.amazon.co.uk/s?k=dance+sneakers+adult
+  - name: Water bottle
+    why: Coventry adult education asks line dancers to bring one
+    url: https://www.amazon.co.uk/s?k=reusable+water+bottle
+  related:
+  - go-to-a-folk-dance
+  - scottish-country-dancing
+  - take-a-ballroom-class
+  - join-u3a-or-olli

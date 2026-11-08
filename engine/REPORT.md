@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-08)
 
-54 sources, 79 statements, 12 event profiles. Core 49, supported 30, thin 0, contested 0.
+57 sources, 81 statements, 12 event profiles. Core 50, supported 30, thin 1, contested 0.
 
 ## Sources by tier
 
@@ -57,6 +57,8 @@
 - National Weather Service (NOAA), *Lightning safety outdoors, "When a Safe Building or Vehicle is Nearby"* (2026). Opened 2026-11-07.
 - USDA Forest Service, Pike-San Isabel National Forests, *Mount Elbert (Fourteener) (last updated 15 April 2026)* (2026). Opened 2026-11-07.
 - Tanabe City Kumano Tourism Bureau, *Kumano Kodo tips and safety* (2026). Opened 2026-11-08.
+- RNLI (Royal National Lifeboat Institution), *Float to Live (undated page; year is the year opened)* (2026). Opened 2026-11-08.
+- Swim England (Open Water Swimming Hub), *Swim England issues safety advice for open water swimming in hot weather (19 July 2022)* (2022). Opened 2026-11-08.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -64,6 +66,7 @@
 - England Athletics (Jo Pavey, five-time Olympian), *Top marathon tips from five-time Olympian Jo Pavey* (2023). Opened 2026-10-27.
 - Hal Higdon (marathon coach and author), *Novice 1 marathon training programme* (2026). Opened 2026-10-27.
 - RunnersConnect (Jeff Gaudette, running coach since 2005 and former Olympic Trials qualifier), *What is a down week in running? How and when to take one* (2026). Opened 2026-10-27.
+- Outdoor Swimming Society (Kate Rew, author of The Outdoor Swimmers' Handbook), *Risks of Cold Water (published 3 February 2017, updated 30 May 2026)* (2026). Opened 2026-11-08.
 
 **1. General**
 - Wanderlust (with advice from the Long Distance Walkers Association and experienced trekkers), *How to prepare for a long-distance trek* (2026). Opened 2026-10-27.
@@ -87,12 +90,14 @@
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
 | core | 9 | recovery | Plan rest days into every week, and take an easier day when your legs are heavy. | nhs-c25k, higdon-novice1, bmc-long-distance |
 | core | 9 | feet | Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. | nhs-blisters, ea-pavey-marathon, bmc-long-distance |
-| core | 9 | on the day | Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
+| core | 9 | on the day | Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather |
 | core | 9 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe |
 | core | 9 | on the day | Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
+| core | 9 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water, barwood-2024, oss-cold-water |
 | core | 8 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
+| core | 8 | warning signs | In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. | rnli-cold-water-2025, swimeng-stay-safe, rnli-float, swimeng-hot-weather, oss-cold-water |
 | core | 7 | key session | Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. | higdon-novice1, bmc-hill-fit, emf-half-beginner |
 | core | 7 | body maintenance | Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground. | bmc-hill-fit, nhs-strength-exercises |
 | core | 7 | recovery | If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. | ea-pavey-marathon, nhs-c25k |
@@ -101,16 +106,15 @@
 | core | 7 | why | The long session prepares you for the length of the day itself. Its pace does not matter; covering the time or distance does, so keep it at a conversational effort. | higdon-novice1, bmc-hill-fit, ydnpa-three-peaks |
 | core | 7 | why | Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. | ea-training-pace, ijspp-2010-intensity |
 | core | 7 | why | Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. | nhs-c25k, rc-down-weeks |
-| core | 7 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water, barwood-2024 |
 | core | 6 | body maintenance | Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. | lauersen-2014, bmc-hill-fit |
 | core | 6 | fuel and drink | On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. | bmc-hill-fit, issn-ultra-2019 |
 | core | 6 | fuel and drink | Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. | ea-pavey-marathon, issn-ultra-2019 |
 | core | 6 | kit | In the later weeks, train with the pack and the kit you will carry on the day so nothing is new. | bmc-hill-fit, ydnpa-three-peaks, wanderlust-trek-prep |
 | core | 6 | on the day | In high mountains thunderstorms usually build in the afternoon. Check the forecast before you go and stay away if a high chance of thunderstorms is forecast; start early and plan to be down by noon; keep off hilltops and ridge tops in a storm, and at the first sign of one get below the treeline. Carry rain gear and warm layers. | nws-lightning-outdoors, usfs-elbert |
 | core | 6 | why | Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. | bosquet-2007, ea-pavey-marathon |
-| core | 6 | warning signs | In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. | rnli-cold-water-2025, swimeng-stay-safe |
 | core | 6 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water |
 | core | 6 | warning signs | If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. | rnli-cold-water-2025, swimeng-stay-safe |
+| core | 6 | key session | Practise floating on your back at a supervised pool or venue so you can do it without thinking. Tilt your head back with your ears under the water, spread your arms and legs, and keep your breathing calm; your legs may sink, and that is fine. If cold water takes your breath away, float for about a minute until your breathing is under control, then call for help or swim to safety. | rnli-float, swimeng-hot-weather |
 | core | 6 | key session | Build one long ride a week at an easy pace, growing gradually towards the distance of the event; Cycling UK's plan for a 100 km ride takes the long ride from 15 to 25 km up to 90 to 100 km over nine weeks. | cyclinguk-100km, bc-sofa-50km |
 | core | 6 | intensity | Judge effort by talking. On easy rides you can hold a conversation, on steady efforts you can manage short sentences, and only the short hard efforts should leave you out of breath. | cyclinguk-100km, bc-sofa-50km |
 | core | 6 | kit | Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. | cyclinguk-100km, bc-sofa-50km |
@@ -151,6 +155,7 @@
 | supported | 3 | key session | With three days a week, swim once or twice working on technique, ride once at a steady pace and run twice, one easy and one a little faster. Regular sessions of 30 to 45 minutes are enough to start, rather than long, hard ones. | tri-ireland-first |
 | supported | 3 | on the day | Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast. | usat-brick |
 | supported | 3 | on the day | In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. | britri-beginners-wales |
+| thin | 2 | on the day | You can feel colder after you get out of cold water than you did in it (afterdrop), so get dry, dressed and warm as soon as you are out. | oss-cold-water |
 
 ## Coverage by kind of challenge
 
@@ -160,7 +165,7 @@
 - hill: 10 usable statements of its own
 - multiday: 9 usable statements of its own
 - running: 8 usable statements of its own
-- swimming: 15 usable statements of its own
+- swimming: 16 usable statements of its own
 - walking: 8 usable statements of its own
 
 ## Disagreements and how they were resolved

@@ -416,13 +416,13 @@ guidance:
     applies: [swimming]
     use: safety
     text: Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back.
-    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water]
+    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather]
   - id: ow-cold-shock
     topic: warning signs
     applies: [swimming]
     use: safety
     text: In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes.
-    for: [rnli-cold-water-2025, swimeng-stay-safe]
+    for: [rnli-cold-water-2025, swimeng-stay-safe, rnli-float, swimeng-hot-weather, oss-cold-water]
   - id: ow-cold-muscles
     topic: warning signs
     applies: [swimming]
@@ -452,13 +452,27 @@ guidance:
     applies: [swimming]
     use: advice
     text: Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months.
-    for: [usms-open-water, barwood-2024]
+    for: [usms-open-water, barwood-2024, oss-cold-water]
   - id: ow-pool-skills
     topic: key session
     applies: [swimming]
     use: rule
     text: Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest.
     for: [usms-open-water]
+  - id: ow-float-practise
+    topic: key session
+    applies: [swimming]
+    events: [open-water-mile]
+    use: rule
+    text: Practise floating on your back at a supervised pool or venue so you can do it without thinking. Tilt your head back with your ears under the water, spread your arms and legs, and keep your breathing calm; your legs may sink, and that is fine. If cold water takes your breath away, float for about a minute until your breathing is under control, then call for help or swim to safety.
+    for: [rnli-float, swimeng-hot-weather]
+  - id: ow-afterdrop
+    topic: on the day
+    applies: [swimming]
+    events: [open-water-mile]
+    use: advice
+    text: You can feel colder after you get out of cold water than you did in it (afterdrop), so get dry, dressed and warm as soon as you are out.
+    for: [oss-cold-water]
   - id: why-specific-swim
     topic: why
     role: specific
