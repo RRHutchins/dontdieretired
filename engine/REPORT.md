@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-07)
+# Guidance engine report (2026-11-08)
 
-53 sources, 78 statements, 12 event profiles. Core 49, supported 29, thin 0, contested 0.
+54 sources, 79 statements, 12 event profiles. Core 49, supported 30, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -56,6 +56,7 @@
 - South West Coast Path Association, *Safety advice* (2026). Opened 2026-11-07.
 - National Weather Service (NOAA), *Lightning safety outdoors, "When a Safe Building or Vehicle is Nearby"* (2026). Opened 2026-11-07.
 - USDA Forest Service, Pike-San Isabel National Forests, *Mount Elbert (Fourteener) (last updated 15 April 2026)* (2026). Opened 2026-11-07.
+- Tanabe City Kumano Tourism Bureau, *Kumano Kodo tips and safety* (2026). Opened 2026-11-08.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -135,6 +136,7 @@
 | supported | 3 | on the day | Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month. | inyo-whitney-leaflet |
 | supported | 3 | before you start | Plan for the snow-free season, usually July to late September. When snow or ice is on the mountain it needs winter mountaineering skills and equipment. | inyo-whitney, inyo-whitney-leaflet |
 | supported | 3 | on the day | On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. | bmc-long-distance, wanderlust-trek-prep |
+| supported | 3 | on the day | In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them rather than treating the walk as a race. | tanabe-kumano-tips |
 | supported | 3 | key session | Build your training walks from a few miles up to a full day's distance, carrying the pack you will use. | wanderlust-trek-prep, bmc-hill-fit |
 | supported | 3 | warning signs | In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. | mrew-safety |
 | supported | 3 | before you start | The Coast to Coast is a demanding trail, hardest at the western end through the Lake District, where waymarks usually stop above the fell wall. Some high sections may be difficult in winter or bad weather; know the low-level options and use them when the weather is poor. | govuk-c2c |
@@ -156,7 +158,7 @@
 - cycling: 5 usable statements of its own
 - endurance: 16 usable statements of its own
 - hill: 10 usable statements of its own
-- multiday: 8 usable statements of its own
+- multiday: 9 usable statements of its own
 - running: 8 usable statements of its own
 - swimming: 15 usable statements of its own
 - walking: 8 usable statements of its own

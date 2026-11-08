@@ -1,1 +1,8 @@
-
+# Photo research queue for tools/photos.py search (RUNBOOK §6l).
+# <article slug, or list-<activity id>>: [Wikimedia Commons search phrases, or an exact "File:….jpg" title]
+# Results land on the photo-research branch. Empty this file once the photos are chosen.
+list-drive-route-66: ["Route 66 Seligman Arizona", "Historic Route 66 Oatman Highway Sitgreaves Pass", "Blue Swallow Motel Tucumcari"]
+list-cross-america-by-train: ["California Zephyr Glenwood Canyon", "California Zephyr Donner Lake", "California Zephyr Colorado River"]
+list-track-mountain-gorillas-in-bwindi: ["Mountain gorilla Bwindi Impenetrable", "Bwindi Impenetrable Forest", "Gorilla Buhoma"]
+list-try-glassblowing: ["glassblowing furnace gather", "glass blowing pipe studio"]
+list-try-stone-carving: ["stone carving chisel mallet", "stonemason carving workshop"]

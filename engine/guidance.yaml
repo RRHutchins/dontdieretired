@@ -227,6 +227,12 @@ guidance:
     use: advice
     text: On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days.
     for: [bmc-long-distance, wanderlust-trek-prep]
+  - id: multiday-heat
+    topic: on the day
+    applies: [multiday]
+    use: advice
+    text: In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them rather than treating the walk as a race.
+    for: [tanabe-kumano-tips]
   - id: build-day-walks
     topic: key session
     applies: [multiday, walking]
