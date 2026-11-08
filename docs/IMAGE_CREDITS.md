@@ -8,6 +8,7 @@ Each photo is resized for the web and not otherwise changed.
 |---|---|---|---|---|---|
 | alex-worsick-train-driver | File:Cab of a Class 317 (2).jpg | Matthew Black from London, UK | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Cab_of_a_Class_317_(2).jpg | 2026-10-24 |
 | amy-gubser-golden-gate-farallon-swim-55 | File:Remains of Farallon Islands Light in 2014.jpg | Frank Schulenburg | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Remains_of_Farallon_Islands_Light_in_2014.jpg | 2026-10-07 |
+| angi-mariani-biomedical-science | File:RS1497 Waterfront location (32)-lpr.jpg | We1980U0 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:RS1497_Waterfront_location_(32)-lpr.jpg | 2026-11-08 |
 | barbara-odonnell-mountain-leader | File:Comeragh Mountains Lake.jpg | Mik Herman | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Comeragh_Mountains_Lake.jpg | 2026-10-14 |
 | betty-brussel-99-three-world-records | File:Swimming pool with lane ropes in place.jpg | Xander from Yellowknife, NT, Canada | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Swimming_pool_with_lane_ropes_in_place.jpg | 2026-10-07 |
 | birdwatching-for-beginners | File:Birdwatching hide at Leighton Moss RSPB Reserve - geograph.org.uk - 4335331.jpg | Jonathan Hutchins | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Birdwatching_hide_at_Leighton_Moss_RSPB_Reserve_-_geograph.org.uk_-_4335331.jpg | 2026-10-14 |
@@ -39,6 +40,7 @@ Each photo is resized for the web and not otherwise changed.
 | list-climb-mount-st-helens | File:Mount St. Helens lava dome panorama July 2014.jpg | Moxfyre | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Mount_St._Helens_lava_dome_panorama_July_2014.jpg | 2026-11-01 |
 | list-climb-scafell-pike | File:Scafell Pike - geograph.org.uk - 2879640.jpg | Michael Graham | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Scafell_Pike_-_geograph.org.uk_-_2879640.jpg | 2026-11-01 |
 | list-climb-yr-wyddfa | File:Yr Wyddfa towards Llyn Llydaw Crib Goch 2019 01.jpg | Julian Herzog ( Website ) | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Yr_Wyddfa_towards_Llyn_Llydaw_Crib_Goch_2019_01.jpg | 2026-11-01 |
+| list-dark-sky-place | File:Kielder Observatory - geograph.org.uk - 8377908.jpg | Graham Hogg | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Kielder_Observatory_-_geograph.org.uk_-_8377908.jpg | 2026-11-08 |
 | list-drive-north-coast-500 | File:Kylesku Bridge 2016.jpg | DeFacto | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kylesku_Bridge_2016.jpg | 2026-11-06 |
 | list-hike-a-fourteener | File:Lower East Ridge Trail on Quandary Peak.jpg | Jsdratm | CC0 | https://commons.wikimedia.org/wiki/File:Lower_East_Ridge_Trail_on_Quandary_Peak.jpg | 2026-11-08 |
 | list-hike-angels-landing | File:Angels Landing and the Great White Throne.jpg | Óðinn | CC BY-SA 2.5 ca | https://commons.wikimedia.org/wiki/File:Angels_Landing_and_the_Great_White_Throne.jpg | 2026-11-01 |
