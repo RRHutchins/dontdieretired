@@ -2208,6 +2208,7 @@
   season: Spring to autumn
   regions:
   - uk
+  - us
   why: Making a boat move using nothing but the wind is an absorbing skill that keeps unfolding the more you do it. The RYA says beginner courses run over a number of sessions or two full days, with boats
     and equipment provided.
   start:
@@ -2219,7 +2220,27 @@
     url: https://www.rya.org.uk/start-boating/boating-for-adults/learn-to-sail/get-started-in-sailing
     region: uk
     checked: '2026-10-06'
-  safety: Learn at a recognised training centre, where buoyancy aids and safety boat cover are part of the course.
+  - label: 'RYA: Dinghy Level 1, Start Sailing, with a venue finder'
+    url: https://www.rya.org.uk/course-finder/dinghy-level-1-start-sailing/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'RYA: Competent Crew, for learning on a yacht'
+    url: https://www.rya.org.uk/course-finder/competent-crew-practical-course/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'RYA Sailability: your first visit'
+    url: https://www.rya.org.uk/about-us/our-programmes/sailability/new-sailors/your-first-visit/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'US Sailing: find an accredited school'
+    url: https://www.ussailing.org/education/adult/certification-courses-endorsements/find-a-school/
+    region: us
+    checked: '2026-11-09'
+  - label: 'Community Boating, Boston: adult membership'
+    url: https://community-boating.org/adult/membership-prices
+    region: us
+    checked: '2026-11-09'
+  safety: Learn at an RYA-recognised centre or club, or a US Sailing accredited school, where the instructors provide a buoyancy aid or lifejacket.
   kit:
   - name: Sailing gloves
     why: for grip on ropes and to save your hands
@@ -2238,7 +2259,152 @@
     title: It's never too late
     outlet: Royal Yachting Association
     url: https://www.rya.org.uk/stories/its-never-too-late/
-    checked: '2026-11-07'
+    checked: '2026-11-09'
+  seo_title: 'Learn to sail as an adult: RYA and US Sailing courses'
+  description: The RYA's beginner sailing courses compared, dinghy or yacht, what they cost, what to wear, US Sailing's Basic Keelboat, and how to keep sailing.
+  detail:
+  - h: What it's really like
+    p:
+    - In the UK, most adults start with a course run by an RYA-recognised club or training centre. The RYA is the Royal Yachting Association, the national body for sailing. Its Dinghy Level 1, Start Sailing,
+      is for complete beginners and takes about two days, or 16 hours spread over sessions, all of it on the water. You learn to sail in every direction and get a first look at launching and bringing the
+      boat back in.
+    - Expect to get wet. A dinghy is a small open boat, light and quick to respond, and Level 2 includes recovering from a capsize. You do not need your own boat or kit to begin; the centre provides the
+      boat, and the instructors provide the buoyancy aid.
+    - In the US, US Sailing's gateway adult course is Basic Keelboat, taught on boats of 18 to 27 feet (about 5.5 to 8 metres) with a weighted keel that keeps them from tipping over. Graduates should be
+      able to skipper and crew a simple day-sailing keelboat in familiar waters, in light to moderate wind and sea.
+  - h: The beginner courses compared
+    table:
+      head:
+      - Course
+      - Boat
+      - Length
+      - What you can do afterwards
+      rows:
+      - - RYA Dinghy Level 1, Start Sailing
+        - Dinghy
+        - About 2 days or 16 hours
+        - Sail in all directions and get afloat under supervision
+      - - RYA Dinghy Level 2, Basic Skills
+        - Dinghy
+        - About 2 days or 16 hours
+        - Rig, launch and right a capsized boat; sail competently in light winds
+      - - RYA Start Yachting
+        - Cruising yacht, living aboard
+        - 2 days
+        - A Start Yachting certificate, and a shorter Competent Crew course (3 days or 2 weekends)
+      - - RYA Competent Crew
+        - Cruising yacht, living aboard
+        - 5 days, or over several weekends
+        - Work as a useful crew member; next step is Day Skipper
+      - - US Sailing Basic Keelboat
+        - Keelboat, 18 to 27 ft (about 5.5 to 8 m)
+        - Varies by school
+        - Skipper and crew a day-sailing keelboat in familiar waters, light to moderate wind
+    after: The RYA also lists Cruising Level 1, Start Sailing, a two-day introduction to sailing a yacht with no experience needed, which leads on to Cruising Level 2. None of the course pages gives a price;
+      that is set by each centre.
+  - h: Dinghy or yacht?
+    p:
+    - US Sailing describes dinghies as light, responsive boats usually sailed by one or two people, and are often used in sailing schools. On a dinghy course you steer and trim the sails yourself from the
+      first day, and capsizing is part of the syllabus, so be ready to get wet.
+    - On Start Yachting and Competent Crew you live aboard a cruising yacht and learn steering, sail handling, ropework and safety on board, as one of a crew. UKSA's Competent Crew covers about 100 miles,
+      with four night hours on watch. A keelboat's weighted keel makes it more stable, and US Sailing notes that keelboat skills lead on to cruising, racing or chartering.
+  - h: What it costs
+    table:
+      head:
+      - Where
+      - Course
+      - Cost (as last listed)
+      rows:
+      - - Carsington Sailing Club, Derbyshire
+        - RYA Adult Dinghy Level 1 and 2, two consecutive weekends
+        - £400, or £360 for club members
+      - - Carsington Sailing Club, Derbyshire
+        - RYA Keelboat Level 1 and 2, two consecutive weekends
+        - £470, or £420 for club members
+      - - UKSA, Cowes, Isle of Wight
+        - RYA Competent Crew, 5 days, residential with all food
+        - £810
+      - - Community Boating, Boston
+        - Adult membership with free beginner and intermediate classes and unlimited boat use in programme hours, 1 April to 31 October
+        - $450 a year, or $99 for a 30-day trial
+    after: Community sailing programmes in the US, often in parks and urban waterfronts, offer low-cost lessons and boat rental, and US Sailing has a finder for them as well as for its accredited schools.
+  - h: What to wear, and how to keep going
+    list:
+    - For a dinghy, the RYA suggests a wetsuit, a hooded waterproof jacket, old trainers (sneakers) or water shoes, a cap or woolly hat, sunglasses on a cord and sunscreen whatever the weather.
+    - For a yacht, dress in layers with a fleece or jumper (sweater), waterproof jacket and trousers, and non-slip shoes or sailing boots. A lifejacket is essential; ask the centre whether it provides one.
+    - After the course, join a club. The RYA says many clubs lend or hire boats for free or very little, and clubs are where you find skippers who need crew.
+    - Keep training if you want to. Dinghy sailors go on to Level 3, Better Sailing, then racing, spinnakers or foiling; yacht crew go on to Day Skipper.
+    - RYA Sailability opens sailing to people with additional needs at over 200 venues, with adapted boats and courses. You do not have to go on the water on a first visit.
+  faq:
+  - q: How long does it take to learn to sail?
+    a: The RYA's Dinghy Level 1 takes about two days, or 16 hours of sessions. Level 2 takes about the same again and aims to make you a competent sailor in light winds.
+  - q: How much does an RYA dinghy course cost?
+    a: Each centre sets its own price. Carsington Sailing Club in Derbyshire listed its adult Level 1 and 2 course, over two weekends, at £400, or £360 for members.
+  - q: Should I learn to sail on a dinghy or a yacht?
+    a: A dinghy teaches the feel of the wind in a small boat that can capsize. A yacht course such as Competent Crew means living aboard a cruising yacht for five days and learning to be useful crew.
+  - q: What should I wear for my first sailing lesson?
+    a: For a dinghy, the RYA suggests a wetsuit, a hooded waterproof, old trainers or water shoes and sunscreen. The centre provides the buoyancy aid.
+  - q: What is US Sailing Basic Keelboat?
+    a: US Sailing's entry-level adult course, taught on keelboats of 18 to 27 feet. It ends with a test, and the certificate leads on to courses such as Basic Cruising.
+  - q: Do I need my own boat to learn to sail?
+    a: No. The RYA says training centres provide the boat and RYA-recognised centres provide the equipment, and many clubs have boats you can borrow or hire for free or very little.
+  sources:
+  - label: RYA, Dinghy Level 1, Start Sailing
+    url: https://www.rya.org.uk/course-finder/dinghy-level-1-start-sailing/
+    checked: '2026-11-09'
+  - label: RYA, Dinghy Level 2, Basic Skills
+    url: https://www.rya.org.uk/course-finder/dinghy-level-2-basic-skills/
+    checked: '2026-11-09'
+  - label: RYA, Sail cruising courses
+    url: https://www.rya.org.uk/training/sail-cruising-courses/
+    checked: '2026-11-09'
+  - label: RYA, Cruising Level 1, Start Sailing
+    url: https://www.rya.org.uk/course-finder/cruising-level-1-start-sailing/
+    checked: '2026-11-09'
+  - label: RYA, Start Yachting course
+    url: https://www.rya.org.uk/course-finder/start-yachting-course/
+    checked: '2026-11-09'
+  - label: RYA, Competent Crew practical course
+    url: https://www.rya.org.uk/course-finder/competent-crew-practical-course/
+    checked: '2026-11-09'
+  - label: RYA, What to wear sailing
+    url: https://www.rya.org.uk/blog/what-to-wear-sailing
+    checked: '2026-11-09'
+  - label: RYA, Take your next steps in sailing
+    url: https://www.rya.org.uk/training/take-your-next-steps-in-sailing/
+    checked: '2026-11-09'
+  - label: RYA, Sailability
+    url: https://www.rya.org.uk/about-us/our-programmes/sailability/
+    checked: '2026-11-09'
+  - label: RYA Sailability, Your first visit
+    url: https://www.rya.org.uk/about-us/our-programmes/sailability/new-sailors/your-first-visit/
+    checked: '2026-11-09'
+  - label: Carsington Sailing Club, Price list for current training
+    url: https://carsingtonsailingclub.co.uk/training/price-list-for-current-training
+    checked: '2026-11-09'
+  - label: UKSA, RYA Competent Crew
+    url: https://uksa.org/course/rya-competent-crew/
+    checked: '2026-11-09'
+  - label: US Sailing, Learn to sail with US Sailing's Basic Keelboat course (8 January 2025)
+    url: https://www.ussailing.org/news/learn-to-sail-with-us-sailings-basic-keelboat-course/
+    checked: '2026-11-09'
+  - label: 'US Sailing, Sailing for beginners: your step-by-step guide (31 October 2024)'
+    url: https://www.ussailing.org/news/sailing-for-beginners-your-step-by-step-guide/
+    checked: '2026-11-09'
+  - label: US Sailing, Find a school
+    url: https://www.ussailing.org/education/adult/certification-courses-endorsements/find-a-school/
+    checked: '2026-11-09'
+  - label: Community Boating, Membership prices
+    url: https://community-boating.org/adult/membership-prices
+    checked: '2026-11-09'
+  - label: RYA, It's never too late
+    url: https://www.rya.org.uk/stories/its-never-too-late/
+    checked: '2026-11-09'
+  related:
+  - crew-a-yacht-at-sea
+  - learn-to-kayak
+  - open-water-swim
+  - stand-up-paddleboarding
 - id: walk-to-end-alzheimers
   title: Join a Walk to End Alzheimer's
   category: move
@@ -2341,8 +2507,8 @@
   regions:
   - uk
   - us
-  why: A hive is a working society of tens of thousands, and learning to read it is absorbing in a way few hobbies are. Local associations pair newcomers with experienced keepers, so you learn at an apiary
-    before you buy anything.
+  why: A colony of honey bees is something you learn to read through the year, from heading off swarms in spring to checking winter food stores. Local associations run taster days and beginners' courses
+    and can often find you a mentor, so you handle bees before you buy anything.
   start:
   - Find your local beekeeping association and ask about taster days or a beginners' course.
   - Handle bees at the association apiary before deciding to keep your own.
@@ -2356,23 +2522,196 @@
     url: https://www.bbka.org.uk/find-beekeeping-near-you
     region: uk
     checked: '2026-10-06'
+  - label: 'British Beekeepers Association: becoming a beekeeper'
+    url: https://www.bbka.org.uk/becoming-a-beekeeper
+    region: uk
+    checked: '2026-11-09'
+  - label: 'National Bee Unit (APHA): BeeBase, register your bees for free'
+    url: https://nationalbeeunit.com/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Oxfordshire Beekeepers Association: beginners course'
+    url: https://obka.org.uk/learn-about-bees/obka-beginners-course/
+    region: uk
+    checked: '2026-11-09'
   - label: American Beekeeping Federation
     url: https://abfnet.org/
     region: us
     checked: '2026-10-06'
-  safety: Bee stings can cause serious allergic reactions; wear protective kit, learn with an association first and seek medical advice if you have reacted badly before.
+  - label: 'Penn State Extension: Beekeeping 101, online beginners course'
+    url: https://extension.psu.edu/beekeeping-101
+    region: us
+    checked: '2026-11-09'
+  - label: 'NC State Extension: how to become a beekeeper in North Carolina'
+    url: https://content.ces.ncsu.edu/how-to-become-a-beekeeper-in-north-carolina
+    region: us
+    checked: '2026-11-09'
+  safety: Expect the odd sting and always wear a veil; if you have reacted badly to a sting before, ask your doctor whether you need an adrenaline auto-injector, and call 999 (UK) or 911 (US) at once if
+    a sting brings swelling of the lips, tongue or throat, difficulty breathing or faintness.
   kit:
-  - name: Beekeeping suit
-    why: a full suit with a veil; your local association will advise before you buy a hive
-    url: https://www.amazon.co.uk/s?k=beekeeping+suit
+  - name: Beekeeping suit with veil
+    why: protective clothing is on the BBKA's minimum list; check the veil zips on fully and the cuffs close over your gloves
+    url: https://www.amazon.co.uk/s?k=beekeeping+suit+with+veil
+  - name: Beekeeping smoker
+    why: a smoker and fuel are on the BBKA's minimum equipment list; check it has a guard round the hot chamber
+    url: https://www.amazon.co.uk/s?k=beekeeping+smoker
+  - name: Hive tool
+    why: for prising apart boxes and frames during an inspection; also on the BBKA's minimum list
+    url: https://www.amazon.co.uk/s?k=beekeeping+hive+tool
   inspire:
   - kind: read
-    person: Catherine Carton
-    line: Signed up for a beginners' course with the Fingal Beekeepers' Association, then took on a small colony of native Irish honey bees that she has looked after for just over a year.
-    title: Catherine Carton on her year of beekeeping
-    outlet: RTÉ
-    url: https://www.rte.ie/lifestyle/living/2025/0518/1512621-catherine-carton-on-her-year-of-beekeeping
-    checked: '2026-11-07'
+    person: Jean Frost, from Wield, Hampshire
+    line: Took a six-week beginners' course in Farnham and started with half a hive in her garden, then took British Beekeepers Association exams, built up to 12 colonies and went on to run beekeeping courses
+      herself.
+    title: Jean's just passionate about world of bees
+    outlet: Farnham Herald
+    url: https://www.farnhamherald.com/news/jeans-just-passionate-about-world-of-bees-182212
+    checked: '2026-11-09'
+  seo_title: 'Beekeeping for beginners: how to start, costs and courses'
+  description: How to start beekeeping, season by season, with real start-up costs, hives compared, nucleus or swarm, the rules in the UK and US, and beginners' courses.
+  detail:
+  - h: What it's really like
+    p:
+    - The British Beekeepers Association (BBKA) says that from late spring into summer each hive needs checking once a week, which can take up to an hour. That weekly look is how you stop the colony swarming
+      and make sure the bees have room to store honey. In winter the work drops to occasional checks that the hive is undisturbed and has enough food.
+    - It is physical work. The National Bee Unit (NBU), the government's bee health service, notes that a full honey box (a "super") weighs at least 12 kg (26 lb), and lifting boxes and moving colonies
+      is hard going. Top bar hives avoid most of the heavy lifting.
+    - Stings come with the hobby. The BBKA says you are likely to be stung now and then, with swelling or itching that usually passes quickly. The NBU says always wear a veil, because a sting to the eye
+      can damage your sight, and keep your phone with you and know exactly where your apiary is in case you need to call for help.
+    - Money is the other honest point. The NBU's beginners' leaflet puts the first outlay for a colony, equipment and protective clothing at £500 to £1,000. In North Carolina, NC State Extension lists hive
+      kits from about $300 (starter) to $600 (deluxe), a bee suit at $70 to $150 and gloves at $20 to $30. Honey income depends on the weather.
+  - h: The beekeeping year
+    list:
+    - 'Winter: courses and bee schools usually run now, while the bees are quiet. Do not open colonies unless it is warm, but check their food at least once a month, as starvation is a common cause of loss.'
+    - 'Spring: once the bees are flying, start regular inspections for a laying queen, disease and varroa (a parasitic mite), and add boxes as the colony grows. Watch for swarm cells in April and May.'
+    - 'Summer: keep inspecting about once a week until the swarming risk passes, usually after late July. Take surplus honey, leaving at least one box for the bees.'
+    - 'Autumn: make sure each colony has enough bees and stores, low varroa levels and a weather-tight hive before winter, using the NBU''s pre-winter checklist.'
+  - h: 'The real choices: hive and bees'
+    table:
+      head:
+      - Hive
+      - What it is
+      - Points to weigh
+      rows:
+      - - National
+        - A moveable-frame hive and the most common type in Britain, according to the BBKA and the NBU
+        - Your association can advise on it; the Sevenoaks Beekeepers notes say a single brood box is heavy to lift
+      - - WBC
+        - A double-walled hive with an outer layer of 'lifts' around the inner boxes
+        - Lighter boxes and extra insulation, but the outer layer must come off before every inspection, the brood box is small and the extra woodwork makes it expensive
+      - - Langstroth
+        - A moveable-frame hive in 8- or 10-frame widths, with deep, medium and shallow boxes; Texas A&M AgriLife calls it the most common type
+        - Named after the American Lorenzo Langstroth; in the UK the NBU lists it among the moveable-frame hive designs
+      - - Top bar
+        - A long box with bars across the top and no frames
+        - Low cost and ergonomic, but the NBU says it must be well insulated and needs skill to manage; Sevenoaks adds that varroa is harder to manage and it yields less honey
+    after: For your first bees, the NBU recommends a nucleus (a small, gentle colony on five or six frames, often called a "nuc"), usually on sale from April to August, ideally from a local beekeeper. A
+      swarm is usually free, but its temper and health are unknown, so the NBU says check it for brood disease in its first six weeks, and the BBKA says get help from your association. In the US, NC State
+      Extension listed a nuc at $150 to $200 and a 3 lb mail-order "package" of bees with a queen at $100 to $125, adding that a nuc becomes a full colony faster and is less likely to fail.
+  - h: The rules, UK and US
+    table:
+      head:
+      - What
+      - Where
+      - What to do (as last listed)
+      rows:
+      - - Register your bees on BeeBase
+        - England, Wales and Scotland
+        - Sign up free with the National Bee Unit, part of the Animal and Plant Health Agency (APHA), for disease alerts and free inspections
+      - - American and European foulbrood
+        - UK
+        - Both are notifiable diseases by law; contact the NBU straight away if you suspect either
+      - - Asian hornet
+        - UK
+        - Report a sighting with a photo through the Asian Hornet Watch app, which goes to the Non-native Species Secretariat and the NBU; never disturb a nest
+      - - Apiary registration
+        - Pennsylvania
+        - Required under the state's Bee Law; $10, covering about two years; state inspectors visit hives from May to mid-October
+      - - Hive registration and inspection
+        - North Carolina
+        - NC State Extension says new beekeepers should contact their regional state apiary inspector to register their hives
+    after: Rules differ from state to state in the US, so check with your state department of agriculture or your county extension office before your bees arrive.
+  - h: Beginners' courses and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Oxfordshire Beekeepers Association
+        - Nine sessions, April to July 2026; four classroom evenings in Eynsham and five practical evenings at a training apiary in Woodstock
+        - £100, plus £29 membership that includes BBKA membership
+      - - Loudoun Beekeepers Association, Purcellville, Virginia
+        - Seven Saturday-morning classes, January to February 2026; includes a year's membership and optional mentoring
+        - $95
+      - - Penn State Extension, online (registration closed when checked)
+        - 'Beekeeping 101: about nine hours, self-paced, with a year''s access and a certificate'
+        - $159
+    after: Both association courses above had closed registration for 2026. NC State Extension says local bee schools are usually held in winter, so it pays to ask your association in the autumn.
+  faq:
+  - q: How much does it cost to start beekeeping?
+    a: The National Bee Unit puts the first outlay at £500 to £1,000 for a colony, equipment and clothing. NC State Extension lists US hive kits from about $300 for a starter to $600 for a deluxe kit, plus
+      $150 to $200 for a nucleus colony.
+  - q: How much time does beekeeping take?
+    a: From late spring into summer, up to an hour a week per hive, according to the BBKA. In winter, occasional checks on food stores, at least once a month by NBU advice.
+  - q: Do I need to register my bees?
+    a: In Great Britain, registering on BeeBase with the National Bee Unit is free and brings disease alerts and inspections. In the US it depends on the state; Pennsylvania requires registration, at $10
+      for about two years.
+  - q: What is the best beehive for beginners?
+    a: The National is the most common hive in Britain, and the BBKA suggests asking your local association which type suits you. In the US, Texas A&M AgriLife Extension calls the Langstroth the most common
+      type of hive.
+  - q: Should I start with a nucleus or a swarm?
+    a: The NBU recommends a small, gentle nucleus bought in May, ideally from a local beekeeper. A swarm is usually free but may be bad-tempered or diseased, so only take one on with help from your association.
+  - q: What should I do if I see an Asian hornet?
+    a: In the UK, report it through the Asian Hornet Watch app with a photo and location. Do not go near or disturb a nest.
+  sources:
+  - label: British Beekeepers Association, Becoming a beekeeper
+    url: https://www.bbka.org.uk/becoming-a-beekeeper
+    checked: '2026-11-09'
+  - label: National Bee Unit, Starting Right with Bees (beginners' leaflet)
+    url: https://www.nationalbeeunit.com/assets/PDFs/3_Resources_for_beekeepers/Advisory_leaflets/Starting_Right_with_Bees_Final_2016.pdf
+    checked: '2026-11-09'
+  - label: National Bee Unit, BeeBase home page
+    url: https://nationalbeeunit.com/
+    checked: '2026-11-09'
+  - label: British Beekeepers Association, Report a sighting of the Asian hornet
+    url: https://www.bbka.org.uk/report-a-sighting-of-the-asian-hornet
+    checked: '2026-11-09'
+  - label: Sevenoaks Beekeepers, Types of bee hives
+    url: https://www.sevenoaksbeekeepers.org.uk/wp-content/uploads/2018/09/Types-of-Beehive-1.pdf
+    checked: '2026-11-09'
+  - label: Texas A&M AgriLife Extension, Beekeeping equipment (ENTO-PU-184)
+    url: https://bexar-tx.tamu.edu/wp-content/uploads/sites/3/2026/01/beekeeping-equipment-hive-boxes.pdf
+    checked: '2026-11-09'
+  - label: NC State Extension, How to become a beekeeper in North Carolina
+    url: https://content.ces.ncsu.edu/how-to-become-a-beekeeper-in-north-carolina
+    checked: '2026-11-09'
+  - label: Pennsylvania Department of Agriculture, Apiary and pollinator services
+    url: https://www.pa.gov/agencies/pda/plants-land-water/plant-industry/entomology/apiary-pollinator-services.html
+    checked: '2026-11-09'
+  - label: Oxfordshire Beekeepers Association, Beginners course 2026
+    url: https://obka.org.uk/learn-about-bees/obka-beginners-course/
+    checked: '2026-11-09'
+  - label: Loudoun Beekeepers Association, Beginning beekeeping course (Saturday mornings)
+    url: https://loudounbee.jumbula.com/Winter2026/BeginningBeekeepingCourseSaturdaymornings
+    checked: '2026-11-09'
+  - label: Penn State Extension, Beekeeping 101
+    url: https://extension.psu.edu/beekeeping-101
+    checked: '2026-11-09'
+  - label: NHS, Anaphylaxis
+    url: https://www.nhs.uk/conditions/anaphylaxis/
+    checked: '2026-11-09'
+  - label: MedlinePlus, Bee, wasp, hornet, or yellow jacket sting
+    url: https://medlineplus.gov/ency/article/002847.htm
+    checked: '2026-11-09'
+  - label: Farnham Herald, Jean's just passionate about world of bees (10 April 2017)
+    url: https://www.farnhamherald.com/news/jeans-just-passionate-about-world-of-bees-182212
+    checked: '2026-11-09'
+  related:
+  - grow-a-wildflower-patch
+  - take-on-an-allotment
+  - rehome-hens
+  - preserve-a-seasons-fruit
 - id: big-garden-birdwatch
   title: Take part in the RSPB Big Garden Birdwatch
   category: explore
@@ -5498,17 +5837,158 @@
   company: others
   regions:
   - uk
-  why: Surfing compresses a great deal into a few seconds, from paddling and timing to the scramble to your feet, and the first wave you ride to the beach is hard to forget. A lesson starts on the sand and moves into the small broken waves near the shore.
+  - us
+  why: Surfing compresses a great deal into a few seconds, from paddling and timing to the scramble to your feet, and the first wave you ride to the beach is hard to forget. A lesson starts on the sand
+    and moves into the small broken waves near the shore.
   start:
   - Pick a school from the Surf Schools map on the Surfing England site.
-  - Book a beginner group lesson, which normally includes a soft board and a wetsuit.
+  - Book a beginner group lesson and check that the board and wetsuit are in the price; Fistral, Saltburn and The Wave all include them.
   - Practise the pop-up on the sand until the coach is happy before you paddle out.
   links:
   - label: Surfing England surf schools directory
     url: https://www.surfingengland.org/surf-schools/
     region: uk
     checked: '2026-10-07'
-  safety: Learn with a surf school on a lifeguarded beach and stay inside the area your coach sets.
+  - label: 'Fistral Beach Surf School: lesson prices (Newquay, Cornwall)'
+    url: https://fistralbeachsurfschool.co.uk/?p=1173
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Saltburn Surf School: three-day Adult Surf Course (North Yorkshire coast)'
+    url: https://eola.co/cy/276/activities/adult-surf-course
+    region: uk
+    checked: '2026-11-09'
+  - label: 'The Wave: adult-only beginner surf lessons (inland surf lake near Bristol)'
+    url: https://www.thewave.com/surf/surf-lessons-and-coaching/adult-only-beginner-surf-lessons/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Surf Diva: surf lessons in La Jolla (San Diego, California)'
+    url: https://surfdiva.com/best-surf-lessons-in-la-jolla/
+    region: us
+    checked: '2026-11-09'
+  safety: Learn with a school on a lifeguarded beach, surf between the black-and-white flags with your leash on, and never surf alone.
+  inspire:
+  - kind: read
+    person: Becky Loto, Cornwall
+    line: Took up surfing with lessons through the Newquay Women's Surf Club and now surfs most weekends, all year round.
+    title: '''I want to be surfing when I''m 80 and beyond'' - 5 women reveal the benefits of taking up the sport later in life'
+    outlet: woman&home
+    url: https://www.womanandhome.com/health-wellbeing/surfing-for-beginners/
+    checked: '2026-11-09'
+  seo_title: 'Surf lessons for beginners: costs, kit and staying safe'
+  description: What a first surf lesson involves, what UK and US lessons cost, which wetsuit for each season, the RNLI's rip current advice and how to progress.
+  detail:
+  - h: What a first lesson is really like
+    p:
+    - A beginner lesson usually lasts one and a half to two hours. You learn to carry the board, then practise paddling and popping up to your feet, then take it into the white water, the small broken waves
+      near the shore. At The Wave, an inland surf lake near Bristol, the first half hour is skills training and the rest is an hour in waves about 0.5 metres (1.6 feet) high.
+    - Expect to fall off a lot, and expect paddling to tire you out. Schools ask that you can swim a set distance first, from 25 metres at Fistral Beach Surf School and The Wave to 50 metres at Saltburn.
+      At Fistral the instructor is a qualified lifeguard who stays with the group, and lessons do not go in the water if conditions are dangerous.
+    - The RNLI says to start with a lesson, choose a lifeguarded beach and start in gentle, spilling waves rather than dumping waves or heavy shore break.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Fistral Beach Surf School, Newquay, Cornwall
+        - Two-hour group lesson, up to eight people per instructor, all equipment included
+        - £50 for one lesson, £135 for three, £215 for five
+      - - Saltburn Surf School, North Yorkshire coast
+        - 'Adult Surf Course: three days, coaching 10am to 2pm, then kit to use until 5pm; up to eight people'
+        - From £180
+      - - The Wave, near Bristol
+        - Adult-only beginner lesson, 1.5 hours, on an inland surf lake; wetsuit, boots, hat, gloves and foam board included
+        - From £50
+      - - Surf Diva, La Jolla, California
+        - Private or semi-private lesson with board and rashguard; wetsuit rented separately; up to five students per instructor
+        - $160 private, or $105 to $120 per person semi-private, plus a 16% City of San Diego surcharge
+    after: Fistral also runs one-to-one lessons at £120 for two hours. Saltburn Surf School is listed by Redcar and Cleveland Council as accredited by Surfing England and the International Surfing Association.
+  - h: Flags and rip currents
+    table:
+      head:
+      - Flag
+      - What it means
+      rows:
+      - - Red and yellow
+        - Lifeguarded area for swimming, bodyboarding and inflatables
+      - - Black and white chequered
+        - Zone for surfboards, paddleboards, kayaks and other craft without engines; no swimming or bodyboarding
+      - - Red
+        - Danger; do not go in the water at all
+      - - Orange windsock
+        - Offshore or strong wind; no inflatables
+    after: Rips are strong currents running out to sea, sometimes visible as a channel of churning, choppy water. If one catches you, the RNLI says do not swim against it, stay with your board, wade if
+      you can stand, and wade or swim parallel to the shore until you are free before heading in. Raise your hand and shout for help. If you see someone else in trouble, tell a lifeguard or call 999 or
+      112 and ask for the coastguard (911 in the US).
+  - h: Which wetsuit for which season
+    table:
+      head:
+      - Season (UK, approximately)
+      - Wetsuit
+      - Neoprene thickness
+      rows:
+      - - Winter, November to March
+        - '5:3'
+        - 5 mm body, 3 mm arms and legs
+      - - Spring, April to October
+        - '4:3'
+        - 4 mm body, 3 mm arms and legs
+      - - Summer, June to September
+        - '3:2'
+        - 3 mm body, 2 mm arms and legs
+    after: These are the RNLI's suggested ratings. Thicker neoprene keeps you warmer, and the RNLI suggests getting fitted in a wetsuit shop for your first suit. Lessons usually include the wetsuit; in
+      winter Fistral adds boots, gloves and a hooded thermal rash vest.
+  - h: After your lessons
+    p:
+    - Fistral Beach Surf School says most people are getting confident with the basics after about three lessons, and suggests five to seven before you surf on your own with confidence. Stay on a soft foam
+      board for now; the RNLI says its thickness and width make it easier to float, paddle and catch waves.
+    - When you do go without a coach, the RNLI's rules are simple. Pick a lifeguarded beach, surf between the black-and-white flags, wear your leash on the ankle of your back foot and always surf with a
+      buddy. Learn the etiquette too. The surfer nearest the peak of the wave has priority, so do not drop in on someone already riding it, and paddle wide around the peak rather than through it.
+  faq:
+  - q: How many surf lessons do I need?
+    a: Fistral Beach Surf School says you should be getting confident with the basics after about three lessons, and recommends five to seven before surfing on your own.
+  - q: Do you need to be a good swimmer to learn to surf?
+    a: You need to be able to swim a set distance. Fistral and The Wave ask for 25 metres, and Saltburn's adult course asks for 50 metres.
+  - q: How much does a surf lesson cost?
+    a: In the UK, a two-hour group lesson at Fistral was listed at £50 and an adult beginner lesson at The Wave from £50. In La Jolla, California, Surf Diva listed private lessons at $160 plus a city surcharge.
+  - q: What do I wear to a surf lesson?
+    a: Swimwear, with a towel for afterwards. UK schools such as Fistral and The Wave include the wetsuit, while Surf Diva in California rents wetsuits separately.
+  - q: What do the black and white flags mean on a beach?
+    a: The RNLI uses them to mark the zone for surfboards and other craft without engines. Swimming and bodyboarding are not allowed between them.
+  - q: What should you do if you are caught in a rip current?
+    a: Do not swim against it. The RNLI says stay with your board, wade if you can stand, move parallel to the shore until free, and raise your hand and shout for help.
+  sources:
+  - label: RNLI, In the surf, your guide to surfsport safety (PDF)
+    url: https://supporttool.rnli.org/-/media/rnli/downloads/in-the-surf-rnli-guide-to-surfsport-safety.pdf
+    checked: '2026-11-09'
+  - label: RNLI, Rip currents
+    url: https://rnli.org/safety/know-the-risks/rip-currents
+    checked: '2026-11-09'
+  - label: National Weather Service, Rip currents and beach hazards
+    url: https://weather.gov/wrn/rip-currents-sm
+    checked: '2026-11-09'
+  - label: Fistral Beach Surf School, Lesson price list
+    url: https://fistralbeachsurfschool.co.uk/?p=1173
+    checked: '2026-11-09'
+  - label: Fistral Beach Surf School, Surfing lesson FAQs
+    url: https://www.fistralbeachsurfschool.co.uk/?p=2947
+    checked: '2026-11-09'
+  - label: Saltburn Surf School, Adult Surf Course (eola)
+    url: https://eola.co/cy/276/activities/adult-surf-course
+    checked: '2026-11-09'
+  - label: Redcar and Cleveland Council information directory, Saltburn Surf School
+    url: https://informationdirectory.redcar-cleveland.gov.uk/families-and-children/leisure-and-activities/family-friendly-activities-0/saltburn-surf-school
+    checked: '2026-11-09'
+  - label: The Wave, Adult only beginner surf lessons
+    url: https://www.thewave.com/surf/surf-lessons-and-coaching/adult-only-beginner-surf-lessons/
+    checked: '2026-11-09'
+  - label: Surf Diva, Best surf lessons in La Jolla
+    url: https://surfdiva.com/best-surf-lessons-in-la-jolla/
+    checked: '2026-11-09'
+  - label: woman&home, 5 women reveal the benefits of taking up the sport
+    url: https://www.womanandhome.com/health-wellbeing/surfing-for-beginners/
+    checked: '2026-11-09'
   book:
   - label: Beginner surf lessons on GetYourGuide
     why: group and private lessons with the board and wetsuit included
@@ -5516,14 +5996,19 @@
     aff: getyourguide
   kit:
   - name: Surf wetsuit
-    why: most lessons include one; buy your own once you surf regularly, thickness to suit the season
+    why: most lessons include one; buy your own once you surf regularly, checking the thickness suits the season (5:3 for a UK winter, 3:2 for summer)
     url: https://www.amazon.co.uk/s?k=surf+wetsuit
   - name: Changing robe
-    why: to change and warm up quickly on the bank or beach
+    why: to change and warm up quickly on the beach
     url: https://www.amazon.co.uk/s?k=changing+robe+waterproof
-  - name: Rash vest
-    why: sun and chafe protection on the water
-    url: https://www.amazon.co.uk/s?k=rash+vest+adult+long+sleeve
+  - name: Surfboard leash
+    why: keeps the board attached to the ankle of your back foot; check the length matches your board
+    url: https://www.amazon.co.uk/s?k=surfboard+leash
+  related:
+  - stand-up-paddleboarding
+  - open-water-swim
+  - learn-to-swim-adult
+  - learn-to-kayak
 - id: horse-riding-lesson
   title: Have a riding lesson
   category: move
@@ -6276,7 +6761,8 @@
   regions:
   - uk
   - us
-  why: On a tandem jump you leave the aircraft harnessed to a qualified instructor, fall freely for the better part of a minute and then drift down under one large parachute. The instructor handles the flight and the parachute, so the ground briefing is short.
+  why: On a tandem jump you leave the aircraft harnessed to a qualified instructor, fall freely for the better part of a minute and then drift down under one large parachute. The instructor handles the
+    flight and the parachute, so the ground briefing is short.
   start:
   - Use British Skydiving's Find Drop Zone page or the United States Parachute Association's Find a Drop Zone tool to choose an affiliated centre.
   - Ask the drop zone about its weight, fitness and medical rules before you pay.
@@ -6290,12 +6776,177 @@
     url: https://www.uspa.org/students/your-first-skydive/tandem
     region: us
     checked: '2026-10-07'
-  safety: Jump only at a drop zone affiliated to the national association, and declare any medical condition beforehand.
+  - label: 'Skydive Hibaldstow: tandem skydiving from 10,000 or 15,000 ft (Lincolnshire)'
+    url: https://www.skydiving.co.uk/tandem-skydiving/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Hinton Skydiving Centre: tandem skydives (Northamptonshire)'
+    url: https://skydive.co.uk/tandem/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Skydive Sebastian: tandem skydiving (Florida)'
+    url: https://www.skydiveseb.com/tandem-skydiving/
+    region: us
+    checked: '2026-11-09'
+  - label: 'Skydive Chicago: tandem costs (Ottawa, Illinois)'
+    url: https://skydivechicago.com/?p=2055
+    region: us
+    checked: '2026-11-09'
+  safety: British Skydiving says there is always a small but definite risk of injury, so jump only at an affiliated centre and complete the medical declaration honestly.
   book:
   - label: Tandem skydives on Viator
     why: compare drop zones near you; check the organiser belongs to the national skydiving body
     url: https://www.viator.com/searchResults/all?text=tandem+skydive
     aff: viator
+  inspire:
+  - kind: read
+    person: Susan Bentata
+    line: Made a tandem skydive from 11,000 feet over Cambridgeshire, a jump she had won at a charity auction, and raised more than £5,000 for Nightingale, in Clapham, London.
+    title: Leap of faith for 62-year-old
+    outlet: The Jewish Chronicle
+    url: https://thejc.com/news/community/leap-of-faith-for-62-year-old-c099q106
+    checked: '2026-11-09'
+  seo_title: 'Tandem skydive: weight limits, height and what to expect'
+  description: What a tandem skydive day involves, how high you jump, UK and US weight, age and medical rules side by side, drop zone prices and how charity jumps work.
+  detail:
+  - h: What the day is really like
+    p:
+    - Most of the day is waiting. Skydive Hibaldstow in Lincolnshire asks you to allow at least five to six hours at weekends and three to four midweek, and to keep the whole day free, because rain, low
+      cloud or strong wind stop jumping. If the weather beats you, it rebooks you for another date within 12 months.
+    - Training is short. USPA, the United States Parachute Association, says tandem training takes under 30 minutes; at Hibaldstow the instructor gives a group briefing. When your turn comes you are fitted
+      with a jumpsuit, harness and goggles, and the climb to height takes under 15 minutes at Hibaldstow.
+    - British Skydiving gives exit heights of about 10,000 to 15,000 feet (about 3,000 to 4,600 metres), 30 to 60 seconds of freefall and a five to seven minute ride under the parachute. USPA says you fall
+      at around 100 to 130 mph and can breathe normally. The instructor controls the exit, the freefall, the opening and the landing.
+  - h: The rules, UK and US side by side
+    table:
+      head:
+      - Rule
+      - UK (British Skydiving)
+      - US (USPA)
+      rows:
+      - - Minimum age
+        - 16, with written permission from a parent or guardian under 18
+        - 18 at USPA-affiliated drop zones
+      - - Upper age
+        - None for tandems; health decides. Skydive Hibaldstow asks anyone 70 or over to call and be assessed by an instructor
+        - Set by each drop zone; Skydive Sebastian, Florida, has no maximum, and Skydive the Wasatch, Utah, gives no maximum
+      - - Weight
+        - Typically around 15 stone (95 kg, 210 lb), set by each centre
+        - Set by each drop zone, often 230 to 250 lb (104 to 113 kg)
+      - - Medical
+        - Everyone signs a medical self-declaration; at Hibaldstow and Hinton this is form 115A, and if you cannot sign it a doctor must sign and stamp form 115B
+        - Disclose any condition and consult a physician; sign the drop zone's liability waiver
+    after: British Skydiving keeps no list of weight limits, so ask each centre. Hibaldstow's limit is 100 kg fully clothed and it takes no one over that under any circumstances; it adds £15 from 95 kg,
+      and assesses a BMI of 30 or more on the day. Skydive Chicago weighs everyone at check-in and says its 250 lb limit is firm.
+  - h: Four drop zones compared
+    table:
+      head:
+      - Drop zone
+      - Exit height
+      - Weight limit
+      - Price (as last listed)
+      rows:
+      - - Skydive Hibaldstow, Lincolnshire
+        - 15,000 ft (4,570 m) or 10,000 ft (3,050 m)
+        - 100 kg clothed (about 15 st 10 lb)
+        - £289 at 15,000 ft, £219 Monday to Friday; £249 at 10,000 ft, £189 Monday to Friday
+      - - Hinton Skydiving Centre, Northamptonshire
+        - Up to 13,000 ft (3,960 m)
+        - 15 stone (95 kg), in proportion to height
+        - £250, with a £70 deposit
+      - - Skydive Sebastian, Florida
+        - About 13,500 ft (4,110 m)
+        - 230 lb (104 kg)
+        - $219; video packages from $358
+      - - Skydive Chicago, Ottawa, Illinois
+        - Not stated on its cost page
+        - 250 lb (113 kg), no surcharge
+        - $199 to $289, depending on season and height
+    after: Photo and video packages cost extra everywhere. Hibaldstow listed them at £120 and £159, and Skydive Chicago at $89 to $119. Hibaldstow takes a £75 non-refundable deposit per person.
+  - h: Jumping for charity in the UK
+    p:
+    - Many UK tandem jumps raise money for a charity, and there are two ways to do it. You can pay for the jump yourself, so everything you raise goes to the charity. Or you raise a minimum amount, which
+      Skydive Hibaldstow says is typically £300 to £400, and the charity pays for your jump from it.
+    - Agree the minimum and how the money is used with the charity before you book. At Hibaldstow you can pick one of its listed local charities, or choose your own if you book directly with the centre
+      and have the charity's approval and fundraising pack.
+  - h: What to wear, and what comes next
+    p:
+    - Skydive Sebastian suggests comfortable sports clothes you can move in and trainers. At Hibaldstow the instructor fits you with a jumpsuit, harness and goggles.
+    - If one jump is not enough, the next step is a solo course. British Skydiving offers Accelerated Free Fall, an eight-level course with two instructors holding you in freefall, and static line, with
+      about six hours of ground training and a jump from about 4,000 feet with the parachute opened by a static line. British Skydiving says solo training must start before the 55th birthday, and some organisations
+      set lower limits; the limit does not apply to tandems. In the US, USPA says each drop zone sets its own age, weight and fitness requirements, and its solo routes include Accelerated Freefall and static
+      line.
+  faq:
+  - q: What is the weight limit for a tandem skydive?
+    a: It is set by each drop zone. In the UK it is typically around 15 stone (95 kg); Skydive Hibaldstow takes up to 100 kg fully clothed. US drop zones often allow 230 to 250 lb.
+  - q: How high is a tandem skydive?
+    a: Usually 10,000 to 15,000 feet, about 3,000 to 4,600 metres. That gives 30 to 60 seconds of freefall and five to seven minutes under the parachute.
+  - q: How old do you have to be to do a tandem skydive?
+    a: 16 in the UK, with a parent's or guardian's written permission under 18. In the US, USPA-affiliated drop zones require you to be 18.
+  - q: Is there an upper age limit for tandem skydiving?
+    a: British Skydiving sets none for tandems; your health decides. Some centres add checks, such as Skydive Hibaldstow's assessment for anyone 70 or over.
+  - q: Do I need a doctor's note to skydive in the UK?
+    a: Not if you can sign the self-declaration form. If a medical condition, injury or medicine on the form stops you signing, you need form 115B signed and stamped by a doctor.
+  - q: How long does a tandem skydive take?
+    a: The jump takes a few minutes, but allow the whole day. Skydive Hibaldstow says at least five to six hours at weekends and three to four midweek, longer if the weather holds things up.
+  sources:
+  - label: British Skydiving, Tandem Skydiving
+    url: https://britishskydiving.org/tandem-2/
+    checked: '2026-11-09'
+  - label: British Skydiving, Learn to Skydive
+    url: https://britishskydiving.org/learn-to-skydive/
+    checked: '2026-11-09'
+  - label: British Skydiving, Accelerated Free Fall
+    url: https://britishskydiving.org/accelerated-free-fall/
+    checked: '2026-11-09'
+  - label: British Skydiving, Static Line
+    url: https://britishskydiving.org/static-line/
+    checked: '2026-11-09'
+  - label: USPA, Your First Skydive
+    url: https://www.uspa.org/members/pathways/your-first-skydive
+    checked: '2026-11-09'
+  - label: Skydive Hibaldstow, Tandem Skydiving
+    url: https://www.skydiving.co.uk/tandem-skydiving/
+    checked: '2026-11-09'
+  - label: Skydive Hibaldstow, Tandem skydiving restrictions
+    url: https://www.skydiving.co.uk/tandem-skydiving/restrictions/
+    checked: '2026-11-09'
+  - label: Skydive Hibaldstow, Prices
+    url: https://www.skydiving.co.uk/prices/
+    checked: '2026-11-09'
+  - label: Skydive Hibaldstow, Charity Parachuting Information
+    url: https://www.skydiving.co.uk/tandem-skydiving/charity-tandem-skydiving/
+    checked: '2026-11-09'
+  - label: Hinton Skydiving Centre, Tandem
+    url: https://skydive.co.uk/tandem/
+    checked: '2026-11-09'
+  - label: Skydive Sebastian, Tandem Skydiving
+    url: https://www.skydiveseb.com/tandem-skydiving/
+    checked: '2026-11-09'
+  - label: Skydive Chicago, Tandem skydiving costs
+    url: https://skydivechicago.com/?p=2055
+    checked: '2026-11-09'
+  - label: Skydive Chicago, What is the skydiving weight limit?
+    url: https://skydivechicago.com/?p=5541
+    checked: '2026-11-09'
+  - label: Skydive the Wasatch, Skydiving requirements and safety
+    url: https://skydivethewasatch.com/skydiving-requirements-and-safety/
+    checked: '2026-11-09'
+  - label: The Jewish Chronicle, Leap of faith for 62-year-old (25 August 2011)
+    url: https://thejc.com/news/community/leap-of-faith-for-62-year-old-c099q106
+    checked: '2026-11-09'
+  kit:
+  - name: Lace-up trainers
+    why: Skydive Sebastian asks for trainers or similar shoes; check the laces tie firmly
+    url: https://www.amazon.co.uk/s?k=lace+up+trainers
+  - name: Sports joggers
+    why: comfortable clothes you can move in to wear under the jumpsuit
+    url: https://www.amazon.co.uk/s?k=sports+joggers
+  related:
+  - try-gliding
+  - try-scuba-diving
+  - learn-to-surf
+  - swim-swimathon
 - id: try-gliding
   title: Fly in a glider
   category: explore
@@ -18588,11 +19239,11 @@
   inspire:
   - kind: read
     person: Barbara Zietchick, New Hope, Pennsylvania
-    line: Learned printmaking while teaching kindergarten on Staten Island, bought a small etching press after leaving the classroom and has won awards at many juried shows.
+    line: Started learning printmaking while teaching kindergarten on Staten Island, bought a small etching press shortly after retiring, and has won awards at many juried shows.
     title: Etching is her passion
     outlet: New York Teacher (United Federation of Teachers)
     url: https://www.uft.org/news/retired-teachers-chapter-news/rtc-second-act/etching-her-passion
-    checked: '2026-11-08'
+    checked: '2026-11-09'
   safety: Etching uses mordants to bite the plate, so follow the studio's rules on clothing, gloves and handling, and ask which etching method it uses.
   kit:
   - name: Drypoint etching needle
@@ -19432,3 +20083,1434 @@
   - scottish-country-dancing
   - take-a-ballroom-class
   - join-u3a-or-olli
+- id: learn-the-trumpet
+  title: Learn to play the trumpet
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Community brass bands and adult beginner bands take people who have never played, and some lend you an instrument while you find your feet. A beginner trumpet can be hired by the month, so the first
+    step costs little more than a weekly class.
+  start:
+  - Find a community brass band or beginner band near you; Brass Bands England's directory lists bands by region, and in the US look for a New Horizons band at a college or community music school.
+  - Ask whether the group lends instruments; if not, hire a beginner trumpet by the month before you think about buying.
+  - Go to the first session as a taster if the group allows it, and bring valve oil and a pencil.
+  links:
+  - label: 'Brass Bands England: find a band (UK directory by region)'
+    url: https://www.bbe.org.uk/find-a-band
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Watermans: Hounslow Community Brass Band, complete beginners welcome (west London)'
+    url: https://www.watermans.org.uk/events/hounslow-community-brass-band-2025
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Baldwin Wallace Community Arts School: New Horizons Band (Berea, Ohio)'
+    url: https://cas.bw.edu/programming/new-horizons-band/
+    region: us
+    checked: '2026-11-09'
+  - label: 'Eastman Community Music School: New Horizons Green Band for beginners (Rochester, New York)'
+    url: https://www.esm.rochester.edu/community/?p=220
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Trumpet lessons for adult beginners: bands, classes and hire'
+  description: How adult beginners learn the trumpet in community brass bands and New Horizons bands, what it costs in the UK and US, and hiring a trumpet by the month.
+  detail:
+  - h: What it's really like
+    p:
+    - Many adults learn the trumpet in a group. The Hounslow Community Brass Band, run by the Watermans arts centre in west London, welcomed complete beginners and players coming back to an instrument,
+      met on Tuesday evenings and gave members the chance to perform in public each term. It kept a small number of instruments to lend free of charge to people without their own.
+    - In the US, New Horizons bands are built for adults starting a band instrument. Baldwin Wallace's band in Ohio says it suits adults who never had the chance to play, as well as people who stopped after
+      school. Eastman's Green Band in Rochester welcomes true beginners, but members bring their own instrument and stand and buy some beginner books.
+    - Once you can play a little, there is more to join. The Glasshouse in Gateshead runs a weekday brass class for adults with some experience, and Morley College in London runs a big band course for brass
+      and other players at about Grade 3 to 4 (UK graded exams, roughly early intermediate).
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Watermans, Hounslow, west London
+        - 'Hounslow Community Brass Band, spring term 2025: 10 Tuesday evenings of 90 minutes; complete beginners welcome; first session as a taster; limited free instrument loans'
+        - £44 for 10 sessions
+      - - The Glasshouse, Gateshead
+        - 'Pathways to Brass, autumn 2025: 10 Wednesday afternoon classes; for adults with some experience; bring your own instrument'
+        - £64 for 10 classes
+      - - Baldwin Wallace Community Arts School, Berea, Ohio
+        - 'New Horizons Band: Tuesday evenings, 15 September 2026 to 6 May 2027; for adults who have never played as well as returners'
+        - $190 a semester or $350 the year, plus a $25 registration fee
+      - - Eastman Community Music School, Rochester, New York
+        - 'New Horizons Green Band: Wednesday mornings for a year in two semesters; true beginners welcome; bring your own instrument'
+        - $210 a semester (2026-27)
+    after: Dawkes Music listed its Yamaha YTR-2330 B flat trumpet for hire at £20 a month including VAT, with a three-month minimum. The case, mouthpiece, valve oil, slide grease, maintenance and insurance
+      are included, with a £50 excess for loss, theft or damage beyond repair.
+  faq:
+  - q: Can I rent a trumpet instead of buying one?
+    a: Yes. Dawkes Music listed a Yamaha beginner trumpet at £20 a month with a three-month minimum, and from month four half of each payment can be credited towards an instrument from them. In the US,
+      the University of Oklahoma's New Horizons band points members to rental schemes at local music shops.
+  - q: Can a complete beginner join a brass band?
+    a: Some bands run groups for exactly that. The Hounslow Community Brass Band welcomed complete beginners, and Brass Bands England's directory lists 668 bands that you can search by region.
+  - q: Do I need my own trumpet to join a beginner band?
+    a: Usually. Eastman's Green Band asks members to bring their own instrument, while the Hounslow band had a few instruments to lend free of charge if you asked before booking.
+  - q: How much does an adult beginner band cost in the US?
+    a: As last listed, $190 a semester at Baldwin Wallace in Ohio, $210 a semester at Eastman in Rochester and a $90 registration fee a semester at the University of Oklahoma's New Horizons band.
+  sources:
+  - label: Brass Bands England, Find a band
+    url: https://www.bbe.org.uk/find-a-band?page=34
+    checked: '2026-11-09'
+  - label: Watermans, Hounslow Community Brass Band 2025
+    url: https://www.watermans.org.uk/events/hounslow-community-brass-band-2025
+    checked: '2026-11-09'
+  - label: Watermans, Hounslow Community Brass Band (earlier term)
+    url: https://www.watermans.org.uk/events/hounslow-community-brass-band/
+    checked: '2026-11-09'
+  - label: The Glasshouse International Centre for Music, Make Music 25/26 Pathways to Brass
+    url: https://theglasshouseicm.org/whats-on/make-music-25-26-pathways-to-brass
+    checked: '2026-11-09'
+  - label: Morley College, Big Band Beginners (W26JPMA02A)
+    url: https://morleycollege.ac.uk/?p=486057
+    checked: '2026-11-09'
+  - label: Baldwin Wallace Community Arts School, New Horizons Band
+    url: https://cas.bw.edu/programming/new-horizons-band/
+    checked: '2026-11-09'
+  - label: Eastman Community Music School, New Horizons Green Band
+    url: https://www.esm.rochester.edu/community/?p=220
+    checked: '2026-11-09'
+  - label: University of Oklahoma, New Horizons Band FAQ
+    url: https://www.ou.edu/finearts/music/community/newhorizons/faq
+    checked: '2026-11-09'
+  - label: Dawkes Music, Rent a trumpet
+    url: https://www.dawkes.co.uk/rent-a-trumpet
+    checked: '2026-11-09'
+  kit:
+  - name: Trumpet valve oil
+    why: keeps the valves moving freely; check it suits your instrument's valves
+    url: https://www.amazon.co.uk/s?k=trumpet+valve+oil
+  - name: Trumpet practice mute
+    why: makes home practice quieter; check it fits a B flat trumpet bell
+    url: https://www.amazon.co.uk/s?k=trumpet+practice+mute
+  - name: Folding music stand
+    why: some beginner bands, such as Eastman's, ask members to bring their own stand
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  related:
+  - join-community-orchestra-or-band
+  - learn-the-saxophone
+  - take-a-music-grade
+  - play-one-piece-for-someone
+- id: learn-the-clarinet
+  title: Learn to play the clarinet
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A first clarinet course covers breathing, fingering and reading music, with pieces that run from classical to jazz and a chance to play in an ensemble. Beginner clarinets can be hired by the month,
+    and adult beginner bands in the US take people who have never played.
+  start:
+  - Book a beginners' class at an adult education college or join a New Horizons beginner band; City Lit's Clarinet 1A is for absolute beginners.
+  - Get a B flat clarinet, bought or hired; some music shops hire a beginner model with reeds, a case and a cleaning swab included.
+  - Buy a few soft reeds and the tutor book your course names, and plan on about 20 minutes' practice on at least four days a week.
+  links:
+  - label: 'City Lit: Clarinet 1A, for absolute beginners (London)'
+    url: https://www.citylit.ac.uk/courses/clarinet-1a
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Morley College: Big Band Beginners, for clarinet and other players at Grade 3-4 (London)'
+    url: https://morleycollege.ac.uk/?p=486057
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Baldwin Wallace Community Arts School: New Horizons Band (Berea, Ohio)'
+    url: https://cas.bw.edu/programming/new-horizons-band/
+    region: us
+    checked: '2026-11-09'
+  - label: 'Eastman Community Music School: New Horizons Green Band for beginners (Rochester, New York)'
+    url: https://www.esm.rochester.edu/community/?p=220
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Clarinet lessons for adult beginners: classes and hire'
+  description: What a beginners' clarinet course covers, which clarinet and reeds to start with, hiring one by the month, and what classes cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - City Lit's Clarinet 1A in London is for absolute beginners. It covers articulation, breathing, dynamics and the fingering for the main notes, reading pitch and rhythm, simple improvising and playing
+      in an ensemble, with pieces from classical to jazz. It is the first of a series that continues with Clarinet 1B, and the college suggests at least 20 minutes' practice a day on at least four days
+      a week.
+    - You need your own B flat clarinet, reeds and a pencil from the first week, plus the course book, Abracadabra Clarinet (third edition), which City Lit put at about £10. Hiring spreads the cost; Dawkes
+      Music's beginner clarinet comes with a mouthpiece, ligature and cap, two strength 1.5 reeds, a case, a cleaning swab and cork grease.
+    - In the US, New Horizons bands teach adults a band instrument from scratch. Baldwin Wallace's band in Ohio welcomes adults who never had the chance to play, and Eastman's Green Band in Rochester takes
+      true beginners. Once you reach about Grade 3 to 4 (UK graded exams, roughly early intermediate), Morley College's big band course in London takes clarinet players.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Clarinet 1A, autumn 2025: 11 Monday evening sessions of 90 minutes; absolute beginners; bring your own B flat clarinet'
+        - £219, or £153 concession
+      - - Morley College, London
+        - 'Big Band Beginners: 12 Tuesday evenings of two hours from 15 September 2026; for players at about Grade 3-4 with little or no band experience'
+        - £285, or £215 concession
+      - - Baldwin Wallace Community Arts School, Berea, Ohio
+        - 'New Horizons Band: Tuesday evenings, 15 September 2026 to 6 May 2027; for adults who have never played as well as returners'
+        - $190 a semester or $350 the year, plus a $25 registration fee
+      - - Eastman Community Music School, Rochester, New York
+        - 'New Horizons Green Band: Wednesday mornings for a year in two semesters; true beginners welcome; bring your own instrument'
+        - $210 a semester (2026-27)
+    after: Dawkes Music listed its Yamaha YCL-255 B flat clarinet for hire at £25 a month including VAT, with a three-month minimum, maintenance and insurance included and a £50 excess for loss, theft or
+      damage beyond repair.
+  faq:
+  - q: Which clarinet should a beginner start on?
+    a: A B flat clarinet. City Lit's beginners' course asks students to bring one, and Dawkes Music's beginner hire clarinet is a B flat.
+  - q: What strength reed should a beginner clarinet use?
+    a: Start soft. Dawkes Music's beginner hire kit includes two strength 1.5 reeds; ask your teacher before moving to a harder reed.
+  - q: Can I rent a clarinet instead of buying one?
+    a: Yes. Dawkes Music listed a Yamaha beginner clarinet at £25 a month with a three-month minimum, and from month four half of each payment can be credited towards an instrument from them.
+  - q: How much should I practise the clarinet as a beginner?
+    a: City Lit suggests at least 20 minutes a day on at least four days a week.
+  sources:
+  - label: City Lit, Clarinet 1A (ME107A)
+    url: https://www.citylit.ac.uk/courses/clarinet-1a
+    checked: '2026-11-09'
+  - label: City Lit, Choosing an instrumental class at City Lit
+    url: https://www.citylit.ac.uk/blog/choosing-instrumental-class-city-lit
+    checked: '2026-11-09'
+  - label: Morley College, Big Band Beginners (W26JPMA02A)
+    url: https://morleycollege.ac.uk/?p=486057
+    checked: '2026-11-09'
+  - label: Dawkes Music, Rent a clarinet
+    url: https://www.dawkes.co.uk/rent-a-clarinet
+    checked: '2026-11-09'
+  - label: Baldwin Wallace Community Arts School, New Horizons Band
+    url: https://cas.bw.edu/programming/new-horizons-band/
+    checked: '2026-11-09'
+  - label: Eastman Community Music School, New Horizons Green Band
+    url: https://www.esm.rochester.edu/community/?p=220
+    checked: '2026-11-09'
+  kit:
+  - name: Clarinet reeds, strength 1.5
+    why: City Lit asks beginners to bring reeds; check they are for B flat clarinet
+    url: https://www.amazon.co.uk/s?k=b+flat+clarinet+reeds+1.5
+  - name: Reed case
+    why: keeps reeds flat and protected between practice sessions
+    url: https://www.amazon.co.uk/s?k=clarinet+reed+case
+  - name: Clarinet cleaning swab
+    why: dries the inside of the clarinet after you play
+    url: https://www.amazon.co.uk/s?k=clarinet+cleaning+swab
+  related:
+  - join-community-orchestra-or-band
+  - learn-the-saxophone
+  - learn-the-flute
+  - take-a-music-grade
+- id: learn-the-harp
+  title: Learn to play the harp
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The clarsach, the Scottish lever harp, changes key with small levers on the strings rather than the pedals of a concert harp, and the Clarsach Society points out that it is very hard to make an unpleasant
+    sound on one. Harp societies and some classes rent or lend instruments, so you can learn before you buy.
+  start:
+  - Find a teacher or class through a harp society; the Clarsach Society has a Find a Tutor page, and the American Harp Society has a chapter finder and a directory of teachers.
+  - Start on a lever harp and borrow or hire one; some weekly classes lend harps free and harp societies hire them by the month.
+  - Ask about a come-and-try session or a short beginners' block before you commit to a longer course.
+  links:
+  - label: 'Fèis Rois: All Ages Beginners Clarsach, weekly class (Dingwall, Scottish Highlands)'
+    url: https://booking.feisrois.org/programme/class/all-ages-beginners-clarsach-with-bill-taylor-2938/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'The Clarsach Society: harp hire terms'
+    url: https://www.clarsachsociety.co.uk/?p=10224
+    region: uk
+    checked: '2026-11-09'
+  - label: 'American Harp Society: join a chapter and find a teacher'
+    url: https://www.harpsociety.org/join-a-chapter
+    region: us
+    checked: '2026-11-09'
+  - label: 'Wharton Arts: Harp Circle for Adults (Berkeley Heights, New Jersey)'
+    url: https://whartonarts.org/courses/harp-circle-for-adults/
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Harp lessons for adult beginners: classes and harp hire'
+  description: How adult beginners learn the harp, lever harp or pedal harp, where to find classes in the UK and US, and what renting a harp costs by the month.
+  detail:
+  - h: What it's really like
+    p:
+    - Most beginners start on a lever harp. The Clarsach Society, the Scottish harp charity, explains that a clarsach makes semitone changes with levers, while the classical pedal harp uses pedals. Group
+      classes start with hand position, simple tunes and exercises, and some teach by ear as well as from written music.
+    - Getting hold of a harp is the main hurdle, and not every class provides one, so check before you book. Fèis Rois in Dingwall offers free instrument hire to anyone in one of its weekly classes, and
+      harps are among the instruments it lends. The Clarsach Society hires clarsachs to members who join a local branch, from a waiting list, with collection from its office in Edinburgh.
+    - The Edinburgh International Harp Festival, run by the Clarsach Society, has run four-day adult beginners' courses of 90 minutes a day. In the US, chapters of the American Harp Society run harp circles,
+      workshops and recitals.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Fèis Rois, Dingwall, Scottish Highlands
+        - 'All Ages Beginners Clarsach: Thursdays, 45 minutes; term 2 of 2026/27 is six weeks from 2 November 2026; for brand-new players; free hire for weekly class members'
+        - £54 for six weeks
+      - - West Virginia University Community Music Program, Morgantown
+        - 'Harp on It, summer 2025: four Monday lessons of an hour; no musical background needed; hand position and simple tunes; harp rented through the local American Harp Society chapter'
+        - $80 plus a processing fee; harp rental $60
+      - - Wharton Arts, Berkeley Heights, New Jersey
+        - 'Harp Circle for Adults: 13 Thursday afternoon sessions of 90 minutes plus a recital; for new and returning beginners'
+        - $675
+    after: The Clarsach Society listed hire at £30 a month by standing order plus a one-off £40 admin fee, with insurance included. Morley Harps listed a Dusty Strings Ravenna 26 lever harp at £60 a month,
+      with three months paid upfront, a 12-month minimum and the hirer arranging insurance. In the US, The Harp Connection listed lever harps from $50 to $80 a month, four months paid in advance, with a
+      deposit of $125 to $200.
+  faq:
+  - q: What is the difference between a lever harp and a pedal harp?
+    a: Both can change key. A lever harp, such as the Scottish clarsach, uses levers to raise a string by a semitone, while the classical pedal harp uses pedals, according to the Clarsach Society.
+  - q: Can I rent a harp?
+    a: Yes. The Clarsach Society hires clarsachs to members at £30 a month plus a £40 admin fee, and The Harp Connection in the US rents lever harps from $50 a month with a four-month minimum.
+  - q: How do I find a harp teacher near me?
+    a: In the UK, use the Clarsach Society's Find a Tutor page or ask a local branch. In the US, the American Harp Society has a chapter finder and a professional directory of teachers.
+  - q: Can you rent a harp and then buy it?
+    a: Some dealers allow it. The Harp Connection applies all of the first four months' rent to the price, and Morley Harps may credit some rental payments on new lever harps.
+  sources:
+  - label: The Clarsach Society, Frequently asked questions
+    url: https://www.clarsachsociety.co.uk/?p=110
+    checked: '2026-11-09'
+  - label: The Clarsach Society, Terms and conditions of hire
+    url: https://www.clarsachsociety.co.uk/?p=10224
+    checked: '2026-11-09'
+  - label: Fèis Rois, All Ages Beginners Clarsach with Bill Taylor
+    url: https://booking.feisrois.org/programme/class/all-ages-beginners-clarsach-with-bill-taylor-2938/
+    checked: '2026-11-09'
+  - label: Fèis Rois, Instrument hire
+    url: https://feisrois.org/what-we-offer/instrument-hire/
+    checked: '2026-11-09'
+  - label: Edinburgh International Harp Festival, home page
+    url: https://harpfestival.co.uk/
+    checked: '2026-11-09'
+  - label: Edinburgh International Harp Festival, adult beginners' four-day course (T02)
+    url: https://tickets.harpfestival.co.uk/event/5986:458/
+    checked: '2026-11-09'
+  - label: West Virginia University Community Music Program, Harp on It
+    url: https://creativeartsandmedia.wvu.edu/school-of-music/community-music-program/programs/harp-on-it
+    checked: '2026-11-09'
+  - label: Wharton Arts, Harp Circle for Adults
+    url: https://whartonarts.org/courses/harp-circle-for-adults/
+    checked: '2026-11-09'
+  - label: American Harp Society, Join a chapter
+    url: https://www.harpsociety.org/join-a-chapter
+    checked: '2026-11-09'
+  - label: Morley Harps, Harp hire
+    url: https://morleyharps.oxatis.com/harp-hire
+    checked: '2026-11-09'
+  - label: Morley Harps, Dusty Strings Ravenna 26 harp rental
+    url: https://morleyharps.oxatis.com/dusty-strings-ravenna-26-harp-rental-initial-payment-with-delivery-c2x40575817
+    checked: '2026-11-09'
+  - label: The Harp Connection, Lever harp rental program
+    url: https://harpconnection.com/LeverRentalProgram.html
+    checked: '2026-11-09'
+  kit:
+  - name: Clip-on chromatic tuner
+    why: harps need tuning often; check it reads low strings reliably
+    url: https://www.amazon.co.uk/s?k=clip+on+chromatic+tuner+harp
+  - name: Harp tuning key
+    why: turns the tuning pins; check the size matches your harp's pins
+    url: https://www.amazon.co.uk/s?k=harp+tuning+key
+  - name: Folding music stand
+    why: holds your music at eye level while you sit at the harp
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  related:
+  - learn-the-piano
+  - learn-the-cello
+  - take-a-music-grade
+  - go-to-a-folk-dance
+- id: learn-the-bagpipes
+  title: Learn to play the bagpipes
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Nobody starts on the full pipes. You learn the fingering and the grace notes on a quiet practice chanter first, often in a small evening class or with a local pipe band, and move to the bagpipes
+    once your fingers are ready.
+  start:
+  - Book an absolute beginners' class; the National Piping Centre in Glasgow runs them in person and online in eight-week terms.
+  - Get a practice chanter and a tutor book; some classes sell or include a chanter, so ask before you buy.
+  - Practise on the chanter every day and ask your tutor or band when you are ready to move on to the pipes.
+  links:
+  - label: 'National Piping Centre: evening classes, in person and online (Glasgow)'
+    url: https://www.thepipingcentre.co.uk/learn/evening-classes/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Halsway Manor: Beginner Bagpipe Weekend, English Border pipes (Somerset)'
+    url: https://www.halswaymanor.org.uk/event/beginner-bagpipe-weekend-2026
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Celtic Arts Foundation: Bagpipes for Beginners (Mount Vernon, Washington)'
+    url: https://www.celticarts.org/event/bfb-spring-week1
+    region: us
+    checked: '2026-11-09'
+  - label: 'Eastman Community Music School: Bagpipes 101 (Rochester, New York)'
+    url: https://esm.rochester.edu/community/?p=23849
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Bagpipe lessons for adult beginners: start on the chanter'
+  description: How adults learn the bagpipes, starting on a practice chanter, with beginner classes, lesson prices and pipe band tuition in the UK and the US.
+  detail:
+  - h: What it's really like
+    p:
+    - The first months are spent on the practice chanter, a quiet pipe with the same finger holes as the bagpipe chanter but no bag or drones. The National Piping Centre in Glasgow splits its beginners
+      into two levels, Absolute Beginner for people picking up the chanter for the first time and Established Beginner for those building core skills and tunes. It aims to keep classes to about six people,
+      and absolute beginners can buy a chanter at their first session.
+    - In the US, Eastman Community Music School in Rochester says you need only a practice chanter, a tutor book and teaching to begin, not a full set of pipes. Many pipe bands also teach newcomers. The
+      Raleigh Pipe Band's learners' page offered free group lessons and cited an estimate that an adult practising the chanter for 15 to 30 minutes a day might be ready for the pipes in six to eight months,
+      while stressing that everyone progresses differently.
+    - The Great Highland bagpipe is not the only kind. Halsway Manor in Somerset ran a beginners' weekend on English Border pipes in January 2026, learned mostly by ear.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - National Piping Centre, Glasgow
+        - Absolute Beginner evening classes, in person or online, in eight-week terms; Term 2 runs 26 October to 17 December 2026. Class fees are not shown online; one-to-one lessons are sold in passes
+        - 'One-to-one: £215 for five 50-minute lessons, or £118 for five 25-minute lessons'
+      - - Halsway Manor, Somerset
+        - Beginner Bagpipe Weekend on English Border pipes, 30 January to 1 February 2026; for complete beginners; pipes can be borrowed if you ask when booking
+        - £180 non-resident; £210 to £330 with meals and a bed or pitch
+      - - Celtic Arts Foundation, Mount Vernon, Washington
+        - 'Bagpipes for Beginners: eight weekly classes plus a bonus class, spring 2026 series from 7 April; no musical experience needed'
+        - $192 suggested donation; practice chanter lent for the series
+      - - Eastman Community Music School, Rochester, New York
+        - 'Bagpipes 101: Monday evenings, 50 minutes, open to adults'
+        - $174 a semester (2026-27)
+    after: The Raleigh Pipe Band's page put the cost of a practice chanter at about $100. Eastman has arranged a chanter and tutor book package with a local supplier, The Piper's Cove.
+  faq:
+  - q: Do you start learning bagpipes on a practice chanter?
+    a: Yes. The National Piping Centre's absolute beginner classes are for people picking up the chanter for the first time, and Eastman says a chanter and tutor book are all you need to begin.
+  - q: How long before you can play the full bagpipes?
+    a: It varies. The Raleigh Pipe Band cited an estimate of six to eight months for an adult practising the chanter for 15 to 30 minutes a day.
+  - q: Can I learn the bagpipes online?
+    a: Yes. The National Piping Centre runs online Absolute Beginner and Established Beginner Highland pipe classes alongside its in-person ones.
+  - q: How much do bagpipe lessons cost?
+    a: The National Piping Centre lists five 50-minute one-to-one lessons at £215. In the US, Eastman's Bagpipes 101 group class is $174 a semester.
+  sources:
+  - label: National Piping Centre, Evening classes
+    url: https://www.thepipingcentre.co.uk/learn/evening-classes/
+    checked: '2026-11-09'
+  - label: National Piping Centre, Passes and immersive courses
+    url: https://the-national-piping-centre.book.app/pass
+    checked: '2026-11-09'
+  - label: bagpipe.news, The NPC evening classes for pipes, piobaireachd, smallpipes, drums, whistle and Gaelic begin in August (16 July 2026)
+    url: https://bagpipe.news/?p=49227
+    checked: '2026-11-09'
+  - label: Halsway Manor, Beginner Bagpipe Weekend 2026
+    url: https://www.halswaymanor.org.uk/event/beginner-bagpipe-weekend-2026
+    checked: '2026-11-09'
+  - label: Celtic Arts Foundation, Bagpipes for Beginners spring 2026
+    url: https://www.celticarts.org/event/bfb-spring-week1
+    checked: '2026-11-09'
+  - label: Eastman Community Music School, Bagpipes 101
+    url: https://esm.rochester.edu/community/?p=23849
+    checked: '2026-11-09'
+  - label: Raleigh Pipe Band, Learn to play (2019)
+    url: https://raleighpipeband.com/post/learn
+    checked: '2026-11-09'
+  - label: Peoria Magazine, Answering the Call (26 February 2020)
+    url: https://www.peoriamagazine.com/?p=12896
+    checked: '2026-11-09'
+  inspire:
+  - kind: read
+    person: Kari Smith, Peoria
+    line: Asked a local pipe band for free lessons, started on the chanter, bought a second-hand set of pipes from a retiring piper and now plays with the band at parades, competitions, weddings and funerals.
+    title: Answering the Call
+    outlet: Peoria Magazine
+    url: https://www.peoriamagazine.com/?p=12896
+    checked: '2026-11-09'
+  kit:
+  - name: Practice chanter
+    why: what every beginner learns on; check whether your class sells or includes one first
+    url: https://www.amazon.co.uk/s?k=bagpipe+practice+chanter
+  - name: Bagpipe tutor book
+    why: Eastman lists a tutor book with the chanter as all you need to start; ask your tutor which one they use
+    url: https://www.amazon.co.uk/s?k=bagpipe+tutor+book
+  related:
+  - scottish-country-dancing
+  - join-community-orchestra-or-band
+  - learn-the-drums
+  - take-a-music-grade
+- id: learn-the-accordion
+  title: Learn to play the accordion
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The accordion gives you the tune in one hand and the bass and chords in the other. Beginners' classes teach you to hold it, work the bellows and bring both hands together.
+  start:
+  - Book a beginners' class; Morley College in London runs one for absolute beginners and lends an accordion for a trial session.
+  - Hire or buy a small piano accordion, 24, 32 or 48 bass, before the course gets going; a hire scheme lets you try before you buy.
+  - Once you can play a few tunes, find an accordion and fiddle club near you and go along to listen or join in.
+  links:
+  - label: 'Morley College: Accordion Beginners (London)'
+    url: https://morleycollege.ac.uk/?p=489909
+    region: uk
+    checked: '2026-11-09'
+  - label: 'National Association of Accordion and Fiddle Clubs: clubs in Scotland and northern England'
+    url: https://www.boxandfiddle.com/about.html
+    region: uk
+    checked: '2026-11-09'
+  - label: 'East Anglian Traditional Music Trust: accordions for hire'
+    url: https://www.eatmt.org.uk/accordions-for-hire/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Old Town School of Folk Music: adult beginner classes, including Accordion 1 (Chicago)'
+    url: https://www.oldtownschool.org/classes/adults/beginner
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Accordion lessons for adult beginners: classes and hire'
+  description: What a beginners' accordion class covers, which size of accordion to start on, hiring one, and what classes cost in the UK and the US.
+  detail:
+  - h: What it's really like
+    p:
+    - Morley College's beginners' course in London starts with how the accordion works and how to hold it with good posture. You then work on simple right-hand exercises, left-hand bass and chord exercises
+      and basic music theory, before putting both hands together for simple tunes.
+    - Size matters. Morley prefers a 24, 32 or 48 bass instrument, the number of buttons on the left-hand side, and says a 12 bass can work with some adjustments. You need your own accordion to enrol on
+      the full course, though the college lends one for a trial class. A hire scheme is a cheaper way to start; the East Anglian Traditional Music Trust, a charity, hires out a 48 bass piano accordion.
+    - Clubs give you somewhere to play. The National Association of Accordion and Fiddle Clubs, founded in 1971, links about 50 clubs in Scotland and northern England devoted to Scottish traditional dance
+      music. They meet monthly, many of them from September to May; players bring their instruments and join in, and the night usually ends with a visiting band.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Morley College, London
+        - 'Accordion Beginners: 12 Wednesday mornings of 90 minutes, 16 September to 9 December 2026; absolute beginners, age 19 and over; bring your own accordion'
+        - £225, or £170 concession
+      - - Old Town School of Folk Music, Chicago
+        - 'Accordion 1: eight weekly classes of 80 minutes, Monday or Thursday; beginners'
+        - $264, or $244 for members
+      - - EdAdvance Adult and Continuing Education, North Canaan, Connecticut
+        - 'How to Play the Accordion, beginner level: five weekly one-hour sessions, fall 2025 run from 20 October; accordions to use in class, but you need a piano accordion at home to practise'
+        - $55, plus optional $25 textbook and $50 sheet music
+      - - East Anglian Traditional Music Trust
+        - 'Hire scheme: a Bell 48 bass piano accordion'
+        - £15 admin fee, then £10 a month
+    after: The East Anglian Traditional Music Trust's Hohner Arietta can be lent free for up to a year to a young person under 25 from East Anglia; ask the trust about availability.
+  faq:
+  - q: What size accordion should a beginner buy?
+    a: Morley College prefers a 24, 32 or 48 bass accordion for its beginners' course, and says a 12 bass can work with some adjustments.
+  - q: Can I rent an accordion?
+    a: Yes, from some charities and shops. The East Anglian Traditional Music Trust charges a £15 admin fee and then £10 a month.
+  - q: Do I need my own accordion for lessons?
+    a: Usually. Morley College asks you to have one for the full course, though it lends one for a trial class, and EdAdvance's class asks for a piano accordion at home for practice.
+  - q: Are there accordion clubs near me?
+    a: In Scotland and northern England, the National Association of Accordion and Fiddle Clubs lists about 50 clubs that meet monthly, many of them from September to May.
+  sources:
+  - label: Morley College, Accordion Beginners (W26MPPA01A)
+    url: https://morleycollege.ac.uk/?p=489909
+    checked: '2026-11-09'
+  - label: National Association of Accordion and Fiddle Clubs, About
+    url: https://www.boxandfiddle.com/about.html
+    checked: '2026-11-09'
+  - label: East Anglian Traditional Music Trust, Accordions for hire
+    url: https://www.eatmt.org.uk/accordions-for-hire/
+    checked: '2026-11-09'
+  - label: Old Town School of Folk Music, Adult beginner classes
+    url: https://www.oldtownschool.org/classes/adults/beginner
+    checked: '2026-11-09'
+  - label: 'EdAdvance Adult and Continuing Education, How to Play the Accordion: Beginner Level'
+    url: https://edadvance-adult-continuing-education.coursestorm.com/course/how-to-play-the-accordion-beginner-level-in-person-off-site-canaan
+    checked: '2026-11-09'
+  - label: ABC News, Oscar Winning Actress Mary Steenburgen Takes Up Accordion at 60 (21 October 2013)
+    url: https://abcnews.com/blogs/entertainment/2013/10/oscar-winning-actress-mary-steenburgen-takes-up-accordion-at-60
+    checked: '2026-11-09'
+  inspire:
+  - kind: read
+    person: Mary Steenburgen, actor
+    line: Took up the accordion her husband, Ted Danson, gave her when music started coming to her, and went on to write or co-write more than 40 songs with Nashville musicians and be signed as a songwriter
+      by Universal Music.
+    title: Oscar Winning Actress Mary Steenburgen Takes Up Accordion at 60
+    outlet: ABC News
+    url: https://abcnews.com/blogs/entertainment/2013/10/oscar-winning-actress-mary-steenburgen-takes-up-accordion-at-60
+    checked: '2026-11-09'
+  kit:
+  - name: Accordion straps
+    why: hold the instrument securely and evenly; check they fit your accordion's size
+    url: https://www.amazon.co.uk/s?k=accordion+shoulder+straps
+  - name: Piano accordion tutor book
+    why: for practice between classes; ask your tutor which one they use
+    url: https://www.amazon.co.uk/s?k=piano+accordion+tutor+book
+  related:
+  - scottish-country-dancing
+  - go-to-a-folk-dance
+  - learn-the-piano
+  - join-community-orchestra-or-band
+- id: learn-the-banjo
+  title: Learn to play the banjo
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The banjo comes in more than one tradition, from old-time clawhammer and bluegrass picking on the five-string to Irish tunes on the four-string tenor. Beginners' classes in the UK and US start you
+    on simple tunes, often learned by ear.
+  start:
+  - Decide which style draws you, as it decides the banjo you need; clawhammer and bluegrass use a five-string banjo, Irish traditional music a four-string tenor.
+  - Book a beginners' class at an adult learning centre or folk school, or try an evening mini-class at a summer folk week.
+  - Get your own banjo and a clip-on tuner before the first class; most courses expect you to bring one.
+  links:
+  - label: 'Bristol Folk House: Banjo, Clawhammer/Frailing (Bristol)'
+    url: https://www.bristolfolkhouse.co.uk/courses/print/22039
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Crescent Arts Centre: Traditional Irish Banjo and Mandolin for beginners (Belfast)'
+    url: https://crescentarts.org/courses/music-and-drama/instruments/banjo-mandolin-beginners
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Old Town School of Folk Music: adult beginner banjo classes (Chicago)'
+    url: https://www.oldtownschool.org/classes/adults/beginner
+    region: us
+    checked: '2026-11-09'
+  - label: 'Augusta Heritage Center: Old-Time Week (Elkins, West Virginia)'
+    url: https://augustaartsandculture.org/old-time-week-2026/
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Banjo lessons for beginners: clawhammer, bluegrass, Irish'
+  description: Which banjo style and instrument to start on, what beginners' banjo classes cover, and what courses and folk weeks cost in the UK and the US.
+  detail:
+  - h: What it's really like
+    p:
+    - Pick a style first. John C. Campbell Folk School in North Carolina describes clawhammer as the downstroke way of playing used in old-time and Appalachian music, and three-finger picking as the route
+      to bluegrass. Chicago's Old Town School of Folk Music runs a separate Introduction to the Banjo for people drawn to the five-string who are not sure which style to try. Irish traditional music is
+      played on a four-string tenor banjo instead.
+    - Bristol Folk House's clawhammer course begins with basic technique and rhythm, then moves on to tunes in a range of styles and, later, playing with others. Folk schools often teach by ear. At Augusta
+      Heritage Center's Old-Time Week, the beginners' banjo mini-class asks you to bring a tuner, a recording device and your own banjo.
+    - A folk week adds a social side. Augusta's runs three class periods of about an hour a day, with jams and square dances in the evenings.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Bristol Folk House
+        - 'Banjo: Clawhammer/Frailing, six Tuesday afternoons of 75 minutes from 3 November 2026; bring a five-string banjo'
+        - £75; £67.50 over 65; £60 benefit rate
+      - - Crescent Arts Centre, Belfast
+        - 'Traditional Irish Banjo and Mandolin: Beginners, 12 Monday evenings of 45 minutes, 7 September to 30 November 2026; tenor banjo or mandolin; no experience needed'
+        - £99
+      - - Old Town School of Folk Music, Chicago
+        - 'Introduction to the Banjo, Clawhammer Banjo 1, Bluegrass Banjo 1 or Banjo 1: eight weekly classes of 80 minutes'
+        - $264, or $244 for members
+      - - Augusta Heritage Center, Elkins, West Virginia
+        - Beginning Two-Finger Banjo, an evening mini-class during Old-Time Week, 21 to 23 July 2026; no experience needed; bring your own banjo
+        - $75
+    after: Old Town School's Bluegrass Banjo 1 is the first of five classes in its bluegrass series, and its Clawhammer Banjo 1 uses chords to strum simple songs.
+  faq:
+  - q: Should I learn clawhammer or bluegrass banjo first?
+    a: It depends on the music you like. Clawhammer is the downstroke style of old-time and Appalachian music, while three-finger picking leads to bluegrass, and Old Town School runs an introductory class
+      for people who have not yet chosen.
+  - q: What is the difference between a five-string and a tenor banjo?
+    a: Clawhammer and bluegrass are played on the five-string banjo. Irish traditional classes, such as Crescent Arts Centre's in Belfast, use the four-string tenor banjo.
+  - q: Do I need my own banjo for lessons?
+    a: Usually. Bristol Folk House asks for a five-string banjo, and Augusta's beginners' mini-class asks you to bring your own banjo and a tuner.
+  - q: How much are beginner banjo classes?
+    a: Bristol Folk House listed a six-week clawhammer course at £75. Old Town School's eight-week beginner classes are $264, or $244 for members.
+  sources:
+  - label: Bristol Folk House, Banjo, Clawhammer/Frailing
+    url: https://www.bristolfolkhouse.co.uk/courses/print/22039
+    checked: '2026-11-09'
+  - label: 'Crescent Arts Centre, Traditional Irish Banjo and Mandolin: Beginners'
+    url: https://crescentarts.org/courses/music-and-drama/instruments/banjo-mandolin-beginners
+    checked: '2026-11-09'
+  - label: Old Town School of Folk Music, Adult beginner classes
+    url: https://www.oldtownschool.org/classes/adults/beginner
+    checked: '2026-11-09'
+  - label: Augusta Heritage Center, Old-Time Week 2026
+    url: https://augustaartsandculture.org/old-time-week-2026/
+    checked: '2026-11-09'
+  - label: 'John C. Campbell Folk School, Learning Appalachian Music at the Folk School: Fiddle, Banjo, and Mountain Dulcimer'
+    url: https://www.folkschool.org/2026/02/10/learning-appalachian-music-at-the-folk-school-fiddle-banjo-and-mountain-dulcimer/
+    checked: '2026-11-09'
+  - label: 'The Spokesman-Review, Off the Grid: A writer learns the banjo (29 April 2022)'
+    url: https://www.spokesman.com/stories/2022/apr/29/off-the-grid-a-writer-learns-the-banjo
+    checked: '2026-11-09'
+  inspire:
+  - kind: read
+    person: Ammi Midstokke, writer
+    line: Started banjo lessons with no real musical background and, after battling tangled strings and tuning, learned to play Pink Floyd's Wish You Were Here.
+    title: 'Off the Grid: A writer learns the banjo'
+    outlet: The Spokesman-Review
+    url: https://www.spokesman.com/stories/2022/apr/29/off-the-grid-a-writer-learns-the-banjo
+    checked: '2026-11-09'
+  kit:
+  - name: Clip-on tuner
+    why: Augusta asks beginners to bring a tuner; check it works for banjo or is chromatic
+    url: https://www.amazon.co.uk/s?k=clip+on+chromatic+tuner
+  - name: Banjo strap
+    why: takes the weight of the banjo while you play; check it fits your banjo's fittings
+    url: https://www.amazon.co.uk/s?k=banjo+strap
+  related:
+  - learn-the-guitar
+  - learn-the-violin
+  - learn-the-ukulele
+  - go-to-a-folk-dance
+- id: learn-ballet-as-an-adult
+  title: Take an adult ballet class
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: A ballet class runs in the same order wherever you take it, from slow work at the barre to turns and jumps in the centre, and you learn the French terms dancers use. Adult beginners' courses at colleges
+    and ballet schools need no dance experience.
+  start:
+  - Book a beginners' course at an adult education college such as City Lit or Morley College, or a fundamentals class at a ballet school, and check the listing says it suits complete beginners.
+  - Buy canvas or leather ballet shoes with elastics and wear close-fitting clothes; City Lit asks for a leotard and tights or similar, hair tied back and no jewellery.
+  - Line up the next term; City Lit and Morley both list follow-on beginners' runs into summer 2027.
+  links:
+  - label: 'City Lit: ballet courses for beginners (London)'
+    url: https://www.citylit.ac.uk/courses/performing-arts/dance/ballet/beginners
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Morley College: Ballet Beginners and Improvers (London)'
+    url: https://morleycollege.ac.uk/?p=467309
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Brooklyn Ballet: adult classes, including Adult Ballet Fundamental (New York)'
+    url: https://www.brooklynballet.org/school/adult-classes
+    region: us
+    checked: '2026-11-09'
+  - label: 'North Seattle College: Adult Beginner Ballet (Washington)'
+    url: https://conted.northseattle.edu/node/91196
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Adult ballet classes for beginners: what to expect'
+  description: What happens in an adult beginners' ballet class, what to wear, which shoes to buy, and what courses and drop-in classes cost in the UK and the US.
+  detail:
+  - h: What it's really like
+    p:
+    - Classes follow the traditional order. At City Lit that means barre work, then centre practice, slow adage and quicker allegro, with posture, alignment, short combinations and the standard French vocabulary
+      taught along the way. You need to follow spoken instructions and count the music.
+    - Expect to dress for the teacher to see your shape. City Lit and Morley College ask for close-fitting clothes and ballet shoes. Brooklyn Ballet recommends slippers but does not require them, and asks
+      you to leave smartwatches and excessive jewellery at home.
+    - Check the level before you book. The Royal Academy of Dance's own school in London lists its adult ballet classes at Intermediate Foundation and Intermediate, so they are not for first-timers, while
+      colleges and some ballet schools run classes for complete beginners.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Classical ballet: beginners; ten 90-minute Monday-morning classes from 11 January 2027 (also Tuesday-evening runs)'
+        - £229, or £183 senior and £160 concession
+      - - Morley College, Waterloo, London
+        - Ballet Beginners and Improvers; Monday evenings, 90 minutes, 12 April to 28 June 2027; in the studio or live-streamed
+        - £225, or £170 concession
+      - - Brooklyn Ballet, New York
+        - Adult Ballet Fundamental, for absolute beginners; 75-minute classes, fall semester 21 September 2026 to 31 January 2027 (16 classes)
+        - $384 for one class a week, or $25 drop-in
+      - - North Seattle College, Washington
+        - Adult Beginner Ballet; Tuesday evenings, fall 2025 (latest run listed)
+        - $185
+    after: City Lit and the Royal Academy of Dance's London school also run Silver Swans classes, the Academy's adapted ballet programme, which has its own entry criteria; read the course page before booking.
+  faq:
+  - q: Can you start ballet as an adult with no experience?
+    a: Yes. City Lit's Classical ballet beginners course is for beginners, Morley College's suits complete beginners, and Brooklyn Ballet's Adult Ballet Fundamental is designed for people with no prior
+      experience.
+  - q: What do you wear to an adult ballet class?
+    a: Close-fitting clothes you can move in, such as a leotard and tights, leggings or a fitted T-shirt, with ballet shoes. City Lit asks for hair tied back and no jewellery.
+  - q: How much do adult ballet classes cost?
+    a: City Lit listed £229 for ten 90-minute classes and Morley College £225 for a term. In New York, Brooklyn Ballet listed $25 for a drop-in class.
+  - q: Do I need ballet shoes for my first class?
+    a: City Lit and Morley College ask for ballet shoes; City Lit specifies canvas or leather with elastics. Brooklyn Ballet recommends slippers but does not require them.
+  sources:
+  - label: City Lit, Ballet courses for beginners
+    url: https://www.citylit.ac.uk/courses/performing-arts/dance/ballet/beginners
+    checked: '2026-11-09'
+  - label: 'City Lit, Classical ballet: beginners'
+    url: https://www.citylit.ac.uk/classical-ballet-beginners
+    checked: '2026-11-09'
+  - label: Morley College, Ballet Beginners and Improvers (W26DNED02C)
+    url: https://morleycollege.ac.uk/?p=467309
+    checked: '2026-11-09'
+  - label: Royal Academy of Dance, Dance school in London
+    url: https://www.royalacademyofdance.org/dance-classes/dance-school-in-london/
+    checked: '2026-11-09'
+  - label: Brooklyn Ballet, Adult classes
+    url: https://www.brooklynballet.org/school/adult-classes
+    checked: '2026-11-09'
+  - label: North Seattle College, Adult Beginner Ballet
+    url: https://conted.northseattle.edu/node/91196
+    checked: '2026-11-09'
+  - label: 'The Guardian via inkl, A new start after 60: I took up ballet at 62'
+    url: https://www.inkl.com/news/a-new-start-after-60-i-took-up-ballet-at-62-and-it-felt-like-coming-home
+    checked: '2026-11-09'
+  inspire:
+  - kind: read
+    person: Tina Leverton, Mumbles, south Wales
+    line: Booked her first ballet class after spotting an advert in a free paper, took about three months to master the pirouette and is working towards a Royal Academy of Dance team award.
+    title: 'A new start after 60: ''I took up ballet at 62 – and it transformed my life'''
+    outlet: The Guardian (via inkl)
+    url: https://www.inkl.com/news/a-new-start-after-60-i-took-up-ballet-at-62-and-it-felt-like-coming-home
+    checked: '2026-11-09'
+  kit:
+  - name: Ballet shoes with elastics
+    why: City Lit asks beginners for canvas or leather ballet shoes with elastics; check the size guide, as they should fit snugly
+    url: https://www.amazon.co.uk/s?k=canvas+ballet+shoes+adult+elastic
+  - name: Leotard
+    why: close-fitting clothes let the teacher see your posture and alignment
+    url: https://www.amazon.co.uk/s?k=adult+ballet+leotard
+  related:
+  - learn-tap-dancing
+  - take-a-ballroom-class
+  - yoga-class
+  - learn-tai-chi-form
+- id: learn-argentine-tango
+  title: Learn Argentine tango
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Argentine tango is a social dance improvised in an embrace, so you learn to walk, pivot and listen to a partner rather than memorise a routine. Once you have the basics, there is a whole evening
+    culture to join, the milonga, where people come to dance with whoever is there.
+  start:
+  - Try a one-day introduction, such as City Lit's, or a drop-in beginners' class at a tango school; you do not need a partner or any experience.
+  - Wear comfortable shoes with leather soles rather than rubber, as Tanguito and Yorkshire Dance suggest.
+  - Stay on for the milonga after class; at Tanguito in London the beginners' class runs straight into one.
+  links:
+  - label: 'City Lit: Argentine Tango: Introduction (London)'
+    url: https://citylit.ac.uk/courses/performing-arts/dance/latin-american-dance
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Tanguito: beginners'' classes and milonga in Islington (London)'
+    url: https://www.tanguito.co.uk/?p=3685
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Yorkshire Dance: Argentine Tango and Milonga (Leeds)'
+    url: https://yorkshiredance.com/course/tango-and-milonga-class/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Lexington Community Education: Argentine Tango (Massachusetts)'
+    url: https://lexingtoncommunityed.org/class/argentine-tango-with-laura-grandi-2/
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Argentine tango for beginners: classes and milongas'
+  description: What a beginners' Argentine tango class covers, what a milonga is, how the cabeceo works, what shoes to wear and what classes cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - Beginners' classes work on posture, balance, walking and pivoting, with exercises on your own and in pairs. Lexington Community Education's course says no experience or partner is needed, and Tanguito
+      says partners usually swap every few songs.
+    - The word milonga means two things. It is an older, faster style of tango music, which Yorkshire Dance uses to teach its beginners, and it is the event where people meet to dance. A práctica is a shorter,
+      less formal session for practising.
+    - A milonga has its own customs. The DJ plays sets called tandas, usually four tangos or three vals or milonga songs, separated by a short burst of non-tango music, the cortina, when dancers go back
+      to their seats. The traditional invitation is the cabeceo, a look and a nod across the room. Couples travel anticlockwise round the floor, and beginners keep towards the centre.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Argentine Tango: Introduction; a one-day Sunday workshop from 6 December 2026; no partner needed'
+        - £49, or £34 concession
+      - - Tanguito, Islington, London
+        - Drop-in beginner and improver class, Wednesday evenings and alternate Sunday afternoons, followed by a milonga
+        - £10 first class, then £12; £8 milonga only
+      - - Yorkshire Dance, Leeds
+        - Tuesday beginners' class, 7.30 to 8.30pm, autumn term 2026; no booking needed
+        - £10 a class, or £15 for two sessions
+      - - Lexington Community Education, Massachusetts
+        - Eight 90-minute Monday-evening classes from 14 September 2026; no experience or partner needed
+        - $185 to $200
+    after: The Lexington course was showing as full, with a waiting list, when we checked.
+  faq:
+  - q: Do I need a partner to learn Argentine tango?
+    a: No. City Lit, Tanguito and Lexington Community Education all say no partner is needed, and partners usually rotate during class.
+  - q: What is a milonga in tango?
+    a: It is a social dance event where people meet to dance tango. The word also names an older, faster style of tango music.
+  - q: What is the cabeceo in tango?
+    a: The traditional way to ask for a dance in Buenos Aires, by catching someone's eye and nodding. A nod back means yes; looking away means no.
+  - q: What shoes should I wear to a tango class?
+    a: Comfortable shoes with leather soles, or dance shoes. Yorkshire Dance suggests avoiding rubber soles.
+  sources:
+  - label: City Lit, Latin American dance courses
+    url: https://citylit.ac.uk/courses/performing-arts/dance/latin-american-dance
+    checked: '2026-11-09'
+  - label: Tanguito, Learn Argentine tango in Angel, Islington
+    url: https://www.tanguito.co.uk/?p=3685
+    checked: '2026-11-09'
+  - label: Tanguito, Tango terminology
+    url: https://tanguito.co.uk/tango-culture/discover-tango/tango-terminology/
+    checked: '2026-11-09'
+  - label: Yorkshire Dance, Argentine Tango and Milonga
+    url: https://yorkshiredance.com/course/tango-and-milonga-class/
+    checked: '2026-11-09'
+  - label: Lexington Community Education, Argentine Tango with Laura Grandi
+    url: https://lexingtoncommunityed.org/class/argentine-tango-with-laura-grandi-2/
+    checked: '2026-11-09'
+  - label: Your Observer, Longboater dances way to Tango World Championships (15 March 2017)
+    url: https://www.yourobserver.com/news/2017/mar/15/longboater-dances-way-to-tango-world-championships
+    checked: '2026-11-09'
+  inspire:
+  - kind: read
+    person: Wendy Feinstein, Longboat Key, Florida
+    line: Started tango classes in Sarasota after seeing the dance performed in Buenos Aires, and within about four years was invited to dance salon tango at the Tango World Championships there.
+    title: Longboater dances way to Tango World Championships
+    outlet: Your Observer
+    url: https://www.yourobserver.com/news/2017/mar/15/longboater-dances-way-to-tango-world-championships
+    checked: '2026-11-09'
+  kit:
+  - name: Leather-soled dance shoes
+    why: a leather sole lets you pivot on the floor; check the heel height is one you can walk in comfortably
+    url: https://www.amazon.co.uk/s?k=leather+sole+dance+shoes
+  - name: Dance shoe bag
+    why: keeps your dance shoes clean for the floor, so you change into them at the venue
+    url: https://www.amazon.co.uk/s?k=dance+shoe+bag
+  related:
+  - learn-salsa
+  - take-a-ballroom-class
+  - learn-swing-dancing
+  - learn-a-language-to-b1
+- id: learn-flamenco
+  title: Learn flamenco dancing
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Flamenco is built on rhythm. Beginners learn to clap the compás, the pulse of the music, and then put footwork, arm movements and turns together into short dances.
+  start:
+  - Book a beginners' course at an adult education college or a dance studio; City Lit and Buckinghamshire Adult Learning both run courses for beginners.
+  - Get shoes with a small, sturdy heel, or flamenco shoes or boots if you have them; City Lit rules out stilettos, sandals, platforms and trainers.
+  - Wear clothes that let the teacher see you move; CityDance suggests long skirts for women and slacks for men.
+  links:
+  - label: 'City Lit: Flamenco: beginners (London)'
+    url: https://www.citylit.ac.uk/flamenco-beginners
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Buckinghamshire Adult Learning: Flamenco Dancing for Beginners (Amersham)'
+    url: https://adultlearningbc.ac.uk/courses/flamenco-dancing-for-beginners-muda00126273amb/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'CityDance: Beginner Flamenco (Washington, DC)'
+    url: https://www.citydance.net/classes/beginner-flamenco-13-week-fall-winter-session/
+    region: us
+    checked: '2026-11-09'
+  - label: 'Ballet Hispánico School: adult classes, including flamenco (New York)'
+    url: https://www.ballethispanico.org/school/adult-classes
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Flamenco classes for beginners: what to expect and cost'
+  description: What a beginners' flamenco class teaches, from palmas and compás to footwork, what shoes and clothes you need, and what courses cost in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - Rhythm comes first. City Lit's beginners' course starts with palmas, the rhythmic hand-clapping, to tune you into the compás, then builds basic footwork and the coordination of arms, feet, head, wrists
+      and turns into short choreographies. It also covers the history of flamenco.
+    - Buckinghamshire Adult Learning's one-hour classes include filigrana, the swirling hand movements, and braceo, the carriage of the arms and upper body. CityDance in Washington, DC adds music theory
+      and rhythmic patterns, and Ballet Hispánico's New York class includes castanets.
+    - Shoes matter. City Lit asks women for flamenco shoes or strong court shoes with a small heel, and men for flamenco boots or leather-soled shoes with a slight heel. By the second term it expects a
+      flamenco or flared skirt for women.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Flamenco: beginners; ten 90-minute Thursday-morning classes from 14 January 2027'
+        - £249, or £199 senior and £174 concession
+      - - Buckinghamshire Adult Learning, Amersham
+        - Flamenco Dancing for Beginners; five one-hour Tuesday-morning classes, 8 June to 6 July 2027
+        - £46, plus a yearly registration fee of about £11
+      - - CityDance, Washington, DC
+        - Beginner Flamenco; 13 Wednesday-evening classes, 9 September to 16 December 2026
+        - $260
+      - - Ballet Hispánico School, New York
+        - Adult flamenco, all levels; 11 one-hour Saturday classes, 19 September to 5 December (year not shown)
+        - $245
+    after: Buckinghamshire Adult Learning says learners on benefits can apply to its Learner Support Fund to have the registration fee remitted, and invites people to ask about concessions.
+  faq:
+  - q: Can a complete beginner learn flamenco?
+    a: Yes. City Lit's beginners' course is aimed at beginners, and Buckinghamshire Adult Learning's course suits complete beginners. CityDance's beginner class is for adults with little or no flamenco
+      experience.
+  - q: What shoes do I need for a flamenco class?
+    a: Flamenco shoes or boots, or hard-soled shoes with a small heel. City Lit rules out stilettos, sandals, platforms and trainers, and the tutor can advise where to buy.
+  - q: What is compás in flamenco?
+    a: The rhythmic pulse of flamenco. Beginners learn it through palmas, rhythmic hand-clapping, before adding footwork.
+  - q: Do you need castanets for flamenco?
+    a: Not to start. Most beginners' courses focus on palmas, footwork and arms, though Ballet Hispánico's adult class in New York includes castanets.
+  sources:
+  - label: 'City Lit, Flamenco: beginners'
+    url: https://www.citylit.ac.uk/flamenco-beginners
+    checked: '2026-11-09'
+  - label: Buckinghamshire Adult Learning, Flamenco Dancing for Beginners (MUDA001-2627-3AM-B)
+    url: https://adultlearningbc.ac.uk/courses/flamenco-dancing-for-beginners-muda00126273amb/
+    checked: '2026-11-09'
+  - label: CityDance, Beginner Flamenco 13 Week Fall/Winter Session
+    url: https://www.citydance.net/classes/beginner-flamenco-13-week-fall-winter-session/
+    checked: '2026-11-09'
+  - label: Ballet Hispánico School, Adult classes
+    url: https://www.ballethispanico.org/school/adult-classes
+    checked: '2026-11-09'
+  - label: The Connexion, Come on in, the Flamenco's fine (11 September 2017)
+    url: https://www.connexionfrance.com/news/come-on-in-the-flamencos-fine/467367
+    checked: '2026-11-09'
+  inspire:
+  - kind: read
+    person: Jan West, Pyrénées-Orientales, France
+    line: A former tap-dance teacher from the UK who has danced with a flamenco group in the Pyrénées-Orientales for 17 years, learned the castanets and became vice-president of the group.
+    title: Come on in, the Flamenco's fine
+    outlet: The Connexion
+    url: https://www.connexionfrance.com/news/come-on-in-the-flamencos-fine/467367
+    checked: '2026-11-09'
+  kit:
+  - name: Flamenco shoes
+    why: a small, strong heel for footwork; City Lit's tutor advises on where to buy, so check before you order
+    url: https://www.amazon.co.uk/s?k=flamenco+dance+shoes
+  - name: Flamenco practice skirt
+    why: City Lit expects a flamenco or flared skirt by the second term
+    url: https://www.amazon.co.uk/s?k=flamenco+practice+skirt
+  - name: Castanets
+    why: for classes that teach them, such as Ballet Hispánico's; check whether your course uses them first
+    url: https://www.amazon.co.uk/s?k=castanets+professional
+  related:
+  - learn-salsa
+  - learn-tap-dancing
+  - learn-the-guitar
+  - learn-a-language-to-b1
+- id: play-padel
+  title: Play padel
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Padel is a doubles racket game on a small court walled in by glass, where the ball stays in play after it bounces off the walls. Many venues run a one-hour intro session for beginners, and some lend
+    rackets, so ask before you buy anything.
+  start:
+  - Use the LTA Padel court finder (UK) or the USA Padel club directory (US) to find a venue near you.
+  - Book an intro or beginner group session rather than a court on your own, so a coach shows you the serve and how to play off the glass.
+  - Ask the venue whether racket hire is included and what footwear its courts need.
+  links:
+  - label: 'LTA Padel: find a padel court near you'
+    url: https://www.ltapadel.org.uk/play/find-a-padel-court/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'LTA Padel: how to get started'
+    url: https://www.ltapadel.org.uk/play/how-to-get-started-playing-padel/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Game4Padel Edinburgh Academy: adult coaching'
+    url: https://clubspark.lta.org.uk/Game4PadelEdinburghAcademy/Coaching/Adult
+    region: uk
+    checked: '2026-11-09'
+  - label: 'USA Padel: where to play'
+    url: https://padelusa.org/where-to-play/
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Padel for beginners: how to start, costs and courts'
+  description: How padel differs from tennis, how to find a court and a beginner session in the UK and US, and what intro sessions and lessons cost.
+  detail:
+  - h: What it's really like
+    p:
+    - The court is 20m by 10m (about 66ft by 33ft), smaller than a tennis court, and enclosed by glass. The serve is underarm after one bounce, the ball can come back off the glass once it has hit the floor,
+      and scoring is the same as tennis. The LTA says getting used to the back glass is the main adjustment for tennis players.
+    - Courts are built for four players, though singles is possible. Rackets are solid and perforated, with no strings, and the balls are a little less pressurised than tennis balls, so they bounce lower
+      and slower.
+    - The LTA has been the governing body for padel in Britain since 2020. It says courts have grown from 51 in 2020 to 760, and players to more than 230,000 by the end of 2024.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Game4Padel, Vauxhall, London
+        - 'Intro to Padel: one hour, up to 6 players, racket not included'
+        - £20 (members £17)
+      - - Game4Padel, Vauxhall, London
+        - Court hire, per player, weekdays before 5pm
+        - £13.75 (members £9.75)
+      - - Game4Padel Edinburgh Academy
+        - Group lesson of four, per person per hour, court included; free intro lesson for first-timers
+        - £12, plus £2 for non-members
+      - - Racket Social Club, Denver, Colorado
+        - 'Intro to Padel: one hour, up to 4 new players, rules and simple drills'
+        - $20
+    after: Peak times cost more. At Vauxhall, court hire per player rises to £17.50 for non-members on weekday evenings and at weekends.
+  faq:
+  - q: What is the difference between padel and tennis?
+    a: Padel is played on a smaller, glass-walled court with an underarm serve, solid rackets and lower-bouncing balls. The scoring is the same as tennis.
+  - q: Can you play padel with two people?
+    a: Yes. The LTA says two players can play singles on a standard doubles court, though courts are designed for four.
+  - q: How much does it cost to play padel?
+    a: As last listed, a one-hour intro session at Game4Padel Vauxhall cost £20, and a beginner session at a Denver club cost $20. Some venues price court hire per player.
+  - q: Who governs padel in the UK?
+    a: The LTA, which was recognised as the national governing body for padel in 2020.
+  sources:
+  - label: LTA Padel, What is padel
+    url: https://www.ltapadel.org.uk/what-we-do/what-is-the-history-of-padel/
+    checked: '2026-11-09'
+  - label: LTA Padel, Padel vs tennis
+    url: https://www.ltapadel.org.uk/play/padel-vs-tennis/
+    checked: '2026-11-09'
+  - label: LTA Padel, Padel FAQs
+    url: https://www.ltapadel.org.uk/play/padel-faqs/
+    checked: '2026-11-09'
+  - label: LTA Padel, How to get started
+    url: https://www.ltapadel.org.uk/play/how-to-get-started-playing-padel/
+    checked: '2026-11-09'
+  - label: LTA Padel, Find a padel court
+    url: https://www.ltapadel.org.uk/play/find-a-padel-court/
+    checked: '2026-11-09'
+  - label: Game4Padel Vauxhall Padel Yard, booking page (MATCHi)
+    url: https://www.matchi.se/facilities/g4pvauxhallpadelyard
+    checked: '2026-11-09'
+  - label: Game4Padel Edinburgh Academy, Adult programme
+    url: https://clubspark.lta.org.uk/Game4PadelEdinburghAcademy/Coaching/Adult
+    checked: '2026-11-09'
+  - label: USA Padel, Where to play
+    url: https://padelusa.org/where-to-play/
+    checked: '2026-11-09'
+  - label: Racket Social Club Denver, Intro to Padel
+    url: https://denverracketsocialclub.playbypoint.com/programs/introduction-to-padel-denver
+    checked: '2026-11-09'
+  inspire:
+  - kind: read
+    person: Sasha Martinengo, broadcaster, South Africa
+    line: Picked up a racket again after about 30 years away, took up padel around 2022 and went on to qualify as a padel coach.
+    title: How seasoned broadcaster Sasha Martinengo is carving out second career as a padel coach
+    outlet: The Citizen
+    url: https://www.citizen.co.za/lifestyle/sasha-martinengo-carving-out-second-career-as-padel-coach
+    checked: '2026-11-09'
+  kit:
+  - name: Padel racket
+    why: solid perforated racket for when you stop hiring; check the weight and grip size
+    url: https://www.amazon.co.uk/s?k=padel+racket+beginner
+  - name: Padel balls
+    why: padel balls are less pressurised than tennis balls, so buy ones sold for padel
+    url: https://www.amazon.co.uk/s?k=padel+balls
+  - name: Padel shoes
+    why: grip for artificial grass courts; check the sole type the venue suggests
+    url: https://www.amazon.co.uk/s?k=padel+shoes
+  related:
+  - play-tennis
+  - play-pickleball
+  - play-table-tennis
+  - first-golf-lessons
+- id: learn-to-ski
+  title: Learn to ski
+  category: move
+  kind: skill
+  effort: demanding
+  cost: high
+  time: weeks
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Your first turns on snow can come on a real-snow indoor slope in Hertfordshire, an artificial slope on the edge of Edinburgh or a nursery slope in the Alps or Maine. Most beginner lessons include
+    ski, boot and helmet hire, so you need only warm clothes and gloves to start.
+  start:
+  - Use Snowsport England's club and facility finder, or call your nearest indoor snow centre or dry slope, and book a beginner group lesson.
+  - Check what the price includes; in the US, look for a first-timer package with a lesson, rental and a beginner lift ticket.
+  - Plan for several lessons, not one. The Snow Centre says it can take around five to six before you ski its main slope without an instructor.
+  links:
+  - label: 'Snowsport England: a beginner''s guide to skiing'
+    url: https://snowsportengland.org.uk/beginners-skiing
+    region: uk
+    checked: '2026-11-09'
+  - label: 'The Snow Centre, Hemel Hempstead: adult beginner ski lessons'
+    url: https://thesnowcentre.com/hemel-hempstead/ski-lessons/adult/beginner/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Midlothian Snowsports Centre (Edinburgh): lesson prices'
+    url: https://www.midlothian.gov.uk/info/200281/snowsports_centre/183/prices
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Pleasant Mountain, Maine: adult group lessons and first-time package'
+    url: https://www.pleasantmountain.com/lessons/adult-group-lessons
+    region: us
+    checked: '2026-11-09'
+  - label: 'Killington Resort, Vermont: Adult Learn to Ski/Ride'
+    url: https://www.killington.com/lessons-rentals/ski-snowboard-lessons/first-time/adult-learn-to/
+    region: us
+    checked: '2026-11-09'
+  safety: Snowsport England says a helmet is important for safety and is often included when you hire equipment, and it calls gloves essential to prevent injury.
+  seo_title: 'Learn to ski as an adult: indoor slopes, dry slopes, costs'
+  description: Where adults learn to ski in the UK and US, from indoor snow centres and dry slopes to resort first-timer packages, what is included and what it costs.
+  detail:
+  - h: What it's really like
+    p:
+    - England has five indoor real-snow centres open all year, including The Snow Centre in Hemel Hempstead and Manchester and Snozone in Milton Keynes and Castleford, plus dry slopes (artificial outdoor
+      surfaces) with their own clubs. Snowsport England suggests indoor centres as a place to find your feet before a trip abroad.
+    - Lessons go in stages. At The Snow Centre, adults move from the basics to snowploughing (turning and stopping with the ski tips together) to steering. On snow you need a waterproof jacket and trousers;
+      on a dry slope, a long-sleeved top and gloves.
+    - In the US, resorts sell first-timer packages. At Killington, the adult package includes beginner rental, a lesson and a lift ticket limited to the learning area. Most US ski areas use PSIA-AASI certification,
+      and a Level I instructor is qualified to teach beginners on green (easy) runs.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Snow Centre, Hemel Hempstead (indoor real snow)
+        - Three-hour Stage 1 adult group lesson, skis, boots, poles and helmet included
+        - From £112.50
+      - - Midlothian Snowsports Centre, Edinburgh (outdoor artificial slope)
+        - Two-hour taster, or a four-session adult course; equipment hire included
+        - £41 taster; £122 course
+      - - Pleasant Mountain, Maine
+        - 'First Time Package: two-hour group lesson, beginner lift ticket and rentals'
+        - $105 midweek, $185 weekend or holiday (2025/26 season)
+      - - Oxyski, Le Grand-Bornand, France
+        - Adult beginner group, two hours a day for 3, 5 or 6 days, up to 6 people; lift pass and hire not stated
+        - €124 to €199
+    after: The Snow Centre's two-hour adult group lesson was listed from £69.30 with a discount running until 18 December. Midlothian's prices are its August 2026 rates.
+  faq:
+  - q: How many lessons does it take to learn to ski?
+    a: The Snow Centre says it can take around five to six lessons before you are ready to ski its main slope without an instructor.
+  - q: Is it better to learn to ski indoors or on a dry slope?
+    a: Both work all year. Indoor centres have real snow and need waterproofs, while dry slopes are outdoor artificial surfaces where a long-sleeved top and gloves are the usual advice.
+  - q: Do I need to buy ski equipment for lessons?
+    a: No. Snowsport England says most slopes hire skis, boots and helmets, and lessons at Midlothian include equipment hire.
+  - q: Do I need a helmet for skiing lessons?
+    a: Snowsport England says wearing one is important for safety. The Snow Centre's three-hour beginner lesson includes a helmet.
+  sources:
+  - label: Snowsport England, A beginner's guide to skiing
+    url: https://snowsportengland.org.uk/beginners-skiing
+    checked: '2026-11-09'
+  - label: The Snow Centre, Adult beginner ski lessons, Hemel Hempstead
+    url: https://thesnowcentre.com/hemel-hempstead/ski-lessons/adult/beginner/
+    checked: '2026-11-09'
+  - label: Midlothian Council, Snowsports centre prices
+    url: https://www.midlothian.gov.uk/info/200281/snowsports_centre/183/prices
+    checked: '2026-11-09'
+  - label: Midlothian Council, About the Snowsports Centre
+    url: https://www.midlothian.gov.uk/info/200281/snowsports_centre/181/about_the_snowsports_centre
+    checked: '2026-11-09'
+  - label: Pleasant Mountain, Adult group lessons
+    url: https://www.pleasantmountain.com/lessons/adult-group-lessons
+    checked: '2026-11-09'
+  - label: Killington Resort, Adult Learn to Ski/Ride
+    url: https://www.killington.com/lessons-rentals/ski-snowboard-lessons/first-time/adult-learn-to/
+    checked: '2026-11-09'
+  - label: PSIA-AASI, Alpine certification
+    url: https://thesnowpros.org/get-certified/alpine/
+    checked: '2026-11-09'
+  - label: Le Grand-Bornand tourist office, Beginner adult group ski lessons
+    url: https://en.legrandbornand.com/what-to-do/beginner-adult-group-ski-lessons-le-grand-bornand-en-5595826/
+    checked: '2026-11-09'
+  inspire:
+  - kind: read
+    person: Jill Robbins, writer
+    line: Took her first ski lessons at a Colorado ski school, found keeping up with a faster group stressful, found a private lesson more helpful and is planning her next trip.
+    title: 'I Learned to Ski in My Fifties: Why It''s Never Too Late to Pick Up a New, Adventurous Hobby'
+    outlet: The Saturday Evening Post
+    url: https://www.saturdayeveningpost.com/2023/11/i-learned-to-ski-in-my-fifties-why-its-never-too-late-to-pick-up-a-new-adventurous-hobby/
+    checked: '2026-11-09'
+  kit:
+  - name: Ski gloves
+    why: needed on snow and on dry slopes; check they are waterproof
+    url: https://www.amazon.co.uk/s?k=ski+gloves+waterproof
+  - name: Ski socks
+    why: long, warm socks that sit inside hired boots
+    url: https://www.amazon.co.uk/s?k=ski+socks
+  - name: Thermal base layers
+    why: warm layer under a waterproof jacket and trousers on real snow
+    url: https://www.amazon.co.uk/s?k=thermal+base+layer+ski
+  related:
+  - learn-to-ice-skate
+  - indoor-climbing
+  - learn-to-surf
+  - nordic-walking-lesson
+- id: try-pilates
+  title: Try a Pilates class
+  category: move
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Pilates comes in two very different forms, a class on a mat and a class on a Reformer, a sliding carriage worked by springs. A ten-week Pilates course through a council adult-learning service can
+    cost under £50.
+  start:
+  - Decide between mat and Reformer; a mat course is the cheaper way to learn the basics.
+  - Find a qualified teacher through the Pilates Foundation (UK), a council or leisure centre programme, or the National Pilates Certification Program directory (US).
+  - For a Reformer class, check the group size and that beginners are shown how to set up the machine safely.
+  links:
+  - label: 'Pilates Foundation: find a teacher (UK)'
+    url: https://pilatesfoundation.com/about
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Pembrokeshire County Council Adult Learning: Pilates classes'
+    url: https://www.pembrokeshire.gov.uk/course-details/PILAT
+    region: uk
+    checked: '2026-11-09'
+  - label: 'National Pilates Certification Program: find a certified teacher (US)'
+    url: https://nationalpilatescertificationprogram.org/NPCP/Directory/CertifiedTeachersList.aspx
+    region: us
+    checked: '2026-11-09'
+  - label: 'Denver YMCA: Pilates Reformer prices (PDF)'
+    url: https://denverymca.org/sites/default/files/2026-05/2026%20Pilates%20Reformer%20.pdf
+    region: us
+    checked: '2026-11-09'
+  safety: The Reformer has a moving carriage and adjustable springs, so Body Control Pilates says beginners need a proper introduction to setting it up safely.
+  seo_title: 'Pilates for beginners: mat or Reformer, teachers and costs'
+  description: The difference between mat and Reformer Pilates, how to find a qualified teacher in the UK and US, and what a term of classes or a session costs.
+  detail:
+  - h: What it's really like
+    p:
+    - A mat class uses your own body weight on the floor. A Reformer is a machine with a sliding carriage, a movable footbar and springs you adjust, and Body Control Pilates says the teacher should check
+      your set-up before each exercise.
+    - Group Reformer classes in gyms can have 15 to 20 machines in a room, which Body Control says leaves little time for individual correction. Its own London centre keeps classes to eight or nine people,
+      and it says anyone teaching on the Reformer should first qualify in matwork.
+    - In the UK, the Pilates Foundation, set up in 1996 as the first Pilates teachers' association, lists teachers by postcode. In the US, the National Pilates Certification Program keeps a searchable directory
+      of certified teachers by city, state and zip code.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Pembrokeshire County Council Adult Learning
+        - Mat class, one hour a week for 10 weeks
+        - £43.60, or £21.80 concession
+      - - Plainsboro Township recreation, New Jersey
+        - Mat class, basic to intermediate, Wednesdays for a term
+        - $40, or $56 non-residents
+      - - Denver YMCA
+        - Reformer group class, single session
+        - $35 members, $58 non-members
+      - - Denver YMCA
+        - Reformer private session
+        - $76 members, $106 non-members
+    after: The Plainsboro class asks for some Pilates experience, so look for a basic class first. Denver YMCA Reformer packages expire six months after purchase.
+  faq:
+  - q: What is the difference between mat and Reformer Pilates?
+    a: Mat Pilates is done on the floor; Reformer Pilates uses a machine with a sliding carriage and springs. Body Control Pilates says Reformer beginners need an introduction to setting up the machine
+      safely.
+  - q: How do I find a qualified Pilates teacher?
+    a: In the UK, search the Pilates Foundation's teacher finder by postcode. In the US, the National Pilates Certification Program directory lists certified teachers by city and zip code.
+  - q: How much does a Pilates class cost?
+    a: As last listed, a 10-week council Pilates course in Pembrokeshire cost £43.60, and a single Reformer group class at the Denver YMCA cost $35 for members.
+  - q: Is Reformer Pilates good for beginners?
+    a: It can be, if the class is small and the teacher shows you the set-up. Body Control Pilates warns that large gym classes may not allow individual correction.
+  sources:
+  - label: Body Control Pilates, Group Reformer classes, our view
+    url: https://www.bodycontrolpilates.com/group-reformer-classes-our-view/
+    checked: '2026-11-09'
+  - label: Body Control Pilates, Public group classes
+    url: https://www.bodycontrolpilates.com/our-london-studio/public-group-classes/
+    checked: '2026-11-09'
+  - label: Pilates Foundation, About
+    url: https://pilatesfoundation.com/about
+    checked: '2026-11-09'
+  - label: Pembrokeshire County Council, Pilates course details
+    url: https://www.pembrokeshire.gov.uk/course-details/PILAT
+    checked: '2026-11-09'
+  - label: Township of Plainsboro, Pilates Mat Class, Basic to Intermediate (ACTIVE)
+    url: https://origin-a3.active.com/plainsboro-nj/pilates/classes/pilates-mat-class-basic-to-intermediate-2026-110563231
+    checked: '2026-11-09'
+  - label: Denver YMCA, 2026 Pilates Reformer prices (PDF)
+    url: https://denverymca.org/sites/default/files/2026-05/2026%20Pilates%20Reformer%20.pdf
+    checked: '2026-11-09'
+  - label: National Pilates Certification Program, Find a certified Pilates teacher
+    url: https://nationalpilatescertificationprogram.org/NPCP/Directory/CertifiedTeachersList.aspx
+    checked: '2026-11-09'
+  inspire:
+  - kind: read
+    person: Julie T. Chan
+    line: Saw a notice about teacher training while taking classes at her Pilates studio, signed up as part of planning her years after work, and became a Pilates teacher.
+    title: I Became a Pilates Teacher at 58
+    outlet: Prevention (US), via Magzter
+    url: https://www.magzter.com/nb/stories/health/Prevention-US/I-BECAME-A-PILATES-TEACHER-AT-58
+    checked: '2026-11-09'
+  kit:
+  - name: Exercise mat
+    why: a cushioned mat for floor work; check the thickness and grip
+    url: https://www.amazon.co.uk/s?k=pilates+mat+thick
+  - name: Grip socks
+    why: non-slip socks for studio floors and the Reformer; check whether your studio asks for them
+    url: https://www.amazon.co.uk/s?k=pilates+grip+socks
+  related:
+  - yoga-class
+  - learn-tai-chi-form
+  - take-a-ballroom-class
+  - nordic-walking-lesson

@@ -471,8 +471,15 @@ guidance:
     applies: [swimming]
     events: [open-water-mile]
     use: advice
-    text: You can feel colder after you get out of cold water than you did in it (afterdrop), so get dry, dressed and warm as soon as you are out.
-    for: [oss-cold-water]
+    text: Your body temperature can keep falling for a while after you get out of cold water (afterdrop), so dry off and get into warm, windproof clothes and a hat as soon as you are out, and move about to make heat. After a short swim a warm shower is enough; avoid very hot water, and do not hold a hot water bottle against numb skin, which burns easily.
+    for: [oss-cold-water, rlss-safer-open-water, knechtle-2020]
+  - id: ow-rip-current
+    topic: on the day
+    applies: [swimming]
+    events: [open-water-mile]
+    use: safety
+    text: In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help.
+    for: [rnli-rip-currents]
   - id: why-specific-swim
     topic: why
     role: specific

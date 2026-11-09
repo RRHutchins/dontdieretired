@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-08)
+# Guidance engine report (2026-11-09)
 
-57 sources, 81 statements, 12 event profiles. Core 50, supported 30, thin 1, contested 0.
+60 sources, 82 statements, 12 event profiles. Core 51, supported 31, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -27,6 +27,7 @@
 - International Journal of Sports Physiology and Performance 5(3), *What is best practice for training intensity and duration distribution in endurance athletes? (review)* (2010). Opened 2026-10-27.
 - Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Opened 2026-10-27.
 - Journal of Thermal Biology 119 (Barwood, Eglin, Hills, Johnston, Massey, McMorris, Tipton, Wakabayashi and Webster), *Habituation of the cold shock response, a systematic review and meta-analysis* (2024). Opened 2026-11-02.
+- International Journal of Environmental Research and Public Health 17(23), 8984 (Knechtle, Waśkiewicz, Sousa, Hill and Nikolaidis), *Cold Water Swimming, Benefits and Risks, a Narrative Review* (2020). Opened 2026-11-09.
 
 **3. Governing body or route authority**
 - England Athletics (Tom Craggs, National Endurance Manager), *Simplifying the running jargon, training pace* (2024). Opened 2026-10-27.
@@ -59,6 +60,8 @@
 - Tanabe City Kumano Tourism Bureau, *Kumano Kodo tips and safety* (2026). Opened 2026-11-08.
 - RNLI (Royal National Lifeboat Institution), *Float to Live (undated page; year is the year opened)* (2026). Opened 2026-11-08.
 - Swim England (Open Water Swimming Hub), *Swim England issues safety advice for open water swimming in hot weather (19 July 2022)* (2022). Opened 2026-11-08.
+- Royal Life Saving Society UK (RLSS UK), *Top Recommendations for Safer Open Water Swimming (published 20 June 2024, updated 26 November 2025)* (2025). Opened 2026-11-09.
+- RNLI (Royal National Lifeboat Institution), *Rip currents (undated page; year is the year opened)* (2026). Opened 2026-11-09.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -94,6 +97,7 @@
 | core | 9 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe |
 | core | 9 | on the day | Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
 | core | 9 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water, barwood-2024, oss-cold-water |
+| core | 9 | on the day | Your body temperature can keep falling for a while after you get out of cold water (afterdrop), so dry off and get into warm, windproof clothes and a hat as soon as you are out, and move about to make heat. After a short swim a warm shower is enough; avoid very hot water, and do not hold a hot water bottle against numb skin, which burns easily. | oss-cold-water, rlss-safer-open-water, knechtle-2020 |
 | core | 8 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
@@ -150,12 +154,12 @@
 | supported | 3 | key session | For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60. | greatrun-10k-plans |
 | supported | 3 | before you start | If you are new to running, give yourself 8 to 12 weeks to get ready for a 10k rather than 6, and if time is short use a run-walk approach. | greatrun-10k-how-long, greatrun-10k-plans |
 | supported | 3 | key session | Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest. | usms-open-water |
+| supported | 3 | on the day | In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. | rnli-rip-currents |
 | supported | 3 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water |
 | supported | 3 | on the day | Start every ride at an easy pace for about five minutes to warm up, and finish with five to ten minutes of slower riding. | cyclinguk-100km |
 | supported | 3 | key session | With three days a week, swim once or twice working on technique, ride once at a steady pace and run twice, one easy and one a little faster. Regular sessions of 30 to 45 minutes are enough to start, rather than long, hard ones. | tri-ireland-first |
 | supported | 3 | on the day | Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast. | usat-brick |
 | supported | 3 | on the day | In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. | britri-beginners-wales |
-| thin | 2 | on the day | You can feel colder after you get out of cold water than you did in it (afterdrop), so get dry, dressed and warm as soon as you are out. | oss-cold-water |
 
 ## Coverage by kind of challenge
 
@@ -165,7 +169,7 @@
 - hill: 10 usable statements of its own
 - multiday: 9 usable statements of its own
 - running: 8 usable statements of its own
-- swimming: 16 usable statements of its own
+- swimming: 18 usable statements of its own
 - walking: 8 usable statements of its own
 
 ## Disagreements and how they were resolved
