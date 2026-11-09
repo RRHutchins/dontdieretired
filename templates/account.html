@@ -51,11 +51,21 @@
   <section data-acct-in hidden tabindex="-1" aria-labelledby="acct-me-h">
     <h2 id="acct-me-h" class="h3">You are signed in</h2>
     <p>Signed in as <strong data-acct-email></strong>.</p>
+    <p>Your list and plans are kept with your account, so they are the same on every device where you sign in. Changes on one device reach the others the next time you open the site there.</p>
+    <p class="meta" data-acct-sync role="status"></p>
+    <div class="acct-other" data-acct-other hidden tabindex="-1" role="group" aria-labelledby="acct-other-h">
+      <h3 id="acct-other-h" class="h4">This browser has a list from a different account</h3>
+      <p>Someone else may have used this browser with their own account. Anything they saved while signed in is kept on their account. What would you like here?</p>
+      <p><button type="button" class="btn btn-small" data-acct-replace>Show only my account's list</button></p>
+      <p><button type="button" class="btn btn-ghost btn-small" data-acct-merge>Add this browser's list to my account</button></p>
+    </div>
     <p><a class="btn" href="/my-year/">Go to My year</a></p>
     <p><button type="button" class="btn btn-ghost btn-small" data-acct-signout>Sign out</button></p>
+    <p><button type="button" class="btn btn-ghost btn-small" data-acct-signout-clear>Sign out and remove my list from this browser</button></p>
+    <p class="meta">On a shared computer, use the second button: your list stays on your account, ready for next time.</p>
     <details class="acct-del">
       <summary>Delete my account</summary>
-      <p>This removes your account and your email address from our records straight away. Anything saved in this browser stays here.</p>
+      <p>This removes your account, your email address and the copy of your list and plans kept with it from our records straight away. Anything saved in this browser stays here.</p>
       <p><button type="button" class="btn btn-ghost btn-small" data-acct-delete>Delete my account</button></p>
     </details>
   </section>
@@ -64,4 +74,4 @@
 {% endif %}
 </div>
 {% endblock %}
-{% block scripts %}{% if accounts_api %}<script src="/static/account.js?v={{ asset_v }}" defer></script>{% endif %}{% endblock %}
+{% block scripts %}{% if accounts_api %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/account.js?v={{ asset_v }}" defer></script>{% endif %}{% endblock %}

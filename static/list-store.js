@@ -33,12 +33,19 @@
    - While you're there (Planner Plus day 10, 8 Nov 2026; additive, still version 1): `with` is the catalogue id of the
      trip a plan was added to from that trip's "While you're there" (only with a date or month; never the item itself).
      It belongs to the plan: a new plan without it, or removing the plan, clears it. Not part of the plan's identity.
-     static/planner.js combine() only honours it while the date still falls inside that trip. Newest wins in a merge. */
+     static/planner.js combine() only honours it while the date still falls inside that trip. Newest wins in a merge.
+   - Accounts (Planner Plus day 13, 9 Nov 2026): no change to the data. A signed-in device sends this same shape to the
+     accounts Worker, which merges it with the account's copy using this file's merge() (worker/src/accounts.js imports
+     it), so the browser and the account can never disagree about how two lists combine. See "account sync" below. */
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api; else root.DDRList = api;
 })(typeof self !== 'undefined' ? self : this, function () {
   const KEY = 'ddr_list', VERSION = 1;
+  // FIELDS counts the additive changes made inside version 1 (My year, ticks and moves, training level, where, until,
+  // with). Raise it whenever a field is added: an accounts Worker older than the page refuses to merge (409) rather
+  // than drop a field it does not know (day 13 review).
+  const FIELDS = 6;
   const STATUSES = ['want', 'planned', 'doing', 'done'];
   const now = () => new Date().toISOString();
   const empty = () => ({ version: VERSION, title: 'My list', target: 50, settings_updated_at: '', items: [] });
@@ -89,6 +96,9 @@
       o.where = cleanPlace(it.where);
       o.until = o.date && spanOk(o.date, it.until) ? it.until : '';
       o.with = (o.date || o.month) && o.plan_made && typeof it.with === 'string' && CID.test(it.with) && it.with !== o.id ? it.with : '';
+      // a removed item keeps only what a merge needs (so the removal reaches other devices); its plan, notes and
+      // place go, so removed things never pile up in an account (Planner Plus day 13 review)
+      if (o.deleted) Object.assign(o, { title: '', status: 'want', date: '', until: '', month: '', plan_made: '', level: '', note: '', ticks: {}, moves: {}, where: '', with: '' });
     });
     return out;
   }
@@ -122,7 +132,11 @@
 
   /* ---- device storage (the only code that touches localStorage for the list) ---- */
   function load() { try { return clean(JSON.parse(localStorage.getItem(KEY) || 'null')); } catch (e) { return empty(); } }
-  function save(d) { try { localStorage.setItem(KEY, JSON.stringify(clean(d))); return true; } catch (e) { return false; } }
+  function save(d, quiet) {
+    try { localStorage.setItem(KEY, JSON.stringify(clean(d))); } catch (e) { return false; }
+    if (!quiet) changed();   // a change the reader made on this device: send it to their account, if signed in
+    return true;
+  }
 
   /* ---- helpers used by the pages; each returns the saved list ---- */
   const live = d => d.items.filter(it => !it.deleted);
@@ -197,5 +211,90 @@
   const flag = (name, value) => { try { if (value === undefined) return localStorage.getItem(KEY + '_' + name); localStorage.setItem(KEY + '_' + name, value); } catch (e) {} return null; };
   const has = id => { const it = find(load(), id); return !!(it && !it.deleted); };
 
-  return { KEY, VERSION, STATUSES, LEVELS, MAX_SPAN, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get, tick, shift, where, cleanPlace };
+  /* ---- account sync (Planner Plus day 13, 9 Nov 2026; RUNBOOK §6t) ----
+     Only in a browser, only when the site has an accounts address (<meta name="ddr-accounts">) and this device has
+     signed in (flag 'acct', set by the account page; it holds no personal data). The device posts its whole list to
+     the Worker, which merges it with the account's copy using this same merge() and sends the result back; the device
+     merges that into whatever it holds by then. Both sides only ever merge, so nothing is overwritten or dropped and a
+     plan made on a phone and a tick made on a laptop both survive. If anything changed here, the page is told with the
+     same 'storage' event another tab would send, so the pages' existing redraws apply. Sync is best effort: offline or
+     signed out, the list simply stays on the device as before. */
+  let api = '', timer = 0, busy = false, again = false, follow = 0, waiting = [];
+  const signedIn = () => !!api && flag('acct') === '1';
+  function changed() { follow = 0; if (signedIn()) { clearTimeout(timer); timer = setTimeout(sync, 1500); } }
+  function absorb(remote) {   // merge the account's copy into this device's; true if the list here changed
+    // the account's copy goes first, so where nothing differs but the order the account's order is kept on every device;
+    // a change made here while the request was in flight is newer, so it still wins
+    const before = JSON.stringify(load()), after = merge(remote, load());
+    save(after, true);
+    return JSON.stringify(clean(after)) !== before;
+  }
+  function tell() {
+    const a = document.activeElement;   // never redraw under someone typing: wait until they leave the box
+    if (a && (a.tagName === 'TEXTAREA' || a.tagName === 'SELECT' || (a.tagName === 'INPUT' && !/^(checkbox|radio|button|submit)$/.test(a.type)))) {
+      a.addEventListener('blur', () => setTimeout(tell, 0), { once: true }); return;
+    }
+    try { window.dispatchEvent(new StorageEvent('storage', { key: KEY })); }
+    catch (e) { const ev = document.createEvent('Event'); ev.initEvent('storage', false, false); ev.key = KEY; window.dispatchEvent(ev); }
+  }
+  async function sync(opts) {
+    if (!signedIn()) return { ok: false, reason: 'signed-out' };
+    if (busy) { again = true; return new Promise(done => waiting.push(done)); }   // answered by the sync that follows this one
+    busy = true; clearTimeout(timer); timer = 0;
+    const owner = flag('acct_owner') || '';
+    const replace = !!(opts && opts.replace);
+    const body = JSON.stringify({ list: replace ? null : load(), fields: FIELDS });
+    let res = { ok: false, reason: 'offline' };
+    try {
+      const keep = !!(opts && opts.keepalive) && new TextEncoder().encode(body).length < 60000;   // browsers cap keepalive bodies at 64 KiB
+      const r = await fetch(api + '/list/sync', { method: 'POST', credentials: 'include', keepalive: keep, headers: { 'content-type': 'application/json' }, body });
+      if (r.status === 401) { flag('acct', ''); res = { ok: false, reason: 'signed-out' }; }
+      else if (r.ok) {
+        const d = await r.json();
+        if (owner && d.account && owner !== d.account) { flag('acct', ''); busy = false; waiting.splice(0).forEach(f => f({ ok: false, reason: 'other-account' })); return { ok: false, reason: 'other-account' }; }
+        if (replace) { save(empty(), true); }
+        if (d.account) flag('acct_owner', d.account);
+        const here = absorb(d.list);
+        if (here) tell();
+        // this device holds something the account does not yet (a change made while the post was in flight): send it too
+        if (JSON.stringify(load()) !== JSON.stringify(clean(d.list)) && follow < 3) { follow++; again = true; }
+        res = { ok: true, changed: here };
+      } else {
+        res = { ok: false, reason: r.status === 413 ? 'too-big' : r.status === 409 ? 'old-service' : r.status === 429 ? 'slow' : 'status-' + r.status };
+        if (r.status === 409 || r.status === 413) flag('acct', '');   // retrying cannot help: stop until the account page is opened again
+      }
+    } catch (e) { /* offline: try again on the next change or visit */ }
+    busy = false;
+    const w = waiting; waiting = [];
+    if (again) { again = false; setTimeout(() => sync().then(r => w.forEach(f => f(r))), 300); }
+    else w.forEach(f => f(res));
+    return res;
+  }
+  if (typeof document !== 'undefined' && typeof window !== 'undefined') {
+    const m = document.querySelector('meta[name="ddr-accounts"]');
+    api = m ? (m.getAttribute('content') || '').replace(/\/$/, '') : '';
+    if (api) {
+      const kick = () => { if (signedIn()) { follow = 0; sync(); } };
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', kick); else setTimeout(kick, 0);
+      document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') kick(); else if (timer) sync({ keepalive: true }); });
+      window.addEventListener('online', kick);
+    }
+  }
+  /* The account page says when this device signs in or out. `who` is the account's opaque id from the Worker.
+     A browser list that belongs to a different account (a shared computer) is never sent to this one by itself: the
+     page asks first (day 13 review). how = 'merge' adds this browser's list to the account; 'replace' shows only the
+     account's list here (the other account keeps its own copy on its account). */
+  function account(on, who, how) {
+    if (!on) { flag('acct', ''); clearTimeout(timer); return Promise.resolve({ ok: true }); }
+    const prev = flag('acct_owner') || '';
+    const mine = live(load()).length > 0;
+    if (who && prev && prev !== who && mine && !how) { flag('acct', ''); return Promise.resolve({ ok: false, reason: 'other-account' }); }
+    if (who && prev !== who) flag('acct_owner', who);
+    flag('acct', '1'); follow = 0;
+    return sync({ replace: how === 'replace' });
+  }
+  // "Sign out and remove my list from this browser": the copy on the account is untouched
+  function forget() { try { localStorage.removeItem(KEY); } catch (e) {} flag('acct', ''); flag('acct_owner', ''); clearTimeout(timer); }
+
+  return { KEY, VERSION, STATUSES, LEVELS, MAX_SPAN, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get, tick, shift, where, cleanPlace, sync, account, forget, FIELDS };
 });

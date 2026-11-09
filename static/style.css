@@ -1119,3 +1119,5 @@ h1{line-height:1.04}
 .acct section{margin:0 0 1.5em}
 .acct section:focus{outline:none}
 .acct-del{margin-top:1.5em}.acct-del summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--brand-ink);font-weight:600}
+.acct-other{border:2px solid var(--gold);border-radius:12px;padding:1em 1.1em .2em;margin:0 0 1.5em}.acct-other:focus{outline:none}.acct-other .h4{margin-top:0}
+.acct .btn-small{white-space:normal;text-align:left;height:auto;line-height:1.3}

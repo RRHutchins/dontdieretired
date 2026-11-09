@@ -7,7 +7,8 @@ const { DatabaseSync } = require('node:sqlite');
 
 function d1() {
   const db = new DatabaseSync(':memory:');
-  db.exec(fs.readFileSync(path.join(__dirname, '../worker/migrations/0001_accounts.sql'), 'utf8'));
+  const dir = path.join(__dirname, '../worker/migrations');
+  fs.readdirSync(dir).filter(f => /^\d{4}_.*\.sql$/.test(f)).sort().forEach(f => db.exec(fs.readFileSync(path.join(dir, f), 'utf8')));
   const stmt = (sql, args = []) => ({
     bind: (...a) => stmt(sql, a),
     first: async () => db.prepare(sql).get(...args) || null,
@@ -66,7 +67,9 @@ globalThis.fetch = async (url, init) => { sent.push({ url, init }); return new R
   });
   await t('verify signs in, sets a secure host-only cookie and creates one member', async () => {
     const e = env(); const { r } = await signIn(e);
-    assert.strictEqual(r.status, 200); assert.deepStrictEqual(await r.json(), { ok: true, email: 'robin@example.com' });
+    assert.strictEqual(r.status, 200); const v = await r.json();
+    assert.strictEqual(v.ok, true); assert.strictEqual(v.email, 'robin@example.com');
+    assert.strictEqual(v.account, e.DB.raw.prepare('SELECT id FROM users').get().id, 'the opaque account id (a random UUID) for the shared-browser check');
     const c = r.headers.get('set-cookie');
     for (const part of ['__Host-ddr_s=', 'Path=/', 'Secure', 'HttpOnly', 'SameSite=Lax']) assert.ok(c.includes(part), part);
     assert.ok(!/Domain=/i.test(c));
@@ -100,7 +103,8 @@ globalThis.fetch = async (url, init) => { sent.push({ url, init }); return new R
   await t('me: signed out without a cookie, signed in with one, never with a made-up one', async () => {
     const e = env(); const { cookie } = await signIn(e);
     assert.deepStrictEqual(await (await get(e, '/auth/me')).json(), { signed_in: false });
-    assert.deepStrictEqual(await (await get(e, '/auth/me', { cookie })).json(), { signed_in: true, email: 'robin@example.com' });
+    const me = await (await get(e, '/auth/me', { cookie })).json();
+    assert.strictEqual(me.signed_in, true); assert.strictEqual(me.email, 'robin@example.com'); assert.match(me.account, /^[0-9a-f-]{36}$/);
     assert.deepStrictEqual(await (await get(e, '/auth/me', { cookie: `${W.COOKIE}=${W.randomToken()}` })).json(), { signed_in: false });
   });
   await t('a session is renewed at most once a day; an expired one is signed out', async () => {
@@ -191,6 +195,138 @@ globalThis.fetch = async (url, init) => { sent.push({ url, init }); return new R
     assert.strictEqual(e.DB.raw.prepare('SELECT COUNT(*) n FROM sessions').get().n, 1);
     assert.strictEqual(e.DB.raw.prepare('SELECT COUNT(*) n FROM signin').get().n, 1);
     assert.strictEqual(e.DB.raw.prepare("SELECT COUNT(*) n FROM throttle WHERE key = 'old'").get().n, 0);
+  });
+  /* ---- day 13: the member's list and plans ---- */
+  const L = require('../static/list-store.js');
+  const item = (id, o = {}) => ({ id, cid: id, status: 'want', pos: 0, added_at: '2026-11-01T10:00:00.000Z', updated_at: '2026-11-01T10:00:00.000Z', ...o });
+  const lst = (...items) => ({ version: 1, title: 'My list', target: 50, settings_updated_at: '', items });
+  const sync = async (e, cookie, list, h = {}) => { const r = await post(e, '/list/sync', { list }, { cookie, ...h }); return { status: r.status, d: await r.json().catch(() => ({})) }; };
+  await t('list sync needs a session, our origin and JSON', async () => {
+    const e = env(), a = await signIn(e);
+    assert.strictEqual((await sync(e, '', lst())).status, 401);
+    assert.strictEqual((await sync(e, a.cookie, lst(), { origin: 'https://evil.example' })).status, 403);
+    assert.strictEqual((await post(e, '/list/sync', 'list=1', { cookie: a.cookie, 'content-type': 'application/x-www-form-urlencoded' })).status, 415);
+    assert.strictEqual((await sync(e, a.cookie, 'nope')).status, 400);
+    assert.strictEqual((await sync(e, a.cookie, [])).status, 400);
+    assert.strictEqual(e.DB.raw.prepare('SELECT COUNT(*) n FROM lists').get().n, 0);
+  });
+  await t('first sign-in: the browser list becomes the account list, cleaned', async () => {
+    const e = env(), a = await signIn(e);
+    const mine = lst(item('learn-to-sail', { status: 'planned', date: '2027-06-12', plan_made: '2026-11-09', evil: '<script>' }), item('x-abc', { cid: null, title: 'Visit Aunt May' }));
+    const r = await sync(e, a.cookie, mine);
+    assert.strictEqual(r.status, 200); assert.strictEqual(r.d.rev, 1);
+    assert.deepStrictEqual(r.d.list, L.merge(null, mine));
+    assert.ok(!JSON.stringify(r.d.list).includes('evil'), 'only known fields are stored');
+    const row = e.DB.raw.prepare('SELECT * FROM lists').get();
+    assert.deepStrictEqual(JSON.parse(row.data), r.d.list);
+  });
+  await t('two devices: each keeps what the other did (merge, never overwrite)', async () => {
+    const e = env(), a = await signIn(e), b = await signIn(e);   // phone and laptop, same account
+    await sync(e, a.cookie, lst(item('beekeeping', { status: 'planned', month: '2027-03', plan_made: '2026-11-09', updated_at: '2026-11-09T09:00:00.000Z' })));
+    const r = await sync(e, b.cookie, lst(item('pickleball', { updated_at: '2026-11-09T10:00:00.000Z' })));
+    assert.deepStrictEqual(r.d.list.items.map(i => i.id).sort(), ['beekeeping', 'pickleball']);
+    assert.strictEqual(r.d.rev, 2);
+    // the phone ticks a step; the laptop, which never saw the tick, syncs an older copy of the same plan
+    const plan = { status: 'planned', month: '2027-03', plan_made: '2026-11-09' };
+    await sync(e, a.cookie, lst(item('beekeeping', { ...plan, ticks: { first: { done: true, at: '2026-11-09T11:00:00.000Z' } }, updated_at: '2026-11-09T11:00:00.000Z' })));
+    const back = await sync(e, b.cookie, lst(item('beekeeping', { ...plan, ticks: { safety: { done: true, at: '2026-11-09T11:30:00.000Z' } }, updated_at: '2026-11-09T11:30:00.000Z' })));
+    const bee = back.d.list.items.find(i => i.id === 'beekeeping');
+    assert.deepStrictEqual(Object.keys(bee.ticks).sort(), ['first', 'safety']);
+    assert.ok(back.d.list.items.some(i => i.id === 'pickleball'));
+  });
+  await t('a deletion on one device is not undone by an older copy on another', async () => {
+    const e = env(), a = await signIn(e);
+    await sync(e, a.cookie, lst(item('surf', { deleted: true, updated_at: '2026-11-09T12:00:00.000Z' })));
+    const r = await sync(e, a.cookie, lst(item('surf', { updated_at: '2026-11-09T08:00:00.000Z' })));
+    assert.strictEqual(r.d.list.items[0].deleted, true);
+  });
+  await t('nothing new: no write; members never see each other\'s lists', async () => {
+    const e = env(), a = await signIn(e, 'a@example.com'), b = await signIn(e, 'b@example.com');
+    const one = lst(item('tango'));
+    const r1 = await sync(e, a.cookie, one), r2 = await sync(e, a.cookie, r1.d.list);
+    assert.strictEqual(r2.d.rev, r1.d.rev);
+    const rb = await sync(e, b.cookie, lst());
+    assert.strictEqual(rb.d.list.items.length, 0);
+    assert.strictEqual(e.DB.raw.prepare('SELECT COUNT(*) n FROM lists').get().n, 2);
+  });
+  await t('a write that loses a race reads again and merges, so neither device loses its change', async () => {
+    const e = env(), a = await signIn(e);
+    await sync(e, a.cookie, lst(item('harp', { updated_at: '2026-11-09T09:00:00.000Z' })));
+    // another device writes between our read and our write: simulate by bumping the row the first time it is updated
+    const realPrepare = e.DB.prepare; let raced = false;
+    e.DB.prepare = sql => {
+      if (!raced && sql.startsWith('UPDATE lists')) {
+        raced = true;
+        const other = L.merge(JSON.parse(e.DB.raw.prepare('SELECT data FROM lists').get().data), lst(item('banjo', { updated_at: '2026-11-09T09:30:00.000Z' })));
+        e.DB.raw.prepare('UPDATE lists SET data = ?, rev = rev + 1').run(JSON.stringify(other));
+      }
+      return realPrepare(sql);
+    };
+    const r = await sync(e, a.cookie, lst(item('flute', { updated_at: '2026-11-09T10:00:00.000Z' })));
+    e.DB.prepare = realPrepare;
+    assert.strictEqual(r.status, 200); assert.strictEqual(r.d.rev, 3);
+    assert.deepStrictEqual(r.d.list.items.map(i => i.id).sort(), ['banjo', 'flute', 'harp']);
+  });
+  await t('too big, too new or too often is refused and nothing is stored', async () => {
+    const e = env(), a = await signIn(e);
+    const big = lst(...Array.from({ length: 3000 }, (_, i) => item('x-' + i, { cid: null, title: 'y'.repeat(100), note: 'n'.repeat(100) })));
+    assert.strictEqual((await sync(e, a.cookie, big)).status, 413);
+    assert.strictEqual((await sync(e, a.cookie, { ...lst(), version: 2 })).status, 409);
+    assert.strictEqual(e.DB.raw.prepare('SELECT COUNT(*) n FROM lists').get().n, 0);
+    const e2 = env(), b = await signIn(e2); let last;
+    for (let i = 0; i <= 600; i++) last = await sync(e2, b.cookie, lst());
+    assert.strictEqual(last.status, 429);
+  });
+  await t('a list of too many things is refused before any merging', async () => {
+    const e = env(), a = await signIn(e);
+    const many = lst(...Array.from({ length: 2001 }, (_, i) => ({ id: String(i) })));
+    assert.strictEqual((await sync(e, a.cookie, many)).status, 413);
+  });
+  await t('a page newer than the Worker (more fields) is refused, not squeezed', async () => {
+    const e = env(), a = await signIn(e);
+    const r = await post(e, '/list/sync', { list: lst(), fields: L.FIELDS + 1 }, { cookie: a.cookie });
+    assert.strictEqual(r.status, 409);
+    assert.strictEqual((await post(e, '/list/sync', { list: lst(), fields: L.FIELDS }, { cookie: a.cookie })).status, 200);
+  });
+  await t('list: null sends back the account copy without changing it', async () => {
+    const e = env(), a = await signIn(e);
+    const none = await sync(e, a.cookie, null);
+    assert.strictEqual(none.status, 200); assert.deepStrictEqual(none.d.list.items, []);
+    assert.strictEqual(e.DB.raw.prepare('SELECT COUNT(*) n FROM lists').get().n, 0);
+    await sync(e, a.cookie, lst(item('tap')));
+    const r = await sync(e, a.cookie, null);
+    assert.deepStrictEqual(r.d.list.items.map(i => i.id), ['tap']); assert.strictEqual(r.d.rev, 1);
+  });
+  await t('removed things keep only what a merge needs', async () => {
+    const e = env(), a = await signIn(e);
+    const r = await sync(e, a.cookie, lst(item('x-1', { cid: null, title: 'Private', note: 'secret', deleted: true, where: 'Leeds', plan_made: '2026-11-09', date: '2027-01-01' })));
+    const it = r.d.list.items[0];
+    assert.strictEqual(it.deleted, true); assert.strictEqual(it.title, ''); assert.strictEqual(it.note, ''); assert.strictEqual(it.where, ''); assert.strictEqual(it.date, '');
+  });
+  await t('a sync that races the account being deleted leaves nothing behind', async () => {
+    const e = env(), a = await signIn(e);
+    const realPrepare = e.DB.prepare; let done = false;
+    e.DB.prepare = sql => {   // the member is deleted between the session check and the write
+      if (!done && sql.startsWith('SELECT data, rev FROM lists')) { done = true; e.DB.raw.exec('DELETE FROM users'); }
+      return realPrepare(sql);
+    };
+    const r = await sync(e, a.cookie, lst(item('salsa')));
+    e.DB.prepare = realPrepare;
+    assert.strictEqual(r.status, 401);
+    assert.strictEqual(e.DB.raw.prepare('SELECT COUNT(*) n FROM lists').get().n, 0);
+    e.DB.raw.exec(`INSERT INTO lists (user_id, data, rev, updated) VALUES ('gone', '{}', 1, 0)`);
+    await W.tidy(e);
+    assert.strictEqual(e.DB.raw.prepare('SELECT COUNT(*) n FROM lists').get().n, 0, 'the hourly clean-up removes any list without a member');
+  });
+  await t('other requests are still limited to 4 KB', async () => {
+    const e = env();
+    assert.strictEqual((await post(e, '/auth/start', { email: 'a@example.com', pad: 'p'.repeat(5000) })).status, 413);
+  });
+  await t('deleting the account deletes the list and plans', async () => {
+    const e = env(), a = await signIn(e);
+    await sync(e, a.cookie, lst(item('padel')));
+    assert.strictEqual((await post(e, '/auth/delete', { confirm: true }, { cookie: a.cookie })).status, 200);
+    assert.strictEqual(e.DB.raw.prepare('SELECT COUNT(*) n FROM lists').get().n, 0);
   });
   await t('not configured: refuses everything', async () => {
     assert.strictEqual((await get({ DB: d1(), SITE_ORIGIN: SITE }, '/auth/me')).status, 503);

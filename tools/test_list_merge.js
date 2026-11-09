@@ -252,4 +252,120 @@ t('merging ticks twice changes nothing more', () => {
     }
   });
 }
-console.log(n + ' tests passed');
+// Account sync (Planner Plus day 13) leans on merge() settling: merging again with what came back changes nothing
+t('merge settles: merging the result again with either side changes nothing', () => {
+  const plan = { status: 'planned', date: '2027-06-12', plan_made: '2026-11-09' };
+  const a = list([item('a', { pos: 0 }), item('c', { ...plan, pos: 1, ticks: { book: { done: true, at: '2026-11-09T10:00:00.000Z' } }, updated_at: '2026-11-09T10:00:00.000Z' }), item('x-1', { title: 'Mine', pos: 2 })], { title: 'One', settings_updated_at: '2026-11-02T00:00:00.000Z' });
+  const b = list([item('b', { pos: 0 }), item('c', { ...plan, pos: 0, ticks: { kit: { done: true, at: '2026-11-09T11:00:00.000Z' } }, updated_at: '2026-11-09T11:00:00.000Z' }), item('a', { deleted: true, updated_at: '2026-11-03T00:00:00.000Z' })]);
+  const m = L.merge(a, b);
+  assert.deepStrictEqual(L.merge(a, m), m); assert.deepStrictEqual(L.merge(m, b), m);
+  assert.deepStrictEqual(L.merge(m, m), m); assert.deepStrictEqual(L.merge(m, a), m);
+  assert.deepStrictEqual(L.merge(b, a).items.map(i => i.id).sort(), m.items.map(i => i.id).sort());
+});
+
+/* ---- the browser side of account sync, with a stand-in browser and a stand-in Worker that merges as the real one does ---- */
+(async () => {
+  const API = 'https://api.example.test';
+  let account = null, calls = 0, status = 200, who = 'acct-1';
+  global.fetch = async (url, init) => {
+    calls++;
+    assert.strictEqual(url, API + '/list/sync'); assert.strictEqual(init.credentials, 'include'); assert.strictEqual(init.method, 'POST');
+    if (status !== 200) return { status, ok: false, json: async () => ({}) };
+    const sent = JSON.parse(init.body);
+    assert.strictEqual(sent.fields, L.FIELDS);
+    if (sent.list !== null) account = L.merge(account, sent.list);
+    const reply = { ok: true, list: JSON.parse(JSON.stringify(L.merge(account, null))), account: who };
+    return { status: 200, ok: true, json: async () => reply };
+  };
+  const device = () => {
+    const store = new Map(), events = [];
+    const env = {
+      localStorage: { getItem: k => (store.has(k) ? store.get(k) : null), setItem: (k, v) => store.set(k, String(v)), removeItem: k => store.delete(k) },
+      document: { readyState: 'complete', querySelector: q => (q === 'meta[name="ddr-accounts"]' ? { getAttribute: () => API + '/' } : null), addEventListener() {} },
+      window: { addEventListener() {}, dispatchEvent: ev => events.push(ev) },
+    };
+    const use = () => Object.assign(global, env, { StorageEvent: class { constructor(type, o) { this.type = type; Object.assign(this, o); } } });
+    use();
+    delete require.cache[require.resolve('../static/list-store.js')];
+    const D = require('../static/list-store.js');
+    return { D, store, events, use };
+  };
+  let m2 = 0; const at = async (name, fn) => { await fn(); m2++; console.log('ok  ' + name); };
+  const phone = device(), laptop = device();
+  await new Promise(r => setTimeout(r, 5));   // each page's sync-on-load runs first (neither device has signed in yet)
+
+  await at('sync: a device that has not signed in never contacts the account', async () => {
+    phone.use(); phone.D.add('learn-to-sail'); phone.D.plan('learn-to-sail', { date: '2027-06-12' }, '2026-11-09');
+    const r = await phone.D.sync();
+    assert.strictEqual(r.ok, false); assert.strictEqual(calls, 0);
+  });
+  await at('sync: signing in sends the browser list to the account; the device keeps it', async () => {
+    phone.use(); const before = phone.store.get('ddr_list');
+    const r = await phone.D.account(true, 'acct-1');
+    assert.ok(r.ok); assert.strictEqual(calls, 1); assert.strictEqual(r.changed, false);
+    assert.deepStrictEqual(account.items.map(i => i.id), ['learn-to-sail']);
+    assert.strictEqual(phone.store.get('ddr_list'), before); assert.strictEqual(phone.events.length, 0);
+  });
+  await at('sync: a second device signing in merges both ways and tells its page to redraw', async () => {
+    laptop.use(); laptop.D.add('beekeeping');
+    const r = await laptop.D.account(true, 'acct-1');
+    assert.ok(r.ok && r.changed);
+    assert.deepStrictEqual(laptop.D.live(laptop.D.load()).map(i => i.id).sort(), ['beekeeping', 'learn-to-sail']);
+    assert.strictEqual(laptop.D.get('learn-to-sail').date, '2027-06-12');
+    assert.strictEqual(laptop.events.length, 1); assert.strictEqual(laptop.events[0].type, 'storage'); assert.strictEqual(laptop.events[0].key, 'ddr_list');
+    phone.use(); const p = await phone.D.sync();
+    assert.ok(p.changed); assert.ok(phone.D.has('beekeeping'));
+  });
+  await at('sync: both devices end up in the same order as the account, with no extra requests', async () => {
+    phone.use(); phone.D.add('a1'); phone.D.add('a2'); await phone.D.sync();
+    laptop.use(); laptop.D.add('b1'); laptop.D.add('b2'); const c = calls; await laptop.D.sync();
+    await new Promise(r => setTimeout(r, 400));
+    assert.strictEqual(calls, c + 1, 'one request, no follow-ups');
+    phone.use(); await phone.D.sync();
+    const order = d => d.items.map(i => i.id).join(',');
+    assert.strictEqual(order(phone.D.load()), order(account)); laptop.use(); assert.strictEqual(order(laptop.D.load()), order(account));
+  });
+  await at('sync: a change on the device is sent by itself shortly after', async () => {
+    laptop.use(); const c = calls;
+    laptop.D.tick('learn-to-sail', 'first', true);
+    await new Promise(r => setTimeout(r, 1700));
+    assert.strictEqual(calls, c + 1);
+    assert.strictEqual(account.items.find(i => i.id === 'learn-to-sail').ticks.first.done, true);
+  });
+  await at('sync: asking while a sync is under way waits for the next one instead of failing', async () => {
+    laptop.use(); const c = calls;
+    const [a, b] = await Promise.all([laptop.D.sync(), laptop.D.sync()]);
+    assert.ok(a.ok && b.ok); assert.strictEqual(calls, c + 2);
+  });
+  await at('sync: the account answering "signed out" stops syncing on this device; data stays', async () => {
+    phone.use(); status = 401;
+    const r = await phone.D.sync(); status = 200;
+    assert.strictEqual(r.reason, 'signed-out'); assert.strictEqual(phone.D.flag('acct'), '');
+    const c = calls; await phone.D.sync(); assert.strictEqual(calls, c);
+    assert.ok(phone.D.has('beekeeping'));
+  });
+  await at('sync: a shared browser never sends one account\'s list to another without asking', async () => {
+    laptop.use(); who = 'acct-2'; const c = calls; const before = account;
+    const r = await laptop.D.account(true, 'acct-2');
+    assert.strictEqual(r.reason, 'other-account'); assert.strictEqual(calls, c); assert.strictEqual(laptop.D.flag('acct'), '');
+    // the member chooses to see only their own account's list here
+    account = L.merge(null, list([item('kayak')]));
+    const s2 = await laptop.D.account(true, 'acct-2', 'replace');
+    assert.ok(s2.ok); assert.deepStrictEqual(laptop.D.live(laptop.D.load()).map(i => i.id), ['kayak']);
+    assert.deepStrictEqual(account.items.map(i => i.id), ['kayak'], 'nothing from the other account was sent');
+    assert.strictEqual(laptop.D.flag('acct_owner'), 'acct-2');
+    account = before; who = 'acct-1';
+    laptop.D.forget(); assert.strictEqual(laptop.D.live(laptop.D.load()).length, 0); assert.strictEqual(laptop.D.flag('acct_owner'), '');
+    // a browser whose list belongs to nobody yet (saved before accounts) is added to the account on first sign-in
+    laptop.D.add('pottery'); account = null;
+    const s3 = await laptop.D.account(true, 'acct-1');
+    assert.ok(s3.ok); assert.deepStrictEqual(account.items.map(i => i.id), ['pottery']);
+    account = before; await laptop.D.sync();
+  });
+  await at('sync: signing out on purpose stops it too', async () => {
+    laptop.use(); await laptop.D.account(false); const c = calls;
+    laptop.D.add('pickleball'); await new Promise(r => setTimeout(r, 1700));
+    assert.strictEqual(calls, c);
+  });
+  console.log(n + m2 + ' tests passed');
+})().catch(e => { console.error(e); process.exit(1); });

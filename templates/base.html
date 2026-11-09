@@ -2,7 +2,7 @@
 <html lang="{{ cfg.site.language }}">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">{% if accounts_api %}<meta name="ddr-accounts" content="{{ accounts_api }}">{% endif %}
 {% if cfg.social_verify.pinterest %}<meta name="p:domain_verify" content="{{ cfg.social_verify.pinterest }}"/>{% endif %}
 <title>{% block title %}{{ cfg.site.name }}: real stories and plans for doing more{% endblock %}</title>
 <meta name="description" content="{% block description %}{{ cfg.site.description | metadesc }}{% endblock %}">{% block robots %}{% endblock %}

@@ -62,7 +62,7 @@
   $$('[data-fl-badge]').forEach(el => { const c = count(), d = L.load(); if (c.n) { el.textContent = c.done ? c.done + ' of ' + d.target + ' done' : c.n + ' on your list'; el.hidden = false; } });
 
   const root = $('[data-fl]');
-  if (!root) { paintAdds(); return; }
+  if (!root) { paintAdds(); window.addEventListener('storage', ev => { if (ev.key === L.KEY) paintAdds(); }); return; }
 
   /* ================= the /list/ page ================= */
   const items = $$('.fl-item', root);
@@ -338,5 +338,7 @@
   const topic = new URLSearchParams(location.search).get('topic'), catSel = sels.find(s => s.dataset.flF === 'category');
   if (topic && [...catSel.options].some(o => o.value === topic)) catSel.value = topic;
   filter(); renderSuggest(); renderMine();
+  // the list changed in another tab, or arrived from the reader's account (day 13): show it
+  window.addEventListener('storage', ev => { if (ev.key === L.KEY) { paintAdds(); renderSuggest(); renderMine(); } });
   if (location.hash === '#mine') showView('mine'); else if (count().n >= 3) active();
 })();

@@ -5,7 +5,7 @@ name: Accounts worker
 on:
   push:
     branches: [main]
-    paths: ["worker/**", "tools/test_accounts.js", ".github/workflows/worker.yml"]
+    paths: ["worker/**", "static/list-store.js", "tools/test_accounts.js", ".github/workflows/worker.yml"]
   workflow_dispatch:
 permissions:
   contents: read
