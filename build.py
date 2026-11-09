@@ -402,6 +402,34 @@ def make_card(title: str, kicker: str, category: str, out: Path, size=(1200, 630
 
 # ---------------------------------------------------------------- social pack
 
+# Hashtags (Robin, 9 Nov 2026: adults are the audience, so no age tags). Every Instagram post carries the three brand
+# tags, one fixed tag for the topic and two from the article's own tags; X gets #DontDieRetired and one article tag;
+# Facebook gets #DontDieRetired. Never #over50, #activeageing, #seniors, #agingwell or #retirementlife (RUNBOOK §6d).
+HASHTAGS_FROM = "2026-11-10"   # social packs dated before this keep their old text (changing a sent pack re-posts it)
+BRAND_HASHTAGS = ["#DontDieRetired", "#NeverRetireFromLife", "#TryNewThings"]
+TOPIC_HASHTAGS = {"move": "#MoveMore", "eat": "#CookFromScratch", "think": "#KeepLearning", "money": "#MoneyMatters",
+                  "earn": "#CareerChange", "connect": "#Community", "travel": "#Adventure", "tech": "#TechTips",
+                  "ai": "#AIForEveryone", "explore": "#Outdoors", "curious": "#History", "stories": "#RealStories"}
+# Article tags that are for balancing the site's mix, not for searching, and never become hashtags.
+NO_HASHTAG = {"men", "women", "friends", "people", "over50", "over-50", "seniors", "older", "retirement-age",
+              "activeageing", "active-ageing", "ageing", "aging", "later-life"}
+
+
+def article_hashtags(a, n):
+    """The first n of an article's own tags as CamelCase hashtags (open-water -> #OpenWater), skipping NO_HASHTAG."""
+    out = []
+    for t in a["tags"]:
+        t = str(t).strip().lower()
+        if not t or t in NO_HASHTAG:
+            continue
+        h = "#" + "".join(w[:1].upper() + w[1:] for w in re.split(r"[^a-z0-9]+", t) if w)
+        if len(h) > 1 and h not in out:
+            out.append(h)
+        if len(out) == n:
+            break
+    return out
+
+
 def social_pack(a, cfg):
     """Write ready-to-post social content for one article."""
     site = cfg["site"]
@@ -413,12 +441,26 @@ def social_pack(a, cfg):
     utm = lambda src: f"{a['abs_url']}?utm_source={src}&utm_medium=social&utm_campaign=daily"
     hook = a.get("hook") or a["title"]
     lesson = a.get("lesson", "")
-    tags = " ".join("#" + re.sub(r"[^a-z0-9]", "", t) for t in (a["tags"] + ["over50", "activeageing", "dontdieretired"]))
+    if sdate < HASHTAGS_FROM:
+        # Packs dated before the hashtag change keep their old wording exactly: Buffer posts again any pack whose
+        # text changes (RUNBOOK §6d), so already-sent packs must never be rewritten.
+        tags = " ".join("#" + re.sub(r"[^a-z0-9]", "", t) for t in (a["tags"] + ["over50", "activeageing", "dontdieretired"]))
+        ig_tags, x_tags, fb_tags = tags, "", ""
+        why_line = "Why it matters for anyone over 50: "
+    else:
+        art_tags = article_hashtags(a, 2)
+        ig_list = BRAND_HASHTAGS + [TOPIC_HASHTAGS.get(a["category"], "")] + art_tags
+        ig_tags = " ".join(t for t in dict.fromkeys(ig_list) if t)
+        x_tags = " ".join(["#DontDieRetired"] + art_tags[:1])
+        fb_tags = "#DontDieRetired"
+        why_line = "Why it matters: "
 
     posts = {
-        "facebook": f"{hook}\n\n{a['excerpt']}\n\n{lesson}\n\nRead the full story → {utm('facebook')}",
-        "instagram": f"{hook}\n\n{lesson}\n\nFull story at the link in our bio (dontdieretired.com).\n\n{tags}",
-        "x": textwrap.shorten(f"{hook} {lesson}", 200, placeholder="…") + f"\n\n{utm('x')}",
+        "facebook": f"{hook}\n\n{a['excerpt']}\n\n{lesson}\n\nRead the full story → {utm('facebook')}"
+                    + (f"\n\n{fb_tags}" if fb_tags else ""),
+        "instagram": f"{hook}\n\n{lesson}\n\nFull story at the link in our bio (dontdieretired.com).\n\n{ig_tags}",
+        "x": textwrap.shorten(f"{hook} {lesson}", 200, placeholder="…") + f"\n\n{utm('x')}"
+             + (f"\n\n{x_tags}" if x_tags else ""),
         "x_thread": "\n\n---\n\n".join([
             f"1/ {hook}",
             f"2/ {a['excerpt']}",
@@ -426,7 +468,7 @@ def social_pack(a, cfg):
             f"4/ Full story, sources" + (" and a plan you can start this week" if a.get("plan") else "") + f" → {utm('x')}",
         ]),
         "pinterest": f"{a['title']} | {lesson} | {utm('pinterest')}",
-        "linkedin": f"{hook}\n\n{a['excerpt']}\n\nWhy it matters for anyone over 50: {lesson}\n\n{utm('linkedin')}",
+        "linkedin": f"{hook}\n\n{a['excerpt']}\n\n{why_line}{lesson}\n\n{utm('linkedin')}",
     }
     (folder / "posts.md").write_text(
         "\n\n".join(f"## {k}\n\n{v}" for k, v in posts.items()), encoding="utf-8")
