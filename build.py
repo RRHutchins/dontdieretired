@@ -453,7 +453,7 @@ def social_pack(a, cfg):
         ig_tags = " ".join(t for t in dict.fromkeys(ig_list) if t)
         x_tags = " ".join(["#DontDieRetired"] + art_tags[:1])
         fb_tags = "#DontDieRetired"
-        why_line = "Why it matters: "
+        why_line = ""
 
     posts = {
         "facebook": f"{hook}\n\n{a['excerpt']}\n\n{lesson}\n\nRead the full story → {utm('facebook')}"
@@ -470,6 +470,8 @@ def social_pack(a, cfg):
         "pinterest": f"{a['title']} | {lesson} | {utm('pinterest')}",
         "linkedin": f"{hook}\n\n{a['excerpt']}\n\n{why_line}{lesson}\n\n{utm('linkedin')}",
     }
+    if sdate >= HASHTAGS_FROM:
+        posts.pop("linkedin")   # no LinkedIn account (Robin, 9 Nov 2026); older packs are left exactly as they were
     (folder / "posts.md").write_text(
         "\n\n".join(f"## {k}\n\n{v}" for k, v in posts.items()), encoding="utf-8")
 
