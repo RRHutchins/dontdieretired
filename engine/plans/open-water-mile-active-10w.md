@@ -155,9 +155,9 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - Stop if something does not feel right, and get it checked rather than training through it. [4, 20]
 - Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. [22, 24, 26, 27]
 - In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. [23, 24, 26, 27, 28]
-- Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. [22, 27]
+- Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. [22, 27, 33]
 - If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. [26, 27]
-- In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. [33]
+- In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. [34]
 
 ## Where this comes from
 
@@ -195,4 +195,5 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 30. International Journal of Environmental Research and Public Health 17(23), 8984 (Knechtle, Waśkiewicz, Sousa, Hill and Nikolaidis), *Cold Water Swimming, Benefits and Risks, a Narrative Review* (2020). Tier 4. https://pmc.ncbi.nlm.nih.gov/articles/PMC7730683 (opened 2026-11-09)
 31. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
 32. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
-33. RNLI (Royal National Lifeboat Institution), *Rip currents (undated page; year is the year opened)* (2026). Tier 3. https://rnli.org/safety/know-the-risks/rip-currents (opened 2026-11-09)
+33. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
+34. RNLI (Royal National Lifeboat Institution), *Rip currents (undated page; year is the year opened)* (2026). Tier 3. https://rnli.org/safety/know-the-risks/rip-currents (opened 2026-11-09)

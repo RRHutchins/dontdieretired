@@ -3091,31 +3091,184 @@
   season: Winter is best, after rough weather
   regions:
   - uk
-  places: [south-west]
-  why: On these beaches ammonites and belemnites wash out of the cliffs and lie among the pebbles, waiting for a sharp pair of eyes. Holding something that last saw daylight in the time of the dinosaurs is hard to forget.
+  places:
+  - south-west
+  why: On these beaches ammonites and belemnites wash out of the cliffs and lie among the pebbles, waiting for a sharp pair of eyes. Holding something that last saw daylight in the time of the dinosaurs
+    is hard to forget.
   start:
-  - Read the official Jurassic Coast guide on where to go and the collecting advice.
-  - Book a guided fossil walk for your first visit.
-  - Check the tide times and search the beach on a falling tide.
+  - Book a guided fossil walk with the Charmouth Heritage Coast Centre or Lyme Regis Museum for your first visit; both book up quickly at busy times.
+  - Check the tide times and plan to be on the beach from about two hours before low tide until about an hour after it.
+  - Search the loose shingle along the tideline, well away from the cliffs, and take anything unusual to the Heritage Coast Centre to be identified and recorded.
   links:
   - label: 'Jurassic Coast Trust: where to go fossil hunting'
     url: https://jurassiccoast.org/visit/fossil-collecting/
     region: uk
     checked: '2026-10-06'
-  safety: Always check the tides and go on a falling tide; keep well away from cliffs, rockfalls and mudflows.
+  - label: 'Charmouth Heritage Coast Centre: visiting, tides and guided fossil walks'
+    url: https://charmouth.org/chcc/frequently-asked-questions/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Lyme Regis Museum: fossil walks with museum entry'
+    url: https://www.lymeregismuseum.co.uk/whats-on/fossil-walks
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Natural History Museum: identify nature (fossils found in the UK)'
+    url: https://nhm.ac.uk/take-part/identify-nature.html
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Maryland Department of Natural Resources: fossil hunting at Calvert Cliffs State Park'
+    url: https://dnr.maryland.gov/publiclands/Pages/southern/CalvertCliffs/Fossil-Hunting.aspx
+    region: us
+    checked: '2026-11-09'
+  safety: Go on a falling tide and keep well away from the cliffs and mudslides, which can trap people even when they look dry; in an emergency call 999 and ask for the coastguard.
   story: jeremy-lockwood-three-new-dinosaurs-68
   guide: fossil-hunting-for-beginners
   local: fossil-hunting
   kit:
   - name: Hand lens (10x)
-    why: for looking closely at fossils, rocks, insects and plants
+    why: for looking closely at small fossils and the grain of the rock
     url: https://www.amazon.co.uk/s?k=hand+lens+10x+loupe
   - name: Small specimen bags
-    why: to keep finds apart and labelled
+    why: to keep finds apart and labelled with where you found them
     url: https://www.amazon.co.uk/s?k=specimen+bags+small+zip
-  - name: Water shoes
-    why: for slippery launch spots and rocky entries
-    url: https://www.amazon.co.uk/s?k=water+shoes+adult
+  - name: Safety glasses
+    why: the Palaeontological Association advises wearing them if you use a hammer to crack open pebbles; check they meet a recognised eye-protection standard
+    url: https://www.amazon.co.uk/s?k=safety+glasses+clear
+  seo_title: 'Fossil hunting on the Jurassic Coast: beaches, rules, walks'
+  description: Where to find fossils on the Jurassic Coast, what you may keep, guided walks at Charmouth and Lyme Regis, tides and cliff safety.
+  detail:
+  - h: What it's really like
+    p:
+    - Most fossil hunting here means walking slowly along the beach with your eyes down. The Charmouth Heritage Coast Centre says the best places to look are along the tideline in the shingle, in the loose
+      material on the beach and not in the cliffs.
+    - The beaches between Charmouth and Lyme Regis are where fossils are most often found, according to the Palaeontological Association. Most date from the Jurassic period, about 200 to 145 million years
+      ago, and ammonites and belemnites are the common finds.
+    - Timing matters more than kit. The Centre advises going on a falling tide, from two hours before low tide until about one hour after it, and posts the day's tide times. A guide to Seatown on the UK
+      Fossils site says some fossil beds there are buried under sand in summer, so winter visits and days after storms tend to expose more.
+  - h: The main fossil beaches compared
+    table:
+      head:
+      - Beach
+      - What you may find
+      - Getting there
+      - The rule to know
+      rows:
+      - - Charmouth, West Dorset
+        - Ammonites and belemnites in the shingle along the tideline
+        - Several car parks on the beachfront; bring cash, as phone signal can be poor. The Heritage Coast Centre is free to enter
+        - Loose fossils on the beach are yours to keep. Digging in the cliffs or rock ledges is not allowed, and hammers may be used only on loose rocks
+      - - Monmouth Beach, Lyme Regis
+        - The Ammonite Pavement, a rock ledge full of large ammonites; also Gryphaea oysters, belemnites and occasional ichthyosaur bones
+        - Large car park at the bottom of Cobb Road (DT7 3LE), then a short walk over pebbles that gets rockier further out
+        - Part of the Undercliffs National Nature Reserve. Leave the ledges and the pavement intact, and photograph water-worn ammonites rather than taking them
+      - - Seatown, near Bridport
+        - Ammonites, often inside hard nodules, plus belemnites, crinoids and brachiopods; occasional ichthyosaur material
+        - Paid car park opposite the Anchor Inn (DT6 6JU), which closes at dusk; the lane is narrow
+        - A Site of Special Scientific Interest. Do not dig into cliffs, ledges or beds, or climb on landslips. In winter the sea often reaches the foot of the cliffs
+      - - Kimmeridge Bay, Purbeck
+        - Fossils from the Kimmeridge strata; the Etches Collection museum is in the village
+        - The bay is owned by the Smedmore Estate; museum tickets need no booking
+        - Loose fossils on the foreshore only. Hammering the cliffs and shale beds is strictly forbidden, and hammers are not used even on loose rocks here
+      - - Isle of Wight (beyond the Jurassic Coast)
+        - Dinosaur footprints at Hanover Point at low tide; Brook Bay and Compton Bay are also named
+        - Not stated on the pages we used
+        - Collecting loose fossils from beach shingle is generally allowed; check whether a site is a geological SSSI on Natural England's map
+      - - Calvert Cliffs State Park, Maryland, US
+        - Shark teeth, Ecphora and scallop and oyster shells, 10 to 20 million years old
+        - A walk of about 1.8 miles (2.9 km) on the red trail from the car park to the beach
+        - Sieves and shovels may be used to sift the sand. The cliffs are closed, and collecting beneath them is illegal
+    after: Compiled from the Charmouth Heritage Coast Centre, the Etches Collection, the Palaeontological Association, Maryland's Department of Natural Resources and the UK Fossils site guides to Seatown
+      and Monmouth Beach. Rules can change, so read the signs on the day.
+  - h: Guided walks and what they cost
+    table:
+      head:
+      - Who runs it
+      - Where and how long
+      - Cost (as last listed)
+      rows:
+      - - Charmouth Heritage Coast Centre
+        - Charmouth beach. A short talk, then a fossil hunt with wardens and trained volunteers; about one and a half hours. A warden carries a hammer, so you need no tools
+        - £14 adult, £8 child (ages 0 to 17); non-refundable
+      - - Lyme Regis Museum
+        - East Beach and Black Ven, Lyme Regis; two and a half to three hours, with museum entry included
+        - £18.75 adult (£16.95 in March and November 2026), £12.75 child aged 6 and over; private walk for up to 8 people £240
+      - - The Etches Collection, Kimmeridge
+        - Museum of fossils from Kimmeridge Bay; no guided walks listed
+        - £9.50 adult, £4.75 child aged 5 to 16; one payment covers a year of return visits
+    after: The Charmouth walks fill quickly in the school holidays, and groups can be 60 to 70 people at busy times and 20 to 30 off-peak. Lyme Regis Museum says its walks book up quickly at peak times,
+      and that the beach is uneven and slippery and not suitable for buggies or wheelchairs.
+  - h: What you can keep, and what to report
+    list:
+    - Fossils found loose on the beach at Charmouth are yours to keep, whatever they are, says the Heritage Coast Centre.
+    - Digging for fossils in the cliffs and rock ledges is illegal there, because the coast is a World Heritage Site. The Palaeontological Association says that removing fossils from cliffs or rock without
+      the landowner's permission could lead to prosecution for theft.
+    - If you find something that may be scientifically important, record it at the Charmouth Heritage Coast Centre. Under the West Dorset collecting code, anyone who wants to sell an important fossil must
+      first offer it to an accredited UK museum.
+    - The Palaeontological Association's recording steps are to mark the spot on a map or phone, photograph the find where it lies with something for scale, and seek advice before moving anything still
+      in the rock, unless the next tide would destroy it.
+    - For an identification, the Natural History Museum's Identification and Advisory Service takes photos and descriptions of fossils found in the UK. Include where and when you found it and its size.
+  - h: Staying safe on the beach
+    p:
+    - The cliffs fall without warning. Charmouth's Heritage Coast Centre says they are prone to falls and loose rocks, and that mudslips can trap people even when they look dry. Coastguards are called out
+      several times a year to these beaches.
+    - Dorset Council warns that hot, dry spells and swings in temperature make rockfalls more likely, and the British Geological Survey has said cracks and overhangs can be very hard to see from the cliff
+      top. Stay away from the foot of the cliffs and from the edges on the coast path.
+    - The Palaeontological Association adds a few habits worth keeping. Tell someone where you are going and when you will be back, take a charged phone, and wear safety glasses if you use a hammer to crack
+      open loose pebbles. For an emergency on the beach, call 999 and ask for the coastguard.
+  faq:
+  - q: Can you keep fossils you find on the Jurassic Coast?
+    a: At Charmouth, fossils found loose on the beach are yours to keep. Digging in the cliffs or rock ledges is not allowed, and important finds should be recorded at the Charmouth Heritage Coast Centre.
+  - q: Where is the best place to find fossils on the Jurassic Coast?
+    a: The Palaeontological Association says fossils are commonly found on the beaches between Charmouth and Lyme Regis. Look in the loose shingle along the tideline, not in the cliffs.
+  - q: When is the best time to go fossil hunting at Charmouth?
+    a: On a falling tide, from about two hours before low tide until an hour after. The UK Fossils guide to nearby Seatown says winter and the days after strong scouring by the sea expose more.
+  - q: Do I need a hammer to find fossils?
+    a: No. Most finds lie loose in the shingle. At Charmouth hammers may be used only on loose rocks, and at Kimmeridge hammering is forbidden.
+  - q: How much is a fossil walk in Lyme Regis?
+    a: Lyme Regis Museum listed adult walks at £18.75, including museum entry. At nearby Charmouth, the Heritage Coast Centre listed £14 for adults and £8 for children.
+  - q: How do I get a fossil identified?
+    a: Take it to the Charmouth Heritage Coast Centre, or send photos, a description and the find spot to the Natural History Museum's Identification and Advisory Service.
+  sources:
+  - label: Charmouth Heritage Coast Centre, Visiting the Centre (frequently asked questions)
+    url: https://charmouth.org/chcc/frequently-asked-questions/
+    checked: '2026-11-09'
+  - label: Charmouth Heritage Coast Centre, The fossil collecting code
+    url: https://charmouth.org/chcc/the-fossil-collecting-code/
+    checked: '2026-11-09'
+  - label: Lyme Regis Museum, Fossil walks with museum entry
+    url: https://www.lymeregismuseum.co.uk/whats-on/fossil-walks
+    checked: '2026-11-09'
+  - label: Palaeontological Association, Fossil collecting in the UK
+    url: https://palass.org/fossil-collecting-uk
+    checked: '2026-11-09'
+  - label: The Etches Collection, The fossil collecting code
+    url: https://www.theetchescollection.org/fossil-collecting-code
+    checked: '2026-11-09'
+  - label: UK Fossils, Seatown fossil hunting
+    url: https://ukfossils.co.uk/2008/10/11/seatown
+    checked: '2026-11-09'
+  - label: UK Fossils, Monmouth Beach
+    url: https://ukfossils.co.uk/monmouth-beach/
+    checked: '2026-11-09'
+  - label: Dorset Council, Warning to stay away from cliff bases and edges during heatwave
+    url: https://news.dorsetcouncil.gov.uk/?p=81180
+    checked: '2026-11-09'
+  - label: Natural History Museum, Identify nature
+    url: https://nhm.ac.uk/take-part/identify-nature.html
+    checked: '2026-11-09'
+  - label: Maryland Department of Natural Resources, Calvert Cliffs State Park fossil hunting
+    url: https://dnr.maryland.gov/publiclands/Pages/southern/CalvertCliffs/Fossil-Hunting.aspx
+    checked: '2026-11-09'
+  book:
+  - label: Jurassic Coast fossil hunting trips on GetYourGuide
+    why: guided fossil hunts with someone who knows the beach and the tides
+    url: https://www.getyourguide.com/s/?q=jurassic+coast+fossil
+    aff: getyourguide
+  related:
+  - go-rockpooling
+  - record-a-find
+  - geopark-walk
+  - walk-south-west-coast-path
 - id: geopark-walk
   title: Walk a geology trail in a UNESCO Global Geopark
   category: explore
@@ -5624,24 +5777,186 @@
   regions:
   - uk
   - us
-  why: Golf is unusual in that the ball sits motionless and waits, which makes a poor shot entirely your own work and a clean one deeply satisfying. A short run of lessons with a professional covers grip, stance and swing, and the etiquette that lets you share a course.
+  why: Golf is unusual in that the ball sits motionless and waits, which makes a poor shot entirely your own work and a clean one deeply satisfying. A short run of lessons with a professional covers grip,
+    stance and swing, and the etiquette that lets you share a course.
   start:
-  - Read England Golf's Get started with golf page, or search the PGA of America's Find Golf Lessons page for an intro lesson or beginner clinic.
-  - Book a block of beginner lessons with a PGA professional and ask to borrow clubs rather than buying a set.
-  - Practise between lessons at a driving range with a single mid-iron.
+  - Book a beginner group course at a golf club or public course, such as Get into Golf in England or Get Golf Ready in the US; many lend clubs.
+  - Add a few one-to-one lessons with a PGA professional and practise what you learn at a driving range.
+  - Play nine holes, then once you have 54 holes of scores, get a Handicap Index through a club, or through England Golf's iGolf if you are not a member.
   links:
-  - label: 'England Golf: Get started with golf'
-    url: https://www.englandgolf.org/get-started-with-golf
+  - label: 'Kings Norton Golf Club: Get into Golf (Birmingham)'
+    url: https://kingsnorton.intelligentgolf.co.uk/get_into_golf
     region: uk
-    checked: '2026-10-07'
-  - label: 'PGA of America: Find Golf Lessons'
-    url: https://www.pga.com/coach
+    checked: '2026-11-09'
+  - label: 'Lickey Hills Golf Course: golf lessons (Mytime Active, Birmingham)'
+    url: https://mytimeactive.co.uk/locations/lickey-hills-golf-course/golf-lessons-lickey-hills-golf-course
+    region: uk
+    checked: '2026-11-09'
+  - label: 'England Golf iGolf: a handicap without joining a club'
+    url: https://englandigolf.co.uk/igolf-blog/blog-archive/how-to-get-a-golf-handicap-for-non-members/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'playDCgolf: Get Golf Ready group lessons (Washington, DC)'
+    url: https://www.playdcgolf.com/group-lessons/
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-09'
+  - label: 'USGA: Want to establish a Handicap Index? Join the club'
+    url: https://www.usga.org/content/usga/home-page/handicapping/world-handicap-system/whs-articles/want-to-establish-a-handicap-index--join-the-club.html
+    region: us
+    checked: '2026-11-09'
+  - label: 'The R&A: Play golf'
+    url: https://www.randa.org/en/play-golf
+    region: any
+    checked: '2026-11-09'
   kit:
   - name: Golf glove
     why: for grip; get it fitted to your leading hand
     url: https://www.amazon.co.uk/s?k=golf+glove
+  safety: Before every swing, check that nobody is close enough to be hit, and shout "Fore!" straight away if your ball might hit someone.
+  seo_title: 'Golf lessons for beginners: how to start and get a handicap'
+  description: How to start golf, with beginner group courses and PGA lessons compared on cost, which clubs you need, and how to get a handicap in the UK and US.
+  detail:
+  - h: What learning is really like
+    p:
+    - Beginner courses put you in a small group with a PGA professional, with borrowed clubs. Some start at the hole and work back. The Get Golf Ready clinic in Charleston, South Carolina, for example,
+      moves week by week from putting to chipping and pitching, then irons, then the driver, and finishes by playing holes on the course, in groups of no more than six.
+    - The R&A suggests taking lessons, practising at a driving range and then moving on to a course, perhaps a short one at first. It says nine holes take only around 90 minutes.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Clubs
+      - Cost (as last listed)
+      rows:
+      - - Hadden Hill Golf Club
+        - 'Get into Golf: one-hour group session with a PGA professional, up to eight people, range balls included'
+        - Lent for the session
+        - £15 per session
+      - - Kings Norton Golf Club, Birmingham
+        - 'Get into Golf: five-week course with a PGA professional for complete beginners and returners'
+        - Provided if needed
+        - £40
+      - - Lickey Hills Golf Course, Birmingham (Mytime Active)
+        - 'Get Active in Golf: six group lessons'
+        - Not stated
+        - From £30
+      - - Lickey Hills Golf Course, Birmingham
+        - 'One-to-one with a PGA professional: 30 or 60 minutes, or a 90-minute lesson on the course'
+        - Not stated
+        - From £25 (30 min), £35 (60 min), £50 (on course)
+      - - Cross Timbers Golf Course, Azle, Texas
+        - 'PGA Get Golf Ready: four 60-minute sessions, up to eight students'
+        - Provided if needed
+        - $155
+      - - playDCgolf, Washington, DC
+        - 'Get Golf Ready 101: four 50-minute weekly lessons, four students per instructor; 101(+) adds two weeks and holes on the course'
+        - Clubs and range balls included
+        - $149, or $179 for 101(+)
+    after: Per hour, the group courses here cost far less than one-to-one lessons, which are built around your own swing. playDCgolf warns that classes may be moved or cancelled if too few people sign up,
+      and its East Potomac lessons go ahead rain or shine.
+  - h: From the range to a handicap
+    table:
+      head:
+      - Step
+      - What it involves
+      rows:
+      - - 1. Group course
+        - 'Four to six weeks of basics with borrowed clubs: putting, chipping, irons, driver'
+      - - 2. Range practice
+        - Hit balls between lessons; ask your coach what to work on
+      - - 3. On-course lesson or league
+        - A lesson played on the course, or a beginners' league such as playDCgolf's Get Golf Ready Red Course League, which includes nine holes on the course ($199 as last listed)
+      - - 4. Nine holes
+        - A short course or the first nine of a full one; about 90 minutes, the R&A says
+      - - 5. Handicap Index
+        - Submit 54 holes of scores, in any mix of nine- and 18-hole rounds
+    after: In England, members get a handicap through their club; England Golf's iGolf scheme gives non-members with an English address an official Handicap Index for £47 a year, with each score verified
+      by a playing partner in the MyEG app. The maximum index is 54.0. In the US, the USGA says you join an authorised golf club, which need not own a course; for your first three rounds the most you can
+      score on a hole is par plus five, and the index is available the day after you post 54 holes.
+  - h: The honest hard parts
+    list:
+    - Pace. Other players may be waiting behind you. The R&A recommends playing each stroke in no more than 40 seconds once it is your turn, and says a group playing a full round may pass a group playing
+      a shorter one.
+    - Safety. Before any swing or practice swing, the R&A says make sure nobody is close enough to be hit, wait until the players in front are out of range, and shout a warning, traditionally "Fore!", at
+      once if your ball might hit someone.
+    - Weather. Lessons can go ahead outdoors in poor weather; playDCgolf's range lessons at East Potomac run rain or shine.
+    - The jump to the course. Hitting balls on a range is not the same as playing a hole. On-course lessons and beginners' leagues exist to bridge that gap.
+  - h: Clubs and what to wear
+    p:
+    - You do not need a set to begin. The R&A says you only need a few clubs to start with and can even borrow some, and the Get into Golf and Get Golf Ready courses in the table lend them. When you do
+      buy, it suggests second-hand clubs, a bag and balls are enough. The Rules of Golf allow no more than 14 clubs in a round, so a full set is a ceiling, not a requirement.
+    - For its beginner sessions, Hadden Hill says casual sportswear and trainers are fine. Before you play a club's course, ask whether it has a dress code.
+  faq:
+  - q: How many lessons does it take to learn golf?
+    a: No governing body sets a number. Beginner group courses run for four to six weeks; Kings Norton's Get into Golf runs for five weeks and Lickey Hills' group course for six lessons. You can then add
+      one-to-one lessons with a PGA professional.
+  - q: Do I need my own clubs to start golf?
+    a: No. The R&A says you only need a few clubs to start with and can borrow some, and beginner courses such as Get into Golf and Get Golf Ready often lend clubs.
+  - q: How do I get a golf handicap?
+    a: Submit 54 holes of scores, in any mix of nine- and 18-hole rounds. In England you can do this through a club or, without membership, through England Golf's iGolf (£47 a year as last listed). In the
+      US you join a club authorised to issue a Handicap Index.
+  - q: What is the highest golf handicap?
+    a: Under the World Handicap System the maximum Handicap Index is 54.0, the same for everyone, England Golf says.
+  - q: What do I wear to a golf lesson?
+    a: Hadden Hill Golf Club says casual sportswear and trainers are fine for its Get into Golf sessions. Ask the club or coach, and check any dress code before you play a club's course.
+  - q: How long does it take to play nine holes of golf?
+    a: Around 90 minutes, according to The R&A.
+  inspire:
+  - kind: read
+    person: Jayne Moston, High Legh Golf Club, Cheshire
+    line: Went along to Get into Golf group taster sessions with a PGA professional at a Cheshire golf club, finished the course and signed up for a second one.
+    title: Golf sceptic sees the light with help of PGA pro
+    outlet: The PGA
+    url: https://www.pga.info/news/golf-convert-praise-for-pga-pro
+    checked: '2026-11-09'
+  sources:
+  - label: The R&A, Play golf
+    url: https://www.randa.org/en/play-golf
+    checked: '2026-11-09'
+  - label: The R&A, Rules of Golf, Rule 4 (the player's equipment)
+    url: https://www.randa.org/en/rog/the-rules-of-golf/rule-4
+    checked: '2026-11-09'
+  - label: The R&A, Rules of Golf, Spirit of the game
+    url: https://www.randa.org/en/rules/spirit-of-the-game
+    checked: '2026-11-09'
+  - label: England Golf iGolf, How to get a golf handicap (for non-members)
+    url: https://englandigolf.co.uk/igolf-blog/blog-archive/how-to-get-a-golf-handicap-for-non-members/
+    checked: '2026-11-09'
+  - label: USGA, Want to establish a Handicap Index? Join the club
+    url: https://www.usga.org/content/usga/home-page/handicapping/world-handicap-system/whs-articles/want-to-establish-a-handicap-index--join-the-club.html
+    checked: '2026-11-09'
+  - label: Kings Norton Golf Club, Get into Golf
+    url: https://kingsnorton.intelligentgolf.co.uk/get_into_golf
+    checked: '2026-11-09'
+  - label: Hadden Hill Golf Club, Get into Golf
+    url: https://www.haddenhillgolf.co.uk/golf/get-into-golf
+    checked: '2026-11-09'
+  - label: Mytime Active, Golf lessons at Lickey Hills Golf Course
+    url: https://mytimeactive.co.uk/locations/lickey-hills-golf-course/golf-lessons-lickey-hills-golf-course
+    checked: '2026-11-09'
+  - label: PGA of America, PGA Get Golf Ready at Cross Timbers Golf Course
+    url: https://www.pga.com/things-to-do/events/pga-get-golf-ready-5-week-program
+    checked: '2026-11-09'
+  - label: playDCgolf, Group lessons
+    url: https://www.playdcgolf.com/group-lessons/
+    checked: '2026-11-09'
+  - label: Charleston, South Carolina (charleston-sc.gov), Get Golf Ready clinics
+    url: https://charleston-sc.gov/2336/Get-Golf-Ready-Clinics
+    checked: '2026-11-09'
+  - label: The PGA, Golf sceptic sees the light with help of PGA pro
+    url: https://www.pga.info/news/golf-convert-praise-for-pga-pro
+    checked: '2026-11-09'
+  related:
+  - play-disc-golf
+  - lawn-bowls
+  - play-croquet
+  - try-archery
+  book:
+  - label: Golf lessons on GetYourGuide
+    why: a one-off lesson with clubs provided, at home or on holiday
+    url: https://www.getyourguide.com/s/?q=golf+lesson
+    aff: getyourguide
 - id: walking-netball
   title: Join a walking netball session
   category: move
@@ -5803,29 +6118,196 @@
   effort: gentle
   cost: low
   time: afternoon
-  setting: indoors
+  setting: either
   company: others
   regions:
   - anywhere
-  why: Taking a first breath underwater and finding that it simply works is one of the stranger sensations on offer. A try dive happens in a swimming pool or calm water with an instructor beside you, after a briefing on the equipment and basic techniques.
+  why: Taking a first breath underwater and finding that it simply works is one of the stranger sensations on offer. A try dive happens in a swimming pool or calm water with an instructor beside you, after
+    a briefing on the equipment and basic techniques.
   start:
-  - Use the British Sub-Aqua Club's club finder in the UK, or PADI's dive centre locator anywhere in the world, to find a try dive near you.
-  - Read and complete the medical declaration the club or dive centre sends you before you book.
-  - Bring swimwear and a towel, and tell the instructor if your ears are uncomfortable as you go down.
+  - Book a try dive, either at a British Sub-Aqua Club (BSAC) club or as a PADI Discover Scuba Diving session at a dive centre.
+  - Fill in the medical form honestly before you go. If you tick yes to anything, see the doctor or medical referee the form names before you dive.
+  - If you want to carry on, choose a route. BSAC Ocean Diver at a club runs over weeks; a PADI or SSI Open Water course at a centre takes a few days.
   links:
-  - label: British Sub-Aqua Club Try scuba diving page
-    url: https://www.bsac.com/training/learn-to-scuba-dive/try-scuba-diving/
+  - label: 'BSAC: Ocean Diver beginner course'
+    url: https://www.bsac.com/training/learn-to-scuba-dive/ocean-diver-course/
     region: uk
-    checked: '2026-10-07'
-  - label: PADI Discover Scuba Diving
-    url: https://store.padi.com/en-us/ns/courses/discover-scuba-diving/p/discover-scuba-diving/
+    checked: '2026-11-09'
+  - label: 'BSAC: learn to dive FAQs (club and centre costs)'
+    url: https://www.bsac.com/training/learn-to-scuba-dive/learn-to-dive-faqs/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Oyster Diving: PADI course price list (London and the South East)'
+    url: https://oysterdiving.com/diving-courses/price-list-oyster-diving-the-uks-premier-padi-diving-and-travel-centre
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Rainbow Reef Dive Center: PADI Open Water course (Key Largo, Florida)'
+    url: https://rainbowreef.com/diving-instruction-in-key-largo/padi-open-water-diving
+    region: us
+    checked: '2026-11-09'
+  - label: 'PADI: Discover Scuba Diving FAQs'
+    url: https://blog.padi.com/discover-scuba-diving-faqs/
     region: any
-    checked: '2026-10-07'
-  safety: Dive only with a qualified instructor, answer the medical form honestly and never hold your breath on scuba.
+    checked: '2026-11-09'
+  - label: 'SSI: Open Water Diver'
+    url: https://www.divessi.com/en/get-certified/scuba-diving/open-water-diver
+    region: any
+    checked: '2026-11-09'
+  safety: Dive only with a qualified instructor or club, answer the medical form honestly, and follow the instructor's briefing.
   kit:
   - name: Snorkel and mask set
     why: 'the mask matters most: press it to your face without the strap, and it should stay'
     url: https://www.amazon.co.uk/s?k=snorkel+mask+set+adult
+  seo_title: 'Learn to scuba dive: try dives, courses and costs'
+  description: Try dives, BSAC Ocean Diver and PADI or SSI Open Water compared, with UK and US costs, the medical form, cold water and flying after diving.
+  detail:
+  - h: What a first dive is really like
+    p:
+    - A try dive starts with a short theory session, then you practise basic skills in a pool, such as breathing underwater and putting air into and out of your buoyancy jacket, or BCD. PADI's Discover
+      Scuba Diving keeps you to 6 metres (20 feet) in the pool, with an optional open water dive to 12 metres (40 feet). PADI says you do not need to be a strong swimmer for it, but you should be comfortable
+      in the water and able to keep yourself at the surface.
+    - If you go on to a full course, the pattern is the same but longer. There is theory, often done online, then pool sessions, then at least four dives in open water, which in Britain may mean the sea,
+      a lake or a flooded quarry. BSAC says its clubs often teach Ocean Diver over consecutive weeks and that lessons are performance-based, so you move on when you can do each skill.
+  - h: Ways in compared
+    table:
+      head:
+      - Route
+      - What you do
+      - Depth limit
+      - How long
+      - Cost (as last listed)
+      rows:
+      - - Try dive at a BSAC club
+        - Pool session with club instructors; the club explains what joining and diving cost
+        - Not stated
+        - One session
+        - £50 at Southsea Sub-Aqua Club, Portsmouth, as a contribution to pool, equipment hire and insurance
+      - - PADI Discover Scuba Diving
+        - Theory, pool skills, optional open water dive; can count towards Open Water if you start the full course within 12 months
+        - 6 m (20 ft) in the pool; 12 m (40 ft) on the optional open water dive
+        - One session
+        - £80 at Oyster Diving, London
+      - - BSAC Ocean Diver (club route)
+        - Six theory modules, at least five sessions in a pool or sheltered water, at least four open water dives
+        - Qualifies you to 20 m (66 ft)
+        - Weeks or months at a club; about five days at a BSAC centre
+        - BSAC says typically £400 to £500 through a club, including membership and subscription, or about £500 to £650 at a centre
+      - - PADI Open Water Diver (centre route)
+        - Online theory, pool sessions, four open water dives, usually over at least two days
+        - Open water training dives go to 18 m (60 ft)
+        - Usually two to four days in the water once the theory is done (Rainbow Reef runs it in two)
+        - £600 at Oyster Diving, London (online theory, pool and four UK dives; air fills and entrance or boat fees extra); $525 at Rainbow Reef, Key Largo, Florida (eLearning, BCD and regulator included;
+          mask, fins and snorkel extra)
+      - - SSI Open Water Diver
+        - Six academic sessions, six pool sessions, four open water sessions
+        - 18 m (60 ft) maximum training depth
+        - SSI suggests 16 to 32 hours
+        - Set by each training centre; SSI does not list a price
+    after: BSAC is the British club-based route, with volunteer instructors. PADI and SSI courses are sold by dive centres. PADI and SSI take students from age 10 and BSAC Ocean Diver from 12. BSAC says
+      you can do the theory and pool work at home and finish your open water dives abroad.
+  - h: The hard parts
+    list:
+    - Ears. You have to equalise the pressure in your ears as you go down. Divers Alert Network (DAN) says to equalise early, before your head goes under, and often; to go down slowly; and, if you feel
+      discomfort, to rise a little and try again. Forcing it only raises the chance of injury.
+    - The medical form. PADI students fill in a short medical questionnaire, and if any listed condition applies a doctor must assess you and sign that you are fit to dive. UK clubs use the UK Diving Medical
+      Committee (UKDMC) declaration, filled in on joining and every year; a yes means contacting a UKDMC medical referee, which can involve a fee and sometimes tests at your own cost. Answer honestly. This
+      page is not medical advice.
+    - Mask clearing. On PADI's first open water dive you clear a partly flooded mask, on the second a fully flooded one, and on the third you take the mask off and put it back on underwater. You practise
+      it in the pool first.
+    - Cold British water. BSAC says that if you learn abroad and then want to dive in the UK, you will need some further training, which may include using a drysuit. Southsea Sub-Aqua Club says BSAC's entry
+      course includes drysuit training, but its members hire or buy their own drysuit or wetsuit from dive shops. Oyster Diving offers a winter drysuit upgrade with an extra pool session.
+    - Club timetables. BSAC points out that club instructors are volunteers with other commitments; if you need to finish faster, all or part of the training can be done at a BSAC centre.
+  - h: Club or centre?
+    p:
+    - A club suits you if you want to dive regularly in Britain with the same people. You pay BSAC membership and a club subscription, borrow club kit while you train and learn at the club's pace. Tyneside
+      BSAC, for example, said its training includes a year's club and BSAC membership, pool sessions, lectures and use of club equipment.
+    - A centre suits you if you want it done in a block, at home or on holiday. Check what the price covers. Oyster Diving's London prices exclude air fills and entrance or boat fees; Rainbow Reef in Florida
+      includes eLearning and the main equipment but not mask, fins and snorkel. If you might go on to dive in Britain, ask whether drysuit training is included.
+    - Whichever you choose, the swim test is similar. BSAC asks Ocean Divers to swim 200 metres (about 220 yards) comfortably in a pool. PADI asks Open Water students to swim 200 metres or yards without
+      stopping, or 300 in mask, fins and snorkel, and to stay afloat for 10 minutes.
+  faq:
+  - q: Can I scuba dive if I can't swim?
+    a: For a try dive, PADI says you should be comfortable in the water and able to keep yourself at the surface. For a full course you need to pass a swim test. PADI asks for 200 metres or yards without
+      stopping plus 10 minutes afloat, and BSAC asks you to swim 200 metres comfortably in a pool.
+  - q: How deep can I go with Open Water?
+    a: PADI's Open Water training dives go to 18 metres (60 feet), and PADI says beginners should stay shallower than about 18 metres. SSI's maximum training depth is also 18 metres. BSAC's Ocean Diver
+      trains you to dive to a maximum of 20 metres (66 feet).
+  - q: How long after diving can I fly?
+    a: Divers Alert Network recommends at least 12 hours after a single no-decompression dive and at least 18 hours after several days of repeated diving, and substantially longer after dives that needed
+      decompression stops. It notes the figures come from tests on resting volunteers, so longer may be needed after real diving.
+  - q: How much does it cost to learn to scuba dive?
+    a: BSAC puts club training at typically £400 to £500, including membership, and a centre course at about £500 to £650. Oyster Diving in London listed full PADI Open Water at £600, and Rainbow Reef in
+      Key Largo, Florida listed it at $525.
+  - q: How long does it take to learn to scuba dive?
+    a: PADI says the pool and open water parts can take three or four days once the theory is done online. A BSAC centre takes four to five days, while a club usually spreads Ocean Diver over weeks or months.
+  - q: Do I need a medical to scuba dive?
+    a: You fill in a medical questionnaire or declaration before any training. If you answer yes to a question, a doctor (PADI) or a UK Diving Medical Committee medical referee (BSAC and other UK clubs)
+      has to clear you before you dive.
+  inspire:
+  - kind: read
+    person: Bev Morris, Dudley Dolphin BSAC
+    line: Started with snorkel training at her local BSAC club, went on to qualify as an Ocean Diver at Stoney Cove, and now serves as the club's treasurer.
+    title: 'This girl can dive: Bev''s story'
+    outlet: British Sub-Aqua Club
+    url: https://www.bsac.com/news-and-blog/this-girl-can-dive-bevs-story/
+    checked: '2026-11-09'
+  sources:
+  - label: BSAC, Ocean Diver beginner course
+    url: https://www.bsac.com/training/learn-to-scuba-dive/ocean-diver-course/
+    checked: '2026-11-09'
+  - label: BSAC, All you need to know about learning to scuba dive
+    url: https://www.bsac.com/news-and-blog/all-you-need-to-know-about-learning-to-scuba-dive/
+    checked: '2026-11-09'
+  - label: BSAC, Learn to dive FAQs
+    url: https://www.bsac.com/training/learn-to-scuba-dive/learn-to-dive-faqs/
+    checked: '2026-11-09'
+  - label: UK Diving Medical Committee, Medical self-declaration system explanation
+    url: https://ukdmc.org/medical-self-declaration-system-explanation
+    checked: '2026-11-09'
+  - label: PADI, Become a certified scuba diver FAQs
+    url: https://www.padi.com/help/scuba-certification-faq
+    checked: '2026-11-09'
+  - label: PADI, What are the 4 PADI Open Water dives?
+    url: https://blog.padi.com/padi-open-water-dives/
+    checked: '2026-11-09'
+  - label: PADI, Discover Scuba Diving FAQs
+    url: https://blog.padi.com/discover-scuba-diving-faqs/
+    checked: '2026-11-09'
+  - label: SSI, Open Water Diver
+    url: https://www.divessi.com/en/get-certified/scuba-diving/open-water-diver
+    checked: '2026-11-09'
+  - label: Divers Alert Network, Guidelines for flying after diving
+    url: https://dan.org/health-medicine/health-resource/health-safety-guidelines/guidelines-for-flying-after-diving/
+    checked: '2026-11-09'
+  - label: Divers Alert Network, Ear equalization guidelines for scuba divers
+    url: https://dan.org/safety-prevention/diver-safety/divers-blog/ear-equalization-guidelines-for-scuba-divers/
+    checked: '2026-11-09'
+  - label: Southsea Sub-Aqua Club, Frequently asked questions
+    url: https://southseasubaqua.org.uk/membership/faqs/
+    checked: '2026-11-09'
+  - label: Tyneside BSAC, Costs
+    url: https://www.tynesidebsac.co.uk/diving/costs/
+    checked: '2026-11-09'
+  - label: Oyster Diving, PADI scuba diving course price list
+    url: https://oysterdiving.com/diving-courses/price-list-oyster-diving-the-uks-premier-padi-diving-and-travel-centre
+    checked: '2026-11-09'
+  - label: Rainbow Reef Dive Center, PADI Open Water diving course
+    url: https://rainbowreef.com/diving-instruction-in-key-largo/padi-open-water-diving
+    checked: '2026-11-09'
+  related:
+  - learn-to-snorkel
+  - open-water-swim
+  - learn-to-swim-adult
+  - see-wildlife-in-the-galapagos
+  book:
+  - label: Discover Scuba Diving try dives on Viator
+    why: a first dive with an instructor, often in calm, warm water on holiday
+    url: https://www.viator.com/searchResults/all?text=Discover+Scuba+Diving
+    aff: viator
+  - label: Open Water courses on GetYourGuide
+    why: compare what each course includes, such as eLearning, kit and boat dives
+    url: https://www.getyourguide.com/s/?q=open+water+diving+course
+    aff: getyourguide
 - id: learn-to-surf
   title: Catch your first wave
   category: move
@@ -7721,19 +8203,32 @@
   why: A bothy is a simple shelter in remote country, kept up by the volunteers of the Mountain Bothies Association for anyone who loves wild and lonely places. Expect no tap, no beds and no lights, so
     you carry in everything you would take camping except the tent, and share the floor with whoever else walks in.
   start:
-  - Read the Mountain Bothies Association's What is a Bothy page and its Bothy Code before you plan anything.
-  - Choose a bothy from the Association's list by area, in Scotland, northern England or Wales, and plan the walk in on a map.
-  - Pack a sleeping bag and mat, stove, food, candles and a spade, and carry out every scrap of rubbish.
+  - Read the Mountain Bothies Association's Bothy Code and its Using a bothy page before you plan anything.
+  - Choose a bothy from the Association's list by area, check its news for closures and stalking or lambing restrictions, and plan the walk in on a map.
+  - Pack as for camping, with a stove, fuel, candles and a tent in case the bothy is full, and carry out every scrap of rubbish.
   links:
-  - label: Mountain Bothies Association, what is a bothy
-    url: https://www.mountainbothies.org.uk/bothies/what-is-a-bothy/
+  - label: 'Mountain Bothies Association: the Bothy Code'
+    url: https://www.mountainbothies.org.uk/bothies/bothy-code/
     region: uk
-    checked: '2026-10-07'
-  - label: Mountain Bothies Association, find a bothy by area
-    url: https://www.mountainbothies.org.uk/bothies/
+    checked: '2026-11-09'
+  - label: 'Mountain Bothies Association: using a bothy (with closures and restrictions)'
+    url: https://www.mountainbothies.org.uk/bothies/using-a-bothy/
     region: uk
-    checked: '2026-10-07'
-  safety: Bothies sit in remote hill country, so carry a map, compass and enough kit to camp out if the bothy is full or you cannot reach it.
+    checked: '2026-11-09'
+  - label: 'Mountain Bothies Association: work party information'
+    url: https://www.mountainbothies.org.uk/volunteer/work-party-information/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Scottish Outdoor Access Code: camping'
+    url: https://www.outdooraccess-scotland.scot/practical-guide-all/camping
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Appalachian Trail Conservancy: where to sleep on the A.T. (shelters, similar but not the same)'
+    url: https://appalachiantrail.org/experience/hike-the-trail/essential-skills/camping-shelters/
+    region: us
+    checked: '2026-11-09'
+  safety: Bothies are used entirely at your own risk and lie hours from a road, so carry a map, compass and a tent in case the bothy is full or you cannot reach it, and make sure any fire is out before
+    you leave.
   kit:
   - name: Sleeping bag
     why: check its comfort temperature against the nights you expect
@@ -7755,6 +8250,132 @@
     outlet: John O'Groat Journal
     url: https://www.johnogroat-journal.co.uk/news/bright-idea-to-enjoy-winter-s-night-at-coulags-bothy-372402
     checked: '2026-11-07'
+  - kind: read
+    person: Ian Furlong, from Yorkshire
+    line: Retired early from a desk job and now makes the 400-mile trip to the north-west Highlands to look after Coire Fionnaraich bothy as a Mountain Bothies Association volunteer, organising repair work
+      across the area.
+    title: 'From Yorkshire to the Highlands: backpacker gives back by making 400-mile trip to maintain bothies for fellow outdoor enthusiasts'
+    outlet: Press and Journal
+    url: https://www.pressandjournal.co.uk/fp/news/highlands-islands/5130883/from-yorkshire-to-the-highlands-backpacker-gives-back-by-making-400-mile-trip-to-maintain-bothies-for-fellow-outdoor-enthusiasts/
+    checked: '2026-11-09'
+  seo_title: 'How to stay in a bothy: the Bothy Code and what to carry'
+  description: How Scottish and other UK bothies work, the Bothy Code, what to carry in, and how a bothy compares with a hut, a hostel and wild camping.
+  detail:
+  - h: What a bothy is really like
+    p:
+    - A bothy is an open shelter in remote country. The Mountain Bothies Association (MBA) looks after about 100 of them across Great Britain, grouped into nine areas from the Northern Highlands to Southern
+      Scotland, northern England and Wales. Most are old cottages at least several hours' walk from a public road.
+    - Expect four walls, a roof and somewhere dry to sleep, and little more. Some bothies have sleeping platforms; many have only a wooden or concrete floor. Most have a fireplace or stove, but you usually
+      carry in the fuel. Water comes from a nearby stream or spring, and there is no toilet, only a spade.
+    - Bothies are free to use and open to everyone, members or not. There is no booking system, so it is first come, first served, and you may share the night with strangers. One MBA volunteer told the
+      Press and Journal you can have some excellent nights with people you have never met before.
+  - h: Bothy, hut, hostel or wild camp?
+    table:
+      head:
+      - Option
+      - Booking
+      - Cost (as last listed)
+      - What you get
+      - Rule to know
+      rows:
+      - - MBA bothy
+        - None; first come, first served
+        - Free; donations welcome
+        - A dry floor or platform, often a fireplace or stove, water from a stream, no toilet
+        - Groups of six or more should not use bothies; no commercial groups; short stays only
+      - - 'Club hut (example: Alex MacIntyre Memorial Hut, North Ballachulish, near Glencoe)'
+        - Online; half paid in advance
+        - £20 per person per night
+        - 16 beds with mattresses (bring pillow and bedding), kitchen, drying room, car park
+        - For members of the BMC or Mountaineering Scotland and their affiliated clubs, each with one guest
+      - - 'Remote youth hostel (example: Glen Affric, Hostelling Scotland)'
+        - Check the availability calendar; check-in 5pm to 10pm
+        - Not shown on the hostel page
+        - Dorms and two private rooms, kitchen, small shop, wood and coal fires, drying room; no wifi or phone signal
+        - Open April to September; no road, allow three to four hours to walk in; bring a sleeping bag
+      - - Wild camping in Scotland
+        - None, except seasonal permit areas in Loch Lomond and The Trossachs National Park
+        - Free
+        - Whatever you carry
+        - Small numbers, no more than two or three nights in one place, well away from buildings and roads
+      - - Appalachian Trail shelter (US; similar but not the same)
+        - First come, first served, except in Great Smoky Mountains National Park; some need a permit or fee
+        - Varies
+        - Three-sided lean-to with a wooden floor, often near a spring and a privy
+        - Shelters are for individual hikers, not groups; avoid using a stove inside
+    after: Compiled from the MBA, the BMC, Hostelling Scotland, the Scottish Outdoor Access Code and the Appalachian Trail Conservancy.
+  - h: The Bothy Code in brief
+    list:
+    - Record your visit in the bothy log book.
+    - Leave the bothy clean and tidy, with dry kindling for the next people, and be welcoming to whoever arrives.
+    - Carry out all rubbish you cannot burn; do not bury it, and do not leave perishable food, which attracts vermin.
+    - Burn only wood that is clearly firewood, never cut live trees or strip fences, use fuel sparingly, and make sure the fire is out before you leave.
+    - Where there is no toilet, take the spade and bury waste out of sight, well away from the water supply; the MBA suggests going at least a couple of hundred metres.
+    - Close all doors and windows when you leave, because deer and sheep can push open a loose door.
+    - Respect estate restrictions during stag stalking and lambing, keep to short stays, and do not come as a group of six or more.
+  - h: What to carry in
+    list:
+    - A sleeping bag and mat, as you may be sleeping on a bare wooden or concrete floor.
+    - A stove for cooking, which the MBA says you will need.
+    - Candles for light, which the MBA also lists.
+    - Fuel for the fire if you want one, since you usually have to bring your own.
+    - A tent, which the MBA advises in popular areas in case the bothy is full.
+    - Bags to carry every bit of rubbish home, and food you will not leave behind.
+    - A map and compass for the long walk in. Hostelling Scotland gives the same advice for the similar walk to Glen Affric, where signposts are only occasional.
+  - h: The hard parts, and how to give something back
+    p:
+    - A bothy can be full when you arrive, and the MBA asks users not to evict groups. It can also be shut. The Association's news has listed bothies closed for stalking or until further notice, some with
+      no stove and one with water problems, so check before you set off.
+    - There is no tap and no toilet. You fetch water from the burn, wash pots downstream of where others draw drinking water, and walk off with the spade. Food left out draws mice. Fire is a real risk too;
+      the MBA says bothies have been lost to unattended fires.
+    - Every repair is done by volunteers. MBA membership was listed at £25 a year, and its work parties, which have included painting, fitting sleeping platforms and fixing roofs, say they welcome people
+      of all backgrounds and experience.
+  faq:
+  - q: Do you have to book a bothy?
+    a: No. MBA bothies have no booking system and are first come, first served, so the MBA advises bringing a tent in popular areas.
+  - q: How much does it cost to stay in a bothy?
+    a: Nothing. MBA bothies are free to use, though donations are welcome. Membership of the Association was listed at £25 a year.
+  - q: Are there toilets in bothies?
+    a: Generally not. A spade is provided, and the Bothy Code asks you to bury waste out of sight, well away from the water supply.
+  - q: Can you have a fire in a bothy?
+    a: Most bothies have a fireplace or stove, but you usually carry in your own fuel. Burn only clearly firewood, never cut live trees, and put the fire out before you leave.
+  - q: How many people can stay in a bothy?
+    a: There is no fixed number of places, but the Bothy Code says groups of six or more should not use bothies, and commercial groups may not stay.
+  - q: What should I take to a bothy?
+    a: Everything you would take camping, including a stove, fuel and candles, plus a tent in case the bothy is full. Carry out all your rubbish.
+  sources:
+  - label: Mountain Bothies Association, home page and FAQ
+    url: https://mountainbothies.org.uk/
+    checked: '2026-11-09'
+  - label: Mountain Bothies Association, Bothy Code
+    url: https://www.mountainbothies.org.uk/bothies/bothy-code/
+    checked: '2026-11-09'
+  - label: Mountain Bothies Association, Using a bothy
+    url: https://www.mountainbothies.org.uk/bothies/using-a-bothy/
+    checked: '2026-11-09'
+  - label: Mountain Bothies Association, Work party information
+    url: https://www.mountainbothies.org.uk/volunteer/work-party-information/
+    checked: '2026-11-09'
+  - label: Scottish Outdoor Access Code, Camping
+    url: https://www.outdooraccess-scotland.scot/practical-guide-all/camping
+    checked: '2026-11-09'
+  - label: BMC, Alex MacIntyre Memorial Hut
+    url: https://thebmc.co.uk/alex-macintyre-hut
+    checked: '2026-11-09'
+  - label: Hostelling Scotland, Glen Affric
+    url: https://hostellingscotland.org.uk/hostels/glen-affric/
+    checked: '2026-11-09'
+  - label: Appalachian Trail Conservancy, Where to sleep on the Appalachian Trail
+    url: https://appalachiantrail.org/experience/hike-the-trail/essential-skills/camping-shelters/
+    checked: '2026-11-09'
+  - label: Press and Journal, Yorkshire backpacker makes 400-mile trip to maintain bothies
+    url: https://www.pressandjournal.co.uk/fp/news/highlands-islands/5130883/from-yorkshire-to-the-highlands-backpacker-gives-back-by-making-400-mile-trip-to-maintain-bothies-for-fellow-outdoor-enthusiasts/
+    checked: '2026-11-09'
+  related:
+  - stay-in-a-hostel
+  - sleep-under-the-stars
+  - learn-map-and-compass
+  - stay-in-a-fire-lookout
 - id: visit-an-open-garden
   title: Visit a private garden on an open day
   category: explore
@@ -21514,3 +22135,1339 @@
   - learn-tai-chi-form
   - take-a-ballroom-class
   - nordic-walking-lesson
+- id: learn-the-mandolin
+  title: Learn the mandolin
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The mandolin turns up in Irish traditional music, Italian, Brazilian and American folk music and classical mandolin orchestras, so one small instrument opens several doors. Beginners' group classes
+    run for eight to twelve weeks, and some ask for no experience of a stringed instrument at all.
+  start:
+  - Look for a beginners' class at an arts centre, folk-music school or adult-education college, and check whether it says "no previous experience needed".
+  - Ask whether the class lends instruments before you buy one; some venues keep a few to borrow.
+  - Once you can get through a simple tune, look for a mandolin orchestra, folk session or summer school to play with others.
+  links:
+  - label: 'The Crescent, Belfast: Traditional Irish Banjo and Mandolin for beginners'
+    url: https://crescentarts.org/courses/music-and-drama/instruments/banjo-mandolin-beginners
+    region: uk
+    checked: '2026-11-09'
+  - label: 'The Stables, Milton Keynes: Mandolin Beginners workshop'
+    url: https://stables.org/workshop/mandolin-beginners
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Old Town School of Folk Music, Chicago: mandolin classes'
+    url: https://oldtownschool.org/classes/adults/mandolin
+    region: us
+    checked: '2026-11-09'
+  - label: 'Classical Mandolin Society of America: about the society'
+    url: https://classicalmandolinsociety.org/about/
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Mandolin lessons for beginners: classes and costs'
+  description: Where adult beginners can learn the mandolin in the UK and US, what group classes cost, whether you need your own instrument and when to join others.
+  detail:
+  - h: What a beginners' class covers
+    p:
+    - Early classes deal with the basics. The Old Town School of Folk Music in Chicago says its Mandolin 1 class covers fretting with the left hand, using a pick, and basic chords and melodies. The Stables
+      in Milton Keynes says its beginners' workshop introduces both melody and rhythm playing, with simple tunes and group playing.
+    - Check what a "beginners" class expects. The Stables' workshop suits people who can already play basic open chords, while Old Town's Introduction to the Mandolin is aimed at people who have never played
+      a stringed instrument. Reading music or tablature is useful but not essential, according to both The Stables and Hills Road Sixth Form College in Cambridge.
+    - A residential weekend may be a later step. Halsway Manor in Somerset says complete beginners on Simon Mayor's mandolin course "may find themselves struggling", and asks that players can get through
+      a simple tune without stalling.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Crescent, Belfast
+        - Traditional Irish banjo and mandolin, beginners; 12 weekly 45-minute classes; no previous experience needed
+        - £99 or £94
+      - - The Stables, Milton Keynes
+        - Mandolin Beginners workshop; mandolins can be borrowed in limited numbers
+        - £42
+      - - British BMG Federation summer school, Halsway Manor, Somerset
+        - Residential weekend; traditional music for mixed instruments, open to all levels
+        - £200 non-resident to £330 full board (2025)
+      - - Old Town School of Folk Music, Chicago
+        - Introduction to the Mandolin or Mandolin 1; eight weekly 80-minute classes
+        - $272, or $252 for members
+    after: The Classical Mandolin Society of America lists more than 30 mandolin groups in its directory and holds a convention each autumn, hosted by member orchestras in a different North American city.
+      It says its members range from beginners to professionals.
+  faq:
+  - q: Can I learn mandolin with no musical experience?
+    a: Yes. The Crescent in Belfast says no previous experience is needed for its beginners' class, and Old Town School of Folk Music runs an introduction for people who have never played a stringed instrument.
+  - q: Do I need my own mandolin for a beginners class?
+    a: Usually it helps. The Stables in Milton Keynes recommends bringing one but can lend a limited number if you contact it first.
+  - q: Do I need to read music to play the mandolin?
+    a: Not to start. The Stables and Hills Road Sixth Form College both say reading music or tablature is helpful but not essential.
+  - q: Are there mandolin orchestras I can join?
+    a: Yes. The Classical Mandolin Society of America lists more than 30 groups, and the British BMG Federation runs a summer school with ensemble playing.
+  sources:
+  - label: The Crescent, Traditional Irish Banjo and Mandolin, Beginners
+    url: https://crescentarts.org/courses/music-and-drama/instruments/banjo-mandolin-beginners
+    checked: '2026-11-09'
+  - label: The Stables, Mandolin Beginners
+    url: https://stables.org/workshop/mandolin-beginners
+    checked: '2026-11-09'
+  - label: Hills Road Sixth Form College, Introduction to Mandolin
+    url: https://hillsroad.ac.uk/adult-education/courses/introduction-to-mandolin
+    checked: '2026-11-09'
+  - label: Halsway Manor, Simon Mayor's Spring Mandolins
+    url: https://www.halswaymanor.org.uk/event/simon-mayor-spring-mandolins
+    checked: '2026-11-09'
+  - label: Halsway Manor, British BMG (Banjo, Mandolin and Guitar) Federation Summer School 2025
+    url: https://www.halswaymanor.org.uk/event/bmg-summer-school-2025
+    checked: '2026-11-09'
+  - label: Old Town School of Folk Music, Mandolin classes
+    url: https://oldtownschool.org/classes/adults/mandolin
+    checked: '2026-11-09'
+  - label: Classical Mandolin Society of America, About CMSA
+    url: https://classicalmandolinsociety.org/about/
+    checked: '2026-11-09'
+  kit:
+  - name: Beginner mandolin
+    why: check it comes set up with a case, and ask your class first if it lends instruments
+    url: https://www.amazon.co.uk/s?k=beginner+mandolin
+  - name: Clip-on tuner
+    why: clips to the headstock so you can tune before each practice
+    url: https://www.amazon.co.uk/s?k=clip+on+tuner+mandolin
+  - name: Mandolin tutor book
+    why: tunes in notation and tablature for practice between classes
+    url: https://www.amazon.co.uk/s?k=mandolin+tutor+book+beginners
+  related:
+  - learn-the-banjo
+  - learn-the-ukulele
+  - learn-the-guitar
+  - join-community-orchestra-or-band
+- id: learn-the-harmonica
+  title: Learn the harmonica
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The harmonica is small enough to carry anywhere, and classes range from evening courses for absolute beginners to Chicago blues harp, in person or online. A beginners' course starts with playing
+    one clean note and breath control, then moves on to tunes and a little improvising.
+  start:
+  - Get a ten-hole diatonic harmonica in the key of C, the instrument Morley College asks its beginners to bring.
+  - Book a beginners' class, in person or online, so a tutor can check how you shape single notes.
+  - Look up your nearest harmonica club through HarmonicaUK or SPAH and go along to hear others play.
+  links:
+  - label: 'Morley College London: Harmonica 1A'
+    url: https://morleycollege.ac.uk/?p=485825
+    region: uk
+    checked: '2026-11-09'
+  - label: 'HarmonicaUK: about the national harmonica charity'
+    url: https://www.harmonica.uk/pages/about
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Old Town School of Folk Music, Chicago: harmonica classes'
+    url: https://www.oldtownschool.org/classes/adults/harmonica
+    region: us
+    checked: '2026-11-09'
+  - label: 'SPAH: harmonica clubs in the US'
+    url: https://spah.org/community/clubs/
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Harmonica lessons for beginners: classes and clubs'
+  description: How to start the harmonica, which harmonica beginners use, what UK and US group classes cost and where to find a harmonica club to play with others.
+  detail:
+  - h: What you learn first
+    p:
+    - Morley College in London says its Harmonica 1A course is for absolute beginners, and that musical experience is helpful but not required. Its listed outcomes are playing a single note, playing a "train"
+      song, building a small repertoire of tunes, starting to improvise and developing good breath control.
+    - The college asks for a ten-hole diatonic harmonica in C major, and says you can buy one from the tutor at the first lesson. Old Town School of Folk Music in Chicago sells harmonicas in its own shop,
+      so you do not need one before you enrol.
+    - Clubs are where people keep going. HarmonicaUK, the charity that used to be the National Harmonica League, is run by volunteers and traces its history back to 1935. In the US, SPAH (the Society for
+      the Preservation and Advancement of the Harmonica) lists local clubs in Texas, California, New York, Minnesota and Missouri; the Twin Cities Harmonica Society, for example, meets on Monday evenings
+      in term time.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Morley College, London
+        - Harmonica 1A; 12 weekly evening classes of 90 minutes, absolute beginners
+        - £225, or £170 concession
+      - - Old Town School of Folk Music, Chicago
+        - Chicago Blues Harp 1; eight weekly 80-minute classes in person
+        - $272, or $252 for members
+      - - Old Town School of Folk Music, online
+        - Chicago Blues Harp 1 Online; eight weekly 60-minute classes
+        - $206, or $186 for members
+    after: SPAH says its conventions draw 500 or more players, performers, teachers and enthusiasts, and that local clubs help when the convention comes to their city. HarmonicaUK runs events including
+      the Chromatic Weekend festival and a National Championship.
+  faq:
+  - q: What harmonica should a beginner buy?
+    a: Morley College asks beginners to bring a ten-hole diatonic harmonica in C major, and its tutor sells them at the first lesson.
+  - q: Is the harmonica easy to learn?
+    a: Beginners' courses start with getting a single clean note and good breath control before moving on to tunes and improvising, according to Morley College.
+  - q: Can I learn harmonica online?
+    a: Yes. Old Town School of Folk Music in Chicago runs Chicago Blues Harp 1 as an eight-week online class.
+  - q: Are there harmonica clubs near me?
+    a: In the UK, start with HarmonicaUK, the national harmonica charity. In the US, SPAH keeps a list of local harmonica clubs.
+  sources:
+  - label: Morley College London, Harmonica 1A
+    url: https://morleycollege.ac.uk/?p=485825
+    checked: '2026-11-09'
+  - label: HarmonicaUK, About
+    url: https://www.harmonica.uk/pages/about
+    checked: '2026-11-09'
+  - label: HarmonicaUK, A brief history of HarmonicaUK
+    url: https://harmonica.uk/pages/history
+    checked: '2026-11-09'
+  - label: Old Town School of Folk Music, Harmonica classes
+    url: https://www.oldtownschool.org/classes/adults/harmonica
+    checked: '2026-11-09'
+  - label: SPAH, Harmonica Clubs
+    url: https://spah.org/community/clubs/
+    checked: '2026-11-09'
+  kit:
+  - name: Ten-hole diatonic harmonica in C
+    why: the key and type Morley College asks beginners to bring; check the box says diatonic and key of C
+    url: https://www.amazon.co.uk/s?k=10+hole+diatonic+harmonica+key+of+C
+  - name: Harmonica case
+    why: keeps fluff and dust out of the reeds in a pocket or bag
+    url: https://www.amazon.co.uk/s?k=harmonica+case
+  related:
+  - learn-the-guitar
+  - learn-the-accordion
+  - learn-the-ukulele
+  - play-one-piece-for-someone
+- id: learn-millinery
+  title: Learn to make a hat
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Millinery is the craft of shaping felt, straw and sinamay over a block with steam, then wiring, binding and trimming it into a hat that fits one head. Short courses run from a single day for a fascinator
+    to five days or weeks for blocked hats you take home.
+  start:
+  - Decide whether you want to start with a headpiece or fascinator in a day, or a blocked felt or straw hat over several sessions.
+  - Check the course's sewing requirement; some ask for basic hand-sewing, others are open to anyone.
+  - Find out which materials are included and what you must bring, such as thimble, pins, scissors and an apron.
+  links:
+  - label: 'Morley College London: Beginner''s Contemporary Millinery'
+    url: https://morleycollege.ac.uk/?p=477491
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Central Saint Martins (UAL): Millinery Workshop Short Course'
+    url: https://www.arts.ac.uk/subjects/accessories-footwear-and-jewellery/short-courses/millinery/millinery-workshop-short-course-csm
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Minnesota Historical Society: Fascinator and Headpiece Millinery Workshop'
+    url: https://mnhs.org/events/1040
+    region: us
+    checked: '2026-11-09'
+  - label: 'East Village Hats, New York: make your own felt hat'
+    url: https://eastvillagehats.nyc/classes/fedora-class
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Millinery courses for beginners: learn to make a hat'
+  description: What a beginners' millinery course teaches, whether you need sewing skills, what materials are included and what hat-making classes cost in the UK and US.
+  detail:
+  - h: What you learn
+    p:
+    - Central Saint Martins' five-day workshop lists the core skills - blocking and steaming, traditional millinery stitches, stiffening, wiring and binding, measuring a head, fitting, and making your own
+      trimmings. Students make two or more hats in wool felt and sinamay to take away.
+    - Morley College builds its five-week beginners' course around techniques, with the aim that you create a basic hat and develop your own designs for hats and trimmings. The college says all are welcome,
+      but students bring their own fabrics, trimmings and haberdashery.
+    - Sewing matters more on some courses than others. East Village Hats in New York says basic hand-sewing skills are "a must" for its felt hat class, and the Minnesota Historical Society recommends some
+      basic sewing for its fascinator day. Central Saint Martins says its course is open regardless of prior experience.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Morley College, London
+        - Five Thursdays, 10am to 4pm; materials not included
+        - £450, or £340 concession
+      - - Central Saint Martins (UAL), London
+        - Five-day intensive; one felt hood and sinamay supplied; two or more hats
+        - From £700
+      - - Minnesota Historical Society, St Paul
+        - One day; one finished fascinator or headpiece; materials, mannequin and hat box included
+        - $150
+      - - East Village Hats, New York
+        - Two sessions; block and finish a fedora, porkpie, cloche or top hat; materials included
+        - $325
+    after: Central Saint Martins asks students to bring a waterproof apron, tape measure, thimble, notebook, household and sewing scissors, household and blocking pins, and hand-sewing needles.
+  faq:
+  - q: Do I need to be able to sew to do a millinery course?
+    a: It depends on the course. East Village Hats says basic hand-sewing is a must, while Central Saint Martins says its workshop is open regardless of prior experience.
+  - q: How long does it take to learn millinery?
+    a: You can make a fascinator in a day at the Minnesota Historical Society workshop. Courses for blocked hats run over two sessions to five weeks.
+  - q: Are materials included in a hat-making course?
+    a: Sometimes. The Minnesota Historical Society and East Village Hats include materials, Central Saint Martins supplies some, and Morley College asks you to bring your own fabrics and trimmings.
+  - q: What do you need for a millinery class?
+    a: Central Saint Martins lists an apron, tape measure, thimble, scissors, pins, blocking pins and hand-sewing needles. Morley College asks for a basic sewing kit and an apron.
+  sources:
+  - label: Morley College London, Beginner's Contemporary Millinery
+    url: https://morleycollege.ac.uk/?p=477491
+    checked: '2026-11-09'
+  - label: University of the Arts London, Millinery Workshop Short Course (CSM)
+    url: https://www.arts.ac.uk/subjects/accessories-footwear-and-jewellery/short-courses/millinery/millinery-workshop-short-course-csm
+    checked: '2026-11-09'
+  - label: Minnesota Historical Society, Fascinator and Headpiece Millinery Workshop with Karen Morris
+    url: https://mnhs.org/events/1040
+    checked: '2026-11-09'
+  - label: East Village Hats, Make your own felt hat with Julia Knox
+    url: https://eastvillagehats.nyc/classes/fedora-class
+    checked: '2026-11-09'
+  inspire:
+  - kind: read
+    person: Clare Szurek, Prayssac, France
+    line: Took a millinery course in the UK after moving to France, followed it with classes there, and opened her own hat atelier in Prayssac in 2022.
+    title: How I became a hat designer after retiring to France
+    outlet: The Connexion
+    url: https://www.connexionfrance.com/magazine/how-i-became-a-hat-designer-after-retiring-to-france/686704
+    checked: '2026-11-09'
+  kit:
+  - name: Thimble
+    why: on Central Saint Martins' kit list for hand-sewing
+    url: https://www.amazon.co.uk/s?k=sewing+thimble
+  - name: Millinery blocking pins
+    why: hold felt or sinamay to the block; on Central Saint Martins' kit list
+    url: https://www.amazon.co.uk/s?k=millinery+blocking+pins
+  - name: Millinery wire
+    why: stiffens and shapes brims and headpiece edges
+    url: https://www.amazon.co.uk/s?k=millinery+wire
+  related:
+  - learn-to-sew-your-own-clothes
+  - learn-felt-making
+  - learn-embroidery
+  - learn-to-upholster-a-chair
+- id: learn-chinese-brush-painting
+  title: Learn Chinese brush painting
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Chinese brush painting tries to catch a bamboo stem, a flower or a bird in as few strokes as possible, using a soft brush, ink and rice paper. Short courses teach you to load the brush and control
+    the ink, and many supply the paper and ink for the first sessions.
+  start:
+  - Book a one-day introduction or a short weekly class at an art college, a Confucius Institute, a botanic garden or a university continuing-education department.
+  - Check whether brushes, ink and rice paper are included; some classes supply them, others send a materials list.
+  - Begin with the classic beginner subjects, such as bamboo and orchids, and practise the strokes at home between sessions.
+  links:
+  - label: 'West Dean London: Introduction to Chinese brush painting (one day)'
+    url: https://www.westdean.ac.uk/short-courses/d1d42260-introduction-to-chinese-brush-painting
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Confucius Institute for Scotland: five-week Chinese brush painting class (Edinburgh)'
+    url: https://www.confuciusinstitute.ac.uk/uncategorized/5-week-chinese-brush-painting-class-february-march-2025/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Brooklyn Botanic Garden: Chinese Brush Painting'
+    url: https://bbg.org/classes/chinese_brush_painting_new
+    region: us
+    checked: '2026-11-09'
+  - label: 'University of Utah Lifelong Learning: Chinese Calligraphy and Painting, an Introduction'
+    url: https://continue.utah.edu/class/LLART/464
+    region: us
+    checked: '2026-11-09'
+  seo_title: Chinese brush painting classes for beginners
+  description: What a beginners' Chinese brush painting class covers, what materials you need, what courses cost in the UK and US, and where to find one.
+  detail:
+  - h: What you learn
+    p:
+    - Classes start with the materials. West Dean's one-day introduction covers preparing and choosing brushes, ink and rice paper, then step-by-step techniques for flowers, birds and landscapes. UCLA Extension
+      describes the same set of tools as the Four Treasures, listing brush, rice paper, ink and water.
+    - The aim, as West Dean puts it, is expressive brushwork that captures a subject with minimal strokes. Beginners usually work on a fixed set of subjects; Anne Arundel Community College's sumi-e style
+      class, for example, paints orchids, bamboo, plum blossom and chrysanthemums. Some courses, like Utah's, pair the painting with Chinese calligraphy, since both rest on the same brush control.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - West Dean London
+        - One day, 11am to 5.15pm; paper, a scroll, some ink, shared colours and brushes for the day included
+        - £145
+      - - Confucius Institute for Scotland, Edinburgh
+        - Five weekly morning sessions; materials included; all levels
+        - £100
+      - - Brooklyn Botanic Garden, New York
+        - Five Saturday afternoons; you buy your own supplies from a materials list
+        - $215, or $194 for members
+      - - University of Utah Lifelong Learning, Salt Lake City
+        - Three evening sessions combining calligraphy and painting; materials fee included
+        - $139
+    after: The Edinburgh class was fully booked when last listed, and several of these courses run only once or twice a year, so it is worth signing up for the provider's mailing list.
+  faq:
+  - q: Do I need any art experience for Chinese brush painting?
+    a: No. West Dean says its introduction suits beginners and experienced artists, and the Confucius Institute for Scotland class was open to complete beginners.
+  - q: What materials do you need for Chinese brush painting?
+    a: A brush, ink, rice (xuan) paper and water, which UCLA Extension calls the Four Treasures. Some classes supply them; Brooklyn Botanic Garden asks students to bring their own from a list.
+  - q: What do beginners paint in Chinese brush painting?
+    a: Natural subjects. West Dean covers flowers, birds and landscapes, and Anne Arundel Community College's sumi-e style class paints orchids, bamboo, plum blossom and chrysanthemums.
+  - q: Is Chinese brush painting the same as calligraphy?
+    a: No, but they are closely linked. Some courses, such as Utah's introduction, teach brush technique, ink flow and stroke order for both together.
+  sources:
+  - label: West Dean College, Introduction to Chinese Brush Painting with Yuet Yean Teo
+    url: https://www.westdean.ac.uk/short-courses/d1d42260-introduction-to-chinese-brush-painting
+    checked: '2026-11-09'
+  - label: Confucius Institute for Scotland, 5 week Chinese Brush Painting Class, February and March 2025
+    url: https://www.confuciusinstitute.ac.uk/uncategorized/5-week-chinese-brush-painting-class-february-march-2025/
+    checked: '2026-11-09'
+  - label: Brooklyn Botanic Garden, Chinese Brush Painting
+    url: https://bbg.org/classes/chinese_brush_painting_new
+    checked: '2026-11-09'
+  - label: 'University of Utah Lifelong Learning, Chinese Calligraphy and Painting: An Introduction'
+    url: https://continue.utah.edu/class/LLART/464
+    checked: '2026-11-09'
+  - label: UCLA Extension, Chinese Brush Painting
+    url: https://web.uclaextension.edu/osher-olli/creativity-games-movement/course/chinese-brush-painting-genint-731559
+    checked: '2026-11-09'
+  - label: Anne Arundel Community College, Chinese Brush Painting
+    url: https://www.aacc.edu/course-search/course/ssac-chinese-brush-painting.php
+    checked: '2026-11-09'
+  kit:
+  - url: https://www.amazon.co.uk/s?k=chinese+painting+brush+set
+    why: soft-haired brushes in two or three sizes; check what your class list asks for before buying
+    name: Chinese painting brush set
+  - url: https://www.amazon.co.uk/s?k=xuan+rice+paper
+    why: the absorbent paper used in class; check whether it is raw or sized, as they take ink differently
+    name: Xuan rice paper
+  - url: https://www.amazon.co.uk/s?k=chinese+ink+inkstone
+    why: bottled ink is simplest to start with; an inkstone lets you grind and dilute your own
+    name: Chinese ink and inkstone
+  related:
+  - learn-calligraphy
+  - paint-in-watercolour
+  - learn-botanical-illustration
+  - learn-to-draw
+- id: learn-picture-framing
+  title: Learn picture framing
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Framing is part woodwork, part design and part arithmetic, and a beginners' course takes you from cutting a mitre to hanging a finished piece. It is useful straight away for your own pictures, photographs
+    and keepsakes, and the workshop tools are usually provided.
+  start:
+  - Find a beginners' framing course at an adult-education college or an arts centre with a framing workshop.
+  - Check whether moulding, glazing and mount-board are in the fee or bought separately, and what size of work you can frame.
+  - Choose two or three pieces you would like framed and take them, or their measurements, to the first session.
+  links:
+  - label: 'City Lit: Picture framing and mounting for beginners (London)'
+    url: https://www.citylit.ac.uk/courses/picture-framing-and-mounting-for-beginners
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Hammersmith and Fulham Adult Learning: Picture Framing and Mount Cutting (London)'
+    url: https://hfals.ac.uk/courses/arts-crafts-performing-arts/picture-framing-restoration-woodwork/picture-framing-and-mount-cutting
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Chastain Arts Center, Atlanta: Beginning Framing'
+    url: https://www.active.com/atlanta-ga/painting/classes/beginning-framing-wedam-alan-2026
+    region: us
+    checked: '2026-11-09'
+  - label: 'The Art League School, Virginia: Basic Matting and Framing'
+    url: https://www.theartleague.org/workshop/basic-matting-and-framing
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Picture framing courses for beginners: what you learn'
+  description: What a beginners' picture framing course teaches, what materials cost extra, what courses cost in the UK and US, and how to find one.
+  detail:
+  - h: What a course covers
+    p:
+    - Beginners' courses cover the whole job. City Lit teaches measuring and cutting frames, gluing and joining them, cutting acrylic glazing and mount-board, and different ways of mounting artwork. Hammersmith
+      and Fulham's longer course adds workshop safety, acid-free products, cutting glass safely, sealing the back, wood finishing and how to cost a frame.
+    - Courses differ on materials. City Lit includes basic moulding, acrylic glass and mount-board and limits work to A3; at Hammersmith and Fulham you buy your own glass, moulding and mount card, while
+      the centre provides the tools. Atlanta's Chastain Arts Center says students can expect to frame four to eight pieces over its course.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Four full days or five to six evenings; basic materials included; work up to A3
+        - £379 daytime, £299 evening (lower concession rates listed)
+      - - Hammersmith and Fulham Adult Learning, London
+        - 11 weekly evening sessions; you buy your own glass, moulding and mount card
+        - £273.47 standard, £121.38 concession, £510.12 full
+      - - Chastain Arts Center, Atlanta (city parks department)
+        - 10 weekly morning sessions in a framemaking studio
+        - $305
+      - - The Art League School, Alexandria, Virginia
+        - Workshop on mats, mounting and assembling a pre-cut frame; you take home a framed piece
+        - Tuition not listed; $25 materials fee to the instructor
+    after: If you later want to frame for a living, the US Professional Picture Framers Association runs the Certified Picture Framer exam, but it asks for at least a year of hands-on framing experience
+      first.
+  safety: Framing uses sharp blades and, on some courses, glass; Hammersmith and Fulham teaches safe glass cutting and does not allow open footwear in the workshop.
+  faq:
+  - q: Do I need experience to do a picture framing course?
+    a: No. City Lit's course suits complete beginners, though it asks that you can do simple measurements and calculations, and Hammersmith and Fulham requires no previous experience.
+  - q: Are materials included in a picture framing course?
+    a: It varies. City Lit includes basic moulding, acrylic glass and mount-board; Hammersmith and Fulham asks students to buy their own glass, moulding and mount card.
+  - q: How long does it take to learn picture framing?
+    a: Beginners' courses run from a single workshop to 11 weekly sessions. City Lit's daytime course is about 24 hours of teaching over four weeks.
+  - q: Is there a qualification for picture framers?
+    a: In the US, the Professional Picture Framers Association runs the Certified Picture Framer exam, a 3.5-hour written test for framers with at least a year of hands-on experience.
+  sources:
+  - label: City Lit, Picture framing and mounting for beginners
+    url: https://www.citylit.ac.uk/courses/picture-framing-and-mounting-for-beginners
+    checked: '2026-11-09'
+  - label: Hammersmith and Fulham Adult Learning and Skills Service, Picture Framing and Mount Cutting
+    url: https://hfals.ac.uk/courses/arts-crafts-performing-arts/picture-framing-restoration-woodwork/picture-framing-and-mount-cutting
+    checked: '2026-11-09'
+  - label: City of Atlanta Parks, Recreation and Cultural Affairs, Beginning Framing (via ACTIVE)
+    url: https://www.active.com/atlanta-ga/painting/classes/beginning-framing-wedam-alan-2026
+    checked: '2026-11-09'
+  - label: The Art League School, Basic Matting and Framing
+    url: https://www.theartleague.org/workshop/basic-matting-and-framing
+    checked: '2026-11-09'
+  - label: Professional Picture Framers Association, Certification
+    url: https://www.ppfa.com/certification/
+    checked: '2026-11-09'
+  kit:
+  - url: https://www.amazon.co.uk/s?k=mount+board+cutter
+    why: cuts the bevelled window in a mount; check it takes the board thickness you plan to use
+    name: Mount cutter
+  - url: https://www.amazon.co.uk/s?k=acid+free+mount+board
+    why: for mounting work you want to keep; check the size covers your largest piece with a margin
+    name: Acid-free mount board
+  - url: https://www.amazon.co.uk/s?k=steel+ruler+cutting+mat
+    why: for accurate measuring and straight cuts; a metal rule will not be nicked by the blade
+    name: Steel rule and cutting mat
+  related:
+  - paint-in-watercolour
+  - learn-bookbinding
+  - learn-to-upholster-a-chair
+  - mend-at-a-repair-cafe
+- id: make-a-rag-rug
+  title: Make a rag rug
+  category: think
+  kind: project
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Rag rugs turn old jumpers, T-shirts and scarves into mats, wall hangings and cushion fronts by hooking strips of fabric through hessian. The craft goes by many local names, from proggy and hooky
+    in the north of England to rug hooking in the US, and a one-day workshop is enough to start a piece.
+  start:
+  - Book a beginners' workshop at a museum, heritage site or craft centre; many supply the hessian, hook and fabric.
+  - Wash and save old clothes, especially wool knitwear and jersey, to cut into strips.
+  - Start small, with a mug mat or a cushion-sized panel, before committing to a full rug.
+  links:
+  - label: 'Calderdale Museums: Rag Rug Workshop at Shibden Hall, Halifax'
+    url: https://museums.calderdale.gov.uk/whats-on/events/rag-rug-workshop
+    region: uk
+    checked: '2026-11-09'
+  - label: 'West Dean London: The Art of Rug Hooking (two days)'
+    url: https://www.tickettailor.com/events/westdeanlondon/1142435
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Landis Valley Village & Farm Museum, Pennsylvania: Traditional Rug Hooking beginner workshop'
+    url: https://www.landisvalleymuseum.org/event/classes-traditional-rug-hooking-beginner-workshop-may-2026
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'How to make a rag rug: beginners workshops and kit'
+  description: What rag rug making involves, the difference between rag rugs and rug hooking, what workshops cost in the UK and US, and what to bring.
+  detail:
+  - h: Rags, proggy and hooky
+    p:
+    - The Friends of Beamish note that rag mats go by many local names, including proggy, hooky, clippy, clooty and peggy. They say the craft nearly died out in the 1970s before interest in recycling revived
+      it, and that Beamish museum holds about 250 examples dating from about 1897 onwards.
+    - The basic method is the same everywhere. A backing such as hessian, burlap or linen is stretched on a frame and strips of fabric are pulled through it with a hook to form loops. Ideastream Public
+      Media, reporting on a US guild, says wider wool strips give the textured primitive style and thinner ones are used for fine detail. West Dean asks students to bring freshly washed fabrics, preferably
+      wool, such as old knitwear, T-shirts and scarves.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Shibden Hall, Calderdale Museums
+        - Full day; all materials provided; bring old clothes to cut up
+        - £45, including entry to Shibden Hall
+      - - West Dean London
+        - Two days; hessian, recycled fabrics, hook and frame included; make a piece about 40 x 25cm (16 x 10in)
+        - £250
+      - - Landis Valley Village & Farm Museum, Lancaster, Pennsylvania
+        - Five hours, taught by a local rug hooking guild; make a 4 x 4in (10 x 10cm) mug rug or sampler
+        - $60 to $65
+    after: In the US, many local rug hooking guilds are chapters of the Association of Traditional Hooking Artists; Ideastream describes one in Ohio that meets monthly to share techniques and show work.
+  faq:
+  - q: What fabric is best for rag rugs?
+    a: Workshops ask for washed, preferably wool fabric. West Dean suggests old knitwear, T-shirts, jersey or woollen scarves, and Shibden Hall invites people to bring old clothing to cut up.
+  - q: What is the difference between proggy and hooky?
+    a: They are two of several local names for rag mats in the north of England, alongside clippy, clooty and peggy, according to the Friends of Beamish.
+  - q: Do I need experience for a rag rug workshop?
+    a: No. Shibden Hall and Landis Valley both say no experience is needed, and West Dean lists its course as suitable for all.
+  - q: How long does it take to make a rag rug?
+    a: A beginner usually starts something small. Landis Valley's five-hour class makes a 4 x 4in mug rug, and West Dean's two-day course a piece about 40 x 25cm.
+  sources:
+  - label: Calderdale Museums, Rag Rug Workshop
+    url: https://museums.calderdale.gov.uk/whats-on/events/rag-rug-workshop
+    checked: '2026-11-09'
+  - label: West Dean London, The Art of Rug Hooking with Graham Hollick (Ticket Tailor)
+    url: https://www.tickettailor.com/events/westdeanlondon/1142435
+    checked: '2026-11-09'
+  - label: 'Landis Valley Village & Farm Museum, Traditional Rug Hooking: Beginner Workshop'
+    url: https://www.landisvalleymuseum.org/event/classes-traditional-rug-hooking-beginner-workshop-may-2026
+    checked: '2026-11-09'
+  - label: 'Friends of Beamish, From Rags to Riches: North Country Rag Rugs'
+    url: https://www.friendsofbeamish.co.uk/quilting/ragstoriches.html
+    checked: '2026-11-09'
+  - label: Ideastream Public Media, Western Reserve Rug Hookers keep the craft alive in Geauga County
+    url: https://www.ideastream.org/arts-culture/2024-04-12/western-reserve-rug-hookers-keep-the-craft-alive-in-geauga-county
+    checked: '2026-11-09'
+  kit:
+  - url: https://www.amazon.co.uk/s?k=rag+rug+hook
+    why: pulls fabric strips through the backing; check the shaft and handle suit the fabric thickness you plan to use
+    name: Rag rug hook
+  - url: https://www.amazon.co.uk/s?k=hessian+fabric+rug+making
+    why: the base you work into; check the weave is open enough for your hook
+    name: Hessian backing fabric
+  - url: https://www.amazon.co.uk/s?k=rug+hooking+frame
+    why: keeps the backing taut while you work; check it fits the size of piece you plan
+    name: Embroidery or rug hooking frame
+  related:
+  - learn-a-heritage-craft
+  - make-a-patchwork-quilt
+  - learn-to-crochet
+  - learn-to-weave-on-a-loom
+  inspire:
+  - kind: read
+    person: Dave Lewis
+    line: Added rug hooking to more than 30 years of spinning and weaving; he raises sheep and spins his own yarn in Canton, Ohio.
+    title: Western Reserve Rug Hookers keep the craft alive in Geauga County
+    outlet: Ideastream Public Media
+    url: https://www.ideastream.org/arts-culture/2024-04-12/western-reserve-rug-hookers-keep-the-craft-alive-in-geauga-county
+    checked: '2026-11-09'
+- id: play-squash
+  title: Learn to play squash
+  category: move
+  kind: skill
+  effort: demanding
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Squash needs only a court, two rackets and a ball, and a 40-minute booking at a leisure centre costs under £10 on average, says England Squash. If the small ball feels too fast, Squash 57 uses a
+    bigger racket and a bouncier ball on the same court, which England Squash says gives you time to get to the ball.
+  start:
+  - Find a court near you through your national body's court or club finder, and look for a beginners' session or a coached introduction rather than booking a court cold.
+  - Ask whether the session lends rackets and goggles, and wear indoor shoes with non-marking soles.
+  - If rallies keep ending after one shot, ask about Squash 57 (once called racketball), which uses a bigger, bouncier ball.
+  links:
+  - label: 'England Squash: where to play'
+    url: https://www.englandsquash.com/get-involved/play/where-to-play
+    region: uk
+    checked: '2026-11-09'
+  - label: 'England Squash: Squash 57'
+    url: https://www.englandsquash.com/get-involved/play/ways-to-play/squash57
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Glasgow Life: adult squash at Glasgow Club Scotstoun'
+    url: https://www.glasgowlife.org.uk/sport/adult-activities/adult-squash
+    region: uk
+    checked: '2026-11-09'
+  - label: 'US Squash: starting as an adult'
+    url: https://ussquash.org/?p=47277
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Learn to play squash: beginner sessions and costs'
+  description: How adults start squash in the UK and US, from pay-and-play courts and club sessions to coached classes and Squash 57, with costs and kit.
+  detail:
+  - h: Where beginners start
+    p:
+    - England Squash says leisure centres suit new players, because you only pay each time you book a court. Clubs offer group sessions, coaching and local leagues. It counts more than 4,200 courts and
+      more than 700 registered clubs in England.
+    - US Squash suggests starting with a lesson from the professional at your local club, who can give technical advice and a plan for development. Its "Find a Facility" page lists places to play.
+    - Squash 57, formerly racketball, is played on a standard squash court with a bigger racket and a bigger, bouncier ball. England Squash describes it as an introduction to squash and a way to keep playing
+      for longer. Blue balls are the bouncier ones for beginners.
+  - h: Ways in compared
+    table:
+      head:
+      - Way in
+      - Where
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - Pay-and-play court hire
+        - Leisure centres in England
+        - A court for about 40 minutes; bring a partner
+        - Under £10 on average, says England Squash
+      - - Club membership
+        - Registered clubs in England
+        - Group sessions, coaching and leagues
+        - From as little as £10 a month, says England Squash
+      - - Coached beginner session (women only)
+        - Glasgow Club Scotstoun
+        - One hour, led by qualified coaches, Mondays
+        - £4 non-members; free for Glasgow Club members
+      - - Social squash, beginner/intermediate
+        - Glasgow Club Scotstoun
+        - Two hours of games against other players, Tuesdays
+        - £6 non-members; free for Glasgow Club members
+      - - Squash 101 (beginner class)
+        - Nicol NYC, Hell's Kitchen, New York
+        - 45-minute coached class; racket, goggles and ball provided
+        - $40 non-members, $30 members, per class
+    after: Glasgow Club Scotstoun also hires courts by the hour at £10 for non-members (£7 concession). The New York class is for people with no racket-sports experience and asks for non-marking shoes.
+  faq:
+  - q: Is squash hard to learn for beginners?
+    a: The standard ball is small and fast, so England Squash suggests the larger, bouncier "Max" ball for beginners, or Squash 57, whose blue ball gives you more time to reach it.
+  - q: What is the difference between squash and racketball?
+    a: Racketball is now called Squash 57 in England. It is played on a squash court with a bigger racket and a bigger, bouncier ball.
+  - q: How much does it cost to play squash?
+    a: England Squash says court hire at a leisure centre averages under £10 for 40 minutes, and club membership can be as little as £10 a month. A coached class at Nicol NYC in New York is listed at $40
+      for non-members.
+  - q: Do you need goggles for squash?
+    a: England Squash strongly recommends eye protection for all players, adults included, and requires it for under-19s in competition and for all ages in doubles competitions.
+  safety: England Squash strongly recommends eye protection for all players, including adults, in practice as well as matches.
+  sources:
+  - label: England Squash, Where to play
+    url: https://www.englandsquash.com/get-involved/play/where-to-play
+    checked: '2026-11-09'
+  - label: England Squash, Squash 57
+    url: https://www.englandsquash.com/get-involved/play/ways-to-play/squash57
+    checked: '2026-11-09'
+  - label: England Squash, Equipment
+    url: https://www.englandsquash.com/get-involved/play/equipment
+    checked: '2026-11-09'
+  - label: Glasgow Life, Adult squash
+    url: https://www.glasgowlife.org.uk/sport/adult-activities/adult-squash
+    checked: '2026-11-09'
+  - label: US Squash, Starting as an adult
+    url: https://ussquash.org/?p=47277
+    checked: '2026-11-09'
+  - label: Nicol NYC, Hell's Kitchen Squash 101 (Beginner)
+    url: https://app.playbypoint.com/programs/beginner-adult-squash-class
+    checked: '2026-11-09'
+  kit:
+  - url: https://www.amazon.co.uk/s?k=squash+eye+protection+goggles
+    why: for the eye protection England Squash recommends; check the listing names the squash eyewear standard
+    name: Squash eye protection
+  - url: https://www.amazon.co.uk/s?k=non+marking+indoor+court+shoes
+    why: some clubs and leisure centres ask for soles that do not mark the court
+    name: Non-marking indoor court shoes
+  - url: https://www.amazon.co.uk/s?k=squash+57+blue+balls
+    why: the bouncier ball England Squash suggests for beginners at Squash 57; it needs a Squash 57 racket
+    name: Squash 57 balls (blue)
+  related:
+  - play-padel
+  - play-tennis
+  - play-pickleball
+  - play-table-tennis
+- id: play-badminton
+  title: Learn to play badminton
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Badminton clubs and leisure centres welcome people who have never played, and some sessions are coached from the first hit. Many leisure centres run pay-and-play doubles sessions where a host puts
+    you into a game, so you do not need to bring a partner.
+  start:
+  - Look for a beginners' coaching class, or a social pay-and-play session that says beginners are welcome; some sessions are for experienced players only.
+  - Ask whether rackets and shuttles are provided; several venues ask you to bring your own racket.
+  - Wear indoor sports shoes, then use your national body's club finder once you want regular games.
+  links:
+  - label: 'Badminton Scotland: adult play and club finder'
+    url: https://badmintonscotland.org.uk/play/adult/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Badminton Wales: get involved'
+    url: https://badminton.wales/?p=746
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Glasgow Life: adult badminton at the National Badminton Academy'
+    url: https://www.glasgowlife.org.uk/sport/adult-activities/adult-badminton
+    region: uk
+    checked: '2026-11-09'
+  - label: 'USA Badminton: find a member club'
+    url: https://usabadminton.org/
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Learn to play badminton: beginner classes and costs'
+  description: How adults start badminton in the UK and US, from No Strings pay-and-play doubles to beginner coaching courses, with costs and what to bring.
+  detail:
+  - h: Where beginners start
+    p:
+    - Badminton Scotland says you do not need to have played before to join an adult club, and that clubs vary. Some are social, some coach and some prepare players for competition. Each club sets its own
+      fees.
+    - No Strings Badminton is a pay-and-play programme for adults run at leisure centres in England. At Knutsford Leisure Centre, Everybody describes it as open to players aged 16 and over of any ability.
+      At Surrey Sports Park, the standard No Strings session is for beginner and intermediate players, and the advanced one says it is not suitable for beginners.
+    - Read the listing before you go. Edinburgh Leisure runs a 60-minute Coached Badminton for Adults: Beginners class and asks you to bring your own racket if you can, with a few kept for emergencies.
+  - h: Ways in compared
+    table:
+      head:
+      - Way in
+      - Where
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - No Strings pay and play
+        - Knutsford Leisure Centre, Cheshire (Everybody)
+        - Social sessions, Mondays and Thursdays, 16+ of any ability
+        - Free for members; pay-as-you-go price not listed
+      - - Pay As You Play, coach-facilitated
+        - Glasgow Club Scotstoun
+        - Three hours on Wednesdays, matched with players of a similar standard; beginners welcome
+        - £6, or £4 concession
+      - - Drop-in open gym
+        - South San Francisco High School, California
+        - Three hours on Mondays and Wednesdays; bring your own equipment
+        - $4 for adults
+      - - Adult I (Beginner) course
+        - Seattle Badminton Club, Washington
+        - 12 classes of 1.5 hours, Tuesdays
+        - $636 non-members, $509 members
+    after: At Surrey Sports Park's No Strings sessions you bring your own racket and the shuttles are provided. A turn-up-and-play No Strings session at Gosling Sports Park, Welwyn Garden City, says it
+      is not suited to beginners.
+  faq:
+  - q: Can I play badminton without a partner?
+    a: Yes, at most social sessions. At Surrey Sports Park's No Strings sessions a host puts players into doubles, and Glasgow's Pay As You Play matches you with players of a similar standard.
+  - q: Do I need my own badminton racket?
+    a: Often. Edinburgh Leisure asks beginners to bring one if they can, and Surrey Sports Park asks No Strings players to bring a racket, with shuttles provided.
+  - q: What is No Strings Badminton?
+    a: A national pay-and-play programme for adults in England, run at leisure centres. Some sessions suit beginners and some are for experienced players, so check the listing.
+  - q: How much does badminton cost to play?
+    a: Glasgow Club's Pay As You Play is listed at £6 a session, and a drop-in open gym in South San Francisco at $4. A 12-week beginner course at Seattle Badminton Club is listed at $636 for non-members.
+  sources:
+  - label: Badminton Scotland, Adult play
+    url: https://badmintonscotland.org.uk/play/adult/
+    checked: '2026-11-09'
+  - label: Badminton Wales, Get involved
+    url: https://badminton.wales/?p=746
+    checked: '2026-11-09'
+  - label: Everybody, What is No Strings Badminton? (Knutsford Leisure Centre)
+    url: https://everybody.org.uk/?p=24672
+    checked: '2026-11-09'
+  - label: Surrey Sports Park, Adult badminton
+    url: https://surreysportspark.co.uk/badminton/adults
+    checked: '2026-11-09'
+  - label: One Welwyn Hatfield, Badminton England Adult No Strings Turn Up and Play session
+    url: https://one.welhat.gov.uk/directory-record/293/badminton-england-adult-no-strings-turn-up-and-play-session
+    checked: '2026-11-09'
+  - label: Edinburgh Leisure, Adult and junior badminton coaching and courses
+    url: https://edinburghleisure.co.uk/activities/coaching-courses/badminton
+    checked: '2026-11-09'
+  - label: Glasgow Life, Adult Pay As You Play Badminton
+    url: https://glasgowlife.sportsuite.co.uk/activity-finder/activity/adult-pay-as-you-play-badminton
+    checked: '2026-11-09'
+  - label: Glasgow Life, Adult badminton
+    url: https://www.glasgowlife.org.uk/sport/adult-activities/adult-badminton
+    checked: '2026-11-09'
+  - label: San Mateo County Health, Adult and junior badminton program (South San Francisco)
+    url: https://www.smchealth.org/open-gymdrop/adult-junior-badminton-program
+    checked: '2026-11-09'
+  - label: Seattle Badminton Club, 2026 Session I class and fee schedule
+    url: https://seattlebadminton.com/sbc/wp-content/uploads/2025/11/2026-Session-I-Class-and-Fee-Schedule.pdf
+    checked: '2026-11-09'
+  - label: USA Badminton, Home page and member clubs
+    url: https://usabadminton.org/
+    checked: '2026-11-09'
+  kit:
+  - url: https://www.amazon.co.uk/s?k=badminton+racket
+    why: several sessions ask you to bring your own; check the weight and grip size suit you
+    name: Badminton racket
+  - url: https://www.amazon.co.uk/s?k=nylon+badminton+shuttlecocks
+    why: for practice outside sessions; check the speed rating suits indoor play
+    name: Nylon shuttlecocks
+  - url: https://www.amazon.co.uk/s?k=badminton+indoor+court+shoes
+    why: sports-hall floors call for non-marking soles; check the listing says so
+    name: Indoor court shoes
+  related:
+  - play-table-tennis
+  - play-pickleball
+  - play-tennis
+  - play-padel
+- id: learn-modern-jive
+  title: Learn modern jive
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: Modern jive is a partner dance built for chart music, with simplified footwork, so beginners can dance a few moves the same evening. Most clubs teach a class, then let everyone dance, and you do
+    not need to bring a partner.
+  start:
+  - Find a Ceroc or LeRoc venue near you and turn up early on a beginners' night; neither asks you to book a single class.
+  - Wear comfortable clothes and shoes that are not too grippy, as LeRoc advises against rubber-soled trainers.
+  - Stay for the freestyle after the class and the beginners' practice session, where moves are recapped.
+  links:
+  - label: 'Ceroc: what is Ceroc'
+    url: https://www.ceroc.com/37/89/what-is-ceroc
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Ceroc Bath: Batheaston New Village Hall (example evening and prices)'
+    url: https://www.ceroc.com/24/131/ceroc-bath-batheaston-new-village-hall?id=1065
+    region: uk
+    checked: '2026-11-09'
+  - label: 'LeRoc: FAQs'
+    url: https://www.leroc.com/faqs
+    region: uk
+    checked: '2026-11-09'
+  seo_title: 'Modern jive for beginners: Ceroc and LeRoc classes'
+  description: What modern jive is, how a Ceroc or LeRoc beginners' night works, what it costs and how it differs from swing and ballroom jive.
+  detail:
+  - h: How it differs from swing and ballroom
+    p:
+    - LeRoc calls it a modern, accessible version of jive, not the classic 1950s style, mixing jive, Latin and ballroom with simpler footwork. Ceroc DJs play everything from 1960s Motown to current chart
+      hits.
+  - h: What a beginners' night costs
+    table:
+      head:
+      - Club
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Ceroc Bath, Batheaston New Village Hall
+        - Thursdays; beginner lesson 7.45pm, freestyle, beginners' practice, then freestyle for all until 10.45pm
+        - £11 a class with a £1 membership card; "6for3" beginners' package £33 on your first night
+      - - LeRoc (normal admission)
+        - Class, then a freestyle session; partners rotate during class
+        - £8, plus a one-off £2 membership card on your first visit
+    after: Ceroc's beginner welcome evenings add a recap practice class after the first lesson. We could not find a current modern jive class in the US on a page we could open; swing dancing is the nearest
+      thing there.
+  faq:
+  - q: Do I need a partner for Ceroc?
+    a: No. Ceroc says you can come alone, with a partner or in a group, and LeRoc rotates partners during classes so you dance with experienced dancers.
+  - q: What is the difference between modern jive and jive?
+    a: 'LeRoc describes modern jive as a modern, accessible version of jive, not the classic 1950s style: it mixes jive, Latin and ballroom with simpler footwork, and Ceroc DJs play anything from 1960s
+      Motown to current chart hits.'
+  - q: What do you wear to a Ceroc class?
+    a: Ceroc recommends comfy shoes. LeRoc suggests loose, comfortable clothes and shoes without very grippy soles.
+  - q: How much is a Ceroc class?
+    a: Prices vary by venue. Ceroc Bath lists £11 a class with a £1 membership card, and LeRoc lists £8 admission plus a £2 card on a first visit.
+  sources:
+  - label: Ceroc, What is Ceroc
+    url: https://www.ceroc.com/37/89/what-is-ceroc
+    checked: '2026-11-09'
+  - label: Ceroc, Beginner welcome evenings
+    url: https://www.ceroc.com/127/13749/beginner-welcome-evenings
+    checked: '2026-11-09'
+  - label: Ceroc, Learn to dance at Ceroc Bath, Batheaston New Village Hall
+    url: https://www.ceroc.com/24/131/ceroc-bath-batheaston-new-village-hall?id=1065
+    checked: '2026-11-09'
+  - label: LeRoc, FAQs
+    url: https://www.leroc.com/faqs
+    checked: '2026-11-09'
+  kit:
+  - url: https://www.amazon.co.uk/s?k=suede+sole+dance+shoes
+    why: LeRoc advises against very grippy soles, such as some trainers; check the heel height suits you
+    name: Suede-sole dance shoes
+  - url: https://www.amazon.co.uk/s?k=dance+sneakers+split+sole
+    why: a trainer-style alternative; check the sole is not the very grippy rubber LeRoc advises against
+    name: Dance sneakers
+  related:
+  - learn-swing-dancing
+  - take-a-ballroom-class
+  - learn-salsa
+  - try-line-dancing
+- id: learn-karate
+  title: Start karate
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Karate gives you a clear ladder to climb, from a white belt through the coloured kyu grades, each tested on basics, set sequences called kata and partner drills. Some clubs let you try a session
+    free before you buy a suit or a licence.
+  start:
+  - Find a club through your national body or association (Karate Scotland lists accredited clubs; USA Karate has a club finder) and ask about beginners' sessions.
+  - Go and watch a class, or book a free trial; wear loose sports clothing, as no special kit is needed at first.
+  - Before you carry on past a few sessions, ask what the licence covers and when you can first grade.
+  links:
+  - label: 'Karate Scotland: accredited clubs'
+    url: https://karatescotland.com/karate-finder/accredited-clubs?start=60
+    region: uk
+    checked: '2026-11-09'
+  - label: 'English Karate Federation: affiliated associations and clubs'
+    url: https://www.englishkaratefederation.com/associations-and-clubs
+    region: uk
+    checked: '2026-11-09'
+  - label: 'USA Karate: membership and Find a Club'
+    url: https://www.usankf.org/membership
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Karate for adult beginners: first class, belts and cost'
+  description: What a first karate class is like, how gradings and coloured belts work, and what beginners pay at real clubs in the UK and the US.
+  detail:
+  - h: Gradings and belts
+    p:
+    - Karate is organised by style and association, so the belt order varies. In the coloured-belt syllabus of SHOTO, a Shotokan group in London, you start on a white belt and work through ten kyu grades,
+      from red (10th kyu) to brown-red (1st kyu), before the black-belt dan grades.
+    - Each grading tests three things. Kihon is basics, such as strikes, blocks, kicks and stances. Kata are set sequences, starting with Taikyoku and moving on to the Heian series. Kumite is partner work,
+      which begins as five-step sparring.
+    - Gradings are not automatic. South Notts Karate, a Karate Union of Great Britain (KUGB) club, holds coloured-belt gradings four times a year and says KUGB rules require at least three months between
+      gradings and training at least twice a week on average.
+  - h: What beginners pay
+    table:
+      head:
+      - Club
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - South Notts Karate, Nottingham (KUGB)
+        - Free trial session; club membership free for beginners; KUGB licence needed before your fourth class
+        - Trial free; licence price not listed
+      - - Chilwell Karate Dojo, Nottingham
+        - Beginners join the lower-grades class; unlimited training or pay as you go; no contracts
+        - £45 a month or £8 a session, plus £25 a year licence and insurance
+      - - Valley Shotokan, California (Shotokan Karate of America)
+        - Watch a Wednesday class first; initiation fee covers three months' dues and the first year of SKA membership
+        - $300 initiation, then $75 a month; SKA $100 a year after the first year
+    after: You can train in ordinary sports clothes at first. Valley Shotokan asks beginners to wear a T-shirt and sweatpants for the first month, then buy a gi through the dojo for $25 to $40.
+  faq:
+  - q: What do you wear to your first karate class?
+    a: Loose sports clothing. South Notts Karate says you need no special equipment for a trial, and Valley Shotokan has beginners train in a T-shirt and sweatpants for their first month before buying a
+      white karate suit (a gi).
+  - q: How much do karate lessons cost?
+    a: It varies by club. Chilwell Karate Dojo in Nottingham lists £45 a month or £8 a session plus a £25 yearly licence; Valley Shotokan in California lists a $300 initiation fee and then $75 a month.
+  - q: How often are karate gradings?
+    a: At KUGB clubs there must be at least three months between gradings. South Notts Karate holds them four times a year, usually in March, June, September and December.
+  - q: What are the karate belt colours in order?
+    a: It depends on the style and association. In SHOTO's Shotokan syllabus the order runs white, red, orange, yellow, green, blue, purple, purple-white, brown, brown-white and brown-red, then black.
+  sources:
+  - label: Karate Scotland, Accredited clubs
+    url: https://karatescotland.com/karate-finder/accredited-clubs?start=60
+    checked: '2026-11-09'
+  - label: English Karate Federation, Associations and clubs
+    url: https://www.englishkaratefederation.com/associations-and-clubs
+    checked: '2026-11-09'
+  - label: English Karate Federation, Join us
+    url: https://www.englishkaratefederation.com/join-us
+    checked: '2026-11-09'
+  - label: USA Karate, Membership
+    url: https://www.usankf.org/membership
+    checked: '2026-11-09'
+  - label: USA Karate, About us
+    url: https://www.usankf.org/about-us
+    checked: '2026-11-09'
+  - label: South Notts Karate, How do I start?
+    url: https://karatenottingham.org/information-for-beginners/
+    checked: '2026-11-09'
+  - label: South Notts Karate, Coloured belt gradings
+    url: https://karatenottingham.org/grading-dates
+    checked: '2026-11-09'
+  - label: SHOTO, Syllabus – coloured belts / kyu grades
+    url: https://shoto.uk/information/syllabus-kyu-grades/
+    checked: '2026-11-09'
+  - label: Chilwell Karate Dojo, Training times
+    url: https://chilwell-karate.co.uk/training-times
+    checked: '2026-11-09'
+  - label: Valley Shotokan, Classes and fees
+    url: https://valley.ska.org/about-practice/classes-and-fees/
+    checked: '2026-11-09'
+  kit:
+  - name: Plain white karate suit (gi)
+    why: what most clubs expect once you have finished your trial sessions; ask your club which weight and whether it sells its own
+    url: https://www.amazon.co.uk/s?k=white+karate+gi+adult
+  - name: Sports holdall
+    why: carries your suit, a towel and a water bottle to class
+    url: https://www.amazon.co.uk/s?k=sports+holdall+bag
+  related:
+  - learn-judo
+  - learn-tai-chi-form
+  - try-archery
+  - walking-football
+- id: play-petanque
+  title: Play pétanque
+  category: move
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Pétanque is the French game of throwing hollow steel boules as close as you can to a small wooden jack, and it is more tactical than it looks. Clubs in England and the US lend boules to newcomers,
+    and some charge only a few pounds a year to join.
+  start:
+  - Use Pétanque England's club finder, or in the US the Federation of Petanque USA's regions and clubs, to find a group that plays near you.
+  - Turn up at a club session; clubs such as Croydon have leisure boules you can borrow while you learn.
+  - Once you are hooked, decide whether you want to play only at your club or enter licensed competitions, which need approved boules and a playing licence.
+  links:
+  - label: 'Pétanque England: join a club (club finder)'
+    url: https://www.petanque-england.uk/join-a-club
+    region: uk
+    checked: '2026-11-09'
+  - label: Croydon Petanque Club, Ashburton Park (Friends of Ashburton Park)
+    url: https://thefoap.org.uk/croydon-petanque-club/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Federation of Petanque USA: how the FPUSA is structured (regions and clubs)'
+    url: https://usapetanque.org/structure.html
+    region: us
+    checked: '2026-11-09'
+  - label: Les Boulesfrogs Pétanque Club of Virginia, Richmond
+    url: https://usapetanque.org/les-boulefrogs-petanque-club-of-viriginia.html
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'How to start playing pétanque: clubs, boules and cost'
+  description: How to find a pétanque club, borrow boules for your first game, what membership costs, and which boules you need for competition play.
+  detail:
+  - h: Ways to start playing
+    table:
+      head:
+      - Way in
+      - What it involves
+      - Cost (as last listed)
+      rows:
+      - - Club taster, Croydon Petanque Club (Ashburton Park, London)
+        - Play up to three times before joining; leisure boules to borrow; coaching from experienced members if you want it
+        - Free to try; then £12 a year (adult)
+      - - Club play, Heckmondwike Petanque Club (Kirklees, West Yorkshire)
+        - Saturday mornings and Wednesday afternoons, year round, weather permitting; boules to borrow
+        - £20 a year
+      - - Pétanque England Club Player membership
+        - For people who mainly play at their local club; new members only
+        - £10 a year
+      - - Pétanque England Competitor membership
+        - Playing licence for regional and national competitions and leagues
+        - £25 a year, plus a regional fee
+      - - Les Boulesfrogs, Richmond, Virginia (FPUSA club)
+        - Sunday and Thursday games at Chimborazo Playground; loaner boules and teaching for anyone who wants to try
+        - Not listed
+    after: Pétanque England says paid-up members of affiliated clubs have public liability cover for club-based pétanque from 1 April 2025.
+  - h: Boules for leisure and for competition
+    p:
+    - The game is played in singles and doubles with three boules each, or in triples with two each, usually on a gravel terrain at least 12m (about 39ft) long, says Pétanque England. Each set of three
+      boules carries identical grooves, called striations, so you can tell yours apart.
+    - Clubs such as Croydon keep leisure boules for newcomers to try. Licensed competition is stricter. Under the international federation's rules, boules must be hollow and metal, weigh 650g to 800g (about
+      1.4lb to 1.8lb) and measure 70.5mm to 80mm (about 3in) across.
+    - For FPUSA tournaments, boules must be on the international federation's approved list, carry the maker's trademark and have their weight engraved on them, and the jack must measure 29mm to 31mm (about
+      1¼in).
+  faq:
+  - q: How many boules do you need to play pétanque?
+    a: Three each in singles and doubles, two each in triples, according to Pétanque England.
+  - q: Can you use cheap boules in a pétanque competition?
+    a: Not in licensed play. Competition boules must meet the international federation's weight and size rules, and FPUSA tournaments require boules on its approved list with the maker's mark and weight
+      engraved.
+  - q: How much does it cost to join a pétanque club?
+    a: Often very little. Croydon Petanque Club lists £12 a year for adults and Heckmondwike Petanque Club £20 a year; Pétanque England's Club Player membership is £10 a year.
+  - q: Do I need my own boules to start pétanque?
+    a: No. Croydon Petanque Club and Heckmondwike Petanque Club in England and Les Boulesfrogs in Virginia all lend boules to people trying the game.
+  sources:
+  - label: Pétanque England, Join a club
+    url: https://www.petanque-england.uk/join-a-club
+    checked: '2026-11-09'
+  - label: Pétanque England, Membership
+    url: https://www.petanque-england.uk/membership
+    checked: '2026-11-09'
+  - label: Pétanque England, How to play pétanque
+    url: https://www.petanque-england.uk/how-play-petanque
+    checked: '2026-11-09'
+  - label: Friends of Ashburton Park, Croydon Petanque Club
+    url: https://thefoap.org.uk/croydon-petanque-club/
+    checked: '2026-11-09'
+  - label: Kirklees Council community directory, Heckmondwike Petanque Club
+    url: https://communitydirectory.kirklees.gov.uk/communityDirectory/organisationDetails.aspx?orgid=6785
+    checked: '2026-11-09'
+  - label: FIPJP, Rules for the approval of boules
+    url: https://fipjp.org/images/pdf/2023/rules_agrement_boules_E.pdf
+    checked: '2026-11-09'
+  - label: Federation of Petanque USA, Equipment
+    url: https://www.usapetanque.org/equipment.html
+    checked: '2026-11-09'
+  - label: Federation of Petanque USA, How the FPUSA is structured
+    url: https://usapetanque.org/structure.html
+    checked: '2026-11-09'
+  - label: Federation of Petanque USA, Les Boulesfrogs Pétanque Club of Virginia
+    url: https://usapetanque.org/les-boulefrogs-petanque-club-of-viriginia.html
+    checked: '2026-11-09'
+  kit:
+  - name: Leisure pétanque set
+    why: for casual games in a park or garden; not for licensed competition
+    url: https://www.amazon.co.uk/s?k=petanque+boules+set
+  - name: Competition boules
+    why: only if you will play licensed events; check the set is on the international federation's approved list and marked with its weight
+    url: https://www.amazon.co.uk/s?k=competition+petanque+boules
+  - name: Boules measuring tape
+    why: settles which boule is closer to the jack
+    url: https://www.amazon.co.uk/s?k=petanque+measuring+tape
+  related:
+  - lawn-bowls
+  - play-croquet
+  - try-archery
+  - walking-football
+- id: learn-to-mountain-bike
+  title: Learn to mountain bike
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Forest trail centres grade their routes by colour, so you can start on wide green trails and move up as your skills grow. A short skills session teaches braking, body position and cornering faster
+    than working it out alone.
+  start:
+  - Read the trail grades for your nearest forest trail centre and pick a green or easy blue route.
+  - Hire a bike at the centre before you buy one, and wear a cycling helmet.
+  - Book a beginners' skills session, and ride with a companion rather than alone.
+  links:
+  - label: 'Forestry England: cycling and mountain bike trail grades'
+    url: https://www.forestryengland.uk/article/mountain-bike-trail-grades
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Cycling UK: how to get into mountain biking and off-road cycling'
+    url: https://www.cyclinguk.org/article/how-get-mountain-biking-and-road-cycling
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Ridelines: mountain bike skills courses at Glentress, Tweed Valley'
+    url: https://ridelines.co.uk/product-category/courses/
+    region: uk
+    checked: '2026-11-09'
+  - label: 'Bogus Basin, Idaho: mountain bike clinics'
+    url: https://bogusbasin.org/lessons/mountain-bike-clinics/
+    region: us
+    checked: '2026-11-09'
+  seo_title: 'Mountain biking for beginners: trail grades and lessons'
+  description: How mountain bike trail grades work, where to hire a bike and take a beginners' skills course in the UK and US, and what a lesson costs.
+  detail:
+  - h: Reading the trail grades
+    p:
+    - Forestry England grades its singletrack by colour. Green (easy) is mostly flat and wide and suits beginners on most bikes. Blue (moderate) suits riders with basic off-road skills and has some short
+      steep sections, small roots and rocks. Red (difficult) brings technical singletrack with berms, large rocks, drop-offs and water crossings. Black (severe) is for experts, and orange marks bike parks
+      with mandatory jumps.
+    - Forestry England is introducing new symbols (a green circle, blue square, red triangle and black kite, plus a double-black grade for extreme trails) and says to check your local forest's cycling pages
+      for current grades. US resorts use a similar colour system; at Bogus Basin in Idaho the beginners' clinic stays on the easiest green trails.
+    - Cycling UK adds that in England and Wales you may ride only on bridleways and byways, not footpaths. Trail centres avoid that question altogether.
+  - h: Where beginners learn
+    table:
+      head:
+      - Where
+      - Course
+      - Cost (as last listed)
+      rows:
+      - - Ridelines, Glentress (Tweed Valley, Scottish Borders)
+        - 'Get Started: essential skills for new or lapsed mountain bikers'
+        - £100 (listed as reduced from £110)
+      - - BikePark Wales
+        - Improver course on the blue trails, 3 to 3.5 hours, uplift pass included; for riders already happy on blue trails
+        - Not listed; ask the head coach
+      - - Bogus Basin, Boise, Idaho
+        - Fundamentals of MTB Riding, three hours on the easiest green trails, five students per instructor
+        - $89, plus bike rental and lift access
+    after: Bogus Basin requires helmets and closed-toed shoes, and its rental packages include a helmet and pads. Cycling UK suggests renting a bike at a trail centre so you can try the sport on a good
+      bike before spending a lot.
+  faq:
+  - q: What colour mountain bike trail should a beginner ride?
+    a: Green. Forestry England says green trails suit beginners and novices, with blue the next step for riders with basic off-road skills.
+  - q: Do I need my own mountain bike to start?
+    a: No. Cycling UK says trail centres often have hire fleets, and renting lets you try the sport on a good bike before buying.
+  - q: How much is a beginner mountain bike lesson?
+    a: Ridelines at Glentress lists its beginners' course at £100; Bogus Basin in Idaho lists $89 for a three-hour clinic, with bike rental extra.
+  - q: Can you mountain bike on footpaths in England?
+    a: No. Cycling UK says that in England and Wales cyclists are limited to bridleways and byways and are not allowed on footpaths.
+  sources:
+  - label: Forestry England, Trail grades – cycling and mountain biking
+    url: https://www.forestryengland.uk/article/mountain-bike-trail-grades
+    checked: '2026-11-09'
+  - label: Forestry England, Changes to the cycle trail grading system
+    url: https://forestryengland.uk/node/35761
+    checked: '2026-11-09'
+  - label: Cycling UK, How to get into mountain biking and off-road cycling
+    url: https://www.cyclinguk.org/article/how-get-mountain-biking-and-road-cycling
+    checked: '2026-11-09'
+  - label: Ridelines Mountain Bike Tuition, Courses
+    url: https://ridelines.co.uk/product-category/courses/
+    checked: '2026-11-09'
+  - label: BikePark Wales, BikePark Wales Improver
+    url: https://www.bikeparkwales.com/bikepark-wales-improver
+    checked: '2026-11-09'
+  - label: Bogus Basin, Mountain bike clinics
+    url: https://bogusbasin.org/lessons/mountain-bike-clinics/
+    checked: '2026-11-09'
+  safety: Wear a helmet, ride trails graded for your ability and ride with a companion, as Cycling UK advises, so someone can help after a fall or breakdown.
+  inspire:
+  - kind: read
+    person: Pat Horscroft, Sheffield
+    line: Took up mountain biking after decades of rock climbing, rides trails across the UK and abroad and has raced the Steel City Downhill for five years.
+    title: 'Interview: Pat Horscroft – after you turn 60 it''s all downhill'
+    outlet: Singletrack World
+    url: https://singletrackworld.com/2018/04/interview-pat-horscroft-after-you-turn-60-its-all-downhill
+    checked: '2026-11-09'
+  kit:
+  - name: Mountain bike helmet
+    why: required on many coached sessions; check it fits snugly and meets a recognised safety standard
+    url: https://www.amazon.co.uk/s?k=mountain+bike+helmet
+  - name: Full-finger cycling gloves
+    why: grip on the bars and some protection for your hands if you fall
+    url: https://www.amazon.co.uk/s?k=mtb+gloves+full+finger
+  - name: Puncture repair kit and multi-tool
+    why: lets you fix a flat or a loose bolt on the trail
+    url: https://www.amazon.co.uk/s?k=bike+puncture+repair+kit+multi+tool
+  related:
+  - cycle-confidence-lesson
+  - join-a-guided-bike-ride
+  - ride-a-rail-trail
+  - long-distance-cycle-route

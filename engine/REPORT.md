@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-09)
 
-60 sources, 82 statements, 12 event profiles. Core 51, supported 31, thin 0, contested 0.
+63 sources, 84 statements, 12 event profiles. Core 54, supported 30, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -19,6 +19,7 @@
 - Centers for Disease Control and Prevention (CDC), *Older adult activity, an overview (last reviewed 4 December 2025)* (2025). Opened 2026-11-03.
 - Centers for Disease Control and Prevention (CDC Yellow Book 2026; Hackett and Shlim), *High-altitude travel and altitude illness* (2025). Opened 2026-11-04.
 - Centers for Disease Control and Prevention (CDC Yellow Book 2026; Cabada and Bégué), *Peru (destination chapter)* (2025). Opened 2026-11-04.
+- NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Opened 2026-11-09.
 
 **4. Peer-reviewed review or large study**
 - Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Opened 2026-10-27.
@@ -62,6 +63,8 @@
 - Swim England (Open Water Swimming Hub), *Swim England issues safety advice for open water swimming in hot weather (19 July 2022)* (2022). Opened 2026-11-08.
 - Royal Life Saving Society UK (RLSS UK), *Top Recommendations for Safer Open Water Swimming (published 20 June 2024, updated 26 November 2025)* (2025). Opened 2026-11-09.
 - RNLI (Royal National Lifeboat Institution), *Rip currents (undated page; year is the year opened)* (2026). Opened 2026-11-09.
+- RNLI (Royal National Lifeboat Institution), Lifeboats news release, *RNLI issue tidal safety warning in Wales ahead of half term weekend (19 February 2026)* (2026). Opened 2026-11-09.
+- Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Opened 2026-11-09.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -90,6 +93,7 @@
 | core | 12 | intensity | Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. | ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km |
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
 | core | 11 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. | lauersen-2014, cmo-2019, bmc-hill-fit |
+| core | 11 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water, nhs-hypothermia |
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
 | core | 9 | recovery | Plan rest days into every week, and take an easier day when your legs are heavy. | nhs-c25k, higdon-novice1, bmc-long-distance |
 | core | 9 | feet | Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. | nhs-blisters, ea-pavey-marathon, bmc-long-distance |
@@ -99,6 +103,7 @@
 | core | 9 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water, barwood-2024, oss-cold-water |
 | core | 9 | on the day | Your body temperature can keep falling for a while after you get out of cold water (afterdrop), so dry off and get into warm, windproof clothes and a hat as soon as you are out, and move about to make heat. After a short swim a warm shower is enough; avoid very hot water, and do not hold a hot water bottle against numb skin, which burns easily. | oss-cold-water, rlss-safer-open-water, knechtle-2020 |
 | core | 8 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety |
+| core | 8 | warning signs | In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). | nhs-hypothermia, ms-hypothermia |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
 | core | 8 | warning signs | In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. | rnli-cold-water-2025, swimeng-stay-safe, rnli-float, swimeng-hot-weather, oss-cold-water |
@@ -115,8 +120,9 @@
 | core | 6 | fuel and drink | Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. | ea-pavey-marathon, issn-ultra-2019 |
 | core | 6 | kit | In the later weeks, train with the pack and the kit you will carry on the day so nothing is new. | bmc-hill-fit, ydnpa-three-peaks, wanderlust-trek-prep |
 | core | 6 | on the day | In high mountains thunderstorms usually build in the afternoon. Check the forecast before you go and stay away if a high chance of thunderstorms is forecast; start early and plan to be down by noon; keep off hilltops and ridge tops in a storm, and at the first sign of one get below the treeline. Carry rain gear and warm layers. | nws-lightning-outdoors, usfs-elbert |
+| core | 6 | warning signs | In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. | mrew-safety, ms-hypothermia |
+| core | 6 | on the day | Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard. | rnli-tidal-wales-2026, swcpa-safety |
 | core | 6 | why | Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. | bosquet-2007, ea-pavey-marathon |
-| core | 6 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water |
 | core | 6 | warning signs | If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. | rnli-cold-water-2025, swimeng-stay-safe |
 | core | 6 | key session | Practise floating on your back at a supervised pool or venue so you can do it without thinking. Tilt your head back with your ears under the water, spread your arms and legs, and keep your breathing calm; your legs may sink, and that is fine. If cold water takes your breath away, float for about a minute until your breathing is under control, then call for help or swim to safety. | rnli-float, swimeng-hot-weather |
 | core | 6 | key session | Build one long ride a week at an easy pace, growing gradually towards the distance of the event; Cycling UK's plan for a 100 km ride takes the long ride from 15 to 25 km up to 90 to 100 km over nine weeks. | cyclinguk-100km, bc-sofa-50km |
@@ -146,7 +152,6 @@
 | supported | 3 | on the day | On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. | bmc-long-distance, wanderlust-trek-prep |
 | supported | 3 | on the day | In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them rather than treating the walk as a race. | tanabe-kumano-tips |
 | supported | 3 | key session | Build your training walks from a few miles up to a full day's distance, carrying the pack you will use. | wanderlust-trek-prep, bmc-hill-fit |
-| supported | 3 | warning signs | In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. | mrew-safety |
 | supported | 3 | before you start | The Coast to Coast is a demanding trail, hardest at the western end through the Lake District, where waymarks usually stop above the fell wall. Some high sections may be difficult in winter or bad weather; know the low-level options and use them when the weather is poor. | govuk-c2c |
 | supported | 3 | on the day | On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard. | swcpa-safety |
 | supported | 3 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit |
@@ -166,11 +171,11 @@
 - altitude: 5 usable statements of its own
 - cycling: 5 usable statements of its own
 - endurance: 16 usable statements of its own
-- hill: 10 usable statements of its own
+- hill: 11 usable statements of its own
 - multiday: 9 usable statements of its own
 - running: 8 usable statements of its own
 - swimming: 18 usable statements of its own
-- walking: 8 usable statements of its own
+- walking: 9 usable statements of its own
 
 ## Disagreements and how they were resolved
 

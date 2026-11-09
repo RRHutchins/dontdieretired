@@ -158,9 +158,9 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - Stop if something does not feel right, and get it checked rather than training through it. [4, 23]
 - Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. [9, 27, 28, 31]
 - In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. [27, 28, 31, 32, 33]
-- Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. [9, 28]
+- Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. [9, 28, 34]
 - If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. [27, 28]
-- In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. [34]
+- In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. [35]
 
 ## Where this comes from
 
@@ -199,4 +199,5 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 31. Swim England (Open Water Swimming Hub), *Swim England issues safety advice for open water swimming in hot weather (19 July 2022)* (2022). Tier 3. https://www.swimming.org/openwater/open-water-safety/ (opened 2026-11-08)
 32. RNLI (Royal National Lifeboat Institution), *Float to Live (undated page; year is the year opened)* (2026). Tier 3. https://rnli.org/float (opened 2026-11-08)
 33. Outdoor Swimming Society (Kate Rew, author of The Outdoor Swimmers' Handbook), *Risks of Cold Water (published 3 February 2017, updated 30 May 2026)* (2026). Tier 2. https://www.outdoorswimmingsociety.com/risks-cold-water/ (opened 2026-11-08)
-34. British Triathlon (Wales), *Beginners guide to triathlon* (2026). Tier 3. https://www.britishtriathlon.org/wales/news/beginners-guide-to-triathlon---how_12969 (opened 2026-11-03)
+34. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
+35. British Triathlon (Wales), *Beginners guide to triathlon* (2026). Tier 3. https://www.britishtriathlon.org/wales/news/beginners-guide-to-triathlon---how_12969 (opened 2026-11-03)

@@ -291,7 +291,13 @@ guidance:
     applies: [hill]
     use: safety
     text: In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999.
-    for: [mrew-safety]
+    for: [mrew-safety, ms-hypothermia]
+  - id: hill-hypothermia
+    topic: warning signs
+    applies: [hill]
+    use: safety
+    text: In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills).
+    for: [nhs-hypothermia, ms-hypothermia]
   - id: c2c-low-level
     topic: before you start
     applies: [multiday]
@@ -306,6 +312,13 @@ guidance:
     use: safety
     text: On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard.
     for: [swcpa-safety]
+  - id: coast-tide-cutoff
+    topic: on the day
+    applies: [walking]
+    events: [coast-to-coast]
+    use: safety
+    text: Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard.
+    for: [rnli-tidal-wales-2026, swcpa-safety]
 
   # ---------- why each part of a plan is there (use: why; `role` ties it to a session; `short` is the one-line weekly version) ----------
   - id: why-long
@@ -428,7 +441,7 @@ guidance:
     applies: [swimming]
     use: safety
     text: Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold.
-    for: [swimeng-stay-safe, usms-open-water]
+    for: [swimeng-stay-safe, usms-open-water, nhs-hypothermia]
   - id: ow-emergency
     topic: warning signs
     applies: [swimming]
