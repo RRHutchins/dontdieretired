@@ -8,6 +8,9 @@ segments: [mover, changer]
 level: advanced
 subject_age: 57
 art: sea
+photo_file: "File:Starr 070515-7097 aerial photograph of Lanai.jpg"
+photo_caption: "Shipwreck Beach on Lanai from the air, 2007. Ted Lomicka finished his swim at Shipwreck Beach."
+photo_alt: "A hazy aerial view of a long, low shoreline on Lanai, with a reef line of white surf and a ship lying offshore in blue water."
 hook: "Lanai to Maui to Molokai and back to Lanai, non-stop, through the night. Ted Lomicka swam it in 23 hours 47 minutes."
 lesson: "The longest swims are built one channel at a time, and finished with a crew who remind you why you started."
 standfirst: "Ted Lomicka, 57, a healthcare executive from Franklin, Tennessee, swam the three channels between Lanai, Maui and Molokai without stopping in February. Only one person, Becca Mann in 2019, had finished the loop before him. He came to the sea through triathlon."
