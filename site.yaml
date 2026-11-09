@@ -47,6 +47,12 @@ affiliates:
   getyourguide_partner_id: "NQBPMKU"                # GetYourGuide Partner id; appended to listings marked aff: getyourguide
   disclosure: "Some links on this page are affiliate links. If you buy through them we may earn a small commission at no extra cost to you. As an Amazon Associate we earn from qualifying purchases. They are options to start you off, not things we have tested, so check they suit you before you buy."
 
+accounts:
+  # Planner Plus accounts (RUNBOOK §6t): the Worker in worker/, sign-in by emailed link. "" = accounts closed: /account/ says
+  # they are not open yet and /privacy/ says nothing about them. Set to "https://api.dontdieretired.com" only after the Worker
+  # is deployed, the sign-in email works, and Robin has tried it; /privacy/ then gains its accounts section in the same build.
+  api: ""
+
 newsletter:
   provider: "buttondown"                     # buttondown | beehiiv | mailerlite | kit
   form_action: "https://buttondown.com/api/emails/embed-subscribe/dontdieretired"

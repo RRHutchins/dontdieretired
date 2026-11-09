@@ -14,3 +14,8 @@ __pycache__/
 
 # written by verify_videos.py in the deploy workflow
 .videos_check.json
+
+# accounts Worker: local secrets and state, never commit
+worker/.dev.vars
+worker/.wrangler/
+worker/node_modules/

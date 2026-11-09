@@ -1,0 +1,21 @@
+# Don't Die Retired accounts Worker (RUNBOOK §6t). Deployed by .github/workflows/worker.yml once Robin has added
+# the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets and pasted the D1 database id below.
+# Secrets are never written here: SALT and RESEND_API_KEY are set with `wrangler secret put`.
+name = "ddr-accounts"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+workers_dev = false
+routes = [{ pattern = "api.dontdieretired.com", custom_domain = true }]
+
+[triggers]
+crons = ["17 * * * *"]   # hourly clean-up of spent links, ended sessions and old throttle counts
+
+[vars]
+SITE_ORIGIN = "https://dontdieretired.com"
+MAIL_FROM = "Don't Die Retired <signin@dontdieretired.com>"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ddr-accounts"
+database_id = "00000000-0000-0000-0000-000000000000"   # Robin: replace with the id from `wrangler d1 create ddr-accounts`
+migrations_dir = "migrations"

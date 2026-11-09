@@ -24,6 +24,7 @@ import argparse
 import datetime as dt
 import html
 import json
+import os
 import re
 import shutil
 import textwrap
@@ -585,6 +586,10 @@ def build(make_social=True):
     for f in sorted(STATIC.glob("*.css")) + sorted(STATIC.glob("*.js")):
         _h.update(f.read_bytes())
     env.globals.update(asset_v=_h.hexdigest()[:8])
+    # Planner Plus accounts (RUNBOOK §6t): the Worker's address; "" keeps accounts closed. DDR_ACCOUNTS_API is for a local test build only.
+    _acct = (os.environ.get("DDR_ACCOUNTS_API") or str((cfg.get("accounts") or {}).get("api") or "")).rstrip("/")
+    assert _acct == "" or re.match(r"^(https://[a-z0-9.-]+|http://(localhost|127\.0\.0\.1):\d+)$", _acct), f"accounts.api must be an https origin: {_acct!r}"
+    env.globals.update(accounts_api=_acct)
     env.filters["metadesc"] = metadesc
     env.filters["seotitle"] = lambda t: seo_title(t, cfg["site"]["name"])
     env.globals.update(same_as=[v for k, v in cfg.get("social", {}).items() if isinstance(v, str) and v.startswith("http")])
@@ -810,6 +815,7 @@ def build(make_social=True):
         area_n = {}
         for c in chs:
             for pl in c.get("places") or []: area_n[pl] = area_n.get(pl, 0) + 1
+        out("/account/", "account.html")   # sign-in for Planner Plus (RUNBOOK §6t day 12): noindex, not in the sitemap, linked from nowhere yet
         out("/my-year/", "my-year.html")   # My year (RUNBOOK §6s): not in the sitemap until the planner launches (day 14)
         urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}, colls=colls, shapes=shapes, area_n=area_n))
         # the world map is loaded only when a reader opens its tab: a file of clickable country shapes

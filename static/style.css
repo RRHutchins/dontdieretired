@@ -1109,3 +1109,13 @@ h1{line-height:1.04}
 .pl-span{margin:6px 0 0}
 .pl-dlbl{display:block;font-weight:600;margin:6px 0 2px}
 .pl-span .pl-pick{margin:0 0 4px}
+
+/* account page (RUNBOOK §6t, day 12) */
+.acct label{display:block;font-weight:600;margin:0 0 .3em}
+.acct-row{display:flex;gap:10px;flex-wrap:wrap}
+.acct-row input{flex:1 1 16em;min-width:0;min-height:44px;padding:.7em 1em;border:1px solid #8a8f99;border-radius:12px;font:inherit;background:#fff}
+.acct-row .btn{min-height:44px}
+.acct-row input[aria-invalid=true]{border-color:var(--brand)}
+.acct section{margin:0 0 1.5em}
+.acct section:focus{outline:none}
+.acct-del{margin-top:1.5em}.acct-del summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--brand-ink);font-weight:600}

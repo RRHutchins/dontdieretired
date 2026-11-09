@@ -1,0 +1,52 @@
+name: Accounts worker
+# Planner Plus accounts (RUNBOOK §6t). Always runs the tests. Deploys to Cloudflare only once Robin has added the
+# repository secrets CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, D1_DATABASE_ID and RESEND_API_KEY; until then the
+# deploy job says what is missing and succeeds without doing anything.
+on:
+  push:
+    branches: [main]
+    paths: ["worker/**", "tools/test_accounts.js", ".github/workflows/worker.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: accounts-worker
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node tools/test_accounts.js
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      D1_DATABASE_ID: ${{ secrets.D1_DATABASE_ID }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: ready
+        run: |
+          missing=""
+          for v in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID D1_DATABASE_ID RESEND_API_KEY; do [ -n "${!v}" ] || missing="$missing $v"; done
+          if [ -n "$missing" ]; then echo "::notice::Accounts worker not deployed: repository secrets not set yet:$missing (RUNBOOK §6t)"; echo "go=no" >> "$GITHUB_OUTPUT"; else echo "go=yes" >> "$GITHUB_OUTPUT"; fi
+      - if: steps.ready.outputs.go == 'yes'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - if: steps.ready.outputs.go == 'yes'
+        working-directory: worker
+        run: |
+          echo "$D1_DATABASE_ID" | grep -Eq '^[0-9a-f-]{36}$' || { echo "::error::D1_DATABASE_ID is not a database id"; exit 1; }
+          sed -i "s/00000000-0000-0000-0000-000000000000/$D1_DATABASE_ID/" wrangler.toml
+          npx --yes wrangler@3.114.0 d1 migrations apply ddr-accounts --remote
+          npx --yes wrangler@3.114.0 deploy
+          # SALT only keys the abuse counters, so a fresh one on each deploy is harmless and never needs storing
+          openssl rand -hex 32 | npx --yes wrangler@3.114.0 secret put SALT
+          printf '%s' "$RESEND_API_KEY" | npx --yes wrangler@3.114.0 secret put RESEND_API_KEY
