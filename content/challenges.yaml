@@ -76,31 +76,244 @@
   regions:
   - uk
   - us
-  why: Every route on a climbing wall is a puzzle you solve with your whole body, and the grades let you start very gently. Walls are sociable places where strangers happily share how they got up a tricky section.
+  why: Every route on a climbing wall is a puzzle you solve with your whole body, and the grades start low enough to make the first moves straightforward. You can boulder on your own
+    above thick mats, or tie into a rope on walls that reach 15 metres (about 50 feet) at Depot Climbing's larger centres.
   start:
-  - Use the BMC or USA Climbing finder to locate a wall or gym near you.
-  - Book a taster or induction session, which includes shoe and harness hire at most walls.
-  - Start on the easiest bouldering or top-rope routes and climb down as well as up.
+  - Find a wall with the BMC climbing wall finder (UK) or search for climbing gyms near you (US), and read its first-timers page.
+  - Register online and watch the wall's safety video before you go, or book a taster or intro class if you want to try ropes.
+  - Start on the easiest bouldering circuit or a beginner roped course, and climb down rather than jump whenever you can.
   links:
-  - label: BMC climbing wall finder
-    url: https://services.thebmc.co.uk/climbing-wall-finder
+  - label: 'BMC: find a climbing wall (UK)'
+    url: https://thebmc.co.uk/find-a-climbing-wall-uk-map
     region: uk
-    checked: '2026-10-06'
-  - label: BMC indoor climbing guide
+    checked: '2026-11-10'
+  - label: 'BMC: new to indoor climbing?'
     url: https://www.thebmc.co.uk/indoor-climbing
     region: uk
-    checked: '2026-10-06'
-  - label: USA Climbing gym finder
-    url: https://usaclimbing.org/visit-your-local-climbing-gym/
+    checked: '2026-11-10'
+  - label: 'The Castle Climbing Centre, London: taster sessions and courses'
+    url: https://www.castle-climbing.co.uk/taster-sessions
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Movement Golden, Colorado: climbing classes'
+    url: https://movementgyms.com/golden/climbing/classes/
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-10'
+  seo_title: 'Indoor climbing for beginners: bouldering or roped?'
+  description: Bouldering, auto-belay, top-rope and lead compared, with UK and US taster costs, climbing grades decoded side by side, and how to fall off safely.
+  detail:
+  - h: What a first visit is really like
+    p:
+    - Before you touch a hold you register. The BMC says the registration form makes you aware of the risks and tells the wall what you can do, so don't bend the truth; if you cannot
+      belay (hold the rope for a partner), say so. At Depot Climbing you watch an induction video, answer a few safety questions at the desk and can be signed off to boulder unsupervised
+      that same day. At The Castle in London you register, watch the safety video and book a bouldering slot online. Touchstone's Hyperion gym in Redwood City, California requires every
+      visitor to have a current waiver on file, then offers the safety video, an intro class or a quick orientation at the front desk.
+    - Every wall has its own rules, so read them on the wall. Everyone Active, which runs climbing walls at UK leisure centres, asks you to remove or cover jewellery, take off your harness
+      when bouldering and never stand directly under someone who is climbing. Depot has a strict tops-on policy. Wear something comfortable that lets you move.
+  - h: Four ways to climb compared
+    table:
+      head:
+      - Style
+      - What it is
+      - Partner needed?
+      - Before you go it alone
+      - Cost (as last listed)
+      rows:
+      - - Bouldering
+        - Short climbs called problems, no rope, above padded mats; Depot's walls go up to 4.5 m (about 15 ft)
+        - 'No'
+        - A safety video and registration at most walls; an intro class is optional
+        - Depot (Big Depot Manchester) £14 entry, shoe hire £3.50; Movement Golden, Colorado, Intro to Bouldering $35 for an hour, then stay and climb
+      - - Auto-belay
+        - A roped lane where a device at the top takes in the rope and lowers you when you let go, in place of a partner
+        - 'No'
+        - An orientation; you must clip yourself in correctly every time
+        - The Castle lists a one-hour "Access auto belay" session for adults and covers auto-belays in Learn to Top Rope, £80 for 3.5 hours, all kit included
+      - - Top-rope
+        - The rope runs through an anchor at the top; your partner belays from the ground and lowers you
+        - 'Yes'
+        - A course, or a belay test or sign-off by staff
+        - The Castle taster (90 minutes, or 1 hour if you are the only booking; rope and bouldering, kit included) £45; Movement Golden Intro to Rope Climbing $35; Touchstone Hyperion
+          lists free top-rope belay tests
+      - - Lead
+        - You clip the rope into quickdraws on the wall as you climb
+        - 'Yes'
+        - A learn-to-lead course; Touchstone Hyperion also runs lead belay tests
+        - Movement Golden Learn to Lead $165 ($135 for members) over two days
+    after: The BMC calls lead climbing both more exciting and inherently riskier than top-roping. If you want both styles from the start, Movement Golden's Beginner Rock Climbing Package
+      ($130) bundles four classes with 30 days' gym access and rental gear, and The Castle's six-week Bouldering and Roped Climbing Fundamentals teaches you to climb independently on
+      bouldering, auto-belay and top-rope walls.
+  - h: Grades decoded, UK and US side by side
+    table:
+      head:
+      - Type
+      - US grade
+      - UK and European grade
+      rows:
+      - - Route
+        - '5.5'
+        - '4'
+      - - Route
+        - '5.6'
+        - 5a
+      - - Route
+        - '5.7'
+        - 5b
+      - - Route
+        - '5.8'
+        - 5c
+      - - Route
+        - '5.9'
+        - 6a
+      - - Route
+        - 5.10a and 5.10b
+        - 6a+
+      - - Route
+        - 5.10c
+        - 6b
+      - - Boulder
+        - V0
+        - Font 4
+      - - Boulder
+        - V1
+        - Font 5
+      - - Boulder
+        - V2
+        - Font 5+
+      - - Boulder
+        - V3
+        - Font 6A
+    after: British walls grade roped climbs in French grades (4, 5a, 6a, 6a+ and up) and boulder problems in Font grades, written with capitals (6A), or V grades starting at V0. American
+      gyms use the Yosemite Decimal System (5.x) for routes and the V-scale for bouldering. The BMC points out that grades are subjective and some walls simply colour-code circuits,
+      such as V0 to V2 in purple, so ask the staff. Conversions above from Sportrock, a climbing gym group in Virginia and Maryland, which labels the lowest rows of both charts beginner.
+      REI describes 5.1 to 5.4 as easy and suitable for beginners, and warns that route and bouldering grades are distinct enough that converting between them needs caution. Charts from
+      different walls do not always agree.
+  - h: The hard parts
+    list:
+    - Falling. The BMC's poster for bouldering walls says to climb down and not to walk under other climbers. Everyone Active adds that the matting does not completely eliminate the
+      risk of injury, and asks you not to jump from the wall. Movement Golden's intro bouldering class teaches how to fall as part of the hour.
+    - Clipping in. Vertical Endeavors, a Minnesota gym group, says human error is the main cause of auto-belay incidents. Check you are clipped in before you leave the ground, and if
+      the rope is slack around your knees, climb down and tell the staff.
+    - Belaying. The BMC calls belaying a fundamental skill that is often taught badly. Keep your brake hand low, check your partner's knot and harness before every climb, and ask staff
+      if you are unsure.
+    - Fatigue. The BMC notes that most bouldering injuries happen when people are tired, so stop before you are exhausted.
+  - h: Kit, and how to build up
+    p:
+    - Hire first. The Castle hires shoes and harnesses at £4 each and a chalk bag for £1.75; Depot charges £3.50 for shoes. If you buy shoes, The Castle's advice is to try them before
+      you climb, with the heel held snugly and the toes at the end, and to treat significant pain as a bad sign.
+    - To keep going, book a few weeks' course, or join a club; the BMC says more than 300 clubs are affiliated to it. When you want real rock, Mountain Training's Rock Skills Introduction
+      course covers the basics of getting roped up outdoors, and the BMC has advice for moving outdoors. The BMC also notes that some people spend their entire climbing career indoors.
+  faq:
+  - q: Is bouldering or top rope better for beginners?
+    a: Bouldering needs no partner and at most walls only a safety video and registration. Top-roping goes higher but needs a partner who has learned to belay, usually on a course such
+      as The Castle's Learn to Top Rope. The Castle's £45 adult taster lets you try both.
+  - q: Can you go climbing indoors on your own?
+    a: Yes. Bouldering and auto-belay lanes need no partner. Some gyms, such as Touchstone in California, will help you find a climbing partner for roped climbing.
+  - q: What is V0 in French grades?
+    a: Sportrock's chart puts V0 at Font 4, the bouldering grade used in Britain and Europe. French grades are for roped routes; on its route chart 5.9 matches 6a.
+  - q: What should I wear for indoor climbing the first time?
+    a: Comfortable clothes you can move freely in. Hire climbing shoes at the wall, and remove or cover jewellery; Depot also requires you to keep a top on.
+  - q: How do you fall safely when bouldering?
+    a: Climb down whenever you can instead of jumping, keep the area under you clear and never stand under someone else who is climbing. Intro bouldering classes, such as Movement's,
+      teach falling technique.
+  - q: How much does indoor climbing cost?
+    a: Big Depot Manchester listed adult entry at £14 and The Castle in London at £18, with shoe hire £3.50 to £4. In the US, Touchstone Hyperion listed a day pass at $30 to $35 and
+      Movement Golden an intro class at $35.
+  safety: The BMC says climbing involves a risk of personal injury or death, so follow your wall's induction and rules, climb down rather than jump, and check every knot and clip.
+  inspire:
+  - kind: read
+    person: Candy Jones, Flailing Fossils climbing group
+    line: Overcame a fear of heights to climb with a group that meets three days a week at the Green Mountain Climbing Center in Rutland, Vermont, though it took months before she was
+      comfortable on the rope.
+    title: Meet the 'Flailing Fossils' — seniors taking on rock climbing walls
+    outlet: FOX5 Las Vegas
+    url: https://www.fox5vegas.com/2026/09/24/meet-flailing-fossils-seniors-taking-rock-climbing-walls/
+    checked: '2026-11-10'
   kit:
   - name: Climbing shoes
-    why: you can usually hire them at the wall; buy your own if you keep going, fitted snug but not painful
+    why: hire them for your first sessions; when you buy, try them on before climbing, with the heel snug and the toes at the end, and avoid pairs that really hurt
     url: https://www.amazon.co.uk/s?k=climbing+shoes+beginner
   - name: Chalk bag
-    why: keeps your hands dry for grip
+    why: holds chalk for your hands; The Castle hires one for £1.75 if you want to try climbing with chalk first
     url: https://www.amazon.co.uk/s?k=climbing+chalk+bag
+  sources:
+  - label: BMC, Find a climbing wall
+    url: https://thebmc.co.uk/find-a-climbing-wall-uk-map
+    checked: '2026-11-10'
+  - label: BMC, New to indoor climbing?
+    url: https://www.thebmc.co.uk/indoor-climbing
+    checked: '2026-11-10'
+  - label: BMC, The basics, climbing indoors
+    url: https://services.thebmc.co.uk/the-basics-climbing-indoors
+    checked: '2026-11-10'
+  - label: BMC, Indoor climbing grades explained
+    url: https://thebmc.co.uk/en/indoor-climbing-grades-explained
+    checked: '2026-11-10'
+  - label: BMC, Climbing wall safety resources
+    url: https://thebmc.co.uk/climbing-wall-safety-resources
+    checked: '2026-11-10'
+  - label: BMC, Participation statement
+    url: https://www.thebmc.co.uk/bmc-participation-statement
+    checked: '2026-11-10'
+  - label: BMC, Climbing, how to get started
+    url: https://services.thebmc.co.uk/climbing-how-to-get-started
+    checked: '2026-11-10'
+  - label: Mountain Training, Skills courses
+    url: https://www.mountain-training.org/skills-courses/
+    checked: '2026-11-10'
+  - label: The Castle Climbing Centre, Start climbing at the Castle
+    url: https://castle-climbing.co.uk/newbie
+    checked: '2026-11-10'
+  - label: The Castle Climbing Centre, Taster sessions
+    url: https://www.castle-climbing.co.uk/taster-sessions
+    checked: '2026-11-10'
+  - label: The Castle Climbing Centre, Taster session (adults)
+    url: https://www.castle-climbing.co.uk/courses/taster-session-adults-2
+    checked: '2026-11-10'
+  - label: The Castle Climbing Centre, Learn to Top Rope
+    url: https://www.castle-climbing.co.uk/courses/learn-to-top-rope
+    checked: '2026-11-10'
+  - label: The Castle Climbing Centre, Prices
+    url: https://www.castle-climbing.co.uk/prices
+    checked: '2026-11-10'
+  - label: The Castle Climbing Centre, Shop
+    url: https://www.castle-climbing.co.uk/shop
+    checked: '2026-11-10'
+  - label: The Castle Climbing Centre, Buying your first shoes
+    url: https://www.castle-climbing.co.uk/articles/buying-your-first-shoes
+    checked: '2026-11-10'
+  - label: Depot Climbing, Common climbing questions
+    url: https://www.depotclimbing.co.uk/common-climbing-questions
+    checked: '2026-11-10'
+  - label: Depot Climbing, BIG Depot Manchester times and prices
+    url: https://www.depotclimbing.co.uk/big-depot-manchester/prices/
+    checked: '2026-11-10'
+  - label: Everyone Active, Climbing rules and conditions of use
+    url: https://everyoneactive.com/legal-policies/climbing-rules-and-conditions-of-use
+    checked: '2026-11-10'
+  - label: Movement Golden, Climbing classes
+    url: https://movementgyms.com/golden/climbing/classes/
+    checked: '2026-11-10'
+  - label: Touchstone Climbing, Hyperion first timers
+    url: https://touchstoneclimbing.com/hyperion/first-timers
+    checked: '2026-11-10'
+  - label: Vertical Endeavors, Auto belays, pros and cons
+    url: https://www.verticalendeavors.com/auto-belays-pros-and-cons/
+    checked: '2026-11-10'
+  - label: REI, Climbing and bouldering rating systems
+    url: https://www.rei.com/learn/expert-advice/climbing-bouldering-rating.html
+    checked: '2026-11-10'
+  - label: Sportrock, Rock climbing grades explained
+    url: https://sportrock.com/climbing-grades
+    checked: '2026-11-10'
+  - label: FOX5 Las Vegas, Meet the 'Flailing Fossils' — seniors taking on rock climbing walls
+    url: https://www.fox5vegas.com/2026/09/24/meet-flailing-fossils-seniors-taking-rock-climbing-walls/
+    checked: '2026-11-10'
+  related:
+  - learn-to-lift-weights
+  - try-pilates
+  - climb-yr-wyddfa
+  - learn-map-and-compass
 - id: climb-ben-nevis
   title: Climb Ben Nevis
   category: move
@@ -1883,27 +2096,204 @@
   regions:
   - uk
   - us
-  why: A teacher in the room can adjust a posture for you in a way no video can. Styles vary enormously, from slow and quiet to strong and flowing, so one class tells you a lot about what you enjoy.
+  why: A teacher in the room can adjust a posture for you in a way no video can. Styles range from slow, prop-supported floor work to strong, flowing sequences, so one class tells you
+    a lot about what you enjoy.
   start:
-  - Search the British Wheel of Yoga or Yoga Alliance directories for a teacher nearby.
-  - Choose a class described as suitable for beginners and tell the teacher you are new.
-  - Borrow a mat if you can and try two different styles before deciding.
+  - Search the British Wheel of Yoga's Yoga Search (UK) or the Yoga Alliance directory (US) for a teacher, then ask about beginners' classes.
+  - Before the first class, tell the teacher you are new and mention any injury or health condition; if you have a condition, check with your GP or doctor first.
+  - Wear clothes you can move in, borrow a mat and props if the teacher has them, and try a second style before deciding.
   links:
-  - label: British Wheel of Yoga
-    url: https://www.bwy.org.uk/
+  - label: 'British Wheel of Yoga: finding your yoga (styles and Yoga Search)'
+    url: https://bwy.org.uk/explore/finding-your-yoga/
     region: uk
-    checked: '2026-10-06'
-  - label: Yoga Alliance
-    url: https://www.yogaalliance.org/
+    checked: '2026-11-10'
+  - label: 'City Lit, London: yoga courses'
+    url: https://www.citylit.ac.uk/courses?cat=1252
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Yoga Alliance: find a yoga teacher'
+    url: https://yogaalliance.org/find-a-yoga-teacher/
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-10'
+  safety: Tell the teacher about any injury or condition, check with a GP or doctor first if you have a health condition, and as a beginner leave out headstands, shoulder stands and
+    the lotus position.
+  seo_title: 'Yoga for beginners: choosing a class and a teacher'
+  description: Yoga styles compared for beginners, what a first class is like, UK and US teacher qualifications side by side, class costs, what to wear and safety.
+  detail:
+  - h: What a first class is really like
+    p:
+    - Most beginners' classes follow a similar shape. Surrey County Council's adult learning service describes its Iyengar course for beginners as postures in standing, seated and lying
+      positions, then breathing exercises and relaxation. City Lit in London lists standing, sitting and lying postures, including forward and back bends, with inverted postures optional.
+      The British Wheel of Yoga (BWY) says classes labelled hatha usually include postures and a closing relaxation, and often breathing and guided meditation.
+    - You practise barefoot, or in non-slip socks at City Lit. The relaxation is why both colleges ask you to bring a warm layer or light blanket. In an Iyengar class the teacher may
+      use blankets, blocks, belts, chairs or ropes, and at the Iyengar centre in New York new students begin with basic standing poses; its advice is simply to let your teacher know
+      that you are new.
+  - h: The styles compared
+    table:
+      head:
+      - Style
+      - What it is like
+      rows:
+      - - Hatha
+        - The umbrella term for styles rooted in physical practice; classes usually include breathing, guided meditation and a closing relaxation
+      - - Iyengar
+        - Much more static; you may hold one posture for several minutes, refining the details
+      - - Vinyasa or flow
+        - Fluid, moving from posture to posture in time with the breath; power yoga is a form of vinyasa
+      - - Ashtanga
+        - Physically strong, made up of set sequences, with a particular breath (ujjayi) at the centre
+      - - Yin and restorative
+        - Static and floor-based; you may spend several minutes in a posture, supported by props
+      - - Chair yoga
+        - Uses a chair, and suits anyone who finds it hard to get up and down from the floor; taught all over the UK
+    after: Descriptions are the British Wheel of Yoga's. With so many styles, the BWY suggests starting with a gentle beginners' class. The US National Center for Complementary and Integrative
+      Health (NCCIH) notes that styles range from gentle to physically demanding, and that hot yoga carries particular risks of overheating and dehydration.
+  - h: How teachers qualify, UK and US side by side
+    table:
+      head:
+      - Body
+      - Award or listing
+      - Training
+      - Teaching experience required
+      rows:
+      - - British Wheel of Yoga (UK)
+        - BWYQ Level 4 Certificate in Teaching Yoga, regulated by Ofqual
+        - 300 hours over at least 14 months
+        - None stated
+      - - British Wheel of Yoga (UK)
+        - BWYQ Level 4 Diploma in Teaching Yoga
+        - 500 hours over at least 24 months
+        - None stated
+      - - YogaPros, also known as Yoga Alliance Professionals (UK)
+        - Membership (levels from New Teacher to Senior Yoga Teacher)
+        - A foundation course of at least 200 hours, with at least 180 contact hours
+        - None to join; Senior Yoga Teacher means 8 or more years and 4,000 teaching hours
+      - - Yoga Alliance (US)
+        - RYT 200
+        - 200 hours at a Yoga Alliance registered school
+        - None
+      - - Yoga Alliance (US)
+        - RYT 500
+        - 500 hours, or 200 plus a further 300
+        - At least 100 hours since training
+      - - Yoga Alliance (US)
+        - E-RYT 200 / E-RYT 500
+        - 200 / 500 hours
+        - 1,000 hours over at least two years / 2,000 hours over at least four years
+    after: The BWY is recognised as the national governing body for yoga by Sport England and Sport Wales, and says all its teachers are trained to at least 300 hours. It calls the Diploma
+      the highest qualification for yoga teachers in the UK. The similar names hide two separate organisations. YogaPros is a not-for-profit Scottish company in Edinburgh, and Yoga Alliance
+      a US nonprofit. Each keeps a directory. Asking a teacher where they trained, and for how many hours, is the plain way to compare them, and the NCCIH suggests doing exactly that.
+  - h: What it costs
+    table:
+      head:
+      - Provider
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Yoga: beginners, a weekly course starting Monday 11 January 2027 (the 2025 runs were ten one-hour classes, mats provided)'
+        - £189 full fee, £151 senior, £132 concession
+      - - Surrey Adult Learning (Surrey County Council)
+        - Iyengar Yoga - Beginners, for beginners and people returning to yoga
+        - Fee not listed online; call 0300 200 1044 to register interest
+      - - Iyengar Yoga Association of Greater New York, West 22nd Street
+        - Three-class card for new students, valid 30 days for Level 1, Level 2 and Gentle classes
+        - $48
+      - - Olympic College Continuing Education, Bremerton
+        - Introduction to Yoga, Yoga 101, 24 sessions from 21 September to 11 December 2026
+        - $200
+    after: A college course keeps the same teacher and group together for a term. A class card suits you if you want to try several styles first.
+  - h: What to wear, bring and tell the teacher
+    list:
+    - Clothing you can move in. Surrey's course asks for clothes that let you reach up and bend down.
+    - A mat, though you need not buy one yet. The BWY says many teachers have mats and props to lend; City Lit provides mats.
+    - Water, and a warm layer or light blanket for the relaxation at the end.
+    - Your health details. Surrey asks every learner to fill in a health form before the first class. City Lit asks anyone with a listed condition to check with a medical practitioner
+      first and bring a doctor's letter for the tutor.
+    - Your injuries. The NCCIH says knee or hip injuries, lumbar spine disease, severe high blood pressure, balance problems and glaucoma may all need poses changing, and advises talking
+      to your doctor and the yoga teacher about your needs.
+  faq:
+  - q: What type of yoga is best for beginners?
+    a: The British Wheel of Yoga suggests starting with a gentle beginners' class, because there are so many styles. Iyengar, yin and restorative classes are more static than vinyasa
+      or Ashtanga, which the BWY calls fluid and physically strong.
+  - q: What should I wear to my first yoga class?
+    a: Comfortable clothes you can move in, and nothing on your feet, since yoga is practised barefoot. Bring a warm layer or light blanket for the relaxation at the end.
+  - q: Do I need my own yoga mat?
+    a: Not at first. The British Wheel of Yoga says many teachers have mats and props to lend, and some colleges, such as City Lit in London, provide them.
+  - q: What does RYT 200 mean?
+    a: It is a Yoga Alliance credential for a teacher who has completed a 200-hour training at a Yoga Alliance registered school. RYT 500 means 500 hours of training plus at least 100
+      hours of teaching.
+  - q: Is yoga safe if I have a bad back or knees?
+    a: The NCCIH says injuries such as knee or hip problems and lumbar spine disease may mean poses need changing, and advises talking to your doctor and the teacher first. This page
+      is not medical advice.
+  - q: How much is a yoga class for beginners?
+    a: City Lit in London listed its beginners' course at £189 full fee, £151 senior and £132 concession. In New York, the Iyengar association listed a three-class card for new students
+      at $48.
+  inspire:
+  - kind: read
+    person: Peggy Belles, retired Tuckahoe police lieutenant
+    line: Retired as a police lieutenant in Tuckahoe and now teaches yoga to fellow officers at Yoga Haven.
+    title: Retired cop teaches yoga to fellow officers
+    outlet: News 12 Westchester
+    url: https://westchester.news12.com/retired-cop-teaches-yoga-to-fellow-officers-34896305
+    checked: '2026-11-10'
+  sources:
+  - label: British Wheel of Yoga, Finding your yoga
+    url: https://bwy.org.uk/explore/finding-your-yoga/
+    checked: '2026-11-10'
+  - label: British Wheel of Yoga, Training
+    url: https://bwy.org.uk/train/training
+    checked: '2026-11-10'
+  - label: British Wheel of Yoga, New BWY course helps 200-hour yoga teachers gain top qualification
+    url: https://bwy.org.uk/new-bwy-course-helps-200-hour-yoga-teachers-gain-top-qualification/
+    checked: '2026-11-10'
+  - label: YogaPros, Join as a new yoga teacher
+    url: https://www.theyogapros.com/join/new-yoga-teacher
+    checked: '2026-11-10'
+  - label: YogaPros, What is the difference between the levels
+    url: https://www.theyogapros.com/knowledge/what-is-the-difference-between-the-levels-new-teacher-yoga-teacher-experienced-yoga-teacher-and-senior-yoga-teacher
+    checked: '2026-11-10'
+  - label: Yoga Alliance, Standards for Registered Yoga Teachers
+    url: https://yogaalliance.org/wp-content/uploads/2025/05/Standards-for-RYT-Credentials_NB22my-.pdf
+    checked: '2026-11-10'
+  - label: Yoga Alliance, Find your new credential
+    url: https://yogaalliance.org/credential-path/
+    checked: '2026-11-10'
+  - label: Yoga Alliance, Find a yoga teacher
+    url: https://yogaalliance.org/find-a-yoga-teacher/
+    checked: '2026-11-10'
+  - label: 'National Center for Complementary and Integrative Health, Yoga: effectiveness and safety'
+    url: https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety
+    checked: '2026-11-10'
+  - label: 'City Lit, Yoga: beginners (2025 courses)'
+    url: https://www.citylit.ac.uk/courses/yoga-beginners/fgd09-2425
+    checked: '2026-11-10'
+  - label: City Lit, Fitness and relaxation courses (yoga listing)
+    url: https://www.citylit.ac.uk/courses?cat=1252
+    checked: '2026-11-10'
+  - label: Surrey County Council, Iyengar Yoga - Beginners
+    url: https://www.surreycc.gov.uk/schools-and-learning/adult-learning/courses/overview?id=53440
+    checked: '2026-11-10'
+  - label: Iyengar Yoga Association of Greater New York, New student options
+    url: https://iyengarnyc.org/new-york/new-student-options
+    checked: '2026-11-10'
+  - label: Olympic College, Introduction to Yoga - Yoga 101
+    url: https://www.olympic.edu/events-calendar/introduction-yoga-yoga-101
+    checked: '2026-11-10'
+  related:
+  - try-pilates
+  - learn-tai-chi-form
+  - join-a-wellbeing-walk
   kit:
   - name: Yoga mat
-    why: a non-slip mat for classes and practice at home
+    why: for practice at home once you know you will keep going; check the thickness and that it grips on your floor
     url: https://www.amazon.co.uk/s?k=yoga+mat+non+slip
   - name: Yoga blocks
-    why: bring the floor closer while you work on flexibility
+    why: bring the floor closer in standing and seated poses; check the size and whether they are foam or cork
     url: https://www.amazon.co.uk/s?k=yoga+blocks
+  - name: Yoga belt
+    why: helps you reach your feet in seated and lying stretches; check the length and the buckle
+    url: https://www.amazon.co.uk/s?k=yoga+belt+strap
 - id: learn-tai-chi-form
   title: Learn a tai chi form
   category: move
@@ -6068,30 +6458,227 @@
   regions:
   - uk
   - us
-  why: A kayak puts you at water level on rivers, lakes and sheltered coast, moving under your own power and almost silently. An entry-level course such as Paddle UK's Start Award, or an introductory class with an American Canoe Association instructor, teaches you to launch, steer and stop.
+  why: A kayak puts you at water level on rivers, lakes, canals and sheltered coast, moving under your own power with a double-bladed paddle. A first lesson on sheltered water teaches
+    you to get in, paddle straight, turn and stop, and what to do if you tip over.
   start:
-  - Search the Course Providers Look Up on Go Paddling by postcode, or the ACA's Find an Instructor and course calendar pages.
-  - Book a beginners' session with an affiliated provider or club that supplies the boat, paddle and buoyancy aid.
-  - Pack a change of clothes and shoes you do not mind getting wet.
+  - Find a lesson near you with the Go Paddling course provider finder (UK, search by postcode) or the American Canoe Association course calendar (US, filter by state and course type).
+  - Book a beginners' session, such as Paddle UK's Paddle Start or an ACA Level 1 Introduction to Kayaking class, where the boat is supplied, and check that the centre lends a paddle
+    and buoyancy aid.
+  - Bring clothes you do not mind getting wet, shoes that stay on and can get wet, and a full change of clothes for afterwards.
   links:
-  - label: Go Paddling course provider finder (powered by Paddle UK)
-    url: https://gopaddling.info/find-course-providers/
+  - label: 'Go Paddling: course provider finder for Start, Discover and Explore awards (Paddle UK)'
+    url: https://gopaddling.info/blog/paddling-awards/find-course-providers/
     region: uk
-    checked: '2026-10-07'
-  - label: 'American Canoe Association: Take a Paddling Class'
-    url: https://americancanoe.org/education/take-a-paddling-class/
+    checked: '2026-11-10'
+  - label: 'American Canoe Association: course calendar'
+    url: https://americancanoe.org/education/take-a-paddling-class/course-calendar/
     region: us
-    checked: '2026-10-07'
-  safety: Wear a buoyancy aid every time you are afloat and learn on sheltered water with an instructor.
+    checked: '2026-11-10'
+  - label: 'Willen Lake, Milton Keynes: Paddle Start Award (kayaking)'
+    url: https://www.willenlake.org.uk/activities/on-the-water/paddlesports/paddle-start-award-kayaking/
+    region: uk
+    checked: '2026-11-10'
+  safety: Wear a buoyancy aid or life jacket every time you are afloat, learn on sheltered water with an instructor, and remember that water below 15°C (59°F) can cause cold water shock.
+  seo_title: 'Kayaking for beginners: lessons, awards and where to paddle'
+  description: 'Kayaking for beginners: what a first lesson is like, Paddle UK and ACA levels side by side, UK and US costs, licences and life jackets.'
+  detail:
+  - h: What a first lesson is really like
+    p:
+    - You sit with your legs out in front and pull back with a blade on each side in turn. Most first sessions start on land. At Willen Lake in Milton Keynes the beginners' session opens
+      with a safety briefing and an introduction to the equipment before you go afloat. At Higher Pursuits in Tennessee, a land session on life jackets and equipment comes before the
+      strokes.
+    - On the American Canoe Association's (ACA) Level 1 course, by the end you should be able to paddle forward for 15 to 20 boat lengths, stop within two, move sideways 3 metres (10
+      feet) and turn on the spot. The ACA sets a ratio of five students to one instructor.
+  - h: Sit-on-top, sit-in, or canoe?
+    p:
+    - A canoe is usually open, and you sit on a seat or kneel with a single-bladed paddle. A kayak usually has a closed deck and a double-bladed paddle.
+    - A sit-on-top kayak has no cockpit. If you fall off, you climb back on, but you will get wet. Go Paddling calls them very stable and suggests them for beginners. A sit-in, or closed-cockpit,
+      kayak keeps your lower half inside, which helps you stay warm and dry. Later you may add a spray deck (spray skirt in the US), which seals the cockpit; Go Paddling says it is optional
+      when you start, and the ACA does not use them on its Level 1 course.
+  - h: UK and US levels side by side
+    table:
+      head:
+      - Stage
+      - Paddle UK (UK)
+      - American Canoe Association (US)
+      - Water it is taught on
+      rows:
+      - - First time afloat
+        - 'Paddle Start: getting in and out, what to wear, basic strokes'
+        - 'Level 1: Introduction to Kayaking, up to one day (8 hours)'
+        - 'UK: sheltered water. US: flat water, current under 0.5 knots, within swimming distance of shore'
+      - - Becoming independent
+        - 'Paddle Discover: choosing and using equipment, what affects your paddling, making decisions'
+        - 'Level 2: Essentials of Kayak Touring, up to one day: more strokes, assisted rescues including the T-rescue, trip planning and float plans'
+        - 'UK: sheltered water. US: protected water within 0.5 nautical miles of shore, wind under 10 knots, waves under 1 ft (0.3 m)'
+      - - Planning your own trips
+        - 'Paddle Explore: self-guided trips, decisions based on place, wind and weather'
+        - No separate stage; trip planning is part of Level 2
+        - 'UK: sheltered water'
+      - - Onto the sea
+        - Sea Kayak Award, in a sea kayak or sit-on-top
+        - 'Level 3: Coastal Kayaking; the assessment includes a roll'
+        - 'UK: winds up to force 3, tides up to 1 knot. US: within 1.5 nautical miles of shore, wind 10 to 15 knots, waves 1 to 2 ft (0.3 to 0.6 m)'
+    after: The pairing is ours, not an official equivalence. Paddle UK's awards have no set length. The ACA needs no previous experience for Level 1 or 2, and recommends its free online
+      paddling safety course beforehand.
+  - h: What it costs
+    table:
+      head:
+      - Provider
+      - Where
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - Willen Lake
+        - Milton Keynes
+        - Discover Kayaking taster, 90 minutes; or Paddle Start Award, 3 hours
+        - £35 (taster); £65 (Paddle Start)
+      - - Wimbledon Park Watersports Centre (Merton Council)
+        - London
+        - Paddle Start and Discover, one day, 9.30am to 4pm, ages 8 and up
+        - £110
+      - - DSWC (Docklands Sailing and Watersports Centre)
+        - London
+        - Paddle UK Start and Discover course, one day, 9.30am to 5pm, for beginners
+        - £140, with a discount for members
+      - - Higher Pursuits
+        - Duck River, Columbia, Tennessee
+        - Basic Kayaking Class based on ACA Level 1, 5 to 6 hours, kayak included, ages 10 and up
+        - $75 per person
+      - - Blue Waters Kayaking
+        - Tomales Bay, Point Reyes Station, California
+        - 'Skills Class I: Intro to Sea Kayaking, 4 hours, ACA-certified instructors'
+        - About $200 (listed as "~$200")
+    after: If you then want your own boat, Go Paddling puts sit-on-tops at mostly £300 to £700 and closed-cockpit kayaks at about £400 to £800.
+  - h: Licences, life jackets and cold water
+    p:
+    - In England and Wales a kayak counts as a boat, and many managed canals and rivers need a waterways licence; Paddle UK says paddling without one can bring a fine of up to £1,000.
+      Paddle UK's On the Water membership covers waterways run by the Canal and River Trust, the Environment Agency and the Broads Authority, among others; from 1 April 2026 it costs
+      £65 a year for a new adult member. The Canal and River Trust also sells its own licences, including a Paddlers Permit, with prices from around £5 a day. If you are on a course,
+      ask the provider how its licence covers you.
+    - In the US, the Coast Guard requires every recreational boat, kayaks included, to carry a Coast Guard-approved wearable life jacket for each person, and children under 13 must wear
+      one while under way (state rules may differ). The Coast Guard says everyone should wear theirs.
+    - Paddle UK says water below 15°C (59°F) can cause cold water shock, and UK and Irish coastal waters average about 12°C (54°F). If you go in unexpectedly, spend the first minute
+      floating, not swimming. The RNLI's advice is to tilt your head back with ears under, relax and control your breathing. In the UK call 999 or 112 and ask for the Coastguard; in
+      the US call 911.
+  - h: When you tip over
+    p:
+    - Getting wet is part of paddling, as the ACA puts it. Coming out of an upturned kayak is called a wet exit, and the ACA's Level 1 course teaches a calm exit after a capsize, emptying
+      the boat and getting back in. Level 2 adds assisted rescues, including the T-rescue. Righting the kayak while you stay inside, the roll, comes much later; the ACA asks for it at
+      its Level 3 coastal assessment.
+  faq:
+  - q: What is the difference between a canoe and a kayak?
+    a: Canoeists usually sit or kneel in an open boat and use a single-bladed paddle. Kayakers sit with their legs out in front, usually in a closed boat, and use a double-bladed paddle.
+  - q: Is a sit-on-top or sit-in kayak better for beginners?
+    a: Go Paddling suggests sit-on-tops, as you climb straight back on if you fall off, though you get wet. Recreational sit-in kayaks are also stable and keep you drier.
+  - q: Do I need a licence to kayak in the UK?
+    a: On many managed canals and rivers in England and Wales, yes. Paddle UK membership includes a licence for Canal and River Trust, Environment Agency and Broads Authority waters,
+      and the Trust's own licences start from around £5 a day.
+  - q: Do you have to wear a life jacket kayaking in the US?
+    a: Federal rules require a Coast Guard-approved wearable life jacket on board for each person, and children under 13 must wear one while under way. The Coast Guard advises everyone
+      to wear theirs.
+  - q: How much are kayak lessons?
+    a: Willen Lake in Milton Keynes listed a Paddle Start Award at £65, and one-day courses in London were £110 to £140. Higher Pursuits in Tennessee listed a Level 1-based class at
+      $75.
+  - q: What happens if you capsize in a kayak?
+    a: In a sit-on-top you climb back on. In a sit-in kayak you do a wet exit, coming out of the upturned boat, then empty the boat and get back in, with help from your instructor at
+      first.
+  inspire:
+  - kind: read
+    person: Lily-Rose Sheppard, Roundhouse Birmingham
+    line: Learned to kayak and to rescue capsized paddlers as a volunteer guide on Birmingham's canals, then was given a paid role leading kayak tours and was shortlisted for VisitEngland's
+      Tourism Superstar.
+    title: Kayaker in the running for tourism award
+    outlet: Paddle UK
+    url: https://paddleuk.org.uk/kayaker-in-the-running-for-tourism-award/
+    checked: '2026-11-10'
+  sources:
+  - label: British Canoeing Awarding Body, Paddle Awards
+    url: https://britishcanoeingawarding.org.uk/paddle-awards/
+    checked: '2026-11-10'
+  - label: Go Paddling, Developing your paddling skills
+    url: https://gopaddling.info/blog/tips-and-advice/developing-your-paddling-skills/
+    checked: '2026-11-10'
+  - label: Go Paddling, Where can I learn to kayak near me?
+    url: https://gopaddling.info/blog/tips-and-advice/kayaking-tips-and-advice/where-can-i-learn-to-kayak-near-me/
+    checked: '2026-11-10'
+  - label: Go Paddling, Kayaking for beginners
+    url: https://gopaddling.info/blog/tips-and-advice/kayaking-tips-and-advice/kayaking-for-beginners-getting-started/
+    checked: '2026-11-10'
+  - label: Go Paddling, Canoes and kayaks
+    url: https://gopaddling.info/blog/tips-and-advice/general-paddling/differences-canoes-and-kayaks/
+    checked: '2026-11-10'
+  - label: Go Paddling, Best kayaks for beginners in the UK
+    url: https://gopaddling.info/blog/tips-and-advice/best-kayaks-for-beginners-in-the-uk/
+    checked: '2026-11-10'
+  - label: Go Paddling, Kayak clothing
+    url: https://gopaddling.info/kayak-clothing/
+    checked: '2026-11-10'
+  - label: paddlesuptraining.com, Sea Kayak Award
+    url: https://paddlesuptraining.com/courses/sea-kayak-award/
+    checked: '2026-11-10'
+  - label: American Canoe Association, Level 1 Introduction to Kayaking Skills Course
+    url: https://americancanoe.org/wp-content/uploads/documents/sei-courses/Level_1_Introduction_to_Kayaking_Skills_Course.pdf
+    checked: '2026-11-10'
+  - label: American Canoe Association, Level 2 Essentials of Kayak Touring Skills Course
+    url: https://americancanoe.org/wp-content/uploads/documents/sei-courses/Level_2_Essentials_of_Kayak_Touring_Skills_Course.pdf
+    checked: '2026-11-10'
+  - label: American Canoe Association, Level 3 Coastal Kayaking Skills Assessment
+    url: https://americancanoe.org/download/5028/sei-courses/23241/level_3_coastal_kayaking_skills_assessment.pdf
+    checked: '2026-11-10'
+  - label: American Canoe Association, Beginner's Guide
+    url: https://americancanoe.org/wp-content/uploads/documents/sei-educational_resources/beginners_guide_aca.pdf
+    checked: '2026-11-10'
+  - label: Paddle UK, Do I need a waterways licence to paddle?
+    url: https://paddleuk.org.uk/do-i-need-a-waterways-licence-to-paddle/
+    checked: '2026-11-10'
+  - label: Paddle UK, Changes to Paddle UK membership fees
+    url: https://paddleuk.org.uk/changes-to-paddle-uk-membership-fees/
+    checked: '2026-11-10'
+  - label: Canal and River Trust, Licensing your canoe
+    url: https://canalrivertrust.org.uk/enjoy-the-waterways/canoeing-and-kayaking/licensing-your-canoe
+    checked: '2026-11-10'
+  - label: US Coast Guard, A Boater's Guide to the Federal Requirements for Recreational Boats
+    url: https://www.uscgboating.org/assets/1/AssetManager/Boaters-Guide-to-Federal-Requirements-for-Receational-Boats-20231108.pdf
+    checked: '2026-11-10'
+  - label: Paddle UK, Cold water shock infographic
+    url: https://paddleuk.org.uk/cold-water-shock-infographic/
+    checked: '2026-11-10'
+  - label: RNLI, RNLI issues Easter Bank Holiday safety advice
+    url: https://rnli.org/news-and-media/2026/april/02/rnli-issues-easter-bank-holiday-safety-advice
+    checked: '2026-11-10'
+  - label: Willen Lake, Paddle Start Award (kayaking)
+    url: https://www.willenlake.org.uk/activities/on-the-water/paddlesports/paddle-start-award-kayaking/
+    checked: '2026-11-10'
+  - label: Merton Council, Wimbledon Park Watersports Centre paddle awards
+    url: https://merton.gov.uk/leisure-recreation-and-culture/wimbledon-park-watersports-centre/british-canoeing/paddle-awards
+    checked: '2026-11-10'
+  - label: DSWC, Paddle UK Start and Discover Course
+    url: https://www.dswc.org/product/bc-start-and-discover/
+    checked: '2026-11-10'
+  - label: Higher Pursuits, Basic Kayaking Class
+    url: https://higherpursuits.com/classes/basic-kayaking-class/
+    checked: '2026-11-10'
+  - label: Blue Waters Kayaking, Classes
+    url: https://bluewaterskayaking.com/classes/
+    checked: '2026-11-10'
+  - label: Paddle UK, Kayaker in the running for tourism award
+    url: https://paddleuk.org.uk/kayaker-in-the-running-for-tourism-award/
+    checked: '2026-11-10'
+  related:
+  - stand-up-paddleboarding
+  - canoe-a-river-trail
+  - paddle-the-broads
+  - wild-swim
   kit:
   - name: Buoyancy aid
-    why: hire centres and clubs often lend one; buy your own once you paddle often, sized for your weight
+    why: centres and clubs lend one for lessons; if you buy your own, check it fits snugly for your chest size and weight, and in the US that it carries a Coast Guard approval label
     url: https://www.amazon.co.uk/s?k=buoyancy+aid+kayak+adult
   - name: Dry bag
-    why: keeps your phone, keys and a spare layer dry on the water
+    why: keeps your phone, keys and a spare warm layer dry; check the roll-top closure and pick a size that fits behind the seat or in a hatch
     url: https://www.amazon.co.uk/s?k=dry+bag+10+litre
   - name: Water shoes
-    why: for slippery launch spots and rocky entries
+    why: for slippery launch spots and rocky entries; check they stay on when wet and fit inside the cockpit
     url: https://www.amazon.co.uk/s?k=water+shoes+adult
 - id: paddle-a-dragon-boat
   title: Paddle in a dragon boat crew
@@ -6523,25 +7110,214 @@
   regions:
   - uk
   - us
-  why: Riding is a conversation with a large animal carried on through your seat, legs and hands, and learning to make yourself understood is the fascination of it. A first lesson is usually at a walk on a steady horse, with an instructor close by.
+  why: Riding is a conversation with a large animal carried on through your seat, legs and hands, and learning to make yourself understood is the fascination of it. A first lesson is
+    usually at a walk on a quiet, good-natured horse, often led on a lead rein.
   start:
-  - Search the British Horse Society's Find a riding centre page, or the Certified Horsemanship Association's directories of certified instructors and facilities.
-  - Ring the centre, say you are a complete beginner and book a private or small-group lesson.
-  - Wear long trousers and boots with a small heel, and borrow a riding hat from the centre.
+  - Find a British Horse Society (BHS) Approved riding centre in the UK, or a Certified Horsemanship Association (CHA) instructor or facility in the US, and read what it says about adult
+    beginners and rider weight.
+  - Ring or book online for a private beginner lesson or a beginner group. Say you have never ridden, and give your height and weight.
+  - Wear long trousers and boots with a small heel. Ask whether the centre lends hats, or bring one that meets a current standard and has been fitted in a shop.
   links:
-  - label: British Horse Society approved riding centre finder
-    url: https://www.bhs.org.uk/go-riding-and-learn/find-a-riding-centre-or-livery-yard/
+  - label: 'British Horse Society: learning to ride, with its approved riding centre finder'
+    url: https://www.bhs.org.uk/go-riding-and-learn/learning-to-ride/
     region: uk
-    checked: '2026-10-07'
-  - label: 'Certified Horsemanship Association: How to find the right riding instructor'
-    url: https://cha.horse/how-to-find-the-right-riding-instructor/
+    checked: '2026-11-10'
+  - label: 'Trent Park Equestrian Centre, north London: adult riding lessons'
+    url: https://www.trentpark.com/adult-riding-lessons
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Certified Horsemanship Association: why you should find a certified riding instructor'
+    url: https://cha.horse/why-you-should-find-a-certified-riding-instructor/
     region: us
-    checked: '2026-10-07'
-  safety: Wear a properly fitted riding hat and ride only under instruction on a horse the centre has chosen for you.
+    checked: '2026-11-10'
+  safety: Ride only under instruction on a horse the centre has chosen for you, in a correctly fitted hat that meets a current safety standard.
+  seo_title: 'Horse riding lessons for adults: what to expect and cost'
+  description: What a first riding lesson is like, private, group and lunge lessons with UK and US costs, published rider weight limits, hats and how to progress.
+  detail:
+  - h: What a first lesson is really like
+    p:
+    - The British Horse Society says that in a first lesson you will probably be led around an indoor or outdoor arena on a lead rein, and may stay in walk throughout, though you may
+      get a feel for trot. Horses used for novice riders, it says, are good-natured and quiet. Your horse may be brought to the arena for you, but if you ask, the staff should show you
+      how to approach it and lead it yourself.
+    - The BHS Introduction to Riding award sums up the early lessons. It covers what to wear, how to mount and dismount, the correct riding position, how to ask the horse to halt, walk
+      and trot, and how to change direction. Some centres start you with an assessment. Hartpury gives every rider one in their first lesson.
+    - In the US, some stables fold horse care into each session. Gale's Equine Facility, a US stable, starts new beginners on four lessons of about 90 minutes that cover safety, grooming,
+      tacking up, riding at a walk and caring for the tack afterwards.
+  - h: Private, group or lunge lessons
+    table:
+      head:
+      - Riding school
+      - Lessons
+      - Cost (as last listed)
+      rows:
+      - - Trent Park Equestrian Centre, north London (BHS Approved)
+        - 'Private: Adult beginner private lesson; group: Adult beginner group, weekend afternoons'
+        - Private £70 with an instructor, £80 with a senior instructor; beginner group £50
+      - - Hartpury
+        - 'Private: 45 minutes; group: 45 minutes, three or more riders; lunge or other: Lunge lesson, 30 minutes'
+        - 'With a BHSAI-titled instructor: private £27, group £17 each, lunge £17. With a BHSI: private £37, group £26, lunge £26'
+      - - The equestrian centre at Holme Lacy, Herefordshire
+        - 'Private: 45 minutes; group: One hour, up to four riders; lunge or other: One-hour hack, up to six riders'
+        - Private £50; group £40 each; hack £44 for one rider, £34 each for three or more (prices from 1 September 2026)
+      - - Gale's Equine Facility
+        - 'Private: 45 minutes; group: About two hours with one hour of riding; lunge or other: Intro package: four sessions of about 90 minutes'
+        - Private $150; group $125; intro package $400
+      - - Highlander Ranch, McLennan Community College (CHA affiliated)
+        - 'Private: Length not stated; group: Two or more riders'
+        - Private $60; group $40
+    after: In a lunge lesson the instructor controls the horse on a long line as it circles the arena, and you work on your balance and seat rather than on the reins. A private lesson
+      gets you the instructor's full attention; a group is cheaper, and Hole Farm Trekking Centre in Birmingham, for example, moves beginners into its group once they have done three
+      or four led rides. Prices at Hartpury rise with the instructor's qualification.
+  - h: Rider weight limits that schools publish
+    p:
+    - Some riding schools publish an upper weight limit for adult riders; Hartpury says it follows BHS rules on rider weight for horse welfare. These are the figures we found on schools'
+      own pages or their BHS directory entries. If a school does not publish one, ask when you book.
+    table:
+      head:
+      - Riding school
+      - Published limit
+      - Roughly
+      rows:
+      - - Cheshire Riding School, Northwich (BHS Approved)
+        - 13 stone for adult riders
+        - 82.6 kg (182 lb)
+      - - Trent Park Equestrian Centre, north London
+        - 13.5 stone / 85 kg
+        - 189 lb
+      - - Divoky Riding School, Shepton Mallet, Somerset (BHS Approved)
+        - 14 stone for adult lessons
+        - 88.9 kg (196 lb)
+      - - Hartpury
+        - No figure; says it follows BHS rules on rider weight
+        - Ask the centre
+      - - Gale's Equine Facility
+        - Most horses can safely carry 20% of their body weight, including rider and saddle
+        - Depends on the horse
+    after: A stone is 14 lb (about 6.35 kg).
+  - h: Hats, boots and body protectors
+    list:
+    - Hat. The BHS says a riding hat must meet one of the accepted standards and be fitted by a BETA-trained fitter at a tack shop; replace it after a fall, and do not buy second-hand,
+      because damage may not be visible. Its 2025 hat rules for BHS activities accept PAS 015 (2011), VG1 01.040 (2014-12) and BS EN 1384:2023 with a BSI Kitemark or Inspec IC mark;
+      ASTM F1163 (2015 or 2023) with an SEI mark; Snell E2016 or later; and AS/NZS 3838 (2006 onwards). Gale's asks for an ASTM-approved helmet.
+    - Boots with a heel and long trousers. Holme Lacy requires both, and Gale's bans sandals and flip-flops and suggests a sturdy shoe with a small heel for beginners.
+    - Body protector. The British Equestrian Trade Association (BETA) says Level 3 of its 2018 standard is appropriate for general riding, and that a body protector should be replaced
+      at least every three to five years. Divoky asks experienced riders to bring one for cross-country rides.
+  - h: How to build up
+    p:
+    - Expect to move from led walk to trotting on your own, then to canter. Trent Park's adult lessons follow that ladder. Beginner groups are for new riders, intermediate for those
+      who can walk and trot independently, advanced for those who can also canter. To join its hacks (rides out across country rather than in an arena), you must be able to walk, trot
+      and canter independently.
+    - In Britain, the BHS Challenge Awards give that progress a name. Riding Flat Bronze covers walk and trot, leading, mounting and transitions; Silver adds canter; Gold brings riding
+      without stirrups and 20-metre canter circles. There is no age limit, you do not need to be a member, and your coach signs off each skill as you show it. Approved centres match
+      you with a horse, and each centre sets its own price.
+    - In the US, the thing to check is the instructor's credential. CHA certifies English and Western instructors at Levels 1 to 4; Level 1 is qualified to give foundational instruction
+      to beginners with a strong emphasis on safety and group control, and instructors are certified only to the level they can teach. In Britain, the BHS Accredited Professional Coach
+      scheme usually starts at Stage 3 Coach, which covers coaching from beginner level up to Novice Dressage and 80 cm jumping.
+  faq:
+  - q: How much are horse riding lessons for adults?
+    a: As last listed, a 45-minute private lesson cost £27 to £43 at Hartpury, depending on the instructor's qualification, £50 at Holme Lacy, and an adult beginner private £70 at Trent
+      Park in London. In the US, Gale's Equine Facility listed $150 for 45 minutes private, and McLennan Community College's ranch $60.
+  - q: Is there a weight limit for horse riding lessons?
+    a: Some schools set one. Published limits include 13 stone (82.6 kg) at Cheshire Riding School, 13.5 stone (85 kg) at Trent Park and 14 stone (88.9 kg) for adult lessons at Divoky
+      Riding School. If a school does not publish one, ask when you book.
+  - q: What should I wear to my first riding lesson?
+    a: Long trousers, boots or sturdy shoes with a small heel, and a riding hat that meets a current safety standard. Ask whether the centre lends hats; some, such as Holme Lacy, ask
+      you to bring your own.
+  - q: What is a lunge lesson?
+    a: The instructor controls the horse on a long line while it circles, and you concentrate on your balance and seat. Hartpury listed 30-minute lunge lessons from £17.
+  - q: How long does it take to learn to canter?
+    a: There is no set time. Trent Park, for example, expects you to walk and trot on your own first, and the BHS Challenge Awards have no time limits, so you move on when your coach
+      signs you off.
+  - q: What does BHS approved mean?
+    a: BHS Approved centres receive announced and unannounced visits from BHS inspectors, and the BHS says their staff hold qualifications in their knowledge and coaching. All riding
+      schools must by law be licensed and fully insured, the BHS says.
+  inspire:
+  - kind: read
+    person: Zoe Smith, Intelligent Horsemanship
+    line: Learned to ride as an adult by volunteering on outback horse ranches in Australia, went on to lead trail rides in New Zealand, and only later took her first proper riding lesson.
+    title: LEARNING TO HORSE RIDE AS AN ADULT
+    outlet: Intelligent Horsemanship
+    url: https://intelligenthorsemanship.co.uk/learning-to-horse-ride-as-an-adult/
+    checked: '2026-11-10'
+  sources:
+  - label: British Horse Society, Learning to ride
+    url: https://www.bhs.org.uk/go-riding-and-learn/learning-to-ride/
+    checked: '2026-11-10'
+  - label: British Horse Society, Why choose a BHS Approved riding school
+    url: https://www.bhs.org.uk/go-riding-and-learn/why-choose-a-bhs-approved-riding-school/
+    checked: '2026-11-10'
+  - label: British Horse Society, Introduction to Riding
+    url: https://www.bhs.org.uk/go-riding-and-learn/recreational-awards/challenge-awards/introduction-to-riding/
+    checked: '2026-11-10'
+  - label: British Horse Society, Riding flat
+    url: https://www.bhs.org.uk/go-riding-and-learn/recreational-awards/challenge-awards/riding-flat/
+    checked: '2026-11-10'
+  - label: British Horse Society, Challenge Awards FAQs
+    url: https://www.bhs.org.uk/go-riding-and-learn/recreational-awards/challenge-awards/faqs/
+    checked: '2026-11-10'
+  - label: British Horse Society, Qualifications and accreditation explained
+    url: https://www.bhs.org.uk/go-riding-and-learn/qualifications-and-accreditation-explained/
+    checked: '2026-11-10'
+  - label: British Horse Society, Hats and helmets
+    url: https://www.bhs.org.uk/go-riding-and-learn/riding-out-hacking/what-to-wear/hats-and-helmets/
+    checked: '2026-11-10'
+  - label: British Horse Society, Event hat rules 2025
+    url: https://www.bhs.org.uk/media/wzke5zhu/2025-bhs-event-hat-guide.pdf
+    checked: '2026-11-10'
+  - label: British Horse Society, Cheshire Riding School Ltd
+    url: https://www.bhs.org.uk/directories/riding-centres/cheshire-riding-school-ltd/
+    checked: '2026-11-10'
+  - label: British Horse Society, Divoky Riding School
+    url: https://www.bhs.org.uk/directories/riding-centres/divoky-riding-school/
+    checked: '2026-11-10'
+  - label: British Equestrian Trade Association, Body protectors
+    url: https://beta-uk.org/body-protectors/
+    checked: '2026-11-10'
+  - label: Certified Horsemanship Association, Why you should find a certified riding instructor
+    url: https://cha.horse/why-you-should-find-a-certified-riding-instructor/
+    checked: '2026-11-10'
+  - label: Certified Horsemanship Association, CHA certifications
+    url: https://cha.horse/cha-certifications-2/
+    checked: '2026-11-10'
+  - label: Trent Park Equestrian Centre, Riding lessons for adults
+    url: https://www.trentpark.com/adult-riding-lessons
+    checked: '2026-11-10'
+  - label: Trent Park Equestrian Centre, Home
+    url: https://www.trentpark.com/home
+    checked: '2026-11-10'
+  - label: Hartpury, Riding lessons
+    url: https://estore.hartpury.ac.uk/product-catalogue/equine/riding-lessons
+    checked: '2026-11-10'
+  - label: Herefordshire, Ludlow and North Shropshire College, Holme Lacy price list (September 2026)
+    url: https://hlnsc.ac.uk/wp-content/uploads/2026/08/price-list.doc
+    checked: '2026-11-10'
+  - label: Birmingham City Council, Hole Farm Trekking Centre lessons
+    url: https://www.birmingham.gov.uk/info/20089/parks/403/hole_farm_trekking_centre/3
+    checked: '2026-11-10'
+  - label: Gale's Equine Facility, Our lesson program
+    url: https://galesequinefacility.com/the-lesson-program.html
+    checked: '2026-11-10'
+  - label: McLennan Community College, Highlander Ranch riding lessons
+    url: https://www.mclennan.edu/highlander-ranch/lessons.html
+    checked: '2026-11-10'
+  - label: Green Chimneys, Lunge line lessons enhance students' riding skills
+    url: https://www.greenchimneys.org/news-events/lunge-line-lessons-enhance-students-riding-skills
+    checked: '2026-11-10'
+  related:
+  - try-pilates
+  - learn-to-fish
+  - walk-a-national-trail
+  - nordic-walking-lesson
   kit:
   - name: Riding hat
-    why: riding schools often lend one; if you buy, check it meets a current safety standard and is fitted in a shop
-    url: https://www.amazon.co.uk/s?k=riding+hat
+    why: many schools lend one for early lessons; if you buy, check the label shows a current standard and its quality mark, and have it fitted in a shop
+    url: https://www.amazon.co.uk/s?k=riding+hat+PAS015
+  - name: Short riding boots
+    why: for the small heel riding schools ask for; check they fit with the socks you will ride in
+    url: https://www.amazon.co.uk/s?k=jodhpur+boots+adult
+  - name: Riding gloves
+    why: for grip on the reins; check the fingers are thin enough to feel the rein
+    url: https://www.amazon.co.uk/s?k=riding+gloves+adult
 - id: swim-swimathon
   title: Swim a Swimathon distance
   category: move
@@ -23499,3 +24275,1321 @@
   - join-a-guided-bike-ride
   - ride-a-rail-trail
   - long-distance-cycle-route
+- id: learn-flower-arranging
+  title: Learn flower arranging
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Flower arranging combines design principles, such as how to use colour, with practical craft such as wiring, tying and keeping cut flowers in good condition. Beginners' courses
+    supply the flowers each week, and in the UK there are flower clubs that meet monthly to watch demonstrations and try it themselves.
+  start:
+  - Find a beginners' floristry or floral design course at a further-education or community college, or a one-day class at a public garden.
+  - Check whether flowers are included in the fee and which tools you need to bring; Utah, for example, asks for floral scissors, pruners and an apron.
+  - In the UK, look up your nearest NAFAS flower club and go along to a meeting to see a demonstration.
+  links:
+  - label: 'NAFAS: find a flower club by area'
+    url: https://www.nafas.org.uk/nafas-areas/
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Tameside College: Floristry, Beginners Flower Arranging (Ashton-under-Lyne)'
+    url: https://www.tameside.ac.uk/pages/course_info.aspx?x=182677
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Longwood Gardens: Floral Design Foundations (Pennsylvania)'
+    url: https://longwoodgardens.org/events-performances/events/floral-design-foundations
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Flower arranging classes for beginners: UK and US'
+  description: Where beginners can learn flower arranging, from college floristry courses to NAFAS flower clubs, what classes cover and what they cost in the UK and US.
+  detail:
+  - h: What you learn, and where
+    p:
+    - Beginners' courses mix design principles with hands-on technique. Tameside College's six-week evening course covers tied designs, simple wiring, using colour and the basic conditioning
+      and care of flowers. Longwood Gardens' one-day class covers the elements and principles of design and has you make round and parallel arrangements.
+    - The National Association of Flower Arrangement Societies (NAFAS) is a UK charity with about 30,000 members. Its clubs usually meet monthly for a demonstration, talk, workshop or
+      competition, and often run flower festivals and garden visits. The Surrey area says everyone is welcome to come to a club meeting to see what goes on, and that knowing nothing
+      about flowers is no barrier.
+    - In the US, National Garden Clubs runs Flower Show Schools, which teach judging, entering, competing in and chairing a flower show. That is a step for later, once you are arranging
+      regularly.
+  - h: Beginners' courses compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Tameside College, Greater Manchester
+        - Six Tuesday evenings, three hours each; all materials including flowers provided
+        - £165
+      - - Longwood Gardens, Pennsylvania
+        - One day, 9am to 4.30pm; flowers and classroom tools provided
+        - $275, or $247 for members
+      - - University of Utah Lifelong Learning, Salt Lake City
+        - Four evening sessions of 90 minutes; take your arrangements home
+        - $109 tuition plus $220 fee for flowers and materials ($329)
+    after: At Tameside the designs stay at the college, though learners can buy them at a discount. Utah asks students to bring floral scissors, bypass pruners, a paring knife, an apron
+      and a clean rag. Longwood's class is the required first course of its Floral Design Certificate.
+  faq:
+  - q: Do I need any experience to join a flower arranging class?
+    a: No. Tameside College lists no entry requirements for its beginners' course, and Utah's Lifelong Learning classes are open to anyone aged 18 or over.
+  - q: Are flowers included in a floristry course?
+    a: Often, but check. Tameside and Longwood Gardens include the flowers, while the University of Utah charges a separate $220 fee for flowers and materials.
+  - q: How do I find a flower club near me?
+    a: NAFAS lists its regional areas online, and area pages such as Surrey's list clubs with meeting times and venues.
+  - q: Do I get to keep my flower arrangements?
+    a: It depends on the course. Utah students take theirs home, while at Tameside College designs stay but can be bought at a discount.
+  inspire:
+  - kind: read
+    person: Claire Bryant, Warnham Flower Club
+    line: Won a silver-gilt medal in the floral art section of the Chelsea Flower Show, the year after taking silver there.
+    title: Chelsea Flower Show award for Warnham Flower Club member
+    outlet: Sussex World
+    url: https://www.bognor.co.uk/news/people/chelsea-flower-show-award-for-warnham-flower-club-member-968010
+    checked: '2026-11-10'
+  sources:
+  - label: NAFAS, About NAFAS
+    url: https://www.nafas.org.uk/?p=518
+    checked: '2026-11-10'
+  - label: NAFAS, Areas
+    url: https://www.nafas.org.uk/nafas-areas/
+    checked: '2026-11-10'
+  - label: NAFAS, Surrey Area clubs
+    url: https://nafas.org.uk/?p=441
+    checked: '2026-11-10'
+  - label: Tameside College, Floristry - Beginners Flower Arranging (Jan)
+    url: https://www.tameside.ac.uk/pages/course_info.aspx?x=182677
+    checked: '2026-11-10'
+  - label: Longwood Gardens, Floral Design Foundations
+    url: https://longwoodgardens.org/events-performances/events/floral-design-foundations
+    checked: '2026-11-10'
+  - label: University of Utah Continuing Education, Floral Design Fundamentals
+    url: https://continue.utah.edu/lifelong/class/llhg_947_floral_design_fundamentals
+    checked: '2026-11-10'
+  - label: National Garden Clubs, Our schools
+    url: https://gardenclub.org/our-schools
+    checked: '2026-11-10'
+  kit:
+  - name: Floral scissors
+    why: for cutting stems cleanly in class; check whether your course provides them first
+    url: https://www.amazon.co.uk/s?k=floral+scissors
+  - name: Bypass pruners
+    why: for thicker and woody stems; one US course asks students to bring a pair
+    url: https://www.amazon.co.uk/s?k=bypass+pruners+secateurs
+  related:
+  - visit-an-open-garden
+  - grow-a-wildflower-patch
+  - community-garden-plot
+  - learn-candle-making
+- id: learn-candle-making
+  title: Learn to make candles
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Candle making means choosing a wax, sizing a wick and blending a fragrance, and getting them to work together is a craft in itself. A beginners' workshop usually takes a few hours,
+    and you go home with candles you poured yourself.
+  start:
+  - Book a beginners' workshop through a craft-course listing in the UK or a community college's continuing-education programme in the US.
+  - Check which waxes it uses (soy, beeswax or paraffin) and what you will take home.
+  - At home, melt wax in a double boiler with a thermometer, and never leave it unattended.
+  links:
+  - label: 'CraftCourses: candle making courses in the UK'
+    url: https://www.craftcourses.com/categories/candle/candle-making
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Olympic College: Introduction to Candle Making (Washington state; check for new dates)'
+    url: https://www.olympic.edu/events-calendar/introduction-candle-making
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Candle making workshops for beginners: what it costs'
+  description: What a beginners' candle making workshop covers, the main waxes, how to melt wax safely at home, and what classes cost at named UK and US providers.
+  detail:
+  - h: Waxes, wicks and fragrance
+    p:
+    - Workshops usually work with soy wax, beeswax or paraffin. Olympic College's four-hour class covers choosing wax, blending fragrances, sizing wicks and pouring safely, and students
+      make a travel tin candle, a votive and a pair of tapers rolled from beeswax sheets.
+    - Fragrance needs care. Advice from the British Candlemakers Federation and Cornwall Council Trading Standards says even a small amount of fragrance can lower the flash point of
+      the wax mixture, that fragrances with a flash point below 60C (140F) should be avoided, and that candle fires are more likely with high fragrance content.
+    - If you later want to sell candles in the UK, the same advice sets out the labelling and product safety rules that apply.
+  - h: Workshops compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - RHS Garden Bridgewater, Greater Manchester
+        - Two and a half hours; soy wax, scent blending and dried-flower decoration; garden entry included
+        - £65 (2025)
+      - - Rolled Beeswax Candles, Teddington (via CraftCourses)
+        - One and a half hours
+        - £42
+      - - Olympic College, Bremerton, Washington
+        - Four hours; three candles including rolled beeswax tapers
+        - $69 (2025)
+      - - Pitt Community College, North Carolina
+        - Two hours; choose your own scents; all materials provided
+        - $45
+    after: Prices on listing sites change often, and most workshops run a few times a year, so check a provider's own page for the next date.
+  faq:
+  - q: What wax is best for candle making beginners?
+    a: Many beginners' workshops use soy wax, and some teach rolled beeswax candles, which need no melting. CraftCourses lists workshops in paraffin, soy and beeswax.
+  - q: How long does a candle making workshop take?
+    a: The workshops compared here last between one and a half and four hours. Olympic College's class runs from 10am to 2pm.
+  - q: Is it safe to make candles at home?
+    a: With care. Candle Science advises using a double boiler and a thermometer, never leaving the wax unattended and keeping a fire extinguisher within reach.
+  - q: What rules apply to selling homemade candles in the UK?
+    a: Rules apply. Trading Standards advice covers general product safety law, fragrance labelling and the warning symbols a candle label must carry.
+  sources:
+  - label: CraftCourses, Candle making in-person courses
+    url: https://www.craftcourses.com/categories/candle/candle-making
+    checked: '2026-11-10'
+  - label: Olympic College, Introduction to Candle Making
+    url: https://www.olympic.edu/events-calendar/introduction-candle-making
+    checked: '2026-11-10'
+  - label: RHS, Autumn Candle Making Workshop at RHS Garden Bridgewater
+    url: https://www.rhs.org.uk/Gardens/RHS-Garden-Bridgewater/ViewEvent?EFID=4094
+    checked: '2026-11-10'
+  - label: Visit Greenville NC, Intro to Candlemaking (Pitt Community College)
+    url: https://www.visitgreenvillenc.com/event/intro-to-candlemaking/18604/
+    checked: '2026-11-10'
+  - label: British Candlemakers Federation and Cornwall Council Trading Standards, Candles advice pack (2024)
+    url: https://www.britishcandles.org/documents/www.britishcandles.org/Advice_Sheet_2024/candlesadvicepack(2024).pdf
+    checked: '2026-11-10'
+  - label: Candle Science, How to melt wax using a double boiler
+    url: https://support.candlescience.com/en_us/how-to-melt-wax-using-a-double-boiler-r1JeMXG0Zx.md
+    checked: '2026-11-10'
+  safety: Melt wax in a double boiler, watch its temperature with a thermometer, never leave it unattended and keep a fire extinguisher within reach.
+  kit:
+  - name: Wax melting pitcher
+    why: sits in a pan of water as a double boiler; check it has a pouring spout and a heat-proof handle
+    url: https://www.amazon.co.uk/s?k=wax+melting+pitcher+candle
+  - name: Candle thermometer
+    why: for watching the wax temperature; check its range goes above 100C
+    url: https://www.amazon.co.uk/s?k=candle+making+thermometer
+  related:
+  - learn-soap-making
+  - learn-flower-arranging
+  - try-pottery-on-the-wheel
+  - make-a-stained-glass-panel
+- id: learn-soap-making
+  title: Learn to make soap
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Cold-process soap is made from scratch with lye, which is sodium hydroxide, and learning it lets you choose the ingredients, scent and colour of every bar. Melt-and-pour soap
+    starts from a ready-made base, so you can begin with no lye at all.
+  start:
+  - Try a melt-and-pour class first, or book a beginners' cold-process workshop that covers lye safety.
+  - Ask what you take home; cold-process bars need time to cure before use.
+  - Before making cold-process soap at home, get gloves, goggles, long sleeves and a mask, and somewhere well ventilated to work.
+  links:
+  - label: 'CraftCourses: soap making courses in the UK'
+    url: https://www.craftcourses.com/categories/natural-beauty-and-body-products/soap-making
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Olympic College: Soap Making, Crafting Cold Process Soap (Washington state; check for new dates)'
+    url: https://www.olympic.edu/events-calendar/soap-making-crafting-cold-process-soap
+    region: us
+    checked: '2026-11-10'
+  - label: 'McKinney Center: Intro to Soap Making, melt and pour (Jonesborough, Tennessee)'
+    url: https://mc-kinney-center.coursestorm.com/course/intro-to-soap-making
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Soap making classes for beginners: cold process and costs'
+  description: How beginners learn to make soap, melt-and-pour versus cold process with lye, the safety basics, UK rules for selling and what classes cost.
+  detail:
+  - h: Two ways in
+    p:
+    - Melt-and-pour is the gentler start. At the McKinney Center in Tennessee, students melt a ready-made goat's milk soap base, add their own colours, scents and botanicals, and take
+      home six bars; the class description says this bypasses handling raw lye.
+    - Cold process is the traditional method and uses lye, which is sodium hydroxide. Olympic College's four-hour class teaches ingredient selection, lye safety and scenting and colouring,
+      and students collect their bar once it has cured.
+    - The University of Texas at Arlington's Hybrid Atelier says never to handle lye without gloves, goggles, long sleeves and a mask, always to add lye to water slowly and never water
+      to lye, and to mix it only in a well-ventilated space. If lye gets in the eyes, it says to flush them with water for at least 15 minutes and seek medical attention.
+    - Selling is a different matter. In Great Britain soap counts as a cosmetic, and GOV.UK says a cosmetic's safety must be checked by a qualified safety assessor before it is made
+      available to consumers, with a Responsible Person who notifies the Office for Product Safety and Standards.
+  - h: Classes compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Worthing (via CraftCourses)
+        - Natural cold-process soap making; two hours
+        - £35
+      - - London (via CraftCourses)
+        - Beginners Soap Making Course; five hours
+        - £150
+      - - Olympic College, Bremerton, Washington
+        - Cold process, four hours; all materials included
+        - $69 (2025)
+      - - McKinney Center, Jonesborough, Tennessee
+        - Melt and pour, two and a half hours; take home six bars
+        - $109
+    after: Listings on CraftCourses change often; check the provider's own page for what is included and the next date.
+  faq:
+  - q: Is soap making with lye dangerous?
+    a: Lye needs careful handling. The University of Texas at Arlington advises gloves, goggles, long sleeves and a mask, and adding lye to water slowly, never the other way round.
+  - q: What is the difference between melt and pour and cold process soap?
+    a: Melt-and-pour uses a ready-made soap base that you melt and customise, with no raw lye. Cold process means making soap from scratch with lye, and the bars must cure before use.
+  - q: Can I sell homemade soap in the UK?
+    a: Only after meeting cosmetics rules. GOV.UK says a qualified safety assessor must check a cosmetic before it reaches consumers, and Southwark Trading Standards lists toilet soaps
+      as cosmetic products.
+  - q: How long does a soap making class take?
+    a: The beginners' classes compared here run from two to five hours, and cold-process bars then need time to cure.
+  inspire:
+  - kind: read
+    person: Claire Williams, from Cotherstone, Teesdale
+    line: Launched a range of handmade soaps after retiring to Teesdale, and sells them at craft fairs through Cotherstone Kitchen, the business she runs with her husband.
+    title: Couple become soap stars with homespun business
+    outlet: Teesdale Mercury
+    url: https://teesdalemercury.co.uk/news/couple-become-soap-stars-with-homespun-business/
+    checked: '2026-11-10'
+  sources:
+  - label: CraftCourses, Soap making courses
+    url: https://www.craftcourses.com/categories/natural-beauty-and-body-products/soap-making
+    checked: '2026-11-10'
+  - label: 'Olympic College, Soap Making: Crafting Cold Process Soap'
+    url: https://www.olympic.edu/events-calendar/soap-making-crafting-cold-process-soap
+    checked: '2026-11-10'
+  - label: McKinney Center, Intro. to Soap Making
+    url: https://mc-kinney-center.coursestorm.com/course/intro-to-soap-making
+    checked: '2026-11-10'
+  - label: University of Texas at Arlington Hybrid Atelier, Lye (sodium hydroxide)
+    url: https://hybridatelier.uta.edu/equipment/138-lye-%28sodium-hydroxide%29
+    checked: '2026-11-10'
+  - label: GOV.UK, Making cosmetic products available to consumers in Great Britain
+    url: https://www.gov.uk/guidance/making-cosmetic-products-available-to-consumers-in-great-britain
+    checked: '2026-11-10'
+  - label: Southwark Council Trading Standards, Cosmetic products brief guidance (2021)
+    url: https://services.southwark.gov.uk/assets/attach/11045/Cosmetic-products-brief-guidance-with-compliance-flow-chart-for-producers-importers-2021.pdf
+    checked: '2026-11-10'
+  safety: Lye (sodium hydroxide) can burn skin and eyes, so wear gloves, goggles, long sleeves and a mask, add lye to water and never water to lye, and work somewhere well ventilated.
+  kit:
+  - name: Melt and pour soap base
+    why: a ready-made base for making soap without lye; check the ingredients and whether it suits your moulds
+    url: https://www.amazon.co.uk/s?k=melt+and+pour+soap+base
+  - name: Safety goggles
+    why: for cold-process soap; check they seal around the eyes against splashes
+    url: https://www.amazon.co.uk/s?k=chemical+splash+safety+goggles
+  related:
+  - learn-candle-making
+  - learn-a-heritage-craft
+  - try-pottery-on-the-wheel
+  - learn-flower-arranging
+- id: learn-cross-stitch
+  title: Learn cross stitch
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Cross stitch is counted work, built one small cross at a time over the squares of a gridded fabric, so you follow a chart rather than draw a design. The Embroiderers' Guild of
+    America calls it an easy entry point because there is only one stitch to learn.
+  start:
+  - Book a short beginners' class at an arts centre, or adult-education college, or start with a small kit on 14-count Aida, the fabric the Embroiderers' Guild of America suggests for
+    beginners.
+  - Separate your stranded cotton (embroidery floss in the US) into single strands, then stitch with two strands together over one square of the fabric.
+  - Find the middle of the chart from the arrows at its edges, fold your fabric to find its centre, and start stitching from there.
+  links:
+  - label: 'The Crescent, Belfast: An Introduction to Cross Stitch'
+    url: https://crescentarts.org/courses/arts-and-crafts/craft/an-introduction-to-cross-stitch
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Nottingham College: Cross Stitch Embroidery for Beginners'
+    url: https://www.nottinghamcollege.ac.uk/courses/cross-stitch-embroidery-for-beginners-part-time
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Embroiderers'' Guild of America: about the guild and its chapters'
+    url: https://egausa.org/about-us/
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Cross stitch for beginners: classes, Aida and charts'
+  description: How to start cross stitch, what Aida fabric counts and strands mean, how to read a chart, and what beginners' classes cost in the UK and US.
+  detail:
+  - h: Fabric, thread and charts
+    p:
+    - 'Cross stitch is worked from a chart on a fabric woven as a grid. The count is the number of stitches to the inch (2.5cm), so the lower the count, the bigger each cross. The Embroiderers''
+      Guild of America says many patterns are designed for 14-count Aida and recommends it for beginners. Evenweave and linen are finer: you stitch over one or two threads, and the count
+      is double that of Aida.'
+    - Stranded cotton, sold in the US as embroidery floss, comes as six strands twisted together. The guild advises separating them before you stitch, using two strands on 14-count Aida,
+      and three for black (DMC 310). You secure the start and end of the thread under a line of stitches on the back.
+    - For a wider range of stitches, see our page on learning hand embroidery.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Crescent, Belfast
+        - Two evening classes; fabrics and counts, a simple project to finish at home; all materials provided; open to all levels
+        - £35 or £33, including materials
+      - - Nottingham College
+        - Weekly afternoon class, January to March 2027; reading simple charts and finishing a small project; no experience needed
+        - £165
+      - - Community College of Baltimore County, Maryland
+        - 'The Ins and Outs of Counted Cross Stitch: weekly afternoon class (spring 2025)'
+        - $53, plus a $10 materials fee
+      - - University of Utah Lifelong Learning
+        - 'Contemporary Cross Stitching: reading a pattern, choosing supplies, common stitches (spring 2025)'
+        - $95, including a $20 fee for all materials
+    after: In the US, the Embroiderers' Guild of America says it has 220 chapters across the country, two fully virtual chapters and many groups that meet both in person and online.
+      You can join through a local chapter or as a member-at-large.
+  faq:
+  - q: What count Aida is best for beginners?
+    a: The Embroiderers' Guild of America recommends 14-count Aida for beginners, and says many patterns are designed for it.
+  - q: How many strands of floss do you use for cross stitch?
+    a: The general rule is two strands on 14-count Aida. Lower counts usually need more strands, and the guild notes that black is often stitched with three.
+  - q: What is the difference between cross stitch and embroidery?
+    a: Cross stitch is counted embroidery, worked from a chart over the squares of a gridded fabric, and the Embroiderers' Guild of America notes there is only one stitch to learn.
+  - q: Do you tie a knot in cross stitch?
+    a: The Embroiderers' Guild of America advises securing the start and end of the thread under a line of stitches on the back.
+  inspire:
+  - kind: read
+    person: Paul Grant, from Wilmont, Minnesota
+    line: Took up cross stitch about 25 years ago, after offering to help his wife with one, and has been named grand champion in the open class at the Nobles County Fair.
+    title: Challenge from wife leads Wilmont man into stitching hobby
+    outlet: The Globe (Worthington, Minnesota)
+    url: https://www.dglobe.com/news/local/challenge-from-wife-leads-wilmont-man-into-stitching-hobby
+    checked: '2026-11-10'
+  sources:
+  - label: Embroiderers' Guild of America, 10 Essential Things to Know Before Starting Cross Stitch
+    url: https://egausa.org/10-essential-things-to-know-before-starting-cross-stitch/
+    checked: '2026-11-10'
+  - label: Embroiderers' Guild of America, About us
+    url: https://egausa.org/about-us/
+    checked: '2026-11-10'
+  - label: 'Embroiderers'' Guild of America, Join EGA: memberships'
+    url: https://egausa.org/join-us/
+    checked: '2026-11-10'
+  - label: The Crescent, An Introduction to Cross Stitch
+    url: https://crescentarts.org/courses/arts-and-crafts/craft/an-introduction-to-cross-stitch
+    checked: '2026-11-10'
+  - label: Nottingham College, Cross Stitch Embroidery for Beginners
+    url: https://www.nottinghamcollege.ac.uk/courses/cross-stitch-embroidery-for-beginners-part-time
+    checked: '2026-11-10'
+  - label: Community College of Baltimore County, The Ins and Outs of Counted Cross Stitch
+    url: https://ccbcmd.edu/Programs-and-Courses-Finder/course/PDV/374.html
+    checked: '2026-11-10'
+  - label: University of Utah Lifelong Learning, Contemporary Cross Stitching
+    url: https://continue.utah.edu/class/LLCFT/378
+    checked: '2026-11-10'
+  kit:
+  - name: Beginner cross stitch kit
+    why: fabric, thread, needle and chart together; check the fabric count (the EGA suggests 14-count for beginners) and that the chart is included
+    url: https://www.amazon.co.uk/s?k=beginner+cross+stitch+kit+14+count+aida
+  - name: Tapestry needles
+    why: the needle type used for cross stitch; check the size suits your fabric count
+    url: https://www.amazon.co.uk/s?k=tapestry+needles+cross+stitch
+  related:
+  - learn-embroidery
+  - learn-lacemaking
+  - make-a-patchwork-quilt
+  - join-a-knitting-group
+- id: learn-portrait-painting
+  title: Learn to paint portraits
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A portrait asks you to get the structure of a head right, then the subtle features and expression that make a likeness, and then the colours of skin. In classes such as City Lit's
+    you paint from a live model, who holds the same pose across two sessions.
+  start:
+  - Choose a medium; beginners' portrait courses are taught in both oils and acrylics, so check each course's materials list or supplies requirement.
+  - 'Check the level: some courses are for absolute beginners, others ask for some drawing or painting experience first.'
+  - Book a course with a live sitter if you can, or a weekend that keeps one pose over two sessions.
+  links:
+  - label: 'City Lit, London: life painting and portraiture courses'
+    url: https://www.citylit.ac.uk/courses/art-and-design/painting/life-painting-portraiture
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Heatherley''s, London: portrait painting courses'
+    url: https://www.heatherleys.org/product-category/part-time-courses/painting-courses/portrait-painting-courses/
+    region: uk
+    checked: '2026-11-10'
+  - label: 'North Seattle College: Acrylic Portrait Painting for the Absolute Beginner'
+    url: https://conted.northseattle.edu/node/95186
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Portrait painting classes for beginners: UK and US'
+  description: What a beginners' portrait painting class covers, how it differs from life drawing and oil painting, and what courses cost in London and the US.
+  detail:
+  - h: What you learn
+    p:
+    - City Lit in London says its life painting and portraiture courses build on life drawing and move on to painting figures and portraits from life. Beginners cover the structure and
+      volume of the head and how to mix naturalistic skin tones. Its portrait weekend keeps the model in the same pose across two sessions.
+    - At Heatherley's School of Fine Art in Chelsea, one all-levels oil portrait course runs over 12 Saturdays, with each pose held for four weeks, so students paint three portraits.
+      Courses do not always use a sitter. The Minneapolis College of Art and Design's oil portrait course works from portraits by past and present artists, and asks for drawing and painting
+      experience first.
+    - Portrait courses differ from life drawing, where you draw the whole figure, and from a general oil painting course, where the subject varies. Some, like City Lit's evening course,
+      start with drawing and move on to paint.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Portrait painting: two session pose; weekend with a model'
+        - £249, or £199 senior and £162 concession
+      - - City Lit, London
+        - 'Drawing and painting portraits: traditional techniques; evening course from drawing to painting with a life model; all levels'
+        - £349, or £279 senior and £227 concession
+      - - Heatherley's, London
+        - Portrait Painting All Levels and other part-time portrait courses
+        - £296 to £790
+      - - North Seattle College, Washington
+        - 'Acrylic Portrait Painting for the Absolute Beginner: six Thursday mornings (summer 2026)'
+        - $225
+      - - Minneapolis College of Art and Design
+        - 'Portraiture in Painting 1: weekly evening class in oils; experience required (summer 2026)'
+        - $507, including a $12 material fee; supplies about $250 to $275 extra
+    after: Check the materials list before you book. The Heatherley's all-levels course asks students to bring ten oil colours, brushes, a palette and canvas, and does not allow turpentine
+      or white spirit in the studio.
+  faq:
+  - q: Can a beginner take a portrait painting class?
+    a: Yes, at some schools. North Seattle College runs a course for absolute beginners, and City Lit's evening portrait course is open to all levels, though some drawing experience
+      helps.
+  - q: Do portrait painting classes use a live model?
+    a: Some do. City Lit's portrait weekend keeps one model in the same pose for two sessions, while some, such as MCAD's, work from portraits by other artists instead.
+  - q: How long does it take to paint a portrait in class?
+    a: It depends on the course. City Lit's portrait weekend gives two sessions to one pose, and one Heatherley's course holds each pose for four Saturdays.
+  sources:
+  - label: City Lit, Life Painting and Portraiture courses in London
+    url: https://www.citylit.ac.uk/courses/art-and-design/painting/life-painting-portraiture
+    checked: '2026-11-10'
+  - label: Heatherley's, Portrait Painting Courses
+    url: https://www.heatherleys.org/product-category/part-time-courses/painting-courses/portrait-painting-courses/
+    checked: '2026-11-10'
+  - label: Heatherley's, Portrait Painting All Levels
+    url: https://www.heatherleys.org/?p=1007
+    checked: '2026-11-10'
+  - label: North Seattle College Continuing Education, Acrylic Portrait Painting for the Absolute Beginner
+    url: https://conted.northseattle.edu/node/95186
+    checked: '2026-11-10'
+  - label: Minneapolis College of Art and Design, Portraiture in Painting 1 (In Person)
+    url: https://www.mcad.edu/academics/continuing-education/courses/portraiture-painting-1-person
+    checked: '2026-11-10'
+  kit:
+  - name: Portable easel
+    why: holds the canvas upright at eye level; check the height range and that it takes your canvas size
+    url: https://www.amazon.co.uk/s?k=portable+easel+painting
+  - name: Tear-off palette paper
+    why: for mixing skin tones without cleaning a palette; check the size fits your paint box
+    url: https://www.amazon.co.uk/s?k=tear+off+palette+paper
+  related:
+  - go-to-a-life-drawing-class
+  - learn-oil-painting
+  - paint-in-acrylics
+  - learn-to-draw
+- id: learn-digital-drawing
+  title: Learn to draw on a tablet
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  - anywhere
+  collection: arts
+  why: Drawing on a tablet gives you brushes, colours and layers you can change or undo, and a whole sketchbook in one device. Short courses teach the basics in four to six sessions,
+    and Procreate, the app the courses below teach, is listed at £12.99 on the UK App Store.
+  start:
+  - Work out what you have. Procreate is an iPad app (a separate Procreate Pocket is for iPhone) and works best with an Apple Pencil or compatible stylus; on a Windows, Mac or Linux
+    computer you can use a drawing tablet with free software such as Krita.
+  - Watch Procreate's four-part Beginners Series, which covers brushes, colour, layers, editing and simple animation.
+  - Book a short course to learn layers, brushes and colour palettes with a tutor, and bring your own device; City Lit, for one, cannot lend iPads.
+  links:
+  - label: 'City Lit, London: Procreate for illustration'
+    url: https://www.citylit.ac.uk/courses/procreate-for-illustration
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Minneapolis College of Art and Design: Introduction to Procreate (online)'
+    url: https://www.mcad.edu/academics/continuing-education/courses/introduction-procreate-ipad-drawing-techniques-online-5
+    region: us
+    checked: '2026-11-10'
+  - label: 'Procreate: Beginners Series'
+    url: https://procreate.com/beginners-series
+    region: any
+    checked: '2026-11-10'
+  seo_title: 'Digital drawing on an iPad or tablet: courses and costs'
+  description: How to start drawing on an iPad or graphics tablet, which apps to use, what beginners' Procreate courses cover and what they cost in the UK and US.
+  detail:
+  - h: What you need
+    p:
+    - Procreate is an iPad app made by Savage Interactive. The UK App Store lists it at £12.99 and says it needs iPadOS 16.3 or later; MCAD's course lists it at $12.99 in the US. Courses
+      ask for an iPad that can run it, ideally with an Apple Pencil.
+    - On a computer, Krita is free and open-source painting software for Windows, macOS and Linux. Its own FAQ says it "isn't much fun without a pressure sensitive tablet", the kind
+      of pen-and-pad drawing tablet that plugs into a computer. It is not available for iPad.
+    - Short courses teach the parts that are new on a screen. City Lit's Procreate course covers creating and managing files, digital brushes, colour palettes, texture, layers and layer
+      masks, and editing images. The School of the Art Institute of Chicago's digital drawing course starts with traditional media before moving into Procreate.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Procreate for illustration: four or five three-hour sessions in person; bring your own iPad'
+        - £239 to £259, or £191 to £207 senior and £155 to £168 concession
+      - - Minneapolis College of Art and Design
+        - Introduction to Procreate; six two-hour sessions online on Zoom; previous drawing helpful but not required (summer 2026)
+        - $279
+      - - School of the Art Institute of Chicago, Continuing Studies
+        - 'Digital Drawing and Illustration: weekly evening class, all levels including no drawing experience (spring 2026)'
+        - $675
+      - - Procreate
+        - Beginners Series; four-part step-by-step series on its website
+        - No price shown
+    after: The fees above are for tuition only. You also need the device; City Lit says it is unable to provide iPads, and MCAD's online course also asks for a camera and microphone
+      for class meetings.
+  faq:
+  - q: Do I need an Apple Pencil to use Procreate?
+    a: City Lit says you need an iPad with Procreate installed and, ideally, a stylus such as an Apple Pencil. MCAD asks for an Apple Pencil or compatible pencil.
+  - q: How much does Procreate cost?
+    a: The UK App Store lists Procreate at £12.99, and MCAD's course page gives the US price as $12.99. Neither mentions a subscription.
+  - q: Can I draw digitally without an iPad?
+    a: Yes. Krita is free painting software for Windows, macOS and Linux, and its makers recommend a pressure-sensitive tablet to use with it.
+  - q: Do I need to be able to draw before learning digital art?
+    a: Not always. MCAD says previous drawing experience is helpful but not required, and SAIC's course is open to people with no drawing experience.
+  inspire:
+  - kind: read
+    person: Gregg Liberi, from Sewickley, Pennsylvania
+    line: Began drawing every day on an iPhone, moved to the iPad when it came out, and showed the drawings in an exhibition at 707 Penn Gallery.
+    title: Sewickley artist takes to iPad to create own brand of art
+    outlet: TribLive
+    url: https://archive.triblive.com/aande/museums/sewickley-artist-takes-to-ipad-to-create-own-brand-of-art
+    checked: '2026-11-10'
+  sources:
+  - label: City Lit, Procreate for illustration
+    url: https://www.citylit.ac.uk/courses/procreate-for-illustration
+    checked: '2026-11-10'
+  - label: Minneapolis College of Art and Design, Introduction to Procreate iPad Drawing Techniques (Online)
+    url: https://www.mcad.edu/academics/continuing-education/courses/introduction-procreate-ipad-drawing-techniques-online-5
+    checked: '2026-11-10'
+  - label: School of the Art Institute of Chicago Continuing Studies, Digital Drawing and Illustration
+    url: https://continuingstudies.saic.edu/digital-drawing-and-illustration/1410-2457
+    checked: '2026-11-10'
+  - label: Procreate, Beginners Series
+    url: https://procreate.com/beginners-series
+    checked: '2026-11-10'
+  - label: Procreate, Procreate Handbook introduction
+    url: https://help.procreate.com/procreate/handbook/introduction
+    checked: '2026-11-10'
+  - label: Apple App Store (UK), Procreate
+    url: https://apps.apple.com/gb/app/procreate/id425073498
+    checked: '2026-11-10'
+  - label: Krita Manual, Krita FAQ
+    url: https://docs.krita.org/en/KritaFAQ.html
+    checked: '2026-11-10'
+  kit:
+  - name: Graphics drawing tablet
+    why: a pen and pad that plugs into a computer for use with Krita and similar software; check it is pressure-sensitive and supports your operating system
+    url: https://www.amazon.co.uk/s?k=graphics+drawing+tablet+pen
+  - name: Matte screen protector for iPad
+    why: gives the screen a paper-like surface for drawing; check it fits your iPad model
+    url: https://www.amazon.co.uk/s?k=paper+feel+screen+protector+ipad
+  related:
+  - learn-to-draw
+  - join-an-urban-sketchers-meet
+  - paint-in-watercolour
+  - free-digital-skills-course
+- id: learn-the-trombone
+  title: Learn the trombone
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The trombone has no finger holes or keys. You change the note by moving a slide in and out, and you find each of its seven positions by feel, because there are no markings on
+    the tubing. Community brass bands and adult beginner bands teach from scratch, and some lend instruments.
+  start:
+  - Look for a community brass band in the Brass Bands England directory and ask whether it teaches beginners, or a New Horizons beginner band in the US.
+  - Ask whether the band lends instruments before you hire or buy one; some keep a few for beginners.
+  - Book the first session as a taster if the band offers one, and bring a notebook to write down the slide positions.
+  links:
+  - label: 'Brass Bands England: find a band'
+    url: https://www.bbe.org.uk/find-a-band
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Watermans: Hounslow Community Brass Band (west London)'
+    url: https://www.watermans.org.uk/events/hounslow-community-brass-band-2025
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Museum of Making Music, Carlsbad: New Horizons Beginning Band'
+    url: https://www.museumofmakingmusic.org/education/new-horizons-fall-band-session-2026
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Learn the trombone as an adult: bands, classes and costs'
+  description: How adult beginners learn the trombone, from UK community brass bands to US New Horizons bands, what the slide involves and what classes and hire cost.
+  detail:
+  - h: What makes the trombone different
+    p:
+    - Yamaha's instrument guide explains that the slide changes the length of the tubing, and that controls the pitch. It has seven positions, from first (nearest you) to seventh (fully
+      extended), and there are no markers, so players learn them by feel. Seven positions do not mean seven notes, because your lips produce several notes in each position.
+    - Bands are the usual way in. In Britain, Brass Bands England's directory lists bands by region. Some teach adults from nothing. Macclesfield Brass says members can join as absolute
+      beginners, with one-to-one tuition and an instrument provided, then group teaching inside the band. In the US, the New Horizons idea began at the Eastman School of Music in Rochester,
+      New York, in 1991 and has spread to more than 100 organisations in the US and Canada, according to Eastman's community music school.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Watermans, Hounslow Community Brass Band, west London
+        - Over-18s, complete beginners welcome; Tuesday evenings; a limited number of instruments lent free
+        - £44 for 10 sessions (spring 2025); first session can be a taster
+      - - Museum of Making Music, Carlsbad, California
+        - New Horizons Beginning Band for adults who have never learned a band instrument; Wednesdays, August to December 2026
+        - $125
+      - - Dawkes Music (UK)
+        - Rental of a Yamaha YSL-356 Bb/F trombone; three-month minimum, then half of each payment from month four can go towards buying
+        - £45 per month
+    after: Eastman Community Music School in Rochester runs its own beginner groups, including the Green Band, for adults of any age; it does not list fees on its New Horizons page.
+  faq:
+  - q: Can an adult learn the trombone from scratch?
+    a: Yes. Watermans in west London welcomes complete beginners to its community brass band, and the Museum of Making Music's New Horizons Beginning Band is for adults who have never
+      learned a band instrument.
+  - q: How many positions does a trombone slide have?
+    a: Seven, from first (nearest you) to seventh (fully extended). Yamaha notes that there are no markers, so you learn them by feel.
+  - q: How much does it cost to hire a trombone?
+    a: Dawkes Music lists a Yamaha Bb/F trombone at £45 a month with a three-month minimum. Some bands, including Watermans' Hounslow band, lend a few instruments free.
+  sources:
+  - label: Yamaha, The Structure of the Trombone
+    url: https://www.yamaha.com/en/musical_instrument_guide/trombone/mechanism/mechanism004.html
+    checked: '2026-11-10'
+  - label: Brass Bands England, Find a band
+    url: https://www.bbe.org.uk/find-a-band
+    checked: '2026-11-10'
+  - label: Making Music, Macclesfield Brass
+    url: https://www.makingmusic.org.uk/group/macclesfield-brass
+    checked: '2026-11-10'
+  - label: Watermans, Hounslow Community Brass Band
+    url: https://www.watermans.org.uk/events/hounslow-community-brass-band-2025
+    checked: '2026-11-10'
+  - label: Museum of Making Music, New Horizons Fall Band Session 2026
+    url: https://www.museumofmakingmusic.org/education/new-horizons-fall-band-session-2026
+    checked: '2026-11-10'
+  - label: Eastman Community Music School, New Horizons
+    url: https://www.esm.rochester.edu/community/?p=28996
+    checked: '2026-11-10'
+  - label: Dawkes Music, Rent a Bb/F tenor trombone
+    url: https://www.dawkes.co.uk/rent-a-bb-f-tenor-trombone
+    checked: '2026-11-10'
+  kit:
+  - name: Trombone slide oil or cream
+    why: keeps the slide moving freely; check it suits your instrument's slide
+    url: https://www.amazon.co.uk/s?k=trombone+slide+cream
+  - name: Folding music stand
+    why: for practice at home and band nights; check the height range
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  related:
+  - learn-the-trumpet
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+  - learn-the-saxophone
+- id: learn-the-tin-whistle
+  title: Learn the tin whistle
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  - world
+  collection: arts
+  why: The tin whistle, or penny whistle, is a small pipe that carries the tunes of Irish traditional music, from marches and waltzes to polkas and jigs. Beginners' classes ask for nothing
+    more than a whistle in D, and Comhaltas branches on both sides of the Atlantic teach it.
+  start:
+  - Buy a whistle in the key of D, which is what beginners' classes ask you to bring.
+  - Look for a beginners' class at an Irish arts centre, or find your nearest Comhaltas branch and ask about its classes.
+  - Learn one tune a week, then go along to a session or branch night to play with others.
+  links:
+  - label: 'Comhaltas Ceoltóirí Éireann: branch listings'
+    url: https://comhaltas.ie/ways-to-take-part/branch-listings/
+    region: any
+    checked: '2026-11-10'
+  - label: 'The Crescent, Belfast: Traditional Irish Tin Whistle for beginners'
+    url: https://crescentarts.org/courses/tin-whistle-beginners
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Irish Arts Center, New York: Tin Whistle classes online'
+    url: https://irishartscenter.org/event/tin-whistle-i-beginners-fall-2024-online
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Tin whistle lessons for adult beginners: classes and costs'
+  description: Where adults can learn the Irish tin whistle in the UK, Ireland and the US, which whistle to buy, what classes cost and how to find a Comhaltas branch.
+  detail:
+  - h: Where to learn
+    p:
+    - Comhaltas Ceoltóirí Éireann says its branch network runs classes every week in traditional instruments, singing, dance and the Irish language. Its directory lists more than 450
+      branches, mostly in Ireland but also in Britain, North America and further afield; ask your local branch about classes.
+    - Arts centres run short courses. The Crescent in Belfast's beginners' class is for adults with no previous experience and asks you to come with a whistle in D. The Irish Arts Center
+      in New York teaches online over Zoom; its introductory course covers all the notes of the scale and how to get a good sound, then moves on to marches, waltzes, polkas and jigs.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Crescent, Belfast
+        - Traditional Irish Tin Whistle, beginners; 9 weekly one-hour evening classes (spring 2026)
+        - £77 or £72
+      - - Irish Arts Center, New York (online)
+        - Tin Whistle I, introductory; 8 weekly one-hour classes on Zoom (autumn 2024)
+        - $204, or $164 for members
+      - - Irish Arts Center, New York (online)
+        - Tin Whistle II, advanced beginners; 8 weekly classes (autumn 2025)
+        - $234, or $188 for members
+      - - Center for Irish Music, St Paul, Minnesota
+        - Easy Whistle Tunes for Adults, for players who already know three tunes; Thursdays from September 2026
+        - $187
+    after: The whistle itself costs little. Hobgoblin Music lists a Feadóg Pro whistle in D at £15.99.
+  faq:
+  - q: What key tin whistle should a beginner buy?
+    a: D. Both The Crescent in Belfast and the Irish Arts Center in New York ask beginners to bring a whistle in the key of D.
+  - q: Can I learn tin whistle online?
+    a: Yes. The Irish Arts Center in New York runs its tin whistle courses over Zoom, from an introductory class upwards.
+  - q: How do I find Irish music classes near me?
+    a: Use the Comhaltas Ceoltóirí Éireann branch listings, which cover Ireland, Britain, North America and beyond, and contact the nearest branch about its classes.
+  sources:
+  - label: Comhaltas Ceoltóirí Éireann, Comhaltas Branches
+    url: https://comhaltas.ie/ways-to-take-part/branch-listings/
+    checked: '2026-11-10'
+  - label: 'The Crescent, Traditional Irish Tin Whistle: Beginners'
+    url: https://crescentarts.org/courses/tin-whistle-beginners
+    checked: '2026-11-10'
+  - label: 'Irish Arts Center, Tin Whistle I: Beginners (Fall 2024, online)'
+    url: https://irishartscenter.org/event/tin-whistle-i-beginners-fall-2024-online
+    checked: '2026-11-10'
+  - label: 'Irish Arts Center, Tin Whistle II: Advanced Beginners (Fall 2025, online)'
+    url: https://irishartscenter.org/event/tin-whistle-ii-advanced-beginners-fall-2025-online
+    checked: '2026-11-10'
+  - label: 'Center for Irish Music, Easy Whistle Tunes for Adults: Fall'
+    url: https://www.centerforirishmusic.org/calendar/easy-whistle-tunes-for-adults-fall-26/
+    checked: '2026-11-10'
+  - label: Hobgoblin Music, Feadog FW26A Pro D whistle
+    url: https://hobgoblin.com/gr23078k-feadog-fw26a-pro-d-whistle-black
+    checked: '2026-11-10'
+  kit:
+  - name: Tin whistle in D
+    why: the key beginners' classes ask for; check it says D on the barrel or packet
+    url: https://www.amazon.co.uk/s?k=tin+whistle+key+of+d
+  - name: Tin whistle tutor book
+    why: tunes and fingering charts for practice between classes; check whether it uses notation, tablature or both
+    url: https://www.amazon.co.uk/s?k=tin+whistle+tutor+book+irish
+  related:
+  - learn-the-flute
+  - go-to-a-folk-dance
+  - learn-the-bagpipes
+  - learn-the-violin
+- id: learn-the-viola
+  title: Learn the viola
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The viola sits in the middle of the orchestra, between the violins and the cellos, with a lower, mellower voice than the violin and its own clef. Adult beginners' string classes
+    teach it from the first lesson, often side by side with the violin.
+  start:
+  - Find an adult beginners' string class that names the viola, at an adult-education college, music school or orchestra's community programme.
+  - Hire a viola before you buy one, and ask your teacher what size suits you.
+  - Learn to read the alto clef from the start, because that is what viola music is written in.
+  links:
+  - label: 'City Lit, London: Violin and viola 1A for complete beginners'
+    url: https://www.citylit.ac.uk/courses/violin-and-viola-1a
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Benslow Music: Late Starter Strings'
+    url: https://www.benslowmusic.org/courses/late-starter-strings-spring/
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Huntsville Symphony Orchestra, Alabama: adult strings classes'
+    url: https://hso.org/?p=1476
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Learn the viola as an adult: classes, rental and costs'
+  description: How the viola differs from the violin, where adult beginners can learn it in the UK and US, and what string classes and viola rental cost as last listed.
+  detail:
+  - h: How it differs from the violin
+    p:
+    - The Classical Music website (classical-music.com) gives an adult viola's body length as 15.5 to 16.5 inches (about 39 to 42 cm), against 13 to 14 inches (about 33 to 36 cm) for
+      a violin. Its strings start a fifth lower, on C, and are thicker, so the sound is lower and mellower and takes longer to speak. Violists read the alto clef rather than the treble
+      clef.
+    - Several adult classes take both instruments together. City Lit's Violin and viola 1A is for complete beginners, and you bring your own instrument; it says a decent student violin
+      or viola costs at least £80, and that some shops hire them. In the US, the Eastman Community Music School in Rochester, New York, runs a beginner New Horizons string orchestra
+      for adults.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Violin and viola 1A; complete beginners; 11 Tuesday-evening sessions from September 2026
+        - £229
+      - - Benslow Music
+        - Late Starter Strings; weekly lessons for adults new to the instrument, no music reading needed; viola taught at the tutor's house
+        - £12 each in a group of three (45 minutes) to £24 for 30 minutes one-to-one; instrument hire £10 a month
+      - - Huntsville Symphony Orchestra, Alabama
+        - Adult strings, Beginner class; no previous experience necessary; bring your own instrument
+        - $175 (spring 2026)
+      - - Ronald Sachs Violins (US)
+        - Viola rental, rent-to-own; two months paid up front
+        - $23 per month, excluding damage protection and sales tax
+  faq:
+  - q: What is the difference between a violin and a viola?
+    a: The viola is larger, its strings are thicker and start a fifth lower, on C, and its music is written in the alto clef. City Lit teaches the two side by side in its beginners'
+      class.
+  - q: Can I learn the viola as a complete beginner?
+    a: Yes. City Lit's Violin and viola 1A is for complete beginners, and Huntsville Symphony Orchestra's beginner strings class needs no previous experience.
+  - q: How much does it cost to rent a viola?
+    a: Benslow Music lists instrument hire at £10 a month for its Late Starter Strings pupils, and Ronald Sachs Violins in the US lists viola rental at $23 a month.
+  - q: What clef does the viola use?
+    a: The alto clef. Violinists read the treble clef.
+  inspire:
+  - kind: read
+    person: Nancy Dunetz, from New York City
+    line: Took up the viola after a friend lent her one to try, and now plays in the Broadway Bach Ensemble and the Columbia Klezmer Ensemble.
+    title: Making beautiful music after retirement
+    outlet: New York Teacher (United Federation of Teachers)
+    url: https://uft.org/news/retired-teachers-chapter-news/rtc-second-act/making-beautiful-music-after-retirement
+    checked: '2026-11-10'
+  sources:
+  - label: Classical Music (classical-music.com), Viola vs violin, what's the difference?
+    url: https://www.classical-music.com/features/articles/what-difference-between-violin-and-viola/
+    checked: '2026-11-10'
+  - label: City Lit, Violin and viola 1A
+    url: https://www.citylit.ac.uk/courses/violin-and-viola-1a
+    checked: '2026-11-10'
+  - label: Benslow Music, Late Starter Strings Instrumental Lessons
+    url: https://www.benslowmusic.org/courses/late-starter-strings-spring/
+    checked: '2026-11-10'
+  - label: Huntsville Symphony Orchestra, Adult Strings Classes
+    url: https://hso.org/?p=1476
+    checked: '2026-11-10'
+  - label: Eastman Community Music School, New Horizons
+    url: https://www.esm.rochester.edu/community/?p=28996
+    checked: '2026-11-10'
+  - label: Ronald Sachs Violins, String instrument rentals
+    url: https://ronaldsachs.com/instrument-rentals/
+    checked: '2026-11-10'
+  kit:
+  - name: Viola shoulder rest
+    why: City Lit lists one as part of the kit to bring; check it fits your viola's size
+    url: https://www.amazon.co.uk/s?k=viola+shoulder+rest
+  - name: Rosin
+    why: for the bow hair, also on City Lit's kit list; check it is labelled for violin or viola
+    url: https://www.amazon.co.uk/s?k=violin+viola+rosin
+  related:
+  - learn-the-violin
+  - learn-the-cello
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+- id: learn-to-windsurf
+  title: Learn to windsurf
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  season: Spring to autumn in the UK
+  why: Windsurfing puts you on a board with nothing but a sail in your hands, steering by tilting the rig and shifting your feet. A beginners' course starts on a wide, floaty board in
+    light winds, and the RYA's beginners' course aims to get you sailing to a chosen point under supervision.
+  start:
+  - Book an RYA Start Windsurfing course at a recognised centre in the UK, or a beginners' group lesson at a windsurfing school in the US.
+  - Ask what the centre supplies; training centres usually provide the board, sail and a wetsuit, so you do not need to buy anything first.
+  - After the course, hire the centre's kit a few times to practise in light winds before you think about buying a board.
+  links:
+  - label: 'RYA: Start Windsurfing course and venue finder'
+    url: https://www.rya.org.uk/course-finder/start-windsurfing/
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Calshot Activities Centre, Hampshire: windsurfing courses'
+    url: https://www.hants.gov.uk/thingstodo/calshot/lagoon/windsurfing/courses
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Cal Sailing Club, Berkeley, California: membership with lessons included'
+    url: https://www.cal-sailing.org/about-us/faq
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Windsurfing lessons for beginners: courses and costs'
+  description: What a beginners' windsurfing course is like, the RYA Start Windsurfing course, US lessons and clubs, what to wear and what it costs in the UK and US.
+  detail:
+  - h: What a first course is like
+    p:
+    - The Royal Yachting Association's Start Windsurfing course is for complete beginners and needs no experience. It takes 8 to 10 hours, split into sessions or full days, and aims
+      to get you sailing to a chosen point under supervision. At Calshot in Hampshire it starts with a short session on land to introduce the kit, then moves on to the water to learn
+      to sail to a set point and turn round, tacking and gybing, in light winds.
+    - Beginners learn on big, stable boards. Cal Sailing Club's guide says an adult's first board should be at least 80cm (about 31in) wide, with enough flotation to stand and balance
+      easily. The RYA's chief instructor for dinghy and windsurfing told Boards magazine in 2013 that "pretty much everyone can go in a straight line by the end of session one", and
+      that over a two-day course most people learn to tack and gybe.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Calshot Activities Centre, Hampshire
+        - RYA Start Windsurfing; 14 and 15-year-olds with a participating adult
+        - Not listed on the course page; check when booking
+      - - Brighton Watersports, Piddinghoe Lake, East Sussex
+        - RYA Start Windsurf; 16 hours, normally over two days; basic swimming ability listed in the course content
+        - £199.00
+      - - Docklands Sailing and Watersports Centre, London
+        - RYA Start Windsurfing; Saturday and Sunday, 9.30am to 5pm; May to September
+        - £295
+      - - Brian's Windsurfing, Columbia River Gorge (booked through Windance)
+        - Group lesson; 2.5 hours; up to eight people
+        - $205
+      - - Cal Sailing Club, Berkeley, California
+        - Volunteer-run co-op; lessons and equipment included; members give at least two hours' work every three months
+        - $150 for three months, or $119 for students and seniors
+    after: After Start Windsurfing, the RYA's next steps are its Intermediate Windsurfing (Planing) and Advanced Windsurfing courses. The UK Windsurfing Association suggests practising
+      on a centre's hire kit for a while after a first course.
+  faq:
+  - q: How long does it take to learn to windsurf?
+    a: The RYA's beginners' course takes 8 to 10 hours, over several sessions or full days, and aims to get you sailing to a chosen point under supervision.
+  - q: Do I need to be able to swim to windsurf?
+    a: Brighton Watersports lists basic swimming ability for its Start Windsurf course; check with the centre before you book.
+  - q: Do I need my own windsurf board to learn?
+    a: No. Training centres supply the kit, and Boards magazine warns against buying gear that is too big or too advanced too early.
+  - q: What wind is best for learning to windsurf?
+    a: Light wind. Boards magazine suggests practising new skills in Force 1 to 3, and Cal Sailing Club restricts beginners above 20 knots.
+  inspire:
+  - kind: read
+    person: Roy Massey, from Fort Myers, Florida
+    line: Took up windsurfing at 60 and has since helped hundreds of people see Southwest Florida from a sailboard.
+    title: Fort Myers man says people of all ages can learn to windsurf, inspires others
+    outlet: WINK News
+    url: https://winknews.com/2020/02/24/fort-myers-man-says-people-of-all-ages-can-learn-to-windsurf-inspires-others/
+    checked: '2026-11-10'
+  safety: Learn at a recognised centre in light winds, wear a well-fitting wetsuit and buoyancy aid, and follow your instructor's directions.
+  sources:
+  - label: RYA, Start Windsurfing
+    url: https://www.rya.org.uk/course-finder/start-windsurfing/
+    checked: '2026-11-10'
+  - label: Hampshire County Council, Calshot windsurfing courses
+    url: https://www.hants.gov.uk/thingstodo/calshot/lagoon/windsurfing/courses
+    checked: '2026-11-10'
+  - label: Brighton Watersports, Learn to Windsurf (RYA Start Windsurf)
+    url: https://thebrightonwatersports.co.uk/products/learn-to-windsurf
+    checked: '2026-11-10'
+  - label: Docklands Sailing and Watersports Centre, RYA Start Windsurfing
+    url: https://www.dswc.org/product/rya-start-windsurfing/
+    checked: '2026-11-10'
+  - label: UK Windsurfing Association, Learning to Windsurf
+    url: https://ukwindsurfing.com/links/learn_windsurfing/
+    checked: '2026-11-10'
+  - label: Boards magazine, Getting started
+    url: https://boards.co.uk/features/getting-started.html
+    checked: '2026-11-10'
+  - label: Windance, Wind sports lessons
+    url: https://www.windance.com/pages/lesson-75
+    checked: '2026-11-10'
+  - label: Cal Sailing Club, The 10-step guide to windsurfing
+    url: https://www.cal-sailing.org/lessons-menu/windsurfing/the-10-step-guide-to-windsurfing?start=1
+    checked: '2026-11-10'
+  - label: Cal Sailing Club, FAQ
+    url: https://www.cal-sailing.org/about-us/faq
+    checked: '2026-11-10'
+  kit:
+  - name: Wetsuit boots
+    why: protect your feet on the board and on stony launches; check the sole grips when wet
+    url: https://www.amazon.co.uk/s?k=wetsuit+boots+watersports
+  - name: Changing robe
+    why: for getting changed on the shore after a session; check it is long enough to cover you
+    url: https://www.amazon.co.uk/s?k=changing+robe+watersports
+  related:
+  - learn-to-sail
+  - stand-up-paddleboarding
+  - kitesurfing-lesson
+  - learn-to-surf
+- id: try-clay-pigeon-shooting
+  title: Try clay pigeon shooting
+  category: move
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Clay shooting is a test of timing and focus, swinging a shotgun to meet a small disc thrown across the sky. A first "have a go" lesson comes with a coach, the gun, cartridges
+    and ear and eye protection, so all you bring is outdoor clothing.
+  start:
+  - Find a ground with a qualified coach through the CPSA's club finder in the UK, or a club or range that runs beginners' sessions in the US.
+  - Book a beginners' or "have a go" lesson and check what the price includes, such as the gun, cartridges, clays and protection.
+  - Wear comfortable outdoor clothes and listen to the safety briefing before anything else.
+  links:
+  - label: 'Clay Pigeon Shooting Association: how to start'
+    url: https://www.cpsa.co.uk/how
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Braces Shooting Ground, Bristol: Have a Go beginner session'
+    url: https://shooting.bracesofbristol.com/product/try-clay-pigeon-shooting-bristol/
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Arizona Game and Fish Department: Intro to Clays, Ben Avery Clay Target Center'
+    url: https://bookben.azgfd.com/?p=1166507
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Clay pigeon shooting for beginners: have a go and costs'
+  description: What a beginners' clay shooting lesson includes, whether you need a shotgun licence in the UK, what to wear and what it costs in the UK and US.
+  detail:
+  - h: What a first lesson is like
+    p:
+    - The Clay Pigeon Shooting Association (CPSA) says there are CPSA certified grounds and instructors all over the country. Your instructor supplies the gun, cartridges, safety glasses
+      and hearing protection, and you need only comfortable outdoor clothing.
+    - In Great Britain you do not need a shotgun certificate to shoot clays at a time and place the police have approved. Section 11(6) of the Firearms Act 1968 lets a person use a shotgun
+      without a certificate at a time and place the police have approved for shooting at artificial targets. Organisers apply for this; Avon and Somerset Police asks them to accept responsibility
+      for safety, make safety equipment available and load guns only at the firing point.
+    - In the US, the National Sporting Clays Association describes sporting clays as "golf with a shotgun", with each course different. It says eye and ear protection are necessary any
+      time you are on a course, and that the first rule is to treat the gun as if it is loaded.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - CPSA certified grounds, UK
+        - Introductory lesson with a qualified instructor; clays, cartridges, gun and equipment included
+        - From £25
+      - - Braces Shooting Ground, Bristol
+        - Sunday Have a Go beginner session; 90 minutes; 25 clays and cartridges, gun hire, eye and ear protection; from age 12
+        - £40.00 per person
+      - - Arizona Game and Fish Department, Ben Avery Clay Target Center
+        - 'Intro to Clays: one hour; shotgun rental, ammunition, targets, eye and ear protection and individual instruction; from age 9'
+        - $25.00
+    after: At Braces, under-18s must come with a responsible adult; at Ben Avery, young people aged 16 and under must have a paying adult.
+  faq:
+  - q: Do I need a shotgun licence to try clay pigeon shooting?
+    a: Not in Great Britain, if the ground or event has a police-approved exemption. Section 11(6) of the Firearms Act 1968 allows people to use a shotgun without a certificate at a
+      time and place approved by the police for shooting at artificial targets.
+  - q: How much does a clay pigeon shooting lesson cost?
+    a: The CPSA says introductory lessons start from £25 with clays, cartridges and the gun included. Braces in Bristol lists £40 for 90 minutes and 25 clays; Arizona Game and Fish lists
+      $25 for a one-hour class.
+  - q: What should I wear for clay pigeon shooting?
+    a: Comfortable outdoor clothing. The CPSA says the instructor provides safety glasses and hearing protection.
+  - q: What is the difference between clay pigeon shooting and sporting clays?
+    a: Sporting clays is one form of clay shooting. The NSCA calls it golf with a shotgun, because each course uses the terrain differently and no two are alike.
+  safety: Treat every gun as loaded, load only at the shooting stand when told to, and wear eye and ear protection the whole time you are on the ground.
+  sources:
+  - label: Clay Pigeon Shooting Association, How to start
+    url: https://www.cpsa.co.uk/how
+    checked: '2026-11-10'
+  - label: legislation.gov.uk, Firearms Act 1968, section 11
+    url: https://www.legislation.gov.uk/ukpga/1968/27/section/11
+    checked: '2026-11-10'
+  - label: Avon and Somerset Police, Clay pigeon shoot exemption
+    url: https://www.avonandsomerset.police.uk/apply/firearms-licensing/clay-pigeon-shoot-exemption/
+    checked: '2026-11-10'
+  - label: Braces of Bristol, Try clay pigeon shooting Bristol
+    url: https://shooting.bracesofbristol.com/product/try-clay-pigeon-shooting-bristol/
+    checked: '2026-11-10'
+  - label: National Sporting Clays Association, Sporting clays basics
+    url: https://nsca.nssa-nsca.org/sporting-clays-basics/
+    checked: '2026-11-10'
+  - label: 'Arizona Game and Fish Department, Intro to Clays: Beginner Shotgun Program'
+    url: https://bookben.azgfd.com/?p=1166507
+    checked: '2026-11-10'
+  kit:
+  - name: Shooting glasses
+    why: for your own sessions once you go regularly; check they are impact-rated and wrap round the sides
+    url: https://www.amazon.co.uk/s?k=shooting+glasses+clay
+  - name: Ear defenders
+    why: grounds lend them, but your own fit better; check the noise reduction rating
+    url: https://www.amazon.co.uk/s?k=shooting+ear+defenders
+  related:
+  - try-archery
+  - first-golf-lessons
+  - play-disc-golf
+- id: play-walking-cricket
+  title: Play walking cricket
+  category: move
+  kind: experience
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: Walking cricket keeps the batting, bowling, scoring and umpiring of the traditional game but takes the running out, so everyone gets a turn at everything. Sessions are run by
+    county cricket boards and charities, often indoors on a weekday morning for a few pounds.
+  start:
+  - Look on your county cricket board's or cricket foundation's website for walking cricket; Kent and Sussex list sessions, and Lancashire and Staffordshire give a contact for local
+    sessions.
+  - Check the day, venue and price, and ask whether newcomers are welcome; Kent says one aim is to introduce people who have never played.
+  - Take indoor trainers and a drink, and ask whether bats and balls are provided.
+  links:
+  - label: 'Kent Cricket: walking cricket sessions'
+    url: https://www.kentcricket.co.uk/walking-cricket/
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Age UK East Sussex: walking cricket in Bexhill'
+    url: https://www.ageuk.org.uk/eastsussex/activities-and-events/walking-cricket/
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Sussex Cricket: walking cricket group in Storrington'
+    url: https://sussexcricket.co.uk/news/new-walking-cricket-group-gets-underway-storrington
+    region: uk
+    checked: '2026-11-10'
+  seo_title: 'Walking cricket: rules, sessions and costs'
+  description: How walking cricket differs from the ordinary game, where county cricket boards and charities run sessions in the UK, what they cost and who can join.
+  detail:
+  - h: How the game differs
+    p:
+    - There is no running. Bideford Cricket Club's guide says all movement is limited to walking, between the wickets and in the field, and Age UK East Sussex says running and jogging
+      are not allowed. Kent Cricket says the game is played with a softer ball, usually indoors, and everyone gets to bowl, bat, score or umpire. Some groups use lightweight bats.
+    - Formats vary. In Storrington, West Sussex, runs are scored by hitting the ball against the walls of the sports hall, and the non-striking batter has a crease about two-thirds of
+      the way down a normal pitch. Staffordshire plays in pairs with target areas. Bideford says teams are usually smaller and matches last an hour or two.
+    - There is competition if you want it. In 2023 Nottinghamshire's walking cricketers won an eight-a-side tournament at Lord's, with 40-ball innings, against teams from Sussex, Surrey
+      and MCC.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Kent Cricket Community Trust, Folkestone
+        - Mondays, 10am to noon, Three Hills Sport Park; also sessions in Canterbury, Sittingbourne and Strood
+        - £3 per session (Folkestone)
+      - - Age UK East Sussex, Bexhill Leisure Centre
+        - Fridays from 9.30am; started by volunteers from its walking football group
+        - £3 per session
+      - - Sussex Cricket Foundation, Chanctonbury Leisure Centre, Storrington
+        - Thursdays, 12.30pm to 1.30pm; indoor rules
+        - Free for members, £6 per session for non-members
+      - - Staffordshire Cricket
+        - Indoor walking cricket in pairs; contact the county's disability cricket officer for venues
+        - Free to £4 per session
+    after: We could not find a walking cricket programme in the US on a page we could check, so this page covers the UK only.
+  faq:
+  - q: What are the rules of walking cricket?
+    a: The main rule is no running, between the wickets or in the field. Games use a softer ball, are usually played indoors and often have smaller teams and shorter matches.
+  - q: Who can play walking cricket?
+    a: Sessions say they are for all abilities, including people who have never played. Some, such as Lancashire's and Staffordshire's, are aimed at people over 50.
+  - q: How much does walking cricket cost?
+    a: Usually a few pounds. Kent lists £3 a session in Folkestone, Age UK East Sussex £3 in Bexhill, and Staffordshire free to £4.
+  inspire:
+  - kind: read
+    person: Mac McKechnie, Barnsley U3A
+    line: Spent nearly a year promoting walking cricket and raising the U3A's profile, and won the Yorkshire County Cricket Board's award for the Most Inspiring and Diverse Cricket Offer
+      2019.
+    title: Inspiring Award for U3A Walking Cricketer
+    outlet: u3a
+    url: https://www.u3a.org.uk/what-we-do/news/inspiring-award-for-u3a-walking-cricketer
+    checked: '2026-11-10'
+  sources:
+  - label: Kent Cricket, Walking cricket
+    url: https://www.kentcricket.co.uk/walking-cricket/
+    checked: '2026-11-10'
+  - label: Age UK East Sussex, Walking cricket
+    url: https://www.ageuk.org.uk/eastsussex/activities-and-events/walking-cricket/
+    checked: '2026-11-10'
+  - label: Sussex Cricket, New Walking Cricket Group gets underway in Storrington
+    url: https://sussexcricket.co.uk/news/new-walking-cricket-group-gets-underway-storrington
+    checked: '2026-11-10'
+  - label: Staffordshire Cricket, Walking cricket
+    url: https://www.staffordshirecricket.co.uk/about/playing-walking/
+    checked: '2026-11-10'
+  - label: Lancashire Cricket Foundation, Walking cricket
+    url: https://foundation.lancashirecricket.co.uk/play/walking-cricket
+    checked: '2026-11-10'
+  - label: Bideford Cricket Club, How does walking cricket work
+    url: https://www.bidefordcc.co.uk/uploads/1/3/8/1/13810505/how_does_walking_cricket_work.pdf
+    checked: '2026-11-10'
+  - label: Nottinghamshire County Cricket Club, Notts' walking cricketers triumph at Lord's
+    url: https://trentbridge.co.uk/news/2023/november/notts-walking-cricketers-triumph-at-lords.html
+    checked: '2026-11-10'
+  - label: u3a, Inspiring Award for U3A Walking Cricketer
+    url: https://www.u3a.org.uk/what-we-do/news/inspiring-award-for-u3a-walking-cricketer
+    checked: '2026-11-10'
+  kit:
+  - name: Non-marking indoor trainers
+    why: most sessions are in sports halls; check the soles are non-marking
+    url: https://www.amazon.co.uk/s?k=non+marking+indoor+court+shoes
+  - name: Soft cricket ball set
+    why: for practising catching and hitting at home or in the garden; check the balls are the soft or windball type
+    url: https://www.amazon.co.uk/s?k=soft+cricket+ball+set
+  related:
+  - walking-football
+  - walking-netball
+  - play-walking-rugby
+  - lawn-bowls

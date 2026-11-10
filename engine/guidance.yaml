@@ -471,7 +471,7 @@ guidance:
     applies: [swimming]
     use: rule
     text: Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest.
-    for: [usms-open-water]
+    for: [usms-open-water, swimeng-pool-prep]
   - id: ow-float-practise
     topic: key session
     applies: [swimming]
@@ -531,8 +531,8 @@ guidance:
     topic: on the day
     applies: [cycling]
     use: advice
-    text: Start every ride at an easy pace for about five minutes to warm up, and finish with five to ten minutes of slower riding.
-    for: [cyclinguk-100km]
+    text: Start every ride easy, for at least the first five minutes, and build up to your riding pace gradually rather than setting off fast; finish with five to ten minutes of easy, slower riding.
+    for: [cyclinguk-100km, bc-warm-up-cool-down]
 
   # ---------- triathlon (added 3 Nov 2026) ----------
   - id: tri-start-short

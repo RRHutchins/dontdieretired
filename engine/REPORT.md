@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-09)
+# Guidance engine report (2026-11-10)
 
-63 sources, 84 statements, 12 event profiles. Core 54, supported 30, thin 0, contested 0.
+65 sources, 84 statements, 12 event profiles. Core 56, supported 28, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -65,6 +65,8 @@
 - RNLI (Royal National Lifeboat Institution), *Rip currents (undated page; year is the year opened)* (2026). Opened 2026-11-09.
 - RNLI (Royal National Lifeboat Institution), Lifeboats news release, *RNLI issue tidal safety warning in Wales ahead of half term weekend (19 February 2026)* (2026). Opened 2026-11-09.
 - Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Opened 2026-11-09.
+- Swim England (Open Water Swimming Hub), *Top tips for preparing for open water swimming in the pool (9 October 2018, updated 25 October 2022)* (2022). Opened 2026-11-10.
+- British Cycling (Insight Zone; Dr Andy Kirkland, BASES-accredited sports scientist), *Warm ups and cool downs for cyclists (page undated; year from the article reference izn20140115)* (2014). Opened 2026-11-10.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -124,11 +126,13 @@
 | core | 6 | on the day | Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard. | rnli-tidal-wales-2026, swcpa-safety |
 | core | 6 | why | Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. | bosquet-2007, ea-pavey-marathon |
 | core | 6 | warning signs | If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. | rnli-cold-water-2025, swimeng-stay-safe |
+| core | 6 | key session | Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest. | usms-open-water, swimeng-pool-prep |
 | core | 6 | key session | Practise floating on your back at a supervised pool or venue so you can do it without thinking. Tilt your head back with your ears under the water, spread your arms and legs, and keep your breathing calm; your legs may sink, and that is fine. If cold water takes your breath away, float for about a minute until your breathing is under control, then call for help or swim to safety. | rnli-float, swimeng-hot-weather |
 | core | 6 | key session | Build one long ride a week at an easy pace, growing gradually towards the distance of the event; Cycling UK's plan for a 100 km ride takes the long ride from 15 to 25 km up to 90 to 100 km over nine weeks. | cyclinguk-100km, bc-sofa-50km |
 | core | 6 | intensity | Judge effort by talking. On easy rides you can hold a conversation, on steady efforts you can manage short sentences, and only the short hard efforts should leave you out of breath. | cyclinguk-100km, bc-sofa-50km |
 | core | 6 | kit | Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. | cyclinguk-100km, bc-sofa-50km |
 | core | 6 | fuel and drink | On long rides eat something every 20 to 30 minutes, and carry enough food and drink for the whole ride rather than relying on finding a shop. | bc-sofa-50km, cyclinguk-100km |
+| core | 6 | on the day | Start every ride easy, for at least the first five minutes, and build up to your riding pace gradually rather than setting off fast; finish with five to ten minutes of easy, slower riding. | cyclinguk-100km, bc-warm-up-cool-down |
 | core | 6 | before you start | For a first triathlon, start with a super sprint or a sprint rather than a longer race. A sprint is a 400 metre pool swim or 750 metre open water swim, a 20 km (12.4 mile) ride and a 5 km (3.1 mile) run, and usually takes 75 to 90 minutes. | britri-distances, tri-ireland-first |
 | core | 6 | key session | Practise running straight after riding (a brick session), starting with about 10 minutes of easy running after a ride. Running off the bike feels heavy and uncoordinated at first, and practising it helps your pacing, your transitions and your confidence. | tri-ireland-first, usat-brick |
 | core | 6 | before you start | Build water confidence in the pool first, working on calm breathing, with lessons if you need them; move to open water later with a wetsuit, a tow float and someone watching. | tri-ireland-first, usms-open-water |
@@ -158,10 +162,8 @@
 | supported | 3 | key session | For a first half marathon, think of the long run in minutes rather than miles, at an easy pace, building to about 80 minutes by two weeks before the race. | greatrun-half-plan |
 | supported | 3 | key session | For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60. | greatrun-10k-plans |
 | supported | 3 | before you start | If you are new to running, give yourself 8 to 12 weeks to get ready for a 10k rather than 6, and if time is short use a run-walk approach. | greatrun-10k-how-long, greatrun-10k-plans |
-| supported | 3 | key session | Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest. | usms-open-water |
 | supported | 3 | on the day | In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. | rnli-rip-currents |
 | supported | 3 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water |
-| supported | 3 | on the day | Start every ride at an easy pace for about five minutes to warm up, and finish with five to ten minutes of slower riding. | cyclinguk-100km |
 | supported | 3 | key session | With three days a week, swim once or twice working on technique, ride once at a steady pace and run twice, one easy and one a little faster. Regular sessions of 30 to 45 minutes are enough to start, rather than long, hard ones. | tri-ireland-first |
 | supported | 3 | on the day | Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast. | usat-brick |
 | supported | 3 | on the day | In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. | britri-beginners-wales |
