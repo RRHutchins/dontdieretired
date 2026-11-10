@@ -1,12 +1,20 @@
 name: Accounts worker
 # Planner Plus accounts (RUNBOOK §6t). Always runs the tests. Deploys to Cloudflare only once Robin has added the
 # repository secrets CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, D1_DATABASE_ID and RESEND_API_KEY; until then the
-# deploy job says what is missing and succeeds without doing anything.
+# deploy job says what is missing and succeeds without doing anything. Payments (day 14): once Robin also adds
+# STRIPE_SECRET_KEY (a TEST key, sk_test_...), each deploy gives it to the Worker and runs worker/stripe-setup.mjs, which
+# makes the Planner Plus prices, the Customer Portal set-up and the webhook (its signing secret goes straight into the
+# Worker). A live key is refused by both the script and the Worker until Robin switches to live himself.
 on:
   push:
     branches: [main]
-    paths: ["worker/**", "static/list-store.js", "tools/test_accounts.js", ".github/workflows/worker.yml"]
+    paths: ["worker/**", "static/list-store.js", "tools/test_accounts.js", "tools/test_plus.js", "tools/d1_stub.js", ".github/workflows/worker.yml"]
   workflow_dispatch:
+    inputs:
+      rotate_webhook:
+        description: "Make a new Stripe webhook signing secret (only if payments say the webhook secret is missing)"
+        type: boolean
+        default: false
 permissions:
   contents: read
 concurrency:
@@ -21,27 +29,38 @@ jobs:
         with:
           node-version: "22"
       - run: node tools/test_accounts.js
+      - run: node tools/test_plus.js
   deploy:
     needs: test
     runs-on: ubuntu-latest
+    # Each secret is given only to the steps that use it (review, day 14). Wrangler needs the Cloudflare pair throughout.
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      D1_DATABASE_ID: ${{ secrets.D1_DATABASE_ID }}
-      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - id: ready
+        env:
+          HAS_D1: ${{ secrets.D1_DATABASE_ID != '' }}
+          HAS_RESEND: ${{ secrets.RESEND_API_KEY != '' }}
+          HAS_STRIPE: ${{ secrets.STRIPE_SECRET_KEY != '' }}
         run: |
           missing=""
-          for v in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID D1_DATABASE_ID RESEND_API_KEY; do [ -n "${!v}" ] || missing="$missing $v"; done
+          [ -n "$CLOUDFLARE_API_TOKEN" ] || missing="$missing CLOUDFLARE_API_TOKEN"
+          [ -n "$CLOUDFLARE_ACCOUNT_ID" ] || missing="$missing CLOUDFLARE_ACCOUNT_ID"
+          [ "$HAS_D1" = "true" ] || missing="$missing D1_DATABASE_ID"
+          [ "$HAS_RESEND" = "true" ] || missing="$missing RESEND_API_KEY"
           if [ -n "$missing" ]; then echo "::notice::Accounts worker not deployed: repository secrets not set yet:$missing (RUNBOOK §6t)"; echo "go=no" >> "$GITHUB_OUTPUT"; else echo "go=yes" >> "$GITHUB_OUTPUT"; fi
+          if [ "$HAS_STRIPE" = "true" ]; then echo "stripe=yes" >> "$GITHUB_OUTPUT"; else echo "::notice::Payments not set up: no STRIPE_SECRET_KEY secret yet (RUNBOOK §6t)"; echo "stripe=no" >> "$GITHUB_OUTPUT"; fi
       - if: steps.ready.outputs.go == 'yes'
         uses: actions/setup-node@v4
         with:
           node-version: "22"
       - if: steps.ready.outputs.go == 'yes'
         working-directory: worker
+        env:
+          D1_DATABASE_ID: ${{ secrets.D1_DATABASE_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: |
           echo "$D1_DATABASE_ID" | grep -Eq '^[0-9a-f-]{36}$' || { echo "::error::D1_DATABASE_ID is not a database id"; exit 1; }
           sed -i "s/00000000-0000-0000-0000-000000000000/$D1_DATABASE_ID/" wrangler.toml
@@ -50,3 +69,14 @@ jobs:
           # SALT only keys the abuse counters, so a fresh one on each deploy is harmless and never needs storing
           openssl rand -hex 32 | npx --yes wrangler@3.114.0 secret put SALT
           printf '%s' "$RESEND_API_KEY" | npx --yes wrangler@3.114.0 secret put RESEND_API_KEY
+      - if: steps.ready.outputs.go == 'yes' && steps.ready.outputs.stripe == 'yes'
+        working-directory: worker
+        env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          ROTATE: ${{ inputs.rotate_webhook && '--rotate-webhook' || '' }}
+        run: |
+          case "$STRIPE_SECRET_KEY" in sk_test_*|rk_test_*) ;; *) echo "::error::STRIPE_SECRET_KEY must be a test key (sk_test_...) until Robin switches to live (RUNBOOK §6t)"; exit 1;; esac
+          printf '%s' "$STRIPE_SECRET_KEY" | npx --yes wrangler@3.114.0 secret put STRIPE_SECRET_KEY
+          node stripe-setup.mjs --secret-out "$RUNNER_TEMP/whsec" $ROTATE
+          if [ -s "$RUNNER_TEMP/whsec" ]; then npx --yes wrangler@3.114.0 secret put STRIPE_WEBHOOK_SECRET < "$RUNNER_TEMP/whsec"; fi
+          rm -f "$RUNNER_TEMP/whsec"

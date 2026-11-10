@@ -12,6 +12,7 @@
 // and is refused unless SITE_ORIGIN is a localhost address.
 
 import DDRList from '../../static/list-store.js';   // the browser's own merge(), so both sides combine lists the same way
+import * as Plus from './plus.js';                     // day 14: Stripe Checkout, the Customer Portal and the webhook
 
 export const LINK_MINUTES = 30;            // a sign-in link works once, for this long
 export const SESSION_DAYS = 90;            // then the member signs in again
@@ -95,6 +96,7 @@ export async function tidy(env) {
     env.DB.prepare(`DELETE FROM sessions WHERE expires < ?`).bind(t),
     env.DB.prepare(`DELETE FROM throttle WHERE expires < ?`).bind(t),
     env.DB.prepare(`DELETE FROM lists WHERE user_id NOT IN (SELECT id FROM users)`),
+    env.DB.prepare(`DELETE FROM memberships WHERE user_id NOT IN (SELECT id FROM users)`),
   ]);
 }
 
@@ -214,10 +216,14 @@ export async function handle(req, env) {
       await env.DB.prepare(`UPDATE sessions SET expires = ?, renewed = ? WHERE hash = ?`).bind(now() + maxAge, now(), s.hash).run();
       extra = { 'set-cookie': setCookie(s.token, maxAge) };
     }
-    return json(env, { signed_in: true, email: s.email, account: s.id }, 200, extra);
+    const m = await Plus.membership(env, s.id);
+    const plus = { member: m.member, plan: m.plan || null, until: m.until || null, ending: !!m.ending, status: m.status || null };
+    return json(env, { signed_in: true, email: s.email, account: s.id, plus, payments: Plus.payReady(env) }, 200, extra);
   }
 
   if (method !== 'POST') return json(env, { error: 'not found' }, 404);
+  // Stripe's webhook comes from Stripe, not from our pages: its signature is checked instead of the origin
+  if (route === '/stripe/webhook') return Plus.webhook(env, req, { json });
   // every change comes from our own pages, as JSON: this blocks forms posted from other sites
   if (req.headers.get('origin') !== env.SITE_ORIGIN) return json(env, { error: 'origin' }, 403);
   if (!(req.headers.get('content-type') || '').toLowerCase().startsWith('application/json')) return json(env, { error: 'type' }, 415);
@@ -236,6 +242,11 @@ export async function handle(req, env) {
     if (!s) return json(env, { error: 'signed out' }, 401);
     return syncList(env, s, body);
   }
+  if (route === '/plus/checkout' || route === '/plus/portal') {
+    const s = await session(env, req);
+    if (!s) return json(env, { error: 'signed out' }, 401);
+    return route === '/plus/checkout' ? Plus.checkout(env, s, body, { json, over }) : Plus.portal(env, s, { json, over });
+  }
   if (route === '/auth/signout') {
     const s = await session(env, req);
     if (s) await env.DB.prepare(`DELETE FROM sessions WHERE hash = ?`).bind(s.hash).run();
@@ -245,7 +256,10 @@ export async function handle(req, env) {
     const s = await session(env, req);
     if (!s) return json(env, { error: 'signed out' }, 401);
     if (body.confirm !== true) return json(env, { error: 'confirm' }, 400);
+    // a paying member's subscription ends first; if Stripe cannot be reached, nothing is deleted and they try again
+    if (!(await Plus.endSubscriptions(env, s.id))) return json(env, { error: 'stripe' }, 502);
     await env.DB.batch([
+      env.DB.prepare(`DELETE FROM memberships WHERE user_id = ?`).bind(s.id),
       env.DB.prepare(`DELETE FROM lists WHERE user_id = ?`).bind(s.id),
       env.DB.prepare(`DELETE FROM sessions WHERE user_id = ?`).bind(s.id),
       env.DB.prepare(`DELETE FROM signin WHERE email = ?`).bind(s.email),

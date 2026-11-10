@@ -59,13 +59,26 @@
       <p><button type="button" class="btn btn-small" data-acct-replace>Show only my account's list</button></p>
       <p><button type="button" class="btn btn-ghost btn-small" data-acct-merge>Add this browser's list to my account</button></p>
     </div>
+    <section class="acct-plus" data-acct-plus hidden aria-labelledby="acct-plus-h">
+      <h3 id="acct-plus-h" class="h4">Planner Plus</h3>
+      <p data-acct-plus-state role="status"></p>
+      <div data-acct-plus-buy hidden>
+        <p>£2 a month or £20 a year, prices including VAT. You pay on Stripe's secure page; we never see your card. You can cancel from this page at any time, and Plus then runs to the end of the time you have paid for.</p>
+        <div class="acct-buy">
+          <button type="button" class="btn" data-acct-buy="month">£2 a month</button>
+          <button type="button" class="btn" data-acct-buy="year">£20 a year</button>
+        </div>
+      </div>
+      <p data-acct-plus-manage hidden><button type="button" class="btn btn-ghost btn-small" data-acct-portal>Cancel, switch plan or change card</button></p>
+      <p class="meta" data-acct-plus-note hidden>This opens Stripe's page for your membership, then brings you back here.</p>
+    </section>
     <p><a class="btn" href="/my-year/">Go to My year</a></p>
     <p><button type="button" class="btn btn-ghost btn-small" data-acct-signout>Sign out</button></p>
     <p><button type="button" class="btn btn-ghost btn-small" data-acct-signout-clear>Sign out and remove my list from this browser</button></p>
     <p class="meta">On a shared computer, use the second button: your list stays on your account, ready for next time.</p>
     <details class="acct-del">
       <summary>Delete my account</summary>
-      <p>This removes your account, your email address and the copy of your list and plans kept with it from our records straight away. Anything saved in this browser stays here.</p>
+      <p>This removes your account, your email address and the copy of your list and plans kept with it from our records straight away. Anything saved in this browser stays here. If you have Planner Plus, it ends at once and you will not be charged again.</p>
       <p><button type="button" class="btn btn-ghost btn-small" data-acct-delete>Delete my account</button></p>
     </details>
   </section>
