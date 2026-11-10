@@ -266,15 +266,15 @@ t('merge settles: merging the result again with either side changes nothing', ()
 /* ---- the browser side of account sync, with a stand-in browser and a stand-in Worker that merges as the real one does ---- */
 (async () => {
   const API = 'https://api.example.test';
-  let account = null, calls = 0, status = 200, who = 'acct-1';
+  let account = null, calls = 0, status = 200, who = 'acct-1', readonly = false, plusOn = false;
   global.fetch = async (url, init) => {
     calls++;
     assert.strictEqual(url, API + '/list/sync'); assert.strictEqual(init.credentials, 'include'); assert.strictEqual(init.method, 'POST');
     if (status !== 200) return { status, ok: false, json: async () => ({}) };
     const sent = JSON.parse(init.body);
     assert.strictEqual(sent.fields, L.FIELDS);
-    if (sent.list !== null) account = L.merge(account, sent.list);
-    const reply = { ok: true, list: JSON.parse(JSON.stringify(L.merge(account, null))), account: who };
+    if (sent.list !== null && !readonly) account = L.merge(account, sent.list);   // day 15: no Planner Plus, nothing stored
+    const reply = { ok: true, list: JSON.parse(JSON.stringify(L.merge(account, null))), account: who, ...(readonly ? { readonly: true, plus: false } : plusOn ? { plus: true } : {}) };
     return { status: 200, ok: true, json: async () => reply };
   };
   const device = () => {
@@ -336,6 +336,32 @@ t('merge settles: merging the result again with either side changes nothing', ()
     laptop.use(); const c = calls;
     const [a, b] = await Promise.all([laptop.D.sync(), laptop.D.sync()]);
     assert.ok(a.ok && b.ok); assert.strictEqual(calls, c + 2);
+  });
+  await at('sync (day 15): an account without Plus is read-only: the device gets its copy, keeps its own, sends no follow-ups', async () => {
+    laptop.use(); const before = JSON.stringify(account), c = calls;
+    readonly = true;
+    laptop.D.add('pottery-course');
+    await new Promise(r => setTimeout(r, 2200));   // the change is sent once; the account keeps nothing; no repeats
+    assert.strictEqual(JSON.stringify(account), before, 'nothing stored');
+    assert.strictEqual(calls, c + 1, 'one request, no follow-ups although the device holds more than the account');
+    assert.ok(laptop.D.has('pottery-course'), 'the device keeps its own change');
+    const r = await laptop.D.sync();
+    assert.ok(r.ok && r.readonly); assert.strictEqual(laptop.D.flag('plus'), '');
+    readonly = false;
+    let r2 = await laptop.D.sync();
+    assert.ok(r2.ok && !r2.readonly); assert.strictEqual(laptop.D.flag('plus'), '', 'a reply that says nothing about Plus (paywall off) records nothing');
+    plusOn = true; r2 = await laptop.D.sync(); plusOn = false;
+    assert.strictEqual(laptop.D.flag('plus'), '1');
+    assert.ok(account.items.some(i => i.id === 'pottery-course'), 'with Plus, the next sync stores it');
+  });
+  await at('sync (day 15): "show only my account\'s list" never empties this browser when the account keeps nothing', async () => {
+    phone.use(); const before = phone.store.get('ddr_list'); readonly = true;
+    const r = await phone.D.account(true, 'acct-1', 'replace');
+    readonly = false;
+    assert.strictEqual(r.ok, false); assert.strictEqual(r.reason, 'readonly-keep');
+    assert.strictEqual(phone.store.get('ddr_list'), before, 'the list here is untouched');
+    assert.strictEqual(phone.D.flag('acct'), '', 'and syncing stops until the account page is opened again');
+    await phone.D.account(true, 'acct-1');
   });
   await at('sync: the account answering "signed out" stops syncing on this device; data stays', async () => {
     phone.use(); status = 401;

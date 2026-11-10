@@ -4,7 +4,9 @@
    Ticks and the reader's own moves are saved through DDRList.tick / DDRList.shift. A plan's training sessions (from the
    guidance engine, /planner/training/<event>.json, day 6) are shown a week at a time, each with its own Done box. Every word of a plan comes from the
    activity's own fields or content/planner.yaml; the words around it (headings, buttons) are this page's. Nothing leaves
-   the browser. */
+   the browser.
+   Planner Plus day 15: once the paywall is on, a reader without Plus (static/plus.js → 'guest') sees the plans saved in
+   this browser read-only: no ticks, moves or Add to my year; the calendar file still works (it is their own plan). */
 (function () {
   const P = window.DDRPlan, L = window.DDRList, root = document.querySelector('[data-my]');
   if (!P || !L || !root) return;
@@ -20,7 +22,7 @@
   const AFF_REL = 'sponsored nofollow noopener', affUrl = (u, k) => (window.DDR && DDR.affUrl ? DDR.affUrl(u, k) : u);
   const addMonths = (m, n) => { const y = +m.slice(0, 4), mo = +m.slice(5, 7) - 1 + n; return (y + Math.floor(mo / 12)) + '-' + pad(((mo % 12) + 12) % 12 + 1); };
 
-  let S = null, byId = {}, view = 'year', month = thisMonth, all = null;
+  let S = null, byId = {}, view = 'year', month = thisMonth, all = null, ro = true, gated = false;   // read-only until static/plus.js answers
 
   /* ---------- put everything together ---------- */
   function gather() {
@@ -95,7 +97,7 @@
     let h = '<li class="pl-x" data-my-x="' + esc(e.id) + '"><p class="pl-xt"><a href="' + esc(e.url) + '" data-my-xt>' + esc(e.title) + '</a>'
       + (e.area ? ' <span class="pl-lwhy pl-xarea">' + esc(fill(T.near_area, { area: e.area })) + '</span>' : '') + '</p>';
     if (e.planned) h += '<p class="meta">' + esc(fill(T.added, { when: e.planned })) + ' · <a href="' + esc(e.url) + '#plan">' + esc(T.see_plan) + '</a></p>';
-    else if (e.when) h += '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-my-add="' + esc(e.id) + '" data-my-when="' + esc(JSON.stringify(e.when)) + '"' + (e.with ? ' data-my-with="' + esc(e.with) + '"' : '') + '>'
+    else if (e.when && !ro) h += '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-my-add="' + esc(e.id) + '" data-my-when="' + esc(JSON.stringify(e.when)) + '"' + (e.with ? ' data-my-with="' + esc(e.with) + '"' : '') + '>'
       + esc(T.add) + ' <span class="pl-xwhen">' + esc(fill(T.add_on, { when: e.when.date ? P.longDate(e.when.date) : P.monthYear(e.when.month) })) + '</span></button></p>';
     else h += '<p class="meta"><a href="' + esc(e.url) + '#plan">' + esc(T.pick_date) + '</a>' + (e.pick === 'event' ? ': ' + esc(T.pick_why_event) : e.pick === 'fixed' ? ': ' + esc(T.pick_why_fixed) : e.pick === 'long' ? ': ' + esc(T.pick_why_long) : '') + '</p>';
     return h + '</li>';
@@ -145,7 +147,7 @@
       + (s.why ? '<p class="pl-why"><span>Why then:</span> ' + esc(s.why) + '</p>' : '')
       + (s.moved ? '<p class="pl-why my-moved">' + esc(s.moved.why) + '</p>' : '')
       + (s.with ? '<p class="meta my-with">' + esc(s.with) + '</p>' : '')
-      + (s.strand === 'day' ? tripHtml(p, s) + goesHtml(p) : '<div class="my-acts">'
+      + (s.strand === 'day' ? tripHtml(p, s) + goesHtml(p) : ro ? '' : '<div class="my-acts">'
         + '<label class="my-tick"><input type="checkbox" data-my-tick' + (s.done ? ' checked' : '') + '> Done</label>'
         + (w ? '<details class="my-move"><summary>Move this step</summary><div class="my-move-in"><label for="' + uid + '">Move to</label> <input type="date" id="' + uid + '" min="' + w.min + '" max="' + w.max + '" value="' + s.date + '" data-my-to> '
           + '<button type="button" class="btn btn-small" data-my-shift>Move</button>' + (s.moved && s.moved.by === 'you' ? ' <button type="button" class="btn btn-small btn-ghost" data-my-back>Put it back</button>' : '')
@@ -169,7 +171,7 @@
         + '<p class="pl-date"><time datetime="' + x.date + '">' + esc(dayText(x.date)) + '</time>' + (gone ? ' <span class="pl-tag pl-tag-gone">Gone by</span>' : '') + '</p>'
         + '<p class="pl-stext">' + esc(x.text) + '</p>' + (x.detail ? '<p class="pl-detail">' + esc(x.detail) + '</p>' : '')
         + '<p class="pl-why"><span>Why:</span> ' + esc(x.why) + '</p>'
-        + '<div class="my-acts"><label class="my-tick"><input type="checkbox" data-my-tick' + (x.done ? ' checked' : '') + '> Done<span class="sr-only">: ' + esc(dayText(x.date) + ', ' + x.text) + '</span></label></div></li>'; }).join('')
+        + (ro ? '' : '<div class="my-acts"><label class="my-tick"><input type="checkbox" data-my-tick' + (x.done ? ' checked' : '') + '> Done<span class="sr-only">: ' + esc(dayText(x.date) + ', ' + x.text) + '</span></label></div>') + '</li>'; }).join('')
       + '</ol>' + (wk.bullets.length > 1 ? '<p class="pl-wkh">Why this week looks like this</p><ul class="pl-wkwhy">' + wk.bullets.slice(1).map(b => '<li>' + esc(b) + '</li>').join('') + '</ul>' : '')
       + '</details></li>';
   }
@@ -204,7 +206,14 @@
     gather();
     root.removeAttribute('aria-busy'); $('[data-my-loading]').hidden = true;
     const any = all.plans.length > 0;
-    $('[data-my-empty]').hidden = any; $('[data-my-main]').hidden = !any;
+    $('[data-my-empty]').hidden = any || ro; $('[data-my-main]').hidden = !any;
+    const rb = $('[data-my-ro]');
+    if (rb) {   // read-only: say why, and what Plus does (with nothing saved here, that is all there is to say)
+      const PP = S.plus || {};
+      rb.hidden = !ro;
+      if (ro) rb.innerHTML = '<p>' + esc(any ? PP.my_ro : PP.what) + '</p><p class="pl-price">' + esc(PP.price) + '</p><p class="pl-acts"><a class="btn" href="/account/">' + esc(PP.join) + '</a>'
+        + (any ? '' : '<a class="btn btn-ghost" href="/planner-plus/sample/">' + esc(PP.sample) + '</a>') + '</p><p class="meta"><a href="/account/">' + esc(PP.signin) + '</a></p>';
+    }
     if (!any) return;
     drawClashes();
     $$('[data-my-view]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.myView === view)));
@@ -243,6 +252,7 @@
     const st = e.target.closest('[data-my-step]');
     if (st) { month = addMonths(month, +st.dataset.myStep); draw(); setHash(); if (st.hidden) $('[data-my-month]').focus({ preventScroll: true }); return; }
     if (e.target.closest('[data-my-ics]')) { saveCalendar(); return; }
+    if (ro) return;   // nothing below changes a plan
     const add = e.target.closest('[data-my-add]');
     if (add) {   // Add to my year (day 10): a plan of its own for that activity, on the date shown
       let w; try { w = JSON.parse(add.dataset.myWhen); } catch (x) { return; }
@@ -269,14 +279,14 @@
     }
   });
   root.addEventListener('change', e => {
-    if (!e.target.matches('[data-my-tick]')) return;
+    if (ro || !e.target.matches('[data-my-tick]')) return;
     const li = e.target.closest('[data-sid]'), done = e.target.checked;
     L.tick(li.dataset.pid, li.dataset.sid, done);
     li.classList.toggle('is-done', done);   // no full redraw, so keyboard focus stays on the box
     gather(); say(done ? 'Ticked off.' : 'Not done yet.');
   });
   // A plan changed in another tab (an activity page, the list): redraw
-  window.addEventListener('storage', ev => { if (ev.key === L.KEY && S) draw(); });
+  window.addEventListener('storage', ev => { if (ev.key === L.KEY && S && gated) draw(); });
 
   const h = location.hash.slice(1);
   if (/^\d{4}-\d{2}$/.test(h)) { view = 'month'; month = h; }
@@ -286,6 +296,6 @@
     const evs = [...new Set(L.live(L.load()).filter(it => it.cid && it.plan_made && byId[it.cid] && byId[it.cid].event).map(it => byId[it.cid].event.id))];
     S.training = {};
     return Promise.all(evs.map(e => fetch('/planner/training/' + encodeURIComponent(e) + '.json').then(r => (r.ok ? r.json() : null)).then(x => { if (x) S.training[e] = x; }).catch(() => {})))
-      .then(() => draw());
+      .then(() => (window.DDRPlus ? DDRPlus.access() : 'open')).then(m => { ro = m === 'guest'; gated = true; draw(); });
   }).catch(() => { root.removeAttribute('aria-busy'); $('[data-my-loading]').hidden = true; $('[data-my-fail]').hidden = false; });
 })();

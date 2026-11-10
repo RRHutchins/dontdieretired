@@ -53,6 +53,14 @@ accounts:
   # is deployed, the sign-in email works, and Robin has tried it; /privacy/ then gains its accounts section in the same build.
   api: ""
 
+plus:
+  # Planner Plus paywall (RUNBOOK §6t day 15). false = the planner works for every reader as it has since 3 Nov (a preview
+  # while Plus is built) and no price is shown anywhere. true = launch: the dated planner is for members only, non-members
+  # get "Plan it yourself" links, the sample plan and the price, and plans already in their browser are read-only.
+  # Set true only on launch day, once accounts.api is set, Stripe is live and Robin has bought and refunded once.
+  # DDR_PLUS_PAYWALL=1 turns it on for a local test build.
+  paywall: false
+
 newsletter:
   provider: "buttondown"                     # buttondown | beehiiv | mailerlite | kit
   form_action: "https://buttondown.com/api/emails/embed-subscribe/dontdieretired"

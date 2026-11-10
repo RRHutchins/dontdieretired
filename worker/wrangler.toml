@@ -13,6 +13,9 @@ crons = ["17 * * * *"]   # hourly clean-up of spent links, ended sessions and ol
 [vars]
 SITE_ORIGIN = "https://dontdieretired.com"
 MAIL_FROM = "Don't Die Retired <signin@dontdieretired.com>"
+# Planner Plus paywall (RUNBOOK §6t day 15): "1" only on launch day, in the same change that sets site.yaml → plus.paywall
+# true. With "1" (and payments set up), an account without Plus can read its list but nothing it sends is stored.
+PLUS_PAYWALL = "0"
 
 [[d1_databases]]
 binding = "DB"

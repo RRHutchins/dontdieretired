@@ -199,6 +199,19 @@
     return out;
   }
 
+  /* "Plan it yourself" (RUNBOOK §6t, Planner Plus day 15): the free links, with no dates and nothing saved.   PURE.
+     diy(activity, settings, { place, acts }) → { links, trip, nearby, goes }: the activity's own links (book it, find
+     out more), trip() with no dates (the map, journey planners, hotel and food searches, tour searches), and the nearby
+     and goes-with activities as links to their own pages (no Add to my year: that is Planner Plus). */
+  function diy(a, settings, opts) {
+    opts = opts || {};
+    const acts = opts.acts || {}, t = trip(a, settings, { place: opts.place });
+    const link = (id, area) => (acts[id] ? { id, title: acts[id].title, area: area || '', url: '/list/' + id + '/' } : null);
+    const nearby = t.away ? (a.nearby || []).map(n => link(n[0], n[1])).filter(Boolean) : [];
+    const goes = (a.goes || []).filter(id => !nearby.some(e => e.id === id)).map(id => link(id)).filter(Boolean);
+    return { links: (a.links || []).slice(), trip: t, nearby, goes };
+  }
+
   function build(a, settings, opts) {
     opts = opts || {};
     const S = settings.steps, N = settings.notes, today = todayUTC(opts.today);
@@ -549,5 +562,5 @@
     return { text: L.map(fold).join('\r\n') + '\r\n', count };
   }
 
-  return { VERSION, LEVELS, MAX_SPAN, okUntil, build, suggest, trip, extras, whenLabel, cleanPlace, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  return { VERSION, LEVELS, MAX_SPAN, okUntil, build, suggest, trip, extras, diy, whenLabel, cleanPlace, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

@@ -637,4 +637,57 @@ t('trip day 10: a trip away over training sessions of another plan, or ending th
   assert.strictEqual(P.combine([gr, fr('2027-10-01', '2027-10-03')], data, { today: '2027-05-01' }).clashes.filter(x => x.kind === 'trip').length, 0);
   assert.strictEqual(P.combine([fr(d(L0, -2), d(L0, 1))], data, { today: '2027-05-01' }).clashes.length, 0);
 });
+
+// ---- Planner Plus day 15: who gets the planner, the free links, and the sample ----
+t('DDRPlus.decide: open with no paywall; a member only on the Worker\'s word, or last word when offline', () => {
+  const D = require('../static/plus.js').decide, yes = { signed_in: true, plus: { member: true } };
+  assert.strictEqual(D({ paywall: false }), 'open');
+  assert.strictEqual(D({ paywall: false, api: 'x', known: true, me: { signed_in: false } }), 'open', 'no paywall: nobody is shut out');
+  assert.strictEqual(D({ paywall: true, api: 'x', known: true, me: yes }), 'member');
+  assert.strictEqual(D({ paywall: true, api: '', known: true, me: yes }), 'guest', 'no accounts: no members');
+  assert.strictEqual(D({ paywall: true, api: 'x', known: false, me: yes, last: '1' }), 'guest', 'never signed in on this device');
+  assert.strictEqual(D({ paywall: true, api: 'x', known: true, me: { signed_in: true, plus: { member: false } }, last: '1' }), 'guest', 'the Worker beats the device');
+  assert.strictEqual(D({ paywall: true, api: 'x', known: true, me: { signed_in: false }, last: '1' }), 'guest', 'signed out');
+  assert.strictEqual(D({ paywall: true, api: 'x', known: true, me: { signed_in: true, plus: { member: 'yes' } } }), 'guest', 'only a true member');
+  assert.strictEqual(D({ paywall: true, api: 'x', known: true, me: null, last: '1' }), 'member', 'offline: a member keeps their plans');
+  assert.strictEqual(D({ paywall: true, api: 'x', known: true, me: null, last: '' }), 'guest');
+  assert.strictEqual(D(), 'open');
+});
+t('Plan it yourself: links only from the activity and planner.yaml, nearby only for a trip away, no dates, no Add', () => {
+  const T = data.trip, allowed = new Set(T.links.map(l => l.id));
+  let away = 0, ask = 0;
+  for (const a of acts) {
+    const d = P.diy(a, data, { place: 'Bath', acts: byId });
+    assert.deepStrictEqual(d.links, a.links, a.id);
+    assert.ok(!d.trip.needs, a.id);
+    for (const l of [...d.trip.where, ...d.trip.getting, ...(d.trip.stay ? d.trip.stay.links.concat(d.trip.stay.more) : []), ...(d.trip.eat ? d.trip.eat.links : []), ...(d.trip.near ? d.trip.near.links : [])]) {
+      assert.ok(allowed.has(l.id), a.id + ' ' + l.id);
+      assert.ok(!/\{(q|in|out|q_\w+)\}/.test(l.url), a.id + ': a raw placeholder in ' + l.url);
+      assert.ok(!/checkin=\d|checkout=\d/.test(l.url), a.id + ': no dates in a free hotel search');
+      assert.ok(!l.aff || (l.aff === 'viator' || l.aff === 'getyourguide'), a.id + ': only the tour ids');
+    }
+    if (d.trip.away) away++; else assert.strictEqual(d.nearby.length, 0, a.id + ': nearby only for a trip away');
+    for (const e of [...d.nearby, ...d.goes]) {
+      assert.ok(byId[e.id] && e.id !== a.id && e.url === '/list/' + e.id + '/', a.id + ' → ' + e.id);
+      assert.deepStrictEqual(Object.keys(e).sort(), ['area', 'id', 'title', 'url'], 'links only: nothing to add or date');
+    }
+    assert.strictEqual(new Set([...d.nearby, ...d.goes].map(e => e.id)).size, d.nearby.length + d.goes.length, a.id + ': no activity twice');
+    if (P.diy(a, data, { place: '', acts: byId }).trip.needs) ask++;
+  }
+  assert.ok(away > 0 && ask > 0);
+  const sourced = acts.find(a => a.where); if (sourced) assert.ok(!P.diy(sourced, data, { place: '', acts: byId }).trip.needs, 'a sourced place needs no typing');
+});
+t('the sample plan builds a full plan with the trip sections, and its words are all in planner.yaml', () => {
+  const sp = data.sample, a = byId[sp.activity];
+  assert.ok(a, 'sample activity exists');
+  const plan = P.build(a, data, { date: sp.date, until: sp.until, today: sp.made });
+  assert.strictEqual(plan.status, 'ok'); assert.ok(plan.steps.length >= 5);
+  assert.ok(plan.steps.every(s => s.date >= sp.made), 'nothing gone by on the sample');
+  checkSourced(a, plan);
+  const r = P.trip(a, data, { place: sp.place, date: plan.date, until: plan.until });
+  assert.ok(r.away && r.stay && r.stay.open && r.eat && r.near, 'the sample shows getting there, staying, eating and nearby');
+  for (const k of ['what', 'price', 'join', 'sample', 'saved_ro', 'my_ro', 'sample_intro']) assert.ok(data.plus[k], k);
+  assert.ok(!/live calendar|feed|today screen|gift/i.test(data.plus.what), 'Plus words claim only what works now');
+  assert.ok(/£2 a month or £20 a year/.test(data.plus.price));
+});
 console.log(n + ' tests passed');

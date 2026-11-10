@@ -69,10 +69,27 @@
   {% if c.safety %}<aside class="fl-safety"><strong>Worth knowing.</strong> {{ c.safety }}</aside>{% endif %}
   {% if c.category in ('money', 'earn') %}<p class="disclosure">This is general information, not financial or business advice for your own circumstances.</p>{% endif %}
 
+  {% set PP = pset.plus %}
   <section class="pl" id="plan" data-pl hidden aria-labelledby="pl-h" tabindex="-1">
     <h2 id="pl-h">Plan this</h2>
+    <p>{{ PP.intro }}</p>
+    {# Planner Plus day 15: two ways to plan. 1. free links (they can earn through disclosed affiliate links); 2. the dated planner #}
+    <div class="pl-way pl-diy" data-pl-diy>
+      <h3 class="pl-wayh">{{ PP.diy_head }} <span class="pl-tag pl-tag-free">{{ PP.diy_tag }}</span></h3>
+      <p>{{ PP.diy_help }}</p>
+      <details class="pl-diyd" data-pl-diyd><summary>{{ PP.diy_open }}</summary><div class="pl-diyout" data-pl-diyout></div></details>
+    </div>
+    <div class="pl-way pl-plus" data-pl-plus>
+    <h3 class="pl-wayh">{{ PP.head if plus_paywall else PP.head_open }}</h3>
     <p>Pick a day, or a month, and we will set out how to get ready, step by step, with a date and a reason for each. {{ pkind.why }}{% if c.plan.event and pkind.why_train %} {{ pkind.why_train }}{% endif %}</p>
-    <form class="pl-form" data-pl-form novalidate>
+    {% if plus_paywall %}<p class="meta" data-pl-checking>{{ PP.checking }}</p>
+    <div class="pl-guest" data-pl-guest hidden>
+      <p>{{ PP.what }}</p>
+      <p class="pl-price">{{ PP.price }}</p>
+      <p class="pl-acts"><a class="btn" href="/account/">{{ PP.join }}</a><a class="btn btn-ghost" href="/planner-plus/sample/">{{ PP.sample }}</a></p>
+      <p class="meta"><a href="/account/">{{ PP.signin }}</a></p>
+    </div>{% endif %}
+    <form class="pl-form" data-pl-form novalidate{% if plus_paywall %} hidden{% endif %}>
       <fieldset>
         <legend>When do you want to do it?</legend>
         <div class="pl-when">
@@ -106,6 +123,7 @@
       <p class="pl-acts"><button type="submit" class="btn">Show my plan</button></p>
     </form>
     <div class="pl-out" data-pl-out aria-live="polite"></div>
+    </div>
   </section>
   <script type="application/json" id="pl-data">{{ {"a": c.plan, "s": pset, "x": pext} | tojson }}</script>
 
@@ -145,4 +163,4 @@
   <p><a href="/list/">← All activities</a></p>
 </article>
 {% endblock %}
-{% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script><script src="/static/planner.js?v={{ asset_v }}" defer></script><script src="/static/plan-page.js?v={{ asset_v }}" defer></script>{% endblock %}
+{% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script><script src="/static/planner.js?v={{ asset_v }}" defer></script><script src="/static/plus.js?v={{ asset_v }}" defer></script><script src="/static/plan-page.js?v={{ asset_v }}" defer></script>{% endblock %}

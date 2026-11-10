@@ -27,6 +27,8 @@ COUNTRY = re.compile(r"[A-Z]{2}")
 NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help",
              "level_q", "level_opt", "level_starter", "level_active", "level_advanced", "level_help", "train_month", "train_offline", "train_week", "train_about", "cal_why_train", "train_level_long", "train_level_short", "clash_span", "span_q", "span_last", "span_help", "span_err",
              "trip_train", "trip_train_key", "trip_train_eve", "with_trip")
+PLUS_KEYS = ("intro", "diy_head", "diy_tag", "diy_help", "diy_open", "diy_book", "diy_place_help", "diy_nearby", "diy_goes", "head", "head_open", "checking",
+             "what", "price", "sample", "join", "signin", "saved_ro", "my_ro", "sample_title", "sample_intro")
 
 
 def _load(p: Path):
@@ -83,6 +85,11 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         c_ = l.get("countries")
         assert c_ == "any" or (isinstance(c_, list) and c_ and all(isinstance(x, str) and COUNTRY.fullmatch(x) for x in c_)), f"planner trip link {l['id']}: countries is any or a list of two-letter codes"
     assert any(l["section"] == "where" for l in trip.get("links") or []), "planner trip: needs a map link (section: where)"
+    plus = cfg.get("plus") or {}   # Planner Plus day 15: the two ways to plan, the paywall and the sample plan
+    for k in PLUS_KEYS: assert isinstance(plus.get(k), str) and plus[k].strip(), f"planner plus.{k}: missing"
+    sp = plus.get("sample_plan") or {}
+    assert sp.get("activity") and sp.get("place") and all(re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(sp.get(k, ""))) for k in ("date", "made")), "planner plus.sample_plan: needs activity, place, date and made (YYYY-MM-DD)"
+    assert str(sp["made"]) < str(sp["date"]) and (not sp.get("until") or str(sp["until"]) > str(sp["date"])), "planner plus.sample_plan: made before the date, until after it"
     busy = cfg.get("busy_day", 3)
     assert isinstance(busy, int) and 2 <= busy <= 10, "planner busy_day: a whole number from 2 to 10"
 
@@ -208,7 +215,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         a["goes"] = goes[:GOES_MAX]
     data = {"version": 1, "built": today.isoformat(),
             "kinds": {k: {"label": v["label"], "why": v["why"], "why_train": v.get("why_train", ""), "lead_weeks": v["lead_weeks"], "strands": v["strands"]} for k, v in kinds.items()},
-            "steps": steps, "notes": notes, "trip": trip, "busy": busy, "events": events, "activities": out}
+            "steps": steps, "notes": notes, "trip": trip, "plus": {k: v for k, v in (cfg.get("plus") or {}).items() if k != "sample_plan"}, "sample": (cfg.get("plus") or {}).get("sample_plan"), "busy": busy, "events": events, "activities": out}
     return data, warn
 
 

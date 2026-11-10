@@ -406,3 +406,35 @@ trip:
       why: "Google Maps: cafés near there, for something lighter."
       countries: any
       section: eat
+
+# Planner Plus day 15 (RUNBOOK §6t): the two ways to plan on every activity page, the paywall, read-only plans and the sample.
+# Words shown to non-members describe only what Plus does today; add a feature here only once it works.
+plus:
+  intro: "Two ways to plan it."
+  diy_head: "Plan it yourself"
+  diy_tag: "Free"
+  diy_help: "The links you need to book it, get there, find somewhere to stay and eat, and see what else there is to do nearby. They are searches for you to run; nothing is saved."
+  diy_open: "Show the links"
+  diy_book: "Book it and find out more"
+  diy_place_help: "Type a town, venue or postcode to fill in the map, journey planner and hotel searches. It stays on this page and is not saved."
+  diy_nearby: "Also on our list near there"
+  diy_goes: "Goes well with"
+  head: "Plan it with Planner Plus"
+  head_open: "Plan it with dates"
+  checking: "Checking your Planner Plus membership…"
+  what: "Planner Plus turns this into a dated plan: when to book, each step to get ready with the reason it comes when it does, a training plan for physical events, and, with the day itself, getting there, where to stay and eat, and more to do nearby. All your plans sit together in My year, kept on your account on every device, and go into your own calendar."
+  price: "£2 a month or £20 a year, including VAT. Cancel any time; Plus runs to the end of the time you have paid for."
+  sample: "See a sample plan"
+  join: "Join Planner Plus"
+  signin: "Already a member? Sign in"
+  saved_ro: "This is the plan saved in this browser. You can still see it, put it in your calendar or remove it. Changing it, or planning something new, comes with Planner Plus."
+  my_ro: "You can see the plans saved in this browser. Ticking steps off, moving them and adding new plans come with Planner Plus."
+  # the one worked sample plan non-members see (/planner-plus/sample/): dates picked for the sample, not sourced dates
+  sample_plan:
+    activity: go-to-edinburgh-fringe
+    date: "2027-08-14"
+    until: "2027-08-18"
+    made: "2027-03-01"
+    place: "Edinburgh"
+  sample_title: "A sample Planner Plus plan"
+  sample_intro: "This is a real plan, made by the planner and shown as a member sees it, for a stay at the Edinburgh Festival Fringe. The dates were picked for this sample: they are not the Fringe's own, so check its site before you plan. In Planner Plus you choose the day or month, and the plan is built from that day."

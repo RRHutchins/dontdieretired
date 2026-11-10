@@ -179,6 +179,18 @@ async function syncList(env, s, body) {
   if (typeof body.fields === 'number' && body.fields > DDRList.FIELDS) return json(env, { error: 'version' }, 409);
   if (!pull && Array.isArray(inc.items) && inc.items.length > LIST_ITEMS) return json(env, { error: 'too big' }, 413);
   if (await over(env, 'sync', s.id, LIMIT_SYNC_HOUR)) return json(env, { error: 'slow down' }, 429);
+  // Planner Plus day 15: keeping the list on the account is part of Plus. Once the paywall is on (PLUS_PAYWALL = "1" in
+  // wrangler.toml, switched with site.yaml → plus.paywall) and Plus can be bought, an account without it may read what
+  // its account already holds (a lapsed member sees their plans on a new device) but nothing it sends is stored. Until
+  // then every account syncs as on day 13, matching the site, which is open to everyone until the same day.
+  const gated = env.PLUS_PAYWALL === '1' && Plus.payReady(env);
+  const member = gated ? (await Plus.membership(env, s.id)).member : null;
+  if (gated && !member) {
+    const row = await env.DB.prepare(`SELECT data, rev FROM lists WHERE user_id = ?`).bind(s.id).first();
+    let stored = null;
+    if (row) { try { stored = JSON.parse(row.data); } catch { stored = null; } }
+    return json(env, { ok: true, list: DDRList.merge(stored, null), rev: row ? row.rev : 0, account: s.id, readonly: true, plus: false });
+  }
   const mine = pull ? null : DDRList.clean(inc);
   if (mine && JSON.stringify(mine).length > LIST_MAX) return json(env, { error: 'too big' }, 413);
   for (let i = 0; i < 4; i++) {
@@ -186,14 +198,14 @@ async function syncList(env, s, body) {
     let stored = null;
     if (row) { try { stored = JSON.parse(row.data); } catch { stored = null; } }
     const merged = DDRList.merge(stored, mine), text = JSON.stringify(merged);
-    if (pull && !row) return json(env, { ok: true, list: merged, rev: 0, account: s.id });
-    if (row && text === row.data) return json(env, { ok: true, list: merged, rev: row.rev, account: s.id });   // nothing new: no write
+    if (pull && !row) return json(env, { ok: true, list: merged, rev: 0, account: s.id, ...(gated ? { plus: true } : {}) });
+    if (row && text === row.data) return json(env, { ok: true, list: merged, rev: row.rev, account: s.id, ...(gated ? { plus: true } : {}) });   // nothing new: no write
     if (text.length > LIST_MAX) return json(env, { error: 'too big' }, 413);
     // written only while the member still exists, so a sync racing an account deletion cannot leave a list behind
     const r = row
       ? await env.DB.prepare(`UPDATE lists SET data = ?, rev = rev + 1, updated = ? WHERE user_id = ? AND rev = ? AND EXISTS (SELECT 1 FROM users WHERE id = ?) RETURNING rev`).bind(text, now(), s.id, row.rev, s.id).first()
       : await env.DB.prepare(`INSERT INTO lists (user_id, data, rev, updated) SELECT ?, ?, 1, ? WHERE EXISTS (SELECT 1 FROM users WHERE id = ?) ON CONFLICT(user_id) DO NOTHING RETURNING rev`).bind(s.id, text, now(), s.id).first();
-    if (r) return json(env, { ok: true, list: merged, rev: r.rev, account: s.id });
+    if (r) return json(env, { ok: true, list: merged, rev: r.rev, account: s.id, ...(gated ? { plus: true } : {}) });
     if (!(await env.DB.prepare(`SELECT 1 AS x FROM users WHERE id = ?`).bind(s.id).first())) return json(env, { error: 'signed out' }, 401);
     // another device wrote in between: read again and merge with that
   }

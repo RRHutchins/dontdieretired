@@ -252,13 +252,18 @@
       else if (r.ok) {
         const d = await r.json();
         if (owner && d.account && owner !== d.account) { flag('acct', ''); busy = false; waiting.splice(0).forEach(f => f({ ok: false, reason: 'other-account' })); return { ok: false, reason: 'other-account' }; }
+        // a read-only account (no Planner Plus, day 15) keeps nothing, so the list here may be the other person's only copy:
+        // never empty it then; the account page says why
+        if (replace && d.readonly) { flag('acct', ''); busy = false; waiting.splice(0).forEach(f => f({ ok: false, reason: 'readonly-keep' })); return { ok: false, reason: 'readonly-keep' }; }
         if (replace) { save(empty(), true); }
         if (d.account) flag('acct_owner', d.account);
         const here = absorb(d.list);
         if (here) tell();
-        // this device holds something the account does not yet (a change made while the post was in flight): send it too
-        if (JSON.stringify(load()) !== JSON.stringify(clean(d.list)) && follow < 3) { follow++; again = true; }
-        res = { ok: true, changed: here };
+        if (typeof d.plus === 'boolean') flag('plus', d.plus ? '1' : '');   // what the account said last time (static/plus.js uses it only when offline); sent only once the paywall is on
+        // this device holds something the account does not yet (a change made while the post was in flight): send it too.
+        // Not when the account is read-only (no Planner Plus, day 15): it keeps nothing we send, so there is no point.
+        if (!d.readonly && JSON.stringify(load()) !== JSON.stringify(clean(d.list)) && follow < 3) { follow++; again = true; }
+        res = { ok: true, changed: here, readonly: !!d.readonly };
       } else {
         res = { ok: false, reason: r.status === 413 ? 'too-big' : r.status === 409 ? 'old-service' : r.status === 429 ? 'slow' : 'status-' + r.status };
         if (r.status === 409 || r.status === 413) flag('acct', '');   // retrying cannot help: stop until the account page is opened again

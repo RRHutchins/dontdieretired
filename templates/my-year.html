@@ -13,6 +13,7 @@
   <p class="meta" data-my-loading>Putting your plans together…</p>
   <p class="pl-err" data-my-fail role="alert" hidden>Your plans could not be loaded just now. Check your connection and reload the page. They are still saved on this device.</p>
 
+  <div class="pl-guest" data-my-ro hidden></div>
   <div class="my-empty" data-my-empty hidden>
     <h2>Nothing planned yet</h2>
     <p>Open anything in <a href="/list/">Things to do</a>, press <strong>Plan this</strong>, choose a day or a month and save the plan. It appears here with your other plans, and you can tick off each step as you go.</p>
@@ -57,4 +58,4 @@
   </div>
 </div>
 {% endblock %}
-{% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/planner.js?v={{ asset_v }}" defer></script><script src="/static/my-year.js?v={{ asset_v }}" defer></script>{% endblock %}
+{% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/planner.js?v={{ asset_v }}" defer></script><script src="/static/plus.js?v={{ asset_v }}" defer></script><script src="/static/my-year.js?v={{ asset_v }}" defer></script>{% endblock %}

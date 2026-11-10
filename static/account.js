@@ -38,7 +38,14 @@
       other.hidden = false; other.focus();
       return;
     }
-    if (r && r.ok) {
+    const keep = $('[data-acct-keep]'); if (keep) keep.hidden = !!(r && r.readonly);
+    if (r && r.reason === 'readonly-keep') {
+      line.textContent = 'This browser\'s list was left as it is: without Planner Plus your account does not keep lists, so it may be the other person\'s only copy. Use "Sign out and remove my list from this browser" only if they have finished with it.';
+      return;
+    }
+    if (r && r.ok && r.readonly) {   // day 15: no Planner Plus, so the account keeps nothing new (it may hold plans from before)
+      line.textContent = 'Keeping your list and plans on your account, and on every device, comes with Planner Plus. Until then they stay in this browser; anything your account already held has been brought here too.';
+    } else if (r && r.ok) {
       const n = L.live(L.load()).length;
       line.textContent = n ? 'Your list and plans are up to date on your account (' + n + (n === 1 ? ' thing).' : ' things).') : 'Your list is empty. Anything you add or plan on this device will be kept on your account too.';
     } else if (r && r.reason === 'signed-out') { show('out'); }
@@ -86,7 +93,7 @@
     state.textContent = 'Thank you. Your payment went through; switching Planner Plus on…';
     for (let i = 0; i < 10; i++) {   // the webhook usually lands within seconds
       const p = await refreshPlus();
-      if (p && p.member) { state.textContent = 'Thank you. Planner Plus is on.' + (PLAN[p.plan] ? ' You are on the ' + PLAN[p.plan] + ' plan' + (p.until ? ', renewing on ' + day(p.until) : '') + '.' : ''); return; }
+      if (p && p.member) { syncNow(); state.textContent = 'Thank you. Planner Plus is on.' + (PLAN[p.plan] ? ' You are on the ' + PLAN[p.plan] + ' plan' + (p.until ? ', renewing on ' + day(p.until) : '') + '.' : ''); return; }
       await new Promise(r => setTimeout(r, 2000));
     }
     state.textContent = 'Thank you. Stripe has your payment, but your membership has not reached your account yet. Refresh this page in a minute or two.';

@@ -388,5 +388,37 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       assert.strictEqual(st.posts.length, before, 'a second run adds nothing'); assert.ok(!fs.existsSync(out));
     } finally { globalThis.fetch = saved; delete process.env.STRIPE_SECRET_KEY; try { fs.unlinkSync(out); } catch (e) { /* gone */ } }
   });
+  await t('day 15: once the paywall is on, the list on the account is Plus: others can read their copy but store nothing', async () => {
+    const e = env({ PLUS_PAYWALL: '1' }), a = await login(e);
+    const list = { version: 1, items: [{ id: 'beekeeping', cid: 'beekeeping', pos: 1, status: 'want', added_at: '2026-11-10T00:00:00Z', updated_at: '2026-11-10T00:00:00Z', month: '2027-03', plan_made: '2026-11-10' }] };
+    let r = await post(e, '/list/sync', { list, fields: 6 }, { cookie: a.cookie }); let d = await r.json();
+    assert.strictEqual(r.status, 200); assert.strictEqual(d.readonly, true); assert.strictEqual(d.plus, false); assert.deepStrictEqual(d.list.items, [], 'nothing stored, nothing held');
+    assert.strictEqual(e.DB.raw.prepare('SELECT COUNT(*) n FROM lists').get().n, 0);
+    // pays: now it is kept
+    makeSub('sub_l1', 'cus_l1'); await hook(e, completed('sub_l1', a.id, 'cus_l1'));
+    r = await post(e, '/list/sync', { list, fields: 6 }, { cookie: a.cookie }); d = await r.json();
+    assert.strictEqual(d.readonly, undefined); assert.strictEqual(d.plus, true); assert.deepStrictEqual(d.list.items.map(i => i.id), ['beekeeping']);
+    // lapses: the account's copy still comes back (a new device sees the plans), but a new thing is not stored
+    S.subs.sub_l1.status = 'canceled';
+    await hook(e, evt('customer.subscription.deleted', { id: 'sub_l1', object: 'subscription', customer: 'cus_l1' }));
+    assert.strictEqual((await me(e, a.cookie)).plus.member, false);
+    const more = JSON.parse(JSON.stringify(list)); more.items.push(Object.assign({}, list.items[0], { id: 'pottery', cid: 'pottery', pos: 2 }));
+    r = await post(e, '/list/sync', { list: more, fields: 6 }, { cookie: a.cookie }); d = await r.json();
+    assert.strictEqual(d.readonly, true); assert.deepStrictEqual(d.list.items.map(i => i.id), ['beekeeping']);
+    r = await post(e, '/list/sync', { list: null, fields: 6 }, { cookie: a.cookie }); d = await r.json();
+    assert.deepStrictEqual(d.list.items.map(i => i.id), ['beekeeping'], 'a fresh device can read it');
+    assert.ok(!e.DB.raw.prepare('SELECT data FROM lists').get().data.includes('pottery'));
+    // still needs a session, our origin and the limits like any sync
+    assert.strictEqual((await post(e, '/list/sync', { list: more, fields: 6 })).status, 401);
+    assert.strictEqual((await post(e, '/list/sync', { list: more, fields: 6 }, { cookie: a.cookie, origin: 'https://evil.example' })).status, 403);
+    // paywall off (as the site until launch), or on without payments set up: every account syncs as on day 13, and the
+    // reply says nothing about Plus, so no device records a membership it does not have
+    for (const o of [{}, { PLUS_PAYWALL: '0' }, { PLUS_PAYWALL: '1', STRIPE_SECRET_KEY: '', STRIPE_WEBHOOK_SECRET: '' }]) {
+      const e2 = env(o), b = await login(e2);
+      d = await (await post(e2, '/list/sync', { list, fields: 6 }, { cookie: b.cookie })).json();
+      assert.strictEqual(d.readonly, undefined, JSON.stringify(o)); assert.strictEqual(d.plus, undefined, JSON.stringify(o));
+      assert.strictEqual(e2.DB.raw.prepare('SELECT COUNT(*) n FROM lists').get().n, 1);
+    }
+  });
   console.log(`\n${n} tests passed`);
 })().catch(e => { console.error(e); process.exit(1); });

@@ -590,6 +590,10 @@ def build(make_social=True):
     _acct = (os.environ.get("DDR_ACCOUNTS_API") or str((cfg.get("accounts") or {}).get("api") or "")).rstrip("/")
     assert _acct == "" or re.match(r"^(https://[a-z0-9.-]+|http://(localhost|127\.0\.0\.1):\d+)$", _acct), f"accounts.api must be an https origin: {_acct!r}"
     env.globals.update(accounts_api=_acct)
+    # Planner Plus paywall (RUNBOOK §6t day 15): off until launch day; it needs accounts, as membership lives there
+    _paywall = os.environ.get("DDR_PLUS_PAYWALL") == "1" or (cfg.get("plus") or {}).get("paywall") is True
+    assert not _paywall or _acct, "plus.paywall needs accounts.api: membership is kept on the account"
+    env.globals.update(plus_paywall=_paywall)
     env.filters["metadesc"] = metadesc
     env.filters["seotitle"] = lambda t: seo_title(t, cfg["site"]["name"])
     env.globals.update(same_as=[v for k, v in cfg.get("social", {}).items() if isinstance(v, str) and v.startswith("http")])
@@ -817,6 +821,11 @@ def build(make_social=True):
             for pl in c.get("places") or []: area_n[pl] = area_n.get(pl, 0) + 1
         out("/account/", "account.html")   # sign-in for Planner Plus (RUNBOOK §6t day 12): noindex, not in the sitemap, linked from nowhere yet
         out("/my-year/", "my-year.html")   # My year (RUNBOOK §6s): not in the sitemap until the planner launches (day 14)
+        # the one worked sample plan non-members see (RUNBOOK §6t day 15): noindex, not in the sitemap until launch
+        _sp = _pdata["sample"]; _sc = next((c for c in chs if c["id"] == _sp["activity"]), None)
+        assert _sc is not None, f"planner plus.sample_plan: no activity {_sp['activity']}"
+        out("/planner-plus/sample/", "plus-sample.html", c=_sc, sample=_sp, pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"], "plus": _pdata["plus"]},
+            pkind=_pdata["kinds"][_sc["kind"]], pext={i: _pby[i] for i in [n[0] for n in _sc["plan"]["nearby"]] + _sc["plan"]["goes"]})
         urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}, colls=colls, shapes=shapes, area_n=area_n))
         # the world map is loaded only when a reader opens its tab: a file of clickable country shapes
         if "world" in shapes:
@@ -853,7 +862,7 @@ def build(make_social=True):
             # reverse links (Robin, 7 Nov 2026: related activities should lead readers on): pages that list this one as related
             rel += [m for m in chs if m is not c and c["id"] in (m.get("related") or []) and m not in rel]
             more = (rel + [m for m in more if m not in rel])[:max(6 if c.get("collection") else 4, min(len(rel), 8))]
-            urls.append(out(f"/list/{c['id']}/", "challenge.html", c=c, L=LBL, more=more, total=len(chs), pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"]}, pkind=_pdata["kinds"][c["kind"]],
+            urls.append(out(f"/list/{c['id']}/", "challenge.html", c=c, L=LBL, more=more, total=len(chs), pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"], "plus": _pdata["plus"]}, pkind=_pdata["kinds"][c["kind"]],
                             pext={i: _pby[i] for i in [n[0] for n in c["plan"]["nearby"]] + c["plan"]["goes"]}))
             pages.append({"title": c["title"], "url": f"/list/{c['id']}/", "category": c["category"], "excerpt": c["why_short"],
                           "tags": ["activity", "challenge", c["kind"], c["effort"]] + ([c["collection"]] if c.get("collection") else []) + c["id"].split("-"),

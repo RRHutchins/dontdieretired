@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{# The one worked sample plan non-members see (RUNBOOK §6t, Planner Plus day 15). A real plan, built in the browser by
+   static/planner.js from content/planner.yaml → plus.sample_plan, drawn read-only by static/plan-page.js. Not indexed
+   and not in the sitemap until launch. #}
+{% set PP = pset.plus %}
+{% block title %}{{ PP.sample_title }} — {{ cfg.site.name }}{% endblock %}
+{% block description %}A real dated plan from Planner Plus, shown as a member sees it: steps to get ready, getting there, where to stay and eat, and more to do nearby.{% endblock %}
+{% block robots %}<meta name="robots" content="noindex">{% endblock %}
+{% block pagetype %}plus-sample{% endblock %}
+{% block content %}
+<article class="article fl-page">
+  <p class="kicker"><a href="/list/">Things to do</a> · Planner Plus</p>
+  <h1>{{ PP.sample_title }}</h1>
+  <p class="lead">{{ PP.sample_intro }}</p>
+  <p class="pl-sample-for">The activity: <a href="/list/{{ c.id }}/">{{ c.title }}</a></p>
+  <noscript><p>The sample plan is drawn in your browser, so it needs JavaScript switched on.</p></noscript>
+  <section class="pl pl-sample" data-pl data-pl-sample="{{ sample | tojson | forceescape }}" hidden aria-label="The sample plan">
+    <p class="pl-sample-tag"><span class="pl-tag">Sample</span> Dates picked for this example</p>
+    <div class="pl-out" data-pl-out aria-live="polite"></div>
+  </section>
+  <script type="application/json" id="pl-data">{{ {"a": c.plan, "s": pset, "x": pext} | tojson }}</script>
+  {% if plus_paywall %}<aside class="pl-guest pl-sample-buy">
+    <h2 class="h3">{{ PP.head }}</h2>
+    <p>{{ PP.what }}</p>
+    <p class="pl-price">{{ PP.price }}</p>
+    <p class="pl-acts"><a class="btn" href="/account/">{{ PP.join }}</a></p>
+    <p class="meta"><a href="/account/">{{ PP.signin }}</a></p>
+  </aside>{% endif %}
+</article>
+{% endblock %}
+{% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/planner.js?v={{ asset_v }}" defer></script><script src="/static/plan-page.js?v={{ asset_v }}" defer></script>{% endblock %}
