@@ -8,7 +8,7 @@ name: Accounts worker
 on:
   push:
     branches: [main]
-    paths: ["worker/**", "static/list-store.js", "tools/test_accounts.js", "tools/test_plus.js", "tools/test_gifts.js", "tools/d1_stub.js", ".github/workflows/worker.yml"]
+    paths: ["worker/**", "static/list-store.js", "tools/test_accounts.js", "tools/test_plus.js", "tools/test_gifts.js", "tools/test_feed.js", "tools/d1_stub.js", "static/planner.js", "tools/planner.py", ".github/workflows/worker.yml"]
   workflow_dispatch:
     inputs:
       rotate_webhook:
@@ -31,6 +31,12 @@ jobs:
       - run: node tools/test_accounts.js
       - run: node tools/test_plus.js
       - run: node tools/test_gifts.js
+      # the calendar feed (day 17) builds plans from the real planner data, which tools/planner.py prepares
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: node tools/test_feed.js
   deploy:
     needs: test
     runs-on: ubuntu-latest

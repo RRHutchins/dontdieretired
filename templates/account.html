@@ -75,6 +75,31 @@
       <p data-acct-plus-manage hidden><button type="button" class="btn btn-ghost btn-small" data-acct-portal>Cancel, switch plan or change card</button></p>
       <p class="meta" data-acct-plus-note hidden>This opens Stripe's page for your membership, then brings you back here.</p>
     </section>
+    <section class="acct-plus acct-feed" data-acct-feed hidden aria-labelledby="acct-feed-h">
+      <h3 id="acct-feed-h" class="h4" tabindex="-1">My year in your own calendar</h3>
+      <p>Add My year to the calendar on your phone or computer once, and it keeps itself up to date: new plans, changed dates and steps you tick off on any device show up there by themselves. Your calendar app decides how often it looks again, so a change can take some hours to appear.</p>
+      <p data-acct-feed-state role="status"></p>
+      <div data-acct-feed-new hidden tabindex="-1" role="group" aria-labelledby="acct-feed-url-l">
+        <label for="acct-feed-url" id="acct-feed-url-l">Your calendar address</label>
+        <div class="acct-row">
+          <input id="acct-feed-url" readonly spellcheck="false" data-acct-feed-url>
+          <button type="button" class="btn" data-acct-feed-copy>Copy</button>
+        </div>
+        <p class="meta" data-acct-feed-copied role="status"></p>
+        <p class="acct-buy"><a class="btn" data-acct-feed-webcal href="#">Add to Apple Calendar</a></p>
+        <ul class="acct-feed-how">
+          <li><strong>iPhone, iPad or Mac:</strong> press Add to Apple Calendar, then Subscribe.</li>
+          <li><strong>Google Calendar:</strong> on a computer, open Google Calendar; beside "Other calendars" choose +, then "From URL", and paste the address. It then shows on your phone too.</li>
+          <li><strong>Outlook:</strong> choose Add calendar, then Subscribe from web, and paste the address.</li>
+        </ul>
+        <p class="meta">Keep this address to yourself: anyone who has it can see your plans (but not your email address or anything else about your account). It is shown only now. If you lose it, or share it by mistake, make a new one: the old one stops working at once.</p>
+      </div>
+      <p class="acct-buy">
+        <button type="button" class="btn" data-acct-feed-make>Make my calendar address</button>
+        <button type="button" class="btn btn-ghost" data-acct-feed-stop hidden>Stop my calendar address</button>
+      </p>
+      <p class="meta" data-acct-feed-warn hidden>Making a new address, or stopping this one, stops the calendar you already added: it gets no more changes, and you would add the new address to your calendar again.</p>
+    </section>
     <section class="acct-plus acct-redeem" data-acct-redeem hidden aria-labelledby="acct-redeem-h">
       <h3 id="acct-redeem-h" class="h4">Use a gift code</h3>
       <form class="acct-form" data-acct-redeem-form novalidate>
@@ -109,7 +134,7 @@
     <p class="meta">On a shared computer, use the second button: your list stays on your account, ready for next time.</p>
     <details class="acct-del">
       <summary>Delete my account</summary>
-      <p>This removes your account, your email address and the copy of your list and plans kept with it from our records straight away. Anything saved in this browser stays here. If you have Planner Plus, it ends at once and you will not be charged again. Gift codes you have bought still work for whoever has the card, but you will no longer see them here, so print any you need first.</p>
+      <p>This removes your account, your email address and the copy of your list and plans kept with it from our records straight away. Anything saved in this browser stays here, and your calendar address stops working. If you have Planner Plus, it ends at once and you will not be charged again. Gift codes you have bought still work for whoever has the card, but you will no longer see them here, so print any you need first.</p>
       <p><button type="button" class="btn btn-ghost btn-small" data-acct-delete>Delete my account</button></p>
     </details>
   </section>

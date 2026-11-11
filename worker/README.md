@@ -4,6 +4,7 @@ Sign-in by emailed link for dontdieretired.com, on Cloudflare Workers + D1. See 
 design, the security review and what Robin sets up.
 
 - `src/accounts.js`: all the logic (tested by `node tools/test_accounts.js`, which runs it against Node's own SQLite with the real migration).
+- `src/plus.js` (day 14, Stripe), `src/gifts.js` (day 16, gift codes), `src/feed.js` (day 17, the members' live calendar feed at `/feed/<secret>.ics`, built with `static/planner.js` from the site's `/planner/activities.json`; tested by `node tools/test_feed.js`, which needs Python and the site's requirements for `tools/planner.py`).
 - `src/index.js`: the Worker entry (a Worker module may export only handlers) and the hourly clean-up.
 - `migrations/`: the D1 schema. Add a new numbered file for any change; never edit an applied one.
 - Deployed by `.github/workflows/worker.yml` once the four repository secrets exist.

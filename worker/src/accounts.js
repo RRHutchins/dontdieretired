@@ -14,6 +14,7 @@
 import DDRList from '../../static/list-store.js';   // the browser's own merge(), so both sides combine lists the same way
 import * as Plus from './plus.js';                     // day 14: Stripe Checkout, the Customer Portal and the webhook
 import * as Gifts from './gifts.js';                   // day 16: gift codes (buy, list, redeem)
+import * as Feed from './feed.js';                     // day 17: the member's live calendar feed
 
 export const LINK_MINUTES = 30;            // a sign-in link works once, for this long
 export const SESSION_DAYS = 90;            // then the member signs in again
@@ -97,6 +98,7 @@ export async function tidy(env) {
     env.DB.prepare(`DELETE FROM sessions WHERE expires < ?`).bind(t),
     env.DB.prepare(`DELETE FROM throttle WHERE expires < ?`).bind(t),
     env.DB.prepare(`DELETE FROM lists WHERE user_id NOT IN (SELECT id FROM users)`),
+    env.DB.prepare(`DELETE FROM feeds WHERE user_id NOT IN (SELECT id FROM users)`),
     env.DB.prepare(`DELETE FROM memberships WHERE user_id NOT IN (SELECT id FROM users)`),
     env.DB.prepare(`UPDATE gifts SET buyer_id = NULL, code_box = NULL WHERE buyer_id IS NOT NULL AND buyer_id NOT IN (SELECT id FROM users)`),
     env.DB.prepare(`UPDATE gifts SET redeemed_by = NULL WHERE redeemed_by IS NOT NULL AND redeemed_by NOT IN (SELECT id FROM users)`),
@@ -233,8 +235,12 @@ export async function handle(req, env) {
     }
     const m = await Plus.membership(env, s.id);
     const plus = { member: m.member, plan: m.plan || null, until: m.until || null, ending: !!m.ending, status: m.status || null, gift_until: m.gift_until || null, then: m.then || null };
-    return json(env, { signed_in: true, email: s.email, account: s.id, plus, payments: Plus.payReady(env), gifts: Gifts.giftReady(env) }, 200, extra);
+    return json(env, { signed_in: true, email: s.email, account: s.id, plus, payments: Plus.payReady(env), gifts: Gifts.giftReady(env), feed: await Feed.state(env, s.id) }, 200, extra);
   }
+
+  // Day 17: a calendar app fetching the member's feed (no cookie, no origin: the secret address is the key)
+  const fm = /^\/feed\/([^/]+)\.ics$/.exec(route);
+  if (fm && (method === 'GET' || method === 'HEAD')) return Feed.serve(env, req, fm[1], { over, netKey });
 
   if (method !== 'POST') return json(env, { error: 'not found' }, 404);
   // Stripe's webhook comes from Stripe, not from our pages: its signature is checked instead of the origin
@@ -270,6 +276,11 @@ export async function handle(req, env) {
     if (route === '/gift/mine') return Gifts.mine(env, s, h);
     return Gifts.redeem(env, req, s, body, h);
   }
+  if (route === '/feed/make' || route === '/feed/stop') {
+    const s = await session(env, req);
+    if (!s) return json(env, { error: 'signed out' }, 401);
+    return route === '/feed/make' ? Feed.make(env, req, s, { json, over, randomToken }) : Feed.stop(env, s, { json });
+  }
   if (route === '/auth/signout') {
     const s = await session(env, req);
     if (s) await env.DB.prepare(`DELETE FROM sessions WHERE hash = ?`).bind(s.hash).run();
@@ -285,6 +296,7 @@ export async function handle(req, env) {
       env.DB.prepare(`DELETE FROM memberships WHERE user_id = ?`).bind(s.id),
       ...Gifts.forget(env, s.id),
       env.DB.prepare(`DELETE FROM lists WHERE user_id = ?`).bind(s.id),
+      env.DB.prepare(`DELETE FROM feeds WHERE user_id = ?`).bind(s.id),
       env.DB.prepare(`DELETE FROM sessions WHERE user_id = ?`).bind(s.id),
       env.DB.prepare(`DELETE FROM signin WHERE email = ?`).bind(s.email),
       env.DB.prepare(`DELETE FROM users WHERE id = ?`).bind(s.id),

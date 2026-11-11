@@ -1122,6 +1122,9 @@ h1{line-height:1.04}
 .acct-other{border:2px solid var(--gold);border-radius:12px;padding:1em 1.1em .2em;margin:0 0 1.5em}.acct-other:focus{outline:none}.acct-other .h4{margin-top:0}
 .acct-plus{border:1px solid var(--line,#d9d4cc);border-radius:12px;padding:1em 1.1em .3em;margin:0 0 1.5em}.acct-plus .h4{margin-top:0}
 .acct-buy{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 1em}.acct-buy .btn{min-height:44px;flex:1 1 10em}
+.acct-feed-how{padding-left:1.2em;margin:0 0 1em}.acct-feed-how li{margin:0 0 .5em}
+.acct-feed [data-acct-feed-new]{margin:0 0 1em;padding:.2em .4em}.acct-buy a.btn{text-align:center;justify-content:center}.acct-feed [data-acct-feed-new]:focus{outline:3px solid var(--brand);outline-offset:4px;border-radius:8px}
+.acct-feed .acct-row input{font-size:.9em}
 .acct .btn-small{white-space:normal;text-align:left;height:auto;line-height:1.3}
 
 /* Planner Plus day 15 (RUNBOOK §6t): two ways to plan, the paywall box, read-only plans and the sample */

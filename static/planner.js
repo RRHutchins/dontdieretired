@@ -526,7 +526,7 @@
     for (const ch of line) { const b = utf8len(ch); if (bytes + b > 75) { out.push(cur); cur = ' '; bytes = 1; } cur += ch; bytes += b; }
     out.push(cur); return out.join('\r\n');
   }
-  const icsText = s => String(s == null ? '' : s).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
+  const icsText = s => String(s == null ? '' : s).replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, '').replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r\n|\r|\n/g, '\\n');
   const icsDate = s => s.replace(/-/g, '');
   const uidPart = s => String(s).replace(/[^A-Za-z0-9._-]/g, '-');
   function ics(groups, settings, opts) {
@@ -535,6 +535,8 @@
     const stamp = opts.stamp || new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '');
     const L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Don\'t Die Retired//My year//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH'];
     if (opts.name) L.push('X-WR-CALNAME:' + icsText(opts.name));
+    // a subscribed calendar (day 17's live feed): how often calendar apps should look again (RFC 7986, and Outlook's own)
+    if (/^PT\d{1,2}H$/.test(opts.refresh || '')) L.push('REFRESH-INTERVAL;VALUE=DURATION:' + opts.refresh, 'X-PUBLISHED-TTL:' + opts.refresh);
     let count = 0;
     (groups || []).forEach(g => {
       const page = g.cid ? site + '/list/' + encodeURIComponent(g.cid) + '/#plan' : site + '/list/#mine';
@@ -562,5 +564,24 @@
     return { text: L.map(fold).join('\r\n') + '\r\n', count };
   }
 
-  return { VERSION, LEVELS, MAX_SPAN, okUntil, build, suggest, trip, extras, diy, whenLabel, cleanPlace, combine, applyMarks, ics, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  /* ---------------- The whole year as one calendar (Planner Plus day 17) ----------------
+     calendar(items, settings, byId, { today, stamp, site, name }) → { text, count, plans }.   PURE.
+     items: the live things on a list (DDRList.live(list)); byId: activity id → planner entry; settings.training as
+     My year loads it. Every plan still to come, exactly as My year shows it (combine(): clashes, moves, ticks), through
+     ics(). Used by My year's "Add to my calendar" and by the members' live calendar feed on the accounts Worker, so the
+     file and the feed can never differ. */
+  function calendar(items, settings, byId, opts) {
+    opts = opts || {};
+    const entries = (items || []).filter(it => it && (it.date || it.month)).map(it => {
+      const a = it.cid ? (byId[it.cid] || null) : null;
+      return { id: it.id, title: it.cid ? (a ? a.title : null) : it.title, item: it, activity: a };
+    }).filter(e => e.title);   // an activity we no longer list has no title to show
+    const all = combine(entries, settings, { today: opts.today });
+    const groups = all.plans.filter(p => p.status !== 'done').map(p => ({ id: p.id, cid: p.cid, title: p.title, by_month: !p.date, label: p.label,
+      steps: all.steps.filter(s => s.pid === p.id) }));
+    const f = ics(groups, settings, opts);
+    return { text: f.text, count: f.count, plans: groups.length };
+  }
+
+  return { VERSION, LEVELS, MAX_SPAN, okUntil, build, suggest, trip, extras, diy, whenLabel, cleanPlace, combine, applyMarks, ics, calendar, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

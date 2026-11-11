@@ -687,7 +687,7 @@ t('the sample plan builds a full plan with the trip sections, and its words are 
   const r = P.trip(a, data, { place: sp.place, date: plan.date, until: plan.until });
   assert.ok(r.away && r.stay && r.stay.open && r.eat && r.near, 'the sample shows getting there, staying, eating and nearby');
   for (const k of ['what', 'price', 'join', 'sample', 'saved_ro', 'my_ro', 'sample_intro']) assert.ok(data.plus[k], k);
-  assert.ok(!/live calendar|feed|today screen|gift/i.test(data.plus.what), 'Plus words claim only what works now');
+  assert.ok(!/today screen|gift/i.test(data.plus.what), 'Plus words claim only what works now (the calendar address since day 17)');
   assert.ok(/£2 a month or £20 a year/.test(data.plus.price));
 });
 console.log(n + ' tests passed');

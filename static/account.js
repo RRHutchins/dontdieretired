@@ -52,9 +52,10 @@
     else if (r && SAY[r.reason]) line.textContent = SAY[r.reason];
     else line.textContent = 'We could not reach your account to bring your list up to date. It is still saved in this browser and will be sent next time.';
   }
-  function signedOut() { if (L) L.account(false); }
+  function signedOut() { if (L) L.account(false); feedClear(); }
   function signedIn(email, focus, account, me) {
     who = typeof account === 'string' ? account : '';
+    feedClear();   // never leave another account's calendar address on show (a shared computer)
     $('[data-acct-email]').textContent = email;
     show('in'); if (focus) focusOn('in');
     syncNow();
@@ -87,7 +88,75 @@
     else if (p.status) state.textContent = (p.plan === 'gift' ? 'Your gift of Planner Plus has ended.' : 'Your Planner Plus membership has ended.') + (me.payments ? ' You can join again below.' : '');
     else state.textContent = me.payments ? 'Planner Plus puts your year on one calendar on every device, with a dated plan for each thing you want to do.' : '';
     giftsShow(me);
+    feedShow(me);
     return p;
+  }
+
+  // Day 17: the live calendar feed. The Worker says whether this account may have one (Plus, once the paywall is on),
+  // whether one exists and when a calendar app last read it; the address itself is shown only once, when it is made.
+  let feedKeep = false;   // keep the section on show after a stop, so its message and focus have somewhere to be
+  function feedClear() {
+    const pane = $('[data-acct-feed-new]'); if (!pane) return;
+    pane.hidden = true; $('[data-acct-feed-url]').value = ''; $('[data-acct-feed-webcal]').setAttribute('href', '#'); $('[data-acct-feed-copied]').textContent = '';
+  }
+  function feedShow(me) {
+    const f = me.feed, box = $('[data-acct-feed]'); if (!box) return;
+    box.hidden = !f || !(f.ok || f.on || feedKeep);
+    if (!f || !f.on) feedClear();
+    if (box.hidden) return;
+    $('[data-acct-feed-warn]').hidden = !f.on;
+    const state = $('[data-acct-feed-state]'), mk = $('[data-acct-feed-make]');
+    mk.hidden = !f.ok; $('[data-acct-feed-stop]').hidden = !f.on;
+    mk.textContent = f.on ? 'Make a new address' : 'Make my calendar address';
+    mk.classList.toggle('btn-ghost', !!f.on);   // with an address on, making another (which stops it) is not the main action
+    if (!f.on) state.textContent = '';
+    else if (!f.ok) state.textContent = 'Your calendar address has stopped updating because Planner Plus has ended on this account. It starts again by itself if you join again.';
+    else state.textContent = 'Your calendar address is on. ' + (f.read ? 'A calendar last looked at it on ' + new Date(f.read + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) + '.' : 'No calendar has used it yet.');
+  }
+  const feedMk = $('[data-acct-feed-make]');
+  if (feedMk) {
+    feedMk.addEventListener('click', async () => {
+      const state = $('[data-acct-feed-state]'); feedMk.disabled = true;
+      try {
+        const r = await call('/feed/make', {});
+        if (r.status === 200 && r.d.ok && /^https:\/\/[^/]+\/feed\/[A-Za-z0-9_-]{43}\.ics$|^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\/feed\/[A-Za-z0-9_-]{43}\.ics$/.test(r.d.url)) {
+          const pane = $('[data-acct-feed-new]');
+          $('[data-acct-feed-url]').value = r.d.url;
+          $('[data-acct-feed-webcal]').href = r.d.url.replace(/^https?:/, 'webcal:');
+          $('[data-acct-feed-copied]').textContent = '';
+          pane.hidden = false;
+          await refreshPlus();
+          // whatever the refresh said, an address now exists
+          pane.hidden = false; feedMk.textContent = 'Make a new address'; feedMk.classList.add('btn-ghost');
+          $('[data-acct-feed-stop]').hidden = false; $('[data-acct-feed-warn]').hidden = false;
+          state.textContent = 'Here is your new calendar address. Add it to your calendar now: it is shown only this once.';
+          pane.focus();
+        } else if (r.status === 401) show('out');
+        else if (r.status === 403) state.textContent = 'A calendar that keeps itself up to date comes with Planner Plus.';
+        else if (r.status === 429) state.textContent = 'You have made several addresses in the last hour. Please wait a while and try again.';
+        else state.textContent = 'We could not make the address just now. Please try again in a few minutes.';
+      } catch (e) { state.textContent = 'We could not reach your account. Check your connection and try again.'; }
+      feedMk.disabled = false;
+    });
+    $('[data-acct-feed-copy]').addEventListener('click', async () => {
+      const inp = $('[data-acct-feed-url]'), msg = $('[data-acct-feed-copied]');
+      try { await navigator.clipboard.writeText(inp.value); msg.textContent = 'Copied. Paste it into your calendar app.'; }
+      catch (e) { inp.focus(); inp.select(); msg.textContent = 'Selected: copy it with your device\'s Copy command.'; }
+    });
+    $('[data-acct-feed-stop]').addEventListener('click', async ev => {
+      const btn = ev.currentTarget, state = $('[data-acct-feed-state]'); btn.disabled = true;
+      try {
+        const r = await call('/feed/stop', {});
+        if (r.status === 200) {
+          feedClear(); feedKeep = true;
+          await refreshPlus();
+          state.textContent = 'Your calendar address has stopped working. You can remove the calendar from your calendar app; nothing more will be added to it.';
+          (feedMk.hidden ? $('#acct-feed-h') : feedMk).focus();
+        } else if (r.status === 401) show('out');
+        else state.textContent = 'We could not stop it just now. Please try again in a few minutes.';
+      } catch (e) { state.textContent = 'We could not reach your account. Check your connection and try again.'; }
+      btn.disabled = false;
+    });
   }
   async function refreshPlus() {
     try { const r = await call('/auth/me'); if (r.status === 200 && r.d.signed_in) return plusShow(r.d); } catch (e) { /* keep what is shown */ }
@@ -238,7 +307,7 @@
   async function begin() {
     const m = /^#t=([A-Za-z0-9_-]{43})$/.exec(location.hash);
     if (m) { token = m[1]; history.replaceState(null, '', location.pathname + location.search); }
-    if (token) { show('link'); return focusOn('link'); }
+    if (token) { $('[data-acct-finish]').disabled = false; show('link'); return focusOn('link'); }   // a second link opened in this tab
     try {
       const r = await call('/auth/me');
       if (r.status !== 200) return fail();
