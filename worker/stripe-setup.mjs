@@ -3,14 +3,14 @@
 // Run by .github/workflows/worker.yml after each deploy, once Robin has added the STRIPE_SECRET_KEY repository secret.
 //
 // Makes: the "Planner Plus" product with a £2 monthly and a £20 yearly price, a "Planner Plus gift" product with a
-// £20 one-off price (sold from day 16), all VAT-inclusive and found by lookup key; a Customer Portal set-up (cancel at
+// £20 one-off price (the gift, sold from day 16), all VAT-inclusive and found by lookup key; a Customer Portal set-up (cancel at
 // the end of the paid period, switch monthly/yearly, change card, receipts); and the webhook endpoint
 // https://api.dontdieretired.com/stripe/webhook. Its signing secret is shown by Stripe only when the endpoint is
 // made, so it is written to --secret-out (for `wrangler secret put STRIPE_WEBHOOK_SECRET`) and never printed.
 //
 // TEST MODE ONLY: a live key is refused unless ALLOW_LIVE=1, which is Robin's step when he switches to live.
 import { writeFileSync } from 'node:fs';
-import { form, STRIPE_VERSION, LOOKUP } from './src/plus.js';
+import { form, STRIPE_VERSION, LOOKUP, EVENTS } from './src/plus.js';
 
 const KEY = process.env.STRIPE_SECRET_KEY || '';
 const API_ORIGIN = process.env.API_ORIGIN || 'https://api.dontdieretired.com';
@@ -77,11 +77,18 @@ const hookUrl = `${API_ORIGIN}/stripe/webhook`;
 const hooks = await call('GET', 'webhook_endpoints', { limit: 100 });
 let mine = hooks.data.filter(h => h.url === hookUrl);
 if (mine.length && rotate) { for (const h of mine) await call('DELETE', 'webhook_endpoints/' + h.id); say('webhook endpoint: removed to make a new secret'); mine = []; }
-if (mine.length) say('webhook endpoint: exists (its secret is already in the Worker; run with --rotate-webhook to replace it)');
+if (mine.length) {
+  say('webhook endpoint: exists (its secret is already in the Worker; run with --rotate-webhook to replace it)');
+  // day 16 added gift events: bring an older endpoint's list up to date (its secret does not change)
+  for (const h of mine) {
+    const have = new Set(h.enabled_events || []);
+    if (!have.has('*') && EVENTS.some(e => !have.has(e))) { await call('POST', 'webhook_endpoints/' + h.id, { enabled_events: EVENTS }); say('webhook endpoint: events brought up to date'); }
+  }
+}
 else {
   const h = await call('POST', 'webhook_endpoints', {
     url: hookUrl, api_version: STRIPE_VERSION, description: 'Planner Plus memberships (dontdieretired.com)', metadata: { ddr: 'plus' },
-    enabled_events: ['checkout.session.completed', 'customer.subscription.created', 'customer.subscription.updated', 'customer.subscription.deleted', 'customer.subscription.paused', 'customer.subscription.resumed'],
+    enabled_events: EVENTS,
   });
   if (out) { writeFileSync(out, h.secret, { mode: 0o600 }); say('webhook endpoint: made; signing secret written for the Worker'); }
   else say('webhook endpoint: made, but no --secret-out was given: reveal its signing secret in Stripe and add it to the Worker');

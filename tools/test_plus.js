@@ -181,7 +181,7 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
     assert.strictEqual(r.status, 200);
     assert.ok(stripeCalls().some(c => c.method === 'GET' && c.url.includes('/subscriptions/sub_2')), 'fetched fresh');
     const m = await me(e, a.cookie);
-    assert.deepStrictEqual(m.plus, { member: true, plan: 'year', until: 1893456000, ending: false, status: 'active' });
+    assert.deepStrictEqual(m.plus, { member: true, plan: 'year', until: 1893456000, ending: false, status: 'active', gift_until: null, then: null });
     assert.strictEqual(m.payments, true);
     assert.strictEqual(e.DB.raw.prepare('SELECT stripe_customer FROM users').get().stripe_customer, 'cus_2');
     assert.strictEqual((await post(e, '/plus/checkout', { plan: 'month' }, { cookie: a.cookie })).status, 409, 'cannot pay twice');
@@ -358,7 +358,9 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       if (p === 'prices') return m === 'GET' ? R({ data: st.prices.filter(x => x.lookup_key === u.searchParams.get('lookup_keys[]')) })
         : R((st.prices.push({ id: 'price_' + st.prices.length, lookup_key: b.lookup_key, unit_amount: +b.unit_amount, currency: b.currency }), st.prices.at(-1)));
       if (p === 'billing_portal/configurations') return m === 'GET' ? R({ data: st.confs }) : R((st.confs.push({ id: 'bpc_1', metadata: { ddr: 'plus' } }), st.confs[0]));
-      if (p === 'webhook_endpoints') return m === 'GET' ? R({ data: st.hooks }) : R((st.hooks.push({ id: 'we_1', url: b.url }), { id: 'we_1', secret: 'whsec_made' }));
+      const evs = () => Object.keys(b).filter(k => k.startsWith('enabled_events[')).map(k => b[k]);
+      if (p === 'webhook_endpoints') return m === 'GET' ? R({ data: st.hooks }) : R((st.hooks.push({ id: 'we_1', url: b.url, enabled_events: evs() }), { id: 'we_1', secret: 'whsec_made' }));
+      if (p === 'webhook_endpoints/we_1' && m === 'POST') { st.hooks[0].enabled_events = evs(); return R(st.hooks[0]); }
       throw new Error('setup called ' + p);
     };
     const out = path.join(os.tmpdir(), 'ddr-whsec-' + process.pid);
@@ -386,6 +388,12 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       const before = st.posts.length; fs.unlinkSync(out);
       assert.strictEqual(await run('sk_test_x', 3), 0);
       assert.strictEqual(st.posts.length, before, 'a second run adds nothing'); assert.ok(!fs.existsSync(out));
+      assert.deepStrictEqual(st.hooks[0].enabled_events, P.EVENTS, 'the webhook hears the gift events too');
+      // day 16: an endpoint made on day 14 (subscription events only) is brought up to date, keeping its secret
+      st.hooks[0].enabled_events = ['checkout.session.completed', 'customer.subscription.updated'];
+      assert.strictEqual(await run('sk_test_x', 4), 0);
+      assert.deepStrictEqual(st.hooks[0].enabled_events, P.EVENTS); assert.ok(!fs.existsSync(out), 'no new secret');
+      assert.ok(P.EVENTS.includes('charge.refunded') && P.EVENTS.includes('checkout.session.async_payment_succeeded'));
     } finally { globalThis.fetch = saved; delete process.env.STRIPE_SECRET_KEY; try { fs.unlinkSync(out); } catch (e) { /* gone */ } }
   });
   await t('day 15: once the paywall is on, the list on the account is Plus: others can read their copy but store nothing', async () => {

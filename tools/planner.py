@@ -179,6 +179,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         if ev and "train" not in strands: strands.insert(1, "train")
         if c.get("book") and "book" not in strands: strands.insert(0, "book")
         if c.get("kit") and "kit" not in strands: strands.append("kit")
+        assert isinstance(c.get("safety", ""), str), f"{cid}: safety must be one line of text, not a list"
         out.append({
             "id": cid, "title": c["title"], "category": c["category"], "kind": kind, "effort": c["effort"], "time": c["time"],
             "when": sorted(when), "when_from": when_from, "season": c.get("season", ""),

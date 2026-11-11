@@ -1144,3 +1144,21 @@ h1{line-height:1.04}
 .pl-sample-buy{margin-top:28px}
 @media print{.pl-diy,.pl-guest{display:none}}
 .pl-acts a.btn-small{padding:0 18px}
+/* Planner Plus gifts (RUNBOOK §6t day 16): the code box, the buyer's list and the printable card */
+.acct-code-in{text-transform:uppercase;letter-spacing:.08em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.acct-giftlist{list-style:none;padding:0;margin:0 0 1em}
+.acct-giftlist li{border-top:1px solid var(--line,#d9d4cc);padding:.7em 0}
+.acct-giftlist li p{margin:0 0 .4em}
+.acct-giftcode{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:1.15em;letter-spacing:.06em;font-weight:700;overflow-wrap:anywhere}
+.acct-cardopt summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:600}
+.acct-plain{display:block;width:100%;max-width:24em;min-height:44px;padding:.6em .9em;border:1px solid #8a8f99;border-radius:12px;font:inherit;background:#fff;margin:0 0 .8em}
+.gift-card{display:none}
+@media print{
+  html.gc-print body>*:not(.gift-card-print){display:none!important}
+  html.gc-print .gift-card-print{display:block}
+  .gift-card-in{border:2px solid #b23a48;border-radius:16px;padding:28px 32px;max-width:150mm;margin:10mm auto;color:#1b1b1f;font-size:12pt;line-height:1.45}
+  .gift-card-brand{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:15pt;color:#b23a48}
+  .gift-card-h{font-family:Fraunces,Georgia,serif;font-size:24pt;margin:4px 0 10px}
+  .gift-card-to,.gift-card-from{font-family:Fraunces,Georgia,serif;font-size:14pt;margin:0 0 6px}
+  .gift-card-code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:20pt;font-weight:700;letter-spacing:.08em;text-align:center;border:1px dashed #c98a2b;border-radius:10px;padding:10px;margin:16px 0}
+}

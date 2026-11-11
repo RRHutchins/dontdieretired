@@ -69,15 +69,24 @@
   function plusShow(me) {
     const p = me.plus || { member: false }; lastPlus = p;
     const box = $('[data-acct-plus]'), state = $('[data-acct-plus-state]');
+    const giftOnly = p.member && p.plan === 'gift';                       // a gift, with no plan set to follow it
+    // near its end (45 days), a gift's member is asked whether to carry on (Robin, 7 Nov 2026); not before
+    const giftEnding = giftOnly && p.until && p.until * 1000 - Date.now() < 45 * 86400000;
+    const sub = p.plan === 'month' || p.plan === 'year';                  // a Stripe subscription, which the portal manages
     box.hidden = !(me.payments || p.member || p.status);
-    $('[data-acct-plus-buy]').hidden = !(me.payments && !p.member);
-    $('[data-acct-plus-manage]').hidden = $('[data-acct-plus-note]').hidden = !(me.payments && (p.member || p.status));
+    $('[data-acct-plus-buy]').hidden = !(me.payments && (!p.member || giftEnding));
+    $('[data-acct-plus-giftnote]').hidden = !giftEnding;
+    if (giftEnding) $('[data-acct-plus-giftnote]').textContent = 'To carry on after your gift, you can choose a plan now: nothing is taken until ' + day(p.until) + ', when the gift ends, and you can cancel before then.';
+    $('[data-acct-plus-manage]').hidden = $('[data-acct-plus-note]').hidden = !(me.payments && sub && (p.member || p.status));
     const kind = PLAN[p.plan] ? ' (' + PLAN[p.plan] + ')' : '';
-    if (p.member && p.status === 'past_due') state.textContent = 'You have Planner Plus' + kind + ', but your last payment did not go through. Stripe will try your card again; you can change it below.';
+    if (p.member && p.gift_until && sub) state.textContent = 'You have Planner Plus as a gift until ' + day(p.gift_until) + '. ' + (p.ending ? 'You cancelled the plan that was to follow it, so you will not be charged.' : 'Your ' + PLAN[p.plan] + ' plan follows it: the first payment is taken on ' + day(p.until) + '.');
+    else if (giftOnly) state.textContent = 'You have Planner Plus as a gift until ' + (p.until ? day(p.until) : 'the end of its twelve months') + '. It does not renew, so you will not be charged.';
+    else if (p.member && p.status === 'past_due') state.textContent = 'You have Planner Plus' + kind + ', but your last payment did not go through. Stripe will try your card again; you can change it below.';
     else if (p.member && p.ending) state.textContent = 'You have Planner Plus' + kind + ' until ' + (p.until ? day(p.until) : 'the end of the time you have paid for') + '. It will not renew, and you will not be charged again.';
     else if (p.member) state.textContent = 'You have Planner Plus' + kind + '.' + (p.until ? ' It renews on ' + day(p.until) + '.' : '');
-    else if (p.status) state.textContent = 'Your Planner Plus membership has ended.' + (me.payments ? ' You can join again below.' : '');
+    else if (p.status) state.textContent = (p.plan === 'gift' ? 'Your gift of Planner Plus has ended.' : 'Your Planner Plus membership has ended.') + (me.payments ? ' You can join again below.' : '');
     else state.textContent = me.payments ? 'Planner Plus puts your year on one calendar on every device, with a dated plan for each thing you want to do.' : '';
+    giftsShow(me);
     return p;
   }
   async function refreshPlus() {
@@ -85,8 +94,8 @@
     return lastPlus;
   }
   // Back from Stripe: ?plus=welcome or ?plus=cancelled (nothing else is ever in the address)
-  const back = new URLSearchParams(location.search).get('plus');
-  if (back) history.replaceState(null, '', location.pathname + location.hash);
+  const q = new URLSearchParams(location.search), back = q.get('plus'), giftBack = q.get('gift');
+  if (back || giftBack) history.replaceState(null, '', location.pathname + location.hash);
   async function welcome() {
     const state = $('[data-acct-plus-state]');
     $('[data-acct-plus]').hidden = false;
@@ -98,8 +107,8 @@
     }
     state.textContent = 'Thank you. Stripe has your payment, but your membership has not reached your account yet. Refresh this page in a minute or two.';
   }
-  async function toStripe(path, body, btn) {
-    const state = $('[data-acct-plus-state]'); btn.disabled = true;
+  async function toStripe(path, body, btn, where) {
+    const state = $(where || '[data-acct-plus-state]'); btn.disabled = true;
     try {
       const r = await call(path, body);
       if (r.status === 200 && r.d.url) { location.assign(r.d.url); return; }
@@ -112,6 +121,105 @@
   }
   box.querySelectorAll('[data-acct-buy]').forEach(b => b.addEventListener('click', () => toStripe('/plus/checkout', { plan: b.dataset.acctBuy }, b)));
   $('[data-acct-portal]').addEventListener('click', ev => toStripe('/plus/portal', {}, ev.currentTarget));
+
+  // Gifts (day 16): buy on Stripe's page; the code then shows here with a card to print. Use a code: twelve months of Plus.
+  let giftsOpen = false, giftsLoaded = false;
+  function giftsShow(me) {
+    $('[data-acct-redeem]').hidden = !me.payments;
+    giftsOpen = !!me.gifts; $('[data-acct-gifts]').hidden = !giftsOpen;
+    if (giftsOpen && !giftsLoaded) { giftsLoaded = true; loadGifts(); }
+    if ('redeemFirst' in box.dataset && me.payments && !redeemMoved) {   // /redeem/: the code box comes first
+      redeemMoved = true;
+      const r = $('[data-acct-redeem]'), first = $('[data-acct-keep]'); first.parentNode.insertBefore(r, first);
+      if (!lastPlus || !lastPlus.member) $('#acct-code').focus();
+    }
+  }
+  let redeemMoved = false;
+  function giftLine(g) {
+    const li = document.createElement('li');
+    const head = document.createElement('p'); head.className = 'meta';
+    const st = g.status === 'paid' ? 'not used yet' : g.status === 'redeemed' ? 'used' + (g.used ? ' on ' + day(g.used) : '') : g.status === 'disputed' ? 'cancelled: the payment was disputed' : 'refunded';
+    head.textContent = 'Bought ' + day(g.bought) + ' · ' + st;
+    li.appendChild(head);
+    if (g.status === 'paid' && g.code) {
+      const code = document.createElement('p'); code.className = 'acct-giftcode'; code.textContent = g.code; li.appendChild(code);
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'btn btn-ghost btn-small'; b.textContent = 'Print the card';
+      b.addEventListener('click', () => printCard(g.code)); li.appendChild(b);
+    } else if (g.status === 'paid') {
+      const x = document.createElement('p'); x.textContent = 'The code cannot be shown just now. Please contact us and we will help.'; li.appendChild(x);
+    }
+    return li;
+  }
+  async function loadGifts(waitFor) {   // waitFor: keep asking until there is a gift bought since then
+    const list = $('[data-acct-gift-list]'), wrap = $('[data-acct-gift-mine]');
+    for (let i = 0; i < (waitFor ? 10 : 1); i++) {
+      try {
+        const r = await call('/gift/mine', {});
+        if (r.status === 200 && Array.isArray(r.d.gifts)) {
+          if (waitFor && !r.d.gifts.some(g => g.bought >= waitFor)) { await new Promise(res => setTimeout(res, 2000)); continue; }
+          list.textContent = ''; r.d.gifts.forEach(g => list.appendChild(giftLine(g)));
+          wrap.hidden = !r.d.gifts.length;
+          return r.d.gifts;
+        }
+      } catch (e) { /* try again below */ }
+      if (waitFor) await new Promise(res => setTimeout(res, 2000));
+    }
+    return null;
+  }
+  function printCard(code) {
+    const card = $('[data-gift-card]');
+    card.querySelector('[data-gc-code]').textContent = code;
+    const to = $('#gift-to').value.trim(), from = $('#gift-from').value.trim();
+    const t = card.querySelector('[data-gc-to]'), f = card.querySelector('[data-gc-from]');
+    t.textContent = to ? 'For ' + to : ''; t.hidden = !to;
+    f.textContent = from ? 'With love from ' + from : ''; f.hidden = !from;
+    // printed on its own: a copy sits directly in <body> while the page prints, and goes afterwards
+    document.querySelectorAll('.gift-card-print').forEach(x => x.remove());
+    const copy = card.cloneNode(true); copy.classList.add('gift-card-print'); document.body.appendChild(copy);
+    document.documentElement.classList.add('gc-print');
+    const done = () => { document.documentElement.classList.remove('gc-print'); copy.remove(); window.removeEventListener('afterprint', done); };
+    window.addEventListener('afterprint', done);
+    window.print();
+  }
+  $('[data-acct-gift-buy]').addEventListener('click', ev => toStripe('/gift/checkout', {}, ev.currentTarget, '[data-acct-gift-state]'));
+  async function giftThanks() {
+    const state = $('[data-acct-gift-state]');
+    state.textContent = 'Thank you. Your payment went through; your gift code is on its way here…';
+    const gifts = await loadGifts(Math.floor(Date.now() / 1000) - 1800);   // one bought in the last half hour
+    if (gifts) { state.textContent = 'Thank you. Your gift is ready below: print the card, or copy the code to send.'; const c = $('.acct-giftcode'); if (c) c.scrollIntoView({ block: 'center' }); }
+    else state.textContent = 'Thank you. Stripe has your payment, but the gift code has not reached your account yet. Refresh this page in a minute or two.';
+  }
+  const REDEEM_SAY = {
+    400: 'That does not look like a gift code. It has 16 letters and numbers, like ABCD-EFGH-JKMN-PQRS.',
+    404: 'We could not find that code. Check each character: codes never use 0, O, 1, I or L.',
+    410: 'This code is no longer valid. Please ask the person who gave it to you.',
+    429: 'Too many tries in the last hour. Please wait a little and try again.',
+    503: 'Gift codes cannot be used just now. Please try again later.',
+  };
+  const codeIn = $('#acct-code'), codeErr = $('[data-acct-code-err]'), codeOk = $('[data-acct-code-ok]');
+  function codeSay(msg) { codeErr.textContent = msg; codeErr.hidden = !msg; codeIn.setAttribute('aria-invalid', msg ? 'true' : 'false'); if (msg) codeIn.focus(); }
+  $('[data-acct-redeem-form]').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const code = codeIn.value.trim();
+    if (!code) return codeSay('Type the code from the card.');
+    codeSay(''); codeOk.hidden = true;
+    const btn = ev.currentTarget.querySelector('button'); btn.disabled = true;
+    try {
+      const r = await call('/gift/redeem', { code });
+      if (r.status === 200 && r.d.ok) {
+        codeIn.value = '';
+        const later = r.d.from && r.d.from * 1000 > Date.now() + 60000;
+        codeOk.textContent = later ? 'Done. Your gift starts on ' + day(r.d.from) + ', when the Planner Plus you already have ends, and runs until ' + day(r.d.until) + '.'
+          : 'Done. You have Planner Plus until ' + day(r.d.until) + '. It does not renew, so you will not be charged.';
+        codeOk.hidden = false;
+        await refreshPlus(); syncNow();
+      } else if (r.status === 401) show('out');
+      else if (r.status === 409 && r.d.error === 'renewing') codeSay('You already pay for Planner Plus and it renews, so the gift would overlap it. Use "Cancel, switch plan or change card" to stop the renewal first: your Plus runs to the end of what you have paid for, and the gift\'s twelve months then start after that. Your code has not been used.');
+      else if (r.status === 409) codeSay('This code has already been used.');
+      else codeSay(REDEEM_SAY[r.status] || 'We could not check the code just now. Please try again in a few minutes. It has not been used.');
+    } catch (e) { codeSay('We could not reach your account. Check your connection and try again. Your code has not been used.'); }
+    btn.disabled = false;
+  });
 
   // The token is spent only when the member presses the button, so email security scanners that open
   // links in a hidden browser cannot use it up first.
@@ -137,6 +245,8 @@
       if (r.d.signed_in) {
         signedIn(r.d.email, false, r.d.account, r.d);
         if (back === 'welcome') welcome();
+        if (giftBack === 'thanks') giftThanks();
+        else if (giftBack === 'cancelled') $('[data-acct-gift-state]').textContent = 'You left the payment page. Nothing has been charged.';
         else if (back === 'cancelled') { $('[data-acct-plus]').hidden = false; $('[data-acct-plus-state]').textContent = 'You left the payment page. Nothing has been charged.'; }
       } else { signedOut(); show('out'); }
     } catch (e) { fail(); }

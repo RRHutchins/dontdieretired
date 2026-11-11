@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Your account — {{ cfg.site.name }}{% endblock %}
-{% block description %}Sign in to your Don't Die Retired account with a link sent to your email. No password to remember.{% endblock %}
+{% block title %}{% if redeem %}Use a gift code{% else %}Your account{% endif %} — {{ cfg.site.name }}{% endblock %}
+{% block description %}{% if redeem %}Use a Planner Plus gift code: sign in with your email address and type the code from your card.{% else %}Sign in to your Don't Die Retired account with a link sent to your email. No password to remember.{% endif %}{% endblock %}
 {# Not in the sitemap and never indexed: a sign-in page. Accounts open only when site.yaml accounts.api is set (RUNBOOK §6t). #}
 {% block robots %}<meta name="robots" content="noindex"><meta name="referrer" content="no-referrer">{% endblock %}
 {% block pagetype %}account{% endblock %}
@@ -8,8 +8,10 @@
 {% block head %}<script>(function(){var m=/^#t=([A-Za-z0-9_-]{43})$/.exec(location.hash);if(m){window.__ddrSignIn=m[1];history.replaceState(null,"",location.pathname+location.search);}})();</script>{% endblock %}
 {% block thirdparty %}{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Planner Plus</p><h1>Your account</h1></header>
-<div class="prose narrow acct" data-acct data-api="{{ accounts_api }}" aria-live="polite">
+<header class="page-head"><p class="kicker">Planner Plus</p><h1>{% if redeem %}Use a gift code{% else %}Your account{% endif %}</h1></header>
+<div class="prose narrow acct" data-acct data-api="{{ accounts_api }}"{% if redeem %} data-redeem-first{% endif %} aria-live="polite">
+{% if redeem %}  <p class="lead">Someone has given you twelve months of Planner Plus. Sign in or create an account with your email address (there is no password), then type the code from your card. The twelve months start when you use the code, and it does not renew.</p>
+{% endif %}
 {% if not accounts_api %}
   <p class="lead">Accounts are not open yet.</p>
   <p>Your list and your plans are kept in this browser, on this device, as they always have been. Nothing is lost, and nothing needs doing.</p>
@@ -63,6 +65,7 @@
       <h3 id="acct-plus-h" class="h4">Planner Plus</h3>
       <p data-acct-plus-state role="status"></p>
       <div data-acct-plus-buy hidden>
+        <p data-acct-plus-giftnote hidden></p>
         <p>£2 a month or £20 a year, prices including VAT. You pay on Stripe's secure page; we never see your card. You can cancel from this page at any time, and Plus then runs to the end of the time you have paid for.</p>
         <div class="acct-buy">
           <button type="button" class="btn" data-acct-buy="month">£2 a month</button>
@@ -72,16 +75,56 @@
       <p data-acct-plus-manage hidden><button type="button" class="btn btn-ghost btn-small" data-acct-portal>Cancel, switch plan or change card</button></p>
       <p class="meta" data-acct-plus-note hidden>This opens Stripe's page for your membership, then brings you back here.</p>
     </section>
+    <section class="acct-plus acct-redeem" data-acct-redeem hidden aria-labelledby="acct-redeem-h">
+      <h3 id="acct-redeem-h" class="h4">Use a gift code</h3>
+      <form class="acct-form" data-acct-redeem-form novalidate>
+        <label for="acct-code">Gift code, from the card</label>
+        <div class="acct-row">
+          <input id="acct-code" name="code" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="24" placeholder="XXXX-XXXX-XXXX-XXXX" aria-describedby="acct-code-err" class="acct-code-in">
+          <button type="submit" class="btn">Use my code</button>
+        </div>
+        <p class="pl-err" id="acct-code-err" data-acct-code-err role="alert" hidden></p>
+      </form>
+      <p data-acct-code-ok role="status" hidden></p>
+    </section>
+    <section class="acct-plus acct-gifts" data-acct-gifts hidden aria-labelledby="acct-gifts-h">
+      <h3 id="acct-gifts-h" class="h4">Give Planner Plus</h3>
+      <p>£20, including VAT, for twelve months of Planner Plus. It does not renew, so nobody is charged again. You pay on Stripe's secure page; the code then appears here, with a card you can print to give.</p>
+      <p><button type="button" class="btn" data-acct-gift-buy>Buy a gift for £20</button></p>
+      <p data-acct-gift-state role="status"></p>
+      <div data-acct-gift-mine hidden>
+        <h4 class="h4">Your gifts</h4>
+        <details class="acct-cardopt">
+          <summary>Add names to the card before printing (optional)</summary>
+          <p class="meta">These are printed on the card only. They stay in this browser and are never sent to us.</p>
+          <label for="gift-to">To</label><input id="gift-to" maxlength="60" autocomplete="off" class="acct-plain">
+          <label for="gift-from">From</label><input id="gift-from" maxlength="60" autocomplete="off" class="acct-plain">
+        </details>
+        <ul class="acct-giftlist" data-acct-gift-list></ul>
+      </div>
+    </section>
     <p><a class="btn" href="/my-year/">Go to My year</a></p>
     <p><button type="button" class="btn btn-ghost btn-small" data-acct-signout>Sign out</button></p>
     <p><button type="button" class="btn btn-ghost btn-small" data-acct-signout-clear>Sign out and remove my list from this browser</button></p>
     <p class="meta">On a shared computer, use the second button: your list stays on your account, ready for next time.</p>
     <details class="acct-del">
       <summary>Delete my account</summary>
-      <p>This removes your account, your email address and the copy of your list and plans kept with it from our records straight away. Anything saved in this browser stays here. If you have Planner Plus, it ends at once and you will not be charged again.</p>
+      <p>This removes your account, your email address and the copy of your list and plans kept with it from our records straight away. Anything saved in this browser stays here. If you have Planner Plus, it ends at once and you will not be charged again. Gift codes you have bought still work for whoever has the card, but you will no longer see them here, so print any you need first.</p>
       <p><button type="button" class="btn btn-ghost btn-small" data-acct-delete>Delete my account</button></p>
     </details>
   </section>
+
+  <div class="gift-card" data-gift-card aria-hidden="true">
+    <div class="gift-card-in">
+      <p class="gift-card-brand"><img src="/static/logo-mark.svg" alt="" width="56" height="56"> <span>Don't Die Retired</span></p>
+      <p class="gift-card-to" data-gc-to hidden></p>
+      <h2 class="gift-card-h">A year of Planner Plus</h2>
+      <p>Plan the things you want to do in the year ahead, each with a dated plan to get ready for it, and keep them together on one calendar, on every device where you sign in.</p>
+      <p class="gift-card-code" data-gc-code></p>
+      <p><strong>To use it:</strong> go to <strong>dontdieretired.com/redeem</strong>, sign in with your email address (there is no password) and type the code. The twelve months start when you use it. It does not renew, so you will never be charged.</p>
+      <p class="gift-card-from" data-gc-from hidden></p>
+    </div>
+  </div>
 
   <p class="pl-err" data-acct-fail role="alert" hidden>We could not reach your account just now. Check your connection and try again. Your plans are still saved in this browser.</p>
 {% endif %}

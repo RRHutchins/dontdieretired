@@ -4,11 +4,11 @@ name: Accounts worker
 # deploy job says what is missing and succeeds without doing anything. Payments (day 14): once Robin also adds
 # STRIPE_SECRET_KEY (a TEST key, sk_test_...), each deploy gives it to the Worker and runs worker/stripe-setup.mjs, which
 # makes the Planner Plus prices, the Customer Portal set-up and the webhook (its signing secret goes straight into the
-# Worker). A live key is refused by both the script and the Worker until Robin switches to live himself.
+# Worker), and makes the gift-code key GIFT_KEY once. A live key is refused by both the script and the Worker until Robin switches to live himself.
 on:
   push:
     branches: [main]
-    paths: ["worker/**", "static/list-store.js", "tools/test_accounts.js", "tools/test_plus.js", "tools/d1_stub.js", ".github/workflows/worker.yml"]
+    paths: ["worker/**", "static/list-store.js", "tools/test_accounts.js", "tools/test_plus.js", "tools/test_gifts.js", "tools/d1_stub.js", ".github/workflows/worker.yml"]
   workflow_dispatch:
     inputs:
       rotate_webhook:
@@ -30,6 +30,7 @@ jobs:
           node-version: "22"
       - run: node tools/test_accounts.js
       - run: node tools/test_plus.js
+      - run: node tools/test_gifts.js
   deploy:
     needs: test
     runs-on: ubuntu-latest
@@ -80,3 +81,9 @@ jobs:
           node stripe-setup.mjs --secret-out "$RUNNER_TEMP/whsec" $ROTATE
           if [ -s "$RUNNER_TEMP/whsec" ]; then npx --yes wrangler@3.114.0 secret put STRIPE_WEBHOOK_SECRET < "$RUNNER_TEMP/whsec"; fi
           rm -f "$RUNNER_TEMP/whsec"
+          # Gifts (day 16): GIFT_KEY seals each gift code so its buyer can see it again. Made once and NEVER replaced (a new
+          # key would hide unused codes from their buyers, though the codes would still work), so only when it is missing.
+          # If the list cannot be read as JSON, stop rather than risk replacing a key that exists (review, day 16).
+          secrets=$(npx --yes wrangler@3.114.0 secret list --format json) || { echo "::error::could not list Worker secrets; GIFT_KEY left as it is"; exit 1; }
+          has=$(printf '%s' "$secrets" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const a=JSON.parse(s);if(!Array.isArray(a))process.exit(2);console.log(a.some(x=>x&&x.name==="GIFT_KEY")?"yes":"no")})') || { echo "::error::Worker secret list was not JSON; GIFT_KEY left as it is"; exit 1; }
+          if [ "$has" = "no" ]; then openssl rand -hex 32 | tr -d '\n' | npx --yes wrangler@3.114.0 secret put GIFT_KEY; echo "GIFT_KEY made"; fi

@@ -12,6 +12,8 @@
 // the paid period (memberships). No card details ever reach us: Stripe's own pages take the payment.
 // Nothing personal goes in any URL: Checkout and the portal are reached by addresses Stripe makes for one visit.
 
+import * as Gifts from './gifts.js';                 // day 16: gift codes, paid for through the same webhook
+
 export const STRIPE_VERSION = '2025-03-31.basil';   // pinned, so Stripe's answers keep the shape this file reads
 export const LOOKUP = { month: 'ddr_plus_month', year: 'ddr_plus_year', gift: 'ddr_plus_gift' };
 const PLAN_OF = { [LOOKUP.month]: 'month', [LOOKUP.year]: 'year' };
@@ -21,8 +23,11 @@ const DONE = new Set(['canceled', 'incomplete_expired']);   // final in Stripe: 
 export const SIG_TOLERANCE = 300;            // seconds: a signed webhook older or newer than this is refused (replays)
 export const HOOK_MAX = 65536;               // bytes: Stripe events are a few KB
 const LIMIT_PAY_HOUR = 20;                   // checkout and portal visits per member per hour
-const EVENTS = new Set(['checkout.session.completed', 'customer.subscription.created', 'customer.subscription.updated',
-  'customer.subscription.deleted', 'customer.subscription.paused', 'customer.subscription.resumed']);
+export const EVENTS = ['checkout.session.completed', 'checkout.session.async_payment_succeeded', 'charge.refunded', 'charge.dispute.created',
+  'customer.subscription.created', 'customer.subscription.updated', 'customer.subscription.deleted', 'customer.subscription.paused',
+  'customer.subscription.resumed'];   // worker/stripe-setup.mjs subscribes the webhook to exactly these
+const EVENT_SET = new Set(EVENTS);
+const TRIAL_MIN = 3 * 86400, TRIAL_MAX = 700 * 86400;   // Stripe wants a trial end at least 48 hours and at most two years ahead
 const now = () => Math.floor(Date.now() / 1000);
 
 // Payments are open only with a test key, or a live key that Robin has explicitly allowed.
@@ -44,7 +49,7 @@ export function form(obj, prefix = '', out = []) {
   }
   return out.join('&');
 }
-async function stripe(env, method, path, params, idem) {
+export async function stripe(env, method, path, params, idem) {
   const init = { method, headers: { authorization: `Bearer ${env.STRIPE_SECRET_KEY}`, 'stripe-version': STRIPE_VERSION } };
   if (idem) init.headers['idempotency-key'] = idem;
   let url = 'https://api.stripe.com/v1/' + path;
@@ -92,7 +97,7 @@ async function cached(key, fn) {
   return value;
 }
 export const clearCache = () => cache.clear();
-async function priceId(env, plan) {
+export async function priceId(env, plan) {
   return cached('price:' + keyMode(env) + ':' + plan, async () => {
     const r = await stripe(env, 'GET', 'prices', { 'lookup_keys[]': LOOKUP[plan], active: 'true', limit: 1 });
     const p = r.ok && r.data && Array.isArray(r.data.data) ? r.data.data[0] : null;
@@ -108,14 +113,21 @@ async function portalConfig(env) {
 }
 
 // ---- membership ----
-// The member's best subscription: one that gives Plus first, then the latest to end.
+// The member's best membership: one that gives Plus first, then the latest to end (a subscription before a gift on a
+// tie, as it is the one that carries on). A gift (day 16, plan "gift", never renews) gives Plus until its end.
+export function liveRow(m, t = now()) { return m.plan === 'gift' ? m.status === 'active' && (m.period_end || 0) > t : MEMBER.has(m.status); }
 export async function membership(env, userId) {
   const rows = (await env.DB.prepare(`SELECT subscription, status, plan, period_end, cancel_at_end FROM memberships WHERE user_id = ?`).bind(userId).all()).results || [];
-  rows.sort((a, b) => (MEMBER.has(b.status) - MEMBER.has(a.status)) || ((b.period_end || 0) - (a.period_end || 0)));
+  const t = now();
+  rows.sort((a, b) => (liveRow(b, t) - liveRow(a, t)) || ((b.period_end || 0) - (a.period_end || 0)) || ((a.plan === 'gift') - (b.plan === 'gift')));
   const m = rows[0];
   if (!m) return { member: false };
-  const member = MEMBER.has(m.status);
-  return { member, status: m.status, plan: m.plan || null, until: m.period_end || null, ending: member && !!m.cancel_at_end, subscription: m.subscription };
+  const member = liveRow(m, t), gift = m.plan === 'gift';
+  // the latest end of a gift still running, and whether a subscription is set to take over from it
+  const gifts = rows.filter(r => r.plan === 'gift' && liveRow(r, t)).map(r => r.period_end);
+  const next = rows.find(r => r.plan !== 'gift' && MEMBER.has(r.status) && !r.cancel_at_end);
+  return { member, status: gift ? (member ? 'active' : 'ended') : m.status, plan: m.plan || null, until: m.period_end || null, ending: member && !!m.cancel_at_end,
+    subscription: m.subscription, gift_until: gifts.length ? Math.max(...gifts) : null, then: gift && next ? (next.plan || 'subscription') : null };
 }
 
 // Read the subscription fresh from Stripe and store what it says now. Events can arrive late, twice or out of
@@ -155,6 +167,19 @@ async function syncSubscription(env, subId, hintUser) {
     ON CONFLICT(subscription) DO UPDATE SET user_id = excluded.user_id, status = excluded.status, plan = excluded.plan, period_end = excluded.period_end, cancel_at_end = excluded.cancel_at_end, updated = excluded.updated
     WHERE memberships.status NOT IN ('canceled', 'incomplete_expired')`)   // a slower read of an earlier state never undoes an ending
     .bind(sub.id, user.id, String(sub.status || 'unknown').slice(0, 32), PLAN_OF[lk] || null, end, ending ? 1 : 0, now()).run();
+  // Day 16 (review): a subscription that will renew while a gift still covers the member (they pressed "Renew" in the
+  // portal after redeeming a gift behind it, or paid in another tab while redeeming) would charge for time the gift
+  // already gives. Push its next payment to the gift's end instead (a trial, no proration): never two payments for one
+  // stretch of time.
+  if (MEMBER.has(sub.status) && !ending && end) {
+    const g = await env.DB.prepare(`SELECT MAX(period_end) AS until FROM memberships WHERE user_id = ? AND plan = 'gift' AND status = 'active' AND period_end > ?`).bind(user.id, now()).first();
+    const until = g && g.until;
+    if (until && until > end + 86400 && until - now() >= TRIAL_MIN && until - now() <= TRIAL_MAX) {
+      const x = await stripe(env, 'POST', 'subscriptions/' + sub.id, { trial_end: until, proration_behavior: 'none' }, 'ddr-gift-trial-' + sub.id + '-' + until);
+      if (!x.ok) return false;   // Stripe will send the event again, and we try again
+      await env.DB.prepare(`UPDATE memberships SET status = 'trialing', period_end = ? WHERE subscription = ?`).bind(until, sub.id).run();
+    }
+  }
   return true;
 }
 
@@ -182,12 +207,15 @@ export async function webhook(env, req, h) {
   let ev; try { ev = JSON.parse(raw); } catch { return h.json(env, { error: 'bad json' }, 400); }
   if (!ev || ev.object !== 'event' || typeof ev.type !== 'string') return h.json(env, { error: 'bad json' }, 400);
   if (!!ev.livemode !== (keyMode(env) === 'live')) return h.json(env, { ok: true, ignored: 'mode' });   // a test event never touches a live member, nor the other way round
-  if (!EVENTS.has(ev.type)) return h.json(env, { ok: true, ignored: 'type' });
+  if (!EVENT_SET.has(ev.type)) return h.json(env, { ok: true, ignored: 'type' });
   const o = (ev.data && ev.data.object) || {};
   let done = true;
-  if (ev.type === 'checkout.session.completed') {
+  if (ev.type === 'checkout.session.completed' || ev.type === 'checkout.session.async_payment_succeeded') {
     if (o.mode === 'subscription' && o.subscription) done = await syncSubscription(env, typeof o.subscription === 'string' ? o.subscription : o.subscription.id, o.client_reference_id);
-  } else done = await syncSubscription(env, o.id);
+    else if (o.mode === 'payment') done = await Gifts.fromCheckout(env, o.id);
+  } else if (ev.type === 'charge.refunded') done = await Gifts.fromRefund(env, o.id);
+  else if (ev.type === 'charge.dispute.created') done = await Gifts.fromDispute(env, o.id);
+  else done = await syncSubscription(env, o.id);
   // a 500 makes Stripe try again later (it retries for up to three days)
   return done ? h.json(env, { ok: true }) : h.json(env, { error: 'stripe' }, 500);
 }
@@ -195,7 +223,7 @@ export async function webhook(env, req, h) {
 // The account's one Stripe customer, made the first time it is needed, so every checkout and subscription of an
 // account sits under the same customer (two tabs cannot make two). The idempotency key makes a repeat of the same
 // request return the same customer.
-async function customerFor(env, s) {
+export async function customerFor(env, s) {
   const u = await env.DB.prepare(`SELECT stripe_customer FROM users WHERE id = ?`).bind(s.id).first();
   if (!u) return null;
   if (u.stripe_customer) return u.stripe_customer;
@@ -212,7 +240,15 @@ export async function checkout(env, s, body, h) {
   const plan = body.plan;
   if (plan !== 'month' && plan !== 'year') return h.json(env, { error: 'plan' }, 400);
   if (await h.over(env, 'pay', s.id, LIMIT_PAY_HOUR)) return h.json(env, { error: 'slow down' }, 429);
-  if ((await membership(env, s.id)).member) return h.json(env, { error: 'already' }, 409);
+  // a member by a gift alone may choose a plan to follow it: the first payment is taken when the gift ends (a trial)
+  const m = await membership(env, s.id);
+  let trialEnd = null;
+  if (m.member) {
+    if (m.plan !== 'gift' || m.then) return h.json(env, { error: 'already' }, 409);
+    const left = (m.gift_until || 0) - now();
+    if (left > TRIAL_MAX) return h.json(env, { error: 'already' }, 409);
+    if (left >= TRIAL_MIN) trialEnd = m.gift_until;   // under three days left: it starts now, a day or two early
+  }
   const price = await priceId(env, plan);
   if (!price) return h.json(env, { error: 'payments closed' }, 503);
   const customer = await customerFor(env, s);
@@ -228,7 +264,7 @@ export async function checkout(env, s, body, h) {
     line_items: [{ price, quantity: 1 }],
     client_reference_id: s.id,                            // our opaque account id: how the webhook knows whose it is
     metadata: { user_id: s.id, site },
-    subscription_data: { metadata: { user_id: s.id, site } },
+    subscription_data: { metadata: { user_id: s.id, site }, ...(trialEnd ? { trial_end: trialEnd } : {}) },
     customer,
     billing_address_collection: 'required',              // the buyer's country, for Norifico's VAT records
     success_url: `${site}/account/?plus=welcome`,

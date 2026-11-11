@@ -13,6 +13,7 @@
 
 import DDRList from '../../static/list-store.js';   // the browser's own merge(), so both sides combine lists the same way
 import * as Plus from './plus.js';                     // day 14: Stripe Checkout, the Customer Portal and the webhook
+import * as Gifts from './gifts.js';                   // day 16: gift codes (buy, list, redeem)
 
 export const LINK_MINUTES = 30;            // a sign-in link works once, for this long
 export const SESSION_DAYS = 90;            // then the member signs in again
@@ -97,6 +98,8 @@ export async function tidy(env) {
     env.DB.prepare(`DELETE FROM throttle WHERE expires < ?`).bind(t),
     env.DB.prepare(`DELETE FROM lists WHERE user_id NOT IN (SELECT id FROM users)`),
     env.DB.prepare(`DELETE FROM memberships WHERE user_id NOT IN (SELECT id FROM users)`),
+    env.DB.prepare(`UPDATE gifts SET buyer_id = NULL, code_box = NULL WHERE buyer_id IS NOT NULL AND buyer_id NOT IN (SELECT id FROM users)`),
+    env.DB.prepare(`UPDATE gifts SET redeemed_by = NULL WHERE redeemed_by IS NOT NULL AND redeemed_by NOT IN (SELECT id FROM users)`),
   ]);
 }
 
@@ -229,8 +232,8 @@ export async function handle(req, env) {
       extra = { 'set-cookie': setCookie(s.token, maxAge) };
     }
     const m = await Plus.membership(env, s.id);
-    const plus = { member: m.member, plan: m.plan || null, until: m.until || null, ending: !!m.ending, status: m.status || null };
-    return json(env, { signed_in: true, email: s.email, account: s.id, plus, payments: Plus.payReady(env) }, 200, extra);
+    const plus = { member: m.member, plan: m.plan || null, until: m.until || null, ending: !!m.ending, status: m.status || null, gift_until: m.gift_until || null, then: m.then || null };
+    return json(env, { signed_in: true, email: s.email, account: s.id, plus, payments: Plus.payReady(env), gifts: Gifts.giftReady(env) }, 200, extra);
   }
 
   if (method !== 'POST') return json(env, { error: 'not found' }, 404);
@@ -259,6 +262,14 @@ export async function handle(req, env) {
     if (!s) return json(env, { error: 'signed out' }, 401);
     return route === '/plus/checkout' ? Plus.checkout(env, s, body, { json, over }) : Plus.portal(env, s, { json, over });
   }
+  if (route === '/gift/checkout' || route === '/gift/mine' || route === '/gift/redeem') {
+    const s = await session(env, req);
+    if (!s) return json(env, { error: 'signed out' }, 401);
+    const h = { json, over, netKey };
+    if (route === '/gift/checkout') return Gifts.checkout(env, s, h);
+    if (route === '/gift/mine') return Gifts.mine(env, s, h);
+    return Gifts.redeem(env, req, s, body, h);
+  }
   if (route === '/auth/signout') {
     const s = await session(env, req);
     if (s) await env.DB.prepare(`DELETE FROM sessions WHERE hash = ?`).bind(s.hash).run();
@@ -272,6 +283,7 @@ export async function handle(req, env) {
     if (!(await Plus.endSubscriptions(env, s.id))) return json(env, { error: 'stripe' }, 502);
     await env.DB.batch([
       env.DB.prepare(`DELETE FROM memberships WHERE user_id = ?`).bind(s.id),
+      ...Gifts.forget(env, s.id),
       env.DB.prepare(`DELETE FROM lists WHERE user_id = ?`).bind(s.id),
       env.DB.prepare(`DELETE FROM sessions WHERE user_id = ?`).bind(s.id),
       env.DB.prepare(`DELETE FROM signin WHERE email = ?`).bind(s.email),
