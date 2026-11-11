@@ -7,6 +7,9 @@ tags: [snowmobiles, inventions, engineering, snow, winter, quebec, canada, histo
 segments: [learner, changer]
 level: any
 art: forest
+photo_file: "File:Façade Musée de l'ingéniosité J. Armand Bombardier.jpg"
+photo_caption: "The Museum of Ingenuity J. Armand Bombardier in Valcourt, Quebec, with its new front from the 2016 renovation, photographed in March 2025."
+photo_alt: "A low modern museum building with a glass entrance and a patterned grey wall, behind bare trees and banks of snow under a blue sky; a small white building with red doors stands to the right."
 hook: "A Model T engine on two sledges, a patent for a sprocket and a track, and a village that could not get out in winter."
 lesson: "The big idea often comes early; the decades go into the one part that makes it work."
 standfirst: "Every winter, snow cut off the farms and villages of rural Quebec. A mechanic in Valcourt spent most of his life building machines to cross it, from a propeller-driven sledge in 1922 to the seven-seat B7 and, at the end, the Ski-Doo."
