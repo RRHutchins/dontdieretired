@@ -9,6 +9,7 @@ level: any
 art: forest
 photo_file: "File:Façade Musée de l'ingéniosité J. Armand Bombardier.jpg"
 photo_caption: "The Museum of Ingenuity J. Armand Bombardier in Valcourt, Quebec, with its new front from the 2016 renovation, photographed in March 2025."
+photo_checked: 2026-11-11
 photo_alt: "A low modern museum building with a glass entrance and a patterned grey wall, behind bare trees and banks of snow under a blue sky; a small white building with red doors stands to the right."
 hook: "A Model T engine on two sledges, a patent for a sprocket and a track, and a village that could not get out in winter."
 lesson: "The big idea often comes early; the decades go into the one part that makes it work."
