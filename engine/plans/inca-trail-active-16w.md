@@ -191,25 +191,25 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 ## On the day
 
-- Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. [1, 2, 27]
+- Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. [1, 2, 27, 28]
 - Start slower than you think you need to; early miles feel easy and are where most people overdo it. [7, 21]
 - On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. [15, 19]
-- In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them rather than treating the walk as a race. [28]
+- In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race. [29, 30]
 
 ## Safety
 
 - If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [17]
-- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [29]
+- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [31]
 - Check the forecast, walk in daylight, leave your route with someone, and turn back if conditions get beyond you. Summits are colder than valleys. [1]
-- Above 3,000 metres, sleep no more than 500 metres higher than the night before and take a rest day at the same height every three or four days. Avoid going from below 1,200 metres to above 3,500 metres in a day. [4, 30, 31, 32]
-- Being fit does not protect you from altitude sickness. Choose an itinerary with acclimatisation days and climb slowly however strong you feel. [4, 31, 32]
-- Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. [4, 30, 32, 33]
-- See your GP or a travel clinic before a high-altitude trip, especially if you have a health condition or have had altitude sickness before; they can discuss preventive medicine. Make sure your insurance covers evacuation. [4, 30, 32]
-- If you fly or drive straight to a high town, rest there for a day or two before you walk any higher, drink enough water, and avoid alcohol for the first two days. [30, 32, 34]
-- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [35]
+- Above 3,000 metres, sleep no more than 500 metres higher than the night before and take a rest day at the same height every three or four days. Avoid going from below 1,200 metres to above 3,500 metres in a day. [4, 32, 33, 34]
+- Being fit does not protect you from altitude sickness. Choose an itinerary with acclimatisation days and climb slowly however strong you feel. [4, 33, 34]
+- Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. [4, 32, 34, 35]
+- See your GP or a travel clinic before a high-altitude trip, especially if you have a health condition or have had altitude sickness before; they can discuss preventive medicine. Make sure your insurance covers evacuation. [4, 32, 34]
+- If you fly or drive straight to a high town, rest there for a day or two before you walk any higher, drink enough water, and avoid alcohol for the first two days. [32, 34, 36]
+- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [37]
 - Stop if something does not feel right, and get it checked rather than training through it. [3, 21]
-- In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. [27, 36]
-- In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). [36, 37]
+- In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. [27, 28, 38]
+- In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). [38, 39]
 
 ## Where this comes from
 
@@ -242,13 +242,15 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 25. Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Tier 4. https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/ (opened 2026-10-27)
 26. NHS, *Blisters (last reviewed 22 November 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/blisters/ (opened 2026-10-27)
 27. Mountain Rescue England and Wales, *Be AdventureSmart (safety advice leaflet)* (2025). Tier 3. https://new.cro.org.uk/wp-content/uploads/2025/04/MREWSafetyAdvice.pdf (opened 2026-11-07)
-28. Tanabe City Kumano Tourism Bureau, *Kumano Kodo tips and safety* (2026). Tier 3. https://www.tb-kumano.jp/en/kumano-kodo/tips/ (opened 2026-11-08)
-29. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
-30. NHS, *Altitude sickness (last reviewed 31 July 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/altitude-sickness/ (opened 2026-10-27)
-31. Tanzania National Parks, Kilimanjaro National Park, *Visitor guide* (2026). Tier 3. https://tanzaniaparks.go.tz/kilimanjaro/visitor-guide (opened 2026-10-27)
-32. Centers for Disease Control and Prevention (CDC Yellow Book 2026; Hackett and Shlim), *High-altitude travel and altitude illness* (2025). Tier 5. https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html (opened 2026-11-04)
-33. USDA Forest Service, Inyo National Forest, *Hiking the Mt. Whitney Trail (visitor leaflet, November 2013)* (2013). Tier 3. https://www.fs.usda.gov/media/122795 (opened 2026-11-05)
-34. PromPerú (Peru's tourism board, peru.travel), *Inka Trail: 5 tips for exploring one of the best trekking routes in the world* (2026). Tier 3. https://www.peru.travel/stories/inka-trail-5-tips-for-exploring-one-of-the-best-trekking-routes-in-the-world (opened 2026-11-04)
-35. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
-36. Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Tier 3. https://www.mountaineering.scot/news/avoid-hypothermia-when-hiking-in-scottish-winter (opened 2026-11-09)
-37. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
+28. Pacific Crest Trail Association, *Safety advice for the Pacific Crest Trail (undated page; year is the year opened)* (2026). Tier 3. https://www.pcta.org/discover-the-trail/backcountry-basics/safety-tips/ (opened 2026-11-10)
+29. Tanabe City Kumano Tourism Bureau, *Kumano Kodo tips and safety* (2026). Tier 3. https://www.tb-kumano.jp/en/kumano-kodo/tips/ (opened 2026-11-08)
+30. U.S. National Park Service, *Beat the Heat: Prevent Heat-Related Illnesses (last updated 29 June 2023)* (2023). Tier 3. https://www.nps.gov/articles/heat-illness.htm (opened 2026-11-10)
+31. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
+32. NHS, *Altitude sickness (last reviewed 31 July 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/altitude-sickness/ (opened 2026-10-27)
+33. Tanzania National Parks, Kilimanjaro National Park, *Visitor guide* (2026). Tier 3. https://tanzaniaparks.go.tz/kilimanjaro/visitor-guide (opened 2026-10-27)
+34. Centers for Disease Control and Prevention (CDC Yellow Book 2026; Hackett and Shlim), *High-altitude travel and altitude illness* (2025). Tier 5. https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html (opened 2026-11-04)
+35. USDA Forest Service, Inyo National Forest, *Hiking the Mt. Whitney Trail (visitor leaflet, November 2013)* (2013). Tier 3. https://www.fs.usda.gov/media/122795 (opened 2026-11-05)
+36. PromPerú (Peru's tourism board, peru.travel), *Inka Trail: 5 tips for exploring one of the best trekking routes in the world* (2026). Tier 3. https://www.peru.travel/stories/inka-trail-5-tips-for-exploring-one-of-the-best-trekking-routes-in-the-world (opened 2026-11-04)
+37. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
+38. Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Tier 3. https://www.mountaineering.scot/news/avoid-hypothermia-when-hiking-in-scottish-winter (opened 2026-11-09)
+39. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)

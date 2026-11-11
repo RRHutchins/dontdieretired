@@ -9275,7 +9275,8 @@
   regions:
   - uk
   - us
-  why: Fishing asks you to read water, to work out where a fish would sit and what it might take, and then to wait with real attention. The Angling Trust's Get Fishing campaign runs beginner events with licensed coaches, and Take Me Fishing does a similar job in the US with step-by-step guides and state information.
+  why: Fishing asks you to read water, to work out where a fish would sit and what it might take, and then to wait with real attention. The Angling Trust's Get Fishing campaign lists beginner events across
+    England, and Take Me Fishing does a similar job in the US with step-by-step guides and state information.
   start:
   - Search the Angling Trust's Get Fishing events and map in the UK, or read Take Me Fishing's How to Fish guide in the US.
   - Book a beginner session and ask the organiser whether tackle is provided.
@@ -9289,7 +9290,206 @@
     url: https://www.takemefishing.org/how-to-fish/
     region: us
     checked: '2026-10-07'
-  safety: Take care on wet banks and near deep or fast water, and handle hooks with care.
+  - label: Canal & River Trust, Let's Fish! free taster sessions with tackle, bait, licence and permit included
+    url: https://canalrivertrust.org.uk/enjoy-the-waterways/fishing/lets-fish
+    region: uk
+    checked: '2026-11-10'
+  - label: Take Me Fishing, Get Your Fishing License (choose your state)
+    url: https://takemefishing.org/select-a-state
+    region: us
+    checked: '2026-11-10'
+  safety: Wear a lifejacket when fishing from a boat or the coast, check the weather and sea conditions before you set off, and keep a means of calling for help on you.
+  seo_title: 'Learn to fish: licences, first lessons and where to go'
+  description: 'How to start fishing: rod licence prices and rules in England, Wales, Scotland, NI and the US, free taster sessions, and coarse, game or sea.'
+  detail:
+  - h: What a first session is really like
+    p:
+    - The easiest start is a free taster. The Canal & River Trust's Let's Fish! events run roughly March to October with local angling clubs, and everything is free on the day, including tackle, bait, a
+      rod licence and your fishing permit. Licensed coaches teach, and the sessions are for adults and children aged six or over. They are busy, so the Trust says to sign up early.
+    - At the Angling Trust's Get Fishing events, aimed at anyone who wants to get into or back into fishing, many events provide tackle and bait, and some let newcomers earn a Bronze Get Fishing Award.
+      Ring the organiser before you set off to check the event is running.
+    - In the US, state wildlife agencies run similar classes. Texas Parks and Wildlife lists beginner classes such as Fishing 101 and Intro to Fly Fishing, many led by park rangers or volunteers. Its Learn
+      to Fish class at College Station covers regulations and ethics, safety, tackle, knots, fish identification and casting, with equipment and bait provided and no licence needed for the event.
+  - h: Coarse, game or sea fishing
+    table:
+      head:
+      - Type
+      - What you catch
+      - Where
+      - Licence in England and Wales
+      - A good first outing
+      rows:
+      - - Coarse
+        - Carp, bream, roach, rudd, perch, tench, chub, pike, eels
+        - Canals, lakes, ponds and rivers; most people live within a few miles of one
+        - Trout and coarse rod licence
+        - A whip on a canal or pond, or a Let's Fish! or Get Fishing session. Nearly all coarse venues are catch and release
+      - - Game
+        - Trout, grayling, sea trout, salmon
+        - Rivers, lakes and stocked trout fisheries; fly fishing is the commonest method
+        - Trout and coarse licence for trout and grayling; salmon and sea trout need the dearer salmon and sea trout licence
+        - A stocked trout fishery; owners may hire out tackle and arrange tuition
+      - - Sea
+        - Bass, mackerel, cod, whiting, plaice, flounder, pollack, rays
+        - Beaches, estuaries, piers, harbours, breakwaters, rocks, and boats over reefs and wrecks
+        - None needed to fish in the sea
+        - A charter boat, where bait, tackle and tuition are often included
+    after: Fishing in Wales, which writes its beginner guides with help from Get Fishing, puts basic coarse tackle at as little as £30 and a basic game setup at about £50 and a sea setup at under £50. It
+      suggests sea or game fishing if you want to eat what you catch.
+  - h: Licences and permission, side by side
+    p:
+    - Every part of the UK, and every US state, does this differently, and a licence is never the whole story. GOV.UK says you need permission from the land or fishery owner as well as a rod licence, even
+      on club waters and private lakes, and that fishing without a valid licence in England or Wales can bring a fine of up to £2,500.
+    table:
+      head:
+      - Where
+      - Licence?
+      - Free or exempt
+      - First licence, cost (as last listed)
+      - Permission as well
+      rows:
+      - - England and Wales
+        - Rod licence for freshwater fish, salmon, trout, smelt and eel; not for the sea
+        - Under 13 no licence; 13 to 16 free junior licence
+        - 'Trout and coarse (2 rods): 1 day £7.30, 8 days £14.70, 12 months £36.80; 12 months £24.50 if 66 or over or disabled'
+        - Yes, usually a club or fishery permit or day ticket
+      - - Scotland
+        - No licence for recreational fishing, except in the Border Esk region, which needs the England and Wales licence
+        - Everyone
+        - None
+        - Yes, a permit or written permission from the owner of the fishing rights
+      - - Northern Ireland
+        - Rod licence from DAERA or the Loughs Agency
+        - Under 12 no coarse licence; 12 to 18 coarse licence £2
+        - Coarse season £17; £5 if 60 or over or receiving a listed disability benefit; 3-day £3.50, 14-day £9 (game or coarse)
+        - Yes, a permit or day ticket; you cannot buy one without a rod licence
+      - - Texas (one US example)
+        - Licence for public waters, residents and visitors
+        - Under 17; residents born before 1 January 1931
+        - Resident freshwater package $30 (65 and over $12); one-day all-water $11 resident, $16 non-resident; non-resident freshwater $58
+        - Not covered on the licence page; ask before fishing private water
+    after: Every US state sets its own licence, prices and exemptions, and Take Me Fishing lists where to buy for each one. Many states also hold free fishing days when you can fish without a licence, though
+      state rules still apply. Texas annual licences run from the date of sale to 31 August.
+  - h: When to go
+    list:
+    - England and Wales. You cannot fish for coarse fish on rivers from 15 March to 15 June, but you can fish for coarse fish and trout on most enclosed stillwaters and canals all year. Trout and salmon
+      close seasons on rivers are set in local byelaws.
+    - Wales, game fishing. Fishing in Wales gives roughly 3 March to 30 September for trout on many rivers and 1 April to 17 October for salmon and sea trout, varying by river; some stocked fisheries open
+      all year.
+    - Scotland. Brown trout close from 7 October to 14 March, coarse fish have no close time, and rod fishing for salmon is banned on Sundays.
+    - Northern Ireland. There is generally no close season for coarse fish such as pike, bream, roach and perch, but game seasons still apply.
+  - h: Handling fish and staying safe
+    p:
+    - In England and Wales you must return fish you cannot keep to the water unharmed, and eels other than conger eels must go back alive. On rivers the daily limit is 15 small fish up to 20 cm (8 in),
+      one pike up to 65 cm (25.6 in) and two grayling of 30 to 38 cm (12 to 15 in). All salmon must be returned in Wales.
+    - The US National Park Service's release advice is to handle fish with wet hands or gloves, keep them in the water, use single barbless hooks, cut the line close to a deeply swallowed hook rather than
+      dig it out, and never hold a fish by the gills. The Angling Trust says not to go fishing without a landing net.
+    - The RNLI says a lifejacket is essential from a boat or the coast, that you should check the weather and sea conditions first, and that riverbanks and coasts are often out of phone signal, so carry
+      a means of calling for help. For a first trip, it suggests going with a fishing friend.
+  faq:
+  - q: Do I need a fishing licence to fish in the sea?
+    a: Not in England or Wales. The Angling Trust says you do not need a licence to fish in the sea; GOV.UK says the rod licence covers freshwater fish, salmon, trout, smelt and eel.
+  - q: How much is a fishing licence in the UK?
+    a: In England and Wales, a trout and coarse licence for up to two rods was £7.30 for a day, £14.70 for 8 days and £36.80 for 12 months as last listed on GOV.UK. Northern Ireland's season coarse licence
+      was £17, and Scotland has no recreational licence.
+  - q: Do you need a fishing licence if you are over 65?
+    a: Yes in England and Wales, but the 12-month licence is cheaper at 66 or over (£24.50 for trout and coarse); there is no discount on 1-day or 8-day licences. Northern Ireland's concession coarse licence
+      for 60 and over was £5, and in Texas residents 65 and over pay a reduced fee unless born before 1931.
+  - q: Do you need a fishing licence in Scotland?
+    a: No, except in the Border Esk region. You still need a permit or written permission from the owner of the fishing rights.
+  - q: What is the fine for fishing without a licence?
+    a: Up to £2,500 in England and Wales if you cannot show a valid licence when asked.
+  - q: Can I try fishing for free?
+    a: Yes. The Canal & River Trust's Let's Fish! sessions are free and include tackle, bait, a rod licence and a permit. In the US, many states hold free fishing days, and Texas Parks and Wildlife runs
+      beginner classes, some of them free.
+  sources:
+  - label: GOV.UK, Buy a rod fishing licence
+    url: https://www.gov.uk/fishing-licences/buy-a-fishing-licence
+    checked: '2026-11-10'
+  - label: GOV.UK, Buy a rod fishing licence (when you need a licence)
+    url: https://www.gov.uk/fishing-licences
+    checked: '2026-11-10'
+  - label: GOV.UK, Types of licences and rod limits
+    url: https://www.gov.uk/fishing-licences/types-of-licences-and-rod-limits
+    checked: '2026-11-10'
+  - label: GOV.UK, Fishing in Scotland and Northern Ireland
+    url: https://www.gov.uk/fishing-licences/fishing-in-scotland-and-northern-ireland
+    checked: '2026-11-10'
+  - label: GOV.UK, Freshwater rod fishing rules, when and where you can fish
+    url: https://www.gov.uk/freshwater-rod-fishing-rules/when-and-where-you-can-fish
+    checked: '2026-11-10'
+  - label: GOV.UK, Freshwater rod fishing rules, fish size and catch limits
+    url: https://www.gov.uk/freshwater-rod-fishing-rules/fish-size-and-catch-limits
+    checked: '2026-11-10'
+  - label: Natural Resources Wales, Buy a fishing rod licence
+    url: https://www.naturalresourceswales.gov.uk/guidance-and-advice/business-sectors/fisheries/buy-a-fishing-rod-licence/?lang=en
+    checked: '2026-11-10'
+  - label: Scottish Government, Recreational fishing
+    url: https://gov.scot/policies/salmon-and-recreational-fisheries/recreational-fishing
+    checked: '2026-11-10'
+  - label: nidirect, Angling permits explained
+    url: https://www.nidirect.gov.uk/articles/angling-permits-explained
+    checked: '2026-11-10'
+  - label: nidirect, Coarse rod licence prices from DAERA
+    url: https://www.nidirect.gov.uk/articles/coarse-rod-licence-prices-daera
+    checked: '2026-11-10'
+  - label: nidirect, Short-term and tourist rod licence prices from DAERA
+    url: https://www.nidirect.gov.uk/articles/short-term-and-tourist-rod-licence-prices-daera
+    checked: '2026-11-10'
+  - label: nidirect, Game and coarse fishing seasons
+    url: https://nidirect.gov.uk/articles/game-and-coarse-fishing-seasons
+    checked: '2026-11-10'
+  - label: Canal & River Trust, Let's Fish!
+    url: https://canalrivertrust.org.uk/enjoy-the-waterways/fishing/lets-fish
+    checked: '2026-11-10'
+  - label: Angling Trust, Get Fishing events
+    url: https://anglingtrust.net/getfishing/events/
+    checked: '2026-11-10'
+  - label: Angling Trust, Licenced angling coach gives back to the sport
+    url: https://anglingtrust.net/2025/11/13/licenced-angling-coach-gives-back-to-the-sport-helping-create-new-generation-of-anglers-get-fishing-events-to-get-into-fishing/
+    checked: '2026-11-10'
+  - label: Angling Trust, Seven things you need to know to get fishing
+    url: https://anglingtrust.net/2018/07/13/seven-things-you-need-to-know-to-get-fishing/
+    checked: '2026-11-10'
+  - label: Fishing in Wales, Get Fishing - How to get into coarse fishing
+    url: https://fishingwales.net/beginners-guide/get-fishing-how-to-get-into-coarse-fishing/
+    checked: '2026-11-10'
+  - label: Fishing in Wales, Get Fishing - How to get into game fishing
+    url: https://fishingwales.net/beginners-guide/get-fishing-how-to-get-into-game-fishing/
+    checked: '2026-11-10'
+  - label: Fishing in Wales, Get Fishing - How to get into sea fishing
+    url: https://fishingwales.net/beginners-guide/get-fishing-how-to-get-into-sea-fishing/
+    checked: '2026-11-10'
+  - label: Texas Parks and Wildlife Department, Fishing licenses and packages
+    url: https://tpwd.texas.gov/regulations/outdoor-annual/licenses/fishing-licenses-stamps-tags-packages/fishing-licenses-and-packages
+    checked: '2026-11-10'
+  - label: Texas Parks and Wildlife Department, Frequently asked questions about licenses
+    url: https://tpwd.texas.gov/regulations/outdoor-annual/licenses/faqs
+    checked: '2026-11-10'
+  - label: Texas Parks and Wildlife Department, Fishing classes, derbies and more
+    url: https://tpwd.texas.gov/calendar/fishing-classes-derbies-more/fishing-classes-derbies-more/
+    checked: '2026-11-10'
+  - label: Texas Parks and Wildlife Department, Learn to Fish - College Station
+    url: https://tpwd.texas.gov/calendar/education/angler-ed/learn-to-fish-college-station
+    checked: '2026-11-10'
+  - label: Take Me Fishing, Freshwater fishing license
+    url: https://www.takemefishing.org/freshwater-fishing-license/
+    checked: '2026-11-10'
+  - label: Take Me Fishing, Free fishing days
+    url: https://www.takemefishing.org/how-to-fish/when-to-fish/free-fishing-days/
+    checked: '2026-11-10'
+  - label: Take Me Fishing, Get Your Fishing License
+    url: https://takemefishing.org/select-a-state
+    checked: '2026-11-10'
+  - label: National Park Service, How to safely catch and release
+    url: https://www.nps.gov/subjects/fishing/how-to-safely-catch-and-release.htm
+    checked: '2026-11-10'
+  - label: RNLI, Angling and fishing safety advice
+    url: https://rnli.org/safety/choose-your-activity/angling
+    checked: '2026-11-10'
+  - label: RNLI, How to get into fishing
+    url: https://rnli.org/magazine/magazine-featured-list/2020/september/how-to-get-into-fishing
+    checked: '2026-11-10'
   kit:
   - name: Beginner fishing rod and reel combo
     why: check the type suits where you'll fish (river, lake or sea)
@@ -9297,6 +9497,17 @@
   - name: Polarised sunglasses
     why: cut glare on the water
     url: https://www.amazon.co.uk/s?k=polarised+sunglasses
+  - name: Landing net
+    why: lets you bring a fish close enough to unhook and return it; check the handle reaches from the bank you'll fish
+    url: https://www.amazon.co.uk/s?k=fishing+landing+net
+  - name: Disgorger or forceps
+    why: for taking the hook out quickly; check it suits the hook sizes you use
+    url: https://www.amazon.co.uk/s?k=fishing+disgorger+forceps
+  related:
+  - canoe-a-river-trail
+  - learn-to-kayak
+  - wild-swim
+  - go-on-a-guided-bird-walk
 - id: walk-wales-coast-path
   title: Walk a stretch of the Wales Coast Path
   category: travel
@@ -9308,22 +9519,216 @@
   company: either
   regions:
   - uk
-  places: [wales]
-  why: Wales is one of a few countries in the world with a continuous footpath along its coastline, running 870 miles from the outskirts of Chester to Chepstow. It is divided into eight sections, so a single day can take in cliffs, estuaries or a promenade, with short, easy stretches alongside the longer hikes.
+  places:
+  - wales
+  why: Wales is one of a few countries in the world with a continuous footpath along its coastline, running 870 miles from the outskirts of Chester to Chepstow. It is divided into eight sections, so a single
+    day can take in cliffs, estuaries or a promenade, with short, easy stretches alongside the longer hikes.
   start:
   - Read the official About the Path page to see the eight sections and choose a region.
   - Open that region's Walks to Explore the Area page on the official site and pick a route that suits the time you have.
   - Check public transport back to your start using the site's Plan Your Visit section, then pack waterproofs and set off.
   links:
   - label: Wales Coast Path, about the path (official site, Natural Resources Wales)
-    url: https://www.walescoastpath.gov.uk/working-with-us/about-the-path/?lang=en
+    url: https://www.walescoastpath.gov.uk/working-with-us/about-the-path?lang=en
     region: uk
-    checked: '2026-10-07'
+    checked: '2026-11-10'
   - label: Wales Coast Path, walking (official walks by region)
-    url: https://www.walescoastpath.gov.uk/things-to-do/walking/?lang=en
+    url: https://walescoastpath.gov.uk/things-to-do/walking/?lang=en
     region: uk
     checked: '2026-10-07'
-  safety: Keep to the path on cliff sections and check the weather and tide times before coastal stretches.
+  - label: Wales Coast Path, itineraries (day, accessible and multi-day walks)
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries?lang=en
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Transport for Wales: the Wales Coast Path by rail'
+    url: https://tfw.wales/ways-to-travel/walking-and-wheeling/long-distance-trails/wales-coast-path/rail
+    region: uk
+    checked: '2026-11-10'
+  safety: Check tide times before you set off and keep back from cliff edges; if you are cut off by the tide, call 999 and ask for the Coastguard.
+  seo_title: 'Wales Coast Path: the eight sections and best day walks'
+  description: The Wales Coast Path's eight sections with lengths, a classic day walk in each, the tidal crossings and firing range that can stop you, and transport.
+  detail:
+  - h: What it's really like
+    p:
+    - The Wales Coast Path runs about 870 miles (1,400 km) from the Welsh border on the outskirts of Chester to the bandstand in Chepstow. It opened on 5 May 2012, the official halfway point is New Quay
+      in Ceredigion, and it is managed by Natural Resources Wales with sixteen coastal councils and two national parks.
+    - It is not one kind of walk. The official site points to a paved seafront at Rhos-on-Sea and the promenade at Beaumaris, while its New Quay to Aberporth walk clings to steep cliffs. Pembrokeshire alone,
+      which the official site describes as 182 miles (291 km), has around 35,000 feet (about 10,700 metres) of rise and fall.
+    - At Prestatyn the path meets Offa's Dyke Path National Trail, which follows the border with England down to Chepstow. Walk both and you have gone round the whole of Wales, about 1,047 miles (1,685
+      km).
+  - h: The eight sections, with a day walk in each
+    table:
+      head:
+      - Section
+      - Length
+      - A day walk from the official site
+      rows:
+      - - North Wales Coast and Dee Estuary
+        - 81 miles (132 km)
+        - Conwy to Llanfairfechan, 11 miles (18 km), taking the inland route over Conwy Mountain past a stone circle
+      - - Isle of Anglesey
+        - 135 miles (217 km)
+        - Cemaes Bay circular, listed as 3 miles or 6 km, with steep climbs to Dinas Gynfor, the most northerly point in Wales
+      - - Llŷn and Snowdonia Coast
+        - 167 miles (264 km)
+        - Portmeirion (Min y Don) to Black Rock Sands, 7 miles (11 km), across the Cob and round by Borth y Gest
+      - - Ceredigion
+        - 75 miles (119 km)
+        - New Quay to Aberporth, 13 miles (22 km); the official page calls Cwmtydu to Llangrannog perhaps the most spectacular part
+      - - Pembrokeshire Coast Path
+        - 182 miles (291 km)
+        - Marloes Sands to Martin's Haven, 2 miles (3 km), looking over to Skomer and Skokholm
+      - - Carmarthenshire
+        - 68 miles (108 km)
+        - Llansteffan circular, 3 miles (5 km), past the castle above the Tywi estuary
+      - - Gower and Swansea Bay
+        - 69 miles (111 km)
+        - Rhossili to Port Eynon, 7.5 miles (11.75 km), with a bus back
+      - - South Wales Coast and Severn Estuary
+        - 97 miles (157 km)
+        - Llantwit Major to Nash Point, 3 miles (5 km), along fossil-rich clifftops to the lighthouse
+    after: Section names and lengths are the official About the Path page's own figures. The official Places to Go pages group the coast slightly differently, into seven areas, so expect both on the site.
+      Several day walks are one way; the official pages name the bus that links the ends, such as the T5 between New Quay and Aberporth, the Puffin Shuttle at Marloes and the 303 at Llantwit Major.
+  - h: Tides and the firing range, side by side
+    p:
+    - In a few places the path, or a famous detour from it, depends on the tide or the Army. The official tide page says only that parts of the path can become inaccessible during very high tides, so here
+      are the details from the pages that cover each place.
+    table:
+      head:
+      - Where
+      - What stops you
+      - Where to check
+      rows:
+      - - The Gann and Sandy Haven, between Dale and Milford Haven (Pembrokeshire)
+        - Two low-tide crossings, passable only two and a half hours each side of low tide. The high-tide alternative for each is four miles, mostly on road. The National Park suggests reaching the first
+          one three hours before low tide.
+        - Tide tables from the Pembrokeshire Coast National Park Authority
+      - - Point Lane, Angle, and Bullwell Bay at Popton (Pembrokeshire)
+        - The highest tides cover the path for an hour or so; the advice is to wait until the water drops.
+        - Pembrokeshire Coast National Park Authority
+      - - Castlemartin Range West, Stack Rocks to Freshwater West (Pembrokeshire)
+        - Never open to the general public and no right of way, so the Coast Path goes inland. When the whole range is closed it follows roads; the Castlemartin Range Trail, a permissive bridleway, is an
+          off-road option. National Park staff and Ramblers run guided walks on some weekends and bank holidays.
+        - Pembrokeshire Coast National Park Authority
+      - - Castlemartin Range East, Stack Rocks to St Govan's (Pembrokeshire)
+        - The National Park says the path is closed on weekdays from 9am to 4.30pm and open weekends, bank holidays and most evenings; the MoD's firing notice says red flags and red lamps mean live firing.
+          Unscheduled firing can happen without warning.
+        - The monthly Castlemartin firing notice on GOV.UK, or the National Park's firing programme line, 01646 662367
+      - - Worm's Head, off Rhossili (Gower)
+        - A tidal island reached by a causeway, accessible for about two and a half hours either side of low tide, according to the National Trust. The official Gower walks list it as an extension, only
+          if tides permit.
+        - The National Coastwatch Institute lookout at Rhossili has tide tables and can advise on timing
+      - - Ynys Llanddwyn (Anglesey)
+        - Accessible at all but the highest of tides, says the official walk page.
+        - Local tide times before you set off
+      - - Sully Island (Vale of Glamorgan)
+        - Once the causeway starts to go under, people may be stranded for up to six hours, and the RNLI says water can surge through at up to 7 knots (about 8 mph). Do not cross if water already covers
+          it.
+        - Tide times before you go
+    after: If you are cut off, the RNLI's advice is to call 999 and ask for the Coastguard. The official site links to the Met Office's tide tables.
+  - h: How to build up to more
+    p:
+    - Start with one of the short official walks above, or with a level stretch if you want an easy first day. The official site lists stretches suitable for wheelchairs and buggies in every region, from
+      the Cefn Sidan beach boardwalk at Pembrey to the Cardiff Bay Barrage, and Caswell Bay on Gower has beach wheelchairs to borrow.
+    - Next, try two or three days in a row. The official multi-day walks include Rhyl to Conwy (25 miles, 40 km), Pwllheli to Aberdaron on the Llŷn (31 miles, 49 km), Borth to Aberaeron (24 miles, 38 km)
+      and Barry to Porthcawl (29 miles, 46 km), and the site says you can walk them over two or three days or as separate walks.
+    - For the whole path, Transport for Wales says it is possible to complete the entire route using public transport, which also makes one-way walks easy. GOV.UK's National Trail page puts the Pembrokeshire
+      Coast Path alone at around 12 days if you walk 15 miles (24 km) a day, so you may prefer to take the full path in sections, as Jenny Reed did over several years.
+  faq:
+  - q: How long is the Wales Coast Path?
+    a: About 870 miles (1,400 km), from the outskirts of Chester to Chepstow. It is split into eight sections, from 68 miles (108 km) in Carmarthenshire to 182 miles (291 km) in Pembrokeshire.
+  - q: How long does it take to walk the whole Wales Coast Path?
+    a: The official site does not give a figure. Bob Smith, on the path's Hall of Fame, walked it in one go from Flint on 8 June 2015 to Chepstow on 5 August 2015, averaging about 20 miles a day.
+  - q: Can you walk the Wales Coast Path using public transport?
+    a: Yes. Transport for Wales says it is possible to complete the entire path by public transport, and many official day walks name the bus that links their two ends.
+  - q: Can you walk all the way around Wales?
+    a: Yes. Offa's Dyke Path National Trail meets the Wales Coast Path at Prestatyn and runs along the border with England to Chepstow, and the two together make about 1,047 miles (1,685 km) round the whole
+      country.
+  - q: When can you cross to Worm's Head?
+    a: The National Trust says the causeway is passable for about two and a half hours either side of low tide. The National Coastwatch Institute lookout at Rhossili has tide tables and can advise on the
+      best time.
+  - q: Is the Pembrokeshire Coast Path the same as the Wales Coast Path?
+    a: The Pembrokeshire Coast Path National Trail is part of the Wales Coast Path. GOV.UK gives the National Trail as 186 miles (299 km) from St Dogmaels to Amroth, while the Wales Coast Path site gives
+      its Pembrokeshire section as 182 miles (291 km).
+  sources:
+  - label: Wales Coast Path, About the path
+    url: https://www.walescoastpath.gov.uk/working-with-us/about-the-path?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Itineraries
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Wow walks
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/wow-walks/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Conwy to Llanfairfechan
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/wow-walks/conwy-to-llanfairfechan-conwy/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Cemaes Bay Circular Walk, Isle of Anglesey
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/wow-walks/cemaes-bay-circular-walk-isle-of-anglesey/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Portmeirion to Black Rock Sands
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/wow-walks/portmeirion-i-draeth-morfa-bychan-gwynedd/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, New Quay to Aberporth
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/wow-walks/new-quay-to-aberporth-ceredigion/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Marloes Sands to Martin's Haven
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/wow-walks/marloes-sands-to-martins-haven-pembrokeshire/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Llansteffan, Carmarthenshire
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/mindfulness-walks/llansteffan-carmarthenshire/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Walks to explore the area in Carmarthen Bay and Gower
+    url: https://www.walescoastpath.gov.uk/places-to-go/carmarthen-bay-and-gower/walks-to-explore-the-area-in-carmarthen-bay-and-gower/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Llantwit Major to Nash Point
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/culture-and-heritage-walks/llanwit-major-to-nash-point-vale-of-glamorgan/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Ynys Llanddwyn and Newborough Forest
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/culture-and-heritage-walks/ynys-llanddwyn-and-newborough-forest-isle-of-anglesey/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Places to go
+    url: https://www.walescoastpath.gov.uk/places-to-go/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Suitable places for mobility aids and prams
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/accessible-walks/suitable-places-for-mobility-aids-and-prams/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Multi-day walks
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/itineraries/multi-day-walks/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Safety advice
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/wales-coast-path-safety-advice?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Tide times
+    url: https://www.walescoastpath.gov.uk/plan-your-visit/tide-times/?lang=en
+    checked: '2026-11-10'
+  - label: Wales Coast Path, Bob Smith (Hall of Fame)
+    url: https://walescoastpath.gov.uk/latest-news/hall-of-fame/bob-smith/?lang=en
+    checked: '2026-11-10'
+  - label: Transport for Wales, Wales Coast Path by rail
+    url: https://tfw.wales/ways-to-travel/walking-and-wheeling/long-distance-trails/wales-coast-path/rail
+    checked: '2026-11-10'
+  - label: Pembrokeshire Coast National Park Authority, Freshwater West to Broad Haven South
+    url: https://www.pembrokeshirecoast.wales/coast-path/planning-your-walk/freshwater-west-to-broad-haven-south/
+    checked: '2026-11-10'
+  - label: Pembrokeshire Coast National Park Authority, Beaches and tides
+    url: https://www.pembrokeshirecoast.wales/coast-path/about-the-pembrokeshire-coast-path/beaches-and-tides
+    checked: '2026-11-10'
+  - label: GOV.UK (Ministry of Defence), Castlemartin firing notice November 2026
+    url: https://www.gov.uk/government/publications/castlemartin-firing-notice--2/castlemartin-firing-notice-november-2026
+    checked: '2026-11-10'
+  - label: GOV.UK, Pembrokeshire Coast Path National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-wales/pembrokeshire-coast-path-national-trail
+    checked: '2026-11-10'
+  - label: National Trust, Rhosili serpents, seascapes and shipwrecks walk
+    url: https://www.nationaltrust.org.uk/visit/wales/rhosili-and-south-gower-coast/rhosili-serpents-seascapes-and-shipwrecks-walk
+    checked: '2026-11-10'
+  - label: RNLI, RNLI issue tidal safety warning in Wales ahead of bank holiday weekend
+    url: https://rnli.org/news-and-media/2026/april/29/rnli-issue-tidal-safety-warning-in-wales-ahead-of-bank-holiday-weekend
+    checked: '2026-11-10'
+  - label: RNLI, Eight people rescued from Sully Island in five days as RNLI urges caution
+    url: https://rnli.org/news-and-media/2025/april/09/eight-people-rescued-from-sully-island-in-five-days-as-rnli-urges-caution
+    checked: '2026-11-10'
   kit:
   - name: Walking boots
     why: try them on in the afternoon with your walking socks, and break them in before a long day
@@ -9334,6 +9739,19 @@
   - name: Merino walking socks
     why: fewer blisters on long days; bring a spare pair
     url: https://www.amazon.co.uk/s?k=merino+walking+socks
+  related:
+  - walk-a-national-trail
+  - walk-south-west-coast-path
+  - climb-yr-wyddfa
+  - go-on-a-guided-bird-walk
+  inspire:
+  - kind: read
+    person: Jenny Reed, from Bristol
+    line: Walked all 870 miles of the Wales Coast Path in day, weekend and week-long trips, south to north, finishing on Anglesey after already completing every National Trail in England, Wales and Scotland.
+    title: Jenny Reed
+    outlet: Wales Coast Path (Natural Resources Wales)
+    url: https://llwybrarfordircymru.gov.uk/latest-news/hall-of-fame/jenny-reed/?lang=en
+    checked: '2026-11-10'
 - id: hike-pacific-crest-trail-section
   title: Hike a section of the Pacific Crest Trail
   category: travel
@@ -9346,8 +9764,12 @@
   season: Summer to early autumn in the high country
   regions:
   - us
-  places: [CA, OR, WA]
-  why: The Pacific Crest Trail runs about 2,650 miles from Mexico to Canada through desert, the Sierra Nevada, deep forest and the volcanic peaks of the Cascades. It is divided into 29 sections of manageable length, so you can walk one piece of a continental route without giving up half a year.
+  places:
+  - CA
+  - OR
+  - WA
+  why: The Pacific Crest Trail runs about 2,650 miles from Mexico to Canada through desert, the Sierra Nevada, deep forest and the volcanic peaks of the Cascades. It is divided into 29 sections of manageable
+    length, so you can walk one piece of a continental route without giving up half a year.
   start:
   - Read the Pacific Crest Trail Association's Discover the Trail pages and choose a section in California, Oregon or Washington.
   - Check whether your section crosses a wilderness area, national park or state park that needs a permit, and look up current closures.
@@ -9357,6 +9779,18 @@
     url: https://www.pcta.org/discover-the-trail/
     region: us
     checked: '2026-10-07'
+  - label: 'Pacific Crest Trail Association: local permit areas on the trail'
+    url: https://www.pcta.org/discover-the-trail/permits/local-permits/
+    region: us
+    checked: '2026-11-10'
+  - label: 'USDA Forest Service: Pacific Crest Trail passes and permits'
+    url: https://www.fs.usda.gov/trails/pacific-crest-nst/passes-permits
+    region: us
+    checked: '2026-11-10'
+  - label: 'Yosemite National Park: John Muir and Pacific Crest Trails'
+    url: https://www.nps.gov/yose/planyourvisit/jmt.htm
+    region: us
+    checked: '2026-11-10'
   safety: This is remote mountain and desert country, so carry navigation, enough water and shelter, and check for snow, fire closures and river crossings before you go.
   story: nancy-zelick-pacific-crest-trail
   story_note: Nancy Zelick walked the trail from the Mexican border to the Canadian one in 2026, rather than a single section; a wildfire closure left one 198-mile stretch for next summer.
@@ -9368,6 +9802,136 @@
     outlet: Brainerd Dispatch
     url: https://www.brainerddispatch.com/news/going-wild-on-the-pacific-crest-trail
     checked: '2026-10-27'
+  seo_title: 'Pacific Crest Trail section hikes: permits and best sections'
+  description: 'How to section hike the Pacific Crest Trail: the permits you need, six well-known stretches compared, and the water, snow and fire checks to make.'
+  detail:
+  - h: What a section hike is really like
+    p:
+    - The Pacific Crest Trail (PCT) stretches 2,650 miles (4,265 km) from Mexico to Canada, and most of it follows older named trails. The Pacific Crest Trail Association (PCTA) lists them from north to
+      south, among them the 211-mile John Muir Trail from Yosemite to Mount Whitney and the 186-mile Tahoe to Yosemite Trail. Any of these, or a few days between two road passes, makes a section hike.
+    - The scale is the thing to plan around. Mount Hood's Timberline Trail, part of which is the PCT, is about 40 miles (64 km), and the Forest Service says most backpackers take three or four days for
+      the loop. In Washington's Goat Rocks the trail climbs to about 7,500 feet (2,290 m) and is narrow, rugged and treacherous between Elk Pass and Packwood Glacier.
+  - h: Permits, the part that catches people out
+    p:
+    - The PCTA's free long-distance permit is only for trips of 500 miles (805 km) or more in a single trip. Section hikers apply instead to the agencies that manage each stretch. The PCTA counts 33 places
+      on the trail with permit systems, mostly wilderness areas, and says you generally need a different permit for each, and a new one if you leave a wilderness and re-enter it.
+    - In California you need a California Campfire Permit to use a stove, a lantern or a fire on most of the PCT. It is free, comes after a short online quiz, lasts one calendar year, and does not itself
+      let you light a campfire. Oregon and Washington have no equivalent.
+    - In central Oregon, everyone without a long-distance permit needs a Central Cascades Wilderness Permit for overnight stays in the Mount Jefferson, Mount Washington and Three Sisters wildernesses, needed
+      from 15 June to 15 October and booked only through Recreation.gov; day-use permits are also needed at some trailheads. About 40% are released on the first Tuesday in April and the rest seven days
+      before the start date; the listed fee is $6 per group per outing.
+    - On the Inyo National Forest, overnight trips into its wildernesses need a permit, with trailhead quotas from 1 May to 1 November; 60% of each quota opens on Recreation.gov six months ahead and 40%
+      two weeks ahead. The Mount Whitney Zone needs a permit even for a day hike.
+  - h: Six well-known stretches compared
+    table:
+      head:
+      - Stretch
+      - Length (official figure)
+      - Season (as the official page puts it)
+      - Permit a section hiker needs
+      rows:
+      - - John Muir Trail, Yosemite Valley to Mount Whitney
+        - 211 miles (340 km), overlapping the PCT for most of its length
+        - Yosemite reservations required late April to October; Inyo quotas 1 May to 1 November
+        - One Yosemite wilderness permit from Happy Isles or Lyell Canyon covers the trip; 45 a day may exit over Donohue Pass
+      - - Timberline Trail around Mount Hood (PCT from Timberline Lodge to Yocum Ridge)
+        - About 40 miles (64 km); most take 3 or 4 days
+        - July to October
+        - Free self-issued wilderness permit, 15 May to 15 October, where a trailhead provides one; some trailheads charge a day-use fee
+      - - Mount Jefferson, Mount Washington and Three Sisters, central Oregon
+        - Not given on the permit pages
+        - Permit season 15 June to 15 October
+        - Central Cascades Wilderness Permit through Recreation.gov; $6 per group overnight
+      - - Crater Lake National Park
+        - 33 miles (53 km) in the park
+        - Many water sources dry by late July or early August; fire closures often in summer
+        - Park backcountry permit to camp in the backcountry
+      - - Goat Rocks, US 12 near White Pass south towards Midway Meadows
+        - Cispus Pass is at mile 22 (35 km); 4,500 to 7,500 feet (1,370 to 2,290 m)
+        - Through-travel may not be possible until late July; half-mile snowfields can be common in August
+        - Free self-issued wilderness permit at trailheads
+      - - Alpine Lakes Wilderness, Stevens Pass south to Snoqualmie Pass
+        - About 67 miles (108 km) in the wilderness
+        - Not given on the forest page
+        - Free self-issued permit at trailheads and ranger stations, day and overnight
+    after: No single official page sets these side by side; each row comes from the park or forest that manages that stretch, checked on 10 November 2026. Rules change, so open the managing agency's page
+      before you book. In Yosemite, bear canisters are required throughout the park and hanging food is not allowed; the park's pages differ on where to rent a canister, so check before you go.
+  - h: Water, snow, fire and food
+    list:
+    - 'Water: the PCTA gives two litres (about half a gallon) a day as a general minimum and says some stretches need seven litres or more. At Crater Lake the park asks hikers to carry at least one gallon
+      (3.8 litres) each.'
+    - 'Snow: the PCTA says snow melts quickly from May and the trail is usually mostly snow-free by early to mid-July. The Goat Rocks forest page recommends an ice axe, and on Mount Hood the north side
+      usually holds snow longer than the south.'
+    - 'Rivers: on the Timberline Trail the glacial crossings are the hardest part. Newton Creek can be challenging, and Clark Creek and the White River very difficult, and crossings are generally easier
+      in the morning.'
+    - 'Fire: restrictions can ban campfires, some stoves and smoking, and the PCTA says it is your responsibility to know the current rules. It suggests checking the land manager''s alerts, calling the
+      nearest ranger station and looking for Red Flag Warnings on weather.gov.'
+    - 'Food: Yosemite''s ranger stations do not accept food parcels, but the Yosemite Valley post office takes General Delivery parcels all year and Tuolumne Meadows from about mid-June to mid-September.
+      Mazama Village at Crater Lake has food, supplies, showers and walk-in camping.'
+  faq:
+  - q: Do I need a permit to section hike the Pacific Crest Trail?
+    a: Usually, yes, but not from the PCTA. Its long-distance permit is only for 500 miles or more in a single trip, so section hikers get permits from the forest or park that manages each stretch.
+  - q: Do I need a California campfire permit to use a stove on the PCT?
+    a: On most of the trail in California, yes. The permit is free, valid for a calendar year, and covers stoves and lanterns as well as fires; Oregon and Washington have no equivalent.
+  - q: Do you need a bear canister on the Pacific Crest Trail?
+    a: In Yosemite, yes. The park requires approved canisters throughout and does not allow hanging food. Elsewhere, ask the forest or park that manages your section.
+  - q: Can you hike the PCT into Canada?
+    a: The Canada Border Services Agency announced in January 2025 that it was stopping permits to enter Canada on the trail, and that hikers must first enter at a port of entry such as Osoyoos or Abbotsford.
+      Check the agency's current pages before you plan the northern end.
+  - q: When is the PCT free of snow?
+    a: The PCTA says the trail is usually mostly snow-free by early to mid-July. Higher ground can hold out longer; in the Goat Rocks, through-travel may not be possible until late July.
+  sources:
+  - label: Pacific Crest Trail Association, Overview (PCT long-distance permit)
+    url: https://www.pcta.org/discover-the-trail/permits/pct-long-distance-permit
+    checked: '2026-11-10'
+  - label: Pacific Crest Trail Association, Local permit areas on the Pacific Crest Trail
+    url: https://www.pcta.org/discover-the-trail/permits/local-permits/
+    checked: '2026-11-10'
+  - label: Pacific Crest Trail Association, California Campfire Permit
+    url: https://www.pcta.org/discover-the-trail/permits/california-fire-permit/
+    checked: '2026-11-10'
+  - label: Pacific Crest Trail Association, Flip-flop and long section hike ideas
+    url: https://www.pcta.org/discover-the-trail/thru-hiking-long-distance-hiking/flip-flop-long-section/
+    checked: '2026-11-10'
+  - label: Pacific Crest Trail Association, Guide to hiking the Pacific Crest Trail
+    url: https://www.pcta.org/take-a-hike/
+    checked: '2026-11-10'
+  - label: Pacific Crest Trail Association, Fire Restrictions, Warnings and Watches
+    url: https://closures.pcta.org/info/VbekD4spKNOI7ODguyyb
+    checked: '2026-11-10'
+  - label: USDA Forest Service, Pacific Crest National Scenic Trail passes and permits
+    url: https://www.fs.usda.gov/trails/pacific-crest-nst/passes-permits
+    checked: '2026-11-10'
+  - label: USDA Forest Service, Inyo National Forest wilderness permits
+    url: https://www.fs.usda.gov/r05/inyo/permits/wilderness-permits
+    checked: '2026-11-10'
+  - label: National Park Service, Yosemite, John Muir and Pacific Crest Trails
+    url: https://www.nps.gov/yose/planyourvisit/jmt.htm
+    checked: '2026-11-10'
+  - label: National Park Service, Yosemite, Wilderness Permits
+    url: https://www.nps.gov/yose/planyourvisit/wildpermits.htm
+    checked: '2026-11-10'
+  - label: USDA Forest Service, Mt. Hood National Forest, Timberline Trail
+    url: https://www.fs.usda.gov/r06/mthood/recreation/trails/timberline-trail-600
+    checked: '2026-11-10'
+  - label: USDA Forest Service, Willamette National Forest, Central Cascades Wilderness Permits
+    url: https://www.fs.usda.gov/r06/willamette/permits/central-cascades-wilderness-permits
+    checked: '2026-11-10'
+  - label: Deschutes and Willamette National Forests, Central Cascades Wilderness Permit PCT FAQ 2026
+    url: https://www.fs.usda.gov/sites/nfs/files/publication/CCWP%20PCT%20FAQ_2026_final_0.pdf
+    checked: '2026-11-10'
+  - label: National Park Service, Crater Lake, Pacific Crest Trail
+    url: https://www.nps.gov/crla/planyourvisit/pacific-crest-trail.htm
+    checked: '2026-11-10'
+  - label: 'USDA Forest Service, Gifford Pinchot National Forest, Trail #2000: Pacific Crest Trail, Goat Rocks'
+    url: https://www.fs.usda.gov/r06/giffordpinchot/recreation/trails/trail-2000-pacific-crest-trail-goat-rocks
+    checked: '2026-11-10'
+  - label: USDA Forest Service, Mt. Baker-Snoqualmie National Forest, Alpine Lakes Wilderness
+    url: https://www.fs.usda.gov/r06/mbs/recreation/alpine-lakes-wilderness-mt-baker-snoqualmie
+    checked: '2026-11-10'
+  - label: Canada Border Services Agency, The CBSA is discontinuing the issuance of Pacific Crest Trail permits
+    url: https://www.canada.ca/en/border-services-agency/news/2025/01/the-cbsa-is-discontinuing-the-issuance-of-pacific-crest-trail-permits.html
+    checked: '2026-11-10'
   kit:
   - name: Water filter bottle
     why: for refilling from streams on long routes; check what it filters before you trust it
@@ -9381,6 +9945,11 @@
   - name: Small camping stove
     why: for hot food and drinks; check what fuel it takes and where you may use it
     url: https://www.amazon.co.uk/s?k=camping+stove+lightweight
+  related:
+  - hike-mount-whitney
+  - walk-the-timberline-trail-around-mount-hood
+  - appalachian-trail-section
+  - hike-half-dome
 - id: ride-a-rail-trail
   title: Walk or ride a rail trail
   category: travel
@@ -11473,20 +12042,203 @@
   regions:
   - uk
   - us
-  why: Blood cannot be manufactured, so every unit a hospital uses began with someone sitting in a donor chair. The blood service decides who can donate, using published eligibility rules and a health and lifestyle check carried out at each appointment.
+  why: Every unit of blood a hospital uses began with someone sitting in a donor chair. The blood service decides who can donate, using published eligibility rules and a health and lifestyle check carried
+    out at each appointment.
   start:
   - Read the eligibility page from NHS Blood and Transplant or the American Red Cross to see the published rules.
   - Sign up online and book an appointment at a donor centre or blood drive near you.
   - Answer the health and lifestyle check honestly on the day and accept the service's decision.
   links:
   - label: NHS Blood and Transplant "Who can give blood" page
-    url: https://www.blood.co.uk/who-can-give-blood/
+    url: https://www.blood.co.uk/who-can-give-blood
     region: uk
-    checked: '2026-10-08'
+    checked: '2026-11-10'
   - label: American Red Cross blood donation eligibility requirements
     url: https://www.redcrossblood.org/donate-blood/how-to-donate/eligibility-requirements.html
     region: us
     checked: '2026-10-08'
+  - label: 'Scottish National Blood Transfusion Service: age and weight'
+    url: https://scotblood.co.uk/giving-blood/can-i-give-blood/age-and-weight/
+    region: uk
+    checked: '2026-11-10'
+  - label: 'American Red Cross: types of donation compared'
+    url: https://www.redcrossblood.org/donate-blood/how-to-donate/types-of-blood-donations.html
+    region: us
+    checked: '2026-11-10'
+  safety: If you feel unwell after donating, stay seated and tell a member of staff; NHS Blood and Transplant also asks you not to carry anything heavy with the donation arm or take a hot bath that day.
+  seo_title: Who can give blood? Rules, first donation and how often
+  description: 'Who can give blood in the UK and US: ages, weight limits, how often you can donate, what happens on the day, and plasma and platelets.'
+  detail:
+  - h: Who can give blood, side by side
+    p:
+    - Each of the four UK blood services and the American Red Cross publishes its own rules, and they differ more than you might expect. The biggest gaps are the upper age for a first donation and how long
+      you must wait between donations. This is what each service's own pages said when we checked.
+    table:
+      head:
+      - Service
+      - Minimum age
+      - Upper age to start
+      - Weight
+      - Gap between whole-blood donations
+      - Time
+      rows:
+      - - NHS Blood and Transplant (England)
+        - '17'
+        - 17 to 65 for a first donation; up to 72 if you have donated before, or older if you donate regularly
+        - 50 kg (7 st 12 lb, 110 lb) to 158 kg (25 st, 348 lb)
+        - Men every 12 weeks, women every 16 weeks
+        - 5 to 10 minutes in the chair; about an hour in all
+      - - Scottish National Blood Transfusion Service
+        - 17th birthday
+        - New donors can start up to their 66th birthday; returning donors can give up to their 72nd birthday, and past 72 if they have made a full donation in the last two years
+        - Over 50 kg (7 st 12 lb)
+        - Not stated on the page we checked
+        - Not stated on the page we checked
+      - - Welsh Blood Service
+        - 17th birthday
+        - Up to and including the 66th birthday; up to the 72nd if you have given a full donation before; past 72 if in good health and you have donated within the last two years
+        - Over 50 kg (7 st 12 lb); the maximum depends on the chairs, from 146 kg (23 st) at headquarters to 225 kg (35 st) at mobile clinics
+        - Not stated on the pages we checked
+        - Not stated on the pages we checked
+      - - Northern Ireland Blood Transfusion Service
+        - 17th birthday
+        - Up to the 66th birthday; regular donors can carry on beyond 70 if fit and well
+        - At least 50 kg (7 st 12 lb); no upper limit, though beds take donors up to 158 kg (25 st)
+        - Men every 12 weeks, women every 16 weeks
+        - Not stated on the page we checked
+      - - American Red Cross (US)
+        - 16 or 17, depending on the state (Red Cross pages differ on which is usual)
+        - No upper age limit for whole blood; Power Red has its own limits (women 19 to 74)
+        - At least 110 lb (50 kg)
+        - Every 56 days, up to 6 times a year
+        - 8 to 10 minutes for the donation; about an hour in all
+    after: In England and Wales, women under 20 who are under 168 cm (5 ft 6 in) or under 65 kg (10 st 3 lb) have their height and weight checked against a chart before they can give; in Scotland, only
+      those under both. NHS Blood and Transplant also checks on the day that your veins are suitable.
+  - h: What happens at an appointment
+    p:
+    - In England you register online, answer basic eligibility questions and then book a time and venue. On the day you complete a health check questionnaire and drink 500 ml of water. A donor carer asks
+      confidential questions, and a finger-prick drop of blood checks your haemoglobin level; if the result suggests it may be too low, a small sample from your arm is taken for a more accurate reading.
+      In the chair, a cuff goes on your arm, a sterile needle goes in, and 470 ml is taken, usually in 5 to 10 minutes. The machine stops by itself when it is done. Afterwards you rest at the refreshment
+      table for at least 15 minutes and have at least two drinks.
+    - At the American Red Cross you sign in, show ID and read some required information, then answer health history questions online or in a private interview and have a mini-physical. The donation itself
+      takes 8 to 10 minutes, followed by 10 to 15 minutes with a snack and a drink. RapidPass lets you start the questions online on the day of your donation to save time. The Red Cross suggests drinking
+      an extra 16 oz (about 470 ml) of water beforehand and bringing a donor card, driving licence or two other forms of ID.
+  - h: Whole blood, plasma and platelets
+    p:
+    - Once you are a donor, you may be asked to give just part of your blood. A machine separates out what is needed and returns the rest to you. These take longer but can be given more often.
+    table:
+      head:
+      - Type
+      - England (NHS Blood and Transplant)
+      - US (American Red Cross)
+      rows:
+      - - Whole blood
+        - 470 ml in 5 to 10 minutes; men every 12 weeks, women every 16 weeks
+        - About an hour; every 56 days, up to 6 times a year; all blood types
+      - - Plasma
+        - Donation takes about 35 to 45 minutes; first visit up to 90 minutes, then around an hour; as often as every 2 weeks; only at Birmingham, Reading and Twickenham
+        - AB Elite plasma, for AB positive and AB negative donors; about 1 hour 15 minutes; every 28 days, up to 13 times a year
+      - - Platelets
+        - Up to 90 minutes per bag, about 2 hours in all; as often as every two weeks, though many give every 4 to 8 weeks; you must have given blood or platelets before
+        - About 2.5 to 3 hours; every 7 days, up to 24 times a year
+      - - Power Red (two units of red cells)
+        - Not listed on the pages we checked
+        - About 1.5 hours; every 112 days, up to 3 times a year; for type O, A negative and B negative donors, with extra height and weight rules
+    after: NHS Blood and Transplant says plasma can be used to treat more than 50 diseases, and that platelets help to stop bleeding and can be a lifeline for people with cancer. To start giving plasma
+      in England you must be 17 to 65, unless you have given blood or platelets before. Platelet donors there must be 17 to 65, or up to 70 if they have donated in the last two years.
+  - h: The honest hard parts
+    list:
+    - First appointments can be scarce. NHS Blood and Transplant says there are very few immediate appointments for new donors, and suggests searching several months ahead.
+    - Booking is not a guarantee of donating. Every appointment includes a health and lifestyle check and a finger-prick haemoglobin test, and in England staff check on the day that your veins are suitable.
+    - Plasma and platelets mean travel. In England plasma is collected at only three centres, and platelet donors need to reach one of 25 donor centres and be able to spare up to 2 hours regularly.
+    - Women who want to give platelets in England need a short second appointment to check for antibodies before they are confirmed as donors.
+  faq:
+  - q: Who can give blood in the UK?
+    a: In England you need to be generally fit and well, weigh 50 kg to 158 kg (7 st 12 lb to 25 st), and be 17 to 65 for a first donation, or up to 72 if you have given before. Scotland, Wales and Northern
+      Ireland let new donors start up to their 66th birthday.
+  - q: How often can you give blood?
+    a: In England and Northern Ireland, men can give every 12 weeks and women every 16 weeks. The American Red Cross allows whole blood every 56 days, up to six times a year.
+  - q: Is there an upper age limit for giving blood?
+    a: In the UK there is an upper age for starting, 65 in England and the 66th birthday in Scotland, Wales and Northern Ireland, but returning and regular donors can carry on past it. The American Red
+      Cross says there is no upper age limit for giving whole blood, though its Power Red donations have their own age range.
+  - q: Can I give blood if I take medication?
+    a: It depends, so check before you book. NHS Blood and Transplant points you to its health and eligibility pages or its helpline on 0300 123 23 23, the Northern Ireland service says it usually depends
+      on the condition being treated rather than the medication, and the Red Cross says medications may affect eligibility.
+  - q: How long does it take to give blood?
+    a: The donation itself takes 5 to 10 minutes with NHS Blood and Transplant and 8 to 10 minutes with the American Red Cross. Both say to allow about an hour for the whole visit.
+  - q: What is the weight limit for giving blood?
+    a: The UK services set a minimum of 50 kg (7 st 12 lb); England's upper limit is 158 kg (25 st), while Wales's depends on the venue's chairs. The American Red Cross asks for at least 110 lb (50 kg).
+  inspire:
+  - kind: read
+    person: Robert Boocock, from York
+    line: Reached his 100th blood donation in 2025, having started in his early 20s after his uncle gave 73 donations, and his B negative, CMV-negative blood is suitable for newborn babies.
+    title: Yorkshireman with vital rare blood type reaches 100th donation
+    outlet: NHS Blood and Transplant
+    url: https://www.blood.co.uk/news-and-campaigns/news-and-statements/yorkshireman-with-vital-rare-blood-type-reaches-100th-donation/
+    checked: '2026-11-10'
+  sources:
+  - label: NHS Blood and Transplant, Who can give blood
+    url: https://www.blood.co.uk/who-can-give-blood
+    checked: '2026-11-10'
+  - label: NHS Blood and Transplant, What happens on the day
+    url: https://www.blood.co.uk/the-donation-process/what-happens-on-the-day/
+    checked: '2026-11-10'
+  - label: NHS Blood and Transplant, Giving blood for the first time
+    url: https://www.blood.co.uk/the-donation-process/giving-blood-for-the-first-time/
+    checked: '2026-11-10'
+  - label: NHS Blood and Transplant, Plasma
+    url: https://www.blood.co.uk/plasma/
+    checked: '2026-11-10'
+  - label: NHS Blood and Transplant, Who can donate plasma
+    url: https://www.blood.co.uk/plasma/who-can-donate-plasma/
+    checked: '2026-11-10'
+  - label: NHS Blood and Transplant, How to donate plasma
+    url: https://www.blood.co.uk/plasma/how-to-donate-plasma/
+    checked: '2026-11-10'
+  - label: NHS Blood and Transplant, Give platelets
+    url: https://platelets.blood.co.uk/
+    checked: '2026-11-10'
+  - label: NHS Blood and Transplant, Who can donate platelets
+    url: https://platelets.blood.co.uk/who-can-donate-platelets/
+    checked: '2026-11-10'
+  - label: NHS Blood and Transplant, Donating platelets
+    url: https://platelets.blood.co.uk/donating-platelets/
+    checked: '2026-11-10'
+  - label: Scottish National Blood Transfusion Service, Age and weight
+    url: https://scotblood.co.uk/giving-blood/can-i-give-blood/age-and-weight/
+    checked: '2026-11-10'
+  - label: Welsh Blood Service, Age
+    url: https://www.welsh-blood.org.uk/can-i-give-blood/age/
+    checked: '2026-11-10'
+  - label: Welsh Blood Service, Weight
+    url: https://www.welsh-blood.org.uk/can-i-give-blood/weight-3/
+    checked: '2026-11-10'
+  - label: Northern Ireland Blood Transfusion Service, Can I donate?
+    url: https://nibts.hscni.net/donating-blood/can-i-donate/
+    checked: '2026-11-10'
+  - label: American Red Cross, Whole blood donation explained
+    url: https://www.redcrossblood.org/donate-blood/how-to-donate/types-of-blood-donations/whole-blood-donation.html
+    checked: '2026-11-10'
+  - label: American Red Cross, First time blood donors guide
+    url: https://www.redcrossblood.org/donate-blood/how-to-donate/common-concerns/first-time-donors.html
+    checked: '2026-11-10'
+  - label: American Red Cross, Donate blood, plasma or platelets
+    url: https://www.redcrossblood.org/donate-blood/how-to-donate/types-of-blood-donations.html
+    checked: '2026-11-10'
+  - label: American Red Cross, Power Red donation
+    url: https://www.redcrossblood.org/donate-blood/how-to-donate/types-of-blood-donations/power-red-donation.html
+    checked: '2026-11-10'
+  - label: American Red Cross, Irvin and Will Nichols have made donating blood a lifelong habit
+    url: https://www.redcross.org/local/michigan/about-us/news-and-events/news/irvin-and-will-nichols-have-made-donating-blood-a-lifelong-habit.html
+    checked: '2026-11-10'
+  - label: NHS Blood and Transplant, Yorkshireman with vital rare blood type reaches 100th donation
+    url: https://www.blood.co.uk/news-and-campaigns/news-and-statements/yorkshireman-with-vital-rare-blood-type-reaches-100th-donation/
+    checked: '2026-11-10'
+  related:
+  - learn-first-aid
+  - volunteer-in-the-nhs
+  - volunteer-at-a-food-bank
+  - volunteer-as-a-befriender
 - id: volunteer-with-citizens-advice
   title: Volunteer with Citizens Advice
   category: connect
@@ -25593,3 +26345,1669 @@
   - walking-netball
   - play-walking-rugby
   - lawn-bowls
+- id: take-a-photography-course
+  title: Take a photography course
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A beginners' course takes your camera off automatic and shows you what shutter speed, aperture and light actually do to a picture. City Lit's version mixes talks and demonstrations with practical
+    exercises indoors and out, and even lends you a camera during class if you do not have one.
+  start:
+  - Pick a course that matches your time, from a one-day camera workshop to a weekly class over eight or so weeks.
+  - Check what camera it asks for; City Lit and the School of the Art Institute of Chicago both want one with manual settings, and SAIC rules out point-and-shoot cameras.
+  - Practise between sessions, as City Lit recommends, and bring the pictures back to class.
+  links:
+  - label: 'City Lit, London: Photography for beginners'
+    url: https://www.citylit.ac.uk/courses/photography-for-beginners
+    region: uk
+    checked: '2026-11-10'
+  - label: 'RHS Garden Hyde Hall, Essex: Learn to Control Your Camera'
+    url: https://www.rhs.org.uk/shows-events/viewevent?efid=3643
+    region: uk
+    checked: '2026-11-10'
+  - label: 'School of the Art Institute of Chicago, Continuing Studies: Introduction to Digital Photography'
+    url: https://continuingstudies.saic.edu/product/3716
+    region: us
+    checked: '2026-11-10'
+  - label: 'Community College of Philadelphia: Digital Photography (online, noncredit)'
+    url: https://www.ccp.edu/academic-offerings/professional-development/non-credit-courses/digital-photography
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Photography course for beginners: UK and US options'
+  description: What a beginners' photography course covers, which camera you need, and what classes in the UK and US cost as last listed, from day workshops to online.
+  detail:
+  - h: What a beginners' course covers
+    p:
+    - City Lit's Photography for beginners needs no previous knowledge, though it asks you to be comfortable with numbers and simple measurements. It covers choosing a camera, exposure and light readings,
+      shutter speed, aperture and depth of field, lenses, composition and light, with the aim that you can use your camera's manual functions. You can bring a digital or film camera with manual aperture
+      and shutter speed settings; if you have none, the college supplies a digital SLR or mirrorless camera during taught hours, plus tripods and lenses.
+    - Longer courses go further. SAIC's Introduction to Digital Photography in Chicago adds black-and-white and colour capture and printing, digital photo editing, the history of photography and group critiques.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - RHS Garden Hyde Hall, Essex
+        - 'Learn to Control Your Camera: one day, 10am to 4pm; classroom in the morning, practice in the gardens in the afternoon; any camera, compact to DSLR'
+        - £80
+      - - City Lit, London
+        - 'Photography for beginners: in person, 4 to 8 sessions, daytime, evening or Sunday'
+        - £409 full fee; £327 senior fee; £266 concession
+      - - School of the Art Institute of Chicago
+        - 'Introduction to Digital Photography: Monday and Wednesday evenings; bring a digital SLR or mirrorless camera with manual functions'
+        - $675
+      - - Community College of Philadelphia
+        - 'Digital Photography: online, 12 lessons, 24 course hours, new class starts monthly; covers DSLRs to smartphone cameras'
+        - $115
+  faq:
+  - q: Do I need my own camera for a photography course?
+    a: It depends on the course. City Lit lends a digital SLR or mirrorless camera during taught hours if you do not have one, while SAIC asks you to bring a digital SLR or mirrorless camera with manual
+      functions.
+  - q: Can I learn photography on a smartphone?
+    a: Some courses include it. Community College of Philadelphia's online Digital Photography course covers everything from DSLRs to smartphone cameras.
+  - q: How much does a beginners photography course cost?
+    a: As last listed, from £80 for a one-day camera workshop at RHS Hyde Hall to £409 full fee for City Lit's beginners' course, and from $115 online to $675 in person at SAIC in Chicago.
+  - q: Can I use a film camera on a beginners course?
+    a: City Lit accepts a film camera with manual aperture and shutter speed settings, but you pay for up to seven rolls of film plus processing and printing yourself.
+  sources:
+  - label: City Lit, Photography for beginners
+    url: https://www.citylit.ac.uk/courses/photography-for-beginners
+    checked: '2026-11-10'
+  - label: Royal Horticultural Society, Learn to Control Your Camera
+    url: https://www.rhs.org.uk/shows-events/viewevent?efid=3643
+    checked: '2026-11-10'
+  - label: School of the Art Institute of Chicago Continuing Studies, Introduction to Digital Photography
+    url: https://continuingstudies.saic.edu/product/3716
+    checked: '2026-11-10'
+  - label: Community College of Philadelphia, Digital Photography
+    url: https://www.ccp.edu/academic-offerings/professional-development/non-credit-courses/digital-photography
+    checked: '2026-11-10'
+  kit:
+  - name: Camera memory card
+    why: for storing your pictures between sessions; check which card type and size your camera takes
+    url: https://www.amazon.co.uk/s?k=camera+sd+memory+card
+  - name: Spare camera battery
+    why: the RHS workshop suggests bringing spares; check it is made for your camera model
+    url: https://www.amazon.co.uk/s?k=spare+camera+battery
+  - name: Camera bag
+    why: for carrying the camera and spares to class and on location; check your camera and any extra lens fit inside
+    url: https://www.amazon.co.uk/s?k=camera+bag
+  related:
+  - join-a-camera-club
+  - back-up-your-photos
+  - learn-to-draw
+  - paint-in-watercolour
+  inspire:
+  - kind: read
+    person: Nick Hodgson
+    line: Left a 33-year career in financial services marketing to study Falmouth University's online MA in Photography, and went on to earn a Royal Photographic Society Fellowship for a project on Forest
+      of Dean coal freemining.
+    title: Award-winning online Photography alumnus on switching careers in his 50s and gaining Royal Photographic Society recognition
+    outlet: Falmouth University
+    url: https://www.falmouth.ac.uk/news/award-winning-online-photography-alumnus-switching-careers-his-50s-and-gaining-royal
+    checked: '2026-11-10'
+- id: try-letterpress-printing
+  title: Try letterpress printing
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Letterpress means picking out individual pieces of type, setting them by hand into words, locking them up, inking them and pulling prints on a press. In a one-day workshop you choose the words and
+    print several copies of your own poster or name.
+  start:
+  - Book a one-day introduction at a print workshop or book-arts centre, such as St Bride Foundation in London or the Center for Book Arts in New York.
+  - Choose your words before you go; St Bride suggests about 12 words or fewer for a wood-type poster.
+  - If you are hooked, look for the follow-on classes that lead to studio access, or a longer course on a range of presses.
+  links:
+  - label: 'St Bride Foundation, London: letterpress workshops'
+    url: https://sbf.org.uk/whats-on/workshops/
+    region: uk
+    checked: '2026-11-10'
+  - label: 'West Dean College, West Sussex: Introduction to letterpress'
+    url: https://www.westdean.ac.uk/short-courses/swe40028-introduction-to-letterpress
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Center for Book Arts, New York: Hands-On Introduction to Letterpress'
+    url: https://shop.centerforbookarts.org/products/26flp004i
+    region: us
+    checked: '2026-11-10'
+  - label: 'Minnesota Center for Book Arts, Minneapolis: Letterpress 1, Printing Basics'
+    url: https://mnbookarts.org/events/letterpress-1-printing-basics-may-2026
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Letterpress printing workshops: UK and US, with costs'
+  description: What happens on a beginners' letterpress workshop, from hand-setting type to pulling prints, and what classes in the UK and US cost as last listed.
+  detail:
+  - h: What you do on the day
+    p:
+    - On St Bride Foundation's Letterpress Poster Printing Workshop, tutors take you through hand-setting wood type, spacing and locking up the words, inking the press and pulling prints. The prints need
+      time to dry, so you collect them later or pay £10 to have them posted. Its One Day Adana/Letterpress Workshop teaches hand typesetting and printing on the small Adana tabletop press, plus what to
+      think about when buying equipment.
+    - In New York, the Center for Book Arts' introduction has you set your own name in type by hand and print several copies. At the Minnesota Center for Book Arts, Letterpress 1 teaches wood type and a
+      Vandercook press, but does not give studio access on its own; you need Letterpress 2 and 3 as well before you can print independently in its Letterpress Labs.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - St Bride Foundation, London
+        - One-day Adana/letterpress or poster-printing workshop, 10:30am to 4pm
+        - £165; £150 concession (students, over 65s, Friends)
+      - - West Dean College, West Sussex
+        - 'Introduction to letterpress: arrival evening then full teaching days, residential option; posters, a print edition and a hand-bound notebook'
+        - £480 plus accommodation if residential
+      - - Center for Book Arts, New York
+        - Hands-On Introduction to Letterpress; one four-hour session, up to 10 people, all levels
+        - $140 plus $25 materials fee
+      - - Minnesota Center for Book Arts, Minneapolis
+        - 'Letterpress 1: Printing Basics; one day, 10am to 4pm; first step towards studio access'
+        - $147 plus $15 materials fee ($74 scholarship rate)
+  faq:
+  - q: What is letterpress printing?
+    a: Printing from raised metal or wood type that is set by hand, locked up, inked and pressed onto paper. St Bride Foundation's and the Center for Book Arts' one-day workshops take you through each step.
+  - q: Do I need any experience for a letterpress workshop?
+    a: No. St Bride Foundation calls its Adana workshop an ideal introduction for people new to letterpress, and the Center for Book Arts' introduction is designed for all levels.
+  - q: How much does a letterpress workshop cost?
+    a: As last listed, £165 for a day at St Bride Foundation in London, and $140 plus a $25 materials fee for a four-hour introduction at the Center for Book Arts in New York.
+  - q: Can I take my prints home on the day?
+    a: Not always. St Bride Foundation says poster prints need time to dry, so you collect them later or have them posted for £10.
+  sources:
+  - label: St Bride Foundation, Workshops
+    url: https://sbf.org.uk/whats-on/workshops/
+    checked: '2026-11-10'
+  - label: St Bride Foundation, One Day Adana/Letterpress Workshop
+    url: https://sbf.org.uk/whats-on/workshops/adana-workshop-january-27
+    checked: '2026-11-10'
+  - label: St Bride Foundation, Letterpress Poster Printing Workshop
+    url: https://sbf.org.uk/whats-on/workshops/letterpress-poster-printing-workshop-january-27
+    checked: '2026-11-10'
+  - label: West Dean College, Introduction to letterpress with Tom Boulton
+    url: https://www.westdean.ac.uk/short-courses/swe40028-introduction-to-letterpress
+    checked: '2026-11-10'
+  - label: Center for Book Arts, Hands-On Introduction to Letterpress
+    url: https://shop.centerforbookarts.org/products/26flp004i
+    checked: '2026-11-10'
+  - label: Minnesota Center for Book Arts, Letterpress 1, Printing Basics
+    url: https://mnbookarts.org/events/letterpress-1-printing-basics-may-2026
+    checked: '2026-11-10'
+  kit:
+  - name: Apron
+    why: to keep printing ink off your clothes; check it has a neck strap and covers you to the knee
+    url: https://www.amazon.co.uk/s?k=craft+apron
+  - name: Cotton printmaking paper
+    why: for printing your own work after a course; check the weight suits letterpress
+    url: https://www.amazon.co.uk/s?k=cotton+letterpress+paper
+  related:
+  - make-a-linocut-print
+  - learn-bookbinding
+  - learn-calligraphy
+  - try-screen-printing
+  inspire:
+  - kind: read
+    person: Justin Knopp, from Coggeshall
+    line: Pursued letterpress as a hobby alongside his work as a graphic designer, befriending veterans of Coggeshall's old Anchor Press, who passed on type and presses, and later built his own print shop
+      in a shed in Coggeshall, Essex.
+    title: Justin Knopp, Typoretum
+    outlet: Spitalfields Life
+    url: https://spitalfieldslife.com/2011/12/13/justin-knopp-typoretum/
+    checked: '2026-11-10'
+- id: learn-glass-fusing
+  title: Learn glass fusing
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Glass fusing means cutting sheet glass, arranging the pieces and melting them together in a kiln, then slumping the result over a mould to make a bowl or dish. You can add frit, powders, stringers
+    and even copper or wire between the layers to see what the heat does.
+  start:
+  - Book a one-day fused glass workshop, or a weekly beginners' kilnforming class at a glass centre.
+  - 'Wear closed-toe shoes and bring an apron: West Dean College asks for both, and Abingdon & Witney College recommends closed shoes.'
+  - Expect to wait for your pieces, because they go into the kiln after the class and are collected later.
+  links:
+  - label: 'Abingdon & Witney College, Oxfordshire: Fused Glass Garden Lanterns workshop'
+    url: https://abingdon-witney.ac.uk/courses/glass-fusion-fused-glass-garden-lanterns-workshop-2173656
+    region: uk
+    checked: '2026-11-10'
+  - label: 'West Dean College, West Sussex: Glass fusing and slumping'
+    url: https://www.westdean.ac.uk/short-courses/slw41172-glass-fusing-and-slumping
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Pittsburgh Glass Center: kilnforming classes'
+    url: https://pittsburghglasscenter.coursestorm.com/category/kilnforming1
+    region: us
+    checked: '2026-11-10'
+  - label: 'Bullseye Glass Resource Centers: Open Studio'
+    url: https://www.bullseyeglass.com/bullseye-resource-centers/open-studio/
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Glass fusing classes for beginners: UK and US costs'
+  description: What glass fusing and slumping involve, where beginners can learn in the UK and US, and what workshops, weekly classes and open studios cost as listed.
+  detail:
+  - h: Fusing and slumping explained
+    p:
+    - West Dean College calls fusing and slumping warm glass techniques. In fusing, sheet glass is cut, assembled and joined by melting in a kiln; in slumping, the fused piece is laid over a mould and softened
+      until it takes its shape. Its course covers cutting float and Bullseye glass, decorating with frits, powders, stringers and metal inclusions, and kiln firing programmes, compatibility and annealing,
+      and you make two bowls, a panel, coasters and cabochons.
+    - Work is fired after the class, so you come back for it; West Dean has it ready from the day after. Bullseye's Open Studio, for practising on your own, is only for people who have already taken a Bullseye
+      class, and it does not teach techniques.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Abingdon & Witney College, Oxfordshire
+        - One-day workshop, 10am to 4pm; kiln carving and metal inclusions; tools, materials and firing included; beginners welcome
+        - £105.88 co-funded fee; £75.94 reduced fee
+      - - West Dean College, West Sussex
+        - Glass fusing and slumping, short course with residential option; glass included
+        - Not shown on the course page
+      - - Pittsburgh Glass Center
+        - 'Kiln 1: Fusing and Casting; 8 weeks; no experience necessary'
+        - $540
+      - - Bullseye Glass Resource Centers (Bay Area, Los Angeles, New York, Portland, Santa Fe)
+        - Open Studio for self-directed kilnforming after a Bullseye class; book 24 hours ahead
+        - In each centre's Open Studio Guide
+  safety:
+  - West Dean College says enclosed-toe footwear is essential in the glass studio, and Activate Learning's fusing course asks students to bring safety goggles and a dust mask.
+  faq:
+  - q: What is the difference between fused glass and stained glass?
+    a: Fused glass is cut sheet glass melted together in a kiln, as West Dean College describes it. WM College in London groups leading and copper foiling as cold glass techniques, and fusing and slumping
+      as kiln-formed ones.
+  - q: Can a complete beginner do glass fusing?
+    a: Yes. Abingdon & Witney College's one-day workshop is designed for a range of abilities including beginners, and Pittsburgh Glass Center's Kiln 1 class needs no experience.
+  - q: Can I take my fused glass home on the day?
+    a: Usually not, because it has to be fired. West Dean has work ready from the following day and keeps it for six months, and will post it if you pay postage.
+  - q: How much does a glass fusing class cost?
+    a: As last listed, £105.88 for a one-day workshop at Abingdon & Witney College including materials and firing, and $540 for Pittsburgh Glass Center's eight-week Kiln 1 class.
+  sources:
+  - label: West Dean College, Glass fusing and slumping with Katrina Beattie
+    url: https://www.westdean.ac.uk/short-courses/slw41172-glass-fusing-and-slumping
+    checked: '2026-11-10'
+  - label: West Dean College, Make a fused glass panel with Martin Cheek
+    url: https://www.westdean.ac.uk/short-courses/s1d37976-make-a-fused-glass-panel
+    checked: '2026-11-10'
+  - label: Abingdon & Witney College, Glass Fusion - Fused Glass Garden Lanterns - Workshop
+    url: https://abingdon-witney.ac.uk/courses/glass-fusion-fused-glass-garden-lanterns-workshop-2173656
+    checked: '2026-11-10'
+  - label: Activate Learning, Glass Fusing, Slumping and Kiln Formed Work
+    url: https://adult.activatelearning.ac.uk/find-a-course/detail/glass-fusing-slumping-and-kiln-formed-work/
+    checked: '2026-11-10'
+  - label: Pittsburgh Glass Center, Kilnforming classes
+    url: https://pittsburghglasscenter.coursestorm.com/category/kilnforming1
+    checked: '2026-11-10'
+  - label: Bullseye Glass, Open Studio
+    url: https://www.bullseyeglass.com/bullseye-resource-centers/open-studio/
+    checked: '2026-11-10'
+  - label: WM College, Glass Art, Stained and Fused Glass Techniques and Projects
+    url: https://www.wmcollege.ac.uk/course-detail/glass-art-stained-and-fused-glass-techniques-and-projects-mixed-level/18220/
+    checked: '2026-11-10'
+  kit:
+  - name: Safety glasses
+    why: Activate Learning asks fusing students for safety goggles; check they wrap round at the sides
+    url: https://www.amazon.co.uk/s?k=safety+glasses+clear
+  - name: Apron
+    why: both West Dean and Activate Learning ask for one; check it covers your front to the knee
+    url: https://www.amazon.co.uk/s?k=craft+apron
+  - name: Craft tweezers
+    why: on West Dean's kit list, for placing small pieces of glass; check they have fine tips
+    url: https://www.amazon.co.uk/s?k=craft+tweezers+fine+tip
+  related:
+  - make-a-stained-glass-panel
+  - try-glassblowing
+  - make-a-mosaic
+  - try-pottery-on-the-wheel
+  inspire:
+  - kind: read
+    person: Ruth Ross Hansen
+    line: Took a fused-glass class at a local school, started her own glass and jewellery business, and now teaches introductory fused-glass classes in Minnesota.
+    title: Glassmaking Class Provides a Sparkling Experience
+    outlet: Next Avenue
+    url: https://www.nextavenue.org/fused-glass-class/
+    checked: '2026-11-10'
+- id: learn-enamelling
+  title: Learn enamelling
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Enamelling fuses powdered glass onto metal, usually copper to begin with, in a kiln or with a torch, so colour, pattern and texture become part of the piece. Beginners' classes start on copper test
+    pieces and work up to small silver or copper pieces.
+  start:
+  - Book a beginners' class that supplies the copper, enamels and kiln, at an adult-education college, a craft school or with a teacher from the Guild of Enamellers' list.
+  - Take a sketchbook and some colour or pattern ideas, and wear closed shoes and an apron.
+  - Learn the safe habits in the workshop from the start, such as keeping food and drink out of the room and a lid on the sifter.
+  links:
+  - label: 'City Lit, London: Heat, light and colour: introduction to enamelling'
+    url: https://www.citylit.ac.uk/courses/heat-light-and-colour-introduction-to-enamelling
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Guild of Enamellers: members who teach enamelling, by region'
+    url: https://guildofenamellers.org/learn/classes
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Metalwerx, Waltham, Massachusetts: Torch-Fired Enameling'
+    url: https://metalwerx.org/class-detail/vitreous-motion-torch-fired-enameling
+    region: us
+    checked: '2026-11-10'
+  - label: 'Arrowmont: Specimen: Smithing and Enamel on Natural Forms'
+    url: https://arrowmont.org/workshop/specimen-smithing-and-enamel-on-natural-forms
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Learn enamelling: beginners'' classes, kilns and costs'
+  description: What enamelling on copper and silver involves, where beginners can learn it in the UK and US, and what kiln and torch-fired classes cost as last listed.
+  detail:
+  - h: What you actually do
+    p:
+    - The Guild of Enamellers puts it simply, "Enamel powder is 'glass'". At City Lit, beginners apply opaque and transparent vitreous enamels to copper and fire them in a kiln, trying stencilling, sgraffito
+      (scratching through a layer), printing with enamel and basse-taille, where transparent enamel sits over textured metal; the page says many of the techniques can be adapted for silver. West Dean's
+      beginners' course starts with copper test pieces, moves on to small silver or copper items, and teaches washing and grinding enamels for wet packing.
+    - Torch-firing is the other route. Metalwerx in Massachusetts describes it as "one of the most direct, satisfying, and accessible ways to work with vitreous enamel", with students cutting and shaping
+      copper and firing the enamel with a torch.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Introduction to enamelling; kiln-fired, on copper; complete beginners welcome; 4 Tuesday evenings from June 2027; tools and copper provided
+        - £209 (£167 senior, £136 concession)
+      - - Guild of Enamellers (UK)
+        - Regional list of members who teach enamelling, from Scotland to South West England
+        - Set by each tutor
+      - - Metalwerx, Waltham, Massachusetts
+        - Torch-Fired Enameling; all levels; 2 days, 10am to 5pm (May 2026 run)
+        - $425 tuition plus $80 materials fee
+      - - Arrowmont (US)
+        - Smithing and Enamel on Natural Forms; one-week workshop, all skill levels (June 2026 run)
+        - $852 tuition plus $50 registration fee, before housing, meals and materials
+  faq:
+  - q: What is vitreous enamel?
+    a: It is powdered glass fused onto metal. City Lit's beginners' course fires opaque and transparent vitreous enamels onto copper in a kiln.
+  - q: Can you do enamelling with a torch instead of a kiln?
+    a: Yes. Metalwerx in Massachusetts runs a two-day torch-fired enamelling class on copper sheet and wire, open to all levels.
+  - q: Do I need jewellery experience to learn enamelling?
+    a: No. City Lit's introduction is for complete beginners and West Dean's course starts with basic test pieces, though Morley College says jewellery-making experience is helpful for its enamelling class.
+  - q: Is enamelling safe to do at home?
+    a: The Guild of Enamellers' health and safety guide covers dust, kilns and ventilation, and says never to have food or drink in the work area and never to leave a kiln with something in it.
+  safety: The Guild of Enamellers advises keeping a lid on the sifter, wearing a mask (FFP2, preferably FFP3) when sieving and the correct mask when polishing, and never leaving a kiln with work in it.
+  sources:
+  - label: 'City Lit, Heat, light and colour: introduction to enamelling'
+    url: https://www.citylit.ac.uk/courses/heat-light-and-colour-introduction-to-enamelling
+    checked: '2026-11-10'
+  - label: West Dean College, Enamelling for beginners with Sheila R McDonald
+    url: https://westdean.ac.uk/short-courses/swe32937-enamelling-for-beginners
+    checked: '2026-11-10'
+  - label: Morley College London, Jewellery (enamelling course)
+    url: https://morleycollege.ac.uk/courses/?p=88686
+    checked: '2026-11-10'
+  - label: Guild of Enamellers, Classes
+    url: https://guildofenamellers.org/learn/classes
+    checked: '2026-11-10'
+  - label: Guild of Enamellers, Guide to health and safety
+    url: https://guildofenamellers.org/operations/health-and-safety/guide-to-health-and-safety
+    checked: '2026-11-10'
+  - label: 'Metalwerx, Vitreous in Motion: Torch-Fired Enameling'
+    url: https://metalwerx.org/class-detail/vitreous-motion-torch-fired-enameling
+    checked: '2026-11-10'
+  - label: 'Arrowmont, Specimen: Smithing and Enamel on Natural Forms'
+    url: https://arrowmont.org/workshop/specimen-smithing-and-enamel-on-natural-forms
+    checked: '2026-11-10'
+  kit:
+  - name: FFP3 dust mask
+    why: for sieving and polishing, as the Guild of Enamellers advises; check the FFP rating on the pack
+    url: https://www.amazon.co.uk/s?k=ffp3+dust+mask
+  - name: Fine tweezers
+    why: on West Dean's list of things to bring for placing wire and small pieces; check the tips meet cleanly
+    url: https://www.amazon.co.uk/s?k=fine+tweezers+jewellery
+  - name: Workshop apron
+    why: City Lit, West Dean and Metalwerx all ask you to bring one; check it covers your lap when seated
+    url: https://www.amazon.co.uk/s?k=workshop+apron
+  related:
+  - make-silver-jewellery
+  - try-glassblowing
+  - try-pottery-on-the-wheel
+  inspire:
+  - kind: read
+    person: Joan Mac Karell, from Donegal
+    line: Moved from teaching art, and weaving at home, to enamel after a short course, retrained at Sir John Cass and went on to co-found the British Society of Enamellers.
+    title: Joan Mac Karell on her career as an Enameller
+    outlet: The Goldsmiths' Centre
+    url: https://goldsmiths-centre.org/news/joan-mac-karell-enamelling-interview
+    checked: '2026-11-10'
+- id: try-pyrography
+  title: Try pyrography
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Pyrography is drawing on wood with a hot pen, burning in lines and then building up shading by changing pressure and temperature. A one-day or evening class gives you the tool, the wood and a finished
+    piece to take home.
+  start:
+  - Book a beginners' class where the pyrography pens and wood are supplied, through a course finder such as Craft Courses in the UK or a community college in the US.
+  - Practise transferring a simple design onto the wood with tracing paper, then outline it before you try shading.
+  - Buy natural, untreated wood blanks for practice at home, not painted or stained wood or MDF.
+  links:
+  - label: 'Craft Courses: pyrography courses across the UK'
+    url: https://craftcourses.com/courses/pyrography
+    region: uk
+    checked: '2026-11-10'
+  - label: 'North Seattle College continuing education: Pyrography (Woodburning)'
+    url: https://conted.northseattle.edu/node/96876
+    region: us
+    checked: '2026-11-10'
+  - label: 'Rock Valley College community education: Woodburning'
+    url: https://cce.rockvalleycollege.edu/products/art-809-rv12-20271c-8e3b
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Try pyrography: wood burning classes for beginners'
+  description: What a beginners' pyrography class involves, where to find wood burning classes in the UK and US, what they cost as last listed, and which woods to use.
+  detail:
+  - h: What a first class covers
+    p:
+    - North Seattle College's class teaches using "heat-based woodburning tools to create clean lines", with pressure control, temperature adjustment, shading and layering, and you finish a project in class.
+      Solihull College's five-week evening course in the West Midlands works through sketching and transferring a design, outlining, filling in and finishing touches.
+    - For practice at home, Hobbycraft's beginner's guide says natural wood is the safest choice, and to avoid painted, stained or otherwise treated wood and MDF, whose glue can be harmful when inhaled.
+      Its basic tool set comes with five tips and a stand.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Craft Courses (UK course finder)
+        - One-day and half-day classes from Ashbourne to Guildford, Chester and Martock; some for absolute beginners
+        - £40 (2-hour social club) to £134.99 (7-hour beginners' day); £200 one-to-one
+      - - Solihull College, West Midlands
+        - Introduction to Woodburning (Pyrography) Art; weekly 2-hour evening sessions (2025 runs)
+        - £70 for 5 weeks; £75 plus £10 materials for 4 weeks
+      - - North Seattle College, Washington
+        - Pyrography; beginners and improvers; two 3-hour evenings (October 2026); tools and materials provided
+        - $175
+      - - Rock Valley College (US)
+        - Woodburning; one 3-hour beginners' evening (July 2026)
+        - $69
+  faq:
+  - q: What is pyrography?
+    a: It is decorating wood by burning designs into it with a heated tool. Rock Valley College's beginners' class covers techniques and safety and ends with a finished piece to take home.
+  - q: What wood is best for pyrography for beginners?
+    a: Hobbycraft's guide recommends natural wood, and says to avoid painted, stained or treated wood and MDF, whose glue can be harmful when inhaled.
+  - q: How hot does a pyrography pen get?
+    a: Hobbycraft says wood burning tool tips reach 250°C (482°F) and are a fire hazard, and to let the tool cool for two hours before touching or storing it.
+  - q: How much is a pyrography class?
+    a: UK classes listed on Craft Courses run from £40 for two hours to £134.99 for a seven-hour day, and North Seattle College lists $175 for two evenings.
+  safety: Hobbycraft says the tips reach 250°C (482°F), the tool should never be left unattended, and the workspace should be well ventilated because the smoke can irritate lungs and skin.
+  sources:
+  - label: Craft Courses, Pyrography in-person and online courses
+    url: https://craftcourses.com/courses/pyrography
+    checked: '2026-11-10'
+  - label: North Seattle College continuing education, Pyrography
+    url: https://conted.northseattle.edu/node/96876
+    checked: '2026-11-10'
+  - label: Rock Valley College community education, Woodburning
+    url: https://cce.rockvalleycollege.edu/products/art-809-rv12-20271c-8e3b
+    checked: '2026-11-10'
+  - label: Solihull College, Introduction to Woodburning (Pyrography) Art
+    url: https://www.solihull.ac.uk/course/introduction-to-woodburning-pyrography-art
+    checked: '2026-11-10'
+  - label: Hobbycraft, Pyrography beginner's guide
+    url: https://www.hobbycraft.co.uk/get-started/pyrography
+    checked: '2026-11-10'
+  kit:
+  - name: Pyrography pen set
+    why: for burning lines and shading; check it comes with several tips and a stand
+    url: https://www.amazon.co.uk/s?k=pyrography+pen+set
+  - name: Untreated wood blanks
+    why: practice pieces; check they are natural wood, not painted, stained or MDF
+    url: https://www.amazon.co.uk/s?k=untreated+wood+slices+pyrography
+  - name: Tracing paper
+    why: for transferring a design onto the wood before burning; check the sheet size suits your blanks
+    url: https://www.amazon.co.uk/s?k=tracing+paper+pad+a4
+  related:
+  - learn-woodcarving
+  - carve-a-wooden-spoon
+  - join-a-woodturning-club
+  inspire:
+  - kind: read
+    person: Ed Mosteig, from Sun City, Huntley
+    line: Took up wood burning some years after retiring, with no formal art training, and had 30 of his pieces put on show at Huntley Public Library.
+    title: Huntley Library features Sun City wood-burning artist
+    outlet: My Sun Day News
+    url: https://www.mysundaynews.com/2023/09/07/huntley-library-features-sun-city-wood-burning-artist/
+    checked: '2026-11-10'
+- id: learn-clay-sculpture
+  title: Learn clay sculpture
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Modelling a head or a figure in clay teaches you to see form in three dimensions, building out from an armature to the muscles and features of a real sitter. Many classes work from a live model and
+    fire the finished piece for you.
+  start:
+  - Try a short introduction or a one-day portrait-head workshop with clay, tools and a model supplied.
+  - If you like it, book a term-long portrait or figure class, where you work from one model over several weeks.
+  - Ask how and when fired work is collected, because it has to dry for weeks first and finished heads are heavy.
+  links:
+  - label: 'City Lit, London: Clay sculpture: portrait head'
+    url: https://www.citylit.ac.uk/courses/clay-sculpture-portrait-head
+    region: uk
+    checked: '2026-11-10'
+  - label: 'West Dean College: Introduction to portrait heads in terracotta'
+    url: https://westdean.ac.uk/short-courses/s1d35865-introduction-to-portrait-heads-in-terracotta
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Gage Academy of Art, Seattle: Portrait Sculpting'
+    url: https://gageacademy.org/class-details/portrait-sculpting-1783321207
+    region: us
+    checked: '2026-11-10'
+  - label: 'Art Students League of New York: sculpture classes'
+    url: https://www.artstudentsleague.org/medium/sculpture
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Learn clay sculpture: portrait head and figure classes'
+  description: How clay portrait and figure sculpture classes work, where to learn in the UK and US, and what courses at City Lit, West Dean and Gage cost as last listed.
+  detail:
+  - h: What you actually do
+    p:
+    - Unlike throwing pots, this is modelling. On City Lit's portrait head course you build an armature, learn some of the facial muscles and use clay to convey mood and character, working from one life
+      model across the term, then prepare the head for firing. Gage Academy's class in Seattle starts with measuring and head anatomy and works outward from the skull to the muscles, fat pads and features
+      of a life-size head.
+    - You do not need to draw first. West Dean says no prior drawing or sculpting skills are needed for its portrait heads day, and the Art Students League of New York says no previous art experience is
+      needed to begin its classes. City Lit's three-day introduction lets you make a small realistic or abstract sculpture, which is fired after the course.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Introduction to clay sculpture; beginners; 3 daytime sessions (June 2026 run)
+        - £249
+      - - West Dean College, West Sussex
+        - Introduction to portrait heads in terracotta; one day's timetable, 9.15am to 5pm, with a model, clay and tools supplied
+        - £183
+      - - City Lit, London
+        - 'Clay sculpture: portrait head; 12 Monday evenings from April 2027; one life model all term'
+        - £619 (£495 senior, £402 concession)
+      - - Gage Academy of Art, Seattle
+        - Portrait Sculpting; all levels; Thursday evenings, September to November; clay provided
+        - $730
+      - - Art Students League of New York
+        - Ongoing monthly classes, including Ceramics Sculpture (figurative work in terracotta); start any time
+        - $100 annual registration fee plus monthly tuition (see the League's catalogue)
+  faq:
+  - q: What is the difference between pottery and clay sculpture?
+    a: Pottery on the wheel makes vessels; clay sculpture models forms such as a head or figure, often over an armature. City Lit's portrait course has you build an armature and model a head from a life
+      model.
+  - q: Do I need to be able to draw to do sculpture?
+    a: No. West Dean says no prior drawing or sculpting skills are needed for its portrait heads day, and the Art Students League says no previous art experience is needed.
+  - q: Can you fire a clay sculpture head?
+    a: Yes. City Lit and West Dean fire finished work; City Lit says it must dry completely first, which can take several weeks.
+  safety: City Lit provides protective equipment and asks students to wear facemasks where materials release airborne particles.
+  sources:
+  - label: 'City Lit, Clay sculpture: portrait head'
+    url: https://www.citylit.ac.uk/courses/clay-sculpture-portrait-head
+    checked: '2026-11-10'
+  - label: City Lit, Introduction to clay sculpture
+    url: https://www.citylit.ac.uk/courses/introduction-to-clay-sculpture
+    checked: '2026-11-10'
+  - label: West Dean College, Introduction to portrait heads in terracotta with Jon Edgar
+    url: https://westdean.ac.uk/short-courses/s1d35865-introduction-to-portrait-heads-in-terracotta
+    checked: '2026-11-10'
+  - label: Gage Academy of Art, Portrait Sculpting
+    url: https://gageacademy.org/class-details/portrait-sculpting-1783321207
+    checked: '2026-11-10'
+  - label: Art Students League of New York, Sculpture
+    url: https://www.artstudentsleague.org/medium/sculpture
+    checked: '2026-11-10'
+  - label: Art Students League of New York, How to get started
+    url: https://www.artstudentsleague.org/resources/how-to-get-started
+    checked: '2026-11-10'
+  kit:
+  - name: Clay modelling tools
+    why: wooden modelling tools are listed as optional for Gage Academy's class; check the set includes loop tools for hollowing
+    url: https://www.amazon.co.uk/s?k=clay+sculpting+tools+set
+  - name: Sketchbook
+    why: City Lit asks you to bring one with pencils for sketching and notes; check it lies flat when open
+    url: https://www.amazon.co.uk/s?k=a4+sketchbook
+  related:
+  - try-pottery-on-the-wheel
+  - go-to-a-life-drawing-class
+  - try-stone-carving
+  - learn-portrait-painting
+  inspire:
+  - kind: read
+    person: Judeth Davis, from Granite Falls, Washington
+    line: Taught herself to sculpt from a block of clay bought at a hobby shop, starting with a portrait of her daughter, and within a year had opened her first studio in Morro Bay, California.
+    title: She does her sculpting from a studio in the Granite Falls outback
+    outlet: The Herald (HeraldNet)
+    url: https://www.heraldnet.com/life/she-does-her-sculpting-from-a-studio-in-the-granite-falls-outback
+    checked: '2026-11-10'
+- id: learn-irish-dancing
+  title: Learn Irish dancing
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Irish dancing comes in two quite different forms, the social céilí and set dances done in groups to live reels and jigs, and step dancing, the footwork form danced in soft or hard shoes. Adult classes
+    in both start from nothing, and a céilí needs no partner.
+  start:
+  - Decide whether you want the social side (céilí and set dancing) or the footwork (step dancing), because classes are usually one or the other.
+  - Ask your local Comhaltas branch or Irish cultural centre about adult classes and céilís near you.
+  - Start in trainers, ballet shoes or ghillies, which the Irish Arts Center in New York suggests for its beginners' step class.
+  links:
+  - label: 'Comhaltas in Britain: Irish dancing and local branches'
+    url: https://www.comhaltas.co.uk/irish-dancing
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Jig and a Swig, London: adult Irish dance classes'
+    url: https://bookwhen.com/jigandaswig
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Irish Arts Center, New York: Step Dance I for beginners'
+    url: https://irishartscenter.org/event/step-dance-i-beginners-spring-2026-in-person
+    region: us
+    checked: '2026-11-10'
+  - label: 'Irish American Heritage Center, Chicago: Celtic social dance'
+    url: https://irish-american.org/celtic-social-dance
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Learn Irish dancing as an adult: classes and céilís'
+  description: The difference between céilí, set and step dancing, where adults can learn Irish dancing in the UK and US, and what classes and socials cost, as listed.
+  detail:
+  - h: Céilí, set or step
+    p:
+    - Comhaltas in Britain describes céilí dancing as the traditional social group dancing of Ireland, performed to live Irish music, mostly to reels and jigs. Set dancing is danced by sets of four couples
+      in a square, needs no prior experience and is open to dancers of all ages. Step dancing is the footwork form, danced solo or in groups, danced in soft shoes (ghillies) for flowing movement or metal-tipped
+      hard shoes for rhythm.
+    - Your local Comhaltas branch may be able to tell you about set dancing classes and events near you. In London, Jig and a Swig runs classes from Absolute Beginners upwards, in light shoe, heavy shoe
+      or both, and the Irish Cultural Centre in Hammersmith hosts an all-levels adult class on Monday evenings with a free first class.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Jig and a Swig, London
+        - Weekly classes and block courses from Absolute Beginners; 6-class pass valid for 180 days
+        - £75 for a 6-class pass (£12.50 a class), plus a £0.80 booking fee
+      - - Irish Cultural Centre, Hammersmith, London
+        - Irish Dancing for Adults (18+), all levels, Monday evenings, run with Scoil Rince Céim Óir
+        - First class free; fees from the school
+      - - Irish Arts Center, New York
+        - Step Dance I, eight weekly one-hour classes; no previous experience necessary
+        - $216 general, $174 members (spring 2026)
+      - - Irish American Heritage Center, Chicago
+        - Social dance with live music, including some céilí, first Saturday of the month; all levels, come alone or with a partner
+        - $15 at the door
+  faq:
+  - q: What is the difference between céilí and set dancing?
+    a: Comhaltas in Britain describes céilí as the traditional social group dancing of Ireland, mostly to reels and jigs, while set dancing is done in sets of four couples arranged in a square.
+  - q: What shoes do I need for adult Irish dance classes?
+    a: For its beginners' step class, the Irish Arts Center in New York says sneakers, ballet shoes or ghillies are best, with shorts or workout trousers and a T-shirt.
+  - q: Can adults learn Irish dancing with no experience?
+    a: Yes. The Irish Arts Center's Step Dance I says absolutely no previous experience is necessary, and Jig and a Swig in London runs Absolute Beginners classes.
+  - q: Do I need a partner for a céilí?
+    a: No. The Irish American Heritage Center in Chicago says you can come with a partner or come alone to its social dance, and it is open to all experience levels.
+  sources:
+  - label: Comhaltas in Britain, Irish Dancing
+    url: https://www.comhaltas.co.uk/irish-dancing
+    checked: '2026-11-10'
+  - label: Jig and a Swig (Bookwhen), Schedule
+    url: https://bookwhen.com/jigandaswig
+    checked: '2026-11-10'
+  - label: Jig and a Swig (Bookwhen), Passes
+    url: https://bookwhen.com/jigandaswig/passes
+    checked: '2026-11-10'
+  - label: Irish Cultural Centre, Irish Dance Classes
+    url: https://irishculturalcentre.co.uk/education/dance/
+    checked: '2026-11-10'
+  - label: Irish Arts Center, Step Dance I, Beginners (Spring 2026)
+    url: https://irishartscenter.org/event/step-dance-i-beginners-spring-2026-in-person
+    checked: '2026-11-10'
+  - label: Irish American Heritage Center, Celtic Social Dance
+    url: https://irish-american.org/celtic-social-dance
+    checked: '2026-11-10'
+  kit:
+  - name: Ghillies (soft Irish dance shoes)
+    why: the soft lace-up shoe for light-shoe step dancing; check the sizing guide, as they are meant to fit snugly
+    url: https://www.amazon.co.uk/s?k=irish+dance+ghillies
+  - name: Soft ballet shoes
+    why: one of the shoes the Irish Arts Center suggests for beginners; check for a full or split leather sole
+    url: https://www.amazon.co.uk/s?k=adult+ballet+shoes+leather
+  - name: Workout trousers
+    why: for moving freely in class; check they let you lift your knees freely
+    url: https://www.amazon.co.uk/s?k=cropped+workout+trousers
+  related:
+  - go-to-a-folk-dance
+  - scottish-country-dancing
+  - learn-tap-dancing
+  - learn-flamenco
+  inspire:
+  - kind: read
+    person: Julia Bannister, from Canada
+    line: Took up Irish dancing at the Stanford School of Irish Dance in New Brunswick, moving from the adult class into the regular Novice stream and the senior performing troupe.
+    title: Interview with competitive adult Irish dancer Julia Bannister from Canada
+    outlet: IrishCentral
+    url: https://www.irishcentral.com/culture/entertainment/interview-with-competitive-adult-irish-dancer-julia-bannister-from-canada-148063155-238128611
+    checked: '2026-11-10'
+- id: learn-contemporary-dance
+  title: Learn contemporary dance
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Contemporary dance is often danced in bare feet or grip socks, and built on techniques such as Cunningham, with its curves, tilts and twists of the spine, and release, which ties movement to the
+    breath. Adult beginners' courses at major dance houses start with simple movement and build to travelling across the floor and small jumps.
+  start:
+  - Book a taster or a single beginners' class first to see whether the style suits you.
+  - Then sign up for a term course; The Place asks you to enrol for the whole term to secure your place.
+  - Wear clothes you can move and stretch in, and expect to dance in bare feet or grip socks.
+  links:
+  - label: 'The Place, London: Contemporary Introduction (adult beginners)'
+    url: https://theplace.org.uk/classes-courses/c-c-26-27-contemporary-introduction-sarah-miller
+    region: uk
+    checked: '2026-11-10'
+  - label: 'City Lit, London: Contemporary dance, beginners'
+    url: https://www.citylit.ac.uk/courses/contemporary-dance-beginners
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Ailey Extension, New York: classes for beginners'
+    url: https://ailey.org/classes/beginners
+    region: us
+    checked: '2026-11-10'
+  seo_title: Contemporary dance classes for adult beginners
+  description: What adult beginners learn in a contemporary dance class, what to wear, and where to find taster, drop-in and term courses in London and New York.
+  detail:
+  - h: What a beginners' class covers
+    p:
+    - The Place in London describes its Contemporary Introduction as a relaxed start through simple movement and creative exploration. It teaches Cunningham technique, focused on curves, tilts, twists and
+      arches of the spine, and release technique, flowing movement linked to the breath, then moving across the floor and simple springs and jumps, with live music.
+    - City Lit's beginners' course covers alignment, posture, spatial awareness, musicality, turns, kicks, balance and flexibility, plus conditioning exercises. It asks that you can follow spoken instructions,
+      count rhythms and work safely in groups and pairs, and recommends basic coordination and fitness. You dance in bare feet or anti-grip socks, with long hair tied back and no jewellery.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Place, London
+        - Contemporary Introduction, 12-week autumn term for complete beginners aged 18 and over; taster session available
+        - £196 a term; taster £18 (concessions available)
+      - - City Lit, London
+        - Contemporary dance, beginners; Saturday mornings, 5 or 6 sessions, January or April 2027
+        - £129 (concession £90)
+      - - Ailey Extension, New York
+        - Intro and Absolute Beginner drop-in classes, ages 16 and over; sold singly or in packages
+        - $26 a studio class; $40 for a 2-class intro package; $15 online
+  faq:
+  - q: What do you wear to a contemporary dance class?
+    a: City Lit asks for clothing that does not restrict movement, bare feet or anti-grip socks, long hair tied back and no jewellery.
+  - q: Can I start contemporary dance with no experience?
+    a: Yes. The Place's Contemporary Introduction is aimed at complete beginners, and Ailey Extension runs Intro classes for people who have never taken a dance class.
+  - q: What techniques are taught in contemporary dance?
+    a: The Place's beginners' course teaches Cunningham technique, which works the spine through curves, tilts, twists and arches, and release technique, which links flowing movement to the breath.
+  sources:
+  - label: The Place, Contemporary Introduction with Sarah Miller
+    url: https://theplace.org.uk/classes-courses/c-c-26-27-contemporary-introduction-sarah-miller
+    checked: '2026-11-10'
+  - label: City Lit, Contemporary dance, beginners
+    url: https://www.citylit.ac.uk/courses/contemporary-dance-beginners
+    checked: '2026-11-10'
+  - label: Ailey Extension, For Beginners
+    url: https://ailey.org/classes/beginners
+    checked: '2026-11-10'
+  kit:
+  - name: Anti-grip dance socks
+    why: City Lit allows them in place of bare feet; check with your teacher which kind the studio allows
+    url: https://www.amazon.co.uk/s?k=anti+slip+dance+socks
+  - name: Dance leggings or yoga trousers
+    why: for floor work and stretching; check the fabric stretches without riding up
+    url: https://www.amazon.co.uk/s?k=dance+leggings+adult
+  - name: Dance belt
+    why: City Lit recommends one; check the size chart against your hip measurement
+    url: https://www.amazon.co.uk/s?k=dance+belt
+  related:
+  - learn-ballet-as-an-adult
+  - learn-tap-dancing
+  - learn-swing-dancing
+  - learn-flamenco
+- id: learn-belly-dancing
+  title: Learn belly dancing
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Belly dance comes from the Middle East and North Africa, and beginners' classes cover footwork, basic steps and combinations, sometimes with skirt work or a prop. Classes are low-impact and usually
+    danced in bare feet.
+  start:
+  - Try a one-off workshop or a short course from an adult-learning service, dance school or parks department.
+  - Wear clothing you can raise your arms and crouch in, and dance barefoot or in soft-soled shoes.
+  - Add a hip scarf once you have started; your teacher can suggest where to buy one.
+  links:
+  - label: 'City Academy, London: Belly dance classes for beginners'
+    url: https://www.city-academy.com/belly-dance-classes-beginners
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Surrey Adult Learning: Belly Dance, All Abilities'
+    url: https://www.surreycc.gov.uk/schools-and-learning/adult-learning/courses/overview?id=58900
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Mesa, Arizona (ActiveNet): Belly Dance Basics'
+    url: https://www.active.com/mesa-az/dance/classes/belly-dance-basics-2026-110665816
+    region: us
+    checked: '2026-11-10'
+  seo_title: Belly dancing classes for adult beginners
+  description: What a beginners' belly dance class covers, what to wear, and where adults can learn in the UK and US, from one-off workshops to weekly courses.
+  detail:
+  - h: What you learn
+    p:
+    - Surrey Adult Learning describes belly dance as the dance of the Middle East and its class as low-impact, covering basic moves, steps and combinations, body awareness and general dance skills; you
+      may learn a choreographed routine, freestyle or dancing with a prop. The City of Santa Monica's beginners' class calls it a folkloric dance form of Northern Africa and the Middle East, and covers
+      footwork and skirt work.
+    - Mesa's Belly Dance Basics, in Arizona, teaches the moves of the MENAHT region and how they developed into belly dance and are performed on stage, and says students will be shimmying from the first
+      lesson. Surrey's class says bare feet are usual, though soft-soled shoes such as ballet pumps are fine, and a hip scarf is optional.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Academy, Farringdon and Sadler's Wells, London
+        - Weekly beginners' course, 6 or 7 weeks of 75 or 90 minutes; no dance experience needed
+        - £135 a course
+      - - Surrey Adult Learning, Woking
+        - Belly Dance, All Abilities; one two-hour Saturday workshop for beginners and returners
+        - £24
+      - - City of Mesa, Arizona
+        - Belly Dance Basics; Monday class at Red Mountain Center, October to November 2026
+        - $54, plus a $2 to $10 administrative fee
+      - - City of Santa Monica, California
+        - Belly Dance for Adults (Beginner), Wednesdays, ages 18 to 89, with an end-of-session recital
+        - $25 material fee to the instructor; tuition not listed
+  faq:
+  - q: What do you wear to a belly dancing class?
+    a: Surrey Adult Learning asks for comfortable clothing you can raise your arms and crouch in, says bare feet are usual though ballet pumps are fine, and calls a hip scarf optional.
+  - q: Can complete beginners do belly dancing?
+    a: Yes. City Academy's beginners' course needs no prior dance experience, and Surrey Adult Learning's workshop is for complete beginners as well as returners.
+  - q: Where does belly dance come from?
+    a: The City of Santa Monica's class describes it as a folkloric dance form of Northern Africa and the Middle East.
+  - q: How much are belly dance classes?
+    a: As last listed, City Academy's 6 or 7-week course in London is £135, a single Surrey Adult Learning workshop is £24, and Mesa's parks class in Arizona is $54.
+  sources:
+  - label: City Academy, Belly Dance Classes for Beginners
+    url: https://www.city-academy.com/belly-dance-classes-beginners
+    checked: '2026-11-10'
+  - label: Surrey County Council, Belly Dance - All Abilities
+    url: https://www.surreycc.gov.uk/schools-and-learning/adult-learning/courses/overview?id=58900
+    checked: '2026-11-10'
+  - label: ActiveNet, Belly Dance Basics (Mesa, AZ)
+    url: https://www.active.com/mesa-az/dance/classes/belly-dance-basics-2026-110665816
+    checked: '2026-11-10'
+  - label: ActiveNet, Belly Dance for Adults (Beginner) (City of Santa Monica)
+    url: https://www.active.com/santa-monica-ca/spanish/classes/belly-dance-for-adults-beginner-2026
+    checked: '2026-11-10'
+  kit:
+  - name: Hip scarf
+    why: tied round the hips; Surrey's class lists it as optional, and check the length goes round your hips with room to tie
+    url: https://www.amazon.co.uk/s?k=belly+dance+hip+scarf
+  - name: Ballet pumps
+    why: the soft-soled shoe Surrey's class allows instead of bare feet; check the sole is thin and flexible
+    url: https://www.amazon.co.uk/s?k=ballet+pumps+adult
+  - name: Yoga trousers
+    why: for moving and crouching freely; check you can raise your arms and crouch without them pulling
+    url: https://www.amazon.co.uk/s?k=yoga+trousers+women
+  related:
+  - learn-flamenco
+  - learn-salsa
+  - learn-argentine-tango
+  - learn-ballet-as-an-adult
+  inspire:
+  - kind: read
+    person: April Greer
+    line: Tried a belly-dance class at her local YMCA with a friend, joined a troupe and went on to perform two routines at a belly-dance convention.
+    title: How I Became A Belly Dancer At Age 48
+    outlet: AARP The Girlfriend
+    url: https://girlfriend.aarp.org/lifestyle/how-i-became-a-belly-dancer-at-age-48
+    checked: '2026-11-10'
+- id: learn-the-bass-guitar
+  title: Learn the bass guitar
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The bass guitar is the engine of a band, with a powerful, clear sound, and creating a bassline that suits a song is a creative job in itself. Adult evening classes teach you to read chord symbols,
+    keep time and play with other musicians.
+  start:
+  - Find an adult bass guitar class at an adult-education college or community music school, and check whether you need to bring your own bass.
+  - Get a bass guitar before the first session, or ask whether the school's shop rents one for the term.
+  - Take ear plugs to every lesson, as Morley College strongly encourages, because classes play together through amplifiers.
+  links:
+  - label: 'Morley College, London: Bass Guitar 1B'
+    url: https://morleycollege.ac.uk/courses/course/bass-guitar-1b
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Old Town School of Folk Music, Chicago: adult bass classes'
+    url: https://oldtownschool.org/classes/adults/bass
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Learn bass guitar as an adult: classes and costs'
+  description: Where adults can learn the bass guitar in the UK and US, what you need to bring to a class, and what group and one-to-one lessons cost as last listed.
+  detail:
+  - h: What a bass class is like
+    p:
+    - Morley College in London runs bass guitar as 10-week evening courses. Its Bass Guitar 1B, for players with one term's experience, covers technique, reading and improvising from chord symbols, rhythm
+      and tempo, and playing with other musicians in contemporary styles. You bring your own bass and a pencil; the college provides the amplifiers and strongly encourages ear plugs.
+    - Chicago's Old Town School of Folk Music focuses its group classes on the fretted electric bass, from Bass Guitar 1 and 2 for beginners up to style classes such as Paul McCartney Bass Style, some of
+      them online. Its music store has a bass guitar to rent for practice through the session. Berkshire Maestros, a UK music service, says many people have transferred to the bass guitar from the guitar
+      or the double bass, and that learners also learn to set up the amplifier for different genres.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Morley College, London
+        - Bass Guitar 1B; ten Tuesday evenings, 8pm to 9.30pm, from 12 January 2027; bring your own bass
+        - £185 (concession £140)
+      - - Old Town School of Folk Music, Chicago
+        - Bass Guitar 1, beginner group class; 80 minutes a week for 8 weeks
+        - $272 ($252 for members)
+      - - Old Town School of Folk Music, Chicago
+        - Private lessons, 30 minutes a week for an 8-week session
+        - $360 ($350 for members)
+      - - Old Town School of Folk Music (online)
+        - More Bass Line Bass-ics, a single 120-minute beginner workshop
+        - $40 ($35 for members)
+  faq:
+  - q: Do I need my own bass guitar for a bass class?
+    a: At Morley College, yes; students should own a bass guitar. Old Town School of Folk Music's store has a bass guitar to rent for practice during the session.
+  - q: Do I need an amp for bass guitar lessons?
+    a: Not for Morley College's classes, where the college provides the amplifiers. It strongly encourages ear plugs.
+  - q: Can I learn bass guitar online?
+    a: Yes. Old Town School of Folk Music runs some of its bass classes online, including a two-hour beginner workshop.
+  - q: How much do bass guitar lessons cost?
+    a: As last listed, Morley College's 10-week Bass Guitar 1B is £185 (£140 concession), and Old Town School of Folk Music charges $272 for an 8-week beginner group class or $360 for eight 30-minute private
+      lessons.
+  sources:
+  - label: Morley College, Bass Guitar 1B
+    url: https://morleycollege.ac.uk/courses/course/bass-guitar-1b
+    checked: '2026-11-10'
+  - label: Old Town School of Folk Music, Adult bass classes
+    url: https://oldtownschool.org/classes/adults/bass
+    checked: '2026-11-10'
+  - label: Berkshire Maestros (Berks Music Trust), Bass guitar
+    url: https://www.berksmusictrust.org.uk/music/choosing-an-instrument/guitars/bass-guitar
+    checked: '2026-11-10'
+  kit:
+  - name: Musicians' ear plugs
+    why: Morley College strongly encourages ear plugs at every lesson; check they are designed to lower volume evenly for music
+    url: https://www.amazon.co.uk/s?k=musicians+ear+plugs
+  - name: Clip-on bass tuner
+    why: for tuning before you play; check it has a bass guitar mode
+    url: https://www.amazon.co.uk/s?k=clip+on+bass+guitar+tuner
+  - name: Bass guitar strap
+    why: lets you play standing up with the band; check the length adjusts to suit you
+    url: https://www.amazon.co.uk/s?k=bass+guitar+strap
+  related:
+  - learn-the-guitar
+  - learn-the-drums
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+- id: learn-the-oboe
+  title: Learn the oboe
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The oboe is a double reed instrument, sounded by two pieces of cane tied together, which vibrate to make the sound. It has a reputation for being difficult at first, and adult beginners' bands and
+    one-to-one teachers take it on in both the UK and US.
+  start:
+  - Book one-to-one lessons through your local music service or a community music school that lists the oboe.
+  - Hire an oboe rather than buying one, from a maker's rental scheme or, if you join the British Double Reed Society, its instrument bank.
+  - Join an adult beginners' band that takes oboes, such as a New Horizons band.
+  links:
+  - label: 'Surrey Arts: music lessons for adults, including oboe'
+    url: https://www.surreycc.gov.uk/culture-and-leisure/arts/music/lessons-for-adults
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Howarth of London: long-term instrument rental'
+    url: https://howarthlondon.com/long-term-rental-instrument
+    region: uk
+    checked: '2026-11-10'
+  - label: 'British Double Reed Society: instrument bank'
+    url: https://www.bdrs.org.uk/instrument-bank-faqs
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Museum of Making Music: New Horizons bands for adults'
+    url: https://museumofmakingmusic.org/education/new-horizons-fall-band-session-2026
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Learn the oboe as an adult: lessons, hire and bands'
+  description: How hard the oboe is to start, where adults can take oboe lessons, hire an instrument or join a beginners' band in the UK and US, and what it costs.
+  detail:
+  - h: The reed is the hard part
+    p:
+    - Berkshire Maestros, a UK music service, says the oboe has a deserved reputation for being difficult, and that at first it will be hard to make a good sound; once you master the reed, you hear the
+      instrument at its best. It also says the oboe will not be the right instrument for everyone, but is extremely rewarding.
+    - Adult routes exist on both sides of the Atlantic. Surrey Arts lists the oboe among the instruments it teaches adults one-to-one, at any level. The British Double Reed Society, a charity for students,
+      amateurs, professionals and teachers, lends instruments free to members from its instrument bank; its last application round closed on 15 August 2026, and it plans a new round in 2027. In the US,
+      the Museum of Making Music's New Horizons Beginning Band takes oboes and is designed for adults who have never learned a concert band instrument.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Surrey Arts, Surrey
+        - Individual lessons for adults, at music centres or online
+        - £16.10 for 20 minutes, £23 for 30 minutes
+      - - Howarth of London (UK residents)
+        - Oboe rental; renter must be over 18; three months paid up front, minimum three months
+        - £35 a month (junior oboe) to £55 a month (intermediate)
+      - - British Double Reed Society
+        - Instrument bank loan for members; you arrange your own insurance
+        - No fee to borrow; membership required
+      - - Museum of Making Music (US)
+        - New Horizons Beginning Band; Wednesdays 4pm to 5.15pm, August to December 2026; no experience needed
+        - $125 per band
+  faq:
+  - q: Is the oboe hard to learn?
+    a: Berkshire Maestros says it has a deserved reputation for being difficult, and that a good sound is hard at first until you master the reed.
+  - q: Can I rent an oboe as an adult?
+    a: Yes. Howarth of London rents oboes to UK residents over 18 from £35 a month, with three months paid up front, and the British Double Reed Society lends instruments free to its members.
+  - q: Can adult beginners play the oboe in a band?
+    a: Yes. The Museum of Making Music's New Horizons Beginning Band lists the oboe among its instruments and is designed for adults who have never learned a concert band instrument.
+  - q: How much do oboe lessons cost?
+    a: Surrey Arts lists individual lessons for adults at £16.10 for 20 minutes or £23 for 30 minutes.
+  sources:
+  - label: Berkshire Maestros (Berks Music Trust), Oboe
+    url: https://berksmusictrust.org.uk/music/choosing-an-instrument/woodwind/oboe
+    checked: '2026-11-10'
+  - label: Surrey County Council, Music lessons for adults
+    url: https://www.surreycc.gov.uk/culture-and-leisure/arts/music/lessons-for-adults
+    checked: '2026-11-10'
+  - label: Howarth of London, Long-term instrument rental
+    url: https://howarthlondon.com/long-term-rental-instrument
+    checked: '2026-11-10'
+  - label: British Double Reed Society, Who we are
+    url: https://www.bdrs.org.uk/about
+    checked: '2026-11-10'
+  - label: British Double Reed Society, Instrument bank FAQs
+    url: https://www.bdrs.org.uk/instrument-bank-faqs
+    checked: '2026-11-10'
+  - label: Museum of Making Music, New Horizons fall band session 2026
+    url: https://museumofmakingmusic.org/education/new-horizons-fall-band-session-2026
+    checked: '2026-11-10'
+  kit:
+  - name: Oboe reeds
+    why: the cane reed makes the sound; ask your teacher which strength to buy and check they are for oboe, not cor anglais or bassoon
+    url: https://www.amazon.co.uk/s?k=oboe+reeds
+  - name: Reed case
+    why: keeps finished reeds from being crushed between practices; check it holds oboe reeds
+    url: https://www.amazon.co.uk/s?k=oboe+reed+case
+  - name: Folding music stand
+    why: for practice at home and taking to band; check it is tall enough for you to play standing
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  related:
+  - learn-the-clarinet
+  - learn-the-flute
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+- id: learn-the-double-bass
+  title: Learn the double bass
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The double bass is the largest of the bowed string instruments, played with the bow or plucked, and it holds up the bass line in orchestras, jazz bands, bluegrass, country and pop. Adult string classes
+    in the UK and US take beginners on it alongside violins and cellos.
+  start:
+  - Find an adult beginners' string class or lessons that name the double bass, at a music centre, music school or community string project.
+  - Hire a bass for the first months rather than buying one; some schemes rent to adult learners.
+  - Practise in short, regular sessions, as Berkshire Maestros advises, working on tuning and a relaxed posture.
+  links:
+  - label: 'Benslow Music: Late Starter Strings, including double bass'
+    url: https://www.benslowmusic.org/courses/late-starter-strings-spring/
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Surrey Arts: music lessons for adults, including double bass'
+    url: https://www.surreycc.gov.uk/culture-and-leisure/arts/music/lessons-for-adults
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Museum of Making Music: North Coast Strings for adults'
+    url: https://www.museumofmakingmusic.org/education/north-coast-strings-fall-session-2026
+    region: us
+    checked: '2026-11-10'
+  - label: 'Tennessee Tech String Project: adult beginners'
+    url: https://www.tntech.edu/fine-arts/music/string-project/sp-adult-beginners.php
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Learn the double bass as an adult: classes and hire'
+  description: Where adults can learn the double bass in the UK and US, what classes, one-to-one lessons and double bass hire cost as last listed, and what to expect.
+  detail:
+  - h: What starting is like
+    p:
+    - Berkshire Maestros, a UK music service, says the double bass, also called the contra bass or upright bass, takes strength in body, mind and fingers; learners work on intonation and a relaxed posture,
+      and short, regular practice sessions are key. It adds that in an ensemble everyone hears you first, and everyone has to tune to you.
+    - Benslow Music's Late Starter Strings is designed for adults new to their instrument and includes the double bass, taught at the tutor's home, with instrument hire at £10 a month. In the US, the Museum
+      of Making Music's Fundamentals 1 is for adults with little to no experience on violin, viola, cello or bass, and Tennessee Tech's String Project runs Monday-evening adult beginner classes on the upright
+      acoustic bass that end in a concert in May; it does not provide instruments.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Benslow Music
+        - Late Starter Strings; weekly term-time lessons for adults, one-to-one, in pairs or in a group of three
+        - £24 for 30 minutes one-to-one, or £12 each in a group of three (45 minutes); hire £10 a month
+      - - Surrey Arts, Surrey
+        - Individual lessons for adults at any level
+        - £16.10 for 20 minutes, £23 for 30 minutes
+      - - Museum of Making Music (US)
+        - North Coast Strings Fundamentals 1; Tuesdays 4pm to 5.15pm, 15 September 2026 to 16 January 2027
+        - $200
+      - - Ronald Sachs Violins, Atlanta
+        - Double bass rental; two months up front; damage protection and sales tax extra
+        - $70 a month
+  faq:
+  - q: Can I learn double bass as an adult?
+    a: Yes. Benslow Music's Late Starter Strings is designed for adults new to their instrument, and the Museum of Making Music's Fundamentals 1 is for adults with little to no experience on violin, viola,
+      cello or bass.
+  - q: Is the double bass hard to learn?
+    a: Berkshire Maestros says it takes strength in body, mind and fingers, and that short, regular practice sessions are key to progress.
+  - q: How much does it cost to rent a double bass?
+    a: Benslow Music lists hire at £10 a month for its Late Starter Strings pupils, and Ronald Sachs Violins in Atlanta lists bass rental at $70 a month, before damage protection and sales tax.
+  - q: Is the upright bass the same as the double bass?
+    a: Yes. Berkshire Maestros says the double bass is also called the contra bass or upright bass.
+  sources:
+  - label: Berkshire Maestros (Berks Music Trust), Double bass
+    url: https://berksmusictrust.org.uk/music/choosing-an-instrument/string/double-bass
+    checked: '2026-11-10'
+  - label: Benslow Music, Late Starter Strings Instrumental Lessons
+    url: https://www.benslowmusic.org/courses/late-starter-strings-spring/
+    checked: '2026-11-10'
+  - label: Surrey County Council, Music lessons for adults
+    url: https://www.surreycc.gov.uk/culture-and-leisure/arts/music/lessons-for-adults
+    checked: '2026-11-10'
+  - label: Museum of Making Music, North Coast Strings fall session 2026
+    url: https://www.museumofmakingmusic.org/education/north-coast-strings-fall-session-2026
+    checked: '2026-11-10'
+  - label: Tennessee Tech, The String Project, Adult Beginners
+    url: https://www.tntech.edu/fine-arts/music/string-project/sp-adult-beginners.php
+    checked: '2026-11-10'
+  - label: Ronald Sachs Violins, String instrument rentals
+    url: https://ronaldsachs.com/instrument-rentals/
+    checked: '2026-11-10'
+  kit:
+  - name: Double bass rosin
+    why: for the bow hair; check it is labelled for double bass
+    url: https://www.amazon.co.uk/s?k=double+bass+rosin
+  - name: Clip-on tuner
+    why: helps you check the open strings before you practise; check it has a bass or chromatic mode
+    url: https://www.amazon.co.uk/s?k=clip+on+chromatic+tuner
+  - name: Music stand
+    why: for practice at home; check it rises high enough to read from while standing at the bass
+    url: https://www.amazon.co.uk/s?k=music+stand
+  related:
+  - learn-the-cello
+  - learn-the-viola
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+- id: learn-the-french-horn
+  title: Learn the French horn
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Uncoil a French horn and you get 12 to 13 feet (about 3.7 to 4 m) of tubing, and the player's hand in the bell helps set the pitch of some notes. It has a reputation as one of the hardest instruments
+    to play, which is half the appeal.
+  start:
+  - Ask your local music service or a community music school whether it gives adult one-to-one lessons on French horn and hires instruments.
+  - Look for an adult beginners' or late starters' band that lists French horn, such as a New Horizons band in the US.
+  - Once you can read and play simple parts, join an adult wind band so you play with others every week.
+  links:
+  - label: 'Surrey Arts: music lessons for adults (includes French horn)'
+    url: https://www.surreycc.gov.uk/culture-and-leisure/arts/music/lessons-for-adults
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Oldham Music Service: adult community wind band and late starters'
+    url: https://www.oldham.gov.uk/info/200362/community_and_adult_groups/210/adult_community_wind_band
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Museum of Making Music: New Horizons bands, fall 2026'
+    url: https://museumofmakingmusic.org/education/new-horizons-fall-band-session-2026
+    region: us
+    checked: '2026-11-10'
+  - label: British Horn Society
+    url: https://british-horn.org/about/
+    region: uk
+    checked: '2026-11-10'
+  seo_title: 'Learn the French horn as an adult: lessons and bands'
+  description: Where adults can learn the French horn in the UK and US, from one-to-one lessons to beginners' bands, with costs as last listed and why it is hard.
+  detail:
+  - h: Why the horn is different
+    p:
+    - Oxford University Press's blog sets out the basics. Uncoiled, the horn is 12 to 13 feet long (about 3.7 to 4 m). The hand in the bell is not just there to hold it; it affects the pitch of certain
+      notes. The most common type, the double horn, has a fourth valve and the widest range of any brass instrument. The same article says the horn is often called the most difficult instrument to play,
+      because notes crack easily or go flat.
+    - That makes a teacher and a group worth having from the start. In the US, the Museum of Making Music's New Horizons Beginning Band is an entry point for adults who have never learned a concert band
+      instrument, and French horn is on its list. In the UK, Oldham's adult wind bands list "horn (tenor or French)", with a Late Starters band for players who are not complete beginners.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Surrey Arts (Surrey County Council)
+        - One-to-one lessons for adults at any level; French horn among the brass instruments; instrument hire for enrolled students
+        - £16.10 for 20 minutes or £23.00 for 30 minutes, per lesson
+      - - Oldham Music Service, Greater Manchester
+        - Late Starters (Adult Training Wind Band) and Adult Community Wind Band, Wednesday and Thursday evenings at Oldham Music Centre
+        - £71 per term
+      - - Benslow Music, Hitchin
+        - Simply Horns course; horn players from Grade 3 upwards, confident playing in a group
+        - Not listed on the course page
+      - - Museum of Making Music (US)
+        - New Horizons Beginning Band for adults who have never learned a band instrument; Wednesdays, 12 August to 9 December 2026
+        - $125 per band
+  faq:
+  - q: Is the French horn hard to learn?
+    a: Oxford University Press's blog says it is often called the most difficult instrument to play, because notes can easily crack or go flat. Lessons and a beginners' band help.
+  - q: Can an adult learn the French horn from scratch?
+    a: Yes. The Museum of Making Music's New Horizons Beginning Band is for adults who have never learned a concert band instrument, and lists French horn.
+  - q: Why do French horn players put their hand in the bell?
+    a: It helps hold the instrument, but it also affects the pitch of certain notes.
+  - q: How long is a French horn uncoiled?
+    a: About 12 to 13 feet, or roughly 3.7 to 4 metres, according to Oxford University Press's blog.
+  inspire:
+  - kind: read
+    person: Kerry Geddes, from Brisbane, Australia
+    line: Started the horn in an adult starters' concert band run by a Brisbane music shop, and now plays in two community concert bands and now and then in a brass quintet.
+    title: It's Never Too Late
+    outlet: The Horn Call (International Horn Society)
+    url: https://hornsociety.org/publications/horn-call/horn-call-archive/145-its-never-too-late
+    checked: '2026-11-10'
+  sources:
+  - label: Oxford University Press blog, Ten facts about the French horn
+    url: https://blog.oup.com/2015/10/ten-facts-french-horn/
+    checked: '2026-11-10'
+  - label: Surrey County Council, Music lessons for adults
+    url: https://www.surreycc.gov.uk/culture-and-leisure/arts/music/lessons-for-adults
+    checked: '2026-11-10'
+  - label: Oldham Council, Adult community wind band
+    url: https://www.oldham.gov.uk/info/200362/community_and_adult_groups/210/adult_community_wind_band
+    checked: '2026-11-10'
+  - label: Benslow Music, About Simply Horns
+    url: https://www.benslowmusic.org/courses/simply-horns-2/
+    checked: '2026-11-10'
+  - label: Museum of Making Music, New Horizons Fall Band Session 2026
+    url: https://museumofmakingmusic.org/education/new-horizons-fall-band-session-2026
+    checked: '2026-11-10'
+  - label: British Horn Society, About
+    url: https://british-horn.org/about/
+    checked: '2026-11-10'
+  kit:
+  - name: Valve oil
+    why: keeps the valves moving freely; check it is made for the valve type on your horn
+    url: https://www.amazon.co.uk/s?k=french+horn+valve+oil
+  - name: Folding music stand
+    why: for practice at home and for band nights; check it is tall enough to read from while seated
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  - name: French horn mouthpiece
+    why: if you hire a horn without one or want your own; check the shank is for French horn, not tenor horn
+    url: https://www.amazon.co.uk/s?k=french+horn+mouthpiece
+  related:
+  - learn-the-trumpet
+  - learn-the-trombone
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+- id: learn-the-recorder
+  title: Learn the recorder
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The recorder comes in a family of sizes, from sopranino down to bass, and adults play it together in classes, consorts and branch groups. The American Recorder Society calls it a route into early
+    music and group playing.
+  start:
+  - Get a recorder and a beginners' tutor book, or find a beginners' class near you on the Society of Recorder Players' list of regular classes.
+  - Learn to read music as you go; some groups, such as the Society of Recorder Players' West Riding branch, sight-read and do not send the music in advance.
+  - Try a Society of Recorder Players branch meeting before joining in the UK (West Riding's first session is free), or find a chapter or consort in the American Recorder Society's directory in the US.
+  links:
+  - label: 'Society of Recorder Players: regular recorder classes'
+    url: https://www.srp.org.uk/regular-classes
+    region: uk
+    checked: '2026-11-10'
+  - label: 'Society of Recorder Players: membership and branches'
+    url: https://www.srp.org.uk/srp-membership
+    region: uk
+    checked: '2026-11-10'
+  - label: 'American Recorder Society: chapters, consorts and recorder orchestras'
+    url: https://americanrecorder.org/what_are_the_main_ars_groups.php
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Learn the recorder as an adult: classes and groups'
+  description: Where adults learn the recorder and play in consorts, from UK classes and Society of Recorder Players branches to US chapters, with costs as last listed.
+  detail:
+  - h: From classes to consorts
+    p:
+    - City Lit in London says its recorder classes take C instruments (descant or soprano, and tenor) and F instruments (sopranino, alto or treble, and bass). Its Recorders return to playing class is for
+      people who have been learning for at least a year. The Society of Recorder Players keeps a list of regular classes, including beginners' groups, though the page was last updated in June 2023, so check
+      with the organiser.
+    - The Society has 49 branches across the UK and Ireland and suggests you try a branch meeting before deciding to join. Its West Riding branch asks that you can sight-read, gives the first session free
+      and plays recorders of all sizes. In the US, the American Recorder Society's general directory lists local chapters, consorts and recorder orchestras.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Recorders return to playing; 10 Monday sessions from 11 January 2027; for players learning at least a year
+        - £219
+      - - Surrey Arts (Surrey County Council)
+        - One-to-one lessons for adults at any level; recorder among the woodwind instruments
+        - £16.10 for 20 minutes or £23.00 for 30 minutes, per lesson
+      - - Society of Recorder Players
+        - National membership, 49 branches; branch subscription on top
+        - £30 a year (UK and Ireland); West Riding branch drop-in £8 after a free first session
+      - - American Recorder Society (US)
+        - Membership; magazine, online music libraries, member directory
+        - $30 new member, first year; $60 renewal
+      - - Road Scholar, Carmel Valley, California
+        - Seven-day recorder and early music workshop; intermediate to advanced; must play at least one C and one F recorder
+        - From 1,649, no currency shown (October 2027 dates)
+  faq:
+  - q: Is the recorder a good instrument for adults to learn?
+    a: The American Recorder Society says the recorder spans skill levels from beginner to virtuoso, and its chapters, consorts and recorder orchestras are full of amateurs who play for the joy of it.
+  - q: Which recorder should an adult beginner start on?
+    a: City Lit's classes take C instruments (descant, tenor) and F instruments (sopranino, treble, bass).
+  - q: How much does it cost to join the Society of Recorder Players?
+    a: The main subscription is £30 a year in the UK and Ireland, or £10 if you are under 30 or in full-time education, plus your branch's own subscription.
+  - q: What is a recorder consort?
+    a: A small group playing recorders of different sizes together. The Society of Recorder Players says membership can help consorts with public liability insurance, and the American Recorder Society lists
+      consorts in its directory.
+  inspire:
+  - kind: read
+    person: Michael Murphy
+    line: Began recorder lessons at Old Songs in Voorheesville, New York, and now plays soprano, alto, tenor and bass recorders with the Bleecker Consort and other groups.
+    title: When a Passionate Avocation Becomes a Retirement Plan
+    outlet: State University of New York (SUNY) Retirees
+    url: https://www.suny.edu/retirees/retirement-stories/michael-murphy/
+    checked: '2026-11-10'
+  sources:
+  - label: City Lit, Choosing an instrumental class at City Lit
+    url: https://www.citylit.ac.uk/blog/choosing-instrumental-class-city-lit
+    checked: '2026-11-10'
+  - label: City Lit, Recorders - return to playing
+    url: https://www.citylit.ac.uk/courses/recorders-return-to-playing
+    checked: '2026-11-10'
+  - label: Society of Recorder Players, Regular classes
+    url: https://www.srp.org.uk/regular-classes
+    checked: '2026-11-10'
+  - label: Society of Recorder Players, SRP membership
+    url: https://www.srp.org.uk/srp-membership
+    checked: '2026-11-10'
+  - label: Society of Recorder Players, West Riding branch
+    url: https://www.srp.org.uk/wriding-branch
+    checked: '2026-11-10'
+  - label: Surrey County Council, Music lessons for adults
+    url: https://www.surreycc.gov.uk/culture-and-leisure/arts/music/lessons-for-adults
+    checked: '2026-11-10'
+  - label: American Recorder Society, What is the ARS?
+    url: https://americanrecorder.org/about_page.php
+    checked: '2026-11-10'
+  - label: American Recorder Society, What are the main ARS groups?
+    url: https://americanrecorder.org/what_are_the_main_ars_groups.php
+    checked: '2026-11-10'
+  - label: American Recorder Society, Membership levels
+    url: https://americanrecorder.org/membership_levels.php
+    checked: '2026-11-10'
+  - label: Road Scholar, National Recorder/Early Music Workshop
+    url: https://www.roadscholar.org/6254
+    checked: '2026-11-10'
+  kit:
+  - name: Treble (alto) recorder
+    why: the main F instrument in classes and consorts; check whether it has baroque or German fingering, to match your teacher or tutor book
+    url: https://www.amazon.co.uk/s?k=treble+recorder+baroque+fingering
+  - name: Descant (soprano) recorder
+    why: the usual C instrument to start on; check the fingering system matches your tutor book
+    url: https://www.amazon.co.uk/s?k=descant+recorder+baroque+fingering
+  - name: Folding music stand
+    why: City Lit asks you to bring your instruments; check the stand folds small enough to carry to a group
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  related:
+  - learn-the-tin-whistle
+  - learn-the-flute
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+- id: learn-the-organ
+  title: Learn the organ
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: year
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The pipe organ is played with hands and feet together, on keyboards and a pedalboard, and choosing the stops (registration) is taught alongside. Church music courses are written partly for pianists
+    who have been asked to play the organ for services.
+  start:
+  - Ask the Royal College of Organists (UK) or your local American Guild of Organists chapter (US) to point you to an organ teacher near you.
+  - Get piano to a reasonable standard first if you can, since the RSCM says players at about Grade 5 piano get the most from its course.
+  - Buy or borrow organ shoes before your first pedal lessons, and ask a local church about practice time on its organ.
+  links:
+  - label: 'Royal College of Organists: tuition'
+    url: https://www.rco.org.uk/education_tuition.php
+    region: uk
+    checked: '2026-11-10'
+  - label: 'RSCM: Church Music Skills (organ, distance learning)'
+    url: https://www.rscm.org.uk/?p=210337
+    region: uk
+    checked: '2026-11-10'
+  - label: 'American Guild of Organists: Pipe Organ Encounters (POE+ for adults)'
+    url: https://www.agohq.org/pipe-organ-encounters/
+    region: us
+    checked: '2026-11-10'
+  - label: 'Goshen College Community School of the Arts, Indiana: organ lessons'
+    url: https://gcmusiccenter.org/community-school-arts/private-lessons/organ-lessons/
+    region: us
+    checked: '2026-11-10'
+  seo_title: 'Learn the organ as an adult: lessons, courses and costs'
+  description: How adults learn the church or pipe organ in the UK and US, from RCO classes and RSCM courses to AGO Pipe Organ Encounters, with costs as last listed.
+  detail:
+  - h: Where adults learn
+    p:
+    - The Royal College of Organists accepts students without audition at all levels, from beginner to advanced, and says its regular students are aged 10 to 90. You can take organ classes, individual lessons
+      or both, without committing to a whole term. Its three-hour RCO Academy classes are mostly limited to six players, and you do not need to be a member.
+    - The RSCM's Church Music Skills is a distance-learning course for anyone who wants foundational organ skills in a church setting, including pianists asked to play for services; it says players at about
+      Grade 5 piano get the most from it. In the US, the American Guild of Organists' POE+ is a four- to five-day course for adults, run by local chapters, covering basic technique, pedalling, improvisation
+      and registration for beginners.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Royal College of Organists (UK)
+        - RCO Academy classes (three hours, up to six players) and individual lessons; all levels
+        - Not listed on the tuition page; contact the College
+      - - RSCM Church Music Skills (UK, distance learning)
+        - Study at home plus practical work in your own church; assessed by tutors; no deadlines
+        - £120 registration, then £390 for the first level (£330 for RSCM members)
+      - - Goshen College Community School of the Arts, Indiana
+        - One-to-one lessons on the college's pipe organ; some piano experience strongly preferred
+        - $372 per 15-week semester for 30-minute lessons
+      - - American Guild of Organists, Rockford chapter, Illinois
+        - POE+, a five-day course for adults, June 2026
+        - $425
+  faq:
+  - q: Do I need to play the piano before learning the organ?
+    a: Not always, but it helps. Goshen College strongly prefers some piano experience, and the RSCM says players at about Grade 5 piano get the most from its organ course.
+  - q: Why do organists wear special shoes?
+    a: Brigham Young University's Organ Tutor says organ shoes make the heel easier to use and give a flat sole, so the foot is less likely to play sharps by accident. They can be as simple as house slippers.
+  - q: How much do organ lessons cost?
+    a: As last listed, Goshen College charges $372 for a 15-week semester of 30-minute lessons. The Royal College of Organists does not list its adult rate online.
+  - q: Is there a Pipe Organ Encounter for adults?
+    a: Yes. The American Guild of Organists' POE+ is for adults aged 19 or older who want to play the organ or already play in a church or synagogue.
+  sources:
+  - label: Royal College of Organists, Tuition
+    url: https://www.rco.org.uk/education_tuition.php
+    checked: '2026-11-10'
+  - label: Royal College of Organists, Courses and classes
+    url: https://www.rco.org.uk/education_college_events.php
+    checked: '2026-11-10'
+  - label: RSCM, Church Music Skills
+    url: https://www.rscm.org.uk/?p=210337
+    checked: '2026-11-10'
+  - label: American Guild of Organists, Pipe Organ Encounters
+    url: https://www.agohq.org/pipe-organ-encounters/
+    checked: '2026-11-10'
+  - label: Northern Public Radio, Pipe Organ Encounter Plus (POE+)
+    url: https://www.northernpublicradio.org/community-calendar/event/pipe-organ-encounter-plus-poe-17-02-2026-11-24-57
+    checked: '2026-11-10'
+  - label: Goshen College Community School of the Arts, Organ lessons
+    url: https://gcmusiccenter.org/community-school-arts/private-lessons/organ-lessons/
+    checked: '2026-11-10'
+  - label: Brigham Young University, Organ Tutor, Organ shoes
+    url: https://www.organ.byu.edu/organtutor/pedal_technique/organ_shoes/introduction/page2.htm
+    checked: '2026-11-10'
+  kit:
+  - name: Organ shoes
+    why: for playing the pedals with toe and heel; check the sole is thin and flat and the heel is the right height for you
+    url: https://www.amazon.co.uk/s?k=organ+shoes
+  - name: Metronome
+    why: for keeping hands and feet steady together when practising; check the click is loud enough in a church
+    url: https://www.amazon.co.uk/s?k=metronome
+  related:
+  - learn-the-piano
+  - learn-to-ring-church-bells
+  - take-a-music-grade
+  inspire:
+  - kind: read
+    person: Morwenna Campbell-Smith
+    line: Booked onto the Royal College of Organists' summer course as a complete beginner in 2013, and twelve years later went back to study in its Towards ARCO strand.
+    title: The RCO Summer Course – two weeks, twelve years apart
+    outlet: Royal College of Organists
+    url: https://i.rco.org.uk/the-rco-summer-course-two-weeks-twelve-years-apart/
+    checked: '2026-11-10'

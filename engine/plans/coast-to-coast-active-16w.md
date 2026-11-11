@@ -192,22 +192,22 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 ## On the day
 
-- Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. [1, 2, 28]
+- Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. [1, 2, 28, 29]
 - Start slower than you think you need to; early miles feel easy and are where most people overdo it. [8, 22]
 - On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. [16, 20]
-- In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them rather than treating the walk as a race. [29]
+- In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race. [30, 31]
 
 ## Safety
 
 - If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [18]
-- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [30]
+- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [32]
 - Check the forecast, walk in daylight, leave your route with someone, and turn back if conditions get beyond you. Summits are colder than valleys. [1]
-- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [31]
+- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [33]
 - Stop if something does not feel right, and get it checked rather than training through it. [3, 22]
-- In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. [28, 32]
-- In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). [32, 33]
-- On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard. [34]
-- Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard. [34, 35]
+- In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. [28, 29, 34]
+- In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). [34, 35]
+- On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard. [36, 37]
+- Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard. [36, 37, 38]
 
 ## Where this comes from
 
@@ -241,10 +241,13 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 26. Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Tier 4. https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/ (opened 2026-10-27)
 27. NHS, *Blisters (last reviewed 22 November 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/blisters/ (opened 2026-10-27)
 28. Mountain Rescue England and Wales, *Be AdventureSmart (safety advice leaflet)* (2025). Tier 3. https://new.cro.org.uk/wp-content/uploads/2025/04/MREWSafetyAdvice.pdf (opened 2026-11-07)
-29. Tanabe City Kumano Tourism Bureau, *Kumano Kodo tips and safety* (2026). Tier 3. https://www.tb-kumano.jp/en/kumano-kodo/tips/ (opened 2026-11-08)
-30. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
-31. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
-32. Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Tier 3. https://www.mountaineering.scot/news/avoid-hypothermia-when-hiking-in-scottish-winter (opened 2026-11-09)
-33. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
-34. South West Coast Path Association, *Safety advice* (2026). Tier 3. https://www.southwestcoastpath.org.uk/faq/safety-advice/ (opened 2026-11-07)
-35. RNLI (Royal National Lifeboat Institution), Lifeboats news release, *RNLI issue tidal safety warning in Wales ahead of half term weekend (19 February 2026)* (2026). Tier 3. https://rnli.org/news-and-media/2026/february/19/rnli-issue-tidal-safety-warning-in-wales-ahead-of-half-term-weekend (opened 2026-11-09)
+29. Pacific Crest Trail Association, *Safety advice for the Pacific Crest Trail (undated page; year is the year opened)* (2026). Tier 3. https://www.pcta.org/discover-the-trail/backcountry-basics/safety-tips/ (opened 2026-11-10)
+30. Tanabe City Kumano Tourism Bureau, *Kumano Kodo tips and safety* (2026). Tier 3. https://www.tb-kumano.jp/en/kumano-kodo/tips/ (opened 2026-11-08)
+31. U.S. National Park Service, *Beat the Heat: Prevent Heat-Related Illnesses (last updated 29 June 2023)* (2023). Tier 3. https://www.nps.gov/articles/heat-illness.htm (opened 2026-11-10)
+32. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
+33. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
+34. Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Tier 3. https://www.mountaineering.scot/news/avoid-hypothermia-when-hiking-in-scottish-winter (opened 2026-11-09)
+35. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
+36. South West Coast Path Association, *Safety advice* (2026). Tier 3. https://www.southwestcoastpath.org.uk/faq/safety-advice/ (opened 2026-11-07)
+37. Wales Coast Path (official site, Natural Resources Wales), *Wales Coast Path Safety Advice (undated page; year is the year opened)* (2026). Tier 3. https://llwybrarfordircymru.gov.uk/plan-your-visit/wales-coast-path-safety-advice?lang=en (opened 2026-11-10)
+38. RNLI (Royal National Lifeboat Institution), Lifeboats news release, *RNLI issue tidal safety warning in Wales ahead of half term weekend (19 February 2026)* (2026). Tier 3. https://rnli.org/news-and-media/2026/february/19/rnli-issue-tidal-safety-warning-in-wales-ahead-of-half-term-weekend (opened 2026-11-09)

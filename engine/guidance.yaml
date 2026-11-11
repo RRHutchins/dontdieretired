@@ -170,7 +170,7 @@ guidance:
     applies: [hill]
     use: advice
     text: Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail.
-    for: [ydnpa-three-peaks, bmc-hill-fit, mrew-safety]
+    for: [ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips]
 
   # ---------- the event itself ----------
   - id: taper
@@ -231,8 +231,8 @@ guidance:
     topic: on the day
     applies: [multiday]
     use: advice
-    text: In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them rather than treating the walk as a race.
-    for: [tanabe-kumano-tips]
+    text: In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race.
+    for: [tanabe-kumano-tips, nps-heat-illness]
   - id: build-day-walks
     topic: key session
     applies: [multiday, walking]
@@ -291,7 +291,7 @@ guidance:
     applies: [hill]
     use: safety
     text: In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999.
-    for: [mrew-safety, ms-hypothermia]
+    for: [mrew-safety, ms-hypothermia, pcta-safety-tips]
   - id: hill-hypothermia
     topic: warning signs
     applies: [hill]
@@ -311,14 +311,14 @@ guidance:
     events: [coast-to-coast]
     use: safety
     text: On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard.
-    for: [swcpa-safety]
+    for: [swcpa-safety, wcp-safety]
   - id: coast-tide-cutoff
     topic: on the day
     applies: [walking]
     events: [coast-to-coast]
     use: safety
     text: Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard.
-    for: [rnli-tidal-wales-2026, swcpa-safety]
+    for: [rnli-tidal-wales-2026, swcpa-safety, wcp-safety]
 
   # ---------- why each part of a plan is there (use: why; `role` ties it to a session; `short` is the one-line weekly version) ----------
   - id: why-long
