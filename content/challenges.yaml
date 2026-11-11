@@ -30175,3 +30175,593 @@
   - learn-judo
   - learn-tai-chi-form
   - try-trampolining
+
+- id: eat-at-a-michelin-starred-restaurant
+  title: Eat at a Michelin-starred restaurant
+  category: eat
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: A starred meal is a few hours of cooking judged against the MICHELIN Guide's five criteria, from the quality of the ingredients to how consistent the kitchen is over time. Lunch is often the cheaper way in, and the Bib Gourmand points to good cooking at gentler prices.
+  start:
+  - Open the MICHELIN Guide's restaurant search for the UK or the US, filter by distinction (1, 2 or 3 Stars, or Bib Gourmand) and look at what is near you.
+  - Narrow it with the filters for lunch, price level, special diets and online booking, then read the inspectors' notes on the places that appeal.
+  - Pick a cuisine you already enjoy and, for a first visit, consider a shorter menu or a lunch at a one-star restaurant, as the Guide suggests.
+  links:
+  - label: 'MICHELIN Guide: restaurant search (UK, prices in £)'
+    url: https://guide.michelin.com/gb/en/restaurants
+    region: uk
+    checked: '2026-11-11'
+  - label: The Cheapest MICHELIN-Star Restaurants For Lunch in the UK & Ireland
+    url: https://guide.michelin.com/gb/en/article/dining-out/the-cheapest-michelin-star-restaurants-for-lunch
+    region: uk
+    checked: '2026-11-11'
+  - label: 'MICHELIN Guide: restaurant search (US, prices in $)'
+    url: https://guide.michelin.com/us/en/restaurants
+    region: us
+    checked: '2026-11-11'
+  - label: The Least Expensive MICHELIN-Starred Restaurants in California
+    url: https://guide.michelin.com/us/en/best-of/the-least-expensive-michelin-starred-restaurants-in-california
+    region: us
+    checked: '2026-11-11'
+  seo_title: Michelin stars explained and how to find one near you
+  description: What one, two and three Michelin Stars, the Bib Gourmand and the Green Star mean, how to search the Guide near you, and why lunch is the cheaper way in.
+  detail:
+  - h: What it's really like
+    p:
+    - The Guide says its inspectors judge every restaurant on the same five criteria, including quality of ingredients, harmony of flavours and the chef's personality on the plate, and that consistency is key. It also says the style of a restaurant and how formal it is have no bearing on the award, and that inspectors eat at lunch as well as dinner.
+    - Lunch is the Guide's own tip for a cheaper starred meal. Its September 2026 list of the cheapest starred lunches in the UK and Ireland notes that fixed-price menus are far more common in the middle of the day, with the lunches it lists priced from £37.50 to £55, as last listed. Its California list, updated in July 2025, includes a $65 two-course lunch and a $130 eight-course tasting menu, as last listed.
+    - The Guide suggests lunch, or a shorter menu at a one-star restaurant, as an easy way in, and one inspector advises starting with a cuisine you already enjoy. The Guide also says to tell the sommelier your budget, to ask the kitchen to slow down if the pace is too quick, and not to feel pushed into expensive supplements.
+  - h: What the Guide's distinctions mean
+    table:
+      head:
+      - Distinction
+      - What the Guide says
+      - Search filter label
+      rows:
+      - - Three Stars
+        - Its highest honour; restaurants where chefs tend to be at the peak of their profession
+        - Exceptional cuisine
+      - - Two Stars
+        - Restaurants where the team's personalities and talents shine through, in expertly crafted, refined and inspired dishes
+        - Excellent cooking
+      - - One Star
+        - Top-quality ingredients and dishes with distinct flavours, cooked to a consistently high standard
+        - High quality cooking
+      - - Bib Gourmand
+        - Its award for great value; simple yet skilful cooking at an accessible price
+        - Good quality, good value cooking
+      - - MICHELIN Green Star
+        - Restaurants at the front of the industry for mindful practices that reduce their impact on the natural world
+        - Not a filter on the search pages
+    after: The Guide's search also filters by price level (from "On a budget" to "Spare no expense"), lunch or dinner, special diets such as vegetarian, vegan, gluten-free, halal and kosher options, and online booking. Great Britain and Ireland had 37 Green Star restaurants for 2026.
+  faq:
+  - q: What is the difference between 1, 2 and 3 Michelin stars?
+    a: The Guide's search labels them high quality cooking, excellent cooking and exceptional cuisine. Three Stars is its highest honour, for restaurants where chefs tend to be at the peak of their profession.
+  - q: What is a Bib Gourmand?
+    a: The Guide's award for great value, for simple yet skilful cooking at an accessible price. The Guide says it looks for a high standard of cooking whether it awards Stars or Bibs.
+  - q: What is the cheapest way to eat at a Michelin star restaurant?
+    a: Go at lunchtime. The Guide says fixed-price menus are far more common in the middle of the day; its UK and Ireland list of cheap starred lunches ranges from £37.50 to £55, as last listed.
+  - q: How do I find Michelin star restaurants near me?
+    a: Use the restaurant search on the MICHELIN Guide's UK or US site. Filter by distinction, then by lunch, price level, special diets or online booking, and use its nearest-restaurants option.
+  sources:
+  - label: MICHELIN Guide, What is a MICHELIN Star? (12 November 2025)
+    url: https://guide.michelin.com/en/article/features/what-is-a-michelin-star
+    checked: '2026-11-11'
+  - label: MICHELIN Guide, 7 New Green Stars Announced for Great Britain & Ireland 2026 (9 February 2026)
+    url: https://guide.michelin.com/gb/en/article/michelin-guide-ceremony/green-stars-sustainable-gastronomy-great-britain-uk-ireland-full-list-new
+    checked: '2026-11-11'
+  - label: MICHELIN Guide, MICHELIN Restaurants (UK search)
+    url: https://guide.michelin.com/gb/en/restaurants
+    checked: '2026-11-11'
+  - label: MICHELIN Guide, MICHELIN Restaurants (US search)
+    url: https://guide.michelin.com/us/en/restaurants
+    checked: '2026-11-11'
+  - label: MICHELIN Guide, The Cheapest MICHELIN-Star Restaurants For Lunch in the UK & Ireland (14 September 2026)
+    url: https://guide.michelin.com/gb/en/article/dining-out/the-cheapest-michelin-star-restaurants-for-lunch
+    checked: '2026-11-11'
+  - label: MICHELIN Guide, The Least Expensive MICHELIN-Starred Restaurants in California (updated 24 July 2025)
+    url: https://guide.michelin.com/us/en/best-of/the-least-expensive-michelin-starred-restaurants-in-california
+    checked: '2026-11-11'
+  - label: MICHELIN Guide, inspectors' fine dining tips (22 April 2025)
+    url: https://guide.michelin.com/en/article/features/michelin-guide-inspectors-guide-to-fine-dining
+    checked: '2026-11-11'
+  kit:
+  - name: Pocket notebook
+    why: to note the dishes and wines you want to remember
+    url: https://www.amazon.co.uk/s?k=pocket+notebook
+  related:
+  - five-dinners-by-heart
+  - wset-wine-course
+  - cook-a-community-meal
+  - grow-your-own-herbs
+
+- id: take-a-bread-making-class
+  title: Learn to bake bread on a one-day class
+  category: eat
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: A day at a bakery school takes you from flour and yeast to a counter of finished loaves, mixing, shaping and baking alongside a teacher. Beginners' classes in the UK and US run from a few hours to a full day, and at least one sends you home with loaves, recipes and dough to bake again in your own oven.
+  start:
+  - 'Find a class near you: a bakery school, a cookery school, or the "bread making classes / courses" filter on the Real Bread Campaign''s map.'
+  - Read the class description for the level, the breads you will make, and whether lunch, an apron or take-home bread is included.
+  - Bake the same recipe again at home within a week or two, while the shaping is still fresh in your hands.
+  links:
+  - label: 'Real Bread Campaign: Real Bread Map (filter for bread making classes / courses)'
+    url: https://www.sustainweb.org/realbread/map/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Bread Ahead, London: Bread Bakery Workshop'
+    url: https://www.breadahead.com/product/bbw
+    region: uk
+    checked: '2026-11-11'
+  - label: 'The School of Artisan Food, Nottinghamshire: breads and baking short courses'
+    url: https://www.schoolofartisanfood.org/artisan-short-courses/breads-baking/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'King Arthur Baking School (Vermont and Washington)'
+    url: https://www.kingarthurbaking.com/baking-school
+    region: us
+    checked: '2026-11-11'
+  - label: 'BAKE! at Zingerman''s Bakehouse, Ann Arbor: classes'
+    url: https://www.bakewithzing.com/classes
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Bread making classes for beginners: what to expect'
+  description: What a one-day bread making class teaches, what beginners bake and take home, what classes cost in the UK and US, and how to find one near you.
+  detail:
+  - h: What a bread class is like
+    p:
+    - Most beginners' classes are hands-on from the start. At Bread Ahead in London the full-day Bread Bakery Workshop covers ciabatta, soda bread, focaccia and a white country loaf, and is described as suitable for all levels of experience. The School of Artisan Food's Introduction to British Breads is labelled Beginner and covers dough preparation, shaping and baking, from a cottage loaf to crumpets and muffins on the griddle.
+    - In the US, King Arthur Baking School's four-hour Baguettes class works through a preferment, shaping and slashing, and steaming in a home oven, with no more than 16 people. At Zingerman's BAKE! in Ann Arbor, the challah class focuses on braiding, and you leave with the two loaves you baked, the recipes and dough for one more loaf at home.
+  - h: Where to take a class
+    table:
+      head:
+      - Where
+      - Class
+      - Cost (as last listed)
+      rows:
+      - - Bread Ahead, Borough Market or Wembley, London
+        - 'Bread Bakery Workshop: full day, 10am to 4.30pm, lunch included'
+        - £240
+      - - The School of Artisan Food, Welbeck, Nottinghamshire
+        - 'Introduction to British Breads: one day, 9am to 4.30pm, buffet lunch included'
+        - £215
+      - - The School of Artisan Food, Welbeck, Nottinghamshire
+        - 'Naan Breads and Pittas: half day'
+        - £125
+      - - King Arthur Baking School, Norwich, Vermont or Skagit Valley, Washington
+        - 'Baguettes: four hours, in person'
+        - $150
+      - - BAKE! at Zingerman's Bakehouse, Ann Arbor, Michigan
+        - 'Hurray for Challah: four hours, in person, adults 17 and up'
+        - $140
+    after: Popular dates sell out; the School of Artisan Food's Introduction to British Breads was showing as sold out, with a waiting list, when checked. For classes nearer home in the UK, the Real Bread Campaign's map has a filter for bread making classes and courses.
+  faq:
+  - q: Do I need any experience to go on a bread making class?
+    a: No. Bread Ahead says its Bread Bakery Workshop suits all levels of experience, and the School of Artisan Food marks its Introduction to British Breads as Beginner.
+  - q: How much does a bread making course cost?
+    a: As last listed, from £125 for a half-day class to £240 for a full day in the UK, and $140 to $150 for a four-hour class at the US schools above.
+  - q: Do you take the bread home from a baking class?
+    a: Sometimes. Zingerman's BAKE! sends you home with your two challah loaves, the recipes and extra dough. Other schools do not say, so check the class page.
+  - q: How long is a bread making class?
+    a: From about three and a half hours for a half-day class to a full day of six and a half to seven and a half hours, often with lunch.
+  sources:
+  - label: Real Bread Campaign (Sustain), Real Bread Map
+    url: https://www.sustainweb.org/realbread/map/
+    checked: '2026-11-11'
+  - label: Bread Ahead, Bread Bakery Workshop
+    url: https://www.breadahead.com/product/bbw
+    checked: '2026-11-11'
+  - label: The School of Artisan Food, Breads and baking short courses
+    url: https://www.schoolofartisanfood.org/artisan-short-courses/breads-baking/
+    checked: '2026-11-11'
+  - label: The School of Artisan Food, Introduction to British Breads
+    url: https://www.schoolofartisanfood.org/courses/introduction-to-british-breads/
+    checked: '2026-11-11'
+  - label: King Arthur Baking School
+    url: https://www.kingarthurbaking.com/baking-school
+    checked: '2026-11-11'
+  - label: King Arthur Baking School, Baguettes
+    url: https://www.kingarthurbaking.com/baking-school/classes/baguettes
+    checked: '2026-11-11'
+  - label: BAKE! at Zingerman's Bakehouse, Hurray for Challah
+    url: https://www.bakewithzing.com/class/hurray-challah
+    checked: '2026-11-11'
+  kit:
+  - name: Dough scraper
+    why: for lifting, dividing and shaping sticky dough on the worktop
+    url: https://www.amazon.co.uk/s?k=dough+scraper
+  - name: Digital kitchen scales
+    why: for weighing flour and water when you follow a class recipe at home
+    url: https://www.amazon.co.uk/s?k=digital+kitchen+scales
+  - name: 2lb loaf tin
+    why: for baking a sandwich loaf at home after the class
+    url: https://www.amazon.co.uk/s?k=2lb+loaf+tin
+  related:
+  - sourdough-from-starter
+  - five-dinners-by-heart
+  - cook-a-community-meal
+  - preserve-a-seasons-fruit
+
+- id: go-to-cookery-school
+  title: Take a course at a cookery school or college
+  category: eat
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: A day at a cookery school gives you weighed-out ingredients, hands-on teaching in a small group and a plate of your own cooking at the end. Courses run from a three-hour knife class to a week of demonstrations and hands-on sessions at an organic farm school in Ireland.
+  start:
+  - 'Choose a format: a one-day class on a single skill (knives, pasta, pastry, fish), a run of evening or weekend classes at a local college, or a week-long introductory course.'
+  - Read the course page for what is included (ingredients, lunch, recipes, containers to take food home) and whether it is hands-on, demonstration or both.
+  - Wear long trousers, a long-sleeved top and closed, flat shoes, as Leiths asks, and take containers for anything you bring home.
+  links:
+  - label: 'Leiths: Culinary Masterclasses, one-day courses for home cooks (London)'
+    url: https://leiths.com/culinary-masterclasses/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Cornwall College: adult cookery courses'
+    url: https://www.cornwall.ac.uk/adult/short-courses/adult-cookery-courses/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Institute of Culinary Education: recreational classes (New York and Los Angeles)'
+    url: https://recreational.ice.edu/
+    region: us
+    checked: '2026-11-11'
+  - label: 'Trident Technical College: culinary, baking and pastry classes (South Carolina)'
+    url: https://www.tridenttech.edu/programs/ce/personal-interest/culinary-baking-pastry.html
+    region: us
+    checked: '2026-11-11'
+  - label: 'Ballymaloe Cookery School: short courses (Ireland)'
+    url: https://www.ballymaloecookeryschool.ie/cookery-courses/about-our-short-courses
+    region: anywhere
+    checked: '2026-11-11'
+  seo_title: 'Cookery school courses: from a day class to a week'
+  description: What a day at cookery school is like, what to wear, and what one-day classes and week-long courses cost in the UK, Ireland and the US, as last listed.
+  detail:
+  - h: Choosing a course, and what a day is like
+    p:
+    - Start with what you want to get better at. Leiths in London runs one-day masterclasses on a single skill, such as knives, pasta, fish, bakery or pastry. The knife skills day covers jointing a whole chicken, filleting flat and round fish, vegetable preparation, and how to choose, care for and sharpen a knife.
+    - The day itself is short and full. At Leiths you arrive from 9.30am, cook from 10am until about 1.45pm, then eat the lunch you have made with the rest of the group, and leave at 2.30pm. Ingredients are weighed out in advance, there is a recipe booklet, and the washing up is done for you.
+    - Check whether a course is hands-on, demonstration or a mix. Ballymaloe's one-week Intensive Introductory Course combines six demonstrations with four hands-on practical sessions, at one teacher to six students, and includes a tour of the organic farm, gardens, dairy and greenhouses. Accommodation is available on the grounds and nearby.
+    - Local colleges are the low-cost way in. Cornwall College runs short adult cookery classes from curries to bread and shellfish, and many adults living in Cornwall can take up to two courses a year free or at a small fee, depending on household income. In the US, some community and technical colleges, such as Trident Technical College, run one-day classes through continuing education.
+  - h: What courses cost
+    table:
+      head:
+      - Where
+      - Course
+      - Cost (as last listed)
+      rows:
+      - - Leiths, London
+        - 'Culinary Masterclass: Knife Skills, one day, lunch included'
+        - £175 per listed date (the course summary shows £210)
+      - - Cornwall College, Camborne and St Austell
+        - Short adult cookery classes, such as Classic Curries and Basic Breads
+        - For Cornwall residents aged 19 and over: free tuition for up to two courses a year if household income is under £32,000, otherwise typically £9 to £30 (as last listed); some courses have a materials fee
+      - - Ballymaloe Cookery School, Ireland
+        - Half-day to week-long short courses; Intensive Introductory Course Part 4, one week
+        - €125 to €265 for a half-day cookery class; €2,335 for one week of the Intensive Introductory Course (Part 4), as last listed
+      - - Institute of Culinary Education, New York
+        - Knife Skills 1, one three-hour lesson
+        - $150
+      - - Trident Technical College, North Charleston, South Carolina
+        - Single-day classes, such as Knife Skills and Introduction to Mediterranean Cooking
+        - $80 to $120
+    after: Prices change and dates sell out, so check the course page before you book. Cornwall College says only the first two funded courses each academic year are free or reduced-cost.
+  faq:
+  - q: How much does a cookery school course cost?
+    a: It varies widely. As last listed, a three-hour knife class at the Institute of Culinary Education in New York was $150, a one-day Leiths masterclass in London £175, and a week at Ballymaloe €2,335.
+  - q: What should I wear to a cookery class?
+    a: Leiths advises long trousers and a long-sleeved top, with closed-toed, flat-soled shoes. It also asks you to bring containers to take food home.
+  - q: Do you eat what you cook at cookery school?
+    a: Often. At a Leiths masterclass, lunch is the food you have cooked, eaten with the rest of the class. Ballymaloe's introductory week includes breakfast and lunch.
+  - q: Are there free cookery classes for adults?
+    a: Some colleges offer them. Cornwall College says most adults aged 19 and over living in Cornwall can take many of its short courses without a tuition fee, depending on household income.
+  sources:
+  - label: Leiths, Culinary Masterclasses
+    url: https://leiths.com/culinary-masterclasses/
+    checked: '2026-11-11'
+  - label: Leiths, Culinary Masterclass – Knife Skills
+    url: https://leiths.com/culinary-masterclasses/culinary-masterclass-knife-skills/
+    checked: '2026-11-11'
+  - label: Ballymaloe Cookery School, About our short courses
+    url: https://www.ballymaloecookeryschool.ie/cookery-courses/about-our-short-courses
+    checked: '2026-11-11'
+  - label: Ballymaloe Cookery School, Intensive Introductory Course
+    url: https://www.ballymaloecookeryschool.ie/courses/tbc-intensive-introductory-course
+    checked: '2026-11-11'
+  - label: Cornwall College, Adult cookery courses
+    url: https://www.cornwall.ac.uk/adult/short-courses/adult-cookery-courses/
+    checked: '2026-11-11'
+  - label: Cornwall College, Free cookery classes
+    url: https://www.cornwall.ac.uk/adult/free-adult-courses/free-cookery-classes/
+    checked: '2026-11-11'
+  - label: Institute of Culinary Education, Recreational classes
+    url: https://recreational.ice.edu/
+    checked: '2026-11-11'
+  - label: Institute of Culinary Education, Knife Skills 1
+    url: https://recreational.ice.edu/courses/knife-skills-class/51
+    checked: '2026-11-11'
+  - label: Trident Technical College, Culinary, baking and pastry classes
+    url: https://www.tridenttech.edu/programs/ce/personal-interest/culinary-baking-pastry.html
+    checked: '2026-11-11'
+  kit:
+  - name: Cook's knife
+    why: for practising at home what a knife skills class teaches
+    url: https://www.amazon.co.uk/s?k=cook%27s+knife
+  - name: Food storage containers
+    why: to take home what you cook; Leiths asks you to bring them
+    url: https://www.amazon.co.uk/s?k=food+storage+containers
+  related:
+  - five-dinners-by-heart
+  - sourdough-from-starter
+  - cook-a-community-meal
+  - wset-wine-course
+
+- id: row-across-the-atlantic
+  title: Row across the Atlantic
+  category: move
+  kind: event
+  effort: demanding
+  cost: high
+  time: year
+  setting: outdoors
+  company: either
+  regions:
+  - world
+  why: The World's Toughest Row takes ocean rowing boats more than 3,000 miles from La Gomera in the Canary Islands to Antigua, rowed by solo rowers, pairs, trios and crews of four or five. It is an expedition rather than a race you can enter on a whim, with mandatory safety courses, sea time and a long build-up, and many crews row to raise money for charity.
+  start:
+  - Read the organiser's Atlantic pages, then use the Interested? page to ask Atlantic Campaigns for the entry details, fee and what it includes.
+  - Decide whether to row solo or as a pair, trio or four, and look at the boats and classes the race accepts.
+  - Book the required safety training, including the RYA Sea Survival, RYA First Aid and RYA Marine Radio (SRC) courses, and plan your hours at sea in the boat.
+  links:
+  - label: "World's Toughest Row: the Atlantic"
+    url: https://www.worldstoughestrow.com/the-atlantic/
+    region: anywhere
+    checked: '2026-11-11'
+  - label: "World's Toughest Row: Interested? (enquire about entry)"
+    url: https://www.worldstoughestrow.com/interested/
+    region: anywhere
+    checked: '2026-11-11'
+  - label: 'Chieftain Training: ocean rowers navigation and safety training'
+    url: https://chieftain.training/ocean-rowers-rowing-navigation-safety-training/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'RYA: Marine Radio SRC Course and Exam'
+    url: https://www.rya.org.uk/course-finder/marine-radio-src-course-and-exam/
+    region: uk
+    checked: '2026-11-11'
+  safety: This is an expedition across open ocean that takes months of preparation, so complete the organiser's required safety courses, carry the safety kit the race rules demand and check with your GP (family doctor) before you start training.
+  seo_title: 'How to row across the Atlantic: race, courses and training'
+  description: How the World's Toughest Row works from La Gomera to Antigua, the safety courses rowers must pass, sea time, crew sizes and how to enquire about entry.
+  detail:
+  - h: What the race involves
+    p:
+    - The World's Toughest Row – Atlantic starts at San Sebastián de La Gomera in the Canary Islands and finishes at Nelson's Dockyard in English Harbour, Antigua, a crossing the organiser puts at more than 3,000 miles. The annual race begins in early December; the next start is listed as 12 December 2026, with another on 12 December 2027.
+    - It has been run by Atlantic Campaigns, a company based in La Gomera, since 2012, and was formerly known as the Talisker Whisky Atlantic Challenge. Crews row solo, as pairs, trios, fours or fives, in men's, women's and mixed classes. The organiser says the fastest crossing, by the four-man crew The Four Oarsmen, took just under 30 days, and that one solo rower took 96 days in 2016.
+    - Conditions are hard. The organiser mentions waves of up to 20 ft, about 1.5 million oar strokes, more than 5,000 calories burned a day and a bucket instead of a toilet, and rowers must be clipped on with a harness whenever they are on deck. Many crews raise money for charity; the history page records Row 4 James raising £650k in 2016, and it also notes an oldest-pair record set by the Grandads of the Atlantic in 2018.
+  - h: The safety courses rowers must pass
+    table:
+      head:
+      - Requirement
+      - Course
+      - What it involves
+      rows:
+      - - Sea survival
+        - RYA Basic Sea Survival Certificate
+        - One day of classroom and pool work, including boarding a liferaft in a lifejacket
+      - - First aid
+        - RYA First Aid Course
+        - One classroom day covering CPR, cold shock and hypothermia, seasickness and calling for help by VHF
+      - - Marine radio
+        - RYA Marine Radio SRC Course and Exam
+        - About 10 hours plus an exam, from age 16; exam fee £76 payable to the RYA (as last listed)
+      - - Navigation and seamanship
+        - Navigation and seamanship training
+        - Offered by ocean-rowing training providers such as Chieftain Training, alongside the three RYA courses
+    after: Chieftain Training says these certificates are laid down by the Spanish authorities and form part of the rules for the race, and that rowers must complete at least two days of face-to-face training. One solo rower preparing for the 2025 race, writing for The Rivers Trust in 2024, said rowers must also log at least 120 hours on the water, 24 of them at night, with one session over 36 hours. The organiser does not publish its entry fee online, so ask Atlantic Campaigns for the current figure and what it includes.
+  faq:
+  - q: How long does it take to row across the Atlantic?
+    a: In the World's Toughest Row, the fastest four, The Four Oarsmen, took just under 30 days. One solo rower took 96 days to reach Antigua in 2016.
+  - q: What qualifications do you need to row the Atlantic?
+    a: According to Chieftain Training, all competitors need RYA Sea Survival, RYA First Aid, the RYA Short Range Certificate (VHF) and navigation and seamanship training.
+  - q: How far is it to row across the Atlantic?
+    a: The organiser describes the route from La Gomera in the Canary Islands to Antigua as more than 3,000 miles.
+  - q: Can you row across the Atlantic on your own?
+    a: Yes. The race has a solo class as well as pairs, trios, fours and fives.
+  sources:
+  - label: "World's Toughest Row, home page"
+    url: https://worldstoughestrow.com/
+    checked: '2026-11-11'
+  - label: "World's Toughest Row, The Atlantic"
+    url: https://www.worldstoughestrow.com/the-atlantic/
+    checked: '2026-11-11'
+  - label: "World's Toughest Row, Interested?"
+    url: https://www.worldstoughestrow.com/interested/
+    checked: '2026-11-11'
+  - label: "World's Toughest Row, Boats and classes"
+    url: https://www.worldstoughestrow.com/boat-details/
+    checked: '2026-11-11'
+  - label: "World's Toughest Row, About us"
+    url: https://www.worldstoughestrow.com/about-us/
+    checked: '2026-11-11'
+  - label: "World's Toughest Row, History"
+    url: https://www.worldstoughestrow.com/history/
+    checked: '2026-11-11'
+  - label: Chieftain Training, Ocean rowers navigation and safety training
+    url: https://chieftain.training/ocean-rowers-rowing-navigation-safety-training/
+    checked: '2026-11-11'
+  - label: RYA, Basic Sea Survival Certificate
+    url: https://www.rya.org.uk/course-finder/basic-sea-survival-certificate/
+    checked: '2026-11-11'
+  - label: RYA, First Aid Course
+    url: https://www.rya.org.uk/course-finder/first-aid-course/
+    checked: '2026-11-11'
+  - label: RYA, Marine Radio SRC Course and Exam
+    url: https://www.rya.org.uk/course-finder/marine-radio-src-course-and-exam/
+    checked: '2026-11-11'
+  - label: The Rivers Trust, What does it take to qualify for the World's Toughest Row?
+    url: https://theriverstrust.org/about-us/news/jake-still-qualify-for-the-worlds-toughest-row
+    checked: '2026-11-11'
+  kit:
+  - name: Rowing gloves
+    why: protecting your hands during long training sessions on the water
+    url: https://www.amazon.co.uk/s?k=rowing+gloves
+  - name: Waterproof dry bag
+    why: keeping kit and paperwork dry on training rows at sea
+    url: https://www.amazon.co.uk/s?k=waterproof+dry+bag
+  related:
+  - learn-to-row
+  - try-rowing-indoor
+  - learn-to-sail
+  - learn-to-kayak
+
+- id: paddle-devizes-to-westminster
+  title: Paddle the Devizes to Westminster canoe race
+  category: move
+  kind: event
+  effort: demanding
+  cost: mid
+  time: months
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  why: The Devizes to Westminster race, known as DW, runs 125 miles from the Kennet and Avon Canal to the tidal Thames in London, with 77 portages where you climb out and carry the boat. Senior doubles do it non-stop through the night, while the singles, junior, veteran/junior, Endeavour and paddleboard classes take four days.
+  start:
+  - 'Find clubs near you with Go Paddling''s club finder (powered by Paddle UK) and look for one that races marathon; DW''s advice page suggests getting in touch with the nearest racing club for help with boats, technique and a training plan.'
+  - Book the DW Training Day at Newbury Canoe Club (12 December 2026, £40 per K2 crew or £20 per K1 crew, as last listed), and get in touch with DW about its DW Buddy scheme.
+  - Allow at least six months of training, recruit a support crew early, and check the qualification statement you must make before you enter.
+  links:
+  - label: 'Devizes to Westminster International Canoe Race: home and entries'
+    url: https://dwrace.co.uk/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'DW: race info, rules and 2027 entry fees'
+    url: https://www.dwrace.co.uk/info
+    region: uk
+    checked: '2026-11-11'
+  - label: 'DW: frequently asked questions (ages, qualification, licences)'
+    url: https://www.dwrace.co.uk/faq
+    region: uk
+    checked: '2026-11-11'
+  - label: 'DW: advice for first-time paddlers'
+    url: https://www.dwrace.co.uk/advice
+    region: uk
+    checked: '2026-11-11'
+  - label: 'DW Training Day at Newbury Canoe Club'
+    url: https://www.dwrace.co.uk/dw-training-day
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Go Paddling (Paddle UK): find local paddling clubs'
+    url: https://gopaddling.info/blog/local-paddling-services/find-paddling-clubs/
+    region: uk
+    checked: '2026-11-11'
+  safety: The course mixes canal, river and the tidal Thames, senior doubles paddle part of it in the dark and you are on the water for long hours, so follow the organiser's rules and handbook, wear a buoyancy aid and carry emergency kit and a phone when training as DW advises, train with a club, and check with your GP (family doctor) before you start a long training plan.
+  seo_title: 'Devizes to Westminster canoe race: how to enter and train'
+  description: How the 125-mile Devizes to Westminster canoe race works, its classes and 2027 entry fees, the qualification needed, support crews and how to train.
+  detail:
+  - h: What it's really like
+    p:
+    - DW starts in Devizes, Wiltshire, follows the Kennet and Avon Canal to Reading, then the Thames to Teddington and down the tideway to the finish. The organiser gives the course as 125 miles including 77 portages, and the race is held over the Easter weekend; the 2027 race is listed for 26 to 29 March.
+    - Senior doubles race non-stop and must reach Teddington in time to paddle the tideway on the ebb tide, and the organiser says all senior doubles paddle part of the Thames at night. The stage races run Devizes to Newbury (34 miles), Newbury to Marlow (36), Marlow to Teddington (38) and Teddington to the finish at Barn Elms (13).
+    - The organiser recommends at least six months of training on water like the course (canal, flowing river and estuary). Its advice for non-stop crews is to be stable in the boat by September, then paddle two to five times a week, building to several paddles of 30 miles or more. The Waterside and Thameside races on weekends before Easter cover the canal and the Thames as far as Marlow, and a DW Winter Warm-Up of 26 or 15 miles is listed for 6 December 2026.
+    - Support crews follow their paddlers down the course to look after them at the bankside. DW strongly advises every competitor to have one; stage race crews are limited to two supporters per paddler and two cars per boat, and supporters must keep to a code of conduct.
+  - h: The classes
+    table:
+      head:
+      - Class
+      - Format
+      - Who can enter (as the organiser states)
+      - Days
+      rows:
+      - - Senior Doubles
+        - Non-stop, two paddlers
+        - Seniors, 18 or over on 1 January of the race year
+        - One continuous race, starting on Easter Saturday
+      - - Senior Singles
+        - Stage race, one paddler (surfskis trialled within this class in 2026)
+        - Seniors, 18 or over on 1 January of the race year
+        - Four days, Good Friday to Easter Monday
+      - - Junior Doubles
+        - Stage race, two paddlers
+        - Juniors, over 15 and under 19 on 1 January of the race year, endorsed by a club coach or team leader
+        - Four days
+      - - Veteran / Junior
+        - Stage race
+        - The FAQ defines a veteran as over 35 on 1 January of the race year and a junior as above
+        - Four days
+      - - Endeavour
+        - Stage race
+        - Not defined on the current pages; an indicative maximum of 30 boats
+        - Four days
+      - - Senior Stand Up Paddle Board
+        - Stage race; a formal class from 2026
+        - Seniors, 18 or over on 1 January of the race year
+        - Four days
+    after: 'For Senior Doubles, Senior Singles, Veteran-Junior and Endeavour you confirm one of: finishing DW in the last three races, a current marathon ranking in divisions 1 to 5, or divisions 6 to 9 plus a marathon of over 20 miles; others, including international paddlers, can offer a qualified club coach''s endorsement or GPS proof of more than 30 continuous miles on similar water within 8½ hours. Early Bird entries for 2027 closed on 25 October 2026. As last listed, Advanced entries (to 14 February 2027) run from £285 for senior singles and paddleboards to £455 for senior and junior doubles, and Last Minute entries (to 14 March 2027) from £320 to £495. Paddle UK or Canoe Wales membership includes the waterway licences you need.'
+  faq:
+  - q: How long is the Devizes to Westminster canoe race?
+    a: The organiser gives it as 125 miles including 77 portages, from Devizes on the Kennet and Avon Canal to the finish on the tidal Thames.
+  - q: Do you need experience to enter DW?
+    a: Yes. Seniors and veterans must confirm a previous finish, a marathon ranking, a coach's endorsement or GPS proof of more than 30 continuous miles within 8½ hours, and umpires assess every entry.
+  - q: How much does it cost to enter the Devizes to Westminster?
+    a: For 2027, as last listed, Advanced entries (to 14 February 2027) run from £285 for senior singles and paddleboards to £455 for senior and junior doubles, rising to £320 to £495 for Last Minute entries (to 14 March 2027).
+  - q: How long should I train for DW?
+    a: The organiser recommends at least six months, on canal, flowing river and estuary water, and advises senior doubles crews to train at night.
+  sources:
+  - label: Devizes to Westminster International Canoe Race, 125 miles, 77 portages, 1 unique challenge
+    url: https://dwrace.co.uk/
+    checked: '2026-11-11'
+  - label: Devizes to Westminster, Race info
+    url: https://www.dwrace.co.uk/info
+    checked: '2026-11-11'
+  - label: Devizes to Westminster, FAQ
+    url: https://www.dwrace.co.uk/faq
+    checked: '2026-11-11'
+  - label: Devizes to Westminster, Advice
+    url: https://www.dwrace.co.uk/advice
+    checked: '2026-11-11'
+  - label: Devizes to Westminster, DW 2027 — Express your Interest today!
+    url: https://www.dwrace.co.uk/news/xk14tp88jehcwr6pul9yd506pw4335
+    checked: '2026-11-11'
+  - label: Devizes to Westminster, DW Training Day
+    url: https://www.dwrace.co.uk/dw-training-day
+    checked: '2026-11-11'
+  - label: Devizes to Westminster, DW announces Winter event
+    url: https://www.dwrace.co.uk/news/dw-announces-winter-event
+    checked: '2026-11-11'
+  - label: 'Go Paddling (Paddle UK), Find local paddling clubs: UK wide'
+    url: https://gopaddling.info/blog/local-paddling-services/find-paddling-clubs/
+    checked: '2026-11-11'
+  kit:
+  - name: Head torch
+    why: night training on the water, which DW advises for senior doubles crews
+    url: https://www.amazon.co.uk/s?k=waterproof+head+torch
+  - name: Dry bag
+    why: keeps a phone and emergency kit dry on long training paddles
+    url: https://www.amazon.co.uk/s?k=dry+bag+kayak
+  related:
+  - learn-to-kayak
+  - canoe-a-river-trail
+  - stand-up-paddleboarding
+  - learn-to-row
