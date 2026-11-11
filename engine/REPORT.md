@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-11)
 
-70 sources, 84 statements, 12 event profiles. Core 59, supported 25, thin 0, contested 0.
+73 sources, 85 statements, 12 event profiles. Core 61, supported 24, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -20,6 +20,8 @@
 - Centers for Disease Control and Prevention (CDC Yellow Book 2026; Hackett and Shlim), *High-altitude travel and altitude illness* (2025). Opened 2026-11-04.
 - Centers for Disease Control and Prevention (CDC Yellow Book 2026; Cabada and Bégué), *Peru (destination chapter)* (2025). Opened 2026-11-04.
 - NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Opened 2026-11-09.
+- World Health Organization, *Falls (fact sheet, 21 October 2026)* (2026). Opened 2026-11-11.
+- NHS (Every Mind Matters), *Sleep problems (undated page; year is the year opened)* (2026). Opened 2026-11-11.
 
 **4. Peer-reviewed review or large study**
 - Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Opened 2026-10-27.
@@ -29,6 +31,7 @@
 - Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Opened 2026-10-27.
 - Journal of Thermal Biology 119 (Barwood, Eglin, Hills, Johnston, Massey, McMorris, Tipton, Wakabayashi and Webster), *Habituation of the cold shock response, a systematic review and meta-analysis* (2024). Opened 2026-11-02.
 - International Journal of Environmental Research and Public Health 17(23), 8984 (Knechtle, Waśkiewicz, Sousa, Hill and Nikolaidis), *Cold Water Swimming, Benefits and Risks, a Narrative Review* (2020). Opened 2026-11-09.
+- Cochrane Database of Systematic Reviews 2019(1), CD012424, *Exercise for preventing falls in older people living in the community (systematic review of 108 randomised trials)* (2019). Opened 2026-11-11.
 
 **3. Governing body or route authority**
 - England Athletics (Tom Craggs, National Endurance Manager), *Simplifying the running jargon, training pace* (2024). Opened 2026-10-27.
@@ -104,6 +107,8 @@
 | core | 11 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water, nhs-hypothermia |
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
 | core | 9 | recovery | Plan rest days into every week, and take an easier day when your legs are heavy. | nhs-c25k, higdon-novice1, bmc-long-distance |
+| core | 9 | body maintenance | Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third. | sherrington-2019, who-falls |
+| core | 9 | recovery | Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. | ea-pavey-marathon, bmc-long-distance, nhs-emm-sleep |
 | core | 9 | feet | Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. | nhs-blisters, ea-pavey-marathon, bmc-long-distance |
 | core | 9 | on the day | Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. | ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits |
 | core | 9 | warning signs | In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. | mrew-safety, ms-hypothermia, pcta-safety-tips |
@@ -155,7 +160,6 @@
 | supported | 5 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker |
 | supported | 5 | why | Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 4 | progression | Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. | higdon-novice1, rc-down-weeks |
-| supported | 4 | recovery | Keep a regular sleep routine through training; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. | ea-pavey-marathon, bmc-long-distance |
 | supported | 4 | why | An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. | rc-down-weeks, higdon-novice1 |
 | supported | 3 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace |
 | supported | 3 | on the day | Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month. | inyo-whitney-leaflet |

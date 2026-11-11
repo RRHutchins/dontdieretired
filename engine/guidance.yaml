@@ -113,12 +113,18 @@ guidance:
     use: safety
     text: If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it.
     for: [nhs-bones-65]
+  - id: falls-exercise
+    topic: body maintenance
+    applies: [all]
+    use: advice
+    text: Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third.
+    for: [sherrington-2019, who-falls]
   - id: sleep-routine
     topic: recovery
     applies: [endurance]
     use: advice
-    text: Keep a regular sleep routine through training; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect.
-    for: [ea-pavey-marathon, bmc-long-distance]
+    text: Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect.
+    for: [ea-pavey-marathon, bmc-long-distance, nhs-emm-sleep]
   - id: dont-chase-missed
     topic: recovery
     applies: [all]

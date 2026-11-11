@@ -6665,25 +6665,201 @@
   regions:
   - uk
   - us
-  why: Archery rewards stillness and repetition more than strength, and the satisfaction of an arrow landing where you meant it to is immediate. Clubs and approved centres lend the bows and arrows, so you can learn the basics before buying anything.
+  why: Archery rewards stillness and repetition more than strength, and the satisfaction of an arrow landing where you meant it to is immediate. Clubs lend the bows and arrows on a beginners' course, so
+    you can learn the basics before buying anything.
   start:
-  - Search Start Archery's Find an Experience and Find a Club pages, or USA Archery's Find a Club page, for somewhere near you.
-  - Book a taster or beginners' course and confirm that the bow, arrows and arm guard are provided.
-  - Wear a close-fitting top and flat shoes, and follow the range commands from the first minute.
+  - Search Start Archery's Find a Club page in the UK, or USA Archery's Find a Club page in the US, for somewhere near you.
+  - Book a beginners' course or a one-off introductory session, and ask whether the bow, arrows, arm guard and finger tab are provided.
+  - Wear close-fitting layers and closed-toe shoes, tie back long hair, and follow the coach's range commands from the first minute.
   links:
-  - label: Start Archery (beginners' site run by Archery GB, the governing body)
-    url: https://startarchery.co.uk/
+  - label: 'Start Archery (run by Archery GB): how to start, courses and centres'
+    url: https://startarchery.co.uk/start-my-journey/how-do-i-start-my-journey
     region: uk
-    checked: '2026-10-07'
-  - label: USA Archery (US national governing body)
-    url: https://www.usarchery.org/
+    checked: '2026-11-11'
+  - label: 'Start Archery: find an archery club near me'
+    url: https://startarchery.co.uk/start-my-journey/find-a-club
+    region: uk
+    checked: '2026-11-11'
+  - label: 'USA Archery: try archery'
+    url: https://www.usarchery.org/participate/try-archery
     region: us
-    checked: '2026-10-07'
-  safety: Shoot only on a supervised range and never draw a bow when anyone is forward of the shooting line.
+    checked: '2026-11-11'
+  - label: 'USA Archery: find a club (filter for adult programmes)'
+    url: https://www.usarchery.org/find-a-club
+    region: us
+    checked: '2026-11-11'
+  safety: Shoot only under a coach's supervision, and never draw a bow or step forward of the shooting line except on the coach's signal.
+  inspire:
+  - kind: read
+    person: Terry Davies, of Chippenham Archers
+    line: Tried a have-a-go session after 24 years in the Army, quickly signed up for a beginners' course at Chippenham Archers, and now shoots field archery, which he finds physically and mentally demanding.
+    title: Archery at any age
+    outlet: Start Archery (Archery GB)
+    url: https://startarchery.co.uk/article/archery-at-any-age
+    checked: '2026-11-11'
+  seo_title: 'Archery lessons for beginners: courses, costs and bows'
+  description: What happens on a beginners' archery course, what it costs at UK clubs and US ranges, the four bow types compared, what to wear and what comes next.
+  detail:
+  - h: What a beginners' course is really like
+    p:
+    - In the UK, the usual way in is a beginners' course at a club affiliated to Archery GB, the governing body. Its Start Archery site describes group sessions, usually one 90-minute session a week for
+      about six weeks, covering target archery, shooting technique, safety, etiquette and the shooting rules. All equipment is provided and you are insured during the sessions. Courses vary from club to
+      club.
+    - At Archers of Raunds, the coach sets up a target boss (the straw or foam block the target face is pinned to) at about 6 to 10 metres (20 to 33 feet). The first two sessions are mostly theory, covering
+      safety, rules, etiquette and the parts of the bow, but you shoot on the first day. Beginners use low-poundage bows, which are easier to draw, and help pack the kit away at the end.
+    - In the US, USA Archery says you need no experience, equipment or membership to try archery at one of its clubs, and that most clubs have equipment for first-timers. US ranges often sell a single introductory
+      lesson as well as courses. At Gotham Archery in Manhattan, the one-hour class is 20 minutes of safety and form instruction, then 40 minutes of shooting and a game.
+  - h: Where to learn and what it costs
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Gipping Valley Archers, UK
+        - 3 sessions
+        - £60 for adults
+      - - Lichfield Archers, UK
+        - 6 Wednesday evenings of 2 hours, on a 20-yard (18-metre) indoor range
+        - £90 per adult
+      - - Aire Valley Archers, UK
+        - 4 sessions of 3 hours
+        - £100 per adult
+      - - Royal Richmond Archery Club, London
+        - 2 Saturday afternoons of 5 hours, with one-to-one coaching
+        - £150 (as last listed, June 2026 run)
+      - - Gotham Archery, Manhattan, New York
+        - One 1-hour introductory class
+        - $45
+      - - Easton Newberry Archery Center, Florida
+        - Adult Basic (18+), four 1-hour classes a month
+        - $100 a month
+    after: Every course above includes the loan of equipment. Lichfield Archers says waits of several months are possible, and Glasgow Archers says its 2026 waiting list is very long, so it pays to ask
+      early.
+  - h: The four bow types
+    table:
+      head:
+      - Bow
+      - What it is
+      rows:
+      - - Recurve
+        - Limbs curve away at the top and bottom. Start Archery says it is the most common style and the one you are likely to start on; it is the bow used at the Olympics.
+      - - Barebow
+        - A recurve without sights or stabilisers. Start Archery calls it a purer and more challenging form.
+      - - Compound
+        - Uses cams and strings, which reduce the strength needed to draw. It is smaller and does not dismantle.
+      - - Longbow
+        - Longer than most bows, with no stabilisers or accessories beyond a rubber band used for sighting. The most traditional form.
+    after: Royal Richmond Archery Club teaches beginners on recurve bows with and without a sight. In competition, Archery 360, a programme of the Archery Trade Association, says outdoor recurve archers
+      shoot at 70 metres (about 230 feet) and compound archers at 50 metres (164 feet), and indoor events are shot at 18 metres (59 feet).
+  - h: Range commands
+    p:
+    - Ranges run on signals, and the coach will teach you the ones your club uses before you shoot. Archery 360 describes the whistle system used at indoor competitions. Two whistles mean archers approach
+      the shooting line. One whistle means they may begin shooting. Three whistles mean it is safe to walk forward and collect arrows.
+    - Archers of Raunds asks newcomers to stay well behind the waiting line and not to approach anyone on the shooting line.
+  - h: The honest hard parts
+    list:
+    - The cost after the course. Joining a club usually means joining Archery GB too, at £60 a year for an adult (senior) member (as last listed). Gipping Valley Archers lists a total adult fee of £178
+      for 2026/27, covering club, Archery GB and county and regional fees. USA Archery membership runs from $20 a year (Recreational) to $70 (Adult All-Access), as last listed.
+    - Kit of your own. Start Archery's list of basics runs to a bow, string, arrows, bracer (arm guard), finger tab, quiver, bow stand, bow stringer and a target. Archers of Raunds advises against buying
+      anything beyond a finger tab, arm guard or quiver until the course ends, and offers short-term bow hire after it. Gipping Valley Archers lends a bow for a refundable £50 deposit.
+    - Weather. Royal Richmond Archery Club calls archery an all-weather sport and says shooting usually continues in wind and rain. Glasgow Archers shoots on its outdoor field in summer and indoors in winter.
+    - String slap. The bowstring can strike the inside of the bow arm and cause bruising. A bracer, worn between elbow and wrist, protects the arm and keeps loose clothing out of the string's path.
+  - h: What to wear, and after the course
+    p:
+    - Start Archery says the club will normally invite you to join at the end of the course. Archery GB membership includes insurance, and Start Archery says the membership card lets you shoot almost anywhere
+      in the world. Glasgow Archers says that after its course you can keep shooting at an Archery GB affiliated club. Aire Valley Archers takes £20 off the first year's adult membership for people who
+      finish its course.
+    - In the US, USA Archery's adult programme includes Achievement Awards, which reward scores and get harder as you improve, and quarterly virtual tournaments shot at your home range.
+    list:
+    - Close-fitting tops, in several thin layers when it is cold. Archers of Raunds asks you to remove or secure toggles, tassels and baggy clothing.
+    - Flat, closed-toe shoes. Royal Richmond says you must not wear open-toed shoes.
+    - Long hair tied back, and long or chunky jewellery removed.
+    - A raincoat, sun cream and water for outdoor sessions.
+  faq:
+  - q: How long is a beginners' archery course?
+    a: Start Archery says courses usually run as one 90-minute session a week for about six weeks. Club formats vary, from three sessions at Gipping Valley Archers to two five-hour Saturdays at Royal Richmond
+      Archery Club.
+  - q: How much are archery lessons for beginners?
+    a: As last listed, UK club courses run from £60 (Gipping Valley Archers) to £150 (Royal Richmond Archery Club). In the US, Gotham Archery in Manhattan charges $45 for a one-hour introductory class.
+  - q: Do I need my own bow for an archery course?
+    a: No. Clubs lend the bow, arrows and protective kit on a beginners' course, and Archers of Raunds advises against buying anything beyond a finger tab, arm guard or quiver until the course ends.
+  - q: What should I wear to archery?
+    a: Close-fitting layers, flat closed-toe shoes and long hair tied back. Bring a raincoat and sun cream for outdoor shooting.
+  - q: Do I have to join Archery GB after the course?
+    a: To join a club, usually yes. Start Archery says you usually also become a member of Archery GB, last listed at £60 a year for an adult (senior) member.
+  - q: Which bow do beginners start on?
+    a: Start Archery says the recurve is the bow you will most likely start on. Compound, barebow and longbow are the other main types.
+  sources:
+  - label: Start Archery, How do I start my journey
+    url: https://startarchery.co.uk/start-my-journey/how-do-i-start-my-journey
+    checked: '2026-11-11'
+  - label: Start Archery, Beginners kit guide
+    url: https://startarchery.co.uk/learn/beginners-kit-guide
+    checked: '2026-11-11'
+  - label: Start Archery, Find an Archery Club Near Me
+    url: https://startarchery.co.uk/start-my-journey/find-a-club
+    checked: '2026-11-11'
+  - label: Start Archery, Archery at any age
+    url: https://startarchery.co.uk/article/archery-at-any-age
+    checked: '2026-11-11'
+  - label: Archery GB, Become a member
+    url: https://archerygb.org/shoot-compete/shoot/become-a-member/
+    checked: '2026-11-11'
+  - label: Archers of Raunds, Your First Lesson
+    url: https://archersofraunds.co.uk/?p=2090
+    checked: '2026-11-11'
+  - label: Lichfield Archers, Beginners
+    url: https://lichfieldarchers.com/beginners
+    checked: '2026-11-11'
+  - label: Aire Valley Archers, Beginners Archery Courses
+    url: https://www.aire-valley-archers.co.uk/?p=6796
+    checked: '2026-11-11'
+  - label: Gipping Valley Archers, Club fees
+    url: https://gippingvalleyarchers.co.uk/club-activities/club-fees-2025-26/
+    checked: '2026-11-11'
+  - label: Royal Richmond Archery Club, Beginners Archery Course
+    url: https://royalrichmond.co.uk/wp/beginners/
+    checked: '2026-11-11'
+  - label: Glasgow Archers, Beginners Courses
+    url: https://glasgowarchers1948.co.uk/2022/06/03/beginners-courses/
+    checked: '2026-11-11'
+  - label: USA Archery, Try Archery
+    url: https://www.usarchery.org/participate/try-archery
+    checked: '2026-11-11'
+  - label: USA Archery, Adult Archery
+    url: https://www.usarchery.org/participate/adult
+    checked: '2026-11-11'
+  - label: USA Archery, Become a Member
+    url: https://www.usarchery.org/memberships/become-a-member
+    checked: '2026-11-11'
+  - label: USA Archery, Find a Club
+    url: https://www.usarchery.org/find-a-club
+    checked: '2026-11-11'
+  - label: Gotham Archery, Introductory Archery Classes in Manhattan
+    url: https://www.got-archery.com/manhattan-introductory-course
+    checked: '2026-11-11'
+  - label: Easton Newberry Archery Center, Adult Archery Classes
+    url: https://swan-grape-96xj.squarespace.com/adult-development
+    checked: '2026-11-11'
+  - label: Archery 360, Intro to Target Archery
+    url: https://archery360.com/2019/09/03/intro-to-target-archery/
+    checked: '2026-11-11'
   kit:
-  - name: Arm guard
-    why: clubs lend kit for beginners; this protects your inner forearm from the string
+  - name: Arm guard (bracer)
+    why: worn on the inside of the bow arm to keep the string off your forearm and sleeve
     url: https://www.amazon.co.uk/s?k=archery+arm+guard
+  - name: Finger tab
+    why: protects the fingers of your drawing hand from the string
+    url: https://www.amazon.co.uk/s?k=archery+finger+tab
+  - name: Archery quiver
+    why: holds your arrows at your side or hip on the shooting line
+    url: https://www.amazon.co.uk/s?k=archery+quiver
+  related:
+  - try-clay-pigeon-shooting
+  - learn-to-fence
+  - lawn-bowls
+  - learn-tai-chi-form
 - id: learn-to-fence
   title: Learn to fence
   category: move
@@ -7025,25 +7201,202 @@
   regions:
   - uk
   - us
-  why: Gliding on a blade a few millimetres wide is a skill you build in small, definite steps, which is why the national programmes are set out in levels. Skate UK is taught at rinks across Britain, and Learn to Skate USA has an adult curriculum of six levels.
+  why: Gliding on a blade a few millimetres wide is a skill you build in small, definite steps, which is why the national programmes are set out in levels. Skate UK is taught at more than 40 rinks across
+    Britain, and Learn to Skate USA has an adult curriculum of six levels.
   start:
-  - Use the rink finder on the British Ice Skating site, or ask your local rink in the US whether it teaches the Learn to Skate USA adult curriculum.
-  - Enrol on a beginners' course and hire skates from the rink for the first few weeks.
-  - Wear gloves, long sleeves and thin socks, and arrive early to lace your boots firmly.
+  - Use the British Ice Skating rink finder, or ask your local US rink whether it teaches the Learn to Skate USA adult curriculum.
+  - Book a weekly adult beginners' class; many adult courses include skate hire.
+  - Bring gloves, thin socks and warm layers, and arrive 15 to 20 minutes early to lace your boots.
   links:
-  - label: 'British Ice Skating: Skate UK learn-to-skate programme'
-    url: https://www.iceskating.org.uk/skateuk
+  - label: 'British Ice Skating: Learn to skate (Skate UK)'
+    url: https://www.iceskating.org.uk/learn-to-skate
     region: uk
-    checked: '2026-10-07'
-  - label: Learn to Skate USA adult curriculum
-    url: https://learntoskateusa.com/curriculum-detail-adult/
+    checked: '2026-11-11'
+  - label: 'British Ice Skating: Find an ice rink'
+    url: https://www.iceskating.org.uk/rink-finder
+    region: uk
+    checked: '2026-11-11'
+  - label: 'British Ice Skating: Adult skating'
+    url: https://www.iceskating.org.uk/adult-skating
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Learn to Skate USA: Adult curriculum, beginner to advanced (PDF)'
+    url: https://www.learntoskateusa.com/media/1085/curriculum_adult.pdf
     region: us
-    checked: '2026-10-07'
-  safety: Falls on ice are hard, so wear gloves and learn to fall and get up in your first lesson.
+    checked: '2026-11-11'
+  - label: 'Broadmoor World Arena, Colorado Springs: Learn to Skate'
+    url: https://www.broadmoorworldarena.com/learntoskate
+    region: us
+    checked: '2026-11-11'
+  safety: Beginners fall often and the ice is hard, so wear gloves, learn to fall in your first class, and wear a helmet, which Learn to Skate USA advises for all beginners and some rinks require.
+  inspire:
+  - kind: read
+    person: Mary Ullmer, writing for the Learn to Skate USA blog
+    line: Bought skates for her 60th birthday, joined a Basic 1 Learn to Skate USA class at Lakeshore Skating Academy and wrote up her first lesson, where falling was easy and getting up was not.
+    title: 'Skating at 60: A Valuable First Lesson'
+    outlet: Learn to Skate USA
+    url: https://medium.com/learn-to-skate-usa/skating-at-60-a-valuable-first-lesson-68138bbcf414
+    checked: '2026-11-11'
+  seo_title: 'Adult ice skating lessons: levels, prices, first class'
+  description: Adult ice skating lessons in the UK and US compared, with Skate UK and Learn to Skate USA levels side by side, real course prices and how to fall safely.
+  detail:
+  - h: What a first class is like
+    p:
+    - Adult classes at the rinks below are group lessons, once a week, for 30 minutes. At Linx Ice Arena in Aberdeen the half-hour lesson is followed by 30 minutes of practice on the same ice, and Ice Vault
+      in Wayne, New Jersey, adds 30 minutes' practice on class days. Courses run in blocks or all year round on a monthly direct debit (automatic bank payment); Linx assesses skaters for the next level
+      about every six weeks.
+    - The first thing you learn is how to fall and get back up, before you have properly moved. Learn to Skate USA says plainly that you will fall the first time you skate, and its instructors spend several
+      minutes on day one on falling and standing again. After that come marching steps, a two-foot glide, a dip and a snowplough stop.
+  - h: The honest hard parts
+    p:
+    - Getting up is harder than going down. The usual method, described on Learn to Skate USA's own blog, is to fall to the side rather than forwards, kneel on one knee, put both hands on that knee and
+      push up. Expect to grab the barrier, or another skater, more than once.
+    - It is easy to blame weak ankles. A writer for the Denver magazine 5280 who took lessons at 30 concluded she simply did not yet know what she was doing, and advises giving feet and ankles time to warm
+      up and rest.
+    - Rinks are cold. Learn to Skate USA puts a typical arena at about 50°F (10°C), and British Ice Skating notes that beginners practising small movements get colder than skaters running through a programme.
+  - h: The levels in Britain and America
+    table:
+      head:
+      - Level
+      - Skate UK (British Ice Skating)
+      - Learn to Skate USA (Adult)
+      rows:
+      - - '1'
+        - Marching forward, sit and stand, two-foot glide with dip, snowplough stop
+        - Falling and getting up, marching, two-foot glide, swizzles, dip, snowplow stop
+      - - '2'
+        - Curves left and right, moving backwards, two-foot turns on the spot, lemons
+        - One-foot glides, slalom, skating backwards, backward swizzles, two-foot turns
+      - - '3'
+        - Forward stroking, backward snowplough stop, forward edges, two-foot slalom
+        - Forward stroking, half-swizzle pumps on a circle, forward chassés, backward snowplow stop
+      - - '4'
+        - Forward chassés, backward stroking, forward outside and inside edges, two-foot 3-turn
+        - Forward edges on a circle, forward crossovers, backward one-foot glides, hockey stop
+      - - '5'
+        - Forward crossovers, forward outside 3-turn, backward chassés, backward slalom
+        - Backward edges, backward crossovers, forward outside three-turn, swing rolls, two-foot spin
+      - - '6'
+        - Backward crossovers, backward edges, forward inside 3-turn
+        - Forward inside three-turn, change of edge, T-stop, lunge, two-foot into one-foot spin
+      - - '7'
+        - Continuous edges, forward inside mohawk, a bunny hop or two-foot jump
+        - (curriculum ends at Adult 6)
+      - - '8'
+        - Continuous backward curves, change of edge, mohawk and crossover combinations
+        - (curriculum ends at Adult 6)
+    after: Skate UK is designed for all ages and is taught at more than 40 British rinks; after level 8, rinks such as The Peak in Stirling and Linx Ice Arena in Aberdeen go on to Skate Star Bronze, Silver,
+      Gold and Platinum, and British Ice Skating's National Skills Tests come next. The two ladders cover much the same ground, though Skate UK splits it into eight smaller steps.
+  - h: What it costs
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Peak, Stirling (Active Stirling)
+        - Skate UK, 30 minutes weekly, ages 16 and up, skates provided or bring your own
+        - £22.50 a month by direct debit, based on 45 lessons a year
+      - - Linx Ice Arena, Aberdeen (Sport Aberdeen)
+        - Skate UK, 30-minute lesson plus 30 minutes' practice weekly, ages 18 and up, skate hire included
+        - £42.50 a month by direct debit
+      - - Riverside, Chelmsford
+        - Skate UK, Wednesdays 7pm to 7.30pm, ages 16 and up, free skate hire and skate gloves
+        - £46.10 a month by direct debit
+      - - Broadmoor World Arena, Colorado Springs
+        - Learn to Skate USA Adult 1 to 6, 30 minutes on Tuesdays
+        - $100 for a 7-week session (Oct to Dec 2026 run); 6-week sessions $90
+      - - Kraken Community Iceplex, Seattle
+        - Rink's own six adult levels, 30 minutes weekly, helmet required
+        - $272 for 8 weeks ($34 a class), plus the rink's yearly learn-to-skate membership
+    after: In the US you usually also pay for a Learn to Skate USA membership; Ice Vault in New Jersey lists it at $20 a season, with skate rental at $3 a week. Riverside in Chelmsford lists its adult classes
+      as full, with applications closed until 18 January 2027.
+  - h: Hire skates, your own boots, and what to wear
+    p:
+    - Hire skates are fine to start with and are included in many course prices. They are built to fit many feet, so they rarely feel as precise as a well-fitted pair, and your shoe size may not be your
+      skate size. Learn to Skate USA advises choosing the most comfortable pair, with boots that are snug, with a little room for the toes and the heel pushed well back.
+    - To lace them, push your heel to the back, keep the laces snug through the ankle and the bottom hooks, leave the top two looser, and tuck spare lace away neatly rather than leaving long bows. You should
+      be able to slide one finger between the back of the boot and your leg.
+    list:
+    - One pair of thin socks or tights. Thick socks reduce support and rub.
+    - Stretchy layers, such as joggers or leggings and a jumper (sweater). Jeans and bulky snow trousers get in the way.
+    - Gloves, mainly to protect your hands when you fall.
+    - A helmet if you want one; padded shorts and knee and elbow pads are suggested by British Ice Skating if falling worries you.
+  faq:
+  - q: Can adults take ice skating lessons?
+    a: Yes. Many rinks run adult-only classes, usually for ages 16 or 18 and up. In Britain they follow British Ice Skating's Skate UK levels, and in the US many follow Learn to Skate USA's six adult levels.
+  - q: How much are adult ice skating lessons?
+    a: As last listed, £22.50 a month at The Peak in Stirling and £46.10 a month at Riverside in Chelmsford, both for weekly 30-minute lessons. In the US, Broadmoor World Arena listed $100 for a 7-week
+      session.
+  - q: Should I buy my own ice skates as a beginner?
+    a: Not at first. Many courses include skate hire. Hire boots fit less precisely than your own, so if you keep going, buy boots fitted in person, snug with a little room for the toes.
+  - q: Do I need a helmet for ice skating lessons?
+    a: Learn to Skate USA says all beginners should wear one, and Kraken Community Iceplex in Seattle makes them compulsory. Most British rink pages we read do not mention helmets, so ask your rink.
+  - q: How do you get up after falling on the ice?
+    a: Roll onto your side, kneel on one knee, put both hands on that knee and push up. Your first lesson should cover falling and getting up before anything else.
+  - q: What should I wear to an ice skating lesson?
+    a: Thin socks, stretchy warm layers and gloves. Rinks are cold, at about 50°F (10°C), but you warm up quickly, so wear layers you can take off.
+  sources:
+  - label: British Ice Skating, Learn to skate
+    url: https://www.iceskating.org.uk/learn-to-skate
+    checked: '2026-11-11'
+  - label: British Ice Skating, Adult skating
+    url: https://www.iceskating.org.uk/adult-skating
+    checked: '2026-11-11'
+  - label: British Ice Skating, Skate UK Fundamental Skills levels 1 to 8 (PDF)
+    url: https://iceskating.org.uk/_files/ugd/edc78b_502e972db52946fe91252301ccacb310.pdf
+    checked: '2026-11-11'
+  - label: British Ice Skating, Find an ice rink
+    url: https://www.iceskating.org.uk/rink-finder
+    checked: '2026-11-11'
+  - label: Learn to Skate USA, Adult – Beginner to Advanced (PDF)
+    url: https://www.learntoskateusa.com/media/1085/curriculum_adult.pdf
+    checked: '2026-11-11'
+  - label: Learn to Skate USA, The First Day of Skating (PDF)
+    url: https://ltscms-lb.usfigureskating.org/media/1209/the-first-day-of-skating.pdf
+    checked: '2026-11-11'
+  - label: 'Learn to Skate USA, Skating at 60: A Valuable First Lesson'
+    url: https://medium.com/learn-to-skate-usa/skating-at-60-a-valuable-first-lesson-68138bbcf414
+    checked: '2026-11-11'
+  - label: Sport Aberdeen, Adult Learn to Skate
+    url: https://www.sportaberdeen.co.uk/activities/ice-skating/adult-learn-to-skate
+    checked: '2026-11-11'
+  - label: Chelmsford City Council, Adult ice skating lessons
+    url: https://www.chelmsford.gov.uk/leisure-centres/what/ice-skating/ice-skating-lessons-at-riverside/adult-ice-skating-lessons
+    checked: '2026-11-11'
+  - label: Chelmsford City Council, Skate School welcome information
+    url: https://chelmsford.gov.uk/leisure-centres/who/kids-activities/sports-schools/skate-school/skate-school-welcome-information
+    checked: '2026-11-11'
+  - label: Active Stirling, Adult ice skating
+    url: https://www.activestirling.org.uk/classes-programmes/learn-to-skate-programme/adult-ice-skating
+    checked: '2026-11-11'
+  - label: Broadmoor World Arena, Learn To Skate
+    url: https://www.broadmoorworldarena.com/learntoskate
+    checked: '2026-11-11'
+  - label: Kraken Community Iceplex, Adult Learn to Skate
+    url: https://krakencommunityiceplex.com/skating/learn-to-skate/adult-learn-to-skate
+    checked: '2026-11-11'
+  - label: Ice Vault, Learn to Skate Adult Beginner – Advanced
+    url: https://www.icevault.com/lts-adult.php
+    checked: '2026-11-11'
+  - label: 5280, Learning How to Ice Skate as an Adult
+    url: https://5280.com/learn-how-to-ice-skate-as-an-adult
+    checked: '2026-11-11'
   kit:
   - name: Padded gloves
-    why: for the first few falls
+    why: they protect your hands when you fall and push yourself back up
     url: https://www.amazon.co.uk/s?k=padded+gloves
+  - name: Thin skating socks
+    why: one thin pair keeps the boot snug without rubbing
+    url: https://www.amazon.co.uk/s?k=thin+skating+socks
+  - name: Skate blade guards
+    why: they protect the blades when you walk off the ice, once you have your own boots
+    url: https://www.amazon.co.uk/s?k=skate+blade+guards
+  related:
+  - try-curling
+  - learn-to-roller-skate
+  - learn-to-ski
+  - take-a-ballroom-class
 - id: learn-to-kayak
   title: Learn to paddle a kayak
   category: move
@@ -8076,27 +8429,265 @@
   category: move
   kind: skill
   effort: moderate
-  cost: low
+  cost: mid
   time: weeks
   setting: indoors
   company: others
   regions:
   - uk
   - us
-  why: A waltz or a cha-cha is a small piece of choreography you improvise with another person in time to music, and a handful of steps is enough to get round a floor. Group classes take people who arrive without a partner.
+  why: A waltz or a cha-cha is a small piece of choreography you improvise with another person in time to music, and a handful of steps is enough to get round a floor. Many beginners' classes take people
+    who arrive without a partner and have you dance with different members of the class.
   start:
-  - Search the ISTD Find A Dance Teacher directory by genre, choosing Modern Ballroom or Latin American, or look for a USA Dance chapter near you.
-  - Join a beginners' group class, which is the cheapest way to try several dances.
-  - Go to a social dance once you know a few steps, and practise for a few minutes most days.
+  - Search the ISTD's Find a Dance Teacher directory for Modern Ballroom or Latin American with the Adults filter, look at your local adult-education college, or find a USA Dance chapter near you.
+  - Book a beginners' group course or turn up to a chapter social, where a one-hour group lesson usually comes first.
+  - Once you know a few steps, go to a social dance each week and practise the figures for a few minutes most days.
   links:
-  - label: ISTD Find A Dance Teacher (Imperial Society of Teachers of Dancing directory)
-    url: https://dt.istd.org/home/
+  - label: ISTD Find a Dance Teacher (Imperial Society of Teachers of Dancing directory, filter by genre and Adults)
+    url: https://dt.istd.org/find-a-dance-teacher/
     region: uk
-    checked: '2026-10-07'
+    checked: '2026-11-11'
+  - label: 'City Lit, London: Ballroom and Latin for beginners (adult-education college)'
+    url: https://www.citylit.ac.uk/courses/ballroom-and-latin-beginners
+    region: uk
+    checked: '2026-11-11'
   - label: 'USA Dance: How to Get Started Dancing'
     url: https://usadance.org/page/HowtoGetStartedDancing
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-11'
+  - label: 'USA Dance: Chapters, with a Find a Chapter link'
+    url: https://usadance.org/page/Chapters
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Ballroom dancing lessons for beginners: classes and costs'
+  description: How adults learn ballroom and Latin in the UK and US, with the ten dances, real class prices, whether you need a partner, shoes and medal tests.
+  detail:
+  - h: What a first class is like
+    p:
+    - Beginners' courses teach two or three dances, not all ten. City Lit, the adult-education college in central London, starts with the Slow Waltz and Tango from the ballroom side and the Cha Cha Cha
+      from the Latin. Its course runs in 90-minute sessions, no partner is needed, and you dance with different members of the class. Surrey County Council's adult-learning course in Esher covers social
+      foxtrot, quickstep, waltz, rumba and cha cha cha in seven 90-minute evenings.
+    - In the US, USA Dance says its local chapters run social dances, usually monthly, and most start with a one-hour group lesson for everyone. It recommends beginners start in group classes with other
+      beginners, as they are inexpensive and a way to try several dances and meet people.
+    - 'You do not need special clothes. City Lit asks for comfortable, breathable clothes and no sling-backs, flip-flops or rigid trainers. Surrey asks for loose clothing you can raise your arms in, and
+      says dance shoes are preferred but optional: heeled or flat shoes that hold the foot, preferably with straps, not flip-flops, pumps or trainers.'
+    - Supadance, a dance-shoe maker, says a dedicated ballroom shoe is not necessary when you are first learning. When you do buy, it recommends a thin leather or suede sole, which lets the foot glide with
+      the right amount of grip, rather than rubber or plastic. For women's ballroom shoes it gives heels of 2 to 3 inches (5 to 7.5 cm), with about 2.5 inches (about 6.5 cm) suiting beginners.
+  - h: The ten dances
+    table:
+      head:
+      - Dance
+      - Ballroom or Latin
+      - ISTD recommended exam tempo
+      rows:
+      - - Waltz
+        - Ballroom
+        - 28–30
+      - - Foxtrot
+        - Ballroom
+        - 28–30
+      - - Tango
+        - Ballroom
+        - 32–34
+      - - Viennese Waltz
+        - Ballroom
+        - 56–60
+      - - Quickstep
+        - Ballroom
+        - 48–50
+      - - Cha Cha Cha
+        - Latin
+        - 28–31
+      - - Samba
+        - Latin
+        - 49–52
+      - - Rumba
+        - Latin
+        - 23–27
+      - - Paso Doble
+        - Latin
+        - 56–60
+      - - Jive
+        - Latin
+        - 41–44
+    after: The Imperial Society of Teachers of Dancing (ISTD) recommends these tempi for exams and asks teachers to check current tempi with the British Dance Council. It describes the Latin dances as known
+      for their fast pace and expressive rhythms. In the US you will also meet American Smooth (Waltz, Tango, Foxtrot, Viennese Waltz) and American Rhythm (Cha Cha, Rumba, Swing, Bolero, Mambo); USA Dance
+      suggests beginners start with the American style Bronze syllabus.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, Keeley Street, London
+        - 'Ballroom and Latin: beginners, ten Friday sessions of 90 minutes; no partner needed'
+        - £229, concessions £160 (January to March 2027 run); twelve sessions £279, concessions £195
+      - - Surrey Adult Learning, Esher
+        - Ballroom and Latin beginners, seven Tuesday evenings of 90 minutes
+        - £122 (as last listed, September 2025 run)
+      - - Dance City, Newcastle
+        - Private tuition in the studio, for up to two people
+        - £55 an hour
+      - - USA Dance social, Sokol Athletic Center, Dallas
+        - One-hour group lesson, a different ballroom dance each month, then social dancing until 11pm; no partner needed
+        - $15 members, $18 non-members (as last listed, January 2025 dance)
+      - - Atomic Ballroom, Irvine, California
+        - Drop-in group class; evening social dances
+        - $28 a class, or 10 for $180; socials $16
+      - - Arthur Murray, The Woodlands, Texas
+        - Introductory private lesson, 30 minutes
+        - $35; the studio does not quote full programme prices before the first lesson
+    after: USA Dance says private lessons are more expensive but give individual attention, and suggests a few if you feel lost in a group, then one every few weeks to refine technique. It warns that studio
+      packages are not free and you may not need everything in them, and advises avoiding formal contracts at first in favour of teachers who charge as you go.
+  - h: Medal tests and levels in the UK and US
+    p:
+    - In Britain, amateur dancers can take medal tests set by the ISTD or the IDTA (International Dance Teachers' Association); the IDTA charges its fee to the member teacher for each pupil. In the US,
+      the ladder that USA Dance publishes is for competitions.
+    table:
+      head:
+      - ''
+      - ISTD medal tests (UK)
+      - IDTA medal tests (UK)
+      - USA Dance competitions
+      rows:
+      - - First steps
+        - Social Dance and Pre-Bronze tests, or One Dance Tests
+        - One Dance; Social Dance Awards
+        - Pre-Bronze (N class)
+      - - Bronze
+        - Two dances of the teacher's choice; adults add Slow Rhythm in Ballroom
+        - Bronze
+        - Bronze (N class), figures from a strict syllabus
+      - - Silver
+        - Three dances (Latin American, all age groups)
+        - Silver
+        - Silver (E class)
+      - - Gold
+        - Four dances (Latin American, all age groups)
+        - Gold
+        - Gold (D or C class)
+      - - Beyond
+        - Gold Stars 1 to 3, all five dances in Ballroom
+        - Gold Bars, IDTA Stars, President's Awards
+        - Novice, Pre-Championship, Championship
+      - - Age groups
+        - Adult 16 to under 50; Senior 50 and over
+        - Not stated on the fee list
+        - Adult, Senior I, II and III
+      - - Fee
+        - Bronze £21 per candidate (2021 fee list, the latest found)
+        - Bronze £15, charged to the teacher per pupil per exam (2025 fee list)
+        - Set by each competition
+    after: For ISTD tests you bring your own partner, who may be amateur or professional; amateurs can test solo only in exceptional circumstances, with the ISTD's agreement. Each dance is marked out of
+      100, with Pass at 65, Commended at 75 and Honours at 85. In USA Dance competitions, once you declare a level you cannot dance below it.
+  - h: The honest hard parts
+    p:
+    - Partners are the first hurdle. Some courses pair everyone up, but Hills Road Sixth Form College's adult beginners' course says it is best suited to couples and pairs a single student only if another
+      single person enrols. A teacher in Barnsley told the Barnsley Chronicle there are "just not enough men to go round" at her classes, so women often dance together.
+    - Classes alone are not much practice. USA Dance suggests about 15 minutes a day on the figures from class and a social dance at least once a week to use them.
+    - Courses come and go. When checked, Hills Road listed no courses available, and adult-education terms fill and change each year, so look early.
+    - Costs climb once you move beyond group classes. Private lessons, packages and medal-test entries are all extra, and studio pricing varies widely, as the table above shows.
+  faq:
+  - q: Do I need a partner for ballroom dance classes?
+    a: Often not. City Lit says no partner is required and you dance with different members of the class, and USA Dance says a regular partner is not necessary when you start. Some courses are best suited
+      to couples, so check before you book.
+  - q: How much do ballroom dance lessons cost?
+    a: Recent listings ranged from £122 for seven 90-minute evenings in Surrey to £229 for ten sessions at City Lit in London, and £55 an hour for private tuition at Dance City in Newcastle. In the US,
+      a USA Dance chapter social with a one-hour lesson cost $15 to $18, and a drop-in class at one California studio $28.
+  - q: What shoes should I wear for ballroom dancing as a beginner?
+    a: Shoes that hold the foot, preferably with straps, not flip-flops, pumps or trainers. Supadance says dedicated ballroom shoes are not necessary at first; when you buy, look for a thin leather or suede
+      sole.
+  - q: What are the 10 ballroom and Latin dances?
+    a: Ballroom is Waltz, Foxtrot, Tango, Viennese Waltz and Quickstep. Latin is Cha Cha Cha, Samba, Rumba, Paso Doble and Jive.
+  - q: What are ballroom dance medal tests?
+    a: Optional exams run in Britain by the ISTD and IDTA, at levels such as Bronze, Silver and Gold. With the ISTD, each dance is marked out of 100 and 65 is a pass.
+  - q: Are group or private ballroom lessons better for beginners?
+    a: USA Dance recommends starting with group classes, which are cheaper and let you try several dances, and adding a few private lessons if you feel lost or fall behind.
+  sources:
+  - label: ISTD, Find A Dance Teacher
+    url: https://dt.istd.org/find-a-dance-teacher/
+    checked: '2026-11-11'
+  - label: ISTD Find A Dance Teacher, Dance styles
+    url: https://dt.istd.org/about/dance-styles/
+    checked: '2026-11-11'
+  - label: ISTD, Modern Ballroom syllabus outline (September 2024)
+    url: https://www.istd.org/documents/modern-ballroom-syllabus-outline/modern-ballroom-syllabus-september-24.pdf
+    checked: '2026-11-11'
+  - label: ISTD, Latin American syllabus outline (September 2024)
+    url: https://istd.org/documents/latin-american-syllabus-outline/latin-american-syllabus-september-24.pdf
+    checked: '2026-11-11'
+  - label: ISTD, Modern Ballroom exams and qualifications
+    url: https://istd.org/dance/dance-genres/modern-ballroom/modern-ballroom-exams-and-qualifications
+    checked: '2026-11-11'
+  - label: ISTD, Dancesport qualifications fees 2021 (UK)
+    url: https://www.istd.org/documents/dancesport-fees/
+    checked: '2026-11-11'
+  - label: IDTA, UK examination fees Ballroom 2025
+    url: https://idta.co.uk/wp-content/uploads/2025/10/UK-examination-fees-white-Ballroom-2025.pdf
+    checked: '2026-11-11'
+  - label: 'City Lit, Ballroom and Latin: beginners'
+    url: https://www.citylit.ac.uk/courses/ballroom-and-latin-beginners
+    checked: '2026-11-11'
+  - label: Surrey County Council, Ballroom & Latin Dance - Beginners
+    url: https://www.surreycc.gov.uk/schools-and-learning/adult-learning/courses/overview?id=55675
+    checked: '2026-11-11'
+  - label: Hills Road Sixth Form College, Ballroom and Latin Dancing for Beginners
+    url: https://www.hillsroad.ac.uk/adult-education/courses/ballroom-and-latin-dancing-beginners
+    checked: '2026-11-11'
+  - label: Dance City, Private tuition
+    url: https://www.dancecity.co.uk/hire-space/private-tuition/
+    checked: '2026-11-11'
+  - label: Barnsley Chronicle, report on Parkerdance classes in Barnsley (headline not shown on the page)
+    url: https://www.barnsleychronicle.com/article/strictly-effect-leaves-ladies-looking-for-dance-partners
+    checked: '2026-11-11'
+  - label: Supadance, Best ballroom dance shoes for beginners
+    url: https://www.supadance.com/blog/best-ballroom-dance-shoes-for-beginners
+    checked: '2026-11-11'
+  - label: USA Dance, How to Get Started Dancing
+    url: https://usadance.org/page/HowtoGetStartedDancing
+    checked: '2026-11-11'
+  - label: USA Dance, Activities of Chapters
+    url: https://usadance.org/page/ActivitiesofChapters
+    checked: '2026-11-11'
+  - label: USA Dance, Competitor Guide
+    url: https://usadance.org/page/CompetitorGuide
+    checked: '2026-11-11'
+  - label: USA Dance, Ballroom Dance and Lesson! (Dallas, January 2025)
+    url: https://usadance.org/events/EventDetails.aspx?id=1881063
+    checked: '2026-11-11'
+  - label: Atomic Ballroom, Pricing
+    url: https://atomicballroom.com/pricing_2024
+    checked: '2026-11-11'
+  - label: Arthur Murray The Woodlands, How much do dance lessons cost in The Woodlands, TX?
+    url: https://www.arthurmurray.com/thewoodlands/2026/06/how-much-do-dance-lessons-cost-in-the-woodlands-tx/
+    checked: '2026-11-11'
+  - label: Minnesota Star Tribune, Grieving and out of shape, I took up ballroom dancing. It saved my life.
+    url: https://www.startribune.com/grieving-and-out-of-shape-i-took-up-ballroom-dancing-it-saved-my-life/600070821
+    checked: '2026-11-11'
+  kit:
+  - name: Ballroom dance shoes
+    why: a thin leather or suede sole lets the foot turn and glide on a wooden floor
+    url: https://www.amazon.co.uk/s?k=ballroom+dance+shoes
+  - name: Latin dance shoes
+    why: strapped shoes that hold the foot for cha cha, rumba and jive
+    url: https://www.amazon.co.uk/s?k=latin+dance+shoes
+  - name: Dance shoe bag
+    why: keeps suede-soled shoes off wet pavements between home and the hall
+    url: https://www.amazon.co.uk/s?k=dance+shoe+bag
+  related:
+  - learn-salsa
+  - learn-argentine-tango
+  - scottish-country-dancing
+  - go-to-a-folk-dance
+  inspire:
+  - kind: read
+    person: Dan Browning, dancing in St Paul, Minnesota
+    line: A retired journalist who started ballroom lessons at a St Paul studio at 59, went on to learn six dances for a showcase and entered his first DanceSport competition about a year later.
+    title: Grieving and out of shape, I took up ballroom dancing. It saved my life.
+    outlet: Minnesota Star Tribune
+    url: https://www.startribune.com/grieving-and-out-of-shape-i-took-up-ballroom-dancing-it-saved-my-life/600070821
+    checked: '2026-11-11'
 - id: walk-yorkshire-three-peaks
   title: Walk the Yorkshire Three Peaks
   category: move
@@ -8312,24 +8903,221 @@
   regions:
   - uk
   - us
-  why: Tennis is one of the few sports you can pick up again after decades away and find the strokes waiting for you, a little rusty. Park courts, group classes and social sessions mean you need neither a club membership nor a regular partner to play.
+  why: The LTA's six-week adult course is built for complete beginners and for people coming back after a long break, and uses slower-bouncing balls. Free park sessions and pay-as-you-go courts mean you
+    need neither a club membership nor a regular partner to play.
   start:
-  - Use the LTA's Book a tennis court and group class tools in Britain, or the USTA's Find a Court and Find a Coach tools in the US.
-  - Book a beginners' or returners' group session, or a free park tennis session where rackets are provided.
-  - Wear proper court shoes and hit gently for the first few sessions.
+  - In Britain, search the LTA's finder for a Tennis Xpress course or a Barclays Free Park Tennis session near you; in the US, use the USTA's court and coach finders or your city's parks department.
+  - Book a beginners' or returners' group course, or a free weekend park session where rackets are provided.
+  - Wear comfortable trainers or tennis shoes, and hit gently for the first few sessions.
   links:
-  - label: 'LTA: Getting on court (Lawn Tennis Association, Britain)'
-    url: https://www.lta.org.uk/play/getting-on-court/
+  - label: 'LTA: Tennis Xpress, six-week adult beginners'' courses (Britain)'
+    url: https://www.lta.org.uk/play-compete/getting-started/adult-tennis/tennis-xpress/
     region: uk
-    checked: '2026-10-07'
-  - label: 'USTA: Tennis for Adults (US national governing body)'
+    checked: '2026-11-11'
+  - label: 'LTA: Barclays Free Park Tennis, free weekend sessions (Britain)'
+    url: https://www.lta.org.uk/play/free-park-tennis/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'USTA: Adult tennis, with court and coach finders (US national governing body)'
     url: https://www.usta.com/en/home/play/adult-tennis.html
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-11'
+  - label: 'USTA Georgia: Tennis Apprentice for new players'
+    url: https://ustageorgia.com/adults/tennis-apprentice/
+    region: us
+    checked: '2026-11-11'
+  - label: 'NYC Parks: tennis permits and court reservations'
+    url: https://php1-84.nycgovparks.org/permits/tennis-permits
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Tennis lessons for adults: beginner courses and costs'
+  description: How adult beginners and returners get on court in the UK and US, from free park sessions to six-week courses, with real prices and how levels work.
+  detail:
+  - h: What a first course is like
+    p:
+    - In Britain, the Lawn Tennis Association's beginners' course for adults is called Tennis Xpress. It runs over six weekly sessions with LTA Accredited coaches, and the LTA says it is for people who
+      are completely new to tennis, returning after a long break, or looking for an easy way to start playing regularly. It covers forehand and backhand, serving and returning, rallying and movement, and
+      basic scoring and match play, using slower-bouncing balls.
+    - Courses are run locally and priced by the coach or venue. Recent listings on the LTA's booking site show the range. A Tennis Xpress course at Telegraph Hill in south-east London (SE14) was free, five
+      one-hour Wednesday evenings in spring 2026. A follow-on course for adult beginners at Mayow Park (SE23) cost £56 for four one-hour Saturday sessions in summer 2026. Both were for players over 16.
+    - In the US, programmes are run by the USTA's regional sections and by city parks departments. USTA Georgia's Tennis Apprentice starts with six weekly clinics of 60 to 90 minutes for people who are
+      brand new to tennis. The first stage includes a free racquet, and all you need to bring is tennis shoes.
+  - h: Free and cheap ways to play, and Cardio Tennis
+    p:
+    - Barclays Free Park Tennis runs free, one-hour social sessions every weekend on park courts in London, Manchester, Glasgow and other towns and cities across Britain. Rackets and equipment are provided,
+      the sessions are open to all abilities including beginners, and you book each week through a free LTA Advantage account.
+    - Park courts themselves are often cheap or free. Birmingham City Council says its park courts are normally free to use, and you can turn up and play. Where courts are booked online, prices vary; at
+      Wimbledon Park in London the rate was last listed (from 1 April 2026) at £11.25 an hour on weekdays before 5pm and £14.60 on evenings and weekends, with no membership needed.
+    - In New York City, outdoor park courts need a permit in season, from the first Saturday in April to the Sunday before Thanksgiving. A season permit was last listed at $100 for adults aged 18 to 61
+      and $20 for those 62 and over, and a single-play permit at $15 for an hour of singles or two hours of doubles.
+    - Cardio Tennis is a one-hour group class on a tennis court, set to music. The LTA describes a short warm-up, a 40-minute full-body workout mixing forehands, backhands and serves with fitness drills
+      and team games, then a cool-down; you never play one-on-one. It is open to all abilities, and the LTA's finder lists sessions near you.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Barclays Free Park Tennis, park courts across Britain
+        - One-hour social session every weekend; rackets provided
+        - Free
+      - - Tennis Xpress, Telegraph Hill, London SE14
+        - Adult beginners' course, five one-hour sessions
+        - Free (as last listed, spring 2026 run)
+      - - Adult beginners' follow-on course, Mayow Park, London SE23
+        - Four one-hour sessions
+        - £56 (as last listed, summer 2026 run)
+      - - Wimbledon Park courts, London SW19
+        - Court hire, booked online
+        - £11.25 to £14.60 an hour
+      - - USTA Georgia Tennis Apprentice 101
+        - Six weekly clinics of 60 to 90 minutes; free racquet
+        - Up to $60
+      - - Town of Exeter recreation, New Hampshire
+        - Adult beginner group, three one-hour Monday lessons, 4 to 8 players
+        - $90 residents, $100 non-residents (as last listed, summer 2026 run)
+      - - NYC Parks outdoor courts
+        - Season permit for park courts
+        - $100 adults 18 to 61; $20 for 62 and over; $15 single play (as last listed, 2025 season)
+    after: Coaches and councils set their own prices and dates, so check the listing near you. Courses fill up; both London courses above were marked as full or no longer available.
+  - h: How levels work in Britain and the US
+    p:
+    - Both countries now use the ITF World Tennis Number, a scale running from 40 for a beginner to 1 at the elite professional end. In the US, the older NTRP (National Tennis Rating Program) is used to
+      place players in USTA League, the national adult competition, which has divisions for 18 and over, 40 and over, and 55 and over.
+    table:
+      head:
+      - ''
+      - Britain (LTA)
+      - United States (USTA)
+      rows:
+      - - Main rating
+        - ITF World Tennis Number, 40 to 1
+        - NTRP for USTA League; World Tennis Number also used
+      - - How a beginner gets one
+        - Activate it in My Game with a free LTA Advantage Play account, by answering five questions
+        - Self-rate on NTRP after creating a USTA account
+      - - Where a beginner starts
+        - 40, the beginner end of the scale
+        - NTRP 2.5, "working on getting the ball in play" with limited or no match experience
+      - - First course
+        - Tennis Xpress, six weeks
+        - Run locally, for example Tennis Apprentice in Georgia or a city parks class
+      - - Next step
+        - Matches against players of a similar standard, found through your World Tennis Number
+        - USTA League; Tennis Apprentice's third stage leads into it
+    after: Neither body publishes a conversion between the two. The USTA's self-rating guide says that new players who played another racket sport, such as squash, badminton or pickleball, on a college
+      team should not rate themselves below 3.0. Some city parks classes use NTRP bands; Denver Parks and Recreation labels its Level 1 adult class "2.0-2.5".
+  - h: The honest hard parts
+    p:
+    - Finding the right game is the main hurdle. Courses fill; both London courses in the table were full or no longer available when checked. Once a course ends, you need people of a similar standard to
+      play with. The LTA says the World Tennis Number is meant to help with exactly that, and free weekend park sessions are another way to meet them.
+    - Your arm may complain. NHS Wales describes tennis elbow as inflamed tendons from repeatedly gripping and twisting the wrist and forearm, more common between 35 and 54, and says it can sometimes last
+      over a year. NHS Wales advises cutting back on whatever makes the symptoms worse.
+    - Shoes matter more than rackets at first. The LTA says beginners can start in comfortable trainers. As you play more, tennis shoes are made for the surface, with durable, cushioned soles for hard courts,
+      herringbone soles for clay and small, close treads for grass, and reinforced sides for side-to-side movement.
+  faq:
+  - q: How much do adult tennis lessons cost?
+    a: Group courses are the cheapest way in. Recent LTA listings ranged (as last listed) from a free five-session Tennis Xpress course to £56 for four one-hour sessions; in the US, USTA Georgia's Tennis
+      Apprentice is capped at $60 for six clinics, and a New Hampshire town charged $90 for three one-hour lessons.
+  - q: Can you learn tennis as an adult beginner?
+    a: Yes. The LTA's Tennis Xpress course is designed for adults who are completely new or returning after a long break, and USTA sections run beginner programmes such as Tennis Apprentice.
+  - q: Where can I play tennis for free?
+    a: In Britain, Barclays Free Park Tennis runs free one-hour weekend sessions with rackets provided, booked through a free LTA Advantage account. Some council park courts, such as Birmingham's, are free
+      to use.
+  - q: What NTRP rating is a beginner?
+    a: The USTA's self-rating guide puts a player who is working on getting the ball in play, with limited or no match experience, at 2.5. Players who played another racket sport on a college team should
+      not rate themselves below 3.0.
+  - q: Do I need tennis shoes for my first lesson?
+    a: Not necessarily. The LTA says you can usually wear any activewear or trainers. Tennis shoes, made for each court surface, help as you play more.
+  - q: What is Cardio Tennis?
+    a: A one-hour group fitness class on a tennis court, with music, a 40-minute workout of shots and drills, team games and a cool-down. The LTA says it is open to all abilities.
+  safety: Ease off if your elbow or forearm starts to hurt, as tennis elbow can sometimes last over a year.
+  sources:
+  - label: LTA, Tennis Xpress
+    url: https://www.lta.org.uk/play-compete/getting-started/adult-tennis/tennis-xpress/
+    checked: '2026-11-11'
+  - label: LTA, FREE Adult Beginner coaching, 6 week Tennis Xpress course (Telegraph Hill)
+    url: https://www.lta.org.uk/play/book-a-tennis-lesson/class/telegraph-hill-free-tennis_36af16ce-361c-48b3-a363-835553395fd2/
+    checked: '2026-11-11'
+  - label: LTA, Adult Beginners - Tennis Xpress Follow on course (Mayow Park)
+    url: https://www.lta.org.uk/play/book-a-tennis-lesson/class/adult-beginners---tennis-xpress-follow-on-course_0720fe66-acb0-466b-a5c8-b78b57ca4b81/
+    checked: '2026-11-11'
+  - label: LTA, Barclays Free Park Tennis
+    url: https://www.lta.org.uk/play/free-park-tennis/
+    checked: '2026-11-11'
+  - label: LTA, Why join LTA Advantage?
+    url: https://lta.org.uk/member/benefits/
+    checked: '2026-11-11'
+  - label: LTA, World Tennis Number (WTN)
+    url: https://www.lta.org.uk/compete/wtn-rankings/world-tennis-number/
+    checked: '2026-11-11'
+  - label: LTA, Cardio Tennis
+    url: https://www.lta.org.uk/play-compete/getting-started/adult-tennis/cardio-tennis/
+    checked: '2026-11-11'
+  - label: LTA, Tennis Clothing and Equipment Guide
+    url: https://www.lta.org.uk/play/how-to-get-started/tennis-kit-guide/
+    checked: '2026-11-11'
+  - label: 'LTA, Find the right tennis shoes for you: Essential guide'
+    url: https://www.lta.org.uk/play/tennis-equipment-guide/find-the-right-tennis-shoes-for-you-essential-guide
+    checked: '2026-11-11'
+  - label: Wimbledon Park, court booking (ClubSpark)
+    url: https://clubspark.lta.org.uk/WimbledonPark/Booking
+    checked: '2026-11-11'
+  - label: Birmingham City Council, Play tennis in Birmingham
+    url: https://www.birmingham.gov.uk/info/20177/sport_and_leisure/846/play_tennis_in_birmingham
+    checked: '2026-11-11'
+  - label: USTA, Adult Tennis
+    url: https://www.usta.com/en/home/play/adult-tennis.html
+    checked: '2026-11-11'
+  - label: USTA, General and experience player NTRP self-rating guidelines (March 2025)
+    url: https://www.usta.com/content/dam/usta/2025-pdfs/general-experience-player-guidelines-3-5-25-.pdf
+    checked: '2026-11-11'
+  - label: USTA, ITF World Tennis Number
+    url: https://www.usta.com/en/home/coach-organize/tennis-tool-center/run-usta-programs/national/itf-world-tennis-number.html
+    checked: '2026-11-11'
+  - label: USTA Georgia, Tennis Apprentice
+    url: https://ustageorgia.com/adults/tennis-apprentice/
+    checked: '2026-11-11'
+  - label: Town of Exeter, 2026 Adult Group Beginner Tennis Lessons
+    url: https://www.exeternh.gov/recreation/2026-adult-group-beginner-tennis-lessons-ages-18
+    checked: '2026-11-11'
+  - label: 'Denver Parks and Recreation (ACTIVE), CWS: Level 1: 2.0-2.5 Adult Beginner Tennis @ Berkeley Park'
+    url: https://www.active.com/denver-co/racquet-sports/tennis-classes/cws-level-1-2-0-2-5-adult-beginner-tennis-berkeley-park-2026
+    checked: '2026-11-11'
+  - label: NYC Parks, Tennis Permit & Court Reservation Help
+    url: https://php1-84.nycgovparks.org/permits/tennis-permits
+    checked: '2026-11-11'
+  - label: NHS 111 Wales, Tennis elbow
+    url: https://111.wales.nhs.uk/encyclopaedia/t/article/tenniselbow/
+    checked: '2026-11-11'
+  - label: LTA, The power of park tennis – Birmingham-based player bringing a community together at Cannon Hill
+    url: https://www.lta.org.uk/news/2024/july/birmingham-based-player-bringing-a-community-together-at-cannon-hill/
+    checked: '2026-11-11'
+  inspire:
+  - kind: read
+    person: Yaz Saleh, from Birmingham
+    line: Took up tennis after cycling past a coaching session in Cannon Hill Park and asking to join in, then started a WhatsApp group that organises weekend and weekday evening sessions there for women
+      and children.
+    title: The power of park tennis – Birmingham-based player bringing a community together at Cannon Hill
+    outlet: LTA
+    url: https://www.lta.org.uk/news/2024/july/birmingham-based-player-bringing-a-community-together-at-cannon-hill/
+    checked: '2026-11-11'
   kit:
   - name: Tennis racket
-    why: clubs often lend one; a lighter racket is easier to start with
+    why: free park sessions lend one; buy your own once you are playing regularly
     url: https://www.amazon.co.uk/s?k=tennis+racket+adult
+  - name: Tennis shoes
+    why: soles made for the court surface, with support for side-to-side movement
+    url: https://www.amazon.co.uk/s?k=tennis+shoes+all+court
+  - name: Tennis balls
+    why: a tube of balls for hitting with a friend on a park court
+    url: https://www.amazon.co.uk/s?k=tennis+balls
+  related:
+  - play-pickleball
+  - play-padel
+  - play-badminton
+  - play-squash
 - id: play-disc-golf
   title: Play a round of disc golf
   category: move
@@ -30765,3 +31553,1815 @@
   - canoe-a-river-trail
   - stand-up-paddleboarding
   - learn-to-row
+- id: learn-the-djembe
+  title: Learn the djembe in a drumming class
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The djembe is a goblet-shaped hand drum from West Africa, and in a class it is played in a group, in interlocking rhythms. Beginners' courses lend you a drum and teach the strokes, the traditional
+    rhythms and how to hold your part against everyone else's.
+  start:
+  - Find a beginners' djembe or West African drumming course at an arts centre, a music venue's learning programme or a folk music school.
+  - Check whether drums are provided. Some classes lend them; others are happy for you to bring your own.
+  - Bring a notebook and pen, and ask whether you may record the rhythms on your phone to practise at home.
+  links:
+  - label: 'Glasshouse International Centre for Music: West African Percussion'
+    url: https://theglasshouseicm.org/whats-on/make-music-25-26-west-african-percussion
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Crescent Arts Centre: African Drums, Beginners'
+    url: https://crescentarts.org/courses/african-drums-beginners
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Old Town School of Folk Music: adult drumming classes (Chicago)'
+    url: https://oldtownschool.org/classes/adults/drumming
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Djembe classes for beginners: learn West African drumming'
+  description: What a beginners' djembe class teaches, from hand strokes to polyrhythms and group playing, whether drums are lent, and what courses cost in the UK and US.
+  detail:
+  - h: What a first class is like
+    p:
+    - You learn to play together from the start. Crescent Arts Centre's beginners' course covers djembe technique, traditional rhythms and feeling polyrhythms, and then playing in a West African-style percussion
+      ensemble. Drums are provided, though you can bring your own djembe.
+    - Classes add other instruments as you go. The Glasshouse class explores West African rhythms on djembes and bells, and the Old Town School of Folk Music's intermediate ensemble plays djembe, dundun
+      and bells.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Glasshouse International Centre for Music
+        - Ten weekly lessons, Thursdays 12.30pm to 2pm (January to March 2026 run); adults, all levels; instruments provided
+        - £64 for 10 classes
+      - - Crescent Arts Centre
+        - Weekly, Tuesdays 5pm to 6pm (September to December 2024 run); beginners aged 16 and over; drums provided
+        - £102 or £96
+      - - City Lit, London
+        - Eight Friday evenings from 29 January 2027; Afrocentric rhythms on congas, bata, bells and hand percussion rather than djembe; instruments provided
+        - £179
+      - - Old Town School of Folk Music, Chicago
+        - Introduction to Djembe, 80 minutes once a week for eight weeks; or a single 90-minute introductory workshop
+        - $272 ($252 members); workshop $35 ($30 members)
+    after: The Glasshouse class was fully booked when last listed, with a waiting list. Old Town School's page does not say whether drums are provided, so ask when you book.
+  faq:
+  - q: Do I need my own djembe for a drumming class?
+    a: Not usually for a beginners' class. The Glasshouse and Crescent Arts Centre courses provide drums, and Crescent Arts says to bring your own djembe if you have one.
+  - q: Can complete beginners join a djembe class?
+    a: Yes. Old Town School of Folk Music's Introduction to Djembe says no experience is necessary, and the Glasshouse class is open to everyone whatever their experience.
+  - q: What is the difference between a djembe and a dundun?
+    a: The djembe is a goblet-shaped hand drum. Dunduns are the drums that play alongside it in a West African ensemble; Old Town School's ensemble class plays djembe, dundun and bells together.
+  - q: How long is a djembe course?
+    a: The courses here run weekly for eight to twelve weeks, with sessions of 60 to 90 minutes. Old Town School also runs single 90-minute introductory workshops.
+  sources:
+  - label: Glasshouse International Centre for Music, West African Percussion
+    url: https://theglasshouseicm.org/whats-on/make-music-25-26-west-african-percussion
+    checked: '2026-11-11'
+  - label: 'Crescent Arts Centre, African Drums: Beginners'
+    url: https://crescentarts.org/courses/african-drums-beginners
+    checked: '2026-11-11'
+  - label: City Lit, Afrocentric drumming
+    url: https://www.citylit.ac.uk/courses/afrocentric-drumming
+    checked: '2026-11-11'
+  - label: Old Town School of Folk Music, Adult drumming classes
+    url: https://oldtownschool.org/classes/adults/drumming
+    checked: '2026-11-11'
+  - label: 'AA Directions, Finding a hobby: Drumming'
+    url: https://aa.co.nz/membership/aa-directions/features/finding-a-hobby-drumming
+    checked: '2026-11-11'
+  kit:
+  - name: Djembe drum
+    why: a drum of your own to practise on at home
+    url: https://www.amazon.co.uk/s?k=djembe+drum
+  - name: Djembe rhythms book
+    why: traditional rhythms written out to practise between classes
+    url: https://www.amazon.co.uk/s?k=djembe+rhythms+book
+  - name: Djembe carry bag
+    why: a padded bag to carry a drum to class
+    url: https://www.amazon.co.uk/s?k=djembe+bag
+  related:
+  - learn-the-drums
+  - join-rock-choir
+  - go-to-a-folk-dance
+  - learn-the-ukulele
+- id: learn-the-concertina
+  title: Learn the concertina
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The concertina is a small bellows instrument, and the three main kinds work so differently that choosing one is the first decision. Players' groups, festival workshops and beginners' days, some with
+    concertinas to borrow, make it easy to try before you buy.
+  start:
+  - Read the International Concertina Association's guide to English, Anglo and duet concertinas and decide what music you want to play.
+  - Book a beginners' workshop that lends instruments, so you can try one before spending several hundred pounds.
+  - Find a regional players' group near you through the association's list; several welcome beginners.
+  links:
+  - label: 'International Concertina Association: What kind of concertina should I get?'
+    url: https://concertina.org/what-kind-of-concertina-should-i-get
+    region: any
+    checked: '2026-11-11'
+  - label: 'International Concertina Association: Regional groups (UK and US)'
+    url: https://concertina.org/regional-groups
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Common Ground on the Hill: Beginning English Concertina'
+    url: https://www.commongroundonthehill.org/classes/beginning-english-concertina
+    region: us
+    checked: '2026-11-11'
+  - label: 'CDSS: Northeast Squeeze-In (Litchfield, Connecticut)'
+    url: https://cdss.org/event/northeast-squeeze-in
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Learn the concertina: English, Anglo or duet?'
+  description: How English, Anglo and duet concertinas differ, where beginners can borrow one at a workshop, and the players' groups and courses in the UK and US.
+  detail:
+  - h: Which concertina to learn
+    table:
+      head:
+      - Type
+      - How it works
+      - Good for
+      rows:
+      - - English
+        - Fully chromatic, 48 keys, range similar to a violin; same note pushing or pulling; a scale alternates between hands
+        - Expressive melody, bands and ensembles, song accompaniment
+      - - Anglo
+        - Each button gives two notes, one on the push and one on the pull; a basic Anglo has 20 keys in two rows
+        - Irish traditional music, Morris and other dance music, song accompaniment
+      - - Duet
+        - Fully chromatic, about 35 to 80 keys; melody on the right hand, accompaniment on the left; four keyboard systems (Maccann, Crane, Jeffries, Hayden)
+        - Playing tune and accompaniment together; the association says a duet may suit someone who has learned the piano as well as any other system
+    after: The International Concertina Association says a vintage concertina in reasonable condition costs several hundred at least, and new vintage-style instruments cost in the thousands. Hayden is the
+      only duet system in which student models are currently made.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Stables (UK)
+        - Day-long Anglo concertina workshop for beginners aged 15 and over; no music theory needed; concertinas to borrow
+        - Fee not shown on the page
+      - - Common Ground on the Hill (US)
+        - A 4pm class during a summer Traditions Week (June and July 2025 runs); English concertina, beginners and advanced beginners; a very limited number of loaner instruments
+        - Fee not shown on the page
+      - - Northeast Squeeze-In, Litchfield, Connecticut
+        - Informal weekend for free-reed players (September 2026 run); take or give a workshop; no paid teachers; beginners welcome
+        - Fee not shown on the page
+      - - West Country Concertina Players weekend, Halsway Manor, Somerset
+        - Residential weekend, 19 to 21 March 2027, Anglo, English, duet and concertina band tutors; for intermediate and advanced players
+        - £185 non-resident to £340 single en-suite full board
+    after: In the UK, regional groups such as Chiltinas in Bedfordshire and the Central and Southern Scotland Concertina Group say they welcome absolute beginners, and the Royal Concertinas group at Dungworth,
+      Sheffield, runs a session aimed at beginners and note readers.
+  faq:
+  - q: Which concertina is easiest for a beginner?
+    a: The International Concertina Association does not name one. It says the choice depends on the music you want to play, and that a duet is no harder than any other system for someone starting from
+      scratch.
+  - q: What is the difference between an English and an Anglo concertina?
+    a: An English concertina gives the same note whether you push or pull the bellows. An Anglo gives two different notes from each button, one on the push and one on the pull.
+  - q: How much does a concertina cost?
+    a: The International Concertina Association says a vintage concertina in reasonable condition costs several hundred at least, and new vintage-style instruments cost in the thousands. New Anglos are
+      made at all price levels.
+  - q: Can I borrow a concertina to try?
+    a: Some beginners' workshops lend them. The Stables' beginners' day has concertinas to borrow, and Common Ground on the Hill has a very limited number of loaners for its English concertina class.
+  sources:
+  - label: International Concertina Association, What kind of concertina should I get?
+    url: https://concertina.org/what-kind-of-concertina-should-i-get
+    checked: '2026-11-11'
+  - label: International Concertina Association, Regional groups
+    url: https://concertina.org/regional-groups
+    checked: '2026-11-11'
+  - label: International Concertina Association, About us
+    url: https://concertina.org/about-us
+    checked: '2026-11-11'
+  - label: The Stables, Concertina Beginners
+    url: https://stables.org/workshop/concertina-beginners
+    checked: '2026-11-11'
+  - label: Common Ground on the Hill, Beginning English Concertina with Wayne Morrison
+    url: https://www.commongroundonthehill.org/classes/beginning-english-concertina
+    checked: '2026-11-11'
+  - label: CDSS, Northeast Squeeze-In
+    url: https://cdss.org/event/northeast-squeeze-in
+    checked: '2026-11-11'
+  - label: Halsway Manor, WCCP Weekend 2027
+    url: https://www.halswaymanor.org.uk/event/wccp-weekend-2027
+    checked: '2026-11-11'
+  - label: Radio Canada International, Canadian gives new life to an old instrument-Frank Edgley Concertinas
+    url: https://www.rcinet.ca/en/2015/05/03/canadian-gives-new-life-to-an-old-instrument-frank-edgley-concertinas
+    checked: '2026-11-11'
+  kit:
+  - name: Concertina tutor book
+    why: a beginners' method for your chosen type
+    url: https://www.amazon.co.uk/s?k=concertina+tutor+book
+  - name: Concertina case
+    why: a padded case to carry the instrument to sessions
+    url: https://www.amazon.co.uk/s?k=concertina+case
+  related:
+  - learn-the-accordion
+  - go-to-a-folk-dance
+  - learn-the-violin
+  - steward-a-festival
+  inspire:
+  - kind: read
+    person: Frank Edgley, from Windsor, Ontario
+    line: A retired school teacher who played the highland bagpipes for 17 years, he turned to the concertina for its range, repaired an antique one bought at auction and went on to build his own.
+    title: Canadian gives new life to an old instrument-Frank Edgley Concertinas
+    outlet: Radio Canada International
+    url: https://www.rcinet.ca/en/2015/05/03/canadian-gives-new-life-to-an-old-instrument-frank-edgley-concertinas
+    checked: '2026-11-11'
+- id: learn-the-appalachian-dulcimer
+  title: Learn the mountain dulcimer
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The mountain, or Appalachian, dulcimer is a fretted, plucked string instrument, and its drone strings give old ballads and dance tunes their haunting sound. Folk schools in the US and a dulcimer
+    club in the UK run classes that start with how to hold it.
+  start:
+  - Book a beginners' class at a folk school or a dulcimer week, and ask for a loaner instrument when you book if you do not have one.
+  - Learn a few tunes in the first tuning your class uses, strumming across all the strings to hear the drone.
+  - Join a dulcimer club for get-togethers and workshops between courses.
+  links:
+  - label: 'Halsway Manor: Dulcimers week with Nonsuch Dulcimer Club (Somerset)'
+    url: https://www.halswaymanor.org.uk/event/dulcimers-2027
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Making Music: Nonsuch Dulcimer Club'
+    url: https://www.makingmusic.org.uk/group/nonsuch-dulcimer-club
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Common Ground on the Hill: Beginning Mountain Dulcimer'
+    url: https://www.commongroundonthehill.org/classes/beginning-mountain-dulcimer
+    region: us
+    checked: '2026-11-11'
+  - label: 'John C. Campbell Folk School: Learning Appalachian music (North Carolina)'
+    url: https://www.folkschool.org/2026/02/10/learning-appalachian-music-at-the-folk-school-fiddle-banjo-and-mountain-dulcimer/
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Learn the mountain dulcimer: beginners classes UK & US'
+  description: What a beginners' mountain dulcimer class teaches, how it differs from the hammered dulcimer, and where to learn in the UK and US, with loaners and prices.
+  detail:
+  - h: What you learn
+    p:
+    - Beginners' classes start at the very beginning. Augusta Heritage Center's mountain dulcimer class for absolute beginners started with how to hold the instrument, then moved on to tunes and basic accompaniment
+      chords. Common Ground on the Hill's class starts in the Ionian mode tuning, strumming across all the strings to explore the drone, and has students singing folk songs and ballads with the dulcimer.
+    - At John C. Campbell Folk School, classes cover noter and drone styles, call and response between teacher and group, and ensemble playing, with Appalachian ballads, dance tunes and hymns as the repertoire.
+    - The mountain dulcimer is not the hammered dulcimer. The Smithsonian says the two differ considerably in form, sound and manner of playing. The mountain dulcimer is fretted, so you stop the strings
+      to change pitch; the hammered dulcimer has a string or course of strings for each note and is struck with hammers.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Halsway Manor, Somerset, with Nonsuch Dulcimer Club
+        - Workshop week, 24 to 28 May 2027; Mountain Dulcimer Introductory course for beginners and improvers; loan instruments subject to demand
+        - £240 non-resident to £470 single en-suite (residential rates include tuition and meals)
+      - - Common Ground on the Hill (US)
+        - A 10.30am class during Traditions Week 2, 4 to 9 July 2027; beginners; loaner instruments from the office
+        - Fee not shown on the page
+      - - Augusta Heritage Center (US)
+        - Mountain Dulcimer (from scratch and beyond), for absolute beginners to early intermediate; evening mini-class, four evenings, 6pm to 7.15pm (July 2024 run)
+        - $75
+      - - John C. Campbell Folk School, North Carolina
+        - Music classes from absolute beginner to advanced
+        - See the school's class listings
+    after: Nonsuch Dulcimer Club, a UK educational charity for hammered and mountain dulcimers, also runs online and in-person workshops through the year and a residential weekend each autumn.
+  faq:
+  - q: What is the difference between a mountain dulcimer and a hammered dulcimer?
+    a: The mountain dulcimer is fretted and played by stopping the strings. The hammered dulcimer has a string or course of strings for each note and is struck with hammers. The Smithsonian says they differ
+      considerably in form, sound and playing.
+  - q: Is the mountain dulcimer easy to learn?
+    a: John C. Campbell Folk School says many of its students choose the dulcimer as their first string instrument because of its beginner-friendly design.
+  - q: Where can I learn the Appalachian dulcimer in the UK?
+    a: Nonsuch Dulcimer Club runs workshops online and in person, and a mountain dulcimer week at Halsway Manor in Somerset with an introductory course for beginners.
+  - q: Do I need my own dulcimer for a class?
+    a: Not always. Common Ground on the Hill lends instruments if you reserve one, and Halsway Manor offers loan instruments for its introductory courses, subject to demand.
+  sources:
+  - label: Halsway Manor, Dulcimers 2027
+    url: https://www.halswaymanor.org.uk/event/dulcimers-2027
+    checked: '2026-11-11'
+  - label: Making Music, Nonsuch Dulcimer Club
+    url: https://www.makingmusic.org.uk/group/nonsuch-dulcimer-club
+    checked: '2026-11-11'
+  - label: Common Ground on the Hill, Beginning Mountain Dulcimer with Susan Boyer Haley
+    url: https://www.commongroundonthehill.org/classes/beginning-mountain-dulcimer
+    checked: '2026-11-11'
+  - label: 'John C. Campbell Folk School, Learning Appalachian Music at the Folk School: Fiddle, Banjo, and Mountain Dulcimer'
+    url: https://www.folkschool.org/2026/02/10/learning-appalachian-music-at-the-folk-school-fiddle-banjo-and-mountain-dulcimer/
+    checked: '2026-11-11'
+  - label: Augusta Heritage Center, Mountain Dulcimer (from scratch & beyond) with Luanna Moore
+    url: https://augustaartsandculture.org/?p=48854
+    checked: '2026-11-11'
+  - label: Smithsonian Music, The Hammered Dulcimer
+    url: https://music.si.edu/spotlight/hammered-dulcimer/history
+    checked: '2026-11-11'
+  - label: HeraldNet, Arlington resident takes over longest running US dulcimer festival
+    url: https://www.heraldnet.com/2026/05/08/arlington-resident-takes-over-longest-running-us-dulcimer-festival/
+    checked: '2026-11-11'
+  kit:
+  - name: Mountain dulcimer tutor book
+    why: tunes and techniques to practise between classes
+    url: https://www.amazon.co.uk/s?k=mountain+dulcimer+book
+  - name: Dulcimer picks
+    why: thin picks for strumming across the strings
+    url: https://www.amazon.co.uk/s?k=dulcimer+picks
+  - name: Clip-on tuner
+    why: to tune the strings before you play
+    url: https://www.amazon.co.uk/s?k=clip+on+tuner
+  related:
+  - learn-the-banjo
+  - learn-the-violin
+  - go-to-the-smithsonian-folklife-festival
+  - go-to-a-folk-dance
+  inspire:
+  - kind: read
+    person: Beverly Hoback, from Arlington, Washington
+    line: A retired school music teacher who owned a dulcimer for years without really playing it, she took it up seriously and volunteered to run the Kindred Gathering Dulcimer Festival.
+    title: Arlington resident takes over longest running US dulcimer festival
+    outlet: HeraldNet
+    url: https://www.heraldnet.com/2026/05/08/arlington-resident-takes-over-longest-running-us-dulcimer-festival/
+    checked: '2026-11-11'
+- id: learn-kintsugi
+  title: Learn kintsugi, the Japanese art of mending with gold
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Kintsugi mends broken ceramics with lacquer and gold, so the crack becomes the decoration rather than something to hide. Traditional urushi lacquer is slow and cured layer by layer, while modern
+    versions use glue and gold leaf in a day.
+  start:
+  - Decide whether you want traditional kintsugi with natural urushi lacquer, which takes weeks or months, or a modern one-day method with glue and gold leaf.
+  - Book a beginners' class at a college or arts centre, and read what lacquer it uses and what it supplies.
+  - Find a broken glazed piece that is mostly complete, and a box with bubble wrap to carry it home.
+  links:
+  - label: 'West Dean College: Traditional kintsugi, five-day intensive course (London)'
+    url: https://www.westdean.ac.uk/short-courses/d5h41578-traditional-kintsugi-a-five-day-intensive-course-the-complete-process
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Slade School of Fine Art, UCL: Kintsugi, In Praise of Brokenness (London)'
+    url: https://onlinestore.ucl.ac.uk/short-courses/faculty-of-arts-humanities-c01/slade-school-of-fine-art-courses-f12/f12-kintsugi-in-praise-of-brokeness
+    region: uk
+    checked: '2026-11-11'
+  - label: 'The Umbrella Arts Center: Traditional kintsugi foundation course (Concord, Massachusetts)'
+    url: https://theumbrellaarts.org/node/3113
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Kintsugi classes: learn Japanese gold pottery repair'
+  description: What a kintsugi class teaches, how real urushi lacquer differs from glue-and-gold-leaf methods, and what courses cost in the UK and US.
+  detail:
+  - h: What a first class is like
+    p:
+    - West Dean College's five-day traditional course in London teaches hon-kintsugi, repairing ceramics with natural lacquer (urushi) and gold. Students clean and bond the broken pieces, fill chips with
+      sabi-urushi, seal cracks and apply keshifun, an unpolished gold powder. It runs as five half-days, 10am to 2.30pm, to allow for the lacquer to cure.
+    - Real urushi is slow. Joseph and Maiko Anderson-Story, who restore ceramics in Baldwin City, Kansas, told Kansas City magazine that each layer must cure at a set temperature and humidity and that their
+      projects usually take about three months. Joseph adds that a lot of people can do a version in an afternoon with a two-part epoxy.
+    - So check what a class uses. West Dean's one-day modern course bonds pieces with superglue, rebuilds small gaps with epoxy resin and gilds with 23.5 carat gold leaf, and the college says the mended
+      pieces are not made safe for use as cups. Homes & Antiques notes that most kintsugi repairs are not done with real gold, and its home recipe mixes clear ceramic adhesive with mica powder. The Umbrella
+      Arts Center says its urushi course gives food-safe repairs.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - West Dean College, London
+        - Traditional kintsugi with urushi and gold powder; five half-days (summer school run); lacquer, gold and protective kit supplied
+        - £555
+      - - Slade School of Fine Art, UCL, London
+        - Three days, 13 to 15 July 2026 run, 10am to 4.30pm; repair with lacquer and gold; varying levels of experience
+        - £290
+      - - West Dean College
+        - Modern kintsugi, one day; superglue, epoxy and 23.5 carat gold leaf; five sheets of gold leaf included
+        - Fee not shown on the course page
+      - - The Umbrella Arts Center, Concord, Massachusetts
+        - Six two-hour Friday sessions (April to May 2026 run) with natural urushi; four to six students
+        - $240, plus $145 beginner kit and shipping
+    after: West Dean asks traditional students to bring a shoe box or similar container, ideally with bubble wrap, to carry the finished piece home. For the modern course, bring a broken ceramic that is
+      relatively complete, or a piece to break on the day.
+  faq:
+  - q: Is kintsugi done with real gold?
+    a: Traditionally it was urushi dusted with powdered gold, but Homes & Antiques says most kintsugi repairs today are not done with real gold. West Dean's traditional course uses gold powder from Japan,
+      and its modern course uses 23.5 carat gold leaf.
+  - q: Is kintsugi food safe?
+    a: It depends on the method. The Umbrella Arts Center says its natural urushi course gives food-safe repairs, while West Dean says pieces mended on its modern glue-and-gold-leaf course are not made
+      safe for use as cups.
+  - q: How long does kintsugi take?
+    a: Traditional urushi work takes weeks or months because each layer must cure. The Anderson-Storys say their projects usually take about three months; modern epoxy versions can be done in an afternoon.
+  - q: Can urushi lacquer cause a rash?
+    a: It can. The Umbrella Arts Center says urushi can cause skin irritation or allergic reactions similar to poison ivy in some people, and West Dean advises anyone with a known lacquer allergy or very
+      sensitive skin to check with a healthcare professional before signing up.
+  safety: Raw urushi lacquer can cause skin irritation or allergic reactions similar to poison ivy in some people, so classes provide gloves and ask anyone with known sensitivities to check before booking.
+  sources:
+  - label: West Dean College, Traditional Kintsugi – A Five-day Intensive Course (The Complete Process)
+    url: https://www.westdean.ac.uk/short-courses/d5h41578-traditional-kintsugi-a-five-day-intensive-course-the-complete-process
+    checked: '2026-11-11'
+  - label: West Dean College, Modern Kintsugi – gold leaf repair for ceramics with Richard Walker
+    url: https://www.westdean.ac.uk/short-courses/s1d40577-modern-kintsugi-gold-leaf-repair-for-ceramics
+    checked: '2026-11-11'
+  - label: 'UCL Slade School of Fine Art, F12 KINTSUGI: In Praise of Brokeness'
+    url: https://onlinestore.ucl.ac.uk/short-courses/faculty-of-arts-humanities-c01/slade-school-of-fine-art-courses-f12/f12-kintsugi-in-praise-of-brokeness
+    checked: '2026-11-11'
+  - label: 'The Umbrella Arts Center, Traditional Kintsugi: A Six-Session Foundation Course'
+    url: https://theumbrellaarts.org/node/3113
+    checked: '2026-11-11'
+  - label: The Umbrella Arts Center, Visit
+    url: https://theumbrellaarts.org/visit
+    checked: '2026-11-11'
+  - label: 'Homes & Antiques, Kintsugi: how to do it, different methods and best kits'
+    url: https://www.homesandantiques.com/arts-crafts/art/kintsugi-how-to-do-it-different-methods-and-best-kits
+    checked: '2026-11-11'
+  - label: Kansas City magazine, Using traditional Japanese methods, a Baldwin City couple brings broken pottery back to life
+    url: https://kansascitymag.com/using-traditional-japanese-methods-a-baldwin-city-couple-brings-broken-pottery-back-to-life/
+    checked: '2026-11-11'
+  kit:
+  - name: Kintsugi repair kit
+    why: a modern gold-effect kit for practising at home; check whether it uses urushi or resin
+    url: https://www.amazon.co.uk/s?k=kintsugi+repair+kit
+  - name: Nitrile gloves
+    why: to keep lacquer and glue off your skin
+    url: https://www.amazon.co.uk/s?k=nitrile+gloves
+  - name: Wet and dry abrasive paper
+    why: fine grits for smoothing filled cracks before gilding
+    url: https://www.amazon.co.uk/s?k=wet+and+dry+sandpaper+assorted+grits
+  related:
+  - try-pottery-on-the-wheel
+  - mend-at-a-repair-cafe
+  - learn-ikebana
+  - learn-a-heritage-craft
+  inspire:
+  - kind: read
+    person: Joseph and Maiko Anderson-Story, from Baldwin City, Kansas
+    line: A couple who mend broken pottery with traditional urushi lacquer from their Baldwin City studio; Maiko was introduced to kintsugi by a coworker in Seattle, and a repair usually takes them about
+      three months.
+    title: Using traditional Japanese methods, a Baldwin City couple brings broken pottery back to life
+    outlet: Kansas City magazine
+    url: https://kansascitymag.com/using-traditional-japanese-methods-a-baldwin-city-couple-brings-broken-pottery-back-to-life/
+    checked: '2026-11-11'
+- id: learn-paper-quilling
+  title: Learn paper quilling
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Quilling rolls narrow strips of paper into coils and scrolls, then glues them into flowers, borders and pictures. It needs little more than paper strips, a slotted tool and glue, and guilds in Britain
+    and North America run teaching days.
+  start:
+  - Book a beginners' class at an adult-education college or arts centre, or a learn-to-quill day run by the Quilling Guild.
+  - Buy a slotted quilling tool, a pack of 5mm paper strips and PVA glue, and practise tight and loose coils.
+  - Join a guild for its magazine, local groups and annual show.
+  links:
+  - label: 'The Quilling Guild: membership (UK)'
+    url: https://membermojo.co.uk/quillingguild
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Virginia ARTfactory: Quilling 101 intensive workshop (Manassas, Virginia)'
+    url: https://artfactory.coursestorm.com/category/quilling
+    region: us
+    checked: '2026-11-11'
+  - label: North American Quilling Guild (guild blog, with link to its website)
+    url: https://naqgorg.blogspot.com
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Paper quilling for beginners: classes and guilds'
+  description: What a beginners' quilling class teaches, the tools you need, and where to learn in the UK and US, from Quilling Guild days to arts centre courses.
+  detail:
+  - h: What you learn
+    p:
+    - Quilling, also called filigree or scrollwork, starts with rolling strips of paper round a quilling tool. A four-session beginners' course run by Inspire in Nottinghamshire had learners practise coils
+      and scrolls, learn their names and combine them into a heart, a flower, a festive decoration and butterflies, with a look at the craft's history.
+    - At Cirencester College, students made a range of quilled shapes and used them in a box frame to decorate a quote, with all materials included. Virginia ARTfactory's two-day intensive moves from basic
+      tools and methods to more advanced tools, and recommends reading glasses for anyone with limited vision.
+    - The Quilling Guild, founded in 1983, is a volunteer-run UK charity. Membership brings a seasonal 44-page colour magazine, Quillers Today, regional local groups, an accreditation scheme and the annual
+      Celebration of Quilling. In North America, the North American Quilling Guild holds an annual conference, NAQGCON, with workshops and displays at a different venue each year.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Quilling Guild, Quaker Meeting House, Liverpool
+        - Full-day Beautiful Borders workshop (July 2026 run); beginners and experienced quillers
+        - Free to members; non-members can join for £10
+      - - The Quilling Guild, Shaw, Oldham
+        - Learn to quill open house for beginners, 10am to 4pm, with demonstrations (April 2025 run)
+        - Free to members; £10 for non-members, including a year's membership
+      - - Cirencester College, Gloucestershire
+        - Two-week evening course, 6pm to 8pm (October 2024 run); all materials included
+        - Fee not shown on the course page
+      - - Virginia ARTfactory, Manassas, Virginia
+        - Two-day intensive (January and February 2027 runs); ages 15 and up, any level
+        - $119 ($101.15 for members), including a $5 supply fee
+    after: Quilling Guild membership was last listed at £15 with the magazine by post, or £10 for online access only.
+  faq:
+  - q: What do you need to start quilling?
+    a: Inspire's beginners' course lists a quilling pen or slotted tool (from about £2), 5mm quilling paper strips (from about £2.60), PVA glue, cocktail sticks, tweezers and stiff card for mounting.
+  - q: Is there a quilling guild in the UK?
+    a: Yes. The Quilling Guild was founded in 1983 and is a UK charity. Membership was last listed at £15 with the magazine by post, or £10 online only, and it runs teaching days such as its Liverpool workshop.
+  - q: Is there a quilling guild in the US?
+    a: Yes, the North American Quilling Guild. It holds an annual conference, NAQGCON, with workshops and displays.
+  - q: Is quilling the same as paper filigree?
+    a: Yes. Inspire's course describes quilling as a delicate craft also called filigree or scrollwork.
+  sources:
+  - label: Inspire (Culture, Learning, Libraries), Quilling for Beginners - Hucknall Library - Adult Learning
+    url: https://www.inspireculture.org.uk/skills-learning/adult-learning/quilling-for-beginners-hucknall-library-adult-learning/
+    checked: '2026-11-11'
+  - label: Cirencester College, Quilling
+    url: https://www.cirencester.ac.uk/adult_course/adult-leisure/quilling/
+    checked: '2026-11-11'
+  - label: 'Virginia ARTfactory, Quilling 101: An Intensive Workshop'
+    url: https://artfactory.coursestorm.com/category/quilling
+    checked: '2026-11-11'
+  - label: The Quilling Guild, Membership (membermojo)
+    url: https://membermojo.co.uk/quillingguild
+    checked: '2026-11-11'
+  - label: Charity Commission, The Quilling Guild
+    url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/4038188/full-print
+    checked: '2026-11-11'
+  - label: Culture Liverpool, Beautiful Borders Quilling Day
+    url: https://cultureliverpool.co.uk/events/beautiful-borders-quilling-day/
+    checked: '2026-11-11'
+  - label: Oldham Council What's On, Learn to quill with the Quilling Guild
+    url: https://whatson.oldham.gov.uk/event/learn-to-quill-with-the-quilling-guild/
+    checked: '2026-11-11'
+  - label: North American Quilling Guild, blog
+    url: https://naqgorg.blogspot.com
+    checked: '2026-11-11'
+  - label: 'All Things Paper, Meet the Artist: The Incredibly Detailed Quilling of Shelly Krzyzewski'
+    url: https://www.allthingspaper.net/2025/06/quilling-artist-interview-shelly-krzyzewski.html
+    checked: '2026-11-11'
+  kit:
+  - name: Quilling paper strips
+    why: narrow coloured strips to roll into coils and scrolls
+    url: https://www.amazon.co.uk/s?k=quilling+paper+strips+5mm
+  - name: Slotted quilling tool
+    why: holds the end of the strip while you roll it
+    url: https://www.amazon.co.uk/s?k=slotted+quilling+tool
+  - name: Quilling board
+    why: a template board for making coils of the same size
+    url: https://www.amazon.co.uk/s?k=quilling+board+circle+template
+  related:
+  - learn-origami
+  - learn-calligraphy
+  - learn-bookbinding
+  - make-a-mosaic
+- id: try-woodblock-printing
+  title: Try Japanese woodblock printing
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Japanese woodblock printing, mokuhanga, prints with watercolour, rice paste and a hand-held baren instead of a press, using a separate carved block for each colour. The process is water-based and
+    table-top, so you can carry on at home after a course.
+  start:
+  - Book a beginners' Japanese woodcut course at a print studio or college, and check whether carving tools are supplied or must be bought.
+  - Draw a simple design with few colours, about 18 x 25cm (7 x 10 inches) or smaller.
+  - Bring an apron and closed shoes, and expect to carve blocks between classes.
+  links:
+  - label: 'City Lit: Japanese woodcut printmaking (London)'
+    url: https://www.citylit.ac.uk/courses/japanese-woodcut-printmaking
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Leicester Print Workshop: Mokuhanga summer school'
+    url: https://www.leicesterprintworkshop.com/products/260526-26th-30th-may-2026-summer-school-mokuhanga
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Pyramid Atlantic Art Center: Introduction to Mokuhanga (Hyattsville, Maryland)'
+    url: https://pyramidatlanticartcenter.org/event/introduction-to-mokuhanga-apr2026/
+    region: us
+    checked: '2026-11-11'
+  - label: 'Zea Mays Printmaking: Introduction to Mokuhanga (Florence, Massachusetts)'
+    url: https://www.zeamaysprintmaking.com/event/introduction-to-mokuhanga-japanese-watercolor-woodblock/
+    region: us
+    checked: '2026-11-11'
+  seo_title: Japanese woodblock printing (mokuhanga) classes
+  description: What a mokuhanga class is like, from carving blocks to printing with a baren, and what Japanese woodblock courses cost in the UK and US.
+  detail:
+  - h: What a first class is like
+    p:
+    - City Lit's Japanese woodcut course in London is for complete beginners. You design, carve and print a multi-coloured edition, using watercolour pigment, rice paste (nori), Japanese paper and a baren,
+      with the kento registration system to line up each colour. The process is completed entirely by hand without a press, and the college says it helps to carry on cutting blocks at home between classes.
+    - The blocks are wood rather than lino. Leicester Print Workshop's five-day course transfers a multi-colour image to Japanese plywood and carves colour separation blocks in relief, then prints on mulberry
+      paper. It covers baren effects such as goma zuri (sesame printing) and bokashi, a colour gradation.
+    - Expect to make a small run rather than a finished masterpiece. Zea Mays students leave with a small edition of prints and the blocks they carved, while Pyramid Atlantic says its weekend aims to introduce
+      the techniques, not produce an edition.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, Keeley Street, London
+        - Four Thursdays, 10am to 4pm, from 19 November 2026 (further runs in 2027); complete beginners; basic materials provided
+        - £349 (£279 senior, £227 concession)
+      - - Leicester Print Workshop
+        - Five days, 10am to 4pm (May 2026 run); open to anyone with or without experience
+        - £340
+      - - Pyramid Atlantic Art Center, Hyattsville, Maryland
+        - Two days, 10.30am to 5pm (April 2026 run); beginner to intermediate; baren, brushes, paper and carving tools provided
+        - $398, including a $55 materials fee
+      - - Zea Mays Printmaking, Florence, Massachusetts
+        - Three days, 10am to 5pm (October 2025 run); beginners and returning students; you buy your own carving tools
+        - $325
+    after: Leicester Print Workshop also listed a one-day Mokuhanga in a day for £98 (as last listed, September 2026 run). Pyramid Atlantic asks students to bring a simple sketch of about 7 x 10 inches
+      (18 x 25cm) or smaller.
+  faq:
+  - q: What is mokuhanga?
+    a: Japanese water-based woodblock printing. City Lit's course uses watercolour pigment, woodblocks, Japanese carving tools, rice paste and Japanese paper, and the print is made entirely by hand without
+      a press.
+  - q: Do you need a printing press for woodblock printing?
+    a: Not for mokuhanga. Prints are rubbed by hand with a baren, which is why Leicester Print Workshop calls it a table-top technique.
+  - q: What is kento registration?
+    a: The Japanese registration system used to align the paper with the blocks, so that each colour lines up. City Lit, Leicester Print Workshop and Zea Mays all teach it.
+  - q: Is Japanese woodblock printing toxic?
+    a: City Lit describes the process as water-based and non-toxic, and Leicester Print Workshop calls it a non-toxic, water-based technique.
+  safety: Carving woodblocks means working with sharp blades, and some classes ask that you be comfortable handling them.
+  sources:
+  - label: City Lit, Japanese woodcut printmaking
+    url: https://www.citylit.ac.uk/courses/japanese-woodcut-printmaking
+    checked: '2026-11-11'
+  - label: City Lit, Q&A | Carol Wilhide Justin discusses her passion for Japanese woodcut printing
+    url: https://www.citylit.ac.uk/blog/qa-carol-wilhide-justin
+    checked: '2026-11-11'
+  - label: Leicester Print Workshop, 26th–30th May 2026 Summer School Mokuhanga
+    url: https://www.leicesterprintworkshop.com/products/260526-26th-30th-may-2026-summer-school-mokuhanga
+    checked: '2026-11-11'
+  - label: Leicester Print Workshop, Mokuhanga in a day
+    url: https://checkout.leicesterprintworkshop.com/products/260927-27th-september-2026-mokuhanga-in-a-day.oembed
+    checked: '2026-11-11'
+  - label: Pyramid Atlantic Art Center, Introduction to Mokuhanga
+    url: https://pyramidatlanticartcenter.org/event/introduction-to-mokuhanga-apr2026/
+    checked: '2026-11-11'
+  - label: Pyramid Atlantic Art Center, Mission and History
+    url: https://pyramidatlanticartcenter.org/about/history-and-mission/
+    checked: '2026-11-11'
+  - label: 'Zea Mays Printmaking, Introduction to Mokuhanga: Japanese Watercolor Woodblock'
+    url: https://www.zeamaysprintmaking.com/event/introduction-to-mokuhanga-japanese-watercolor-woodblock/
+    checked: '2026-11-11'
+  - label: 'UWE Bristol, Study day/Workshop: Mokuhanga (Water-Based Woodblock) Printmaking'
+    url: https://courses.uwe.ac.uk/Z51000144/mokuhanga-water-based-woodblock-printmaking
+    checked: '2026-11-11'
+  - label: 'Kala, Mokuhanga: Japanese Woodblock Printing (June)'
+    url: https://kala.org/class/mokuhanga-june
+    checked: '2026-11-11'
+  kit:
+  - name: Japanese woodblock carving tools
+    why: knives and gouges for cutting the blocks
+    url: https://www.amazon.co.uk/s?k=japanese+woodblock+carving+tools
+  - name: Baren
+    why: the hand-held pad used to rub the paper onto the inked block
+    url: https://www.amazon.co.uk/s?k=baren+printmaking
+  - name: Shina plywood
+    why: soft-faced plywood blocks to carve at home
+    url: https://www.amazon.co.uk/s?k=shina+plywood+woodblock
+  related:
+  - make-a-linocut-print
+  - try-letterpress-printing
+  - try-screen-printing
+  - learn-chinese-brush-painting
+- id: learn-lampwork-glass-beads
+  title: Make glass beads at the flame
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Lampwork, or flamework, means melting rods of coloured glass in a torch flame and forming them on a metal rod to make beads. A first course takes you from lighting the torch to a plain bead and then
+    decorated ones.
+  start:
+  - Book an introductory glass bead course at a craft college or glass studio, where torches, glass and tools are provided.
+  - Read the clothing list before you go; studios ask for cotton or other natural-fibre clothes, closed shoes and long hair tied back.
+  - Take a notebook and a jam jar, and note which glass colours and decorations you like for your next beads.
+  links:
+  - label: 'West Dean College: Making glass beads, an introduction (West Sussex)'
+    url: https://westdean.ac.uk/short-courses/s2d33661-making-glass-beads-an-introduction
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Foci Minnesota Center for Glass Arts: Intro to Beadmaking (Minneapolis)'
+    url: https://www.mnglassart.org/classes/neon/p/flameworking-october17
+    region: us
+    checked: '2026-11-11'
+  - label: 'John C. Campbell Folk School: Beginning and intermediate glass beadmaking (North Carolina)'
+    url: https://folkschool.configio.com/pd/4568/beginning-intermediate-glass-beadmaking
+    region: us
+    checked: '2026-11-11'
+  - label: International Society of Glass Beadmakers
+    url: https://isgb.org/events-awards
+    region: us
+    checked: '2026-11-11'
+  seo_title: Lampwork glass bead making courses for beginners
+  description: What a beginners' lampwork course teaches, from lighting the torch to dots, stringers and encased beads, what to wear and what classes cost.
+  detail:
+  - h: What a first class is like
+    p:
+    - You start with the torch. West Dean College's one-day course begins with lighting and using the torch and heating glass safely, then making drops and stringers (thin threads of glass) before a first
+      plain bead. After that come decorations with coloured glass and frit (crushed glass).
+    - Longer courses build in small steps. West Dean's introductory course with Sarah Downton covers frits, canes, stringers, dots and metal leaf, shaping and encasing, and what makes a durable bead; students
+      make 18 to 25 beads and leave able to set up a torch at home. Finished beads are fired overnight before you collect them.
+    - In the US, Foci's four-week Intro to Beadmaking melts soda-lime ("soft") glass rods over a torch to make round, barrel and other shaped beads, with dots, lines and raking. The John C. Campbell Folk
+      School class teaches heat control and timing, and moves from simple spacer beads to dichroic glass, metal foil and, time allowing, work off the mandrel (the metal rod the bead is formed on).
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - West Dean College, West Sussex
+        - Introductory course with Sarah Downton over several days; glass and lunch included, dinner for residential students
+        - £372
+      - - West Dean College, West Sussex
+        - One day, 9.15am to 5pm; materials, fuel and lunch included
+        - Fee not shown on the course page
+      - - Glass School (online)
+        - Pre-recorded course by Laura Quinn, 30 videos (3 hours 36 minutes), including setting up a safe workspace at home
+        - £240 including VAT
+      - - Foci Minnesota Center for Glass Arts, Minneapolis
+        - Four Saturdays, 12 hours in all; no experience needed; all materials provided (October to November 2026 run)
+        - $425 in the description ($400 in the page header); sold out when last listed
+      - - John C. Campbell Folk School, Brasstown, North Carolina
+        - Six-day class (Sunday to Friday, May run); beginning and intermediate; age 18 and over
+        - $950 tuition, plus $110 materials and $20 for gases
+    after: West Dean asks you to bring a jam jar and, if you own them, didymium or AUR-92 tinted flame-worker's safety glasses; the college supplies glasses otherwise. The John C. Campbell Folk School provides
+      standard bead tool kits and asks for leather or flame-resistant aprons.
+  faq:
+  - q: What is lampwork glass?
+    a: Glass beads and small pieces made by melting glass rods in a torch flame. It is also called flamework, and the beads are formed on a metal rod called a mandrel.
+  - q: Do I need experience to take a glass bead making class?
+    a: No. Foci's Intro to Beadmaking says no experience is required, and West Dean's courses start with lighting the torch and making a first plain bead.
+  - q: What should I wear to a lampworking class?
+    a: Cotton or other natural-fibre clothing, closed shoes and long hair tied back. West Dean also suggests an apron or old cotton shirt against burn holes.
+  - q: Can you make glass beads at home?
+    a: Some courses prepare you for it. West Dean's introductory course aims to give you the confidence to set up a torch at home, and Glass School's online course covers gas bottles, regulators, flashback
+      arrestors and extraction.
+  sources:
+  - label: West Dean College, Making glass beads – an introduction with Sarah Downton
+    url: https://westdean.ac.uk/short-courses/s2d33661-making-glass-beads-an-introduction
+    checked: '2026-11-11'
+  - label: West Dean College, Making glass beads (one day)
+    url: https://westdean.ac.uk/short-courses/s1d35814-making-glass-beads
+    checked: '2026-11-11'
+  - label: Glass School, Artist Course – Laura Quinn – Getting Started with Lampworking
+    url: https://glass-school.co.uk/products/artist-course-laura-quinn-getting-started-with-lamp-working
+    checked: '2026-11-11'
+  - label: Foci Minnesota Center for Glass Arts, Intro to Beadmaking
+    url: https://www.mnglassart.org/classes/neon/p/flameworking-october17
+    checked: '2026-11-11'
+  - label: John C. Campbell Folk School, Beginning & Intermediate Glass Beadmaking
+    url: https://folkschool.configio.com/pd/4568/beginning-intermediate-glass-beadmaking
+    checked: '2026-11-11'
+  - label: International Society of Glass Beadmakers, Events & Awards
+    url: https://isgb.org/events-awards
+    checked: '2026-11-11'
+  kit:
+  - name: Lampwork bead making book
+    why: techniques and bead designs to try after a course
+    url: https://www.amazon.co.uk/s?k=lampwork+bead+making+book
+  - name: Didymium glasses
+    why: tinted eye protection for working at the torch
+    url: https://www.amazon.co.uk/s?k=didymium+glasses+lampwork
+  - name: Bead stringing kit
+    why: thread, clasps and findings to turn beads into jewellery
+    url: https://www.amazon.co.uk/s?k=jewellery+making+kit+findings
+  related:
+  - learn-glass-fusing
+  - try-glassblowing
+  - make-silver-jewellery
+  - learn-enamelling
+  safety: You work at an open torch with molten glass, so studios ask for natural-fibre clothing, closed shoes, tied-back hair and tinted flame-worker's glasses.
+  inspire:
+  - kind: read
+    person: Paul Spencer, of Corning, New York
+    line: A former psychotherapist and painter who took glassmaking classes about 20 years ago, set up a home studio and now makes glass beads at the torch, sometimes in colours chosen by the wearer.
+    title: Frit Happens
+    outlet: Mountain Home magazine
+    url: https://www.mountainhomemag.com/2025/05/01/530107/frit-happens
+    checked: '2026-11-11'
+- id: learn-marquetry
+  title: Make a marquetry picture in wood veneer
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Marquetry makes pictures and patterns from thin sheets of wood veneer, often in exotic woods, cut with a fine fretsaw and glued to a panel. A three-hour workshop can send you home with a small finished
+    piece, and some clubs meet weekly.
+  start:
+  - Book a short introduction at a museum, craft college or woodworking school, where veneers and tools are provided.
+  - Take sharp pencils, a notepad and reading glasses if you use them; the work is fine and close.
+  - Ask the tutor about a local marquetry group; some, such as the Harrow group, give informal one-to-one tuition.
+  links:
+  - label: 'Bewdley Museum: Introduction to Marquetry (Worcestershire)'
+    url: https://www.bewdleymuseum.co.uk/whats-on/events-at-the-museum/workshop-introduction-to-marquetry
+    region: uk
+    checked: '2026-11-11'
+  - label: 'West Dean College: Traditional marquetry (West Sussex)'
+    url: https://www.westdean.ac.uk/short-courses/swe37998-traditional-marquetry
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Marc Adams School of Woodworking: Making marquetry coasters'
+    url: https://www.marcadams.com/workshop/making-marquetry-coasters-jack-mauch/
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Marquetry courses for beginners: UK and US classes'
+  description: What a beginners' marquetry class teaches, from cutting veneer with a fretsaw to Boulle work, what to bring and what courses cost in the UK and the US.
+  detail:
+  - h: What you learn
+    p:
+    - Bewdley Museum's three-hour Introduction to Marquetry needs no experience. Its tutor, Quentin, founded the Staffordshire Marquetry Group and is a former President of The Marquetry Society; you learn
+      the steps of the craft and make a small item to take home.
+    - West Dean College's Traditional marquetry course with Audrey Fasquelle teaches cutting fine veneer with a fretsaw. On day one students use the Boulle technique, cutting a stack of two to four veneers
+      at once to make a traditional acanthus pattern; on day two they cut a simple design of their own.
+    - In the US, Jack Mauch's weekend at the Marc Adams School of Woodworking teaches marquetry and veneering by making one or two sets of coasters, and the school says it suits beginners. Patrick Edwards'
+      week there goes further, covering the chevalet (a marquetry sawing frame), veneer packets, hot hide glue and mastic.
+    - Clubs carry the craft on. The Harrow Marquetry Group in north-west London meets on Friday evenings, gives informal one-to-one tuition and says members from novices to very experienced make pictures
+      with simple techniques and no expensive machinery.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Bewdley Museum, Worcestershire
+        - Three-hour workshop, 1pm to 4pm, age 18 and over; all materials, tea and cake included (April 2026 run)
+        - £45
+      - - West Dean College, West Sussex
+        - Two teaching days with an arrival evening; tutor supplies veneers, fretsaws and blades
+        - £388
+      - - Marc Adams School of Woodworking
+        - Weekend workshop making marquetry coasters; suited to beginners (October 2026 run)
+        - $550 tuition, plus $45 materials
+      - - Marc Adams School of Woodworking
+        - Weeklong French marquetry workshop with Patrick Edwards (September to October 2026 run)
+        - $1,050 tuition, plus $85 materials
+    after: West Dean asks you to bring an apron, covered shoes, 2H, HB and B pencils, an eraser, a notepad and a sketch for your second piece.
+  faq:
+  - q: What tools do you need for marquetry?
+    a: Very few to start. Courses supply veneers and fretsaws, the Harrow Marquetry Group says no expensive machinery is needed, and more advanced French marquetry uses a sawing frame called a chevalet.
+  - q: What is Boulle marquetry?
+    a: A method of cutting a stack of veneers together so the pieces fit each other. West Dean's course uses it to cut two to four veneers at once for an acanthus pattern.
+  - q: Do I need woodworking experience to learn marquetry?
+    a: No. Bewdley Museum's workshop needs no prior experience, and the Marc Adams coasters weekend says it is suited to beginners.
+  - q: Is there a marquetry club near me?
+    a: In the UK, local groups such as the Harrow Marquetry Group are listed on The Marquetry Society's website; ask at a workshop or contact a group directly.
+  sources:
+  - label: Bewdley Museum, Introduction to Marquetry
+    url: https://www.bewdleymuseum.co.uk/whats-on/events-at-the-museum/workshop-introduction-to-marquetry
+    checked: '2026-11-11'
+  - label: West Dean College, Traditional marquetry with Audrey Fasquelle
+    url: https://www.westdean.ac.uk/short-courses/swe37998-traditional-marquetry
+    checked: '2026-11-11'
+  - label: Marc Adams School of Woodworking, Making Marquetry Coasters
+    url: https://www.marcadams.com/workshop/making-marquetry-coasters-jack-mauch/
+    checked: '2026-11-11'
+  - label: 'Marc Adams School of Woodworking, French Marquetry: The Difference Between Boulle, Painting with Wood and Piece by Piece'
+    url: https://www.marcadams.com/workshop/french-marquetry-difference-between-boulle-painting-wood-patrick-edwards/
+    checked: '2026-11-11'
+  - label: Hatch End Association, Harrow Marquetry Group
+    url: https://www.hatchend.org/?p=235
+    checked: '2026-11-11'
+  kit:
+  - name: Marquetry starter kit
+    why: a printed design with matching veneers for a first picture at home
+    url: https://www.amazon.co.uk/s?k=marquetry+kit
+  - name: Craft knife with spare blades
+    why: cutting veneer pieces to shape
+    url: https://www.amazon.co.uk/s?k=craft+knife+scalpel+spare+blades
+  - name: Piercing saw frame
+    why: a fine fretsaw for cutting veneer stacks
+    url: https://www.amazon.co.uk/s?k=piercing+saw+frame+blades
+  related:
+  - learn-woodworking
+  - learn-woodcarving
+  - join-a-woodturning-club
+  - carve-a-wooden-spoon
+  inspire:
+  - kind: read
+    person: John Mathews, from Islandmagee, County Antrim
+    line: Started with a marquetry kit his mother bought him, kept at it for almost 50 years, and now designs furniture and makes marquetry kits of the Giant's Causeway, the Titanic and Stonehenge.
+    title: Craftsman John hopes to inspire next generation
+    outlet: Banbridge Leader
+    url: https://www.banbridgeleader.co.uk/news/craftsman-john-hopes-to-inspire-next-generation-2590283
+    checked: '2026-11-11'
+- id: learn-handbell-ringing
+  title: Join a handbell team
+  category: connect
+  kind: skill
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: In a handbell team each ringer looks after two or four notes, and the whole group plays as one instrument. Most groups provide the bells and the music, so you can join without buying anything.
+  start:
+  - Find a team near you through Making Music's group finder, your local u3a (University of the Third Age, a network of local learning groups) or Handbell Musicians of America's ensemble list.
+  - Brush up on reading music; many teams use treble and bass clef notation, and some ask for basic reading skills.
+  - Go to a weekly rehearsal, then look out for a regional rally or Spring Ring where teams ring together.
+  links:
+  - label: 'Making Music: An introduction to handbell ringing (find a group)'
+    url: https://makingmusic.org.uk/node/8033
+    region: uk
+    checked: '2026-11-11'
+  - label: 'u3a: Handbells subject adviser'
+    url: https://www.u3a.org.uk/learning/subjects/handbells
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Handbell Musicians of America: Find a handbell ensemble'
+    url: https://handbellmusicians.org/connect/handbell-ensembles/
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Handbell ringing: how to join a handbell team'
+  description: How a handbell team works, from holding two bells to damping and plucking, how to find a group, and what a US Spring Ring and beginners' course cost.
+  detail:
+  - h: What a rehearsal is like
+    p:
+    - This is tune ringing, not the change ringing done on church tower bells. A handbell's clapper moves in only one plane, so the bell sounds only when moved in one of two directions, which gives the
+      ringer control. Making Music explains that each ringer usually holds one bell in each hand and is responsible for two or four notes, plus their sharps and flats, ringing them whenever they appear
+      in the music.
+    - Ringers stand behind tables covered in foam, so bells can be put down and picked up quickly. Many read treble and bass clef, like piano music; others use number charts. Techniques include ringing
+      off the table or shoulder, four-in-hand, mallets, damping and plucking.
+    - Handbells are expensive and the largest bass bells are very heavy, but groups generally provide the instruments and music for beginners. Many groups also play chimes, which can be notated in their
+      own way.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Bridlington Priory Handbell Ringers, East Yorkshire
+        - Weekly rehearsal, Wednesday 7pm to 9pm; basic music reading needed; occasional rallies further afield
+        - Not stated on the team's page
+      - - u3a handbell groups, UK
+        - Groups within local u3as; the subject adviser helps link groups and set up new ones
+        - Not stated on the page (u3a membership applies)
+      - - Pacific Ringers, Milwaukie (Handbell Musicians of America Area 10)
+        - Four Saturday mornings for beginning adult ringers; music and binders lent (February 2020 run)
+        - $30
+      - - Cape Cod Spring Ring, Harwich, Massachusetts
+        - One-day massed rehearsal and public concert for individuals, partial and whole choirs (March 2026 run)
+        - $15 per ringer
+    after: Charity Commission records describe the Handbell Ringers of Great Britain's aim as encouraging "the art of handbell tune ringing in all its forms"; Making Music suggests contacting it if there
+      is no group near you.
+  faq:
+  - q: Do you need to read music for handbells?
+    a: It helps. Many ringers read treble and bass clef, and some teams ask for basic music reading, but others use number charts where you ring when your number comes up.
+  - q: What is the difference between handbell ringing and church bell ringing?
+    a: Handbell teams play tunes from written music, each ringer covering a few notes. Tower ringers ring changes, and Making Music notes that handbells were first used by tower ringers to practise ringing
+      the changes.
+  - q: How many bells does each handbell ringer play?
+    a: Usually two or four notes, plus their sharps and flats, with one bell in each hand, though some ringers hold more.
+  - q: Do I need to buy my own handbells?
+    a: No. Making Music says most groups welcome beginners and provide the instruments and music.
+  sources:
+  - label: Making Music, An introduction to handbell ringing
+    url: https://makingmusic.org.uk/node/8033
+    checked: '2026-11-11'
+  - label: u3a, Handbells
+    url: https://www.u3a.org.uk/learning/subjects/handbells
+    checked: '2026-11-11'
+  - label: Bridlington Priory, Priory Handbells
+    url: https://bridlingtonpriory.co.uk/priory-handbells/
+    checked: '2026-11-11'
+  - label: Handbell Musicians of America, Handbell Ensembles
+    url: https://handbellmusicians.org/connect/handbell-ensembles/
+    checked: '2026-11-11'
+  - label: Handbell Musicians of America Area 10, Mt Hood Ringers
+    url: https://area10.handbellmusicians.org/uncategorized/mt-hood-ringers/
+    checked: '2026-11-11'
+  - label: Handbell Musicians of America Area 1, Cape Cod Spring Ring 2026
+    url: https://area1.handbellmusicians.org/state-and-local-events/cape-cod-spring-ring/
+    checked: '2026-11-11'
+  - label: Charity Commission, Handbell Ringers of Great Britain
+    url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/298945
+    checked: '2026-11-11'
+  kit:
+  - name: Handbell gloves
+    why: cotton gloves for handling polished bells
+    url: https://www.amazon.co.uk/s?k=handbell+gloves+cotton
+  - name: Music theory workbook
+    why: practice in reading treble and bass clef
+    url: https://www.amazon.co.uk/s?k=music+theory+workbook+beginners
+  related:
+  - learn-to-ring-church-bells
+  - join-community-orchestra-or-band
+  - sing-barbershop-chorus
+  - join-u3a-or-olli
+  inspire:
+  - kind: read
+    person: Hilary Holt, u3a handbells subject adviser, Bedford area
+    line: Joined Bedford u3a's handbell group having never heard handbells played, was hooked within weeks, and now also rings with the East Anglian Regional Handbell Team.
+    title: Handbells
+    outlet: u3a
+    url: https://www.u3a.org.uk/learning/subjects/handbells
+    checked: '2026-11-11'
+- id: learn-batik
+  title: Learn batik
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Batik draws a design on cloth in melted wax, then dyes it; the waxed lines stay pale, and layers of wax and dye build up the colours. A one-day class gets you from a tjanting, the small spouted pen,
+    to a finished piece.
+  start:
+  - Book a one-day batik class at an adult-education college or craft centre, or a longer course at a fibre arts school.
+  - Check whether fabric is supplied or whether you bring your own; one course asks for white cotton.
+  - Wear old clothes or an apron, since dyes can stain permanently, and take a notebook for colour order.
+  links:
+  - label: 'Leicester Adult Education College: Batik (one day)'
+    url: https://leicesteradulted.ac.uk/courses/course-details/?cId=39326
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Handprinted: Fab Friday batik workshop (Bognor Regis)'
+    url: https://handprinted.co.uk/products/fab-friday-batik-17th-and-24th-july-2026
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Farnham Maltings: Beautiful batik on fabric (Surrey)'
+    url: https://farnhammaltings.com/events/beautiful-batik-on-fabric
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Sievers School of Fiber Arts: Batik (Washington Island, Wisconsin)'
+    url: https://sieversschool.com/class/batik
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Batik classes for beginners: wax-resist dyeing on fabric'
+  description: What a beginners' batik class teaches, from the tjanting and hot wax to dye layers and removing the wax, with course costs in the UK and the US.
+  detail:
+  - h: What you learn
+    p:
+    - Batik is a resist method. Wax applied to the cloth stops the dye reaching the fabric beneath. Dharma Trading's introduction describes the order of work. Wax the parts to stay lightest, dye, then wax
+      and dye again, finishing with the darkest colour. At the end the wax comes out, by boiling, by hot water or with an iron between absorbent paper.
+    - Leicester Adult Education College's one-day course covers stretching silk on a batik frame, drawing nature-inspired designs in melted wax with a tjanting, adding colour with silk dyes and fixing the
+      finished piece, along with the origins and patterns of batik. At Farnham Maltings, tutor Alison Butler starts with small samples on paper before a larger piece on fabric.
+    - Longer courses add stamps. Sievers School of Fiber Arts uses fibre-reactive dyes and beeswax, applied with brushes, wooden print blocks and antique Indonesian copper stamps called tjaps.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Leicester Adult Education College
+        - One Saturday, 10am to 4pm, on silk; equipment provided (March 2026 run)
+        - £22.25; materials may cost extra
+      - - Handprinted, Bognor Regis, West Sussex
+        - Two Friday mornings, 10am to 1pm; fabric and paper; materials provided, bring your own white cotton (summer 2026 run)
+        - £50
+      - - Farnham Maltings, Surrey
+        - Workshop with Alison Butler, from 10am (July 2026 run); paper samples, then fabric; materials provided
+        - Fee not shown on the event page
+      - - Sievers School of Fiber Arts, Washington Island, Wisconsin
+        - Four days with Anne Landre, all levels, using tjaps (June 2026 run)
+        - $540 tuition, plus $60 materials; optional housing $320
+    after: Leicester asks you to wear old clothes or an apron because the dyes can stain clothing permanently. Farnham Maltings asks for design ideas, an apron and a folder to carry work home.
+  faq:
+  - q: What is a tjanting tool used for?
+    a: Drawing lines of melted wax on to fabric in batik. Leicester Adult Education College's course teaches its use on silk.
+  - q: How do you get the wax out of batik?
+    a: Dharma Trading lists boiling the wax out, running hot water over the fabric, dry cleaning, or ironing between absorbent paper, which it says can leave stains.
+  - q: What fabric is best for batik?
+    a: Natural fibres. Leicester's course works on silk, Handprinted suggests white cotton, and Sievers includes a yard of cotton in its materials fee.
+  - q: Is batik suitable for beginners?
+    a: Yes. Handprinted's and Farnham Maltings' workshops are open to beginners as well as people with some batik experience.
+  safety: Dharma Trading warns that wax heated past its flash point can give off toxic smoke or catch fire, and suggests a double boiler or electric wax pot.
+  sources:
+  - label: Leicester Adult Education College, Batik
+    url: https://leicesteradulted.ac.uk/courses/course-details/?cId=39326
+    checked: '2026-11-11'
+  - label: Handprinted, Fab Friday – Batik
+    url: https://handprinted.co.uk/products/fab-friday-batik-17th-and-24th-july-2026
+    checked: '2026-11-11'
+  - label: Farnham Maltings, Beautiful batik on fabric
+    url: https://farnhammaltings.com/events/beautiful-batik-on-fabric
+    checked: '2026-11-11'
+  - label: Sievers School of Fiber Arts, Batik
+    url: https://sieversschool.com/class/batik
+    checked: '2026-11-11'
+  - label: Sievers School of Fiber Arts, About us
+    url: https://sieversschool.com/about-us-our-shop
+    checked: '2026-11-11'
+  - label: Dharma Trading Co., Batik – introduction
+    url: https://www.dharmatrading.com/info/batik.html
+    checked: '2026-11-11'
+  - label: John C. Campbell Folk School, Studio Batik with Jessica Kaufman
+    url: https://www.folkschool.org/2019/11/13/studio-batik-with-jessica-kaufman/
+    checked: '2026-11-11'
+  kit:
+  - name: Tjanting tool
+    why: the spouted pen for drawing lines in hot wax
+    url: https://www.amazon.co.uk/s?k=tjanting+tool+batik
+  - name: Batik wax
+    why: wax for resisting the dye at home
+    url: https://www.amazon.co.uk/s?k=batik+wax
+  - name: Electric wax melting pot
+    why: keeps wax melted without an open flame
+    url: https://www.amazon.co.uk/s?k=electric+wax+melting+pot
+  related:
+  - learn-natural-dyeing
+  - try-screen-printing
+  - learn-embroidery
+  - make-a-patchwork-quilt
+  inspire:
+  - kind: read
+    person: Jessica Kaufman, from Asheville
+    line: A former theatre and dance teacher who narrowed her work to a single craft in 2016 and, when the school wrote about her in 2019, ran WAXON Batik & Dye Studio, teaching batik to children and adults.
+    title: Studio Batik with Jessica Kaufman
+    outlet: John C. Campbell Folk School
+    url: https://www.folkschool.org/2019/11/13/studio-batik-with-jessica-kaufman/
+    checked: '2026-11-11'
+- id: learn-qigong
+  title: Learn qigong
+  category: move
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Qigong is a set of slow movements, postures and breathing, sometimes with meditation, that grew out of traditional Chinese medicine; the US National Center for Complementary and Integrative Health
+    (NCCIH) counts tai chi, when done for health, as one of its hundreds of forms. Classes run in adult-education colleges, hospital health programmes and halls, and some run online.
+  start:
+  - Look for a beginners' course at an adult-education college or a hospital health-education programme, or search a teacher directory such as the Tai Chi Union for Great Britain's or the National Qigong
+    Association's.
+  - Ask the teacher about their training and experience; NCCIH says qigong instructors are not licensed and there is no national certification standard in the US.
+  - Wear loose clothes and soft indoor shoes, and check the provider's health guidance before the first session.
+  links:
+  - label: 'Tai Chi Union for Great Britain: find an instructor (filter includes qigong)'
+    url: https://www.taichiunion.com/?p=10302
+    region: uk
+    checked: '2026-11-11'
+  - label: 'City Lit: Chi kung five elements, moving from the centre (London and online)'
+    url: https://www.citylit.ac.uk/courses/chi-kung-five-elements-moving-from-the-centre-all-levels/ffc32-2526
+    region: uk
+    checked: '2026-11-11'
+  - label: 'National Qigong Association: Find a Teacher directory'
+    url: https://nqa.org/find-a-teacher
+    region: us
+    checked: '2026-11-11'
+  - label: 'Kaiser Permanente Northern California: Qigong Basics (Fremont and San Leandro)'
+    url: https://healthy.kaiserpermanente.org/northern-california/health-wellness/classes-programs/details/qigong-basics-5
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Qigong classes for beginners: where to learn and costs'
+  description: What happens in a beginners' qigong class, where to find a teacher in the UK and US, what courses cost as last listed, and what to ask first.
+  detail:
+  - h: What a first class is like
+    p:
+    - At City Lit in London, the all-levels chi kung (another spelling of qigong) course starts with the basic stance and warm-up exercises, then moves through slow, meditative movements and postures, and
+      ends each session with a sitting meditation. No experience is needed, but you should be able to copy movements and follow spoken instructions.
+    - Kaiser Permanente's eight-session Qigong Basics class in Northern California covers gentle movement, warm-ups, self-massage using acupressure points, stretching and meditation. It is open to the community,
+      not only to Kaiser members.
+    - Styles differ between teachers. The Tai Chi Union for Great Britain's instructor finder lets you filter for qigong teachers; their listings name systems such as Shibashi, Ba Duan Jin, Yi Jin Jing
+      and Zhan Zhuang.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London (in person, Keeley Street)
+        - 10 weekly sessions of 60 minutes
+        - £179 full fee; £143 senior; £125 concession (as last listed, September 2025 run)
+      - - City Lit (online)
+        - 10 weekly sessions of 75 minutes
+        - £209 full fee; £167 senior; £146 concession (as last listed, September 2025 run)
+      - - Kaiser Permanente, Fremont or San Leandro, California
+        - 8 sessions, booked by phone, no referral needed
+        - $70 members; $88 non-members
+      - - Teacher directories (TCUGB in the UK, NQA in the US)
+        - Independent teachers' classes
+        - Set by each teacher
+    after: The National Qigong Association's directory marks each teacher's level. Certified Professional Members have had their training hours checked by its certification committee; Practitioner Members
+      have not submitted any, so the NQA suggests asking about their experience.
+  faq:
+  - q: What is the difference between qigong and tai chi?
+    a: NCCIH says tai chi began as a martial art and, when done for health, is considered a form of qigong, which has hundreds of forms.
+  - q: Is qigong safe?
+    a: NCCIH says qigong appears to be a safe form of activity and that many studies reported no side effects, and in one review those reported were uncommon and mild. It advises not using qigong to put
+      off seeing a doctor about a medical problem.
+  - q: How do I find a qualified qigong teacher?
+    a: Use a directory such as the Tai Chi Union for Great Britain's, whose instructors it assesses, or the National Qigong Association's, which shows each teacher's membership level. Ask any teacher about
+      their training.
+  - q: What should I wear to a qigong class?
+    a: City Lit asks for loose, comfortable clothing and soft indoor shoes, and does not allow socks-only practice on wooden floors.
+  sources:
+  - label: NCCIH, Qigong, What You Need To Know
+    url: https://www.nccih.nih.gov/health/qigong-what-you-need-to-know
+    checked: '2026-11-11'
+  - label: Tai Chi Union for Great Britain, The UK Union of All Tai Chi Internal Arts
+    url: https://taichiunion.com
+    checked: '2026-11-11'
+  - label: Tai Chi Union for Great Britain, Find an instructor
+    url: https://www.taichiunion.com/?p=10302
+    checked: '2026-11-11'
+  - label: City Lit, Chi kung five elements, moving from the centre (all levels)
+    url: https://www.citylit.ac.uk/courses/chi-kung-five-elements-moving-from-the-centre-all-levels/ffc32-2526
+    checked: '2026-11-11'
+  - label: National Qigong Association, Find A Teacher
+    url: https://nqa.org/find-a-teacher
+    checked: '2026-11-11'
+  - label: Kaiser Permanente, Qigong Basics
+    url: https://healthy.kaiserpermanente.org/northern-california/health-wellness/classes-programs/details/qigong-basics-5
+    checked: '2026-11-11'
+  kit:
+  - name: Soft indoor shoes
+    why: City Lit asks for soft indoor shoes rather than socks on wooden floors
+    url: https://www.amazon.co.uk/s?k=tai+chi+shoes
+  - name: Meditation cushion
+    why: for the sitting meditation that closes many sessions, and for practice at home
+    url: https://www.amazon.co.uk/s?k=meditation+cushion
+  related:
+  - learn-tai-chi-form
+  - yoga-class
+  - try-pilates
+  - nordic-walking-lesson
+  inspire:
+  - kind: read
+    person: Andy Yeadon, qigong teacher at The Witham, Barnard Castle
+    line: Has practised qigong for three decades and ran a free taster session at The Witham in Barnard Castle that led the reporter to sign up for his beginners' class.
+    title: It made my fingers tingle
+    outlet: Teesdale Mercury
+    url: https://teesdalemercury.co.uk/news/it-made-my-fingers-tingle/
+    checked: '2026-11-11'
+- id: learn-aikido
+  title: Step onto an aikido mat
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Aikido is a Japanese martial art of throws and joint immobilisations that use an attacker's momentum, created in the 1920s by Morihei Ueshiba. Traditional aikido has always been non-competitive,
+    so you train with partners rather than against opponents.
+  start:
+  - Find a club through the British Aikido Board, the UK governing body, or a national federation such as the US Aikido Federation, and check it runs adult beginners' classes.
+  - Book a trial class; dojos (training halls) such as Notting Hill Aikikai offer one, and London Aikikai lets newcomers try two training days at the pay-per-class rate.
+  - Wear clothes that cover your elbows and knees (Tenzan Aikido asks for long sleeves and trousers), tie back long hair and leave jewellery at home; you train barefoot on the mat.
+  links:
+  - label: 'British Aikido Board: what is aikido, beginners and club search'
+    url: https://bab.org.uk/what-is-aikido
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Notting Hill Aikikai: adult beginners (London)'
+    url: https://nottinghillaikikai.squarespace.com/adults
+    region: uk
+    checked: '2026-11-11'
+  - label: 'United States Aikido Federation: about the federation (dojo list on its site)'
+    url: https://services.usaikifed.com/about/
+    region: us
+    checked: '2026-11-11'
+  - label: 'Tenzan Aikido: getting started (Seattle)'
+    url: https://www.tenzanaikido.com/getting-started
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Aikido for beginners: first class, falling and costs'
+  description: What an adult beginners' aikido class involves, how you learn to fall safely, and what dojos in London and Seattle charge, as last listed.
+  detail:
+  - h: What a first class is like
+    p:
+    - At Notting Hill Aikikai in London, adult beginners start with a short warm-up, then learn footwork and movement on the mat, practise how to roll and fall safely (ukemi), and study a few basic techniques.
+      Its three-month beginners' package moves from basics in weeks 1 to 3 to recognising techniques in weeks 9 to 12, after which students are usually ready for their first grading.
+    - Ukemi takes up half your training. BigRock Aikikai, a club in Calgary, describes it as attacking and then receiving the throw or pin, and says half of your practice time goes to it. More advanced
+      falls, such as tobi ukemi, are for senior students only.
+    - Tenzan Aikido in Seattle runs an ongoing Aikido for Beginners class that teaches three fundamental techniques step by step, starting with a warm-up and ending with five minutes of meditation.
+    - The British Aikido Board says personal accident insurance is required for everyone who trains, so ask your club how it is arranged.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Notting Hill Aikikai, London
+        - Beginners' package, 3 months, up to 2 classes a week, uniform included
+        - £250; £200 concessions
+      - - London Aikikai, North Maida Vale, London
+        - 90-minute classes; try two training days at the pay-per-class rate
+        - £12 a class (£10 concession); £75 a month unlimited; £40 compulsory annual membership including liability insurance (fees page last updated September 2021)
+      - - Tenzan Aikido, Seattle
+        - Intro package of one private lesson and one group class
+        - $89; then $175 a month unlimited; uniform $75
+    after: London Aikikai's concession rate covers under-18s, full-time students and retired people over 65.
+  faq:
+  - q: Is aikido competitive?
+    a: Traditional aikido is non-competitive, the British Aikido Board says, though some styles, such as Tomiki aikido, have added competitive elements.
+  - q: What do you wear to your first aikido class?
+    a: Notting Hill Aikikai asks for tracksuit bottoms or leggings and a T-shirt, not shorts, because much of the training is on the knees. You train barefoot with hair tied back and jewellery removed.
+  - q: What is ukemi in aikido?
+    a: Ukemi means receiving a technique, by attacking and then taking the throw or pin, and includes learning to roll and fall safely.
+  - q: How much do aikido classes cost?
+    a: Notting Hill Aikikai lists a three-month beginners' package at £250. Tenzan Aikido in Seattle lists an $89 introduction and $175 a month for adults.
+  safety: Learn ukemi (falling and rolling) from the instructor before taking throws, and do not try falls beyond your level.
+  sources:
+  - label: British Aikido Board, What is aikido
+    url: https://bab.org.uk/what-is-aikido
+    checked: '2026-11-11'
+  - label: Notting Hill Aikikai, Adults
+    url: https://nottinghillaikikai.squarespace.com/adults
+    checked: '2026-11-11'
+  - label: Notting Hill Aikikai, Book a class
+    url: https://nottinghillaikikai.squarespace.com/book-a-class
+    checked: '2026-11-11'
+  - label: London Aikikai, Fees
+    url: https://www.londonaikikai.com/fees
+    checked: '2026-11-11'
+  - label: London Aikikai, Information for Beginners
+    url: https://www.londonaikikai.com/?p=1896
+    checked: '2026-11-11'
+  - label: BigRock Aikikai, Attacking and Falling Safely
+    url: https://www.bigrock-aikikai.com/classes/student-resources/attacking.html
+    checked: '2026-11-11'
+  - label: Tenzan Aikido, Getting Started
+    url: https://www.tenzanaikido.com/getting-started
+    checked: '2026-11-11'
+  - label: United States Aikido Federation, About USAF
+    url: https://services.usaikifed.com/about/
+    checked: '2026-11-11'
+  - label: United States Aikido Federation, Aikido
+    url: https://www.usaikifed.com/aikido
+    checked: '2026-11-11'
+  kit:
+  - name: Aikido or judo gi
+    why: the cotton uniform worn once you join; some clubs sell or include one
+    url: https://www.amazon.co.uk/s?k=aikido+gi
+  - name: Dojo flip-flops
+    why: for walking between the changing room and the mat edge, since you train barefoot
+    url: https://www.amazon.co.uk/s?k=zori+sandals+martial+arts
+  - name: Knee pads
+    why: for comfort in the kneeling work
+    url: https://www.amazon.co.uk/s?k=martial+arts+knee+pads
+  related:
+  - learn-judo
+  - learn-karate
+  - learn-tai-chi-form
+  - learn-to-fence
+  inspire:
+  - kind: read
+    person: Morag Warrack, retired art teacher
+    line: Walked into a beginners' aikido class in a village hall in the Surrey hills in 2014, a year into her retirement, trained two or three times a week and went on to earn a black belt.
+    title: 'A new start after 60: I fought off four attackers – and earned my aikido black belt'
+    outlet: The Guardian (shared by the British Aikido Board)
+    url: https://bab.org.uk/a
+    checked: '2026-11-11'
+- id: learn-to-water-ski
+  title: Get up on water skis
+  category: move
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Beginners learn on a training bar fixed to the side of the boat before moving to a long rope behind it. Clubs and lake centres provide the wetsuit, buoyancy aid and skis, so you need little more
+    than swimwear and a towel.
+  start:
+  - Find a club or school through British Water Ski & Wakeboard's club finder in the UK, or USA Water Ski & Wake Sports' affiliated clubs and schools in the US.
+  - Book a beginner session and check what is supplied; at Low Wood Bay on Windermere, buoyancy aids, wetsuits, skis and impact vests are included.
+  - Bring swimwear, a towel and a change of clothes, and a friend to watch from the boat if the centre allows.
+  links:
+  - label: 'British Water Ski & Wakeboard: take part and find a club'
+    url: https://bwsw.org.uk/participation/take-part
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Low Wood Bay, Windermere: waterskiing'
+    url: https://englishlakes.co.uk/hotels/low-wood-bay/watersports/waterskiing/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'USA Water Ski & Wake Sports: free Get On The Water learn-to-ski clinics'
+    url: https://usawaterski.org/news/2024/march/20/get-on-the-water-presented-by-radar-skis-to-offer-free-learn-to-ski-clinics
+    region: us
+    checked: '2026-11-11'
+  - label: 'World Barefoot Center: waterski lesson rates (Winter Haven, Florida)'
+    url: https://www.worldbarefootcenter.com/waterski-rates
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Water skiing for beginners: first lesson, prices, safety'
+  description: How a first water-ski lesson works, what lakes and clubs in the UK and US charge as last listed, what is supplied, and the safety rules on the boat.
+  detail:
+  - h: What a first lesson is like
+    p:
+    - At Low Wood Bay on Windermere, beginner lessons are for people who have never water-skied. Instructors qualified with British Water Ski teach the basics on a training bar, then move you on to being
+      towed on the ski line. Buoyancy aids must be worn throughout.
+    - Club taster days follow a similar pattern. A 2026 club listing for women and girls' taster sessions, part of a British Water Ski & Wakeboard initiative, described a safety briefing on dry land, for
+      skiers and boat observers, and training bars on the boat for beginners to practise standing up before moving to a long rope.
+    - In the US, USA Water Ski & Wake Sports ran free Get On The Water learn-to-ski clinics through its affiliated clubs from June to August 2024, with every skier in a life vest. It recommended, but did
+      not require, being able to swim.
+    - Boating rules apply to the boat. In California, for example, a boat towing a skier must carry an observer aged 12 or over as well as the driver, towing is allowed only between sunrise and sunset,
+      and the skier must wear a US Coast Guard-approved life jacket that is not inflatable, with limited exceptions for competition skiers.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Low Wood Bay, Windermere, Cumbria
+        - One-hour boat session for up to three people; open April to October
+        - £130 a boat; wetsuits and buoyancy aids included
+      - - Theale Water Sports Club, near Reading
+        - Club tows for visitors; introductory offer for non-members
+        - £24 a visitor tow; 3 tows at £20 each on the introductory offer (as last listed, 2026 season)
+      - - USA Water Ski & Wake Sports affiliated clubs
+        - Get On The Water learn-to-ski clinics
+        - Free (as last listed, 2024 run)
+      - - World Barefoot Center, Winter Haven, Florida
+        - Private boat lesson, up to six people a boat including ride-alongs
+        - $165 an hour; $330 for two hours
+    after: Theale says British Water Ski & Wakeboard-affiliated clubs limit visitors to three tickets, after which you join the club. Low Wood Bay's price is per boat, not per person.
+  faq:
+  - q: Do I need to be able to swim to water ski?
+    a: USA Water Ski & Wake Sports recommended swimming ability for its Get On The Water clinics but did not require it. Buoyancy aids or life vests are worn throughout; ask your centre about its own rules.
+  - q: What do you wear for water skiing lessons?
+    a: British Water Ski & Wakeboard says to bring swimwear, a towel and a change of clothes; clubs provide a wetsuit and a buoyancy aid or life jacket.
+  - q: How much does a water skiing lesson cost?
+    a: Low Wood Bay on Windermere lists £130 for a one-hour boat session shared by up to three people. World Barefoot Center in Florida lists $165 an hour.
+  - q: How do beginners learn to water ski?
+    a: At Low Wood Bay, beginners start on a training bar beside the boat and then move to being towed on the ski line.
+  safety: Wear a buoyancy aid or life jacket throughout, and ski only behind a boat with a driver and an observer.
+  sources:
+  - label: British Water Ski & Wakeboard, Take part
+    url: https://bwsw.org.uk/participation/take-part
+    checked: '2026-11-11'
+  - label: English Lakes Hotels, Waterskiing on Lake Windermere (Low Wood Bay)
+    url: https://englishlakes.co.uk/hotels/low-wood-bay/watersports/waterskiing/
+    checked: '2026-11-11'
+  - label: Theale Water Sports Club, Introductory Offer 2026
+    url: https://twsc.org.uk/wp-content/uploads/2026/04/Introductory-Offer-2026.pdf
+    checked: '2026-11-11'
+  - label: Theale Water Sports Club, Home
+    url: https://twsc.org.uk
+    checked: '2026-11-11'
+  - label: LetsReg, Women & Girls Taster Sessions 2026
+    url: https://www.letsreg.com/uk/event/water_skiing_beginners_day_14082026
+    checked: '2026-11-11'
+  - label: USA Water Ski & Wake Sports, Get On The Water to offer free learn to ski clinics
+    url: https://usawaterski.org/news/2024/march/20/get-on-the-water-presented-by-radar-skis-to-offer-free-learn-to-ski-clinics
+    checked: '2026-11-11'
+  - label: USA Water Ski & Wake Sports, Instructional Articles
+    url: https://usawaterski.org/instructional-articles
+    checked: '2026-11-11'
+  - label: World Barefoot Center, Waterski lesson rates
+    url: https://www.worldbarefootcenter.com/waterski-rates
+    checked: '2026-11-11'
+  - label: California Division of Boating and Waterways, Towing sports
+    url: https://dbw.parks.ca.gov/TowingSports
+    checked: '2026-11-11'
+  kit:
+  - name: Changing robe
+    why: for getting changed out of a wet wetsuit at the lakeside
+    url: https://www.amazon.co.uk/s?k=changing+robe+waterproof
+  - name: Dry bag
+    why: to keep a towel, phone and dry clothes together in the boat or on the bank
+    url: https://www.amazon.co.uk/s?k=dry+bag
+  related:
+  - learn-to-ski
+  - learn-to-surf
+  - learn-to-windsurf
+  - stand-up-paddleboarding
+- id: play-volleyball
+  title: Play volleyball, indoors or on the beach
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: A team gets three touches to send the ball back over the net, and the ball must be hit, never caught. Clubs run coached beginners' blocks indoors and on sand, and some city leagues help players without
+    a team find one.
+  start:
+  - Use Volleyball England's club finder in England, or call your USA Volleyball region in the US, and ask which clubs run adult beginners' sessions.
+  - Choose indoor (six a side in a sports hall) or beach (on sand), and book a short coached block before joining a league.
+  - If you have no team for a city league, ask about the free-agent list, which managers use to fill places.
+  links:
+  - label: 'Volleyball England: volleyball for beginners, with the club finder'
+    url: https://volleyballengland.org/article/430/volleyball-for-beginners-how-do-i-start-playing
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Richmond Volleyball: adult beginner sessions (London)'
+    url: https://www.richmondvolleyball.co.uk/community/adult-beginner-volleyball-summer-sessions
+    region: uk
+    checked: '2026-11-11'
+  - label: 'USA Volleyball: ways to play'
+    url: https://www.usavolleyball.org/play
+    region: us
+    checked: '2026-11-11'
+  - label: 'City of Boise: co-ed summer sand volleyball league (Idaho)'
+    url: https://cityofboise.org/departments/parks-and-recreation/adult-volleyball/coed-summer-sand-volleyball-league/
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Adult volleyball for beginners: clubs and leagues'
+  description: How to start playing volleyball as an adult, indoors or on the beach, from coached beginners' blocks to city leagues, with costs in the UK and US.
+  detail:
+  - h: What you learn
+    p:
+    - Volleyball England describes three forms. Indoor volleyball is six a side, played in sports halls or on grass, on an official court of 18 by 9 metres (59 by 29.5 feet). Beach volleyball is played
+      outdoors on sand. Sitting volleyball puts disabled and non-disabled players, men and women, on court side by side.
+    - The basic rules come first. A team has at most three touches before the ball goes back over the net, and the ball must be hit rather than caught.
+    - Beginners' blocks are coached. Richmond Volleyball in London runs a five-week block for adults new to the game. SideOut's beach training in Leyton, east London, is for beginners and intermediates,
+      who sign up individually and are allocated to groups of at most 10.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Richmond Volleyball, London
+        - Indoor; five-week coached block for adult beginners, Fridays 6pm to 7.50pm (June to July 2026 run)
+        - £60 for the block
+      - - SideOut, Leyton, London
+        - Beach; weekly 90-minute coached session for beginners and intermediates; club membership required
+        - £59 a month, or £14 a single session (April to August 2026 run; £12 a session in the October 2026 run)
+      - - Town of Gilbert, Arizona
+        - Co-ed indoor league; nine weeks, seven games and a play-off tournament; upper and lower leagues
+        - $375 a team, referees included
+      - - City of Boise, Idaho
+        - Co-ed sand league, four a side; power, competitive and recreational divisions; 16 and over
+        - $174 a team, plus $20 non-resident fee
+    after: City leagues take teams, so players without one can join Gilbert's free-agent list, which team managers use to find players. In the US, USA Volleyball advises that your region is the first call
+      with membership questions.
+  faq:
+  - q: How do I start playing volleyball as an adult?
+    a: Look for a club's adult beginners' block. In England, Volleyball England's club finder searches by postcode; Richmond Volleyball's five-week block for new adults cost £60 as last listed.
+  - q: How big is a volleyball court?
+    a: Volleyball England gives an official indoor court as 18 by 9 metres (59 by 29.5 feet).
+  - q: Can I join a volleyball league without a team?
+    a: Often, yes. The Town of Gilbert, Arizona, runs a free-agent form for adult leagues, and team managers use the list to add players.
+  - q: How much does beach volleyball training cost?
+    a: At SideOut in Leyton, London, coached beach sessions cost £59 a month or £14 a single session as last listed, and players need club membership.
+  sources:
+  - label: Volleyball England, Volleyball for beginners – how do I start playing?
+    url: https://volleyballengland.org/article/430/volleyball-for-beginners-how-do-i-start-playing
+    checked: '2026-11-11'
+  - label: Volleyball England, Play volleyball
+    url: https://volleyballengland.org/get-involved/play/volleyball
+    checked: '2026-11-11'
+  - label: Richmond Volleyball, Adult beginner volleyball summer sessions
+    url: https://www.richmondvolleyball.co.uk/community/adult-beginner-volleyball-summer-sessions
+    checked: '2026-11-11'
+  - label: SideOut, Beach volleyball beginners training
+    url: https://www.sideout.co.uk/beach-volleyball/train/beginners-training
+    checked: '2026-11-11'
+  - label: USA Volleyball, Play
+    url: https://www.usavolleyball.org/play
+    checked: '2026-11-11'
+  - label: USA Volleyball, Membership FAQ
+    url: https://usavolleyball.org/membership/membership-faq/
+    checked: '2026-11-11'
+  - label: Town of Gilbert, Adult volleyball leagues
+    url: https://www.gilbertaz.gov/departments/parks-and-recreation/sports/adult-volleyball-leagues
+    checked: '2026-11-11'
+  - label: City of Boise, Co-ed summer sand volleyball league
+    url: https://cityofboise.org/departments/parks-and-recreation/adult-volleyball/coed-summer-sand-volleyball-league/
+    checked: '2026-11-11'
+  - label: Volleyball England, Stalwarts call time on NVL careers
+    url: https://volleyballengland.org/article/1927/stalwarts-call-time-on-nvl-careers
+    checked: '2026-11-11'
+  kit:
+  - name: Volleyball
+    why: a ball to practise passing and serving at home
+    url: https://www.amazon.co.uk/s?k=volleyball+ball
+  - name: Volleyball knee pads
+    why: padding for the knees when diving for the ball indoors
+    url: https://www.amazon.co.uk/s?k=volleyball+knee+pads
+  - name: Indoor court shoes
+    why: non-marking shoes with grip for sports hall floors
+    url: https://www.amazon.co.uk/s?k=indoor+court+shoes
+  related:
+  - play-badminton
+  - play-pickleball
+  - walking-netball
+  - play-table-tennis
+  inspire:
+  - kind: read
+    person: Steve Grimes, of Wiltshire Mavericks
+    line: Played National Volleyball League volleyball for eight clubs from the 1982-83 season, and at 65 ended his NVL career with Wiltshire Mavericks while planning to keep playing in Division 1 at Whitefield.
+    title: Stalwarts call time on NVL careers
+    outlet: Volleyball England
+    url: https://volleyballengland.org/article/1927/stalwarts-call-time-on-nvl-careers
+    checked: '2026-11-11'
+- id: play-hockey
+  title: Pick up a hockey stick again
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Field hockey clubs run relaxed sessions for people who have not played for years or never have, with coached skills and then small-sided games. Walking hockey keeps the stick work and drops the running.
+  start:
+  - Use England Hockey's club finder in England, or USA Field Hockey's club finder in the US, and ask about Back to Hockey or walking hockey sessions.
+  - Ask whether the club lends sticks and shin pads; several do for newcomers, and some give the first sessions free.
+  - Wear sports clothes and trainers without studs, and ask the club what protection it expects, such as a mouthguard.
+  links:
+  - label: 'England Hockey: Back to Hockey'
+    url: https://www.englandhockey.co.uk/play/adult-club-hockey/vitality-back-to-hockey
+    region: uk
+    checked: '2026-11-11'
+  - label: 'England Hockey: walking hockey'
+    url: https://www.englandhockey.co.uk/play/adult-club-hockey/walking-hockey
+    region: uk
+    checked: '2026-11-11'
+  - label: 'USA Field Hockey: walking hockey'
+    url: https://www.usafieldhockey.com/adm/walking
+    region: us
+    checked: '2026-11-11'
+  - label: 'City of Dover: indoor field hockey leagues (Delaware)'
+    url: https://www.cityofdover.gov/field-hockey-leagues
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Back to hockey: adult field hockey and walking hockey'
+  description: How adults take up or return to field hockey, from England Hockey's Back to Hockey to walking hockey and US leagues, with what clubs lend and charge.
+  detail:
+  - h: What a first session is like
+    p:
+    - England Hockey describes Back to Hockey as fun, social and informal, for people who have not played for several years or are playing for the first time. Coaches lead skills work, then small-sided
+      friendly games; some clubs follow with coffee and cake.
+    - Walking hockey is the gentler version. England Hockey says it suits newcomers, people who have not played for a while and people who stopped through injury. USA Field Hockey's walking hockey guide
+      sets out the rules. Everyone walks, keeping at least one foot on the ground. The ball stays below knee height and there is no physical contact. The guide suggests five a side on an area 25 yards wide
+      by 30 yards long (about 23 by 27 metres).
+    - Clubs often lend kit. Henley Hockey Club provides sticks and shin pads if needed and recommends a mouthguard. Mitcham Ladies Hockey Club in New Malden, south-west London, lends a stick, shin pads,
+      shirt and socks to newcomers. USA Field Hockey's guide lists shin guards and mouthguards as optional for walking hockey, and says larger, lighter balls reduce the need for shin guards.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Henley Hockey Club, Jubilee Park, Henley
+        - Back2Hockey; low-pressure and friendly, Saturdays 9am to 10am (summer 2026 run)
+        - First session free, then £30 for the summer
+      - - Mitcham Ladies Hockey Club, New Malden, London
+        - Women's club; Back to Hockey session, then Wednesday training
+        - Three free sessions; membership fees not shown on the page
+      - - City of Dover, Delaware
+        - Indoor winter adult co-ed league, Sundays at the Pitts Center (2025-26 season)
+        - $290 a team
+      - - USA Field Hockey
+        - Adult membership, needed for some adult events
+        - $30 a year
+    after: England Hockey's walking hockey page notes that sessions may not be available nearby, so ask clubs on its finder whether they run one. Dover's 2025-26 flyer listed a separate women's adult league
+      at $360 a team.
+  faq:
+  - q: What is Back to Hockey?
+    a: England Hockey's informal sessions for people who have not played for several years or are new to the game, with coached skills followed by small-sided games.
+  - q: What are the rules of walking hockey?
+    a: USA Field Hockey's guide says players must walk, keep the ball below knee height and avoid physical contact, usually five a side.
+  - q: Do I need my own hockey stick to start?
+    a: Not always. Henley Hockey Club provides sticks and shin pads if needed, and Mitcham Ladies Hockey Club lends a stick and shin pads to newcomers.
+  - q: Do you need a mouthguard for hockey?
+    a: Henley Hockey Club recommends one for its Back2Hockey sessions. USA Field Hockey's walking hockey guide lists mouthguards as optional. Ask your club.
+  safety: Ask your club what protective kit it expects; Henley Hockey Club recommends a mouthguard for its Back2Hockey sessions.
+  sources:
+  - label: England Hockey, Back to Hockey
+    url: https://www.englandhockey.co.uk/play/adult-club-hockey/vitality-back-to-hockey
+    checked: '2026-11-11'
+  - label: England Hockey, Walking Hockey
+    url: https://www.englandhockey.co.uk/play/adult-club-hockey/walking-hockey
+    checked: '2026-11-11'
+  - label: England Hockey, What is walking hockey?
+    url: https://www.englandhockey.co.uk/faqs/faqs-adult-hockey/faqs-walking-hockey/what-is-walking-hockey
+    checked: '2026-11-11'
+  - label: USA Field Hockey, Walking Hockey
+    url: https://www.usafieldhockey.com/adm/walking
+    checked: '2026-11-11'
+  - label: USA Field Hockey, Walking Hockey guide (PDF)
+    url: https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt39500580d4f3d6aa/66f43482d9d2f80f50219c2e/USAFH-WalkingHockey_March13.pdf
+    checked: '2026-11-11'
+  - label: USA Field Hockey, Membership
+    url: https://www.usafieldhockey.com/membership
+    checked: '2026-11-11'
+  - label: Henley Hockey Club, Back2Hockey summer season
+    url: https://www.henleyhockeyclub.co.uk/news/back2hockey-summer-season-2975939.html
+    checked: '2026-11-11'
+  - label: Mitcham Ladies Hockey Club, Back to Hockey
+    url: https://mitchamladieshc.com/back-to-hockey
+    checked: '2026-11-11'
+  - label: City of Dover, Field hockey leagues
+    url: https://www.cityofdover.gov/field-hockey-leagues
+    checked: '2026-11-11'
+  - label: City of Dover, 2025-26 Indoor Winter Field Hockey (PDF)
+    url: https://www.cityofdover.gov/media/Parks and Recreation/2025/2025-26 Indoor Winter Field Hockey.pdf
+    checked: '2026-11-11'
+  - label: England Hockey, International Women's Day – Jean Fitch's lifelong love of hockey
+    url: https://www.englandhockey.co.uk/media/news/international-women-s-day-jean-fitch-s-lifelong-love-of-hockey
+    checked: '2026-11-11'
+  kit:
+  - name: Hockey shin pads
+    why: protection for the shins; some clubs lend them at first
+    url: https://www.amazon.co.uk/s?k=hockey+shin+pads
+  - name: Mouthguard
+    why: protects the teeth; some clubs recommend one
+    url: https://www.amazon.co.uk/s?k=hockey+mouthguard
+  - name: Field hockey stick
+    why: your own stick once you decide to keep playing
+    url: https://www.amazon.co.uk/s?k=field+hockey+stick
+  related:
+  - walking-football
+  - walking-netball
+  - play-walking-rugby
+  - play-walking-cricket
+  inspire:
+  - kind: read
+    person: Jean Fitch, of Bedford Hockey Club
+    line: Came back to hockey about ten years after starting nurse training, when a hospital consultant put up posters inviting staff to play mixed hockey, kept goal for Bedford Hockey Club and helped launch
+      its walking hockey sessions.
+    title: International Women's Day - Jean Fitch's lifelong love of hockey
+    outlet: England Hockey
+    url: https://www.englandhockey.co.uk/media/news/international-women-s-day-jean-fitch-s-lifelong-love-of-hockey
+    checked: '2026-11-11'
