@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-11)
 
-68 sources, 84 statements, 12 event profiles. Core 58, supported 26, thin 0, contested 0.
+70 sources, 84 statements, 12 event profiles. Core 59, supported 25, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -54,6 +54,8 @@
 - USDA Forest Service, Inyo National Forest, *Mount Whitney (permits, quotas and season; last updated 16 December 2025)* (2025). Opened 2026-11-05.
 - USDA Forest Service, Inyo National Forest, *Hiking the Mt. Whitney Trail (visitor leaflet, November 2013)* (2013). Opened 2026-11-05.
 - Department for Environment, Food & Rural Affairs (GOV.UK), National Trails, *Coast to Coast Path: National Trail (published 24 June 2026)* (2026). Opened 2026-11-07.
+- New Hampshire Fish and Game Department (hikeSafe, with the White Mountain National Forest), *Hiking Safety* (2026). Opened 2026-11-11.
+- Mount Washington Observatory, *Higher Summits Forecast* (2026). Opened 2026-11-11.
 - Mountain Rescue England and Wales, *Be AdventureSmart (safety advice leaflet)* (2025). Opened 2026-11-07.
 - South West Coast Path Association, *Safety advice* (2026). Opened 2026-11-07.
 - National Weather Service (NOAA), *Lightning safety outdoors, "When a Safe Building or Vehicle is Nearby"* (2026). Opened 2026-11-07.
@@ -103,6 +105,7 @@
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
 | core | 9 | recovery | Plan rest days into every week, and take an easier day when your legs are heavy. | nhs-c25k, higdon-novice1, bmc-long-distance |
 | core | 9 | feet | Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. | nhs-blisters, ea-pavey-marathon, bmc-long-distance |
+| core | 9 | on the day | Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. | ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits |
 | core | 9 | warning signs | In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. | mrew-safety, ms-hypothermia, pcta-safety-tips |
 | core | 9 | on the day | Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard. | rnli-tidal-wales-2026, swcpa-safety, wcp-safety |
 | core | 9 | on the day | Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather |
@@ -155,7 +158,6 @@
 | supported | 4 | recovery | Keep a regular sleep routine through training; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. | ea-pavey-marathon, bmc-long-distance |
 | supported | 4 | why | An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. | rc-down-weeks, higdon-novice1 |
 | supported | 3 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace |
-| supported | 3 | on the day | Check the forecast, walk in daylight, leave your route with someone, and turn back if conditions get beyond you. Summits are colder than valleys. | ydnpa-three-peaks |
 | supported | 3 | on the day | Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month. | inyo-whitney-leaflet |
 | supported | 3 | before you start | Plan for the snow-free season, usually July to late September. When snow or ice is on the mountain it needs winter mountaineering skills and equipment. | inyo-whitney, inyo-whitney-leaflet |
 | supported | 3 | on the day | On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. | bmc-long-distance, wanderlust-trek-prep |

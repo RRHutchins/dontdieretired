@@ -899,8 +899,10 @@
   season: Summer and early autumn
   regions:
   - us
-  places: [NH]
-  why: The highest of New Hampshire's White Mountains has a staffed weather observatory on its summit and a reputation for some of the wildest weather in the country. Reaching the top on foot on a clear day is a real prize.
+  places:
+  - NH
+  why: The highest of New Hampshire's White Mountains has a staffed weather observatory on its summit. The Observatory warns that the weather up there is subject to rapid changes and extreme conditions.
+    Reaching the top on foot on a clear day is a real prize.
   start:
   - Choose a trail with a current guidebook or map and work out your turnaround time.
   - Read the Mount Washington Observatory's Higher Summits Forecast on the morning of your hike.
@@ -909,14 +911,183 @@
   - label: 'Mount Washington Observatory: Higher Summits Forecast'
     url: https://mountwashington.org/weather/higher-summits-forecast/
     region: us
-    checked: '2026-10-06'
-  safety: Mountain weather here changes fast and can be extreme, so be willing to turn back.
+    checked: '2026-11-11'
+  - label: 'NH State Parks: Mount Washington State Park'
+    url: https://www.nhstateparks.org/find-parks-trails/mt-washington-state-park
+    region: us
+    checked: '2026-11-11'
+  - label: 'White Mountain National Forest: Tuckerman Ravine Trail'
+    url: https://www.fs.usda.gov/r09/whitemountain/recreation/trails/tuckerman-ravine-trail
+    region: us
+    checked: '2026-11-11'
+  - label: 'AMC: Lakes of the Clouds Hut'
+    url: https://www.outdoors.org/destinations/new-hampshire/lakes-of-the-clouds-hut/
+    region: us
+    checked: '2026-11-11'
+  - label: 'Mount Washington Auto Road: hiking information and Hiker Shuttle'
+    url: https://mt-washington.com/hiking-information/
+    region: us
+    checked: '2026-11-11'
+  - label: 'Mount Washington Cog Railway: information for hikers'
+    url: https://thecog.com/information-for-hikers
+    region: us
+    checked: '2026-11-11'
+  - label: 'New Hampshire Fish and Game: hiking safety and Hike Safe card'
+    url: https://www.wildlife.nh.gov/get-outside/hiking-safety
+    region: us
+    checked: '2026-11-11'
+  safety: Mount Washington's weather changes quickly and can become extreme, so read the Higher Summits Forecast, carry warm and windproof layers, and turn back if conditions worsen, especially above the
+    treeline.
   story: lhakpa-sherpa-eleventh-everest
   story_note: Lhakpa Sherpa, who has climbed Everest eleven times, has led groups up Mount Washington, according to her local news site We-Ha.com.
-  photo_file: "File:2016-09-03 16 27 07 View north from the north side of the summit of Mount Washington in Sargent's Purchase Township, Coos County, New Hampshire.jpg"
-  photo_caption: "The view north from the summit of Mount Washington, New Hampshire, 2016."
-  photo_alt: "Rocky ground in the foreground and rolling mountain ridges stretching to the horizon."
-  photo_checked: '2026-11-01'
+  inspire:
+  - kind: read
+    person: Denise Stassis
+    line: The first woman to complete New Hampshire's hiking Triple Crown has climbed Mount Washington at least 25 times, the first in the early 1980s up the Lion Head Trail in white sneakers and a cotton
+      T-shirt.
+    title: Top Trails for Hiking Mount Washington, According to White Mountain Hiking Legends
+    outlet: Mount Washington Observatory
+    url: https://mountwashington.org/top-trails-for-hiking-mount-washington-according-to-white-mountain-hiking-legends/
+    checked: '2026-11-11'
+  seo_title: 'Hiking Mount Washington: the trails compared and how to plan'
+  description: The main trails up Mount Washington, New Hampshire, compared by distance and climb, plus parking, weather, rides down and how to plan a first hike.
+  detail:
+  - h: What it's like
+    p:
+    - Mount Washington is 6,288 feet (1,917 metres) high, and its summit is a small state park inside the White Mountain National Forest. In summer the Sherman Adams Summit Building has a visitor centre,
+      food, water and a hiker shelter; for 2026 it closed on 16 October and the state says it will reopen at a date to be fixed in May 2027.
+    - 'You will not have the top to yourself. The Mount Washington Auto Road and the Cog Railway both reach the summit, so you may finish a hard climb among people who arrived by car or train. The hike
+      itself is long and steep: the shortest common routes are 13.5 km (8.4 miles) there and back with about 1,295 metres (4,250 feet) of climbing, ending in a steep climb up the rocky summit cone.'
+  - h: The main trails compared
+    table:
+      head:
+      - Route
+      - Start
+      - Round trip
+      - Climb
+      rows:
+      - - Tuckerman Ravine Trail, up and back
+        - Pinkham Notch (east)
+        - 13.5 km (8.4 miles)
+        - 1,295 m (4,250 ft)
+      - - Lion Head Trail, up and back via Tuckerman
+        - Pinkham Notch (east)
+        - 13.8 km (8.6 miles)
+        - 1,295 m (4,250 ft)
+      - - Ammonoosuc Ravine Trail and Crawford Path, up and back
+        - Ammonoosuc Ravine Trailhead (west)
+        - 14.8 km (9.2 miles)
+        - 1,219 m (4,000 ft)
+      - - Ammonoosuc Ravine up, Jewell Trail down (loop)
+        - Ammonoosuc Ravine Trailhead (west)
+        - 15.4 km (9.6 miles)
+        - 1,219 m (4,000 ft)
+      - - Jewell Trail, Gulfside and Trinity Heights Connector, up and back
+        - Ammonoosuc Ravine Trailhead (west)
+        - 16.1 km (10 miles)
+        - 1,219 m (4,000 ft)
+    after: Figures are from the Mount Washington Observatory's guide to the trails. Tuckerman Ravine is likely the most commonly hiked route; the Forest Service says it climbs steadily for 3.9 km (2.4 miles)
+      and 549 metres (1,800 feet) to the Hermit Lake Shelters, then steepens, with a final 305 metres (1,000 feet) up the rocky summit cone. Lion Head branches off it and has significant scrambles. The
+      Jewell Trail is the gentlest approach from the west, while the Ammonoosuc Ravine Trail is very steep and has two water crossings. Boott Spur, a favourite of the guidebook authors Steve Smith and Ken
+      MacGray, has no water crossings and a ladder.
+  - h: Parking and getting down another way
+    table:
+      head:
+      - Option
+      - What the official page says
+      - Cost (as last listed)
+      rows:
+      - - Park at AMC Pinkham Notch Visitor Center (east side)
+        - Free parking for the Tuckerman Ravine and Lion Head routes
+        - Free
+      - - Park at the Cog Railway Base Station (west side)
+        - Serves the Jewell and Ammonoosuc Ravine trailheads; display the hang tag or risk being towed
+        - $10 per person land use fee
+      - - White Mountain National Forest recreation pass
+        - Needed at some developed Forest Service sites; day passes from self-serve pay stations
+        - Annual pass $30; household pass $40
+      - - Auto Road Hiker Shuttle down
+        - Runs from the summit to the base; no reservations, first come, first served
+        - $50 per person before 4pm; $75 after 4pm when offered
+      - - Cog Railway one way down
+        - Sold only in person at the summit post office, and only if unreserved seats are free; only for hikers who came up from the west
+        - Not listed
+    after: Neither ride is guaranteed. The Cog tells hikers never to assume a seat will be free, and in severe weather the Auto Road can close, which the railway says leaves walking as the only way off
+      the summit. Plan to walk down.
+  - h: Weather, and how to prepare
+    p:
+    - On 12 April 1934 the Mount Washington Observatory recorded a gust of 231 mph (372 km/h); a higher speed has since been measured in Australia, but it remains the fastest wind ever recorded at a staffed
+      station. The summit's normal July temperature is 49.9°F (about 10°C) with an average wind of 25.5 mph (41 km/h). In January the averages are 5.8°F (about -15°C) and 45.6 mph (73 km/h).
+    - Read the Observatory's Higher Summits Forecast before you set off; it says conditions are subject to rapid change and that people should never visit the higher summits unprepared. There is little
+      water above the treeline and plenty of sun, so carry water and sun protection as well as warm, waterproof layers. The Cog Railway advises hikers to bring enough food and water for a 10 to 12 hour
+      round trip and not to rely on a phone signal.
+    - New Hampshire Fish and Game's hikeSafe code asks you to know your route and gear, tell someone your plan, stay together as a group, be ready to turn back, and not assume you will be rescued. Its voluntary
+      Hike Safe card costs $25 a person or $35 a family for the calendar year; holders do not have to repay rescue costs, though someone may still be liable under state law (RSA 206:26-bb).
+  - h: When to go, staying overnight, and winter
+    p:
+    - Summer and early autumn, when the summit building and the huts are open, suit a first ascent. The Appalachian Mountain Club's Lakes of the Clouds Hut sits at about 1,528 metres (5,012 feet), 2.1 km
+      (1.3 miles) from the summit, with beds for 90 and dinner and breakfast included; its 2027 season is listed as 3 June to 18 September. It is 4.8 km (3 miles) and 792 metres (2,600 feet) of climbing
+      up the Ammonoosuc Ravine Trail, which AMC puts at three to four hours.
+    - On the east side, the Forest Service's Hermit Lake Shelters, eight lean-tos and three tent platforms 3.9 km (2.4 miles) up the Tuckerman Ravine Trail, cannot be reserved; permits are bought at Pinkham
+      Notch.
+    - From late autumn to late spring the Forest Service says to treat the Tuckerman Ravine Trail as a mountaineering ascent rather than a hike, with an ice axe, crampons and avalanche equipment, because
+      of falling ice, steep snow and avalanches. The summit record low is -47°F (about -44°C), and the summit receives an average of 281.8 inches (about 7.2 metres) of snow a year.
+  faq:
+  - q: How high is Mount Washington?
+    a: 6,288 feet, or 1,917 metres. New Hampshire State Parks calls it the Northeast's highest peak.
+  - q: What is the easiest trail up Mount Washington?
+    a: 'No route is easy: all climb about 1,200 to 1,300 metres (4,000 to 4,250 feet). The Mount Washington Observatory calls the Jewell Trail the gentlest approach from the west, at 16.1 km (10 miles)
+      there and back.'
+  - q: How long is the Tuckerman Ravine Trail hike?
+    a: Up and back to the summit from Pinkham Notch is 13.5 km (8.4 miles) with about 1,295 metres (4,250 feet) of climbing. The Hermit Lake Shelters are 3.9 km (2.4 miles) up.
+  - q: Can you hike up Mount Washington and take the Cog Railway down?
+    a: Sometimes. One-way down tickets are sold only at the summit post office when unreserved seats are free, and only to hikers who climbed from the west, so plan to walk down.
+  - q: Is there a hiker shuttle down Mount Washington?
+    a: The Auto Road runs a Hiker Shuttle from the summit to the base, first come, first served, at $50 a person before 4pm as last listed. The Auto Road can close in high winds or heavy rain, and then
+      there is no ride down.
+  - q: Do you need a parking pass to hike Mount Washington?
+    a: Parking at AMC's Pinkham Notch Visitor Center is free. The Cog Railway's Base Station charges hikers a $10 per person land use fee, and some Forest Service sites need a White Mountain National Forest
+      recreation pass.
+  sources:
+  - label: NH State Parks, Mount Washington State Park
+    url: https://www.nhstateparks.org/find-parks-trails/mt-washington-state-park
+    checked: '2026-11-11'
+  - label: 'USDA Forest Service, White Mountain National Forest: Tuckerman Ravine Trail'
+    url: https://www.fs.usda.gov/r09/whitemountain/recreation/trails/tuckerman-ravine-trail
+    checked: '2026-11-11'
+  - label: 'USDA Forest Service, White Mountain National Forest: Hermit Lake Shelters'
+    url: https://fs.usda.gov/r09/whitemountain/recreation/hermit-lake-shelters
+    checked: '2026-11-11'
+  - label: 'USDA Forest Service, White Mountain National Forest: Passes'
+    url: https://www.fs.usda.gov/r09/whitemountain/passes
+    checked: '2026-11-11'
+  - label: USDA Forest Service, White Mountain National Forest Recreation Pass Order Form
+    url: https://www.fs.usda.gov/media/197305
+    checked: '2026-11-11'
+  - label: Mount Washington Observatory, Top Trails for Hiking Mount Washington, According to White Mountain Hiking Legends
+    url: https://mountwashington.org/top-trails-for-hiking-mount-washington-according-to-white-mountain-hiking-legends/
+    checked: '2026-11-11'
+  - label: Mount Washington Observatory, Remembering the Big Wind
+    url: https://mountwashington.org/remembering-the-big-wind/
+    checked: '2026-11-11'
+  - label: Mount Washington Observatory, Normals, Means, and Extremes
+    url: https://mountwashington.org/weather/mount-washington-weather-archives/normals-means-and-extremes/
+    checked: '2026-11-11'
+  - label: Mount Washington Observatory, Higher Summits Forecast
+    url: https://mountwashington.org/weather/higher-summits-forecast/
+    checked: '2026-11-11'
+  - label: Appalachian Mountain Club, Lakes of the Clouds Hut
+    url: https://www.outdoors.org/destinations/new-hampshire/lakes-of-the-clouds-hut/
+    checked: '2026-11-11'
+  - label: Mount Washington Auto Road, Hiking Information
+    url: https://mt-washington.com/hiking-information/
+    checked: '2026-11-11'
+  - label: Mount Washington Cog Railway, Information for Hikers
+    url: https://thecog.com/information-for-hikers
+    checked: '2026-11-11'
+  - label: New Hampshire Fish and Game, Hiking Safety
+    url: https://www.wildlife.nh.gov/get-outside/hiking-safety
+    checked: '2026-11-11'
   kit:
   - name: Waterproof walking jacket
     why: hill weather turns fast, and a proper hood matters
@@ -930,6 +1101,18 @@
   - name: Warm hat and gloves
     why: you stand still a lot, and it gets cold
     url: https://www.amazon.co.uk/s?k=thermal+hat+gloves+set
+  - name: Trekking poles
+    why: for balance on long, rocky descents
+    url: https://www.amazon.co.uk/s?k=trekking+poles
+  related:
+  - climb-yr-wyddfa
+  - hike-a-fourteener
+  - appalachian-trail-section
+  - hike-mount-whitney
+  photo_file: File:2016-09-03 16 27 07 View north from the north side of the summit of Mount Washington in Sargent's Purchase Township, Coos County, New Hampshire.jpg
+  photo_caption: The view north from the summit of Mount Washington, New Hampshire, 2016.
+  photo_alt: Rocky ground in the foreground and rolling mountain ridges stretching to the horizon.
+  photo_checked: '2026-11-01'
 - id: reach-your-state-high-point
   title: Stand on the highest point in your state
   category: explore
@@ -1846,7 +2029,8 @@
   regions:
   - uk
   - us
-  why: Rowing is a rare sport where a whole crew has to move as one, and you feel it the moment the boat runs smoothly. British Rowing says most courses run over six weekly sessions, by which point you can steer, stop and turn a boat.
+  why: Rowing is a rare sport where a whole crew has to move as one, and you feel it the moment the boat runs smoothly. British Rowing says most courses run over six weekly sessions, after which you should
+    be able to row roughly in time, stop in an emergency and turn the boat.
   start:
   - Find a club through British Rowing's Learn to Row page or the USRowing club finder.
   - Ask when the next beginner course starts and book a place.
@@ -1856,16 +2040,233 @@
     url: https://www.britishrowing.org/go-rowing/learn-to-row/
     region: uk
     checked: '2026-10-06'
+  - label: 'British Rowing: learning to row, costs and what to expect'
+    url: https://www.britishrowing.org/learn
+    region: uk
+    checked: '2026-11-11'
   - label: 'USRowing: find a club'
     url: https://usrowing.org/find-a-club
     region: us
     checked: '2026-10-06'
+  - label: 'USRowing: National Learn to Row Day'
+    url: https://usrowing.org/national-learn-to-row-day
+    region: us
+    checked: '2026-11-11'
+  - label: 'Furnivall Sculling Club, Hammersmith: Learn to Row'
+    url: https://www.furnivall.org/learntorow
+    region: uk
+    checked: '2026-11-11'
+  - label: 'London Otters Rowing Club, Royal Docks: course information'
+    url: https://londonotters.org/learn-to-row-course-info
+    region: uk
+    checked: '2026-11-11'
+  - label: 'British Rowing: coastal sculling'
+    url: https://www.britishrowing.org/go-rowing/types-of-rowing/coastal-sculling/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Community Rowing, Inc., Boston: adult Learn to Row'
+    url: https://communityrowing.org/learn-to-row-adults/
+    region: us
+    checked: '2026-11-11'
+  - label: 'Penn AC Rowing Association, Philadelphia: Learn to Row'
+    url: https://pennac.org/?p=582
+    region: us
+    checked: '2026-11-11'
+  - label: 'Harlem River Community Rowing, New York: Learn to Row'
+    url: https://sites.google.com/harlemrivercr.org/hrcr/home/row-with-us/learn-to-row
+    region: us
+    checked: '2026-11-11'
   story: dave-bell-peru-to-kenya-row
   story_note: Dave Bell rowed alone from Peru to Kenya; a club beginner course is where most rowers take their first strokes.
+  seo_title: 'Learn to row: beginner courses, costs and what to expect'
+  description: What a Learn to Row course covers, what it costs at real UK and US clubs, sculling versus sweep, swim rules, what to wear and the hard parts.
+  detail:
+  - h: What a Learn to Row course is like
+    p:
+    - A Learn to Row course is a club's beginner programme. British Rowing says courses usually run for six weeks, with one two-hour session a week, though this differs from club to club. The club provides
+      the boats, so you do not need your own.
+    - Many courses start on dry land. Leeds Rowing Club teaches basic technique and rowing terms on an indoor rowing machine, known as an erg, before learners go out in stable learner boats. London Otters
+      Rowing Club uses an indoor rowing tank, ergs and stable "Lake Boats" before moving people into racing boats. By the end, British Rowing says, you should be able to row roughly in time, make an emergency
+      stop and turn the boat round. Racing takes more work on technique, fitness and strength, but British Rowing says most people who want to race can do so within six months.
+  - h: What courses cost at real clubs
+    table:
+      head:
+      - Club
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - British Rowing's guide for UK clubs
+        - Across the UK
+        - Usually six weeks, one two-hour session a week
+        - £90-£120 typically
+      - - Furnivall Sculling Club
+        - Hammersmith, London
+        - Six weeks; one land session and two water sessions a week
+        - £349 (2026 course)
+      - - London Otters Rowing Club
+        - Royal Docks, east London
+        - Six consecutive weekends, Saturday and Sunday, 11.30am to 2pm
+        - £300
+      - - Penn AC Rowing Association
+        - Schuylkill River, Philadelphia
+        - Three levels taken in turn, each a session of about six weeks, two 1.5-hour classes a week
+        - $350 per level
+      - - Harlem River Community Rowing
+        - Inwood, northern Manhattan, New York
+        - 15 sessions over five weeks
+        - Free (the club relies on donations)
+      - - Community Rowing, Inc.
+        - Charles River, Brighton, Boston
+        - Intro to Rowing (sweep) or Intro to Sculling
+        - Not listed online; ask the club
+    after: Some UK clubs offer free taster sessions first, and Furnivall asks every applicant to attend a free introductory session. In the US, many clubs take part in USRowing's National Learn to Row Day,
+      held on the first Saturday of June. After a course you normally join the club, and British Rowing notes that membership fees vary by level, with reduced rates at some clubs.
+  - h: Sculling or sweep
+    table:
+      head:
+      - ''
+      - Sculling
+      - Sweep rowing
+      rows:
+      - - Oars
+        - Two, one in each hand
+        - One oar per person
+      - - First boat at Community Rowing, Inc. (Boston)
+        - Stable one-person boats, called singles
+        - A stable 12-person "barge", then on to an eight
+      - - What to expect
+        - British Rowing says you may fall in from a single, though many people don't
+        - Community Rowing, Inc. recommends several terms in its Novice Sweeps class before moving up
+    after: London Otters teaches both on its course. The course pages of Furnivall and Leeds do not say which you will start in, so ask. Both are rowed on a sliding seat, on sheltered inland water and,
+      in boats built for rougher conditions, at sea and in estuaries.
+  - h: The honest hard parts
+    list:
+    - Getting a place. London Otters says its 16 places usually sell out in under a minute, and Leeds Rowing Club warns you may have to wait six months or more to start a course.
+    - Commitment. Furnivall gives preference to people who can attend every session, and Harlem River Community Rowing asks you to commit to all of them.
+    - Blisters. British Rowing says you may get small blisters at first; they ease as your skin toughens, and gripping less hard helps.
+    - Cold and wet. London Otters runs its courses mostly between September and March and advises thermal layers and a beanie in cold weather. On the coast, a guide on British Rowing's Plus site warns that
+      you will get wet.
+    - Falling in. You must be able to swim, and your club will arrange a capsize drill.
+    - Patience. Furnivall's graduates can apply to its Development Squad, where the first year is spent on technique and fitness alongside novice races.
+  - h: Swim rules, what to wear and other ways in
+    table:
+      head:
+      - Club or body
+      - Swim requirement
+      - Other entry rules
+      rows:
+      - - British Rowing
+        - Swim 50 m (55 yards) in clothing
+        - Capsize drill arranged by your club
+      - - Furnivall Sculling Club
+        - Swim 50 m (55 yards)
+        - Over 18 and reasonably fit
+      - - London Otters Rowing Club
+        - Swim 150 m (164 yards) competently
+        - 18 or over; sign a waiver
+      - - Community Rowing, Inc.
+        - A valid swim test on file
+        - No prerequisite for the intro classes
+      - - Harlem River Community Rowing
+        - Able to swim
+        - Do a squat and lift 30 lb (13.6 kg) overhead
+      - - Penn AC Rowing Association
+        - Not stated on the course page
+        - 21 or over
+    p:
+    - No special clothing is needed to start. London Otters asks for close-fitting layers, no jeans on the water, and says normal trainers are fine; bring a towel and a change of clothes. Furnivall also
+      asks for wellies, known in the US as rubber boots, which it can lend.
+    - River rowing is not the only way in. Coastal sculling, which British Rowing calls "rowing's wilder cousin", is raced at sea and in short beach sprints, and most coastal clubs are on the south coast
+      and in the Channel Islands. Fixed-seat gig rowing began in Cornwall, where gigs once carried pilots out to sailing ships, and the Cornish Pilot Gig Association estimates 8,000 regular rowers. Or start
+      indoors, where British Rowing publishes an eight-week beginner plan for the rowing machine.
+  faq:
+  - q: How long does it take to learn to row?
+    a: British Rowing says Learn to Row courses usually run six weeks, with one two-hour session a week. After that you should be able to row roughly in time, stop in an emergency and turn the boat.
+  - q: How much does a learn to row course cost?
+    a: British Rowing puts a typical UK course at £90-£120. In London, Furnivall Sculling Club lists £349 and London Otters £300; in Philadelphia, Penn AC lists $350 per level, and Harlem River Community
+      Rowing in New York is free.
+  - q: Do you need to be able to swim to learn to row?
+    a: Yes. British Rowing asks that you can swim 50 metres (55 yards) in clothing, and your club will run a capsize drill. US clubs such as Community Rowing, Inc. in Boston require a swim test on file.
+  - q: What is the difference between sculling and sweep rowing?
+    a: A sculler holds two oars, one in each hand. A sweep rower holds one oar.
+  - q: What should I wear to learn to row?
+    a: Close-fitting sports clothes in layers, with no jeans; normal trainers are fine. No special kit is needed to start, and the club provides the boats.
+  - q: Will I fall in when learning to row?
+    a: Perhaps. British Rowing says you may fall in from a one-person single, though many people don't, which is why clubs teach capsize drills.
+  safety: British Rowing asks that you can swim 50 metres (55 yards) in clothing before you start, and your club will run a capsize drill; follow its rules on the water.
+  sources:
+  - label: British Rowing, Learn to Row
+    url: https://www.britishrowing.org/learn
+    checked: '2026-11-11'
+  - label: British Rowing, Sliding Seat Rowing
+    url: https://www.britishrowing.org/go-rowing/types-of-rowing/sliding-seat-rowing/
+    checked: '2026-11-11'
+  - label: British Rowing, Coastal Sculling
+    url: https://www.britishrowing.org/go-rowing/types-of-rowing/coastal-sculling/
+    checked: '2026-11-11'
+  - label: British Rowing, Fixed Seat Rowing
+    url: https://www.britishrowing.org/go-rowing/types-of-rowing/fixed-seat-rowing/
+    checked: '2026-11-11'
+  - label: British Rowing Plus, What to wear for coastal sculling
+    url: https://plus.britishrowing.org/2025/06/09/what-to-wear-for-coastal-sculling-a-guide-for-flat-water-rowers/
+    checked: '2026-11-11'
+  - label: British Rowing Plus, Handy hints for new rowers
+    url: https://plus.britishrowing.org/2024/08/07/handy-hints-for-new-rowers/
+    checked: '2026-11-11'
+  - label: British Rowing, Go Row beginner training plan (PDF)
+    url: https://www.britishrowing.org/wp-content/uploads/2018/03/BR_Go_Row_A4_Beginners_Training_Plan_P3-5.pdf
+    checked: '2026-11-11'
+  - label: Furnivall Sculling Club, Learn to Row
+    url: https://www.furnivall.org/learntorow
+    checked: '2026-11-11'
+  - label: London Otters Rowing Club, Course information
+    url: https://londonotters.org/learn-to-row-course-info
+    checked: '2026-11-11'
+  - label: Leeds Rowing Club, Learn to Row
+    url: https://leedsrowing.org.uk/learn-to-row
+    checked: '2026-11-11'
+  - label: USRowing, National Learn to Row Day
+    url: https://usrowing.org/national-learn-to-row-day
+    checked: '2026-11-11'
+  - label: Community Rowing, Inc., Learn To Row
+    url: https://communityrowing.org/learn-to-row-adults/
+    checked: '2026-11-11'
+  - label: Community Rowing, Inc., Sweep Rowing
+    url: https://communityrowing.org/sweep-rowing/
+    checked: '2026-11-11'
+  - label: Community Rowing, Inc., Sculling
+    url: https://communityrowing.org/sculling/
+    checked: '2026-11-11'
+  - label: Penn AC Rowing Association, Learn to Row
+    url: https://pennac.org/?p=582
+    checked: '2026-11-11'
+  - label: Harlem River Community Rowing, Learn to Row
+    url: https://sites.google.com/harlemrivercr.org/hrcr/home/row-with-us/learn-to-row
+    checked: '2026-11-11'
+  inspire:
+  - kind: read
+    person: Karen Goldstone, of Camrowers, Cambridge
+    line: Learned to row with Camrowers on the River Cam and went on to complete British Rowing's Level 2 coaching course, which she says also helped her own rowing.
+    title: Camrowers thrive on friendships, fun, fitness and fresh air
+    outlet: British Rowing
+    url: https://www.britishrowing.org/2019/07/camrowers-thrive-on-friendships-fun-fitness-and-fresh-air/
+    checked: '2026-11-11'
+  related:
+  - try-rowing-indoor
+  - learn-to-swim-adult
+  - paddle-a-dragon-boat
+  - learn-to-kayak
   kit:
   - name: Close-fitting sportswear
     why: loose clothes catch in the slide and the oar handles
     url: https://www.amazon.co.uk/s?k=close+fitting+sports+leggings
+  - name: Thermal base layer
+    why: for cold-weather sessions, worn under close-fitting layers
+    url: https://www.amazon.co.uk/s?k=thermal+base+layer
+  - name: Dry bag
+    why: keeps a towel and spare clothes dry at the boathouse or on the beach
+    url: https://www.amazon.co.uk/s?k=dry+bag
 - id: stand-up-paddleboarding
   title: Try stand-up paddleboarding
   category: move
@@ -5418,9 +5819,10 @@
   regions:
   - uk
   - us
-  why: Knowing what to do in the first minutes of an emergency makes you useful to everyone around you, from family to strangers. In-person classes include hands-on practice, which is what turns knowledge into something you could actually use.
+  why: Knowing what to do in the first minutes of an emergency makes you useful to everyone around you, from family to strangers. In-person classes include hands-on practice, which is what turns knowledge
+    into something you could actually use.
   start:
-  - 'Choose a provider: British Red Cross or St John Ambulance in the UK, American Red Cross in the US.'
+  - 'Choose a provider: British Red Cross or St John Ambulance in the UK, American Red Cross or American Heart Association in the US.'
   - Pick a format that suits you, whether online, in person, or a blend of both.
   - Book a place and complete the course through to the end.
   links:
@@ -5428,18 +5830,214 @@
     url: https://www.redcross.org.uk/first-aid
     region: uk
     checked: '2026-10-06'
+  - label: 'British Red Cross: public first aid courses'
+    url: https://redcrossfirstaidtraining.co.uk/courses/public-first-aid-courses
+    region: uk
+    checked: '2026-11-11'
   - label: 'St John Ambulance: training courses'
     url: https://www.sja.org.uk/courses/
     region: uk
     checked: '2026-10-06'
+  - label: 'St John Ambulance: book a first aid course'
+    url: https://shop.sja.org.uk/collections/first-aid-courses
+    region: uk
+    checked: '2026-11-11'
+  - label: 'St John Ambulance: free online learning'
+    url: https://shop.sja.org.uk/pages/free-online-learning-resource
+    region: uk
+    checked: '2026-11-11'
+  - label: 'British Heart Foundation: learn CPR in 15 minutes with RevivR'
+    url: https://www.bhf.org.uk/how-you-can-help/how-to-save-a-life/how-to-do-cpr/learn-cpr-in-15-minutes
+    region: uk
+    checked: '2026-11-11'
+  - label: First aid by British Red Cross (free app, Google Play)
+    url: https://play.google.com/store/apps/details?id=com.cube.rca
+    region: uk
+    checked: '2026-11-11'
   - label: 'American Red Cross: first aid classes'
     url: https://www.redcross.org/take-a-class/first-aid
     region: us
     checked: '2026-10-06'
+  - label: 'American Red Cross: Adult First Aid/CPR/AED Online'
+    url: https://www.redcross.org/take-a-class/classes/adult-first-aid%2Fcpr%2Faed-online/a6RVx000000Xi3t.html
+    region: us
+    checked: '2026-11-11'
+  - label: 'American Heart Association: Heartsaver First Aid CPR AED course options'
+    url: https://cpr.heart.org/en/courses/heartsaver-first-aid-cpr-aed-course-options
+    region: us
+    checked: '2026-11-11'
+  safety: In an emergency call 999 in the UK or 911 in the US straight away; a course or an app is not a substitute for the ambulance service.
+  seo_title: 'First aid course near me: UK and US options compared'
+  description: First aid courses compared, from the British Red Cross and St John Ambulance to the American Red Cross and AHA, with length, cost and free options.
+  detail:
+  - h: What a course is really like
+    p:
+    - A first aid course is hands-on. On the British Red Cross four-hour course for the public you work through dealing with an emergency, someone who is unresponsive (breathing and not breathing, which
+      is where CPR comes in), seizures, burns, heavy bleeding, broken bones, head injuries, choking, heart attack, stroke, severe allergic reactions and diabetic emergencies.
+    - Workplace courses go further. The British Red Cross one-day Emergency First Aid at Work course includes CPR with face shields and pocket masks, using a defibrillator (in the US, an AED, automated
+      external defibrillator), adult choking and bleeding, from small wounds to heavy bleeding. You are assessed as you go, through demonstrations, quizzes and role play.
+    - In the US, the American Red Cross and the American Heart Association both include hands-on CPR and AED practice in their classroom and blended courses. Online-only courses have no hands-on part.
+    - The reason it matters is in the British Heart Foundation's figures. More than 40,000 people in the UK have a cardiac arrest outside hospital each year, and fewer than one in ten survive. The BHF says
+      prompt CPR and a defibrillator can more than double the chance of survival.
+  - h: The real choices compared
+    table:
+      head:
+      - Course
+      - Provider
+      - Length
+      - Cost (as last listed)
+      - What you get
+      rows:
+      - - Adult first aid (for the public)
+        - British Red Cross (UK)
+        - 4 hours, or two 2-hour evenings
+        - From £37.50 (excl. VAT)
+        - Certificate of learning; not for workplace first aiders
+      - - Emergency First Aid at Work
+        - British Red Cross (UK)
+        - 1 day
+        - From £173 per learner (ex. VAT)
+        - Certificate valid three years
+      - - Emergency First Aid at Work
+        - St John Ambulance (UK)
+        - 1 day, or half online and half in person
+        - From £160.00
+        - Certificate valid three years
+      - - First Aid at Work
+        - British Red Cross (UK)
+        - 3 days
+        - From £359 (Ex. VAT) per learner
+        - Certificate valid three years
+      - - First Aid at Work
+        - St John Ambulance (UK)
+        - 3 days
+        - From £340.00
+        - Workplace qualification
+      - - Adult First Aid/CPR/AED Online
+        - American Red Cross (US)
+        - Self-paced
+        - $37.00
+        - Online only; does not meet OSHA workplace requirements
+      - - First aid, CPR and AED, blended or classroom
+        - American Red Cross (US)
+        - About 1.5 hours in class after online learning, or a longer classroom course
+        - Not listed on the pages opened
+        - Two-year Red Cross certification
+      - - Heartsaver First Aid CPR AED
+        - American Heart Association (US)
+        - About 3.5 hours in a classroom, or about 3 hours online plus about 2 hours of skills practice
+        - Not listed on the course page
+        - Two-year course completion card
+    after: Prices are the providers' own starting figures. The British Red Cross shows its prices before VAT (the UK sales tax), and the St John Ambulance shop offers both views, so check the total at the
+      basket. OSHA is the US workplace safety regulator.
+  - h: Free ways to start
+    list:
+    - 'RevivR from the British Heart Foundation: a free online CPR course of about 15 minutes. You need a phone or tablet and a cushion to practise on, and with camera access it gives feedback on your chest
+      compressions. It also covers when to call 999 and how to use a defibrillator.'
+    - 'St John Ambulance free online learning: anyone can sign up. Modules include Save a Life September, on choking, cardiac arrest and severe bleeding. St John Ambulance says the free courses do not come
+      with a certificate.'
+    - 'First aid by British Red Cross: a free app with videos, quizzes and step-by-step advice that works offline.'
+    p:
+    - These are a good warm-up, not a replacement for a class. Online-only learning has no instructor checking your technique on a manikin, which is what classroom and blended courses add.
+  - h: Certificates and how long they last
+    p:
+    - In the UK, the Health and Safety Executive (HSE), the workplace safety regulator, says certificates for first aid at work last three years. Before one expires you take a requalification course; once
+      it has expired you are no longer counted as competent to act as a workplace first aider. The HSE strongly recommends annual refresher training as well.
+    - If you are learning for your own household rather than a job, you do not need a workplace qualification. The British Red Cross public course gives a certificate of learning, which it says does not
+      meet workplace requirements.
+    - In the US, American Red Cross in-person and blended classes give a two-year certification, while its online course, which gives two years' access, does not meet OSHA workplace certification requirements.
+      The American Heart Association's Heartsaver card also lasts two years.
+  - h: If kneeling or getting down to the floor is hard
+    p:
+    - CPR practice is physical. The American Red Cross describes kneeling beside the person, and says anyone physically capable of doing chest compressions and giving breaths can attend. St John Ambulance
+      says Emergency First Aid at Work learners must be physically fit enough to demonstrate CPR, and that reasonable adjustments can be requested through its customer services. The American Heart Association
+      arranges accessibility accommodations through its training centres.
+    - Ask before you book. A provider can tell you exactly what its course involves and what it can adjust.
+    - The UK's 999 call handlers can also direct a caller to the nearest registered defibrillator. The Circuit, the national defibrillator network built by the British Heart Foundation with Resuscitation
+      Council UK, St John Ambulance and the Association of Ambulance Chief Executives, has been used by all 14 UK ambulance services since 2022.
+  faq:
+  - q: How much does a first aid course cost?
+    a: In the UK, the British Red Cross four-hour public course was listed from £37.50 before VAT, and a one-day Emergency First Aid at Work course from £160.00 at St John Ambulance. In the US, the American
+      Red Cross online Adult First Aid/CPR/AED course was listed at $37.00.
+  - q: How long does a first aid certificate last?
+    a: The HSE says first aid at work certificates last three years, and strongly recommends annual refresher training. American Red Cross and American Heart Association certifications last two years.
+  - q: Can I do a first aid course online?
+    a: Yes, but online-only courses have no hands-on practice. The American Red Cross says its online first aid course does not meet OSHA workplace requirements, and blended courses add an in-person skills
+      session.
+  - q: Is there a free first aid course?
+    a: The British Heart Foundation's RevivR teaches CPR free in about 15 minutes, and St John Ambulance offers free online modules, though without a certificate. The British Red Cross first aid app is
+      also free.
+  - q: What is the difference between Emergency First Aid at Work and First Aid at Work?
+    a: Emergency First Aid at Work is a one-day course and First Aid at Work takes three days. Both lead to a workplace certificate that lasts three years.
+  - q: Do you have to kneel on a first aid course?
+    a: CPR practice usually involves kneeling beside a manikin. Providers ask that you can demonstrate chest compressions, so contact them before booking to ask about adjustments.
+  sources:
+  - label: British Red Cross, Public first aid courses
+    url: https://redcrossfirstaidtraining.co.uk/courses/public-first-aid-courses
+    checked: '2026-11-11'
+  - label: British Red Cross, Adult first aid course for members of the public
+    url: https://redcrossfirstaidtraining.co.uk/courses/public-first-aid-courses/first-aid-for-adult
+    checked: '2026-11-11'
+  - label: British Red Cross, Emergency First Aid at Work
+    url: https://www.redcrossfirstaidtraining.co.uk/courses/first-aid-training/emergency-first-aid-at-work/
+    checked: '2026-11-11'
+  - label: British Red Cross, First Aid at Work
+    url: https://www.redcrossfirstaidtraining.co.uk/courses/first-aid-training/first-aid-at-work/
+    checked: '2026-11-11'
+  - label: St John Ambulance, First Aid Courses
+    url: https://shop.sja.org.uk/collections/first-aid-courses
+    checked: '2026-11-11'
+  - label: St John Ambulance, Emergency First Aid at Work
+    url: https://shop.sja.org.uk/products/emergency-first-aid-at-work-course
+    checked: '2026-11-11'
+  - label: St John Ambulance, Free online learning resources
+    url: https://shop.sja.org.uk/pages/free-online-learning-resource
+    checked: '2026-11-11'
+  - label: British Heart Foundation, Learn CPR in 15 minutes
+    url: https://www.bhf.org.uk/how-you-can-help/how-to-save-a-life/how-to-do-cpr/learn-cpr-in-15-minutes
+    checked: '2026-11-11'
+  - label: British Heart Foundation, Landmark moment as The Circuit becomes fully nationwide
+    url: https://www.bhf.org.uk/what-we-do/news-from-the-bhf/news-archive/2022/october/landmark-moment-as-the-circuit-becomes-fully-nationwide
+    checked: '2026-11-11'
+  - label: Google Play, First aid by British Red Cross
+    url: https://play.google.com/store/apps/details?id=com.cube.rca
+    checked: '2026-11-11'
+  - label: Health and Safety Executive, Are you a first-aider?
+    url: https://www.hse.gov.uk/firstaid/first-aider.htm
+    checked: '2026-11-11'
+  - label: American Red Cross, Adult First Aid/CPR/AED Online
+    url: https://www.redcross.org/take-a-class/classes/adult-first-aid%2Fcpr%2Faed-online/a6RVx000000Xi3t.html
+    checked: '2026-11-11'
+  - label: American Red Cross, CPR Training with Red Cross (blended course)
+    url: https://www.redcross.org/take-a-class/classes/adult-first-aid%2Fcpr%2Faed-bl-r.25/a65Vx000004ESOj.html
+    checked: '2026-11-11'
+  - label: American Red Cross, What to Expect, Wear, and Bring to your Red Cross CPR/AED Class
+    url: https://www.redcross.org/take-a-class/resources/articles/what-to-expect-wear-bring-red-cross-cpr-aed-class
+    checked: '2026-11-11'
+  - label: American Heart Association, Heartsaver First Aid CPR AED course options
+    url: https://cpr.heart.org/en/courses/heartsaver-first-aid-cpr-aed-course-options
+    checked: '2026-11-11'
+  inspire:
+  - kind: read
+    person: Elaine Cooper, from Treherbert
+    line: Two days after finishing a three-day First Aid at Work course with St John Ambulance Cymru, she gave CPR to her husband Alun when he stopped breathing at home, and he was breathing again before
+      paramedics arrived.
+    title: Treherbert woman saves husband's life just two days after first aid course
+    outlet: Nation.Cymru
+    url: https://nation.cymru/news/treherbert-woman-saves-husbands-life-just-two-days-after-first-aid-course
+    checked: '2026-11-11'
+  related:
+  - volunteer-in-the-nhs
+  - give-blood
+  - become-a-dementia-friend
+  - volunteer-with-the-rnli
   kit:
   - name: Home first aid kit
     why: keep one in the house and one in the car
     url: https://www.amazon.co.uk/s?k=first+aid+kit+home
+  - name: CPR face shield
+    why: a barrier for rescue breaths, of the kind used on workplace courses
+    url: https://www.amazon.co.uk/s?k=cpr+face+shield
 - id: learn-british-sign-language
   title: Pass a British Sign Language Level 1 qualification
   category: connect
@@ -8242,7 +8840,7 @@
   regions:
   - uk
   - us
-  why: A glider has no engine, so once it is released it stays up on rising air alone, and the cockpit is quiet enough to talk in. On a trial lesson you sit in a two-seat sailplane with an instructor, who will often let you take the controls.
+  why: A glider has no engine, so once it is released it stays up on rising air alone. On a trial lesson you sit in a two-seat sailplane with an instructor, who will often let you take the controls.
   start:
   - Enter your postcode in the British Gliding Association club finder, or open the Soaring Society of America's Where To Fly Map.
   - Contact the club to book a trial lesson and ask on which days it flies visitors.
@@ -8255,8 +8853,235 @@
   - label: 'Soaring Society of America: Learn To Soar'
     url: https://www.ssa.org/learn-to-soar/
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-11'
+  - label: 'British Gliding Association: How to use your trial lesson voucher'
+    url: https://www.gliding.co.uk/?p=529
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Booker Gliding Club: Experience gliding'
+    url: https://bookergliding.co.uk/experience-gliding
+    region: uk
+    checked: '2026-11-11'
+  - label: 'London Gliding Club: Gifts and courses'
+    url: https://www.londonglidingclub.co.uk/gifts
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Cairngorm Gliding Club: Trial lessons'
+    url: https://www.gliding.org/trial-lessons
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Harris Hill Soaring: Learn to fly'
+    url: https://harrishillsoaring.org/?p=1098
+    region: us
+    checked: '2026-11-11'
+  - label: 'Windy City Soaring Association: Introductory flights'
+    url: https://windycitysoaring.org/store
+    region: us
+    checked: '2026-11-11'
   safety: Fly only with an instructor at a club or school listed by the national gliding body.
+  seo_title: 'Gliding trial lesson: costs, launches and learning to fly'
+  description: What a gliding trial lesson is like, winch v aerotow, prices and weight limits at UK and US clubs, and the rules for going on to fly solo.
+  detail:
+  - h: What a trial lesson is like
+    p:
+    - A trial lesson, which some clubs call an experience flight, is a flight in a two-seat glider with a qualified instructor. At Cairngorm Gliding Club, Feshiebridge, a club member deals with the paperwork,
+      gives you a briefing and shows you round the glider. A light aircraft then tows you to 2,000 feet (610 metres), the instructor releases the rope, and you fly for about 20 to 30 minutes. Once you are
+      airborne you can try the controls, and the instructor lands.
+    - 'There are two common ways to get a glider into the air. In an aerotow a light aircraft pulls the glider up on a rope. In a winch launch a powerful winch on the ground hauls in a long cable: one Lincolnshire
+      club describes a launch to 1,200 feet (366 metres) that takes about 15 seconds and is "quite exhilarating", followed by a flight of five to ten minutes. The London Gliding Club says a winch launch
+      typically reaches 1,000 feet (300 metres) and an aerotow 2,000 feet (610 metres), and that aerotows cost more.'
+  - h: What it costs at real clubs
+    table:
+      head:
+      - Club
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - Cairngorm Gliding Club, Feshiebridge
+        - Aerotow to 2,000 ft (610 m), about 20 to 30 minutes, 30 days' temporary membership
+        - £100
+      - - Booker Gliding Club
+        - Aerotow to 2,500 ft (760 m), one month's temporary membership
+        - £150
+      - - Booker Gliding Club, Go Higher
+        - Aerotow to 3,500 ft (1,070 m)
+        - £209
+      - - London Gliding Club
+        - Flight 2000 voucher, valid one year, includes a month's membership
+        - £150
+      - - Harris Hill Soaring
+        - 'FAST lesson: 30 minutes on the ground, a 30-minute flight, a logbook and the FAA Glider Flying Handbook'
+        - $139
+      - - Harris Hill Soaring
+        - Passenger ride of 15 to 20 minutes
+        - $140
+      - - Windy City Soaring Association
+        - Introductory flight with a tow to 4,000 ft (1,220 m)
+        - $189
+    after: Temporary membership matters because it lets you book further flights at members' rates. Booker sells a half-day Intro Course for £299 and London Gliding Club a One Day Course for £305 if you
+      want more than one flight. In the US the instructor is FAA-certified; in the UK Booker says its pilots are CAA-qualified gliding instructors (the CAA is Britain's aviation regulator).
+  - h: Weight, height and other limits
+    p:
+    - Clubs publish firm limits on weight and height. Check them before anyone buys a voucher as a present.
+    table:
+      head:
+      - Club
+      - Maximum weight
+      - Height
+      rows:
+      - - Cairngorm Gliding Club
+        - Under 16 st (about 102 kg, 224 lb)
+        - Over 4 ft 6 in (1.37 m)
+      - - Booker Gliding Club
+        - 16 st (102 kg, 224 lb); minimum 7 st (44 kg)
+        - 5 ft (1.5 m) to 6 ft 3 in (1.9 m)
+      - - Lasham Gliding Society
+        - 16 st 4 lb (103 kg, 228 lb); minimum about 7 st (44 kg)
+        - Over 6 ft 4 in (1.93 m) may not fit
+      - - London Gliding Club
+        - Under 100 kg (220 lb, about 15 st 10 lb)
+        - 1.5 m (about 5 ft) to 1.95 m (about 6 ft 5 in)
+      - - Windy City Soaring Association
+        - 242 lb (about 110 kg, 17 st 4 lb), fully clothed
+        - Not listed
+    after: Lasham asks you to sign a medical declaration before you fly, asks you to have your own doctor sign the form if you have concerns about your fitness, and says you must not drink any alcohol in
+      the eight hours before a flight, even a trial lesson. London Gliding Club asks that you can read a car number plate at 25 metres, with glasses if you need them.
+  - h: Weather, days and what to wear
+    p:
+    - Gliding depends on the weather. London Gliding Club warns that appointments may be changed at short notice because of the weather; Cairngorm Gliding Club flies mainly at weekends, does not take bookings
+      in advance and suggests phoning at about 10am on the day; Harris Hill takes ride passengers first come, first served, weather permitting. The British Gliding Association notes that not all clubs fly
+      every day of the week. Devon and Somerset Gliding Club, for example, takes trial lessons on Wednesdays, Thursdays, Saturdays and Sundays.
+    - The British Gliding Association advises comfortable clothes, but warns of cold winds on exposed airfields and heat in a cockpit in sunshine, and suggests sunglasses and a hat. Friends and family can
+      usually watch, but ask the club first. Booker and London Gliding Club vouchers last a year, so book early and keep a few dates free.
+  - h: From trial lesson to flying solo
+    p:
+    - Most UK clubs teach to the BGA Training Syllabus, Booker says. Early flights cover lookout, speed control and turning; later you learn take-offs, launches and landings, and, on good days, how to stay
+      up in thermals, the rising columns of warm air. Nobody gives a fixed number of flights to solo. Booker says long gaps between flights mean more flights before solo, Harris Hill puts its training at
+      40 to 75 lessons depending on ability, age and how often you fly, and London Gliding Club sells a Fixed Price to Solo package at £2,200.
+    table:
+      head:
+      - ''
+      - UK (British Gliding Association, CAA)
+      - US (FAA)
+      rows:
+      - - Youngest solo
+        - The clubs we checked take pupils from 14; London Gliding Club says a licence can be held from 16
+        - 14 for a student glider pilot; 16 for the Private Pilot-Glider certificate
+      - - Medical to fly solo
+        - A UK, Crown dependency or EU driving licence, a CAA Pilot Medical Declaration, or a LAPL or Class 2 medical certificate
+        - No medical certificate needed to fly gliders, but you must not fly if you know of a condition that would stop you flying safely
+      - - The next qualifications
+        - Bronze and Cross Country endorsements, then the Sailplane Pilot Licence (SPL)
+        - Private Pilot-Glider certificate
+      - - What they ask
+        - Bronze needs a theory test and a flight test with an instructor; Cross Country needs at least an hour of soaring, plus navigation and field-landing tests
+        - At least 10 hours and 20 flights in gliders, 2 hours solo, the FAA written exam and a flight test with an FAA examiner
+    after: In the UK, someone flying with an instructor needs nothing more on the medical side than the declaration on the club membership form. The Crown dependencies are Jersey, Guernsey and the Isle
+      of Man. In the US a pilot who already holds a powered aircraft licence can add a glider rating without a written exam, after 40 hours as pilot in command and at least 10 solo glider flights.
+  faq:
+  - q: How much does a gliding trial lesson cost?
+    a: At the UK clubs we checked, from £100 at Cairngorm Gliding Club to £150 at Booker and London Gliding Club, with longer or higher flights costing more. In the US, Harris Hill Soaring lists a lesson
+      at $139 and Windy City Soaring Association an introductory flight at $189.
+  - q: Is there a weight limit for gliding?
+    a: Yes. UK clubs we checked set the maximum between 100 kg (220 lb) and 103 kg (16 st 4 lb, 228 lb), and Windy City Soaring Association in the US sets 242 lb (110 kg). Some also have a minimum weight
+      and height limits.
+  - q: What is the difference between a winch launch and an aerotow?
+    a: A winch on the ground pulls the glider up on a cable in a fast launch of around 15 seconds, typically to about 1,000 feet. An aerotow uses a light aircraft to tow the glider higher, typically to
+      2,000 feet or more, and costs more.
+  - q: Do you need a medical to fly a glider?
+    a: Not for a trial lesson, beyond the club's own declaration. To fly solo in the UK the BGA accepts a UK, Crown dependency or EU driving licence or a CAA Pilot Medical Declaration; in the US the FAA
+      requires no medical certificate for gliders, but you must not fly knowing of a condition that makes it unsafe.
+  - q: How old do you have to be to fly a glider solo?
+    a: In the US the minimum age to fly a glider solo is 14, and 16 for the Private Pilot-Glider certificate. The UK clubs we checked take pupils from 14.
+  - q: What happens if the weather is bad on the day?
+    a: Gliding depends on the weather, so bookings may be changed at short notice, and some clubs ask you to phone on the morning of the flight.
+  inspire:
+  - kind: read
+    person: Martin Sloane, of the Midland Gliding Club on the Long Mynd
+    line: A rocket-motor engineer whose wife booked him a gliding course on the Long Mynd as a present in 2007, he learned on holiday courses over several years, went solo in 2016 and now flies cross-country
+      from the hill.
+    title: Members Stories – Martin Sloane
+    outlet: Midland Gliding Club
+    url: https://www.midlandgliding.club/membership-stories-martin-sloane/
+    checked: '2026-11-11'
+  related:
+  - tandem-skydive
+  - learn-to-sail
+  - learn-map-and-compass
+  kit:
+  - name: Sunglasses
+    why: the BGA suggests them for a bright cockpit
+    url: https://www.amazon.co.uk/s?k=sunglasses
+  - name: Sun hat
+    why: the cockpit canopy lets in a lot of sun
+    url: https://www.amazon.co.uk/s?k=sun+hat
+  - name: Windproof jacket
+    why: for waiting on an exposed airfield in a cold wind
+    url: https://www.amazon.co.uk/s?k=windproof+jacket
+  sources:
+  - label: Cairngorm Gliding Club, Trial lessons
+    url: https://www.gliding.org/trial-lessons
+    checked: '2026-11-11'
+  - label: Booker Gliding Club, Experience gliding
+    url: https://bookergliding.co.uk/experience-gliding
+    checked: '2026-11-11'
+  - label: Booker Gliding Club, Trial Gliding Flight
+    url: https://bookergliding.co.uk/product/trial-gliding-lesson-aerotow-to-2500-feet
+    checked: '2026-11-11'
+  - label: Booker Gliding Club, Pilot training
+    url: https://bookergliding.co.uk/pilot-training
+    checked: '2026-11-11'
+  - label: London Gliding Club, Gifts & Courses
+    url: https://www.londonglidingclub.co.uk/gifts
+    checked: '2026-11-11'
+  - label: London Gliding Club, What it Costs
+    url: https://www.londonglidingclub.co.uk/what-it-costs
+    checked: '2026-11-11'
+  - label: Lasham Gliding Society, Age ranges
+    url: https://www.lasham.org.uk/pages/age-weight-restrictions
+    checked: '2026-11-11'
+  - label: tvgc.org.uk, Winch Launch to 1,200 Feet
+    url: https://tvgc.org.uk/?p=178
+    checked: '2026-11-11'
+  - label: Devon and Somerset Gliding Club, Trial lessons
+    url: https://dsgc.co.uk/learning-to-fly-gliders/trial-lessons
+    checked: '2026-11-11'
+  - label: British Gliding Association, How to use your voucher
+    url: https://www.gliding.co.uk/?p=529
+    checked: '2026-11-11'
+  - label: British Gliding Association, Medical Requirements
+    url: https://members.gliding.co.uk/?p=55238
+    checked: '2026-11-11'
+  - label: British Gliding Association, Bronze and Cross Country Endorsements
+    url: https://members.gliding.co.uk/?p=24933
+    checked: '2026-11-11'
+  - label: Harris Hill Soaring, Rides
+    url: https://harrishillsoaring.org/rides
+    checked: '2026-11-11'
+  - label: Harris Hill Soaring, Learn to fly
+    url: https://harrishillsoaring.org/?p=1098
+    checked: '2026-11-11'
+  - label: Windy City Soaring Association, Store
+    url: https://windycitysoaring.org/store
+    checked: '2026-11-11'
+  - label: Soaring Society of America, Learn To Soar
+    url: https://www.ssa.org/learn-to-soar/
+    checked: '2026-11-11'
+  - label: Soaring Society of America, Glider Pilot Ratings
+    url: https://www.ssa.org/glider-pilot-ratings/
+    checked: '2026-11-11'
+  - label: Federal Aviation Administration, Become a Pilot (student pilot certificate)
+    url: https://www.faa.gov/pilots/become/student_cert/
+    checked: '2026-11-11'
+  - label: Cornell Legal Information Institute, 14 CFR 61.23 Medical certificates
+    url: https://www.law.cornell.edu/cfr/text/14/61.23
+    checked: '2026-11-11'
+  - label: Cornell Legal Information Institute, 14 CFR 61.53 Prohibition on operations during medical deficiency
+    url: https://www.law.cornell.edu/cfr/text/14/61.53
+    checked: '2026-11-11'
+  - label: Midland Gliding Club, Members Stories – Martin Sloane
+    url: https://www.midlandgliding.club/membership-stories-martin-sloane/
+    checked: '2026-11-11'
 - id: find-first-geocache
   title: Find your first geocache
   category: explore
@@ -28011,3 +28836,1342 @@
     outlet: Royal College of Organists
     url: https://i.rco.org.uk/the-rco-summer-course-two-weeks-twelve-years-apart/
     checked: '2026-11-10'
+- id: learn-woodworking
+  title: Take a beginners' woodworking course
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Learn to cut a mortise and tenon by hand, then use the joints to build a stool or a small side table. Beginners' courses teach hand and power tools safely, and you take home what you build.
+  start:
+  - 'Look for a beginners'' woodwork or furniture-making course: an adult-education service, a community college or a craft school.'
+  - Read what you will make and which tools are covered. Some courses are mostly hand tools, others include the table saw, planer and router.
+  - Check whether timber is in the fee, and arrive in sturdy closed-toe shoes with eye and hearing protection if asked.
+  links:
+  - label: 'Buckinghamshire Adult Learning: Woodwork for beginners and improvers (evening)'
+    url: https://adultlearningbc.ac.uk/?p=114136
+    region: uk
+    checked: '2026-11-11'
+  - label: 'West Dean College: Furniture making for beginners, a side table (West Sussex)'
+    url: https://www.westdean.ac.uk/short-courses/s5d41751-furniture-making-for-beginners-a-side-table
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Seattle Central College: Woodworking Level 1'
+    url: https://ce.seattlecentral.edu/art/woodworking-level-1
+    region: us
+    checked: '2026-11-11'
+  - label: 'University of Utah Lifelong Learning: Beginning Woodworking (Salt Lake City)'
+    url: https://continue.utah.edu/class/LLCFT/359
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Woodworking classes for beginners: what to expect'
+  description: What a beginners' woodworking or furniture-making course teaches, which joints and tools you learn, what to bring and what it costs in the UK and US.
+  detail:
+  - h: What you learn
+    p:
+    - Some courses concentrate on hand tools. West Dean's side-table course teaches setting out and cutting mortise and tenon joints, sharpening and maintaining tools and oil finishing, and is aimed at
+      those with little or no experience of fine woodworking.
+    - Others bring in machines early. Seattle Central College's Level 1 class covers shop safety, the hand saw, block plane and chisel, and also the router, jointer, planer, table saw and band saw, and
+      ends with a small project such as a three-legged stool. Buckinghamshire Adult Learning lets each learner plan and build a project of their own choice, with a cutting list and rough cost drawn up in
+      the first session.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Buckinghamshire Adult Learning
+        - Ten weeks of Tuesday evenings, 7pm to 9pm (autumn 2026 run); your own project; you bring your own materials
+        - £190.50, plus an annual £10.50 registration fee
+      - - West Dean College, West Sussex
+        - Residential or non-residential short course; make a small side table with mortise and tenon joints
+        - £959, plus about £95 for timber; accommodation extra
+      - - University of Utah Lifelong Learning, with Community Woodshop SLC
+        - Weekly evening class, 6pm to 9pm; make a charcuterie board and a step-stool
+        - $439 ($259 tuition plus a $180 fee for equipment and shop rental)
+      - - Seattle Central College
+        - Wednesday evenings, 6pm to 9pm, for a term; a small project such as a three-legged stool
+        - $899
+    after: Seattle Central asks students to bring a dust mask or respirator, hearing protection, safety glasses and sturdy closed-toe shoes. West Dean says covered footwear is essential, not sandals.
+  faq:
+  - q: Do I need any experience to take a woodworking class?
+    a: No. West Dean's beginners' course is for people with little or no experience, and Buckinghamshire Adult Learning's evening course is suitable for all levels, taught individually at your own pace.
+  - q: What should I wear to a woodworking class?
+    a: Sturdy closed-toe shoes and clothes without loose ends. The University of Utah class advises long trousers and no loose clothing or jewellery, and recommends a shop apron, safety glasses and hearing
+      protection.
+  - q: Is timber included in a woodworking course?
+    a: Not always. At West Dean timber costs about £95 extra, and Buckinghamshire learners bring their own materials, so the choice of wood affects the cost.
+  - q: What will I make on a beginners' woodworking course?
+    a: Usually one small piece. Courses listed here make a side table, a three-legged stool, or a charcuterie board and a step-stool.
+  sources:
+  - label: Buckinghamshire Adult Learning, Woodwork for Beginners and Improvers
+    url: https://adultlearningbc.ac.uk/?p=114136
+    checked: '2026-11-11'
+  - label: West Dean College, Furniture Making for Beginners – A Side Table with Tom Kealy
+    url: https://www.westdean.ac.uk/short-courses/s5d41751-furniture-making-for-beginners-a-side-table
+    checked: '2026-11-11'
+  - label: Seattle Central College Continuing Education, Woodworking - Level 1
+    url: https://ce.seattlecentral.edu/art/woodworking-level-1
+    checked: '2026-11-11'
+  - label: University of Utah Continuing Education, Beginning Woodworking
+    url: https://continue.utah.edu/class/LLCFT/359
+    checked: '2026-11-11'
+  kit:
+  - name: Bench chisel set
+    why: for paring and cutting joints at home between classes
+    url: https://www.amazon.co.uk/s?k=bench+chisel+set+woodworking
+  - name: Combination square
+    why: for marking out square lines and joints
+    url: https://www.amazon.co.uk/s?k=combination+square+woodworking
+  - name: Safety glasses and ear defenders
+    why: eye and hearing protection that some courses ask you to bring
+    url: https://www.amazon.co.uk/s?k=safety+glasses+ear+defenders+workshop
+  related:
+  - join-a-woodturning-club
+  - learn-woodcarving
+  - learn-chair-caning
+  - learn-to-upholster-a-chair
+- id: learn-natural-dyeing
+  title: Learn to dye yarn and fabric with plants
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Flowers, leaves, bark and roots make dye baths, and one pot can give many colours by changing the mordant or pH. Workshops from a single day to a week teach you how.
+  start:
+  - Book a beginners' natural dyeing workshop at an adult-education college, a craft school or a museum with a dye garden.
+  - Check what fibre you will dye and whether you need to bring your own small pieces of fabric or yarn.
+  - Bring an apron, rubber gloves and a notebook, and start a recipe book of what each plant and mordant gives you.
+  links:
+  - label: 'City Lit: Textiles, sustainable bundle dyeing (London)'
+    url: https://www.citylit.ac.uk/courses/textiles-sustainable-bundle-dyeing
+    region: uk
+    checked: '2026-11-11'
+  - label: 'West Dean College: Wild textiles, foraging and natural dyeing (West Sussex)'
+    url: https://www.westdean.ac.uk/short-courses/s2d40651-wild-textiles-foraging-and-natural-dyeing
+    region: uk
+    checked: '2026-11-11'
+  - label: 'North House Folk School: One Pot, Many Colors (Minnesota)'
+    url: https://northhouse.org/course-session/one-pot-many-colors-3-27-2027-0900
+    region: us
+    checked: '2026-11-11'
+  - label: 'John C. Campbell Folk School: Flower Powered Protein Dyeing (North Carolina)'
+    url: https://folkschool.configio.com/pd/4006/flower-powered-protein-dyeing
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Natural dyeing workshops: learn to dye with plants'
+  description: What a beginners' natural dyeing workshop teaches, from mordants to dye baths and modifiers, what to bring and what courses cost in the UK and US.
+  detail:
+  - h: What you learn
+    p:
+    - The first skill is preparing the fibre so that it accepts the dye. City Lit's bundle dyeing course covers scouring and mordanting animal and plant fibres, then hot and cold bundle dyeing and colour
+      modifiers.
+    - The second skill is coaxing many colours from few plants. North House Folk School's introductory day shows how changing mordants, shifting pH and using afterbaths produce a range of colours from a
+      single pot, and students go home with at least eight 25-yard (about 23-metre) skeins. At West Dean, students forage on the estate, make more than 20 dye baths on silk and build their own natural dye
+      recipe book.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Three Saturday sessions, 10.30am to 4.30pm (October to November 2026 run); cotton, silk, linen or wool
+        - £249
+      - - West Dean College, West Sussex
+        - Residential or non-residential short course; foraging and dyeing on silk; materials and lunch included
+        - Fee not shown on the course page
+      - - North House Folk School, Grand Marais, Minnesota
+        - One day, 9am to 5pm; introductory; tools and materials provided
+        - $125 tuition, plus $34 materials
+      - - John C. Campbell Folk School, Brasstown, North Carolina
+        - Week-long class (August 2026 run) on silk and wool, from the garden and the dye lab; all levels
+        - $870 tuition, plus $90 materials fee
+    after: City Lit asks you to bring up to two small pieces of natural fabric or clothing to the first class, each under 150g (about 5oz) and at least 80% cotton, silk, bamboo, wool or linen. West Dean's
+      foraging course asks for a cloth bag or basket, secateurs (pruning shears), gardening gloves, an apron and rubber gloves.
+  faq:
+  - q: What is a mordant in natural dyeing?
+    a: A substance used to prepare fibre so that it accepts the dye. Courses at City Lit and West Dean teach how to mordant fabric before dyeing.
+  - q: Can you get different colours from one dye plant?
+    a: Yes. North House Folk School's introductory class shows how different mordants, pH changes and afterbaths give a range of colours from a single pot.
+  - q: What fabrics can you dye with natural dyes?
+    a: Natural fibres. The courses listed here dye wool, silk, cotton, linen and bamboo, and the John C. Campbell class concentrates on protein fibres such as silk and wool.
+  - q: Do I need experience for a natural dyeing workshop?
+    a: No. North House's one-day class is introductory, and City Lit's bundle dyeing course is open to beginners as well as more experienced dyers.
+  sources:
+  - label: 'City Lit, Textiles: sustainable bundle dyeing'
+    url: https://www.citylit.ac.uk/courses/textiles-sustainable-bundle-dyeing
+    checked: '2026-11-11'
+  - label: West Dean College, Wild textiles – foraging and natural dyeing with Sarah Burns
+    url: https://www.westdean.ac.uk/short-courses/s2d40651-wild-textiles-foraging-and-natural-dyeing
+    checked: '2026-11-11'
+  - label: North House Folk School, One Pot, Many Colors
+    url: https://northhouse.org/course-session/one-pot-many-colors-3-27-2027-0900
+    checked: '2026-11-11'
+  - label: John C. Campbell Folk School, Flower Powered Protein Dyeing
+    url: https://folkschool.configio.com/pd/4006/flower-powered-protein-dyeing
+    checked: '2026-11-11'
+  kit:
+  - name: Natural dyeing book
+    why: recipes for plants, mordants and modifiers
+    url: https://www.amazon.co.uk/s?k=natural+dyeing+book
+  - name: Undyed wool yarn
+    why: plain skeins to dye at home
+    url: https://www.amazon.co.uk/s?k=undyed+wool+yarn+skein
+  - name: Stainless steel stock pot
+    why: a large pot for dye baths
+    url: https://www.amazon.co.uk/s?k=stainless+steel+stock+pot+large
+  related:
+  - learn-to-spin-yarn
+  - learn-to-weave-on-a-loom
+  - learn-felt-making
+  - learn-embroidery
+  inspire:
+  - kind: read
+    person: Jean Aycock, from Great Bend
+    line: A nature educator who got into plant dyes while learning to spin wool, and now dyes wool and alpaca yarn with flowers such as coreopsis, which gives a vibrant orange.
+    title: Hobby worth dyeing for
+    outlet: Great Bend Tribune
+    url: https://www.gbtribune.com/news/local-news/hobby-worth-dyeing-for/
+    checked: '2026-11-11'
+- id: learn-chair-caning
+  title: Learn to cane or rush-seat a chair
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Weaving a new seat of cane, rush or cord brings an old chair back into use, and you learn on your own chair. Short workshops and evening classes have run in the UK and US, so check for the next dates.
+  start:
+  - Find a chair or stool that needs a new seat but whose frame is sound. Courses ask that the structure and finish are in good condition.
+  - Book a seat-weaving workshop or evening course at an adult-education service, a craft college or a folk school, and ask which materials it covers.
+  - Before the course, take out the old seat as the tutor advises and bring it along, in case it is an unusual pattern.
+  links:
+  - label: 'West Dean College: Chair seating with cane, rush, willow or cord (West Sussex)'
+    url: https://www.westdean.ac.uk/short-courses/slw42031-chair-seating-with-cane-rush-willow-or-cord
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Surrey Adult Learning: Chair caning, Danish cord and rush seating workshop (Guildford)'
+    url: https://www.surreycc.gov.uk/schools-and-learning/adult-learning/courses/overview?id=55738
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Finger Lakes Community College: Chair Caning Workshop (New York)'
+    url: https://flcc.coursestorm.com/course/how-to-cane-a-chair
+    region: us
+    checked: '2026-11-11'
+  - label: 'John C. Campbell Folk School: Caning Chair Seats & Backs (North Carolina)'
+    url: https://folkschool.configio.com/pd/4298/caning-chair-seats-backs
+    region: us
+    checked: '2026-11-11'
+  seo_title: Chair caning and rush seating classes for beginners
+  description: What a chair caning or rush seating course teaches, how to prepare your chair, what to bring and what classes cost in the UK and the US.
+  detail:
+  - h: Cane, rush or cord
+    p:
+    - 'Seat weaving uses several materials: cane, rush, willow and paper cord at West Dean, and binder cane, French cane, fibre rush, flat reed and pressed cane at the John C. Campbell Folk School. The
+      caning pattern taught at West Dean is the standard six-way. West Dean''s weekend course lets students complete a rush dining chair, or complete or partly complete a caned bedroom chair.'
+    - Preparation matters. For a caned seat, West Dean asks you to cut the old strands underneath, knock out the pegs and keep the old cane. For rush, you cut inside the frame and ease the old seat out.
+      The frame should be repaired, polished or painted beforehand. The tutor, Rachael South, was taught chair caning by her father, who learned from his father.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Surrey Adult Learning, Guildford
+        - One Saturday, 10am to 3.30pm (November 2025 run); cane a small frame, or rush or cord your own chair
+        - £62, plus materials paid to the tutor
+      - - West Dean College, West Sussex
+        - Weekend course; materials for one seat in cane, rush or willow included
+        - Fee not shown on the course page
+      - - Finger Lakes Community College, New York
+        - Six Tuesday evenings, 6pm to 8pm (April to May 2026 run); hand-cane your own chair
+        - $30, plus cane bought once the size is known
+      - - John C. Campbell Folk School, Brasstown, North Carolina
+        - Week-long class; cane, fibre rush, flat reed and pressed cane; all levels
+        - $950 tuition, plus a $50-$150 materials fee
+    after: The Finger Lakes course asks students to bring an awl, scissors or clippers and a small tack hammer.
+  faq:
+  - q: Can a beginner learn to cane a chair?
+    a: Yes. Surrey Adult Learning's one-day workshop needs no previous experience, and the John C. Campbell Folk School class is open to all levels.
+  - q: What materials are used to reseat a chair?
+    a: Cane, rush, willow and paper cord are taught at West Dean, with Danish cord or seagrass if you contact the tutor at least three weeks ahead. The John C. Campbell class also uses flat reed and pressed
+      cane.
+  - q: What chair should I bring to a caning class?
+    a: One that needs a new seat but is structurally sound. West Dean asks for a chair or stool in sound condition, and the John C. Campbell class asks that structure and finish are in good condition.
+  - q: How long does it take to cane a chair?
+    a: It varies with the chair and material. On a West Dean weekend course, students may complete one rush dining chair, or complete or partly complete a caned bedroom chair. The Finger Lakes class runs
+      over six evenings.
+  sources:
+  - label: West Dean College, Chair Seating with Cane, Rush, Willow or Cord with Rachael South
+    url: https://www.westdean.ac.uk/short-courses/slw42031-chair-seating-with-cane-rush-willow-or-cord
+    checked: '2026-11-11'
+  - label: Surrey County Council Adult Learning, Upholstery - Chair caning, Danish cord and Rush seating - Workshop
+    url: https://www.surreycc.gov.uk/schools-and-learning/adult-learning/courses/overview?id=55738
+    checked: '2026-11-11'
+  - label: Finger Lakes Community College, Chair Caning Workshop
+    url: https://flcc.coursestorm.com/course/how-to-cane-a-chair
+    checked: '2026-11-11'
+  - label: John C. Campbell Folk School, Caning Chair Seats & Backs
+    url: https://folkschool.configio.com/pd/4298/caning-chair-seats-backs
+    checked: '2026-11-11'
+  kit:
+  - name: Chair caning kit
+    why: cane, pegs and tools to practise on a small frame at home
+    url: https://www.amazon.co.uk/s?k=chair+caning+kit
+  - name: Bradawl
+    why: for clearing and lining up holes in the seat frame
+    url: https://www.amazon.co.uk/s?k=bradawl
+  related:
+  - learn-to-upholster-a-chair
+  - weave-a-willow-basket
+  - learn-a-heritage-craft
+  - learn-woodworking
+  inspire:
+  - kind: read
+    person: Ken Hubble, from Winter Park
+    line: A retired aerospace engineer, shown how to cane chairs by his brother-in-law in the 1980s, who has repaired a couple of thousand chairs since he retired in 1995.
+    title: Mayflower resident Ken Hubble keeps caning craft going
+    outlet: Winter Park-Maitland Observer
+    url: https://www.orangeobserver.com/news/2018/may/12/mayflower-resident-ken-hubble-keeps-caning-craft-going/
+    checked: '2026-11-11'
+- id: learn-origami
+  title: Learn origami
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Origami turns a square of paper into a swan, a penguin or a cat's head with folds alone. Both national societies publish free diagrams, and local groups and library classes meet in the UK and US.
+  start:
+  - Fold a few simple models from the free diagrams and videos on the British Origami Society or OrigamiUSA websites.
+  - Look for a beginners' class at your library or adult-learning service, or a local folding group in the British Origami Society's mini meetings or OrigamiUSA's group directory.
+  - When you want more, join a society for its magazine and go to a convention, online or in person.
+  links:
+  - label: 'British Origami Society: free diagrams, membership, conventions and mini meetings'
+    url: https://britishorigami.org/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'British Origami Society: convention bookings'
+    url: https://www.tickettailor.com/events/bos
+    region: any
+    checked: '2026-11-11'
+  - label: 'Hampshire Adult Learning in Libraries: Beginners Origami course (Fleet Library)'
+    url: https://shop.hants.gov.uk/products/beginners-origami-fold-your-way-to-wellness-fleet-library-tuesday-9th-16th-23rd-30th-june-and-7th-july-2026-10-30am
+    region: uk
+    checked: '2026-11-11'
+  - label: 'OrigamiUSA: free diagrams, classes and conventions'
+    url: https://origamiusa.org
+    region: us
+    checked: '2026-11-11'
+  - label: 'OrigamiUSA: find a local folding group'
+    url: https://origamiusa.org/groups
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Learn origami: classes, clubs and free diagrams'
+  description: How to start origami as an adult, with free diagrams, library classes, local folding groups and conventions in the UK and US, and what they cost.
+  detail:
+  - h: How beginners start
+    p:
+    - A first class teaches the basic folds, then models that get gradually harder, and how to follow written instructions and diagrams. One library session in Nottinghamshire covered a penguin, a cat's
+      and a dog's head and a swan, and touched on simple geometry such as angles, proportion and ratio along the way.
+    - You need very little. The same course asked for square paper, ideally 15 x 15 cm (about 6 x 6 in) or larger, and said paper coloured differently on each side (one side can be white) makes instructions
+      easier to follow; commercial origami paper is usually more accurately cut. A Hampshire library course charged £5 for all its materials.
+    - The British Origami Society is a registered charity devoted to paper folding, with free diagrams and video tutorials under Learn to Fold, a members' magazine every two months, and mini meetings, including
+      new ones in Bristol and Salisbury in 2026. OrigamiUSA, the American national society, has a free diagram collection, a directory of folding groups with their locations, contacts and meeting places,
+      and monthly Folding Sundays in New York.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Hampshire libraries (Fleet Library)
+        - 'Beginners Origami: five weekly two-hour sessions, June to July 2026; Hampshire residents; no experience needed'
+        - £0, plus £5 for materials paid to the tutor
+      - - Forest Hill Community Library, Lewisham, London
+        - Monthly origami class, no experience needed, no booking needed (as listed August 2025)
+        - Free
+      - - British Origami Society
+        - Membership with bi-monthly magazine and member content
+        - From £15 a year
+      - - British Origami Society 60th anniversary convention
+        - East Midlands Conference Centre, Nottingham, 2 to 5 September 2027
+        - Not shown on the booking page
+      - - BOS and OrigamiUSA virtual convention
+        - Online via Zoom, 3 to 4 April 2027
+        - Not shown on the booking page
+      - - OrigamiUSA local groups (US)
+        - Folding groups in cities across the country; the directory lists locations, contacts and meeting places
+        - Not listed
+    after: OrigamiUSA's Pacific Coast convention is listed for 23 to 27 September 2027 in Bellevue, Washington. Check the society pages for current details before you book.
+  faq:
+  - q: How do I start learning origami?
+    a: Start with simple models from free diagrams, such as those the British Origami Society and OrigamiUSA publish, then try a beginners' class or a local folding group.
+  - q: What paper is best for origami beginners?
+    a: Square paper of at least 15 x 15 cm (about 6 x 6 in). One library course said paper coloured differently on each side makes instructions easier to follow.
+  - q: Are there origami clubs near me?
+    a: The British Origami Society runs mini meetings, including new ones in Bristol and Salisbury, and OrigamiUSA keeps a directory of US, Canadian and international folding groups.
+  - q: How much does it cost to join the British Origami Society?
+    a: Membership is listed from £15 a year and includes a magazine every two months.
+  sources:
+  - label: British Origami Society, Home page
+    url: https://britishorigami.org/
+    checked: '2026-11-11'
+  - label: British Origami Society, Events (Ticket Tailor)
+    url: https://www.tickettailor.com/events/bos
+    checked: '2026-11-11'
+  - label: 'Hampshire County Council, Beginners Origami: Fold Your Way to Wellness, Fleet Library'
+    url: https://shop.hants.gov.uk/products/beginners-origami-fold-your-way-to-wellness-fleet-library-tuesday-9th-16th-23rd-30th-june-and-7th-july-2026-10-30am
+    checked: '2026-11-11'
+  - label: Inspire (Nottinghamshire), Origami for Beginners, Bingham Library
+    url: https://www.inspireculture.org.uk/skills-learning/adult-learning/origami-for-beginners-bingham-library-community-learning/
+    checked: '2026-11-11'
+  - label: Lewisham Libraries, Origami Class for Adults
+    url: https://libraries.lewisham.gov.uk/events/204926
+    checked: '2026-11-11'
+  - label: OrigamiUSA, Home page
+    url: https://origamiusa.org
+    checked: '2026-11-11'
+  - label: OrigamiUSA, Origami groups
+    url: https://origamiusa.org/groups
+    checked: '2026-11-11'
+  kit:
+  - name: Origami paper, 15 cm squares
+    why: square sheets cut to size, coloured on one side, for following diagrams
+    url: https://www.amazon.co.uk/s?k=origami+paper+15cm
+  - name: Bone folder
+    why: for pressing sharp creases
+    url: https://www.amazon.co.uk/s?k=bone+folder+origami
+  related:
+  - learn-calligraphy
+  - learn-bookbinding
+  - learn-chinese-brush-painting
+  - learn-ikebana
+- id: learn-ikebana
+  title: Learn ikebana, Japanese flower arranging
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Ikebana is a Japanese art of arranging flowers practised for more than 600 years, learned through schools such as Sogetsu, Ikenobo and Ohara. Teachers in the UK and botanic and Japanese gardens in
+    the US run classes for beginners.
+  start:
+  - Go to an ikebana exhibition or a one-off taster class to see how the different schools work.
+  - Choose a school and find a teacher through the Japan Society's directory of UK ikebana experts or a local Ikebana International chapter, or book a course at a botanic or Japanese garden.
+  - Buy the basic tools your teacher asks for, usually a shallow container, a pin holder (kenzan) and ikebana scissors.
+  links:
+  - label: 'Japan Society: ikebana and horticulture experts (UK)'
+    url: https://www.japansociety.org.uk/ikebana-horticulture-experts
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Embassy of Japan in the UK: Sogetsu London Branch exhibition and taster'
+    url: https://www.uk.emb-japan.go.jp/JAPANUKEvent/event/2026/202605/30-Sogetsu.html
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Sutton College: Introduction to Ikebana workshop'
+    url: https://www.suttoncollege.ac.uk/?p=9514
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Ikebana International: about, chapters and membership'
+    url: https://ikebanahq.org/a
+    region: any
+    checked: '2026-11-11'
+  - label: 'Morikami Museum and Japanese Gardens: Ikebana Sogetsu class (Florida)'
+    url: https://morikami.org/event/ikebana-sogetsu-class/
+    region: us
+    checked: '2026-11-11'
+  - label: 'Lewis Ginter Botanical Garden: Sogetsu Ikebana class (Virginia)'
+    url: https://www.lewisginter.org/event/sogetsu-ikebana-basic-floral-arranging/
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Ikebana classes for beginners: schools, costs, tools'
+  description: How to start ikebana, the Japanese art of flower arranging, with the main schools, where to find a teacher in the UK and US, the tools and the costs.
+  detail:
+  - h: Schools, teachers and chapters
+    p:
+    - Ikebana is not one style. Teachers on the Japan Society's UK list each name a school, including Sogetsu, Ikenobo, Ohara, Koryu and Ichiyo; the society says inclusion on the list is not a recommendation.
+      Sogetsu, founded in 1926, is a modern school, and Morikami Museum's class description sums up its idea that ikebana can be done by anyone, anywhere, with almost anything.
+    - Ikebana International, founded in 1956 by Ellen Gordon Allen with the motto Friendship through Flowers, has nearly 140 chapters in more than 44 countries and areas. It does not teach or favour any
+      one school, and does not give lessons itself; it suggests contacting a school or teacher for those. You can join through a local chapter.
+    - Expect to buy some tools. Morikami's beginners need a shallow flat-bottomed container (suiban) about 30 cm (12 in) across and 5 to 6 cm (2 to 2.5 in) deep, a pin holder (kenzan) about 7.5 cm (3 in)
+      across, and ikebana or garden scissors, plus a flower fee for each course.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Sogetsu London Branch exhibition, Rosslyn Hill Chapel, London
+        - Annual exhibition (30 May 2026) with a 30-minute Let's Try Ikebana session led by certified Sogetsu teachers, materials included
+        - Exhibition free; taster £10
+      - - Sutton College, Surrey
+        - Introduction to Ikebana, one two-hour evening workshop for complete beginners (September 2026); flowers and container provided
+        - Not listed; may be free for eligible London residents
+      - - Morikami Museum and Japanese Gardens, Delray Beach, Florida
+        - Sogetsu beginners' class, Wednesdays 10.30am to 12.30pm, in blocks of two to four weeks from October 2026 to June 2027
+        - Four weeks $80 members, $90 non-members, plus an $80 flower fee paid to the instructor
+      - - Lewis Ginter Botanical Garden, Richmond, Virginia
+        - 'Sogetsu Ikebana: Basic Floral Arranging, one two-hour class (April 2026); all materials provided; bring your own clippers'
+        - $49 members, $59 non-members
+      - - Ikebana International (individual membership)
+        - Membership for people who do not join through a chapter; applications reviewed by the board
+        - JPY 6,000 a year
+  faq:
+  - q: What is the difference between ikebana and flower arranging?
+    a: Ikebana is the Japanese art of flower arranging, taught through named schools such as Sogetsu, Ikenobo and Ohara, each with its own approach.
+  - q: Which ikebana school should a beginner choose?
+    a: It depends on the teachers near you. Sogetsu is a modern school built on the idea that ikebana can be done by anyone, anywhere, with almost anything; a taster class lets you try before you commit.
+  - q: What do I need to start ikebana?
+    a: Usually a shallow container (suiban), a pin holder (kenzan) and ikebana scissors. Some one-off classes, such as at Lewis Ginter Botanical Garden, provide all the materials.
+  - q: Does Ikebana International teach ikebana?
+    a: No. It is a worldwide nonprofit organisation, with the motto Friendship through Flowers and chapters around the world and suggests contacting a school or teacher for lessons.
+  sources:
+  - label: The Japan Society, Ikebana and horticulture experts
+    url: https://www.japansociety.org.uk/ikebana-horticulture-experts
+    checked: '2026-11-11'
+  - label: Embassy of Japan in the UK, Sogetsu London Branch Ikebana Exhibition (May 2026)
+    url: https://www.uk.emb-japan.go.jp/JAPANUKEvent/event/2026/202605/30-Sogetsu.html
+    checked: '2026-11-11'
+  - label: Sutton College, Floristry Workshop – Introduction to Ikebana
+    url: https://www.suttoncollege.ac.uk/?p=9514
+    checked: '2026-11-11'
+  - label: Ikebana International, About us
+    url: https://ikebanahq.org/a
+    checked: '2026-11-11'
+  - label: Morikami Museum and Japanese Gardens, Ikebana Sogetsu Class
+    url: https://morikami.org/event/ikebana-sogetsu-class/
+    checked: '2026-11-11'
+  - label: 'Lewis Ginter Botanical Garden, Sogetsu Ikebana: Basic Floral Arranging'
+    url: https://www.lewisginter.org/event/sogetsu-ikebana-basic-floral-arranging/
+    checked: '2026-11-11'
+  kit:
+  - name: Kenzan (pin holder)
+    why: holds stems upright in a shallow container
+    url: https://www.amazon.co.uk/s?k=kenzan+ikebana+pin+holder
+  - name: Ikebana scissors
+    why: for cutting stems and branches; ask your teacher which kind your school uses
+    url: https://www.amazon.co.uk/s?k=ikebana+scissors
+  - name: Suiban (shallow ikebana container)
+    why: the flat-bottomed dish many beginners' classes ask for
+    url: https://www.amazon.co.uk/s?k=suiban+ikebana+container
+  related:
+  - learn-flower-arranging
+  - learn-chinese-brush-painting
+  - visit-an-open-garden
+  - learn-origami
+  inspire:
+  - kind: read
+    person: Ellen Gordon Allen
+    line: Learned ikebana while living in Japan, where her husband, a US Army general, was stationed, and went on to found Ikebana International.
+    title: 'Friendships and flower arrangements: Keeping the Japanese art of ikebana alive'
+    outlet: NPR (via KRWG Public Media)
+    url: https://www.krwg.org/2026-04-19/friendships-and-flower-arrangements-keeping-the-japanese-art-of-ikebana-alive
+    checked: '2026-11-11'
+- id: learn-the-steel-pan
+  title: Learn the steel pan
+  category: think
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The steel pan, a tuned percussion instrument from Trinidad, is played in steel bands. Adult beginners' classes in the UK and US teach it in groups, and several ask for no previous musical experience.
+  start:
+  - Look for an adult beginners' steel pan class at a community steel band, an arts centre or an adult-education college.
+  - Check whether pans are provided at sessions; some classes have pans for everyone, others let you practise on the school's pans between classes.
+  - Ask what the course works towards; some, such as Kirklees College's, end with a performance.
+  links:
+  - label: 'Southern Maltings: adult steel pan classes (Ware, Hertfordshire)'
+    url: https://southernmaltings.co.uk/adult-steel-pan-classes-hertfordshire/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Kirklees College: Steel Panning for Beginners (Huddersfield)'
+    url: https://www.kirkleescollege.ac.uk/courses-for-adult-learners/Steel_Pan_Drums_For_Beginners/25-26
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Carnegie Theatre: steel drum classes (Workington, Cumbria)'
+    url: https://carnegietheatre.co.uk/home/music-centre/steel-drums/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'The Music Settlement: Adult Beginner Steel Drum Ensemble (Cleveland, Ohio)'
+    url: https://www.themusicsettlement.org/all-offerings/adult-beginner-steel-drum-ensemble
+    region: us
+    checked: '2026-11-11'
+  - label: 'Downtown Norfolk Council: beginning steelpan classes at MacArthur Center, Norfolk (Virginia)'
+    url: https://www.downtownnorfolk.org/event/beginning-steelpan-classes
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Steel pan lessons for adult beginners: UK and US'
+  description: Where adult beginners can learn the steel pan in a group class in the UK and US, whether you need to read music or own a pan, and what classes cost.
+  detail:
+  - h: What a beginners' class covers
+    p:
+    - A first course starts with the sticks. A beginners' class at MacArthur Center in Norfolk, Virginia, listed by the Downtown Norfolk Council, covers how to hold and control them, hand coordination and
+      striking technique, the layout of the pan, basic rhythm, and an introduction to melody and harmony through scales. It puts skill-building ahead of performance.
+    - Kirklees College's course in Huddersfield is taught by a Trinidadian professional player, works on Caribbean tunes and rhythms played in a steel band, and ends with a performance with the college
+      steel band. The Music Settlement in Cleveland says its adult beginners' ensemble needs no ability to read music.
+    - You do not need your own pan to begin. At Southern Maltings in Hertfordshire pans are available for participants during sessions; at The Music Settlement, students without a steel drum can practise
+      on one at the school during normal business hours.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Southern Maltings, Ware, Hertfordshire (Steel Pan In Motion)
+        - Weekly adult sessions, Mondays 7pm to 8.30pm, pay as you go; no musical experience needed; pans provided
+        - £10 a session
+      - - Kirklees College, Huddersfield
+        - Eight weeks, Tuesdays 5.30pm to 8.45pm, with Legacy Steel Band; currently not available, mailing list for the next run
+        - £85
+      - - Carnegie Theatre, Workington, Cumbria
+        - Learner sessions on Mondays at 11am, in blocks; booking essential
+        - Not listed
+      - - The Music Settlement, Cleveland, Ohio
+        - Adult Beginner Steel Drum Ensemble, Mondays 5pm to 6pm, 28 September 2026 to 25 January 2027 and February to May 2027
+        - $200 per session, plus a $35 registration fee for the first enrolment of the school year
+      - - MacArthur Center, Norfolk, Virginia (Downtown Norfolk Council listing)
+        - Beginning steelpan classes, Saturdays 10am to 11.30am, for first-time players
+        - $60 a month (four classes a month), paid in advance
+  faq:
+  - q: Do I need to read music to play the steel pan?
+    a: Not for every class. The Music Settlement in Cleveland says reading music is not required for its adult beginners' ensemble.
+  - q: Do I need my own steel pan to take lessons?
+    a: Not always. Southern Maltings provides pans during its adult sessions, and The Music Settlement lets students without a steel drum practise on one at the school.
+  - q: Can adults with no musical experience learn the steel pan?
+    a: Yes. Southern Maltings says no previous musical experience is required, and the beginning classes listed in Norfolk, Virginia are designed for first-time players.
+  - q: How much do steel pan classes cost?
+    a: As last listed, £10 a session at Southern Maltings in Hertfordshire, £85 for an eight-week course at Kirklees College, and $60 a month for the Norfolk, Virginia class.
+  sources:
+  - label: Southern Maltings, Adult Steel Pan Classes Hertfordshire
+    url: https://southernmaltings.co.uk/adult-steel-pan-classes-hertfordshire/
+    checked: '2026-11-11'
+  - label: Kirklees College, Steel Panning for Beginners
+    url: https://www.kirkleescollege.ac.uk/courses-for-adult-learners/Steel_Pan_Drums_For_Beginners/25-26
+    checked: '2026-11-11'
+  - label: Carnegie Theatre, Steel Drum Classes
+    url: https://carnegietheatre.co.uk/home/music-centre/steel-drums/
+    checked: '2026-11-11'
+  - label: The Music Settlement, Adult Beginner Steel Drum Ensemble
+    url: https://www.themusicsettlement.org/all-offerings/adult-beginner-steel-drum-ensemble
+    checked: '2026-11-11'
+  - label: Downtown Norfolk Council, Beginning Steelpan Classes
+    url: https://www.downtownnorfolk.org/event/beginning-steelpan-classes
+    checked: '2026-11-11'
+  kit:
+  - name: Steel pan sticks
+    why: for practice and class; ask your teacher which sticks suit the pan you play
+    url: https://www.amazon.co.uk/s?k=steel+pan+sticks
+  - name: Folding music stand
+    why: for practice at home and taking to sessions
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  related:
+  - learn-the-drums
+  - join-community-orchestra-or-band
+  - take-a-music-grade
+  - learn-the-ukulele
+  inspire:
+  - kind: read
+    person: Janice Turley
+    line: A primary school teacher in Manchester who was taken to see a steel band by a school governor, was put on the bass pans and now teaches steel pan to a group of visually and hearing impaired adults
+      in Stockport.
+    title: '‘They’re enjoying themselves a bit too much!’: the steel band leader getting Stockport dancing'
+    outlet: The Guardian (via Yahoo)
+    url: https://ca.finance.yahoo.com/news/enjoying-themselves-bit-too-much-110002368.html
+    checked: '2026-11-11'
+- id: learn-songwriting
+  title: Take a songwriting course
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Songwriting courses teach rhyme, structure, chords and setting words to music. Some ask for music theory; others take beginners.
+  start:
+  - Decide whether you want to work on lyrics, melody and chords, or both, and read the course's entry requirements before you book; some expect you to read music or know basic harmony.
+  - Look at adult-education colleges and university continuing-education departments, many of which teach songwriting online, or a community college near you.
+  - Expect homework; City Lit's course, for example, sets assignments during and after each session.
+  links:
+  - label: 'City Lit: Songwriting: form and function (online)'
+    url: https://www.citylit.ac.uk/courses/songwriting-form-and-function
+    region: uk
+    checked: '2026-11-11'
+  - label: 'University of Cambridge Institute of Continuing Education: An introduction to songwriting (online)'
+    url: https://www.pace.cam.ac.uk/courses/introduction-songwriting
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Berklee Online: Lyric Writing: Tools and Strategies'
+    url: https://online.berklee.edu/courses/lyric-writing-tools-and-strategies
+    region: us
+    checked: '2026-11-11'
+  - label: 'Nashville Songwriters Association International: about NSAI and its chapters'
+    url: https://nashvillesongwriters.com/history-nsai
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Songwriting courses for beginners: UK and US options'
+  description: What a songwriting course covers, whether you need to read music, and what courses cost at City Lit, Cambridge, Berklee Online and a US community college.
+  detail:
+  - h: Check the entry requirements first
+    p:
+    - Songwriting courses vary more than most. Anne Arundel Community College in Maryland says its short course is designed for all experience levels, from beginners to seasoned musicians. City Lit's course
+      Songwriting, form and function, by contrast, asks for a good grasp of music theory, including triads and seventh chords, and suits players and singers with a working knowledge of harmony.
+    - Some courses are about words. Berklee Online's course in lyric writing tools and strategies has no prerequisites and covers object writing, rhyme, rhythm and line length, metaphor and song structure
+      for verses, choruses and bridges. Others are about the music, such as chord sequences, key changes and accompaniment.
+    - If you want company and feedback after a course, the Nashville Songwriters Association International (NSAI) says it has more than 100 chapters in the US and beyond. A chapter meeting in Cincinnati,
+      for example, has a lesson on the craft or the music business followed by a song critique, and asks you to bring a song and lyric sheets. It says songwriters of all levels and genres are welcome.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Songwriting: form and function: 11 weekly online sessions of 90 minutes; needs music theory'
+        - £229
+      - - University of Cambridge Institute of Continuing Education
+        - 'An introduction to songwriting: seven weeks, online, non-accredited'
+        - £545
+      - - Berklee Online
+        - 'Lyric Writing: Tools and Strategies: 12 weeks, online, no prerequisites'
+        - $1,575 (for credit)
+      - - Anne Arundel Community College, Maryland
+        - 'Songwriting: Life in Lyrics: face-to-face, noncredit (October to November 2026 run, now closed)'
+        - $68, including a $20 fee
+    after: City Lit says financial support for fees is available. Berklee Online says its credit and non-credit options give the same course experience, but the page does not list the non-credit price.
+  faq:
+  - q: Do I need to read music to take a songwriting course?
+    a: It depends on the course. Anne Arundel Community College's class is designed for all levels, while City Lit's Songwriting form and function asks for a good grasp of music theory.
+  - q: Can I learn songwriting online?
+    a: Yes. City Lit, Cambridge's Institute of Continuing Education and Berklee Online all teach songwriting online.
+  - q: How long is a songwriting course?
+    a: The courses listed here run from a few weeks at a US community college to 12 weeks at Berklee Online.
+  - q: Is there a songwriting group I can join after a course?
+    a: In the US, the Nashville Songwriters Association International has more than 100 chapters, and it describes its members as professional and amateur songwriters of all genres.
+  sources:
+  - label: City Lit, Songwriting form and function
+    url: https://www.citylit.ac.uk/courses/songwriting-form-and-function
+    checked: '2026-11-11'
+  - label: University of Cambridge Institute of Continuing Education, An introduction to songwriting
+    url: https://www.pace.cam.ac.uk/courses/introduction-songwriting
+    checked: '2026-11-11'
+  - label: 'Berklee Online, Lyric Writing: Tools and Strategies'
+    url: https://online.berklee.edu/courses/lyric-writing-tools-and-strategies
+    checked: '2026-11-11'
+  - label: 'Anne Arundel Community College, MUC-347 Songwriting: Life in Lyrics'
+    url: https://www.aacc.edu/course-search/course/songwriting-life-in-lyrics.php
+    checked: '2026-11-11'
+  - label: Nashville Songwriters Association International, History of NSAI
+    url: https://nashvillesongwriters.com/history-nsai
+    checked: '2026-11-11'
+  - label: Nashville Songwriters Association International, Cincinnati OH chapter
+    url: https://www.nashvillesongwriters.com/chapter/cincinnati-oh
+    checked: '2026-11-11'
+  kit:
+  - name: Rhyming dictionary
+    why: for finding rhymes and near-rhymes while you draft lyrics
+    url: https://www.amazon.co.uk/s?k=rhyming+dictionary+songwriters
+  - name: Songwriting notebook
+    why: for keeping lyric ideas and drafts in one place
+    url: https://www.amazon.co.uk/s?k=songwriting+notebook+lyrics
+  - name: USB microphone
+    why: for recording song ideas and sharing them with an online class
+    url: https://www.amazon.co.uk/s?k=usb+microphone+recording
+  related:
+  - take-a-creative-writing-course
+  - learn-the-guitar
+  - learn-the-piano
+  - take-singing-lessons
+- id: learn-to-box
+  title: Try boxing training
+  category: move
+  kind: skill
+  effort: demanding
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Boxing clubs run bag work, skipping, pads and circuits for people who want to train like a boxer without getting in the ring. In England, sparring needs a medical first.
+  start:
+  - Find a club affiliated to the national governing body, England Boxing in England or USA Boxing in the US, and ask whether it runs recreational or fitness sessions.
+  - Ask what to bring; clubs typically expect boxing gloves and hand wraps, and some lend gloves at first.
+  - If you later want to spar, ask the club about the governing body's medical and registration rules before you do.
+  links:
+  - label: 'England Boxing: boxing for fitness and club finder'
+    url: https://englandboxing.org/get-involved/boxing-for-fitness
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Islington Boxing Club: recreational keep-fit boxing (London)'
+    url: https://www.islingtonboxingclub.org/classes/recreational-boxing/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'USA Boxing: membership, including adult fitness'
+    url: https://www.usaboxing.org/membership
+    region: us
+    checked: '2026-11-11'
+  - label: 'USA Boxing Metro: fitness memberships explained'
+    url: https://usaboxingmetro.com/?p=332
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Boxing for beginners: non-contact training at a club'
+  description: What a beginners' boxing fitness session involves, what it costs in the UK and US, what to bring, and the rules on sparring and medicals.
+  detail:
+  - h: Training without the fighting
+    p:
+    - England Boxing says not everyone who is interested in boxing wants to get in the ring and compete, and points to circuit lessons for recreational boxers. At Islington Boxing Club in London, recreational
+      classes cover bag work, skipping, pads, technique drills and conditioning, without full-contact sparring.
+    - In the US, USA Boxing has an adult fitness membership. USA Boxing Metro describes it as strictly non-contact; fitness members train with a coach on heavy bags, speed bags and punch mitts at a registered
+      gym, and sparring is not allowed unless they upgrade to an athlete membership.
+    - Sparring has its own rules. England Boxing says a recreational boxer who wants to spar must first have a medical with an England Boxing-registered doctor or their own GP (family doctor), recorded
+      on its ME1 form, and be registered on its system. The same page, quoting England Boxing's 2019 rules, says recreational boxers can be registered for sparring only up to the end of the calendar year
+      of their 40th birthday, so check the current rule with your club. Ask your club how these rules apply to you.
+  - h: What it costs
+    table:
+      head:
+      - Where
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - Islington Boxing Club, London (non-member)
+        - One recreational session of 90 minutes
+        - £13 per session; £11 students and concessions
+      - - Islington Boxing Club, London (member)
+        - One recreational session, plus membership for the calendar year
+        - £9 per session, plus £25 a year
+      - - USA Boxing adult fitness membership
+        - Annual, non-contact; you must be attached to a registered gym
+        - $35 a year (as listed by USA Boxing Metro)
+    after: Gyms set their own class fees. Islington Boxing Club says boxing gloves are essential for all sessions; it has gloves to use but encourages people to buy their own, and sells hand wraps.
+  faq:
+  - q: Do you have to spar to do boxing training?
+    a: No. Recreational sessions such as Islington Boxing Club's run without full-contact sparring, and USA Boxing's adult fitness membership does not allow sparring at all.
+  - q: Do I need a medical to spar?
+    a: In England, yes. England Boxing says a recreational boxer must have a medical with a registered doctor or their own GP before sparring.
+  - q: What do I need for my first boxing session?
+    a: Boxing gloves and hand wraps. Islington Boxing Club lends gloves but encourages you to buy your own.
+  - q: How much does a boxing class cost?
+    a: At Islington Boxing Club, a recreational session costs £13 for non-members. In the US, USA Boxing Metro lists the adult fitness membership at $35 a year; gyms set their own class fees.
+  safety: Spar only after your club has confirmed you meet the governing body's medical and registration rules.
+  sources:
+  - label: England Boxing, Boxing for fitness
+    url: https://englandboxing.org/get-involved/boxing-for-fitness
+    checked: '2026-11-11'
+  - label: England Boxing, Recreational Boxer Medical Examination Form for sparring
+    url: https://www.englandboxing.org/?p=11308
+    checked: '2026-11-11'
+  - label: Islington Boxing Club, Recreational keep fit boxing
+    url: https://www.islingtonboxingclub.org/classes/recreational-boxing/
+    checked: '2026-11-11'
+  - label: USA Boxing, Membership
+    url: https://www.usaboxing.org/membership
+    checked: '2026-11-11'
+  - label: USA Boxing Metro, Fitness memberships
+    url: https://usaboxingmetro.com/?p=332
+    checked: '2026-11-11'
+  kit:
+  - name: Boxing gloves
+    why: for bag and pad work; clubs expect them at every session
+    url: https://www.amazon.co.uk/s?k=boxing+gloves+training
+  - name: Hand wraps
+    why: worn under gloves to wrap the hands and wrists
+    url: https://www.amazon.co.uk/s?k=boxing+hand+wraps
+  - name: Skipping rope
+    why: skipping is part of most boxing sessions and can be practised at home
+    url: https://www.amazon.co.uk/s?k=boxing+skipping+rope
+  related:
+  - learn-to-lift-weights
+  - learn-judo
+  - learn-karate
+  - couch-to-5k
+- id: try-aqua-aerobics
+  title: Try an aqua aerobics class
+  category: move
+  kind: experience
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Aqua aerobics is an exercise class in the shallow end, led from the poolside, and you do not need to swim. Deep-water classes are for swimmers.
+  start:
+  - Look up the timetable of your local leisure centre or city pool; in the UK many are run by councils or by operators such as Better.
+  - Book a standard or beginners' class held in the shallow end; deep-water classes need you to be a confident swimmer.
+  - If you have a medical condition, check with your doctor before you start.
+  links:
+  - label: 'Better: aqua aerobics classes and how to book (UK)'
+    url: https://www.better.org.uk/what-we-offer/activities/fitness-classes/aqua-aerobics-classes
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Darlington Borough Council: Dolphin Centre prices 2026-27'
+    url: https://www.darlington.gov.uk/leisure-and-culture/leisure/the-dolphin-centre/prices-2026-27/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'City of Albuquerque: water exercise classes'
+    url: https://www.cabq.gov/parksandrecreation/recreation/swimming/water-exercise-classes
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Aqua aerobics for beginners: do you need to swim?'
+  description: What happens in an aqua aerobics class, whether you need to swim, shallow versus deep-water classes, and what a class costs in the UK and US.
+  detail:
+  - h: What happens in a class
+    p:
+    - Better, a UK leisure-centre operator, describes aqua aerobics as gentle exercise in a swimming pool, combining aerobic moves with strength and conditioning. Its classes last 60 minutes. The British
+      Heart Foundation describes an instructor demonstrating moves from the poolside, with exercises such as star jumps, sideways lunges and jogging, and foam weights.
+    - Albuquerque's city pools say each water aerobics class includes a warm-up, cardio and strength exercises and a cool-down, with moves such as water walking and leg lifts. "You won't be swimming," the
+      city says.
+    - Not every class is the same. Better runs a standard class for all abilities, a basics class for beginners with simpler movements at a lower intensity, and a deep-water class in the deep end with buoyancy
+      aids, for which you must be able to swim. Albuquerque's deep-water class has you treading water the whole time, helped by floating weights.
+  - h: What a class costs
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Dolphin Centre, Darlington (council leisure centre)
+        - Aqua aerobics, pay per class, April 2026 to March 2027
+        - £6.00; £5.40 card holder; £4.50 concession
+      - - City of Albuquerque pools
+        - Water aerobics, single class
+        - $3.25
+      - - City of Albuquerque pools
+        - 10-class punch pass
+        - $28
+      - - City of Albuquerque pools
+        - Water exercise year pass
+        - $215.00
+    after: Better's page does not list aqua aerobics prices; it says booking depends on availability and membership type, through its app or website, and that not every Better centre runs the class.
+  faq:
+  - q: Do you need to be able to swim to do aqua aerobics?
+    a: Not for a standard class. Better says all exercises in its standard class take place in the shallow end, so you do not need to swim, but its deep-water class is for confident swimmers.
+  - q: How long is an aqua aerobics class?
+    a: Better's aqua aerobics classes last 60 minutes.
+  - q: How much does aqua aerobics cost?
+    a: A class at Darlington's Dolphin Centre costs £6.00, or £4.50 with a concession. A single class at Albuquerque's city pools costs $3.25.
+  safety: If you have a heart or other medical condition, check with your doctor before taking up a new exercise class, and join a deep-water class only if you can swim.
+  sources:
+  - label: Better, Aqua aerobics classes
+    url: https://www.better.org.uk/what-we-offer/activities/fitness-classes/aqua-aerobics-classes
+    checked: '2026-11-11'
+  - label: British Heart Foundation, Aqua aerobics
+    url: https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/aqua-aerobics
+    checked: '2026-11-11'
+  - label: Darlington Borough Council, Dolphin Centre prices April 2026 to March 2027
+    url: https://www.darlington.gov.uk/leisure-and-culture/leisure/the-dolphin-centre/prices-2026-27/
+    checked: '2026-11-11'
+  - label: City of Albuquerque, Water exercise classes
+    url: https://www.cabq.gov/parksandrecreation/recreation/swimming/water-exercise-classes
+    checked: '2026-11-11'
+  kit:
+  - name: Pool shoes
+    why: for grip on the pool floor and poolside
+    url: https://www.amazon.co.uk/s?k=aqua+shoes+swimming+pool
+  - name: Aqua fitness dumbbells
+    why: foam weights of the kind used for arm work in class
+    url: https://www.amazon.co.uk/s?k=aqua+fitness+foam+dumbbells
+  related:
+  - learn-to-swim-adult
+  - masters-swimming
+  - try-pilates
+  - yoga-class
+- id: learn-to-roller-skate
+  title: Learn to roller skate
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Adult beginner roller skating courses start with how to stand up, how to fall safely and how to stop, then move on to glides, turns and skating backwards. The courses we found run for four to seven
+    weeks, once a week.
+  start:
+  - 'Find an adult beginners'' course: a leisure centre, a skate school or a roller rink. Check whether it is for quad skates, inline skates or both.'
+  - Ask whether skates and protective gear are provided or whether you must bring your own. Some courses lend everything; others expect your own skates, wrist guards, elbow pads and knee pads.
+  - Book the whole course rather than a single session, so you learn the skills in order.
+  links:
+  - label: 'Everyone Active: learn to roller skate (UK leisure centres)'
+    url: https://everyoneactive.com/content-hub/activities/learn-roller-skate
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Isle of Skating: Ultimate Beginners course, Hackney (London, adults only)'
+    url: https://isleofskating.squarespace.com/roller-skating-skills/p/hackney-ultimatebeginners-course
+    region: uk
+    checked: '2026-11-11'
+  - label: 'British Roller Sports Federation: national governing body'
+    url: https://brsf.co.uk
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Oaks Park, Portland, Oregon: roller skating classes'
+    url: https://www.oakspark.com/classes
+    region: us
+    checked: '2026-11-11'
+  seo_title: Roller skating lessons for adult beginners
+  description: What an adult beginners' roller skating course teaches, what protective gear to bring, what courses cost in the UK and US, and how to find one near you.
+  detail:
+  - h: What a beginners' course covers
+    p:
+    - Isle of Skating's six-week Ultimate Beginners course in Hackney, London, starts with setting up your skates, getting up, balancing and falling safely. It then works through stepping, the skating stride,
+      plough stops, T-starts, one-foot glides, edges and turning. No experience is needed.
+    - Everyone Active's leisure-centre courses run for about six to seven weeks, with one skill a week, from starting and stopping and gliding to cross-overs, turning, jumping and skating backwards. The
+      programme is an award scheme of five levels run with the British Roller Sports Federation, and coaches assess you as you go.
+    - Check which kind of skate a course is for. The Hackney course is for quad skates only, not inline. A beginners' class run by Atascadero Recreation in California accepted both, but inline skates with
+      a heel brake had to have the brake removed to skate indoors.
+  - h: Ways in, side by side
+    table:
+      head:
+      - Where
+      - Format
+      - Skates and gear
+      - Cost (as last listed)
+      rows:
+      - - Isle of Skating, Hackney, London
+        - Six one-hour classes, Tuesday evenings, July to August (as last listed); adults only
+        - Bring your own quad skates, wrist guards, elbow pads and knee pads
+        - £100.00
+      - - Everyone Active leisure centres, UK
+        - About six to seven weeks of one-hour sessions; five-level award scheme
+        - Skates, helmet and elbow, knee and wrist guards provided
+        - Ask your local centre
+      - - Oaks Park, Portland, Oregon
+        - Intro Adult I/II, four Saturday classes, each 25 minutes, then open skate
+        - Skate rental included
+        - $52 for a four-week course
+    after: Oaks Park's classes are taught by USA Roller Sports certified coaches. Travel Portland calls its rink the oldest American roller rink and the last in the country with live music from a Wurlitzer
+      pipe organ.
+  faq:
+  - q: Can adults learn to roller skate?
+    a: Yes. Several courses are for adults only and need no experience, such as Isle of Skating's Ultimate Beginners course in London (as last listed).
+  - q: Do I need protective gear for roller skating lessons?
+    a: Usually. The Hackney course asks you to bring wrist guards, elbow pads and knee pads, and a beginners' class run by Atascadero Recreation in California required a helmet as well. Everyone Active
+      provides a helmet and elbow, knee and wrist guards.
+  - q: Should I learn on quad skates or inline skates?
+    a: Choose the course first and check which skates it teaches. Some courses are for quad skates only; others accept both.
+  - q: How much do roller skating lessons cost?
+    a: As last listed, Isle of Skating's six-week beginners' course in Hackney was £100, and Oaks Park in Portland, Oregon, charged $52 for a four-week adult course including skate rental.
+  safety: Wear the protective gear your course asks for; the courses we found list wrist guards, elbow pads and knee pads, and some require a helmet.
+  sources:
+  - label: Isle of Skating, Hackney Ultimate Beginners course
+    url: https://isleofskating.squarespace.com/roller-skating-skills/p/hackney-ultimatebeginners-course
+    checked: '2026-11-11'
+  - label: Everyone Active, Learn to roller skate
+    url: https://everyoneactive.com/content-hub/activities/learn-roller-skate
+    checked: '2026-11-11'
+  - label: British Roller Sports Federation, Home page
+    url: https://brsf.co.uk
+    checked: '2026-11-11'
+  - label: Oaks Park, Introduction to Roller Skating
+    url: https://oakspark.com/skate-class
+    checked: '2026-11-11'
+  - label: Oaks Park, Classes
+    url: https://www.oakspark.com/classes
+    checked: '2026-11-11'
+  - label: Travel Portland, Oaks Amusement Park Roller Skating Rink
+    url: https://www.travelportland.com/directory/oaks-amusement-park-roller-skating-rink/
+    checked: '2026-11-11'
+  - label: 'Active.com, Doomsday Skate: Adult Roller Skate Beginner Skills (Atascadero Recreation)'
+    url: https://www.active.com/atascadero-ca/skating/roller-skating-classes/doomsday-skate-adult-roller-skate-beginner-skills-2026-110669326
+    checked: '2026-11-11'
+  kit:
+  - name: Wrist guards
+    why: one of the pads beginners' courses ask you to bring
+    url: https://www.amazon.co.uk/s?k=roller+skating+wrist+guards+adult
+  - name: Knee and elbow pads
+    why: also on course kit lists
+    url: https://www.amazon.co.uk/s?k=roller+skating+knee+elbow+pads+adult
+  - name: Quad roller skates
+    why: for courses where you bring your own skates
+    url: https://www.amazon.co.uk/s?k=adult+quad+roller+skates
+  related:
+  - learn-to-ice-skate
+  - learn-to-skateboard
+  - learn-contemporary-dance
+  - try-trampolining
+- id: try-trampolining
+  title: Take an adult trampolining class
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Club trampolining is a coached sport, not a bounce at a trampoline park, and adult classes teach jumps, twists and turns towards somersaults. Leisure centres in Chelmsford, Sheffield and elsewhere
+    run them weekly.
+  start:
+  - Look for an adult trampolining class at a leisure centre or gymnastics club, not a trampoline park session.
+  - Ask whether the class suits beginners and whether it follows British Gymnastics' trampoline proficiency awards (in the UK).
+  - Wear leggings or shorts and a T-shirt, bring socks, tie long hair back and take off jewellery.
+  links:
+  - label: 'Places Leisure: trampolining classes, including adults 18+ (UK)'
+    url: https://www.placesleisure.org/trampolining/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Riverside Leisure Centre, Chelmsford: adult trampolining lessons'
+    url: https://www.chelmsford.gov.uk/leisure-centres/who/adults-only-activities/adult-trampolining-lessons-at-riverside
+    region: uk
+    checked: '2026-11-11'
+  - label: 'Sheffield City Trust: adult trampolining lessons'
+    url: https://www.sheffieldcitytrust.org/sport/lessons/trampolining-lessons/adult-trampolining-lessons
+    region: uk
+    checked: '2026-11-11'
+  - label: 'USA Gymnastics: find a member club'
+    url: https://members.usagym.org/pages/find/gym.html
+    region: us
+    checked: '2026-11-11'
+  - label: 'The Circus Arts Conservatory, Sarasota: adult trampoline classes'
+    url: https://circusarts.org/trampolines
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Adult trampolining classes: what to expect'
+  description: What adult trampolining classes teach, what to wear, what they cost at UK leisure centres and US gyms, and how they differ from a trampoline park.
+  detail:
+  - h: What a class is like
+    p:
+    - Riverside Leisure Centre in Chelmsford runs one hour-and-a-half lesson a week in term time, led by qualified coaches. Adults learn jumps, twists and turns and work through British Gymnastics' trampoline
+      awards. At Hillsborough Leisure Centre in Sheffield, adults start with the basics and can progress to harder moves and somersaults.
+    - Places Leisure says its adult classes are for all levels and can be adapted for different abilities. Its centres follow the British Gymnastics Trampolining Proficiency Awards Scheme.
+    - The rules are strict and practical. You cannot go on the trampoline without socks. Remove jewellery, belts and anything else that could damage the equipment or cause injury, tie your hair back, and
+      do not take part if you feel unwell.
+  - h: Ways in, side by side
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Riverside Leisure Centre, Chelmsford
+        - One 90-minute lesson a week, term time; British Gymnastics awards
+        - £34.80 a month by Direct Debit
+      - - Hillsborough Leisure Centre, Sheffield (Sheffield City Trust)
+        - Tuesdays 7.15pm; includes gym and swim access
+        - Ask the trust; minimum 30 days by monthly Direct Debit
+      - - The Circus Arts Conservatory, Sarasota, Florida
+        - Adult Trampoline Fitness, one hour, adult beginner
+        - $30 a class
+      - - University of Maryland Gymkana, College Park
+        - Saturday adult class, trampoline and double mini trampoline, beginner to intermediate (autumn 2026 run, registration closed)
+        - Not listed
+    after: In the US, USA Gymnastics lists its member clubs, and trampoline and tumbling is one of its disciplines. It says membership does not imply endorsement, so ask each gym whether it runs adult trampoline
+      classes.
+  faq:
+  - q: Can adults do trampolining classes?
+    a: Yes. Places Leisure runs adult trampolining classes, and Riverside Leisure Centre in Chelmsford runs weekly adult lessons with qualified coaches.
+  - q: What do you wear to a trampolining class?
+    a: Leggings, shorts, a T-shirt or a leotard, with socks. Tie long hair back and take off jewellery.
+  - q: How much are adult trampolining lessons?
+    a: As last listed, Riverside Leisure Centre in Chelmsford charged £34.80 a month and The Circus Arts Conservatory in Sarasota charged $30 a class.
+  - q: Is a trampolining class different from a trampoline park?
+    a: Yes. Club classes are coached and, in the UK, often follow British Gymnastics' trampoline proficiency awards, with skills built up level by level.
+  safety: Learn in a class led by qualified coaches, follow its rules on socks, hair and jewellery, and do not take part if you feel unwell.
+  sources:
+  - label: Places Leisure, Find a trampolining class near you
+    url: https://www.placesleisure.org/trampolining/
+    checked: '2026-11-11'
+  - label: Chelmsford City Council, Adult trampolining lessons at Riverside
+    url: https://www.chelmsford.gov.uk/leisure-centres/who/adults-only-activities/adult-trampolining-lessons-at-riverside
+    checked: '2026-11-11'
+  - label: Sheffield City Trust, Adult trampolining lessons
+    url: https://www.sheffieldcitytrust.org/sport/lessons/trampolining-lessons/adult-trampolining-lessons
+    checked: '2026-11-11'
+  - label: The Circus Arts Conservatory, Trampolines
+    url: https://circusarts.org/trampolines
+    checked: '2026-11-11'
+  - label: Active.com, Saturday (10AM) Adult Trampoline (University of Maryland Gymkana)
+    url: https://www.active.com/college-park-md/tumbling/camps/saturday-10am-adult-trampoline-2026
+    checked: '2026-11-11'
+  - label: USA Gymnastics, Become a member club
+    url: https://members.usagym.org/pages/memclub/info.html
+    checked: '2026-11-11'
+  - label: USA Gymnastics, Find a member club
+    url: https://members.usagym.org/pages/find/gym.html
+    checked: '2026-11-11'
+  kit:
+  - name: Sports socks
+    why: you cannot go on the trampoline without them
+    url: https://www.amazon.co.uk/s?k=sports+socks
+  - name: Sports leggings or shorts
+    why: the kind of close-fitting clothing classes ask for
+    url: https://www.amazon.co.uk/s?k=sports+leggings
+  - name: Hair ties
+    why: classes ask you to tie long hair back
+    url: https://www.amazon.co.uk/s?k=hair+ties
+  related:
+  - try-pilates
+  - indoor-climbing
+  - learn-to-roller-skate
+  - learn-contemporary-dance
+- id: learn-taekwondo
+  title: Learn taekwondo
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Taekwondo beginners start at white belt (10th Kup) and grade up through the coloured belts to black belt (1st Dan). Gradings test technique, set patterns, self-defence and sparring. British Taekwondo
+    says black belt takes about three years.
+  start:
+  - Use the British Taekwondo club finder or USA Taekwondo's club locator, then ask clubs about beginners' classes and a free trial.
+  - Wear ordinary sports clothes to your first class; you train barefoot, so avoid trousers long enough to tread on.
+  - Ask what the monthly fee covers and what is extra, such as a licence or membership, the uniform (dobok) and grading fees.
+  links:
+  - label: 'British Taekwondo: find a club'
+    url: https://www.britishtaekwondo.org.uk/find-a-club/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'British Taekwondo: join (membership and insurance)'
+    url: https://www.britishtaekwondo.org.uk/join-british-taekwondo/
+    region: uk
+    checked: '2026-11-11'
+  - label: 'USA Taekwondo: how to find a taekwondo school'
+    url: https://www.usatkd.org/v2-getting-started-in-taekwondo/how-to-find-a-taekwondo-school
+    region: us
+    checked: '2026-11-11'
+  - label: 'Cameron Park, California: Teen/Adult White Belt classes'
+    url: https://www.cameronpark.org/cameron-park-taekwondo
+    region: us
+    checked: '2026-11-11'
+  seo_title: 'Taekwondo for adult beginners: belts, costs, first class'
+  description: How taekwondo belts and gradings work, what a first class is like, and what adult beginners pay at real clubs in the UK and US, with club finders.
+  detail:
+  - h: Belts, gradings and your first class
+    p:
+    - New students start at 10th Kup, the white belt, and work up to 1st Kup; black belt is 1st Dan. British Taekwondo says Kup gradings usually come round about every three months in a club and test basic
+      technique, poomsae (set patterns), self-defence and sparring. It puts the time from beginner to black belt at about three years.
+    - At TTA Taekwondo London's adults-only Barbican club, beginners can book a free trial lesson. Any sports clothing will do, such as tracksuit bottoms or shorts with a T-shirt, and classes are barefoot.
+      If you join, the club arranges your dobok (uniform).
+    - British Taekwondo says most newcomers will find a martial-art-based club, focusing on fitness, confidence and self-defence. Some clubs specialise in the combat sport, and many offer poomsae, which
+      are non-contact. Not every club belongs to British Taekwondo; TTA's Barbican club, for example, is part of the Traditional Taekwondo Association, so ask which body a club grades and insures you with.
+  - h: What adult beginners pay
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - British Taekwondo membership, UK
+        - Twelve months; includes insurance for training and competition and access to gradings
+        - £31 (regular member, all ages), plus any club fees
+      - - TTA Taekwondo London, Barbican
+        - Adults only; Tuesday and Thursday evenings; free trial lessons
+        - £55 a month for beginners (£60 standard), plus annual licence, dobok and grading fees
+      - - Marshalltown Parks and Recreation, Iowa
+        - Beginner class (white and yellow belts), Tuesday and Thursday evenings; no uniform needed; follows USA Taekwondo guidelines
+        - $45 (sessions run about five weeks)
+      - - Cameron Park Community Services District, California
+        - Teen/Adult White Belt, Tuesday and Thursday evenings, about nine weeks
+        - $129.50
+    after: USA Taekwondo says its coaches and members must complete SafeSport training and background screening, and that many clubs run programmes for all ages, from children to adults.
+  faq:
+  - q: How long does it take to get a black belt in taekwondo?
+    a: British Taekwondo says it can take about three years of training from beginner to black belt, with coloured-belt gradings usually about every three months.
+  - q: What should I wear to my first taekwondo class?
+    a: Ordinary sports clothes such as tracksuit bottoms or shorts and a T-shirt. You train barefoot, and clubs arrange a dobok (uniform) once you join.
+  - q: How much do taekwondo classes cost?
+    a: As last listed, TTA Taekwondo London charged beginners £55 a month plus licence, uniform and grading fees, and British Taekwondo membership was £31 a year. In the US, Cameron Park in California charged
+      $129.50 for a nine-week adult white-belt session.
+  - q: What is the difference between taekwondo and karate?
+    a: Each has its own grades and set patterns; taekwondo gradings test basic technique, poomsae (patterns), self-defence and sparring. Many clubs offer a free trial, so try a class of each if you are
+      choosing between them.
+  sources:
+  - label: British Taekwondo, Find a Club
+    url: https://www.britishtaekwondo.org.uk/find-a-club/
+    checked: '2026-11-11'
+  - label: British Taekwondo, Join British Taekwondo
+    url: https://www.britishtaekwondo.org.uk/join-british-taekwondo/
+    checked: '2026-11-11'
+  - label: British Taekwondo, Belts and promotion
+    url: https://www.britishtaekwondo.org.uk/martial-art-gradings/
+    checked: '2026-11-11'
+  - label: TTA Taekwondo London, Barbican
+    url: https://taekwondo-london.squarespace.com/barbican
+    checked: '2026-11-11'
+  - label: USA Taekwondo, How to find a taekwondo school
+    url: https://www.usatkd.org/v2-getting-started-in-taekwondo/how-to-find-a-taekwondo-school
+    checked: '2026-11-11'
+  - label: City of Marshalltown, Taekwondo
+    url: https://marshalltown-ia.gov/638/Taekwondo
+    checked: '2026-11-11'
+  - label: Cameron Park Community Services District, Cameron Park Taekwondo
+    url: https://www.cameronpark.org/cameron-park-taekwondo
+    checked: '2026-11-11'
+  kit:
+  - name: Taekwondo dobok
+    why: the uniform worn once you join a club
+    url: https://www.amazon.co.uk/s?k=taekwondo+dobok
+  - name: Martial arts kit bag
+    why: for carrying your dobok and water to class
+    url: https://www.amazon.co.uk/s?k=martial+arts+kit+bag
+  related:
+  - learn-karate
+  - learn-judo
+  - learn-tai-chi-form
+  - try-trampolining
