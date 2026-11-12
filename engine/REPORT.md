@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-12)
 
-76 sources, 85 statements, 12 event profiles. Core 61, supported 24, thin 0, contested 0.
+78 sources, 85 statements, 12 event profiles. Core 62, supported 23, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -78,6 +78,8 @@
 - Wales Coast Path (official site, Natural Resources Wales), *Wales Coast Path Safety Advice (undated page; year is the year opened)* (2026). Opened 2026-11-10.
 - Pacific Crest Trail Association, *Safety advice for the Pacific Crest Trail (undated page; year is the year opened)* (2026). Opened 2026-11-10.
 - USDA Forest Service, Gifford Pinchot National Forest, *Mount St. Helens Climbing Safety (last updated 1 May 2025)* (2025). Opened 2026-11-12.
+- National Oceanic and Atmospheric Administration (NOAA), JetStream, *Rip Current Safety (last updated 11 July 2023)* (2023). Opened 2026-11-12.
+- American Red Cross, *Beach and Ocean Safety (undated page; year is the year opened)* (2026). Opened 2026-11-12.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -121,6 +123,7 @@
 | core | 9 | on the day | Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
 | core | 9 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water, barwood-2024, oss-cold-water |
 | core | 9 | on the day | Your body temperature can keep falling for a while after you get out of cold water (afterdrop), so dry off and get into warm, windproof clothes and a hat as soon as you are out, and move about to make heat. After a short swim a warm shower is enough; avoid very hot water, and do not hold a hot water bottle against numb skin, which burns easily. | oss-cold-water, rlss-safer-open-water, knechtle-2020 |
+| core | 9 | on the day | In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. | rnli-rip-currents, noaa-rip-safety, redcross-beach-safety |
 | core | 8 | warning signs | In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). | nhs-hypothermia, ms-hypothermia |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
@@ -174,7 +177,6 @@
 | supported | 3 | key session | For a first half marathon, think of the long run in minutes rather than miles, at an easy pace, building to about 80 minutes by two weeks before the race. | greatrun-half-plan |
 | supported | 3 | key session | For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60. | greatrun-10k-plans |
 | supported | 3 | before you start | If you are new to running, give yourself 8 to 12 weeks to get ready for a 10k rather than 6, and if time is short use a run-walk approach. | greatrun-10k-how-long, greatrun-10k-plans |
-| supported | 3 | on the day | In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. | rnli-rip-currents |
 | supported | 3 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water |
 | supported | 3 | key session | With three days a week, swim once or twice working on technique, ride once at a steady pace and run twice, one easy and one a little faster. Regular sessions of 30 to 45 minutes are enough to start, rather than long, hard ones. | tri-ireland-first |
 | supported | 3 | on the day | Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast. | usat-brick |

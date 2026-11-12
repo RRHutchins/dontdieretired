@@ -158,7 +158,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. [24, 25, 32, 33, 34]
 - Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. [22, 33, 39]
 - If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. [32, 33]
-- In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. [40]
+- In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. [40, 41, 42]
 
 ## Where this comes from
 
@@ -204,3 +204,5 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 38. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
 39. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
 40. RNLI (Royal National Lifeboat Institution), *Rip currents (undated page; year is the year opened)* (2026). Tier 3. https://rnli.org/safety/know-the-risks/rip-currents (opened 2026-11-09)
+41. National Oceanic and Atmospheric Administration (NOAA), JetStream, *Rip Current Safety (last updated 11 July 2023)* (2023). Tier 3. https://noaa.gov/jetstream/ocean/rip-currents/rip-current-safety (opened 2026-11-12)
+42. American Red Cross, *Beach and Ocean Safety (undated page; year is the year opened)* (2026). Tier 3. https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/water-safety/beach-safety.html (opened 2026-11-12)

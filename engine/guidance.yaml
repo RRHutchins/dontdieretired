@@ -499,7 +499,7 @@ guidance:
     events: [open-water-mile]
     use: safety
     text: In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help.
-    for: [rnli-rip-currents]
+    for: [rnli-rip-currents, noaa-rip-safety, redcross-beach-safety]
   - id: why-specific-swim
     topic: why
     role: specific
