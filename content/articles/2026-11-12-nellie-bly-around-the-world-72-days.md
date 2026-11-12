@@ -7,6 +7,9 @@ tags: [travel, journalism, history, jules-verne, new-york, women, usa]
 segments: [learner, changer]
 level: any
 art: rails
+photo_file: "File:Nellie Bly Reception 1890.jpg"
+photo_caption: "The reception for Nellie Bly at Jersey City on the completion of her journey, as Frank Leslie's Illustrated Newspaper pictured it in February 1890, from sketches by C. Bunnell; the insets show her being presented with a golden globe and arriving in Philadelphia."
+photo_alt: "A black-and-white engraving of a crowded station hall where men in top hats press round a woman in a long coat, with small inset pictures of a presentation and of a train arriving among running figures."
 hook: "A reporter, a satchel 16 inches wide, and 25,000 miles by steamship, train and rickshaw to beat a fictional record."
 lesson: "Travelling light is a decision about what matters; Nellie Bly packed for speed and left the rest behind."
 standfirst: "In November 1889 a New York reporter set out to beat Phileas Fogg's fictional 80 days. A rival magazine sent a second woman the other way the same afternoon, and nobody told her."
