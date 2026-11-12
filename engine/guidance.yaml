@@ -118,7 +118,7 @@ guidance:
     applies: [all]
     use: advice
     text: Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third.
-    for: [sherrington-2019, who-falls]
+    for: [sherrington-2019, who-falls, nhs-falls, cdc-falls-prevention]
   - id: sleep-routine
     topic: recovery
     applies: [endurance]
@@ -197,7 +197,8 @@ guidance:
     applies: [hill]
     use: safety
     text: Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys.
-    for: [ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits]
+    for: [ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits, usfs-msh-climbing-safety]
+    note: The Forest Service's Mount St. Helens climbing safety page (2025) backs checking the forecast and turning back; it does not cover the other points.
   - id: storms-off-summit-early
     topic: on the day
     applies: [hill]
