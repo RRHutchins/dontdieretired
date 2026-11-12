@@ -8,6 +8,9 @@ segments: [restarter, learner]
 level: starter
 subject_age: 57
 art: fields
+photo_file: "File:Scioto Grove - Archery Range Target 1.jpg"
+photo_caption: "A target stand on the public archery range at Scioto Grove Metro Park, Ohio. The picture is not of the Abu Dhabi competition."
+photo_alt: "A wooden stand holding two white foam target boards marked with blue tape crosses, on mown grass with trees and a grassy bank behind under a blue sky."
 hook: "Her son coached her. Three years after first picking up a bow, Sarvjeet Kaur won gold in Abu Dhabi."
 lesson: "A new sport can start with one suggestion and one patient teacher, and the people you meet on the way are half the reward."
 standfirst: "Sarvjeet Kaur, 57, from India, won gold and bronze in compound archery at the Open Masters Games in Abu Dhabi in February. She had been shooting for about three years, coached by her son Jai Singh, an archer who competes for a living."
