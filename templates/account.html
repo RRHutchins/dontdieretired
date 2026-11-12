@@ -55,6 +55,13 @@
     <p>Signed in as <strong data-acct-email></strong>.</p>
     <p data-acct-keep>Your list and plans are kept with your account, so they are the same on every device where you sign in. Changes on one device reach the others the next time you open the site there.</p>
     <p class="meta" data-acct-sync role="status"></p>
+    <div class="acct-other" data-acct-first hidden tabindex="-1" role="group" aria-labelledby="acct-first-h">
+      <h3 id="acct-first-h" class="h4">Add this browser's list to your account?</h3>
+      <p>The list in this browser (<span data-acct-first-n></span>) is not kept on any account yet. Add it to the account for <strong data-acct-first-email></strong>?</p>
+      <p><button type="button" class="btn btn-small" data-acct-first-add>Add it to my account</button></p>
+      <p><button type="button" class="btn btn-ghost btn-small" data-acct-first-no>This is not my account: sign out</button></p>
+      <p class="meta">Signing out leaves the list in this browser as it is.</p>
+    </div>
     <div class="acct-other" data-acct-other hidden tabindex="-1" role="group" aria-labelledby="acct-other-h">
       <h3 id="acct-other-h" class="h4">This browser has a list from a different account</h3>
       <p>Someone else may have used this browser with their own account. Anything they saved while signed in with Planner Plus is kept on their account. What would you like here?</p>

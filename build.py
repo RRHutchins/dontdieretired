@@ -590,6 +590,10 @@ def build(make_social=True):
     _acct = (os.environ.get("DDR_ACCOUNTS_API") or str((cfg.get("accounts") or {}).get("api") or "")).rstrip("/")
     assert _acct == "" or re.match(r"^(https://[a-z0-9.-]+|http://(localhost|127\.0\.0\.1):\d+)$", _acct), f"accounts.api must be an https origin: {_acct!r}"
     env.globals.update(accounts_api=_acct)
+    # Day 20 security review: an ad network's script runs as the site itself, and the accounts Worker trusts the site's origin,
+    # so a bad ad could read a signed-in member's email or unused gift codes. Ads and accounts together need the account
+    # pages moved to their own origin with a strict Content-Security-Policy first (RUNBOOK §6t, day 20 log).
+    assert not (_acct and (cfg.get("ads") or {}).get("enabled") is True), "ads.enabled with accounts.api: move the account pages to their own origin first (RUNBOOK §6t day 20)"
     # Planner Plus paywall (RUNBOOK §6t day 15): off until launch day; it needs accounts, as membership lives there
     _paywall = os.environ.get("DDR_PLUS_PAYWALL") == "1" or (cfg.get("plus") or {}).get("paywall") is True
     assert not _paywall or _acct, "plus.paywall needs accounts.api: membership is kept on the account"

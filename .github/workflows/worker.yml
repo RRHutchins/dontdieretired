@@ -73,8 +73,12 @@ jobs:
           sed -i "s/00000000-0000-0000-0000-000000000000/$D1_DATABASE_ID/" wrangler.toml
           npx --yes wrangler@3.114.0 d1 migrations apply ddr-accounts --remote
           npx --yes wrangler@3.114.0 deploy
-          # SALT only keys the abuse counters, so a fresh one on each deploy is harmless and never needs storing
-          openssl rand -hex 32 | npx --yes wrangler@3.114.0 secret put SALT
+          # SALT keys the abuse counters (sign-in, gift-code and calendar limits). Made once, only when missing (review, day 20:
+          # a fresh one on every deploy reset every limit). If the list cannot be read at all, a new one is made, which is
+          # harmless: the counts just restart. The Worker answers 503 until SALT exists, so it must never be skipped.
+          secrets=$(npx --yes wrangler@3.114.0 secret list --format json) || secrets="[]"
+          has=$(printf '%s' "$secrets" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{let a=[];try{a=JSON.parse(s)}catch(e){console.log("unknown");return}console.log(Array.isArray(a)&&a.some(x=>x&&x.name==="SALT")?"yes":(Array.isArray(a)?"no":"unknown"))})')
+          if [ "$has" = "no" ]; then openssl rand -hex 32 | tr -d '\n' | npx --yes wrangler@3.114.0 secret put SALT; echo "SALT made"; fi
           printf '%s' "$RESEND_API_KEY" | npx --yes wrangler@3.114.0 secret put RESEND_API_KEY
       - if: steps.ready.outputs.go == 'yes' && steps.ready.outputs.stripe == 'yes'
         working-directory: worker

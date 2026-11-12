@@ -11,7 +11,7 @@
 // Secrets: GIFT_KEY (64 hex characters; made once by the deploy workflow and never changed, or unused codes could no
 // longer be shown, though they would still redeem). Gifts are on sale only with payments set up and GIFT_KEY present.
 
-import { stripe, payReady, keyMode, priceId, customerFor, membership } from './plus.js';
+import { stripe, payReady, keyMode, modeNow, priceId, customerFor, membership } from './plus.js';
 
 export const ALPHABET = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';   // no 0/O, 1/I/L: easy to read off a card and type
 export const CODE_LEN = 16;
@@ -115,8 +115,8 @@ export async function fromCheckout(env, csId) {
   }
   const buyer = typeof md.user_id === 'string' && (await env.DB.prepare(`SELECT id FROM users WHERE id = ?`).bind(md.user_id).first());
   const id = crypto.randomUUID(), code = newCode();
-  await env.DB.prepare(`INSERT INTO gifts (id, code_hash, code_box, checkout, payment_intent, buyer_id, status, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(checkout) DO NOTHING`)
-    .bind(id, await sha256(code), buyer && status === 'paid' ? await seal(env, id, code) : null, cs.id, pi, buyer ? buyer.id : null, status, now()).run();
+  await env.DB.prepare(`INSERT INTO gifts (id, code_hash, code_box, checkout, payment_intent, buyer_id, status, created, mode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(checkout) DO NOTHING`)
+    .bind(id, await sha256(code), buyer && status === 'paid' ? await seal(env, id, code) : null, cs.id, pi, buyer ? buyer.id : null, status, now(), cs.livemode ? 'live' : 'test').run();
   if (!buyer) console.warn('gift paid for an account that has since been deleted: refund it in Stripe', cs.id);
   return true;
 }
@@ -149,7 +149,7 @@ export async function fromDispute(env, disputeId) {
 
 // POST /gift/mine: the gifts this account has bought, newest first, with the code while it is unused.
 export async function mine(env, s, h) {
-  const rows = (await env.DB.prepare(`SELECT id, code_box, status, created, redeemed_at FROM gifts WHERE buyer_id = ? ORDER BY created DESC, rowid DESC LIMIT ?`).bind(s.id, LIMIT_GIFTS_LISTED).all()).results || [];
+  const rows = (await env.DB.prepare(`SELECT id, code_box, status, created, redeemed_at FROM gifts WHERE buyer_id = ? AND mode = ? ORDER BY created DESC, rowid DESC LIMIT ?`).bind(s.id, modeNow(env), LIMIT_GIFTS_LISTED).all()).results || [];
   const out = [];
   for (const g of rows) {
     const code = g.status === 'paid' && giftReady(env) ? await open(env, g.id, g.code_box) : null;
@@ -165,14 +165,15 @@ export async function redeem(env, req, s, body, h) {
   if (await h.over(env, 'redeem-net', h.netKey(req.headers.get('cf-connecting-ip')), LIMIT_REDEEM_NET)) return h.json(env, { error: 'slow down' }, 429);
   const code = normCode(body.code);
   if (!code) return h.json(env, { error: 'code' }, 400);
-  const g = await env.DB.prepare(`SELECT id, status FROM gifts WHERE code_hash = ?`).bind(await sha256(code)).first();
+  // a code bought in the other Stripe mode (a test-card gift, once the key is live) is as good as no code (review, day 20)
+  const g = await env.DB.prepare(`SELECT id, status, mode FROM gifts WHERE code_hash = ? AND mode = ?`).bind(await sha256(code), modeNow(env)).first();
   if (!g) return h.json(env, { error: 'code' }, 404);
   if (g.status === 'redeemed') return h.json(env, { error: 'used' }, 409);
   if (g.status !== 'paid') return h.json(env, { error: 'void' }, 410);   // refunded or disputed
   // when does the year start? Now, unless Plus already runs to a known end: then from that end, so nothing is lost.
   // A subscription that renews would bill on top of the gift, so the member is asked to stop its renewal first.
   const t = now();
-  const rows = (await env.DB.prepare(`SELECT subscription, status, plan, period_end, cancel_at_end FROM memberships WHERE user_id = ?`).bind(s.id).all()).results || [];
+  const rows = (await env.DB.prepare(`SELECT subscription, status, plan, period_end, cancel_at_end FROM memberships WHERE user_id = ? AND mode = ?`).bind(s.id, g.mode).all()).results || [];
   let start = t;
   for (const m of rows) {
     const gift = m.plan === 'gift';
@@ -186,8 +187,8 @@ export async function redeem(env, req, s, body, h) {
   // else a moment earlier gives this account nothing (the INSERT only runs if this account is the one recorded)
   await env.DB.batch([
     env.DB.prepare(`UPDATE gifts SET status = 'redeemed', redeemed_by = ?, redeemed_at = ?, code_box = NULL WHERE id = ? AND status = 'paid'`).bind(s.id, t, g.id),
-    env.DB.prepare(`INSERT OR IGNORE INTO memberships (subscription, user_id, status, plan, period_end, cancel_at_end, updated)
-      SELECT 'gift_' || id, ?, 'active', 'gift', ?, 1, ? FROM gifts WHERE id = ? AND redeemed_by = ? AND redeemed_at = ? AND status = 'redeemed'`).bind(s.id, until, t, g.id, s.id, t),
+    env.DB.prepare(`INSERT OR IGNORE INTO memberships (subscription, user_id, status, plan, period_end, cancel_at_end, updated, mode)
+      SELECT 'gift_' || id, ?, 'active', 'gift', ?, 1, ?, mode FROM gifts WHERE id = ? AND redeemed_by = ? AND redeemed_at = ? AND status = 'redeemed'`).bind(s.id, until, t, g.id, s.id, t),
   ]);
   const won = await env.DB.prepare(`SELECT period_end FROM memberships WHERE subscription = ? AND user_id = ?`).bind('gift_' + g.id, s.id).first();
   if (!won) return h.json(env, { error: 'used' }, 409);

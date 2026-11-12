@@ -38,6 +38,10 @@ export function keyMode(env) {
   return null;
 }
 export const payReady = env => !!keyMode(env) && /^whsec_/.test(String(env.STRIPE_WEBHOOK_SECRET || ''));
+// Day 20 (review): memberships, gifts and the account's Stripe customer each record the mode they were made in, and only
+// those of the key's current mode count. With no usable key nothing counts ('none' matches no row).
+export const modeNow = env => keyMode(env) || 'none';
+const modeOf = o => (o && o.livemode ? 'live' : 'test');
 
 // Stripe's API takes form-encoded bodies with nested keys: a[b][0]=c
 export function form(obj, prefix = '', out = []) {
@@ -117,7 +121,7 @@ async function portalConfig(env) {
 // tie, as it is the one that carries on). A gift (day 16, plan "gift", never renews) gives Plus until its end.
 export function liveRow(m, t = now()) { return m.plan === 'gift' ? m.status === 'active' && (m.period_end || 0) > t : MEMBER.has(m.status); }
 export async function membership(env, userId) {
-  const rows = (await env.DB.prepare(`SELECT subscription, status, plan, period_end, cancel_at_end FROM memberships WHERE user_id = ?`).bind(userId).all()).results || [];
+  const rows = (await env.DB.prepare(`SELECT subscription, status, plan, period_end, cancel_at_end FROM memberships WHERE user_id = ? AND mode = ?`).bind(userId, modeNow(env)).all()).results || [];
   const t = now();
   rows.sort((a, b) => (liveRow(b, t) - liveRow(a, t)) || ((b.period_end || 0) - (a.period_end || 0)) || ((a.plan === 'gift') - (b.plan === 'gift')));
   const m = rows[0];
@@ -145,7 +149,8 @@ async function syncSubscription(env, subId, hintUser) {
     // subscription's metadata, both set by the Worker), and is linked only if it has no other customer yet
     for (const id of [hintUser, sub.metadata && sub.metadata.user_id]) {
       if (typeof id !== 'string' || !id) continue;
-      const u = await env.DB.prepare(`UPDATE users SET stripe_customer = ? WHERE id = ? AND (stripe_customer IS NULL OR stripe_customer = ?) RETURNING id`).bind(customer, id, customer).first();
+      // an empty slot, or one holding a customer from the other mode (test, after the switch to live)
+      const u = await env.DB.prepare(`UPDATE users SET stripe_customer = ?, stripe_mode = ? WHERE id = ? AND (stripe_customer IS NULL OR stripe_customer = ? OR COALESCE(stripe_mode, 'test') != ?) RETURNING id`).bind(customer, modeOf(sub), id, customer, modeOf(sub)).first();
       if (u) { user = u; break; }
     }
   }
@@ -163,16 +168,22 @@ async function syncSubscription(env, subId, hintUser) {
   const lk = item && item.price && item.price.lookup_key;
   const end = (item && item.current_period_end) || sub.current_period_end || null;
   const ending = sub.cancel_at_period_end || !!sub.cancel_at;
-  await env.DB.prepare(`INSERT INTO memberships (subscription, user_id, status, plan, period_end, cancel_at_end, updated) VALUES (?, ?, ?, ?, ?, ?, ?)
-    ON CONFLICT(subscription) DO UPDATE SET user_id = excluded.user_id, status = excluded.status, plan = excluded.plan, period_end = excluded.period_end, cancel_at_end = excluded.cancel_at_end, updated = excluded.updated
+  // backstop (review, day 20): two subscriptions for one account should now be impossible; if it ever happens, say so in
+  // the log so Robin can refund one by hand (the member would otherwise pay twice)
+  if (MEMBER.has(sub.status)) {
+    const other = await env.DB.prepare(`SELECT subscription FROM memberships WHERE user_id = ? AND plan IN ('month', 'year') AND mode = ? AND subscription != ? AND status IN ('active', 'trialing', 'past_due') LIMIT 1`).bind(user.id, modeOf(sub), sub.id).first();
+    if (other) console.error('two live subscriptions for one account: refund one by hand in Stripe', sub.id, other.subscription);
+  }
+  await env.DB.prepare(`INSERT INTO memberships (subscription, user_id, status, plan, period_end, cancel_at_end, updated, mode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    ON CONFLICT(subscription) DO UPDATE SET user_id = excluded.user_id, status = excluded.status, plan = excluded.plan, period_end = excluded.period_end, cancel_at_end = excluded.cancel_at_end, updated = excluded.updated, mode = excluded.mode
     WHERE memberships.status NOT IN ('canceled', 'incomplete_expired')`)   // a slower read of an earlier state never undoes an ending
-    .bind(sub.id, user.id, String(sub.status || 'unknown').slice(0, 32), PLAN_OF[lk] || null, end, ending ? 1 : 0, now()).run();
+    .bind(sub.id, user.id, String(sub.status || 'unknown').slice(0, 32), PLAN_OF[lk] || null, end, ending ? 1 : 0, now(), modeOf(sub)).run();
   // Day 16 (review): a subscription that will renew while a gift still covers the member (they pressed "Renew" in the
   // portal after redeeming a gift behind it, or paid in another tab while redeeming) would charge for time the gift
   // already gives. Push its next payment to the gift's end instead (a trial, no proration): never two payments for one
   // stretch of time.
   if (MEMBER.has(sub.status) && !ending && end) {
-    const g = await env.DB.prepare(`SELECT MAX(period_end) AS until FROM memberships WHERE user_id = ? AND plan = 'gift' AND status = 'active' AND period_end > ?`).bind(user.id, now()).first();
+    const g = await env.DB.prepare(`SELECT MAX(period_end) AS until FROM memberships WHERE user_id = ? AND plan = 'gift' AND status = 'active' AND period_end > ? AND mode = ?`).bind(user.id, now(), modeOf(sub)).first();
     const until = g && g.until;
     if (until && until > end + 86400 && until - now() >= TRIAL_MIN && until - now() <= TRIAL_MAX) {
       const x = await stripe(env, 'POST', 'subscriptions/' + sub.id, { trial_end: until, proration_behavior: 'none' }, 'ddr-gift-trial-' + sub.id + '-' + until);
@@ -224,14 +235,16 @@ export async function webhook(env, req, h) {
 // account sits under the same customer (two tabs cannot make two). The idempotency key makes a repeat of the same
 // request return the same customer.
 export async function customerFor(env, s) {
-  const u = await env.DB.prepare(`SELECT stripe_customer FROM users WHERE id = ?`).bind(s.id).first();
+  const mode = modeNow(env);
+  const u = await env.DB.prepare(`SELECT stripe_customer, stripe_mode FROM users WHERE id = ?`).bind(s.id).first();
   if (!u) return null;
-  if (u.stripe_customer) return u.stripe_customer;
-  const c = await stripe(env, 'POST', 'customers', { email: s.email, metadata: { user_id: s.id, site: env.SITE_ORIGIN } }, 'ddr-customer-' + s.id);
+  if (u.stripe_customer && (u.stripe_mode || 'test') === mode) return u.stripe_customer;
+  // none yet, or one made in the other mode (a test customer does not exist in live mode): make one for this mode
+  const c = await stripe(env, 'POST', 'customers', { email: s.email, metadata: { user_id: s.id, site: env.SITE_ORIGIN } }, 'ddr-customer-' + (mode === 'live' ? 'live-' : '') + s.id);
   if (!c.ok || !c.data || !/^cus_\w+$/.test(String(c.data.id))) return null;
-  await env.DB.prepare(`UPDATE users SET stripe_customer = ? WHERE id = ? AND stripe_customer IS NULL`).bind(c.data.id, s.id).run();
-  const again = await env.DB.prepare(`SELECT stripe_customer FROM users WHERE id = ?`).bind(s.id).first();
-  return again && again.stripe_customer;
+  await env.DB.prepare(`UPDATE users SET stripe_customer = ?, stripe_mode = ? WHERE id = ? AND (stripe_customer IS NULL OR COALESCE(stripe_mode, 'test') != ?)`).bind(c.data.id, mode, s.id, mode).run();
+  const again = await env.DB.prepare(`SELECT stripe_customer, stripe_mode FROM users WHERE id = ?`).bind(s.id).first();
+  return again && (again.stripe_mode || 'test') === mode ? again.stripe_customer : null;
 }
 
 // POST /plus/checkout {plan: "month" | "year"}: a signed-in account starts paying on Stripe's own page.
@@ -258,6 +271,16 @@ export async function checkout(env, s, body, h) {
   if (!open.ok || !open.data || !Array.isArray(open.data.data)) return h.json(env, { error: 'stripe' }, 502);
   const live = open.data.data.filter(x => MEMBER.has(x.status) || x.status === 'incomplete');
   if (live.length) { for (const x of live) await syncSubscription(env, x.id, s.id); return h.json(env, { error: 'already' }, 409); }
+  // review, day 20: a payment page for a plan left open in another tab (or monthly opened, then yearly) could be paid as
+  // well as this one, making two subscriptions. Close any still open first, so only the newest page can take a payment.
+  // Gift pages (mode "payment") are left alone: buying a gift and a plan together is fine.
+  const pages = await stripe(env, 'GET', 'checkout/sessions', { customer, status: 'open', limit: 100 });
+  if (!pages.ok || !pages.data || !Array.isArray(pages.data.data)) return h.json(env, { error: 'stripe' }, 502);
+  for (const cs of pages.data.data) {
+    if (cs.mode !== 'subscription' || !/^cs_\w+$/.test(String(cs.id))) continue;
+    const x = await stripe(env, 'POST', 'checkout/sessions/' + cs.id + '/expire');
+    if (!x.ok && x.status !== 400 && x.status !== 404) return h.json(env, { error: 'stripe' }, 502);   // 400: it closed meanwhile
+  }
   const site = env.SITE_ORIGIN;
   const r = await stripe(env, 'POST', 'checkout/sessions', {
     mode: 'subscription',
@@ -279,8 +302,8 @@ export async function checkout(env, s, body, h) {
 export async function portal(env, s, h) {
   if (!payReady(env)) return h.json(env, { error: 'payments closed' }, 503);
   if (await h.over(env, 'pay', s.id, LIMIT_PAY_HOUR)) return h.json(env, { error: 'slow down' }, 429);
-  const u = await env.DB.prepare(`SELECT stripe_customer FROM users WHERE id = ?`).bind(s.id).first();
-  if (!u || !u.stripe_customer) return h.json(env, { error: 'no subscription' }, 404);
+  const u = await env.DB.prepare(`SELECT stripe_customer, stripe_mode FROM users WHERE id = ?`).bind(s.id).first();
+  if (!u || !u.stripe_customer || (u.stripe_mode || 'test') !== modeNow(env)) return h.json(env, { error: 'no subscription' }, 404);
   const conf = await portalConfig(env);
   const r = await stripe(env, 'POST', 'billing_portal/sessions', { customer: u.stripe_customer, return_url: `${env.SITE_ORIGIN}/account/`, ...(conf ? { configuration: conf } : {}) });
   const url = r.ok && r.data && r.data.url;
@@ -293,10 +316,12 @@ export async function portal(env, s, h) {
 // longer holds the address as our customer (its payment records stay with Stripe). false if Stripe could not be
 // reached: the account is then kept, and the member is asked to try again.
 export async function endSubscriptions(env, userId) {
-  const u = await env.DB.prepare(`SELECT stripe_customer FROM users WHERE id = ?`).bind(userId).first();
+  const u = await env.DB.prepare(`SELECT stripe_customer, stripe_mode FROM users WHERE id = ?`).bind(userId).first();
   const customer = u && u.stripe_customer;
   if (!customer) return true;
   if (!keyMode(env)) return false;
+  // a test-mode customer once the key is live: nothing real to end, and the live key cannot reach it (review, day 20)
+  if ((u.stripe_mode || 'test') === 'test' && keyMode(env) === 'live') return true;
   const open = await stripe(env, 'GET', 'checkout/sessions', { customer, status: 'open', limit: 100 });
   if (!open.ok || !open.data || !Array.isArray(open.data.data)) return false;
   for (const cs of open.data.data) {
@@ -305,5 +330,8 @@ export async function endSubscriptions(env, userId) {
     if (!x.ok && x.status !== 400 && x.status !== 404) return false;   // 400: it closed in the meantime
   }
   const d = await stripe(env, 'DELETE', 'customers/' + customer);
-  return d.ok || d.status === 404;
+  if (!(d.ok || d.status === 404)) return false;
+  // forget it at once, so a failure later in the deletion cannot leave a customer id that no longer exists (review, day 20)
+  await env.DB.prepare(`UPDATE users SET stripe_customer = NULL, stripe_mode = NULL WHERE id = ? AND stripe_customer = ?`).bind(userId, customer).run();
+  return true;
 }

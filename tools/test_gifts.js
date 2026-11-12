@@ -358,5 +358,21 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) { return `
     await hook(e, evt('customer.subscription.updated', { id: 'sub_rn', object: 'subscription' }));
     assert.strictEqual(calls.filter(c => c.method === 'POST' && c.url.includes('subscriptions/')).length, before);
   });
+  await t('review day 20: a gift bought with a test card cannot be used, or seen, once the key is live', async () => {
+    const e = env(), a = await login(e, 'testbuyer@example.com'), b = await login(e, 'testtaker@example.com');
+    const g = await buy(e, a);
+    assert.strictEqual(e.DB.raw.prepare('SELECT mode FROM gifts').get().mode, 'test');
+    e.STRIPE_SECRET_KEY = 'sk_live_abc'; e.STRIPE_LIVE = '1'; P.clearCache();
+    assert.strictEqual((await redeem(e, b, g.code)).status, 404, 'as good as no code');
+    assert.strictEqual((await me(e, b.cookie)).plus.member, false);
+    const mine = await (await post(e, '/gift/mine', {}, { cookie: a.cookie })).json();
+    assert.deepStrictEqual(mine.gifts, [], 'test gifts are not listed in live mode');
+    // and the other way round: a test gift redeemed in test mode gives nothing in live mode
+    const e2 = env(), c = await login(e2, 'early@example.com'), d = await login(e2, 'early2@example.com');
+    const g2 = await buy(e2, c); assert.strictEqual((await redeem(e2, d, g2.code)).status, 200);
+    assert.strictEqual((await me(e2, d.cookie)).plus.member, true);
+    e2.STRIPE_SECRET_KEY = 'sk_live_abc'; e2.STRIPE_LIVE = '1'; P.clearCache();
+    assert.strictEqual((await me(e2, d.cookie)).plus.member, false, 'a test-mode gift year is not a real one');
+  });
   console.log(`\n${n} tests passed`);
 })().catch(e => { console.error(e); process.exit(1); });

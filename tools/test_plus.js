@@ -39,7 +39,7 @@ globalThis.fetch = async (url, init = {}) => {
   }
   if (p === 'subscriptions' && method === 'GET') return reply({ object: 'list', data: Object.values(S.subs).filter(x => x.customer === u.searchParams.get('customer')) });
   if (p === 'checkout/sessions' && method === 'POST') {
-    const id = 'cs_test_' + (++S.n); S.sessions[id] = { id, status: 'open', customer: parseForm(init.body).customer };
+    const f = parseForm(init.body), id = 'cs_test_' + (++S.n); S.sessions[id] = { id, status: 'open', customer: f.customer, mode: f.mode };
     return reply({ id, url: 'https://checkout.stripe.com/c/pay/' + id });
   }
   if (p === 'checkout/sessions' && method === 'GET') return reply({ object: 'list', data: Object.values(S.sessions).filter(x => x.customer === u.searchParams.get('customer') && x.status === 'open') });
@@ -435,6 +435,52 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       assert.strictEqual(d.readonly, undefined, JSON.stringify(o)); assert.strictEqual(d.plus, undefined, JSON.stringify(o));
       assert.strictEqual(e2.DB.raw.prepare('SELECT COUNT(*) n FROM lists').get().n, 1);
     }
+  });
+  await t('review day 20: a plan page left open is closed before a new one opens, so two cannot both be paid; gift pages are left', async () => {
+    const e = env(), a = await login(e, 'two.tabs@example.com');
+    let r = await post(e, '/plus/checkout', { plan: 'month' }, { cookie: a.cookie }); assert.strictEqual(r.status, 200);
+    const first = (await r.json()).url.split('/').pop(), cus = S.sessions[first].customer;
+    S.sessions.cs_test_giftpage = { id: 'cs_test_giftpage', status: 'open', customer: cus, mode: 'payment' };
+    r = await post(e, '/plus/checkout', { plan: 'year' }, { cookie: a.cookie }); assert.strictEqual(r.status, 200);
+    const second = (await r.json()).url.split('/').pop();
+    assert.strictEqual(S.sessions[first].status, 'expired', 'the monthly page can no longer take a payment');
+    assert.strictEqual(S.sessions[second].status, 'open');
+    assert.strictEqual(S.sessions.cs_test_giftpage.status, 'open', 'a gift being bought is not touched');
+    stripeDown = true;
+    assert.strictEqual((await post(e, '/plus/checkout', { plan: 'year' }, { cookie: a.cookie })).status, 502, 'Stripe down: no new page');
+  });
+  await t('review day 20: test mode and live mode never mix (a test-card membership is nothing once the key is live)', async () => {
+    const e = env(), a = await login(e, 'switch@example.com');
+    let r = await post(e, '/plus/checkout', { plan: 'year' }, { cookie: a.cookie });
+    const testCus = S.sessions[(await r.json()).url.split('/').pop()].customer;
+    makeSub('sub_testmode', testCus, { metadata: { user_id: a.id, site: SITE } });
+    assert.strictEqual((await hook(e, completed('sub_testmode', a.id, testCus))).status, 200);
+    assert.strictEqual((await me(e, a.cookie)).plus.member, true, 'a member in test mode');
+    assert.strictEqual(e.DB.raw.prepare('SELECT mode FROM memberships').get().mode, 'test');
+    // Robin switches to live
+    e.STRIPE_SECRET_KEY = 'sk_live_abc'; e.STRIPE_LIVE = '1'; P.clearCache();
+    assert.strictEqual((await me(e, a.cookie)).plus.member, false, 'the test membership does not count');
+    assert.strictEqual((await hook(e, completed('sub_testmode', a.id, testCus))).status, 200, 'a test event is ignored, not refused');
+    assert.strictEqual((await me(e, a.cookie)).plus.member, false);
+    assert.strictEqual((await post(e, '/plus/portal', {}, { cookie: a.cookie })).status, 404, 'no portal for a test customer in live mode');
+    calls.length = 0;
+    r = await post(e, '/plus/checkout', { plan: 'year' }, { cookie: a.cookie }); assert.strictEqual(r.status, 200);
+    const made = calls.find(c => c.url.endsWith('/v1/customers') && c.method === 'POST');
+    assert.ok(made, 'a live customer is made'); assert.match(made.headers['idempotency-key'], /^ddr-customer-live-/);
+    const u = e.DB.raw.prepare('SELECT stripe_customer, stripe_mode FROM users').get();
+    assert.strictEqual(u.stripe_mode, 'live'); assert.notStrictEqual(u.stripe_customer, testCus);
+    // a live subscription for the new customer counts
+    makeSub('sub_livemode', u.stripe_customer, { metadata: { user_id: a.id, site: SITE }, extra: { livemode: true } });
+    const live = evt('checkout.session.completed', { id: 'cs_live_1', object: 'checkout.session', mode: 'subscription', subscription: 'sub_livemode', customer: u.stripe_customer, client_reference_id: a.id }, { livemode: true });
+    assert.strictEqual((await hook(e, live)).status, 200);
+    assert.strictEqual((await me(e, a.cookie)).plus.member, true, 'the live membership counts');
+    assert.strictEqual(e.DB.raw.prepare("SELECT mode FROM memberships WHERE subscription = 'sub_livemode'").get().mode, 'live');
+  });
+  await t('review day 20: deleting an account forgets its Stripe customer as soon as Stripe has deleted it', async () => {
+    const e = env(), a = await login(e, 'gone@example.com');
+    await post(e, '/plus/checkout', { plan: 'month' }, { cookie: a.cookie });
+    assert.ok(await P.endSubscriptions(e, a.id));
+    assert.strictEqual(e.DB.raw.prepare('SELECT stripe_customer FROM users').get().stripe_customer, null);
   });
   console.log(`\n${n} tests passed`);
 })().catch(e => { console.error(e); process.exit(1); });

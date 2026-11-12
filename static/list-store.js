@@ -287,13 +287,17 @@
   }
   /* The account page says when this device signs in or out. `who` is the account's opaque id from the Worker.
      A browser list that belongs to a different account (a shared computer) is never sent to this one by itself: the
-     page asks first (day 13 review). how = 'merge' adds this browser's list to the account; 'replace' shows only the
+     page asks first (day 13 review), and so is a list that belongs to no account yet (day 20 review). how = 'merge' adds this browser's list to the account; 'replace' shows only the
      account's list here (the other account keeps its own copy on its account). */
   function account(on, who, how) {
     if (!on) { flag('acct', ''); clearTimeout(timer); return Promise.resolve({ ok: true }); }
     const prev = flag('acct_owner') || '';
     const mine = live(load()).length > 0;
     if (who && prev && prev !== who && mine && !how) { flag('acct', ''); return Promise.resolve({ ok: false, reason: 'other-account' }); }
+    // Day 20 (review): a browser list that belongs to no account yet is added only once the member says so on the account
+    // page, which shows the address signed in. Someone could send a sign-in link for their own account ("open this to see
+    // my plan"), and the list here would otherwise go to their account without a word.
+    if (who && !prev && mine && !how) { flag('acct', ''); return Promise.resolve({ ok: false, reason: 'first-list' }); }
     if (who && prev !== who) flag('acct_owner', who);
     flag('acct', '1'); follow = 0;
     return sync({ replace: how === 'replace' });

@@ -299,16 +299,19 @@ t('merge settles: merging the result again with either side changes nothing', ()
     const r = await phone.D.sync();
     assert.strictEqual(r.ok, false); assert.strictEqual(calls, 0);
   });
-  await at('sync: signing in sends the browser list to the account; the device keeps it', async () => {
+  await at('sync: signing in sends the browser list to the account once the member says so; the device keeps it', async () => {
     phone.use(); const before = phone.store.get('ddr_list');
-    const r = await phone.D.account(true, 'acct-1');
+    const ask = await phone.D.account(true, 'acct-1');
+    assert.strictEqual(ask.reason, 'first-list', 'a list that belongs to no account yet is not sent without asking (day 20)');
+    assert.strictEqual(calls, 0); assert.ok(!phone.D.flag('acct')); assert.ok(!phone.D.flag('acct_owner'));
+    const r = await phone.D.account(true, 'acct-1', 'merge');
     assert.ok(r.ok); assert.strictEqual(calls, 1); assert.strictEqual(r.changed, false);
     assert.deepStrictEqual(account.items.map(i => i.id), ['learn-to-sail']);
     assert.strictEqual(phone.store.get('ddr_list'), before); assert.strictEqual(phone.events.length, 0);
   });
   await at('sync: a second device signing in merges both ways and tells its page to redraw', async () => {
     laptop.use(); laptop.D.add('beekeeping');
-    const r = await laptop.D.account(true, 'acct-1');
+    const r = await laptop.D.account(true, 'acct-1', 'merge');
     assert.ok(r.ok && r.changed);
     assert.deepStrictEqual(laptop.D.live(laptop.D.load()).map(i => i.id).sort(), ['beekeeping', 'learn-to-sail']);
     assert.strictEqual(laptop.D.get('learn-to-sail').date, '2027-06-12');
@@ -382,9 +385,10 @@ t('merge settles: merging the result again with either side changes nothing', ()
     assert.strictEqual(laptop.D.flag('acct_owner'), 'acct-2');
     account = before; who = 'acct-1';
     laptop.D.forget(); assert.strictEqual(laptop.D.live(laptop.D.load()).length, 0); assert.strictEqual(laptop.D.flag('acct_owner'), '');
-    // a browser whose list belongs to nobody yet (saved before accounts) is added to the account on first sign-in
+    // a browser whose list belongs to nobody yet (saved before accounts) is added to the account on first sign-in, once asked
     laptop.D.add('pottery'); account = null;
-    const s3 = await laptop.D.account(true, 'acct-1');
+    assert.strictEqual((await laptop.D.account(true, 'acct-1')).reason, 'first-list');
+    const s3 = await laptop.D.account(true, 'acct-1', 'merge');
     assert.ok(s3.ok); assert.deepStrictEqual(account.items.map(i => i.id), ['pottery']);
     account = before; await laptop.D.sync();
   });

@@ -29,10 +29,18 @@
     slow: 'Your list has been brought up to date many times in the last hour. It is still saved in this browser and will be sent later.',
   };
   async function syncNow(how) {
-    const line = $('[data-acct-sync]'), other = $('[data-acct-other]'); if (!L || !line) return;
-    other.hidden = true;
+    const line = $('[data-acct-sync]'), other = $('[data-acct-other]'), first = $('[data-acct-first]'); if (!L || !line) return;
+    other.hidden = true; first.hidden = true;
     line.textContent = 'Bringing your list and plans up to date…';
     const r = await L.account(true, who, how);
+    if (r && r.reason === 'first-list') {   // day 20: a list that belongs to no account yet goes to one only when asked
+      const n = L.live(L.load()).length;
+      $('[data-acct-first-n]').textContent = n + (n === 1 ? ' thing' : ' things');
+      $('[data-acct-first-email]').textContent = $('[data-acct-email]').textContent;
+      line.textContent = '';
+      first.hidden = false; first.focus();
+      return;
+    }
     if (r && r.reason === 'other-account') {   // a shared computer: never mix two people's lists without asking
       line.textContent = '';
       other.hidden = false; other.focus();
@@ -283,7 +291,7 @@
         const later = r.d.from && r.d.from * 1000 > Date.now() + 60000;
         codeOk.textContent = later ? 'Done. Your gift starts on ' + day(r.d.from) + ', when the Planner Plus you already have ends, and runs until ' + day(r.d.until) + '.'
           : 'Done. You have Planner Plus until ' + day(r.d.until) + '. It does not renew, so you will not be charged.';
-        codeOk.hidden = false;
+        codeOk.hidden = false; codeOk.scrollIntoView({ block: 'nearest' });   // day 20: it could land below the fold on a phone
         await refreshPlus(); syncNow();
       } else if (r.status === 401) show('out');
       else if (r.status === 409 && r.d.error === 'renewing') codeSay('You already pay for Planner Plus and it renews, so the gift would overlap it. Use "Cancel, switch plan or change card" to stop the renewal first: your Plus runs to the end of what you have paid for, and the gift\'s twelve months then start after that. Your code has not been used.');
@@ -355,6 +363,8 @@
   $('[data-acct-signout-clear]').addEventListener('click', () => signOut(true));
   $('[data-acct-replace]').addEventListener('click', () => syncNow('replace'));
   $('[data-acct-merge]').addEventListener('click', () => syncNow('merge'));
+  $('[data-acct-first-add]').addEventListener('click', () => syncNow('merge'));
+  $('[data-acct-first-no]').addEventListener('click', () => signOut(false));
   $('[data-acct-delete]').addEventListener('click', async () => {
     try {
       const r = await call('/auth/delete', { confirm: true });
