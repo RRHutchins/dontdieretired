@@ -769,6 +769,24 @@ def build(make_social=True):
             c["photo"] = story_photo(c, f"list-{c['id']}", credits)
             for k in c.get("kit") or []:
                 assert k.get("name") and k.get("why") and str(k.get("url", "")).startswith("https://www.amazon.co.uk/"), f"challenge {c['id']}: kit items need name, why and an amazon.co.uk url (app.js swaps in the US store)"
+            # Reviewers' picks (Robin, 12 Nov 2026: "the best option, a good option and the cheapest good option, with
+            # reviews and links"; "use, quote and reference independent reviewers"). Every pick is a named product that a
+            # named independent reviewer recommends, with the reviewer's own label and a short quote copied from the review
+            # opened on `checked`. We never rank anything ourselves, never give prices, and never claim we tested it.
+            pk = c.get("picks")
+            if pk:
+                assert pk.get("item") and pk.get("why") and pk.get("options"), f"challenge {c['id']}: picks need item, why and options"
+                order = {"top": 0, "good": 1, "value": 2}
+                for o in pk["options"]:
+                    assert o.get("tier") in order and o.get("name") and o.get("label") and o.get("quote") and o.get("reviewer"), f"challenge {c['id']}: each pick needs tier top/good/value, name, label, quote and reviewer"
+                    assert len(str(o["quote"]).split()) <= 30, f"challenge {c['id']}: a pick's quote is at most 30 words (short quotation only)"
+                    r = o.get("review") or {}
+                    assert r.get("title") and str(r.get("url", "")).startswith("https://") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(r.get("checked", ""))), f"challenge {c['id']}: each pick needs review title, url and checked date"
+                    assert str(o.get("buy", "")).startswith("https://www.amazon.co.uk/"), f"challenge {c['id']}: a pick's buy link is an amazon.co.uk url (app.js swaps in the US store)"
+                    assert not re.search(r"[£$€]\s?\d", str(o["quote"])), f"challenge {c['id']}: no prices in picks (they change)"
+                pk["options"] = sorted(pk["options"], key=lambda o: order[o["tier"]])
+                _d = max(o["review"]["checked"] for o in pk["options"])
+                pk["checked_human"] = dt.datetime.strptime(_d, "%Y-%m-%d").strftime("%-d %B %Y")
             for b in c.get("book") or []:
                 assert b.get("label") and b.get("why") and str(b.get("url", "")).startswith("https://") and b.get("aff") in (None, "viator", "getyourguide"), f"challenge {c['id']}: book items need label, why, url and aff viator/getyourguide or none"
             # Depth for search (Robin, 27 Oct 2026: someone who types the activity into Google should land on our page and

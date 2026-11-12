@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import share_button, near_you, card, affiliate_box %}
+{% extends "base.html" %}{% from "_macros.html" import share_button, near_you, card, affiliate_box, picks_box %}
 {% block title %}{{ c.seo }}{% endblock %}
 {% block description %}{{ c.meta | metadesc }}{% endblock %}
 {% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":
@@ -65,6 +65,7 @@
   </aside>
   {% endif %}
   {% if c.kit %}{{ affiliate_box(c.kit, "Kit for this") }}{% endif %}
+  {% if c.picks %}{{ picks_box(c.picks) }}{% endif %}
 
   {% if c.safety %}<aside class="fl-safety"><strong>Worth knowing.</strong> {{ c.safety }}</aside>{% endif %}
   {% if c.category in ('money', 'earn') %}<p class="disclosure">This is general information, not financial or business advice for your own circumstances.</p>{% endif %}

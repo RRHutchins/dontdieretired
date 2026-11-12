@@ -33,6 +33,28 @@
 {% endif %}
 {% endmacro %}
 
+{% macro picks_box(pk) %}
+{% if pk %}
+<aside class="aff-box picks" aria-labelledby="picks-h">
+  <h3 class="h4" id="picks-h">{{ pk.item }}: what reviewers recommend</h3>
+  <p class="picks-why">{{ pk.why }}</p>
+  <ul class="picks-list">
+  {% for o in pk.options %}
+    <li class="pick pick-{{ o.tier }}">
+      <p class="pick-tier">{{ {'top': 'Top pick', 'good': 'Also recommended', 'value': 'Lower-cost pick'}[o.tier] }}</p>
+      <p class="pick-name"><strong>{{ o.name }}</strong></p>
+      <p class="pick-label">{{ o.reviewer }}: “{{ o.label }}”</p>
+      <blockquote class="pick-quote"><p>“{{ o.quote }}”</p></blockquote>
+      <p class="pick-links"><a href="{{ o.review.url }}" target="_blank" rel="noopener">Read the review<span class="sr-only"> of the {{ o.name }}</span>&nbsp;({{ o.reviewer }})</a>
+        <a class="btn btn-small btn-ghost" href="{{ o.buy }}" rel="sponsored nofollow noopener" target="_blank" data-aff>Find it on Amazon<span class="sr-only">: {{ o.name }}</span></a></p>
+    </li>
+  {% endfor %}
+  </ul>
+  <p class="disclosure">Chosen and described by the independent reviewers named, whose words these are; we have not tested these ourselves. Reviews checked {{ pk.checked_human }}: prices and stock change, so check before you buy. The Amazon links are affiliate links: we may earn a small commission at no cost to you.</p>
+</aside>
+{% endif %}
+{% endmacro %}
+
 {% macro product_promo(p) %}
 <aside class="promo">
   <img class="product-img" src="/static/img/products/{{ p.id }}.jpg" alt="" width="480" height="480" loading="lazy">

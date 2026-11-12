@@ -1165,3 +1165,12 @@ h1{line-height:1.04}
   .gift-card-to,.gift-card-from{font-family:Fraunces,Georgia,serif;font-size:14pt;margin:0 0 6px}
   .gift-card-code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:20pt;font-weight:700;letter-spacing:.08em;text-align:center;border:1px dashed #c98a2b;border-radius:10px;padding:10px;margin:16px 0}
 }
+
+/* Reviewers' picks (12 Nov 2026): three cards, the reviewer's words, our links */
+.picks{margin:1.5em 0}.picks-why{margin:0 0 .8em}
+.picks-list{list-style:none;padding:0!important;margin:0 0 .8em!important;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(14em,1fr))}
+.pick{background:var(--paper,#fff);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0!important;display:flex;flex-direction:column}
+.pick p{margin:0 0 .4em}.pick-tier{font-size:.85rem;font-weight:700;color:var(--brand)}
+.pick-label{font-size:.9rem;color:var(--muted,#555)}
+.pick-quote{margin:.2em 0 .6em;padding:0 0 0 .8em;border-left:3px solid var(--gold,#c98a2b);font-style:italic;font-size:.95rem}
+.pick-links{margin-top:auto!important;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}.pick-links a{min-height:44px;display:inline-flex;align-items:center}
