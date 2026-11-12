@@ -57,10 +57,18 @@ const year = await price(LOOKUP.year, plus, 2000, 'year', 'Planner Plus yearly, 
 await price(LOOKUP.gift, gift, 2000, null, 'Planner Plus gift, £20');
 
 const confs = await call('GET', 'billing_portal/configurations', { active: 'true', limit: 100 });
-if (confs.data.some(c => c.metadata && c.metadata.ddr === 'plus')) say('customer portal set-up: exists');
+const PROFILE = { headline: "Don't Die Retired: manage your Planner Plus membership", privacy_policy_url: `${SITE}/privacy/`, terms_of_service_url: `${SITE}/planner-plus/terms/` };
+const conf = confs.data.find(c => c.metadata && c.metadata.ddr === 'plus');
+if (conf) {
+  say('customer portal set-up: exists');
+  // day 19 added the terms page: bring a set-up made before then up to date
+  if (!conf.business_profile || conf.business_profile.terms_of_service_url !== PROFILE.terms_of_service_url) {
+    await call('POST', 'billing_portal/configurations/' + conf.id, { business_profile: PROFILE }); say('customer portal set-up: terms link added');
+  }
+}
 else {
   const c = await call('POST', 'billing_portal/configurations', {
-    business_profile: { headline: "Don't Die Retired: manage your Planner Plus membership", privacy_policy_url: `${SITE}/privacy/` },
+    business_profile: PROFILE,
     features: {
       customer_update: { enabled: 'false' },
       invoice_history: { enabled: 'true' },

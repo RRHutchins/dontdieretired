@@ -840,6 +840,10 @@ def build(make_social=True):
         out("/account/", "account.html")   # sign-in for Planner Plus (RUNBOOK §6t day 12): noindex, not in the sitemap, linked from nowhere yet
         out("/redeem/", "account.html", redeem=True)   # the address on the gift card (day 16): the account page with "Use a gift code" first
         out("/my-year/", "my-year.html")   # My year (RUNBOOK §6s): not in the sitemap until the planner launches (day 14)
+        # the Planner Plus sales, gift and terms pages (RUNBOOK §6t day 19): noindex and out of the sitemap until launch (plus.paywall)
+        for _pu, _pt in (("/planner-plus/", "plus.html"), ("/planner-plus/gift/", "plus-gift.html"), ("/planner-plus/terms/", "plus-terms.html")):
+            _u = out(_pu, _pt)
+            if _paywall: urls.append(_u)
         # the one worked sample plan non-members see (RUNBOOK §6t day 15): noindex, not in the sitemap until launch
         _sp = _pdata["sample"]; _sc = next((c for c in chs if c["id"] == _sp["activity"]), None)
         assert _sc is not None, f"planner plus.sample_plan: no activity {_sp['activity']}"

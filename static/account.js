@@ -77,7 +77,10 @@
     box.hidden = !(me.payments || p.member || p.status);
     $('[data-acct-plus-buy]').hidden = !(me.payments && (!p.member || giftEnding));
     $('[data-acct-plus-giftnote]').hidden = !giftEnding;
-    if (giftEnding) $('[data-acct-plus-giftnote]').textContent = 'To carry on after your gift, you can choose a plan now: nothing is taken until ' + day(p.until) + ', when the gift ends, and you can cancel before then.';
+    // the Worker gives no trial with under three days left (Stripe needs 48 hours), so the first payment is then taken at once (review 12 Nov)
+    if (giftEnding) $('[data-acct-plus-giftnote]').textContent = p.until * 1000 - Date.now() >= 3 * 86400000
+      ? 'To carry on after your gift, you can choose a plan now: nothing is taken until ' + day(p.until) + ', when the gift ends, and you can cancel before then.'
+      : 'To carry on after your gift, you can choose a plan now. Your gift ends on ' + day(p.until) + ', so the first payment is taken straight away.';
     $('[data-acct-plus-manage]').hidden = $('[data-acct-plus-note]').hidden = !(me.payments && sub && (p.member || p.status));
     const kind = PLAN[p.plan] ? ' (' + PLAN[p.plan] + ')' : '';
     if (p.member && p.gift_until && sub) state.textContent = 'You have Planner Plus as a gift until ' + day(p.gift_until) + '. ' + (p.ending ? 'You cancelled the plan that was to follow it, so you will not be charged.' : 'Your ' + PLAN[p.plan] + ' plan follows it: the first payment is taken on ' + day(p.until) + '.');

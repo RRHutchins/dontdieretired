@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{# Planner Plus terms (RUNBOOK §6t, day 19). Our own promises in plain English, written to give at least what a UK consumer
+   is owed (a full refund on request within 14 days of any payment, whether or not Plus was used) without restating the law,
+   which this run could not open and check. Robin to have it checked if he wishes before launch. Every promise here must be
+   kept by hand or by the Worker: see RUNBOOK §6t day 19 for how each one is carried out. Change TERMS_V when the wording changes. #}
+{% set TERMS_V = "Version 1, 12 November 2026" %}
+{% block title %}Planner Plus terms — {{ cfg.site.name }}{% endblock %}
+{% block description %}The terms for Planner Plus and Planner Plus gifts: what you pay, renewing, cancelling, refunds and gift codes, in plain English.{% endblock %}
+{% block robots %}{% if not plus_paywall %}<meta name="robots" content="noindex">{% endif %}{% endblock %}
+{% block pagetype %}plus-terms{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker"><a href="/planner-plus/">Planner Plus</a> · Legal</p><h1>Planner Plus terms</h1>
+<p class="lead">What you pay, how renewing and cancelling work, refunds and gifts, in plain English.</p></header>
+<div class="prose narrow pp-terms">
+<p class="meta">{{ TERMS_V }}.</p>
+
+<h2 class="h3" id="who">Who you are dealing with</h2>
+<p>{{ cfg.site.name }} and Planner Plus are run by {{ cfg.company.name }}, company number {{ cfg.company.number }}, registered in {{ cfg.company.registered_in }}, registered office {{ cfg.company.registered_office }}. To reach us, {% if cfg.site.contact_email_live %}email {{ contact() }}{% else %}use {{ contact() }}{% endif %}.</p>
+
+<h2 class="h3" id="what">What Planner Plus is</h2>
+<p>Planner Plus is a membership of the planner on this site, described on the <a href="/planner-plus/">Planner Plus page</a>. You need a free account (sign-in is by a link sent to your email address) and a browser with JavaScript switched on. We keep improving the planner and may change how it looks or works. If we ever take away something you rely on, you can cancel and ask us to refund the time you have paid for and not yet had.</p>
+<p>The plans are general information to help you get organised. They are not medical, training, travel or financial advice. Check with your GP (family doctor) before starting something much harder than you are used to, and check dates, prices and booking details with the organiser before you book. We do not sell or book events, travel, stays or tours: links take you to other sites, and anything you book there is between you and them.</p>
+
+<h2 class="h3" id="pay">Paying</h2>
+<ul>
+  <li>Planner Plus costs <strong>£2 a month</strong> or <strong>£20 a year</strong>; a gift costs <strong>£20</strong> for twelve months. Prices include VAT and are charged in pounds; if your card is in another currency, your card provider converts it and may charge for doing so.</li>
+  <li>Payments are taken by Stripe on its own secure pages. Your card details go to Stripe, never to us.</li>
+  <li>Planner Plus is made for people in the UK and the US: its journey planners, hostels and prices are for those two countries.</li>
+</ul>
+
+<h2 class="h3" id="renew">Renewing</h2>
+<p>A monthly membership renews every month, and a yearly membership every year, until you cancel. Your account page shows your plan and the date it next renews. Each renewal is charged to the card you used, and Stripe emails a receipt for every payment to the address you give on its page. You can switch between monthly and yearly from your account; the charge is adjusted for the time you have already paid for.</p>
+<p>If we ever change the price, we will email you at least 30 days before the new price applies to you. It applies from your next renewal after that, and you can cancel before then.</p>
+
+<h2 class="h3" id="cancel">Cancelling</h2>
+<p>Cancel at any time from <a href="/account/">your account</a>: press "Cancel, switch plan or change card". It is as quick as joining. You are not charged again, and Planner Plus carries on until the end of the month or year you have paid for. After that your plans stay on your account and you can still see them on any device where you sign in, but they no longer change there; in this browser you can still put them in your calendar as a file and remove them. Your calendar address stops updating until you rejoin. Deleting your account removes your plans from our records.</p>
+
+<h2 class="h3" id="refunds">Changing your mind and refunds</h2>
+<ul>
+  <li><strong>Within 14 days of any payment</strong>, your first or a renewal, ask us ({{ contact() }}) and we refund that payment in full, even if you have used Planner Plus in that time. Your membership then ends.</li>
+  <li>After 14 days we do not refund part of a month or year, but you can cancel so that you are not charged again. If something has gone wrong on our side, tell us and we will put it right, which may mean a refund.</li>
+  <li>Refunds go back to the card you paid with, within 14 days of your asking; your bank decides how long it takes to reach your account.</li>
+  <li>Deleting your account ends Planner Plus at once and you are not charged again. It does not by itself refund the time left, so if you only want to stop paying, cancel instead and keep Plus to the end of your paid time.</li>
+</ul>
+
+<h2 class="h3" id="gifts">Gifts</h2>
+<ul>
+  <li>A gift is a code for twelve months of Planner Plus. It does not renew and nobody is charged again. The code appears on the buyer's account, with a card to print, once Stripe confirms the payment, usually within a minute.</li>
+  <li>The twelve months start when the code is used. The code does not run out. Each code works once.</li>
+  <li>If the person using it already has Planner Plus that is set to end, the gift follows on from it. If they have a subscription that renews, they stop the renewal before using the code.</li>
+  <li>When a gift is nearly over, the member's account page offers the chance to carry on; a subscription starts only if they choose one, and its first payment is taken when the gift ends (or straight away, if they choose in the gift's last three days).</li>
+  <li><strong>Refunds:</strong> the buyer can ask for a full refund of an <strong>unused</strong> code within 30 days of buying it; the code then stops working. If the code has been used, the buyer can still ask within 14 days of buying it, as for any payment; the gift's twelve months then end. After that, a used code cannot be refunded. If the payment for a gift is refunded or disputed with the card company before the code is used, the code stops working.</li>
+  <li>Keep the code safe: anyone who has it can use it. We cannot replace a code that someone else has used.</li>
+</ul>
+
+<h2 class="h3" id="stop">If we stop Planner Plus</h2>
+<p>If we ever close Planner Plus, we will email members at least 30 days before, and refund the time paid for and not yet had, including the unused months of a gift that has been used. Unused gift codes will be refunded to the buyer.</p>
+
+<h2 class="h3" id="data">Your information</h2>
+<p>What we keep and why is on the <a href="/privacy/">privacy page</a>. In short: your email address, your list and plans, and from Stripe only what we need to know whether you are a member. You can delete your account at any time.</p>
+
+<h2 class="h3" id="law">Your rights</h2>
+<p>Nothing in these terms takes away your legal rights as a consumer. These terms are under the law of England and Wales; if you live in Scotland or Northern Ireland you can also bring a claim in your own courts. If you have a problem, please {% if cfg.site.contact_email_live %}email us at {{ contact() }}{% else %}contact us through {{ contact() }}{% endif %} first, and we will try to put it right.</p>
+</div>
+{% endblock %}

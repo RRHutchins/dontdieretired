@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{# The Planner Plus gift page (RUNBOOK §6t, day 19; Robin 11 Nov 2026: the Christmas gift comes first). Describes the gift as
+   built on day 16. Not indexed and not in the sitemap until plus.paywall is true (launch). #}
+{% block title %}Give a year of Planner Plus — {{ cfg.site.name }}{% endblock %}
+{% block description %}Give twelve months of Planner Plus for £20: a code and a card you print at home. It does not renew, so nobody is charged again.{% endblock %}
+{% block robots %}{% if not plus_paywall %}<meta name="robots" content="noindex">{% endif %}{% endblock %}
+{% block pagetype %}plus-gift{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker"><a href="/planner-plus/">Planner Plus</a> · Gift</p><h1>Give a year of Planner Plus</h1>
+<p class="lead">For someone with things they want to do: twelve months of dated plans, trips and one calendar, for £20. You print the card at home, so it is ready as soon as you have paid.</p></header>
+<div class="prose narrow pp">
+{% if not plus_paywall %}<p class="pp-note" role="note"><strong>Not on sale yet.</strong> This page describes the gift as it will be when Planner Plus opens.</p>{% endif %}
+
+<div class="pp-price">
+  <p><strong>£20</strong>, including VAT, for twelve months of Planner Plus.</p>
+  <ul>
+    <li>It does not renew, so nobody is charged again.</li>
+    <li>The twelve months start when the code is used, not when you buy it, and the code does not run out.</li>
+    <li>You pay on Stripe's secure page; we never see your card.</li>
+  </ul>
+  <p class="pp-acts"><a class="btn" href="/account/">Buy a gift</a> <a class="btn btn-ghost" href="/planner-plus/">What Planner Plus does</a></p>
+</div>
+
+<h2 class="h3">How it works</h2>
+<ol class="pp-steps">
+  <li><strong>Sign in</strong> on <a href="/account/">your account</a> with your email address. There is no password, and an account is free.</li>
+  <li><strong>Buy the gift</strong> under "Give Planner Plus". Once Stripe confirms the payment, usually within a minute, the code appears on your account.</li>
+  <li><strong>Print the card.</strong> Add the names if you like (they are printed on the card only and never sent to us), then print it or save it as a PDF. You can see and print the code again from your account until it is used.</li>
+  <li><strong>They use the code</strong> at <a href="/redeem/">dontdieretired.com/redeem</a>: they sign in with their own email address and type the code. Their twelve months start then.</li>
+</ol>
+<p>Your account shows whether each code has been used, and when, but not by whom.</p>
+
+<h2 class="h3">What they get</h2>
+<p>A dated plan for anything on <a href="/list/">Things to do</a>, with the steps to get ready, a training plan for physical events that have one, getting there, where to stay and eat, and more to do nearby; all their plans together in My year, on every device and in their own calendar. <a href="/planner-plus/sample/">See a sample plan</a>.</p>
+
+<h2 class="h3">Questions</h2>
+<dl class="pp-qa">
+  <dt>What if they are already a member?</dt>
+  <dd>If their Planner Plus is set to end, the gift's twelve months follow on from it. If they have a subscription that renews, they stop the renewal first (from their account), then use the code, so they never pay twice.</dd>
+  <dt>What happens after the twelve months?</dt>
+  <dd>Plus stops; nobody is charged. In the last weeks, their account page offers them the chance to carry on, and a subscription starts only if they choose one. Their plans stay on their account either way.</dd>
+  <dt>Can I get my money back?</dt>
+  <dd>If the code has not been used, yes: ask us ({{ contact() }}) within 30 days of buying it and we refund the £20 in full; the code then stops working. If it has been used, you can still ask within 14 days of buying it, and their twelve months then end; after that it cannot be refunded. See the <a href="/planner-plus/terms/">terms</a>.</dd>
+  <dt>Can they choose a different email address from mine?</dt>
+  <dd>Yes. The code is not tied to anyone until it is used, and nothing from your account is shown to them.</dd>
+</dl>
+</div>
+{% endblock %}

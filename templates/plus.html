@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{# The Planner Plus sales page (RUNBOOK §6t, day 19). Describes only what works today; anything later is labelled "coming".
+   Not indexed and not in the sitemap until plus.paywall is true (launch). No member counts, reviews or "most popular". #}
+{% block title %}Planner Plus: plan the things you want to do this year — {{ cfg.site.name }}{% endblock %}
+{% block description %}Planner Plus turns the things you want to do into dated plans, with getting there, where to stay and more to do nearby, all on one calendar. £2 a month or £20 a year.{% endblock %}
+{% block robots %}{% if not plus_paywall %}<meta name="robots" content="noindex">{% endif %}{% endblock %}
+{% block pagetype %}plus{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker"><a href="/list/">Things to do</a> · Planner Plus</p><h1>Planner Plus</h1>
+<p class="lead">Make the most of the year. Choose the things you want to do, and Planner Plus sets out how to get ready for each, with a date and a reason for every step, and keeps them all together on one calendar.</p></header>
+<div class="prose narrow pp">
+{% if not plus_paywall %}<p class="pp-note" role="note"><strong>Not on sale yet.</strong> This page describes Planner Plus as it will be when it opens. Until then, the planner on each activity page works for everyone.</p>{% endif %}
+
+<h2 class="h3">What you get</h2>
+<ul class="pp-list">
+  <li><strong>A dated plan for anything on <a href="/list/">Things to do</a></strong>: a course, a festival, a day out, a trip or a new habit. Pick a day or a month and the plan shows when to book and each step to get ready, with the reason it comes when it does. Ideas of your own go in My year too, on their date, without a get-ready plan.</li>
+  <li><strong>A training plan for physical events</strong> that have one on our list, built back from the day, as part of the plan rather than the whole of it.</li>
+  <li><strong>Your trip, with the day itself:</strong> a map of where it is, journey planners for getting there, hotel searches for your dates, hostels and campsites, a map search for places to eat nearby, and other things on our list in the same area that you can add to the same trip. These are searches you run yourself: we do not book anything, and we have not checked or chosen the places they find.</li>
+  <li><strong>My year:</strong> all your plans together, the year at a glance or month by month, with a note when two plans overlap or a trip lands on your training.</li>
+  <li><strong>On every device:</strong> your list and plans are kept on your account, so they are the same on your phone and your computer.</li>
+  <li><strong>In your own calendar:</strong> add one address to Apple Calendar, Google Calendar or Outlook and My year keeps itself up to date there. You can also save a calendar file at any time.</li>
+</ul>
+<p>See it first: <a href="/planner-plus/sample/">a sample plan</a>, made by the planner and shown as a member sees it.</p>
+
+<h2 class="h3">What stays free</h2>
+<p>Everything on Things to do, with how to start and where to go, your own list kept in your browser, and "Plan it yourself" on each activity: the links to book it, get there, stay, eat and find more to do nearby.</p>
+
+<h2 class="h3">The price</h2>
+<div class="pp-price">
+  <p><strong>£2 a month</strong> or <strong>£20 a year</strong>, including VAT.</p>
+  <p>You pay on Stripe's secure page; we never see your card. Cancel any time from your account: Plus then runs to the end of the time you have paid for, and you are not charged again. If you change your mind within 14 days of paying, ask us and we refund that payment in full, and your membership ends. The details are in the <a href="/planner-plus/terms/">Planner Plus terms</a>.</p>
+  <p class="pp-acts"><a class="btn" href="/account/">Join Planner Plus</a> <a class="btn btn-ghost" href="/planner-plus/sample/">See a sample plan</a></p>
+  <p class="meta"><a href="/account/">Already a member? Sign in</a></p>
+</div>
+
+<h2 class="h3">Give it as a present</h2>
+<p>A year of Planner Plus for £20, with a card you print at home. It does not renew, so nobody is charged again. <a href="/planner-plus/gift/">About the gift</a>.</p>
+
+<h2 class="h3">Good to know</h2>
+<ul>
+  <li>Plans are general information to help you get organised, not medical, training or travel advice. Check with your GP (family doctor) before starting something much harder than you are used to, and check dates and booking details on the organiser's own site.</li>
+  <li>Some links, such as tour searches and some booking pages, are affiliate links: if you book through them we may earn a commission, at no extra cost to you. They are marked where they appear, and never go into your calendar.</li>
+  <li>Your account holds your email address, your list and plans, whether you are a member and, if you make one, your calendar address; the <a href="/privacy/">privacy page</a> has the details.</li>
+</ul>
+</div>
+{% endblock %}

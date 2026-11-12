@@ -1174,3 +1174,16 @@ h1{line-height:1.04}
 .pick-label{font-size:.9rem;color:var(--muted,#555)}
 .pick-quote{margin:.2em 0 .6em;padding:0 0 0 .8em;border-left:3px solid var(--gold,#c98a2b);font-style:italic;font-size:.95rem}
 .pick-links{margin-top:auto!important;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}.pick-links a{min-height:44px;display:inline-flex;align-items:center}
+
+/* Planner Plus sales, gift and terms pages (RUNBOOK §6t day 19) */
+.pp-note{background:#f7f2e6;border-left:4px solid var(--gold);border-radius:8px;padding:10px 14px}
+.pp-list li,.pp-steps li{margin:.45em 0}
+.pp-price{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;margin:1em 0}
+.pp-price ul{margin:.4em 0}
+.pp-acts{display:flex;flex-wrap:wrap;gap:10px;margin:1em 0 .4em}
+.pp-acts .btn{min-height:44px}
+.pp-qa dt{font-weight:600;margin-top:1em}
+.pp-qa dd{margin:.2em 0 0}
+.pp-terms h2{margin-top:1.4em}
+.get-involved.gi-gift{background:var(--brand-ink)}
+.get-involved.gi-gift .gi-go{color:var(--brand-ink)}

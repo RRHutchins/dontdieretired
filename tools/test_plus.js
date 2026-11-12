@@ -357,7 +357,8 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       if (p === 'products') return m === 'GET' ? R({ data: st.products }) : R((st.products.push({ id: 'prod_' + st.products.length, metadata: { ddr: b['metadata[ddr]'] } }), st.products.at(-1)));
       if (p === 'prices') return m === 'GET' ? R({ data: st.prices.filter(x => x.lookup_key === u.searchParams.get('lookup_keys[]')) })
         : R((st.prices.push({ id: 'price_' + st.prices.length, lookup_key: b.lookup_key, unit_amount: +b.unit_amount, currency: b.currency }), st.prices.at(-1)));
-      if (p === 'billing_portal/configurations') return m === 'GET' ? R({ data: st.confs }) : R((st.confs.push({ id: 'bpc_1', metadata: { ddr: 'plus' } }), st.confs[0]));
+      if (p === 'billing_portal/configurations') return m === 'GET' ? R({ data: st.confs }) : R((st.confs.push({ id: 'bpc_1', metadata: { ddr: 'plus' }, business_profile: { terms_of_service_url: b['business_profile[terms_of_service_url]'] } }), st.confs[0]));
+      if (p === 'billing_portal/configurations/bpc_1' && m === 'POST') { st.confs[0].business_profile = { terms_of_service_url: b['business_profile[terms_of_service_url]'] }; return R(st.confs[0]); }
       const evs = () => Object.keys(b).filter(k => k.startsWith('enabled_events[')).map(k => b[k]);
       if (p === 'webhook_endpoints') return m === 'GET' ? R({ data: st.hooks }) : R((st.hooks.push({ id: 'we_1', url: b.url, enabled_events: evs() }), { id: 'we_1', secret: 'whsec_made' }));
       if (p === 'webhook_endpoints/we_1' && m === 'POST') { st.hooks[0].enabled_events = evs(); return R(st.hooks[0]); }
@@ -381,6 +382,7 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
         [['ddr_plus_month', '200', 'gbp', 'month', 'inclusive'], ['ddr_plus_year', '2000', 'gbp', 'year', 'inclusive'], ['ddr_plus_gift', '2000', 'gbp', undefined, 'inclusive']]);
       const conf = st.posts.find(x => x.p === 'billing_portal/configurations').b;
       assert.strictEqual(conf['features[subscription_cancel][mode]'], 'at_period_end');
+      assert.strictEqual(conf['business_profile[terms_of_service_url]'], 'https://dontdieretired.com/planner-plus/terms/', 'the portal links the terms (day 19)');
       assert.strictEqual(conf['features[subscription_update][products][0][prices][1]'], 'price_1');
       const hk = st.posts.find(x => x.p === 'webhook_endpoints').b;
       assert.strictEqual(hk.url, 'https://api.dontdieretired.com/stripe/webhook'); assert.strictEqual(hk.api_version, P.STRIPE_VERSION);
@@ -394,6 +396,12 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       assert.strictEqual(await run('sk_test_x', 4), 0);
       assert.deepStrictEqual(st.hooks[0].enabled_events, P.EVENTS); assert.ok(!fs.existsSync(out), 'no new secret');
       assert.ok(P.EVENTS.includes('charge.refunded') && P.EVENTS.includes('checkout.session.async_payment_succeeded'));
+      // day 19: a portal set-up made before the terms page existed gains the terms link, once
+      st.confs[0].business_profile = { privacy_policy_url: 'https://dontdieretired.com/privacy/' };
+      const b5 = st.posts.length;
+      assert.strictEqual(await run('sk_test_x', 5), 0);
+      assert.strictEqual(st.posts.length, b5 + 1); assert.strictEqual(st.confs[0].business_profile.terms_of_service_url, 'https://dontdieretired.com/planner-plus/terms/');
+      assert.strictEqual(await run('sk_test_x', 6), 0); assert.strictEqual(st.posts.length, b5 + 1, 'then nothing more');
     } finally { globalThis.fetch = saved; delete process.env.STRIPE_SECRET_KEY; try { fs.unlinkSync(out); } catch (e) { /* gone */ } }
   });
   await t('day 15: once the paywall is on, the list on the account is Plus: others can read their copy but store nothing', async () => {

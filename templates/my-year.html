@@ -50,6 +50,7 @@
       <p class="pl-acts"><button type="button" class="btn btn-small" data-my-ics>Add every plan to my calendar</button></p>
       <p class="meta" data-my-calhelp></p>
       {% if accounts_api %}<p class="meta">Or add a calendar that keeps itself up to date, on every device: make your calendar address on <a href="/account/">your account</a>{% if plus_paywall %}, with Planner Plus{% endif %}.</p>{% endif %}
+      {% if plus_paywall %}<p class="meta">Know someone with plans for next year? <a href="/planner-plus/gift/">Give them a year of Planner Plus</a>.</p>{% endif %}
       <p class="pl-calmsg" data-my-calmsg role="status" aria-live="polite"></p>
     </section>
 
