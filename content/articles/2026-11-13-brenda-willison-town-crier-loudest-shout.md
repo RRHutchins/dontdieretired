@@ -7,6 +7,9 @@ tags: [town-crier, voice, public-speaking, women, suffolk, community, guinness-w
 segments: [changer, learner]
 level: any
 art: houses
+photo_file: "File:High Street Newmarket - geograph.org.uk - 3054399.jpg"
+photo_caption: "High Street, Newmarket, Suffolk, the town Brenda Willison cries for."
+photo_alt: "A wide high street in early evening light, lined with red-brick and white-fronted buildings, hanging flower baskets and a few cars on the road."
 hook: "One 'oyez' at 105.9 decibels. Brenda Willison, town crier since 1987, now holds two Guinness World Records."
 lesson: "A voice is a skill like any other: use it on purpose, look after it, and it can open doors you did not know were there."
 standfirst: "Brenda Willison, town crier for Newmarket in Suffolk, shouted one 'oyez' at 105.9 decibels in September and was handed two Guinness World Records. She got the job in 1987 because her daughter wrote a letter about how far her mother could shout 'chips'."
