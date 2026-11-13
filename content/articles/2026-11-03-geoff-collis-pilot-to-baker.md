@@ -11,7 +11,7 @@ photo_file: "File:Bread - Ekmek.jpg"
 photo_caption: "Loaves on the shelves of a bakery in Eskişehir, Turkey. The picture is not of the bakery where Geoff Collis works."
 photo_alt: "Two wire shelves packed with rows of crusty, golden-brown oval loaves, each with a dark split along the top, seen through a bakery window."
 photo_checked: 2026-11-04
-hook: "After 42 years and 25,000 hours of flying, Geoff Collis bakes pastries in Eltham. He doesn't miss the cockpit for a day."
+hook: "After 42 years and 25,000 hours of flying, Geoff Collis now bakes pastries in Eltham. He hasn't missed the cockpit for a day."
 lesson: "A skill you take up in an enforced pause can turn out to be the work you choose when you are free to choose again."
 standfirst: "Geoff Collis flew for about 40 years, most recently as a Jetstar pilot. Partly stood down during the pandemic at 55, he asked a Melbourne bakery about an apprenticeship and was baking within months. He went back to flying, then left it for good. Now he bakes pastries in Eltham, in Melbourne's north-east."
 summary: "How an airline pilot learned to bake during the pandemic, went back to flying, then chose the bakery for good, and how to bake your first loaf this week or turn a baking habit into something bigger."

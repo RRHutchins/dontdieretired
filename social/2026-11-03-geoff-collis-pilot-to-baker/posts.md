@@ -1,6 +1,6 @@
 ## facebook
 
-After 42 years and 25,000 hours of flying, Geoff Collis bakes pastries in Eltham. He doesn't miss the cockpit for a day.
+After 42 years and 25,000 hours of flying, Geoff Collis now bakes pastries in Eltham. He hasn't missed the cockpit for a day.
 
 How an airline pilot learned to bake during the pandemic, went back to flying, then chose the bakery for good, and how to bake your first loaf this week or turn a baking habit into something bigger.
 
@@ -10,7 +10,7 @@ Read the full story → https://dontdieretired.com/eat/geoff-collis-pilot-to-bak
 
 ## instagram
 
-After 42 years and 25,000 hours of flying, Geoff Collis bakes pastries in Eltham. He doesn't miss the cockpit for a day.
+After 42 years and 25,000 hours of flying, Geoff Collis now bakes pastries in Eltham. He hasn't missed the cockpit for a day.
 
 A skill you take up in an enforced pause can turn out to be the work you choose when you are free to choose again.
 
@@ -20,13 +20,13 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-After 42 years and 25,000 hours of flying, Geoff Collis bakes pastries in Eltham. He doesn't miss the cockpit for a day. A skill you take up in an enforced pause can turn out to be the work you…
+After 42 years and 25,000 hours of flying, Geoff Collis now bakes pastries in Eltham. He hasn't missed the cockpit for a day. A skill you take up in an enforced pause can turn out to be the work you…
 
 https://dontdieretired.com/eat/geoff-collis-pilot-to-baker/?utm_source=x&utm_medium=social&utm_campaign=daily
 
 ## x_thread
 
-1/ After 42 years and 25,000 hours of flying, Geoff Collis bakes pastries in Eltham. He doesn't miss the cockpit for a day.
+1/ After 42 years and 25,000 hours of flying, Geoff Collis now bakes pastries in Eltham. He hasn't missed the cockpit for a day.
 
 ---
 
@@ -46,7 +46,7 @@ Geoff Collis traded the flight deck for a bakery bench in Melbourne's north-east
 
 ## linkedin
 
-After 42 years and 25,000 hours of flying, Geoff Collis bakes pastries in Eltham. He doesn't miss the cockpit for a day.
+After 42 years and 25,000 hours of flying, Geoff Collis now bakes pastries in Eltham. He hasn't missed the cockpit for a day.
 
 How an airline pilot learned to bake during the pandemic, went back to flying, then chose the bakery for good, and how to bake your first loaf this week or turn a baking habit into something bigger.
 
