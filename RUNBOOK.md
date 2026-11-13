@@ -609,6 +609,7 @@ The site is reframed around Things to do: activities are the reason to visit, st
 - **Menu:** Things to do is first. Stories stays under Topics (a separate Stories link pushed the header past 1280px).
 - **Home title and description** now lead with things to do: "Don't Die Retired: things worth doing, and how to start".
 - **The app's Today screen (13 Nov 2026)** follows the same order: greeting, "What do you fancy doing?" with a search box (`/list/?q=`) and topic chips, three "Good to do in <month>" activities, the story with its "Have a go yourself" line (only when the story shown is today's), My list, then the ten-minute plan or weekly challenge (its old page heading is now a section heading), three "Read up before you go" activities, puzzles and Scam checker. Data: `dist/app/home.json`, written by the same `home` block in `build.py`. Cache name raised to `ddr-app-v14`.
+- **Pottery (13 Nov 2026):** added `try-hand-building-with-clay` (WAES and the Office for the Arts at Harvard) and `try-raku-firing` (Stanwick Lakes, UK only: no US raku page opened yet), both `collection: arts`, with link terms raku and hand-building.
 - **Next, not done yet:** Start here could become "Find your first thing to do"; social and the newsletter could carry seasonal activities as well as stories; the Create and Events sections (`claude/activity-backlog.md` in the Project) slot in as topics or collections.
 
 ## 6p. Links between pages (Robin, 27 Oct 2026: "if a person is in one page they are naturally led to others")

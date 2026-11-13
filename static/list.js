@@ -97,8 +97,7 @@
   const CNAME = { uk: 'the UK', us: 'the USA', world: 'the rest of the world' };
   function matches(li) {
     if (place && !(' ' + li.dataset.places + ' ').includes(' ' + place + ' ')) return false;
-    const words = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
-    if (!words.every(w => li.dataset.text.includes(w))) return false;
+    if (qWords && !(F ? (loose ? F.some(li.dataset.text, qWords) > 0 : F.match(li.dataset.text, qWords)) : qWords.every(w => li.dataset.text.includes(w)))) return false;
     return sels.every(s => {
       const k = s.dataset.flF, v = s.value; if (!v) return true;
       if (k === 'region') return inRegion(li, v);
@@ -111,9 +110,20 @@
   // how many matched and what was searched for, flashes on each change, and the matching cards fade in.
   const calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   const replay = (el, cls) => { el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); };
+  // search words (13 Nov 2026): stems and plain synonyms through static/find.js, best matches first
+  const F = window.DDRFind, grid = $('[data-fl-grid]', root);
+  let qWords = null, ordered = false, loose = false;
   function filter(fromUser) {
+    const raw = q.value.trim();
+    qWords = raw ? (F ? F.words(raw) : raw.toLowerCase().split(/\s+/)) : null;
+    if (qWords && F && grid) {
+      const sc = li => F.score(li.dataset.title + ' ' + (li.dataset.key || ''), li.dataset.text, qWords);
+      items.map((li, i) => [sc(li), i, li]).sort((a, b) => b[0] - a[0] || a[1] - b[1]).forEach(x => grid.appendChild(x[2])); ordered = true;
+    } else if (ordered && grid) { items.forEach(li => grid.appendChild(li)); ordered = false; }
     let n = 0; const shown = [];
-    items.forEach(li => { const m = matches(li); li.hidden = !m; if (m) { n++; shown.push(li); } li.classList.remove('fl-picked'); });
+    const pass = () => { n = 0; shown.length = 0; (grid ? $$('.fl-item', grid) : items).forEach(li => { const m = matches(li); li.hidden = !m; if (m) { n++; shown.push(li); } li.classList.remove('fl-picked'); }); };
+    loose = false; pass();
+    if (!n && F && qWords && qWords.length > 1) { loose = true; pass(); }   // not every word matched anything: show the closest
     const words = q.value.trim(), filtered = words || place || sels.some(s => s.value);
     const regionOnly = !place && regSel.value === region && region && !words && sels.every(s => s === regSel || !s.value);
     const what = n === 1 ? '1 activity' : n + ' activities';
@@ -126,6 +136,7 @@
     else if (!filtered) html = '<strong>Everything</strong> <span class="fl-results-of">Search, pick a filter or tap the map to narrow it down</span>';
     else if (regionOnly) html = '<strong>' + what + '</strong> you can do from the ' + region.toUpperCase();
     else if (!n) html = '<strong>No activities match</strong>' + (words ? ' “' + esc(words) + '”' : ' those filters');
+    else if (loose) html = '<strong>Nothing has every word of “' + esc(words) + '”</strong> <span class="fl-results-of">Here are the closest ' + what + '</span>';
     else html = '<strong>' + what + '</strong> ' + (words ? 'match “' + esc(words) + '”' : 'match your filters');
     countEl.innerHTML = html;
     countEl.classList.toggle('is-filtered', !!filtered); countEl.classList.toggle('is-none', !n);

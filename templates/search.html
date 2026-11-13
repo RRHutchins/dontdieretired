@@ -1,20 +1,32 @@
 {% extends "base.html" %}
 {% block title %}Search — {{ cfg.site.name }}{% endblock %}
-{% block description %}Search every story, guide and plan on Don't Die Retired.{% endblock %}
+{% block description %}Search every thing to do, story, guide and plan on Don't Die Retired.{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Search</p><h1>Find a story</h1>
-<input type="search" id="q" placeholder="e.g. swimming, powerlifting, business…" aria-label="Search" autofocus></header>
+<header class="page-head"><p class="kicker">Search</p><h1>Search the site</h1>
+<input type="search" id="q" placeholder="e.g. pottery, swimming, fly fishing…" aria-label="Search things to do, stories and guides" autofocus>
+<p class="meta" id="qn" role="status" aria-live="polite"></p></header>
 <div class="grid grid-3" id="results"></div>
 {% endblock %}
-{% block scripts %}<script>
+{% block scripts %}<script src="/static/find.js?v={{ asset_v }}"></script><script>
 (async () => {
   const idx = await (await fetch('/index.json')).json();
   let pages = []; try { pages = await (await fetch('/pages.json')).json(); } catch (e) {}
   const q = document.getElementById('q'), out = document.getElementById('results');
   const p = new URLSearchParams(location.search).get('q'); if (p) q.value = p;
-  const render = () => { const s = q.value.toLowerCase().trim();
-    const hits = (s ? pages.concat(idx) : idx).filter(a => !s || (a.title+' '+a.excerpt+' '+a.tags.join(' ')).toLowerCase().includes(s));
-    const H = 'href', S = 'src'; /* spelled this way so crawlers do not read the template as a real link */ out.innerHTML = hits.map(a => `<article class="card${a.photo ? ' has-photo' : ''}" data-cat="${a.category}"><a class="card-img" ${H}="${a.url}" aria-hidden="true" tabindex="-1"><img ${S}="${a.art || a.image}" alt="" loading="lazy"></a><div class="card-body"><p class="kicker">${a.category}</p><h2 class="h3"><a ${H}="${a.url}">${a.title}</a></h2><p>${a.excerpt}</p></div></article>`).join('') || '<p>Nothing yet — try another word.</p>'; };
+  const F = window.DDRFind, n = document.getElementById('qn');
+  const text = a => (a.title + ' ' + a.excerpt + ' ' + (a.tags || []).join(' ')).toLowerCase();
+  const isAct = a => a.url.startsWith('/list/');
+  let loose = false;
+  const render = () => { const s = q.value.trim();
+    let hits; loose = false;
+    if (!s) hits = idx;
+    else { const ws = F.words(s);
+      const all = pages.concat(idx).map((a, i) => [a, i, text(a)]);
+      let pool = all.filter(x => F.match(x[2], ws)); loose = !pool.length && ws.length > 1; if (loose) pool = all.filter(x => F.some(x[2], ws) > 0);
+      hits = pool
+        .map(x => [x[0], F.score(x[0].title + ' ' + (x[0].key || ''), x[2], ws) + (isAct(x[0]) ? 1 : 0), x[1]]).sort((a, b) => b[1] - a[1] || a[2] - b[2]).map(x => x[0]); }
+    n.textContent = s ? (hits.length && loose ? 'Nothing has every word of “' + s + '”. The closest matches:' : hits.length ? hits.length + (hits.length === 1 ? ' result' : ' results') + ' for “' + s + '”' : '') : '';
+    const H = 'href', S = 'src'; /* spelled this way so crawlers do not read the template as a real link */ out.innerHTML = hits.slice(0, 60).map(a => `<article class="card${a.photo ? ' has-photo' : ''}" data-cat="${a.category}">${/og-default/.test(a.art || a.image || 'og-default') ? '' : `<a class="card-img" ${H}="${a.url}" aria-hidden="true" tabindex="-1"><img ${S}="${a.art || a.image}" alt="" loading="lazy"></a>`}<div class="card-body"><p class="kicker">${isAct(a) ? 'Thing to do' : a.category}</p><h2 class="h3"><a ${H}="${a.url}">${a.title}</a></h2><p>${a.excerpt}</p></div></article>`).join('') || (s ? `<p>Nothing matches “${s.replace(/[<>&"]/g, '')}” yet. Try a shorter word, or <a ${H}="/list/">browse all the things to do</a>.</p>` : ''); };
   q.addEventListener('input', render); render();
 })();
 </script>{% endblock %}

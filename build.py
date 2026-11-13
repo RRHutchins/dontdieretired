@@ -816,6 +816,12 @@ def build(make_social=True):
             c["read_next"] = [a for a in rn if 3 * len(mk & _art_kw[a["slug"]]) + (a["category"] == c["category"]) >= 3][:2] or [a for a in rn if a["category"] == c["category"]][:2]
             if c.get("seo_title"): c["seo"] = c["seo_title"]
             if c.get("description"): c["meta"] = c["description"]
+            # Search words (Robin, 13 Nov 2026: "I searched for pottery and nothing came up"): besides the card's own text,
+            # the words of the id, search title, description, link labels, section headings and questions, once each
+            _sw = " ".join([c["id"].replace("-", " "), c.get("seo_title") or "", c.get("description") or "",
+                            " ".join(l["label"] for l in c["links"]), " ".join(s.get("h", "") for s in c.get("detail") or []),
+                            " ".join(str(f.get("q", "")) for f in c.get("faq") or [])]).lower()
+            _seen = set(); c["search_words"] = " ".join(w for w in re.findall(r"[a-z0-9']+", _sw) if len(w) > 2 and not (w in _seen or _seen.add(w)))
             c["has_story"] = bool(c["story_art"]) or any(i["kind"] == "read" for i in ins)
             c["has_film"] = any(i["kind"] == "film" for i in ins)
             for k in ("guide", "story"):
@@ -891,9 +897,9 @@ def build(make_social=True):
             more = (rel + [m for m in more if m not in rel])[:max(6 if c.get("collection") else 4, min(len(rel), 8))]
             urls.append(out(f"/list/{c['id']}/", "challenge.html", c=c, L=LBL, more=more, total=len(chs), pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"], "plus": _pdata["plus"]}, pkind=_pdata["kinds"][c["kind"]],
                             pext={i: _pby[i] for i in [n[0] for n in c["plan"]["nearby"]] + c["plan"]["goes"]}))
-            pages.append({"title": c["title"], "url": f"/list/{c['id']}/", "category": c["category"], "excerpt": c["why_short"],
-                          "tags": ["activity", "challenge", c["kind"], c["effort"]] + ([c["collection"]] if c.get("collection") else []) + c["id"].split("-"),
-                          "image": "/static/og-default.png", "art": "/static/og-default.png"})
+            pages.append({"title": c["title"], "key": c.get("seo_title") or "", "url": f"/list/{c['id']}/", "category": c["category"], "excerpt": c["why_short"],
+                          "tags": ["activity", "challenge", c["kind"], c["effort"]] + ([c["collection"]] if c.get("collection") else []) + c["search_words"].split(),
+                          "image": (c.get("photo") or {}).get("small") or "/static/og-default.png", "art": (c.get("photo") or {}).get("small") or "/static/og-default.png"})
     # Home (Robin, 13 Nov 2026: "Things to do is now the core of the website"): a finder first, today's story directly under
     # it, then activities for this month and in-depth pages, then the latest stories. Picks change with the build date
     # (stable within a day), photographs first. Nothing here states how many activities there are (Robin, 27 Oct 2026).
