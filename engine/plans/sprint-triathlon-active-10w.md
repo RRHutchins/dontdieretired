@@ -53,7 +53,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - **The Saturday brick session (a ride, then a run straight away).** The long session prepares you for the length of the day itself. Its pace does not matter; covering the time or distance does, so keep it at a conversational effort. [1, 2, 12]
 - **The easy run or ride, taking turns week by weeks.** Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. [10, 11]
 - **Swim technique session.** Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. [9]
-- **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. [2, 3, 19]
+- **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. [3, 19]
 - **Rest days.** Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. [4, 16]
 - **Easier weeks.** An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [12, 16]
 - **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [22, 23]
@@ -66,14 +66,14 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - Why the long session: it gets you used to the hours you will spend out on the day; pace does not matter [1, 2, 12]
 - New this week, swim technique session on Thursday: it turns sighting and two-sided breathing into habits before you need them outdoors [9]
 - Tuesday's easy run or ride, taking turns week by week: it adds fitness while leaving you fresh for the long session [10, 11]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 19]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 19]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 16]
 
 **Week 2: building.**
 
 - The brick session (a ride, then a run straight away) grows to 45 minutes, up from 40 minutes in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 14, 15]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 19]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 19]
 
 **Week 3: an easier week.**
 
@@ -92,7 +92,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 - The brick session (a ride, then a run straight away) grows to 60 minutes, up from 50 minutes in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 14, 15]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 19]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 19]
 
 **Week 6: an easier week.**
 
@@ -111,7 +111,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - Your longest brick session (a ride, then a run straight away) of the plan, 75 minutes, as close to the real day as training gets.
 - Why the long session: it gets you used to the hours you will spend out on the day; pace does not matter [1, 2, 12]
 - Swim technique session again on Thursday: it turns sighting and two-sided breathing into habits before you need them outdoors [9]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 19]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 19]
 
 **Week 9: taper.**
 
@@ -123,7 +123,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 **Week 10: the challenge.**
 
-- Two short, easy outings early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [22, 23]
+- One short, easy outing early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [22, 23]
 - No strength sessions this week; arrive rested.
 
 

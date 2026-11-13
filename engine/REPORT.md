@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-13)
 
-81 sources, 85 statements, 12 event profiles. Core 62, supported 23, thin 0, contested 0.
+81 sources, 87 statements, 12 event profiles. Core 64, supported 23, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -122,6 +122,7 @@
 | core | 9 | feet | Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. | nhs-blisters, ea-pavey-marathon, bmc-long-distance |
 | core | 9 | warning signs | In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. | mrew-safety, ms-hypothermia, pcta-safety-tips |
 | core | 9 | on the day | Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard. | rnli-tidal-wales-2026, swcpa-safety, wcp-safety |
+| core | 9 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. | lauersen-2014, cmo-2019 |
 | core | 9 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe |
 | core | 9 | on the day | Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
 | core | 9 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water, barwood-2024, oss-cold-water |
@@ -158,6 +159,7 @@
 | core | 6 | before you start | For a first triathlon, start with a super sprint or a sprint rather than a longer race. A sprint is a 400 metre pool swim or 750 metre open water swim, a 20 km (12.4 mile) ride and a 5 km (3.1 mile) run, and usually takes 75 to 90 minutes. | britri-distances, tri-ireland-first |
 | core | 6 | key session | Practise running straight after riding (a brick session), starting with about 10 minutes of easy running after a ride. Running off the bike feels heavy and uncoordinated at first, and practising it helps your pacing, your transitions and your confidence. | tri-ireland-first, usat-brick |
 | core | 6 | before you start | Build water confidence in the pool first, working on calm breathing, with lessons if you need them; move to open water later with a wetsuit, a tow float and someone watching. | tri-ireland-first, usms-open-water |
+| core | 5 | body maintenance | Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges. | nhs-strength-exercises |
 | core | 5 | body maintenance | Weight-bearing activity such as walking and running helps keep bones strong. | cmo-2019 |
 | core | 5 | body maintenance | If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. | nhs-bones-65 |
 | core | 5 | warning signs | Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. | nhs-heart-attack |
@@ -188,13 +190,13 @@
 ## Coverage by kind of challenge
 
 - altitude: 5 usable statements of its own
-- cycling: 5 usable statements of its own
+- cycling: 6 usable statements of its own
 - endurance: 16 usable statements of its own
-- hill: 11 usable statements of its own
+- hill: 12 usable statements of its own
 - multiday: 9 usable statements of its own
-- running: 8 usable statements of its own
-- swimming: 18 usable statements of its own
-- walking: 9 usable statements of its own
+- running: 9 usable statements of its own
+- swimming: 19 usable statements of its own
+- walking: 10 usable statements of its own
 
 ## Disagreements and how they were resolved
 

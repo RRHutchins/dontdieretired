@@ -166,7 +166,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 **Week 16: the challenge.**
 
-- Two short, easy outings early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [22, 23]
+- One short, easy outing early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [22, 23]
 - No strength sessions this week; arrive rested.
 
 

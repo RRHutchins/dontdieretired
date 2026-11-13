@@ -10,6 +10,7 @@
   const STATUS = { want: 'Want to', planned: 'Planned', doing: 'Doing', done: 'Done' };
   const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   const monthName = m => MONTHS[+m.slice(5, 7) - 1] + ' ' + m.slice(0, 4);   // "2027-06" → "June 2027" (My year plans)
+  const shortDate = d => new Date(d + 'T12:00').toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });   // "14 Aug 2027"
   const count = () => { const l = L.live(L.load()); return { n: l.length, done: l.filter(i => i.status === 'done').length }; };
 
   /* ---------- "Add to my list" buttons (catalogue cards, challenge pages, invite line) ---------- */
@@ -260,7 +261,7 @@
       return '<li class="fl-row' + (it.status === 'done' ? ' is-done' : '') + '" data-id="' + esc(it.id) + '">'
         + '<div class="fl-row-main"><span class="fl-row-title">' + (it.cid && !gone ? '<a href="/list/' + esc(it.cid) + '/">' + esc(t) + '</a>' : esc(gone ? 'An activity we no longer list (' + it.cid + ')' : t)) + (it.cid ? '' : ' <span class="fl-reg">Yours</span>') + '</span>'
         + '<label class="sr-only" for="st-' + i + '">Status</label><select id="st-' + i + '" data-fl-status>' + L.STATUSES.map(s => '<option value="' + s + '"' + (s === it.status ? ' selected' : '') + '>' + STATUS[s] + '</option>').join('') + '</select></div>'
-        + '<details><summary>' + (it.date || it.month || it.note ? esc([it.date ? new Date(it.date + 'T12:00').toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : it.month ? monthName(it.month) : '', it.note].filter(Boolean).join(' · ').slice(0, 70)) : 'Date, note, move') + '</summary>'
+        + '<details><summary>' + (it.date || it.month || it.note ? esc([it.date ? shortDate(it.date) + (it.until ? ' to ' + shortDate(it.until) : '') : it.month ? monthName(it.month) : '', it.note].filter(Boolean).join(' · ').slice(0, 70)) : 'Date, note, move') + '</summary>'
         + '<div class="fl-row-more">' + (it.cid && !gone ? '<p class="fl-row-plan"><a href="/list/' + esc(it.cid) + '/#plan">' + ((it.date || it.month) && it.plan_made ? 'See the plan' : 'Plan this') + ' <span aria-hidden="true">→</span></a>' + (it.month ? ' <span class="meta">Planned for ' + esc(monthName(it.month)) + '</span>' : '') + '</p>' : '')
         + '<label>Date <small>(planned for, or done on)</small><input type="date" data-fl-date value="' + esc(it.date) + '"></label>'
         + '<label>Note<textarea rows="2" maxlength="500" data-fl-note placeholder="Who with, where, how it went">' + esc(it.note) + '</textarea></label>'
@@ -292,7 +293,7 @@
   }
   function renderPrintOnly() {
     const l = L.live(L.load()).sort((a, b) => a.pos - b.pos);
-    $('[data-fl-printout]', root).innerHTML = l.map(it => '<li>' + (it.status === 'done' ? '☑ ' : '☐ ') + esc(titleOf(it) || it.cid) + ' <small>' + STATUS[it.status] + (it.date ? ', ' + esc(it.date) : it.month ? ', ' + esc(monthName(it.month)) : '') + (it.note ? '. ' + esc(it.note) : '') + '</small></li>').join('');
+    $('[data-fl-printout]', root).innerHTML = l.map(it => '<li>' + (it.status === 'done' ? '☑ ' : '☐ ') + esc(titleOf(it) || it.cid) + ' <small>' + STATUS[it.status] + (it.date ? ', ' + esc(it.date + (it.until ? ' to ' + it.until : '')) : it.month ? ', ' + esc(monthName(it.month)) : '') + (it.note ? '. ' + esc(it.note) : '') + '</small></li>').join('');
   }
   $('[data-fl-custom]', root).addEventListener('submit', e => {
     e.preventDefault(); const inp = $('input', e.target), v = inp.value.trim(); if (!v) return;
@@ -333,7 +334,7 @@
     const a = $('[data-fl-email]', root); if (!a) return;
     const d = L.load(), l = L.live(d).sort((x, y) => x.pos - y.pos);
     let body = d.title + '\n\n', left = 0;
-    l.forEach(it => { const line = (it.status === 'done' ? '[x] ' : '[ ] ') + (titleOf(it) || it.cid) + (it.status !== 'want' && it.status !== 'done' ? ' (' + STATUS[it.status].toLowerCase() + ')' : '') + (it.date ? ' ' + it.date : it.month ? ' ' + monthName(it.month) : '') + '\n'; if (body.length + line.length < 1500) body += line; else left++; });
+    l.forEach(it => { const line = (it.status === 'done' ? '[x] ' : '[ ] ') + (titleOf(it) || it.cid) + (it.status !== 'want' && it.status !== 'done' ? ' (' + STATUS[it.status].toLowerCase() + ')' : '') + (it.date ? ' ' + it.date + (it.until ? ' to ' + it.until : '') : it.month ? ' ' + monthName(it.month) : '') + '\n'; if (body.length + line.length < 1500) body += line; else left++; });
     if (left) body += '...and ' + left + ' more. Use "Save a backup" for the full list.\n';
     body += '\nhttps://dontdieretired.com/list/';
     a.href = 'mailto:?subject=' + encodeURIComponent(d.title + ': my list') + '&body=' + encodeURIComponent(body);

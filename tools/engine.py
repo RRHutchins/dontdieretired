@@ -206,7 +206,7 @@ def weekly(e, has, vals, taper, weeks, use, cite, D):
         if v is None:
             tue = f"{sname}, 20 min" + ("" if sname.startswith("easy") else ", easy")
             x.update(tue=tue, thu="rest", sat="**the challenge**", notes=["event week: rest, sleep, eat well"], head="the challenge",
-                     bullets=[f"Two short, easy outings early in the week and plenty of rest: {W('taper')}", "No strength sessions this week; arrive rested."],
+                     bullets=[f"One short, easy outing early in the week and plenty of rest: {W('taper')}", "No strength sessions this week; arrive rested."],
                      sessions=[(1, "easy", cap(tue), "Event week: rest, sleep, eat well.", clean(W("taper")))])
             out.append(x)
             break
@@ -316,7 +316,7 @@ def plan(event, weeks=None, level="active"):
     L += [f"- {g['text']} {cite(g['id'])}" for g in use if g["topic"] in ("body maintenance", "recovery") and g["use"] != "rule"]
     L += ["", "**Strength and balance routine (twice a week).** Squats, lunges, a core exercise such as a plank, and a balance exercise such as standing on one leg. "
           "Start with your own body weight, two sets of 8 to 12 slow repetitions, and add load only when that feels easy. "
-          f"{cite(*[i for i in ('strength-twice-weekly', 'legs-and-core', 'balance-work') if i in has])}"]
+          f"{cite(*[i for i in ('strength-twice-weekly', 'legs-and-core', 'legs-and-core-road', 'balance-work') if i in has])}"]
     L += ["", "## Fuel, drink and feet", ""]
     L += [f"- {g['text']} {cite(g['id'])}" for g in use if g["topic"] in ("fuel and drink", "feet") and g["use"] != "safety"]
     if e.get("kit"):

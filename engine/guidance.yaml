@@ -91,10 +91,17 @@ guidance:
     for: [cmo-2019, lauersen-2014, who-2011-older, nhs-bones-65, cdc-older-adults]
   - id: legs-and-core
     topic: body maintenance
-    applies: [hill, walking, running]
+    applies: [hill, walking]
     use: advice
     text: Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground.
     for: [bmc-hill-fit, nhs-strength-exercises]
+  # the same advice for road events, without the rough-ground clause (checkpoint item 7, 13 Nov 2026)
+  - id: legs-and-core-road
+    topic: body maintenance
+    applies: [running]
+    use: advice
+    text: Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges.
+    for: [nhs-strength-exercises]
   - id: stretching-not-protective
     topic: body maintenance
     applies: [all]
@@ -356,11 +363,20 @@ guidance:
   - id: why-strength
     topic: why
     role: strength
-    applies: [all]
+    applies: [walking, hill]
     use: why
     text: Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground.
     short: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground
     for: [lauersen-2014, cmo-2019, bmc-hill-fit]
+  # road, bike and water events: the same reason without the rough-ground clause (checkpoint item 7, 13 Nov 2026)
+  - id: why-strength-road
+    topic: why
+    role: strength
+    applies: [running, cycling, swimming]
+    use: why
+    text: Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week.
+    short: it protects you from injury (about a third of the injuries in trials)
+    for: [lauersen-2014, cmo-2019]
   - id: why-rest
     topic: why
     role: rest

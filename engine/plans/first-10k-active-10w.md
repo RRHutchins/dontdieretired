@@ -47,7 +47,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 - **The Saturday long run.** The long session prepares you for the length of the day itself. Its pace does not matter; covering the time or distance does, so keep it at a conversational effort. [1, 2, 11]
 - **The easy runs.** Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. [9, 10]
-- **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. [2, 3, 18]
+- **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. [3, 18]
 - **Rest days.** Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. [4, 15]
 - **Easier weeks.** An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [11, 15]
 - **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [21, 22]
@@ -59,14 +59,14 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - Five sessions and two rest days. The long run starts at 30 minutes.
 - Why the long session: it gets you used to the hours you will spend out on the day; pace does not matter [1, 2, 11]
 - Tuesday's easy run: it adds fitness while leaving you fresh for the long session [9, 10]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 18]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 18]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 15]
 
 **Week 2: building.**
 
 - The long run grows to 35 minutes, up from 30 minutes in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 13, 14]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 18]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 18]
 
 **Week 3: an easier week.**
 
@@ -84,7 +84,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 - The long run grows to 40 minutes, up from 35 minutes in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 13, 14]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 18]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 18]
 
 **Week 6: an easier week.**
 
@@ -102,7 +102,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 - Your longest long run of the plan, 50 minutes, as close to the real day as training gets.
 - Why the long session: it gets you used to the hours you will spend out on the day; pace does not matter [1, 2, 11]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 18]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 18]
 
 **Week 9: taper.**
 
@@ -114,14 +114,14 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 **Week 10: the challenge.**
 
-- Two short, easy outings early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [21, 22]
+- One short, easy outing early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [21, 22]
 - No strength sessions this week; arrive rested.
 
 
 ## Looking after your body
 
 - Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. [3, 5, 18, 19, 20]
-- Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground. [2, 24]
+- Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges. [24]
 - Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. [2, 18]
 - Weight-bearing activity such as walking and running helps keep bones strong. [3]
 - If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [19]

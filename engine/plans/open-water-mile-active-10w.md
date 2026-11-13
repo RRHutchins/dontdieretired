@@ -50,7 +50,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - **The Saturday continuous swim.** The long session prepares you for the length of the day itself. Its pace does not matter; covering the time or distance does, so keep it at a conversational effort. [1, 2, 9]
 - **The easy swims.** Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. [7, 8]
 - **Sighting and breathing drills.** Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. [22]
-- **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. [2, 3, 16]
+- **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. [3, 16]
 - **Rest days.** Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. [4, 13]
 - **Easier weeks.** An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [9, 13]
 - **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [19, 20]
@@ -62,7 +62,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - Five sessions and two rest days. The continuous swim starts at 800 metres.
 - Why the long session: it gets you used to the hours you will spend out on the day; pace does not matter [1, 2, 9]
 - Tuesday's easy swim: it adds fitness while leaving you fresh for the long session [7, 8]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 16]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 16]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 13]
 
 **Week 2: building.**
@@ -70,7 +70,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - The continuous swim grows to 900 metres, up from 800 metres in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 11, 12]
 - New this week, sighting and breathing drills on Thursday: it turns sighting and two-sided breathing into habits before you need them outdoors [22]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 16]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 16]
 
 **Week 3: an easier week.**
 
@@ -89,7 +89,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 - The continuous swim grows to 1,200 metres, up from 1,050 metres in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 11, 12]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 16]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 16]
 
 **Week 6: an easier week.**
 
@@ -108,7 +108,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - Your longest continuous swim of the plan, 1,600 metres, as close to the real day as training gets.
 - Why the long session: it gets you used to the hours you will spend out on the day; pace does not matter [1, 2, 9]
 - Sighting and breathing drills again on Thursday: it turns sighting and two-sided breathing into habits before you need them outdoors [22]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) and keeps you steady on rough ground [2, 3, 16]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 16]
 
 **Week 9: taper.**
 
@@ -120,7 +120,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 **Week 10: the challenge.**
 
-- Two short, easy outings early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [19, 20]
+- One short, easy outing early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [19, 20]
 - No strength sessions this week; arrive rested.
 
 

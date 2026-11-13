@@ -18,6 +18,8 @@
   const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], MON = P.MONTHS.map(m => m.slice(0, 3));
   const dayText = s => { const d = P.parse(s); return DAYS[d.getUTCDay()] + ' ' + d.getUTCDate() + ' ' + MON[d.getUTCMonth()]; };
   const daysText = s => (s.until ? dayText(s.date) + ' to ' + dayText(s.until) : dayText(s.date));   // a stay of more than one day
+  // a step belongs to month m if it falls in it; a stay that runs into later months shows in each of them too
+  const onMonth = (s, m) => s.date.slice(0, 7) === m || (!!s.until && s.date.slice(0, 7) < m && s.until.slice(0, 7) >= m);
   const STRAND = { book: 'Book', learn: 'Get ready', train: 'Train', travel: 'Getting there', kit: 'Kit', safety: 'Stay safe', day: 'The day', after: 'Afterwards' };
   const AFF_REL = 'sponsored nofollow noopener', affUrl = (u, k) => (window.DDR && DDR.affUrl ? DDR.affUrl(u, k) : u);
   const addMonths = (m, n) => { const y = +m.slice(0, 4), mo = +m.slice(5, 7) - 1 + n; return (y + Math.floor(mo / 12)) + '-' + pad(((mo % 12) + 12) % 12 + 1); };
@@ -49,7 +51,7 @@
   /* ---------- the year: one card per month ---------- */
   function months() {
     let last = addMonths(thisMonth, 11);
-    all.plans.forEach(p => { const m = (p.date || p.month + '-01').slice(0, 7); if (m > last) last = m; });
+    all.plans.forEach(p => { const m = (p.until || p.date || p.month + '-01').slice(0, 7); if (m > last) last = m; });
     const out = []; for (let m = thisMonth; m <= last && out.length < 37; m = addMonths(m, 1)) out.push(m);
     return out;
   }
@@ -57,7 +59,7 @@
     const clashDays = new Set(all.clashes.filter(c => c.kind === 'day').map(c => c.date));
     const overlaps = new Set([].concat(...all.clashes.filter(c => c.kind === 'span').map(c => c.ids)));
     $('[data-my-grid]').innerHTML = months().map(m => {
-      const days = all.steps.filter(s => s.id === 'day' && s.date.slice(0, 7) === m);
+      const days = all.steps.filter(s => s.id === 'day' && onMonth(s, m));
       const inM = all.steps.filter(s => s.id !== 'day' && s.date.slice(0, 7) === m);
       const prep = inM.filter(s => !s.week), ses = inM.filter(s => s.week);
       const open = prep.filter(s => !s.done && s.date >= today).length, sopen = ses.filter(s => !s.done && s.date >= today).length;
@@ -144,7 +146,10 @@
       + (s.detail ? '<p class="pl-detail">' + esc(s.detail) + '</p>' : '')
       + (links.length ? '<ul class="pl-links">' + links.map(linkHtml).join('') + '</ul>' : '')
       + (items.length ? '<ul class="pl-links pl-kit">' + items.map(x => '<li><a href="' + esc(x.aff ? affUrl(x.url, x.aff) : x.url) + '" target="_blank" rel="' + (x.aff ? AFF_REL : 'noopener') + '">' + esc(x.name) + '</a><span class="pl-lwhy">' + esc(x.why) + '</span></li>').join('') + '</ul>' : '')
-      + (s.why ? '<p class="pl-why"><span>Why then:</span> ' + esc(s.why) + '</p>' : '')
+      // a stay that began in an earlier month: point back to it rather than repeating "everything above is ready"
+      + (s.strand === 'day' && s.until && view === 'month' && s.date.slice(0, 7) !== month
+        ? '<p class="pl-why">Your stay began in ' + esc(P.MONTHS[+s.date.slice(5, 7) - 1]) + '. <button type="button" class="linklike" data-my-goto="' + s.date.slice(0, 7) + '">See ' + esc(P.monthYear(s.date.slice(0, 7))) + '</button> for the steps to get ready.</p>'
+        : s.why ? '<p class="pl-why"><span>Why then:</span> ' + esc(s.why) + '</p>' : '')
       + (s.moved ? '<p class="pl-why my-moved">' + esc(s.moved.why) + '</p>' : '')
       + (s.with ? '<p class="meta my-with">' + esc(s.with) + '</p>' : '')
       + (s.strand === 'day' ? tripHtml(p, s) + goesHtml(p) : ro ? '' : '<div class="my-acts">'
@@ -190,7 +195,7 @@
     const prev = addMonths(month, -1), next = addMonths(month, 1), bp = $('[data-my-step="-1"]'), bn = $('[data-my-step="1"]');
     bp.hidden = prev < first; bn.hidden = next > last;
     $('[data-my-prev]').textContent = P.MONTHS[+prev.slice(5) - 1]; $('[data-my-next]').textContent = P.MONTHS[+next.slice(5) - 1];
-    const steps = all.steps.filter(s => s.date.slice(0, 7) === month);
+    const steps = all.steps.filter(s => onMonth(s, month));
     // a month plan's "day" is the month itself, so it heads the month rather than sitting on the 1st
     const head = steps.filter(s => s.strand === 'day' && s.by_month), rest = steps.filter(s => !(s.strand === 'day' && s.by_month));
     let html = '', n = 0;
