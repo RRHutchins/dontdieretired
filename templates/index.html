@@ -1,17 +1,29 @@
 {% extends "base.html" %}{% from "_macros.html" import card, ad, product_promo %}
+{% block title %}{{ cfg.site.name }}: things worth doing, and how to start{% endblock %}
+{% block description %}Things worth doing, near you and anywhere, each with how to start and where to go, and a true story every day of someone who went and did it.{% endblock %}
 {% block pagetype %}home{% endblock %}
 {% block content %}
-<section class="hero hero-v3">
+{% macro act(c) %}<li data-cat="{{ c.category }}">
+      {% if c.photo %}<img class="fl-photo" src="{{ c.photo.small }}" alt="" width="800" height="450" loading="lazy" decoding="async">{% endif %}
+      <p class="kicker">{{ c.coll.label if c.coll else categories[c.category].label }}{% if L.effort %} · {{ L.effort[c.effort] }}{% endif %}</p>
+      <h3><a href="/list/{{ c.id }}/">{{ c.title }}</a></h3>
+      <p class="fl-why">{{ c.why_short }}</p>
+      <p class="fl-go" aria-hidden="true">How to start and where to go <span>→</span></p>
+      <button type="button" class="chip fl-add" data-fl-add="{{ c.id }}" aria-pressed="false">Add to my list</button>
+    </li>{% endmacro %}
+<section class="hero hero-v3 hero-find">
   <div class="hero-intro">
     <h1>Never retire<br>from life.</h1>
     <div class="hero-intro-side">
-      <p class="lead">One true story a day about someone doing something worth reading about, and one thing to try this week, pitched at your level: fit, unfit or somewhere in between.</p>
-      <div class="hero-actions">
-        <a class="btn" href="/start-here/">Start here</a>
-        <button class="btn btn-ghost" data-open-segments>Make it yours (20 seconds)</button>
-      </div>
+      <p class="lead">Things worth doing, near you and anywhere, each with how to start and where to go. And every day, the true story of someone who went and did something.</p>
     </div>
   </div>
+  {% if home.topics %}<form class="finder" action="/list/" method="get" role="search" aria-labelledby="finder-h" data-home>
+    <h2 id="finder-h" class="finder-h">What do you fancy doing?</h2>
+    <div class="finder-row"><label class="sr-only" for="finder-q">Search things to do</label><input id="finder-q" type="search" name="q" maxlength="80" placeholder="Swim, paint, fly fish, volunteer…" autocomplete="off"><button class="btn" type="submit">Find things to do</button></div>
+    <p class="finder-chips"><span class="finder-or">Or browse</span>{% for t in home.topics %}<a class="chip" href="/list/?topic={{ t.id }}">{{ t.label }}</a>{% endfor %}<a class="chip" href="/list/">Everything</a><a class="chip" href="/list/#mine">My list <span data-fl-n></span></a></p>
+    <p class="finder-help">Not sure? <button type="button" class="linklike" data-open-segments>Tell us what interests you</button> and we'll pick some out for you.</p>
+  </form>{% endif %}
   <a href="{{ featured.url }}" class="lead-story" data-hero-card data-cat="{{ featured.category }}">
     <span class="lead-img{% if featured.photo %} has-photo{% endif %}"><img src="{{ featured.art }}" alt="" {% if featured.photo %}width="{{ featured.photo.w }}" height="{{ featured.photo.h }}"{% else %}width="1200" height="630"{% endif %} fetchpriority="high"></span>
     <span class="lead-text">
@@ -21,9 +33,21 @@
       <span class="hero-read">Read the story</span>
     </span>
   </a>
+  {% if home.tied %}<p class="lead-tie">Have a go yourself: {% for c in home.tied %}<a href="/list/{{ c.id }}/">{{ c.title }}</a>{% if not loop.last %} or {% endif %}{% endfor %} <span aria-hidden="true">→</span></p>{% endif %}
 </section>
 
-{% if list_total %}<section class="gi-wrap" aria-label="Things to do">
+{% if home.season %}<section class="home-acts" aria-labelledby="season-h" data-home>
+  <div class="section-head"><h2 id="season-h">Good to do in {{ home.month }}</h2><a href="/list/">All things to do</a></div>
+  <ul class="fl-grid">{% for c in home.season %}{{ act(c) }}{% endfor %}</ul>
+</section>{% endif %}
+
+{% if home.deep %}<section class="home-acts" aria-labelledby="deep-h" data-home>
+  <div class="section-head"><h2 id="deep-h">Read up before you go</h2><a href="/list/">Find more</a></div>
+  <p class="section-blurb">In-depth pages: what it is really like, what it costs, where to start and the questions people ask.</p>
+  <ul class="fl-grid">{% for c in home.deep %}{{ act(c) }}{% endfor %}</ul>
+</section>{% endif %}
+
+{% if not home.topics and list_total %}<section class="gi-wrap" aria-label="Things to do">
   <a class="get-involved" href="/list/">
       <span class="gi-text"><span class="tile-k">Have a go <span class="pz-badge" data-fl-badge hidden></span></span><strong>Things to do</strong><span>Things worth doing, near you and anywhere, each with how to start and where to go. Pick your own, at any age, and keep a list of what you've done.</span></span>
       <span class="gi-go">See what you could do <span aria-hidden="true">→</span></span>
@@ -42,7 +66,7 @@
 </section>
 
 <section>
-  <div class="section-head"><h2>Latest</h2><a href="/stories/">All stories</a></div>
+  <div class="section-head"><h2>Latest stories</h2><a href="/stories/">All stories</a></div>
   <div class="grid grid-3 latest-grid">
     {% for a in latest[:5] %}{{ card(a) }}{% endfor %}
   </div>

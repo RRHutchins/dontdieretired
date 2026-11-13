@@ -686,7 +686,7 @@ def build(make_social=True):
         latest.append(a)
         if len(latest) == 6:
             break
-    urls.append(out("/", "index.html", featured=featured, latest=latest))
+    # the home page is written after the activities are ready (below), because Things to do now leads it
     for cid, c in cfg["categories"].items():
         urls.append(out(f"/{cid}/", "category.html", cid=cid, c=c, items=([a for a in arts if a.get("kind") != "guide" and a["category"] != "curious"] if cid == "stories" else [a for a in arts if a["category"] == cid]), acts=[x for x in _chs if x.get("category") == cid]))
     urls.append(out("/videos/", "videos.html"))
@@ -894,6 +894,23 @@ def build(make_social=True):
             pages.append({"title": c["title"], "url": f"/list/{c['id']}/", "category": c["category"], "excerpt": c["why_short"],
                           "tags": ["activity", "challenge", c["kind"], c["effort"]] + ([c["collection"]] if c.get("collection") else []) + c["id"].split("-"),
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})
+    # Home (Robin, 13 Nov 2026: "Things to do is now the core of the website"): a finder first, today's story directly under
+    # it, then activities for this month and in-depth pages, then the latest stories. Picks change with the build date
+    # (stable within a day), photographs first. Nothing here states how many activities there are (Robin, 27 Oct 2026).
+    home = {"topics": [], "season": [], "deep": [], "tied": [], "month": dt.date.today().strftime("%B")}
+    if _chs and "chs" in locals():
+        import zlib
+        _day, _mon = dt.date.today().toordinal(), dt.date.today().month
+        _rot = lambda pool, salt: sorted(pool, key=lambda c: (not c.get("photo"), zlib.crc32(f"{_day}-{salt}-{c['id']}".encode())))
+        _byid = {c["id"]: c for c in chs}
+        home["tied"] = [_byid[c["id"]] for c in featured.get("challenges", []) if c["id"] in _byid][:2]
+        _skip = {c["id"] for c in home["tied"]}
+        home["season"] = _rot([c for c in chs if _mon in (c["plan"].get("when") or []) and len(c["plan"]["when"]) < 12 and c["id"] not in _skip], "season")[:6]
+        _skip |= {c["id"] for c in home["season"]}
+        home["deep"] = _rot([c for c in chs if c.get("detail") and c["id"] not in _skip], "deep")[:6]
+        _used = {c["category"] for c in chs}
+        home["topics"] = [{"id": cid, "label": c["label"]} for cid, c in cfg["categories"].items() if cid in _used]
+    urls.append(out("/", "index.html", featured=featured, latest=latest, home=home, L=LBL if "LBL" in locals() else {}))
     urls.append(out("/start-here/", "start.html"))
     urls.append(out("/newsletter/", "newsletter.html"))
     urls.append(out("/shop/", "shop.html"))

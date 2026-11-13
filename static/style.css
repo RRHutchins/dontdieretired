@@ -1187,3 +1187,31 @@ h1{line-height:1.04}
 .pp-terms h2{margin-top:1.4em}
 .get-involved.gi-gift{background:var(--brand-ink)}
 .get-involved.gi-gift .gi-go{color:var(--brand-ink)}
+
+/* Home led by Things to do (Robin, 13 Nov 2026): the finder, the link from today's story, activity rows */
+.nav a.nav-lead{font-weight:600}
+.hero-find .hero-intro{margin-bottom:24px}
+.finder{background:var(--connect);color:#fff;border-radius:24px;padding:28px 32px 22px;margin:0 0 28px}
+.finder-h{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 14px;color:#fff}
+.finder-row{display:flex;gap:10px;flex-wrap:wrap}
+.finder-row input{flex:1 1 260px;min-width:0;min-height:52px;font:inherit;font-size:1.1rem;padding:.5em .9em;border:0;border-radius:12px;color:var(--ink);background:#fff}
+.finder-row input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.finder-row .btn{min-height:52px;background:var(--ink);border-color:var(--ink);color:#fff}
+.finder-row .btn:hover{background:#000}
+.finder-row .btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.finder-chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0 0}
+.finder-or{font-weight:600;margin-right:4px}
+.finder-chips .chip{background:transparent;border-color:rgba(255,255,255,.75);color:#fff;text-decoration:none;display:inline-flex;align-items:center}
+.finder-chips .chip:hover{background:rgba(255,255,255,.16)}
+.finder-chips .chip:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.finder-help{margin:14px 0 0;font-size:.98rem}
+.finder-help .linklike{color:#fff;min-height:44px}
+.finder-help .linklike:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.lead-tie{margin:14px 4px 0;font-size:1.05rem;font-weight:600}
+.lead-tie a{color:var(--brand-ink);display:inline-block;min-height:44px;line-height:44px}
+.home-acts .fl-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:900px){.home-acts .fl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.home-acts .fl-grid{grid-template-columns:1fr}}
+.section-blurb{margin:-6px 0 16px;color:var(--muted);max-width:44em}
+@media (max-width:640px){.finder{padding:22px 18px 18px;border-radius:18px}.finder-row .btn{flex:1 1 100%}}
+@media (max-width:640px){.finder-chips{flex-wrap:nowrap;overflow-x:auto;margin-left:-18px;margin-right:-18px;padding:2px 18px 6px;scrollbar-width:none}.finder-chips .chip{flex:0 0 auto}.finder-or{flex:0 0 auto}}

@@ -28,7 +28,7 @@
     const b = e.target.closest('[data-fl-add]'); if (!b) return;
     const id = b.dataset.flAdd;
     if (L.has(id)) { if ($('[data-fl]')) showView('mine'); else location.href = '/list/#mine'; return; }
-    L.add(id); track('list_add', { id, from: b.closest('[data-fl-invited]') ? 'invite' : b.closest('[data-fl-suggest]') ? 'suggestion' : $('[data-fl]') ? 'catalogue' : 'challenge' });
+    L.add(id); track('list_add', { id, from: b.closest('[data-home]') ? 'home' : b.closest('[data-fl-invited]') ? 'invite' : b.closest('[data-fl-suggest]') ? 'suggestion' : $('[data-fl]') ? 'catalogue' : 'challenge' });
     paintAdds(); if (root) { renderMine(); renderSuggest(); }
   });
 
@@ -337,7 +337,11 @@
 
   const topic = new URLSearchParams(location.search).get('topic'), catSel = sels.find(s => s.dataset.flF === 'category');
   if (topic && [...catSel.options].some(o => o.value === topic)) catSel.value = topic;
+  // /list/?q=swim arrives from the home page finder (13 Nov 2026) with the search filled in and the results in view
+  const qp = (new URLSearchParams(location.search).get('q') || '').trim().slice(0, 80);
+  if (qp) { q.value = qp; track('home_find', {}); }   // the words themselves never leave the browser
   filter(); renderSuggest(); renderMine();
+  if ((qp || topic) && location.hash !== '#mine') requestAnimationFrame(() => countEl.scrollIntoView({ block: 'start' }));
   // the list changed in another tab, or arrived from the reader's account (day 13): show it
   window.addEventListener('storage', ev => { if (ev.key === L.KEY) { paintAdds(); renderSuggest(); renderMine(); } });
   if (location.hash === '#mine') showView('mine'); else if (count().n >= 3) active();
