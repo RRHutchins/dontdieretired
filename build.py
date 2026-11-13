@@ -910,6 +910,11 @@ def build(make_social=True):
         home["deep"] = _rot([c for c in chs if c.get("detail") and c["id"] not in _skip], "deep")[:6]
         _used = {c["category"] for c in chs}
         home["topics"] = [{"id": cid, "label": c["label"]} for cid, c in cfg["categories"].items() if cid in _used]
+    # the app's Today screen leads with the same picks (13 Nov 2026): /app/home.json, read alongside /index.json
+    if (DIST / "app").exists():
+        _ac = lambda c: {"id": c["id"], "title": c["title"], "category": c["category"], "why": c["why_short"], "photo": (c.get("photo") or {}).get("small")}
+        (DIST / "app" / "home.json").write_text(json.dumps({"month": home["month"], "story": featured["url"], "tied": [_ac(c) for c in home["tied"]],
+            "season": [_ac(c) for c in home["season"]], "deep": [_ac(c) for c in home["deep"]], "topics": home["topics"]}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     urls.append(out("/", "index.html", featured=featured, latest=latest, home=home, L=LBL if "LBL" in locals() else {}))
     urls.append(out("/start-here/", "start.html"))
     urls.append(out("/newsletter/", "newsletter.html"))

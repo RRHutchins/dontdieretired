@@ -42,7 +42,8 @@
   const challenge = lvl => { const l = CHALLENGES[lvl] || CHALLENGES.starter; return l[+weekKey().split('-')[1] % l.length]; };
 
   // ---------- data ----------
-  let DATA = null, STORIES = [];
+  let DATA = null, STORIES = [], HOME = null;
+  const CAT = Object.fromEntries(TOPICS);
   const plan = id => DATA.plans.find(p => p.id === id);
   const isOpen = (p, i) => p.free || S.unlocked[p.id] || i < p.open_days;
   const doneCount = p => Object.keys(P(p.id).done).length;
@@ -73,9 +74,19 @@
     const doneToday = Object.values(P(p.id).done).includes(today());
     const s0 = pickStory() || STORIES[0], me = prof(), lvl = me.level || 'starter', fitter = lvl !== 'starter', wk = weekKey();
     const feels = Object.values(P(p.id).feel).slice(-3), easy = feels.length === 3 && feels.every(f => f >= 4) && !S.stepAsked;
+    const H = HOME || {}, acts = (l, n) => (l || []).slice(0, n).map(c => `<a class="act" data-cat="${esc(c.category)}" href="/list/${esc(c.id)}/">${c.photo ? `<img src="${esc(c.photo)}" alt="" loading="lazy" width="800" height="450">` : ''}<span class="act-t"><span class="kick">${esc(CAT[c.category] || '')}</span><b>${esc(c.title)}</b><span class="act-go">How to start and where to go →</span></span></a>`).join('');
+    const tied = s0 && H.story === s0.url ? H.tied || [] : [];
     return `
     <p class="kick">${greet()}${S.name ? ', ' + esc(S.name) : ''}</p>
-    <h1>${fitter ? 'This week\'s challenge' : doneToday ? 'Done for today. Well done.' : finished ? 'You finished the plan.' : 'Ten minutes today?'}</h1>
+    <h1>What do you fancy doing?</h1>
+    <form class="finder" action="/list/" method="get" role="search"><label class="sr-only" for="aq">Search things to do</label><input id="aq" type="search" name="q" maxlength="80" placeholder="Swim, paint, fly fish…" autocomplete="off"><button class="btn small" type="submit">Find</button></form>
+    ${(H.topics || []).length ? `<p class="chips">${H.topics.map(t => `<a class="chipl" href="/list/?topic=${esc(t.id)}">${esc(t.label)}</a>`).join('')}<a class="chipl" href="/list/">Everything</a></p>` : ''}
+    ${(H.season || []).length ? `<h2 class="sec">Good to do in ${esc(H.month)}</h2>${acts(H.season, 3)}<a class="more" href="/list/">All things to do →</a>` : ''}
+    ${s0 ? `<a class="story" href="${s0.url}" target="_blank" rel="noopener" data-cat="${esc(s0.category)}">${(s0.art || s0.image) ? `<span class="story-img"><img src="${s0.art || s0.image}" alt="" loading="lazy"></span>` : ''}<p class="kick">${me.level || me.interests.length ? 'Picked for you' : 'Today\'s story'}</p><h3>${esc(s0.title)}</h3><p class="muted">${esc(s0.excerpt).slice(0, 150)}…</p></a>` : ''}
+    ${tied.length ? `<p class="tie">Have a go yourself: ${tied.map(c => `<a href="/list/${esc(c.id)}/">${esc(c.title)}</a>`).join(' or ')} →</p>` : ''}
+    ${s0 ? `<button class="btn ghost small" data-action="share" data-url="${esc(new URL(s0.url, location.origin).href)}" data-title="${esc(s0.title)}">Share this story</button><div style="height:16px"></div>` : ''}
+    <a class="tile tile-list" href="/list/${(() => { try { return JSON.parse(localStorage.getItem('ddr_list') || '{}').items.some(i => !i.deleted) ? '#mine' : ''; } catch { return ''; } })()}"><p class="kick">My list${(() => { try { const d = JSON.parse(localStorage.getItem('ddr_list') || '{}'), l = d.items.filter(i => !i.deleted); return l.length ? ' · ' + l.filter(i => i.status === 'done').length + ' of ' + d.target + ' done' : ''; } catch { return ''; } })()}</p><h3>Things to do</h3><p class="muted">Things worth doing, with how to start each one, and a list of your own to tick off. Opens the list page (needs a connection).</p></a>
+    <h2 class="sec">${fitter ? 'This week\'s challenge' : doneToday ? 'Done for today. Well done.' : finished ? 'You finished the plan.' : 'Ten minutes today?'}</h2>
     ${fitter ? `<div class="card hero"><p class="kick">For you · ${LEVEL_NAME[lvl]}</p><h2 class="chal">${esc(challenge(lvl))}</h2>${S.chal?.[wk] ? '<p><b>✓ Done this week.</b> A new one arrives on Monday.</p>' : '<button class="btn" data-action="chal">I did it ✓</button>'}</div><p class="muted" style="margin:4px 4px 14px">The guided plans below are written for people getting going. Use them as a warm-up or pass them on.</p>` : ''}
     ${easy ? `<div class="card"><p class="kick">You said the last three felt good</p><h3>Ready for something harder?</h3><div class="row"><button class="btn small green" data-action="stepup">Yes, step me up</button><button class="btn small ghost" data-action="stepno">No, this is right</button></div></div>` : ''}
     <div class="stats">
@@ -90,9 +101,7 @@
          <a class="btn" href="#/session/${p.id}/${i}">${doneToday ? 'Do the next one anyway' : 'Start'}</a></div>
          ${doneToday ? '' : `<button class="btn ghost small" data-action="two">Short on time? The 2-minute version</button><div style="height:16px"></div>`}`}
     ${!S.tests[p.id]?.start && p.id === 'restart7' ? `<div class="card"><p class="kick">Before Day 1</p><h3>Take the 1-minute test</h3><p class="muted">How many times can you stand up from a chair in 30 seconds? You'll do it again on Day 7 and see the difference.</p><a class="btn green small" href="#/test/${p.id}/start">Take the test</a></div>` : ''}
-    ${s0 ? `<a class="story" href="${s0.url}" target="_blank" rel="noopener" data-cat="${esc(s0.category)}">${(s0.art || s0.image) ? `<span class="story-img"><img src="${s0.art || s0.image}" alt="" loading="lazy"></span>` : ''}<p class="kick">${me.level || me.interests.length ? 'Picked for you' : 'Today\'s story'}</p><h3>${esc(s0.title)}</h3><p class="muted">${esc(s0.excerpt).slice(0, 150)}…</p></a>` : ''}
-    ${s0 ? `<button class="btn ghost small" data-action="share" data-url="${esc(new URL(s0.url, location.origin).href)}" data-title="${esc(s0.title)}">Share this story</button><div style="height:16px"></div>` : ''}
-    <a class="tile tile-list" href="/list/${(() => { try { return JSON.parse(localStorage.getItem('ddr_list') || '{}').items.some(i => !i.deleted) ? '#mine' : ''; } catch { return ''; } })()}"><p class="kick">My list${(() => { try { const d = JSON.parse(localStorage.getItem('ddr_list') || '{}'), l = d.items.filter(i => !i.deleted); return l.length ? ' · ' + l.filter(i => i.status === 'done').length + ' of ' + d.target + ' done' : ''; } catch { return ''; } })()}</p><h3>Things to do</h3><p class="muted">Things worth doing, with how to start each one, and a list of your own to tick off. Opens the list page (needs a connection).</p></a>
+    ${(H.deep || []).length ? `<h2 class="sec">Read up before you go</h2>${acts(H.deep, 3)}` : ''}
     <a class="tile tile-puzzle" href="/puzzle/"><p class="kick">Today's puzzles${(() => { try { const k = JSON.parse(localStorage.getItem('ddr_puzzle') || '{}').streak, t = new Date(), f = d => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'), y = new Date(t.getFullYear(), t.getMonth(), t.getDate() - 1); return k && (k.last === f(t) || k.last === f(y)) && k.cur ? ' · ' + k.cur + '-day streak' : ''; } catch { return ''; } })()}</p><h3>Four daily puzzles</h3><p class="muted">Wheel, Ladder, Sudoku and Numbers, at three levels. New every day. Opens the puzzle page (needs a connection).</p></a>
     <a class="tile tile-scam" href="/scam-help/"><p class="kick">Use it as often as you like</p><h3>Scam checker</h3><p class="muted">A text, email, call or someone at the door: check it before you act. Opens the scam checker page (needs a connection).</p></a>
     ${installCard()}`;
@@ -331,7 +340,7 @@
   });
 
   // ---------- boot ----------
-  Promise.all([fetch('/app/data.json').then(r => r.json()), fetch('/index.json').then(r => r.json()).catch(() => [])])
-    .then(([d, st]) => { DATA = d; STORIES = st; render(); });
+  Promise.all([fetch('/app/data.json').then(r => r.json()), fetch('/index.json').then(r => r.json()).catch(() => []), fetch('/app/home.json').then(r => r.json()).catch(() => null)])
+    .then(([d, st, h]) => { DATA = d; STORIES = st; HOME = h; render(); });
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('/app/sw.js', { scope: '/app/' }).catch(() => {});
 })();
