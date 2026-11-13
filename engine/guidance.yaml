@@ -176,7 +176,8 @@ guidance:
     applies: [hill]
     use: advice
     text: Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail.
-    for: [ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips]
+    for: [ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials]
+    note: The National Park Service's Ten Essentials (2026) puts navigation first and also says to bring a physical map as a back-up and a spare phone battery.
 
   # ---------- the event itself ----------
   - id: taper
@@ -436,7 +437,8 @@ guidance:
     applies: [swimming]
     use: safety
     text: Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back.
-    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather]
+    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather, swt-snorkel-safety, nps-buis-safety]
+    note: The Scottish Wildlife Trust (never snorkel alone; tell people where you are going) and the Buck Island Reef safety page (do not swim alone) give the same advice to snorkellers.
   - id: ow-cold-shock
     topic: warning signs
     applies: [swimming]

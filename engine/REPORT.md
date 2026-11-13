@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-12)
+# Guidance engine report (2026-11-13)
 
-78 sources, 85 statements, 12 event profiles. Core 62, supported 23, thin 0, contested 0.
+81 sources, 85 statements, 12 event profiles. Core 62, supported 23, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -80,6 +80,9 @@
 - USDA Forest Service, Gifford Pinchot National Forest, *Mount St. Helens Climbing Safety (last updated 1 May 2025)* (2025). Opened 2026-11-12.
 - National Oceanic and Atmospheric Administration (NOAA), JetStream, *Rip Current Safety (last updated 11 July 2023)* (2023). Opened 2026-11-12.
 - American Red Cross, *Beach and Ocean Safety (undated page; year is the year opened)* (2026). Opened 2026-11-12.
+- U.S. National Park Service, *Ten Essentials (last updated 28 May 2026)* (2026). Opened 2026-11-13.
+- U.S. National Park Service, Buck Island Reef National Monument, *Safety (last updated 10 August 2017)* (2017). Opened 2026-11-13.
+- Scottish Wildlife Trust (Living Seas snorkel trail), *Snorkel safety (last modified 16 July 2026)* (2026). Opened 2026-11-13.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -103,13 +106,14 @@
 | core | 18 | altitude | Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. | nhs-altitude, nathnac-altitude, cdc-altitude, inyo-whitney-leaflet |
 | core | 15 | before you start | Start from your current level and build up gradually; repeating a week is fine and is part of the plan, not a failure. | cmo-2019, nhs-c25k, who-2011-older |
 | core | 15 | altitude | See your GP or a travel clinic before a high-altitude trip, especially if you have a health condition or have had altitude sickness before; they can discuss preventive medicine. Make sure your insurance covers evacuation. | nhs-altitude, nathnac-altitude, cdc-altitude |
+| core | 15 | on the day | Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather, swt-snorkel-safety, nps-buis-safety |
+| core | 14 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials |
 | core | 14 | taper | In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. | bosquet-2007, ea-pavey-marathon, higdon-novice1, greatrun-half-plan, emf-half-beginner |
 | core | 13 | altitude | Being fit does not protect you from altitude sickness. Choose an itinerary with acclimatisation days and climb slowly however strong you feel. | nathnac-altitude, tanapa-kili, cdc-altitude |
 | core | 13 | altitude | If you fly or drive straight to a high town, rest there for a day or two before you walk any higher, drink enough water, and avoid alcohol for the first two days. | nhs-altitude, cdc-altitude, promperu-inca |
 | core | 12 | intensity | Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. | ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km |
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
 | core | 12 | on the day | Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. | ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits, usfs-msh-climbing-safety |
-| core | 11 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips |
 | core | 11 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. | lauersen-2014, cmo-2019, bmc-hill-fit |
 | core | 11 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water, nhs-hypothermia |
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
@@ -118,7 +122,6 @@
 | core | 9 | feet | Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. | nhs-blisters, ea-pavey-marathon, bmc-long-distance |
 | core | 9 | warning signs | In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. | mrew-safety, ms-hypothermia, pcta-safety-tips |
 | core | 9 | on the day | Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard. | rnli-tidal-wales-2026, swcpa-safety, wcp-safety |
-| core | 9 | on the day | Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather |
 | core | 9 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe |
 | core | 9 | on the day | Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water |
 | core | 9 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water, barwood-2024, oss-cold-water |

@@ -3380,18 +3380,163 @@
   - us
   why: You navigate between checkpoints on a detailed map, choosing your own route, so thinking counts as much as speed. Courses are colour-coded by difficulty and the beginner ones keep to paths.
   start:
-  - Read British Orienteering's newcomers guide or find a club through Orienteering USA.
-  - Pick a local event and enter a beginner course such as White or Yellow.
-  - Walk it the first time and concentrate on keeping the map lined up with the ground.
+  - Find a local event on British Orienteering's Event Finder, which lets you filter for newcomers, or through an Orienteering USA club.
+  - Enter a beginner course (White or Yellow), tell the registration desk you are new, and hire a dibber or e-punch for the timing.
+  - Walk it the first time, keep the map lined up with the ground, and report to the finish even if you do not complete the course.
   links:
-  - label: 'British Orienteering: newcomers guide'
-    url: https://www.britishorienteering.org.uk/newcomers_guide
+  - label: 'British Orienteering: Event Finder'
+    url: https://www.britishorienteering.org.uk/event
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-13'
+  - label: 'British Orienteering: frequently asked questions'
+    url: https://britishorienteering.org.uk/FAQs
+    region: uk
+    checked: '2026-11-13'
   - label: 'Orienteering USA: find a club'
     url: https://orienteeringusa.org/events/clubs/
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-13'
+  safety: Always report to the finish, even if you give up part-way, so the organisers know you are safely off the course and do not start a search.
+  inspire:
+  - kind: read
+    person: Lesley Grattan
+    line: Came back to orienteering with Lagan Valley Orienteers when her daughter wanted to take up running, and now orienteers alongside her and helps run events, such as working at the start.
+    title: Finding your Feet in Orienteering - hear from a mother-daughter pair who are reasonably new to the world of Orienteering
+    outlet: British Orienteering
+    url: https://britishorienteering.org.uk/news/6031/finding_your_feet_in_orienteering_hear_from_a_mother_daughter_pair_who_are_reasonably_new_to_the_world_of_orienteering
+    checked: '2026-11-13'
+  seo_title: 'Orienteering for beginners: courses, costs and kit'
+  description: What orienteering is, what the White, Yellow and Orange courses mean in the UK and US, what a first event costs, and what to wear and bring.
+  detail:
+  - h: What it's really like
+    p:
+    - Orienteering USA calls it "the sport of navigation, using a highly detailed map". The course is printed on the map in purple (magenta), with a triangle for the start, numbered circles for the checkpoints
+      (called controls) and a double circle for the finish. On the ground, each control is an orange and white flag, and you have to visit them in order.
+    - Events are timed, but you do not have to run. British Orienteering says walking boots or trainers are fine if you intend to walk; there is a time limit, so check it at registration. At most events
+      you carry an electronic timing stick, called a dibber in the UK and an e-punch or finger stick in the US, and you touch it on a unit at each control. At the end you get a printout of your time between
+      each pair of controls.
+    - The hard part is not the distance. It is keeping the map turned to match the ground, so that what is ahead of you on the paper is ahead of you on the path. Orienteering USA's advice is to hold the
+      map so its north arrow points the same way as the north arrow on your compass.
+  - h: Course colours, UK and US side by side
+    table:
+      head:
+      - Colour
+      - UK (as Forth Valley Orienteers and Countryfile describe them)
+      - US (as one club lists them)
+      rows:
+      - - White
+        - Technical difficulty 1; about 1-1.5 km; all on paths, aimed at young children
+        - 2-3 km; the beginner course, on trails, streams and other linear features
+      - - Yellow
+        - Technical difficulty 2; about 1.5-2 km; along paths, fences and other line features
+        - 3-5 km; advanced beginner, for adults with basic map skills
+      - - Orange
+        - Technical difficulty 3; about 2.5-3.5 km; controls a little way off paths, first route choices
+        - 4-7 km; intermediate, much of it off the trail network
+      - - Red
+        - Technical difficulty 3; a longer, not too technical course for adult beginners and improvers
+        - 4-7 km; expert, same difficulty as Green but longer
+      - - Light Green
+        - Technical difficulty 4; about 2.5-3.5 km; reading contours
+        - Not usually offered
+      - - Green
+        - Technical difficulty 5; about 3.5-5 km
+        - 4-7 km; expert, for experienced orienteers
+      - - Blue
+        - Technical difficulty 5; about 5-7 km
+        - The longest expert course, at regional and national events
+    after: The colours do not mean the same thing on both sides of the Atlantic. In the UK a Red course is a longer course at Orange difficulty, but in the US Red is an expert course. White is aimed at
+      children in the UK but is where adult beginners start in the US. The UK club Forth Valley Orienteers advises adult beginners not to attempt anything harder than Orange, and course lengths vary from
+      club to club, so check the event page.
+  - h: What a first event costs
+    table:
+      head:
+      - Event
+      - Entry (as last listed)
+      - Timing hire
+      rows:
+      - - British Orienteering, typical UK fees
+        - £5 for a small event; £10-£15 for a medium or large event
+        - Dibber may need to be hired
+      - - Leicestershire Orienteering Club, Burbage Common Winter League 8 (February 2026)
+        - £5 British Orienteering member; £6 non-member; £1.50 for adults on the Short course
+        - SI dibber £1
+      - - 'Cascade Orienteering, Winter League #2, Big Finn Hill Park, Washington (November 2026)'
+        - $22 non-member; $17 member; $5 per extra adult in a group
+        - E-punch $5, or $5 off with your own
+      - - Bay Area Orienteering Club, California
+        - Varies by event; free beginner clinics at all public events
+        - Compass hire $1
+    after: 'Some clubs, such as Bay Area Orienteering Club, offer free beginner clinics: ask at registration. Countryfile puts typical UK entry at around £3-£12, and some events are free.'
+  - h: Kinds of event
+    list:
+    - 'Local events: the place to start. British Orienteering grades events Local, Regional, National, Major and International, and its Event Finder flags those suitable for newcomers.'
+    - 'Urban and sprint events: short courses in built-up areas, on large-scale maps.'
+    - 'Night events: some UK clubs, such as Forth Valley Orienteers, run night events through the winter; a head torch is essential.'
+    - 'Permanent courses: fixed markers in a park or forest that you can visit at any time with a printed map. British Orienteering lists them on its finder, and Orienteering USA has a locator map searchable
+      by ZIP code.'
+  - h: Reading the map and what to wear
+    p:
+    - 'Orienteering maps use standard colours: black for buildings, rocks and other man-made features, brown for the shape of the land (contours, usually 5 metres apart), blue for water and marsh, yellow
+      for open land, white for forest you can run through, and green for vegetation, where the darker the green, the harder it is to get through. The usual scales are 1:10,000 and 1:15,000; at 1:10,000,
+      1 cm on the map is 100 m on the ground.'
+    - Wear clothes that cover your arms and legs against brambles, and trail shoes with grip. A compass is useful, especially on harder courses; British Orienteering says a smartphone compass will do, and
+      clubs often hire them out. Some events ask you to carry a whistle, and a waterproof jacket earns its place, since the sport runs all year.
+  faq:
+  - q: What is orienteering?
+    a: A sport in which you find a series of checkpoints using a detailed map, choosing your own route between them. Events are timed, but you can walk, jog or run.
+  - q: Which orienteering course should a beginner do?
+    a: In the UK, British Orienteering says White, Yellow and Orange are designed for complete beginners, and Countryfile recommends Yellow for adult beginners. In the US, adult beginners usually start
+      on White or Yellow.
+  - q: How much does orienteering cost?
+    a: British Orienteering says adult fees are typically £5 for a small event and £10-£15 for a medium or large one, plus a small charge to hire a dibber. A US local event listed $22 for non-members, with
+      $5 to rent an e-punch.
+  - q: Do I need a compass for orienteering?
+    a: Not for the easiest courses, which stay on paths, but it helps on anything harder. Clubs often hire them out, and British Orienteering says a smartphone compass can be used.
+  - q: What is a dibber in orienteering?
+    a: A small electronic timing stick you touch on a unit at each control. At the finish it gives you a printout of your time between controls.
+  - q: Can you walk an orienteering course?
+    a: Yes. British Orienteering says walking boots or trainers are fine if you intend to walk.
+  sources:
+  - label: 'Orienteering USA: What is Orienteering'
+    url: https://orienteeringusa.org/explore/what-is-orienteering/
+    checked: '2026-11-13'
+  - label: 'Orienteering USA: How to Orienteer'
+    url: https://orienteeringusa.org/explore/how-to-orienteer/
+    checked: '2026-11-13'
+  - label: 'Orienteering USA: Permanent & DIY Courses'
+    url: https://orienteeringusa.org/events/permanent-courses/
+    checked: '2026-11-13'
+  - label: 'British Orienteering: Frequently Asked Questions'
+    url: https://britishorienteering.org.uk/FAQs
+    checked: '2026-11-13'
+  - label: 'British Orienteering: Event Finder'
+    url: https://www.britishorienteering.org.uk/event
+    checked: '2026-11-13'
+  - label: 'British Orienteering: Permanent Orienteering Courses'
+    url: https://www.britishorienteering.org.uk/permanent_orienteering_courses
+    checked: '2026-11-13'
+  - label: 'Forth Valley Orienteers: Course lengths and difficulty'
+    url: https://www.fvo.org.uk/info/go-orienteering/course-lengths-and-difficulty
+    checked: '2026-11-13'
+  - label: 'Countryfile: Why orienteering is the next best activity to test your navigation skills (course lengths, kit, costs)'
+    url: https://www.countryfile.com/go-outdoors/get-active/orienteering-guide
+    checked: '2026-11-13'
+  - label: 'Possum Trot Orienteering Club: Orienteering Courses'
+    url: https://ptoc.org/home/orienteering-courses/
+    checked: '2026-11-13'
+  - label: 'Leicestershire Orienteering Club: Burbage Common Winter League 8'
+    url: https://www.leioc.org.uk/event-details/?item=83805
+    checked: '2026-11-13'
+  - label: 'Cascade Orienteering: 2026-27 Winter League #2, Big Finn Hill Park'
+    url: https://www.cascadeoc.org/?p=21812
+    checked: '2026-11-13'
+  - label: 'Bay Area Orienteering Club: Your First Orienteering Event'
+    url: https://baoc.org/get-started
+    checked: '2026-11-13'
+  - label: 'Orienteering Ireland: Orienteering Maps'
+    url: https://www.orienteering.ie/how-do-i-start/orienteering-maps/
+    checked: '2026-11-13'
   kit:
   - name: Baseplate compass
     why: the kind used with a paper map; learn it before you rely on it
@@ -3399,6 +3544,14 @@
   - name: Trail running shoes
     why: grip on grass, mud and woodland paths
     url: https://www.amazon.co.uk/s?k=trail+running+shoes
+  - name: Safety whistle
+    why: some events ask you to carry one
+    url: https://www.amazon.co.uk/s?k=safety+whistle+outdoor
+  related:
+  - learn-map-and-compass
+  - parkrun
+  - join-a-ramblers-group
+  - geopark-walk
 - id: play-pickleball
   title: Play a game of pickleball
   category: move
@@ -5488,25 +5641,257 @@
   season: Spring to autumn
   regions:
   - uk
-  why: England and Wales have a family of waymarked long-distance paths, each following a coastline, ridge or ancient border. Finishing one gives you a line across the map that you have walked every step of.
+  - us
+  why: England and Wales have a family of waymarked long-distance paths, each following a coastline, ridge, river or ancient border, from 79 miles of chalk wolds to 630 miles of South West coast. Finishing
+    one gives you a line across the map that you have walked every step of.
   start:
-  - Compare the trails on the official National Trails site and choose one.
-  - Decide whether to walk it in one go or in stages.
-  - Book accommodation along the route and walk to the final waymark.
+  - Use the comparison table below to pick a trail whose length, number of days and terrain suit you, then read its page on the National Trails site.
+  - Decide whether to walk it in one go or in day sections, and book beds early if you are going in spring, summer or over a bank holiday.
+  - Buy a map or guidebook, arrange luggage transfer if you do not want to carry everything, and follow the acorn waymarks from the first signpost.
   links:
-  - label: 'National Trails (official site): Offa''s Dyke Path, with all trails in the menu'
-    url: https://www.nationaltrail.co.uk/en_GB/trails/offas-dyke-path/
+  - label: 'National Trails (official site): choose your National Trail'
+    url: https://nationaltrail.co.uk/trails
     region: uk
-    checked: '2026-10-06'
-  safety: 'Some sections are remote and exposed: carry a map, waterproofs, food and water, and tell someone your route each day.'
+    checked: '2026-11-13'
+  - label: 'GOV.UK: National Trails, prepare for your visit'
+    url: https://www.gov.uk/guidance/national-trails-prepare-for-your-visit
+    region: uk
+    checked: '2026-11-13'
+  - label: 'National Park Service: National Scenic Trails'
+    url: https://www.nps.gov/subjects/nationaltrailssystem/national-scenic-trails.htm
+    region: us
+    checked: '2026-11-13'
+  safety: 'Some sections are remote, and coast paths have cliff edges and tides: carry a map, waterproofs, food and water, check tide times, and tell someone your route each day.'
   guide: walking-holidays-for-beginners-after-50
   story: karl-bushby-walk-home-channel
+  seo_title: 'National Trails in England and Wales: which to walk first'
+  description: Every National Trail in England and Wales compared by length, days and terrain, plus acorn waymarks, luggage transfer, passports and US equivalents.
+  detail:
+  - h: The trails side by side
+    table:
+      head:
+      - Trail
+      - Length
+      - Typical days
+      - Character
+      rows:
+      - - Yorkshire Wolds Way
+        - 79 miles (127 km)
+        - About 6
+        - Gentle chalk country with some low hills and short steep dry-valley climbs; no stiles
+      - - Hadrian's Wall Path
+        - 84 miles (135 km)
+        - 6 to 7 for experienced walkers
+        - Coast to coast beside the Roman Wall; many short climbs between Chollerford and Birdoswald
+      - - The Ridgeway
+        - 87 miles (139 km)
+        - About 6
+        - Mostly off-road on an ancient route from Avebury to Ivinghoe Beacon; muddy when wet; no stiles
+      - - South Downs Way
+        - 100 miles (160 km)
+        - 8 or 9
+        - Chalk ridge from Winchester to Eastbourne, with several steep sections
+      - - Cotswold Way
+        - 102 miles (164 km)
+        - 7 to 10
+        - Along the Cotswold Edge from Chipping Campden to Bath; many steep climbs
+      - - Cleveland Way
+        - 109 miles (175 km)
+        - About 9
+        - North York Moors moorland then coast; challenging in places, especially the coast
+      - - Glyndŵr's Way
+        - 135 miles (217 km)
+        - About 9
+        - Very hilly mid Wales moor, farmland and forest; rough and remote in places
+      - - North Downs Way
+        - 153 miles (246 km)
+        - About 12
+        - Farnham to Dover; much of it fairly level, with steep sections around Guildford to Reigate
+      - - Peddars Way and Norfolk Coast Path
+        - 158 miles (254 km)
+        - About 14
+        - Gentle sandy tracks through the Brecks, then beaches, dunes and saltmarsh
+      - - Offa's Dyke Path
+        - 177 miles (285 km)
+        - About 2 weeks
+        - Chepstow to Prestatyn along the Welsh border; hardest from Knighton to Brompton Crossroads
+      - - Thames Path
+        - 185 miles (298 km)
+        - About 14
+        - From the source of the Thames to Woolwich; mostly flat, can flood
+      - - Pembrokeshire Coast Path
+        - 186 miles (299 km)
+        - About 12
+        - Cliff tops, coves and estuaries; about 11,000 m of ascent and descent; two tidal crossings
+      - - Coast to Coast Path
+        - 190 miles (306 km)
+        - About 13 with a rest day
+        - St Bees to Robin Hood's Bay; demanding, hilly and remote, hardest in the west
+      - - Pennine Bridleway
+        - 205 miles (330 km) with both loops
+        - Not given
+        - Shared with riders and cyclists; tracks, cobbles and steep South Pennine valleys
+      - - Pennine Way
+        - 268 miles (431 km)
+        - 16 to 19
+        - Edale to Kirk Yetholm; hilly, very remote in places, boggy ground, snow in winter
+      - - South West Coast Path
+        - 630 miles (1,014 km)
+        - 30 to 56
+        - Minehead to South Haven Point in eight sections; exposed clifftops with steep climbs in places
+      - - King Charles III England Coast Path
+        - Around 2,700 miles (about 4,350 km) when fully open
+        - Not given
+        - Still opening in sections; check which parts are open before you plan
+    after: Lengths and days come from the trail pages in the government's "Visit a National Trail" guidance for England and Wales, opened on 13 November 2026; descriptions are condensed from the same pages.
+      All 16 trails listed on the National Trails site are here, plus the Coast to Coast Path, which the government guidance now lists among England's National Trails.
+  - h: Choosing your first
+    p:
+    - For a first end-to-end walk, the shorter trails make a realistic week. The Yorkshire Wolds Way, Hadrian's Wall Path and The Ridgeway each take about six or seven days, and the Wolds Way and Ridgeway
+      have no stiles at all. The South Downs Way and Cotswold Way take a little over a week and finish in Eastbourne and Bath.
+    - The Pennine Way is the opposite end of the scale. The official page warns of lots of challenging ascents and sections with no amenities, such as Tan Hill to Middleton-in-Teesdale. Save it, and the
+      remoter parts of Glyndŵr's Way, until you have a few multi-day walks behind you.
+    - You do not have to do it all at once. The government's trail pages split each route into sections, many of them a day's walk, so you can walk one in stages; one couple in the Offa's Dyke Path Hall
+      of Fame walked it in sections over a year. We have separate full guides to the Coast to Coast, Hadrian's Wall Path and the South West Coast Path.
+  - h: Acorns, beds and bags
+    p:
+    - Every National Trail is waymarked with an acorn symbol or the trail name, usually on gates and signposts, and the government calls them all easy to follow. Where a section is diverted, follow the
+      local signs rather than your map or guidebook, and check the National Trails site for closures before you set off.
+    - There is accommodation along and near every trail, but it can be fully booked in spring, summer and on bank holidays, so book early. Camping means an official campsite; wild camping near the trails
+      usually needs the landowner's permission.
+    - If you would rather not carry a full pack, luggage transfer companies will move your bags between overnight stops, and walking holiday companies can book the whole itinerary for you. Download or buy
+      a map or guidebook before you go, as there may be no internet on the trail.
+  - h: Passports, completion cards and registers
+    p:
+    - On Offa's Dyke Path you can download the Completion Card from the trail's Hall of Fame page, get it date-stamped at the start, the finish and at least three places in between (post offices, pubs or
+      B&Bs), and post it to the trail team to join the Hall of Fame and receive a free keyring. The Offa's Dyke Association also sells a seasonal passport for its stamping boxes (£6, as last listed) and
+      a personalised certificate with a completion badge (£7.95), and says its 2026 stamping season was due to start at Easter.
+    - If one trail leads to another, the Long Distance Walkers Association keeps a free National Trails Register covering England, Wales and Scotland, with bronze at five trails, silver at ten, gold at
+      fifteen and diamond for all twenty.
+  - h: Scotland and the United States
+    p:
+    - In Scotland, the waymarked long-distance routes are Scotland's Great Trails, 29 routes adding up to over 1,900 miles (3,000 km). Each is clearly waymarked, runs largely off-road and has visitor services
+      along the way; they range from 24 to 210 miles (40 to 340 km), and NatureScot keeps the official list. Our West Highland Way guide covers the best known.
+    - In the US, the nearest equivalent is the National Scenic Trails, set up under the National Trails System Act of 1968. The National Park Service lists 11 of them, mainly non-motorised continuous trails
+      of 100 miles or more. They include the 215-mile (346 km) New England Trail through Connecticut and Massachusetts and the 1,000-mile (1,609 km) Ice Age Trail in Wisconsin, and the Appalachian (2,190
+      miles) and Pacific Crest (2,650 miles), which we cover in separate section-hiking guides.
+  faq:
+  - q: How many National Trails are there in England and Wales?
+    a: The National Trails website lists 16, and the government's 2026 guidance also lists the Coast to Coast Path among England's National Trails. The National Trails site put the network at around 3,600
+      miles (5,800 km) as of March 2024.
+  - q: What is the shortest National Trail?
+    a: The Yorkshire Wolds Way, at 79 miles (127 km) from Hessle to Filey Brigg, takes about six days. Hadrian's Wall Path (84 miles) and The Ridgeway (87 miles) are close behind.
+  - q: Which National Trail is the easiest?
+    a: The government's pages describe the Yorkshire Wolds Way and Peddars Way as gentle and the Thames Path as mostly flat, and The Ridgeway has no stiles. All still mean several days of walking in a row.
+  - q: What does the acorn sign mean on a footpath?
+    a: The acorn marks a National Trail. You will find it, or the trail's name, on gates and signposts along every National Trail in England and Wales.
+  - q: Can I get my luggage carried on a National Trail?
+    a: Yes. Luggage transfer companies move bags between overnight stops or from start to finish, and walking holiday companies can book transfers, beds and itineraries.
+  - q: Do you get a certificate for walking Offa's Dyke Path?
+    a: You can send a stamped Completion Card to the trail team to join its Hall of Fame and receive a free keyring. The Offa's Dyke Association also sells a personalised certificate and completion badge,
+      at £7.95 as last listed.
+  sources:
+  - label: National Trails, Choose your National Trail
+    url: https://nationaltrail.co.uk/trails
+    checked: '2026-11-13'
+  - label: National Trails, Offa's Dyke Path Hall of Fame (Completion Card)
+    url: https://nationaltrail.co.uk/en_GB/trails/offas-dyke-path/hall-of-fame/page/2
+    checked: '2026-11-13'
+  - label: GOV.UK, National Trails, prepare for your visit
+    url: https://www.gov.uk/guidance/national-trails-prepare-for-your-visit
+    checked: '2026-11-13'
+  - label: GOV.UK, Visit a National Trail in England
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england
+    checked: '2026-11-13'
+  - label: GOV.UK, Cleveland Way National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/cleveland-way-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Coast to Coast Path National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/coast-to-coast-path-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Cotswold Way National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/cotswold-way-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Hadrian's Wall Path National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/hadrians-wall-path-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, North Downs Way National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/north-downs-way-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Peddars Way and Norfolk Coast Path National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/peddars-way-and-norfolk-coast-path-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Pennine Bridleway National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/pennine-bridleway-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Pennine Way National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/pennine-way-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, South Downs Way National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/south-downs-way-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, South West Coast Path National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/south-west-coast-path-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Thames Path National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/thames-path-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, The King Charles III England Coast Path National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/the-king-charles-iii-england-coast-path-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, The Ridgeway National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/the-ridgeway-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Yorkshire Wolds Way National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-england/yorkshire-wolds-way-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Offa's Dyke Path National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-wales/offas-dyke-path-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Glyndŵr's Way National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-wales/glyndwrs-way-national-trail
+    checked: '2026-11-13'
+  - label: GOV.UK, Pembrokeshire Coast Path National Trail
+    url: https://www.gov.uk/government/publications/visit-a-national-trail-in-wales/pembrokeshire-coast-path-national-trail
+    checked: '2026-11-13'
+  - label: Natural Resources Wales, National Trails
+    url: https://naturalresources.wales/days-out/national-trails/?lang=en
+    checked: '2026-11-13'
+  - label: Offa's Dyke Association, Passports
+    url: https://offasdyke.org.uk/category/passports/
+    checked: '2026-11-13'
+  - label: Long Distance Walkers Association, National Trails Register
+    url: https://www.ldwa.org.uk/nationaltrails/nationaltrails.php
+    checked: '2026-11-13'
+  - label: Scotland's Great Trails, About
+    url: https://www.scotlandsgreattrails.com/about/
+    checked: '2026-11-13'
+  - label: National Park Service, National Scenic Trails
+    url: https://www.nps.gov/subjects/nationaltrailssystem/national-scenic-trails.htm
+    checked: '2026-11-13'
+  - label: National Park Service, National Trails System management
+    url: https://www.nps.gov/subjects/nationaltrailssystem/management.htm
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Harriet Thomas
+    line: Walked from Land's End towards John o'Groats to raise money for Dementia Adventure in memory of her mum, and called the Chepstow to Knighton stretch of Offa's Dyke Path a highlight, with the view
+      from Hergest Ridge "truly magical".
+    title: Offa's Dyke friendliest and most magical says fundraiser walking 900 miles for charity
+    outlet: Shropshire Star
+    url: https://shropshirestar.com/your-world/2024/10/08/offas-dyke-friendliest-and-most-magical-says-fundraiser-walking-900-miles-for-charity
+    checked: '2026-11-13'
+  related:
+  - walk-coast-to-coast
+  - walk-hadrians-wall-path
+  - walk-south-west-coast-path
+  - walk-west-highland-way
   kit:
   - name: Walking boots
     why: try them on in the afternoon with your walking socks, and break them in before a long day
     url: https://www.amazon.co.uk/s?k=walking+boots+waterproof
   - name: Daypack (20 to 30 litres)
-    why: room for water, waterproofs, food and a warm layer
+    why: room for water, waterproofs, food and a warm layer when your main bag goes ahead by luggage transfer
     url: https://www.amazon.co.uk/s?k=hiking+daypack+25+litre
   - name: Blister plasters
     why: put one on at the first hot spot, before it becomes a blister
@@ -8369,24 +8754,165 @@
   regions:
   - uk
   - us
-  why: Table tennis packs spin, angles and split-second decisions into a space the size of a dining table, and a rally can be enjoyable at any standard. Clubs and social sessions lend bats, so all you need is a pair of trainers.
+  why: Table tennis packs spin, angles and split-second decisions into a space the size of a dining table, and a rally can be enjoyable at any standard. Many social sessions and leisure centres provide
+    bats and balls, so all you need is a pair of trainers.
   start:
-  - Search Table Tennis England's table finder for a club or a public table, or the USA Table Tennis Find A Club page.
-  - Ask the club when it holds social or beginners' sessions and whether bats are lent.
-  - Play a few friendly games first, then ask a club coach to look at your grip and serve.
+  - Search Table Tennis England's Table Finder (or Table Tennis Wales's Where to Play list, or the USA Table Tennis Club Finder) for a club, social session or public table near you.
+  - Ask the club when it holds social or beginners' sessions, what a session costs and whether bats are provided or lent.
+  - Play a few friendly games first, then ask a club coach to look at your grip and serve before you buy your own bat.
   links:
-  - label: Table Tennis England (national body; links to its table and club finder)
-    url: https://www.tabletennisengland.co.uk/
+  - label: 'Table Tennis England: Table Finder listing types'
+    url: https://www.tabletennisengland.co.uk/table-finder/glossary-of-terms/
     region: uk
-    checked: '2026-10-07'
-  - label: USA Table Tennis (US national governing body)
-    url: https://www.usatt.org/
+    checked: '2026-11-13'
+  - label: 'Table Tennis Wales: Where to Play'
+    url: https://tabletennis.wales/?p=1941
+    region: uk
+    checked: '2026-11-13'
+  - label: USA Table Tennis Club Finder
+    url: https://www.usatt.org/usa-table-tennis-club-finder
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-13'
+  seo_title: 'Table tennis clubs for adults: how to start playing'
+  description: How to start table tennis as an adult, with real session prices from UK and US clubs, the basic rules and serve, choosing a first bat, and leagues.
+  detail:
+  - h: Where to find a game
+    p:
+    - Table Tennis England's Table Finder lists far more than clubs. Its categories include affiliated clubs (most run league teams and practice sessions), community and social hubs for friendly games,
+      leisure centres with tables for hire, bars and cafes with tables, free outdoor tables put in public spaces through its Ping! programme, and pop-up Ping Pong Parlours in empty shops. It also flags
+      Back to TT sessions for adults returning to the game, Bat & Chat social sessions aimed at older players, and clubs with wheelchair-accessible facilities.
+    - In Wales, Table Tennis Wales lists clubs and leagues by region, with times, contacts and wheelchair access, and notes that most clubs make a small charge per session. In the US, start with the USA
+      Table Tennis Club Finder.
+  - h: Real ways in, compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Chelmsford Sport and Athletics Centre
+        - Bat and Chat sessions led by a qualified coach on weekday daytimes; equipment provided
+        - £4.60 per session
+      - - New Community Table Tennis Club, Eastleigh
+        - Sunday evening open practice; balls provided, bats for hire
+        - £5 for non-members, or £4 plus £15 a year membership (page last updated February 2022)
+      - - Shene Sports and Fitness Centre, Richmond (Better)
+        - Book a table by the hour; bats and balls included as an introductory offer
+        - £13.90 per table per hour standard, £7.50 concessionary
+      - - Bounce
+        - Book a ping pong table for at least 55 minutes
+        - £6 per person
+      - - Outdoor Ping! tables
+        - Free public tables; not bookable and often no bats or balls
+        - Free
+      - - LGS Recreation Adult Table Tennis Club, Saratoga, California
+        - Weekly sessions in a community centre for all levels from first-time beginners
+        - $4 drop-in; $55 membership for 2026
+      - - Pictona, Holly Hill, Florida
+        - Table tennis club within a pickleball and activity centre
+        - $5 a day, $24 a month or $200 a year
+    after: Prices are taken from each venue's own page, opened on 13 November 2026; check before you go, as sessions and prices change.
+  - h: The rules you need for a first game
+    list:
+    - A game is first to 11 points, and you must win by two clear points, so at 10-10 play goes on until someone leads by two.
+    - Each player serves twice in a row, then the serve passes over. From 10-10 the serve changes after every point.
+    - Toss the ball straight up from a flat palm at least 16 cm (6 inches), and hit it from behind the table, without hiding it from your opponent.
+    - The serve must bounce once on your side and then once on your opponent's. If it clips the net and goes over, it is a let and you serve again; there are no second serves.
+    - In doubles the serve goes diagonally from right half to right half, and partners take turns to hit.
+    - Matches are usually best of three for social play, or best of five or seven in competition.
+  - h: Choosing a first bat
+    p:
+    - Table Tennis England recommends that a beginner starts with a ready-made bat, and says these can cost as little as £1.99. If you buy one, its guide suggests an all-round blade, usually five plies
+      of wood, with reverse rubber on a 1.5 mm sponge, which gives good control.
+    - Once you are ready to progress, a custom bat (a blade and rubbers chosen separately) can lift your game, but research the options first. Long pimpled rubbers, which reverse spin, are not recommended
+      for beginners. Under USA Table Tennis rules a competition bat has one black side and the other in another approved colour.
+  - h: Leagues, membership and ratings
+    p:
+    - Most English clubs field teams in a local league. Table Tennis England's Compete membership, aimed at local league players, cost £25 for adults in the 2025-26 season and includes personal accident
+      insurance and national ratings. Compete Plus, £47 for 2025-26, opens up the higher-level national competitions.
+    - In the US, USA Table Tennis Bronze membership ($25 a year as last listed) covers its leagues and insurance, and Silver ($50) adds 0 to 4 star tournaments. Ratings come from sanctioned leagues and
+      tournaments; if your first event is against only unrated players, you are provisionally rated 1,200, and otherwise your first rating is worked out from your results against rated opponents.
+  faq:
+  - q: How do I find a table tennis club near me?
+    a: In England, use Table Tennis England's Table Finder, which shows clubs, social sessions, leisure centres and free outdoor tables. In Wales use Table Tennis Wales's Where to Play list, and in the
+      US the USA Table Tennis Club Finder.
+  - q: How much does it cost to join a table tennis club?
+    a: Many clubs charge by the session. As last listed, a coach-led session in Chelmsford was £4.60, and drop-in play at a community club in Saratoga, California was $4.
+  - q: Do I need my own bat to start table tennis?
+    a: Not usually. Many social sessions and leisure centres provide equipment, but outdoor public tables often have no bats or balls, so check first.
+  - q: How many points is a game of table tennis?
+    a: Eleven, and you must win by two clear points. Each player serves twice in turn, and from 10-10 the serve changes every point.
+  - q: What are the serve rules in table tennis?
+    a: Toss the ball straight up from a flat palm at least 16 cm (6 inches), strike it from behind the table without hiding it, and make it bounce once on each side. A serve that clips the net and goes
+      over is replayed.
+  - q: What bat should a beginner buy?
+    a: Table Tennis England suggests a ready-made bat to start. If you want more, it recommends an all-round blade with reverse rubber on a 1.5 mm sponge.
+  sources:
+  - label: Table Tennis England, Table Finder glossary of terms
+    url: https://www.tabletennisengland.co.uk/table-finder/glossary-of-terms/
+    checked: '2026-11-13'
+  - label: Table Tennis England, Basic rules of the game
+    url: https://www.tabletennisengland.co.uk/loop/basic-rules-of-the-game/
+    checked: '2026-11-13'
+  - label: Table Tennis England, Equipment guidance
+    url: https://www.tabletennisengland.co.uk/loop/equipment-guidance/
+    checked: '2026-11-13'
+  - label: Table Tennis England, 2025-26 membership prices and options confirmed
+    url: https://www.tabletennisengland.co.uk/news/2025/2025-26-membership-prices-and-options-confirmed-for-the-new-season/
+    checked: '2026-11-13'
+  - label: Table Tennis England Table Finder, New Community Table Tennis Club
+    url: https://www.tabletennisengland.co.uk/ping-tables/new-community-table-tennis-club/
+    checked: '2026-11-13'
+  - label: Table Tennis Wales, Where to Play
+    url: https://tabletennis.wales/?p=1941
+    checked: '2026-11-13'
+  - label: Chelmsford City Council, Table tennis
+    url: https://www.chelmsford.gov.uk/leisure-centres/what/other-sports/table-tennis
+    checked: '2026-11-13'
+  - label: Better, Shene Sports and Fitness Centre table tennis
+    url: https://www.better.org.uk/leisure-centre/london/richmond-upon-thames/shene-sports-and-fitness-centre/table-tennis
+    checked: '2026-11-13'
+  - label: Bounce, Ping pong
+    url: https://bounce.kota.co.uk/games/ping-pong
+    checked: '2026-11-13'
+  - label: LGS Recreation, Adult Table Tennis Club
+    url: https://www.lgsrecreation.org/adults/adult-table-tennis-club/
+    checked: '2026-11-13'
+  - label: Pictona, Table tennis membership rates
+    url: https://pictona.org/table-tennis-club/table-tennis-membership-rates/
+    checked: '2026-11-13'
+  - label: USA Table Tennis, Basic rules of table tennis
+    url: https://www.usatt.org/officials/basic-rules-of-table-tennis
+    checked: '2026-11-13'
+  - label: USA Table Tennis, Membership
+    url: https://www.usatt.org/usatt-membership
+    checked: '2026-11-13'
+  - label: USA Table Tennis, Club Finder
+    url: https://www.usatt.org/usa-table-tennis-club-finder
+    checked: '2026-11-13'
+  - label: USATT ratings guide (Simply Compete)
+    url: https://usatt.simplycompete.com/info/ratings
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Pat Johnson
+    line: Came back to table tennis at Bishop Auckland Table Tennis Club and a local Ping Pong Parlour after a spell away from the game while caring for her husband and father.
+    title: Reversing lapsed participation – Pat's story
+    outlet: Table Tennis England
+    url: https://www.tabletennisengland.co.uk/case-studies/reversing-lapsed-participation-pats-story/
+    checked: '2026-11-13'
+  related:
+  - play-badminton
+  - play-pickleball
+  - play-squash
+  - play-tennis
   kit:
   - name: Table tennis bat
-    why: a ready-made bat is fine for a beginner
+    why: a ready-made bat is what Table Tennis England suggests for a beginner
     url: https://www.amazon.co.uk/s?k=table+tennis+bat
+  - name: Table tennis balls (40mm)
+    why: for outdoor public tables, which often have no balls
+    url: https://www.amazon.co.uk/s?k=table+tennis+balls+40mm
 - id: learn-to-ice-skate
   title: Learn to ice skate
   category: move
@@ -16742,31 +17268,177 @@
   regions:
   - uk
   - us
-  why: With a mask, a snorkel and a pair of fins you can float over a kelp forest, a coral reef or a shallow shipwreck and watch what lives there. The British Sub-Aqua Club offers pool sessions to learn the basics, and NOAA lists snorkelling sites in America's national marine sanctuaries, from the Florida Keys to Monterey Bay.
+  why: With a mask, a snorkel and a pair of fins you can float over a kelp bed, a coral reef or a shallow shipwreck and watch what lives there. Britain has marked snorkel trails from Dorset to East Lothian,
+    and US national parks have underwater trails with signs along the reef.
   start:
-  - Contact BSAC about an Experience Snorkelling pool session, or ask a local dive shop about a beginner lesson.
-  - Read NOAA's guide to snorkelling in national marine sanctuaries and pick a site suited to beginners.
-  - Go with a buddy or a guided group, and give wildlife plenty of space.
+  - Learn the basics in a pool or sheltered water, for example on a British Sub-Aqua Club (BSAC) Snorkel Diver course or a beginner lesson at a dive centre.
+  - Pick a calm, shallow site with a marked trail, such as Kimmeridge Bay in Dorset or the Trunk Bay underwater trail in the US Virgin Islands, and check its season and booking rules.
+  - Go with a buddy or a guided group, check the tide and weather, and give wildlife plenty of space.
   links:
-  - label: 'BSAC (British Sub-Aqua Club): try snorkelling'
-    url: https://www.bsac.com/learn-to-dive/learn-to-snorkel/try-snorkelling
+  - label: 'BSAC (British Sub-Aqua Club): snorkel training and qualifications'
+    url: https://www.bsac.com/training/snorkelling-courses/
     region: uk
-    checked: '2026-10-08'
-  - label: 'NOAA National Marine Sanctuaries: snorkelling in the sanctuaries'
-    url: https://sanctuaries.noaa.gov/visit/snorkeling.html
+    checked: '2026-11-13'
+  - label: 'Dorset Wildlife Trust: Kimmeridge Bay snorkel trail'
+    url: https://www.dorsetwildlifetrust.org.uk/node/5422
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Virgin Islands National Park: snorkelling'
+    url: https://www.nps.gov/viis/planyourvisit/snorkeling.htm
     region: us
-    checked: '2026-10-08'
-  safety: Never snorkel alone, and check tides, currents and boat traffic before you get in.
+    checked: '2026-11-13'
+  safety: Never snorkel alone, check tides, wind and boat traffic before you get in, and in UK water wear a wetsuit, since anything below 15°C counts as cold water.
+  inspire:
+  - kind: read
+    person: Jenny Kent, from mid-Cornwall
+    line: Swapped crowded surf beaches for snorkelling, trained as a Seasearch volunteer and in 2023 recorded wildlife at about 20 spots on Cornwall's north and south coasts, from kelp forests to seagrass
+      meadows.
+    title: How I became a snorkelling volunteer with Seasearch
+    outlet: Seasearch
+    url: https://seasearch.org.uk/blog/JennyKent-Snorkelling-for-Seasearch
+    checked: '2026-11-13'
+  seo_title: 'Snorkelling for beginners: kit, safety and where to go'
+  description: How to snorkel for the first time, from mask fit and wetsuits to safety, plus snorkel trails in Dorset, East Lothian, Hawaii and the Virgin Islands.
+  detail:
+  - h: What it's really like
+    p:
+    - You float face down on the surface, breathing through the snorkel and watching the seabed below. On a calm, clear day in Britain that can mean crabs, wrasse, blennies, anemones and kelp in water you
+      can stand up in. On a tropical reef it means coral and shoals of fish a few metres beneath you.
+    - The honest hard parts are water in the mask, water in the snorkel and, in Britain, the cold. Dorset Wildlife Trust warns that the sea at Kimmeridge can be colder than expected and advises a wetsuit;
+      the RNLI defines anything below 15°C as cold water, which can seriously affect breathing and movement. Visibility drops after heavy rain or strong wind, so a trip may need to wait for a better day.
+  - h: Getting the kit right
+    list:
+    - 'Mask: it should seal comfortably against your face. Hold it in place without the strap and breathe in gently through your nose; it should stay put.'
+    - 'Snorkel: a self-drain valve at the bottom helps clear water, and some have a guard at the top to keep splashes out. Learn to clear water from it in shallow water before you head out.'
+    - 'Fins: the right size matters, and badly fitting shoe fins cause blisters. They are not needed everywhere: Dorset Wildlife Trust recommends leaving them off on the Kimmeridge trail, where they can
+      damage wildlife.'
+    - 'Warmth: in UK water, the Scottish Wildlife Trust lists a wetsuit, hood, gloves and boots alongside mask, snorkel and fins.'
+    - 'Flotation: the Florida Keys National Marine Sanctuary suggests novices use a snorkel vest to stay afloat, rather than a pool noodle, which can drift off and become litter.'
+    - 'Tow float: a bright one makes you visible, and the Scottish Wildlife Trust recommends carrying one.'
+  - h: Where to snorkel, UK and US compared
+    table:
+      head:
+      - Place
+      - What you might see
+      - Rules and booking (as last listed)
+      rows:
+      - - Kimmeridge Bay snorkel trail, Dorset (Dorset Wildlife Trust)
+        - Edible, spider and velvet swimming crabs, blennies, ballan and corkwing wrasse, snakelocks anemones, kelp
+        - About 400 m, marked by five buoys; May to September only; mask and snorkel hire £5 plus £20 cash deposit; toll to park; confident sea swimmers only
+      - - East Lothian snorkel trail, including Milsey Bay at North Berwick (Scottish Wildlife Trust)
+        - Ballan wrasse, dead man's fingers, velvet swimming crabs, dogfish, hermit crabs
+        - Self-guided, at your own risk; beginner areas at Gullane Bents, Yellowcraig and Milsey Bay
+      - - Hanauma Bay Nature Preserve, O'ahu, Hawaii
+        - Reef fish and coral in a volcanic crater bay
+        - Closed Mondays and Tuesdays; non-resident entry $25 plus a 2.35% online fee; book online from 7am two days ahead; everyone watches a short educational video; parking $3 cash for non-residents
+      - - Buck Island Reef National Monument, St Croix
+        - Coral grottoes on an underwater trail with signs
+        - Maximum depth in the grottoes 3.7 m (12 ft); reached on boat trips; trail closed sunset to sunrise; fishing and collecting banned
+      - - Trunk Bay underwater trail, Virgin Islands National Park, St John
+        - Coral and reef fish, with plaques along the way
+        - About 90 m (300 ft) along the cay; described by the park as a great place for beginners
+      - - Biscayne National Park, Florida
+        - Coral reefs and a shipwreck on the Maritime Heritage Trail
+        - By guided boat trip with the Biscayne National Park Institute or another authorised operator; advance reservations advised
+    after: Scotland now has snorkel trails in 13 areas, from Arran and Orkney to Berwickshire, and Hawai'i residents enter Hanauma Bay free with ID. Rules and prices change, so check each official page
+      before you travel.
+  - h: Staying safe
+    list:
+    - 'Never go alone. BSAC suggests three as the smallest party: a buddy pair in the water and a lookout on shore. The Scottish Wildlife Trust adds: always tell people where you are going.'
+    - Check the tide. BSAC says slack water, usually near high or low tide, is the safest time, and Dorset Wildlife Trust suggests neap tides for the Kimmeridge trail.
+    - Watch the wind. BSAC notes that Force 3 to 4 is usually enough to cancel a snorkel.
+    - Avoid busy boat lanes, strong currents and rip tides. At Buck Island, snorkellers are told to stay in front of moored boats, and at Dunbar to keep away from the harbour entrance.
+    - Do not snorkel in rough weather, or for a day or two after heavy rain, when water quality can drop.
+    - Keep your hands and fins off the reef. Coral is easily damaged, and some corals sting or cut.
+    - In an emergency in the UK, call 999 or 112 and ask for the Coastguard; in the US, call 911.
+  - h: How to build up
+    p:
+    - Start in a pool or shallow, calm water until breathing through the snorkel feels normal; the National Park Service at Buck Island gives the same advice before you head for the reef. BSAC's Snorkel
+      Diver course runs in a pool or sheltered water, and its Advanced Snorkeller course moves into open water and aims to make you self-reliant. After that, a marked trail on a calm summer day is a good
+      first sea snorkel, and volunteer surveys such as Seasearch give you a reason to keep going back.
+  faq:
+  - q: How do you snorkel for the first time?
+    a: Practise in a pool or shallow, calm water until breathing through the snorkel feels natural, then try a marked trail on a calm day with a buddy. A beginner course, such as BSAC's Snorkel Diver, covers
+      the basics.
+  - q: Do you need to be a good swimmer to snorkel?
+    a: You need to be comfortable in the water. Dorset Wildlife Trust says its Kimmeridge trail is only for confident sea swimmers, and Florida Keys National Marine Sanctuary suggests a snorkel vest for
+      novices.
+  - q: Do you need a wetsuit to snorkel in the UK?
+    a: It is strongly advised. Dorset Wildlife Trust recommends one at Kimmeridge, and the RNLI defines anything below 15°C as cold water, which can seriously affect breathing and movement.
+  - q: How should a snorkel mask fit?
+    a: It should seal comfortably against your face. Hold it to your face without the strap and breathe in gently through your nose; if it stays put, it fits.
+  - q: Do you need a reservation for Hanauma Bay?
+    a: Non-residents are advised to book online, up to two days ahead from 7am Hawai'i time, and entry was last listed at $25 plus an online fee. A limited number of walk-in tickets are available, first
+      come, first served, and the preserve is closed on Mondays and Tuesdays.
+  - q: Where can I snorkel in the UK?
+    a: Marked trails include Kimmeridge Bay in Dorset (May to September) and the Scottish Wildlife Trust's trails in 13 areas of Scotland, including East Lothian.
+  sources:
+  - label: 'BSAC: Snorkel training and qualifications'
+    url: https://www.bsac.com/training/snorkelling-courses/
+    checked: '2026-11-13'
+  - label: 'BSAC: Snorkelling with BSAC (booklet)'
+    url: https://www.bsac.com/document/snorkelling-12pp-booklet-a5-2025-no-marks/snorkelling-12pp-booklet-a5-2025-no-marks.pdf
+    checked: '2026-11-13'
+  - label: 'Dorset Wildlife Trust: Kimmeridge Bay snorkel trail'
+    url: https://www.dorsetwildlifetrust.org.uk/node/5422
+    checked: '2026-11-13'
+  - label: 'Scottish Wildlife Trust: Snorkel Scotland, about the project'
+    url: https://snorkel.scottishwildlifetrust.org.uk/about-us
+    checked: '2026-11-13'
+  - label: 'Scottish Wildlife Trust: Snorkel safety'
+    url: https://snorkel.scottishwildlifetrust.org.uk/safety/
+    checked: '2026-11-13'
+  - label: 'Scottish Seabird Centre: Explore East Lothian''s life beneath the waves'
+    url: https://www.seabird.org/press-releases/explore-east-lothian-s-life-beneath-the-waves
+    checked: '2026-11-13'
+  - label: 'RNLI: safety advice ahead of May Bank Holiday weekend (2026)'
+    url: https://rnli.org/news-and-media/2026/april/30/rnli-issues-safety-advice-ahead-of-may-bank-holiday-weekend
+    checked: '2026-11-13'
+  - label: 'City and County of Honolulu: Hanauma Bay Nature Preserve'
+    url: https://www.honolulu.gov/dpr/hanauma-bay-nature-preserve/
+    checked: '2026-11-13'
+  - label: 'City and County of Honolulu: Hanauma Bay History'
+    url: https://www.honolulu.gov/dpr/hanauma-bay-nature-preserve/hanauma-bay-history/
+    checked: '2026-11-13'
+  - label: 'Buck Island Reef National Monument: Outdoor Activities'
+    url: https://www.nps.gov/buis/planyourvisit/outdooractivities.htm
+    checked: '2026-11-13'
+  - label: 'Buck Island Reef National Monument: Safety'
+    url: https://www.nps.gov/buis/planyourvisit/safety.htm
+    checked: '2026-11-13'
+  - label: 'Virgin Islands National Park: Snorkeling'
+    url: https://www.nps.gov/viis/planyourvisit/snorkeling.htm
+    checked: '2026-11-13'
+  - label: 'Biscayne National Park: Guided Tours'
+    url: https://www.nps.gov/bisc/planyourvisit/guidedtours.htm
+    checked: '2026-11-13'
+  - label: 'Florida Keys National Marine Sanctuary: Tips For Being a Responsible Diver'
+    url: https://floridakeys.noaa.gov/visitor_information/things-to-do/responsible-diving.html
+    checked: '2026-11-13'
+  - label: 'SSI: Snorkeling for Beginners (mask fit check)'
+    url: https://www.divessi.com/en/blog/how-to-snorkel-beginners-guide-2626
+    checked: '2026-11-13'
+  - label: 'Seasearch: How I became a snorkelling volunteer with Seasearch'
+    url: https://seasearch.org.uk/blog/JennyKent-Snorkelling-for-Seasearch
+    checked: '2026-11-13'
   kit:
   - name: Snorkel and mask set
     why: 'the mask matters most: press it to your face without the strap, and it should stay'
     url: https://www.amazon.co.uk/s?k=snorkel+mask+set+adult
+  - name: Snorkelling wetsuit
+    why: keeps you warm enough to stay in UK water for more than a few minutes
+    url: https://www.amazon.co.uk/s?k=wetsuit+adult+snorkelling
+  - name: Swim tow float
+    why: makes you easy to see from shore and from boats
+    url: https://www.amazon.co.uk/s?k=swim+tow+float
   - name: Snorkelling fins
     why: make swimming easier and faster; try the fit with bare feet or socks as you'll use them
     url: https://www.amazon.co.uk/s?k=snorkelling+fins+adult
-  - name: Rash vest
-    why: sun and chafe protection on the water
-    url: https://www.amazon.co.uk/s?k=rash+vest+adult+long+sleeve
+  related:
+  - wild-swim
+  - try-scuba-diving
+  - learn-to-swim-adult
+  - join-a-beach-clean
 - id: canoe-a-river-trail
   title: Paddle a marked canoe trail
   category: travel
@@ -38093,3 +38765,1373 @@
     url: https://ahgtc.org.uk/
     region: uk
     checked: '2026-11-13'
+- id: learn-bonsai
+  title: Learn the art of bonsai
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: months
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Bonsai turns a nursery plant into a small, shaped tree through pruning, wiring and repotting, and the work carries on for years. Beginners' workshops at colleges and botanic gardens send you home
+    with your own tree, and local bonsai societies meet monthly to show you what to do next.
+  start:
+  - 'Book a beginners'' workshop where you style a tree to take home: a land-based college, a botanic garden or an arboretum.'
+  - Find your nearest bonsai society and go to a meeting as a visitor; many hold practical demonstrations and welcome beginners.
+  - 'Ask your tutor which tree to start with and where it should live: one US course asks students to have an outdoor spot with at least six hours of direct sun.'
+  links:
+  - label: 'Plumpton College: one-day bonsai workshop'
+    url: https://www.plumpton.ac.uk/courses/bonsai-yamadori-workshop-plumpton-college-certificate/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'The National Bonsai Society (Southport): meetings and beginners'
+    url: https://thenationalbonsaisociety.co.uk/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Lewis Ginter Botanical Garden: Bonsai for Beginners'
+    url: https://www.lewisginter.org/event/bonsai-for-beginners-sept/
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Bonsai classes for beginners: where to learn and costs'
+  description: Where to learn bonsai as a beginner in the UK and US, from one-day college workshops to botanic garden classes and local bonsai societies, with costs.
+  detail:
+  - h: How people learn
+    p:
+    - Most beginners start with a short hands-on class and take a tree home. Plumpton College's one-day workshop covers choosing a tree, branch composition, pruning and wiring, and seasonal care and troubleshooting,
+      and you make a bonsai from an ethically collected wild seedling.
+    - The second step is usually a club. The National Bonsai Society in Southport, formed in 1973, meets on the third Tuesday of each month at Holmeswood Village Hall, welcomes visitors and runs practical
+      meetings with a speaker or demonstrator for beginners and experienced growers. Bonsai societies also turn up at garden shows; at the 2026 Bonsai Show at RHS Garden Wisley, the Sutton Bonsai Society
+      gave talks on year-round care and on pruning and wire training.
+    - Expect some losses. Lewis Ginter Botanical Garden supplies care information with each starter tree but says it cannot guarantee that live plants will survive once they leave the workshop.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Plumpton College, Stanmer campus
+        - One day, 10:00 to 15:00; make a bonsai to take home
+        - £100
+      - - Lewis Ginter Botanical Garden
+        - Two-hour evening class (2026 run); all materials and a starter bonsai included
+        - $44 members, $50 non-members
+      - - National Bonsai & Penjing Museum, US National Arboretum
+        - 'Bonsai Basics: Chrysanthemum Bonsai, five classes from May to November (2025 run); plants, pots, wire and potting mix included'
+        - $225
+      - - The National Bonsai Society, Southport
+        - Monthly club meetings with demonstrations; visitors welcome
+        - Not listed
+    after: The Morton Arboretum in Illinois also ran a three-hour beginners' workshop with the Prairie State Bonsai Society in August 2026, for ages 16 and over; its page did not list a price.
+  faq:
+  - q: How do I start bonsai as a complete beginner?
+    a: Take a beginners' workshop where you style a tree and take it home, then join a local bonsai society. Lewis Ginter Botanical Garden's beginners' class needs no previous knowledge of bonsai.
+  - q: How much does a bonsai class cost?
+    a: As last listed, from $44 for a two-hour botanic garden class to £100 for a one-day college workshop and $225 for a five-class course at the US National Arboretum.
+  - q: Do bonsai trees live indoors or outdoors?
+    a: It depends on the tree, so ask your tutor. The chrysanthemum course at the National Bonsai & Penjing Museum asks students to have an outdoor area with at least six hours of direct sun a day.
+  - q: Are there bonsai clubs in the UK?
+    a: Yes. The National Bonsai Society in Southport meets monthly and welcomes visitors, and other societies, such as Sutton Bonsai Society, give talks and demonstrations at RHS shows.
+  sources:
+  - label: Plumpton College, Bonsai Yamadori Workshop
+    url: https://www.plumpton.ac.uk/courses/bonsai-yamadori-workshop-plumpton-college-certificate/
+    checked: '2026-11-13'
+  - label: The National Bonsai Society
+    url: https://thenationalbonsaisociety.co.uk/
+    checked: '2026-11-13'
+  - label: RHS, Bonsai Show at RHS Garden Wisley
+    url: https://www.rhs.org.uk/shows-events/viewevent?efid=294
+    checked: '2026-11-13'
+  - label: Lewis Ginter Botanical Garden, Bonsai for Beginners
+    url: https://www.lewisginter.org/event/bonsai-for-beginners-sept/
+    checked: '2026-11-13'
+  - label: 'National Bonsai Foundation, Bonsai Basics: Chrysanthemum Bonsai'
+    url: https://bonsai-nbf.org/calendar/2025/bonsai-basics-chrysanthemum
+    checked: '2026-11-13'
+  - label: 'The Morton Arboretum, Introduction to Bonsai Workshop: Chinese Elm'
+    url: https://mortonarb.org/explore/activities/adult-programs/introduction-bonsai-workshop-chinese-elm/
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Dan Barton, Bristol Bonsai Society
+    line: Founded the Bristol Bonsai Society in 1975 with 18 people at the first meeting, judged bonsai at the RHS Chelsea Flower Show for more than 25 years, and tells newcomers to join their local society.
+    title: 'Finding the balance: the art of bonsai'
+    outlet: The Bristol Magazine
+    url: https://thebristolmag.co.uk/finding-the-balance-the-art-of-bonsai/
+    checked: '2026-11-13'
+  kit:
+  - name: Bonsai tool set
+    why: concave cutters, scissors and wire cutters for pruning and wiring
+    url: https://www.amazon.co.uk/s?k=bonsai+tool+set+beginner
+  - name: Bonsai training wire
+    why: aluminium wire in several thicknesses for shaping branches
+    url: https://www.amazon.co.uk/s?k=bonsai+aluminium+training+wire
+  related:
+  - learn-ikebana
+  - identify-twenty-trees
+  - visit-an-open-garden
+  - learn-kintsugi
+- id: learn-film-photography
+  title: Learn darkroom film photography
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Developing your own black and white film means loading it onto a spool in total darkness, then developing, fixing, washing and drying it to get your negatives. Printing in a darkroom adds enlargements,
+    contact sheets and the old skills of dodging and burning.
+  start:
+  - 'Decide whether you want developing only, or developing and printing: some classes cover only the film, others take you through to enlarged prints.'
+  - Book a darkroom course at an adult education college, a university short-course programme or a community photo centre, and check what materials you must buy.
+  - Shoot a roll of black and white film before the first class if the course asks for one; City Lit and the Harvey Milk Photo Center both suggest Ilford HP5 400.
+  links:
+  - label: 'City Lit: Learn to process black and white photographic film (London)'
+    url: https://www.citylit.ac.uk/courses/learn-to-process-black-and-white-photographic-film
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Edinburgh short courses: Beginners Darkroom Photography'
+    url: https://www.shortcourses.ed.ac.uk/course/beginners-darkroom-photography
+    region: uk
+    checked: '2026-11-13'
+  - label: 'The Light Factory: Black and White Darkroom (Charlotte, North Carolina)'
+    url: https://lightfactory.org/black-white-darkroom/
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Darkroom courses: learn to develop and print film'
+  description: Where to learn black and white film developing and darkroom printing in the UK and US, what each course covers, what to bring and what it costs.
+  detail:
+  - h: Developing versus printing
+    p:
+    - Darkroom courses split into two skills. Developing turns your exposed roll into negatives; City Lit's three-week course covers loading film onto a spool in total darkness, the chemistry (including
+      more ecologically friendly options), developing, fixing, washing and drying, then an analogue contact sheet and ways to digitise negatives. It is listed as intermediate, so you need to be able to
+      use a film camera and set exposures already.
+    - Printing makes enlargements from those negatives. The Light Factory's course covers film basics for beginners and, for more advanced students, contact sheets, enlargements, filters, and dodging and
+      burning, and students bring their own RC or fibre paper. The Harvey Milk Photo Center's film development class, by contrast, spends no time in the printing darkroom.
+    - Some community darkrooms ask newcomers to take an orientation first. In Philadelphia, The Halide Project runs a pay-what-you-can darkroom and asks newcomers to take an orientation class first.
+  - h: Courses compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Three Tuesday mornings, 26 January to 9 February 2027; film developing and a contact sheet
+        - £169, or £135 senior and £110 concession
+      - - Beginners Darkroom Photography, Edinburgh short courses
+        - Evening course from 29 September 2026; developing, contact sheets and printing; materials not included
+        - £320
+      - - The Light Factory, Charlotte, North Carolina
+        - Classes of up to five; film basics for beginners, developing and printing for advanced students; bring your own paper
+        - $275 members, $325 non-members
+      - - Harvey Milk Photo Center
+        - Basic Black and White Film Development, evening class (2026 runs); developing only, bring a shot roll
+        - $50
+    after: Edinburgh asks learners not to buy materials until the course is confirmed to run, and The Light Factory has loaner 35mm cameras for students without one.
+  faq:
+  - q: Can I learn to develop film at home?
+    a: The core steps of loading, developing, fixing, washing and drying film are what a course like City Lit's teaches, so a class is a sensible first step before buying kit. Printing enlargements needs
+      a darkroom and enlarger.
+  - q: Do I need my own film camera for a darkroom course?
+    a: Not always. City Lit can lend a 35mm SLR to students confident using one, and The Light Factory has loaner 35mm cameras.
+  - q: How much does a darkroom course cost?
+    a: As last listed, from $50 for a film development class at the Harvey Milk Photo Center to £320 for an evening course in Edinburgh, with materials often extra.
+  - q: What film should I use to learn developing?
+    a: Ask your tutor. City Lit recommends Ilford HP5 400, and the Harvey Milk Photo Center suggests Ilford HP5+ 400 or Kodak Tri-X 400.
+  sources:
+  - label: City Lit, Learn to process black and white photographic film
+    url: https://www.citylit.ac.uk/courses/learn-to-process-black-and-white-photographic-film
+    checked: '2026-11-13'
+  - label: Edinburgh short courses, Beginners Darkroom Photography
+    url: https://www.shortcourses.ed.ac.uk/course/beginners-darkroom-photography
+    checked: '2026-11-13'
+  - label: The Light Factory, Black and White Darkroom
+    url: https://lightfactory.org/black-white-darkroom/
+    checked: '2026-11-13'
+  - label: Harvey Milk Photo Center, Basic Black and White Film Development
+    url: https://www.harveymilkphotocenter.org/winter-2026/basic-black-and-white-film-development-5/
+    checked: '2026-11-13'
+  - label: 6abc, Philadelphia's only community darkroom sheds light on film photography hobbyists
+    url: https://6abc.com/post/halide-project-film-photography-aspiring-photographer-low-cost-space/12291516/
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Adam Schachner, The Halide Project, Philadelphia
+    line: Volunteers to run The Halide Project, a pay-what-you-can community darkroom with free classes and a donated camera library.
+    title: Philadelphia's only community darkroom sheds light on film photography hobbyists
+    outlet: 6abc
+    url: https://6abc.com/post/halide-project-film-photography-aspiring-photographer-low-cost-space/12291516/
+    checked: '2026-11-13'
+  kit:
+  - name: Film developing tank with reels
+    why: holds the film in the dark while you pour chemicals in and out
+    url: https://www.amazon.co.uk/s?k=film+developing+tank+35mm+reels
+  - name: Darkroom changing bag
+    why: lets you load film onto the reel without a darkened room
+    url: https://www.amazon.co.uk/s?k=film+changing+bag
+  - name: Black and white 35mm film
+    why: the roll many courses ask you to shoot before the first class
+    url: https://www.amazon.co.uk/s?k=ilford+hp5+35mm+film
+  related:
+  - take-a-photography-course
+  - join-a-camera-club
+  - try-cyanotype
+  - try-letterpress-printing
+- id: try-cyanotype
+  title: Make a cyanotype print
+  category: think
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A cyanotype is a sun print made from paper coated with light-sensitive iron salts, a leaf or object laid on top and sunlight, then rinsed in water to leave a white silhouette on deep blue. Anna Atkins
+    used the method in 1843 for what the Natural History Museum calls the first book illustrated with photographs.
+  start:
+  - Book a one-day or half-day cyanotype workshop at a garden, museum or arboretum; most supply the chemicals and paper.
+  - Collect flat leaves, flowers or small objects to print with, checking the venue's rules first; RHS Garden Hyde Hall asks for plant material in a sealed bag or container.
+  - Wear old clothes and take a folder to carry your prints home.
+  links:
+  - label: 'RHS Garden Hyde Hall: Cyanotype Sun Print workshop'
+    url: https://www.rhs.org.uk/shows-events/viewevent?efid=5216
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Hampshire County Council: Cyanotype Blueprint workshop'
+    url: https://www.hants.gov.uk/thingstodo/hilliergardens/whatson/Cyano-Aug26
+    region: uk
+    checked: '2026-11-13'
+  - label: 'The Huntington: Sun Prints and Cyanotypes workshop'
+    url: https://www.huntington.org/event/printmaking-workshop-sun-prints-and-cyanotypes
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Cyanotype workshops: make a sun print, what it costs'
+  description: How a cyanotype sun print is made, where to find a beginners' cyanotype workshop in the UK and US, what it costs and what the chemical safety advice is.
+  detail:
+  - h: How it works
+    p:
+    - Paper is coated with a light-sensitive solution made from ferric salts and left to dry, then a specimen is laid on it and exposed to light. The Natural History Museum gives 10 to 40 minutes; a Truman
+      State University chemistry handout says exposure in direct sunlight usually takes 5 to 20 minutes, depending on the strength of the sun and the time of day. Washing the print in water fixes the image.
+    - Workshops go further than the basics. The RHS Garden Hyde Hall day covers mixing the chemicals, coating paper, UV exposure and washing out, plus multiple exposures, masking and wet cyanotypes using
+      soap bubbles and vinegar. The Huntington's class prints on paper and cloth, including a mini tote bag.
+  - h: Workshops compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - RHS Garden Hyde Hall, Essex
+        - Cyanotype Sun Print, one day (2026 run), 10 places; bring an A3 folder
+        - £70
+      - - Hampshire County Council (Hillier Gardens page)
+        - Cyanotype Blueprint, one day (2026 run); lunch and all materials included
+        - £90
+      - - The Huntington
+        - Two-hour session (2026 run); three prints on paper, fabric and a mini tote; all supplies included
+        - $70 public, $60 members, $20 teens
+      - - University of Minnesota arboretum
+        - Introduction to Cyanotypes, three and a half hours (2026 run); for ages 18 and over; supplies and admission included
+        - $85 members, $105 non-members
+    after: These ran in August and September; cyanotype needs sunlight or UV, so check the season when you book.
+  faq:
+  - q: What is a cyanotype print?
+    a: A photographic print made by coating paper with iron salts, exposing it to light under an object or negative, and washing it in water, which leaves a white image on cyan blue. Sir John Herschel developed
+      the method, according to the Natural History Museum.
+  - q: Are cyanotype chemicals safe?
+    a: Take care with them. A Truman State University chemistry handout labels ferric ammonium citrate an irritant, says the mixed solution stains skin, and tells users to wear disposable gloves.
+  - q: How long does a cyanotype take to expose?
+    a: In direct sunlight, usually 5 to 20 minutes according to Truman State University; the Natural History Museum gives 10 to 40 minutes. It depends on how strong the light is.
+  - q: Can you make cyanotypes on fabric?
+    a: Yes. The Huntington's workshop prints on paper and cloth, and a Truman State University handout explains how to coat and dry fabric for printing.
+  sources:
+  - label: 'Natural History Museum, Anna Atkins''s cyanotypes: the first book of photographs'
+    url: https://www.nhm.ac.uk/discover/anna-atkins-cyanotypes-the-first-book-of-photographs.html
+    checked: '2026-11-13'
+  - label: Truman State University chemistry lab, Cyanotypes (PDF)
+    url: https://chemlab.truman.edu/files/2015/07/Cyanotypes.pdf
+    checked: '2026-11-13'
+  - label: RHS, Cyanotype Sun Print at RHS Garden Hyde Hall
+    url: https://www.rhs.org.uk/shows-events/viewevent?efid=5216
+    checked: '2026-11-13'
+  - label: Hampshire County Council, Cyanotype Blueprint
+    url: https://www.hants.gov.uk/thingstodo/hilliergardens/whatson/Cyano-Aug26
+    checked: '2026-11-13'
+  - label: 'The Huntington, Printmaking Workshop: Sun Prints and Cyanotypes'
+    url: https://www.huntington.org/event/printmaking-workshop-sun-prints-and-cyanotypes
+    checked: '2026-11-13'
+  - label: University of Minnesota arboretum, Introduction to Cyanotypes Workshop
+    url: https://arb.umn.edu/learn/cyanotypes-workshop
+    checked: '2026-11-13'
+  safety: Wear disposable gloves when handling cyanotype chemicals; a Truman State University handout labels ferric ammonium citrate an irritant and warns that the mixed solution stains skin.
+  inspire:
+  - kind: read
+    person: Anna Atkins, from Kent
+    line: Self-published Photographs of British Algae, Cyanotype Impressions in 1843, which the Natural History Museum describes as the first book illustrated with photographs.
+    title: 'Anna Atkins''s cyanotypes: The first book of photographs'
+    outlet: Natural History Museum
+    url: https://www.nhm.ac.uk/discover/anna-atkins-cyanotypes-the-first-book-of-photographs.html
+    checked: '2026-11-13'
+  kit:
+  - name: Cyanotype kit
+    why: the two chemicals for mixing your own sensitiser
+    url: https://www.amazon.co.uk/s?k=cyanotype+kit
+  - name: Pre-coated sun print paper
+    why: ready-coated paper for trying prints without mixing chemicals
+    url: https://www.amazon.co.uk/s?k=sun+print+paper
+  - name: Disposable nitrile gloves
+    why: to keep the chemicals off your skin
+    url: https://www.amazon.co.uk/s?k=nitrile+gloves
+  related:
+  - make-a-linocut-print
+  - learn-botanical-illustration
+  - learn-film-photography
+  - try-screen-printing
+- id: learn-to-dj
+  title: Learn to DJ
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Beatmatching two tracks so the crowd never notices the join is a real musical skill, and it is learned on the same club decks the professionals use. Short courses supply the decks and mixer, so all
+    you bring is your music on a USB stick and a pair of headphones.
+  start:
+  - 'Pick a format: a weekend intensive, a weekly evening course at a music school or college, or a community music school class.'
+  - Check what the course provides; most supply the decks, mixer and software, and ask you to bring headphones and your own music.
+  - Put a set of tracks you love on a USB stick before the first session.
+  links:
+  - label: 'ICMP: Introduction to DJing (London, Leeds, Liverpool)'
+    url: https://shortcourses.icmp.ac.uk/collections/introduction-to-djing
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Point Blank Music School: DJ Weekend, Level 1 (London)'
+    url: https://www.pointblankmusicschool.com/courses/london/dj-courses/dj-weekend-level-1/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Ohio State University Community Music School: DJ 101 (Columbus)'
+    url: https://music.osu.edu/cms/classes/dj-101-aaas-cec
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'DJ courses for beginners: what they cost and teach'
+  description: What a beginners' DJ course covers, what to bring, and what weekend and weekly courses cost at UK music schools and US community programmes.
+  detail:
+  - h: What a beginners' course covers
+    p:
+    - Beginners' courses start with the gear itself. Point Blank's weekend course covers setting up, using CDJs, beatmatching and EQing, with each student at their own workstation in a Pioneer DJ sponsored
+      studio. ICMP teaches on Pioneer CDJ-3000s, vinyl turntables and digital vinyl systems, with Rekordbox software.
+    - Some courses go further. Scratch DJ Academy's DJ 101 in Brooklyn covers basic music theory, song structure and fundamental scratching, and WM College in Camden includes reading the room and planning
+      sets for different venues. Arts centres run shorter options too, such as mac Birmingham's two-day DJ School for Adults, which needs no previous experience.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Point Blank Music School, London
+        - 'DJ Weekend, Level 1: Saturday and Sunday, 11am to 6pm, for beginners'
+        - £345 (page showed 2024 start dates)
+      - - ICMP, London, Leeds and Liverpool
+        - 'Introduction to DJing: in London, 12 weeks on Tuesday evenings or a Saturday course'
+        - £699 London; £399 Leeds and Liverpool
+      - - Scratch DJ Academy, Brooklyn
+        - 'Intro to DJing (DJ 101): 12 two-hour sessions, ages 18 and over'
+        - $1,050
+      - - Ohio State University Community Music School, Columbus
+        - 'DJ 101: Wednesday evenings, January to May 2027 (registration listed as closed), for high-school students and adults'
+        - $320 plus a $30 administrative fee
+      - - UNLV Continuing Education, Las Vegas
+        - 'DJ Like a Pro certificate: four weeks of weekend sessions, aimed at people pursuing a DJ career'
+        - $1,300
+    after: Point Blank and Scratch DJ Academy both provide the equipment in class; Scratch DJ Academy asks students to bring their own headphones.
+  faq:
+  - q: Do I need my own decks to learn to DJ?
+    a: Not for a course. Point Blank, Scratch DJ Academy and mac Birmingham all supply the decks and mixer in class.
+  - q: What should I bring to a DJ course?
+    a: Usually your own music and headphones. mac Birmingham asks for a USB stick of dance music, and Point Blank lets you bring music on a hard drive, USB stick or vinyl.
+  - q: How much does a DJ course cost?
+    a: As last listed, from £345 for Point Blank's beginners' weekend to £699 for ICMP's London course in the UK, and from $320 to $1,300 at US community and university programmes.
+  - q: Do I need any experience to start a DJ course?
+    a: No. mac Birmingham says no previous experience is required, and ICMP says no prior skills are needed.
+  sources:
+  - label: Point Blank Music School, DJ Weekend - Level 1
+    url: https://www.pointblankmusicschool.com/courses/london/dj-courses/dj-weekend-level-1/
+    checked: '2026-11-13'
+  - label: ICMP Short Courses, Introduction to DJing
+    url: https://shortcourses.icmp.ac.uk/collections/introduction-to-djing
+    checked: '2026-11-13'
+  - label: mac Birmingham, DJ School for Adults
+    url: https://macbirmingham.co.uk/courses/dj-school-for-adults-asc102
+    checked: '2026-11-13'
+  - label: WM College, DJ Skills for Beginners
+    url: https://www.wmcollege.ac.uk/course-detail/dj-skills-for-beginners/27193/
+    checked: '2026-11-13'
+  - label: CourseHorse, Scratch DJ Academy Intro to DJing (DJ 101)
+    url: https://coursehorse.com/nyc/classes/performing-arts/music/dj/intro-to-djing-dj-101-1
+    checked: '2026-11-13'
+  - label: Ohio State University School of Music, CMS DJ 101 Class
+    url: https://music.osu.edu/cms/classes/dj-101-aaas-cec
+    checked: '2026-11-13'
+  - label: UNLV Continuing Education, DJ Like a Pro Certificate Program
+    url: https://ced.unlv.edu/programs/dj-pro-certificate-program
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Melanie Harris, from Walsall
+    line: Moved from the dancefloor to the DJ booth after years of clubbing, had two house mixes aired on UK radio and landed her first paid gig at Moseley's Mostly Jazz, Funk and Soul Festival.
+    title: 'From dancefloor to decks: 56-year-old ''Mom-A-Vibez'' makes DJ festival debut in Moseley'
+    outlet: Express & Star
+    url: https://www.expressandstar.com/your-world/2025/06/25/from-dancefloor-to-decks-56-year-old-mom-a-vibez-makes-dj-festival-debut-in-moseley
+    checked: '2026-11-13'
+  kit:
+  - name: DJ headphones
+    why: for cueing up the next track while the current one plays
+    url: https://www.amazon.co.uk/s?k=dj+headphones
+  - name: USB flash drive
+    why: to carry your music to class
+    url: https://www.amazon.co.uk/s?k=usb+flash+drive+64gb
+  - name: DJ controller
+    why: for practising mixing at home with a laptop
+    url: https://www.amazon.co.uk/s?k=dj+controller+beginner
+  related:
+  - learn-music-production
+  - learn-songwriting
+  - learn-the-drums
+  - learn-swing-dancing
+- id: learn-the-sitar
+  title: Learn the sitar
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The sitar is a key instrument of North Indian (Hindustani) classical music, and beginners start with how to hold and pluck it and the swaras, the notes of the raga. Specialist schools run adult classes
+    and taster sessions, and some rent out instruments so you can start before buying one.
+  start:
+  - Look for a specialist school of Indian music with adult classes, in person or online, and book a taster session if it offers one.
+  - Ask whether the school rents sitars to beginners before you think about buying.
+  - Ask what a first term covers; beginners' classes start with holding and plucking the instrument and the basic notes.
+  links:
+  - label: 'South Asian Arts (SAA-uk): sitar classes (Leeds)'
+    url: https://www.saa-uk.org/education-learning/hindustani-music-academy-north/sitar-classes/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'The Bhavan: courses including sitar (London)'
+    url: https://www.bhavan.net/full-time-courses/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Saraswati School of Music: sitar classes (Dallas area and online)'
+    url: https://sitarbug-website.pages.dev/classes.html
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Sitar lessons for adult beginners: classes and costs'
+  description: Where adults can learn the sitar in the UK and US, what classes and sitar rental cost, and what a beginner learns first, from specialist schools.
+  detail:
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Bhavan, London
+        - Open beginners' classes with Ustad Mehboob Nadeem, joinable through the year, leading to diploma levels
+        - Fees on the Bhavan's timetable page; its 2025 summer school sitar course was £175
+      - - South Asian Arts (SAA-uk), Leeds
+        - Adult classes on Sunday and Tuesday evenings in 10-week terms, with taster sessions each term
+        - £120 a term or £360 a year; bursaries available
+      - - Saraswati School of Music, Dallas area or Zoom
+        - One-to-one lessons; Level I Sitar Foundations is four classes for people with no sitar experience
+        - $260, plus a $49 initiation fee that includes strings and a book
+      - - Chhandayan Center for Indian Music, New York
+        - Take-home sitar rental for its beginner students, by the fortnight or month
+        - $600 refundable deposit
+    after: The Ali Akbar College of Music, listed by San Francisco Classical Voice, teaches North Indian classical music to students from beginners to professionals, and Bay Area teacher Will Marsh offers
+      lessons at all levels with a rental sitar available.
+  - h: Renting, buying and how to sit
+    p:
+    - Renting first is common. Saraswati School of Music rents a student sitar for $49 a month, tuned and set up, with no long-term commitment, and Chhandayan rents sitars only to its own beginner students.
+      Chhandayan's shop lists a beginner sitar at $773.08, rising to $2,575 for a professional instrument.
+    - Posture is taught from the start. SAA-uk beginners begin by learning to hold and pluck the sitar, Saraswati's first level includes proper hold, posture and instrument care, and Will Marsh's lessons
+      cover sitting and playing comfort as well as tuning.
+  faq:
+  - q: Can adults learn the sitar?
+    a: Yes. SAA-uk in Leeds runs adult classes, and the Bhavan in London says its introductory open classes can be joined throughout the year.
+  - q: Should I rent or buy a sitar as a beginner?
+    a: Some schools rent to beginners. Saraswati School of Music lists rental at $49 a month with no long-term commitment, and Chhandayan rents sitars to its beginner students.
+  - q: How much does a sitar cost?
+    a: Chhandayan Center for Indian Music lists a beginner sitar at $773.08, an intermediate one at $1,287.65 and a professional one at $2,575.
+  - q: Can I learn the sitar online?
+    a: Yes. Saraswati School of Music teaches one-to-one over Zoom, and the Bhavan's 2025 summer school had an online option for its sitar course.
+  sources:
+  - label: The Bhavan, full-time courses
+    url: https://www.bhavan.net/full-time-courses/
+    checked: '2026-11-13'
+  - label: The Bhavan, Summer School 2025 - Sitar with Ustad Mehboob Nadeem
+    url: https://shop.bhavan.net/products/summer-school-2022-sitar-with-smt-reena-shrivastava
+    checked: '2026-11-13'
+  - label: South Asian Arts (SAA-uk), Sitar classes
+    url: https://www.saa-uk.org/education-learning/hindustani-music-academy-north/sitar-classes/
+    checked: '2026-11-13'
+  - label: Saraswati School of Music, Classes
+    url: https://sitarbug-website.pages.dev/classes.html
+    checked: '2026-11-13'
+  - label: Chhandayan Center for Indian Music, Sitar rental
+    url: https://chhandayan.org/rentals/sitar-rental-agreement-and-security-deposit
+    checked: '2026-11-13'
+  - label: Chhandayan Center for Indian Music, Instruments
+    url: https://chhandayan.org/instruments
+    checked: '2026-11-13'
+  - label: San Francisco Classical Voice, Ali Akbar College of Music
+    url: https://sfcv.org/organizations/ali-akbar-college-music
+    checked: '2026-11-13'
+  - label: Lark in the Morning, Sitar lessons - all levels
+    url: https://lessons.larkinthemorning.com/en/listings/1932511-sitar-lessons-all-levels
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Alan Posselt, based in Adelaide
+    line: Switched from classical guitar to the sitar, studied in India in the late 1960s and later founded The Music Room in Adelaide, a school teaching sitar and Indian music.
+    title: How classical guitarist Alan Posselt became a sitarist
+    outlet: Indian Link
+    url: https://indianlink.com.au/guitarist-alan-posselt-became-sitarist/
+    checked: '2026-11-13'
+  kit:
+  - name: Clip-on chromatic tuner
+    why: for tuning the main playing strings between lessons
+    url: https://www.amazon.co.uk/s?k=clip+on+chromatic+tuner
+  - name: Sitar strings set
+    why: spare strings for when one breaks
+    url: https://www.amazon.co.uk/s?k=sitar+strings+set
+  related:
+  - learn-the-djembe
+  - learn-the-harp
+  - learn-to-read-music
+  - take-a-music-grade
+- id: learn-to-conduct
+  title: Learn to conduct an orchestra or choir
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Conducting is a skill of gesture, preparation and rehearsal, and short courses put you in front of real singers or players to practise beat patterns, cues and starting and stopping. Introductory
+    choral courses are open to people new to leading a choir, and summer symposiums let you either conduct or audit.
+  start:
+  - Decide between choral and orchestral conducting; choral introductions usually ask for less previous training.
+  - Read the entry requirements, as some orchestral courses expect good music theory and an instrument or voice at intermediate level.
+  - Book a short introduction, such as an online choral course, before a longer course with podium time.
+  links:
+  - label: 'Association of British Choral Directors (abcd): courses and events'
+    url: https://abcd.org.uk/events/choral-conducting-an-initial-guide-2-2/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Morley College London: Introduction to Orchestral Conducting'
+    url: https://www.morleycollege.ac.uk/courses/course/introduction-to-orchestral-conducting
+    region: uk
+    checked: '2026-11-13'
+  - label: 'George Mason University: Mason Orchestral Conducting Symposium (Virginia)'
+    url: https://masonacademy.gmu.edu/professional-development/summer-conducting-symposium/
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Conducting courses for beginners and amateurs: UK and US'
+  description: Choral and orchestral conducting courses open to amateurs in the UK and US, what they ask of you, what they cover, and what they cost as last listed.
+  detail:
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Association of British Choral Directors (abcd), online
+        - 'Choral Conducting: An Introductory Guide, two Saturday mornings on Zoom (January 2026 run), for people new to leading choirs'
+        - £75; £52.50 for members
+      - - Royal School of Church Music (RSCM), London
+        - Choral Conducting Course, four Saturdays at the Charterhouse (autumn 2026 run), for church musicians of any experience, 18 and over
+        - £300; £250 for members; bursaries available
+      - - Morley College London
+        - Introduction to Orchestral Conducting, 10 Friday evenings from 8 January 2027
+        - £205; £155 concession
+      - - George Mason University, Fairfax, Virginia
+        - Mason Orchestral Conducting Symposium, 28 June to 2 July 2027, with daily podium time
+        - $695 to conduct; $325 to audit
+      - - University of South Carolina, Columbia
+        - Summer Conducting Workshop, choral track in 2026; 2027 dates not yet announced
+        - $400 to conduct; $225 to audit
+    after: The abcd course covers beat patterns, starting and stopping, pauses, ritardando and dynamics, and the RSCM course covers preparing music and gesture and running a pacy rehearsal.
+  - h: What courses expect of you
+    p:
+    - Entry requirements vary a lot. The RSCM course says keyboard skills are not required, while Morley College's orchestral course asks for intermediate to advanced playing or singing and good music theory,
+      and says it is not a beginner musicianship course.
+    - Summer symposiums usually offer two ways to take part. Conducting participants get podium time; auditors attend the sessions without conducting, and at George Mason they play in the ensemble. Some
+      workshops are selective, such as the University of Utah's Conductor's Workshop, which takes up to eight participants who apply with a conducting video.
+  faq:
+  - q: Can an amateur learn to conduct?
+    a: Yes. The abcd's introductory course is aimed at people new to leading choirs, and George Mason's summer symposium says it has served beginning conductors as well as professionals.
+  - q: Do I need to read music to learn conducting?
+    a: For most courses, yes. Morley College's orchestral course asks for good music theory, including key and time signatures, and score study is a core part of the teaching.
+  - q: What is an auditor on a conducting course?
+    a: An auditor attends the sessions but does not conduct. It costs less, for example $325 against $695 at George Mason's symposium as last listed.
+  - q: How much does a conducting course cost?
+    a: As last listed, from £75 for the abcd's online introduction and £205 for Morley College's 10-week course, to $400 to $695 to conduct at US summer workshops.
+  sources:
+  - label: 'abcd, Choral Conducting: An Introductory Guide'
+    url: https://abcd.org.uk/events/choral-conducting-an-initial-guide-2-2/
+    checked: '2026-11-13'
+  - label: RSCM, Choral Conducting Course 2026
+    url: https://www.rscm.org.uk/events/choral-conducting-course-2026/
+    checked: '2026-11-13'
+  - label: Morley College London, Introduction to Orchestral Conducting
+    url: https://www.morleycollege.ac.uk/courses/course/introduction-to-orchestral-conducting
+    checked: '2026-11-13'
+  - label: Mason Community Arts Academy, Summer Conducting Symposium
+    url: https://masonacademy.gmu.edu/professional-development/summer-conducting-symposium/
+    checked: '2026-11-13'
+  - label: University of South Carolina School of Music, Summer Conducting Workshop
+    url: https://www.cosw.sc.edu/study/colleges_schools/music/community/summer_programs/summer_conducting_workshop.php
+    checked: '2026-11-13'
+  - label: University of Utah School of Music, Conductor's Workshop
+    url: https://music.utah.edu/community/summer-music/summer-conducting.php
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Stephen Hall, of the Civil Service Choir
+    line: Founded the Civil Service Choir with four singers and limited conducting experience, trained as a conductor in his spare time and has led it to about 150 singers and more than 140 performances.
+    title: Civil Service Choirmaster Stephen hits the right note
+    outlet: Civil Service blog (GOV.UK)
+    url: https://civilservice.blog.gov.uk/2022/08/30/civil-service-choirmaster-stephen-hits-the-right-note/
+    checked: '2026-11-13'
+  kit:
+  - name: Conductor's baton
+    why: for practising beat patterns
+    url: https://www.amazon.co.uk/s?k=conductors+baton
+  - name: Folding music stand
+    why: to hold the score while you practise
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  related:
+  - join-community-orchestra-or-band
+  - join-rock-choir
+  - sing-messiah-from-scratch
+  - learn-to-read-music
+- id: try-voice-acting
+  title: Try voice acting
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Voiceover, audiobook and radio drama work is acting with nothing but your voice, a script and a microphone, and hearing your own take played back is half the lesson. Beginners can start with a single
+    online class, a ten-week studio course or a free volunteer audiobook project recorded at home.
+  start:
+  - 'Book a beginners'' class: a one-off online introduction or a weekly course at an adult education college or university continuing-education programme.'
+  - Read a page of a book aloud into your phone, then listen back and notice where you stumble, rush or run out of breath.
+  - Read LibriVox's volunteer page and pick a short public-domain text to record as a first go at narration.
+  links:
+  - label: 'City Lit: Voiceovers: beginners (London)'
+    url: https://www.citylit.ac.uk/courses/voiceovers-beginners/dmb031-2627
+    region: uk
+    checked: '2026-11-13'
+  - label: 'LibriVox: volunteer to read public-domain audiobooks'
+    url: https://librivox.org/pages/volunteer-for-librivox/
+    region: any
+    checked: '2026-11-13'
+  - label: 'Cuesta College Community Education: Introduction to Voiceovers (online)'
+    url: https://www.cuesta.edu/communityprograms/community-education/music/Introduction-to-Voiceovers.html
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Voice acting classes for beginners: where to start'
+  description: Where to try voice acting, audiobook narration and radio drama in the UK and US, from one-off online classes to college courses and free volunteer reading.
+  detail:
+  - h: What a beginners' course covers
+    p:
+    - City Lit's Voiceovers beginners' course works through radio commercials, audiobooks and other voiceover recordings, helps you identify your voice type and plays back your recordings for feedback.
+      It asks that you can read a script accurately and give and take constructive feedback; no previous mic experience is needed.
+    - In the US, the University of Utah's Lifelong Learning class covered reading and interpreting scripts, setting up a home studio, joining talent agencies and auditioning, with the last session in the
+      library's audio studio. Cuesta College's online introduction, taught by the voiceover group Voices For All, is a single 90-minute Zoom class with script reading and coaching, followed by an evaluation
+      call.
+    - For audiobook narration without a fee, LibriVox volunteers record books that are in the public domain. LibriVox says you need no experience and no audition, just your voice, free software, a computer
+      and maybe an inexpensive microphone, and you can do as much or as little as you like.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Voiceovers: beginners; ten weekly sessions in the media studio, 2027 runs'
+        - £349, or £244 concession
+      - - City Lit, London
+        - 'Acting for radio and podcast dramas: beginners; six weekly sessions, some acting experience expected'
+        - £299, or £209 concession
+      - - Cuesta College, California
+        - One 90-minute class on Zoom plus a follow-up evaluation call; age 18 and over
+        - $49
+      - - University of Utah Lifelong Learning, Salt Lake City
+        - 'Voice Acting: An Introduction; four evening sessions (2025 run)'
+        - $154, including a $5 parking fee
+      - - LibriVox (online)
+        - Volunteer reading of public-domain books, recorded at home
+        - Free; you need a computer, free software and perhaps an inexpensive microphone
+    after: City Lit's beginners' course page describes in-person sessions at Keeley Street, though one part of the page calls it online, so check the format before booking.
+  faq:
+  - q: Do you need experience to start voice acting?
+    a: No. City Lit's Voiceovers course is aimed at beginners, and LibriVox says you need no prior experience and no audition to read for it.
+  - q: How can I practise audiobook narration for free?
+    a: Volunteer with LibriVox, which records public-domain books read by volunteers. You record at home and can do as much or as little as you like.
+  - q: What equipment do I need to record audiobooks at home?
+    a: LibriVox says you need your voice, free recording software, a computer and maybe an inexpensive microphone.
+  - q: What does a voiceover class teach?
+    a: Typically script reading, microphone technique and playback with feedback. City Lit covers commercials and audiobooks, and the University of Utah class also covered home studios, talent agencies
+      and auditions.
+  sources:
+  - label: 'City Lit, Voiceovers: beginners'
+    url: https://www.citylit.ac.uk/courses/voiceovers-beginners/dmb031-2627
+    checked: '2026-11-13'
+  - label: 'City Lit, Acting for radio and podcast dramas: beginners'
+    url: https://www.citylit.ac.uk/courses/acting-for-radio-and-podcast-dramas-beginners
+    checked: '2026-11-13'
+  - label: Cuesta College Community Education, Introduction to Voiceovers
+    url: https://www.cuesta.edu/communityprograms/community-education/music/Introduction-to-Voiceovers.html
+    checked: '2026-11-13'
+  - label: 'University of Utah Lifelong Learning, Voice Acting: An Introduction'
+    url: https://continue.utah.edu/class/LLMT/459
+    checked: '2026-11-13'
+  - label: LibriVox, Volunteer for LibriVox
+    url: https://librivox.org/pages/volunteer-for-librivox/
+    checked: '2026-11-13'
+  kit:
+  - name: USB microphone
+    why: plugs straight into a computer for recording practice reads
+    url: https://www.amazon.co.uk/s?k=usb+microphone+voice+recording
+  - name: Pop filter
+    why: sits in front of the microphone to soften hard 'p' and 'b' sounds
+    url: https://www.amazon.co.uk/s?k=microphone+pop+filter
+  - name: Closed-back headphones
+    why: for listening back to your takes without sound leaking into the microphone
+    url: https://www.amazon.co.uk/s?k=closed+back+headphones+recording
+  related:
+  - join-amateur-theatre
+  - try-improv-comedy
+  - take-singing-lessons
+  - record-a-life-story
+- id: learn-oral-storytelling
+  title: Learn to tell stories aloud
+  category: connect
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Oral storytelling means telling a folk tale, myth or true story to a live audience without a script, using voice, gesture and your own words. Weekend workshops teach the craft, and storytelling clubs
+    and open-mic nights give you somewhere to try it out.
+  start:
+  - Find a storytelling club or event near you through the Society for Storytelling directory (UK) or the National Storytelling Network calendar (US), and go to listen first.
+  - Choose one short folk tale you like, learn its shape rather than its exact words, and tell it to a friend.
+  - Book a beginners' workshop, or put your name in the hat at an open-mic night such as a Moth StorySLAM.
+  links:
+  - label: 'Society for Storytelling: clubs, events and storytellers'
+    url: https://www.sfs.org.uk/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Crick Crack Club: Introductory Storytelling Workshop'
+    url: https://crickcrackclub.com/?p=3753
+    region: uk
+    checked: '2026-11-13'
+  - label: 'The Moth: tell your story at a StorySLAM'
+    url: https://www.themoth.org/tell-your-story
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Storytelling workshops and clubs: how to start'
+  description: How to learn traditional oral storytelling in the UK and US, from weekend workshops and storytelling clubs to open-mic StorySLAMs, with costs.
+  detail:
+  - h: How people learn
+    p:
+    - Workshops teach the craft. The Crick Crack Club's two-day introductory workshop with Ben Haggarty covers the core principles of contemporary oral storytelling, visualisation and narrative patterns,
+      working with folk tales, fairytales, myths and epics. Emerson College's Craft of the Storyteller runs over four weekends with a different kind of story each time (folktales, wonder tales, mythology
+      and a personal project) and works on voice, movement, improvisation, gesture and building a repertoire.
+    - Clubs and festivals give you an audience. The Society for Storytelling, which has championed oral storytelling since 1993, keeps a directory of storytellers with listings of clubs and events across
+      the UK, and coordinates National Storytelling Week (30 January to 7 February 2027). In the US, the National Storytelling Network offers individual membership, and the International Storytelling Center's
+      National Storytelling Festival fills downtown Jonesborough with five big-top tents; its Thursday workshops need a separate ticket.
+    - For true personal stories, The Moth's open-mic StorySLAMs draw names from a hat. Stories must be true, told without notes and no longer than five minutes, and audience judges score ten tellers over
+      about two hours.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Crick Crack Club, Bristol
+        - Introductory Storytelling Workshop, two days, adults 18 and over (March 2026 run, sold out)
+        - £145, or £95 for under-35s
+      - - Emerson College, Forest Row
+        - Craft of the Storyteller, four weekends, up to 16 people (2025-26 run)
+        - £1,150 for all four weekends
+      - - Society for Storytelling, UK
+        - Membership; directory of storytelling clubs and events
+        - Less than £3 a month
+      - - National Storytelling Network, US
+        - Individual membership; newsletter, members' directory and discounts on workshops and classes
+        - $75 a year
+      - - The Moth StorySLAM, US cities
+        - Open-mic night; five-minute true story, no notes
+        - See each event's listing
+  faq:
+  - q: How do I get into oral storytelling?
+    a: Go to a storytelling club as a listener, then take a beginners' workshop. The Society for Storytelling lists clubs and events across the UK, and the National Storytelling Network has an events calendar
+      in the US.
+  - q: What is a Moth StorySLAM?
+    a: An open-mic storytelling competition. You put your name in a hat, and if it is drawn you tell a true story on the night's theme, without notes, in five minutes or less.
+  - q: When is National Storytelling Week?
+    a: The 2027 National Storytelling Week runs from 30 January to 7 February, coordinated by the Society for Storytelling.
+  - q: Where can I take a storytelling course in the UK?
+    a: The Crick Crack Club runs introductory weekend workshops, and Emerson College in Forest Row runs a four-weekend Craft of the Storyteller course. As last listed they cost £145 and £1,150.
+  sources:
+  - label: Society for Storytelling, home page
+    url: https://www.sfs.org.uk/
+    checked: '2026-11-13'
+  - label: Society for Storytelling, National Storytelling Week
+    url: https://www.sfs.org.uk/nsw/
+    checked: '2026-11-13'
+  - label: Crick Crack Club, Introductory Storytelling Workshop
+    url: https://crickcrackclub.com/?p=3753
+    checked: '2026-11-13'
+  - label: Emerson College, Craft of the Storyteller 4 of 4
+    url: https://calendar.emerson.org.uk/events/craft-of-the-storyteller-4-of-4
+    checked: '2026-11-13'
+  - label: National Storytelling Network, Membership
+    url: https://storynet.org/membership/
+    checked: '2026-11-13'
+  - label: International Storytelling Center, 2026 National Storytelling Festival 101
+    url: https://www.storytellingcenter.net/news/2026-national-storytelling-festival-101/
+    checked: '2026-11-13'
+  - label: International Storytelling Center, Festival FAQs
+    url: https://www.storytellingcenter.net/festival/faqs/
+    checked: '2026-11-13'
+  - label: The Moth, Tell Your Story
+    url: https://www.themoth.org/tell-your-story
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Danielle Free, from near Shrewsbury
+    line: Left a career in marketing after an online storytelling course and now performs the tales of ancient Celtic women on stages around the UK and runs children's storytelling clubs in libraries.
+    title: I'm a traditional oral storyteller in Shrewsbury and I'm bringing tales of ancient Celtic women to stages across the UK
+    outlet: Shropshire Star
+    url: https://www.shropshirestar.com/entertainment/lifestyle/2026/02/07/im-a-traditional-oral-storyteller-in-shrewsbury-and-im-bringing-tales-of-ancient-celtic-women-to-stages-across-the-uk
+    checked: '2026-11-13'
+  kit:
+  - name: Book of folk tales
+    why: a source of short traditional stories to learn and retell
+    url: https://www.amazon.co.uk/s?k=british+folk+tales+book
+  - name: Pocket notebook
+    why: for jotting down the outline of a story as you learn it
+    url: https://www.amazon.co.uk/s?k=pocket+notebook
+  related:
+  - try-stand-up-comedy
+  - try-improv-comedy
+  - record-a-life-story
+  - join-amateur-theatre
+- id: learn-signwriting
+  title: Learn traditional signwriting
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Traditional signwriting is lettering painted by hand with a brush, drawn and spaced without computers or masking tape and steadied on a mahl stick. A one-day course takes you from basic strokes to
+    a block alphabet and a small lettered panel to take home.
+  start:
+  - Book a beginners' day or weekend with a working signwriter, a craft museum or a sign museum; the best-known courses sell out months ahead.
+  - Practise the basic strokes and a simple block alphabet on paper between lessons.
+  - Wear old clothes or bring an apron or overalls, as the Weald & Downland course asks.
+  links:
+  - label: 'Weald & Downland Living Museum: Introduction to Signwriting'
+    url: https://www.wealddown.co.uk/events/introduction-to-signwriting-2/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Joby Carter: Five Day Intensive Signwriting Course (Somerset)'
+    url: https://jobycarter.com/five-day-intensive-signwriting-course/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'New York Sign Museum: Introduction to Sign Painting workshop'
+    url: https://nysignmuseum.org/mar-2026-introduction-to-sign-painting-workshop-with-letterboy
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Signwriting courses for beginners: UK and US costs'
+  description: Where to learn traditional hand-painted signwriting in the UK and US, from one-day museum courses to five-day intensives and a college programme.
+  detail:
+  - h: What you learn first
+    p:
+    - The Weald & Downland Living Museum's one-day introduction, taught by Wayne Osborne of Osborne Signs, starts with tools and their care, paint and brush skills, and basic strokes leading to a block
+      alphabet. In the afternoon you lay out and space a design to make a lettering panel to take home. Groups are limited to eight.
+    - Joby Carter's five-day intensive in Street, Somerset, goes further into layout, shading, lining, scaling and drawing letters by hand, letter spacing, colour contrast, paint consistency and using a
+      mahl stick. Materials and lunches are included, and students keep three starter brushes. Every date listed up to October 2027 was sold out when we checked.
+    - In the US, short workshops at the New York Sign Museum and Northwind Art School cover letter construction, brush handling and hand-drawn layout. For a full qualification, Los Angeles Trade-Technical
+      College's Sign Graphics programme, which marked its hundredth year in 2025, leads to a certificate or associate degree over four semesters, starting with a course in individual lettering.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Weald & Downland Living Museum
+        - One-day Introduction to Signwriting; tuition and drinks included (November 2026 run, sold out)
+        - £135
+      - - Joby Carter, Street, Somerset
+        - Five-day intensive; materials, lunches and three brushes included
+        - £895
+      - - Northwind Art School, Port Townsend
+        - Two-day Intro to Sign Painting, beginner to intermediate, 18 and over (2025 run)
+        - $430, including a $55 materials fee
+      - - New York Sign Museum, Brooklyn
+        - Two-day Introduction to Sign Painting with Letterboy; brushes, paint and workbook provided (2026 run)
+        - $750
+      - - Los Angeles Trade-Technical College
+        - Sign Graphics certificate or associate degree, four semesters
+        - College enrolment fees; not given on the programme sheet
+    after: The Weald & Downland and New York Sign Museum courses both suit complete beginners; the New York workshop says it is open to all levels, especially beginners.
+  faq:
+  - q: Can you learn signwriting in a day?
+    a: You can learn the basics. The Weald & Downland one-day course goes from basic strokes to a block alphabet and a lettered panel, but a full college programme such as LA Trade-Technical College's runs
+      over four semesters.
+  - q: Do signwriting courses provide brushes and paint?
+    a: Many do. Joby Carter's five-day course provides all materials and three brushes to keep, and the New York Sign Museum workshop provides drafting tools, brushes, paint and a workbook.
+  - q: Where can I learn sign painting in the US?
+    a: Workshops run at the New York Sign Museum in Brooklyn and at Northwind Art School in Port Townsend, and Los Angeles Trade-Technical College offers a Sign Graphics certificate and associate degree.
+  - q: How much does a signwriting course cost in the UK?
+    a: As last listed, £135 for a one-day introduction at the Weald & Downland Living Museum and £895 for Joby Carter's five-day intensive.
+  sources:
+  - label: Weald & Downland Living Museum, Introduction to Signwriting
+    url: https://www.wealddown.co.uk/events/introduction-to-signwriting-2/
+    checked: '2026-11-13'
+  - label: Joby Carter, Five Day Intensive Signwriting Course
+    url: https://jobycarter.com/five-day-intensive-signwriting-course/
+    checked: '2026-11-13'
+  - label: Joby Carter, Five Day Intensive Signwriting Course dates and price
+    url: https://jobycarter.com/product/five-day-intensive-signwriting-course-1-5-march-2027-street/
+    checked: '2026-11-13'
+  - label: New York Sign Museum, Introduction to Sign Painting Workshop with Letterboy
+    url: https://nysignmuseum.org/mar-2026-introduction-to-sign-painting-workshop-with-letterboy
+    checked: '2026-11-13'
+  - label: Northwind Art School, Intro to Sign Painting
+    url: https://northwindart.org/products/crash-course-in-sign-painting-copy
+    checked: '2026-11-13'
+  - label: Los Angeles Trade-Technical College, Sign Graphics programme sheet
+    url: https://www.lattc.edu/sites/lattc.edu/files/2022-10/Sign-Graphics.pdf
+    checked: '2026-11-13'
+  - label: Los Angeles Community College District, LA Trade Technical College celebrates 100-year anniversary of sign graphics program
+    url: https://www.laccd.edu/news/la-trade-technical-college-celebrates-100-year-anniversary-sign-graphics-program
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: David Mearns, from Worthing, West Sussex
+    line: Went back to the brush after some 25 years in other parts of the sign trade, founding a mostly hand-painted signwriting business in 2020 and teaching monthly signwriting basics workshops.
+    title: 'Back to His Roots: David Mearns Gets Back on the Brush at 50'
+    outlet: SignLink
+    url: https://www.signlink.co.uk/?p=10926
+    checked: '2026-11-13'
+  kit:
+  - name: Signwriting brushes
+    why: long-haired lettering brushes for practising strokes and alphabets
+    url: https://www.amazon.co.uk/s?k=signwriting+lettering+brushes
+  - name: Mahl stick
+    why: a rest that steadies your brush hand above wet paint
+    url: https://www.amazon.co.uk/s?k=mahl+stick
+  - name: Graph paper pad
+    why: for drawing and spacing letters before you paint them
+    url: https://www.amazon.co.uk/s?k=graph+paper+pad+a3
+  related:
+  - learn-calligraphy
+  - learn-gilding
+  - try-letterpress-printing
+  - learn-a-heritage-craft
+- id: learn-to-juggle
+  title: Learn to juggle three balls
+  category: move
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: The three-ball cascade is the pattern almost every juggler learns first, and it can be practised in a living room with a set of beanbags. Juggling clubs meet weekly in towns and cities on both sides
+    of the Atlantic, often for a few pounds or dollars, and circus schools run one-off beginners' classes.
+  start:
+  - Book a beginners' juggling taster at a circus school, or find a club near you on The Juggling Edge club listings.
+  - Get three soft beanbag-style juggling balls so they do not roll away when you drop them.
+  - Check the club's page or social media before your first visit, as some close for holidays.
+  links:
+  - label: 'National Centre for Circus Arts: Try Juggling taster (London)'
+    url: https://www.nationalcircus.org.uk/?p=7780
+    region: uk
+    checked: '2026-11-13'
+  - label: 'The Juggling Edge: UK juggling club listings'
+    url: https://jugglingedge.com/clublistings.php?Region=gb
+    region: uk
+    checked: '2026-11-13'
+  - label: 'The Juggling Edge: US juggling club listings'
+    url: https://jugglingedge.com/clublistings.php?Region=us&
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Learn to juggle: beginner classes and juggling clubs'
+  description: How to learn the three-ball cascade, where to find a beginners' juggling class or a local juggling club in the UK and US, and what it costs to go along.
+  detail:
+  - h: What a first class covers
+    p:
+    - The National Centre for Circus Arts in London runs a one-off, 90-minute Try Juggling taster that covers the three-ball cascade, trying different juggling props, putting together sequences alone and
+      in pairs, and juggling games. The centre says the class welcomes anyone and that you progress at your own pace.
+    - After that, a club is the usual next step. The Juggling Edge keeps a directory of clubs, with listings for the UK and the US, from Leeds, Oxford and Cambridge to Tucson, Boulder and Chicago. Meeting
+      times and costs are on each club's own listing or page, so check before you go.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - National Centre for Circus Arts, London
+        - Try Juggling taster, one evening, 90 minutes
+        - £18
+      - - Altern8 Juggling Club, Circomedia, Kingswood, Bristol
+        - Weekly club, Mondays 19:30 to 21:30
+        - £4, free for Circomedia students
+      - - Circus Center, San Francisco
+        - Juggling Club, ages 10 and up; things to juggle provided
+        - Suggested donation of $5 to $10
+      - - Circus Academy New York, Brooklyn
+        - Juggling, all levels, 90 minutes; balls provided; 18 and over
+        - $50 (sold out when checked)
+    after: The Altern8 club says it closes for holidays and asks people to contact the organisers before attending.
+  faq:
+  - q: What is the easiest juggling pattern to learn first?
+    a: The three-ball cascade. It is the first thing taught in the National Centre for Circus Arts' Try Juggling taster.
+  - q: Are there juggling clubs near me?
+    a: Probably. The Juggling Edge lists juggling clubs by country, including the UK and the US, with each club's meeting place.
+  - q: How much does a juggling club cost?
+    a: Often very little. The Altern8 club in Bristol lists £4 a session, and Circus Center's Juggling Club in San Francisco asks for a suggested donation of $5 to $10.
+  - q: Do I need my own juggling balls for a class?
+    a: Not always. Circus Center provides things to juggle at its club, and Circus Academy New York provides balls or lets you bring your own.
+  sources:
+  - label: National Centre for Circus Arts, Try Juggling
+    url: https://www.nationalcircus.org.uk/?p=7780
+    checked: '2026-11-13'
+  - label: The Juggling Edge, The Altern8 Juggling Club
+    url: https://jugglingedge.com/club.php?ClubID=4
+    checked: '2026-11-13'
+  - label: The Juggling Edge, UK club listings
+    url: https://jugglingedge.com/clublistings.php?Region=gb
+    checked: '2026-11-13'
+  - label: The Juggling Edge, US club listings
+    url: https://jugglingedge.com/clublistings.php?Region=us&
+    checked: '2026-11-13'
+  - label: Circus Center, FAQ
+    url: https://circuscenter.org/faq
+    checked: '2026-11-13'
+  - label: CourseHorse, Juggling - All Levels at Circus Academy New York
+    url: https://coursehorse.com/nyc/classes/life-skills/unique/juggling---all-levels
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Randy Engel, from Edmonds, Washington
+    line: A retired organic chemistry professor who taught a weekly juggling class at the Edmonds Senior Center, where beginners started by tossing beach balls.
+    title: Juggling helps seniors stay fit
+    outlet: The Everett Herald (HeraldNet)
+    url: https://www.heraldnet.com/life/juggling-helps-seniors-stay-fit
+    checked: '2026-11-13'
+  kit:
+  - name: Beanbag juggling balls (set of three)
+    why: soft balls for practising the cascade at home
+    url: https://www.amazon.co.uk/s?k=juggling+balls+beanbag+set+of+3
+  - name: Juggling scarves
+    why: lightweight scarves to toss and catch while you practise
+    url: https://www.amazon.co.uk/s?k=juggling+scarves
+  related:
+  - learn-magic-tricks
+  - learn-tai-chi-form
+  - learn-the-drums
+  - learn-to-roller-skate
+- id: try-flying-trapeze
+  title: Try flying trapeze
+  category: move
+  kind: experience
+  effort: demanding
+  cost: low
+  time: afternoon
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: On a beginners' flying trapeze class you jump from a platform holding the bar, learn a simple trick and, at many schools, finish by being caught by an instructor on a second bar. Circus schools run
+    one-off tasters for complete beginners, and the main thing they ask is that you can hold your own body weight for a short time.
+  start:
+  - Check you can hang from a bar with straight arms; schools ask for between 15 and 20 seconds.
+  - Read the school's weight, age and clothing rules before booking a taster class.
+  - Wear close-fitting clothes that cover your knees and shoulders, and arrive early to check in and warm up.
+  links:
+  - label: 'National Centre for Circus Arts: Try Fly taster (London)'
+    url: https://www.nationalcircus.org.uk/course/try-fly/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'New England Center for Circus Arts: flying trapeze (Vermont)'
+    url: https://necenterforcircusarts.org/programs/flying-trapeze
+    region: us
+    checked: '2026-11-13'
+  - label: 'Circus Center San Francisco: prices'
+    url: https://circuscenter.org/prices
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Flying trapeze classes for beginners: rules and prices'
+  description: What happens in a beginners' flying trapeze class, the strength, weight and clothing rules schools set, and what a taster costs in the UK and the US.
+  detail:
+  - h: What a first class is like
+    p:
+    - At Gorilla Circus in Regent's Park, London, students warm up, practise a simple trick on a low bar, then try it on the flying trapeze; near the end an instructor catches them on a separate swinging
+      bar. Circus Academy New York's beginners' class starts with a session on the ground before you climb the ladder, with the last 30 minutes for catching.
+    - The strength test is short but real. The National Centre for Circus Arts says you do not need to be an athlete, but you should be able to hold your body weight for at least 20 seconds. The New England
+      Center for Circus Arts (NECCA) asks students to hang from straight arms for 15 seconds and to be fitted with a safety belt that sits between the hips and ribs.
+  - h: Where to try it and the rules
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      - Rules the school gives
+      rows:
+      - - National Centre for Circus Arts, London
+        - Try Fly taster on a petit volant (small rig), about two hours, harnessed throughout
+        - £30, or £25 concession
+        - Able to hold your body weight for at least 20 seconds
+      - - National Centre for Circus Arts, London
+        - Flying Trapeze Level 1, a 10 or 11-week term
+        - £259 (10 weeks) or £285 (11 weeks); concessions £220 and £242
+        - Support your own body weight for at least 20 seconds
+      - - Circus Center, San Francisco
+        - All Levels Flying Trapeze; a flying trapeze class uses 2 class credits
+        - New Student Intro Pack of 6 credits, $99
+        - Minimum age 7; harnesses take up to 250 lb (113 kg) and a 38 in (97 cm) waist
+      - - New England Center for Circus Arts, Brattleboro, Vermont
+        - Indoor rig; drop-in classes for first-timers or weekly sessions of 5 to 11 weeks
+        - Not listed on the programme page
+        - Ages 7 and up; weight limit 215 lb (97.5 kg); hang from straight arms for 15 seconds
+      - - Circus Academy New York, Brooklyn
+        - Indoor Beginner Flying Trapeze, two hours
+        - $100 (sold out when checked)
+        - All ages 6 and above
+    after: NECCA asks for close-fitting, stretchy clothing that covers your knees and shoulders and says to avoid baggy trousers; Circus Center asks for workout trousers that cover the knees.
+  safety: Schools set their own safeguards, such as the harness the National Centre for Circus Arts uses throughout its taster and the safety lines and landing net NECCA describes, so read each school's
+    weight and strength rules before you book.
+  faq:
+  - q: Do you need to be strong to do flying trapeze?
+    a: You need some strength. The National Centre for Circus Arts says that if you can hold your body weight for at least 20 seconds you are ready, and NECCA asks for a 15-second straight-arm hang.
+  - q: Is there a weight limit for flying trapeze?
+    a: Often, yes. NECCA has a weight limit of 215 lb (97.5 kg) for flying trapeze, and Circus Center's harnesses take up to 250 lb (113 kg) and a 38 in (97 cm) waist.
+  - q: What should I wear to a trapeze class?
+    a: Close-fitting clothes that cover your knees and shoulders. NECCA suggests yoga-style trousers or tights and asks people to avoid baggy trousers.
+  - q: How much is a flying trapeze taster class in London?
+    a: The National Centre for Circus Arts last listed its two-hour Try Fly taster at £30, or £25 concession.
+  sources:
+  - label: National Centre for Circus Arts, Try Fly
+    url: https://www.nationalcircus.org.uk/course/try-fly/
+    checked: '2026-11-13'
+  - label: National Centre for Circus Arts, Flying Trapeze Level 1
+    url: https://www.nationalcircus.org.uk/?p=897
+    checked: '2026-11-13'
+  - label: New England Center for Circus Arts, Flying trapeze
+    url: https://necenterforcircusarts.org/programs/flying-trapeze
+    checked: '2026-11-13'
+  - label: Circus Center, Prices
+    url: https://circuscenter.org/prices
+    checked: '2026-11-13'
+  - label: Circus Center, FAQ
+    url: https://circuscenter.org/faq
+    checked: '2026-11-13'
+  - label: Cademy, Gorilla Circus Flying Trapeze School
+    url: https://cademy.io/gorilla-circus-flying-trapeze-school
+    checked: '2026-11-13'
+  - label: CourseHorse, Indoor Beginner Flying Trapeze at Circus Academy New York
+    url: https://coursehorse.com/nyc/classes/fitness/trapezing/indoor-beginner-flying-trapeze
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Moira McGhee, from Glasgow
+    line: A retired engineer and former college lecturer who found the Aerial Edge circus school in 2023 and now trains three nights a week in flying trapeze, aerial skills and circus fitness.
+    title: Meet the retired Glasgow engineer who took up trapeze at 66 – and wants to still be flying at 90
+    outlet: Glasgow 2026 (Commonwealth Games)
+    url: https://www.glasgow2026.com/news/4514329/meet-the-retired-glasgow-engineer-who-took-up-trapeze-at-66-and-wants-to-still-be-flying-at-90
+    checked: '2026-11-13'
+  kit:
+  - name: Fitted leggings
+    why: close-fitting legwear that covers the knees, as schools ask
+    url: https://www.amazon.co.uk/s?k=full+length+fitted+leggings+sports
+  - name: Pull-up bar for a doorway
+    why: practising a straight-arm hang before your class
+    url: https://www.amazon.co.uk/s?k=doorway+pull+up+bar
+  related:
+  - tandem-skydive
+  - indoor-climbing
+  - try-pilates
+  - learn-ballet-as-an-adult
+- id: learn-bachata
+  title: Learn bachata
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Bachata is a partner dance from the Dominican Republic, a slow, romantic dance with simple, straightforward basic steps. Short beginners' courses run in dance studios and colleges, and some group
+    classes rotate partners so you can turn up on your own.
+  start:
+  - Look for a beginners' bachata course or one-hour taster at a dance studio or adult-education college.
+  - Check whether you need to bring a partner; some classes rotate partners, and some booking forms ask you to choose to lead or follow.
+  - Wear comfortable clothes and shoes with smooth soles for turning.
+  links:
+  - label: 'City Academy: Bachata Beginners (London)'
+    url: https://www.city-academy.com/bachata-dance-workshop
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Dance With Me: bachata classes (New York)'
+    url: https://dancewithmeusa.com/midtown-new-york-manhattan-dance-studio/bachata-classes/
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Bachata classes for beginners: what to expect and cost'
+  description: What a beginners' bachata class teaches, whether you need a partner, what to wear and what short courses cost in the UK and the US, with where to look.
+  detail:
+  - h: What you learn first
+    p:
+    - Beginners' courses start with rhythm, timing and simple footwork. City Academy's Bachata Beginners course in London lists rhythm, timing and feel, simple footwork, turns and partner connection, and
+      is aimed at people new to bachata or refreshing the basics. One US college course describes bachata as a slower, romantic Latin dance with simple, straightforward basic steps, taught with lots of
+      review and repetition.
+    - You usually do not need to bring a partner. Dance With Me in New York says every group class is designed to welcome solo attendees and that classes use a partner rotation. City Academy's booking form
+      asks you to choose to book as a leader or a follower.
+  - h: What beginners' courses cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Academy, Dragon Hall, Holborn
+        - Six Tuesdays, one hour a week
+        - £95
+      - - City Academy, London
+        - Six Saturdays, 90 minutes a week
+        - £145
+      - - City Academy, London
+        - One day, 10:00 to 16:00
+        - £84
+      - - Stepping Out Studios, New York
+        - Beginner Bachata, one hour, 18 and over
+        - $19 (sold out when checked)
+      - - Dance Center Chicago
+        - Bachata 101, three sessions
+        - $72 (no dates listed when checked)
+    after: Dance With Me suggests comfortable clothes and smooth-soled shoes for turning and spinning, in its advice for its salsa classes.
+  faq:
+  - q: Do I need a partner to learn bachata?
+    a: Usually not. Dance With Me in New York says its group classes welcome solo attendees and rotate partners, but check with your class before you book.
+  - q: Is bachata easier than salsa?
+    a: Often, yes. Dance With Me says bachata is often slightly easier because its rhythm is simpler, and one college course describes bachata as a beginner-friendly dance with simple, straightforward basic
+      steps.
+  - q: How long does it take to learn bachata?
+    a: Beginners' courses are short. City Academy's course runs for six weeks or as a single day, and Dance Center Chicago's Bachata 101 is three sessions.
+  - q: What should I wear to a bachata class?
+    a: Comfortable clothes you can move in, with smooth-soled shoes for turning. Dance With Me gives this advice for its salsa classes.
+  sources:
+  - label: City Academy, Bachata Beginners
+    url: https://www.city-academy.com/bachata-dance-workshop
+    checked: '2026-11-13'
+  - label: Dance With Me, Bachata classes in Midtown
+    url: https://dancewithmeusa.com/midtown-new-york-manhattan-dance-studio/bachata-classes/
+    checked: '2026-11-13'
+  - label: Northcentral Technical College, Bachata Dance
+    url: https://www.ntc.edu/academics-training/courses/physical-education/bachata-dance
+    checked: '2026-11-13'
+  - label: CourseHorse, Beginner Bachata at Stepping Out Studios
+    url: https://coursehorse.com/nyc/classes/performing-arts/dance/latin-dance/bachata/beginner-bachata
+    checked: '2026-11-13'
+  - label: CourseHorse, Bachata classes in Chicago
+    url: https://coursehorse.com/chicago/classes/performing-arts/dance/latin-dance/bachata
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Desiree Joachim, from Canyon Country, California
+    line: Took up salsa and bachata with her husband having never danced before, and now dances socially around Los Angeles and Santa Clarita.
+    title: From wallflower to salsa, bachata dancer
+    outlet: The Santa Clarita Valley Signal
+    url: https://signalscv.com/2019/06/from-wallflower-to-salsa-bachata-dancer
+    checked: '2026-11-13'
+  kit:
+  - name: Suede-soled dance shoes
+    why: smooth soles for turning on a studio floor
+    url: https://www.amazon.co.uk/s?k=latin+dance+shoes+suede+sole
+  - name: Dance shoe sole covers
+    why: smooth covers that slip over everyday trainers for turning
+    url: https://www.amazon.co.uk/s?k=dance+sole+covers+for+trainers
+  related:
+  - learn-salsa
+  - learn-argentine-tango
+  - take-a-ballroom-class
+  - learn-swing-dancing
