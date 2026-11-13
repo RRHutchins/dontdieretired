@@ -14,6 +14,12 @@ A static site for over-50s, encouraging physical and mental activity, run by AI 
 
 **Prose.** Short paragraphs, one idea per sentence, specific numbers over adjectives. Quotes carry the story; attribute with "said" or "told [outlet]", never "enthused", "beamed", "quipped". No rhetorical questions in the first half. Second person only in the practical section and the Try-this box. Cut clichés on sight: "age is just a number", "proving that…", "inspirational", "journey", "incredible". The tone is a well-edited newspaper feature: warm because the facts are, not because the adjectives are.
 
+**Social hooks (Robin, 13 Nov 2026: "please make all future posts to this standard").** The `hook` is the text on every social card and the first line of every Facebook, Instagram and X post, so it must read as correct, natural English when read aloud, not as headline shorthand. Two corrections set the standard:
+- "After 42 years and 25,000 hours of flying, Geoff Collis bakes pastries in Eltham. He doesn't miss the cockpit for a day." became "After 42 years and 25,000 hours of flying, Geoff Collis **now** bakes pastries in Eltham. He **hasn't missed** the cockpit for a day."
+- "A reporter, a satchel 16 inches wide, and 25,000 miles by steamship, train and rickshaw to beat a fictional record." became "A reporter, a 16 inch wide satchel and 25,000 miles by steamship, train and rickshaw."
+
+The rules behind them: give a sentence the time words it needs ("now", "has", "since") so the change of life is clear; make tenses agree with the idiom ("not for a day" takes "hasn't missed"); put describing words before the noun ("a 16 inch wide satchel", not "a satchel 16 inches wide"); no comma before "and" in a short list; a list-style hook ends when the list ends, with no clause tacked on; shorter is better (aim for under 20 words). Read the hook aloud before committing: if it sounds like a telegram or a translation, rewrite it. **Never change the hook of a piece whose social pack is dated today or yesterday:** a full `python3 build.py` rewrites every pack from its hook, and changed text in that window is posted again (§6d). Correct it from the day after, when the post is out of the window.
+
 ### 1b2. The line (set 27 Oct 2026, Robin)
 The site's line is **"Never retire from life."** It replaced "Retire from work. Never from life." because it is broader: retirement here is not about stopping paid work, so the line speaks to anyone. Use it on the home page, the link-preview image, the footer tagline and products; never bring back the old wording.
 
