@@ -84,6 +84,7 @@
     return '<li><a href="' + esc(aff ? affUrl(l.url, aff) : l.url) + '" target="_blank" rel="' + (aff ? AFF_REL : 'noopener') + '">' + esc(l.label) + '</a>' + reg + (l.why ? '<span class="pl-lwhy">' + esc(l.why) + '</span>' : '') + '</li>';
   }
   /* ---------- the training (day 6): the engine's sessions, a week at a time ---------- */
+  const OPEN_WEEKS = 4;
   const range = (a, b) => (a === b ? dayText(a) : dayText(a) + ' to ' + dayText(b));
   function sesHtml(st) {
     const gone = st.date < today && !st.done;
@@ -92,9 +93,17 @@
       + '<p class="pl-stext">' + esc(st.text) + '</p>' + (st.detail ? '<p class="pl-detail">' + esc(st.detail) + '</p>' : '')
       + '<p class="pl-why"><span>Why:</span> ' + esc(st.why) + '</p></li>';
   }
-  function weekHtml(plan, w) {
+  function weekHtml(plan, w, later) {
     const tr = plan.train, wk = tr.list[w - 1], ss = plan.steps.filter(x => x.week === w), done = ss.filter(x => x.done).length;
     const gone = ss.every(x => x.date < today || x.done);
+    if (later) {   // beyond the next four weeks: one line, the week's detail and sessions folded under it (checkpoint item 8)
+      return '<li class="pl-step pl-week pl-week-later" data-strand="train"><details class="pl-wk pl-wkl"><summary><span class="pl-wkd"><time datetime="' + ss[0].date + '">'
+        + esc(range(ss[0].date, ss[ss.length - 1].date)) + '</time>' + (done ? ', ' + done + ' of ' + ss.length + ' done' : '') + '</span> '
+        + '<span class="pl-wkt">' + esc(fill(N.train_week, { w, weeks: tr.weeks, head: wk.head })) + '</span></summary>'
+        + '<p class="pl-detail">' + esc(wk.bullets[0]) + '</p><ol class="pl-sessions">' + ss.map(sesHtml).join('') + '</ol>'
+        + (wk.bullets.length > 1 ? '<p class="pl-wkh">Why this week looks like this</p><ul class="pl-wkwhy">' + wk.bullets.slice(1).map(b => '<li>' + esc(b) + '</li>').join('') + '</ul>' : '')
+        + '</details></li>';
+    }
     return '<li class="pl-step pl-week' + (done === ss.length ? ' is-done' : gone ? ' is-gone' : '') + '" data-strand="train">'
       + '<p class="pl-date"><time datetime="' + ss[0].date + '">' + esc(range(ss[0].date, ss[ss.length - 1].date)) + '</time> <span class="pl-tag">Train</span>'
       + (done ? ' <span class="pl-tag">' + done + ' of ' + ss.length + ' done</span>' : '') + '</p>'
@@ -204,11 +213,13 @@
     const multi = new Set(A.links.map(l => l.region)).size > 1;
     let month = '';
     const weeksDone = new Set();
+    // the next four training weeks (not yet over) are drawn in full; the weeks after them one line each
+    const wks = P.openWeeks(plan, today, OPEN_WEEKS);
     plan.steps.forEach(st => {
       if (st.week && weeksDone.has(st.week)) return;   // drawn with its week
       const m = st.date.slice(0, 7);
       if (m !== month) { html += (month ? '</ol>' : '') + '<h4 class="pl-month">' + esc(P.monthYear(m)) + '</h4><ol class="pl-steps">'; month = m; }
-      if (st.week) { weeksDone.add(st.week); html += weekHtml(plan, st.week); return; }
+      if (st.week) { weeksDone.add(st.week); html += weekHtml(plan, st.week, wks.later.has(st.week)); return; }
       const gone = st.date < today;
       const links = st.links || [];
       if (links.some(l => l.aff) || (st.items || []).some(x => x.aff)) hasAff = true;

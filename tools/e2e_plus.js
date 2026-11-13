@@ -24,6 +24,9 @@ const d1 = require('./d1_stub.js');
 
 const SITE_DIR = process.argv[2];
 const SHOTS = process.argv[3] || null;
+// Optional (day 21): DDR_E2E_PHONE=320 runs the phones at that width; DDR_E2E_AXE=<path to axe.min.js> runs axe-core's
+// WCAG 2.x A/AA checks on every screen the journey looks at (see tools/a11y_check.js for the static pages).
+const PHONE_W = Number(process.env.DDR_E2E_PHONE) || 390, AXE = process.env.DDR_E2E_AXE ? require('fs').readFileSync(process.env.DDR_E2E_AXE, 'utf8') : null;
 if (!SITE_DIR || !fs.existsSync(path.join(SITE_DIR, 'account/index.html'))) { console.error('usage: node tools/e2e_plus.js <paywall build of the site> [screenshot dir]'); process.exit(2); }
 const built = fs.readFileSync(path.join(SITE_DIR, 'index.html'), 'utf8');
 if (!built.includes('name="ddr-plus" content="paywall"') || !built.includes('http://localhost:8787')) { console.error('the site must be a local paywall build (see the top of this file)'); process.exit(2); }
@@ -181,6 +184,12 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
     const wide = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
     if (wide > 0) problems.push(`${page.who} sideways scroll ${wide}px on ${label}`);
     if (SHOTS) await page.screenshot({ path: path.join(SHOTS, String(++shot).padStart(2, '0') + '-' + page.who + '-' + label + '.png'), fullPage: false });
+    if (AXE) {   // from the top, so the sticky header does not count as covering whatever the page was scrolled to
+      await page.evaluate(() => window.scrollTo(0, 0));
+      await page.addScriptTag({ content: AXE });
+      const v = await page.evaluate(async () => (await window.axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'] } })).violations.map(x => x.id + ' (' + x.impact + '): ' + x.nodes.slice(0, 3).map(n => n.target.join(' ') + ' [' + (n.failureSummary || '').replace(/\s+/g, ' ').slice(0, 120) + ((n.any[0] || {}).relatedNodes || []).slice(0, 1).map(r => ' near ' + r.html.slice(0, 120)).join('') + ']').join(' | ')));
+      v.forEach(x => problems.push(`${page.who} axe on ${label}: ${x}`));
+    }
   }
   const step = async (name, fn) => { await fn(); console.log('ok  ' + name); };
   const vis = (page, sel) => page.locator(sel).first().waitFor({ state: 'visible', timeout: 15000 });
@@ -210,7 +219,7 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
   }
   const myYearHas = async (page, text) => { await page.goto(SITE + '/my-year/'); await page.waitForFunction(t => { const m = document.querySelector('[data-my-main]'); return m && !m.hidden && m.textContent.includes(t); }, text, { timeout: 15000 }); };
 
-  const phone = await device('phone', 390), laptop = await device('laptop', 1280), friend = await device('friend', 390);
+  const phone = await device('phone', PHONE_W), laptop = await device('laptop', 1280), friend = await device('friend', PHONE_W);
   const ALEX = 'alex.e2e@example.com', BEA = 'bea.e2e@example.com';
   let alexCus = null, giftCode = null, gift2 = null;
 

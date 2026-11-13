@@ -5,7 +5,7 @@
 :root{
   --ink:#1b1b1f;--muted:#5b5f6b;--paper:#fbfaf7;--card:#fff;--line:#e6e2da;
   --brand:#b23a48;--brand-ink:#7f2431;--accent:#0b6e4f;--gold:#c98a2b;
-  --move:#0b6e4f;--think:#1f4e79;--earn:#8a4b08;--connect:#6d2e72;--stories:#b23a48;--eat:#5e7d1e;--money:#2f5d50;--travel:#0e7490;--tech:#4b4f9c;--ai:#3f4a54;--explore:#2f6b3a;--curious:#6a4c2e;
+  --move:#0b6e4f;--think:#1f4e79;--earn:#8a4b08;--connect:#6d2e72;--stories:#b23a48;--eat:#557219;--money:#2f5d50;--travel:#0e7490;--tech:#4b4f9c;--ai:#3f4a54;--explore:#2f6b3a;--curious:#6a4c2e;
   --serif:"Fraunces",Georgia,serif;--sans:"Source Sans 3",system-ui,sans-serif;
   --r:14px;--shadow:0 6px 24px rgba(30,20,10,.08);
 }
@@ -161,12 +161,12 @@ body[data-region=us] .tier .price::after{content:""}
 .cat-pillar h2{margin:.2em 0 .4em;font-family:var(--serif)}
 .cat-pillar:hover h2{color:var(--brand)}
 .cat-products,.cat-kit{margin:36px 0}
-.product{scroll-margin-top:90px}
+.product{scroll-margin-top:8px}
 .product:target{outline:3px solid var(--gold);outline-offset:2px}
 .shop-jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
 .shop-jump a{padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-weight:600}
 .shop-jump a:hover{border-color:var(--brand)}
-.shop-cat{margin:40px 0;scroll-margin-top:90px}
+.shop-cat{margin:40px 0;scroll-margin-top:8px}
 .promo-bundle{margin:0 0 24px;border-left:6px solid var(--gold)}
 .cat-label-move{color:var(--move)}.cat-label-eat{color:var(--eat)}.cat-label-think{color:var(--think)}.cat-label-money{color:var(--money)}.cat-label-earn{color:var(--earn)}.cat-label-connect{color:var(--connect)}.cat-label-travel{color:var(--travel)}.cat-label-tech{color:var(--tech)}.cat-label-ai{color:var(--ai)}.cat-label-stories{color:var(--stories)}.cat-label-explore{color:var(--explore)}.cat-label-curious{color:var(--curious)}
 .nav{gap:14px}
@@ -577,7 +577,7 @@ dialog.modal-card::backdrop{background:rgba(0,0,0,.55)}
 @media (max-width:440px){.scam-btn svg{display:none}.brand{gap:6px!important}.brand-mark{width:26px!important;height:26px!important}}
 @media (max-width:374px){.nav{gap:10px!important}.brand{font-size:15px!important;gap:5px!important}.brand-mark{width:24px!important;height:24px!important}.scam-btn{font-size:.76rem;padding:0 9px}.header-inner{column-gap:6px!important}.header-cta .icon-btn{min-width:38px}}
 .scam-jump{margin:0 0 6px;font-size:.98rem}.scam-jump a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
-.scam-paid{scroll-margin-top:150px}
+.scam-paid{scroll-margin-top:20px}
 /* Scam checker: each type is a button, so tapping it clearly starts the check */
 .scam-types{gap:12px}
 .scam-type{border:0;background:none;border-radius:14px}
@@ -843,7 +843,7 @@ h1{line-height:1.04}
 .fl-grid>li.fl-picked{outline:4px solid var(--gold);outline-offset:3px}
 .fl-mine-title{font-size:1.4rem;margin:0 0 10px}
 
-.fl-results{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;margin:0 0 16px;padding:12px 18px;border-radius:12px;background:var(--stone);color:var(--ink);font-size:1.05rem;scroll-margin-top:150px}
+.fl-results{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;margin:0 0 16px;padding:12px 18px;border-radius:12px;background:var(--stone);color:var(--ink);font-size:1.05rem;scroll-margin-top:20px}
 .fl-results strong{font-size:1.2rem}
 .fl-results.is-filtered{background:var(--ink);color:#fff}
 .fl-results.is-none{background:var(--brand);color:#fff}
@@ -962,7 +962,7 @@ h1{line-height:1.04}
 @media (max-width:720px){.book{grid-template-columns:1fr;gap:24px}.book-cover{max-width:260px}.book-promo{grid-template-columns:84px minmax(0,1fr);gap:16px;padding:16px}.book-promo-img{width:84px}}
 @media (min-width:821px){.tiles:has(.tile-book){grid-template-columns:repeat(3,minmax(0,1fr))}}
 /* My year: "Plan this" on activity pages (RUNBOOK §6s, day 3) */
-.pl{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:32px 0;scroll-margin-top:96px}
+.pl{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:32px 0;scroll-margin-top:8px}
 .pl:focus{outline:none}.pl:focus-visible{outline:3px solid var(--focus,#8a5a00);outline-offset:3px}
 .pl>h2{margin-top:0}
 .pl fieldset{border:0;padding:0;margin:0 0 8px;min-width:0}
@@ -1215,3 +1215,22 @@ h1{line-height:1.04}
 .section-blurb{margin:-6px 0 16px;color:var(--muted);max-width:44em}
 @media (max-width:640px){.finder{padding:22px 18px 18px;border-radius:18px}.finder-row .btn{flex:1 1 100%}}
 @media (max-width:640px){.finder-chips{flex-wrap:nowrap;overflow-x:auto;margin-left:-18px;margin-right:-18px;padding:2px 18px 6px;scrollbar-width:none}.finder-chips .chip{flex:0 0 auto}.finder-or{flex:0 0 auto}}
+/* Planner Plus day 21: accessibility pass at 320–1280px (RUNBOOK §6t). --eat darkened a shade (#5e7d1e to #557219) so the
+   topic labels reach 4.5:1 on white, the pale tag background and as a background under pale text. */
+@media (max-width:340px){.nav{gap:8px!important}}
+.social a{min-width:44px;justify-content:center}
+/* A long plan (checkpoint item 8): weeks after the next four are one line each, opened by the reader */
+.pl-week-later{margin-bottom:6px}
+.pl-week-later::before{top:15px}
+.pl-wkl{margin:0}
+.pl-wkl>summary{display:block;padding:10px 0;min-height:44px;box-sizing:border-box;text-decoration:none;color:var(--ink);font-size:1rem;line-height:1.4}
+.pl-wkl>summary .pl-wkd{font-weight:600;color:var(--muted);margin-right:.35em}
+.pl-wkl>summary .pl-wkt{color:var(--brand-ink);text-decoration:underline;text-underline-offset:3px}
+.pl-wkl>summary .pl-wkt::after{content:" \25B8";display:inline-block;text-decoration:none;margin-left:.2em}
+.pl-wkl[open]>summary .pl-wkt::after{content:" \25BE"}
+.pl-wkl[open]>summary{margin-bottom:2px}
+.fl-map path.has:focus-visible{stroke:var(--ink);stroke-width:3}
+/* Keyboard focus and #links never land under the sticky header (WCAG 2.4.11): room for the header at each width */
+html{scroll-padding-top:84px}
+@media (max-width:1099px){html{scroll-padding-top:132px}}
+@media (max-width:339px){html{scroll-padding-top:148px}}

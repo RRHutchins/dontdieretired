@@ -583,5 +583,12 @@
     return { text: f.text, count: f.count, plans: groups.length };
   }
 
-  return { VERSION, LEVELS, MAX_SPAN, okUntil, build, suggest, trip, extras, diy, whenLabel, cleanPlace, combine, applyMarks, ics, calendar, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  /* A long plan on the page (Planner Plus day 21, checkpoint item 8): the next n training weeks that still have a session
+     on or after today are drawn in full; later ones as one line each. Weeks wholly gone by are not "later". */
+  function openWeeks(plan, today, n) {
+    const ahead = [...new Set((plan.steps || []).filter(x => x.week && x.date >= today).map(x => x.week))];
+    return { open: new Set(ahead.slice(0, n)), later: new Set(ahead.slice(n)) };
+  }
+
+  return { VERSION, LEVELS, MAX_SPAN, openWeeks, okUntil, build, suggest, trip, extras, diy, whenLabel, cleanPlace, combine, applyMarks, ics, calendar, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

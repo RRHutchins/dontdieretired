@@ -690,4 +690,19 @@ t('the sample plan builds a full plan with the trip sections, and its words are 
   assert.ok(!/today screen|gift/i.test(data.plus.what), 'Plus words claim only what works now (the calendar address since day 17)');
   assert.ok(/£2 a month or £20 a year/.test(data.plus.price));
 });
+t('a long plan: the next four training weeks in full, the rest one line each, gone weeks neither (day 21)', () => {
+  const a = acts.find(x => x.event && data.training[x.event.id] && x.id === 'run-great-north-run') || acts.find(x => x.event && data.training[x.event.id]);
+  const plan = P.build(a, data, { date: plus(TODAY, 200), today: TODAY });
+  assert.strictEqual(plan.status, 'ok');
+  const weeks = [...new Set(plan.steps.filter(s => s.week).map(s => s.week))];
+  assert.ok(weeks.length > 4, 'a plan long enough to fold');
+  let w = P.openWeeks(plan, TODAY, 4);
+  assert.deepStrictEqual([...w.open], weeks.slice(0, 4)); assert.deepStrictEqual([...w.later], weeks.slice(4));
+  // halfway through: weeks wholly gone are neither open nor later; the four from the current one are open
+  const mid = plan.steps.filter(s => s.week === weeks[2])[1].date;
+  w = P.openWeeks(plan, mid, 4);
+  assert.ok(!w.open.has(weeks[0]) && !w.later.has(weeks[0]) && w.open.has(weeks[2]));
+  assert.strictEqual(w.open.size, 4); assert.strictEqual(w.open.size + w.later.size, weeks.length - 2);
+  assert.strictEqual(P.openWeeks({ steps: [] }, TODAY, 4).open.size, 0);
+});
 console.log(n + ' tests passed');
