@@ -713,7 +713,7 @@ def build(make_social=True):
         by_slug = {a["slug"]: a for a in arts}
         LBL = {"effort": {"gentle": "Gentle", "moderate": "Moderate", "demanding": "Demanding"},
                "cost": {"free": "Free", "low": "Under £100 / $130", "mid": "£100 to £500 / $130 to $650", "high": "Over £500 / $650"},
-               "time": {"afternoon": "An afternoon", "weeks": "A few weeks", "months": "Months", "year": "A year or more"},
+               "time": {"afternoon": "An afternoon", "days": "A day or a few days", "weeks": "A few weeks", "months": "Months", "year": "A year or more"},
                "setting": {"indoors": "Indoors", "outdoors": "Outdoors", "either": "Indoors or out"},
                "company": {"solo": "On your own", "others": "With others", "either": "Alone or with others"}}
         # Named groups of activities, each with its own page at /list/<slug>/ (Robin, 8 Oct 2026). A slug is permanent once live.
@@ -936,6 +936,13 @@ def build(make_social=True):
                       "excerpt": "Large-print puzzle books in print on Amazon, made by the people behind the daily puzzles.",
                       "tags": ["puzzle", "puzzles", "book", "books", "christmas", "gift", "present", "sudoku", "large", "print"],
                       "image": "/static/og-default.png", "art": "/static/og-default.png"})
+    if (CONTENT / "plus_posts.yaml").exists():   # Planner Plus gift posts (RUNBOOK §6t row 22): checked every build, cards only once on sale
+        import importlib.util as _ilu
+        _spec = _ilu.spec_from_file_location("plus_posts", ROOT / "tools" / "plus_posts.py")
+        _pp = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_pp)
+        _bad = _pp.check(_pp.load()[0])
+        assert not _bad, f"content/plus_posts.yaml: {_bad}"
+        print(f"plus gift cards: {_pp.draw_all(DIST, make_card)} posts")
     proposals = (load_yaml(CONTENT / "proposals.yaml") or {}).get("proposals", []) if (CONTENT / "proposals.yaml").exists() else []
     say = out("/your-say/", "your-say.html", proposals=proposals)
     if cfg.get("feedback", {}).get("live"): urls.append(say)

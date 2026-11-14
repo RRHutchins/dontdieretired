@@ -1,0 +1,34 @@
+# Christmas gift posts for Planner Plus (RUNBOOK §6t, row 22: "Christmas gift posts written (facts only)").
+# HELD: nothing here is posted until launch. `python tools/plus_posts.py` refuses to write any social pack until
+# site.yaml → plus.paywall is true AND `launch:` below is set to the launch date (the day Plus and gifts go on sale).
+# Each post then goes out `day` days after launch, or on its fixed `date`; a post whose day has already passed is skipped,
+# and none is dated after 24 December. The deploy's Buffer job sends a pack on its date (§6d), like any other pack.
+# Facts only, from the gift page (/planner-plus/gift/) and the sales page (/planner-plus/) as built on days 16 to 19.
+# No reviews, no member counts, no "best", no claims about delivery beyond what the gift page says. Hooks follow §1
+# (read aloud; under 20 words). Never edit a post's text once its pack's date has passed: it would post again.
+launch: ""
+posts:
+  - day: 0
+    slug: plus-gift-a-year-of-plans
+    card: "Give someone a year of plans for Christmas"
+    text: "A present for someone with things they want to do: twelve months of Planner Plus for £20. You print the card at home, and the gift does not renew, so nobody is charged again."
+  - day: 4
+    slug: plus-gift-starts-when-used
+    card: "The twelve months start when they use the code"
+    text: "Our Planner Plus gift starts when the code is used, not when you buy it, and the code does not run out. They can start on New Year's Day, or whenever they are ready."
+  - day: 8
+    slug: plus-gift-whats-in-a-plan
+    card: "A course, a festival, a day out or a race, all planned"
+    text: "Pick anything from Things to do and Planner Plus gives it a dated plan: steps to get ready, getting there, where to stay and eat, and more to do nearby, all on one calendar."
+  - day: 12
+    slug: plus-gift-training-plans
+    card: "A training plan built back from the day"
+    text: "When the thing they want to do is a physical event with a training plan on our list, Planner Plus builds the weeks of training into their plan, alongside everything else in their year."
+  - day: 16
+    slug: plus-gift-print-at-home
+    card: "Printed at home and ready the same day"
+    text: "Buy the Planner Plus gift and the code appears on your account, usually within a minute. Print the card, add their name if you like, and it's ready to give."
+  - date: "2026-12-21"
+    slug: plus-gift-last-minute
+    card: "A present with no postage and no delivery date"
+    text: "Still looking for a present? The Planner Plus gift is a card you print at home: twelve months of plans for £20, with nothing to renew."
