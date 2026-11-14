@@ -6467,24 +6467,184 @@
   company: others
   regions:
   - uk
-  why: A club night gives you an opponent across a real board, a clock ticking and someone to talk the game through with afterwards. One rated game puts your name on the national grading list, which gives you a number to chase.
+  - us
+  why: A club night gives you an opponent across a real board, a clock ticking and someone to talk the game through with afterwards. Rated games put your name on the national rating list (in England once you have at least one result
+    besides the starting one, in the US after four rated games), which gives you a number to chase.
   start:
-  - Search the English Chess Federation club finder for clubs near you.
+  - Search the English Chess Federation club finder, or the US Chess Club Search, for clubs near you.
   - Email the club contact and ask which evening suits a first visit.
   - Go along, play some friendly games, then ask about entering a rated match.
   links:
   - label: 'English Chess Federation: chess clubs'
-    url: https://www.englishchess.org.uk/clubs-home-page/
+    url: https://englishchess.org.uk/clubs-home-page
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-14'
   - label: 'English Chess Federation: club finder'
     url: https://www.englishchess.org.uk/wp-content/uploads/2021/08/ECF-Club-Finder.html
     region: uk
     checked: '2026-10-06'
+  - label: 'US Chess: Club Search and Affiliate Directory'
+    url: https://new.uschess.org/club-search-and-affiliate-directory
+    region: us
+    checked: '2026-11-14'
+  - label: 'US Chess: join, with membership rates'
+    url: https://new.uschess.org/become-member
+    region: us
+    checked: '2026-11-14'
+  seo_title: How to join a chess club and get a chess rating
+  description: How to find a chess club near you, what a first club night is like, and how English and US chess ratings and membership costs compare.
+  detail:
+  - h: What a first club night is really like
+    p:
+    - The English Chess Federation's club finder lists more than 900 club entries. Hendon Chess Club in north London, for example, meets most Thursdays from 7.30pm, with breaks
+      at Christmas and in summer.
+    - Hendon lets you visit once or twice free before you decide to join, and suggests a social night for a first visit. Arrive before the start to hear the short announcement, which tells you who to speak
+      to. Newcomers often come for casual games. From September to May, social chess goes on alongside league matches, so keep your voice down near the teams.
+    - Some evenings are faster. Hendon's monthly blitz tournament gives everyone six games in a night, and its Swiss pairing system matches you with players on similar scores.
+    - Ask whether a club teaches. Hendon says it offers little structured coaching and points improvers to books, online courses and training apps.
+  - h: The rules you will meet at the board
+    p:
+    - English clubs such as Hendon rate games played under the FIDE Laws of Chess, the international rules, whose current version took effect on 1 January 2023. US Chess publishes its own official rules. These FIDE points are the
+      ones to know.
+    list:
+    - 'Touch-move: if you deliberately touch one of your pieces, you must move the first one touched that can move. Touch an opponent''s piece and you must capture it if you can.'
+    - To straighten a piece on its square, say so first, and only on your own turn.
+    - Press the clock with the same hand you moved with.
+    - In standard games, both players write down every move, theirs and their opponent's, usually in algebraic notation. Rapid games do not require it.
+    - Offer a draw after making your move and before pressing the clock. The offer cannot be taken back.
+    - Phones and other electronic devices are banned in the playing room unless the arbiter (referee) allows them.
+  - h: How ratings and membership work, England and US
+    table:
+      head:
+      - ''
+      - English Chess Federation (ECF)
+      - US Chess Federation
+      rows:
+      - - How the rating works
+        - Elo system, calculated monthly; the ECF rates as many games as possible
+        - Published on a monthly list; a provisional rating shows a game count after a slash, such as 1213/16
+      - - Getting your first rating
+        - New players are given a 'dummy' result to steady the figures, and need at least one real result
+        - At least 4 rated games for a published rating; provisional for roughly the first 25
+      - - Membership for over-the-board rated games (as last listed)
+        - Bronze £22 a year covers club, league and county games; Gold £38 adds ECF and FIDE ratings for eligible congresses
+        - Adult $54 a year or $105 for two years; aged 65 and over, $48 a year; every plan includes rated play in person or online
+      - - Online only
+        - Supporter £10 a year gives an ECF online rating through official ECF clubs on Lichess and Chess.com
+        - US Chess-rated games can be played on Chess.com and the Internet Chess Club
+      - - Trying it before you join
+        - In league and club competitions, the ECF's game fee is waived for non-members who play fewer than four standard games in a season
+        - Club tournaments may require membership; the Mechanics' Institute's Tuesday Night Marathon did
+    after: The ECF converts its ratings to FIDE's with a formula, FIDE = 0.6 × ECF + 700, up to 1750 ECF, with the two equal above that. Membership in England lasts 12 months from the first of the month you
+      join, and you can upgrade from Bronze to Gold at any time by paying the difference.
+  - h: Club, congress or online
+    table:
+      head:
+      - Format
+      - What it is
+      - Cost (as last listed)
+      rows:
+      - - Club night (Kingston Chess Club)
+        - Rated and social games, a club championship, simuls, blitz and rapid events, league and cup teams, and Zoom meetings
+        - £60 full membership for 2026/27, plus ECF Bronze (£22) for rated team or club games
+      - - Weekend congress (Shropshire Congress, Telford, 1 to 3 January 2027)
+        - Five rounds, 100 minutes each plus 10 seconds a move; four sections, the lowest a Minor for players rated under 1500
+        - £39 entry; £15 extra for anyone who is not an ECF Gold or Platinum member
+      - - US club tournament (Mechanics' Institute, San Francisco; fall 2026 run, finished)
+        - Tuesday Night Marathon, seven rounds, one a week, 90 minutes each plus 30 seconds a move; lowest section Under 1600
+        - $70 members, $100 non-members; US Chess membership required
+      - - Online (Lichess)
+        - Play online at any hour
+        - Free; run by volunteers and donations, with no adverts
+  - h: How to build up
+    p:
+    - Start with social games until the clock feels normal. When you want a rated game at the club, ask how it works. At Hendon, both players must be ECF Bronze members or above, the
+      time limit must qualify, the game must follow the FIDE Laws, including both players recording moves, and you must agree before you start that it will be rated.
+    - Next comes a league team. Beginners at Hendon often play on the lower boards of Division 3 of the Middlesex League, and one team picks players so that everyone has a chance of selection, whatever their level. Only say yes if you can go. Hendon
+      warns that a no-show costs the team a point and wastes an opponent's journey.
+    - A weekend congress is the bigger step. At Shropshire each player has 100 minutes plus 10 seconds a move, so one game can run past three hours. There, unrated players and those with only a provisional rating get an estimated
+      rating from the organisers, who may move them into a higher section.
+    - Ask about access before you go. Hendon's playing room, for example, is up two flights of stairs.
+  faq:
+  - q: How do I find a chess club near me?
+    a: In England, use the English Chess Federation's Club Finder, which has more than 900 club entries, or its county and regional lists. In the US, the US Chess Club Search lets you enter a postal code and distance,
+      and filter for clubs marked "Beginners Welcome".
+  - q: How do I join a chess club?
+    a: Email the club and ask which night suits a first visit. Hendon Chess Club, for example, lets newcomers visit once or twice free before they become members.
+  - q: What is a good chess rating for a beginner?
+    a: There is no official figure. The ECF's beginners' booklets are aimed at players rated up to about 1200, and the lowest section at the Shropshire Congress is for players under 1500.
+  - q: How do I get a chess rating?
+    a: Play rated games. In England, ECF Bronze membership covers club, league and county games. In the US, join US Chess and play rated events; you need at least four rated games for a published rating.
+  - q: How much does it cost to join a chess club?
+    a: As last listed, Kingston Chess Club charges £60 a year, plus £22 for ECF Bronze membership if you play rated games. US Chess adult membership is $54 a year, on top of any club or entry fees.
+  - q: Do I have to write down my moves?
+    a: In standard games under the FIDE Laws, yes, both players record every move. Rapid games do not require it.
+  sources:
+  - label: English Chess Federation, Clubs home page
+    url: https://englishchess.org.uk/clubs-home-page
+    checked: '2026-11-14'
+  - label: English Chess Federation, Membership rates & joining details
+    url: https://www.englishchess.org.uk/ecf-membership-rates-and-joining-details/
+    checked: '2026-11-14'
+  - label: English Chess Federation, The Game Fee Bye Laws (C41.12)
+    url: https://www.englishchess.org.uk/wp-content/uploads/2024/10/C41.12-The-Game-Fee-Bye-Laws.pdf
+    checked: '2026-11-14'
+  - label: English Chess Federation, Rating FAQs
+    url: https://www.englishchess.org.uk/?p=48669
+    checked: '2026-11-14'
+  - label: English Chess Federation, New to chess?
+    url: https://www.englishchess.org.uk/new-to-chess/
+    checked: '2026-11-14'
+  - label: US Chess, Club Search and Affiliate Directory
+    url: https://new.uschess.org/club-search-and-affiliate-directory
+    checked: '2026-11-14'
+  - label: US Chess, Join US Chess
+    url: https://new.uschess.org/become-member
+    checked: '2026-11-14'
+  - label: US Chess, Play chess
+    url: https://new.uschess.org/play-chess
+    checked: '2026-11-14'
+  - label: US Chess, Membership Services Area FAQ (provisional ratings)
+    url: https://msa.uschess.org/FAQ.php
+    checked: '2026-11-14'
+  - label: FIDE, Laws of Chess (applied from 1 January 2023)
+    url: https://rcc.fide.com/fide-laws-of-chess_fulltexthtml/
+    checked: '2026-11-14'
+  - label: Hendon Chess Club, Frequently asked questions
+    url: https://www.hendonchessclub.com/about/faq/
+    checked: '2026-11-14'
+  - label: Kingston Chess Club, Membership
+    url: https://kingstonchess.com/membership/
+    checked: '2026-11-14'
+  - label: Shropshire Chess, Shropshire Congress 2027
+    url: https://shropshirechess.org/shropshire-congress/shropshire-congress-2027/
+    checked: '2026-11-14'
+  - label: Mechanics' Institute, 2026 Fall Tuesday Night Marathon
+    url: https://www.milibrary.org/chess/tournaments/2026-fall-tuesday-night-marathon
+    checked: '2026-11-14'
+  - label: Lichess, About lichess.org
+    url: https://lichess.org/about
+    checked: '2026-11-14'
+  inspire:
+  - kind: read
+    person: Gary Senior
+    line: Came back to club chess after about twenty years away, began playing for Hendon around 2003-04, and was the club's top scorer in 2019-20 with 9½ points from 10 games.
+    title: 'Chess for life: an interview with Gary Senior'
+    outlet: Hendon Chess Club
+    url: https://hendonchessclub.com/news/2020-21/gary-senior-interview
+    checked: '2026-11-14'
   kit:
   - name: Chess set and clock
     why: clubs play with a clock; get used to one at home
     url: https://www.amazon.co.uk/s?k=chess+set+clock
+  - name: Chess scorebook
+    why: for writing down the moves, which standard rated games require
+    url: https://www.amazon.co.uk/s?k=chess+scorebook
+  related:
+  - learn-to-play-bridge
+  - join-u3a-or-olli
+  - play-table-tennis
+  - learn-a-language-to-b1
 - id: write-a-book
   title: Write the first full draft of a book
   category: think
@@ -6522,7 +6682,8 @@
   company: either
   regions:
   - anywhere
-  why: B1 is the point where you can hold your own in a conversation, follow the gist of a radio programme and sort out most situations while travelling. The level has a published checklist of can-do statements, so you know exactly when you have arrived.
+  why: B1 is the point where you can hold your own in a conversation, follow the gist of a radio programme and sort out most situations while travelling. The level has a published checklist of can-do statements,
+    so you know exactly when you have arrived.
   start:
   - Pick one language and read the CEFR level descriptions for A1 to B1.
   - Use the self-assessment grid to mark where you are today.
@@ -6532,7 +6693,228 @@
     url: https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions
     region: any
     checked: '2026-10-06'
+  - label: 'Institut français UK, London: DELF and DALF exams for adults, with dates and fees'
+    url: https://www.institut-francais.org.uk/certificates/delf-dalf-tout-public/
+    region: uk
+    checked: '2026-11-14'
+  - label: 'City Lit, London: French courses'
+    url: https://www.citylit.ac.uk/courses/languages/european/french
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Goethe-Institut USA: Goethe-Zertifikat B1, with US exam centres'
+    url: https://www.goethe.de/ins/us/en/spr/prf/gzb1.cfm
+    region: us
+    checked: '2026-11-14'
+  - label: 'L''Alliance New York: French classes for adults, A1 to C2'
+    url: https://lallianceny.org/language-center/adults/
+    region: us
+    checked: '2026-11-14'
   guide: learning-a-language-after-50
+  seo_title: 'What is B1 level, and how long does it take to reach?'
+  description: What B1 means, how many hours schools and exam bodies say it takes, the B1 exams for French, German, Spanish and Italian, and what classes cost.
+  detail:
+  - h: What B1 really means
+    p:
+    - The Common European Framework of Reference for Languages, or CEFR, sorts learners into six levels, from A1 up to C2. B1 is the third. In the framework's own words, a B1 speaker can understand the main
+      points of clear standard input on familiar matters, can deal with most situations likely to arise whilst travelling where the language is spoken, and can describe experiences, events, hopes and ambitions.
+    - 'The self-assessment grid makes it personal. At B1 you should be able to say: "I can enter unprepared into conversation on topics that are familiar, of personal interest or pertinent to everyday life."
+      You should also be able to relate the plot of a book or film, and write personal letters describing your experiences and impressions.'
+    - That is a real milestone, but not fluency. The next level up, B2, is where the framework talks of a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible
+      without strain for either party.
+  - h: How many hours it takes
+    p:
+    - Nobody can promise a figure, but schools and exam bodies publish their own estimates, and they are worth setting side by side.
+    table:
+      head:
+      - Who says it
+      - Estimate to reach B1, from scratch
+      - Small print
+      rows:
+      - - Cambridge English (for learners of English)
+        - 350 to 400 guided learning hours
+        - A guideline only; depends on background, how intensively you study and work outside lessons
+      - - Goethe-Institut (German)
+        - 350 to 650 lessons of 45 minutes, roughly 260 to 490 hours
+        - Depends on prior knowledge
+      - - Institut français UK (French)
+        - 300 class hours (A1 60, A2 120, B1 120)
+        - Its course plan, in 30-hour units
+      - - L'Alliance New York (French)
+        - 360 class hours (120 each for A1, A2 and B1)
+        - Its course plan
+    after: Classroom hours are only part of it. At L'Alliance New York's regular pace of three hours a week, 360 hours of classes would take about 120 weeks, or well over two years, without counting homework,
+      holidays or repeated terms. More hours a week, or practice between classes, shortens that.
+  - h: Some languages take longer
+    p:
+    - The US Foreign Service Institute, which trains American diplomats, groups languages by how long English speakers usually take to learn them. Its target is a score of 3 for speaking and listening on
+      the US government's Interagency Language Roundtable scale, a different yardstick from the CEFR, and its students do 23 hours a week in class plus 17 of self-study. The absolute numbers do not transfer
+      to a weekly evening class. The ratios do.
+    table:
+      head:
+      - FSI category
+      - Usual time
+      - Examples
+      rows:
+      - - I, languages close to English
+        - 24 to 30 weeks (552 to 690 class hours)
+        - Dutch, Italian, Portuguese, Swedish 24 weeks; French, Spanish 30 weeks
+      - - II
+        - About 36 weeks (828 class hours)
+        - German, Indonesian, Swahili
+      - - III, hard languages
+        - About 44 weeks (1,012 class hours)
+        - Hindi, Polish, Russian, Turkish
+      - - IV, super-hard languages
+        - 88 weeks (2,200 class hours)
+        - Arabic, Mandarin, Cantonese, Japanese, Korean
+    after: The FSI adds that the real time varies with natural ability, earlier language learning and time in the classroom. In plain terms, expect German to take somewhat longer than Spanish, and Japanese
+      roughly three times as long.
+  - h: The B1 exams, and where to sit them
+    table:
+      head:
+      - Exam
+      - Awarded by
+      - UK centre (fee as last listed)
+      - US centre (fee as last listed)
+      rows:
+      - - French DELF B1
+        - French Ministry of Education; valid for life
+        - Institut français, London; £155 (fees listed for 2027)
+        - L'Alliance New York; $155 plus a $50 administrative fee
+      - - German Goethe-Zertifikat B1
+        - Goethe-Institut; four modules (listening, reading, writing, speaking)
+        - Goethe-Institut London; fee not given in the page text, so ask the centre
+        - Goethe-Institut in Boston, Chicago, Los Angeles, New York, San Francisco and Washington, DC, plus partner centres; fee not given in the page text
+      - - Spanish DELE B1
+        - Instituto Cervantes, on behalf of Spain's Ministry of Education; no expiry
+        - University of Exeter Language Centre; £180 at its November 2025 sitting, the last UK sitting we could find listed (now past)
+        - Instituto Cervantes Los Angeles; $154 (last listed B1 sitting 14 November 2026; 2027 dates not yet listed)
+      - - Italian CILS B1
+        - Università per Stranieri di Siena
+        - International House London; £205
+        - Italian Cultural Institute of New York; $150 (December 2026 sitting full)
+    after: Italy's foreign ministry has agreements with three other certifying bodies, for CELI, IT/ele.IT and PLIDA, according to the Italian Cultural Institute of New York. International House London also offers a CILS B1 Cittadinanza
+      paper, which is for people applying for Italian citizenship; for a general certificate, book the ordinary B1.
+  - h: Ways to learn, and what they cost
+    table:
+      head:
+      - Provider
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London (adult-education college)
+        - French 3 lower, module 1, a B1-level class; 10 weekly 90-minute sessions, daytime or evening, next listed to start 14 January 2027
+        - £249 full fee, £162 concession
+      - - Seattle Central College, Washington (community college continuing education)
+        - Spanish Level 2, in person or on Zoom; all three fall 2026 sessions were already under way in mid-November, so look for the next term
+        - $289 a session
+      - - L'Alliance New York
+        - General French in a group, three hours a week for 10 weeks
+        - $629, plus materials and registration fee
+      - - Institut français UK, London
+        - Private tuition added to a course, four 90-minute sessions
+        - £350; textbook and workbook for most courses around £30
+    after: Apps can fill the gaps between lessons. Duolingo says its biggest courses, including Spanish and French, are aligned to the CEFR, but it is also plain that downloading the app is not what teaches
+      you a language. The honest hard part is speaking and listening at real speed, which needs real people. A class, a tutor or a conversation partner every week gives you that.
+  - h: How to build up
+    list:
+    - Test yourself against the self-assessment grid now, so you know whether you are starting at A1 or picking up an old school language.
+    - Book a level, not a whole programme. City Lit, for example, asks for at least three years of recent French study or a completed French 2 upper course before its B1 class.
+    - Add practice between lessons, because class hours alone are slow. At three hours a week, every extra hour of listening or reading counts.
+    - When the grid's B1 statements sound like you, look up the next exam sitting and its registration deadline; centres such as the Italian Cultural Institute of New York fill up.
+  faq:
+  - q: How long does it take to learn a language?
+    a: Published estimates for B1 run from 300 class hours on the Institut français UK's French course plan to 650 lessons of 45 minutes, the top of the Goethe-Institut's range for German. At three hours
+      a week, 300 hours is about two years of classes.
+  - q: What is B1 level?
+    a: The third of the CEFR's six levels. A B1 speaker can follow the main points of clear speech on familiar subjects, handle most situations while travelling and talk about experiences and plans.
+  - q: Is B1 conversational?
+    a: Yes, on familiar topics. The CEFR's grid says that at B1 you can enter unprepared into conversation on topics that are familiar, of personal interest or pertinent to everyday life.
+  - q: How much does a B1 language exam cost?
+    a: As last listed, £155 for DELF B1 at the Institut français in London, £205 for CILS B1 at International House London, and $154 for DELE B1 at Instituto Cervantes Los Angeles.
+  - q: Do B1 certificates expire?
+    a: DELF certificates are valid for life, according to the Institut français UK, and Instituto Cervantes says DELE diplomas have no expiration.
+  - q: Which languages are quickest for English speakers?
+    a: The US Foreign Service Institute puts Danish, Dutch, French, Italian, Norwegian, Portuguese, Romanian, Spanish and Swedish in its quickest group, and Arabic, Mandarin, Japanese and Korean in its slowest.
+  sources:
+  - label: Durham University, Common European Framework of Reference for Languages (global scale and self-assessment grid)
+    url: https://www.dur.ac.uk/media/durham-university/research-/research-centres/centre-for-foreign-language-study/downloads/CEFR.pdf
+    checked: '2026-11-14'
+  - label: Cambridge English, How many hours do I need to prepare for my exam?
+    url: https://support.cambridgeenglish.org/hc/en-gb/articles/202838506-Guided-learning-hours
+    checked: '2026-11-14'
+  - label: Goethe-Institut USA, Goethe-Zertifikat B1
+    url: https://www.goethe.de/ins/us/en/spr/prf/gzb1.cfm
+    checked: '2026-11-14'
+  - label: Goethe-Institut London, Goethe-Zertifikat B1
+    url: https://www.goethe.de/ins/gb/en/m/sta/lon/prf/b1e.cfm
+    checked: '2026-11-14'
+  - label: Goethe-Institut London, Weitere Informationen (Goethe-Zertifikat B1)
+    url: https://www.goethe.de/ins/gb/de/m/sta/lon/prf/b1e/inf.html
+    checked: '2026-11-14'
+  - label: Institut français UK, Studying with us
+    url: https://www.institut-francais.org.uk/french-courses/studying-with-us/
+    checked: '2026-11-14'
+  - label: Institut français UK, DELF/DALF Tout Public
+    url: https://www.institut-francais.org.uk/certificates/delf-dalf-tout-public/
+    checked: '2026-11-14'
+  - label: L'Alliance New York, Adult French Classes
+    url: https://lallianceny.org/language-center/adults/
+    checked: '2026-11-14'
+  - label: L'Alliance New York, DELF-DALF Exam
+    url: https://lallianceny.org/exams/delf-dalf/
+    checked: '2026-11-14'
+  - label: US Department of State, Foreign Language Training
+    url: https://www.state.gov/national-foreign-affairs-training-center/foreign-language-training
+    checked: '2026-11-14'
+  - label: University of Exeter Language Centre, Spanish DELE
+    url: https://language-centre.exeter.ac.uk/exams/dele/
+    checked: '2026-11-14'
+  - label: Instituto Cervantes Los Ángeles, DELE
+    url: https://cervantes.org/us/los-angeles/en/learning-teaching/certification/dele
+    checked: '2026-11-14'
+  - label: International House London, Italian CILS Certification
+    url: https://www.ihlondon.com/course/italian-cils-qualification/
+    checked: '2026-11-14'
+  - label: Istituto Italiano di Cultura di New York, Certifications
+    url: https://iicnewyork.esteri.it/en/lingua-e-cultura/certificazioni/
+    checked: '2026-11-14'
+  - label: City Lit, Learn French
+    url: https://www.citylit.ac.uk/courses/languages/european/french
+    checked: '2026-11-14'
+  - label: 'City Lit, French 3 lower: module 1'
+    url: https://www.citylit.ac.uk/courses/french-3-lower-module-1
+    checked: '2026-11-14'
+  - label: Seattle Central College Continuing Education, Spanish - Level 2
+    url: https://ce.seattlecentral.edu/category/person-classes/spanish-level-2
+    checked: '2026-11-14'
+  - label: Duolingo, Does Duolingo Work for Learning a Language?
+    url: https://blog.duolingo.com/how-well-does-duolingo-work/
+    checked: '2026-11-14'
+  - label: Betsi Cadwaladr University Health Board, Dr Caroline Jones named finalist in Welsh Learner of the Year award
+    url: https://bcuhb.nhs.wales/news/2026/dr-caroline-jones-named-finalist-in-prestigious-national-eisteddfod-welsh-learner-of-the-year-award/
+    checked: '2026-11-14'
+  inspire:
+  - kind: read
+    person: Dr Caroline Jones, originally from London
+    line: Began learning Welsh after moving to North Wales in 2004, and now offers bilingual services to children and young people as a consultant clinical psychologist, reaching the final of the National
+      Eisteddfod's Welsh Learner of the Year award.
+    title: Dr Caroline Jones named finalist in prestigious National Eisteddfod Welsh Learner of the Year Award
+    outlet: Betsi Cadwaladr University Health Board (NHS Wales)
+    url: https://bcuhb.nhs.wales/news/2026/dr-caroline-jones-named-finalist-in-prestigious-national-eisteddfod-welsh-learner-of-the-year-award/
+    checked: '2026-11-14'
+  kit:
+  - name: Graded readers
+    why: short books written for a set level, for reading practice between lessons
+    url: https://www.amazon.co.uk/s?k=graded+readers+B1
+  - name: Bilingual dictionary
+    why: for looking up words and genders while you read and write
+    url: https://www.amazon.co.uk/s?k=bilingual+dictionary
+  related:
+  - learn-british-sign-language
+  - join-u3a-or-olli
+  - take-a-music-grade
+  - finish-an-openlearn-course
 - id: play-one-piece-for-someone
   title: Learn an instrument and play one piece for an audience
   category: think
@@ -15133,7 +15515,7 @@
   - label: Association of Ringing Teachers (UK charity that trains bell ringing teachers)
     url: https://bellringing.org/
     region: uk
-    checked: '2026-10-08'
+    checked: '2026-11-14'
   - label: Association of Ringing Teachers, "Your first lesson"
     url: https://bellringing.org/learn-to-ring/your-first-lesson/
     region: uk
@@ -15142,7 +15524,179 @@
     url: https://www.nagcr.org/towers-and-bands
     region: us
     checked: '2026-10-08'
-  safety: Handle a bell rope only as your teacher instructs, because a bell left in the up position is a real hazard.
+  - label: 'Central Council of Church Bell Ringers: Learn to ring, with forms to register your interest'
+    url: https://cccbr.org.uk/bellringing/learn/
+    region: uk
+    checked: '2026-11-14'
+  - label: 'North American Guild of Change Ringers: education materials and how to start'
+    url: https://nagcr.org/education-materials
+    region: us
+    checked: '2026-11-14'
+  safety: Handle a bell rope only as your teacher instructs, because a bell left in the up position is a real hazard. Ecclesiastical Insurance's guidance for churches calls leaving bells up extremely hazardous, and Peter Wenham's guide for new ringers says never to catch hold of a rope until you have been told what to do.
+  seo_title: 'Learn bell ringing: a beginner''s guide to change ringing'
+  description: What learning to ring church bells is really like, from the first handling lesson to rounds and change ringing, how long it takes and where to start.
+  detail:
+  - h: What the first lessons and months are like
+    p:
+    - Each tower bell hangs from a wheel and is rung by a rope. Britannica describes two strokes. At handstroke the bell swings almost 360 degrees to its balance point; at backstroke it swings back again. The North American Guild of Change Ringers calls the woollen tuft on the rope, where you catch it, the sally.
+    - The first job is handling, learning to control that one bell on your own. The Association of Ringing Teachers (ART) says one-to-one tuition is needed for this, and that several lessons on successive days is ideal, with twice a week as a minimum. It takes about 10 to 15 hours. By then you should be able to ring a bell independently, raise and lower it, and set it at handstroke or backstroke at will. ART also says new ringers expect proper coaching, not 15 or 20 minutes a week.
+    - Towers do it in their own way. Swanton Morley in Norfolk starts newcomers with paperwork, a safety briefing and a tour of the tower, then a demonstration. The bell is silenced while you learn, so it cannot be heard outside, and an intensive block can last from one to five hours.
+    - Next comes ringing with others. First rounds, the bells ringing in order down the scale. Then call changes, and then plain hunt and the patterns called methods, in which the order shifts from one change to the next and no bell moves more than one place at a time. That is change ringing proper.
+  - h: How long it takes, stage by stage
+    table:
+      head:
+      - ART Learning the Ropes stage
+      - What you can do by the end
+      - Average time at one school
+      rows:
+      - - Bell handling
+        - Safe, competent handling, including raising and lowering a bell
+        - 10 weeks
+      - - Ringing with others
+        - Dodge, make places and ring simple call changes
+        - 27 weeks
+      - - Introduction to change ringing
+        - Plain hunt and covering; two quarter peals
+        - 29 weeks
+      - - Novice change ringer
+        - Ring and call touches of a Doubles or Minor method; raise and lower a bell in peal
+        - 27 weeks
+      - - Change ringer
+        - Ring and call a second method and touches of Plain Bob; three more quarter peals
+        - 24 weeks
+    after: The times are averages from the Birmingham School of Bell Ringing, published by ART, which puts the whole ladder at 130 weeks, about two and a half years, and says everyone is different. Learning the Ropes is ART's scheme of five levels, with a Personal Progress Logbook and a certificate at each one. A full peal is 5,000 or more changes. In the US, the Washington Ringing Society puts the basics at roughly six to 12 months.
+  - h: The honest hard parts
+    list:
+    - 'Stairs. Ringing chambers sit up in the tower. The Central Council of Church Bell Ringers (CCCBR) jokes that ringing keeps you fit, especially climbing some of those tower steps; Wimborne Minster''s tower in Dorset has 72 twisting stairs, according to Country Life.'
+    - Commitment. Both the CCCBR and the North American Guild of Change Ringers say most ringers practise once or twice a week and ring before or after Sunday service, so you are joining a team with a timetable.
+    - Patience. Andrea Walker, who rings at Eckington near Sheffield, told the Yorkshire Post that controlling a bell takes several months, and ringing in time with another bell is a further step.
+    - Paperwork. ART's Level 2 requires safeguarding training relevant to your local tower, with exemptions (for example secular towers) unless the church requires it.
+    - Safety. Insurance guidance for churches calls leaving bells up extremely hazardous. It says they should normally be left down, and when they are up the ropes should be hoisted towards the ceiling, with warning notices displayed.
+  - h: Finding a tower, UK and US side by side
+    table:
+      head:
+      - ''
+      - UK
+      - US
+      rows:
+      - - How many towers
+        - Country Life puts it at around 5,000 towers and an estimated 40,000 ringers (2018)
+        - The North American Guild says there are over 50 operable rings across North America, most at churches
+      - - Finding one
+        - Dove's Guide, the CCCBR's database, searchable by place or full postcode (the UK zip code; not BT, Isle of Man or Channel Islands codes), with a filter for practice night
+        - The Guild's list of towers and handbell bands
+      - - Getting taught
+        - Register on a learn-to-ring form via the CCCBR; the Guild of Devonshire Ringers, for example, gives one-to-one lessons over several weeks
+        - Contact a tower; the Washington Ringing Society in DC runs two or three full-day Saturday courses once or twice a year, then weekly practices
+      - - Help for teachers
+        - ART trains and accredits teachers
+        - The Guild can arrange learning days at your tower, online sessions and teacher training
+    after: 'No source we opened gave a fee for lessons. The Sussex County Association of Change Ringers says membership is by annual subscription and mentions low-cost or free training sessions for members, so ask your tower what, if anything, it charges.'
+  - h: Other ways in, and who can ring
+    p:
+    - Handbells use the same patterns. The North American Guild says handbell change ringing is common in North America because towers are scarce, and each ringer takes two bells. ART has a Learning the Ropes Handbells scheme with its own five levels, from foundation skills to Surprise methods; its logbook was listed at £3.
+    - Online, Ringing Room lets a band ring together in a web browser. It was built by two ringers in Northampton, Massachusetts. ART says it needs only a browser and a keyboard, so smartphones are out, and that the online platforms are free to use, though donations help keep them running.
+    - You do not need to be a musician. The CCCBR says ringers might be unmusical, bad at maths or not very strong physically. The Guild's brochure says you can become a very good ringer without knowing anything else about music, and that if you can count, you know all the mathematics you need. Neither says you must hold any religious belief, though the Guild notes that many people ring as a contribution to church life.
+  faq:
+  - q: How long does it take to learn bell ringing?
+    a: ART says about 10 to 15 hours of one-to-one tuition to handle a bell safely, before you start ringing with others. Averages from the Birmingham School of Bell Ringing put the full Learning the Ropes ladder at about two and a half years.
+  - q: Do you need to be musical to ring church bells?
+    a: No. The CCCBR says ringers might be unmusical or bad at maths, and the North American Guild says you can become a very good ringer without knowing anything else about music.
+  - q: Do you have to be religious to be a bell ringer?
+    a: Neither the CCCBR nor the North American Guild says you need religious belief. Most bands do ring before or after Sunday services.
+  - q: What is change ringing?
+    a: Ringing a set of tower bells in a changing order, where no bell moves more than one place between one row and the next. A system of such changes is called a method.
+  - q: How often do bell ringers practise?
+    a: Most practise once or twice a week and also ring before or after Sunday service, according to both the CCCBR and the North American Guild.
+  - q: Can I learn bell ringing in the US?
+    a: Yes. The North American Guild of Change Ringers lists its towers and handbell bands, and its brochure says there are over 50 operable rings in North America.
+  sources:
+  - label: Central Council of Church Bell Ringers, Learn to ring
+    url: https://cccbr.org.uk/bellringing/learn/
+    checked: '2026-11-14'
+  - label: 'Association of Ringing Teachers, Teaching bell handling'
+    url: https://ringingteachers.org/survival-and-recovery-toolbox/teaching-bell-handling
+    checked: '2026-11-14'
+  - label: Association of Ringing Teachers, What do your new recruits expect?
+    url: https://ringingteachers.org/resources/recruitment-and-retention/new-recruit-expectations
+    checked: '2026-11-14'
+  - label: Association of Ringing Teachers, How long does it take to learn to ring?
+    url: https://ringingteachers.org/resources/recruitment-and-retention/how-long-does-it-take-learn-ring
+    checked: '2026-11-14'
+  - label: Association of Ringing Teachers, Learning the Ropes
+    url: https://ringingteachers.org/about/learning-ropes
+    checked: '2026-11-14'
+  - label: Association of Ringing Teachers, changes to the Learning the Ropes scheme
+    url: https://ringingteachers.org/news/articles/changes-ltr-scheme
+    checked: '2026-11-14'
+  - label: Association of Ringing Teachers, Bell handling (Module 1)
+    url: https://bellringing.org/about-teaching/teaching-modules/bell-handling/
+    checked: '2026-11-14'
+  - label: Association of Ringing Teachers, Launch of the Learning the Ropes Handbells Scheme
+    url: https://ringingteachers.org/news/articles/launch-learning-ropes-handbells-scheme
+    checked: '2026-11-14'
+  - label: Association of Ringing Teachers, Online ringing
+    url: https://ringingteachers.org/survival-and-recovery-toolbox/online-ringing
+    checked: '2026-11-14'
+  - label: Britannica, Change ringing
+    url: https://www.britannica.com/art/change-ringing
+    checked: '2026-11-14'
+  - label: 'Swanton Morley Bell Ringers, Learn: What to expect'
+    url: https://swantonmorleybellringers.co.uk/learn/whattoexpect.html
+    checked: '2026-11-14'
+  - label: Guild of Devonshire Ringers, Learn to Ring
+    url: https://devonringers.org.uk/education/learn
+    checked: '2026-11-14'
+  - label: Sussex County Association of Change Ringers, Membership
+    url: https://scacr.org/about-us/membership
+    checked: '2026-11-14'
+  - label: 'Dove''s Guide for Church Bell Ringers, Dove Help: Searching'
+    url: https://dove.cccbr.org.uk/help/searching
+    checked: '2026-11-14'
+  - label: Peter D Wenham, Disconnected Jottings by an Itinerant Bellringer, Starting to Ring
+    url: https://www.pdg.org.uk/pdw/PDW_DJIB_1_Starting_to_Ring.pdf
+    checked: '2026-11-14'
+  - label: 'Ecclesiastical Insurance, Church Guidance Note: Conditions of use applying to change ringing bells'
+    url: https://www.ecclesiastical.com/media/gcwi3bf3/bell-ringing.pdf
+    checked: '2026-11-14'
+  - label: 'Country Life, Learning the ropes: The new breed of church bell ringers'
+    url: https://www.countrylife.co.uk/out-and-about/learning-ropes-new-church-bell-ringers-176636
+    checked: '2026-11-14'
+  - label: North American Guild of Change Ringers, Education Materials
+    url: https://nagcr.org/education-materials
+    checked: '2026-11-14'
+  - label: North American Guild of Change Ringers, The Art of Change Ringing (brochure)
+    url: https://uploads-ssl.webflow.com/5fa7463d08cb571a74d47572/63de92a401f036e140c20881_nagcr-brochure-quotthe-art-of-change-ringing.pdf
+    checked: '2026-11-14'
+  - label: Washington Ringing Society, About
+    url: https://washingtonringingsociety.org/about
+    checked: '2026-11-14'
+  - label: Ringing Room, About
+    url: https://ringingroom.com/about
+    checked: '2026-11-14'
+  - label: Yorkshire Post, My Passion With Andrea Walker
+    url: https://www.yorkshirepost.co.uk/business/my-passion-andrea-walker-1857899
+    checked: '2026-11-14'
+  inspire:
+  - kind: read
+    person: Andrea Walker
+    line: Took up ringing at St Peter and St Paul's, Eckington, after going along when her son needed an activity for his Duke of Edinburgh award, and rang her first quarter peal in November 2011.
+    title: My Passion With Andrea Walker
+    outlet: Yorkshire Post
+    url: https://www.yorkshirepost.co.uk/business/my-passion-andrea-walker-1857899
+    checked: '2026-11-14'
+  related:
+  - learn-handbell-ringing
+  - learn-the-organ
+  - learn-morris-dancing
+  - visit-heritage-open-days
+  kit:
+  - name: The New Ringers Book
+    why: a book for new tower ringers to read between lessons
+    url: https://www.amazon.co.uk/s?k=the+new+ringers+book
+  - name: Change-Ringing on Handbells
+    why: a book for learning change ringing on handbells, with two bells in your hands
+    url: https://www.amazon.co.uk/s?k=change+ringing+on+handbells
 - id: take-a-music-grade
   title: Pass a graded music exam
   category: think
@@ -15772,16 +16326,187 @@
   - label: GOV.UK guide to compulsory basic training (CBT) for mopeds and motorcycles
     url: https://www.gov.uk/motorcycle-cbt
     region: uk
-    checked: '2026-10-08'
+    checked: '2026-11-14'
+  - label: 'GOV.UK: Find a motorcycle or moped CBT course'
+    url: https://www.gov.uk/find-motorcycle-training
+    region: uk
+    checked: '2026-11-14'
   - label: Motorcycle Safety Foundation Basic RiderCourse (US)
-    url: https://msf-usa.org/courses/basic-ridercourse/
+    url: https://msf-usa.org/start-your-ride/basic-ridercourse/
     region: us
-    checked: '2026-10-08'
-  safety: Motorcycling carries a real risk of serious injury, so learn with an approved training provider and wear full protective kit.
+    checked: '2026-11-14'
+  - label: California DMV Motorcyclists Guide
+    url: https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/motorcyclists-guide/
+    region: us
+    checked: '2026-11-14'
+  safety: Motorcycling carries a real risk of serious injury. NHTSA, the US road safety agency, found that per mile travelled in 2024 motorcyclists were almost 27 times more likely than car occupants to die in a crash, so learn with an approved trainer and wear full protective kit every time.
+  seo_title: 'CBT and motorbike licence guide: UK and US routes'
+  description: How CBT works, the UK licence categories and test fees, the US Basic RiderCourse and permit route, helmet standards and what to do after your first course.
+  detail:
+  - h: What CBT is really like
+    p:
+    - CBT has five parts, taken in order. There is an introduction and eyesight check, then training and riding on a private site, then training and riding on the road. You move on to each part only when your trainer is happy with your theory and basic skills.
+    - It usually takes one full day, though it can run longer if you need more time. On site, a trainer can take up to four learners; on the road, no more than two. The on-road ride must last at least two hours. GOV.UK is clear that it is not a test you pass or fail.
+    - Turn up knowing the Highway Code, the UK rulebook for road users, and the main traffic signs. A trainer can stop the course if your knowledge is not good enough, and the school can charge you to come back. The same goes for unsuitable clothing. You need motorcycle boots or sturdy footwear that supports the ankle, motorcycle trousers or heavy denim, a motorcycle jacket or a heavy denim one with layers beneath, motorcycle gloves and a helmet that meets British standards. Ask whether the school lends a helmet. You cannot ride your own bike to the course unless you already have a CBT certificate.
+    - At the end you get a certificate of completion, sometimes called a DL196. With L plates (D plates in Wales) it lets you ride a moped from 16, or a motorcycle up to 125cc and 11kW from 17. You then have two years to pass the theory test and the full test, or you must take CBT again or stop riding.
+  - h: The UK licence routes
+    table:
+      head:
+      - Licence
+      - Minimum age
+      - What you can ride
+      - How to get it
+      rows:
+      - - AM
+        - '16'
+        - Mopeds with a top speed of 25 to 45 km/h (about 15 to 28 mph)
+        - CBT, theory test, practical test
+      - - A1
+        - '17'
+        - Light motorcycles up to 125cc and 11kW
+        - CBT, theory test, practical test
+      - - A2
+        - '19'
+        - Motorcycles up to 35kW
+        - Theory and practical test (direct access), or two years on an A1 licence and another practical test
+      - - A
+        - 24 (direct access) or 21 (after two years on A2)
+        - Motorcycles of any size or power
+        - CBT, theory and practical test (direct access), or two years on an A2 licence and another practical test
+    after: Direct access means going straight for the biggest licence your age allows, rather than working up through the smaller categories. There is no minimum number of lessons before you book your tests.
+  - h: The tests and what they cost in Britain
+    p:
+    - Once you have CBT, the theory test comes next. It has a multiple-choice part, where the pass mark is 43 out of 50, and a hazard perception part, where it is 44 out of 75. The pass lasts two years, and you must pass both riding tests within that time.
+    - Module 1 is about 20 minutes on an off-road manoeuvring area. You wheel the bike, ride a slalom and a figure of eight, ride slowly, do a U-turn, and corner into a controlled stop, an emergency stop and a swerve round a hazard. On a motorcycle, the emergency stop and hazard avoidance must be done at 31 mph (50 km/h) or more. You may make up to five minor riding faults and no serious or dangerous ones.
+    - Module 2, which you take only after passing Module 1, lasts about 40 minutes on the road. It starts with reading a number plate at 20 metres (about 66 feet), then two safety questions, ordinary riding with directions from the examiner by radio, and about ten minutes of independent riding. Up to ten minor faults are allowed.
+    table:
+      head:
+      - Item
+      - UK cost (as last listed)
+      - US equivalent (as last listed)
+      rows:
+      - - First course
+        - 'CBT: set by each school; RideTo, a booking site, put the typical price at £160 to £190 in January 2025'
+        - 'California Motorcyclist Safety Program beginner course: from $375 under 21, from $395 at 21 and over'
+      - - Theory or knowledge test
+        - £23
+        - Set by each state
+      - - Riding test
+        - 'Module 1: £15.50. Module 2: £75 on weekdays, £88.50 evenings, weekends and bank holidays'
+        - Can be waived in many states after an approved course
+      - - Bike and helmet for the course
+        - Often provided; check with the school
+        - Provided on the Basic RiderCourse and by the California programme
+    after: UK fees are from GOV.UK, opened on 14 November 2026. On top of these you will pay for any training between CBT and the tests, which schools price individually.
+  - h: The US route
+    p:
+    - Every US state requires a motorcycle endorsement on top of a car licence, and the rules vary by state. NHTSA recommends a rider education course, and your state's motor vehicle agency can point you to one.
+    - The Motorcycle Safety Foundation's Basic RiderCourse takes about 15 hours, with about five hours of learning (often as an online eCourse) and then ten hours on the motorcycle over two days. A motorcycle or scooter, helmet and gloves are provided. You need to be able to ride a bicycle and to hold a driver's licence or motorcycle learner's permit. The Foundation says most states waive the riding part of the endorsement test after the course, and some the written test too.
+    - California is one example. Under 21, the course is compulsory before you can get a permit, and you must hold the permit for six months. At 21 and over it is recommended, not required. Either way, the completion certificate, form DL 389, can be used to waive the DMV skills test if you hand it in within 12 months.
+  - h: Your helmet, and how to build up
+    list:
+    - In the UK a helmet must meet BS 6658:1985 with a BSI Kitemark, or UNECE Regulation 22.05 or 22.06. The government's SHARP scheme rates helmets from one to five stars for protection above that legal minimum.
+    - SHARP advises choosing for fit first, then comfort, then the highest star rating you can afford. It says rating and price are not linked, and that you should be able to find a three to five star helmet at any price.
+    - In the US, look for the DOT symbol on the back, showing the helmet meets the federal standard FMVSS No. 218. NHTSA says a compliant helmet usually weighs about 3 lb (1.4 kg), and that unsafe helmets are often less than an inch (2.5 cm) thick and lack a stiff foam liner. Fake DOT labels are sold, so the sticker alone is not proof.
+    - After your course, NHTSA suggests getting to know an unfamiliar bike in a quiet, controlled area before riding in traffic, and checking tyres, brakes, lights and fluids before each ride.
+    - Once you hold a full UK licence, the DVSA enhanced rider scheme starts with a one to two hour assessment ride with an expert trainer. Its certificate earns discounts with most motorcycle insurers.
+  faq:
+  - q: How long does CBT take?
+    a: Usually one full day, though it can take longer if you need more time. The on-road riding part must last at least two hours.
+  - q: Can you fail CBT?
+    a: CBT is not a test you pass or fail. You move through each part when your trainer is satisfied, and they can stop the course if you are not ready or not properly dressed.
+  - q: How long is a CBT certificate valid?
+    a: You must pass the theory test and full motorcycle test within two years. If you do not, you must take CBT again or stop riding.
+  - q: How much does it cost to get a motorbike licence in the UK?
+    a: CBT prices are set by each school. As last listed on GOV.UK, the theory test is £23, Module 1 is £15.50 and Module 2 is £75 on weekdays, before any extra training.
+  - q: Can I ride a motorbike on a car licence?
+    a: If you passed your car test before 1 February 2001, you can ride a moped up to 50cc without CBT. Otherwise you usually need CBT before riding a moped or motorcycle on the road.
+  - q: Does the MSF course get you a motorcycle license?
+    a: Not by itself. The Motorcycle Safety Foundation says most states waive the riding part of the licence test after the Basic RiderCourse, and some also waive the written test. Check your state's rules.
+  sources:
+  - label: GOV.UK, CBT motorcycle and moped training
+    url: https://www.gov.uk/motorcycle-cbt
+    checked: '2026-11-14'
+  - label: GOV.UK, CBT, How the training works
+    url: https://www.gov.uk/motorcycle-cbt/how-training-works
+    checked: '2026-11-14'
+  - label: GOV.UK, CBT, Booking your CBT course
+    url: https://www.gov.uk/motorcycle-cbt/book-cbt-course
+    checked: '2026-11-14'
+  - label: GOV.UK, CBT, Preparing for your CBT course
+    url: https://www.gov.uk/motorcycle-cbt/prepare-cbt-course
+    checked: '2026-11-14'
+  - label: GOV.UK, CBT, What to take to your course
+    url: https://www.gov.uk/motorcycle-cbt/what-to-take
+    checked: '2026-11-14'
+  - label: GOV.UK, Bike categories, ages and licence requirements
+    url: https://www.gov.uk/ride-motorcycle-moped/bike-categories-ages-and-licence-requirements
+    checked: '2026-11-14'
+  - label: GOV.UK, Driving test costs
+    url: https://www.gov.uk/driving-test-cost
+    checked: '2026-11-14'
+  - label: GOV.UK, Motorcycle and moped tests, Booking your tests
+    url: https://www.gov.uk/motorcycle-test
+    checked: '2026-11-14'
+  - label: GOV.UK, Module 1 off-road test, what happens
+    url: https://www.gov.uk/motorcycle-test/module-1-offroad-test
+    checked: '2026-11-14'
+  - label: GOV.UK, Module 2 on-road test, what happens
+    url: https://www.gov.uk/motorcycle-test/module-2-onroad-test
+    checked: '2026-11-14'
+  - label: GOV.UK, Theory test for motorcycles and mopeds, Pass mark and test result
+    url: https://www.gov.uk/motorcycle-theory-test/pass-mark-and-result
+    checked: '2026-11-14'
+  - label: GOV.UK, Motorcycle helmets and safety equipment
+    url: https://www.gov.uk/motorcycle-helmet-law
+    checked: '2026-11-14'
+  - label: SHARP (Department for Transport), Choosing a new helmet FAQs
+    url: https://sharp.dft.gov.uk/frequently-asked-questions/choosing-a-new-helmet/
+    checked: '2026-11-14'
+  - label: GOV.UK, Take the DVSA enhanced rider scheme assessment and training
+    url: https://www.gov.uk/enhanced-rider-scheme
+    checked: '2026-11-14'
+  - label: RideTo, How Much is a CBT Test? The Cost Of Getting Your CBT
+    url: https://www.rideto.com/blog/how-much-is-a-cbt-test
+    checked: '2026-11-14'
+  - label: Motorcycle Safety Foundation, Basic RiderCourse
+    url: https://msf-usa.org/start-your-ride/basic-ridercourse/
+    checked: '2026-11-14'
+  - label: California DMV, Motorcyclists Guide
+    url: https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/motorcyclists-guide/
+    checked: '2026-11-14'
+  - label: California Motorcyclist Safety Program, FAQ
+    url: https://motorcyclesafetyca.com/faq
+    checked: '2026-11-14'
+  - label: 'NHTSA, Motorcycle Safety: Helmets, Motorists, Road Awareness'
+    url: https://www.nhtsa.gov/road-safety/motorcycles
+    checked: '2026-11-14'
+  - label: NHTSA, Choose the Right Motorcycle Helmet
+    url: https://www.nhtsa.gov/motorcycle-safety/choose-right-motorcycle-helmet
+    checked: '2026-11-14'
+  inspire:
+  - kind: read
+    person: Sue Gibbons
+    line: Went from riding pillion behind her husband to taking CBT, practising on a 125cc bike and passing both modules of the motorcycle test, and has since toured the UK and Europe on a BMW F700GS.
+    title: '"Men worry about dropping their bike too, they just don''t talk about it"'
+    outlet: MCN
+    url: https://motorcyclenews.com/news/2019/january/learn-to-ride-motorbike-middle-age-female
+    checked: '2026-11-14'
+  related:
+  - take-an-advanced-driving-course
+  - drive-north-coast-500
+  - drive-route-66
+  - drive-the-blue-ridge-parkway
   kit:
   - name: Motorbike gloves
     why: protect your hands from the first lesson
     url: https://www.amazon.co.uk/s?k=motorcycle+gloves
+  - name: Motorcycle boots
+    why: GOV.UK asks for motorcycle boots or other sturdy footwear that supports and protects your ankles on CBT
+    url: https://www.amazon.co.uk/s?k=motorcycle+boots
+  - name: L plates for motorbikes
+    why: you must display them (D plates in Wales) when riding on a CBT certificate
+    url: https://www.amazon.co.uk/s?k=motorcycle+l+plates
 - id: take-an-advanced-driving-course
   title: Take an advanced driving course
   category: think
@@ -42529,3 +43254,1315 @@
   - lawn-bowls
   - play-table-tennis
   - learn-to-play-bridge
+- id: try-paper-marbling
+  title: Try paper marbling
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Marbling floats paint or ink on a thickened bath called size, combs it into patterns and then lifts the pattern off on a sheet of paper. The charity Heritage Crafts lists it as endangered, yet notes there now seem to be more workshops in marbling than in the 1980s.
+  start:
+  - Book a beginners' course that teaches you to prepare the size yourself, such as City Lit's paper marbling course in London (check for its next run) or a marbling class at the John C. Campbell Folk School in North Carolina.
+  - Wear old clothes and closed, non-slip shoes, and take a notebook; marbling splatters and classes hand out recipes for the size and paints.
+  - Buy kit only after the course, once you know whether you prefer traditional size and paints, acrylics or Japanese ink marbling.
+  links:
+  - label: 'City Lit: Paper marbling (London)'
+    url: https://www.citylit.ac.uk/courses/paper-marbling
+    region: uk
+    checked: '2026-11-14'
+  - label: 'West Dean College: Introduction to marbling for paper, textiles and leather book arts (West Sussex)'
+    url: https://www.westdean.ac.uk/short-courses/s3d40259-introduction-to-marbling-for-paper-textiles-and-leather-book-arts
+    region: uk
+    checked: '2026-11-14'
+  - label: 'John C. Campbell Folk School: Marbling classes (North Carolina)'
+    url: https://www.folkschool.org/find-a-class/marbling/
+    region: us
+    checked: '2026-11-14'
+  seo_title: 'Paper marbling classes: how to start marbling paper'
+  description: What a beginners' paper marbling class teaches, from carrageen size and alum to combs and patterns, and what courses cost in the UK and US.
+  detail:
+  - h: What happens in a marbling class
+    p:
+    - '"Marbling consists of floating ink or paint on a surface to create a pattern," as Heritage Crafts puts it. On City Lit''s beginners'' course you prepare a size from carrageen moss, treat the paper with alum as a mordant and make simple combs, rakes and brushes to draw the colours into traditional patterns.'
+    - Courses differ in method. City Lit also covers Turkish ebru and Japanese suminagashi, which uses ink and water. The Minnesota Center for Book Arts teaches marbling with acrylics and four patterns, including stones and nonpareil. West Dean's three-day introduction covers the Spanish wave pattern and ends with marbling a cushion cover and a silk scarf.
+    - The craft reached Europe in the 17th century and was used for book covers and endpapers. Heritage Crafts says there are no big marbling houses left to train apprentices, and names the cost of carrageen moss as one pressure on the craft.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Paper marbling: four Sundays, 10.30am to 4.30pm, basic materials included (June to July 2026 term, now past)'
+        - £309
+      - - Minnesota Center for Book Arts
+        - 'Introduction to Marbling: one six-hour Saturday with acrylics, all levels welcome (April 2026, now past)'
+        - $147 tuition plus a $25 materials fee; $74 scholarship rate
+      - - John C. Campbell Folk School, Brasstown, North Carolina
+        - 'Creative Marbling: paper, fabric and more; a week-long class, all levels (September 2026, now past)'
+        - $870 tuition plus $150 materials
+    after: West Dean's three-day introduction includes paper, inks, paints, fabrics, mordant and marbling powders, aprons and gloves; its page did not show a fee when we checked. Its two-day course on marbling fabric, wood, leather and books asks for previous marbling experience.
+  faq:
+  - q: What is marbling size made of?
+    a: Traditionally carrageen moss. City Lit teaches you to prepare carrageen moss size, and the instructors at the John C. Campbell Folk School supply carrageenan and alum.
+  - q: Do I need any experience to take a marbling class?
+    a: No. City Lit's course is for beginners, the Minnesota Center for Book Arts welcomes all skill levels, and the John C. Campbell Folk School says all levels are welcome.
+  - q: What should I wear to a marbling workshop?
+    a: Old clothes or an apron and closed shoes. West Dean asks for old clothing and stout, covered footwear, and the Minnesota Center for Book Arts asks for non-slip, water-resistant shoes.
+  - q: Is paper marbling a dying craft?
+    a: Heritage Crafts lists marbling as endangered on its Red List, citing digital printing and cheaper imports. It also says interest has grown and there seem to be more workshops than in the 1980s.
+  sources:
+  - label: Heritage Crafts, Marbling
+    url: https://heritagecrafts.org.uk/craft/marbling/
+    checked: '2026-11-14'
+  - label: City Lit, Paper marbling
+    url: https://www.citylit.ac.uk/courses/paper-marbling
+    checked: '2026-11-14'
+  - label: West Dean College, Introduction to marbling for paper, textiles and leather book arts with Rachel O'Connell
+    url: https://www.westdean.ac.uk/short-courses/s3d40259-introduction-to-marbling-for-paper-textiles-and-leather-book-arts
+    checked: '2026-11-14'
+  - label: West Dean College, Marbling on paper, fabric and other materials
+    url: https://www.westdean.org.uk/short-courses/swe29847-marbling-on-paper-fabric-and-other-materials
+    checked: '2026-11-14'
+  - label: 'Minnesota Center for Book Arts, Introduction to Marbling: April'
+    url: https://mnbookarts.org/events/introduction-to-marbling-april-2026
+    checked: '2026-11-14'
+  - label: John C. Campbell Folk School, Marbling Classes
+    url: https://www.folkschool.org/find-a-class/marbling/
+    checked: '2026-11-14'
+  - label: John C. Campbell Folk School, Creative Marbling – Paper, Fabric & More
+    url: https://folkschool.configio.com/pd/4043/creative-marbling-paper-fabric-more
+    checked: '2026-11-14'
+  kit:
+  - name: Paper marbling kit
+    why: size, paints and tools for practising at home after a class
+    url: https://www.amazon.co.uk/s?k=paper+marbling+kit
+  - name: Marbling combs
+    why: for drawing the floating colours into combed patterns
+    url: https://www.amazon.co.uk/s?k=marbling+comb
+  related:
+  - learn-bookbinding
+  - try-monoprinting
+  - learn-silk-painting
+  - learn-a-heritage-craft
+- id: learn-fly-tying
+  title: Learn to tie your own fishing flies
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Fly tying is done at a bench, with a vice (US vise) to hold the hook, a bobbin holder for the thread and fine-pointed scissors, which the Fly Dressers' Guild calls the most important tool. Guild branches in the UK run tying evenings, and in the US Trout Unlimited chapters and fly shops run beginners' classes, some of them free.
+  start:
+  - Find a local branch on the Fly Dressers' Guild branches page, or in the US look for a Trout Unlimited chapter or a Fly Fishers International club near you.
+  - Start with a class where vices, tools and materials are provided, before you buy anything.
+  - When you do buy, follow the Guild's advice and spend a little on a basic vice until you know you will keep going, checking that its jaws hold the hook sizes you need.
+  links:
+  - label: Fly Dressers' Guild, branches (England, Northern Ireland, Scotland and Wales)
+    url: https://flydressersguild.org/branches/
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Southern Wisconsin Trout Unlimited: free fly tying classes'
+    url: https://www.swtu.org/learn/flytying-classes/
+    region: us
+    checked: '2026-11-14'
+  - label: 'Fly Fishers International: Fly Tying Education'
+    url: https://www.flyfishersinternational.org/Fly-Tying-Group/Fly-Tying-Education
+    region: us
+    checked: '2026-11-14'
+  seo_title: 'Fly tying for beginners: classes, tools and clubs'
+  description: How to start fly tying, the basic tools you need, and where beginners learn in the UK and US, from Fly Dressers' Guild branches to free US classes.
+  detail:
+  - h: How you learn
+    p:
+    - The Fly Dressers' Guild says it is for tyers at all levels, from beginners up, and that no qualifications or experience are needed to join. It has just over 30 branches across the UK, each running its own programme of talks, tying evenings and outings. The branch at Greyfriars in Ringwood, Hampshire, meets on Tuesday evenings from September to April and teaches in three groups, from Beginners to Improvers 2.
+    - The basic kit, according to the Guild, is a vice, sharp fine-pointed scissors, a bobbin holder, hackle pliers to grip small feathers, a dubbing needle and a whip finish tool, though it says learning the whip finish by hand is better. It suggests branch auctions as a source of bargains.
+    - In the US, Southern Wisconsin Trout Unlimited's beginners' course covers basic techniques and trout patterns, with a booklet of pattern sheets. Fly Fishers International publishes a beginners' manual for its clubs and members.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - Fly Dressers' Guild (UK)
+        - National membership, the quarterly Flydresser magazine, access to branches and the voluntary awards scheme
+        - £25 a year individual, £35 family
+      - - North West Fly Dressers' Guild branch, Timperley
+        - Branch membership; national Guild membership also required
+        - £30 a year, or £5 a night as a guest
+      - - Southern Wisconsin Trout Unlimited, Fitchburg
+        - Beginning Fly Tying, eight Wednesday evenings from 13 January 2027; class materials provided, bring your own tools and thread
+        - Free
+      - - Thorne Bros, Blaine, Minnesota
+        - Beginner class of about two hours, three patterns; tools, vises and materials provided
+        - $40
+    after: The Guild notes that some branches charge their own fee on top of national membership. The Southern Wisconsin course needs advance registration through Fitchburg's recreation department.
+  faq:
+  - q: What tools do I need to start fly tying?
+    a: A vice, fine-pointed scissors, a bobbin holder, hackle pliers, a dubbing needle and a whip finish or half-hitch tool. The Fly Dressers' Guild suggests a basic vice until you know you will stick with it.
+  - q: Do I need experience to join the Fly Dressers' Guild?
+    a: No. The Guild says no qualifications or previous experience are needed and that its members range from beginners to experienced tyers.
+  - q: Are fly tying classes free?
+    a: Some are. Southern Wisconsin Trout Unlimited's eight-week course is free, while a two-hour beginner class at Thorne Bros in Minnesota was listed at $40.
+  - q: Is there a qualification in fly tying?
+    a: There are voluntary award schemes. The Fly Dressers' Guild runs the Guild Fly-Tying Awards Scheme, and Fly Fishers International has a Fly Tying Skills Award Program.
+  sources:
+  - label: Fly Dresser's Guild, home page
+    url: https://flydressersguild.org/
+    checked: '2026-11-14'
+  - label: Fly Dresser's Guild, Join The Fly Dressers' Guild
+    url: https://flydressersguild.org/join/
+    checked: '2026-11-14'
+  - label: Fly Dresser's Guild, Branches
+    url: https://flydressersguild.org/branches/
+    checked: '2026-11-14'
+  - label: Fly Dresser's Guild, Just starting? Tools of the trade
+    url: https://flydressersguild.org/just-starting-tools-of-the-trade/
+    checked: '2026-11-14'
+  - label: North West Fly Dressers' Guild, Branch Membership
+    url: https://nwfdg.co.uk/branch-membership/
+    checked: '2026-11-14'
+  - label: Greyfriars Community Centre, Fly Dressers' Guild
+    url: https://greyfriarsringwood.org.uk/resources/fly-dressers-guild/
+    checked: '2026-11-14'
+  - label: Southern Wisconsin Trout Unlimited, Fly Tying Classes
+    url: https://www.swtu.org/learn/flytying-classes/
+    checked: '2026-11-14'
+  - label: Fly Fishers International, Fly Tying Education
+    url: https://www.flyfishersinternational.org/Fly-Tying-Group/Fly-Tying-Education
+    checked: '2026-11-14'
+  - label: Fly Fishers International, Fundamental Flies for the Beginner Fly Tier
+    url: https://www.flyfishersinternational.org/Fly-Tying-Group/Fly-Tying-Education/Beginner-Fly-Tying-Manual
+    checked: '2026-11-14'
+  - label: Thorne Bros, Fly Tying Class - Beginner
+    url: https://www.thornebros.com/products/fly-tying-class-beginner
+    checked: '2026-11-14'
+  kit:
+  - name: Fly tying vice
+    why: holds the hook steady while you wind on thread and materials
+    url: https://www.amazon.co.uk/s?k=fly+tying+vice
+  - name: Fly tying scissors
+    why: fine points for trimming materials close to the hook
+    url: https://www.amazon.co.uk/s?k=fly+tying+scissors
+  - name: Bobbin holder
+    why: holds the thread spool and lets you control tension
+    url: https://www.amazon.co.uk/s?k=fly+tying+bobbin+holder
+  related:
+  - learn-to-fish
+  - canoe-a-river-trail
+  - learn-to-kayak
+- id: try-green-woodworking
+  title: Try green woodworking on a pole lathe
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: afternoon
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A pole lathe runs on your own leg power; as North House Folk School puts it, you "press the pedal to engage the natural elasticity of a small diameter pole". Green woodworking pairs it with freshly felled wood, axes, drawknives and the shaving horse, and a one-day taster can send you home with a rolling pin or a small mallet.
+  start:
+  - Look for a group near you on the Local Groups map of the Association of Pole-lathe Turners and Green Woodworkers, known as the Bodgers.
+  - Book a one-day taster where the tools and wood are supplied, such as the pole lathing day in Wiltshire listed below.
+  - Wear closed shoes and an apron, and tell the tutor about any injuries, as lathe work can mean standing on one leg for long spells.
+  links:
+  - label: 'Association of Pole-lathe Turners and Green Woodworkers: Local Groups Map'
+    url: https://www.bodgers.org.uk/groups-map
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Explore The Great Outdoors: Pole Lathing Taster Day (Wiltshire)'
+    url: https://www.craftcourses.com/courses/pole-lathing-taster-day
+    region: uk
+    checked: '2026-11-14'
+  - label: 'North House Folk School: Fireside Stool, a green woodworking course (Minnesota)'
+    url: https://northhouse.org/course-session/fireside-stool-3-9-2027-0900
+    region: us
+    checked: '2026-11-14'
+  - label: 'North House Folk School: Pole Lathe: Turning (Minnesota)'
+    url: https://northhouse.org/courses/pole-lathe-turning
+    region: us
+    checked: '2026-11-14'
+  seo_title: Pole lathe and green woodworking courses for beginners
+  description: What a pole lathe and green woodworking course involves, what you make on a first day, and real UK and US courses with prices as last listed.
+  detail:
+  - h: What it's really like
+    p:
+    - Green wood is freshly felled and unseasoned. On North House Folk School's Fireside Stool course, students shape legs from white ash with drawknives on shaving horses and carve a pine seat. On the pole lathe you rough out with one chisel and smooth with another; Colin Wells at Amberley Museum in West Sussex teaches with a roughing-out and a smoothing chisel.
+    - First projects are small. A taster day in Wiltshire lists honey drizzlers, rolling pins and small mallets, and Colin Wells's foundation day makes a garden dibber, a spurtle or a rolling pin. Longer courses go further. Surrey's adult learning service has run a beginners' course of five weekly sessions in which you assemble a pole lathe and take it home.
+    - It is physical. North House calls its three-day pole lathe bowl course physically demanding, needing stamina, coordination and hand strength and long spells standing on one leg. This is different from carving a spoon with knives or turning at a club on a powered lathe; here your foot drives the work and the wood comes straight from the log.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Course
+      - Cost (as last listed)
+      rows:
+      - - Explore The Great Outdoors, Sutton Veny, Wiltshire
+        - Pole lathing taster day, 9.30am to 4.30pm, all materials and tools included (next listed 4 April 2027)
+        - £85
+      - - Colin Wells, Amberley Museum, West Sussex
+        - Pole-lathe taster of about four hours, or a full foundation day; wood prepared for you (page last updated about 2023, so prices may have changed)
+        - £75 taster; £85 foundation day
+      - - Surrey adult learning, Molesey Centre
+        - 'Green Woodworking - Beginners: five weekly sessions, assemble a pole lathe, use a hatchet and drawknife (May 2025 term, now past)'
+        - £266
+      - - North House Folk School, Grand Marais, Minnesota
+        - Fireside Stool, 9 to 11 March 2027; drawknives and shaving horses, no pole lathe; no experience needed
+        - $335 tuition plus $160 materials
+      - - Deep River Folk School, North Carolina
+        - Spring-pole lathe workshop of under three hours (May 2025, now past)
+        - $50
+    after: In the US we found no pole lathe course with a date ahead. North House's Pole Lathe Turning course was last offered in October 2026 and had no sessions scheduled when we checked, so watch its page.
+  faq:
+  - q: What is a pole lathe?
+    a: A foot-powered lathe. You press a pedal and the spring of a thin pole turns the wood, which you shape with chisels.
+  - q: What can you make on a pole lathe in a day?
+    a: Small pieces such as rolling pins, garden dibbers, spurtles, honey drizzlers and small mallets, according to UK one-day courses.
+  - q: Is green woodworking hard work?
+    a: It can be. North House calls its pole lathe course physically demanding, and its stool course needs moderate hand and grip strength.
+  - q: Do I need woodworking experience?
+    a: Not for a taster. The Wiltshire taster day is for beginners and North House's Fireside Stool needs no prior experience, but Surrey's five-session course asked for a basic understanding of woodwork.
+  sources:
+  - label: The Association of Pole-Lathe Turners and Green Woodworkers, home page
+    url: https://www.bodgers.org.uk
+    checked: '2026-11-14'
+  - label: The Association of Pole-Lathe Turners and Green Woodworkers, Local Groups Map
+    url: https://www.bodgers.org.uk/groups-map
+    checked: '2026-11-14'
+  - label: Explore The Great Outdoors, Pole Lathing Taster Day (Craft Courses)
+    url: https://www.craftcourses.com/courses/pole-lathing-taster-day
+    checked: '2026-11-14'
+  - label: Green Wood Worker, Tuition
+    url: https://www.greenwoodworker.co.uk/Polelathe_Tuition.htm
+    checked: '2026-11-14'
+  - label: Surrey County Council adult learning, Green Woodworking - Beginners
+    url: https://surreycc.gov.uk/schools-and-learning/adult-learning/courses/overview?id=53414
+    checked: '2026-11-14'
+  - label: North House Folk School, Spindle Turning on the Spring Pole Lathe
+    url: https://northhouse.org/courses/spindle-turning-on-the-spring-pole-lathe
+    checked: '2026-11-14'
+  - label: 'North House Folk School, Pole Lathe: Turning'
+    url: https://northhouse.org/courses/pole-lathe-turning
+    checked: '2026-11-14'
+  - label: North House Folk School, Fireside Stool
+    url: https://northhouse.org/course-session/fireside-stool-3-9-2027-0900
+    checked: '2026-11-14'
+  - label: Deep River Folk School, Green Woodworking & Timber Crops
+    url: https://www.deepriverfolkschool.org/workshops/wood-working
+    checked: '2026-11-14'
+  kit:
+  - name: Drawknife
+    why: a two-handled blade for shaping green wood on a shaving horse
+    url: https://www.amazon.co.uk/s?k=drawknife
+  - name: Leather work apron
+    why: keeps shavings and wet wood off your clothes
+    url: https://www.amazon.co.uk/s?k=leather+woodworking+apron
+  related:
+  - carve-a-wooden-spoon
+  - join-a-woodturning-club
+  - learn-woodworking
+  - weave-a-willow-basket
+- id: join-a-samba-band
+  title: Join a samba band
+  category: connect
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A samba bateria is a drum section of big bass surdos, snare drums, small tamborims and bells, all locked into one rhythm. Community bands teach newcomers by ear in weekly sessions and lend drums, so you can start without owning a drum.
+  start:
+  - Find a community samba band or school near you and ask when its next beginners' taster or course starts; Reading's Beatroots runs a Samba 101 session for complete beginners a couple of times a year.
+  - Check whether drums are provided; Paraíso in London and Austin Samba in Texas both supply them to learners.
+  - Go regularly. Beatroots says you need not come every week, but regular attendance helps the rhythms stick.
+  links:
+  - label: 'Readipop: Beatroots Bateria, community samba drumming (Reading)'
+    url: https://readipop.co.uk/project/beatroots
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Paraíso School of Samba: bateria workshops (London)'
+    url: https://paraisosamba.co.uk/classes/bateria/
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Austin Samba: about the drum section and New Member Boot Camp (Texas)'
+    url: https://austinsamba.com/drums
+    region: us
+    checked: '2026-11-14'
+  - label: 'Levine Music: Brazilian Bateria Percussion Ensemble'
+    url: https://www.levinemusic.org/lessons-and-classes/course-catalog/course/brazilian-bateria-percussion-ensemble-spring-33651/
+    region: us
+    checked: '2026-11-14'
+  seo_title: 'Samba drumming for beginners: how to join a band'
+  description: How community samba bands teach beginners, what the surdo, caixa, tamborim and agogô do, and what bateria classes cost in the UK and US.
+  detail:
+  - h: How a bateria works
+    p:
+    - 'The drum section of a samba band is the bateria. Austin Samba lists its instruments as caixas, surdos, chocalhos, timbals, repeniques, tamborims and agogôs. Reading''s Beatroots describes the roles: the surdos are the large bass drums, the caixa and tarol are snare drums, the agogô is a bell, the chocalho a shaker, and the repinique is the high drum that leads the group; the leader also uses an apito whistle.'
+    - Teaching is mostly by ear. A WLRN report on Miami's Miamibloco describes the leader singing a rhythm for the drummers to copy, with section leaders lining them up, the high tamborims at the front and the deep surdos at the back. Beginners usually start on one part; at Austin Samba new players begin on caixa or surdo.
+    - 'Expect noise and some carrying. Beatroots recommends musicians'' earplugs, a strap that holds the drum at a comfortable height, and avoiding hard or wooden-handled beaters, which damage the drum heads. Members arrange to get their drum to gigs, with help from a drum buddy or the leader.'
+  - h: Ways in, and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Paraíso School of Samba, London (Camden and Brixton)
+        - Weekly bateria workshops, Tuesday or Thursday at 8.30pm; instruments provided
+        - £10 as listed, with loyalty discounts and under-25 concessions
+      - - Beatroots Bateria, Reading
+        - Tuesdays 8 to 9.30pm, part workshop, part rehearsal; Samba 101 taster for beginners
+        - Fees not on the page; terms on a separate link
+      - - Rushmoor Borough Council, Farnborough (past listing)
+        - Eight weekly evening workshops leading to two performances; no experience necessary
+        - £40 for all eight sessions
+      - - Levine Music (EducArte at Levine), Washington, DC area
+        - Spring course, weekly 90-minute adult bateria class for all levels, no audition
+        - $25 a drop-in session
+      - - Austin Samba, Texas
+        - New Member Boot Camp; drums provided
+        - Not listed; next boot camp delayed until early 2027
+    after: Austin Samba says some drumming experience is preferred but all levels are welcome, and anyone joining outside boot camp season needs an intake evaluation first.
+  faq:
+  - q: Do I need any experience to join a samba band?
+    a: Usually not. Rushmoor's workshops said absolutely no experience was necessary, and Levine's bateria class takes newcomers as well as advanced players.
+  - q: Do I need my own samba drum?
+    a: Not to start. Paraíso and Austin Samba provide drums to learners, though Beatroots asks members to get a drum to gigs themselves.
+  - q: What instruments are in a samba band?
+    a: Surdos (bass drums), caixa and tarol (snares), repinique (the lead drum), tamborim, agogô bells, chocalho shakers, and sometimes cuíca, timbal and pandeiro.
+  - q: Do I need to read music for samba?
+    a: No. Bands such as Miamibloco teach rhythms by singing them for players to copy.
+  sources:
+  - label: Readipop, Beatroots Bateria
+    url: https://readipop.co.uk/project/beatroots
+    checked: '2026-11-14'
+  - label: Paraíso School of Samba, bateria workshops
+    url: https://paraisosamba.co.uk/classes/bateria/
+    checked: '2026-11-14'
+  - label: Austin Samba, Drums
+    url: https://austinsamba.com/drums
+    checked: '2026-11-14'
+  - label: Levine Music, Brazilian Bateria Percussion Ensemble – Spring
+    url: https://www.levinemusic.org/lessons-and-classes/course-catalog/course/brazilian-bateria-percussion-ensemble-spring-33651/
+    checked: '2026-11-14'
+  - label: Rushmoor Borough Council, Samba Drummers
+    url: https://www.rushmoor.gov.uk/community-parks-and-leisure/arts-and-events/rushmoor-samba-band-workshops/
+    checked: '2026-11-14'
+  - label: 'WLRN, 80 drums, one sound: A village of percussionists bring Brazilian samba to Miami'
+    url: https://www.wlrn.org/light/arts-culture/2025-05-21/miamibloco-samba-drum-brazil
+    checked: '2026-11-14'
+  kit:
+  - name: Musicians' earplugs
+    why: for loud rehearsals and gigs
+    url: https://www.amazon.co.uk/s?k=musicians+earplugs
+  - name: Samba drum strap
+    why: holds a surdo or repinique at a comfortable height when you play standing or marching
+    url: https://www.amazon.co.uk/s?k=samba+drum+strap
+  related:
+  - learn-the-djembe
+  - learn-the-steel-pan
+  - join-community-orchestra-or-band
+  - learn-salsa
+
+- id: learn-gamelan
+  title: Play in a gamelan
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A gamelan is the traditional orchestra of Java and Bali, built mostly from gongs and tuned metal instruments, and each is tuned to itself rather than to a standard pitch. Several groups in the UK and US run beginners' courses that need no musical experience and no ability to read music.
+  start:
+  - Look up gamelan groups near you in the AGI International Directory of Gamelan Ensembles, which you can filter by country and region.
+  - Ask about the next beginners' course; groups such as Naga Mas run introductory classes from time to time and keep a mailing list.
+  - Check the style before you go. Javanese gamelans often include singers; most Balinese ones are percussion only.
+  links:
+  - label: 'AGI: International Directory of Gamelan Ensembles'
+    url: https://gamelan.org/directory/
+    region: any
+    checked: '2026-11-14'
+  - label: 'Gamelan Kyai Lebdhajiwa, Southbank Centre: directory listing with class times (London)'
+    url: https://gamelan.org/ensemble/gamelan-kyai-lebdhajiwa/
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Royal Conservatoire of Scotland: Discover 1, Gamelan (Glasgow)'
+    url: https://www.rcs.ac.uk/courses/discover-1-gamelan-ixp/
+    region: uk
+    checked: '2026-11-14'
+  seo_title: 'Gamelan classes for beginners in the UK and US'
+  description: What a gamelan is, how Javanese and Balinese gamelan differ, and where adult beginners can learn to play in London, Glasgow and New York State.
+  detail:
+  - h: What you are playing
+    p:
+    - 'Britannica describes the gamelan as an orchestra of gongs and tuned metal instruments played with mallets: hanging gongs, the bonang (a set of knobbed kettle gongs that sit flat), metallophones and a wooden xylophone, with a flute, a bowed rebab or voices carrying a sustained melody. The drum, the kendang, leads the ensemble.'
+    - Each gamelan is tuned to itself rather than to a standard pitch. There are two main scales, slendro with five roughly equal notes to the octave and pelog with seven unevenly spaced ones; a Javanese double gamelan has both. The Southbank Centre's Javanese bronze gamelan, Kyai Lebdhajiwa, is tuned to slendro and pelog.
+    - 'Beginners do not need to read music. Naga Mas says no specific musical experience is necessary, and the Royal Conservatoire of Scotland''s course needs no musical knowledge or training.'
+  - h: Ways in, and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Southbank Centre, London (Gamelan Kyai Lebdhajiwa)
+        - Beginners on Wednesday evenings; intermediate and advanced on Thursdays
+        - Not given in the directory listing
+      - - Royal Conservatoire of Scotland, Glasgow
+        - 'Discover 1: Gamelan, one intensive week, 10am to 4pm, 22 to 26 March 2027, then independent practice; 18 and over'
+        - £275 (the page also gives £295 elsewhere; check before booking)
+      - - Naga Mas gamelan group, Glasgow (past course)
+        - Six Thursday evenings for beginners, autumn 2023; the group rehearses on Thursdays, 7 to 9pm
+        - £60 or what you can afford
+      - - Nusantara Arts, Buffalo, New York
+        - Intro to Javanese Gamelan, six Sunday evenings, autumn 2026 (now finished); 12 and over
+        - Free
+    after: Naga Mas runs introductory classes from time to time and asks people to join its mailing list to hear about the next one; other groups are worth asking the same.
+  faq:
+  - q: Do I need to read music to play gamelan?
+    a: No. Naga Mas says you do not need to read music, and the Royal Conservatoire of Scotland's gamelan course needs no musical training.
+  - q: What is the difference between Javanese and Balinese gamelan?
+    a: Britannica says Javanese gamelans often include singers, while most Balinese gamelans are percussion only.
+  - q: Where can I play gamelan in London?
+    a: The Southbank Centre's gamelan, Kyai Lebdhajiwa, at the Royal Festival Hall has a regular programme with beginners' classes on Wednesday evenings.
+  - q: How do I find a gamelan group near me?
+    a: The AGI International Directory of Gamelan Ensembles lists groups in 28 countries and can be filtered by country and region.
+  sources:
+  - label: Britannica, gamelan
+    url: https://www.britannica.com/art/gamelan
+    checked: '2026-11-14'
+  - label: AGI, International Directory of Gamelan Ensembles
+    url: https://gamelan.org/directory/
+    checked: '2026-11-14'
+  - label: AGI, Gamelan Kyai Lebdhajiwa
+    url: https://gamelan.org/ensemble/gamelan-kyai-lebdhajiwa/
+    checked: '2026-11-14'
+  - label: 'Royal Conservatoire of Scotland, Discover 1: Gamelan - IXP'
+    url: https://www.rcs.ac.uk/courses/discover-1-gamelan-ixp/
+    checked: '2026-11-14'
+  - label: Naga Mas, Join Us
+    url: https://www.nagamas.co.uk/join-us
+    checked: '2026-11-14'
+  - label: Naga Mas, Gamelan Beginners Classes
+    url: https://www.nagamas.co.uk/event/gamelan-beginners-classes-3/
+    checked: '2026-11-14'
+  - label: Nusantara Arts, Intro to Javanese Gamelan
+    url: https://www.nusantaraarts.com/classes/javanese-gamelan-fall-26
+    checked: '2026-11-14'
+  kit:
+  - name: Book on gamelan music
+    why: background reading on the instruments, scales and repertoire
+    url: https://www.amazon.co.uk/s?k=gamelan+music+book
+  - name: Pocket notebook
+    why: for jotting down your part and the order of a piece between sessions
+    url: https://www.amazon.co.uk/s?k=pocket+notebook
+  related:
+  - learn-the-steel-pan
+  - learn-the-djembe
+  - learn-the-tabla
+  - join-community-orchestra-or-band
+
+- id: learn-the-cajon
+  title: Learn the cajón
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The cajón is a wooden box you sit on and play with your hands, and it can give you something close to a bass drum and a snare from one instrument. It came from Afro-Peruvian music and reached flamenco in the late 1970s; beginners' workshops teach the tones and basic rhythms in a day.
+  start:
+  - Book a beginners' cajón workshop or class at an arts centre or community music school.
+  - Ask whether cajóns are lent. The Stables lends a limited number; La Peña asks you to bring your own.
+  - Start with the two basic sounds, the bass in the middle of the front face and the sharper treble at the top edge.
+  links:
+  - label: 'The Stables: Cajon Beginners Workshop'
+    url: https://stables.org/workshop/cajon-beginners-workshop-7
+    region: uk
+    checked: '2026-11-14'
+  - label: 'San Francisco Community Music Center: Afro-Peruvian Cajon'
+    url: https://sfcmc.org/course/afro-peruvian-cajon/
+    region: us
+    checked: '2026-11-14'
+  - label: 'La Peña Cultural Center: CAJON for Adults'
+    url: https://lapena.org/?p=25281
+    region: us
+    checked: '2026-11-14'
+  seo_title: 'Cajón lessons for beginners: classes and costs'
+  description: How the cajón is played, where it comes from, and what beginners' cajón workshops and classes cost in the UK and US, with tips on borrowing one.
+  detail:
+  - h: What you are learning
+    p:
+    - 'Long & McQuade, the music retailer, explains the basics: the player sits on the box and strikes the front faceplate, using the middle for bass hits and the top edge for treble sounds. Some cajóns have wires inside that add a snare-like sound, and on enhanced models they can be tuned.'
+    - Peru's official country-brand site, Perú Info, traces the cajón to enslaved Africans in Lima who, the usual story goes, played wooden boxes in place of banned drums, and says it is now considered National Cultural Heritage. Around 1977 it reached the percussionist in Paco de Lucía's band, and from there it entered flamenco.
+    - 'Classes cover tones, exercises and rhythms. The Stables says its workshop suits kit drummers and hand drummers alike, and the San Francisco Community Music Center runs a separate later section for people with no cajón experience.'
+  - h: Ways in, and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Stables (UK)
+        - 'Cajon Beginners Workshop: one day from 12.30pm; adults and 15+; bring a cajón with snare wires or ask to borrow one'
+        - £32
+      - - La Peña Cultural Center (US)
+        - 'CAJON for Adults: one-hour class, 11am to noon; all levels; bring your own cajón'
+        - $15 drop-in, or $10 a class in a bundle of five
+      - - San Francisco Community Music Center
+        - 'Afro-Peruvian Cajon: adults and older teens; the 7.45 section needs no prior experience (from the centre''s courses page)'
+        - Not listed; tuition assistance available; winter quarter runs 4 January to 29 March
+    after: La Peña's page says to contact an instructor if you need to buy or rent a cajón for the day.
+  faq:
+  - q: Is the cajón easy to learn?
+    a: Beginners' workshops such as The Stables' cover the tones, exercises and rhythms in a single day.
+  - q: Do I need my own cajón for a class?
+    a: Often, yes. La Peña asks students to bring one; The Stables lends a limited number if you email ahead.
+  - q: Where does the cajón come from?
+    a: Peru. Perú Info traces it to Afro-Peruvian communities in Lima; it reached flamenco around 1977 through Paco de Lucía's band.
+  - q: What are the wires inside a cajón for?
+    a: They produce alternate, snare-like sounds; on enhanced models the wires can be tuned.
+  sources:
+  - label: Long & McQuade, How to Play the Cajon - Everything You Need to Know
+    url: https://www.long-mcquade.com/blog/1059/How-to-Play-the-Cajon-Everything-You-Need-to-Know.htm
+    checked: '2026-11-14'
+  - label: 'Perú Info, Peruvian Cajón: the history and importance of one of the most surprising instruments in the world'
+    url: https://peru.info/en-us/talent/news/6/25/peruvian-cajon--the-history-and-importance-of-one-of-the-most-surprising-instruments-in-the-world
+    checked: '2026-11-14'
+  - label: Thomann, The History of the Cajón
+    url: https://www.thomann.co.uk/onlineexpert_page_cajon_the_history_of_the_cajon.html
+    checked: '2026-11-14'
+  - label: Yamaha Singapore, Cajon Course
+    url: https://sg.yamaha.com/en/education/pop-courses/cajon
+    checked: '2026-11-14'
+  - label: The Stables, Cajon Beginners Workshop
+    url: https://stables.org/workshop/cajon-beginners-workshop-7
+    checked: '2026-11-14'
+  - label: La Peña Cultural Center, CAJON for Adults
+    url: https://lapena.org/?p=25281
+    checked: '2026-11-14'
+  - label: San Francisco Community Music Center, courses
+    url: https://sfcmc.org/courses
+    checked: '2026-11-14'
+  - label: San Francisco Community Music Center, Afro-Peruvian Cajon
+    url: https://sfcmc.org/course/afro-peruvian-cajon/
+    checked: '2026-11-14'
+  kit:
+  - name: Cajón with snare wires
+    why: a box drum to practise on at home and take to class
+    url: https://www.amazon.co.uk/s?k=cajon+snare+wires
+  - name: Cajón seat pad
+    why: a foam cushion for sitting on the box through a long session
+    url: https://www.amazon.co.uk/s?k=cajon+seat+pad
+  - name: Cajón brushes
+    why: for softer, swishing sounds alongside your hands
+    url: https://www.amazon.co.uk/s?k=cajon+brushes
+  related:
+  - learn-the-drums
+  - learn-the-djembe
+  - learn-flamenco
+  - learn-the-guitar
+- id: learn-hedge-laying
+  title: Learn to lay a hedge
+  category: explore
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  collection: arts
+  why: Laying a hedge means cutting part-way through each stem and bending it over so the hedge keeps growing and thickens into a stock-proof barrier, one that holds in cattle and sheep. The National
+    Hedgelaying Society describes 11 regional styles, and beginners' courses run through the winter months.
+  start:
+  - 'Book a one-day or weekend beginners'' course between November and April: an agricultural or further-education college, a wildlife trust or a rural skills centre.'
+  - Or join a conservation volunteer group on a hedgelaying day. Some, such as Wirral Countryside Volunteers, lend tools and protective kit to novices.
+  - Take thick trousers, work gloves, sturdy boots, a hat and a packed lunch, and ask whether tools and safety goggles are provided.
+  links:
+  - label: 'Andover College: Hedge Laying (two-day course)'
+    url: https://www.andover.ac.uk/courses/hedge-laying/
+    region: uk
+    checked: '2026-11-14'
+  - label: 'The Sustainability Centre, Hampshire: Hedgelaying Course'
+    url: https://www.tickettailor.com/events/sustainabilitycentre/2328552
+    region: uk
+    checked: '2026-11-14'
+  - label: 'CAFRE, Greenmount Campus, Northern Ireland: Hedge Laying'
+    url: https://cafre.ac.uk/?p=27227
+    region: uk
+    checked: '2026-11-14'
+  - label: 'National Hedgelaying Society: Introduction to Hedgelaying training course'
+    url: https://hedgelaying.org.uk/wp-content/uploads/2023/01/13-Introduction-to-hedgelaying.pdf
+    region: uk
+    checked: '2026-11-14'
+  seo_title: 'Hedge laying courses for beginners: styles, season, costs'
+  description: What a beginners' hedge laying course teaches, when the season runs, how Midland and South of England styles differ, and what UK courses cost.
+  detail:
+  - h: Styles, season and tools
+    p:
+    - The National Hedgelaying Society describes 11 regional styles, from Cheshire and Derbyshire to Devon and the Welsh border. A Midland hedge is a single-brush hedge, with brushy growth cut from one side,
+      built to stand up to cattle and horses and finished at about 135cm (4ft 5in). A South of England hedge keeps brush on both sides, with one line of stakes down the middle and long hazel binders woven
+      along the top.
+    - Peter Gibson, a hedgelaying champion interviewed by Country Life, describes it as an autumn and winter activity. In England, hedgerows covered by the government's hedgerow rules must not be cut or trimmed from 1 March to 31 August, though hedge-laying
+      and coppicing are allowed until 30 April.
+    - The main tool is a billhook, used with a mallet to drive stakes. The Sustainability Centre's course also uses broad axes and hand saws, and Gibson says thorny hedges may call for eye protection.
+  - h: Where beginners learn
+    table:
+      head:
+      - Where
+      - Course
+      - Cost (as last listed)
+      rows:
+      - - CAFRE, Greenmount Campus, County Antrim
+        - One day; demonstration, then lay your own section; tools and safety kit provided; 2026/27 dates to be arranged
+        - Free
+      - - The Sustainability Centre, Hampshire
+        - One day, 18 February 2027; South of England style with billhooks, axes and hand saws
+        - £125
+      - - Andover College, Hampshire
+        - Two days, 13 to 14 or 27 to 28 February 2027; South of England style with hand tools
+        - £235
+      - - Monkton Wyld Court
+        - Weekend residential in the west-country style, Dorset (past listing, 13 to 15 November 2026)
+        - £244 with rooms and meals; £154 without rooms
+    after: We could not find a beginners' course in the US, so this page lists UK courses only.
+  faq:
+  - q: When is the hedge laying season?
+    a: Autumn and winter. In England, hedgerows covered by the government's rules can be laid until 30 April; one Yorkshire trainer quoted by Country Life runs training days from November to April.
+  - q: What tools do you need for hedge laying?
+    a: Country Life describes laying with a billhook and a mallet. The Sustainability Centre's course uses billhooks, broad axes and hand saws, and asks you to bring a bowsaw, loppers, billhooks and goggles if you have them.
+  - q: Is there a hedgelaying qualification?
+    a: There is no national qualification, according to Country Life. The National Hedgelaying Society runs an introductory course with an optional assessment and certificate, and a Bronze accreditation
+      after that.
+  - q: What is the difference between Midland and South of England hedge laying?
+    a: A Midland hedge has brush on one side only and stakes set behind the line of stems; a South of England hedge keeps brush on both sides, with one line of stakes down the middle.
+  sources:
+  - label: National Hedgelaying Society, Hedgelaying Styles
+    url: https://www.hedgelaying.org.uk/?p=366
+    checked: '2026-11-14'
+  - label: National Hedgelaying Society, Introduction to Hedgelaying Training Course and Assessment
+    url: https://hedgelaying.org.uk/wp-content/uploads/2023/01/13-Introduction-to-hedgelaying.pdf
+    checked: '2026-11-14'
+  - label: 'GOV.UK, Hedgerow management rules: cutting and trimming'
+    url: https://www.gov.uk/guidance/hedgerow-management-rules-cutting-and-trimming
+    checked: '2026-11-14'
+  - label: 'Country Life, Hedgelaying: getting started'
+    url: https://www.countrylife.co.uk/country-life/hedgelaying-getting-started-2768
+    checked: '2026-11-14'
+  - label: Countryfile, The ancient art of hedgelaying
+    url: https://www.countryfile.com/go-outdoors/the-ancient-art-of-hedgelaying
+    checked: '2026-11-14'
+  - label: Andover College, Hedge Laying
+    url: https://www.andover.ac.uk/courses/hedge-laying/
+    checked: '2026-11-14'
+  - label: The Sustainability Centre, Hedgelaying Course, 18th February 2027
+    url: https://www.tickettailor.com/events/sustainabilitycentre/2328552
+    checked: '2026-11-14'
+  - label: CAFRE, Hedge Laying
+    url: https://cafre.ac.uk/?p=27227
+    checked: '2026-11-14'
+  - label: Monkton Wyld Court, Hedge Laying Course
+    url: https://monktonwyldcourt.co.uk/hedge-laying-course/
+    checked: '2026-11-14'
+  - label: Wirral Countryside Volunteers, Hedgelaying - Hedge 21 at Landican
+    url: https://www.tickettailor.com/events/wirralcountrysidevolunteers/2232189
+    checked: '2026-11-14'
+  inspire:
+  - kind: read
+    person: Peter Gibson
+    line: Won the National Hedgelaying Society championship in 2013 and tells beginners that good instruction is vital and that the more you do, the more you learn.
+    title: 'Hedgelaying: getting started'
+    outlet: Country Life
+    url: https://www.countrylife.co.uk/country-life/hedgelaying-getting-started-2768
+    checked: '2026-11-14'
+  kit:
+  - name: Billhook
+    why: the hooked blade used to cut and lay each stem
+    url: https://www.amazon.co.uk/s?k=billhook
+  - name: Thornproof work gloves
+    why: protect your hands from hawthorn and blackthorn
+    url: https://www.amazon.co.uk/s?k=thornproof+gardening+gloves
+  - name: Safety glasses
+    why: keep thorns and chips out of your eyes
+    url: https://www.amazon.co.uk/s?k=safety+glasses
+  related:
+  - learn-dry-stone-walling
+  - learn-a-heritage-craft
+  - wildlife-trust-volunteer
+  - plant-a-tree
+
+- id: learn-clog-dancing
+  title: Learn clog dancing
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: English clog dancing grew up in the Lancashire cotton mills and among the miners of Northumbria and Durham, with wooden-soled clogs beating out the rhythm. America has its own percussive tradition
+    in Appalachian clogging, and beginners' classes on both sides of the Atlantic will start you in borrowed clogs or hard-soled shoes.
+  start:
+  - In the UK, use the Morris Federation's Teamfinder to find a team (a side) near you (search by dance style and look for teams that dance clog), and ask about taster sessions.
+  - In the US, look for a beginners' Appalachian clogging series at a community arts centre or a school district's adult-education programme.
+  - Wear hard-soled shoes to the first class and ask before buying clogs or taps; some halls do not allow tap shoes.
+  links:
+  - label: 'Morris Federation: Teamfinder'
+    url: https://www.morrisfed.org.uk/teamfinder
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Plymouth Clog: clog dancers (Just Plymouth listing)'
+    url: https://www.justplymouth.com/plymouth-clog/
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Eclectic Cloggers: Beginner Appalachian-Style Clogging Class (Seattle)'
+    url: https://phinneywood.com/event/beginner-appalachian-style-clogging-class-2/
+    region: us
+    checked: '2026-11-14'
+  - label: 'Ann Arbor Public Schools: Appalachian Clogging for Beginners (Michigan)'
+    url: https://www.active.com/ann-arbor-mi/dance/classes/appalachian-clogging-for-beginners-2026
+    region: us
+    checked: '2026-11-14'
+  seo_title: 'Clog dancing classes for beginners: UK and US'
+  description: Where English clog dancing and Appalachian clogging come from, what to wear to a first class, and what beginners' clog classes cost in the UK and US.
+  detail:
+  - h: Mill floors and mountain dances
+    p:
+    - Historic UK ties English clog dancing most closely to the 19th-century Lancashire cotton mills; Colne is where the term heel and toe was first used. Lancashire dancers used more toe, Durham
+      dancers more heel. Dancing clogs were made of ash and were lighter than the alder-soled work clogs.
+    - You can see clog dancing at folk festivals such as Whitby, and Skipton in North Yorkshire holds a festival of English step dance every July. Clubs such as Plymouth
+      Clog dance traditional northwest clog dances to a live folk band.
+    - Appalachian clogging, one US class says, stems from European, African and Indigenous influences. Beginners start with the basic shuffle step; one US class teaches eight basic steps in six weeks.
+  - h: What beginners pay
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Plymouth Clog, Plymouth
+        - Thursday practices from mid-September to early May; northwest clog dances and step-clogging
+        - Free tasters, then about £30 a year
+      - - Broadstairs Folk Week, Kent
+        - 90-minute Northern Clog Workshop in the Lancashire style; clogs provided (August 2025 festival)
+        - £10
+      - - Eclectic Cloggers, Seattle
+        - Five Tuesday evenings of Appalachian-style clogging (August to September 2026 series)
+        - $40 suggested donation
+      - - White Bear Center for the Arts, Minnesota (at 4th Street Dance Centre, tutor Pam Heaton)
+        - Six Friday classes, Beginner Percussive Clogging for Adults (autumn 2026 term, now finished)
+        - $70.80 members; $88.60 non-members
+    after: Ann Arbor's 13-class beginners' course asks for tap shoes or leather-soled shoes; the Seattle class recommends hard soles and does not allow tap shoes in the hall.
+  faq:
+  - q: Do I need clogs to start clog dancing?
+    a: Not usually. Broadstairs Folk Week's beginners' workshop provided clogs, and US Appalachian classes ask for hard-soled or leather-soled shoes.
+  - q: What is the difference between clog dancing and Appalachian clogging?
+    a: English clog dancing is danced in wooden-soled clogs and grew up in the northern mill and mining towns. Appalachian clogging is an American percussive dance, taught in hard-soled shoes or taps.
+  - q: Is clog dancing related to tap dancing?
+    a: Historic UK describes tap, which developed in America at the end of the 19th century, as a mixture of clog, Irish step and African dance. It largely replaced clog in the music halls.
+  - q: How much do clog dancing classes cost?
+    a: Plymouth Clog listed free tasters and then about £30 a year. In Seattle, Eclectic Cloggers asked a $40 suggested donation for five weeks.
+  sources:
+  - label: 'Historic UK, Clog Dancing: From Northern English Mills to Music Halls'
+    url: https://www.historic-uk.com/CultureUK/Clog-Dancing
+    checked: '2026-11-14'
+  - label: Morris Federation, Teamfinder
+    url: https://www.morrisfed.org.uk/teamfinder
+    checked: '2026-11-14'
+  - label: Just Plymouth, Plymouth Clog (Clog Dancers)
+    url: https://www.justplymouth.com/plymouth-clog/
+    checked: '2026-11-14'
+  - label: Are You Dancing?, Northern Clog Workshop (Broadstairs Folk Week)
+    url: https://www.areyoudancing.com/dance-event/759592
+    checked: '2026-11-14'
+  - label: PhinneyWood, Beginner Appalachian-Style Clogging Class
+    url: https://phinneywood.com/event/beginner-appalachian-style-clogging-class-2/
+    checked: '2026-11-14'
+  - label: Ann Arbor Public Schools, Appalachian Clogging for Beginners
+    url: https://www.active.com/ann-arbor-mi/dance/classes/appalachian-clogging-for-beginners-2026
+    checked: '2026-11-14'
+  - label: Beginner Percussive Clogging for Adults (73386)
+    url: https://www.whitebeararts.org/inspire-events/73386
+    checked: '2026-11-14'
+  kit:
+  - name: Dance clogs
+    why: wooden-soled clogs for when you are ready to buy your own
+    url: https://www.amazon.co.uk/s?k=dance+clogs
+  - name: Tap practice board
+    why: a portable floor for practising steps at home without marking the floor
+    url: https://www.amazon.co.uk/s?k=tap+dance+practice+board
+  related:
+  - learn-morris-dancing
+  - go-to-a-folk-dance
+  - learn-tap-dancing
+  - learn-irish-dancing
+
+- id: play-real-tennis
+  title: Play real tennis
+  category: move
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Real tennis is the original racquet game that lawn tennis came from, played indoors on a lopsided court with sloping roofs, netted galleries and handmade cork-cored balls. It is called court
+    tennis in the US, and clubs such as the Royal Tennis Court at Hampton Court will give you an hour on court with a professional to try it.
+  start:
+  - Find your nearest court on the Tennis & Rackets Association's UK list or the US Court Tennis Association's club list.
+  - Ring or email the club and ask for an introductory session or a lesson with the club professional.
+  - Take non-marking indoor court shoes and mostly white clothing, then ask about a trial membership if you want to carry on.
+  links:
+  - label: 'Tennis & Rackets Association: Real Tennis Courts in the UK'
+    url: https://tennisandrackets.com/real-tennis/where-to-play/courts-uk
+    region: uk
+    checked: '2026-11-14'
+  - label: 'The Royal Tennis Court, Hampton Court: membership and introductory sessions'
+    url: https://www.royaltenniscourt.com/membership
+    region: uk
+    checked: '2026-11-14'
+  - label: 'United States Court Tennis Association: Clubs'
+    url: https://uscourttennis.org/clubs/
+    region: us
+    checked: '2026-11-14'
+  - label: 'National Tennis Club, Newport, Rhode Island: Court Tennis'
+    url: https://www.tennisfame.com/club/national
+    region: us
+    checked: '2026-11-14'
+  seo_title: 'Real tennis for beginners: where to play and what it costs'
+  description: What makes real tennis different from lawn tennis, where the courts are in the UK and US, and what an introductory session or lesson costs.
+  detail:
+  - h: What makes it different
+    p:
+    - The court is indoors, with irregular walls and a sloping roof. Penthouses, the sloping roofs, run round three sides; under them are netted galleries. Hit the ball into the dedans, the winning gallery
+      or the grille and you win the point outright, and a buttress called the tambour can make a return hard to retrieve.
+    - Racquets are wooden and asymmetric. The balls are hand-built and heavy, with a cork core wrapped in tape and covered in felt, so players mostly hit underspin or sidespin. Scoring runs 15, 30, 40 as
+      in lawn tennis, but a second bounce can create a chase, a point that is played off later, and players change ends only when there are two chases, or game point and one chase.
+    - The game has its own handicap system, so players of different standards can have close matches. The Tennis & Rackets Association's lists have 27 courts at 24 venues in the UK, from palaces and country houses
+      to schools and universities; the US association lists nine clubs.
+  - h: What it costs to try
+    table:
+      head:
+      - Where
+      - What
+      - Cost (as last listed)
+      rows:
+      - - The Royal Tennis Court, Hampton Court
+        - One-hour introductory session with a professional; racquet and court included
+        - £66.50
+      - - The Royal Tennis Court, Hampton Court
+        - Three-month trial membership with full booking rights
+        - £80
+      - - The Royal Tennis Court, Hampton Court
+        - Lesson with a professional
+        - £30 per lesson, plus the court fee
+      - - National Tennis Club, Newport, Rhode Island
+        - Private lesson
+        - $80 an hour
+    after: The Royal Tennis Court asks for non-marking court shoes, such as badminton shoes, and predominantly white clothing. At Newport, court time and lessons are booked through the club's pro shop.
+  faq:
+  - q: What is the difference between real tennis and tennis?
+    a: Real tennis is the original indoor game; lawn tennis was created in England in the 1870s as an outdoor version. Real tennis uses a walled, asymmetric court, wooden racquets and heavy handmade balls.
+  - q: Where can I play real tennis?
+    a: The Tennis & Rackets Association lists 24 venues in the UK. In the US, where the game is called court tennis, the US Court Tennis Association lists nine clubs, including New York, Boston, Chicago and
+      Newport.
+  - q: How much does it cost to try real tennis?
+    a: At the Royal Tennis Court at Hampton Court, an hour's introduction with a professional was listed at £66.50 with racquet included. A private lesson at Newport's National Tennis Club was listed at $80
+      an hour.
+  - q: Is real tennis scored like normal tennis?
+    a: Points go 15, 30, 40, deuce and advantage, and a set goes to the first player to six games. Chases, set by where the ball bounces twice, add a layer lawn tennis does not have.
+  sources:
+  - label: Tennis & Rackets Association, What is Real Tennis
+    url: https://tennisandrackets.com/real-tennis
+    checked: '2026-11-14'
+  - label: Tennis & Rackets Association, How Do You Play Real Tennis?
+    url: https://tennisandrackets.com/real-tennis/play
+    checked: '2026-11-14'
+  - label: Tennis & Rackets Association, Real Tennis Courts in the UK
+    url: https://tennisandrackets.com/real-tennis/where-to-play/courts-uk
+    checked: '2026-11-14'
+  - label: Tennis & Rackets Association, Who Plays Real Tennis?
+    url: https://tennisandrackets.com/real-tennis/play/tennis-uk/participation
+    checked: '2026-11-14'
+  - label: United States Court Tennis Association, Introduction to Court Tennis
+    url: https://uscourttennis.org/introduction-to-court-tennis/
+    checked: '2026-11-14'
+  - label: United States Court Tennis Association, Clubs
+    url: https://uscourttennis.org/clubs/
+    checked: '2026-11-14'
+  - label: The Royal Tennis Court, Membership
+    url: https://www.royaltenniscourt.com/membership
+    checked: '2026-11-14'
+  - label: International Tennis Hall of Fame, National Tennis Club
+    url: https://www.tennisfame.com/club/national
+    checked: '2026-11-14'
+  kit:
+  - name: Non-marking indoor court shoes
+    why: the court floor needs soles that do not mark
+    url: https://www.amazon.co.uk/s?k=non+marking+indoor+court+shoes
+  - name: White sports polo shirt
+    why: for dress codes that are mostly white
+    url: https://www.amazon.co.uk/s?k=white+sports+polo+shirt
+  related:
+  - play-tennis
+  - play-squash
+  - play-croquet
+  - play-badminton
+- id: try-encaustic-painting
+  title: Try encaustic painting
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Encaustic means painting with pigment mixed into molten beeswax, the method behind most of the mummy portraits painted in Roman Egypt between the first and third centuries AD, says the Metropolitan Museum of Art. You build up layers of coloured wax, scratch into them, embed paper and fuse it all with heat.
+  start:
+  - Book a one-day beginners' workshop, which lends you the hotplate, heat tools and wax paints, before buying any kit.
+  - Decide which kind you want; fine-art encaustic uses a hotplate and wooden panels, while the hobby version sweeps a small craft iron over wax blocks on card.
+  - Wear an apron, and bring lunch if the listing says it is not included.
+  links:
+  - label: 'Exeter Phoenix: Encaustic Painting and Mixed Media for Beginners, one-day workshop'
+    url: https://exeterphoenix.org.uk/?p=35387
+    region: uk
+    checked: '2026-11-14'
+  - label: 'CraftCourses: Contemporary encaustic wax introductory workshop with Lyn Kirkland (Portland, Dorset)'
+    url: https://www.craftcourses.com/courses/Contemporary-encaustic-wax-introductory-workshop
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Woodstock School of Art: encaustic courses (Woodstock, New York)'
+    url: https://woodstockschoolofart.org/category/encaustic/
+    region: us
+    checked: '2026-11-14'
+  seo_title: 'Encaustic painting for beginners: workshops and costs'
+  description: What encaustic hot wax painting involves, the safety basics of heated wax, and what beginners' workshops cost in the UK and the US.
+  detail:
+  - h: What a first workshop involves
+    p:
+    - Beeswax is mixed with pigment, then melted on a hotplate and brushed onto a wooden panel. Each layer is fused to the one below with a heat gun. Beginners' days cover layering and fusing, mark-making and incising into the wax, and embedding paper and collage.
+    - 'There is a gentler hobby version too. At one Gloucestershire class you sweep a heated craft iron over wax blocks on card to make patterns and landscapes, and add detail with a heated stylus.'
+    - 'Heat is the hazard. R&F Handmade Paints, a US maker of encaustic paint, recommends keeping wax between 180 and 200°F (about 82 to 93°C) with a thermometer, and says an acrid smell or smoke means it is too hot. It advises cross-ventilation, such as a window exhaust fan with fresh air coming in elsewhere, as wax fumes can cause headaches and coughing. It also says to avoid solvents with encaustic, and not to eat or drink near your work.'
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Exeter Phoenix, Exeter
+        - One-day beginners' workshop, 10.30am to 4pm, all materials included (the last listed date has passed)
+        - £90 plus a £1.50 booking fee
+      - - Lyn Kirkland, Portland, Dorset (via CraftCourses)
+        - One day, one or two students; panel, encaustic paints, heat tools and hotplate included
+        - £175 per person
+      - - Jane Foot, May Hill, Gloucestershire (via CraftCourses)
+        - Two-hour class painting with an encaustic iron on card
+        - £80 for two people
+      - - Woodstock School of Art, New York
+        - 'Introduction to Encaustic: a weekend, 9am to 4pm both days, ages 16 and over'
+        - $330 ($270 tuition plus a $60 lab fee)
+    after: The Woodstock school also charges first-time students a non-refundable registration fee, and its November 2026 introduction was listed as full. Lunch is not provided at Woodstock or in Portland.
+  faq:
+  - q: What is encaustic painting?
+    a: Painting with pigment mixed into beeswax. The Metropolitan Museum of Art says the word is Greek for "burnt in" and covers any painting method in which pigment is mixed with beeswax.
+  - q: Is encaustic painting safe?
+    a: With care. R&F Handmade Paints recommends working between 180 and 200°F (about 82 to 93°C), good cross-ventilation, an apron and cool water nearby in case of burns.
+  - q: Do I need experience to try encaustic?
+    a: No. Exeter Phoenix's workshop was for complete beginners, and the Woodstock School of Art's introduction says no experience is necessary.
+  - q: What is the difference between encaustic art with an iron and encaustic painting?
+    a: The iron method sweeps a small heated craft iron over wax blocks on card. Fine-art encaustic melts wax paint on a hotplate, brushes it onto wooden panels and fuses each layer with heat.
+  sources:
+  - label: Exeter Phoenix, Encaustic Painting
+    url: https://exeterphoenix.org.uk/?p=35387
+    checked: '2026-11-14'
+  - label: CraftCourses, Bespoke Contemporary Fine Art Encaustic Wax Workshop
+    url: https://www.craftcourses.com/courses/Contemporary-encaustic-wax-introductory-workshop
+    checked: '2026-11-14'
+  - label: 'CraftCourses, ''My Kind of Ironing'' - Encaustic Art for 2+'
+    url: https://craftcourses.com/courses/encaustic-art-painting-with-an-iron
+    checked: '2026-11-14'
+  - label: Woodstock School of Art, Encaustic Archives
+    url: https://woodstockschoolofart.org/category/encaustic/
+    checked: '2026-11-14'
+  - label: Woodstock School of Art, Introduction to Encaustic
+    url: https://woodstockschoolofart.org/course/introduction-to-encaustic-8/
+    checked: '2026-11-14'
+  - label: R&F Handmade Paints, Encaustic Safety
+    url: https://rfpaints.com/encaustic-safety
+    checked: '2026-11-14'
+  - label: 'The Metropolitan Museum of Art, Ancient Faces: Mummy Portraits from Roman Egypt'
+    url: https://www.metmuseum.org/exhibitions/listings/2000/mummy-portraits
+    checked: '2026-11-14'
+  kit:
+  - name: Encaustic wax blocks
+    why: coloured wax paint for practising with an iron or hotplate at home
+    url: https://www.amazon.co.uk/s?k=encaustic+wax+blocks
+  - name: Encaustic painting iron
+    why: the small heated iron used for the card-based method
+    url: https://www.amazon.co.uk/s?k=encaustic+painting+iron
+  - name: Infrared thermometer
+    why: to keep melted wax within the recommended working temperature
+    url: https://www.amazon.co.uk/s?k=infrared+thermometer
+  related:
+  - paint-in-acrylics
+  - learn-oil-painting
+  - learn-batik
+  - learn-candle-making
+- id: try-indoor-skydiving
+  title: Fly in an indoor skydiving wind tunnel
+  category: move
+  kind: experience
+  effort: moderate
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: A vertical wind tunnel lets you float in simulated freefall indoors, with an instructor beside you and no plane or parachute. iFLY UK says one flight usually lasts around 55 seconds, about one and a half times as long as a tandem skydive jump.
+  start:
+  - Read the operator's restrictions on weight and health before you book; iFLY UK's list includes any past shoulder dislocation.
+  - Book a first-timer package of two flights, and sign the online waiver before the day.
+  - Wear comfortable clothes and lace-up trainers (sneakers), take off jewellery, and arrive early; iFLY UK asks for 45 minutes.
+  links:
+  - label: 'iFLY UK: book flights (Manchester, Birmingham, Milton Keynes, London at The O2, Basingstoke)'
+    url: https://iflyworld.co.uk/book-flights
+    region: uk
+    checked: '2026-11-14'
+  - label: 'iFLY (US): home page with a finder for its US tunnels'
+    url: https://www.iflyworld.com/
+    region: us
+    checked: '2026-11-14'
+  - label: 'Skydive Perris: first-time flyers in its wind tunnel (California)'
+    url: https://skydiveperris.com/indoor/first-time-flyer
+    region: us
+    checked: '2026-11-14'
+  book:
+  - label: Indoor skydiving on Viator
+    why: compare tunnel packages near you; check the operator's weight and health rules first
+    url: https://www.viator.com/searchResults/all?text=indoor+skydiving
+    aff: viator
+  seo_title: 'Indoor skydiving for beginners: what to expect and cost'
+  description: What a first indoor skydiving flight involves, the weight and health restrictions, and what two flights cost at iFLY and other tunnels.
+  detail:
+  - h: What happens on your first visit
+    p:
+    - iFLY in the US says first-timers watch a preflight video on safety and basic flying technique, then the instructor teaches the body position and hand signals. You are given a flight suit, helmet and goggles, and the group takes turns flying with the instructor while everyone else watches through the glass. An instructor stays with you during your flights.
+    - Each flight lasts about a minute. iFLY UK says to plan on about an hour and a half on site. Remove watches, rings and other jewellery, and tie back long hair.
+    - Operators set firm limits. iFLY UK's upper weight is 21 stone 4 lb (136 kg); in the US iFLY's is 300 lb (136 kg), and flyers between 260 and 300 lb may need an evaluation at check-in. iFLY UK says flyers must not be pregnant, must not have dislocated a shoulder before, and must not have a current or past head, neck or back injury or condition, or any heart condition. Both allow children from age three, with a parent's signature under 18.
+  - h: What two flights cost
+    table:
+      head:
+      - Where
+      - Package
+      - Cost (as last listed)
+      rows:
+      - - iFLY UK (five tunnels)
+        - 'First-Time Flyers: 2 flights, with equipment hire and a flight certificate'
+        - From £49.99 per person
+      - - iFLY UK
+        - 'First-Time Flyers: 4 flights'
+        - From £79.99 per person
+      - - Skydive Perris, California
+        - 'Bronze: 2 flights of about one minute, with training, equipment and an instructor'
+        - $95, or $73 on Fridays
+      - - iFLY US (many cities)
+        - First-time packages of 2, 4 or 10 flights
+        - Varies by location and date; shown when you book
+    after: At iFLY UK, photos, videos, repeat flights and the optional High Flight are paid extras. iFLY UK says off-peak sessions, usually midweek in term time, cost less.
+  faq:
+  - q: How long is an indoor skydiving flight?
+    a: About a minute. iFLY UK says flights are usually around 55 seconds and never shorter than 50; iFLY in the US says 60 seconds.
+  - q: Is there a weight limit for indoor skydiving?
+    a: Yes. iFLY UK's upper limit is 21 stone 4 lb (136 kg). iFLY in the US does not let guests over 300 lb fly.
+  - q: Can I do indoor skydiving with a bad back or shoulder?
+    a: Check first. iFLY UK excludes anyone who has dislocated a shoulder before or has a current or past head, neck or back injury or condition, or a heart condition.
+  - q: What should I wear for indoor skydiving?
+    a: Comfortable clothes and lace-up trainers. iFLY UK says to avoid collared shirts and slip-on or Velcro shoes, and lends a flight suit, helmet, goggles and earplugs.
+  safety: Fly only within the operator's own restrictions. iFLY UK says flyers must not be pregnant, must not have previously dislocated a shoulder, and must not have a current or prior head, neck or back injury or condition or any heart problems; if you are unsure about any of them, it advises contacting the tunnel before booking.
+  sources:
+  - label: iFLY UK, Is there a weight limit for Indoor Skydiving?
+    url: https://iflyworld.co.uk/help-faqs/faqs/planning/is-there-a-weight-limit-for-indoor-skydiving
+    checked: '2026-11-14'
+  - label: iFLY UK, Planning FAQs
+    url: https://iflyworld.co.uk/help-faqs/faqs/planning
+    checked: '2026-11-14'
+  - label: iFLY UK, Choose Flight
+    url: https://iflyworld.co.uk/book-flights
+    checked: '2026-11-14'
+  - label: iFLY, FAQ
+    url: https://www.iflyworld.com/discover/faq
+    checked: '2026-11-14'
+  - label: iFLY Orlando, Indoor Skydiving for the Whole Family
+    url: https://www.iflyworld.com/orlando
+    checked: '2026-11-14'
+  - label: Skydive Perris, First Time Flyer
+    url: https://skydiveperris.com/indoor/first-time-flyer
+    checked: '2026-11-14'
+  kit:
+  - name: Sports hair ties
+    why: long hair must be tied back to fly
+    url: https://www.amazon.co.uk/s?k=sports+hair+ties
+  - name: Lace-up trainers
+    why: secure lace-up shoes for flying, rather than slip-ons or Velcro
+    url: https://www.amazon.co.uk/s?k=lace+up+trainers
+  related:
+  - tandem-skydive
+  - try-paragliding
+  - try-gliding
+  - try-flying-trapeze
+- id: try-canicross
+  title: 'Try canicross: running with your dog'
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: In canicross your dog runs out in front in a harness, clipped to a belt round your hips by a stretchy bungee line, so it pulls and you follow on cross-country trails. Beginners' groups mix brisk walking with gentle jogging, and races are usually held from September to May because dogs struggle in the heat.
+  start:
+  - Check your dog is fully grown; Canicross Trailrunners says at least 12 months, and Canicross UK says 12 to 18 months depending on size. Ask your vet if you have any doubts.
+  - Join a beginners' group or taster where you can borrow a harness, belt and line and have them fitted.
+  - Build up slowly, starting with short runs of about 50 to 100 metres (55 to 110 yards) between walks.
+  links:
+  - label: 'Canicross Trailrunners: what canicross is, clubs and race calendar'
+    url: https://canicross.org.uk/canicross
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Canicross UK: walk/jog beginners'' sessions'
+    url: https://canicrossuk.com/walk%2Fjog-sessions
+    region: uk
+    checked: '2026-11-14'
+  - label: 'Canicross USA: local chapters'
+    url: https://canicrossusa.org/current-chapters
+    region: us
+    checked: '2026-11-14'
+  seo_title: 'Canicross for beginners: kit, dog age and where to start'
+  description: How to start canicross with your dog, the harness, belt and bungee line you need, when your dog is old enough, and UK and US groups to join.
+  detail:
+  - h: Kit and your dog's welfare
+    p:
+    - 'You need three things: a harness for the dog, a belt for you and a line between them. The Royal Kennel Club describes a waist belt attached by a two metre (about 6.5 ft) bungee line to the dog''s harness. The American Kennel Club says the harness should be one made for pulling, as ordinary walking harnesses can restrict breathing or shoulder movement, and that canicross belts sit low on the hips.'
+    - 'The PDSA, a UK vet charity, says running is too intense for a puppy''s growing bones and should wait until the dog is fully grown. Most dogs are by about one year, but large breeds can take 18 months to two years. Canicross Trailrunners advises care with flat-faced breeds such as bulldogs, and the American Kennel Club suggests getting your vet''s okay before starting.'
+    - At a first session with Canicross UK, the instructor fits you both with kit, then the group practises in a safe area so you get used to the dog pulling before heading out on the trails. No set fitness is needed and walking is fine.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Canicross UK
+        - Five one-hour walk/jog sessions of about 3 miles (4.8 km) each; all kit can be borrowed
+        - £40 per person for the block
+      - - Canicross Trailrunners
+        - Clubs and groups near you, plus a calendar of canicross races
+        - Not listed; check with the club
+      - - Canicross USA
+        - Local chapters with events in many states
+        - Not listed; check with the chapter
+      - - Mushing Mutts Canicross 5k, Holly Springs, North Carolina
+        - 'A 5k (3.1 mile) race; harness, bungee line and hands-free belt required, dog runs in front'
+        - $45 plus a $3.70 signup fee
+    after: The North Carolina race does not allow flexi-leads or head halters in its dog-friendly run, and its canicross rules say the dog must stay in front of the runner, never behind.
+  faq:
+  - q: How old does my dog need to be for canicross?
+    a: Fully grown. Canicross Trailrunners says at least 12 months; Canicross UK says 12 to 18 months depending on breed size, and recommends a vet check before starting.
+  - q: What kit do I need for canicross?
+    a: A pulling harness for the dog, a waist belt for you and a bungee line between them. Beginners' sessions often lend all three.
+  - q: Do I have to be a runner to do canicross?
+    a: No. Canicross UK says no fitness level is needed and its beginners' sessions mix brisk walking with gentle jogging.
+  - q: Can any dog do canicross?
+    a: Many can. Canicross Trailrunners advises care with flat-faced breeds such as bulldogs and suggests asking your vet if you are unsure.
+  sources:
+  - label: Canicross Trailrunners, CaniCross
+    url: https://canicross.org.uk/canicross
+    checked: '2026-11-14'
+  - label: Canicross UK, Walk/Jog Canicross Sessions
+    url: https://canicrossuk.com/walk%2Fjog-sessions
+    checked: '2026-11-14'
+  - label: Canicross UK, Your first Canicross Session
+    url: https://canicrossuk.com/your-first-session
+    checked: '2026-11-14'
+  - label: Canicross UK, Getting Started
+    url: https://canicrossuk.com/getting-started
+    checked: '2026-11-14'
+  - label: The Royal Kennel Club, Canicross Recognised By The Kennel Club
+    url: https://www.royalkennelclub.com/about-us/resources/media-centre/2016/september/canicross-recognised-by-the-kennel-club/
+    checked: '2026-11-14'
+  - label: PDSA, Exercising your puppy
+    url: https://pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/puppies-dogs/exercising-your-puppy
+    checked: '2026-11-14'
+  - label: 'American Kennel Club, How To Get Started In Canicross: Training Your Dog As A Running Buddy'
+    url: https://www.akc.org/expert-advice/health/canicross-goes-beyond-running-with-dogs/
+    checked: '2026-11-14'
+  - label: Canicross USA, Current Chapters
+    url: https://canicrossusa.org/current-chapters
+    checked: '2026-11-14'
+  - label: Mushing Mutts Canicross Race and Dog Friendly 5k
+    url: https://www.bikesignup.com/Race/Events/NC/HollySprings/MushingMuttsCanicrossDogFriendly5k
+    checked: '2026-11-14'
+  kit:
+  - name: Canicross harness
+    why: lets the dog pull without pressure on its neck
+    url: https://www.amazon.co.uk/s?k=canicross+harness
+  - name: Canicross belt and bungee line
+    why: clips you to the dog hands-free and absorbs the jolts
+    url: https://www.amazon.co.uk/s?k=canicross+belt+bungee+line
+  related:
+  - couch-to-5k
+  - parkrun
+  - volunteer-with-your-dog
+  - borrow-a-dog-to-walk

@@ -42,7 +42,8 @@ guidance:
     applies: [endurance]
     use: rule
     text: Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week.
-    for: [higdon-novice1, rc-down-weeks]
+    for: [higdon-novice1, rc-down-weeks, bc-missing-weeks]
+    note: British Cycling's plans (2016 page) follow three weeks of build then an easier recovery week, with four weeks of build in a row as the limit; it backs the rhythm, not the clause on older runners and other stress.
   - id: long-session
     topic: key session
     applies: [endurance]
@@ -199,7 +200,8 @@ guidance:
     applies: [endurance]
     use: advice
     text: Start slower than you think you need to; early miles feel easy and are where most people overdo it.
-    for: [ea-pavey-marathon, ea-training-pace]
+    for: [ea-pavey-marathon, ea-training-pace, knechtle-nyc-2026]
+    note: The 2026 systematic review of the New York City Marathon found pacing mostly positive (runners slow down), most in slower runners, and describes avoiding an excessively fast start; it does not say the early miles feel easy.
   - id: weather-daylight
     topic: on the day
     applies: [hill]
