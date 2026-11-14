@@ -453,7 +453,7 @@ guidance:
     applies: [swimming]
     use: safety
     text: Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back.
-    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather, swt-snorkel-safety, nps-buis-safety]
+    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather, swt-snorkel-safety, nps-buis-safety, swimeng-ow-tips]
     note: The Scottish Wildlife Trust (never snorkel alone; tell people where you are going) and the Buck Island Reef safety page (do not swim alone) give the same advice to snorkellers.
   - id: ow-cold-shock
     topic: warning signs
@@ -478,7 +478,8 @@ guidance:
     applies: [swimming]
     use: advice
     text: Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire.
-    for: [rnli-cold-water-2025, usms-open-water, swimeng-stay-safe]
+    for: [rnli-cold-water-2025, usms-open-water, swimeng-stay-safe, bewl-ows]
+    note: Bewl Water, a supervised lake venue in Kent, makes a tow float and a bright hat compulsory for every swimmer.
   - id: ow-check-conditions
     topic: on the day
     applies: [swimming]
@@ -497,6 +498,12 @@ guidance:
     use: rule
     text: Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest.
     for: [usms-open-water, swimeng-pool-prep]
+  - id: ow-wetsuit-practise
+    topic: kit
+    applies: [swimming]
+    use: advice
+    text: If you will wear a wetsuit on the day, train in that same wetsuit beforehand rather than changing kit for the event.
+    for: [usms-wetsuit-temp]
   - id: ow-float-practise
     topic: key session
     applies: [swimming]

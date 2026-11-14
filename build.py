@@ -798,6 +798,7 @@ def build(make_social=True):
             # `sources` = every page the extra text rests on, opened on its `checked` date. `seo_title`/`description` override.
             for sec in c.get("detail") or []:
                 assert sec.get("h") and (sec.get("p") or sec.get("list") or sec.get("table")), f"challenge {c['id']}: each detail section needs h and p, list or table"
+                assert all(isinstance(x, str) for x in (sec.get("p") or []) + (sec.get("list") or [])) and all(isinstance(x, (str, int, float)) for r in (sec.get("table") or {}).get("rows", []) for x in r), f"challenge {c['id']}: a detail paragraph, list item or table cell is not plain text (quote text that contains a colon)"
                 if sec.get("table"):
                     assert sec["table"].get("head") and all(len(r) == len(sec["table"]["head"]) for r in sec["table"].get("rows", [])), f"challenge {c['id']}: table rows must match head"
             for f in c.get("faq") or []:

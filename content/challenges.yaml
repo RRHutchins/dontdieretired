@@ -844,7 +844,7 @@
     - Salty snacks, to go with the water.
     - A headlamp or torch with spare batteries. The park is plain that a phone does not count, and many hikers struggle coming down in the dark without one.
     - A map and compass, and the skill to use them.
-    - Keep food within arm's reach or on your back: bears are common and will take packs.
+    - 'Keep food within arm''s reach or on your back: bears are common and will take packs.'
   - h: Timing and turning back
     p:
     - Leave around sunrise or earlier and set a firm turnaround time; the park's own example is 3.30 pm, after which you turn back whether you have reached the top or not. Thunderstorms are more common in the afternoon, and the summit is a dangerous place in a lightning storm, so if one is near, do not go on; if you are on top, leave.
@@ -1943,25 +1943,158 @@
   season: Summer for a first swim
   regions:
   - anywhere
-  why: Swimming in a lake, river or the sea is a completely different experience from following a black line in a pool. You notice the water, the weather and the light in a way you never do indoors.
+  why: Swimming in a lake or the sea is a different sport from following a black line in a pool, with no lane ropes, no wall to push off and a buoy to aim for. Supervised venues and organised events, from a half-mile wave at Windermere to a swim from Alcatraz, let you try it with lifeguards and kayaks on the water.
   start:
-  - Read the Outdoor Swimming Society's getting started advice for the kind of water you have in mind.
-  - Choose a supervised venue or lifeguarded beach and go with someone who has swum there before.
-  - Get in slowly, stay close to the shore and keep your first swim short.
+  - Find a supervised open water venue near you, using Swim England's venue finder in England, and book a beginners' session or induction.
+  - Practise sighting in the pool first, and hire a swim wetsuit at the venue before you buy one.
+  - Pick a first event with a short distance, such as a half mile, and swim it in training before the day.
   links:
   - label: Outdoor Swimming Society
     url: https://www.outdoorswimmingsociety.com/
     region: uk
     checked: '2026-10-06'
-  safety: Cold water affects breathing and strength quickly, so enter gradually and never swim alone.
+  - label: 'Swim England: find an open water swimming venue'
+    url: https://www.swimming.org/openwater/open-water-swimming-venues/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Salford Watersports Centre: Intro to Open Water Swimming'
+    url: https://widget.eola.co/1275/activities/7t5a3
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Great North Swim, Windermere: event information'
+    url: https://greatswim.org/great-north-swim/info
+    region: uk
+    checked: '2026-11-13'
+  - label: 'U.S. Masters Swimming: open water swimming basics'
+    url: https://www.usms.org/fitness-and-training/articles-and-videos/articles/open-water-swimming-basics
+    region: us
+    checked: '2026-11-13'
+  - label: 'Playtri: weekly open water swims, Lewisville Lake, Texas'
+    url: https://www.playtri.com/playtri-dfw-open-water
+    region: us
+    checked: '2026-11-13'
+  safety: Never practise in open water on your own; Swim England advises newcomers to join an organised session with a coach, a course and safety procedures. At events, if you struggle, lie on your back or tread water and raise a hand for the safety team.
   story: amy-gubser-golden-gate-farallon-swim-55
   guide: swimming-and-cycling-after-50
+  seo_title: 'Open water swimming for beginners: venues and first events'
+  description: Open water swimming for beginners, with supervised venues and their prices, wetsuit and tow float rules, and first events from half a mile to Alcatraz.
+  detail:
+  - h: What changes when you leave the pool
+    p:
+    - There is no line on the bottom, so you have to look where you are going. U.S. Masters Swimming teaches sighting as "alligator eyes", lifting your head just enough to bring your eyes out of the water, then turning to breathe to the side as usual rather than to the front. How often you sight depends on how straight you swim, and on current, wind and other swimmers.
+    - Starts and turns change too. USMS suggests entering feet first from a dock, knees bent in case it is shallow, and diving only where you know the depth. Buoy turns get crowded, and a decent breaststroke lets you sight on every breath and correct your course. Practise all of this in the pool first.
+    - Swim England advises getting in about five minutes before a session or race to adjust, and wearing two swim hats to keep cold water out of your ears. If you buy a wetsuit, make sure it is the right size and practise putting it on at home. For the risks of cold water itself, and of rivers, lakes and the sea, see our wild swimming page.
+  - h: Supervised venues and what a session costs
+    table:
+      head: [Venue, What you get, Cost (as last listed)]
+      rows:
+      - ['Salford Watersports Centre, Salford Quays', '45-minute Intro to Open Water Swimming, aged 17 and over, with a hire wetsuit included', 'From £27 per adult']
+      - ['Salford Watersports Centre, Salford Quays', 'Swim session (entry slots every 30 minutes); you must be able to swim 300 m unaided. Tow float compulsory below 14°C (57°F); bright hat required', 'From £6.50; swim wetsuit hire £10, watersports wetsuit £4']
+      - ['Stanwick Lakes, Northamptonshire (2025 season; check for new dates)','Friday evening swims of one or two hours with lifeguards; tow float and bright hat compulsory, tow float hire available', '£5.50 a session']
+      - ['Bewl Water, Lamberhurst, Kent','Lifeguarded swims with a safety induction before every session; tow float and bright hat compulsory, wetsuit compulsory below 16°C (61°F)', '£9 for the New Year''s Day 2027 drop-in']
+      - ['Open Water Swim Chicago, Ohio Street Beach (past run, summer 2026)', '45-minute clinics covering sighting, pack swimming and wetsuits, with Chicago Park District lifeguards; wetsuit rental on site', '$23 plus fees, rising to $30 two weeks before']
+      - ['Playtri, Pier 121 Marina, Lewisville Lake, Texas', 'Weekly swims from the end of March to September; bright cap required, wetsuit mandatory at 60°F (15.6°C) or below', '$10 drop-in, cash; $100 a year']
+    after: Most of the venues above insist on a bright hat, a tow float or both, and several ask you to sign a declaration or questionnaire each time. Check the venue's own rules and minimum age before you book.
+  - h: First events side by side
+    table:
+      head: [Event, Distances, Who it suits, Entry (as last listed)]
+      rows:
+      - ['Great North Swim, Windermere, 11 to 13 June 2027', '250 m; half mile (805 m); 1 mile (1,609 m); 2 miles (3,219 m); 5 km (3.1 miles); 10 km (6.2 miles)', 'The half mile is the beginner distance, from age 12; 1 mile is for all abilities and 2 miles for those wanting a longer challenge, both from 16', 'Half mile £40 saver, £46 final; 1 mile £46 and £55; 2 miles £58 and £68']
+      - ['Swim Serpentine, Hyde Park, London (past run, 19 September 2026)', 'Half mile (805 m); 1 mile (1,609 m); 2 miles (3,219 m); Super Six, 6 miles (9,656 m)', 'Half mile from 12; 1 and 2 miles from 16; Super Six from 18. The organisers say the focus is on fun, not racing', Prices not shown for the next event]
+      - ['Alcatraz Sharkfest Swim, San Francisco, 25 September 2027', '1.5 miles (2.4 km), from Alcatraz Island to Aquatic Park', 'Experienced open water swimmers only; the organisers suggest you can swim a mile in a pool in under 40 minutes. Cut-off 75 minutes', '$242.72 early bird, rising to $317.61']
+    after: At the Great North Swim, most distances have no time limit, and safety kayakers decide whether a swimmer can carry on. It runs a quieter half-mile wave on the Sunday afternoon with no music, and a women-only half-mile wave on the Friday. At Swim Serpentine the later two-mile waves have cut-offs of two and a half hours and one and a half hours.
+  - h: Wetsuits, tow floats and water temperature
+    table:
+      head: [Event or body, Wetsuit rule, Tow float or category]
+      rows:
+      - ['Great North Swim', 'Optional at 15°C (59°F) or above; compulsory for under-16s; hire from £30', 'Swimmers over 16 without a wetsuit must use an approved high-visibility tow float']
+      - ['Swim Serpentine', 'Mandatory below 14.9°C (about 59°F); strongly recommended below 15.9°C (about 61°F); optional from 16°C to 24.5°C (61°F to 76°F); forbidden at 24.6°C (76°F) or above', 'Tow float required if you wear a tri suit']
+      - ['Alcatraz Sharkfest', 'Water about 58°F to 64°F (14°C to 18°C); neoprene hoods allowed', 'Wetsuit and non-wetsuit categories; full-body swimsuits and skin suits count as wetsuit']
+      - ['U.S. Masters Swimming rules', 'Wetsuits may be permitted or required at the race director''s discretion; not allowed at 78°F (25.6°C) or higher', '-']
+      - ['USA Triathlon, as summarised by USMS', 'Swim cancelled below 50°F (10°C); wetsuits strongly encouraged from 50°F to 65°F; athlete''s choice from 65°F to 78°F; not allowed above 84°F (28.9°C)', 'Wetsuits no thicker than 5 mm']
+    after: USMS advises training in the wetsuit you will race in, since changing kit on race day is discouraged.
+  - h: How to build up to your first event
+    list:
+    - Swim England says never practise in open water by yourself, and suggests newcomers join an organised session with changing rooms, a coach, a course and safety procedures.
+    - Learn sighting, feet-first entries and buoy turns in the pool, as USMS suggests, then repeat them at a venue.
+    - Choose a distance you can already swim continuously. The Great North Swim describes its half mile, 32 pool lengths, as a good starting point.
+    - Try a venue's hire wetsuit before buying, and train in the one you will wear on the day.
+  faq:
+  - q: How do I start open water swimming as a beginner?
+    a: Join a supervised session at an open water venue rather than swimming alone. Swim England recommends an organised session with a coach, a set course and safety procedures, and venues such as Salford Watersports Centre run 45-minute introductions.
+  - q: Do I need a wetsuit for open water swimming?
+    a: It depends on the water temperature and the venue. Swim Serpentine makes wetsuits mandatory below 14.9°C (about 59°F), and the Great North Swim makes them optional at 15°C (59°F) or above. Many venues hire them.
+  - q: What is a good first open water swim event?
+    a: A half mile (805 m) is the usual starting distance. The Great North Swim at Windermere calls its half mile a good starting point, open to swimmers from age 12.
+  - q: How do you swim in a straight line in open water?
+    a: By sighting. U.S. Masters Swimming suggests lifting your head just enough to bring your eyes out of the water, then turning to breathe to the side as usual.
+  - q: Do I need a tow float?
+    a: Often. Stanwick Lakes and Bewl Water make them compulsory, Salford Quays requires one when the water is below 14°C (57°F), and the Great North Swim requires one for swimmers over 16 without a wetsuit.
+  - q: Can a beginner swim from Alcatraz?
+    a: Not as a first event. The Alcatraz Sharkfest Swim is for experienced open water swimmers, and the organisers suggest being able to swim a mile in a pool in under 40 minutes.
+  inspire:
+  - kind: read
+    person: Jenny Ball, Isle of Wight Masters swimmer
+    line: Took up club and open water swimming without any formal coaching and has swum across the Solent from Ryde Sands to Southsea six times.
+    title: Jenny Ball reflects on open water swimming
+    outlet: Swim England
+    url: https://swimming.org/masters/jenny-ball-reflects-on-open-water-swimming
+    checked: '2026-11-13'
+  sources:
+  - label: U.S. Masters Swimming, Open Water Swimming Basics
+    url: https://www.usms.org/fitness-and-training/articles-and-videos/articles/open-water-swimming-basics
+    checked: '2026-11-13'
+  - label: U.S. Masters Swimming, At What Water Temperature Do I Need a Wetsuit?
+    url: https://www.usms.org/fitness-and-training/articles-and-videos/articles/at-what-water-temperature-do-i-need-a-wetsuit
+    checked: '2026-11-13'
+  - label: Swim England, Tips for practising in open water
+    url: https://www.swimming.org/openwater/tips-practising-open-water/
+    checked: '2026-11-13'
+  - label: Swim England, Open water swimming venues
+    url: https://www.swimming.org/openwater/open-water-swimming-venues/
+    checked: '2026-11-13'
+  - label: Salford Watersports Centre, Intro to Open Water Swimming
+    url: https://widget.eola.co/1275/activities/7t5a3
+    checked: '2026-11-13'
+  - label: Salford Watersports Centre, Open Water Swimming
+    url: https://widget.eola.co/1275/activities/swimming-swimming
+    checked: '2026-11-13'
+  - label: Stanwick Lakes, Open water swim session
+    url: https://stanwicklakes.org.uk/product/open-water-swim-session
+    checked: '2026-11-13'
+  - label: Bewl Water, Open water swimming
+    url: https://bewlwater.co.uk/activities/open-water-swimming
+    checked: '2026-11-13'
+  - label: Open Water Swim Chicago, Clinics
+    url: https://runsignup.com/Race/ChicagoTriathlonOpenWaterSwim/Page/clinics
+    checked: '2026-11-13'
+  - label: Playtri, DFW open water swims
+    url: https://www.playtri.com/playtri-dfw-open-water
+    checked: '2026-11-13'
+  - label: Great Swim, Great North Swim event information
+    url: https://greatswim.org/great-north-swim/info
+    checked: '2026-11-13'
+  - label: Great Swim, Choose your distance
+    url: https://greatswim.org/enter/
+    checked: '2026-11-13'
+  - label: London Marathon Events, Swim Serpentine
+    url: https://www.londonmarathonevents.co.uk/swim-serpentine/swim
+    checked: '2026-11-13'
+  - label: London Marathon Events, Swim Serpentine FAQs
+    url: https://www.londonmarathonevents.co.uk/swim-serpentine/faqs
+    checked: '2026-11-13'
+  - label: Race Roster, 2027 Alcatraz Sharkfest Swim
+    url: https://raceroster.com/events/2027/165022/2027-alcatraz-sharkfest-swim
+    checked: '2026-11-13'
+  - label: Swim England, Jenny Ball reflects on open water swimming
+    url: https://swimming.org/masters/jenny-ball-reflects-on-open-water-swimming
+    checked: '2026-11-13'
   kit:
   - name: Bright tow float
-    why: makes you easy to see in open water and gives you something to hold if you need a rest
+    why: many venues and events require one, and it makes you easy to see and gives you something to hold if you need a rest
     url: https://www.amazon.co.uk/s?k=swim+tow+float
   - name: Swim cap
-    why: keeps hair out of the way and, in a bright colour, makes you easier to see outdoors
+    why: venues ask for a bright hat so you can be seen
     url: https://www.amazon.co.uk/s?k=swim+cap+silicone+bright
   - name: Swimming wetsuit
     why: a swim-specific wetsuit, not a surf one, fits closer and lets your arms move; many open water venues hire them, so try one first
@@ -1969,6 +2102,11 @@
   - name: Changing robe
     why: to change and warm up quickly on the bank or beach
     url: https://www.amazon.co.uk/s?k=changing+robe+waterproof
+  related:
+  - wild-swim
+  - swim-the-serpentine
+  - first-triathlon
+  - masters-swimming
 - id: ride-a-sportive
   title: Ride a sportive
   category: move
@@ -3067,24 +3205,158 @@
   category: move
   kind: skill
   effort: moderate
-  cost: low
+  cost: mid
   time: weeks
   setting: indoors
   company: either
   regions:
   - uk
-  why: Squat, press and deadlift are technical skills, and good coaching makes them satisfying to learn. Progress is easy to measure, because the numbers on the bar go up.
+  - us
+  why: Squat, press and deadlift are technical skills, and good coaching makes them satisfying to learn. The NHS and the CDC both recommend muscle-strengthening work on at least two days a week, and both list lifting weights among their examples (the CDC lists it first).
   start:
-  - Use British Weight Lifting's finder to locate a club or partner gym near you.
-  - Book an introductory session and ask to be coached through the basic lifts.
-  - Write down what you lift each session and add weight in small steps.
+  - 'Decide which way in suits you: Olympic weightlifting, powerlifting or general barbell strength training. The table below sets them side by side.'
+  - Book a coached beginners' course or introductory session at a club or gym, rather than teaching yourself from videos.
+  - Write down what you lift each session, and add weight only when the current one feels easy.
   links:
   - label: 'British Weight Lifting: find a club or gym'
     url: https://britishweightlifting.org/find-a-club
     region: uk
     checked: '2026-10-06'
+  - label: 'British Weight Lifting: Weightlifting 101'
+    url: https://britishweightlifting.org/start-lifting/weightlifting-101
+    region: uk
+    checked: '2026-11-13'
+  - label: 'British Powerlifting: frequently asked questions'
+    url: https://www.britishpowerlifting.org/faqs/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'USA Weightlifting: membership, coach directory and club finder'
+    url: https://www.usaweightlifting.org/membership
+    region: us
+    checked: '2026-11-13'
+  - label: 'USA Powerlifting: membership'
+    url: https://www.usapowerlifting.com/pages/membership
+    region: us
+    checked: '2026-11-13'
   story: martine-barons-world-champion-deadlift-65
   guide: strength-training-after-50-why-and-how
+  seo_title: 'How to start weightlifting: barbell training for beginners'
+  description: How to start barbell training, with the NHS and CDC strength guidelines, weightlifting and powerlifting compared, and real beginners' course costs.
+  detail:
+  - h: What the guidelines say
+    p:
+    - The NHS says adults should do strengthening activities that work all the major muscle groups, the legs, hips, back, abdomen, chest, shoulders and arms, on at least two days a week. Lifting weights is one of the examples on its list. The CDC in the United States says the same, muscle-strengthening activities on two or more days a week, working all the major muscle groups.
+    - Both describe how hard it should feel. The NHS says to work to the point where you need a short rest before repeating the activity. The CDC says to work to the point where it is hard to do another repetition without help, and suggests 8 to 12 repetitions as one set, with two or three sets for more benefit. Neither counts strength work towards the 150 minutes of aerobic activity a week; it comes on top.
+  - h: 'Three ways in: weightlifting, powerlifting or strength training'
+    table:
+      head: [Way in, The lifts, Where to learn, Membership (as last listed)]
+      rows:
+      - [Olympic weightlifting, 'The snatch, and the clean and jerk', 'A British Weight Lifting affiliated club; in the US, a USA Weightlifting club', 'British Weight Lifting First Lift, for beginners of all ages, £75 for six months, with insurance and free knee sleeves; individual £62 a year (£50 through a club). USA Weightlifting Master Athlete (35 and over), $79 a year']
+      - [Powerlifting, 'Squat, bench press and deadlift, three attempts at each', 'A gym or club; British Powerlifting says no coach is required, though one helps you progress faster', 'British Powerlifting seniors (over 23), £49 a year. USA Powerlifting open, masters or non-competing, $70']
+      - [General barbell strength training, 'Usually the squat, press and deadlift; some courses add the bench press or power clean', 'A gym course, an adult-education or university course, or a coach', 'No governing-body membership; you pay the course or gym (see below)']
+    after: Membership is mainly for insurance and competing. British Powerlifting says a valid membership is needed to enter any of its sanctioned competitions, and its masters categories start at 40. USA Weightlifting's Master Athlete membership starts at 35.
+  - h: What beginners pay for coaching
+    table:
+      head: [Where, Format, Cost (as last listed)]
+      rows:
+      - ['British Weight Lifting, An Introduction to Olympic Weightlifting', 'About 3 hours online, then a half-day (4-hour) practical on the snatch, clean and jerk', '£100']
+      - ['British Weight Lifting, An Introduction to Strength Training', 'About 3 hours online, then a half-day practical on the back squat, press, deadlift and power clean', '£100']
+      - ['NDM sports & personal training, Bristol', 'Six one-hour sessions, at most three people; snatch, clean and jerk, squats, presses and deadlifts, with a programme to follow afterwards', 'From £199 per adult, plus booking fees']
+      - ['St Mary''s University, Twickenham (past run, 2025)', 'Learn to Lift, beginners: ten weekly one-hour sessions on the squat, deadlift and bench press, for people with little or no gym experience', '£150']
+      - ['University of Utah Continuing Education', 'Weight Training: Elementary, about 15 weeks, two 50-minute sessions a week, covering technique, safety and programme design', '$261 for spring 2027 ($221 tuition plus a $40 fee)']
+      - ['Starting Strength, Tulsa, Oklahoma', 'A required intro session for newcomers, then coached sessions of up to 90 minutes three times a week', '$185 intro session; $365 a month']
+    after: Both British Weight Lifting workshops are for people over 14 who already have some general experience of weight training, so they suit someone a few weeks in rather than on day one. Neither page lists dates or venues; check the course shop.
+  - h: How to build up
+    p:
+    - Technique comes first. Mayo Clinic advises anyone new to strength training to work with a trainer or other fitness specialist to learn correct form and technique, and British Weight Lifting says a local club is one of the best ways to learn from qualified coaches.
+    - Add weight in small steps. Mayo Clinic suggests a weight heavy enough to tire the muscles after about 12 to 15 repetitions, increasing it gradually once you can easily do more repetitions. It also advises resting one full day between exercising each muscle group.
+    - You do not need to be strong to start. British Powerlifting's own answer is that you get strong by starting, and it suggests a local divisional or novice meet, with no qualifying total, if you later want to compete.
+  - h: The honest hard parts
+    list:
+    - Good coaching costs money. A single workshop is about £100, and a coached gym such as Starting Strength Tulsa charges $365 a month for three sessions a week.
+    - The Olympic lifts are the most technical. British Weight Lifting's introductory workshop expects some general lifting experience before you start on the snatch and clean and jerk.
+    - It takes regular time. The guidelines ask for at least two days a week, and Mayo Clinic suggests a rest day between sessions for the same muscles.
+    - Pain is a signal to stop. Mayo Clinic says that if an exercise causes pain, stop the exercise.
+  faq:
+  - q: How do I start weightlifting as a complete beginner?
+    a: Find a coached beginners' course or a club. British Weight Lifting recommends an affiliated club with qualified coaches, and Mayo Clinic advises learning correct form from a trainer before adding weight.
+  - q: What is the difference between weightlifting and powerlifting?
+    a: Olympic weightlifting has two lifts, the snatch and the clean and jerk. Powerlifting has three, the squat, bench press and deadlift.
+  - q: How often should beginners lift weights?
+    a: The NHS and the CDC both recommend muscle-strengthening activities on at least two days a week, working all the major muscle groups. Mayo Clinic suggests a full rest day between sessions for the same muscles.
+  - q: How much weight should a beginner lift?
+    a: Mayo Clinic suggests a weight heavy enough to tire your muscles after about 12 to 15 repetitions, increased gradually once you can easily do more.
+  - q: Do I need to join British Weight Lifting or British Powerlifting?
+    a: Membership brings insurance and competition access. British Powerlifting says a valid membership is needed to enter any of its sanctioned competitions, and British Weight Lifting's First Lift starter membership is £75 for six months.
+  - q: Is there an age limit for lifting?
+    a: British Weight Lifting's First Lift membership is described as suitable for beginners of all ages, and both British Powerlifting and USA Weightlifting have masters categories.
+  safety: Speak to a GP first if you have not exercised for some time or have medical conditions or concerns, as the NHS advises, and make sure the weight suits your fitness. Learn the lifts from a coach, and stop any exercise that causes pain.
+  inspire:
+  - kind: read
+    person: Lindsey Gowland, Masters swimmer
+    line: Took up powerlifting to help her swimming and, after about a year, won three titles at the British Powerlifting Championships, including a 121 kg (about 267 lb) deadlift listed as a world record.
+    title: Masters swimmer Lindsey Gowland wins weightlifting competition
+    outlet: Swim England
+    url: https://swimming.org/masters/masters-swimmer-lindsey-gowland-wins-weightlifting-competition
+    checked: '2026-11-13'
+  sources:
+  - label: NHS, Physical activity guidelines for adults aged 19 to 64
+    url: https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/
+    checked: '2026-11-13'
+  - label: NHS, Physical activity guidelines for older adults
+    url: https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-older-adults/
+    checked: '2026-11-13'
+  - label: 'CDC, Adult Activity: An Overview'
+    url: https://cdc.gov/physical-activity-basics/guidelines/adults.html
+    checked: '2026-11-13'
+  - label: CDC, What Counts as Physical Activity for Adults
+    url: https://cdc.gov/physical-activity-basics/adding-adults/what-counts.html
+    checked: '2026-11-13'
+  - label: 'Mayo Clinic, Strength training: get stronger, leaner, healthier'
+    url: https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670
+    checked: '2026-11-13'
+  - label: British Weight Lifting, Weightlifting 101
+    url: https://britishweightlifting.org/start-lifting/weightlifting-101
+    checked: '2026-11-13'
+  - label: British Weight Lifting, Membership types
+    url: https://britishweightlifting.org/membership
+    checked: '2026-11-13'
+  - label: British Weight Lifting, First Lift membership
+    url: https://britishweightlifting.org/start-lifting/first-lift-membership
+    checked: '2026-11-13'
+  - label: British Weight Lifting, An Introduction to Olympic Weightlifting Workshop
+    url: https://shop.britishweightlifting.org/w/courses/190-an-introduction-to-olympic-weightlifting-workshop
+    checked: '2026-11-13'
+  - label: British Weight Lifting, An Introduction to Strength Training Workshop
+    url: https://shop.britishweightlifting.org/w/courses/189-an-introduction-to-strength-training-workshop
+    checked: '2026-11-13'
+  - label: British Powerlifting, FAQs
+    url: https://www.britishpowerlifting.org/faqs/
+    checked: '2026-11-13'
+  - label: British Powerlifting, Membership options
+    url: https://www.britishpowerlifting.org/membership-options/
+    checked: '2026-11-13'
+  - label: USA Weightlifting, Membership
+    url: https://www.usaweightlifting.org/membership
+    checked: '2026-11-13'
+  - label: USA Powerlifting, Membership
+    url: https://www.usapowerlifting.com/pages/membership
+    checked: '2026-11-13'
+  - label: NDM sports & personal training, 6-week weightlifting course (Bristol)
+    url: https://eola.co/xs2cv/activities/r56w9
+    checked: '2026-11-13'
+  - label: St Mary's University Twickenham, Learn to Lift courses
+    url: https://stmarys.ac.uk/short-courses/strength-and-conditioning/learn-to-lift-courses.aspx
+    checked: '2026-11-13'
+  - label: 'University of Utah Continuing Education, Weight Training: Elementary'
+    url: https://continue.utah.edu/class/ESSF/85
+    checked: '2026-11-13'
+  - label: Starting Strength Tulsa, How to join
+    url: https://www.startingstrengthgyms.com/tulsa/membership.html
+    checked: '2026-11-13'
+  - label: Swim England, Masters swimmer Lindsey Gowland wins weightlifting competition
+    url: https://swimming.org/masters/masters-swimmer-lindsey-gowland-wins-weightlifting-competition
+    checked: '2026-11-13'
   kit:
   - name: Gym gloves
     why: for grip and to save the skin on your palms
@@ -3092,6 +3364,11 @@
   - name: Training notebook
     why: write down what you lift so you can add a little each week
     url: https://www.amazon.co.uk/s?k=workout+log+book
+  related:
+  - try-rowing-indoor
+  - try-pilates
+  - indoor-climbing
+  - couch-to-5k
 - id: lawn-bowls
   title: Play a game of lawn bowls
   category: move
@@ -7059,14 +7336,143 @@
   - uk
   why: BSL is a full language with its own grammar, and learning it opens conversations with people you could not otherwise talk to. Signature qualifications are nationally recognised, so Level 1 gives you a clear, assessed goal to aim at.
   start:
-  - Read about the Level 1 qualification on the Signature website.
-  - Use the Signature course search to find a class, choosing face-to-face or online.
-  - Enrol with a centre and put the first lesson in your diary.
+  - Read about the Level 1 qualification on the Signature website, and try Signature's £9.99 online beginners' course if you want a feel for it first.
+  - Use the centre finder on the Signature Learning Hub to find an approved centre, choosing face-to-face or live online classes.
+  - Enrol, and ask whether the Signature assessment fees are included in the course fee.
   links:
   - label: 'Signature: BSL qualifications'
     url: https://www.signature.org.uk/
     region: uk
     checked: '2026-10-06'
+  - label: 'Signature: British Sign Language Level 1'
+    url: https://www.signature.org.uk/qualifications/british-sign-language-qualifications/british-sign-language-level-1-certificate/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'City Lit: BSL Level 1 (London)'
+    url: https://www.citylit.ac.uk/bsl-level-1
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Remark!: BSL Level 1 in central London'
+    url: https://remark.uk.com/bsl-level-1
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Deaf Action: Level 1 BSL, online or in Edinburgh'
+    url: https://www.deafaction.org/courses/british-sign-language-courses/sqa-level-1-bsl-scqf-4/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'RNID: British Sign Language, with a free fingerspelling card'
+    url: https://rnid.org.uk/information-and-support/deaf-awareness/british-sign-language/
+    region: uk
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Vicky Danyluk
+    line: Learned to fingerspell her name at a free half-day taster at work, went on to an evening class at Solihull College and BSL qualifications, and now helps teach two evening BSL classes a week as a volunteer.
+    title: From learner to tutor – passing on a passion for sign language
+    outlet: Birmingham Community Healthcare NHS Trust
+    url: https://www.bhamcommunity.nhs.uk/latest-news/from-learner-to-tutor-passing-on-a-passion-for-sign-language-6467
+    checked: '2026-11-13'
+  seo_title: 'Learn British Sign Language: BSL levels, hours and costs'
+  description: How to learn British Sign Language, how long each Signature BSL level takes, what Level 1 courses cost at named centres, and where to start for free.
+  detail:
+  - h: What you are learning
+    p:
+    - British Sign Language is not English on the hands. RNID says it has its own grammar and is structured in a completely different way from English. In BSL you start with the main topic, so "What is your name?" becomes "Name – what?"
+    - RNID says BSL was recognised as a language in its own right in 2003, and legally as an official language of Britain in 2022. The British Deaf Association says it is the preferred language of more than 87,000 Deaf people in the UK, and that 151,000 people in the UK can use it.
+    - Sign language is not international. The British Deaf Association points out that Britain, Ireland and the United States each have entirely separate sign languages, and that BSL also has its own regional dialects and accents.
+  - h: The Signature levels side by side
+    table:
+      head: [Level, Guided hours, Total study hours, What it lets you do, Before you start]
+      rows:
+      - [Level 1, '64', '90', Take part in simple everyday conversations and give and follow simple directions, No previous BSL needed]
+      - [Level 2, '100', '150', Deal with most routine communication, Level 1]
+      - [Level 3, '150', '250', 'Use varied BSL in a range of work and social situations; Signature compares it to AS and A2 study in a modern foreign language', Levels 1 and 2 or equivalent experience]
+      - [Level 6, '180', '360', 'Use and understand complex BSL in all social and professional contexts; Signature compares it to an undergraduate degree in BSL fluency', Competence at Level 4 or equivalent]
+    after: Guided hours are timetabled teaching, which Signature allows to include live lessons on Zoom or Teams; the rest is your own study and practice. There is also a Level 4, aimed at people such as social workers and teachers of the Deaf. Level 6 is not an interpreting qualification. Signature offers a separate Level 6 Diploma in Sign Language Interpreting and Translation for that.
+  - h: How long it really takes
+    p:
+    - Signature puts Level 1 at 90 hours of learning. How those hours are spread depends on the centre. City Lit in London runs Level 1 as 11 full daytime sessions or 22 evening sessions, Remark! over 18 or 22 weeks, and City College Norwich over 32 weeks of Tuesday evenings.
+    - RNID says qualification courses usually run part time or in the evening from September to June, with some intensive daytime or weekend courses. Going from beginner to the end of Level 3 adds up to 490 hours of study on Signature's figures.
+  - h: The honest hard parts
+    p:
+    - 'Level 1 has three assessments. The first, a basic conversation, is assessed by your own teacher and needs 85% to pass. The other two are 4 to 5 minute conversations with a Signature assessor, each with a 50% pass mark. Check what a resit costs: City College Norwich''s fee includes one entry into each assessment, and the college says it will not pay for a resit.'
+    - RNID is plain that it is very difficult to learn BSL from a book, website or video alone, and recommends a course with a qualified tutor who is fluent in the language. The British Deaf Association says hearing people who want to learn more are often welcomed at local Deaf clubs, which is one way to keep practising between classes.
+    - Signature asks that learners have enough sight, manual dexterity, and facial and body movement to produce and receive BSL, and centres must explain this before you enrol.
+  - h: What a Level 1 course costs
+    table:
+      head: [Where, Format, Cost (as last listed)]
+      rows:
+      - ['Signature Learning Hub: British Sign Language for Beginners', 'Self-paced online introduction with an e-certificate; not a qualification', £9.99]
+      - ['Deaf Action, Edinburgh', 'Level 1 BSL (SCQF level 4), Wednesday evenings, live online or in person; the August 2026 run is under way and full, with a waiting list', '£300 online, £375 in person']
+      - [City College Norwich, 'BSL Level 1 Award, Tuesday evenings over 32 weeks; one entry to each assessment included', £425]
+      - ['Remark!, central London', 'Signature Level 1, taught by Deaf teachers over 18 or 22 weeks; awarding body fees and VAT included', £645]
+      - ['City Lit, London', 'Signature Level 1 in person, daytime or evening; exam fees included', '£699 to £799, or £528 to £598 concession']
+    after: Signature says course fees are set by each centre, so prices vary. In Scotland, courses such as Deaf Action's lead to a Qualifications Scotland approved award rather than a Signature one. Ask any centre whether assessment fees are in the price before you book.
+  faq:
+  - q: How long does it take to learn BSL Level 1?
+    a: Signature puts it at 90 hours, made up of 64 hours of teaching and 26 hours of your own study. Courses we found run from 11 weeks of full days at City Lit to 32 weeks of evenings at City College Norwich.
+  - q: How much does a BSL Level 1 course cost?
+    a: Signature says centres set their own fees. As last listed, they ranged from £300 for Deaf Action's online course to £799 for some City Lit runs.
+  - q: Can I learn British Sign Language online?
+    a: Yes. Signature allows Level 1 teaching hours to be live on Zoom or Teams, and Deaf Action runs live online classes. RNID warns it is very difficult to learn from a website or video alone, so use self-paced courses as a start rather than a substitute.
+  - q: Is BSL the same as American Sign Language?
+    a: No. The British Deaf Association says Britain and the United States have entirely separate sign languages, and that ASL resembles French Sign Language.
+  - q: Do I need Level 1 before starting BSL Level 2?
+    a: Yes. Signature requires the Level 1 qualification before Level 2.
+  - q: Will BSL Level 6 make me an interpreter?
+    a: No. Signature says Level 6 is not an interpreting qualification. It offers a separate Level 6 Diploma in Sign Language Interpreting and Translation.
+  sources:
+  - label: Signature, Qualifications
+    url: https://www.signature.org.uk/qualifications/
+    checked: '2026-11-13'
+  - label: Signature, British Sign Language Level 1
+    url: https://www.signature.org.uk/qualifications/british-sign-language-qualifications/british-sign-language-level-1-certificate/
+    checked: '2026-11-13'
+  - label: Signature, British Sign Language Level 2 Certificate
+    url: https://www.signature.org.uk/qualifications/british-sign-language-qualifications/british-sign-language-level-2-certificate/
+    checked: '2026-11-13'
+  - label: Signature, British Sign Language Level 3 Certificate
+    url: https://www.signature.org.uk/qualifications/british-sign-language-qualifications/british-sign-language-level-3-certificate/
+    checked: '2026-11-13'
+  - label: Signature, British Sign Language Level 6 Certificate
+    url: https://www.signature.org.uk/qualifications/british-sign-language-qualifications/british-sign-language-level-6-certificate/
+    checked: '2026-11-13'
+  - label: Signature, British Sign Language for Beginners
+    url: https://www.signature.org.uk/british-sign-language-for-beginners/
+    checked: '2026-11-13'
+  - label: City Lit, BSL level 1
+    url: https://www.citylit.ac.uk/bsl-level-1
+    checked: '2026-11-13'
+  - label: City College Norwich, British Sign Language Level 1
+    url: https://www.ccn.ac.uk/adults/leisure-learning/course/british-sign-language-level-1/
+    checked: '2026-11-13'
+  - label: Remark!, BSL Level 1
+    url: https://remark.uk.com/bsl-level-1
+    checked: '2026-11-13'
+  - label: Deaf Action, Level 1 BSL (SCQF 4)
+    url: https://www.deafaction.org/courses/british-sign-language-courses/sqa-level-1-bsl-scqf-4/
+    checked: '2026-11-13'
+  - label: RNID, British Sign Language
+    url: https://rnid.org.uk/information-and-support/deaf-awareness/british-sign-language/
+    checked: '2026-11-13'
+  - label: British Deaf Association, BSL and Deaf culture
+    url: https://bda.org.uk/bsl-deaf-culture/
+    checked: '2026-11-13'
+  - label: Birmingham Community Healthcare NHS Trust, From learner to tutor
+    url: https://www.bhamcommunity.nhs.uk/latest-news/from-learner-to-tutor-passing-on-a-passion-for-sign-language-6467
+    checked: '2026-11-13'
+  kit:
+  - name: British Sign Language dictionary
+    why: for looking up signs between classes
+    url: https://www.amazon.co.uk/s?k=british+sign+language+dictionary
+  - name: Laptop webcam
+    why: for Level 1 classes taught live over Zoom or Teams
+    url: https://www.amazon.co.uk/s?k=laptop+webcam
+  related:
+  - learn-american-sign-language
+  - learn-a-language-to-b1
+  - volunteer-as-a-befriender
+  - volunteer-in-the-nhs
 - id: learn-american-sign-language
   title: Take a beginner course in American Sign Language
   category: connect
@@ -14780,11 +15186,11 @@
   regions:
   - uk
   - us
-  why: Bridge is played by four people with one pack of cards, as one pair against another. Clubs play duplicate bridge, in which several tables play the same deals in turn so that your score is compared with others who held exactly the same cards.
+  why: Clubs play duplicate bridge, in which several tables play the same deals in turn so that your score is compared with others who held exactly the same cards.
   start:
-  - Try MiniBridge, which the English Bridge Union suggests as an easy first step into the game.
+  - Try MiniBridge, a free practice game the American Contract Bridge League points beginners to.
   - Use the English Bridge Union's course and teacher search, or the American Contract Bridge League's Find a Teacher search, to find lessons.
-  - Ask a local club about its games for newcomers and tell the club manager you are coming.
+  - Contact a local club directly and ask about its games for newcomers.
   links:
   - label: English Bridge Union, "Learn to play bridge" (national body for England)
     url: https://www.ebu.co.uk/new-players/learn-play-bridge
@@ -14794,10 +15200,128 @@
     url: https://www.acbl.org/learn/
     region: us
     checked: '2026-10-08'
+  - label: 'English Bridge Union: find a club or teacher'
+    url: https://www.ebu.co.uk/information-resources/find-club-or-teacher
+    region: uk
+    checked: '2026-11-13'
+  - label: 'American Contract Bridge League: new to bridge, with class, teacher and club finders'
+    url: https://acbl.org/playbridge
+    region: us
+    checked: '2026-11-13'
+  - label: 'Buckinghamshire Adult Learning: Bridge for Beginners (Module 1), autumn 2026 run, started'
+    url: https://adultlearningbc.ac.uk/?p=114187
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Monterey Bridge Club, California: lessons for beginners (autumn 2026 run)'
+    url: https://www.bridgewebs.com/montereyunit530/Lessons.htm
+    region: us
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Rufus V. Rhoades
+    line: Took up duplicate bridge with his then wife once their only child had gone to college, signing up at a local club that included lessons and playing with other novices from the second lesson.
+    title: 'How to Hobby: Playing Bridge'
+    outlet: American Bar Association, Voice of Experience
+    url: https://www.americanbar.org/groups/senior_lawyers/resources/voice-of-experience/2026-january/hobby-playing-bridge
+    checked: '2026-11-13'
+  seo_title: 'How to learn bridge: lessons, clubs and costs'
+  description: How to learn bridge, from free first lessons to a club beginners' course, what lessons cost in the UK and US, and how to find a bridge club near you.
+  detail:
+  - h: What it's really like
+    p:
+    - A first course starts with the card play and then moves on to bidding. Buckinghamshire Adult Learning's beginners' module, for example, begins with playing hands in no-trumps and in trumps, then introduces opening the bidding and responding to your partner.
+    - Clubs and tournaments play duplicate bridge. Britannica explains that each deal is played at least twice by different players, with the same cards, dealer and vulnerability, so the aim is not to pile up points as in rubber bridge but to bid and play the same hands better than the other pairs who held them. That deals with the old problem, as Britannica puts it, of a run of good cards nullifying the difference between skilful and poor players.
+  - h: How long before you can play at a club
+    p:
+    - The English Bridge Union's beginners' programme, Bridge for All, is built around a year. You learn the basics in the first half, and by the end of the year the EBU says you should be able to plan and play a hand, describe the system you have learned, play without the teacher standing by, and enter a simple duplicate competition at the club.
+    - Club courses follow a similar rhythm. Wimbledon Bridge Club's beginners' course runs over three terms, with a course book that covers all three. You play long before the end, though. Rufus Rhoades, writing for the American Bar Association, began playing with other novices at his second lesson, and the American Contract Bridge League's free guest membership lets you join games for newer players.
+  - h: The two national bodies side by side
+    table:
+      head: ['', English Bridge Union (England), American Contract Bridge League (North America)]
+      rows:
+      - [Finding a club, 'Club directory listing the nearest clubs, their facilities and, in most cases, forthcoming sessions', 'Find a Club search by city, state or zip code; the ACBL says there are thousands of clubs across North America']
+      - [Finding lessons, 'Find a bridge course or teacher service, plus a teacher directory that includes online courses', 'Find a Teacher directory and a Find a Class search by level, format and time']
+      - [Beginners' programme, 'Bridge for All, using the Acol bidding system, taught in clubs, village halls, teachers'' homes and some adult education classes', 'Online Intro to Bridge, live on Zoom in four series, with a workbook; no partner needed']
+      - [Membership for beginners, 'Students on a Bridge for All course get 12 months'' EBU membership', 'Free guest membership; full membership $39 for the first year']
+    after: For a free first taste, the ACBL runs Trickstarter, an introductory Zoom class with no bidding, and points to MiniBridge, Just Declare and the free Tricky Bridge practice app. Bidding systems differ. The EBU's Bridge for All and Buckinghamshire Adult Learning's course teach Acol, also called Standard English, while Adobe Bridge Center in Arizona teaches its beginners the 2/1 system, so check which one a course uses.
+  - h: What beginners' lessons cost
+    table:
+      head: [Where, Course, Cost (as last listed)]
+      rows:
+      - [American Contract Bridge League, Trickstarter introductory class on Zoom, Free]
+      - ['Wimbledon Bridge Club, south-west London (current run, autumn 2026; third term of three)', 'Beginning Bridge over three terms; this term is 10 two-hour lessons; club membership included', '£165 a term, plus a £30 course book that covers all three terms']
+      - ['Buckinghamshire Adult Learning (autumn 2026 run, started)', 'Bridge for Beginners (Module 1), 12 weekly two-hour sessions, Acol', '£220.80, plus a £10.50 registration fee for the year and a £30 study pack, strongly recommended']
+      - ['Monterey Bridge Club, California (autumn 2026 run)', '12 weekly lessons, each paired with a playing session', $15 a session]
+      - ['Adobe Bridge Center, Arizona (fall 2026 run)', 'Beginning Bridge, 10 weeks of two-hour lessons, 2/1 system', $150]
+      - ['Bender JCC of Greater Washington, Maryland (past run)', 'Beginner Bridge, six Friday morning sessions', '$190 members, $210 non-members']
+    after: Surrey Adult Learning runs term-long beginners' courses at its centres or online and says you may need to buy the EBU's Beginning Bridge Book One. Ask what a book costs and whether membership is included before you enrol.
+  - h: Playing online
+    p:
+    - Bridge Base Online calls itself the world's largest bridge club, with more than a million players visiting each month. Registration is free, and it offers robots to practise against in solitaire games and free tournaments, which it suggests for novice players. It has partnered with national bodies including the ACBL and the EBU, so members can play sanctioned tournaments there.
+  faq:
+  - q: How long does it take to learn bridge?
+    a: Some beginners play their first games within a lesson or two, but a full course takes longer. The English Bridge Union's Bridge for All programme is planned over a year, ending with you ready to enter a simple duplicate competition at a club.
+  - q: How much do bridge lessons cost?
+    a: As last listed, from free for the ACBL's Trickstarter class to £165 a term at Wimbledon Bridge Club and $150 for a 10-week course at Adobe Bridge Center in Arizona.
+  - q: How do I find a bridge club near me?
+    a: In England, use the English Bridge Union's club directory. In North America, use the ACBL's Find a Club search by city, state or zip code.
+  - q: Do I need a partner to learn bridge?
+    a: Not for lessons. The ACBL says no partner is needed for its online Intro to Bridge classes.
+  - q: What is the difference between duplicate and rubber bridge?
+    a: In rubber bridge you try to score the most points. In duplicate, each deal is played more than once with the same cards, and you score by doing better than other pairs who held the same hands.
+  - q: Can I play bridge online for free?
+    a: Yes. Registration on Bridge Base Online is free, with robots to practise against and free tournaments.
+  sources:
+  - label: English Bridge Union, Bridge for All programme
+    url: https://www.ebu.co.uk/node/800
+    checked: '2026-11-13'
+  - label: English Bridge Union, Find a club or teacher
+    url: https://www.ebu.co.uk/information-resources/find-club-or-teacher
+    checked: '2026-11-13'
+  - label: American Contract Bridge League, Wait! I don't know how to play bridge yet
+    url: https://acbl.org/playbridge
+    checked: '2026-11-13'
+  - label: American Contract Bridge League, Intro to Bridge
+    url: https://acbl.org/portfolio/intro-to-bridge/
+    checked: '2026-11-13'
+  - label: Britannica, Duplicate bridge
+    url: https://britannica.com/EBchecked/topic/173984/Duplicate-Bridge
+    checked: '2026-11-13'
+  - label: Wimbledon Bridge Club, Beginning Bridge 3
+    url: https://www.bridgewebs.com/wimbledon/page47.html
+    checked: '2026-11-13'
+  - label: Buckinghamshire Adult Learning, Bridge for Beginners (Module 1)
+    url: https://adultlearningbc.ac.uk/?p=114187
+    checked: '2026-11-13'
+  - label: Surrey County Council, Bridge adult learning courses
+    url: https://www.surreycc.gov.uk/schools-and-learning/adult-learning/courses/dance-exercise-and-games/bridge
+    checked: '2026-11-13'
+  - label: Monterey Bridge Club, Bridge lessons for beginners
+    url: https://www.bridgewebs.com/montereyunit530/Lessons.htm
+    checked: '2026-11-13'
+  - label: Adobe Bridge Center, Beginning Bridge
+    url: https://www.bridgewebs.com/adobe/page14.html
+    checked: '2026-11-13'
+  - label: Bender JCC of Greater Washington, Beginner Bridge
+    url: https://www.benderjccgw.org/calendar/beginner-bridge-sept-oct-2026/
+    checked: '2026-11-13'
+  - label: Bridge Base Online, About
+    url: https://news.bridgebase.com/about
+    checked: '2026-11-13'
+  - label: 'American Bar Association, How to Hobby: Playing Bridge'
+    url: https://www.americanbar.org/groups/senior_lawyers/resources/voice-of-experience/2026-january/hobby-playing-bridge
+    checked: '2026-11-13'
   kit:
   - name: Bridge playing cards
     why: two packs with different backs, as at a club
     url: https://www.amazon.co.uk/s?k=bridge+playing+cards
+  - name: EBU Beginning Bridge Book One
+    why: a course book some beginners' courses use; ask your teacher before you buy
+    url: https://www.amazon.co.uk/s?k=EBU+beginning+bridge+book+one
+  related:
+  - join-a-chess-club
+  - join-u3a-or-olli
+  - lawn-bowls
 - id: get-an-amateur-radio-licence
   title: Get an amateur radio licence
   category: tech
@@ -19202,7 +19726,7 @@
   - h: What it's like
     p:
     - In 2025 the Pilgrim's Reception Office in Santiago issued 530,919 Compostelas, the certificate of the pilgrimage, and 93 per cent of those pilgrims arrived on foot. Sarria, on the French Way, is by far the most popular starting point, chosen by 31 per cent; Sarria, Ferrol, Vigo and Tui or Valença together account for 51 per cent.
-    - It is busiest in summer: 83 per cent of pilgrims reach Santiago between May and October. There is no compulsory starting point, and the office puts the average day on foot at 25 km (15.5 miles).
+    - 'It is busiest in summer: 83 per cent of pilgrims reach Santiago between May and October. There is no compulsory starting point, and the office puts the average day on foot at 25 km (15.5 miles).'
   - h: Sarria to Santiago in stages
     table:
       head: [Stage, Distance]
@@ -23101,8 +23625,7 @@
       up and print each colour on paper.'
     - A day workshop moves quicker. Print Club London asks you to bring your own A4 black-and-white design, and supplies the inks and paper. City Lit's one-day course has used ready-made photographic screens
       so beginners can print a two-colour image in a day.
-    - Unlike a linocut, there is no block to carve: the image is carried by a stencil on the screen. PAFA's course teaches printing editions on registered paper, and notes the method also works on fabric
-        and other surfaces.
+    - 'Unlike a linocut, there is no block to carve: the image is carried by a stencil on the screen. PAFA''s course teaches printing editions on registered paper, and notes the method also works on fabric and other surfaces.'
   - h: Ways in and what they cost
     table:
       head:
@@ -23878,8 +24401,7 @@
       If it breaks, the project restarts if time allows.
     - Nothing goes home hot. Corning's pieces are ready after noon the next day or can be shipped within the US and Canada; London Glassblowing anneals and finishes its pieces, which are ready about a week
       later.
-    - Groups are small: London Glassblowing takes two people per session. For a longer way in, GoggleWorks in Pennsylvania runs a five-evening Intro to Glassblowing for adults. The National Glass Centre
-        in Sunderland, long a place to try it in the UK, closed permanently on 31 July 2026.
+    - 'Groups are small: London Glassblowing takes two people per session. For a longer way in, GoggleWorks in Pennsylvania runs a five-evening Intro to Glassblowing for adults. The National Glass Centre in Sunderland, long a place to try it in the UK, closed permanently on 31 July 2026.'
   - h: What beginners pay
     table:
       head:
@@ -28515,7 +29037,7 @@
       fees.
     - No Strings Badminton is a pay-and-play programme for adults run at leisure centres in England. At Knutsford Leisure Centre, Everybody describes it as open to players aged 16 and over of any ability.
       At Surrey Sports Park, the standard No Strings session is for beginner and intermediate players, and the advanced one says it is not suitable for beginners.
-    - Read the listing before you go. Edinburgh Leisure runs a 60-minute Coached Badminton for Adults: Beginners class and asks you to bring your own racket if you can, with a few kept for emergencies.
+    - 'Read the listing before you go. Edinburgh Leisure runs a 60-minute Coached Badminton for Adults: Beginners class and asks you to bring your own racket if you can, with a few kept for emergencies.'
   - h: Ways in compared
     table:
       head:
@@ -33652,7 +34174,7 @@
         - £175 per listed date (the course summary shows £210)
       - - Cornwall College, Camborne and St Austell
         - Short adult cookery classes, such as Classic Curries and Basic Breads
-        - For Cornwall residents aged 19 and over: free tuition for up to two courses a year if household income is under £32,000, otherwise typically £9 to £30 (as last listed); some courses have a materials fee
+        - 'For Cornwall residents aged 19 and over: free tuition for up to two courses a year if household income is under £32,000, otherwise typically £9 to £30 (as last listed); some courses have a materials fee'
       - - Ballymaloe Cookery School, Ireland
         - Half-day to week-long short courses; Intensive Introductory Course Part 4, one week
         - €125 to €265 for a half-day cookery class; €2,335 for one week of the Intensive Introductory Course (Part 4), as last listed
@@ -40135,3 +40657,1835 @@
   - learn-argentine-tango
   - take-a-ballroom-class
   - learn-swing-dancing
+- id: learn-the-tabla
+  title: Learn the tabla
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The tabla is a pair of small drums at the heart of Hindustani music of northern India, Pakistan and Bangladesh, with the right-hand drum usually tuned to the tonic of the raga. Beginners learn
+    the sounds of the fingers and hands and the spoken syllables, called bols, that name each stroke.
+  start:
+  - Look for a weekly beginners' or adult class at an Indian music school or academy; some offer taster sessions.
+  - Ask whether you can borrow or rent a tabla before you buy one.
+  - Check what the beginners' class covers and whether exams are offered, if you want them.
+  links:
+  - label: 'South Asian Arts (SAA-UK): tabla classes, including an adult class (Leeds)'
+    url: https://www.saa-uk.org/academies/indian-music-academy-north/tabla-classes/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'PRSSV Sangeet College: tabla classes (West London)'
+    url: https://harrowarts.com/classes/tabla-classes
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Chhandayan Center for Indian Music: tabla classes (New York)'
+    url: https://chhandayan.org/new-york
+    region: us
+    checked: '2026-11-13'
+  - label: 'Alif Institute: beginner tabla classes (Atlanta)'
+    url: https://www.alifinstitute.org/tabla-classes
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Tabla lessons for adult beginners: UK and US classes'
+  description: What a beginner learns on the tabla, how the two drums work, and where adults can take tabla classes in the UK and US, with costs as last listed.
+  detail:
+  - h: What you learn
+    p:
+    - The tabla is a pair of drums. The higher-pitched dayan, usually of wood, is played with the right hand and usually tuned to the tonic of the raga. The lower bayan, played with the left, is a deep
+      kettledrum, usually of copper but sometimes of clay or wood. Each has a disk of black tuning paste that affects the pitch and adds overtones.
+    - Every stroke has a spoken syllable, or bol, used both in teaching and in performance, and players use a variety of finger and hand strokes. South Asian Arts describes the tabla as an accompanying
+      instrument for vocal and instrumental music and as a solo instrument.
+    - At South Asian Arts in Leeds, beginners start with making the sounds with the fingers and hands, basic bols, coordination and simple rhythmic patterns. Later come a wider range of taals (rhythmic
+      cycles), compositions and improvisation.
+    - Tuning is part of the craft. The skin tension is adjusted with the lacings and with wooden dowels that are tapped with a hammer.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - South Asian Arts (SAA-UK), Leeds
+        - Weekly classes by level, including an adult class on Tuesday evenings; taster sessions through the year
+        - £120 a term (10 weeks) or £360 a year (30 weeks); bursaries available
+      - - PRSSV Sangeet College, West London
+        - Beginner, intermediate and advanced classes on Wednesdays and Fridays; one-to-one and online classes; classes prepare students for OCN accredited qualifications
+        - Not listed; contact the college
+      - - Chhandayan Center for Indian Music, New York
+        - Group classes of 10 or fewer, including a Thursday beginners' group; booked by the month; private lessons by arrangement
+        - Tuition not listed; tabla reservation $5 an hour
+      - - Alif Institute, Atlanta, Georgia
+        - Beginner I and Beginner II classes on Tuesday evenings, 16 sessions from January to April
+        - $415 a term; drop-in $35 (Sanad Team members) or $40 if space allows
+    after: Alif Institute rents a limited number of tablas at $65 for up to five months, plus a $150 refundable deposit. PRSSV says no prior knowledge of Indian music is needed.
+  faq:
+  - q: Can adults learn the tabla from scratch?
+    a: Yes. South Asian Arts in Leeds runs an adult class, Chhandayan in New York says its group classes are open to all ages and levels, and PRSSV Sangeet College says no prior knowledge of Indian music is needed.
+  - q: What are tabla bols?
+    a: Bols are spoken syllables that match each tabla stroke. They are used both for teaching and in performance.
+  - q: Do I need to buy a tabla to start lessons?
+    a: Not always. Chhandayan lets students reserve a tabla for $5 an hour, and Alif Institute rents a limited number at $65 for up to five months, plus a deposit.
+  - q: How much do tabla lessons cost?
+    a: As last listed, £120 for a 10-week term at South Asian Arts in Leeds, and $415 for a 16-session term at Alif Institute in Atlanta.
+  sources:
+  - label: Encyclopaedia Britannica, Tabla
+    url: https://www.britannica.com/art/tabla
+    checked: '2026-11-13'
+  - label: South Asian Arts (SAA-UK), Tabla classes
+    url: https://www.saa-uk.org/academies/indian-music-academy-north/tabla-classes/
+    checked: '2026-11-13'
+  - label: Harrow Arts, Tabla classes (PRSSV Sangeet College)
+    url: https://harrowarts.com/classes/tabla-classes
+    checked: '2026-11-13'
+  - label: Chhandayan Center for Indian Music, New York classes
+    url: https://chhandayan.org/new-york
+    checked: '2026-11-13'
+  - label: Alif Institute, Tabla classes
+    url: https://www.alifinstitute.org/tabla-classes
+    checked: '2026-11-13'
+  kit:
+  - name: Tabla set
+    why: a pair of drums with ring stands for practice at home
+    url: https://www.amazon.co.uk/s?k=tabla+set
+  - name: Tabla tuning hammer
+    why: for tuning the drums
+    url: https://www.amazon.co.uk/s?k=tabla+hammer
+  related:
+  - learn-the-sitar
+  - learn-the-djembe
+  - learn-the-drums
+  - take-a-music-grade
+- id: learn-the-hammered-dulcimer
+  title: Learn the hammered dulcimer
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The hammered dulcimer is a box of strings you play by bouncing two light hammers off them, and one maker's guide says it is easy to make a pleasant sound from the beginning. Folk-music weeks
+    in the UK and US run courses for complete beginners, and some lend instruments for the week.
+  start:
+  - Join a dulcimer club or society for news of workshops and players near you; the Nonsuch Dulcimer Club covers the UK.
+  - Book a beginners' course that lends instruments, so you can try one before you buy.
+  - Ask a teacher or club what size of instrument to start on before you spend money.
+  links:
+  - label: 'Nonsuch Dulcimer Club (UK), on Making Music'
+    url: https://www.makingmusic.org.uk/group/nonsuch-dulcimer-club
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Halsway Manor: Dulcimers week, May 2027 (Somerset)'
+    url: https://www.halswaymanor.org.uk/event/dulcimers-2027
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Common Ground on the Hill: Beginners Bootcamp, hammered dulcimer'
+    url: https://www.commongroundonthehill.org/classes/hamm-dulc-beg-bootcamp
+    region: us
+    checked: '2026-11-13'
+  - label: 'Dulcimer Players News: US dulcimer club directory'
+    url: https://www.dpnews.com/club-directory
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Hammered dulcimer for beginners: courses and clubs'
+  description: How the hammered dulcimer is played, what beginners learn, and where to find courses, loan instruments and clubs in the UK and US, with costs as listed.
+  detail:
+  - h: What it's really like
+    p:
+    - The instrument sits on a stand with its strings facing up. The strings run in courses, usually pairs tuned to the same note, and you strike them near the bridges with hammers held lightly between
+      thumb and forefinger. Bare wooden hammers give a sharper sound; felt or leather gives a gentler one.
+    - Dusty Strings, a Seattle maker, says you can start at any age with no music theory or previous instrument. Common Ground on the Hill's beginners' week asks for no musical experience or music reading,
+      and covers hammering technique, tuning, finding all the notes, and scales and arpeggios in D, G and A.
+    - Tuning is part of the job. The first full tuning takes a while; with practice it takes under 15 minutes, and often only a few strings need adjusting.
+    - The same maker's guide lists its instruments from about $750 to around $4,500, so a loan instrument on a first course is worth asking for.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Halsway Manor, Somerset, hosted by the Nonsuch Dulcimer Club
+        - 'Dulcimers week, 24 to 28 May 2027: hammered dulcimer introductory course for beginners and improvers; loan instruments available subject to demand'
+        - £240 non-resident; £300 camping; £345 to £470 full board
+      - - Nonsuch Dulcimer Club, UK
+        - Workshops online and in person through the year, an annual residential weekend in the autumn and a quarterly newsletter
+        - Not listed on the page
+      - - Common Ground on the Hill, US
+        - 'Beginners Bootcamp: Week 2, 4 to 9 July 2027, with Mary Lynn Michal and Ken Kolodner; a dulcimer can be provided for the week if you ask'
+        - Tuition not listed on the class page
+      - - Old Town School of Folk Music, Chicago
+        - Private lessons for beginning hammered dulcimer, in eight-week sessions
+        - 'School-wide private lesson rates for a session: $360 for 30-minute lessons ($350 members); $656 for 60 minutes ($636 members)'
+    after: Mary Lynn Michal is listed as a hammered dulcimer tutor at both the Halsway Manor week and Common Ground on the Hill. Halsway asks beginners to request a loan instrument early when booking.
+  faq:
+  - q: Is the hammered dulcimer hard to learn?
+    a: The maker Dusty Strings says it is easy to make a pleasant sound from the beginning and that no music theory or previous instrument is needed. Tuning takes practice.
+  - q: Do I need to read music to play the hammered dulcimer?
+    a: Not to start. Common Ground on the Hill's beginners' week says no music reading is required.
+  - q: What is the difference between a hammered dulcimer and a mountain dulcimer?
+    a: The hammered dulcimer is played by striking the strings with hammers. The mountain dulcimer is fretted and strummed.
+  - q: How much does a hammered dulcimer cost?
+    a: Dusty Strings lists its instruments from about $750 to around $4,500. Some courses, including Halsway Manor and Common Ground on the Hill, lend instruments to beginners.
+  sources:
+  - label: Dusty Strings, Beginner's guide to hammered dulcimers
+    url: https://manufacturing.dustystrings.com/hammered-dulcimers/about-hammered-dulcimers/beginners-guide
+    checked: '2026-11-13'
+  - label: Making Music, Nonsuch Dulcimer Club
+    url: https://www.makingmusic.org.uk/group/nonsuch-dulcimer-club
+    checked: '2026-11-13'
+  - label: Halsway Manor, Dulcimers 2027
+    url: https://www.halswaymanor.org.uk/event/dulcimers-2027
+    checked: '2026-11-13'
+  - label: 'Common Ground on the Hill, Beginners Bootcamp: Hammered Dulcimer'
+    url: https://www.commongroundonthehill.org/classes/hamm-dulc-beg-bootcamp
+    checked: '2026-11-13'
+  - label: Old Town School of Folk Music, Dulcimer
+    url: https://www.oldtownschool.org/classes/adults/dulcimer/
+    checked: '2026-11-13'
+  - label: Dulcimer Players News, Club directory
+    url: https://www.dpnews.com/club-directory
+    checked: '2026-11-13'
+  kit:
+  - name: Hammered dulcimer hammers
+    why: a spare or second pair to try different sounds
+    url: https://www.amazon.co.uk/s?k=hammered+dulcimer+hammers
+  - name: Clip-on chromatic tuner
+    why: for tuning the strings
+    url: https://www.amazon.co.uk/s?k=clip+on+chromatic+tuner
+  - name: Tuning wrench
+    why: for turning the tuning pins
+    url: https://www.amazon.co.uk/s?k=dulcimer+tuning+wrench
+  related:
+  - learn-the-appalachian-dulcimer
+  - go-to-a-folk-dance
+  - learn-the-harp
+  - learn-the-violin
+- id: learn-the-viola-da-gamba
+  title: Learn the viol (viola da gamba)
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The viol is the fretted, bowed string family of Byrd, Dowland and Purcell, held on the knees or between the legs and played in consorts of several sizes. Both the British and American viol
+    societies hire out instruments, and beginners' days and classes let you try one before you commit.
+  start:
+  - Make sure you can read music; the beginners' viol courses below ask for it, though not for string experience.
+  - Book a taster, such as a viol discovery day or an introductory class, where you do not need your own instrument.
+  - Join the Viola da Gamba Society (UK) to hire a viol, or the Viola da Gamba Society of America to rent one and find teachers and local chapters.
+  links:
+  - label: 'Viola da Gamba Society (UK): course notices (may be out of date)'
+    url: https://www.vdgs.org.uk/courses
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Benslow Music: Viol Discovery Day (Hitchin)'
+    url: https://www.benslowmusic.org/courses/viol-discovery-day-3/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Viola da Gamba Society of America: learn to play'
+    url: https://www.vdgsa.org/learn
+    region: us
+    checked: '2026-11-13'
+  - label: 'Viola da Gamba Society of America: rental viols'
+    url: https://www.vdgsa.org/rental-viols
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Learn the viola da gamba: viol lessons, hire and courses'
+  description: How the viol differs from the cello, what beginners need, and where to take a class or hire a viola da gamba in the UK and US, with costs as last listed.
+  detail:
+  - h: What it's really like
+    p:
+    - Viols come in families. The treble is about the size of a violin, the tenor sits between violin and cello, and the bass is about the size of a cello. Most have six strings and gut frets tied around
+      the neck.
+    - All sizes are held on the knees or between the legs, and the bow is usually held underhand. The tuning runs in fourths with a third in the middle, and the back is flat.
+    - Much of the music is for consorts, small groups in which every part is equal. Viols developed in Italy and Spain in the late 15th century, were especially popular in England until the mid-17th century and were revived
+      in the 20th.
+    - Beginners' courses usually ask for music reading rather than string experience. Benslow's Viol Discovery Day needs no string playing but asks that you can read music; the Levine School in Washington
+      asks for fluent sight-reading in at least one clef and some experience of singing or playing.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Benslow Music, Hitchin
+        - Viol Discovery Day, a one-day small-group introduction to history, technique and repertoire; no instrument of your own needed
+        - Not listed on the page
+      - - The Early Music Shop, Saltaire
+        - Viol lessons with Susanna Pell, who has toured and recorded with Fretwork, for beginners and more advanced players
+        - Not listed; contact the shop
+      - - Levine Music, Washington DC
+        - Introduction to Viola da Gamba, Tuesday evenings, sessions from February and April 2027; limited loan viols via the VdGSA
+        - $311 a session
+      - - Viola da Gamba Society of America
+        - Rental viols on a renewable 12-month contract, for members
+        - $300 a year for treble or tenor; $400 for bass; $100 refundable deposit
+      - - VdGSA Conclave, US
+        - Annual week-long gathering on a college campus for all levels; in 2026, a Beginning Viol Program with free tuition for those staying off campus and a free loan viol (past run)
+        - Tuition free off campus in 2026; conference fee plus room and board on campus
+    after: In the UK, the Viola da Gamba Society runs a hire scheme for members through Bridgewood & Neitzert in London, and its Joy Dodson Music Fund helps students pay for viol courses.
+  faq:
+  - q: What is the difference between a viol and a cello?
+    a: The bass viol is about the size of a cello, but it has frets, usually six strings and a different tuning, and the bow is held underhand.
+  - q: Can I learn the viola da gamba without playing another string instrument?
+    a: Yes. Benslow's Viol Discovery Day needs no string experience, but you must be able to read music.
+  - q: Where can I hire a viola da gamba?
+    a: The Viola da Gamba Society runs a hire scheme for members in the UK, and the Viola da Gamba Society of America rents viols to members at $300 a year for treble or tenor and $400 for bass, as last listed.
+  - q: Which size of viol should a beginner start on?
+    a: The Levine School asks renters to tell the instructor whether they want a treble, tenor or bass. Ask your teacher or course which size they need.
+  sources:
+  - label: Viola da Gamba Society, About viols
+    url: https://www.vdgs.org.uk/aboutviols
+    checked: '2026-11-13'
+  - label: Viola da Gamba Society, What we do
+    url: https://vdgs.org.uk/what
+    checked: '2026-11-13'
+  - label: Viola da Gamba Society, Courses and workshops
+    url: https://www.vdgs.org.uk/courses
+    checked: '2026-11-13'
+  - label: Benslow Music, Viol Discovery Day
+    url: https://www.benslowmusic.org/courses/viol-discovery-day-3/
+    checked: '2026-11-13'
+  - label: Benslow Music, Viol Discovery Day (Sam Stadlen)
+    url: https://www.benslowmusic.org/courses/viol-discovery-day-2/
+    checked: '2026-11-13'
+  - label: The Early Music Shop, Tuition at Saltaire
+    url: https://earlymusicshop.com/pages/tuition-at-saltaire
+    checked: '2026-11-13'
+  - label: Levine Music, Introduction to Viola da Gamba
+    url: https://www.levinemusic.org/lessons-and-classes/course-catalog/course/introduction-to-viola-da-gamba/
+    checked: '2026-11-13'
+  - label: VdGSA, Learn
+    url: https://www.vdgsa.org/learn
+    checked: '2026-11-13'
+  - label: VdGSA, Rental viols
+    url: https://www.vdgsa.org/rental-viols
+    checked: '2026-11-13'
+  - label: VdGSA, About Conclave
+    url: https://www.vdgsa.org/about-conclave
+    checked: '2026-11-13'
+  - label: VdGSA, Conclave 2026 programs
+    url: https://www.vdgsa.org/conclave-2026-programs
+    checked: '2026-11-13'
+  kit:
+  - name: Clip-on chromatic tuner
+    why: for tuning six strings
+    url: https://www.amazon.co.uk/s?k=clip+on+chromatic+tuner
+  - name: Folding music stand
+    why: to hold consort parts while you practise
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  related:
+  - learn-the-cello
+  - learn-the-recorder
+  - join-community-orchestra-or-band
+  - learn-to-read-music
+- id: learn-tatting
+  title: Learn tatting
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Tatting makes lace from knots, worked with a small shuttle or a tatting needle and built up into rings, chains and the small loops called picots. The kit fits in a pocket, and one member of a tatting guild in Spokane says you can get into it for 5 dollars.
+  start:
+  - 'Choose a shuttle or a needle to begin with. Some groups work with both, and one needle-tatting class says anyone who knits or crochets can usually learn it.'
+  - Find a class or a group. The Lace Guild keeps lists of UK lace groups and teachers, and its office has full contact details.
+  - Learn the double stitch first, then move on to rings, picots and chains.
+  links:
+  - label: 'The Lace Guild: UK lace group and teacher lists'
+    url: https://www.laceguild.org/group-and-tutor-lists
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Lacis Museum of Lace and Textiles, Berkeley: past tatting classes'
+    url: https://lacismuseum.org/tag/tatting/
+    region: us
+    checked: '2026-11-13'
+  - label: 'Carmel Crafts Guild, California: tatting study group'
+    url: https://carmelcraftsguild.org/study-groups/tatting/
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'How to learn tatting: classes, groups and what you need'
+  description: How tatting works, shuttle or needle, what a beginners' class covers and costs in the UK and US, and where to find a tatting group near you.
+  detail:
+  - h: What you learn
+    p:
+    - Tatting is built from knots. Beginners learn one stitch, the double stitch, and then use it to make rings and chains. A beginners' class at the Lacis Museum in Berkeley says very few stitches must be mastered, and works towards a simple edging of linked rings and picots.
+    - It is small, slow work, and mistakes have to be untied. One member of the Shuttlebirds Tatting Guild in Spokane takes 20 to 30 minutes to make one of her tiny tatted dragons. Another made a doily in about three hours.
+    - The shuttle has a long history. The Irish Lace Guild dates it to the 16th century, and says a second shuttle, or a ball thread, came in 1864 to work a chain.
+    - In the UK, the Ring of Tatters was set up in 1980, according to one of its founder members. The Lace Guild keeps lists of UK lace groups and teachers, ordered by name or by county, and full contact details are available through its office.
+  - h: Ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Lace Guild, UK
+        - Lists of lace groups and teachers, by name or by county; full contact details through the Guild office
+        - Not listed
+      - - Lacis Museum, Berkeley, California
+        - 'Beginning tatting: a 3.5-hour shuttle class (past run)'
+        - $55.00
+      - - Tatter textile library, Brooklyn, New York
+        - Two four-hour Sunday sessions of shuttle tatting, all materials provided (past run)
+        - $250
+      - - Carmel Crafts Guild, California
+        - Weekly tatting study group, in person and on Zoom; needle and shuttle
+        - First visit free, then guild membership
+    after: For the Lacis class you bring small scissors, a tatting shuttle and #3 cordonnet thread; a large-eyed needle helps with finishing off.
+  faq:
+  - q: Is tatting hard to learn?
+    a: It takes patience more than many stitches. Lacis Museum says very few stitches must be mastered, and beginners start with the double stitch before rings and picots; chains follow in a second class.
+  - q: What is the difference between needle tatting and shuttle tatting?
+    a: Shuttle tatting carries the thread on a small shuttle; needle tatting uses a tatting needle. One needle-tatting class says anyone who knits or crochets can usually learn it.
+  - q: What do I need to start tatting?
+    a: A tatting shuttle or needle, cotton thread and small scissors. Some classes include a kit, so check before you buy.
+  - q: Where can I learn tatting in the UK?
+    a: The Lace Guild keeps lists of UK lace groups and teachers, ordered by name or by county, and its office has full contact details.
+  sources:
+  - label: The Lace Guild, Group and teacher lists
+    url: https://www.laceguild.org/group-and-tutor-lists
+    checked: '2026-11-13'
+  - label: Lacis Museum, Beginning Tatting
+    url: https://lacismuseum.org/event/beginning-tatting-2/
+    checked: '2026-11-13'
+  - label: Lacis Museum, tatting classes
+    url: https://lacismuseum.org/tag/tatting/
+    checked: '2026-11-13'
+  - label: Tatter, Tatting workshop
+    url: https://tatter.org/events/tatting/
+    checked: '2026-11-13'
+  - label: Carmel Crafts Guild, Tatting study group
+    url: https://carmelcraftsguild.org/study-groups/tatting/
+    checked: '2026-11-13'
+  - label: Landis Valley Village and Farm Museum, Basic beginning needle tatting
+    url: https://www.landisvalleymuseum.org/event/basic-beginning-needle-tatting-2/
+    checked: '2026-11-13'
+  - label: 'The Spokesman-Review, Knotty fun: Shuttlebirds Tatting Guild''s monthly meetings'
+    url: https://www.spokesman.com/stories/2024/nov/07/knotty-fun-shuttlebirds-tatting-guilds-monthly-mee
+    checked: '2026-11-13'
+  - label: Irish Lace Guild, Tatting
+    url: https://irishlaceguild.com/laces/tatting/
+    checked: '2026-11-13'
+  - label: The Makers directory (Heritage Crafts), About Dr Brenda Rewhorn
+    url: https://themakers.directory/?p=205
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Dr Brenda Rewhorn
+    line: A founder member of the Ring of Tatters, she spent five years on a PhD researching tatting after retiring from teaching maths, and has taught it in Australia, Romania, the US, Germany, Denmark and the UK.
+    title: About Dr Brenda Rewhorn
+    outlet: The Makers directory, Heritage Crafts
+    url: https://themakers.directory/?p=205
+    checked: '2026-11-13'
+  kit:
+  - name: Tatting shuttles
+    why: to hold the thread for shuttle tatting
+    url: https://www.amazon.co.uk/s?k=tatting+shuttle
+  - name: Tatting needle set
+    why: for needle tatting
+    url: https://www.amazon.co.uk/s?k=tatting+needles
+  - name: Cotton tatting thread
+    why: firm cotton thread to practise rings and picots
+    url: https://www.amazon.co.uk/s?k=tatting+thread+cotton
+  related:
+  - learn-lacemaking
+  - learn-to-crochet
+  - learn-embroidery
+  - join-a-knitting-group
+- id: try-plein-air-painting
+  title: Paint outdoors, en plein air
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Painting outdoors from life means working fast while the light changes, and deciding what to leave out. A course takes you to the spots worth painting, shows you how to compose and mix colour on location, and has a plan for bad weather, from studio work to a rescheduled class.
+  start:
+  - 'Pick a course in a medium you already use or want to learn: plein air classes run in watercolour, oils and acrylics.'
+  - Read the kit list before you buy anything. Some courses supply paints and boards; others expect your own portable easel.
+  - Dress for the weather in layers, with a waterproof, a hat and stout covered shoes, and take something to sit on.
+  links:
+  - label: 'Newlyn School of Art, Cornwall: plein air painting in oils'
+    url: https://www.newlynartschool.co.uk/courses/plein-air-painting-in-oils
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Field Studies Council, Flatford Mill: drawing and painting the Constable way'
+    url: https://www.field-studies-council.org/courses-and-experiences/static-courses/drawing-and-painting-the-constable-way/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'West Dean College: oil painting en plein air'
+    url: https://www.westdean.ac.uk/short-courses/d2d36735-oil-painting-en-plein-air
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Minneapolis College of Art and Design: plein air watercolour landscape painting'
+    url: https://www.mcad.edu/academics/continuing-education/courses/plein-air-watercolor-landscape-painting-person-offsite
+    region: us
+    checked: '2026-11-13'
+  - label: 'School of the Art Institute of Chicago: plein air painting'
+    url: https://continuingstudies.saic.edu/product/3698
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Plein air painting courses for beginners: UK and US'
+  description: What painting outdoors from life is like, what plein air courses in the UK and US cost, what to carry, and what happens when it rains.
+  detail:
+  - h: What it's really like
+    p:
+    - West Dean College puts the aim of its oil course simply, to gain confidence in painting outdoors from life. Students choose a subject, build a composition and try to catch light and atmosphere, working through studies towards finishing a piece or two.
+    - Expect to paint in most weathers. West Dean asks students to be ready for all weathers and moves the course into the studio only in extreme conditions. Minneapolis College of Art and Design may reschedule its lakeside class for rain, and warns of stairs, a hill or uneven ground.
+    - Tom Hughes, who teaches the plein air course at Newlyn School of Art, says there is no faster way to develop as a painter than by working on location. His course demonstrates drawing up, blocking in and colour mixing, then takes students by minibus to coast and woodland in West Cornwall.
+    - The Field Studies Council's weekend at Flatford Mill follows John Constable's method of sketching on location and developing the composition back in the studio.
+  - h: Courses and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Newlyn School of Art, Cornwall
+        - Four days in oils with Tom Hughes, all levels; paints, brushes and supports provided
+        - £650.00
+      - - Field Studies Council, Flatford Mill, Suffolk
+        - Friday evening to Sunday, pencil and watercolour on location
+        - £235.00 to £340.00
+      - - West Dean College, West Sussex
+        - Oil painting en plein air with Tushar Sabale, all levels
+        - Not listed on the course page
+      - - Minneapolis College of Art and Design
+        - Saturday mornings in watercolour at Wirth Lake (past run)
+        - $149.50, including a $10 facilities fee
+      - - School of the Art Institute of Chicago
+        - Sunday mornings in acrylics, oils or watercolour, for beginners (past run)
+        - $675.00
+    after: 'What to carry, from the Newlyn kit list: old clothes, sturdy shoes, a hat, warm and waterproof clothes, something to sit on, a packed lunch, a water bottle and a travel mug. West Dean''s oil course adds a portable easel or pochade box, rags, a waste bag, and spring clamps and binder clips. MCAD tells students to budget about $125 to $175 for supplies on top of the fee.'
+  faq:
+  - q: What does en plein air mean?
+    a: Painting outdoors, from life. West Dean College describes its course as painting 'en plein air', that is, outdoors from life.
+  - q: Do I need experience to do a plein air course?
+    a: Not always. The Newlyn course is for all levels including beginners, and the SAIC class is designed for people with no outdoor painting experience, though basic drawing helps.
+  - q: What happens on a plein air course if it rains?
+    a: It depends on the course. West Dean moves into the studio only in extreme weather, and MCAD may reschedule its class for rain.
+  - q: What should I take for plein air painting?
+    a: Your paints and brushes unless they are supplied, something to sit on or a portable easel, layers and a waterproof, a hat, sturdy shoes, lunch and water.
+  sources:
+  - label: Newlyn School of Art, Plein Air Painting in Oils
+    url: https://www.newlynartschool.co.uk/courses/plein-air-painting-in-oils
+    checked: '2026-11-13'
+  - label: Field Studies Council, Drawing and Painting the Constable Way
+    url: https://www.field-studies-council.org/courses-and-experiences/static-courses/drawing-and-painting-the-constable-way/
+    checked: '2026-11-13'
+  - label: West Dean College, Oil painting 'en plein air' with Tushar Sabale
+    url: https://www.westdean.ac.uk/short-courses/d2d36735-oil-painting-en-plein-air
+    checked: '2026-11-13'
+  - label: West Dean College, Watercolour painting 'en plein air' with Brian Smith
+    url: https://www.westdean.ac.uk/short-courses/sss39667-watercolour-painting-en-plein-air
+    checked: '2026-11-13'
+  - label: Minneapolis College of Art and Design, Plein Air Watercolor Landscape Painting
+    url: https://www.mcad.edu/academics/continuing-education/courses/plein-air-watercolor-landscape-painting-person-offsite
+    checked: '2026-11-13'
+  - label: School of the Art Institute of Chicago, Plein Air Painting
+    url: https://continuingstudies.saic.edu/product/3698
+    checked: '2026-11-13'
+  - label: 'Henley Standard, Reaching final of TV show has made me better artist'
+    url: https://www.henleystandard.co.uk/news/home/159969/reaching-final-of-tv-show-has-made-me-better-artist.html
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Shelagh Casebourne, from Wargrave
+    line: An amateur oil painter who came back to art after a career in publishing, she reached the final of Sky Arts' Landscape Artist of the Year, painting on location at Trinity Buoy Wharf on the Thames in four hours.
+    title: Reaching final of TV show has made me better artist
+    outlet: Henley Standard
+    url: https://www.henleystandard.co.uk/news/home/159969/reaching-final-of-tv-show-has-made-me-better-artist.html
+    checked: '2026-11-13'
+  kit:
+  - name: Portable easel or pochade box
+    why: to hold your board or paper while you paint on location
+    url: https://www.amazon.co.uk/s?k=plein+air+easel+pochade+box
+  - name: Folding stool
+    why: something to sit on outdoors
+    url: https://www.amazon.co.uk/s?k=folding+artist+stool
+  - name: Travel watercolour set
+    why: a compact paint box for working outside
+    url: https://www.amazon.co.uk/s?k=travel+watercolour+set
+  related:
+  - paint-in-watercolour
+  - join-an-urban-sketchers-meet
+  - learn-oil-painting
+  - learn-to-paint-with-pastels
+- id: learn-shibori
+  title: Learn shibori dyeing
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Shibori, a Japanese word, is now the accepted umbrella term for stitching, binding, wrapping or clamping cloth so that dye cannot reach parts of it, and you only see the pattern when you open the cloth after dyeing. The courses listed here all dye in indigo, so you come away with blue-and-white fabric you patterned yourself.
+  start:
+  - Book a beginners' day or weekend workshop, and check whether fabric and dye are in the fee or charged as a materials fee.
+  - 'Take an apron, long rubber gloves, small scissors, a seam ripper and hand-sewing needles: one US studio asks for all of these.'
+  - If you are asked to bring your own fabric, choose plain natural cotton or linen and pre-wash it without fabric softener.
+  links:
+  - label: 'Jane Callender: shibori workshops in Norfolk'
+    url: https://janecallender.com/learning/norfolk-shibori-workshops/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'West Dean College: shibori techniques for textiles'
+    url: https://www.westdean.ac.uk/short-courses/sss39886-shibori-techniques-for-textiles
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Aizome Studio at Aya Fiber Studio, Stuart, Florida: shibori foundations'
+    url: https://aizomestudiosc.corsizio.com/event/6a81cdd88af8f0ab1bb22dea
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Shibori indigo dyeing workshops: what you learn and cost'
+  description: What shibori is, the stitching, binding and clamping techniques a beginners' workshop teaches, what to bring, and what courses cost in the UK and US.
+  detail:
+  - h: What you learn
+    p:
+    - Shibori works by compression. Cloth is folded, bound or otherwise squeezed before it goes into the dye, and the compressed parts resist it. The traditional techniques are stitch resist, wrapping the cloth around a pole, binding and capping, and clamping between boards.
+    - Each has a Japanese name you will meet on courses. West Dean College's summer week covers mokume, makiage, itajime board clamping and arashi pole wrapping, among others, and asks for some hand-sewing skill.
+    - A two-day course by Aizome Studio at Aya Fiber Studio in Florida has students prepare an indigo vat on the first day and use it over both days, learning how folding, binding and tension change the pattern.
+    - Beginners' days are gentler. A one-day workshop at the Oxfordshire Museum used simple sewn shapes on an A4 piece of fabric, with free-form work rather than traditional techniques.
+  - h: Workshops and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Oxfordshire Museum, Woodstock
+        - One-day beginners' workshop with textile artist Emi; lunch and sashiko needles included (past run)
+        - £108
+      - - Design Nation, booked through De Montfort University
+        - Two days of indigo shibori, including stitched (nui) shibori (past run)
+        - £300.00
+      - - Jane Callender, Blue Leaf studio, Norfolk
+        - Five-day summer school, beginners and experienced, six or seven students (past run; 2025 dates)
+        - Not listed; ask
+      - - Historic Yellow Springs, Chester Springs, Pennsylvania
+        - Three-and-a-half-hour beginners' class in indigo (past run)
+        - $95, plus a $35 materials fee
+      - - Aizome Studio at Aya Fiber Studio, Stuart, Florida
+        - Two-day intensive, beginners and returning students
+        - $320, plus a $35 material fee
+    after: West Dean notes that its shibori course may not suit people with nut allergies or sensitivities to dye plants. If that applies to you, ask before you book.
+  faq:
+  - q: What is shibori?
+    a: A Japanese word that is now the accepted umbrella term for resist-dyeing techniques in which cloth is stitched, bound, wrapped or clamped before dyeing, so that the compressed parts stay pale.
+  - q: Is shibori the same as tie-dye?
+    a: Shibori has become the accepted umbrella term for the skills often still called tie and dye, but it covers stitching, pole wrapping and board clamping as well as tying.
+  - q: Do I need sewing skills for shibori?
+    a: For stitched shibori, a little. West Dean asks for some hand-sewing skill and dexterity with thread; simpler beginners' days use basic sewn shapes.
+  - q: What should I bring to a shibori workshop?
+    a: Usually an apron, long rubber gloves, small scissors and a seam ripper. Some courses, such as West Dean, also ask you to bring your own pre-washed fabric and thread.
+  sources:
+  - label: Jane Callender, About Shibori
+    url: https://janecallender.com/education/about-shibori/
+    checked: '2026-11-13'
+  - label: Jane Callender, Norfolk Workshops
+    url: https://janecallender.com/learning/norfolk-shibori-workshops/
+    checked: '2026-11-13'
+  - label: West Dean College, Shibori techniques for textiles with Rob Jones
+    url: https://www.westdean.ac.uk/short-courses/sss39886-shibori-techniques-for-textiles
+    checked: '2026-11-13'
+  - label: Oxfordshire County Council, Japanese Shibori Dye Workshop for Beginners
+    url: https://www.oxfordshire.gov.uk/node/11028
+    checked: '2026-11-13'
+  - label: De Montfort University store, Design Nation Indigo Shibori Dyeing
+    url: https://store.dmu.ac.uk/product-catalogue/faculty-of-art-design-humanities/short-courses/design-nation-indigo-shibori-dyeing-27-28-august-2026
+    checked: '2026-11-13'
+  - label: Historic Yellow Springs, Shibori Dyeing for Beginners
+    url: https://yellowsprings.coursestorm.com/course/shibori-dyeing-for-beginners1?page=4
+    checked: '2026-11-13'
+  - label: 'Aya Fiber Studio, Shibori Foundations: Cloth, Indigo and Control'
+    url: https://aizomestudiosc.corsizio.com/event/6a81cdd88af8f0ab1bb22dea
+    checked: '2026-11-13'
+  kit:
+  - name: Long rubber gloves
+    why: to keep indigo off your hands and arms
+    url: https://www.amazon.co.uk/s?k=long+rubber+gloves+dyeing
+  - name: Indigo dye kit
+    why: to set up a vat and practise at home
+    url: https://www.amazon.co.uk/s?k=indigo+dye+kit
+  - name: Seam ripper
+    why: to unpick the stitches after dyeing
+    url: https://www.amazon.co.uk/s?k=seam+ripper
+  related:
+  - learn-natural-dyeing
+  - learn-batik
+  - learn-sashiko
+  - learn-silk-painting
+- id: try-rug-tufting
+  title: Make a rug with a tufting gun
+  category: think
+  kind: experience
+  effort: moderate
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: An electric tufting gun lets you turn a drawing into a rug in a single session, with the yarn standing up from a cloth stretched on a frame. Beginners' workshops supply the gun, frame, cloth and yarn, and you end up with a small rug or wall hanging of your own design.
+  start:
+  - Book a beginners' tufting workshop at a craft studio or makerspace; most include the gun, frame, cloth and yarn.
+  - Have a design in mind. First pieces are small, around 40 x 40 cm (16 x 16 in) at one London studio.
+  - Wear comfortable non-slip shoes and clothes you don't mind getting fluff on, and ask whether ear protection is provided.
+  links:
+  - label: 'Cheeky Studio: rug tufting workshop, Hackney Wick (London)'
+    url: https://craftcourses.com/courses/regular-rug-tufting-workshop
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Dovecot Studios: rug tufting (Edinburgh)'
+    url: https://dovecotstudios.com/whats-on/rug-tufting
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Tuft the World: Drink and Tuft beginner workshop (Philadelphia)'
+    url: https://reach.dog/shop/tuft-the-world/products/drink-and-tuft
+    region: us
+    checked: '2026-11-13'
+  - label: 'MakeHaven: hand-tufted rug beginner workshop (New Haven, Connecticut)'
+    url: https://www.makehaven.org/civicrm/event/info?id=782
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Rug tufting workshops for beginners: what to expect'
+  description: What happens at a beginners' rug tufting workshop, what you make, what it costs in the UK and US, and how to look after your ears and lungs.
+  detail:
+  - h: What a session is like
+    p:
+    - Tufted rugs have cut threads that stand up from a base cloth. On a beginners' course you stretch the backing cloth on a frame, sketch your design onto it, thread the tufting gun and fill in the design, then trim the pile. Tiernan Alexander of Tuft the World told Next Avenue that you can learn it in an afternoon.
+    - The back then has to be glued and covered. At some studios you do this yourself; at others the team finishes the piece and you collect it later. Cheeky Studio in London finishes rugs for collection or delivery, typically within five to seven days. Craft Alliance glues and backs students' rugs for collection a week later, and MakeHaven in Connecticut adds a short evening session for the backing.
+    - The gun is noisy and the yarn sheds fibres. Tuft the World recommends earplugs or noise-cancelling headphones, and a mask or an air purifier while you tuft. The machines can be heavy, so take breaks to stretch if your wrists, feet or back start to ache.
+    - Buying your own kit is a bigger step. The basics are a tufting machine, cloth, a frame and yarn, and one rug maker told Next Avenue that the start-up costs are higher than for other textile crafts.
+  - h: Where to learn, and what it costs
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Cheeky Studio, Hackney Wick, London
+        - Three hours; a rug of 40 x 40 cm (16 x 16 in), finished by the studio
+        - £150
+      - - Dovecot Studios, Edinburgh (past run)
+        - Beginners' experience day with artist Molly Kent, 10am to 4.30pm; three places; equipment and materials included; contemporary rug sample
+        - £165
+      - - Tuft the World, Philadelphia
+        - 'Drink and Tuft: Tuesday or Thursday evenings, 5pm to 9pm; piece of 18 x 18 in (46 x 46 cm); up to 10 people; supplies, snacks and drinks included'
+        - $100
+      - - MakeHaven, New Haven, Connecticut (past run)
+        - Sunday day session plus a Monday evening for the backing; a gun and frame for your sole use; yarn and cloth included; 18 and over
+        - $157, or $134 for members
+      - - Craft Alliance (past run)
+        - Three-hour class; gun use, stretching the cloth, design and trimming; all materials included; 16 and over
+        - $69, or $59 for members, plus a $25 studio fee
+    after: MakeHaven offers a need-based price reduction on application. Dovecot asks anyone allergic to latex to get in touch, because liquid latex is used to finish the piece.
+  faq:
+  - q: Is rug tufting hard to learn?
+    a: Not to get started. Workshops are aimed at beginners, and Tiernan Alexander of Tuft the World told Next Avenue that you can learn it in an afternoon.
+  - q: Is a tufting gun loud?
+    a: Yes, loud enough that Tuft the World recommends tufting with earplugs or noise-cancelling headphones.
+  - q: How much is a rug tufting workshop?
+    a: Listed prices range from $100 at Tuft the World in Philadelphia to £150 at Cheeky Studio in London and £165 for a past full-day session at Dovecot Studios in Edinburgh. Materials are included at all three.
+  - q: Do I take my rug home on the day?
+    a: It depends on the studio. Tuft the World participants take their work home after the class; Cheeky Studio finishes the rug and has it ready in five to seven days.
+  safety: 'Tufting guns are loud. Tuft the World recommends earplugs or noise-cancelling headphones. Shed yarn fibres can be breathed in. Wear a mask or run an air purifier while you tuft. Apply backing adhesive in a well-ventilated room, wearing a mask and gloves, and follow the label. Some studios finish pieces with liquid latex, so mention a latex allergy when you book.'
+  sources:
+  - label: Craft Courses, Cheeky Studio regular rug tufting workshop
+    url: https://craftcourses.com/courses/regular-rug-tufting-workshop
+    checked: '2026-11-13'
+  - label: Dovecot Studios, Rug tufting
+    url: https://dovecotstudios.com/whats-on/rug-tufting
+    checked: '2026-11-13'
+  - label: Dovecot Studios shop, Rug Tufting Experience Day
+    url: https://shop.dovecotstudios.com/products/rug-tufting-experience-day-4
+    checked: '2026-11-13'
+  - label: 'Tuft the World, Drink and Tuft: Beginner tufting workshop'
+    url: https://reach.dog/shop/tuft-the-world/products/drink-and-tuft
+    checked: '2026-11-13'
+  - label: 'MakeHaven, Create Your Own Hand-Tufted Rug: Beginner Workshop'
+    url: https://www.makehaven.org/civicrm/event/info?id=782
+    checked: '2026-11-13'
+  - label: Craft Alliance, Making a Tufted Rug
+    url: https://www.craftalliance.org/?p=12511
+    checked: '2026-11-13'
+  - label: Tuft the World, Safety precautions while tufting
+    url: https://tufttheworld.gorgias.help/en-US/safety-precautions-while-tufting-21191
+    checked: '2026-11-13'
+  - label: 'Next Avenue, Rug tufting: an old craft that''s new again'
+    url: https://www.nextavenue.org/rug-tufting-an-old-craft-thats-new-again/
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: AJ Peterson, Los Angeles
+    line: Bought a tufting machine early in the pandemic while working as a tech designer, then founded the rug business Magic Carpets Co.
+    title: 'Rug tufting: an old craft that''s new again'
+    outlet: Next Avenue
+    url: https://www.nextavenue.org/rug-tufting-an-old-craft-thats-new-again/
+    checked: '2026-11-13'
+  kit:
+  - name: Ear defenders
+    why: for the noise of the tufting gun
+    url: https://www.amazon.co.uk/s?k=ear+defenders
+  - name: Tufting yarn
+    why: acrylic or wool yarn for practice pieces at home or in class
+    url: https://www.amazon.co.uk/s?k=tufting+yarn
+  - name: Primary tufting cloth
+    why: the backing fabric you stretch on the frame and tuft into
+    url: https://www.amazon.co.uk/s?k=primary+tufting+cloth
+  related:
+  - make-a-rag-rug
+  - learn-to-weave-on-a-loom
+  - learn-embroidery
+  - learn-a-heritage-craft
+- id: try-monoprinting
+  title: Try monoprinting
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A monoprint is a one-off print, closer to a painting than to a run of copies, made by inking a smooth plate and pressing paper onto it. You can learn it in a single workshop, and with a gel plate you need no press at all.
+  start:
+  - Book a monoprinting or gel-plate taster at a print studio or adult-education college; most include inks and paper.
+  - Wear old clothes and closed-toe shoes, and bring an apron.
+  - Take along sketches or photographs to work from, and thin, flat objects such as leaves, lace or threads to print with.
+  links:
+  - label: 'City Lit: monoprinting workshop (London)'
+    url: https://www.citylit.ac.uk/courses/monoprinting-workshop
+    region: uk
+    checked: '2026-11-13'
+  - label: 'City Lit: printmaking at home, printing without a press (online)'
+    url: https://www.citylit.ac.uk/courses/printmaking-at-home-printing-without-a-press
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Creative Arts Workshop: the very basics of monotype printmaking, past workshop (New Haven, Connecticut)'
+    url: https://creativeartsworkshop.org/courses/no-term/the-very-basics-of-monotype-printmaking/
+    region: us
+    checked: '2026-11-13'
+  - label: 'Minneapolis College of Art and Design: introduction to monotype printmaking'
+    url: https://mcad.edu/academics/continuing-education/courses/one-kind-introduction-monotype-printmaking-person-1
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Monoprinting and gelli plate classes: a beginner''s guide'
+  description: What monoprinting and gel-plate printing involve, what a beginners' class teaches, what it costs in the UK and US, and what to bring along.
+  detail:
+  - h: What you learn
+    p:
+    - Most classes teach two basic methods. In the additive method you build up an image by adding ink to the plate; in the subtractive method you wipe ink away to make the image. Layering prints on top of each other gives textured, blended effects.
+    - In a print studio you usually paint and draw with ink on a sheet of Plexiglas, using stencils and found objects too, and take the print on a press or by hand. Gel-plate (or gelli) printing is a form of monoprinting without a press. You build layers of colour and texture on a gel plate with inks and mark-making tools, and use thin objects such as leaves, lace and threads for texture.
+    - It is messy work. Classes ask you to wear old clothes and closed-toe shoes and to bring an apron or paper towels, and one US college asks students to tie long hair back.
+    - You can carry on at home. City Lit's online course teaches monoprinting without a press using a hard rubber roller, printing ink, ordinary copy paper and a sheet of plastic or acetate to roll the ink on.
+  - h: Where to learn, and what it costs
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Monoprinting workshop; three daytime sessions over three weeks; press and hand printing; basic inks and paper included
+        - £249, or £199 senior and £162 concession
+      - - City Lit, online
+        - 'Printing without a press: five live online sessions; you supply the roller, ink and paper'
+        - £229, or £183 senior and £149 concession
+      - - GPC, Griffin Mill, Stroud, Gloucestershire (past run)
+        - Six-hour gel-plate printing day on paper or fabric; basic materials, ink and paper provided
+        - From £85
+      - - The Art House (past run)
+        - Three-hour gelli printing taster; A4 monoprints to take home; all materials provided
+        - £45
+      - - Creative Arts Workshop, New Haven, Connecticut (past run)
+        - One four-hour session; oil-based inks on Plexiglas, printed through a press; up to eight people
+        - $124, including a $10 materials fee
+      - - Minneapolis College of Art and Design (past run)
+        - Evening class; water-based inks on Plexiglas with stencils and found objects; 18 and over
+        - $243.50, including $52 material and $52 facility fees
+      - - School of the Art Institute of Chicago (past run)
+        - Five-day intensive in monoprint and monotype, with collagraph and chine collé
+        - $810
+    after: The Art House taster sends people home with instructions for making their own gel plate. Minneapolis College of Art and Design is for over-18s, and Creative Arts Workshop suggests 18 and over.
+  faq:
+  - q: What is the difference between a monoprint and other prints?
+    a: A monoprint is a one-off print rather than one of a set of copies. City Lit describes it as similar to a painting.
+  - q: Do I need a printing press for monoprinting?
+    a: No. Gel-plate printing needs no press, and City Lit runs an online course in monoprinting at home with a roller, ink and ordinary paper.
+  - q: What is gelli printing?
+    a: It is monoprinting on a gel plate, without a press. You build up layers of ink on the plate and add texture with mark-making tools or objects such as leaves and lace.
+  - q: How much does a monoprinting class cost?
+    a: Listed prices run from £45 for a three-hour gelli taster to £249 for three day-long sessions at City Lit in London. In the US, a four-hour class at Creative Arts Workshop in New Haven was $124 including materials.
+  sources:
+  - label: City Lit, Monoprinting workshop
+    url: https://www.citylit.ac.uk/courses/monoprinting-workshop
+    checked: '2026-11-13'
+  - label: 'City Lit, Printmaking at home: printing without a press'
+    url: https://www.citylit.ac.uk/courses/printmaking-at-home-printing-without-a-press
+    checked: '2026-11-13'
+  - label: GPC, Gelliplate Printing with Jeanette Newell
+    url: https://gpc.corsizio.com/event/6a310b93138765a4233c7a26
+    checked: '2026-11-13'
+  - label: The Art House, Gelli Printing Taster
+    url: https://the-arthouse.org.uk/?p=31525
+    checked: '2026-11-13'
+  - label: Creative Arts Workshop, The Very Basics of Monotype Printmaking
+    url: https://creativeartsworkshop.org/courses/no-term/the-very-basics-of-monotype-printmaking/
+    checked: '2026-11-13'
+  - label: Creative Arts Workshop, Introduction to Monotype/Monoprint Printmaking
+    url: https://creativeartsworkshop.org/courses/no-term/introduction-to-monotype-monoprint-printmaking/
+    checked: '2026-11-13'
+  - label: 'Minneapolis College of Art and Design, One of a Kind: Introduction to Monotype Printmaking'
+    url: https://mcad.edu/academics/continuing-education/courses/one-kind-introduction-monotype-printmaking-person-1
+    checked: '2026-11-13'
+  - label: School of the Art Institute of Chicago, Intensive, Exploring Monoprint
+    url: https://continuingstudies.saic.edu/product/3720
+    checked: '2026-11-13'
+  kit:
+  - name: Gel printing plate
+    why: a reusable plate for monoprinting without a press
+    url: https://www.amazon.co.uk/s?k=gel+printing+plate
+  - name: Rubber brayer roller
+    why: for rolling ink thinly onto the plate
+    url: https://www.amazon.co.uk/s?k=rubber+brayer+roller+printmaking
+  - name: Water-based block printing ink
+    why: printing ink that cleans up with water
+    url: https://www.amazon.co.uk/s?k=water+based+block+printing+ink
+  related:
+  - make-a-linocut-print
+  - try-etching
+  - try-screen-printing
+  - try-cyanotype
+- id: learn-smocking
+  title: Learn smocking
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Smocking is centuries-old needlework in which embroidery stitches hold gathered fabric in pleats while letting it stretch. A three-hour beginners' class teaches you to pleat fabric and work the first stitches, and from there you can add smocked panels to clothes you make.
+  start:
+  - Get comfortable with basic hand sewing first; Working Cloth's beginners' class is aimed at people who already are.
+  - Book a beginners' workshop, or in the US contact a local chapter of the Smocking Arts Guild of America.
+  - Bring a little non-stretch cotton or linen. Clothkits suggests a small geometric print, such as spots, stripes or checks, as a guide for your stitches.
+  links:
+  - label: 'Working Cloth: introduction to hand smocking, The New Craft House (London)'
+    url: https://shop.thenewcrafthouse.com/products/introduction-to-hand-smocking-with-working-cloth
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Clothkits: hand smocking workshop for beginners (Chichester)'
+    url: https://www.clothkits.co.uk/products/smock-on-hand-smocking-workshop-for-beginners-chichester-sewing-courses
+    region: uk
+    checked: '2026-11-13'
+  - label: 'West Dean College: gathers, pleats and smocking'
+    url: https://westdean.ac.uk/short-courses/d4d36949-architecture-of-fabric-gathers-pleats-and-smocking
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Smocking Arts Guild of America: find a chapter'
+    url: https://www.smocking.org/chapters.php
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Learn smocking: hand smocking classes for beginners'
+  description: What hand smocking is, how pleating and the stitches work, where to take a beginners' class in the UK and US, and what it costs.
+  detail:
+  - h: What you learn
+    p:
+    - The Smocking Arts Guild of America describes smocking as surface embroidery stitches worked over gathered fabric. The stitches hold each pleat in place but leave the gathered area elastic, and true smocking stitches are worked only by hand.
+    - There are two main families. In English smocking the fabric is first closely and evenly pleated, then stitched in geometric designs of lines, waves and diamonds, or in figures built from closely packed cable stitches. In direct smocking, which includes American, counterchange and Italian smocking, the gathering and the stitches happen together.
+    - Pleating is now usually done on a hand-cranked pleater, which pushes the fabric onto threaded needles to make a grid of pleats to embroider over. Each stitch catches the top third of neighbouring pleats. Lightweight woven fabrics such as cotton voile, chambray or rayon challis (batiste is usual for pleating) work well, and a light fabric shrinks to about half its original width once smocked.
+    - It needs patience. A first class usually produces a sample rather than a garment; Working Cloth's London introduction covers preparing and pleating the fabric, several stitches, and tips on using smocking in clothes you make.
+  - h: Where to learn, and what it costs
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Working Cloth at The New Craft House, Hackney, London
+        - Three-hour introduction; pleating and several stitches on a sample; tools and thread included; bring two fabric scraps
+        - £75
+      - - Clothkits, Chichester
+        - Half-day beginners' workshop with Maria Pulley; up to six people; bring your own fabric (no dates currently listed)
+        - £60
+      - - Smocking Arts Guild of America, Cedarburg Library, Wisconsin (past run)
+        - Beginners' class; kit of pleated fabric, two colours of embroidery floss, a needle, a glass votive holder and instructions
+        - $5 kit fee
+      - - Smocking Arts Guild of America membership
+        - Events, seminars, conventions and the quarterly SAGANews magazine
+        - $45 a year in the US; $10 more for international members
+    after: For more depth, West Dean College runs a four-day course with Lauren MacDonald covering Canadian and English smocking alongside ruching, pleating and fabric origami; its course page did not list a fee. SAGA also lists online classes, seminars and correspondence courses, and has local chapters.
+  faq:
+  - q: What is smocking?
+    a: Embroidery stitches worked over gathered fabric. They hold each pleat in place while leaving the fabric able to stretch.
+  - q: Do I need a smocking pleater?
+    a: Not for a first class. Pleaters are what most smockers now use, but hand pleating was the norm before the pleater was invented in the 1940s, and beginners' classes provide the tools or ready-pleated fabric.
+  - q: What is the difference between English and direct smocking?
+    a: English smocking is stitched over fabric that has already been evenly pleated. In direct smocking, such as American or counterchange smocking, the gathering and stitching are done at the same time.
+  - q: What fabric is best for smocking?
+    a: Lightweight woven fabric such as cotton voile, chambray or rayon challis (batiste is usual for pleating). Working Cloth asks beginners to bring non-stretch cotton or linen.
+  sources:
+  - label: Smocking Arts Guild of America, Smocking 101
+    url: https://www.smocking.org/smocking_101.php
+    checked: '2026-11-13'
+  - label: Smocking Arts Guild of America, About SAGA
+    url: https://www.smocking.org/about_saga.php
+    checked: '2026-11-13'
+  - label: Smocking Arts Guild of America, Join SAGA
+    url: https://www.smocking.org/join_saga.php
+    checked: '2026-11-13'
+  - label: Smocking Arts Guild of America, Beginner Smocking Class (Cedarburg Library)
+    url: https://www.zeffy.com/en-US/ticketing/beginner-smocking-class-3-28--26
+    checked: '2026-11-13'
+  - label: 'American Sewing Guild, Smocking: The Art of Elegant Fabric Shaping'
+    url: https://www.asg.org/smocking-the-art-of-elegant-fabric-shaping/
+    checked: '2026-11-13'
+  - label: The New Craft House shop, Introduction to Hand Smocking with Working Cloth
+    url: https://shop.thenewcrafthouse.com/products/introduction-to-hand-smocking-with-working-cloth
+    checked: '2026-11-13'
+  - label: Clothkits, Smock on! Hand smocking workshop for beginners
+    url: https://www.clothkits.co.uk/products/smock-on-hand-smocking-workshop-for-beginners-chichester-sewing-courses
+    checked: '2026-11-13'
+  - label: Clothkits, Smock on! Hand smocking workshop for beginners (course details)
+    url: https://www.clothkits.co.uk/products/smock-on-hand-smocking-workshop-for-beginners-chichester-sewing-courses-1
+    checked: '2026-11-13'
+  - label: 'West Dean College, The architecture of fabric: 3D textures with gathers, pleats and smocking'
+    url: https://westdean.ac.uk/short-courses/d4d36949-architecture-of-fabric-gathers-pleats-and-smocking
+    checked: '2026-11-13'
+  - label: The Sun Papers, 'It's a labor of love'
+    url: https://thesunpapers.com/2019/05/10/its-a-labor-of-love/
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Regina Hyatt, Holly Berries chapter of the Smocking Arts Guild of America
+    line: Finished her first smocking project, a dress for her new granddaughter, having sewn since she was young.
+    title: '''It''s a labor of love'''
+    outlet: The Sun Papers
+    url: https://thesunpapers.com/2019/05/10/its-a-labor-of-love/
+    checked: '2026-11-13'
+  kit:
+  - name: Stranded embroidery cotton
+    why: embroidery floss for working the smocking stitches
+    url: https://www.amazon.co.uk/s?k=stranded+embroidery+cotton
+  - name: Cotton batiste fabric
+    why: lightweight woven fabric for smocking practice
+    url: https://www.amazon.co.uk/s?k=cotton+batiste+fabric
+  - name: Embroidery needles
+    why: for working the stitches over the pleats
+    url: https://www.amazon.co.uk/s?k=embroidery+needles
+  related:
+  - learn-embroidery
+  - learn-to-sew-your-own-clothes
+  - make-a-patchwork-quilt
+  - learn-a-heritage-craft
+- id: try-paragliding
+  title: Try paragliding
+  category: move
+  kind: skill
+  effort: moderate
+  cost: high
+  time: weeks
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: A paraglider is a fabric wing that is laid out on a hillside, inflated and steered with brake lines. You can try it on a tandem flight with an instructor, spend a taster day making low hops down a gentle slope, or train over about ten flying days to the BHPA's Club Pilot rating.
+  start:
+  - Choose between a tandem flight, a one-day taster or a full course, and find a BHPA registered school in the UK or a USHPA school or instructor in the US.
+  - Check the school's weight and age limits, what is included and how it handles days lost to weather, since every flight depends on the wind.
+  - Wear flexible walking boots with ankle support and no lacing hooks, and allow spare days in your diary.
+  links:
+  - label: 'BHPA: learning to paraglide'
+    url: https://www.bhpa.co.uk/sport/pg/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'BHPA: learn to fly, age, fitness and insurance'
+    url: https://bhpa.co.uk/sport/learn_to_fly
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Airways Airsports: paragliding lessons, Darley Moor Airfield, Derbyshire'
+    url: https://www.airways-airsports.com/paragliding-lessons/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Flying Frenzy, Dorset: paragliding courses and tandem flights'
+    url: https://flyingfrenzy.com/courses.htm
+    region: uk
+    checked: '2026-11-13'
+  - label: 'USHPA: how do I learn to fly?'
+    url: https://ushpa.org/page/how-do-i-learn-to-fly
+    region: us
+    checked: '2026-11-13'
+  - label: 'Torrey Pines Gliderport, La Jolla, California: tandem paragliding'
+    url: https://www.flytorrey.com/?p=24
+    region: us
+    checked: '2026-11-13'
+  safety: The BHPA says initial instruction should always be at a BHPA registered school, and that carefully structured professional training is essential if serious accidents are to be avoided. No medical is required, but you should be in good health; if you have a condition such as epilepsy or a heart condition, the BHPA advises asking your doctor first.
+  seo_title: 'Paragliding for beginners: tandem, taster day or course'
+  description: How to start paragliding in the UK and US, from a tandem flight or taster day to the BHPA Club Pilot course, with real school prices and weight limits.
+  detail:
+  - h: What you learn
+    p:
+    - Training starts on the ground. Instructors show you how the canopy is laid out, inflated and steered with its brake lines, then you make short hops down a gentle slope before moving on to gentle turns and higher, longer flights. Some UK schools, such as Airways Airsports in Derbyshire, train on an airfield with a winch instead, starting a few feet off the ground and working up to flights of up to 500 metres (about 1,640 ft), with five or six flights a day.
+    - In the UK the first rating is Elementary Pilot, which Flying Frenzy in Dorset says usually takes four days and ends with a 25-question theory exam. Club Pilot follows, with ridge soaring, accurate landings and further exams, and it is the rating you need to fly with a club rather than a school. The BHPA says it normally takes around ten days of flyable weather to reach Club Pilot. In the US, USHPA's training programme includes ground school, theory and witnessed tasks such as consecutive spot landings within 100 feet (about 30 m) of a target, and USHPA calls kiting, handling the wing on the ground, the most important building block.
+    - There is no real upper age limit provided you are reasonably fit, the BHPA says, though by law you must be 14 to fly solo. Pilots should be fit and active, with good co-ordination; no flying experience is needed.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - BHPA registered schools (BHPA guide prices)
+        - One-day taster; or a full course to Club Pilot; or pay by the day
+        - Taster usually around £150; full course around £1,200 to £1,600; around £150 a day
+      - - Flying Frenzy, Dorset
+        - Tandem flight, aiming for at least a quarter of an hour in the air; passengers 45 to 120 kg (7 to 19 st)
+        - £160
+      - - Flying Frenzy, Dorset
+        - Taster day; Elementary Pilot, usually four days; Club Pilot, usually around six days
+        - Taster £190; Elementary Pilot £700; Club Pilot £900
+      - - Airways Airsports, Darley Moor Airfield, Derbyshire
+        - Winch-launched taster day; Elementary Pilot, a further four days; Club Pilot
+        - Taster £199; Elementary Pilot £950; Club Pilot £950; both together £1,750 if bought straight after the taster
+      - - Torrey Pines Gliderport, La Jolla, California
+        - Tandem flight, generally 20 to 25 minutes; first come, first served; no weight limit as long as there is enough wind
+        - $200, or $190 cash (check on the day)
+      - - Paragliding San Francisco
+        - USHPA P2 course, typically 10 to 15 days with at least 35 flights; equipment provided for the first 10 days
+        - $2,200; or $200 a lesson for the first 10 lessons
+    after: Kit is extra once you go beyond a taster. The BHPA lists a harness, helmet, emergency parachute, flying suit and boots, and Flying Frenzy asks Elementary Pilot students to buy a helmet. For a taster day, the BHPA recommends its one-day introductory membership, which is valid on the day of issue only.
+  faq:
+  - q: How much does it cost to learn to paraglide in the UK?
+    a: The BHPA puts a full course to Club Pilot at a registered school at around £1,200 to £1,600, and a one-day taster at usually around £150. At Flying Frenzy in Dorset, Elementary Pilot is £700 and Club Pilot £900.
+  - q: How long does it take to learn to paraglide?
+    a: The BHPA says it normally takes around ten days of flyable weather to reach Club Pilot. Because flying depends on the wind, those days may be spread over weeks.
+  - q: Is there a weight limit for tandem paragliding?
+    a: It depends on the school. Flying Frenzy in Dorset takes passengers between 45 and 120 kg (7 and 19 st), while Torrey Pines Gliderport in California says it has no weight limit for paragliding tandems as long as there is enough wind.
+  - q: Is there an age limit for paragliding?
+    a: The BHPA says there is no real upper age limit provided you are reasonably fit. You must be at least 14 to fly solo, and Torrey Pines Gliderport says there is no age limit for its tandem rides.
+  sources:
+  - label: BHPA, Paragliding
+    url: https://www.bhpa.co.uk/sport/pg/
+    checked: '2026-11-13'
+  - label: BHPA, Learn to fly
+    url: https://bhpa.co.uk/sport/learn_to_fly
+    checked: '2026-11-13'
+  - label: Airways Airsports, Paragliding lessons
+    url: https://www.airways-airsports.com/paragliding-lessons/
+    checked: '2026-11-13'
+  - label: Flying Frenzy, Paragliding courses
+    url: https://flyingfrenzy.com/courses.htm
+    checked: '2026-11-13'
+  - label: Flying Frenzy, Vouchers for taster days and tandem flights
+    url: https://flyingfrenzy.com/flightvouchers.htm
+    checked: '2026-11-13'
+  - label: USHPA, How do I learn to fly?
+    url: https://ushpa.org/page/how-do-i-learn-to-fly
+    checked: '2026-11-13'
+  - label: Torrey Pines Gliderport, Tandem paragliding flights
+    url: https://www.flytorrey.com/?p=24
+    checked: '2026-11-13'
+  - label: Torrey Pines Gliderport, Tandem FAQs
+    url: https://www.flytorrey.com/?p=173
+    checked: '2026-11-13'
+  - label: Paragliding San Francisco, USHPA P2 certification
+    url: https://www.paraglidingsanfrancisco.com/p2-certification
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: Guy Richardson
+    line: Learned to fly in 1989 after working as a professional sailor; by 2021 he was a paragliding instructor and chief coach at Derbyshire Soaring Club.
+    title: Fly away home
+    outlet: Big Issue North
+    url: https://www.bigissuenorth.com/features/2021/10/fly-away-home/
+    checked: '2026-11-13'
+  kit:
+  - name: Hiking boots with ankle support
+    why: flexible walking boots with ankle support and no lacing hooks, as the BHPA advises
+    url: https://www.amazon.co.uk/s?k=hiking+boots+ankle+support
+  - name: Paragliding gloves
+    why: for handling the lines and the wing
+    url: https://www.amazon.co.uk/s?k=paragliding+gloves
+  related:
+  - try-gliding
+  - tandem-skydive
+  - kitesurfing-lesson
+  - indoor-climbing
+- id: try-coasteering
+  title: Go coasteering
+  category: move
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  why: Coasteering means working your way along a rocky coast at sea level, scrambling over rocks, swimming between them, exploring sea caves and jumping into the water. It began in Pembrokeshire, and a guided session of two to three hours, with wetsuit, buoyancy aid and helmet supplied, costs from about £40 to £55 at the providers below.
+  start:
+  - Find a guided session through the National Coasteering Charter's provider list or a tourist board listing, and choose a beginners' or introductory trip.
+  - Check the minimum age, the swimming ability asked for and what kit is supplied. Cornish Rock Tors, for example, asks that you can swim at least 50 m (about 55 yards) unaided.
+  - Check what footwear is supplied (Cornish Rock Tors provides wetsuit boots), and bring a changing robe or large towel, since you may change on the beach.
+  links:
+  - label: 'National Coasteering Charter: about the charter (links to its provider list)'
+    url: https://www.nationalcoasteeringcharter.org.uk/?p=57
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Visit Wales: coasteering in Wales'
+    url: https://www.visitwales.com/node/3255
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Pembrokeshire Coast National Park: coasteering'
+    url: https://www.pembrokeshirecoast.wales/things-to-do/outdoor-activities/coasteering/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Anglesey Outdoors, Holyhead: coasteering'
+    url: https://eola.co/1169/activities/1169-coasteering
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Cornish Rock Tors, Cornwall: introduction to coasteering'
+    url: https://eola.co/401/activities/introduction-to-coasteering
+    region: uk
+    checked: '2026-11-13'
+  - label: 'HSE: adventure activities licensing, information for the public'
+    url: https://www.hse.gov.uk/aala/public-information.htm
+    region: uk
+    checked: '2026-11-13'
+  safety: Visit Wales says coasteering can be dangerous, and that the risk is higher if you go alone. The Pembrokeshire Coast National Park warns that a sudden change in the weather, tides or swell can turn any trip into a serious undertaking, and that it is best done with local, trained group leaders.
+  seo_title: 'Coasteering for beginners: what it is and what it costs'
+  description: What coasteering involves, where it started, how to choose a guided provider in Wales, Cornwall or elsewhere, and what a beginners' session costs.
+  detail:
+  - h: What a session is like
+    p:
+    - Visit Wales describes a typical session of two to three hours that treats the foreshore as an obstacle course, with scrambling over rocks, swimming into canyons, exploring caves, bodysurfing breakers and optional jumps. On Anglesey, sessions include swimming across zawns, the gaps in the cliff, and being moved about by the waves. Providers supply a wetsuit, buoyancy aid and helmet. First-timers can stick to low-level routes with gentle swims and small jumps, and at Cornish Rock Tors every feature is optional.
+    - Accounts of its beginnings differ, though all place it in Pembrokeshire. The national park says it developed from sea level traversing, popular there since the 1960s. Visit Wales says Pembrokeshire surfers came up with it in the early 1980s, and TYF in St Davids says it pioneered coasteering in 1986.
+    - There is no single licence to look for. The National Coasteering Charter was formed in 2011, when eighty providers and bodies including the RNLI and RoSPA met, and it sets minimum operating standards and training standards for guides. The HSE's adventure activities licensing scheme applies to commercial providers that offer activities to under-18s; providers that take only adults are exempt. You can check the HSE's register of licence holders.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Anglesey Outdoors, Holyhead
+        - Three hours on the sea cliffs, up to 10 people; from age 8; winter wetsuit, buoyancy aid and helmet provided
+        - From £40 per person, plus booking fees
+      - - Anglesey Adventures, Anglesey
+        - Half-day coasteering; full-day options; guidance age 8 and over
+        - 'Half day: adults £55, children £40, family £160. Full day: adults £90'
+      - - Cornish Rock Tors, Cornwall
+        - 'Introduction to coasteering: about two hours of activity (2½ hours in all); age 10 and over; must swim at least 50 m unaided'
+        - From £50 per person, plus booking fees
+      - - Cornish Rock Tors, Cornwall
+        - 'Advanced coasteering: two hours for strong swimmers aged 16 and over; jumps up to 10 m (about 33 ft); no changing facilities'
+        - £80 per person, plus booking fees
+      - - Anglesey Adventures, Anglesey
+        - 'Adventure coasteering: further along the coast, with optional abseiling over sea cliffs; age 14 and over; a good level of fitness and a head for heights required'
+        - £100 per person
+    after: TYF in St Davids, which runs a three-and-a-half-hour coasteer, does not list prices on its Visit Wales page.
+  faq:
+  - q: What is coasteering?
+    a: Moving along a rocky coastline at sea level by climbing, scrambling, swimming and jumping. The Pembrokeshire Coast National Park describes it as a mixture of rock climbing, swimming, scrambling and jumping, all a few metres above or below sea level.
+  - q: Where did coasteering start?
+    a: In Pembrokeshire, west Wales, though accounts of the date differ. The national park says it grew out of sea-level traversing, popular there since the 1960s. Visit Wales credits surfers in the early 1980s, and TYF in St Davids says it pioneered coasteering in 1986.
+  - q: Do you have to be a strong swimmer to go coasteering?
+    a: It depends on the trip. Cornish Rock Tors asks beginners to swim at least 50 m unaided and expects strong swimmers on its advanced trip, while Visit Wales says first-timers can choose low-level routes with gentle swims.
+  - q: Do you have to jump when coasteering?
+    a: No. Jumps are optional on the trips described by Visit Wales, and Cornish Rock Tors says every feature is optional.
+  sources:
+  - label: National Coasteering Charter, All about the NCC
+    url: https://www.nationalcoasteeringcharter.org.uk/?p=57
+    checked: '2026-11-13'
+  - label: Visit Wales, Coasteering in Wales
+    url: https://www.visitwales.com/node/3255
+    checked: '2026-11-13'
+  - label: Pembrokeshire Coast National Park, Coasteering
+    url: https://www.pembrokeshirecoast.wales/things-to-do/outdoor-activities/coasteering/
+    checked: '2026-11-13'
+  - label: Visit Wales, TYF Adventure and Coasteering
+    url: https://visitwales.com/product/1889636
+    checked: '2026-11-13'
+  - label: Anglesey Outdoors, Coasteering
+    url: https://eola.co/1169/activities/1169-coasteering
+    checked: '2026-11-13'
+  - label: Anglesey Adventures, Coasteering Anglesey
+    url: https://www.angleseyadventures.com/coasteering-anglesey/
+    checked: '2026-11-13'
+  - label: Cornish Rock Tors, Introduction to coasteering
+    url: https://eola.co/401/activities/introduction-to-coasteering
+    checked: '2026-11-13'
+  - label: Cornish Rock Tors, Advanced coasteering
+    url: https://eola.co/401/activities/advanced-coasteering
+    checked: '2026-11-13'
+  - label: HSE, Adventure activities licensing, public information
+    url: https://www.hse.gov.uk/aala/public-information.htm
+    checked: '2026-11-13'
+  - label: HSE, The adventure activities licensing scheme legislation
+    url: https://www.hse.gov.uk/aala/general-information.htm
+    checked: '2026-11-13'
+  kit:
+  - name: Changing robe
+    why: for changing on the beach or clifftop; Cornish Rock Tors asks you to bring one or a large towel
+    url: https://www.amazon.co.uk/s?k=changing+robe
+  - name: Dry bag
+    why: to keep your change of clothes and towel dry
+    url: https://www.amazon.co.uk/s?k=dry+bag+20l
+  related:
+  - wild-swim
+  - learn-to-kayak
+  - learn-to-surf
+  - walk-wales-coast-path
+- id: play-snooker
+  title: Learn to play snooker
+  category: move
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Snooker is played at members' clubs that charge a few pounds an hour for a full-size table, and WPBSA-accredited coaches teach beginners the basics one to one. Clubs such as Rugeley field teams in local leagues, and in England the over-40s have their own tour and national championships.
+  start:
+  - Find a snooker club near you through the WPBSA's club listings, and check the yearly membership and the hourly table fee.
+  - Book a lesson with a WPBSA-accredited coach through the WPBSA Coach Finder; Level 1 coaches are trained to teach the basics of the game.
+  - Ask at your club about its league teams. In the US, the APA runs amateur pool leagues that welcome people who have never played.
+  links:
+  - label: 'WPBSA: coaching levels explained and the Coach Finder'
+    url: https://www.wpbsa.com/participation/coaching/coaching-levels-explained/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'WPBSA club listing: Loughton Club, Essex'
+    url: https://wpbsa.com/?p=16019
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Cue Sports Yorkshire, Keighley: snooker coaching'
+    url: https://www.cuesportsyorkshire.co.uk/coaching
+    region: uk
+    checked: '2026-11-13'
+  - label: 'English Partnership for Snooker and Billiards: seniors'
+    url: https://www.epsb.co.uk/development/seniors/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'American Poolplayers Association: join a league'
+    url: https://poolplayers.com/join
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'How to start playing snooker: clubs, coaching and costs'
+  description: How to start playing snooker, from finding a club and a WPBSA-accredited coach to table fees, seniors events and, in the US, joining an APA pool league.
+  detail:
+  - h: Getting started and getting coached
+    p:
+    - Many clubs are members-run. The Loughton Club in Essex, listed on the WPBSA's club pages, has four full-size tables in a separate room upstairs, charges by the hour through a coin-operated lights system and asks members to be over 18. Rugeley Snooker Club in Staffordshire gives full members access to its tables at any hour of the day, every day of the year.
+    - The WPBSA trains coaches at three levels. Level 1 covers how to coach the basics. Level 2 prepares coaches to work with novice and intermediate players up to a 30-plus break standard, and Level 3 with advanced players up to century standard. Its Coach Finder lets you search for accredited coaches near you. At Cue Sports Yorkshire, one-to-one lessons with a Level 2 coach can be booked in one- or two-hour sessions, and a pupil describes the coach filming his shots and checking his cueing.
+    - Once you are playing regularly, the WPBSA's Play Snooker app, launched in April 2026, lets you record matches, track your performance and enter competitions. In England, the English Partnership for Snooker and Billiards runs a Seniors Tour for players over 40 and national titles for over-40s and over-55s.
+    - For readers in the US, this page covers pool leagues rather than snooker. The American Poolplayers Association runs 8-ball and 9-ball team leagues for amateurs, with a handicap worked out from your results in each match; the APA says you do not need much skill to compete. Teams have up to eight players, five play in each match, and you must be 18 or over.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Loughton Club, Essex
+        - Members-run social club with four full-size snooker tables; over-18s only
+        - £6 an hour; membership £20 a year (£10 over-65s), plus a £10 joining charge in the first year
+      - - Rugeley Snooker Club, Staffordshire
+        - Members' club with local league teams
+        - £4 an hour; membership £60 a year, or £30 for over-65s
+      - - Cue Sports Yorkshire, Keighley
+        - One-to-one lessons with a WPBSA Level 2 coach, Monday to Friday, 9am to 4pm; one- or two-hour sessions
+        - £40 an hour
+      - - American Poolplayers Association, US
+        - 8-ball and 9-ball team leagues through a local league operator
+        - $30 membership, plus sales tax where applicable; weekly fees are set locally
+    after: The APA does not list weekly league fees; its locator gives contact details for your local league operator, who can tell you the fees, nights and venues.
+  faq:
+  - q: How do I find a snooker coach near me?
+    a: Use the WPBSA Coach Finder, which lets you search for accredited coaches near you. Level 1 coaches are trained to teach the basics.
+  - q: How much does it cost to play snooker at a club?
+    a: At the two clubs above, an hour on a table costs £4 to £6, plus yearly membership of £20 to £60, with reductions for over-65s.
+  - q: Are there snooker competitions for older players?
+    a: Yes. In England there is a Seniors Tour for players over 40 and national championships for over-40s and over-55s.
+  - q: How do I join a pool league in the US?
+    a: Find your local operator through the American Poolplayers Association's locator. The APA says it is designed for amateur players and welcomes people who have never played; members must be 18 or over.
+  sources:
+  - label: WPBSA, Coaching levels explained
+    url: https://www.wpbsa.com/participation/coaching/coaching-levels-explained/
+    checked: '2026-11-13'
+  - label: WPBSA, WPBSA launches coach locator
+    url: https://www.wpbsa.com/wpbsa-launches-coach-locator/
+    checked: '2026-11-13'
+  - label: WPBSA, WPBSA launches the Play Snooker app
+    url: https://www.wpbsa.com/?p=115306
+    checked: '2026-11-13'
+  - label: WPBSA club listing, Loughton Club
+    url: https://wpbsa.com/?p=16019
+    checked: '2026-11-13'
+  - label: Rugeley Snooker Club
+    url: https://rugeleysnookerclub.co.uk
+    checked: '2026-11-13'
+  - label: Cue Sports Yorkshire, Coaching
+    url: https://www.cuesportsyorkshire.co.uk/coaching
+    checked: '2026-11-13'
+  - label: English Partnership for Snooker and Billiards, Seniors
+    url: https://www.epsb.co.uk/development/seniors/
+    checked: '2026-11-13'
+  - label: American Poolplayers Association, Join
+    url: https://poolplayers.com/join
+    checked: '2026-11-13'
+  - label: American Poolplayers Association, Membership
+    url: https://poolplayers.com/membership/
+    checked: '2026-11-13'
+  inspire:
+  - kind: read
+    person: David Lilley
+    line: Played on the amateur circuit while working as an insurance claims controller, turned professional through Q School and won the 2021 World Seniors Championship at the Crucible, beating Jimmy White in the final.
+    title: Lilley determined to build on Seniors success
+    outlet: World Seniors Snooker
+    url: https://www.seniorssnooker.com/lilley-determined-to-build-on-seniors-success/
+    checked: '2026-11-13'
+  kit:
+  - name: Snooker cue
+    why: so you play with the same cue every time rather than a club rack cue
+    url: https://www.amazon.co.uk/s?k=snooker+cue
+  - name: Snooker chalk
+    why: chalking the cue tip before shots
+    url: https://www.amazon.co.uk/s?k=snooker+chalk
+  - name: Cue case
+    why: to carry and protect your own cue
+    url: https://www.amazon.co.uk/s?k=snooker+cue+case
+  related:
+  - play-table-tennis
+  - join-a-chess-club
+  - lawn-bowls
+  - learn-to-play-bridge
+- id: take-a-flying-lesson
+  title: Take a trial flying lesson
+  category: think
+  kind: experience
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: On a trial lesson an instructor briefs you on the aircraft and its controls, takes off, then hands the controls to you for climbs, descents and turns. At several clubs and schools the time goes in a logbook and counts towards a pilot's licence if you carry on.
+  start:
+  - Book a trial lesson at a flying club or school near you. Thirty- and sixty-minute lessons are common, and some clubs sell a starter pack of several hours.
+  - Check what the price covers and any weight limits. Derby Aero Club asks people over 16 stone (102 kg) to contact it before buying, and West London Aero Club adds a fuel supplement at checkout.
+  - Take a logbook so the lesson is recorded. If you want to go further, check the medical rules before you commit to a full course.
+  links:
+  - label: 'Civil Aviation Authority: National Private Pilot Licence (NPPL)'
+    url: https://www.caa.co.uk/general-aviation/pilot-licences/uk-national-licences/national-private-pilot-licence-nppl/
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Civil Aviation Authority: Private Pilot Licence for aeroplanes'
+    url: https://www.caa.co.uk/General-aviation/Pilot-licences/Aeroplanes/Private-Pilot-Licence-for-aeroplanes
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Derby Aero Club: trial lessons'
+    url: https://www.derbyaeroclub.com/trial-lessons
+    region: uk
+    checked: '2026-11-13'
+  - label: 'FAA: student pilot certificate requirements'
+    url: https://www.faa.gov/pilots/become/student_cert/
+    region: us
+    checked: '2026-11-13'
+  - label: 'Nebraska Flight Center: discovery flights (Omaha area)'
+    url: https://nebflight.com/flight-training/discovery-flights/
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Trial flying lessons: what happens, cost and next steps'
+  description: What happens on a trial flying lesson, what it costs at UK and US clubs, and the hours, exams and medicals a pilot's licence needs after it.
+  detail:
+  - h: What happens, and where it can lead
+    p:
+    - At Derby Aero Club you sit in the left seat with the instructor on the right. The instructor briefs you on the aircraft, the local flying area and the controls and instruments, takes off, then hands over the controls and teaches basic handling before landing and talking the flight through. The time you pay for is only the time the aircraft is moving. Nebraska Flight Center tells people to allow about two hours on site, including a walk round the aircraft for the pre-flight inspection.
+    - Derby says its trial lesson is the first part of the Private Pilot's Licence course and counts towards the required hours. Nebraska Flight Center says the instructor signs your logbook and the time counts towards a private pilot certificate.
+    - In the UK, the Civil Aviation Authority no longer issues the Light Aircraft Pilot Licence for aeroplanes; students who trained for one but did not have it issued before 1 October 2025 receive a National Private Pilot Licence (NPPL) instead. The CAA's guidance asks for at least 32 hours of flight time for the NPPL(A), not counting the skill test, including 10 hours of supervised solo with at least four hours of solo cross-country and one solo cross-country flight of at least 150 km (80 nautical miles). There are five theory exams. The NPPL can only be used on UK-registered aircraft inside UK airspace, unless an agreement with another country allows otherwise, and the minimum age is 17.
+    - The UK Private Pilot Licence for aeroplanes needs 40 hours of flight instruction, which can be reduced to 35 at an approved training organisation. That includes 10 hours of supervised solo and at least five hours of solo cross-country, with one flight of at least 270 km (150 nautical miles) landing at two other aerodromes, plus nine theory exams and a skill test with an examiner.
+    - In the US you do not need a student pilot certificate to take lessons, only before you fly solo. You must be at least 16 and able to read, speak and understand English. The FAA's minimum for a private pilot certificate on single-engine aeroplanes is 40 hours of flight time, including 20 hours of instruction and 10 hours solo, with set amounts of cross-country, night and instrument flying.
+    - 'Medicals: the CAA says it is fine to have a trial flight and some initial lessons, but advises checking the medical requirements before committing to a full course. A UK PPL needs a Class 2 medical certificate from an aeromedical examiner. NPPL students can train, including supervised solo, on a Pilot Medical Declaration, which pilots must not make unless they reasonably believe they meet the DVLA Group 1 (car) standard. In the US, the FAA says student pilots need at least a third-class medical certificate from an aviation medical examiner before the first solo flight.'
+  - h: What a trial lesson costs
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Derby Aero Club
+        - Trial lesson in a two-seat Cessna 152; briefing and debrief not counted in the flying time
+        - £112 for 30 minutes, £220 for 60 minutes; five-hour beginners' pack £999 with a year's club membership, logbook and checklist
+      - - West London Aero Club
+        - Trial lesson in a four-seat Piper Warrior, with pre- and post-flight discussion
+        - £147 for 30 minutes, £240 for 60 minutes, plus a temporary fuel supplement of £9 or £18
+      - - Scottsdale Executive Flight Training
+        - Discovery flight with 30 minutes of ground briefing and one hour of flight
+        - $289 in a Cessna 152, $339 to $369 in a Cessna 172, $585 in a Cirrus SR20
+      - - Nebraska Flight Center, Omaha area
+        - Discovery flight of about 45 to 60 minutes; instructor signs your logbook
+        - $235
+    after: Derby's vouchers are valid for nine months and are transferable but not refundable. Scottsdale asks for payment in advance; the payment is non-refundable but is held as a credit for six months.
+  faq:
+  - q: Does a trial flying lesson count towards a pilot's licence?
+    a: Often. Derby Aero Club and West London Aero Club say their trial lessons count towards licence training, and Nebraska Flight Center says the time counts towards a private pilot certificate. Ask the school to sign your logbook.
+  - q: How many hours do you need for a private pilot licence?
+    a: The minimum is 40 hours for a UK PPL(A), or 35 at an approved training organisation, and 32 hours of flight time for the UK NPPL(A). The FAA minimum for a US private pilot certificate on single-engine aeroplanes is 40 hours.
+  - q: Do I need a medical for a trial flying lesson?
+    a: No. The CAA says a trial flight and some initial lessons are fine. For a PPL you need a Class 2 medical certificate before your first solo; NPPL students can train on a Pilot Medical Declaration. The FAA says student pilots need at least a third-class medical certificate before the first solo flight.
+  - q: How much does a trial flying lesson cost?
+    a: At the two UK clubs above, £112 to £147 for 30 minutes and £220 to £240 for an hour. The two US schools charge from $235 for a discovery flight.
+  sources:
+  - label: Civil Aviation Authority, Light Aircraft Pilot Licence for aeroplanes
+    url: https://caa.co.uk/general-aviation/pilot-licences/aeroplanes/light-aircraft-pilot-licence-for-aeroplanes
+    checked: '2026-11-13'
+  - label: Civil Aviation Authority, National Private Pilot Licence (NPPL)
+    url: https://www.caa.co.uk/general-aviation/pilot-licences/uk-national-licences/national-private-pilot-licence-nppl/
+    checked: '2026-11-13'
+  - label: 'Civil Aviation Authority, CAP 3181: The National Private Pilot''s Licence, requirements and guidance'
+    url: https://www.caa.co.uk/publication/download/26206
+    checked: '2026-11-13'
+  - label: Civil Aviation Authority, Licensing and training simplification
+    url: https://www.caa.co.uk/general-aviation/pilot-licences/licensing-training-simplification
+    checked: '2026-11-13'
+  - label: Civil Aviation Authority, Private Pilot Licence for aeroplanes
+    url: https://www.caa.co.uk/General-aviation/Pilot-licences/Aeroplanes/Private-Pilot-Licence-for-aeroplanes
+    checked: '2026-11-13'
+  - label: Civil Aviation Authority, Medical requirements for pilots
+    url: https://www.caa.co.uk/general-aviation/pilot-licences/medical/medical-requirements-for-pilots/
+    checked: '2026-11-13'
+  - label: FAA, Student pilot's certificate requirements
+    url: https://www.faa.gov/pilots/become/student_cert/
+    checked: '2026-11-13'
+  - label: FAA, When is a medical examination required?
+    url: https://www.faa.gov/faq/when-medical-examination-required
+    checked: '2026-11-13'
+  - label: 14 CFR 61.109, Aeronautical experience (eCFR)
+    url: https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-E/section-61.109
+    checked: '2026-11-13'
+  - label: Derby Aero Club, Trial lessons
+    url: https://www.derbyaeroclub.com/trial-lessons
+    checked: '2026-11-13'
+  - label: West London Aero Club, Piper Warrior trial lesson
+    url: https://www.wlac.co.uk/product/piper-warrior-trial-lesson/
+    checked: '2026-11-13'
+  - label: Scottsdale Executive Flight Training, Discovery flights
+    url: https://www.scottsdaleflighttraining.com/?p=1462
+    checked: '2026-11-13'
+  - label: Nebraska Flight Center, Discovery flights
+    url: https://nebflight.com/flight-training/discovery-flights/
+    checked: '2026-11-13'
+  kit:
+  - name: Pilot logbook
+    why: to record your trial lesson and every flight after it
+    url: https://www.amazon.co.uk/s?k=pilot+logbook
+  - name: Aviation headset
+    why: for hearing the instructor and the radio in the cockpit, if you carry on with lessons
+    url: https://www.amazon.co.uk/s?k=aviation+headset
+  - name: Pilot kneeboard
+    why: a clipboard strapped to your leg for notes and checklists in flight
+    url: https://www.amazon.co.uk/s?k=pilot+kneeboard
+  related:
+  - try-gliding
+  - tandem-skydive
+  - get-an-amateur-radio-licence
+  - learn-map-and-compass
+- id: learn-springboard-diving
+  title: Learn to dive from a springboard
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Adult diving classes take complete beginners from low-board work up to dives from the 1m and 3m springboards, with qualified coaches and small groups. For those who want to compete, masters diving in the US is open to adults from 21 and runs springboard events in five-year age groups.
+  start:
+  - Check you meet the swimming requirement. Aberdeen Sports Village asks that you can swim 10 metres unaided in deep water and jump in and go under without goggles.
+  - Find an adult class through Swim England's diving club finder or a large pool's diving programme; in the US, look for an adult or masters programme at an aquatics centre.
+  - Expect to start with low-board work and the 1m springboard before the 3m board.
+  links:
+  - label: 'Swim England: learn to dive and find a diving club'
+    url: https://swimming.org/diving/getting-into-diving
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Aberdeen Sports Village: adult diving class'
+    url: https://www.aberdeensportsvillage.com/aquatics/diving/adult-diving
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Edinburgh Leisure: adult diving at the Royal Commonwealth Pool'
+    url: https://edinburghleisure.co.uk/activities/coaching-courses/diving
+    region: uk
+    checked: '2026-11-13'
+  - label: 'U.S. Masters Diving (USA Diving)'
+    url: https://mastersdiving.org/
+    region: us
+    checked: '2026-11-13'
+  - label: 'Asphalt Green, New York: adult springboard diving'
+    url: https://www.asphaltgreen.org/program/adult-springboard-diving/
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'Adult diving lessons: learn springboard diving'
+  description: How adults learn springboard diving, what a beginners' class covers, the swimming you need first, what sessions cost and how masters diving works.
+  detail:
+  - h: What an adult class is like
+    p:
+    - Swim England says both children and adults can learn to dive. At Aberdeen Sports Village the adult class runs for an hour on Thursday evenings, is taught by qualified diving coaches and takes up to 12 divers. Beginners are people with little or no diving experience who are confident in deep water; the experienced group is for those who have learned the fundamentals and are confident going in hands first, forwards. Sessions start with low-board work and move on to the 1m and 3m springboards.
+    - Edinburgh Leisure's Adult Diving course at the Royal Commonwealth Pool covers beginners to intermediate divers, from basic skills such as the hand grab up to dives in six directions. Its Adult Masters class, for adults who want to compete, runs for 90 or 120 minutes including dry-land training, and a one-hour Adult Dry Dive Gym uses dryboards and a trampoline.
+    - At Asphalt Green in New York, the Adult Springboard Diving course for over-18s teaches tuck and pike dives, the front hurdle and hand placement for a rip entry, along with board safety and injury-prevention exercises. Participants should be comfortable swimming in deep water. The Rose Bowl Aquatics Center in Pasadena has run a one-day, 90-minute Adult Learn to Dive programme as well as weekly adult lessons.
+    - U.S. Masters Diving, a committee of the national governing body USA Diving, organises competition for adults aged 21 and over, with springboard events in five-year age groups and platform in ten-year groups. Its novice category is designed for new or returning divers. The AAU's Masters-B level uses a shortened list of four or five springboard dives for divers not ready for a full list.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Aberdeen Sports Village
+        - Adult class, one hour on Thursdays; beginners to experienced; up to 12 divers
+        - £10 a session pay-as-you-go; members get 20% off
+      - - The Quays Swimming and Diving Complex, Southampton
+        - Adult and teen diving taster, 45 minutes, up to 8 people; ages 13 and over
+        - From £13.95 per adult, plus booking fees
+      - - Asphalt Green, Upper East Side, New York
+        - Adult Springboard Diving, 18 and over, run in seasons and terms
+        - Not shown on the programme page
+      - - Rose Bowl Aquatics Center, Pasadena
+        - Adult dive lessons on Saturdays, 90 minutes, ages 18 to 99 (past run, September to October 2026)
+        - Not shown on the listing
+    after: Neither US page showed a fee when checked, so ask the centre. Asphalt Green lists its winter 2027 season as 2 January to 7 March, with public registration from 20 October 2026.
+  faq:
+  - q: Can adults learn springboard diving?
+    a: Yes. Swim England says both children and adults can learn to dive, and Aberdeen Sports Village's adult class takes complete beginners.
+  - q: Do I need to be a strong swimmer to learn diving?
+    a: You need to be at ease in deep water. Aberdeen asks that you can swim 10 metres unaided in deep water, and Asphalt Green says participants should be comfortable swimming in deep water.
+  - q: What is masters diving?
+    a: Competitive diving for adults. U.S. Masters Diving is open to adults aged 21 and over, with springboard events in five-year age groups and a novice category for new or returning divers.
+  - q: How much do adult diving lessons cost?
+    a: Aberdeen Sports Village charges £10 a session pay-as-you-go, and The Quays in Southampton from £13.95 for a 45-minute session, plus booking fees.
+  sources:
+  - label: Swim England, Learn to dive
+    url: https://swimming.org/diving/getting-into-diving
+    checked: '2026-11-13'
+  - label: Aberdeen Sports Village, Adult diving
+    url: https://www.aberdeensportsvillage.com/aquatics/diving/adult-diving
+    checked: '2026-11-13'
+  - label: Edinburgh Leisure, Adult and junior dive coaching and courses
+    url: https://edinburghleisure.co.uk/activities/coaching-courses/diving
+    checked: '2026-11-13'
+  - label: The Quays Swimming and Diving Complex, Adult and teen diving sessions (eola)
+    url: https://eola.co/686/activities/adult-teen-diving-taster-session
+    checked: '2026-11-13'
+  - label: Better, Manchester Aquatics Centre, Diving
+    url: https://www.better.org.uk/leisure-centre/manchester/manchester-aquatics-centre/diving
+    checked: '2026-11-13'
+  - label: Asphalt Green, Adult springboard diving
+    url: https://www.asphaltgreen.org/?p=9276
+    checked: '2026-11-13'
+  - label: Rose Bowl Aquatics Center, Adult Learn to Dive Day (Active.com)
+    url: https://www.active.com/pasadena-ca/water-sports/diving-classes/adult-learn-to-dive-day-08-15-2026
+    checked: '2026-11-13'
+  - label: Rose Bowl Aquatics Center, Dive lessons adult, Sep/Oct 2026 (Active.com)
+    url: https://www.active.com/pasadena-ca/water-sports/diving-lessons/dive-lessons-adult-sep-oct-sat-12-30pm-2-00pm-2026
+    checked: '2026-11-13'
+  - label: U.S. Masters Diving
+    url: https://mastersdiving.org/
+    checked: '2026-11-13'
+  - label: AAU, Adult and masters diving
+    url: https://aausports.org/diving/adult-masters-program
+    checked: '2026-11-13'
+  safety: Adult classes expect you to be confident in deep water. Manchester Aquatics Centre's Dive for All sessions (Wednesday's is adults only) are feet first only, and swimmers undergo a swim test.
+  inspire:
+  - kind: read
+    person: Jane Cooke, from Sheffield
+    line: Went back to the springboard 12 years after retiring from Olympic diving, after watching her daughters train at Sheffield Diving Club, and won 1m and 3m gold at the World Masters Championships in Budapest.
+    title: Back on top of the world – after 12 years
+    outlet: Yorkshire Post (via PressReader)
+    url: https://www.pressreader.com/uk/yorkshire-post/20170905/281938838062645
+    checked: '2026-11-13'
+  kit:
+  - name: Diving shammy towel
+    why: a small absorbent towel for drying off between dives
+    url: https://www.amazon.co.uk/s?k=diving+shammy+towel
+  - name: Training swimsuit
+    why: a close-fitting suit for pool sessions
+    url: https://www.amazon.co.uk/s?k=training+swimsuit
+  related:
+  - masters-swimming
+  - learn-to-swim-adult
+  - try-trampolining
+  - try-flying-trapeze
+- id: play-darts
+  title: Learn to play darts
+  category: connect
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: In 501, the standard game, you count down from 501 three darts at a time and must finish exactly on a double. Local leagues play it in pubs, bars and clubs on a set night each week, and some, such as the Ventura County Dart Association in California, welcome beginners as well as experienced players.
+  start:
+  - Hang a board at regulation height, with the centre of the bull 1.73 m (5 ft 8 in) from the floor and the throw line 2.37 m (7 ft 9¼ in) from the face of the board.
+  - 'Learn 501 to the rules: three darts a turn, finish on a double or the bull, and a throw that takes you past zero or leaves one does not count.'
+  - Find a league. Ask at local pubs and your county darts organisation; in the US, the American Darts Organization lists affiliated associations, which you can filter by state.
+  links:
+  - label: 'World Darts Federation: playing and tournament rules (PDF)'
+    url: https://site.dartswdf.com/wp-content/uploads/2020/05/2018-02-28_WDF_Playing_and_Tournament_Rules_rev20.pdf
+    region: any
+    checked: '2026-11-13'
+  - label: 'Cheshire Darts Organisation: Super League'
+    url: https://www.cheshiredarts.co.uk/Superleague
+    region: uk
+    checked: '2026-11-13'
+  - label: 'Oakleaf Sports Complex, Newton Aycliffe: darts'
+    url: https://www.great-aycliffe.gov.uk/?p=30983
+    region: uk
+    checked: '2026-11-13'
+  - label: 'American Darts Organization: affiliated associations'
+    url: https://www.adodarts.com/?p=139
+    region: us
+    checked: '2026-11-13'
+  - label: 'Ventura County Dart Association: sign up (California)'
+    url: https://vcda.org/sign-up.php
+    region: us
+    checked: '2026-11-13'
+  seo_title: 'How to play darts: 501 rules, board height and leagues'
+  description: How to start playing darts, from hanging the board at the right height to the 501 rules, finishing on a double, and joining a league in the UK or US.
+  detail:
+  - h: How 501 works
+    p:
+    - Under the World Darts Federation's rules, the narrow outer band of the board scores double the segment number and the inner band treble. The outer centre ring scores 25 and the bull 50. A dart scores only if its point stays in or touches the board; one that bounces off or falls out cannot be thrown again.
+    - Each player starts on 501 and, after each throw of three darts, subtracts the total. To start scoring you only need to land a dart inside the outer doubles wire. To finish you must hit the double worth exactly what you have left, so with 40 left you need double 20, and with 50 left, the bull. If a throw scores more than you have left, or leaves you on one, it does not count and your score goes back to what it was. Some versions also need a double to start; the PDC's World Grand Prix is played double in, double out.
+    - Who goes first is settled by throwing for the bull. The player whose dart lands nearer the centre throws first.
+    - League nights follow the same game. The Cheshire Darts Organisation's Super League plays 501 with a straight start and a double finish, on Sunday evenings, and its rules say players must play Super League in Cheshire to be considered for the county side. The Ventura County Dart Association in California plays steel-tip darts on Thursday nights for teams and Tuesdays for singles, in seasons of about 14 to 16 weeks, with divisions by skill level and a choice of handicapped or not. Players without a team can fill in a form and the association will try to place them.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Oakleaf Sports Complex, Newton Aycliffe, County Durham
+        - Dartboards to use seven days a week, in 30-minute sessions
+        - £1 a person for members, £2 for non-members
+      - - Maltby and District Invitation Darts League
+        - Thursday league, teams of seven, 501 starting and finishing on a double; 2026-27 season
+        - £40 registration per team, however many players
+      - - Ventura County Dart Association, California
+        - Steel-tip team and singles leagues; 501, 301 and Cricket
+        - $25 season league fee
+      - - American Darts Organization
+        - Individual membership, US residents only
+        - $30 for one year, $50 for two years
+    after: The ADO says current individual members can enter its National Championships at the National Qualifier level. At Ventura County, alternates pay nothing until they have played three times for the same team in a season.
+  faq:
+  - q: How high should a dartboard be?
+    a: The World Darts Federation's rules put the centre of the bull 1.73 m (5 ft 8 in) from the floor, with the throw line 2.37 m (7 ft 9¼ in) from the face of the board. The diagonal from the bull to the back of the oche at floor level is 2.93 m.
+  - q: Do you have to finish on a double in darts?
+    a: In 501, yes. You must finish on the double, or the bull, worth exactly your remaining score; a throw that goes past zero or leaves you on one does not count.
+  - q: Who throws first in darts?
+    a: Players throw for the bull, and the one nearer the centre throws first.
+  - q: How do I join a darts league?
+    a: Ask at local pubs or your county darts organisation. In the US, the American Darts Organization lists affiliated associations by state, and some, such as Ventura County, will place individual players with a team.
+  sources:
+  - label: World Darts Federation, Playing and tournament rules (rev. 20, 28 February 2018)
+    url: https://site.dartswdf.com/wp-content/uploads/2020/05/2018-02-28_WDF_Playing_and_Tournament_Rules_rev20.pdf
+    checked: '2026-11-13'
+  - label: PDC, Rules of darts
+    url: https://www.pdc.tv/node/75
+    checked: '2026-11-13'
+  - label: Cheshire Darts Organisation, Super League
+    url: https://www.cheshiredarts.co.uk/Superleague
+    checked: '2026-11-13'
+  - label: Maltby and District Invitation Darts League, Rules 2026-27 (PDF)
+    url: https://irp.cdn-website.com/d0c21f8a/files/uploaded/Rules+2026-27.pdf
+    checked: '2026-11-13'
+  - label: Great Aycliffe Town Council, Oakleaf Sports Complex darts
+    url: https://www.great-aycliffe.gov.uk/?p=30983
+    checked: '2026-11-13'
+  - label: American Darts Organization, Current affiliations
+    url: https://www.adodarts.com/?p=139
+    checked: '2026-11-13'
+  - label: American Darts Organization, Individual membership application
+    url: https://adodarts.com/join-the-ado/individual-membership-application
+    checked: '2026-11-13'
+  - label: Ventura County Dart Association, Sign up
+    url: https://vcda.org/sign-up.php
+    checked: '2026-11-13'
+  kit:
+  - name: Bristle dartboard
+    why: for practising at home
+    url: https://www.amazon.co.uk/s?k=bristle+dartboard
+  - name: Steel-tip darts
+    why: your own set of three, so every throw feels the same
+    url: https://www.amazon.co.uk/s?k=steel+tip+darts
+  - name: Oche mat
+    why: marks the throw line on the floor at home
+    url: https://www.amazon.co.uk/s?k=darts+oche+mat
+  related:
+  - join-a-chess-club
+  - lawn-bowls
+  - play-table-tennis
+  - learn-to-play-bridge
