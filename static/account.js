@@ -274,7 +274,7 @@
     404: 'We could not find that code. Check each character: codes never use 0, O, 1, I or L.',
     410: 'This code is no longer valid. Please ask the person who gave it to you.',
     429: 'Too many tries in the last hour. Please wait a little and try again.',
-    503: 'Gift codes cannot be used just now. Please try again later.',
+    503: 'Gift codes cannot be used just now. Please try again later. Your code has not been used.',
   };
   const codeIn = $('#acct-code'), codeErr = $('[data-acct-code-err]'), codeOk = $('[data-acct-code-ok]');
   function codeSay(msg) { codeErr.textContent = msg; codeErr.hidden = !msg; codeIn.setAttribute('aria-invalid', msg ? 'true' : 'false'); if (msg) codeIn.focus(); }

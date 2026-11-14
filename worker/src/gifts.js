@@ -57,6 +57,8 @@ export async function open(env, id, box) {
     return new TextDecoder().decode(pt);
   } catch { return null; }
 }
+// A snapshot of one account's memberships in one mode (bind: user id, mode), compared when a gift code is spent
+const FPRINT = `(SELECT COALESCE(group_concat(f, ','), '') FROM (SELECT subscription || '/' || status || '/' || COALESCE(period_end, '') || '/' || cancel_at_end AS f FROM memberships WHERE user_id = ? AND mode = ? ORDER BY subscription))`;
 // Twelve calendar months on from a moment (29 February runs to 1 March).
 export function yearOn(t) { const d = new Date(t * 1000); d.setUTCFullYear(d.getUTCFullYear() + 1); return Math.floor(d.getTime() / 1000); }
 
@@ -172,28 +174,38 @@ export async function redeem(env, req, s, body, h) {
   if (g.status !== 'paid') return h.json(env, { error: 'void' }, 410);   // refunded or disputed
   // when does the year start? Now, unless Plus already runs to a known end: then from that end, so nothing is lost.
   // A subscription that renews would bill on top of the gift, so the member is asked to stop its renewal first.
-  const t = now();
-  const rows = (await env.DB.prepare(`SELECT subscription, status, plan, period_end, cancel_at_end FROM memberships WHERE user_id = ? AND mode = ?`).bind(s.id, g.mode).all()).results || [];
-  let start = t;
-  for (const m of rows) {
-    const gift = m.plan === 'gift';
-    const live = gift ? (m.period_end || 0) > t : ['active', 'trialing', 'past_due'].includes(m.status);
-    if (!live) continue;
-    if (!gift && !m.cancel_at_end) return h.json(env, { error: 'renewing', until: m.period_end || null }, 409);
-    start = Math.max(start, m.period_end || t);
+  // Two codes redeemed by one account at the same instant (or a webhook changing its membership meanwhile) must not
+  // give overlapping years: the code is spent only if the account's memberships are still exactly as they were read
+  // (FPRINT); otherwise read again and work the start out afresh, up to three times.
+  for (let tries = 0; tries < 3; tries++) {
+    const t = now();
+    const fp = (await env.DB.prepare(`SELECT ${FPRINT} AS f`).bind(s.id, g.mode).first())?.f ?? null;
+    const rows = (await env.DB.prepare(`SELECT subscription, status, plan, period_end, cancel_at_end FROM memberships WHERE user_id = ? AND mode = ?`).bind(s.id, g.mode).all()).results || [];
+    let start = t;
+    for (const m of rows) {
+      const gift = m.plan === 'gift';
+      const live = gift ? (m.period_end || 0) > t : ['active', 'trialing', 'past_due'].includes(m.status);
+      if (!live) continue;
+      if (!gift && !m.cancel_at_end) return h.json(env, { error: 'renewing', until: m.period_end || null }, 409);
+      start = Math.max(start, m.period_end || t);
+    }
+    const until = yearOn(start);
+    // spend the code and start the year together: either both happen or neither does, and a code spent by someone
+    // else a moment earlier gives this account nothing (the INSERT only runs if this account is the one recorded)
+    await env.DB.batch([
+      env.DB.prepare(`UPDATE gifts SET status = 'redeemed', redeemed_by = ?, redeemed_at = ?, code_box = NULL WHERE id = ? AND status = 'paid' AND (SELECT ${FPRINT}) IS ?`).bind(s.id, t, g.id, s.id, g.mode, fp),
+      env.DB.prepare(`INSERT OR IGNORE INTO memberships (subscription, user_id, status, plan, period_end, cancel_at_end, updated, mode)
+        SELECT 'gift_' || id, ?, 'active', 'gift', ?, 1, ?, mode FROM gifts WHERE id = ? AND redeemed_by = ? AND redeemed_at = ? AND status = 'redeemed'`).bind(s.id, until, t, g.id, s.id, t),
+    ]);
+    const won = await env.DB.prepare(`SELECT period_end FROM memberships WHERE subscription = ? AND user_id = ?`).bind('gift_' + g.id, s.id).first();
+    if (won) {
+      const m = await membership(env, s.id);
+      return h.json(env, { ok: true, from: start, until: won.period_end, plus: { member: m.member, plan: m.plan || null, until: m.until || null, ending: !!m.ending } });
+    }
+    const st = await env.DB.prepare(`SELECT status FROM gifts WHERE id = ?`).bind(g.id).first();
+    if (!st || st.status !== 'paid') return h.json(env, st && st.status !== 'redeemed' ? { error: 'void' } : { error: 'used' }, st && st.status !== 'redeemed' ? 410 : 409);
   }
-  const until = yearOn(start);
-  // spend the code and start the year together: either both happen or neither does, and a code spent by someone
-  // else a moment earlier gives this account nothing (the INSERT only runs if this account is the one recorded)
-  await env.DB.batch([
-    env.DB.prepare(`UPDATE gifts SET status = 'redeemed', redeemed_by = ?, redeemed_at = ?, code_box = NULL WHERE id = ? AND status = 'paid'`).bind(s.id, t, g.id),
-    env.DB.prepare(`INSERT OR IGNORE INTO memberships (subscription, user_id, status, plan, period_end, cancel_at_end, updated, mode)
-      SELECT 'gift_' || id, ?, 'active', 'gift', ?, 1, ?, mode FROM gifts WHERE id = ? AND redeemed_by = ? AND redeemed_at = ? AND status = 'redeemed'`).bind(s.id, until, t, g.id, s.id, t),
-  ]);
-  const won = await env.DB.prepare(`SELECT period_end FROM memberships WHERE subscription = ? AND user_id = ?`).bind('gift_' + g.id, s.id).first();
-  if (!won) return h.json(env, { error: 'used' }, 409);
-  const m = await membership(env, s.id);
-  return h.json(env, { ok: true, from: start, until: won.period_end, plus: { member: m.member, plan: m.plan || null, until: m.until || null, ending: !!m.ending } });
+  return h.json(env, { error: 'busy' }, 503);   // the membership kept changing: nothing spent, try again
 }
 
 // Deleting an account: gifts it bought keep working (someone may have the card), but its copy of the codes goes;

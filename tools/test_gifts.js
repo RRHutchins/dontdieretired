@@ -204,6 +204,33 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) { return `
     assert.deepStrictEqual([rb.status, rc.status].sort(), [200, 409]);
     assert.strictEqual(e.DB.raw.prepare(`SELECT COUNT(*) n FROM memberships WHERE plan = 'gift'`).get().n, 1);
   });
+  await t('one account using two codes at the same instant gets two years, one after the other', async () => {
+    const e = env(), a = await login(e, 'buyer@example.com'), b = await login(e, 'b@example.com');
+    const g1 = await buy(e, a), g2 = await buy(e, a);
+    // hold each write back a moment, so both requests have read the account before either writes (as can happen on D1)
+    const realBatch = e.DB.batch.bind(e.DB);
+    e.DB.batch = async stmts => { await new Promise(r => setTimeout(r, 30)); return realBatch(stmts); };
+    const rs = await Promise.all([redeem(e, b, g1.code), redeem(e, b, g2.code)]);
+    e.DB.batch = realBatch;
+    assert.deepStrictEqual(rs.map(r => r.status), [200, 200]);
+    const ends = e.DB.raw.prepare(`SELECT period_end FROM memberships WHERE plan = 'gift' AND user_id = ? ORDER BY period_end`).all(b.id).map(r => r.period_end);
+    assert.strictEqual(ends.length, 2);
+    assert.strictEqual(ends[1], G.yearOn(ends[0]), 'the second year starts where the first ends');
+    assert.strictEqual((await me(e, b.cookie)).plus.until, ends[1]);
+    assert.strictEqual(e.DB.raw.prepare(`SELECT COUNT(*) n FROM gifts WHERE status = 'redeemed'`).get().n, 2);
+  });
+  await t('a membership that keeps changing while a code is used: nothing spent, "try again"', async () => {
+    const e = env(), a = await login(e, 'buyer@example.com'), b = await login(e, 'b@example.com');
+    const g = await buy(e, a);
+    const realBatch = e.DB.batch.bind(e.DB);
+    let n = 0;
+    e.DB.batch = async stmts => { n++; e.DB.raw.prepare(`INSERT INTO memberships (subscription, user_id, status, plan, period_end, cancel_at_end, updated) VALUES (?, ?, 'canceled', 'month', 0, 1, 0)`).run('sub_x' + n, b.id); return realBatch(stmts); };
+    const r = await redeem(e, b, g.code);
+    e.DB.batch = realBatch;
+    assert.strictEqual(r.status, 503); assert.strictEqual(n, 3, 'three tries');
+    assert.strictEqual(e.DB.raw.prepare(`SELECT status FROM gifts`).get().status, 'paid', 'the code is not spent');
+    assert.strictEqual((await redeem(e, b, g.code)).status, 200, 'and works on the next try');
+  });
   await t('guessing is throttled: ten tries an hour per account, thirty per network', async () => {
     const e = env(), b = await login(e, 'guess@example.com');
     let last; for (let i = 0; i < 11; i++) last = await redeem(e, b, G.showCode(G.newCode()));
