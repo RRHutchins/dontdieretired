@@ -11,7 +11,7 @@ photo_file: "File:Nellie Bly Reception 1890.jpg"
 photo_caption: "The reception for Nellie Bly at Jersey City on the completion of her journey, as Frank Leslie's Illustrated Newspaper pictured it in February 1890, from sketches by C. Bunnell; the insets show her being presented with a golden globe and arriving in Philadelphia."
 photo_alt: "A black-and-white engraving: in a crowded station hall a woman in a long checked dress faces a man in a top hat, with spectators waving from a gallery; one inset shows her receiving a globe, another a crowd running beside a train."
 photo_checked: 2026-11-12
-hook: "A reporter, a satchel 16 inches wide, and 25,000 miles by steamship, train and rickshaw to beat a fictional record."
+hook: "A reporter, a 16 inch wide satchel and 25,000 miles by steamship, train and rickshaw."
 lesson: "Travelling light is a decision about what matters; Nellie Bly packed for speed and left the rest behind."
 standfirst: "In November 1889 a New York reporter set out to beat Phileas Fogg's fictional 80 days. A rival magazine sent a second woman the other way the same afternoon, and nobody told her."
 summary: "How Nellie Bly of the New York World went around the world in 72 days in 1889 and 1890, what she packed, her visit to Jules Verne, the rival trip by Elizabeth Bisland for Cosmopolitan, and where the museum and broadcast accounts disagree."

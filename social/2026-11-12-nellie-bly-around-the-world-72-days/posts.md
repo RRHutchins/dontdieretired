@@ -1,6 +1,6 @@
 ## facebook
 
-A reporter, a satchel 16 inches wide, and 25,000 miles by steamship, train and rickshaw to beat a fictional record.
+A reporter, a 16 inch wide satchel and 25,000 miles by steamship, train and rickshaw.
 
 How Nellie Bly of the New York World went around the world in 72 days in 1889 and 1890, what she packed, her visit to Jules Verne, the rival trip by Elizabeth Bisland for Cosmopolitan, and where the museum and broadcast accounts disagree.
 
@@ -12,7 +12,7 @@ Read the full story → https://dontdieretired.com/curious/nellie-bly-around-the
 
 ## instagram
 
-A reporter, a satchel 16 inches wide, and 25,000 miles by steamship, train and rickshaw to beat a fictional record.
+A reporter, a 16 inch wide satchel and 25,000 miles by steamship, train and rickshaw.
 
 Travelling light is a decision about what matters; Nellie Bly packed for speed and left the rest behind.
 
@@ -22,7 +22,7 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-A reporter, a satchel 16 inches wide, and 25,000 miles by steamship, train and rickshaw to beat a fictional record. Travelling light is a decision about what matters; Nellie Bly packed for speed and…
+A reporter, a 16 inch wide satchel and 25,000 miles by steamship, train and rickshaw. Travelling light is a decision about what matters; Nellie Bly packed for speed and…
 
 https://dontdieretired.com/curious/nellie-bly-around-the-world-72-days/?utm_source=x&utm_medium=social&utm_campaign=daily
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/curious/nellie-bly-around-the-world-72-days/?utm_sour
 
 ## x_thread
 
-1/ A reporter, a satchel 16 inches wide, and 25,000 miles by steamship, train and rickshaw to beat a fictional record.
+1/ A reporter, a 16 inch wide satchel and 25,000 miles by steamship, train and rickshaw.
 
 ---
 
