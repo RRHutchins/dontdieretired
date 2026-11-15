@@ -234,7 +234,7 @@ export async function handle(req, env) {
       extra = { 'set-cookie': setCookie(s.token, maxAge) };
     }
     const m = await Plus.membership(env, s.id);
-    const plus = { member: m.member, plan: m.plan || null, until: m.until || null, ending: !!m.ending, status: m.status || null, gift_until: m.gift_until || null, then: m.then || null };
+    const plus = { member: m.member, plan: m.plan || null, until: m.until || null, ending: !!m.ending, status: m.status || null, gift_until: m.gift_until || null, then: m.then || null, paid_plan: m.paid_plan || null, paid_until: m.paid_until || null, gifts: m.gifts || 0 };
     return json(env, { signed_in: true, email: s.email, account: s.id, plus, payments: Plus.payReady(env), gifts: Gifts.giftReady(env), feed: await Feed.state(env, s.id) }, 200, extra);
   }
 

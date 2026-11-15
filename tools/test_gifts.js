@@ -386,6 +386,18 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) { return `
     await hook(e, evt('customer.subscription.updated', { id: 'sub_rn', object: 'subscription' }));
     assert.strictEqual(calls.filter(c => c.method === 'POST' && c.url.includes('subscriptions/')).length, before);
   });
+  await t('16 Nov: the account page hears of a paid plan ending before the gifts only when it is active (paid), not past_due or trialing', async () => {
+    const e = env(), b = await login(e, 'stack@example.com'), t0 = nowS();
+    const ins = e.DB.raw.prepare(`INSERT INTO memberships (subscription, user_id, status, plan, period_end, cancel_at_end, updated, mode) VALUES (?, ?, ?, ?, ?, ?, ?, 'test')`);
+    ins.run('gift_a', b.id, 'active', 'gift', t0 + 400 * 86400, 1, t0);
+    for (const [status, ending, want] of [['active', 1, 'year'], ['past_due', 1, null], ['trialing', 1, null], ['active', 0, null], ['canceled', 1, null]]) {
+      e.DB.raw.prepare(`DELETE FROM memberships WHERE subscription = 'sub_s'`).run();
+      ins.run('sub_s', b.id, status, 'year', t0 + 30 * 86400, ending, t0);
+      const m = await P.membership(e, b.id);
+      assert.strictEqual(m.plan, 'gift'); assert.strictEqual(m.paid_plan, want, status + (ending ? ', ending' : ', renewing'));
+      assert.strictEqual(m.paid_until, want ? t0 + 30 * 86400 : null); assert.strictEqual(m.gifts, 1);
+    }
+  });
   await t('15 Nov: "Renew" in the portal at the same moment as a second gift is used never leaves a payment due inside a gift', async () => {
     // the day 21 checker's "opposite race": the webhook reads the gift's end just before a second gift is redeemed, so
     // the next payment could land one gift-year early. Tried in every order the two can interleave on D1.
@@ -424,6 +436,10 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) { return `
       assert.strictEqual(row.period_end, stripeNext, `our record matches Stripe; ${where}`);
       assert.strictEqual(!!row.cancel_at_end, stops, `our record says whether it renews, as Stripe does; ${where}`);
       if (rr.status === 200) assert.ok(stops, 'two gift-years ahead is past what Stripe can put a payment off by: the renewal is stopped');
+      // 16 Nov: the account page is told the paid plan runs to its end and stops there (the checker's 15 Nov "Left (low)")
+      const pm = (await me(e, b.cookie)).plus;
+      if (stops) assert.deepStrictEqual([pm.plan, pm.paid_plan, pm.paid_until, pm.gifts], ['gift', 'year', stripeNext, 2], `the page can say the yearly plan ends ${where}`);
+      else assert.strictEqual(pm.paid_plan, null, `a plan that carries on is not reported as ending; ${where}`);
     }
     assert.strictEqual(combos, 18); assert.ok(refused > 0, 'some orders refuse the second code'); assert.ok(used > 0, 'and some use it (so the stopped renewal is tried)');
   });

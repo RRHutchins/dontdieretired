@@ -181,7 +181,7 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
     assert.strictEqual(r.status, 200);
     assert.ok(stripeCalls().some(c => c.method === 'GET' && c.url.includes('/subscriptions/sub_2')), 'fetched fresh');
     const m = await me(e, a.cookie);
-    assert.deepStrictEqual(m.plus, { member: true, plan: 'year', until: 1893456000, ending: false, status: 'active', gift_until: null, then: null });
+    assert.deepStrictEqual(m.plus, { member: true, plan: 'year', until: 1893456000, ending: false, status: 'active', gift_until: null, then: null, paid_plan: null, paid_until: null, gifts: 0 });
     assert.strictEqual(m.payments, true);
     assert.strictEqual(e.DB.raw.prepare('SELECT stripe_customer FROM users').get().stripe_customer, 'cus_2');
     assert.strictEqual((await post(e, '/plus/checkout', { plan: 'month' }, { cookie: a.cookie })).status, 409, 'cannot pay twice');

@@ -130,8 +130,13 @@ export async function membership(env, userId) {
   // the latest end of a gift still running, and whether a subscription is set to take over from it
   const gifts = rows.filter(r => r.plan === 'gift' && liveRow(r, t)).map(r => r.period_end);
   const next = rows.find(r => r.plan !== 'gift' && MEMBER.has(r.status) && !r.cancel_at_end);
+  // 16 Nov: a paid plan still running in front of the gifts but set to end (the member cancelled it, or syncSubscription
+  // stopped a renewal that would have charged inside stacked gifts), so the account page can say what happens to it.
+  // Only 'active': a past_due plan is not paid up, and a trialing one was never paid (review, 16 Nov)
+  const paid = gift ? rows.find(r => r.plan !== 'gift' && r.status === 'active' && r.cancel_at_end && (r.period_end || 0) > t) : null;
   return { member, status: gift ? (member ? 'active' : 'ended') : m.status, plan: m.plan || null, until: m.period_end || null, ending: member && !!m.cancel_at_end,
-    subscription: m.subscription, gift_until: gifts.length ? Math.max(...gifts) : null, then: gift && next ? (next.plan || 'subscription') : null };
+    subscription: m.subscription, gift_until: gifts.length ? Math.max(...gifts) : null, then: gift && next ? (next.plan || 'subscription') : null,
+    paid_plan: paid ? paid.plan || null : null, paid_until: paid ? paid.period_end || null : null, gifts: gifts.length };
 }
 
 // Read the subscription fresh from Stripe and store what it says now. Events can arrive late, twice or out of

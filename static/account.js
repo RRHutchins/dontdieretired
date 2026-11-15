@@ -92,6 +92,9 @@
     $('[data-acct-plus-manage]').hidden = $('[data-acct-plus-note]').hidden = !(me.payments && sub && (p.member || p.status));
     const kind = PLAN[p.plan] ? ' (' + PLAN[p.plan] + ')' : '';
     if (p.member && p.gift_until && sub) state.textContent = 'You have Planner Plus as a gift until ' + day(p.gift_until) + '. ' + (p.ending ? 'You cancelled the plan that was to follow it, so you will not be charged.' : 'Your ' + PLAN[p.plan] + ' plan follows it: the first payment is taken on ' + day(p.until) + '.');
+    // 16 Nov: a paid plan runs in front of the gifts and is set to end (cancelled, or stopped because the gifts already cover the time after it)
+    else if (giftOnly && p.paid_until && PLAN[p.paid_plan]) { const g = p.gifts > 1 ? ['your gifts', 'the gifts cover', 'gifts end'] : ['your gift', 'the gift covers', 'gift ends'];
+      state.textContent = 'You have Planner Plus until ' + (p.until ? day(p.until) : 'your ' + g[2]) + ': your ' + PLAN[p.paid_plan] + ' plan, paid up to ' + day(p.paid_until) + ', then ' + g[0] + '. The ' + PLAN[p.paid_plan] + ' plan is set not to renew, so you will not be charged again: ' + g[1] + ' the time after it. If it is ever renewed, you are still never charged for time a gift already gives: the next payment is moved to when your ' + g[2] + ', or the plan is set back to end.'; }
     else if (giftOnly) state.textContent = 'You have Planner Plus as a gift until ' + (p.until ? day(p.until) : 'the end of its twelve months') + '. It does not renew, so you will not be charged.';
     else if (p.member && p.status === 'past_due') state.textContent = 'You have Planner Plus' + kind + ', but your last payment did not go through. Stripe will try your card again; you can change it below.';
     else if (p.member && p.ending) state.textContent = 'You have Planner Plus' + kind + ' until ' + (p.until ? day(p.until) : 'the end of the time you have paid for') + '. It will not renew, and you will not be charged again.';

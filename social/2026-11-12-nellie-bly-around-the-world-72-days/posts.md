@@ -22,7 +22,7 @@ Full story at the link in our bio (dontdieretired.com).
 
 ## x
 
-A reporter, a 16 inch wide satchel and 25,000 miles by steamship, train and rickshaw. Travelling light is a decision about what matters; Nellie Bly packed for speed and…
+A reporter, a 16 inch wide satchel and 25,000 miles by steamship, train and rickshaw. Travelling light is a decision about what matters; Nellie Bly packed for speed and left the rest behind.
 
 https://dontdieretired.com/curious/nellie-bly-around-the-world-72-days/?utm_source=x&utm_medium=social&utm_campaign=daily
 
