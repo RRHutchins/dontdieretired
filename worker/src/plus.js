@@ -189,6 +189,15 @@ async function syncSubscription(env, subId, hintUser) {
       const x = await stripe(env, 'POST', 'subscriptions/' + sub.id, { trial_end: until, proration_behavior: 'none' }, 'ddr-gift-trial-' + sub.id + '-' + until);
       if (!x.ok) return false;   // Stripe will send the event again, and we try again
       await env.DB.prepare(`UPDATE memberships SET status = 'trialing', period_end = ? WHERE subscription = ?`).bind(until, sub.id).run();
+    } else if (until && until > end + 86400 && until - now() > TRIAL_MAX) {
+      // 15 Nov: gifts stacked further ahead than Stripe lets a payment be put off (two years): the renewal would charge
+      // inside time already given. Set it to end with what is paid for instead; the gifts carry the member on, and near
+      // the last gift's end the account page offers a plan to follow it, as for any gift.
+      const x = await stripe(env, 'POST', 'subscriptions/' + sub.id, { cancel_at_period_end: true });   // no idempotency key: setting it twice is harmless, and a cached reply must never hide a later "Renew"
+      if (!x.ok) { console.error('could not stop a renewal that would charge inside a gift: set it to cancel at period end in Stripe by hand', sub.id); return false; }
+      // record what Stripe now says (a later "Renew" may already have reached it), not what we asked for
+      const stops = x.data && x.data.cancel_at_period_end === true;
+      await env.DB.prepare(`UPDATE memberships SET cancel_at_end = ? WHERE subscription = ? AND status NOT IN ('canceled', 'incomplete_expired')`).bind(stops ? 1 : 0, sub.id).run();
     }
   }
   return true;

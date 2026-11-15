@@ -26,6 +26,7 @@ globalThis.fetch = async (url, init = {}) => {
   if (/^customers\/cus_\w+$/.test(p) && method === 'DELETE') { for (const x of Object.values(S.subs)) if (x.customer === p.split('/')[1]) x.status = 'canceled'; return reply({ deleted: true }); }
   if (p === 'subscriptions' && method === 'GET') return reply({ data: Object.values(S.subs).filter(x => x.customer === u.searchParams.get('customer')) });
   const sm = /^subscriptions\/(sub_\w+)$/.exec(p);
+  if (sm && method === 'POST' && parseForm(init.body).cancel_at_period_end === 'true') { const x = S.subs[sm[1]]; x.cancel_at_period_end = true; x.updated_with = parseForm(init.body); return reply(x); }
   if (sm && method === 'POST') { const b = parseForm(init.body), x = S.subs[sm[1]]; x.status = 'trialing'; x.trial_end = +b.trial_end; x.items.data[0].current_period_end = +b.trial_end; x.updated_with = b; return reply(x); }
   if (sm) return S.subs[sm[1]] ? reply(S.subs[sm[1]]) : reply({}, 404);
   const pm = /^payment_intents\/(pi_\w+)$/.exec(p);
@@ -384,6 +385,47 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) { return `
     const before = calls.filter(c => c.method === 'POST' && c.url.includes('subscriptions/')).length;
     await hook(e, evt('customer.subscription.updated', { id: 'sub_rn', object: 'subscription' }));
     assert.strictEqual(calls.filter(c => c.method === 'POST' && c.url.includes('subscriptions/')).length, before);
+  });
+  await t('15 Nov: "Renew" in the portal at the same moment as a second gift is used never leaves a payment due inside a gift', async () => {
+    // the day 21 checker's "opposite race": the webhook reads the gift's end just before a second gift is redeemed, so
+    // the next payment could land one gift-year early. Tried in every order the two can interleave on D1.
+    const realFetch = globalThis.fetch;
+    let combos = 0, refused = 0, used = 0;
+    for (const holdBatch of [0, 10, 40]) for (const holdStripe of [0, 10, 40]) for (const first of ['redeem', 'hook']) {
+      const e = env(), a = await login(e, 'buyer@example.com'), b = await login(e, 'b@example.com');
+      const g1 = await buy(e, a), g2 = await buy(e, a);
+      const end = nowS() + 30 * 86400, sid = 'sub_race' + (++combos), cust = 'cus_race' + combos;
+      e.DB.raw.prepare('UPDATE users SET stripe_customer = ? WHERE id = ?').run(cust, b.id);
+      S.subs[sid] = { id: sid, object: 'subscription', customer: cust, status: 'active', cancel_at_period_end: true, metadata: {}, items: { data: [{ current_period_end: end, price: { lookup_key: 'ddr_plus_year' } }] } };
+      await hook(e, evt('customer.subscription.updated', { id: sid, object: 'subscription' }));
+      assert.strictEqual((await redeem(e, b, g1.code)).status, 200);
+      S.subs[sid].cancel_at_period_end = false;          // "Renew" pressed in the portal
+      const realBatch = e.DB.batch.bind(e.DB);
+      e.DB.batch = async stmts => { await new Promise(r => setTimeout(r, holdBatch)); return realBatch(stmts); };
+      globalThis.fetch = async (url, init) => { if (String(url).includes('/subscriptions/')) await new Promise(r => setTimeout(r, holdStripe)); return realFetch(url, init); };
+      const go = { redeem: () => redeem(e, b, g2.code), hook: () => hook(e, evt('customer.subscription.updated', { id: sid, object: 'subscription' })) };
+      const other = first === 'redeem' ? 'hook' : 'redeem';
+      const p1 = go[first](); await new Promise(r => setTimeout(r, 1)); const p2 = go[other]();
+      const [r1, r2] = await Promise.all([p1, p2]);
+      e.DB.batch = realBatch; globalThis.fetch = realFetch;
+      const rr = first === 'redeem' ? r1 : r2, rh = first === 'redeem' ? r2 : r1;
+      assert.strictEqual(rh.status, 200);
+      // Stripe may send the event again (it does after any change): the member's state then settles
+      await hook(e, evt('customer.subscription.updated', { id: sid, object: 'subscription' }));
+      const giftEnd = e.DB.raw.prepare(`SELECT MAX(period_end) AS u FROM memberships WHERE user_id = ? AND plan = 'gift'`).get(b.id).u;
+      const row = e.DB.raw.prepare(`SELECT status, period_end, cancel_at_end FROM memberships WHERE subscription = ?`).get(sid);
+      const stripeNext = S.subs[sid].items.data[0].current_period_end;
+      const spent = e.DB.raw.prepare(`SELECT status FROM gifts WHERE id = (SELECT id FROM gifts ORDER BY rowid DESC LIMIT 1)`).get().status;
+      if (rr.status === 200) { used++; assert.strictEqual(spent, 'redeemed'); }
+      else { refused++; assert.strictEqual(rr.status, 409); assert.strictEqual((await rr.json()).error, 'renewing'); assert.strictEqual(spent, 'paid', 'a refused code is not spent'); }
+      const where = `batch +${holdBatch}ms, Stripe +${holdStripe}ms, ${first} first`;
+      const stops = S.subs[sid].cancel_at_period_end === true;
+      assert.ok(stops || stripeNext >= giftEnd, `next payment ${stripeNext} falls inside the gifts (to ${giftEnd}); ${where}`);
+      assert.strictEqual(row.period_end, stripeNext, `our record matches Stripe; ${where}`);
+      assert.strictEqual(!!row.cancel_at_end, stops, `our record says whether it renews, as Stripe does; ${where}`);
+      if (rr.status === 200) assert.ok(stops, 'two gift-years ahead is past what Stripe can put a payment off by: the renewal is stopped');
+    }
+    assert.strictEqual(combos, 18); assert.ok(refused > 0, 'some orders refuse the second code'); assert.ok(used > 0, 'and some use it (so the stopped renewal is tried)');
   });
   await t('review day 20: a gift bought with a test card cannot be used, or seen, once the key is live', async () => {
     const e = env(), a = await login(e, 'testbuyer@example.com'), b = await login(e, 'testtaker@example.com');
