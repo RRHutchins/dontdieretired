@@ -948,8 +948,9 @@ def build(make_social=True):
         # the one worked sample plan non-members see (RUNBOOK §6t day 15): noindex, not in the sitemap until launch
         _sp = _pdata["sample"]; _sc = next((c for c in chs if c["id"] == _sp["activity"]), None)
         assert _sc is not None, f"planner plus.sample_plan: no activity {_sp['activity']}"
-        out("/planner-plus/sample/", "plus-sample.html", c=_sc, sample=_sp, pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"], "plus": _pdata["plus"]},
+        _u = out("/planner-plus/sample/", "plus-sample.html", c=_sc, sample=_sp, pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"], "plus": _pdata["plus"]},
             pkind=_pdata["kinds"][_sc["kind"]], pext={i: _pby[i] for i in [n[0] for n in _sc["plan"]["nearby"]] + _sc["plan"]["goes"]})
+        if _paywall: urls.append(_u)   # launch: the sample is a public page (My year and the account stay noindex: personal, nothing to index)
         urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}, colls=colls, shapes=shapes, area_n=area_n))
         # the world map is loaded only when a reader opens its tab: a file of clickable country shapes
         if "world" in shapes:

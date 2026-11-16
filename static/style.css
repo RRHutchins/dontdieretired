@@ -548,7 +548,7 @@ dialog.modal-card::backdrop{background:rgba(0,0,0,.55)}
 .h3{font-family:var(--serif);font-size:1.25rem;line-height:1.15;letter-spacing:-.01em;margin:.2em 0 .5em}.video .h3{margin:.6em 0 .2em}.card .h3{font-size:1.3rem;line-height:1.2;margin:.25em 0 .4em}.card .h3 a{color:var(--ink);text-decoration:none}.card .h3 a:hover{color:var(--brand)}
 /* Header: two rows whenever one row cannot hold the name, the menu and the buttons (tablets, and laptops
    zoomed to 200%), so the page never scrolls sideways. The Topics panel hangs from the header itself. */
-@media (max-width:1040px){
+@media (max-width:1199px){
   .header-inner{flex-wrap:wrap;gap:4px 14px;min-height:0;padding-top:9px;padding-bottom:5px}
   .header-cta{margin-left:auto}
   .nav{order:3;flex:1 0 100%!important;justify-content:flex-start!important;gap:20px}
@@ -1232,5 +1232,13 @@ h1{line-height:1.04}
 .fl-map path.has:focus-visible{stroke:var(--ink);stroke-width:3}
 /* Keyboard focus and #links never land under the sticky header (WCAG 2.4.11): room for the header at each width */
 html{scroll-padding-top:84px}
-@media (max-width:1099px){html{scroll-padding-top:132px}}
+@media (max-width:1199px){html{scroll-padding-top:132px}}
 @media (max-width:339px){html{scroll-padding-top:148px}}
+
+/* Header fixes (16 Nov 2026). (1) The one-row header needs about 1,200px: between 1,041 and 1,199px it scrolled sideways,
+   so it now takes two rows up to 1,199px. (2) From launch (plus.paywall) the menu gains "My year" (.nav-plus): on a
+   laptop up to 1,399px "Videos" leaves the header (it stays in the footer) and the gaps close a little; on a phone
+   "My year" takes the Email link's place (the email sign-up is still at the foot of every page). */
+@media (min-width:1200px) and (max-width:1399px){.nav.nav-plus{gap:10px}.nav.nav-plus .nav-videos{display:none}}
+@media (max-width:560px){.nav.nav-plus .nav-email{display:none!important}}
+@media (max-width:359px){.nav.nav-plus{gap:7px!important;font-size:.87rem}}

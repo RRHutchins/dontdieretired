@@ -1,5 +1,5 @@
 // Accessibility pass for the planner and Planner Plus pages (Planner Plus day 21, RUNBOOK §6t, §6k).
-// Opens each page of a built site at 320, 390 and 1280px in Chromium and reports:
+// Opens each page of a built site at 320, 390, 1100 and 1280px (1100: the two-row laptop header) in Chromium and reports:
 //   sideways scroll; buttons, form fields, summaries and button-style links under 44px tall; a focus ring
 //   that does not show when the element is reached by keyboard; console errors; and, if axe-core is given,
 //   its WCAG 2.x A/AA findings.
@@ -12,7 +12,7 @@ const PAGES = (process.env.A11Y_PAGES || [
   '/', '/list/', '/list/take-up-beekeeping/', '/list/go-to-edinburgh-fringe/', '/list/run-great-north-run/',
   '/my-year/', '/account/', '/redeem/', '/planner-plus/', '/planner-plus/gift/', '/planner-plus/terms/', '/planner-plus/sample/', '/privacy/',
 ].join(',')).split(',');
-const WIDTHS = (process.env.A11Y_WIDTHS || '320,390,1280').split(',').map(Number);
+const WIDTHS = (process.env.A11Y_WIDTHS || '320,390,1100,1280').split(',').map(Number);
 const TYPES = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.woff2': 'font/woff2', '.ics': 'text/calendar' };
 
 (async () => {

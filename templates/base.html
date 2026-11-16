@@ -39,8 +39,9 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/" aria-label="Don't Die Retired — home"><svg class="brand-mark" aria-hidden="true" width="34" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#B23A48"/><clipPath id="hdr"><rect width="100" height="58"/></clipPath><circle cx="50" cy="58" r="17" fill="#FBFAF7" clip-path="url(#hdr)"/><g stroke="#FBFAF7" stroke-width="4.5" stroke-linecap="round"><line x1="27.8" y1="52.0" x2="20.1" y2="50.0"/><line x1="33.7" y1="41.7" x2="28.1" y2="36.1"/><line x1="44.0" y1="35.8" x2="42.0" y2="28.1"/><line x1="56.0" y1="35.8" x2="58.0" y2="28.1"/><line x1="66.3" y1="41.7" x2="71.9" y2="36.1"/><line x1="72.2" y1="52.0" x2="79.9" y2="50.0"/></g><rect x="16" y="60" width="68" height="5" rx="2.5" fill="#FBFAF7"/><rect x="28" y="70" width="44" height="4" rx="2" fill="#FBFAF7" opacity=".75"/><rect x="38" y="79" width="24" height="3.5" rx="1.75" fill="#FBFAF7" opacity=".5"/></svg><span class="brand-name">Don't Die Retired</span></a>
-    <nav class="nav" aria-label="Main">
+    <nav class="nav{% if plus_paywall %} nav-plus{% endif %}" aria-label="Main">
       <a href="/list/" class="nav-lead" {% if path.startswith('/list/') %}aria-current="page"{% endif %}>Things to do</a>
+      {% if plus_paywall %}<a href="/my-year/" class="nav-myyear" {% if path.startswith('/my-year/') %}aria-current="page"{% endif %}>My year</a>{% endif %}
       <details class="topics" data-topics>
         <summary>Topics</summary>
         <div class="dd">
@@ -50,7 +51,7 @@
       </details>
       <a href="/puzzle/" {% if path.startswith('/puzzle/') %}aria-current="page"{% endif %}>Puzzles</a>
       <a href="/start-here/" class="hide-sm" {% if path.startswith('/start-here/') %}aria-current="page"{% endif %}>Start here</a>
-      <a href="/videos/" class="hide-sm" {% if path.startswith('/videos/') %}aria-current="page"{% endif %}>Videos</a>
+      <a href="/videos/" class="hide-sm nav-videos" {% if path.startswith('/videos/') %}aria-current="page"{% endif %}>Videos</a>
       {% if cfg.feedback.live %}<a href="/your-say/" class="hide-sm" {% if path.startswith('/your-say/') %}aria-current="page"{% endif %}>Your say</a>{% endif %}
       <a href="/shop/" {% if path.startswith('/shop/') %}aria-current="page"{% endif %}>Shop</a>
       <a href="/newsletter/" class="nav-email" {% if path.startswith('/newsletter/') %}aria-current="page"{% endif %}>Email</a>
@@ -109,7 +110,10 @@
       <a href="/editorial-policy/">Editorial policy &amp; corrections</a>
       <a href="/photo-credits/">Photo and film credits</a>
       <a href="/privacy/">Privacy &amp; cookies</a>
-      {% if plus_paywall %}<a href="/planner-plus/terms/">Planner Plus terms</a>{% endif %}
+      {% if plus_paywall %}<a href="/my-year/">My year</a>
+      <a href="/account/">Your account and gifts</a>
+      <a href="/planner-plus/">Planner Plus</a>
+      <a href="/planner-plus/terms/">Planner Plus terms</a>{% endif %}
       {{ contact('Contact') }}
       <button class="linklike" data-open-segments>Change my profile</button>
     </div>

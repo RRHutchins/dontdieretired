@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {# The one worked sample plan non-members see (RUNBOOK §6t, Planner Plus day 15). A real plan, built in the browser by
    static/planner.js from content/planner.yaml → plus.sample_plan, drawn read-only by static/plan-page.js. Not indexed
-   and not in the sitemap until launch. #}
+   and not in the sitemap until launch (plus.paywall), then both. #}
 {% set PP = pset.plus %}
 {% block title %}{{ PP.sample_title }} — {{ cfg.site.name }}{% endblock %}
 {% block description %}A real dated plan from Planner Plus, shown as a member sees it: steps to get ready, getting there, where to stay and eat, and more to do nearby.{% endblock %}
-{% block robots %}<meta name="robots" content="noindex">{% endblock %}
+{% block robots %}{% if not plus_paywall %}<meta name="robots" content="noindex">{% endif %}{% endblock %}
 {% block pagetype %}plus-sample{% endblock %}
 {% block content %}
 <article class="article fl-page">
