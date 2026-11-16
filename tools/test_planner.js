@@ -496,7 +496,10 @@ t('trip day 9: where to stay for a trip away (dated nights), folded for a single
   // US places get US hostels, not British ones; no place still asks first
   const us = acts.find(a => !a.where && a.country === 'US' && a.place_tied && a.kind !== 'habit');
   if (us) { const u = P.trip(us, data, { place: 'Portland, ME', date: '2027-05-01' }); assert.ok(u.stay.more.some(l => l.id === 'hi-usa') && !u.stay.more.some(l => l.id === 'yha')); }
-  const nd = P.trip(f, data, { date: '2027-08-14' }); assert.ok(nd.needs && !nd.stay && nd.head === T.head_away);
+  // no place typed: a place-tied activity without sourced `where:` asks first; one with it (the Fringe, since 16 Nov) does not
+  const bare = acts.find(a => a.place_tied && !a.where && a.kind !== 'habit');
+  const nd = P.trip(bare, data, { date: '2027-08-14' }); assert.ok(nd.needs && !nd.stay && nd.head === T.head_away);
+  const fw = P.trip(f, data, { date: '2027-08-14' }); assert.ok(!fw.needs && fw.sourced && fw.label === 'Edinburgh' && fw.stay);
   // every real activity: links only from planner.yaml, never an affiliate id, never a raw placeholder
   for (const a of acts) {
     const x = P.trip(a, data, { place: 'Town & "Place"', date: '2027-06-05', until: '2027-06-07' });
@@ -517,7 +520,8 @@ t('trip day 10: tour searches only for a trip away, with the place in them and o
   assert.strictEqual(P.trip(local, data, { place: 'Leeds', date: '2027-03-01' }).near, null);
   assert.ok(P.trip(local, data, { place: 'Leeds', date: '2027-03-01', until: '2027-03-02' }).near);
   assert.strictEqual(P.trip(habit, data, { place: 'Leeds', date: '2027-03-01' }).near, null);
-  assert.strictEqual(P.trip(f, data, { date: '2027-08-14' }).near, null, 'no place yet: nothing to search');
+  const bare = acts.find(a => a.place_tied && !a.where && a.kind !== 'habit');
+  assert.strictEqual(P.trip(bare, data, { date: '2027-08-14' }).near, null, 'no place yet: nothing to search');
   // only planner.yaml links of section near carry an affiliate id, and only these two
   data.trip.links.forEach(l => assert.ok(!l.aff || (l.section === 'near' && TOUR_AFF.includes(l.aff)), l.id));
   for (const a of acts) {
