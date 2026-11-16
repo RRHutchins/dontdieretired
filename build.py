@@ -282,6 +282,8 @@ def load_articles(cfg, credits=None, held=None):
             "scene": fm.get("art"),
         }
         a["photo"] = story_photo(fm, slug, credits or {})
+        # social photo cards (RUNBOOK §6l, Robin 16 Nov 2026): only Commons files a session has passed for social use
+        a["photo_social"] = bool(a["photo"] and a["photo"]["open"] and fm.get("photo_social") is True)
         if a["photo"]:
             a["art"] = a["photo"]["small"]
         a["video"] = story_video(fm, held or set())
@@ -401,11 +403,94 @@ def make_card(title: str, kicker: str, category: str, out: Path, size=(1200, 630
     img.save(out, optimize=True)
 
 
+def photo_credit_line(photo):
+    """The credit printed on a photo card: author, licence, source, and that we cropped it."""
+    return f"Photo: {photo['author']} · {photo['licence']} · Wikimedia Commons (cropped)"
+
+
+def make_photo_card(title: str, kicker: str, category: str, photo: dict, out: Path, size=(1080, 1080)):
+    """Social card with a credited Commons photograph (RUNBOOK §6l, social use; Robin 16 Nov 2026).
+
+    The photo is cropped to fill its panel and otherwise untouched: no text, logo or mark is laid on it, which keeps
+    share-alike licences simple. The headline sits on the topic colour beside or below it, with the credit line."""
+    fg, _bg = PALETTE.get(category, ("#333333", "#F3F3F3"))
+    cream = "#FBF6EE"
+    W0, H0 = size
+    S = 2
+    W, H = W0 * S, H0 * S
+    img = Image.new("RGB", (W, H), fg)
+    d = ImageDraw.Draw(img)
+    src = Image.open(STATIC / photo["src"].lstrip("/").removeprefix("static/")).convert("RGB")
+    wide = W > H * 1.2
+    if wide:
+        box = (0, 0, int(W * 0.5), H)
+    else:
+        box = (0, 0, W, int(H * (0.56 if H > W * 1.3 else 0.5)))
+    bw, bh = box[2] - box[0], box[3] - box[1]
+    sc = max(bw / src.width, bh / src.height)
+    rs = src.resize((max(bw, round(src.width * sc)), max(bh, round(src.height * sc))), Image.LANCZOS)
+    left, top = (rs.width - bw) // 2, (rs.height - bh) // 2
+    img.paste(rs.crop((left, top, left + bw, top + bh)), box[:2])
+    base = min(W, H)
+    pad = int((W - bw if wide else W) * (0.08 if wide else 0.065))
+    x0 = (bw if wide else 0) + pad
+    tw = W - x0 - pad
+    y0 = (0 if wide else bh) + int(pad * 0.8)
+    cf = ImageFont.truetype(FONT_REG, int(base * 0.026))
+    kf = ImageFont.truetype(FONT_REG, int(base * 0.042))
+    ff = ImageFont.truetype(FONT_REG, int(base * 0.038))
+    soft = _mix(fg, cream, 0.72)
+    # credit: under the photo on tall/square cards, at the foot of the panel on wide ones
+    credit = photo_credit_line(photo)
+    while d.textlength(credit, font=cf) > tw and cf.size > 14:
+        cf = ImageFont.truetype(FONT_REG, cf.size - 1)
+    d.text((x0, y0), kicker, font=kf, fill=soft)
+    y = y0 + int(kf.size * 1.7)
+    foot = H - pad - ff.size
+    limit = foot - cf.size * 2.6 - int(base * 0.02)
+    scale = 0.08 if not wide else 0.078
+    while True:
+        tf = ImageFont.truetype(FONT_BOLD, int(base * scale))
+        lh = int(tf.size * 1.14)
+        lines = wrap_text(d, title, tf, tw)
+        if y + len(lines) * lh <= limit or scale <= 0.045:
+            break
+        scale *= 0.93
+    maxl = max(1, int((limit - y) // lh))
+    if len(lines) > maxl:
+        lines = lines[:maxl]; lines[-1] = lines[-1].rstrip(" ,;:.") + "…"
+    for ln in lines:
+        d.text((x0, y), ln, font=tf, fill=cream); y += lh
+    d.text((x0, foot - cf.size * 2.2), credit, font=cf, fill=soft)
+    d.text((x0, foot), "dontdieretired.com", font=ff, fill=soft)
+    # the sunrise mark, small, in the panel's corner (never on the photo)
+    import math
+    r = int(base * 0.035); cx, cy = W - pad - r * 1.7, foot + ff.size * 0.85
+    for i in range(7):
+        ang = math.radians(195 + i * 25)
+        d.line([(cx + math.cos(ang) * r * 1.25, cy + math.sin(ang) * r * 1.25),
+                (cx + math.cos(ang) * r * 1.65, cy + math.sin(ang) * r * 1.65)], fill=_mix(fg, cream, 0.3), width=max(2, int(r * 0.13)))
+    d.pieslice([cx - r, cy - r, cx + r, cy + r], 180, 360, fill=_mix(fg, "#F2B45A", 0.85))
+    img = img.resize((W0, H0), Image.LANCZOS)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    img.save(out, optimize=True)
+
+
+def social_card(a, title, kicker, out, size):
+    """A photo card when the article's photo is passed for social use and its social date is on or after
+    PHOTO_SOCIAL_FROM; otherwise the usual headline card."""
+    if a.get("photo_social") and str(a.get("social_date") or a["date_iso"]) >= PHOTO_SOCIAL_FROM:
+        make_photo_card(title, kicker, a["category"], a["photo"], out, size=size)
+    else:
+        make_card(title, kicker, a["category"], out, size=size)
+
+
 # ---------------------------------------------------------------- social pack
 
 # Hashtags (Robin, 9 Nov 2026: adults are the audience, so no age tags). Every Instagram post carries the three brand
 # tags, one fixed tag for the topic and two from the article's own tags; X gets #DontDieRetired and one article tag;
 # Facebook gets #DontDieRetired. Never #over50, #activeageing, #seniors, #agingwell or #retirementlife (RUNBOOK §6d).
+PHOTO_SOCIAL_FROM = "2026-11-17"   # photo cards and photo credits in captions only for packs from this date (older packs are never rewritten)
 HASHTAGS_FROM = "2026-11-10"   # social packs dated before this keep their old text (changing a sent pack re-posts it)
 BRAND_HASHTAGS = ["#DontDieRetired", "#NeverRetireFromLife", "#TryNewThings"]
 TOPIC_HASHTAGS = {"move": "#MoveMore", "eat": "#CookFromScratch", "think": "#KeepLearning", "money": "#MoneyMatters",
@@ -471,6 +556,11 @@ def social_pack(a, cfg):
         "pinterest": f"{a['title']} | {lesson} | {utm('pinterest')}",
         "linkedin": f"{hook}\n\n{a['excerpt']}\n\n{why_line}{lesson}\n\n{utm('linkedin')}",
     }
+    if a.get("photo_social") and sdate >= PHOTO_SOCIAL_FROM:
+        p_ = a["photo"]
+        credit = f"Photo: {p_['author']}, {p_['licence']} ({p_['licence_url']}), via Wikimedia Commons ({p_['page']}). Cropped."
+        posts["facebook"] += f"\n\n{credit}"
+        posts["instagram"] = posts["instagram"].replace(f"\n\n{ig_tags}", f"\n\n{credit}\n\n{ig_tags}")
     if sdate >= HASHTAGS_FROM:
         posts.pop("linkedin")   # no LinkedIn account (Robin, 9 Nov 2026); older packs are left exactly as they were
     (folder / "posts.md").write_text(
@@ -487,9 +577,9 @@ def social_pack(a, cfg):
         """).strip()
     (folder / "short_video_script.md").write_text(script, encoding="utf-8")
 
-    make_card(hook, "Don't Die Retired", a["category"], folder / "square.png", size=(1080, 1080))
-    make_card(hook, "Don't Die Retired", a["category"], folder / "story.png", size=(1080, 1920))
-    make_card(hook, "Don't Die Retired", a["category"], folder / "landscape.png", size=(1200, 630))
+    social_card(a, hook, "Don't Die Retired", folder / "square.png", (1080, 1080))
+    social_card(a, hook, "Don't Die Retired", folder / "story.png", (1080, 1920))
+    social_card(a, hook, "Don't Die Retired", folder / "landscape.png", (1200, 630))
 
     (folder / "meta.json").write_text(json.dumps({
         "title": a["title"], "url": a["abs_url"], "date": sdate,
@@ -654,12 +744,12 @@ def build(make_social=True):
         return picks
     # article hero/og images
     for a in arts:
-        make_card(a.get("lesson") or a["title"], cfg["categories"][a["category"]]["label"], a["category"],
-                  DIST / "static" / "img" / f"{a['slug']}.png")
+        social_card(a, a.get("lesson") or a["title"], cfg["categories"][a["category"]]["label"],
+                    DIST / "static" / "img" / f"{a['slug']}.png", (1200, 630))
         if (dt.date.today() - a["date"]).days <= 7:   # square card for Instagram (post_social.py); recent articles only
             (DIST / "static" / "social").mkdir(parents=True, exist_ok=True)
-            make_card(a.get("hook") or a["title"], "Don't Die Retired", a["category"],
-                      DIST / "static" / "social" / f"{a['slug']}.png", size=(1080, 1080))
+            social_card(a, a.get("hook") or a["title"], "Don't Die Retired",
+                        DIST / "static" / "social" / f"{a['slug']}.png", (1080, 1080))
         # tall 2:3 pin for Pinterest (the feed's image); the headline, so a pin reads like the article it links to
         (DIST / "static" / "pin").mkdir(parents=True, exist_ok=True)
         make_card(a["title"], cfg["categories"][a["category"]]["label"], a["category"],
