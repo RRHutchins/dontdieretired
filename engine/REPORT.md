@@ -1,4 +1,4 @@
-# Guidance engine report (2026-11-14)
+# Guidance engine report (2026-11-16)
 
 86 sources, 88 statements, 12 event profiles. Core 66, supported 22, thin 0, contested 0.
 

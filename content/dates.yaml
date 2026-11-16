@@ -10,8 +10,16 @@
 dates:
   - activity: go-to-edinburgh-fringe
     months: [8]
-    note: Runs for three weeks each August.
-    source: {label: "Britannica: the Fringe", url: "https://www.britannica.com/art/the-Fringe", checked: "2026-11-01"}
+    note: Runs for about three weeks each August. The 2027 Fringe is 6 to 30 August; shows are announced in batches from 18 February 2027 and the printed programme launches on 2 June 2027.
+    next: "2027-08-06"
+    next_source: {label: "Edinburgh Festival Fringe Society: Planning your Fringe", url: "https://www.edfringe.com/experience/plan-your-visit/", checked: "2026-11-16"}
+    source: {label: "Edinburgh Festival Fringe Society: Planning your Fringe", url: "https://www.edfringe.com/experience/plan-your-visit/", checked: "2026-11-16"}
+  - activity: queue-for-wimbledon
+    months: [6, 7]
+    note: The Championships run for two weeks from late June. The 2027 Championships are 28 June to 11 July; the public ballot for 2027 closed on 14 September 2026.
+    next: "2027-06-28"
+    next_source: {label: "The Championships, Wimbledon: The Wimbledon Public Ballot", url: "https://www.wimbledon.com/en_GB/tickets/ballot", checked: "2026-11-16"}
+    source: {label: "Wimbledon help centre: How do I enter the Wimbledon Public Ballot?", url: "https://help.wimbledon.com/hc/en-gb/articles/15473970011292-How-do-I-enter-the-Wimbledon-Public-Ballot", checked: "2026-11-16"}
   - activity: go-to-national-book-festival
     months: [8, 9]
     note: A single Saturday. The 2026 festival was on 22 August; the 2025 festival was on 6 September.

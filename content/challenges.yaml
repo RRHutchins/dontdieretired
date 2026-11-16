@@ -11685,7 +11685,8 @@
   company: either
   regions:
   - anywhere
-  why: Disc golf borrows the shape of golf, with tees, fairways and a par for each hole, but you throw a flying disc at a metal basket instead of hitting a ball at a cup. Courses are laid out through parks and woodland, so a round is also a decent walk.
+  why: Disc golf borrows the shape of golf, with tees, fairways and a par for each hole, but you throw a flying disc at a metal basket instead of hitting a ball at a cup. Courses are laid out through parks
+    and woodland, so a round is also a decent walk.
   start:
   - Search the Professional Disc Golf Association course directory by country, state or city to find a course near you.
   - Buy or borrow a single mid-range disc, which is all a first round needs.
@@ -11695,10 +11696,137 @@
     url: https://www.pdga.com/course-directory/advanced/search
     region: any
     checked: '2026-10-07'
+  - label: 'Forestry England: disc golf in ten forests, no booking needed'
+    url: https://www.forestryengland.uk/disc-golf
+    region: uk
+    checked: '2026-11-16'
+  - label: 'PDGA: sanctioned disc golf leagues'
+    url: https://pdga.com/leagues
+    region: us
+    checked: '2026-11-16'
   kit:
   - name: Disc golf starter set
     why: a driver, a mid-range and a putter, which is all you need to start
     url: https://www.amazon.co.uk/s?k=disc+golf+starter+set
+  - name: Mid-range disc golf disc
+    why: a single all-round disc for a first round
+    url: https://www.amazon.co.uk/s?k=mid+range+disc+golf+disc
+  - name: Portable disc golf basket
+    why: for practising putting in a garden or park
+    url: https://www.amazon.co.uk/s?k=portable+disc+golf+basket
+  safety: The PDGA's rules say not to throw if the throw might injure someone, and its beginners' guide reminds players that discs are sporting equipment, not toys, and do hurt.
+  inspire:
+  - kind: read
+    person: John Parcak, from Bangor, Maine
+    line: Took up disc golf after his son got him started, swapping from ordinary golf, and about eight years later was entered in the PDGA Masters World Championships in Michigan.
+    title: Bangor man, 72, to play in Masters World Disc Golf tournament in Michigan
+    outlet: Bangor Daily News
+    url: https://www.bangordailynews.com/2017/08/11/sports/bangor-man-to-play-in-masters-world-disc-golf-tournament-in-michigan/
+    checked: '2026-11-16'
+  seo_title: 'How to play disc golf: rules, discs and courses near you'
+  description: How a round of disc golf works, who throws first, driver v mid-range v putter, free and pay-to-play courses in the UK and US, and what leagues cost.
+  detail:
+  - h: What a round is really like
+    p:
+    - A disc golf hole starts at a tee and ends at a target, usually a metal basket with hanging chains. You throw from where your last throw landed, and the aim is to finish each hole in the fewest throws.
+      The Professional Disc Golf Association (PDGA), the sport's governing body, says a round takes about half as long as a round of ordinary golf.
+    - Most courses are in public parks and are usually free to play, according to the PDGA. Its beginners' guide suggests starting on a short course, under 2,500 feet (about 760 metres) or under 5,000 feet
+      (about 1,520 metres) in total, and calls a course easy if its holes average 250 feet (about 76 metres) or less. It is also worth checking for toilets, signs at each tee and step-free access before
+      you go.
+    - In England, Forestry England has nine-hole courses in ten forests, from Sherwood Pines near Nottingham to Delamere Forest near Chester and Hamsterley Forest in County Durham. Each has a map panel
+      showing the length and par of every hole, with tips on gripping and throwing.
+  - h: Driver, mid-range or putter?
+    table:
+      head:
+      - Disc
+      - What it is for
+      - The PDGA's advice for beginners
+      rows:
+      - - Putter
+        - Putting and accurate shots near the basket; it can also be thrown
+        - Ideal for putting and accuracy shots around the green
+      - - Mid-range
+        - Controlled shots that need more speed and distance than a putter gives
+        - The most versatile choice if you start with one disc
+      - - Driver
+        - The fastest-flying and sharpest-edged discs in the bag
+        - Beginners are generally advised to avoid them
+    after: The PDGA puts the price of a disc at about $10 to $25 and says starter packs usually hold one putter, one mid-range and one driver.
+  - h: Scoring and who throws first
+    p:
+    - The PDGA's Official Rules of Disc Golf (revised 1 January 2026) set out the basics. Your score on a hole is the total number of throws, including any penalty throws. A throw that lands out of bounds
+      costs one penalty throw. With a basket, the hole is finished only when the disc comes to rest in the tray or in the chains below the chain support.
+    - On the first tee, players throw in the order they are listed on the scorecard. On every later tee, whoever had the lowest score on the hole before throws first, and a tie leaves the order unchanged.
+      After the tee shots, the player whose disc is farthest from the target throws next.
+    - The PDGA's guide adds two habits of good company on the course. Do not walk ahead of the player who is farthest away, and if a disc goes missing, everyone in the group helps to look for it.
+  - h: The real ways to play, and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost as listed
+      rows:
+      - - Public park courses
+        - Turn up and play with your own discs
+        - Usually free (PDGA)
+      - - Forestry England forests (10 sites)
+        - Nine holes; open every day all year; no booking
+        - Free with your own discs; hire £3.50 per disc or £12 for 4 (members £3 or £10)
+      - - Trentham Estate
+        - Nine-hole woodland course; disc hire on the day if available
+        - Adult £12.75; plus a £5 refundable deposit per person
+      - - PDGA sanctioned league (via a local club)
+        - One round a week for 6 to 10 weeks, singles, same course
+        - $1 per player per round, split between the club and the PDGA, plus any fees the league director sets
+      - - PDGA membership
+        - Members receive an official rating from each league round they attend
+        - $20 amateur outside the US and Canada; €20 in Europe
+    after: The PDGA says members in the US and Canada pay $15 less than non-members to enter each of its C-tier events. Trentham's page also refers to its usual gardens admission, so check the total when
+      you book.
+  faq:
+  - q: How do you play disc golf?
+    a: You throw a disc from a tee towards a target, usually a chained basket, then throw again from where it landed until it rests in the basket. Your score is the number of throws, and the lowest total
+      wins.
+  - q: Who throws first in disc golf?
+    a: Under the PDGA's rules, scorecard order on the first tee, then the player with the lowest score on the previous hole. After the tee shots, whoever is farthest from the target throws next.
+  - q: What disc should a beginner use?
+    a: The PDGA calls a mid-range disc the most versatile choice for someone starting with one disc, and says beginners are generally advised to avoid drivers.
+  - q: Is disc golf free to play?
+    a: The PDGA says courses in public parks are usually free. Forestry England's courses are free with your own discs, and some estates such as Trentham charge per player.
+  - q: How do I find a disc golf course near me?
+    a: Search the PDGA course directory by country, state or city. In England, Forestry England lists ten forests with nine-hole courses and no need to book.
+  - q: Do I need to join the PDGA to play?
+    a: Not for a casual round. Membership gives official ratings from sanctioned league rounds, and in the US and Canada it cuts $15 off entry to C-tier events.
+  sources:
+  - label: Professional Disc Golf Association, What is Disc Golf? A Complete Beginner's Guide
+    url: https://pdga.com/node/276016
+    checked: '2026-11-16'
+  - label: Professional Disc Golf Association, Official Rules of Disc Golf
+    url: https://www.pdga.com/book/export/html/236656
+    checked: '2026-11-16'
+  - label: Professional Disc Golf Association, PDGA Member Benefits
+    url: https://www.pdga.com/node/21323
+    checked: '2026-11-16'
+  - label: Professional Disc Golf Association, Join or Renew for 2026
+    url: https://www.pdga.com/news/join-or-renew-2026
+    checked: '2026-11-16'
+  - label: Professional Disc Golf Association, PDGA Sanctioned Disc Golf Leagues
+    url: https://pdga.com/leagues
+    checked: '2026-11-16'
+  - label: Forestry England, Disc golf
+    url: https://www.forestryengland.uk/disc-golf
+    checked: '2026-11-16'
+  - label: Trentham Estate, Disc Golf
+    url: https://trentham.co.uk/?p=551
+    checked: '2026-11-16'
+  - label: Bangor Daily News, Bangor man, 72, to play in Masters World Disc Golf tournament in Michigan
+    url: https://www.bangordailynews.com/2017/08/11/sports/bangor-man-to-play-in-masters-world-disc-golf-tournament-in-michigan/
+    checked: '2026-11-16'
+  related:
+  - first-golf-lessons
+  - find-first-geocache
+  - orienteering-course
+  - play-petanque
 - id: learn-to-swim-adult
   title: Learn to swim as an adult
   category: move
@@ -14201,7 +14329,9 @@
   company: others
   regions:
   - uk
-  why: A dry stone wall stands without a trace of mortar, held up by nothing but the way each stone is chosen and placed. Local branches of the Dry Stone Walling Association run beginner courses, usually over two days, where qualified instructors teach the core techniques on a real wall.
+  - us
+  why: A dry stone wall is built from uncut, undressed stone, laid without mortar. Local branches of the Dry Stone Walling Association run beginner courses, usually over two days, where recognised DSWA
+    instructors teach the basic skills of the craft.
   start:
   - Read the Dry Stone Walling Association's beginner training courses page.
   - Find your nearest branch on the Association's website and ask for its next beginner course.
@@ -14211,7 +14341,19 @@
     url: https://www.dswa.org.uk/training-education/beginner-training-courses/
     region: uk
     checked: '2026-10-07'
-  safety: Stone is heavy and sharp-edged, so lift with care and wear protective boots and gloves.
+  - label: 'Dry Stone Walling Association: Craft Certification Scheme'
+    url: https://www.dswa.org.uk/training-education/craft-certification-scheme/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Dry Stone Conservancy (Kentucky): fall 2026 workshops'
+    url: https://www.drystone.org/fall-2026-workshop-schedule
+    region: us
+    checked: '2026-11-16'
+  - label: 'The Stone Trust (Vermont): intro to dry stone walling, via the Campaign for Historic Trades'
+    url: https://historictrades.org/opportunity/intro-to-dry-stone-walling-workshop-2-day-vermont
+    region: us
+    checked: '2026-11-16'
+  safety: Stone is heavy and sharp-edged, so wear stout boots and gloves, and lift by bending at the knees with a straight back, as conservation guides teach.
   kit:
   - name: Rigger gloves
     why: for handling rough stone
@@ -14219,6 +14361,138 @@
   - name: Safety boots
     why: for dropped stones
     url: https://www.amazon.co.uk/s?k=safety+boots
+  - name: Safety goggles
+    why: to protect your eyes when shaping or splitting stone
+    url: https://www.amazon.co.uk/s?k=impact+safety+goggles
+  inspire:
+  - kind: read
+    person: Michael Papile, a Massachusetts financial executive
+    line: Took a one-day workshop at the Stone Trust in Vermont in 2017, went on to earn a Level II certificate and now teaches there as an instructor.
+    title: Vermont’s Stone Trust Teaches the Art of Dry Stone Walling
+    outlet: Seven Days
+    url: https://www.sevendaysvt.com/home-design/vermonts-stone-trust-teaches-the-art-of-dry-stone-walling-41962162
+    checked: '2026-11-16'
+  seo_title: 'Dry stone walling course: how to learn and get certified'
+  description: How a dry stone wall is built, beginner courses in the UK and US with prices, volunteering on walls, and the DSWA certificate levels and test fees.
+  detail:
+  - h: What it is really like
+    p:
+    - The Peak District National Park's walling guidelines say not to use mortar unless it is specified. The craft uses stone in its most natural form, uncut and undressed, as the professional waller Richard
+      Love put it in The Building Conservation Directory.
+    - Most people start with a weekend course. The Dry Stone Walling Association (DSWA), the craft's charity in Britain, runs short beginner courses through its local branches, usually over a weekend, teaching
+      the basic skills on a real wall. You book with the nearest branch rather than with the head office.
+    - A typical course, as last listed, was the DSWA Cheshire branch's two-day beginners' course at Tegg's Nose Country Park near Macclesfield in July 2026. It cost £145, was open to absolute beginners,
+      had places for 16, and provided all tools. People were asked to bring stout boots, gloves, a camera and a packed lunch.
+  - h: How a wall goes up
+    list:
+    - Footings. The Peak District National Park's walling guidelines say to dig to a firm, level base, usually 7.5 to 15 cm (3 to 6 inches) down, and put the largest stones here. The National Trust's guide
+      says a trench about one foot (30 cm) deep.
+    - Two faces with a batter. A double wall has a face on each side, and each layer is set a little narrower than the one below, so the wall tapers towards the top. The Peak District guidelines call this
+      the batter and ask for it to be even.
+    - One on two, two on one. Each stone should rest on two below and have two resting on it, so joins are crossed. Put the longest length of each stone into the wall, not along it.
+    - Hearting. Small stones are packed between the two faces as each course goes up. Soil and fine material wash out, the Peak District guidelines warn.
+    - Through stones. Long stones that span the full width of the wall lock the two faces together. The Peak District guidelines suggest them at about 0.5 m and 1 m above the ground, spaced about 90 cm
+      (3 feet) apart.
+    - Copes. The top row, set on edge, flat or slanted, covers the full width of the wall. The copes give a wall its local shape and character.
+  - h: The real ways in
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost as last listed
+      rows:
+      - - DSWA branch beginner course (UK)
+        - Two days, usually a weekend, on a real wall
+        - £145 (Cheshire branch, Tegg's Nose, July 2026)
+      - - Dry Stone Conservancy (Kentucky and beyond)
+        - Two-day introductory workshop
+        - $400 (Rivard Stone, Houlton, Wisconsin, 11 to 12 December 2026)
+      - - The Stone Trust (Dummerston, Vermont)
+        - Two-day intro; rebuild a freestanding wall to DSWA test specification
+        - $615 (May 2026)
+      - - National Trust practical volunteers (Hadrian's Wall and Tyne Valley)
+        - Weekly Thursday team with rangers; walling among the tasks
+        - Training given for essential tasks
+    after: Not every volunteer role is open to beginners. Cumbria Wildlife Trust's Staveley wall-repair role, for example, says it cannot offer training and needs people who already have walling experience.
+      A course first, then volunteering, is the safer order.
+  - h: The certificate ladder
+    table:
+      head:
+      - Level
+      - What the test involves
+      - Fee from 1 January 2027
+      rows:
+      - - Level 1
+        - Rebuild a free-standing section of 2.5 square metres, at least 1 metre high below the copes
+        - £170
+      - - Level 2
+        - As Level 1 but including a vertical cheek end; at least 12 months' walling advised
+        - £215
+      - - Level 3
+        - Features such as retaining walls, plus a timed test; Level 2 needed first
+        - £165 for features, £165 for the timed part
+      - - Master Craftsman
+        - Three features, including 5 square metres of wall on a slope of at least 30 degrees, one done as a timed test
+        - £200 for features, £150 for the timed part
+    after: Levels 1 to 3 are joint DSWA and Lantra qualifications, and the DSWA asks for applications at least four weeks before a test. Level 2 is the level needed to register as a professional waller.
+      In the US, the Dry Stone Conservancy holds its own certification exams, with a two-day prep workshop listed at $400.
+  faq:
+  - q: How long is a dry stone walling course?
+    a: DSWA branch beginner courses usually run over a weekend. The Dry Stone Conservancy and the Stone Trust in the US also run two-day introductory workshops,.
+  - q: How much does a dry stone walling course cost?
+    a: As last listed, £145 for the DSWA Cheshire branch's two-day course, $400 for a Dry Stone Conservancy introductory workshop and $615 for the Stone Trust's two-day intro in Vermont.
+  - q: How do you build a dry stone wall?
+    a: Dig to a firm base and set the biggest stones as footings, then build two tapering faces with each stone crossing a joint, pack the middle with small hearting stones, add through stones across the
+      full width and finish with copes.
+  - q: How do I get a dry stone walling qualification?
+    a: Through the DSWA Craft Certification Scheme, starting at Level 1. Tests are booked with the DSWA at least four weeks ahead, and Levels 1 to 3 are awarded with Lantra.
+  - q: Can I volunteer on dry stone walls?
+    a: Yes. The National Trust's practical volunteers at Hadrian's Wall do walling among other tasks and give training, but some roles, such as Cumbria Wildlife Trust's at Staveley, need experienced wallers.
+  sources:
+  - label: Dry Stone Walling Association, Beginner training courses near you
+    url: https://www.dswa.org.uk/?p=153
+    checked: '2026-11-16'
+  - label: Dry Stone Walling Association, Craft Certification Scheme
+    url: https://www.dswa.org.uk/training-education/craft-certification-scheme/
+    checked: '2026-11-16'
+  - label: Dry Stone Walling Association, Book test
+    url: https://www.dswa.org.uk/booktest/
+    checked: '2026-11-16'
+  - label: Cheshire East Council, Dry Stone Walling Beginners Course - Tegg's Nose Country Park
+    url: https://www.cheshireeast.gov.uk/leisure-culture-and-tourism/ranger-service/ranger-events/ranger-events-listing/dry-stone-walling-beginners-course-tegg-s-nose-country-park
+    checked: '2026-11-16'
+  - label: Peak District National Park Authority, Guidelines for drystone walling
+    url: https://www.peakdistrict.gov.uk/__data/assets/pdf_file/0017/2159/drystonewalling.pdf
+    checked: '2026-11-16'
+  - label: National Trust, Learn how to build a dry stone wall
+    url: https://www.nationaltrust.org.uk/discover/crafts/how-to-build-a-dry-stone-wall
+    checked: '2026-11-16'
+  - label: Lowimpact.org, How to build or repair a dry stone wall
+    url: https://www.lowimpact.org/posts/how-to-build-or-repair-a-dry-stone-wall/
+    checked: '2026-11-16'
+  - label: The Building Conservation Directory, Dry Stone Walling in the 21st Century
+    url: https://buildingconservation.com/articles/dry-stone-walling/dry-stone-walling.htm
+    checked: '2026-11-16'
+  - label: Dry Stone Conservancy, Fall 2026 Workshop Schedule
+    url: https://www.drystone.org/fall-2026-workshop-schedule
+    checked: '2026-11-16'
+  - label: The Campaign for Historic Trades, Intro to Dry Stone Walling Workshop (2-Day) – Vermont
+    url: https://historictrades.org/opportunity/intro-to-dry-stone-walling-workshop-2-day-vermont
+    checked: '2026-11-16'
+  - label: National Trust, Volunteer at Hadrians Wall
+    url: https://www.nationaltrust.org.uk/visit/north-east/hadrians-wall-and-housesteads-fort/volunteering-at-hadrians-wall-and-tyne-valley-group
+    checked: '2026-11-16'
+  - label: Cumbria Wildlife Trust, Staveley Drystone Wall repair volunteers
+    url: https://www.cumbriawildlifetrust.org.uk/node/7474
+    checked: '2026-11-16'
+  - label: Seven Days, Vermont’s Stone Trust Teaches the Art of Dry Stone Walling
+    url: https://www.sevendaysvt.com/home-design/vermonts-stone-trust-teaches-the-art-of-dry-stone-walling-41962162
+    checked: '2026-11-16'
+  related:
+  - learn-hedge-laying
+  - try-stone-carving
+  - volunteer-national-trust
+  - learn-a-heritage-craft
 - id: cross-america-by-train
   title: Cross America by train
   category: travel
@@ -14926,18 +15200,185 @@
   season: August
   regions:
   - uk
-  places: [scotland]
-  why: The Fringe began in 1947 when eight theatre groups turned up uninvited to the Edinburgh International Festival, and it now fills the city with performing arts for three weeks. You can go for a single day, which can take in a play in a cellar, a comic in a lecture hall and performers in the street, or stay for several.
+  places:
+  - scotland
+  why: The Fringe began in 1947 when eight theatre groups turned up uninvited to the Edinburgh International Festival, and it now fills the city with performing arts for three weeks. You can go for a single
+    day, with shows in venues big and small and free street events, or stay for several.
   start:
   - Read the Fringe Society's About page and download the official Fringe app to browse the programme.
   - Book two or three shows through the Fringe Box Office, leaving walking time between venues on the venue map.
   - Reserve your train and somewhere to stay well ahead, as Edinburgh fills up during the festival.
-  start_at: [first, second, travel]
+  start_at:
+  - first
+  - second
+  - travel
   links:
-  - label: Edinburgh Festival Fringe Society, About us (official festival site)
-    url: https://www.edfringe.com/about-us/
+  - label: Edinburgh Festival Fringe Society, Planning your Fringe (official festival site)
+    url: https://www.edfringe.com/experience/plan-your-visit/
     region: uk
-    checked: '2026-10-07'
+    checked: '2026-11-16'
+  - label: Edinburgh Festival Fringe Box Office and Half Price Hut (official festival site)
+    url: https://www.edfringe.com/experience/plan-your-visit/fringe-box-office/
+    region: uk
+    checked: '2026-11-16'
+  - label: Edinburgh Festival Fringe Society, Accessibility and access bookings
+    url: https://www.edfringe.com/experience/accessibility/
+    region: uk
+    checked: '2026-11-16'
+  seo_title: 'Edinburgh Fringe 2027: dates, tickets and first-timer tips'
+  description: Edinburgh Fringe 2027 runs 6 to 30 August. How booking works, the Half Price Hut, 2for1 days, free shows, getting there and tips for a first visit.
+  where:
+    town: Edinburgh
+    country: GB
+    note: The Fringe Box Office and Fringe Shop are at 180 High Street, Edinburgh, EH1 1QS.
+    source:
+      label: Edinburgh Festival Fringe Society, Planning your Fringe
+      url: https://www.edfringe.com/experience/plan-your-visit/
+      checked: '2026-11-16'
+  detail:
+  - h: What it is really like
+    p:
+    - 'The Edinburgh Festival Fringe is open access. The Fringe Society says anyone with a show is welcome, and there is no central judging panel or artistic director deciding what is on. Its roughly 300
+      venues are all run independently of the Society and of each other. That is why the Fringe feels the way it does: a famous name and a first-time student company can be on the same street at the same
+      hour, and nobody has vetted either.'
+    - The scale is hard to picture until you are there. The 2026 Fringe had 4,232 shows, 61,277 performances and 306 venues, with performers from 77 countries, and the Society issued 2,805,395 tickets,
+      not counting free and non-ticketed shows. The 2027 Fringe, its 80th anniversary year, runs from 6 to 30 August 2027.
+    - It is not the same as the Edinburgh International Festival, which runs in the city at the same time. The International Festival began in 1947 and presents classical music, theatre, opera and dance.
+      Its own history page says eight uninvited theatre groups turned up at that first festival, and that is how the Fringe started.
+  - h: The honest hard parts
+    p:
+    - There is far more on than you can see. The Society's own advice to first-timers is that the goal is not to see all the shows but to make your own Fringe, so book a sensible number each day and leave
+      travel time between venues. Most venues are within easy walking distance, but the central streets around the Royal Mile, the Grassmarket and Bristo and George Squares are very busy in August, and
+      some venues will not let you in once a show has started.
+    - Tickets are e-tickets. Your confirmation email carries a QR code, which staff scan at the door, and several shows booked in one go share one code. Mobile signal can be weak, so take a screenshot of
+      it. If you have no smartphone, or need a paper ticket for access reasons, the Fringe Box Office will print one. Fringe tickets are non-refundable and cannot be exchanged unless a show is cancelled
+      or changed so that you cannot or will not go.
+    - The Society says Edinburgh can give you four seasons in one day. It suggests a light jacket and supportive shoes for the city's hills, and says an umbrella is unreliable in a strong breeze.
+  - h: How booking works, and when
+    p:
+    - The Fringe reveals its 2027 shows in stages. The Society lists batches on Thursday 18 February, Thursday 1 April and Wednesday 5 May 2027, and the printed programme launches on Wednesday 2 June 2027.
+      You collect a free printed copy from the Fringe Shop at 180 High Street. In 2026, phone and in-person booking at the Fringe Box Office opened after the June programme launch, and you can book online
+      at edfringe.com 24 hours a day. The official EdFringe app, which is free and lists every show, usually launches shortly before the festival. It has a venue map, a Nearby Now feature and a Shake to
+      Search button that picks a random show.
+    - A booking fee of £1.50 per ticket, up to £9.00 per transaction, is applied to all bookings and is not refundable. Popular shows, especially well-reviewed ones, can sell out, so book the shows you
+      most want early and leave gaps for chance finds.
+  - h: The real choices for seeing more for less
+    table:
+      head:
+      - Way in
+      - How it works
+      - Cost as listed
+      rows:
+      - - Book online or in the app
+        - Book at edfringe.com at any hour, or in the app once it launches
+        - Show price plus £1.50 booking fee per ticket, up to £9.00 per transaction
+      - - Fringe Box Office
+        - In person at 180 High Street or by phone; in August 2026 it opened 10:00 to 18:00 Monday to Sunday
+        - Show price; the booking fee applies to all bookings
+      - - 2for1 days
+        - Shows taking part offer two tickets for one on the first Monday and Tuesday (10 and 11 August in 2026)
+        - Two tickets for the price of one
+      - - Half Price Hut
+        - From the first Wednesday of the Fringe (12 August in 2026), say Half Price Hut at the Fringe Box Office for same-day shows that take part; buy in person only
+        - Half price
+      - - Preview performances
+        - Shows before their official run, marked with navy blue calendar boxes in listings
+        - Listed by the Society under seeing more for less
+      - - Free shows
+        - More than 400 free shows were in the 2026 programme; some still need a ticket for entry
+        - Free; you are encouraged to donate
+      - - Street Events
+        - Performers on the High Street and the Mound
+        - No fee; donations encouraged, often by contactless
+    after: 'A detail worth knowing: from 14:00 each day the Half Price Hut listings also show the next day''s shows that start before 14:00, so you can buy a morning show the afternoon before. PBH''s Free
+      Fringe, started by Peter Buckley Hill in 1996, is one of the largest producers of free shows; entry is free and, if you like the show, you put a donation in a bucket at the end.'
+  - h: Getting there, getting around and access
+    p:
+    - Waverley, Edinburgh's main station, is in the middle of the city, and the Society notes that cheaper advance train fares from many UK places go on sale 12 to 24 weeks ahead. Edinburgh Airport is 12
+      km (8 miles) west of the centre, linked by tram and the Airlink 100 bus (£6 single, £8.50 return as listed). Most venues are within walking distance of each other; a Lothian bus single was listed
+      at £2.20 and a Dayticket at £5.50. Parking in the centre is limited.
+    - The Fringe Box Office has an access team for bookings, reached on +44 (0)131 226 0002, by WhatsApp or BSL relay, and in person. Free personal assistant or companion tickets are booked through it once
+      you register as an access customer. In 2026, 62% of shows were wheelchair accessible, and listings flag audio-described, captioned, BSL-interpreted and relaxed performances. During August a Changing
+      Places toilet opens at the Society's site at 6 Infirmary Street.
+  faq:
+  - q: When is the Edinburgh Fringe 2027?
+    a: The Fringe Society says the 2027 Fringe runs from 6 to 30 August 2027, its 80th anniversary year.
+  - q: When do Edinburgh Fringe 2027 tickets go on sale?
+    a: The Society has not yet given a 2027 on-sale date. Shows are revealed in batches from 18 February 2027 and the printed programme launches on 2 June 2027; in 2026, box office booking opened after
+      the June programme launch.
+  - q: How do you get cheap tickets at the Edinburgh Fringe?
+    a: Use the 2for1 days on the first Monday and Tuesday, the Half Price Hut at the Fringe Box Office from the first Wednesday, and preview performances. More than 400 shows were free in 2026, and the
+      Street Events cost nothing.
+  - q: What is the difference between the Edinburgh Fringe and the International Festival?
+    a: The International Festival, founded in 1947, presents classical music, theatre, opera and dance. The Fringe is open access, with no artistic director choosing the shows, and grew from eight uninvited
+      theatre groups at that first festival.
+  - q: Are Edinburgh Fringe tickets refundable?
+    a: No, unless the show is cancelled or its details change so that you cannot or will not attend. The £1.50 booking fee is not refundable.
+  - q: Do you need a ticket for free Fringe shows?
+    a: Sometimes. The Fringe Society says free shows may still need a ticket for entry, so check whether a show is ticketed before you go.
+  sources:
+  - label: Edinburgh Festival Fringe Society, Edinburgh Festival Fringe 2026 concludes with its 80th anniversary firmly in sight
+    url: https://www.edfringe.com/about-us/news-and-blog/edinburgh-festival-fringe-2026-concludes-with-its-80th-anniversary-firmly-in-sight/
+    checked: '2026-11-16'
+  - label: Edinburgh Festival Fringe Society, Planning your Fringe
+    url: https://www.edfringe.com/experience/plan-your-visit/
+    checked: '2026-11-16'
+  - label: Edinburgh Festival Fringe Society, Edinburgh Festival Fringe Box Office
+    url: https://www.edfringe.com/experience/plan-your-visit/fringe-box-office/
+    checked: '2026-11-16'
+  - label: Edinburgh Festival Fringe Society, Enjoy the Fringe on a budget
+    url: https://www.edfringe.com/about-us/news-and-blog/enjoy-the-fringe-on-a-budget/
+    checked: '2026-11-16'
+  - label: Edinburgh Festival Fringe Society, Top 10 tips for Fringe first-timers
+    url: https://www.edfringe.com/about-us/news-and-blog/top-10-tips-for-fringe-first-timers/
+    checked: '2026-11-16'
+  - label: Edinburgh Festival Fringe Society, Understanding the basics
+    url: https://www.edfringe.com/take-part/artists/organise-a-show/getting-started/understanding-the-basics/
+    checked: '2026-11-16'
+  - label: Edinburgh Festival Fringe Society, Fringe FAQs
+    url: https://www.edfringe.com/faqs/
+    checked: '2026-11-16'
+  - label: Edinburgh Festival Fringe Society, Accessibility
+    url: https://www.edfringe.com/experience/accessibility/
+    checked: '2026-11-16'
+  - label: Edinburgh Festival Fringe Society, Visiting Edinburgh
+    url: https://www.edfringe.com/experience/plan-your-visit/visiting-edinburgh/
+    checked: '2026-11-16'
+  - label: Edinburgh International Festival, Our history
+    url: https://www.eif.co.uk/about/our-history
+    checked: '2026-11-16'
+  - label: VisitScotland, Edinburgh Festivals
+    url: https://www.visitscotland.com/see-do/events/edinburgh-festivals-fringe/
+    checked: '2026-11-16'
+  - label: PBH's Free Fringe, About Us
+    url: https://freefringe.org.uk/about-us/
+    checked: '2026-11-16'
+  - label: British Comedy Guide, Stand-up Lynn Ruth Miller dies aged 87
+    url: https://comedy.co.uk/people/news/6532/lynn-ruth-miller-rip
+    checked: '2026-11-16'
+  inspire:
+  - kind: read
+    person: Lynn Ruth Miller
+    line: Took a stand-up comedy course in 2003, began performing in San Francisco and went on to become a regular at the Edinburgh Fringe.
+    title: Stand-up Lynn Ruth Miller dies aged 87
+    outlet: British Comedy Guide
+    url: https://comedy.co.uk/people/news/6532/lynn-ruth-miller-rip
+    checked: '2026-11-16'
+  related:
+  - try-stand-up-comedy
+  - try-improv-comedy
+  - join-amateur-theatre
+  - steward-a-festival
+  kit:
+  - name: Lightweight waterproof jacket
+    why: for Edinburgh's changeable August weather, when an umbrella struggles in the wind
+    url: https://www.amazon.co.uk/s?k=lightweight+waterproof+jacket
+  - name: Portable power bank
+    why: to keep your phone alive for e-ticket QR codes and maps through a long day of shows
+    url: https://www.amazon.co.uk/s?k=portable+power+bank
+  - name: Comfortable walking shoes
+    why: for the hills and cobbles between venues
+    url: https://www.amazon.co.uk/s?k=comfortable+walking+shoes
 - id: stand-at-shakespeares-globe
   title: Watch a play standing in the yard at Shakespeare's Globe
   category: travel
@@ -14973,8 +15414,10 @@
   season: Late June to mid July
   regions:
   - uk
-  places: [london]
-  why: Wimbledon is one of the few great sporting events where you can turn up on the day and buy a ticket, provided you are willing to queue. The Queue has its own official guide, numbered cards that fix your place and a code of conduct, and many people camp overnight for a Show Court seat.
+  places:
+  - london
+  why: Wimbledon is one of the few great sporting events where you can turn up on the day and buy a ticket, provided you are willing to queue. The Queue has its own official guide, numbered cards that fix
+    your place and a code of conduct, and many people camp overnight for a Show Court seat.
   start:
   - Read the official Queue page and the current Queue Guide on wimbledon.com before you travel.
   - Download the Wimbledon app and set up a myWIMBLEDON account, which the guide says you need to buy a ticket.
@@ -14988,6 +15431,143 @@
     url: https://content.wimbledon.com/is/content/AELTC/aeltc/wimbledon/live-site/guest/pdfs/The%20Queue%20Guide%202026.pdf
     region: uk
     checked: '2026-10-07'
+  seo_title: 'Wimbledon queue tips: how the Queue works, times and prices'
+  description: How the Wimbledon Queue works, what time to arrive, camping rules, show court and grounds pass prices, Ticket Resale, the ballot and the 2027 dates.
+  where:
+    town: London
+    venue: AELTC Wimbledon Park (the Queue); the Grounds of the All England Lawn Tennis Club
+    country: GB
+    note: Southfields station (District line) is a 15 minute walk to the Grounds.
+    source:
+      label: Wimbledon help centre, What is the nearest train or tube station?
+      url: https://help.wimbledon.com/hc/en-gb/articles/8861802920732-What-is-the-nearest-train-or-tube-station
+      checked: '2026-11-16'
+  detail:
+  - h: What it is really like
+    p:
+    - Wimbledon still sells tickets on the day to people who turn up and wait. The Queue forms in Wimbledon Park, and it has its own rules, its own stewards and its own printed guide. You join at the end,
+      a steward gives you a numbered, dated Queue Card, and you go in in that order. The card is strictly non-transferable and stewards can check it at any time.
+    - James Mendelssohn, Wimbledon's chief steward, told the Alton Herald in 2025 that Wimbledon is the only Grand Slam where a true tennis fan can be guaranteed a show court ticket on the day, with 500
+      tickets a day reserved for Centre Court, No.1 Court and No.2 Court, and thousands more grounds passes. Queue size, he said, depends on the day of the week, the weather, who is playing and whether
+      the District line is running. The 2027 Championships run from 28 June to 11 July 2027.
+  - h: How a Queue day runs
+    p:
+    - This timetable is what nobody tells you in one place. The Queue accepts arrivals around the clock. According to the chief steward, stewards wake overnight campers at about 5am (the official guide
+      says between 5:30am and 6am), the full process starts at 7am, ticket sales start at 8:30am as people move into the Queue Village, and the first people go into the Grounds at 10am. Ticket sales finish
+      by 8pm. Each person may buy one ticket.
+    - 'Once you have a ticket, the day is not over. From 3pm you can join a virtual queue in the Wimbledon app for Ticket Resale, which sells show court seats that become available, subject to availability:
+      £15 for Centre Court and £10 for No.1 and No.2 Courts in 2026, with proceeds (net of VAT) going to the Wimbledon Foundation. Successful applicants get a text telling them how to buy.'
+  - h: The real ways to get a ticket
+    table:
+      head:
+      - Route
+      - What you get
+      - Cost as listed for 2026
+      rows:
+      - - Queue for a show court
+        - Centre Court on the first 10 days only; No.1 Court every day; No.2 Court on the first 10 days. Limited numbers.
+        - Centre Court £115 (days 1 and 2) to £255 (days 9 and 10); No.1 Court £100 to £235 over the same days; No.2 Court £55 to £105
+      - - Queue for a grounds pass
+        - Unreserved seats on No.3 Court, Court 12 and Court 18, plus the outside courts
+        - £33 on days 1 to 8, £26 on days 9 to 11, £21 on the last three days
+      - - Ticket Resale
+        - Show court seats returned by other guests, from 3pm, through a virtual queue in the app once you are in
+        - £15 Centre Court; £10 No.1 and No.2 Courts
+      - - Public Ballot
+        - A random draw for up to two tickets per household; you cannot choose the date
+        - Ballot for 2027 closed on 14 September 2026; prices not given on the ballot page
+      - - Debenture
+        - A premium seat on Centre Court or No.1 Court for five years, with tickets you can transfer or sell on
+        - Not listed on the debentures page
+      - - Hospitality
+        - Guaranteed tickets through the official provider, Keith Prowse
+        - Not listed on the help page
+    after: Prices are those in the official Queue Guide 2026, for the front rows of each court (rows A to T on Centre Court); other rows are priced separately. No Centre Court tickets are sold through the
+      Queue on the last four days, which are sold in advance. On the final weekend in 2026, front-row Queue seats on No.1 Court (rows A to Q) fell to £65.
+  - h: The honest hard parts, and what you need
+    p:
+    - Waiting is the price. The Associated Press reported in July 2026 that some fans had queued up to seven hours, arriving as early as 4am, and serious show court queuers camp overnight. The Queue Code
+      of Conduct allows breaks for food or the toilet of no more than 30 minutes, bans reserving a place for someone else, and bans smoking and vaping, loud music, and music or ball games after 10pm. Takeaway
+      deliveries must reach the Wimbledon Park Road gate before 10pm.
+    - 'If you camp, only two-person tents are allowed, with one person in the tent at all times, and no gazebos, barbecues, stoves or fires. You must pack your tent and take bags to left luggage in the
+      morning or lose your Queue Card. Inside, bags can be no larger than 40 x 30 x 30 cm (16 x 12 x 12 inches). The Queue has toilets, bottle refill, phone charging and food and drink stalls. You need
+      a myWIMBLEDON account: the buyer must show their myWIMBLEDON ID to pay.'
+    - Guests who use a wheelchair, have a mobility impairment or have a condition such as ASD can wait in the Accessibility Waiting Area at AELTC Wimbledon Park with one carer; Queue rules still apply.
+  - h: Getting there
+    p:
+    - Southfields station on the District line is a 15 minute walk to the Grounds, Wimbledon station (District line, South Western Railway and trams) about 20 minutes, and Wimbledon Park station about 25.
+      The chief steward advises checking the Wimbledon app and website before you leave to see whether the Queue is near capacity.
+  faq:
+  - q: How does the Wimbledon queue work?
+    a: You join the end of the Queue in Wimbledon Park and get a numbered, dated Queue Card, then buy one ticket per person when your number comes up. Ticket sales start at about 8:30am and finish by 8pm.
+  - q: What time should I get to the Wimbledon queue?
+    a: Early. The Queue accepts arrivals around the clock; Wimbledon's chief steward told the Alton Herald that if you are in the first 1,500 people you will get inside, and many show court queuers camp
+      overnight.
+  - q: How much is a Wimbledon grounds pass?
+    a: The 2026 Queue Guide lists £33 on days 1 to 8, £26 on days 9 to 11 and £21 on the last three days.
+  - q: Can you camp in the Wimbledon queue?
+    a: Yes, in two-person tents with one person present at all times. Gazebos, barbecues, stoves and fires are banned, and tents must be packed away in the morning.
+  - q: When is Wimbledon 2027?
+    a: Wimbledon gives the 2027 Championships dates as 28 June to 11 July 2027.
+  - q: Can I still enter the Wimbledon ballot for 2027?
+    a: No. The Public Ballot for 2027 opened on 1 September 2026 and closed at 23:59 BST on 14 September 2026. The Queue and Ticket Resale remain open to anyone on the day.
+  sources:
+  - label: AELTC, The Queue Guide 2026 (PDF)
+    url: https://content.wimbledon.com/is/content/AELTC/aeltc/wimbledon/live-site/guest/pdfs/The%20Queue%20Guide%202026.pdf
+    checked: '2026-11-16'
+  - label: Wimbledon help centre, How can I purchase tickets on the day?
+    url: https://help.wimbledon.com/hc/en-gb/articles/16150226635676-How-can-I-purchase-tickets-on-the-day
+    checked: '2026-11-16'
+  - label: Wimbledon help centre, How can I purchase tickets for The Championships?
+    url: https://help.wimbledon.com/hc/en-gb/articles/15474175030300-How-can-I-purchase-tickets-for-The-Championships
+    checked: '2026-11-16'
+  - label: Wimbledon help centre, How do I enter the Wimbledon Public Ballot?
+    url: https://help.wimbledon.com/hc/en-gb/articles/15473970011292-How-do-I-enter-the-Wimbledon-Public-Ballot
+    checked: '2026-11-16'
+  - label: Wimbledon help centre, What is the nearest train or tube station?
+    url: https://help.wimbledon.com/hc/en-gb/articles/8861802920732-What-is-the-nearest-train-or-tube-station
+    checked: '2026-11-16'
+  - label: The Championships, Wimbledon, The Wimbledon Public Ballot (2027 dates)
+    url: https://www.wimbledon.com/en_GB/tickets/ballot
+    checked: '2026-11-16'
+  - label: The Championships, Wimbledon, Debentures
+    url: https://www.wimbledon.com/en_GB/tickets/debentures
+    checked: '2026-11-16'
+  - label: Time Out, The Wimbledon 2027 ticket ballot is now open
+    url: https://www.timeout.com/london/news/wimbledon-2027-ticket-ballot-now-open-how-to-enter-090326
+    checked: '2026-11-16'
+  - label: Alton Herald, Surrey man who runs the famous Wimbledon queue reveals exactly how it works
+    url: https://www.altonherald.com/news/surrey-man-who-runs-the-famous-wimbledon-queue-reveals-exactly-how-it-works-811869
+    checked: '2026-11-16'
+  - label: Associated Press via WTOP, In Wimbledon's famous queue, fans keep tradition alive by waiting hours for tickets
+    url: https://wtop.com/sports/2026/07/in-wimbledons-famous-queue-fans-keep-tradition-alive-by-waiting-hours-for-tickets/
+    checked: '2026-11-16'
+  - label: KentOnline, Pub landlord in Bridge, near Canterbury, has camped out for Wimbledon tickets for the past 32 years
+    url: https://www.kentonline.co.uk/canterbury/news/why-this-kent-pub-landlord-is-wimbledon-s-biggest-fan-309288/
+    checked: '2026-11-16'
+  inspire:
+  - kind: read
+    person: Harry Taylor, from Bridge, near Canterbury
+    line: A pub landlord who first camped out for Wimbledon tickets in 1992 and has done it every year since, which he says makes him the longest-serving queuer.
+    title: Pub landlord in Bridge, near Canterbury, has camped out for Wimbledon tickets for the past 32 years
+    outlet: KentOnline
+    url: https://www.kentonline.co.uk/canterbury/news/why-this-kent-pub-landlord-is-wimbledon-s-biggest-fan-309288/
+    checked: '2026-11-16'
+  related:
+  - play-tennis
+  - play-real-tennis
+  - stand-at-shakespeares-globe
+  - see-free-shakespeare-in-the-park
+  kit:
+  - name: Two-person pop-up tent
+    why: for an overnight wait, as the Queue Guide allows only two-person tents
+    url: https://www.amazon.co.uk/s?k=two+person+pop+up+tent
+  - name: Self-inflating camping mat
+    why: for a night on the grass in Wimbledon Park
+    url: https://www.amazon.co.uk/s?k=self+inflating+camping+mat
+  - name: Small daypack
+    why: to carry the day's things inside the Grounds' 40 x 30 x 30 cm bag limit
+    url: https://www.amazon.co.uk/s?k=small+daypack
 - id: see-free-shakespeare-in-the-park
   title: See free Shakespeare in Central Park
   category: travel
@@ -44586,3 +45166,1574 @@
   - parkrun
   - volunteer-with-your-dog
   - borrow-a-dog-to-walk
+- id: learn-wood-engraving
+  title: Learn wood engraving
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Wood engraving cuts a picture into the polished end grain of a small block, traditionally boxwood, with finely pointed tools, so every cut prints white and the uncut surface prints black. The Society
+    of Wood Engravers calls it drawing with light, and Country Life notes that the work is often done on kitchen tables.
+  start:
+  - Book a short beginners' course where blocks and tools are supplied; West Dean College advises against buying tools before you go.
+  - Bring a small black and white design; West Dean's beginners' block is 3 x 4 inches (75 x 100 mm).
+  - Read Simon Brett's Wood Engraving, How to Do It, which the Society of Wood Engravers recommends, and visit its annual exhibition to see what the medium can do.
+  links:
+  - label: 'Society of Wood Engravers: what wood engraving is, members and exhibitions'
+    url: https://www.societyofwoodengravers.co.uk/wood-engraving
+    region: any
+    checked: '2026-11-16'
+  - label: 'West Dean College: Wood engraving with Cathryn Kuhfeld'
+    url: https://www.westdean.ac.uk/short-courses/swe40030-wood-engraving
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Pyramid Atlantic Art Center: Beginning Wood Engraving (Maryland)'
+    url: https://pyramidatlanticartcenter.org/event/beginning-wood-engraving-jun2026/
+    region: us
+    checked: '2026-11-16'
+  - label: 'John C. Campbell Folk School: Wood Engraving, Historic Letterpress Illustration (North Carolina)'
+    url: https://folkschool.configio.com/pd/3842/wood-engraving-historic-letterpress-illustrat
+    region: us
+    checked: '2026-11-16'
+  seo_title: 'Wood engraving for beginners: courses, tools and blocks'
+  description: How wood engraving differs from woodcut and linocut, what a beginners' course covers and costs, and where to learn in the UK and the US.
+  detail:
+  - h: How it differs from woodcut and linocut
+    p:
+    - A woodcut is cut on side-grain wood, a plank, with U- or V-shaped gouges or knives, and a linocut is carved into linoleum. A wood engraving is made on a block of end-grain wood, traditionally a very
+      slow-growing wood such as boxwood, using fine steel tools, Bankside Gallery explains. The grain does not show in the print, and the technique is credited to Thomas Bewick in Newcastle in 1768.
+    - Because box trees do not grow large, blocks are small, and Country Life notes that engravers join sections together to work bigger. The Society of Wood Engravers says many engravers now use lemonwood,
+      maple or synthetic blocks instead of boxwood. Work is slow; one engraver told Country Life you may be working on the same piece for 300 hours.
+    - The tools have odd names, such as the spitsticker and the scorper. The inked block is printed on a press, though Country Life quotes an engraver who burnishes prints with the back of a spoon.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - West Dean College, West Sussex
+        - Residential or non-residential short course; lemonwood block, practice block, shared tools and paper supplied; no experience needed
+        - Not shown on the course page; check when booking
+      - - Adult course, Station Plaza, Hastings (adult.escg.ac.uk)
+        - Thursday evenings, 6pm to 8.30pm, for a term; practice block, ink, paper and tools supplied, extra blocks bought in class
+        - £130 a term (2025 to 2026 terms)
+      - - Pyramid Atlantic Art Center, Hyattsville, Maryland
+        - Two days, 27 to 28 June 2026; bring two or three gravers; covers sharpening and printing
+        - $311 for non-members, including a $32 materials fee
+      - - John C. Campbell Folk School, Brasstown, North Carolina
+        - Week-long class, 16 to 22 August; all levels; tools sized to your hands included
+        - $870 tuition plus a $35 materials fee
+    after: Pyramid Atlantic asks beginners who buy only two gravers to get an elliptic or square graver plus a round one.
+  faq:
+  - q: What is the difference between wood engraving and woodcut?
+    a: A woodcut is cut along the plank with gouges and knives. A wood engraving is cut into the end grain of a hard wood such as boxwood with fine steel tools, which is why engravings tend to be small
+      and closely worked.
+  - q: What wood is used for wood engraving?
+    a: Boxwood is the traditional choice, but the Society of Wood Engravers says many engravers use lemonwood, maple or synthetic blocks.
+  - q: Do I need a printing press for wood engraving?
+    a: Not to start. Courses print on presses, but Country Life quotes an engraver who burnishes prints by hand with the back of a spoon.
+  - q: Do I need drawing skills to learn wood engraving?
+    a: West Dean College says no previous experience of wood engraving is needed, though some drawing experience helps.
+  sources:
+  - label: Society of Wood Engravers, wood engraving
+    url: https://www.societyofwoodengravers.co.uk/wood-engraving
+    checked: '2026-11-16'
+  - label: Bankside Gallery, What is Wood Engraving? ...and other relief printmaking techniques explained
+    url: https://banksidegallery.com/news/133-what-is-wood-engraving-...and-other-relief-printmaking-techniques-explained
+    checked: '2026-11-16'
+  - label: 'Country Life, Cutting it fine: the ancient art of wood engraving'
+    url: https://www.countrylife.co.uk/luxury/art-and-antiques/cutting-fine-ancient-art-wood-engraving-150901
+    checked: '2026-11-16'
+  - label: West Dean College, Wood engraving with Cathryn Kuhfeld
+    url: https://www.westdean.ac.uk/short-courses/swe40030-wood-engraving
+    checked: '2026-11-16'
+  - label: West Dean College, Wood engraving, developing your skills with Robin Mackenzie
+    url: https://www.westdean.ac.uk/short-courses/sss39912-wood-engraving-developing-your-skills
+    checked: '2026-11-16'
+  - label: ESCG adult courses, Wood Engraving
+    url: https://adult.escg.ac.uk/courses/art-crafts-design/craft-making/wood-engraving-89060/
+    checked: '2026-11-16'
+  - label: Pyramid Atlantic Art Center, Beginning Wood Engraving
+    url: https://pyramidatlanticartcenter.org/event/beginning-wood-engraving-jun2026/
+    checked: '2026-11-16'
+  - label: Wikipedia, Pyramid Atlantic Art Center
+    url: https://en.wikipedia.org/wiki/Pyramid_Atlantic_Art_Center
+    checked: '2026-11-16'
+  - label: John C. Campbell Folk School, Wood Engraving, Historic Letterpress Illustration
+    url: https://folkschool.configio.com/pd/3842/wood-engraving-historic-letterpress-illustrat
+    checked: '2026-11-16'
+  - label: Wikipedia, John C. Campbell Folk School
+    url: https://en.wikipedia.org/wiki/John_C._Campbell_Folk_School
+    checked: '2026-11-16'
+  inspire:
+  - kind: read
+    person: Merlin Waterson
+    line: Took up wood engraving on retiring as the National Trust's regional director for East Anglia and now engraves architectural studies, sometimes with his own texts.
+    title: 'Cutting it fine: the ancient art of wood engraving'
+    outlet: Country Life
+    url: https://www.countrylife.co.uk/luxury/art-and-antiques/cutting-fine-ancient-art-wood-engraving-150901
+    checked: '2026-11-16'
+  kit:
+  - name: End-grain engraving blocks
+    why: the hard, smooth surface you cut the picture into
+    url: https://www.amazon.co.uk/s?k=end+grain+wood+engraving+block
+  - name: Wood engraving tools
+    why: fine gravers for cutting lines and clearing areas
+    url: https://www.amazon.co.uk/s?k=wood+engraving+tools
+  - name: Relief printing ink and roller
+    why: inks the block for proofing and printing
+    url: https://www.amazon.co.uk/s?k=relief+printing+ink+roller
+  related:
+  - try-woodblock-printing
+  - make-a-linocut-print
+  - try-letterpress-printing
+  - try-etching
+- id: try-bronze-casting
+  title: Try bronze casting
+  category: think
+  kind: skill
+  effort: moderate
+  cost: high
+  time: days
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: In lost-wax casting you model a sculpture in wax, coat it in a mould, melt the wax out and pour molten bronze into the space it leaves, a method the Getty says has been used since ancient times.
+    Beginners' courses take you through every stage, from modelling to the pour to colouring the finished metal.
+  start:
+  - Choose between a full course where you help with the pour and a shorter class where you make the wax and it comes back in bronze a few weeks later.
+  - Plan a small piece; West Dean's lost-wax course works at a hand-held scale.
+  - Get stout covered shoes and old clothes or an apron before the first day; London Sculpture Workshop prefers a boiler suit and steel toe-cap boots.
+  links:
+  - label: 'West Dean College: Lost-wax casting in bronze with Abigail Burt'
+    url: https://www.westdean.ac.uk/short-courses/s5d37485-lost-wax-casting-in-bronze
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Craven College: Wax to Bronze (one morning)'
+    url: https://www.craven-college.ac.uk/product/wax-to-bronze-fcpt0016a-1/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Peninsula School of Art: Bronze Casting (Fish Creek, Wisconsin)'
+    url: https://www.peninsulaschoolofart.org/workshops/p/3d2509
+    region: us
+    checked: '2026-11-16'
+  - label: 'Chicago Avenue Fire Arts Center: Small Things Casting with Lost Wax (Minneapolis)'
+    url: https://cafac.wildapricot.org/event-6572082
+    region: us
+    checked: '2026-11-16'
+  seo_title: 'Bronze casting course for beginners: lost wax, UK and US'
+  description: What happens on a beginners' lost-wax bronze casting course, from wax model to pour and patina, what it costs, and where to learn in the UK and US.
+  detail:
+  - h: What happens on a course
+    p:
+    - The Getty describes the classic method. A wax model has wax rods attached, is encased in clay and the wax is melted out. The channels left by the rods carry the molten bronze in, and once it cools
+      the clay is removed.
+    - London Sculpture Workshop's six-day course, run over two weekends, shows how this works in a modern foundry. The first days cover making and finishing waxes and adding the gates, the channels for
+      the metal. The waxes are then dipped in coatings to build up shells, with more dipping between the two weekends. On day four the shells are burnt out, the furnace is lit and the metal is poured. Day
+      five is breaking out the moulds and fettling and chasing the bronze, which means cleaning up and refining the rough casting, and day six is patination and final finishing.
+    - Not every course is lost wax. West Dean's three-day Introduction to bronze casting uses greensand moulds instead, modelling a relief in clay and casting it in sand, then fettling and patinating it.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - London Sculpture Workshop, London SE18
+        - Six days over two weekends, full lost-wax process from wax to patina; all levels
+        - £620 including 1 kg of bronze (March 2025)
+      - - West Dean College, West Sussex
+        - Lost-wax course with the pour on day four; beeswax, bronze and shell materials supplied
+        - Not shown on the course page; check when booking
+      - - Craven College, Aireville Campus
+        - One morning, 9am to noon; you make the wax and the piece is cast and returned in about 4 to 8 weeks
+        - £75 including materials (17 October 2026)
+      - - Peninsula School of Art, Fish Creek, Wisconsin
+        - Five days, lost wax and ceramic shell; all levels
+        - $690 members, $745 non-members, plus materials that vary with the size and number of pieces (August 2025)
+      - - Chicago Avenue Fire Arts Center, Minneapolis
+        - Five Monday sessions casting small pieces in silver or bronze; minimum age 16
+        - $270 including $45 materials, with silver and up to half a pound of bronze (June 2026)
+    after: London Sculpture Workshop sells extra bronze during the course, and West Dean charges £25 a kilo for bronze beyond the half kilo included on its greensand course.
+  faq:
+  - q: How long does it take to learn bronze casting?
+    a: You can make a finished piece on a short course. London Sculpture Workshop runs its full process over six days, and Peninsula School of Art over five.
+  - q: How much does a bronze casting course cost?
+    a: As last listed, from £75 for a morning making a wax at Craven College to £620 for six days at London Sculpture Workshop. In the US, Peninsula School of Art listed $745 for non-members plus materials.
+  - q: What is the lost-wax process?
+    a: You make a model in wax, encase it in a mould, melt the wax out and pour molten bronze into the space. The mould is then removed to reveal the metal.
+  - q: What should I wear to a bronze casting course?
+    a: Follow your course's rules. West Dean asks for stout covered footwear and recommends safety boots, and London Sculpture Workshop prefers a boiler suit and steel toe-cap boots.
+  safety: Molten metal is poured on these courses, so wear exactly what the course specifies; West Dean provides eye shields and bans open-toed shoes, and London Sculpture Workshop gives health and safety
+    briefings.
+  sources:
+  - label: J. Paul Getty Trust, Apollo from Pompeii, The Lost-Wax Casting Technique
+    url: https://getty.edu/art/exhibitions/apollo_pompeii/lostwax.html
+    checked: '2026-11-16'
+  - label: ArtRabbit, Bronze Casting Course (14, 15, 16 and 21, 22, 23 March 2025), London Sculpture Workshop
+    url: https://www.artrabbit.com/events/bronze-casting-course-141516-212223-march-2025
+    checked: '2026-11-16'
+  - label: West Dean College, Lost-wax casting in bronze with Abigail Burt
+    url: https://www.westdean.ac.uk/short-courses/s5d37485-lost-wax-casting-in-bronze
+    checked: '2026-11-16'
+  - label: West Dean College, Introduction to bronze casting with Stephen Coles
+    url: https://www.westdean.ac.uk/short-courses/slw40632-introduction-to-bronze-casting
+    checked: '2026-11-16'
+  - label: Craven College, Wax to Bronze
+    url: https://www.craven-college.ac.uk/product/wax-to-bronze-fcpt0016a-1/
+    checked: '2026-11-16'
+  - label: Peninsula School of Art, Bronze Casting with John Hallett
+    url: https://www.peninsulaschoolofart.org/workshops/p/3d2509
+    checked: '2026-11-16'
+  - label: Chicago Avenue Fire Arts Center, Small Things Casting with Lost Wax
+    url: https://cafac.wildapricot.org/event-6572082
+    checked: '2026-11-16'
+  kit:
+  - name: Sculpting wax
+    why: for practising wax models at home before a course
+    url: https://www.amazon.co.uk/s?k=sculpting+wax
+  - name: Wax carving and modelling tools
+    why: shape and smooth details in the wax
+    url: https://www.amazon.co.uk/s?k=wax+carving+tools
+  - name: Steel toe-cap boots
+    why: protect your feet in the foundry
+    url: https://www.amazon.co.uk/s?k=steel+toe+cap+boots
+  related:
+  - try-blacksmithing
+  - learn-clay-sculpture
+  - make-silver-jewellery
+  - try-stone-carving
+- id: learn-china-painting
+  title: Learn china painting
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: China painting means painting powdered mineral colours mixed with oil on to white china and firing them in a kiln so they fuse into the surface. Shading is built up over several firings, and America
+    has a national body, the World Organization of China Painters, with a free museum in Oklahoma City.
+  start:
+  - Find a teacher or club; the Porcelain Art Club of Austin, for example, invites anyone interested to a monthly meeting.
+  - Start with a few brushes rather than many tiny ones; a flat, a round and a liner is the minimum set in China Paint and Overglaze.
+  - Check how your pieces will be fired, as several firings are usually needed for shading and intense colour.
+  links:
+  - label: 'Porcelain Art Museum, Oklahoma City: a programme of the World Organization of China Painters'
+    url: https://www.travelok.com/ch/listings/view.profile/id.25716
+    region: us
+    checked: '2026-11-16'
+  - label: 'Indiana World Organization of China Painters: teachers in Indiana'
+    url: https://www.douglasdavid.com/IndianaWOCP/education.htm
+    region: us
+    checked: '2026-11-16'
+  - label: 'Marisa D''Aprano Porcelain Art Studio: China and Porcelain Painting Course (New Malden, Surrey)'
+    url: https://obby.co.uk/classes/art/painting/china-porcelain-painting-course-london
+    region: uk
+    checked: '2026-11-16'
+  - label: 'TeachinArt: China painting online class with Paul Lewing'
+    url: https://www.teachinart.com/store/p63/china-painting.html
+    region: any
+    checked: '2026-11-16'
+  seo_title: 'China painting for beginners: classes, paints and firing'
+  description: How overglaze china painting on porcelain works, the paints, brushes and firings involved, and where to find classes and clubs in the UK and the US.
+  detail:
+  - h: How china painting works
+    p:
+    - The Indiana World Organization of China Painters sums it up. Powdered minerals are mixed with oil, painted on to the china and then fired in a kiln, and the process is the same as it was in the past.
+      Work ranges from simple brushwork to pieces built up over many firings.
+    - The paint is a powder suspended in a medium, ground with a palette knife to about the consistency of toothpaste, according to the overglaze chapter published by Ceramic Arts Network. Most painters
+      now use a blend of balsam of copaiba and oils of lavender, clove and anise, and several firings are usually needed for shading and strong colour. The chapter warns that the commonest mistake is buying
+      brushes that are too small.
+    - Porcelain Painters International Online traces the art to ancient China. It became popular in 1800s Europe, especially Germany and France, was a popular pastime in the United States until about the
+      1920s, and revived in the 1960s. The Museum of Tulsa History says Oklahomans played an important part in that mid-century revival.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Marisa D'Aprano Porcelain Art Studio, New Malden, Surrey
+        - Beginners' course in sessions of 2 hours 30 minutes; groups of eight; adults 18 and over
+        - £199 per person; first-term materials sold at the studio
+      - - Porcelain Art Museum, Oklahoma City
+        - Painting classes at the World Organization of China Painters' museum
+        - Not listed; museum entry is free
+      - - Porcelain Art Club of Austin, Texas
+        - Monthly meetings with member demonstrations; some members teach
+        - Not listed; contact the club
+      - - TeachinArt, online with Paul Lewing
+        - Six weeks, from materials to firing pieces in an electric kiln
+        - $274
+    after: The Porcelain Art Museum is open Wednesday to Friday, 9am to 5pm, and by appointment on Tuesdays and Saturdays, according to TravelOK.
+  faq:
+  - q: What is china painting?
+    a: Painting over the glaze on porcelain with powdered mineral colours mixed with oil, then firing the piece in a kiln so the colours fuse to the glaze.
+  - q: How many times do you fire china painting?
+    a: Usually several times. Ceramic Arts Network's overglaze chapter says several firings are normally needed for shading and intense colour.
+  - q: What do you mix china paint with?
+    a: An oil medium. Most china painters now use a blend of balsam of copaiba and oils of lavender, clove and anise; water-based mediums also exist.
+  - q: Do I need my own kiln for china painting?
+    a: Not to start. You need access to one for firing, so ask a teacher or club how pieces are fired.
+  sources:
+  - label: Indiana World Organization of China Painters, Education
+    url: https://www.douglasdavid.com/IndianaWOCP/education.htm
+    checked: '2026-11-16'
+  - label: Ceramic Arts Network, China Paint and Overglaze, Chapter 5, Painting with Overglazes
+    url: https://ceramicartsnetwork.org/docs/default-source/uploadedfiles/wp-content/uploads/2018/02/chinapaintchapter5.pdf
+    checked: '2026-11-16'
+  - label: Porcelain Painters International Online, beginners' lesson
+    url: https://ppio.com/PPIOClass/beglesson2/index.htm
+    checked: '2026-11-16'
+  - label: Museum of Tulsa History, Porcelain Oklahoma
+    url: https://www.tulsahistory.org/exhibit/porcelain-oklahoma-the-sooner-state-helps-rekindle-the-art-of-china-painting
+    checked: '2026-11-16'
+  - label: TravelOK, Porcelain Art Museum
+    url: https://www.travelok.com/ch/listings/view.profile/id.25716
+    checked: '2026-11-16'
+  - label: Zilker Botanical Garden, Porcelain Art Club of Texas
+    url: https://zilkergarden.org/garden-clubs/porcelain-art-club-of-texas/
+    checked: '2026-11-16'
+  - label: Obby, China and Porcelain Painting Course
+    url: https://obby.co.uk/classes/art/painting/china-porcelain-painting-course-london
+    checked: '2026-11-16'
+  - label: TeachinArt, China painting online class with Paul Lewing
+    url: https://www.teachinart.com/store/p63/china-painting.html
+    checked: '2026-11-16'
+  kit:
+  - name: China painting paints
+    why: powdered overglaze colours for mixing with oil
+    url: https://www.amazon.co.uk/s?k=china+painting+paint+overglaze
+  - name: White porcelain blanks
+    why: plain glazed pieces to paint on
+    url: https://www.amazon.co.uk/s?k=white+porcelain+plate+blank+for+painting
+  - name: China painting brushes
+    why: a flat, a round and a liner for laying in, shading and fine lines
+    url: https://www.amazon.co.uk/s?k=china+painting+brushes
+  related:
+  - try-pottery-on-the-wheel
+  - learn-enamelling
+  - learn-silk-painting
+  - learn-gilding
+- id: learn-highland-dancing
+  title: Learn Highland dancing
+  category: move
+  kind: skill
+  effort: demanding
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Highland dancing is mainly a solo dance with intricate footwork, usually performed to the bagpipes at Highland Games, and its set dances include the Highland Fling and the Sword Dance. Adult classes
+    run in Scotland and the US.
+  start:
+  - Find an adult or teen-and-adult beginners' class through a listing such as TRACS in Scotland or a Scottish society in the US.
+  - Ask the teacher about shoes; ghillies are part of the competition outfit.
+  - If you later want to compete, ask your teacher about registration; in the US that means registering with ScotDance USA at regional level and getting a registration card.
+  links:
+  - label: 'Royal Scottish Official Board of Highland Dancing: the world governing body'
+    url: https://rsobhd.net/
+    region: any
+    checked: '2026-11-16'
+  - label: 'TRACS: regular traditional dance classes in Scotland, including adult Highland'
+    url: https://tracscotland.org/tdfs-regular-events
+    region: uk
+    checked: '2026-11-16'
+  - label: 'NHSCOT: Highland dance classes, including teen and adult beginners (Concord, New Hampshire)'
+    url: https://nhscot.org/?p=3169
+    region: us
+    checked: '2026-11-16'
+  seo_title: 'Highland dancing for adults: classes and how to start'
+  description: How Highland dancing differs from Scottish country dancing, where adults can find beginners' classes in Scotland and the US, and how competing works.
+  detail:
+  - h: Highland dancing or Scottish country dancing?
+    p:
+    - They are different things. The Royal Scottish Country Dance Society says Highland dancing is mainly a solo performance with intricate footwork, while country dancing is the social dancing its branches
+      teach at classes and dances. The two meet in the strathspey and reel, where country dancers use Highland steps for setting.
+    - The RSCDS lists the main Highland dances as the Highland Fling, the Sword Dance, the Seann Triubhas, the Strathspey and Reel of Tulloch, danced with three others, and the Highland Reel. The music
+      today is the bagpipe, especially at Highland Games, and the Scottish Official Board of Highland Dancing was formed on 15 January 1950.
+    - That board, now the Royal Scottish Official Board of Highland Dancing, describes itself as the world governing body. In the US, the Scottish Cultural Organization of the Triangle explains, ScotDance
+      USA (formerly FUSTA) makes sure competitions follow the board's standards. In the US, dancers move up through Primary, Beginner, Novice and Intermediate to Premier; medals in Beginner and Novice earn
+      the stamps that move you on, and Intermediate lasts a calendar year.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Dance Base, Grassmarket, Edinburgh
+        - Highland Class, Mondays 5.45pm to 6.45pm, listed by TRACS
+        - Not listed; see Dance Base's prices page
+      - - Greenbank Church Hall, Edinburgh, and Joyce Anderson School of Dancing, north-east Fife
+        - Adult Highland classes listed by TRACS
+        - Not listed; contact the class
+      - - Highland Dance of NHSCOT, Concord, New Hampshire
+        - Teen/Adult Beginner classes for ages 16 and over on Mondays, groups of up to 12, SDTA-certified teachers
+        - First 8 weeks free (autumn 2025)
+      - - Competing in the US under ScotDance USA
+        - Register at regional level and get a registration card
+        - A complete new outfit can cost up to $1,000; used outfits sell for less
+    after: Competitions run under the board's rules expect a current registration card; the St Louis Scottish Games, for example, says dancers without one cannot compete.
+  faq:
+  - q: What is the difference between Highland dancing and Scottish country dancing?
+    a: The Royal Scottish Country Dance Society says Highland dancing is mainly a solo performance with intricate footwork, often to the bagpipes, while country dancing is social, taught at classes and
+      dances.
+  - q: Can adults learn Highland dancing?
+    a: Yes. Classes for adults run in Edinburgh and Fife, and NHSCOT in New Hampshire runs Teen/Adult Beginner classes for ages 16 and over.
+  - q: Do you have to compete in Highland dancing?
+    a: Classes do not require it. Dancers who want to compete in the US register with ScotDance USA and need a registration card.
+  - q: What shoes do you wear for Highland dancing?
+    a: Ghillies, which are part of the competition outfit. Ask your teacher what to wear for a first class.
+  sources:
+  - label: Royal Scottish Country Dance Society, What is Highland Dancing?
+    url: https://rscds.org/learn/what-scottish-country-dance-music/what-highland-dancing
+    checked: '2026-11-16'
+  - label: Royal Scottish Official Board of Highland Dancing, home page
+    url: https://rsobhd.net/
+    checked: '2026-11-16'
+  - label: Scottish Cultural Organization of the Triangle, Competitive Highland Dancing
+    url: https://scot.us/culture-and-education/dance/competitive-highland-dancing/
+    checked: '2026-11-16'
+  - label: TRACS, Regular Traditional Dance Classes
+    url: https://tracscotland.org/tdfs-regular-events
+    checked: '2026-11-16'
+  - label: NHSCOT, Highland dance lessons and classes in Concord, NH
+    url: https://nhscot.org/?p=3169
+    checked: '2026-11-16'
+  - label: St Louis Scottish Games, Highland Dance Rules
+    url: https://stlouis-scottishgames.com/highland_dance/highland-dance-rules
+    checked: '2026-11-16'
+  kit:
+  - name: Ghillies
+    why: the soft lace-up shoes worn for Highland dancing
+    url: https://www.amazon.co.uk/s?k=highland+dancing+ghillies
+  - name: Highland dance practice music
+    why: bagpipe tunes for practising steps at home
+    url: https://www.amazon.co.uk/s?k=highland+dancing+music+cd
+  related:
+  - scottish-country-dancing
+  - learn-the-bagpipes
+  - learn-irish-dancing
+  - go-to-a-folk-dance
+- id: learn-brazilian-jiu-jitsu
+  title: Learn Brazilian jiu-jitsu
+  category: move
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Brazilian jiu-jitsu is a martial art and combat sport developed in Brazil in the 20th century, and classes usually end with sparring, called rolling, in which you tap to give up a hold. Academies
+    run fundamentals classes for beginners, and you can train in the uniform called a gi or no-gi, usually in shorts and a T-shirt.
+  start:
+  - Find an academy through the UKBJJA's Club Finder in the UK, or search for local academies in the US, and look for a beginners' or fundamentals class.
+  - Book a trial. Some academies give a free trial class, and Renzo Gracie in New York rents gis; others charge a day rate.
+  - In your first rolls, tap early. Tapping your partner three times is the normal way to give up a hold, and you both stop and restart.
+  links:
+  - label: 'UKBJJA: about the association and its Club Finder'
+    url: https://www.ukbjja.org/about/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Kingston Jiu Jitsu: memberships, including beginners-only'
+    url: https://www.kingstonjiujitsu.com/join-us/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Fifty/50 Martial Arts Academy, Falls Church, Virginia: start here'
+    url: https://www.5050bjj.com/start-here
+    region: us
+    checked: '2026-11-16'
+  - label: 'Renzo Gracie Academy NYC: pricing'
+    url: https://renzogracieacademy.com/renzo-gracie-midtown/pricing/
+    region: us
+    checked: '2026-11-16'
+  seo_title: 'Brazilian jiu-jitsu for beginners: classes, belts and costs'
+  description: How to start Brazilian jiu-jitsu, from gi or no-gi and fundamentals classes to belt timings, injury risk and UK and US academy prices.
+  detail:
+  - h: What training is like, and how the belts work
+    p:
+    - A typical class, as described by Grapplearts, starts with a group warm-up and solo drills such as breakfalls and shrimping (a hip escape along the mat). You then pair up to practise a technique and
+      finish with rounds of sparring, called rolling, which usually start with both partners on their knees. You do not usually need your own gi for a first class, but Grapplearts says you will need to
+      buy one if you carry on. No-gi means training without it, usually in shorts and a T-shirt.
+    - The UKBJJA, which says it is the recognised national governing body for the sport in the UK, describes jiu-jitsu as suitable for all ages, men and women.  Gymdesk, summarising the graduation rules
+      of the International Brazilian Jiu-Jitsu Federation (IBJJF), gives minimum ages of 16 for blue and 18 for brown, and minimum times of two years at blue, 18 months at purple and one year at brown (adult
+      world champions at blue, purple and brown are exempt from the minimum times).
+    - Grapplearts asks for short nails, long hair tied up and piercings removed, and advises against clothes with pockets or belt loops, which can catch fingers and toes.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Kingston Jiu Jitsu, UK
+        - Beginners-only membership covering a Monday beginner class and a Friday fundamentals class
+        - £59 a month on a six-month agreement, or £69 a month on a three-month agreement
+      - - Fifty/50 Martial Arts Academy, Falls Church, Virginia
+        - Coach dedicated to first-timers on Mondays, Tuesdays and Wednesdays; you do not need a gi to try
+        - First seven days free; membership prices not listed online
+      - - Renzo Gracie Academy, New York
+        - Day passes for Brazilian jiu-jitsu; submission grappling also taught
+        - $45 a day, $150 a week; gi rental $15; membership rates by phone
+    after: Renzo Gracie Academy asks students to train in a complete uniform with a belt, and recommends a rash guard (a tight sports top) under the gi.
+  faq:
+  - q: Do I need a gi for my first BJJ class?
+    a: Usually not. Grapplearts says you can normally start without one, and Fifty/50 in Virginia says adults do not need a gi to try. You will need one if you carry on with gi classes.
+  - q: What is the difference between gi and no-gi jiu-jitsu?
+    a: Gi classes are in the uniform, the gi, with a belt; Renzo Gracie Academy asks students to train in a complete uniform. No-gi is training without it, usually in shorts and a T-shirt.
+  - q: How old do you have to be for a blue belt in BJJ?
+    a: Under the IBJJF rules, as summarised by Gymdesk, you must be at least 16 for blue, then spend at least two years at blue before purple.
+  - q: Is Brazilian jiu-jitsu dangerous?
+    a: Injuries do happen. A 2017 study of training injuries found the hands and fingers, feet and toes, and arms and elbows were most often hurt, and suggested tapping out sooner in training.
+  safety: A 2017 study in the journal Sports found training injuries most often affected the hands and fingers, feet and toes, and arms and elbows, and that skin infections were the most common medically
+    diagnosed problem; its authors suggest tapping out sooner in training.
+  sources:
+  - label: UKBJJA, About the UKBJJA
+    url: https://www.ukbjja.org/about/
+    checked: '2026-11-16'
+  - label: 'Gymdesk, IBJJF Belt Requirements Explained: Promotion Eligibility vs Competition Belt Rules'
+    url: https://gymdesk.com/blog/ibjjf-belt-requirements
+    checked: '2026-11-16'
+  - label: IBJJF, IBJJF minimum graduation period update
+    url: https://ibjjf.com/news/ibjjf-minimum-graduation-period-update
+    checked: '2026-11-16'
+  - label: 'Grapplearts, Starting BJJ: What to Expect on Your First Class'
+    url: https://www.grapplearts.com/starting-bjj-what-to-expect-on-your-first-class/
+    checked: '2026-11-16'
+  - label: Sports (Basel), Prevalence of Injuries during Brazilian Jiu-Jitsu Training
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5968975
+    checked: '2026-11-16'
+  - label: Kingston Jiu Jitsu, Join us
+    url: https://www.kingstonjiujitsu.com/join-us/
+    checked: '2026-11-16'
+  - label: Fifty/50 Martial Arts Academy, Start here
+    url: https://www.5050bjj.com/start-here
+    checked: '2026-11-16'
+  - label: Renzo Gracie Academy, Renzo Gracie Academy NYC Pricing
+    url: https://renzogracieacademy.com/renzo-gracie-midtown/pricing/
+    checked: '2026-11-16'
+  - label: Renzo Gracie Academy, Frequently asked questions
+    url: https://renzogracieacademy.com/about/frequently-asked-questions/
+    checked: '2026-11-16'
+  inspire:
+  - kind: read
+    person: Alexander Benassi
+    line: A Chicago private-bank vice president who switched from Thai kickboxing to jiu-jitsu, trained three times a week and won gold in his white-belt division at the IBJJF Chicago Open.
+    title: Brazilian Jiu-Jitsu and the Middle Ages
+    outlet: Sherdog
+    url: https://sherdog.com/news/articles/1/Brazilian-JiuJitsu-and-the-Middle-Ages-55361
+    checked: '2026-11-16'
+  kit:
+  - name: BJJ gi
+    why: the uniform worn in gi classes
+    url: https://www.amazon.co.uk/s?k=bjj+gi
+  - name: Rash guard
+    why: a close-fitting top to wear under the gi or for no-gi classes
+    url: https://www.amazon.co.uk/s?k=rash+guard+bjj
+  - name: Mouth guard
+    why: protects your teeth during rolling
+    url: https://www.amazon.co.uk/s?k=mouth+guard+martial+arts
+  related:
+  - learn-judo
+  - learn-aikido
+  - learn-to-box
+  - learn-karate
+- id: learn-capoeira
+  title: Learn capoeira
+  category: move
+  kind: skill
+  effort: demanding
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Capoeira is an Afro-Brazilian practice that UNESCO calls simultaneously a fight and a dance, played by two people inside a ring while everyone around them sings, claps and plays percussion. Classes
+    teach the movement and, at some schools, the instruments and songs too.
+  start:
+  - Find a beginners' course or a free first class at a capoeira school near you.
+  - Wear tracksuit trousers and a T-shirt; the London School of Capoeira does not allow shorts, and some schools train barefoot.
+  - Once you have the basic moves, join a music class to learn the instruments and songs used in the circle.
+  links:
+  - label: 'London School of Capoeira: start your journey'
+    url: https://olive-falcon-pkg2.squarespace.com/start-your-journey
+    region: uk
+    checked: '2026-11-16'
+  - label: 'South East Dance: Beginner''s Capoeira, autumn 2026'
+    url: https://southeastdance.org.uk/whats_on/beginners-capoeira-autumn-2026/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Seattle Capoeira Center: teen and adult capoeira'
+    url: https://seattlecapoeiracenter.com/teen-adult-capoeira/
+    region: us
+    checked: '2026-11-16'
+  - label: 'UNESCO: Capoeira circle'
+    url: https://ich.unesco.org/RL/00892
+    region: any
+    checked: '2026-11-16'
+  seo_title: 'Capoeira classes for beginners: what to expect and costs'
+  description: How to start capoeira, the Afro-Brazilian art of fight, dance and music, with what a beginners' class covers and UK and US classes and prices.
+  detail:
+  - h: The circle, the music and the moves
+    p:
+    - In 2014 UNESCO inscribed the capoeira circle on its Representative List of the Intangible Cultural Heritage of Humanity. It describes players forming a ring, with two people playing inside it while
+      those around the edge sing, chant, clap and play percussion. A circle has a master, a counter-master and disciples. The master usually plays a single-string percussion instrument and sets the chants,
+      timing and rhythm, and UNESCO says all participants should know how to make and play the instrument.
+    - In class, that breaks down into parts. The Seattle Capoeira Center teaches the ginga, kicks and evasive moves, alongside two traditional instruments, the berimbau and the atabaque, and the classic
+      capoeira songs, and holds community rodas, the circles where students play. The London School of Capoeira runs a music class on Tuesday evenings for adults who have finished a beginners' course.
+    - Asked whether you need to be fit, the London School of Capoeira says no, though you may feel a little sore after the first class. It teaches adults, teenagers and children from 10.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - London School of Capoeira, Finsbury Park
+        - Beginners' course of eight one-hour lessons, Mondays and Wednesdays 7pm to 8pm, over four weeks
+        - £120 (February 2025 course)
+      - - South East Dance, The Dance Space
+        - Beginner's Capoeira with Aneta Zwierzynska, Wednesdays 8pm to 9pm, 9 September to 9 December 2026; open to all
+        - £15 drop-in, or £10 a class if you book the full term
+      - - Seattle Capoeira Center, Washington
+        - Adult fundamentals, Mondays and Wednesdays 6pm to 7.30pm and Saturdays noon to 1pm
+        - First class free; $165 a month, or $100 a month if you enrol on your first day
+    after: The Seattle centre also runs free Tuesday affinity classes for particular communities through its Capoeira Life initiative.
+  faq:
+  - q: Is capoeira a martial art or a dance?
+    a: Both. UNESCO describes it as an Afro-Brazilian cultural practice that is simultaneously a fight and a dance, and says it can be seen as a tradition, a sport or an art form.
+  - q: Do I need to be fit to start capoeira?
+    a: The London School of Capoeira says no, though you may feel a little sore after your first class.
+  - q: What do you wear to a capoeira class?
+    a: The London School of Capoeira asks for tracksuit trousers and a T-shirt, not shorts. The Seattle Capoeira Center suggests comfortable athletic clothing and training barefoot unless you have indoor-only
+      capoeira shoes.
+  - q: What instruments are used in capoeira?
+    a: UNESCO says the master usually plays a single-string percussion instrument. The Seattle Capoeira Center teaches the berimbau and the atabaque, along with the classic songs.
+  sources:
+  - label: UNESCO, Capoeira circle
+    url: https://ich.unesco.org/RL/00892
+    checked: '2026-11-16'
+  - label: London School of Capoeira, Start your journey
+    url: https://olive-falcon-pkg2.squarespace.com/start-your-journey
+    checked: '2026-11-16'
+  - label: London School of Capoeira, February 2025 Monday and Wednesday Beginners course 7-8pm, 8 lessons
+    url: https://olive-falcon-pkg2.squarespace.com/capoeira-classes/p/beginners-february
+    checked: '2026-11-16'
+  - label: London School of Capoeira, FAQs
+    url: https://olive-falcon-pkg2.squarespace.com/faqs
+    checked: '2026-11-16'
+  - label: South East Dance, Beginner's Capoeira
+    url: https://southeastdance.org.uk/whats_on/beginners-capoeira-autumn-2026/
+    checked: '2026-11-16'
+  - label: Seattle Capoeira Center, Teen and Adult Capoeira
+    url: https://seattlecapoeiracenter.com/teen-adult-capoeira/
+    checked: '2026-11-16'
+  inspire:
+  - kind: read
+    person: Nilma Teles de Freitas
+    line: A retired teacher in Brazil who joined a capoeira class run for people with Parkinson's, and says it gives her freedom to work on her body within her limits.
+    title: Brazilian movement practice helps Parkinson's patients ease their symptoms and find support
+    outlet: Euronews (Associated Press)
+    url: https://www.euronews.com/health/2025/07/16/brazilian-movement-practice-helps-parkinsons-patients-ease-their-symptoms-and-find-support
+    checked: '2026-11-16'
+  kit:
+  - name: Capoeira trousers
+    why: loose, stretchy trousers for kicks and floor movements
+    url: https://www.amazon.co.uk/s?k=capoeira+trousers
+  - name: Berimbau
+    why: to practise at home one of the instruments taught in class
+    url: https://www.amazon.co.uk/s?k=berimbau
+  related:
+  - join-a-samba-band
+  - learn-contemporary-dance
+  - learn-karate
+  - learn-tai-chi-form
+- id: play-pool
+  title: Join a pool league
+  category: connect
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Pool leagues are built for amateurs, with teams playing matches at a venue in the evening. In the US the APA handicaps every player so that a beginner can race to fewer games than a strong opponent,
+    while in the UK English 8-ball is normally played on smaller tables with reds and yellows.
+  start:
+  - 'Learn the basic 8-ball game: pot all your group (solids or stripes in the US, reds or yellows in the UK) and then the black 8-ball.'
+  - In the US, find your local APA league operator through the APA's locator; in England, ask at a local pub or club with a pool table about the area league.
+  - Ask a local team if they need players, or enter a new team before the season starts and register each player.
+  links:
+  - label: 'American Poolplayers Association: join a league'
+    url: https://poolplayers.com/join
+    region: us
+    checked: '2026-11-16'
+  - label: 'St. Louis APA: league formats and handicaps'
+    url: https://stl.poolplayers.com/our-league/formats
+    region: us
+    checked: '2026-11-16'
+  - label: 'English Pool Association: rules'
+    url: https://epa.org.uk/rules
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Eastleigh Pool League: league rules'
+    url: https://www.rackemapp.com/leagues/EastleighPoolLeague/page/359
+    region: uk
+    checked: '2026-11-16'
+  seo_title: 'How to join a pool league: APA, UK leagues and 8-ball rules'
+  description: How pool leagues work, from APA handicaps and team rules in the US to English 8-ball leagues in the UK, with costs, match nights and rule differences.
+  detail:
+  - h: How a league night works
+    p:
+    - An APA team can have up to eight players, and five of them play in each match. The APA says it is designed for the amateur player and that you do not need a lot of skill to compete. Your handicap,
+      or skill level, is set by your results in each match, and the five players' skill levels together cannot exceed 23 in Open 8-ball and 9-ball. In 8-ball the skill levels decide how many games each
+      player must win; the St. Louis APA gives the example of a skill level 6 racing to 5 games against a skill level 4 racing to 3. A coin toss decides which team picks the first player, then the other
+      team picks who plays them.
+    - In England, the English Pool Association, which says it is recognised by Sport England as the governing body for pool, lets each league choose its rules; national events use the International Rules.
+      The Eastleigh and District Pool League plays Blackball rules. A match is 14 frames, 12 singles and two doubles, with teams at the venue for an 8pm start, and the home team lays on light refreshments
+      for visitors.
+    - 'The tables differ too. Home Leisure Direct says the English tournament table is 7 ft (2.1 m) long and the American one 9 ft (2.7 m). English sets usually have 2 in (5.1 cm) reds and yellows, while
+      American pool is played with larger spots and stripes. Rules differ by league: under the World Standardized Rules obvious shots need not be called, but bank and combination shots should be, while
+      Dr Dave Pool Info notes that APA rules do not require you to call shots, except the pocket for the 8-ball.'
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - American Poolplayers Association, US
+        - Handicapped 8-ball and 9-ball team leagues; up to eight players a team, five play each match
+        - $30 membership dues (San Diego league, January 2026)
+      - - St. Louis APA, Missouri
+        - 8-ball doubles, 8-ball ladies, 8-ball open, 9-ball open and non-handicapped Masters
+        - Fees not listed; ask the league operator
+      - - Eastleigh and District Pool League
+        - Blackball team league; 14 frames a match, from 8pm
+        - £40 a team to enter, plus £3 a player to register; home team pays table costs where the venue charges
+    after: Ask your local APA league operator about nights, venues and any weekly fees.
+  faq:
+  - q: Do I need to be good to join a pool league?
+    a: The APA says it is designed for amateur players and that you do not need a lot of skill to compete.
+  - q: What is the difference between English and American pool?
+    a: English tables are smaller, usually 7 ft for tournaments against 9 ft in the US, and use smaller red and yellow balls rather than spots and stripes.
+  - q: Do you have to call your shots in 8-ball?
+    a: It depends on the rules. Under the World Standardized Rules, obvious shots need not be called but bank and combination shots should be. APA rules only ask you to mark the pocket for the 8-ball.
+  sources:
+  - label: American Poolplayers Association, Join
+    url: https://poolplayers.com/join
+    checked: '2026-11-16'
+  - label: St. Louis APA, League formats
+    url: https://stl.poolplayers.com/our-league/formats
+    checked: '2026-11-16'
+  - label: San Diego APA, SDAPA Membership
+    url: https://league.poolplayers.com/sandiego/post/51412
+    checked: '2026-11-16'
+  - label: English Pool Association, Rules
+    url: https://epa.org.uk/rules
+    checked: '2026-11-16'
+  - label: Eastleigh Pool League, league rules
+    url: https://www.rackemapp.com/leagues/EastleighPoolLeague/page/359
+    checked: '2026-11-16'
+  - label: Home Leisure Direct, What are the differences between English and American pool?
+    url: https://homeleisuredirect.com/pool_tables/buying-advice/what-are-the-differences-between-english-and-american-pool.html
+    checked: '2026-11-16'
+  - label: 'UMass Lowell Campus Recreation, 8-Ball Pool (World Standardized Rules: 8-Ball)'
+    url: https://www.uml.edu/campusrecreation/programs/intramurals/sports-rules/billiards.aspx
+    checked: '2026-11-16'
+  - label: Dr. Dave Pool Info, Pool League Rule Differences
+    url: https://drdavepoolinfo.com/faq/rules/league-rule-differences/
+    checked: '2026-11-16'
+  inspire:
+  - kind: read
+    person: Kelly James
+    line: Started practising alone at a local pool hall, joined an APA team at a teammate's suggestion and finished ninth at the APA National 8-ball Championships as a skill level 3.
+    title: 'Pool Shark at 50: Learning to Win at Life and 8 Ball'
+    outlet: NextTribe
+    url: https://nexttribe.com/magazine/learning-to-play-pool/
+    checked: '2026-11-16'
+  kit:
+  - name: Pool cue
+    why: so you play with the same cue every time rather than a house cue
+    url: https://www.amazon.co.uk/s?k=pool+cue
+  - name: Pool chalk
+    why: chalking the cue tip before shots
+    url: https://www.amazon.co.uk/s?k=pool+chalk
+  - name: Cue case
+    why: to carry and protect your own cue
+    url: https://www.amazon.co.uk/s?k=pool+cue+case
+  related:
+  - play-snooker
+  - play-darts
+  - join-a-chess-club
+  - learn-to-play-bridge
+- id: play-netball
+  title: Get back to netball
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Back to Netball is a 10-week programme of coached sessions that mix skills with friendly games, for people who are new to netball or have not played for years. Many sessions are pay-as-you-go.
+  start:
+  - Use England Netball's Session Finder on its Back to Netball page to find a group near you; in Scotland, look for Bounce Back to Netball at your local leisure centre (a public sports centre).
+  - Check the day, price and whether you need to book. Some council-run sessions are drop-in, others ask you to book online.
+  - Go along in trainers and sports clothes with a water bottle, and tell the coach how long it is since you last played.
+  links:
+  - label: 'England Netball: Back to Netball and Session Finder'
+    url: https://www.englandnetball.co.uk/back-to-netball/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Netball Scotland: Club Finder'
+    url: https://www.netballscotland.com/get-involved/club-finder/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'USA Netball: events and contacts'
+    url: https://usanetball.com
+    region: us
+    checked: '2026-11-16'
+  seo_title: 'Back to Netball: sessions, costs and how to start again'
+  description: How to start or return to netball through Back to Netball and Bounce Back to Netball, what sessions cost, and where to play in the UK and US.
+  detail:
+  - h: What Back to Netball is, and how it differs from walking netball
+    p:
+    - England Netball calls Back to Netball its flagship programme and says more than 150,000 people have taken part. It runs for 10 weeks, sessions are progressive and led by trained coaches, and each
+      one mixes skills practice with game play. England Netball says it supports all ages and abilities, whether you are new to the game or returning after years away.
+    - Walking netball, a slower version of the game, has its own page on this site.
+    - England Netball offers an optional Back to Netball subscription for £20, which includes a welcome pack and water bottle, personal accident insurance cover (subject to terms) and a monthly email. Session
+      prices are set by each host, as the table below shows.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Back to Netball, Three Rivers District Council, Hertfordshire
+        - Weekly sessions at William Penn Leisure Centre (Monday, term time, 1.15pm to 2.30pm) and St Clement Danes School (Wednesday, 8pm to 9pm)
+        - £4.50 and £5.00 per session
+      - - Bounce Back to Netball, Active North Lanarkshire
+        - A one-hour session, 7pm to 8pm, for anyone over 18 of any level
+        - £4 per session, plus a £10 yearly Netball Scotland membership
+      - - Wales Netball
+        - Club Finder on the Wales Netball website to find a club near you
+        - Not listed; check with the club
+      - - Netball America and USA Netball
+        - 'Two rival governing bodies; Netball America launched the USA National Netball League in November 2023, announcing its first six teams in May 2024: in Austin, Durham (North Carolina), Atlanta,
+          Washington DC, Manhattan and The Woodlands (Texas)'
+        - Not listed; check with the club
+    after: 'Three Rivers District Council describes its sessions as open to all women regardless of age or fitness. '
+  faq:
+  - q: What is Back to Netball?
+    a: A 10-week England Netball programme of coached sessions that mix skills with games, for people who are new to netball or returning after time away.
+  - q: How much does Back to Netball cost?
+    a: It depends on the venue. Three Rivers District Council lists £4.50 and £5.00 a session; England Netball's optional subscription is £20.
+  - q: Is Back to Netball the same as walking netball?
+    a: No. Walking netball is played at walking pace; Back to Netball is the running game, built up gently over 10 weeks.
+  - q: Is there Back to Netball in Scotland?
+    a: Yes, under the name Bounce Back to Netball. Active North Lanarkshire lists sessions at £4, with a £10 yearly Netball Scotland membership.
+  sources:
+  - label: England Netball, Back to Netball
+    url: https://www.englandnetball.co.uk/back-to-netball/
+    checked: '2026-11-16'
+  - label: England Netball, Back to Netball subscriptions
+    url: https://www.englandnetball.co.uk/back-to-netball-subscriptions/
+    checked: '2026-11-16'
+  - label: Three Rivers District Council, Back to netball
+    url: https://www.threerivers.gov.uk/services/leisure-parks-culture/sport/sport-for-adults/back-to-netball
+    checked: '2026-11-16'
+  - label: Active North Lanarkshire, Bounce Back to Netball
+    url: https://www.activenl.co.uk/sport/adult-classes-and-events/bounce-back-to-netball
+    checked: '2026-11-16'
+  - label: Netball Scotland, Club Finder
+    url: https://www.netballscotland.com/get-involved/club-finder/
+    checked: '2026-11-16'
+  - label: Wales Netball, Frequently asked questions
+    url: https://walesnetball.com/frequently-asked-questions/
+    checked: '2026-11-16'
+  - label: USA Netball, What is Netball?
+    url: https://usanetball.com
+    checked: '2026-11-16'
+  - label: Wikipedia, Netball America
+    url: https://en.wikipedia.org/wiki/Netball_America
+    checked: '2026-11-16'
+  - label: England Netball, Back to Netball reignites love of the sport
+    url: https://www.englandnetball.co.uk/news/back-to-netball-stories-april-2025/
+    checked: '2026-11-16'
+  kit:
+  - name: Netball
+    why: for practising passing and shooting between sessions
+    url: https://www.amazon.co.uk/s?k=size+5+netball
+  - name: Indoor court trainers
+    why: for grip on sports hall floors
+    url: https://www.amazon.co.uk/s?k=indoor+court+trainers
+  related:
+  - walking-netball
+  - play-hockey
+  - play-volleyball
+  - walking-football
+  inspire:
+  - kind: read
+    person: Nicola Parker
+    line: Went to a Back to Netball session with a friend after not playing since school, was asked to join a club team about six weeks later, is now its captain, and has taken her Level 1 coaching course.
+    title: Back to Netball reignites love of the sport
+    outlet: England Netball
+    url: https://www.englandnetball.co.uk/news/back-to-netball-stories-april-2025/
+    checked: '2026-11-16'
+- id: play-ultimate-frisbee
+  title: Play ultimate frisbee
+  category: move
+  kind: skill
+  effort: demanding
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: 'Ultimate is a running team game with a flying disc, and it is self-refereed: players make their own calls under a code called Spirit of the Game. Local leagues let you sign up on your own and be
+    placed on a mixed team, so you do not need to bring friends.'
+  start:
+  - Find a club or pick-up game on UK Ultimate's Find Ultimate page, or in the US, look for your local disc organisation's league.
+  - Ask whether the club is open to new players now; UK Ultimate says some take newcomers all year and others trial for the season.
+  - Sign up for a local league or coached beginners' league as an individual, and read the five Spirit of the Game fundamentals before your first game.
+  links:
+  - label: 'UK Ultimate: Find Ultimate club map'
+    url: https://www.ukultimate.com/find-ultimate
+    region: uk
+    checked: '2026-11-16'
+  - label: 'GO Mammoth: after-work ultimate leagues in London'
+    url: https://www.gomammoth.co.uk/?p=1683
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Madison Ultimate Frisbee Association: Spring League 2026'
+    url: https://mufa.org/pages/spring26
+    region: us
+    checked: '2026-11-16'
+  - label: 'WFDF: Spirit of the Game'
+    url: https://wfdf.sport/organisation/spirit-of-the-game/
+    region: any
+    checked: '2026-11-16'
+  seo_title: 'Ultimate frisbee for beginners: clubs, leagues and costs'
+  description: How to start playing ultimate frisbee, from UK clubs and London leagues to US hat leagues, what it costs and how self-refereeing works.
+  detail:
+  - h: How a game works, and why there is no referee
+    p:
+    - The World Flying Disc Federation (WFDF) says ultimate is a self-refereed sport, so players are expected to know the rules, be truthful and settle disputes quickly and respectfully. When a rule is
+      broken, play restarts as close as possible to what would probably have happened, instead of with a heavy penalty.
+    - 'Directly after a game, players rate the other team and their own on five fundamentals: knowing and following the rules, avoiding body contact, being fair-minded, showing self-control and a positive
+      attitude, and communicating respectfully. WFDF recommends this spirit scoring especially for leagues and larger tournaments.'
+    - Not every format works this way. GO Mammoth's London after-work leagues use umpires, who help new players learn the game, so they can be an easier first step before a self-refereed club league.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - GO Mammoth, London
+        - Eight-week after-work leagues; seven a side outdoors (at least three women on the field), five a side indoors; beginners welcome
+        - Individuals pay for the full season before the league starts, for example £65 for eight weeks
+      - - Glasgow Ultimate
+        - Weekly club training in summer; local leagues open to all standards, entered as an individual
+        - No joining fee; £6.50 basic UK Ultimate membership needed after three trial sessions
+      - - Madison Ultimate Frisbee Association, Wisconsin
+        - Spring hat leagues, including coached leagues for beginners, running from the week of 6 April to the end of May 2026
+        - $26 to $52 depending on the league
+      - - Atlanta Flying Disc Club
+        - Spring, summer, fall and women's leagues; the spring league is described as great for beginners, and the women's league usually has learn-to-play clinics
+        - Not listed; check the league site
+    after: A hat league is one where you sign up alone or with one friend and the organisers place you on a team.
+  faq:
+  - q: Does ultimate frisbee have referees?
+    a: Usually not. WFDF says ultimate is self-refereed, with players making their own calls under Spirit of the Game, though some social leagues such as GO Mammoth's use umpires.
+  - q: How much does it cost to play ultimate frisbee?
+    a: Very little. Glasgow Ultimate has no joining fee and asks for £6.50 UK Ultimate membership after three trial sessions; in GO Mammoth's London leagues an individual pays for the season upfront, for
+      example £65 for eight weeks.
+  - q: Can I join an ultimate league on my own?
+    a: Yes. Glasgow Ultimate's local leagues and Madison's hat leagues both let you enter as an individual and place you on a team.
+  - q: What is Spirit of the Game?
+    a: 'WFDF''s code of fair play for flying disc sports: players are responsible for following the rules, and after each game teams score each other on five fundamentals.'
+  sources:
+  - label: UK Ultimate, Find Ultimate
+    url: https://ukultimate.squarespace.com/find-ultimate
+    checked: '2026-11-16'
+  - label: GO Mammoth, Ultimate Frisbee leagues in London
+    url: https://www.gomammoth.co.uk/?p=1683
+    checked: '2026-11-16'
+  - label: Glasgow Ultimate, welcome guide for new members
+    url: https://glasgowultimate.co.uk/?p=1493
+    checked: '2026-11-16'
+  - label: Madison Ultimate Frisbee Association, Spring League 2026
+    url: https://mufa.org/pages/spring26
+    checked: '2026-11-16'
+  - label: Atlanta Flying Disc Club, Ultimate Programs & Leagues
+    url: https://www.afdc.com/ultimate/
+    checked: '2026-11-16'
+  - label: WFDF, Spirit of the Game
+    url: https://wfdf.sport/organisation/spirit-of-the-game/
+    checked: '2026-11-16'
+  - label: 'Skyd Magazine, Second Wind: Playing Grand Masters'
+    url: https://skydmagazine.com/2014/03/second-wind-playing-grand-masters/
+    checked: '2026-11-16'
+  kit:
+  - name: Ultimate disc
+    why: for practising throws and catches between games
+    url: https://www.amazon.co.uk/s?k=ultimate+frisbee+disc+175g
+  - name: Moulded stud boots
+    why: for grip on grass pitches
+    url: https://www.amazon.co.uk/s?k=moulded+stud+football+boots
+  related:
+  - play-disc-golf
+  - play-volleyball
+  - play-hockey
+  - parkrun
+  safety: It is a running game with sudden sprints and turns, so warm up properly and build up from short games.
+  inspire:
+  - kind: read
+    person: Bruce Overstreet
+    line: Came back to ultimate years after playing at college, searched online for pick-up games and then joined the Georgetown Brewing masters team.
+    title: 'Second Wind: Playing Grand Masters'
+    outlet: Skyd Magazine
+    url: https://skydmagazine.com/2014/03/second-wind-playing-grand-masters/
+    checked: '2026-11-16'
+- id: play-water-polo
+  title: Learn to play water polo
+  category: move
+  kind: skill
+  effort: demanding
+  cost: low
+  time: weeks
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Water polo is played in deep water where you may not touch the bottom, and outfield players may hold the ball with only one hand. Some clubs welcome complete beginners to play for fun, as long as
+    you can already swim and tread water confidently.
+  start:
+  - Check your swimming first; South London Swimming Club asks that you can swim and tread water for an extended time in deep water. If you cannot yet, start with adult swimming lessons.
+  - Use Swim England's water polo club finder, or in the US, ask your local parks and recreation department or aquatic centre about adult or masters water polo.
+  - Ask whether the club runs sessions for beginners, then book a first session and bring a swimming costume and towel.
+  links:
+  - label: 'Swim England: find a water polo club'
+    url: https://swimming.org/waterpolo/finding-english-water-polo-clubs
+    region: uk
+    checked: '2026-11-16'
+  - label: 'South London Swimming Club: water polo'
+    url: https://slsc.org.uk/water-polo/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'USA Water Polo: members and clubs search'
+    url: https://usawaterpolo.org/sports/2018/12/17/members-and-clubs.aspx
+    region: us
+    checked: '2026-11-16'
+  - label: 'Livermore Area Recreation and Park District: Masters Water Polo'
+    url: https://larpd.org/masters-water-polo
+    region: us
+    checked: '2026-11-16'
+  seo_title: 'Water polo for adult beginners: clubs, costs and swimming'
+  description: How to start water polo as an adult beginner, how well you need to swim first, and UK and US clubs and masters sessions with their costs.
+  detail:
+  - h: What you need to be able to do first
+    p:
+    - Swim England says each team has seven players in the water, six outfield players and a goalkeeper. Players may not touch the bottom of the pool, and only the goalkeeper may hold the ball with two
+      hands. A match has four quarters of eight minutes, but Swim England says the average quarter lasts about 12 minutes because the clock stops when play stops.
+    - That means you spend the whole session treading water or swimming. South London Swimming Club says it welcomes complete beginners who want to learn the sport and play for fun, but players must be
+      18 or over and competent swimmers, able to swim and tread water for an extended time in deep water. The club says it can teach the water polo side.
+    - Swim England says around 15,000 people play in UK water polo clubs across all levels. Its finder lets you search for clubs by postcode.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - South London Swimming Club
+        - Indoors September to May (Tuesdays and Fridays); outdoors May to August at Brockwell Lido and Tooting Bec Lido; complete beginners welcome
+        - £12.50 a session (£6.50 concessions), plus club membership
+      - - Swim England club finder
+        - Search for water polo clubs near you by postcode
+        - Not listed; check with the club
+      - - Livermore Area Recreation and Park District, Robert Livermore Aquatic Center
+        - Masters water polo for adults 18 and over, beginners and experienced players, Mondays and Wednesdays 6.45pm to 8pm
+        - $8 drop-in on Wednesdays; $25 a month for four visits or $40 unlimited
+      - - AGUA Water Polo Club, Asphalt Green, New York
+        - Coed adult team practising up to three times a week; players usually have college or club experience, and adult instructional programmes also run
+        - Not listed; annual or monthly registration
+    after: At South London Swimming Club, players who want to compete also need Swim England Club Compete membership, listed at £49.85 a year.
+  faq:
+  - q: How good a swimmer do you need to be to play water polo?
+    a: Confident in deep water. South London Swimming Club asks that you can swim and tread water for an extended time in deep water, and says it can teach the rest.
+  - q: Can adults learn water polo from scratch?
+    a: Yes, at some clubs. South London Swimming Club and Livermore's masters water polo both say beginners are welcome.
+  - q: Can you touch the bottom in water polo?
+    a: No. Swim England says players are not allowed to touch the bottom of the pool.
+  - q: How much does adult water polo cost?
+    a: South London Swimming Club lists £12.50 a session; Livermore's masters sessions are $8 drop-in on Wednesdays.
+  sources:
+  - label: Swim England, An Introduction to Water Polo
+    url: https://www.swimming.org/waterpolo/introduction-to-water-polo/
+    checked: '2026-11-16'
+  - label: Swim England, Finding English water polo clubs
+    url: https://swimming.org/waterpolo/finding-english-water-polo-clubs
+    checked: '2026-11-16'
+  - label: South London Swimming Club, Water polo
+    url: https://slsc.org.uk/water-polo/
+    checked: '2026-11-16'
+  - label: USA Water Polo, Members and clubs
+    url: https://usawaterpolo.org/sports/2018/12/17/members-and-clubs.aspx
+    checked: '2026-11-16'
+  - label: Livermore Area Recreation and Park District, Masters Water Polo
+    url: https://larpd.org/masters-water-polo
+    checked: '2026-11-16'
+  - label: Asphalt Green, Water Polo
+    url: https://asphaltgreen.org/aquatics/water-polo
+    checked: '2026-11-16'
+  - label: Honolulu Star-Advertiser, It's never too late to start playing water polo
+    url: https://www.staradvertiser.com/2022/08/30/live-well/its-never-too-late-to-start-playing-water-polo/
+    checked: '2026-11-16'
+  kit:
+  - name: Water polo ball
+    why: for practising one-handed catching and passing in the pool
+    url: https://www.amazon.co.uk/s?k=water+polo+ball
+  - name: Swimming jammers or sports swimsuit
+    why: for a costume that stays put during grappling for the ball
+    url: https://www.amazon.co.uk/s?k=swimming+jammers
+  related:
+  - learn-to-swim-adult
+  - masters-swimming
+  - open-water-swim
+  - swim-swimathon
+  safety: You play out of your depth for long periods, so only join a session once you can swim and tread water confidently in deep water.
+  inspire:
+  - kind: read
+    person: Mark Braly
+    line: Took up water polo when his swimming coach invited him to a masters club he was organising, and now plays twice-weekly 90-minute matches with a coed team in Davis, California.
+    title: It’s never too late to start playing water polo
+    outlet: Honolulu Star-Advertiser
+    url: https://www.staradvertiser.com/2022/08/30/live-well/its-never-too-late-to-start-playing-water-polo/
+    checked: '2026-11-16'
+- id: learn-cheesemaking
+  title: Learn to make cheese on a beginners' course
+  category: eat
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Milk, a starter culture, rennet and salt become cheese, and a one-day class takes you through the steps by hand. Most beginners' days send you home with your own cheeses and the recipes to make them
+    again in an ordinary kitchen.
+  start:
+  - Decide whether you want to make cheese or to know more about it; making courses are hands-on, while the Academy of Cheese Level 1 is a one-day course leading to an online exam.
+  - Book a one-day class such as River Cottage's Cheese Making for Beginners or the School of Artisan Food's Introduction to Soft Cheese, and take containers to carry your cheese home.
+  - At home, start with one of the cheeses your course made, such as paneer, before trying anything harder.
+  links:
+  - label: 'River Cottage: Cheese Making for Beginners'
+    url: https://rivercottage.net/courses/artisanal-skills/cheese-making-at-home/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'The School of Artisan Food: Introduction to Soft Cheese'
+    url: https://schoolofartisanfood.org/courses/short-courses/cheesemaking/introduction-to-soft-cheese
+    region: uk
+    checked: '2026-11-16'
+  - label: 'North House Folk School: Introduction to Artisan Cheesemaking'
+    url: https://northhouse.org/course-session/introduction-to-artisan-cheesemaking-7-29-2026-0900
+    region: us
+    checked: '2026-11-16'
+  - label: 'Cornell CALS: The Science of Cheese, Basic Level'
+    url: https://cals.cornell.edu/node/6147
+    region: us
+    checked: '2026-11-16'
+  seo_title: Cheese making courses for beginners in the UK and US
+  description: Where to take a beginners' cheese making course, what you make on the day, what it costs, and the food safety points worth knowing before you start.
+  detail:
+  - h: What a beginners' day covers
+    p:
+    - 'River Cottage''s one-day Cheese Making for Beginners, taught by the cheesemaker Olly Goolden at River Cottage HQ near Axminster, makes three cheeses: a tomme, mozzarella and paneer. You also learn
+      to wax a cheese so it keeps, and you take the three cheeses home with a recipe pack.'
+    - The School of Artisan Food, on the Welbeck Estate in Nottinghamshire, runs a one-day Introduction to Soft Cheese covering lactic-set and mould-ripened styles and fresh curds. You practise setting,
+      cutting, ladling, draining and salting, and are asked to bring your own containers. The school says it cannot cater for severe food allergies or coeliac disease.
+    - In the US, North House Folk School in Grand Marais, Minnesota, runs a two-day Introduction to Artisan Cheesemaking that starts with mozzarella and ricotta and moves on to feta and halloumi. Cornell
+      University's The Science of Cheese is a step up, mixing online modules on milk quality, cultures and cleaning with a day in its pilot plant, and ends with a timed test.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - River Cottage, Devon
+        - One day, 10am to 5pm; tomme, mozzarella and paneer to take home; lunch included
+        - £245, shown reduced to £171.50 when checked
+      - - The School of Artisan Food, Nottinghamshire
+        - 'One day: Introduction to Soft Cheese (last listed 28 June 2026)'
+        - £250
+      - - Academy of Cheese Level 1 at La Fromagerie, London
+        - One day of tasting and teaching, with access to the online Level 1 exam (last listed 19 January 2026)
+        - From £195
+      - - North House Folk School, Minnesota
+        - Two days, 29 to 30 July 2026; open to ages 14 and over
+        - $230 tuition plus a $85 to $120 materials fee
+      - - Cornell University, New York
+        - Online modules plus one live day (live day 26 October 2027); limited to 20 people
+        - $725 to $880 depending on state and booking date
+    after: La Fromagerie says its Academy of Cheese day gives you everything you need to pass Level One.
+  faq:
+  - q: How long does a cheese making course take?
+    a: Most beginners' courses are one day. North House Folk School's introduction runs over two days, and Cornell's basic course adds online modules before its live day.
+  - q: Do you take cheese home from a cheese making course?
+    a: On many, yes. River Cottage sends you home with a tomme, mozzarella and paneer, and the School of Artisan Food asks you to bring containers for what you make.
+  - q: Is it safe to make cheese from raw milk?
+    a: The US Department of Agriculture advises never to eat soft cheeses made with unpasteurised milk, because of the risk of listeria. It says the illness most often affects pregnant women and their newborns,
+      adults aged 65 or older and people with weakened immune systems.
+  - q: What is the Academy of Cheese Level 1?
+    a: A one-day course leading to the Academy of Cheese's Level 1 exam. La Fromagerie's version includes the cheese, lunch and access to the online Level 1 exam.
+  sources:
+  - label: River Cottage, Cheese Making for Beginners
+    url: https://rivercottage.net/courses/artisanal-skills/cheese-making-at-home/
+    checked: '2026-11-16'
+  - label: The School of Artisan Food, Introduction to Soft Cheese
+    url: https://schoolofartisanfood.org/courses/short-courses/cheesemaking/introduction-to-soft-cheese
+    checked: '2026-11-16'
+  - label: La Fromagerie, Academy of Cheese Level 1 In-person Course, Monday 19 Jan 2026
+    url: https://lafromagerie.co.uk/products/academy-of-cheese-level-1-in-person-course-monday-19-jan-2026
+    checked: '2026-11-16'
+  - label: North House Folk School, Introduction to Artisan Cheesemaking
+    url: https://northhouse.org/course-session/introduction-to-artisan-cheesemaking-7-29-2026-0900
+    checked: '2026-11-16'
+  - label: 'Cornell CALS, The Science of Cheese: Basic Level'
+    url: https://cals.cornell.edu/node/6147
+    checked: '2026-11-16'
+  - label: USDA Food Safety and Inspection Service, Listeria Questions and Answers
+    url: https://www.fsis.usda.gov/es/node/4948
+    checked: '2026-11-16'
+  - label: Sheffield Telegraph, Sheffield cheese maker scoops gold prize at prestigious show
+    url: https://www.sheffieldtelegraph.co.uk/best-in/eating-out/sheffield-cheese-maker-scoops-gold-prize-prestigious-show-just-18-months-after-launching-478359
+    checked: '2026-11-16'
+  safety: The USDA advises never to eat soft cheeses made with unpasteurised milk because of the risk of listeria.
+  inspire:
+  - kind: read
+    person: Sophie Williamson, Sheffield Cheesemasters
+    line: Changed careers after taking a cheesemaking course, and won gold in the new cheesemakers section of the Great Yorkshire Show 18 months later.
+    title: Sheffield cheese maker scoops gold prize at prestigious show - just 18 months after launching
+    outlet: Sheffield Telegraph
+    url: https://www.sheffieldtelegraph.co.uk/best-in/eating-out/sheffield-cheese-maker-scoops-gold-prize-prestigious-show-just-18-months-after-launching-478359
+    checked: '2026-11-16'
+  kit:
+  - name: Cheese making kit
+    why: holds the cultures, rennet and moulds for a first cheese at home
+    url: https://www.amazon.co.uk/s?k=cheese+making+kit
+  - name: Cheesecloth
+    why: for draining curds and lining moulds
+    url: https://www.amazon.co.uk/s?k=cheesecloth
+  - name: Kitchen thermometer
+    why: for checking milk temperature as you heat it and add culture
+    url: https://www.amazon.co.uk/s?k=kitchen+thermometer
+  related:
+  - take-a-bread-making-class
+  - go-to-cookery-school
+  - sourdough-from-starter
+  - wset-wine-course
+- id: go-on-a-foraging-course
+  title: Go on a wild food foraging walk
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Hedgerows, parks and shorelines hold leaves, flowers, berries and seaweeds you can eat, and a guided walk teaches you to tell them from the lookalikes. It changes an ordinary walk into a hunt, and
+    many walks end with a tasting of what the group has found.
+  start:
+  - Find a teacher near you, for example through the Association of Foragers directory in the UK or a park walk in the US, and pick a plant, hedgerow or seashore walk rather than a fungi foray.
+  - Book early; places are limited, and coastal walks are timed to low tide.
+  - Take sturdy footwear, waterproofs, water and a small bag or basket, and leave anything you are unsure of where it grows.
+  links:
+  - label: 'Association of Foragers: about the association and its member directory'
+    url: https://foragers-association.org/about-us
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Wild Food UK: foraging courses at venues across the UK'
+    url: https://www.wildfooduk.com/foraging-trips/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Galloway Wild Foods: The Coastal Forager walk'
+    url: https://gallowaywildfoods.com/?p=12231
+    region: uk
+    checked: '2026-11-16'
+  - label: '"Wildman" Steve Brill: Central Park foraging tour'
+    url: https://coursehorse.com/nyc/classes/experiences/tour/nature/central-park-teens-adults-?schedule=6276197
+    region: us
+    checked: '2026-11-16'
+  seo_title: 'Foraging courses: wild food walks and the rules'
+  description: How to find a guided wild food foraging walk in the UK or US, what it costs, what you may legally pick, and why you never eat a plant you cannot name.
+  detail:
+  - h: What the law says about picking
+    p:
+    - In England and Wales, section 4(3) of the Theft Act 1968 says a person who picks mushrooms, or flowers, fruit or foliage from a plant growing wild, does not steal what they pick unless they do it
+      for reward, for sale or another commercial purpose. That covers picking, not digging.
+    - Uprooting is different. Under section 13 of the Wildlife and Countryside Act 1981 it is an offence to intentionally uproot any wild plant unless you are an authorised person, and to pick, uproot or
+      destroy any plant on its Schedule 8 list of protected species. The Woodland Trust says to take no more than you will eat, to avoid damaging roots, and that its sites allow foraging for personal use
+      only.
+    - In US national parks, federal rules forbid removing or disturbing plants, but each park superintendent may name fruits, berries, nuts or empty seashells that can be gathered by hand for personal use.
+      Shenandoah, for example, allows fruit such as blueberries and blackberries, generally up to one quart (about one litre) per person per day, but no flowers, leaves or roots. Check the rules for each
+      park before you pick.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Galloway Wild Foods, south-west Scotland
+        - 'The Coastal Forager: a 1.5 mile (2.4 km) low-tide walk for seaweeds, coastal plants and shellfish, with a wild food picnic (last listed 1 April 2026)'
+        - £28 and £85 both shown when checked
+      - - Wild Food UK
+        - Seasonal plant courses at more than 30 venues, plus online Zoom courses and separate mushroom courses
+        - Not shown on the listings page; check each course
+      - - Association of Foragers members
+        - Directory of teachers who have signed its Code of Conduct
+        - Set by each teacher
+      - - '"Wildman" Steve Brill, Central Park, New York'
+        - A walk from 11am to 2pm, gathering greens such as garlic mustard, chickweed and sheep sorrel for a wild salad
+        - $25 suggested donation
+    after: The Association of Foragers says it is not an accreditation scheme and gives no proficiency status, so ask any teacher about their experience and the ground the walk covers. For fungi, see our
+      guided mushroom foray page; this page is about plants, hedgerows and the shore.
+  faq:
+  - q: Is foraging legal in the UK?
+    a: In England and Wales, the Theft Act 1968 allows picking wild flowers, fruit, foliage and mushrooms for non-commercial use, but the Wildlife and Countryside Act 1981 makes it an offence to uproot
+      wild plants unless you are authorised. At some of its sites, the Woodland Trust says it prefers that you do not forage at all.
+  - q: Can you forage in US national parks?
+    a: Only what each park allows. Federal rules let a park superintendent permit gathering of certain fruits, berries, nuts and empty seashells by hand for personal use, and each park lists them.
+  - q: How much does a foraging course cost?
+    a: As last listed, Galloway Wild Foods' coastal walk was £28 reduced from £85, and Steve Brill's Central Park walk is a $25 suggested donation.
+  - q: Do foraging courses include mushrooms?
+    a: Some do. Steve Brill adds wild mushrooms when present, and Wild Food UK runs separate mushroom courses, but many walks focus on plants, berries and seaweed.
+  sources:
+  - label: The Association of Foragers, About us
+    url: https://foragers-association.org/about-us
+    checked: '2026-11-16'
+  - label: Wild Food UK, Foraging Courses
+    url: https://www.wildfooduk.com/foraging-trips/
+    checked: '2026-11-16'
+  - label: Galloway Wild Foods, The Coastal Forager – Low Spring Tide Foraging Walk & Wild Food Picnic
+    url: https://gallowaywildfoods.com/?p=12231
+    checked: '2026-11-16'
+  - label: CourseHorse, Central Park (Teens/Adults) with "Wildman" Steve Brill
+    url: https://coursehorse.com/nyc/classes/experiences/tour/nature/central-park-teens-adults-?schedule=6276197
+    checked: '2026-11-16'
+  - label: 'legislation.gov.uk, Theft Act 1968, section 4: Definition of "theft"'
+    url: https://www.legislation.gov.uk/ukpga/1968/60/section/4
+    checked: '2026-11-16'
+  - label: 'legislation.gov.uk, Wildlife and Countryside Act 1981, section 13: Protection of wild plants'
+    url: https://www.legislation.gov.uk/ukpga/1981/69/section/13/2024-03-28
+    checked: '2026-11-16'
+  - label: Woodland Trust, Responsible foraging guidelines
+    url: https://woodlandtrust.org.uk/visiting-woods/things-to-do/foraging/foraging-guidelines
+    checked: '2026-11-16'
+  - label: Legal Information Institute, 36 CFR 2.1 Preservation of natural, cultural and archeological resources
+    url: https://www.law.cornell.edu/cfr/text/36/2.1
+    checked: '2026-11-16'
+  - label: National Park Service, Collecting Plants and Mushrooms, Shenandoah National Park
+    url: https://www.nps.gov/shen/learn/management/collecting-plants.htm
+    checked: '2026-11-16'
+  - label: Yorkshire Post, Meet the foragers encouaging us to make the most of nature's larder
+    url: https://www.yorkshirepost.co.uk/lifestyle/food-and-drink/meet-foragers-encouaging-us-make-most-natures-larder-2968759
+    checked: '2026-11-16'
+  safety: 'The Woodland Trust says: never consume a wild plant or fungus unless you are absolutely certain of its identification.'
+  inspire:
+  - kind: read
+    person: Rachelle Martyn, Yorkshire Dales
+    line: Spotted leaves she thought were wild strawberries during lockdown, checked them every week until she was sure, and now identifies dozens of wild ingredients and advises beginners to start with
+      a course.
+    title: Meet the foragers encouaging us to make the most of nature's larder
+    outlet: Yorkshire Post
+    url: https://www.yorkshirepost.co.uk/lifestyle/food-and-drink/meet-foragers-encouaging-us-make-most-natures-larder-2968759
+    checked: '2026-11-16'
+  kit:
+  - name: Wild food field guide
+    why: for checking plants against photos and lookalikes on the walk
+    url: https://www.amazon.co.uk/s?k=wild+food+foraging+field+guide
+  - name: Foraging basket
+    why: carries finds without crushing them
+    url: https://www.amazon.co.uk/s?k=foraging+basket
+  related:
+  - guided-mushroom-foray
+  - go-rockpooling
+  - identify-twenty-trees
+  - preserve-a-seasons-fruit
+- id: learn-garden-design
+  title: Take a short garden design course
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  why: Garden design teaches you to look at a plot as a plan, with levels, views and paths, and then to fill it with plants that suit the soil and the light. A short course is enough to redesign your own
+    garden, and the longer certificates are the first step for anyone thinking of doing it for clients.
+  start:
+  - Measure your own garden and note where the sun falls through the day; the University of Minnesota's course, for one, has you work on your own property.
+  - Try a one-day taster, such as the London College of Garden Design's day at RHS Garden Wisley, before committing to a longer course.
+  - If you want to design for others, look at the Society of Garden and Landscape Designers' advice on courses and its student membership.
+  links:
+  - label: 'London College of Garden Design: So You Want To Be A Garden Designer, at RHS Wisley'
+    url: https://www.lcgd.org.uk/short-course/soyouwanttobe2026/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'Society of Garden and Landscape Designers: become a designer'
+    url: https://sgld.org.uk/courses-and-careers/become-a-designer/
+    region: uk
+    checked: '2026-11-16'
+  - label: 'University of Minnesota Landscape Arboretum: Creating a Home Landscape'
+    url: https://arb.umn.edu/learn/home-landscape-design
+    region: us
+    checked: '2026-11-16'
+  - label: 'New York Botanical Garden: landscape design classes'
+    url: https://www.nybg.org/learn/adult-education/landscape-design-classes
+    region: us
+    checked: '2026-11-16'
+  seo_title: 'Garden design courses: short, online and certificate'
+  description: Short garden design courses in the UK and US compared, from a one-day RHS Wisley taster to online certificates, with costs and the professional route.
+  detail:
+  - h: From your own garden to clients
+    p:
+    - The University of Minnesota Landscape Arboretum's five-session Creating a Home Landscape is built around your own property. Each session ends with a take-home assignment, moving from base plans to
+      concept plans to a finished design, and couples working on the same garden can book together.
+    - At RHS Garden Wisley, the London College of Garden Design runs a one-day So You Want To Be A Garden Designer, covering planting design, construction design and how designers communicate visually,
+      plus advice on careers. The RHS also hosts its two-day Garden Design Drawing Skills, taught by the designer Andrew Wilson, for people who have mastered the basics.
+    - For a qualification you can study from home, KLC School of Design's Online Certificate in Residential Garden Design has fourteen sections, including planting design and CAD in Vectorworks, with five
+      assignments and a final project. It says no previous experience in garden design is required and that students who commit 12 hours a week can complete it in 12 months.
+    - The UK's professional body, the Society of Garden and Landscape Designers, offers student membership to people on a course of at least 200 guided learning hours. Its Registered Members have passed
+      an accreditation process, and you cannot apply for that grade directly.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - London College of Garden Design at RHS Garden Wisley
+        - One day, 8 August 2026, including garden entry and lunch
+        - £77
+      - - RHS Garden Wisley
+        - Garden Design Drawing Skills, two days, 15 and 16 October 2026 (sold out when checked)
+        - £205
+      - - KLC School of Design, online
+        - Self-paced certificate, 12 months' access, start any time
+        - £1,000, or £200 then ten payments of £80
+      - - University of Minnesota Landscape Arboretum
+        - Five three-hour sessions in person; next run January to February 2027 (waitlist)
+        - $225 members, $325 non-members; couples $275 or $375
+      - - New York Botanical Garden
+        - Landscape Design Summer Intensive, five weeks of weekdays (last listed July to August 2026)
+        - $3,321 members, $3,690 non-members, plus about $400 of supplies
+    after: The NYBG intensive counts for a quarter of the course hours for its Certificate in Landscape Design, and NYBG also lets you take a single course for fun.
+  faq:
+  - q: How long does it take to learn garden design?
+    a: A taster is one day, and a home landscape course may be five sessions. KLC says its online certificate takes about 12 months at 12 hours a week.
+  - q: Do you need qualifications to be a garden designer?
+    a: The Society of Garden and Landscape Designers says skills can be learnt and experience built. Its Registered Member status is earned by passing its accreditation process.
+  - q: Can I learn garden design online?
+    a: Yes. KLC School of Design's Online Certificate in Residential Garden Design is self-paced, with video lessons and live feedback tutorials, and needs no previous experience in garden design.
+  - q: How much does a garden design course cost?
+    a: As last listed, from £77 for a one-day taster at RHS Wisley and $225 for a five-session home landscape course in Minnesota, up to £1,000 for KLC's online certificate.
+  sources:
+  - label: London College of Garden Design, So You Want To Be A Garden Designer
+    url: https://www.lcgd.org.uk/short-course/soyouwanttobe2026/
+    checked: '2026-11-16'
+  - label: RHS, Garden Design Drawing Skills (2-day course)
+    url: https://www.rhs.org.uk/gardens/wisley/viewevent?EFID=4411&ESRC=CMS
+    checked: '2026-11-16'
+  - label: West Dean, Online Certificate in Residential Garden Design
+    url: https://www.westdean.ac.uk/degrees-and-diplomas/online-certificate-residential-garden-design
+    checked: '2026-11-16'
+  - label: Society of Garden and Landscape Designers, Become a designer
+    url: https://sgld.org.uk/courses-and-careers/become-a-designer/
+    checked: '2026-11-16'
+  - label: Society of Garden and Landscape Designers, Join the SGLD
+    url: https://sgld.org.uk/join-us/
+    checked: '2026-11-16'
+  - label: 'University of Minnesota Landscape Arboretum, Creating a Home Landscape: Sustainable Design Basics for Homeowners'
+    url: https://arb.umn.edu/learn/home-landscape-design
+    checked: '2026-11-16'
+  - label: New York Botanical Garden, Landscape Design Classes
+    url: https://www.nybg.org/learn/adult-education/landscape-design-classes
+    checked: '2026-11-16'
+  - label: New York Botanical Garden, Landscape Design Summer Intensive
+    url: https://www.nybg.org/education/adult-education/certificate-program/intensive-programs/landscape-design-summer-intensive/
+    checked: '2026-11-16'
+  - label: Gardens Illustrated, The award-winning garden designer who only started her career at the age of 50
+    url: https://www.gardensillustrated.com/gardens/gardeners/charlotte-rowe-interview
+    checked: '2026-11-16'
+  inspire:
+  - kind: read
+    person: Charlotte Rowe
+    line: A former director of communications at the London Tourist Board who took a garden design diploma at the Oxford College of Garden Design, founded her own practice and won a Gold medal at the RHS
+      Chelsea Flower Show.
+    title: The award-winning garden designer who only started her career at the age of 50
+    outlet: Gardens Illustrated
+    url: https://www.gardensillustrated.com/gardens/gardeners/charlotte-rowe-interview
+    checked: '2026-11-16'
+  kit:
+  - name: Scale ruler
+    why: for drawing a garden plan to scale
+    url: https://www.amazon.co.uk/s?k=scale+ruler
+  - name: A3 drawing board
+    why: gives a flat, square surface for plans and tracing overlays
+    url: https://www.amazon.co.uk/s?k=a3+drawing+board
+  - name: Long measuring tape
+    why: for measuring your plot before drawing a base plan
+    url: https://www.amazon.co.uk/s?k=30m+measuring+tape
+  related:
+  - take-rhs-level-2
+  - visit-an-open-garden
+  - become-a-master-gardener
+  - learn-botanical-illustration
