@@ -19,15 +19,15 @@ A 400 m pool swim or 750 m open water swim, a 20 km (12.4 mile) ride and a 5 km 
 
 - Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. [10, 11, 12, 13]
 - Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. [4, 14, 15]
-- Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. [12, 16, 17]
-- Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. [2, 12, 18]
+- Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. [12, 16, 17, 18]
+- Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. [2, 12, 19]
 - Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them. [1, 2]
-- Plan rest days into every week, and take an easier day when your legs are heavy. [4, 12, 19]
-- Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. [2, 3, 5, 20, 21, 22]
-- In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. [12, 18, 23, 24, 25]
-- Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest. [9, 26]
+- Plan rest days into every week, and take an easier day when your legs are heavy. [4, 12, 20]
+- Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. [2, 3, 5, 21, 22, 23]
+- In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. [12, 19, 24, 25, 26]
+- Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest. [9, 27]
 - With three days a week, swim once or twice working on technique, ride once at a steady pace and run twice, one easy and one a little faster. Regular sessions of 30 to 45 minutes are enough to start, rather than long, hard ones. [8]
-- Practise running straight after riding (a brick session), starting with about 10 minutes of easy running after a ride. Running off the bike feels heavy and uncoordinated at first, and practising it helps your pacing, your transitions and your confidence. [8, 27]
+- Practise running straight after riding (a brick session), starting with about 10 minutes of easy running after a ride. Running off the bike feels heavy and uncoordinated at first, and practising it helps your pacing, your transitions and your confidence. [8, 28]
 
 ## Week by week
 
@@ -53,10 +53,10 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - **The Saturday brick session (a ride, then a run straight away).** The long session prepares you for the length of the day itself. Its pace does not matter; covering the time or distance does, so keep it at a conversational effort. [1, 2, 12]
 - **The easy run or ride, taking turns week by weeks.** Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. [10, 11]
 - **Swim technique session.** Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. [9]
-- **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. [3, 20]
+- **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. [3, 21]
 - **Rest days.** Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. [4, 16]
 - **Easier weeks.** An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [12, 16]
-- **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [23, 24]
+- **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [24, 25]
 
 ## Each week, and why
 
@@ -66,14 +66,14 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - Why the long session: it gets you used to the hours you will spend out on the day; pace does not matter [1, 2, 12]
 - New this week, swim technique session on Thursday: it turns sighting and two-sided breathing into habits before you need them outdoors [9]
 - Tuesday's easy run or ride, taking turns week by week: it adds fitness while leaving you fresh for the long session [10, 11]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 20]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 21]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 16]
 
 **Week 2: building.**
 
 - The brick session (a ride, then a run straight away) grows to 45 minutes, up from 40 minutes in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 14, 15]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 20]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 21]
 
 **Week 3: an easier week.**
 
@@ -92,7 +92,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 - The brick session (a ride, then a run straight away) grows to 60 minutes, up from 50 minutes in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 14, 15]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 20]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 21]
 
 **Week 6: an easier week.**
 
@@ -111,58 +111,58 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - Your longest brick session (a ride, then a run straight away) of the plan, 75 minutes, as close to the real day as training gets.
 - Why the long session: it gets you used to the hours you will spend out on the day; pace does not matter [1, 2, 12]
 - Swim technique session again on Thursday: it turns sighting and two-sided breathing into habits before you need them outdoors [9]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 20]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 21]
 
 **Week 9: taper.**
 
 - The brick session (a ride, then a run straight away) drops to 45 minutes, but you keep every session.
-- Why less now: your muscles recover and your body refuels, so you arrive fresh [23, 24]
+- Why less now: your muscles recover and your body refuels, so you arrive fresh [24, 25]
 - Tuesday's easy run or ride, taking turns week by week: it adds fitness while leaving you fresh for the long session [10, 11]
 - Keep both strength sessions but make them lighter: same sessions, less of each.
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 16]
 
 **Week 10: the challenge.**
 
-- One short, easy outing early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [23, 24]
+- One short, easy outing early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [24, 25]
 - No strength sessions this week; arrive rested.
 
 
 ## Looking after your body
 
-- Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. [3, 5, 20, 21, 22]
-- Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. [2, 20]
+- Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. [3, 5, 21, 22, 23]
+- Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. [2, 21]
 - Weight-bearing activity such as walking and running helps keep bones strong. [3]
-- If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [21]
-- Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third. [28, 29, 30, 31]
-- Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. [19, 24, 32]
-- If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. [4, 24]
+- If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [22]
+- Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third. [29, 30, 31, 32]
+- Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. [20, 25, 33]
+- If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. [4, 25]
 
-**Strength and balance routine (twice a week).** Squats, lunges, a core exercise such as a plank, and a balance exercise such as standing on one leg. Start with your own body weight, two sets of 8 to 12 slow repetitions, and add load only when that feels easy. [2, 3, 5, 20, 21, 22]
+**Strength and balance routine (twice a week).** Squats, lunges, a core exercise such as a plank, and a balance exercise such as standing on one leg. Start with your own body weight, two sets of 8 to 12 slow repetitions, and add load only when that feels easy. [2, 3, 5, 21, 22, 23]
 
 ## Fuel, drink and feet
 
-- On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. [2, 33]
-- Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. [24, 33]
+- On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. [2, 34]
+- Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. [25, 34]
 
 ## On the day
 
-- Start slower than you think you need to; early miles feel easy and are where most people overdo it. [10, 24, 34]
-- Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. [9, 35, 36, 37]
-- Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. [9, 35, 36]
-- If you will wear a wetsuit on the day, train in that same wetsuit beforehand rather than changing kit for the event. [38]
-- Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast. [27]
+- Start slower than you think you need to; early miles feel easy and are where most people overdo it. [10, 25, 35]
+- Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. [9, 36, 37, 38]
+- Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. [9, 36, 37]
+- If you will wear a wetsuit on the day, train in that same wetsuit beforehand rather than changing kit for the event. [39]
+- Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast. [28]
 
 ## Safety
 
-- If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [21]
-- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [39]
-- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [40]
-- Stop if something does not feel right, and get it checked rather than training through it. [4, 24]
-- Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. [9, 35, 36, 41, 42, 43, 44]
-- In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. [35, 36, 41, 45, 46]
-- Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. [9, 36, 47]
-- If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. [35, 36]
-- In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. [48]
+- If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [22]
+- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [40]
+- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [41]
+- Stop if something does not feel right, and get it checked rather than training through it. [4, 25]
+- Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. [9, 36, 37, 42, 43, 44, 45]
+- In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. [36, 37, 42, 46, 47]
+- Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. [9, 37, 48]
+- If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. [36, 37]
+- In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. [49]
 
 ## Where this comes from
 
@@ -185,34 +185,35 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 15. Great Run (organiser of the Great North Run), *How to train for a half marathon* (2026). Tier 3. https://www.greatrun.org/training/how-to-train-for-a-half-marathon/ (opened 2026-10-27)
 16. RunnersConnect (Jeff Gaudette, running coach since 2005 and former Olympic Trials qualifier), *What is a down week in running? How and when to take one* (2026). Tier 2. https://runnersconnect.net/why-planned-down-weeks-are-important/ (opened 2026-10-27)
 17. British Cycling (Insight Zone), *Supporting Document: Missing weeks of the plan (page undated; year from the article reference izn20160404)* (2016). Tier 3. https://www.britishcycling.org.uk/knowledge/training-plans/supporting-documents/article/izn20160404-Supporting-documents-Supporting-Document--Should-I-train-if-I-am-ill--0 (opened 2026-11-14)
-18. Edinburgh Marathon Festival, *How to train for your first half marathon, a beginner's guide to going the distance* (2026). Tier 3. https://www.edinburghmarathon.com/news/training-performance/how-to-train-half-marathon (opened 2026-11-03)
-19. British Mountaineering Council (Chris Townsend, long-distance walker), *How to get into long-distance walking* (2026). Tier 2. https://thebmc.co.uk/en/beginner-long-distance-walks-tips-chris-townsend (opened 2026-10-27)
-20. British Journal of Sports Medicine 48(11), *The effectiveness of exercise interventions to prevent sports injuries, a meta-analysis of 25 randomised trials (Lauersen, Bertelsen and Andersen)* (2014). Tier 4. https://bjsm.bmj.com/content/48/11/871 (opened 2026-10-27)
-21. NHS, *Keep bones healthy over 65 (last reviewed 31 October 2023)* (2023). Tier 5. https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/ (opened 2026-11-02)
-22. Centers for Disease Control and Prevention (CDC), *Older adult activity, an overview (last reviewed 4 December 2025)* (2025). Tier 5. https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html (opened 2026-11-03)
-23. Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Tier 4. https://pubmed.ncbi.nlm.nih.gov/17762369/ (opened 2026-10-27)
-24. England Athletics (Jo Pavey, five-time Olympian), *Top marathon tips from five-time Olympian Jo Pavey* (2023). Tier 2. https://www.englandathletics.org/news/top-marathon-tips-from-five-time-olympian-jo-pavey/ (opened 2026-10-27)
-25. Great Run (organiser of the Great North Run), *Half marathon training plan (12-week Run/Walk, Beginner and Improver plans)* (2026). Tier 3. https://www.greatrun.org/train-and-prepare/training-plans/half-marathon-training-plan/ (opened 2026-10-27)
-26. Swim England (Open Water Swimming Hub), *Top tips for preparing for open water swimming in the pool (9 October 2018, updated 25 October 2022)* (2022). Tier 3. https://www.swimming.org/openwater/top-tips-for-preparing-for-open-water-swimming-in-the-pool/ (opened 2026-11-10)
-27. USA Triathlon (John Hansen), *How to use brick workouts in triathlon training* (2021). Tier 3. https://www.usatriathlon.org/articles/training-tips/how-to-use-brick-workouts-in-triathlon-training (opened 2026-11-03)
-28. Cochrane Database of Systematic Reviews 2019(1), CD012424, *Exercise for preventing falls in older people living in the community (systematic review of 108 randomised trials)* (2019). Tier 4. https://pubmed.ncbi.nlm.nih.gov/30703272/ (opened 2026-11-11)
-29. World Health Organization, *Falls (fact sheet, 21 October 2026)* (2026). Tier 5. https://www.who.int/news-room/fact-sheets/detail/falls (opened 2026-11-11)
-30. NHS, *Falls, prevention (last reviewed 6 March 2025)* (2025). Tier 5. https://www.nhs.uk/conditions/falls/prevention/ (opened 2026-11-12)
-31. Centers for Disease Control and Prevention (CDC), National Center for Injury Prevention and Control, *Preventing Falls and Hip Fractures (27 January 2026)* (2026). Tier 5. https://www.cdc.gov/falls/prevention/index.html (opened 2026-11-12)
-32. NHS (Every Mind Matters), *Sleep problems (undated page; year is the year opened)* (2026). Tier 5. https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/ (opened 2026-11-11)
-33. Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Tier 4. https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/ (opened 2026-10-27)
-34. EXCLI Journal 25, Doc591 (Knechtle, Thuany, Nikolaidis, Forte, Leite, Lepers, Chlíbková, Weiss, Rosemann, Vancini and Duric), *The New York City Marathon: A systematic review of performance, participation, pacing, and health-related outcomes* (2026). Tier 4. https://www.excli.de/vol25/2026-9354/2026-9354.htm (opened 2026-11-14)
-35. RNLI (Royal National Lifeboat Institution), *RNLI reminds New Year dippers and open water swimmers of risks* (2025). Tier 3. https://rnli.org/news-and-media/2025/december/30/rnli-reminds-new-year-dippers-and-open-water-swimmers-of-risks (opened 2026-11-01)
-36. Swim England (Open Water Swimming Hub), *How to stay safe swimming outdoors (updated 23 September 2022)* (2022). Tier 3. https://www.swimming.org/openwater/how-to-stay-safe-swimming-outdoors/ (opened 2026-11-01)
-37. Bewl Water (venue operator, Lamberhurst, Kent), *Open water swimming* (2026). Tier 3. https://bewlwater.co.uk/activities/open-water-swimming (opened 2026-11-13)
-38. U.S. Masters Swimming, *At what water temperature do I need a wetsuit?* (2026). Tier 3. https://www.usms.org/fitness-and-training/articles-and-videos/articles/at-what-water-temperature-do-i-need-a-wetsuit (opened 2026-11-13)
-39. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
-40. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
-41. Swim England (Open Water Swimming Hub), *Swim England issues safety advice for open water swimming in hot weather (19 July 2022)* (2022). Tier 3. https://www.swimming.org/openwater/open-water-safety/ (opened 2026-11-08)
-42. Scottish Wildlife Trust (Living Seas snorkel trail), *Snorkel safety (last modified 16 July 2026)* (2026). Tier 3. https://snorkel.scottishwildlifetrust.org.uk/safety/ (opened 2026-11-13)
-43. U.S. National Park Service, Buck Island Reef National Monument, *Safety (last updated 10 August 2017)* (2017). Tier 3. https://www.nps.gov/buis/planyourvisit/safety.htm (opened 2026-11-13)
-44. Swim England (Open Water Swimming Hub), *Tips for practising in open water* (2026). Tier 3. https://www.swimming.org/openwater/tips-practising-open-water/ (opened 2026-11-13)
-45. RNLI (Royal National Lifeboat Institution), *Float to Live (undated page; year is the year opened)* (2026). Tier 3. https://rnli.org/float (opened 2026-11-08)
-46. Outdoor Swimming Society (Kate Rew, author of The Outdoor Swimmers' Handbook), *Risks of Cold Water (published 3 February 2017, updated 30 May 2026)* (2026). Tier 2. https://www.outdoorswimmingsociety.com/risks-cold-water/ (opened 2026-11-08)
-47. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
-48. British Triathlon (Wales), *Beginners guide to triathlon* (2026). Tier 3. https://www.britishtriathlon.org/wales/news/beginners-guide-to-triathlon---how_12969 (opened 2026-11-03)
+18. European Journal of Sport Science 13(1) and Medicine & Science in Sports & Exercise 45(1) (Meeusen, Duclos, Foster, Fry, Gleeson, Nieman, Raglin, Rietjens, Steinacker and Urhausen; Loughborough University repository copy), *Prevention, diagnosis and treatment of the overtraining syndrome: Joint consensus statement of the European College of Sport Science (ECSS) and the American College of Sports Medicine (ACSM)* (2013). Tier 5. https://dspace.lboro.ac.uk/2134/17104 (opened 2026-11-16)
+19. Edinburgh Marathon Festival, *How to train for your first half marathon, a beginner's guide to going the distance* (2026). Tier 3. https://www.edinburghmarathon.com/news/training-performance/how-to-train-half-marathon (opened 2026-11-03)
+20. British Mountaineering Council (Chris Townsend, long-distance walker), *How to get into long-distance walking* (2026). Tier 2. https://thebmc.co.uk/en/beginner-long-distance-walks-tips-chris-townsend (opened 2026-10-27)
+21. British Journal of Sports Medicine 48(11), *The effectiveness of exercise interventions to prevent sports injuries, a meta-analysis of 25 randomised trials (Lauersen, Bertelsen and Andersen)* (2014). Tier 4. https://bjsm.bmj.com/content/48/11/871 (opened 2026-10-27)
+22. NHS, *Keep bones healthy over 65 (last reviewed 31 October 2023)* (2023). Tier 5. https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/ (opened 2026-11-02)
+23. Centers for Disease Control and Prevention (CDC), *Older adult activity, an overview (last reviewed 4 December 2025)* (2025). Tier 5. https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html (opened 2026-11-03)
+24. Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Tier 4. https://pubmed.ncbi.nlm.nih.gov/17762369/ (opened 2026-10-27)
+25. England Athletics (Jo Pavey, five-time Olympian), *Top marathon tips from five-time Olympian Jo Pavey* (2023). Tier 2. https://www.englandathletics.org/news/top-marathon-tips-from-five-time-olympian-jo-pavey/ (opened 2026-10-27)
+26. Great Run (organiser of the Great North Run), *Half marathon training plan (12-week Run/Walk, Beginner and Improver plans)* (2026). Tier 3. https://www.greatrun.org/train-and-prepare/training-plans/half-marathon-training-plan/ (opened 2026-10-27)
+27. Swim England (Open Water Swimming Hub), *Top tips for preparing for open water swimming in the pool (9 October 2018, updated 25 October 2022)* (2022). Tier 3. https://www.swimming.org/openwater/top-tips-for-preparing-for-open-water-swimming-in-the-pool/ (opened 2026-11-10)
+28. USA Triathlon (John Hansen), *How to use brick workouts in triathlon training* (2021). Tier 3. https://www.usatriathlon.org/articles/training-tips/how-to-use-brick-workouts-in-triathlon-training (opened 2026-11-03)
+29. Cochrane Database of Systematic Reviews 2019(1), CD012424, *Exercise for preventing falls in older people living in the community (systematic review of 108 randomised trials)* (2019). Tier 4. https://pubmed.ncbi.nlm.nih.gov/30703272/ (opened 2026-11-11)
+30. World Health Organization, *Falls (fact sheet, 21 October 2026)* (2026). Tier 5. https://www.who.int/news-room/fact-sheets/detail/falls (opened 2026-11-11)
+31. NHS, *Falls, prevention (last reviewed 6 March 2025)* (2025). Tier 5. https://www.nhs.uk/conditions/falls/prevention/ (opened 2026-11-12)
+32. Centers for Disease Control and Prevention (CDC), National Center for Injury Prevention and Control, *Preventing Falls and Hip Fractures (27 January 2026)* (2026). Tier 5. https://www.cdc.gov/falls/prevention/index.html (opened 2026-11-12)
+33. NHS (Every Mind Matters), *Sleep problems (undated page; year is the year opened)* (2026). Tier 5. https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/ (opened 2026-11-11)
+34. Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Tier 4. https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/ (opened 2026-10-27)
+35. EXCLI Journal 25, Doc591 (Knechtle, Thuany, Nikolaidis, Forte, Leite, Lepers, Chlíbková, Weiss, Rosemann, Vancini and Duric), *The New York City Marathon: A systematic review of performance, participation, pacing, and health-related outcomes* (2026). Tier 4. https://www.excli.de/vol25/2026-9354/2026-9354.htm (opened 2026-11-14)
+36. RNLI (Royal National Lifeboat Institution), *RNLI reminds New Year dippers and open water swimmers of risks* (2025). Tier 3. https://rnli.org/news-and-media/2025/december/30/rnli-reminds-new-year-dippers-and-open-water-swimmers-of-risks (opened 2026-11-01)
+37. Swim England (Open Water Swimming Hub), *How to stay safe swimming outdoors (updated 23 September 2022)* (2022). Tier 3. https://www.swimming.org/openwater/how-to-stay-safe-swimming-outdoors/ (opened 2026-11-01)
+38. Bewl Water (venue operator, Lamberhurst, Kent), *Open water swimming* (2026). Tier 3. https://bewlwater.co.uk/activities/open-water-swimming (opened 2026-11-13)
+39. U.S. Masters Swimming, *At what water temperature do I need a wetsuit?* (2026). Tier 3. https://www.usms.org/fitness-and-training/articles-and-videos/articles/at-what-water-temperature-do-i-need-a-wetsuit (opened 2026-11-13)
+40. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
+41. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
+42. Swim England (Open Water Swimming Hub), *Swim England issues safety advice for open water swimming in hot weather (19 July 2022)* (2022). Tier 3. https://www.swimming.org/openwater/open-water-safety/ (opened 2026-11-08)
+43. Scottish Wildlife Trust (Living Seas snorkel trail), *Snorkel safety (last modified 16 July 2026)* (2026). Tier 3. https://snorkel.scottishwildlifetrust.org.uk/safety/ (opened 2026-11-13)
+44. U.S. National Park Service, Buck Island Reef National Monument, *Safety (last updated 10 August 2017)* (2017). Tier 3. https://www.nps.gov/buis/planyourvisit/safety.htm (opened 2026-11-13)
+45. Swim England (Open Water Swimming Hub), *Tips for practising in open water* (2026). Tier 3. https://www.swimming.org/openwater/tips-practising-open-water/ (opened 2026-11-13)
+46. RNLI (Royal National Lifeboat Institution), *Float to Live (undated page; year is the year opened)* (2026). Tier 3. https://rnli.org/float (opened 2026-11-08)
+47. Outdoor Swimming Society (Kate Rew, author of The Outdoor Swimmers' Handbook), *Risks of Cold Water (published 3 February 2017, updated 30 May 2026)* (2026). Tier 2. https://www.outdoorswimmingsociety.com/risks-cold-water/ (opened 2026-11-08)
+48. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
+49. British Triathlon (Wales), *Beginners guide to triathlon* (2026). Tier 3. https://www.britishtriathlon.org/wales/news/beginners-guide-to-triathlon---how_12969 (opened 2026-11-03)

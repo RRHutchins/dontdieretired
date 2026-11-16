@@ -17,13 +17,13 @@
 
 - Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. [7, 8, 9, 10]
 - Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. [4, 11, 12]
-- Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. [9, 13, 14]
-- Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. [2, 9, 15]
+- Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. [9, 13, 14, 15]
+- Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. [2, 9, 16]
 - Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them. [1, 2]
-- Plan rest days into every week, and take an easier day when your legs are heavy. [4, 9, 16]
-- Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. [2, 3, 5, 17, 18, 19]
-- In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. [9, 15, 20, 21, 22]
-- Build one long ride a week at an easy pace, growing gradually towards the distance of the event; Cycling UK's plan for a 100 km ride takes the long ride from 15 to 25 km up to 90 to 100 km over nine weeks. [10, 23]
+- Plan rest days into every week, and take an easier day when your legs are heavy. [4, 9, 17]
+- Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. [2, 3, 5, 18, 19, 20]
+- In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. [9, 16, 21, 22, 23]
+- Build one long ride a week at an easy pace, growing gradually towards the distance of the event; Cycling UK's plan for a 100 km ride takes the long ride from 15 to 25 km up to 90 to 100 km over nine weeks. [10, 24]
 
 ## Week by week
 
@@ -48,10 +48,10 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 - **The Saturday long ride.** The long session prepares you for the length of the day itself. Its pace does not matter; covering the time or distance does, so keep it at a conversational effort. [1, 2, 9]
 - **The easy rides.** Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. [7, 8]
-- **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. [3, 17]
+- **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. [3, 18]
 - **Rest days.** Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. [4, 13]
 - **Easier weeks.** An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [9, 13]
-- **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [20, 21]
+- **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [21, 22]
 
 ## Each week, and why
 
@@ -60,14 +60,14 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - Five sessions and two rest days. The long ride starts at 40 km (25 miles).
 - Why the long session: it gets you used to the hours you will spend out on the day; pace does not matter [1, 2, 9]
 - Tuesday's easy ride: it adds fitness while leaving you fresh for the long session [7, 8]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 17]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 18]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 13]
 
 **Week 2: building.**
 
 - The long ride grows to 46 km (29 miles), up from 40 km (25 miles) in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 11, 12]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 17]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 18]
 
 **Week 3: an easier week.**
 
@@ -85,7 +85,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 - The long ride grows to 62 km (38 miles), up from 53 km (33 miles) in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 11, 12]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 17]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 18]
 
 **Week 6: an easier week.**
 
@@ -103,7 +103,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 - The long ride grows to 82 km (51 miles), up from 71 km (44 miles) in your last full week.
 - Why only this much more: big jumps from one week to the next are linked with overuse injuries. [4, 11, 12]
-- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 17]
+- Strength and balance, Wednesday and Sunday: it protects you from injury (about a third of the injuries in trials) [3, 18]
 
 **Week 9: an easier week.**
 
@@ -120,47 +120,47 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 11: taper.**
 
 - The long ride drops to 57 km (35 miles), but you keep every session.
-- Why less now: your muscles recover and your body refuels, so you arrive fresh [20, 21]
+- Why less now: your muscles recover and your body refuels, so you arrive fresh [21, 22]
 - Tuesday's easy ride: it adds fitness while leaving you fresh for the long session [7, 8]
 - Keep both strength sessions but make them lighter: same sessions, less of each.
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 13]
 
 **Week 12: the challenge.**
 
-- One short, easy outing early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [20, 21]
+- One short, easy outing early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [21, 22]
 - No strength sessions this week; arrive rested.
 
 
 ## Looking after your body
 
-- Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. [3, 5, 17, 18, 19]
-- Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. [2, 17]
+- Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. [3, 5, 18, 19, 20]
+- Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. [2, 18]
 - Weight-bearing activity such as walking and running helps keep bones strong. [3]
-- If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [18]
-- Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third. [24, 25, 26, 27]
-- Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. [16, 21, 28]
-- If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. [4, 21]
+- If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [19]
+- Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third. [25, 26, 27, 28]
+- Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. [17, 22, 29]
+- If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. [4, 22]
 
-**Strength and balance routine (twice a week).** Squats, lunges, a core exercise such as a plank, and a balance exercise such as standing on one leg. Start with your own body weight, two sets of 8 to 12 slow repetitions, and add load only when that feels easy. [2, 3, 5, 17, 18, 19]
+**Strength and balance routine (twice a week).** Squats, lunges, a core exercise such as a plank, and a balance exercise such as standing on one leg. Start with your own body weight, two sets of 8 to 12 slow repetitions, and add load only when that feels easy. [2, 3, 5, 18, 19, 20]
 
 ## Fuel, drink and feet
 
-- On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. [2, 29]
-- Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. [21, 29]
-- On long rides eat something every 20 to 30 minutes, and carry enough food and drink for the whole ride rather than relying on finding a shop. [10, 23]
+- On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. [2, 30]
+- Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. [22, 30]
+- On long rides eat something every 20 to 30 minutes, and carry enough food and drink for the whole ride rather than relying on finding a shop. [10, 24]
 
 ## On the day
 
-- Start slower than you think you need to; early miles feel easy and are where most people overdo it. [7, 21, 30]
-- Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. [10, 23]
-- Start every ride easy, for at least the first five minutes, and build up to your riding pace gradually rather than setting off fast; finish with five to ten minutes of easy, slower riding. [10, 31]
+- Start slower than you think you need to; early miles feel easy and are where most people overdo it. [7, 22, 31]
+- Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. [10, 24]
+- Start every ride easy, for at least the first five minutes, and build up to your riding pace gradually rather than setting off fast; finish with five to ten minutes of easy, slower riding. [10, 32]
 
 ## Safety
 
-- If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [18]
-- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [32]
-- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [33]
-- Stop if something does not feel right, and get it checked rather than training through it. [4, 21]
+- If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [19]
+- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [33]
+- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [34]
+- Stop if something does not feel right, and get it checked rather than training through it. [4, 22]
 
 ## Where this comes from
 
@@ -180,22 +180,23 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 12. Great Run (organiser of the Great North Run), *How to train for a half marathon* (2026). Tier 3. https://www.greatrun.org/training/how-to-train-for-a-half-marathon/ (opened 2026-10-27)
 13. RunnersConnect (Jeff Gaudette, running coach since 2005 and former Olympic Trials qualifier), *What is a down week in running? How and when to take one* (2026). Tier 2. https://runnersconnect.net/why-planned-down-weeks-are-important/ (opened 2026-10-27)
 14. British Cycling (Insight Zone), *Supporting Document: Missing weeks of the plan (page undated; year from the article reference izn20160404)* (2016). Tier 3. https://www.britishcycling.org.uk/knowledge/training-plans/supporting-documents/article/izn20160404-Supporting-documents-Supporting-Document--Should-I-train-if-I-am-ill--0 (opened 2026-11-14)
-15. Edinburgh Marathon Festival, *How to train for your first half marathon, a beginner's guide to going the distance* (2026). Tier 3. https://www.edinburghmarathon.com/news/training-performance/how-to-train-half-marathon (opened 2026-11-03)
-16. British Mountaineering Council (Chris Townsend, long-distance walker), *How to get into long-distance walking* (2026). Tier 2. https://thebmc.co.uk/en/beginner-long-distance-walks-tips-chris-townsend (opened 2026-10-27)
-17. British Journal of Sports Medicine 48(11), *The effectiveness of exercise interventions to prevent sports injuries, a meta-analysis of 25 randomised trials (Lauersen, Bertelsen and Andersen)* (2014). Tier 4. https://bjsm.bmj.com/content/48/11/871 (opened 2026-10-27)
-18. NHS, *Keep bones healthy over 65 (last reviewed 31 October 2023)* (2023). Tier 5. https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/ (opened 2026-11-02)
-19. Centers for Disease Control and Prevention (CDC), *Older adult activity, an overview (last reviewed 4 December 2025)* (2025). Tier 5. https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html (opened 2026-11-03)
-20. Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Tier 4. https://pubmed.ncbi.nlm.nih.gov/17762369/ (opened 2026-10-27)
-21. England Athletics (Jo Pavey, five-time Olympian), *Top marathon tips from five-time Olympian Jo Pavey* (2023). Tier 2. https://www.englandathletics.org/news/top-marathon-tips-from-five-time-olympian-jo-pavey/ (opened 2026-10-27)
-22. Great Run (organiser of the Great North Run), *Half marathon training plan (12-week Run/Walk, Beginner and Improver plans)* (2026). Tier 3. https://www.greatrun.org/train-and-prepare/training-plans/half-marathon-training-plan/ (opened 2026-10-27)
-23. British Cycling (Insight Zone), *Weeks 1-8 of Sofa to 50km training plan* (2015). Tier 3. https://www.britishcycling.org.uk/knowledge/article/izn20151222-Beginner-Weeks-1-8-of-Sofa-to-50km-training-plan-0 (opened 2026-11-01)
-24. Cochrane Database of Systematic Reviews 2019(1), CD012424, *Exercise for preventing falls in older people living in the community (systematic review of 108 randomised trials)* (2019). Tier 4. https://pubmed.ncbi.nlm.nih.gov/30703272/ (opened 2026-11-11)
-25. World Health Organization, *Falls (fact sheet, 21 October 2026)* (2026). Tier 5. https://www.who.int/news-room/fact-sheets/detail/falls (opened 2026-11-11)
-26. NHS, *Falls, prevention (last reviewed 6 March 2025)* (2025). Tier 5. https://www.nhs.uk/conditions/falls/prevention/ (opened 2026-11-12)
-27. Centers for Disease Control and Prevention (CDC), National Center for Injury Prevention and Control, *Preventing Falls and Hip Fractures (27 January 2026)* (2026). Tier 5. https://www.cdc.gov/falls/prevention/index.html (opened 2026-11-12)
-28. NHS (Every Mind Matters), *Sleep problems (undated page; year is the year opened)* (2026). Tier 5. https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/ (opened 2026-11-11)
-29. Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Tier 4. https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/ (opened 2026-10-27)
-30. EXCLI Journal 25, Doc591 (Knechtle, Thuany, Nikolaidis, Forte, Leite, Lepers, Chlíbková, Weiss, Rosemann, Vancini and Duric), *The New York City Marathon: A systematic review of performance, participation, pacing, and health-related outcomes* (2026). Tier 4. https://www.excli.de/vol25/2026-9354/2026-9354.htm (opened 2026-11-14)
-31. British Cycling (Insight Zone; Dr Andy Kirkland, BASES-accredited sports scientist), *Warm ups and cool downs for cyclists (page undated; year from the article reference izn20140115)* (2014). Tier 3. https://www.britishcycling.org.uk/knowledge/article/izn20140115-Intermediate-Warming-Up-and-Cooling-Down-0 (opened 2026-11-10)
-32. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
-33. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
+15. European Journal of Sport Science 13(1) and Medicine & Science in Sports & Exercise 45(1) (Meeusen, Duclos, Foster, Fry, Gleeson, Nieman, Raglin, Rietjens, Steinacker and Urhausen; Loughborough University repository copy), *Prevention, diagnosis and treatment of the overtraining syndrome: Joint consensus statement of the European College of Sport Science (ECSS) and the American College of Sports Medicine (ACSM)* (2013). Tier 5. https://dspace.lboro.ac.uk/2134/17104 (opened 2026-11-16)
+16. Edinburgh Marathon Festival, *How to train for your first half marathon, a beginner's guide to going the distance* (2026). Tier 3. https://www.edinburghmarathon.com/news/training-performance/how-to-train-half-marathon (opened 2026-11-03)
+17. British Mountaineering Council (Chris Townsend, long-distance walker), *How to get into long-distance walking* (2026). Tier 2. https://thebmc.co.uk/en/beginner-long-distance-walks-tips-chris-townsend (opened 2026-10-27)
+18. British Journal of Sports Medicine 48(11), *The effectiveness of exercise interventions to prevent sports injuries, a meta-analysis of 25 randomised trials (Lauersen, Bertelsen and Andersen)* (2014). Tier 4. https://bjsm.bmj.com/content/48/11/871 (opened 2026-10-27)
+19. NHS, *Keep bones healthy over 65 (last reviewed 31 October 2023)* (2023). Tier 5. https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/ (opened 2026-11-02)
+20. Centers for Disease Control and Prevention (CDC), *Older adult activity, an overview (last reviewed 4 December 2025)* (2025). Tier 5. https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html (opened 2026-11-03)
+21. Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Tier 4. https://pubmed.ncbi.nlm.nih.gov/17762369/ (opened 2026-10-27)
+22. England Athletics (Jo Pavey, five-time Olympian), *Top marathon tips from five-time Olympian Jo Pavey* (2023). Tier 2. https://www.englandathletics.org/news/top-marathon-tips-from-five-time-olympian-jo-pavey/ (opened 2026-10-27)
+23. Great Run (organiser of the Great North Run), *Half marathon training plan (12-week Run/Walk, Beginner and Improver plans)* (2026). Tier 3. https://www.greatrun.org/train-and-prepare/training-plans/half-marathon-training-plan/ (opened 2026-10-27)
+24. British Cycling (Insight Zone), *Weeks 1-8 of Sofa to 50km training plan* (2015). Tier 3. https://www.britishcycling.org.uk/knowledge/article/izn20151222-Beginner-Weeks-1-8-of-Sofa-to-50km-training-plan-0 (opened 2026-11-01)
+25. Cochrane Database of Systematic Reviews 2019(1), CD012424, *Exercise for preventing falls in older people living in the community (systematic review of 108 randomised trials)* (2019). Tier 4. https://pubmed.ncbi.nlm.nih.gov/30703272/ (opened 2026-11-11)
+26. World Health Organization, *Falls (fact sheet, 21 October 2026)* (2026). Tier 5. https://www.who.int/news-room/fact-sheets/detail/falls (opened 2026-11-11)
+27. NHS, *Falls, prevention (last reviewed 6 March 2025)* (2025). Tier 5. https://www.nhs.uk/conditions/falls/prevention/ (opened 2026-11-12)
+28. Centers for Disease Control and Prevention (CDC), National Center for Injury Prevention and Control, *Preventing Falls and Hip Fractures (27 January 2026)* (2026). Tier 5. https://www.cdc.gov/falls/prevention/index.html (opened 2026-11-12)
+29. NHS (Every Mind Matters), *Sleep problems (undated page; year is the year opened)* (2026). Tier 5. https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/ (opened 2026-11-11)
+30. Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Tier 4. https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/ (opened 2026-10-27)
+31. EXCLI Journal 25, Doc591 (Knechtle, Thuany, Nikolaidis, Forte, Leite, Lepers, Chlíbková, Weiss, Rosemann, Vancini and Duric), *The New York City Marathon: A systematic review of performance, participation, pacing, and health-related outcomes* (2026). Tier 4. https://www.excli.de/vol25/2026-9354/2026-9354.htm (opened 2026-11-14)
+32. British Cycling (Insight Zone; Dr Andy Kirkland, BASES-accredited sports scientist), *Warm ups and cool downs for cyclists (page undated; year from the article reference izn20140115)* (2014). Tier 3. https://www.britishcycling.org.uk/knowledge/article/izn20140115-Intermediate-Warming-Up-and-Cooling-Down-0 (opened 2026-11-10)
+33. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
+34. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)

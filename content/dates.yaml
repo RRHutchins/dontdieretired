@@ -8,6 +8,12 @@
 #   (YYYY-MM-DD) with `next_source`; the build ignores a `next` date once it has passed. Never guess a date.
 # - Re-check every entry once a year: dates move.
 dates:
+  - activity: run-great-north-run
+    months: [9]
+    note: A Sunday in September. The 2027 race is on Sunday 12 September; the first ballot for it closed on 20 September 2026 and Great Run says a second ballot opens in January 2027.
+    next: "2027-09-12"
+    next_source: {label: "Great Run: Great North Run", url: "https://www.greatrun.org/events/great-north-run/", checked: "2026-11-16"}
+    source: {label: "Great Run news: Ballot for the 2027 AJ Bell Great North Run is now open", url: "https://www.greatrun.org/news/ballot-for-the-2026-aj-bell-great-north-run-is-now-open/", checked: "2026-11-16"}
   - activity: go-to-edinburgh-fringe
     months: [8]
     note: Runs for about three weeks each August. The 2027 Fringe is 6 to 30 August; shows are announced in batches from 18 February 2027 and the printed programme launches on 2 June 2027.

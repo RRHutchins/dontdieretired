@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-16)
 
-86 sources, 88 statements, 12 event profiles. Core 66, supported 22, thin 0, contested 0.
+87 sources, 88 statements, 12 event profiles. Core 66, supported 22, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -24,6 +24,7 @@
 - NHS (Every Mind Matters), *Sleep problems (undated page; year is the year opened)* (2026). Opened 2026-11-11.
 - NHS, *Falls, prevention (last reviewed 6 March 2025)* (2025). Opened 2026-11-12.
 - Centers for Disease Control and Prevention (CDC), National Center for Injury Prevention and Control, *Preventing Falls and Hip Fractures (27 January 2026)* (2026). Opened 2026-11-12.
+- European Journal of Sport Science 13(1) and Medicine & Science in Sports & Exercise 45(1) (Meeusen, Duclos, Foster, Fry, Gleeson, Nieman, Raglin, Rietjens, Steinacker and Urhausen; Loughborough University repository copy), *Prevention, diagnosis and treatment of the overtraining syndrome: Joint consensus statement of the European College of Sport Science (ECSS) and the American College of Sports Medicine (ACSM)* (2013). Opened 2026-11-16.
 
 **4. Peer-reviewed review or large study**
 - Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Opened 2026-10-27.
@@ -118,6 +119,7 @@
 | core | 13 | altitude | If you fly or drive straight to a high town, rest there for a day or two before you walk any higher, drink enough water, and avoid alcohol for the first two days. | nhs-altitude, cdc-altitude, promperu-inca |
 | core | 12 | intensity | Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. | ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km |
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
+| core | 12 | progression | Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. | higdon-novice1, rc-down-weeks, bc-missing-weeks, meeusen-2013-overtraining |
 | core | 12 | on the day | Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. | ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits, usfs-msh-climbing-safety |
 | core | 12 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe, bewl-ows |
 | core | 11 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. | lauersen-2014, cmo-2019, bmc-hill-fit |
@@ -138,7 +140,6 @@
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
 | core | 8 | warning signs | In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. | rnli-cold-water-2025, swimeng-stay-safe, rnli-float, swimeng-hot-weather, oss-cold-water |
-| core | 7 | progression | Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. | higdon-novice1, rc-down-weeks, bc-missing-weeks |
 | core | 7 | key session | Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. | higdon-novice1, bmc-hill-fit, emf-half-beginner |
 | core | 7 | body maintenance | Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground. | bmc-hill-fit, nhs-strength-exercises |
 | core | 7 | recovery | If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. | ea-pavey-marathon, nhs-c25k |
