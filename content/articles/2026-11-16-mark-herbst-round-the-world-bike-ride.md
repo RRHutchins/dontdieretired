@@ -8,6 +8,7 @@ segments: [mover, changer]
 level: advanced
 subject_age: 69
 art: road
+video: {id: CYbMwL_PXy0, title: "Widower biking 30,000 kilometres", channel: "CTV News"}
 hook: "Mark Herbst rode 30,000 km through 25 countries in 324 days, in memory of his wife, Jackie."
 lesson: "A big goal can give grief somewhere to go, and the kindness of strangers is part of the reward."
 standfirst: "Mark Herbst, a cycling coach from Orillia, Ontario, left Bangkok in January 2025 and rode back into it 324 days later, having crossed 25 countries. Guinness World Records has since named him the oldest man to circumnavigate the world by bicycle. He was 69, and he rode for his late wife."
