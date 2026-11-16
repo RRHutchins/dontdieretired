@@ -10,6 +10,7 @@ art: mountains
 photo_file: "File:Grote klit of grote klis (Arctium lappa) 19-01-2026. (d.j.b.).jpg"
 photo_caption: "Dry seed heads of greater burdock, Arctium lappa, the burr whose hooks caught de Mestral's eye."
 photo_alt: "Three round, brown, spiky burdock seed heads on a dry stem against a soft blurred background; each spine ends in a tiny hook."
+photo_checked: 2026-11-16
 hook: "A dog, a burdock burr, a microscope and years of trial weaving in France."
 lesson: "Noticing is half of inventing; the other half is the years it takes to make the thing you noticed."
 standfirst: "A Swiss engineer came home from the countryside with burrs on his trousers and in his dog's coat, and put one under a microscope. It took him years, a French weaver and a switch from cotton to nylon to turn what he saw into hook-and-loop tape."
