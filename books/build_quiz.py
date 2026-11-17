@@ -320,8 +320,7 @@ def sun_hat(c, cx, cy, r, gold, white, red):
     import math
     P = lambda x, y: (cx + x * r, cy + y * r)
     c.setFillColor(gold); c.setStrokeColor(gold)
-    p = c.beginPath(); p.moveTo(cx - r, cy); p.arcTo(cx - r, cy - r, cx + r, cy + r, 180, -180); p.close()
-    c.drawPath(p, stroke=0, fill=1)
+    c.circle(cx, cy, r, stroke=0, fill=1)        # a whole disc: the snowy hill hides its lower part, so the sun rises from the ground
     c.setLineWidth(r * .16); c.setLineCap(1)
     for i in range(7):
         if i in (1, 2, 3, 4):

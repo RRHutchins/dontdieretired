@@ -483,6 +483,7 @@ def cover(b, pages):
     cx = fx + PW / 2
     # front
     sun(c, cx, bleed + 1.95 * 72, 132, gold, bars=False)
+    c.setFillColor(gold); c.circle(cx, bleed + 1.95 * 72, 132, stroke=0, fill=1)   # whole disc, so the sun rises out of the hill with no flat base showing
     p = c.beginPath()                            # a hill across the foot of the front cover, over the sun's base
     p.moveTo(fx, 0); p.lineTo(fx, bleed + 1.7 * 72)
     p.curveTo(fx + PW * .3, bleed + 2.5 * 72, fx + PW * .62, bleed + 1.25 * 72, W, bleed + 2.1 * 72)
