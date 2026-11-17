@@ -290,6 +290,57 @@ COVER = {
 }
 
 
+def fir_tree(c, tx, ty, h, snow, star):
+    """A three-tier fir with snow on each tier and a star on top (matches the Christmas puzzle book cover)."""
+    import math
+    c.setFillColor(HexColor("#5A3A22"))
+    c.rect(tx - h * .045, ty, h * .09, h * .12, stroke=0, fill=1)
+    for w, y0, y1 in ((.62, .1, .52), (.48, .34, .76), (.34, .58, 1.0)):
+        tp = c.beginPath()
+        tp.moveTo(tx - h * w / 2, ty + h * y0); tp.lineTo(tx + h * w / 2, ty + h * y0); tp.lineTo(tx, ty + h * y1); tp.close()
+        c.setFillColor(HexColor("#2E7D4A")); c.drawPath(tp, stroke=0, fill=1)
+        sp = c.beginPath()
+        sp.moveTo(tx - h * w / 2, ty + h * y0); sp.lineTo(tx + h * w / 2, ty + h * y0)
+        sp.lineTo(tx + h * w * .36, ty + h * (y0 + .05)); sp.lineTo(tx - h * w * .36, ty + h * (y0 + .05)); sp.close()
+        c.setFillColor(snow); c.drawPath(sp, stroke=0, fill=1)
+    c.setFillColor(star)
+    st = c.beginPath()
+    r1, r2 = h * .075, h * .032
+    for i in range(10):
+        a = math.radians(90 + i * 36)
+        rr = r1 if i % 2 == 0 else r2
+        (st.moveTo if i == 0 else st.lineTo)(tx + rr * math.cos(a), ty + h * 1.02 + rr * math.sin(a))
+    st.close(); c.drawPath(st, stroke=0, fill=1)
+
+
+def sun_hat(c, cx, cy, r, gold, white, red):
+    """The sunrise mark wearing a Santa hat (Robin, 17 Nov 2026). The upright ray sits under the hat, so it is left out."""
+    import math
+    c.setFillColor(gold); c.setStrokeColor(gold)
+    p = c.beginPath(); p.moveTo(cx - r, cy); p.arcTo(cx - r, cy - r, cx + r, cy + r, 180, -180); p.close()
+    c.drawPath(p, stroke=0, fill=1)
+    c.setLineWidth(r * .16); c.setLineCap(1)
+    for i in range(7):
+        if i == 3:
+            continue
+        a = math.radians(15 + i * 25)
+        c.line(cx + math.cos(a) * r * 1.3, cy + math.sin(a) * r * 1.3, cx + math.cos(a) * r * 1.72, cy + math.sin(a) * r * 1.72)
+    c.setLineCap(0)
+    c.saveState()
+    c.translate(cx, cy + r * .96); c.rotate(14)
+    cone = c.beginPath()                       # the red hat, its tip flopping over
+    cone.moveTo(-r * .40, r * .04)
+    cone.curveTo(-r * .30, r * .34, -r * .12, r * .52, r * .02, r * .55)
+    cone.curveTo(r * .22, r * .52, r * .30, r * .38, r * .40, r * .04)
+    cone.close()
+    c.setFillColor(red); c.drawPath(cone, stroke=0, fill=1)
+    c.setFillColor(white)
+    c.roundRect(-r * .47, -r * .14, r * .94, r * .22, r * .11, stroke=0, fill=1)   # fur brim
+    c.circle(r * .04, r * .57, r * .11, stroke=0, fill=1)                         # bobble
+    c.restoreState()
+    c.setStrokeColor(black)
+
+
 def cover(edition, pages):
     import math, random
     from reportlab.lib.colors import white
@@ -306,7 +357,7 @@ def cover(edition, pages):
     fx = bleed + PW + spine
     cx = fx + PW / 2
     # front: the sunrise over a snowy hill, snow falling
-    sun(c, cx, bleed + 1.95 * 72, 118, gold, bars=False)
+    sun_hat(c, cx, bleed + 1.95 * 72, 104, gold, cream, crimson)
     hill = [(fx, bleed + 1.6 * 72), (fx + PW * .32, bleed + 2.4 * 72), (fx + PW * .64, bleed + 1.2 * 72), (W, bleed + 2.0 * 72)]
     p = c.beginPath(); p.moveTo(fx, 0); p.lineTo(*hill[0]); p.curveTo(*hill[1], *hill[2], *hill[3]); p.lineTo(W, 0); p.close()
     c.setFillColor(cream); c.drawPath(p, stroke=0, fill=1)
@@ -318,6 +369,13 @@ def cover(edition, pages):
             continue
         c.setFillAlpha(rnd.uniform(.35, .8)); c.circle(x, y, rnd.uniform(1.4, 3.2), stroke=0, fill=1)
     c.setFillAlpha(1)
+    # two fir trees on the snowy hill, as on the Christmas puzzle book (Robin, 17 Nov 2026)
+    def on_hill(t):
+        return tuple((1 - t) ** 3 * a + 3 * (1 - t) ** 2 * t * b_ + 3 * (1 - t) * t ** 2 * c_ + t ** 3 * d
+                     for a, b_, c_, d in zip(*hill))
+    for t, h in ((.105, 86), (.895, 74)):
+        tx, ty = on_hill(t)
+        fir_tree(c, tx, ty - 8, h, cream, gold)
     # title: the name on one line, all three words alike
     lines = ["Don't Die Retired", "Christmas", "Quiz Book"]
     big = min(52, (PW - .9 * 72) / stringWidth(lines[0], "Head", 1))

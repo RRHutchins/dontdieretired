@@ -91,6 +91,10 @@ so the whole round is in view, and each round's foot gives the page of its answe
 - **Fetching sources from the cloud session:** WebFetch only opens a URL that has appeared in a WebSearch result (or
   that the user pasted), so a checker must search for each page before fetching it, one at a time. Links pasted by
   the main session into an agent's prompt do not unlock it.
+- **Cover update, 17 Nov 2026 (Robin):** both quiz covers now carry two fir trees on the snowy hill (`fir_tree`, as on
+  the Christmas puzzle book) and the sun wears a Santa hat (`sun_hat`, upright ray left out under the hat). Rebuilt
+  files and a fresh KDP sheet (Word) sent to Robin for upload; he had uploaded an old puzzle-book cover without trees,
+  so the sheet also gives the steps to replace a live book's cover and interior.
 - **Still open:** a checker for duplicate answers is a one-line script, not yet in the repo; no score sheet. Amazon may
   treat the two editions as near-duplicates: if KDP asks, they are separate UK and American editions with seven
   edition-only rounds and different swap rounds each.
