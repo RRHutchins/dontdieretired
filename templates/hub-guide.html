@@ -1,0 +1,34 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button, affiliate_box %}
+{% block title %}{{ g.seo_title or g.title }}{% endblock %}
+{% block description %}{{ (g.description or g.standfirst) | metadesc }}{% endblock %}
+{% block pagetype %}hub{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
+ {"@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":h.label,"item":cfg.site.url ~ "/" ~ h.slug ~ "/"},
+  {"@type":"ListItem","position":2,"name":g.title,"item":cfg.site.url ~ g.url}]},
+ {"@type":"Article","headline":g.title,"description":g.description or g.standfirst,"publisher":{"@id":cfg.site.url ~ "/#org"},"mainEntityOfPage":cfg.site.url ~ g.url}]} | tojson }}</script>{% endblock %}
+{% block content %}
+<article class="article fl-page hub-guide" data-cat="{{ h.category }}">
+  <p class="kicker"><a href="/{{ h.slug }}/">{{ h.label }}</a> · Guide</p>
+  <h1>{{ g.title }}</h1>
+  <p class="lead">{{ g.standfirst }}</p>
+  {{ share_button(cfg.site.url ~ g.url, g.title, 'hub') }}
+  {% for sec in g.detail %}
+  <section class="fl-detail">
+    <h2>{{ sec.h }}</h2>
+    {% for para in sec.p_html %}<p>{{ para }}</p>{% endfor %}
+    {% if sec.table %}<div class="fl-table-wrap" tabindex="0" role="region" aria-label="{{ sec.h }}"><table class="fl-table"><thead><tr>{% for x in sec.table.head %}<th scope="col">{{ x }}</th>{% endfor %}</tr></thead><tbody>{% for r in sec.table.rows %}<tr>{% for cell in r %}{% if loop.first %}<th scope="row">{{ cell }}</th>{% else %}<td>{{ cell }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody></table></div>{% endif %}
+    {% if sec.list %}<ul>{% for li in sec.list %}<li>{{ li }}</li>{% endfor %}</ul>{% endif %}
+  </section>
+  {% endfor %}
+  {% if g.kit %}{{ affiliate_box(g.kit, "Kit to compare against your race's list") }}{% endif %}
+  {% if g.faq %}
+  <section class="fl-faq"><h2>Questions people ask</h2>
+    {% for f in g.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
+  </section>
+  {% endif %}
+  <p class="hub-back"><a class="btn" href="/{{ h.slug }}/#hub-f-h">Find a race in the {{ h.label | lower }} finder</a></p>
+  {% if others or h.acts %}<aside class="hub-more"><h2 class="h4">More on {{ h.label | lower }}</h2><ul>{% for o in others %}<li><a href="{{ o.url }}">{{ o.title }}</a></li>{% endfor %}{% for c in h.acts %}<li><a href="/list/{{ c.id }}/">{{ c.title }}: how to start</a></li>{% endfor %}</ul></aside>{% endif %}
+  <p class="disclosure fl-sources">Where this comes from: {% for x in g.sources %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "" }}{% endfor %}. Opened {{ g.sources_checked }}. Written with AI from these pages and checked against them; not reviewed by a coach or doctor.</p>
+</article>
+{% endblock %}

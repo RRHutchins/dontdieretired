@@ -1242,3 +1242,23 @@ html{scroll-padding-top:84px}
 @media (min-width:1200px) and (max-width:1399px){.nav.nav-plus{gap:10px}.nav.nav-plus .nav-videos{display:none}}
 @media (max-width:560px){.nav.nav-plus .nav-email{display:none!important}}
 @media (max-width:359px){.nav.nav-plus{gap:7px!important;font-size:.87rem}}
+/* Deep hubs (RUNBOOK §6u): guides as cards, then the event finder */
+.hub-cards{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:0 0 8px}
+.hub-cards a{display:block;height:100%;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r);background:#fff;color:var(--ink);text-decoration:none}
+.hub-cards a:hover,.hub-cards a:focus-visible{border-color:var(--c,var(--move))}
+.hub-cards strong{display:block;font-size:1.06rem;margin-bottom:4px}.hub-cards span{color:#555;font-size:.96rem}
+.hub-filters{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px 14px;align-items:end;padding:16px;background:var(--stone);border-radius:var(--r);margin:0 0 18px}
+.hub-filters label{display:flex;flex-direction:column;gap:4px;font-size:.9rem;font-weight:600}
+.hub-filters input,.hub-filters select{font:inherit;font-weight:400;min-height:44px;padding:6px 10px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.hub-events{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.hub-event{padding:18px;border:1px solid var(--line);border-radius:var(--r);background:#fff;border-top:5px solid var(--move)}
+.hub-event[hidden]{display:none}
+.hub-event h3{margin:.1em 0 .2em;font-size:1.2rem}.hub-e-place{margin:0 0 10px;color:#555}
+.hub-e-facts{margin:0 0 10px;font-size:.95rem}.hub-e-facts div{display:grid;grid-template-columns:7.5em 1fr;gap:8px;padding:4px 0;border-top:1px solid var(--line)}
+.hub-e-facts dt{font-weight:600}.hub-e-facts dd{margin:0}
+.hub-e-note{font-size:.96rem}.hub-e-link{font-size:.95rem;margin:0}
+.hub-more ul{padding-left:1.1em}.hub-back{margin:28px 0}
+@media (max-width:600px){.hub-events{grid-template-columns:1fr}.hub-e-facts div{grid-template-columns:6.5em 1fr}}
+.hub-promo{margin:28px 0;padding:18px 20px;border-radius:var(--r);background:var(--stone);border-left:6px solid var(--c,var(--move))}
+.hub-promo h2{margin-top:0}.hub-promo p:last-child{margin-bottom:0;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+@media (max-width:600px){.hub-filters{grid-template-columns:1fr 1fr;padding:12px;gap:8px 10px}.hub-filters label:first-child{grid-column:1/-1}.hub-filters label{font-size:.85rem}}

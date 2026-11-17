@@ -708,6 +708,15 @@ def build(make_social=True):
     for a in arts:
         a["challenges"] = [c for c in _chs if a["slug"] in (c.get("guide"), c.get("story"))]
     env.globals.update(list_total=len(_chs))
+    # Deep hubs (RUNBOOK §6u, Robin 17 Nov 2026: "a primary source on the internet" for a subject, ultra running first):
+    # content/hubs/<id>.yaml gives an event finder, guides and the activities that lead in. Loaded here, rendered after Things to do.
+    HUBS = {}
+    if (CONTENT / "hubs").exists():
+        for _hf in sorted((CONTENT / "hubs").glob("*.yaml")):
+            _h = load_yaml(_hf)
+            assert _h.get("id") == _hf.stem and re.fullmatch(r"[a-z0-9-]+", _h.get("slug", "")), f"hub {_hf.name}: id must match the file name and slug be plain"
+            HUBS[_h["id"]] = _h
+    env.globals.update(hubs=HUBS)
     terms = load_terms()
     # match on subjects only: activity ids and story tags (people's names in slugs and titles caused false matches)
     _ch_kw = {c["id"]: kw(c["id"].replace("-", " ")) for c in _chs}
@@ -831,6 +840,7 @@ def build(make_social=True):
             assert not c.get("collection") or c["collection"] in COLLECTIONS, f"challenge {c['id']}: unknown collection {c.get('collection')}"
             assert c["id"] not in {v["slug"] for v in COLLECTIONS.values()}, f"challenge id {c['id']} clashes with a collection page"
             c["coll"] = COLLECTIONS.get(c.get("collection"))
+            assert not c.get("hub") or c["hub"] in HUBS, f"challenge {c['id']}: unknown hub {c.get('hub')}"
             first = re.split(r"(?<=[.!?])\s", c["why"].strip())[0]
             c["why_short"] = first if len(first) <= 170 else first[:167].rsplit(" ", 1)[0] + "…"
             r = c["regions"]
@@ -992,6 +1002,57 @@ def build(make_social=True):
             pages.append({"title": c["title"], "key": c.get("seo_title") or "", "url": f"/list/{c['id']}/", "category": c["category"], "excerpt": c["why_short"],
                           "tags": ["activity", "challenge", c["kind"], c["effort"]] + ([c["collection"]] if c.get("collection") else []) + c["search_words"].split(),
                           "image": (c.get("photo") or {}).get("small") or "/static/og-default.png", "art": (c.get("photo") or {}).get("small") or "/static/og-default.png"})
+    # Deep hubs (RUNBOOK §6u): /<slug>/ with the event finder, /<slug>/<guide>/ for each guide
+    _chs_by = {c["id"]: c for c in (chs if "chs" in locals() else [])}
+    BANDS = [("u100", "Under 100 km", 0, 99.9), ("100k", "100 to 149 km", 100, 149.9), ("100m", "About 100 miles (150 to 180 km)", 150, 180), ("long", "Over 180 km", 180.1, 99999)]
+    MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    for h in HUBS.values():
+        F = h["facets"]
+        assert h["slug"] not in cfg["categories"] and h["slug"] not in ("list", "scam-help", "shop", "puzzle"), f"hub {h['id']}: slug clashes with a page"
+        seen_e = set()
+        for e in h["events"]:
+            miss = [k for k in ("id", "name", "series", "place", "country", "continent", "km", "distances", "terrain", "format", "entry", "entry_note", "note", "link") if not e.get(k)]
+            assert not miss, f"hub {h['id']} event {e.get('id')}: missing {miss}"
+            assert e["id"] not in seen_e and re.fullmatch(r"[a-z0-9-]+", e["id"]), f"hub {h['id']}: event id {e['id']} duplicated or malformed"
+            seen_e.add(e["id"])
+            assert e["continent"] in F["continent"] and e["series"] in F["series"] and all(t in F["terrain"] for t in e["terrain"]) and all(x in F["entry"] for x in e["entry"]), f"hub {h['id']} event {e['id']}: unknown facet value"
+            assert e["format"] in ("single", "stage", "timed"), f"hub {h['id']} event {e['id']}: format is single, stage or timed"
+            assert all(1 <= m <= 12 for m in e.get("month") or []), f"hub {h['id']} event {e['id']}: months are 1 to 12"
+            L_ = e["link"]
+            assert str(L_.get("url", "")).startswith("https://") and L_.get("label") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(L_.get("checked", ""))), f"hub {h['id']} event {e['id']}: link needs https url, label, checked"
+            assert not re.search(r"[£$€]\s?\d", e["note"] + e["entry_note"] + e["distances"]), f"hub {h['id']} event {e['id']}: no prices (they change)"
+            L_["checked_human"] = dt.date.fromisoformat(str(L_["checked"])).strftime("%-d %B %Y")
+            e["bands"] = sorted({b[0] for k in e["km"] for b in BANDS if b[2] <= k <= b[3]})
+            e["month_label"] = " or ".join(MONTHS[m - 1] for m in e.get("month") or [])
+            e["search"] = " ".join([e["name"], e["place"], e["country"], e["distances"]]).lower()
+        h["events"] = sorted(h["events"], key=lambda e: (list(F["continent"]).index(e["continent"]), e["name"].lower()))
+        h["bands"] = [b[:2] for b in BANDS if any(b[0] in e["bands"] for e in h["events"])]
+        h["months"] = [(i + 1, MONTHS[i]) for i in range(12) if any(i + 1 in (e.get("month") or []) for e in h["events"])]
+        h["acts"] = [_chs_by[i] for i in h.get("activities") or [] if i in _chs_by]
+        h["checked_human"] = max(dt.date.fromisoformat(str(e["link"]["checked"])) for e in h["events"]).strftime("%-d %B %Y")
+        lk = Linker(terms, f"/{h['slug']}/")
+        for g in h.get("guides") or []:
+            assert re.fullmatch(r"[a-z0-9-]+", g.get("slug", "")) and g.get("title") and g.get("standfirst") and g.get("detail") and g.get("sources"), f"hub {h['id']}: a guide needs slug, title, standfirst, detail, sources"
+            for sec in g["detail"]:
+                assert sec.get("h") and (sec.get("p") or sec.get("list") or sec.get("table")), f"hub guide {g['slug']}: each section needs h and p, list or table"
+                if sec.get("table"):
+                    assert all(len(r) == len(sec["table"]["head"]) for r in sec["table"]["rows"]), f"hub guide {g['slug']}: table rows must match head"
+                sec["p_html"] = [lk.plain(x) for x in sec.get("p") or []]
+            for k in g.get("kit") or []:
+                assert k.get("name") and k.get("why") and str(k.get("url", "")).startswith("https://www.amazon.co.uk/"), f"hub guide {g['slug']}: kit needs name, why, amazon.co.uk url"
+            assert all(str(x.get("url", "")).startswith("https://") and x.get("label") and x.get("checked") for x in g["sources"]), f"hub guide {g['slug']}: sources need url, label, checked"
+            g["sources_checked"] = max(dt.date.fromisoformat(str(x["checked"])) for x in g["sources"]).strftime("%-d %B %Y")
+            g["url"] = f"/{h['slug']}/{g['slug']}/"
+        for g in h.get("guides") or []:
+            urls.append(out(g["url"], "hub-guide.html", h=h, g=g, others=[x for x in h["guides"] if x is not g]))
+            pages.append({"title": g["title"], "key": g.get("seo_title") or "", "url": g["url"], "category": h["category"], "excerpt": g["standfirst"],
+                          "tags": [h["id"].replace("-", " "), "guide"] + list(h.get("tags") or []) + re.findall(r"[a-z]+", g["title"].lower()),
+                          "image": "/static/og-default.png", "art": "/static/og-default.png"})
+        item_list = [{"@type": "ListItem", "position": n, "name": e["name"], "url": f"{cfg['site']['url']}/{h['slug']}/#{e['id']}"} for n, e in enumerate(h["events"], 1)]
+        urls.append(out(f"/{h['slug']}/", "hub.html", h=h, item_list=item_list))
+        pages.append({"title": h["h1"], "key": h.get("seo_title") or "", "url": f"/{h['slug']}/", "category": h["category"], "excerpt": h["lead"],
+                      "tags": [h["id"].replace("-", " ")] + list(h.get("tags") or []) + [w for e in h["events"] for w in re.findall(r"[a-z]+", e["name"].lower())],
+                      "image": "/static/og-default.png", "art": "/static/og-default.png"})
     # Home (Robin, 13 Nov 2026: "Things to do is now the core of the website"): a finder first, today's story directly under
     # it, then activities for this month and in-depth pages, then the latest stories. Picks change with the build date
     # (stable within a day), photographs first. Nothing here states how many activities there are (Robin, 27 Oct 2026).

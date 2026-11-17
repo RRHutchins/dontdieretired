@@ -1,0 +1,665 @@
+# Deep hub (RUNBOOK §6u): one subject covered in depth: an event finder, guides and the activities that lead into it.
+# The pattern is generic: copy this file to start another hub (hiking, open water, cycling...). build.py renders
+# /<slug>/ (hub page with the finder), /<slug>/<guide-slug>/ (each guide). RULES: every event link was opened on its
+# `checked` date and supports what the row says; no prices; months are "usually" and the official page is the one to
+# trust; an event id is permanent (pages and readers' lists may point at it).
+id: ultra-running
+slug: ultra-running
+category: move
+label: Ultra running
+h1: Ultramarathons around the world
+seo_title: 'Ultramarathons worldwide: race finder, entry and kit'
+description: Find an ultramarathon by region, distance, terrain and month, from UTMB and Western States to the Spine and Comrades, with how entry works and what kit to carry.
+lead: Any race longer than a marathon is an ultra. Here are the big ones, checked against each organiser's own page, with how you actually get a place and what the organisers make you carry.
+intro:
+- Ultramarathons range from a 56 km road race around Cape Town to six days along the mountains of Wales. Some you can enter on the day entries open; some need a qualifying race, a lottery ticket or years of patience. Filter the list below by region, distance, terrain, month and how entry works.
+- Every race here links to its organiser's own page, opened on the date shown. Dates, fees and rules change every year, so treat the month as a guide and the official page as the last word.
+activities: [run-an-ultramarathon]
+tags: [ultra, ultras, ultramarathon, ultramarathons, race, races, trail, mile, miler, '100']
+# what the finder shows (labels only; the values live on each event)
+facets:
+  continent: {europe: Europe, north-america: North America, africa: Africa, asia: Asia, oceania: Oceania, south-america: South America}
+  terrain: {mountain: Mountain, trail: Trail and path, road: Road, desert: Desert, winter: Winter, island: Island}
+  entry: {open: Open entry, ballot: Ballot or lottery, qualifier: Qualifying race needed, application: Application or invitation}
+  series: {utmb: UTMB World Series, centurion: Centurion Running, mds: Marathon des Sables, spine: Spine Races, independent: Independent}
+events:
+- id: utmb-mont-blanc
+  name: HOKA UTMB Mont-Blanc
+  series: utmb
+  place: Chamonix, around Mont Blanc (France, Italy, Switzerland)
+  country: France
+  continent: europe
+  km: [174, 145, 101, 60, 300]
+  distances: UTMB 174 km, TDS 145 km, CCC 101 km, OCC 60 km; PTL 300 km for teams
+  climb: 9,700 m (UTMB)
+  terrain: [mountain]
+  format: single
+  month: [8]
+  entry: [ballot]
+  entry_note: Lottery for UTMB, CCC and OCC; you need at least one Running Stone from the past 24 months and a UTMB Index. The organisers give a 30% lottery boost to runners who promise to arrive without a car.
+  note: The finals of the UTMB World Series. The UTMB itself started in 2003 and goes round the whole massif through three countries.
+  link: {label: 'UTMB Mont-Blanc: the UTMB race page', url: 'https://montblanc.utmb.world/races/UTMB', checked: '2026-11-17'}
+- id: western-states-100
+  name: Western States 100
+  series: independent
+  place: Sierra Nevada, California
+  country: USA
+  continent: north-america
+  km: [161]
+  distances: 100 miles
+  terrain: [mountain, trail]
+  format: single
+  month: [6]
+  entry: [ballot, qualifier]
+  entry_note: Lottery each November and early December. Every applicant must have finished a qualifying race of 100 km or more in the qualifying year; tickets build up for each year you miss out. Top finishers at the HOKA Golden Ticket races get places.
+  note: Finishers earn Running Stones for the UTMB lottery under an agreement between the two races.
+  link: {label: 'Western States: entry process', url: 'https://www.wser.org/entry-process/', checked: '2026-11-17'}
+- id: hardrock-100
+  name: Hardrock 100
+  series: independent
+  place: Silverton, San Juan Mountains, Colorado
+  country: USA
+  continent: north-america
+  km: [164]
+  distances: About 102 miles (a loop)
+  climb: 33,441 ft (10,193 m)
+  terrain: [mountain]
+  format: single
+  month: [7]
+  entry: [ballot]
+  entry_note: Lottery drawn in early December.
+  note: The average height is over 11,000 ft (3,350 m). The loop crosses 13 passes above 12,000 ft and tops out on Handies Peak at 14,048 ft. The organisers warn of ice-cold stream crossings and snowfields.
+  link: {label: 'Hardrock 100: course description', url: 'https://hardrock100.com/hardrock-course.php', checked: '2026-11-17'}
+- id: leadville-trail-100
+  name: Leadville Trail 100 Run
+  series: independent
+  place: Leadville, Colorado Rockies
+  country: USA
+  continent: north-america
+  km: [161]
+  distances: 100 miles out and back
+  climb: Over 15,000 ft (4,570 m)
+  terrain: [mountain, trail]
+  format: single
+  month: [8]
+  entry: [ballot]
+  entry_note: Lottery in early December. Finishers of other Leadville series races, such as the Silver Rush 50, can also win entry coins at the awards.
+  note: Runners cross Hope Pass, about 12,500 ft, on the way out and again on the way back.
+  link: {label: 'Leadville Trail 100 Run', url: 'https://www.leadvilleraceseries.com/run/leadvilletrail100run/', checked: '2026-11-17'}
+- id: badwater-135
+  name: Badwater 135
+  series: independent
+  place: Death Valley to Lone Pine, California
+  country: USA
+  continent: north-america
+  km: [217]
+  distances: 135 miles on road
+  terrain: [road, desert]
+  format: single
+  month: [7]
+  entry: [application, qualifier]
+  entry_note: Invitational. Applicants must meet a qualifying standard, such as four official finishes of 100 continuous miles or more.
+  note: Up to 100 runners, a 48-hour limit and a July date in Death Valley.
+  link: {label: 'Badwater 135: event and qualifying standards', url: 'https://www.badwater.com/event/badwater-135/', checked: '2026-11-17'}
+- id: canyons-endurance-runs
+  name: HOKA Canyons Endurance Runs by UTMB
+  series: utmb
+  place: Auburn, California
+  country: USA
+  continent: north-america
+  km: [161, 100]
+  distances: 100 miles and 100 km, among others
+  terrain: [trail, mountain]
+  format: single
+  month: [4]
+  entry: [open]
+  entry_note: Entry through UTMB. The 100-mile course runs on the Western States Trail from China Wall to Auburn.
+  note: A UTMB World Series Major for 2027 and a qualifier for Western States.
+  link: {label: 'Canyons Endurance Runs by UTMB', url: 'https://canyons.utmb.world/', checked: '2026-11-17'}
+- id: kodiak-ultra-marathons
+  name: HOKA Kodiak Ultra Marathons by UTMB
+  series: utmb
+  place: Big Bear Lake, California
+  country: USA
+  continent: north-america
+  km: [161]
+  distances: 100 miles and four shorter races
+  terrain: [mountain, trail]
+  format: single
+  month: [10]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: Much of the 100-mile course is above 7,000 ft, with a short stretch on the Pacific Crest Trail and the summit of Sugarloaf Mountain (9,995 ft).
+  link: {label: 'Kodiak 100M by UTMB', url: 'https://kodiak.utmb.world/races/100M', checked: '2026-11-17'}
+- id: comrades-marathon
+  name: Comrades Marathon
+  series: independent
+  place: Pietermaritzburg and Durban, KwaZulu-Natal
+  country: South Africa
+  continent: africa
+  km: [89]
+  distances: About 89 km on road
+  terrain: [road]
+  format: single
+  month: [6]
+  entry: [qualifier]
+  entry_note: You need a qualifying time, such as an officially timed marathon in under 4 hours 50 minutes.
+  note: A point-to-point road race between the two cities, run in June.
+  link: {label: 'Comrades Marathon: race launch and qualifying times', url: 'https://comrades.com/blogs/launch-of-2025-comrades-marathon', checked: '2026-11-17'}
+- id: two-oceans-ultra
+  name: Two Oceans Ultra Marathon
+  series: independent
+  place: Cape Peninsula, Cape Town
+  country: South Africa
+  continent: africa
+  km: [56]
+  distances: 56 km on road
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [qualifier]
+  entry_note: Ultra entrants must run a qualifying marathon or longer race in the set time, inside the qualifying window.
+  note: The course crosses Chapman's Peak, high above the Atlantic.
+  link: {label: 'Two Oceans: Ultra Marathon', url: 'https://www.twooceansmarathon.org.za/ultra-marathon/', checked: '2026-11-17'}
+- id: marathon-des-sables
+  name: Marathon des Sables (MDS Legendary)
+  series: mds
+  place: Sahara Desert
+  country: Morocco
+  continent: africa
+  km: [250]
+  distances: About 250 km in 6 stages
+  terrain: [desert]
+  format: stage
+  entry: [open]
+  entry_note: Book directly with the organiser. You must be in good physical condition.
+  note: Running in the Sahara since 1986. You carry all your own food for the week; you may run or walk.
+  link: {label: 'MDS Legendary', url: 'https://marathondessables.com/en/format/mds-legendary', checked: '2026-11-17'}
+- id: mds-120
+  name: MDS 120 (Morocco, Jordan, Cappadocia, Peru and others)
+  series: mds
+  place: Sahara, Wadi Rum, Cappadocia, Ica Desert and others
+  country: Several
+  continent: africa
+  km: [120, 100, 70]
+  distances: 70, 100 or 120 km in 3 stages
+  terrain: [desert]
+  format: stage
+  entry: [open]
+  entry_note: Book directly with the organiser; you choose your distance.
+  note: A shorter Marathon des Sables format for runners and walkers. Food self-sufficient; checkpoints with water every 8 to 12 km.
+  link: {label: 'MDS 120 Morocco', url: 'https://marathondessables.com/en/event/mds-120-morocco-2027', checked: '2026-11-17'}
+- id: grand-raid-reunion
+  name: Grand Raid de la Réunion (Diagonale des Fous)
+  series: independent
+  place: La Réunion, Indian Ocean (France)
+  country: France (Réunion)
+  continent: africa
+  km: [180, 106, 70, 50]
+  distances: Diagonale des Fous 180 km; Trail de Bourbon 106 km; Mascareignes and Métis Trail shorter
+  climb: 10,200 m (Diagonale des Fous)
+  terrain: [mountain, island]
+  format: single
+  month: [10]
+  entry: [open]
+  entry_note: See the organiser's site.
+  note: The Diagonale crosses the volcanic island from Saint-Pierre in the south to the finish at La Redoute stadium.
+  link: {label: 'Grand Raid: la Diagonale des Fous (French)', url: 'https://www.grandraid-reunion.com/fr/les-courses/la-diagonale-des-fous', checked: '2026-11-17'}
+- id: spartathlon
+  name: Spartathlon
+  series: independent
+  place: Athens to Sparta
+  country: Greece
+  continent: europe
+  km: [246]
+  distances: 246 km, mostly on road
+  terrain: [road]
+  format: single
+  month: [9]
+  entry: [application, qualifier]
+  entry_note: Apply to the International Spartathlon Association. You need a hard qualifying performance, such as 100 miles inside 21 hours for men or 22 for women.
+  note: A 36-hour limit, from the Acropolis to the statue of King Leonidas. The race began after an RAF team ran the route in 1982 to test Herodotus' account.
+  link: {label: 'Spartathlon 2026: announcement and qualifying', url: 'https://www.spartathlon.gr/en/spartathlon-race-2026/', checked: '2026-11-17'}
+- id: tor-des-geants
+  name: Tor des Géants
+  series: independent
+  place: Courmayeur, Aosta Valley
+  country: Italy
+  continent: europe
+  km: [330]
+  distances: About 330 km in one stage
+  climb: About 24,000 m
+  terrain: [mountain]
+  format: single
+  month: [9]
+  entry: [ballot]
+  entry_note: Places drawn by lottery (the rules we could open are the 2020 ones; check the current rules).
+  note: A 150-hour limit, with runners choosing when and where to rest. The organisers also run the 450 km Tor des Glaciers, open only to past Tor des Géants finishers.
+  link: {label: 'Tor des Géants (Italian)', url: 'https://www.tordesgeants.it/it/content/tor-des-g%C3%A9ants%C2%AE', checked: '2026-11-17'}
+- id: lavaredo-ultra-trail
+  name: La Sportiva Lavaredo Ultra Trail by UTMB
+  series: utmb
+  place: Cortina d'Ampezzo, Dolomites
+  country: Italy
+  continent: europe
+  km: [120, 80, 50]
+  distances: 120 km, 80 km, 50 km and shorter
+  climb: 5,800 m (120K)
+  terrain: [mountain]
+  format: single
+  month: [6]
+  entry: [qualifier]
+  entry_note: Entry through UTMB. The 120K needs a UTMB Index in the 100K or 100M category.
+  note: The 120K starts at 11pm and passes the Tre Cime di Lavaredo at sunrise. First run in 2007.
+  link: {label: 'Lavaredo 120K', url: 'https://lavaredo.utmb.world/races/lavaredo120k', checked: '2026-11-17'}
+- id: val-daran
+  name: HOKA Val d'Aran by UTMB
+  series: utmb
+  place: Val d'Aran, Pyrenees
+  country: Spain
+  continent: europe
+  km: [163]
+  distances: 163 km and shorter races
+  climb: 10,000 m (163 km)
+  terrain: [mountain]
+  format: single
+  month: [7]
+  entry: [qualifier]
+  entry_note: Entry through UTMB. The longest races need a UTMB Index in the 100K or 100M category.
+  note: The UTMB World Series Major for Europe, so finishers collect double Running Stones.
+  link: {label: "Val d'Aran by UTMB", url: 'https://valdaran.utmb.world/', checked: '2026-11-17'}
+- id: eiger-ultra-trail
+  name: Eiger Ultra Trail by UTMB
+  series: utmb
+  place: Grindelwald, Bernese Oberland
+  country: Switzerland
+  continent: europe
+  km: [261]
+  distances: E250 (261 km) and shorter races
+  climb: 18,000 m (E250)
+  terrain: [mountain]
+  format: single
+  month: [7]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: The E250, which the organisers call the UNESCO Trail, has a 95-hour limit and runs beside the largest connected glaciated area in the Alps.
+  link: {label: 'Eiger Ultra Trail: E250', url: 'https://eiger.utmb.world/races/E250', checked: '2026-11-17'}
+- id: zugspitz-ultratrail
+  name: Zugspitz Ultratrail by UTMB
+  series: utmb
+  place: Garmisch-Partenkirchen, Bavaria
+  country: Germany
+  continent: europe
+  km: [167, 107]
+  distances: ZUT100 (167 km), Ultratrail (107 km) and shorter
+  terrain: [mountain]
+  format: single
+  month: [6]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: Loops around the Zugspitze, Germany's highest mountain.
+  link: {label: 'Zugspitz Ultratrail: ZUT100', url: 'https://zugspitz.utmb.world/races/zut100', checked: '2026-11-17'}
+- id: trail-verbier-st-bernard
+  name: Trail Verbier St-Bernard by UTMB
+  series: utmb
+  place: Verbier and the Grand St-Bernard, Valais
+  country: Switzerland
+  continent: europe
+  km: [77]
+  distances: X-Traversée 77 km, the longer X-Alpine and shorter races
+  terrain: [mountain]
+  format: single
+  month: [7]
+  entry: [open]
+  entry_note: Entry through UTMB. Start waves are set by UTMB Index.
+  note: High alpine passes under the Grand Combin (4,314 m).
+  link: {label: 'Trail Verbier St-Bernard: X-Traversée', url: 'https://verbier.utmb.world/races/x-traversee', checked: '2026-11-17'}
+- id: nice-cote-dazur
+  name: Nice Côte d'Azur by UTMB
+  series: utmb
+  place: Mercantour to Nice
+  country: France
+  continent: europe
+  km: [168, 113, 50]
+  distances: 168 km, 113 km, 50 km and 23 km
+  terrain: [mountain, trail]
+  format: single
+  month: [9]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: From the Mercantour mountains down through scrubland to the Mediterranean at Nice.
+  link: {label: "Nice Côte d'Azur by UTMB", url: 'https://nice.utmb.world/', checked: '2026-11-17'}
+- id: mallorca-by-utmb
+  name: Mallorca by UTMB
+  series: utmb
+  place: Serra de Tramuntana, Mallorca
+  country: Spain
+  continent: europe
+  km: [104]
+  distances: 104 km (Camins de Pedra en Sec), plus 100-mile, 50K and 20K races
+  climb: 3,740 m (104 km)
+  terrain: [mountain, island]
+  format: single
+  month: [10, 11]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: Across a mountain range that is a UNESCO World Heritage Site.
+  link: {label: 'Mallorca by UTMB: the 104 km race', url: 'https://mallorca.utmb.world/races/100K', checked: '2026-11-17'}
+- id: ultra-trail-snowdonia
+  name: Ultra-Trail Snowdonia by UTMB
+  series: utmb
+  place: Llanberis, Eryri (Snowdonia)
+  country: Wales, UK
+  continent: europe
+  km: [163, 56]
+  distances: 100 miles (163 km), 50K and shorter
+  climb: 9,200 m (100M)
+  terrain: [mountain]
+  format: single
+  month: [5]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: A grand tour of Eryri that starts and finishes under Yr Wyddfa, the highest mountain in Wales, with a 48-hour limit.
+  link: {label: 'UTS 100M', url: 'https://snowdonia.utmb.world/races/uts-100m', checked: '2026-11-17'}
+- id: lakeland-100
+  name: Montane Lakeland 100 and 50
+  series: independent
+  place: Coniston, Lake District
+  country: England, UK
+  continent: europe
+  km: [169, 80]
+  distances: 105 miles (the "100") and 50 miles
+  climb: About 6,300 m (100)
+  terrain: [mountain, trail]
+  format: single
+  month: [7]
+  entry: [ballot, qualifier]
+  entry_note: Ballot in early September. The 100 has strict qualification criteria; the 50 has none, but the organisers advise you to have run a marathon distance on mountain terrain.
+  note: A clockwise loop of the Lake District fells on bridleways and footpaths. The 100 starts on a Friday evening.
+  link: {label: 'Lakeland 50 and 100: entry', url: 'https://lakeland100.com/enter-the-event/', checked: '2026-11-17'}
+- id: dragons-back-race
+  name: Dragon's Back Race
+  series: independent
+  place: Conwy Castle to Cardiff Castle, Wales
+  country: Wales, UK
+  continent: europe
+  km: [380, 110]
+  distances: 380 km over 6 days; two-day Dragon's Fire (110 km) and Dragon's Tail; the Hatchling (half of each day)
+  climb: 16,400 m (full race)
+  terrain: [mountain]
+  format: stage
+  month: [9]
+  entry: [open]
+  entry_note: Enter directly; you accept a participant declaration rather than show qualifying races.
+  note: Day one crosses Tryfan and Crib Goch, Grade 1 scrambles; the Hatchling option avoids them.
+  link: {label: "Dragon's Back Race: the formats compared", url: 'https://www.dragonsbackrace.com/news/2026/formats/dragons-back-race-formats-compared', checked: '2026-11-17'}
+- id: winter-spine-race
+  name: Montane Winter Spine Race
+  series: spine
+  place: Pennine Way, Edale to Kirk Yetholm
+  country: England and Scotland, UK
+  continent: europe
+  km: [431, 257, 174, 69]
+  distances: 268 miles non-stop; Challenger North 160 miles, Challenger South 108 miles, Sprint North 43 miles
+  climb: Over 10,000 m (full race)
+  terrain: [winter, trail]
+  format: single
+  month: [1]
+  entry: [qualifier]
+  entry_note: Aged 21 or over. The full race needs a mountain, hill or moorland ultra of over 100 miles, or a Spine Challenger finish; the Challengers need an ultra of over 60 miles.
+  note: A 156-hour limit in January, with long nights on the moors. There is also a summer edition.
+  link: {label: 'Montane Winter Spine', url: 'https://www.thespinerace.com/race/montane-winter-spine/montane-winter-spine-spine/', checked: '2026-11-17'}
+- id: centurion-thames-path-100
+  name: Thames Path 100
+  series: centurion
+  place: London to Oxford along the Thames
+  country: England, UK
+  continent: europe
+  km: [161]
+  distances: 100 miles
+  climb: 560 m
+  terrain: [trail]
+  format: single
+  entry: [qualifier]
+  entry_note: You must have finished a race of at least 50 miles within 15 hours.
+  note: Mostly riverside path, with 560 m of climb in 100 miles and a 30-hour limit.
+  link: {label: 'Centurion: Thames Path 100', url: 'https://www.centurionrunning.com/races/thames-path-100-2027', checked: '2026-11-17'}
+- id: centurion-south-downs-way-100
+  name: South Downs Way 100
+  series: centurion
+  place: South Downs Way, southern England
+  country: England, UK
+  continent: europe
+  km: [161]
+  distances: 100 miles
+  climb: 3,800 m
+  terrain: [trail]
+  format: single
+  entry: [qualifier]
+  entry_note: Centurion's 100-mile races ask for a 50-mile finish within 15 hours.
+  note: Chalk downland with a 30-hour limit; lights must be carried from Washington onwards.
+  link: {label: 'Centurion: South Downs Way 100', url: 'https://centurionrunning.com/races/south-downs-way-100-2025', checked: '2026-11-17'}
+- id: centurion-north-downs-way-100
+  name: North Downs Way 100
+  series: centurion
+  place: Farnham to Ashford, Surrey and Kent
+  country: England, UK
+  continent: europe
+  km: [167]
+  distances: 103 miles
+  climb: 3,350 m
+  terrain: [trail]
+  format: single
+  entry: [qualifier]
+  entry_note: You must have finished a race of at least 50 miles within 15 hours.
+  note: A Western States qualifier, with a 30-hour limit.
+  link: {label: 'Centurion: North Downs Way 100', url: 'https://onecommunity.centurionrunning.com/races/north-downs-way-100-2026', checked: '2026-11-17'}
+- id: centurion-autumn-100
+  name: Autumn 100
+  series: centurion
+  place: Streatley, on the Thames Path and the Ridgeway
+  country: England, UK
+  continent: europe
+  km: [161]
+  distances: 100 miles in four out-and-back legs
+  climb: 1,500 m
+  terrain: [trail]
+  format: single
+  month: [10]
+  entry: [qualifier]
+  entry_note: You must have finished a race of at least 50 miles within 15 hours.
+  note: Every leg returns to the same base, which makes it easier to crew. A 28-hour limit.
+  link: {label: 'Centurion: Autumn 100', url: 'https://www.centurionrunning.com/races/autumn-100-2026', checked: '2026-11-17'}
+- id: ultra-trail-australia
+  name: HOKA Ultra-Trail Australia by UTMB
+  series: utmb
+  place: Katoomba, Blue Mountains, New South Wales
+  country: Australia
+  continent: oceania
+  km: [161, 101]
+  distances: UTAMiler 161 km, UTA100 101 km and shorter
+  climb: 7,200 m (UTAMiler)
+  terrain: [mountain, trail]
+  format: single
+  month: [5]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: The UTMB World Series Major for Oceania. The miler drops into the Grose Valley and climbs to Lockleys Pylon.
+  link: {label: 'Ultra-Trail Australia: UTAMiler', url: 'https://uta.utmb.world/races/UTAMiler', checked: '2026-11-17'}
+- id: tarawera-ultra-trail
+  name: Tarawera Ultra-Trail by UTMB
+  series: utmb
+  place: Rotorua
+  country: New Zealand
+  continent: oceania
+  km: [163, 102]
+  distances: TMiler 163 km, 102 km and shorter
+  climb: 3,800 m (TMiler)
+  terrain: [trail]
+  format: single
+  month: [2]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: A loop from Rotorua past eight lakes and under the mountains of Tarawera, Ruawahia and Wahanga.
+  link: {label: 'Tarawera: TMiler', url: 'https://tarawera.utmb.world/races/t-miler', checked: '2026-11-17'}
+- id: chiang-mai-thailand
+  name: HOKA Chiang Mai Thailand by UTMB
+  series: utmb
+  place: Doi Inthanon to Doi Suthep, Chiang Mai
+  country: Thailand
+  continent: asia
+  km: [174, 94, 54]
+  distances: 174 km, 94 km, 54 km and shorter
+  climb: 9,890 m (174 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [11, 12]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: The UTMB World Series Major for Asia, ending in the city of Chiang Mai.
+  link: {label: 'Chiang Mai by UTMB: race specs', url: 'https://chiangmai.utmb.world/news/race-specs', checked: '2026-11-17'}
+- id: translantau
+  name: TransLantau by UTMB
+  series: utmb
+  place: Lantau Island, Hong Kong
+  country: Hong Kong
+  continent: asia
+  km: [104]
+  distances: 104 km and shorter
+  climb: 4,500 m
+  terrain: [mountain, island]
+  format: single
+  month: [11]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: From Mui Wo to Tai O over Lantau Peak, Hong Kong's second-highest summit, with a 27-hour limit.
+  link: {label: 'TransLantau100', url: 'https://translantau.utmb.world/races/tl100', checked: '2026-11-17'}
+guides:
+- slug: kit-by-environment
+  title: Ultra running kit for mountains, desert, winter and lowland trails
+  short: What to carry, by environment
+  seo_title: 'Ultramarathon kit list: mountain, desert, winter, trail'
+  description: What race organisers make ultra runners carry in the Alps, the Sahara, a British winter and on lowland trails, and why each item is on the list.
+  standfirst: The fastest way to learn what an ultra needs is to read the organisers' mandatory kit lists. They are written by the people who send out the rescue teams.
+  detail:
+  - h: Start with the race's own kit list
+    p:
+    - Almost every ultra publishes a list of what you must carry, and many check it. Centurion Running, which organises four 100-mile races in England, makes checks before, during and after its races and adds a one-hour penalty for each missing item. At UTMB Mont-Blanc you must carry the full list from start to finish, and race stewards can check it at any point.
+    - The lists change from year to year (the Spine Race updated its summer gloves and insulated jacket rules in March 2026), so read the current version for your race and treat the guidance below as background.
+  - h: The environments compared
+    table:
+      head: [Environment, What the organisers plan for, What the list adds, Races to look at]
+      rows:
+      - [Lowland trail and riverside, 'Rain, a night out on the path, getting cold when you slow down', 'Water for at least 1 litre, a waterproof jacket with sealed seams, a survival blanket, a whistle, a headtorch of at least 100 lumens, a charged phone', 'Thames Path 100, Autumn 100']
+      - [Alpine mountain, 'Heat above 30°C (86°F), cold down to about -10°C (14°F) above 2,000 m, rain, hail or snow, one or two nights outside', 'Enough to wait safely for a rescue team in bad weather, carried for the whole race', 'UTMB, Lavaredo, Eiger Ultra Trail']
+      - [High altitude, 'Several climate zones in one race, ice-cold streams, snowfields', Layers for the cold at height as well as the heat lower down, 'Hardrock 100, Leadville Trail 100']
+      - [British winter, 'Long nights, wind and wet on open moorland, days without a bed', 'A sleeping bag, an insulated jacket, gloves to a set standard, navigation by GPS set to the British National Grid', Montane Winter Spine]
+      - [Desert stage race, 'Carrying a week of food in the heat', 'Every meal for the stages (MDS suggests 10 to 12 meals, at least 2,000 kcal a day), with water handed out only at checkpoints and camp', 'Marathon des Sables, MDS 120']
+  - h: Lowland trails and riverside 100s
+    p:
+    - Centurion's Thames Path 100 list is a good model for a first long ultra in Britain. Its compulsory items include bottles or a bladder holding at least 1 litre, a survival blanket of at least 1.4 by 2 metres, a waterproof jacket rated to at least 10,000 mm with sealed seams and a hood, a whistle, and a headtorch or main light of at least 100 lumens. For the Autumn 100, Centurion strongly recommends a paper map and a separate compass, not a phone.
+    - The point of the list is what happens when you stop. A runner who sits down at 3am on a wet towpath cools quickly, and the jacket and blanket are what keep a slow night from becoming a medical one.
+  - h: Mountains and the Alps
+    p:
+    - UTMB Mont-Blanc explains its rules plainly. At the end of August above 2,000 m, the temperature can fall to -10°C (14°F) and it can snow or hail, so your equipment must let you spend one or two nights on the route and wait for rescue in safe conditions. The organisers also publish extra items that are switched on when the forecast demands them, and each runner must bring those to the race too.
+    - Two of UTMB's own tips are worth keeping for any mountain race. If you use your survival blanket, put it under your clothes rather than over them, and wrap your dry clothes in plastic inside your pack.
+    - At altitude, Hardrock's organisers warn that the course passes through several climate zones and that runners will wade knee-deep, ice-cold streams and cross snowfields. Plan for winter at the top and summer at the bottom of the same day.
+  - h: Winter ultras
+    p:
+    - The Montane Winter Spine runs 268 miles (431 km) up the Pennine Way in January, with a 156-hour limit. Its kit list is a separate document, which includes a sleeping bag, an insulated jacket and gloves that meet set standards. The organisers ask runners to set their GPS to the British National Grid so positions match British maps and mountain rescue.
+    - The shorter Sprint North (43 miles, 18-hour limit) has only about four hours of daylight, which is a good way to find out how your kit copes in the dark before you try a longer race.
+  - h: Desert stage races
+    p:
+    - In a Marathon des Sables race you carry all your food from the start. For the three-stage MDS 120 races, the organisers suggest planning for 10 to 12 meals with at least 2,000 kcal a day. Water is the one thing handed out, at checkpoints every 8 to 12 km and 5 litres at camp after each stage, for drinking, cooking and washing.
+    - Every gram is carried for the whole week, so it is worth weighing your food and kit before you pack.
+  - h: What we have not done
+    p:
+    - We have not tested any of this kit, and nothing on this page is a recommendation of a brand. The kit links below are searches on Amazon so you can compare items against your race's list. Check every item against the official list, which is the only one a kit check will accept.
+  faq:
+  - q: Do I need mandatory kit for a 50K?
+    a: It depends on the race. Many shorter road and trail ultras have little or no compulsory kit, while mountain races such as those at UTMB Mont-Blanc set a basic list for every race. Read the rules for your race.
+  - q: What waterproof jacket passes a kit check?
+    a: Centurion asks for a jacket rated to at least 10,000 mm with sealed seams (and a hood for the Thames Path 100). Other races set their own standard, so check the wording for yours.
+  - q: How much water do I need to carry?
+    a: Centurion's lowland 100s ask for at least 1 litre. Mountain, hot and desert races may ask for more, or space the water stations further apart, so check your race.
+  kit:
+  - {name: Running vest or race pack, why: 'big enough for your race''s full list with water; try it packed, not empty', url: 'https://www.amazon.co.uk/s?k=trail+running+vest+12l'}
+  - {name: Waterproof running jacket with taped seams, why: 'check the hydrostatic head (10,000 mm or more) and that the seams are sealed, as kit checks ask for both', url: 'https://www.amazon.co.uk/s?k=waterproof+running+jacket+taped+seams'}
+  - {name: Headtorch, why: 'at least 100 lumens for many UK races; carry spare batteries or a power bank', url: 'https://www.amazon.co.uk/s?k=running+head+torch+rechargeable'}
+  - {name: Survival blanket or bag, why: 'check the minimum size your race asks for (Centurion: 1.4 by 2 metres)', url: 'https://www.amazon.co.uk/s?k=emergency+survival+blanket'}
+  - {name: Soft flasks, why: 'carry at least the volume your race asks for; soft flasks pack down as you drink', url: 'https://www.amazon.co.uk/s?k=soft+flask+500ml+running'}
+  - {name: Trekking poles, why: 'useful on long mountain climbs; check your race allows them and practise with them first', url: 'https://www.amazon.co.uk/s?k=folding+trail+running+poles'}
+  - {name: Desert gaiters, why: keep sand out of your shoes on desert stage races, url: 'https://www.amazon.co.uk/s?k=desert+running+gaiters+sand'}
+  sources:
+  - {label: 'Centurion Running, Thames Path 100 2025 (mandatory kit)', url: 'https://centurionrunning.com/races/thames-path-100-2025', checked: '2026-11-17'}
+  - {label: 'Centurion Running, Autumn 100 2024 (recommended map and compass)', url: 'https://www.centurionrunning.com/races/autumn-100-2024', checked: '2026-11-17'}
+  - {label: 'HOKA UTMB Mont-Blanc, Mandatory equipment', url: 'https://montblanc.utmb.world/races-runners/runners/mandatory-equipment', checked: '2026-11-17'}
+  - {label: 'HOKA UTMB Mont-Blanc, 2027 regulations (equipment)', url: 'https://montblanc.utmb.world/races-runners/other-information/regulation', checked: '2026-11-17'}
+  - {label: 'HOKA UTMB Mont-Blanc, Security (advice on survival blankets and dry clothes)', url: 'https://montblanc.utmb.world/races-runners/other-information/security', checked: '2026-11-17'}
+  - {label: 'Hardrock 100, Course description and conditions', url: 'https://hardrock100.com/hardrock-course.php', checked: '2026-11-17'}
+  - {label: 'The Spine Race, Summer kit list 2026', url: 'https://www.thespinerace.com/spine-race-summer-kit-list/', checked: '2026-11-17'}
+  - {label: 'The Spine Race, FAQs (GPS set-up)', url: 'https://www.thespinerace.com/spine-hq/faqs/', checked: '2026-11-17'}
+  - {label: 'The Spine Race, Sprint North', url: 'https://www.thespinerace.com/race/montane-winter-spine/sprint-north/', checked: '2026-11-17'}
+  - {label: 'Marathon des Sables, MDS 120 Morocco 2027', url: 'https://marathondessables.com/en/event/mds-120-morocco-2027', checked: '2026-11-17'}
+- slug: how-to-get-a-place
+  title: How to get a place in the big ultras
+  short: Lotteries, qualifiers and Running Stones
+  seo_title: 'Ultra entry explained: lotteries, qualifiers, Running Stones'
+  description: How entry works for Western States, UTMB, Hardrock, Lakeland, the Spine, Comrades and others, from lotteries and qualifying races to UTMB Running Stones.
+  standfirst: Some ultras sell out in minutes, some draw names from a hat and some will not take you without proof you can finish. Here is how the best-known ones decide.
+  detail:
+  - h: Four ways in
+    p:
+    - Most big ultras use one or more of four routes. Open entry means you sign up when entries open, sometimes with a declaration about your experience. A ballot or lottery draws places from everyone who applies. A qualifying race asks you to prove you have finished something similar inside a time limit. A few races are by application or invitation, with the organisers deciding who starts.
+    table:
+      head: [Race, How entry works, What you need first]
+      rows:
+      - [Western States 100, Lottery in November and December, 'A qualifying race of 100 km or more in the qualifying year; you must be 18 or over']
+      - [UTMB, Lottery, At least one Running Stone from the past 24 months and a UTMB Index]
+      - [Hardrock 100, Lottery in early December, See the race's rules]
+      - [Leadville Trail 100, Lottery in early December, 'None for the lottery; entry coins are also won at other Leadville series races']
+      - [Lakeland 100 and 50, Ballot in early September, 'Strict criteria for the 100; none for the 50']
+      - [Montane Winter Spine, Entry with experience checks, 'Aged 21 or over and a 100-mile mountain, hill or moorland ultra, or a Spine Challenger finish']
+      - [Centurion 100-mile races, Entry, A finish of at least 50 miles within 15 hours]
+      - [Comrades Marathon, Entry, 'A qualifying time, such as a marathon in under 4 hours 50 minutes']
+      - [Badwater 135, Application (invitational), 'A qualifying standard, such as four finishes of 100 miles or more']
+      - [Spartathlon, Application, 'A hard qualifying performance, such as 100 miles inside 21 hours (men) or 22 hours (women)']
+      - [Dragon's Back Race, Entry, A participant declaration]
+  - h: Lotteries
+    p:
+    - Western States draws its field from a lottery each year. Everyone in it has finished a qualifying race of 100 km or more within the qualifying year, and anyone who misses out gets extra tickets the next time they enter. The race opened the 2027 lottery for three weeks in November 2026, with the draw on 5 December.
+    - Hardrock and Leadville also draw in early December. Lakeland's ballot opens on 1 September for 48 hours, and you cannot enter both the 50 and the 100 ballots.
+  - h: UTMB Running Stones
+    p:
+    - To enter the lottery for UTMB, CCC or OCC in Chamonix you need at least one Running Stone earned in the previous two years, and Running Stones come only from finishing a UTMB World Series event. Each finish adds stones, which improve your chances in the draw. The four Majors (Ultra-Trail Australia, Val d'Aran, Kodiak and Chiang Mai for 2026) give double stones.
+    - From 2026, runners who commit to reaching the Chamonix valley without a car, by a lower-carbon route, get a 30% boost in the lottery. Western States finishers also earn stones through an agreement between the two races.
+  - h: Qualifying races
+    p:
+    - Many races want proof that you can finish. Centurion's 100-mile races ask for a 50-mile finish inside 15 hours. The Spine's Challenger races ask for an ultra of over 60 miles. Comrades and Two Oceans set marathon qualifying times, and Two Oceans counts any officially measured and timed marathon or longer race inside its window.
+    - At the top end, Badwater 135 and Spartathlon ask for long records of very long races. These are aims for after years of running, not first ultras.
+  - h: A first ultra without the wait
+    p:
+    - If you want a first ultra in Britain without a lottery or qualifier, the Lakeland 50 has no entry criteria (though the organisers advise a marathon on mountain terrain first, and entry is by ballot), and Dragon's Back's two-day and Hatchling formats ask only for a declaration. Two Oceans in Cape Town is 56 km on road, with a marathon qualifying time. Use the finder to filter for open entry in your region.
+  faq:
+  - q: What is a Running Stone?
+    a: A token earned by finishing a UTMB World Series race. You need at least one from the previous 24 months to enter the lottery for UTMB, CCC or OCC, and more stones improve your chances.
+  - q: How do I qualify for Western States?
+    a: Finish a qualifying race of 100 km or longer inside its time limit within the qualifying year, then enter the lottery in November. The race publishes the list of qualifying races.
+  - q: Can I enter the Lakeland 100 as my first ultra?
+    a: No. The 100 has strict qualification criteria. The Lakeland 50 has none, though the organisers advise running a marathon on mountain terrain first.
+  sources:
+  - {label: 'Western States, Entry process', url: 'https://www.wser.org/entry-process/', checked: '2026-11-17'}
+  - {label: 'Western States, UTMB World Series', url: 'https://www.wser.org/utmb-world-series/', checked: '2026-11-17'}
+  - {label: 'HOKA UTMB Mont-Blanc, UTMB World Series Finals', url: 'https://montblanc.utmb.world/discover/the-event/utmb-world-series', checked: '2026-11-17'}
+  - {label: 'HOKA UTMB Mont-Blanc, Responsible mobility and the lottery boost', url: 'https://montblanc.utmb.world/get-involved/take-action/reduction-des-emissions-carbone-et-mobilite', checked: '2026-11-17'}
+  - {label: 'UTMB World Series, The 2026 season', url: 'https://utmb.world/news/new-season-2026', checked: '2026-11-17'}
+  - {label: 'Hardrock 100', url: 'https://hardrock100.com/', checked: '2026-11-17'}
+  - {label: 'Leadville Race Series, Silver Rush 50 (LT100 qualification)', url: 'https://www.leadvilleraceseries.com/run/silverrush50run/', checked: '2026-11-17'}
+  - {label: 'Lakeland 50 and 100, Enter', url: 'https://lakeland100.com/enter-the-event/', checked: '2026-11-17'}
+  - {label: 'The Spine Race, Challenger North', url: 'https://www.thespinerace.com/race/montane-winter-spine/montane-winter-spine-challenger-north/', checked: '2026-11-17'}
+  - {label: 'Centurion Running, Thames Path 100 2027', url: 'https://www.centurionrunning.com/races/thames-path-100-2027', checked: '2026-11-17'}
+  - {label: 'Comrades Marathon, Launch of the 2025 Comrades Marathon', url: 'https://comrades.com/blogs/launch-of-2025-comrades-marathon', checked: '2026-11-17'}
+  - {label: 'Two Oceans Marathon, Ultra Marathon', url: 'https://www.twooceansmarathon.org.za/ultra-marathon/', checked: '2026-11-17'}
+  - {label: 'Badwater, Badwater 135', url: 'https://www.badwater.com/event/badwater-135/', checked: '2026-11-17'}
+  - {label: 'Spartathlon, Race 2026 announcement', url: 'https://www.spartathlon.gr/en/spartathlon-race-2026/', checked: '2026-11-17'}
+  - {label: "Dragon's Back Race, Enter the 2026 event", url: 'https://www.dragonsbackrace.com/enter', checked: '2026-11-17'}

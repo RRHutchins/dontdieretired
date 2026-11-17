@@ -48,6 +48,8 @@
   </section>
   {% endfor %}
 
+  {% if c.hub %}{% set hb = hubs[c.hub] %}<aside class="hub-promo" data-cat="{{ c.category }}"><h2 class="h4">{{ hb.h1 }}</h2><p>{{ hb.lead }}</p><p><a class="btn btn-small" href="/{{ hb.slug }}/">Open the race finder</a>{% for g in hb.guides or [] %} <a href="/{{ hb.slug }}/{{ g.slug }}/">{{ g.short or g.title }}</a>{{ " ·" if not loop.last }}{% endfor %}</p></aside>{% endif %}
+
   <h2>How to start</h2>
   <ol class="fl-start">{% for s in c.start %}<li>{{ s }}</li>{% endfor %}</ol>
 

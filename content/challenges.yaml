@@ -48898,3 +48898,51 @@
     outlet: Star Tribune
     url: https://www.startribune.com/a-beginning-nordic-skier-goes-the-distance-from-learning-the-basics-to-the-sports-super-bowl-all-in-one-winter/601228119
     checked: '2026-11-16'
+- id: run-an-ultramarathon
+  title: Run an ultramarathon
+  category: move
+  kind: event
+  effort: demanding
+  cost: mid
+  time: months
+  setting: outdoors
+  company: either
+  regions:
+  - anywhere
+  hub: ultra-running
+  why: An ultra is any race longer than a marathon, from a 56 km road race around Cape Town to six days across the mountains of Wales. Some you can enter when entries open; others ask for a qualifying race or a lottery place.
+  start:
+  - Pick a first race in our ultra race finder, filtering by region, distance and open entry, and read its rules and kit list.
+  - Build up over months to long days on the same kind of ground as the race, with the kit you will carry.
+  - Practise eating and drinking on the move during your long runs, carrying the kit your race asks for.
+  links:
+  - label: 'Lakeland 50 and 100: entry (the 50 has no entry criteria)'
+    url: https://lakeland100.com/enter-the-event/
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Centurion Running: Thames Path 100 (entry needs a 50-mile finish)'
+    url: https://www.centurionrunning.com/races/thames-path-100-2027
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Western States 100: entry process'
+    url: https://www.wser.org/entry-process/
+    region: us
+    checked: '2026-11-17'
+  - label: 'UTMB World Series: how the races and Running Stones work'
+    url: https://montblanc.utmb.world/discover/the-event/utmb-world-series
+    region: any
+    checked: '2026-11-17'
+  safety: Ultras in the mountains, the desert or winter can leave you far from help. Carry the organiser's full kit list, and check with your GP (family doctor) before you start training if you have a heart condition or other health worry.
+  kit:
+  - name: Trail running vest
+    why: carries water, food and the race's mandatory kit; try it fully packed
+    url: https://www.amazon.co.uk/s?k=trail+running+vest+12l
+  - name: Waterproof running jacket with taped seams
+    why: most ultra kit lists ask for sealed seams and a hood; check your race's rating
+    url: https://www.amazon.co.uk/s?k=waterproof+running+jacket+taped+seams
+  - name: Headtorch
+    why: many ultras run into the night; some races set a minimum brightness
+    url: https://www.amazon.co.uk/s?k=running+head+torch+rechargeable
+  related:
+  - parkrun
+  - marine-corps-marathon
