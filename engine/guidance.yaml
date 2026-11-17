@@ -185,8 +185,8 @@ guidance:
     applies: [hill]
     use: advice
     text: Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail.
-    for: [ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials]
-    note: The National Park Service's Ten Essentials (2026) puts navigation first and also says to bring a physical map as a back-up and a spare phone battery.
+    for: [ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials, dnt-mountain-code]
+    note: The National Park Service's Ten Essentials (2026) puts navigation first and also says to bring a physical map as a back-up and a spare phone battery. The Norwegian Mountain Code says to use a map and compass ("it always works") and to check the map regularly, even on marked trails.
 
   # ---------- the event itself ----------
   - id: taper
@@ -208,8 +208,8 @@ guidance:
     applies: [hill]
     use: safety
     text: Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys.
-    for: [ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits, usfs-msh-climbing-safety]
-    note: The Forest Service's Mount St. Helens climbing safety page (2025) backs checking the forecast and turning back; it does not cover the other points.
+    for: [ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits, usfs-msh-climbing-safety, dnt-mountain-code, nps-hale-safety]
+    note: The Forest Service's Mount St. Helens climbing safety page (2025) backs checking the forecast and turning back; it does not cover the other points. The Norwegian Mountain Code (DNT with the Norwegian Red Cross, opened 17 Nov 2026) backs checking the forecast, telling someone where you are going and when you expect to return, and turning around in time ("there's no shame in turning around"). Haleakalā's safety page backs leaving your itinerary with someone and preparing for weather that can differ from the forecast; neither covers daylight or summit temperatures.
   - id: storms-off-summit-early
     topic: on the day
     applies: [hill]
@@ -276,7 +276,8 @@ guidance:
     applies: [altitude]
     use: safety
     text: Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help.
-    for: [nhs-altitude, nathnac-altitude, cdc-altitude, inyo-whitney-leaflet]
+    for: [nhs-altitude, nathnac-altitude, cdc-altitude, inyo-whitney-leaflet, nps-hale-hiking]
+    note: Haleakalā's hiking page (2024) names nausea, headache, dizziness and shortness of breath as symptoms to watch for at the summit; it does not say what to do, which rests on the NHS, NaTHNaC and CDC.
   - id: altitude-see-gp
     topic: altitude
     applies: [altitude]

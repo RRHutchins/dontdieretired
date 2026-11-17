@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-16)
+# Guidance engine report (2026-11-17)
 
-87 sources, 88 statements, 12 event profiles. Core 66, supported 22, thin 0, contested 0.
+90 sources, 88 statements, 12 event profiles. Core 66, supported 22, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -89,6 +89,9 @@
 - U.S. Masters Swimming, *At what water temperature do I need a wetsuit?* (2026). Opened 2026-11-13.
 - Bewl Water (venue operator, Lamberhurst, Kent), *Open water swimming* (2026). Opened 2026-11-13.
 - British Cycling (Insight Zone), *Supporting Document: Missing weeks of the plan (page undated; year from the article reference izn20160404)* (2016). Opened 2026-11-14.
+- Den Norske Turistforening (DNT, the Norwegian Trekking Association), revised with the Norwegian Red Cross, *The Norwegian Mountain Code (undated page; year is the year opened)* (2026). Opened 2026-11-17.
+- U.S. National Park Service, Haleakalā National Park, *Safety (last updated 27 July 2022)* (2022). Opened 2026-11-17.
+- U.S. National Park Service, Haleakalā National Park, *Hiking (last updated 15 November 2024)* (2024). Opened 2026-11-17.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -107,20 +110,20 @@
 |---|---|---|---|---|
 | core | 26 | body maintenance | Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. | cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older, nhs-bones-65, cdc-older-adults (against: higdon-novice1) |
 | core | 24 | body maintenance | Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. | cmo-2019, lauersen-2014, who-2011-older, nhs-bones-65, cdc-older-adults |
+| core | 21 | altitude | Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. | nhs-altitude, nathnac-altitude, cdc-altitude, inyo-whitney-leaflet, nps-hale-hiking |
 | core | 19 | body maintenance | Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third. | sherrington-2019, who-falls, nhs-falls, cdc-falls-prevention |
+| core | 18 | on the day | Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. | ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits, usfs-msh-climbing-safety, dnt-mountain-code, nps-hale-safety |
 | core | 18 | altitude | Above 3,000 metres, sleep no more than 500 metres higher than the night before and take a rest day at the same height every three or four days. Avoid going from below 1,200 metres to above 3,500 metres in a day. | nhs-altitude, nathnac-altitude, tanapa-kili, cdc-altitude |
-| core | 18 | altitude | Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. | nhs-altitude, nathnac-altitude, cdc-altitude, inyo-whitney-leaflet |
+| core | 17 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials, dnt-mountain-code |
 | core | 15 | before you start | Start from your current level and build up gradually; repeating a week is fine and is part of the plan, not a failure. | cmo-2019, nhs-c25k, who-2011-older |
 | core | 15 | altitude | See your GP or a travel clinic before a high-altitude trip, especially if you have a health condition or have had altitude sickness before; they can discuss preventive medicine. Make sure your insurance covers evacuation. | nhs-altitude, nathnac-altitude, cdc-altitude |
 | core | 15 | on the day | Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather, swt-snorkel-safety, nps-buis-safety, swimeng-ow-tips |
-| core | 14 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials |
 | core | 14 | taper | In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. | bosquet-2007, ea-pavey-marathon, higdon-novice1, greatrun-half-plan, emf-half-beginner |
 | core | 13 | altitude | Being fit does not protect you from altitude sickness. Choose an itinerary with acclimatisation days and climb slowly however strong you feel. | nathnac-altitude, tanapa-kili, cdc-altitude |
 | core | 13 | altitude | If you fly or drive straight to a high town, rest there for a day or two before you walk any higher, drink enough water, and avoid alcohol for the first two days. | nhs-altitude, cdc-altitude, promperu-inca |
 | core | 12 | intensity | Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. | ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km |
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
 | core | 12 | progression | Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. | higdon-novice1, rc-down-weeks, bc-missing-weeks, meeusen-2013-overtraining |
-| core | 12 | on the day | Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. | ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits, usfs-msh-climbing-safety |
 | core | 12 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe, bewl-ows |
 | core | 11 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. | lauersen-2014, cmo-2019, bmc-hill-fit |
 | core | 11 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water, nhs-hypothermia |
