@@ -7,6 +7,9 @@ tags: [qr-codes, inventions, engineering, japan, technology, history]
 segments: [learner, changer]
 level: any
 art: grid
+photo_file: "File:QR Code Preparation Derbyshire.jpg"
+photo_caption: "Laminated QR code labels being cut out for a trial at Derby Museum, which let visitors open Wikipedia articles on geology and geologists from their phones."
+photo_alt: "A desk with a keyboard, an old mobile phone and a scatter of small square black-and-white QR code labels on paper; a hand works at a guillotine in the background."
 hook: "Two engineers, no budget and a pattern of 1:1:3:1:1 that almost never turns up in print."
 lesson: "The cleverest part of an invention is often the dull problem it solves first: here, finding the code before reading it."
 standfirst: "In 1992 a Denso engineer set out to replace the strings of barcodes on Japanese car-parts boxes. Two years later his team released the QR code. The squares in its corners, and the decision not to charge anyone for using it, are why it is on menus and tickets today."
