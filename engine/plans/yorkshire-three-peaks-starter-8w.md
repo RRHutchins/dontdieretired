@@ -145,11 +145,11 @@ Rucksack with dry bags, worn-in boots, layers, waterproofs, hat, gloves, spare w
 
 - If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [19]
 - Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [38]
-- Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. [1, 36, 39, 40, 41, 42]
-- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [43]
+- Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. [1, 36, 39, 40, 41, 42, 43, 44]
+- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [45]
 - Stop if something does not feel right, and get it checked rather than training through it. [3, 23]
-- In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. [33, 34, 44]
-- In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). [44, 45]
+- In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. [33, 34, 46]
+- In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). [46, 47]
 
 ## Where this comes from
 
@@ -197,6 +197,8 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 40. Mount Washington Observatory, *Higher Summits Forecast* (2026). Tier 3. https://mountwashington.org/weather/higher-summits-forecast/ (opened 2026-11-11)
 41. USDA Forest Service, Gifford Pinchot National Forest, *Mount St. Helens Climbing Safety (last updated 1 May 2025)* (2025). Tier 3. https://www.fs.usda.gov/r06/giffordpinchot/recreation/mount-st-helens-climbing-safety (opened 2026-11-12)
 42. U.S. National Park Service, Haleakalā National Park, *Safety (last updated 27 July 2022)* (2022). Tier 3. https://home.nps.gov/hale/planyourvisit/safety.htm (opened 2026-11-17)
-43. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
-44. Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Tier 3. https://www.mountaineering.scot/news/avoid-hypothermia-when-hiking-in-scottish-winter (opened 2026-11-09)
-45. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
+43. South African National Parks (SANParks), Table Mountain National Park, *Safe Hiking (undated page; year is the year opened)* (2026). Tier 3. https://www.sanparks.org/parks/table-mountain/useful-information/safe-hiking (opened 2026-11-17)
+44. Safetravel (Icelandic Association for Search and Rescue, ICE-SAR), *Hiking / Trekking (last modified 23 November 2025)* (2025). Tier 3. https://safetravel.is/outdoors/hiking-trekking/ (opened 2026-11-17)
+45. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
+46. Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Tier 3. https://www.mountaineering.scot/news/avoid-hypothermia-when-hiking-in-scottish-winter (opened 2026-11-09)
+47. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)

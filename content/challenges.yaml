@@ -5469,25 +5469,171 @@
   regions:
   - uk
   - us
-  why: You board in a city in the evening, eat as the lights slide past, and wake somewhere completely different. It turns getting there into the best part of the trip.
+  why: You board in the evening, go to bed in a small cabin as the train runs through the night, and wake up hundreds of miles away, in many cabins with breakfast brought to you. Britain still has two sleeper trains, to Scotland and to Cornwall, and Amtrak's long-distance trains in the US carry private rooms with meals included.
   start:
-  - 'Choose a route: London to the Highlands, or one of Amtrak''s long-distance trains.'
-  - Book a private room or berth well ahead.
-  - Plan a day at the far end before you travel home.
+  - 'Choose a route: London Euston to Scotland on the Caledonian Sleeper, London Paddington to Penzance on the Night Riviera, or an Amtrak long-distance train.'
+  - Book early, as cabins are limited and fares rise as the date nears; the Caledonian Sleeper sells up to 12 months ahead and Amtrak up to 11 months ahead.
+  - Pack one small overnight bag for the cabin and plan a day at the far end before you travel home.
   links:
-  - label: Caledonian Sleeper
-    url: https://www.sleeper.scot/
+  - label: 'Caledonian Sleeper: rooms and seats'
+    url: https://www.sleeper.scot/accommodation/
     region: uk
-    checked: '2026-10-06'
-  - label: 'Amtrak: routes and destinations'
-    url: https://www.amtrak.com/train-routes
+    checked: '2026-11-17'
+  - label: 'Caledonian Sleeper: before your trip'
+    url: https://www.sleeper.scot/help-support/before-your-trip/
+    region: uk
+    checked: '2026-11-17'
+  - label: 'GWR: Night Riviera Sleeper'
+    url: https://www.gwr.com/travelling-with-us/night-riviera-sleeper
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Amtrak: private rooms'
+    url: https://www.amtrak.com/sleeper-car-accommodations
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-17'
+  - label: 'Amtrak: roomette or bedroom'
+    url: https://www.amtrak.com/difference-between-a-roomette-a-bedroom
+    region: us
+    checked: '2026-11-17'
   guide: travelling-by-train-after-50
+  seo_title: 'Sleeper trains in the UK and US: routes, rooms and prices'
+  description: The Caledonian Sleeper, Night Riviera and Amtrak sleepers compared, with room types, prices as last listed, what is included and how to book.
+  detail:
+  - h: What it's like
+    p:
+    - A sleeper is a hotel room that moves. You board late in the evening, sleep in a bunk or a bed, and arrive early the next morning. In Britain there are two left, the Caledonian Sleeper from London Euston to Scotland and Great Western Railway's Night Riviera from London Paddington to Cornwall. In the US, Amtrak's long-distance trains, such as the Empire Builder, Southwest Chief, Crescent and Silver Meteor, carry sleeping cars and travel for one or more nights.
+    - The night is not silent. Clive Anderson, writing about the Caledonian Sleeper in Prospect, noted the noise of the train stopping and starting as carriages were coupled and uncoupled, so ear plugs earn their place.
+  - h: The main sleepers compared
+    table:
+      head:
+      - Train
+      - Route
+      - When
+      - Beds and rooms
+      - Included
+      rows:
+      - - Caledonian Sleeper, Lowland
+        - London Euston to Edinburgh and Glasgow
+        - Six nights a week, leaving around 11.30pm to 11.45pm; no Saturday train
+        - Seat, Classic twin room, Club en-suite, Caledonian Double en-suite, plus accessible rooms
+        - Sleep kit in Classic and Seat; breakfast and station lounges with Club and Caledonian Double
+      - - Caledonian Sleeper, Highland
+        - London Euston to Inverness, Aberdeen and Fort William, with stops such as Aviemore, Dundee and Corrour
+        - Six nights a week, leaving around 9pm to 9.15pm; no Saturday train
+        - As for the Lowland train
+        - As for the Lowland train
+      - - GWR Night Riviera
+        - London Paddington to Penzance, via Exeter, Plymouth and Truro
+        - Sunday to Friday nights, about 11.45pm from Paddington, arriving about 7.50am
+        - Single or twin cabin with bunks, washbasin and sockets; airline-style seats at no extra charge
+        - Breakfast served to the cabin; First Class lounge at Paddington from 9pm
+      - - Amtrak long-distance
+        - Western routes such as the Empire Builder and Southwest Chief; eastern ones such as the Crescent and Silver Meteor
+        - Varies by route; one or more nights aboard
+        - Roomette (3ft 6in by 6ft 6in, two seats that become bunks), Bedroom (6ft 6in by 7ft 6in, with its own toilet and shower), Family Room, Accessible Bedroom
+        - All meals on board, lounge access at major stations, priority boarding and a room attendant
+    after: Times are as listed by seat61 and GWR on 17 November 2026 and change between timetables, so check before booking.
+  - h: Prices as last listed
+    table:
+      head:
+      - Option
+      - From (one way, per room)
+      - Notes
+      rows:
+      - - Caledonian Sleeper seat, Lowland
+        - £54
+        - No bed and no Club Car access
+      - - Caledonian Sleeper Classic room
+        - £135 solo, £195 shared (Lowland); £165 solo, £255 shared (Highland)
+        - Bunks, washbasin, shared toilet, no shower; breakfast costs extra
+      - - Caledonian Sleeper Club en-suite
+        - £175 solo, £235 shared (Lowland); £215 solo, £315 shared (Highland)
+        - En-suite toilet and shower, breakfast and lounge access
+      - - Caledonian Double
+        - £380 solo, £445 shared (Lowland); £420 solo, £525 shared (Highland)
+        - A double bed; seat61 says there are two in each portion of the train, so they go first
+      - - Night Riviera single cabin
+        - £49 on top of the train ticket
+        - Lounges and showers at Paddington, Penzance and Truro, and breakfast
+      - - Night Riviera twin cabin
+        - £59 on top of the train ticket
+        - Showers and First Class lounge at Paddington, and breakfast
+      - - Amtrak Roomette or Bedroom
+        - Not published as a set price
+        - Fares depend on the date, route and number of travellers; coach passengers can bid to upgrade through BidUp
+    after: Caledonian Sleeper prices are seat61's starting fares, which rise as departure approaches; midweek and the Lowland route are usually cheaper, and Fridays and Sundays busier. A past offer for winter 2025 to 2026 sold Club rooms from £200 for one or £250 for two.
+  - h: Booking and packing
+    p:
+    - The Caledonian Sleeper sells e-tickets up to 12 months ahead, though passenger assistance can only be booked up to 12 weeks before. GWR lists advance tickets on selected routes up to 14 May 2027 and says cabins are popular, so book early. Amtrak takes reservations up to 11 months ahead, for up to eight passengers per booking, and its Bedroom Suites, two joined bedrooms for four, can only be booked by phone on 1-800-USA-RAIL.
+    - Space is tight. The Caledonian Sleeper allows two bags each that fit under the bed, no bigger than 30 by 70 by 90 cm (about 12 by 28 by 35 inches), plus one item of hand luggage. Amtrak allows two carry-on bags each up to 50 lb (23 kg) and two free checked bags on routes with checked baggage. Pack what you need for the night in one small bag so the rest can stay closed.
+    - Up to two pets can share your room on the Caledonian Sleeper for £30 a journey, though not in the Seated Coach or Club Car. In Scotland, the sleeper lounges are at Inverness and Fort William, with shared lounges in Aberdeen, Edinburgh and Glasgow.
+  faq:
+  - q: How much is the Caledonian Sleeper?
+    a: As last listed by seat61, a seat starts at £54, a Classic room at £135 for one on the Lowland route, and a Club en-suite at £175. Highland routes cost more, and prices rise as the date gets closer.
+  - q: What is the difference between Classic and Club on the Caledonian Sleeper?
+    a: Classic rooms have bunks and a washbasin, with a shared toilet and no shower. Club rooms add an en-suite toilet and shower, breakfast and station lounge access.
+  - q: Is breakfast included on the Night Riviera?
+    a: Yes, for cabin passengers. GWR says breakfast is served to your cabin.
+  - q: What is the difference between an Amtrak roomette and a bedroom?
+    a: A roomette is 3ft 6in by 6ft 6in with two seats that become bunks, and shared showers; only roomettes on Viewliner trains have their own toilet. A bedroom is 6ft 6in by 7ft 6in with a sofa, an armchair and its own toilet and shower.
+  - q: Are meals included in an Amtrak sleeper?
+    a: Yes. Amtrak says private rooms include complimentary meals on board, lounge access at major stations and a dedicated attendant.
+  - q: How far in advance can you book a sleeper train?
+    a: Up to 12 months ahead for the Caledonian Sleeper and 11 months for Amtrak. GWR shows how far ahead you can book on selected routes on its site; it was 14 May 2027 when we checked.
+  sources:
+  - label: Caledonian Sleeper, accommodation
+    url: https://www.sleeper.scot/accommodation/
+    checked: '2026-11-17'
+  - label: Caledonian Sleeper, before your trip
+    url: https://www.sleeper.scot/help-support/before-your-trip/
+    checked: '2026-11-17'
+  - label: Caledonian Sleeper, our route
+    url: https://www.sleeper.scot/our-route/
+    checked: '2026-11-17'
+  - label: Caledonian Sleeper, past Club room offer for winter 2025 to 2026
+    url: https://sleeper.scot/200
+    checked: '2026-11-17'
+  - label: The Man in Seat 61, London to Scotland by Caledonian Sleeper
+    url: https://www.seat61.com/sleeper-to-scotland.htm
+    checked: '2026-11-17'
+  - label: Great Western Railway, Night Riviera Sleeper
+    url: https://www.gwr.com/travelling-with-us/night-riviera-sleeper
+    checked: '2026-11-17'
+  - label: Amtrak, private room accommodations
+    url: https://www.amtrak.com/sleeper-car-accommodations
+    checked: '2026-11-17'
+  - label: Amtrak, roomette or bedroom
+    url: https://www.amtrak.com/difference-between-a-roomette-a-bedroom
+    checked: '2026-11-17'
+  - label: Amtrak, long-distance trains
+    url: https://www.amtrak.com/long-distance-train-experience
+    checked: '2026-11-17'
+  - label: Amtrak, top 10 questions
+    url: https://www.amtrak.com/top-10-questions
+    checked: '2026-11-17'
+  inspire:
+  - kind: read
+    person: Clive Anderson, broadcaster
+    line: Has travelled on the Caledonian Sleeper between London and Scotland, often with children or dogs, and has often boarded at the unstaffed Tyndrum Upper station, in a village West Highland Way walkers know; he called it a friendly B&B on wheels.
+    title: Scottish sleeper
+    outlet: Prospect
+    url: https://prospectmagazine.co.uk/essays/49776/scottish-sleeper
+    checked: '2026-11-17'
+  related:
+  - cross-america-by-train
+  - ride-west-highland-line
+  - interrail-pass-trip
+  - ride-the-settle-carlisle
   kit:
   - name: Eye mask and ear plugs
-    why: for sleeping on a moving train
+    why: for sleeping through the stops and lights on a moving train
     url: https://www.amazon.co.uk/s?k=eye+mask+ear+plugs+travel
+  - name: Small overnight bag
+    why: keeps the night's things together in a cabin with little floor space
+    url: https://www.amazon.co.uk/s?k=small+overnight+bag
+  - name: Travel slippers
+    why: for the walk along the corridor to the toilet or shower at night
+    url: https://www.amazon.co.uk/s?k=travel+slippers
 - id: interrail-pass-trip
   title: Cross Europe on a rail pass
   photo_file: "File:RhB ABe 4-4 III Kreisviadukt Brusio.jpg"
@@ -20153,17 +20299,172 @@
   company: either
   regions:
   - uk
-  places: [yorkshire, north-west]
-  why: This railway crosses the high country between the Yorkshire Dales and Cumbria, carrying ordinary passenger trains over the stone arches of the Ribblehead Viaduct. Its stations, among them Settle and Appleby, are starting points for walks, so the journey can be a day out in itself.
+  places:
+  - yorkshire
+  - north-west
+  why: This 72-mile (116 km) railway was built almost entirely by hand from 1869, came close to closure in the 1980s, and still carries ordinary passenger trains over the 24 arches of the Ribblehead Viaduct. Its stations, among them Settle, Dent and Appleby, are starting points for walks, so the ride can be a day out in itself.
   start:
-  - Read the Settle-Carlisle Railway's official site for the route and its stations.
-  - Check train times and book tickets through the Northern journey planner linked from the site.
-  - Pick a station such as Settle or Appleby to break the journey for a walk or lunch.
+  - Plan a Leeds to Carlisle run, about 2 hours 40 minutes each way, on Northern's timetable; there are around eight trains a day each way and six on Sundays.
+  - Book an Advance ticket for the cheapest fare, or a Northern Explorer day ticket if you want to hop on and off; check whether you qualify for the Dales Railcard.
+  - Pick a station to break the trip, such as Ribblehead for the viaduct walk or Dent for the walk over Blea Moor, and sit on the right going north for the first view of the viaduct.
   links:
-  - label: The Settle-Carlisle Railway official site
-    url: https://settle-carlisle.co.uk/
+  - label: 'Settle-Carlisle Railway: things to see and do'
+    url: https://settle-carlisle.co.uk/things-see-do
     region: uk
-    checked: '2026-10-08'
+    checked: '2026-11-17'
+  - label: 'Settle-Carlisle Railway: history'
+    url: https://settle-carlisle.co.uk/heritage/history/
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Northern: 150 years of the Settle and Carlisle Railway, with links to tickets'
+    url: https://www.northernrailway.co.uk/tickets/settle-carlisle
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Northern: Dales Railcard'
+    url: https://www.northernrailway.co.uk/tickets/dales-railcard
+    region: uk
+    checked: '2026-11-17'
+  - label: Friends of the Settle-Carlisle Line
+    url: https://www.foscl.org.uk/content/foscl
+    region: uk
+    checked: '2026-11-17'
+  seo_title: 'Settle to Carlisle railway: tickets, times and what to see'
+  description: How to ride the Settle to Carlisle railway, with tickets and times, which side to sit, what you pass on the way, and the fight that saved the line.
+  detail:
+  - h: What it's like
+    p:
+    - The line runs 72 miles (116 km) from Settle in the Yorkshire Dales to Carlisle, and most trains start in Leeds. It took about 6,000 men seven years to build, from 1869, and the line's own history page calls it the last main line in England built almost entirely by hand. Many of the workers died, a lot of them from smallpox, and a memorial at Chapel-le-Dale near Ribblehead remembers some of them. Passenger trains began on 1 May 1876.
+    - There are 14 tunnels and more than 20 viaducts. The trains are ordinary Northern diesel units rather than steam, and the Friends of the Settle-Carlisle Line point out that they do not run steam trains themselves. Some services carry a trolley with tea, coffee, sandwiches and snacks.
+  - h: What you see, heading north
+    table:
+      head:
+      - Stop or sight
+      - What to look for
+      rows:
+      - - Settle
+        - The market town where the high scenery begins; Friends volunteers run a shop at the station and look after the restored signal box
+      - - Ribblehead Viaduct
+        - 24 arches, 104 feet (32 m) high and 440 yards (400 m) long, listed Grade II*; seat61 says sit on the right going north for the viaduct
+      - - Blea Moor
+        - The line goes into Blea Moor tunnel; the walk from Dent station back to Ribblehead goes over the top of it
+      - - Dent
+        - Described by seat61 as the highest National Rail station in England, at 1,150 feet (350 m); the line's history page puts it about 4 miles (6.4 km) from the village it serves
+      - - Garsdale
+        - Formerly Hawes Junction; sit on the left going north for the best views between Ribblehead, Dent and Garsdale
+      - - Ais Gill
+        - The summit of the line, 1,169 feet (356 m) above sea level
+      - - Appleby
+        - Market town in the Eden Valley, with a Friends shop at the station
+      - - Armathwaite
+        - Its disused signal box has been restored and is kept by the Friends
+      - - Carlisle
+        - End of the line; trains back to Leeds take about 2 hours 40 minutes
+  - h: Tickets compared, as last listed
+    table:
+      head:
+      - Ticket
+      - Price
+      - Good for
+      rows:
+      - - Advance single, Leeds to Carlisle
+        - From £13.20 each way
+        - The cheapest fare; one named train only, no refunds, price rises with demand
+      - - Off-Peak Day Return, Leeds to Carlisle
+        - £38.90
+        - Out and back in a day; after 9am Monday to Friday, any time at weekends
+      - - Anytime Day Return, Leeds to Carlisle
+        - £46.70
+        - Travel at any time of day
+      - - Northern Explorer
+        - £35
+        - A day's unlimited travel on Northern trains, with no time limits, so you can get off at several stations; no railcard discount
+      - - Dales Railcard
+        - £15 a year
+        - A third off walk-up fares and the Settle-Carlisle Line Day Ranger, if you live along the line or in a listed postcode
+      - - Saturday Yorkshire Dales Explorer train
+        - £26.20 Off-Peak Day Return, Manchester Victoria to Ribblehead
+        - A Saturday-only train from Lancashire and Greater Manchester to Settle, Horton-in-Ribblesdale and Ribblehead; railcards accepted
+    after: Fares were taken from seat61 and Northern on 17 November 2026 and change with demand, so check before you travel. Trains run all year except 25 and 26 December. A £1.50 flash-sale fare offered for the line's 150th anniversary in summer 2026 has ended.
+  - h: Who can get the Dales Railcard
+    p:
+    - It is worth checking, because few visitors know it exists. The card costs £15, lasts 12 months and gives a third off Anytime and Off-Peak day singles and returns, and the Settle-Carlisle Line Day Ranger, on journeys entirely between Leeds or Bradford Forster Square and Carlisle via Settle, plus the Bentham line and, on Sundays, Clitheroe to Hellifield.
+    - You qualify if you live along the line or in postcodes CA1, CA2, CA3, CA4, CA6, CA8, CA9, CA10, CA11, CA16, CA17, DL8, DL11, DL12, LA1, LA2, LA4, LA5, LA6, LA10, BD23, BD24 or BB7. It is not valid on weekday trains before 8.15am. Apply at Appleby, Carlisle, Settle or Skipton ticket offices with proof of address and identity, or online, allowing seven to ten days. The Friends of the Settle-Carlisle Line say members who live outside the area can buy one through them.
+  - h: The line that was nearly closed
+    p:
+    - In 1981 proposals emerged to close the line to passengers, with the cost of repairing Ribblehead Viaduct the main sticking point. The Friends of the Settle-Carlisle Line were formed that year to fight it. Walkers' charter trains had been running as DalesRail since 1975, and local stations reopened in 1986, while passenger numbers rose sharply.
+    - In 1989 the Transport Secretary, Paul Channon, refused consent to close, and the viaduct was repaired. Michael Portillo, then his deputy, has called saving the line his greatest achievement. Today the Friends' volunteers give around 40,000 hours a year, provide on-train guides, lead guided walks from stations and at Ribblehead, and tend station gardens.
+  faq:
+  - q: How long does the Settle to Carlisle train take?
+    a: About 2 hours 40 minutes from Leeds to Carlisle. The stretch from Settle itself is shorter, as Settle is part way along.
+  - q: How many trains a day run on the Settle to Carlisle line?
+    a: Around eight a day each way between Leeds and Carlisle, and six on Sundays, all year except 25 and 26 December.
+  - q: How much is a ticket on the Settle to Carlisle railway?
+    a: As last listed, Advance singles from Leeds to Carlisle start at £13.20, an Off-Peak Day Return is £38.90, and a Northern Explorer day of unlimited Northern travel is £35.
+  - q: Which side of the train is best for the Settle to Carlisle line?
+    a: Sit on the right going north for Ribblehead Viaduct, and on the left going north for the best scenery between Ribblehead, Dent and Garsdale.
+  - q: Is the Settle to Carlisle line a steam train?
+    a: No. Regular services are Northern diesel trains. Steam specials run on some dates, organised separately.
+  - q: Why did the Settle to Carlisle line nearly close?
+    a: Closure proposals emerged in the early 1980s, largely over the cost of repairing Ribblehead Viaduct. After a long public campaign, the Government decided in 1989 that it must stay open.
+  sources:
+  - label: Settle-Carlisle Railway, history
+    url: https://settle-carlisle.co.uk/heritage/history/
+    checked: '2026-11-17'
+  - label: Settle-Carlisle Railway, things to see and do
+    url: https://settle-carlisle.co.uk/things-see-do
+    checked: '2026-11-17'
+  - label: Northern, 150 years of the Settle and Carlisle Railway
+    url: https://www.northernrailway.co.uk/tickets/settle-carlisle
+    checked: '2026-11-17'
+  - label: Northern, £1.50 Settle to Carlisle flash sale for the anniversary year (April 2026)
+    url: https://www.northernrailway.co.uk/news/passengers-can-travel-stunning-settle-carlisle-line-ps150-anniversary-year-northern-launches
+    checked: '2026-11-17'
+  - label: Northern, Dales Railcard
+    url: https://www.northernrailway.co.uk/tickets/dales-railcard
+    checked: '2026-11-17'
+  - label: Northern, Yorkshire Dales Explorer
+    url: https://www.northernrailway.co.uk/tickets/yorkshire-dales-explorer
+    checked: '2026-11-17'
+  - label: The Man in Seat 61, the Settle and Carlisle railway
+    url: https://www.seat61.com/settle-and-carlisle-railway.htm
+    checked: '2026-11-17'
+  - label: Friends of the Settle-Carlisle Line, about FoSCL
+    url: https://www.foscl.org.uk/content/foscl
+    checked: '2026-11-17'
+  - label: Yorkshire Post, Ribblehead Viaduct restoration finishes
+    url: https://www.yorkshirepost.co.uk/heritage-and-retro/heritage/ribblehead-viaduct-given-new-lease-of-life-as-ps21m-restoration-project-finishes-after-months-of-work-3194024
+    checked: '2026-11-17'
+  - label: Yorkshire Post, 30 years since the decision that saved the Settle-Carlisle railway
+    url: https://www.yorkshirepost.co.uk/news/uk-news/30-years-ago-today-decision-that-saved-settle-carlisle-railway-1756880
+    checked: '2026-11-17'
+  inspire:
+  - kind: read
+    person: Ruth Annison
+    line: Chaired the Settle-Carlisle Railway Business Liaison Group during the fight to save the line, and was one of nine people who took a scrapbook of supporting evidence to Downing Street.
+    title: 30 years ago today, decision that saved Settle-Carlisle railway
+    outlet: Yorkshire Post
+    url: https://www.yorkshirepost.co.uk/news/uk-news/30-years-ago-today-decision-that-saved-settle-carlisle-railway-1756880
+    checked: '2026-11-17'
+  related:
+  - ride-west-highland-line
+  - ride-a-heritage-railway
+  - walk-yorkshire-three-peaks
+  - sleeper-train-journey
+  book:
+  - label: Settle to Carlisle railway tours on Viator
+    why: a day trip with transport to and from the line arranged for you
+    url: https://www.viator.com/searchResults/all?text=Settle+Carlisle+railway
+    aff: viator
+  kit:
+  - name: Pocket binoculars
+    why: for picking out the viaducts and the fells from the train window
+    url: https://www.amazon.co.uk/s?k=pocket+binoculars
+  - name: Waterproof walking jacket
+    why: for walks from the stations in changeable Dales weather
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+jacket
+  - name: Flask
+    why: a hot drink on a train where the trolley may not be running
+    url: https://www.amazon.co.uk/s?k=vacuum+flask
 - id: see-the-cherry-blossom-in-dc
   title: See the cherry blossom in Washington, D.C.
   category: travel
@@ -22723,22 +23024,158 @@
   company: others
   regions:
   - world
-  places: [ZAF]
-  why: Platteklip Gorge is the most direct way up Table Mountain, about 3 km of steady climbing from Tafelberg Road to the Upper Cableway Station high above Cape Town. South African National Parks puts it at an hour for the very fit and three hours for the less fit, and Lion's Head nearby is a shorter climb with a little scrambling.
+  places:
+  - ZAF
+  why: Platteklip Gorge is the most direct way up Table Mountain, about 3 km of steady climbing from Tafelberg Road to the Upper Cableway Station high above Cape Town. South African National Parks puts
+    it at an hour for the very fit and three hours for the less fit, and Lion's Head nearby is a shorter climb with a little scrambling.
   start:
   - Read Table Mountain National Park's hiking page and choose between Platteklip Gorge and the gentler routes it lists.
-  - Go in daylight in a group of four or more, and tell someone your route and when you expect to be back, as the park advises.
+  - Go in daylight and start early, ideally in a group of four, and tell someone your route and when you expect to be back, as the park advises.
   - Carry plenty of water, a hat, sunscreen and a warm windproof layer, and leave time to walk down in case the cableway shuts.
   links:
   - label: 'Table Mountain National Park (SANParks): hikes, walks and trails'
     url: https://www.sanparks.org/parks/table-mountain/what-to-do/activities/hikes-walks-trails
     region: world
-    checked: '2026-11-01'
+    checked: '2026-11-17'
+  - label: 'Table Mountain National Park (SANParks): safe hiking'
+    url: https://www.sanparks.org/parks/table-mountain/useful-information/safe-hiking
+    region: world
+    checked: '2026-11-17'
   - label: SANParks safety tips for Table Mountain hikers (May 2025)
     url: https://www.sanparks.org/news/sanparks-urges-hikers-on-table-mountain-national-park-to-follow-safety-tips
     region: world
-    checked: '2026-11-01'
-  safety: Weather on the mountain changes quickly and the cableway can close without warning, so be ready to walk back down the way you came.
+    checked: '2026-11-17'
+  - label: 'Table Mountain Aerial Cableway: ticket prices and status'
+    url: https://www.tablemountain.net/plan-your-visit/ticket-prices
+    region: world
+    checked: '2026-11-17'
+  - label: 'Cape Town Tourism: Table Mountain hiking trails'
+    url: https://www.capetown.travel/five-table-mountain-hikes-to-try/
+    region: world
+    checked: '2026-11-17'
+  safety: Weather on the mountain changes quickly and the cableway can close, so be ready to walk back down. The park advises groups (four is ideal), hiking in daylight, plenty of water and sun protection,
+    waterproofs even in midsummer, telling someone your route and return time, turning back before you run late or bad weather threatens, and saving its emergency number, 086 110 6417, in your phone.
+  seo_title: 'Platteklip Gorge hike: Table Mountain routes compared'
+  description: Hiking Table Mountain by Platteklip Gorge, with the routes up compared, cableway prices for the way down, what to carry and SANParks safety advice.
+  detail:
+  - h: What it's like
+    p:
+    - The Platteklip Gorge path starts on Tafelberg Road and climbs about 3 km to the top near the Upper Cableway Station.
+      South African National Parks (SANParks), which runs Table Mountain National Park, calls it well built, with stone steps and gabions against erosion, but steep, and grades it moderate to tough depending
+      on your fitness and the weather.
+    - It is a steady climb rather than a stroll. SANParks says water is essential, especially in summer, and asks you to carry a hat, sunblock and windproof clothing even on hot days. Dogs
+      are not recommended, and are not allowed on the cableway.
+  - h: Routes up compared
+    table:
+      head:
+      - Route
+      - Start
+      - Distance
+      - Time
+      - Grade
+      rows:
+      - - Platteklip Gorge
+        - Tafelberg Road
+        - About 3 km (1.9 miles) up
+        - 1 hour if very fit, up to 3 hours
+        - Moderate to tough (SANParks)
+      - - India Venster
+        - Lower Cable Car Station
+        - 4.3 km (2.7 miles) one way
+        - 2 to 3 hours one way
+        - 5 out of 5, with rocks, chains and ladders (Cape Town Tourism)
+      - - Skeleton Gorge
+        - Kirstenbosch Botanical Garden
+        - About 4 km (2.5 miles)
+        - 2 to 4 hours one way
+        - Moderate, with wooden ladders and no shade in the second half; avoid it during and after heavy rain (SANParks)
+      - - Lion's Head (a separate peak)
+        - Signal Hill Drive
+        - About 2 km (1.2 miles) one way
+        - 1 to 1.5 hours up
+        - Easy, with minor scrambling and chains (SANParks)
+    after: Cape Town Tourism puts Platteklip at 5.5 km (3.4 miles) and two hours there and back, 3 out of 5, and calls India Venster one of the most challenging
+      and dangerous routes up. SANParks says to avoid Skeleton Gorge during or just after heavy rain. On top, the walk from the Upper Cableway Station to Maclear's Beacon is easy, but
+      the park says not to try it in low cloud or mist.
+  - h: Cableway down or walk down
+    table:
+      head:
+      - Way down
+      - Cost as last listed
+      - Watch for
+      rows:
+      - - Cableway, one way
+        - R300 for an adult online, R330 at the ticket office (rates for 1 July 2026 to 30 June 2027)
+        - Runs weather permitting and may close in bad weather; tickets are valid for 7 days; you may still queue on busy days
+      - - Walk back down Platteklip
+        - Free
+        - A steep path of stone steps; allow enough time and daylight for the descent
+    after: SANParks warns that cableway shutdowns can leave hikers stranded in darkness, so always leave time and energy to walk down. When we checked in mid-November 2026, the cableway's own site showed
+      it closed that day for gale-force winds. Check its website or app for the live status before you set off, and again near the top.
+  - h: What to carry
+    list:
+    - Enough water, especially in summer, and food in case of a delay.
+    - A hat or cap and sunblock.
+    - Waterproof and windproof clothing, even in midsummer.
+    - Walking shoes or hiking boots.
+    - A fully charged phone with the park's emergency numbers saved in it before you start.
+  - h: Emergency numbers as SANParks prints them
+    list:
+    - 'Table Mountain National Park main emergency number: 086 110 6417'
+    - 'South African Police Service: 10111 (021 10111 from a mobile)'
+    - 'Cape Town Emergency Services: +27 (0)21 480 7700'
+    - 'Table Mountain Cable Car Company: +27 (0)21 424 0015'
+  faq:
+  - q: How long does it take to hike up Platteklip Gorge?
+    a: SANParks says about an hour if you are very fit and up to three hours if you are less fit, for about 3 km of climbing from Tafelberg Road.
+  - q: Is Platteklip Gorge hard?
+    a: SANParks grades it moderate to tough, depending on fitness and weather. The path is well built with stone steps, but steep.
+  - q: Can you hike up Table Mountain and take the cable car down?
+    a: Yes, the cableway sells one-way tickets. It runs weather permitting and can close, so SANParks says to allow time to walk back down.
+  - q: How much is a one-way cable car ticket on Table Mountain?
+    a: As last listed for July 2026 to June 2027, R300 for an adult online and R330 at the ticket office. A child aged 4 to 17 pays R165 online.
+  - q: Is it safe to hike Table Mountain?
+    a: SANParks advises hiking in groups, four being ideal, in daylight, telling someone your route and return time, and not openly carrying cash, cameras or other valuables. If confronted, it says not to resist.
+  - q: What is the emergency number on Table Mountain?
+    a: SANParks gives 086 110 6417 as the main emergency number for Table Mountain National Park. The police number is 10111.
+  sources:
+  - label: SANParks, Table Mountain National Park, Hikes, Walks and Trails
+    url: https://www.sanparks.org/parks/table-mountain/what-to-do/activities/hikes-walks-trails
+    checked: '2026-11-17'
+  - label: SANParks, Table Mountain National Park, Safe Hiking
+    url: https://www.sanparks.org/parks/table-mountain/useful-information/safe-hiking
+    checked: '2026-11-17'
+  - label: SANParks, SANParks urges hikers on Table Mountain National Park to follow safety tips (25 May 2025)
+    url: https://www.sanparks.org/news/sanparks-urges-hikers-on-table-mountain-national-park-to-follow-safety-tips
+    checked: '2026-11-17'
+  - label: Table Mountain Aerial Cableway, Ticket prices
+    url: https://www.tablemountain.net/plan-your-visit/ticket-prices
+    checked: '2026-11-17'
+  - label: Cape Town Tourism, Try these six spectacular Table Mountain hiking trails
+    url: https://www.capetown.travel/five-table-mountain-hikes-to-try/
+    checked: '2026-11-17'
+  - label: ESPN, One climb at a time, hiking Table Mountain every day for a year
+    url: https://www.espn.com/espn/story/_/id/25397978/one-climb-table-mountain-every-day-year
+    checked: '2026-11-17'
+  inspire:
+  - kind: read
+    person: Andrew Patterson
+    line: Set out to climb Table Mountain by Platteklip every day of 2018 after being made redundant, and by late November had done 334 climbs without missing a day, raising more than R350,000 for three
+      charities.
+    title: 'One climb at a time: Hiking Table Mountain every day for a year'
+    outlet: ESPN
+    url: https://www.espn.com/espn/story/_/id/25397978/one-climb-table-mountain-every-day-year
+    checked: '2026-11-17'
+  related:
+  - climb-yr-wyddfa
+  - hike-to-preikestolen
+  - climb-kilimanjaro
+  - hike-angels-landing
+  book:
+  - label: Guided Table Mountain hikes on Viator
+    why: a local guide who knows the routes and the day's weather
+    url: https://www.viator.com/searchResults/all?text=Table+Mountain+guided+hike
+    aff: viator
   kit:
   - name: Insulated water bottle
     why: keeps water cool on hot days and stops it freezing on cold ones
@@ -22761,8 +23198,10 @@
   season: Summer, when the trail is usually open from late June to mid September
   regions:
   - world
-  places: [ISL]
-  why: The Laugavegur crosses Iceland's southern highlands for about 55 km (34 miles), from the hot springs of Landmannalaugar to the birch woods of Þórsmörk, past rhyolite mountains, obsidian fields and black sand deserts. Most people walk it in four days, sleeping in mountain huts or camping beside them.
+  places:
+  - ISL
+  why: The Laugavegur crosses Iceland's southern highlands for about 55 km (34 miles), from the hot springs of Landmannalaugar to the birch woods of Þórsmörk, past rhyolite mountains, obsidian fields and
+    black sand deserts. Most people walk it in four days, sleeping in mountain huts or camping beside them.
   start:
   - Read Ferðafélag Íslands' trail page and plan the four stages between huts.
   - Book huts or campsites well ahead, as they sell out and walkers are expected to have confirmed bookings before setting off.
@@ -22771,8 +23210,172 @@
   - label: 'Ferðafélag Íslands (Touring Club of Iceland): the Laugavegur trail'
     url: https://www.fi.is/en/hiking-trails/trails/view/laugavegur
     region: world
-    checked: '2026-11-02'
-  safety: Fog is common, phone signal is unreliable and snow bridges can be unstable, so follow the trail markers closely, talk to the wardens at each hut and call 112 in an emergency.
+    checked: '2026-11-17'
+  - label: 'Ferðafélag Íslands: hut to hut availability'
+    url: https://www.fi.is/en/mountain-huts/hut-availability/hut-to-hut-availability
+    region: world
+    checked: '2026-11-17'
+  - label: 'Safetravel (ICE-SAR): hiking and trekking in Iceland'
+    url: https://safetravel.is/outdoors/hiking-trekking/
+    region: world
+    checked: '2026-11-17'
+  - label: 'Safetravel: leave a travel plan'
+    url: https://safetravel.is/travelplan2/
+    region: world
+    checked: '2026-11-17'
+  - label: 'Icelandia: Highland Bus timetables'
+    url: https://www.icelandia.com/things-to-do/transfers/highland-bus
+    region: world
+    checked: '2026-11-17'
+  safety: Fog, rain, snow and strong wind are common even in summer, visibility can drop to almost nothing and phone signal is unreliable. Follow the trail markers closely, ask the hut wardens about the
+    weather and the rivers before each stage, leave a travel plan with Safetravel and call 112 in an emergency.
+  seo_title: 'Laugavegur trail: stages, huts, booking and river crossings'
+  description: How to hike the Laugavegur trail in Iceland, with the four stages, the huts and how FÍ books them, the rivers you wade and the summer highland buses.
+  detail:
+  - h: What it's like
+    p:
+    - The Laugavegur runs about 55 km (34 miles) from Landmannalaugar to Þórsmörk through the Fjallabak Nature Reserve. Ferðafélag Íslands (FÍ), the Touring Club of Iceland, which runs most of the huts,
+      plans it as four days, with a staffed hut at the end of each stage and camping allowed beside every hut in marked areas.
+    - The first day is the big climb, up to Hrafntinnusker at 1,100 metres (3,610 feet), where early-season snow can lie on the trail. After that the route mostly loses height, crossing lakes, black sand
+      and rivers before it drops into the birch woods of Þórsmörk. FÍ warns that fog, rain, snow and strong wind are common, and that wind above 10 to 12 metres a second makes walking hard.
+  - h: The four stages
+    table:
+      head:
+      - Stage
+      - Distance
+      - Climb or descent
+      - Time
+      - Night at
+      rows:
+      - - Landmannalaugar to Hrafntinnusker
+        - 12 km (7.5 miles)
+        - 470 m (1,540 ft) up
+        - 4 to 5 hours
+        - Hrafntinnusker (Höskuldsskáli)
+      - - Hrafntinnusker to Álftavatn
+        - 12 km (7.5 miles)
+        - 490 m (1,610 ft) down
+        - 4 to 5 hours
+        - Álftavatn
+      - - Álftavatn to Emstrur
+        - 16 km (10 miles)
+        - 40 m (130 ft) down
+        - 6 to 7 hours
+        - Emstrur (Botnar)
+      - - Emstrur to Þórsmörk
+        - 15 km (9.3 miles)
+        - 300 m (980 ft) down
+        - 6 to 7 hours
+        - Þórsmörk (Langidalur)
+    after: These are FÍ's figures. Its page also gives the third stage as 17 km in places. Some walkers stop at Hvanngil instead of Álftavatn (16 km from Hrafntinnusker, then 13 km to Emstrur), and some
+      walkers do it in three days by going straight from Landmannalaugar to Álftavatn (24 km). From Þórsmörk you can carry on over the Fimmvörðuháls pass to Skógar, 27 km more in two stages.
+  - h: The huts
+    table:
+      head:
+      - Hut
+      - Height
+      - Beds
+      - Worth knowing
+      rows:
+      - - Landmannalaugar
+        - 550 m (1,800 ft)
+        - '78'
+        - Showers in the toilet house, and a hot-spring brook for bathing nearby
+      - - Hrafntinnusker
+        - 1,100 m (3,610 ft)
+        - '52'
+        - Reached only on foot; no showers; carry your rubbish on to the next hut; tents may go on snow, sand or gravel
+      - - Álftavatn
+        - 550 m (1,800 ft)
+        - '72'
+        - Two huts; showers for a fee; mobile connection listed
+      - - Emstrur (Botnar)
+        - 465 m (1,530 ft)
+        - '60'
+        - Three huts of 20 bunks; showers for a fee; cannot be booked on its own, only as part of a package
+      - - Þórsmörk (Langidalur)
+        - Not listed
+        - '73'
+        - End of the trail; the summer buses to Reykjavík stop here
+    after: Every hut has a gas-stove kitchen, utensils and cold running water, and a warden in summer. The hut pages list a price of 17,000 kr for the hut without saying what it covers,
+      so check what you are paying for when you book.
+  - h: How booking works
+    p:
+    - FÍ expects every walker to have a confirmed hut or campsite booking before setting out, and says huts often sell out. When we checked in November 2026, its hut-to-hut page offered only two fixed
+      five-night bundles, Landmannalaugar, Hrafntinnusker, Álftavatn or Hvanngil, Emstrur and Þórsmörk, booked by sending a request through an online form. It does not take bookings by email, said the
+      June, July and August bundles were full, and announces new dates only through its mailing list. The trail page carries the link for 2027 bookings.
+    - If you drive to Landmannalaugar rather than take the bus, FÍ says that in summer (20 June to 13 September on its page) anyone arriving between 9am and 4pm had to reserve a parking space and pay a service fee in advance, and you need
+      a 4x4 that your rental company allows on F-roads.
+  - h: Rivers and getting there
+    p:
+    - FÍ says at least three rivers must be waded. Kaldaklofskvísl, Fremri-Emstruá and Ljósá have footbridges, but Bláfjallakvísl can be hard after rain, Þröngá rises quickly over a rocky bed, and Grashagakvísl
+      is usually waded. Safetravel, run by the Icelandic Association for Search and Rescue, says rivers are often lower in the morning, that wading shoes or sandals are safer than bare feet, that you should
+      loosen your pack straps and cross in twos or threes with arms linked at the elbows, and that you should ask wardens whether a river is passable.
+    - Without a car, Icelandia's Highland Bus runs from Reykjavík (BSÍ) to Landmannalaugar in about five hours, and back from Þórsmörk, which also stops at Langidalur. Its 2027 timetables run from 18 June
+      to 12 September for Landmannalaugar and from 11 June to 15 September for Þórsmörk, with fares as last listed from $88 and $83 a person, cheaper as a return.
+  faq:
+  - q: How long is the Laugavegur trail?
+    a: About 55 km (34 miles) from Landmannalaugar to Þórsmörk, by Ferðafélag Íslands' description. Its page header gives 54 km.
+  - q: How many days does it take to hike the Laugavegur?
+    a: Most walkers take four days, staying at Hrafntinnusker, Álftavatn and Emstrur before Þórsmörk. FÍ also describes three-day and two-day versions.
+  - q: How do you book huts on the Laugavegur trail?
+    a: Through Ferðafélag Íslands' website. When we checked, it sold the huts as fixed five-night bundles through a request form, not by email, and Emstrur could not be booked on its own. New dates are announced
+      on its mailing list.
+  - q: When is the Laugavegur trail open?
+    a: FÍ says generally from 25 June to 15 September, depending on snow, weather and when the highland roads open. FÍ's Hrafntinnusker page says that hut is closed and locked in winter.
+  - q: Do you have to cross rivers on the Laugavegur?
+    a: Yes. FÍ says at least three rivers must be waded, including Bláfjallakvísl and Þröngá. Carry shoes or sandals for wading and ask the hut wardens about conditions.
+  - q: How do you get to Landmannalaugar without a car?
+    a: Highland buses run from Reykjavík in summer. Icelandia's 2027 timetable has a 7am departure from BSÍ that reaches Landmannalaugar at 11.30am.
+  sources:
+  - label: Ferðafélag Íslands, Trails, Laugavegur
+    url: https://www.fi.is/en/hiking-trails/trails/view/laugavegur
+    checked: '2026-11-17'
+  - label: Ferðafélag Íslands, Hut to hut availability
+    url: https://www.fi.is/en/mountain-huts/hut-availability/hut-to-hut-availability
+    checked: '2026-11-17'
+  - label: Ferðafélag Íslands, Hut, Landmannalaugar
+    url: https://www.fi.is/en/moya/adverts/531
+    checked: '2026-11-17'
+  - label: Ferðafélag Íslands, Hut, Hrafntinnusker
+    url: https://www.fi.is/en/mountain-huts/all-mountain-huts/hrafntinnusker
+    checked: '2026-11-17'
+  - label: Ferðafélag Íslands, Hut, Álftavatn
+    url: https://www.fi.is/en/mountain-huts/all-mountain-huts/alftavatn
+    checked: '2026-11-17'
+  - label: Ferðafélag Íslands, Hut, Emstrur
+    url: https://www.fi.is/en/mountain-huts/all-mountain-huts/emstrur
+    checked: '2026-11-17'
+  - label: Safetravel (Icelandic Association for Search and Rescue), Hiking / Trekking
+    url: https://safetravel.is/outdoors/hiking-trekking/
+    checked: '2026-11-17'
+  - label: Safetravel, A travel plan is the first step to a safe journey
+    url: https://safetravel.is/travelplan2/
+    checked: '2026-11-17'
+  - label: Icelandia, Highland Bus
+    url: https://www.icelandia.com/things-to-do/transfers/highland-bus
+    checked: '2026-11-17'
+  - label: Press and Journal, blind trekkers on the Laugavegur
+    url: https://www.pressandjournal.co.uk/fp/news/aberdeen/997367/volcanic-cash-blind-trekkers-show-theyre-losing-their-sight-but-not-their-bottle/
+    checked: '2026-11-17'
+  inspire:
+  - kind: read
+    person: Joe Churcher, from Newtonhill
+    line: Walked the 34-mile Laugavegur over five days with a group of 15 blind, partially sighted and sighted walkers, raising sponsorship for RP Fighting Blindness; he has retinitis pigmentosa himself.
+    title: 'Volcanic cash: blind trekkers show they''re losing their sight but not their bottle'
+    outlet: Press and Journal
+    url: https://www.pressandjournal.co.uk/fp/news/aberdeen/997367/volcanic-cash-blind-trekkers-show-theyre-losing-their-sight-but-not-their-bottle/
+    checked: '2026-11-17'
+  related:
+  - walk-tongariro-alpine-crossing
+  - hike-torres-del-paine-w
+  - walk-west-highland-way
+  - see-the-northern-lights
+  book:
+  - label: Guided Laugavegur treks on Viator
+    why: a guided group trek with the hut nights and transfers arranged
+    url: https://www.viator.com/searchResults/all?text=Laugavegur+trek
+    aff: viator
   kit:
   - name: Waterproof walking jacket
     why: hill weather turns fast, and a proper hood matters
@@ -22784,7 +23387,7 @@
     why: they take some of the load off your knees on long descents
     url: https://www.amazon.co.uk/s?k=trekking+poles
   - name: Water shoes
-    why: for slippery launch spots and rocky entries
+    why: for wading the unbridged rivers, as FÍ suggests river-crossing shoes or sandals
     url: https://www.amazon.co.uk/s?k=water+shoes+adult
 - id: climb-to-the-monastery-at-petra
   title: Climb to the Monastery at Petra
@@ -50653,3 +51256,1124 @@
   - play-volleyball
   - walking-netball
   - play-ultimate-frisbee
+- id: join-a-gospel-choir
+  title: Sing in a gospel choir
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Gospel favourites such as Oh Happy Day are built for a crowd, with call and response and big harmonies, and many community gospel choirs teach every part by ear. Most ask for no audition and say they welcome people of any faith or none.
+  start:
+  - Search for a community gospel choir near you, or ask a local community centre, church or college; many hold weekly evening rehearsals.
+  - Book a free taster session if one is offered; several choirs let you try one or two before you pay.
+  - Ask how songs are taught and what membership costs, and whether performing is expected or optional.
+  links:
+  - label: 'Sing Gospel: join the choir (Acton, west London)'
+    url: https://www.singgospel.co.uk/join-us
+    region: uk
+    checked: '2026-11-17'
+  - label: 'GT Community Choir (Gospel Touch): Maidstone and Southborough, Kent'
+    url: https://community.gtchoir.com/
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Falmouth Community Gospel Choir: FAQs'
+    url: https://www.falmouthcommunitygospelchoir.com/faq
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Free Spirit Gospel Choir, Sonoma Community Center (California)'
+    url: https://sonomacommunitycenter.org/programs/free-spirit-gospel-choir/2029-09-26/
+    region: us
+    checked: '2026-11-17'
+  - label: 'Westside Folk and Gospel Choir, Santa Cruz (Cabrillo College)'
+    url: https://westsidechoir.org/
+    region: us
+    checked: '2026-11-17'
+  seo_title: 'Join a gospel choir near me: what to expect'
+  description: How community gospel choirs work, whether you need to audition, read music or be religious, and what joining costs in the UK and the US.
+  detail:
+  - h: How a gospel choir rehearsal works
+    p:
+    - Many community gospel choirs teach by ear. Sing Gospel in west London says it learns everything by ear, with no sheet music or lyric sheets, and places singers in soprano, alto or tenor sections by range. GT Community Choir in Kent teaches parts by ear and with backing tracks, and Falmouth Community Gospel Choir gives members recordings to practise with.
+    - Rehearsals usually start with a warm-up and then learning songs. Falmouth's repertoire includes Oh Happy Day, Lean on Me and Amazing Grace.
+    - You do not need to share the faith. GT Community Choir says everyone of all backgrounds and faiths is welcome, and Falmouth says the choir is open to everyone regardless of religious beliefs. Performing is optional at both.
+    - Gospel singing leans on call and response and rich harmonies, as the Old Town School of Folk Music in Chicago describes its Gospel Harmony class. Some choirs mix gospel with other styles; Santa Cruz's Westside choir puts an emphasis on folk songs and gospel, and its director teaches music reading as part of the course.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Choir
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Sing Gospel, Acton, west London
+        - 'Evening rehearsals, 7.30pm to 9pm, 10 per term; no audition; first session free'
+        - £33 a month, or £15 a session as a guest
+      - - GT Community Choir, Maidstone and Southborough, Kent
+        - 'Weekly, 7pm to 9pm; no audition; two free tasters'
+        - Monthly membership; amount not listed
+      - - Free Spirit Gospel Choir, Sonoma, California
+        - 'Wednesdays, 7pm to 9pm; no audition, no experience needed'
+        - $10 at the door
+      - - Westside Folk and Gospel Choir, Santa Cruz, California
+        - 'Mondays at 6.30pm, autumn and spring semesters, through Cabrillo College; no audition'
+        - Materials fee (non-credit) or tuition plus materials (credit); amounts not listed
+    after: One-off workshops are another way in. The London Community Gospel Choir led a pay-what-you-can Come and Sing morning at Saffron Hall, Essex, in December 2023 (now past), for all abilities, covering blending, projection and some gospel history.
+  faq:
+  - q: Do you have to be religious to sing in a gospel choir?
+    a: Not in the community choirs we checked. GT Community Choir welcomes all backgrounds and faiths, and Falmouth Community Gospel Choir is open to everyone regardless of religious beliefs.
+  - q: Do I need to read music to join a gospel choir?
+    a: Often not. Sing Gospel learns everything by ear, and GT Community Choir teaches parts by ear and with backing tracks.
+  - q: Do gospel choirs audition?
+    a: Community ones usually do not. Sing Gospel, GT Community Choir, Falmouth, Free Spirit in Sonoma and Westside in Santa Cruz all say there is no audition.
+  - q: How much does it cost to join a gospel choir?
+    a: As last listed, Sing Gospel charges £33 a month after a free first session, and Free Spirit Gospel Choir in Sonoma charges $10 at the door.
+  sources:
+  - label: Sing Gospel, Join us
+    url: https://www.singgospel.co.uk/join-us
+    checked: '2026-11-17'
+  - label: GT Community Choir, Join Gospel Touch Community Choir
+    url: https://community.gtchoir.com/
+    checked: '2026-11-17'
+  - label: Falmouth Community Gospel Choir, FAQs
+    url: https://www.falmouthcommunitygospelchoir.com/faq
+    checked: '2026-11-17'
+  - label: Sonoma Community Center, Free Spirit Gospel Choir
+    url: https://sonomacommunitycenter.org/programs/free-spirit-gospel-choir/2029-09-26/
+    checked: '2026-11-17'
+  - label: Westside Folk and Gospel Choir
+    url: https://westsidechoir.org/
+    checked: '2026-11-17'
+  - label: Old Town School of Folk Music, Gospel Harmony
+    url: https://www.oldtownschool.org/classes/detail/?courseid=4538
+    checked: '2026-11-17'
+  - label: Saffron Hall, London Community Gospel Choir Come and Sing
+    url: https://www.saffronhall.com/whats-on/view/saffron-hall-10th-birthday-london-community-gospel-choir-singing-morning
+    checked: '2026-11-17'
+  kit:
+  - name: Gospel songbook
+    why: words and tunes of standards such as Oh Happy Day to sing along to at home
+    url: https://www.amazon.co.uk/s?k=gospel+songbook
+  - name: Reusable water bottle
+    why: for keeping your voice going through a two-hour rehearsal
+    url: https://www.amazon.co.uk/s?k=reusable+water+bottle
+  related:
+  - join-rock-choir
+  - take-singing-lessons
+  - sing-messiah-from-scratch
+  - sing-barbershop-chorus
+- id: learn-beaded-jewellery
+  title: Make beaded jewellery
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: With a few techniques, stringing, crimping, knotting between beads and simple wire wrapping, you can make necklaces, bracelets and earrings you will actually wear. Beginners' classes are short, need no experience, and supply most of the tools and materials.
+  start:
+  - 'Pick the kind of beading you want to start with: stringing and wirework for necklaces, bracelets and earrings, or bead weaving, where tiny seed beads are stitched together with needle and thread.'
+  - 'Book a beginners'' course at an adult education college or community college: City Lit in London runs a four-week Introduction to beaded jewellery; Kennesaw State University in Georgia lists a three-week Jewelry Making for Beginners in its 50+ OLLI programme, so check who can enrol.'
+  - Check whether materials are in the fee or paid to the tutor on the day, and whether you should bring your own beads and pliers.
+  links:
+  - label: 'City Lit, London: Introduction to beaded jewellery'
+    url: https://www.citylit.ac.uk/courses/introduction-to-beaded-jewellery
+    region: uk
+    checked: '2026-11-17'
+  - label: 'West Dean College, West Sussex: Bead threading for jewellery'
+    url: https://www.westdean.ac.uk/short-courses/d1d40346-bead-threading-for-jewellery
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Kennesaw State University, Georgia: Jewelry Making for Beginners'
+    url: https://cpe.kennesaw.edu/courses/50/jewelry-making-for-beginners/
+    region: us
+    checked: '2026-11-17'
+  - label: 'Portland Bead Society, Oregon: member-taught classes'
+    url: https://portland-bead.squarespace.com/pbs-classes
+    region: us
+    checked: '2026-11-17'
+  seo_title: 'Beaded jewellery classes for beginners: UK and US'
+  description: What a beginners' beaded jewellery class teaches, from stringing and crimping to wire wrapping and peyote stitch, with real courses and their costs.
+  detail:
+  - h: What you learn
+    p:
+    - City Lit's Introduction to beaded jewellery covers knotting, stringing, wire wrapping and wire twisting, finishing with clasps, and textile methods such as macramé. It runs on four Saturdays, it is open to all levels, and most materials and equipment are supplied, though you may want to bring your own beads and pliers.
+    - Kennesaw State University's beginners' class teaches reading instructions, stringing and crimping, and says those with no experience will make three to six projects, among them earrings, necklaces and bracelets. UC Davis Craft Center's beginners' class adds solderless clasps, earring wires, memory wire and simple wire-wrapped pieces.
+    - Pearl knotting is a skill of its own. West Dean College's one-day Bead threading for jewellery teaches stringing beads and pearls, knotting between pearls and attaching catches neatly, with steel cable and crimps for heavier beads.
+    - Bead weaving is the next step for many. Bead societies such as the Portland Bead Society run member-taught classes in peyote, brick and herringbone stitch, netting and bead embroidery, with some marked for beginners.
+  - h: Courses and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Four Saturdays, 10.30am to 4.30pm, all levels (May 2027)
+        - £349, or £279 senior and £227 concession
+      - - West Dean College, West Sussex
+        - One day, 11am to 5.15pm; bring your own beads and catches, threads and needles supplied
+        - Not stated on the course page
+      - - Kennesaw State University, Georgia
+        - Three Monday sessions, six hours in total (August 2026, now past)
+        - $49, plus a $35 supply fee paid to the instructor
+      - - UC Davis Craft Center, California
+        - Three classes in beginning beading and wire techniques
+        - Price on the booking site, plus a $15 to $20 materials fee
+      - - Portland Bead Society, Oregon
+        - One-off member-taught bead weaving classes, in person or on Zoom (mostly 2019 to 2022, now past)
+        - $25 to $80 a class, or $240 for a six-session series; one listed at $40 for members and $60 for non-members
+    after: Morley College in London also runs a progressive evening course in stringing, knotting, multistrand beading and macramé for beginners, with basic materials provided each session.
+  faq:
+  - q: What do you learn in a beading class?
+    a: Beginners' classes usually cover stringing, crimping, knotting, finishing with clasps and simple wire wrapping, and you make earrings, necklaces and bracelets.
+  - q: Do I need my own tools for a jewellery making class?
+    a: Usually not at first. City Lit supplies most materials and equipment, though it suggests bringing your own beads and pliers; Kennesaw State collects a supply fee instead.
+  - q: What is bead weaving?
+    a: Stitching small beads together with needle and thread in patterns such as peyote, brick and herringbone stitch. The Portland Bead Society, for example, marks some of its classes as suitable for beginners.
+  - q: How much does a beading class cost?
+    a: As last listed, City Lit's four-day course is £349 at full fee, and Kennesaw State's three-session class is $49 plus a $35 supply fee.
+  sources:
+  - label: City Lit, Introduction to beaded jewellery
+    url: https://www.citylit.ac.uk/courses/introduction-to-beaded-jewellery
+    checked: '2026-11-17'
+  - label: West Dean College, Bead threading for jewellery with Annie Ruthven-Taggart
+    url: https://www.westdean.ac.uk/short-courses/d1d40346-bead-threading-for-jewellery
+    checked: '2026-11-17'
+  - label: Morley College, beaded jewellery evening course
+    url: https://morleycollege.ac.uk/courses/?p=88588
+    checked: '2026-11-17'
+  - label: Kennesaw State University, Jewelry Making for Beginners
+    url: https://cpe.kennesaw.edu/courses/50/jewelry-making-for-beginners/
+    checked: '2026-11-17'
+  - label: UC Davis Craft Center, Jewelry and beading techniques
+    url: https://campusrecreation.ucdavis.edu/recreation/craft-center/classes/jewelry-and-beading-techniques
+    checked: '2026-11-17'
+  - label: Portland Bead Society, PBS member-taught classes
+    url: https://portland-bead.squarespace.com/pbs-classes
+    checked: '2026-11-17'
+  kit:
+  - name: Jewellery pliers set
+    why: round-nose, chain-nose and cutters for wire loops and crimps
+    url: https://www.amazon.co.uk/s?k=jewellery+making+pliers+set
+  - name: Beading wire and crimp beads
+    why: coated wire and crimps for strung necklaces and bracelets
+    url: https://www.amazon.co.uk/s?k=beading+wire+crimp+beads
+  - name: Seed beads and beading needles
+    why: for trying peyote and other bead-weaving stitches
+    url: https://www.amazon.co.uk/s?k=seed+beads+beading+needles
+  related:
+  - learn-lampwork-glass-beads
+  - make-silver-jewellery
+  - learn-macrame
+  - learn-enamelling
+- id: learn-papercutting
+  title: Learn the art of papercutting
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Papercutting turns a single sheet of paper into a picture by cutting away everything that is not the design, with a scalpel or small scissors. Classes draw on folk traditions from Germany, the Netherlands and Korea to Chinese and Polish cutouts, and a beginners' workshop of two to six hours supplies the tools and a pattern to cut.
+  start:
+  - 'Look for a beginners'' workshop: craft studios, colleges and folk art teachers run half-day and one-day sessions, often listed on booking sites.'
+  - Check what tools are used and supplied; some workshops teach with a scalpel, others with small scissors, and most provide the papers and templates.
+  - Start with a simple printed pattern; the Guild of American Papercutters notes that many papercutters began that way.
+  links:
+  - label: 'CraftCourses: paper cutting workshops across the UK'
+    url: https://www.craftcourses.com/courses/learn-to-paper-cut-live
+    region: uk
+    checked: '2026-11-17'
+  - label: 'West Dean College: Folk paper cutting (West Sussex)'
+    url: https://www.westdean.ac.uk/short-courses/s1d36045-folk-paper-cutting
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Dawn Thornhill: papercutting workshops (Surrey)'
+    url: https://dawnthornhill.co.uk/workshops/
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Guild of American Papercutters: about the guild'
+    url: https://papercutters.org/about-us/
+    region: us
+    checked: '2026-11-17'
+  - label: 'Hults Folk Art: paper cutting class (Lititz, Pennsylvania)'
+    url: https://www.hultsfolkart.com/product/paper-cutting-class-saturday-april-11-2026/GW4V5BFFB5ITL7QLUPHKZ7UK
+    region: us
+    checked: '2026-11-17'
+  seo_title: 'Papercutting workshops for beginners: UK and US'
+  description: What a beginners' papercutting workshop teaches, scalpel or scissors, what is supplied and what classes cost in the UK and US, with where to find one.
+  detail:
+  - h: What a first workshop is like
+    p:
+    - Most beginners' sessions give you a design to cut and the tools to cut it. Dawn Thornhill's three-and-a-half-hour workshop in Surrey teaches you to use a scalpel and to make a papercut lightbox lit with LEDs, with all tools and templates supplied; no experience is necessary.
+    - Folk papercutting is often done with scissors. West Dean College's one-day Folk paper cutting course, taught by Tracey Bush, who trained as an illustrator, uses small scissors and paper knives, covers their safe use, and introduces traditions from Korea, Germany, the Netherlands and America. You bring a sketchbook, pencils and your own small scissors if you have them.
+    - In the US, the Guild of American Papercutters, founded in 1988, is open to beginners and professionals with no jury requirement, and its National Museum in Somerset, Pennsylvania, is described as the first American museum devoted to papercutting as an art form.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Portsmouth (via CraftCourses)
+        - Beginners paper cutting workshop, 3 hours
+        - £38
+      - - Norwich (via CraftCourses)
+        - Introduction to paper cutting, beginners or experienced, 3 hours
+        - £42
+      - - Hampton Wick, Kingston upon Thames (via CraftCourses)
+        - Make a papercut lightbox, 3½ hours
+        - £69
+      - - Hults Folk Art, Lititz, Pennsylvania
+        - Scherenschnitte with watercolour, about six hours, four to eight people (April 2026 class, now past); supplies and a frame included
+        - $150
+      - - Springfield Museums, Massachusetts
+        - Online adult class in Chinese and Polish cutouts (April 2021, now past); bring your own paper, scissors and craft knife
+        - $18, $15 members
+    after: The CraftCourses dates listed run from November 2026 to April 2027. West Dean's page gave no date or price for its folk course when checked.
+  faq:
+  - q: What do you need to start paper cutting?
+    a: A craft knife or scalpel, or small sharp scissors, and lightweight paper. Springfield Museums' class asked for copy or construction paper, embroidery scissors and an X-Acto knife.
+  - q: Is paper cutting done with scissors or a knife?
+    a: Both. Dawn Thornhill teaches with a scalpel; West Dean's folk course uses small scissors and paper knives.
+  - q: What is scherenschnitte?
+    a: A traditional style of papercutting. Hults Folk Art in Pennsylvania teaches it as a one-day class, finished with watercolour and framed.
+  - q: How much is a paper cutting workshop?
+    a: As last listed, UK workshops on CraftCourses cost £38 to £49 for three hours, or £69 for a three-and-a-half-hour class. Hults Folk Art's day class in Pennsylvania was $150.
+  sources:
+  - label: Guild of American Papercutters, About us
+    url: https://papercutters.org/about-us/
+    checked: '2026-11-17'
+  - label: Guild of American Papercutters, Books and starter kits
+    url: https://papercutters.org/books-starter-kits/
+    checked: '2026-11-17'
+  - label: West Dean College, Folk paper cutting
+    url: https://www.westdean.ac.uk/short-courses/s1d36045-folk-paper-cutting
+    checked: '2026-11-17'
+  - label: Dawn Thornhill, Workshops
+    url: https://dawnthornhill.co.uk/workshops/
+    checked: '2026-11-17'
+  - label: CraftCourses, Paper cutting courses
+    url: https://www.craftcourses.com/courses/learn-to-paper-cut-live
+    checked: '2026-11-17'
+  - label: Hults Folk Art, Paper cutting class, 11 April 2026
+    url: https://www.hultsfolkart.com/product/paper-cutting-class-saturday-april-11-2026/GW4V5BFFB5ITL7QLUPHKZ7UK
+    checked: '2026-11-17'
+  - label: Springfield Museums, Hands on paper cut outs workshop
+    url: https://springfieldmuseums.org/program/hands-paper-cut-outs-workshop-mexican-asian-european-cultures/
+    checked: '2026-11-17'
+  safety: Scalpel and craft knife blades are very sharp; West Dean's course covers the safe use of the tools, and Dawn Thornhill's scalpel workshops are for over-18s only.
+  kit:
+  - name: Craft knife with spare blades
+    why: for cutting fine detail from a sheet of paper
+    url: https://www.amazon.co.uk/s?k=craft+knife+scalpel+spare+blades
+  - name: Self-healing cutting mat
+    why: protects the table and the blade while you cut
+    url: https://www.amazon.co.uk/s?k=self+healing+cutting+mat+a4
+  - name: Papercutting patterns book
+    why: printed designs to cut while you learn
+    url: https://www.amazon.co.uk/s?k=papercutting+book+patterns
+  related:
+  - learn-paper-quilling
+  - learn-origami
+  - make-a-linocut-print
+  - try-paper-marbling
+- id: learn-pen-and-ink-drawing
+  title: Learn pen and ink drawing
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: In pen and ink drawing, light and shade are built from nothing but marks, such as hatching, cross-hatching and stippling, which makes it a different discipline from shading in pencil. Short courses of three to six sessions teach the techniques with technical pens, dip pens and brushes.
+  start:
+  - 'Look for a short pen and ink or ink and wash course: an adult education college, a university short-course programme, a community college or a local art centre.'
+  - Read the course page for what is included; some fees cover paper and inks, others give you a supplies list to buy before the first class.
+  - If the list asks for them, buy a small set of fineliner technical pens in a few widths and a pad of smooth paper such as Bristol board.
+  links:
+  - label: 'City Lit: Drawing, ink and wash techniques (London)'
+    url: https://www.citylit.ac.uk/courses/drawing-ink-and-wash-techniques
+    region: uk
+    checked: '2026-11-17'
+  - label: 'University of Edinburgh Short Courses: Introduction to drawing with ink and wash'
+    url: https://shortcourses.ed.ac.uk/course/introduction-to-drawing-with-ink-and-wash
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Seattle Central College Continuing Education: Pen and ink art'
+    url: https://ce.seattlecentral.edu/category/art-history/pen-and-ink-art
+    region: us
+    checked: '2026-11-17'
+  - label: 'Wake Tech Community College: Pen and ink drawing class (North Carolina)'
+    url: https://www.waketech.edu/course/csp-4000jw2
+    region: us
+    checked: '2026-11-17'
+  seo_title: 'Pen and ink drawing classes: techniques and costs'
+  description: What a pen and ink drawing course teaches, the pens and paper you need, and what short courses cost in the UK and US, with ways to find a class.
+  detail:
+  - h: What you learn
+    p:
+    - Beginners' classes start with control of the ink and the marks that make tone. Wake Tech Community College's 16-hour class covers line art, shading, stipple and crosshatch with pencil and technical drawing pens. Vita Art Center in California starts with hatching, cross-hatching, pointillism and line work, then moves on to drawing from life and from photos.
+    - Many courses add washes of diluted ink laid with a brush. City Lit's ink and wash course works from direct observation and covers pens, brushes, non-standard drawing tools, wet-into-wet washes and stretching paper. The University of Edinburgh course uses dip pens, sticks and brushes.
+    - Most courses are open to beginners. Seattle Central College says no experience is needed; City Lit says some drawing experience is helpful.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Ink and wash: three or four afternoon or evening sessions of three hours; basic materials included'
+        - £179 to £229, with senior and concession rates
+      - - University of Edinburgh Short Courses
+        - 'Introduction to drawing with ink and wash: six weekly afternoon classes; buy your own materials'
+        - £190
+      - - Vita Art Center, Ventura, California
+        - 'Pen and ink illustration: four weekly evening sessions (autumn 2026 course, now past); supplies not included'
+        - $145
+      - - Wake Tech Community College, North Carolina
+        - 16 contact hours with technical pens; no current dates
+        - Not listed; contact the college
+    after: City Lit's next dates run from January 2027. Edinburgh's course starts on 18 January 2027 and asks you to wait until the course is confirmed before buying materials.
+  faq:
+  - q: What pens do I need for pen and ink drawing?
+    a: Course lists vary. Wake Tech asks for a set of three Micron pens in sizes 01, 03 and 05; Vita Art Center adds crowquill dip pens and nibs and waterproof black ink.
+  - q: What paper is best for pen and ink?
+    a: Smooth paper. Seattle Central College asks for a pad of Bristol smooth or mixed media paper, and Wake Tech asks for hot press illustration board.
+  - q: What is the difference between pen and ink and ink and wash?
+    a: Pen and ink builds tone from lines and dots, such as hatching and stippling. Ink and wash adds diluted ink brushed on as a wash, which City Lit and the University of Edinburgh both teach.
+  - q: Do I need to be able to draw to take a pen and ink class?
+    a: Usually not. Seattle Central College says no experience is needed and Edinburgh's course is suitable for those with no prior experience, though City Lit says some drawing experience helps.
+  sources:
+  - label: City Lit, Drawing, ink and wash techniques
+    url: https://www.citylit.ac.uk/courses/drawing-ink-and-wash-techniques
+    checked: '2026-11-17'
+  - label: University of Edinburgh Short Courses, Introduction to drawing with ink and wash
+    url: https://shortcourses.ed.ac.uk/course/introduction-to-drawing-with-ink-and-wash
+    checked: '2026-11-17'
+  - label: Seattle Central College Continuing Education, Pen and ink art
+    url: https://ce.seattlecentral.edu/category/art-history/pen-and-ink-art
+    checked: '2026-11-17'
+  - label: Wake Tech Community College, Pen and ink drawing class
+    url: https://www.waketech.edu/course/csp-4000jw2
+    checked: '2026-11-17'
+  - label: Vita Art Center, Pen and ink illustration, fall 2026
+    url: https://www.vitaartcenter.com/new-products/p/pen-ink-illustration-fall-2026
+    checked: '2026-11-17'
+  kit:
+  - name: Fineliner technical pens
+    why: the fine pens that course supply lists ask for
+    url: https://www.amazon.co.uk/s?k=fineliner+technical+pen+set
+  - name: Dip pen and nib set
+    why: for trying dip pen and ink line
+    url: https://www.amazon.co.uk/s?k=dip+pen+nib+set+drawing
+  - name: Bristol board pad
+    why: smooth paper that takes fine ink lines
+    url: https://www.amazon.co.uk/s?k=bristol+board+pad+smooth
+  related:
+  - learn-to-draw
+  - join-an-urban-sketchers-meet
+  - learn-calligraphy
+  - learn-to-draw-comics
+- id: learn-puppetry
+  title: Learn puppetry
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Puppetry is two crafts in one, making a figure and then making it seem alive, and courses teach both, from carving and construction to breath, focus and manipulation. Beginners' courses run from a single evening to ten weeks, and on some you take home the puppet you made.
+  start:
+  - 'Look for an adults'' course at a puppet theatre: in London, Little Angel Theatre runs a ten-week evening Puppetry Foundation Course for absolute beginners; in Atlanta, the Center for Puppetry Arts runs Hand and Rod 101 for adults.'
+  - Decide whether you want to perform, make or both; some short courses are only about building (carving heads and hands, or making puppets from recycled materials), others only about bringing a puppet to life.
+  - Join a guild to meet other puppeteers; the British Puppet Guild welcomes members at all skill levels, and Puppeteers of America lists regional guilds across the US.
+  links:
+  - label: 'Little Angel Theatre, London: adult termly courses'
+    url: https://littleangeltheatre.com/take-part/category/adult-termly-courses
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Little Angel Theatre, London: adult short courses'
+    url: https://littleangeltheatre.com/take-part/category/adult-short-courses
+    region: uk
+    checked: '2026-11-17'
+  - label: 'British Puppet Guild: membership'
+    url: https://britishpuppetguild.com/membership
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Center for Puppetry Arts, Atlanta: Hand and Rod Puppetry 101'
+    url: https://puppet.org/programs/hand-and-rod-manipulation/
+    region: us
+    checked: '2026-11-17'
+  - label: 'Puppet Showplace Theater, Brookline, Massachusetts: adult classes'
+    url: https://www.puppetshowplace.org/adult-classes
+    region: us
+    checked: '2026-11-17'
+  - label: 'Puppeteers of America: regions and guilds'
+    url: https://puppeteers.org/regions-guilds
+    region: us
+    checked: '2026-11-17'
+  seo_title: 'Puppetry classes for adults: courses and guilds'
+  description: What an adult puppetry course covers, from glove and shadow puppets to carving heads, with real classes and guilds to join in the UK and US.
+  detail:
+  - h: What you learn
+    p:
+    - Little Angel Theatre's Puppetry Foundation Course is a ten-week evening course for adults with no experience. It works through object theatre, glove puppets, shadow puppetry, table-top puppets and three-person puppets, with the basics of manipulation and making, and you can take home a simple puppet you make.
+    - The Center for Puppetry Arts' Hand and Rod 101 is a four-session course that covers breath and focus, handling weight and resistance, gesture and clear movement, rod control and lip sync. No experience is needed, and it is the first step before its 102 and 103 courses.
+    - If you are more interested in making, Little Angel also runs short adult courses in puppet construction with recycled materials and everyday objects, and a three-day course carving puppet heads and hands in wood.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Little Angel Theatre, London
+        - 'Puppetry Foundation Course: ten weeks, Tuesday or Thursday evenings (Thursdays 7pm to 9pm), courses starting January 2027'
+        - Not shown on the listing; see the booking page. a bursary place was offered on the past spring course
+      - - Little Angel Theatre, London
+        - 'Short adult courses: evening Hands On sessions, a full-day Puppet Construction for Beginners, a three-day Heads and Hands carving course (February 2027)'
+        - Not shown on the listing; see the booking page
+      - - Center for Puppetry Arts, Atlanta
+        - 'Hand and Rod 101: four sessions, 7pm, ages 18 and over (autumn 2026 course, now past)'
+        - Not shown on the course page
+      - - Puppet Showplace Theater, Brookline, Massachusetts
+        - Mostly one-off three-hour evening or weekend workshops, from shadow puppetry to puppet sculpting (2026 programme, now past; watch for the next)
+        - Not shown on the listing
+      - - British Puppet Guild
+        - Membership with online and in-person events, a bi-monthly newsletter and an annual magazine
+        - £25 a year for a full adult member
+    after: Several 2026 workshops at Puppet Showplace Theater were cancelled or postponed, and Little Angel's courses can sell out, with a waiting list, so check the page and book early.
+  faq:
+  - q: Can adults take puppetry classes?
+    a: Yes. Little Angel Theatre in London and the Center for Puppetry Arts in Atlanta both run courses for those aged 18 and over, and neither asks for previous experience on its beginners' course.
+  - q: How do I learn puppetry as a beginner?
+    a: Take a beginners' course that covers several kinds of puppet, such as Little Angel's ten-week Puppetry Foundation Course, then join a guild to meet other puppeteers.
+  - q: What are the different types of puppets?
+    a: Adult courses at Little Angel Theatre and the Center for Puppetry Arts cover glove puppets, rod puppets, shadow puppets, table-top puppets, marionettes and three-person puppets, as well as object theatre, which uses everyday things.
+  - q: Is there a puppetry guild near me?
+    a: In the UK, the British Puppet Guild is open to members at all skill levels and from abroad. In the US, Puppeteers of America lists eight regions with independent local guilds.
+  sources:
+  - label: Little Angel Theatre, Puppetry Foundation Course (Thursdays)
+    url: https://www.littleangeltheatre.com/whats-on/puppetry-foundation-course-thursdays-5/
+    checked: '2026-11-17'
+  - label: Little Angel Theatre, Adult termly courses
+    url: https://littleangeltheatre.com/take-part/category/adult-termly-courses
+    checked: '2026-11-17'
+  - label: Little Angel Theatre, Adult short courses
+    url: https://littleangeltheatre.com/take-part/category/adult-short-courses
+    checked: '2026-11-17'
+  - label: Center for Puppetry Arts, Hand and Rod Puppetry 101
+    url: https://puppet.org/programs/hand-and-rod-manipulation/
+    checked: '2026-11-17'
+  - label: Puppet Showplace Theater, Adult puppetry classes and workshops
+    url: https://www.puppetshowplace.org/adult-classes
+    checked: '2026-11-17'
+  - label: British Puppet Guild, Membership
+    url: https://britishpuppetguild.com/membership
+    checked: '2026-11-17'
+  - label: Puppeteers of America, Regions and guilds
+    url: https://puppeteers.org/regions-guilds
+    checked: '2026-11-17'
+  kit:
+  - name: Hand puppet
+    why: a ready-made glove puppet to practise movement and lip sync at home
+    url: https://www.amazon.co.uk/s?k=hand+puppet+adult
+  - name: Puppet making kit
+    why: materials for building a first simple puppet
+    url: https://www.amazon.co.uk/s?k=puppet+making+kit
+  related:
+  - join-amateur-theatre
+  - try-stop-motion-animation
+  - learn-woodcarving
+  - learn-oral-storytelling
+- id: learn-pysanky
+  title: Decorate eggs the Ukrainian way (pysanky)
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Pysanky are Ukrainian Easter eggs decorated by drawing on the shell in hot beeswax, dipping the egg in dye after dye from light to dark, then melting the wax away to reveal the pattern. A first workshop takes two to four hours, needs no experience, and usually includes the eggs, wax, dyes and tools.
+  start:
+  - 'Look for a workshop in the weeks before Easter: Ukrainian cultural organisations, museums and folk schools run most of them, often as one-off afternoon sessions.'
+  - Check what is included; some fees cover all the eggs, dyes and tools and a take-home set, others add a separate materials fee.
+  - Book early, as the Ukrainian Institute of America's spring 2024 workshop sold out.
+  links:
+  - label: 'Bradford Industrial Museum: heritage craft workshop, Ukrainian pysanky eggs'
+    url: https://bradfordmuseums.org/event/heritage-craft-workshop-ukrainian-pysanky-eggs
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Olia Hercules: pysanky workshop, East London'
+    url: https://oliahercules.com/all-events/pysanky-workshop-5-april-2025
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Ukrainian Institute of America, New York: pysanka workshop'
+    url: https://ukrainianinstitute.org/event/pysanka-workshop-with-larysanky/
+    region: us
+    checked: '2026-11-17'
+  - label: 'The Ukrainian Museum, New York: courses and workshops'
+    url: https://www.theukrainianmuseum.org/courses-workshops/
+    region: us
+    checked: '2026-11-17'
+  - label: 'Driftless Folk School, Wisconsin: the art of pysanky'
+    url: https://www.driftlessfolkschool.org/classes/the-art-of-pysanky-ukrainian-easter-eggs-april-2025
+    region: us
+    checked: '2026-11-17'
+  seo_title: 'Pysanky workshop: how to make Ukrainian Easter eggs'
+  description: How Ukrainian pysanky eggs are made with beeswax and dyes, what a beginners' workshop includes, and real classes in the UK and US with past prices.
+  detail:
+  - h: How it works
+    p:
+    - Pysanky use a wax-resist method that Bradford Industrial Museum describes as similar to batik, but on the three-dimensional surface of an egg. You heat a small stylus, fill it with beeswax and draw on the shell; each layer of wax protects the colour beneath it.
+    - The Metropolitan Museum of Art describes the tool, the kistka, as a small metal funnel on a stick. You begin with the lightest colour, drawing in wax anything you want to stay white, then dip the egg in progressively darker dyes, covering each new colour you want to keep with wax before the next dip.
+    - At the end the wax is melted and wiped off to show the whole design. The patterns and colours traditionally carry religious or cultural meaning.
+  - h: Workshops and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Bradford Industrial Museum, West Yorkshire
+        - Two-hour morning or afternoon session with stylus, beeswax, candle and a real eggshell (April 2026, now past)
+        - Not shown on the event page
+      - - Olia Hercules, East London
+        - Three hours with artists Helena Orlowski and Nataliya Cummings, materials and lunch included (spring 2025 and March 2026 dates, now past)
+        - £125 shown on the page; 10% of profits go to a Ukrainian charity
+      - - Ukrainian Institute of America, New York
+        - Three-hour afternoon, all levels, ages 11 and over, supplies and refreshments included (March 2024, now past)
+        - $25
+      - - Driftless Folk School, La Crosse, Wisconsin
+        - Three and a half hours with lunch, all levels, ages 9 and over (spring 2025, now past)
+        - $40, $55 or $70 on a sliding scale, plus $20 for materials and a take-home set
+    after: The Ukrainian Museum in New York also lists a pysanka workshop among its past courses and says registration and pre-payment are required for all its workshops.
+  faq:
+  - q: How are pysanky eggs made?
+    a: You draw on the egg in hot beeswax, dip it in dyes from lightest to darkest, waxing over each colour you want to keep, then melt and wipe off the wax to reveal the design.
+  - q: What tool is used for pysanky?
+    a: A kistka, which the Metropolitan Museum of Art describes as a small metal funnel on a stick. Bradford Industrial Museum calls its stylus a pysachok.
+  - q: Do I need experience to do a pysanky workshop?
+    a: No. The Ukrainian Institute of America, Driftless Folk School and Olia Hercules's workshops all say they are open to all levels or suitable for beginners.
+  - q: When are pysanky workshops held?
+    a: Mostly in late winter and spring before Easter; the workshops above ran in March and April.
+  sources:
+  - label: The Metropolitan Museum of Art, Pysanky - Dyeing to Celebrate Easter (Dan Lipcan)
+    url: https://www.metmuseum.org/en/perspectives/pysanky
+    checked: '2026-11-17'
+  - label: Bradford Industrial Museum, Heritage craft workshop - Ukrainian pysanky eggs
+    url: https://bradfordmuseums.org/event/heritage-craft-workshop-ukrainian-pysanky-eggs
+    checked: '2026-11-17'
+  - label: Olia Hercules, Pysanky workshop
+    url: https://oliahercules.com/all-events/pysanky-workshop-5-april-2025
+    checked: '2026-11-17'
+  - label: Ukrainian Institute of America, Pysanka workshop (with Larysanky)
+    url: https://ukrainianinstitute.org/event/pysanka-workshop-with-larysanky/
+    checked: '2026-11-17'
+  - label: The Ukrainian Museum, Courses and workshops
+    url: https://www.theukrainianmuseum.org/courses-workshops/
+    checked: '2026-11-17'
+  - label: Driftless Folk School, The art of pysanky - Ukrainian Easter eggs
+    url: https://www.driftlessfolkschool.org/classes/the-art-of-pysanky-ukrainian-easter-eggs-april-2025
+    checked: '2026-11-17'
+  safety: You work with a lit candle and hot wax, so keep the flame clear of sleeves and hair and let the wax cool before touching it.
+  season: Workshops cluster in March and April, before Easter.
+  kit:
+  - name: Pysanky kit
+    why: kistka styluses, beeswax and dyes for practising at home after a workshop
+    url: https://www.amazon.co.uk/s?k=pysanky+kit
+  - name: Beeswax block
+    why: the wax used to draw the design on the shell
+    url: https://www.amazon.co.uk/s?k=pure+beeswax+block
+  related:
+  - learn-batik
+  - learn-egg-tempera-painting
+  - learn-a-heritage-craft
+  - learn-calligraphy
+- id: play-handball
+  title: Play handball
+  category: move
+  kind: skill
+  effort: demanding
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: England Handball describes the sport as football with hands, water polo without the water and basketball with nets, and it is fast and high-scoring. Teams of seven pass, run three steps at a time and shoot at a goal from outside the goal area, and clubs in both countries run sessions for adult beginners.
+  start:
+  - Find a club through England Handball's club finder or USA Team Handball's club directory, and look for a beginners' or mixed session.
+  - Email the club before your first visit; London GD Handball asks you to say your experience, what you are looking for and when you can train.
+  - Ask about a free trial and the fees, and check whether you also need national membership for insurance.
+  links:
+  - label: 'England Handball: find a club'
+    url: https://englandhandball.com/find-a-club/
+    region: uk
+    checked: '2026-11-17'
+  - label: 'London GD Handball: mixed adult beginners'
+    url: https://londongdhandball.co.uk/gd/mixed-adult-beginners
+    region: uk
+    checked: '2026-11-17'
+  - label: 'USA Team Handball: membership and club directory'
+    url: https://usateamhandball.org/membership
+    region: us
+    checked: '2026-11-17'
+  - label: 'CalHeat Team Handball Club, California: membership'
+    url: https://www.calheat.com/index.php/membership
+    region: us
+    checked: '2026-11-17'
+  - label: 'New York City Team Handball Club: annual dues'
+    url: https://www.newyorkcityteamhandball.com/shop/p/annual-membership-fee
+    region: us
+    checked: '2026-11-17'
+  seo_title: 'Handball for adult beginners: rules and clubs near you'
+  description: How team handball is played, how adult beginners find a club in the UK or US, what a free trial and a year's membership cost, and what to ask first.
+  detail:
+  - h: How the game works
+    p:
+    - A team has seven players on court, including the goalkeeper, on a court 40m by 20m (about 131ft by 66ft). A match is two 30-minute halves, and the team with more goals wins.
+    - You may take up to three steps without dribbling and hold the ball for no more than three seconds. Only the goalkeeper may go inside the goal area, which is why attackers jump over the line to shoot from the air.
+    - England Handball says the sport can be played for fun or competitively, and that players can run 5 to 6km (3 to 4 miles) in a match.
+  - h: Ways in
+    table:
+      head:
+      - Club
+      - Sessions
+      - Cost (as last listed)
+      rows:
+      - - London GD Handball
+        - Mixed adult beginners, Tuesdays 7pm to 8.30pm at Rokeby School near Canning Town; all skill levels and genders welcome
+        - Not listed; email the club
+      - - CalHeat, California
+        - Free trial for up to a month after your first session; half-year option for first-year members
+        - $550 a year regular adult; $320 half-year for first-year members, to the end of January; USATH registration and insurance included
+      - - New York City Team Handball Club
+        - Practice three times a week all year
+        - $365 a year, plus separate USA Team Handball membership
+    after: USA Team Handball membership gives individual members participant accident medical cover for injuries at registered club activities and sanctioned events, on top of other medical cover and subject to a deductible.
+  faq:
+  - q: How many players are on a handball team?
+    a: Seven on court, including the goalkeeper, with substitutes on the bench.
+  - q: How long is a handball match?
+    a: Sixty minutes, in two 30-minute halves.
+  - q: What is the three-step rule in handball?
+    a: You can take up to three steps holding the ball without dribbling, and you cannot hold it for more than three seconds.
+  - q: Can adults learn handball from scratch?
+    a: Yes. London GD Handball runs a mixed adult beginners' session open to all skill levels, and CalHeat in California offers newcomers a free month.
+  sources:
+  - label: England Handball, Play
+    url: https://englandhandball.com/play/
+    checked: '2026-11-17'
+  - label: England Handball, Find a club
+    url: https://englandhandball.com/find-a-club/
+    checked: '2026-11-17'
+  - label: London GD Handball, Mixed adult beginners
+    url: https://londongdhandball.co.uk/gd/mixed-adult-beginners
+    checked: '2026-11-17'
+  - label: London GD Handball, Join
+    url: https://londongdhandball.co.uk/join
+    checked: '2026-11-17'
+  - label: USA Team Handball, Membership
+    url: https://usateamhandball.org/membership
+    checked: '2026-11-17'
+  - label: CalHeat, Membership
+    url: https://www.calheat.com/index.php/membership
+    checked: '2026-11-17'
+  - label: New York City Team Handball Club, Annual member dues
+    url: https://www.newyorkcityteamhandball.com/shop/p/annual-membership-fee
+    checked: '2026-11-17'
+  - label: Olympics.com, Handball rules and regulations
+    url: https://olympics.com/en/news/handball-game-rules-regulations-how-to-play
+    checked: '2026-11-17'
+  kit:
+  - name: Indoor court shoes
+    why: for grip on a sports hall floor
+    url: https://www.amazon.co.uk/s?k=indoor+court+shoes
+  - name: Handball
+    why: for practising passing and catching between sessions
+    url: https://www.amazon.co.uk/s?k=handball+ball
+  related:
+  - play-netball
+  - try-korfball
+  - play-volleyball
+  - try-gaelic-football
+- id: try-gig-rowing
+  title: Row a Cornish pilot gig
+  category: move
+  kind: experience
+  effort: demanding
+  cost: mid
+  time: months
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: A Cornish pilot gig is a 32ft (9.75m) wooden six-oared boat built to the lines of the Treffry of 1838, and today clubs row and race them at sea. Clubs take complete beginners, usually through a couple of taster rows or a novice course, and the boat goes nowhere unless all six of you pull together.
+  start:
+  - Find a club near the coast through the Cornish Pilot Gig Association's club directory; it suggests trying sessions at more than one club to find the right fit.
+  - Ask about taster sessions or the next novice course; at Sidmouth new members get up to two taster rows at sea after a safety briefing and some coaching on land.
+  - Check you can swim, and go dressed in layers with old trainers or neoprene boots, because you are likely to get wet to the knees getting in and out.
+  links:
+  - label: 'Cornish Pilot Gig Association: clubs'
+    url: https://www.cpga.co.uk/clubs/
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Sidmouth Gig Club, Devon: membership and tasters'
+    url: https://sites.google.com/sidmouthgigclub.co.uk/website/membership
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Hayle Gig Club, Cornwall: novice courses'
+    url: https://www.haylegigclub.co.uk
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Martha''s Vineyard Times: the island''s pilot gig rowing club (2023)'
+    url: https://www.mvtimes.com/2023/06/28/row-on/
+    region: us
+    checked: '2026-11-17'
+  seo_title: 'Gig rowing for beginners: how to join a gig club'
+  description: How Cornish pilot gig rowing works, how beginners get started with tasters and novice courses, what clubs charge, and where the big race on Scilly is.
+  detail:
+  - h: What it's really like
+    p:
+    - The Cornish Pilot Gig Association is the sport's governing body and a registered charity, and describes itself as a community of 90 clubs and over 8,000 active gig rowers. The boats were once used for pilotage, harbour work and as lifeboats, and every gig built today follows the lines of the Treffry, built in 1838.
+    - Some clubs also keep plastic training boats; Hayle Gig Club has two alongside its two wooden racing gigs, and rows all year from Hayle Harbour, often training in Mounts Bay in summer.
+    - The highlight of the season is the World Pilot Gig Championships on the Isles of Scilly over the early May bank holiday weekend, held on 1 to 3 May in 2026. At one past championship around 2,000 rowers took part, with 148 crews in the men's open race and 152 in the women's, plus separate veterans' categories, and crews came from as far as the Netherlands and the USA.
+  - h: Ways in
+    table:
+      head:
+      - Club
+      - How beginners start
+      - Cost (as last listed)
+      rows:
+      - - Sidmouth Gig Club, Devon
+        - Up to two taster rows at sea after a safety briefing and land coaching; join any time of year
+        - £125 a year adult rower (April 2026 to March 2027); £65 country rower
+      - - Hayle Gig Club, Cornwall
+        - Novice courses a few times a year; rows from Hayle Harbour
+        - Not listed
+      - - Martha's Vineyard Rowing Club, Massachusetts (part of SailMV)
+        - Two free introductory rows; new members start as substitutes until a regular seat opens
+        - $125 SailMV dues plus $100 for the club (reported in 2023)
+    after: The Cornish Pilot Gig Association says many clubs run taster sessions and that you need no previous rowing experience or specialist kit to take part.
+  faq:
+  - q: Do you need to be able to swim to row a gig?
+    a: Yes. Sidmouth Gig Club says plainly that you need to be able to swim.
+  - q: How many people row a Cornish pilot gig?
+    a: The Cornish Pilot Gig Association describes the gig as six-oared, and the boats are 32ft (9.75m) long.
+  - q: What do you wear for gig rowing?
+    a: Sidmouth suggests old trainers or neoprene boots, shorts or leggings, two layers on top and a windproof jacket for waiting on the beach. Expect to get wet to the knees.
+  - q: When is the World Pilot Gig Championships?
+    a: Over the early May bank holiday weekend on the Isles of Scilly; in 2026 it ran from 1 to 3 May. Check the championship's own site for future dates.
+  sources:
+  - label: Cornish Pilot Gig Association, home page
+    url: https://cpga.co.uk/
+    checked: '2026-11-17'
+  - label: Cornish Pilot Gig Association, Clubs
+    url: https://www.cpga.co.uk/clubs/
+    checked: '2026-11-17'
+  - label: Sidmouth Gig Club, Membership
+    url: https://sites.google.com/sidmouthgigclub.co.uk/website/membership
+    checked: '2026-11-17'
+  - label: Hayle Gig Club, home page
+    url: https://www.haylegigclub.co.uk
+    checked: '2026-11-17'
+  - label: Isles of Scilly Travel, World Pilot Gig Championships 1-3 May 2026
+    url: https://www.islesofscilly-travel.co.uk/?p=12424
+    checked: '2026-11-17'
+  - label: British Rowing, Looe and Caradon crowned world champions at the 29th World Pilot Gig Championships
+    url: https://britishrowing.org/?p=33428
+    checked: '2026-11-17'
+  - label: The Martha's Vineyard Times, Row on (2023)
+    url: https://www.mvtimes.com/2023/06/28/row-on/
+    checked: '2026-11-17'
+  inspire:
+  - kind: read
+    person: Terre Young, Martha's Vineyard, Massachusetts
+    line: Joined the island's Cornish pilot gig crew after years working at a hospital, and says what she values is being part of a team.
+    title: Row on
+    outlet: The Martha's Vineyard Times
+    url: https://www.mvtimes.com/2023/06/28/row-on/
+    checked: '2026-11-17'
+  kit:
+  - name: Neoprene boots
+    why: for wading in and out at the launch
+    url: https://www.amazon.co.uk/s?k=neoprene+water+boots
+  - name: Thin rowing gloves
+    why: some rowers wear them in cold weather
+    url: https://www.amazon.co.uk/s?k=rowing+gloves
+  - name: Windproof jacket
+    why: for waiting on the beach before and after a row
+    url: https://www.amazon.co.uk/s?k=windproof+jacket+packable
+  related:
+  - learn-to-row
+  - paddle-a-dragon-boat
+  - try-rowing-indoor
+  - walk-south-west-coast-path
+  safety: Gig rowing is at sea. Sidmouth Gig Club says you need to be able to swim, so ask your club what it requires before your first row. In an emergency call 999 in the UK or 911 in the US.
+- id: try-outrigger-canoeing
+  title: Paddle an outrigger canoe
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: An outrigger canoe has a float on one side to keep it steady, and the six-seat version is paddled by a crew who have to learn to move as one, with one of the six steering. Clubs at Teddington, on the Sussex coast at Shoreham and along the California coast take new paddlers, and Royal Outrigger in Teddington provides buoyancy aids, paddles and coaching for beginners.
+  start:
+  - Find a club and ask about the next beginners' or taster session; Royal Outrigger in Teddington runs them in the summer, and Dana Outrigger in California starts its novice programme each February.
+  - Message before you go rather than turning up; Royal Outrigger says its sessions often fill.
+  - Check the swimming requirement; Dana Outrigger Canoe Club in California says all paddlers must be proficient swimmers.
+  links:
+  - label: 'Royal Outrigger, Teddington: join'
+    url: https://www.royaloutrigger.com/join
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Sussex Yacht Club: Shoreham Outrigger Canoe'
+    url: https://www.sussexyachtclub.org.uk/sail-sussex-yacht-club/shoreham-outrigger-canoe/
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Dana Outrigger Canoe Club, Dana Point, California'
+    url: https://danaoutrigger.net/about-1
+    region: us
+    checked: '2026-11-17'
+  - label: 'Newport Aquatic Center, California: adult outrigger'
+    url: https://newportaquaticcenter.com/?p=7888
+    region: us
+    checked: '2026-11-17'
+  - label: 'City of Tempe, Arizona: outrigger paddling clubs'
+    url: https://tempe.gov/government/community-services/classes-leagues/boating/outrigger-paddling
+    region: us
+    checked: '2026-11-17'
+  seo_title: 'Outrigger canoeing for beginners: how to start'
+  description: What an outrigger canoe is, how six paddlers crew one, how beginners get started at clubs in the UK and US, and what to ask before your first session.
+  detail:
+  - h: What it's really like
+    p:
+    - An outrigger canoe has one or more side floats, called outriggers, and smaller canoes often have a single one on the left-hand (port) side. The six-person canoe, the OC6, seats six paddlers including the one who steers. Clubs also keep one- and two-person boats; Royal Outrigger in Teddington has four OC6s, two OC2s and five OC1s.
+    - Most of the early weeks are about timing. Adventure Sports Journal, writing about California clubs, says newcomers should expect to spend a lot of time in six-person boats learning to paddle in time with the crew.
+    - In California, competitive crews race through the Southern California Outrigger Racing Association season, and each September there is a 32-mile Catalina Channel crossing.
+  - h: Ways in
+    table:
+      head:
+      - Club
+      - How beginners start
+      - Cost (as last listed)
+      rows:
+      - - Royal Outrigger, Teddington Watersports Centre, London
+        - Regular beginners' sessions in summer; a few sessions before you join; buoyancy aids, paddles and coaching provided
+        - Join the watersports centre, then a small extra charge for the outrigger section; amounts not listed on the club page
+      - - Shoreham Outrigger, Sussex Yacht Club
+        - Taster sessions, for newcomers and experienced paddlers
+        - Not listed
+      - - Dana Outrigger Canoe Club, Dana Point, California
+        - Novice programme for new adult members, starting each February
+        - Not listed
+      - - Newport Aquatic Center, Newport Beach, California
+        - Novice programme for first-time paddlers, no experience needed (March 2025 schedule seen)
+        - Not listed; ask the outrigger team
+    after: Adventure Sports Journal suggests autumn and winter as the time to get started in California, before training for the racing season begins, and points to the Southern and Northern California outrigger associations for lists of clubs.
+  faq:
+  - q: What is an outrigger canoe?
+    a: A canoe with one or more floats, called outriggers, fixed to the side to keep it stable. Smaller canoes often have one, on the port side.
+  - q: How many people are in an outrigger canoe?
+    a: The OC6 seats six, including the steerer. There are also two-person (OC2) and one-person (OC1) boats.
+  - q: Do you need to be able to swim to go outrigger canoeing?
+    a: Clubs expect it. Dana Outrigger Canoe Club says all paddlers must be proficient swimmers.
+  - q: Is outrigger canoeing the same as dragon boating?
+    a: No. Both are crew boats paddled in time, but an outrigger canoe is kept stable by its side float, and in the six-seat boat one of the six paddlers steers. Cascades Club in Canada takes experienced paddlers from dragon boat as well as outrigger and sprint canoe.
+  sources:
+  - label: Royal Outrigger, Join
+    url: https://www.royaloutrigger.com/join
+    checked: '2026-11-17'
+  - label: Royal Outrigger, Our club
+    url: https://www.royaloutrigger.com/our-club
+    checked: '2026-11-17'
+  - label: Sussex Yacht Club, Shoreham Outrigger Canoe
+    url: https://www.sussexyachtclub.org.uk/sail-sussex-yacht-club/shoreham-outrigger-canoe/
+    checked: '2026-11-17'
+  - label: Dana Outrigger Canoe Club, About
+    url: https://danaoutrigger.net/about-1
+    checked: '2026-11-17'
+  - label: Newport Aquatic Center, Adult outrigger
+    url: https://newportaquaticcenter.com/?p=7888
+    checked: '2026-11-17'
+  - label: City of Tempe, Outrigger paddling
+    url: https://tempe.gov/government/community-services/classes-leagues/boating/outrigger-paddling
+    checked: '2026-11-17'
+  - label: Cascades Club, OC-6
+    url: https://cascades-club.squarespace.com/programs/oc-6
+    checked: '2026-11-17'
+  - label: 'Adventure Sports Journal, California outrigger canoeing: tradition, competition, and community'
+    url: https://adventuresportsjournal.com/california-outrigger-canoeing/
+    checked: '2026-11-17'
+  kit:
+  - name: Paddling shorts or leggings
+    why: regular sports clothing is fine in warmer months
+    url: https://www.amazon.co.uk/s?k=paddling+shorts
+  - name: Waterproof paddling jacket
+    why: for colder sessions
+    url: https://www.amazon.co.uk/s?k=waterproof+paddling+jacket
+  related:
+  - paddle-a-dragon-boat
+  - learn-to-kayak
+  - stand-up-paddleboarding
+  - canoe-a-river-trail
+  safety: Paddle with a club, wear the buoyancy aid it provides, and make sure you can swim before you start; Dana Outrigger requires all paddlers to be proficient swimmers and in good health. In an emergency call 999 in the UK or 911 in the US.
+- id: try-roller-derby
+  title: Try roller derby
+  category: move
+  kind: skill
+  effort: demanding
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Roller derby is a full-contact team sport on quad skates, where a jammer from each side tries to lap the pack while four blockers stop the other jammer and clear a path for their own. Leagues run new-skater programmes that start from standing up on skates, lend you the kit, and need no sporting background at all.
+  start:
+  - Find a local league and look for its new-skater, academy or "fresh meat" intake; many run them several times a year or on a rolling basis.
+  - Ask whether you can borrow skates, a helmet and pads to start, and buy a mouthguard, which you will need once contact drills begin.
+  - Read the league's gender policy and waiver; many follow the Women's Flat Track Derby Association's policy for full-contact play, and some teach skating to all genders.
+  links:
+  - label: 'Birmingham Roller Derby: get involved'
+    url: https://www.birminghamrollerderby.co.uk/get-involved
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Milton Keynes Roller Derby: join us'
+    url: https://miltonkeynesrollerderby.org/join-us
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Sheffield Steel Roller Derby: join us'
+    url: https://www.sheffieldsteelrollerderby.co.uk/join-us
+    region: uk
+    checked: '2026-11-17'
+  - label: 'Rose City Rollers, Portland, Oregon: Adult Intro to Derby'
+    url: https://rosecityrollers.com/join/
+    region: us
+    checked: '2026-11-17'
+  - label: 'Women''s Flat Track Derby Association: rules summary'
+    url: https://rules.wftda.com/summary.html
+    region: world
+    checked: '2026-11-17'
+  seo_title: 'Roller derby for beginners: how to join a league'
+  description: How roller derby works, what a new-skater programme teaches, what kit you can borrow, and what leagues in the UK and US charge to get you started.
+  detail:
+  - h: How the game works
+    p:
+    - Under the Women's Flat Track Derby Association rules, each team has up to five skaters on track at a time, four blockers and one jammer, who wears a star on the helmet cover. In each jam, which lasts up to two minutes, a jammer scores a point for each opposing blocker they lap. A game is two 30-minute periods.
+    - Contact is part of the game, but only with certain parts of the body; the rules ban using the head, elbows, forearms, hands, knees, lower legs or feet to hit an opponent.
+    - New skaters start long before contact. Birmingham Roller Derby's academy begins with standing and moving safely on skates and tracks progress through a skills booklet signed off by coaches, and says many of its members started from zero.
+  - h: Ways in
+    table:
+      head:
+      - League
+      - Programme
+      - Cost (as last listed)
+      rows:
+      - - Birmingham Roller Derby
+        - Rolling intake with a new-skater session every Saturday; loan skates, pads and helmet; 18 and over
+        - Given by email after your first session
+      - - Milton Keynes Roller Derby
+        - Beginner sessions on Sunday mornings in Bletchley, plus rookie intake nights; no skating experience needed
+        - Loan kit for a small charge; fees not listed
+      - - Sheffield Steel Roller Derby
+        - Open to new skaters; training Tuesday evenings and Sunday mornings at Skate Central
+        - Not listed
+      - - Rose City Rollers, Portland, Oregon
+        - Adult Intro to Derby, a four-week series on Saturday mornings; rental skates and gear included
+        - Dues $77 a month; WFTDA insurance policy $75 a year
+    after: Full kit is quad skates, knee pads, elbow pads, wrist guards, a helmet and a mouthguard. Rose City Rollers does not lend mouthguards, so you will need your own.
+  faq:
+  - q: Can you join roller derby if you can't skate?
+    a: Yes. Milton Keynes Roller Derby says you do not need any skating experience at all, and Birmingham's academy starts with standing and moving safely on skates.
+  - q: What is fresh meat in roller derby?
+    a: A name leagues use for a beginners' course. The Cambridge Rollerbillies ran theirs over two months before skaters moved on to full-contact training.
+  - q: What gear do you need for roller derby?
+    a: Quad skates, knee pads, elbow pads, wrist guards, a helmet and a mouthguard. Many leagues lend everything except the mouthguard while you learn.
+  - q: How long is a roller derby game?
+    a: Two 30-minute periods, made up of jams of up to two minutes each, under WFTDA rules.
+  sources:
+  - label: Women's Flat Track Derby Association, Rules summary
+    url: https://rules.wftda.com/summary.html
+    checked: '2026-11-17'
+  - label: Birmingham Roller Derby, Get involved
+    url: https://www.birminghamrollerderby.co.uk/get-involved
+    checked: '2026-11-17'
+  - label: Milton Keynes Roller Derby, Join us
+    url: https://miltonkeynesrollerderby.org/join-us
+    checked: '2026-11-17'
+  - label: Sheffield Steel Roller Derby, Join us
+    url: https://www.sheffieldsteelrollerderby.co.uk/join-us
+    checked: '2026-11-17'
+  - label: Rose City Rollers, Join
+    url: https://rosecityrollers.com/join/
+    checked: '2026-11-17'
+  - label: Ely Standard, Nicola Brooke and the Cambridge Rollerbillies' fresh meat course
+    url: https://www.elystandard.co.uk/sport/nicola-ready-to-rough-it-after-passing-her-roller-derby-4854436
+    checked: '2026-11-17'
+  inspire:
+  - kind: read
+    person: Nicola Brooke, from Ely, Cambridgeshire
+    line: Passed the Cambridge Rollerbillies' two-month fresh meat course while working as a freelance secretary, and moved on to full-contact training.
+    title: Nicola Brooke on passing the Cambridge Rollerbillies' fresh meat course
+    outlet: Ely Standard
+    url: https://www.elystandard.co.uk/sport/nicola-ready-to-rough-it-after-passing-her-roller-derby-4854436
+    checked: '2026-11-17'
+  kit:
+  - name: Sports mouthguard
+    why: the one piece of kit leagues usually do not lend, needed once contact drills start
+    url: https://www.amazon.co.uk/s?k=sports+mouthguard+adult
+  - name: Knee, elbow and wrist pad set
+    why: for when you stop borrowing league kit
+    url: https://www.amazon.co.uk/s?k=roller+derby+pads+set
+  - name: Skate helmet
+    why: part of the full kit leagues list
+    url: https://www.amazon.co.uk/s?k=skate+helmet+adult
+  related:
+  - learn-to-roller-skate
+  - learn-to-ice-skate
+  - learn-to-box
+  - play-hockey
+  safety: Roller derby is a full-contact sport and falls are part of learning. Wear the full protective kit every session, tell the league about any health conditions or previous injuries on the waiver, and learn the skills your coaches set before you move on to contact. In an emergency call 999 in the UK or 911 in the US.
