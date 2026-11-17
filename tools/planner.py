@@ -16,7 +16,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 STRANDS = ("book", "learn", "train", "travel", "kit")
-STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock", "safety_month", "later", "day_span")
+STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock", "safety_month", "later", "day_span", "book_window")
 START_AT = ("first", "second", "ongoing", "after_start", "later", "travel", "day")
 NO_TEXT = ("first", "second", "ongoing", "after_start", "later")   # an activity's own start step supplies the words
 TRIP_KEYS = ("head", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs", "getting_help_span",
@@ -29,7 +29,7 @@ NEAR_MAX, GOES_MAX = 6, 4
 COUNTRY = re.compile(r"[A-Z]{2}")
 NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help",
              "level_q", "level_opt", "level_starter", "level_active", "level_advanced", "level_help", "train_month", "train_offline", "train_week", "train_about", "cal_why_train", "train_level_long", "train_level_short", "clash_span", "span_q", "span_last", "span_help", "span_err",
-             "trip_train", "trip_train_key", "trip_train_eve", "with_trip")
+             "trip_train", "trip_train_key", "trip_train_eve", "with_trip", "book_closed")
 PLUS_KEYS = ("intro", "diy_head", "diy_tag", "diy_help", "diy_open", "diy_book", "diy_place_help", "diy_nearby", "diy_goes", "head", "head_open", "checking",
              "what", "price", "sample", "join", "signin", "saved_ro", "my_ro", "sample_title", "sample_intro")
 
@@ -83,8 +83,8 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
     for k in STEP_KEYS:
         v = steps.get(k) or {}
         assert v.get("why"), f"planner steps.{k}: needs why"
-        if k not in ("day_month", "day_span", "train_start"): assert "at" in v and at_ok(v["at"]), f"planner steps.{k}: at must be days, 'start', 'start+N' or 'lead*F'"
-        if k not in NO_TEXT: assert v.get("text"), f"planner steps.{k}: needs text"
+        if k not in ("day_month", "day_span", "train_start", "book_window"): assert "at" in v and at_ok(v["at"]), f"planner steps.{k}: at must be days, 'start', 'start+N' or 'lead*F'"
+        if k not in NO_TEXT + ("book_window",): assert v.get("text"), f"planner steps.{k}: needs text"
     for k in NOTE_KEYS: assert notes.get(k), f"planner notes.{k}: missing"
     # Where it is and getting there (Planner Plus day 8): the words, and the searches built from a place
     trip = cfg.get("trip") or {}
@@ -151,7 +151,29 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
             ns = d.get("next_source") or s
             assert str(ns.get("url", "")).startswith("https://"), f"dates.yaml {a}: next needs a next_source (or the main source) with a url"
             nxt = n.isoformat() if n >= today else None
-        dates[a] = {"months": d["months"], "note": d.get("note", ""), "next": nxt, "source": {"label": s["label"], "url": s["url"]}}
+        # A booking window for one year's date (Planner Plus, 17 Nov 2026, checkpoint item 2): which of the activity's
+        # start steps it governs, not before `from` (a day, or a month when only the month is published) and not after
+        # `by`, for the event on `for`. Sourced like everything else; dropped once that year's event has passed.
+        bk = None
+        if d.get("book"):
+            b = d["book"]
+            n_start = len(next(c for c in chs if c["id"] == a)["start"])
+            assert isinstance(b.get("step"), int) and 0 <= b["step"] < n_start, f"dates.yaml {a}: book.step must be the index of one of the activity's start steps"
+            assert b.get("from") or b.get("by"), f"dates.yaml {a}: book needs from or by"
+            for k in ("from", "by"):
+                assert not b.get(k) or re.fullmatch(r"\d{4}-\d{2}(-\d{2})?", str(b[k])), f"dates.yaml {a}: book.{k} must be YYYY-MM-DD or YYYY-MM"
+            fr = str(b["from"]) + ("-01" if b.get("from") and len(str(b["from"])) == 7 else "") if b.get("from") else ""
+            by = str(b["by"]) if b.get("by") else ""
+            assert not by or len(by) == 10, f"dates.yaml {a}: book.by must be a day"
+            assert not (fr and by) or fr <= by, f"dates.yaml {a}: book.from is after book.by"
+            fo = str(b.get("for", ""))
+            assert d.get("next") and fo == str(d["next"]), f"dates.yaml {a}: book.for must be the `next` date it belongs to"
+            assert (by or fr) < fo, f"dates.yaml {a}: the booking window must be before the event"
+            assert b.get("note"), f"dates.yaml {a}: book.note says what the page says about the window"
+            bs = b.get("source") or {}
+            assert str(bs.get("url", "")).startswith("https://") and bs.get("label") and bs.get("checked"), f"dates.yaml {a}: book.source needs url, label, checked"
+            if nxt: bk = {"step": b["step"], "from": fr, "by": by, "for": fo, "note": b["note"], "source": {"label": bs["label"], "url": bs["url"]}}
+        dates[a] = {"months": d["months"], "note": d.get("note", ""), "next": nxt, "source": {"label": s["label"], "url": s["url"]}, "book": bk}
 
     out = []
     for c in chs:

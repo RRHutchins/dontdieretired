@@ -141,6 +141,9 @@ steps:
     at: start
     text: "Check this year's dates"
     why: "It happens at the same time every year, but dates move: check this year's on the organiser's own website before you plan round it. The link here is where we read when it usually happens."
+  # A start step dated by the organiser's own booking window (content/dates.yaml → book), not by the run-up
+  book_window:
+    why: "Dated by the entry or booking window the organiser has published for this year, not by the run-up: see the note here."
   book:
     at: "start+7"
     text: "Compare and book"
@@ -200,6 +203,7 @@ notes:
   too_soon: "{event} needs at least {weeks} weeks of training, and your date is sooner than that. The earliest date that leaves enough time is {earliest}."
   train_short: "{event} usually takes {usual} weeks of training. Your date leaves {weeks}, which is not below the engine's minimum of {min}, so the plan runs {weeks} weeks."
   past: "That date has already gone. Pick a date from today on."
+  book_closed: "The window we found for \"{step}\" ended on {by}, before today. There may be other ways in: check the organiser's own website."
   # Under the date picker on an activity page (RUNBOOK §6s, day 3): why the date we fill in was chosen.
   suggest_fixed: "We have filled in the next date we found published. Check it on the organiser's own website before you book anything."
   suggest_season: "We have filled in the first of its best months ({months}) that leaves our usual {weeks}-week run-up. Change it to suit you."

@@ -18,7 +18,7 @@ function checkSourced(a, plan) {
   const texts = new Set(a.start);
   const okText = s => texts.has(s.text) || Object.values(S).some(v => v.text && fills(v.text).test(s.text));
   const okWhy = s => Object.values(S).some(v => fills(v.why).test(s.why));
-  const urls = new Set([...a.links, ...a.book].map(l => l.url).concat(a.dates ? [a.dates.source.url] : []));
+  const urls = new Set([...a.links, ...a.book].map(l => l.url).concat(a.dates ? [a.dates.source.url] : [], a.dates && a.dates.book ? [a.dates.book.source.url] : []));
   const kit = new Set(a.kit.map(k => k.url));
   // training sessions: every word is one of the engine's own strings, with only the day names put in
   const TR = a.event && data.training[a.event.id], DAYRX = /\b(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\b/g;
@@ -35,7 +35,7 @@ function checkSourced(a, plan) {
     (s.links || []).forEach(l => assert.ok(urls.has(l.url), `${a.id}: link not from the activity: ${l.url}`));
     (s.items || []).forEach(k => assert.ok(kit.has(k.url), `${a.id}: kit not from the activity: ${k.url}`));
     if (s.detail) {
-      const pieces = [a.safety, a.dates && a.dates.note, a.event && a.event.prerequisite, data.trip.step_detail, ...a.start].filter(Boolean);
+      const pieces = [a.safety, a.dates && a.dates.note, a.dates && a.dates.book && a.dates.book.note, a.event && a.event.prerequisite, data.trip.step_detail, ...a.start].filter(Boolean);
       let rest = s.detail; pieces.forEach(p => { rest = rest.split(p).join(''); });
       assert.strictEqual(rest.trim(), '', `${a.id}: step detail not from the activity: ${s.detail}`);
     }
@@ -741,5 +741,42 @@ t('reviewers\' picks ride in the kit step only, with the reviewer\'s words and n
   assert.ok(h.includes(esc(data.picks.value)) && h.includes('17 November 2026'));
   assert.strictEqual(P.picksHtml(null, data.picks, { esc }), '');
   assert.strictEqual(P.picksHtml({ item: 'x', options: [] }, data.picks, { esc }), '');
+});
+t('a booking window in dates.yaml dates its start step, fixed, with the source and a closed-window note', () => {
+  const real = byId['run-great-north-run'];
+  assert.ok(real.dates.book && real.dates.book.step === 1 && real.dates.book.for === real.dates.next, 'the GNR ballot window is in dates.yaml');
+  const mk = book => Object.assign({}, real, { dates: Object.assign({}, real.dates, { next: '2027-09-12', book: Object.assign({ step: 1, for: '2027-09-12', note: 'N.', source: { label: 'S', url: 'https://s.example/' } }, book) }) });
+  const steps = p => Object.fromEntries(p.steps.filter(s => !s.week).map(s => [s.id, s]));
+  // opens in a month: the step goes on its first day, the steps before it and the dates check a week earlier
+  let a = mk({ from: '2027-01-01', by: '' }), p = P.build(a, data, { date: '2027-09-12', today: TODAY }), s = steps(p);
+  assert.strictEqual(s['start-1'].date, '2027-01-01'); assert.strictEqual(s['start-1'].flexible, false);
+  assert.strictEqual(s['start-1'].why, data.steps.book_window.why);
+  assert.ok(s['start-1'].detail.endsWith('N.') && s['start-1'].links.some(l => l.url === 'https://s.example/'));
+  assert.strictEqual(s['start-0'].date, '2026-12-25'); assert.strictEqual(s.dates.date, '2026-12-25');
+  assert.ok(!p.notes.some(n => n.includes('window')));
+  // open already: today
+  p = P.build(mk({ from: '2026-10-01', by: '' }), data, { date: '2027-09-12', today: TODAY }); s = steps(p);
+  assert.strictEqual(s['start-1'].date, TODAY); assert.strictEqual(s['start-0'].date, TODAY);
+  // only a last day, which the run-up would miss: a week from today, or the last day if sooner
+  p = P.build(mk({ from: '', by: '2026-12-11' }), data, { date: '2027-09-12', today: TODAY }); s = steps(p);
+  assert.strictEqual(s['start-1'].date, '2026-11-09');
+  p = P.build(mk({ from: '', by: '2026-11-05' }), data, { date: '2027-09-12', today: TODAY }); s = steps(p);
+  assert.strictEqual(s['start-1'].date, '2026-11-05');
+  // a last day the run-up already meets: the run-up's date stands
+  const free = P.build(Object.assign({}, real, { dates: Object.assign({}, real.dates, { book: null }) }), data, { date: '2027-09-12', today: TODAY });
+  p = P.build(mk({ from: '', by: '2027-08-30' }), data, { date: '2027-09-12', today: TODAY });
+  assert.strictEqual(steps(p)['start-1'].date, steps(free)['start-1'].date);
+  // closed before today: on today, with the note
+  p = P.build(mk({ from: '', by: '2026-10-20' }), data, { date: '2027-09-12', today: TODAY }); s = steps(p);
+  assert.strictEqual(s['start-1'].date, TODAY);
+  assert.ok(p.notes.includes(data.notes.book_closed.replace('{step}', real.start[1]).replace('{by}', '20 October 2026')));
+  // another year's date, or a month plan: the window does not apply
+  p = P.build(mk({ from: '2027-01-01', by: '' }), data, { date: '2028-09-10', today: TODAY });
+  assert.notStrictEqual(steps(p)['start-1'].date, '2027-01-01'); assert.notStrictEqual(steps(p)['start-1'].why, data.steps.book_window.why);
+  p = P.build(mk({ from: '2027-01-01', by: '' }), data, { month: '2027-09', today: TODAY });
+  assert.notStrictEqual(steps(p)['start-1'].why, data.steps.book_window.why);
+  // every word still sourced, and the steps in date order
+  p = P.build(mk({ from: '2027-01-01', by: '' }), data, { date: '2027-09-12', today: TODAY });
+  const ds = p.steps.map(x => x.date); assert.deepStrictEqual(ds, ds.slice().sort());
 });
 console.log(n + ' tests passed');

@@ -294,6 +294,24 @@
     });
     // 2. Fixed yearly dates (dates.yaml)
     if (a.dates) add('dates', 'book', S.dates.at, false, { text: S.dates.text, detail: a.dates.note, why: S.dates.why, links: [{ label: a.dates.source.label, url: a.dates.source.url, region: 'any', why: '', aff: null }] });
+    // 2b. The organiser's booking window for this year's date (dates.yaml → book; Planner Plus, 17 Nov 2026). The start
+    //     step it names is dated by the window, not the run-up: on the day it opens (or today, if open already), never
+    //     after its last day (see below for a window with only a last day). Fixed, so My year never moves it. The steps before it, and the dates check, come a week earlier.
+    //     A window that has already closed puts the step on today with a note that says so.
+    const BW = a.dates && a.dates.book, ws = BW && !byMonth && BW.for === plan.date ? steps.find(s => s.id === 'start-' + BW.step) : null;
+    if (ws) {
+      const t0 = iso(today);
+      // with only a last day: keep the run-up's date if it is in time; if not, a week from today (so a place that may
+      // fill is not left to the last day), or the last day if that is sooner
+      const wkOn = iso(addDays(today, 7));
+      let d = BW.from ? (BW.from > t0 ? BW.from : t0) : ws.date <= BW.by ? ws.date : BW.by < wkOn ? BW.by : wkOn;
+      if (BW.by && d > BW.by) d = BW.by;
+      if (d < t0) { d = t0; plan.notes.push(fill(N.book_closed, { step: ws.text, by: longDate(parse(BW.by)) })); }
+      Object.assign(ws, { date: d, flexible: false, why: S.book_window.why, detail: [ws.detail, BW.note].filter(Boolean).join(' '),
+        links: ws.links.concat([{ label: BW.source.label, url: BW.source.url, region: 'any', why: '', aff: null }]) });
+      let wk = iso(addDays(parse(d), -7)); if (wk < t0) wk = t0;
+      steps.forEach(s => { const m = /^start-(\d+)$/.exec(s.id); if ((s.id === 'dates' || (m && +m[1] < BW.step)) && s.date > wk) s.date = wk; });
+    }
     // 3. Booking options the activity lists
     if (a.book && a.book.length) add('book', 'book', S.book.at, false, { text: S.book.text, why: S.book.why, links: links(a.book) });
     // 4. Training, from the engine only. With the engine's dated data (settings.training[event], from tools/engine.py

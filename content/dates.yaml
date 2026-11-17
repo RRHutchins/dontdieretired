@@ -6,6 +6,10 @@
 #   `source` is that page. Copy only what the page says.
 # - `months` are the months it usually falls in (1 = January). If the page gives this year's date, put it in `next`
 #   (YYYY-MM-DD) with `next_source`; the build ignores a `next` date once it has passed. Never guess a date.
+# - `book` (optional, Planner Plus 17 Nov 2026): the organiser's own entry or booking window for the `next` date. `step` is
+#   the index (from 0) of the activity's start step it dates, `from` when it opens (a day, or YYYY-MM when the page gives
+#   only the month: the plan then uses the 1st and the note says so), `by` the last day to do it (only if the page gives
+#   one, or a fixed date the step names), `for` the `next` date it belongs to, `note` what the page says, `source` the page.
 # - Re-check every entry once a year: dates move.
 dates:
   - activity: run-great-north-run
@@ -14,6 +18,12 @@ dates:
     next: "2027-09-12"
     next_source: {label: "Great Run: Great North Run", url: "https://www.greatrun.org/events/great-north-run/", checked: "2026-11-16"}
     source: {label: "Great Run news: Ballot for the 2027 AJ Bell Great North Run is now open", url: "https://www.greatrun.org/news/ballot-for-the-2026-aj-bell-great-north-run-is-now-open/", checked: "2026-11-16"}
+    book:
+      step: 1
+      from: "2027-01"
+      for: "2027-09-12"
+      note: "Great Run says a second ballot for the 2027 race will be held in January 2027, with the final places confirmed then; it has not given the day, so look out for it from the start of January."
+      source: {label: "Great Run news: Ballot for the 2027 AJ Bell Great North Run is now open", url: "https://www.greatrun.org/news/ballot-for-the-2026-aj-bell-great-north-run-is-now-open/", checked: "2026-11-17"}
   - activity: go-to-edinburgh-fringe
     months: [8]
     note: Runs for about three weeks each August. The 2027 Fringe is 6 to 30 August; shows are announced in batches from 18 February 2027 and the printed programme launches on 2 June 2027.
@@ -36,6 +46,12 @@ dates:
     next: "2027-03-26"
     next_source: {label: "Devizes to Westminster International Canoe Race", url: "https://dwrace.co.uk/", checked: "2026-11-11"}
     source: {label: "DW race: information", url: "https://www.dwrace.co.uk/info", checked: "2026-11-11"}
+    book:
+      step: 1
+      by: "2026-12-11"
+      for: "2027-03-26"
+      note: "The DW Training Day page lists courses on 24 October and 12 December 2026 at Newbury Canoe Club, 10am to 4pm, capped at 16; you pay Newbury Canoe Club in advance and tell the organiser."
+      source: {label: "DW Race: DW Training Day", url: "https://www.dwrace.co.uk/dw-training-day", checked: "2026-11-17"}
   - activity: row-across-the-atlantic
     months: [12]
     note: The annual race begins in early December; crews take from about a month to more than three months to cross.
