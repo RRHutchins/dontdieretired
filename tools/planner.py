@@ -7,6 +7,7 @@ Run on its own for a summary:  python3 tools/planner.py
 """
 from __future__ import annotations
 
+import copy
 import datetime as dt
 import re
 from pathlib import Path
@@ -21,6 +22,8 @@ NO_TEXT = ("first", "second", "ongoing", "after_start", "later")   # an activity
 TRIP_KEYS = ("head", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs", "getting_help_span",
              "head_away", "stay", "stay_fold", "stay_help_span", "stay_help_day", "stay_help_month", "stay_more", "eat", "eat_help",
              "near", "near_help", "near_area", "near_tours", "near_tours_help", "goes", "goes_help", "add", "add_on", "added", "see_plan", "pick_date", "pick_why_event", "pick_why_fixed", "pick_why_long")
+PICK_KEYS = ("head", "open", "top", "good", "value", "read", "buy", "note")
+PICK_TIERS = ("top", "good", "value")
 TOUR_AFF = ("viator", "getyourguide")   # the only travel-side affiliate schemes Robin has joined (site.yaml → affiliates)
 NEAR_MAX, GOES_MAX = 6, 4
 COUNTRY = re.compile(r"[A-Z]{2}")
@@ -33,6 +36,27 @@ PLUS_KEYS = ("intro", "diy_head", "diy_tag", "diy_help", "diy_open", "diy_book",
 
 def _load(p: Path):
     return yaml.safe_load(p.read_text(encoding="utf-8")) if p.exists() else None
+
+
+def resolve_picks(c: dict, shared: dict) -> dict | None:
+    """An activity's reviewers' picks: its own `picks:` block, or the key of a shared block in content/picks.yaml (one review
+    serves every walking or birding activity, and is re-checked in one place). Returns a fresh copy; build.py validates it."""
+    pk = c.get("picks")
+    if isinstance(pk, str):
+        assert pk in shared, f"challenge {c['id']}: picks key {pk!r} is not in content/picks.yaml"
+        pk = shared[pk]
+    return copy.deepcopy(pk) if pk else None
+
+
+def _picks(c: dict, shared: dict):
+    """The plan's kit step carries the picks only with the activity's own kit list (row 17, 17 Nov 2026)."""
+    pk = resolve_picks(c, shared)
+    if not pk or not c.get("kit"): return None
+    opts = sorted(pk["options"], key=lambda o: PICK_TIERS.index(o["tier"]))
+    for o in opts:
+        assert o.get("tier") in PICK_TIERS and o.get("name") and o.get("label") and o.get("reviewer") and str((o.get("review") or {}).get("url", "")).startswith("https://") and str(o.get("buy", "")).startswith("https://www.amazon.co.uk/"), f"challenge {c['id']}: a pick needs tier, name, label, reviewer, review url and an amazon.co.uk buy link"
+    return {"item": pk["item"], "checked": max(str(o["review"]["checked"]) for o in opts),
+            "options": [{"tier": o["tier"], "name": o["name"], "label": o["label"], "reviewer": o["reviewer"], "review": o["review"]["url"], "buy": o["buy"]} for o in opts]}
 
 
 def _months_ok(m) -> bool:
@@ -90,6 +114,9 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
     sp = plus.get("sample_plan") or {}
     assert sp.get("activity") and sp.get("place") and all(re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(sp.get(k, ""))) for k in ("date", "made")), "planner plus.sample_plan: needs activity, place, date and made (YYYY-MM-DD)"
     assert str(sp["made"]) < str(sp["date"]) and (not sp.get("until") or str(sp["until"]) > str(sp["date"])), "planner plus.sample_plan: made before the date, until after it"
+    pw = cfg.get("picks") or {}   # row 17: the words round an activity's reviewers' picks in the kit step
+    for k in PICK_KEYS: assert isinstance(pw.get(k), str) and pw[k].strip(), f"planner picks.{k}: missing"
+    shared_picks = _load(root / "content" / "picks.yaml") or {}
     busy = cfg.get("busy_day", 3)
     assert isinstance(busy, int) and 2 <= busy <= 10, "planner busy_day: a whole number from 2 to 10"
 
@@ -190,6 +217,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
             "links": [{"label": l["label"], "url": l["url"], "region": l.get("region", "any")} for l in c["links"]],
             "book": [{"label": b["label"], "why": b["why"], "url": b["url"], "aff": b.get("aff")} for b in c.get("book") or []],
             "kit": [{"name": x["name"], "why": x["why"], "url": x["url"]} for x in c.get("kit") or []],
+            "picks": _picks(c, shared_picks),
         })
     # Planner Plus day 10: "While you're there" (other activities tied to the same area: same `places` key; not a weekly
     # habit, which is not something you do on a trip) and "Goes well with" (the activity's `related`, then the activities
@@ -216,7 +244,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         a["goes"] = goes[:GOES_MAX]
     data = {"version": 1, "built": today.isoformat(),
             "kinds": {k: {"label": v["label"], "why": v["why"], "why_train": v.get("why_train", ""), "lead_weeks": v["lead_weeks"], "strands": v["strands"]} for k, v in kinds.items()},
-            "steps": steps, "notes": notes, "trip": trip, "plus": {k: v for k, v in (cfg.get("plus") or {}).items() if k != "sample_plan"}, "sample": (cfg.get("plus") or {}).get("sample_plan"), "busy": busy, "events": events, "activities": out}
+            "steps": steps, "notes": notes, "trip": trip, "picks": {k: pw[k] for k in PICK_KEYS}, "plus": {k: v for k, v in (cfg.get("plus") or {}).items() if k != "sample_plan"}, "sample": (cfg.get("plus") or {}).get("sample_plan"), "busy": busy, "events": events, "activities": out}
     return data, warn
 
 

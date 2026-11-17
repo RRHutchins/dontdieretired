@@ -411,6 +411,18 @@ trip:
       countries: any
       section: eat
 
+# Row 17 (17 Nov 2026): an activity's reviewers' picks (`picks:` in challenges.yaml, or a key into content/picks.yaml) shown
+# inside the plan's "Get your kit" step. The reviewers' own labels and links only; we never rank, price or test anything.
+picks:
+  head: "What reviewers recommend: {item}"
+  open: "See what reviewers recommend for {item}"
+  top: "Top pick"
+  good: "Also recommended"
+  value: "Lower-cost pick"
+  read: "Read the review"
+  buy: "Find it on Amazon"
+  note: "Chosen and described by the independent reviewers named; we have not tested these ourselves. Reviews checked {checked}: prices and stock change, so check before you buy."
+
 # Planner Plus day 15 (RUNBOOK §6t): the two ways to plan on every activity page, the paywall, read-only plans and the sample.
 # Words shown to non-members describe only what Plus does today; add a feature here only once it works.
 plus:

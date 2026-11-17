@@ -1,0 +1,58 @@
+# Reviewers' picks shared by several activities (Planner Plus row 17, 17 Nov 2026; rules in RUNBOOK §6t, Robin 12 Nov 2026).
+# An activity points at one with `picks: <key>`; build.py checks each exactly as an activity's own `picks:` block.
+# Every option: a named independent reviewer's own designation (`label`, copied exactly), a quote of at most 30 words copied
+# word for word from the review opened on `checked`, the tier matching that designation (top only for the reviewer's
+# overall pick; value only for their value or budget pick), and an Amazon UK search for the product. No prices, never our
+# own ranking. Re-check every review each spring (or when a product is replaced) and update `checked`.
+
+binoculars:
+  item: Binoculars
+  why: Binoculars bring a bird or a whale close enough to see its markings. In a size such as 10x42, the first number is how many times closer things look and the second is the width of the front lenses in millimetres.
+  options:
+  - tier: top
+    name: Nikon Monarch HG 10x42
+    label: Best overall
+    quote: Well-constructed flagship binoculars marry a respectable 10x magnification to a large-ish objective lens.
+    reviewer: Live Science
+    review: {title: "Best binoculars 2026: Our picks for stargazing, bird-watching and observing wildlife", url: "https://www.livescience.com/best-binoculars", checked: "2026-11-17"}
+    buy: https://www.amazon.co.uk/s?k=Nikon+Monarch+HG+10x42
+  - tier: good
+    name: Leica Noctivid 10x42
+    label: Best binoculars for bird watching
+    quote: Large lensed premium binoculars that are a birdwatcher’s dream.
+    reviewer: Live Science
+    review: {title: "Best binoculars 2026: Our picks for stargazing, bird-watching and observing wildlife", url: "https://www.livescience.com/best-binoculars", checked: "2026-11-17"}
+    buy: https://www.amazon.co.uk/s?k=Leica+Noctivid+10x42
+  - tier: value
+    name: OM System 8x42 Pro
+    label: Best value
+    quote: An able travel companion, these portable roof prism binos are excellent for bringing wildlife closer.
+    reviewer: Live Science
+    review: {title: "Best binoculars 2026: Our picks for stargazing, bird-watching and observing wildlife", url: "https://www.livescience.com/best-binoculars", checked: "2026-11-17"}
+    buy: https://www.amazon.co.uk/s?k=OM+System+8x42+Pro+binoculars
+
+walking-boots:
+  item: Walking boots
+  why: You wear them for every step of the walk. Whichever pair you choose, try them on in the afternoon with your walking socks, and break them in before a long day.
+  options:
+  - tier: top
+    name: Scarpa Terra GTX
+    label: Best Overall Walking Boot
+    quote: The versatility, quality and comfort sealed the deal for our testers.
+    reviewer: OutdoorsMagic
+    review: {title: "Best Walking Boots of 2026 | Fully Tested and Rated by Our Experts", url: "https://outdoorsmagic.com/article/best-walking-boots/", checked: "2026-11-17"}
+    buy: https://www.amazon.co.uk/s?k=Scarpa+Terra+GTX+walking+boots
+  - tier: good
+    name: Helly Hansen Ascender Mid HT
+    label: Best Lightweight Walking Boot
+    quote: I’ve found that they perform best for three-season trail walking here in the UK.
+    reviewer: OutdoorsMagic
+    review: {title: "Best Walking Boots of 2026 | Fully Tested and Rated by Our Experts", url: "https://outdoorsmagic.com/article/best-walking-boots/", checked: "2026-11-17"}
+    buy: https://www.amazon.co.uk/s?k=Helly+Hansen+Ascender+Mid+HT
+  - tier: value
+    name: Mammut Sertig III Mid GTX
+    label: Best Value Walking Boot
+    quote: This has recently become our favourite good value option.
+    reviewer: OutdoorsMagic
+    review: {title: "Best Walking Boots of 2026 | Fully Tested and Rated by Our Experts", url: "https://outdoorsmagic.com/article/best-walking-boots/", checked: "2026-11-17"}
+    buy: https://www.amazon.co.uk/s?k=Mammut+Sertig+III+Mid+GTX

@@ -146,6 +146,7 @@
       + (s.detail ? '<p class="pl-detail">' + esc(s.detail) + '</p>' : '')
       + (links.length ? '<ul class="pl-links">' + links.map(linkHtml).join('') + '</ul>' : '')
       + (items.length ? '<ul class="pl-links pl-kit">' + items.map(x => '<li><a href="' + esc(x.aff ? affUrl(x.url, x.aff) : x.url) + '" target="_blank" rel="' + (x.aff ? AFF_REL : 'noopener') + '">' + esc(x.name) + '</a><span class="pl-lwhy">' + esc(x.why) + '</span></li>').join('') + '</ul>' : '')
+      + (s.picks ? P.picksHtml(s.picks, S.picks, { esc, aff: u => affUrl(u, 'amazon') }) : '')
       // a stay that began in an earlier month: point back to it rather than repeating "everything above is ready"
       + (s.strand === 'day' && s.until && view === 'month' && s.date.slice(0, 7) !== month
         ? '<p class="pl-why">Your stay began in ' + esc(P.MONTHS[+s.date.slice(5, 7) - 1]) + '. <button type="button" class="linklike" data-my-goto="' + s.date.slice(0, 7) + '">See ' + esc(P.monthYear(s.date.slice(0, 7))) + '</button> for the steps to get ready.</p>'
@@ -227,7 +228,7 @@
     const u = $('[data-my-undated]');
     u.hidden = !all.undated; u.innerHTML = all.undated ? (all.undated === 1 ? 'One more thing on <a href="/list/#mine">your list</a> has no date yet.' : all.undated + ' more things on <a href="/list/#mine">your list</a> have no date yet.') + ' Give one a day or a month with Plan this on its page.' : '';
     // the tour searches under "While you're there" (day 10) carry affiliate ids too
-    const aff = all.steps.some(s => (s.links || []).some(l => l.aff) || (s.items || []).some(x => x.aff)) || all.plans.some(p => p.plan && p.plan.status === 'ok' && p.away && p.cid && byId[p.cid]
+    const aff = all.steps.some(s => (s.links || []).some(l => l.aff) || (s.items || []).some(x => x.aff) || s.picks) || all.plans.some(p => p.plan && p.plan.status === 'ok' && p.away && p.cid && byId[p.cid]
       && P.trip(byId[p.cid], S, { place: (all.items[p.id] || {}).where || '', until: p.until }).near);
     const ad = $('[data-my-aff]'); ad.hidden = !(aff && view === 'month'); ad.textContent = S.notes.affiliate;
     $('[data-my-saved]').textContent = S.notes.saved;

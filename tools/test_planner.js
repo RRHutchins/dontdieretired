@@ -709,4 +709,37 @@ t('a long plan: the next four training weeks in full, the rest one line each, go
   assert.strictEqual(w.open.size, 4); assert.strictEqual(w.open.size + w.later.size, weeks.length - 2);
   assert.strictEqual(P.openWeeks({ steps: [] }, TODAY, 4).open.size, 0);
 });
+t('reviewers\' picks ride in the kit step only, with the reviewer\'s words and never in the calendar (row 17)', () => {
+  const withPicks = acts.filter(a => a.picks);
+  assert.ok(withPicks.length >= 3, 'some activities carry picks');
+  const yaml = require('fs').readFileSync(path.join(__dirname, '..', 'content', 'challenges.yaml'), 'utf8');
+  for (const a of withPicks) {
+    assert.ok(a.kit.length, `${a.id}: picks only travel with a kit list`);
+    const tiers = a.picks.options.map(o => o.tier);
+    assert.deepStrictEqual(tiers, tiers.slice().sort((x, y) => ['top', 'good', 'value'].indexOf(x) - ['top', 'good', 'value'].indexOf(y)), `${a.id}: options in tier order`);
+    a.picks.options.forEach(o => { assert.ok(/^https:\/\//.test(o.review) && /^https:\/\/www\.amazon\.co\.uk\//.test(o.buy), `${a.id}: links`); assert.ok(!/[£$€]\s?\d/.test(o.label + o.name), `${a.id}: no prices`); });
+    assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(a.picks.checked));
+    const s = P.suggest(a, data, { today: TODAY });
+    const plan = P.build(a, data, Object.assign({ today: TODAY }, s.date ? { date: s.date } : { month: s.month }));
+    if (plan.status !== 'ok') continue;
+    const kit = plan.steps.filter(st => st.strand === 'kit');
+    assert.strictEqual(kit.length, 1, `${a.id}: one kit step`);
+    assert.deepStrictEqual(kit[0].picks, a.picks, `${a.id}: the kit step carries the picks`);
+    assert.ok(plan.steps.filter(st => st.picks).length === 1, `${a.id}: nowhere else`);
+    const calText = P.ics([{ id: a.id, cid: a.id, title: a.title, label: plan.label, steps: plan.steps }], data, { today: TODAY, stamp: '20261102T000000Z' }).text;
+    assert.ok(calText.includes('BEGIN:VEVENT'), `${a.id}: a calendar was made`);
+    a.picks.options.forEach(o => assert.ok(!calText.includes(o.buy) && !calText.includes(o.review), `${a.id}: picks never go in the calendar file`));
+  }
+  // an activity whose picks come from content/picks.yaml gets them in full
+  assert.ok(/\n  picks: binoculars\n/.test(yaml) && byId['go-on-a-guided-bird-walk'].picks.item === 'Binoculars');
+  // the HTML: escaped, every word from planner.yaml or the reviewer, the Amazon link tagged and marked sponsored
+  const esc = x => String(x).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const pk = { item: 'Walking <boots>', checked: '2026-11-17', options: [{ tier: 'value', name: 'X & Y', label: 'Best "value"', reviewer: 'R', review: 'https://r.example/a', buy: 'https://www.amazon.co.uk/s?k=x' }] };
+  const h = P.picksHtml(pk, data.picks, { esc, aff: u => u + '&tag=t' });
+  assert.ok(h.includes('walking &lt;boots&gt;') && h.includes('X &amp; Y') && h.includes('&quot;value&quot;') && !h.includes('<boots>'));
+  assert.ok(h.includes('href="https://www.amazon.co.uk/s?k=x&amp;tag=t"') && /rel="sponsored nofollow noopener"/.test(h));
+  assert.ok(h.includes(esc(data.picks.value)) && h.includes('17 November 2026'));
+  assert.strictEqual(P.picksHtml(null, data.picks, { esc }), '');
+  assert.strictEqual(P.picksHtml({ item: 'x', options: [] }, data.picks, { esc }), '');
+});
 console.log(n + ' tests passed');

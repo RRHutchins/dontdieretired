@@ -1262,3 +1262,10 @@ html{scroll-padding-top:84px}
 .hub-promo{margin:28px 0;padding:18px 20px;border-radius:var(--r);background:var(--stone);border-left:6px solid var(--c,var(--move))}
 .hub-promo h2{margin-top:0}.hub-promo p:last-child{margin-bottom:0;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
 @media (max-width:600px){.hub-filters{grid-template-columns:1fr 1fr;padding:12px;gap:8px 10px}.hub-filters label:first-child{grid-column:1/-1}.hub-filters label{font-size:.85rem}}
+/* Reviewers' picks inside a plan's kit step (Planner Plus row 17, 17 Nov 2026) */
+.pl-picks{margin:6px 0 4px}.pl-picks summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
+.pl-picks summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.pl-picks-list{list-style:none;margin:0 0 6px;padding:0}
+.pl-picks-list li{border-top:1px solid var(--line);padding:8px 0 4px;line-height:1.45;overflow-wrap:anywhere}.pl-picks-list li:first-child{border-top:0}
+.pl-picks-list .pl-lwhy{margin:2px 0}
+.pl-picks-links a{display:inline-block;min-height:44px;line-height:44px;margin-right:16px}

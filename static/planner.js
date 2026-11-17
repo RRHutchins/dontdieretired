@@ -334,7 +334,8 @@
     // 6. Kit the activity lists: after the first session for a course, two weeks before anything else
     if (a.kit && a.kit.length) {
       const k = a.kind === 'skill' ? S.kit_after : S.kit_before;
-      add('kit', 'kit', k.at, true, { text: k.text, why: k.why, links: [], items: a.kit.map(x => ({ name: x.name, why: x.why, url: x.url, aff: /amazon\./.test(x.url) ? 'amazon' : null })) });
+      add('kit', 'kit', k.at, true, Object.assign({ text: k.text, why: k.why, links: [], items: a.kit.map(x => ({ name: x.name, why: x.why, url: x.url, aff: /amazon\./.test(x.url) ? 'amazon' : null })) },
+        a.picks && a.picks.options && a.picks.options.length ? { picks: a.picks } : {}));   // row 17: the reviewers' picks travel with the kit list
     }
     // 7. Safety, every line kept
     //    (for a month plan the step is "before you start": there is no single day to be the day before)
@@ -590,5 +591,23 @@
     return { open: new Set(ahead.slice(0, n)), later: new Set(ahead.slice(n)) };
   }
 
-  return { VERSION, LEVELS, MAX_SPAN, openWeeks, okUntil, build, suggest, trip, extras, diy, whenLabel, cleanPlace, combine, applyMarks, ics, calendar, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  /* picksHtml(picks, words, { esc, aff }) → HTML for the reviewers' picks inside a kit step (row 17, 17 Nov 2026).   PURE.
+     picks: the planner entry's `picks` ({ item, checked, options: [{ tier, name, label, reviewer, review, buy }] });
+     words: content/planner.yaml → picks; esc: the page's HTML escaper; aff(url): the page's affiliate tagger for Amazon.
+     Every word is the reviewer's (label) or planner.yaml's; we never rank, price or describe a product ourselves. */
+  function picksHtml(pk, W, o) {
+    if (!pk || !W || !(pk.options || []).length) return '';
+    const esc = o.esc, aff = o.aff || (u => u), item = String(pk.item || '');
+    const low = item.charAt(0).toLowerCase() + item.slice(1);
+    const fill_ = (t, v) => String(t).replace(/\{(\w+)\}/g, (m, k) => (k in v ? v[k] : m));
+    return '<details class="pl-picks"><summary>' + esc(fill_(W.open, { item: low })) + '</summary>'
+      + '<ul class="pl-picks-list" aria-label="' + esc(fill_(W.head, { item: low })) + '">'
+      + pk.options.map(x => '<li><span class="pl-tag">' + esc(W[x.tier] || x.tier) + '</span> <strong>' + esc(x.name) + '</strong>'
+        + '<span class="pl-lwhy">' + esc(x.reviewer) + ': \u201c' + esc(x.label) + '\u201d</span>'
+        + '<span class="pl-picks-links"><a href="' + esc(x.review) + '" target="_blank" rel="noopener">' + esc(W.read) + '<span class="sr-only"> of the ' + esc(x.name) + ' (' + esc(x.reviewer) + ')</span></a>'
+        + ' <a href="' + esc(aff(x.buy)) + '" target="_blank" rel="sponsored nofollow noopener">' + esc(W.buy) + '<span class="sr-only">: ' + esc(x.name) + '</span></a></span></li>').join('')
+      + '</ul><p class="pl-lwhy">' + esc(fill_(W.note, { checked: longDate(parse(pk.checked)) })) + '</p></details>';
+  }
+
+  return { VERSION, LEVELS, MAX_SPAN, picksHtml, openWeeks, okUntil, build, suggest, trip, extras, diy, whenLabel, cleanPlace, combine, applyMarks, ics, calendar, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

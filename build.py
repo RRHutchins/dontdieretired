@@ -21,6 +21,7 @@ Outputs:
 from __future__ import annotations
 
 import argparse
+import copy
 import datetime as dt
 import html
 import json
@@ -809,6 +810,12 @@ def build(make_social=True):
     ch_file = CONTENT / "challenges.yaml"
     if ch_file.exists():
         chs = load_yaml(ch_file)
+        # Reviewers' picks shared by several activities (row 17, 17 Nov 2026): `picks: <key>` points into content/picks.yaml
+        _shared_picks = load_yaml(CONTENT / "picks.yaml") if (CONTENT / "picks.yaml").exists() else {}
+        for c in chs:
+            if isinstance(c.get("picks"), str):
+                assert c["picks"] in _shared_picks, f"challenge {c['id']}: picks key {c['picks']!r} is not in content/picks.yaml"
+                c["picks"] = copy.deepcopy(_shared_picks[c["picks"]])
         by_slug = {a["slug"]: a for a in arts}
         LBL = {"effort": {"gentle": "Gentle", "moderate": "Moderate", "demanding": "Demanding"},
                "cost": {"free": "Free", "low": "Under £100 / $130", "mid": "£100 to £500 / $130 to $650", "high": "Over £500 / $650"},
@@ -958,7 +965,7 @@ def build(make_social=True):
         # the one worked sample plan non-members see (RUNBOOK §6t day 15): noindex, not in the sitemap until launch
         _sp = _pdata["sample"]; _sc = next((c for c in chs if c["id"] == _sp["activity"]), None)
         assert _sc is not None, f"planner plus.sample_plan: no activity {_sp['activity']}"
-        _u = out("/planner-plus/sample/", "plus-sample.html", c=_sc, sample=_sp, pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"], "plus": _pdata["plus"]},
+        _u = out("/planner-plus/sample/", "plus-sample.html", c=_sc, sample=_sp, pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"], "plus": _pdata["plus"], "picks": _pdata["picks"]},
             pkind=_pdata["kinds"][_sc["kind"]], pext={i: _pby[i] for i in [n[0] for n in _sc["plan"]["nearby"]] + _sc["plan"]["goes"]})
         if _paywall: urls.append(_u)   # launch: the sample is a public page (My year and the account stay noindex: personal, nothing to index)
         urls.append(out("/list/", "list.html", challenges=chs, L=LBL, used_cats={c["category"] for c in chs}, colls=colls, shapes=shapes, area_n=area_n))
@@ -997,7 +1004,7 @@ def build(make_social=True):
             # reverse links (Robin, 7 Nov 2026: related activities should lead readers on): pages that list this one as related
             rel += [m for m in chs if m is not c and c["id"] in (m.get("related") or []) and m not in rel]
             more = (rel + [m for m in more if m not in rel])[:max(6 if c.get("collection") else 4, min(len(rel), 8))]
-            urls.append(out(f"/list/{c['id']}/", "challenge.html", c=c, L=LBL, more=more, total=len(chs), pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"], "plus": _pdata["plus"]}, pkind=_pdata["kinds"][c["kind"]],
+            urls.append(out(f"/list/{c['id']}/", "challenge.html", c=c, L=LBL, more=more, total=len(chs), pset={"steps": _pdata["steps"], "notes": _pdata["notes"], "trip": _pdata["trip"], "plus": _pdata["plus"], "picks": _pdata["picks"]}, pkind=_pdata["kinds"][c["kind"]],
                             pext={i: _pby[i] for i in [n[0] for n in c["plan"]["nearby"]] + c["plan"]["goes"]}))
             pages.append({"title": c["title"], "key": c.get("seo_title") or "", "url": f"/list/{c['id']}/", "category": c["category"], "excerpt": c["why_short"],
                           "tags": ["activity", "challenge", c["kind"], c["effort"]] + ([c["collection"]] if c.get("collection") else []) + c["search_words"].split(),

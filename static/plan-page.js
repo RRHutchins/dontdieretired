@@ -222,7 +222,7 @@
       if (st.week) { weeksDone.add(st.week); html += weekHtml(plan, st.week, wks.later.has(st.week)); return; }
       const gone = st.date < today;
       const links = st.links || [];
-      if (links.some(l => l.aff) || (st.items || []).some(x => x.aff)) hasAff = true;
+      if (links.some(l => l.aff) || (st.items || []).some(x => x.aff) || st.picks) hasAff = true;
       html += '<li class="pl-step' + (st.strand === 'day' ? ' is-day' : '') + (gone && !st.done ? ' is-gone' : '') + (st.done ? ' is-done' : '') + '" data-strand="' + esc(st.strand) + '">'
         + '<p class="pl-date"><time datetime="' + st.date + '">' + esc(st.until ? range(st.date, st.until) : dayText(st.date)) + '</time> <span class="pl-tag">' + esc(STRAND[st.strand] || st.strand) + '</span>'
         + (st.done ? ' <span class="pl-tag">Done</span>' : '') + (st.moved ? ' <span class="pl-tag my-tag-moved">Moved</span>' : '') + (gone && !st.done ? ' <span class="pl-tag pl-tag-gone">Gone by</span>' : '') + '</p>'
@@ -230,6 +230,7 @@
         + (st.detail ? '<p class="pl-detail">' + esc(st.detail) + '</p>' : '')
         + (links.length ? '<ul class="pl-links">' + links.map(l => linkHtml(l, multi)).join('') + '</ul>' : '')
         + ((st.items || []).length ? '<ul class="pl-links pl-kit">' + st.items.map(x => '<li><a href="' + esc(x.aff ? affUrl(x.url, x.aff) : x.url) + '" target="_blank" rel="' + (x.aff ? AFF_REL : 'noopener') + '">' + esc(x.name) + '</a><span class="pl-lwhy">' + esc(x.why) + '</span></li>').join('') + '</ul>' : '')
+        + (st.picks ? P.picksHtml(st.picks, S.picks, { esc, aff: u => affUrl(u, 'amazon') }) : '')
         + '<p class="pl-why"><span>Why then:</span> ' + esc(st.why) + '</p>'
         + (st.moved ? '<p class="pl-why my-moved">' + esc(st.moved.why) + '</p>' : '')
         + (st.id === 'train-start' && plan.train ? aboutHtml(plan.train) : '') + (st.strand === 'day' ? tripHtml(plan) : '') + '</li>';
