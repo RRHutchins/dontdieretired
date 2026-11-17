@@ -26,6 +26,7 @@ sources:
 photo_file: "File:Turntables and mixer.jpg"
 photo_caption: "A pair of Technics 1200 turntables either side of a DJ mixer. The equipment is not Melanie Harris's."
 photo_alt: "Two silver record decks with black vinyl records on them and a small mixer with sliders between them."
+photo_checked: 2026-11-17
 ---
 Melanie Harris has been on the dancefloor since the late 1980s. About a year before the Express & Star told her story in June 2025, she decided it was time to be the one choosing the records.
 

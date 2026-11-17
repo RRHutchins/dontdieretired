@@ -29,6 +29,7 @@ sources:
 photo_file: "File:Loaded touring bicycle.JPG"
 photo_caption: "A touring bicycle loaded with panniers and a sleeping mat. The bicycle is not Mark Herbst's."
 photo_alt: "A black touring bike with four black panniers, a handlebar bag and a blue roll strapped on the rack, parked by a road in open, dry hills."
+photo_checked: 2026-11-17
 ---
 On 27 November 2025, a loaded touring bike rolled back into Bangkok. It had left the Thai capital in January and covered more than 30,000 km (18,641 miles) through 25 countries in between. Nobody was waiting at the finish.
 
