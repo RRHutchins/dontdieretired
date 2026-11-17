@@ -23,6 +23,9 @@ try_this_plus:
   - "Within three months, ask a local collective, bar or community event for a 45-minute warm-up slot, and play it."
 sources:
   - {title: "From dancefloor to decks: 56-year-old 'Mom-A-Vibez' makes DJ festival debut in Moseley", publisher: "Express & Star (Your World)", date: "25 June 2025", url: "https://www.expressandstar.com/your-world/2025/06/25/from-dancefloor-to-decks-56-year-old-mom-a-vibez-makes-dj-festival-debut-in-moseley"}
+photo_file: "File:Turntables and mixer.jpg"
+photo_caption: "A pair of Technics 1200 turntables either side of a DJ mixer. The equipment is not Melanie Harris's."
+photo_alt: "Two silver record decks with black vinyl records on them and a small mixer with sliders between them."
 ---
 Melanie Harris has been on the dancefloor since the late 1980s. About a year before the Express & Star told her story in June 2025, she decided it was time to be the one choosing the records.
 

@@ -26,6 +26,9 @@ sources:
   - {title: "69-year-old bikes 30,000 km around globe to take record, raises $70k for cancer research", publisher: "Guinness World Records (Katherine Gross)", date: "28 September 2026", url: "https://www.guinnessworldrecords.com/news/2026/9/69-year-old-bikes-30000-km-around-globe-to-take-record-raises-70k-for-cancer-research"}
   - {title: "69-year-old Canadian bikes around the world, raises $50K for cancer research", publisher: "Global News (Megan King)", date: "3 December 2025", url: "https://globalnews.ca/news/11557741/69-year-old-ontario-man-bikes-around-the-world/"}
   - {title: "Orillia, Ont. man, 69, completes cycling journey across the world in support of cancer research", publisher: "CTV News Barrie (Jocelyn Martin)", date: "8 January 2026", url: "https://www.ctvnews.ca/barrie/article/orillia-ont-man-completes-cycling-journey-across-the-world-in-support-of-cancer-research/"}
+photo_file: "File:Loaded touring bicycle.JPG"
+photo_caption: "A touring bicycle loaded with panniers and a sleeping mat. The bicycle is not Mark Herbst's."
+photo_alt: "A black touring bike with four black panniers, a handlebar bag and a blue roll strapped on the rack, parked by a road in open, dry hills."
 ---
 On 27 November 2025, a loaded touring bike rolled back into Bangkok. It had left the Thai capital in January and covered more than 30,000 km (18,641 miles) through 25 countries in between. Nobody was waiting at the finish.
 
