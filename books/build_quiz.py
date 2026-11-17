@@ -314,32 +314,50 @@ def fir_tree(c, tx, ty, h, snow, star):
 
 
 def sun_hat(c, cx, cy, r, gold, white, red):
-    """The sunrise mark wearing a Santa hat (Robin, 17 Nov 2026). The upright ray sits under the hat, so it is left out."""
+    """The sunrise mark wearing a Santa hat (Robin, 17 Nov 2026): a fur brim that follows the curve of the sun,
+    a crown whose tip flops over to the right and hangs down, and a bobble on the end. The rays the hat
+    covers are left out."""
     import math
+    P = lambda x, y: (cx + x * r, cy + y * r)
     c.setFillColor(gold); c.setStrokeColor(gold)
     p = c.beginPath(); p.moveTo(cx - r, cy); p.arcTo(cx - r, cy - r, cx + r, cy + r, 180, -180); p.close()
     c.drawPath(p, stroke=0, fill=1)
     c.setLineWidth(r * .16); c.setLineCap(1)
     for i in range(7):
-        if i == 3:
+        if i in (1, 2, 3, 4):
             continue
         a = math.radians(15 + i * 25)
         c.line(cx + math.cos(a) * r * 1.3, cy + math.sin(a) * r * 1.3, cx + math.cos(a) * r * 1.72, cy + math.sin(a) * r * 1.72)
     c.setLineCap(0)
-    c.saveState()
-    c.translate(cx, cy + r * .96); c.rotate(14)
-    cone = c.beginPath()                       # the red hat, its tip flopping over
-    cone.moveTo(-r * .40, r * .04)
-    cone.curveTo(-r * .30, r * .34, -r * .12, r * .52, r * .02, r * .55)
-    cone.curveTo(r * .22, r * .52, r * .30, r * .38, r * .40, r * .04)
-    cone.close()
-    c.setFillColor(red); c.drawPath(cone, stroke=0, fill=1)
-    c.setFillColor(white)
-    c.roundRect(-r * .47, -r * .14, r * .94, r * .22, r * .11, stroke=0, fill=1)   # fur brim
-    c.circle(r * .04, r * .57, r * .11, stroke=0, fill=1)                         # bobble
-    c.restoreState()
+    dark = HexColor("#8E2533")
+    # crown: rises from the brim, leans right, and its tip flops over and hangs down the right side
+    cr = c.beginPath()
+    cr.moveTo(*P(-.66, .92))
+    cr.curveTo(*P(-.50, 1.32), *P(-.10, 1.74), *P(.28, 1.80))
+    cr.curveTo(*P(.62, 1.84), *P(.98, 1.52), *P(1.04, .82))
+    cr.lineTo(*P(.86, .80))
+    cr.curveTo(*P(.84, 1.18), *P(.72, 1.44), *P(.50, 1.50))
+    cr.curveTo(*P(.56, 1.30), *P(.64, 1.10), *P(.64, .92))
+    cr.close()
+    c.setFillColor(red); c.drawPath(cr, stroke=0, fill=1)
+    c.setStrokeColor(dark); c.setLineWidth(r * .035); c.setLineCap(1)
+    cl = c.beginPath()                              # the fold
+    cl.moveTo(*P(.50, 1.50)); cl.curveTo(*P(.40, 1.56), *P(.26, 1.62), *P(.16, 1.64))
+    c.drawPath(cl, stroke=1, fill=0)
+    c.setLineCap(0)
+    # fur brim: a thick band hugging the top of the sun, with rounded ends
+    r0, r1, a0, a1 = .90, 1.13, 130, 54
+    br = c.beginPath()
+    br.moveTo(*P(math.cos(math.radians(a0)) * r1, math.sin(math.radians(a0)) * r1))
+    br.arcTo(cx - r1 * r, cy - r1 * r, cx + r1 * r, cy + r1 * r, a0, a1 - a0)
+    br.arcTo(cx - r0 * r, cy - r0 * r, cx + r0 * r, cy + r0 * r, a1, a0 - a1)
+    br.close()
+    c.setFillColor(white); c.drawPath(br, stroke=0, fill=1)
+    for ang in (a0, a1):
+        m = (r0 + r1) / 2
+        c.circle(*P(math.cos(math.radians(ang)) * m, math.sin(math.radians(ang)) * m), (r1 - r0) / 2 * r, stroke=0, fill=1)
+    c.circle(*P(.96, .68), r * .16, stroke=0, fill=1)   # bobble
     c.setStrokeColor(black)
-
 
 def cover(edition, pages):
     import math, random

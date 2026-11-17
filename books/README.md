@@ -92,7 +92,7 @@ so the whole round is in view, and each round's foot gives the page of its answe
   that the user pasted), so a checker must search for each page before fetching it, one at a time. Links pasted by
   the main session into an agent's prompt do not unlock it.
 - **Cover update, 17 Nov 2026 (Robin):** both quiz covers now carry two fir trees on the snowy hill (`fir_tree`, as on
-  the Christmas puzzle book) and the sun wears a Santa hat (`sun_hat`, upright ray left out under the hat). Rebuilt
+  the Christmas puzzle book) and the sun wears a Santa hat (`sun_hat`: fur brim following the curve of the sun, tip flopping down the right side with the bobble hanging, as in the photo Robin sent; the four rays under the hat are left out). Rebuilt
   files and a fresh KDP sheet (Word) sent to Robin for upload; he had uploaded an old puzzle-book cover without trees,
   so the sheet also gives the steps to replace a live book's cover and interior.
 - **Still open:** a checker for duplicate answers is a one-line script, not yet in the repo; no score sheet. Amazon may
