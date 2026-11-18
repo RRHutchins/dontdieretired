@@ -14,6 +14,16 @@
 </aside>
 {% endfor %}
 
+{% if quiz_books %}
+<aside class="promo book-promo" aria-label="Christmas Quiz Book">
+  <a href="/puzzle-books/#quiz" aria-hidden="true" tabindex="-1"><img class="book-promo-img" src="{{ quiz_books[0].cover }}" alt="" width="160" height="240" loading="lazy"></a>
+  <div><p class="kicker">Quiz book, in print on Amazon</p>
+  <h2 class="h4"><a href="/puzzle-books/#quiz">The Don't Die Retired Christmas Quiz Book</a></h2>
+  <p>300 questions in 30 rounds for three nights of family quizzing, with every answer checked.</p>
+  <p>{% for b in quiz_books %}<a class="btn btn-small" href="{{ b.amazon }}" target="_blank" rel="sponsored noopener" data-aff>{{ b.edition }}</a> {% endfor %}<a href="/puzzle-books/#quiz">What's inside →</a></p></div>
+</aside>
+{% endif %}
+
 <nav class="shop-jump" aria-label="Shop sections">
 {% for cid, c in categories.items() %}{% if products.products | selectattr('category','equalto',cid) | list %}<a href="#cat-{{ cid }}">{{ c.label }}</a>{% endif %}{% endfor %}
 </nav>

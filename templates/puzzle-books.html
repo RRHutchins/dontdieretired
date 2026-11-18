@@ -3,7 +3,7 @@
 {% block description %}{{ books[0].title }}: 105 large-print puzzles of seventeen kinds, in three levels, with every solution at the back. A paperback on Amazon.{% endblock %}
 {% block ogimage %}/static/img/books/og-christmas.png{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Puzzle books</p><h1>Puzzles on paper, for the days when nobody has to be anywhere</h1>
+<header class="page-head"><p class="kicker">Puzzle books</p><h1>Puzzles on paper, for the days when nobody has to be anywhere</h1>{% if quiz_books %}<p class="lead">New: <a href="#quiz">The Christmas Quiz Book</a>, in a UK and an American edition.</p>{% endif %}
 <p class="lead">Our printed puzzle books are made by the same people as the <a href="/puzzle/">daily puzzles</a>. They are paperbacks, sold and delivered by Amazon.</p></header>
 
 {% for b in books %}
@@ -41,6 +41,27 @@
 </section>
 {% endif %}
 {% endfor %}
+
+{% if quiz_books %}
+<section class="book" id="quiz">
+  <a class="book-cover" href="{{ quiz_books[0].amazon }}" target="_blank" rel="sponsored noopener" data-aff aria-hidden="true" tabindex="-1">
+    <img src="{{ quiz_books[0].cover }}" alt="" width="800" height="1200" loading="lazy">
+  </a>
+  <div class="book-text">
+    <p class="kicker">New for Christmas 2026</p>
+    <h2>The Don't Die Retired Christmas Quiz Book</h2>
+    <p class="book-lead">Three nights of family quizzing: 300 questions in 30 rounds, ten for Christmas Eve, ten for Christmas Day and ten for Boxing Day.</p>
+    <ul class="book-facts">
+      <li><strong>For the whole table.</strong> Every round has questions marked for anyone, for grown-ups, and a couple of hard ones. Each night has a junior round and a swap round, where grown-ups answer about the children's world and the children about the grown-ups'.</li>
+      <li><strong>Made for the quizmaster.</strong> One person reads aloud. Each round starts on a left-hand page so the whole round is in view, in large type, and its foot gives the page of its answers.</li>
+      <li><strong>Every answer checked.</strong> Each answer was confirmed on a page from a museum, library, official body or other good reference, and many come with the story behind them.</li>
+      <li><strong>Two editions.</strong> Most rounds are in both. The UK edition adds rounds such as Kings and queens and Panto and the stage; the American edition has Presidents and The fifty states. A paperback of 116 pages, 6 × 9 inches.</li>
+    </ul>
+    <p>{% for b in quiz_books %}<a class="btn" href="{{ b.amazon }}" target="_blank" rel="sponsored noopener" data-aff>{{ b.edition }} on Amazon</a> {% endfor %}</p>
+    <p class="book-small">Amazon shows the price and delivery dates. It is our own book, and the links also carry our Amazon affiliate tag, so Amazon may pay us a small commission on top. The questions were researched and written with AI, and every answer was checked against its source.</p>
+  </div>
+</section>
+{% endif %}
 
 <p>Want a puzzle right now? There are <a href="/puzzle/">four free ones on the site every day</a>, at three levels.</p>
 {% endblock %}

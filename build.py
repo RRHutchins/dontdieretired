@@ -696,6 +696,10 @@ def build(make_social=True):
     _books = [b for b in (cfg.get("books") or []) if str(b.get("amazon", "")).startswith("https://www.amazon.")]
     _today = dt.date.today().isoformat()
     env.globals.update(books=_books, books_now=[b for b in _books if str(b.get("until") or "9999") >= _today])
+    # The Christmas Quiz Book (two editions): shown only once BOTH have a real Amazon link
+    _qb = cfg.get("quiz_books") or []
+    _quiz = _qb if _qb and all(str(b.get("amazon", "")).startswith("https://www.amazon.") for b in _qb) else []
+    env.globals.update(quiz_books=_quiz, quiz_now=[b for b in _quiz if str(b.get("until") or "9999") >= _today][:1])
 
     def out(path: str, tpl: str, **ctx):
         p = DIST / path.strip("/") / "index.html" if path != "/" else DIST / "index.html"
@@ -1095,6 +1099,13 @@ def build(make_social=True):
                       "excerpt": "Large-print puzzle books in print on Amazon, made by the people behind the daily puzzles.",
                       "tags": ["puzzle", "puzzles", "book", "books", "christmas", "gift", "present", "sudoku", "large", "print"],
                       "image": "/static/og-default.png", "art": "/static/og-default.png"})
+    if (CONTENT / "quiz_posts.yaml").exists():   # Christmas Quiz Book posts (tools/quiz_posts.py): held until both editions have links
+        import importlib.util as _ilu
+        _spec = _ilu.spec_from_file_location("quiz_posts", ROOT / "tools" / "quiz_posts.py")
+        _qp = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_qp)
+        if make_social:
+            _qp.write_packs()
+        print(f"quiz book cards: {_qp.draw_all(DIST)} posts")
     if (CONTENT / "activity_posts.yaml").exists():   # daily puzzle and thing-to-do posts (tools/daily_posts.py, RUNBOOK §6d)
         import importlib.util as _ilu
         _spec = _ilu.spec_from_file_location("daily_posts", ROOT / "tools" / "daily_posts.py")

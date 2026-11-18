@@ -1,0 +1,84 @@
+# Social posts for the Christmas Quiz Book, UK and American editions (RUNBOOK §6s). `python tools/quiz_posts.py` writes
+# social/<date>-<slug>/meta.json once both editions have an Amazon link in site.yaml → quiz_books (held until then).
+# build.py draws the cards. Posts go out at 20:00 UK (`slot`), so they never take the puzzle, story or thing-to-do slot.
+# Facts only from the book (books/build_quiz.py, books/quiz/rounds.yaml, books/README.md). Questions come from rounds
+# printed in BOTH editions, word for word with the book's answer and note. No prices, reviews, counts of sales or
+# delivery promises. Never edit a post once its date has passed: it would post again.
+posts:
+  - date: "2026-11-18"
+    slug: quiz-christmas-out
+    card: "Our Christmas Quiz Book is out, in a UK and an American edition"
+    text: "It's here: The Don't Die Retired Christmas Quiz Book. 300 questions in 30 rounds, for three nights of family quizzing: Christmas Eve, Christmas Day and Boxing Day. There's a UK edition and an American edition, both paperbacks on Amazon now."
+  - date: "2026-11-22"
+    slug: quiz-christmas-q-gavle-goat
+    question: true
+    card: "Since 1966 the Swedish town of Gävle has built a giant Christmas goat each year. What is it made of?"
+    answer: "Straw. It stands about 13 metres tall, and more often than not it is burned, stolen or vandalised before Christmas is over."
+  - date: "2026-11-24"
+    slug: quiz-christmas-everyone-plays
+    card: "A quiz the whole family can play, from grandparents to grandchildren"
+    text: "Every round of our Christmas Quiz Book has questions marked for anyone, for grown-ups, and a couple of hard ones, so the children can answer some and the grown-ups have to work for the rest."
+  - date: "2026-11-26"
+    slug: quiz-christmas-q-silent-night
+    question: true
+    card: "Silent Night was first sung in an Austrian church on Christmas Eve 1818. Which instrument played along?"
+    answer: "A guitar. Not the organ: it was written for two voices and guitar. There is a famous story that the organ was broken, but there is no evidence for it."
+  - date: "2026-11-28"
+    slug: quiz-christmas-swap-round
+    card: "The swap round: grown-ups answer about the children's world, and the children about yours"
+    text: "Each night of our Christmas Quiz Book has a swap round. Grown-ups get the questions about the children's world, and the children get the ones about the grown-ups'. There's a junior round each night too."
+  - date: "2026-11-30"
+    slug: quiz-christmas-q-rudolph
+    question: true
+    card: "Rudolph the Red-Nosed Reindeer's creator nearly gave him another name. Was it Reginald, Rupert or Roger?"
+    answer: "Reginald. Robert May dreamed him up in 1939 for a free booklet from an American department store, and also thought about Romeo and Rodney."
+  - date: "2026-12-02"
+    slug: quiz-christmas-checked
+    card: "Every answer in our Christmas Quiz Book was checked against a source"
+    text: "No arguments over the trifle. Each answer in our Christmas Quiz Book was checked on a page from a museum, a library, an official body or another good reference, and the answers at the back tell the story behind many of them."
+  - date: "2026-12-04"
+    slug: quiz-christmas-q-yule-lads
+    question: true
+    card: "In Iceland, how many Yule Lads come down from the mountains, one each night, in the run-up to Christmas?"
+    answer: "Thirteen. The first arrives on 12 December. Their mother is the troll Grýla."
+  - date: "2026-12-06"
+    slug: quiz-christmas-two-editions
+    card: "Which edition do you need, UK or American?"
+    text: "Most of the rounds in our Christmas Quiz Book are in both editions. The UK edition adds rounds such as Kings and queens and Panto and the stage; the American edition has Presidents and The fifty states. Each says its edition on the front and the spine."
+  - date: "2026-12-08"
+    slug: quiz-christmas-q-cranberries
+    question: true
+    card: "Cranberry growers flood their fields at harvest time. Why?"
+    answer: "Ripe cranberries float, so they can be gathered off the top of the water. The berries have tiny air pockets inside, and they grow on dry beds the rest of the year."
+  - date: "2026-12-10"
+    slug: quiz-christmas-quizmaster
+    card: "One person reads, everyone else plays"
+    text: "Our Christmas Quiz Book is made for the quizmaster. Each round starts on a left-hand page so the whole round is in front of you, in large type, and the foot of the round gives the page where its answers are."
+  - date: "2026-12-12"
+    slug: quiz-christmas-q-jingle-bells
+    question: true
+    card: "In 1965, two astronauts played the first music in space, on a harmonica and bells. Which Christmas song?"
+    answer: "Jingle Bells. Tom Stafford and Wally Schirra, on Gemini 6, first radioed that they could see something like a satellite, as if Santa were flying past."
+  - date: "2026-12-14"
+    slug: quiz-christmas-stocking-filler
+    card: "A stocking filler for whoever hosts Christmas"
+    text: "Hosting this year? Our Christmas Quiz Book is three nights of entertainment in one paperback: ten rounds for Christmas Eve, ten for Christmas Day and ten for Boxing Day."
+  - date: "2026-12-16"
+    slug: quiz-christmas-q-trafalgar-tree
+    question: true
+    card: "Every year since 1947, which country has given London the Christmas tree that stands in Trafalgar Square?"
+    answer: "Norway. A thank-you for Britain's support during the Second World War. The tree is shipped from Oslo."
+  - date: "2026-12-18"
+    slug: quiz-christmas-last-call
+    card: "Still looking for a stocking filler?"
+    text: "Our Christmas Quiz Book is on Amazon, in a UK and an American edition. It gets busy before Christmas, so check the delivery date on Amazon's page before you order."
+  - date: "2026-12-20"
+    slug: quiz-christmas-q-white-christmas
+    question: true
+    card: "Which singer first performed Irving Berlin's White Christmas, on his radio show on Christmas Day 1941?"
+    answer: "Bing Crosby. Berlin wrote it for the film Holiday Inn, which came out in the summer of 1942, and it won the Oscar for best original song."
+  - date: "2026-12-22"
+    slug: quiz-christmas-q-sydney
+    question: true
+    card: "In Sydney, Australia, which season is it on Christmas Day?"
+    answer: "Summer. Australian summer runs from December to February."

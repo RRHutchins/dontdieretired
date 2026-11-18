@@ -91,6 +91,25 @@ books:
     until: "2026-12-25"
     cover: "/static/img/books/christmas.png"
 
+quiz_books:
+  # The Christmas Quiz Book, two editions (books/README.md "Quiz books"; RUNBOOK §6s). Nothing about them shows on the site,
+  # and no social post is written, until BOTH have a real Amazon link here. Same link rules as `books` (UK tag; US readers
+  # are sent to amazon.com with the US tag, same ASIN). Facts: 300 questions, 30 rounds, three nights, 116 pages, 6 x 9 in.
+  - id: quiz-uk
+    edition: "UK edition"
+    asin: "B0HS44699Y"
+    amazon: "https://www.amazon.co.uk/dp/B0HS44699Y?tag=norofico-21"
+    live_since: "2026-11-18"                 # Robin sent the live link, 18 Nov 2026
+    cover: "/static/img/books/quiz-uk.png"
+    until: "2026-12-25"
+  - id: quiz-us
+    edition: "American edition"
+    asin: "B0HS2NR2P4"
+    amazon: "https://www.amazon.co.uk/dp/B0HS2NR2P4?tag=norofico-21"
+    live_since: "2026-11-18"
+    cover: "/static/img/books/quiz-us.png"
+    until: "2026-12-25"
+
 feedback:
   # "Your say" page (/your-say/): interests, votes, suggestions. Needs the Cloudflare Pages Function in functions/api
   # (D1 database bound as DB, secrets SALT and ADMIN_TOKEN). Set live: true once /api/say answers; that adds it to nav and sitemap.
