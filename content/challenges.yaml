@@ -20107,6 +20107,7 @@
   setting: outdoors
   company: either
   season: Midsummer and midwinter
+  lead_weeks: 4
   regions:
   - uk
   places:
@@ -20114,7 +20115,7 @@
   why: Stonehenge's stones frame the rising sun at midsummer and the setting sun at midwinter, and at each solstice English Heritage opens the stone circle to everyone, free. It publishes the times, the
     travel options and the conditions of entry for every gathering.
   start:
-  - Read English Heritage's Stonehenge solstice page and its summer solstice visitor information.
+  - Read English Heritage's Stonehenge solstice page and the visitor information for the solstice you are going to.
   - Plan your travel by public transport through Salisbury, as parking at the site is limited and must be booked.
   - Dress for a cold night outdoors and check the list of items that are not allowed.
   links:
@@ -20139,6 +20140,15 @@
     url: https://www.rte.ie/news/leinster/2023/1221/1423137-winter-solstice
     checked: '2026-11-07'
   seo_title: 'Stonehenge solstice sunrise: times, parking and rules'
+  where:
+    town: Amesbury
+    venue: Stonehenge
+    country: GB
+    note: For the solstice, English Heritage says to travel via Salisbury (the nearest railway station) and the Salisbury Reds solstice buses from Salisbury Rail Station and the city centre via Amesbury, or to pre-book parking. On foot, Stonehenge is a 2½ mile (4 km) walk from Amesbury.
+    source:
+      label: 'English Heritage: Winter Solstice 2026'
+      url: https://www.english-heritage.org.uk/visit/places/stonehenge/things-to-do/solstice/winter-solstice-2026/
+      checked: '2026-11-18'
   description: 'How to see the solstice sunrise at Stonehenge: winter 2026 times, free entry, parking and buses, what you cannot bring, and other ancient sites to try.'
   detail:
   - h: What it's really like
@@ -37493,6 +37503,7 @@
   time: months
   setting: outdoors
   company: others
+  lead_weeks: 26
   regions:
   - uk
   why: The Devizes to Westminster race, known as DW, runs 125 miles from the Kennet and Avon Canal to the tidal Thames in London, with 77 portages where you climb out and carry the boat. Senior doubles do it non-stop through the night, while the singles, junior, veteran/junior, Endeavour and paddleboard classes take four days.
@@ -37500,6 +37511,7 @@
   - 'Find clubs near you with Go Paddling''s club finder (powered by Paddle UK) and look for one that races marathon; DW''s advice page suggests getting in touch with the nearest racing club for help with boats, technique and a training plan.'
   - Book the DW Training Day at Newbury Canoe Club (12 December 2026, £40 per K2 crew or £20 per K1 crew, as last listed), and get in touch with DW about its DW Buddy scheme.
   - Allow at least six months of training, recruit a support crew early, and check the qualification statement you must make before you enter.
+  start_at: [first, second, first]
   links:
   - label: 'Devizes to Westminster International Canoe Race: home and entries'
     url: https://dwrace.co.uk/
