@@ -36,6 +36,18 @@ dates:
     next: "2027-06-28"
     next_source: {label: "The Championships, Wimbledon: The Wimbledon Public Ballot", url: "https://www.wimbledon.com/en_GB/tickets/ballot", checked: "2026-11-16"}
     source: {label: "Wimbledon help centre: How do I enter the Wimbledon Public Ballot?", url: "https://help.wimbledon.com/hc/en-gb/articles/15473970011292-How-do-I-enter-the-Wimbledon-Public-Ballot", checked: "2026-11-16"}
+  - activity: marine-corps-marathon
+    months: [10]
+    note: Late October. The 2027 Marine Corps Marathon is on 31 October (a Sunday), starting and finishing in Arlington, Virginia; registration opens on 3 April 2027.
+    next: "2027-10-31"
+    next_source: {label: "Marine Corps Marathon Organization: Events", url: "https://www.marinemarathon.com/events/", checked: "2026-11-18"}
+    source: {label: "Marine Corps Marathon Organization: Marine Corps Marathon", url: "https://www.marinemarathon.com/event/marine-corps-marathon/", checked: "2026-11-18"}
+    book:
+      step: 1
+      from: "2027-04-03"
+      for: "2027-10-31"
+      note: "The organisers' events page says registration for the 31 October 2027 marathon opens on 3 April 2027; it gives no closing date."
+      source: {label: "Marine Corps Marathon Organization: Events", url: "https://www.marinemarathon.com/events/", checked: "2026-11-18"}
   - activity: go-to-national-book-festival
     months: [8, 9]
     note: A single Saturday. The 2026 festival was on 22 August; the 2025 festival was on 6 September.
