@@ -185,7 +185,7 @@ guidance:
     applies: [hill]
     use: advice
     text: Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail.
-    for: [ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials, dnt-mountain-code]
+    for: [ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials, dnt-mountain-code, ramblers-hill-tips, bmc-hill-weather]
     note: The National Park Service's Ten Essentials (2026) puts navigation first and also says to bring a physical map as a back-up and a spare phone battery. The Norwegian Mountain Code says to use a map and compass ("it always works") and to check the map regularly, even on marked trails.
 
   # ---------- the event itself ----------
@@ -316,7 +316,7 @@ guidance:
     applies: [hill]
     use: safety
     text: In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999.
-    for: [mrew-safety, ms-hypothermia, pcta-safety-tips]
+    for: [mrew-safety, ms-hypothermia, pcta-safety-tips, ramblers-hill-tips]
   - id: hill-hypothermia
     topic: warning signs
     applies: [hill]
@@ -619,3 +619,23 @@ guidance:
     use: advice
     text: Build water confidence in the pool first, working on calm breathing, with lessons if you need them; move to open water later with a wetsuit, a tow float and someone watching.
     for: [tri-ireland-first, usms-open-water]
+  - id: walk-briskly
+    topic: intensity
+    applies: [walking]
+    use: advice
+    text: For walking to count as exercise, walk briskly, at about 3 miles an hour, faster than a stroll; you should still be able to talk but not sing. Even a brisk 10-minute walk each day counts. If you are not very active, increase your walking distance gradually.
+    for: [nhs-walking]
+  - id: hill-kit-layers
+    topic: kit
+    applies: [hill]
+    use: safety
+    text: On a hill day carry a waterproof jacket and warm layers, even in summer, plus enough water for the day, food, sun protection and a small first aid kit, and wear sturdy footwear. Ramblers also lists a head torch, a charged phone, a whistle and a survival or bothy bag.
+    for: [bmc-hill-weather, ramblers-hill-tips, pc-safety-tips]
+    note: The BMC page (undated) says carry waterproofs and layers, hat and gloves against hypothermia, sun protection and enough water for the whole day. Ramblers lists a wicking base layer, warm mid-layers, waterproof coat, spare clothing, survival bag, head torch, charged phone, whistle, small first aid kit, bothy bag and energy-rich food. Parks Canada says bring a jacket even in summer, carry water, a snack, sunscreen and a small first aid kit, and wear sturdy, closed-toe footwear on rocky ground.
+  - id: hill-wind-fog-plan-b
+    topic: on the day
+    applies: [hill]
+    use: safety
+    text: Wind usually gets stronger with height and can make exposed ridges hard or dangerous, and hill fog can come down quickly, slowing you and making it easier to get lost or caught out by dark. Have a shorter or lower alternative route ready and use it, or wait for better weather, if the forecast or the conditions turn against you.
+    for: [bmc-hill-weather, ramblers-hill-tips]
+    note: The BMC page covers wind strengthening with height, exposed ridges, wind chill, fast-forming hill fog that lengthens the day and raises the risk of getting lost or benighted, and having alternative plans. Ramblers says winds above 40mph make walking harder, to have a plan B (or C) and shorter escape routes, and to choose an easier route or wait for the weather to improve if you are not ready.
