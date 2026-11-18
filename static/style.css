@@ -1249,7 +1249,7 @@ html{scroll-padding-top:84px}
 .hub-cards strong{display:block;font-size:1.06rem;margin-bottom:4px}.hub-cards span{color:#555;font-size:.96rem}
 .hub-filters{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px 14px;align-items:end;padding:16px;background:var(--stone);border-radius:var(--r);margin:0 0 18px}
 .hub-filters label{display:flex;flex-direction:column;gap:4px;font-size:.9rem;font-weight:600}
-.hub-filters input,.hub-filters select{font:inherit;font-weight:400;min-height:44px;padding:6px 10px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.hub-filters label{min-width:0}.hub-filters input,.hub-filters select{width:100%;max-width:100%;min-width:0;font:inherit;font-weight:400;min-height:44px;padding:6px 10px;border:1px solid var(--line);border-radius:10px;background:#fff}
 .hub-events{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
 .hub-event{padding:18px;border:1px solid var(--line);border-radius:var(--r);background:#fff;border-top:5px solid var(--move)}
 .hub-event[hidden]{display:none}
@@ -1261,7 +1261,7 @@ html{scroll-padding-top:84px}
 @media (max-width:600px){.hub-events{grid-template-columns:1fr}.hub-e-facts div{grid-template-columns:6.5em 1fr}}
 .hub-promo{margin:28px 0;padding:18px 20px;border-radius:var(--r);background:var(--stone);border-left:6px solid var(--c,var(--move))}
 .hub-promo h2{margin-top:0}.hub-promo p:last-child{margin-bottom:0;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
-@media (max-width:600px){.hub-filters{grid-template-columns:1fr 1fr;padding:12px;gap:8px 10px}.hub-filters label:first-child{grid-column:1/-1}.hub-filters label{font-size:.85rem}}
+@media (max-width:600px){.hub-filters{grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding:12px;gap:8px 10px}.hub-filters label:first-child{grid-column:1/-1}.hub-filters label{font-size:.85rem}}
 /* Reviewers' picks inside a plan's kit step (Planner Plus row 17, 17 Nov 2026) */
 .pl-picks{margin:6px 0 4px}.pl-picks summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
 .pl-picks summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px}

@@ -21,7 +21,7 @@ facets:
   continent: {europe: Europe, north-america: North America, africa: Africa, asia: Asia, oceania: Oceania, south-america: South America}
   terrain: {mountain: Mountain, trail: Trail and path, road: Road, desert: Desert, winter: Winter, island: Island}
   entry: {open: Open entry, ballot: Ballot or lottery, qualifier: Qualifying race needed, application: Application or invitation}
-  series: {utmb: UTMB World Series, centurion: Centurion Running, mds: Marathon des Sables, spine: Spine Races, independent: Independent}
+  series: {utmb: UTMB World Series, centurion: Centurion Running, mds: Marathon des Sables, spine: Spine Races, aravaipa: Aravaipa Running, wtm: World Trail Majors, independent: Independent}
 events:
 - id: utmb-mont-blanc
   name: HOKA UTMB Mont-Blanc
@@ -420,10 +420,11 @@ events:
   climb: 560 m
   terrain: [trail]
   format: single
+  month: [5]
   entry: [qualifier]
   entry_note: You must have finished a race of at least 50 miles within 15 hours.
   note: Mostly riverside path, with 560 m of climb in 100 miles and a 30-hour limit.
-  link: {label: 'Centurion: Thames Path 100', url: 'https://www.centurionrunning.com/races/thames-path-100-2027', checked: '2026-11-17'}
+  link: {label: 'Centurion: Thames Path 100', url: 'https://www.centurionrunning.com/races/thames-path-100-2027', checked: '2026-11-18'}
 - id: centurion-south-downs-way-100
   name: South Downs Way 100
   series: centurion
@@ -435,10 +436,11 @@ events:
   climb: 3,800 m
   terrain: [trail]
   format: single
+  month: [6]
   entry: [qualifier]
   entry_note: Centurion's 100-mile races ask for a 50-mile finish within 15 hours.
   note: Chalk downland with a 30-hour limit; lights must be carried from Washington onwards.
-  link: {label: 'Centurion: South Downs Way 100', url: 'https://centurionrunning.com/races/south-downs-way-100-2025', checked: '2026-11-17'}
+  link: {label: 'Centurion: South Downs Way 100', url: 'https://centurionrunning.com/races/south-downs-way-100-2027', checked: '2026-11-18'}
 - id: centurion-north-downs-way-100
   name: North Downs Way 100
   series: centurion
@@ -450,10 +452,11 @@ events:
   climb: 3,350 m
   terrain: [trail]
   format: single
+  month: [8]
   entry: [qualifier]
   entry_note: You must have finished a race of at least 50 miles within 15 hours.
   note: A Western States qualifier, with a 30-hour limit.
-  link: {label: 'Centurion: North Downs Way 100', url: 'https://onecommunity.centurionrunning.com/races/north-downs-way-100-2026', checked: '2026-11-17'}
+  link: {label: 'Centurion: North Downs Way 100', url: 'https://www.centurionrunning.com/races/north-downs-way-100-2027', checked: '2026-11-18'}
 - id: centurion-autumn-100
   name: Autumn 100
   series: centurion
@@ -534,6 +537,244 @@ events:
   entry_note: Entry through UTMB; check the race page for any experience requirement.
   note: From Mui Wo to Tai O over Lantau Peak, Hong Kong's second-highest summit, with a 27-hour limit.
   link: {label: 'TransLantau100', url: 'https://translantau.utmb.world/races/tl100', checked: '2026-11-17'}
+- id: javelina-jundred
+  name: Javelina Jundred
+  series: aravaipa
+  place: McDowell Mountain Regional Park, near Fountain Hills, Arizona
+  country: USA
+  continent: north-america
+  km: [161, 100]
+  distances: 100 miles and 100K, plus a 31K
+  climb: 6,296 ft (about 1,920 m) for the 100 miles
+  terrain: [desert, trail]
+  format: single
+  month: [10, 11]
+  entry: [open]
+  entry_note: Register through the organisers before the closing date. The 100 miles counts as a Western States qualifier if you finish within 30 hours.
+  note: Run in loops on desert singletrack and sandy washes, mostly on the Pemberton Trail, with very little shade.
+  link: {label: 'Aravaipa Running: Javelina Jundred', url: 'https://www.aravaiparunning.com/javelina/', checked: '2026-11-18'}
+- id: black-canyon-ultras
+  name: Black Canyon Ultras
+  series: aravaipa
+  place: Spring Valley to near New River, north of Phoenix, Arizona
+  country: USA
+  continent: north-america
+  km: [100, 50]
+  distances: 100K (62.2 miles) and 50K
+  climb: 5,219 ft (about 1,590 m) up and 7,337 ft down on the 100K
+  terrain: [desert, trail]
+  format: single
+  month: [2]
+  entry: [open]
+  entry_note: Register through UltraSignup; places are capped for each distance. The 100K counts as a Western States qualifier if you finish within 17 hours.
+  note: Point to point on the Black Canyon National Recreation Trail, part of which follows an old stagecoach route, with creek crossings.
+  link: {label: 'Aravaipa Running: Black Canyon Ultras', url: 'https://www.aravaiparunning.com/blackcanyon/', checked: '2026-11-18'}
+- id: cocodona-250
+  name: Cocodona 250
+  series: aravaipa
+  place: Black Canyon City to Flagstaff, Arizona
+  country: USA
+  continent: north-america
+  km: [408, 201, 161, 129, 64]
+  distances: 250 miles (253.5 miles) non-stop; shorter races of 125, 100, 80 and 40 miles on parts of the route
+  climb: 38,943 ft (about 11,870 m) for the 2027 course
+  terrain: [desert, mountain, trail]
+  format: single
+  month: [5]
+  entry: [ballot]
+  entry_note: Places are drawn by lottery; the page also offers charity places.
+  note: Point to point through Crown King, Prescott, Jerome and Sedona to Flagstaff, on singletrack, double-track and some pavement, with a 125-hour limit.
+  link: {label: 'Aravaipa Running: Cocodona 250', url: 'https://www.aravaiparunning.com/cocodona/', checked: '2026-11-18'}
+- id: jfk-50-mile
+  name: JFK 50 Mile
+  series: independent
+  place: Boonsboro to Williamsport, Maryland
+  country: USA
+  continent: north-america
+  km: [81]
+  distances: 50 miles, point to point
+  terrain: [trail, road]
+  format: single
+  month: [11]
+  entry: [open]
+  entry_note: Open to all through online registration, with no qualifying standard listed; it can sell out.
+  note: The organisers call it America's oldest ultramarathon. The route runs along the Appalachian Trail, then 26.3 miles of the C&O Canal towpath, then country roads, with a 13-hour limit.
+  link: {label: 'JFK 50 Mile: details', url: 'https://www.jfk50mile.org/details/', checked: '2026-11-18'}
+- id: arrowhead-135
+  name: Arrowhead 135
+  series: independent
+  place: International Falls to Fortune Bay, northern Minnesota
+  country: USA
+  continent: north-america
+  km: [217]
+  distances: 135 miles point to point, on foot, bike or ski
+  terrain: [winter, trail]
+  format: single
+  month: [1]
+  entry: [qualifier]
+  entry_note: Runners need a qualifying race of at least 100 miles on foot (bikers and skiers have their own standards); the organisers will consider other training instead.
+  note: Racers carry a sleeping bag rated to -20°F (-29°C), a bivy, a stove and 8 fl oz of fuel at all times, with a 60-hour cutoff.
+  link: {label: 'Arrowhead 135: race rules', url: 'https://arrowheadultra.com/race-rules/', checked: '2026-11-18'}
+- id: bariloche-by-utmb
+  name: Patagonia Bariloche by UTMB
+  series: utmb
+  place: Bariloche, Patagonia
+  country: Argentina
+  continent: south-america
+  km: [131, 88, 58, 35]
+  distances: Tronador 130K, Frey 85K, Bella Vista 55K, Nahuel Huapi 33K, plus shorter races
+  climb: 6,580 m (Tronador 130K)
+  terrain: [mountain, trail]
+  format: single
+  month: [11]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: Through the mountains, forests and lakes around Bariloche, including Nahuel Huapi National Park.
+  link: {label: 'Patagonia Bariloche by UTMB', url: 'https://bariloche.utmb.world/', checked: '2026-11-18'}
+- id: paraty-brazil-by-utmb
+  name: Paraty Brazil by UTMB
+  series: utmb
+  place: Paraty, Rio de Janeiro state
+  country: Brazil
+  continent: south-america
+  km: [101, 53, 34]
+  distances: PTR 100 (101 km), PTR 55 and PTR 34, plus shorter races
+  climb: 4,850 m (PTR 100)
+  terrain: [mountain, trail]
+  format: single
+  month: [9]
+  entry: [open]
+  entry_note: Entry through UTMB; UTMB Index holders get early access before general registration opens.
+  note: The routes cross Brazil's Atlantic Forest and come back through Paraty's historic centre.
+  link: {label: 'Paraty Brazil by UTMB', url: 'https://paraty.utmb.world/', checked: '2026-11-18'}
+- id: transgrancanaria
+  name: The North Face Transgrancanaria
+  series: wtm
+  place: Gran Canaria, Canary Islands
+  country: Spain
+  continent: europe
+  km: [125, 81, 46]
+  distances: Classic 125 km, Advanced 81 km, Marathon 46 km, plus shorter races and a 120 km stage race
+  climb: 6,764 m (Classic)
+  terrain: [island, mountain, trail]
+  format: single
+  month: [2]
+  entry: [open]
+  entry_note: Entries open in July; the Classic can sell out. The pages opened list no qualifying standard.
+  note: The Classic is part of the World Trail Majors circuit. The Advanced and the stage race cross the heart of the island from Teror to Maspalomas.
+  link: {label: 'Transgrancanaria 2027 opens registrations', url: 'https://transgrancanaria.net/en/the-north-face-transgrancanaria-2027-opens-registrations-on-1-july/', checked: '2026-11-18'}
+- id: miut
+  name: MIUT Madeira Island Ultra-Trail
+  series: wtm
+  place: Porto Moniz across Madeira
+  country: Portugal
+  continent: europe
+  km: [110, 80, 56, 40]
+  distances: Legend 110 km, Advanced 80 km, Discover 56 km, Marathon 40 km, plus a 17 km race
+  climb: 7,200 m (Legend)
+  terrain: [island, mountain, trail]
+  format: single
+  month: [4]
+  entry: [qualifier]
+  entry_note: The Legend needs at least 4 ITRA points (or a 115 km-effort score) from one race in the qualifying period, and runners must be 21 or over.
+  note: The Legend starts at midnight in Porto Moniz and has a 32-hour limit.
+  link: {label: 'MIUT 2027 regulations', url: 'https://miutmadeira.com/miut-2027-regulations/', checked: '2026-11-18'}
+- id: istria-100-by-utmb
+  name: Istria 100 by UTMB
+  series: utmb
+  place: Istria
+  country: Croatia
+  continent: europe
+  km: [168, 111, 70, 42]
+  distances: 100 miles (168 km), 110K, 69K and 42K, plus a 21K
+  climb: 6,800 m (168K)
+  terrain: [mountain, trail]
+  format: single
+  month: [4]
+  entry: [open]
+  entry_note: Entry through UTMB; check the race page for any experience requirement.
+  note: The organisers describe technical terrain, a little coasteering, medieval towns and deep forests.
+  link: {label: 'Istria 100 by UTMB', url: 'https://istria.utmb.world/', checked: '2026-11-18'}
+- id: west-highland-way-race
+  name: West Highland Way Race
+  series: independent
+  place: Milngavie to Fort William along the West Highland Way
+  country: Scotland, UK
+  continent: europe
+  km: [153]
+  distances: About 95 miles
+  climb: 14,760 ft (about 4,500 m)
+  terrain: [trail, mountain]
+  format: single
+  month: [6]
+  entry: [qualifier, ballot]
+  entry_note: You need at least 90 miles (145 km) from no more than two off-road ultras in the previous three years, and to be 20 or over. If more qualified runners apply than there are places, a ballot decides.
+  note: Every runner must have a support crew, with a 35-hour limit.
+  link: {label: 'West Highland Way Race: FAQ', url: 'https://westhighlandwayrace.org/faq/', checked: '2026-11-18'}
+- id: arc-of-attrition
+  name: Arc of Attrition by UTMB
+  series: utmb
+  place: Coverack to Perranporth, Cornwall
+  country: England, UK
+  continent: europe
+  km: [174, 100, 50]
+  distances: Arc 100M (174 km), plus Arc 100K, 50K and 20K
+  climb: 5,507 m (Arc 100M)
+  terrain: [trail]
+  format: single
+  month: [1]
+  entry: [open]
+  entry_note: No lottery. You must have experience of long-distance races, the organisers advise a UTMB Index of at least 380 for the 100M, and runners must be 20 or over.
+  note: Follows exposed sections of the South West Coast Path in January, with a 37-hour limit for the 100M.
+  link: {label: 'Arc of Attrition: Arc 100M', url: 'https://arcofattrition.utmb.world/races/Arc100M', checked: '2026-11-18'}
+- id: ultra-trail-cape-town
+  name: RMB Ultra-trail Cape Town
+  series: independent
+  place: Table Mountain National Park, Cape Town
+  country: South Africa
+  continent: africa
+  km: [163, 100, 55, 35]
+  distances: 100 miles (163 km), 100K, 55K and 35K, plus shorter races
+  climb: About 7,500 m (100 miles)
+  terrain: [mountain, trail]
+  format: single
+  month: [11]
+  entry: [qualifier]
+  entry_note: 100-mile entrants must have finished a trail race of 50 km or more in the 24 months before race day.
+  note: The routes cross Table Mountain, Lion's Head and Kirstenbosch, on technical terrain with steep climbs and descents.
+  link: {label: 'RMB Ultra-trail Cape Town', url: 'https://www.ultratrailcapetown.com/', checked: '2026-11-18'}
+- id: mt-fuji-100
+  name: Mt.FUJI 100
+  series: wtm
+  place: Around Mount Fuji, Shizuoka and Yamanashi
+  country: Japan
+  continent: asia
+  km: [165, 68, 39]
+  distances: FUJI 100mi (about 165 km), KAI 70k (about 68 km), ASUMI 40k (about 39 km)
+  climb: 6,463 m (FUJI 100mi, 2027)
+  terrain: [mountain, trail]
+  format: single
+  month: [4]
+  entry: [ballot, qualifier]
+  entry_note: General entry is by lottery. You need ITRA-certified qualifying races (for the 100 miles, one race worth 4 ITRA points or two worth 3) and must be 18 or over.
+  note: The 100-mile and 40K races are World Trail Majors races.
+  link: {label: 'Mt.FUJI 100: 2027 race overview (press release)', url: 'https://mtfuji100.com/wp-content/uploads/2026/10/MF_PressRelease_No.127_EN_261001.pdf', checked: '2026-11-18'}
+- id: ultra-trail-kosciuszko
+  name: Ultra-Trail Kosciuszko by UTMB
+  series: utmb
+  place: Jindabyne and the Snowy Mountains, New South Wales
+  country: Australia
+  continent: oceania
+  km: [161, 106, 50]
+  distances: KosciMiler (100 miles), Kosci100, Kosci50 and Kosci30
+  climb: 4,731 m (KosciMiler)
+  terrain: [mountain, trail]
+  format: single
+  month: [11]
+  entry: [open, qualifier]
+  entry_note: Entry through UTMB, with a priority window for UTMB Index holders. KosciMiler entrants must meet the organisers' eligibility criteria.
+  note: The routes climb Australia's highest peak, through granite outcrops and snow gum forest.
+  link: {label: 'Ultra-Trail Kosciuszko by UTMB', url: 'https://kosciuszko.utmb.world/', checked: '2026-11-18'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
@@ -657,9 +898,80 @@ guides:
   - {label: 'Leadville Race Series, Silver Rush 50 (LT100 qualification)', url: 'https://www.leadvilleraceseries.com/run/silverrush50run/', checked: '2026-11-17'}
   - {label: 'Lakeland 50 and 100, Enter', url: 'https://lakeland100.com/enter-the-event/', checked: '2026-11-17'}
   - {label: 'The Spine Race, Challenger North', url: 'https://www.thespinerace.com/race/montane-winter-spine/montane-winter-spine-challenger-north/', checked: '2026-11-17'}
-  - {label: 'Centurion Running, Thames Path 100 2027', url: 'https://www.centurionrunning.com/races/thames-path-100-2027', checked: '2026-11-17'}
+  - {label: 'Centurion Running, Thames Path 100 2027', url: 'https://www.centurionrunning.com/races/thames-path-100-2027', checked: '2026-11-18'}
   - {label: 'Comrades Marathon, Launch of the 2025 Comrades Marathon', url: 'https://comrades.com/blogs/launch-of-2025-comrades-marathon', checked: '2026-11-17'}
   - {label: 'Two Oceans Marathon, Ultra Marathon', url: 'https://www.twooceansmarathon.org.za/ultra-marathon/', checked: '2026-11-17'}
   - {label: 'Badwater, Badwater 135', url: 'https://www.badwater.com/event/badwater-135/', checked: '2026-11-17'}
   - {label: 'Spartathlon, Race 2026 announcement', url: 'https://www.spartathlon.gr/en/spartathlon-race-2026/', checked: '2026-11-17'}
   - {label: "Dragon's Back Race, Enter the 2026 event", url: 'https://www.dragonsbackrace.com/enter', checked: '2026-11-17'}
+- slug: first-ultra
+  title: Your first ultramarathon, from choosing a race to the finish
+  short: Choosing a race, building up and race day
+  seo_title: 'First ultramarathon: choosing a race, training and race day'
+  description: How to pick a first ultra, what entry rules to expect, how organisers suggest you build up, and what the evidence says about eating, drinking and stopping safely.
+  standfirst: A first ultra is mostly a long day of walking, eating and looking after yourself, with some running in between. Here is what race organisers and the research say about getting to the finish.
+  detail:
+  - h: What counts as an ultra
+    p:
+    - A marathon is 42.2 km (26.2 miles); an ultra is anything beyond it. The International Trail Running Association (ITRA), which rates trail races, sorts them into bands of 50K (45 to 64 km), 50 miles (65 to 89 km), 100K (90 to 129 km), 100 miles (130 to 189 km) and longer, and describes ultra-trail races as 80 km and beyond.
+    - Climb matters too. ITRA counts every 100 metres of ascent as one extra kilometre of effort, so a hilly 50K can be as hard as a flat race much longer.
+  - h: Choosing a first race
+    p:
+    - Look for a race the organisers describe as suitable for a first ultra, with aid stations, a marked course and a generous time limit. Centurion Running, for example, describes its Hundred Hills 50km in March as ideal for a first ultra, with five aid stations, medics on the course, a fully marked route and a 9-hour limit.
+    - Read the entry rules before you set your heart on a race. Centurion's 50-mile races ask for a finished marathon or longer race within its time limits, and its 100-mile races ask for a 50-mile finish within 15 hours. The organisers say these are the absolute minimum, and advise much more experience than a single qualifier, especially for the 100.
+    - Some famous races say plainly they are not for beginners. The Lakeland 100 organisers say it should not be approached as a first ultra and point first-timers to the Lakeland 50, where they advise having run at least a marathon distance on mountain terrain first. The route is not waymarked, so you must be able to navigate it.
+    table:
+      head: [First step, What it looks like, An example]
+      rows:
+      - [A 50K on marked trails, 'About 31 miles, several aid stations, a time limit of around 9 hours', Centurion Hundred Hills 50km]
+      - [A 50-mile race, 'A marathon finish needed first, a 13-hour limit', Centurion South Downs Way 50]
+      - [A mountain 50, 'A full day on the fells, navigation needed, marathon on mountain terrain advised', Lakeland 50]
+      - [A road ultra, 'A marathon qualifying time and a 12-hour limit', Comrades Marathon (about 90 km)]
+  - h: Building up
+    p:
+    - 'The NHS advice for runners applies at any distance: do not increase how far or how hard you run too quickly, and do not run through pain.'
+    - The Lakeland organisers point out that most people find a long run of 18 to 20 miles hard enough, and that a weekend of very long runs is not the answer. Instead they suggest long walking days of 8 to 10 hours, doing your longer sessions with your pack fully loaded, getting used to descents so your legs can take them on race day, and being ready to be on your feet for 10 to 20 hours.
+    - Injuries in ultra runners are common, mostly in the lower leg, ankle, knee and foot, and mostly from overuse, according to a 2021 scoping review in Frontiers in Physiology. A 2025 study of 106 runners from the 2018 Comrades Marathon found that lower training loads were linked with a higher risk of injury, with the risk highest below two runs a week. That study looked back at runners' GPS training records and the injuries they reported, and its authors say the finding needs confirming.
+  - h: Eating and drinking
+    p:
+    - The International Society of Sports Nutrition's position stand on single-stage ultramarathons (2019) suggests aiming for 150 to 400 kcal an hour during a race, including 30 to 50 g of carbohydrate, from a variety of foods. For fluid it suggests 450 to 750 ml an hour, about 150 to 250 ml every 20 minutes, with sodium in the drink.
+    - Practise all of it in training, well before the race. The same paper says the gut can be trained to cope with eating on the move and so reduce stomach problems.
+    - Too much water is a danger too. Drinking well beyond thirst can dilute the salt in your blood (exercise-associated hyponatraemia), which can be fatal. A 2017 review in Frontiers in Medicine names overdrinking as the main cause and advises drinking according to thirst; gaining weight during a race is a sign you have drunk more than you have lost.
+  - h: Race day
+    p:
+    - Expect to walk. The Lakeland organisers estimate that the average runner in the Lakeland 50 walks 60% of the course or more.
+    - Carry the mandatory kit all the time. Centurion may check kit at the start, on the course or at the finish, with a penalty of at least one hour for each missing item. Cut-offs at aid stations are strictly enforced.
+    - If you stop, tell the race. Centurion's rules say a runner who drops out must tell the nearest aid station captain in person and hand in their race number, or they will be treated as lost. At Comrades, runners must retire if the medical staff tell them to.
+  - h: When to stop and get help
+    p:
+    - On a hot day, watch for the signs of heat exhaustion the NHS lists, such as dizziness, nausea, cramps, heavy sweating and pale, clammy skin. Move somewhere cool, drink and cool the skin; if you are no better after 30 minutes, or there is confusion, a fit, hot skin that has stopped sweating or loss of consciousness, call 999 (911 in the US) or get the race medics at once.
+    - Confusion or any change in mental state during an ultra needs urgent medical help whatever the weather, as it can also be a sign of severe hyponatraemia.
+  - h: What we have not done
+    p:
+    - This guide is written with AI from the pages listed below, opened on the date shown. It has not been reviewed by a coach, a doctor or a dietitian. If you have a health condition or have not exercised for a while, check with your GP (family doctor) before you start training.
+  faq:
+  - q: How long should I train for a first ultra?
+    a: The pages we used do not give a set number of weeks. Centurion asks for a finished marathon before its 50-mile races, and organisers advise more experience than the minimum. Build up gradually, as the NHS advises.
+  - q: Do I have to run the whole way?
+    a: No. The Lakeland organisers estimate that the average Lakeland 50 runner walks 60% of the course or more.
+  - q: How much should I drink in an ultra?
+    a: The ISSN position stand suggests 450 to 750 ml an hour with sodium, and a 2017 review advises drinking to thirst, because overdrinking can cause dangerous hyponatraemia. Practise in training.
+  kit:
+  - {name: Running vest or race pack, why: 'train with it fully loaded, as the Lakeland organisers suggest; check it holds your race''s kit list', url: 'https://www.amazon.co.uk/s?k=trail+running+vest+12l'}
+  - {name: Soft flasks, why: 'check the volume your race asks you to carry', url: 'https://www.amazon.co.uk/s?k=soft+flask+500ml+running'}
+  - {name: Electrolyte drink tablets, why: 'check the sodium per tablet against what you practise with in training', url: 'https://www.amazon.co.uk/s?k=electrolyte+tablets+running'}
+  sources:
+  - {label: 'ITRA, Discover trail running (race categories and km-effort)', url: 'https://itra.run/About/DiscoverTrailRunning', checked: '2026-11-18'}
+  - {label: 'Centurion Running, Hundred Hills 50km 2027', url: 'https://centurionrunning.com/races/hundred-hills-50km-2027', checked: '2026-11-18'}
+  - {label: 'Centurion Running, Qualifying for 2027 events', url: 'https://onecommunity.centurionrunning.com/section/resources/qualifying-for-2027-events', checked: '2026-11-18'}
+  - {label: 'Centurion Running, South Downs Way 50 2026', url: 'https://www.centurionrunning.com/races/south-downs-way-50-2026', checked: '2026-11-18'}
+  - {label: 'Centurion Running, South Downs Way 100 2026 rules', url: 'https://onecommunity.centurionrunning.com/races/south-downs-way-100-2026/section/rules', checked: '2026-11-18'}
+  - {label: 'Lakeland 50 and 100, Enter', url: 'https://lakeland100.com/enter-the-event/', checked: '2026-11-18'}
+  - {label: 'Lakeland 50 and 100, How long should my long run be? (30 April 2022)', url: 'https://lakeland100.com/2022/04/30/how-long-should-my-long-run-be/', checked: '2026-11-18'}
+  - {label: 'Comrades Marathon, Race information', url: 'https://comrades.com/race-information', checked: '2026-11-18'}
+  - {label: 'Tiller and colleagues, ISSN position stand on single-stage ultra-marathon nutrition, Journal of the International Society of Sports Nutrition, 2019', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/', checked: '2026-11-18'}
+  - {label: 'Hew-Butler and colleagues, Exercise-associated hyponatremia: 2017 update, Frontiers in Medicine', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5334560/', checked: '2026-11-18'}
+  - {label: 'Scheer and Krabak, Musculoskeletal injuries in ultra-endurance running: a scoping review, Frontiers in Physiology, 2021', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8044296/', checked: '2026-11-18'}
+  - {label: 'Burgess, Durand and Buchholtz, Training load and injury in ultramarathon runners, South African Journal of Sports Medicine, 2025', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12327882/', checked: '2026-11-18'}
+  - {label: 'NHS, Knee pain and other running injuries', url: 'https://www.nhs.uk/live-well/exercise/knee-pain-and-other-running-injuries/', checked: '2026-11-18'}
+  - {label: 'NHS, Heat exhaustion and heatstroke', url: 'https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/', checked: '2026-11-18'}
