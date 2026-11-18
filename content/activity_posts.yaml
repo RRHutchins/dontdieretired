@@ -1,0 +1,79 @@
+# Evening social posts: one thing to do a day, posted at 18:00 UK (RUNBOOK §6d, 18 Nov 2026).
+# `python tools/daily_posts.py` (also run by every full build) writes social/<date>-do-<id>/meta.json; build.py draws the
+# cards. Facts only from the activity's own entry in challenges.yaml (or a sourced line in dates.yaml), which the
+# activity page links to. `card` is the hook on the image and the X post: natural English read aloud, under 20 words,
+# no age words. `photo: true` only after looking at the downloaded photo for social use (§6l: no identifiable person,
+# no logo or someone else's artwork filling the frame, licence PD / CC0 / CC BY / CC BY-SA). Never edit a post once its
+# date has passed. Keep this list at least seven days ahead; pick what suits the season.
+posts:
+  - date: "2026-11-19"
+    id: see-the-northern-lights
+    photo: true
+    card: "The northern lights can reach much further south than you might think"
+    text: "The aurora is charged particles from the Sun lighting up the upper atmosphere. When activity is strong it can be seen from as much as 1,000 kilometres away, from a hilltop with a clear view north. The skill is watching the alerts and being ready to go: our page has the alert services for the UK and the US, and how to pick your spot."
+  - date: "2026-11-20"
+    id: jurassic-coast-fossil-hunt
+    photo: true
+    card: "Winter is the best time to find a fossil on the Jurassic Coast"
+    text: "After rough weather, ammonites and belemnites wash out of the cliffs and lie among the pebbles. Book a guided fossil walk for your first visit, go out around low tide and search the loose shingle well away from the cliffs. Holding something that last saw daylight in the time of the dinosaurs is hard to forget."
+  - date: "2026-11-21"
+    id: ride-the-settle-carlisle
+    photo: true
+    card: "This railway was built almost entirely by hand, and you can still ride it"
+    text: "Work on the 72-mile Settle to Carlisle line began in 1869. It came close to closure in the 1980s, and ordinary passenger trains still cross the 24 arches of the Ribblehead Viaduct. Leeds to Carlisle takes about 2 hours 40 minutes, and stations such as Dent and Ribblehead are starting points for walks."
+  - date: "2026-11-22"
+    id: learn-to-ring-church-bells
+    photo: true
+    card: "Each bell ringer controls one bell with one rope, in time with the others"
+    text: "Tower bell ringing is a team activity. The Association of Ringing Teachers says it takes on average 10 to 15 hours of intensive instruction to ring a bell safely and well. Find a tower near you, in the UK or North America, and ask for a first handling lesson."
+  - date: "2026-11-23"
+    id: learn-kintsugi
+    photo: true
+    card: "Mend a broken bowl with gold, so the crack becomes the decoration"
+    text: "Kintsugi is the Japanese art of mending ceramics with lacquer and gold. Traditional urushi lacquer is slow, cured layer by layer over weeks, while modern classes use glue and gold leaf in a day. Find a broken glazed piece that is mostly complete, and book a beginners' class."
+  - date: "2026-11-24"
+    id: try-curling
+    photo: true
+    card: "Curling is a game of touch and tactics more than strength"
+    text: "Two teams slide granite stones down the ice towards a target called the house, and sweeping in front of a stone changes how far it travels and how much it curls. A taster session gets you delivering a stone within the hour, with brushes, sliders and stones supplied. Rinks have ice from autumn to spring."
+  - date: "2026-11-25"
+    id: learn-astrophotography
+    photo: true
+    card: "You don't need a telescope to photograph the Milky Way"
+    text: "A camera on a tripod, left open long enough, records stars your eyes can barely make out. Bring the camera you already have, a tripod and a red head torch to a beginners' course or a dark-sky evening, and join a local astronomy society to find dark sites."
+  - date: "2026-11-26"
+    id: learn-origami
+    photo: true
+    card: "Turn a square of paper into a swan, with folds alone"
+    text: "Origami needs nothing but paper. The British Origami Society and OrigamiUSA both publish free diagrams, and local groups and library classes meet in the UK and the US. Fold a few simple models first, then look for a beginners' class."
+  - date: "2026-11-27"
+    id: learn-to-ice-skate
+    photo: true
+    card: "Ice skating is learned in small, definite steps, which makes it easier to start"
+    text: "Ice skating is built in small steps, which is why the national programmes are set out in levels. Skate UK is taught at more than 40 rinks across Britain, and Learn to Skate USA has an adult curriculum of six levels. Many adult beginners' courses include skate hire: bring gloves, thin socks and warm layers."
+  - date: "2026-11-28"
+    id: take-up-beekeeping
+    photo: true
+    card: "Beekeeping courses often start in winter, ready for the bees in spring"
+    text: "A colony of honey bees is something you learn to read through the year, from swarms in spring to winter food stores. Local beekeeping associations run taster days and beginners' courses and can often find you a mentor, so you handle bees before you buy anything."
+  - date: "2026-11-29"
+    id: learn-cross-country-skiing
+    photo: true
+    card: "You can learn cross-country skiing without waiting for snow"
+    text: "Cross-country skiing takes you along forest trails rather than down a slope. In Scotland you can learn on an all-weather track, and in the US many Nordic centres sell a beginner package with ski hire and a trail pass. Start with classic technique."
+  - date: "2026-11-30"
+    id: learn-to-play-bridge
+    photo: true
+    card: "In club bridge, your score is compared with players who held the same cards"
+    text: "Clubs play duplicate bridge: several tables play the same deals in turn, so your score is compared with others who held exactly the same cards. To begin, try MiniBridge, a free practice game, then use the English Bridge Union's or the American Contract Bridge League's search to find lessons and a club with games for newcomers."
+  - date: "2026-12-01"
+    id: visit-a-stone-circle-at-solstice
+    photo: true
+    card: "English Heritage opens the Stonehenge stone circle to everyone, free, at the winter solstice"
+    x: "Stonehenge opens its stone circle to everyone, free, for the winter solstice on Tuesday 22 December."
+    text: "English Heritage opens the stone circle at Stonehenge to everyone, free, for the winter solstice, this year on Tuesday 22 December. Anyone coming by car must pre-book parking or be turned away, so plan to travel through Salisbury by public transport. Dress for a cold night outdoors and check English Heritage's list of items that are not allowed."
+  - date: "2026-12-02"
+    id: give-blood
+    photo: true
+    card: "Every unit of blood a hospital uses began with someone in a donor chair"
+    text: "Read the eligibility rules from NHS Blood and Transplant in England or the American Red Cross, then book an appointment at a donor centre or blood drive near you. On the day, answer the health and lifestyle check honestly and accept the service's decision."

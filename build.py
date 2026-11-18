@@ -1095,6 +1095,15 @@ def build(make_social=True):
                       "excerpt": "Large-print puzzle books in print on Amazon, made by the people behind the daily puzzles.",
                       "tags": ["puzzle", "puzzles", "book", "books", "christmas", "gift", "present", "sudoku", "large", "print"],
                       "image": "/static/og-default.png", "art": "/static/og-default.png"})
+    if (CONTENT / "activity_posts.yaml").exists():   # daily puzzle and thing-to-do posts (tools/daily_posts.py, RUNBOOK §6d)
+        import importlib.util as _ilu
+        _spec = _ilu.spec_from_file_location("daily_posts", ROOT / "tools" / "daily_posts.py")
+        _dp = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_dp)
+        if make_social:
+            print("daily posts: %d puzzle packs, %d activity packs written" % _dp.write_packs())
+        else:
+            _dp.check_activity_posts()
+        print(f"daily post cards: {_dp.draw_all(DIST, make_photo_card, make_card)}")
     if (CONTENT / "plus_posts.yaml").exists():   # Planner Plus gift posts (RUNBOOK §6t row 22): checked every build, cards only once on sale
         import importlib.util as _ilu
         _spec = _ilu.spec_from_file_location("plus_posts", ROOT / "tools" / "plus_posts.py")

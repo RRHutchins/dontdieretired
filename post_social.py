@@ -21,7 +21,8 @@ KEY = os.environ.get("BUFFER_API_KEY", "").strip()
 SITE = "https://dontdieretired.com"
 UK = ZoneInfo("Europe/London")
 START_DATE = "2026-10-06"                # packs dated before this are never posted (no back-catalogue flood)
-SLOTS_UK = ["13:00", "18:00", "08:00"]   # in order of preference: 13:00 UK is 8am US Eastern, 18:00 UK is 1pm. One slot per article
+SLOTS_UK = ["13:00", "18:00", "08:00", "20:00", "10:30", "15:30"]   # in order of preference: 13:00 UK is 8am US Eastern, 18:00 UK is 1pm. One slot per pack
+# A pack may name its own slot (meta.json "slot"): the daily puzzle 08:00, the story 13:00, the thing to do 18:00 (RUNBOOK §6d).
 SERVICES = {"facebook": "facebook", "instagram": "instagram", "twitter": "x"}   # Buffer service -> key in meta.json posts
 
 
@@ -88,7 +89,13 @@ def packs_to_post(named=None):
     days = {d.isoformat() for d in (today, today - dt.timedelta(days=1))}
     found = [p for p in sorted((ROOT / "social").iterdir())
              if p.name[:10] in days and p.name[:10] >= START_DATE and (p / "meta.json").exists()]
-    return sorted(found, key=lambda p: (p.name[:10], kind_of(p.name[11:]) == "guide", p.name))   # stories before guides
+    today_s = today.isoformat()
+    def meta(p):
+        return json.loads((p / "meta.json").read_text(encoding="utf-8"))
+    # a pack marked same_day (the daily puzzle) goes out only on its own date: a day late it would be the wrong puzzle
+    found = [p for p in found if not (meta(p).get("same_day") and p.name[:10] != today_s)]
+    # packs that name a slot first (so they get it), then stories before guides, then the rest
+    return sorted(found, key=lambda p: (p.name[:10], "slot" not in meta(p), kind_of(p.name[11:]) == "guide", p.name))
 
 
 def wait_for(url, tries=12):
@@ -105,9 +112,10 @@ def wait_for(url, tries=12):
     return False
 
 
-def pick_slot(taken, now):
-    """First free preferred UK slot still ahead today; if none, ten minutes from now, then every half hour."""
-    for hhmm in SLOTS_UK:
+def pick_slot(taken, now, want=None):
+    """The pack's own slot if free and still ahead; else the first free preferred UK slot still ahead today;
+    if none, ten minutes from now, then every half hour."""
+    for hhmm in ([want] if want else []) + SLOTS_UK:
         h, m = map(int, hhmm.split(":"))
         t = now.astimezone(UK).replace(hour=h, minute=m, second=0, microsecond=0)
         if t > now + dt.timedelta(minutes=10) and all(abs((t - x).total_seconds()) > 300 for x in taken):
@@ -147,20 +155,26 @@ def post(named=None):
         todo = [c for c in ch if not same(c, live) and len(same(c, have)) < 2]
         if not todo:
             lines.append(f"{slug}: already in Buffer on every channel"); continue
-        when = pick_slot(taken, now); taken.append(when)
-        cards = {"instagram": f"{SITE}/static/social/{slug}.png", "twitter": f"{SITE}/static/img/{slug}.png"}
+        when = pick_slot(taken, now, meta.get("slot")); taken.append(when)
+        cards = {"instagram": f"{SITE}/static/social/{slug}.png", "twitter": f"{SITE}/static/img/{slug}.png",
+                 "facebook": f"{SITE}/static/social/{slug}.png"}
         for c in todo:
             svc = c["service"]
             inp = {"channelId": c["id"], "text": meta["posts"][SERVICES[svc]], "assets": [], "needsApproval": False,
                    "schedulingType": "automatic", "mode": "customScheduled",
                    "dueAt": when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")}
-            if svc == "facebook":      # link post: Facebook draws the preview card from the article's own og:image
+            if svc == "facebook" and meta.get("fb_image"):   # picture post (puzzle, thing to do): the link is in the text
+                if not wait_for(cards[svc]):
+                    failed += 1; lines.append(f"{slug} / {svc}: FAILED, image not live at {cards[svc]}"); continue
+                inp["assets"] = [{"image": {"url": cards[svc], "metadata": {"altText": (meta.get("alt") or meta["title"])[:400]}}}]
+                inp["metadata"] = {"facebook": {"type": "post"}}
+            elif svc == "facebook":      # link post: Facebook draws the preview card from the article's own og:image
                 inp["metadata"] = {"facebook": {"type": "post", "linkAttachment": {
                     "url": meta["url"] + "?utm_source=facebook&utm_medium=social&utm_campaign=daily"}}}
             else:
                 if not wait_for(cards[svc]):
                     failed += 1; lines.append(f"{slug} / {svc}: FAILED, image not live at {cards[svc]}"); continue
-                inp["assets"] = [{"image": {"url": cards[svc], "metadata": {"altText": meta["title"][:400]}}}]
+                inp["assets"] = [{"image": {"url": cards[svc], "metadata": {"altText": (meta.get("alt") or meta["title"])[:400]}}}]
                 if svc == "instagram":
                     inp["metadata"] = {"instagram": {"type": "post", "shouldShareToFeed": True}}
             try:
