@@ -4,6 +4,7 @@
 # Facts only from the book (books/build_quiz.py, books/quiz/rounds.yaml, books/README.md). Questions come from rounds
 # printed in BOTH editions, word for word with the book's answer and note. No prices, reviews, counts of sales or
 # delivery promises. Never edit a post once its date has passed: it would post again.
+until: "2026-12-15"   # Robin, 18 Nov 2026: no book posts after 15 Dec, as orders after that may not arrive for Christmas
 posts:
   - date: "2026-11-18"
     slug: quiz-christmas-out
@@ -63,22 +64,7 @@ posts:
     slug: quiz-christmas-stocking-filler
     card: "A stocking filler for whoever hosts Christmas"
     text: "Hosting this year? Our Christmas Quiz Book is three nights of entertainment in one paperback: ten rounds for Christmas Eve, ten for Christmas Day and ten for Boxing Day."
-  - date: "2026-12-16"
-    slug: quiz-christmas-q-trafalgar-tree
-    question: true
-    card: "Every year since 1947, which country has given London the Christmas tree that stands in Trafalgar Square?"
-    answer: "Norway. A thank-you for Britain's support during the Second World War. The tree is shipped from Oslo."
-  - date: "2026-12-18"
+  - date: "2026-12-15"
     slug: quiz-christmas-last-call
     card: "Still looking for a stocking filler?"
     text: "Our Christmas Quiz Book is on Amazon, in a UK and an American edition. It gets busy before Christmas, so check the delivery date on Amazon's page before you order."
-  - date: "2026-12-20"
-    slug: quiz-christmas-q-white-christmas
-    question: true
-    card: "Which singer first performed Irving Berlin's White Christmas, on his radio show on Christmas Day 1941?"
-    answer: "Bing Crosby. Berlin wrote it for the film Holiday Inn, which came out in the summer of 1942, and it won the Oscar for best original song."
-  - date: "2026-12-22"
-    slug: quiz-christmas-q-sydney
-    question: true
-    card: "In Sydney, Australia, which season is it on Christmas Day?"
-    answer: "Summer. Australian summer runs from December to February."

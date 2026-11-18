@@ -113,7 +113,10 @@ def write_packs():
         sys.exit("No book with an Amazon link in site.yaml matches content/book_posts.yaml")
     today = dt.date.today().isoformat()
     made = kept = 0
+    until = str(data.get("until") or "9999")
     for p in data["posts"]:
+        if p["date"] > until:
+            continue
         folder = ROOT / "social" / f"{p['date']}-{p['slug']}"
         if (folder / "meta.json").exists() and p["date"] < today:
             kept += 1; continue                     # already sent: never change its text

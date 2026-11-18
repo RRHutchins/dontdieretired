@@ -85,7 +85,10 @@ def write_packs():
         print("quiz posts: held (no Amazon link for both editions in site.yaml → quiz_books yet)"); return 0
     today = dt.date.today().isoformat()
     made = kept = 0
+    until = str((yaml.safe_load((ROOT / "content" / "quiz_posts.yaml").read_text(encoding="utf-8")) or {}).get("until") or "9999")
     for p in load():
+        if p["date"] > until:
+            continue
         folder = ROOT / "social" / f"{p['date']}-{p['slug']}"
         if (folder / "meta.json").exists() and p["date"] < today:
             kept += 1; continue

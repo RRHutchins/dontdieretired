@@ -4,6 +4,7 @@
 # (or the day after), like any other pack. Never edit the text of a post once its date has passed: it would post again.
 # Facts only from the book itself (books/build_book.py, verify.py) and site.yaml. No prices, no delivery promises, no reviews.
 book: christmas
+until: "2026-12-15"   # Robin, 18 Nov 2026: no book posts after 15 Dec, as orders after that may not arrive for Christmas
 posts:
   - date: "2026-10-30"
     slug: book-christmas-out
@@ -53,7 +54,7 @@ posts:
     slug: book-christmas-pudding-walk
     card: "Something to do between the pudding and the walk"
     text: "That's what our Christmas Puzzle Book is for: 105 puzzles, seventeen kinds, three levels, in large print. It's on Amazon now."
-  - date: "2026-12-17"
+  - date: "2026-12-15"
     slug: book-christmas-last-call
     card: "Still looking for a stocking filler?"
     text: "Our Christmas Puzzle Book is on Amazon. It gets busy before Christmas, so check the delivery date on Amazon's page before you order."
