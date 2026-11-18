@@ -181,7 +181,7 @@ Category `ai` (/ai/). Its job: readers finish better able to use AI and harder t
 - Plausible events: `share` (props `via`, `kind`), `friend_arrival`, `friend_signup`. Review them weekly with the other numbers in §3: shares by route, arrivals, and how many arrivals join the email.
 
 ## 6g. Daily puzzles: four a day, three levels, one streak (Wheel added 6 Oct 2026; Ladder, Sudoku, Numbers and levels added 7 Oct 2026)
-`/puzzle/` has four puzzles every calendar day, the same for everyone, changing at the reader's own midnight: the **Wheel** (nine letters, every word uses the middle one), the **Ladder** (change one letter at a time), **Sudoku** and **Numbers** (reach a target with + − × ÷). They exist to give people a reason to come back each day, and Robin's brief is "variety and a challenge".
+`/puzzle/` has four puzzles every calendar day, the same for everyone, changing at the reader's own midnight: the **Wheel** (nine letters, every word uses the middle one), the **Ladder** (change one letter at a time), **Sudoku** and **Numbers** (reach a target with + − × ÷). They exist to give people a reason to come back each day, and Robin's brief is "variety and a challenge". **No end date (Robin, 18 Nov 2026):** the daily puzzles and their 08:00 social posts run every day indefinitely; the daily publish task extends the puzzle files whenever PUZZLE WARNING appears (puzzle data currently runs to 19 Dec 2027).
 - **Levels.** The reader picks Gentle, Steady or Hard (kept in the browser, default Steady). Each level is a *different puzzle*, not the same one with more help, and a reader can mix levels across the four on the same day.
 
   | | Gentle | Steady | Hard |
