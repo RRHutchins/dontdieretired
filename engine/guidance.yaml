@@ -250,7 +250,13 @@ guidance:
     applies: [multiday]
     use: advice
     text: In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race.
-    for: [tanabe-kumano-tips, nps-heat-illness]
+    for: [tanabe-kumano-tips, nps-heat-illness, nhs-heat]
+  - id: heat-warning-signs
+    topic: warning signs
+    applies: [multiday]
+    use: safety
+    text: On hot days drink more cold drinks while you are active, wear light, loose clothing and keep out of the sun between 11am and 3pm where you can. Call 999 (911 in the US) if someone is still unwell after 30 minutes resting somewhere cool, being cooled and drinking, or has a very high temperature, hot skin that is not sweating, a fast heartbeat or breathing, confusion, a fit or loses consciousness.
+    for: [nhs-heat]
   - id: build-day-walks
     topic: key session
     applies: [multiday, walking]

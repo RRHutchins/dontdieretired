@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-17)
+# Guidance engine report (2026-11-18)
 
-92 sources, 88 statements, 12 event profiles. Core 66, supported 22, thin 0, contested 0.
+93 sources, 89 statements, 12 event profiles. Core 67, supported 22, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -19,6 +19,7 @@
 - Centers for Disease Control and Prevention (CDC), *Older adult activity, an overview (last reviewed 4 December 2025)* (2025). Opened 2026-11-03.
 - Centers for Disease Control and Prevention (CDC Yellow Book 2026; Hackett and Shlim), *High-altitude travel and altitude illness* (2025). Opened 2026-11-04.
 - Centers for Disease Control and Prevention (CDC Yellow Book 2026; Cabada and Bégué), *Peru (destination chapter)* (2025). Opened 2026-11-04.
+- NHS, *Heat exhaustion and heatstroke (last reviewed 28 May 2026)* (2026). Opened 2026-11-18.
 - NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Opened 2026-11-09.
 - World Health Organization, *Falls (fact sheet, 21 October 2026)* (2026). Opened 2026-11-11.
 - NHS (Every Mind Matters), *Sleep problems (undated page; year is the year opened)* (2026). Opened 2026-11-11.
@@ -127,6 +128,7 @@
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
 | core | 12 | progression | Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. | higdon-novice1, rc-down-weeks, bc-missing-weeks, meeusen-2013-overtraining |
 | core | 12 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe, bewl-ows |
+| core | 11 | on the day | In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race. | tanabe-kumano-tips, nps-heat-illness, nhs-heat |
 | core | 11 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. | lauersen-2014, cmo-2019, bmc-hill-fit |
 | core | 11 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water, nhs-hypothermia |
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
@@ -158,7 +160,6 @@
 | core | 6 | fuel and drink | Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. | ea-pavey-marathon, issn-ultra-2019 |
 | core | 6 | kit | In the later weeks, train with the pack and the kit you will carry on the day so nothing is new. | bmc-hill-fit, ydnpa-three-peaks, wanderlust-trek-prep |
 | core | 6 | on the day | In high mountains thunderstorms usually build in the afternoon. Check the forecast before you go and stay away if a high chance of thunderstorms is forecast; start early and plan to be down by noon; keep off hilltops and ridge tops in a storm, and at the first sign of one get below the treeline. Carry rain gear and warm layers. | nws-lightning-outdoors, usfs-elbert |
-| core | 6 | on the day | In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race. | tanabe-kumano-tips, nps-heat-illness |
 | core | 6 | on the day | On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard. | swcpa-safety, wcp-safety |
 | core | 6 | why | Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. | bosquet-2007, ea-pavey-marathon |
 | core | 6 | warning signs | If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. | rnli-cold-water-2025, swimeng-stay-safe |
@@ -175,6 +176,7 @@
 | core | 5 | body maintenance | Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges. | nhs-strength-exercises |
 | core | 5 | body maintenance | Weight-bearing activity such as walking and running helps keep bones strong. | cmo-2019 |
 | core | 5 | body maintenance | If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. | nhs-bones-65 |
+| core | 5 | warning signs | On hot days drink more cold drinks while you are active, wear light, loose clothing and keep out of the sun between 11am and 3pm where you can. Call 999 (911 in the US) if someone is still unwell after 30 minutes resting somewhere cool, being cooled and drinking, or has a very high temperature, hot skin that is not sweating, a fast heartbeat or breathing, confusion, a fit or loses consciousness. | nhs-heat |
 | core | 5 | warning signs | Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. | nhs-heart-attack |
 | supported | 5 | key session | Train for the ground you will cover. For hill challenges walk hills fast, or use stairs, and add short hill repeats of 50 to 100 metres of climb, four to six times, coming down slowly. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 5 | key session | Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them. | ydnpa-three-peaks, bmc-hill-fit |
@@ -205,7 +207,7 @@
 - cycling: 6 usable statements of its own
 - endurance: 16 usable statements of its own
 - hill: 12 usable statements of its own
-- multiday: 9 usable statements of its own
+- multiday: 10 usable statements of its own
 - running: 9 usable statements of its own
 - swimming: 20 usable statements of its own
 - walking: 10 usable statements of its own
