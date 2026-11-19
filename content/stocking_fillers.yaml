@@ -1,0 +1,352 @@
+# Stocking fillers (/gifts/stocking-fillers/ and /gifts/stocking-fillers/<id>/). RUNBOOK §6v, stocking fillers.
+# Robin, 19 Nov 2026: "Don't Die Retired should have broad subjects because people are complex… we need to develop deep
+# content so they don't need to leave the site for more content, unless it is through a paid link ideally… Let's develop
+# commercial related content to support Christmas. Also think stocking fillers, people buy all manner of gifts";
+# then "Let's have more content. Let's get the traffic to site".
+#
+# RULES (build.py checks the starred ones)
+# - * Each item: `name`, `why` (why they would want it), `check` (what to look at before buying), `q` (an Amazon search,
+#   turned into https://www.amazon.co.uk/s?k=…; app.js adds our tag and sends US readers to amazon.com), optional `for`
+#   (a Things to do id: the item links to our page on that activity, so readers stay on the site to read up).
+# - * No prices, no "best", "top", "most popular", "bestselling", no delivery promises, no brand names in `q` or `name`.
+#   We have not tested anything: `why` says what the thing is for, `check` says what to look at. Never a claim about quality,
+#   health benefits or what readers think.
+# - Facts in `check` must be plain, checkable product facts (valve types, sizes, ISO 12312-2 for eclipse viewers, from the
+#   AAS page already used on the eclipse activity, RUNBOOK §6q). Safety lines are never removed.
+# - A section's `group` is the matching page in content/gifts.yaml ("bigger presents" link). `promise` lists free
+#   activities offered on the printable promise card (/gifts/promise-card/).
+
+hub:
+  h1_season: "Stocking fillers for people who love doing things"
+  h1: "Small presents for people who love doing things"
+  seo_title_season: "Stocking filler ideas by hobby: walkers, cooks, gardeners"
+  seo_title: "Small gift ideas by hobby: walkers, cooks, gardeners and more"
+  description_season: "Stocking filler ideas sorted by what they love doing: walking, running, swimming, cycling, gardening, cooking, stargazing, crafts, music, travel, dogs and more. What each is for, and what to check before you buy."
+  description: "Small present ideas sorted by what they love doing: walking, running, swimming, cycling, gardening, cooking, stargazing, crafts, music, travel, dogs and more. What each is for, and what to check before you buy."
+  lead: "Small things that get used: the head torch for winter walks, the tuner for the guitar, the seeds for spring. Pick the thing they love doing and fill the stocking from there."
+  guide:
+  - h: How to choose a stocking filler that gets used
+    p:
+    - Start with what they already do, not what you wish they did. A small upgrade to something they use every week is more welcome than a gadget for a hobby they have not started.
+    - Things that wear out are safe bets. Walking socks, bike inner tubes, guitar strings, seed packets and hand warmers all get used up, so a spare is never wasted, and they are things people rarely treat themselves to.
+    - Check the details you can check. Shoe size, the valve on their bike, the key of the tutor book they use, the latitude of a star chart, whether their phone is Apple or Android. Each section below says what to look at.
+    - Pair a small thing with a bigger plan. A head torch with a promise of a walk, a tuner with the first lesson booked, a tow float with a date for a first wild swim. The small present then says what the big one is.
+  - h: Put a promise in the stocking
+    p:
+    - Some of the best things to do cost nothing but time. A Saturday parkrun with you alongside, a guided walk with a local group, a morning's birdwatching. Write it on one of our printable promise cards, tuck it in the stocking, and the present is the day you spend together.
+  - h: When to buy
+    p:
+    - Small things are the easiest to leave late and the hardest to get delivered in Christmas week. Amazon shows the delivery date before you order; if it will not arrive in time, a promise card and the kit after Christmas work just as well.
+
+promise:
+  intro: "Write a promise of something to do together, print it at home and tuck it in a stocking or a card. Each card carries the address of our guide to the activity, so they can read up before the day."
+  ids: [parkrun, join-a-ramblers-group, go-on-a-guided-bird-walk, wild-swim, go-on-a-bat-walk, go-rockpooling, sleep-under-the-stars, visit-an-open-garden, dark-sky-place, join-a-beach-clean, find-first-geocache, couch-to-5k, walk-a-national-trail, climb-ben-nevis, visit-heritage-open-days, take-a-ballroom-class, learn-to-play-bridge, borrow-a-dog-to-walk]
+
+sections:
+- id: walkers
+  label: Walkers and hikers
+  group: walkers
+  h1: Stocking fillers for walkers and hikers
+  seo_title: "Stocking fillers for walkers and hikers"
+  description: "Stocking filler ideas for walkers and hikers: a head torch, merino socks, a map of their patch, a blister kit and a flask, with what to check before you buy."
+  lead: Small kit for long days on the hill and short winter afternoons.
+  intro:
+  - Winter walks start and finish nearer the dark, so light, warmth and dry feet are the themes here. Most of these fit in a pocket and get used every outing.
+  items:
+  - {name: A head torch, for: learn-map-and-compass, q: head torch rechargeable, why: "Winter walks often start or end in the dark, and a head torch leaves both hands free for poles, gates and maps.", check: "Whether it charges by USB or takes batteries, how long it lasts on a charge, and whether it has a red light that does not spoil night vision."}
+  - {name: Merino walking socks, for: walk-a-national-trail, q: merino walking socks, why: "Socks wear out before anything else in a walker's kit, and good ones are a small luxury people rarely buy themselves.", check: "Their shoe size, and a thickness that suits their boots: thick socks in a snug boot can make it too tight."}
+  - {name: A paper map of their area, for: learn-map-and-compass, q: OS Explorer map, why: "A map of the walks on their own doorstep, to spread on the kitchen table and plan the next one.", check: "That the sheet covers where they live (search the map's name for their town), and whether a waterproof edition is available."}
+  - {name: A map case, for: learn-map-and-compass, q: waterproof map case, why: "Keeps the map dry and readable in the rain, hung round the neck.", check: "That it is big enough for a folded map and seals properly."}
+  - {name: A blister kit, for: walk-yorkshire-three-peaks, q: blister kit hiking, why: "Small, light, and the thing nobody remembers to pack until it is needed.", check: "What is in it, and that it fits a hip-belt pocket."}
+  - {name: A neck gaiter, for: join-a-ramblers-group, q: neck gaiter tube scarf, why: "One tube of fabric that works as a scarf, a hat or a headband.", check: "Fabric (merino for warmth, thin polyester for summer) and whether it is one size."}
+  - {name: A small insulated flask, for: climb-ben-nevis, q: small insulated flask 500ml, why: "A hot drink at the top changes the whole walk on a cold day.", check: "That it fits their pack's side pocket and has a leakproof lid."}
+
+- id: runners
+  label: Runners
+  group: runners
+  h1: Stocking fillers for runners
+  seo_title: "Stocking fillers for runners"
+  description: "Stocking filler ideas for runners: touchscreen gloves, a clip-on light, a race number belt, a parkrun barcode band, running socks and anti-chafe balm."
+  lead: Small things for dark mornings, wet races and Saturday parkrun.
+  intro:
+  - Runners are particular about shoes, so leave those to them. The small things around a run are safer ground, and most get worn out or lost within the year.
+  items:
+  - {name: Touchscreen running gloves, for: couch-to-5k, q: touchscreen running gloves, why: "Warm hands without taking the gloves off to start or stop a watch or phone.", check: "Hand size, and whether they want a thin pair for running or a warmer pair for standing at the start."}
+  - {name: A clip-on running light, for: run-a-marathon, q: clip on running light, why: "Winter training means running in the dark, and a small light helps them be seen by drivers and cyclists.", check: "That it clips to clothing firmly, how it charges, and whether it has a flashing mode."}
+  - {name: A parkrun barcode band, for: parkrun, q: parkrun barcode wristband, why: "The barcode on the wrist instead of a crumpled bit of paper in a pocket.", check: "That it is made with their own barcode number, so you need to know it or ask them to order it."}
+  - {name: A race number belt, for: run-great-north-run, q: race number belt, why: "Holds a race number without safety pins through a good running top, with room for gels on some.", check: "That it adjusts to their waist and has toggles that fit a standard race number."}
+  - {name: Running socks, for: couch-to-5k, q: running socks cushioned, why: "Running socks wear through quickly, and a spare pair is always welcome.", check: "Shoe size, and whether they like thin or cushioned socks."}
+  - {name: Anti-chafe balm, for: run-a-marathon, q: anti chafe balm running, why: "For long runs where seams and straps rub.", check: "The ingredients, if they have sensitive skin."}
+  - {name: A running cap or beanie, for: try-fell-running, q: running beanie lightweight, why: "A thin hat for cold mornings, or a cap that keeps rain out of the eyes.", check: "That it is a thin, breathable running fabric rather than a thick wool hat."}
+
+- id: swimmers
+  label: Swimmers
+  group: swimmers
+  h1: Stocking fillers for swimmers and wild swimmers
+  seo_title: "Stocking fillers for swimmers and wild swimmers"
+  description: "Stocking filler ideas for swimmers and wild swimmers: goggles, a bright swim cap, a tow float, neoprene gloves and socks, a dry bag and a microfibre towel."
+  lead: Goggles for the pool, and the bright, warm and dry things that make open water easier.
+  intro:
+  - Pool swimmers lose and wear out goggles and caps. Open-water swimmers want to be easy to see and quick to get warm afterwards. Both are easy to buy for.
+  - If they are new to open water, our guide to a first wild swim covers where to go and what to check before getting in.
+  items:
+  - {name: Goggles, for: learn-to-swim-adult, q: anti fog swimming goggles adult, why: "Goggles are the thing swimmers lose, scratch and replace most often.", check: "Tinted or mirrored lenses for outdoor swimming, clear ones for indoor pools, and a size that suits their face."}
+  - {name: A bright swim cap, for: open-water-swim, q: bright silicone swim cap, why: "A bright colour makes a swimmer much easier to spot in open water.", check: "Silicone caps are thicker than latex ones; choose a bright orange, pink or yellow."}
+  - {name: A tow float, for: wild-swim, q: swim tow float dry bag, why: "A bright float that trails behind them so they are easy to see, and many have a dry pocket for keys.", check: "That it is brightly coloured, has a waist belt, and whether it has a dry compartment."}
+  - {name: Neoprene gloves and socks, for: wild-swim, q: neoprene swim gloves socks, why: "Cold hands and feet are what cut many winter swims short.", check: "Hand and shoe size, and the thickness in millimetres (thicker is warmer but stiffer)."}
+  - {name: A dry bag, for: wild-swim, q: dry bag 10l, why: "Keeps clothes and phone dry on the bank or the beach.", check: "A roll-top closure and a size that holds a towel and a change of clothes."}
+  - {name: A microfibre towel, for: masters-swimming, q: microfibre towel large, why: "Packs small and dries fast, for the pool bag or the beach.", check: "That it is big enough to wrap round them, not a hand-towel size."}
+  - {name: A waterproof phone pouch, for: open-water-swim, q: waterproof phone pouch lanyard, why: "For photos of the swim and a phone that stays dry in the bag.", check: "That their phone fits, and an IPX8 rating if it will go in the water."}
+
+- id: cyclists
+  label: Cyclists
+  group: cyclists
+  h1: Stocking fillers for cyclists
+  seo_title: "Stocking fillers for cyclists"
+  description: "Stocking filler ideas for cyclists: a multi-tool, a mini pump, a puncture repair kit, rechargeable lights, gloves and a saddle bag, with what to check first."
+  lead: The small kit that turns a puncture from a walk home into a ten-minute stop.
+  intro:
+  - Most of these live in a saddle bag and come out when something goes wrong, which is exactly why riders put off buying them. Check their bike before you buy: valves and wheel sizes vary.
+  items:
+  - {name: A bike multi-tool, for: learn-bike-maintenance, q: bike multi tool, why: "The right size of key for most roadside fixes, in one small tool.", check: "That it has the hex key sizes their bike uses, and a chain tool if they ride long distances."}
+  - {name: A mini pump, for: ride-a-sportive, q: mini bike pump, why: "Small enough to carry on every ride.", check: "The valve on their tyres: thin Presta valves and car-style Schrader valves need a pump that fits (many fit both)."}
+  - {name: A puncture repair kit and tyre levers, for: learn-bike-maintenance, q: puncture repair kit tyre levers, why: "Patches and levers weigh almost nothing and save a long walk.", check: "Glueless patches are quicker; glued ones tend to hold better on a long trip."}
+  - {name: Rechargeable bike lights, for: cycle-confidence-lesson, q: rechargeable bike lights set, why: "Winter riding means riding in the dark, and lights that charge by USB never run out of batteries at the wrong time.", check: "A white front and a red rear, how they fix to the bike, and how long they last on a charge."}
+  - {name: Cycling gloves, for: ride-a-rail-trail, q: winter cycling gloves, why: "Warm hands on a cold ride, and padding on long ones.", check: "Hand size, and winter or summer weight."}
+  - {name: A saddle bag, for: long-distance-cycle-route, q: bike saddle bag small, why: "Somewhere to keep the tool, the patches and a spare tube on every ride.", check: "That it fits their saddle rails and holds a spare inner tube."}
+  - {name: A spare inner tube, for: ride-london-to-brighton, q: bike inner tube, why: "The quickest fix for a puncture, and one most riders mean to carry.", check: "The size printed on their tyre wall (for example 700x28c or 26x2.1) and the valve type."}
+
+- id: on-the-water
+  label: Paddlers and sailors
+  group: on-the-water
+  h1: Stocking fillers for paddlers and sailors
+  seo_title: "Stocking fillers for paddlers, kayakers and sailors"
+  description: "Stocking filler ideas for paddleboarders, kayakers, canoeists and sailors: dry bags, a waterproof phone case, paddling gloves, a whistle and a sunglasses strap."
+  lead: Small things that keep kit dry and stop sunglasses going overboard.
+  intro:
+  - Anything that goes on the water needs to float, stay dry or be tied on. That makes for easy stocking fillers, because there is always one more thing to keep dry.
+  items:
+  - {name: A set of dry bags, for: learn-to-kayak, q: dry bag set, why: "Different sizes for lunch, phone and a spare layer.", check: "Roll-top closures, and bright colours so they are easy to find."}
+  - {name: A floating waterproof phone case, for: stand-up-paddleboarding, q: floating waterproof phone case, why: "A phone that stays dry and floats if it goes in.", check: "That their phone fits, an IPX8 rating, and a lanyard or clip."}
+  - {name: Paddling gloves, for: canoe-a-river-trail, q: paddling gloves, why: "Grip and warmth on the paddle shaft on cold days.", check: "Hand size; thin neoprene for winter, fingerless for summer."}
+  - {name: A safety whistle, for: learn-to-sail, q: safety whistle buoyancy aid, why: "A whistle clipped to a buoyancy aid is the simplest way to call for attention on the water.", check: "A pea-less design that still works when wet, and a clip or lanyard."}
+  - {name: A sunglasses strap, for: learn-to-surf, q: floating sunglasses strap, why: "Keeps sunglasses on, and a floating strap keeps them findable.", check: "That it fits the arms of their glasses."}
+  - {name: A waterproof clip-on light, for: paddle-the-broads, q: waterproof clip on light, why: "A small waterproof light for getting off the water at dusk.", check: "That it is rated waterproof, not just splash-proof."}
+
+- id: gardeners
+  label: Gardeners
+  group: gardeners
+  h1: Stocking fillers for gardeners
+  seo_title: "Stocking fillers for gardeners"
+  description: "Stocking filler ideas for gardeners: wildflower and herb seeds, secateurs, gloves, plant labels, a kneeler, garden twine and envelopes for saving seed."
+  lead: Seeds for spring, tools for the shed and things that get used up.
+  intro:
+  - A stocking filler for a gardener can be the start of next year's garden. Seeds are cheap, light and full of plans; tools and gloves get worn out every season.
+  items:
+  - {name: Wildflower seeds, for: grow-a-wildflower-patch, q: native wildflower seed mix, why: "A patch of wildflowers for bees and butterflies, from a packet.", check: "A mix of native species that suits their soil (clay, chalk or sandy) and the area they want to sow."}
+  - {name: Herb seeds, for: grow-your-own-herbs, q: herb seed collection, why: "A windowsill of basil, parsley and chives for the kitchen.", check: "Whether they will grow inside on a sill or outside in pots."}
+  - {name: Secateurs, for: plant-a-community-orchard, q: bypass secateurs, why: "The tool a gardener reaches for most, and one that wears out or goes missing.", check: "Hand size, left or right-handed, and bypass blades for live stems."}
+  - {name: Gardening gloves, for: take-on-an-allotment, q: gardening gloves, why: "Gloves wear through every season.", check: "Hand size, and thorn-proof gauntlets if they grow roses or prune brambles."}
+  - {name: Plant labels and a pencil, for: save-your-own-seed, q: plant labels pencil, why: "So they know what they sowed where, come April.", check: "Wooden or slate labels are reusable; a soft pencil lasts in the rain better than many pens."}
+  - {name: A kneeling pad, for: community-garden-plot, q: garden kneeling pad, why: "Kinder to knees during long sessions of weeding and planting.", check: "Thickness, and a handle to carry it."}
+  - {name: Seed-saving envelopes, for: save-your-own-seed, q: seed storage envelopes, why: "Small paper envelopes for the seeds they save from this year's plants.", check: "Paper rather than plastic, so seeds stay dry."}
+  - {name: Garden twine in a tin, for: take-on-an-allotment, q: garden twine tin, why: "Twine that does not tangle or vanish, for tying in beans and tomatoes.", check: "Jute or natural twine if they compost it after."}
+
+- id: cooks
+  label: Cooks and bakers
+  group: food-and-drink
+  h1: Stocking fillers for cooks and bakers
+  seo_title: "Stocking fillers for cooks and bakers"
+  description: "Stocking filler ideas for cooks and bakers: a dough scraper, a proving basket, a bread lame, digital scales, an oven thermometer and a jam thermometer."
+  lead: Small tools that make the bread rise and the jam set.
+  intro:
+  - Bakers weigh, scrape and slash; jam makers measure temperature. These are the small tools that make the difference, and few are expensive.
+  - If they are starting sourdough, our guide to keeping a starter goes with any of these.
+  items:
+  - {name: A dough scraper, for: take-a-bread-making-class, q: dough scraper bench, why: "Lifts sticky dough off the worktop and cleans it after.", check: "A flexible plastic one for bowls, a steel one for the worktop (or a set of both)."}
+  - {name: A proving basket, for: sourdough-from-starter, q: banneton proving basket, why: "Holds a sourdough loaf in shape while it rises, and leaves the floured rings on the crust.", check: "Round or oval, and a size for the loaves they bake (often given in grams of dough)."}
+  - {name: A bread lame, for: sourdough-from-starter, q: bread lame, why: "A razor on a handle for scoring the top of a loaf before it bakes.", check: "Spare blades included, and a cover for the blade."}
+  - {name: Digital kitchen scales, for: go-to-cookery-school, q: digital kitchen scales, why: "Bread and cake recipes are mostly given by weight, and scales that weigh in single grams help with small amounts such as yeast and salt.", check: "Weighs to 1 g, a tare button, and a capacity of at least 5 kg."}
+  - {name: An oven thermometer, for: take-a-bread-making-class, q: oven thermometer, why: "Shows the temperature inside the oven, so they can see whether it matches the dial.", check: "A dial that is easy to read through the oven door."}
+  - {name: A jam thermometer, for: preserve-a-seasons-fruit, q: jam sugar thermometer, why: "For knowing when jam and marmalade have reached setting point.", check: "A clip to hold it on the pan, and a clear scale."}
+  - {name: A cheesemaking starter kit, for: learn-cheesemaking, q: cheese making kit beginner, why: "Everything for a first soft cheese at home.", check: "Which cheeses it makes, and what extra they will need, such as milk and a thermometer."}
+
+- id: stargazers
+  label: Stargazers
+  group: stargazers
+  h1: Stocking fillers for stargazers
+  seo_title: "Stocking fillers for stargazers and astronomers"
+  description: "Stocking filler ideas for stargazers: a red torch, a planisphere, a Moon map, a night-sky guide for the year, a binocular tripod adapter and certified eclipse glasses."
+  lead: Small things for long, cold, clear nights.
+  intro:
+  - Most stargazing kit is about seeing in the dark, finding your way round the sky and staying warm while you do. All of these fit a stocking.
+  - For eclipse glasses, safety comes first. Our eclipse page sets out the standard NASA describes; ordinary sunglasses are not safe for looking at the Sun.
+  items:
+  - {name: A red torch, for: dark-sky-place, q: red light torch astronomy, why: "Dark sky parks ask for red light because white light undoes the eyes' adjustment to the dark.", check: "A true red light (not a white torch with a red filter that leaks), and a dimmer if possible."}
+  - {name: A planisphere, for: join-an-astronomy-society, q: planisphere, why: "A turning star wheel that shows what is up on any night of the year.", check: "That it is made for a latitude close to where they live: London is about 51 degrees north, Edinburgh about 56 and New York about 41."}
+  - {name: A Moon map, for: see-saturns-rings, q: moon map, why: "Names the craters and seas they can see with binoculars.", check: "A version that matches what binoculars show, as some maps are drawn for telescopes and appear mirrored."}
+  - {name: A night-sky guide for next year, for: join-an-astronomy-society, q: night sky guide 2027, why: "Month by month, what to look for and when.", check: "That it is for the right year and the northern hemisphere."}
+  - {name: A binocular tripod adapter, for: go-on-a-guided-bird-walk, q: binocular tripod adapter, why: "Holds binoculars steady on a tripod, which shows more detail than hand-holding.", check: "That their binoculars have a tripod socket (usually under a cap on the front hinge)."}
+  - {name: Certified eclipse glasses, for: see-a-total-solar-eclipse, q: eclipse glasses ISO 12312-2, why: "For anyone planning to see the total solar eclipse of 2 August 2027 in southern Spain or North Africa.", check: "They must meet the ISO 12312-2 standard that NASA describes, and they should be tried on before the day. NASA says ordinary sunglasses, however dark, are not safe."}
+  - {name: Hand warmers, for: dark-sky-place, q: reusable hand warmers, why: "Stargazing is mostly standing still on cold nights.", check: "Reusable (rechargeable or click-to-heat) or single-use; how long each lasts."}
+
+- id: wildlife
+  label: Birdwatchers and nature lovers
+  group: wildlife
+  h1: Stocking fillers for birdwatchers and nature lovers
+  seo_title: "Stocking fillers for birdwatchers and nature lovers"
+  description: "Stocking filler ideas for birdwatchers and nature lovers: a pocket bird guide, a window feeder, a nest box, a bat detector, a hand lens and a tree identification guide."
+  lead: For the garden, the window and the walk.
+  intro:
+  - Nature presents can be enjoyed from the kitchen window. A feeder or nest box brings the birds closer; a guide helps put a name to them.
+  items:
+  - {name: A pocket bird guide, for: go-on-a-guided-bird-walk, q: pocket bird guide britain, why: "Puts a name to the birds in the garden and on the walk.", check: "That it covers their country (UK and North American guides are different books)."}
+  - {name: A window bird feeder, for: big-garden-birdwatch, q: window bird feeder, why: "Brings birds to the window, close enough to watch from the kitchen table.", check: "Strong suction cups, and that it comes apart for cleaning."}
+  - {name: A nest box, for: put-up-a-nest-box, q: wooden bird nest box, why: "A home for a pair of birds in spring, put up in winter.", check: "The hole size, which decides which birds can use it, and untreated wood."}
+  - {name: A bat detector, for: go-on-a-bat-walk, q: bat detector, why: "Turns bats' calls into sounds we can hear on summer evenings.", check: "Whether it is a simple heterodyne detector or one that records, and what it plugs into."}
+  - {name: A hand lens, for: go-rockpooling, q: hand lens magnifier 10x, why: "For insects, lichens, seeds and rock pool life up close.", check: "Magnification (10x is common) and a lanyard."}
+  - {name: A tree identification guide, for: identify-twenty-trees, q: tree identification guide, why: "Names trees by leaf, bark and twig, so winter walks have something to look for.", check: "That it covers their country, and whether it has winter twigs for the bare months."}
+  - {name: A notebook for nature journaling, for: try-nature-journaling, q: waterproof field notebook, why: "Somewhere to note and sketch what they see.", check: "Waterproof paper if it will go out in all weathers."}
+
+- id: makers
+  label: Makers and artists
+  group: makers
+  h1: Stocking fillers for makers and artists
+  seo_title: "Stocking fillers for crafters, makers and artists"
+  description: "Stocking filler ideas for makers and artists: a travel watercolour set, a sketchbook and fineliners, pottery tools, an embroidery kit, crochet hooks, calligraphy pens and a lino cutting kit."
+  lead: Materials and small tools for the next thing they make.
+  intro:
+  - Makers use up materials. A new sketchbook, a set of pens or a starter kit for something they have mentioned is a stocking filler that turns into an afternoon.
+  items:
+  - {name: A travel watercolour set, for: paint-in-watercolour, q: travel watercolour set, why: "Paints, a brush and a palette in a box that fits a coat pocket.", check: "Artist or student quality pans, and whether a water brush is included."}
+  - {name: A sketchbook and fineliner pens, for: join-an-urban-sketchers-meet, q: sketchbook a5 fineliner pens, why: "Everything to sketch on a walk or in a café.", check: "Paper weight (heavier takes a wash of paint), and waterproof ink if they add colour."}
+  - {name: A pottery tool set, for: try-pottery-on-the-wheel, q: pottery tool set, why: "Their own set of the ribs, wires and loop tools a class uses.", check: "That it includes a cutting wire, a rib and loop tools."}
+  - {name: An embroidery starter kit, for: learn-embroidery, q: embroidery kit beginner, why: "A hoop, threads and a pattern to stitch over Christmas.", check: "A beginner kit with a printed pattern and clear instructions."}
+  - {name: A set of crochet hooks, for: learn-to-crochet, q: crochet hook set ergonomic, why: "The hook sizes for most yarns, in one case.", check: "Sizes in millimetres (UK and US use different numbers), and soft handles if they crochet for long."}
+  - {name: Calligraphy pens, for: learn-calligraphy, q: calligraphy pen set beginner, why: "A first set of broad-nib pens for lettering.", check: "Cartridge pens are easier than dip pens to start with."}
+  - {name: A lino cutting kit, for: make-a-linocut-print, q: lino cutting kit beginner, why: "Cutters, lino and ink for a first print.", check: "A bench hook, so the hand holding the lino stays behind the blade, and soft lino for beginners."}
+
+- id: music
+  label: Music makers
+  group: music-and-dance
+  h1: Stocking fillers for musicians and music learners
+  seo_title: "Stocking fillers for musicians and guitar players"
+  description: "Stocking filler ideas for musicians and people learning an instrument: a clip-on tuner, a capo, plectrums, strings, a harmonica, a tin whistle, a metronome and a music stand."
+  lead: The small things every player needs, and two instruments that fit in a stocking.
+  intro:
+  - Strings break, picks vanish and tuners get left at lessons. A spare is always useful. For a beginner, a harmonica or tin whistle is a whole instrument in a stocking.
+  items:
+  - {name: A clip-on tuner, for: learn-the-guitar, q: clip on tuner, why: "Clips on the headstock and tunes the instrument in seconds.", check: "That it works for their instrument (guitar, ukulele, violin or chromatic for all)."}
+  - {name: A capo, for: learn-the-guitar, q: guitar capo, why: "Changes the key of a song without new chord shapes.", check: "Acoustic or electric guitar (neck shapes differ), or a ukulele capo."}
+  - {name: A pack of plectrums, for: learn-the-guitar, q: guitar picks variety pack, why: "Picks vanish; a pack of different thicknesses lets them find the one they like.", check: "Mixed thicknesses for a beginner."}
+  - {name: A set of strings, for: learn-the-ukulele, q: ukulele strings, why: "Strings wear and break, and a spare set is always needed.", check: "The instrument and size (soprano, concert or tenor ukulele; acoustic or electric guitar)."}
+  - {name: A harmonica, for: learn-the-harmonica, q: harmonica key of C beginner, why: "A whole instrument in a stocking.", check: "The key the tutor book or course uses; many beginner courses use C."}
+  - {name: A tin whistle, for: learn-the-tin-whistle, q: tin whistle D, why: "A simple, cheap instrument for folk tunes.", check: "The key the tutor book uses; D is the usual key for folk tunes and most beginner books."}
+  - {name: A metronome, for: learn-the-piano, q: metronome, why: "Steady time for practice.", check: "Clip-on or desktop; a free app on a phone does the same job if they prefer."}
+  - {name: A folding music stand, for: join-community-orchestra-or-band, q: folding music stand, why: "For practice at home and rehearsals.", check: "That it folds small enough for their case or bag."}
+
+- id: puzzlers
+  label: Puzzlers, readers and game players
+  group: curious-minds
+  h1: Stocking fillers for puzzlers, readers and game players
+  seo_title: "Stocking fillers for puzzle lovers and game players"
+  description: "Stocking filler ideas for puzzle lovers, readers and game players: puzzle and quiz books, a travel chess set, cards and a bridge book, a crossword dictionary, a puzzle cube and a book light."
+  lead: For the quiet hour after lunch and the noisy evening round the table.
+  intro:
+  - Our own Christmas puzzle book and quiz book are at the top of this page. Below them are small things for the people who play cards, chess or the crossword every day.
+  items:
+  - {name: A travel chess set, for: join-a-chess-club, q: magnetic travel chess set, why: "A game that fits a pocket and keeps its pieces on the train.", check: "Magnetic pieces, and a board size that is not too fiddly."}
+  - {name: Playing cards and a bridge book, for: learn-to-play-bridge, q: beginners bridge book, why: "Two packs of cards and a book to learn bridge from over the holidays.", check: "A book for beginners using standard British or American bidding, depending on where they will play."}
+  - {name: A crossword dictionary, for: read-a-prize-shortlist, q: crossword dictionary, why: "For the clue that has been on the fridge for three days.", check: "A recent edition."}
+  - {name: A puzzle cube, for: join-a-chess-club, q: 3x3 speed cube, why: "A puzzle to keep in a pocket for years.", check: "A smooth-turning cube with stickerless sides is easier to learn on."}
+  - {name: A jigsaw, for: read-a-prize-shortlist, q: 1000 piece jigsaw puzzle, why: "A Christmas jigsaw for the table.", check: "Piece count (500 is an evening, 1,000 is a few days) and piece size if they prefer larger pieces."}
+  - {name: A book light, for: read-a-prize-shortlist, q: rechargeable book light, why: "Reading in bed without keeping anyone else awake.", check: "Warm light settings and a clip that holds on a thick book."}
+  - {name: A phrasebook for next year's trip, for: learn-a-language-to-b1, q: phrasebook, why: "A start on the language before a trip.", check: "The language and the edition date."}
+
+- id: travellers
+  label: Travellers
+  group: big-trips
+  h1: Stocking fillers for travellers
+  seo_title: "Stocking fillers for travellers"
+  description: "Stocking filler ideas for travellers: a universal adaptor, packing cubes, a luggage tracker, a travel journal, a small first-aid kit, a luggage scale and a sleep kit."
+  lead: Small things for the trips they have planned for next year.
+  intro:
+  - Travel stocking fillers work best when they fit the trip. A long-haul flight, a rail journey across Europe or a walking holiday each want different things.
+  items:
+  - {name: A universal travel adaptor, for: interrail-pass-trip, q: universal travel adapter usb, why: "One plug for most countries, with USB sockets for phones.", check: "That it covers the countries they are going to, and how many USB ports it has."}
+  - {name: Packing cubes, for: solo-trip, q: packing cubes set, why: "Keeps a suitcase or rucksack organised.", check: "Sizes that fit their bag."}
+  - {name: A luggage tracker, for: walk-the-camino-to-santiago, q: luggage tracker tag, why: "Shows where the bag is if it goes astray.", check: "That it works with their phone: some trackers work only with iPhone, others only with Android."}
+  - {name: A travel journal, for: sleeper-train-journey, q: travel journal notebook, why: "Somewhere to keep tickets, notes and sketches from the trip.", check: "A size that fits a day bag."}
+  - {name: A small first-aid kit, for: walk-a-camino, q: travel first aid kit small, why: "Plasters, wipes and the basics in one small pouch.", check: "What it contains, and that it fits their bag."}
+  - {name: A luggage scale, for: cross-america-by-train, q: digital luggage scale, why: "Checks the bag's weight before the airport does.", check: "A maximum weight above their airline's limit."}
+  - {name: A sleep kit, for: sleeper-train-journey, q: sleep mask ear plugs travel, why: "An eye mask and earplugs for flights, trains and hostels.", check: "A contoured mask that does not press on the eyes."}
+
+- id: campers
+  label: Campers and bothy-goers
+  group: walkers
+  h1: Stocking fillers for campers and people who sleep out
+  seo_title: "Stocking fillers for campers"
+  description: "Stocking filler ideas for campers and people who sleep in bothies or under the stars: an enamel mug, a lantern, a spork, a sit mat, a camping pillow and a stuff sack."
+  lead: Small comforts for a night outside.
+  intro:
+  - Camping kit is mostly about weight and warmth. These are the small things that make a night in a tent, a bothy or under the stars more comfortable.
+  items:
+  - {name: An enamel mug, for: stay-in-a-bothy, q: enamel camping mug, why: "The mug for tea by the stove, and it can go on the heat.", check: "Size, and that it is enamelled steel rather than a decorative mug."}
+  - {name: A camping lantern, for: sleep-under-the-stars, q: rechargeable camping lantern, why: "Light for the whole tent or bothy, not just where the head torch points.", check: "Rechargeable, a warm light setting and a hook to hang it."}
+  - {name: A spork, for: stay-in-a-bothy, q: titanium spork, why: "Spoon and fork in one, light enough to forget it is there.", check: "Long-handled ones reach the bottom of a food pouch."}
+  - {name: A sit mat, for: climb-scafell-pike, q: foam sit mat hiking, why: "A dry, warm seat on wet ground or a cold rock at lunch.", check: "Foam folds flat; inflatable ones pack smaller."}
+  - {name: A camping pillow, for: sleep-under-the-stars, q: inflatable camping pillow, why: "Better than a rolled-up jacket.", check: "Pack size and whether it inflates by mouth or self-inflates."}
+  - {name: A set of stuff sacks, for: walk-west-highland-way, q: stuff sacks set, why: "Keeps the sleeping bag, clothes and food sorted in a pack.", check: "Waterproof ones for the sleeping bag."}
+
+- id: dog-walkers
+  label: Dog walkers
+  group: walkers
+  h1: Stocking fillers for dog walkers
+  seo_title: "Stocking fillers for dog walkers (and their dogs)"
+  description: "Stocking filler ideas for dog walkers: a light-up collar, a collapsible water bowl, a treat pouch, a poo bag holder, a ball launcher, a dog towel and a hands-free lead."
+  lead: For the person who walks in all weathers, and the dog who makes them.
+  intro:
+  - Dog walkers are out twice a day whatever the weather. Most of these are about being seen in the dark, staying clean and keeping the dog happy on longer walks.
+  - If they do not have a dog of their own, our guide to borrowing a dog to walk shows how people walk other people's dogs.
+  items:
+  - {name: A light-up collar or clip, for: borrow-a-dog-to-walk, q: led dog collar light, why: "Makes the dog easy to see on dark winter walks.", check: "That it charges by USB and fits the collar or harness."}
+  - {name: A collapsible water bowl, for: hike-shenandoah-with-your-dog, q: collapsible dog water bowl, why: "Water for the dog on long walks, folded flat in a pocket.", check: "A clip for the lead or bag."}
+  - {name: A treat pouch, for: volunteer-with-your-dog, q: dog treat pouch, why: "Treats on the belt for training on the walk.", check: "A magnetic or hinged top that opens one-handed."}
+  - {name: A poo bag holder, for: borrow-a-dog-to-walk, q: poo bag holder lead, why: "Keeps bags on the lead so they are never forgotten.", check: "That it fits standard bag rolls."}
+  - {name: A ball launcher, for: walk-dogs-at-a-dogs-trust-centre, q: dog ball launcher, why: "Longer throws without bending down for a wet ball.", check: "A ball size that suits the dog."}
+  - {name: A microfibre dog towel, for: walk-acadia-with-your-dog, q: microfibre dog towel, why: "For the muddy dog before it reaches the car or the sofa.", check: "Size for the dog; mitt towels are quick to use."}
+  - {name: A hands-free lead, for: try-canicross, q: hands free dog lead waist belt, why: "A waist belt and bungee line for jogging or long walks with the dog.", check: "A padded belt and a bungee section that absorbs pulls."}
+
+- id: photographers
+  label: Photographers
+  group: makers
+  h1: Stocking fillers for photographers
+  seo_title: "Stocking fillers for photographers"
+  description: "Stocking filler ideas for photographers, from phone to film: a lens cleaning kit, a mini tripod, a Bluetooth remote, a memory card, a camera strap and rolls of film."
+  lead: For the phone photographer, the camera club member and the film convert.
+  intro:
+  - Check what they shoot with first. Phone, digital camera and film camera each need different small things, and memory cards and film come in formats that must match.
+  items:
+  - {name: A lens cleaning kit, for: take-a-photography-course, q: lens cleaning kit, why: "A blower, brush and cloth for the smudge that ruins a good picture.", check: "A soft brush and a microfibre cloth, without harsh chemicals."}
+  - {name: A mini tripod for a phone, for: learn-smartphone-photography, q: phone tripod flexible, why: "Steady pictures at night, group photos and video.", check: "That it holds their phone and has a standard tripod screw for a camera too."}
+  - {name: A Bluetooth remote shutter, for: learn-smartphone-photography, q: bluetooth remote shutter phone, why: "Takes the picture without touching the phone, so it does not shake.", check: "That it works with their phone or camera model."}
+  - {name: A memory card, for: join-a-camera-club, q: sd card camera, why: "Spare space for a busy day out.", check: "The card type their camera takes (SD or microSD), its capacity, and a speed class that suits video if they shoot it."}
+  - {name: A camera strap, for: join-a-camera-club, q: camera strap comfortable, why: "A comfortable strap makes it more likely the camera comes along.", check: "That it fits their camera's lugs."}
+  - {name: Rolls of film, for: learn-film-photography, q: 35mm film colour, why: "Film is the thing a film photographer runs out of.", check: "The format their camera takes (35 mm or 120) and colour or black and white."}
+
+- id: winter
+  label: Anyone who goes out in winter
+  group: ""
+  h1: Stocking fillers for anyone who goes out in winter
+  seo_title: "Winter stocking fillers for people who go outdoors"
+  description: "Winter stocking filler ideas for anyone who walks, runs, swims, cycles or gardens in the cold: hand warmers, thermal socks, a light-up beanie, touchscreen gloves and a travel mug."
+  lead: Warm hands, warm feet and a hot drink, whatever they do outside.
+  intro:
+  - If you are not sure what they do, but you know they go out in all weathers, these suit almost anyone.
+  items:
+  - {name: Reusable hand warmers, for: dark-sky-place, q: rechargeable hand warmers, why: "Warm hands on cold mornings, recharged rather than thrown away.", check: "How long they stay warm, and how they charge."}
+  - {name: Thermal socks, for: walk-1000-miles, q: thermal socks, why: "Warm feet for walks, football touchlines and frosty gardens.", check: "Shoe size, and that they will fit inside their boots."}
+  - {name: A beanie with a built-in light, for: join-a-wellbeing-walk, q: beanie hat led light, why: "A warm hat with a light in the brim for dark evenings.", check: "That the light unit comes out so the hat can be washed, and how it charges."}
+  - {name: Touchscreen gloves, for: join-a-ramblers-group, q: touchscreen gloves, why: "Use a phone without cold fingers.", check: "Hand size, and fingertips that work with their phone."}
+  - {name: A travel mug, for: walk-1000-miles, q: insulated travel mug leakproof, why: "A hot drink that stays hot on the walk or at the allotment.", check: "A leakproof lid, and that it fits their car's cup holder if they drive."}
+  - {name: A waterproof hat, for: walk-a-national-trail, q: waterproof hat walking, why: "Keeps rain off the face and glasses better than a hood.", check: "Head size and a chin strap for wind."}

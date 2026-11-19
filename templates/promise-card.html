@@ -1,0 +1,41 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button %}
+{# Printable promise card (RUNBOOK §6v, stocking fillers): a promise of something to do together, printed at home.
+   Everything happens in the browser; the names typed here are never sent anywhere. #}
+{% block title %}Printable promise card: give something to do together{% endblock %}
+{% block description %}{{ "Make a free printable promise card: a promise to go to parkrun, a guided walk, a bird walk or a wild swim together. Print it at home for a stocking or a Christmas card." | metadesc }}{% endblock %}
+{% block pagetype %}gifts{% endblock %}
+{% block ogimage %}{{ '/static/img/gifts/og-promise-card.png' }}{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Gift ideas","item":cfg.site.url ~ "/gifts/"},
+  {"@type":"ListItem","position":2,"name":"Stocking fillers","item":cfg.site.url ~ "/gifts/stocking-fillers/"},
+  {"@type":"ListItem","position":3,"name":"Promise card","item":cfg.site.url ~ "/gifts/promise-card/"}]} | tojson }}</script>{% endblock %}
+{% block content %}
+<header class="page-head gift-head pc-noprint">
+  <p class="kicker"><a href="/gifts/stocking-fillers/">Stocking fillers</a></p>
+  <h1>Make a promise card</h1>
+  <p class="lead">{{ sf.promise.intro }}</p>
+</header>
+<form class="pc-form pc-noprint" id="pc-form" onsubmit="return false">
+  <label>To <input id="pc-to" maxlength="40" autocomplete="off" placeholder="Their name"></label>
+  <label>From <input id="pc-from" maxlength="40" autocomplete="off" placeholder="Your name"></label>
+  <label>The promise
+    <select id="pc-act">{% for a in sf.promise['items'] %}<option value="{{ a.id }}" data-title="{{ a.title }}" data-url="{{ cfg.site.url | replace('https://','') }}{{ a.url }}">{{ a.title }}</option>{% endfor %}
+      <option value="" data-title="" data-url="">Something else (write it below)</option></select></label>
+  <label>Your words <textarea id="pc-note" maxlength="160" rows="3" placeholder="For example: first Saturday in January, and breakfast after"></textarea></label>
+  <p><button type="button" class="btn" id="pc-print">Print the card</button></p>
+  <p class="gift-note">Nothing you type leaves this page. Print on card if you have it, then cut along the line.</p>
+</form>
+<div class="pc-card" id="pc-card" aria-live="polite">
+  <p class="pc-kicker">A promise for <span id="pc-to-out">you</span></p>
+  <p class="pc-title" id="pc-title">{{ sf.promise['items'][0].title }}</p>
+  <p class="pc-note" id="pc-note-out">Together, and soon.</p>
+  <p class="pc-from">With love from <span id="pc-from-out">me</span></p>
+  <p class="pc-foot"><span id="pc-url">{{ cfg.site.url | replace('https://','') }}{{ sf.promise['items'][0].url }}</span><br>Don't Die Retired · Never retire from life.</p>
+</div>
+<section class="prose narrow pc-noprint">
+  <h2>Ideas to promise</h2>
+  <ul>{% for a in sf.promise['items'] %}<li><a href="{{ a.url }}">{{ a.title }}</a></li>{% endfor %}</ul>
+  <p>Want a little something to unwrap with it? <a href="/gifts/stocking-fillers/">Stocking fillers by interest</a>.</p>
+</section>
+{% endblock %}
+{% block scripts %}<script src="/static/promise.js?v={{ asset_v }}" defer></script>{% endblock %}

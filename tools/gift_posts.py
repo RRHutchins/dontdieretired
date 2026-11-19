@@ -31,7 +31,21 @@ def load():
     for o in gifts["occasions"]:
         ids = o["ideas"] if o["ideas"] != "auto" else [i["id"] for g in gifts["groups"] for i in g["ideas"] if i.get("book")]
         pages[o["id"]] = {"label": o["label"], "h1": o["h1"], "ideas": [by_id[x] for x in ids if x in by_id], "lead": o["lead"]}
+    sfp = ROOT / "content" / "stocking_fillers.yaml"          # stocking fillers (RUNBOOK §6v): pages under /gifts/stocking-fillers/
+    if sfp.exists():
+        sf = yaml.safe_load(sfp.read_text(encoding="utf-8"))
+        pages["stocking-fillers"] = {"label": "Stocking fillers", "h1": sf["hub"]["h1_season"], "ideas": ["For " + x["label"].lower() for x in sf["sections"]],
+                                     "lead": sf["hub"]["lead"], "path": "stocking-fillers/"}
+        for x in sf["sections"]:
+            pages["sf-" + x["id"]] = {"label": x["label"], "h1": x["h1"], "ideas": [i["name"] for i in x["items"]], "lead": x["lead"], "path": f"stocking-fillers/{x['id']}/"}
+        pages["promise-card"] = {"label": "Promise card", "h1": "Put a promise in the stocking", "lead": sf["promise"]["intro"], "path": "promise-card/",
+                                 "ideas": ["Write a promise of something to do together", "Print it at home", "Tuck it in a stocking or a card"]}
     return posts, pages
+
+
+def path_of(pages, pid):
+    """The page's address under /gifts/ ("" = the hub)."""
+    return pages[pid].get("path", pid + "/" if pid else "")
 
 
 def check(posts, pages):
@@ -120,14 +134,14 @@ def draw_all(dist):
     dist = pathlib.Path(dist)
     for pid, pg in pages.items():                  # link previews for each gift page
         card(pg["h1"], "Gift ideas from Don't Die Retired", pg["ideas"][:4], (1200, 630), dist / "static" / "img" / "gifts" / f"og-{pid or 'hub'}.png",
-             foot="dontdieretired.com/gifts" + (f"/{pid}" if pid else ""))
+             foot=("dontdieretired.com/gifts/" + path_of(pages, pid)).rstrip("/"))
     # Pinterest (Robin, 19 Nov 2026): a tall pin per gift page and feed/gifts.xml for a "Gift ideas" board. Pinterest's
     # auto-publish reads the feed (RUNBOOK §6d); the dates are the day each page went up, so nothing is pinned twice.
     items = []
     for pid, pg in pages.items():
         pin = f"gifts-{pid or 'hub'}.png"
         card(pg["h1"], "Gift ideas", pg["ideas"][:10], (1000, 1500), dist / "static" / "pin" / pin, foot="dontdieretired.com/gifts")
-        url = SITE + "/gifts/" + (pid + "/" if pid else "")
+        url = SITE + "/gifts/" + path_of(pages, pid)
         items.append(f"""
     <item>
       <title>{_esc(pg['h1'])}</title>
@@ -168,7 +182,7 @@ def write_packs():
         folder = ROOT / "social" / f"{p['date']}-{p['slug']}"
         if (folder / "meta.json").exists() and p["date"] < today:
             kept += 1; continue                     # already sent: never change its text
-        page = SITE + "/gifts/" + (p["page"] + "/" if p.get("page") else "")
+        page = SITE + "/gifts/" + path_of(pages, p.get("page", ""))
         utm = lambda s: f"{page}?utm_source={s}&utm_medium=social&utm_campaign=gifts"
         ideas = p["ideas"] if "ideas" in p else pages[p.get("page", "")]["ideas"][:4]
         meta = {

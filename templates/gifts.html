@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import share_button %}{% from "_gifts.html" import gift_card, books_panel, plus_panel, shortlist_bar %}
+{% extends "base.html" %}{% from "_macros.html" import share_button %}{% from "_gifts.html" import gift_card, books_panel, plus_panel, shortlist_bar, promise_panel %}
 {# Gift ideas hub (RUNBOOK §6v). Christmas wording between season.from and season.until, year-round wording after. #}
 {% block title %}{{ seo_title }}{% endblock %}
 {% block description %}{{ description | metadesc }}{% endblock %}
@@ -23,10 +23,12 @@
   <h2 class="h3">Or by occasion</h2>
   <ul class="gift-groups gift-occasions">
   {% for o in occasions %}<li><a href="{{ o.url }}"><strong>{{ o.label }}</strong><span>{{ o.lead }}</span></a></li>{% endfor %}
+  {% if sf %}<li><a href="/gifts/stocking-fillers/"><strong>Stocking fillers</strong><span>{{ sf.hub.lead }}</span></a></li>{% endif %}
   </ul>
 </section>
 
 {{ books_panel(books, quiz, season) }}
+{{ promise_panel(sf) }}
 
 <section class="gift-how prose narrow" aria-labelledby="gh-h">
   <h2 id="gh-h">How it works</h2>

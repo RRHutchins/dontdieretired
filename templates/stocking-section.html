@@ -1,0 +1,36 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button %}{% from "_gifts.html" import sf_item, books_panel, promise_panel %}
+{# One interest on the stocking fillers pages (RUNBOOK §6v, stocking fillers). #}
+{% block title %}{{ seo_title }}{% endblock %}
+{% block description %}{{ s.description | metadesc }}{% endblock %}
+{% block pagetype %}gifts{% endblock %}
+{% block ogimage %}{{ '/static/img/gifts/og-sf-' ~ s.id ~ '.png' }}{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
+ {"@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Gift ideas","item":cfg.site.url ~ "/gifts/"},
+  {"@type":"ListItem","position":2,"name":"Stocking fillers","item":cfg.site.url ~ "/gifts/stocking-fillers/"},
+  {"@type":"ListItem","position":3,"name":s.label,"item":cfg.site.url ~ s.url}]},
+ {"@type":"ItemList","name":s.h1,"itemListElement":item_list}]} | tojson }}</script>{% endblock %}
+{% block content %}
+<header class="page-head gift-head">
+  <p class="kicker"><a href="/gifts/stocking-fillers/">Stocking fillers</a></p>
+  <h1>{{ s.h1 }}</h1>
+  <p class="lead">{{ s.lead }}</p>
+  {{ share_button(cfg.site.url ~ s.url, s.h1, 'gifts') }}
+</header>
+<div class="prose narrow">{% for t in s.intro %}<p>{{ t }}</p>{% endfor %}</div>
+
+{% if s.id == 'puzzlers' %}{{ books_panel(books, quiz, season) }}{% endif %}
+<ul class="sf-list">
+{% for it in s['items'] %}{{ sf_item(it) }}{% endfor %}
+</ul>
+
+{{ promise_panel(sf) }}
+{% if s.gift_page %}<p class="gift-tip">Want something bigger? <a href="{{ s.gift_page.url }}">{{ s.gift_page.h1 }}</a>: classes, days out and trips, with ways to give each one.</p>{% endif %}
+{% if s.id != 'puzzlers' %}{{ books_panel(books, quiz, season) }}{% endif %}
+
+<nav class="gift-more" aria-labelledby="sfo-h">
+  <h2 id="sfo-h">More stocking fillers</h2>
+  <ul class="gift-chips">{% for o in others %}<li><a class="chip" href="{{ o.url }}">{{ o.label }}</a></li>{% endfor %}<li><a class="chip" href="/gifts/">All gift ideas</a></li></ul>
+</nav>
+<p class="gift-note narrow">Ideas to start the search, not products we have tested or ranked: the Amazon links are searches, so read the reviews and check sizes before you buy. Amazon shows the price and delivery date before you order. As an Amazon Associate we earn from qualifying purchases, at no extra cost to you. Written with AI; the "Read up" links go to our guides to each activity.</p>
+{% endblock %}

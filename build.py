@@ -1135,6 +1135,39 @@ def build(make_social=True):
         gctx = {"G": GIFTS, "season": _season, "season_name": GIFTS["season"]["name"], "groups": GIFTS["groups"], "occasions": GIFTS["occasions"],
                 "books": [b for b in (cfg.get("books") or []) if str(b.get("until") or "9999") >= _today and str(b.get("amazon", "")).startswith("https://")],
                 "quiz": _quiz if _quiz and str(_quiz[0].get("until") or "9999") >= _today else [], "plus_gift": _paywall}
+        # Stocking fillers (RUNBOOK §6v, stocking fillers; Robin 19 Nov 2026: "think stocking fillers, people buy all manner of
+        # gifts"): content/stocking_fillers.yaml gives /gifts/stocking-fillers/, a page per interest and the printable promise card.
+        SF = load_yaml(CONTENT / "stocking_fillers.yaml") if (CONTENT / "stocking_fillers.yaml").exists() else None
+        if SF:
+            _sf_bad = re.compile(r"\b(best|top[- ](?:pick|rated|quality)|most popular|bestsell\w*|award[- ]winning|guaranteed|next[- ]day)\b", re.I)
+            _gids = {g["id"] for g in GIFTS["groups"]}
+            _sf_ids = set()
+            for sec in SF["sections"]:
+                assert re.fullmatch(r"[a-z0-9-]+", sec["id"]) and sec["id"] not in _sf_ids and sec["id"] != "promise-card", f"stocking fillers: bad or repeated id {sec.get('id')}"
+                _sf_ids.add(sec["id"])
+                assert sec.get("label") and sec.get("h1") and sec.get("seo_title") and sec.get("description") and sec.get("lead") and sec.get("items"), f"stocking fillers {sec['id']}: needs label, h1, seo_title, description, lead, items"
+                assert sec.get("group", "") in _gids | {""}, f"stocking fillers {sec['id']}: group {sec.get('group')!r} is not a gift page"
+                sec["url"] = f"/gifts/stocking-fillers/{sec['id']}/"
+                sec["gift_page"] = next((g for g in GIFTS["groups"] if g["id"] == sec.get("group")), None)
+                for it in sec["items"]:
+                    for k in ("name", "why", "check", "q"):
+                        assert it.get(k), f"stocking fillers {sec['id']}: an item lacks {k}"
+                    _txt = " ".join(str(it[k]) for k in ("name", "why", "check", "q"))
+                    assert not _price.search(_txt) and not _sf_bad.search(_txt), f"stocking fillers {sec['id']} / {it['name']}: no prices, no best/top/most popular/delivery promises"
+                    it["url"] = "https://www.amazon.co.uk/s?k=" + "+".join(str(it["q"]).split())
+                    it["slug"] = re.sub(r"[^a-z0-9]+", "-", it["name"].lower()).strip("-")
+                    if it.get("for"):
+                        c = _byid.get(it["for"])
+                        assert c, f"stocking fillers {sec['id']} / {it['name']}: no activity {it['for']}"
+                        it["read"] = {"title": c["title"], "url": f"/list/{c['id']}/"}
+            SF["hub"]["url"] = "/gifts/stocking-fillers/"
+            _prom = []
+            for pid in SF["promise"]["ids"]:
+                c = _byid.get(pid)
+                assert c, f"promise card: no activity {pid}"
+                _prom.append({"id": pid, "title": c["title"], "url": f"/list/{pid}/"})
+            SF["promise"]["items"] = _prom
+        gctx["sf"] = SF
         _hub_h1 = GH["h1_season"] if _season else GH["h1"]
         _all = list(IDEAS.values())
         def _il(items, base):
@@ -1150,6 +1183,23 @@ def build(make_social=True):
             pages.append({"title": p["h1"], "key": p["seo_title"], "url": p["url"], "category": "gifts" if "gifts" in cfg["categories"] else "explore", "excerpt": p["lead"],
                           "tags": ["gift", "gifts", "present", "presents", "christmas"] + re.findall(r"[a-z]+", (p["label"] + " " + " ".join(x["gift"] for x in p["items"])).lower()),
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})
+        if SF:
+            _sfh = SF["hub"]
+            _sf_h1 = _sfh["h1_season"] if _season else _sfh["h1"]
+            urls.append(out("/gifts/stocking-fillers/", "stocking.html", h1=_sf_h1, seo_title=_sfh["seo_title_season"] if _season else _sfh["seo_title"],
+                            description=_sfh["description_season"] if _season else _sfh["description"],
+                            item_list=[{"@type": "ListItem", "position": n, "name": x["h1"], "url": cfg["site"]["url"] + x["url"]} for n, x in enumerate(SF["sections"], 1)], **gctx))
+            pages.append({"title": _sf_h1, "key": "", "url": "/gifts/stocking-fillers/", "category": "explore", "excerpt": _sfh["lead"],
+                          "tags": ["stocking", "stocking fillers", "stocking filler", "small", "gifts", "presents", "christmas"], "image": "/static/og-default.png", "art": "/static/og-default.png"})
+            for sec in SF["sections"]:
+                seo = sec["seo_title"] if (_season or "Stocking" not in sec["seo_title"]) else sec["seo_title"].replace("Stocking fillers", "Small gifts")
+                urls.append(out(sec["url"], "stocking-section.html", s=sec, seo_title=seo,
+                                item_list=[{"@type": "ListItem", "position": n, "name": it["name"], "url": f"{cfg['site']['url']}{sec['url']}#{it['slug']}"} for n, it in enumerate(sec["items"], 1)],
+                                others=[x for x in SF["sections"] if x is not sec], **gctx))
+                pages.append({"title": sec["h1"], "key": sec["seo_title"], "url": sec["url"], "category": "explore", "excerpt": sec["lead"],
+                              "tags": ["stocking", "stocking fillers", "gifts", "presents", "christmas"] + re.findall(r"[a-z]+", (sec["label"] + " " + " ".join(it["name"] for it in sec["items"])).lower()),
+                              "image": "/static/og-default.png", "art": "/static/og-default.png"})
+            urls.append(out("/gifts/promise-card/", "promise-card.html", **gctx))
         out("/gifts/shared/", "gift-shared.html", **gctx)   # someone's shared shortlist: built in the browser from the address; noindex, not in the sitemap
         (DIST / "gifts").mkdir(parents=True, exist_ok=True)
         (DIST / "gifts" / "gifts.json").write_text(json.dumps({"ideas": IDEAS, "groups": {g["id"]: g["label"] for g in GIFTS["groups"]}}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

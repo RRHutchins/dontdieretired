@@ -84,3 +84,27 @@
 </div>
 <p class="sr-only" role="status" aria-live="polite" data-gift-live></p>
 {% endmacro %}
+
+{# Stocking fillers (RUNBOOK §6v, stocking fillers). #}
+{% macro sf_item(it, cat) %}
+<li class="sf-item" id="{{ it.slug }}">
+  <h3>{{ it.name }}</h3>
+  <p><strong>Why they'd want it.</strong> {{ it.why }}</p>
+  <p class="sf-check"><strong>Check before you buy.</strong> {{ it.check }}</p>
+  <p class="sf-links"><a class="btn btn-small" href="{{ it.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>Search on Amazon<span class="sr-only">: {{ it.name }}</span></a>
+  {% if it.read %}<a class="sf-read" href="{{ it.read.url }}">Read up: {{ it.read.title }}<span aria-hidden="true"> →</span></a>{% endif %}</p>
+</li>
+{% endmacro %}
+
+{% macro promise_panel(sf) %}
+{% if sf %}<aside class="sf-promise" aria-labelledby="sfp-h">
+  <p class="kicker">Free to print</p>
+  <h2 id="sfp-h">Put a promise in the stocking</h2>
+  <p>{{ sf.promise.intro }}</p>
+  <p><a class="btn" href="/gifts/promise-card/">Make a promise card</a></p>
+</aside>{% endif %}
+{% endmacro %}
+
+{% macro sf_link(sf, group_id) %}
+{% if sf %}{% for sec in sf.sections if sec.group == group_id %}{% if loop.first %}<p class="gift-tip sf-tip">Something smaller? {% endif %}<a href="{{ sec.url }}">{{ sec.h1 }}</a>{% if not loop.last %} · {% else %}</p>{% endif %}{% endfor %}{% endif %}
+{% endmacro %}
