@@ -56,6 +56,13 @@ kinds:
 # Northern hemisphere unless the phrase says otherwise. null = no particular months (any time of year).
 # A phrase missing from this list prints a LIST WARNING and the activity is treated as any time until it is added here.
 seasons:
+  "All year on ScotRail; the Jacobite steam train runs from spring to autumn": null
+  "Spring to autumn on most of the lines we checked, with Santa trains in late November and December": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  "Hogmanay, 29 December to 1 January": [12, 1]
+  "Mid to late January": [1]
+  "Mid-November to Christmas Eve": [11, 12]
+  "November to January in the UK; mid-December to March in California": [11, 12, 1, 2, 3]
+  "November to February": [11, 12, 1, 2]
   "Summer (July)": [7]
   "Late October": [10]
   "Late November and December": [11, 12]

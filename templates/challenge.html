@@ -59,6 +59,32 @@
   </ul>
   <p class="disclosure">We opened {{ 'this link' if c.links|length == 1 else 'these links' }} on {{ c.checked_human }} and found {{ 'it' if c.links|length == 1 else 'them' }} to be what we say. Dates, places and prices are on the official page, where they stay up to date.</p>
 
+  {% set xg_show = gifts_season and (c.kit or c.book or gift_for[c.id] or sf_for[c.id]) %}
+  {% if xg_show %}
+  <section class="xgift" aria-labelledby="xgift-h">
+    <h2 id="xgift-h">{{ gifts_season_name }} present ideas for someone who wants to {{ c.title[:1] | lower }}{{ c.title[1:] }}</h2>
+    <p>Presents that help someone get started, drawn from this page. They are ideas, not recommendations: we have not tested any of the products, so check sizes and details before you buy.</p>
+    {% if c.book or gift_for[c.id] %}
+    <h3 class="h4">Give the experience</h3>
+    {% if c.book %}<ul>{% for b in c.book %}<li><a href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}</a> — {{ b.why }}</li>{% endfor %}</ul>{% endif %}
+    {% if gift_for[c.id] %}<p>More ways to give it, with reviewers' picks of the kit: <a href="{{ gift_for[c.id].url }}">{{ gift_for[c.id].h1 }}</a>.</p>{% endif %}
+    {% endif %}
+    {% if c.kit %}
+    <h3 class="h4">Kit to give</h3>
+    <ul>{% for p in c.kit %}<li><a href="{{ p.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ p.name }}</a> — {{ p.why }}</li>{% endfor %}</ul>
+    {% endif %}
+    {% if sf_for[c.id] %}
+    <h3 class="h4">Stocking fillers</h3>
+    <ul>{% for s in sf_for[c.id] %}<li><a href="{{ s.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ s.name }}</a> — {{ s.why }} <span class="xgift-check">Check: {{ s.check }}</span> <a href="{{ s.page }}">More for {{ s.label | lower }}</a></li>{% endfor %}</ul>
+    {% endif %}
+    {% if c.cost in ('free', 'low') %}
+    <h3 class="h4">Or give your company</h3>
+    <p>Some of the best presents cost little: offer to go along the first time. <a href="/gifts/promise-card/">Print a promise card</a> to put under the tree.</p>
+    {% endif %}
+    <p class="disclosure">{% if c.book or c.kit or sf_for[c.id] %}Some of these are affiliate links: if you buy or book through them we may earn a commission at no extra cost to you. {% endif %}{% if c.kit or sf_for[c.id] %}Amazon links are searches, so compare what comes up.{% endif %}</p>
+    <p class="xgift-more"><a href="/gifts/">More {{ gifts_season_name }} gift ideas for people who love doing things</a> <a href="/gifts/stocking-fillers/">Stocking fillers</a></p>
+  </section>
+  {% else %}
   {% if gift_for[c.id] %}<p class="fl-gift">Thinking of giving this as a present? See <a href="{{ gift_for[c.id].url }}">{{ gift_for[c.id].h1 | lower | replace('presents', 'present ideas') }}</a>, with ways to book it and reviewers' picks of the kit.</p>{% endif %}
   {% if c.book %}
   <aside class="aff-box fl-book" data-book>
@@ -68,6 +94,7 @@
   </aside>
   {% endif %}
   {% if c.kit %}{{ affiliate_box(c.kit, "Kit for this") }}{% endif %}
+  {% endif %}
   {% if c.picks %}{{ picks_box(c.picks) }}{% endif %}
 
   {% if c.safety %}<aside class="fl-safety"><strong>Worth knowing.</strong> {{ c.safety }}</aside>{% endif %}

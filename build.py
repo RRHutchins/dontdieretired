@@ -731,7 +731,18 @@ def build(make_social=True):
         GIFTS["in_season"] = str(_gs["from"]) <= _today <= str(_gs["until"])
         for _g in GIFTS["groups"]:
             for _i in _g["ideas"]: _gift_for.setdefault(_i["id"], {"url": f"/gifts/{_g['id']}/#{_i['id']}", "label": _g["label"], "h1": _g["h1"]})
-    env.globals.update(gift_for=_gift_for, gifts_season=bool(GIFTS and GIFTS["in_season"]), gifts_season_name=(GIFTS or {}).get("season", {}).get("name", ""))
+    # Christmas present list on every activity page (Robin, 19 Nov 2026: "add a temporary Christmas present list for people
+    # interested in the activities. Do for all activities so it is found for Christmas present searches"). In season only:
+    # the activity's own booking and kit links, any stocking filler tied to it (`for:` in stocking_fillers.yaml), the
+    # promise card for free or low-cost activities, and the activity's gift page. RUNBOOK §6v.
+    _sf_for = {}
+    if (CONTENT / "stocking_fillers.yaml").exists():
+        for _sec in (load_yaml(CONTENT / "stocking_fillers.yaml").get("sections") or []):
+            for _it in _sec.get("items") or []:
+                if _it.get("for"):
+                    _sf_for.setdefault(_it["for"], []).append({"name": _it["name"], "why": _it["why"], "check": _it.get("check", ""),
+                        "url": "https://www.amazon.co.uk/s?k=" + "+".join(str(_it["q"]).split()), "page": f"/gifts/stocking-fillers/{_sec['id']}/", "label": _sec.get("label", "")})
+    env.globals.update(gift_for=_gift_for, sf_for=_sf_for, gifts_season=bool(GIFTS and GIFTS["in_season"]), gifts_season_name=(GIFTS or {}).get("season", {}).get("name", ""))
     terms = load_terms()
     # match on subjects only: activity ids and story tags (people's names in slugs and titles caused false matches)
     _ch_kw = {c["id"]: kw(c["id"].replace("-", " ")) for c in _chs}

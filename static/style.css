@@ -1352,3 +1352,11 @@ html{scroll-padding-top:84px}
 .pc-foot{margin-top:auto;font-size:.8rem;color:var(--muted)}
 @media (max-width:560px){.sf-list{grid-template-columns:1fr}.pc-card{padding:18px}.pc-title{font-size:1.35rem}}
 @media print{body *{visibility:hidden}.pc-card,.pc-card *{visibility:visible}.pc-card{position:absolute;left:0;top:0;width:14cm;max-width:none}}
+/* Christmas present list on activity pages (RUNBOOK §6v, 19 Nov 2026) */
+.xgift{background:var(--stone);border-radius:var(--r);padding:20px 22px;margin:28px 0;border-top:4px solid var(--brand)}
+.xgift h2{margin-top:0;font-size:1.35rem}
+.xgift h3{margin:1.1em 0 .4em}
+.xgift ul{padding-left:1.1em;margin:0 0 .6em}.xgift li{margin-bottom:.5em}
+.xgift-check{display:block;font-size:.9rem;color:var(--muted,#555)}
+.xgift-more{margin-bottom:0;font-weight:600;display:flex;flex-wrap:wrap;gap:0 1.4em}
+.xgift-more a{display:inline-block;padding:10px 0;min-height:44px;box-sizing:border-box}
