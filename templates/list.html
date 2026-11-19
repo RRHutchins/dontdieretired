@@ -45,7 +45,7 @@
       <p class="fl-actions"><button type="button" class="btn btn-small" data-fl-surprise>Surprise me</button> <button type="button" class="linklike" data-fl-clear hidden>Clear filters</button></p>
     </div>
     {% if colls %}<p class="fl-colls">Collections: {% for v in colls %}<a class="chip" href="/list/{{ v.slug }}/">{{ v.plural }} ({{ v.acts|length }})</a>{% endfor %}</p>{% endif %}
-    {% if hubs %}<p class="fl-colls">In depth: {% for hb in hubs.values() %}<a class="chip" href="/{{ hb.slug }}/">{{ hb.label }}: race finder and guides</a>{% endfor %}</p>{% endif %}
+    {% if hubs %}<p class="fl-colls">In depth: {% for hb in hubs.values() %}<a class="chip" href="/{{ hb.slug }}/">{{ hb.label }}: {{ hb.chip_text or "race finder and guides" }}</a>{% endfor %}</p>{% endif %}
     <p class="fl-results" data-fl-count role="status" aria-live="polite"></p>
 
     <ul class="fl-grid" data-fl-grid>

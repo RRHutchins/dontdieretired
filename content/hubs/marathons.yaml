@@ -24,9 +24,9 @@ none_text: No marathons match those choices yet. Try any month or any way in.
 safety: A marathon is a long, hard day on the heart, muscles and feet. Build up over months, follow your race's medical advice, and check with your GP (family doctor) before you start training if you have a heart condition or another health worry.
 bands_def: []
 facets:
-  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania}
+  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania, antarctica: Antarctica}
   terrain: {road: Road, trail: Trail and track, mountain: Mountain}
-  entry: {open: Open entry (first come), ballot: Ballot or lottery, qualifier: Qualifying time, charity: Charity place, tour: Travel package or tour operator}
+  entry: {open: Open entry (first come), register: Register with the organiser (see its rules), ballot: Ballot or lottery, qualifier: Qualifying time, charity: Charity place, tour: Travel package or tour operator}
   series: {wmm: Abbott World Marathon Majors, independent: Independent}
 events:
 # ---------- Abbott World Marathon Majors ----------
@@ -349,6 +349,204 @@ events:
   entry_note: International runners must book one of the organiser's tour packages (six or seven days from Beijing); registration closes in mid April, with a late fee after mid March.
   note: The 2027 race is on 15 May 2027. The route includes 5,164 steps on the wall, on asphalt and gravel, and runners walk the wall section on an inspection day two days before.
   link: {label: 'Great Wall Marathon: the race', url: 'https://great-wall-marathon.com/race', checked: '2026-11-19'}
+# ---------- Added 19 Nov 2026 (build-out run 1) ----------
+- id: rome-marathon
+  name: Run Rome The Marathon
+  series: independent
+  place: Rome, from the Fori Imperiali to the Circo Massimo
+  country: Italy
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [3]
+  entry: [open, charity]
+  entry_note: Open registration, which the organisers may close early when the race is full; a waiting list then opens. Runners must be 20 or over (born in 2007 or earlier for 2027). Non-Italian runners who are not in a FIDAL or World Athletics club need a RUNCARD and a medical certificate for competitive athletics. In 2026 charity places came through Realbuzz.
+  more:
+  - {label: 'Run Rome The Marathon: the marathon', url: 'https://www.runromethemarathon.com/en/home-2025-en-2/marathon/', checked: '2026-11-19'}
+  - {label: 'Run Rome The Marathon: relay and charity programme', url: 'https://www.runromethemarathon.com/en/home-2025-en-2/relay-charity-program/', checked: '2026-11-19'}
+  note: The 32nd race is on Sunday 14 March 2027, starting at about 8.30am. The time limit is 7 hours, and the organisers say fitwalkers are welcome. The route passes the Colosseum, St Peter's, Castel Sant'Angelo and Piazza Navona.
+  link: {label: 'Run Rome The Marathon 2027: rules (PDF)', url: 'https://www.runromethemarathon.com/wp-content/uploads/2026/04/RRTM27-regolamento-inglese-23-4-2026.pdf', checked: '2026-11-19'}
+- id: dublin-marathon
+  name: Irish Life Dublin Marathon
+  series: independent
+  place: Dublin city centre
+  country: Ireland
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [ballot, charity, qualifier, tour]
+  entry_note: The main way in is a ballot; the 2027 ballot ran from 12 to 17 November 2026. Charity places come through the official charity partners on Realbuzz, and there are approved international tour operators and a Good For Age route for runners with a fast enough time.
+  note: The 2027 race is on Sunday 24 October 2027 at 8.45am, for up to 22,500 runners, from Leeson Street Lower to Mount Street Upper. The course stays open for seven hours from when the last runner crosses the start, and tail walkers support those finishing near the cut-off.
+  link: {label: 'Dublin Marathon: 2027 dates and entry information', url: 'https://irishlifedublinmarathon.ie/2027-event-dates-entry-information/', checked: '2026-11-19'}
+  more:
+  - {label: 'Dublin Marathon: FAQs', url: 'https://irishlifedublinmarathon.ie/faqs-frequentlyaskedquestions/', checked: '2026-11-19'}
+- id: vienna-city-marathon
+  name: Vienna City Marathon
+  series: independent
+  place: Vienna
+  country: Austria
+  continent: europe
+  km: [42.2]
+  distances: Marathon (shorter races the same weekend)
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [register]
+  entry_note: Registration for 2027 closed on 20 September 2026. A free waiting list offers places that come free until 7 March 2027, with no guarantee. Marathon runners must be 18 or over.
+  note: The 2027 race is on Sunday 18 April 2027, starting in waves from 9am at Wagramer Straße by the Reichsbrücke and finishing on the Ringstraße by the Burgtheater. The finish closes at 3.30pm.
+  link: {label: 'Vienna City Marathon: the marathon', url: 'https://www.vienna-marathon.com/?go=marathon', checked: '2026-11-19'}
+- id: seville-marathon
+  name: Zurich Maratón de Sevilla
+  series: independent
+  place: Seville
+  country: Spain
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [2]
+  entry: [open]
+  entry_note: Registration for 2027 runs from 9 April 2026 to 15 February 2027, or until the 20,000 places are gone; after that a waiting list offers places released by other runners.
+  note: The 2027 race is on Sunday 21 February 2027, starting at 8.30am on Avenida de María Luisa and finishing on Paseo de las Delicias. The time limit is 6 hours from the last runner's start, with the finish closing at 3pm.
+  link: {label: 'Zurich Seville Marathon: registrations', url: 'https://www.zurichmaratonsevilla.es/en/zms-registrations', checked: '2026-11-19'}
+  more:
+  - {label: 'Zurich Maratón de Sevilla: FAQ (Spanish)', url: 'https://www.zurichmaratonsevilla.es/zm2-preguntas-frecuentes', checked: '2026-11-19'}
+- id: prague-marathon
+  name: Vodafone Prague Marathon
+  series: independent
+  place: Prague, starting in Old Town Square
+  country: Czech Republic
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Entry is online through the organiser, RunCzech.
+  note: The 2027 race is on Sunday 2 May 2027 at 8am, on a certified course closed to traffic through the historic centre.
+  link: {label: 'RunCzech: Vodafone Prague Marathon 2027', url: 'https://www.runczech.com/en/events/vodafone-prague-marathon-2027/races/vodafone-prague-marathon', checked: '2026-11-19'}
+  more:
+  - {label: 'RunCzech: how to register', url: 'https://www.runczech.com/en/events/vodafone-prague-marathon-2027/how-to-register', checked: '2026-11-19'}
+- id: reykjavik-marathon
+  name: Reykjavik Marathon
+  series: independent
+  place: Reykjavik
+  country: Iceland
+  continent: europe
+  km: [42.2]
+  distances: Marathon (shorter races the same day)
+  terrain: [road]
+  format: single
+  month: [8]
+  entry: [open]
+  entry_note: Online registration is open until race day unless the race sells out. Marathon runners must be 18 or over.
+  note: The 2027 race is on 21 August 2027. The marathon is one lap, mostly on city streets, starting outside the University of Iceland on Sæmundargata and finishing on Geirsgata. Runners have 6 hours 30 minutes.
+  link: {label: 'Reykjavik Marathon: the race', url: 'https://www.rmi.is/en/the-race', checked: '2026-11-19'}
+  more:
+  - {label: 'Reykjavik Marathon: FAQ', url: 'https://www.rmi.is/en/faq', checked: '2026-11-19'}
+- id: midnight-sun-marathon
+  name: Midnight Sun Marathon
+  series: independent
+  place: Tromsø
+  country: Norway
+  continent: europe
+  km: [42.2]
+  distances: Marathon (shorter races the same night)
+  terrain: [road]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: Registration for 2027 is through the organiser's site. In 2026 marathon runners had to turn 18 or over in the year of the race.
+  note: A street race run at night under the midnight sun; the 2027 race is on 19 June 2027. In 2026 the marathon time limit was 5 hours 30 minutes, and the finish closed at 2am. The organisers give 9,000 runners from 97 nations for 2026.
+  link: {label: 'Midnight Sun Marathon: the race', url: 'https://msm.no/en/midnight-sun-marathon/', checked: '2026-11-19'}
+  more:
+  - {label: 'Midnight Sun Marathon: practical information (2026)', url: 'https://msm.no/en/midnight-sun-marathon/praktisk-info-msm/', checked: '2026-11-19'}
+- id: twin-cities-marathon
+  name: Medtronic Twin Cities Marathon
+  series: independent
+  place: Minneapolis to St Paul, Minnesota
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: Registration for 2027 reopens on 2 March 2027; the 2026 race sold out.
+  note: From 2027 the race moves to mid-October, after extreme heat cancelled the Sunday events in 2023; the 2027 race is on Sunday 17 October 2027 at 8am, pending permits. Runners must be able to finish in 6 hours 30 minutes from when the start line closes, an average of 14:52 a mile. The route runs from downtown Minneapolis past the chain of lakes to St Paul.
+  link: {label: 'Twin Cities Marathon: the race', url: 'https://www.tcmevents.org/alleventsandraces/medtronictwincitiesmarathonweekend/medtronictwincitiesmarathon', checked: '2026-11-19'}
+  more:
+  - {label: 'Twin Cities Marathon: the move to mid-October', url: 'https://www.tcmevents.org/post/starting-in-2027-twin-cities-marathon-weekend-moves-to-mid-october', checked: '2026-11-19'}
+- id: philadelphia-marathon
+  name: Philadelphia Marathon
+  series: independent
+  place: Philadelphia, Pennsylvania, from the Benjamin Franklin Parkway
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon (half marathon and shorter races the same weekend)
+  terrain: [road]
+  format: single
+  month: [11]
+  entry: [register, charity]
+  entry_note: No qualifying time is needed. The 2026 races sold out. Runners must be 16 or over. Only the charities on the race's charity page may hand out places.
+  note: The 2026 race is on 22 November 2026 at 7am, starting at 22nd Street and the Benjamin Franklin Parkway; the 2027 date was not yet published. Walkers are allowed on the course, which is open for 7 hours, at a 16-minute-mile pace.
+  link: {label: 'Philadelphia Marathon: FAQ', url: 'https://www.philadelphiamarathon.com/info/faq/', checked: '2026-11-19'}
+- id: toronto-waterfront-marathon
+  name: TCS Toronto Waterfront Marathon
+  series: independent
+  place: Toronto, Ontario
+  country: Canada
+  continent: north-america
+  km: [42.2]
+  distances: Marathon (shorter races the same weekend)
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: The marathon is capped at 9,500 runners, and the 2026 race sold out.
+  note: The 2026 race was on 18 October 2026, starting on Yonge Street north of Gerrard and finishing on Bay Street north of Queen, through downtown and along the waterfront. The 2027 races are on 16 and 17 October 2027. The time limit is 6 hours, and the start line closes after the walking corral.
+  link: {label: 'Toronto Waterfront Marathon: event info', url: 'https://www.torontowaterfrontmarathon.com/event-info/', checked: '2026-11-19'}
+- id: gold-coast-marathon
+  name: ASICS Gold Coast Marathon
+  series: independent
+  place: Gold Coast, Queensland
+  country: Australia
+  continent: oceania
+  km: [42.2]
+  distances: Marathon (shorter races the same weekend)
+  terrain: [road]
+  format: single
+  month: [7]
+  entry: [open]
+  entry_note: Entries for 2026 opened on 2 December 2025 and the marathon sold out. Runners must be 18 or over.
+  note: The 2026 race was on Sunday 5 July 2026 at 6.15am, beside the surf beaches to Runaway Bay and finishing by the Broadwater in Southport. The 2027 date was not yet published. The time limit is 6 hours 40 minutes from the last wave start. The organisers call it Australia's flattest, fastest and most scenic course.
+  link: {label: 'Gold Coast Marathon: the marathon', url: 'https://goldcoastmarathon.com.au/races/marathon/', checked: '2026-11-19'}
+  more:
+  - {label: 'Gold Coast Marathon: enter', url: 'https://goldcoastmarathon.com.au/enter/', checked: '2026-11-19'}
+- id: antarctica-marathon
+  name: Antarctica Marathon
+  series: independent
+  place: King George Island, Antarctica
+  country: Antarctica
+  continent: antarctica
+  km: [42.2]
+  distances: Marathon
+  terrain: [trail]
+  format: single
+  month: [3]
+  entry: [tour]
+  entry_note: Entry is through Marathon Tours & Travel's trip application, and runners travel on its voyage; the 2027 race was open for pre-registration. In 2026 the ship sailed from Ushuaia, Argentina. Runners must be at least 18 on race day.
+  note: The 2027 race is on 14 March 2027. The course runs on dirt roads, often muddy, linking the research bases, and changes each year with base operations and conditions. No more than 100 passengers are ashore at a time. In 2026 marathoners had to finish within 6 hours 30 minutes, weather permitting.
+  link: {label: 'Marathon Tours & Travel: Antarctica Marathon 2027', url: 'https://marathontours.com/en-au/events/antarctica-marathon/', checked: '2026-11-19'}
 guides:
 - slug: how-to-get-a-place
   title: How to get a place in a big marathon

@@ -10,7 +10,7 @@
     let shown = 0;
     items.forEach(el => {
       const ok = has(el, 'continent', f.continent) && has(el, 'bands', f.band) && has(el, 'terrain', f.terrain) &&
-        has(el, 'month', f.month) && has(el, 'entry', f.entry) && has(el, 'series', f.series) && (!q || el.dataset.search.includes(q));
+        has(el, 'month', f.month) && has(el, 'entry', f.entry) && has(el, 'series', f.series) && has(el, 'type', f.type) && has(el, 'see', f.see) && (!q || el.dataset.search.includes(q));
       el.hidden = !ok; shown += ok;
     });
     none.hidden = shown > 0;

@@ -31,19 +31,37 @@
 <section class="hub-finder" aria-labelledby="hub-f-h" data-hub-finder>
   <h2 id="hub-f-h">{{ h.finder_title or "Race finder" }}</h2>
   <form class="hub-filters" data-hub-filters hidden onsubmit="return false">
-    <label>Search <input type="search" name="q" placeholder="Name, place or country" autocomplete="off"></label>
+    <label>Search <input type="search" name="q" placeholder="{{ h.search_hint or 'Name, place or country' }}" autocomplete="off"></label>
     <label>Region <select name="continent"><option value="">Anywhere</option>{% for k, v in h.facets.continent.items() %}{% if h.events | selectattr('continent', 'equalto', k) | list %}<option value="{{ k }}">{{ v }}</option>{% endif %}{% endfor %}</select></label>
+    {% if h.kind == 'phenomenon' %}
+    {% if h.used.type | length > 1 %}<label>Kind <select name="type"><option value="">Any kind</option>{% for k, v in h.facets.type.items() if k in h.used.type %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>{% endif %}
+    {% if h.months %}<label>Usual month <select name="month"><option value="">Any month</option>{% for n, m in h.months %}<option value="{{ n }}">{{ m }}</option>{% endfor %}</select></label>{% endif %}
+    {% if h.used.see | length > 1 %}<label>How you see it <select name="see"><option value="">Any way</option>{% for k, v in h.facets.see.items() if k in h.used.see %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>{% endif %}
+    {% else %}
     {% set has_stage = h.events | selectattr('format', 'equalto', 'stage') | list %}
     {% if h.bands | length > 1 or (h.bands and has_stage) %}<label>Distance <select name="band"><option value="">Any distance</option>{% for k, v in h.bands %}<option value="{{ k }}">{{ v }}</option>{% endfor %}{% if has_stage %}<option value="stage">Multi-day stages</option>{% endif %}</select></label>{% endif %}
     {% if h.used.terrain | length > 1 %}<label>Terrain <select name="terrain"><option value="">Any terrain</option>{% for k, v in h.facets.terrain.items() if k in h.used.terrain %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>{% endif %}
     {% if h.months %}<label>Usual month <select name="month"><option value="">Any month</option>{% for n, m in h.months %}<option value="{{ n }}">{{ m }}</option>{% endfor %}</select></label>{% endif %}
     <label>Entry <select name="entry"><option value="">Any way in</option>{% for k, v in h.facets.entry.items() if k in h.used.entry %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
     <label>{{ h.series_label or "Organiser" }} <select name="series"><option value="">{{ h.series_any or "Any organiser" }}</option>{% for k, v in h.facets.series.items() if k in h.used.series %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
+    {% endif %}
     <button type="reset" class="btn btn-ghost btn-small">Clear</button>
   </form>
   <p class="hub-none" data-hub-none hidden>{{ h.none_text or "No races match those choices yet. Try a wider distance or any month." }}</p>
   <ul class="hub-events">
   {% for e in h.events %}
+    {% if h.kind == 'phenomenon' %}
+    <li class="hub-event" id="{{ e.id }}" data-continent="{{ e.continent }}" data-type="{{ e.type }}" data-month="{{ (e.month or []) | join(' ') }}" data-see="{{ e.see | join(' ') }}" data-search="{{ e.search }}">
+      <p class="kicker">{{ h.facets.type[e.type] }} · {{ h.facets.continent[e.continent] }} · {{ e.country }}</p>
+      <h3>{{ e.name }}</h3>
+      <p class="hub-e-place">{{ e.place }}</p>
+      <dl class="hub-e-facts">
+        {% if e.when %}<div><dt>When</dt><dd>{{ e.when }}</dd></div>{% elif e.month_label %}<div><dt>Usually</dt><dd>{{ e.month_label }}</dd></div>{% endif %}
+        <div><dt>How you see it</dt><dd>{{ e.see_note }}</dd></div>
+      </dl>
+      <p class="hub-e-note">{{ e.note }}</p>
+      <p class="hub-e-link"><a href="{{ e.link.url }}" target="_blank" rel="noopener" data-fl-out>{{ e.link.label }}</a> <span class="meta">(official page, opened {{ e.link.checked_human }})</span>{% for m in e.more or [] %}<br><a href="{{ m.url }}" target="_blank" rel="noopener" data-fl-out>{{ m.label }}</a> <span class="meta">(opened {{ m.checked_human }})</span>{% endfor %}</p>
+    {% else %}
     <li class="hub-event" id="{{ e.id }}" data-continent="{{ e.continent }}" data-bands="{{ e.bands | join(' ') }}{% if e.format == 'stage' %} stage{% endif %}" data-terrain="{{ e.terrain | join(' ') }}" data-month="{{ (e.month or []) | join(' ') }}" data-entry="{{ e.entry | join(' ') }}" data-series="{{ e.series }}" data-search="{{ e.search }}">
       <p class="kicker">{{ h.facets.continent[e.continent] }} · {{ e.country }}{% if e.series != 'independent' %} · {{ h.facets.series[e.series] }}{% endif %}</p>
       <h3>{{ e.name }}</h3>
@@ -56,14 +74,15 @@
         <div><dt>Getting in</dt><dd>{{ e.entry_note }}</dd></div>
       </dl>
       <p class="hub-e-note">{{ e.note }}</p>
-      <p class="hub-e-link"><a href="{{ e.link.url }}" target="_blank" rel="noopener" data-fl-out>{{ e.link.label }}</a> <span class="meta">(official page, opened {{ e.link.checked_human }})</span></p>
+      <p class="hub-e-link"><a href="{{ e.link.url }}" target="_blank" rel="noopener" data-fl-out>{{ e.link.label }}</a> <span class="meta">(official page, opened {{ e.link.checked_human }})</span>{% for m in e.more or [] %}<br><a href="{{ m.url }}" target="_blank" rel="noopener" data-fl-out>{{ m.label }}</a> <span class="meta">(opened {{ m.checked_human }})</span>{% endfor %}</p>
+    {% endif %}
     </li>
   {% endfor %}
   </ul>
 </section>
 
 <div class="prose narrow fl-about">
-  <p>We list {{ h.noun_one or "a race" }} only after opening its organiser's own page, and every fact here comes from that page or another official page named in our guides. Dates, fees, limits and entry rules change each year: the organiser's page is the one to trust. Being listed does not mean any race or organiser endorses this site. We add more {{ h.noun_many or "races" }} every week; most recently checked {{ h.checked_human }}.</p>
+  {% if h.about %}<p>{{ h.about }} Most recently checked {{ h.checked_human }}.</p>{% else %}<p>We list {{ h.noun_one or "a race" }} only after opening its organiser's own page, and every fact here comes from that page or another official page named in our guides. Dates, fees, limits and entry rules change each year: the organiser's page is the one to trust. Being listed does not mean any race or organiser endorses this site. We add more {{ h.noun_many or "races" }} every week; most recently checked {{ h.checked_human }}.</p>{% endif %}
   {% if h.safety %}<p>{{ h.safety }}</p>{% endif %}
 </div>
 {% endblock %}

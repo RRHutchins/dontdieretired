@@ -1,0 +1,348 @@
+# Deep hub (RUNBOOK §6u): Nature's spectacles (agreed with Robin 19 Nov 2026: the 2027 eclipse idea widened into
+# natural phenomena). `kind: phenomenon`: events carry `type`, `see`, `see_note`, optional `when` and `more` instead of
+# race fields. Same rules as the race hubs: every fact comes from the official page linked on the row (or a `more` link),
+# opened on its `checked` date; no prices; months are "usually"; ids are permanent; the site never states a total.
+id: natures-spectacles
+kind: phenomenon
+slug: natures-spectacles
+category: explore
+label: Nature's spectacles
+h1: "Nature's great spectacles: eclipses, northern lights and more"
+seo_title: "Nature's great spectacles: eclipses, northern lights and more"
+description: Where and when to see the 2027 total solar eclipse, the northern lights, meteor showers, starling murmurations, the Severn bore, fireflies, geysers and more, from official sources.
+lead: Many of nature's great shows happen on a timetable. Here is when and where to see them, and how, checked against the official page for each one.
+intro:
+- On Monday 2 August 2027 the Moon will cover the Sun completely along a track across southern Spain, Gibraltar and North Africa. Other spectacles come round every year, if you know the month and the place, from the northern lights to starlings over a reedbed at dusk.
+- Filter the list below by region, kind, month or how you see it. Every entry links to an official page (a national park, an observatory, a government or an official tourism body), opened on the date shown. Seasons shift with the weather, so check the official page before you travel.
+activities: [see-a-total-solar-eclipse, see-the-northern-lights, watch-old-faithful-erupt]
+tags: [nature, spectacle, spectacles, eclipse, 'solar eclipse', aurora, 'northern lights', meteor, perseids, geminids, murmuration, starlings, fireflies, bioluminescence, geyser, migration, 'cherry blossom', bluebells, 'autumn colour', wildlife]
+finder_title: Spectacle finder
+search_hint: Name, place or country
+noun_one: a spectacle
+noun_many: spectacles
+none_text: Nothing matches those choices yet. Try any month or any kind.
+button_text: Open the spectacle finder
+chip_text: finder and guides
+back_text: Find another in the spectacle finder
+review_text: not reviewed by an astronomer, naturalist or eye doctor.
+kit_text: Kit to compare before you buy
+about: We list a spectacle only after opening an official page about it (a national park, government body, observatory or official tourism body), and every fact here comes from that page or another official page linked beside it. Seasons, dates and access rules change, so the official page is the one to trust. Being listed does not mean any of these bodies endorses this site.
+safety: "Eclipses: never look at the Sun without proper eclipse glasses (NASA says they should meet the ISO 12312-2 standard) or through binoculars, a camera or a telescope without a solar filter on the front. The only safe time to look with the naked eye is totality, when the Moon completely covers the Sun's bright face; put the glasses back on as soon as any bright Sun reappears. Sunglasses, however dark, are not safe. Rivers, coasts and wild animals: follow the site's own safety advice and keep well back."
+bands_def: []
+facets:
+  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania}
+  type: {sky: In the sky, living: Wildlife and living light, earth: Water and rock, season: Seasons and flowers}
+  see: {own: On your own (no tour needed), guided: Guided tour, boat: Boat or kayak trip, booked: Booked, lottery or permit, vehicle: From a vehicle}
+events:
+# ---------- In the sky ----------
+- id: total-solar-eclipse-2027-spain
+  name: Total solar eclipse in Spain and Gibraltar
+  type: sky
+  place: Most of Cádiz province, part of Málaga province, the far south of Granada and Almería provinces, Ceuta and Melilla; and Gibraltar
+  country: Spain and Gibraltar
+  continent: europe
+  month: [8]
+  when: Monday 2 August 2027, around 10:50am local time
+  see: [own]
+  see_note: Be inside the path of totality on the morning. Spain's National Geographic Institute (IGN) gives local times and lengths for each place; wear eclipse glasses for every phase except totality itself.
+  note: The IGN says Ceuta will have Spain's longest totality, 4 minutes 48 seconds, between 10:45 and 10:50. Cádiz has 2 minutes 54 seconds from 10:45, Málaga 1 minute 48 seconds from 10:48 and Melilla 4 minutes 34 seconds from 10:48. The Government of Gibraltar expects the eclipse to bring many visitors, "possibly in the thousands".
+  link: {label: 'IGN Astronomy: total solar eclipse of 2 August 2027', url: 'https://astronomia.ign.es/en/eclipses-de-sol-y-luna/eclipse-total-sol-de-2-de-agosto-2027', checked: '2026-11-19'}
+  more:
+  - {label: 'HM Government of Gibraltar: planning begins for solar eclipses', url: 'https://www.gibraltar.gov.gi/press-releases/planning-begins-for-solar-eclipses-212026-11608', checked: '2026-11-19'}
+- id: total-solar-eclipse-2027-north-africa
+  name: Total solar eclipse across North Africa and Egypt
+  type: sky
+  place: A track across Morocco, Algeria, Tunisia, Libya and Egypt, then on to Saudi Arabia and Yemen
+  country: Morocco, Algeria, Tunisia, Libya, Egypt
+  continent: africa
+  month: [8]
+  when: Monday 2 August 2027 (greatest eclipse at 10:07 UT)
+  see: [own]
+  see_note: Be inside the path of totality, which NASA puts at 258 km wide at the point of greatest eclipse. Wear eclipse glasses for every phase except totality itself.
+  note: NASA puts the point of greatest eclipse at 25.5°N, 33.2°E, with 6 minutes 23 seconds of totality and the Sun 82° above the horizon. A partial eclipse will be visible across most of Europe and much of Africa.
+  link: {label: 'NASA: eclipses during 2027', url: 'https://eclipse.gsfc.nasa.gov/OH/OH2027.html', checked: '2026-11-19'}
+  more:
+  - {label: 'NASA Science: future eclipses', url: 'https://science.nasa.gov/eclipses/future-eclipses/', checked: '2026-11-19'}
+- id: northern-lights-uk
+  name: Northern lights in the UK
+  type: sky
+  place: Most often Scotland, northern England and Northern Ireland; anywhere in the UK at the highest alert
+  country: UK
+  continent: europe
+  see: [own]
+  see_note: Follow AuroraWatch UK, hosted by Lancaster University, through social media, its Telegram channel or third-party apps. Even at a high alert, local conditions such as cloud still need to be right.
+  note: "AuroraWatch UK's alerts run from green to red. At amber the aurora is likely to be visible by eye from Scotland, northern England and Northern Ireland; at red it is likely to be visible by eye and camera from anywhere in the UK."
+  link: {label: 'AuroraWatch UK: alerts', url: 'https://aurorawatch.lancs.ac.uk/alerts/', checked: '2026-11-19'}
+- id: northern-lights-norway
+  name: Northern lights in Northern Norway
+  type: sky
+  place: Northern Norway, including Tromsø, Lofoten, Alta, Kirkenes, North Cape, the Lyngen Alps and Svalbard
+  country: Norway
+  continent: europe
+  month: [9, 10, 11, 12, 1, 2, 3, 4]
+  see: [own, guided, boat]
+  see_note: Go between September and April and look on a clear, dark night away from lights. Visit Norway lists guided aurora chases by minibus and evening aurora cruises, for example from Tromsø.
+  note: Visit Norway says activity is highest around March and April and September and October.
+  link: {label: 'Visit Norway: the best time to see the northern lights', url: 'https://www.visitnorway.com/things-to-do/nature-attractions/northern-lights/best-time-to-see/', checked: '2026-11-19'}
+- id: northern-lights-iceland
+  name: Northern lights in Iceland
+  type: sky
+  place: Anywhere dark in Iceland, away from artificial light
+  country: Iceland
+  continent: europe
+  month: [9, 10, 11, 12, 1, 2, 3, 4]
+  see: [own]
+  see_note: Check cloud cover and aurora activity on the Icelandic Met Office website, then head somewhere dark. Visit Iceland says you do not necessarily need a tour.
+  note: Visit Iceland gives the main season as September through April, and reminds drivers that road safety matters on winter roads.
+  link: {label: 'Visit Iceland: the northern lights in Iceland', url: 'https://www.visiticeland.com/article/northern-lights-in-iceland/', checked: '2026-11-19'}
+- id: northern-lights-finnish-lapland
+  name: Northern lights in Finnish Lapland
+  type: sky
+  place: Finnish Lapland
+  country: Finland
+  continent: europe
+  month: [8, 9, 10, 11, 12, 1, 2, 3, 4]
+  when: Usually late August to early April
+  see: [own, guided]
+  see_note: Look up between 9pm and 2am on clear nights; the Finnish Meteorological Institute publishes an aurora probability map. Tours range from snowshoeing and snowmobiling to reindeer safaris and sauna evenings.
+  note: Visit Finland says the aurora shows in Lapland on roughly every other clear night between August and April, and that some places have glass cabins where you can watch from bed.
+  link: {label: 'Visit Finland: how to see the northern lights', url: 'https://www.visitfinland.com/en/articles/how-to-see-the-northern-lights/', checked: '2026-11-19'}
+- id: perseid-meteor-shower
+  name: Perseid meteor shower
+  type: sky
+  place: Anywhere away from street lights (the Royal Observatory's guide is written for the UK)
+  country: UK
+  continent: europe
+  month: [7, 8]
+  when: Active 17 July to 24 August; peak overnight 12 to 13 August 2027
+  see: [own]
+  see_note: Watch between midnight and 5.30am from somewhere away from street lights, and give your eyes at least 15 minutes to adjust. Binoculars and telescopes are not needed; they narrow the patch of sky you see.
+  note: The meteors are debris from comet 109P/Swift-Tuttle. The Royal Observatory notes a bright waxing gibbous Moon at the 2027 peak.
+  link: {label: 'Royal Observatory Greenwich: Perseid meteor shower guide', url: 'https://www.rmg.co.uk/stories/space-astronomy/perseid-meteor-shower-guide-uk-when-where-to-see', checked: '2026-11-19'}
+  more:
+  - {label: 'Royal Observatory Greenwich: meteor shower calendar 2026 and 2027', url: 'https://www.rmg.co.uk/stories/space-astronomy/meteor-shower-guide-2026', checked: '2026-11-19'}
+- id: geminid-meteor-shower
+  name: Geminid meteor shower
+  type: sky
+  place: Anywhere away from street lights (the Royal Observatory's guide is written for the UK)
+  country: UK
+  continent: europe
+  month: [12]
+  when: Active 4 to 20 December; peak on 14 December 2026
+  see: [own]
+  see_note: Find a safe spot away from street lights and look a little away from the radiant, the point the meteors seem to come from, rather than straight at it.
+  note: The Royal Observatory gives a peak rate of up to 120 meteors an hour, though far fewer are seen under light-polluted skies. The Geminids come from the asteroid 3200 Phaethon.
+  link: {label: 'Royal Observatory Greenwich: Geminid meteor shower 2026', url: 'https://www.rmg.co.uk/stories/space-astronomy/geminid-meteor-shower-uk-dates-how-to-see', checked: '2026-11-19'}
+# ---------- Wildlife and living light ----------
+- id: starling-murmurations
+  name: Starling murmurations
+  type: living
+  place: Large roosts in reedbeds, on piers and on coastal marshes, such as RSPB Ham Wall
+  country: UK
+  continent: europe
+  month: [11, 12, 1, 2]
+  see: [own]
+  see_note: Go to a roost at dusk, when the flocks gather. At RSPB Ham Wall the reserve asks you to arrive by 3.30pm at the latest, ring its Starling hotline to find where the birds roosted the night before, and bring a torch for the walk back.
+  note: The RSPB calls the starlings' winter display "one of nature's most spectacular shows". Hundreds, and sometimes thousands, of birds gather as the sun goes down.
+  link: {label: 'RSPB: starling', url: 'https://www.rspb.org.uk/birds-and-wildlife/starling', checked: '2026-11-19'}
+  more:
+  - {label: 'RSPB Ham Wall: the starling roost', url: 'https://www.rspb.org.uk/days-out/reserves/ham-wall/the-starling-roost', checked: '2026-11-19'}
+- id: bioluminescent-bays-puerto-rico
+  name: Bioluminescent bays of Puerto Rico
+  type: living
+  place: Mosquito Bay on Vieques, Laguna Grande in Fajardo and La Parguera in Lajas
+  country: Puerto Rico (US)
+  continent: north-america
+  see: [guided, boat]
+  see_note: Book with a certified eco-tour operator for a dark night, near the new moon and away from the full moon. Mosquito Bay is reached by kayak only; La Parguera is the one bay where motorboats are allowed.
+  note: Discover Puerto Rico says swimming is not allowed in the bio bays, asks visitors not to use bug spray or sunscreen, and asks them not to touch or take anything from the water. Discover Puerto Rico says Guinness World Records recognised Mosquito Bay in 2006 as the brightest bioluminescent bay in the world.
+  link: {label: "Discover Puerto Rico: the three bioluminescent bays", url: 'https://www.discoverpuertorico.com/article/guide-to-exploring-puerto-ricos-bioluminescent-bays', checked: '2026-11-19'}
+  more:
+  - {label: "Discover Puerto Rico: protecting the bioluminescent bays", url: 'https://www.discoverpuertorico.com/protecting-puerto-ricos-bioluminescent-bays', checked: '2026-11-19'}
+- id: synchronous-fireflies-smokies
+  name: Synchronous fireflies in the Great Smoky Mountains
+  type: living
+  place: Elkmont, Great Smoky Mountains National Park, Tennessee
+  country: USA
+  continent: north-america
+  month: [5, 6]
+  when: Usually eight nights between late May and early June
+  see: [booked]
+  see_note: Enter the park's lottery for vehicle reservations in late April; each reservation is for one night. Cover your torch with red cellophane and stay on the designated trails.
+  note: The species is Photinus carolinus. In 2026 the viewing ran from 20 to 27 May, with 120 reservations a night, and only vehicles with a reservation could enter after noon.
+  link: {label: 'National Park Service: synchronous fireflies', url: 'https://www.nps.gov/grsm/learn/nature/fireflies.htm', checked: '2026-11-19'}
+  more:
+  - {label: 'National Park Service: 2026 firefly viewing dates', url: 'https://www.nps.gov/grsm/learn/news/great-smoky-mountains-national-park-announces-dates-for-2026-annual-firefly-viewing-event.htm', checked: '2026-11-19'}
+- id: salmon-run-brooks-falls
+  name: Bears and the salmon run at Brooks Falls
+  type: living
+  place: Brooks Camp, Katmai National Park and Preserve, Alaska
+  country: USA
+  continent: north-america
+  month: [7]
+  see: [own]
+  see_note: Everyone must check in at the Brooks Camp Visitor Center first. Bears fishing for salmon can be watched from three viewing platforms along the river.
+  note: The park says bears fish at Brooks Falls and in the lower Brooks River throughout July, and in some years a few still fish at the falls in September and October. Weather and bears can delay floatplane arrivals and departures.
+  link: {label: 'National Park Service: bear viewing at Brooks Camp (PDF)', url: 'https://www.nps.gov/katm/planyourvisit/upload/bear-viewing-at-brooks-camp.pdf', checked: '2026-11-19'}
+- id: great-migration-serengeti-mara
+  name: The great wildebeest migration
+  type: living
+  place: Serengeti National Park, Tanzania, and the Maasai Mara, Kenya
+  country: Tanzania and Kenya
+  continent: africa
+  month: [7, 8, 9, 10]
+  when: Crossings into the Maasai Mara usually July to October
+  see: [vehicle]
+  see_note: At the Mara River crossings in the Serengeti, vehicles must stay in the signed viewing areas, leave the animals room to pass and keep everyone inside.
+  note: Tanzania National Parks puts the migration at more than 1.5 million wildebeest, with hundreds of thousands of zebras and half a million gazelles. Magical Kenya says the herds cross the Mara River into the Maasai Mara from July to October.
+  link: {label: 'Magical Kenya: the Great Migration', url: 'https://magicalkenya.com/experience/the-great-migration/', checked: '2026-11-19'}
+  more:
+  - {label: 'Tanzania National Parks: Serengeti brochure (PDF)', url: 'https://www.tanzaniaparks.go.tz/uploads/publications/en-1634493627-SE-ENG.pdf', checked: '2026-11-19'}
+  - {label: 'Tanzania National Parks: Mara River crossing guideline (PDF)', url: 'https://www.tanzaniaparks.go.tz/uploads/publications/en-1682869509-MARARIVERCROSSINGGUIDELINE.pdf', checked: '2026-11-19'}
+- id: sardine-run
+  name: The sardine run
+  type: living
+  place: The KwaZulu-Natal coast
+  country: South Africa
+  continent: africa
+  month: [5, 6, 7]
+  when: Usually May to the end of July
+  see: [own, boat]
+  see_note: The run can be watched from land, from a boat or underwater as the shoals move up the coast.
+  note: The sardines swim from their spawning ground in the Cape up South Africa's east coast, followed by sharks, dolphins, humpback and minke whales, Cape fur seals and Cape gannets.
+  link: {label: 'South African Tourism: experience the sardine run', url: 'https://www.southafrica.net/gl/en/travel/article/experience-the-sardine-run-the-greatest-shoal-on-earth', checked: '2026-11-19'}
+- id: waitomo-glowworm-caves
+  name: Waitomo glowworm caves
+  type: living
+  place: Waitomo Caves, Waikato, North Island
+  country: New Zealand
+  continent: oceania
+  see: [guided, boat]
+  see_note: Guides lead you through the caves, and the visit includes a boat ride through the glowworm grotto. The operator recommends booking in advance.
+  note: The boat passes under thousands of glowworms. The limestone of the caves began forming on the ocean floor more than 30 million years ago, says Tourism New Zealand's listing.
+  link: {label: 'Tourism New Zealand: Waitomo Glowworm Caves', url: 'https://www.newzealand.com/us/plan/business/waitomo-glowworm-caves/', checked: '2026-11-19'}
+  more:
+  - {label: 'Waitomo Glowworm Caves (operator)', url: 'https://www.waitomo.com/', checked: '2026-11-19'}
+# ---------- Water and rock ----------
+- id: severn-bore
+  name: The Severn bore
+  type: earth
+  place: River Severn estuary, Gloucestershire, for example from the riverbank at Newnham-on-Severn or the footpath at Minsterworth
+  country: UK
+  continent: europe
+  see: [own]
+  see_note: Check a bore timetable and arrive early; predicted times are only an estimate and the bore can be 10 minutes early or late. Stand well back, because the wave can swamp the bank, and the water is icy cold with a fierce current.
+  note: The bore is a surge wave that travels more than 25 miles up the estuary from Awre to Gloucester. Bores are graded from 1* to 5*, and the strongest come with the spring and autumn tides.
+  link: {label: 'Visit the Forest of Dean and Wye Valley: the Severn Bore', url: 'https://www.visitdeanwye.co.uk/business-directory/the-severn-bore', checked: '2026-11-19'}
+- id: strokkur-geyser
+  name: Strokkur geyser
+  type: earth
+  place: Geysir geothermal area, Haukadalur valley, on the Golden Circle
+  country: Iceland
+  continent: europe
+  see: [own]
+  see_note: Stop at the Geysir geothermal area on the Golden Circle and wait; Strokkur erupts every 10 minutes or so.
+  note: Its column of boiling water can reach as high as 30 metres. The Great Geysir next to it has been dormant since 1916, says Visit South Iceland.
+  link: {label: 'Visit South Iceland: Geysir geothermal area', url: 'https://www.south.is/en/place/geysir-geothermal-area', checked: '2026-11-19'}
+- id: old-faithful
+  name: Old Faithful
+  type: earth
+  place: Upper Geyser Basin, Yellowstone National Park, Wyoming
+  country: USA
+  continent: north-america
+  see: [own]
+  see_note: Check the next predicted eruption at the Old Faithful Visitor Education Center, then watch from the viewing area or the boardwalks.
+  note: The National Park Service gives the median interval, as of January 2025, as 102 minutes, plus or minus 10. Eruptions last 1½ to 5 minutes and average 130 feet (40 m) high.
+  link: {label: 'National Park Service: Old Faithful', url: 'https://home.nps.gov/yell/planyourvisit/exploreoldfaithful.htm', checked: '2026-11-19'}
+# ---------- Seasons and flowers ----------
+- id: bluebell-woods
+  name: Bluebell woods
+  type: season
+  place: Bluebell woods across the UK, such as Glen Finglas in the Trossachs and Hackfall in the Yorkshire Dales
+  country: UK
+  continent: europe
+  month: [3, 4, 5]
+  when: Usually late March to early May
+  see: [own]
+  see_note: Visit a bluebell wood in flower and keep to the paths so you do not tread on the plants.
+  note: The Woodland Trust says bluebells are not endangered but are threatened by local extinction.
+  link: {label: 'Woodland Trust: best UK bluebell woods', url: 'https://www.woodlandtrust.org.uk/visiting-woods/things-to-do/woods-through-the-seasons/spring/best-bluebell-woods/', checked: '2026-11-19'}
+- id: cherry-blossom-japan
+  name: Cherry blossom in Japan
+  type: season
+  place: Across Japan, from Kyushu in the south-west to Hokkaido in the north
+  country: Japan
+  continent: asia
+  month: [3, 4, 5]
+  when: Usually late March to early May, depending on the place
+  see: [own]
+  see_note: Check the Japan National Tourism Organization's forecast, based on Japan Weather Association data, for first-bloom dates in the city you plan to visit.
+  note: The season starts on Kyushu in March and moves north. For 2026 the forecast first bloom was 19 March in Tokyo and 19 April in Sapporo; dates change with the weather.
+  link: {label: 'Japan National Tourism Organization: cherry blossom forecast', url: 'https://www.japan.travel/en/see-and-do/cherry-blossom-forecast/', checked: '2026-11-19'}
+- id: autumn-leaves-japan
+  name: Autumn leaves (koyo) in Japan
+  type: season
+  place: Across Japan, from northern Hokkaido south to central and southern Japan
+  country: Japan
+  continent: asia
+  month: [9, 10, 11, 12]
+  when: Usually late September to early December, depending on the place and height
+  see: [own]
+  see_note: Check the Japan National Tourism Organization's autumn leaves forecast for the city you plan to visit.
+  note: The colour starts in the colder areas of northern Hokkaido and moves south; the mountains turn first, then city gardens, parks and temples.
+  link: {label: 'Japan National Tourism Organization: autumn leaves forecast', url: 'https://www.japan.travel/en/see-and-do/autumn-leaves-forecast/', checked: '2026-11-19'}
+guides:
+- slug: 2027-total-solar-eclipse
+  title: How to see the 2027 total solar eclipse safely, and where
+  short: The 2027 eclipse
+  seo_title: 'Total solar eclipse 2 August 2027: where to see it and how to stay safe'
+  description: Where the 2 August 2027 total solar eclipse can be seen in Spain, Gibraltar and North Africa, how long totality lasts, and how to watch it without harming your eyes.
+  standfirst: On 2 August 2027 the Moon covers the Sun across southern Spain, Gibraltar and North Africa. Here is where to stand, how long it lasts, and how to protect your eyes.
+  detail:
+  - h: What happens on 2 August 2027
+    p:
+    - NASA says the total eclipse will be visible in southern Spain, North Africa (including Morocco, Algeria, Tunisia, Libya and Egypt), Saudi Arabia and Yemen. A partial eclipse will be seen across most of Europe and much of Africa and the Middle East.
+    - At the point of greatest eclipse, 25.5°N 33.2°E at 10:07 UT, NASA gives 6 minutes 23 seconds of totality, with the Sun 82° above the horizon and the path of totality 258 km wide.
+  - h: Where to see totality in Spain and Gibraltar
+    p:
+    - "Spain's National Geographic Institute (IGN) says the band of totality crosses the Strait of Gibraltar from west to east, covering Ceuta and Melilla, almost all of Cádiz province, part of Málaga province and the far south of Granada and Almería provinces. It happens in the morning, at around 10:50."
+    - The Government of Gibraltar says Gibraltar will see a total eclipse that morning and expects it to bring many visitors, "possibly in the thousands".
+    table:
+      head: [Place, Totality begins (local time), How long it lasts]
+      rows:
+      - [Ceuta, '10:45', 4 minutes 48 seconds (the longest in Spain)]
+      - [Melilla, '10:48', 4 minutes 34 seconds]
+      - [Cádiz, '10:45', 2 minutes 54 seconds]
+      - [Málaga, '10:48', 1 minute 48 seconds]
+  - h: Seeing it from the UK
+    p:
+    - The UK sees only a partial eclipse. The Royal Observatory Greenwich says it will begin at 9.03am BST in London. The same eye rules apply all the way through, because no part of the UK sees totality.
+  - h: Protecting your eyes
+    list:
+    - Never look at the Sun directly without proper protection. NASA says safe solar viewers are thousands of times darker than sunglasses and should meet the ISO 12312-2 international standard. Ordinary sunglasses, however dark, are not safe.
+    - "The only time it is safe to look with the naked eye is totality, when the Moon completely covers the Sun's bright face. NASA's rule: as soon as you see even a little of the bright Sun again, put your eclipse glasses back on."
+    - Never look through binoculars, a camera or a telescope while wearing eclipse glasses. A solar filter must be fitted to the front of the optics.
+    - The Royal Observatory says eclipse glasses must be "the real deal, not 3D glasses or anything similar". The Royal Astronomical Society says old CE-marked eclipse glasses may be safe only if they were stored safely and are undamaged; check for tiny holes or wrinkles in the coating.
+    - Pinhole projection lets you watch the partial phases without looking at the Sun at all. NASA's warning: do not look at the Sun through the pinhole.
+  faq:
+  - q: Can I look at the eclipse without glasses?
+    a: Only during totality, when the Moon completely covers the Sun's bright face, and only if you are inside the path of totality. Put your eclipse glasses back on as soon as any bright Sun reappears. Outside the path, you need protection the whole time.
+  - q: How long does totality last?
+    a: It depends on where you stand. The IGN gives 4 minutes 48 seconds in Ceuta and 2 minutes 54 seconds in Cádiz; NASA gives 6 minutes 23 seconds at the point of greatest eclipse.
+  - q: Will the UK see a total eclipse?
+    a: No. The UK sees a partial eclipse, starting at 9.03am BST in London according to the Royal Observatory Greenwich, so eclipse glasses are needed throughout.
+  kit:
+  - name: Eclipse glasses
+    why: check the packaging says ISO 12312-2, and that the film has no holes, scratches or wrinkles
+    url: https://www.amazon.co.uk/s?k=eclipse+glasses+iso+12312-2
+  - name: Solar filter for a camera or binoculars
+    why: it must fit securely over the front of the lens, never the eyepiece
+    url: https://www.amazon.co.uk/s?k=solar+filter+camera+lens
+  sources:
+  - {label: 'NASA Science: future eclipses', url: 'https://science.nasa.gov/eclipses/future-eclipses/', checked: '2026-11-19'}
+  - {label: 'NASA: eclipses during 2027', url: 'https://eclipse.gsfc.nasa.gov/OH/OH2027.html', checked: '2026-11-19'}
+  - {label: 'NASA Science: total solar eclipse safety', url: 'https://science.nasa.gov/eclipses/future-eclipses/eclipse-2024/safety/', checked: '2026-11-19'}
+  - {label: 'IGN Astronomy: total solar eclipse of 2 August 2027', url: 'https://astronomia.ign.es/en/eclipses-de-sol-y-luna/eclipse-total-sol-de-2-de-agosto-2027', checked: '2026-11-19'}
+  - {label: 'HM Government of Gibraltar: planning begins for solar eclipses', url: 'https://www.gibraltar.gov.gi/press-releases/planning-begins-for-solar-eclipses-212026-11608', checked: '2026-11-19'}
+  - {label: 'Royal Observatory Greenwich: solar eclipses explained', url: 'https://www.rmg.co.uk/stories/space-astronomy/solar-eclipses-explained', checked: '2026-11-19'}
+  - {label: 'Royal Astronomical Society: viewing a partial solar eclipse safely', url: 'https://www.ras.ac.uk/education-and-careers/partial-solar-eclipse-25-october-2022-viewing-it-safely', checked: '2026-11-19'}

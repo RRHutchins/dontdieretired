@@ -21,14 +21,14 @@
     {% if sec.list %}<ul>{% for li in sec.list %}<li>{{ li }}</li>{% endfor %}</ul>{% endif %}
   </section>
   {% endfor %}
-  {% if g.kit %}{{ affiliate_box(g.kit, "Kit to compare against your race's list") }}{% endif %}
+  {% if g.kit %}{{ affiliate_box(g.kit, h.kit_text or "Kit to compare against your race's list") }}{% endif %}
   {% if g.faq %}
   <section class="fl-faq"><h2>Questions people ask</h2>
     {% for f in g.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
   </section>
   {% endif %}
-  <p class="hub-back"><a class="btn" href="/{{ h.slug }}/#hub-f-h">Find a race in the {{ h.label | lower }} finder</a></p>
+  <p class="hub-back"><a class="btn" href="/{{ h.slug }}/#hub-f-h">{{ h.back_text or ("Find a race in the " ~ (h.label | lower) ~ " finder") }}</a></p>
   {% if others or h.acts %}<aside class="hub-more"><h2 class="h4">More on {{ h.label | lower }}</h2><ul>{% for o in others %}<li><a href="{{ o.url }}">{{ o.title }}</a></li>{% endfor %}{% for c in h.acts %}<li><a href="/list/{{ c.id }}/">{{ c.title }}: how to start</a></li>{% endfor %}</ul></aside>{% endif %}
-  <p class="disclosure fl-sources">Where this comes from: {% for x in g.sources %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "" }}{% endfor %}. Opened {{ g.sources_checked }}. Written with AI from these pages and checked against them; not reviewed by a coach or doctor.</p>
+  <p class="disclosure fl-sources">Where this comes from: {% for x in g.sources %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "" }}{% endfor %}. Opened {{ g.sources_checked }}. Written with AI from these pages and checked against them; {{ h.review_text or "not reviewed by a coach or doctor." }}</p>
 </article>
 {% endblock %}

@@ -1033,24 +1033,41 @@ def build(make_social=True):
         BANDS = [tuple(b) for b in h["bands_def"]] if "bands_def" in h else BANDS_ULTRA
         assert h["slug"] not in cfg["categories"] and h["slug"] not in ("list", "scam-help", "shop", "puzzle"), f"hub {h['id']}: slug clashes with a page"
         seen_e = set()
+        # `kind: phenomenon` (Nature's spectacles, 19 Nov 2026): no km, distances, terrain, format, entry or series; instead
+        # `type` (facet), `see` (list, facet: how you see it), `see_note`, optional `when` (a one-off date in words) and `more` (extra official links)
+        PHEN = h.get("kind") == "phenomenon"
+        assert h.get("kind", "race") in ("race", "phenomenon"), f"hub {h['id']}: kind is race or phenomenon"
+        if PHEN:
+            BANDS = []
         for e in h["events"]:
-            miss = [k for k in ("id", "name", "series", "place", "country", "continent", "km", "distances", "terrain", "format", "entry", "entry_note", "note", "link") if not e.get(k)]
+            need = ("id", "name", "type", "place", "country", "continent", "see", "see_note", "note", "link") if PHEN else ("id", "name", "series", "place", "country", "continent", "km", "distances", "terrain", "format", "entry", "entry_note", "note", "link")
+            miss = [k for k in need if not e.get(k)]
             assert not miss, f"hub {h['id']} event {e.get('id')}: missing {miss}"
             assert e["id"] not in seen_e and re.fullmatch(r"[a-z0-9-]+", e["id"]), f"hub {h['id']}: event id {e['id']} duplicated or malformed"
             seen_e.add(e["id"])
-            assert e["continent"] in F["continent"] and e["series"] in F["series"] and all(t in F["terrain"] for t in e["terrain"]) and all(x in F["entry"] for x in e["entry"]), f"hub {h['id']} event {e['id']}: unknown facet value"
-            assert e["format"] in ("single", "stage", "timed"), f"hub {h['id']} event {e['id']}: format is single, stage or timed"
+            if PHEN:
+                assert e["continent"] in F["continent"] and e["type"] in F["type"] and all(x in F["see"] for x in e["see"]), f"hub {h['id']} event {e['id']}: unknown facet value"
+                e.setdefault("km", []); e.setdefault("terrain", []); e.setdefault("entry", []); e.setdefault("series", ""); e.setdefault("format", ""); e.setdefault("distances", ""); e.setdefault("entry_note", "")
+            else:
+                assert e["continent"] in F["continent"] and e["series"] in F["series"] and all(t in F["terrain"] for t in e["terrain"]) and all(x in F["entry"] for x in e["entry"]), f"hub {h['id']} event {e['id']}: unknown facet value"
+                assert e["format"] in ("single", "stage", "timed"), f"hub {h['id']} event {e['id']}: format is single, stage or timed"
             assert all(1 <= m <= 12 for m in e.get("month") or []), f"hub {h['id']} event {e['id']}: months are 1 to 12"
-            L_ = e["link"]
-            assert str(L_.get("url", "")).startswith("https://") and L_.get("label") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(L_.get("checked", ""))), f"hub {h['id']} event {e['id']}: link needs https url, label, checked"
-            assert not re.search(r"[£$€]\s?\d", e["note"] + e["entry_note"] + e["distances"]), f"hub {h['id']} event {e['id']}: no prices (they change)"
-            L_["checked_human"] = dt.date.fromisoformat(str(L_["checked"])).strftime("%-d %B %Y")
+            for L_ in [e["link"]] + list(e.get("more") or []):
+                assert str(L_.get("url", "")).startswith("https://") and L_.get("label") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(L_.get("checked", ""))), f"hub {h['id']} event {e['id']}: link needs https url, label, checked"
+                L_["checked_human"] = dt.date.fromisoformat(str(L_["checked"])).strftime("%-d %B %Y")
+            assert not re.search(r"[£$€]\s?\d", e["note"] + e["entry_note"] + e["distances"] + e.get("see_note", "") + e.get("when", "")), f"hub {h['id']} event {e['id']}: no prices (they change)"
             e["bands"] = sorted({b[0] for k in e["km"] for b in BANDS if b[2] <= k <= b[3]})
-            e["month_label"] = " or ".join(MONTHS[m - 1] for m in e.get("month") or [])
-            e["search"] = " ".join([e["name"], e["place"], e["country"], e["distances"]]).lower()
+            if PHEN and e.get("month"):
+                # Months that wrap the year (September to April) read as a range; otherwise a list
+                ms = e["month"]
+                e["month_label"] = f"{MONTHS[ms[0] - 1]} to {MONTHS[ms[-1] - 1]}" if len(ms) > 2 else " and ".join(MONTHS[m - 1] for m in ms)
+            else:
+                e["month_label"] = " or ".join(MONTHS[m - 1] for m in e.get("month") or [])
+            e["search"] = " ".join(x for x in [e["name"], e["place"], e["country"], e["distances"], F.get("type", {}).get(e.get("type"), "")] if x).lower()
         h["events"] = sorted(h["events"], key=lambda e: (list(F["continent"]).index(e["continent"]), e["name"].lower()))
         h["bands"] = [b[:2] for b in BANDS if any(b[0] in e["bands"] for e in h["events"])]
-        h["used"] = {"terrain": {t for e in h["events"] for t in e["terrain"]}, "entry": {x for e in h["events"] for x in e["entry"]}, "series": {e["series"] for e in h["events"]}}
+        h["used"] = {"terrain": {t for e in h["events"] for t in e["terrain"]}, "entry": {x for e in h["events"] for x in e["entry"]}, "series": {e["series"] for e in h["events"]},
+                     "type": {e.get("type") for e in h["events"] if e.get("type")}, "see": {x for e in h["events"] for x in e.get("see") or []}}
         h["months"] = [(i + 1, MONTHS[i]) for i in range(12) if any(i + 1 in (e.get("month") or []) for e in h["events"])]
         h["acts"] = [_chs_by[i] for i in h.get("activities") or [] if i in _chs_by]
         h["checked_human"] = max(dt.date.fromisoformat(str(e["link"]["checked"])) for e in h["events"]).strftime("%-d %B %Y")
