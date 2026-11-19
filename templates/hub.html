@@ -29,18 +29,19 @@
 {% endif %}
 
 <section class="hub-finder" aria-labelledby="hub-f-h" data-hub-finder>
-  <h2 id="hub-f-h">Race finder</h2>
+  <h2 id="hub-f-h">{{ h.finder_title or "Race finder" }}</h2>
   <form class="hub-filters" data-hub-filters hidden onsubmit="return false">
     <label>Search <input type="search" name="q" placeholder="Name, place or country" autocomplete="off"></label>
     <label>Region <select name="continent"><option value="">Anywhere</option>{% for k, v in h.facets.continent.items() %}{% if h.events | selectattr('continent', 'equalto', k) | list %}<option value="{{ k }}">{{ v }}</option>{% endif %}{% endfor %}</select></label>
-    <label>Distance <select name="band"><option value="">Any distance</option>{% for k, v in h.bands %}<option value="{{ k }}">{{ v }}</option>{% endfor %}<option value="stage">Multi-day stages</option></select></label>
-    <label>Terrain <select name="terrain"><option value="">Any terrain</option>{% for k, v in h.facets.terrain.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
-    <label>Usual month <select name="month"><option value="">Any month</option>{% for n, m in h.months %}<option value="{{ n }}">{{ m }}</option>{% endfor %}</select></label>
-    <label>Entry <select name="entry"><option value="">Any way in</option>{% for k, v in h.facets.entry.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
-    <label>Organiser <select name="series"><option value="">Any organiser</option>{% for k, v in h.facets.series.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
+    {% set has_stage = h.events | selectattr('format', 'equalto', 'stage') | list %}
+    {% if h.bands | length > 1 or (h.bands and has_stage) %}<label>Distance <select name="band"><option value="">Any distance</option>{% for k, v in h.bands %}<option value="{{ k }}">{{ v }}</option>{% endfor %}{% if has_stage %}<option value="stage">Multi-day stages</option>{% endif %}</select></label>{% endif %}
+    {% if h.used.terrain | length > 1 %}<label>Terrain <select name="terrain"><option value="">Any terrain</option>{% for k, v in h.facets.terrain.items() if k in h.used.terrain %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>{% endif %}
+    {% if h.months %}<label>Usual month <select name="month"><option value="">Any month</option>{% for n, m in h.months %}<option value="{{ n }}">{{ m }}</option>{% endfor %}</select></label>{% endif %}
+    <label>Entry <select name="entry"><option value="">Any way in</option>{% for k, v in h.facets.entry.items() if k in h.used.entry %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
+    <label>{{ h.series_label or "Organiser" }} <select name="series"><option value="">{{ h.series_any or "Any organiser" }}</option>{% for k, v in h.facets.series.items() if k in h.used.series %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
     <button type="reset" class="btn btn-ghost btn-small">Clear</button>
   </form>
-  <p class="hub-none" data-hub-none hidden>No races match those choices yet. Try a wider distance or any month.</p>
+  <p class="hub-none" data-hub-none hidden>{{ h.none_text or "No races match those choices yet. Try a wider distance or any month." }}</p>
   <ul class="hub-events">
   {% for e in h.events %}
     <li class="hub-event" id="{{ e.id }}" data-continent="{{ e.continent }}" data-bands="{{ e.bands | join(' ') }}{% if e.format == 'stage' %} stage{% endif %}" data-terrain="{{ e.terrain | join(' ') }}" data-month="{{ (e.month or []) | join(' ') }}" data-entry="{{ e.entry | join(' ') }}" data-series="{{ e.series }}" data-search="{{ e.search }}">
@@ -62,8 +63,8 @@
 </section>
 
 <div class="prose narrow fl-about">
-  <p>We list a race only after opening its organiser's own page, and every fact here comes from that page or another official page named in our guides. Dates, fees, limits and entry rules change each year: the organiser's page is the one to trust. Being listed does not mean any race or organiser endorses this site. We add more races every week; most recently checked {{ h.checked_human }}.</p>
-  <p>Ultras in the mountains, the desert or winter can leave you far from help. Read each race's kit list and medical guidance before you enter.</p>
+  <p>We list {{ h.noun_one or "a race" }} only after opening its organiser's own page, and every fact here comes from that page or another official page named in our guides. Dates, fees, limits and entry rules change each year: the organiser's page is the one to trust. Being listed does not mean any race or organiser endorses this site. We add more {{ h.noun_many or "races" }} every week; most recently checked {{ h.checked_human }}.</p>
+  {% if h.safety %}<p>{{ h.safety }}</p>{% endif %}
 </div>
 {% endblock %}
 {% block scripts %}<script src="/static/hub.js?v={{ asset_v }}" defer></script>{% endblock %}

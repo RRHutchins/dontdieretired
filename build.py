@@ -1015,10 +1015,12 @@ def build(make_social=True):
                           "image": (c.get("photo") or {}).get("small") or "/static/og-default.png", "art": (c.get("photo") or {}).get("small") or "/static/og-default.png"})
     # Deep hubs (RUNBOOK §6u): /<slug>/ with the event finder, /<slug>/<guide>/ for each guide
     _chs_by = {c["id"]: c for c in (chs if "chs" in locals() else [])}
-    BANDS = [("u100", "Under 100 km", 0, 99.9), ("100k", "100 to 149 km", 100, 149.9), ("100m", "About 100 miles (150 to 180 km)", 150, 180), ("long", "Over 180 km", 180.1, 99999)]
+    BANDS_ULTRA = [("u100", "Under 100 km", 0, 99.9), ("100k", "100 to 149 km", 100, 149.9), ("100m", "About 100 miles (150 to 180 km)", 150, 180), ("long", "Over 180 km", 180.1, 99999)]
     MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     for h in HUBS.values():
         F = h["facets"]
+        # A hub may set its own distance bands ([id, label, min km, max km]); [] means no distance filter (e.g. marathons, all 42.2 km)
+        BANDS = [tuple(b) for b in h["bands_def"]] if "bands_def" in h else BANDS_ULTRA
         assert h["slug"] not in cfg["categories"] and h["slug"] not in ("list", "scam-help", "shop", "puzzle"), f"hub {h['id']}: slug clashes with a page"
         seen_e = set()
         for e in h["events"]:
@@ -1038,6 +1040,7 @@ def build(make_social=True):
             e["search"] = " ".join([e["name"], e["place"], e["country"], e["distances"]]).lower()
         h["events"] = sorted(h["events"], key=lambda e: (list(F["continent"]).index(e["continent"]), e["name"].lower()))
         h["bands"] = [b[:2] for b in BANDS if any(b[0] in e["bands"] for e in h["events"])]
+        h["used"] = {"terrain": {t for e in h["events"] for t in e["terrain"]}, "entry": {x for e in h["events"] for x in e["entry"]}, "series": {e["series"] for e in h["events"]}}
         h["months"] = [(i + 1, MONTHS[i]) for i in range(12) if any(i + 1 in (e.get("month") or []) for e in h["events"])]
         h["acts"] = [_chs_by[i] for i in h.get("activities") or [] if i in _chs_by]
         h["checked_human"] = max(dt.date.fromisoformat(str(e["link"]["checked"])) for e in h["events"]).strftime("%-d %B %Y")

@@ -1,0 +1,464 @@
+# Deep hub (RUNBOOK §6u): marathons (Robin, 19 Nov 2026: second hub after ultra running, chosen for search demand,
+# spend on travel and kit, and fit with the planner). Same rules as ultra-running.yaml: every event link was opened on
+# its `checked` date and supports what the row says; no prices; months are "usually"; event ids are permanent.
+# Every event is the full 42.195 km, so this hub sets `bands_def: []` (no distance filter).
+id: marathons
+slug: marathons
+category: move
+label: Marathons
+h1: Big marathons around the world
+seo_title: 'Marathons worldwide: finder, ballots and how to get a place'
+description: Find a marathon by region, month and how you get in, from London, New York and the eight World Marathon Majors to Loch Ness, the Médoc and the Great Wall, with every way to a start line.
+lead: Every big marathon has its own way in. Some sell out on the day entries open, some draw places by ballot, and some fill through charities and travel packages. Here is how each one works, checked against the organiser's own page.
+intro:
+- More than 1.3 million people applied in the ballot for the 2027 London Marathon, and most missed out. But a ballot is only one way in. Charities buy places, some races take whoever enters first, some want a qualifying time, and some can only be entered as part of a travel package.
+- Filter the list below by region, month, the way you want to get in, or the World Marathon Majors. Every race links to its organiser's own page, opened on the date shown. Dates and rules change each year, so the official page is the last word.
+activities: [run-a-marathon, marine-corps-marathon]
+tags: [marathon, marathons, '26.2', ballot, majors, abbott, city, race, races, running]
+finder_title: Marathon finder
+noun_one: a marathon
+noun_many: marathons
+series_label: Series
+series_any: Any
+none_text: No marathons match those choices yet. Try any month or any way in.
+safety: A marathon is a long, hard day on the heart, muscles and feet. Build up over months, follow your race's medical advice, and check with your GP (family doctor) before you start training if you have a heart condition or another health worry.
+bands_def: []
+facets:
+  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania}
+  terrain: {road: Road, trail: Trail and track, mountain: Mountain}
+  entry: {open: Open entry (first come), ballot: Ballot or lottery, qualifier: Qualifying time, charity: Charity place, tour: Travel package or tour operator}
+  series: {wmm: Abbott World Marathon Majors, independent: Independent}
+events:
+# ---------- Abbott World Marathon Majors ----------
+- id: tokyo-marathon
+  name: Tokyo Marathon
+  series: wmm
+  place: Tokyo
+  country: Japan
+  continent: asia
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [3]
+  entry: [ballot, charity]
+  entry_note: General entry is a drawing, held in August for the following March; overseas runners can also apply through the ONE TOKYO GLOBAL membership window just before it. Charity runners, chosen by each charity programme, enter earlier, from late June, and must make a large minimum donation. Applicants who expect to finish in under three hours must send a result certificate.
+  note: The 2027 race is on Sunday 7 March 2027, with a field of 40,000.
+  link: {label: 'Tokyo Marathon 2027: entry information', url: 'https://www.marathon.tokyo/en/participants/guideline/', checked: '2026-11-19'}
+- id: boston-marathon
+  name: Boston Marathon
+  series: wmm
+  place: Hopkinton to Boston, Massachusetts
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [qualifier]
+  entry_note: You need a qualifying time for your age and sex, run on a certified course in the qualifying window. Qualifiers apply in one registration week in September, and it is not first come, first served; for 2027 a runner needed to be 5 minutes 17 seconds under their standard to be accepted. From 2027 the organisers added a random selection opportunity for qualifiers.
+  note: The 131st Boston Marathon is on Monday 19 April 2027. The organisers adjust qualifying times run on courses that drop more than 1,500 ft (457 m).
+  link: {label: 'B.A.A.: qualify for the Boston Marathon', url: 'https://www.baa.org/races/boston-marathon/qualify/', checked: '2026-11-19'}
+- id: london-marathon
+  name: London Marathon
+  series: wmm
+  place: London
+  country: UK
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [ballot, charity, qualifier, tour]
+  entry_note: The public ballot closes in early May for the next year's race (for 2027, on 1 May 2026), with results by early July. Missed out? Apply for a charity place, use an international tour operator, or, if you live in the UK and have a fast enough marathon time for your age, apply for Good For Age (6,000 places a year). Runners must be 18 or over.
+  note: For the first and only time the 2027 race runs over two days, Saturday 24 and Sunday 25 April 2027, with 100,000 runners. 1,338,544 people applied in the 2027 ballot.
+  link: {label: 'London Marathon Events: TCS London Marathon', url: 'https://www.londonmarathonevents.co.uk/london-marathon', checked: '2026-11-19'}
+- id: cape-town-marathon
+  name: Sanlam Cape Town Marathon
+  series: wmm
+  place: Cape Town
+  country: South Africa
+  continent: africa
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [ballot, charity, tour]
+  entry_note: A general ballot in June for the following May (for 2027 it ran from 10 to 24 June 2026). The organisers also run a charity programme and a travel programme.
+  note: Cape Town becomes the eighth Abbott World Marathon Major, and Africa's first, with its first race as a Major on 23 May 2027. The race moved from October to May from 2026; the 2025 race was cancelled on the morning because of high winds.
+  link: {label: 'Sanlam Cape Town Marathon: FAQ', url: 'https://capetownmarathon.com/faq/', checked: '2026-11-19'}
+- id: sydney-marathon
+  name: TCS Sydney Marathon
+  series: wmm
+  place: Sydney
+  country: Australia
+  continent: oceania
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [8]
+  entry: [ballot, charity, tour, qualifier]
+  entry_note: A free-to-enter ballot from late September to mid October; you are charged only if selected, and it is not first come, first served. Unsuccessful applicants are told about the travel and charity programmes. Fast runners can apply for the High Performance Program, with guaranteed places for the fastest applicants.
+  note: Sydney became the seventh Major in 2025. The 2027 race is on Sunday 29 August 2027.
+  link: {label: 'TCS Sydney Marathon: 2027 ballot', url: 'https://www.tcssydneymarathon.com/sign-up', checked: '2026-11-19'}
+- id: berlin-marathon
+  name: Berlin Marathon
+  series: wmm
+  place: Berlin
+  country: Germany
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [9]
+  entry: [ballot]
+  entry_note: Places are drawn by lottery, with registration in October and early November and results in early December. Fast runners with a qualifying time also go into the lottery. Members of the race's Jubilee Club have guaranteed entry.
+  note: The 2027 race, the first as the GENERALI BERLIN-MARATHON, is on Sunday 26 September 2027, starting on Straße des 17. Juni by the Brandenburg Gate.
+  link: {label: 'Berlin Marathon: the lottery', url: 'https://www.bmw-berlin-marathon.com/en/registration/lottery', checked: '2026-11-19'}
+- id: chicago-marathon
+  name: Chicago Marathon
+  series: wmm
+  place: Chicago, Illinois
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [ballot, qualifier, charity, tour]
+  entry_note: A three-week application window in October for the next year's race, with a non-guaranteed drawing (free to apply) and guaranteed paths such as time qualifiers. After that, places come through the official charity teams (each sets a minimum to raise) and official tour operators.
+  note: The 2027 race is on Sunday 10 October 2027. Finishers of every 2027 Chicago Distance Series event get guaranteed entry to the 50th race in 2028.
+  link: {label: 'Chicago Marathon: apply', url: 'https://www.chicagomarathon.com/apply/', checked: '2026-11-19'}
+- id: new-york-city-marathon
+  name: New York City Marathon
+  series: wmm
+  place: All five boroughs of New York City
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [11]
+  entry: [ballot, qualifier, charity]
+  entry_note: A non-guaranteed drawing (for 2027, expected early in 2027), with a second-chance drawing for New York Road Runners members. Guaranteed entry comes through time qualifiers, charity places, and the members' 9+1 programme (nine NYRR races and one volunteer shift in a year), which from 2027 needs a place drawn in its own free member drawing.
+  note: The 2027 race is on Sunday 7 November 2027. The 2025 race had 59,226 finishers.
+  link: {label: 'NYRR: run the 2027 TCS New York City Marathon', url: 'https://www.nyrr.org/tcsnycmarathon/runners/entry/2027', checked: '2026-11-19'}
+# ---------- UK ----------
+- id: manchester-marathon
+  name: Manchester Marathon
+  series: independent
+  place: Greater Manchester
+  country: UK
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [open, charity]
+  entry_note: Public places go on sale soon after each race and sell out fast (for 2027, over 40,000 went in ten days). After that, the only way in is through one of the official charity partners.
+  note: The 2027 race is on Sunday 18 April 2027. The organisers call it the UK's second largest marathon. The cut-off is six hours.
+  link: {label: 'Manchester Marathon: how to get a place in 2027', url: 'https://www.manchestermarathon.co.uk/news/how-to-get-a-place-in-the-2027-adidas-manchester-marathon/', checked: '2026-11-19'}
+- id: edinburgh-marathon
+  name: Edinburgh Marathon
+  series: independent
+  place: Edinburgh to Musselburgh, East Lothian
+  country: UK
+  continent: europe
+  km: [42.2]
+  distances: Marathon (half marathon, relay, 10K and 5K the same weekend)
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [open]
+  entry_note: Entry direct from the organisers' site. The organisers say it has sold out every year since 2008, so enter early.
+  note: The 2027 marathon is on Sunday 30 May 2027 at 10am. The point-to-point course starts in central Edinburgh and finishes in Musselburgh, partly along the East Lothian coast. There is no event parking at the finish.
+  link: {label: 'Edinburgh Marathon Festival: the marathon', url: 'https://www.edinburghmarathon.com/marathon', checked: '2026-11-19'}
+- id: loch-ness-marathon
+  name: Loch Ness Marathon
+  series: independent
+  place: Near Fort Augustus to Inverness, Scottish Highlands
+  country: UK
+  continent: europe
+  km: [42.2]
+  distances: Marathon (10K and 5K the same weekend)
+  terrain: [road]
+  format: single
+  month: [9]
+  entry: [open, charity]
+  entry_note: Entries are sold direct online, with no ballot, and through charities. Register your interest to hear when early-bird entry opens. The 2025 race sold out.
+  note: The 2027 race is on Sunday 26 September 2027. Coaches take runners to a moorland start between Whitebridge and Fort Augustus; the course follows the south-eastern shore of Loch Ness and finishes in Inverness. The cut-off is seven hours.
+  link: {label: 'Loch Ness Marathon: the race', url: 'https://lochnessmarathon.com/event/loch-ness-marathon/', checked: '2026-11-19'}
+# ---------- Europe ----------
+- id: paris-marathon
+  name: Paris Marathon
+  series: independent
+  place: Paris
+  country: France
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [ballot]
+  entry_note: Since the 2027 race, places are drawn by a free lottery in September; entering early does not improve your chances, and you pay only if selected. The organisers say charity places and other ways in are to be announced.
+  note: The 50th race is on Sunday 4 April 2027. The course starts on the Champs-Élysées and finishes on Avenue Foch; the full route is revealed a few weeks before race day.
+  link: {label: 'ASICS Marathon de Paris: FAQ', url: 'https://www.asicsmarathondeparis.com/en/faq', checked: '2026-11-19'}
+- id: valencia-marathon
+  name: Valencia Marathon
+  series: independent
+  place: Valencia
+  country: Spain
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [12]
+  entry: [ballot]
+  entry_note: Last year's runners get a short preferential window to enter again; the remaining places go by ballot (for 2026 the ballot ran 16 to 26 December 2025). The race has 36,000 places.
+  note: The 2026 race is on Sunday 6 December 2026. Its page says it is the only race in Spain with a World Athletics Platinum Label.
+  link: {label: 'Valencia Marathon: registration information', url: 'https://www.valenciaciudaddelrunning.com/en/marathon/info-registration-2026/', checked: '2026-11-19'}
+- id: amsterdam-marathon
+  name: Amsterdam Marathon
+  series: independent
+  place: Amsterdam
+  country: Netherlands
+  continent: europe
+  km: [42.2]
+  distances: Marathon (half marathon and shorter races the same weekend)
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [open, tour]
+  entry_note: Entries go on sale in December for the following October and sell fast (the 32,000 marathon places for 2026 went in a week). Tour operators also sell places. For 2027, registration opens on Saturday 19 December 2026.
+  note: The 2027 marathon weekend is 30 and 31 October 2027. The race starts and finishes in the Olympic Stadium, passes under the Rijksmuseum and runs along the Amstel.
+  link: {label: 'TCS Amsterdam Marathon: registration', url: 'https://www.tcsamsterdammarathon.eu/registration', checked: '2026-11-19'}
+- id: athens-marathon
+  name: Athens Marathon. The Authentic
+  series: independent
+  place: Marathon to Athens
+  country: Greece
+  continent: europe
+  km: [42.2]
+  distances: Marathon (10K and 5K the same weekend)
+  terrain: [road]
+  format: single
+  month: [11]
+  entry: [open]
+  entry_note: Registration opens about six months before the race and closes when full or on 1 October at the latest. Runners who are not citizens or permanent residents of an EU country can enter only at the full registration level.
+  note: The race runs from the town of Marathon to the Panathenaic Stadium in Athens. Buses take runners from central Athens to the start. The 2026 race is on Sunday 8 November 2026.
+  link: {label: 'Athens Marathon. The Authentic: marathon race', url: 'https://www.athensauthenticmarathon.gr/en/c/agones-2-26/authentic-marathon-1/marathonios-dromos-33', checked: '2026-11-19'}
+- id: medoc-marathon
+  name: Marathon du Médoc
+  series: independent
+  place: Pauillac, among the Médoc vineyards near Bordeaux
+  country: France
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road, trail]
+  format: single
+  month: [9]
+  entry: [open, tour]
+  entry_note: Entry opens in March (for 2027, in March 2027), either race only or an all-inclusive package with accommodation. Runners must be 20 or over, and must show France's Health Prevention Pass (PPS), done online through the French athletics federation.
+  note: Each year has a fancy-dress theme, and the organisers say the race rewards the first and last finishers alike. The 41st race is on Saturday 4 September 2027, starting at 9.30 in Pauillac.
+  link: {label: 'Marathon du Médoc: registration', url: 'https://www.marathondumedoc.com/en/registration-global/', checked: '2026-11-19'}
+- id: jungfrau-marathon
+  name: Jungfrau-Marathon
+  series: independent
+  place: Interlaken to the Kleine Scheidegg, Bernese Oberland
+  country: Switzerland
+  continent: europe
+  km: [42.2]
+  distances: Marathon, mostly uphill
+  terrain: [mountain]
+  format: single
+  month: [9]
+  entry: [open]
+  entry_note: Online registration opens on Valentine's Day (for 2027, 14 February 2027 at 8am local time). The 4,000 places for 2026 sold out.
+  note: The 2027 race is on Saturday 11 September 2027. The course climbs about 1,800 m from Interlaken to the Kleine Scheidegg, with views of the Eiger, Mönch and Jungfrau.
+  link: {label: 'Jungfrau-Marathon: home and next dates', url: 'https://www.jungfrau-marathon.ch/en/', checked: '2026-11-19'}
+# ---------- USA ----------
+- id: big-sur-marathon
+  name: Big Sur International Marathon
+  series: independent
+  place: Big Sur to Carmel on Highway 1, California
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon (and shorter races the same morning)
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [ballot, tour]
+  entry_note: A two-week random drawing in late August and early September for the following April; general registration then sells out. Marathon Tours and Travel and other packages are listed on the race site. About 4,500 entrants, aged 16 and over.
+  note: Always the last Sunday in April; the 40th race is on Sunday 25 April 2027. The organisers call it a challenging course. The road reopens at 1pm, a cut-off of about six hours (13:45 a mile).
+  link: {label: 'Big Sur International Marathon: the marathon', url: 'https://www.bigsurmarathon.org/races/marathon/', checked: '2026-11-19'}
+- id: honolulu-marathon
+  name: Honolulu Marathon
+  series: independent
+  place: Honolulu, Hawaii
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon (10K and a mile the same weekend)
+  terrain: [road]
+  format: single
+  month: [12]
+  entry: [open]
+  entry_note: Anyone can enter; there is no qualifying time. Registration for the 2027 race opens on Monday 14 December 2026, and online entry closes in early December, with late entries at the expo.
+  note: There is no time limit, and the organisers say many people walk part or all of the course; the finish stays open until the last person is in. Always the second Sunday in December, starting at 5am.
+  link: {label: 'Honolulu Marathon: FAQs', url: 'https://www.honolulumarathon.org/key-information/faqs', checked: '2026-11-19'}
+- id: marine-corps-marathon-race
+  name: Marine Corps Marathon
+  series: independent
+  place: Arlington, Virginia, and Washington, DC
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [ballot]
+  entry_note: Most runners enter through the registration lottery in the spring. Finishers of the Marine Corps 17.75K in March get guaranteed entry; that race's registration opens on 1 January.
+  note: The 2027 race is on Sunday 31 October 2027. It pays no prize money, hence its nickname, The People's Marathon. Runners must hold a pace of 14 minutes a mile and pass the course checkpoints in time.
+  link: {label: 'Marine Corps Marathon: the race', url: 'https://www.marinemarathon.com/event/marine-corps-marathon/', checked: '2026-11-19'}
+# ---------- Asia ----------
+- id: great-wall-marathon
+  name: Great Wall Marathon
+  series: independent
+  place: Huangyaguan section of the Great Wall, a coach ride from Beijing
+  country: China
+  continent: asia
+  km: [42.2]
+  distances: Marathon (half marathon and 8.5 km fun run too)
+  terrain: [road, trail]
+  format: single
+  month: [5]
+  entry: [tour]
+  entry_note: International runners must book one of the organiser's tour packages (six or seven days from Beijing); registration closes in mid April, with a late fee after mid March.
+  note: The 2027 race is on 15 May 2027. The route includes 5,164 steps on the wall, on asphalt and gravel, and runners walk the wall section on an inspection day two days before.
+  link: {label: 'Great Wall Marathon: the race', url: 'https://great-wall-marathon.com/race', checked: '2026-11-19'}
+guides:
+- slug: how-to-get-a-place
+  title: How to get a place in a big marathon
+  short: Getting a place
+  seo_title: 'How to get into a big marathon: ballots, charity places and more'
+  description: The six ways into London, New York, Berlin and the other big marathons, from the ballot to charity places, qualifying times, tour operators and races you can simply enter.
+  standfirst: Missing out in the ballot is normal. Here are the other ways to a start line, with what each costs you in time, money and effort.
+  detail:
+  - h: The ballot is a long shot
+    p:
+    - For the 2027 London Marathon, 1,338,544 people applied in the public ballot, up 18% on the year before. London says applications from the UK passed a million for the first time. We could not find the number of ballot places on London's own pages, so the exact odds are unknown, but with about 100,000 runners across both days, most applicants miss out.
+    - Ballots elsewhere work the same way. Tokyo, Berlin, Chicago, New York, Sydney, Cape Town and, from 2027, Paris all draw places at random. Entering on the first day makes no difference; Paris and Sydney both say so.
+  - h: The six ways in
+    table:
+      head: [Way in, How it works, Examples]
+      rows:
+      - ['Ballot or lottery', 'Apply in the window and wait for the draw. Many are free to enter, and you pay only if picked.', 'London, Berlin, Tokyo, Paris, Sydney, Big Sur']
+      - ['Charity place', 'Charities buy guaranteed places and give them to runners who promise to raise a set sum.', 'London, Chicago, New York, Tokyo, Manchester, Cape Town']
+      - ['Qualifying time', 'Run fast enough for your age on a certified course in the qualifying window.', 'Boston (the only way in for most), London Good For Age, Chicago, New York']
+      - ['Travel package or tour operator', 'Official tour operators and organisers sell places bundled with a hotel or a whole trip.', 'London, Chicago, Amsterdam, Big Sur, Médoc; the Great Wall only this way']
+      - ['Open entry', 'Places go on sale and the fastest buyers get them. Popular races sell out within days.', 'Manchester, Edinburgh, Loch Ness, Amsterdam, Jungfrau, Honolulu']
+      - [Earn it, 'Run a set of the organiser''s other races, or one qualifying race, for a guaranteed place the next year.', 'New York (9+1), Marine Corps (the 17.75K), Chicago (Distance Series)']
+  - h: Charity places
+    p:
+    - A charity place is the surest way into a sold-out race if you are willing to fundraise. Each charity sets its own target and rules. Chicago says its charity runners must raise at least $2,500, and Tokyo's charity runners donate at least ¥100,000 or more if their charity asks.
+    - Apply early and to more than one charity. London still had a limited number of charity places after its ballot closed, and Manchester's charity places were the only way in once public entries sold out.
+  - h: Qualifying times
+    p:
+    - Boston is the race built on qualifying times. You need a standard for your age group and sex, and even then a place is not certain; for 2027, applicants had to be 5 minutes 17 seconds faster than their standard. Boston adjusts times run on courses with a net drop of more than 1,500 ft (457 m).
+    - London's Good For Age places are only for UK residents, with 6,000 a year (3,000 men and 3,000 women); if more apply, London reviews the times. Chicago and New York also offer guaranteed places for fast marathon times; New York does not accept half marathon times run outside its own races.
+  - h: Races you can simply enter
+    p:
+    - Some excellent marathons have no ballot at all. You need to be ready when entries open, because the popular ones go quickly. Manchester sold over 40,000 public places in ten days for 2027; Amsterdam's 32,000 marathon places for 2026 went in a week.
+    - Honolulu is the easiest big marathon to get into. Anyone can enter, there is no qualifying time and no time limit. The Athens Marathon, from the town of Marathon to the Panathenaic Stadium, opens about six months ahead and closes when full.
+  - h: Plan backwards from the date
+    list:
+    - Ballots close months ahead. London's closes in early May, a year before the race; Berlin's runs October to November; Chicago's runs in October; Tokyo's general entry is in August.
+    - Training for a first marathon takes months, so a spring race means training through the winter.
+    - Book flights and a hotel only after your place is confirmed, unless you choose a travel package that includes a place.
+  faq:
+  - q: What are my chances in the London Marathon ballot?
+    a: London's pages we checked do not give the number of ballot places. For 2027, 1,338,544 people applied, so most applicants miss out. Charity places, Good For Age (UK residents) and international tour operators are the other ways in.
+  - q: Which big marathons can I enter without a ballot?
+    a: Of the races in our finder, Manchester, Edinburgh, Loch Ness, Amsterdam, the Jungfrau-Marathon, Athens and Honolulu sell places direct, but the popular ones sell out quickly.
+  - q: How do I get into the Boston Marathon?
+    a: Most runners need a qualifying time for their age and sex, run on a certified course in the qualifying window, and then must be fast enough on the cut-off. For 2027 it was 5 minutes 17 seconds.
+  - q: Is a charity place worth it?
+    a: It is the surest way into a sold-out race, but you commit to raising a set sum, which can run to thousands (Chicago's minimum is $2,500). Read the charity's terms on what happens if you cannot run.
+  kit:
+  - name: Running shoes
+    why: the one thing worth spending on; a running shop can watch you run and suggest a fit
+    url: https://www.amazon.co.uk/s?k=running+shoes
+  - name: Running belt
+    why: holds a phone, gels and a card without bouncing; try it on long runs
+    url: https://www.amazon.co.uk/s?k=running+belt+phone
+  - name: Anti-chafe balm
+    why: for long runs; try it in training, not on the day
+    url: https://www.amazon.co.uk/s?k=anti+chafe+balm
+  sources:
+  - {label: 'London Marathon Events: record 1.33 million people apply for 2027', url: 'https://www.londonmarathonevents.co.uk/london-marathon/article/record-133-million-people-apply-2027-tcs-london-marathon', checked: '2026-11-19'}
+  - {label: 'London Marathon Events: FAQs (Good For Age)', url: 'https://www.londonmarathonevents.co.uk/london-marathon/faqs', checked: '2026-11-19'}
+  - {label: 'London Marathon Events: enter the ballot', url: 'https://www.londonmarathonevents.co.uk/ballot', checked: '2026-11-19'}
+  - {label: 'B.A.A.: qualify for the Boston Marathon', url: 'https://www.baa.org/races/boston-marathon/qualify/', checked: '2026-11-19'}
+  - {label: 'Chicago Marathon: event FAQs (charity minimum)', url: 'https://www.chicagomarathon.com/event-info/event-faqs/', checked: '2026-11-19'}
+  - {label: 'Tokyo Marathon 2027 Charity', url: 'https://www.marathon.tokyo/en/news/detail/news_20260415111128.html', checked: '2026-11-19'}
+  - {label: 'NYRR: marathon time qualifiers', url: 'https://www.nyrr.org/tcsnycmarathon/time-qualifiers', checked: '2026-11-19'}
+  - {label: 'Manchester Marathon: how to get a place in 2027', url: 'https://www.manchestermarathon.co.uk/news/how-to-get-a-place-in-the-2027-adidas-manchester-marathon/', checked: '2026-11-19'}
+  - {label: 'TCS Amsterdam Marathon 2026 sells out within one week', url: 'https://www.tcsamsterdammarathon.eu/tcs-amsterdam-marathon-2026-sells-out-within-one-week', checked: '2026-11-19'}
+  - {label: 'ASICS Marathon de Paris: FAQ', url: 'https://www.asicsmarathondeparis.com/en/faq', checked: '2026-11-19'}
+  - {label: 'Honolulu Marathon: FAQs - Extra', url: 'https://www.honolulumarathon.org/faqs-extra', checked: '2026-11-19'}
+- slug: generous-time-limits
+  title: Marathons you can take your time over
+  short: Generous time limits
+  seo_title: 'Marathons with no time limit or a generous cut-off'
+  description: Big marathons where walkers and slower runners are welcome, from Honolulu, which has no time limit, to Loch Ness, Manchester, Big Sur and the Marine Corps Marathon.
+  standfirst: You do not have to run all 26.2 miles. Here are big marathons whose own rules give you time to walk part of the way.
+  detail:
+  - h: What a cut-off means
+    p:
+    - Most marathons close the course after a set time, and some also set checkpoint times along the route. What happens to anyone behind it varies from race to race, so read the race's FAQ or race-day page before you enter.
+    - A six-hour cut-off means averaging about 13 minutes 45 seconds a mile (about 8 minutes 32 seconds a kilometre), the whole way. If you plan to walk much of it, pick a race with a longer limit or none.
+  - h: Cut-offs from the organisers' own pages
+    table:
+      head: [Race, Time limit, What the organisers say]
+      rows:
+      - ['Honolulu Marathon', 'None', 'The finish stays open until the last person is in. Many walk part or all of the course.']
+      - ['Loch Ness Marathon', 'Seven hours', 'The cut-off is 5pm for a 10am start.']
+      - ['Manchester Marathon', 'Six hours', 'All finishers should cross the line by 5pm.']
+      - ['Big Sur International Marathon', 'About six hours', 'The road reopens at 1pm, a pace of 13:45 a mile.']
+      - ['Marine Corps Marathon', 'A pace of 14 minutes a mile', 'Runners must also pass checkpoints ("gauntlets") in time.']
+  - h: Training to walk a marathon
+    p:
+    - Walking 26.2 miles is still a long day on your feet; at 15 minutes a mile, that is six and a half hours. Build up your longest walk gradually over months, as runners do, and practise eating and drinking on the move.
+    - Try your shoes, socks and anti-chafe balm on long training walks, never for the first time on race day.
+  faq:
+  - q: Is there a marathon with no time limit?
+    a: Yes. The Honolulu Marathon has no time limit; the finish stays open until the last person crosses, and the organisers say many people walk part or all of it.
+  - q: What pace is a six-hour marathon?
+    a: About 13 minutes 45 seconds a mile, or about 8 minutes 32 seconds a kilometre.
+  kit:
+  - name: Walking or running shoes with room for swelling
+    why: feet swell over a long day; try them on a long walk first
+    url: https://www.amazon.co.uk/s?k=walking+running+shoes+cushioned
+  - name: Blister plasters
+    why: carry a couple for long days; try them in training
+    url: https://www.amazon.co.uk/s?k=blister+plasters
+  sources:
+  - {label: 'Honolulu Marathon: FAQs - Extra', url: 'https://www.honolulumarathon.org/faqs-extra', checked: '2026-11-19'}
+  - {label: 'Honolulu Marathon: what to expect', url: 'https://www.honolulumarathon.org/key-information/what-to-expect', checked: '2026-11-19'}
+  - {label: 'Loch Ness Marathon: the race', url: 'https://lochnessmarathon.com/event/loch-ness-marathon/', checked: '2026-11-19'}
+  - {label: 'Manchester Marathon: Recharge Lounge FAQs', url: 'https://www.manchestermarathon.co.uk/recharge-lounge-faqs/', checked: '2026-11-19'}
+  - {label: 'Big Sur International Marathon: home', url: 'https://www.bigsurmarathon.org/', checked: '2026-11-19'}
+  - {label: 'Marine Corps Marathon: the race', url: 'https://www.marinemarathon.com/event/marine-corps-marathon/', checked: '2026-11-19'}

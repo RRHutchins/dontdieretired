@@ -19275,6 +19275,7 @@
   safety: This is a long march in open desert, so carry water, protect yourself from the sun and use the aid stations.
 - id: marine-corps-marathon
   plan_event: marathon
+  hub: marathons
   title: Run the Marine Corps Marathon
   category: move
   kind: event
@@ -52543,6 +52544,57 @@
   related:
   - parkrun
   - marine-corps-marathon
+
+- id: run-a-marathon
+  title: Run a marathon
+  category: move
+  kind: event
+  effort: demanding
+  cost: mid
+  time: months
+  setting: outdoors
+  company: either
+  regions:
+  - anywhere
+  hub: marathons
+  plan_event: marathon
+  why: A marathon is 26.2 miles (42.195 km), and the big city races draw tens of thousands of runners and walkers. Some sell places to whoever enters first, others draw them by ballot, and charities and travel companies hold places for the rest.
+  start:
+  - Pick a race in our marathon finder, filtering by region, month and how you want to get in, and note when its entries or ballot open.
+  - Apply for the ballot, or line up a charity place or a race with open entry as your back-up.
+  - Train for several months, building up your longest run or walk gradually, and try your race-day shoes and food in training.
+  links:
+  - label: 'London Marathon Events: how to enter the TCS London Marathon'
+    url: https://www.londonmarathonevents.co.uk/london-marathon/faqs
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Loch Ness Marathon: the race (direct entry, no ballot)'
+    url: https://lochnessmarathon.com/event/loch-ness-marathon/
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Honolulu Marathon: open to all, no time limit'
+    url: https://www.honolulumarathon.org/faqs-extra
+    region: us
+    checked: '2026-11-19'
+  - label: 'Chicago Marathon: apply'
+    url: https://www.chicagomarathon.com/apply/
+    region: us
+    checked: '2026-11-19'
+  safety: A marathon puts heavy strain on the heart, muscles and feet. Build up over months, follow the race's medical advice, and check with your GP (family doctor) before you start training if you have a heart condition or another health worry.
+  kit:
+  - name: Running shoes
+    why: the one thing worth spending on; a running shop can watch you run and suggest a fit
+    url: https://www.amazon.co.uk/s?k=running+shoes
+  - name: Running belt
+    why: holds a phone, gels and a card without bouncing
+    url: https://www.amazon.co.uk/s?k=running+belt+phone
+  - name: Anti-chafe balm
+    why: for long runs; try it in training, not on the day
+    url: https://www.amazon.co.uk/s?k=anti+chafe+balm
+  related:
+  - parkrun
+  - marine-corps-marathon
+  - run-an-ultramarathon
 
 - id: learn-astrophotography
   title: Learn astrophotography
