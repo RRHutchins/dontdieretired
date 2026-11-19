@@ -72,7 +72,7 @@ If that is you: you are not on your own, and you are not expected to know the le
 
 ## The wider picture
 
-Family is one strand of a connected life after 50, but a life with only that strand is fragile. Our [complete guide to friendship and community after 50](/connect/friendship-and-community-after-50/) covers the rest, and [making new friends without the awkwardness](/connect/how-to-make-new-friends-after-50/) is where to start if the grandchildren are the only people you speak to in a week. If you would like it laid out week by week, our [Reconnect course](/shop/#reconnect) does that.
+Family is one strand of a connected life after 50, but a life with only that strand is fragile. Our [complete guide to friendship and community after 50](/connect/friendship-and-community-after-50/) covers the rest, and [making new friends without the awkwardness](/connect/how-to-make-new-friends-after-50/) is where to start if the grandchildren are the only people you speak to in a week.
 
 ## This week
 

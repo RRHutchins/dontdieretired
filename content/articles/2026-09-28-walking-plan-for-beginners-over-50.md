@@ -77,8 +77,6 @@ In England, [Ramblers Wellbeing Walks](https://www.ramblers.org.uk/go-walking/we
 
 In the US, AARP's [Create the Good guide](https://createthegood.aarp.org/volunteer-guides/start-walking-group.html) suggests partnering with "senior centers, YMCAs, community centers" to find or start a group, and recruiting through "libraries, gyms, and places of worship". Their starting suggestion is the same as ours: 30-minute walks, several times a week, with "family, friends, co-workers, and neighbors". If there is no group nearby, the guide walks you through starting one.
 
-If you would rather have the first month of this plan, and the strength and balance work that goes with it, printed out and ticked off day by day, [The 30-Day Restart](/shop/#restart30) is that.
-
 ## After week eight
 
 Keep the five 30-minute walks and add two short strength sessions a week, which every guideline recommends and which walking alone does not provide. Our [strength training guide](/move/strength-training-after-50-why-and-how/) shows you how, at home, with no kit.

@@ -75,7 +75,7 @@ That is not a recommendation to wait; it depends on your health, earnings, a spo
 
 ## Why doing this at 50-something matters
 
-The fixable things are only fixable with time: the UK's six-year deadline means a gap from your late forties is still open, and a US earnings error is easier to prove while you can find the paperwork. Knowing roughly what the state will pay, and from when, also makes the question for your other pensions smaller and clearer. Our [complete guide to money after 50](/money/money-after-50-the-complete-guide/) shows how that number fits on your one-page picture, and the [Money Reset workbook](/shop/#moneyreset) has a page for this check. The next job is usually rounding up the pots you have forgotten; our guide to [finding lost pensions and retirement accounts](/money/finding-lost-pensions-and-retirement-accounts/) takes you through it.
+The fixable things are only fixable with time: the UK's six-year deadline means a gap from your late forties is still open, and a US earnings error is easier to prove while you can find the paperwork. Knowing roughly what the state will pay, and from when, also makes the question for your other pensions smaller and clearer. Our [complete guide to money after 50](/money/money-after-50-the-complete-guide/) shows how that number fits on your one-page picture. The next job is usually rounding up the pots you have forgotten; our guide to [finding lost pensions and retirement accounts](/money/finding-lost-pensions-and-retirement-accounts/) takes you through it.
 
 ## This week
 

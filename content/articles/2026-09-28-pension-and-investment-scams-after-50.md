@@ -88,7 +88,7 @@ In the UK, MoneyHelper also runs a financial crimes support line on 0800 015 440
 
 Decide now, in a calm moment, that you will never move pension or investment money on the strength of an unexpected contact, and tell one other person so they can hold you to it. Scams work by creating a rush; a rule made in advance removes it.
 
-Our guide to [finding lost pensions and retirement accounts](/money/finding-lost-pensions-and-retirement-accounts/) explains why "consolidation" pitches are a favourite hook, and our [complete guide to money after 50](/money/money-after-50-the-complete-guide/) puts the one rule in context. If you want your whole money picture in one place, so a scammer's "opportunity" has something real to be measured against, the [Money Reset workbook](/shop/#moneyreset) is built for that.
+Our guide to [finding lost pensions and retirement accounts](/money/finding-lost-pensions-and-retirement-accounts/) explains why "consolidation" pitches are a favourite hook, and our [complete guide to money after 50](/money/money-after-50-the-complete-guide/) puts the one rule in context.
 
 ## This week
 

@@ -127,8 +127,6 @@ You do not have to do any of this alone.
 
 **US:** Senior Planet from AARP runs free interactive online classes — roughly 50 a week when AARP wrote about it, including cybersecurity and Zoom hosting — with no membership required. Most public libraries also run free classes or one-to-one sessions; ask at the desk.
 
-If you would rather have this as a single printable workbook — a checklist for each setting, a scam-spotting card for the fridge and a week-by-week plan — our [Tech Confident guide](/shop/#techconfident) lays it all out.
-
 ## Your first week
 
 - **Monday:** Text size up one notch. Add one emergency contact.

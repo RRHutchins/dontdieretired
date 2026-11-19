@@ -99,8 +99,6 @@ A slow trip is, in many ways, the accessible trip: one base, short distances, no
 - **Official advice.** The FCDO's foreign travel advice pages cover entry requirements, safety and health for 226 countries and territories, and you can sign up for email alerts for the country you are visiting.
 - **Register.** US citizens can enrol in the free Smart Traveler Enrollment Program (STEP) to get alerts from the local embassy.
 
-If you want all of this laid out as worksheets — choosing the kind of trip, a budget template, an insurance checklist and a twelve-week countdown — our [Slow Travel After 50 planning workbook](/shop/#slowtravel) is exactly that.
-
 ## This week
 
 - Check your passport dates against the rules for your likely destination.

@@ -73,7 +73,7 @@ The State Department repeats it for travellers over 65: Medicare and Medicaid do
 - **UK:** MoneyHelper's guides and its specialist travel insurance directory; Which? for independent policy reviews (subscription).
 - **US:** the State Department's travel insurance page and the CDC's Travelers' Health insurance page, both of which explain what to look for without endorsing providers.
 
-If you would rather work through it as a checklist — conditions listed, trip length, activities, repatriation, policy number saved — the insurance worksheet in our [Slow Travel After 50 workbook](/shop/#slowtravel) covers it. Our [complete guide to travel after 50](/travel/travel-after-50-the-complete-guide/) puts insurance in the wider picture, and [long stays and house-sitting](/travel/long-stays-and-house-sitting-after-50/) covers the trip-length problem.
+Our [complete guide to travel after 50](/travel/travel-after-50-the-complete-guide/) puts insurance in the wider picture, and [long stays and house-sitting](/travel/long-stays-and-house-sitting-after-50/) covers the trip-length problem.
 
 ## This week
 

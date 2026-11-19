@@ -65,7 +65,7 @@ The practical version: seven to eight hours, and a two-minute review before bed 
 
 ## What about brain-training apps?
 
-They train the task. The Alzheimer's Society's summary is that brain training "can make you better at specific tasks, but does not improve thinking in general", with no strong evidence it reduces dementia risk. The five techniques above are different in kind: ways of learning *whatever you want to learn*. If you want them built into an eight-week habit, our [Sharp course](/shop/#sharp) does that.
+They train the task. The Alzheimer's Society's summary is that brain training "can make you better at specific tasks, but does not improve thinking in general", with no strong evidence it reduces dementia risk. The five techniques above are different in kind: ways of learning *whatever you want to learn*.
 
 ## This week
 

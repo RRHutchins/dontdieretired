@@ -73,7 +73,7 @@ You do not need new recipes. You need the same meals with one ingredient changed
 
 A higher-fibre breakfast, wholemeal bread, skins left on, a tin of pulses in the week's main dish, and a glass of water with each meal. Added one at a time over a month, that is the difference between 18g and 30g, and it costs nothing.
 
-If you would rather have the swaps scheduled — which week to change the bread, which week to add the beans — our [Eat Strong four-week kitchen planner](/shop/#eatstrong) gives fibre a week of its own. For the wider picture, start with [Eating well after 50: the complete, no-fad guide](/eat/eating-well-after-50-the-complete-guide/).
+For the wider picture, start with [Eating well after 50: the complete, no-fad guide](/eat/eating-well-after-50-the-complete-guide/).
 
 ## This week
 

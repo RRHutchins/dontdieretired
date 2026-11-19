@@ -47,8 +47,6 @@ Before pensions, before downsizing, before anything, you need two simple lists.
 
 Do it in pencil on paper if a spreadsheet makes you feel sick. The point is not precision. The point is that for the first time you can see all of it at once, and most people are surprised — sometimes pleasantly.
 
-If you want this done in a structured way over a month, with a page for each of these steps, that is exactly what [The Money Reset](/shop/#moneyreset) workbook is for.
-
 ## Your state pension: check the real number
 
 For most people over 50, the biggest single source of retirement income is the state.

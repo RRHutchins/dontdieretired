@@ -70,7 +70,7 @@ Before moving any UK pension, check:
 
 The same logic applies in the US to rolling an old 401(k) into an IRA: compare fees, check what you would give up, and be wary of anyone enthusiastic before they have seen the old plan's paperwork.
 
-Consolidation is also a moment scammers watch for; our guide to [pension and investment scams aimed at over-50s](/money/pension-and-investment-scams-after-50/) covers the "free pension review" trick. And once every pot is listed with a value, you have most of the one-page picture in our [complete guide to money after 50](/money/money-after-50-the-complete-guide/). The [Money Reset workbook](/shop/#moneyreset) has a printed page for exactly this.
+Consolidation is also a moment scammers watch for; our guide to [pension and investment scams aimed at over-50s](/money/pension-and-investment-scams-after-50/) covers the "free pension review" trick. And once every pot is listed with a value, you have most of the one-page picture in our [complete guide to money after 50](/money/money-after-50-the-complete-guide/).
 
 ## This week
 

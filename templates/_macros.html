@@ -55,7 +55,7 @@
 {% endif %}
 {% endmacro %}
 
-{% macro product_promo(p) %}
+{% macro product_promo(p) %}{% if p %}
 <aside class="promo">
   <img class="product-img" src="/static/img/products/{{ p.id }}.jpg" alt="" width="480" height="480" loading="lazy">
   <p class="kicker">From our shop</p>
@@ -64,7 +64,7 @@
   {% if p.id != 'bundle' %}<p class="credit-note">Your {{ p.price }} counts in full if you upgrade to the bundle later.</p>{% endif %}
   {{ buy_button(p, 'Get it') }}
 </aside>
-{% endmacro %}
+{% endif %}{% endmacro %}
 
 {% macro buy_button(p, label='Buy') %}
 {% if cfg.products.store_live %}

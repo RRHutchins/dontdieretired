@@ -84,7 +84,7 @@ In week one this means saying words aloud to the kettle. By week three, a two-mi
 | 9–10 | Flashcards; 10 min speaking practice — describe pictures, narrate the news | Twenty-minute conversation, mostly in the language |
 | 11–12 | Flashcards; 10 min of whatever you were worst at | Half an hour with a native speaker; plan the next 12 weeks |
 
-The flashcard half never changes. The other half rotates through listening, writing, reading and speaking so you never spend a month on one skill. If you would like this structure with the habit-building side handled, our [Sharp course](/shop/#sharp) is an eight-week version built on the same methods.
+The flashcard half never changes. The other half rotates through listening, writing, reading and speaking so you never spend a month on one skill.
 
 ## This week
 

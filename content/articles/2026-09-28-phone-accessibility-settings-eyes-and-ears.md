@@ -73,7 +73,7 @@ Modern hearing aids can connect to a phone like wireless headphones, so calls an
 
 Two habits make this stick. Use the magnifier shortcut a few times in the first week, or you will forget it exists. And when a friend complains they cannot read their phone, show them the text-size slider — thirty seconds, and the most useful thing you will do for them all month.
 
-For the rest of the phone, start with [Tech confidence after 50: the complete guide](/tech/tech-confidence-after-50-the-complete-guide/). Bigger text also makes dodgy messages easier to spot — [How to spot a scam text, email or call](/tech/how-to-spot-a-scam-text-email-or-call/) shows what to look for, and our [Tech Confident scam-proof guide](/shop/#techconfident) turns it into a printable checklist for beside the phone.
+For the rest of the phone, start with [Tech confidence after 50: the complete guide](/tech/tech-confidence-after-50-the-complete-guide/). Bigger text also makes dodgy messages easier to spot — [How to spot a scam text, email or call](/tech/how-to-spot-a-scam-text-email-or-call/) shows what to look for.
 
 ## This week
 

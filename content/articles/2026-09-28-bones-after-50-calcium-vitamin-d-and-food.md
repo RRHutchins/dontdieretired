@@ -83,7 +83,7 @@ The catch is the darker half of the year, and age: the NIH notes that "clouds, s
 
 Calcium from food at every meal, daylight when the season allows, and the autumn-and-winter guidance discussed with your GP. Bones also respond to load — the strength work in our Move guides is the other half of the story.
 
-If you want it built into a week of meals rather than bolted on, our [Eat Strong four-week kitchen planner](/shop/#eatstrong) gives bones a week of its own alongside protein and fibre. For the wider picture start with [Eating well after 50: the complete, no-fad guide](/eat/eating-well-after-50-the-complete-guide/); for the muscle side see [Protein after 50](/eat/protein-after-50-how-much-and-where-from/).
+For the wider picture start with [Eating well after 50: the complete, no-fad guide](/eat/eating-well-after-50-the-complete-guide/); for the muscle side see [Protein after 50](/eat/protein-after-50-how-much-and-where-from/).
 
 ## This week
 

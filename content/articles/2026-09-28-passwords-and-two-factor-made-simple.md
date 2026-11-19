@@ -74,4 +74,4 @@ What to do next is mechanical: change the password on the breached site, and any
 
 Three tasks, none of which needs a memory for passwords: give email its own three-random-words password; let your phone save the others; turn on two-step verification for email and banking, and write down the backup codes.
 
-For where this fits alongside settings, scams and getting help, start with [the complete guide to tech confidence after 50](/tech/tech-confidence-after-50-the-complete-guide/). For the emails and calls that try to talk a password out of you, see [How to spot a scam text, email or call](/tech/how-to-spot-a-scam-text-email-or-call/). And if you would like a one-page worksheet for recording which accounts have two-step verification on and where the backup codes live, our [Tech Confident guide](/shop/#techconfident) includes one.
+For where this fits alongside settings, scams and getting help, start with [the complete guide to tech confidence after 50](/tech/tech-confidence-after-50-the-complete-guide/). For the emails and calls that try to talk a password out of you, see [How to spot a scam text, email or call](/tech/how-to-spot-a-scam-text-email-or-call/).

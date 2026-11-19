@@ -71,7 +71,7 @@ A signature is not a guarantee, but it is a public promise you can politely quot
 
 Not every vacancy is advertised, and at 50-plus your network of former colleagues is your biggest asset. Tell former colleagues, clearly, what you are looking for. If you have been out of work for a while, our article on [returning to work after a break](/earn/returning-to-work-after-a-break/) covers how to talk about the gap.
 
-And if the search itself makes you wonder whether you would rather work for yourself, that is a legitimate answer too. The [Second Act 90-day venture workbook](/shop/#secondact) walks through testing that idea properly before you leave the job market.
+And if the search itself makes you wonder whether you would rather work for yourself, that is a legitimate answer too.
 
 ## This week
 

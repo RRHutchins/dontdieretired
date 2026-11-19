@@ -118,6 +118,8 @@ Every Sunday, compare this week with the last four. Act on triggers:
 - **Any article shared > 50 times** → make a video of it and a follow-up article.
 
 ## 6. Digital products (own IP, ~90% margin)
+**Paid workbooks withdrawn (Robin, 19 Nov 2026).** None of the ten workbooks or the bundle had sold since they went live on 3 Oct, and a review found them sound and sourced but text-heavy, with no drawings in the exercise plans, age-led titles ("over 50", "Strong at 60") that clash with §1, and overlap with the free guides. Robin unpublished them on Gumroad (not deleted). On the site: `content/products.yaml` `products: []` (records kept under `withdrawn:`), `store_live: false`, every "our [X workbook](/shop/#…)" plug removed from 44 articles, `/shop/` is now puzzle and quiz books plus kit, product promos render nothing and plan pages show the kit box instead, the app's 30-Day Restart is free in full, and `/editorial-policy/` says the workbooks were withdrawn. **Do not link to, promote or quote prices for the workbooks anywhere** (articles, newsletters, social, app) until Robin brings them back. Idea on the table, not decided: reissue the best two or three (strength, money, second act) as a Planner Plus members' bonus, retitled without age and with drawings for the exercises. The free 7-Day Restart Plan stays as the newsletter sign-up gift.
+
 Built: `products/content/*.json` → `node products/build_product.js content/X.json` → docx → PDF (LibreOffice). Final PDFs in `products/pdf/`; the free plan is also served at `/static/downloads/7-Day-Restart-Plan.pdf`. To revise a product, edit its JSON and rebuild. Prices (shown inc. UK VAT; enter price ÷ 1.2 in Gumroad, which adds VAT at checkout): £5 Restart30/Reconnect/Tech Confident; £7 Eat Strong/Sharp/Slow Travel; £9 Strong at 60/Money Reset; £12 Second Act; £29 bundle (£66 separately). Upgrade codes: fixed amount off the bundle = product price ÷ 1.2; values in products/upgrade.json. Never quote a product price in an article without checking content/products.yaml. Also the free lead magnet: 7-Day Restart Plan. Upload to Gumroad, paste the product URLs into `content/products.yaml`.
 
 ### 6i. Product sources, versions and reviews (set 7 Oct 2026)
@@ -137,7 +139,7 @@ Large-print puzzle books for Amazon KDP are made by `books/` (see `books/README.
 
 ## 6a. Categories and sales focus (set 28 Sept 2026)
 The site's priority is scaling DDR and increasing sales. Depth comes from the categories in site.yaml, each a hub with: one pillar "start here" guide, 5+ sourced evergreen guides (docs/EVERGREEN_BRIEF.md), at least one own product, and honest affiliate picks. Categories: move, eat, think, money, earn, connect, travel, tech, ai, explore, curious (§6o), stories (site.yaml).
-- Weekly, add one evergreen guide to whichever category has the fewest guides, linking its pillar and its product once.
+- Weekly, add one evergreen guide to whichever category has the fewest guides, linking its pillar once (no product links: the paid workbooks were withdrawn on 19 Nov 2026).
 - Every product in content/products.yaml must have a category and a PDF in products/pdf/.
 - `products.store_live` in site.yaml: false = buttons say "Notify me" and go to the newsletter (the Gumroad store does not exist yet). Set true only once every product is live on Gumroad at its URL (permalink = product id).
 - Honesty: no invented readers, testimonials, sales counts, "most popular" labels or backdated articles. Affiliate "why" lines describe what the item is for, never claims about readers.

@@ -99,7 +99,7 @@ Breakfast is where most people over 50 have the biggest gap and the easiest win.
 
 ## Bringing it together
 
-Protein at every meal, a mix of animal and plant sources, and a rough daily range from your body weight. That is the whole strategy. If you would like it planned out — a protein-anchored breakfast, lunch and dinner for four weeks, with shopping lists — our [Eat Strong kitchen planner](/shop/#eatstrong) does that.
+Protein at every meal, a mix of animal and plant sources, and a rough daily range from your body weight. That is the whole strategy.
 
 For the bigger picture start with [Eating well after 50: the complete, no-fad guide](/eat/eating-well-after-50-the-complete-guide/); for the kitchen side see [Cooking for one (or two) without the waste or the boredom](/eat/cooking-for-one-after-50/).
 

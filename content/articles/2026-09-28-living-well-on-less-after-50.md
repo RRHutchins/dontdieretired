@@ -69,7 +69,7 @@ The other leaks are less official but just as real: forgotten subscriptions, the
 
 Living well on less is mostly attention, not deprivation: know your monthly number, check once a year that you are claiming what you should, and treat every renewal letter as an invitation to shop around. None of it is clever. All of it compounds.
 
-For the bigger picture see our [complete guide to money after 50](/money/money-after-50-the-complete-guide/); if the house itself is the question, our guide to [downsizing and releasing money from your home](/money/downsizing-your-home-after-50/) covers the real costs. And if you would like these three steps laid out over a month, with a page for each, that is what [The Money Reset](/shop/#moneyreset) workbook does.
+For the bigger picture see our [complete guide to money after 50](/money/money-after-50-the-complete-guide/); if the house itself is the question, our guide to [downsizing and releasing money from your home](/money/downsizing-your-home-after-50/) covers the real costs.
 
 ## This week
 

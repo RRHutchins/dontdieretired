@@ -68,7 +68,7 @@ The guidelines' phrase "building up gradually from current levels" is the whole 
 
 The NHS asks you to "speak to a GP first if you have not exercised for some time, or if you have medical conditions or concerns"; that applies here, especially if you have a heart condition or a joint that is already sore. The CDC's note for arthritis is worth keeping: pain from activity "should get better" over time, and if it does not, ask your health-care provider. This is general information, not medical advice.
 
-Remember too that neither swimming nor cycling loads your bones the way walking does, so pair them with two short strength sessions a week. If you want that side planned for you, [Strong at 60](/shop/#strong60) is our 12-week beginner strength plan and sits nicely alongside either.
+Remember too that neither swimming nor cycling loads your bones the way walking does, so pair them with two short strength sessions a week.
 
 ## This week
 

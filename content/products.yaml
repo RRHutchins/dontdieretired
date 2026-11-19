@@ -2,7 +2,12 @@
 # Prices shown INCLUDE UK VAT. Enter price/1.2 in Gumroad (it adds VAT at checkout).
 # URLs point at the Gumroad store; each product must be created there with the matching permalink (the id).
 # PDFs live in products/pdf/.
-products:
+# 19 Nov 2026 (Robin): all ten paid workbooks and the bundle were withdrawn from sale (none had sold since launch on
+# 3 Oct; unpublished on Gumroad, not deleted). The live list is empty, so no Buy buttons, promos or shop sections show.
+# The records are kept under `withdrawn:` (nothing reads it) for a later reissue, e.g. as a Planner Plus members' bonus.
+products: []
+
+withdrawn:
   - id: restart30
     name: "The 30-Day Restart"
     kind: Challenge

@@ -76,7 +76,7 @@ And if someone later rings offering to recover your money for a fee, run the FCA
 
 Hang up and ring back on a number you found yourself. Never move money, share a code or install software because a caller told you to. Read the payee name check before you confirm. If money has gone, ring the bank first and report second. Scams depend on speed and secrecy, and you are now giving them neither.
 
-Start with [Tech confidence after 50: the complete guide](/tech/tech-confidence-after-50-the-complete-guide/), and for catching the message before it reaches your account, [How to spot a scam text, email or call](/tech/how-to-spot-a-scam-text-email-or-call/). If you want all of this as a printable checklist for beside the phone, our [Tech Confident scam-proof guide](/shop/#techconfident) is that checklist.
+Start with [Tech confidence after 50: the complete guide](/tech/tech-confidence-after-50-the-complete-guide/), and for catching the message before it reaches your account, [How to spot a scam text, email or call](/tech/how-to-spot-a-scam-text-email-or-call/).
 
 ## This week
 

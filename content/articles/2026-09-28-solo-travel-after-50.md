@@ -72,8 +72,6 @@ For a first solo trip, choose somewhere with someone on the desk: an aparthotel,
 
 MoneyHelper's advice is to buy travel insurance as soon as you book, so that cancellation cover starts straight away, and it suggests medical cover of at least £1 million in Europe and £2 million elsewhere. Solo travellers should also check the policy covers being brought home, because there is no companion to organise it. Our [travel insurance after 50](/travel/travel-insurance-after-50/) article has the full picture on declaring conditions.
 
-If you want the solo-travel checklist, the check-in plan and the twelve-week countdown on paper, our [Slow Travel After 50 workbook](/shop/#slowtravel) has a section written specifically for going alone.
-
 ## This week
 
 - Choose your check-in person and agree the rhythm.

@@ -86,7 +86,7 @@ Have a word with your GP or pharmacist if:
 - You have unexplained tiredness, confusion or repeated urinary infections — the BDA lists these as possible signs of dehydration in older adults.
 - You are drinking more alcohol than you meant to, or the drink-free days are harder than expected. That is a common conversation, not an embarrassing one.
 
-For the full picture, start with [Eating well after 50: the complete, no-fad guide](/eat/eating-well-after-50-the-complete-guide/). If you would like fluids and drink-free days planned in alongside your meals, the [Eat Strong four-week kitchen planner](/shop/#eatstrong) builds them into each day. For the food side, see [Cooking for one (or two) without the waste or the boredom](/eat/cooking-for-one-after-50/).
+For the full picture, start with [Eating well after 50: the complete, no-fad guide](/eat/eating-well-after-50-the-complete-guide/). For the food side, see [Cooking for one (or two) without the waste or the boredom](/eat/cooking-for-one-after-50/).
 
 ## This week
 

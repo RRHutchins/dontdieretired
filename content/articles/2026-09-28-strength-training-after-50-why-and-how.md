@@ -80,8 +80,6 @@ Muscle grows in response to a demand slightly bigger than last time. Every fortn
 
 Change one at a time. If a session feels much harder than the last, go back a step. Write down what you did; in six weeks you will not believe where you started.
 
-If you would like this laid out week by week, with the counts and progression decided for you, [Strong at 60](/shop/#strong60) is a 12-week beginner plan built on exactly these six movements.
-
 ## Strength and everything else
 
 Strength is not instead of walking. Walking looks after your heart and lungs; strength looks after the muscle that gets you up the stairs and off the floor. Add a couple of minutes of [balance practice](/move/balance-exercises-to-prevent-falls/) and you have the whole recipe the guidelines ask for.

@@ -69,4 +69,4 @@ A short course fills the most obvious gap and gives the CV a recent date that is
 
 Rewrite the top of the CV, write your one sentence about the break, book a practice interview with a friend, and enquire about one course. The return is a project, not a leap, and projects get done a task at a time.
 
-If what you really want is not to return to employment but to build something of your own, our [complete guide to working after 50](/earn/working-after-50-the-complete-guide/) lays out the options, and [starting a business after 50](/earn/starting-a-business-after-50/) shows how to test one cheaply. For that route, our *Second Act* workbook takes an idea to its first paying customer in 90 days — it is in [the shop](/shop/#secondact).
+If what you really want is not to return to employment but to build something of your own, our [complete guide to working after 50](/earn/working-after-50-the-complete-guide/) lays out the options, and [starting a business after 50](/earn/starting-a-business-after-50/) shows how to test one cheaply.

@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import card, product_promo, share_button %}
+{% extends "base.html" %}{% from "_macros.html" import affiliate_box, card, product_promo, share_button %}
 {% block title %}{{ plan.title | seotitle }}{% endblock %}
 {% block description %}{{ plan.summary | metadesc }}{% endblock %}
 {% block ogimage %}{{ a.image }}{% endblock %}
@@ -18,7 +18,11 @@
 </article>
 <aside class="sidebar">
   {% set prod = (products.products | selectattr('category', 'equalto', a.category) | list + products.products) | first %}
-  {{ product_promo(prod) }}
+  {% if prod %}{{ product_promo(prod) }}{% else %}
+  {# no paid workbooks since 19 Nov 2026: the sidebar shows the same kit box as the story #}
+  {% set picks = products.affiliate_picks | selectattr('category', 'equalto', a.category) | list %}
+  {% if picks|length < 3 and a.category != 'curious' %}{% set picks = picks + (products.affiliate_picks | selectattr('category', 'equalto', 'move') | list) %}{% endif %}
+  {{ affiliate_box(picks[:4]) }}{% endif %}
 </aside>
 </div>
 {% endblock %}

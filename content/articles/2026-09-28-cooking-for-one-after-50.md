@@ -81,7 +81,7 @@ The fix is a standing list of your ten or fifteen staples, kept where you will s
 
 Food is better with company. If you live alone, batch-cooking makes it easy to invite someone: you have made a big pot anyway. Take a portion to a neighbour. Set up a rotating supper with two or three friends, each hosting once a month. Look for a community lunch club, a café with a fixed-price weekday lunch, or a cookery class at the local college. If you are a carer, a shared meal is one of the few things that is good for both of you at once.
 
-If you would like all of this — batch days, component lists, staple shopping lists and a month of assembled meals — set out week by week, our [Eat Strong kitchen planner](/shop/#eatstrong) does exactly that. For the nutrition behind it, start with [Eating well after 50: the complete, no-fad guide](/eat/eating-well-after-50-the-complete-guide/).
+For the nutrition behind it, start with [Eating well after 50: the complete, no-fad guide](/eat/eating-well-after-50-the-complete-guide/).
 
 ## This week
 

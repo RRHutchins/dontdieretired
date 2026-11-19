@@ -77,4 +77,4 @@ Make sure the photos exist somewhere other than your phone. On an iPhone, Apple'
 
 Propose the standing call. Make the test call. Start the album. The technology is the easy part; the habit is the thing worth building.
 
-For settings and safety, start with [the complete guide to tech confidence after 50](/tech/tech-confidence-after-50-the-complete-guide/); and since "Hi Mum, new number" arrives in the same chat as the grandchildren's photos, read [How to spot a scam text, email or call](/tech/how-to-spot-a-scam-text-email-or-call/). A printable set-up checklist for calls, albums and a photo frame is in our [Tech Confident guide](/shop/#techconfident).
+For settings and safety, start with [the complete guide to tech confidence after 50](/tech/tech-confidence-after-50-the-complete-guide/); and since "Hi Mum, new number" arrives in the same chat as the grandchildren's photos, read [How to spot a scam text, email or call](/tech/how-to-spot-a-scam-text-email-or-call/).

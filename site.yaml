@@ -77,7 +77,7 @@ newsletter:
 products:
   platform: "gumroad"                        # gumroad | lemonsqueezy | payhip
   store_url: "https://dontdieretired.gumroad.com"
-  store_live: true                           # all ten products verified live on Gumroad at VAT-exclusive prices, 3 Oct 2026. Set false to show "Notify me" instead of Buy
+  store_live: false                          # 19 Nov 2026: paid workbooks withdrawn from sale (content/products.yaml `withdrawn:`); unpublished on Gumroad
 
 books:
   # Printed puzzle books on Amazon KDP (RUNBOOK §6c, §6s). A book appears on the site only once it has a real Amazon link here.

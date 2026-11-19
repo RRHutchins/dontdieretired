@@ -115,8 +115,7 @@
         <div class="sw">${p.days.length}</div>
         <div style="flex:1"><span class="tag ${p.free ? 'free' : ''}">${p.free ? 'Free' : S.unlocked[p.id] ? 'Unlocked' : `${p.open_days} days free`}</span>
           <h3 style="margin:.3em 0 .1em">${esc(p.title)}</h3><p class="muted">${esc(p.subtitle)}</p>
-          <div class="bar-prog"><i style="width:${Math.round(100 * n / p.days.length)}%"></i></div></div></a>`; }).join('')}
-    <div class="card"><p class="kick">Coming to the app</p><h3>Strong at 60 · Eat Strong · Sharp · The Money Reset · Second Act · Reconnect · Slow Travel · Tech Confident</h3><p class="muted">Every plan in our shop, interactive, with trackers that fill themselves in. Already bought one? It's in your email as a PDF.</p><a class="btn ghost small" href="/shop/">See the shop</a></div>`;
+          <div class="bar-prog"><i style="width:${Math.round(100 * n / p.days.length)}%"></i></div></div></a>`; }).join('')}`;
   }
 
   function PlanView(id) {

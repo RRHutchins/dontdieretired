@@ -59,8 +59,6 @@ The whole set takes under five minutes. One or two of them daily is worth more t
 
 If you would rather learn balance from a person than a web page, tai chi is the obvious class. It is slow, done standing, every movement is a controlled shift of weight from one leg to the other, and nobody is competing. The WHO names tai chi specifically among the approaches that prevent falls in older people, and beginners' classes are common in community centres, leisure centres and church halls in both the UK and the US. Yoga, pilates and many chair-based classes build balance too.
 
-If you want balance built into a month of short daily sessions alongside gentle strength and walking, [The 30-Day Restart](/shop/#restart30) includes it from day one.
-
 ## Strength is half of balance
 
 Balance is not only in the inner ear. Standing on one leg needs a hip and thigh strong enough to hold you there. That is why the guidelines say "strength and balance" in one breath, and why our [strength training guide](/move/strength-training-after-50-why-and-how/) belongs next to this one. Sit-to-stands and calf raises are balance exercises in disguise.

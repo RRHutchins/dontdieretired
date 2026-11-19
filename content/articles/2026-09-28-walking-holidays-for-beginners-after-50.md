@@ -74,7 +74,7 @@ If you would rather not plan or walk alone, the Ramblers are the answer in Brita
 
 Broken-in shoes or boots, a daypack, a waterproof, water, blister plasters (bandages) and layers rather than bulk. Walking poles save knees on descents; learn to use them at home. Rest days every third or fourth day are part of the plan, not a failure of it.
 
-To plan the whole thing — route, costs, insurance, health and a twelve-week countdown — our [Slow Travel After 50 workbook](/shop/#slowtravel) has a walking-holiday section and a packing list. For getting to the start without a car, see [travelling by train after 50](/travel/travelling-by-train-after-50/).
+For getting to the start without a car, see [travelling by train after 50](/travel/travelling-by-train-after-50/).
 
 ## This week
 

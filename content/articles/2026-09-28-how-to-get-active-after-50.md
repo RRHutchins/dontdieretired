@@ -67,7 +67,7 @@ If you have not exercised in years, ignore the 150 minutes for now. It is not a 
 
 Start with ten minutes. A ten-minute brisk walk counts towards the weekly total, and it is short enough that there is no good reason not to do it today. Do that most days for a fortnight. Then make it fifteen. The NHS walking advice is to "increase your walking distance gradually" rather than leap in, and that principle applies to everything else on this page.
 
-Two things make the first month easier. One is a fixed time: the same slot each day removes the daily negotiation with yourself. The other is a plan someone else has written, so you are following rather than deciding. If you want the first month laid out day by day in ten-minute pieces, [The 30-Day Restart](/shop/#restart30) was built for exactly this stage.
+Two things make the first month easier. One is a fixed time: the same slot each day removes the daily negotiation with yourself. The other is a plan someone else has written, so you are following rather than deciding.
 
 ## Safety, and when to see a GP
 
@@ -94,7 +94,7 @@ The best activity is the one you will still be doing in March. With that in mind
 
 **Running** is efficient and very effective, but hard on joints if you go from nothing to daily runs. Walk-run programmes that alternate the two are the sensible way in.
 
-**Strength training** is the one we would put in everyone's week. Bodyweight, resistance bands or a pair of dumbbells at home; no gym required. Our [strength guide](/move/strength-training-after-50-why-and-how/) covers the six basic movements, and [Strong at 60](/shop/#strong60) turns them into a 12-week plan.
+**Strength training** is the one we would put in everyone's week. Bodyweight, resistance bands or a pair of dumbbells at home; no gym required. Our [strength guide](/move/strength-training-after-50-why-and-how/) covers the six basic movements.
 
 **Classes** — tai chi, yoga, aqua aerobics, chair-based exercise, dance — solve the two hardest problems at once: knowing what to do, and turning up. If you struggle with motivation, book a class rather than buying equipment.
 

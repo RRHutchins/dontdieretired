@@ -72,8 +72,6 @@ The first visit is the whole obstacle, so make it as small as possible.
 4. **Stay for the coffee.** The activity is the excuse; the twenty minutes afterwards is where the friendship is.
 5. **Go back the following week.** Regularity is what turns "the new person" into "one of us". Give any group three visits before you judge it.
 
-If you would like this structured, with a plan for each week and a way to track who you have met, our [Reconnect](/shop/#reconnect) workbook takes you through six weeks of exactly this.
-
 ## This week
 
 1. Choose one group from this list that meets weekly and is within easy reach.

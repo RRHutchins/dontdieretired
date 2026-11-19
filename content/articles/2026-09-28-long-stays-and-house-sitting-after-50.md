@@ -73,8 +73,6 @@ Ask the practical questions in writing before you pay — steps to the door, lif
 
 NHS Fit for Travel advises a travel health appointment six to eight weeks before you go, and recommends a risk assessment for older people and anyone with a long-term condition. The CDC's advice on medicines — enough for the whole trip plus a few days, in original containers, with a copy of the prescription — means asking your prescriber early for a longer supply. UK travellers should carry a GHIC, free and valid up to five years, remembering it is not a substitute for insurance. Check that your policy's maximum trip length covers the whole stay; see [travel insurance after 50](/travel/travel-insurance-after-50/).
 
-The long-stay accommodation options, the budget template and the passport and entry checks are all in our [Slow Travel After 50 workbook](/shop/#slowtravel), which was built around this kind of trip.
-
 ## This week
 
 - Do the Schengen day count for the last 180 days.

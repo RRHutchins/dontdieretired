@@ -72,7 +72,7 @@ A group is what keeps you going. Ukulele groups exist in almost every town in th
 - **Six months.** You can sit in with a beginners' group and keep up most of the time, and you are starting to hear what is wrong and fix it.
 - **One year.** You play a bit: a small repertoire, a new easy piece every couple of weeks, and — as in the study above — you hear music differently.
 
-Progress is jagged: a good week, a fortnight where nothing moves, then a jump. Keep turning up. If you want the habit side scaffolded — eight weeks of what to do each day — our [Sharp course](/shop/#sharp) works for instruments as well as languages and subjects.
+Progress is jagged: a good week, a fortnight where nothing moves, then a jump. Keep turning up.
 
 ## This week
 

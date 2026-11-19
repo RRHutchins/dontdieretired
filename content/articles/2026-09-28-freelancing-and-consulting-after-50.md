@@ -76,4 +76,4 @@ Online freelance marketplaces exist for almost every field. They can be useful w
 
 ## Start this week
 
-Write the one sentence. Write the one page. Message three people and ask who they know. Draft the agreement template so you are ready for the first yes. If you want the whole 90 days laid out with checkpoints, our *Second Act* workbook does exactly that — it is in [the shop](/shop/#secondact). For how consulting fits alongside the other ways of working after 50, start with [the complete guide](/earn/working-after-50-the-complete-guide/).
+Write the one sentence. Write the one page. Message three people and ask who they know. Draft the agreement template so you are ready for the first yes. For how consulting fits alongside the other ways of working after 50, start with [the complete guide](/earn/working-after-50-the-complete-guide/).

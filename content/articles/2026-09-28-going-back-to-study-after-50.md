@@ -86,7 +86,7 @@ This is general information, not financial advice; a loan is still a loan.
 
 ## A note on nerves
 
-You will not be the oldest person in the room as often as you fear, and when you are, nobody minds. If you want a gentle structure for rebuilding the habit before enrolling anywhere, [Sharp: 8 weeks to a learning habit](/shop/#sharp) is our workbook for exactly that run-up.
+You will not be the oldest person in the room as often as you fear, and when you are, nobody minds.
 
 ## This week
 

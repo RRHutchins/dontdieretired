@@ -100,4 +100,4 @@ And remember that nearly everyone in the room was once the new person. Shy peopl
 2. At the first, learn two names and ask one question.
 3. Within 48 hours, send one follow-up message.
 
-If you would like this laid out as a six-week programme — audit, reconnections and first invitation scheduled for you — our [Reconnect course](/shop/#reconnect) does exactly that. But the three steps above are the engine.
+But the three steps above are the engine.

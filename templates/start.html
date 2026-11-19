@@ -19,7 +19,7 @@
   <p><a class="btn" href="/newsletter/">{{ "Get the weekly email that matches your answers" if cfg.newsletter.sending else "Join the email list that matches your answers" }}</a></p>
 </section>
 <p class="fl-line"><strong>Found a few?</strong> Add them to your list on <a href="/list/">Things to do</a>, then plan the one you want to do first.</p>
-<section class="two-col">
+<section{% if products.products %} class="two-col"{% endif %}>
   <div class="prose">
     <h2>Three rules we live by</h2>
     <ol>
@@ -28,6 +28,6 @@
       <li><strong>Check with your GP, then get on with it.</strong> Ask what you <em>can</em> do, not only what you can't. The answer is usually "more than you think".</li>
     </ol>
   </div>
-  <div>{{ product_promo(products.products[0]) }}</div>
+  {% if products.products %}<div>{{ product_promo(products.products[0]) }}</div>{% endif %}
 </section>
 {% endblock %}

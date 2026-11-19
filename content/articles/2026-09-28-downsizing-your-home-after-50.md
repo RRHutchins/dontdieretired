@@ -65,7 +65,7 @@ For a HECM you "must meet with a counselor from an independent government-approv
 - If I need to move, or fund care, in ten years, what happens?
 - Who is advising me, are they regulated or approved, and how are they paid?
 
-If you are unsure whether money is even the problem, start with the one-page picture in our [complete guide to money after 50](/money/money-after-50-the-complete-guide/); housing decisions are often cashflow decisions in disguise, and the [Money Reset workbook](/shop/#moneyreset) walks that through. If the real issue is a fixed income, try [living well on less after 50](/money/living-well-on-less-after-50/) first.
+If you are unsure whether money is even the problem, start with the one-page picture in our [complete guide to money after 50](/money/money-after-50-the-complete-guide/); housing decisions are often cashflow decisions in disguise. If the real issue is a fixed income, try [living well on less after 50](/money/living-well-on-less-after-50/) first.
 
 ## This week
 

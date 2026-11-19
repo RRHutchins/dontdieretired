@@ -59,8 +59,6 @@ A few rules keep this cheap:
 - **Ask for the second order.** A repeat customer is the first real evidence you have a business.
 - **Write down what surprises you.** The surprises are the business plan.
 
-If you want this laid out day by day, our *Second Act* workbook takes an idea from first sketch to first paying customer in 90 days, with checkpoints for deciding whether to carry on. It is in [the shop](/shop/#secondact).
-
 ## Registering, in general terms
 
 The formalities are simpler than people fear, and in both countries you can start trading before the paperwork.

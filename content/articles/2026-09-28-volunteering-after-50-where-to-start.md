@@ -76,7 +76,7 @@ These are self-reported figures from people who chose to volunteer, so they do n
 
 **Week four: decide.** After two or three sessions, ask honestly whether it fits. If not, say so kindly and try the next on your shortlist. A role that does not suit you is information, not failure.
 
-If you want help choosing between people-facing, skills-based and behind-the-scenes roles, our [Reconnect course](/shop/#reconnect) includes a short worksheet for exactly that. For the wider picture, start with our [complete guide to friendship and community after 50](/connect/friendship-and-community-after-50/) or the companion piece on [making new friends without the awkwardness](/connect/how-to-make-new-friends-after-50/).
+For the wider picture, start with our [complete guide to friendship and community after 50](/connect/friendship-and-community-after-50/) or the companion piece on [making new friends without the awkwardness](/connect/how-to-make-new-friends-after-50/).
 
 ## This week
 

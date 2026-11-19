@@ -85,8 +85,6 @@ The right option is not the one that pays most. A useful way to decide is to sep
 
 **What can you test cheaply?** This is the question that beats the other two. Every option on this page can be tried small: one short contract, one client, one seasonal job, one market stall, one conversation with your current employer about a four-day week. Small tests tell you more than any amount of thinking, and they cost you a few weekends rather than a career.
 
-If you are drawn to the business or freelance end of the spectrum and want that testing laid out day by day, our *Second Act* workbook takes an idea from first sketch to first paying customer over 90 days, with the honest checkpoints along the way. You can find it in [the shop](/shop/#secondact).
-
 ## Start this week
 
 Working after 50 is not a single leap but a series of small, reversible choices, made by someone who knows more about what they want than they did at 25. Rank what you need from work, pick one option, find its smallest version, and check your real pension numbers. Then read whichever of the three linked guides fits, and take the first step before the week is out.

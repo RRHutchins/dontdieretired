@@ -73,7 +73,7 @@ The NHS lists a journey of more than four hours by train (or plane or car) as a 
 
 AARP's guide to solo train travel adds a social point: dining cars seat people at communal tables, which makes meeting other passengers unusually easy, and a sleeper means there is an attendant who knows you are there.
 
-The rail-or-air test, the pass-or-tickets sums and a budget template are all in the [Slow Travel After 50 planning workbook](/shop/#slowtravel). For the kind of trip that starts where the railway ends, see [walking holidays for beginners](/travel/walking-holidays-for-beginners-after-50/).
+For the kind of trip that starts where the railway ends, see [walking holidays for beginners](/travel/walking-holidays-for-beginners-after-50/).
 
 ## This week
 

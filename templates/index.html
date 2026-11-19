@@ -102,7 +102,7 @@
   {% endfor %}
 </div></section>
 
-<section class="two-col">
+<section{% if products.products %} class="two-col"{% endif %}>
   <div>
     <div class="section-head"><h2>Watch</h2><a href="/videos/">All videos</a></div>
     <div class="video-grid">
@@ -114,10 +114,10 @@
       {% endfor %}
     </div>
   </div>
-  <div>
+  {% if products.products %} <div>
     {% set cplans = products.products | selectattr('kind', 'equalto', 'Challenge plan') | selectattr('live') | list %}
     {% if cplans %}{{ product_promo(cplans[0]) }}{% else %}{{ product_promo(products.products[0]) }}{% endif %}
-  </div>
+  </div>{% endif %}
 </section>
 {% endblock %}
 {% block scripts %}<script src="/static/puzzle.js?v={{ asset_v }}" defer></script><script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script>{% endblock %}

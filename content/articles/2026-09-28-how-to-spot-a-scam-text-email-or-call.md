@@ -87,8 +87,6 @@ Reporting takes a minute and feeds the systems that get scam sites taken down.
 - Anything else: the FTC at **ReportFraud.ftc.gov**, or the FBI's Internet Crime Complaint Center at **ic3.gov**.
 - For guidance and a calm voice: the free **AARP Fraud Watch Network Helpline**, **877-908-3360**, Monday to Friday, 8am to 8pm Eastern.
 
-If you would like these numbers on a card for the fridge, along with the patterns above in checklist form, they are in our [Tech Confident guide](/shop/#techconfident).
-
 ## This week
 
 None of this requires you to become suspicious of the world — just one habit, pause then call back, and a little familiarity with the costumes. For the wider picture of settings, passwords and getting help, start with [the complete guide to tech confidence after 50](/tech/tech-confidence-after-50-the-complete-guide/). And since a reused password is what turns a phishing email into a real loss, [Passwords and two-factor authentication, made simple](/tech/passwords-and-two-factor-made-simple/) is the natural next read.
