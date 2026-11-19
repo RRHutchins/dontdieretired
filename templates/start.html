@@ -1,8 +1,15 @@
 {% extends "base.html" %}{% from "_macros.html" import card, product_promo, profile_form %}
 {% block title %}Start here — {{ cfg.site.name }}{% endblock %}
-{% block description %}New to the site? Pick your starting point and get a plan you can begin this week.{% endblock %}
+{% block description %}New here? Find your first thing to do, with how to start and where to go, and a first week pitched at your level.{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker">Start here</p><h1>Where are you starting from?</h1><p class="lead">It doesn't matter whether you've been active all your life or never at all — there is a starting point for you here. Answer three quick questions and we'll show you stories that fit and a first week pitched at your level.</p></header>
+<header class="page-head"><p class="kicker">Start here</p><h1>Find your first thing to do</h1><p class="lead">It doesn't matter whether you've been active all your life or never at all. Start with something you fancy: every activity here comes with how to start, where to go and roughly what it costs.</p></header>
+<form class="finder" action="/list/" method="get" role="search" aria-labelledby="start-find-h">
+  <h2 id="start-find-h" class="finder-h">What do you fancy doing?</h2>
+  <div class="finder-row"><label class="sr-only" for="start-q">Search things to do</label><input id="start-q" type="search" name="q" maxlength="80" placeholder="Swim, paint, fly fish, volunteer…" autocomplete="off"><button class="btn" type="submit">Find things to do</button></div>
+  <p class="finder-chips"><span class="finder-or">Or</span><a class="chip" href="/list/">browse everything</a></p>
+</form>
+<h2>Not sure yet? Tell us where you're starting from</h2>
+<p>Answer three quick questions and we'll show you stories that fit and a first week pitched at your level.</p>
 <section class="say-block">{{ profile_form('plan') }}</section>
 <section id="plan" class="plan" hidden>
   <h2>Your first week</h2>
@@ -11,7 +18,7 @@
   <div class="grid grid-3" data-for-you></div>
   <p><a class="btn" href="/newsletter/">{{ "Get the weekly email that matches your answers" if cfg.newsletter.sending else "Join the email list that matches your answers" }}</a></p>
 </section>
-<p class="fl-line"><strong>Rather start with an idea?</strong> <a href="/list/">Things to do</a> is our growing list of things worth doing, each with how to start. Pick a few and make a list of your own.</p>
+<p class="fl-line"><strong>Found a few?</strong> Add them to your list on <a href="/list/">Things to do</a>, then plan the one you want to do first.</p>
 <section class="two-col">
   <div class="prose">
     <h2>Three rules we live by</h2>
