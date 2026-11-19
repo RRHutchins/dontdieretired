@@ -1,0 +1,36 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button %}{% from "_gifts.html" import gift_card, books_panel, plus_panel, shortlist_bar %}
+{# One interest or occasion of the gift ideas hub (RUNBOOK §6v). #}
+{% block title %}{{ seo_title }}{% endblock %}
+{% block description %}{{ p.description | metadesc }}{% endblock %}
+{% block pagetype %}gifts{% endblock %}
+{% block ogimage %}{{ '/static/img/gifts/og-' ~ p.id ~ '.png' }}{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
+ {"@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Gift ideas","item":cfg.site.url ~ "/gifts/"},
+  {"@type":"ListItem","position":2,"name":p.label,"item":cfg.site.url ~ p.url}]},
+ {"@type":"ItemList","name":p.h1,"itemListElement":item_list}]} | tojson }}</script>{% endblock %}
+{% block content %}
+<header class="page-head gift-head">
+  <p class="kicker"><a href="/gifts/">{% if season %}{{ season_name }} gift ideas{% else %}Gift ideas{% endif %}</a></p>
+  <h1>{{ p.h1 }}</h1>
+  <p class="lead">{{ p.lead }}</p>
+  {{ share_button(cfg.site.url ~ p.url, p.h1, 'gifts') }}
+</header>
+{% if p.intro %}<div class="prose narrow">{% for t in p.intro %}<p>{{ t }}</p>{% endfor %}</div>{% endif %}
+<p class="gift-tip">Open <em>Ways to give it</em> on any idea for bookings, reviewers' picks and where to start. Save the ones you like, then share your shortlist or drop a hint.</p>
+
+<ul class="gift-list">
+{% for x in p['items'] %}{{ gift_card(x, cfg.site.url ~ p.url) }}
+{% if loop.index == 4 and (books or quiz) %}</ul>{{ books_panel(books, quiz, season) }}<ul class="gift-list">{% endif %}{% endfor %}
+</ul>
+
+{{ plus_panel(plus_gift) }}
+
+<nav class="gift-more" aria-labelledby="gm-h">
+  <h2 id="gm-h">More gift ideas</h2>
+  <ul class="gift-chips">{% for o in others %}<li><a class="chip" href="{{ o.url }}">{{ o.label }}</a></li>{% endfor %}</ul>
+</nav>
+<p class="gift-note narrow">Every idea links to our full guide to the activity, written with AI from official and published sources and checked against them; none has been reviewed by a coach, doctor or instructor. Some links are affiliate links: if you buy through them we may earn a small commission at no extra cost to you.</p>
+{{ shortlist_bar() }}
+{% endblock %}
+{% block scripts %}<script src="/static/gifts.js?v={{ asset_v }}" defer></script>{% endblock %}

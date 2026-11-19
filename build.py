@@ -722,6 +722,16 @@ def build(make_social=True):
             assert _h.get("id") == _hf.stem and re.fullmatch(r"[a-z0-9-]+", _h.get("slug", "")), f"hub {_hf.name}: id must match the file name and slug be plain"
             HUBS[_h["id"]] = _h
     env.globals.update(hubs=HUBS)
+    # Gift ideas (RUNBOOK §6v, Robin 19 Nov 2026): content/gifts.yaml. Loaded here so activity pages can link to their gift page;
+    # the /gifts/ pages are rendered after the hubs.
+    GIFTS = load_yaml(CONTENT / "gifts.yaml") if (CONTENT / "gifts.yaml").exists() else None
+    _gift_for = {}
+    if GIFTS:
+        _gs = GIFTS["season"]
+        GIFTS["in_season"] = str(_gs["from"]) <= _today <= str(_gs["until"])
+        for _g in GIFTS["groups"]:
+            for _i in _g["ideas"]: _gift_for.setdefault(_i["id"], {"url": f"/gifts/{_g['id']}/#{_i['id']}", "label": _g["label"], "h1": _g["h1"]})
+    env.globals.update(gift_for=_gift_for, gifts_season=bool(GIFTS and GIFTS["in_season"]), gifts_season_name=(GIFTS or {}).get("season", {}).get("name", ""))
     terms = load_terms()
     # match on subjects only: activity ids and story tags (people's names in slugs and titles caused false matches)
     _ch_kw = {c["id"]: kw(c["id"].replace("-", " ")) for c in _chs}
@@ -1067,6 +1077,84 @@ def build(make_social=True):
         pages.append({"title": h["h1"], "key": h.get("seo_title") or "", "url": f"/{h['slug']}/", "category": h["category"], "excerpt": h["lead"],
                       "tags": [h["id"].replace("-", " ")] + list(h.get("tags") or []) + [w for e in h["events"] for w in re.findall(r"[a-z]+", e["name"].lower())],
                       "image": "/static/og-default.png", "art": "/static/og-default.png"})
+    # Gift ideas (RUNBOOK §6v): /gifts/, /gifts/<group>/, /gifts/<occasion>/, /gifts/shared/ (a shared shortlist, noindex) and
+    # /gifts/gifts.json (what the shortlist and shared pages draw from). Every idea is an activity, so its facts come from there.
+    gift_pages = []
+    if GIFTS and "chs" in locals():
+        _byid = {c["id"]: c for c in chs}
+        _price = re.compile(r"[£$€]\s?\d")
+        IDEAS = {}
+        _shared_picks = load_yaml(CONTENT / "picks.yaml") if (CONTENT / "picks.yaml").exists() else {}
+        _aff_ok = {"viator", "getyourguide"}
+        for g in GIFTS["groups"]:
+            assert re.fullmatch(r"[a-z0-9-]+", g["id"]) and g.get("label") and g.get("h1") and g.get("seo_title") and g.get("description") and g.get("lead"), f"gift group {g.get('id')}: needs id, label, h1, seo_title, description, lead"
+            for i in g["ideas"]:
+                c = _byid.get(i["id"])
+                assert c, f"gift group {g['id']}: no activity {i['id']}"
+                assert i.get("gift") and not _price.search(i["gift"]), f"gift {i['id']}: needs a gift name, and no prices"
+                if i["id"] in IDEAS:
+                    IDEAS[i["id"]]["groups"].append(g["id"]); continue
+                assert not (i.get("book") and c.get("book")), f"gift {i['id']}: the activity already has booking links; do not add more here"
+                book = c.get("book") or i.get("book") or []
+                for b in book:
+                    assert str(b.get("url", "")).startswith("https://") and b.get("label") and b.get("why") and (not b.get("aff") or b["aff"] in _aff_ok), f"gift {i['id']}: booking links need https url, label, why and aff viator/getyourguide"
+                # Reviewers' picks (Robin, 19 Nov 2026: "provide reviews, why to select… a range of options by price and functionality"):
+                # the idea's own `picks: <key>` from content/picks.yaml, else the activity's. Top, also recommended and lower-cost,
+                # in the reviewer's words, checked exactly as on activities. Otherwise the activity's kit list (ideas, not reviews).
+                if i.get("picks"):
+                    assert i["picks"] in _shared_picks, f"gift {i['id']}: picks key {i['picks']!r} is not in content/picks.yaml"
+                    pk = copy.deepcopy(_shared_picks[i["picks"]])
+                    _order = {"top": 0, "good": 1, "value": 2}
+                    for o in pk["options"]:
+                        assert o.get("tier") in _order and o.get("name") and o.get("label") and o.get("quote") and o.get("reviewer") and len(str(o["quote"]).split()) <= 30, f"gift {i['id']}: picks need tier, name, label, reviewer and a quote of at most 30 words"
+                        assert str((o.get("review") or {}).get("url", "")).startswith("https://") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(o["review"].get("checked", ""))) and str(o.get("buy", "")).startswith("https://www.amazon.co.uk/") and not _price.search(str(o["quote"])), f"gift {i['id']}: pick review url, checked date, amazon.co.uk buy link, no prices"
+                    pk["options"] = sorted(pk["options"], key=lambda o: _order[o["tier"]])
+                    pk["checked_human"] = dt.datetime.strptime(max(str(o["review"]["checked"]) for o in pk["options"]), "%Y-%m-%d").strftime("%-d %B %Y")
+                else:
+                    pk = c.get("picks") if isinstance(c.get("picks"), dict) else None
+                kit = [] if pk else [dict(k) for k in (c.get("kit") or [])[:3]]
+                kit_title = f"{pk['item']}: what reviewers recommend" if pk else "Kit that would go with it"
+                where = c["links"][0]
+                IDEAS[i["id"]] = {"id": i["id"], "gift": i["gift"], "title": c["title"], "why": c["why_short"], "url": f"/list/{c['id']}/",
+                                  "category": c["category"], "cost": c["cost"], "free": c["cost"] == "free", "photo": (c.get("photo") or {}).get("small"),
+                                  "photo_alt": (c.get("photo") or {}).get("alt", ""), "book": book, "kit": kit, "kit_title": kit_title, "picks": pk,
+                                  "where": {"label": where["label"], "url": where["url"]}, "groups": [g["id"]], "season": c.get("season", "")}
+            g["items"] = [IDEAS[i["id"]] for i in g["ideas"]]
+            g["url"] = f"/gifts/{g['id']}/"
+        for o in GIFTS["occasions"]:
+            assert re.fullmatch(r"[a-z0-9-]+", o["id"]) and o["id"] not in {g["id"] for g in GIFTS["groups"]} | {"shared"}, f"gift occasion {o['id']}: id clashes"
+            if o["ideas"] == "auto":
+                o["items"] = [x for x in IDEAS.values() if x["book"]]
+            else:
+                assert all(x in IDEAS for x in o["ideas"]), f"gift occasion {o['id']}: every idea must be in a group first"
+                o["items"] = [IDEAS[x] for x in o["ideas"]]
+            o["url"] = f"/gifts/{o['id']}/"
+        GH = GIFTS["hub"]
+        _season = GIFTS["in_season"]
+        _gs_until = dt.date.fromisoformat(str(GIFTS["season"]["until"]))
+        gctx = {"G": GIFTS, "season": _season, "season_name": GIFTS["season"]["name"], "groups": GIFTS["groups"], "occasions": GIFTS["occasions"],
+                "books": [b for b in (cfg.get("books") or []) if str(b.get("until") or "9999") >= _today and str(b.get("amazon", "")).startswith("https://")],
+                "quiz": _quiz if _quiz and str(_quiz[0].get("until") or "9999") >= _today else [], "plus_gift": _paywall}
+        _hub_h1 = GH["h1_season"] if _season else GH["h1"]
+        _all = list(IDEAS.values())
+        def _il(items, base):
+            return [{"@type": "ListItem", "position": n, "name": x["gift"], "url": f"{cfg['site']['url']}{base}#{x['id']}"} for n, x in enumerate(items, 1)]
+        urls.append(out("/gifts/", "gifts.html", hub=GH, h1=_hub_h1, seo_title=GH["seo_title_season"] if _season else GH["seo_title"],
+                        description=GH["description_season"] if _season else GH["description"],
+                        item_list=[{"@type": "ListItem", "position": n, "name": p["h1"], "url": cfg["site"]["url"] + p["url"]} for n, p in enumerate(GIFTS["groups"] + GIFTS["occasions"], 1)], **gctx))
+        for p in GIFTS["groups"] + GIFTS["occasions"]:
+            seo = p["seo_title"]
+            if _season and "Christmas" not in seo and len(seo) <= 46: seo = "Christmas " + seo[0].lower() + seo[1:] if seo.startswith("Gifts") else seo
+            urls.append(out(p["url"], "gift-group.html", p=p, seo_title=seo, item_list=_il(p["items"], p["url"]),
+                            others=[x for x in GIFTS["groups"] + GIFTS["occasions"] if x is not p], **gctx))
+            pages.append({"title": p["h1"], "key": p["seo_title"], "url": p["url"], "category": "gifts" if "gifts" in cfg["categories"] else "explore", "excerpt": p["lead"],
+                          "tags": ["gift", "gifts", "present", "presents", "christmas"] + re.findall(r"[a-z]+", (p["label"] + " " + " ".join(x["gift"] for x in p["items"])).lower()),
+                          "image": "/static/og-default.png", "art": "/static/og-default.png"})
+        out("/gifts/shared/", "gift-shared.html", **gctx)   # someone's shared shortlist: built in the browser from the address; noindex, not in the sitemap
+        (DIST / "gifts").mkdir(parents=True, exist_ok=True)
+        (DIST / "gifts" / "gifts.json").write_text(json.dumps({"ideas": IDEAS, "groups": {g["id"]: g["label"] for g in GIFTS["groups"]}}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        pages.append({"title": _hub_h1, "key": "", "url": "/gifts/", "category": "explore", "excerpt": GH["lead"],
+                      "tags": ["gift", "gifts", "present", "presents", "christmas", "ideas", "experience", "retirement"], "image": "/static/og-default.png", "art": "/static/og-default.png"})
     # Home (Robin, 13 Nov 2026: "Things to do is now the core of the website"): a finder first, today's story directly under
     # it, then activities for this month and in-depth pages, then the latest stories. Picks change with the build date
     # (stable within a day), photographs first. Nothing here states how many activities there are (Robin, 27 Oct 2026).
@@ -1125,6 +1213,13 @@ def build(make_social=True):
         _bad = _pp.check(_pp.load()[0])
         assert not _bad, f"content/plus_posts.yaml: {_bad}"
         print(f"plus gift cards: {_pp.draw_all(DIST, make_card)} posts")
+    if GIFTS and (CONTENT / "gift_posts.yaml").exists():   # gift hub posts and link-preview cards (tools/gift_posts.py, RUNBOOK §6v)
+        import importlib.util as _ilu
+        _spec = _ilu.spec_from_file_location("gift_posts", ROOT / "tools" / "gift_posts.py")
+        _gp = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_gp)
+        if make_social:
+            _gp.write_packs()
+        print(f"gift cards: {_gp.draw_all(DIST)} posts")
     proposals = (load_yaml(CONTENT / "proposals.yaml") or {}).get("proposals", []) if (CONTENT / "proposals.yaml").exists() else []
     say = out("/your-say/", "your-say.html", proposals=proposals)
     if cfg.get("feedback", {}).get("live"): urls.append(say)

@@ -1,0 +1,86 @@
+{# Gift ideas (RUNBOOK §6v). Shared pieces for /gifts/ pages. #}
+
+{% macro gift_card(x, base) %}
+<li class="gift" id="{{ x.id }}" data-cat="{{ x.category }}" data-gift="{{ x.id }}">
+  {% if x.photo %}<img class="gift-photo" src="{{ x.photo }}" alt="{{ x.photo_alt }}" width="800" height="450" loading="lazy" decoding="async">{% endif %}
+  <div class="gift-body">
+    <p class="kicker">{{ categories[x.category].label }}{% if x.free %} · Free to do{% endif %}{% if x.book %} · Can be booked{% endif %}</p>
+    <h3>{{ x.gift }}</h3>
+    <p class="gift-why"><strong>Why they'd love it.</strong> {{ x.why }}</p>
+    <details class="gift-ways">
+      <summary>Ways to give it</summary>
+      {% if x.book %}<div class="gift-way" data-book>
+        <h4>Book it for them</h4>
+        <ul>{% for b in x.book %}<li><a href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}</a>: {{ b.why }}</li>{% endfor %}</ul>
+        <p class="gift-note">Compare what is included, where it runs and the cancellation terms before you pay. Many operators sell gift vouchers, which leave the date to them.</p>
+      </div>{% endif %}
+      {% if x.free %}<div class="gift-way"><h4>Give your company</h4><p>It costs nothing to do, so the present can be a promise to go with them, written in a card, with something from the kit list below.</p></div>{% endif %}
+      {% if x.picks %}<div class="gift-way gift-picks">
+        <h4>{{ x.kit_title }}</h4>
+        <p class="gift-note">{{ x.picks.why }}</p>
+        <ul class="gift-tiers">{% for o in x.picks.options %}
+          <li class="pick-{{ o.tier }}"><p class="pick-tier">{{ {'top': 'Top pick', 'good': 'Also recommended', 'value': 'Lower-cost pick'}[o.tier] }}</p>
+            <p><strong>{{ o.name }}</strong></p>
+            <p class="pick-label">{{ o.reviewer }}: “{{ o.label }}”</p>
+            <blockquote><p>“{{ o.quote }}”</p></blockquote>
+            <p class="pick-links"><a href="{{ o.review.url }}" target="_blank" rel="noopener">Read the review<span class="sr-only"> of the {{ o.name }}</span></a> <a class="btn btn-small btn-ghost" href="{{ o.buy }}" rel="sponsored nofollow noopener" target="_blank" data-aff>Find it on Amazon<span class="sr-only">: {{ o.name }}</span></a></p></li>{% endfor %}</ul>
+        <p class="gift-note">Chosen and described by the independent reviewers named, in their words; we have not tested these. Reviews checked {{ x.picks.checked_human }}. Prices and stock change, so check before you buy.</p>
+      </div>{% elif x.kit %}<div class="gift-way">
+        <h4>{{ x.kit_title }}</h4>
+        <ul>{% for k in x.kit %}<li><a href="{{ k.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ k.name }}</a>: {{ k.why }}</li>{% endfor %}</ul>
+        <p class="gift-note">Ideas to start the search, not products we have tested: read the reviews and check sizes before you buy.</p>
+      </div>{% endif %}
+      <div class="gift-way"><h4>Where to start</h4><p><a href="{{ x.where.url }}" target="_blank" rel="noopener">{{ x.where.label }}</a></p></div>
+    </details>
+    <div class="gift-actions">
+      <a class="gift-guide" href="{{ x.url }}">Full guide: {{ x.title }}<span aria-hidden="true"> →</span></a>
+      <button type="button" class="chip gift-save" data-gift-save="{{ x.id }}" aria-pressed="false">Save to shortlist</button>
+      <button type="button" class="chip gift-share" data-gift-share="{{ base }}?via=friend#{{ x.id }}" data-title="{{ x.gift }}">Share</button>
+    </div>
+  </div>
+</li>
+{% endmacro %}
+
+{% macro books_panel(books, quiz, season) %}
+{% if books or quiz %}
+<aside class="gift-books" aria-labelledby="gb-h">
+  <div class="gift-books-head">
+    <p class="kicker">{% if season %}Stocking fillers from us{% else %}Our books{% endif %}</p>
+    <h2 id="gb-h">{% if season %}Puzzles and a quiz for Christmas at home{% else %}Puzzle and quiz books{% endif %}</h2>
+    <p>Our own books, printed by Amazon. Something for the quiet hour after lunch, and something to get the whole family round the table.</p>
+  </div>
+  <ul class="gift-books-list">
+  {% for b in books %}<li>
+    <a href="/puzzle-books/" aria-hidden="true" tabindex="-1"><img src="{{ b.cover }}" alt="" width="120" height="180" loading="lazy"></a>
+    <div><h3 class="h4"><a href="/puzzle-books/">{{ b.title }}</a></h3>
+    <p>105 puzzles of seventeen kinds in large print (16 point or bigger), in three parts from Gentle to Tricky, with the solutions at the back. One for whoever likes a pencil and a cup of tea.</p>
+    <p><a class="btn btn-small" href="{{ b.amazon }}" target="_blank" rel="sponsored noopener" data-aff>See it on Amazon</a></p></div></li>{% endfor %}
+  {% if quiz %}<li>
+    <a href="/puzzle-books/#quiz" aria-hidden="true" tabindex="-1"><img src="{{ quiz[0].cover }}" alt="" width="120" height="180" loading="lazy"></a>
+    <div><h3 class="h4"><a href="/puzzle-books/#quiz">The Don't Die Retired Christmas Quiz Book</a></h3>
+    <p>300 questions in 30 rounds for three nights of family quizzing: Christmas Eve, Christmas Day and Boxing Day. Questions for everyone at the table, a junior round each night, and one person reading aloud. A stocking filler for whoever is hosting.</p>
+    <p>{% for q in quiz %}<a class="btn btn-small" href="{{ q.amazon }}" target="_blank" rel="sponsored noopener" data-aff>{{ q.edition }}</a> {% endfor %}</p></div></li>{% endif %}
+  </ul>
+  <p class="gift-note">Amazon shows the price and delivery date before you order. As an Amazon Associate we earn from qualifying purchases, including our own books.</p>
+</aside>
+{% endif %}
+{% endmacro %}
+
+{% macro plus_panel(on_sale) %}
+<aside class="gift-plus" aria-labelledby="gp-h">
+  <p class="kicker">A present from us</p>
+  <h2 id="gp-h">A year of Planner Plus</h2>
+  <p>For someone with plans: the things they want to do next year on one dated calendar, with what to book, when to train and what to take, for each one.</p>
+  {% if on_sale %}<p><strong>£20 for twelve months, with a card you print at home.</strong> It does not renew, so nobody is charged again.</p>
+  <p><a class="btn" href="/planner-plus/gift/">Give Planner Plus</a></p>
+  {% else %}<p><strong>Not on sale yet.</strong> The gift is being finished now. <a href="/newsletter/">Join the email list</a> to hear when it opens, or save the ideas on this page and come back.</p>{% endif %}
+</aside>
+{% endmacro %}
+
+{% macro shortlist_bar() %}
+<div class="gift-bar" data-gift-bar hidden>
+  <p><span data-gift-count>0</span> on your shortlist</p>
+  <a class="btn btn-small" href="/gifts/shared/#mine">View and share</a>
+</div>
+<p class="sr-only" role="status" aria-live="polite" data-gift-live></p>
+{% endmacro %}

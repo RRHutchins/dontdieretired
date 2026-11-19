@@ -56,3 +56,61 @@ walking-boots:
     reviewer: OutdoorsMagic
     review: {title: "Best Walking Boots of 2026 | Fully Tested and Rated by Our Experts", url: "https://outdoorsmagic.com/article/best-walking-boots/", checked: "2026-11-17"}
     buy: https://www.amazon.co.uk/s?k=Mammut+Sertig+III+Mid+GTX
+
+# Added for the gift ideas hub (RUNBOOK §6v, 19 Nov 2026). Same rules as above.
+telescopes:
+  item: Telescope
+  why: A telescope is the gift that shows Saturn's rings and the Moon's craters for the first time. A wider front lens (the aperture) gathers more light; a motorised mount finds and follows objects for you.
+  options:
+  - tier: good
+    name: Celestron NexStar 4SE
+    label: Best for beginners
+    quote: A great scope for beginners, the Celestron NexStar 4SE is easy to use and set up, it produces clear and bright images
+    reviewer: Space.com
+    review: {title: "Best telescopes 2026: Observe planets, stars and galaxies", url: "https://www.space.com/15693-telescopes-beginners-telescope-reviews-buying-guide.html", checked: "2026-11-19"}
+    buy: https://www.amazon.co.uk/s?k=Celestron+NexStar+4SE
+  - tier: value
+    name: Celestron Inspire 100AZ
+    label: Best budget telescope
+    quote: The Celestron Inspire 100AZ is a great beginner scope for anyone just getting started with astronomy
+    reviewer: Space.com
+    review: {title: "Best telescopes 2026: Observe planets, stars and galaxies", url: "https://www.space.com/15693-telescopes-beginners-telescope-reviews-buying-guide.html", checked: "2026-11-19"}
+    buy: https://www.amazon.co.uk/s?k=Celestron+Inspire+100AZ
+
+running-watch:
+  item: Running watch
+  why: A GPS watch records distance, pace and heart rate on every run, which makes progress easy to see. Check it pairs with the phone they already use.
+  options:
+  - tier: top
+    name: Garmin Forerunner 70
+    label: Best overall
+    quote: The Garmin Forerunner 70 is the running watch we'd recommend to most people because it nails the things that actually matter.
+    reviewer: TechRadar
+    review: {title: "The best running watch 2026: GPS watches for all budgets", url: "https://www.techradar.com/best/running-watches", checked: "2026-11-19"}
+    buy: https://www.amazon.co.uk/s?k=Garmin+Forerunner+70
+  - tier: value
+    name: Coros Pace 3
+    label: Budget
+    quote: The Coros Pace 3, like its predecessor the Pace 2, is an outstanding running tool.
+    reviewer: TechRadar
+    review: {title: "The best running watch 2026: GPS watches for all budgets", url: "https://www.techradar.com/best/running-watches", checked: "2026-11-19"}
+    buy: https://www.amazon.co.uk/s?k=Coros+Pace+3
+
+changing-robe:
+  item: Changing robe
+  why: A changing robe is a warm, hooded shelter to get dry and dressed in after a cold swim, out of the wind. Check the length and whether it is fully waterproof.
+  options:
+  - tier: top
+    name: Fourth Element Storm Poncho
+    label: Best Overall Changing Robe
+    quote: The Fourth Element Storm Poncho came out as a surprise frontrunner during testing.
+    reviewer: OutdoorsMagic
+    review: {title: "Best Dryrobe Alternatives 2026", url: "https://outdoorsmagic.com/article/best-dryrobe-alternatives/", checked: "2026-11-19"}
+    buy: https://www.amazon.co.uk/s?k=Fourth+Element+Storm+Poncho
+  - tier: value
+    name: Zone3 Heat-Tech Changing Robe
+    label: Best Value Changing Robe
+    quote: Zone3 might be better known for their swimming and triathlon kit, but we were impressed by their new Heat-Tech Changing Robe.
+    reviewer: OutdoorsMagic
+    review: {title: "Best Dryrobe Alternatives 2026", url: "https://outdoorsmagic.com/article/best-dryrobe-alternatives/", checked: "2026-11-19"}
+    buy: https://www.amazon.co.uk/s?k=Zone3+Heat-Tech+changing+robe

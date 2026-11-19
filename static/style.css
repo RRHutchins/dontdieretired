@@ -1269,3 +1269,64 @@ html{scroll-padding-top:84px}
 .pl-picks-list li{border-top:1px solid var(--line);padding:8px 0 4px;line-height:1.45;overflow-wrap:anywhere}.pl-picks-list li:first-child{border-top:0}
 .pl-picks-list .pl-lwhy{margin:2px 0}
 .pl-picks-links a{display:inline-block;min-height:44px;line-height:44px;margin-right:16px}
+
+/* ---------- Gift ideas (RUNBOOK §6v, 19 Nov 2026) ---------- */
+.gift-head .share-wrap{margin-top:8px}
+.gift-groups{list-style:none;margin:0 0 28px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.gift-groups a{display:flex;flex-direction:column;gap:4px;height:100%;padding:16px 18px;border-radius:12px;background:#fff;border:1px solid var(--line);border-top:5px solid var(--c,var(--brand));color:var(--ink);text-decoration:none;min-height:44px}
+.gift-groups a:hover,.gift-groups a:focus-visible{border-color:var(--c,var(--brand))}
+.gift-groups strong{font-family:var(--serif);font-size:1.2rem;color:var(--c,var(--brand-ink))}
+.gift-groups span{font-size:.95rem;color:var(--muted)}
+.gift-occasions a{border-top-color:var(--gold)}.gift-occasions strong{color:var(--brand-ink)}
+.gift-list{list-style:none;margin:0 0 28px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;align-items:start}
+.gift{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0;scroll-margin-top:90px}
+.gift:target{outline:3px solid var(--gold)}
+.gift-photo{width:100%;aspect-ratio:16/9;object-fit:cover}
+.gift-body{padding:14px 18px 16px;border-top:5px solid var(--c,var(--brand))}
+.gift-body .kicker{color:var(--c,var(--muted))}
+.gift-body h3{margin:.1em 0 .4em}
+.gift-why{margin:0 0 10px}
+.gift-ways{border-top:1px solid var(--line);padding-top:6px}
+.gift-ways summary{cursor:pointer;font-weight:600;color:var(--brand-ink);min-height:44px;display:flex;align-items:center}
+.gift-way{margin:6px 0 14px}.gift-way h4{font-size:1rem;margin:.2em 0 .3em;font-family:var(--sans);font-weight:600}
+.gift-way ul{margin:0;padding-left:1.1em}.gift-way li{margin:.25em 0}
+.gift-note{font-size:.88rem;color:var(--muted)}
+.gift-tiers{list-style:none;padding:0!important;display:grid;gap:10px}
+.gift-tiers>li{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0!important}
+.gift-tiers p{margin:.15em 0}.gift-tiers blockquote{margin:.3em 0;font-style:italic;color:#333}
+.gift-tiers .pick-tier{font-size:.85rem;font-weight:600;color:var(--accent)}.gift-tiers .pick-value .pick-tier{color:#7a4f0e}
+.gift-tiers .pick-label{font-size:.9rem;color:var(--muted)}
+.gift-tiers .pick-links{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.gift-actions{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin-top:8px}
+.gift-guide{flex:1 1 100%;font-weight:600;min-height:44px;display:flex;align-items:center}
+.gift-actions .chip{font-size:.95rem;padding:.4em 1em}
+.gift-tip{background:#fff7e8;border-left:4px solid var(--gold);padding:10px 14px;border-radius:6px}
+.gift-books{margin:8px 0 32px;padding:22px 24px;border-radius:var(--r);background:linear-gradient(135deg,#7f2431,#b23a48);color:#fff}
+.gift-books a{color:#fff}.gift-books .kicker{color:#fde9c8}.gift-books h2{color:#fff;margin-top:0}
+.gift-books-list{list-style:none;margin:16px 0 10px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.gift-books-list>li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;background:rgba(255,255,255,.1);border-radius:10px;padding:12px}
+.gift-books-list img{border-radius:4px;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.gift-books-list p{margin:.3em 0}.gift-books-list .btn{background:#fff;color:var(--brand-ink);border-color:#fff;margin:4px 6px 0 0}
+.gift-books .gift-note{color:#fde9c8}
+.gift-plus{margin:8px 0 32px;padding:22px 24px;border-radius:var(--r);background:#fff;border:2px solid var(--gold)}
+.gift-plus h2{margin-top:0}
+.gift-how ol{padding-left:1.2em}.gift-how li{margin:.4em 0}
+.gift-chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}.gift-chips .chip{display:inline-flex;align-items:center;text-decoration:none}
+.gift-send{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:24px}
+.gift-mode{border:0;padding:0;margin:0 0 12px}.gift-mode legend{font-weight:600;margin-bottom:4px}
+.gift-mode label{display:flex;gap:10px;align-items:center;min-height:44px}
+.gift-name{display:flex;flex-direction:column;gap:4px;margin-bottom:12px;font-weight:600}
+.gift-name input{font:inherit;padding:.5em .7em;border:2px solid var(--line);border-radius:8px;max-width:320px}
+.gift-send-btns{display:flex;flex-wrap:wrap;gap:8px}
+.gift-bar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:40;display:flex;gap:14px;align-items:center;background:var(--ink);color:#fff;padding:8px 10px 8px 18px;border-radius:999px;box-shadow:var(--shadow);max-width:calc(100vw - 24px)}
+.gift-bar p{margin:0;font-weight:600;white-space:nowrap}.gift-bar .btn{white-space:nowrap}
+.gift-bar[hidden]{display:none}
+.fl-gift{margin:14px 0;padding:10px 14px;border-left:4px solid var(--gold);background:#fff7e8;border-radius:6px}
+.gi-xmas{background:linear-gradient(135deg,#7f2431,#b23a48)}
+@media (max-width:560px){.gift-list{grid-template-columns:1fr}.gift-books{padding:18px 16px}.gift-books-list>li{grid-template-columns:80px minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){.gift-groups a{transition:none}}
+/* In the gift season the menu gains "Gifts"; on phones it takes the email link's place (the email button is in the footer and menu) */
+@media (max-width:560px){.nav.nav-gifts .nav-email{display:none!important}}
+@media (max-width:560px){.nav.nav-gifts.nav-plus .nav-gifts{display:none}}
+@media (max-width:560px){.gift-bar{left:10px;right:10px;transform:none;justify-content:space-between;padding:6px 6px 6px 14px;gap:8px}.gift-bar p{font-size:.92rem}.gift-bar .btn{padding:.45em .9em;font-size:.9rem}}
+@media (min-width:1200px) and (max-width:1399px){.nav.nav-gifts .nav-videos{display:none}}

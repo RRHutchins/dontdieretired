@@ -1,0 +1,38 @@
+{% extends "base.html" %}{% from "_gifts.html" import books_panel, shortlist_bar %}
+{# A shortlist: your own (#mine, from this browser) or one someone sent (?k=ideas|hint&g=id.id&n=Name). Built in the browser
+   from /gifts/gifts.json; the name is shown as text only. Personal, so noindex and out of the sitemap. RUNBOOK §6v. #}
+{% block title %}Gift shortlist{% endblock %}
+{% block description %}A shortlist of present ideas from Don't Die Retired.{% endblock %}
+{% block robots %}<meta name="robots" content="noindex"><meta name="referrer" content="no-referrer">{% endblock %}
+{% block pagetype %}gifts{% endblock %}
+{% block content %}
+<header class="page-head gift-head">
+  <p class="kicker"><a href="/gifts/">{% if season %}{{ season_name }} gift ideas{% else %}Gift ideas{% endif %}</a></p>
+  <h1 data-gs-title>Gift shortlist</h1>
+  <p class="lead" data-gs-lead>Loading the list…</p>
+</header>
+<noscript><p class="prose narrow">This list is put together in your browser, which needs JavaScript. You can still <a href="/gifts/">browse every gift idea</a>.</p></noscript>
+
+<section class="gift-send" data-gs-send hidden aria-labelledby="gsend-h">
+  <h2 id="gsend-h">Send your shortlist</h2>
+  <fieldset class="gift-mode"><legend>What is this list?</legend>
+    <label><input type="radio" name="gk" value="ideas" checked> Present ideas for someone to look at</label>
+    <label><input type="radio" name="gk" value="hint"> A hint: things I would love myself</label>
+  </fieldset>
+  <label class="gift-name">Your first name (optional; it goes in the link) <input type="text" maxlength="30" autocomplete="given-name" data-gs-name></label>
+  <div class="gift-send-btns">
+    <button type="button" class="btn" data-gs-device hidden>Share…</button>
+    <a class="btn btn-ghost" data-gs-wa target="_blank" rel="noopener" href="#">WhatsApp</a>
+    <a class="btn btn-ghost" data-gs-mail href="#">Email</a>
+    <button type="button" class="btn btn-ghost" data-gs-copy>Copy link</button>
+  </div>
+  <p class="gift-note">The link carries the list (and the name, if you add one), nothing else. Anyone with the link can see it.</p>
+</section>
+
+<p class="gift-tip" data-gs-empty hidden>Nothing saved yet. <a href="/gifts/">Browse the gift ideas</a> and press <em>Save to shortlist</em> on the ones you like.</p>
+<ul class="gift-list" data-gs-list></ul>
+<p data-gs-keep hidden><button type="button" class="btn btn-ghost" data-gs-keep-btn>Save these to my own shortlist</button></p>
+<p><a href="/gifts/">More gift ideas →</a></p>
+{{ books_panel(books, quiz, season) }}
+{% endblock %}
+{% block scripts %}<script src="/static/gifts.js?v={{ asset_v }}" defer></script>{% endblock %}

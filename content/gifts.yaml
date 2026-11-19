@@ -1,0 +1,349 @@
+# Gift ideas hub (/gifts/). RUNBOOK §6v. Robin, 19 Nov 2026: "a section or hub that helps people select and buy presents
+# for friends and family that want to do activities, or they want to do activities. Make it so it is favourable for searches
+# and easy for people to share what they find as suggestions."
+#
+# RULES
+# - Every idea is an activity from content/challenges.yaml (`id`), so its facts, kit, reviewers' picks and official links
+#   come from that activity and were checked there. This file adds only the gift's name (`gift`), and optionally `book`:
+#   searches on Viator or GetYourGuide for a bookable class or trip, used only when the activity has no `book` of its own.
+#   They are searches, labelled as searches: never say a specific experience exists, its price or that we tried it.
+# - No prices, no "best", no "most popular", no delivery promises (Amazon refuses our fetch tools, so we cannot see dates).
+# - Never lead with an age. "Retirement" is allowed because it is an occasion people search for, not a description of the reader.
+# - `season` (Christmas wording, the home-page tile and the nav link) runs from `season.from` to `season.until`; after that
+#   the pages stay up with year-round wording (birthdays, retirement, thank-yous).
+
+season:
+  from: "2026-11-19"
+  until: "2026-12-25"
+  name: Christmas
+
+hub:
+  h1_season: "Christmas presents for people who love doing things"
+  h1: "Presents for people who love doing things"
+  seo_title_season: "Christmas gift ideas: experiences and kit for doers"
+  seo_title: "Activity gift ideas: experiences, classes and kit"
+  description_season: "Christmas present ideas for people who would rather do something than own something: classes, days out, trips and the kit to go with them. Make a shortlist and share it, or drop a hint."
+  description: "Present ideas for people who would rather do something than own something: classes, days out, trips and the kit to go with them. Make a shortlist and share it, or drop a hint."
+  lead: "For the walker, the swimmer, the potter-in-waiting and the one who keeps saying they'll learn the piano. Pick an interest, save the ideas you like, then send the list on."
+  intro:
+  - Each idea here is something to do, with the ways to give it underneath. Some can be booked as a class, day out or trip; some need a piece of kit to get going; and some cost nothing at all, in which case the present is your company and a promise to go along.
+  - Every idea links to our full page on the activity, with how to start, where to go and what to check first. The kit suggestions come from those pages, and where an independent reviewer has named a top pick, we show their pick and their words, not ours.
+
+groups:
+- id: walkers
+  label: Walkers and hikers
+  h1: Presents for walkers and hikers
+  seo_title: "Gifts for walkers and hikers: trails, peaks and kit"
+  description: "Present ideas for walkers and hikers: a mountain day, a national trail, a foraging walk or a trip to a famous path, with the boots and kit to go with them."
+  lead: A mountain to climb, a long-distance path to finish, or a lesson that changes how they walk.
+  ideas:
+  - {id: climb-ben-nevis, gift: "A guided day up Ben Nevis"}
+  - {id: walk-yorkshire-three-peaks, gift: "The Yorkshire Three Peaks in a day"}
+  - {id: walk-a-national-trail, gift: "A national trail, a few days at a time"}
+  - {id: walk-west-highland-way, gift: "The West Highland Way"}
+  - {id: walk-hadrians-wall-path, gift: "Hadrian's Wall Path, coast to coast"}
+  - {id: climb-scafell-pike, gift: "A day on Scafell Pike, England's highest mountain"}
+  - id: nordic-walking-lesson
+    gift: "A Nordic walking lesson and a pair of poles"
+  - id: go-on-a-foraging-course
+    gift: "A foraging walk with an expert"
+    book:
+    - {label: "Search foraging tours on Viator", why: "guided foraging walks, in the UK and abroad", url: "https://www.viator.com/searchResults/all?text=foraging+tour", aff: viator}
+  - {id: join-a-ramblers-group, gift: "A year of walks with a Ramblers group"}
+  - {id: orienteering-course, gift: "A first orienteering event, map and compass included"}
+  - {id: hike-to-preikestolen, gift: "A trip to walk up to Preikestolen in Norway"}
+
+- id: runners
+  label: Runners
+  h1: Presents for runners
+  seo_title: "Gifts for runners: races, trails and kit"
+  description: "Present ideas for runners, from a first parkrun to a marathon or an ultra: race entries, fell running, canicross and the kit to go with them."
+  lead: A first 5k, a big-city marathon, a muddy fell race or a run with the dog.
+  ideas:
+  - {id: parkrun, gift: "A Saturday parkrun, with you alongside"}
+  - {id: run-great-north-run, gift: "A place in the Great North Run"}
+  - {id: run-a-marathon, gift: "A marathon to train for, and a GPS watch", picks: running-watch}
+  - {id: run-an-ultramarathon, gift: "A first ultramarathon"}
+  - {id: try-fell-running, gift: "A first fell race"}
+  - {id: try-canicross, gift: "Canicross: running with the dog"}
+  - {id: paras-10, gift: "The PARAS' 10, run or carrying a pack"}
+
+- id: swimmers
+  label: Swimmers
+  h1: Presents for swimmers and wild swimmers
+  seo_title: "Gifts for swimmers and wild swimmers"
+  description: "Present ideas for swimmers: open-water sessions, lessons for adults, a swim in the Serpentine or a Swimathon, plus the kit that makes cold water easier."
+  lead: From learning properly to a first dip in open water.
+  ideas:
+  - {id: wild-swim, gift: "A first wild swim, and a changing robe", picks: changing-robe}
+  - {id: open-water-swim, gift: "A coached open-water session", picks: changing-robe}
+  - {id: learn-to-swim-adult, gift: "Swimming lessons for adults"}
+  - {id: swim-the-serpentine, gift: "A swim in the Serpentine"}
+  - {id: swim-swimathon, gift: "A Swimathon entry"}
+  - {id: masters-swimming, gift: "A season with a masters swimming club"}
+
+- id: cyclists
+  label: Cyclists
+  h1: Presents for cyclists
+  seo_title: "Gifts for cyclists: rides, routes and skills"
+  description: "Present ideas for cyclists: a sportive, a long-distance route, a velodrome session, mountain biking or a bike maintenance class."
+  lead: A sportive, a session on a velodrome, a route across the islands or the skills to fix their own bike.
+  ideas:
+  - {id: ride-a-sportive, gift: "A sportive entry"}
+  - {id: long-distance-cycle-route, gift: "A long-distance cycle route"}
+  - {id: island-hop-the-hebrides, gift: "Island-hopping the Hebrides by bike"}
+  - {id: cycle-a-velodrome, gift: "A taster session on a velodrome"}
+  - {id: learn-to-mountain-bike, gift: "A mountain biking skills course"}
+  - {id: learn-bike-maintenance, gift: "A bike maintenance class"}
+  - {id: ride-london-to-brighton, gift: "London to Brighton by bike"}
+  - {id: ride-a-rail-trail, gift: "A day on a rail trail"}
+
+- id: on-the-water
+  label: Paddlers and sailors
+  h1: Presents for paddlers, sailors and surfers
+  seo_title: "Gifts for paddlers and sailors: lessons and trips"
+  description: "Present ideas for life on the water: paddleboarding, kayaking, sailing, surfing, rowing and a week on a canal boat."
+  lead: Lessons on the sea, the river or the canal, and the kit to stay safe and dry.
+  ideas:
+  - id: stand-up-paddleboarding
+    gift: "A paddleboarding lesson"
+    book:
+    - {label: "Search paddleboard lessons on GetYourGuide", why: "lessons and guided paddles in many places", url: "https://www.getyourguide.com/s/?q=stand+up+paddle+lesson", aff: getyourguide}
+  - id: learn-to-kayak
+    gift: "A kayaking course"
+    book:
+    - {label: "Search kayak tours on Viator", why: "guided trips for a first go", url: "https://www.viator.com/searchResults/all?text=kayak+tour", aff: viator}
+  - id: learn-to-sail
+    gift: "A learn-to-sail course"
+    book:
+    - {label: "Search sailing lessons on GetYourGuide", why: "taster sails and lessons", url: "https://www.getyourguide.com/s/?q=sailing+lesson", aff: getyourguide}
+  - {id: learn-to-surf, gift: "Surf lessons"}
+  - {id: kitesurfing-lesson, gift: "A kitesurfing lesson"}
+  - {id: learn-to-row, gift: "A learn-to-row course"}
+  - {id: try-gig-rowing, gift: "A go at gig rowing"}
+  - {id: paddle-the-broads, gift: "A paddle on the Norfolk Broads"}
+  - {id: canal-boat-holiday, gift: "A canal boat holiday"}
+  - {id: learn-to-windsurf, gift: "Windsurfing lessons"}
+
+- id: wildlife
+  label: Wildlife and birds
+  h1: Presents for birdwatchers and wildlife lovers
+  seo_title: "Gifts for birdwatchers and wildlife lovers"
+  description: "Present ideas for birdwatchers and wildlife lovers: guided bird walks, bat walks, beekeeping, whale watching, a wildlife pond and reviewers' picks for binoculars."
+  lead: Binoculars, a guided walk at dawn or dusk, a beehive, or the trip of a lifetime.
+  ideas:
+  - id: go-on-a-guided-bird-walk
+    gift: "A guided bird walk, and binoculars"
+    book:
+    - {label: "Search birdwatching tours on Viator", why: "guided birding, mostly on trips abroad", url: "https://www.viator.com/searchResults/all?text=birdwatching+tour", aff: viator}
+  - {id: go-on-a-bat-walk, gift: "A bat walk at dusk"}
+  - id: watch-for-whales-from-shore
+    gift: "Whale watching"
+    book:
+    - {label: "Search whale watching on Viator", why: "boat trips where whales feed, at home and abroad", url: "https://www.viator.com/searchResults/all?text=whale+watching", aff: viator}
+  - {id: take-up-beekeeping, gift: "A beekeeping course"}
+  - {id: first-ebird-checklist, gift: "Binoculars and a first bird list"}
+  - {id: dig-a-wildlife-pond, gift: "A wildlife pond, dug together"}
+  - {id: big-garden-birdwatch, gift: "A bird feeder ready for the Big Garden Birdwatch"}
+  - {id: see-wildlife-in-the-galapagos, gift: "A trip to the Galápagos"}
+
+- id: stargazers
+  label: Stargazers
+  h1: Presents for stargazers
+  seo_title: "Gifts for stargazers: dark skies, telescopes and eclipses"
+  description: "Present ideas for stargazers: a trip to a dark sky place, seeing Saturn's rings, astrophotography, a night under the stars and the 2027 total solar eclipse."
+  lead: A night somewhere truly dark, a first look at Saturn, or a trip to stand in the shadow of the Moon.
+  ideas:
+  - id: dark-sky-place
+    gift: "A night at a dark sky place"
+    book:
+    - {label: "Search stargazing tours on Viator", why: "guided night-sky evenings, many with telescopes", url: "https://www.viator.com/searchResults/all?text=stargazing+tour", aff: viator}
+  - {id: see-saturns-rings, gift: "A telescope, and a first look at Saturn's rings", picks: telescopes}
+  - {id: join-an-astronomy-society, gift: "A year with an astronomy society"}
+  - {id: learn-astrophotography, gift: "An astrophotography course"}
+  - {id: sleep-under-the-stars, gift: "A night sleeping under the stars"}
+  - {id: see-a-total-solar-eclipse, gift: "A trip to see a total solar eclipse"}
+
+- id: makers
+  label: Makers and artists
+  h1: Presents for makers and artists
+  seo_title: "Craft and art class gifts: pottery, glass, jewellery, wood"
+  description: "Craft and art class present ideas: pottery on the wheel, glassblowing, silver jewellery, knife making, spoon carving, willow weaving, watercolour and photography."
+  lead: "A class where they come home with something they made: a bowl, a ring, a spoon, a knife, a painting."
+  ideas:
+  - id: try-pottery-on-the-wheel
+    gift: "A pottery wheel class"
+    book:
+    - {label: "Search pottery classes on Viator", why: "taster sessions in many towns and cities", url: "https://www.viator.com/searchResults/all?text=pottery+class", aff: viator}
+  - {id: paint-your-own-pottery, gift: "A paint-your-own pottery session"}
+  - id: try-glassblowing
+    gift: "A glassblowing taster"
+    book:
+    - {label: "Search glassblowing workshops on GetYourGuide", why: "short workshops in glass studios", url: "https://www.getyourguide.com/s/?q=glassblowing+workshop", aff: getyourguide}
+  - id: make-silver-jewellery
+    gift: "A silver jewellery workshop"
+    book:
+    - {label: "Search jewellery workshops on GetYourGuide", why: "make-a-ring and similar one-day classes", url: "https://www.getyourguide.com/s/?q=jewellery+making+workshop", aff: getyourguide}
+  - {id: learn-knife-making, gift: "A knife-making course"}
+  - {id: carve-a-wooden-spoon, gift: "A spoon-carving day"}
+  - {id: weave-a-willow-basket, gift: "A willow basket workshop"}
+  - {id: learn-woodworking, gift: "A woodworking course"}
+  - {id: make-a-stained-glass-panel, gift: "A stained glass class"}
+  - {id: paint-in-watercolour, gift: "A watercolour class and a paint set"}
+  - {id: learn-calligraphy, gift: "A calligraphy class and pens"}
+  - {id: take-a-photography-course, gift: "A photography course"}
+  - {id: learn-to-sew-your-own-clothes, gift: "A dressmaking course"}
+
+- id: food-and-drink
+  label: Cooks and food lovers
+  h1: Presents for cooks and food lovers
+  seo_title: "Cookery class and food experience gift ideas"
+  description: "Present ideas for cooks and food lovers: cookery school, bread making, sourdough, cheesemaking, a wine course, home brewing and a foraging walk."
+  lead: A day at cookery school, a loaf they made themselves, or a course that teaches them what they're tasting.
+  ideas:
+  - id: go-to-cookery-school
+    gift: "A day at cookery school"
+    book:
+    - {label: "Search cooking classes on Viator", why: "classes at home and on trips abroad", url: "https://www.viator.com/searchResults/all?text=cooking+class", aff: viator}
+  - id: take-a-bread-making-class
+    gift: "A bread-making class"
+    book:
+    - {label: "Search bread-making classes on GetYourGuide", why: "baking classes in many cities", url: "https://www.getyourguide.com/s/?q=bread+making+class", aff: getyourguide}
+  - {id: sourdough-from-starter, gift: "A sourdough kit: banneton and scales"}
+  - id: learn-cheesemaking
+    gift: "A cheesemaking course"
+    book:
+    - {label: "Search cheese-making classes on GetYourGuide", why: "classes and farm visits", url: "https://www.getyourguide.com/s/?q=cheese+making+class", aff: getyourguide}
+  - {id: wset-wine-course, gift: "A wine course with a certificate"}
+  - {id: brew-your-own-beer, gift: "A home-brewing kit"}
+  - {id: go-on-a-foraging-course, gift: "A foraging walk"}
+  - {id: eat-at-a-michelin-starred-restaurant, gift: "Lunch at a Michelin-starred restaurant"}
+
+- id: music-and-dance
+  label: Music and dance
+  h1: Presents for music lovers and dancers
+  seo_title: "Music lesson and dance class gift ideas"
+  description: "Present ideas for music lovers and dancers: lessons on the ukulele, piano, guitar or drums, singing lessons, ballroom, salsa and swing classes, and guitar making."
+  lead: The instrument they always meant to learn, or a dance class to go to together.
+  ideas:
+  - {id: learn-the-ukulele, gift: "A ukulele and a beginners' course"}
+  - {id: learn-the-piano, gift: "Piano lessons"}
+  - {id: learn-the-guitar, gift: "A guitar and first lessons"}
+  - {id: learn-the-drums, gift: "Drum lessons"}
+  - {id: take-singing-lessons, gift: "Singing lessons"}
+  - {id: take-a-ballroom-class, gift: "Ballroom classes for two"}
+  - {id: learn-salsa, gift: "Salsa classes"}
+  - {id: learn-swing-dancing, gift: "Swing dancing classes"}
+  - {id: learn-music-production, gift: "A music production course"}
+  - {id: learn-guitar-making, gift: "A course to build their own guitar"}
+
+- id: adventure
+  label: Adventure and thrills
+  h1: Adventure experience gifts
+  seo_title: "Adventure experience gifts: balloon, skydive, gliding"
+  description: "Adventure experience gift ideas: a hot air balloon flight, tandem skydive, indoor skydiving, a gliding or flying lesson, paragliding, via ferrata, climbing and archery."
+  lead: For the one who has always wanted to fly, fall, climb or let go of a trapeze bar.
+  ideas:
+  - id: try-hot-air-balloon-ride
+    gift: "A hot air balloon flight"
+    book:
+    - {label: "Search balloon flights on Viator", why: "flights at home and in famous balloon spots abroad", url: "https://www.viator.com/searchResults/all?text=hot+air+balloon+ride", aff: viator}
+  - {id: tandem-skydive, gift: "A tandem skydive"}
+  - {id: try-indoor-skydiving, gift: "Indoor skydiving"}
+  - {id: try-gliding, gift: "A trial gliding lesson"}
+  - {id: take-a-flying-lesson, gift: "A trial flying lesson"}
+  - id: try-paragliding
+    gift: "A tandem paragliding flight"
+    book:
+    - {label: "Search tandem paragliding on Viator", why: "tandem flights with a pilot, often on holiday", url: "https://www.viator.com/searchResults/all?text=tandem+paragliding", aff: viator}
+  - id: try-via-ferrata
+    gift: "A guided via ferrata"
+    book:
+    - {label: "Search via ferrata on GetYourGuide", why: "guided routes with the gear included", url: "https://www.getyourguide.com/s/?q=via+ferrata", aff: getyourguide}
+  - {id: indoor-climbing, gift: "An indoor climbing taster"}
+  - {id: try-flying-trapeze, gift: "A flying trapeze class"}
+  - {id: try-archery, gift: "An archery beginners' course"}
+  - {id: try-axe-throwing, gift: "Axe throwing"}
+  - {id: learn-to-ski, gift: "Ski lessons"}
+
+- id: gardeners
+  label: Gardeners
+  h1: Presents for gardeners
+  seo_title: "Gifts for gardeners: courses, trees and wildflowers"
+  description: "Present ideas for gardeners: a garden design course, a tree to plant, a wildflower patch, an allotment, open garden visits, beekeeping and natural dyeing."
+  lead: Something to plant, something to learn, or a day out in someone else's garden.
+  ideas:
+  - {id: learn-garden-design, gift: "A garden design course"}
+  - {id: plant-a-tree, gift: "A tree to plant together"}
+  - {id: grow-a-wildflower-patch, gift: "Wildflower seed and a patch to sow"}
+  - {id: take-on-an-allotment, gift: "Help to take on an allotment"}
+  - {id: visit-an-open-garden, gift: "A day visiting open gardens"}
+  - {id: take-up-beekeeping, gift: "A beekeeping course"}
+  - {id: learn-natural-dyeing, gift: "A natural dyeing workshop"}
+
+- id: curious-minds
+  label: Curious minds
+  h1: Presents for curious minds
+  seo_title: "Gifts for curious minds: languages, writing, bridge, chess"
+  description: "Present ideas for people who love to learn: a language course, creative writing, bridge, chess, geology, art history, poetry and first aid."
+  lead: A course, a club or a skill, for the person who is always reading up on something.
+  ideas:
+  - {id: learn-a-language-to-b1, gift: "A language course"}
+  - {id: take-a-creative-writing-course, gift: "A creative writing course"}
+  - {id: write-a-book, gift: "The push to write that book"}
+  - {id: learn-to-play-bridge, gift: "Bridge lessons for two"}
+  - {id: join-a-chess-club, gift: "A chess set and a club to play at"}
+  - {id: take-a-geology-course, gift: "A geology course"}
+  - {id: take-an-art-history-course, gift: "An art history course"}
+  - {id: take-a-poetry-workshop, gift: "A poetry workshop"}
+  - {id: learn-first-aid, gift: "A first aid course"}
+
+- id: big-trips
+  label: Trips of a lifetime
+  h1: Trips of a lifetime to give (or go on together)
+  seo_title: "Bucket-list trip gift ideas: famous walks and journeys"
+  description: "Bucket-list trip ideas to give or share: the Inca Trail, the Kumano Kodo, Tongariro, Torres del Paine, Kilimanjaro, Antarctica, the Galápagos and the Camino."
+  lead: "The big one: a famous walk, a mountain or a journey to the far end of the world."
+  ideas:
+  - {id: hike-the-inca-trail-to-machu-picchu, gift: "The Inca Trail to Machu Picchu"}
+  - {id: walk-the-kumano-kodo, gift: "The Kumano Kodo pilgrimage in Japan"}
+  - {id: walk-tongariro-alpine-crossing, gift: "The Tongariro Alpine Crossing"}
+  - {id: hike-torres-del-paine-w, gift: "The W Trek in Torres del Paine"}
+  - {id: walk-the-laugavegur-trail, gift: "Iceland's Laugavegur trail"}
+  - {id: climb-kilimanjaro, gift: "Kilimanjaro"}
+  - {id: sail-to-antarctica, gift: "A voyage to Antarctica"}
+  - {id: see-wildlife-in-the-galapagos, gift: "The Galápagos"}
+  - {id: walk-the-camino-to-santiago, gift: "The Camino to Santiago"}
+  - {id: hike-table-mountain-by-platteklip-gorge, gift: "Table Mountain on foot"}
+  - {id: walk-the-streets-of-pompeii, gift: "A guided day in Pompeii"}
+  - {id: ride-the-settle-carlisle, gift: "The Settle to Carlisle railway"}
+
+# Occasion pages: ideas drawn from the groups above (each id must be in a group).
+occasions:
+- id: retirement
+  label: Retirement
+  h1: Retirement presents for someone with plans
+  seo_title: "Retirement gift ideas: experiences, not a carriage clock"
+  description: "Retirement present ideas for someone who intends to stay busy: something to learn, somewhere to go and something to do with the time, with ways to give each one."
+  lead: Leaving work is the start of something. These are presents that fill the time with something worth doing.
+  intro:
+  - A retirement present can be the first thing in the diary. Every idea here comes with a way to give it now (a class, a booking or the kit) and a full page on how to start.
+  ideas: [learn-the-piano, try-pottery-on-the-wheel, walk-a-national-trail, learn-a-language-to-b1, take-up-beekeeping, try-hot-air-balloon-ride, go-to-cookery-school, walk-the-kumano-kodo, learn-to-sail, take-a-creative-writing-course, learn-astrophotography, canal-boat-holiday, learn-garden-design, run-a-marathon, try-glassblowing, learn-to-play-bridge]
+- id: experiences
+  label: Experience days
+  h1: Experience gifts you can book
+  seo_title: "Experience gift ideas you can book now"
+  description: "Experience gift ideas you can book: balloon flights, skydives, pottery, glassblowing, cookery, stargazing, whale watching, guided walks and trips of a lifetime."
+  lead: Every idea on this page has somewhere to search or book it, as well as our guide to what to expect.
+  intro:
+  - These are the ideas with a booking option attached. The booking links are searches on Viator or GetYourGuide (or the operator our activity page already links to), so compare what is included, where it runs and the cancellation terms before you pay.
+  ideas: auto   # every idea in any group that has a booking option
+- id: together
+  label: Things to do together
+  h1: Presents to do together
+  seo_title: "Gifts to do together: classes and days out for two"
+  description: "Present ideas to do together: dance classes, bridge, a coached swim, a canal boat, a bird walk, a mountain day or a cookery class for two."
+  lead: The present is the day out, and you are part of it.
+  intro:
+  - Book two places, or give one and promise to go along. Several of these cost nothing but time, which makes the company the present.
+  ideas: [take-a-ballroom-class, learn-to-play-bridge, parkrun, wild-swim, canal-boat-holiday, go-on-a-guided-bird-walk, climb-ben-nevis, go-to-cookery-school, plant-a-tree, dig-a-wildlife-pond, sleep-under-the-stars, learn-salsa, try-axe-throwing, paint-your-own-pottery]

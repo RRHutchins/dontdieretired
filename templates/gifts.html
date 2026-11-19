@@ -1,0 +1,62 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button %}{% from "_gifts.html" import gift_card, books_panel, plus_panel, shortlist_bar %}
+{# Gift ideas hub (RUNBOOK §6v). Christmas wording between season.from and season.until, year-round wording after. #}
+{% block title %}{{ seo_title }}{% endblock %}
+{% block description %}{{ description | metadesc }}{% endblock %}
+{% block pagetype %}gifts{% endblock %}
+{% block ogimage %}{{ '/static/img/gifts/og-hub.png' }}{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
+ {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gift ideas","item":cfg.site.url ~ "/gifts/"}]},
+ {"@type":"ItemList","name":h1,"itemListElement":item_list}]} | tojson }}</script>{% endblock %}
+{% block content %}
+<header class="page-head gift-head">
+  <p class="kicker">{% if season %}{{ season_name }} gift ideas{% else %}Gift ideas{% endif %}</p>
+  <h1>{{ h1 }}</h1>
+  <p class="lead">{{ hub.lead }}</p>
+  {{ share_button(cfg.site.url ~ '/gifts/', h1, 'gifts') }}
+</header>
+
+<section class="gift-shop" aria-labelledby="gs-h">
+  <h2 id="gs-h">Shop by what they love doing</h2>
+  <ul class="gift-groups">
+  {% for g in groups %}<li data-cat="{{ g['items'][0].category }}"><a href="{{ g.url }}"><strong>{{ g.label }}</strong><span>{{ g.lead }}</span></a></li>{% endfor %}
+  </ul>
+  <h2 class="h3">Or by occasion</h2>
+  <ul class="gift-groups gift-occasions">
+  {% for o in occasions %}<li><a href="{{ o.url }}"><strong>{{ o.label }}</strong><span>{{ o.lead }}</span></a></li>{% endfor %}
+  </ul>
+</section>
+
+{{ books_panel(books, quiz, season) }}
+
+<section class="gift-how prose narrow" aria-labelledby="gh-h">
+  <h2 id="gh-h">How it works</h2>
+  {% for p in hub.intro %}<p>{{ p }}</p>{% endfor %}
+  <ol>
+    <li><strong>Pick an interest</strong> above, and open <em>Ways to give it</em> on any idea: a class or trip to book, reviewers' picks of the kit, or where to start.</li>
+    <li><strong>Save the ones you like</strong> to a shortlist. It stays in this browser; no sign-in.</li>
+    <li><strong>Send the list on.</strong> Share it as present ideas for someone, or <em>drop a hint</em> with the things you would love yourself, by WhatsApp, email or a link.</li>
+  </ol>
+</section>
+
+{{ plus_panel(plus_gift) }}
+
+{% set start = (groups | map(attribute='items') | sum(start=[]) | selectattr('photo') | list)[:6] %}
+{% if start %}<section aria-labelledby="g6-h">
+  <h2 id="g6-h">A few to start with</h2>
+  <ul class="gift-list">{% for x in start %}{{ gift_card(x, cfg.site.url ~ '/gifts/' ~ x.groups[0] ~ '/') }}{% endfor %}</ul>
+</section>{% endif %}
+
+<section class="gift-faq prose narrow" aria-labelledby="gf-h">
+  <h2 id="gf-h">Questions</h2>
+  <h3>How do I give an experience as a present?</h3>
+  <p>Book a date, or buy a gift voucher from the operator so they choose the day. Either way, print or write a card that says what it is and where, and add something small from the kit list to unwrap.</p>
+  <h3>Will it arrive in time{% if season %} for Christmas{% endif %}?</h3>
+  <p>We do not sell anything ourselves: every link goes to the shop or operator, and they set the last order and delivery dates. Amazon shows its delivery date before you pay. Experiences need no delivery, so they work as late presents.</p>
+  <h3>Where do the reviews come from?</h3>
+  <p>Where we show a top pick, an also-recommended and a lower-cost pick, they are named products from an independent reviewer's published review, with their label and their own words, and a link to read the whole review. We do not rank or test products ourselves.</p>
+  <h3>Do you earn from these links?</h3>
+  <p>Some links are affiliate links (Amazon, Viator, GetYourGuide): if you buy through them we may earn a small commission at no extra cost to you. It never decides what goes on these pages.</p>
+</section>
+{{ shortlist_bar() }}
+{% endblock %}
+{% block scripts %}<script src="/static/gifts.js?v={{ asset_v }}" defer></script>{% endblock %}

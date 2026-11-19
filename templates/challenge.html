@@ -59,6 +59,7 @@
   </ul>
   <p class="disclosure">We opened {{ 'this link' if c.links|length == 1 else 'these links' }} on {{ c.checked_human }} and found {{ 'it' if c.links|length == 1 else 'them' }} to be what we say. Dates, places and prices are on the official page, where they stay up to date.</p>
 
+  {% if gift_for[c.id] %}<p class="fl-gift">Thinking of giving this as a present? See <a href="{{ gift_for[c.id].url }}">{{ gift_for[c.id].h1 | lower | replace('presents', 'present ideas') }}</a>, with ways to book it and reviewers' picks of the kit.</p>{% endif %}
   {% if c.book %}
   <aside class="aff-box fl-book" data-book>
     <h3 class="h4">Book it</h3>

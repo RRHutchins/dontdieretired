@@ -1,0 +1,145 @@
+# Social posts for the gift ideas hub (RUNBOOK §6v). `python tools/gift_posts.py` writes social/<date>-<slug>/meta.json;
+# build.py draws the cards. One a day at 10:30 UK (Facebook picture post with the link in the text, Instagram, X).
+# page: a gift page id from content/gifts.yaml ("" = the hub). ideas: optional lines for the card (default: the page's
+# first four gift names). Text at most 254 characters (X). Facts only from gifts.yaml and the activities it names:
+# no prices, no delivery promises, no "best", no reviews of our own. Never edit a post once its date has passed.
+until: "2026-12-24"
+posts:
+  - date: "2026-11-19"
+    slug: gift-hub-open
+    page: ""
+    card: "Presents for people who love doing things"
+    ideas: ["A pottery wheel class", "A hot air balloon flight", "A guided day up Ben Nevis", "A night at a dark sky place"]
+    text: "New on Don't Die Retired: Christmas presents for people who'd rather do something than own something. Classes, days out, trips and the kit to go with them, sorted by what they love doing."
+  - date: "2026-11-20"
+    slug: gift-walkers
+    page: walkers
+    card: "Presents for walkers and hikers"
+    text: "Got a walker to buy for? A mountain day, a national trail, a foraging walk or a lesson in Nordic walking, each with ways to give it and reviewers' picks of walking boots."
+  - date: "2026-11-21"
+    slug: gift-drop-a-hint
+    page: ""
+    kicker: "Drop a hint"
+    card: "Save the presents you'd love. Send the list to your family."
+    ideas: []
+    text: "Easier than hinting at the dinner table: save the classes, trips and kit you'd love on our gift pages, then send the list by WhatsApp or email as a hint. No sign-in."
+  - date: "2026-11-22"
+    slug: gift-makers
+    page: makers
+    card: "A class where they come home with something they made"
+    text: "A bowl from the wheel, a silver ring, a carved spoon, a knife, a willow basket. Craft and art class ideas for Christmas, with where to find a class."
+  - date: "2026-11-23"
+    slug: gift-adventure
+    page: adventure
+    card: "For the one who has always wanted to fly"
+    ideas: ["A hot air balloon flight", "A tandem skydive", "A trial gliding lesson", "A flying trapeze class"]
+    text: "A balloon flight, a tandem skydive, a trial gliding lesson or a go on the flying trapeze. Adventure presents, with what to expect and where to book."
+  - date: "2026-11-24"
+    slug: gift-stocking-fillers
+    page: ""
+    kicker: "Stocking fillers"
+    card: "Puzzles and a quiz for Christmas at home"
+    ideas: ["The Christmas Puzzle Book: 105 puzzles, large print", "The Christmas Quiz Book: 300 questions for three nights", "UK and American editions of the quiz"]
+    text: "Two stocking fillers from us: the Christmas Puzzle Book for the quiet hour after lunch, and the Christmas Quiz Book for three nights round the table. Both on Amazon, both on our gift pages."
+  - date: "2026-11-25"
+    slug: gift-stargazers
+    page: stargazers
+    card: "A present for someone who looks up"
+    text: "A night somewhere truly dark, a first look at Saturn's rings, an astrophotography course, or a trip to see a total solar eclipse. Gift ideas for stargazers."
+  - date: "2026-11-26"
+    slug: gift-retirement
+    page: retirement
+    card: "Retirement presents for someone with plans"
+    text: "Leaving work this year? Skip the carriage clock. Piano lessons, a pottery class, a national trail, a language course or a canal boat: presents that fill the diary with something worth doing."
+  - date: "2026-11-27"
+    slug: gift-swimmers
+    page: swimmers
+    card: "Presents for swimmers and wild swimmers"
+    text: "A first wild swim with company, a coached open-water session, lessons for adults or a swim in the Serpentine. Gift ideas for swimmers, with the kit to go with them."
+  - date: "2026-11-28"
+    slug: gift-food
+    page: food-and-drink
+    card: "A day at cookery school, a loaf they made themselves"
+    text: "Cookery school, bread making, a sourdough kit, cheesemaking, a wine course or home brewing. Gift ideas for cooks and food lovers."
+  - date: "2026-11-29"
+    slug: gift-together
+    page: together
+    card: "The present is the day out, and you're part of it"
+    text: "Dance classes, bridge for two, a canal boat, a dawn bird walk or a day up Ben Nevis together. Several cost nothing but time, which makes your company the present."
+  - date: "2026-11-30"
+    slug: gift-runners
+    page: runners
+    card: "Presents for runners"
+    text: "A first parkrun with you alongside, a place in the Great North Run, a marathon to train for, a fell race or canicross with the dog. Gift ideas for runners."
+  - date: "2026-12-01"
+    slug: gift-on-the-water
+    page: on-the-water
+    card: "Lessons on the sea, the river or the canal"
+    text: "Paddleboarding, kayaking, sailing, surfing, rowing or a week on a canal boat. Gift ideas for life on the water, with where to find a course."
+  - date: "2026-12-02"
+    slug: gift-wildlife
+    page: wildlife
+    card: "Binoculars, a dawn walk, or a beehive"
+    text: "A guided bird walk, a bat walk at dusk, whale watching or a beekeeping course, with independent reviewers' picks of binoculars. Gift ideas for wildlife lovers."
+  - date: "2026-12-03"
+    slug: gift-experiences
+    page: experiences
+    card: "Experience gifts you can book now"
+    text: "Every idea on this page has somewhere to search or book it: balloon flights, pottery, glassblowing, cookery, stargazing and whale watching. No wrapping needed."
+  - date: "2026-12-04"
+    slug: gift-music
+    page: music-and-dance
+    card: "The instrument they always meant to learn"
+    text: "A ukulele and a beginners' course, piano lessons, drums, singing, or ballroom classes for two. Gift ideas for music lovers and dancers."
+  - date: "2026-12-05"
+    slug: gift-cyclists
+    page: cyclists
+    card: "Presents for cyclists"
+    text: "A sportive entry, a session on a velodrome, island-hopping the Hebrides, mountain biking skills or a bike maintenance class. Gift ideas for cyclists."
+  - date: "2026-12-06"
+    slug: gift-big-trips
+    page: big-trips
+    card: "The big one: a trip of a lifetime"
+    text: "The Inca Trail, the Kumano Kodo, Kilimanjaro, Antarctica, the Galápagos or the Camino. Bucket-list trips to give, or to go on together."
+  - date: "2026-12-07"
+    slug: gift-gardeners
+    page: gardeners
+    card: "Something to plant, something to learn"
+    text: "A garden design course, a tree to plant together, a wildflower patch, a beekeeping course or a day visiting open gardens. Gift ideas for gardeners."
+  - date: "2026-12-08"
+    slug: gift-curious
+    page: curious-minds
+    card: "For the person who is always reading up on something"
+    text: "A language course, creative writing, bridge lessons for two, a geology course or a first aid course. Gift ideas for curious minds."
+  - date: "2026-12-09"
+    slug: gift-hint-family
+    page: ""
+    kicker: "Drop a hint"
+    card: "Not sure what to ask for this year?"
+    ideas: []
+    text: "Browse our gift ideas by interest, save the ones you'd love, and send the list to the family as a hint. They get the ideas, the ways to book them and the kit to go with them."
+  - date: "2026-12-11"
+    slug: gift-reviewers-picks
+    page: walkers
+    kicker: "Christmas gift ideas"
+    card: "Kit chosen by independent reviewers, in their own words"
+    ideas: ["Walking boots: top pick and lower-cost pick", "Binoculars: three picks", "Each with a link to the full review"]
+    text: "Where an independent reviewer has named their picks, our gift pages show them: a top pick, another they recommend and a lower-cost one, in their words, with a link to the full review."
+  - date: "2026-12-13"
+    slug: gift-late-presents
+    page: experiences
+    kicker: "Left it late?"
+    card: "An experience needs no delivery"
+    text: "Still shopping? A class, a day out or a trip can be given as a card on Christmas morning. Our gift ideas show where to search and book, and what to check first."
+  - date: "2026-12-16"
+    slug: gift-last-minute
+    page: experiences
+    kicker: "Left it late?"
+    card: "Print a card, book the day"
+    text: "Too late for the post? Give an experience instead: book a pottery class, a balloon flight or a cookery school day, then write it in a card. Ideas by interest on our gift pages."
+  - date: "2026-12-20"
+    slug: gift-promise
+    page: together
+    kicker: "Left it late?"
+    card: "Some of the best presents cost nothing but time"
+    text: "A Saturday parkrun with you alongside, a wild swim with company, a walk up a hill you have both been meaning to climb. Write the promise in a card."
