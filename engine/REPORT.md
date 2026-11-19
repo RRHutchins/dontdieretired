@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-19)
 
-100 sources, 92 statements, 12 event profiles. Core 70, supported 22, thin 0, contested 0.
+100 sources, 92 statements, 12 event profiles. Core 71, supported 21, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -147,6 +147,7 @@
 | core | 9 | feet | Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. | nhs-blisters, ea-pavey-marathon, bmc-long-distance |
 | core | 9 | on the day | Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard. | rnli-tidal-wales-2026, swcpa-safety, wcp-safety |
 | core | 9 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. | lauersen-2014, cmo-2019 |
+| core | 9 | why | An easier week, every third week in this plan, lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. | rc-down-weeks, higdon-novice1, meeusen-2013-overtraining |
 | core | 9 | on the day | Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, rnli-open-water-swimming |
 | core | 9 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water, barwood-2024, oss-cold-water |
 | core | 9 | on the day | Your body temperature can keep falling for a while after you get out of cold water (afterdrop), so dry off and get into warm, windproof clothes and a hat as soon as you are out, and move about to make heat. After a short swim a warm shower is enough; avoid very hot water, and do not hold a hot water bottle against numb skin, which burns easily. | oss-cold-water, rlss-safer-open-water, knechtle-2020 |
@@ -194,7 +195,6 @@
 | supported | 5 | fuel and drink | Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. | eah-consensus-2015 (against: bc-sofa-50km) |
 | supported | 5 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker |
 | supported | 5 | why | Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control. | bmc-hill-fit, ydnpa-three-peaks |
-| supported | 4 | why | An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. | rc-down-weeks, higdon-novice1 |
 | supported | 3 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace |
 | supported | 3 | on the day | Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month. | inyo-whitney-leaflet |
 | supported | 3 | before you start | Plan for the snow-free season, usually July to late September. When snow or ice is on the mountain it needs winter mountaineering skills and equipment. | inyo-whitney, inyo-whitney-leaflet |

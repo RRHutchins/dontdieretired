@@ -58,7 +58,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - **Hill or stair repeats.** Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control. [1, 2]
 - **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. [2, 5, 20]
 - **Rest days.** Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. [3, 15]
-- **Easier weeks.** An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [11, 15]
+- **Easier weeks.** An easier week, every third week in this plan, lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [11, 15, 17]
 - **Carrying your pack.** Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. [2, 23]
 - **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [24, 25]
 
@@ -81,7 +81,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 3: an easier week.**
 
 - The long hill walk with your daypack eases back to 2.5 hours.
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15, 17]
 - New this week, hill or stair repeats on Thursday: it practises the climbing and the controlled descents the challenge is made of [1, 2]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [3, 15]
 
@@ -102,7 +102,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 6: an easier week.**
 
 - The long hill walk with your daypack eases back to 3.5 hours.
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15, 17]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [3, 15]
 
 **Week 7: building.**
@@ -121,7 +121,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 9: an easier week.**
 
 - The long hill walk with your daypack eases back to 4.5 hours.
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15, 17]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [3, 15]
 
 **Week 10: building.**
@@ -139,7 +139,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 12: an easier week.**
 
 - The long hill walk with your daypack eases back to 5.5 hours.
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15, 17]
 - Hill or stair repeats again on Thursday: it practises the climbing and the controlled descents the challenge is made of [1, 2]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [3, 15]
 

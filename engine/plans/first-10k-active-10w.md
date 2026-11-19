@@ -49,7 +49,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - **The easy runs.** Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. [9, 10]
 - **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. [3, 20]
 - **Rest days.** Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. [4, 15]
-- **Easier weeks.** An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [11, 15]
+- **Easier weeks.** An easier week, every third week in this plan, lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [11, 15, 17]
 - **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [23, 24]
 
 ## Each week, and why
@@ -71,7 +71,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 3: an easier week.**
 
 - The long run eases back to 25 minutes.
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15, 17]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 15]
 
 **Week 4: building.**
@@ -89,7 +89,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 6: an easier week.**
 
 - The long run eases back to 35 minutes.
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 15, 17]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 15]
 
 **Week 7: building.**

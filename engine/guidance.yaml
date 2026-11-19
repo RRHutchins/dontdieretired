@@ -31,7 +31,7 @@ guidance:
     use: advice
     text: Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit.
     for: [ea-training-pace]
-    note: Seiler's 2010 review (ijspp-2010-intensity; PubMed abstract re-opened 16 Nov 2026) describes about 80 per cent of sessions at low intensity and about 20 per cent hard, but the abstract does not say that drifting into a steadier pace on easy days does harm, so it backs `mostly-easy`, not this statement.
+    note: Seiler's 2010 review (ijspp-2010-intensity; PubMed abstract re-opened 16 Nov 2026) describes about 80 per cent of sessions at low intensity and about 20 per cent hard, but the abstract does not say that drifting into a steadier pace on easy days does harm, so it backs `mostly-easy`, not this statement. Opened 19 Nov 2026 and also not added, Stöggl and Sperlich 2015 (Frontiers in Physiology 6:295, review) says overdoing threshold work at the expense of low-intensity training "may exert a negative impact on the autonomic nervous system" with no further adaptation, but in elite athletes, and it adds that threshold training may suit recreational people more; Inoue and colleagues 2022 (Sports Medicine - Open 8:35, systematic review and meta-analysis) found athletes rate easy sessions harder than coaches intended, at very low certainty, and does not test the consequence. Neither backs the statement as worded for our readers.
   - id: no-big-jumps
     topic: progression
     applies: [endurance]
@@ -400,9 +400,10 @@ guidance:
     role: cutback
     applies: [endurance]
     use: why
-    text: An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again.
+    text: An easier week, every third week in this plan, lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again.
     short: it lets the last two weeks' tiredness clear so your fitness can catch up
-    for: [rc-down-weeks, higdon-novice1]
+    for: [rc-down-weeks, higdon-novice1, meeusen-2013-overtraining]
+    note: The ECSS/ACSM overtraining consensus (Meeusen and colleagues 2013; MSSE copy re-opened 19 Nov 2026) backs the principle that training must include overload and adequate recovery, that "acute fatigue after an adequate rest period can be followed by a positive adaptation", that overreaching "will eventually lead to an improvement in performance after recovery", and that recovery time belongs in a periodised programme. It sets no every-third-week rhythm (it recommends at least one passive rest day a week) and says the evidence for a supercompensation effect beyond this is not abundant; the every-third-week rhythm rests on RunnersConnect and Higdon, which is why the text now says it is this plan's rhythm.
   - id: why-pack
     topic: why
     role: pack

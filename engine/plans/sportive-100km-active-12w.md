@@ -50,7 +50,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - **The easy rides.** Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. [7, 8]
 - **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. [3, 18]
 - **Rest days.** Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. [4, 13]
-- **Easier weeks.** An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [9, 13]
+- **Easier weeks.** An easier week, every third week in this plan, lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [9, 13, 15]
 - **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [21, 22]
 
 ## Each week, and why
@@ -72,7 +72,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 3: an easier week.**
 
 - The long ride eases back to 37 km (23 miles).
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [9, 13]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [9, 13, 15]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 13]
 
 **Week 4: building.**
@@ -90,7 +90,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 6: an easier week.**
 
 - The long ride eases back to 49 km (31 miles).
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [9, 13]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [9, 13, 15]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 13]
 
 **Week 7: building.**
@@ -108,7 +108,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 9: an easier week.**
 
 - The long ride eases back to 66 km (41 miles).
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [9, 13]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [9, 13, 15]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 13]
 
 **Week 10: your biggest week.**

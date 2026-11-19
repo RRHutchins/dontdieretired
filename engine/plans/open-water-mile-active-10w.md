@@ -52,7 +52,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - **Sighting and breathing drills.** Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. [24]
 - **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. [3, 18]
 - **Rest days.** Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. [4, 13]
-- **Easier weeks.** An easier week every third week lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [9, 13]
+- **Easier weeks.** An easier week, every third week in this plan, lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [9, 13, 15]
 - **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [21, 22]
 
 ## Each week, and why
@@ -75,7 +75,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 3: an easier week.**
 
 - The continuous swim eases back to 750 metres.
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [9, 13]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [9, 13, 15]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 13]
 
 **Week 4: building.**
@@ -94,7 +94,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 6: an easier week.**
 
 - The continuous swim eases back to 950 metres.
-- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [9, 13]
+- Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [9, 13, 15]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [4, 13]
 
 **Week 7: building.**
