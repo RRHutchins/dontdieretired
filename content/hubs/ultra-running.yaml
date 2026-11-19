@@ -21,7 +21,7 @@ facets:
   continent: {europe: Europe, north-america: North America, africa: Africa, asia: Asia, oceania: Oceania, south-america: South America}
   terrain: {mountain: Mountain, trail: Trail and path, road: Road, desert: Desert, winter: Winter, island: Island}
   entry: {open: Open entry, ballot: Ballot or lottery, qualifier: Qualifying race needed, application: Application or invitation}
-  series: {utmb: UTMB World Series, centurion: Centurion Running, mds: Marathon des Sables, spine: Spine Races, aravaipa: Aravaipa Running, wtm: World Trail Majors, independent: Independent}
+  series: {utmb: UTMB World Series, centurion: Centurion Running, mds: Marathon des Sables, spine: Spine Races, aravaipa: Aravaipa Running, destination-trail: Destination Trail, racingtheplanet: RacingThePlanet 4 Deserts, threshold: Threshold Trail Series, wtm: World Trail Majors, independent: Independent}
 events:
 - id: utmb-mont-blanc
   name: HOKA UTMB Mont-Blanc
@@ -460,7 +460,7 @@ events:
 - id: centurion-autumn-100
   name: Autumn 100
   series: centurion
-  place: Streatley, on the Thames Path and the Ridgeway
+  place: Goring, on the Thames Path and the Ridgeway
   country: England, UK
   continent: europe
   km: [161]
@@ -471,8 +471,8 @@ events:
   month: [10]
   entry: [qualifier]
   entry_note: You must have finished a race of at least 50 miles within 15 hours.
-  note: Every leg returns to the same base, which makes it easier to crew. A 28-hour limit.
-  link: {label: 'Centurion: Autumn 100', url: 'https://www.centurionrunning.com/races/autumn-100-2026', checked: '2026-11-17'}
+  note: Every leg returns to the same base at Goring, where drop bags wait at miles 25, 50, 75 and 100. Crews are not permitted; pacers may run the whole last leg, from mile 75. A 28-hour limit.
+  link: {label: 'Centurion: Autumn 100', url: 'https://www.centurionrunning.com/races/autumn-100-2026', checked: '2026-11-19'}
 - id: ultra-trail-australia
   name: HOKA Ultra-Trail Australia by UTMB
   series: utmb
@@ -775,6 +775,273 @@ events:
   entry_note: Entry through UTMB, with a priority window for UTMB Index holders. KosciMiler entrants must meet the organisers' eligibility criteria.
   note: The routes climb Australia's highest peak, through granite outcrops and snow gum forest.
   link: {label: 'Ultra-Trail Kosciuszko by UTMB', url: 'https://kosciuszko.utmb.world/', checked: '2026-11-18'}
+- id: grindstone-100
+  name: Grindstone 100M by UTMB
+  series: utmb
+  place: Natural Chimneys Park, Shenandoah Valley
+  country: USA
+  continent: north-america
+  km: [167]
+  distances: 167.4 km (the Grindstone 100M)
+  climb: 6,400 m (about 21,000 ft)
+  terrain: [mountain, trail]
+  format: single
+  month: [9]
+  entry: [open]
+  entry_note: Online registration until the race sells out; no qualifying race is listed. Runners must be 18 or over and do at least 8 hours of trail stewardship work.
+  note: It starts at the Natural Chimneys and includes single-track ridge running and climbs such as Elliott's Knob, with a 36-hour limit.
+  link: {label: 'Grindstone 100M: race page', url: 'https://grindstone.utmb.world/races/100M', checked: '2026-11-19'}
+- id: bigfoot-200
+  name: Bigfoot 200
+  series: destination-trail
+  place: Cascade Mountains, Washington
+  country: USA
+  continent: north-america
+  km: [322]
+  distances: 200.1 miles, point to point
+  climb: 44,082 ft (about 13,400 m)
+  terrain: [mountain, trail]
+  format: single
+  month: [8]
+  entry: [ballot]
+  entry_note: Places for the 2026 race were drawn by lottery; the 2027 race page now points to a waitlist on UltraSignup. The organiser's pages list no qualifying race.
+  note: The course passes Mount St Helens and its lava fields, with 12 full aid stations, 5 sleep stations and a 107-hour cut-off.
+  link: {label: 'Destination Trail: Bigfoot 200', url: 'https://www.destinationtrailrun.com/bigfoot', checked: '2026-11-19'}
+- id: tahoe-200
+  name: Tahoe 200
+  series: destination-trail
+  place: Lake Tahoe, California and Nevada
+  country: USA
+  continent: north-america
+  km: [322]
+  distances: 200.4 miles, one loop
+  climb: 32,093 ft (about 9,800 m)
+  terrain: [mountain, trail]
+  format: single
+  month: [6]
+  entry: [ballot]
+  entry_note: Places for the 2026 race were drawn by lottery; the 2027 race page now points to a waitlist on UltraSignup. The organiser's pages list no qualifying race.
+  note: One loop of Lake Tahoe, mostly on the Tahoe Rim Trail with lots of single track, and a 105-hour cut-off. The organisers say it has returned to the original full loop.
+  link: {label: 'Destination Trail: Tahoe 200', url: 'https://www.destinationtrailrun.com/tahoe', checked: '2026-11-19'}
+- id: moab-240
+  name: Moab 240
+  series: destination-trail
+  place: Moab, Utah
+  country: USA
+  continent: north-america
+  km: [389]
+  distances: 241.8 miles (the "240")
+  climb: 31,696 ft (about 9,700 m)
+  terrain: [desert, mountain, trail]
+  format: single
+  month: [10]
+  entry: [ballot]
+  entry_note: Lottery for 2027, open in January 2027 with the draw soon after. The page lists no qualifying race.
+  note: Desert, canyons, slickrock and two mountain ranges near Canyonlands and Arches, with 15 full aid stations (five of them sleep stations) and a 112-hour cut-off. The 2026 race was cancelled because of dangerous weather on the course.
+  link: {label: 'Destination Trail: Moab 240', url: 'https://www.destinationtrailrun.com/moab', checked: '2026-11-19'}
+- id: iditarod-trail-invitational
+  name: Iditarod Trail Invitational
+  series: independent
+  place: Knik Lake, Alaska
+  country: USA
+  continent: north-america
+  km: [241, 563, 1609]
+  distances: 150, 350 and 1,000 miles, on foot, by bike or on skis
+  terrain: [winter, trail]
+  format: single
+  month: [2]
+  entry: [application, qualifier]
+  entry_note: You apply through the organiser's website. The 350 needs two finishes in listed winter qualifying events (such as the ITI 150, Arrowhead 135 or Yukon Arctic Ultra) and/or significant winter experience; the 150 is the route towards the 350. Applications for 2027 have closed, with a waitlist.
+  note: Racers travel under their own power along the Iditarod Trail and haul their own survival gear; the 350 finishes in McGrath and the 1,000 in Nome.
+  link: {label: 'Iditarod Trail Invitational: official site', url: 'https://itialaska.com/', checked: '2026-11-19'}
+- id: yukon-arctic-ultra
+  name: Yukon Arctic Ultra
+  series: independent
+  place: Whitehorse, Yukon
+  country: Canada
+  continent: north-america
+  km: [32, 150, 375, 480]
+  distances: 32 km, 150 km, 375 km and 480 km, on foot, by fatbike or on skis
+  terrain: [winter, trail]
+  format: single
+  month: [2]
+  entry: [application]
+  entry_note: Entry is by application. Athletes without experience of extreme cold must first take the organisers' training course in the week before the start.
+  note: Cut-offs run from 3 days (150 km) to 8 days (480 km), and the organisers tell athletes to prepare for -50°C (-58°F) and colder, soft trails and overflow.
+  link: {label: 'Yukon Arctic Ultra: race info', url: 'https://arcticultra.de/race-info', checked: '2026-11-19'}
+- id: atacama-crossing
+  name: Atacama Crossing
+  series: racingtheplanet
+  place: San Pedro de Atacama
+  country: Chile
+  continent: south-america
+  km: [250]
+  distances: 250 km (155 miles) in 6 stages over 7 days
+  climb: 2,813 m (9,230 ft)
+  terrain: [desert]
+  format: stage
+  month: [4]
+  entry: [open]
+  entry_note: Online application; the organiser says registration is open to all individuals and teams.
+  note: Self-supported, so you carry your own food and kit; the whole course is above 2,300 m (7,500 ft), over dunes, salt flats and river crossings.
+  link: {label: 'RacingThePlanet: Atacama Crossing at a glance', url: 'https://www.racingtheplanet.com/chile/atacama-crossing/at-a-glance', checked: '2026-11-19'}
+- id: gobi-march
+  name: Gobi March
+  series: racingtheplanet
+  place: Orkhon Valley (runners meet in Ulaanbaatar)
+  country: Mongolia
+  continent: asia
+  km: [250]
+  distances: 250 km (155 miles) in six stages
+  terrain: [desert, trail]
+  format: stage
+  month: [6]
+  entry: [open]
+  entry_note: Online registration with a deposit to hold a place. The page lists no experience requirement.
+  note: Runners carry their own gear and food; the organisers provide tents, water and medical support, across steppe, dunes, rocky valleys and river crossings.
+  link: {label: 'RacingThePlanet: Gobi March at a glance', url: 'https://www.racingtheplanet.com/mongolia/gobi-march/at-a-glance', checked: '2026-11-19'}
+- id: kepler-challenge
+  name: Kepler Challenge
+  series: independent
+  place: Kepler Track, Fiordland National Park (base Te Anau)
+  country: New Zealand
+  continent: oceania
+  km: [60]
+  distances: 60 km
+  climb: About 2,200 m (about 7,200 ft)
+  terrain: [mountain, trail]
+  format: single
+  month: [12]
+  entry: [open]
+  entry_note: Entries open online at 6.30am on the first Saturday in July and sell out; later entrants go on a waitlist. No qualifying race is listed.
+  note: Held on the first Saturday in December on the Kepler Track, one of New Zealand's Great Walks, climbing to 1,400 m with steep climbs and descents.
+  link: {label: 'Kepler Challenge: race page', url: 'https://keplerchallenge.co.nz/kepler-challenge/', checked: '2026-11-19'}
+- id: andorra-by-utmb
+  name: Trail 100 Andorra by UTMB
+  series: utmb
+  place: Ordino
+  country: Andorra
+  continent: europe
+  km: [105, 79]
+  distances: Ultra 105K and Trail 80K (79 km), plus shorter races
+  climb: 6,800 m (105K); 3,900 m (80K)
+  terrain: [mountain, trail]
+  format: single
+  month: [6]
+  entry: [open]
+  entry_note: Open registration on the event site after a priority phase. The 105K earns 4 Running Stones.
+  note: The 105K tours the whole principality, passing mountain shelters and the Comapedrosa, with a 34-hour limit.
+  link: {label: 'Trail 100 Andorra by UTMB: races', url: 'https://andorra.utmb.world/races', checked: '2026-11-19'}
+- id: ultra-pirineu
+  name: Salomon Ultra Pirineu 100K
+  series: independent
+  place: Bagà, Catalonia
+  country: Spain
+  continent: europe
+  km: [100]
+  distances: 100 km loop
+  climb: 6,600 m
+  terrain: [mountain, trail]
+  format: single
+  month: [10]
+  entry: [open, qualifier]
+  entry_note: Direct online registration, with no waiting list once full. You must be an adult and have done a mountain race, crossing or training run of at least 40 km in the qualifying period.
+  note: The loop crosses the Cadí-Moixeró Natural Park on 82% trail, 13% track and 5% tarmac.
+  link: {label: 'Ultra Pirineu: 100K race page', url: 'https://ultrapirineu.com/en/races/ultra/', checked: '2026-11-19'}
+- id: highland-fling
+  name: Highland Fling
+  series: independent
+  place: Milngavie to Tyndrum, West Highland Way
+  country: Scotland, UK
+  continent: europe
+  km: [85]
+  distances: 53 miles (85 km), point to point
+  climb: 2,300 m
+  terrain: [trail]
+  format: single
+  entry: [open, qualifier]
+  entry_note: You need to have finished an ultra, a trail marathon or a road marathon in under 5 hours in the qualifying period, and be at least 20 on race day.
+  note: The southern 53 miles of the West Highland Way through Loch Lomond and the Trossachs National Park, on a waymarked route, with an early start for slower runners.
+  link: {label: 'Highland Fling: official site', url: 'https://www.highlandflingrace.org/', checked: '2026-11-19'}
+- id: race-to-the-king
+  name: Race to the King
+  series: threshold
+  place: West Dean Gardens, near Chichester, South Downs National Park
+  country: England, UK
+  continent: europe
+  km: [30, 50, 80, 100]
+  distances: 30 km, two 50 km routes (Coastal and Castle), 80 km and 100 km non-stop
+  terrain: [trail]
+  format: single
+  month: [6]
+  entry: [open]
+  entry_note: Open registration for runners and walkers, from first-time trail runners and hikers to experienced ultra runners.
+  note: Routes start and finish at West Dean Gardens, on chalk downland and coastal paths around Chichester Harbour, close to the summer solstice.
+  link: {label: 'Threshold Trail Series: Race to the King 2027', url: 'https://www.thresholdtrailseries.com/race-to-the-king/', checked: '2026-11-19'}
+- id: summer-spine-race
+  name: Montane Summer Spine Race
+  series: spine
+  place: Edale, Derbyshire to Kirk Yetholm, Scottish Borders (the Pennine Way)
+  country: England and Scotland, UK
+  continent: europe
+  km: [431]
+  distances: 268 miles, non-stop
+  climb: 10,732 m
+  terrain: [mountain, trail]
+  format: single
+  month: [6]
+  entry: [qualifier, application]
+  entry_note: You must be at least 21. Full qualification is an ultra of over 80 miles or a Challenger North or South finish; other mountain, fell or navigation experience can be set out on the entry form. The organisers say it is not a beginner-friendly race. The 2027 race is sold out, with a waiting list.
+  note: The whole Pennine Way, non-stop and unsupported, with a 156-hour limit. The organisers call it "Britain's Most Brutal".
+  link: {label: 'The Spine Race: Montane Summer Spine', url: 'https://www.thespinerace.com/race/summer-spine/summer-spine-spine/', checked: '2026-11-19'}
+- id: kaga-spa-by-utmb
+  name: Kaga Spa Trail Endurance 100 by UTMB
+  series: utmb
+  place: Yamanaka Onsen, Kaga, Ishikawa
+  country: Japan
+  continent: asia
+  km: [97]
+  distances: KagaSpa 100K (97.4 km), plus 50K and 20K
+  climb: 5,122 m
+  terrain: [mountain, trail]
+  format: single
+  month: [6]
+  entry: [open]
+  entry_note: First come, first served and open to runners aged 18 or over, with a 48-hour priority window for UTMB Index holders.
+  note: Steep mountain trails, single track along mountain streams and ridgeline paths from the hot-spring town of Yamanaka Onsen, with a 27-hour limit.
+  link: {label: 'Kaga Spa by UTMB: KagaSpa 100K', url: 'https://kagaspa.utmb.world/races/KagaSpa100', checked: '2026-11-19'}
+- id: om-die-dam
+  name: Trojan Om Die Dam
+  series: independent
+  place: Hartbeespoort, North West
+  country: South Africa
+  continent: africa
+  km: [50]
+  distances: 50 km (also 21.1 km and 8 km)
+  climb: 595 m
+  terrain: [road]
+  format: single
+  month: [3]
+  entry: [open]
+  entry_note: Online entry, capped at 4,000 for the 50 km and closing at the end of January or when full. Foreign runners get a temporary licence with their entry.
+  note: A road loop around Hartbeespoort Dam that crosses the dam wall, with a 7-hour cut-off. The organisers list it as an official Comrades qualifier.
+  link: {label: 'Trojan Om Die Dam: official site', url: 'https://omdiedammarathon.co.za/', checked: '2026-11-19'}
+- id: marathon-du-mont-blanc-90k
+  name: 90km du Mont-Blanc
+  series: independent
+  place: Chamonix
+  country: France
+  continent: europe
+  km: [88]
+  distances: 88 km
+  climb: 6,200 m
+  terrain: [mountain]
+  format: single
+  month: [6]
+  entry: [ballot, open]
+  entry_note: Half the places go by lottery; the rest are first come, first served for Chamonix Valley residents and for runners travelling by train or bus. The organisers warn that runners with a UTMB Index below 450 have "very little chance of finishing".
+  note: Part of the Marathon du Mont-Blanc week. A semi-self-supported race on sometimes narrow, exposed paths, with possible snow between 2,000 and 2,500 m, 900 places and a 24-hour limit.
+  link: {label: 'Marathon du Mont-Blanc: 90km', url: 'https://www.marathonmontblanc.fr/en/races/90km-du-mont-blanc', checked: '2026-11-19'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
@@ -975,3 +1242,64 @@ guides:
   - {label: 'Burgess, Durand and Buchholtz, Training load and injury in ultramarathon runners, South African Journal of Sports Medicine, 2025', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12327882/', checked: '2026-11-18'}
   - {label: 'NHS, Knee pain and other running injuries', url: 'https://www.nhs.uk/live-well/exercise/knee-pain-and-other-running-injuries/', checked: '2026-11-18'}
   - {label: 'NHS, Heat exhaustion and heatstroke', url: 'https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/', checked: '2026-11-18'}
+- slug: eating-and-drinking
+  title: Eating and drinking in an ultra, from aid stations to your own pockets
+  short: Food, fluid and salt on the move
+  seo_title: 'Ultramarathon nutrition: food, fluid and salt on the move'
+  description: How much ultra runners are advised to eat and drink an hour, what aid stations usually offer, why overdrinking can be dangerous, and how to train your stomach.
+  standfirst: In a long ultra, eating is part of the race. The research gives some useful ranges per hour, race medical teams warn about drinking too much, and the rest you find out in training.
+  detail:
+  - h: How much, per hour
+    p:
+    - The International Society of Sports Nutrition (ISSN) published a position stand on nutrition for single-stage ultramarathons in 2019. It suggests aiming for 150 to 400 kcal an hour during a race, made up of 30 to 50 g of carbohydrate and 5 to 10 g of protein, from a variety of calorie-dense foods.
+    - For fluid, the same paper suggests 450 to 750 ml an hour, which works out at about 150 to 250 ml every 20 minutes. It adds that you need more fluid and electrolytes when it is hot or humid.
+    - These are starting points, not targets to force down. The ISSN authors say palatability and your own tolerance matter, and that runners tend to prefer savoury food as races get longer.
+    table:
+      head: [What, The ISSN 2019 range, What that looks like]
+      rows:
+      - [Energy, 150 to 400 kcal an hour, From a variety of calorie-dense foods]
+      - [Carbohydrate, 30 to 50 g an hour, 'Part of the energy above, not on top of it']
+      - [Protein, 5 to 10 g an hour, 'Part of the energy above, not on top of it']
+      - [Fluid, 450 to 750 ml an hour, About 150 to 250 ml every 20 minutes]
+  - h: What aid stations usually offer
+    p:
+    - Look up your race's aid station list before you plan your own food. Centurion Running's Autumn 100 in England lists 16 fully stocked aid stations with gels, chews, electrolyte drink, water, cola, chocolate, sweets and biscuits, nuts, fruit, sandwiches and wraps, and savoury snacks such as mini sausage rolls. Hot drinks are served on the later legs and hot food at the race base.
+    - Check whether you need your own cup. Centurion puts a cup or mug on its mandatory kit list, alongside bottles or a bladder that hold at least 1 litre of water, because you carry what you need between aid stations.
+  - h: Drinking too much can be dangerous
+    p:
+    - Western States, the 100-mile race in California, tells its runners that those who develop symptoms of low blood sodium (hyponatraemia) have generally been overhydrating, and that the best way to avoid it is not to overhydrate. Its medical page says there is no evidence that extra sodium or electrolyte drinks instead of water prevent it.
+    - The race also warns that weight change is not a reliable guide, because hyponatraemia can happen with weight gain or loss, and it does not weigh runners at aid stations. Its medical team watches how runners look, feel and think instead.
+    - The symptoms Western States lists are bloating, nausea, vomiting, headache, confusion, poor coordination, dizziness and fatigue; untreated, it can lead to seizures, coma and death. It may get worse after you stop, as fluid still in the stomach is absorbed.
+    - The ISSN paper says electrolytes, mainly sodium, may be needed in drinks at higher concentrations than most commercial products provide. Western States' point is a different one: extra sodium does not protect you from drinking too much.
+  - h: Training your stomach
+    p:
+    - Stomach trouble is common: a 2023 systematic review in Nutrients, by Tansy Ryan and colleagues, cites estimates that gut symptoms during exercise affect between 30% and 90% of distance athletes. The review found seven studies of nutrition strategies for ultra-endurance athletes' gut symptoms. It concluded that avoiding high-FODMAP foods (certain fermentable carbohydrates) and practising eating carbohydrate repeatedly during training are promising, but that the studies were small.
+    - The ISSN position stand makes the same point: progressive gut training and, for some runners, a low-FODMAP diet can reduce stomach problems during racing.
+    - In practice, that means eating on every long training run, with the foods and drinks you will use on the day (including what the aid stations serve), and slowly building up the amount.
+  - h: Caffeine, keto and painkillers
+    p:
+    - The ISSN authors say caffeine can help sustain performance late in a race, especially when lack of sleep could make a runner unsafe. If you use it, try it in training first.
+    - They found the evidence that ketogenic diets or ketone drinks improve ultra performance is lacking.
+    - Western States warns that anti-inflammatory painkillers such as ibuprofen can worsen acute kidney injury and could land a runner in hospital with kidney failure, and tells runners not to mask pain with a pill.
+  - h: When to stop and get help
+    p:
+    - Confusion, poor coordination, vomiting or a bad headache during or after an ultra need urgent medical help. Go to the race medics at once, or call 999 (911 in the US) if you are off the course.
+  - h: What we have not done
+    p:
+    - This guide is written with AI from the pages listed below, opened on the date shown. It has not been reviewed by a coach, a doctor or a dietitian. If you have a health condition, especially one affecting your heart, kidneys or blood sugar, or take regular medicines, check with your GP (family doctor) before racing.
+  faq:
+  - q: How many calories should I eat in an ultra?
+    a: The ISSN 2019 position stand suggests 150 to 400 kcal an hour, from a variety of foods, and practising it in training.
+  - q: Should I drink to a schedule?
+    a: The ISSN suggests 450 to 750 ml an hour as a range, more in the heat. Western States warns that overhydrating is what generally causes symptomatic hyponatraemia, so do not drink more than you need.
+  - q: Do salt tablets stop hyponatraemia?
+    a: Western States says there is no evidence that extra sodium or electrolyte drinks prevent it. Not overdrinking is what it advises.
+  kit:
+  - {name: Soft flasks, why: 'check the total volume against your race''s minimum water rule (Centurion asks for at least 1 litre)', url: 'https://www.amazon.co.uk/s?k=soft+flask+500ml+running'}
+  - {name: Collapsible running cup, why: 'check your race''s kit list says a cup is needed and how much it should hold', url: 'https://www.amazon.co.uk/s?k=collapsible+running+cup'}
+  - {name: Electrolyte drink tablets, why: 'check the sodium per tablet, and practise with them in training', url: 'https://www.amazon.co.uk/s?k=electrolyte+tablets+running'}
+  sources:
+  - {label: 'Tiller and colleagues, International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing, Journal of the International Society of Sports Nutrition, 2019', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/', checked: '2026-11-19'}
+  - {label: 'Ryan, Daly and Ryan, Exploring the nutrition strategies employed by ultra-endurance athletes to alleviate exercise-induced gastrointestinal symptoms: a systematic review, Nutrients, 2023', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10610183/', checked: '2026-11-19'}
+  - {label: 'Western States Endurance Run, Medical and other risks', url: 'https://www.wser.org/medical-and-other-risks/', checked: '2026-11-19'}
+  - {label: 'Centurion Running, Autumn 100 2026', url: 'https://www.centurionrunning.com/races/autumn-100-2026', checked: '2026-11-19'}
