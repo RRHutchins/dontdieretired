@@ -244,8 +244,12 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
     # Planner Plus day 10: "While you're there" (other activities tied to the same area: same `places` key; not a weekly
     # habit, which is not something you do on a trip) and "Goes well with" (the activity's `related`, then the activities
     # that list it as related, then the rest of its collection). Ids only; the pages look up titles and plans.
+    # Season (Robin's "make the most of the year"; found 19 Nov 2026): a nearby activity that can never happen in the same
+    # months as this one (Hogmanay or Celtic Connections offered on an August Fringe trip) is left out. An empty `when`
+    # means any month. DDRPlan.extras() also drops one that is out of season for the plan's own dates.
     area_names = _areas(root)
     by_c = {c["id"]: c for c in chs}
+    months = {a["id"]: set(a["when"]) for a in out}
     for a in out:
         c = by_c[a["id"]]
         mine = list(c.get("places") or [])
@@ -253,6 +257,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         if mine:
             for m in chs:
                 if m is c or m.get("kind") == "habit": continue
+                if months[c["id"]] and months[m["id"]] and not (months[c["id"]] & months[m["id"]]): continue
                 shared = [pl for pl in mine if pl in (m.get("places") or [])]
                 if shared: near.append((-len(shared), m.get("time") != "afternoon", m["title"].lower(), m["id"], area_names.get(shared[0], shared[0])))
         a["nearby"] = [[x[3], x[4]] for x in sorted(near)[:NEAR_MAX]]

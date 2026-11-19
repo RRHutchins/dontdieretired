@@ -194,7 +194,11 @@
       return e;
     };
     const away = !!plan.until || (!!a.place_tied && a.kind !== 'habit');
-    if (away) (a.nearby || []).forEach(n => { const e = entry(n[0], n[1], true); if (e) out.nearby.push(e); });
+    // the months the trip covers; a nearby activity whose season misses all of them is not offered "while you're there"
+    const tripMonths = new Set();
+    for (let d = plan.date; d <= (plan.until || plan.date); d = iso(addDays(parse(d), 1))) tripMonths.add(+d.slice(5, 7));
+    const inSeason = t => !t || !(t.when || []).length || t.when.some(m => tripMonths.has(m));
+    if (away) (a.nearby || []).forEach(n => { if (!inSeason(acts[n[0]])) return; const e = entry(n[0], n[1], true); if (e) out.nearby.push(e); });
     (a.goes || []).forEach(id => { if (out.nearby.some(e => e.id === id)) return; const e = entry(id, '', false); if (e) out.goes.push(e); });
     return out;
   }

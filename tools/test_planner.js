@@ -539,8 +539,36 @@ t('trip day 10: nearby activities share an area, never the activity itself or a 
   }
   assert.ok(byId['go-to-edinburgh-fringe'].nearby.length > 0);
 });
+t('nearby is in season: never an activity whose months miss this one\'s (no Hogmanay on an August Fringe trip), and none out of season for the plan\'s own dates', () => {
+  for (const a of acts) a.nearby.forEach(([id]) => {
+    const m = byId[id];
+    if (a.when.length && m.when.length) assert.ok(m.when.some(x => a.when.includes(x)), a.id + ' offers ' + id + ' out of season');
+  });
+  assert.ok(!byId['go-to-edinburgh-fringe'].nearby.some(([id]) => id === 'celebrate-hogmanay-in-edinburgh' || id === 'go-to-celtic-connections'));
+  // for the plan's dates: an activity open all year is offered, one for other months is not, a stay across two months counts both
+  const base = acts.find(a => a.place_tied && a.kind !== 'habit' && !a.event && !a.when.length && !a.dates);
+  assert.ok(base, 'a real place-tied activity with no season');
+  const mk = (id, when) => Object.assign({}, base, { id, when, nearby: [] });
+  const A = Object.assign({}, base, { nearby: [['t-any', 'X'], ['t-jan', 'X'], ['t-aug', 'X'], ['t-sep', 'X']] });
+  const acts2 = { [A.id]: A, 't-any': mk('t-any', []), 't-jan': mk('t-jan', [1]), 't-aug': mk('t-aug', [8]), 't-sep': mk('t-sep', [9]) };
+  const ids = o => P.extras(A, data, Object.assign({ acts: acts2, today: TODAY, items: {} }, o)).nearby.map(e => e.id);
+  assert.deepStrictEqual(ids({ plan: P.build(A, data, { today: TODAY, date: '2027-08-14' }) }), ['t-any', 't-aug']);
+  assert.deepStrictEqual(ids({ plan: P.build(A, data, { today: TODAY, date: '2027-08-28', until: '2027-09-02' }) }), ['t-any', 't-aug', 't-sep']);
+  assert.deepStrictEqual(ids({ plan: P.build(A, data, { today: TODAY, month: '2027-01' }) }), ['t-any', 't-jan']);
+});
+const byIdAll = byId;
 t('trip day 10: Add to my year puts a nearby activity on a free day of the same trip; events and set dates go to their own page', () => {
-  const f = byId['go-to-edinburgh-fringe'], plan = planFor('go-to-edinburgh-fringe', { date: '2027-08-14', until: '2027-08-18' });
+  // The real data may have no half-day activity in the Fringe's area (none in Scotland since 19 Nov 2026), so a stand-in
+  // one, copied from a real local half-day activity with no fixed date, is added to the Fringe's nearby list for this test.
+  const half = acts.find(a => !a.place_tied && a.kind !== 'habit' && a.kind !== 'event' && a.time === 'afternoon' && !a.dates && !a.event && !a.when.length);
+  assert.ok(half, 'a real half-day activity to copy');
+  const byId0 = byIdAll;
+  const byIdT = Object.assign({}, byId0, { 'test-half-day-in-scotland': Object.assign({}, half, { id: 'test-half-day-in-scotland', place_tied: true }) });
+  const f = Object.assign({}, byId0['go-to-edinburgh-fringe']);
+  f.nearby = f.nearby.concat([['test-half-day-in-scotland', 'Scotland']]);
+  const byId = byIdT;
+  const planFor = (id, when, made) => P.build(byId[id], data, Object.assign({ today: made || TODAY }, when));
+  const plan = planFor('go-to-edinburgh-fringe', { date: '2027-08-14', until: '2027-08-18' });
   const items = { 'go-to-edinburgh-fringe': { date: '2027-08-14', until: '2027-08-18', plan_made: TODAY } };
   const x = P.extras(f, data, { plan, items, acts: byId, today: TODAY });
   assert.strictEqual(x.nearby.length, f.nearby.length);
