@@ -11,6 +11,7 @@ art: books
 photo_file: "File:Delmar Blvd west of Limit Ave in University City with Loop Trolley car, Dec. 2018.jpg"
 photo_caption: "Delmar Boulevard in University City, Missouri, with a Loop Trolley car, December 2018. Gold Shoe Books is elsewhere in the city, at Pershing and Jackson."
 photo_alt: "A city street with tram tracks, parked cars and two- and three-storey brick shopfronts under a blue sky; a red vintage trolley car approaches in the distance and garlands hang across the road."
+photo_checked: 2026-11-19
 hook: "Years of bookshop plans never added up. Then Debra Kennard saw an empty shop on her walk to work."
 lesson: "A plan that does not work on paper can work when the right place turns up, so keep the plan ready and keep your eyes open."
 standfirst: "Debra Kennard had drawn up business plans for a bookshop that never worked financially. This spring, at 57, she spotted a vacant storefront on her walk to work in University City, Missouri, and by September Gold Shoe Books was open: 300 square feet, one owner, and a name taken from a children's book about a bunny."
