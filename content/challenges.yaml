@@ -6149,16 +6149,185 @@
   company: either
   regions:
   - us
-  why: America's Byways are roads chosen for their scenery, history or culture, and each has a clear beginning and end. Driving one whole gives a road trip a shape and takes you through places the interstates miss.
+  why: America's Byways are roads chosen for their scenery, history or culture, and each has a clear beginning and end. Driving one whole gives a road trip a shape and takes you through places the interstates
+    miss.
   start:
-  - Browse the official America's Byways site and pick a route.
-  - Plan your overnight stops and a few places to get out and walk.
+  - Browse the official America's Byways site and pick a route that fits the time you have.
+  - Check the season and any closures on the state transportation department or park page, then plan your overnight stops and a few places to get out and walk.
   - Drive it from one end to the other, without shortcuts.
   links:
   - label: America's Byways (Federal Highway Administration)
     url: https://fhwaapps.fhwa.dot.gov/bywaysp
     region: us
     checked: '2026-10-06'
+  - label: 'Federal Highway Administration: America''s Byways designations'
+    url: https://www.fhwa.dot.gov/hep/scenic_byways/designations
+    region: us
+    checked: '2026-11-19'
+  - label: 'National Park Service: Natchez Trace Parkway, things to know before you visit'
+    url: https://www.nps.gov/natr/planyourvisit/before-you-visit.htm
+    region: us
+    checked: '2026-11-19'
+  - label: 'National Park Service: Yellowstone park roads (includes Beartooth Highway status)'
+    url: https://www.nps.gov/yell/planyourvisit/parkroads.htm
+    region: us
+    checked: '2026-11-19'
+  safety: Mountain and coastal byways can close at short notice for snow, slides or storms, so check the state transportation department or park page on the day you drive.
+  seo_title: 'National Scenic Byways: how to choose an America''s Byway'
+  description: What National Scenic Byways and All-American Roads are, how many there are, and six well-known byways compared by length, season and closures.
+  detail:
+  - h: What a National Scenic Byway is
+    p:
+    - America's Byways is the name the Federal Highway Administration (FHWA) gives to the roads the US Secretary of Transportation has recognised as National Scenic Byways or All-American Roads. FHWA says
+      there are 184 of them in 48 states. The most recent round of designations it lists was announced in February 2021, when 49 roads were added, 15 All-American Roads and 34 National Scenic Byways in
+      28 states. FHWA's later scenic byways news, in 2022 and 2023, was about grant funding rather than new designations.
+    - 'Each byway is recognised for one or more of six intrinsic qualities: archaeological, cultural, historic, natural, recreational and scenic.'
+    - The two designations are not equal. Under the program's nomination guidance, a National Scenic Byway needs at least one of the six qualities, recognised across its region. An All-American Road needs
+      several qualities of national significance, features found nowhere else, and must be a "destination unto itself", a road people would plan a trip around.
+  - h: Six well-known byways compared
+    table:
+      head:
+      - Byway
+      - State(s)
+      - Length
+      - Designation
+      - Season and closures (checked 19 November 2026)
+      - One fact
+      rows:
+      - - Beartooth Highway (US 212)
+        - Montana, Wyoming
+        - 68.7 miles (110.6 km)
+        - All-American Road
+        - Closed for the season now. The National Park Service says it typically opens the Friday of Memorial Day weekend and closes in mid-October; in 2026 the closure was set for 13 October
+        - FHWA calls it the highest-elevation highway in the Northern Rockies; its summit is 10,947 feet (3,337 m)
+      - - 'Route 1: Big Sur Coast Highway'
+        - California
+        - 72 miles (115.9 km)
+        - All-American Road
+        - Reopened fully on 14 January 2026 after landslides had stopped through travel since January 2023; Caltrans warns mud can wash onto the road in heavy rain
+        - FHWA suggests 1.5 hours to drive it or five hours to take it in
+      - - Natchez Trace Parkway
+        - Mississippi, Alabama, Tennessee
+        - 444 miles (714.5 km)
+        - All-American Road
+        - The National Park Service warns there are often detours and the road is not treated for ice or snow; check its alerts page
+        - No entrance fee, a 50 mph limit in most places and no commercial vehicles; allow at least 10 hours of driving
+      - - Kancamagus Scenic Byway
+        - New Hampshire
+        - 26.5 miles (42.6 km)
+        - National Scenic Byway
+        - The FHWA page gives no seasonal information
+        - Driving it is free, but cars left unattended in the National Forest need a recreation pass
+      - - Florida Keys Scenic Highway (US 1)
+        - Florida
+        - 106.5 miles (171.4 km)
+        - All-American Road
+        - The FHWA page gives no seasonal information
+        - Runs from Key Largo to Key West; allow four hours
+      - - Great River Road
+        - Ten states along the Mississippi, Minnesota to Louisiana
+        - 2,069 miles (3,329.7 km)
+        - All-American Road and National Scenic Byway
+        - The FHWA page gives no seasonal information
+        - FHWA suggests six days to drive it, or ten to enjoy it
+    after: Lengths are as FHWA's America's Byways pages give them. The Great River Road's own description says about 3,000 miles, but its listed length is 2,069 miles, so check which stretch your map covers.
+  - h: How to choose one
+    list:
+    - Start with time. The Kancamagus takes about an hour, Beartooth two or three hours, the Natchez Trace two days and the Great River Road six days or more, on FHWA's own estimates.
+    - Pick the quality you care about. Each byway page lists its intrinsic qualities, so a history lover might choose the Natchez Trace, which follows a trail used by Native Americans, boatmen, post riders
+      and soldiers, and a mountain lover Beartooth.
+    - Match the season. High mountain roads such as Beartooth open only from late May to mid-October, while on the Natchez Trace the National Park Service warns of detours, storms and the odd untreated
+      ice or snow.
+    - Check the road. The National Park Service and state transportation departments post closures and detours, and some, like Yellowstone's roads page, say to check again before you set off.
+    - Our separate pages cover the Blue Ridge Parkway, the Going-to-the-Sun Road and Route 66.
+  - h: The honest hard parts
+    p:
+    - Driving a byway end to end is mostly about patience. Speed limits are low (50 mph on most of the Natchez Trace), services can be thin, and mobile signal drops in rural stretches. Long byways are one-way
+      trips, so you will need to drive back or arrange to drop off a hire car at the far end.
+    - Closures are real. Big Sur's coast road had no through route for about three years until January 2026. Plan a back-up route and treat opening dates as typical, not promised.
+  faq:
+  - q: How many National Scenic Byways are there?
+    a: FHWA counts 184 America's Byways in 48 states, which includes both National Scenic Byways and All-American Roads. That total dates from the 2021 round of designations.
+  - q: What is the difference between a National Scenic Byway and an All-American Road?
+    a: A National Scenic Byway has at least one of six intrinsic qualities of regional significance. An All-American Road has several of national significance and must be a destination in its own right.
+  - q: What are the six intrinsic qualities of a scenic byway?
+    a: Archaeological, cultural, historic, natural, recreational and scenic.
+  - q: When is the Beartooth Highway open?
+    a: The National Park Service says it is typically open from the Friday of Memorial Day weekend to mid-October, with occasional weather closures after it opens. It is closed for the season now.
+  - q: Is Highway 1 through Big Sur open?
+    a: It reopened fully on 14 January 2026 after nearly three years of closures. Caltrans warns that mud can wash onto the road in heavy rain, so check road conditions before you go.
+  - q: How long does it take to drive the Natchez Trace Parkway?
+    a: The National Park Service says at least 10 hours of driving from Natchez, Mississippi, to Nashville, Tennessee, and FHWA suggests allowing two days.
+  sources:
+  - label: 'FHWA: About America''s Byways (184 roads in 48 states, six qualities)'
+    url: https://fhwaapps.fhwa.dot.gov/bywaysp/About
+    checked: '2026-11-19'
+  - label: 'FHWA: America''s Byways designations (2021 round)'
+    url: https://www.fhwa.dot.gov/hep/scenic_byways/designations
+    checked: '2026-11-19'
+  - label: 'FHWA newsroom: USDOT Announces New America''s Byways Designations (16 February 2021)'
+    url: https://highways.dot.gov/newsroom/usdot-announces-new-americas-bywaysr-designations
+    checked: '2026-11-19'
+  - label: 'FHWA newsroom: scenic byways news list (2022 and 2023 funding announcements)'
+    url: https://highways.fhwa.dot.gov/tags/scenic-byways
+    checked: '2026-11-19'
+  - label: 'FHWA newsroom: new All-American Roads and National Scenic Byways (June 2000, definitions)'
+    url: https://highways.dot.gov/newsroom/us-transportation-deputy-secretary-downey-announces-new-all-american-roads-national-scenic
+    checked: '2026-11-19'
+  - label: 'Alaska DOT&PF: What''s Designation All About? Nomination and Designation of National Scenic Byways and All-American Roads (2001)'
+    url: https://dot.alaska.gov/scenic/assets/whats_designation.pdf
+    checked: '2026-11-19'
+  - label: 'America''s Byways: Beartooth Highway'
+    url: https://fhwaapps.fhwa.dot.gov/bywaysp/byway/2281
+    checked: '2026-11-19'
+  - label: 'National Park Service: Yellowstone park roads (Beartooth status and typical season)'
+    url: https://www.nps.gov/yell/planyourvisit/parkroads.htm
+    checked: '2026-11-19'
+  - label: 'Cowboy State Daily: Beartooth Highway To Close For Season Oct. 13 (summit elevation)'
+    url: https://cowboystatedaily.com/2026/09/24/beartooth-highway-to-close-for-season-oct-13-if-snow-doesnt-shut-it-down-first/
+    checked: '2026-11-19'
+  - label: 'America''s Byways: Route 1, Big Sur Coast Highway'
+    url: https://fhwaapps.fhwa.dot.gov/bywaysp/StateMaps/Show/byway/2301
+    checked: '2026-11-19'
+  - label: 'KSBY: Highway 1 through Big Sur reopens fully, following nearly three-year closure (14 January 2026)'
+    url: https://ksby.com/news/local-news/highway-1-through-big-sur-reopens-fully-following-nearly-three-year-closure
+    checked: '2026-11-19'
+  - label: 'CBS News Bay Area: Caltrans to reopen Highway 1 at Regent''s Slide (closure history)'
+    url: https://www.cbsnews.com/sanfrancisco/news/highway-1-big-sur-regents-slide-reopening-caltrans
+    checked: '2026-11-19'
+  - label: 'America''s Byways: Natchez Trace Parkway'
+    url: https://fhwaapps.fhwa.dot.gov/bywaysp/byway/2285
+    checked: '2026-11-19'
+  - label: 'National Park Service: Natchez Trace Parkway FAQs'
+    url: https://home.nps.gov/natr/faqs.htm
+    checked: '2026-11-19'
+  - label: 'National Park Service: Natchez Trace Parkway, things to know before you visit'
+    url: https://www.nps.gov/natr/planyourvisit/before-you-visit.htm
+    checked: '2026-11-19'
+  - label: 'America''s Byways: Kancamagus Scenic Byway'
+    url: https://fhwaapps.fhwa.dot.gov/bywaysp/byway/2458
+    checked: '2026-11-19'
+  - label: 'America''s Byways: Florida Keys Scenic Highway'
+    url: https://fhwaapps.fhwa.dot.gov/bywaysp/byway/2555
+    checked: '2026-11-19'
+  - label: 'America''s Byways: Great River Road'
+    url: https://fhwaapps.fhwa.dot.gov/bywaysp/StateMaps/Show/byway/2279
+    checked: '2026-11-19'
+  related:
+  - drive-the-blue-ridge-parkway
+  - drive-going-to-the-sun-road
+  - drive-route-66
+  - drive-north-coast-500
+  kit:
+  - name: US road atlas
+    why: for planning stops and for stretches with no mobile signal
+    url: https://www.amazon.co.uk/s?k=usa+road+atlas
+  - name: Car phone mount
+    why: keeps directions in view without holding the phone
+    url: https://www.amazon.co.uk/s?k=car+phone+mount
+  - name: Cool box
+    why: for picnic food on stretches with few places to stop
+    url: https://www.amazon.co.uk/s?k=cool+box
 - id: unesco-world-heritage-site
   title: Visit a UNESCO World Heritage Site you have never seen
   category: travel
@@ -19161,21 +19330,188 @@
   time: months
   setting: outdoors
   company: either
-  season: Summer
+  season: Summer (July)
   regions:
-  - anywhere
+  - world
+  places:
+  - NLD
+  where:
+    town: Nijmegen
+    venue: De Wedren
+    country: NL
+    note: Civilian walkers start from De Wedren or Omroep Gelderlandplein in Nijmegen, while military groups start from Julianapark or Camp Heumensoord. Starts run from 4am for the 50 km to 8am for the
+      30 km, and every route finishes back in Nijmegen.
+    source:
+      label: '4Daagse: What time can I start?'
+      url: https://www.4daagse.nl/en/participation/start.html
+      checked: '2026-11-19'
   collection: military
-  why: For four consecutive days, walkers cover 30, 40 or 50km a day in and around the Dutch city of Nijmegen, and those who finish receive the 4Days Marches Cross. The event is organised by the foundation Stichting DE 4DAAGSE and has categories for civilians and civilian groups alongside military individuals and detachments.
+  why: For four consecutive days, walkers cover 30, 40 or 50 km a day from Nijmegen through the surrounding towns, crossing the Waal on the first day and walking a pontoon bridge over the Meuse on the last,
+    and those who finish receive the 4Days Marches Cross. It began in 1909 as a military march and is now organised by the foundation Stichting DE 4DAAGSE, with civilians and military walkers from dozens
+    of countries.
   start:
-  - Read the English pages of the official 4Daagse site for the distances, regulations and registration steps.
-  - Create a registration number on the official site when registration for the next edition opens.
-  - Train by walking long distances on consecutive days in the shoes and socks you plan to wear.
+  - Check the age table on the official site to see which distance you must walk, as it depends on your birth year and sex.
+  - Create a registration number on the official site and be ready when registration opens; in 2026 it opened to everyone on 9 February and closed once places ran out.
+  - Train weekly and build up the distance gradually, in comfortable walking shoes, on varied routes and surfaces, as the organisers advise.
   links:
   - label: 4Daagse (Four Days Marches Nijmegen) official site, English pages
     url: https://www.4daagse.nl/en/
     region: any
-    checked: '2026-10-08'
-  safety: Four long days on roads in summer heat punish feet and hydration, so drink regularly and deal with blisters as soon as they start.
+    checked: '2026-11-19'
+  - label: '4Daagse: registering as an individual civilian participant'
+    url: https://www.4daagse.nl/en/participate/civilian/registration
+    region: any
+    checked: '2026-11-19'
+  - label: '4Daagse: which distance can I walk? (age table)'
+    url: https://www.4daagse.nl/en/participate/civilian/distances
+    region: any
+    checked: '2026-11-19'
+  - label: '4Daagse: registering as a civilian group'
+    url: https://www.4daagse.nl/en/participate/civilian-group/registration
+    region: any
+    checked: '2026-11-19'
+  safety: Heat is the real danger, so follow the organisers' advice to drink before you are thirsty, rest more often than usual, cover your head and get to a first aid post at the first sign of trouble.
+  inspire:
+  - kind: read
+    person: Wim van Dorp, from Delft
+    line: Walked the Four Days Marches for the 40th time in 2025, raising more than €2,000 for the charity Dorcas's water projects in Kenya.
+    title: Wim has been walking the Nijmegen Four Days Marches for Dorcas for 40 years
+    outlet: Dorcas
+    url: https://dorcas.org/?p=177983
+    checked: '2026-11-19'
+  seo_title: 'Nijmegen Four Days Marches: registration and distances'
+  description: How to enter the Nijmegen Four Days Marches, which distance your age and sex require, the four daily routes, start times, the Cross and the heat.
+  detail:
+  - h: What it's like
+    p:
+    - The Four Days Marches (in Dutch, the Vierdaagse or 4Daagse) is a walking event, not a race. You walk the same distance each day for four days, Tuesday to Friday in July (21 to 24 July in 2026), and
+      must sign in at the finish before it closes in the afternoon. In 2026 there were 47,000 registrations from 77 nationalities, 6,455 of them military, and more than a quarter were first-timers.
+    - Each day has its own route out of Nijmegen and back, and each takes its name from a town on the way. The organisers say the routes are much the same each year with small changes, and that no route
+      is ever exactly 30, 40 or 50 km.
+    table:
+      head:
+      - Day
+      - Name
+      - What you pass
+      rows:
+      - - Tuesday
+        - The Day of Elst
+        - The bridge over the Waal and the Overbetuwe between the Waal and the Rhine; Elst turns blue
+      - - Wednesday
+        - The Day of Wijchen
+        - Green polders of the Land van Maas en Waal and the decorated market square in Wijchen; Nijmegen turns pink
+      - - Thursday
+        - The Day of Groesbeek
+        - Along water and through woods to the Seven Hills of Groesbeek
+      - - Friday
+        - The Day of Cuijk
+        - A pontoon bridge over the Meuse built for the event at Cuijk, then the walk in along the Via Gladiola
+  - h: Which distance you walk
+    p:
+    - You do not simply choose a distance. The organisers set a regulation distance by birth year and sex, and you may walk that or longer but never shorter. Once the event begins you cannot change.
+    table:
+      head:
+      - Born
+      - Women
+      - Men
+      rows:
+      - - 2012 to 2015
+        - 30 km (or 40 or 50)
+        - 30 km (or 40 or 50)
+      - - 2009 to 2011
+        - 40 km (or 50)
+        - 40 km (or 50)
+      - - 1978 to 2008
+        - 40 km (or 50)
+        - 50 km only
+      - - 1968 to 1977
+        - 40 km (or 50)
+        - 40 km (or 50)
+      - - 1967 or earlier
+        - 30 km (or 40 or 50)
+        - 30 km (or 40 or 50)
+    after: That is the organisers' age table for 2027. In miles, 30 km is about 18.6, 40 km about 24.9 and 50 km about 31.1, every day. Military walkers have a 40 km regulation distance carrying at least
+      10 kg (22 lb) of marching kit. Parents or supervisors of children aged 12 to 15 may walk with them as a companion, and dispensation is possible in exceptional cases for walkers with intellectual or
+      physical disabilities.
+  - h: How registration works
+    p:
+    - There is no longer a draw. For the 2026 edition (21 to 24 July), registration ran in two periods. The first, from 26 January to 6 February, was for young people and for anyone who had completed their
+      regulation distance at least once in 2016 to 2025. The second opened to everyone, including first-timers, on 9 February at 10am Central European Time and closed when the maximum was reached.
+    - 'The steps: get a registration number (returning walkers request one, first-timers create one), fill in your details, and pay. The 2026 fee was €120, with €5 off for members of the Dutch walking federation
+      KWbN. Your ticket appears in your online dashboard in early July, and you must show it on the Sunday or Monday before the start. Changing distance late costs a fee (€16.50 at the Service Desk, as
+      listed for 2027).'
+    - Civilian groups register separately. Military personnel from delegation countries, which include the UK and the USA, cannot use the website and register only through their own delegation's contact
+      person; other foreign military walkers enter as Small Contingents, with 400 tickets in 2026.
+    - The 2027 edition, the 109th, is on 20 to 23 July 2027. When we checked, registration for it was not yet open, so watch the official news page.
+  - h: The heat, and the hard parts
+    p:
+    - The hard part is repeating the distance four days in a row. Starts are early, from 4am for the 50 km, and you need to finish by 5pm (6pm on Friday).
+    - July heat is the main risk. In 2006 the 90th edition was called off after one day when two walkers died after collapsing and hundreds fainted; afterwards the organisers brought a meteorologist into
+      the organisation. In 2022 the first day was cancelled because of extreme heat, and in 2024 routes were shortened for high afternoon temperatures. The organisers' medical page advises light, breathable
+      clothing and a head covering, sunscreen of at least SPF 30 several times a day, drinking small amounts regularly before you are thirsty, replacing salt, avoiding alcohol, and more rest breaks than
+      you are used to.
+  - h: The Cross and coming back
+    p:
+    - Finish your regulation distance (or longer) on all four days and you receive the 4Days Marches Cross, officially the Cross for Proven Marching Skill, a royal distinction military personnel may wear
+      on uniform. Repeat walkers work up through a bronze Cross with a crown for a second finish, silver for a fifth and gold for a tenth, with number pins in between and special gold versions at 25, 40,
+      50, 60 and 70 finishes.
+    - For somewhere to stay, the organisers point to host families through Vierdaagsebed, hotels, B&Bs, campsites and holiday parks around Nijmegen, and dedicated 4Days Marches campsites. Military detachments
+      stay at Camp Heumensoord.
+  faq:
+  - q: How do I register for the Nijmegen Four Days Marches?
+    a: Create a registration number on the official 4Daagse site, then register and pay when your registration period opens. In 2026 first-timers could register from 9 February until places ran out.
+  - q: Is there still a lottery for the Nijmegen Four Days Marches?
+    a: No. The organisers say there will no longer be a draw; places go first come, first served until the maximum is reached.
+  - q: What distance do I have to walk at Nijmegen?
+    a: It depends on your birth year and sex. For 2027, men born 1978 to 2008 must walk 50 km a day, many other adults 40 km, and those born 1967 or earlier 30 km; you may always choose a longer distance.
+  - q: How much does it cost to walk the Four Days Marches?
+    a: The 2026 registration fee was €120, with €5 off for KWbN members. Travel and accommodation are extra.
+  - q: What time does the Nijmegen march start?
+    a: Individual walkers start between 4am and 4.45am for the 50 km, 5am and 6.40am for the 40 km, and 7am and 8am for the 30 km (Central European Time).
+  - q: Can British or American soldiers walk the Four Days Marches?
+    a: Yes. The UK and USA are delegation countries, and their military walkers register only through their delegation's contact person, not through the website.
+  sources:
+  - label: '4Daagse: Which distance can I walk? (civilian, 2027 age table)'
+    url: https://www.4daagse.nl/en/participate/civilian/distances
+    checked: '2026-11-19'
+  - label: '4Daagse: Registering as an individual civilian participant (2026)'
+    url: https://www.4daagse.nl/en/participate/civilian/registration
+    checked: '2026-11-19'
+  - label: '4Daagse: Registration individual military participants (2026)'
+    url: https://www.4daagse.nl/en/participate/military-individual/registration
+    checked: '2026-11-19'
+  - label: '4Daagse: What time can I start?'
+    url: https://www.4daagse.nl/en/participation/start.html
+    checked: '2026-11-19'
+  - label: '4Daagse: Routes'
+    url: https://www.4daagse.nl/en/week-of-the-4days-marches/routes
+    checked: '2026-11-19'
+  - label: '4Daagse: History'
+    url: https://www.4daagse.nl/en/about-the-4days-marches/history
+    checked: '2026-11-19'
+  - label: '4Daagse: Rewards (civilian)'
+    url: https://www.4daagse.nl/en/participate/civilian/rewards
+    checked: '2026-11-19'
+  - label: '4Daagse: Medical'
+    url: https://www.4daagse.nl/en/practical/medical
+    checked: '2026-11-19'
+  - label: '4Daagse: Training'
+    url: https://4daagse.nl/en/preparation/training
+    checked: '2026-11-19'
+  - label: '4Daagse: Accommodation'
+    url: https://www.4daagse.nl/en/practical/accommodation
+    checked: '2026-11-19'
+  - label: '4Daagse: Facts and figures, 108th 4Days Marches (press release, July 2026)'
+    url: https://www.4daagse.nl/cdn/a2a11c94-627a-457b-b523-2827e1eb963a/pb202606-facts-figures-108th-4days-marches.pdf
+    checked: '2026-11-19'
+  - label: 'Dorcas: Wim has been walking the Nijmegen Four Days Marches for Dorcas for 40 years'
+    url: https://dorcas.org/?p=177983
+    checked: '2026-11-19'
+  related:
+  - walk-the-moonwalk
+  - trailwalker-south-downs
+  - walk-the-camino-to-santiago
+  - goruck-challenge
   kit:
   - name: Blister plasters
     why: put one on at the first hot spot, before it becomes a blister
@@ -19308,38 +19644,170 @@
   time: months
   setting: outdoors
   company: either
+  season: Late October
   regions:
   - us
-  places: [DC, VA]
+  places:
+  - DC
+  - VA
   where:
     town: Arlington, VA
     venue: The Pentagon
     country: US
-    note: The start and finish are in Arlington. Runners begin between the Pentagon and Arlington National Cemetery and finish at the Marine Corps War Memorial; Runners Village is in the North Pentagon Parking Lot, which runners reach from the Pentagon and Pentagon City Metro stations. For spectators, the organisers say Metro is the best way to get around because of road closures, though most places on the course are walkable.
+    note: The start and finish are in Arlington. Runners begin on Route 110 between the Pentagon and Arlington National Cemetery and finish at the Marine Corps War Memorial; Runners Village is in the North
+      Pentagon Parking Lot, which runners reach from the Pentagon and Pentagon City Metro stations. Metro opens at 5am on race morning, and the organisers list stations near the National Mall, the 14th
+      Street Bridge, Crystal City and the Rosslyn finish for spectators.
     source:
       label: 'Marine Corps Marathon Organization: Marine Corps Marathon'
-      url: https://www.marinemarathon.com/event/marine-corps-marathon/
-      checked: '2026-11-18'
+      url: https://www.marinemarathon.com/events/marine-corps-marathon
+      checked: '2026-11-19'
   collection: military
-  why: Known as The People's Marathon, this race offers no prize money and runs through Arlington, Virginia, and Washington. It is organised by the Marine Corps Marathon Organization, and the official site describes the course as managed by the United States Marines.
+  why: Known as The People's Marathon, the largest marathon in the world that offers no prize money, this race runs past the Pentagon, through Georgetown and along the National Mall before finishing uphill
+    at the Marine Corps War Memorial. It is organised by the Marine Corps Marathon Organization and, in the official site's words, run on a course managed by the U.S. Marines.
   start:
-  - Read the official Marine Corps Marathon site and check when registration is open.
-  - Enter the marathon, or start with one of the organisation's shorter races such as the 8K.
-  - Follow a marathon training plan of several months, building your long run gradually.
+  - Note the dates on the official site; for the 2027 race on Sunday 31 October, it says registration opens on 3 April 2027.
+  - Decide how you will get in, through general registration or a guaranteed route such as a charity place, a race bundle or the Marine Corps 17.75K in March.
+  - Make sure you can hold 14 minutes a mile (about 8 min 42 s per km) for the whole distance, then follow a marathon plan of several months with a weekly long run.
   links:
   - label: Marine Corps Marathon official site (Marine Corps Marathon Organization)
     url: https://www.marinemarathon.com/
     region: us
-    checked: '2026-10-08'
-  safety: A marathon puts heavy strain on the body, so build up over months and slow down or stop if you feel unwell on the day.
+    checked: '2026-11-19'
+  - label: 'Marine Corps Marathon: race page, registration plan and course rules'
+    url: https://www.marinemarathon.com/events/marine-corps-marathon
+    region: us
+    checked: '2026-11-19'
+  - label: 'Marine Corps Marathon: 20 tips for first-time marathon runners'
+    url: https://www.marinemarathon.com/20-tips-for-first-time-marathon-runners/
+    region: us
+    checked: '2026-11-19'
+  safety: A marathon puts heavy strain on the body, so build up over months, drink and eat as you practised in training, and slow down or stop if you feel unwell on the day.
   inspire:
   - kind: read
     person: Al Richmond
-    line: A former Marine who helped plan the first Marine Corps Marathon in 1976, then ran every one for more than 40 years; his fastest was 3:16:21 in 1979.
+    line: A former Marine who handled athlete tracking and finish times for the first Marine Corps Marathon in 1976, then ran every one for more than 40 years; his fastest was 3:16:21 in 1979.
     title: The Last MCM Groundpounder
     outlet: RunWashington
     url: https://www.runwashington.com/2017/10/20/last-mcm-groundpounder/
     checked: '2026-10-27'
+  seo_title: 'Marine Corps Marathon: registration, course and cut-offs'
+  description: How to get into the Marine Corps Marathon, the 14-minute-mile pace and its three course cut-offs, the route past DC landmarks, and race weekend.
+  detail:
+  - h: How to get a place
+    p:
+    - The 2027 Marine Corps Marathon is on Sunday 31 October 2027, and the official site says registration opens on 3 April 2027. For the 2026 race the standard entry rate was $240, and general registration
+      opened on 6 April at 10am Eastern time, after earlier windows for active-duty service members, members of the MCM Runners Club and past participants. The 2026 race page does not describe a lottery,
+      so check the official site for how the 2027 places are given out.
+    - There are also guaranteed routes. The organisers list charity partners (for 2026 the deadline for charity bibs was 31 July), travel packages, the MCM Runners Club for anyone who has finished the marathon
+      at least five times, and bundles such as the Semper Fidelis Challenge, which pairs the Marine Corps Historic Half in May with the marathon. In 2025, finishers of the Marine Corps 17.75K aged 14 or
+      over received an Access Granted link to the marathon's registration form; the 2027 17.75K is on 13 March, with registration opening on 1 January 2027.
+    - For 2026, the organisers said deferrals and transfers were not permitted, apart from honouring official 2025 deferments, and offered an optional refundable registration through a third party.
+  - h: The pace rule and the three gauntlets
+    p:
+    - Runners must hold at least 14 minutes a mile, which works out at a finish of a little over six hours, and clear three checkpoints the organisers call gauntlets. Anyone who misses one is diverted off
+      the main course and is not an official finisher. These were the 2026 times, with the main start at 7.20am.
+    table:
+      head:
+      - Gauntlet
+      - Where
+      - Clear it by (2026)
+      rows:
+      - - DC Gauntlet
+        - Independence Avenue, on the National Mall
+        - 12.33pm
+      - - Beat the Bridge
+        - 14th and D Streets, just before the 14th Street Bridge, at mile 20
+        - 1.15pm
+      - - Crystal City Gauntlet
+        - 12th Street South and Crystal Drive
+        - 1.49pm
+    after: The course officially closes at 3.05pm. The bridge back into Virginia comes at mile 20, and the organisers' first-timer tips say the hardest miles come after mile 20.
+  - h: The course
+    p:
+    - The race starts on Route 110 in Arlington, between the Pentagon and Arlington National Cemetery, with an opening ceremony at 7am, wheeled and duo starts at 7.05am and 7.07am, and the main field at
+      7.20am. The route runs through Rosslyn into Washington, through Georgetown and along Rock Creek Parkway, round Haines Point, where mile 12 is the wear blue Mile, and along the National Mall.
+    - At mile 20 you cross the 14th Street Bridge back into Virginia and wind through Crystal City before the uphill finish at the Marine Corps War Memorial. In 2026 there were 12 water points and 10 aid
+      stations on the course.
+  - h: Race weekend
+    list:
+    - 'Expo and packet pickup: at the National Building Museum in Washington, from Wednesday 21 to Saturday 24 October in 2026.'
+    - 'Saturday: the MCM 8K in West Potomac Park and the Kids Run (0.8 km, about half a mile, for ages 5 to 12).'
+    - 'Security: every runner and spectator is screened on arrival at the start and finish areas, and expo visitors are screened at the Building Museum.'
+    - 'Bags: use only the clear plastic bag from packet pickup, with your bib sticker on it, and drop it at the UPS trucks in Runners Village; you collect it from the trucks at the Finish Festival in Rosslyn.'
+    - 'Getting there: Metro opens at 5am. Free parking is in the underground lots at 23rd Street and Crystal Drive, with shuttles to Runners Village from 4.30am to 6.30am and back from Rosslyn from 10am
+      to 5pm.'
+    - For spectators, the organisers suggest Smithsonian station for miles 17 to 20, L'Enfant Plaza for Beat the Bridge, Crystal City for miles 22 to 23 and Rosslyn for the finish.
+  - h: The other Marine Corps races compared
+    p:
+    - The Marine Corps Marathon Organization runs a series of shorter races through the year, which are a way to try its events before a full marathon.
+    table:
+      head:
+      - Race
+      - Distance
+      - Where
+      - 2027 date as listed
+      rows:
+      - - Marine Corps 17.75K
+        - 17.75 km (11.03 miles)
+        - Prince William Forest Park, Virginia
+        - 13 March
+      - - Semper Fred 5K
+        - 5 km (3.1 miles)
+        - See the official event page
+        - 15 May
+      - - Marine Corps Historic Half
+        - 21.1 km (13.1 miles)
+        - See the official event page
+        - 16 May
+      - - Quantico 12K
+        - 12 km (7.46 miles)
+        - See the official event page
+        - 21 August
+      - - MCM 8K
+        - 8 km (5 miles)
+        - West Potomac Park, Washington
+        - The day before the marathon (24 October in 2026)
+      - - Marine Corps Marathon
+        - 42.2 km (26.2 miles)
+        - Arlington and Washington
+        - 31 October
+    after: The 17.75K distance marks the year the Marine Corps was established. The organisation also lists a Turkey Trot 10K on 21 November 2026.
+  faq:
+  - q: When is the 2027 Marine Corps Marathon?
+    a: Sunday 31 October 2027. The official site says registration opens on 3 April 2027.
+  - q: Is there a lottery for the Marine Corps Marathon?
+    a: The 2026 race page describes general registration opening on 6 April, after earlier windows for some groups, and does not mention a lottery. Check the official site for how 2027 places will be given
+      out.
+  - q: How do I get guaranteed entry to the Marine Corps Marathon?
+    a: The organisers list charity partners, travel packages, race bundles such as the Semper Fidelis Challenge, and the MCM Runners Club for five-time finishers. In 2025, Marine Corps 17.75K finishers
+      aged 14 or over were also given guaranteed access.
+  - q: What is the time limit for the Marine Corps Marathon?
+    a: You must hold 14 minutes a mile and clear three gauntlets on time; in 2026 the Beat the Bridge cut-off at mile 20 was 1.15pm. The course closes at 3.05pm.
+  - q: How much does the Marine Corps Marathon cost?
+    a: The standard entry rate for 2026 was $240.
+  - q: Where does the Marine Corps Marathon start and finish?
+    a: It starts on Route 110 in Arlington, between the Pentagon and Arlington National Cemetery, and finishes uphill at the Marine Corps War Memorial. Runners Village is in the North Pentagon Parking Lot.
+  sources:
+  - label: 'Marine Corps Marathon Organization: Marine Corps Marathon race page (2026 schedule, registration plan, pace, gauntlets, course, Metro, bags, security)'
+    url: https://www.marinemarathon.com/events/marine-corps-marathon
+    checked: '2026-11-19'
+  - label: 'Marine Corps Marathon Organization: events overview with 2027 dates'
+    url: https://marinemarathon.com/event/marine-corps-marathon/
+    checked: '2026-11-19'
+  - label: 'Marine Corps Marathon Organization: Marine Corps 17.75K (2025 Access Granted rules)'
+    url: https://www.marinemarathon.com/event/marine-corps-1775k/
+    checked: '2026-11-19'
+  - label: 'Marine Corps Marathon Organization: 20 Tips for First-Time Marathon Runners (2020)'
+    url: https://www.marinemarathon.com/20-tips-for-first-time-marathon-runners/
+    checked: '2026-11-19'
+  - label: 'FOX 5 DC: Marine Corps Marathon 2026, course map, road closures and race schedule'
+    url: https://www.fox5dc.com/news/marine-corps-marathon-2026-course-map-route-details-schedule
+    checked: '2026-11-19'
+  related:
+  - run-a-marathon
+  - goruck-challenge
+  - run-great-north-run
+  - couch-to-5k
   kit:
   - name: Running shoes
     why: the one thing worth spending on; a running shop can watch you run and suggest a fit
@@ -19688,22 +20156,175 @@
   season: Late spring to early autumn
   regions:
   - uk
-  places: [london]
-  why: The Serpentine Lido lets you swim in open water in the middle of Hyde Park, inside a buoyed area of the lake watched by lifeguards. The Royal Parks describes the Serpentine Swimming Club, whose members swim there early each morning and race on Christmas Day, as the oldest swimming club in Britain.
+  places:
+  - london
+  why: The Serpentine Lido lets you swim in open water in the middle of Hyde Park, inside a buoyed area of the lake watched by lifeguards. The Royal Parks describes the Serpentine Swimming Club, whose members
+    swim there early each morning and race on Christmas Day, as the oldest swimming club in Britain.
   start:
   - Check The Royal Parks' Serpentine Lido page for this year's opening season and session types.
-  - Book a session online in advance, or turn up on the day.
+  - Book a session online in advance, or turn up on the day at a quieter time.
   - Use the changing rooms at the Lido, enter the water slowly and stay inside the line of buoys.
   links:
   - label: 'The Royal Parks: Swimming at the Lido (Hyde Park)'
     url: https://www.royalparks.org.uk/whats-on/swimming-lido
     region: uk
-    checked: '2026-10-08'
-  - label: 'The Royal Parks sports and leisure: Swimming in The Serpentine'
+    checked: '2026-11-19'
+  - label: 'The Royal Parks sports and leisure: Swimming in The Serpentine (prices, rules, booking)'
     url: https://sportsandleisure.royalparks.org.uk/hyde-park/swimming
     region: uk
-    checked: '2026-10-08'
-  safety: Lake water is colder than a pool, so get in gradually and swim only when a lifeguard is on duty.
+    checked: '2026-11-19'
+  - label: 'Serpentine Swimming Club: membership and waiting list'
+    url: https://serpentineswimmingclub.com/membership
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Swim Serpentine (London Marathon Events): distances and entry'
+    url: https://www.londonmarathonevents.co.uk/swim-serpentine/swim
+    region: uk
+    checked: '2026-11-19'
+  safety: Lake water is colder than a pool, so get in gradually, swim only when a lifeguard is on duty, and if cold water shock hits, float on your back until your breathing settles.
+  seo_title: 'Swimming in the Serpentine: Lido sessions, club and events'
+  description: How to swim in the Serpentine in Hyde Park, from Lido sessions and prices to the year-round club, the Christmas Day race and the Swim Serpentine event.
+  detail:
+  - h: What it's like
+    p:
+    - The Serpentine is the lake in Hyde Park, and the Serpentine Lido is the swimming area marked off by buoys, with a pavilion, changing rooms and a beach head on the shore. A lido, for US readers, is
+      an open-air public swimming place. You swim in lake water, inside a boundary of buoys, and you may only go in when a lifeguard is on duty.
+    - The Lido is a summer venue. The Royal Parks says weekend sessions start in mid-May and daily swimming runs from June to mid-September, with dates shifting a little each year; its listing gave 23 May
+      to 31 August. It is closed for the winter now and due to reopen in May 2027. You can book online, which The Royal Parks recommends at busy times, or walk up and pay on the day when it is quieter.
+    - Before and after the public season, the same water belongs to the Serpentine Swimming Club, which The Royal Parks permits to swim in the Lido area each morning until 9.30am.
+  - h: Four ways to swim in the Serpentine, and three other London spots
+    table:
+      head:
+      - Option
+      - Who it suits
+      - When
+      - Cost (as last listed)
+      rows:
+      - - Serpentine Lido public session (Royal Parks)
+        - Anyone; under-16s with a competent adult swimmer
+        - Mid-May (weekends), then daily June to mid-September
+        - 'Session (10am-1.30pm or 2.30pm-6pm): adult £6.50, off-peak adult £4.70, concession £3.45. Full day: adult £8.40, child £4.15. After 4pm: adult £2.50'
+      - - Serpentine Swimming Club membership
+        - Competent swimmers who pass a 50 m test in that day's water temperature
+        - Every morning until 9.30am
+        - Fees not listed on the club's membership page; join the waiting list first
+      - - Christmas Day race for the Peter Pan Cup
+        - Club members with a handicap who have swum the qualifying Winter Series races
+        - 25 December, 9am
+        - Club membership
+      - - Swim Serpentine (London Marathon Events)
+        - Half mile from age 12; one and two miles from 16; six miles from 18
+        - One Saturday in September (19 September in 2026; 2027 date to be confirmed)
+        - See the entry page; wetsuit hire from £30 and tow float £10
+      - - Hampstead Heath bathing ponds (City of London)
+        - Mixed, Men's and Kenwood Ladies' ponds
+        - 'Summer: book ahead or drop in; winter: drop-in only'
+        - Adult £5, concession £3 (Time Out, May 2026)
+      - - Parliament Hill Lido (City of London)
+        - Anyone; an outdoor pool rather than a lake
+        - Summer and winter sessions
+        - Summer morning or afternoon adult £8.80; winter adult £5 (Time Out, May 2026)
+      - - West Reservoir Centre, Stoke Newington (Better)
+        - Age 14 and up (14 to 17 with an adult from their household); bright swim hat and tow float required
+        - All year, sessions of one hour
+        - Prices on Better's membership page; book in the Better UK app
+    after: Concession means a reduced price; at the Serpentine Lido it covers 16 and 17-year-olds, students and adults over 65 with ID. Children under three and carers swim free.
+  - h: The rules at the Lido
+    list:
+    - Stay inside the buoys. Weak swimmers and anyone using a buoyancy aid must stay in the shallower areas marked by the depth markers on the pier.
+    - Wetsuits, rash vests, swim caps, goggles, masks, snorkels and short fins are allowed. Cotton, denim, underwear, loose T-shirts and other absorbent clothing are not.
+    - The Lido does not lend armbands or buoyancy aids, and lilos and large inflatable rings are not allowed.
+    - No diving, acrobatics or running, and no alcohol, glass, music or smoking on the beach head.
+    - Children under 16 need an adult of 18 or over who is a competent swimmer. The ratios are one adult to one child under 3, two children aged 3 to 7, three aged 8 to 13 and four aged 14 or 15.
+    - Everyone, carers and children included, registers at reception, and you enter only by the staffed gate beside the pavilion. Lockers cost £2.
+  - h: The year-round club and the Christmas Day race
+    p:
+    - The Serpentine Swimming Club is a members' club, not a public session. Its own page is clear that there are no lifeguards for club swims and members swim at their own risk. To join, you go on a waiting
+      list; each week the club invites 10 to 30 people to an in-person induction with a cold water safety briefing and a 50 m swim test. The club asks you to join the list only if you are confident of passing
+      that test at the water temperature of the day, which it shows on its home page. Membership runs to 31 December, renewal is in January, and the club has a strict no-guests policy.
+    - The Christmas Day race is swum over 100 yards (about 91 metres) at 9am for the Peter Pan Cup, first given by J. M. Barrie in 1903. The club says the race has been held every year since 1864 except
+      2020. It is not open to the public, or even to every member. Entry is for members with a handicap, and for 2025 the club asked those already on its handicap list to swim at least two of the seven
+      Winter Series races, and newer swimmers six of the seven. In 2024, 81 swimmers raced in water of 7°C.
+    - One honest drawback of swimming in a lake is the lake itself. The club lost at least one 2025 race to blue-green algae, a bloom that can stop swimming, so check before you travel.
+  - h: Cold water, and how to get in safely
+    p:
+    - The Royal Parks passes on advice from the Royal Life Saving Society (RLSS UK), and the RNLI gives the same message. Never jump or dive in, because the sudden cold can make you gasp; walk in slowly
+      and wait for your breathing to settle before you swim. Get out before you feel cold.
+    - If cold water shock does hit, the RNLI's advice is to fight the instinct to swim, turn on your back with your ears under, relax and breathe, and wait until it passes before you call for help or swim
+      to safety. The RNLI also suggests talking to a health professional about cold water first, and The Royal Parks notes that conditions such as asthma or heart problems can add to the risk.
+    - A bright cap, a tow float and a wetsuit all help. A wetsuit slows heat loss, and at Swim Serpentine one is compulsory when the water is below 14.9°C.
+  faq:
+  - q: Can you swim in the Serpentine?
+    a: Yes. The public can swim at the Serpentine Lido in Hyde Park during its summer season, inside a buoyed area and only when a lifeguard is on duty. Outside the season, only Serpentine Swimming Club
+      members swim there, in the early morning.
+  - q: How much does the Serpentine Lido cost?
+    a: As last listed by The Royal Parks, a session costs £6.50 for an adult (£4.70 off-peak), and a full day costs £8.40. Children aged 3 to 15 pay £4.15 for a full day, under-3s go free, and lockers are
+      £2.
+  - q: Do I need to book the Serpentine Lido?
+    a: Booking online is recommended, especially at busy times. At quieter times you can walk up and book in person on the day.
+  - q: Can you wear a wetsuit in the Serpentine Lido?
+    a: Yes. Wetsuits, rash vests, swim caps, goggles and short fins are all allowed; cotton and other absorbent clothing are not.
+  - q: Can anyone swim the Christmas Day race in the Serpentine?
+    a: No. The Peter Pan Cup race is for Serpentine Swimming Club members with a handicap who have swum the club's qualifying Winter Series races. Other members may swim on Christmas Day, but not between
+      8.30am and 9.15am.
+  - q: How do I join the Serpentine Swimming Club?
+    a: Join the club's waiting list. When invited, you go to an in-person induction with a cold water safety briefing and a 50 m swim test, within three weeks of the invitation.
+  sources:
+  - label: 'The Royal Parks sports and leisure: Swimming in The Serpentine (season, prices, rules, RLSS UK safety advice)'
+    url: https://sportsandleisure.royalparks.org.uk/hyde-park/swimming
+    checked: '2026-11-19'
+  - label: 'The Royal Parks: Swimming at the Lido (2026 season dates, booking)'
+    url: https://www.royalparks.org.uk/whats-on/swimming-lido
+    checked: '2026-11-19'
+  - label: 'Serpentine Swimming Club: Membership'
+    url: https://serpentineswimmingclub.com/membership
+    checked: '2026-11-19'
+  - label: 'Serpentine Swimming Club: History of the Christmas Day Race for the Peter Pan Cup'
+    url: https://serpentineswimmingclub.com/christmas-day-race-and-peter-pan-cup
+    checked: '2026-11-19'
+  - label: 'Serpentine Swimming Club: The 2024 Christmas Day Race (81 swimmers, 7°C)'
+    url: https://serpentineswimmingclub.com/news/51309/2024-peter-pan-cup
+    checked: '2026-11-19'
+  - label: 'Serpentine Swimming Club: The Mario McClarnon cup, another race lost to blue-green algae'
+    url: https://serpentineswimmingclub.com/news/51344/2025-mario-mcclarnon
+    checked: '2026-11-19'
+  - label: 'The Royal Parks: Swim Serpentine 2026'
+    url: https://www.royalparks.org.uk/whats-on/swim-serpentine-2026
+    checked: '2026-11-19'
+  - label: 'London Marathon Events: Swim Serpentine distances'
+    url: https://www.londonmarathonevents.co.uk/swim-serpentine/swim
+    checked: '2026-11-19'
+  - label: 'London Marathon Events: Swim Serpentine FAQs (ages, wetsuit rules, 2027 date)'
+    url: https://www.londonmarathonevents.co.uk/swim-serpentine/faqs
+    checked: '2026-11-19'
+  - label: 'City of London: Booking for swimming at Hampstead Heath'
+    url: https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/activities-at-hampstead-heath/swimming-at-hampstead-heath/booking-for-swimming
+    checked: '2026-11-19'
+  - label: 'Time Out: Prices have gone up at four of north London''s most popular open water swimming spots (May 2026)'
+    url: https://www.timeout.com/london/news/prices-have-gone-up-at-four-of-north-londons-most-popular-open-water-swimming-spots-051526
+    checked: '2026-11-19'
+  - label: 'Better: Open water swimming at West Reservoir Centre'
+    url: https://better.org.uk/leisure-centre/london/hackney/west-reservoir-centre/open-water-swimming
+    checked: '2026-11-19'
+  - label: 'RNLI: Open water swimming'
+    url: https://rnli.org/safety/choose-your-activity/open-water-swimming
+    checked: '2026-11-19'
+  - label: 'St Cross College, Oxford: St Cross Emeritus Fellow claims third place in iconic Peter Pan Cup'
+    url: https://www.stx.ox.ac.uk/node/4324531
+    checked: '2026-11-19'
+  inspire:
+  - kind: read
+    person: Professor Stanley Ulijaszek, St Cross College, Oxford
+    line: Came third in the Serpentine Swimming Club's 2024 Christmas Day race for the Peter Pan Cup, a 100-yard swim in 7°C water against a field of 81.
+    title: St Cross Emeritus Fellow claims third place in iconic Peter Pan Cup
+    outlet: St Cross College, University of Oxford
+    url: https://www.stx.ox.ac.uk/node/4324531
+    checked: '2026-11-19'
+  related:
+  - open-water-swim
+  - wild-swim
+  - learn-to-swim-adult
+  - swim-swimathon
   kit:
   - name: Bright tow float
     why: makes you easy to see in open water and gives you something to hold if you need a rest
@@ -60638,3 +61259,1173 @@
   - cycle-a-velodrome
   - join-a-guided-bike-ride
   - try-zumba
+- id: learn-punch-needle
+  title: Learn punch needle
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Punch needle pushes yarn through fabric held tight in a hoop to make raised, looped designs, so a wall hanging or coasters builds up quickly in thick texture. One-day and half-day beginners' workshops
+    supply the needle, hoop, fabric and wool, and you leave with a finished piece.
+  start:
+  - Look for a beginners' punch needle workshop at an adult education college, an arts centre or a craft studio, and check that all materials are included.
+  - Choose a simple design with a few bold shapes; several workshops let you pick from set designs or draw your own.
+  - After the class, buy a punch needle, a hoop that holds the fabric tight and a few balls of wool to carry on at home.
+  links:
+  - label: 'East Sussex College adult learning: Punch Needle Workshop (Hastings)'
+    url: https://adult.escg.ac.uk/courses/art-crafts-design/textiles-jewellery/punch-needle-workshop-101134
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Allerton (University of Illinois): The Farms folk school classes, including Punch Needle Coasters'
+    url: https://allerton.illinois.edu/events/punch-needle-coasters/
+    region: us
+    checked: '2026-11-19'
+  seo_title: 'Punch needle for beginners: workshops and what you need'
+  description: What punch needle embroidery involves, what a beginners' workshop teaches and includes, what it costs in the UK and US, and the kit to carry on at home.
+  detail:
+  - h: What you learn in a first class
+    p:
+    - A beginners' class at The Farms, the folk school at Allerton run by the University of Illinois, covers designing a motif, scaling and transferring it onto fabric and setting up a tension hoop, then
+      forming looped stitches, changing colours and finishing the piece. Students make coasters and keep a toolkit to carry on at home.
+    - Dovecot Studios in Edinburgh described punch needle as a traditional craft for rug making. Its beginners' workshop used British wool, linen, a punch needle and a wooden hoop, and students made a wall
+      hanging from one of seven designs or drew their own. East Sussex College describes the result as textured, raised designs on fabric.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - East Sussex College adult learning, Hastings
+        - One day, 10am to 4pm; all materials provided; bring a pen (dates listed ran August 2025 to February 2026)
+        - £14, or free on benefits or an income under £25,000 a year
+      - - Dovecot Studios, Edinburgh
+        - Three hours; wool, linen, needle and hoop included; make a wall hanging (ran August 2022)
+        - £50
+      - - The Farms at Allerton, University of Illinois
+        - Six hours, beginner level; make coasters; toolkit to take home (ran July 2026)
+        - $145
+  faq:
+  - q: Is punch needle easy for beginners?
+    a: Beginners' workshops assume no experience. East Sussex College lists its one-day class at entry level, and Allerton's six-hour class is for beginners.
+  - q: What do I need to start punch needle?
+    a: A punch needle, fabric stretched tight in a hoop, and yarn. Dovecot's workshop used linen, British wool, a punch needle and a wooden hoop.
+  - q: Is punch needle the same as rug hooking?
+    a: They are related. Dovecot Studios describes punch needle as a traditional craft for rug making.
+  - q: How long does a punch needle project take?
+    a: A small piece can be finished in a class. Dovecot's three-hour workshop made a small wall hanging, and Allerton's six-hour class made coasters.
+  sources:
+  - label: East Sussex College adult learning, Punch Needle Workshop
+    url: https://adult.escg.ac.uk/courses/art-crafts-design/textiles-jewellery/punch-needle-workshop-101134
+    checked: '2026-11-19'
+  - label: Dovecot Studios, Punch Needle for Beginners workshop with The Modern Crafter
+    url: https://dovecotstudios.com/whats-on/punch-needle-for-beginners-workshop-with-the-modern-crafter
+    checked: '2026-11-19'
+  - label: 'Allerton, University of Illinois, The Farms: Punch Needle Coasters'
+    url: https://allerton.illinois.edu/events/punch-needle-coasters/
+    checked: '2026-11-19'
+  kit:
+  - name: Punch needle starter kit
+    why: needle, hoop, backing fabric and yarn for a first piece at home
+    url: https://www.amazon.co.uk/s?k=punch+needle+kit+beginner
+  - name: Punch needle hoop or gripper frame
+    why: holds the fabric drum-tight, which the needle needs to form loops
+    url: https://www.amazon.co.uk/s?k=punch+needle+hoop+no+slip
+  - name: Monk's cloth
+    why: backing fabric for punching with thicker yarn
+    url: https://www.amazon.co.uk/s?k=monks+cloth+punch+needle
+  related:
+  - learn-embroidery
+  - make-a-rag-rug
+  - try-rug-tufting
+  - join-a-knitting-group
+- id: try-acrylic-pouring
+  title: Try acrylic pouring
+  category: think
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Acrylic pouring uses no brush at all; thinned paint is poured onto a canvas or panel and tilted so the colours run and blend into patterns you cannot fully plan. A three-hour or one-day class teaches
+    the mixes and pours, and you take home what you pour.
+  start:
+  - Book a beginners' pouring class at an adult learning centre or arts centre; check what materials are included and what to bring.
+  - Wear old clothes, and bring gloves, paper towels and something flat to carry wet work home on.
+  - At home, work on a level, covered table, and allow days, not hours, for a pour to dry.
+  links:
+  - label: 'Buckinghamshire Adult Learning: Acrylic Paint Pouring Workshop (Beaconsfield)'
+    url: https://adultlearningbc.ac.uk/courses/acrylic-paint-pouring-workshop-drpa01626272bea/
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Rogue Gallery & Art Center: Pour & Play, Intro to Acrylic Pouring for Adults'
+    url: https://rogue-gallery-art-center.jumbula.com/AdultWinterSpring2026/PourPlayIntrotoAcrylicPouringforAdults
+    region: us
+    checked: '2026-11-19'
+  seo_title: 'Acrylic pouring for beginners: classes and how it works'
+  description: What acrylic pouring (fluid art) involves, how messy it is, what beginners' classes cost in the UK and US, and how to stop a pour cracking.
+  detail:
+  - h: What it involves, and the mess
+    p:
+    - Paint is mixed with a pouring medium to a free-flowing consistency, poured onto a surface and moved so it spreads. Buckinghamshire Adult Learning's one-day workshop teaches four pouring techniques
+      and how to get the right consistency; Rogue Gallery & Art Center's class demonstrates a dirty pour and a flip cup pour.
+    - Rogue Gallery warns that acrylic pouring is very messy and you will get paint on yourself and your clothes. Buckinghamshire asks students to bring an overall or old clothes, strong disposable gloves,
+      paper towel, trays and greaseproof paper to carry wet work home.
+    - An article on Golden Artist Colors' Just Paint site explains that a pouring medium adds acrylic binder, whereas thinning with water alone weakens the paint film. Pours are thick and slow to dry, so
+      leave one to three days between layers; cracks (crazing) form when the surface skins over while the paint beneath is still wet, more often in dry air. Work on a level surface, keep dust away, and
+      note that a sealed panel behaves more predictably than stretched canvas, which can sag under wet paint.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Buckinghamshire Adult Learning, Beaconsfield
+        - One day, 10am to 3.30pm, beginners; four techniques; next listed 20 March 2027
+        - £62.75, plus about £15 for canvases, paint and additives from the tutor, and a yearly learner registration fee
+      - - Rogue Gallery & Art Center (US)
+        - Three hours, beginners, aprons provided (ran January 2026)
+        - $40 non-member
+      - - RSU 24 Adult Education (US)
+        - Three hours; bring old clothes and an old towel (May 2024 class was cancelled)
+        - $40, plus $20 materials fee
+  faq:
+  - q: Is acrylic pouring messy?
+    a: Yes. One US class warns you will get paint on yourself and your clothes, and a UK course asks for old clothes, gloves and paper towel.
+  - q: Can I thin acrylic paint with water for pouring?
+    a: Golden Artist Colors advises using a pouring medium, because water alone adds no binder and weakens the paint film.
+  - q: How long does an acrylic pour take to dry?
+    a: Longer than ordinary acrylic painting. Golden suggests one to three days between layers, and longer before varnishing a heavy pour.
+  - q: Why has my acrylic pour cracked?
+    a: Golden explains that crazing happens when the surface skins over while the paint underneath is still wet, and is more likely in dry conditions.
+  sources:
+  - label: Buckinghamshire Adult Learning, Acrylic Paint Pouring Workshop
+    url: https://adultlearningbc.ac.uk/courses/acrylic-paint-pouring-workshop-drpa01626272bea/
+    checked: '2026-11-19'
+  - label: 'Rogue Gallery & Art Center, Pour & Play: Intro to Acrylic Pouring for Adults'
+    url: https://rogue-gallery-art-center.jumbula.com/AdultWinterSpring2026/PourPlayIntrotoAcrylicPouringforAdults
+    checked: '2026-11-19'
+  - label: 'RSU 24 Adult Education, Acrylic Pour Painting: An Introduction'
+    url: https://maineadulted.coursestorm.com/rsu24/course/acrylic-pour-painting-an-introduction1?page=86
+    checked: '2026-11-19'
+  - label: Just Paint (Golden Artist Colors), Understanding the Techniques of Pouring Acrylics
+    url: https://justpaint.org/understanding-the-techniques-of-pouring-acrylics/
+    checked: '2026-11-19'
+  kit:
+  - name: Acrylic pouring medium
+    why: mixed with paint to make it flow while keeping enough binder
+    url: https://www.amazon.co.uk/s?k=acrylic+pouring+medium
+  - name: Small spirit level
+    why: checks the surface is flat so the pour does not run off one side
+    url: https://www.amazon.co.uk/s?k=small+spirit+level
+  - name: Disposable nitrile gloves
+    why: keep paint off your hands while pouring and tilting
+    url: https://www.amazon.co.uk/s?k=nitrile+gloves
+  related:
+  - paint-in-acrylics
+  - try-encaustic-painting
+  - paint-your-own-pottery
+  - learn-silk-painting
+- id: try-alcohol-ink-art
+  title: Try alcohol ink painting
+  category: think
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Alcohol inks give intense, saturated colour that spreads and blooms on non-porous surfaces such as synthetic Yupo paper, glass, so abstract and floral effects appear quickly. A short beginners' workshop
+    supplies the inks and paper and shows you how to use them safely.
+  start:
+  - Book a beginners' alcohol ink workshop at an arts centre or craft studio, and check that inks and Yupo paper are included.
+  - Wear an apron or old shirt; the inks stain.
+  - To carry on at home, buy six or so colours, a pad of Yupo paper and rubbing alcohol, and work in a well-ventilated room away from flames.
+  links:
+  - label: 'Craft Courses: alcohol ink workshops across the UK'
+    url: https://www.craftcourses.com/courses/alcohol-ink-workshop
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Pyramid Atlantic Art Center: Explorations in Alcohol Inks'
+    url: https://pyramidatlanticartcenter.org/event/explorations-in-alcohol-inks-may2026/
+    region: us
+    checked: '2026-11-19'
+  seo_title: 'Alcohol ink painting for beginners: classes, kit and safety'
+  description: What alcohol ink painting involves, what beginners' classes cost in the UK and US, the kit you need, and how to use flammable inks safely at home.
+  detail:
+  - h: What it involves
+    p:
+    - Pyramid Atlantic Art Center's beginners' course describes alcohol inks as giving intense, saturated colour on surfaces from glass to paper, with Yupo paper recommended. Students bring at least six
+      inks, a pad of Yupo, 99% (or 70%) rubbing alcohol and cheap brushes, and learn to move the ink with stamps, stencils and other tools and to combine it with acrylics, pastels, markers and collage.
+    - A two-and-a-half-hour UK workshop in Penkridge, Staffordshire, run by Feltworld Creative Arts, includes inks and Yupo paper and covers how to use alcohol inks safely, circle designs, floral effects
+      and woodland effects, making four A6 paintings and a Christmas bauble.
+    - Ranger's safety data sheet for Tim Holtz Alcohol Ink classes it as a flammable liquid whose vapour may cause flash fires. It says to keep it away from heat, sparks and flame, put out flames and pilot
+      lights and turn off heaters while using it, use it with ventilation, and keep the bottle closed. The vapour can irritate eyes and airways and may cause drowsiness and dizziness.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Feltworld Creative Arts, Penkridge, Staffordshire (via Craft Courses)
+        - 2.5 hours, beginners, all materials included; listed for 5 and 13 December 2026
+        - £48
+      - - Clare Cosens, Ellesmere Port (via Craft Courses)
+        - Two hours, gelli plate printing with alcohol inks; listed for 6 March 2027
+        - £35
+      - - Pyramid Atlantic Art Center (US)
+        - Three evening sessions of 2.5 hours, beginners; bring your own inks and Yupo (ran May to June 2026)
+        - $210, including a $14 materials fee
+  faq:
+  - q: What paper do you use for alcohol ink?
+    a: A non-porous synthetic paper such as Yupo. Pyramid Atlantic recommends Yupo, and the UK Feltworld workshop supplies it.
+  - q: Are alcohol inks flammable?
+    a: Yes. Ranger's safety data sheet classes its alcohol ink as a flammable liquid and says to keep it away from heat, sparks and flame.
+  - q: Do I need ventilation for alcohol ink?
+    a: Yes. The same data sheet says to use it with ventilation, as the vapour can irritate eyes and airways and may cause drowsiness or dizziness.
+  - q: What do I need to start alcohol ink painting?
+    a: Pyramid Atlantic's kit list is at least six inks, a pad of Yupo paper, rubbing alcohol and a few cheap brushes, and optionally an apron.
+  sources:
+  - label: Pyramid Atlantic Art Center, Explorations in Alcohol Inks
+    url: https://pyramidatlanticartcenter.org/event/explorations-in-alcohol-inks-may2026/
+    checked: '2026-11-19'
+  - label: Craft Courses, Alcohol Ink Painting with Feltworld Creative Arts
+    url: https://craftcourses.com/courses/alcohol-ink-painting-with-a-glass-of-bubbly
+    checked: '2026-11-19'
+  - label: Craft Courses, alcohol ink in-person courses
+    url: https://www.craftcourses.com/courses/alcohol-ink-workshop
+    checked: '2026-11-19'
+  - label: Ranger Industries, Tim Holtz Alcohol Ink safety data sheet (2025)
+    url: https://www.jerrysartarama.com/media/pdfs/Ranger/tim-holtz-alcohol-ink-sds-2025.pdf
+    checked: '2026-11-19'
+  safety: Alcohol inks are flammable and give off vapour, so use them in a ventilated room well away from flames, heaters and other sources of ignition, and keep bottles closed.
+  kit:
+  - name: Alcohol ink set
+    why: a range of colours to start with
+    url: https://www.amazon.co.uk/s?k=alcohol+ink+set
+  - name: Yupo paper pad
+    why: non-porous synthetic paper the inks flow across
+    url: https://www.amazon.co.uk/s?k=yupo+paper
+  - name: Isopropyl alcohol 99%
+    why: for blending, lifting and thinning the inks
+    url: https://www.amazon.co.uk/s?k=isopropyl+alcohol+99
+  related:
+  - learn-silk-painting
+  - paint-in-watercolour
+  - learn-chinese-brush-painting
+  - try-gouache-painting
+- id: learn-goldwork-embroidery
+  title: Learn goldwork embroidery
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Goldwork is the traditional craft of embroidering with metal threads and wires, couched onto fabric and often raised over felt padding. A one-day class teaches the core techniques on a small piece
+    you take home, and most assume you can already do some hand embroidery.
+  start:
+  - Book a one-day introduction to goldwork at an embroidery school, studio or adult education centre; check whether the materials are included or on a kit list.
+  - If you have never stitched by hand, do a basic embroidery class first, as several goldwork classes are aimed at people with some experience.
+  - Gather what the class asks for, typically an 8-inch ring frame, needles, embroidery scissors, beeswax and felt, and buy a starter pack of metal threads if one is not supplied.
+  links:
+  - label: 'Royal School of Needlework: Introduction to Goldwork, The Golden Pear (Hampton Court Palace)'
+    url: https://royal-needlework.org.uk/product/hcp26093-introduction-to-goldwork-the-golden-pear/
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Dovecot Studios: Beginner Goldwork Embroidery (Edinburgh)'
+    url: https://dovecotstudios.com/whats-on/beginner-goldwork-embroidery
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Introduction to Goldwork: The Art of Metal Embroidery (week-long class, Brasstown, North Carolina)'
+    url: https://folkschool.configio.com/pd/4283/introduction-to-goldwork-the-art-of-metal-emb
+    region: us
+    checked: '2026-11-19'
+  - label: 'Embroiderers'' Guild of America: Goldwork Peony online class'
+    url: https://egausa.org/registration-open-goldwork-peony/
+    region: us
+    checked: '2026-11-19'
+  seo_title: 'Goldwork embroidery classes for beginners: UK and US'
+  description: What a beginners' goldwork embroidery class teaches, the experience it assumes, what to bring, and what one-day and week-long classes cost.
+  detail:
+  - h: What you learn
+    p:
+    - Beginner days start with the names of the threads and how to handle them, then couching and chipping, with felt padding for raised shapes. The Royal School of Needlework's beginner day covers felt
+      padding under kid leather, pearl purl, chipping, couching, padded satin stitch and several fillings, worked as pears and leaves on linen.
+    - Beginner here usually means new to goldwork, not new to the needle. Surrey Adult Learning calls goldwork a more advanced medium and asks for some embroidery experience; Dovecot Studios and Maydel
+      in Chicago say their beginner days suit people who have done some hand embroidery or sewing.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Royal School of Needlework, Hampton Court Palace
+        - Beginner day, 10am to 4pm; ran 7 November 2026 (The Golden Pear)
+        - £145
+      - - Dovecot Studios, Edinburgh
+        - Beginner day, 10am to 4pm, all materials provided; ran 26 June 2026 (sold out)
+        - £95
+      - - Surrey Adult Learning, Camberley
+        - One Saturday, 10am to 3.30pm, taught by an RSN-trained embroiderer; bring your own kit; ran 28 June 2025
+        - £59
+      - - Maydel, Chicago
+        - One day, 10am to 4pm; kit of gilt wire threads, spangles, fabric, felt and beeswax included; ran 27 April 2025
+        - $120
+      - - Week-long class, Brasstown, North Carolina
+        - Six days with an RSN-trained teacher, all levels, adults 18 and over; dates 21 to 26 March, year not stated
+        - $950 tuition plus a $50 to $75 materials fee
+      - - Embroiderers' Guild of America, online
+        - PDF lessons and videos with a class forum; ran November 2025 to January 2026
+        - Not listed on the page
+    after: Classes like these fill early and are repeated irregularly, so look at each provider's current listings rather than relying on the dates above.
+  faq:
+  - q: Is goldwork embroidery hard for beginners?
+    a: It is usually taught as a next step after basic hand embroidery. Surrey Adult Learning describes it as a more advanced medium and asks for some embroidery experience.
+  - q: What do I need for a goldwork class?
+    a: Surrey Adult Learning's kit list includes a ring frame (8 inches preferred), needles, embroidery scissors, metal threads such as pearl purl and bright check, matching cotton, beeswax and felt. Some
+      classes, such as Dovecot's and Maydel's, supply the materials.
+  - q: Is goldwork made with real gold?
+    a: The threads are metal, and the materials vary. Maydel's class kit, for example, lists real gilt wire threads.
+  - q: Can I learn goldwork online?
+    a: Yes. The Embroiderers' Guild of America has run online goldwork classes with PDF lessons, videos and a forum where the teacher answers questions.
+  sources:
+  - label: Royal School of Needlework, HCP26093 Introduction to Goldwork, The Golden Pear
+    url: https://royal-needlework.org.uk/product/hcp26093-introduction-to-goldwork-the-golden-pear/
+    checked: '2026-11-19'
+  - label: Dovecot Studios, Beginner Goldwork Embroidery
+    url: https://dovecotstudios.com/whats-on/beginner-goldwork-embroidery
+    checked: '2026-11-19'
+  - label: Surrey County Council Adult Learning, Introduction to Goldwork Workshop
+    url: https://surreycc.gov.uk/schools-and-learning/adult-learning/courses/overview?id=53808
+    checked: '2026-11-19'
+  - label: Ravenswood Chicago events, Introduction to Goldwork Embroidery at Maydel
+    url: https://business.ravenswoodchicago.org/events/details/introduction-to-goldwork-embroidery-at-maydel-13341
+    checked: '2026-11-19'
+  - label: 'Introduction to Goldwork: The Art of Metal Embroidery (Brasstown, North Carolina)'
+    url: https://folkschool.configio.com/pd/4283/introduction-to-goldwork-the-art-of-metal-emb
+    checked: '2026-11-19'
+  - label: Embroiderers' Guild of America, Goldwork Peony with Lizzy Pye
+    url: https://egausa.org/registration-open-goldwork-peony/
+    checked: '2026-11-19'
+  kit:
+  - name: Goldwork starter kit
+    why: a small selection of metal threads such as pearl purl, bright check and Japanese thread to practise with
+    url: https://www.amazon.co.uk/s?k=goldwork+embroidery+starter+kit
+  - name: 8-inch embroidery ring frame
+    why: keeps the fabric drum-tight while you couch the metal threads
+    url: https://www.amazon.co.uk/s?k=8+inch+embroidery+ring+frame
+  - name: Beeswax for thread
+    why: waxing the couching thread helps it grip and stop tangling
+    url: https://www.amazon.co.uk/s?k=beeswax+embroidery+thread
+  related:
+  - learn-embroidery
+  - learn-needlepoint
+  - learn-a-heritage-craft
+  - make-a-patchwork-quilt
+- id: learn-miniature-painting
+  title: Learn to paint miniatures
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Painting model figures for tabletop games teaches priming, base coats, shading and highlighting, and a beginner class gets one figure painted in a couple of hours. Beginner sessions are cheap, and
+    Warhammer stores offer a free in-store build-and-paint session with a free miniature.
+  start:
+  - Use the Warhammer store finder to find a nearby store and ask about its free build and paint experience.
+  - Or book a beginner workshop at a games shop, art shop or craft studio; most supply a figure and the paints for the session.
+  - Practise at home on one figure at a time, working through priming, base coating, shading and highlighting.
+  links:
+  - label: 'Warhammer stores: free introductory experiences and store finder'
+    url: https://stores.warhammer.com
+    region: any
+    checked: '2026-11-19'
+  - label: 'Boards & Swords: House of Desa painting class'
+    url: https://www.boardsandswords.co.uk/products/house-of-desa-painting-class
+    region: uk
+    checked: '2026-11-19'
+  - label: 'The Art Store CNY: Intro to Mini Figure Painting'
+    url: https://www.theartstorecny.com/intro-to-mini-figure-painting-saturday-january-31.html
+    region: us
+    checked: '2026-11-19'
+  - label: 'The Crafter''s Library: Miniature Figurine Painting Basics (Santa Barbara Independent listing)'
+    url: https://www.independent.com/events/miniature-figurine-painting-basics/
+    region: us
+    checked: '2026-11-19'
+  seo_title: 'How to start painting miniatures: beginner classes'
+  description: Free in-store sessions and paid beginner workshops for painting miniatures and model figures, what they teach, and what they cost in the UK and US.
+  detail:
+  - h: What a first session covers
+    p:
+    - Beginner workshops follow the same order you will use at home. The Crafter's Library covers assembling, cleaning and priming a figure, then painting practice; The Art Store CNY's two-hour class covers
+      priming, base coating, shading, highlighting, brush control and picking out details.
+    - Warhammer's stores page offers a free build and paint experience, where you learn to build and paint a free miniature in store with help from staff, and you can take away one of two free miniatures.
+      It also mentions an introductory game with store staff.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Warhammer stores
+        - Free build and paint experience in store, with a free miniature to take away
+        - Free
+      - - Boards & Swords (House of Desa class), UK
+        - One day, 9.30am to 6pm, painting skin tones on a bust you keep; beginner and intermediate; ran 6 December 2025
+        - £40
+      - - Luton Literature at Brown Books, Luton
+        - Three-hour beginners' workshop, 7pm to 10pm; ran 8 January 2026
+        - Not listed
+      - - The Art Store CNY
+        - Two hours; one miniature, three paints to take home and all tools for the class; ran Saturday 31 January 2026
+        - $25
+      - - The Crafter's Library, Santa Barbara, California
+        - Two hours; one Warhammer figure included, or bring your own; age 12 and over; runs with at least four people; ran 30 March 2025
+        - $60
+    after: Shop and studio workshops are one-offs that repeat, so check each provider's current listings for the next date.
+  faq:
+  - q: How do I start painting miniatures?
+    a: A free in-store session at a Warhammer store or a short beginner workshop is the easiest way in. Beginner classes take you through priming, base coating, shading and highlighting on one figure.
+  - q: Are Warhammer painting sessions free?
+    a: Warhammer's stores page lists a free build and paint experience, in which store staff help you build and paint a free miniature.
+  - q: How much does a miniature painting class cost?
+    a: As last listed, from $25 for a two-hour class with a figure and paints at The Art Store CNY to £40 for a full-day class with a bust to keep at Boards & Swords.
+  - q: Do I need to bring my own figure to a painting class?
+    a: Usually not. The Art Store CNY and The Crafter's Library include a figure, and The Crafter's Library also invites you to bring your own unpainted ones.
+  sources:
+  - label: Warhammer, Stores
+    url: https://stores.warhammer.com
+    checked: '2026-11-19'
+  - label: Boards & Swords, House of Desa Painting Class
+    url: https://www.boardsandswords.co.uk/products/house-of-desa-painting-class
+    checked: '2026-11-19'
+  - label: Eventbrite, Hang Out and Paint! Beginner's Miniature Painting Workshop (Luton)
+    url: https://www.eventbrite.co.uk/e/hang-out-and-paint-beginners-miniature-painting-workshop-tickets-1978603478266
+    checked: '2026-11-19'
+  - label: The Art Store CNY, Intro to Mini Figure Painting
+    url: https://www.theartstorecny.com/intro-to-mini-figure-painting-saturday-january-31.html
+    checked: '2026-11-19'
+  - label: Santa Barbara Independent, Miniature Figurine Painting Basics
+    url: https://www.independent.com/events/miniature-figurine-painting-basics/
+    checked: '2026-11-19'
+  kit:
+  - name: Miniature paint starter set
+    why: a basic range of acrylic colours and primer for your first figures
+    url: https://www.amazon.co.uk/s?k=miniature+paint+starter+set
+  - name: Fine detail brushes
+    why: small brushes for eyes, edges and highlights
+    url: https://www.amazon.co.uk/s?k=miniature+detail+paint+brushes
+  - name: Hobby clippers
+    why: for cutting plastic figure parts cleanly from the frame
+    url: https://www.amazon.co.uk/s?k=hobby+sprue+cutters
+  related:
+  - paint-in-acrylics
+  - build-a-model-railway
+  - learn-pen-and-ink-drawing
+  - learn-calligraphy
+- id: try-artistic-swimming
+  title: Try artistic swimming as an adult
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Artistic swimming, once called synchronised swimming, is swimming set to music, with lifts, sculls and upside-down figures performed in time with a team. Adult (masters) clubs take complete beginners,
+    and many run taster sessions or beginners' courses before you commit.
+  start:
+  - Find an adult artistic swimming club near you through Swim England's list of masters clubs or USA Artistic Swimming's club list.
+  - Check the club's swimming test for beginners; one asks for 20 minutes of continuous swimming, another four lengths in under two minutes.
+  - Book a taster, trial or beginners' course, and bring a swimsuit that stays in place, goggles, a silicone cap and a nose clip.
+  links:
+  - label: 'Swim England: masters artistic swimming clubs'
+    url: https://swimming.org/artistic-swimming/masters-artistic-swimming-clubs
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Brighton Dolphin Swimming Club: adult artistic swimming'
+    url: https://www.bdsc.co.uk/?p=99
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Team New York Aquatics: artistic swimming (New York City)'
+    url: https://www.tnya.org/synchro/
+    region: us
+    checked: '2026-11-19'
+  - label: 'USA Artistic Swimming: become a member'
+    url: https://usaartisticswim.org/become-a-member
+    region: us
+    checked: '2026-11-19'
+  seo_title: 'Adult synchronised swimming: how to start'
+  description: How adult beginners get into artistic (synchronised) swimming, the swimming you need first, what clubs in the UK and US charge, and what to bring.
+  detail:
+  - h: What it's really like
+    p:
+    - Swim England says all ages, sexes, sizes and backgrounds are welcome at adult synchronised swimming clubs across England, that clubs often run taster sessions, and that members can learn a routine
+      and compete if they want to. Two of its masters clubs are based at universities, in Bath and Nottingham.
+    - You do need to be at home in the water first. Brighton Dolphin Swimming Club asks beginners to be able to swim continuously for 20 minutes and to be confident rolling backwards in the water. Team
+      New York Aquatics needs no artistic swimming experience but suggests being able to swim four lengths in under two minutes. Aqualillies, which runs artistic swimming fitness classes, asks for strong
+      basic swimming, treading water and comfort in water deeper than 4 feet (1.2 metres).
+    - Out To Swim in London says most of its artistic swimmers are entirely new to the sport.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Club / where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Brighton Dolphin Swimming Club, Prince Regent Swimming Complex, Brighton
+        - Monday evening sessions, beginners usually 7 to 8pm; regular introductory courses
+        - £35 a year membership, plus £36.66 a month for two hours of sessions a week
+      - - Aquavision, London Aquatics Centre, Stratford
+        - Adults 18 and over; Wednesday evenings and Saturday mornings; beginners' course (the latest listed started in September 2026)
+        - Not listed on the page; once- and twice-a-week memberships
+      - - Team New York Aquatics, BMCC, Tribeca, New York City
+        - Beginners train twice a week alongside the competitive team; free 30-day trial with two free practices
+        - $29.50 every three months membership, plus pool fees by subscription or pass
+      - - USA Artistic Swimming (US governing body)
+        - Trial Athlete membership for up to 30 days of club activity
+        - $19
+    after: Team New York Aquatics describes its team as the only USA Artistic Swimming-affiliated masters team in New York City. Aqualillies asks people to bring a nose clip and recommends a silicone swim
+      cap and goggles.
+  faq:
+  - q: Can adults learn synchronised swimming with no experience?
+    a: Yes. Aquavision in London takes complete beginners on its beginners' course, and Team New York Aquatics says no artistic swimming experience is needed.
+  - q: How well do I need to swim for artistic swimming?
+    a: Well enough to be comfortable in deep water. One UK club asks for 20 minutes of continuous swimming and confidence rolling backwards; a New York club suggests four lengths in under two minutes.
+  - q: What do I need for an artistic swimming class?
+    a: A swimsuit that stays in place, a towel and a nose clip, with a silicone cap and goggles recommended by one US class provider.
+  - q: How much does adult artistic swimming cost?
+    a: Brighton Dolphin lists £35 a year plus £36.66 a month for two hours a week. Team New York Aquatics lists $29.50 every three months plus pool fees, with a free trial first.
+  sources:
+  - label: Swim England, Masters artistic swimming clubs
+    url: https://swimming.org/artistic-swimming/masters-artistic-swimming-clubs
+    checked: '2026-11-19'
+  - label: Brighton Dolphin Swimming Club, Adult artistic swimming
+    url: https://www.bdsc.co.uk/?p=99
+    checked: '2026-11-19'
+  - label: Aquavision Synchronised Swimming Club, Masters
+    url: https://uk.gomotionapp.com/team/assc/page/masters
+    checked: '2026-11-19'
+  - label: Out To Swim, Artistic swimming
+    url: https://outtoswim.org/artisticswimming
+    checked: '2026-11-19'
+  - label: Team New York Aquatics, Artistic swimming
+    url: https://www.tnya.org/synchro/
+    checked: '2026-11-19'
+  - label: Team New York Aquatics, Join TNYA
+    url: https://www.tnya.org/join/
+    checked: '2026-11-19'
+  - label: USA Artistic Swimming, Become a member
+    url: https://usaartisticswim.org/become-a-member
+    checked: '2026-11-19'
+  - label: Aqualillies, Fitness class FAQs
+    url: https://www.aqualillies.com/?p=3899
+    checked: '2026-11-19'
+  kit:
+  - name: Nose clip
+    why: keeps water out of your nose when you are upside down
+    url: https://www.amazon.co.uk/s?k=synchronised+swimming+nose+clip
+  - name: Silicone swim cap
+    why: keeps hair out of the way during figures and lifts
+    url: https://www.amazon.co.uk/s?k=silicone+swim+cap
+  - name: Swimming goggles
+    why: for training sessions
+    url: https://www.amazon.co.uk/s?k=swimming+goggles+adult
+  related:
+  - masters-swimming
+  - try-aqua-aerobics
+  - learn-contemporary-dance
+  - play-water-polo
+- id: try-target-shooting
+  title: Try target shooting
+  category: move
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Target shooting is a test of stillness, breathing and concentration, shot at a paper or electronic target. Most people start with a low-powered air rifle or air pistol, using a club's equipment.
+  start:
+  - Find a range that welcomes newcomers, through the NSRA (National Smallbore Rifle Association) club finder or Try A Shoot days in the UK, or a public air range or an NRA First Steps or Basic course in
+    the US.
+  - Ask what a first visit involves; in the UK, joining a club involves a probation period, and some clubs, such as Gally Hill in Surrey, also ask for references and a police check.
+  - Go to a session, listen to the safety briefing and use the club's equipment before buying anything.
+  links:
+  - label: 'NSRA: introduction to target shooting'
+    url: https://nsra.co.uk/get-involved-1
+    region: uk
+    checked: '2026-11-19'
+  - label: 'NSRA: want to try air rifle?'
+    url: https://www.nsra.co.uk/starting-air-rifle
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Civilian Marksmanship Program: public marksmanship nights (Ohio and Alabama)'
+    url: https://thecmp.org/cmp-competition-centers/marksmanship-nights/
+    region: us
+    checked: '2026-11-19'
+  - label: 'Atlantic County, New Jersey: NRA and specialised training courses'
+    url: https://www.atlanticcountynj.gov/government/county-departments/department-of-public-safety/firearms-training-center/nra-and-specialized-training-courses
+    region: us
+    checked: '2026-11-19'
+  seo_title: 'Target shooting for beginners: how to start'
+  description: How to start target shooting with an air rifle or smallbore rifle in the UK and US, what the law asks of beginners, and what a first session costs.
+  safety: Follow the range officer's instructions at all times, and handle a gun only when and where you are told to.
+  detail:
+  - h: Starting out, and the legal basics
+    p:
+    - The NSRA says your first shoot will generally be with a low-powered .177 air rifle or air pistol, usually shooting from a bench, and that many clubs have a small amount of equipment for beginners.
+      It runs Try A Shoot days at its ranges at Bisley in the South of England and Aldersley in the Midlands, booked by phone, and many affiliated clubs run them too.
+    - In the UK, air guns rated at 12 foot-pounds muzzle energy or under do not need a firearms licence, according to the NSRA; cartridge guns such as .22 smallbore rifles do. Home Office guidance says
+      members of a Home Office approved club may use club firearms without their own certificate when shooting as a club member, but still need a certificate to buy one. Probationary members must be supervised
+      at all times by the range officer, a full member or a coach until they have completed safe-handling training, probation lasts at least three months, and casual day membership is not allowed. Guests
+      may shoot only on a club's guest days, and guests without a certificate or membership of another approved club must be supervised one-to-one.
+    - In the US, the Civilian Marksmanship Program asks every shooter at its air ranges to complete a short safety briefing and a one-time liability agreement first. Range rules vary, so ask before you
+      go.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Provider / where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Gally Hill Shooting Club, Surrey
+        - Induction and coaching on Monday evenings; club guns free to use; police check and two references first; probation at least six months without a certificate
+        - £25 application fee, £110 a year adult membership, £2 range fee a visit, plus ammunition and targets
+      - - NSRA ranges at Bisley and Aldersley
+        - Try A Shoot days, booked by phone
+        - Not listed on the page
+      - - CMP Gary Anderson Competition Center, Camp Perry, Ohio, and Judith Legerski Center, Anniston, Alabama
+        - Open public sessions on 10-metre electronic air ranges; free loan Daisy air rifles; safety briefing first
+        - $10 a day for adults, pellets $10 for 500
+      - - Atlantic County Firearms Training Center, New Jersey
+        - NRA Basic class, about 12 hours over two days, following NRA First Steps safety lessons
+        - $80
+    after: Gally Hill says it cannot take casual shooters and that the wait to join is about three to four months for air-only shooting and five to six months for live fire. Clay shooting is a separate
+      sport with its own pages; see try-clay-pigeon-shooting.
+  faq:
+  - q: Do I need a firearms licence to try target shooting in the UK?
+    a: Not for air guns rated at 12 foot-pounds or under, says the NSRA. Home Office guidance lets members of an approved club use club firearms without their own certificate, under supervision while on
+      probation.
+  - q: Can I just turn up at a UK rifle club?
+    a: Usually not. Home Office guidance does not allow day membership, and one Surrey club says it cannot take casual shooters; look for a Try A Shoot day or a club guest day.
+  - q: What gun do beginners start with?
+    a: The NSRA says most people start with a low-powered .177 air rifle or air pistol, often borrowed from the club.
+  - q: Where can I try air rifle shooting in the US?
+    a: The Civilian Marksmanship Program's air ranges in Camp Perry, Ohio, and Anniston, Alabama, are open to the public, with free loan air rifles and a $10 adult day fee as last listed.
+  sources:
+  - label: NSRA, Introduction to target shooting
+    url: https://nsra.co.uk/get-involved-1
+    checked: '2026-11-19'
+  - label: NSRA, Want to try air rifle? What's next?
+    url: https://www.nsra.co.uk/starting-air-rifle
+    checked: '2026-11-19'
+  - label: Home Office, Approval of rifle and muzzle-loading pistol clubs (GOV.UK)
+    url: https://www.gov.uk/government/publications/approval-of-rifle-and-muzzle-loading-pistol-clubs/approval-of-rifle-and-muzzle-loading-pistol-clubs-accessible
+    checked: '2026-11-19'
+  - label: Gally Hill Shooting Club, Frequently asked questions
+    url: https://sites.google.com/site/gallyhillsc/frequently-asked-questions
+    checked: '2026-11-19'
+  - label: Civilian Marksmanship Program, Marksmanship nights
+    url: https://thecmp.org/cmp-competition-centers/marksmanship-nights/
+    checked: '2026-11-19'
+  - label: Atlantic County, NJ, NRA and specialised training courses
+    url: https://www.atlanticcountynj.gov/government/county-departments/department-of-public-safety/firearms-training-center/nra-and-specialized-training-courses
+    checked: '2026-11-19'
+  kit:
+  - name: Shooting ear defenders
+    why: hearing protection on the range
+    url: https://www.amazon.co.uk/s?k=shooting+ear+defenders
+  - name: Shooting glasses
+    why: eye protection on the range
+    url: https://www.amazon.co.uk/s?k=shooting+safety+glasses
+  related:
+  - try-archery
+  - try-clay-pigeon-shooting
+  - try-axe-throwing
+  - learn-to-fence
+- id: try-wakeboarding
+  title: Try wakeboarding at a cable park
+  category: move
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: At a cable park an overhead cable pulls you across a lake, so you can learn to wakeboard without a boat. Beginners' sessions include the board, helmet and buoyancy aid, and a coach gets you started.
+  start:
+  - Check you can swim; UK parks ask for 50 metres, one of them with a buoyancy aid on.
+  - Book a beginners' taster or one-to-one lesson at a cable park, and check whether a wetsuit is included.
+  - Listen to the safety briefing on how to start from the dock, and let go of the handle whenever you fall.
+  links:
+  - label: 'Box End Park, Bedford: cable tow'
+    url: https://boxendpark.com/cable-tow/
+    region: uk
+    checked: '2026-11-19'
+  - label: 'North Yorkshire Water Park: wakeboarding'
+    url: https://northyorkshirewaterpark.co.uk/activities/wakeboarding
+    region: uk
+    checked: '2026-11-19'
+  - label: 'City of Crystal Lake: The Quarry Cable Wakeboard Park (Illinois)'
+    url: https://www.crystallake.org/three-oaks-recreation/the-quarry-cable-wakeboard-park
+    region: us
+    checked: '2026-11-19'
+  seo_title: 'Cable wakeboarding for beginners: prices and tips'
+  description: What a beginners' cable wakeboarding session involves, how cable differs from boat wakeboarding, safety basics and what UK and US parks charge.
+  safety: Wear a helmet and buoyancy aid, only ride if you are a confident swimmer, and let go of the handle as you fall.
+  detail:
+  - h: Cable or boat, and what a first session is like
+    p:
+    - Behind a boat, a driver tows you. At a cable park you hold a handle on a cable run between towers across the lake, so no boat is needed. British Water Ski & Wakeboard describes a straight-line cable
+      between two towers as a common place to start, run by an operator, before moving to a full cable that runs round the lake. At the Quarry Cable Park in Illinois, beginners take lessons before moving
+      on to a longer cable with floating ramps.
+    - The governing body's safety recommendations ask riders to be good swimmers, wear a helmet at all times and a suitable buoyancy device, get instruction on the dock start first, and let go of the handle
+      when falling. It notes that full cable parks can run slower sessions for learners; Box End Park runs slow sessions at weekends from April to October.
+    - For learning behind a boat instead, see learn-to-water-ski.
+  - h: Beginners' sessions and what they cost
+    table:
+      head:
+      - Park / where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Box End Park, Bedford
+        - Two-hour Cable Taster Session for complete beginners on a five-tower cable; board, helmet, buoyancy aid, wetsuit and coaching included; April to November
+        - £39 adult (17 and over)
+      - - North Yorkshire Water Park
+        - 30-minute one-to-one session on a 240 m cable; buoyancy aid and helmet included; no experience needed
+        - £35; wetsuit hire £3 (short) or £6 (full)
+      - - The Quarry Cable Park, Three Oaks Recreation Area, Crystal Lake, Illinois
+        - Lessons and rentals; Illinois's tourism site describes 45-minute private lessons; season opened in May 2026
+        - Not listed on the pages opened; see the park's rates
+    after: Box End Park asks riders to be at least 10 and able to swim 50 metres. North Yorkshire Water Park asks riders to swim 50 metres with a buoyancy aid on and to remove all jewellery.
+  faq:
+  - q: Is cable wakeboarding easier than boat wakeboarding for beginners?
+    a: The pages we read do not say it is easier. British Water Ski & Wakeboard describes a two-tower straight-line cable, run by an operator, as a common place to start.
+  - q: Do I need to be able to swim to go wakeboarding?
+    a: Yes. British Water Ski & Wakeboard says to be a good swimmer, and UK parks ask for 50 metres.
+  - q: What do I need to bring for a cable wakeboarding taster?
+    a: Usually just swimwear and a towel. Box End Park's taster includes board, helmet, buoyancy aid and wetsuit; North Yorkshire Water Park includes buoyancy aid and helmet and hires wetsuits.
+  - q: How much is a wakeboarding lesson in the UK?
+    a: As last listed, £39 for a two-hour adult taster at Box End Park and £35 for a 30-minute one-to-one session at North Yorkshire Water Park.
+  sources:
+  - label: British Water Ski & Wakeboard, Cable tow safety recommendations (May 2023)
+    url: https://www.bwsw.org.uk/resources/bwsw-cable-tow-safety-recommendations/safety-recommendations-cable-tow-05.05.2023.pdf
+    checked: '2026-11-19'
+  - label: Box End Park, Cable tow
+    url: https://boxendpark.com/cable-tow/
+    checked: '2026-11-19'
+  - label: Box End Park, Prices
+    url: https://www.boxendpark.com/pricing/
+    checked: '2026-11-19'
+  - label: North Yorkshire Water Park, Wakeboarding
+    url: https://northyorkshirewaterpark.co.uk/activities/wakeboarding
+    checked: '2026-11-19'
+  - label: City of Crystal Lake, The Quarry Cable Wakeboard Park
+    url: https://www.crystallake.org/three-oaks-recreation/the-quarry-cable-wakeboard-park
+    checked: '2026-11-19'
+  - label: Enjoy Illinois, Wakeboarding at Quarry Cable Park
+    url: https://www.enjoyillinois.com/plan-your-trip/travel-inspiration/wakeboarding-quarry-cable-park
+    checked: '2026-11-19'
+  - label: Patch, Cable wakeboarding season begins at The Quarry Cable Park this week (18 May 2026)
+    url: https://patch.com/illinois/crystallake/amp/34130158/cable-wakeboarding-season-begins-at-the-quarry-cable-park-this-week
+    checked: '2026-11-19'
+  kit:
+  - name: Watersports helmet
+    why: for riders who want their own rather than a hired one
+    url: https://www.amazon.co.uk/s?k=watersports+helmet
+  - name: Changing robe
+    why: for getting changed at the lakeside
+    url: https://www.amazon.co.uk/s?k=changing+robe
+  related:
+  - learn-to-water-ski
+  - learn-to-surf
+  - stand-up-paddleboarding
+  - kitesurfing-lesson
+- id: play-cricket-as-an-adult
+  title: Play cricket as an adult beginner
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Cricket has more ways in for adults than most people realise, from women's soft ball festivals where everyone bats, bowls and fields, to eight-a-side evening leagues and traditional Saturday club
+    cricket. Some clubs run training just for adults who have never played or have not played for years.
+  start:
+  - Use the ECB club finder (England and Wales) or ask your county cricket board what adult formats run near you, including soft ball and indoor cricket.
+  - In the US, look for a local club or a Last Man Stands league, and register as an individual member of USA Cricket, which clubs and leagues require.
+  - Email the club and ask to come along to a training session before you join, as Marlow Cricket Club, for example, invites.
+  links:
+  - label: 'ECB: find a cricket club (England and Wales)'
+    url: https://www.ecb.co.uk/play/find-a-club
+    region: uk
+    checked: '2026-11-19'
+  - label: 'ECB: playing cricket, including adult formats'
+    url: https://www.ecb.co.uk/play
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Sussex Cricket Foundation: women''s soft ball cricket'
+    url: https://sussexcricket.co.uk/womens-softball-cricket
+    region: uk
+    checked: '2026-11-19'
+  - label: 'USA Cricket: 2025 membership launch and prices'
+    url: https://usacricket.org/media-release/usa-cricket-announces-2025-membership-launch-with-early-registration-incentives/
+    region: us
+    checked: '2026-11-19'
+  - label: 'Last Man Stands: amateur eight-a-side T20 leagues, including New York and Chicago'
+    url: https://www.lastmanstands.com/last-man-stands-expands-to-chicago-for-summer-2025
+    region: us
+    checked: '2026-11-19'
+  seo_title: 'Play cricket as an adult beginner: how to start'
+  description: How adults who have never played can start cricket in the UK and US, from women's soft ball festivals to club cricket, with real club fees.
+  detail:
+  - h: The formats that suit beginners
+    p:
+    - The ECB lists adult options including soft ball cricket, Last Man Stands, indoor cricket, midweek T20 and traditional club cricket, and says that whatever your age, gender or experience there is a
+      game for you.
+    - Women's soft ball cricket uses a soft ball and non-wooden bats. In the ECB festival format, teams of six to eight play games of no more than an hour, everyone bats, bowls and fields, and you can bowl
+      overarm or underarm. Equipment is provided and you wear comfortable clothes. In Sussex, festivals lead on to club tournaments, a summer league from May and an indoor winter league from November to
+      March.
+    - Some clubs run sessions just for adults who are new or returning. Esher Cricket Club in Surrey, for example, describes its free Back to Cricket training as aimed at adults who have not played for
+      years or have never played.
+    - In the US, Last Man Stands runs eight-a-side T20 games lasting two hours and says it is open to all skill levels, from experienced players to newcomers, with leagues in New York and, from 2025, Chicago.
+  - h: What it costs to play
+    table:
+      head:
+      - Where
+      - What
+      - Cost (as last listed)
+      rows:
+      - - Esher Cricket Club, Surrey
+        - Back to Cricket training for new and returning adults
+        - Free
+      - - Marlow Cricket Club, Buckinghamshire
+        - Adult playing membership, 2026 season
+        - £50 subscription plus £80 after 10 games; match fees £11 a game, £8 midweek
+      - - USA Cricket
+        - Individual membership, needed before you can align with a club or league
+        - $15 (from April 2025)
+      - - Howard County, Maryland
+        - Adult 11-a-side, 20-over league for teams; ran June to October 2026, described as competitive
+        - $699 per team plus a $300 umpiring deposit
+    after: Clubs set their own fees, so ask before you join. Marlow says that if you are unsure about joining you can get in touch and come along for a session.
+  faq:
+  - q: Can you start playing cricket as an adult?
+    a: Yes. The ECB lists several adult formats, and some clubs, such as Esher in Surrey, run training aimed at adults who have never played.
+  - q: What is soft ball cricket?
+    a: A short format for women using a soft cricket ball and non-wooden bats, designed so everyone bats, bowls and fields. Festivals provide the equipment.
+  - q: How much does it cost to join a cricket club?
+    a: It varies by club. Marlow Cricket Club lists a £50 adult subscription for 2026, plus £80 after 10 games and a match fee of £11 a game.
+  - q: How do I find cricket in the USA?
+    a: Register as an individual member of USA Cricket ($15 as last listed), then align with a club or league, or look for a Last Man Stands league, which takes newcomers.
+  sources:
+  - label: ECB, Playing cricket
+    url: https://www.ecb.co.uk/play
+    checked: '2026-11-19'
+  - label: ECB, Your guide to getting involved in cricket
+    url: https://www.ecb.co.uk/news/1268914/your-guide-to-getting-involved-in-cricket
+    checked: '2026-11-19'
+  - label: ECB, Five things to know about women's soft ball cricket festivals
+    url: https://www.ecb.co.uk/news/422658/five-things-to-know-women-s-soft-ball-cricket-festivals
+    checked: '2026-11-19'
+  - label: Sussex Cricket Foundation, Women's soft ball cricket
+    url: https://sussexcricket.co.uk/womens-softball-cricket
+    checked: '2026-11-19'
+  - label: Esher Cricket Club, Back to Cricket
+    url: https://eshercc.co.uk/product-category/back-to-cricket/
+    checked: '2026-11-19'
+  - label: Marlow Cricket Club, Join
+    url: https://www.marlowcc.co.uk/join
+    checked: '2026-11-19'
+  - label: USA Cricket, 2025 membership launch
+    url: https://usacricket.org/media-release/usa-cricket-announces-2025-membership-launch-with-early-registration-incentives/
+    checked: '2026-11-19'
+  - label: USA Cricket, Membership FAQs
+    url: https://usacricket.org/domestic/usa-cricket-membership-faqs
+    checked: '2026-11-19'
+  - label: Last Man Stands, Expands to Chicago for summer 2025
+    url: https://www.lastmanstands.com/last-man-stands-expands-to-chicago-for-summer-2025
+    checked: '2026-11-19'
+  - label: Howard County adult cricket league, fall season 2026 (Active.com listing)
+    url: https://www.active.com/highland-md/cricket/cricket-classes/adult-cricket-league-fall-season-2026
+    checked: '2026-11-19'
+  inspire:
+  - kind: read
+    person: Raf Nicholson
+    line: Took part in an ECB women's soft ball cricket festival at Loughborough University, years after she had last played at university, and wrote about it for the site she edits.
+    title: 'FEATURE: CRICKETher Editor Raf Nicholson Plays Women''s Soft Ball Cricket'
+    outlet: CRICKETher
+    url: https://crickether.com/2018/08/10/feature-crickether-editor-raf-nicholson-plays-womens-soft-ball-cricket/
+    checked: '2026-11-19'
+  kit:
+  - name: Soft cricket ball
+    why: for catching and bowling practice in the garden or park
+    url: https://www.amazon.co.uk/s?k=soft+cricket+ball
+  - name: Cricket batting gloves
+    why: to protect your hands when batting in nets and hard-ball games
+    url: https://www.amazon.co.uk/s?k=adult+cricket+batting+gloves
+  - name: Cricket whites
+    why: worn in traditional club matches
+    url: https://www.amazon.co.uk/s?k=cricket+whites+trousers+shirt
+  related:
+  - play-walking-cricket
+  - play-softball
+  - play-netball
+  - walking-football
+- id: play-shuffleboard
+  title: Play shuffleboard
+  category: move
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Shuffleboard comes in two forms, a long court where you push discs with a cue, and a table where you slide weights by hand, and both are simple to learn, with a short list of rules. You can play
+    it in a London bar from £10 a person or at the St. Petersburg Shuffleboard Club in Florida, where non-members pay $10 a night.
+  start:
+  - Pick your version. Court shuffleboard is played outdoors with cues and discs; table shuffleboard is a bar game played by hand.
+  - In the UK, book a session at a shuffleboard bar such as Electric Shuffle in London, or look for a table at a games bar such as Draughts in Hackney.
+  - In the US, turn up to a public night or a beginners' session at a club such as the St. Petersburg Shuffleboard Club in Florida.
+  links:
+  - label: 'Electric Shuffle: shuffleboard bars in London'
+    url: https://electricshuffle.com/london/
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Draughts London: a beginner''s guide to shuffleboard'
+    url: https://draughtslondon.com/shuffleboard-london-scene-beginners-guide/
+    region: uk
+    checked: '2026-11-19'
+  - label: 'St. Petersburg Shuffleboard Club, Florida: events and public play'
+    url: https://www.stpeteshuffle.com/events.html
+    region: us
+    checked: '2026-11-19'
+  - label: 'World Shuffleboard: welcome to shuffleboard (court rules)'
+    url: https://world-shuffleboard.org/welcome-to-shuffleboard/
+    region: any
+    checked: '2026-11-19'
+  seo_title: 'How to play shuffleboard: rules and where to play'
+  description: The basic rules of court and table shuffleboard, and where beginners can play in the UK and US, from London bars to a Florida club, with prices.
+  detail:
+  - h: How the game works
+    p:
+    - On a court, two to four players take turns pushing discs six inches (15 cm) across with a pronged cue up to 6 ft 3 in (1.9 m) long. Each player shoots four discs. The scoring triangle at the far end
+      is marked 10, 8 and 7, with a minus-10 zone at the bottom, and a disc only scores if it sits wholly inside a section without touching a line. All eight discs are shot, then the frame is scored; the
+      last shot is called the hammer.
+    - World Shuffleboard suggests a 16-frame game for novices. Court play grew from a deck game on 1840s cruise liners; it came ashore at Daytona Beach in 1913, and the first public courts were built in
+      St. Petersburg in 1923.
+    - Table shuffleboard is older. It began as an indoor table game in Great Britain and is still played in bars and taverns. In the version Draughts London describes, each player gets four weights, the
+      first to 15 points wins, and you steady yourself on the frame with your free hand, keeping your fingers off the playing surface.
+  - h: Where beginners can play
+    table:
+      head:
+      - Where
+      - What
+      - Cost (as last listed)
+      rows:
+      - - Electric Shuffle, London
+        - Shuffleboard for groups of 2 to 32, four games, with food and drink served to the table
+        - From £10 per person
+      - - Draughts, Hackney, London
+        - Shuffleboard at a board game bar, with casual games and regular tournaments
+        - Not listed
+      - - St. Petersburg Shuffleboard Club, Florida
+        - Friday Night Shuffle, 7 to 10 pm, weather permitting; also open hours on Tuesday, Thursday and Sunday
+        - $10 for non-members, free for members
+      - - St. Petersburg Shuffleboard Club, Florida
+        - 'Beginner Boot Camp: scoring, etiquette, rules and basic strategy'
+        - $10 for non-members, free for members
+  faq:
+  - q: How do you score in shuffleboard?
+    a: On a court, discs score 10, 8 or 7 if they land wholly inside those sections of the triangle without touching a line, and lose 10 in the bottom section, the kitchen. In table shuffleboard as described
+      by Draughts London, the first player to 15 points wins.
+  - q: What is the difference between table and court shuffleboard?
+    a: Court shuffleboard is played on a long court with cues and six-inch discs. Table shuffleboard is played on a table by sliding weights by hand, and is the older game, from Great Britain.
+  - q: Where can I play shuffleboard in London?
+    a: Electric Shuffle lists shuffleboard at From £10 per person, and Draughts has shuffleboard at its Hackney bar.
+  - q: How long is a game of shuffleboard?
+    a: Court games are played to a set number of frames or points; World Shuffleboard suggests 16 frames for novices, or a points game such as 75.
+  sources:
+  - label: World Shuffleboard, Welcome to shuffleboard
+    url: https://world-shuffleboard.org/welcome-to-shuffleboard/
+    checked: '2026-11-19'
+  - label: St. Petersburg Shuffleboard Club, Events
+    url: https://www.stpeteshuffle.com/events.html
+    checked: '2026-11-19'
+  - label: Electric Shuffle, London
+    url: https://electricshuffle.com/london/
+    checked: '2026-11-19'
+  - label: Draughts London, Shuffleboard in London, a beginner's guide
+    url: https://draughtslondon.com/shuffleboard-london-scene-beginners-guide/
+    checked: '2026-11-19'
+  kit:
+  - name: Table shuffleboard weights
+    why: replacement pucks for a home or club table
+    url: https://www.amazon.co.uk/s?k=table+shuffleboard+pucks
+  - name: Shuffleboard table powder
+    why: the fine powder sprinkled on a table so the weights slide
+    url: https://www.amazon.co.uk/s?k=shuffleboard+table+powder
+  related:
+  - play-petanque
+  - lawn-bowls
+  - try-curling
+  - play-darts
+- id: try-ice-climbing
+  title: Try ice climbing
+  category: move
+  kind: experience
+  effort: demanding
+  cost: mid
+  time: days
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Climbing frozen water with an axe in each hand and spikes on your feet is a different sport from rock climbing, and you can try it indoors in Scotland on a 12-metre wall of real ice. In Colorado,
+    the Ouray Ice Park is free to climb in winter and guides run two-day courses for complete novices.
+  start:
+  - Book a taster on an indoor ice wall, such as the 2.5-hour Hit the Ice session at Ice Factor in Kinlochleven, near Fort William.
+  - If you like it, learn the outdoor skills on a guided course, such as Glenmore Lodge's two-day winter climbing introduction or a guided intro course in the Ouray Ice Park, Colorado.
+  - Check what the guide provides and what you must bring; boots and warm clothing are usually your own, and stiff mountaineering boots can often be hired locally.
+  links:
+  - label: 'Ice Factor, Kinlochleven: Hit the Ice taster session'
+    url: https://www.ice-factor.co.uk/product/hit-the-ice/
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Glenmore Lodge: Winter Climbing Introduction (2 days)'
+    url: https://www.glenmorelodge.org.uk/winter-mountain/winter-climbing/intro-to-winter-climbing/
+    region: uk
+    checked: '2026-11-19'
+  - label: 'Ouray Ice Park, Colorado: FAQ'
+    url: https://ourayicepark.com/faq
+    region: us
+    checked: '2026-11-19'
+  - label: 'Skyward Mountaineering: Intro to Ice Climbing course, Ouray'
+    url: https://www.skywardmountaineering.com/ice-climbing/clinics/intro
+    region: us
+    checked: '2026-11-19'
+  seo_title: 'Ice climbing for beginners: where to try it'
+  description: Where beginners can try ice climbing, from the indoor ice wall at Kinlochleven to Scottish winter courses and the Ouray Ice Park, with prices.
+  detail:
+  - h: Indoors first, then outside
+    p:
+    - Ice Factor in Kinlochleven, in the Scottish Highlands, has an indoor wall of real ice 12 metres (nearly 50 ft) high, with routes from beginner to expert. Its Hit the Ice taster lasts 2.5 hours and
+      is for ages 16 and over.
+    - Outdoor winter climbing asks more. Glenmore Lodge's two-day introduction and Ice Factor's private guided winter climbing both ask for some summer rock climbing and winter hillwalking experience, including
+      using an axe and crampons. Glenmore Lodge's course teaches technical axe and crampon use, planning and movement, with you climbing as second, not leading.
+    - In the US, the Ouray Ice Park in Colorado is a free public venue, typically open from mid to late December to mid-March, depending on the weather. It does not rent gear, and crampons and a helmet
+      are required at all times in climbing areas. Skyward Mountaineering's two-day intro course there needs no previous climbing experience.
+  - h: What a first go costs
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Ice Factor, Kinlochleven
+        - Hit the Ice, 2.5-hour taster on the indoor ice wall, age 16 and over
+        - From £48
+      - - Glenmore Lodge, Cairngorms
+        - Two-day winter climbing introduction, kit use included; dates listed ran January to March 2025
+        - £420, without accommodation
+      - - Ice Factor, Kinlochleven
+        - Private guided winter climbing around Glencoe and Ben Nevis, per day
+        - £200 for one person, £220 for two, up to £300 for six
+      - - Skyward Mountaineering, Ouray Ice Park, Colorado
+        - Two days, eight hours each, up to four climbers per guide; harness, helmet, crampons and ice tools can be provided
+        - $690 per climber
+    after: You bring your own clothing and mountaineering boots on the Skyward course; boots can be hired in Ouray. Ouray Ice Park's own festival clinics include group equipment and park user fees but not
+      personal kit.
+  faq:
+  - q: Can a beginner go ice climbing?
+    a: Yes. Ice Factor's indoor taster is tailored to your ability, and Skyward Mountaineering's intro course in Ouray needs no previous climbing experience. Outdoor courses in Scotland ask for some rock
+      climbing and winter walking first.
+  - q: Where can you ice climb indoors in the UK?
+    a: Ice Factor in Kinlochleven, near Fort William, has a 12-metre indoor wall of real ice. Its Hit the Ice taster is listed from £48.
+  - q: Is the Ouray Ice Park free?
+    a: Yes. The park describes itself as a free recreational venue open to the public, and asks climbers to consider membership or a donation.
+  - q: When is ice climbing season?
+    a: Ouray Ice Park typically opens in mid to late December and closes in mid-March, depending on the weather.
+  safety: Outdoor ice and winter climbing carries risks from falling ice, avalanches and cold, so start indoors or with a qualified guide, and wear a helmet.
+  sources:
+  - label: Ice Factor, Hit the Ice
+    url: https://www.ice-factor.co.uk/product/hit-the-ice/
+    checked: '2026-11-19'
+  - label: Ice Factor, Private guided winter climbing
+    url: https://www.ice-factor.co.uk/climbing-mountaineering/winter-climbing/
+    checked: '2026-11-19'
+  - label: Glenmore Lodge, Winter Climbing Introduction (2 days)
+    url: https://www.glenmorelodge.org.uk/winter-mountain/winter-climbing/intro-to-winter-climbing/
+    checked: '2026-11-19'
+  - label: Ouray Ice Park, FAQ
+    url: https://ourayicepark.com/faq
+    checked: '2026-11-19'
+  - label: Ouray Ice Park, Clinics
+    url: https://ourayicepark.com/shop/clinics
+    checked: '2026-11-19'
+  - label: Skyward Mountaineering, Intro to Ice Climbing course
+    url: https://www.skywardmountaineering.com/ice-climbing/clinics/intro
+    checked: '2026-11-19'
+  kit:
+  - name: Merino base layers
+    why: warm layers under a waterproof shell for standing at the bottom of a cold route
+    url: https://www.amazon.co.uk/s?k=merino+base+layer+thermal
+  - name: Insulated climbing gloves
+    why: for holding ice axes in the cold
+    url: https://www.amazon.co.uk/s?k=insulated+climbing+gloves
+  related:
+  - indoor-climbing
+  - learn-to-climb-outdoors
+  - try-via-ferrata
+  - climb-ben-nevis

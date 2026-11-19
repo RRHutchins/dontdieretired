@@ -161,7 +161,7 @@ guidance:
     applies: [endurance]
     use: advice
     text: Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day.
-    for: [ea-pavey-marathon, issn-ultra-2019]
+    for: [ea-pavey-marathon, issn-ultra-2019, mcm-first-timer-tips]
   - id: feet-first
     topic: feet
     applies: [walking, running, multiday]
@@ -201,7 +201,7 @@ guidance:
     applies: [endurance]
     use: advice
     text: Start slower than you think you need to; early miles feel easy and are where most people overdo it.
-    for: [ea-pavey-marathon, ea-training-pace, knechtle-nyc-2026]
+    for: [ea-pavey-marathon, ea-training-pace, knechtle-nyc-2026, mcm-first-timer-tips]
     note: The 2026 systematic review of the New York City Marathon found pacing mostly positive (runners slow down), most in slower runners, and describes avoiding an excessively fast start; it does not say the early miles feel easy.
   - id: weather-daylight
     topic: on the day
@@ -250,7 +250,7 @@ guidance:
     applies: [multiday]
     use: advice
     text: In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race.
-    for: [tanabe-kumano-tips, nps-heat-illness, nhs-heat]
+    for: [tanabe-kumano-tips, nps-heat-illness, nhs-heat, fourdaagse-medical]
   - id: heat-warning-signs
     topic: warning signs
     applies: [multiday]
@@ -488,14 +488,14 @@ guidance:
     applies: [swimming]
     use: advice
     text: Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire.
-    for: [rnli-cold-water-2025, usms-open-water, swimeng-stay-safe, bewl-ows]
+    for: [rnli-cold-water-2025, usms-open-water, swimeng-stay-safe, bewl-ows, rnli-open-water-swimming]
     note: Bewl Water, a supervised lake venue in Kent, makes a tow float and a bright hat compulsory for every swimmer.
   - id: ow-check-conditions
     topic: on the day
     applies: [swimming]
     use: advice
     text: Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case.
-    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water]
+    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, rnli-open-water-swimming]
   - id: ow-cold-gradually
     topic: key session
     applies: [swimming]
