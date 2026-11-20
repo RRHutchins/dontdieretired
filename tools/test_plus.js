@@ -354,7 +354,9 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       const u = new URL(String(url)), p = u.pathname.replace('/v1/', ''), m = init.method || 'GET', b = parseForm(init.body);
       const R = d => new Response(JSON.stringify(d), { status: 200 });
       if (m === 'POST') st.posts.push({ p, b });
-      if (p === 'products') return m === 'GET' ? R({ data: st.products }) : R((st.products.push({ id: 'prod_' + st.products.length, metadata: { ddr: b['metadata[ddr]'] } }), st.products.at(-1)));
+      if (p === 'products') return m === 'GET' ? R({ data: st.products }) : R((st.products.push({ id: 'prod_' + st.products.length, tax_code: b.tax_code || null, metadata: { ddr: b['metadata[ddr]'], ddr_tax: b['metadata[ddr_tax]'] } }), st.products.at(-1)));
+      const pm = /^products\/(prod_\d+)$/.exec(p);
+      if (pm && m === 'POST') { const x = st.products.find(y => y.id === pm[1]); x.tax_code = b.tax_code; if (b['metadata[ddr_tax]']) x.metadata.ddr_tax = b['metadata[ddr_tax]']; return R(x); }
       if (p === 'prices') return m === 'GET' ? R({ data: st.prices.filter(x => x.lookup_key === u.searchParams.get('lookup_keys[]')) })
         : R((st.prices.push({ id: 'price_' + st.prices.length, lookup_key: b.lookup_key, unit_amount: +b.unit_amount, currency: b.currency }), st.prices.at(-1)));
       if (p === 'billing_portal/configurations') return m === 'GET' ? R({ data: st.confs }) : R((st.confs.push({ id: 'bpc_1', metadata: { ddr: 'plus' }, business_profile: { terms_of_service_url: b['business_profile[terms_of_service_url]'] } }), st.confs[0]));
@@ -378,6 +380,7 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       assert.strictEqual(await run('sk_live_x', 1), 1, 'a live key is refused'); assert.strictEqual(st.posts.length, 0);
       assert.strictEqual(await run('sk_test_x', 2), 0);
       const pr = st.posts.filter(x => x.p === 'prices').map(x => x.b);
+      assert.deepStrictEqual(st.posts.filter(x => x.p === 'products').map(x => x.b.tax_code), ['txcd_10000000', 'txcd_10000000'], 'both products carry the tax code (19 Nov review)');
       assert.deepStrictEqual(pr.map(x => [x.lookup_key, x.unit_amount, x.currency, x['recurring[interval]'], x.tax_behavior]),
         [['ddr_plus_month', '200', 'gbp', 'month', 'inclusive'], ['ddr_plus_year', '2000', 'gbp', 'year', 'inclusive'], ['ddr_plus_gift', '2000', 'gbp', undefined, 'inclusive']]);
       const conf = st.posts.find(x => x.p === 'billing_portal/configurations').b;
@@ -402,6 +405,16 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       assert.strictEqual(await run('sk_test_x', 5), 0);
       assert.strictEqual(st.posts.length, b5 + 1); assert.strictEqual(st.confs[0].business_profile.terms_of_service_url, 'https://dontdieretired.com/planner-plus/terms/');
       assert.strictEqual(await run('sk_test_x', 6), 0); assert.strictEqual(st.posts.length, b5 + 1, 'then nothing more');
+      // 20 Nov: products made before the tax code existed gain it, once; a code changed in the Dashboard is left alone
+      st.products[0].tax_code = null; delete st.products[0].metadata.ddr_tax; st.products[1].tax_code = { id: 'txcd_10103001', object: 'tax_code' };
+      const b7 = st.posts.length;
+      assert.strictEqual(await run('sk_test_x', 7), 0);
+      assert.deepStrictEqual(st.posts.slice(b7).map(x => [x.p, x.b.tax_code]), [['products/prod_0', 'txcd_10000000']]);
+      assert.strictEqual(st.products[0].tax_code, 'txcd_10000000'); assert.strictEqual(st.products[1].tax_code.id, 'txcd_10103001');
+      const b8 = st.posts.length; assert.strictEqual(await run('sk_test_x', 8), 0); assert.strictEqual(st.posts.length, b8, 'then nothing more');
+      // ...and once set, a null is Robin choosing the account's preset code in the Dashboard: left alone
+      st.products[0].tax_code = null; const b9 = st.posts.length;
+      assert.strictEqual(await run('sk_test_x', 9), 0); assert.strictEqual(st.posts.length, b9, 'the preset choice is kept'); assert.strictEqual(st.products[0].tax_code, null);
     } finally { globalThis.fetch = saved; delete process.env.STRIPE_SECRET_KEY; try { fs.unlinkSync(out); } catch (e) { /* gone */ } }
   });
   await t('day 15: once the paywall is on, the list on the account is Plus: others can read their copy but store nothing', async () => {

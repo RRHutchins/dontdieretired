@@ -3,7 +3,7 @@
 // Run by .github/workflows/worker.yml after each deploy, once Robin has added the STRIPE_SECRET_KEY repository secret.
 //
 // Makes: the "Planner Plus" product with a £2 monthly and a £20 yearly price, a "Planner Plus gift" product with a
-// £20 one-off price (the gift, sold from day 16), all VAT-inclusive and found by lookup key; a Customer Portal set-up (cancel at
+// £20 one-off price (the gift, sold from day 16), both products with a product tax code (TAX_CODE), all VAT-inclusive and found by lookup key; a Customer Portal set-up (cancel at
 // the end of the paid period, switch monthly/yearly, change card, receipts); and the webhook endpoint
 // https://api.dontdieretired.com/stripe/webhook. Its signing secret is shown by Stripe only when the endpoint is
 // made, so it is written to --secret-out (for `wrangler secret put STRIPE_WEBHOOK_SECRET`) and never printed.
@@ -32,11 +32,25 @@ async function call(method, path, params) {
 }
 const say = s => console.log((live ? '[LIVE] ' : '[test] ') + s);
 
+// Product tax code (19 Nov 2026 Stripe review): "General - Electronically Supplied Services", checked against Stripe's
+// Tax Codes API on 20 Nov 2026. It lets Stripe Tax's threshold monitoring count these sales; it collects no tax by itself
+// (that needs a registration in Stripe Tax). The classification is the accountant's call (§6t launch step 10): if a
+// different code is agreed, change it in the Dashboard; this script then leaves it alone and says so.
+const TAX_CODE = 'txcd_10000000';
+
 async function product(tag, name, description) {
   const list = await call('GET', 'products', { active: 'true', limit: 100 });
   const p = list.data.find(x => x.metadata && x.metadata.ddr === tag);
-  if (p) { say(`product ${name}: exists (${p.id})`); return p.id; }
-  const made = await call('POST', 'products', { name, description, metadata: { ddr: tag } });
+  if (p) {
+    const code = p.tax_code && typeof p.tax_code === 'object' ? p.tax_code.id : p.tax_code;
+    // only once: the ddr_tax marker means this script has set a code before, so a null now is Robin's choice of
+    // "use the account's preset tax code" in the Dashboard, not a product made before 20 Nov
+    if (!code && !(p.metadata && p.metadata.ddr_tax)) { await call('POST', 'products/' + p.id, { tax_code: TAX_CODE, metadata: { ddr_tax: '1' } }); say(`product ${name}: exists (${p.id}); tax code added`); }
+    else if (code !== TAX_CODE) { console.warn(`NOTE: product ${name} has tax code ${code}, not ${TAX_CODE}: not changed (set in the Dashboard?)`); say(`product ${name}: exists (${p.id})`); }
+    else say(`product ${name}: exists (${p.id})`);
+    return p.id;
+  }
+  const made = await call('POST', 'products', { name, description, tax_code: TAX_CODE, metadata: { ddr: tag, ddr_tax: '1' } });
   say(`product ${name}: made (${made.id})`); return made.id;
 }
 async function price(lookup, prod, amount, recurring, nickname) {

@@ -343,7 +343,8 @@ t('calendar file: well formed, CRLF, every line at most 75 octets, one event per
       (st.links || []).forEach(l => assert.ok(d.includes(l.url), a.id + ': link missing'));
       (st.items || []).forEach(k => assert.ok(d.includes(k.name) && d.includes(k.url), a.id + ': kit missing'));
       assert.ok(d.includes('/list/' + a.id + '/#plan'));
-      assert.ok(!/[?&](tag|pid|partner_id)=/.test(d), a.id + ': affiliate tag in the calendar');
+      // our ids and the parameters DDR.affUrl adds (a maker's own product id, e.g. Weber's course ?pid=, is not one)
+      assert.ok(!/[?&](tag|partner_id)=|viator\.com\S*[?&]pid=|norofico|P00328792|NQBPMKU/i.test(d), a.id + ': affiliate tag in the calendar');
     });
   }
 });
