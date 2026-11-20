@@ -141,7 +141,8 @@ groups:
     title: "Learn something new: courses and skills to start"
     meta: "Languages, free online courses, university short courses, summer schools, qualifications and practical skills, with where to start in the UK and the US."
     categories: [think]
-    not: "chess|bridge|backgammon|\\bgo\\b|mahjong|quiz|crossword|scrabble|escape room|rubik|cribbage|board game"
+    also: "summer school|lecture|course|learn"
+    not: "chess|bridge|backgammon|game of go|mahjong|quiz|crossword|scrabble|escape room|rubik|cribbage|board game"
     not_collection: arts
   games:
     slug: games-and-puzzles
