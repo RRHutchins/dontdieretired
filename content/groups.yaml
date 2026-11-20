@@ -108,6 +108,14 @@ groups:
     meta: "Cookery schools, bread and pasta classes, butchery, barista and barbecue courses, cheese, cider, wine and growing your own food."
     categories: [eat]
     also: "cook|bak(e|ing)|bread|cheese|cider|wine|whisky|gin\\b|pasta|barista|barbecue|butcher|chocolate|brew|marmalade|forag|sushi|distill|vineyard|food"
+  gardens:
+    slug: gardens-and-growing
+    label: Gardens and growing
+    short: "Great gardens to visit, growing your own and garden skills"
+    title: "Gardening and gardens to visit: how to start"
+    meta: "Famous gardens to visit, growing your own fruit, veg and flowers, allotments, composting, pruning and garden skills, with the RHS and extension advice to start."
+    match: "garden|grow|allotment|compost|prun|cut flowers|seed|orchard|kew|keukenhof|tulip|rhs|scythe|bug hotel|raised bed|village show|bonsai|flower show|hedge"
+    not: "kindergarten"
   travel:
     slug: travel-the-world
     label: Travel the world
