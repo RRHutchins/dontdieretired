@@ -19,13 +19,16 @@
 {% endif %}{# nothing is shown to readers until ads are switched on in site.yaml #}
 {% endmacro %}
 
-{% macro affiliate_box(items, title="Kit that makes starting easier") %}
+{# kit thumbnail (RUNBOOK §6w): a drawn icon of the TYPE of item, from tools/kiticons.py; never a product photo #}
+{% macro kthumb(name, icon=None, cls="") %}<span class="kthumb{{ ' ' ~ cls if cls }}" aria-hidden="true"><svg focusable="false"><use href="/static/kit-icons.svg?v={{ asset_v }}#k-{{ icon or (name | kicon) }}"/></svg></span>{% endmacro %}
+
+{% macro affiliate_box(items, title="Kit that makes starting easier", cat=None) %}
 {% if items %}
-<aside class="aff-box">
+<aside class="aff-box"{% if cat %} data-cat="{{ cat }}"{% endif %}>
   <h3 class="h4">{{ title }}</h3>
   <ul>
   {% for p in items %}
-    <li class="prod"><a class="prod-btn" href="{{ p.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ p.name }}<span class="prod-src">Amazon</span></a> <span class="prod-why">{{ p.why }}</span></li>
+    <li class="prod">{{ kthumb(p.name) }}<span class="prod-body"><a class="prod-btn" href="{{ p.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ p.name }}<span class="prod-src">Amazon</span></a> <span class="prod-why">{{ p.why }}</span></span></li>
   {% endfor %}
   </ul>
   <p class="disclosure">Affiliate links: we may earn a small commission at no cost to you.</p>
@@ -42,7 +45,7 @@
   {% for o in pk.options %}
     <li class="pick pick-{{ o.tier }}">
       <p class="pick-tier">{{ {'top': 'Top pick', 'good': 'Also recommended', 'value': 'Lower-cost pick'}[o.tier] }}</p>
-      <p class="pick-name"><strong>{{ o.name }}</strong></p>
+      <p class="pick-name">{{ kthumb(pk.item) }}<strong>{{ o.name }}</strong></p>
       <p class="pick-label">{{ o.reviewer }}: “{{ o.label }}”</p>
       <blockquote class="pick-quote"><p>“{{ o.quote }}”</p></blockquote>
       <p class="pick-links"><a href="{{ o.review.url }}" target="_blank" rel="noopener">Read the review<span class="sr-only"> of the {{ o.name }}</span>&nbsp;({{ o.reviewer }})</a>

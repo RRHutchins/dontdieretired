@@ -21,8 +21,9 @@
     {% if sec.list %}<ul>{% for li in sec.list %}<li>{{ li }}</li>{% endfor %}</ul>{% endif %}
     {% if sec.after %}<p class="meta">{{ sec.after }}</p>{% endif %}
   </section>
+  {# kit near the top, after the opening section (Robin, 20 Nov 2026) #}
+  {% if loop.first and g.kit %}{{ affiliate_box(g.kit, h.kit_text or "Kit to compare against your race's list", h.category) }}{% endif %}
   {% endfor %}
-  {% if g.kit %}{{ affiliate_box(g.kit, h.kit_text or "Kit to compare against your race's list") }}{% endif %}
   {% if g.faq %}
   <section class="fl-faq"><h2>Questions people ask</h2>
     {% for f in g.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}

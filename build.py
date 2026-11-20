@@ -660,6 +660,10 @@ def build(make_social=True):
         shutil.rmtree(DIST)
     DIST.mkdir()
     shutil.copytree(STATIC, DIST / "static")
+    # kit thumbnails (RUNBOOK §6w): drawn icons of each type of kit, one sprite, matched to product names by tools/kiticons.py
+    import importlib.util as _ilk
+    _kis = _ilk.spec_from_file_location("kiticons", ROOT / "tools" / "kiticons.py"); _kim = _ilk.module_from_spec(_kis); _kis.loader.exec_module(_kim)
+    _kim.write_sprite(DIST / "static" / "kit-icons.svg")
     # the app (installable web app at /app/)
     if (ROOT / "app").exists():
         shutil.copytree(ROOT / "app", DIST / "app", ignore=shutil.ignore_patterns("build_data.py", "__pycache__"))
@@ -676,7 +680,9 @@ def build(make_social=True):
     _h = hashlib.sha1()
     for f in sorted(STATIC.glob("*.css")) + sorted(STATIC.glob("*.js")):
         _h.update(f.read_bytes())
+    _h.update(_kim.sprite().encode())
     env.globals.update(asset_v=_h.hexdigest()[:8])
+    env.filters["kicon"] = _kim.icon_for
     # Planner Plus accounts (RUNBOOK §6t): the Worker's address; "" keeps accounts closed. DDR_ACCOUNTS_API is for a local test build only.
     _acct = (os.environ.get("DDR_ACCOUNTS_API") or str((cfg.get("accounts") or {}).get("api") or "")).rstrip("/")
     assert _acct == "" or re.match(r"^(https://[a-z0-9.-]+|http://(localhost|127\.0\.0\.1):\d+)$", _acct), f"accounts.api must be an https origin: {_acct!r}"

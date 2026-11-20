@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import share_button, near_you, card, affiliate_box, picks_box %}
+{% extends "base.html" %}{% from "_macros.html" import share_button, near_you, card, affiliate_box, picks_box, kthumb %}
 {% block title %}{{ c.seo }}{% endblock %}
 {% block description %}{{ c.meta | metadesc }}{% endblock %}
 {% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":
@@ -38,6 +38,57 @@
   </section>
   {% endif %}
 
+  {# Booking and kit sit near the top (Robin, 20 Nov 2026: "at the bottom people won't see them"). #}
+  <div class="fl-shop">
+  {% set xg_show = gifts_season and (c.kit or c.book or gift_for[c.id] or sf_for[c.id]) %}
+  {% if xg_show %}
+  <section class="xgift" aria-labelledby="xgift-h" data-cat="{{ c.category }}">
+    <h2 id="xgift-h">{{ gifts_season_name }} present ideas for someone who wants to {{ c.title[:1] | lower }}{{ c.title[1:] }}</h2>
+    <p>Presents that help someone get started, drawn from this page. They are ideas, not recommendations: we have not tested any of the products, so check sizes and details before you buy.</p>
+    {% if c.book or gift_for[c.id] %}
+    <h3 class="h4">Give the experience</h3>
+    {% if c.book %}<ul>{% for b in c.book %}<li class="prod">{{ kthumb(b.label, "ticket") }}<span class="prod-body"><a class="prod-btn" href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}{% if b.aff == 'viator' and 'Viator' not in b.label %}<span class="prod-src">Viator</span>{% elif b.aff == 'getyourguide' and 'GetYourGuide' not in b.label %}<span class="prod-src">GetYourGuide</span>{% endif %}</a> <span class="prod-why">{{ b.why }}</span></span></li>{% endfor %}</ul>{% endif %}
+    {% if gift_for[c.id] %}<p>More ways to give it, with reviewers' picks of the kit: <a href="{{ gift_for[c.id].url }}">{{ gift_for[c.id].h1 }}</a>.</p>{% endif %}
+    {% endif %}
+    {% if c.kit %}
+    <h3 class="h4">Kit to give</h3>
+    <ul>{% for p in c.kit %}<li class="prod">{{ kthumb(p.name) }}<span class="prod-body"><a class="prod-btn" href="{{ p.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ p.name }}<span class="prod-src">Amazon</span></a> <span class="prod-why">{{ p.why }}</span></span></li>{% endfor %}</ul>
+    {% endif %}
+    {% if sf_for[c.id] %}
+    <h3 class="h4">Stocking fillers</h3>
+    <ul>{% for s in sf_for[c.id] %}<li class="prod">{{ kthumb(s.name) }}<span class="prod-body"><a class="prod-btn" href="{{ s.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ s.name }}<span class="prod-src">Amazon</span></a> <span class="prod-why">{{ s.why }} <span class="xgift-check">Check: {{ s.check }}</span> <a href="{{ s.page }}">More for {{ s.label | lower }}</a></span></span></li>{% endfor %}</ul>
+    {% endif %}
+    {% if c.cost in ('free', 'low') %}
+    <h3 class="h4">Or give your company</h3>
+    <p>Some of the best presents cost little: offer to go along the first time. <a href="/gifts/promise-card/">Print a promise card</a> to put under the tree.</p>
+    {% endif %}
+    <p class="disclosure">{% if c.book or c.kit or sf_for[c.id] %}Some of these are affiliate links: if you buy or book through them we may earn a commission at no extra cost to you. {% endif %}{% if c.kit or sf_for[c.id] %}Amazon links are searches, so compare what comes up.{% endif %}</p>
+    <p class="xgift-more"><a href="/gifts/">More {{ gifts_season_name }} gift ideas for people who love doing things</a> <a href="/gifts/stocking-fillers/">Stocking fillers</a></p>
+  </section>
+  {% else %}
+  {% if gift_for[c.id] %}<p class="fl-gift">Thinking of giving this as a present? See <a href="{{ gift_for[c.id].url }}">{{ gift_for[c.id].h1 | lower | replace('presents', 'present ideas') }}</a>, with ways to book it and reviewers' picks of the kit.</p>{% endif %}
+  {% if c.book %}
+  <aside class="aff-box fl-book" data-book data-cat="{{ c.category }}">
+    <h3 class="h4">Book it</h3>
+    <ul>{% for b in c.book %}<li class="prod">{{ kthumb(b.label, "ticket") }}<span class="prod-body"><a class="prod-btn" href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}{% if b.aff == 'viator' and 'Viator' not in b.label %}<span class="prod-src">Viator</span>{% elif b.aff == 'getyourguide' and 'GetYourGuide' not in b.label %}<span class="prod-src">GetYourGuide</span>{% endif %}</a> <span class="prod-why">{{ b.why }}</span></span></li>{% endfor %}</ul>
+    <p class="disclosure">Some of these are affiliate links: if you book through them we may earn a commission at no extra cost to you. Compare operators, and check what is included before you pay.</p>
+  </aside>
+  {% endif %}
+  {% endif %}
+  {% for t in c.kit_types or [] %}
+  <aside class="aff-box kt-mini" data-cat="{{ c.category }}" aria-labelledby="ktm-{{ t.id }}">
+    <h3 class="h4" id="ktm-{{ t.id }}">{{ t.name }}: what {{ t.N }} independent reviews recommend</h3>
+    {% for mk, aws in [('uk', t.awards), ('us', t.awards_us)] %}<ul class="kt-mini-list" data-market="{{ mk }}"{% if mk == 'us' %} hidden{% endif %}>{% for a in aws[:3] %}{% set p = a.product %}
+      <li>{{ kthumb(t.name) }}<span class="kt-mini-body"><span class="kt-aw-label">{{ a.label }}</span> <strong>{{ p.name }}</strong> <span class="meta">{{ p.score }}/10 · in {{ p.n }} of {{ t.N }} reviews{% if p.band %} · {{ p.band }}{% endif %}</span></span>
+        <a class="prod-btn prod-btn-sm" href="{{ p.buy }}" rel="sponsored nofollow noopener" target="_blank" data-aff>See prices<span class="prod-src">Amazon</span></a></li>{% endfor %}</ul>{% endfor %}
+    <p><a class="btn btn-small" href="/kit/{{ t.id }}/">Compare all {{ t.main|length }} {{ t.name|lower }} reviewers recommend <span aria-hidden="true">→</span></a></p>
+    <p class="disclosure">Scores summarise what independent reviewers say; we have not tested these. <a href="/kit/how-we-score/">How the scores work</a>. Affiliate links: we may earn a commission at no extra cost to you.</p>
+  </aside>
+  {% endfor %}
+  {% if not xg_show and c.kit %}{{ affiliate_box(c.kit, "Kit for this", c.category) }}{% endif %}
+  {% if c.picks and not c.kit_types %}{{ picks_box(c.picks) }}{% endif %}
+  </div>
+
   {% for sec in c.detail or [] %}
   <section class="fl-detail">
     <h2>{{ sec.h }}</h2>
@@ -59,53 +110,6 @@
   </ul>
   <p class="disclosure">We opened {{ 'this link' if c.links|length == 1 else 'these links' }} on {{ c.checked_human }} and found {{ 'it' if c.links|length == 1 else 'them' }} to be what we say. Dates, places and prices are on the official page, where they stay up to date.</p>
 
-  {% for t in c.kit_types or [] %}
-  <aside class="aff-box kt-mini" aria-labelledby="ktm-{{ t.id }}">
-    <h3 class="h4" id="ktm-{{ t.id }}">{{ t.name }}: what {{ t.N }} independent reviews recommend</h3>
-    {% for mk, aws in [('uk', t.awards), ('us', t.awards_us)] %}<ul class="kt-mini-list" data-market="{{ mk }}"{% if mk == 'us' %} hidden{% endif %}>{% for a in aws[:3] %}{% set p = a.product %}
-      <li><span class="kt-aw-label">{{ a.label }}</span> <strong>{{ p.name }}</strong> <span class="meta">{{ p.score }}/10 · in {{ p.n }} of {{ t.N }} reviews{% if p.band %} · {{ p.band }}{% endif %}</span>
-        <a class="prod-btn prod-btn-sm" href="{{ p.buy }}" rel="sponsored nofollow noopener" target="_blank" data-aff>See prices<span class="prod-src">Amazon</span></a></li>{% endfor %}</ul>{% endfor %}
-    <p><a class="btn btn-small" href="/kit/{{ t.id }}/">Compare all {{ t.main|length }} {{ t.name|lower }} reviewers recommend <span aria-hidden="true">→</span></a></p>
-    <p class="disclosure">Scores summarise what independent reviewers say; we have not tested these. <a href="/kit/how-we-score/">How the scores work</a>. Affiliate links: we may earn a commission at no extra cost to you.</p>
-  </aside>
-  {% endfor %}
-  {% set xg_show = gifts_season and (c.kit or c.book or gift_for[c.id] or sf_for[c.id]) %}
-  {% if xg_show %}
-  <section class="xgift" aria-labelledby="xgift-h">
-    <h2 id="xgift-h">{{ gifts_season_name }} present ideas for someone who wants to {{ c.title[:1] | lower }}{{ c.title[1:] }}</h2>
-    <p>Presents that help someone get started, drawn from this page. They are ideas, not recommendations: we have not tested any of the products, so check sizes and details before you buy.</p>
-    {% if c.book or gift_for[c.id] %}
-    <h3 class="h4">Give the experience</h3>
-    {% if c.book %}<ul>{% for b in c.book %}<li class="prod"><a class="prod-btn" href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}{% if b.aff == 'viator' and 'Viator' not in b.label %}<span class="prod-src">Viator</span>{% elif b.aff == 'getyourguide' and 'GetYourGuide' not in b.label %}<span class="prod-src">GetYourGuide</span>{% endif %}</a> <span class="prod-why">{{ b.why }}</span></li>{% endfor %}</ul>{% endif %}
-    {% if gift_for[c.id] %}<p>More ways to give it, with reviewers' picks of the kit: <a href="{{ gift_for[c.id].url }}">{{ gift_for[c.id].h1 }}</a>.</p>{% endif %}
-    {% endif %}
-    {% if c.kit %}
-    <h3 class="h4">Kit to give</h3>
-    <ul>{% for p in c.kit %}<li class="prod"><a class="prod-btn" href="{{ p.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ p.name }}<span class="prod-src">Amazon</span></a> <span class="prod-why">{{ p.why }}</span></li>{% endfor %}</ul>
-    {% endif %}
-    {% if sf_for[c.id] %}
-    <h3 class="h4">Stocking fillers</h3>
-    <ul>{% for s in sf_for[c.id] %}<li class="prod"><a class="prod-btn" href="{{ s.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ s.name }}<span class="prod-src">Amazon</span></a> <span class="prod-why">{{ s.why }} <span class="xgift-check">Check: {{ s.check }}</span> <a href="{{ s.page }}">More for {{ s.label | lower }}</a></span></li>{% endfor %}</ul>
-    {% endif %}
-    {% if c.cost in ('free', 'low') %}
-    <h3 class="h4">Or give your company</h3>
-    <p>Some of the best presents cost little: offer to go along the first time. <a href="/gifts/promise-card/">Print a promise card</a> to put under the tree.</p>
-    {% endif %}
-    <p class="disclosure">{% if c.book or c.kit or sf_for[c.id] %}Some of these are affiliate links: if you buy or book through them we may earn a commission at no extra cost to you. {% endif %}{% if c.kit or sf_for[c.id] %}Amazon links are searches, so compare what comes up.{% endif %}</p>
-    <p class="xgift-more"><a href="/gifts/">More {{ gifts_season_name }} gift ideas for people who love doing things</a> <a href="/gifts/stocking-fillers/">Stocking fillers</a></p>
-  </section>
-  {% else %}
-  {% if gift_for[c.id] %}<p class="fl-gift">Thinking of giving this as a present? See <a href="{{ gift_for[c.id].url }}">{{ gift_for[c.id].h1 | lower | replace('presents', 'present ideas') }}</a>, with ways to book it and reviewers' picks of the kit.</p>{% endif %}
-  {% if c.book %}
-  <aside class="aff-box fl-book" data-book>
-    <h3 class="h4">Book it</h3>
-    <ul>{% for b in c.book %}<li class="prod"><a class="prod-btn" href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}{% if b.aff == 'viator' and 'Viator' not in b.label %}<span class="prod-src">Viator</span>{% elif b.aff == 'getyourguide' and 'GetYourGuide' not in b.label %}<span class="prod-src">GetYourGuide</span>{% endif %}</a> <span class="prod-why">{{ b.why }}</span></li>{% endfor %}</ul>
-    <p class="disclosure">Some of these are affiliate links: if you book through them we may earn a commission at no extra cost to you. Compare operators, and check what is included before you pay.</p>
-  </aside>
-  {% endif %}
-  {% if c.kit %}{{ affiliate_box(c.kit, "Kit for this") }}{% endif %}
-  {% endif %}
-  {% if c.picks and not c.kit_types %}{{ picks_box(c.picks) }}{% endif %}
 
   {% if c.safety %}<aside class="fl-safety"><strong>Worth knowing.</strong> {{ c.safety }}</aside>{% endif %}
   {% if c.category in ('money', 'earn') %}<p class="disclosure">This is general information, not financial or business advice for your own circumstances.</p>{% endif %}

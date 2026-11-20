@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% from "_macros.html" import kthumb %}
 {% block title %}{{ t.title | seotitle }}{% endblock %}
 {% block description %}{{ t.description | metadesc }}{% endblock %}
 {% block pagetype %}list{% endblock %}
@@ -8,7 +8,7 @@
   {"@type":"ListItem","position":2,"name":t.name,"item":cfg.site.url ~ "/kit/" ~ t.id ~ "/"}]},
  {"@type":"ItemList","name":t.title,"numberOfItems":t.main|length,"itemListElement":item_list}]} | tojson }}</script>{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker"><a href="/kit/">Kit</a> · {{ t.N }} reviews read</p><h1>{{ t.name }}: what {{ t.N }} independent reviews recommend</h1>
+<header class="page-head kt-head">{{ kthumb(t.name, cls="kthumb-xl") }}<p class="kicker"><a href="/kit/">Kit</a> · {{ t.N }} reviews read</p><h1>{{ t.name }}: what {{ t.N }} independent reviews recommend</h1>
 <p class="lead">{{ t.intro }}</p>
 <p class="meta">We read {{ t.N }} reviews ({{ t.uk }} from UK publications, {{ t.us }} from US ones), checked {{ t.checked_human }}. Each product's score out of 10 comes from how many reviews recommend it, how highly they place it and how they rate it. <a href="/kit/how-we-score/">How the scores work</a>.</p></header>
 
@@ -20,8 +20,8 @@
   <ul class="kt-aw-grid" data-market="{{ mk }}"{% if mk == 'us' %} hidden{% endif %}>
   {% for a in aws %}{% set p = a.product %}
     <li class="kt-aw kt-aw-{{ a.key.split('-')[0] }}">
-      <p class="kt-aw-label">{{ a.label }}</p>
-      <h3 class="kt-aw-name">{{ p.name }}</h3>
+      <div class="kt-aw-top">{{ kthumb(t.name, cls="kthumb-lg") }}<div><p class="kt-aw-label">{{ a.label }}</p>
+      <h3 class="kt-aw-name">{{ p.name }}</h3></div></div>
       <p class="kt-aw-score"><span class="kt-score">{{ p.score }}<small>/10</small></span> <span>Recommended in {{ p.n }} of {{ t.N }} reviews{% if p.band %} · {{ p.band }}{% endif %}</span></p>
       <p class="kt-aw-sum">{{ p.summary }}</p>
       <p class="kt-aw-why meta">Why this one: {{ a.why }}.</p>

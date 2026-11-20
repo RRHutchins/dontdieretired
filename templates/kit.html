@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% from "_macros.html" import kthumb %}
 {% block title %}Kit finder: what independent reviews recommend — {{ cfg.site.name }}{% endblock %}
 {% block description %}Search kit for walking, wildlife, the water and more: we read many independent reviews of each type and show which products they recommend most, by budget and use.{% endblock %}
 {% block pagetype %}list{% endblock %}
@@ -13,7 +13,7 @@
   <ul class="kf-grid">
   {% for t in kit_types %}
     <li class="kf-card" data-kf-item data-groups="{{ t.groups|join(' ') }}" data-text="{{ (t.name ~ ' ' ~ t.kit_names|join(' ') ~ ' ' ~ t.ranked|map(attribute='name')|join(' ') ~ ' ' ~ t.acts|map(attribute='title')|join(' '))|lower }}">
-      <h2 class="h3"><a href="/kit/{{ t.id }}/">{{ t.name }}</a></h2>
+      <div class="kf-head">{{ kthumb(t.name, cls="kthumb-lg") }}<h2 class="h3"><a href="/kit/{{ t.id }}/">{{ t.name }}</a></h2></div>
       <p class="meta">{{ t.N }} independent reviews · {{ t.main|length }} products recommended in two or more</p>
       {% for mk, aws in [('uk', t.awards), ('us', t.awards_us)] %}<ul class="kf-awards" data-market="{{ mk }}"{% if mk == 'us' %} hidden{% endif %}>{% for a in aws[:3] %}<li><span class="kf-aw">{{ a.label }}</span> <strong>{{ a.product.name }}</strong> <span class="kf-sc">{{ a.product.score }}/10</span></li>{% endfor %}</ul>{% endfor %}
       <p class="fl-go" aria-hidden="true">See the full comparison <span>→</span></p>
