@@ -548,7 +548,7 @@ dialog.modal-card::backdrop{background:rgba(0,0,0,.55)}
 .h3{font-family:var(--serif);font-size:1.25rem;line-height:1.15;letter-spacing:-.01em;margin:.2em 0 .5em}.video .h3{margin:.6em 0 .2em}.card .h3{font-size:1.3rem;line-height:1.2;margin:.25em 0 .4em}.card .h3 a{color:var(--ink);text-decoration:none}.card .h3 a:hover{color:var(--brand)}
 /* Header: two rows whenever one row cannot hold the name, the menu and the buttons (tablets, and laptops
    zoomed to 200%), so the page never scrolls sideways. The Topics panel hangs from the header itself. */
-@media (max-width:1199px){
+@media (max-width:1279px){
   .header-inner{flex-wrap:wrap;gap:4px 14px;min-height:0;padding-top:9px;padding-bottom:5px}
   .header-cta{margin-left:auto}
   .nav{order:3;flex:1 0 100%!important;justify-content:flex-start!important;gap:20px}
@@ -1232,14 +1232,14 @@ h1{line-height:1.04}
 .fl-map path.has:focus-visible{stroke:var(--ink);stroke-width:3}
 /* Keyboard focus and #links never land under the sticky header (WCAG 2.4.11): room for the header at each width */
 html{scroll-padding-top:84px}
-@media (max-width:1199px){html{scroll-padding-top:132px}}
+@media (max-width:1279px){html{scroll-padding-top:132px}}
 @media (max-width:339px){html{scroll-padding-top:148px}}
 
 /* Header fixes (16 Nov 2026). (1) The one-row header needs about 1,200px: between 1,041 and 1,199px it scrolled sideways,
    so it now takes two rows up to 1,199px. (2) From launch (plus.paywall) the menu gains "My year" (.nav-plus): on a
    laptop up to 1,399px "Videos" leaves the header (it stays in the footer) and the gaps close a little; on a phone
    "My year" takes the Email link's place (the email sign-up is still at the foot of every page). */
-@media (min-width:1200px) and (max-width:1399px){.nav.nav-plus{gap:10px}.nav.nav-plus .nav-videos{display:none}}
+@media (min-width:1280px) and (max-width:1399px){.nav.nav-plus{gap:10px}.nav.nav-plus .nav-videos{display:none}}
 @media (max-width:560px){.nav.nav-plus .nav-email{display:none!important}}
 @media (max-width:359px){.nav.nav-plus{gap:7px!important;font-size:.87rem}}
 /* Deep hubs (RUNBOOK §6u): guides as cards, then the event finder */
@@ -1329,7 +1329,7 @@ html{scroll-padding-top:84px}
 @media (max-width:560px){.nav.nav-gifts .nav-email{display:none!important}}
 @media (max-width:560px){.nav.nav-gifts.nav-plus .nav-gifts{display:none}}
 @media (max-width:560px){.gift-bar{left:10px;right:10px;transform:none;justify-content:space-between;padding:6px 6px 6px 14px;gap:8px}.gift-bar p{font-size:.92rem}.gift-bar .btn{padding:.45em .9em;font-size:.9rem}}
-@media (min-width:1200px) and (max-width:1399px){.nav.nav-gifts .nav-videos{display:none}}
+@media (min-width:1280px) and (max-width:1399px){.nav.nav-gifts .nav-videos{display:none}}
 
 /* ---------- Stocking fillers and the promise card (RUNBOOK §6v, 19 Nov 2026) ---------- */
 .sf-groups a{border-top-color:var(--brand)}
@@ -1386,7 +1386,7 @@ li.prod{display:flex;flex-wrap:wrap;align-items:center;gap:.3em .7em;margin:0 0 
 .gx-foot{margin-top:40px}
 .finder-total{margin:-.2em 0 .7em;font-weight:600}
 @media (prefers-reduced-motion:reduce){.gx-tile{transition:none}.gx-tile:hover{transform:none}}
-@media (max-width:600px){.gx-grid{grid-template-columns:1fr 1fr;gap:8px}.gx-short{display:none}.gx-tile{min-height:0;padding:12px 12px 12px 14px;border-left-width:5px}.gx-tile strong{font-size:1rem;padding-right:0}.gx-n{position:static;order:2;align-self:flex-start;margin-top:.35em;font-size:.8rem}}
+@media (max-width:600px){.gx-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}.gx-tile strong{overflow-wrap:break-word}.gx-short{display:none}.gx-tile{min-height:0;padding:12px 12px 12px 14px;border-left-width:5px}.gx-tile strong{font-size:1rem;padding-right:0}.gx-n{position:static;order:2;align-self:flex-start;margin-top:.35em;font-size:.8rem}}
 
 /* Removing from the list (20 Nov 2026): a Remove beside "On my list", and a visible Remove on each row of My list */
 .fl-addrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
@@ -1443,7 +1443,7 @@ li.prod{display:flex;flex-wrap:wrap;align-items:center;gap:.3em .7em;margin:0 0 
 .kthumb-xl{width:84px;height:84px;border-radius:18px}.kthumb-xl svg{width:60px;height:60px}
 li.prod{display:grid;grid-template-columns:56px minmax(0,1fr);gap:.85em;align-items:center}
 .prod-body{display:flex;flex-wrap:wrap;align-items:center;gap:.3em .7em;min-width:0}
-.prod-btn{max-width:100%}
+.prod-btn{max-width:100%;flex-wrap:wrap;overflow-wrap:break-word}
 .aff-box ul:has(> li.prod),.xgift ul:has(> li.prod),.gift-way ul:has(> li.prod){display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:12px;margin:.5em 0 .9em;padding:0}
 .aff-box li.prod,.xgift li.prod,.gift-way li.prod{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0;align-items:start}
 .sidebar .aff-box ul:has(> li.prod){grid-template-columns:1fr}
@@ -1459,3 +1459,12 @@ li.prod{display:grid;grid-template-columns:56px minmax(0,1fr);gap:.85em;align-it
 .sf-h{display:flex;align-items:center;gap:.65em}
 .fl-shop{margin:1.6em 0 2em}.fl-shop>*+*{margin-top:1.1em}.fl-shop>.xgift{margin:0}
 @media (max-width:520px){.kthumb{width:48px;height:48px;border-radius:10px}.kthumb svg{width:34px;height:34px}li.prod,.kt-mini-list li{grid-template-columns:48px minmax(0,1fr)}}
+
+/* Header fixes (20 Nov 2026). With Gifts, Kit and Shop in the menu, one row no longer fitted the 1,160px page width: the
+   header spilled past the page's right edge at every laptop width and the page scrolled sideways at 1,200 to 1,212px
+   (and from 1,200 to 1,440px once My year joins at launch). The header row may now be up to 1,400px wide (the page
+   below keeps 1,160px), and it takes two rows up to 1,279px. tools/a11y_check.js checks 1,200 and 1,440px too. */
+.site-header .wrap{max-width:1400px}
+/* Narrow phones (20 Nov 2026): the group tiles and product buttons had pushed pages 5-6px sideways at 320px */
+@media (max-width:374px){.gx-tile{padding:11px 8px 11px 10px}.gx-tile strong{font-size:.8rem}}
+.fl-actions .linklike:not([hidden]){display:inline-flex;align-items:center;min-height:44px}
