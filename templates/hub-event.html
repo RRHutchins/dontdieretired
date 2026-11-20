@@ -1,0 +1,54 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button %}
+{# A page per race (RUNBOOK §6u priority step 1): everything in the finder row, the official link and checked date, related races and the guides.
+   No Event/SportsEvent markup: rows carry only a usual month, and Google treats guessed dates as misleading. #}
+{% block title %}{{ e.seo_title }}{% endblock %}
+{% block description %}{{ e.description | metadesc }}{% endblock %}
+{% block pagetype %}hub{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":h.label,"item":cfg.site.url ~ "/" ~ h.slug ~ "/"},
+  {"@type":"ListItem","position":2,"name":e.name,"item":cfg.site.url ~ e.url}]} | tojson }}</script>{% endblock %}
+{% block content %}
+<article class="article fl-page hub-guide hub-race" data-cat="{{ h.category }}">
+  <p class="kicker"><a href="/{{ h.slug }}/">{{ h.label }}</a> · {{ h.facets.continent[e.continent] }} · {{ e.country }}{% if e.series != 'independent' %} · {{ h.facets.series[e.series] }}{% endif %}</p>
+  <h1>{{ e.name }}</h1>
+  <p class="lead">{{ e.place }}</p>
+  {{ share_button(cfg.site.url ~ e.url, e.name, 'hub') }}
+  <section class="fl-detail">
+    <h2>The race at a glance</h2>
+    <dl class="hub-e-facts hub-race-facts">
+      <div><dt>Distance</dt><dd>{{ e.distances }}{% if e.format == 'stage' %} (stage race){% elif e.format == 'timed' %} (timed race){% endif %}</dd></div>
+      {% if e.climb %}<div><dt>Climb</dt><dd>{{ e.climb }}</dd></div>{% endif %}
+      <div><dt>Terrain</dt><dd>{% for t in e.terrain %}{{ h.facets.terrain[t] }}{{ ", " if not loop.last }}{% endfor %}</dd></div>
+      {% if e.month_label %}<div><dt>Usually</dt><dd>{{ e.month_label }} (check the official page for this year's date)</dd></div>{% endif %}
+      <div><dt>Where</dt><dd>{{ e.place }}, {{ e.country }}</dd></div>
+      <div><dt>Organiser</dt><dd>{% if e.series != 'independent' %}{{ h.facets.series[e.series] }}{% else %}Independent race{% endif %}</dd></div>
+    </dl>
+  </section>
+  <section class="fl-detail">
+    <h2>How you get a place</h2>
+    <p><strong>{% for x in e.entry %}{{ h.facets.entry[x] }}{{ "; " if not loop.last }}{% endfor %}.</strong> {{ e.entry_note }}</p>
+  </section>
+  <section class="fl-detail">
+    <h2>What stands out</h2>
+    <p>{{ e.note }}</p>
+  </section>
+  <section class="fl-detail hub-race-link">
+    <h2>The official page</h2>
+    <p><a class="btn" href="{{ e.link.url }}" target="_blank" rel="noopener" data-fl-out>{{ e.link.label }}</a></p>
+    <p class="meta">Opened {{ e.link.checked_human }}. Everything above comes from that page{% if e.more %} and the pages below{% endif %}. Dates, fees, limits and entry rules change every year: the organiser's page is the one to trust.</p>
+    {% if e.more %}<ul>{% for m in e.more %}<li><a href="{{ m.url }}" target="_blank" rel="noopener" data-fl-out>{{ m.label }}</a> <span class="meta">(opened {{ m.checked_human }})</span></li>{% endfor %}</ul>{% endif %}
+  </section>
+  {% if h.guides %}
+  <section class="hub-guides" aria-labelledby="race-g-h">
+    <h2 id="race-g-h">Getting ready</h2>
+    <ul class="hub-cards">{% for g in h.guides %}<li><a href="{{ g.url }}"><strong>{{ g.title }}</strong><span>{{ g.standfirst }}</span></a></li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+  {% if related %}
+  <aside class="hub-more"><h2 class="h4">Races like this</h2><ul>{% for r in related %}<li><a href="{{ r[0].url }}">{{ r[0].name }}</a> <span class="meta">{{ r[0].country }} · {{ r[1] }}</span></li>{% endfor %}</ul></aside>
+  {% endif %}
+  <p class="hub-back"><a class="btn btn-ghost" href="/{{ h.slug }}/#hub-f-h">{{ h.back_text or ("Back to the " ~ (h.label | lower) ~ " finder") }}</a></p>
+  {% if h.safety %}<p class="disclosure">{{ h.safety }}</p>{% endif %}
+  <p class="disclosure">We list a race only after opening its organiser's own page. Being listed does not mean the race or its organiser endorses this site. Written with AI from the official page and checked against it.</p>
+</article>
+{% endblock %}

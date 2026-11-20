@@ -15,6 +15,7 @@ intro:
 - Ultramarathons range from a 56 km road race around Cape Town to six days along the mountains of Wales. Some you can enter on the day entries open; some need a qualifying race, a lottery ticket or years of patience. Filter the list below by region, distance, terrain, month and how entry works.
 - Every race here links to its organiser's own page, opened on the date shown. Dates, fees and rules change every year, so treat the month as a guide and the official page as the last word.
 activities: [run-an-ultramarathon]
+event_pages: true   # a page per race at /ultra-running/<id>/ (RUNBOOK §6u step 1)
 safety: Ultras in the mountains, the desert or winter can leave you far from help. Read each race's kit list and medical guidance before you enter.
 tags: [ultra, ultras, ultramarathon, ultramarathons, race, races, trail, mile, miler, '100']
 # what the finder shows (labels only; the values live on each event)
@@ -1043,6 +1044,190 @@ events:
   entry_note: Half the places go by lottery; the rest are first come, first served for Chamonix Valley residents and for runners travelling by train or bus. The organisers warn that runners with a UTMB Index below 450 have "very little chance of finishing".
   note: Part of the Marathon du Mont-Blanc week. A semi-self-supported race on sometimes narrow, exposed paths, with possible snow between 2,000 and 2,500 m, 900 places and a 24-hour limit.
   link: {label: 'Marathon du Mont-Blanc: 90km', url: 'https://www.marathonmontblanc.fr/en/races/90km-du-mont-blanc', checked: '2026-11-19'}
+- id: south-downs-way-50
+  name: South Downs Way 50
+  series: centurion
+  place: Worthing to Eastbourne, Sussex
+  country: England, UK
+  continent: europe
+  km: [81]
+  distances: 50 miles (81 km), point to point
+  climb: 1,750 m
+  terrain: [trail]
+  format: single
+  month: [4]
+  entry: [open]
+  entry_note: First come, first served, with a waiting list once places fill. You need a marathon-distance finish inside that race's cut-off, from 1 January 2022 onwards.
+  note: The first of Centurion's four-race 50 Mile Grand Slam, with 13 hours to finish.
+  link: {label: 'Centurion Running: South Downs Way 50 2027', url: 'https://www.centurionrunning.com/races/south-downs-way-50-2027', checked: '2026-11-20'}
+- id: chiltern-wonderland-50
+  name: Chiltern Wonderland 50
+  series: centurion
+  place: Goring-on-Thames, Oxfordshire
+  country: England, UK
+  continent: europe
+  km: [81]
+  distances: 50 miles, one loop
+  climb: 5,600 ft (about 1,700 m)
+  terrain: [trail]
+  format: single
+  month: [9]
+  entry: [open]
+  entry_note: First come, first served, with no waiting list. You need a marathon-distance finish inside that race's cut-off, from 1 January 2022 onwards.
+  note: A single 50-mile loop from Goring through the Chiltern Hills, starting on the Thames Path, with 13 hours to finish; it also counts towards the 50 Mile Grand Slam.
+  link: {label: 'Centurion Running: Chiltern Wonderland 50 2027', url: 'https://centurionrunning.com/races/chiltern-wonderland-50-2027', checked: '2026-11-20'}
+- id: dolomiti-extreme-trail
+  name: Dolomiti Extreme Trail
+  series: independent
+  place: Forno di Zoldo, Val di Zoldo, Dolomites
+  country: Italy
+  continent: europe
+  km: [102, 76]
+  distances: DXT 103K (102 km) and DXT 72K (76 km), plus 55K, 35K, 22K and 11K
+  climb: 6,500 m (103K)
+  terrain: [mountain]
+  format: single
+  month: [6]
+  entry: [open, qualifier]
+  entry_note: Online entry only. The 103K needs a finish in another ultra-trail race in 2025, 2026 or 2027, and runners in the longer races need a medical certificate for sporting activities (see the rules).
+  note: Starts and finishes in Forno di Zoldo, passing Monte Civetta, Monte Pelmo and Monte Rite with a 30-hour limit for the 103K; the organisers want entrants with mountain experience who do not suffer from vertigo.
+  link: {label: 'Dolomiti Extreme Trail: DXT 103K', url: 'https://www.dolomitiextremetrail.com/en/race/dxt-103k', checked: '2026-11-20'}
+  more:
+  - {label: 'Dolomiti Extreme Trail: rules', url: 'https://dolomitiextremetrail.com/en/rules', checked: '2026-11-20'}
+- id: namib-race
+  name: Namib Race
+  series: racingtheplanet
+  place: Swakopmund, Namib Desert
+  country: Namibia
+  continent: africa
+  km: [250]
+  distances: 250 km in six stages over seven days
+  terrain: [desert]
+  format: stage
+  month: [5]
+  entry: [open]
+  entry_note: Register by 120 days before the start; the field is limited to 150. The next edition starts on 21 May 2028.
+  note: Self-supported, so you carry everything for the week except tents and water, over beaches, dunes, rocky ground and dry riverbeds; the organisers say you can walk the whole course and still finish.
+  link: {label: 'Namib Race: quick facts', url: 'https://www.racingtheplanet.com/namibia/quick-facts', checked: '2026-11-20'}
+- id: oman-by-utmb
+  name: Oman by UTMB
+  series: utmb
+  place: Hajar Mountains (the Hajar Ultra runs from Al Hamra to Birkat Al Mouz)
+  country: Oman
+  continent: asia
+  km: [154, 100, 50]
+  distances: Hajar Ultra 154 km, Jabal Classic 100K, Skyward Canyon 50 km, plus 30 km and 20 km
+  climb: Almost 8,000 m (Hajar Ultra)
+  terrain: [mountain]
+  format: single
+  month: [12]
+  entry: [open]
+  entry_note: Online registration through UTMB. For the December 2026 edition the three shorter races were already full in November.
+  note: The Hajar Ultra crosses the Hajar Mountains with a 48-hour limit and a via ferrata section at about 87 km; the organisers say it is designed for experienced mountain runners.
+  link: {label: 'Oman by UTMB: Hajar Ultra', url: 'https://oman.utmb.world/races/HAJ', checked: '2026-11-20'}
+  more:
+  - {label: 'Oman by UTMB: all races', url: 'https://oman.utmb.world/races', checked: '2026-11-20'}
+- id: ultra-x-jordan
+  name: Ultra X Jordan
+  series: independent
+  place: Wadi Rum
+  country: Jordan
+  continent: asia
+  km: [220, 110]
+  distances: 220 km in five stages, or the 110 km Challenge on the same course
+  climb: 2,522 m (220 km)
+  terrain: [desert]
+  format: stage
+  month: [10]
+  entry: [open]
+  entry_note: Enter online; read the race pack and kit list first, and there is an optional call before the race. The organisers welcome runners and walkers.
+  note: Five stages through the wadis, rock formations and dunes of Wadi Rum; water comes at checkpoints and camps, and you bring your own food and kit. Cut-offs work out at 2.5 hours per 10 km.
+  link: {label: 'Ultra X: Jordan', url: 'https://ultra-x.co/jordan/', checked: '2026-11-20'}
+- id: self-transcendence-3100
+  name: Sri Chinmoy Self-Transcendence 3100 Mile Race
+  series: independent
+  place: Jamaica, Queens, New York City
+  country: USA
+  continent: north-america
+  km: [4989]
+  distances: 3,100 miles on a loop of 0.5488 miles
+  climb: 17,750 m in total
+  terrain: [road]
+  format: timed
+  entry: [application]
+  entry_note: Runners apply, and each year 10 to 15 are chosen on their past ultra results and their ability to cover the distance.
+  note: Runners have 52 days, averaging 59.6 miles a day on a loop around a sports field, playground and school, with the course open from 6am to midnight. The 2026 race ran from 30 August to 20 October.
+  link: {label: 'Sri Chinmoy Races: Self-Transcendence 3100 Mile Race', url: 'https://3100.srichinmoyraces.org/', checked: '2026-11-20'}
+- id: ultra-trail-harricana
+  name: Ultra-Trail Harricana du Canada
+  series: independent
+  place: Charlevoix, Quebec
+  country: Canada
+  continent: north-america
+  km: [124, 78, 63, 61]
+  distances: UTHC 125 (124 km), 80 (78 km), 65 (63 km) and 60 (61 km), plus a 42 km and shorter trail runs
+  climb: 4,028 m (125 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [9]
+  entry: [open]
+  entry_note: Register through the race website. The 125 km is a Western States qualifier if you finish in under 26 hours.
+  note: The 125 km runs one way over four summits, mostly on technical singletrack with rocks and roots, through boreal forest in the Charlevoix biosphere reserve to the Mont Grand-Fonds ski area.
+  link: {label: 'Ultra-Trail Harricana: home page', url: 'https://ultratrailharricana.com/en/', checked: '2026-11-20'}
+  more:
+  - {label: 'Ultra-Trail Harricana: UTHC 125', url: 'https://ultratrailharricana.com/en/epreuve/uthc-125/', checked: '2026-11-20'}
+- id: sinister-7
+  name: Sinister 7 Ultra
+  series: independent
+  place: Crowsnest Pass, Alberta
+  country: Canada
+  continent: north-america
+  km: [161, 80]
+  distances: 100 miles solo or as a relay in seven stages; 50 miles solo in four stages
+  climb: 6,692 m (100 miles)
+  terrain: [mountain, trail]
+  format: single
+  month: [7]
+  entry: [open]
+  entry_note: Register online until 21 June or until it is full. Run the 100 miles alone or in a relay team of up to seven.
+  note: Named after Seven Sisters Mountain, which overlooks much of the course. Stages run from 10.7 to 36.2 km; the 100 miles has 30 hours and the 50 miles 24.
+  link: {label: 'Sinister Sports: Sinister 7 Ultra', url: 'https://www.sinistersports.ca/sinister7/', checked: '2026-11-20'}
+- id: puerto-vallarta-by-utmb
+  name: Puerto Vallarta México by UTMB
+  series: utmb
+  place: Puerto Vallarta, Jalisco
+  country: Mexico
+  continent: north-america
+  km: [81, 53, 37]
+  distances: Hikuri 81 km, Nakawé 53 km, Haramara 37 km, plus 20 km and 5 km
+  climb: 3,900 m (81 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [3]
+  entry: [open]
+  entry_note: Registration is through UTMB, and the races showed as open in November 2026. The Hikuri 81K carries Running Stones, which count in the UTMB Mont-Blanc lottery.
+  note: The 81 km starts and finishes on the Malecón, dropping from pine-forested mountains through agave fields and coastal jungle along the Cuale River.
+  link: {label: 'Puerto Vallarta México by UTMB: races', url: 'https://puerto-vallarta.utmb.world/races', checked: '2026-11-20'}
+  more:
+  - {label: 'Puerto Vallarta México by UTMB: Hikuri 81K', url: 'https://puerto-vallarta.utmb.world/races/hikuri', checked: '2026-11-20'}
+- id: northburn-100
+  name: Northburn 100
+  series: independent
+  place: Northburn Station
+  country: New Zealand
+  continent: oceania
+  km: [161, 100, 50]
+  distances: 100 miles, 100 km and a 50 km skyrun, plus a marathon and shorter races
+  climb: About 10,000 m (100 miles)
+  terrain: [mountain]
+  format: single
+  month: [3]
+  entry: [open]
+  entry_note: Enter online through Webscorer. 100-mile finishers inside 48 hours get the Northburn buckle.
+  note: A dry, hard, rocky course mostly on high-country 4WD tracks, with some fence lines and sheep tracks; the organisers say it is a qualifier for Hardrock and UTMB.
+  link: {label: 'Northburn 100: home page', url: 'https://www.northburn100.co.nz/', checked: '2026-11-20'}
+  more:
+  - {label: 'Northburn 100: the 100 miler', url: 'https://www.northburn100.co.nz/100miler', checked: '2026-11-20'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
@@ -1304,3 +1489,57 @@ guides:
   - {label: 'Ryan, Daly and Ryan, Exploring the nutrition strategies employed by ultra-endurance athletes to alleviate exercise-induced gastrointestinal symptoms: a systematic review, Nutrients, 2023', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10610183/', checked: '2026-11-19'}
   - {label: 'Western States Endurance Run, Medical and other risks', url: 'https://www.wser.org/medical-and-other-risks/', checked: '2026-11-19'}
   - {label: 'Centurion Running, Autumn 100 2026', url: 'https://www.centurionrunning.com/races/autumn-100-2026', checked: '2026-11-19'}
+- slug: crewing-and-pacing
+  title: Crews and pacers in an ultra, and the rules that come with them
+  short: Who may help you, where, and how
+  seo_title: 'Ultra crew and pacer rules: what races allow'
+  description: Where crews may meet you, when a pacer may join and what they must not carry, from the rules of Western States, Centurion, Lakeland and UTMB.
+  standfirst: Some ultras let friends meet you at checkpoints and run the last miles beside you. Others ban outside help altogether. The rules differ a lot from race to race, and breaking them can cost you the finish.
+  detail:
+  - h: Crew, pacer, supporter
+    p:
+    - A crew is the people who meet you at agreed points with food, clothes and encouragement. A pacer is someone who runs with you for part of the course. Many races also have supporters who simply come to watch. Each race decides which of these it allows, and the runner answers for all of them. Western States puts it in capitals on its crew advice page - runners are held responsible for the actions of their crews and pacers.
+    - So before you invite anyone, read three things on your race's own site - the rules, the crew or supporter instructions and the pacer rules. They are usually separate pages, and they change from year to year.
+  - h: Four races, four sets of rules
+    table:
+      head: [Race, Crews, Pacers, What it says happens if you break the rules]
+      rows:
+      - [Western States 100 (California), Only at aid stations named as crew points in that year's participant guide, 'One at a time (with a few short stretches where friends may also run alongside), from Foresthill (mile 62) to the finish, or from Michigan Bluff (mile 56) if you leave after 8pm; pacers must be 18 or over', 'Parking against the instructions can get the car towed and the runner disqualified']
+      - [Centurion South Downs Way 100 (England), 'Only at the points listed on the crew page, with one crew vehicle that shows a crew pass; no motorhomes', 'Not set out on the crew page; only one person, crew or pacer, may go inside the Washington hall', Help outside the permitted points means disqualification]
+      - [Centurion Autumn 100 (England), 'Not allowed anywhere, and supporters may not visit the checkpoints', 'One pacer, on foot, from mile 75 to the finish', 'Being crewed means disqualification or a lifetime ban; pacing outside the last leg brings a one-hour penalty, disqualification or a ban']
+      - [Lakeland 100 and 50 (England), 'Supporters may watch only at set points, must not enter checkpoint buildings, and some checkpoints are marked no spectating', 'Not allowed; the one exception is that 50 runners'' friends and family may join the first loop round the Dalemain estate', Entering restricted areas means disqualification with no appeal]
+    after: Taken from each race's pages opened on 20 November 2026. Check your own year's version before race day.
+  - h: What a pacer may not do
+    p:
+    - At Western States a pacer mostly keeps you company. Pacers may help fill bottles and restock at aid stations, but the pacer rules say they may not carry water, food, torches, shoes, clothing or other supplies for their runner, or give any other physical help. Carrying for your runner, known as muling, is "expressly forbidden". Pacers may carry their own food and supplies.
+    - Pacers there must enter and leave each aid station with their runner, and may not run ahead into an aid station to speed up refuelling. If the runner drops out, the pacer may not carry on along the trail alone. Each runner is issued three pacer numbers, used one at a time at set change points.
+    - Centurion's Autumn 100 is just as strict about the company. Its supporter page says that if your runner has a pacer, only that pacer may run with them, and that running with them even "just for a few minutes" counts as pacing.
+  - h: What a crew should know
+    p:
+    - Parking and access are where crews most often get their runner into trouble. Western States allows one crew vehicle per runner at most aid stations, does not allow motorhomes into any aid station except Foresthill, and lists aid stations that crews cannot reach by car at all. Centurion's South Downs Way 100 allows one crew vehicle no bigger than a long-wheelbase van and tells crews never to park illegally or block the road.
+    - At Western States, crews must stay within 200 yards of the aid station while they help their runner, and in Foresthill they may give help at one place only. The crew advice page warns that stopping or parking at the Highway 49 crossing risks the runner's disqualification.
+    - UTMB Mont-Blanc's 2027 regulations say a runner can be penalised or disqualified when their supporters break the rules. Their penalty table for the OCC, MCC and ETC races gives 30 minutes for help or crewing outside the authorised zones and 10 minutes for each time a runner is accompanied outside the tolerance zones, and says a failure by supporters to follow the organisers' instructions on parking, access or restricted areas is a breach of the rules.
+  - h: If your race allows neither
+    p:
+    - Plenty of good races are run with no crew and no pacer, and some runners prefer them. The aid stations do the crew's job, so read your race's aid station list and drop bag rules early. The Autumn 100 rules also forbid storing your own supplies along the trail, with a two-hour penalty, so everything you need comes from the aid stations, a drop bag the race allows, or your pack.
+    - Your friends can still come. Ask the race where supporters are welcome, and point them at the finish.
+  faq:
+  - q: Can my pacer carry my water or food?
+    a: Not at Western States, where muling is expressly forbidden and pacers may carry only their own supplies. Other races set their own rules, so read your race's pacer page.
+  - q: Can a friend run with me for a few minutes?
+    a: Only where your race allows pacers, and only on the stretch it allows. Centurion's Autumn 100 counts even a few minutes beside you as pacing, and Lakeland does not allow pacers at all, apart from friends and family joining 50 runners on the first loop round Dalemain.
+  - q: How old must a pacer be?
+    a: At Western States, 18 or over, with exceptions asked for in advance from the race director. Check your own race's rules.
+  kit:
+  - {name: Folding camping chair, why: 'check the crew point allows chairs and that it packs small enough for the one crew vehicle', url: 'https://www.amazon.co.uk/s?k=compact+folding+camping+chair'}
+  - {name: Crew box or large storage crate, why: 'check it fits the boot alongside your runner''s drop bag, and label it with the runner''s name and number', url: 'https://www.amazon.co.uk/s?k=storage+crate+with+lid'}
+  - {name: Head torch for the crew, why: 'check the battery life covers a night of waiting; crew points are often dark car parks', url: 'https://www.amazon.co.uk/s?k=head+torch+rechargeable'}
+  sources:
+  - {label: 'Western States Endurance Run, Pacer rules', url: 'https://www.wser.org/pacer-rules/', checked: '2026-11-20'}
+  - {label: 'Western States Endurance Run, Crew rules', url: 'https://www.wser.org/crew-rules/', checked: '2026-11-20'}
+  - {label: 'Western States Endurance Run, Crew suggestions', url: 'https://www.wser.org/crew-suggestions/', checked: '2026-11-20'}
+  - {label: 'Centurion Running, Autumn 100 2026: rules', url: 'https://centurionrunning.com/races/autumn-100-2026/section/rules', checked: '2026-11-20'}
+  - {label: 'Centurion Running, Autumn 100 2026: supporters', url: 'https://centurionrunning.com/races/autumn-100-2026/section/supporters', checked: '2026-11-20'}
+  - {label: 'Centurion Running, South Downs Way 100 2026: crew instructions', url: 'https://onecommunity.centurionrunning.com/races/south-downs-way-100-2026/section/crew%20instructions', checked: '2026-11-20'}
+  - {label: 'Montane Lakeland 50 and 100, 4 weeks to go: spectating (26 June 2026)', url: 'https://lakeland100.com/2026/06/26/family-and-friends-supporting-on-the-course/', checked: '2026-11-20'}
+  - {label: 'HOKA UTMB Mont-Blanc, 2027 regulations', url: 'https://montblanc.utmb.world/races-runners/other-information/regulation', checked: '2026-11-20'}

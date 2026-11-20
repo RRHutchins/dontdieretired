@@ -19,6 +19,7 @@
     {% for para in sec.p_html %}<p>{{ para }}</p>{% endfor %}
     {% if sec.table %}<div class="fl-table-wrap" tabindex="0" role="region" aria-label="{{ sec.h }}"><table class="fl-table"><thead><tr>{% for x in sec.table.head %}<th scope="col">{{ x }}</th>{% endfor %}</tr></thead><tbody>{% for r in sec.table.rows %}<tr>{% for cell in r %}{% if loop.first %}<th scope="row">{{ cell }}</th>{% else %}<td>{{ cell }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody></table></div>{% endif %}
     {% if sec.list %}<ul>{% for li in sec.list %}<li>{{ li }}</li>{% endfor %}</ul>{% endif %}
+    {% if sec.after %}<p class="meta">{{ sec.after }}</p>{% endif %}
   </section>
   {% endfor %}
   {% if g.kit %}{{ affiliate_box(g.kit, h.kit_text or "Kit to compare against your race's list") }}{% endif %}

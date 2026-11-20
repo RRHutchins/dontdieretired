@@ -1166,12 +1166,38 @@ def build(make_social=True):
             assert all(str(x.get("url", "")).startswith("https://") and x.get("label") and x.get("checked") for x in g["sources"]), f"hub guide {g['slug']}: sources need url, label, checked"
             g["sources_checked"] = max(dt.date.fromisoformat(str(x["checked"])) for x in g["sources"]).strftime("%-d %B %Y")
             g["url"] = f"/{h['slug']}/{g['slug']}/"
+        # A page per race (RUNBOOK §6u priority step 1, 20 Nov 2026): /<slug>/<event id>/, opt in with `event_pages: true` on a race hub.
+        # Event ids are permanent, so these addresses are too. No Event markup (rows have only a usual month).
+        if h.get("event_pages"):
+            assert not PHEN, f"hub {h['id']}: event_pages is for race hubs"
+            _gslugs = {g["slug"] for g in h.get("guides") or []}
+            for e in h["events"]:
+                assert e["id"] not in _gslugs, f"hub {h['id']}: event id {e['id']} clashes with a guide slug"
+                e["url"] = f"/{h['slug']}/{e['id']}/"
+            for e in h["events"]:
+                rel, seen_r = [], {e["id"]}
+                def _add(cands, why):
+                    for r in cands:
+                        if r["id"] not in seen_r and len(rel) < 6:
+                            rel.append((r, why)); seen_r.add(r["id"])
+                if e["series"] != "independent":
+                    _add([r for r in h["events"] if r["series"] == e["series"]][:3], f"also {F['series'][e['series']]}")
+                _add([r for r in h["events"] if r["continent"] == e["continent"] and set(r["bands"]) & set(e["bands"])], f"similar distance, {F['continent'][e['continent']]}")
+                _add([r for r in h["events"] if set(r["bands"]) & set(e["bands"])], "similar distance")
+                _add([r for r in h["events"] if r["continent"] == e["continent"]], F["continent"][e["continent"]])
+                _t = f"{e['name']}: distances, entry and terrain"
+                e["seo_title"] = _t if len(_t) <= 60 else (f"{e['name']}: how to enter" if len(e["name"]) <= 46 else e["name"])
+                e["description"] = f"{e['name']}, {e['place']}: {e['distances']}. How entry works, the terrain and the official page, checked {e['link']['checked_human']}."
+                urls.append(out(e["url"], "hub-event.html", h=h, e=e, related=rel))
+                pages.append({"title": e["name"], "key": "", "url": e["url"], "category": h["category"], "excerpt": e["note"],
+                              "tags": [h["id"].replace("-", " "), "race"] + list(h.get("tags") or []) + re.findall(r"[a-z]+", (e["name"] + " " + e["place"] + " " + e["country"]).lower()),
+                              "image": "/static/og-default.png", "art": "/static/og-default.png"})
         for g in h.get("guides") or []:
             urls.append(out(g["url"], "hub-guide.html", h=h, g=g, others=[x for x in h["guides"] if x is not g]))
             pages.append({"title": g["title"], "key": g.get("seo_title") or "", "url": g["url"], "category": h["category"], "excerpt": g["standfirst"],
                           "tags": [h["id"].replace("-", " "), "guide"] + list(h.get("tags") or []) + re.findall(r"[a-z]+", g["title"].lower()),
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})
-        item_list = [{"@type": "ListItem", "position": n, "name": e["name"], "url": f"{cfg['site']['url']}/{h['slug']}/#{e['id']}"} for n, e in enumerate(h["events"], 1)]
+        item_list = [{"@type": "ListItem", "position": n, "name": e["name"], "url": f"{cfg['site']['url']}{e['url']}" if e.get("url") else f"{cfg['site']['url']}/{h['slug']}/#{e['id']}"} for n, e in enumerate(h["events"], 1)]
         urls.append(out(f"/{h['slug']}/", "hub.html", h=h, item_list=item_list))
         pages.append({"title": h["h1"], "key": h.get("seo_title") or "", "url": f"/{h['slug']}/", "category": h["category"], "excerpt": h["lead"],
                       "tags": [h["id"].replace("-", " ")] + list(h.get("tags") or []) + [w for e in h["events"] for w in re.findall(r"[a-z]+", e["name"].lower())],
