@@ -1,0 +1,1599 @@
+id: cycle-helmets
+name: Cycle helmets
+title: 'Best cycle helmets: what 11 independent reviews recommend'
+description: Which cycle helmets 11 independent UK and US reviews recommend for road riding, commuting and leisure, from budget MIPS lids to premium road helmets.
+kit_names:
+- cycle helmet
+- bike helmet
+- cycling helmet
+intro: A cycle helmet protects your head in a fall, whether you ride lanes, roads or into town. The reviews put fit first, then rotational protection such as MIPS and independent Virginia Tech ratings; after that you are paying for lower weight, more ventilation, aero speed or commuter extras such as built-in lights. Good helmets with MIPS start well under £100.
+bands:
+  currency: GBP
+  edges:
+  - 80
+  - 180
+  edges_usd:
+  - 100
+  - 230
+  note: 'Bands from prices printed in the reviews, November 2026: UK prices in pounds from UK reviews, otherwise US prices in dollars from US reviews. No converted prices.'
+reviews:
+- id: bikeradar-road
+  outlet: BikeRadar
+  country: UK
+  title: The best road bike helmets 2026, from entry-level to high-end, as tested by BikeRadar
+  url: https://bikeradar.com/advice/buyers-guides/best-road-bike-helmets
+  published: '2026-08-25'
+  hands_on: true
+  products_listed: 18
+  checked: '2026-11-20'
+- id: cyclingweekly
+  outlet: Cycling Weekly
+  country: UK
+  title: 'Best road bike helmets 2026: 9 expert-rated and tested'
+  url: https://www.cyclingweekly.com/group-tests/best-road-bike-helmets-buyers-guide-146500
+  published: '2026-10-14'
+  hands_on: true
+  products_listed: 9
+  checked: '2026-11-20'
+- id: cyclingnews
+  outlet: Cyclingnews
+  country: UK
+  title: 'Best road bike helmets 2026: Top helmets reviewed by real riders'
+  url: https://www.cyclingnews.com/features/best-road-bike-helmets
+  published: '2026-08-19'
+  hands_on: true
+  products_listed: 6
+  checked: '2026-11-20'
+- id: roadcc
+  outlet: road.cc
+  country: UK
+  title: Best cycling helmets 2027 — choose a bike lid that's right for your riding
+  url: https://road.cc/buyers-guide/best-cycling-helmets
+  published: '2023-11-08'
+  hands_on: true
+  products_listed: 16
+  checked: '2026-11-20'
+- id: bikeradar-commuter
+  outlet: BikeRadar
+  country: UK
+  title: Best commuter bike helmets 2025 | The best urban lids rated by our expert testers
+  url: https://www.bikeradar.com/advice/buyers-guides/best-commuter-bike-helmets
+  published: '2023-04-16'
+  hands_on: true
+  products_listed: 8
+  checked: '2026-11-20'
+- id: ogl-road
+  outlet: OutdoorGearLab
+  country: US
+  title: Best Road Bike Helmets of 2026 | Impact Tested & Ranked
+  url: https://www.outdoorgearlab.com/topics/biking/best-road-bike-helmet
+  published: '2025-12-08'
+  hands_on: true
+  products_listed: 7
+  checked: '2026-11-20'
+- id: ogl-budget
+  outlet: OutdoorGearLab
+  country: US
+  title: Best Budget Bike Helmets | Impact Tested & Ranked
+  url: https://outdoorgearlab.com/topics/biking/best-budget-bike-helmet
+  published: '2025-04-25'
+  hands_on: true
+  products_listed: 5
+  checked: '2026-11-20'
+- id: velo
+  outlet: Velo (Outside)
+  country: US
+  title: 'The Best Bike Helmets for 2026: Tested and Ranked'
+  url: https://velo.outsideonline.com/road/road-gear/best-bike-helmets?scope=anon
+  published: '2026-11-10'
+  hands_on: true
+  products_listed: 8
+  checked: '2026-11-20'
+- id: bikerumor
+  outlet: Bikerumor
+  country: US
+  title: The Best Bike Helmets of 2026
+  url: https://bikerumor.com/best-bike-helmet
+  published: ""
+  hands_on: true
+  products_listed: 11
+  checked: '2026-11-20'
+- id: tomsguide
+  outlet: Tom's Guide
+  country: US
+  title: 'The best bike helmets in 2025: expert tested and rated'
+  url: https://www.tomsguide.com/best-picks/best-bike-helmet
+  published: '2025-02-15'
+  hands_on: true
+  products_listed: 11
+  checked: '2026-11-20'
+- id: nbcselect
+  outlet: NBC Select
+  country: US
+  title: 8 top-rated bike helmets for commuting, road and mountain biking
+  url: https://www.nbcnews.com/select/shopping/best-bike-helmet-ncna1263308
+  published: '2024-03-05'
+  hands_on: true
+  products_listed: 8
+  checked: '2026-11-20'
+products:
+- id: giro-aries-spherical
+  name: Giro Aries Spherical
+  brand: Giro
+  price_gbp: 235
+  price_usd: 350
+  price_note: £235 in road.cc; $350 in US reviews
+  best_for:
+  - ventilation
+  - premium
+  - lightweight
+  - MIPS
+  - safety rating
+  summary: 'The most-recommended helmet here: reviewers praise outstanding ventilation, low weight, comfort and Mips Spherical rotational protection. The usual criticisms are the high price, a shape that may not suit every head, and a shell that takes a deliberate push to adjust.'
+  verdicts:
+  - review: roadcc
+    label: Best money-no-object cycling helmet
+    award: named
+    for:
+    - premium
+    - MIPS
+    - lightweight
+  - review: cyclingnews
+    label: Runner up
+    award: named
+    rank: 2
+    for:
+    - MIPS
+    - safety rating
+  - review: ogl-road
+    label: Best-In-Class Ventilation
+    award: named
+    for:
+    - ventilation
+    - MIPS
+  - review: velo
+    label: Best ventilated bike helmet for hot weather
+    award: named
+    for:
+    - ventilation
+    - MIPS
+  - review: bikerumor
+    label: ''
+    award: listed
+    for:
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Giro+Aries+Spherical
+- id: trek-velocis-mips
+  name: Trek Velocis MIPS
+  brand: Trek
+  price_gbp: 230
+  price_usd: 330
+  price_note: £230 in BikeRadar (£179 in the older road.cc guide); $330 in US reviews
+  best_for:
+  - lightweight
+  - ventilation
+  - MIPS
+  summary: 'OutdoorGearLab''s overall road pick and a BikeRadar price-band winner: light, cool, well ventilated and good-looking, with MIPS. Criticisms are the price, a rear adjuster that feels delicate and over-long straps.'
+  verdicts:
+  - review: bikeradar-road
+    label: Best road bike helmet under £300 / $350
+    award: named
+    for:
+    - lightweight
+    - MIPS
+  - review: roadcc
+    label: Best cycling helmet for its good looks
+    award: named
+    for:
+    - lightweight
+    - MIPS
+  - review: ogl-road
+    label: Best Overall Road Bike Helmet
+    award: top
+    for:
+    - lightweight
+    - MIPS
+  - review: bikerumor
+    label: ''
+    award: listed
+    for:
+    - ventilation
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Trek+Velocis+MIPS
+- id: lazer-tonic-kineticore
+  name: Lazer Tonic KinetiCore
+  brand: Lazer
+  price_gbp: 60
+  price_usd: 80
+  price_note: £59.99 in BikeRadar; $80 in US reviews
+  best_for:
+  - budget
+  - lightweight
+  summary: 'The budget road helmet four reviews pick: light and well made for the money, with Lazer''s KinetiCore rotational protection instead of MIPS. Its weak spot is safety testing (three Virginia Tech stars, poor OutdoorGearLab impact results), plus stiff straps and limited venting.'
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - budget
+  - review: cyclingnews
+    label: Best budget
+    award: named
+    rank: 3
+    for:
+    - budget
+  - review: ogl-road
+    label: Best Helmet on a Tight Budget
+    award: named
+    for:
+    - budget
+  - review: bikerumor
+    label: Best Budget Road Bike Helmet
+    award: named
+    for:
+    - budget
+    - lightweight
+  buy: https://www.amazon.co.uk/s?k=Lazer+Tonic+KinetiCore
+- id: met-trenta-3k-carbon-mips
+  name: MET Trenta 3K Carbon MIPS
+  brand: MET
+  price_gbp: 280
+  price_note: £280 in BikeRadar; £189.99 (RRP £290) in road.cc; US prices appear only in a UK review
+  best_for:
+  - lightweight
+  - premium
+  - MIPS
+  - safety rating
+  summary: A very light high-end road helmet with MIPS and good airflow; Cycling Weekly makes it its lightweight pick and notes a five-star Virginia Tech rating. The main drawback is the price.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - lightweight
+    - MIPS
+  - review: cyclingweekly
+    label: Best lightweight
+    award: named
+    rank: 4
+    for:
+    - lightweight
+    - MIPS
+    - safety rating
+  - review: roadcc
+    label: Another great high-end helmet
+    award: named
+    for:
+    - lightweight
+    - premium
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=MET+Trenta+3K+Carbon+MIPS
+- id: thousand-chapter-mips
+  name: Thousand Chapter MIPS
+  brand: Thousand
+  price_usd: 145
+  price_note: $145 to $150 in US reviews; no UK price printed
+  best_for:
+  - commuter
+  - lights
+  - MIPS
+  summary: A stylish commuter helmet with MIPS, a magnetic rear light, a small peak and a lock slot. Reviewers say it can run warm on hot days, could use more padding inside and costs more than other commuter picks.
+  verdicts:
+  - review: tomsguide
+    label: Best looking bike helmet
+    award: named
+    rank: 3
+    for:
+    - MIPS
+    - lights
+  - review: nbcselect
+    label: Best commuter helmet
+    award: named
+    for:
+    - commuter
+    - MIPS
+  - review: bikerumor
+    label: Best Commuter Bike Helmet
+    award: named
+    for:
+    - commuter
+    - MIPS
+    - lights
+  buy: https://www.amazon.co.uk/s?k=Thousand+Chapter+MIPS
+- id: smith-signal-mips
+  name: Smith Signal MIPS
+  brand: Smith
+  price_usd: 85
+  price_note: $85 to $95 in US reviews; no UK price printed
+  best_for:
+  - budget
+  - all-round
+  - MIPS
+  summary: An inexpensive all-rounder with MIPS that NBC Select makes its overall pick and OutdoorGearLab its best all-round budget helmet; testers found it very comfortable. It has no visor and runs large for some heads.
+  verdicts:
+  - review: ogl-budget
+    label: Best All Around Budget Bike Helmet
+    award: named
+    for:
+    - budget
+    - all-round
+    - MIPS
+  - review: nbcselect
+    label: Best overall helmet
+    award: top
+    for:
+    - all-round
+    - budget
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Smith+Signal+MIPS
+- id: smith-trace-mips
+  name: Smith Trace MIPS
+  brand: Smith
+  price_usd: 250
+  price_note: $250 to $285 list in US reviews; no UK price printed
+  best_for:
+  - safety rating
+  - lightweight
+  - MIPS
+  summary: A light road helmet with MIPS and Koroyd that had the best impact-test results in OutdoorGearLab's test. Ventilation is held back and the list price is high.
+  verdicts:
+  - review: ogl-road
+    label: Best Impact Test Results
+    award: named
+    for:
+    - safety rating
+    - MIPS
+  - review: nbcselect
+    label: Best road helmet
+    award: named
+    for:
+    - lightweight
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Smith+Trace+MIPS
+- id: giro-register-mips
+  name: Giro Register MIPS
+  brand: Giro
+  price_usd: 70
+  price_note: $70 in US reviews; no UK price printed
+  best_for:
+  - budget
+  - all-round
+  - commuter
+  - MIPS
+  summary: A cheap, light, comfortable leisure and commuting helmet with MIPS and a removable peak; Tom's Guide's overall pick. It comes in only two sizes.
+  verdicts:
+  - review: tomsguide
+    label: Best bike helmet overall
+    award: top
+    rank: 1
+    for:
+    - budget
+    - all-round
+    - MIPS
+  - review: nbcselect
+    label: Best budget commuter helmet
+    award: named
+    for:
+    - commuter
+    - budget
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Giro+Register+MIPS
+- id: lumos-ultra-mips
+  name: Lumos Ultra MIPS
+  brand: Lumos
+  price_usd: 120
+  price_note: $119 to $180 in US reviews; no UK price printed
+  best_for:
+  - lights
+  - commuter
+  - MIPS
+  summary: A commuter helmet with built-in front and rear lights and turn signals, plus MIPS, picked for visibility. It is heavier than average and some light features need a remote sold separately.
+  verdicts:
+  - review: tomsguide
+    label: Best bike helmet with lights
+    award: named
+    rank: 8
+    for:
+    - lights
+    - commuter
+    - MIPS
+  - review: nbcselect
+    label: Lights built-in
+    award: named
+    for:
+    - lights
+    - commuter
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Lumos+Ultra+MIPS
+- id: poc-cytal-mips
+  name: POC Cytal MIPS
+  brand: POC
+  price_usd: 360
+  price_note: $360 in Bikerumor (Cycling Weekly also prints $360); no UK price printed
+  best_for:
+  - safety rating
+  - MIPS
+  summary: Overall road pick for both Cycling Weekly and Bikerumor, with a five-star Virginia Tech rating and MIPS. Reviewers disagree on airflow (Bikerumor finds it very well ventilated, Cycling Weekly poor at low speeds) and it is expensive.
+  verdicts:
+  - review: cyclingweekly
+    label: Best overall
+    award: top
+    rank: 1
+    for:
+    - safety rating
+    - MIPS
+  - review: bikerumor
+    label: Best Overall Road Bike Helmet
+    award: top
+    for:
+    - safety rating
+    - MIPS
+    - ventilation
+  buy: https://www.amazon.co.uk/s?k=POC+Cytal+MIPS
+- id: specialized-s-works-evade-3
+  name: Specialized S-Works Evade 3
+  brand: Specialized
+  price_gbp: 275
+  price_note: £275 in BikeRadar
+  best_for:
+  - aero
+  - MIPS
+  summary: An aero road helmet that Cyclingnews makes its overall pick as among the fastest it tested, with good ventilation for an aero shape and sunglasses storage. Criticisms are the high price and white straps that get dirty.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - aero
+  - review: cyclingnews
+    label: Best overall
+    award: top
+    rank: 1
+    for:
+    - aero
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Specialized+S-Works+Evade+3
+- id: abus-gamechanger-2-mips
+  name: ABUS GameChanger 2.0 MIPS
+  brand: ABUS
+  price_gbp: 280
+  price_usd: 229
+  price_note: £280 in BikeRadar; $229 in Tom's Guide
+  best_for:
+  - aero
+  - ventilation
+  - MIPS
+  summary: A comfortable aero road helmet with good ventilation, sold with or without MIPS; Tom's Guide's road pick. It is pricey and not great in cold or wet weather, and BikeRadar's test sample had a couple of faults.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - aero
+    - MIPS
+  - review: tomsguide
+    label: Best road bike helmet
+    award: named
+    rank: 5
+    for:
+    - ventilation
+    - lightweight
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=ABUS+GameChanger+2.0+MIPS
+- id: kask-protone-icon
+  name: Kask Protone Icon
+  brand: Kask
+  price_gbp: 245
+  price_note: £245 in BikeRadar; £179 in the older road.cc guide
+  best_for:
+  - all-round
+  - ventilation
+  summary: A comfortable, stylish do-it-all road helmet with excellent ventilation. The retention adjuster is basic and feels less robust than rivals'.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - all-round
+  - review: roadcc
+    label: Best do-it-all cycling helmet
+    award: named
+    for:
+    - all-round
+    - ventilation
+  buy: https://www.amazon.co.uk/s?k=Kask+Protone+Icon
+- id: kask-sintesi
+  name: Kask Sintesi
+  brand: Kask
+  price_gbp: 71
+  price_note: £71 in road.cc; US price appears only in a UK review
+  best_for:
+  - budget
+  - commuter
+  - lightweight
+  summary: A light, affordable helmet that Cycling Weekly says suits commuters as well as road and gravel riders, using Kask's WG11 rotational test instead of MIPS. It has no port for sunglasses.
+  verdicts:
+  - review: cyclingweekly
+    label: Best MIPS alternative
+    award: named
+    rank: 8
+    for:
+    - commuter
+    - budget
+  - review: roadcc
+    label: Best cycling helmet under £100
+    award: named
+    for:
+    - budget
+    - lightweight
+    - commuter
+  buy: https://www.amazon.co.uk/s?k=Kask+Sintesi
+- id: sweet-protection-fluxer-mips
+  name: Sweet Protection Fluxer MIPS
+  brand: Sweet Protection
+  price_gbp: 179
+  price_usd: 200
+  price_note: £179 in BikeRadar; $200 in Bikerumor
+  best_for:
+  - ventilation
+  - MIPS
+  summary: A mid-priced road helmet with MIPS and very good ventilation and coverage. It is heavier than rivals and not the most stylish.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - ventilation
+    - MIPS
+  - review: bikerumor
+    label: Best Mid-Range Road Bike Helmet
+    award: named
+    for:
+    - ventilation
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Sweet+Protection+Fluxer+MIPS
+- id: specialized-align-2
+  name: Specialized Align II
+  brand: Specialized
+  price_gbp: 30
+  price_note: £30 in road.cc (its text also says £45)
+  best_for:
+  - budget
+  - MIPS
+  - safety rating
+  summary: A very cheap helmet with MIPS and a strong Virginia Tech result for the price. It is bulky and a little heavy, and sweat management could be better.
+  verdicts:
+  - review: roadcc
+    label: Best budget cycling helmet
+    award: named
+    for:
+    - budget
+    - MIPS
+  - review: velo
+    label: Best budget bike helmet
+    award: named
+    for:
+    - budget
+    - MIPS
+    - safety rating
+  buy: https://www.amazon.co.uk/s?k=Specialized+Align+II
+- id: lazer-z1-kineticore
+  name: Lazer Z1 KinetiCore
+  brand: Lazer
+  price_gbp: 230
+  price_note: £229.99 in BikeRadar
+  best_for:
+  - lightweight
+  - ventilation
+  summary: A very light, highly ventilated road helmet with KinetiCore rotational protection. The fit dial and straps take getting used to.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - lightweight
+  - review: velo
+    label: Best lightweight road bike helmet
+    award: named
+    for:
+    - lightweight
+    - ventilation
+  buy: https://www.amazon.co.uk/s?k=Lazer+Z1+KinetiCore
+- id: poc-ventral-air-mips
+  name: POC Ventral Air MIPS
+  brand: POC
+  price_gbp: 165
+  price_usd: 290
+  price_note: £164.99 in road.cc; $290 list in OutdoorGearLab
+  best_for:
+  - aero
+  - ventilation
+  - lightweight
+  - MIPS
+  summary: An aero road helmet that is well ventilated for its shape and very comfortable, with MIPS. It is expensive.
+  verdicts:
+  - review: roadcc
+    label: Best helmet combining aerodynamics and ventilation
+    award: named
+    for:
+    - aero
+    - ventilation
+    - MIPS
+  - review: ogl-road
+    label: Lightweight Performance and Unique Style
+    award: named
+    for:
+    - lightweight
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=POC+Ventral+Air+MIPS
+- id: van-rysel-fcr
+  name: Van Rysel FCR
+  brand: Van Rysel
+  price_gbp: 90
+  price_note: £89.99 in BikeRadar
+  best_for:
+  - budget
+  - aero
+  summary: A cheap aero road helmet with a magnetic buckle. Ventilation is weaker than premium aero helmets.
+  verdicts:
+  - review: bikeradar-road
+    label: Best road bike helmet under £100 / $150
+    award: named
+    for:
+    - budget
+    - aero
+  buy: https://www.amazon.co.uk/s?k=Van+Rysel+FCR
+- id: abus-powerdome
+  name: ABUS PowerDome
+  brand: ABUS
+  price_gbp: 130
+  price_note: £130 in BikeRadar
+  best_for:
+  - lightweight
+  - aero
+  - MIPS
+  summary: Light and aero for the price, with MIPS. The straps can twist and colour choice is limited.
+  verdicts:
+  - review: bikeradar-road
+    label: Best road bike helmet under £200 / $250
+    award: named
+    for:
+    - lightweight
+    - aero
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=ABUS+PowerDome
+- id: abus-macator
+  name: Abus Macator
+  brand: ABUS
+  price_gbp: 55
+  price_note: £55 in BikeRadar
+  best_for:
+  - budget
+  summary: An inexpensive helmet with an excellent fit, adjustable retention and many colours, but bulky above the brow.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - budget
+  buy: https://www.amazon.co.uk/s?k=Abus+Macator
+- id: met-idolo
+  name: MET Idolo
+  brand: MET
+  price_gbp: 70
+  price_note: £69.99 in BikeRadar
+  best_for:
+  - budget
+  summary: A budget helmet with a premium feel and comfort; no sunglasses ports.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - budget
+  buy: https://www.amazon.co.uk/s?k=MET+Idolo
+- id: met-vinci-mips
+  name: MET Vinci MIPS
+  brand: MET
+  price_gbp: 100
+  price_note: £100 in BikeRadar
+  best_for:
+  - ventilation
+  - MIPS
+  summary: Good value and well ventilated with MIPS, but the internal fit is hard to adjust.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - ventilation
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=MET+Vinci+MIPS
+- id: scott-arx-plus
+  name: Scott ARX Plus
+  brand: Scott
+  price_gbp: 100
+  price_note: £100 in BikeRadar
+  best_for:
+  - gravel
+  - MIPS
+  - safety rating
+  summary: A versatile road and gravel helmet with MIPS and a five-star Virginia Tech score; few rear vents.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - gravel
+    - MIPS
+    - safety rating
+  buy: https://www.amazon.co.uk/s?k=Scott+ARX+Plus
+- id: pinnacle-mips
+  name: Pinnacle MIPS
+  brand: Pinnacle
+  price_gbp: 60
+  price_note: £59.99 in BikeRadar
+  best_for:
+  - budget
+  - MIPS
+  summary: MIPS at a low price, with chunky straps and an awkward chin buckle.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - budget
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Pinnacle+MIPS
+- id: specialized-propero-4
+  name: Specialized Propero 4
+  brand: Specialized
+  price_gbp: 165
+  price_note: £165 in BikeRadar
+  best_for:
+  - safety rating
+  summary: Well fitting with a high safety rating, but warm in hot weather.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - safety rating
+  buy: https://www.amazon.co.uk/s?k=Specialized+Propero+4
+- id: hjc-ibex-3
+  name: HJC Ibex 3.0
+  brand: HJC
+  price_gbp: 250
+  price_note: £249.99 in BikeRadar
+  best_for:
+  - lightweight
+  summary: Lightweight and comfortable with HJC's own rotational system; the price is the drawback.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - lightweight
+  buy: https://www.amazon.co.uk/s?k=HJC+Ibex+3.0
+- id: poc-procen-air
+  name: POC Procen Air
+  brand: POC
+  price_gbp: 370
+  price_note: £370 in BikeRadar
+  best_for:
+  - aero
+  summary: An aero helmet with better-than-expected ventilation; expensive and warm on hot climbs.
+  verdicts:
+  - review: bikeradar-road
+    label: ''
+    award: listed
+    for:
+    - aero
+  buy: https://www.amazon.co.uk/s?k=POC+Procen+Air
+- id: van-rysel-rcr-mips
+  name: Van Rysel RCR MIPS
+  brand: Van Rysel
+  price_note: No price printed in Cycling Weekly
+  best_for:
+  - budget
+  - MIPS
+  summary: Very comfortable budget road helmet with MIPS; the big front vents are cold in winter.
+  verdicts:
+  - review: cyclingweekly
+    label: Best budget
+    award: named
+    rank: 2
+    rating: 4.5
+    scale: 5
+    for:
+    - budget
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Van+Rysel+RCR+MIPS
+- id: sweet-protection-falconer-aero-2vi-mips
+  name: Sweet Protection Falconer Aero 2Vi MIPS
+  brand: Sweet Protection
+  price_note: Only a US price, printed in a UK review
+  best_for:
+  - MIPS
+  - aero
+  - safety rating
+  summary: Five-star Virginia Tech rating, MIPS and removable magnetic aero covers; not the lightest.
+  verdicts:
+  - review: cyclingweekly
+    label: Best with MIPS
+    award: named
+    rank: 3
+    for:
+    - MIPS
+    - aero
+    - safety rating
+  buy: https://www.amazon.co.uk/s?k=Sweet+Protection+Falconer+Aero+2Vi+MIPS
+- id: fizik-kudo
+  name: Fizik Kudo
+  brand: Fizik
+  price_note: Only US prices, printed in a UK review
+  best_for:
+  - ventilation
+  - MIPS
+  - lights
+  summary: Comfortable and well ventilated with MIPS and a built-in light; expensive.
+  verdicts:
+  - review: cyclingweekly
+    label: Best ventilation
+    award: named
+    rank: 5
+    for:
+    - ventilation
+    - MIPS
+    - lights
+  buy: https://www.amazon.co.uk/s?k=Fizik+Kudo
+- id: rudy-project-nytron
+  name: Rudy Project Nytron
+  brand: Rudy Project
+  price_note: No price printed
+  best_for:
+  - all-round
+  - aero
+  summary: Well ventilated for an aero design, but only two sizes and no MIPS.
+  verdicts:
+  - review: cyclingweekly
+    label: Best all-round
+    award: named
+    rank: 6
+    for:
+    - all-round
+    - aero
+  buy: https://www.amazon.co.uk/s?k=Rudy+Project+Nytron
+- id: giro-eclipse-pro-mips
+  name: Giro Eclipse Pro MIPS
+  brand: Giro
+  price_note: Only a US price, printed in a UK review
+  best_for:
+  - aero
+  - ventilation
+  - MIPS
+  summary: Superb ventilation for an aero helmet, with Mips Spherical; not every brand of sunglasses works with it.
+  verdicts:
+  - review: cyclingweekly
+    label: Best aero helmet
+    award: named
+    rank: 7
+    for:
+    - aero
+    - ventilation
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Giro+Eclipse+Pro+MIPS
+- id: specialized-s-works-tt5
+  name: Specialized S-Works TT5
+  brand: Specialized
+  price_note: Only a US price, printed in a UK review
+  best_for:
+  - time trial
+  - MIPS
+  summary: A time-trial helmet with a strong fit and MIPS; its face sock is no longer UCI legal.
+  verdicts:
+  - review: cyclingweekly
+    label: Best TT helmet
+    award: named
+    rank: 9
+    for:
+    - time trial
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Specialized+S-Works+TT5
+- id: specialized-prevail-3
+  name: Specialized Prevail III
+  brand: Specialized
+  price_note: Only a US price, printed in a UK review
+  best_for:
+  - ventilation
+  - MIPS
+  summary: Impressive ventilation and MIPS; white straps are hard to keep clean.
+  verdicts:
+  - review: cyclingnews
+    label: Best ventilated
+    award: named
+    rank: 4
+    for:
+    - ventilation
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Specialized+Prevail+III
+- id: trek-ballista-mips
+  name: Trek Ballista MIPS
+  brand: Trek
+  price_note: Only a US price, printed in a UK review
+  best_for:
+  - aero
+  - MIPS
+  summary: Very aerodynamic and light, with MIPS; the rear cradle comes apart too easily.
+  verdicts:
+  - review: cyclingnews
+    label: Best all-out aero
+    award: named
+    rank: 5
+    for:
+    - aero
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Trek+Ballista+MIPS
+- id: van-rysel-rcr-f
+  name: Van Rysel RCR-F
+  brand: Van Rysel
+  price_note: No price printed
+  best_for:
+  - aero
+  - budget
+  summary: A budget aero helmet that did well in the wind tunnel; the strap junction is not adjustable.
+  verdicts:
+  - review: cyclingnews
+    label: Best budget aero
+    award: named
+    rank: 6
+    for:
+    - aero
+    - budget
+  buy: https://www.amazon.co.uk/s?k=Van+Rysel+RCR-F
+- id: abus-hud-y
+  name: Abus Hud-Y
+  brand: ABUS
+  price_gbp: 99
+  price_note: £98.99 in road.cc
+  best_for:
+  - commuter
+  - lights
+  summary: A commuter helmet with a USB-rechargeable rear light; a slightly narrow fit.
+  verdicts:
+  - review: roadcc
+    label: Best commuter cycling helmet with bonus safety features
+    award: named
+    for:
+    - commuter
+    - lights
+  buy: https://www.amazon.co.uk/s?k=Abus+Hud-Y
+- id: bell-xr-spherical
+  name: Bell XR Spherical
+  brand: Bell
+  price_gbp: 189
+  price_note: £188.99 in road.cc
+  best_for:
+  - MIPS
+  summary: Comfortable on long rides with Mips Spherical; heavier than similar helmets.
+  verdicts:
+  - review: roadcc
+    label: Best cycling helmet with Spherical technology
+    award: named
+    for:
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Bell+XR+Spherical
+- id: endura-hummvee
+  name: Endura Hummvee
+  brand: Endura
+  price_gbp: 23
+  price_note: £23 in road.cc
+  best_for:
+  - budget
+  - commuter
+  summary: A very cheap, light urban helmet; strap adjustment may be limiting.
+  verdicts:
+  - review: roadcc
+    label: Best budget urban cycling helmet
+    award: named
+    for:
+    - budget
+    - commuter
+  buy: https://www.amazon.co.uk/s?k=Endura+Hummvee
+- id: kask-wasabi
+  name: Kask Wasabi
+  brand: Kask
+  price_gbp: 210
+  price_note: £210 in road.cc
+  best_for:
+  - winter
+  summary: A winter helmet with adjustable venting; expensive.
+  verdicts:
+  - review: roadcc
+    label: Best winter cycling helmet
+    award: named
+    for:
+    - winter
+  buy: https://www.amazon.co.uk/s?k=Kask+Wasabi
+- id: liv-relay-mips
+  name: Liv Relay MIPS
+  brand: Liv
+  price_gbp: 40
+  price_note: £39.99 in road.cc
+  best_for:
+  - women
+  - budget
+  - MIPS
+  - commuter
+  summary: A good-value women's helmet with MIPS, suitable for commuting.
+  verdicts:
+  - review: roadcc
+    label: Best womens cycling helmet
+    award: named
+    for:
+    - women
+    - budget
+    - MIPS
+    - commuter
+  buy: https://www.amazon.co.uk/s?k=Liv+Relay+MIPS
+- id: met-manta-mips
+  name: MET Manta MIPS
+  brand: MET
+  price_gbp: 150
+  price_note: £149.99 in road.cc
+  best_for:
+  - aero
+  - MIPS
+  summary: A fairly light aero road helmet with MIPS; the brow is quite visible.
+  verdicts:
+  - review: roadcc
+    label: Best aero cycling helmet
+    award: named
+    for:
+    - aero
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=MET+Manta+MIPS
+- id: met-mobilite-mips
+  name: MET Mobilite MIPS
+  brand: MET
+  price_gbp: 55
+  price_note: £54.50 in road.cc
+  best_for:
+  - commuter
+  - budget
+  - MIPS
+  summary: An urban and e-bike helmet with MIPS and plenty of adjustment; the rear light is not rechargeable.
+  verdicts:
+  - review: roadcc
+    label: Best urban cycling helmet under £100
+    award: named
+    for:
+    - commuter
+    - budget
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=MET+Mobilite+MIPS
+- id: rudy-project-egos
+  name: Rudy Project Egos
+  brand: Rudy Project
+  price_gbp: 149
+  price_note: £148.99 in road.cc
+  best_for:
+  - ventilation
+  summary: Good airflow and a bug net, but no MIPS.
+  verdicts:
+  - review: roadcc
+    label: Best cycling helmet under £200
+    award: named
+    for:
+    - ventilation
+  buy: https://www.amazon.co.uk/s?k=Rudy+Project+Egos
+- id: smith-dispatch-mips
+  name: Smith Dispatch MIPS
+  brand: Smith
+  price_gbp: 119
+  price_note: £119 in road.cc
+  best_for:
+  - commuter
+  - lights
+  - MIPS
+  summary: A commuter helmet with MIPS, Koroyd, a magnetic buckle and a rear light; expensive.
+  verdicts:
+  - review: roadcc
+    label: Best cycling helmet for commuting
+    award: named
+    for:
+    - commuter
+    - lights
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Smith+Dispatch+MIPS
+- id: bolle-eco-react-mips
+  name: Bollé Eco React MIPS
+  brand: Bollé
+  price_gbp: 140
+  price_note: £140 in BikeRadar
+  best_for:
+  - commuter
+  - MIPS
+  summary: Comfortable and good-looking with MIPS, and better for the environment; dearer than most commuter helmets.
+  verdicts:
+  - review: bikeradar-commuter
+    label: ''
+    award: listed
+    for:
+    - commuter
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Bollé+Eco+React+MIPS
+- id: met-urbex-mips
+  name: MET Urbex MIPS
+  brand: MET
+  price_gbp: 160
+  price_note: £160 in BikeRadar
+  best_for:
+  - commuter
+  - MIPS
+  summary: Tough with extra protection and MIPS; the extra protection adds weight.
+  verdicts:
+  - review: bikeradar-commuter
+    label: ''
+    award: listed
+    for:
+    - commuter
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=MET+Urbex+MIPS
+- id: bern-hudson-mips
+  name: Bern Hudson MIPS
+  brand: Bern
+  price_gbp: 110
+  price_note: £110 in BikeRadar
+  best_for:
+  - commuter
+  - MIPS
+  summary: Good fit, protection and comfort with MIPS; pricey and can get warm.
+  verdicts:
+  - review: bikeradar-commuter
+    label: ''
+    award: listed
+    for:
+    - commuter
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Bern+Hudson+MIPS
+- id: giro-ethos-mips
+  name: Giro Ethos MIPS
+  brand: Giro
+  price_gbp: 240
+  price_note: £240 in BikeRadar
+  best_for:
+  - commuter
+  - lights
+  - MIPS
+  summary: A superb fit, MIPS and built-in lights with a remote that works well; the lights cannot be switched on by remote, and it is pricey.
+  verdicts:
+  - review: bikeradar-commuter
+    label: ''
+    award: listed
+    for:
+    - commuter
+    - lights
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Giro+Ethos+MIPS
+- id: met-intercity-mips
+  name: MET Intercity MIPS
+  brand: MET
+  price_gbp: 200
+  price_note: £200 in BikeRadar
+  best_for:
+  - commuter
+  - MIPS
+  summary: Plenty of fit adjustment and MIPS; the flip-down lens look will put some off.
+  verdicts:
+  - review: bikeradar-commuter
+    label: ''
+    award: listed
+    for:
+    - commuter
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=MET+Intercity+MIPS
+- id: nutcase-vio-mips
+  name: Nutcase Vio MIPS
+  brand: Nutcase
+  price_gbp: 125
+  price_note: £125 in BikeRadar
+  best_for:
+  - commuter
+  - MIPS
+  summary: A great fit with MIPS; neither cheap nor light.
+  verdicts:
+  - review: bikeradar-commuter
+    label: ''
+    award: listed
+    for:
+    - commuter
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Nutcase+Vio+MIPS
+- id: oakley-aro3-mips
+  name: Oakley ARO3 MIPS
+  brand: Oakley
+  price_gbp: 153
+  price_note: £153 in BikeRadar
+  best_for:
+  - commuter
+  - lightweight
+  - MIPS
+  summary: Light and airy for a MIPS helmet; try before buying.
+  verdicts:
+  - review: bikeradar-commuter
+    label: ''
+    award: listed
+    for:
+    - commuter
+    - lightweight
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Oakley+ARO3+MIPS
+- id: specialized-tone-mips
+  name: Specialized Tone MIPS
+  brand: Specialized
+  price_gbp: 65
+  price_note: £65 in BikeRadar
+  best_for:
+  - commuter
+  - budget
+  - MIPS
+  - safety rating
+  summary: A low-priced commuter helmet with MIPS and a high safety rating; can get stuffy in the heat.
+  verdicts:
+  - review: bikeradar-commuter
+    label: ''
+    award: listed
+    for:
+    - commuter
+    - budget
+    - MIPS
+    - safety rating
+  buy: https://www.amazon.co.uk/s?k=Specialized+Tone+MIPS
+- id: smith-persist-mips
+  name: Smith Persist MIPS
+  brand: Smith
+  price_usd: 145
+  price_note: $145 list in OutdoorGearLab
+  best_for:
+  - budget
+  - MIPS
+  summary: Very comfortable, with middling ventilation; OutdoorGearLab names it among its value choices.
+  verdicts:
+  - review: ogl-road
+    label: ''
+    award: listed
+    for:
+    - budget
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Smith+Persist+MIPS
+- id: giro-agilis-mips
+  name: Giro Agilis MIPS
+  brand: Giro
+  price_usd: 120
+  price_note: $120 list in OutdoorGearLab
+  best_for:
+  - budget
+  - MIPS
+  summary: A comfortable helmet with features like Giro's dearer models at a lower price; slightly heavier and less ventilated.
+  verdicts:
+  - review: ogl-road
+    label: ''
+    award: listed
+    for:
+    - budget
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Giro+Agilis+MIPS
+- id: trek-solstice-mips
+  name: Trek Solstice MIPS
+  brand: Trek
+  price_usd: 70
+  price_note: $70 list in OutdoorGearLab
+  best_for:
+  - budget
+  - safety rating
+  - MIPS
+  summary: OutdoorGearLab's best budget helmet, with an outstanding impact-test score and MIPS; a bulky fit.
+  verdicts:
+  - review: ogl-budget
+    label: Best Overall Helmet and Impact Test
+    award: top
+    for:
+    - budget
+    - safety rating
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Trek+Solstice+MIPS
+- id: grottico-helmet
+  name: Grottico Bike Helmet
+  brand: Grottico
+  price_usd: 38
+  price_note: $38 list in OutdoorGearLab
+  best_for:
+  - budget
+  - lights
+  summary: A very cheap recreational helmet with a built-in light; the buckle fell off in testing.
+  verdicts:
+  - review: ogl-budget
+    label: Best Bang for Your Buck
+    award: named
+    for:
+    - budget
+    - lights
+  buy: https://www.amazon.co.uk/s?k=Grottico+Bike+Helmet
+- id: giro-fixture-2-mips
+  name: Giro Fixture II MIPS
+  brand: Giro
+  price_usd: 85
+  price_note: $85 list in OutdoorGearLab
+  best_for:
+  - budget
+  - comfort
+  summary: All-day comfort at a low price, but poor impact-test results.
+  verdicts:
+  - review: ogl-budget
+    label: Most Comfortable
+    award: named
+    for:
+    - budget
+    - comfort
+  buy: https://www.amazon.co.uk/s?k=Giro+Fixture+II+MIPS
+- id: giant-pursuit
+  name: Giant Pursuit
+  brand: Giant
+  price_note: No price printed
+  best_for:
+  - aero
+  summary: 'Velo''s overall road pick: stays planted with good forward vision when tucked; not quite the fastest aero helmet.'
+  verdicts:
+  - review: velo
+    label: Best overall road bike helmet
+    award: top
+    for:
+    - aero
+  buy: https://www.amazon.co.uk/s?k=Giant+Pursuit
+- id: pikio-si-oblik
+  name: PIKIO Si OBLIK
+  brand: PIKIO
+  price_note: No price printed
+  best_for:
+  - safety rating
+  summary: The best Virginia Tech score Velo has seen, from its own rotational system; not aero.
+  verdicts:
+  - review: velo
+    label: Highest Virginia Tech rated bike helmet
+    award: named
+    for:
+    - safety rating
+  buy: https://www.amazon.co.uk/s?k=PIKIO+Si+OBLIK
+- id: specialized-evade-4
+  name: Specialized Evade 4
+  brand: Specialized
+  price_note: No price printed
+  best_for:
+  - aero
+  summary: Among the fastest aero helmets, with better sweat management; 327g.
+  verdicts:
+  - review: velo
+    label: Best aero road bike helmet
+    award: named
+    for:
+    - aero
+  buy: https://www.amazon.co.uk/s?k=Specialized+Evade+4
+- id: poc-amidal
+  name: POC Amidal
+  brand: POC
+  price_note: No price printed
+  best_for:
+  - gravel
+  - MIPS
+  summary: A gravel helmet with MIPS, a light mount and glasses storage; heavy and no Virginia Tech score.
+  verdicts:
+  - review: velo
+    label: Best gravel bike helmet
+    award: named
+    for:
+    - gravel
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=POC+Amidal
+- id: specialized-mode
+  name: Specialized Mode
+  brand: Specialized
+  price_note: No price printed
+  best_for:
+  - commuter
+  - e-bike
+  - MIPS
+  summary: A keenly priced commuter helmet with MIPS and Dutch e-bike certification; the light mount feels insecure.
+  verdicts:
+  - review: velo
+    label: Best commuter and e-bike bike helmet
+    award: named
+    for:
+    - commuter
+    - e-bike
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Specialized+Mode
+- id: smith-network-mips
+  name: Smith Network MIPS
+  brand: Smith
+  price_usd: 195
+  price_note: $195 in Bikerumor
+  best_for:
+  - gravel
+  - MIPS
+  - lightweight
+  summary: A light gravel helmet with MIPS; the straps need refinement.
+  verdicts:
+  - review: bikerumor
+    label: Best Gravel Bike Helmet
+    award: named
+    for:
+    - gravel
+    - MIPS
+    - lightweight
+  buy: https://www.amazon.co.uk/s?k=Smith+Network+MIPS
+- id: bell-trace-mips
+  name: Bell Trace MIPS
+  brand: Bell
+  price_usd: 49
+  price_note: $49 in Tom's Guide
+  best_for:
+  - budget
+  - MIPS
+  summary: Good value with MIPS, solid features and a clip-on visor; plain styling.
+  verdicts:
+  - review: tomsguide
+    label: Best affordable bike helmet
+    award: named
+    rank: 2
+    for:
+    - budget
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Bell+Trace+MIPS
+- id: specialized-s-works-prevail
+  name: Specialized S-Works Prevail
+  brand: Specialized
+  price_usd: 299
+  price_note: $299 in Tom's Guide
+  best_for:
+  - crash sensor
+  - MIPS
+  summary: Can alert emergency contacts after a fall, with MIPS; expensive.
+  verdicts:
+  - review: tomsguide
+    label: Best smart bike helmet
+    award: named
+    rank: 6
+    for:
+    - crash sensor
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Specialized+S-Works+Prevail
+- id: scott-vivo-plus
+  name: Scott Vivo Plus
+  brand: Scott
+  price_usd: 60
+  price_note: $60 in Tom's Guide
+  best_for:
+  - comfort
+  - budget
+  - MIPS
+  summary: Fits well and stays put, with MIPS, at a low price; gets hot in the sun.
+  verdicts:
+  - review: tomsguide
+    label: Best comfortable bike helmet
+    award: named
+    rank: 7
+    for:
+    - comfort
+    - budget
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Scott+Vivo+Plus
+- id: smith-express-mips
+  name: Smith Express MIPS
+  brand: Smith
+  price_usd: 110
+  price_note: $110 in Tom's Guide
+  best_for:
+  - commuter
+  - MIPS
+  summary: A solid enclosed commuter helmet with MIPS; the heaviest Tom's Guide tested, and the padding could be better.
+  verdicts:
+  - review: tomsguide
+    label: Best commuter bike helmet
+    award: named
+    rank: 9
+    for:
+    - commuter
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=Smith+Express+MIPS
+- id: outdoormaster-gem-mips
+  name: OutdoorMaster Gem MIPS
+  brand: OutdoorMaster
+  price_usd: 49
+  price_note: $49 in Tom's Guide
+  best_for:
+  - budget
+  - lightweight
+  - MIPS
+  summary: Very light and airy with MIPS for little money; no quick-release strap.
+  verdicts:
+  - review: tomsguide
+    label: Best cheap bike helmet
+    award: named
+    rank: 11
+    for:
+    - budget
+    - lightweight
+    - MIPS
+  buy: https://www.amazon.co.uk/s?k=OutdoorMaster+Gem+MIPS
+- id: specialized-echelon-2-mips
+  name: Specialized Echelon II MIPS
+  brand: Specialized
+  price_usd: 90
+  price_note: $90 list in NBC Select
+  best_for:
+  - budget
+  - MIPS
+  - crash sensor
+  summary: A budget road helmet with 31 vents, MIPS and an ANGi crash sensor; only three sizes.
+  verdicts:
+  - review: nbcselect
+    label: Best budget road helmet
+    award: named
+    for:
+    - budget
+    - MIPS
+    - crash sensor
+  buy: https://www.amazon.co.uk/s?k=Specialized+Echelon+II+MIPS
+agree:
+- text: 'Fit is crucial: measure your head, check the brand''s size chart and try helmets on where you can, because shapes differ between brands.'
+  reviews:
+  - bikeradar-road
+  - cyclingweekly
+  - roadcc
+  - bikeradar-commuter
+  - cyclingnews
+  - bikerumor
+  - tomsguide
+- text: Rotational protection such as MIPS, or a rival system like KinetiCore or WG11, is worth looking for, and many cheap helmets now have it.
+  reviews:
+  - bikeradar-road
+  - cyclingweekly
+  - roadcc
+  - bikeradar-commuter
+  - bikerumor
+  - tomsguide
+  - velo
+  - nbcselect
+- text: Every helmet on sale has to meet a basic safety standard (EN 1078 in the UK and Europe, CPSC in the US); Virginia Tech's independent star ratings are a useful way to compare protection.
+  reviews:
+  - bikeradar-road
+  - cyclingweekly
+  - roadcc
+  - velo
+  - bikerumor
+  - cyclingnews
+  - ogl-road
+- text: Paying more mostly buys lower weight, more vents, aero speed or features, not more protection.
+  reviews:
+  - bikerumor
+  - cyclingnews
+  - ogl-road
+  - nbcselect
+  - bikeradar-road
+- text: Vents keep you cool on long or hot rides; aero and enclosed commuter helmets ventilate less but suit cold, wet and stop-start riding.
+  reviews:
+  - bikeradar-road
+  - cyclingweekly
+  - roadcc
+  - ogl-road
+  - cyclingnews
+  - bikeradar-commuter
+- text: Replace a helmet after any crash or hard knock, even if it looks fine, and after a few years of use.
+  reviews:
+  - cyclingweekly
+  - bikerumor
+  - tomsguide
+  - nbcselect
+  - bikeradar-commuter
+caution: Replace a helmet after any impact even if no damage shows, and keep it out of hot cars and strong sun. Built-in helmet lights add visibility but do not replace proper bike lights.

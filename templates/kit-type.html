@@ -73,7 +73,7 @@
 
 <section class="prose narrow" aria-labelledby="ktr-h">
   <h2 id="ktr-h">The reviews we read</h2>
-  <ul class="kt-reviews">{% for r in t.reviews %}<li><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.title }}</a> · {{ r.outlet }}{% if r.published %}, {{ r.published }}{% endif %}{% if r.hands_on %} · tested by the reviewers{% endif %} · {{ r.products_listed }} products</li>{% endfor %}</ul>
+  <ul class="kt-reviews">{% for r in t.reviews %}<li><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.title }}</a> · {{ r.outlet }}{% if r.published %}, {{ r.published }}{% endif %}{% if r.hands_on %} · tested by the reviewers{% endif %} · {{ r.products_listed }} products{% if r.note %} <span class="meta">({{ r.note }})</span>{% endif %}</li>{% endfor %}</ul>
   <p class="disclosure">The recommendations are the reviewers'; we have counted and weighed them and have not tested the products ourselves. {{ t.bands.note }} The shop shows today's price. Buy links are affiliate links: if you buy through them we may earn a commission at no extra cost to you, and that never changes a score. <a href="/kit/how-we-score/">How the scores work</a> · <a href="/kit/">All kit</a></p>
 </section>
 {% endblock %}

@@ -1,0 +1,1410 @@
+id: head-torches
+name: Head torches
+title: 'Best head torches: what 10 independent reviews recommend'
+description: Which head torches 10 independent UK and US reviews recommend for walking, camping and running, from cheap backups to bright rechargeables.
+kit_names: [head torch, headtorch, headlamp]
+intro: A head torch keeps your hands free on dark winter walks, around camp and on early or late runs. The reviews say 200 to 300 lumens is enough for walking, more for running, and that a red light mode, a comfortable stable strap, a lock and a sensible battery choice (rechargeable, or hybrid with AAA backup) matter as much as raw brightness.
+bands:
+  currency: GBP
+  edges: [50, 100]
+  edges_usd: [60, 130]
+  note: 'Bands from prices printed in the reviews, November 2026: UK prices in pounds from UK reviews, otherwise US prices in dollars from US reviews. No converted prices.'
+reviews:
+- id: advnture
+  outlet: Advnture
+  country: UK
+  title: 'The best headlamps: tested and rated for hiking, camping and running'
+  url: https://www.advnture.com/buying-guides/best-headlamp
+  published: '2024-08-27'
+  hands_on: true
+  products_listed: 11
+  checked: '2026-11-20'
+- id: outdoorsmagic
+  outlet: Outdoors Magic
+  country: UK
+  title: Best Head Torches For Hiking 2026
+  url: https://outdoorsmagic.com/article/best-headtorches-hiking/
+  published: '2026-08-12'
+  hands_on: true
+  products_listed: 10
+  checked: '2026-11-20'
+- id: t3
+  outlet: T3
+  country: US
+  title: 'Best head torch 2026: Hands-free illumination on the trail'
+  url: https://www.t3.com/features/best-head-torches
+  published: '2026-01-27'
+  hands_on: true
+  products_listed: 10
+  checked: '2026-11-20'
+- id: tgo
+  outlet: The Great Outdoors
+  country: UK
+  title: Best head torches for hiking
+  url: https://www.thegreatoutdoorsmag.com/gear-guides/best-head-torches-for-hiking/
+  published: '2024-11'
+  hands_on: true
+  products_listed: 16
+  checked: '2026-11-20'
+- id: trailrunning
+  outlet: Trail Running (Live For The Outdoors)
+  country: UK
+  title: Light up every trail this autumn with our pick of the best running head torches of 2025
+  url: https://livefortheoutdoors.com/trail-running/accessories/best-running-headtorches-reviewed
+  published: ''
+  hands_on: true
+  products_listed: 11
+  checked: '2026-11-20'
+- id: gearjunkie
+  outlet: GearJunkie
+  country: US
+  title: The 7 Best Headlamps of 2026 | GearJunkie Tested
+  url: https://gearjunkie.com/camping/best-headlamps
+  published: '2026-11-11'
+  hands_on: true
+  products_listed: 12
+  checked: '2026-11-20'
+- id: outdoorlife
+  outlet: Outdoor Life
+  country: US
+  title: The Best Headlamps for Outdoor Adventures, Tested & Reviewed
+  url: https://www.outdoorlife.com/gear/best-headlamps-2026/
+  published: '2026-08-10'
+  hands_on: true
+  products_listed: 15
+  checked: '2026-11-20'
+- id: treeline
+  outlet: Treeline Review
+  country: US
+  title: Best Headlamps of 2026 (Tested for 500+ Nights)
+  url: https://www.treelinereview.com/gearreviews/headlamps
+  published: '2026-09-30'
+  hands_on: true
+  products_listed: 9
+  checked: '2026-11-20'
+- id: cleverhiker
+  outlet: CleverHiker
+  country: US
+  title: Best Headlamps of 2026, Tested & Reviewed
+  url: https://www.cleverhiker.com/headlamps
+  published: '2026-04-14'
+  hands_on: true
+  products_listed: 14
+  checked: '2026-11-20'
+- id: switchback
+  outlet: Switchback Travel
+  country: US
+  title: Best Headlamps of 2026
+  url: https://switchbacktravel.com/best-headlamps
+  published: '2026-10-21'
+  hands_on: true
+  products_listed: 12
+  checked: '2026-11-20'
+products:
+- id: black-diamond-storm-500-r
+  name: Black Diamond Storm 500-R
+  brand: Black Diamond
+  price_gbp: 70
+  price_usd: 75
+  price_note: £65 to £70 in UK reviews; $75 to $90 in US reviews
+  best_for: [all-round, wet weather]
+  summary: 'A 500-lumen waterproof all-rounder with red, green and blue modes and a lock. Criticisms: a small button, brightness that is easy to max out by accident, and dated micro-USB charging.'
+  verdicts:
+  - review: advnture
+    label: The best headlamp all-round
+    award: top
+    rank: 1
+    for: [all-round, wet weather]
+  - review: outdoorlife
+    label: Best Overall
+    award: top
+    for: [all-round, wet weather]
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 7.7
+    scale: 10
+    for: []
+  - review: tgo
+    label: Lightest in test
+    award: named
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Black+Diamond+Storm+500-R
+- id: petzl-actik-core-450
+  name: Petzl Actik Core 450
+  brand: Petzl
+  price_gbp: 58
+  price_note: £58 in Advnture (older 450-lumen version)
+  best_for: [lightweight]
+  summary: Light at 75g with a hybrid rechargeable/AAA power system. Only weather-resistant and has no rear light.
+  verdicts:
+  - review: advnture
+    label: The best powerful lightweight headlamp
+    award: named
+    rank: 2
+    for: [lightweight]
+  buy: https://www.amazon.co.uk/s?k=Petzl+Actik+Core+450
+- id: biolite-headlamp-425
+  name: BioLite HeadLamp 425
+  brand: BioLite
+  price_gbp: 65
+  price_usd: 60
+  price_note: £59.95 to £65 in UK reviews; $60 in Outdoor Life
+  best_for: [comfort, hiking]
+  summary: Slim, light and stable with a rear safety light. Not very powerful, not waterproof and awkward to tilt.
+  verdicts:
+  - review: advnture
+    label: The best low-profile headlamp
+    award: named
+    rank: 3
+    for: [comfort]
+  - review: outdoorlife
+    label: Best for Hiking
+    award: named
+    for: [hiking]
+  - review: tgo
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=BioLite+HeadLamp+425
+- id: acebeam-h16
+  name: AceBeam H16
+  brand: AceBeam
+  price_note: Advnture prints only dollar and euro prices
+  best_for: [climbing, durability]
+  summary: Tough, impact-resistant and waterproof, with several ways to carry it and an SOS mode. Fiddly to tilt, with no flood/spot switching and no red light.
+  verdicts:
+  - review: advnture
+    label: The best tough headlamp for scrambling and climbing
+    award: named
+    rank: 4
+    for: [climbing, durability]
+  buy: https://www.amazon.co.uk/s?k=AceBeam+H16
+- id: nitecore-hc65
+  name: Nitecore HC65
+  brand: Nitecore
+  price_gbp: 77
+  price_note: £77 in Advnture
+  best_for: [wet weather]
+  summary: A 1000-lumen, IPX8 lamp built for rain. A little heavy and slightly complicated to use.
+  verdicts:
+  - review: advnture
+    label: The best headlamp for adventures in the rain
+    award: named
+    rank: 5
+    for: [wet weather]
+  buy: https://www.amazon.co.uk/s?k=Nitecore+HC65
+- id: ledlenser-mh8
+  name: Ledlenser MH8
+  brand: Ledlenser
+  price_gbp: 80
+  price_note: £80 in Advnture
+  best_for: [hiking]
+  summary: 600 lumens with a focusing beam and red, green and blue modes. Bulky at 139g and only water-resistant.
+  verdicts:
+  - review: advnture
+    label: The best headlamp for hiking expeditions
+    award: named
+    rank: 6
+    for: [hiking]
+  buy: https://www.amazon.co.uk/s?k=Ledlenser+MH8
+- id: alpkit-viper
+  name: Alpkit Viper
+  brand: Alpkit
+  price_gbp: 25
+  price_note: £25 in Advnture
+  best_for: [budget]
+  summary: Cheap, with an auto-brightness sensor and an overhead strap. Slightly heavy and AAA only.
+  verdicts:
+  - review: advnture
+    label: The best quality budget headlamp
+    award: named
+    rank: 7
+    for: [budget]
+  buy: https://www.amazon.co.uk/s?k=Alpkit+Viper
+- id: lifesystems-intensity-280
+  name: Lifesystems Intensity 280
+  brand: Lifesystems
+  price_gbp: 30
+  price_note: £30 in Advnture
+  best_for: [budget, emergencies]
+  summary: A cheap 280-lumen lamp with an SOS mode, suggested for emergencies. Rechargeable only.
+  verdicts:
+  - review: advnture
+    label: The best cheap headlamp for emergencies
+    award: named
+    rank: 8
+    for: [budget, emergencies]
+  buy: https://www.amazon.co.uk/s?k=Lifesystems+Intensity+280
+- id: decathlon-evadict-ontrail-250
+  name: Decathlon Evadict Ontrail 250
+  brand: Decathlon
+  price_gbp: 25
+  price_note: £25 in Advnture
+  best_for: [budget, running]
+  summary: Good value for road running, with long burn time and a rear red light. Small button and only IPX4.
+  verdicts:
+  - review: advnture
+    label: The best cheap headlamp for road runners
+    award: named
+    rank: 9
+    for: [budget, running]
+  buy: https://www.amazon.co.uk/s?k=Decathlon+Evadict+Ontrail+250
+- id: silva-trail-runner-free
+  name: Silva Trail Runner Free
+  brand: Silva
+  price_gbp: 77
+  price_usd: 90
+  price_note: £77 in Advnture; $90 in Outdoor Life
+  best_for: [trail running]
+  summary: Well balanced and comfortable for trail running, with a flexible battery position. The gel band can pull hair.
+  verdicts:
+  - review: advnture
+    label: The best headlamp for trail runners
+    award: named
+    rank: 10
+    for: [trail running]
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Silva+Trail+Runner+Free
+- id: knog-bilby
+  name: Knog Bilby
+  brand: Knog
+  price_gbp: 50
+  price_note: £50 in Advnture
+  best_for: [running, lightweight]
+  summary: Light at 90g with a silicone strap and intuitive controls. The removable pod can be misplaced.
+  verdicts:
+  - review: advnture
+    label: The best lightweight headlamp for runners
+    award: named
+    rank: 11
+    for: [running, lightweight]
+  buy: https://www.amazon.co.uk/s?k=Knog+Bilby
+- id: silva-free-1200-s
+  name: Silva Free 1200 S
+  brand: Silva
+  price_gbp: 150
+  price_note: About £150 in Outdoors Magic
+  best_for: [all-round, brightness]
+  summary: A very bright 1200-lumen modular lamp with a stable headband and front and rear red light. More components than some people need.
+  verdicts:
+  - review: outdoorsmagic
+    label: Best Overall Head Torch
+    award: top
+    rank: 1
+    rating: 5
+    scale: 5
+    for: [all-round, brightness]
+  buy: https://www.amazon.co.uk/s?k=Silva+Free+1200+S
+- id: petzl-actik-core-625
+  name: Petzl Actik Core (625 lumens)
+  brand: Petzl
+  price_gbp: 61.95
+  price_usd: 88
+  price_note: £61.95 in Outdoors Magic; $85 to $88 in US reviews
+  best_for: [all-round, camping]
+  summary: 'The current 625-lumen Actik Core: bright, dependable and easy to use, running on its rechargeable CORE battery or AAAs. Criticisms are price, front weight and only moderate water resistance.'
+  verdicts:
+  - review: outdoorsmagic
+    label: Our Runner-Up
+    award: named
+    rank: 2
+    rating: 4.5
+    scale: 5
+    for: [all-round]
+  - review: treeline
+    label: Best for Camping
+    award: named
+    for: [camping]
+  - review: cleverhiker
+    label: Best Well-Rounded Headlamp
+    award: named
+    rank: 6
+    rating: 4.6
+    scale: 5
+    for: [all-round]
+  - review: switchback
+    label: Best Overall Headlamp
+    award: top
+    for: [all-round]
+  buy: https://www.amazon.co.uk/s?k=Petzl+Actik+Core+625
+- id: black-diamond-distance-1500
+  name: Black Diamond Distance 1500
+  brand: Black Diamond
+  price_gbp: 180
+  price_usd: 250
+  price_note: £180 in Outdoors Magic; $200 to $250 in US reviews
+  best_for: [brightness, trail running]
+  summary: Very bright at 1500 lumens with swappable batteries and long runtime. Heavy (over 200g) and expensive.
+  verdicts:
+  - review: outdoorsmagic
+    label: Best Bright Head Torch for Brightness and High-Performance Use
+    award: named
+    rank: 3
+    rating: 4
+    scale: 5
+    for: [brightness]
+  - review: gearjunkie
+    label: Best Headlamp for Distance Running
+    award: named
+    rating: 8.3
+    scale: 10
+    for: [trail running, brightness]
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Black+Diamond+Distance+1500
+- id: silva-smini
+  name: Silva Smini
+  brand: Silva
+  price_gbp: 34.95
+  price_note: £34.95 in Outdoors Magic
+  best_for: [ultralight, running]
+  summary: Tiny and very light (about 53g) with a red mode, liked by hikers and runners. Beam reach is short, charging is slow and the rear light comes only with some versions.
+  verdicts:
+  - review: outdoorsmagic
+    label: Best Head Torch for Ultralight Hikers
+    award: named
+    rank: 4
+    rating: 4
+    scale: 5
+    for: [ultralight]
+  - review: t3
+    label: Best lightweight head torch
+    award: named
+    rank: 2
+    for: [ultralight]
+  - review: trailrunning
+    label: ''
+    award: listed
+    for: [running]
+  buy: https://www.amazon.co.uk/s?k=Silva+Smini
+- id: black-diamond-spot-450
+  name: Black Diamond Spot 450
+  brand: Black Diamond
+  price_gbp: 45
+  price_note: £45 in Outdoors Magic (rechargeable battery sold separately)
+  best_for: [all-round, value]
+  summary: A versatile, IPX7 everyday lamp at a good price. The front-mounted battery adds weight at the front.
+  verdicts:
+  - review: outdoorsmagic
+    label: Best Headlamp for Versatility
+    award: named
+    rank: 5
+    rating: 4
+    scale: 5
+    for: [all-round, value]
+  buy: https://www.amazon.co.uk/s?k=Black+Diamond+Spot+450
+- id: ledlenser-h8r-25th-anniversary-edition
+  name: Ledlenser H8R 25th Anniversary Edition
+  brand: Ledlenser
+  price_gbp: 109.95
+  price_note: £109.95 in Outdoors Magic
+  best_for: [battery life]
+  summary: Comes with two batteries and a 25-year warranty. Heavy at 158g and only IP54.
+  verdicts:
+  - review: outdoorsmagic
+    label: Best Head Torch for Battery Life
+    award: named
+    rank: 6
+    rating: 4
+    scale: 5
+    for: [battery life]
+  buy: https://www.amazon.co.uk/s?k=Ledlenser+H8R+25th+Anniversary+Edition
+- id: princeton-tec-remix-450
+  name: Princeton Tec Remix 450
+  brand: Princeton Tec
+  price_gbp: 45
+  price_note: £45 in Outdoors Magic
+  best_for: [battery life]
+  summary: Long run time on AAA batteries and simple one-button operation. Runs only on AAA alkaline batteries.
+  verdicts:
+  - review: outdoorsmagic
+    label: The best head torch for battery life in our tests
+    award: named
+    rank: 7
+    rating: 4
+    scale: 5
+    for: [battery life]
+  buy: https://www.amazon.co.uk/s?k=Princeton+Tec+Remix+450
+- id: petzl-iko-core
+  name: Petzl Iko Core
+  brand: Petzl
+  price_gbp: 71.95
+  price_note: £71.95 to £76.49 in UK reviews
+  best_for: [running, all-round, comfort]
+  summary: 'A light, comfortable 500-lumen lamp that can also run on AAA batteries, picked for comfort and running. Criticisms: an awkward button and battery cover, short life at full power and no rear light.'
+  verdicts:
+  - review: outdoorsmagic
+    label: ''
+    award: listed
+    rank: 8
+    rating: 4
+    scale: 5
+    for: []
+  - review: t3
+    label: Best head torch for running
+    award: named
+    rank: 4
+    for: [running]
+  - review: tgo
+    label: Chris Townsend's Best in Test
+    award: top
+    for: [all-round, comfort]
+  - review: trailrunning
+    label: Recommended
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Petzl+Iko+Core
+- id: silva-terra-scout-xt
+  name: Silva Terra Scout XT
+  brand: Silva
+  price_gbp: 20
+  price_note: £20 in Outdoors Magic
+  best_for: [sustainability, budget]
+  summary: A cheap lamp made from recycled plastic with a hemp headband and a rechargeable option. Not aimed at technical use.
+  verdicts:
+  - review: outdoorsmagic
+    label: ''
+    award: listed
+    rank: 9
+    rating: 4
+    scale: 5
+    for: [sustainability, budget]
+  buy: https://www.amazon.co.uk/s?k=Silva+Terra+Scout+XT
+- id: nathan-neutron-fire-rx
+  name: Nathan Neutron Fire RX
+  brand: Nathan
+  price_gbp: 80
+  price_note: £80 in Outdoors Magic
+  best_for: []
+  summary: Light, compact and reflective for runners, but not a standout performer.
+  verdicts:
+  - review: outdoorsmagic
+    label: ''
+    award: listed
+    rank: 10
+    rating: 3
+    scale: 5
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Nathan+Neutron+Fire+RX
+- id: fenix-hm55r-renegade
+  name: Fenix HM55R Renegade
+  brand: Fenix
+  price_usd: 75
+  price_note: $75 in GearJunkie
+  best_for: [all-round, durability]
+  summary: Bright and durable with an adjustable red light. Slightly heavier than rivals and the interface takes learning.
+  verdicts:
+  - review: gearjunkie
+    label: Best Overall Headlamp
+    award: top
+    rating: 9.1
+    scale: 10
+    for: [all-round, durability]
+  buy: https://www.amazon.co.uk/s?k=Fenix+HM55R+Renegade
+- id: petzl-tikkina
+  name: Petzl Tikkina
+  brand: Petzl
+  price_usd: 20
+  price_note: $20 in US reviews
+  best_for: [budget, value]
+  summary: 'The reviews'' usual budget pick: cheap, light, simple and reliable. Low output, few features, no red light and runs on disposable batteries unless you add a CORE battery.'
+  verdicts:
+  - review: gearjunkie
+    label: Best Budget Headlamp
+    award: named
+    rating: 7.2
+    scale: 10
+    for: [budget]
+  - review: treeline
+    label: Best Affordable
+    award: named
+    for: [budget]
+  - review: cleverhiker
+    label: Best Budget Headlamp
+    award: named
+    rank: 11
+    rating: 4.2
+    scale: 5
+    for: [budget]
+  - review: switchback
+    label: Impressive Value
+    award: named
+    for: [value]
+  buy: https://www.amazon.co.uk/s?k=Petzl+Tikkina
+- id: biolite-range-500
+  name: BioLite Range 500
+  brand: BioLite
+  price_usd: 70
+  price_note: $70 in US reviews
+  best_for: [comfort, all-round, wet weather]
+  summary: Comfortable and stable, IP67 and quick to charge over USB-C. The battery drains quickly on high.
+  verdicts:
+  - review: gearjunkie
+    label: Most Comfortable High-Performance Headlamp
+    award: named
+    rating: 8.3
+    scale: 10
+    for: [comfort]
+  - review: cleverhiker
+    label: Best Headlamp Overall Runner-Up
+    award: named
+    rank: 2
+    rating: 4.8
+    scale: 5
+    for: [all-round, comfort]
+  - review: switchback
+    label: Comfortable Weather-Resistance
+    award: named
+    for: [comfort, wet weather]
+  buy: https://www.amazon.co.uk/s?k=BioLite+Range+500
+- id: black-diamond-spot-400-r
+  name: Black Diamond Spot 400-R
+  brand: Black Diamond
+  price_usd: 80
+  price_note: $70 to $80 in US reviews
+  best_for: [all-round]
+  summary: 'The rechargeable Spot: light, versatile, intuitive and long-burning. 400 lumens is not the brightest and it is harsh on full power.'
+  verdicts:
+  - review: gearjunkie
+    label: Best Time-Tested Headlamp
+    award: named
+    rating: 8.1
+    scale: 10
+    for: [all-round]
+  - review: cleverhiker
+    label: Best Headlamp Overall
+    award: top
+    rank: 1
+    rating: 4.9
+    scale: 5
+    for: [all-round]
+  buy: https://www.amazon.co.uk/s?k=Black+Diamond+Spot+400-R
+- id: fenix-hm65r-v2
+  name: Fenix HM65R V2
+  brand: Fenix
+  price_usd: 100
+  price_note: $100 in GearJunkie
+  best_for: [brightness]
+  summary: Very bright and durable with an excellent red light. Heavier, with low colour rendering.
+  verdicts:
+  - review: gearjunkie
+    label: Brightest headlamp
+    award: named
+    rating: 9.0
+    scale: 10
+    for: [brightness]
+  buy: https://www.amazon.co.uk/s?k=Fenix+HM65R+V2
+- id: coast-wph30r
+  name: Coast WPH30R
+  brand: Coast
+  price_usd: 50
+  price_note: $50 in GearJunkie
+  best_for: [durability, wet weather]
+  summary: IP68, with a glove-friendly single button and good throw. Heavy, with only five modes.
+  verdicts:
+  - review: gearjunkie
+    label: Most Durable Headlamp
+    award: named
+    rating: 8.3
+    scale: 10
+    for: [durability, wet weather]
+  buy: https://www.amazon.co.uk/s?k=Coast+WPH30R
+- id: coast-wph10r
+  name: Coast WPH10R
+  brand: Coast
+  price_usd: 40
+  price_note: $40 in GearJunkie
+  best_for: []
+  summary: Dual mounting options and a strong red light. Small parts are easy to lose.
+  verdicts:
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 8.2
+    scale: 10
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Coast+WPH10R
+- id: biolite-dash-450
+  name: BioLite Dash 450
+  brand: BioLite
+  price_usd: 70
+  price_note: $70 in US reviews
+  best_for: [running]
+  summary: Comfortable and stable for running, with a rear safety light and red flood. Slightly bulky, no spotlight and a small button that is hard to press with gloves.
+  verdicts:
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 8.1
+    scale: 10
+    for: [running]
+  - review: treeline
+    label: Best for Running
+    award: named
+    for: [running]
+  buy: https://www.amazon.co.uk/s?k=BioLite+Dash+450
+- id: petzl-swift-rl
+  name: Petzl Swift RL
+  brand: Petzl
+  price_gbp: 115
+  price_usd: 135
+  price_note: £115 in The Great Outdoors; $135 to $140 in US reviews
+  best_for: [mountaineering, reactive lighting]
+  summary: Compact and bright, with reactive lighting that saves battery. Expensive, with a small button and a lock that is easy to release by accident.
+  verdicts:
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 8.2
+    scale: 10
+    for: []
+  - review: outdoorlife
+    label: Best for Mountaineering
+    award: named
+    for: [mountaineering]
+  - review: switchback
+    label: Top-Shelf Performance
+    award: named
+    for: [reactive lighting]
+  - review: tgo
+    label: Best for reactive lighting
+    award: named
+    for: [reactive lighting]
+  buy: https://www.amazon.co.uk/s?k=Petzl+Swift+RL
+- id: black-diamond-distance-lt-1100
+  name: Black Diamond Distance LT 1100
+  brand: Black Diamond
+  price_gbp: 100
+  price_usd: 150
+  price_note: £100 in The Great Outdoors; $150 in US reviews
+  best_for: [trail running, brightness, climbing, wet weather]
+  summary: A bright, stable, waterproof lamp with red, green and blue modes and swappable batteries, praised for running, climbing and wet weather. Expensive, chunky to some and complex at first.
+  verdicts:
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 7.8
+    scale: 10
+    for: []
+  - review: treeline
+    label: Best for Trail Running
+    award: named
+    for: [trail running]
+  - review: cleverhiker
+    label: Best Ultrabright Headlamp
+    award: named
+    rank: 8
+    rating: 4.5
+    scale: 5
+    for: [brightness]
+  - review: t3
+    label: Best head torch for climbing
+    award: named
+    rank: 6
+    for: [climbing]
+  - review: tgo
+    label: Best for wet weather
+    award: named
+    for: [wet weather]
+  buy: https://www.amazon.co.uk/s?k=Black+Diamond+Distance+LT+1100
+- id: nitecore-nu25-ul
+  name: Nitecore NU25 UL
+  brand: Nitecore
+  price_usd: 37
+  price_note: $37 in US reviews
+  best_for: [value, ultralight]
+  summary: An ultralight, simple and cheap rechargeable with red modes. Not as durable as some, and the thin strap is less comfortable than a wider band.
+  verdicts:
+  - review: outdoorlife
+    label: Best Value
+    award: named
+    for: [value]
+  - review: cleverhiker
+    label: Best Ultralight Headlamp
+    award: named
+    rank: 7
+    rating: 4.6
+    scale: 5
+    for: [ultralight]
+  - review: switchback
+    label: Best Ultralight Headlamp
+    award: named
+    for: [ultralight]
+  buy: https://www.amazon.co.uk/s?k=Nitecore+NU25+UL
+- id: petzl-nao-rl
+  name: Petzl NAO RL
+  brand: Petzl
+  price_gbp: 150
+  price_usd: 200
+  price_note: £150 in The Great Outdoors; $180 to $200 in US reviews
+  best_for: [trail running, brightness, running]
+  summary: Very bright with reactive lighting and plenty of fit adjustment; Trail Running's Best in Test. Expensive and heavy for some, with only a rear red light.
+  verdicts:
+  - review: outdoorlife
+    label: Best for Trail Running
+    award: named
+    for: [trail running]
+  - review: treeline
+    label: Best for Ultrarunning
+    award: named
+    for: [trail running]
+  - review: switchback
+    label: Best Bright Headlamp for High-Performance Use
+    award: named
+    for: [brightness]
+  - review: tgo
+    label: Best light-to-weight ratio
+    award: named
+    for: [brightness]
+  - review: trailrunning
+    label: Best in Test
+    award: top
+    for: [running, trail running]
+  buy: https://www.amazon.co.uk/s?k=Petzl+NAO+RL
+- id: petzl-bindi
+  name: Petzl Bindi
+  brand: Petzl
+  price_usd: 50
+  price_note: $50 in Outdoor Life
+  best_for: [ultralight]
+  summary: Compact, light and easy to use. Modest output and a subtle red light.
+  verdicts:
+  - review: outdoorlife
+    label: Most Packable
+    award: named
+    for: [ultralight]
+  buy: https://www.amazon.co.uk/s?k=Petzl+Bindi
+- id: petzl-aria-2
+  name: Petzl Aria 2
+  brand: Petzl
+  price_usd: 60
+  price_note: $60 in Outdoor Life
+  best_for: [camping]
+  summary: Soft, not-blinding light with red, green and blue modes and a choice of rechargeable or AAA batteries. Not very bright and the housing feels cheap.
+  verdicts:
+  - review: outdoorlife
+    label: Best for Camping
+    award: named
+    for: [camping]
+  buy: https://www.amazon.co.uk/s?k=Petzl+Aria+2
+- id: biolite-headlamp-800-pro
+  name: BioLite HeadLamp 800 Pro
+  brand: BioLite
+  price_usd: 100
+  price_note: $100 in Outdoor Life
+  best_for: [climbing]
+  summary: Strong close-range light, stable when running and can run from an external battery. Weaker at distance.
+  verdicts:
+  - review: outdoorlife
+    label: Best for Climbing
+    award: named
+    for: [climbing]
+  buy: https://www.amazon.co.uk/s?k=BioLite+HeadLamp+800+Pro
+- id: coast-xph34r
+  name: Coast XPH34R
+  brand: Coast
+  price_usd: 90
+  price_note: $90 in Outdoor Life
+  best_for: [brightness]
+  summary: A wide, very bright beam with a hybrid battery and magnetic mount. Bulky.
+  verdicts:
+  - review: outdoorlife
+    label: Best 2,000 Lumen
+    award: named
+    for: [brightness]
+  buy: https://www.amazon.co.uk/s?k=Coast+XPH34R
+- id: fenix-hp30r-v2
+  name: Fenix HP30R V2.0
+  brand: Fenix
+  price_usd: 220
+  price_note: $220 in Outdoor Life
+  best_for: [brightness]
+  summary: Very bright. Heavy, and gets hot in turbo mode.
+  verdicts:
+  - review: outdoorlife
+    label: Best Bright Headlamp
+    award: named
+    for: [brightness]
+  buy: https://www.amazon.co.uk/s?k=Fenix+HP30R+V2.0
+- id: coast-rl35r
+  name: Coast RL35R
+  brand: Coast
+  price_usd: 100
+  price_note: $100 in Outdoor Life
+  best_for: [voice control]
+  summary: Hands-free voice control. The first to run flat in the battery test.
+  verdicts:
+  - review: outdoorlife
+    label: Best Voice Control
+    award: named
+    for: [voice control]
+  buy: https://www.amazon.co.uk/s?k=Coast+RL35R
+- id: nite-ize-radiant-rh2
+  name: Nite Ize Radiant RH2
+  brand: Nite Ize
+  price_usd: 50
+  price_note: $50 in Outdoor Life
+  best_for: []
+  summary: Waterproof with a hybrid battery. Often turns on by accident and wastes battery, and no charging cable is included.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Nite+Ize+Radiant+RH2
+- id: silva-explore-4
+  name: Silva Explore 4
+  brand: Silva
+  price_usd: 50
+  price_note: $50 in Outdoor Life
+  best_for: []
+  summary: Long battery life, a 10-lumen low mode for reading and a removable wide band. Turns on at full brightness and the gel band pulls hair.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Silva+Explore+4
+- id: biolite-range-400
+  name: BioLite Range 400
+  brand: BioLite
+  price_usd: 60
+  price_note: $60 in Treeline Review
+  best_for: [all-round, battery life]
+  summary: Long battery life, fast USB-C charging and a comfortable fit. No white floodlight.
+  verdicts:
+  - review: treeline
+    label: Best Overall
+    award: top
+    for: [all-round, battery life]
+  buy: https://www.amazon.co.uk/s?k=BioLite+Range+400
+- id: black-diamond-spot-400
+  name: Black Diamond Spot 400
+  brand: Black Diamond
+  price_usd: 60
+  price_note: $60 in US reviews
+  best_for: [AAA batteries, value]
+  summary: 'The AAA-powered Spot: good value, waterproof, long-burning and easy to use. Heavier than rechargeables, with a harsh spot beam.'
+  verdicts:
+  - review: treeline
+    label: Best Battery-Powered Headlamp
+    award: named
+    for: [AAA batteries]
+  - review: cleverhiker
+    label: Best Value Headlamp
+    award: named
+    rank: 9
+    rating: 4.4
+    scale: 5
+    for: [value]
+  - review: switchback
+    label: A Close Second (That's Cheaper and Slimmer)
+    award: named
+    for: [value]
+  buy: https://www.amazon.co.uk/s?k=Black+Diamond+Spot+400
+- id: petzl-swift-lt
+  name: Petzl Swift LT
+  brand: Petzl
+  price_usd: 55
+  price_note: $55 in US reviews
+  best_for: [backpacking, running]
+  summary: Very light, simple and durable with an adjustable headband. Not the brightest and slow to charge.
+  verdicts:
+  - review: treeline
+    label: Best Backpacking
+    award: named
+    for: [backpacking]
+  - review: cleverhiker
+    label: Best Headlamp for Runners
+    award: named
+    rank: 5
+    rating: 4.6
+    scale: 5
+    for: [running]
+  buy: https://www.amazon.co.uk/s?k=Petzl+Swift+LT
+- id: nitecore-nu20-classic
+  name: Nitecore NU20 Classic
+  brand: Nitecore
+  price_usd: 25
+  price_note: $25 in Treeline Review
+  best_for: [ultralight, budget]
+  summary: Very light and cheap. Short run time on high and an uncomfortable headband.
+  verdicts:
+  - review: treeline
+    label: Best Ultralight
+    award: named
+    for: [ultralight, budget]
+  buy: https://www.amazon.co.uk/s?k=Nitecore+NU20+Classic
+- id: nitecore-nu27
+  name: Nitecore NU27
+  brand: Nitecore
+  price_usd: 45
+  price_note: $45 in CleverHiker
+  best_for: [value]
+  summary: Feature-rich for the price with colour temperature options and red modes. No memory and a weak flood.
+  verdicts:
+  - review: cleverhiker
+    label: Best Feature-Rich Headlamp
+    award: named
+    rank: 3
+    rating: 4.7
+    scale: 5
+    for: [value]
+  buy: https://www.amazon.co.uk/s?k=Nitecore+NU27
+- id: coast-fl97r
+  name: Coast FL97R
+  brand: Coast
+  price_usd: 60
+  price_note: $60 to $66 in CleverHiker
+  best_for: [voice control]
+  summary: Very bright with voice activation. Heavy, bulky and short burn time on low.
+  verdicts:
+  - review: cleverhiker
+    label: Best Voice-Activated Headlamp
+    award: named
+    rank: 4
+    rating: 4.7
+    scale: 5
+    for: [voice control]
+  buy: https://www.amazon.co.uk/s?k=Coast+FL97R
+- id: petzl-actik
+  name: Petzl Actik
+  brand: Petzl
+  price_usd: 65
+  price_note: $65 in CleverHiker
+  best_for: [battery life]
+  summary: Bright (450 lumens) with long burn time. Not fully waterproof and pricey for its features.
+  verdicts:
+  - review: cleverhiker
+    label: Bright Headlamp with Good Battery Life
+    award: named
+    rank: 10
+    rating: 4.2
+    scale: 5
+    for: [battery life]
+  buy: https://www.amazon.co.uk/s?k=Petzl+Actik
+- id: ledlenser-hf6r-signature
+  name: Ledlenser HF6R Signature
+  brand: Ledlenser
+  price_usd: 90
+  price_note: $90 in CleverHiker
+  best_for: [hunting and fishing]
+  summary: Very bright and durable with red, green and blue modes. Heavy, with a proprietary cable.
+  verdicts:
+  - review: cleverhiker
+    label: Best Headlamp for Hunting & Fishing
+    award: named
+    rank: 12
+    rating: 4.1
+    scale: 5
+    for: [hunting and fishing]
+  buy: https://www.amazon.co.uk/s?k=Ledlenser+HF6R+Signature
+- id: fenix-hm50r-v2
+  name: Fenix HM50R V2.0
+  brand: Fenix
+  price_usd: 60
+  price_note: $60 in US reviews
+  best_for: [cold weather, durability]
+  summary: Rugged, IP68 and good in the cold. Turbo mode drains the battery quickly.
+  verdicts:
+  - review: cleverhiker
+    label: Headlamp that Performs Well in the Cold
+    award: named
+    rank: 13
+    rating: 4.0
+    scale: 5
+    for: [cold weather]
+  - review: switchback
+    label: Bombproof Durability
+    award: named
+    for: [durability]
+  buy: https://www.amazon.co.uk/s?k=Fenix+HM50R+V2.0
+- id: petzl-tikkid
+  name: Petzl Tikkid
+  brand: Petzl
+  price_usd: 27
+  price_note: $27 in CleverHiker
+  best_for: [kids]
+  summary: Kid-friendly with long burn time. Not fully waterproof and no red light.
+  verdicts:
+  - review: cleverhiker
+    label: Best Headlamp for Kids
+    award: named
+    rank: 14
+    rating: 3.8
+    scale: 5
+    for: [kids]
+  buy: https://www.amazon.co.uk/s?k=Petzl+Tikkid
+- id: black-diamond-astro-300
+  name: Black Diamond Astro 300
+  brand: Black Diamond
+  price_usd: 25
+  price_note: $25 in Switchback Travel
+  best_for: [budget]
+  summary: Strong value and does the job for little money. Only IPX4, with few light options and no red light.
+  verdicts:
+  - review: switchback
+    label: Best Budget Headlamp
+    award: named
+    for: [budget]
+  buy: https://www.amazon.co.uk/s?k=Black+Diamond+Astro+300
+- id: black-diamond-sprinter-500
+  name: Black Diamond Sprinter 500
+  brand: Black Diamond
+  price_usd: 100
+  price_note: $100 in Switchback Travel
+  best_for: [running]
+  summary: Compact front lamp with a flashing red rear light for running. Relatively heavy, with a bulky battery pack and no red light mode for camp.
+  verdicts:
+  - review: switchback
+    label: Best Headlamp for Running
+    award: named
+    for: [running]
+  buy: https://www.amazon.co.uk/s?k=Black+Diamond+Sprinter+500
+- id: coast-fl75r
+  name: Coast FL75R
+  brand: Coast
+  price_usd: 66
+  price_note: $66 in Switchback Travel
+  best_for: [brightness]
+  summary: A long beam at a low price for the output. Short battery life and dated looks.
+  verdicts:
+  - review: switchback
+    label: Incredible Brightness for Cheap
+    award: named
+    for: [brightness]
+  buy: https://www.amazon.co.uk/s?k=Coast+FL75R
+- id: nitecore-hc33
+  name: Nitecore HC33
+  brand: Nitecore
+  price_usd: 65
+  price_note: $65 in Switchback Travel
+  best_for: [brightness]
+  summary: Very bright and feature-packed, doubling as a handheld light. Overkill for most, and not the most user-friendly or low-profile.
+  verdicts:
+  - review: switchback
+    label: Premium Brightness
+    award: named
+    for: [brightness]
+  buy: https://www.amazon.co.uk/s?k=Nitecore+HC33
+- id: petzl-swift-rl-2
+  name: Petzl Swift RL 2
+  brand: Petzl
+  price_note: No price printed
+  best_for: [all-round]
+  summary: Strong output and efficient lighting modes. The charging port is exposed.
+  verdicts:
+  - review: t3
+    label: Best head torch overall
+    award: top
+    rank: 1
+    for: [all-round]
+  buy: https://www.amazon.co.uk/s?k=Petzl+Swift+RL+2
+- id: lifesystems-intensity-300
+  name: Lifesystems Intensity 300
+  brand: Lifesystems
+  price_gbp: 30
+  price_note: £30 in The Great Outdoors
+  best_for: [budget]
+  summary: Cheap with a big button and an adjustable beam. No lock, no rear light and short battery life.
+  verdicts:
+  - review: t3
+    label: Best budget head torch
+    award: named
+    rank: 3
+    for: [budget]
+  - review: tgo
+    label: ''
+    award: listed
+    for: [budget]
+  buy: https://www.amazon.co.uk/s?k=Lifesystems+Intensity+300
+- id: biolite-headlamp-750
+  name: BioLite HeadLamp 750
+  brand: BioLite
+  price_note: No pound or dollar price printed by a review of its own country
+  best_for: [battery life]
+  summary: Bright, comfortable and long-running. Rechargeable only.
+  verdicts:
+  - review: t3
+    label: Best head torch for battery life
+    award: named
+    rank: 5
+    for: [battery life]
+  buy: https://www.amazon.co.uk/s?k=BioLite+HeadLamp+750
+- id: ledlenser-hf8r-signature
+  name: Ledlenser HF8R Signature
+  brand: Ledlenser
+  price_note: No price printed
+  best_for: [caving]
+  summary: Adjustable focus with app control and red, green and blue modes. Big and heavy.
+  verdicts:
+  - review: t3
+    label: Best head lamp for caving
+    award: named
+    rank: 7
+    for: [caving]
+  buy: https://www.amazon.co.uk/s?k=Ledlenser+HF8R+Signature
+- id: silva-trail-runner-free-2-hybrid
+  name: Silva Trail Runner Free 2 Hybrid
+  brand: Silva
+  price_note: No price printed
+  best_for: [trail running]
+  summary: Petite and light with a spare battery cell, which adds weight.
+  verdicts:
+  - review: t3
+    label: Best head lamp for trail running
+    award: named
+    for: [trail running]
+  buy: https://www.amazon.co.uk/s?k=Silva+Trail+Runner+Free+2+Hybrid
+- id: acebeam-h35
+  name: Acebeam H35
+  brand: Acebeam
+  price_note: No price printed
+  best_for: []
+  summary: Very bright and durable but not the lightest.
+  verdicts:
+  - review: t3
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Acebeam+H35
+- id: nebo-curvbeam-600-flex
+  name: Nebo CurvBeam 600 Flex
+  brand: Nebo
+  price_gbp: 39.99
+  price_note: £39.99 in The Great Outdoors
+  best_for: []
+  summary: A wide, even flood and spot design at a low price. Short battery life and the lamps cannot be tilted.
+  verdicts:
+  - review: t3
+    label: ''
+    award: listed
+    for: []
+  - review: tgo
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Nebo+CurvBeam+600+Flex
+- id: silva-discover-hybrid
+  name: Silva Discover Hybrid
+  brand: Silva
+  price_gbp: 59.99
+  price_note: £59.99 in The Great Outdoors
+  best_for: [value]
+  summary: An excellent headband, easy operation and red and orange modes. No burst mode.
+  verdicts:
+  - review: tgo
+    label: James Roddie's Best in Test
+    award: top
+    for: [value]
+  buy: https://www.amazon.co.uk/s?k=Silva+Discover+Hybrid
+- id: biolite-range-300
+  name: BioLite Range 300
+  brand: BioLite
+  price_gbp: 42.99
+  price_note: £42.99 to £49.99 in The Great Outdoors
+  best_for: [ultralight]
+  summary: Extremely light, with a climate label certificate. Not as bright as others.
+  verdicts:
+  - review: tgo
+    label: '''Weightless'' design'
+    award: named
+    for: [ultralight]
+  buy: https://www.amazon.co.uk/s?k=BioLite+Range+300
+- id: ledlenser-hf6r-core
+  name: Ledlenser HF6R Core
+  brand: Ledlenser
+  price_gbp: 68
+  price_note: £68 in The Great Outdoors
+  best_for: [battery life]
+  summary: A control wheel, seamless spot-to-flood and good battery life. Heavy, with a proprietary charger.
+  verdicts:
+  - review: tgo
+    label: Best low power mode
+    award: named
+    for: [battery life]
+  buy: https://www.amazon.co.uk/s?k=Ledlenser+HF6R+Core
+- id: silva-free-1200xs
+  name: Silva Free 1200XS
+  brand: Silva
+  price_gbp: 140
+  price_note: £140 in The Great Outdoors
+  best_for: []
+  summary: Modular with an integrated cable. Short battery life, heavy and expensive.
+  verdicts:
+  - review: tgo
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Silva+Free+1200XS
+- id: nitecore-hc65-uhe
+  name: Nitecore HC65 UHE
+  brand: Nitecore
+  price_gbp: 94
+  price_note: £94 in The Great Outdoors
+  best_for: []
+  summary: Very powerful with good battery life on low. Heavy, with a small button.
+  verdicts:
+  - review: tgo
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Nitecore+HC65+UHE
+- id: ledlenser-hf8r-core
+  name: Ledlenser HF8R Core
+  brand: Ledlenser
+  price_gbp: 120
+  price_note: £120 in The Great Outdoors
+  best_for: []
+  summary: Adaptive light and good battery life. Heavy, expensive and uses a proprietary charger.
+  verdicts:
+  - review: tgo
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Ledlenser+HF8R+Core
+- id: princeton-tec-remix
+  name: Princeton Tec Remix
+  brand: Princeton Tec
+  price_gbp: 60
+  price_note: £60 in The Great Outdoors
+  best_for: [AAA batteries]
+  summary: Light, low cost and runs on AAA batteries with two red levels. Stiff bracket, no lock and no flood beam.
+  verdicts:
+  - review: tgo
+    label: ''
+    award: listed
+    for: [AAA batteries]
+  buy: https://www.amazon.co.uk/s?k=Princeton+Tec+Remix
+- id: ledlenser-neo-3
+  name: Ledlenser NEO 3
+  brand: Ledlenser
+  price_gbp: 36.95
+  price_note: £36.95 in The Great Outdoors
+  best_for: []
+  summary: Cheap with a flashing rear safety light. Not rechargeable, with a halo at the beam edge.
+  verdicts:
+  - review: tgo
+    label: ''
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Ledlenser+NEO+3
+- id: ledlenser-neo5r
+  name: Ledlenser NEO5R
+  brand: Ledlenser
+  price_gbp: 87.18
+  price_note: £87.18 in Trail Running
+  best_for: [value, running]
+  summary: Light, comfortable and affordable for running, with a decent beam. Not as bright as some rivals.
+  verdicts:
+  - review: trailrunning
+    label: Best Value
+    award: named
+    for: [value, running]
+  buy: https://www.amazon.co.uk/s?k=Ledlenser+NEO5R
+- id: silva-terra-scout-h
+  name: Silva Terra Scout H
+  brand: Silva
+  price_note: No price printed
+  best_for: [sustainability]
+  summary: Made from sustainable materials, light and affordable. Less bright, with fewer beam options.
+  verdicts:
+  - review: trailrunning
+    label: Best for the environment
+    award: named
+    for: [sustainability]
+  buy: https://www.amazon.co.uk/s?k=Silva+Terra+Scout+H
+- id: alpkit-qark
+  name: Alpkit Qark
+  brand: Alpkit
+  price_gbp: 39.99
+  price_note: £39.99 in Trail Running
+  best_for: [value]
+  summary: Good value, light and comfortable, running on AAA or a rechargeable pack. Not as tough as some and no battery level indicator.
+  verdicts:
+  - review: trailrunning
+    label: Recommended
+    award: listed
+    for: [value]
+  buy: https://www.amazon.co.uk/s?k=Alpkit+Qark
+- id: silva-trail-runner-free-h
+  name: Silva Trail Runner Free H
+  brand: Silva
+  price_gbp: 58.99
+  price_note: £58.99 printed in Trail Running (RRP £99)
+  best_for: [comfort]
+  summary: Adaptive, light and comfortable with a well-designed cable. Pricey for its lumens at full price.
+  verdicts:
+  - review: trailrunning
+    label: Best for comfort
+    award: named
+    for: [comfort]
+  buy: https://www.amazon.co.uk/s?k=Silva+Trail+Runner+Free+H
+- id: decathlon-ontrail
+  name: Decathlon Ontrail
+  brand: Decathlon
+  price_note: No price printed
+  best_for: []
+  summary: Simple to use, with long burn time and enough brightness. Charges by micro-USB.
+  verdicts:
+  - review: trailrunning
+    label: Recommended
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Decathlon+Ontrail
+- id: biolite-headlamp-325
+  name: BioLite HeadLamp 325
+  brand: BioLite
+  price_note: No price printed
+  best_for: [ultralight]
+  summary: Very light at 50g and affordable. Less durable and less powerful than others.
+  verdicts:
+  - review: trailrunning
+    label: Best lightweight option
+    award: named
+    for: [ultralight]
+  buy: https://www.amazon.co.uk/s?k=BioLite+HeadLamp+325
+- id: ledlenser-neo9r
+  name: Ledlenser NEO9R
+  brand: Ledlenser
+  price_note: No price printed
+  best_for: []
+  summary: Several beam strengths, long battery life and good value. Heavy at 199g, with one beam pattern and nothing between 200 and 600 lumens.
+  verdicts:
+  - review: trailrunning
+    label: Recommended
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Ledlenser+NEO9R
+- id: silva-trail-speed-5r
+  name: Silva Trail Speed 5R
+  brand: Silva
+  price_note: No price printed
+  best_for: []
+  summary: Comfortable with a strong, bright beam and a powerful battery. A little heavy at about 171g and on the pricier side.
+  verdicts:
+  - review: trailrunning
+    label: Recommended
+    award: listed
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Silva+Trail+Speed+5R
+agree:
+- text: 'A red light mode is worth having: it keeps your night vision and avoids disturbing others around camp or in a bothy.'
+  reviews: [tgo, advnture, outdoorsmagic, switchback]
+- text: Around 200 to 300 lumens is plenty for walking and camp; night running, technical trails and climbing call for more, roughly 300 to 600 lumens or above.
+  reviews: [tgo, outdoorsmagic, switchback, outdoorlife, t3, advnture, gearjunkie, trailrunning]
+- text: Full brightness drains batteries fast, so use the lowest setting that works and check burn times on low and high.
+  reviews: [tgo, switchback, cleverhiker, gearjunkie]
+- text: Hybrid lamps that also take AAA or AA batteries, or carrying spares or a power bank, guard against running out on long outings.
+  reviews: [advnture, tgo, trailrunning]
+- text: 'Check the IP (water resistance) rating: many lamps are only splash- or weather-resistant and may not suit prolonged heavy rain.'
+  reviews: [advnture, outdoorsmagic, trailrunning]
+- text: Buttons you can work with gloves on, and a lock so the lamp does not switch itself on in your pack, matter as much as brightness.
+  reviews: [gearjunkie, outdoorsmagic, treeline, tgo]
+caution: 'Carry spare batteries, a power bank or a second light on longer winter walks, and charge before you go: some rechargeable packs need topping up every few months even when unused.'
