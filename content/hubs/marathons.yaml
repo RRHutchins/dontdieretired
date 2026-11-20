@@ -117,9 +117,9 @@ events:
   format: single
   month: [9]
   entry: [ballot]
-  entry_note: Places are drawn by lottery, with registration in October and early November and results in early December. Fast runners with a qualifying time also go into the lottery. Members of the race's Jubilee Club have guaranteed entry.
+  entry_note: Places are drawn by lottery, with registration in October and early November and results in early December. Fast runners with a qualifying time send proof instead, which the organiser checks; a place is not guaranteed, and only runners whose proof is not accepted go into the general lottery. Members of the race's Jubilee Club have guaranteed entry.
   note: The 2027 race, the first as the GENERALI BERLIN-MARATHON, is on Sunday 26 September 2027, starting on Straße des 17. Juni by the Brandenburg Gate.
-  link: {label: 'Berlin Marathon: the lottery', url: 'https://www.bmw-berlin-marathon.com/en/registration/lottery', checked: '2026-11-19'}
+  link: {label: 'Berlin Marathon: registration and lottery', url: 'https://www.generali-berlin-marathon.com/en/registration/run', checked: '2026-11-20'}
 - id: chicago-marathon
   name: Chicago Marathon
   series: wmm
@@ -147,7 +147,7 @@ events:
   format: single
   month: [11]
   entry: [ballot, qualifier, charity]
-  entry_note: A non-guaranteed drawing (for 2027, expected early in 2027), with a second-chance drawing for New York Road Runners members. Guaranteed entry comes through time qualifiers, charity places, and the members' 9+1 programme (nine NYRR races and one volunteer shift in a year), which from 2027 needs a place drawn in its own free member drawing.
+  entry_note: A non-guaranteed drawing (for 2027, expected early in 2027), with a second-chance drawing for New York Road Runners members. Guaranteed entry comes through time qualifiers, charity places, and the members' 9+1 programme (nine NYRR races and one volunteer shift in a year), which now also needs a place drawn in its own free member drawing (the first ran in autumn 2026, for members doing 9+1 in 2027, leading to a place in the 2028 race, as Marathon Handbook reported).
   note: The 2027 race is on Sunday 7 November 2027. The 2025 race had 59,226 finishers.
   link: {label: 'NYRR: run the 2027 TCS New York City Marathon', url: 'https://www.nyrr.org/tcsnycmarathon/runners/entry/2027', checked: '2026-11-19'}
 # ---------- UK ----------
