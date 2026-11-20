@@ -50,7 +50,8 @@ guidance:
     applies: [endurance]
     use: rule
     text: Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself.
-    for: [higdon-novice1, bmc-hill-fit, emf-half-beginner]
+    for: [higdon-novice1, bmc-hill-fit, emf-half-beginner, bhf-l2b-training]
+    note: The BHF's 16-week London to Brighton training guide (opened 20 Nov 2026) grows its long ride from 45 minutes in week 1 to a five-hour practice ride on a similar course in week 13; it backs the build towards the event's duration by its structure.
   - id: specific-training
     topic: key session
     applies: [hill, walking]
@@ -148,14 +149,15 @@ guidance:
     use: safety
     text: Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers.
     for: [eah-consensus-2015]
-    against: [bc-sofa-50km]
+    against: [bc-sofa-50km, bc-nutrition-top10]
     note: British Cycling's beginner plan suggests sipping every 10 to 15 minutes on a ride. The international consensus statement outranks it, so plans say drink to thirst and the cycling statement on fuel does not set a drinking schedule.
   - id: snack-little-often
     topic: fuel and drink
     applies: [endurance]
     use: advice
     text: On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start.
-    for: [bmc-hill-fit, issn-ultra-2019]
+    for: [bmc-hill-fit, issn-ultra-2019, cyclinguk-eat-long-ride]
+    note: Cycling UK's beginners' guide to eating on a long ride (opened 20 Nov 2026) says to eat "little and often rather than all in one go".
   - id: practise-fuel
     topic: fuel and drink
     applies: [endurance]
@@ -569,7 +571,8 @@ guidance:
     applies: [cycling]
     use: advice
     text: On long rides eat something every 20 to 30 minutes, and carry enough food and drink for the whole ride rather than relying on finding a shop.
-    for: [bc-sofa-50km, cyclinguk-100km]
+    for: [bc-sofa-50km, cyclinguk-100km, bc-nutrition-top10]
+    note: British Cycling's top 10 nutrition tips (opened 20 Nov 2026) say "Eat something every 20-30 minutes, even if you don't feel hungry"; the same page's advice to sip every 10 to 15 minutes is listed against the drink-to-thirst statement.
   - id: cyc-warm-up
     topic: on the day
     applies: [cycling]
