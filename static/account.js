@@ -176,7 +176,7 @@
     try { const r = await call('/auth/me'); if (r.status === 200 && r.d.signed_in) return plusShow(r.d); } catch (e) { /* keep what is shown */ }
     return lastPlus;
   }
-  // Back from Stripe: ?plus=welcome or ?plus=cancelled (nothing else is ever in the address)
+  // Back from Stripe: ?plus=welcome, ?plus=cancelled or ?plus=stopped (nothing else is ever in the address)
   const q = new URLSearchParams(location.search), back = q.get('plus'), giftBack = q.get('gift');
   if (back || giftBack) history.replaceState(null, '', location.pathname + location.hash);
   async function welcome() {
@@ -282,6 +282,38 @@
     503: 'Gift codes cannot be used just now. Please try again later. Your code has not been used.',
   };
   const codeIn = $('#acct-code'), codeErr = $('[data-acct-code-err]'), codeOk = $('[data-acct-code-ok]');
+  // 20 Nov 2026 (Robin's try-out): a member who pays and renews is walked through stopping the renewal on Stripe's page,
+  // which opens straight on "cancel" (at the end of the paid time, never at once), and comes back with the code filled in.
+  // The code waits in this tab's sessionStorage only while Stripe's page is open, and goes once it is back in the box.
+  const STOP_KEY = 'ddr-gift-code-waiting', stopBox = $('[data-acct-stop]');
+  function stopAsk(code, until) {
+    codeSay('');
+    if (until) $('[data-acct-stop-until]').textContent = day(until);
+    stopBox.dataset.code = code; stopBox.hidden = false;
+    $('[data-acct-stop-go]').focus(); stopBox.scrollIntoView({ block: 'nearest' });
+  }
+  $('[data-acct-stop-go]').addEventListener('click', async ev => {
+    const btn = ev.currentTarget, state = $('[data-acct-stop-state]'); btn.disabled = true; state.textContent = '';
+    try { sessionStorage.setItem(STOP_KEY, codeIn.value.trim() || stopBox.dataset.code || ''); } catch (e) { /* it is typed again by hand */ }
+    try {
+      const r = await call('/plus/portal', { flow: 'stop' });
+      if (r.status === 200 && r.d.url) { location.assign(r.d.url); return; }
+      if (r.status === 409) { stopBox.hidden = true; await refreshPlus(); codeSay('Your renewal is already stopped. Press Use my code again.'); }
+      else if (r.status === 401) { show('out'); return; }
+      else state.textContent = r.status === 429 ? 'Too many tries in the last hour. Please wait a little and try again.' : 'We could not open Stripe\'s page just now. Nothing has changed: you still have Planner Plus. Please try again in a few minutes.';
+    } catch (e) { state.textContent = 'We could not reach your account. Check your connection and try again.'; }
+    try { sessionStorage.removeItem(STOP_KEY); } catch (e) { /* nothing kept */ }
+    btn.disabled = false;
+  });
+  async function stoppedBack() {   // back from Stripe after stopping the renewal
+    let code = ''; try { code = sessionStorage.getItem(STOP_KEY) || ''; sessionStorage.removeItem(STOP_KEY); } catch (e) { /* none kept */ }
+    if (code) codeIn.value = code;
+    let p = null;
+    for (let i = 0; i < 8; i++) { p = await refreshPlus(); if (p && p.ending) break; await new Promise(r => setTimeout(r, 2000)); }
+    codeOk.textContent = (p && p.ending ? 'Your renewal is stopped. Planner Plus carries on until ' + (p.until ? day(p.until) : 'the end of the time you have paid for') + '. '
+      : 'Stripe has your change; it can take a minute to reach your account. ') + (code ? 'Your code is filled in: press Use my code.' : 'Now type the code from the card and press Use my code.');
+    codeOk.hidden = false; codeIn.focus(); codeIn.scrollIntoView({ block: 'center' });
+  }
   function codeSay(msg) { codeErr.textContent = msg; codeErr.hidden = !msg; codeIn.setAttribute('aria-invalid', msg ? 'true' : 'false'); if (msg) codeIn.focus(); }
   $('[data-acct-redeem-form]').addEventListener('submit', async ev => {
     ev.preventDefault();
@@ -299,7 +331,7 @@
         codeOk.hidden = false; codeOk.scrollIntoView({ block: 'nearest' });   // day 20: it could land below the fold on a phone
         await refreshPlus(); syncNow();
       } else if (r.status === 401) show('out');
-      else if (r.status === 409 && r.d.error === 'renewing') codeSay('You already pay for Planner Plus and it renews, so the gift would overlap it. Use "Cancel, switch plan or change card" to stop the renewal first: your Plus runs to the end of what you have paid for, and the gift\'s twelve months then start after that. Your code has not been used.');
+      else if (r.status === 409 && r.d.error === 'renewing') stopAsk(code, r.d.until);
       else if (r.status === 409) codeSay('This code has already been used.');
       else codeSay(REDEEM_SAY[r.status] || 'We could not check the code just now. Please try again in a few minutes. It has not been used.');
     } catch (e) { codeSay('We could not reach your account. Check your connection and try again. Your code has not been used.'); }
@@ -330,6 +362,11 @@
       if (r.d.signed_in) {
         signedIn(r.d.email, false, r.d.account, r.d);
         if (back === 'welcome') welcome();
+        if (back === 'stopped') stoppedBack();
+        else {   // came back some other way (Stripe's back link): put the code back in the box and keep nothing in the tab
+          let code = ''; try { code = sessionStorage.getItem(STOP_KEY) || ''; sessionStorage.removeItem(STOP_KEY); } catch (e) { /* none */ }
+          if (code && !codeIn.value) codeIn.value = code;
+        }
         if (giftBack === 'thanks') giftThanks();
         else if (giftBack === 'cancelled') $('[data-acct-gift-state]').textContent = 'You left the payment page. Nothing has been charged.';
         else if (back === 'cancelled') { $('[data-acct-plus]').hidden = false; $('[data-acct-plus-state]').textContent = 'You left the payment page. Nothing has been charged.'; }

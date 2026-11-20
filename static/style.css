@@ -1154,6 +1154,7 @@ h1{line-height:1.04}
 .acct-giftlist li p{margin:0 0 .4em}
 .acct-giftcode{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:1.15em;letter-spacing:.06em;font-weight:700;overflow-wrap:anywhere}
 .acct-cardopt summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:600}
+.acct-stop{border-left:4px solid #c98a2b;padding:.2em 0 .2em 1em;margin:1em 0}.acct-stop ol{padding-left:1.3em}.acct-stop li{margin:0 0 .5em}
 .acct-plain{display:block;width:100%;max-width:24em;min-height:44px;padding:.6em .9em;border:1px solid #8a8f99;border-radius:12px;font:inherit;background:#fff;margin:0 0 .8em}
 .gift-card{display:none}
 @media print{

@@ -266,7 +266,7 @@ export async function handle(req, env) {
   if (route === '/plus/checkout' || route === '/plus/portal') {
     const s = await session(env, req);
     if (!s) return json(env, { error: 'signed out' }, 401);
-    return route === '/plus/checkout' ? Plus.checkout(env, s, body, { json, over }) : Plus.portal(env, s, { json, over });
+    return route === '/plus/checkout' ? Plus.checkout(env, s, body, { json, over }) : Plus.portal(env, s, body, { json, over });
   }
   if (route === '/gift/checkout' || route === '/gift/mine' || route === '/gift/redeem') {
     const s = await session(env, req);

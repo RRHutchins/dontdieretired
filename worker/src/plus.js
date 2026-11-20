@@ -115,6 +115,14 @@ async function portalConfig(env) {
     return c ? c.id : null;
   });
 }
+// 20 Nov 2026 (review): is our set-up's cancel "at the end of the paid period"? Asked fresh each time (not cached), as
+// the "stop my renewal" link lands on Stripe's confirm button and the page promises nothing stops straight away.
+async function portalEndsAtPeriodEnd(env, id) {
+  if (!id) return false;
+  const r = await stripe(env, 'GET', 'billing_portal/configurations/' + id);
+  const f = r.ok && r.data && r.data.features && r.data.features.subscription_cancel;
+  return !!(f && f.enabled !== false && f.mode === 'at_period_end');
+}
 
 // ---- membership ----
 // The member's best membership: one that gives Plus first, then the latest to end (a subscription before a gift on a
@@ -141,7 +149,7 @@ export async function membership(env, userId) {
 
 // Read the subscription fresh from Stripe and store what it says now. Events can arrive late, twice or out of
 // order (Stripe's documentation says so), so we never trust an event's own copy: every event just triggers this.
-async function syncSubscription(env, subId, hintUser) {
+export async function syncSubscription(env, subId, hintUser) {
   if (!/^sub_[A-Za-z0-9]{1,250}$/.test(String(subId || ''))) return true;
   const r = await stripe(env, 'GET', 'subscriptions/' + subId);
   if (r.status === 404) return true;
@@ -313,13 +321,28 @@ export async function checkout(env, s, body, h) {
 }
 
 // POST /plus/portal: Stripe's page for cancelling, switching between monthly and yearly, changing card and receipts.
-export async function portal(env, s, h) {
+// {flow: 'stop'} (20 Nov 2026, Robin's try-out: a member using a gift code was left to find the right option alone) opens
+// Stripe's page straight on "cancel" for the member's renewing subscription. The cancel mode is the portal set-up's
+// (at the end of the paid period), so Plus carries on to the paid-up date; Stripe then sends them back to /account/.
+export async function portal(env, s, body, h) {
   if (!payReady(env)) return h.json(env, { error: 'payments closed' }, 503);
   if (await h.over(env, 'pay', s.id, LIMIT_PAY_HOUR)) return h.json(env, { error: 'slow down' }, 429);
   const u = await env.DB.prepare(`SELECT stripe_customer, stripe_mode FROM users WHERE id = ?`).bind(s.id).first();
   if (!u || !u.stripe_customer || (u.stripe_mode || 'test') !== modeNow(env)) return h.json(env, { error: 'no subscription' }, 404);
   const conf = await portalConfig(env);
-  const r = await stripe(env, 'POST', 'billing_portal/sessions', { customer: u.stripe_customer, return_url: `${env.SITE_ORIGIN}/account/`, ...(conf ? { configuration: conf } : {}) });
+  let flow = null;
+  if (body && body.flow === 'stop') {
+    const find = () => env.DB.prepare(`SELECT subscription FROM memberships WHERE user_id = ? AND mode = ? AND substr(subscription, 1, 4) = 'sub_'
+      AND status IN ('active', 'trialing', 'past_due') AND cancel_at_end = 0 ORDER BY period_end DESC LIMIT 1`).bind(s.id, modeNow(env)).first();
+    let sub = await find();
+    if (sub) { await syncSubscription(env, sub.subscription, s.id); sub = await find(); }   // a stop already made, its webhook not yet here
+    if (!sub) return h.json(env, { error: 'not renewing' }, 409);
+    // never land a member on a cancel button that might end Plus at once
+    if (!(await portalEndsAtPeriodEnd(env, conf))) { console.error('portal set-up missing or not cancelling at period end: run worker/stripe-setup.mjs'); return h.json(env, { error: 'portal setup' }, 503); }
+    flow = { type: 'subscription_cancel', subscription_cancel: { subscription: sub.subscription },
+      after_completion: { type: 'redirect', redirect: { return_url: `${env.SITE_ORIGIN}/account/?plus=stopped` } } };
+  }
+  const r = await stripe(env, 'POST', 'billing_portal/sessions', { customer: u.stripe_customer, return_url: `${env.SITE_ORIGIN}/account/`, ...(conf ? { configuration: conf } : {}), ...(flow ? { flow_data: flow } : {}) });
   const url = r.ok && r.data && r.data.url;
   if (typeof url !== 'string' || !url.startsWith('https://billing.stripe.com/')) return h.json(env, { error: 'stripe' }, 502);
   return h.json(env, { ok: true, url });

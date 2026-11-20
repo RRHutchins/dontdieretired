@@ -11,7 +11,7 @@
 // Secrets: GIFT_KEY (64 hex characters; made once by the deploy workflow and never changed, or unused codes could no
 // longer be shown, though they would still redeem). Gifts are on sale only with payments set up and GIFT_KEY present.
 
-import { stripe, payReady, keyMode, modeNow, priceId, customerFor, membership } from './plus.js';
+import { stripe, payReady, keyMode, modeNow, priceId, customerFor, membership, syncSubscription } from './plus.js';
 
 export const ALPHABET = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';   // no 0/O, 1/I/L: easy to read off a card and type
 export const CODE_LEN = 16;
@@ -177,7 +177,8 @@ export async function redeem(env, req, s, body, h) {
   // Two codes redeemed by one account at the same instant (or a webhook changing its membership meanwhile) must not
   // give overlapping years: the code is spent only if the account's memberships are still exactly as they were read
   // (FPRINT); otherwise read again and work the start out afresh, up to three times.
-  for (let tries = 0; tries < 3; tries++) {
+  let synced = false;
+  outer: for (let tries = 0; tries < 3; tries++) {
     const t = now();
     const fp = (await env.DB.prepare(`SELECT ${FPRINT} AS f`).bind(s.id, g.mode).first())?.f ?? null;
     const rows = (await env.DB.prepare(`SELECT subscription, status, plan, period_end, cancel_at_end FROM memberships WHERE user_id = ? AND mode = ?`).bind(s.id, g.mode).all()).results || [];
@@ -186,7 +187,11 @@ export async function redeem(env, req, s, body, h) {
       const gift = m.plan === 'gift';
       const live = gift ? (m.period_end || 0) > t : ['active', 'trialing', 'past_due'].includes(m.status);
       if (!live) continue;
-      if (!gift && !m.cancel_at_end) return h.json(env, { error: 'renewing', until: m.period_end || null }, 409);
+      if (!gift && !m.cancel_at_end) {
+        // 20 Nov 2026 (review): the member may have just stopped it on Stripe's page and its webhook is not here yet
+        if (!synced && /^sub_/.test(m.subscription)) { synced = true; await syncSubscription(env, m.subscription, s.id); tries--; continue outer; }
+        return h.json(env, { error: 'renewing', until: m.period_end || null }, 409);
+      }
       start = Math.max(start, m.period_end || t);
     }
     const until = yearOn(start);

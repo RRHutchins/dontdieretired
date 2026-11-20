@@ -11,7 +11,7 @@ const WHSEC = 'whsec_test_0123456789abcdef';
 const calls = [];
 // ---- a stand-in for Stripe ----
 let stripeDown = false;
-const S = { subs: {}, n: 0, customers: {}, sessions: {}, idem: {}, configs: [{ id: 'bpc_other', metadata: {} }, { id: 'bpc_plus', metadata: { ddr: 'plus' } }] };
+const S = { subs: {}, n: 0, customers: {}, sessions: {}, idem: {}, configs: [{ id: 'bpc_other', metadata: {} }, { id: 'bpc_plus', metadata: { ddr: 'plus' }, features: { subscription_cancel: { enabled: true, mode: 'at_period_end' } } }] };
 const PRICES = { ddr_plus_month: 'price_month', ddr_plus_year: 'price_year', ddr_plus_gift: 'price_gift' };
 function parseForm(b) { const o = {}; for (const [k, v] of new URLSearchParams(b || '')) o[k] = v; return o; }
 globalThis.fetch = async (url, init = {}) => {
@@ -27,6 +27,7 @@ globalThis.fetch = async (url, init = {}) => {
     return reply({ object: 'list', data: PRICES[lk] ? [{ id: PRICES[lk], lookup_key: lk }] : [] });
   }
   if (p === 'billing_portal/configurations') return reply({ object: 'list', data: S.configs });
+  { const c = /^billing_portal\/configurations\/(bpc_\w+)$/.exec(p); if (c && method === 'GET') { const x = S.configs.find(y => y.id === c[1]); return x ? reply(x) : reply({ error: {} }, 404); } }
   if (p === 'customers' && method === 'POST') {
     const k = (init.headers || {})['idempotency-key'];
     if (k && S.idem[k]) return reply(S.customers[S.idem[k]]);
@@ -280,6 +281,38 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
     assert.strictEqual(c.body.customer, 'cus_14'); assert.strictEqual(c.body.configuration, 'bpc_plus'); assert.strictEqual(c.body.return_url, SITE + '/account/');
     assert.strictEqual((await post(e, '/plus/portal', {}, { cookie: a.cookie, origin: 'https://evil.example' })).status, 403);
   });
+  await t('20 Nov: the portal can open straight on stopping the renewal (at period end, by the portal set-up), only for a renewing subscription of this member', async () => {
+    const e = env(), a = await login(e), b = await login(e, 'other@example.com');
+    assert.strictEqual((await post(e, '/plus/portal', { flow: 'stop' }, { cookie: a.cookie })).status, 404, 'never paid: no portal');
+    makeSub('sub_s1', 'cus_s1'); await hook(e, completed('sub_s1', a.id, 'cus_s1'));
+    makeSub('sub_s2', 'cus_s2'); await hook(e, completed('sub_s2', b.id, 'cus_s2'));
+    const r = await post(e, '/plus/portal', { flow: 'stop' }, { cookie: a.cookie });
+    assert.strictEqual(r.status, 200); assert.ok((await r.json()).url.startsWith('https://billing.stripe.com/'));
+    const c = stripeCalls().filter(x => x.url.endsWith('/billing_portal/sessions')).at(-1).body;
+    assert.strictEqual(c.customer, 'cus_s1'); assert.strictEqual(c.configuration, 'bpc_plus');
+    assert.strictEqual(c['flow_data[type]'], 'subscription_cancel');
+    assert.strictEqual(c['flow_data[subscription_cancel][subscription]'], 'sub_s1', "this member's own subscription, never another's");
+    assert.strictEqual(c['flow_data[after_completion][type]'], 'redirect');
+    assert.strictEqual(c['flow_data[after_completion][redirect][return_url]'], SITE + '/account/?plus=stopped');
+    // a plain visit has no flow
+    await post(e, '/plus/portal', {}, { cookie: a.cookie });
+    assert.ok(!Object.keys(stripeCalls().filter(x => x.url.endsWith('/billing_portal/sessions')).at(-1).body).some(k => k.startsWith('flow_data')));
+    // once stopped, there is nothing to stop: Plus carries on to the period end
+    S.subs.sub_s1.cancel_at_period_end = true;
+    await hook(e, evt('customer.subscription.updated', { id: 'sub_s1', object: 'subscription' }));
+    assert.strictEqual((await post(e, '/plus/portal', { flow: 'stop' }, { cookie: a.cookie })).status, 409);
+    const m = await me(e, a.cookie); assert.strictEqual(m.plus.member, true); assert.strictEqual(m.plus.ending, true);
+    // review: a portal set-up that would cancel at once (changed in the Dashboard) is never used for the stop link
+    makeSub('sub_s3', 'cus_s2'); await hook(e, completed('sub_s3', b.id, 'cus_s2'));
+    const conf = S.configs.find(x => x.id === 'bpc_plus'); conf.features.subscription_cancel.mode = 'immediately';
+    try { assert.strictEqual((await post(e, '/plus/portal', { flow: 'stop' }, { cookie: b.cookie })).status, 503); }
+    finally { conf.features.subscription_cancel.mode = 'at_period_end'; }
+    // review: a stop made on Stripe whose webhook has not arrived: Stripe is asked, and there is nothing left to stop
+    const d3 = await login(e, 'third@example.com'); makeSub('sub_s4', 'cus_s4'); await hook(e, completed('sub_s4', d3.id, 'cus_s4'));
+    S.subs.sub_s4.cancel_at_period_end = true;   // no webhook sent
+    assert.strictEqual((await post(e, '/plus/portal', { flow: 'stop' }, { cookie: d3.cookie })).status, 409);
+    assert.strictEqual((await me(e, d3.cookie)).plus.ending, true, 'and the account now knows');
+  });
   await t('checkout and portal visits are limited per member', async () => {
     const e = env(), a = await login(e);
     for (let i = 0; i < 20; i++) assert.strictEqual((await post(e, '/plus/checkout', { plan: 'year' }, { cookie: a.cookie })).status, 200);
@@ -359,8 +392,12 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       if (pm && m === 'POST') { const x = st.products.find(y => y.id === pm[1]); x.tax_code = b.tax_code; if (b['metadata[ddr_tax]']) x.metadata.ddr_tax = b['metadata[ddr_tax]']; return R(x); }
       if (p === 'prices') return m === 'GET' ? R({ data: st.prices.filter(x => x.lookup_key === u.searchParams.get('lookup_keys[]')) })
         : R((st.prices.push({ id: 'price_' + st.prices.length, lookup_key: b.lookup_key, unit_amount: +b.unit_amount, currency: b.currency }), st.prices.at(-1)));
-      if (p === 'billing_portal/configurations') return m === 'GET' ? R({ data: st.confs }) : R((st.confs.push({ id: 'bpc_1', metadata: { ddr: 'plus' }, business_profile: { terms_of_service_url: b['business_profile[terms_of_service_url]'] } }), st.confs[0]));
-      if (p === 'billing_portal/configurations/bpc_1' && m === 'POST') { st.confs[0].business_profile = { terms_of_service_url: b['business_profile[terms_of_service_url]'] }; return R(st.confs[0]); }
+      if (p === 'billing_portal/configurations') return m === 'GET' ? R({ data: st.confs }) : R((st.confs.push({ id: 'bpc_1', metadata: { ddr: 'plus' }, business_profile: { terms_of_service_url: b['business_profile[terms_of_service_url]'] }, features: { subscription_cancel: { enabled: b['features[subscription_cancel][enabled]'] === 'true', mode: b['features[subscription_cancel][mode]'] } } }), st.confs[0]));
+      if (p === 'billing_portal/configurations/bpc_1' && m === 'POST') {
+        if (b['business_profile[terms_of_service_url]']) st.confs[0].business_profile = { terms_of_service_url: b['business_profile[terms_of_service_url]'] };
+        if (b['features[subscription_cancel][mode]']) st.confs[0].features = { subscription_cancel: { enabled: b['features[subscription_cancel][enabled]'] === 'true', mode: b['features[subscription_cancel][mode]'] } };
+        return R(st.confs[0]);
+      }
       const evs = () => Object.keys(b).filter(k => k.startsWith('enabled_events[')).map(k => b[k]);
       if (p === 'webhook_endpoints') return m === 'GET' ? R({ data: st.hooks }) : R((st.hooks.push({ id: 'we_1', url: b.url, enabled_events: evs() }), { id: 'we_1', secret: 'whsec_made' }));
       if (p === 'webhook_endpoints/we_1' && m === 'POST') { st.hooks[0].enabled_events = evs(); return R(st.hooks[0]); }
@@ -405,6 +442,10 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
       assert.strictEqual(await run('sk_test_x', 5), 0);
       assert.strictEqual(st.posts.length, b5 + 1); assert.strictEqual(st.confs[0].business_profile.terms_of_service_url, 'https://dontdieretired.com/planner-plus/terms/');
       assert.strictEqual(await run('sk_test_x', 6), 0); assert.strictEqual(st.posts.length, b5 + 1, 'then nothing more');
+      // 20 Nov: a portal set-up changed to cancel at once (in the Dashboard) is set back to the end of the paid period, once
+      st.confs[0].features.subscription_cancel.mode = 'immediately'; const b6 = st.posts.length;
+      assert.strictEqual(await run('sk_test_x', 66), 0);
+      assert.deepStrictEqual(st.posts.slice(b6).map(x => [x.p, x.b['features[subscription_cancel][mode]']]), [['billing_portal/configurations/bpc_1', 'at_period_end']]);
       // 20 Nov: products made before the tax code existed gain it, once; a code changed in the Dashboard is left alone
       st.products[0].tax_code = null; delete st.products[0].metadata.ddr_tax; st.products[1].tax_code = { id: 'txcd_10103001', object: 'tax_code' };
       const b7 = st.posts.length;

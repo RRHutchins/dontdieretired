@@ -80,7 +80,7 @@
         </div>
       </div>
       <p data-acct-plus-manage hidden><button type="button" class="btn btn-ghost btn-small" data-acct-portal>Cancel, switch plan or change card</button></p>
-      <p class="meta" data-acct-plus-note hidden>This opens Stripe's page for your membership, then brings you back here.</p>
+      <p class="meta" data-acct-plus-note hidden>This opens Stripe's page for your membership, then brings you back here. Cancelling never stops Planner Plus straight away: it carries on to the end of the time you have paid for, your plans stay, and until then you can renew on that same page.</p>
     </section>
     <section class="acct-plus acct-feed" data-acct-feed hidden aria-labelledby="acct-feed-h">
       <h3 id="acct-feed-h" class="h4" tabindex="-1">My year in your own calendar</h3>
@@ -117,6 +117,16 @@
         </div>
         <p class="pl-err" id="acct-code-err" data-acct-code-err role="alert" hidden></p>
       </form>
+      <div class="acct-stop" data-acct-stop hidden>
+        <p><strong>One step first: stop your renewal.</strong> You already pay for Planner Plus and it renews, so the gift would overlap it. Your code has not been used.</p>
+        <ol>
+          <li>Press <strong>Stop my renewal</strong> below. Stripe's page opens on cancelling your plan.</li>
+          <li>On that page, press <strong>Cancel subscription</strong> to confirm. Nothing stops straight away: Planner Plus carries on to <span data-acct-stop-until>the end of the time you have paid for</span>, and your plans stay.</li>
+          <li>Stripe brings you back here with your code filled in. Press <strong>Use my code</strong>: the gift's twelve months start when your paid time ends, so nothing is lost.</li>
+        </ol>
+        <p><button type="button" class="btn" data-acct-stop-go>Stop my renewal</button></p>
+        <p class="meta" data-acct-stop-state role="status"></p>
+      </div>
       <p data-acct-code-ok role="status" hidden></p>
     </section>
     <section class="acct-plus acct-gifts" data-acct-gifts hidden aria-labelledby="acct-gifts-h">

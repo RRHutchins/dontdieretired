@@ -40,7 +40,8 @@ const now = () => Math.floor(Date.now() / 1000);
 const CODE = /^[ABCDEFGHJKMNPQRSTUVWXYZ2-9]{4}(-[ABCDEFGHJKMNPQRSTUVWXYZ2-9]{4}){3}$/;
 
 // ---------------- the stand-in Stripe (only the calls the Worker makes) ----------------
-const S = { n: 0, customers: {}, subs: {}, sessions: {}, charges: {}, pis: {}, deleted: [] };
+const S = { n: 0, customers: {}, subs: {}, sessions: {}, charges: {}, pis: {}, deleted: [], flows: {} };
+const PORTAL = { id: 'bpc_e2e', metadata: { ddr: 'plus' }, features: { subscription_cancel: { enabled: true, mode: 'at_period_end' } } };
 const PRICES = { ddr_plus_month: 'price_month', ddr_plus_year: 'price_year', ddr_plus_gift: 'price_gift' };
 const LK = Object.fromEntries(Object.entries(PRICES).map(([k, v]) => [v, k]));
 const parseForm = b => { const o = {}; for (const [k, v] of new URLSearchParams(b || '')) o[k] = v; return o; };
@@ -57,8 +58,18 @@ globalThis.fetch = async (url, init = {}) => {
   assert.match(init.headers.authorization, /^Bearer sk_test_/, 'only a test key is ever sent');
   const reply = (d, s = 200) => new Response(JSON.stringify(d), { status: s, headers: { 'content-type': 'application/json' } });
   if (p === 'prices') { const lk = u.searchParams.get('lookup_keys[]'); return reply({ data: PRICES[lk] ? [{ id: PRICES[lk], lookup_key: lk }] : [] }); }
-  if (p === 'billing_portal/configurations') return reply({ data: [] });
-  if (p === 'billing_portal/sessions') { assert.ok(S.customers[b.customer]); return reply({ url: 'https://billing.stripe.com/p/session/test_' + b.customer.slice(4) + '_' + (++S.n) }); }
+  if (p === 'billing_portal/configurations') return reply({ data: [PORTAL] });
+  if (p === 'billing_portal/configurations/' + PORTAL.id) return reply(PORTAL);
+  if (p === 'billing_portal/sessions') {
+    assert.ok(S.customers[b.customer]);
+    const url = 'https://billing.stripe.com/p/session/test_' + b.customer.slice(4) + '_' + (++S.n);
+    if (b['flow_data[type]']) {   // 20 Nov: the "stop my renewal" deep link: cancel this subscription, then back to its return_url
+      assert.strictEqual(b['flow_data[type]'], 'subscription_cancel');
+      assert.strictEqual(S.subs[b['flow_data[subscription_cancel][subscription]']].customer, b.customer, 'the subscription is this customer\'s');
+      S.flows[url] = b['flow_data[after_completion][redirect][return_url]'];
+    }
+    return reply({ url });
+  }
   if (p === 'customers' && method === 'POST') { const id = 'cus_e' + (++S.n); S.customers[id] = { id, email: b.email }; return reply({ id }); }
   let m;
   if ((m = /^customers\/(cus_\w+)$/.exec(p)) && method === 'DELETE') {
@@ -151,7 +162,7 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
     const u = new URL(q.url, CTL); let to = SITE + '/account/', m;
     if ((m = /^\/pay\/(cs_\w+)$/.exec(u.pathname))) to = await pay(m[1]);
     else if ((m = /^\/leave\/(cs_\w+)$/.exec(u.pathname))) to = S.sessions[m[1]].cancel_url;
-    else if ((m = /^\/portal-cancel\/(cus_\w+)$/.exec(u.pathname))) await cancelAtEnd(m[1]);
+    else if ((m = /^\/portal-cancel\/(cus_\w+)$/.exec(u.pathname))) { await cancelAtEnd(m[1]); const back = u.searchParams.get('to'); if (back && back.startsWith(SITE + '/')) to = back; }
     r.writeHead(303, { location: to }); r.end();
   }));
 
@@ -169,8 +180,9 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
       route.fulfill({ contentType: 'text/html', body: `<!doctype html><meta name="viewport" content="width=device-width"><title>Stand-in Stripe Checkout</title><h1>Stand-in Stripe Checkout (test)</h1><p>${cs ? cs.mode : 'unknown'}</p><p><a id="pay" href="${CTL}/pay/${id}">Pay</a> <a id="leave" href="${CTL}/leave/${id}">Back</a></p>` });
     });
     await ctx.route('https://billing.stripe.com/**', route => {
-      const cus = 'cus_' + route.request().url().split('/').pop().replace(/^test_/, '').replace(/_\d+$/, '');
-      route.fulfill({ contentType: 'text/html', body: `<!doctype html><title>Stand-in Stripe portal</title><h1>Stand-in customer portal (test)</h1><p><a id="cancel" href="${CTL}/portal-cancel/${cus}">Cancel plan</a> <a id="back" href="${SITE}/account/">Return</a></p>` });
+      const at = route.request().url(), cus = 'cus_' + at.split('/').pop().replace(/^test_/, '').replace(/_\d+$/, '');
+      const after = S.flows[at] ? '?to=' + encodeURIComponent(S.flows[at]) : '';
+      route.fulfill({ contentType: 'text/html', body: `<!doctype html><title>Stand-in Stripe portal</title><h1>Stand-in customer portal (test)</h1><p><a id="cancel" href="${CTL}/portal-cancel/${cus}${after}">Cancel plan</a> <a id="back" href="${SITE}/account/">Return</a></p>` });
     });
     const page = await ctx.newPage();
     page.on('request', q => seen.push({ who: name, url: q.url() }));
@@ -345,6 +357,32 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
     await laptop.fill('#acct-code', code2); await laptop.click('[data-acct-redeem-form] button[type=submit]');
     await vis(laptop, '#acct-code-err');
     await look(friend, 'gifts-used-refunded');
+  });
+  await step('friend: pays monthly, then uses a gift: is walked through stopping the renewal and comes back with the code filled in; nothing is lost', async () => {
+    await friend.goto(SITE + '/account/');
+    await vis(friend, '[data-acct-buy=month]'); await friend.click('[data-acct-buy=month]');
+    await friend.waitForURL(/checkout\.stripe\.com/); await friend.click('#pay'); await friend.waitForURL(SITE + '/account/**');
+    await friend.waitForFunction(() => /renewing on|renews on/.test(document.querySelector('[data-acct-plus-state]').textContent), null, { timeout: 15000 });
+    await friend.click('[data-acct-gift-buy]'); await friend.waitForURL(/checkout\.stripe\.com/); await friend.click('#pay'); await friend.waitForURL(SITE + '/account/**');
+    await friend.waitForFunction(() => /not used yet/.test((document.querySelector('[data-acct-gift-list]') || {}).textContent || ''), null, { timeout: 25000 });
+    const code3 = (await friend.textContent('.acct-giftcode')).trim(); assert.match(code3, CODE);
+    await friend.fill('#acct-code', code3); await friend.click('[data-acct-redeem-form] button[type=submit]');
+    await vis(friend, '[data-acct-stop]');
+    assert.match(await friend.textContent('[data-acct-stop]'), /Cancel subscription.*Use my code/s);
+    assert.ok(/\d{4}/.test(await friend.textContent('[data-acct-stop-until]')), 'the paid-up date is shown');
+    await look(friend, 'gift-stop-renewal-ask');
+    await friend.click('[data-acct-stop-go]');
+    await friend.waitForURL(/billing\.stripe\.com/);
+    await friend.click('#cancel');
+    await friend.waitForURL(SITE + '/account/**');
+    await friend.waitForFunction(() => /renewal is stopped/.test((document.querySelector('[data-acct-code-ok]') || {}).textContent || ''), null, { timeout: 25000 });
+    assert.strictEqual((await friend.inputValue('#acct-code')).trim(), code3, 'the code is filled in again');
+    assert.ok(!friend.url().includes('plus='), 'the flag is cleared from the address');
+    assert.ok(/You have Planner Plus/.test(await friend.textContent('[data-acct-plus-state]')), 'Plus carries on after stopping the renewal');
+    await look(friend, 'gift-stop-renewal-back');
+    await friend.click('[data-acct-redeem-form] button[type=submit]');
+    await friend.waitForFunction(() => /starts on/.test((document.querySelector('[data-acct-code-ok]') || {}).textContent || ''), null, { timeout: 15000 });
+    assert.strictEqual(await friend.evaluate(() => { try { return sessionStorage.length; } catch (e) { return 0; } }), 0, 'nothing left in the tab');
   });
   await step('friend deletes their account: the gift they gave keeps working, their Stripe customer goes', async () => {
     const friendCus = env.DB.raw.prepare("SELECT stripe_customer c FROM users WHERE stripe_customer IS NOT NULL AND stripe_customer != ?").get(alexCus).c;

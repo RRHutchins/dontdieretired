@@ -46,7 +46,7 @@ async function product(tag, name, description) {
     // only once: the ddr_tax marker means this script has set a code before, so a null now is Robin's choice of
     // "use the account's preset tax code" in the Dashboard, not a product made before 20 Nov
     if (!code && !(p.metadata && p.metadata.ddr_tax)) { await call('POST', 'products/' + p.id, { tax_code: TAX_CODE, metadata: { ddr_tax: '1' } }); say(`product ${name}: exists (${p.id}); tax code added`); }
-    else if (code !== TAX_CODE) { console.warn(`NOTE: product ${name} has tax code ${code}, not ${TAX_CODE}: not changed (set in the Dashboard?)`); say(`product ${name}: exists (${p.id})`); }
+    else if (code !== TAX_CODE) { console.warn(`NOTE: product ${name} has tax code ${code || "(the account's preset)"}, not ${TAX_CODE}: not changed (set in the Dashboard?)`); say(`product ${name}: exists (${p.id})`); }
     else say(`product ${name}: exists (${p.id})`);
     return p.id;
   }
@@ -78,6 +78,11 @@ if (conf) {
   // day 19 added the terms page: bring a set-up made before then up to date
   if (!conf.business_profile || conf.business_profile.terms_of_service_url !== PROFILE.terms_of_service_url) {
     await call('POST', 'billing_portal/configurations/' + conf.id, { business_profile: PROFILE }); say('customer portal set-up: terms link added');
+  }
+  // 20 Nov 2026: cancelling must never end Plus at once (Robin); put it back if it was changed in the Dashboard
+  const sc = conf.features && conf.features.subscription_cancel;
+  if (!sc || sc.enabled === false || sc.mode !== 'at_period_end') {
+    await call('POST', 'billing_portal/configurations/' + conf.id, { features: { subscription_cancel: { enabled: 'true', mode: 'at_period_end' } } }); say('customer portal set-up: cancelling set back to the end of the paid period');
   }
 }
 else {
