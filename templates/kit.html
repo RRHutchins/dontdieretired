@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Kit finder: what independent reviews recommend — {{ cfg.site.name }}{% endblock %}
+{% block description %}Search kit for walking, wildlife, the water and more: we read many independent reviews of each type and show which products they recommend most, by budget and use.{% endblock %}
+{% block pagetype %}list{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker">Kit</p><h1>Kit finder</h1>
+<p class="lead">For each type of kit we read many independent reviews, record what every one of them recommends, and score each product on how widely, how highly and how well it is rated. Then we show the top-rated, the best budget pick, the all-round value and the best for particular uses. <a href="/kit/how-we-score/">How the scores work</a>.</p></header>
+
+<div class="kf" data-kf>
+  <label class="fl-search"><span class="sr-only">Search kit</span><input type="search" placeholder="Search: boots, binoculars, a brand, an activity…" data-kf-q></label>
+  <p class="kf-chips" role="group" aria-label="Show kit for">{% for g in kit_groups %}<button type="button" class="chip" data-kf-g="{{ g.key }}" aria-pressed="false">{{ g.label }}</button>{% endfor %}</p>
+  <p class="fl-results" data-kf-count role="status" aria-live="polite"></p>
+  <ul class="kf-grid">
+  {% for t in kit_types %}
+    <li class="kf-card" data-kf-item data-groups="{{ t.groups|join(' ') }}" data-text="{{ (t.name ~ ' ' ~ t.kit_names|join(' ') ~ ' ' ~ t.ranked|map(attribute='name')|join(' ') ~ ' ' ~ t.acts|map(attribute='title')|join(' '))|lower }}">
+      <h2 class="h3"><a href="/kit/{{ t.id }}/">{{ t.name }}</a></h2>
+      <p class="meta">{{ t.N }} independent reviews · {{ t.main|length }} products recommended in two or more</p>
+      {% for mk, aws in [('uk', t.awards), ('us', t.awards_us)] %}<ul class="kf-awards" data-market="{{ mk }}"{% if mk == 'us' %} hidden{% endif %}>{% for a in aws[:3] %}<li><span class="kf-aw">{{ a.label }}</span> <strong>{{ a.product.name }}</strong> <span class="kf-sc">{{ a.product.score }}/10</span></li>{% endfor %}</ul>{% endfor %}
+      <p class="fl-go" aria-hidden="true">See the full comparison <span>→</span></p>
+    </li>
+  {% endfor %}
+  </ul>
+  <p class="fl-quiet" data-kf-none hidden>No kit matches that yet. We add a new type of kit as soon as we have read enough reviews of it.</p>
+</div>
+<div class="prose narrow fl-about">
+<p>We have not tested these products ourselves: the recommendations are the reviewers', counted and weighed by us. Prices change, so the price bands are a guide from the prices printed in the reviews; the shop shows today's price. Buy links are affiliate links: if you buy through them we may earn a commission at no extra cost to you, and that never changes a score.</p>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/kit.js?v={{ asset_v }}" defer></script><script>
+(() => { const q = document.querySelector('[data-kf-q]'), items = [...document.querySelectorAll('[data-kf-item]')], chips = [...document.querySelectorAll('[data-kf-g]')], cnt = document.querySelector('[data-kf-count]'), none = document.querySelector('[data-kf-none]');
+  let g = '';
+  const run = () => { const w = (q.value || '').toLowerCase().split(/\s+/).filter(Boolean); let n = 0;
+    items.forEach(li => { const ok = (!g || li.dataset.groups.split(' ').includes(g)) && w.every(x => li.dataset.text.includes(x)); li.hidden = !ok; n += ok; });
+    cnt.textContent = (w.length || g) ? `${n} type${n === 1 ? '' : 's'} of kit` : ''; none.hidden = n > 0; };
+  q.addEventListener('input', run);
+  chips.forEach(c => c.addEventListener('click', () => { g = g === c.dataset.kfG ? '' : c.dataset.kfG; chips.forEach(x => x.setAttribute('aria-pressed', String(x.dataset.kfG === g))); run(); }));
+  const p = new URLSearchParams(location.search); if (p.get('q')) { q.value = p.get('q'); run(); }
+})();
+</script>{% endblock %}

@@ -738,6 +738,7 @@ def build(make_social=True):
         _lonely = [c["id"] for c in _chs if not any(c["id"] in g["ids"] for g in GROUPS)]
         if _lonely: print(f"LIST WARNING: {len(_lonely)} activities are in no group (add a rule in content/groups.yaml or `groups:` on the entry): {', '.join(_lonely[:40])}")
     _n = len(_chs)
+    env.globals.update(kit_live=bool(list((CONTENT / "kit").glob("*.yaml"))) if (CONTENT / "kit").exists() else False)
     env.globals.update(groups=GROUPS, list_total_text=(f"More than {((_n - 1) // 50) * 50:,}" if _n > 100 else str(_n)))
     # Deep hubs (RUNBOOK §6u, Robin 17 Nov 2026: "a primary source on the internet" for a subject, ultra running first):
     # content/hubs/<id>.yaml gives an event finder, guides and the activities that lead in. Loaded here, rendered after Things to do.
@@ -1053,6 +1054,37 @@ def build(make_social=True):
             pages.append({"title": g["title"], "url": f"/list/{g['slug']}/", "category": "explore", "excerpt": g["meta"],
                           "tags": ["activities", "things", "to", "do"] + re.findall(r"[a-z]+", g["label"].lower()),
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})
+        # Kit (Robin, 20 Nov 2026): many independent reviews per product type, consolidated into scores and picks by
+        # tools/kitscore.py (method explained on /kit/how-we-score/). One content/kit/<type>.yaml per type.
+        import importlib.util as _ilu
+        _ks = _ilu.spec_from_file_location("kitscore", ROOT / "tools" / "kitscore.py"); _km = _ilu.module_from_spec(_ks); _ks.loader.exec_module(_km)
+        _norm = lambda n: re.sub(r"\s*\(.*?\)", "", str(n).lower()).strip()
+        KIT = []
+        for _kf in sorted((CONTENT / "kit").glob("*.yaml")) if (CONTENT / "kit").exists() else []:
+            _kd = load_yaml(_kf)
+            _sc = _km.score_type(_kd)
+            if not _sc["main"]:
+                print(f"KIT WARNING: {_kf.name} has no product recommended in two or more reviews; not published"); continue
+            t = dict(_kd, **_sc)
+            t["rev"] = {r["id"]: r for r in _kd["reviews"]}
+            t["checked_human"] = dt.date.fromisoformat(max(str(r["checked"]) for r in _kd["reviews"])).strftime("%-d %B %Y")
+            names = {_norm(n) for n in _kd.get("kit_names") or []}
+            t["acts"] = [c for c in chs if any(_norm(k["name"]) in names for k in c.get("kit") or [])]
+            _aid = {c["id"] for c in t["acts"]}
+            t["groups"] = [g["key"] for g in GROUPS if _aid & set(g["ids"])]
+            KIT.append(t)
+        for c in chs:
+            c["kit_types"] = [t for t in KIT if c in t["acts"]]
+        if KIT:
+            kit_groups = [{"key": g["key"], "label": g["label"]} for g in GROUPS if any(g["key"] in t["groups"] for t in KIT)]
+            urls.append(out("/kit/", "kit.html", kit_types=KIT, kit_groups=kit_groups))
+            urls.append(out("/kit/how-we-score/", "kit-method.html"))
+            for t in KIT:
+                item_list = [{"@type": "ListItem", "position": n, "name": p["name"]} for n, p in enumerate(t["main"], 1)]
+                urls.append(out(f"/kit/{t['id']}/", "kit-type.html", t=t, item_list=item_list))
+                pages.append({"title": t["title"], "url": f"/kit/{t['id']}/", "category": "explore", "excerpt": t["description"],
+                              "tags": ["kit", "best", "review", "reviews"] + re.findall(r"[a-z]+", t["name"].lower()) + [w for p in t["main"] for w in re.findall(r"[a-z]+", p["name"].lower())][:60],
+                              "image": "/static/og-default.png", "art": "/static/og-default.png"})
         pages.append({"title": "Things to do: activities worth trying, and a list of your own", "url": "/list/", "category": "explore",
                       "excerpt": "Pick the ones you fancy, at any age. Each has how to start and where to go. Choose your own number and tick them off in your own time.",
                       "tags": ["list", "fifty", "activity", "activities", "challenge", "challenges", "bucket", "goals", "things", "to", "do"],

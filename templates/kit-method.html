@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}How our kit scores work — {{ cfg.site.name }}{% endblock %}
+{% block description %}How we turn many independent reviews into a score out of 10 and recommendations by budget and use, and what the scores can and cannot tell you.{% endblock %}
+{% block content %}
+<article class="prose narrow">
+<p class="kicker"><a href="/kit/">Kit</a></p>
+<h1>How our kit scores work</h1>
+<p class="lead">We do not test kit ourselves. Instead, for each type of kit we read many independent reviews and count what they recommend, so you can see where reviewers agree.</p>
+<h2>Which reviews we read</h2>
+<p>We aim for eight to twelve reviews of each type, from both UK and US publications, that compare several products: magazines, newspapers and specialist sites. We do not count reviews by makers or shops, or forum posts. Each kit page lists every review we read, with its date and whether the reviewers say they tested the products.</p>
+<h2>The score out of 10</h2>
+<p>For each product we note which reviews recommend it, what award each gives it (its overall pick, another award such as "best for wide feet", or simply a place on its list) and any star or number rating. Then:</p>
+<ul>
+<li><strong>How widely it is recommended</strong> (4 points): the share of the reviews we read that recommend it.</li>
+<li><strong>How highly it is placed</strong> (3 points): a review's overall pick counts 3, another award 2, a place on the list 1, averaged across the reviews that recommend it.</li>
+<li><strong>How it is rated</strong> (3 points): the average of the ratings reviews give it, put on the same scale; where no review rates it, its placement counts again.</li>
+</ul>
+<p>So a product that every review recommends, as its overall pick, with top marks would score 10. A score is a summary of what reviewers said, not a measurement of the product.</p>
+<h2>The recommendations</h2>
+<p>Only products recommended in at least two reviews can be picked out. Each pick goes to a different product:</p>
+<ul>
+<li><strong>Top rated across reviews</strong>: the highest score.</li>
+<li><strong>Best budget pick</strong>: the highest score in the lowest price band.</li>
+<li><strong>All-round value</strong>: the highest score in the middle price band.</li>
+<li><strong>Best if budget is no object</strong>: a top-band product that reviewers place higher than the top-rated one, when there is one.</li>
+<li><strong>Reviewers' choice for…</strong>: when at least two reviews pick products out for the same use (wide feet, winter, small hands), the highest-scoring of those. These differ from one type of kit to the next, because they come from what the reviews say.</li>
+</ul>
+<h2>Price bands</h2>
+<p>Prices change daily, so we show bands (£, ££, £££) set from the prices printed in the reviews when we read them, with the month. The shop shows today's price.</p>
+<h2>Money</h2>
+<p>Buy links are affiliate links: if you buy through them we may earn a commission at no extra cost to you. That never changes a score or a pick, and products are included whether or not we earn from them.</p>
+<h2>Keeping it current</h2>
+<p>We re-read the reviews for each type of kit at least once a year, and sooner when a product is replaced. Each page shows when its reviews were checked.</p>
+</article>
+{% endblock %}

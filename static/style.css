@@ -1402,3 +1402,35 @@ li.prod{display:flex;flex-wrap:wrap;align-items:center;gap:.3em .7em;margin:0 0 
 .fl-undo{font-weight:700;min-height:44px}
 @media (max-width:560px){.fl-row-ctl{width:100%}.fl-row .fl-row-ctl select{flex:1 1 auto;width:auto}}
 .chip.fl-add[aria-pressed="true"]::before{content:none}
+/* Kit section (Robin, 20 Nov 2026) */
+.prod-btn-sm{min-height:40px;padding:.3em .85em;font-size:.92rem}
+.kf-chips{display:flex;flex-wrap:wrap;gap:8px;margin:.8em 0}
+.kf-grid{list-style:none;padding:0;margin:1em 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.kf-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.kf-card h2 a{text-decoration:none;color:var(--ink)}.kf-card h2 a::after{content:"";position:absolute;inset:0}
+.kf-awards{list-style:none;padding:0;margin:.6em 0;font-size:.95rem}.kf-awards li{margin:.35em 0}
+.kf-aw,.kt-aw-label{display:inline-block;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--brand-ink);margin-right:.3em}
+.kf-sc{font-weight:600;color:var(--muted)}
+.kt-aw-grid{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.kt-aw{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--brand);border-radius:var(--r);padding:16px 18px;display:flex;flex-direction:column}
+.kt-aw-budget{border-top-color:var(--move)}.kt-aw-value{border-top-color:var(--gold)}.kt-aw-premium{border-top-color:var(--think)}.kt-aw-for{border-top-color:var(--travel)}
+.kt-aw-name{margin:.1em 0 .3em;font-size:1.25rem}
+.kt-aw-score{display:flex;align-items:center;gap:.7em;margin:.2em 0 .5em;font-size:.92rem;color:var(--muted)}
+.kt-score{display:inline-flex;align-items:baseline;justify-content:center;min-width:3.4em;padding:.2em .5em;border-radius:10px;background:var(--ink);color:#fff;font-weight:700;font-size:1.15rem}
+.kt-score small{font-size:.65em;font-weight:400;opacity:.8;margin-left:1px}
+.kt-aw-actions{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;gap:.6em 1em}
+.kt-filters{display:flex;flex-wrap:wrap;gap:8px;margin:.5em 0 1em}
+.kt-list{list-style:none;padding:0;margin:0}
+.kt-row{border-top:1px solid var(--line);padding:18px 0}
+.kt-row-head{display:flex;gap:14px;align-items:flex-start}.kt-name{margin:0 0 .2em;font-size:1.2rem}
+.kt-tags{margin:.3em 0;font-size:.88rem;color:var(--muted)}.kt-tag{display:inline-block;padding:.1em .6em;margin:.15em .3em .15em 0;border-radius:999px;background:var(--stone,#f1ede6);color:var(--ink)}
+.kt-tag-aw{background:var(--brand);color:#fff}
+.kt-verdicts summary,.kt-also summary{cursor:pointer;font-weight:600;color:var(--brand-ink)}
+.kt-verdicts ul{font-size:.95rem}
+.kt-caution{background:var(--stone,#f1ede6);padding:12px 16px;border-radius:var(--r)}
+.kt-mini-list{list-style:none;padding:0;margin:.5em 0}.kt-mini-list li{margin:.6em 0;display:flex;flex-wrap:wrap;align-items:center;gap:.3em .6em}
+/* Phones: the menu row scrolls sideways if it ever runs out of room (Kit added 20 Nov 2026), rather than widening the page */
+@media (max-width:560px){.nav{gap:16px!important;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.nav::-webkit-scrollbar{display:none}}
+[data-market][hidden],.kt-row[hidden]{display:none!important}
+.kt-mk{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:.2em 0 .6em;font-weight:600}
+[data-kf-count]:empty,.fl-results:empty{display:none}

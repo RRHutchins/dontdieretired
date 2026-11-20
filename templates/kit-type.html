@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}{{ t.title | seotitle }}{% endblock %}
+{% block description %}{{ t.description | metadesc }}{% endblock %}
+{% block pagetype %}list{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
+ {"@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Kit","item":cfg.site.url ~ "/kit/"},
+  {"@type":"ListItem","position":2,"name":t.name,"item":cfg.site.url ~ "/kit/" ~ t.id ~ "/"}]},
+ {"@type":"ItemList","name":t.title,"numberOfItems":t.main|length,"itemListElement":item_list}]} | tojson }}</script>{% endblock %}
+{% block content %}
+<header class="page-head"><p class="kicker"><a href="/kit/">Kit</a> · {{ t.N }} reviews read</p><h1>{{ t.name }}: what {{ t.N }} independent reviews recommend</h1>
+<p class="lead">{{ t.intro }}</p>
+<p class="meta">We read {{ t.N }} reviews ({{ t.uk }} from UK publications, {{ t.us }} from US ones), checked {{ t.checked_human }}. Each product's score out of 10 comes from how many reviews recommend it, how highly they place it and how they rate it. <a href="/kit/how-we-score/">How the scores work</a>.</p></header>
+
+<section class="kt-awards" aria-labelledby="kta-h">
+  <h2 id="kta-h">What the reviews point to</h2>
+  <p class="kt-mk" role="group" aria-label="Picks for">Picks for <button type="button" class="chip" data-market-show="uk" aria-pressed="true">UK readers</button> <button type="button" class="chip" data-market-show="us" aria-pressed="false">US readers</button></p>
+  {% for mk, aws in [('uk', t.awards), ('us', t.awards_us)] %}
+  <p class="meta" data-market="{{ mk }}"{% if mk == 'us' %} hidden{% endif %}>From products that at least one {{ 'UK' if mk == 'uk' else 'US' }} review recommends, so they are reviewed where you buy them. Scores are the same for everyone.</p>
+  <ul class="kt-aw-grid" data-market="{{ mk }}"{% if mk == 'us' %} hidden{% endif %}>
+  {% for a in aws %}{% set p = a.product %}
+    <li class="kt-aw kt-aw-{{ a.key.split('-')[0] }}">
+      <p class="kt-aw-label">{{ a.label }}</p>
+      <h3 class="kt-aw-name">{{ p.name }}</h3>
+      <p class="kt-aw-score"><span class="kt-score">{{ p.score }}<small>/10</small></span> <span>Recommended in {{ p.n }} of {{ t.N }} reviews{% if p.band %} · {{ p.band }}{% endif %}</span></p>
+      <p class="kt-aw-sum">{{ p.summary }}</p>
+      <p class="kt-aw-why meta">Why this one: {{ a.why }}.</p>
+      <p class="kt-aw-actions"><a class="prod-btn" href="{{ p.buy }}" rel="sponsored nofollow noopener" target="_blank" data-aff>See prices<span class="prod-src">Amazon</span></a> <a href="#p-{{ p.id }}">What each review said</a></p>
+    </li>
+  {% endfor %}
+  </ul>
+  {% endfor %}
+</section>
+
+<section class="kt-table-wrap" aria-labelledby="ktt-h">
+  <h2 id="ktt-h">Every product recommended in two or more reviews</h2>
+  <div class="kt-filters" role="group" aria-label="Filter by price">
+    <button type="button" class="chip" data-kt-band="" aria-pressed="true">Any price</button>{% for b in ['£', '££', '£££'] %}<button type="button" class="chip" data-kt-band="{{ b }}" aria-pressed="false">{{ b }}{% if loop.first %} under £{{ t.bands.edges[0] }}{% elif loop.last %} over £{{ t.bands.edges[1] }}{% else %} £{{ t.bands.edges[0] }} to £{{ t.bands.edges[1] }}{% endif %}</button>{% endfor %}
+  </div>
+  <ol class="kt-list">
+  {% for p in t.main %}
+    <li class="kt-row" id="p-{{ p.id }}" data-band="{{ p.band }}">
+      <div class="kt-row-head">
+        <span class="kt-score">{{ p.score }}<small>/10</small></span>
+        <div><h3 class="kt-name">{{ p.name }}</h3>
+          <p class="meta">Recommended in {{ p.n }} of {{ t.N }} reviews{% if p.rating_avg %} · average review rating {{ p.rating_avg }}/10 ({{ p.n_rated }} rated it){% endif %}{% if p.band %} · {{ p.band }}{% endif %}{% if p.price_note %} · {{ p.price_note }}{% endif %}</p>
+          {% if p.awards %}<p class="kt-tags" data-market="uk">{% for a in p.awards %}<span class="kt-tag kt-tag-aw">{{ a }}</span>{% endfor %}</p>{% endif %}
+          {% if p.awards_us %}<p class="kt-tags" data-market="us" hidden>{% for a in p.awards_us %}<span class="kt-tag kt-tag-aw">{{ a }}</span>{% endfor %}</p>{% endif %}
+          {% if p.best_for %}<p class="kt-tags">Best for: {% for b in p.best_for %}<span class="kt-tag">{{ b }}</span>{% endfor %}</p>{% endif %}
+        </div>
+      </div>
+      <p>{{ p.summary }}</p>
+      <details class="kt-verdicts"><summary>What each review said</summary>
+        <ul>{% for v in p.verdicts %}{% set r = t.rev[v.review] %}<li><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.outlet }}</a>: {{ v.label or 'recommended' }}{% if v.rank %} (number {{ v.rank }} on its list){% endif %}{% if v.rating is not none %} · rated {{ v.rating }}/{{ v.scale }}{% endif %}{% if v.quote %} · “{{ v.quote }}”{% endif %}</li>{% endfor %}</ul>
+      </details>
+      <p><a class="prod-btn" href="{{ p.buy }}" rel="sponsored nofollow noopener" target="_blank" data-aff>See prices for {{ p.name }}<span class="prod-src">Amazon</span></a></p>
+    </li>
+  {% endfor %}
+  </ol>
+  {% if t.also %}<details class="kt-also"><summary>Also recommended, in one review each ({{ t.also|length }})</summary>
+    <ul>{% for p in t.also %}{% set r = t.rev[p.verdicts[0].review] %}<li><strong>{{ p.name }}</strong>: {{ r.outlet }}, {{ p.verdicts[0].label or 'recommended' }}. <a class="prod-btn prod-btn-sm" href="{{ p.buy }}" rel="sponsored nofollow noopener" target="_blank" data-aff>See prices<span class="prod-src">Amazon</span></a></li>{% endfor %}</ul>
+  </details>{% endif %}
+</section>
+
+{% if t.agree %}<section class="prose narrow" aria-labelledby="ktg-h">
+  <h2 id="ktg-h">What the reviews agree on</h2>
+  <ul>{% for a in t.agree %}<li>{{ a.text }} <span class="meta">({% for r in a.reviews %}<a href="{{ t.rev[r].url }}" target="_blank" rel="noopener">{{ t.rev[r].outlet }}</a>{% if not loop.last %}, {% endif %}{% endfor %})</span></li>{% endfor %}</ul>
+  {% if t.caution %}<p class="kt-caution"><strong>Worth knowing.</strong> {{ t.caution }}</p>{% endif %}
+</section>{% endif %}
+
+{% if t.acts %}<section class="prose narrow" aria-labelledby="kta2-h"><h2 id="kta2-h">Things to do that need it</h2>
+  <p class="gx-chips">{% for c in t.acts[:24] %}<a class="chip" href="/list/{{ c.id }}/">{{ c.title }}</a> {% endfor %}</p></section>{% endif %}
+
+<section class="prose narrow" aria-labelledby="ktr-h">
+  <h2 id="ktr-h">The reviews we read</h2>
+  <ul class="kt-reviews">{% for r in t.reviews %}<li><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.title }}</a> · {{ r.outlet }}{% if r.published %}, {{ r.published }}{% endif %}{% if r.hands_on %} · tested by the reviewers{% endif %} · {{ r.products_listed }} products</li>{% endfor %}</ul>
+  <p class="disclosure">The recommendations are the reviewers'; we have counted and weighed them and have not tested the products ourselves. {{ t.bands.note }} The shop shows today's price. Buy links are affiliate links: if you buy through them we may earn a commission at no extra cost to you, and that never changes a score. <a href="/kit/how-we-score/">How the scores work</a> · <a href="/kit/">All kit</a></p>
+</section>
+{% endblock %}
+{% block scripts %}<script src="/static/kit.js?v={{ asset_v }}" defer></script><script>
+(() => { const bs = [...document.querySelectorAll('[data-kt-band]')], rows = [...document.querySelectorAll('.kt-row')];
+  bs.forEach(b => b.addEventListener('click', () => { const v = b.dataset.ktBand; bs.forEach(x => x.setAttribute('aria-pressed', String(x === b))); rows.forEach(r => r.hidden = !!v && r.dataset.band !== v); }));
+})();
+</script>{% endblock %}

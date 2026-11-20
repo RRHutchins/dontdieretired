@@ -50,6 +50,7 @@
         </div>
       </details>
       {% if gifts_season %}<a href="/gifts/" class="nav-gifts" {% if path.startswith('/gifts/') %}aria-current="page"{% endif %}>Gifts</a>{% endif %}
+      {% if kit_live %}<a href="/kit/" class="nav-kit" {% if path.startswith('/kit/') %}aria-current="page"{% endif %}>Kit</a>{% endif %}
       <a href="/puzzle/" {% if path.startswith('/puzzle/') %}aria-current="page"{% endif %}>Puzzles</a>
       <a href="/start-here/" class="hide-sm" {% if path.startswith('/start-here/') %}aria-current="page"{% endif %}>Start here</a>
       <a href="/videos/" class="hide-sm nav-videos" {% if path.startswith('/videos/') %}aria-current="page"{% endif %}>Videos</a>

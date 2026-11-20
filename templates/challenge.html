@@ -59,6 +59,16 @@
   </ul>
   <p class="disclosure">We opened {{ 'this link' if c.links|length == 1 else 'these links' }} on {{ c.checked_human }} and found {{ 'it' if c.links|length == 1 else 'them' }} to be what we say. Dates, places and prices are on the official page, where they stay up to date.</p>
 
+  {% for t in c.kit_types or [] %}
+  <aside class="aff-box kt-mini" aria-labelledby="ktm-{{ t.id }}">
+    <h3 class="h4" id="ktm-{{ t.id }}">{{ t.name }}: what {{ t.N }} independent reviews recommend</h3>
+    {% for mk, aws in [('uk', t.awards), ('us', t.awards_us)] %}<ul class="kt-mini-list" data-market="{{ mk }}"{% if mk == 'us' %} hidden{% endif %}>{% for a in aws[:3] %}{% set p = a.product %}
+      <li><span class="kt-aw-label">{{ a.label }}</span> <strong>{{ p.name }}</strong> <span class="meta">{{ p.score }}/10 · in {{ p.n }} of {{ t.N }} reviews{% if p.band %} · {{ p.band }}{% endif %}</span>
+        <a class="prod-btn prod-btn-sm" href="{{ p.buy }}" rel="sponsored nofollow noopener" target="_blank" data-aff>See prices<span class="prod-src">Amazon</span></a></li>{% endfor %}</ul>{% endfor %}
+    <p><a class="btn btn-small" href="/kit/{{ t.id }}/">Compare all {{ t.main|length }} {{ t.name|lower }} reviewers recommend <span aria-hidden="true">→</span></a></p>
+    <p class="disclosure">Scores summarise what independent reviewers say; we have not tested these. <a href="/kit/how-we-score/">How the scores work</a>. Affiliate links: we may earn a commission at no extra cost to you.</p>
+  </aside>
+  {% endfor %}
   {% set xg_show = gifts_season and (c.kit or c.book or gift_for[c.id] or sf_for[c.id]) %}
   {% if xg_show %}
   <section class="xgift" aria-labelledby="xgift-h">
@@ -95,7 +105,7 @@
   {% endif %}
   {% if c.kit %}{{ affiliate_box(c.kit, "Kit for this") }}{% endif %}
   {% endif %}
-  {% if c.picks %}{{ picks_box(c.picks) }}{% endif %}
+  {% if c.picks and not c.kit_types %}{{ picks_box(c.picks) }}{% endif %}
 
   {% if c.safety %}<aside class="fl-safety"><strong>Worth knowing.</strong> {{ c.safety }}</aside>{% endif %}
   {% if c.category in ('money', 'earn') %}<p class="disclosure">This is general information, not financial or business advice for your own circumstances.</p>{% endif %}
@@ -194,4 +204,4 @@
   <p><a href="/list/">← All activities</a></p>
 </article>
 {% endblock %}
-{% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script><script src="/static/planner.js?v={{ asset_v }}" defer></script><script src="/static/plus.js?v={{ asset_v }}" defer></script><script src="/static/plan-page.js?v={{ asset_v }}" defer></script>{% endblock %}
+{% block scripts %}{% if c.kit_types %}<script src="/static/kit.js?v={{ asset_v }}" defer></script>{% endif %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script><script src="/static/planner.js?v={{ asset_v }}" defer></script><script src="/static/plus.js?v={{ asset_v }}" defer></script><script src="/static/plan-page.js?v={{ asset_v }}" defer></script>{% endblock %}

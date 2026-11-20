@@ -1,0 +1,1317 @@
+id: binoculars
+name: Binoculars
+title: 'Best binoculars: what 11 independent reviews recommend'
+description: Which binoculars 11 independent UK and US reviews recommend for birdwatching, wildlife, walking and stargazing, from budget to premium pairs.
+kit_names: [binoculars, compact binoculars, 8x42 binoculars, 10x42 binoculars, 10x50 binoculars, pocket binoculars, waterproof binoculars]
+intro: Binoculars bring birds, wildlife, coastlines and the night sky closer, and a good pair lasts for decades. The reviews call 8x42 or 8x32 the sweet spot for birds and nature watching, with 10x for longer distances, smaller 25mm to 32mm pairs for pockets and packs, and 50mm or bigger lenses for stargazing. Long eye relief if you wear glasses and ED glass for less colour fringing are worth checking.
+bands:
+  currency: GBP
+  edges: [200, 700]
+  edges_usd: [250, 900]
+  note: 'Bands from prices printed in the reviews, November 2026: UK prices in pounds from UK reviews, otherwise US prices in dollars from US reviews. No converted prices.'
+reviews:
+- id: livescience
+  outlet: Live Science
+  country: US
+  title: 'Best binoculars 2026: The ultimate buying guide for birdwatching, stargazing and more'
+  url: https://www.livescience.com/best-binoculars
+  published: '2026-09-25'
+  hands_on: true
+  products_listed: 18
+  checked: '2026-11-20'
+- id: digitalcameraworld
+  outlet: Digital Camera World
+  country: UK
+  title: 'The best binoculars in 2026: for astronomy, wildlife, sports fans, and more'
+  url: https://www.digitalcameraworld.com/uk/buying-guides/best-binoculars
+  published: '2026-11-09'
+  hands_on: true
+  products_listed: 11
+  checked: '2026-11-20'
+- id: outdoorlife
+  outlet: Outdoor Life
+  country: US
+  title: The Best Binoculars of 2026, Tested and Reviewed
+  url: https://www.outdoorlife.com/gear/best-binoculars-2026/
+  published: '2026-09-18'
+  hands_on: true
+  products_listed: 13
+  checked: '2026-11-20'
+- id: countryfile
+  outlet: BBC Countryfile
+  country: UK
+  title: 'Best binoculars for birdwatching in 2025: three popular brands reviewed'
+  url: https://www.countryfile.com/countryfile/go-outdoors/gear/best-binoculars-for-wildlife-watchers/
+  published: '2024-01-10'
+  hands_on: false
+  products_listed: 3
+  checked: '2026-11-20'
+- id: advnture
+  outlet: Advnture
+  country: UK
+  title: 'The best binoculars 2026: for wildlife watching, crag appraisal and more'
+  url: https://www.advnture.com/buying-guides/best-binoculars
+  published: '2025-08-28'
+  hands_on: true
+  products_listed: 12
+  checked: '2026-11-20'
+- id: gearjunkie
+  outlet: GearJunkie
+  country: US
+  title: The Best Binoculars of 2026
+  url: https://gearjunkie.com/technology/gadgets/best-binoculars
+  published: '2026-10-31'
+  hands_on: true
+  products_listed: 13
+  checked: '2026-11-20'
+- id: outdoorgearlab
+  outlet: OutdoorGearLab
+  country: US
+  title: The Best Binoculars
+  url: https://www.outdoorgearlab.com/topics/camping-and-hiking/best-binoculars
+  published: '2025-04-25'
+  hands_on: true
+  products_listed: 7
+  checked: '2026-11-20'
+- id: birdwatching
+  outlet: Bird Watching magazine
+  country: UK
+  title: The best bird watching binoculars
+  url: https://birdwatching.co.uk/gear/binoculars/best-binoculars-for-birdwatching
+  published: ''
+  hands_on: false
+  products_listed: 10
+  checked: '2026-11-20'
+- id: expertreviews
+  outlet: Expert Reviews
+  country: UK
+  title: 'Best binoculars: Get closer to nature with the top compact and full-sized binoculars'
+  url: https://www.expertreviews.co.uk/technology/printing-cameras/best-binoculars-for-birdwatching-nature-spotting-compact-full-sized-from-50
+  published: '2024-10-15'
+  hands_on: true
+  products_listed: 7
+  checked: '2026-11-20'
+- id: t3
+  outlet: T3
+  country: UK
+  title: 'Best binoculars 2025: see the world in stunning detail'
+  url: https://t3.com/features/best-binoculars
+  published: '2025-05-27'
+  hands_on: true
+  products_listed: 9
+  checked: '2026-11-20'
+- id: space
+  outlet: Space.com
+  country: US
+  title: The best binoculars 2026 — models for stargazing, wildlife and general use
+  url: https://www.space.com/26021-best-binoculars.html
+  published: '2026-09-18'
+  hands_on: true
+  products_listed: 11
+  checked: '2026-11-20'
+products:
+# ---------- products named in two or more reviews ----------
+- id: swarovski-nl-pure-42
+  name: Swarovski NL Pure 8x42 / 10x42
+  brand: Swarovski
+  price_gbp: 2325
+  price_usd: 3199
+  price_note: £2,325 (10x42) in Expert Reviews; $3,199 (10x42) in GearJunkie (and T3)
+  best_for: [premium, birdwatching, wide view]
+  summary: 'The most-recommended premium pair: reviewers praise very sharp views with an unusually wide field of view and comfortable handling. The usual criticisms are the very high price, its size and weight, and an awkward diopter or eye adjustment.'
+  verdicts:
+  - review: livescience
+    label: The premium option
+    award: named
+    for: [premium, birdwatching]
+  - review: birdwatching
+    label: Best bird watching binoculars for expert birders
+    award: named
+    for: [birdwatching, premium]
+  - review: expertreviews
+    label: Best binoculars you can buy
+    award: top
+    for: [premium, wide view]
+  - review: t3
+    label: Best premium
+    award: named
+    for: [premium, wide view]
+  - review: gearjunkie
+    label: Best Premium Binoculars
+    award: named
+    rating: 8.2
+    scale: 10
+    for: [premium]
+  buy: https://www.amazon.co.uk/s?k=Swarovski+NL+Pure+8x42
+- id: canon-10x42l-is-wp
+  name: Canon 10x42L IS WP
+  brand: Canon
+  price_usd: 1599
+  price_note: $1,492.55 to $1,599 in Space.com; no UK price printed (UK reviews DCW and T3 print only dollars)
+  best_for: [image stabilised, stargazing]
+  summary: Push-button image stabilisation gives steady, shake-free 10x views, praised for both wildlife and the night sky, and it is waterproof. It is heavy at about 1.1kg, expensive, and runs its batteries down quickly.
+  verdicts:
+  - review: livescience
+    label: Best all-rounder
+    award: named
+    for: [image stabilised]
+  - review: digitalcameraworld
+    label: Best stabilized
+    award: named
+    for: [image stabilised]
+  - review: t3
+    label: Best for handheld stargazing
+    award: named
+    for: [stargazing, image stabilised]
+  - review: space
+    label: Best binoculars overall
+    award: top
+    rating: 5
+    scale: 5
+    for: [stargazing, image stabilised]
+  buy: https://www.amazon.co.uk/s?k=Canon+10x42L+IS+WP
+- id: celestron-skymaster-15x70
+  name: Celestron SkyMaster 15x70
+  brand: Celestron
+  price_gbp: 120
+  price_note: 119.99 (UK list) in Advnture; Live Science prints no price
+  best_for: [stargazing, budget]
+  summary: A cheap, big-lensed astronomy pair that reviewers like for exploring the night sky. It is heavy and bulky, is much better on a tripod, and shows noticeable colour fringing.
+  verdicts:
+  - review: livescience
+    label: Excellent budget binos
+    award: named
+    for: [stargazing, budget]
+  - review: digitalcameraworld
+    label: Best for astronomy
+    award: named
+    for: [stargazing]
+  - review: advnture
+    label: Best for stargazing
+    award: named
+    for: [stargazing, budget]
+  buy: https://www.amazon.co.uk/s?k=Celestron+SkyMaster+15x70
+- id: celestron-nature-dx-ed-50
+  name: Celestron Nature DX ED 10x50 / 12x50
+  brand: Celestron
+  price_note: 'No UK pound or US-review price: $249.99 appears only in UK reviews (Digital Camera World, T3)'
+  best_for: [all-round, stargazing]
+  summary: Two UK reviews make the 12x50 their overall pick for bright, sharp ED-glass views in a body compact enough for travel; Live Science likes the 10x50 for handheld stargazing. Criticisms are limited eye relief, average eyecups and lens caps that get in the way.
+  verdicts:
+  - review: livescience
+    label: For handheld stargazing
+    award: named
+    for: [stargazing]
+  - review: digitalcameraworld
+    label: Best overall
+    award: top
+    rank: 1
+    for: [all-round]
+  - review: t3
+    label: Best overall
+    award: top
+    rank: 1
+    for: [all-round]
+  buy: https://www.amazon.co.uk/s?k=Celestron+Nature+DX+ED+12x50
+- id: celestron-trailseeker-8x42
+  name: Celestron TrailSeeker 8x42
+  brand: Celestron
+  price_gbp: 270
+  price_note: £270 when reviewed in Expert Reviews
+  best_for: [birdwatching, all-round, value]
+  summary: A mid-priced, waterproof 8x42 with a wide field of view, sharp bright images and accessories including a harness. Reviewers mention soft image edges, loose lens caps and a fairly heavy body.
+  verdicts:
+  - review: digitalcameraworld
+    label: Best choice for bird watching at a great price
+    award: named
+    for: [birdwatching, value]
+  - review: expertreviews
+    label: Best all-round binoculars
+    award: named
+    for: [all-round]
+  - review: t3
+    label: Best mid-range
+    award: named
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Celestron+TrailSeeker+8x42
+- id: hawke-frontier-ed-x-8x42
+  name: Hawke Frontier ED X 8x42
+  brand: Hawke
+  price_note: 'No usable price: $339.99 in Bird Watching (UK); none in Live Science'
+  best_for: [birdwatching, value]
+  summary: 'Called the pair most people should get by Live Science and the best budget ED pair by Bird Watching: ED glass, a strong build and user-friendly design. Live Science found it not especially light and a little soft at the edges.'
+  verdicts:
+  - review: livescience
+    label: The pair 'most people' should get
+    award: named
+    for: [birdwatching, value]
+  - review: birdwatching
+    label: Best budget ED bird watching binoculars
+    award: named
+    for: [birdwatching, value]
+  buy: https://www.amazon.co.uk/s?k=Hawke+Frontier+ED+X+8x42
+- id: nikon-monarch-m7-42
+  name: Nikon Monarch M7 8x42 / 10x42
+  brand: Nikon
+  price_usd: 550
+  price_note: $550 list (10x42) in OutdoorGearLab; none in Live Science
+  best_for: [birdwatching, close focus]
+  summary: A mid-priced ED-glass pair praised for clarity, easy adjustment and good close focus. Reviewers note a stiff focus wheel, soft edges and a middling field of view.
+  verdicts:
+  - review: livescience
+    label: Mid-tier Nikon option
+    award: named
+    for: [birdwatching]
+  - review: outdoorgearlab
+    label: Also Great
+    award: named
+    for: [close focus]
+    rank: 4
+  buy: https://www.amazon.co.uk/s?k=Nikon+Monarch+M7+8x42
+- id: celestron-skymaster-25x100
+  name: Celestron SkyMaster 25x100
+  brand: Celestron
+  price_usd: 450
+  price_note: $446.79 to $519.95 in Space.com
+  best_for: [stargazing]
+  summary: Huge 25x astronomy binoculars with high magnification and strong clarity for the night sky. At almost 4kg they must go on a tripod, and Live Science's tripod mount slipped loose in testing.
+  verdicts:
+  - review: livescience
+    label: For serious deep-sky stargazing
+    award: named
+    for: [stargazing]
+  - review: space
+    label: Best for magnification
+    award: named
+    rating: 4
+    scale: 5
+    for: [stargazing]
+  buy: https://www.amazon.co.uk/s?k=Celestron+SkyMaster+25x100
+- id: swarovski-cl-companion-10x30
+  name: Swarovski CL Companion 10x30
+  brand: Swarovski
+  price_note: 'No usable price: $1,549 in Digital Camera World (UK); none in Live Science'
+  best_for: [compact, premium]
+  summary: A light, compact premium pair with excellent optical clarity and a very good build. It is very expensive and its small lenses are weaker in low light.
+  verdicts:
+  - review: livescience
+    label: For superior optics
+    award: named
+    for: [compact, premium]
+  - review: digitalcameraworld
+    label: Best for optical quality
+    award: named
+    for: [premium, compact]
+  buy: https://www.amazon.co.uk/s?k=Swarovski+CL+Companion+10x30
+- id: nikon-stabilized-12x25-s
+  name: Nikon Stabilized 12x25 S
+  brand: Nikon
+  price_usd: 697
+  price_note: $696.95 in Space.com; none in Live Science
+  best_for: [image stabilised, compact]
+  summary: A tiny, light (about 14oz) pair with effective image stabilisation. Views are on the dark side with soft edges, and it is not waterproof.
+  verdicts:
+  - review: livescience
+    label: Compact stabilization
+    award: named
+    for: [image stabilised, compact]
+  - review: space
+    label: Best compact IS binoculars
+    award: named
+    rating: 5
+    scale: 5
+    for: [image stabilised, compact]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Stabilized+12x25+S
+- id: zeiss-victory-sf-42
+  name: Zeiss Victory SF 8x42 / 10x42
+  brand: Zeiss
+  price_usd: 3000
+  price_note: $3,000 list (10x42) in OutdoorGearLab
+  best_for: [premium, close focus]
+  summary: 'The top scorer in OutdoorGearLab''s testing and called the NL Pure''s rival by Live Science: superb clarity and brightness, a wide view, very close focus and excellent construction. The price is prohibitive for most.'
+  verdicts:
+  - review: livescience
+    label: The NL Pure rival
+    award: named
+    for: [premium]
+  - review: outdoorgearlab
+    label: Best of the Best at a Premium Price
+    award: top
+    for: [premium, close focus]
+    rank: 1
+  buy: https://www.amazon.co.uk/s?k=Zeiss+Victory+SF+8x42
+- id: nikon-action-zoom-10-22x50
+  name: Nikon Action Zoom 10-22x50
+  brand: Nikon
+  price_usd: 167
+  price_note: $166.95 to $199.95 in Space.com (and Digital Camera World)
+  best_for: [zoom]
+  summary: Zoom binoculars that go from 10x to 22x with an easy lever; bright and good value. They are heavy, dimmer at full zoom, need a tripod at high power and are not waterproof.
+  verdicts:
+  - review: digitalcameraworld
+    label: Best multi-zoom
+    award: named
+    for: [zoom]
+  - review: space
+    label: Best zoom binoculars
+    award: named
+    rating: 4
+    scale: 5
+    for: [zoom]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Action+Zoom+10-22x50
+- id: nocs-field-issue-8x42
+  name: Nocs Provisions Field Issue 8x42
+  brand: Nocs Provisions
+  price_usd: 200
+  price_note: $200 in Outdoor Life and GearJunkie
+  best_for: [value]
+  summary: 'Outdoor Life''s Great Buy: excellent close focus, a lifetime warranty and, says GearJunkie, a durable yet lightweight build. Some internal lens surfaces are uncoated and the focus wheel sits close to the eye.'
+  verdicts:
+  - review: outdoorlife
+    label: Great Buy
+    award: named
+    for: [value]
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 7.5
+    scale: 10
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Nocs+Provisions+Field+Issue+8x42
+- id: zeiss-sfl-10x50
+  name: Zeiss SFL 10x50
+  brand: Zeiss
+  price_usd: 1800
+  price_note: $1,799 to $1,800 in Outdoor Life and GearJunkie
+  best_for: [premium, low light]
+  summary: 'GearJunkie''s overall pick: 50mm performance and excellent low-light views in a body the size of a 42mm pair, with a fast focus wheel. Expensive, and the case and lens covers disappoint.'
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [premium]
+  - review: gearjunkie
+    label: Best Overall Binoculars
+    award: top
+    rating: 9.4
+    scale: 10
+    for: [low light, premium]
+  buy: https://www.amazon.co.uk/s?k=Zeiss+SFL+10x50
+- id: nikon-trailblazer-atb-25
+  name: Nikon Trailblazer ATB 8x25 / 10x25
+  brand: Nikon
+  price_usd: 120
+  price_note: $120 in GearJunkie (8x25) and OutdoorGearLab (10x25)
+  best_for: [compact, budget, travel]
+  summary: A cheap, light pocket pair that OutdoorGearLab recommends for travel. It is dim in poor light and the view feels narrow.
+  verdicts:
+  - review: outdoorgearlab
+    label: Best Travel Binoculars on a Budget
+    award: named
+    for: [compact, budget, travel]
+    rank: 12
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 7
+    scale: 10
+    for: [compact]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Trailblazer+ATB+8x25
+- id: vortex-diamondback-hd-8x42
+  name: Vortex Diamondback HD 8x42
+  brand: Vortex
+  price_usd: 320
+  price_note: $320 in OutdoorGearLab and GearJunkie
+  best_for: [value]
+  summary: 'OutdoorGearLab''s best bang for the buck: bright, wide views and a generous warranty. Some colour fringing, and GearJunkie found the focus wheel, diopter and harness clunky.'
+  verdicts:
+  - review: outdoorgearlab
+    label: Best Bang for the Buck
+    award: named
+    for: [value]
+    rank: 6
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 7.8
+    scale: 10
+    for: [value]
+  buy: https://www.amazon.co.uk/s?k=Vortex+Diamondback+HD+8x42
+- id: vortex-viper-hd-42
+  name: Vortex Viper HD 8x42 / 10x42
+  brand: Vortex
+  price_usd: 720
+  price_note: $720 (8x42) in OutdoorGearLab; $730 (10x42) in GearJunkie
+  best_for: [all-round, birdwatching]
+  summary: 'OutdoorGearLab''s pick for most people: very clear, bright, comfortable and easy to adjust, with good close focus for birding. It is front-heavy and expensive.'
+  verdicts:
+  - review: outdoorgearlab
+    label: Best Binoculars for Most People
+    award: top
+    rank: 5
+    for: [all-round]
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 8
+    scale: 10
+    for: [birdwatching]
+  buy: https://www.amazon.co.uk/s?k=Vortex+Viper+HD+8x42
+- id: celestron-skymaster-pro-15x70
+  name: Celestron SkyMaster Pro 15x70
+  brand: Celestron
+  price_usd: 280
+  price_note: $280 in GearJunkie; $279.49 to $325.39 in Space.com
+  best_for: [stargazing]
+  summary: A light-gathering astronomy pair with good Moon views and excellent eye relief. Heavy and hard to hold steady, so plan on a tripod; not made for daytime use.
+  verdicts:
+  - review: space
+    label: Best for moon views
+    award: named
+    rating: 4.5
+    scale: 5
+    for: [stargazing]
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 7.3
+    scale: 10
+    for: [stargazing]
+  buy: https://www.amazon.co.uk/s?k=Celestron+SkyMaster+Pro+15x70
+- id: celestron-nature-dx-8x42
+  name: Celestron Nature DX 8x42
+  brand: Celestron
+  price_usd: 180
+  price_note: $180 list in OutdoorGearLab
+  best_for: [budget, beginners]
+  summary: An inexpensive, fairly light 8x42 with good clarity in daylight and an excellent focus knob. Edges are blurry, the neck strap is poor and construction is only average.
+  verdicts:
+  - review: outdoorgearlab
+    label: Best on a Tight Budget
+    award: named
+    for: [budget]
+    rank: 8
+  - review: t3
+    label: Best for beginners
+    award: named
+    for: [beginners]
+  buy: https://www.amazon.co.uk/s?k=Celestron+Nature+DX+8x42
+- id: nikon-aculon-a211-10x50
+  name: Nikon Aculon A211 10x50
+  brand: Nikon
+  price_gbp: 139
+  price_note: £139 when reviewed in Expert Reviews
+  best_for: [stargazing, budget]
+  summary: A cheap, bright, solidly built porro-prism pair recommended for starting stargazing. It is heavy at about 900g, not waterproof and does not focus close.
+  verdicts:
+  - review: expertreviews
+    label: Best binoculars for starting stargazers
+    award: named
+    for: [stargazing, budget]
+  - review: t3
+    label: Best for brightness
+    award: named
+    for: []
+  buy: https://www.amazon.co.uk/s?k=Nikon+Aculon+A211+10x50
+# ---------- products named in one review ----------
+- id: celestron-regal-ed-10x42
+  name: Celestron Regal ED 10x42
+  brand: Celestron
+  best_for: [all-round, glasses wearers]
+  summary: 'Live Science''s first pick in its best-for-everything section: ED glass gives bright, sharp views and 20mm eye relief suits glasses wearers. The focus wheel is loose and 10x can look slightly shaky.'
+  verdicts:
+  - review: livescience
+    label: Excellent optics for the price
+    award: named
+    for: [all-round, glasses wearers]
+  buy: https://www.amazon.co.uk/s?k=Celestron+Regal+ED+10x42
+- id: olympus-8x42-pro
+  name: Olympus 8x42 Pro
+  brand: Olympus
+  best_for: [low light]
+  summary: Recommended for low light thanks to its coatings and large exit pupil. No tripod thread and some colour fringing against bright skies.
+  verdicts:
+  - review: livescience
+    label: The low-light bins
+    award: named
+    for: [low light]
+  buy: https://www.amazon.co.uk/s?k=Olympus+8x42+Pro+binoculars
+- id: nikon-prostaff-p7-10x42
+  name: Nikon Prostaff P7 10x42
+  brand: Nikon
+  best_for: [budget]
+  summary: A slim, durable budget pick with a locking diopter. No ED glass, a small exit pupil and 15.7mm eye relief.
+  verdicts:
+  - review: livescience
+    label: If you're on a budget
+    award: named
+    for: [budget]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Prostaff+P7+10x42
+- id: hawke-endurance-ed-8x25
+  name: Hawke Endurance ED 8x25
+  brand: Hawke
+  best_for: [compact]
+  summary: A small folding pair with bright, sharp views and almost no colour fringing. Short eye relief and small lenses make it poor for glasses wearers and low light.
+  verdicts:
+  - review: livescience
+    label: Excellent for the price
+    award: named
+    for: [compact]
+  buy: https://www.amazon.co.uk/s?k=Hawke+Endurance+ED+8x25
+- id: olympus-8x25-wp-ii
+  name: Olympus 8x25 WP II
+  brand: Olympus
+  best_for: [compact]
+  summary: A robust, waterproof and reasonably priced compact all-rounder. No ED glass and the lens caps are easy to lose.
+  verdicts:
+  - review: livescience
+    label: A great all-rounder
+    award: named
+    for: [compact]
+  buy: https://www.amazon.co.uk/s?k=Olympus+8x25+WP+II
+- id: canon-15x50-is-all-weather
+  name: Canon 15x50 IS All Weather
+  brand: Canon
+  best_for: [image stabilised]
+  summary: Stabilisation makes 15x usable handheld for wildlife and stars. Only splash-resistant, limited eye relief, and the rubber coating scratches easily.
+  verdicts:
+  - review: livescience
+    label: Extra reach
+    award: named
+    for: [image stabilised]
+  buy: https://www.amazon.co.uk/s?k=Canon+15x50+IS+All+Weather
+- id: swarovski-nl-pure-8x32
+  name: Swarovski NL Pure 8x32
+  brand: Swarovski
+  best_for: [premium]
+  summary: Exceptional image quality sharp to the edges in a smaller body than the 42mm NL Pure. Less suited to low light, with a stiff diopter.
+  verdicts:
+  - review: livescience
+    label: Compact quality
+    award: named
+    for: [premium]
+  buy: https://www.amazon.co.uk/s?k=Swarovski+NL+Pure+8x32
+- id: leica-noctivid-10x42
+  name: Leica Noctivid 10x42
+  brand: Leica
+  best_for: [premium]
+  summary: A very sharp premium pair with no colour fringing and 19mm eye relief. No tripod adapter and few variants.
+  verdicts:
+  - review: livescience
+    label: The classic 8x42
+    award: named
+    for: [premium]
+  buy: https://www.amazon.co.uk/s?k=Leica+Noctivid+10x42
+- id: praktica-falcon-10x50
+  name: Praktica Falcon 10x50
+  brand: Praktica
+  price_note: 'No usable price: $79.46 in Digital Camera World (UK)'
+  best_for: [budget]
+  summary: Digital Camera World's budget pick for its low price, image quality, smooth focusing and 25-year warranty. Not waterproof, with loose lens caps, a basic case and 13mm eye relief that glasses wearers may find frustrating.
+  verdicts:
+  - review: digitalcameraworld
+    label: Best budget binoculars
+    award: named
+    for: [budget]
+  buy: https://www.amazon.co.uk/s?k=Praktica+Falcon+10x50
+- id: vortex-crossfire-hd-10x50
+  name: Vortex Crossfire HD 10x50
+  brand: Vortex
+  price_note: 'No usable price: $167.95 to $169.99 in Digital Camera World (UK)'
+  best_for: [all-round, low light]
+  summary: Strong low-light performance and a harness that takes weight off the neck. The harness and tethered lens caps are fiddly.
+  verdicts:
+  - review: digitalcameraworld
+    label: Best all-round
+    award: named
+    for: [all-round, low light]
+  buy: https://www.amazon.co.uk/s?k=Vortex+Crossfire+HD+10x50
+- id: celestron-nature-dx-12x56
+  name: Celestron Nature DX 12x56
+  brand: Celestron
+  price_note: 'No usable price: $189 to $269.74 in Digital Camera World (UK)'
+  best_for: [glasses wearers]
+  summary: Good reach and value with generous eye relief for glasses wearers. Some colour fringing and softness at the edges.
+  verdicts:
+  - review: digitalcameraworld
+    label: Best for high magnification
+    award: named
+    for: [glasses wearers]
+  buy: https://www.amazon.co.uk/s?k=Celestron+Nature+DX+12x56
+- id: hikmicro-habrok-4k-he25l
+  name: HikMicro Habrok 4K HE25L
+  brand: HikMicro
+  price_note: 'No usable price: $1,429 to $1,495 in Digital Camera World (UK)'
+  best_for: [night vision]
+  summary: Digital binoculars combining day, low-light and thermal imaging, and able to capture stills and video. Heavy, needs power and takes time to learn.
+  verdicts:
+  - review: digitalcameraworld
+    label: Best multi-spectrum
+    award: named
+    for: [night vision]
+  buy: https://www.amazon.co.uk/s?k=HikMicro+Habrok+4K
+- id: akaso-seemor-200
+  name: Akaso Seemor 200
+  brand: Akaso
+  price_note: 'No usable price: $249.99 in Digital Camera World (UK)'
+  best_for: [night vision]
+  summary: A versatile, sturdy and waterproof night-vision device at a lower price. Neither small nor light, and file transfer is clunky.
+  verdicts:
+  - review: digitalcameraworld
+    label: Best budget night vision
+    award: named
+    for: [night vision]
+  buy: https://www.amazon.co.uk/s?k=Akaso+Seemor+200
+- id: nikon-monarch-m5-10x50
+  name: Nikon Monarch M5 10x50
+  brand: Nikon
+  price_usd: 390
+  price_note: $390 in Outdoor Life
+  best_for: [value]
+  summary: Outdoor Life's Editor's Choice for its ED glass, coatings and fair price. Square eyecups don't suit every face, close focus disappoints and it did poorly in their low-light test.
+  verdicts:
+  - review: outdoorlife
+    label: Editor's Choice
+    award: top
+    for: [value]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Monarch+M5+10x50
+- id: hawke-vantage-hd-8x34
+  name: Hawke Vantage HD 8x34
+  brand: Hawke
+  price_usd: 170
+  price_note: About $170 in Outdoor Life
+  best_for: [budget]
+  summary: A light, open-barrel budget pair that is easy to use one-handed, with a lifetime warranty. Focus feels spongy.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [budget]
+  buy: https://www.amazon.co.uk/s?k=Hawke+Vantage+HD+8x34
+- id: leupold-bx-3-alpine-hd-10x42
+  name: Leupold BX-3 Alpine HD 10x42
+  brand: Leupold
+  price_usd: 300
+  price_note: $300 in Outdoor Life
+  best_for: [low light]
+  summary: Durable magnesium body and the best 10x in Outdoor Life's low-light test. Noticeable distortion at the edges.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [low light]
+  buy: https://www.amazon.co.uk/s?k=Leupold+BX-3+Alpine+HD+10x42
+- id: swarovski-nl-pure-10x52
+  name: Swarovski NL Pure 10x52
+  brand: Swarovski
+  price_usd: 3500
+  price_note: $3,449 to $3,800 in Outdoor Life (the page is inconsistent; about $3,500 in the text)
+  best_for: [premium, low light]
+  summary: Easily won Outdoor Life's low-light test with a wide, flat field. Very expensive, and the diopter does not lock.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [premium, low light]
+  buy: https://www.amazon.co.uk/s?k=Swarovski+NL+Pure+10x52
+- id: tract-toric-uhd-8x32
+  name: Tract Toric UHD 8x32
+  brand: Tract
+  price_usd: 724
+  price_note: $724 in Outdoor Life
+  best_for: [compact]
+  summary: A tough, bright compact that is easy to use one-handed. Relatively expensive for its size, with slight colour fringing at the edges.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [compact]
+  buy: https://www.amazon.co.uk/s?k=Tract+Toric+UHD+8x32
+- id: maven-b7-8x25
+  name: Maven B.7 8x25
+  brand: Maven
+  price_usd: 600
+  price_note: $600 in Outdoor Life
+  best_for: [compact]
+  summary: A small pair with well-textured controls. Too small for scanning open country and hard to use in gloves.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [compact]
+  buy: https://www.amazon.co.uk/s?k=Maven+B.7+8x25
+- id: vortex-razor-uhd-8x32
+  name: Vortex Razor UHD 8x32
+  brand: Vortex
+  price_usd: 1450
+  price_note: $1,450 in Outdoor Life
+  best_for: [compact, premium]
+  summary: Premium glass in a durable magnesium body with an oversized focus wheel and a harness included. Expensive for an 8x32.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [compact, premium]
+  buy: https://www.amazon.co.uk/s?k=Vortex+Razor+UHD+8x32
+- id: kite-apc-16x42-ed
+  name: Kite APC Stabilized 16x42 ED
+  brand: Kite
+  price_usd: 1350
+  price_note: About $1,350 in Outdoor Life
+  best_for: [image stabilised]
+  summary: Compact for a stabilised pair, with excellent ED glass and AAA batteries. Narrow view and an awkward focus knob.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [image stabilised]
+  buy: https://www.amazon.co.uk/s?k=Kite+APC+16x42
+- id: sig-sauer-zulu6-hdx-pro-18x50
+  name: Sig Sauer ZULU6 HDX PRO 18x50
+  brand: Sig Sauer
+  price_usd: 1700
+  price_note: $1,700 in Outdoor Life
+  best_for: [image stabilised]
+  summary: Stabilisation makes 18x usable by hand with a good image. Awkward to hold, expensive, with no built-in tripod mount.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [image stabilised]
+  buy: https://www.amazon.co.uk/s?k=Sig+Sauer+Zulu6+HDX+Pro+18x50
+- id: zeiss-conquest-hdx-15x56-lrp
+  name: Zeiss Conquest HDX 15x56 LRP
+  brand: Zeiss
+  price_usd: 2000
+  price_note: $2,000 in Outdoor Life
+  best_for: [long range]
+  summary: A large 15x pair with a ranging reticle and a good tripod mount, aimed at long-distance spotting; limited use beyond that.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [long range]
+  buy: https://www.amazon.co.uk/s?k=Zeiss+Conquest+HDX+15x56
+- id: burris-signature-hd-15x56
+  name: Burris Signature HD 15x56
+  brand: Burris
+  price_usd: 960
+  price_note: $960 in Outdoor Life
+  best_for: [low light]
+  summary: Good optics and runner-up in Outdoor Life's low-light test, with a lifetime warranty. Unwieldy without a tripod and the diopter is loose.
+  verdicts:
+  - review: outdoorlife
+    label: ''
+    award: listed
+    for: [low light]
+  buy: https://www.amazon.co.uk/s?k=Burris+Signature+HD+15x56
+- id: hawke-endurance-8x42
+  name: Hawke Endurance 8x42
+  brand: Hawke
+  price_gbp: 289
+  price_note: £289 (UK list) in Advnture
+  best_for: [all-round, birdwatching]
+  summary: 'Advnture''s overall pick: strong performance for the price, natural colours and a high-end case. Slightly soft at the edges and heavier than some.'
+  verdicts:
+  - review: advnture
+    label: Best overall
+    award: top
+    rank: 1
+    for: [all-round, birdwatching]
+  buy: https://www.amazon.co.uk/s?k=Hawke+Endurance+ED+8x42
+- id: nocs-field-issue-10x32
+  name: Nocs Provisions Field Issue 10x32
+  brand: Nocs Provisions
+  price_gbp: 177
+  price_note: £177 (UK list) in Advnture
+  best_for: [lightweight, beginners]
+  summary: Light, waterproof and clear with smooth focusing; good for beginners. 10x is high for birding and it does not focus very close.
+  verdicts:
+  - review: advnture
+    label: best lightweight
+    award: named
+    for: [lightweight, beginners]
+  buy: https://www.amazon.co.uk/s?k=Nocs+Field+Issue+10x32
+- id: zeiss-terra-ed-8x32
+  name: Zeiss Terra ED 8x32
+  brand: Zeiss
+  price_gbp: 400
+  price_note: £400 (UK list) in Advnture
+  best_for: [birdwatching]
+  summary: Exceptional image quality with little edge distortion and easy focusing for keen birders. Less bright than expected in low light.
+  verdicts:
+  - review: advnture
+    label: For serious birders
+    award: named
+    for: [birdwatching]
+  buy: https://www.amazon.co.uk/s?k=Zeiss+Terra+ED+8x32
+- id: nocs-standard-issue
+  name: Nocs Provisions Standard Issue
+  brand: Nocs Provisions
+  price_gbp: 97
+  price_note: £97 (UK list) in Advnture
+  best_for: [value, compact]
+  summary: A compact, waterproof pair with outstanding image quality for the money, a smartphone adapter and a lifetime warranty. The strap is minimal.
+  verdicts:
+  - review: advnture
+    label: Best value
+    award: named
+    for: [value, compact]
+  buy: https://www.amazon.co.uk/s?k=Nocs+Standard+Issue+binoculars
+- id: kowa-yf-8x30
+  name: Kowa YF 8x30
+  brand: Kowa
+  price_note: 'No usable price: $149 (US list) only, in Advnture (UK)'
+  best_for: [kids]
+  summary: Small, light and bright for the money; a slightly narrower view and basic extras.
+  verdicts:
+  - review: advnture
+    label: Best for kids
+    award: named
+    for: [kids]
+  buy: https://www.amazon.co.uk/s?k=Kowa+YF+8x30
+- id: zeiss-terra-ed-pocket
+  name: Zeiss Terra ED Pocket
+  brand: Zeiss
+  price_gbp: 309
+  price_note: £309 (UK list) in Advnture
+  best_for: [compact, camping]
+  summary: A rugged, waterproof pocket pair with precise optics. The adjustment dial placement is awkward.
+  verdicts:
+  - review: advnture
+    label: Best for campers
+    award: named
+    for: [compact, camping]
+  buy: https://www.amazon.co.uk/s?k=Zeiss+Terra+ED+Pocket
+- id: opticron-explorer-wa-ed-r-8x32
+  name: Opticron Explorer WA ED-R 8x32
+  brand: Opticron
+  price_gbp: 239
+  price_note: £239 (UK list) in Advnture
+  best_for: [walking, wide view]
+  summary: The widest view in Advnture's test, small and light. Smaller lenses gather less light and it won't focus close enough for butterflies.
+  verdicts:
+  - review: advnture
+    label: Best for hikers
+    award: named
+    for: [walking, wide view]
+  buy: https://www.amazon.co.uk/s?k=Opticron+Explorer+WA+ED-R+8x32
+- id: bushnell-prime-8x42
+  name: Bushnell Prime 8x42
+  brand: Bushnell
+  price_gbp: 150
+  price_note: £149.99 (UK list) in Advnture
+  best_for: [rugged]
+  summary: Very robust with a hydrophobic lens coating, a good image for the price and a lifetime guarantee. Stiff eye adjusters and limited close focus.
+  verdicts:
+  - review: advnture
+    label: Toughest binoculars
+    award: named
+    for: [rugged]
+  buy: https://www.amazon.co.uk/s?k=Bushnell+Prime+8x42
+- id: nocs-pro-issue-8x42
+  name: Nocs Provisions Pro Issue 8x42
+  brand: Nocs Provisions
+  price_usd: 300
+  price_note: $300 to $329 in GearJunkie
+  best_for: [budget, lightweight]
+  summary: 'GearJunkie''s budget pick: light, durable and clearer than many budget pairs. Weaker in low light than premium models.'
+  verdicts:
+  - review: gearjunkie
+    label: Best Budget Binoculars
+    award: named
+    rating: 7.8
+    scale: 10
+    for: [budget, lightweight]
+  buy: https://www.amazon.co.uk/s?k=Nocs+Pro+Issue+8x42
+- id: nikon-monarch-m5-8x42
+  name: Nikon Monarch M5 8x42
+  brand: Nikon
+  price_usd: 340
+  price_note: $340 in GearJunkie
+  best_for: [birdwatching]
+  summary: 'GearJunkie''s birdwatching pick: not heavy, crisp in all light and resists fogging. Close focus is only average.'
+  verdicts:
+  - review: gearjunkie
+    label: Best Binoculars for Birdwatching
+    award: named
+    rating: 8
+    scale: 10
+    for: [birdwatching]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Monarch+M5+8x42
+- id: redfield-rebel-12x50
+  name: Redfield Rebel 12x50
+  brand: Redfield
+  price_usd: 150
+  price_note: $150 in GearJunkie
+  best_for: [budget]
+  summary: Very affordable with good clarity for the price. Feels cheaply made and the edges are not crisp.
+  verdicts:
+  - review: gearjunkie
+    label: Best Binoculars under $200
+    award: named
+    rating: 7
+    scale: 10
+    for: [budget]
+  buy: https://www.amazon.co.uk/s?k=Redfield+Rebel+12x50
+- id: maven-c3-10x50
+  name: Maven C.3 10x50
+  brand: Maven
+  price_usd: 550
+  price_note: $550 in GearJunkie
+  best_for: [hunting, low light]
+  summary: Durable, easy to adjust and good in low light. Narrow field of view.
+  verdicts:
+  - review: gearjunkie
+    label: Best Binoculars for Hunting
+    award: named
+    rating: 9.3
+    scale: 10
+    for: [hunting, low light]
+  buy: https://www.amazon.co.uk/s?k=Maven+C.3+10x50
+- id: sig-sauer-zulu6-hdx-20x42
+  name: Sig Sauer Zulu6 HDX 20x42
+  brand: Sig Sauer
+  price_usd: 1300
+  price_note: $1,300 in GearJunkie
+  best_for: [image stabilised]
+  summary: Superb electronic stabilisation at 20x in a light body. Weaker in low light and pricey.
+  verdicts:
+  - review: gearjunkie
+    label: ''
+    award: listed
+    rating: 8
+    scale: 10
+    for: [image stabilised]
+  buy: https://www.amazon.co.uk/s?k=Sig+Sauer+Zulu6+HDX+20x42
+- id: vortex-diamondback-hd-8x28
+  name: Vortex Diamondback HD 8x28
+  brand: Vortex
+  price_usd: 210
+  price_note: $210 list in OutdoorGearLab
+  best_for: [compact]
+  summary: 'OutdoorGearLab''s compact pick: good clarity in a small, light and comfortable body. Poor in low light, and with glasses the edges of the view darken slightly.'
+  verdicts:
+  - review: outdoorgearlab
+    label: Best Compact Binoculars
+    award: named
+    for: [compact]
+    rank: 10
+  buy: https://www.amazon.co.uk/s?k=Vortex+Diamondback+HD+8x28
+- id: bresser-condor-8x42
+  name: Bresser Condor 8x42
+  brand: Bresser
+  price_gbp: 150
+  price_note: Around £150 in Bird Watching's text (printed price $180)
+  best_for: [beginners, birdwatching]
+  summary: Well balanced and straightforward with an excellent focus wheel and good close focus. Some fall-off in low light, a moderate field of view and slightly stiff focus.
+  verdicts:
+  - review: birdwatching
+    label: Best beginner bird watching binoculars
+    award: named
+    for: [beginners, birdwatching]
+  buy: https://www.amazon.co.uk/s?k=Bresser+Condor+8x42
+- id: nikon-monarch-m7-plus-8x30
+  name: Nikon Monarch M7+ 8x30
+  brand: Nikon
+  best_for: [compact, close focus]
+  summary: Very small and light, bright and clean with superb close focus. May be too small for some hands; some colour fringing.
+  verdicts:
+  - review: birdwatching
+    label: Best bird watching binoculars for casual birders
+    award: named
+    for: [compact, close focus]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Monarch+M7+8x30
+- id: viking-peregrine-8x42
+  name: Viking Peregrine 8x42
+  brand: Viking Optical
+  price_gbp: 300
+  price_note: A little over £300 in Bird Watching's text (printed price $328.95)
+  best_for: [glasses wearers, birdwatching]
+  summary: Bright and sharp with lots of eye relief for glasses wearers and good close focus. Eye position takes care and there is some colour fringing.
+  verdicts:
+  - review: birdwatching
+    label: Best budget all-rounder bird watching binoculars
+    award: named
+    for: [glasses wearers, birdwatching]
+  buy: https://www.amazon.co.uk/s?k=Viking+Peregrine+8x42
+- id: zeiss-sfl-8x40
+  name: Zeiss SFL 8x40
+  brand: Zeiss
+  best_for: [birdwatching, wide view, close focus]
+  summary: Light, compact and well balanced with a wide view, excellent close focus and fine all-round optics. Slightly smaller lenses than the usual 42mm, and relatively expensive.
+  verdicts:
+  - review: birdwatching
+    label: Best bird watching binoculars for all-round wildlife-watchers
+    award: named
+    for: [birdwatching, wide view, close focus]
+  buy: https://www.amazon.co.uk/s?k=Zeiss+SFL+8x40
+- id: bushnell-forge-10x42
+  name: Bushnell Forge 10x42
+  brand: Bushnell
+  price_note: 'No usable price: $479.99 in Bird Watching (UK)'
+  best_for: [birdwatching]
+  summary: Solid, user-friendly open-bridge design with a crisp, natural image. Cramped field of view and some edge softness.
+  verdicts:
+  - review: birdwatching
+    label: Best mid-priced all-rounder bird watching binoculars
+    award: named
+    for: [birdwatching]
+  buy: https://www.amazon.co.uk/s?k=Bushnell+Forge+10x42
+- id: viking-kestrel-8x42
+  name: Viking Kestrel 8x42
+  brand: Viking Optical
+  best_for: [budget, birdwatching]
+  summary: A wide, sharp view and good low-light performance for well under £250. Heavier than some, with colour fringing.
+  verdicts:
+  - review: birdwatching
+    label: Best budget bird watching binoculars
+    award: named
+    for: [budget, birdwatching]
+  buy: https://www.amazon.co.uk/s?k=Viking+Kestrel+8x42
+- id: swarovski-cl-curio-7x21
+  name: Swarovski CL Curio 7x21
+  brand: Swarovski
+  price_note: 'No usable price: $839 in Bird Watching (UK)'
+  best_for: [compact]
+  summary: Ultra-small, usable one-handed, with outstanding optics for the size. Expensive and eye position needs care.
+  verdicts:
+  - review: birdwatching
+    label: Best ultra-compact bird watching binoculars
+    award: named
+    for: [compact]
+  buy: https://www.amazon.co.uk/s?k=Swarovski+CL+Curio+7x21
+- id: kite-bonelli-2-8x42
+  name: Kite Bonelli 2.0 8x42
+  brand: Kite
+  best_for: [birdwatching]
+  summary: Precise, smooth focusing, good low-light views and a solid build for under £1,000. Relatively large and heavy.
+  verdicts:
+  - review: birdwatching
+    label: Best bird watching binoculars for improvers
+    award: named
+    for: [birdwatching]
+  buy: https://www.amazon.co.uk/s?k=Kite+Bonelli+2.0+8x42
+- id: pentax-sd-8x42-wp
+  name: Pentax SD 8x42 WP
+  brand: Pentax
+  price_gbp: 269
+  price_note: £269 when reviewed in Expert Reviews
+  best_for: [waterproof]
+  summary: Excellent sharpness and neutral colour, waterproof to 3m, with a 30-year warranty. The focus wheel is a little stiff.
+  verdicts:
+  - review: expertreviews
+    label: Best waterproof binoculars with a 30-year warranty
+    award: named
+    for: [waterproof]
+  buy: https://www.amazon.co.uk/s?k=Pentax+SD+8x42+WP
+- id: swarovski-el-8-5x42
+  name: Swarovski EL 8.5x42
+  brand: Swarovski
+  price_gbp: 1539
+  price_note: £1,539 when reviewed in Expert Reviews
+  best_for: [premium]
+  summary: Bright, sharp and well built with 20mm eye relief and close focus from 1.5m, though Expert Reviews says the NL Pure has taken its top spot.
+  verdicts:
+  - review: expertreviews
+    label: Still incredible but not quite the best
+    award: named
+    for: [premium]
+  buy: https://www.amazon.co.uk/s?k=Swarovski+EL+8.5x42
+- id: canon-12x36-is-iii
+  name: Canon 12x36 IS III
+  brand: Canon
+  price_gbp: 720
+  price_note: £720 when reviewed in Expert Reviews
+  best_for: [image stabilised]
+  summary: Stabilisation gives a sharp, steady 12x image. Narrow view, limited close focus, colour fringing and short eye relief.
+  verdicts:
+  - review: expertreviews
+    label: Best for image stabilisation
+    award: named
+    for: [image stabilised]
+  buy: https://www.amazon.co.uk/s?k=Canon+12x36+IS+III
+- id: rspb-puffin-8x32
+  name: RSPB Puffin 8x32
+  brand: RSPB
+  price_gbp: 75
+  price_note: £75 when reviewed in Expert Reviews
+  best_for: [budget]
+  summary: A clear, crisp image for little money in a light body. Soft edges, short eye relief, a basic strap and pouch, and close focus is longer than claimed.
+  verdicts:
+  - review: expertreviews
+    label: Best binoculars under £100
+    award: named
+    for: [budget]
+  buy: https://www.amazon.co.uk/s?k=RSPB+Puffin+8x32
+- id: celestron-skymaster-pro-20x80
+  name: Celestron SkyMaster Pro 20x80
+  brand: Celestron
+  price_note: 'No usable price: $299.99 in T3 (UK)'
+  best_for: [stargazing]
+  summary: Impressive deep-sky views and easier than a telescope. Too heavy to hold and has a narrow view.
+  verdicts:
+  - review: t3
+    label: Best for stargazing
+    award: named
+    for: [stargazing]
+  buy: https://www.amazon.co.uk/s?k=Celestron+SkyMaster+Pro+20x80
+- id: nikon-action-ex-12x50
+  name: Nikon Action EX 12x50
+  brand: Nikon
+  best_for: [rugged]
+  summary: Clear, sharp, shock-resistant and waterproof. Bulky, heavy and doesn't focus close.
+  verdicts:
+  - review: t3
+    label: Best rugged
+    award: named
+    for: [rugged]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Action+EX+12x50
+- id: bushnell-engage-edx-8x42
+  name: Bushnell Engage EDX 8x42
+  brand: Bushnell
+  price_note: 'No usable price: $359.95 in T3 (UK)'
+  best_for: [wide view]
+  summary: Crystal-clear, life-like views with a wide angle of view and water-repelling lenses. Relatively heavy.
+  verdicts:
+  - review: t3
+    label: Best for sharpness
+    award: named
+    for: [wide view]
+  buy: https://www.amazon.co.uk/s?k=Bushnell+Engage+EDX+8x42
+- id: unistellar-envision
+  name: Unistellar Envision
+  brand: Unistellar
+  price_usd: 1499
+  price_note: $1,499 pre-order price in Space.com
+  best_for: [stargazing]
+  summary: Smart binoculars that identify night-sky targets in the view. Space.com had not yet reviewed them; heavy and relies on an app.
+  verdicts:
+  - review: space
+    label: Best smart binoculars
+    award: named
+    for: [stargazing]
+  buy: https://www.amazon.co.uk/s?k=Unistellar+Envision
+- id: nikon-monarch-hg-10x42
+  name: Nikon Monarch HG 10x42
+  brand: Nikon
+  price_usd: 1000
+  price_note: $992.45 to $1,099.95 in Space.com
+  best_for: [premium]
+  summary: Very portable and sharp across the whole field. Expensive and no stabilisation.
+  verdicts:
+  - review: space
+    label: Best optical performance
+    award: named
+    rating: 4.5
+    scale: 5
+    for: [premium]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Monarch+HG+10x42
+- id: fujinon-techno-stabi-ts-l-1640
+  name: Fujinon TechnoStabi TS-L 1640
+  brand: Fujifilm
+  price_usd: 1200
+  price_note: $1,199 to $1,399.95 in Space.com
+  best_for: [image stabilised, stargazing]
+  summary: Strong image stabilisation at 16x in a light body. Expensive, and the 40mm lenses are small for the magnification.
+  verdicts:
+  - review: space
+    label: Best for steady stargazing
+    award: named
+    rating: 4.5
+    scale: 5
+    for: [image stabilised, stargazing]
+  buy: https://www.amazon.co.uk/s?k=Fujinon+Techno-Stabi+TS-L+1640
+- id: celestron-upclose-g2-10x50
+  name: Celestron UpClose G2 10x50
+  brand: Celestron
+  price_usd: 65
+  price_note: $64.59 in Space.com
+  best_for: [budget]
+  summary: Very cheap, compact, light and shock-resistant. Space.com notes the lenses can need collimating and it is short of magnification for astronomy.
+  verdicts:
+  - review: space
+    label: Best budget binoculars
+    award: named
+    rating: 4.5
+    scale: 5
+    for: [budget]
+  buy: https://www.amazon.co.uk/s?k=Celestron+UpClose+G2+10x50
+- id: nikon-prostaff-p3-8x42
+  name: Nikon Prostaff P3 8x42
+  brand: Nikon
+  price_usd: 157
+  price_note: $96.95 to $159.95 in Space.com
+  best_for: [beginners]
+  summary: Light, easy to use, with adjustable eyecups and nitrogen filling against fogging. No tripod adapter and not ideal for serious skywatching.
+  verdicts:
+  - review: space
+    label: Best for beginners
+    award: named
+    rating: 4
+    scale: 5
+    for: [beginners]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Prostaff+P3+8x42
+- id: nikon-action-7x50
+  name: Nikon Action 7x50
+  brand: Nikon
+  price_usd: 110
+  price_note: $104.69 to $139.95 in Space.com
+  best_for: [low light]
+  summary: Affordable, easy to use and good in low light. The eyecups can be uncomfortable and it is poor for close-up deep-sky views.
+  verdicts:
+  - review: space
+    label: Best for low-light
+    award: named
+    rating: 4
+    scale: 5
+    for: [low light]
+  buy: https://www.amazon.co.uk/s?k=Nikon+Action+7x50
+- id: celestron-trailseeker-ed
+  name: Celestron TrailSeeker ED
+  brand: Celestron
+  best_for: [birdwatching]
+  summary: Countryfile found it good for distant wildlife, with ED glass and a harness included. 2.5m close focus is poor for insects and plants.
+  verdicts:
+  - review: countryfile
+    label: ''
+    award: listed
+    for: [birdwatching]
+  buy: https://www.amazon.co.uk/s?k=Celestron+TrailSeeker+ED
+- id: opticron-traveller-bga-ed
+  name: Opticron Traveller BGA ED
+  brand: Opticron
+  best_for: [compact, travel, close focus]
+  summary: Light at 450g, focuses to 1.5m and has a 30-year guarantee; Countryfile suggests it for the car or travel. Lens protection and armour are minimal.
+  verdicts:
+  - review: countryfile
+    label: ''
+    award: listed
+    for: [compact, travel, close focus]
+  buy: https://www.amazon.co.uk/s?k=Opticron+Traveller+BGA+ED
+- id: viking-merlin-ed-8x42
+  name: Viking Optical Merlin ED
+  brand: Viking Optical
+  best_for: [low light]
+  summary: The Countryfile reviewer's preferred pair of the three, for a very clear image in low light and a comfortable grip. Heavy and large, and 2m close focus is only just adequate.
+  verdicts:
+  - review: countryfile
+    label: ''
+    award: top
+    for: [low light]
+    quote: My preferred pair of binoculars out of the three, despite the weight.
+  buy: https://www.amazon.co.uk/s?k=Viking+Merlin+ED+8x42
+agree:
+- text: '8x, usually 8x42 or 8x32, is the sweet spot for birds and nature watching: steadier than 10x, which suits longer distances.'
+  reviews: [livescience, advnture, expertreviews, gearjunkie]
+- text: Bigger objective lenses gather more light for dawn, dusk and stars but add weight and bulk; smaller 25mm to 32mm pairs are lighter and pocketable but dimmer.
+  reviews: [livescience, digitalcameraworld, outdoorgearlab, expertreviews, advnture, t3, gearjunkie]
+- text: 'If you wear glasses, check the eye relief: look for roughly 14mm to 16mm or more.'
+  reviews: [livescience, advnture, expertreviews, space]
+- text: ED (extra-low dispersion) glass cuts colour fringing, and is mostly found in pairs above about £200.
+  reviews: [expertreviews]
+- text: For stargazing, choose bigger lenses (at least 10x50 or 50mm); at higher magnifications you need a tripod or image stabilisation.
+  reviews: [space, livescience, digitalcameraworld, t3]
+- text: Porro-prism binoculars give brighter views for the money; roof-prism designs are more compact and lighter.
+  reviews: [advnture, t3, space, expertreviews]
+caution: Advnture says there is no substitute for getting your hands on a pair before you buy; if you wear glasses, check the eye relief first.
