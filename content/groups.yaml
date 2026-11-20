@@ -142,6 +142,46 @@ groups:
     title: "History days out and heritage activities"
     meta: "Ancient sites, castles, battlefields, museums, family and house history, archaeology and heritage crafts, with how to visit or get involved."
     match: "histor|heritage|dry stone|record a find|metal detect|hedge|castle|museum|archaeolog|\\bwar\\b|battle|tower of london|bletchley|ellis island|gettysburg|pearl harbor|stone circle|stonehenge|cave art|pompeii|petra|pyramid|acropolis|angkor|terracotta|skara|blue plaque|family line|relative|ancestor|bell|steam|railway|hadrian|abbey|cathedral|monastery|great wall|alhambra|menin|d-day|freedom trail|eisteddfod|bonfire|highland games|tattoo"
+  # Interest lenses (Robin, 20 Nov 2026: "categories can overlap, for example someone might be interested in Japan and another
+  # in knife making, and for both making Japanese knives fits"). These cut across the groups above on purpose, so one activity
+  # can sit in several. Add more lenses (Italy, the Celtic world, the sea, machines and mending) as each reaches a dozen activities.
+  japan:
+    slug: japan-and-japanese-crafts
+    label: Japan and Japanese crafts
+    short: "Tea, kintsugi, ikebana, martial arts, knives and the trails of Japan"
+    title: "Japanese crafts, arts and travel: how to start"
+    meta: "Try the Japanese tea ceremony, kintsugi, ikebana, sashiko, bonsai, whetstone sharpening, judo or kyudo near home, or walk the Kumano Kodo and see the cherry blossom in Japan."
+    match: "japan|kumano|ikebana|kintsugi|sashiko|shibori|kyudo|cherry blossom|sushi|bonsai|origami|\\bjudo\\b|karate|aikido|kendo|taiko|whetstone|tea ceremony|matcha|fuji|kyoto|tokyo|game of go"
+    not: "in dc"
+  mind:
+    slug: calm-and-contemplation
+    label: Calm and contemplation
+    short: "Retreats, pilgrim paths, tai chi, yoga and the tea ceremony"
+    title: "Calm activities: retreats, pilgrimages, tai chi and more"
+    meta: "Quiet, absorbing things to do: silent meditation retreats, pilgrim walks, tai chi, qigong, yoga and the Japanese tea ceremony, with how to start and what they cost."
+    match: "yoga|tai chi|qigong|meditat|retreat|pilgrim|tea ceremony|labyrinth|forest bath|mindful|camino|kumano"
+  animals:
+    slug: animals-and-birds-of-prey
+    label: Animals
+    short: "Falconry, horses, huskies, llamas, bees, hens and dogs to walk"
+    title: "Activities with animals: falconry, riding, bees and more"
+    meta: "Things to do with animals: fly a hawk, ride or trek with horses, ponies and llamas, keep bees or rescued hens, walk shelter dogs and raise a guide dog puppy."
+    match: "falcon|hawk walk|\\bhens?\\b|horse|pony|llama|alpaca|donkey|\\bdogs?\\b|sheepdog|lambing|beekeep|\\bbees\\b|husky|goat"
+  treasure:
+    slug: treasure-hunting-and-finds
+    label: Treasure hunting and finds
+    short: "Mudlarking, gold panning, fossils, metal detecting and rare books"
+    title: "Treasure hunting hobbies: mudlarking, gold panning, fossils"
+    meta: "Hobbies for finders: Thames mudlarking walks, gold panning, fossil hunting, metal detecting, geocaching, rockpooling and rare book fairs, with the rules and permits."
+    match: "metal detect|record a find|mudlark|foreshore|pan for gold|gold panning|fossil|geocach|book fair|antique|beachcomb|rockpool|treasure"
+  flight:
+    slug: flight-and-space
+    label: Flight and space
+    short: "Spitfires, gliders, balloons, rocket launches and observatories"
+    title: "Flying experiences and space days out"
+    meta: "Fly in a Spitfire, try gliding, paragliding or a balloon, take a flying lesson, watch a rocket launch or visit Jodrell Bank and Kennedy Space Center."
+    match: "\\bfly\\b|flying|glid|balloon|spitfire|rocket|space|kennedy|planetar|drone|airshow|aviation|aircraft|skydiv|paraglid|helicopter|jodrell"
+    not: "fish|tying|butterf|trapeze|hawk"
   learning:
     slug: learn-something-new
     label: Learn something new
