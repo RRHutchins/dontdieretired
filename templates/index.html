@@ -20,8 +20,9 @@
   </div>
   {% if home.topics %}<form class="finder" action="/list/" method="get" role="search" aria-labelledby="finder-h" data-home>
     <h2 id="finder-h" class="finder-h">What do you fancy doing?</h2>
+    <p class="finder-total">{{ list_total_text }} things to do{% if groups %}, in {{ groups|length }} groups{% endif %}.</p>
     <div class="finder-row"><label class="sr-only" for="finder-q">Search things to do</label><input id="finder-q" type="search" name="q" maxlength="80" placeholder="Swim, paint, fly fish, volunteer…" autocomplete="off"><button class="btn" type="submit">Find things to do</button></div>
-    <p class="finder-chips"><span class="finder-or">Or browse</span>{% for t in home.topics %}<a class="chip" href="/list/?topic={{ t.id }}">{{ t.label }}</a>{% endfor %}<a class="chip" href="/list/">Everything</a><a class="chip" href="/list/#mine">My list <span data-fl-n></span></a></p>
+    <p class="finder-chips"><span class="finder-or">Or browse a group</span>{% if groups %}{% for g in groups %}<a class="chip" href="/list/{{ g.slug }}/">{{ g.label }} <span class="gx-c">{{ g.n }}</span></a>{% endfor %}{% else %}{% for t in home.topics %}<a class="chip" href="/list/?topic={{ t.id }}">{{ t.label }}</a>{% endfor %}{% endif %}<a class="chip" href="/list/">Everything</a><a class="chip" href="/list/#mine">My list <span data-fl-n></span></a></p>
     <p class="finder-help">Not sure? <button type="button" class="linklike" data-open-segments>Tell us what interests you</button> and we'll pick some out for you.</p>
   </form>{% endif %}
   <a href="{{ featured.url }}" class="lead-story" data-hero-card data-cat="{{ featured.category }}">

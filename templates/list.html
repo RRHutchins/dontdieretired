@@ -4,8 +4,16 @@
 {% block pagetype %}list{% endblock %}
 {% block content %}
 <header class="page-head"><p class="kicker">Have a go</p><h1>Things to do</h1>
-<p class="lead">Things worth doing, near you and anywhere, each with how to start, where to go and, for more and more of them, someone who has done it. Make a list of your own at any age: choose your own number and take as long as you like. You don't have to do them all.</p>
+<p class="lead"><strong>{{ list_total_text }} things worth doing</strong>, near you and anywhere, each with how to start, where to go and, for more and more of them, someone who has done it. Make a list of your own at any age: choose your own number and take as long as you like. You don't have to do them all.</p>
 {{ share_button(cfg.site.url ~ '/list/', 'Things to do: activities worth trying, and a list of your own', 'list') }}</header>
+
+{% if groups %}<section class="gx" aria-labelledby="gx-h">
+  <h2 id="gx-h" class="gx-h">Browse by group <span class="gx-sub">{{ groups|length }} groups, {{ list_total_text|lower }} activities</span></h2>
+  <ul class="gx-grid">{% for g in groups %}
+    <li><a class="gx-tile" href="/list/{{ g.slug }}/"><span class="gx-n">{{ g.n }}</span><strong>{{ g.label }}</strong><span class="gx-short">{{ g.short }}</span></a></li>{% endfor %}
+  </ul>
+  <p class="meta gx-note">Some activities sit in more than one group. Or search and filter everything below.</p>
+</section>{% endif %}
 
 <div class="fl" data-fl>
   <div class="fl-tabs" role="tablist">
@@ -44,7 +52,6 @@
       </div>
       <p class="fl-actions"><button type="button" class="btn btn-small" data-fl-surprise>Surprise me</button> <button type="button" class="linklike" data-fl-clear hidden>Clear filters</button></p>
     </div>
-    {% if colls %}<p class="fl-colls">Collections: {% for v in colls %}<a class="chip" href="/list/{{ v.slug }}/">{{ v.plural }} ({{ v.acts|length }})</a>{% endfor %}</p>{% endif %}
     {% if hubs %}<p class="fl-colls">In depth: {% for hb in hubs.values() %}<a class="chip" href="/{{ hb.slug }}/">{{ hb.label }}: {{ hb.chip_text or "race finder and guides" }}</a>{% endfor %}</p>{% endif %}
     <p class="fl-results" data-fl-count role="status" aria-live="polite"></p>
 

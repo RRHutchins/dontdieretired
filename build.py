@@ -713,6 +713,32 @@ def build(make_social=True):
     for a in arts:
         a["challenges"] = [c for c in _chs if a["slug"] in (c.get("guide"), c.get("story"))]
     env.globals.update(list_total=len(_chs))
+    # Groups for Things to do (Robin, 20 Nov 2026: "make it clearer there are so many activities", "easy and obvious there are
+    # groups to navigate"). content/groups.yaml holds rules, so new activities file themselves. Counts are worked out here at
+    # every build, so they are never stale (Robin chose total and group counts on 20 Nov 2026, replacing the 27 Oct no-total rule).
+    GROUPS = []
+    if (CONTENT / "groups.yaml").exists():
+        for gk, g in (load_yaml(CONTENT / "groups.yaml") or {}).get("groups", {}).items():
+            rx, nx, also = (re.compile(g[k]) if g.get(k) else None for k in ("match", "not", "also"))
+            def _in(c, g=g, rx=rx, nx=nx, also=also, gk=gk):
+                if gk in (c.get("groups") or []): return True
+                t = (c["id"].replace("-", " ") + " " + c["title"]).lower()
+                if g.get("collection"): return c.get("collection") == g["collection"]
+                if g.get("not_collection") and c.get("collection") == g["not_collection"]: return False
+                if g.get("also_collection") and c.get("collection") == g["also_collection"]: return True
+                if nx and nx.search(t): return False
+                if also and also.search(t): return True
+                return bool((not g.get("categories") or c["category"] in g["categories"]) and (not g.get("kinds") or c["kind"] in g["kinds"])
+                            and (not g.get("regions") or set(g["regions"]) & set(c.get("regions") or [])) and (not rx or rx.search(t)))
+            ids = [c["id"] for c in _chs if _in(c)]
+            if ids:
+                GROUPS.append(dict(g, key=gk, ids=ids, n=len(ids)))
+        _slugs = {g["slug"] for g in GROUPS}
+        assert not _slugs & {c["id"] for c in _chs}, f"a group slug clashes with an activity id: {_slugs & {c['id'] for c in _chs}}"
+        _lonely = [c["id"] for c in _chs if not any(c["id"] in g["ids"] for g in GROUPS)]
+        if _lonely: print(f"LIST WARNING: {len(_lonely)} activities are in no group (add a rule in content/groups.yaml or `groups:` on the entry): {', '.join(_lonely[:40])}")
+    _n = len(_chs)
+    env.globals.update(groups=GROUPS, list_total_text=(f"More than {((_n - 1) // 50) * 50:,}" if _n > 100 else str(_n)))
     # Deep hubs (RUNBOOK §6u, Robin 17 Nov 2026: "a primary source on the internet" for a subject, ultra running first):
     # content/hubs/<id>.yaml gives an event finder, guides and the activities that lead in. Loaded here, rendered after Things to do.
     HUBS = {}
@@ -1013,6 +1039,19 @@ def build(make_social=True):
             urls.append(out(f"/list/{v['slug']}/", "collection.html", coll=v, L=LBL, total=len(chs), item_list=item_list))
             pages.append({"title": f"{v['plural']} you can enter", "url": f"/list/{v['slug']}/", "category": "move", "excerpt": v["blurb"],
                           "tags": ["military", "challenge", "challenges", "march", "tab", "ruck", "yomp", "army", "marines", "paras", "activities"],
+                          "image": "/static/og-default.png", "art": "/static/og-default.png"})
+        # Group pages (content/groups.yaml): one page per group at /list/<slug>/, linked from the tiles on /list/ and the home page.
+        _gby = {c["id"]: c for c in chs}
+        for g in GROUPS:
+            g["acts"] = [_gby[i] for i in g["ids"] if i in _gby]
+            if g.get("page") == "collection": continue
+            gv = {"id": g["key"], "slug": g["slug"], "plural": g["label"], "label": g["label"], "blurb": g["meta"], "title": g["title"], "meta": g["meta"],
+                  "acts": g["acts"], "group": True,
+                  "note": "Prices, dates and entry rules come from each organiser's own page on the day we checked it, and change; the organiser's page is always the one to trust."}
+            item_list = [{"@type": "ListItem", "position": n, "name": c["title"], "url": f"{cfg['site']['url']}/list/{c['id']}/"} for n, c in enumerate(gv["acts"], 1)]
+            urls.append(out(f"/list/{g['slug']}/", "collection.html", coll=gv, L=LBL, total=len(chs), item_list=item_list))
+            pages.append({"title": g["title"], "url": f"/list/{g['slug']}/", "category": "explore", "excerpt": g["meta"],
+                          "tags": ["activities", "things", "to", "do"] + re.findall(r"[a-z]+", g["label"].lower()),
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})
         pages.append({"title": "Things to do: activities worth trying, and a list of your own", "url": "/list/", "category": "explore",
                       "excerpt": "Pick the ones you fancy, at any age. Each has how to start and where to go. Choose your own number and tick them off in your own time.",

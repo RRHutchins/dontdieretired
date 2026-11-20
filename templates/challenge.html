@@ -66,16 +66,16 @@
     <p>Presents that help someone get started, drawn from this page. They are ideas, not recommendations: we have not tested any of the products, so check sizes and details before you buy.</p>
     {% if c.book or gift_for[c.id] %}
     <h3 class="h4">Give the experience</h3>
-    {% if c.book %}<ul>{% for b in c.book %}<li><a href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}</a> — {{ b.why }}</li>{% endfor %}</ul>{% endif %}
+    {% if c.book %}<ul>{% for b in c.book %}<li class="prod"><a class="prod-btn" href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}{% if b.aff == 'viator' and 'Viator' not in b.label %}<span class="prod-src">Viator</span>{% elif b.aff == 'getyourguide' and 'GetYourGuide' not in b.label %}<span class="prod-src">GetYourGuide</span>{% endif %}</a> <span class="prod-why">{{ b.why }}</span></li>{% endfor %}</ul>{% endif %}
     {% if gift_for[c.id] %}<p>More ways to give it, with reviewers' picks of the kit: <a href="{{ gift_for[c.id].url }}">{{ gift_for[c.id].h1 }}</a>.</p>{% endif %}
     {% endif %}
     {% if c.kit %}
     <h3 class="h4">Kit to give</h3>
-    <ul>{% for p in c.kit %}<li><a href="{{ p.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ p.name }}</a> — {{ p.why }}</li>{% endfor %}</ul>
+    <ul>{% for p in c.kit %}<li class="prod"><a class="prod-btn" href="{{ p.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ p.name }}<span class="prod-src">Amazon</span></a> <span class="prod-why">{{ p.why }}</span></li>{% endfor %}</ul>
     {% endif %}
     {% if sf_for[c.id] %}
     <h3 class="h4">Stocking fillers</h3>
-    <ul>{% for s in sf_for[c.id] %}<li><a href="{{ s.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ s.name }}</a> — {{ s.why }} <span class="xgift-check">Check: {{ s.check }}</span> <a href="{{ s.page }}">More for {{ s.label | lower }}</a></li>{% endfor %}</ul>
+    <ul>{% for s in sf_for[c.id] %}<li class="prod"><a class="prod-btn" href="{{ s.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ s.name }}<span class="prod-src">Amazon</span></a> <span class="prod-why">{{ s.why }} <span class="xgift-check">Check: {{ s.check }}</span> <a href="{{ s.page }}">More for {{ s.label | lower }}</a></span></li>{% endfor %}</ul>
     {% endif %}
     {% if c.cost in ('free', 'low') %}
     <h3 class="h4">Or give your company</h3>
@@ -89,7 +89,7 @@
   {% if c.book %}
   <aside class="aff-box fl-book" data-book>
     <h3 class="h4">Book it</h3>
-    <ul>{% for b in c.book %}<li><a href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}</a> — {{ b.why }}</li>{% endfor %}</ul>
+    <ul>{% for b in c.book %}<li class="prod"><a class="prod-btn" href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}{% if b.aff == 'viator' and 'Viator' not in b.label %}<span class="prod-src">Viator</span>{% elif b.aff == 'getyourguide' and 'GetYourGuide' not in b.label %}<span class="prod-src">GetYourGuide</span>{% endif %}</a> <span class="prod-why">{{ b.why }}</span></li>{% endfor %}</ul>
     <p class="disclosure">Some of these are affiliate links: if you book through them we may earn a commission at no extra cost to you. Compare operators, and check what is included before you pay.</p>
   </aside>
   {% endif %}

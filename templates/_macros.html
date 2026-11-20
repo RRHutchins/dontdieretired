@@ -25,7 +25,7 @@
   <h3 class="h4">{{ title }}</h3>
   <ul>
   {% for p in items %}
-    <li><a href="{{ p.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ p.name }}</a> — {{ p.why }}</li>
+    <li class="prod"><a class="prod-btn" href="{{ p.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ p.name }}<span class="prod-src">Amazon</span></a> <span class="prod-why">{{ p.why }}</span></li>
   {% endfor %}
   </ul>
   <p class="disclosure">Affiliate links: we may earn a small commission at no cost to you.</p>

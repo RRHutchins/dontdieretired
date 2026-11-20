@@ -1,0 +1,187 @@
+# Groups for Things to do (Robin, 20 Nov 2026: "make it easy and obvious there are groups to navigate").
+# build.py puts every activity into one or more groups by these rules, so new activities file themselves:
+#   collection: an entry's `collection`   categories / kinds: lists   match: regex on "<id> <title>" (lower case)
+#   not: regex that keeps an activity out   regions: any of these regions
+# An activity matches a group if it meets ALL the keys the group gives (match is OR-ed with `also`, if given).
+# An entry can also name groups itself with `groups: [key]` (added to whatever the rules give).
+# Order here is the order of the tiles. `slug` is permanent once live (page /list/<slug>/) and must not clash with an id.
+# `page: collection` means the group IS an existing collection and its tile opens that page.
+# Every activity should land in at least one group: the build prints LIST WARNING with any that don't.
+groups:
+  walks:
+    slug: walks-hikes-and-trails
+    label: Walks, hikes and trails
+    short: "Mountains, National Trails, coast paths and the great hikes of the world"
+    title: "Walks and hikes: famous trails and mountains, how to start"
+    meta: "Famous walks, hikes, long-distance trails and mountains in the UK, the US and abroad, each with how hard it is, when to go and the official route pages."
+    match: "\\b(walk|walking|hike|hiking|trail|trek|climb|scramble|munro|fourteener|three peaks|camino|pilgrim|path|way|ramble|summit|nordic|high point|bothy)\\b"
+    also: "geocach|map and compass|with your dog|dog to walk"
+    not: "\\b(walk(ing)? (football|netball|rugby|cricket|basketball)|bat walk|bird walk|beaver walk|glow-worm|dawn chorus|blue plaques|indoor|rock climbing|ice climbing|climb outdoors|climbing wall|trail race|freedom trail|parkway|highway|the way of|half marathon)\\b"
+    categories: [move, travel, explore, connect]
+  wildlife:
+    slug: wildlife-and-nature
+    label: Wildlife and nature
+    short: "Puffins, whales, bears, birds, bluebells and the nights out to see them"
+    title: "Wildlife watching: where and when to see it"
+    meta: "Where and when to see puffins, whales, dolphins, seals, deer, eagles, bears and more, plus nature walks, citizen science and wildlife volunteering."
+    match: "wildlife|nature|bird|dawn chorus|puffin|seal|whale|dolphin|otter|badger|\\bbats?\\b|moth|butterfl|deer|eagle|osprey|kites?\\b|beaver|bears?\\b|wol(f|ves)|manatee|crane|hawk|gorilla|galapagos|safari|migration|rockpool|fung|mushroom|bluebell|\\btrees?\\b|wildflower|pond|nest box|naturalist|glow-worm|shark|gannet|murmuration|refuge|forag|ebird|species|bee|hens?\\b|garden|orchard|rewild|reef|snorkel|polar bear|seabird"
+  sky:
+    slug: night-sky-and-science
+    label: Night sky and science
+    short: "Stars, eclipses, the northern lights, observatories, fossils and real research"
+    title: "Stargazing and science days out: how to start"
+    meta: "Stargazing, meteor showers, eclipses, the northern lights, observatories, planetariums, fossil hunting and citizen science you can join."
+    match: "star|astronom|meteor|telescope|eclipse|northern lights|aurora|dark sky|planetarium|observatory|space|saturn|constellation|cern|jodrell|asteroid|zooniverse|geolog|fossil|science|weather|meridian|milky way|solar"
+    not: "starling|start|stark"
+  events:
+    slug: festivals-shows-and-events
+    label: Festivals, shows and events
+    short: "Folk festivals, flower shows, Highland games, carnivals and fairs"
+    title: "Festivals and events worth travelling for"
+    meta: "Festivals, shows, fairs, carnivals and sporting days out in the UK, the US and abroad: when they are, how tickets work and what they are really like."
+    kinds: [event]
+    not: "marathon|\\brun\\b|triathlon|race|sportive|march|walk|swim|ride|ultra|goruck|murph|mudder|hyrox|relay|etape|whitton|swimathon|10k|trailwalker|yomp|challenge"
+  endurance:
+    slug: endurance-challenges
+    label: Endurance challenges
+    short: "Marathons, ultras, sportives, long swims and big days out"
+    title: "Endurance challenges: marathons, ultras, sportives and swims"
+    meta: "Marathons, ultras, triathlons, sportives, long swims, marches and multi-day rides: what each is like, how to enter and how to build up to it."
+    match: "marathon|ultra|triathlon|duathlon|sportive|\\brace\\b|mudder|hyrox|obstacle|etape|whitton|lands-end|john-o-groats|channel|swimathon|great north|moonwalk|trailwalker|nijmegen|yomp|goruck|murph|march|1,000 miles|10k|couch to 5k|parkrun|three peaks|row across|devizes|plank|century|relay"
+    also_collection: military
+  adventure:
+    slug: adventures-and-thrills
+    label: Adventures and thrills
+    short: "Skydives, gliders, zip lines, caves, gorges and hot air balloons"
+    title: "Adventure activities to try: skydiving, gliding, caving and more"
+    meta: "Tandem skydives, gliding and flying lessons, paragliding, hot air balloons, zip lines, via ferrata, canyoning, caving and coasteering: what each is like and how to book."
+    match: "skydiv|glid|balloon ride|hot air|zip|bungee|via ferrata|canyon(ing|eering)|coasteer|caving|cave dive|flying lesson|trapeze|white water|ice climb|abseil|paraglid|wing ?walk|husky|bothy|wild camp|climb outdoors|rock climbing|indoor climbing|scramble"
+  water:
+    slug: on-and-in-the-water
+    label: On and in the water
+    short: "Swimming, sailing, paddling, surfing, diving and boat trips"
+    title: "Water sports for beginners: swim, sail, paddle, surf"
+    meta: "Learn to swim, sail, row, kayak, paddleboard, surf, dive and more: what a first session is like, what it costs and where to find one."
+    match: "swim|paddle|kayak|canoe|sail|surf|\\brow|rowing|dive|diving|snorkel|scuba|windsurf|kitesurf|wakeboard|water|raft|coasteer|bodyboard|dragon boat|lido|foil|freediv|yacht|skipper|boat|tall ship|catamaran|lifeboat|rnli|coracle|gig"
+    not: "watercolour|whale|dolphin|seal|puffin|shark|gannet|eagle|cruise|steamer|ferry|bus|fishing|crab"
+  fishing:
+    slug: fishing
+    label: Fishing
+    short: "Fly, coarse, sea and ice fishing, and crabbing off the harbour wall"
+    title: "Fishing for beginners: fly, sea, coarse and ice"
+    meta: "How to start fishing: fly fishing lessons, sea fishing charters, ice fishing, crabbing and fly tying, with the licence rules in the UK and the US."
+    match: "fish|crab|angl|fly-tying|flies"
+    not: "fish house|fishing village"
+  cycling:
+    slug: cycling
+    label: Cycling
+    short: "Rail trails, sportives, long routes and riding with confidence"
+    title: "Cycling: routes, rides and how to start"
+    meta: "Cycle routes, rail trails, sportives, end-to-end rides, mountain biking, track cycling and confidence lessons, with what each involves."
+    match: "cycl|bike|biking|velodrome|sportive|gravel|bikepack|etape|whitton|rail trail|katy trail|allegheny|camel trail|c2c|hebridean way|unicycl|ride from london|ride a century|ride round"
+  sport:
+    slug: sports-and-fitness
+    label: Sports and fitness
+    short: "Racket sports, team games, martial arts, the gym and new sports to try"
+    title: "Sports to take up as an adult: how to start"
+    meta: "Sports you can take up as an adult, from pickleball, golf and tennis to walking football, judo and archery: what a first session is like and where to play."
+    categories: [move]
+    not: "\\bwalk (the|a|an|across|through|with|to|1,000)\\b|moonwalk|\\bhike|trail|climb (ben|scafell|yr|kili|mount)|swim|paddle|kayak|canoe|sail|surf|row|dive|snorkel|cycl|bike|dance|dancing|ballet|tango|salsa|jive|marathon|ultra|triathlon|sportive|march|fish"
+  dance:
+    slug: dance
+    label: Dance
+    short: "Ballroom to Lindy Hop, ceilidhs to flamenco"
+    title: "Dance classes for adult beginners"
+    meta: "Ballroom, salsa, swing, tango, tap, ballet, Irish, Highland, line and folk dancing: what a first class is like and where to find one."
+    match: "danc|ballet|tango|salsa|jive|swing|flamenco|ceilidh|contra|morris|bachata|kizomba|zumba|clog|bollywood|hip hop|lindy|barre"
+  arts:
+    slug: arts-and-crafts
+    label: Arts, crafts and music
+    short: "Painting, pottery, making things and learning an instrument"
+    page: collection
+    collection: arts
+  food:
+    slug: food-and-drink
+    label: Food and drink
+    short: "Cookery classes, baking, brewing, foraging and growing your own"
+    title: "Cookery classes and food experiences: how to start"
+    meta: "Cookery schools, bread and pasta classes, butchery, barista and barbecue courses, cheese, cider, wine and growing your own food."
+    categories: [eat]
+    also: "cook|bak(e|ing)|bread|cheese|cider|wine|whisky|gin\\b|pasta|barista|barbecue|butcher|chocolate|brew|marmalade|forag|sushi|distill|vineyard|food"
+  travel:
+    slug: travel-the-world
+    label: Travel the world
+    short: "The classic journeys and sights, from Machu Picchu to Mount Fuji"
+    title: "Bucket list travel: the classic trips and how to plan them"
+    meta: "Classic trips and sights around the world: the Inca Trail, Kilimanjaro, the Great Wall, Fuji, Antarctica and more, with permits, seasons and how to book."
+    regions: [world]
+    categories: [travel, explore, move]
+    also: "interrail|solo trip|road scholar"
+  trips:
+    slug: days-out-and-trips
+    label: Days out and trips
+    short: "Great days out and journeys in the UK and the US"
+    title: "Great days out and trips in the UK and the US"
+    meta: "Scenic drives, train journeys, islands, national parks, gardens, castles and city sights in the UK and the US, with when to go and how to book."
+    categories: [travel]
+    also: "old faithful|denali|national park|yellowstone|niagara|everglades"
+    not: "volunteer|course|learn|walk|hike|trail|climb"
+    regions: [uk, us]
+  history:
+    slug: history-and-heritage
+    label: History and heritage
+    short: "Castles, battlefields, ancient sites, family history and old skills"
+    title: "History days out and heritage activities"
+    meta: "Ancient sites, castles, battlefields, museums, family and house history, archaeology and heritage crafts, with how to visit or get involved."
+    match: "histor|heritage|dry stone|record a find|metal detect|hedge|castle|museum|archaeolog|\\bwar\\b|battle|tower of london|bletchley|ellis island|gettysburg|pearl harbor|stone circle|stonehenge|cave art|pompeii|petra|pyramid|acropolis|angkor|terracotta|skara|blue plaque|family line|relative|ancestor|bell|steam|railway|hadrian|abbey|cathedral|monastery|great wall|alhambra|menin|d-day|freedom trail|eisteddfod|bonfire|highland games|tattoo"
+  learning:
+    slug: learn-something-new
+    label: Learn something new
+    short: "Languages, courses, qualifications and new skills for the mind"
+    title: "Learn something new: courses and skills to start"
+    meta: "Languages, free online courses, university short courses, summer schools, qualifications and practical skills, with where to start in the UK and the US."
+    categories: [think]
+    not: "chess|bridge|backgammon|\\bgo\\b|mahjong|quiz|crossword|scrabble|escape room|rubik|cribbage|board game"
+    not_collection: arts
+  games:
+    slug: games-and-puzzles
+    label: Games and puzzles
+    short: "Chess, bridge, quizzes, crosswords and board games"
+    title: "Games and puzzles to take up: clubs and how to start"
+    meta: "Chess, bridge, backgammon, go, mahjong, quiz leagues, cryptic crosswords, Scrabble clubs and escape rooms: how to learn and where to play."
+    match: "chess|bridge|backgammon|game of go|mahjong|quiz|crossword|scrabble|escape room|rubik|cribbage|board game|numeracy|darts|pool league|snooker"
+  volunteering:
+    slug: volunteering
+    label: Volunteering
+    short: "Give your time: conservation, care, rescue, mentoring and more"
+    title: "Volunteering ideas: roles, what they involve and how to start"
+    meta: "Volunteering roles from wildlife and heritage to befriending, first response, mentoring and festivals: what each involves and how to sign up."
+    match: "volunteer|befriend|mentor|trustee|magistrate|governor|give blood|meals on wheels|food bank|habitat|scout|samaritans|first responder|coast guard|rnli|guide dog|foster|litter|beach clean|polls|referee|steward|invigilat|dementia friend|help a child|lock keeper|blood bikes|witness|st john|red cross|crisis at christmas|weather observer|be my eyes|wikipedia|openstreetmap|transcribe|citizen"
+  community:
+    slug: clubs-and-community
+    label: Clubs and community
+    short: "Choirs, clubs, groups and ways to meet people"
+    title: "Clubs and groups to join: how to meet people doing things"
+    meta: "Choirs, clubs, societies, groups and community projects to join, from the u3a and Men's Sheds to book clubs and language exchanges."
+    categories: [connect]
+    not: "volunteer|befriend|mentor|trustee|magistrate|governor|give blood|meals on wheels|food bank|habitat|scout|samaritans|first responder|guide dog|foster|litter|beach clean|polls"
+  work:
+    slug: money-and-work
+    label: Money and work
+    short: "Earn on your own terms and get your finances in order"
+    title: "Money and work: earning, pensions and getting organised"
+    meta: "Ways to earn on your own terms, from tutoring to freelancing, and free tools to check your pension, tax, benefits and savings."
+    categories: [money, earn]
+  tech:
+    slug: tech-and-ai
+    label: Technology and AI
+    short: "Get confident with tech, stay safe online and try AI"
+    title: "Technology and AI skills: free courses and projects"
+    meta: "Free courses and projects to get confident with technology: websites, spreadsheets, coding, cyber security, passkeys and AI assistants used well."
+    categories: [tech, ai]
+  military:
+    slug: military-physical-challenges
+    label: Military physical challenges
+    short: "Marches, runs and loaded carries open to the public"
+    page: collection
+    collection: military

@@ -1361,3 +1361,29 @@ html{scroll-padding-top:84px}
 .xgift-check{display:block;font-size:.9rem;color:var(--muted,#555)}
 .xgift-more{margin-bottom:0;font-weight:600;display:flex;flex-wrap:wrap;gap:0 1.4em}
 .xgift-more a{display:inline-block;padding:10px 0;min-height:44px;box-sizing:border-box}
+/* Product and booking links as buttons (Robin, 20 Nov 2026: "more like a button around the text and not just text") */
+ul:has(> li.prod){list-style:none;padding-left:0}
+li.prod{display:flex;flex-wrap:wrap;align-items:center;gap:.3em .7em;margin:0 0 .75em}
+.prod-btn{display:inline-flex;align-items:center;gap:.55em;min-height:44px;padding:.4em 1em;border:2px solid var(--brand);border-radius:999px;background:#fff;color:var(--brand-ink);font-weight:600;text-decoration:none;line-height:1.25;transition:background .15s,color .15s}
+.prod-btn::after{content:"\2197";font-weight:400}
+.prod-btn:hover,.prod-btn:focus-visible{background:var(--brand);color:#fff}
+.prod-src{font-size:.78em;font-weight:600;letter-spacing:.02em;opacity:.85;border-left:1px solid currentColor;padding-left:.55em}
+.prod-why{color:var(--muted);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){.prod-btn{transition:none}}
+/* Groups for Things to do (Robin, 20 Nov 2026) */
+.gx{margin:8px 0 36px}
+.gx-h{margin-bottom:.6em}.gx-sub{display:block;font-family:var(--sans);font-size:1rem;font-weight:400;color:var(--muted);margin-top:.25em}
+.gx-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.gx-tile{position:relative;display:flex;flex-direction:column;gap:.2em;height:100%;min-height:120px;padding:16px 18px 16px;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--brand);border-radius:var(--r);color:var(--ink);text-decoration:none;transition:transform .12s,box-shadow .12s}
+.gx-grid li:nth-child(6n+2) .gx-tile{border-left-color:var(--think)}.gx-grid li:nth-child(6n+3) .gx-tile{border-left-color:var(--move)}.gx-grid li:nth-child(6n+4) .gx-tile{border-left-color:var(--gold)}.gx-grid li:nth-child(6n+5) .gx-tile{border-left-color:var(--travel)}.gx-grid li:nth-child(6n) .gx-tile{border-left-color:var(--connect)}
+.gx-tile strong{font-family:var(--serif);font-size:1.15rem;line-height:1.2;padding-right:3.2em}
+.gx-short{color:var(--muted);font-size:.9rem;line-height:1.35}
+.gx-n{position:absolute;top:14px;right:14px;min-width:2.4em;text-align:center;font-weight:600;font-size:.9rem;padding:.15em .55em;border-radius:999px;background:var(--stone,#f1ede6);color:var(--ink)}
+.gx-tile:hover,.gx-tile:focus-visible{transform:translateY(-2px);box-shadow:var(--shadow)}
+.gx-note{margin-top:.8em}
+.gx-chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.gx-c{font-weight:600;opacity:.7;margin-left:.2em}
+.gx-foot{margin-top:40px}
+.finder-total{margin:-.2em 0 .7em;font-weight:600}
+@media (prefers-reduced-motion:reduce){.gx-tile{transition:none}.gx-tile:hover{transform:none}}
+@media (max-width:600px){.gx-grid{grid-template-columns:1fr 1fr;gap:8px}.gx-short{display:none}.gx-tile{min-height:0;padding:12px 12px 12px 14px;border-left-width:5px}.gx-tile strong{font-size:1rem;padding-right:0}.gx-n{position:static;order:2;align-self:flex-start;margin-top:.35em;font-size:.8rem}}

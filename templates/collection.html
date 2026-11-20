@@ -8,13 +8,14 @@
   {"@type":"ListItem","position":2,"name":coll.plural,"item":cfg.site.url ~ "/list/" ~ coll.slug ~ "/"}]},
  {"@type":"ItemList","name":coll.plural,"numberOfItems":coll.acts|length,"itemListElement":item_list}]} | tojson }}</script>{% endblock %}
 {% block content %}
-<header class="page-head"><p class="kicker"><a href="/list/">Things to do</a></p><h1>{{ coll.plural }}</h1>
+<header class="page-head"><p class="kicker"><a href="/list/">Things to do</a> · {{ coll.acts|length }} activities</p><h1>{{ coll.plural }}</h1>
 <p class="lead">{{ coll.blurb }}</p>
 {{ share_button(cfg.site.url ~ '/list/' ~ coll.slug ~ '/', coll.plural, 'list') }}</header>
 
 <ul class="fl-grid">
 {% for c in coll.acts %}
   <li class="fl-item" data-cat="{{ c.category }}" data-id="{{ c.id }}" data-title="{{ c.title }}">
+    {% if c.photo %}<img class="fl-photo" src="{{ c.photo.small }}" alt="" width="800" height="450" loading="lazy" decoding="async">{% endif %}
     <p class="kicker">{{ L.effort[c.effort] }}{% if c.region_label %} · {{ c.region_label }}{% endif %}</p>
     <h2 class="h3"><a href="/list/{{ c.id }}/">{{ c.title }}</a></h2>
     <p class="fl-why">{{ c.why_short }}</p>
@@ -28,7 +29,11 @@
 <div class="prose narrow fl-about">
 <p>{{ coll.note }}</p>
 <p>Every link was opened and read by us on the date shown on its page. Dates, places, prices and entry rules are on the official page, where they stay up to date.{% if coll.id == "military" %} These are demanding events: read the organiser's kit list and medical guidance before you enter.{% endif %}</p>
-<p><a href="/list/">← All activities</a></p>
+<p><a href="/list/">← All {{ list_total_text|lower }} activities</a></p>
 </div>
+{% if groups %}<section class="gx gx-foot" aria-labelledby="gx-h">
+  <h2 id="gx-h" class="gx-h">More groups to browse</h2>
+  <ul class="gx-chips">{% for g in groups if g.slug != coll.slug %}<li><a class="chip" href="/list/{{ g.slug }}/">{{ g.label }} <span class="gx-c">{{ g.n }}</span></a></li>{% endfor %}</ul>
+</section>{% endif %}
 {% endblock %}
 {% block scripts %}<script src="/static/list-store.js?v={{ asset_v }}" defer></script><script src="/static/list.js?v={{ asset_v }}" defer></script>{% endblock %}

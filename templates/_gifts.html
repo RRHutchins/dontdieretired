@@ -11,7 +11,7 @@
       <summary>Ways to give it</summary>
       {% if x.book %}<div class="gift-way" data-book>
         <h4>Book it for them</h4>
-        <ul>{% for b in x.book %}<li><a href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}</a>: {{ b.why }}</li>{% endfor %}</ul>
+        <ul>{% for b in x.book %}<li class="prod"><a class="prod-btn" href="{{ b.url }}" rel="sponsored nofollow noopener" target="_blank" {% if b.aff %}data-aff-exp="{{ b.aff }}"{% endif %} data-aff-book>{{ b.label }}{% if b.aff == 'viator' and 'Viator' not in b.label %}<span class="prod-src">Viator</span>{% elif b.aff == 'getyourguide' and 'GetYourGuide' not in b.label %}<span class="prod-src">GetYourGuide</span>{% endif %}</a> <span class="prod-why">{{ b.why }}</span></li>{% endfor %}</ul>
         <p class="gift-note">Compare what is included, where it runs and the cancellation terms before you pay. Many operators sell gift vouchers, which leave the date to them.</p>
       </div>{% endif %}
       {% if x.free %}<div class="gift-way"><h4>Give your company</h4><p>It costs nothing to do, so the present can be a promise to go with them, written in a card, with something from the kit list below.</p></div>{% endif %}
@@ -27,7 +27,7 @@
         <p class="gift-note">Chosen and described by the independent reviewers named, in their words; we have not tested these. Reviews checked {{ x.picks.checked_human }}. Prices and stock change, so check before you buy.</p>
       </div>{% elif x.kit %}<div class="gift-way">
         <h4>{{ x.kit_title }}</h4>
-        <ul>{% for k in x.kit %}<li><a href="{{ k.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ k.name }}</a>: {{ k.why }}</li>{% endfor %}</ul>
+        <ul>{% for k in x.kit %}<li class="prod"><a class="prod-btn" href="{{ k.url }}" rel="sponsored nofollow noopener" target="_blank" data-aff>{{ k.name }}<span class="prod-src">Amazon</span></a> <span class="prod-why">{{ k.why }}</span></li>{% endfor %}</ul>
         <p class="gift-note">Ideas to start the search, not products we have tested: read the reviews and check sizes before you buy.</p>
       </div>{% endif %}
       <div class="gift-way"><h4>Where to start</h4><p><a href="{{ x.where.url }}" target="_blank" rel="noopener">{{ x.where.label }}</a></p></div>
