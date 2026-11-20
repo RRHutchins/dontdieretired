@@ -56,6 +56,13 @@ kinds:
 # Northern hemisphere unless the phrase says otherwise. null = no particular months (any time of year).
 # A phrase missing from this list prints a LIST WARNING and the activity is treated as any time until it is added here.
 seasons:
+  "September to April in Scotland; December to March in Alaska": [9, 10, 11, 12, 1, 2, 3, 4]
+  "July to October for the river crossings": [7, 8, 9, 10]
+  "October to May": [10, 11, 12, 1, 2, 3, 4, 5]
+  "All year; stinger risk is higher from November to May": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  "Outside the June to September monsoon": [1, 2, 3, 4, 5, 10, 11, 12]
+  "Late January to March for calving": [1, 2, 3]
+  "October to April": [10, 11, 12, 1, 2, 3, 4]
   "Mid-June to mid-September": [6, 7, 8, 9]
   "All year except mid-October to early December": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12]
   "Summer, once the snow clears from Logan Pass": [7, 8, 9]
