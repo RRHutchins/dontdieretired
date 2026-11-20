@@ -1387,3 +1387,18 @@ li.prod{display:flex;flex-wrap:wrap;align-items:center;gap:.3em .7em;margin:0 0 
 .finder-total{margin:-.2em 0 .7em;font-weight:600}
 @media (prefers-reduced-motion:reduce){.gx-tile{transition:none}.gx-tile:hover{transform:none}}
 @media (max-width:600px){.gx-grid{grid-template-columns:1fr 1fr;gap:8px}.gx-short{display:none}.gx-tile{min-height:0;padding:12px 12px 12px 14px;border-left-width:5px}.gx-tile strong{font-size:1rem;padding-right:0}.gx-n{position:static;order:2;align-self:flex-start;margin-top:.35em;font-size:.8rem}}
+
+/* Removing from the list (20 Nov 2026): a Remove beside "On my list", and a visible Remove on each row of My list */
+.fl-addrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fl-grid>li .fl-addrow{margin-top:auto;position:relative;z-index:1}
+.fl-addrow .fl-add.chip{margin-top:0}
+.fl-unadd.chip{min-height:44px;background:transparent;border-style:dashed}
+.fl-unadd[hidden]{display:none}
+.fl-grid>li[data-cat] .fl-unadd{border-color:rgba(255,255,255,.8);color:#fff}
+.fl-grid>li[data-cat] .fl-unadd:hover{background:rgba(255,255,255,.15)}
+.fl-row-ctl{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.fl-row-x{font:inherit;font-size:.92rem;font-weight:600;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--brand-ink);cursor:pointer}
+.fl-row-x:hover{border-color:var(--brand);background:#fbf1f2}
+.fl-undo{font-weight:700;min-height:44px}
+@media (max-width:560px){.fl-row-ctl{width:100%}.fl-row .fl-row-ctl select{flex:1 1 auto;width:auto}}
+.chip.fl-add[aria-pressed="true"]::before{content:none}

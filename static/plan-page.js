@@ -289,6 +289,7 @@
     const on = L.has(id);
     document.querySelectorAll('[data-fl-add="' + id + '"]').forEach(b => { b.setAttribute('aria-pressed', String(on)); b.textContent = on ? 'On my list ✓' : 'Add to my list'; });
     const ml = document.querySelector('[data-fl-minelink]'); if (ml) ml.hidden = !on;
+    if (window.DDRListPaint) window.DDRListPaint();   // the Remove button beside it (list.js)
   }
 
   if (form) form.addEventListener('submit', e => {
@@ -339,6 +340,8 @@
   });
   // A saved plan changes elsewhere (the list page in another tab): show the new one
   window.addEventListener('storage', ev => { if (!sample && mode !== 'pending' && ev.key === L.KEY && !showSaved()) { if (form && form.hidden) { out.innerHTML = ''; reset(); } } });
+  // ...or on this page: the activity was taken off the list (its plan goes with it) or put back with Undo
+  document.addEventListener('ddr:list', () => { if (!sample && mode !== 'pending' && !showSaved()) { current = null; if (form && form.hidden) { out.innerHTML = ''; reset(); } } });
 
   /* ---------- Plan it yourself (Planner Plus day 15): the links only, free, nothing saved ---------- */
   const diyBox = $('[data-pl-diyd]'), diyOut = $('[data-pl-diyout]');

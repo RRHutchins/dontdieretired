@@ -199,6 +199,14 @@
   const shift = (id, stepId, date) => mark(id, stepId, 'date', date);
   const get = id => { const it = find(load(), id); return it && !it.deleted ? it : null; };
   function remove(id) { const d = load(), it = find(d, id); if (it) { it.deleted = true; it.updated_at = now(); save(d); } return d; }
+  /* Undo a removal (20 Nov 2026, Robin: "I added an activity and now can't remove it"): put back the copy taken just
+     before remove(), plan, note and all, as a fresh change so it wins any merge. */
+  function reinstate(snap) {
+    if (!snap || typeof snap.id !== 'string' || !snap.id) return load();
+    const d = load(), it = find(d, snap.id), t = now();
+    if (it) Object.assign(it, snap, { deleted: false, updated_at: t }); else d.items.push(Object.assign({}, snap, { deleted: false, updated_at: t }));
+    save(d); return load();
+  }
   function move(id, dir) {   // dir -1 up, +1 down, among the items still on the list
     const d = load(), l = live(d).sort((x, y) => x.pos - y.pos), i = l.findIndex(it => it.id === id), j = i + dir;
     if (i < 0 || j < 0 || j >= l.length) return d;
@@ -305,5 +313,5 @@
   // "Sign out and remove my list from this browser": the copy on the account is untouched
   function forget() { try { localStorage.removeItem(KEY); } catch (e) {} flag('acct', ''); flag('acct_owner', ''); clearTimeout(timer); }
 
-  return { KEY, VERSION, STATUSES, LEVELS, MAX_SPAN, empty, clean, merge, load, save, live, add, update, remove, move, settings, restore, has, flag, plan, get, tick, shift, where, cleanPlace, sync, account, forget, FIELDS };
+  return { KEY, VERSION, STATUSES, LEVELS, MAX_SPAN, empty, clean, merge, load, save, live, add, update, remove, reinstate, move, settings, restore, has, flag, plan, get, tick, shift, where, cleanPlace, sync, account, forget, FIELDS };
 });

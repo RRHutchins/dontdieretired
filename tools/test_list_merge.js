@@ -144,6 +144,14 @@ t('merging ticks twice changes nothing more', () => {
   t('plan() does not undo "doing" or "done"', () => {
     L.update('parkrun', { status: 'done' }); L.plan('parkrun', { date: '2027-09-04' }, '2026-11-05'); assert.strictEqual(L.get('parkrun').status, 'done');
   });
+  t('remove() then reinstate() (Undo) brings the item back with its plan and note', () => {
+    L.plan('kayak', { date: '2027-06-12' }, '2026-11-20'); L.update('kayak', { note: 'with Sam' });
+    const snap = JSON.parse(JSON.stringify(L.get('kayak')));
+    L.remove('kayak'); assert.strictEqual(L.has('kayak'), false); assert.strictEqual(L.load().items.find(i => i.id === 'kayak').date, '');
+    L.reinstate(snap); const it = L.get('kayak');
+    assert.ok(it); assert.strictEqual(it.date, '2027-06-12'); assert.strictEqual(it.note, 'with Sam'); assert.strictEqual(it.status, 'planned'); assert.ok(it.updated_at > snap.updated_at || it.updated_at === snap.updated_at);
+    L.remove('kayak');
+  });
   t('clearing a plan keeps the item and puts planned back to want', () => {
     L.update('parkrun', { status: 'planned' }); L.plan('parkrun', null);
     const it = L.get('parkrun'); assert.ok(it); assert.strictEqual(it.status, 'want'); assert.strictEqual(it.date, ''); assert.strictEqual(it.month, ''); assert.strictEqual(it.plan_made, '');

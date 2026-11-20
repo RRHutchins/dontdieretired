@@ -14,21 +14,59 @@
   const count = () => { const l = L.live(L.load()); return { n: l.length, done: l.filter(i => i.status === 'done').length }; };
 
   /* ---------- "Add to my list" buttons (catalogue cards, challenge pages, invite line) ---------- */
+  // Removing (20 Nov 2026, Robin: "I added an activity to my list and now can't remove it"). Every "Add to my list"
+  // button outside the invite line gets a "Remove" beside it while the activity is on the list; a removal can be undone.
+  let undoSnap = null, undoTimer = 0;
+  const say = (() => { let el = null; return t => { if (!el) { el = document.createElement('p'); el.className = 'sr-only'; el.setAttribute('role', 'status'); el.setAttribute('aria-live', 'polite'); document.body.appendChild(el); } el.textContent = ''; setTimeout(() => { el.textContent = t; }, 50); }; })();
   function paintAdds() {
     $$('[data-fl-add]').forEach(b => {
-      const on = L.has(b.dataset.flAdd);
+      const id = b.dataset.flAdd, on = L.has(id);
       b.setAttribute('aria-pressed', String(on));
       b.textContent = on ? 'On my list ✓' : 'Add to my list';
+      if (b.closest('[data-fl-invited]')) return;
+      let r = b.parentNode.classList.contains('fl-addrow') ? $('[data-fl-unadd]', b.parentNode) : null;
+      if (!r) {
+        const row = document.createElement('span'); row.className = 'fl-addrow';
+        b.parentNode.insertBefore(row, b); row.appendChild(b);
+        r = document.createElement('button'); r.type = 'button'; r.className = 'chip fl-unadd'; r.dataset.flUnadd = id;
+        row.appendChild(r);
+      }
+      const undo = !on && !!undoSnap && undoSnap.id === id;
+      r.hidden = !on && !undo;
+      r.textContent = undo ? 'Undo' : 'Remove';
+      r.setAttribute('aria-label', undo ? 'Undo: put it back on my list' : 'Remove from my list');
+      r.dataset.undo = undo ? '1' : '';
     });
     const ml = $('[data-fl-minelink]'), pg = $('[data-fl-challenge]');
     if (ml && pg) ml.hidden = !L.has(pg.dataset.flChallenge);
     const c = count();
     $$('[data-fl-n]').forEach(e => { e.textContent = c.n ? '(' + c.n + ')' : ''; });
   }
+  window.DDRListPaint = paintAdds;   // plan-page.js calls this after saving or removing a plan
+  const changedHere = () => document.dispatchEvent(new CustomEvent('ddr:list'));
+  // take the item out (keeping a copy, plan and note included, for Undo) or put it back
+  function takeOut(id) {
+    const it = L.get(id); if (!it) return null;
+    undoSnap = JSON.parse(JSON.stringify(it)); L.remove(id); track('list_remove', {});
+    clearTimeout(undoTimer); undoTimer = setTimeout(() => { undoSnap = null; paintAdds(); }, 15000);
+    changedHere(); return undoSnap;
+  }
+  function putBack() {
+    if (!undoSnap) return; L.reinstate(undoSnap); undoSnap = null; clearTimeout(undoTimer); changedHere();
+  }
+  document.addEventListener('click', e => {
+    const r = e.target.closest('[data-fl-unadd]'); if (!r) return;
+    const id = r.dataset.flUnadd;
+    if (r.dataset.undo) { putBack(); say('Back on your list.'); }
+    else if (takeOut(id)) say('Removed from your list. Press Undo to put it back.');
+    paintAdds(); if (root) { renderMine(); renderSuggest(); }
+    r.focus();
+  });
   document.addEventListener('click', e => {
     const b = e.target.closest('[data-fl-add]'); if (!b) return;
     const id = b.dataset.flAdd;
     if (L.has(id)) { if ($('[data-fl]')) showView('mine'); else location.href = '/list/#mine'; return; }
+    if (undoSnap && undoSnap.id === id) { undoSnap = null; clearTimeout(undoTimer); }
     L.add(id); track('list_add', { id, from: b.closest('[data-home]') ? 'home' : b.closest('[data-fl-invited]') ? 'invite' : b.closest('[data-fl-suggest]') ? 'suggestion' : $('[data-fl]') ? 'catalogue' : 'challenge' });
     paintAdds(); if (root) { renderMine(); renderSuggest(); }
   });
@@ -260,12 +298,13 @@
       const t = titleOf(it), gone = it.cid && t === null;
       return '<li class="fl-row' + (it.status === 'done' ? ' is-done' : '') + '" data-id="' + esc(it.id) + '">'
         + '<div class="fl-row-main"><span class="fl-row-title">' + (it.cid && !gone ? '<a href="/list/' + esc(it.cid) + '/">' + esc(t) + '</a>' : esc(gone ? 'An activity we no longer list (' + it.cid + ')' : t)) + (it.cid ? '' : ' <span class="fl-reg">Yours</span>') + '</span>'
-        + '<label class="sr-only" for="st-' + i + '">Status</label><select id="st-' + i + '" data-fl-status>' + L.STATUSES.map(s => '<option value="' + s + '"' + (s === it.status ? ' selected' : '') + '>' + STATUS[s] + '</option>').join('') + '</select></div>'
-        + '<details><summary>' + (it.date || it.month || it.note ? esc([it.date ? shortDate(it.date) + (it.until ? ' to ' + shortDate(it.until) : '') : it.month ? monthName(it.month) : '', it.note].filter(Boolean).join(' · ').slice(0, 70)) : 'Date, note, move') + '</summary>'
+        + '<span class="fl-row-ctl"><label class="sr-only" for="st-' + i + '">Status</label><select id="st-' + i + '" data-fl-status>' + L.STATUSES.map(s => '<option value="' + s + '"' + (s === it.status ? ' selected' : '') + '>' + STATUS[s] + '</option>').join('') + '</select>'
+        + '<button type="button" class="fl-row-x" data-fl-remove aria-label="Remove ' + esc(gone ? 'this activity' : t) + ' from my list"><span aria-hidden="true">✕</span> Remove</button></span></div>'
+        + '<details><summary>' + (it.date || it.month || it.note ? esc([it.date ? shortDate(it.date) + (it.until ? ' to ' + shortDate(it.until) : '') : it.month ? monthName(it.month) : '', it.note].filter(Boolean).join(' · ').slice(0, 70)) : 'Add a date or note, or move it') + '</summary>'
         + '<div class="fl-row-more">' + (it.cid && !gone ? '<p class="fl-row-plan"><a href="/list/' + esc(it.cid) + '/#plan">' + ((it.date || it.month) && it.plan_made ? 'See the plan' : 'Plan this') + ' <span aria-hidden="true">→</span></a>' + (it.month ? ' <span class="meta">Planned for ' + esc(monthName(it.month)) + '</span>' : '') + '</p>' : '')
         + '<label>Date <small>(planned for, or done on)</small><input type="date" data-fl-date value="' + esc(it.date) + '"></label>'
         + '<label>Note<textarea rows="2" maxlength="500" data-fl-note placeholder="Who with, where, how it went">' + esc(it.note) + '</textarea></label>'
-        + '<p class="fl-row-acts"><button type="button" class="chip" data-fl-move="-1"' + (i === 0 ? ' disabled' : '') + '>Move up</button><button type="button" class="chip" data-fl-move="1"' + (i === l.length - 1 ? ' disabled' : '') + '>Move down</button><button type="button" class="chip" data-fl-remove>Remove</button></p></div></details></li>';
+        + '<p class="fl-row-acts"><button type="button" class="chip" data-fl-move="-1"' + (i === 0 ? ' disabled' : '') + '>Move up</button><button type="button" class="chip" data-fl-move="1"' + (i === l.length - 1 ? ' disabled' : '') + '>Move down</button></p></div></details></li>';
     }).join('');
     renderPrintOnly();
     renderHead();
@@ -288,7 +327,18 @@
       const li = e.target.closest('.fl-row'); if (!li) return; const id = li.dataset.id;
       const mv = e.target.closest('[data-fl-move]');
       if (mv) { L.move(id, +mv.dataset.flMove); renderMine(); const again = $('.fl-row[data-id="' + CSS.escape(id) + '"] details', rows); if (again) again.open = true; }
-      if (e.target.closest('[data-fl-remove]')) { L.remove(id); kind.textContent = ''; renderMine(); renderSuggest(); }
+      if (e.target.closest('[data-fl-remove]')) {
+        const t = $('.fl-row-title', li).textContent.replace(/ Yours$/, '');
+        if (!takeOut(id)) return;
+        renderMine(); renderSuggest();
+        kind.innerHTML = 'Removed “' + esc(t) + '”. <button type="button" class="linklike fl-undo" data-fl-undo>Undo</button>';
+        $('[data-fl-undo]', kind).focus();
+      }
+    });
+    kind.addEventListener('click', e => {
+      if (!e.target.closest('[data-fl-undo]')) return;
+      const id = undoSnap && undoSnap.id; putBack(); kind.textContent = 'Back on your list.'; renderMine(); renderSuggest();
+      const again = id && $('.fl-row[data-id="' + CSS.escape(id) + '"] [data-fl-remove]', rows); if (again) again.focus();
     });
   }
   function renderPrintOnly() {
