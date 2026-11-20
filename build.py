@@ -1127,6 +1127,9 @@ def build(make_social=True):
             assert not miss, f"hub {h['id']} event {e.get('id')}: missing {miss}"
             assert e["id"] not in seen_e and re.fullmatch(r"[a-z0-9-]+", e["id"]), f"hub {h['id']}: event id {e['id']} duplicated or malformed"
             seen_e.add(e["id"])
+            # optional `activity`: the Things to do id with our how-to-start guide for this event (shown both ways)
+            assert not e.get("activity") or e["activity"] in _chs_by, f"hub {h['id']} event {e['id']}: unknown activity {e.get('activity')}"
+            e["act"] = _chs_by.get(e.get("activity") or "")
             if PHEN:
                 assert e["continent"] in F["continent"] and e["type"] in F["type"] and all(x in F["see"] for x in e["see"]), f"hub {h['id']} event {e['id']}: unknown facet value"
                 e.setdefault("km", []); e.setdefault("terrain", []); e.setdefault("entry", []); e.setdefault("series", ""); e.setdefault("format", ""); e.setdefault("distances", ""); e.setdefault("entry_note", "")
@@ -1139,7 +1142,7 @@ def build(make_social=True):
                 L_["checked_human"] = dt.date.fromisoformat(str(L_["checked"])).strftime("%-d %B %Y")
             assert not re.search(r"[£$€]\s?\d", e["note"] + e["entry_note"] + e["distances"] + e.get("see_note", "") + e.get("when", "")), f"hub {h['id']} event {e['id']}: no prices (they change)"
             e["bands"] = sorted({b[0] for k in e["km"] for b in BANDS if b[2] <= k <= b[3]})
-            if PHEN and e.get("month"):
+            if (PHEN or h.get("month_range")) and e.get("month"):
                 # Months that wrap the year (September to April) read as a range; otherwise a list
                 ms = e["month"]
                 e["month_label"] = f"{MONTHS[ms[0] - 1]} to {MONTHS[ms[-1] - 1]}" if len(ms) > 2 else " and ".join(MONTHS[m - 1] for m in ms)
@@ -1185,12 +1188,12 @@ def build(make_social=True):
                 _add([r for r in h["events"] if r["continent"] == e["continent"] and set(r["bands"]) & set(e["bands"])], f"similar distance, {F['continent'][e['continent']]}")
                 _add([r for r in h["events"] if set(r["bands"]) & set(e["bands"])], "similar distance")
                 _add([r for r in h["events"] if r["continent"] == e["continent"]], F["continent"][e["continent"]])
-                _t = f"{e['name']}: distances, entry and terrain"
-                e["seo_title"] = _t if len(_t) <= 60 else (f"{e['name']}: how to enter" if len(e["name"]) <= 46 else e["name"])
-                e["description"] = f"{e['name']}, {e['place']}: {e['distances']}. How entry works, the terrain and the official page, checked {e['link']['checked_human']}."
+                _t = f"{e['name']}: {h.get('seo_suffix') or 'distances, entry and terrain'}"
+                e["seo_title"] = _t if len(_t) <= 60 else (f"{e['name']}: {h.get('seo_short') or 'how to enter'}" if len(e["name"]) <= 46 else e["name"])
+                e["description"] = f"{e['name']}, {e['place']}: {e['distances']}. {h.get('desc_mid') or 'How entry works, the terrain'} and the official page, checked {e['link']['checked_human']}."
                 urls.append(out(e["url"], "hub-event.html", h=h, e=e, related=rel))
                 pages.append({"title": e["name"], "key": "", "url": e["url"], "category": h["category"], "excerpt": e["note"],
-                              "tags": [h["id"].replace("-", " "), "race"] + list(h.get("tags") or []) + re.findall(r"[a-z]+", (e["name"] + " " + e["place"] + " " + e["country"]).lower()),
+                              "tags": [h["id"].replace("-", " "), h.get("word") or "race"] + list(h.get("tags") or []) + re.findall(r"[a-z]+", (e["name"] + " " + e["place"] + " " + e["country"]).lower()),
                               "image": "/static/og-default.png", "art": "/static/og-default.png"})
         for g in h.get("guides") or []:
             urls.append(out(g["url"], "hub-guide.html", h=h, g=g, others=[x for x in h["guides"] if x is not g]))

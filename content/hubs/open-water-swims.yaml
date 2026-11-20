@@ -1,0 +1,427 @@
+# Deep hub (RUNBOOK §6u): open-water swims (built 20 Nov 2026; Robin asked for more deep hubs that are popular, bring
+# traffic, involve spending and fit the planner). Race-style schema with swimming words: `series` is the kind of swim
+# (mass event, crossing, solo channel swim), `terrain` is the water (lake, river, sea). Every fact comes from the
+# organiser's or association's page linked on the row (or a `more` link), opened on its `checked` date; no prices;
+# months only where the page says; water temperatures only where the page states them; ids are permanent.
+id: open-water-swims
+slug: open-water-swims
+category: move
+label: Open-water swims
+h1: "Open-water swims: lake, river and sea events and great crossings"
+seo_title: 'Open-water swimming events and crossings: finder'
+description: Find an open-water swim by region, distance, water and how you get a place, from the Great North Swim and Swim Serpentine to the Dart 10k, Lake Zurich, Rottnest and the English Channel.
+lead: Open-water events range from a mile in a lake with a kayak never far away to a channel crossing behind a pilot boat. Here is how each one works and how to get a place, checked against the organiser's own page.
+intro:
+- A first open-water event is usually a mile or so in a lake, with waves of swimmers, wetsuits allowed and safety kayaks on the water. From there the distances grow to 10 km river swims, crossings between continents and the channel swims that need a pilot boat booked years ahead.
+- Filter the list below by region, distance, water, kind of swim or how you get a place. Every swim links to its organiser's or governing association's own page, opened on the date shown. Dates, distances and rules change every year, so the official page is the last word.
+tags: [swim, swims, swimming, 'open water', 'wild swimming', lake, river, sea, channel, crossing, 'mass swim', wetsuit, marathon swimming]
+word: swim
+words: swims
+noun_one: a swim
+noun_many: swims
+finder_title: Swim finder
+search_hint: Name, place or country
+entry_h2: How you get a place
+series_label: Kind of swim
+series_any: Any kind
+series_dt: Kind of swim
+stage_text: multi-day swim
+stage_option: Multi-day swims
+seo_suffix: distances, water and entry
+desc_mid: How entry works, the water
+trust_text: 'Dates, distances, fees and safety rules change every year: the official page is the one to trust.'
+button_text: Open the swim finder
+chip_text: swim finder and guides
+back_text: Find another swim in the finder
+none_text: No swims match those choices yet. Try any distance or any month.
+review_text: not reviewed by a swimming coach or doctor.
+kit_text: Kit to compare before you swim
+about: We list a swim only after opening its organiser's or governing association's own page, and every fact here comes from that page or another official page linked beside it. Dates, distances and safety rules change every year, so the official page is the one to trust. Being listed does not mean any swim or organiser endorses this site.
+safety: Cold water can cause cold water shock even on a warm day. Never swim alone, build up gradually, and follow the event's safety briefing. If you get into trouble, the RNLI's advice is to float on your back until you can control your breathing. In an emergency call 999 or 112 and ask for the coastguard at the coast (911 in the US). Check with your GP (family doctor) first if you have a heart condition.
+bands_def: [[short, Under 2 km, 0, 1.99], [mid, 2 to 4.9 km, 2, 4.99], [long, 5 to 9.9 km, 5, 9.99], [marathon, 10 km or more, 10, 99999]]
+event_pages: true
+month_range: true
+facets:
+  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania}
+  terrain: {lake: Lake, river: River, sea: Sea}
+  entry: {open: Open entry (first come), register: Register with the organiser (see its rules), ballot: Ballot or lottery, charity: Charity place, qualifier: Qualifying swim or proof of experience, application: 'Application, selection or pilot booking'}
+  series: {mass: Mass-participation event, crossing: Crossing or point-to-point swim, solo: Solo or relay channel swim, independent: Other}
+activities: [open-water-swim, swim-the-great-north-swim, swim-the-channel-in-a-relay]
+events:
+- id: great-north-swim
+  name: Great North Swim
+  series: mass
+  place: Brockhole on Windermere, Lake District
+  country: England
+  continent: europe
+  km: [0.25, 0.8, 1.6, 3.2, 5, 10]
+  distances: 250 m, half a mile (about 0.8 km), 1 mile (about 1.6 km), 2 miles (about 3.2 km), 5 km (about 3.1 miles) and 10 km (about 6.2 miles)
+  terrain: [lake]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: 'Enter online with the organiser; 2027 entries are open, and the page does not say whether any distance has sold out. Minimum ages on the day: 8 for the 250 m (8 to 12-year-olds with a paying adult), 12 for the half mile, 16 for the 1 mile, 2 mile and 5 km, and 18 for the 10 km. Wetsuits are optional when the water is 15C or above; anyone over 16 swimming without one must use an approved high-visibility tow float, and under-16s must wear a wetsuit.'
+  note: The 2027 weekend runs from Friday 11 to Sunday 13 June 2027, with swims in waves on all three days, including a women-only half-mile wave. Safety kayakers, lifeguards and boats watch the course; a struggling swimmer can lie on their back or tread water and raise a hand. The 5 km must be finished within 2.5 hours and the 10 km within 4.5 hours.
+  activity: swim-the-great-north-swim
+  link: {label: 'Great Swim: Coventry Building Society Great North Swim', url: 'https://greatswim.org/great-north-swim/', checked: '2026-11-20'}
+  more:
+  - {label: 'Great Swim: Choose Your Distance', url: 'https://greatswim.org/enter/', checked: '2026-11-20'}
+- id: swim-serpentine
+  name: Swim Serpentine
+  series: mass
+  place: The Serpentine, London
+  country: England
+  continent: europe
+  km: [0.8, 1.6, 3.2, 9.7]
+  distances: Half a mile (about 0.8 km), 1 mile (about 1.6 km), 2 miles (about 3.2 km) and six miles (about 9.7 km, the 'Super Six')
+  terrain: [lake]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: 'Entries for 2027 are not open yet; register your interest with London Marathon Events to hear when they open. Minimum ages on event day: 12 for the half mile, 16 for one and two miles, 18 for the Super Six. Wetsuits are optional between 16C and 24.5C, strongly recommended below 15.9C, compulsory below 14.9C and banned at 24.6C or above; you must wear a tow float if you swim in a tri suit.'
+  note: The most recent edition was on 19 September 2026; 2027 wave times are still to be confirmed. Waves start at regular intervals through the day, and the last two waves have time requirements over two miles. Water safety staff can take out any swimmer who appears to be struggling.
+  activity: swim-the-serpentine
+  link: {label: 'London Marathon Events: Swim Serpentine', url: 'https://www.londonmarathonevents.co.uk/swim-serpentine', checked: '2026-11-20'}
+  more:
+  - {label: 'London Marathon Events: Swim Serpentine FAQs', url: 'https://www.londonmarathonevents.co.uk/swim-serpentine/faqs', checked: '2026-11-20'}
+- id: dart-10k
+  name: Dart10k
+  series: mass
+  place: Sharpham bends to Dart Marina, Dartmouth, on the River Dart, Devon
+  country: England
+  continent: europe
+  km: [10]
+  distances: 10 km (about 6.2 miles), swum downriver
+  terrain: [river]
+  format: single
+  month: [7]
+  entry: [open, charity]
+  entry_note: General tickets for 2027 went on sale on 25 September 2026 and the organiser says the event will sell out. A charity place, which carries a fundraising target, is the only guaranteed way in. The page links to Environment Agency monitoring results for the start and finish and asks entrants to check them before deciding to swim.
+  note: Founder Kate Rew, of the Outdoor Swimming Society, handed the swim to the charity Level Water in 2022. The 2027 swims are on 24 and 25 July 2027. Swimmers take a ferry upriver from Dartmouth to a pontoon start; in 2026 about 1,300 swimmers took part over two days, watched by a safety team on kayaks and paddleboards.
+  link: {label: 'Level Water: Dart10k 2027', url: 'https://www.levelwater.org/dart10k-2027', checked: '2026-11-20'}
+  more:
+  - {label: 'Level Water: A New Dawn for the Dart: Dart10k 2026', url: 'https://www.levelwater.org/stories/dart10k2026', checked: '2026-11-20'}
+  - {label: 'Outdoor Swimming Society: The Dart10k - From Vision to Legacy', url: 'https://www.outdoorswimmingsociety.com/dart-10k-from-vision-to-legacy/', checked: '2026-11-20'}
+- id: bantham-swoosh
+  name: Bantham Swoosh
+  series: mass
+  place: Aveton Gifford down the Aune Estuary to Bantham Beach, South Devon
+  country: England
+  continent: europe
+  km: [6]
+  distances: 6 km (about 3.7 miles), downstream on the tide; a 1 km Mini-Swoosh was also run in 2026
+  terrain: [river]
+  format: single
+  month: [7]
+  entry: [open, charity]
+  entry_note: Tickets are sold only through Level Water's website. The organiser says the swim sold out in record time in 2026 and that a charity ticket is the only way to guarantee entry. Under the 2026 rules you had to be 16 or over and adults needed a full-length (shoulder-to-ankle) wetsuit; swimming in less needed an application, approval and a tow float. The organiser recommends being able to swim 7 km confidently.
+  note: 'The swim starts at high tide at the top of the estuary; in the last kilometre the ebbing tide is funnelled through a narrow section and speeds swimmers up. Only 2026 details were published when we checked: the 2026 swim was on Saturday 18 July 2026, and no 2027 date was given (you can register interest for 2027). A full water safety crew is on the water throughout.'
+  link: {label: 'Level Water: Bantham Swoosh & Boomerang', url: 'https://www.levelwater.org/bantham-swoosh-boomerang', checked: '2026-11-20'}
+  more:
+  - {label: 'Level Water: Bantham Swoosh Event Information', url: 'https://levelwater.org/bantham-swoosh-faqs', checked: '2026-11-20'}
+- id: bldsa-windermere-one-way
+  name: Windermere one-way (BLDSA)
+  series: crossing
+  place: Fell Foot Park to just past Ambleside Pier, Windermere
+  country: England
+  continent: europe
+  km: [16.9]
+  distances: 10.5 miles (about 16.9 km), end to end
+  terrain: [lake]
+  format: single
+  month: [7]
+  entry: [qualifier, register]
+  entry_note: 'Swimmers are advised to have completed an open water swim of 5.5 miles in 3.5 hours; the swim secretary may accept others at their discretion. Every swimmer needs at least one kayak: bring your own, or the association may provide one if numbers allow, but this is not guaranteed. Non-members enter through a separate open entry form that asks about your swimming experience; non-member and non-traditional places are limited and go first come, first served.'
+  note: Run by the British Long Distance Swimming Association; its event programmes for this swim go back to 1961. The 2027 swim is on Saturday 31 July 2027, starting at 8am (from the page's calendar link). Both traditional costume and non-traditional (e.g. wetsuit) swimmers are accepted, but only costumed members count for its Grand Prix.
+  link: {label: 'BLDSA: Windermere', url: 'https://bldsa.org.uk/swim/championship-events/windermere/', checked: '2026-11-20'}
+  more:
+  - {label: 'BLDSA: Windermere (one way) OPEN', url: 'https://bldsa.org.uk/product/windermere-open/', checked: '2026-11-20'}
+- id: bldsa-loch-lomond
+  name: Loch Lomond (BLDSA)
+  series: crossing
+  place: Loch Lomond (overnight swim)
+  country: Scotland
+  continent: europe
+  km: [1, 34.8]
+  distances: 21.6 miles (about 34.8 km); a 1 km swim is also offered
+  terrain: [lake]
+  format: single
+  month: [8]
+  entry: [register]
+  entry_note: Enter with the British Long Distance Swimming Association by online or PDF form; entries close on 25 July 2027. For the long swim you must find a suitable escort boat and crew yourself, and boats on the loch can be booked up to a year ahead.
+  note: The 2027 swim runs overnight from 4pm on Saturday 28 August to 8am on Sunday 29 August 2027, with staggered starts so everyone aims to finish around 8am. Past finish times have ranged from about 9 to 26 hours; the page says water conditions and temperatures vary. Results are listed for 2016, 2018, 2021, 2023 and 2025.
+  link: {label: 'BLDSA: BLDSA Loch Lomond 2027', url: 'https://bldsa.org.uk/events/bldsa-loch-lomond/', checked: '2026-11-20'}
+  more:
+  - {label: 'BLDSA: Loch Lomond', url: 'https://bldsa.org.uk/swim/championship-events/loch-lomond/', checked: '2026-11-20'}
+- id: henley-classic
+  name: Henley Classic
+  series: mass
+  place: Henley Royal Regatta course, River Thames, Henley-on-Thames
+  country: England
+  continent: europe
+  km: [2.1]
+  distances: 2.1 km (about 1.3 miles), upstream, point to point
+  terrain: [river]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: Enter with Henley Swim; places are limited. Minimum age 14; wetsuits are optional for everyone. Waves are set by expected swim time, with separate performance and junior (17 and under) waves.
+  note: The 2027 swim is on Sunday 27 June 2027, starting at 4am, at dawn on a course closed to boats; everyone must be out by 6.30am. The organisers say end-of-June water has typically been 17 to 19C in past years, but it depends on weather and rain.
+  link: {label: 'Henley Swim: River Thames Swimming Event (Henley Classic)', url: 'https://henleyswim.com/henley-classic/', checked: '2026-11-20'}
+- id: thames-marathon
+  name: Thames Marathon
+  series: mass
+  place: Henley, Hambleden Lock or above Hurley, downstream to Higginson Park, Marlow
+  country: England
+  continent: europe
+  km: [5.5, 9, 13]
+  distances: About 5.5 km (3.4 miles), 9 km (5.6 miles) and 13 km (8.1 miles); all distances approximate
+  terrain: [river]
+  format: single
+  month: [8]
+  entry: [register, charity]
+  entry_note: Registration is open through the organiser's timing partner. Minimum age 18. Tow floats are compulsory. Non-wetsuit places on the 9 km and 13 km are limited, you may be asked for more information, and the organisers say they sell out very quickly. Charity places with Level Water carry a fundraising pledge.
+  note: 'The 2027 swim is on Sunday 8 August 2027. All swims are downstream. Cut-offs: six and a half hours for the full, 5 hours for the mid-distance and three and a half hours for the half.'
+  link: {label: 'Henley Swim: Thames Marathon', url: 'https://henleyswim.com/thamesmarathon/', checked: '2026-11-20'}
+- id: dock2dock
+  name: Dock2Dock
+  series: mass
+  place: Royal Docks Watersports Centre, Royal Docks, London
+  country: England
+  continent: europe
+  km: [1.5, 3, 5, 8, 10, 15]
+  distances: 1.5 km (about 0.9 miles), 3 km (1.9 miles), 5 km (3.1 miles), 8 km (5 miles), 10 km (6.2 miles) and 15 km (9.3 miles)
+  terrain: [river]
+  format: single
+  month: [8]
+  entry: [open]
+  entry_note: Register interest with Level Water for first access to tickets; the page says a pre-sale starts at 10am on Monday 2 November (no year given). The organiser says tickets sold out quickly last year.
+  note: The 2027 swim is on Saturday 28 August 2027 in London's Royal Docks, alongside the London City Airport runway while planes take off and land. Safety boats, kayaks and paddleboarders cover the water throughout.
+  link: {label: 'Level Water: Dock2Dock 2027', url: 'https://www.levelwater.org/dock2dock', checked: '2026-11-20'}
+- id: chillswim-windermere
+  name: Chillswim Windermere (end to end)
+  series: crossing
+  place: Fell Foot Park to Waterhead, Windermere
+  country: England
+  continent: europe
+  km: [17.7]
+  distances: 11 miles (about 17.7 km), south to north
+  terrain: [lake]
+  format: single
+  month: [9]
+  entry: [register, charity]
+  entry_note: Enter through the Chillswim sign-up linked from Level Water; Level Water entrants agree to a fundraising target. You must be at least 17 on the day. You give an estimated mile pace, which sets your start group; the slowest pace accepted is 52 minutes a mile. A tow float or dry bag is compulsory.
+  note: 'Only 2026 details were published when we checked: the 2026 swim was on Saturday 5 September 2026, and we found no 2027 date. Cut-offs apply at 5.5 miles (13:15), 8 miles (14:45) and 10 miles (16:15). Swim safety staff, kayakers, support paddlers and feed boats are on the water, and age-group prizes are given for both wetsuit and non-wetsuit swimmers.'
+  link: {label: 'Level Water: Chillswim Windermere 2026', url: 'https://www.levelwater.org/windermere', checked: '2026-11-20'}
+- id: zurich-lake-crossing
+  name: Stadtzürcher Seeüberquerung (Lake Zurich crossing)
+  series: crossing
+  place: Strandbad Mythenquai to Strandbad Tiefenbrunnen, Zurich
+  country: Switzerland
+  continent: europe
+  km: [1.5]
+  distances: 1.5 km (about 0.9 miles), across the lake
+  terrain: [lake]
+  format: single
+  month: [7]
+  entry: [open]
+  entry_note: Tickets go on sale through Ticketcorner at 12:00 on the Monday before the event, up to 4 per purchase, with no box office on site; each ticket has a set check-in window and start time. Numbers are capped at 9,000. Good swimmers aged 12 and over may take part; 12 to 15-year-olds must swim with an adult, and need ID. Wetsuits are allowed; fins, snorkels and buoys are not.
+  note: The 2027 date is Wednesday 7 July 2027, with reserve dates of 14 July and 25 August 2027. The swim only goes ahead in good weather with water of at least 21C; the committee decides on the Monday before. Lifeguards in boats are stationed every 70 m along a buoyed course.
+  link: {label: 'Stadtzürcher Seeüberquerung: Startseite', url: 'https://www.seeueberquerung.ch/', checked: '2026-11-20'}
+- id: vansbrosimningen
+  name: Vansbrosimningen
+  series: mass
+  place: Vanån and Västerdalälven rivers, Vansbro
+  country: Sweden
+  continent: europe
+  km: [3]
+  distances: '3 km (about 1.9 miles): 2 km downstream in the Vanån, then 1 km upstream in the Västerdalälven'
+  terrain: [river]
+  format: single
+  month: [7]
+  entry: [open]
+  entry_note: Sign up online with the organiser; the fee rises after 30 November and 30 April, and entry runs to 9 July. Minimum age 10. The page does not say whether places sell out.
+  note: The 2027 swim is on 10 July 2027, from 10am. It is part of En Svensk Klassiker (the Swedish Classic). Other swims listed include Vansbro 10K, Vansbro Halvsim, Vansbro Kortsim and Vansbro Tjejsim.
+  link: {label: 'Vansbrosimningen: Vansbrosimningen', url: 'https://vansbrosimningen.se/vara-lopp/vansbrosimningen/', checked: '2026-11-20'}
+- id: rottnest-channel-swim
+  name: Rottnest Channel Swim
+  series: crossing
+  place: Cottesloe Beach to Rottnest Island, Western Australia
+  country: Australia
+  continent: oceania
+  km: [19.7]
+  distances: 19.7 km (about 12.2 miles), as a solo, duo or team
+  terrain: [sea]
+  format: single
+  month: [2]
+  entry: [open, qualifier]
+  entry_note: Registration opens in October through an online queue and runs until sold out (duo and team registration for 2027 was due to open on 27 and 28 October 2026; solo dates to be confirmed). Solo swimmers must have swum a Rottnest solo in 2025 or 2026, or finish a 10 km qualifying swim in 4 hours 15 minutes or less between 2 May 2026 and 25 January 2027.
+  note: First held in 1991. The 2026 swim, due on Saturday 21 February 2026, was cancelled for safety reasons because of forecast conditions; 2026 teams and duos get guaranteed entry to 2027 and 2026 soloists priority entry. No 2027 swim date was published when we checked.
+  link: {label: 'Rottnest Channel Swim: Registering for the Swim', url: 'https://rottnestchannelswim.com.au/registering/', checked: '2026-11-20'}
+  more:
+  - {label: 'Rottnest Channel Swim: A brief history', url: 'https://rottnestchannelswim.com.au/about/', checked: '2026-11-20'}
+  - {label: 'Rottnest Channel Swim: Key Dates', url: 'https://rottnestchannelswim.com.au/key-dates/', checked: '2026-11-20'}
+  - {label: 'Rottnest Channel Swim: 2026 Event Cancellation', url: 'https://rottnestchannelswim.com.au/2026-cancellation/', checked: '2026-11-20'}
+- id: lorne-pier-to-pub
+  name: Lorne Pier to Pub
+  series: mass
+  place: Lorne Pier to Lorne Surf Life Saving Club, Victoria
+  country: Australia
+  continent: oceania
+  km: [1.2]
+  distances: 1.2 km (about 0.75 miles)
+  terrain: [sea]
+  format: single
+  month: [1]
+  entry: [open]
+  entry_note: Entries are through Race Roster. The 2027 swim sold out on 15 November 2026 and its waitlist sold out the next day. The club warns not to buy entries on Facebook or elsewhere because of scams.
+  note: Run by Lorne Surf Life Saving Club, with over 5,000 participants. The 2027 swim is on Saturday 9 January 2027, the day after the Mountain to Surf run.
+  link: {label: 'Lorne Surf Life Saving Club: Pier to Pub Home', url: 'https://lornesurfclub.com.au/pier-to-pub-events/pier-to-pub/pier-to-pub-home/', checked: '2026-11-20'}
+- id: midmar-mile
+  name: aQuellé Midmar Mile
+  series: mass
+  place: Midmar Dam, Howick, KwaZulu-Natal
+  country: South Africa
+  continent: africa
+  km: [1.6]
+  distances: One mile (about 1.6 km); every race over the weekend is the full mile
+  terrain: [lake]
+  format: single
+  month: [2]
+  entry: [register]
+  entry_note: Enter online with the organiser. Races are split by age and sex (for example women 14 to 30, boys 13 and under, 71 and over), plus team, family and disabled events; check the entry site for rules.
+  note: The 54th edition is on Saturday 13 and Sunday 14 February 2027.
+  link: {label: 'aQuellé Midmar Mile: Enter Online', url: 'https://enter.midmarmile.co.za/', checked: '2026-11-20'}
+  more:
+  - {label: 'aQuellé Midmar Mile: Midmar Mile Open Water Swim Event 2027', url: 'https://midmarmile.com/', checked: '2026-11-20'}
+  - {label: 'aQuellé Midmar Mile: FAQ''s', url: 'https://midmarmile.com/pages/faqs', checked: '2026-11-20'}
+- id: big-shoulders
+  name: Big Shoulders 5K and 2.5K
+  series: mass
+  place: Ohio Street Beach, Chicago
+  country: USA
+  continent: north-america
+  km: [2.5, 5]
+  distances: 2.5 km (about 1.6 miles) or 5 km (about 3.1 miles), on a 2.5 km course
+  terrain: [lake]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: Open to registered masters swimmers aged 18 and over; the event is sanctioned by US Masters Swimming and swimmers must follow its rules. Chicago Park District lifeguards patrol the course.
+  note: 'Only 2026 details were published when we checked: the 2026 swim was on Saturday 12 September 2026, and we found no 2027 date.'
+  link: {label: 'US Masters Swimming: Big Shoulders 5K & 2.5K Open Water Swim Classic', url: 'https://www.usms.org/events/events/big-shoulders-5k-25k-open-water-swim-classic-a1jpo00000agqwb2an', checked: '2026-11-20'}
+- id: english-channel
+  name: English Channel solo or relay
+  series: solo
+  place: Usually from at or near Shakespeare's Cliff or Samphire Hoe (between Folkestone and Dover) towards Cap Gris Nez, France
+  country: England
+  continent: europe
+  km: [32]
+  distances: About 21 miles (32 km); the shortest route is 18.25 nautical miles
+  terrain: [sea]
+  format: single
+  month: [4, 5, 6, 7, 8, 9, 10]
+  entry: [application, qualifier]
+  entry_note: 'You book an independent pilot boat for a tide window, then register with one of two ratifying bodies. CS&PF: your contract is with the pilot; register by 30 April; solos need a 6-hour qualifying swim in water at or below 16C (61F) within 18 months before, and at least 14 days before your tide; relay swimmers do 1.5 hours, a break, then 1 hour. CSA: book a pilot as early as possible (its pilots are taking bookings three years ahead), join as an associate member, pay solo fees before 30 April, and complete a verified 8-hour solo qualifying swim in water of 60F (about 15.5C) or colder; each relay swimmer needs a verified 2-hour cold-water swim. Both bodies need a medical.'
+  note: The CSA says its swim season is 1 April to 31 October, and that you may expect water of 14 to 18C, with August having 'the best of it'. Under CSA rules the costume and cap must give no thermal protection or buoyancy.
+  activity: swim-the-channel-in-a-relay
+  link: {label: 'Channel Swimming & Piloting Federation: Booking a Swim', url: 'https://cspf.co.uk/booking-a-swim', checked: '2026-11-20'}
+  more:
+  - {label: 'Channel Swimming Association: A Step by Step Guide', url: 'https://www.channelswimmingassociation.com/swim-advice/a-step-by-step-guide', checked: '2026-11-20'}
+  - {label: 'Channel Swimming Association: FAQ', url: 'https://www.channelswimmingassociation.com/faq', checked: '2026-11-20'}
+- id: catalina-channel
+  name: Catalina Channel
+  series: solo
+  place: Catalina Island to the California mainland
+  country: USA
+  continent: north-america
+  km: [32]
+  distances: A little more than 20 miles (about 32 km) at the shortest; currents can add a few more
+  terrain: [sea]
+  format: single
+  entry: [application]
+  entry_note: Book an independent boat pilot and secure your date, then send the Catalina Channel Swimming Federation's swim application (with medical form and waivers) at least 45 days before your attempt. The federation assigns two official observers; arranging kayak support is up to you.
+  note: The federation describes a midnight start, to avoid blustery afternoon winds, which means several hours of swimming in the dark. The federation gives water temperatures of 58 to 72F (14 to 22C), dropping by as much as 10F (about 5.6C) in the last 3 miles near the mainland. It suggests a non-stop training swim of more than 15 miles.
+  link: {label: 'Catalina Channel Swimming Federation: Basic Swim Information', url: 'https://swimcatalina.org/basic-swim-information/', checked: '2026-11-20'}
+  more:
+  - {label: 'Catalina Channel Swimming Federation: Challenges of Catalina', url: 'https://swimcatalina.org/challenges-of-catalina/', checked: '2026-11-20'}
+- id: strait-of-gibraltar
+  name: Strait of Gibraltar
+  series: solo
+  place: Usually from the Island of Tarifa (Spain) to the area of Punta Cires (Morocco)
+  country: Spain / Morocco
+  continent: europe
+  km: [15, 22]
+  distances: Usually 15 to 22 km (8 to 12 nautical miles) because of currents; the shortest line, from Punta de Oliveros, is 14.4 km but is not the usual route
+  terrain: [sea]
+  format: single
+  month: [4, 5, 6, 7, 8, 9, 10, 11]
+  entry: [application]
+  entry_note: Apply through ACNEG's registration form; the date you send it decides your assigned date. You request a one-week window (April to November) and swim on any suitable day in it. Send ID, a swimming CV, a signed form and a doctor's medical certificate. ACNEG says the strait is not suitable for swimmers with little open water experience, and its advice (an article from February 2019) gives a minimum of 3 km an hour. Waiting lists can exceed two years.
+  note: Crossings go with or without neoprene, one way, two ways or as relays. Surface currents generally run east and can exceed 3 knots; a Zodiac-type boat sits 2 to 3 m from the swimmer for safety and feeding. Crossing reports on ACNEG's site give average water temperatures of 19.7 to 21.1C.
+  link: {label: 'ACNEG: The Crossing', url: 'https://www.acneg.com/en/?p=209423', checked: '2026-11-20'}
+  more:
+  - {label: 'ACNEG: What should I know before applying for swim across the Strait of Gibraltar?', url: 'https://www.acneg.com/en/?p=209647', checked: '2026-11-20'}
+guides:
+- slug: open-water-safety-and-first-event
+  title: 'Open water swimming: staying safe and your first event'
+  short: Safety and your first event
+  seo_title: Open water swimming safety and your first event
+  description: 'How to stay safe outdoors: cold water shock and Float to Live, acclimatising, swimming with others, checking water quality, choosing a distance and what to expect at your first mass-participation swim.'
+  standfirst: 'Swimming outdoors is very different from the pool: there are no walls to hold on to, and the water is often colder. Here is what the RNLI, Swim England, the Outdoor Swimming Society, the Environment Agency and event organisers say about getting started safely, checked on 20 November 2026.'
+  detail:
+  - h: Cold water shock and Float to Live
+    p: ['The RNLI warns that cold water shock is a real danger whenever the water is 15C or below. Never jump straight in: walk in slowly and wait until your breathing is under control before you start swimming. A wetsuit reduces the chance of cold water shock and helps you float.', 'If you get into trouble, the RNLI''s Float to Live advice is: tilt your head back with your ears under water, relax and breathe normally, move your hands and feet to help you stay afloat, and accept that your legs may sink. Fight the urge to thrash about. You can practise floating in a pool first.']
+  - h: Getting used to colder water
+    p: ['The Outdoor Swimming Society says it is easier to start when the water is 16C or above, and to keep going as it cools. Swim at least once a week, ideally two or three times.', 'Build up your time in the water slowly rather than setting a time target, and get out if you are not comfortable. Change into warm clothes quickly afterwards: Swim England notes you can chill very quickly even on a warm day.']
+  - h: Swim with others and be seen
+    list: ['Never swim alone: go with a buddy, if possible to a spot you know, and tell someone when you plan to be back (RNLI).', 'Wear a brightly coloured swim cap and consider a tow float, so others can see you (RNLI).', 'In the USA, the National Weather Service advises swimming only at beaches with lifeguards if possible, and looking for designated swimming areas.']
+  - h: Check the water quality
+    p: ['In England the Environment Agency''s free Swimfo service covers all 464 designated bathing waters. It shows each site''s rating (Excellent, Good, Sufficient or Poor) and flags days when rain, wind or high tides may lower water quality. Testing runs from mid-May to the end of September.', 'The Environment Agency advises against swimming after recent rain, when more pollution can wash into rivers and water can flow higher and faster. Swim England suggests packing water and hand sanitiser so you can clean your hands before eating.', 'Some events point you to the data too: Level Water links Dart10k entrants to Environment Agency monitoring for the start and finish.']
+  - h: What happens at a first mass event
+    p: ['Big swims start in waves, with groups setting off at intervals. The Great North Swim and Swim Serpentine both run waves through the day, and the Great North Swim includes a women-only wave. Henley Swim places you in a wave by your expected time.', 'Safety crews watch the course from kayaks, paddleboards and boats. At the Great North Swim, if you are struggling you lie on your back or tread water and raise a hand, and a member of the safety team comes to check on you. At Swim Serpentine the water safety team can take out any swimmer who appears to be struggling. Some longer swims have time limits.', 'Arrive early for the safety briefing and course explanation (Swim England). If you want to wear a neoprene hat, socks or gloves, check first that the event allows them.']
+  - h: 'Wetsuit rules differ: check yours'
+    table:
+      head: [Event (from our hub), What the rules say]
+      rows:
+      - [Great North Swim, 'Optional at 15C or above; without one, over-16s need an approved tow float; under-16s must wear one']
+      - [Swim Serpentine, Optional 16C to 24.5C; compulsory below 14.9C; banned at 24.6C or above]
+      - [Bantham Swoosh, '2026 rules: adults need a full-length wetsuit unless approved to swim without one']
+      - [Henley Classic, Optional for all swimmers]
+      - [English Channel (CSA rules), Costume and cap must give no thermal protection or buoyancy]
+  - h: Choosing a distance
+    p: [Swim England advises training until you can swim further than your event distance without putting your feet down. Many of the events in our finder also have a shorter option.]
+    table:
+      head: [Event, Shorter options, Longer options]
+      rows:
+      - [Great North Swim, '250 m (age 8+), half mile (12+)', '1 mile to 5 km (16+), 10 km (18+)']
+      - [Swim Serpentine, Half mile (12+), '1 and 2 miles (16+), six miles (18+)']
+      - [Dock2Dock, '1.5 km, 3 km', 5 km to 15 km]
+      - [Thames Marathon, About 5.5 km (18+), About 9 km and 13 km]
+  - h: Get ready in the pool, then outdoors
+    list: ['Make your front crawl solid, and learn a second stroke such as breaststroke to rest on (Swim England).', 'Practise sighting: lift your head every 6 to 8 strokes to spot a fixed point at the far end.', 'Practise treading water in the deep end and turning round a partner without touching the wall or floor, since there are no walls outdoors.', 'Breathe to both sides to balance your stroke, and swim in a busy lane with four or five friends to get used to company.', Try a wetsuit before you buy it if you can; many events offer wetsuit hire (Swim England).]
+  - h: In an emergency
+    p: ['In the UK, call 999 or 112 and ask for the Coastguard (RNLI). If someone else is in trouble, tell them to relax and float on their back, and throw them something that floats.', 'In the USA, the National Weather Service says that if someone is in trouble and no lifeguard is present, call 911.']
+  faq:
+  - {q: 'How cold is too cold to start?', a: The RNLI says cold water shock is a risk at 15C or below. The Outdoor Swimming Society suggests beginning when the water is 16C or above and keeping going as it cools.}
+  - {q: 'Do I need a wetsuit for an event?', a: 'It depends on the event and the water temperature on the day. Some make them compulsory in colder water, some leave it to you, and some ban them in warm water or for official channel swims. Read the rules for your swim.'}
+  - {q: 'What if I panic or get tired in the middle of a mass swim?', a: 'Roll on to your back and float until your breathing is under control, then raise a hand. At the Great North Swim, for example, a member of the safety team then comes to check on you.'}
+  - {q: 'Is the water clean enough to swim in?', a: 'In England, check the site on the Environment Agency''s Swimfo service before you go and avoid swimming after heavy rain.'}
+  kit:
+  - {name: Tow float, why: 'Check it is bright and high-visibility, and if it is for an event, that it meets the event''s rules (the Great North Swim asks for an approved one).', url: 'https://www.amazon.co.uk/s?k=swim+tow+float'}
+  - {name: Bright silicone swim cap, why: 'Check the colour is bright and easy to spot, and check whether your event provides a cap you must wear.', url: 'https://www.amazon.co.uk/s?k=bright+silicone+swim+cap'}
+  - {name: Open water goggles, why: 'Check the field of view, and choose clear or light lenses for dull days and tinted or mirrored ones for sun.', url: 'https://www.amazon.co.uk/s?k=open+water+swimming+goggles'}
+  - {name: Changing robe, why: 'Check it is roomy enough to change under and warm when you are wet, so you can warm up quickly after swimming.', url: 'https://www.amazon.co.uk/s?k=swimming+changing+robe'}
+  sources:
+  - {label: 'RNLI: reminds New Year dippers and open water swimmers of risks', url: 'https://rnli.org/news-and-media/2025/december/30/rnli-reminds-new-year-dippers-and-open-water-swimmers-of-risks', checked: '2026-11-20'}
+  - {label: 'RNLI: launches its Float to Live campaign for 2026', url: 'https://rnli.org/news-and-media/2026/may/19/rnli-launches-it-float-to-live-campaign-for-2026', checked: '2026-11-20'}
+  - {label: 'Outdoor Swimming Society: How to acclimatise', url: 'https://www.outdoorswimmingsociety.com/how-to-acclimatise-to-cold-water/', checked: '2026-11-20'}
+  - {label: 'Swim England: Preparing for open water swimming in the pool', url: 'https://www.swimming.org/openwater/top-tips-for-preparing-for-open-water-swimming-in-the-pool/', checked: '2026-11-20'}
+  - {label: 'Swim England: How to prepare for your first open water swim', url: 'https://www.swimming.org/openwater/how-to-prepare-for-your-first-open-water-swim/', checked: '2026-11-20'}
+  - {label: 'Environment Agency: Helping you choose where and when to swim in open water', url: 'https://environmentagency.blog.gov.uk/2026/07/09/get-the-most-out-of-a-visit-to-a-beach-lake-or-river/', checked: '2026-11-20'}
+  - {label: 'National Weather Service: Rip current safety ahead of the Memorial Day weekend', url: 'https://www.weather.gov/news/242205-rip-current-safety', checked: '2026-11-20'}
+  - {label: 'Great Swim: Coventry Building Society Great North Swim', url: 'https://greatswim.org/great-north-swim/', checked: '2026-11-20'}
+  - {label: 'London Marathon Events: Swim Serpentine FAQs', url: 'https://www.londonmarathonevents.co.uk/swim-serpentine/faqs', checked: '2026-11-20'}
+  - {label: 'Henley Swim: River Thames Swimming Event (Henley Classic)', url: 'https://henleyswim.com/henley-classic/', checked: '2026-11-20'}
+  - {label: 'Level Water: Dart10k 2027', url: 'https://www.levelwater.org/dart10k-2027', checked: '2026-11-20'}
+  - {label: 'Level Water: Bantham Swoosh Event Information', url: 'https://levelwater.org/bantham-swoosh-faqs', checked: '2026-11-20'}

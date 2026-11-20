@@ -1,0 +1,861 @@
+# Deep hub (RUNBOOK §6u): long-distance walks and treks (built 20 Nov 2026; Robin asked for more deep hubs that are
+# popular, bring traffic, involve spending and fit the planner). Race-style schema with walking words: `series` is the
+# trail network, `entry` is what you must book, `format` is single for every route. Every fact comes from the official
+# page linked on the row (or a `more` link), opened on its `checked` date; no prices; months only where an official page
+# gives a season; ids are permanent; the site never states a total.
+id: long-distance-walks
+slug: long-distance-walks
+category: travel
+label: Long-distance walks
+h1: "Long-distance walks and treks: from the Pennine Way to the Pacific Crest Trail"
+seo_title: 'Long-distance walks and treks: route finder'
+description: Find a long-distance walk by region, length, terrain and what you must book, from the Pennine Way and West Highland Way to the Camino, the Tour du Mont Blanc, the Milford Track and the Appalachian Trail, from official pages.
+lead: Some of the world's great walks need nothing but boots and a bed for the night. Others need a permit, a hut booked months ahead or a licensed guide. Here is how each one works, checked against the official page.
+intro:
+- A long-distance walk can be done end to end in one go, in a string of long weekends, or one favourite day at a time. Britain's National Trails are waymarked with an acorn from end to end, and the Wales Coast Path says you need no permit or pass. A few of the world's best-known treks are rationed by permits, quotas or hut bookings that open months ahead.
+- Filter the list below by region, length, terrain, network or what you have to book. Every route links to its official page (a trail authority, national park or government body), opened on the date shown. Conditions, closures and booking rules change, so check the official page before you go.
+tags: [walk, walks, walking, trail, trails, 'long-distance', 'national trail', trek, trekking, hike, hiking, camino, 'great walk', 'thru-hike', backpacking]
+word: route
+words: routes
+noun_one: a route
+noun_many: routes
+finder_title: Route finder
+search_hint: Name, place or country
+entry_label: What you must book
+entry_any: Anything
+entry_h2: Permits, bookings and planning
+getting_in: Booking and planning
+series_label: Network
+series_any: Any network
+series_dt: Network
+seo_suffix: length, terrain and booking
+seo_short: how to plan it
+desc_mid: Permits, booking, the terrain
+trust_text: 'Diversions, closures, permits and booking rules change: the official page is the one to trust.'
+button_text: Open the route finder
+chip_text: route finder and guides
+back_text: Find another route in the finder
+none_text: No routes match those choices yet. Try any length or any region.
+review_text: not reviewed by a mountain leader or doctor.
+kit_text: Kit to compare before you go
+about: We list a route only after opening its official page (a trail authority, national park, government or official tourism body), and every fact here comes from that page or another official page linked beside it. Diversions, permits and booking rules change, so the official page is the one to trust. Being listed does not mean any of these bodies endorses this site.
+safety: Walk within your fitness and experience, carry a map and know your route, check the forecast, and tell someone where you are going. In an emergency call 999 or 112 in the UK (911 in the US); in the UK mountains ask for the police, then mountain rescue. High-altitude treks carry a risk of altitude sickness; see your GP (family doctor) before you book if you have a heart or lung condition.
+bands_def: [[short, Under 100 km, 0, 99.9], [mid, 100 to 249 km, 100, 249.9], [long, 250 to 999 km, 250, 999.9], [epic, '1,000 km or more', 1000, 99999]]
+event_pages: true
+month_range: true
+month_dt: Season
+month_filter: Season
+month_suffix: (the season the official page gives; conditions vary from year to year)
+facets:
+  continent: {europe: Europe, north-america: North America, south-america: South America, asia: Asia, africa: Africa, oceania: Oceania}
+  terrain: {coast: Coast, lowland: 'River, farmland and lowland', hills: Hills and moorland, mountain: Mountain and high altitude}
+  entry: {any: Nothing to book (arrange your own beds), huts: 'Huts, campsites or lodges to book', permit: 'Permit, quota or ballot', guide: Licensed guide or operator required}
+  series: {national-trail: National Trail (England and Wales), great-trail: "Scotland's Great Trails", us-nst: US National Scenic Trail, nz-great-walk: New Zealand Great Walk, pilgrim: Pilgrim route, independent: Other}
+activities: [walk-a-national-trail, walk-a-camino, appalachian-trail-section]
+events:
+- id: pennine-way
+  name: Pennine Way
+  series: national-trail
+  place: Edale, Derbyshire to Kirk Yetholm, Scottish Borders
+  country: England
+  continent: europe
+  km: [431]
+  distances: 431 km (268 miles); around 16 to 19 days for the whole trail
+  terrain: [hills]
+  format: single
+  month: [5, 6, 7, 8, 9]
+  entry: [any]
+  entry_note: 'The trail is open all year and waymarked with the acorn symbol or the trail name on gates and signposts, which point both ways. You don''t have to walk it all at once: it splits into day-sized sections such as Edale to Crowden (16 miles, 26 km). Some sections have no amenities at all, so plan beds and food carefully. The National Trails site suggests mid-May to September as the best months.'
+  note: Paths range from firm and smooth to narrow, wet and boggy, and the route is hilly and remote in places; expect snow on the northern sections in winter. Named highlights include Kinder Scout (scene of the 1932 Mass Trespass), Malham Cove, Pen-y-ghent, High Cup Nick, Cross Fell, Hadrian's Wall and The Cheviot.
+  activity: walk-the-pennine-way
+  link: {label: 'National Trails: Pennine Way', url: 'https://www.nationaltrail.co.uk/en_GB/trails/pennine-way/', checked: '2026-11-20'}
+  more:
+  - {label: 'GOV.UK: Pennine Way National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/pennine-way-national-trail', checked: '2026-11-20'}
+- id: south-west-coast-path
+  name: South West Coast Path
+  series: national-trail
+  place: Minehead, Somerset to Poole Harbour, Dorset (end marker at South Haven Point)
+  country: England
+  continent: europe
+  km: [1014]
+  distances: 1,014 km (630 miles); about 30 to 56 days, and the path's own site says 7 to 8 weeks on average
+  climb: over 115,000 ft (35,000 m) of ascent and descent
+  terrain: [coast]
+  format: single
+  entry: [any]
+  entry_note: Open all year. Most people walk it over several visits; GOV.UK gives an example split into eight sections of 6 to 7 days each. Signposted all the way with the acorn, with distance markers and big markers at Minehead, Porthallow (the mid-point) and South Haven Point. You have to take a number of ferries to cross estuaries. The path's official site has pages on places to stay and baggage transfer.
+  note: Steep hills and rugged clifftop paths, with exposed walking between Westward Ho! and Padstow. Passes two World Heritage Sites, the Cornwall and West Devon Mining Landscape and the Jurassic Coast.
+  activity: walk-south-west-coast-path
+  link: {label: 'GOV.UK: South West Coast Path National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/south-west-coast-path-national-trail', checked: '2026-11-20'}
+  more:
+  - {label: 'South West Coast Path: The South West Coast Path', url: 'https://www.southwestcoastpath.org.uk/walk-coast-path/south-west-coast-path-national-trail/', checked: '2026-11-20'}
+- id: offas-dyke-path
+  name: Offa's Dyke Path
+  series: national-trail
+  place: Sedbury Cliffs near Chepstow to Prestatyn
+  country: Wales and England
+  continent: europe
+  km: [285]
+  distances: 285 km (177 miles); the whole walk takes a couple of weeks or more
+  terrain: [hills]
+  format: single
+  entry: [any]
+  entry_note: The route is very well waymarked, but carry a guidebook or map. You can walk it all or in short stretches. Most people walk between April and October, though it can be walked right through the year.
+  note: Often follows Offa's Dyke, an 8th-century earthwork, and passes Chepstow, Monmouth, Hay-on-Wye and Llangollen. The Hatterrall Ridge in the Brecon Beacons and the Clwydian Range can be hard going in bad weather; the flattest part follows the River Severn and the Montgomeryshire Canal.
+  activity: walk-offas-dyke-path
+  link: {label: 'National Trails: Offa''s Dyke Path', url: 'https://www.nationaltrail.co.uk/en_GB/trails/offas-dyke-path/', checked: '2026-11-20'}
+- id: hadrians-wall-path
+  name: Hadrian's Wall Path
+  series: national-trail
+  place: Wallsend, Tyne and Wear to Bowness-on-Solway, Cumbria
+  country: England
+  continent: europe
+  km: [135]
+  distances: 135 km (84 miles); around 6 to 7 days for experienced walkers
+  terrain: [hills, lowland]
+  format: single
+  entry: [any]
+  entry_note: Open all year, but GOV.UK recommends visiting between Easter and October for conservation reasons; it is very popular, particularly in July and August. Waymarked with the acorn, with signposts showing both directions. GOV.UK gives an example split into six sections. Between Easter and October you can buy a trail passport and collect seven stamps along the way.
+  note: Passes the Roman forts at Segedunum, Chesters, Housesteads and Birdoswald. Chollerford to Birdoswald (23 miles, 37 km) is a switchback of short climbs and descents. Parts of the Solway coast are at sea level and can be affected by tidal flooding, so check tide times.
+  activity: walk-hadrians-wall-path
+  link: {label: 'GOV.UK: Hadrian''s Wall Path National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/hadrians-wall-path-national-trail', checked: '2026-11-20'}
+  more:
+  - {label: 'National Trails: Hadrian''s Wall Path route description', url: 'https://www.nationaltrail.co.uk/en_GB/trails/hadrians-wall-path/route/', checked: '2026-11-20'}
+- id: cotswold-way
+  name: Cotswold Way
+  series: national-trail
+  place: Chipping Campden to Bath
+  country: England
+  continent: europe
+  km: [164]
+  distances: 164 km (102 miles); around 7 to 10 days
+  terrain: [hills, lowland]
+  format: single
+  entry: [any]
+  entry_note: Open all year. Very well waymarked, but carry a guidebook or map. The National Trails site breaks it into 15 sections; GOV.UK says most people walk north to south. There are a good number of B&Bs, hotels, self-catering places, campsites and glamping sites. The National Trails site says it is not legal to wild camp on the Cotswold Way.
+  note: Follows the Cotswold Edge escarpment, with many steep climbs. Historic sites on the way include Broadway Tower, the Neolithic burial chamber at Belas Knap, Sudeley Castle and Hailes Abbey, and finishes in the World Heritage city of Bath.
+  activity: walk-the-cotswold-way
+  link: {label: 'National Trails: Cotswold Way', url: 'https://www.nationaltrail.co.uk/en_GB/trails/cotswold-way/', checked: '2026-11-20'}
+  more:
+  - {label: 'GOV.UK: Cotswold Way National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/cotswold-way-national-trail', checked: '2026-11-20'}
+- id: south-downs-way
+  name: South Downs Way
+  series: national-trail
+  place: Winchester, Hampshire to Eastbourne, East Sussex
+  country: England
+  continent: europe
+  km: [160]
+  distances: 160 km (100 miles); around 8 or 9 days
+  terrain: [hills]
+  format: single
+  entry: [any]
+  entry_note: Open all year; the chalk drains and dries quickly. Very well waymarked; National Trails carry the acorn symbol or the trail name. Many places to stay are in villages off the trail, so allow time to get to and from it. Busiest at weekends and in school holidays between May and September. The National Trails site says reasonably fit people who can comfortably walk about 12 miles (20 km) a day should manage it.
+  note: Shared with cyclists and horse riders. Highlights include the Seven Sisters, the Devil's Dyke valley, the Iron Age hill fort of Chanctonbury Ring and the Long Man of Wilmington; Butser Hill (270 m) is the highest point.
+  activity: walk-the-south-downs-way
+  link: {label: 'GOV.UK: South Downs Way National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/south-downs-way-national-trail', checked: '2026-11-20'}
+  more:
+  - {label: 'National Trails: South Downs Way', url: 'https://www.nationaltrail.co.uk/en_GB/trails/south-downs-way/', checked: '2026-11-20'}
+- id: thames-path
+  name: Thames Path
+  series: national-trail
+  place: Kemble (Thames Head, the source of the Thames) to Woolwich, London
+  country: England
+  continent: europe
+  km: [298]
+  distances: 298 km (185.2 miles) on GOV.UK; around 14 days at 15 miles a day with a couple of rest days
+  terrain: [lowland]
+  format: single
+  entry: [any]
+  entry_note: 'Open all year; the National Trails site says ''The best months to visit are spring through to the end of autumn''. Very well waymarked. Sections between Thames Head and Oxford can flood in winter: check flood warnings and river levels, and do not walk through flood water.'
+  note: Mostly flat, with a few natural slopes, through Oxford, Reading and London to the Thames Barrier, passing Windsor Castle and Hampton Court Palace. You can collect stamps at over 30 stamping stations along the route. The National Trails site gives the length as about 184 miles (294 km).
+  activity: walk-the-thames-path
+  link: {label: 'GOV.UK: Thames Path National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/thames-path-national-trail', checked: '2026-11-20'}
+  more:
+  - {label: 'National Trails: Thames Path', url: 'https://www.nationaltrail.co.uk/en_GB/trails/thames-path/', checked: '2026-11-20'}
+- id: pembrokeshire-coast-path
+  name: Pembrokeshire Coast Path
+  series: national-trail
+  place: St Dogmaels to Amroth
+  country: Wales
+  continent: europe
+  km: [299]
+  distances: 299 km (186 miles), in 15 sections
+  terrain: [coast]
+  format: single
+  entry: [any]
+  entry_note: Very well waymarked, but carry a guidebook or map. Beds can be hard to find, especially for single nights, so book well ahead. On the Dale to Neyland section, check tide tables for the two tidal crossings; check current opening times for the military range (Range East).
+  note: Clifftops, coves, beaches and estuaries, with large castles at Pembroke, Tenby and Manorbier, occasional grey seals and gannets out to sea. No services between Poppit and Newport Sands. The Wales Coast Path site says it forms part of the Wales Coast Path.
+  activity: walk-the-pembrokeshire-coast-path
+  link: {label: 'National Trails: Pembrokeshire Coast Path', url: 'https://www.nationaltrail.co.uk/en_GB/trails/pembrokeshire-coast-path/', checked: '2026-11-20'}
+  more:
+  - {label: 'National Trails: Pembrokeshire Coast Path route description', url: 'https://www.nationaltrail.co.uk/en_GB/trails/pembrokeshire-coast-path/route/', checked: '2026-11-20'}
+  - {label: 'Wales Coast Path: About the path', url: 'https://www.walescoastpath.gov.uk/working-with-us/about-the-path?lang=en', checked: '2026-11-20'}
+- id: cleveland-way
+  name: Cleveland Way
+  series: national-trail
+  place: Helmsley to Filey Brigg, North Yorkshire
+  country: England
+  continent: europe
+  km: [175]
+  distances: 175 km (109 miles); around 9 days
+  terrain: [hills, coast]
+  format: single
+  entry: [any]
+  entry_note: Open all year. Waymarked with the acorn, with signposts showing both directions, and there are no stiles. GOV.UK gives an example split into nine sections. Staithes, Sandsend, Whitby, Robin Hood's Bay and Ravenscar have food and beds; there are hourly buses between Robin Hood's Bay and Scarborough and trains or buses between Scarborough and Filey.
+  note: Moorland first, then coast; GOV.UK says it can be challenging in places, especially the coastal sections. Passes Rievaulx Abbey, the White Horse of Kilburn, Whitby Abbey and Boulby Cliff (203 m), the highest cliff on England's east coast, with Roseberry Topping in view.
+  activity: walk-the-cleveland-way
+  link: {label: 'GOV.UK: Cleveland Way National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/cleveland-way-national-trail', checked: '2026-11-20'}
+  more:
+  - {label: 'National Trails: Cleveland Way route description', url: 'https://www.nationaltrail.co.uk/en_GB/trails/cleveland-way/route/', checked: '2026-11-20'}
+- id: the-ridgeway
+  name: The Ridgeway
+  series: national-trail
+  place: Overton Hill near Avebury, Wiltshire to Ivinghoe Beacon, Buckinghamshire
+  country: England
+  continent: europe
+  km: [139]
+  distances: 139 km (87 miles); about 6 days at roughly 15 miles (24 km) a day
+  terrain: [hills]
+  format: single
+  entry: [any]
+  entry_note: Open all year. Waymarked with the acorn or trail name; no stiles. GOV.UK gives an example split into six sections. West of the Thames the route is often far from villages; Ogbourne St George to Sparsholt Firs is considered the most remote section. East of the Thames it passes villages and small towns with facilities.
+  note: Mostly off-road, on rolling chalk downland in the west and through Chiltern beech woods in the east, and muddy when wet. Starts in the Avebury World Heritage Site and passes Barbury Castle Iron Age fort and white horses cut into the chalk. Horse riders and mountain bikers can use Overton Hill to Streatley-on-Thames.
+  activity: walk-the-ridgeway
+  link: {label: 'GOV.UK: The Ridgeway National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/the-ridgeway-national-trail', checked: '2026-11-20'}
+  more:
+  - {label: 'National Trails: The Ridgeway route description', url: 'https://www.nationaltrail.co.uk/en_GB/trails/the-ridgeway/route/', checked: '2026-11-20'}
+- id: north-downs-way
+  name: North Downs Way
+  series: national-trail
+  place: Farnham, Surrey to Dover, Kent
+  country: England
+  continent: europe
+  km: [246]
+  distances: 246 km (153 miles); around 12 days
+  terrain: [lowland, hills]
+  format: single
+  entry: [any]
+  entry_note: Open all year; some sections get muddy in wet weather. Signposts show the route in both directions. GOV.UK gives example sections, such as Farnham to Guildford (11 miles, 17.7 km). From Wye you can go to Dover either via Chilham and Canterbury (the Canterbury Loop) or along the Heritage Coast via Folkestone.
+  note: Much of it is on fairly level ground, with steep climbs and descents in places; Guildford to Reigate has a number of hills and may be harder. Passes Box Hill, Kit's Coty, Leeds Castle and Canterbury Cathedral and ends over the White Cliffs of Dover. The National Trails route page gives the same 153 miles as 245 km.
+  link: {label: 'GOV.UK: North Downs Way National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/north-downs-way-national-trail', checked: '2026-11-20'}
+  more:
+  - {label: 'National Trails: North Downs Way route description', url: 'https://www.nationaltrail.co.uk/en_GB/trails/north-downs-way/route/', checked: '2026-11-20'}
+- id: peddars-way-norfolk-coast-path
+  name: Peddars Way and Norfolk Coast Path
+  series: national-trail
+  place: Knettishall Heath to Holme-next-the-Sea, then the Norfolk coast from Sutton Bridge to Hopton-on-Sea
+  country: England
+  continent: europe
+  km: [254]
+  distances: '254 km (158 miles) in all: Peddars Way 74 km (46 miles), about 4 days; Norfolk Coast Path 180 km (112 miles), about 10 days; about 14 days for both'
+  terrain: [lowland, coast]
+  format: single
+  entry: [any]
+  entry_note: Open all year. Waymarked with the acorn or trail name; there are steps but no stiles. Walk it all, one or two sections, or local circular walks. Check tide times around Cromer and Mundesley, where you can be cut off by rising tides. Peddars Way near Thorpe Woodlands, Shadwell, can flood in winter; an alternative route is available.
+  note: 'Gentle gradients: often sandy tracks through the Brecks, then sandy beaches, dunes, shingle, saltmarsh and mudflats. Birds at The Wash and Cley next the Sea, Castle Acre castle and priory ruins, and reserves at Holkham, Blakeney and Titchwell Marsh. The Norfolk Coast Path is part of the King Charles III England Coast Path.'
+  activity: walk-the-norfolk-coast-path
+  link: {label: 'GOV.UK: Peddars Way and Norfolk Coast Path National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/peddars-way-and-norfolk-coast-path-national-trail', checked: '2026-11-20'}
+- id: yorkshire-wolds-way
+  name: Yorkshire Wolds Way
+  series: national-trail
+  place: Hessle, East Riding of Yorkshire to Filey Brigg, North Yorkshire
+  country: England
+  continent: europe
+  km: [127]
+  distances: 127 km (79 miles); about 6 days
+  terrain: [lowland]
+  format: single
+  entry: [any]
+  entry_note: Open all year. Very well waymarked with the acorn or trail name; no stiles. GOV.UK gives an example split into six sections; there are beds in South Cave, Fridaythorpe and Thixendale, but Wintringham has no facilities. The National Trails site says May and September are the most popular months, and suggests June to early July for poppies.
+  note: Gentle chalk country with dry valleys and, with a few short exceptions, no serious hills. Passes the deserted medieval village of Wharram Percy and artworks from the WANDER project, with red kites near Londesborough. It ends at Filey Brigg, where a sculpture marks the end of both this trail and the Cleveland Way.
+  link: {label: 'National Trails: Yorkshire Wolds Way', url: 'https://www.nationaltrail.co.uk/en_GB/trails/yorkshire-wolds-way/', checked: '2026-11-20'}
+  more:
+  - {label: 'GOV.UK: Yorkshire Wolds Way National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/yorkshire-wolds-way-national-trail', checked: '2026-11-20'}
+- id: glyndwrs-way
+  name: Glyndŵr's Way
+  series: national-trail
+  place: Knighton, Powys to Welshpool, Powys
+  country: Wales
+  continent: europe
+  km: [217]
+  distances: 217 km (135 miles)
+  terrain: [hills]
+  format: single
+  entry: [any]
+  entry_note: Walk it in one go or as a series of day walks, at any time of year. Some accommodation closes in winter, and being able to navigate by compass is very welcome in mist. The interactive map on the National Trails site shows places to stay.
+  note: Very hilly, over open moorland, farmland, woodland and forest, sometimes rough and remote; the highest point is Foel Fadian (510 m, 1,530 ft). Passes the Clywedog Reservoir and crosses heather-clad Plynlimon, with views including Lake Vyrnwy, Cadair Idris and the Dulas valley to Machynlleth.
+  link: {label: 'National Trails: Glyndŵr''s Way', url: 'https://www.nationaltrail.co.uk/en_GB/trails/glyndwrs-way/', checked: '2026-11-20'}
+- id: coast-to-coast
+  name: Coast to Coast Path
+  series: national-trail
+  place: St Bees, Cumbria to Robin Hood's Bay, North Yorkshire
+  country: England
+  continent: europe
+  km: [306]
+  distances: 306 km (190 miles); around 13 days with a rest day
+  terrain: [hills]
+  format: single
+  entry: [any]
+  entry_note: Open all year, though some high-level sections may be difficult in winter or bad weather; low-level options avoid some of them. Waymarked with the acorn or trail name (some signs show 'AW'), but in the Lake District National Park waymarking usually stops above the fell wall. Most people walk west to east.
+  note: Officially launched as England's newest National Trail on 26 March 2026; the route was first imagined by Alfred Wainwright in 1973. It goes through the Lake District, Yorkshire Dales and North York Moors national parks. Patterdale to Shap is one of the most challenging sections. In March 2026 GOV.UK said a stone marker would be installed permanently at Keld to mark halfway.
+  activity: walk-coast-to-coast
+  link: {label: 'GOV.UK: Coast to Coast Path National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/coast-to-coast-path-national-trail', checked: '2026-11-20'}
+  more:
+  - {label: 'GOV.UK: ''Wainwright way'' becomes England''s newest National Trail', url: 'https://www.gov.uk/government/news/wainwright-way-becomes-englands-newest-national-trail', checked: '2026-11-20'}
+- id: west-highland-way
+  name: West Highland Way
+  series: great-trail
+  place: Milngavie (Glasgow) to Fort William
+  country: Scotland
+  continent: europe
+  km: [154]
+  distances: 154 km (about 96 miles); 5 to 8 days, and first-timers should allow at least 7 or 8
+  climb: 3,155 m of ascent
+  terrain: [hills]
+  format: single
+  entry: [any]
+  entry_note: Advance booking of beds is essential. Many companies offer accommodation booking and baggage transfer. Well waymarked; map-and-compass skills are useful but not essential. From 1 March to 30 September, National Park byelaws allow wild camping only in designated zones, booked in advance (this affects Drymen to north of Rowardennan).
+  note: Runs through Loch Lomond & The Trossachs National Park, with views from Conic Hill, and across very exposed Rannoch Moor, then up the Devil's Staircase with views over Glen Coe. Ben Lomond and Ben Nevis are optional extra climbs.
+  activity: walk-west-highland-way
+  link: {label: 'Scotland''s Great Trails: West Highland Way', url: 'https://www.scotlandsgreattrails.com/trail/west-highland-way/', checked: '2026-11-20'}
+- id: great-glen-way
+  name: Great Glen Way
+  series: great-trail
+  place: Fort William to Inverness
+  country: Scotland
+  continent: europe
+  km: [125]
+  distances: 125 km (about 78 miles); 5 to 7 days
+  climb: 1,230 m on the original route, 1,835 m on the High Route
+  terrain: [lowland, hills]
+  format: single
+  entry: [any]
+  entry_note: Beds along the way, but limited in Gairlochy and South Laggan, so Spean Bridge or Invergarry are suggested. A number of companies offer support services, including baggage transfer. Wild camping is legal in Scotland if done responsibly under the Scottish Outdoor Access Code. South-west to north-east is the recommended direction.
+  note: Canal towpath, forest tracks and old drove and military roads, past Neptune's Staircase on the Caledonian Canal. The optional High Route has steep sections, reaches 422 m between Invermoriston and Drumnadrochit and gives views over Loch Ness.
+  activity: walk-the-great-glen-way
+  link: {label: 'Scotland''s Great Trails: Great Glen Way', url: 'https://www.scotlandsgreattrails.com/trail/great-glen-way/', checked: '2026-11-20'}
+- id: speyside-way
+  name: Speyside Way
+  series: great-trail
+  place: Buckie to Newtonmore
+  country: Scotland
+  continent: europe
+  km: [137]
+  distances: 137 km (about 85 miles); 6 to 9 days. The optional Tomintoul spur adds 25 km (15.6 miles)
+  terrain: [lowland, hills]
+  format: single
+  entry: [any]
+  entry_note: Advance booking of beds is essential; some B&Bs close out of season. Ballindalloch is a former station, not a village, so beds there are hard to find. Many companies offer accommodation booking and baggage transfer. Waymarking is good. Wild camping is legal if done responsibly under the Scottish Outdoor Access Code.
+  note: Follows the Spey from the coast through pine forest and moorland, past distilleries (the page names Aberlour and Glenlivet) and the Scottish Dolphin Centre at Spey Bay. Parts between Ballindalloch and Grantown can be slow going, and some sections between Ballindalloch and Cromdale are challenging when wet. The Tomintoul spur crosses exposed moorland where you need map and compass in poor visibility.
+  activity: walk-the-speyside-way
+  link: {label: 'Scotland''s Great Trails: Speyside Way', url: 'https://www.scotlandsgreattrails.com/trail/speyside-way/', checked: '2026-11-20'}
+- id: southern-upland-way
+  name: Southern Upland Way
+  series: great-trail
+  place: Portpatrick to Cockburnspath
+  country: Scotland
+  continent: europe
+  km: [344]
+  distances: 344 km (about 214 miles); 12 to 16 days for most walkers
+  climb: 7,775 m of ascent
+  terrain: [hills]
+  format: single
+  entry: [any]
+  entry_note: 'Book ahead: places to stay are sparse in some sections, and on some stages taxis or B&B hosts pick walkers up. The page lists five bothies as well as campsites. Well waymarked, but map and compass are essential in poor visibility. Wild camping is permitted if done responsibly under the Scottish Outdoor Access Code.'
+  note: A coast-to-coast across southern Scotland with very long, demanding stretches in exposed open upland, cutting across the lines of the hills. Passes Loch Trool, Wanlockhead, St Mary's Loch, Traquair House and Abbotsford House.
+  link: {label: 'Scotland''s Great Trails: Southern Upland Way', url: 'https://www.scotlandsgreattrails.com/trail/southern-upland-way/', checked: '2026-11-20'}
+- id: john-muir-way
+  name: John Muir Way
+  series: great-trail
+  place: Helensburgh to Dunbar
+  country: Scotland
+  continent: europe
+  km: [215]
+  distances: 215 km (about 134 miles); 9 to 11 days
+  climb: 2,015 m of ascent
+  terrain: [lowland, coast]
+  format: single
+  entry: [any]
+  entry_note: B&Bs, hotels and inns are well spread along the route, but there are no hostels or bunkhouses outside Edinburgh. The waymarking separates walking and cycling routes where they split.
+  note: Crosses Scotland coast to coast on tracks, hill paths, canal towpaths, cycleways, pavements and minor roads, topping out at 275 m in the Kilpatrick Hills. Passes the Antonine Wall, the Falkirk Wheel, Blackness Castle, the three Forth bridges and John Muir's Birthplace in Dunbar.
+  link: {label: 'Scotland''s Great Trails: John Muir Way', url: 'https://www.scotlandsgreattrails.com/trail/john-muir-way/', checked: '2026-11-20'}
+- id: wales-coast-path
+  name: Wales Coast Path
+  series: independent
+  place: The outskirts of Chester (Welsh border) to Chepstow, around the whole Welsh coast
+  country: Wales
+  continent: europe
+  km: [1400]
+  distances: 1,400 km (870 miles), in eight sections
+  terrain: [coast]
+  format: single
+  entry: [any]
+  entry_note: The official site says you don't need a permit or a pass. Waymarked with a yellow and blue shell-and-dragon-tail logo in English and Welsh; red markers show alternatives such as high-tide routes. The official site's Plan your visit section has an interactive map, distance tables, itineraries, an app and a passport scheme.
+  note: Officially launched on 5 May 2012 and managed by Natural Resources Wales. Joins Offa's Dyke Path at Prestatyn and Chepstow, so together they circle Wales (about 1,685 km or 1,047 miles). The official halfway point is New Quay, Ceredigion.
+  activity: walk-wales-coast-path
+  link: {label: 'Wales Coast Path: About the path', url: 'https://www.walescoastpath.gov.uk/working-with-us/about-the-path?lang=en', checked: '2026-11-20'}
+- id: wicklow-way
+  name: Wicklow Way
+  series: independent
+  place: Marlay Park, Rathfarnham, south Dublin to Clonegal
+  country: Ireland
+  continent: europe
+  km: [128.1]
+  distances: 128.1 km (about 80 miles); 6 days
+  climb: about 2,820 m of ascent in the description; the trail stats on the same page give 3,220 m
+  terrain: [hills]
+  format: single
+  entry: [any]
+  entry_note: Sport Ireland grades it strenuous. Waymarked with a yellow arrow on a black background. Knockree Hostel is on the route, but most places to stay are off-route, so plan carefully. Dogs are not allowed. A reroute near Drumgoff, about halfway, is in place until further notice because of forestry works.
+  note: Forestry tracks, quiet roads, boreens and mountain paths through open moorland through the Dublin and Wicklow Mountains, passing the monastic site at Glendalough, then gentler forest-road foothills in the south. Some sections are wet and muddy.
+  link: {label: 'Sport Ireland: Wicklow Way', url: 'https://www.sportireland.ie/outdoors/walking/trails/wicklow-way', checked: '2026-11-20'}
+- id: causeway-coast-way
+  name: Causeway Coast Way
+  series: independent
+  place: Portstewart (Tubber Patrick, opposite Portstewart Golf Club) to The Diamond, Ballycastle
+  country: Northern Ireland
+  continent: europe
+  km: [51]
+  distances: 31.5 miles (about 51 km); described as a two-day walk, in six sections
+  terrain: [coast]
+  format: single
+  entry: [any]
+  entry_note: 'WalkNI grades it very strenuous. Follow the waymarkers. Check tide times: avoid White Park Bay at high tide, when you must follow the A2 from Dunseverick to Ballintoy. The B15 from Ballintoy to Ballycastle has no footpath and fast traffic; an optional, quieter interim route via Glenstaughey Road is available. Dogs must be kept on leads.'
+  note: Passes Dunluce Castle, the Giant's Causeway, Dunseverick Castle, White Park Bay and Carrick-a-Rede Rope Bridge. Varied tracks, beach, rock and road.
+  activity: walk-the-causeway-coast-way
+  link: {label: 'WalkNI: Causeway Coast Way', url: 'https://walkni.com/walks/causeway-coast-way/', checked: '2026-11-20'}
+- id: camino-frances
+  name: Camino Francés (French Way of St James)
+  series: pilgrim
+  place: In Spain, from Orreaga-Roncesvalles (Navarre) or Somport (Aragón) to Santiago de Compostela
+  country: Spain
+  continent: europe
+  km: [930]
+  distances: Spain's official tourism site gives 930 km (about 578 miles) in about 32 stages (its FAQ says just over 900 km). The Galician section from O Cebreiro is 155 km via San Xil or 162.2 km via Samos.
+  terrain: [lowland, hills]
+  format: single
+  entry: [any]
+  entry_note: No permit. Spain.info says hostel beds cannot be booked and are given out first come, first served, with walkers first. For the Compostela certificate, the Pilgrim's Office asks for at least 100 continuous km on foot or horseback on the same route, ending at the Cathedral (200 km by bike), shown by a stamped Credencial del Peregrino. Spain.info adds that the Camino must be done for a spiritual or religious reason.
+  note: The Xunta de Galicia says three of the four French routes enter Spain at Roncesvalles and the fourth crosses the Somport Pass to Jaca. Spain.info says more than 150,000 pilgrims follow it each year. You can get the credential and stamps at pilgrim hostels, parish churches and post offices.
+  activity: walk-the-camino-to-santiago
+  link: {label: 'Spain.info: The French Way of Saint James', url: 'https://www.spain.info/en/camino-santiago/french-way-camino-santiago/', checked: '2026-11-20'}
+  more:
+  - {label: 'Pilgrim''s Reception Office: The Compostela', url: 'https://oficinadelperegrino.com/en/pilgrimage/the-compostela/', checked: '2026-11-20'}
+  - {label: 'Xunta de Galicia: The French Way (Way of Saint James in Galicia)', url: 'https://www.caminodesantiago.gal/en/make-plans/the-ways/french-way', checked: '2026-11-20'}
+- id: kumano-kodo-nakahechi
+  name: Kumano Kodo Nakahechi
+  series: pilgrim
+  place: Takijiri-oji to Kumano Hongu Taisha, then on to Kumano Nachi Taisha, Wakayama
+  country: Japan
+  continent: asia
+  km: [68]
+  distances: Takijiri-oji to Kumano Hongu Taisha is about 40.5 km (about 25 miles) over two days; continuing via Koguchi to Kumano Nachi Taisha makes about 68 km (about 42 miles) in all. These totals are our sums of the tourism bureau's section figures (16, 24.5, 13 and 14.5 km); it suggests 6 days for Takijiri to Nachi.
+  terrain: [hills]
+  format: single
+  entry: [any]
+  entry_note: No permit is mentioned. The Tanabe City Kumano Tourism Bureau's sample itineraries point you to book accommodation locally online; it suggests staying in Tanabe the night before starting at Takijiri-oji.
+  note: The longest of the four sections the bureau lists, Chikatsuyu-oji to Kumano Hongu Taisha, is about 24.5 km and around 9 hours of walking. The bureau says to be prepared for rain, as it is 'an area with lots of precipitation'.
+  activity: walk-the-kumano-kodo
+  link: {label: 'Tanabe City Kumano Tourism Bureau: Suggested Walks', url: 'https://www.tb-kumano.jp/en/kumano-kodo/suggested-walks/', checked: '2026-11-20'}
+- id: tour-du-mont-blanc
+  name: Tour du Mont Blanc
+  series: independent
+  place: Circuit of the Mont Blanc massif through France, Italy and Switzerland
+  country: France, Italy, Switzerland
+  continent: europe
+  km: [168]
+  distances: 168 km (about 104 miles); on average eight to ten days, with about six hours of walking a day
+  terrain: [mountain]
+  format: single
+  month: [6, 7, 8, 9]
+  entry: [huts]
+  entry_note: La Chamoniarde says walkers must book each refuge, and bookings can open as early as April or May. Some huts take a deposit; tell the keeper if you will arrive late or cancel. It points to the montourdumontblanc.com booking platform.
+  note: La Chamoniarde gives mid-June to mid-September as the best period, when the huts are open, and warns that snow on the passes can make crossings tricky until early July.
+  activity: walk-a-stage-of-the-tour-du-mont-blanc
+  link: {label: 'La Chamoniarde: Tour du Mont Blanc', url: 'https://www.chamoniarde.com/en/your-activities/tour-du-mont-blanc', checked: '2026-11-20'}
+- id: alta-via-1-dolomites
+  name: Alta Via 1 (Dolomites)
+  series: independent
+  place: Lago di Braies to Belluno (via Case Bortot)
+  country: Italy
+  continent: europe
+  km: [129.5]
+  distances: 12 stages; the stage lengths on Cortina's official tourism site add up to about 129.5 km (about 80 miles). Stages run from 6 km to 15 km.
+  terrain: [mountain]
+  format: single
+  entry: [any]
+  entry_note: The official page mentions no permit or central booking system. Most stages end at named rifugi (mountain huts), so arrange each night yourself.
+  note: Cortina d'Ampezzo tourism labels every stage 'For Expert'. Stage ends include Rifugio Fanes, Rifugio Lagazuoi, Rifugio Nuvolau and Rifugio 7° Alpini.
+  link: {label: 'Cortina d''Ampezzo tourism: Alta Via N.1', url: 'https://cortina.dolomiti.org/en/summer/what-to-do/activities/trekking/alta-via-n-1/', checked: '2026-11-20'}
+- id: laugavegur
+  name: Laugavegur Trail
+  series: independent
+  place: Landmannalaugar to Þórsmörk (Langidalur), southern highlands
+  country: Iceland
+  continent: europe
+  km: [54]
+  distances: 54 km (about 34 miles) in the trail header; 55 km in the description. Most often walked over four days; three- and two-day options are described.
+  terrain: [mountain]
+  format: single
+  month: [6, 7, 8, 9]
+  entry: [huts]
+  entry_note: Ferðafélag Íslands (the Touring Club of Iceland) expects walkers to have confirmed hut or campsite bookings before starting. Huts often sell out in peak season; camping is possible at all the huts.
+  note: The trail is open on average from 25 June to 15 September, varying by year. At least three rivers must be waded, fog can cut visibility to almost nothing, and phone signal is unreliable; the emergency number is 112.
+  activity: walk-the-laugavegur-trail
+  link: {label: 'Ferðafélag Íslands: Trails, Laugavegur', url: 'https://www.fi.is/en/hiking-trails/trails/view/laugavegur', checked: '2026-11-20'}
+- id: milford-track
+  name: Milford Track
+  series: nz-great-walk
+  place: Glade Wharf (head of Lake Te Anau) to Sandfly Point (Milford Sound), Fiordland National Park
+  country: New Zealand
+  continent: oceania
+  km: [53.5]
+  distances: 53.5 km (about 33 miles); 4 days and 3 nights, one way only
+  terrain: [mountain]
+  format: single
+  month: [11, 12, 1, 2, 3, 4]
+  entry: [huts]
+  entry_note: In the Great Walks season (1 November 2026 to 30 April 2027, last departure 28 April 2027) huts must be booked well in advance through DOC. You stay at Clinton, Mintaro and Dumpling huts; camping is not permitted. Bookings for 2026/27 opened at 9.30am on Wednesday 13 May 2026.
+  note: The track can only be walked in one direction over 3 nights and 4 days. DOC points to Visit Fiordland for guided walks.
+  activity: walk-the-milford-track
+  link: {label: 'DOC: Milford Track', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/milford-track/', checked: '2026-11-20'}
+  more:
+  - {label: 'DOC: Compare Great Walks', url: 'https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/', checked: '2026-11-20'}
+  - {label: 'DOC media release 26 March 2026: Great Walk, hut and campsite bookings open from 12 May', url: 'https://www.doc.govt.nz/news/media-releases/2026-media-releases/ready-set-naturing-doc-great-walk-hut-and-campsite-bookings-open-from-12-may/', checked: '2026-11-20'}
+- id: routeburn-track
+  name: Routeburn Track
+  series: nz-great-walk
+  place: Routeburn Shelter (near Queenstown) to The Divide (near Te Anau), Mount Aspiring and Fiordland national parks
+  country: New Zealand
+  continent: oceania
+  km: [32]
+  distances: 32 km (about 20 miles); 2 to 4 days, most walkers take 3 days and 2 nights
+  terrain: [mountain]
+  format: single
+  month: [11, 12, 1, 2, 3, 4]
+  entry: [huts]
+  entry_note: Bookings are required for huts and campsites in the Great Walks season (1 November 2026 to 30 April 2027); without one you may be charged a penalty or turned away. 2026/27 bookings opened at 9.30am on Friday 15 May 2026.
+  note: Outside the season DOC says walkers need alpine skills, equipment and experience, and should only attempt it if fit, experienced and well equipped; there are over 32 avalanche paths. DOC says there is no cellphone coverage.
+  link: {label: 'DOC: Routeburn Track', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/routeburn-track', checked: '2026-11-20'}
+  more:
+  - {label: 'DOC: Compare Great Walks', url: 'https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/', checked: '2026-11-20'}
+  - {label: 'DOC media release 26 March 2026: Great Walk, hut and campsite bookings open from 12 May', url: 'https://www.doc.govt.nz/news/media-releases/2026-media-releases/ready-set-naturing-doc-great-walk-hut-and-campsite-bookings-open-from-12-may/', checked: '2026-11-20'}
+- id: kepler-track
+  name: Kepler Track
+  series: nz-great-walk
+  place: Circuit from near Te Anau, Fiordland National Park
+  country: New Zealand
+  continent: oceania
+  km: [60]
+  distances: 60 km (about 37 miles) circuit; 3 to 4 days, most walkers take 4 days and 3 nights
+  terrain: [mountain]
+  format: single
+  month: [10, 11, 12, 1, 2, 3, 4]
+  entry: [huts]
+  entry_note: Bookings are required for huts and campsites in the Great Walks season (27 October 2026 to 30 April 2027). Camping or staying overnight in the Forest Burn and Hanging Valley shelters is not allowed. 2026/27 bookings opened at 9.30am on Tuesday 19 May 2026.
+  note: Outside the season (1 May to 26 October) DOC warns of ice, snow, frequent avalanches and an unmarked alpine section, and says it should only be attempted by fit, experienced and well-equipped people.
+  link: {label: 'DOC: Kepler Track', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/kepler-track/', checked: '2026-11-20'}
+  more:
+  - {label: 'DOC: Compare Great Walks', url: 'https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/', checked: '2026-11-20'}
+  - {label: 'DOC media release 26 March 2026: Great Walk, hut and campsite bookings open from 12 May', url: 'https://www.doc.govt.nz/news/media-releases/2026-media-releases/ready-set-naturing-doc-great-walk-hut-and-campsite-bookings-open-from-12-may/', checked: '2026-11-20'}
+- id: abel-tasman-coast-track
+  name: Abel Tasman Coast Track
+  series: nz-great-walk
+  place: Marahau to Totaranui or Wainui, Abel Tasman National Park
+  country: New Zealand
+  continent: oceania
+  km: [60]
+  distances: 60 km (about 37 miles); 3 to 5 days one way, in either direction
+  terrain: [coast]
+  format: single
+  entry: [huts]
+  entry_note: Huts and campsites must be booked in advance all year round. 2026/27 bookings opened at 9.30am on Thursday 14 May 2026. Water taxis run all year and must also be booked.
+  note: It can be walked all year. Awaroa Inlet can only be crossed in daylight, from 1 hour 30 minutes before to 2 hours after low tide, so DOC says check tide tables before you book.
+  link: {label: 'DOC: Abel Tasman Coast Track', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/things-to-do/tracks/abel-tasman-coast-track/', checked: '2026-11-20'}
+  more:
+  - {label: 'DOC: Compare Great Walks', url: 'https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/great-walks/compare-great-walks/', checked: '2026-11-20'}
+  - {label: 'DOC media release 26 March 2026: Great Walk, hut and campsite bookings open from 12 May', url: 'https://www.doc.govt.nz/news/media-releases/2026-media-releases/ready-set-naturing-doc-great-walk-hut-and-campsite-bookings-open-from-12-may/', checked: '2026-11-20'}
+- id: heaphy-track
+  name: Heaphy Track
+  series: nz-great-walk
+  place: Brown Hut (Golden Bay) to Kohaihai (West Coast), Kahurangi National Park
+  country: New Zealand
+  continent: oceania
+  km: [78.4]
+  distances: 78.4 km (about 49 miles) one way; DOC lists 4 to 6 days
+  terrain: [hills, coast]
+  format: single
+  entry: [huts]
+  entry_note: All huts and campsites must be booked in advance all year round. 2026/27 bookings opened at 9.30am on Wednesday 20 May 2026.
+  note: The route crosses tussock downs and forest to the nīkau palms of the West Coast; its high point is Flanagans Corner at 915 m. Mountain bikers may use it from 1 May to 30 November.
+  link: {label: 'DOC: Heaphy Track', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/heaphy-track', checked: '2026-11-20'}
+  more:
+  - {label: 'DOC media release 26 March 2026: Great Walk, hut and campsite bookings open from 12 May', url: 'https://www.doc.govt.nz/news/media-releases/2026-media-releases/ready-set-naturing-doc-great-walk-hut-and-campsite-bookings-open-from-12-may/', checked: '2026-11-20'}
+- id: overland-track
+  name: Overland Track
+  series: independent
+  place: Ronny Creek (Cradle Mountain) to Narcissus Hut (Lake St Clair), Tasmania
+  country: Australia
+  continent: oceania
+  km: [65]
+  distances: 65 km (about 40 miles) one way; 6 days
+  terrain: [mountain]
+  format: single
+  entry: [permit]
+  entry_note: In the peak period (1 October to 31 May) walkers book and pay the Overland Track Pass fee through Tasmania Parks and Wildlife Service, and only 34 places are available each day (a quota, not a permit as such). Bookings for the 2026/27 season opened on Tuesday 7 July 2026. Walkers outside the peak period register online, and a park pass is needed to walk between June and September.
+  note: The track is open all year. Walkers carry their own equipment and food for the whole journey. The walk usually finishes at Narcissus Hut, where most walkers take a ferry (booking needed) to Lake St Clair.
+  activity: walk-the-overland-track
+  link: {label: 'Parks and Wildlife Service Tasmania: Overland Track', url: 'https://parks.tas.gov.au/explore-our-parks/cradle-mountain/overland-track', checked: '2026-11-20'}
+  more:
+  - {label: 'Parks and Wildlife Service Tasmania: Overland Track bookings to open tomorrow (6 July 2026)', url: 'https://parks.tas.gov.au/be-involved/news-and-events/overland-track-bookings-to-open-tomorrow', checked: '2026-11-20'}
+- id: larapinta-trail
+  name: Larapinta Trail
+  series: independent
+  place: Alice Springs Telegraph Station to the summit of Mt Sonder (the last section is a return walk from Redbank Gorge), Tjoritja / West MacDonnell National Park
+  country: Australia
+  continent: oceania
+  km: [230]
+  distances: Over 230 km (about 143 miles) in 12 sections, each taking one or two days
+  terrain: [hills]
+  format: single
+  entry: [huts]
+  entry_note: The Northern Territory Government says you must book and pay online before you go, and book a campsite for each night on the trail. Camping is only allowed in designated sites.
+  note: It runs along the spine of the West MacDonnell Ranges. The section 9 notes warn there is no reliable surface water along the way.
+  activity: walk-a-section-of-the-larapinta-trail
+  link: {label: 'NT Government: Plan your Larapinta Trail walk', url: 'https://nt.gov.au/parks/find-a-park/tjoritja-west-macdonnell-national-park/larapinta-trail/plan-larapinta-trail-walk', checked: '2026-11-20'}
+  more:
+  - {label: 'NT Government: Sections of the Larapinta Trail', url: 'https://nt.gov.au/parks/find-a-park/tjoritja-west-macdonnell-national-park/larapinta-trail/sections-of-the-larapinta-trail', checked: '2026-11-20'}
+- id: appalachian-trail
+  name: Appalachian Trail
+  series: us-nst
+  place: Georgia to Maine along the Appalachian Mountains
+  country: USA
+  continent: north-america
+  km: [3536]
+  distances: Official 2026 length 2,197.9 miles (about 3,536 km)
+  terrain: [hills, mountain]
+  format: single
+  entry: [permit]
+  entry_note: There is no single trail-wide permit. Overnight backcountry stays need permits in Great Smoky Mountains National Park (through Recreation.gov since 30 April 2026) and Shenandoah National Park (in advance on Recreation.gov; not sold in the park). All A.T. hikers need a Long Distance Hiker Permit, collected in person at the Katahdin Stream Campground ranger station, before climbing Katahdin in Baxter State Park. Registration through ATCamp is voluntary and encouraged.
+  note: The National Park Service says the trail is open year-round and reachable from many places.
+  activity: appalachian-trail-section
+  link: {label: 'Appalachian Trail Conservancy: Permits & Fees', url: 'https://appalachiantrail.org/experience/hike-the-trail/at-basics/permits-fees/', checked: '2026-11-20'}
+  more:
+  - {label: 'Appalachian Trail Conservancy: Appalachian Trail becomes a half mile longer in 2026', url: 'https://appalachiantrail.org/news-stories/2026-official-mileage/', checked: '2026-11-20'}
+  - {label: 'NPS: Appalachian National Scenic Trail, Plan Your Visit', url: 'https://www.nps.gov/appa/planyourvisit/index.htm', checked: '2026-11-20'}
+- id: pacific-crest-trail
+  name: Pacific Crest Trail
+  series: us-nst
+  place: Mexican border to Canadian border through California, Oregon and Washington
+  country: USA
+  continent: north-america
+  km: [4264]
+  distances: 2,650 miles (about 4,264 km)
+  terrain: [mountain]
+  format: single
+  entry: [permit]
+  entry_note: The Pacific Crest Trail Association says permits are required in some but not all areas. It issues the PCT Long-distance Permit one year at a time, with a separate registration each year; permits are limited and the most popular trips fill quickly. On the shared John Muir Trail section, camping between Crabtree Meadows and the Mount Whitney summit needs an extra permit from Sequoia-Kings Canyon National Park.
+  note: The US Forest Service page says the Pacific Crest National Scenic Trail crosses many jurisdictions, including 25 national forest units, 6 national park units and 51 wilderness areas. It gives 500 miles for Washington and 430 for Oregon.
+  activity: hike-pacific-crest-trail-section
+  link: {label: 'US Forest Service: Pacific Crest National Scenic Trail, geographic areas', url: 'https://www.fs.usda.gov/trails/pacific-crest-nst/geographic-areas', checked: '2026-11-20'}
+  more:
+  - {label: 'PCTA: Permits', url: 'https://www.pcta.org/discover-the-trail/permits/', checked: '2026-11-20'}
+  - {label: 'PCTA permit site: Frequently Asked Questions', url: 'https://permit.pcta.org/docs/frequently-asked-questions/', checked: '2026-11-20'}
+- id: john-muir-trail
+  name: John Muir Trail
+  series: independent
+  place: Yosemite Valley to Mount Whitney, Sierra Nevada, California
+  country: USA
+  continent: north-america
+  km: [339.5]
+  distances: 211 miles (about 339.5 km)
+  terrain: [mountain]
+  format: single
+  entry: [permit]
+  entry_note: For a continuous hike starting in Yosemite you need only one Yosemite wilderness permit for the whole trip. Only 45 hikers a day may exit over Donohue Pass (15 from Happy Isles, 30 from Lyell Canyon). Sixty per cent of reservations go by lottery 24 weeks ahead on Recreation.gov; the other 40 per cent are released seven days ahead. Reservations are only for trips from May to October. Bear canisters are required throughout Yosemite.
+  note: It ends on Mount Whitney, which the NPS calls the highest point in the contiguous United States. There is no public transport between Whitney Portal and Yosemite.
+  link: {label: 'NPS Yosemite: John Muir and Pacific Crest Trails', url: 'https://www.nps.gov/yose/planyourvisit/jmt.htm', checked: '2026-11-20'}
+  more:
+  - {label: 'NPS Yosemite: Wilderness Permit Reservations', url: 'https://www.nps.gov/yose/planyourvisit/wpres.htm', checked: '2026-11-20'}
+- id: continental-divide-trail
+  name: Continental Divide Trail
+  series: us-nst
+  place: Mexican border in New Mexico's bootheel to Waterton Lake on the Canadian border, through New Mexico, Colorado, Wyoming, Idaho and Montana
+  country: USA
+  continent: north-america
+  km: [4988]
+  distances: 3,100 miles (about 4,988 km); the Continental Divide Trail Coalition says a thru-hike can take 5 to 7 months
+  terrain: [mountain]
+  format: single
+  entry: [permit]
+  entry_note: 'The Coalition says no long-distance permit covers the CDT, so you need permits area by area. Examples it gives: a Blackfeet Nation Fish & Wildlife Recreation Permit; wilderness camping permits in Glacier National Park; Yellowstone backcountry permits obtained in person no more than 48 hours before your trip through the park; paid backcountry camping in Rocky Mountain National Park, where hard-sided bear canisters are required; and a permit to camp in the Indian Peaks Wilderness.'
+  note: State lengths on the Forest Service page are 820 miles in New Mexico, 750 in Colorado, 510 in Wyoming and 1,020 in Montana and Idaho.
+  link: {label: 'US Forest Service: Continental Divide National Scenic Trail, geographic areas', url: 'https://www.fs.usda.gov/trails/continental-divide-nst/geographic-areas', checked: '2026-11-20'}
+  more:
+  - {label: 'Continental Divide Trail Coalition: Thru-hiking the CDT', url: 'https://cdtcoalition.org/explore-the-trail/thruhiking/', checked: '2026-11-20'}
+- id: west-coast-trail
+  name: West Coast Trail
+  series: independent
+  place: Pachena Bay (north) to Gordon River (south), Pacific Rim National Park Reserve, Vancouver Island
+  country: Canada
+  continent: north-america
+  km: [75]
+  distances: 75 km (about 47 miles); most people spend 6 to 8 days
+  terrain: [coast]
+  format: single
+  month: [5, 6, 7, 8, 9]
+  entry: [permit]
+  entry_note: A West Coast Trail Backcountry Use Permit is required for all users. There are no standby spaces; all spaces are reservable. Reservations for the 2026 season opened at 8am PT on 5 February 2026. Everyone must view the Hiker Safety Primer and attend a briefing at a trailhead before starting.
+  note: Open and reservable from 1 May to 30 September. Parks Canada mentions more than 100 ladder systems and says the trail should only be attempted by seasoned backcountry hikers with multi-day trek experience; it is not recommended for children under 12.
+  link: {label: 'Parks Canada: West Coast Trail, hike of a lifetime', url: 'https://parks.canada.ca/pn-np/bc/pacificrim/activ/sco-wct', checked: '2026-11-20'}
+- id: kalalau-trail
+  name: Kalalau Trail (Nāpali Coast)
+  series: independent
+  place: Ke'e Beach (Hā'ena State Park) to Kalalau Beach, Kaua'i, Hawai'i
+  country: USA
+  continent: oceania
+  km: [17.7]
+  distances: 11 miles (about 17.7 km) one way, 22 miles return
+  terrain: [coast]
+  format: single
+  entry: [permit]
+  entry_note: Anyone going beyond Hanakāpī'ai must have a valid camping permit, currently available 90 days in advance; the maximum stay in Nāpali Coast State Park is 5 nights. Hā'ena State Park needs an advance entry reservation (gohaena.com); Kalalau camping permit holders don't need the entry reservation, but overnight parking for them is reserved through the same site.
+  note: Hawai'i State Parks says the trail crosses five valleys and is almost never level, and warns of flash floods and falling rocks.
+  link: {label: 'Hawai''i DLNR State Parks: Kalalau Trail', url: 'https://dlnr.hawaii.gov/dsp/hiking/kauai/kalalau-trail/', checked: '2026-11-20'}
+guides:
+- slug: planning-a-long-distance-walk
+  title: Planning a long-distance walk
+  short: Planning a long walk
+  seo_title: 'Planning a long-distance walk: a practical guide'
+  description: 'How to plan a multi-day trail walk in the UK: choosing a route, sections or end to end, waymarks, beds and baggage, feet, weather, access codes and emergencies.'
+  standfirst: A long-distance trail is a run of ordinary walking days strung together. Get the planning right and the walking takes care of itself.
+  detail:
+  - h: Choose your trail
+    p: ['England and Wales have National Trails. A GOV.UK announcement says England has 17, including the Coast to Coast Path, officially launched as a National Trail on 26 March 2026. Scotland has its Great Trails, and Wales also has the 870-mile Wales Coast Path.', 'Start with the official trail page. It tells you the length, the usual number of days, the terrain and where it is remote. The National Trails site suggests the Thames Path for people new to long-distance walking.']
+  - h: Typical lengths and days (from the official pages)
+    table:
+      head: [Trail, Length, Usual time]
+      rows:
+      - [Yorkshire Wolds Way, 127 km (79 miles), about 6 days]
+      - [Hadrian's Wall Path, 135 km (84 miles), 6 to 7 days for experienced walkers]
+      - [South Downs Way, 160 km (100 miles), 8 or 9 days]
+      - [West Highland Way, 154 km, 5 to 8 days]
+      - [Coast to Coast Path, 306 km (190 miles), around 13 days with a rest day]
+      - [Pennine Way, 431 km (268 miles), 16 to 19 days]
+  - h: Sections or end to end
+    p: ['You don''t have to walk a trail in one go. The GOV.UK trail pages suggest ways to split each route into sections, and most people walk the South West Coast Path over several visits.', 'Walking in sections lets you choose your weather, go home between stretches and build up fitness. End to end needs more planning but gives you the full journey.']
+  - h: Follow the waymarks, but carry a map
+    p: ['National Trails are waymarked with an acorn symbol or the trail name, for example on gates and signposts, and GOV.UK says signposts show the route in both directions. Diversions and closures are signposted, so follow them.', 'Waymarks are not a substitute for a map. On the Coast to Coast, waymarking usually stops above the fell wall in the Lake District National Park, and on the Southern Upland Way map and compass are essential in poor visibility.']
+  - h: Book beds and baggage transfer
+    p: ['On popular trails, book early. The West Highland Way and Speyside Way pages say advance booking is essential, and the Pembrokeshire Coast Path page warns that beds can be hard to find, especially for single nights.', 'On several trails, such as the West Highland Way and Speyside Way, companies offer accommodation booking and baggage transfer. On some routes, such as the South Downs Way, many beds are in villages off the trail, so allow time to get there.', 'Wild camping rules differ. The National Trails site says it is not legal on the Cotswold Way, while in Scotland the Great Trails pages say it is legal if done responsibly under the Scottish Outdoor Access Code. From 1 March to 30 September, Loch Lomond & The Trossachs National Park byelaws allow wild camping only in designated zones booked in advance.']
+  - h: Train up
+    p: ['Build up to back-to-back days at the distance you plan to walk, wearing the boots and pack you will use. The National Trails site says reasonably fit people who can comfortably walk about 12 miles (20 km) a day should manage the South Downs Way.', AdventureSmartUK advises planning around the skills and knowledge of the least experienced person in your group.]
+  - h: Look after your feet
+    list: ['Wear comfortable, well-fitting shoes and break new ones in with short walks first.', 'Wear thick, moisture-wicking socks and change them often if your feet sweat.', 'If you get a blister, keep it clean and cover it with a soft plaster or padded dressing. Don''t burst it or peel off the skin.', 'A pharmacist can suggest a dressing; the NHS says a hydrocolloid dressing can protect the blister, ease pain and help it heal. Use NHS 111 if a blister is very painful or keeps coming back, and do not ignore signs of infection such as heat or yellow or green pus.']
+  - h: Weather and mountain safety
+    p: ['AdventureSmartUK suggests three questions before you set off: do I have the right gear, do I know what the weather will be like, and do I have the skills and knowledge for the day?', 'It also suggests checking the forecast for the highest point on your route, setting out in good time, carrying a torch even if you plan to be back long before dark, and being flexible about changing your plans.', 'On coast paths, check tide times. Parts of the Solway coast on Hadrian''s Wall Path can be affected by tidal flooding, you can be cut off by rising tides around Cromer, and White Park Bay on the Causeway Coast Way should be avoided at high tide.']
+  - h: Follow the access code
+    p: ['In England, follow the Countryside Code: leave gates as you found them, keep dogs on a lead around livestock, take your litter home, and check your route, weather and tide times before you go.', 'In Scotland, the Scottish Outdoor Access Code has three principles: take responsibility for your own actions, respect the interests of others and care for the environment.']
+  - h: Tell someone and know who to call
+    p: ['The Countryside Code says to tell someone where you are going and when you expect to be back, and notes that phone signals are unreliable in many places.', 'In an emergency in the UK, call 999 or 112. In the hills or mountains ask for Police, then Mountain Rescue; on the coast ask for the Coastguard.', 'Have ready your location (a grid reference if possible), the casualty''s name, sex, age and injuries, how many are in your group and your mobile number. Then stay where you are until the team contacts you.', 'If you have hearing or speech difficulties, register with emergencySMS before you go by texting ''register'' to 999.']
+  faq:
+  - {q: 'How many days does a National Trail take?', a: 'It depends on the trail. GOV.UK gives about 6 days for the Yorkshire Wolds Way, 8 or 9 for the South Downs Way, around 13 for the Coast to Coast and 16 to 19 for the Pennine Way.'}
+  - {q: 'Do I need a permit for a UK long-distance trail?', a: 'None of the official UK trail pages we checked mentions a walking permit, and the Wales Coast Path site says you don''t need a permit or a pass. You may need to book beds well ahead, and from 1 March to 30 September wild camping on part of the West Highland Way is allowed only in designated zones booked in advance.'}
+  - {q: 'Can I wild camp on a long-distance trail?', a: 'In Scotland, the Great Trails pages say wild camping is legal if done responsibly under the Scottish Outdoor Access Code, but Loch Lomond & The Trossachs National Park byelaws limit it to booked zones from 1 March to 30 September. In England, the Countryside Code says camping may need the landowner''s permission, and the National Trails site says it is not legal to wild camp on the Cotswold Way.'}
+  - {q: 'Who do I call if something goes wrong in the hills?', a: 'Call 999 or 112 and ask for Police, then Mountain Rescue. On the coast, ask for the Coastguard.'}
+  kit:
+  - {name: Walking socks, why: 'Check they are thick, such as moisture-wicking sports socks, as the NHS suggests, and that they fit your boots without bunching.', url: 'https://www.amazon.co.uk/s?k=moisture+wicking+walking+socks'}
+  - {name: Hydrocolloid blister plasters, why: 'Check the size suits heels and toes and that they are hydrocolloid, the type the NHS mentions.', url: 'https://www.amazon.co.uk/s?k=hydrocolloid+blister+plasters'}
+  - {name: Head torch, why: 'Check the battery type and burn time, and pack spare batteries.', url: 'https://www.amazon.co.uk/s?k=head+torch+walking'}
+  - {name: Baseplate compass, why: 'Check it has a clear baseplate with scales that match your map, and learn to use it before you rely on it.', url: 'https://www.amazon.co.uk/s?k=baseplate+compass+walking'}
+  sources:
+  - {label: 'National Trails: The Trails', url: 'https://www.nationaltrail.co.uk/en_GB/trails/', checked: '2026-11-20'}
+  - {label: 'GOV.UK: Visit a National Trail in England', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england', checked: '2026-11-20'}
+  - {label: 'GOV.UK: ''Wainwright way'' becomes England''s newest National Trail', url: 'https://www.gov.uk/government/news/wainwright-way-becomes-englands-newest-national-trail', checked: '2026-11-20'}
+  - {label: 'GOV.UK: The Countryside Code: advice for countryside visitors', url: 'https://www.gov.uk/government/publications/the-countryside-code/the-countryside-code-advice-for-countryside-visitors', checked: '2026-11-20'}
+  - {label: 'Scottish Outdoor Access Code: What is the Scottish Outdoor Access Code?', url: 'https://www.outdooraccess-scotland.scot/act-and-access-code/scottish-outdoor-access-code-visitors-and-land-managers/what-scottish-outdoor-access-code', checked: '2026-11-20'}
+  - {label: 'Scotland''s Great Trails: West Highland Way', url: 'https://www.scotlandsgreattrails.com/trail/west-highland-way/', checked: '2026-11-20'}
+  - {label: 'AdventureSmartUK: Be adventure smart in winter', url: 'https://www.adventuresmart.uk/be-adventure-smart-in-winter/', checked: '2026-11-20'}
+  - {label: 'Scotland''s Great Trails: Great Glen Way', url: 'https://www.scotlandsgreattrails.com/trail/great-glen-way/', checked: '2026-11-20'}
+  - {label: 'GOV.UK: Hadrian''s Wall Path National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/hadrians-wall-path-national-trail', checked: '2026-11-20'}
+  - {label: 'GOV.UK: Yorkshire Wolds Way National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/yorkshire-wolds-way-national-trail', checked: '2026-11-20'}
+  - {label: 'GOV.UK: Pennine Way National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/pennine-way-national-trail', checked: '2026-11-20'}
+  - {label: 'GOV.UK: Peddars Way and Norfolk Coast Path National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/peddars-way-and-norfolk-coast-path-national-trail', checked: '2026-11-20'}
+  - {label: 'WalkNI: Causeway Coast Way', url: 'https://walkni.com/walks/causeway-coast-way/', checked: '2026-11-20'}
+  - {label: 'Mountain Rescue England and Wales: In case of emergency', url: 'https://www.mountain.rescue.org.uk/how-to-call-out-mr/', checked: '2026-11-20'}
+  - {label: 'NHS: Blisters', url: 'https://www.nhs.uk/conditions/blisters/', checked: '2026-11-20'}
+  - {label: 'Wales Coast Path: About the path', url: 'https://www.walescoastpath.gov.uk/working-with-us/about-the-path?lang=en', checked: '2026-11-20'}
+  - {label: 'GOV.UK: South West Coast Path National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/south-west-coast-path-national-trail', checked: '2026-11-20'}
+  - {label: 'GOV.UK: Coast to Coast Path National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/coast-to-coast-path-national-trail', checked: '2026-11-20'}
+  - {label: 'GOV.UK: South Downs Way National Trail', url: 'https://www.gov.uk/government/publications/visit-a-national-trail-in-england/south-downs-way-national-trail', checked: '2026-11-20'}
+  - {label: 'National Trails: South Downs Way', url: 'https://www.nationaltrail.co.uk/en_GB/trails/south-downs-way/', checked: '2026-11-20'}
+  - {label: 'National Trails: Cotswold Way', url: 'https://www.nationaltrail.co.uk/en_GB/trails/cotswold-way/', checked: '2026-11-20'}
+  - {label: 'National Trails: Pembrokeshire Coast Path', url: 'https://www.nationaltrail.co.uk/en_GB/trails/pembrokeshire-coast-path/', checked: '2026-11-20'}
+  - {label: 'Scotland''s Great Trails: Speyside Way', url: 'https://www.scotlandsgreattrails.com/trail/speyside-way/', checked: '2026-11-20'}
+  - {label: 'Scotland''s Great Trails: Southern Upland Way', url: 'https://www.scotlandsgreattrails.com/trail/southern-upland-way/', checked: '2026-11-20'}
+- slug: treks-you-must-book
+  title: 'Permits, quotas and huts: the great walks you have to book'
+  short: Treks you must book
+  seo_title: 'Trek permits and hut bookings: what to book and when'
+  description: 'Milford Track, West Coast Trail, John Muir Trail, Everest Base Camp and more: what you must book before you walk, and how, from the official pages.'
+  standfirst: Some of the world's great walks you can simply turn up for. Others sell out quickly, cap walkers each day, or need a licensed guide. Here is what the official pages say, checked on 20 November 2026.
+  detail:
+  - h: Three kinds of booking
+    p: ['Hut and campsite bookings: on New Zealand''s Great Walks, Laugavegur, the Tour du Mont Blanc and the Larapinta Trail you book a bed or pitch before you set off. On the Milford and Routeburn tracks, DOC says that without a valid booking you may be charged a penalty or turned away if the hut is full.', 'Permits and quotas: some trails cap the number of people starting or passing a point each day. The John Muir Trail allows 45 people a day over Donohue Pass from Yosemite; the Overland Track has 34 places a day in its peak period.', 'Guides: in Nepal, listed trekking routes in specific protected areas need a licensed guide and a TIMS card, arranged through a government-registered trekking agency.']
+  - h: 'When to book: route by route'
+    table:
+      head: [Route, What you must book, When booking opens / how]
+      rows:
+      - [Milford Track (NZ), 'Huts for all 3 nights in the Great Walks season, 1 Nov to 30 Apr; no camping', 'DOC online. 2026/27 opened 9.30am Wed 13 May 2026, with a virtual queue']
+      - [Routeburn Track (NZ), Huts and campsites in season, DOC online. 2026/27 opened 9.30am Fri 15 May 2026]
+      - [Kepler Track (NZ), Huts and campsites in season (27 Oct to 30 Apr), DOC online. 2026/27 opened 9.30am Tue 19 May 2026]
+      - [Abel Tasman Coast Track (NZ), 'Huts and campsites, all year', DOC online. 2026/27 opened 9.30am Thu 14 May 2026]
+      - [Heaphy Track (NZ), 'Huts and campsites, all year', DOC online. 2026/27 opened 9.30am Wed 20 May 2026]
+      - [Overland Track (Tasmania), 'A booking in the peak period, 1 Oct to 31 May; 34 places a day', Parks and Wildlife Service online. 2026/27 opened Tue 7 July 2026]
+      - [Laugavegur (Iceland), Confirmed hut or campsite bookings before you start, Ferðafélag Íslands; huts often sell out in peak season]
+      - [Tour du Mont Blanc, Each refuge, Can open as early as April or May; La Chamoniarde points to montourdumontblanc.com]
+      - [GR20 (Corsica), 'Every night at the park''s refuges, including bivouac pitches and bunks, must be booked', Online at pnr-resa.corsica; refuges guarded 16 May to 4 Oct in 2026]
+      - [Larapinta Trail (Australia), A campsite for each night, 'NT parks online booking system, before you go']
+      - [West Coast Trail (Canada), Backcountry Use Permit; no standby spaces, '2026 season opened 8am PT, 5 Feb 2026']
+      - [John Muir Trail from Yosemite, Wilderness permit; 45 a day over Donohue Pass, Lottery 24 weeks ahead on Recreation.gov; 40 per cent released 7 days ahead]
+      - [Kalalau Trail (Hawai'i), Camping permit beyond Hanakāpī'ai; up to 5 nights, Available 90 days in advance]
+      - [Appalachian Trail (USA), 'Permits in the Smokies, Shenandoah and Baxter State Park (Katahdin)', Smokies and Shenandoah via Recreation.gov; Baxter in person at Katahdin Stream ranger station]
+      - [Everest Base Camp and Annapurna Circuit (Nepal), Licensed guide and TIMS card, Through a government-registered trekking agency (rule effective from 31 March 2023)]
+  - h: Tips for booking day
+    list: ['DOC New Zealand advises making a booking account well before opening day, testing your login beforehand, and getting online at around 9.15am on the day.', 'Have a back-up plan: DOC suggests looking at other options if your first choice books out, and Tasmania''s parks service advises planning alternative dates for the Overland Track.', 'Check each route''s own page close to the time: in November 2026 the Tongariro Northern Circuit page said it was not currently operating as a Great Walk while Oturere Hut is replaced, and that part of the track is closed after the 2025 fire.']
+  - h: 'Nepal: guide rules'
+    p: ['The Nepal Tourism Board says that, from 31 March 2023, trekkers in specific protected areas must be accompanied by a licensed trekking guide and carry a TIMS card (its page heading says ''most trekking routes in the Himalaya''). Its list includes Everest Base Camp, Gokyo, the Three Passes, the Annapurna Circuit, Poon Hill-ABC, Langtang and the Manaslu Circuit.', Registered trekking agencies buy the TIMS card online for you; it comes as an eCard with a QR code.]
+  - h: 'Going high: altitude safety'
+    p: ['The NHS says altitude sickness usually happens above 2,500 metres, with symptoms such as headache, nausea, tiredness, dizziness and poor sleep, usually 6 to 10 hours after arriving at height.', 'Its advice: go up slowly, spend a few days below 2,500 metres first, and at 3,000 metres or above take a rest day at the same height every 3 to 4 days. Avoid flying straight to high altitude, drink enough water and avoid alcohol.', 'If you feel unwell, stop climbing and rest. If it gets worse or doesn''t improve after a day, go down. Confusion, balance problems or breathlessness at rest need medical help at once. Speak to a GP or travel clinic before going high quickly, or if you have had altitude sickness before.']
+  faq:
+  - {q: 'Can I book Camino Francés pilgrim hostels ahead?', a: 'Spain''s official tourism site says public pilgrim hostels cannot be booked and are allocated first come, first served. It also lists private hostels, rural houses, hotels and campsites.'}
+  - {q: 'Do I need a guide to trek to Everest Base Camp?', a: 'Yes. The Nepal Tourism Board lists the Everest Base Camp trek among routes where a licensed guide and TIMS card are mandatory, arranged through a government-registered trekking agency.'}
+  - {q: 'When do New Zealand Great Walk bookings open?', a: 'For 2026/27 they opened in May 2026, staggered by track at 9.30am each day: Milford on 13 May, Abel Tasman on 14 May, Routeburn on 15 May, Kepler on 19 May and Heaphy on 20 May. DOC uses a virtual queue.'}
+  - {q: 'Is there one permit for the whole Appalachian or Continental Divide Trail?', a: 'No. The Appalachian Trail Conservancy says there is no single trail-wide permit for the A.T., and the CDT Coalition says no long-distance permit covers the CDT. You get permits area by area.'}
+  kit:
+  - {name: Bear-resistant food canister, why: Required throughout Yosemite and in Rocky Mountain National Park on the CDT. Check it is a model the park allows before you buy., url: 'https://www.amazon.co.uk/s?k=bear+resistant+food+canister'}
+  - {name: Personal locator beacon, why: DOC lists one in the winter kit for the Routeburn and Tongariro Northern Circuit. Check it is registered for the country you will use it in., url: 'https://www.amazon.co.uk/s?k=personal+locator+beacon'}
+  - {name: Trekking poles, why: 'Laugavegur has at least three rivers to wade, and poles can help on steep descents. Check the packed length fits your rucksack and the locks are easy to work with cold hands.', url: 'https://www.amazon.co.uk/s?k=trekking+poles'}
+  - {name: Waterproof dry bags, why: For wet crossings and rain-heavy routes like the Kumano Kodo. Check the size and roll-top seal., url: 'https://www.amazon.co.uk/s?k=waterproof+dry+bag'}
+  sources:
+  - {label: 'DOC media release 26 March 2026: Great Walk bookings open from 12 May', url: 'https://www.doc.govt.nz/news/media-releases/2026-media-releases/ready-set-naturing-doc-great-walk-hut-and-campsite-bookings-open-from-12-may/', checked: '2026-11-20'}
+  - {label: 'DOC: Milford Track', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/milford-track/', checked: '2026-11-20'}
+  - {label: 'DOC: Kepler Track', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/kepler-track/', checked: '2026-11-20'}
+  - {label: 'DOC: Routeburn Track', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/fiordland/places/fiordland-national-park/things-to-do/tracks/routeburn-track', checked: '2026-11-20'}
+  - {label: 'DOC: Abel Tasman Coast Track', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/abel-tasman-national-park/things-to-do/tracks/abel-tasman-coast-track/', checked: '2026-11-20'}
+  - {label: 'DOC: Heaphy Track', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/heaphy-track', checked: '2026-11-20'}
+  - {label: 'DOC: Tongariro Northern Circuit', url: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-northern-circuit/', checked: '2026-11-20'}
+  - {label: 'Parks and Wildlife Service Tasmania: Overland Track bookings to open tomorrow', url: 'https://parks.tas.gov.au/be-involved/news-and-events/overland-track-bookings-to-open-tomorrow', checked: '2026-11-20'}
+  - {label: 'Ferðafélag Íslands: Laugavegur', url: 'https://www.fi.is/en/hiking-trails/trails/view/laugavegur', checked: '2026-11-20'}
+  - {label: 'La Chamoniarde: Tour du Mont Blanc', url: 'https://www.chamoniarde.com/en/your-activities/tour-du-mont-blanc', checked: '2026-11-20'}
+  - {label: 'Parc naturel régional de Corse: GR20 Frà li monti', url: 'https://www.pnr.corsica/fr/randonnees-decouverte/gr-20-fra-li-monti', checked: '2026-11-20'}
+  - {label: 'NT Government: Plan your Larapinta Trail walk', url: 'https://nt.gov.au/parks/find-a-park/tjoritja-west-macdonnell-national-park/larapinta-trail/plan-larapinta-trail-walk', checked: '2026-11-20'}
+  - {label: 'Parks Canada: West Coast Trail', url: 'https://parks.canada.ca/pn-np/bc/pacificrim/activ/sco-wct', checked: '2026-11-20'}
+  - {label: 'NPS Yosemite: John Muir and Pacific Crest Trails', url: 'https://www.nps.gov/yose/planyourvisit/jmt.htm', checked: '2026-11-20'}
+  - {label: 'NPS Yosemite: Wilderness Permit Reservations', url: 'https://www.nps.gov/yose/planyourvisit/wpres.htm', checked: '2026-11-20'}
+  - {label: 'Hawai''i DLNR State Parks: Kalalau Trail', url: 'https://dlnr.hawaii.gov/dsp/hiking/kauai/kalalau-trail/', checked: '2026-11-20'}
+  - {label: 'Appalachian Trail Conservancy: Permits & Fees', url: 'https://appalachiantrail.org/experience/hike-the-trail/at-basics/permits-fees/', checked: '2026-11-20'}
+  - {label: 'Continental Divide Trail Coalition: Thru-hiking the CDT', url: 'https://cdtcoalition.org/explore-the-trail/thruhiking/', checked: '2026-11-20'}
+  - {label: 'Nepal Tourism Board: TIMS Card', url: 'https://ntb.gov.np/plan-your-trip/before-you-come/tims-card', checked: '2026-11-20'}
+  - {label: 'Spain.info: The French Way of Saint James', url: 'https://www.spain.info/en/camino-santiago/french-way-camino-santiago/', checked: '2026-11-20'}
+  - {label: 'NHS: Altitude sickness', url: 'https://www.nhs.uk/conditions/altitude-sickness/', checked: '2026-11-20'}

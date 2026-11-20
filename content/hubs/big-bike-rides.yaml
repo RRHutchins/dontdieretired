@@ -1,0 +1,440 @@
+# Deep hub (RUNBOOK §6u): big bike rides (built 20 Nov 2026; Robin asked for more deep hubs that are popular, bring
+# traffic, involve spending and fit the planner). Race-style schema with riding words: `series` is the kind of ride
+# (sportive, gran fondo, charity, multi-day, audax). Every fact comes from the organiser's page linked on the row (or a
+# `more` link), opened on its `checked` date; no prices; months only where the page says; ids are permanent; the site
+# never states a total. Sportives are not races: never call them races in our own words.
+id: big-bike-rides
+slug: big-bike-rides
+category: move
+label: Big bike rides
+h1: "Big bike rides: sportives, gran fondos and bucket-list rides"
+seo_title: 'Cycling sportives and big rides: finder and how to enter'
+description: Find a sportive, gran fondo or multi-day ride by region, distance, terrain and how you get a place, from L'Étape du Tour and the Maratona dles Dolomites to the Fred Whitton, RAGBRAI and the Cape Town Cycle Tour.
+lead: A big organised ride gives you a signposted route, food stops and other riders around you for a day you will talk about for years. Here is how each one works and how to get a place, checked against the organiser's own page.
+intro:
+- British Cycling calls sportives personal challenge rides: a signposted route, staffed feed stations and your own pace. Many set cut-off times, a few rank every rider by time, and some multi-day rides cross a whole country or run day and night, like the 1,200 km Paris-Brest-Paris.
+- Filter the list below by region, distance, terrain, kind of ride or how you get a place. Every ride links to its organiser's own page, opened on the date shown. Dates, routes and entry rules change every year, so the organiser's page is the last word.
+tags: [cycling, cycle, bike, bikes, ride, rides, sportive, sportives, 'gran fondo', granfondo, cyclosportive, 'étape', etape, audax, 'charity ride', road, gravel]
+word: ride
+words: rides
+noun_one: a ride
+noun_many: rides
+finder_title: Ride finder
+search_hint: Name, place or country
+entry_h2: How you get a place
+series_label: Kind of ride
+series_any: Any kind
+series_dt: Kind of ride
+stage_text: multi-day ride
+stage_option: Multi-day rides
+seo_suffix: distances, climbing and entry
+desc_mid: How entry works, the climbing
+trust_text: "Dates, routes, fees and entry rules change every year: the organiser's page is the one to trust."
+button_text: Open the ride finder
+chip_text: ride finder and guides
+back_text: Find another ride in the finder
+none_text: No rides match those choices yet. Try any distance or any month.
+review_text: not reviewed by a cycling coach or doctor.
+kit_text: Kit to compare before you ride
+about: We list a ride only after opening its organiser's own page, and every fact here comes from that page or another official page linked beside it. Dates, routes, fees and entry rules change every year, so the organiser's page is the one to trust. Being listed does not mean any ride or organiser endorses this site.
+safety: A long ride on open or closed roads is hard on the heart and legs. Build up your distance over weeks, follow the event's rules (most require a helmet), and check with your GP (family doctor) before you start training if you have a heart condition or another health worry. In an emergency call 999 or 112 in the UK and Europe (911 in the US).
+bands_def: [[short, Under 100 km, 0, 99.9], [century, 100 to 169 km, 100, 169.9], [long, 170 to 249 km, 170, 249.9], [epic, 250 km or more, 250, 99999]]
+event_pages: true
+month_range: true
+facets:
+  continent: {europe: Europe, north-america: North America, africa: Africa, oceania: Oceania}
+  terrain: {road: Road, mountain: Mountain passes, gravel: Gravel, cobbles: Cobbles}
+  entry: {open: Open entry (first come), register: Register with the organiser (see its rules), ballot: Ballot or lottery, charity: Charity place, tour: Travel package or tour operator, qualifier: Qualifying rides needed}
+  series: {sportive: Sportive or challenge ride, gran-fondo: Gran fondo (timed and ranked), charity: Charity ride, tour: Multi-day ride, audax: Audax or randonnée, independent: Other}
+activities: [ride-a-sportive, ride-the-etape-du-tour, ride-the-fred-whitton-challenge]
+events:
+- id: etape-du-tour
+  name: L'Étape du Tour de France
+  series: sportive
+  place: Cluses to Les Saisies, French Alps (2027 route)
+  country: France
+  continent: europe
+  km: [154]
+  distances: 154 km (about 96 miles) in 2027
+  climb: 4,850 m of ascent (2027 route)
+  terrain: [road, mountain]
+  format: single
+  month: [7]
+  entry: [register, charity, tour]
+  entry_note: General entry for 2027 opened on 2 November 2026 and the site now shows the event as sold out. The remaining ways in are a charity place with Prostate Cancer UK or a trip with one of the organiser's official travel agencies.
+  note: The 2027 ride is on Sunday 11 July 2027 and takes in five major climbs, including the Col de la Colombière (15.9 km at 7%), the Col du Pré and the climb to Bisanne (12.4 km at 8.3%).
+  activity: ride-the-etape-du-tour
+  link: {label: 'L''Étape du Tour: Discover the route of L''Étape du Tour de France 2027', url: 'https://www.letapedutourdefrance.com/en/news/discover-the-route-of-letape-du-tour-de-france-2027/203', checked: '2026-11-20'}
+  more:
+  - {label: 'L''Étape du Tour: Discover the remaining ways to take part in 2027', url: 'https://www.letapedutourdefrance.com/en/news/discover-the-remaining-ways-to-take-part-to-l-etape-du-tour-de-france-2027/212', checked: '2026-11-20'}
+- id: maratona-dles-dolomites
+  name: Maratona dles Dolomites
+  series: gran-fondo
+  place: Dolomite passes, northern Italy
+  country: Italy
+  continent: europe
+  km: [55, 106, 138]
+  distances: 'Three courses: 55 km (about 34 miles), 106 km (about 66 miles) and 138 km (about 86 miles)'
+  climb: 4,230 m of ascent on the 138 km course
+  terrain: [road, mountain]
+  format: single
+  month: [7]
+  entry: [ballot, charity, tour]
+  entry_note: 'Entry for 2027 is by draw: pre-registration ran 14 October to 10 November 2026 and the draw is in the second half of November 2026; those drawn must pay by 10 December 2026. There are also 400 charity starting numbers (200 online from 25 November 2026, the other 200 from 18 March 2027), and the site has a separate tour operator route. Riders must be 18 or over (those turning 18 in 2027 only on the 55 km and 106 km courses) and must upload a medical certificate for cycling sport.'
+  note: The 2027 edition is on 4 July 2027. The long course crosses the Campolongo, Pordoi, Sella, Gardena, Giau and Valparola passes. Its rules describe it as an event for touring cyclists but place riders by finishing time; a hard helmet is compulsory and there are intermediate cut-off times.
+  link: {label: 'Maratona dles Dolomites: How to register', url: 'https://www.maratona.it/en/how-to-register-2027', checked: '2026-11-20'}
+  more:
+  - {label: 'Maratona dles Dolomites: Maratona course 138km', url: 'https://www.maratona.it/en/138km', checked: '2026-11-20'}
+  - {label: 'Maratona dles Dolomites: Conditions of entry', url: 'https://www.maratona.it/en/conditionsofentry-2027', checked: '2026-11-20'}
+- id: marmotte-granfondo-alpes
+  name: Marmotte Granfondo Alpes
+  series: gran-fondo
+  place: Bourg d'Oisans to Alpe d'Huez, French Alps
+  country: France
+  continent: europe
+  km: [177]
+  distances: 177 km (about 110 miles)
+  climb: 5,000 m of ascent
+  terrain: [road, mountain]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: Register online through the link on the organiser's event page (registration is handled by Chronorace); the page gives no opening date or sell-out information.
+  note: The 2027 edition is on 27 June 2027. Four cols including the Glandon, Télégraphe and Galibier, then the final climb to Alpe d'Huez. Cut-offs apply at the Galibier summit (15h30) and the foot of Alpe d'Huez (17h45).
+  link: {label: 'Marmotte Granfondo Alpes: Marmotte Granfondo Alpes', url: 'https://marmottegranfondoalpes.com/en/marmotte-granfondo-alpes/', checked: '2026-11-20'}
+- id: fred-whitton-challenge
+  name: Fred Whitton Challenge
+  series: sportive
+  place: Grasmere Showground, Lake District (start and finish)
+  country: England
+  continent: europe
+  km: [180]
+  distances: 112 miles (about 180 km)
+  terrain: [road, mountain]
+  format: single
+  month: [5]
+  entry: [ballot, charity]
+  entry_note: Pre-ballot entries (Special Charity, Deferred and Volunteer) opened on 2 November 2026; the Special Charity Entry is a guaranteed place that includes a donation to one of three supported charities. The general ballot runs 1 to 10 December 2026.
+  note: The 2027 ride is on Sunday 9 May 2027. The organisers strongly advise first-timers to get experience on a 100-mile sportive with more than 2,800 m of climbing first. Every rider gets a medal, and for a small charity donation you can ask for a printed certificate showing your time.
+  activity: ride-the-fred-whitton-challenge
+  link: {label: 'Fred Whitton Challenge: Entry', url: 'https://fredwhittonchallenge.co.uk/entry/', checked: '2026-11-20'}
+  more:
+  - {label: 'Fred Whitton Challenge: Event', url: 'https://fredwhittonchallenge.co.uk/event/', checked: '2026-11-20'}
+- id: dragon-ride
+  name: Dragon Ride
+  series: sportive
+  place: Margam Park, near Port Talbot (start and finish), South Wales
+  country: Wales
+  continent: europe
+  km: [99, 153, 222]
+  distances: '2026 routes: Cymru Classic 99 km (about 62 miles), Medio Fondo 153 km (about 95 miles), Gran Fondo 222 km (about 138 miles), plus the longer Dragon Devil; 2027 routes not yet confirmed'
+  climb: '2026 figures: 1,350 m (Cymru Classic), 2,332 m (Medio Fondo), over 3,500 m (Gran Fondo)'
+  terrain: [road]
+  format: single
+  month: [6]
+  entry: [open]
+  entry_note: All places are first come, first served, solo or as a 4-person team; group entries must all ride the same distance.
+  note: The 2027 ride is on Sunday 13 June 2027. The Devil's Elbow (1.8 km at an average 10.3%) is a timed climb for the King and Queen of the Mountain challenge.
+  link: {label: 'Dragon Ride: 2027 Entry Types', url: 'https://www.dragonride.co.uk/2027-entry-types/', checked: '2026-11-20'}
+  more:
+  - {label: 'Dragon Ride: Routes & Distances', url: 'https://www.dragonride.co.uk/event-info/our-routes/', checked: '2026-11-20'}
+  - {label: 'Dragon Ride: Gran Fondo', url: 'https://www.dragonride.co.uk/gran-fondo/', checked: '2026-11-20'}
+  - {label: 'Dragon Ride: Medio Fondo', url: 'https://www.dragonride.co.uk/medio-fondo-157km/', checked: '2026-11-20'}
+  - {label: 'Dragon Ride: Cymru Classic', url: 'https://www.dragonride.co.uk/cymru-classic/', checked: '2026-11-20'}
+- id: etape-caledonia
+  name: Etape Caledonia
+  series: sportive
+  place: Pitlochry (start and finish), Scottish Highlands
+  country: Scotland
+  continent: europe
+  km: [64, 89, 137]
+  distances: 40 miles (64.4 km), 55 miles (88.5 km) and 85 miles (136.8 km)
+  climb: 860 m, 1,166 m and 1,555 m of ascent
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register, charity]
+  entry_note: Enter through the organiser's site (tickets are sold via Let's Do This). Cancer Research UK also offers charity places with a minimum fundraising target, or you can join Team Cancer Research UK with your own place.
+  note: The 2027 ride is on Sunday 9 May 2027. The organisers say the routes are on fully closed roads, and Cancer Research UK's event page calls it the UK's original closed-road sportive. The 85-mile route includes the climb of Schiehallion.
+  link: {label: 'Etape Caledonia: Routes', url: 'https://www.etapecaledonia.com/the-routes', checked: '2026-11-20'}
+  more:
+  - {label: 'Cancer Research UK: 2027 Etape Caledonia', url: 'https://www.cancerresearchuk.org/get-involved/find-an-event/etape-caledonia', checked: '2026-11-20'}
+- id: bhf-london-to-brighton
+  name: BHF London to Brighton Bike Ride
+  series: charity
+  place: Clapham Common, London to Brighton seafront
+  country: England
+  continent: europe
+  km: [33, 87]
+  distances: 54 miles (86.9 km), or 20.5 miles (about 33 km) from Ardingly Showground
+  terrain: [road]
+  format: single
+  month: [6]
+  entry: [ballot, charity, register]
+  entry_note: 'The 2027 ballot (individuals only) ran from 26 May to 27 September 2026, with results by email. Direct places are also offered: a BHF charity place with a minimum fundraising commitment, a 54-mile place with no fundraising target, or a place on the 20.5-mile ride. Riders aged 14 to 18 need parental consent and an accompanying adult. Helmets are compulsory; you cannot cross the start line without one.'
+  note: The 2027 ride is on Sunday 20 June 2027. The 54-mile route has five rest stops with food, toilets, medical help and mechanics; the shorter route has two.
+  activity: ride-london-to-brighton
+  link: {label: 'British Heart Foundation: London to Brighton Bike Ride 2027', url: 'https://www.bhf.org.uk/how-you-can-help/events/bike-rides/london-to-brighton-bike-ride', checked: '2026-11-20'}
+- id: we-ride-flanders
+  name: We Ride Flanders (Tour of Flanders sportive)
+  series: sportive
+  place: Bruges or Oudenaarde to Oudenaarde, Flanders
+  country: Belgium
+  continent: europe
+  km: [80, 130, 160, 240]
+  distances: 80 km (about 50 miles), 130 km (about 81 miles), 160 km (about 99 miles) and 240 km (about 149 miles)
+  terrain: [road, cobbles]
+  format: single
+  month: [4]
+  entry: [open]
+  entry_note: Registration for the 2027 edition opened in September 2026; the organisers say places are limited. Tickets via werideflanders.com.
+  note: The 36th edition is on Saturday 3 April 2027. Routes take in cobbled sections and the race's climbs including the Koppenberg, Oude Kwaremont and Paterberg, finishing under the official race finish arch in Oudenaarde.
+  link: {label: 'Tour of Flanders: Registrations for We Ride Flanders 2027 are open', url: 'https://www.rondevanvlaanderen.be/en/news/registrations-for-we-ride-flanders-2027-are-open', checked: '2026-11-20'}
+- id: paris-roubaix-challenge
+  name: Paris-Roubaix Challenge
+  series: sportive
+  place: Northern France, finishing in the Roubaix Vélodrome
+  country: France
+  continent: europe
+  km: [70, 145, 170]
+  distances: 70 km (about 43 miles, 8 cobbled sections), 145 km (about 90 miles, 19 sections) and 170 km (about 106 miles, 30 sections)
+  terrain: [road, cobbles]
+  format: single
+  month: [4]
+  entry: [open]
+  entry_note: Pre-registered riders had priority access from 14 October 2026 and general registration opened on 15 October; places are limited.
+  note: The 17th edition is on Saturday 10 April 2027, finishing in the Vélodrome. The longest route sets a required average speed of 28 km/h on the road and 14 km/h on the cobbles.
+  link: {label: 'Paris-Roubaix Challenge: Route', url: 'https://www.parisroubaixchallenge.com/en/the-race/route', checked: '2026-11-20'}
+  more:
+  - {label: 'Paris-Roubaix Challenge: 2027 Registration, save the dates', url: 'https://www.parisroubaixchallenge.com/en/news/2027-registration-save-the-dates-14-and-15-october/134', checked: '2026-11-20'}
+- id: mallorca-312
+  name: Mallorca 312
+  series: gran-fondo
+  place: Platja de Muro (start and finish), Mallorca
+  country: Spain
+  continent: europe
+  km: [167, 226, 312]
+  distances: 167 km (about 104 miles), 226 km (about 140 miles) and 312 km (about 194 miles)
+  terrain: [road, mountain]
+  format: single
+  month: [4]
+  entry: [register]
+  entry_note: Prior registration is required through the organiser's site, which also has a waiting list. Riders must be over 18, or over 15 with written permission from a parent or guardian. A helmet is compulsory.
+  note: The 2027 edition starts at 6.30am on Saturday 24 April 2027. Chip-timed, with trophies for the first three men and women on each distance; riders may switch distance on the day if they make the cut-offs. The finish closes at 5pm (167 and 226 km) and 8.40pm (312 km).
+  link: {label: 'Mallorca 312: Rules', url: 'https://mallorca312.com/en/rules/', checked: '2026-11-20'}
+- id: leroica-gaiole
+  name: L'Eroica (Gaiole in Chianti)
+  series: sportive
+  place: Gaiole in Chianti, Tuscany
+  country: Italy
+  continent: europe
+  km: [45, 81, 106, 133, 211]
+  distances: 45.1 km (about 28 miles), 80.7 km (about 50 miles), 106.3 km (about 66 miles), 132.5 km (about 82 miles) and 210.9 km (about 131 miles)
+  climb: From 755 m (45 km) to 3,873 m (211 km)
+  terrain: [road, gravel]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: Numbered tickets are sold until each allocation runs out; the registration page says entries open on 10 December 2026 at 9am Rome time, though some ticket details on it still show 2025-26 dates. Children aged 13 to 17 register by email.
+  note: The next edition is on 3 October 2027. Its organisers say L'Eroica was set up partly to protect the last gravel roads of Tuscany; its classic events are ridden on vintage bikes.
+  link: {label: 'Eroica: L''Eroica', url: 'https://eroica.cc/en/gaiole', checked: '2026-11-20'}
+  more:
+  - {label: 'Eroica: Registration L''Eroica', url: 'https://eroica.cc/en/gaiole/registration-eroica-gaiole', checked: '2026-11-20'}
+  - {label: 'Eroica: The L''Eroica race', url: 'https://www.eroica.cc/en/the-leroica-race/', checked: '2026-11-20'}
+  - {label: 'Eroica: Short Route', url: 'https://eroica.cc/en/gaiole/short-route-gaiole', checked: '2026-11-20'}
+- id: vatternrundan
+  name: Vätternrundan
+  series: sportive
+  place: Round Lake Vättern, finishing in Motala
+  country: Sweden
+  continent: europe
+  km: [315]
+  distances: 315 km (about 196 miles)
+  terrain: [road]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: 'Two steps: step 1 runs 17 June to 23 November; from 25 November at 7pm CET (step 2) you submit your registration code and must pay within 5 days or the entry is cancelled. Open from the year you turn 15; riders aged 15 to 17 are advised to ride with a parent or adult.'
+  note: The 62nd edition is on 18 to 19 June 2027, with starts through Friday night into Saturday. The organisers say it is not a race but a challenge. Depots close at Jönköping (11.30) and Hjo (16.00), and the Motala finish closes at midnight.
+  link: {label: 'Vätternrundan: Vätternrundan 315 km', url: 'https://www.vatternrundan.se/en/races/vatternrundan-315km', checked: '2026-11-20'}
+- id: gfny-new-york
+  name: Gran Fondo New York (GFNY)
+  series: gran-fondo
+  place: George Washington Bridge to Fort Lee, New Jersey
+  country: USA
+  continent: north-america
+  km: [80, 161]
+  distances: 100 miles (about 161 km) or 50 miles (about 80 km)
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Register online through the organiser's site; the pages opened give no sell-out or age details.
+  note: The 2027 edition is on 16 May 2027 and starts on the George Washington Bridge, closed to traffic for the event. The organisers describe GFNY as a timed race. Climbs include Alpine, Gate Hill and Cheesecote.
+  link: {label: 'GFNY New York: Home', url: 'https://nyc.gfny.com/', checked: '2026-11-20'}
+  more:
+  - {label: 'GFNY New York: About', url: 'https://nyc.gfny.com/about/', checked: '2026-11-20'}
+  - {label: 'GFNY New York: Course', url: 'https://nyc.gfny.com/course/', checked: '2026-11-20'}
+- id: td-five-boro-bike-tour
+  name: TD Five Boro Bike Tour
+  series: charity
+  place: Through all five boroughs of New York City, finishing on Staten Island
+  country: USA
+  continent: north-america
+  km: [64]
+  distances: 40 miles (about 64 km)
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register, charity]
+  entry_note: Registration for 2027 is open, with Standard, Member, VIP, Team Bike New York (fundraising, minimum due by 15 April 2027) and Charity options. Members are guaranteed Standard Wave 1 and VIPs VIP Wave 1.
+  note: The 2027 tour is on Sunday 2 May 2027 on car-free streets. VIP riders get a timed climb over the Verrazzano-Narrows Bridge.
+  link: {label: 'Bike New York: TD Five Boro Bike Tour', url: 'https://www.bike.nyc/events/td-five-boro-bike-tour/', checked: '2026-11-20'}
+- id: seattle-to-portland
+  name: Seattle to Portland (STP)
+  series: sportive
+  place: University of Washington, Seattle to Portland, Oregon
+  country: USA
+  continent: north-america
+  km: [333]
+  distances: About 207 miles (about 333 km), in one or two days
+  terrain: [road]
+  format: stage
+  month: [7]
+  entry: [register]
+  entry_note: Cascade Bicycle Club members can register from 7 January 2027 at 10am, non-members from 3 February 2027 at 10am; registration closes on Sunday 4 July at 11.59pm.
+  note: The 2027 ride is on 10 to 11 July 2027. Riders choose one or two days. Four official rest stops (at miles 20, 54, 146 and 176) plus thirteen mini-stops, many run by community groups.
+  link: {label: 'Cascade Bicycle Club: Seattle to Portland', url: 'https://cascade.org/rides-events/seattle-portland-2027-2027', checked: '2026-11-20'}
+- id: hotter-n-hell-hundred
+  name: Hotter'N Hell Hundred
+  series: sportive
+  place: Wichita Falls, Texas
+  country: USA
+  continent: north-america
+  km: [10, 40, 80, 100, 121, 161]
+  distances: '2026 road options: 10 km, 25 miles (about 40 km), 50 miles (about 80 km), 100 km, 75 miles (about 121 km) and 100 miles (about 161 km)'
+  terrain: [road]
+  format: single
+  month: [8]
+  entry: [register]
+  entry_note: Registration is online through BikeReg; the home and route pages still link to 2026 registration, so check for 2027 entry.
+  note: The 2027 weekend is 26 to 29 August 2027. There are also Gravel Grinder routes for riders who prefer dirt to pavement.
+  link: {label: 'Hotter''N Hell Hundred: Home', url: 'https://hh100.org/', checked: '2026-11-20'}
+  more:
+  - {label: 'Hotter''N Hell Hundred: Ride Routes', url: 'https://hh100.org/activities/the-ride/', checked: '2026-11-20'}
+- id: unbound-gravel
+  name: UNBOUND Gravel
+  series: gran-fondo
+  place: Emporia, Kansas
+  country: USA
+  continent: north-america
+  km: [40, 80, 161, 322, 563]
+  distances: 25, 50, 100, 200 and 350 (XL) miles (about 40, 80, 161, 322 and 563 km)
+  terrain: [gravel]
+  format: single
+  month: [6]
+  entry: [ballot, charity, qualifier]
+  entry_note: Places are by lottery (entries 1 to 15 November, results 21 November; one entry per person); the site does not print the year beside these dates. Guaranteed but limited charity entries are first come, first served. Volunteers with 10+ hours skip the lottery, and coins won at qualifier races can be redeemed for the 200 or 100 mile events.
+  note: The 2027 event runs 3 to 6 June 2027 in Emporia. 2027 routes are still being planned.
+  link: {label: 'UNBOUND Gravel: Registration & Ways To Race', url: 'https://www.unboundgravel.com/registration/', checked: '2026-11-20'}
+  more:
+  - {label: 'UNBOUND Gravel: Home', url: 'https://www.unboundgravel.com/', checked: '2026-11-20'}
+- id: cape-town-cycle-tour
+  name: Cape Town Cycle Tour
+  series: sportive
+  place: Grand Parade, Cape Town to Green Point
+  country: South Africa
+  continent: africa
+  km: [42, 109]
+  distances: 109 km (about 68 miles), or a 42 km (about 26 miles) route
+  terrain: [road]
+  format: single
+  month: [3]
+  entry: [register]
+  entry_note: The event page says entries open soon but also links to the 2027 entry system, so check its status; there is an international entry category.
+  note: The 2027 tour is on Sunday 14 March 2027. Climbs include Edinburgh Drive, Chapman's Peak and Suikerbossie. Riders are timed, a helmet is on the start checklist, and those who miss a cut-off ride the sweep bus to the finish.
+  link: {label: 'Cape Town Cycle Tour: The Cape Town Cycle Tour', url: 'https://www.capetowncycletour.com/events/the-cape-town-cycle-tour', checked: '2026-11-20'}
+- id: lake-taupo-cycle-challenge
+  name: Lake Taupō Cycle Challenge (Round the Lake)
+  series: sportive
+  place: Round Lake Taupō from Tongariro St, Taupō
+  country: New Zealand
+  continent: oceania
+  km: [160]
+  distances: About 160 km (about 99 miles)
+  climb: 1,779 m of climbing
+  terrain: [road]
+  format: single
+  month: [11]
+  entry: [register]
+  entry_note: Enter online and pick a start group by expected finish time. Children from 12 can ride with an adult (one to one); riding alone needs age 15 or over.
+  note: The next ride is on 28 November 2026. Riders must be past Tūrangi by 3.15pm, and anyone unlikely to finish by 7pm may be taken off the course. E-bikes are timed separately.
+  link: {label: 'Lake Taupo Cycle Challenge: Shimano Round the Lake', url: 'https://www.cyclechallenge.com/round-the-lake', checked: '2026-11-20'}
+- id: paris-brest-paris
+  name: Paris-Brest-Paris Randonneur
+  series: audax
+  place: Rambouillet to Brest and back
+  country: France
+  continent: europe
+  km: [1200]
+  distances: About 1,200 km (about 746 miles), with time limits of 80, 84 or 90 hours depending on start wave
+  terrain: [road]
+  format: stage
+  month: [8]
+  entry: [qualifier]
+  entry_note: For 2027 you must ride four qualifying brevets (200, 300, 400 and 600 km) between 1 November 2026 and 30 June 2027. Pre-registration opens on a date between 16 January and 27 March 2027 that depends on your longest 2026 brevet (the longer it was, the earlier you can pre-register); final registration is 29 May to 4 July 2027. Riders must be 18 or over on the day of departure.
+  note: Organised by the Audax Club Parisien, with starts on the afternoon of Sunday 22 August and morning of Monday 23 August 2027. Its rules say it has no ranking and is a personal challenge. A hard-shell helmet is compulsory, as are lights visible from 100 m in front and 150 m behind and high-visibility clothing at night.
+  link: {label: 'Paris-Brest-Paris: Get Ready', url: 'https://www.paris-brest-paris.org/en/get-ready/', checked: '2026-11-20'}
+  more:
+  - {label: 'Paris-Brest-Paris: Regulations', url: 'https://www.paris-brest-paris.org/en/rules-and-regulations-of-paris-brest-paris-randonneur/', checked: '2026-11-20'}
+  - {label: 'Paris-Brest-Paris: Registration', url: 'https://www.paris-brest-paris.org/en/registration/', checked: '2026-11-20'}
+guides:
+- slug: your-first-sportive
+  title: 'Your first sportive: how big organised bike rides work'
+  short: Your first sportive
+  seo_title: 'Your first sportive: a plain guide for new riders'
+  description: What happens on a sportive or challenge ride, how to choose a distance, how ballots, open entry and charity places work, and how to prepare and stay safe.
+  standfirst: A sportive is a signposted, supported ride over a set route, which British Cycling calls a personal challenge ride. Here is how they work and how to get ready for your first.
+  detail:
+  - h: What a sportive is
+    p: ['British Cycling calls sportives personal challenge rides: the route is fully signposted for you, there are staffed feed stations to rest and refuel, and the majority offer chip timing so you can see how long you took.', 'Events differ on whether they rank riders. Vätternrundan in Sweden says it is not a race but a challenge, and the Paris-Brest-Paris rules say it has no classification. Others do: the Maratona dles Dolomites places riders by finishing time, and GFNY calls itself a timed race. Read each event''s rules.', 'Many big rides set cut-off times. At the Cape Town Cycle Tour, riders who miss a cut-off must take the sweep bus to the finish; at the Maratona dles Dolomites, riders past certain cut-offs are sent onto a shorter course.']
+  - h: Choosing a distance
+    p: ['British Cycling says routes usually range from 20 to 100+ miles, often with several distances to choose from. Pick a distance you are confident you can finish.', 'Look at the climbing as well as the length. The Fred Whitton organisers, for example, strongly advise first-timers to get experience on a 100-mile sportive with more than 2,800 m of climbing before taking on theirs.']
+  - h: Short and long options on some hub rides
+    table:
+      head: [Event (from our hub), Short option, Long option]
+      rows:
+      - [BHF London to Brighton, 20.5 miles (about 33 km), 54 miles (86.9 km)]
+      - [Etape Caledonia, 40 miles (64.4 km), 85 miles (136.8 km)]
+      - [Cape Town Cycle Tour, 42 km (about 26 miles), 109 km (about 68 miles)]
+      - [We Ride Flanders, 80 km (about 50 miles), 240 km (about 149 miles)]
+  - h: How places work
+    list: ['Open entry: first come, first served until places run out (the Dragon Ride works this way).', 'Ballot or draw: you apply in a set window and places are drawn (Fred Whitton, Maratona dles Dolomites, UNBOUND Gravel).', 'Charity place: a place linked to raising money or donating to a charity (BHF London to Brighton, L''Étape du Tour via Prostate Cancer UK, the Fred Whitton''s guaranteed Special Charity entry).', 'Travel package: some events sell places through official travel agencies or tour operators.', 'Qualifying rides: long audax events such as Paris-Brest-Paris need qualifying brevets first.']
+  - h: Getting ready
+    p: ['British Cycling suggests planning your training so that a taper week comes before event week, sticking to the fuelling you have already tested in training, and not changing your diet in the final week.', 'Check the course and conditions beforehand so you can pace yourself and plan food stops. British Cycling''s riding tips: don''t start too hard, save your energy for when you really need it, and eat and drink little and often whether or not you feel hungry, choosing food you can eat on the move.', 'British Cycling suggests booking a bike service with about two weeks to spare so any new parts can be ordered, and giving any new kit a test run rather than saving it for the day.']
+  - h: Staying safe
+    p: ['Many events make helmets compulsory: the BHF London to Brighton will not let you cross the start line without one, and the Maratona dles Dolomites and Mallorca 312 rules require one. The Highway Code advises wearing a helmet that meets current regulations, fits and is securely fastened.', 'Check whether an event''s roads are closed; if they are not, expect traffic. On UK roads the Highway Code says you can ride two abreast, which can be safer in larger groups, but should let drivers behind overtake when it is safe, for example by moving into single file.']
+  faq:
+  - {q: 'Is a sportive a race?', a: 'British Cycling describes sportives as personal challenge rides on a signposted route, most with chip timing so you know your own time. Some events, such as the Maratona dles Dolomites, do place riders by finishing time, so check each event''s rules.'}
+  - {q: 'Do I need to wear a helmet?', a: 'Check the event rules. Many make it compulsory, including the BHF London to Brighton, the Maratona dles Dolomites and the Mallorca 312, and the Highway Code advises wearing one that fits and is securely fastened.'}
+  - {q: 'What happens if I am too slow?', a: 'Many big rides have cut-off times. Depending on the event, riders who miss one may be sent onto a shorter course (Maratona dles Dolomites) or taken to the finish by sweep bus (Cape Town Cycle Tour).'}
+  - {q: 'How do I get a place on a popular ride?', a: 'It depends on the event: some are open entry until full, some use a ballot, and many offer charity places or travel packages. Each entry in our hub explains how its next edition works.'}
+  kit:
+  - {name: Cycling helmet, why: 'Check it meets current safety standards, fits snugly and the straps adjust; some events, such as the BHF London to Brighton, will not let you start without one.', url: 'https://www.amazon.co.uk/s?k=road+cycling+helmet'}
+  - {name: Saddle bag puncture kit, why: 'Check it holds a spare inner tube that matches your tyre size and valve type, plus tyre levers.', url: 'https://www.amazon.co.uk/s?k=cycling+saddle+bag+puncture+repair+kit'}
+  - {name: Mini pump, why: Check it fits your valve type (Presta or Schrader) and can be mounted on your frame., url: 'https://www.amazon.co.uk/s?k=bike+mini+pump+presta'}
+  - {name: Cycling water bottles, why: Check the size fits your bottle cages and that the valve is easy to open while riding., url: 'https://www.amazon.co.uk/s?k=cycling+water+bottle+750ml'}
+  sources:
+  - {label: 'British Cycling: Take the Challenge, Ride a Sportive', url: 'https://www.britishcycling.org.uk/sportives/article/sp20141029--Get-into-sportives-0', checked: '2026-11-20'}
+  - {label: 'British Cycling: Sportive Riding Tips', url: 'https://www.britishcycling.org.uk/sportives/article/sp-20090730-Sportive--Riding-Tips-0', checked: '2026-11-20'}
+  - {label: 'British Cycling: The final build up to a sportive', url: 'https://www.britishcycling.org.uk/knowledge/article/izn20130424-The-final-countdown-0', checked: '2026-11-20'}
+  - {label: 'British Cycling: What to expect at your first sportive', url: 'https://www.britishcycling.org.uk/news/article/izn20151117-Sportives--Ridesmart--Related-What-to-expect-on-your-first-sportive-0', checked: '2026-11-20'}
+  - {label: 'GOV.UK: The Highway Code, Rules for cyclists (59 to 82)', url: 'https://www.gov.uk/guidance/the-highway-code/rules-for-cyclists-59-to-82', checked: '2026-11-20'}
+  - {label: 'Vätternrundan: Vätternrundan 315 km', url: 'https://www.vatternrundan.se/en/races/vatternrundan-315km', checked: '2026-11-20'}
+  - {label: 'Paris-Brest-Paris: Regulations', url: 'https://www.paris-brest-paris.org/en/rules-and-regulations-of-paris-brest-paris-randonneur/', checked: '2026-11-20'}
+  - {label: 'Cape Town Cycle Tour: The Cape Town Cycle Tour', url: 'https://www.capetowncycletour.com/events/the-cape-town-cycle-tour', checked: '2026-11-20'}
+  - {label: 'British Heart Foundation: London to Brighton Bike Ride 2027', url: 'https://www.bhf.org.uk/how-you-can-help/events/bike-rides/london-to-brighton-bike-ride', checked: '2026-11-20'}
+  - {label: 'Maratona dles Dolomites: Conditions of entry', url: 'https://www.maratona.it/en/conditionsofentry-2027', checked: '2026-11-20'}
+  - {label: 'Mallorca 312: Rules', url: 'https://mallorca312.com/en/rules/', checked: '2026-11-20'}
+  - {label: 'Fred Whitton Challenge: Entry', url: 'https://fredwhittonchallenge.co.uk/entry/', checked: '2026-11-20'}
+  - {label: 'GFNY New York: Home', url: 'https://nyc.gfny.com/', checked: '2026-11-20'}
