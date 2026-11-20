@@ -56,6 +56,10 @@ kinds:
 # Northern hemisphere unless the phrase says otherwise. null = no particular months (any time of year).
 # A phrase missing from this list prints a LIST WARNING and the activity is treated as any time until it is added here.
 seasons:
+  "April to September": [4, 5, 6, 7, 8, 9]
+  "March to November": [3, 4, 5, 6, 7, 8, 9, 10, 11]
+  "March to October": [3, 4, 5, 6, 7, 8, 9, 10]
+  "Late March to October": [3, 4, 5, 6, 7, 8, 9, 10]
   "December to April for the winter ice hotel; ice rooms all year": [12, 1, 2, 3, 4]
   "Mid-March to December": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   "All year; fares are higher from May to October": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
