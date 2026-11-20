@@ -56,6 +56,12 @@ kinds:
 # Northern hemisphere unless the phrase says otherwise. null = no particular months (any time of year).
 # A phrase missing from this list prints a LIST WARNING and the activity is treated as any time until it is added here.
 seasons:
+  "Late September to late October": [9, 10]
+  "November to March": [11, 12, 1, 2, 3]
+  "December to March": [12, 1, 2, 3]
+  "Late April to early November for Maid of the Mist": [4, 5, 6, 7, 8, 9, 10, 11]
+  "Late May to September for the evening lighting programme": [5, 6, 7, 8, 9]
+  "Mid-May to mid-September": [5, 6, 7, 8, 9]
   "April to September": [4, 5, 6, 7, 8, 9]
   "March to November": [3, 4, 5, 6, 7, 8, 9, 10, 11]
   "March to October": [3, 4, 5, 6, 7, 8, 9, 10]
