@@ -52,7 +52,7 @@ accounts:
   # Planner Plus accounts (RUNBOOK §6t): the Worker in worker/, sign-in by emailed link. "" = accounts closed: /account/ says
   # they are not open yet and /privacy/ says nothing about them. Set to "https://api.dontdieretired.com" only after the Worker
   # is deployed, the sign-in email works, and Robin has tried it; /privacy/ then gains its accounts section in the same build.
-  api: ""
+  api: "https://api.dontdieretired.com"
 
 plus:
   # Planner Plus paywall (RUNBOOK §6t day 15). false = the planner works for every reader as it has since 3 Nov (a preview
