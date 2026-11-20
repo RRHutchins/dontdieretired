@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-20)
 
-103 sources, 92 statements, 12 event profiles. Core 71, supported 21, thin 0, contested 0.
+106 sources, 92 statements, 12 event profiles. Core 73, supported 19, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -52,6 +52,9 @@
 - U.S. Masters Swimming (Elaine K. Howley and Scott Bay), *The definitive guide to open water swimming* (2026). Opened 2026-11-01.
 - British Cycling (Insight Zone), *Weeks 1-8 of Sofa to 50km training plan* (2015). Opened 2026-11-01.
 - Cycling UK, *10-week training plan for a 100km ride* (2025). Opened 2026-11-01.
+- Cycling UK, *A beginners' guide to taking part in your first sportive* (2026). Opened 2026-11-20.
+- British Cycling (Insight Zone), *Riding your first sportive, top 10 tips* (2018). Opened 2026-11-20.
+- Moving Medicine (Faculty of Sport and Exercise Medicine UK), *Outdoor cycling (last updated 6 February 2026)* (2026). Opened 2026-11-20.
 - British Cycling (Insight Zone), *Get started, cycling nutrition, top 10 tips* (2018). Opened 2026-11-20.
 - Cycling UK, *A beginners' guide to what to eat on a long bike ride* (2026). Opened 2026-11-20.
 - British Heart Foundation (with Full Potential), *London to Brighton Bike Ride 16-week training guide* (2026). Opened 2026-11-20.
@@ -127,6 +130,7 @@
 | core | 23 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials, dnt-mountain-code, ramblers-hill-tips, bmc-hill-weather |
 | core | 21 | altitude | Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. | nhs-altitude, nathnac-altitude, cdc-altitude, inyo-whitney-leaflet, nps-hale-hiking |
 | core | 19 | body maintenance | Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third. | sherrington-2019, who-falls, nhs-falls, cdc-falls-prevention |
+| core | 18 | on the day | Start slower than you think you need to; early miles feel easy and are where most people overdo it. | ea-pavey-marathon, ea-training-pace, knechtle-nyc-2026, mcm-first-timer-tips, bc-first-sportive-top10, cyclinguk-first-sportive |
 | core | 18 | altitude | Above 3,000 metres, sleep no more than 500 metres higher than the night before and take a rest day at the same height every three or four days. Avoid going from below 1,200 metres to above 3,500 metres in a day. | nhs-altitude, nathnac-altitude, tanapa-kili, cdc-altitude |
 | core | 15 | before you start | Start from your current level and build up gradually; repeating a week is fine and is part of the plan, not a failure. | cmo-2019, nhs-c25k, who-2011-older |
 | core | 15 | altitude | See your GP or a travel clinic before a high-altitude trip, especially if you have a health condition or have had altitude sickness before; they can discuss preventive medicine. Make sure your insurance covers evacuation. | nhs-altitude, nathnac-altitude, cdc-altitude |
@@ -138,9 +142,9 @@
 | core | 12 | intensity | Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. | ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km |
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
 | core | 12 | progression | Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. | higdon-novice1, rc-down-weeks, bc-missing-weeks, meeusen-2013-overtraining |
-| core | 12 | on the day | Start slower than you think you need to; early miles feel easy and are where most people overdo it. | ea-pavey-marathon, ea-training-pace, knechtle-nyc-2026, mcm-first-timer-tips |
 | core | 12 | warning signs | In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. | mrew-safety, ms-hypothermia, pcta-safety-tips, ramblers-hill-tips |
 | core | 12 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe, bewl-ows, rnli-open-water-swimming |
+| core | 11 | key session | Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them. | ydnpa-three-peaks, bmc-hill-fit, bc-first-sportive-top10, cyclinguk-first-sportive |
 | core | 11 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. | lauersen-2014, cmo-2019, bmc-hill-fit |
 | core | 11 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water, nhs-hypothermia |
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
@@ -158,6 +162,7 @@
 | core | 9 | on the day | Your body temperature can keep falling for a while after you get out of cold water (afterdrop), so dry off and get into warm, windproof clothes and a hat as soon as you are out, and move about to make heat. After a short swim a warm shower is enough; avoid very hot water, and do not hold a hot water bottle against numb skin, which burns easily. | oss-cold-water, rlss-safer-open-water, knechtle-2020 |
 | core | 9 | on the day | In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. | rnli-rip-currents, noaa-rip-safety, redcross-beach-safety |
 | core | 9 | kit | On a hill day carry a waterproof jacket and warm layers, even in summer, plus enough water for the day, food, sun protection and a small first aid kit, and wear sturdy footwear. Ramblers also lists a head torch, a charged phone, a whistle and a survival or bothy bag. | bmc-hill-weather, ramblers-hill-tips, pc-safety-tips |
+| core | 8 | key session | Low-impact exercise such as cycling, swimming or rowing builds fitness with less pounding and is useful for everyone, not just the injured. | ea-training-pace, higdon-novice1, movingmedicine-cycling |
 | core | 8 | warning signs | In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). | nhs-hypothermia, ms-hypothermia |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
@@ -193,8 +198,6 @@
 | core | 5 | warning signs | Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. | nhs-heart-attack |
 | core | 5 | intensity | For walking to count as exercise, walk briskly, at about 3 miles an hour, faster than a stroll; you should still be able to talk but not sing. Even a brisk 10-minute walk each day counts. If you are not very active, increase your walking distance gradually. | nhs-walking |
 | supported | 5 | key session | Train for the ground you will cover. For hill challenges walk hills fast, or use stairs, and add short hill repeats of 50 to 100 metres of climb, four to six times, coming down slowly. | bmc-hill-fit, ydnpa-three-peaks |
-| supported | 5 | key session | Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them. | ydnpa-three-peaks, bmc-hill-fit |
-| supported | 5 | key session | Low-impact exercise such as cycling, swimming or rowing builds fitness with less pounding and is useful for everyone, not just the injured. | ea-training-pace, higdon-novice1 |
 | supported | 5 | fuel and drink | Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. | eah-consensus-2015 (against: bc-sofa-50km, bc-nutrition-top10) |
 | supported | 5 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker |
 | supported | 5 | why | Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control. | bmc-hill-fit, ydnpa-three-peaks |

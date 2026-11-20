@@ -2162,17 +2162,184 @@
   season: Spring to autumn
   regions:
   - uk
-  why: A sportive is a signposted, non-competitive road ride with feed stops, so you can take on a long route without navigating or carrying everything yourself. Most offer several distances, and British Cycling grades events so you can judge the difficulty beforehand.
+  - us
+  why: A sportive is a signposted, timed road ride with feed stations, so you can take on a long route without planning it or carrying everything yourself. Many offer several distances, and British Cycling
+    grades events from 1 to 5 so you can judge the difficulty beforehand.
   start:
-  - Browse British Cycling's sportives page and read its guide to sportive grading.
-  - Enter the shortest route at an event within easy reach of home.
-  - Build your longest ride up steadily and practise eating and drinking on the bike.
+  - Read British Cycling's guide to sportive grading and pick a Grade 1 or 2 event within easy reach of home.
+  - Enter the shortest distance, then work out your training from the route's length and total climb.
+  - Build your longest ride up steadily and practise eating and drinking on the bike with the food you will use on the day.
   links:
-  - label: 'British Cycling: sportives'
-    url: https://www.britishcycling.org.uk/sportives
+  - label: British Cycling, British Cycling launch sportive grading (2013)
+    url: https://britishcycling.org.uk/sportives/article/sp20131015-British-Cycling-launch-sportive-grading-0
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-20'
+  - label: British Cycling, Take the Challenge, Ride a Sportive
+    url: https://britishcycling.org.uk/sportives/article/sp20141029--Get-into-sportives-0
+    region: uk
+    checked: '2026-11-20'
+  - label: British Cycling, Riding your first sportive - Top 10 tips (2018)
+    url: https://www.britishcycling.org.uk/knowledge/article/izn20180503-Riding-your-first-sportive---Top-10-tips-0
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Cycling UK: a beginners'' guide to taking part in your first sportive'
+    url: https://www.cyclinguk.org/article/beginners-guide-taking-part-first-sportive
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Dragon Ride, Wales: routes and entry'
+    url: https://www.dragonride.co.uk/2027-entry-types/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Fred Whitton Challenge, Lake District: entry'
+    url: https://fredwhittonchallenge.co.uk/entry/
+    region: uk
+    checked: '2026-11-20'
+  - label: Levi's GranFondo, Windsor, California (2026 edition, last run 25 April 2026)
+    url: https://levisgranfondo.com/dispatches/levis-granfondo-registration-2026
+    region: us
+    checked: '2026-11-20'
+  - label: 'GFNY: new to gran fondo riding'
+    url: https://gfny.com/new-to-gfny-cycling/
+    region: us
+    checked: '2026-11-20'
   story: craig-johnston-record-ride-across-australia
+  safety: Many sportives use roads that stay open to traffic, so the Highway Code (the UK's rules of the road) still applies, and organisers such as the Dragon Ride ask riders to go single file where appropriate
+    and never more than two abreast.
+  inspire:
+  - kind: read
+    person: Leon Bond
+    line: Rode the 112-mile Fred Whitton route, over six Lakeland passes, on ten consecutive days to raise money for Macmillan Cancer Support, having come to cycling as a runner.
+    title: 'Interview: Leon Bond talks about riding ten Fred Whittons'
+    outlet: road.cc
+    url: https://road.cc/content/news/36811-interview-leon-bond-talks-about-riding-ten-fred-whittons
+    checked: '2026-11-20'
+  seo_title: What is a sportive? First sportive tips and events compared
+  description: What a cycling sportive is really like, how to train and pace your first one, what to carry, and real UK sportives and US gran fondos compared.
+  detail:
+  - h: What a sportive really is
+    p:
+    - A sportive is a long-distance, mass-participation road ride. British Cycling calls them personal challenge rides that let you test your legs without having to plan a route. Routes usually run from
+      20 to more than 100 miles (about 30 to 160 km), and many events offer several distances.
+    - It is not a race, but it is timed. Most sportives use chip timing so you can see how long you took, and many set cut-off times, sometimes at checkpoints along the route. You collect a number at registration,
+      follow signs the whole way, and stop at staffed feed stations to rest, refuel and refill bottles. Bigger events often have mechanics at the stops.
+    - In the US the nearest equivalent is the gran fondo, Italian for "big challenge". Check which kind you are entering. At Gran Fondo New York the long route is a timed race with every finisher ranked,
+      while the medium course is described as a non-competitive, recreational ride.
+  - h: Real events compared
+    table:
+      head:
+      - Event
+      - Where
+      - Distance options
+      - Total climb
+      - Entry fee (as last listed)
+      - Month
+      rows:
+      - - Dragon Ride
+        - Wales
+        - 99 km (62 miles), 153 km (95 miles), 222 km (138 miles), 298 km (185 miles)
+        - 1,324 m (4,344 ft) on the shortest route to 4,504 m (14,777 ft) on the longest (2026 roadbook)
+        - Not shown on the entry page; early entries closed for 2027
+        - June
+      - - Fred Whitton Challenge
+        - Lake District, Cumbria
+        - 112 miles (180 km), one route
+        - 3,500 m (about 11,500 ft), over six passes including Hardknott and Wrynose
+        - £125 plus processing charges (general ballot, 1 to 10 December 2026)
+        - May
+      - - Levi's GranFondo
+        - Finishes in Windsor, California
+        - Piccolo 32 miles (51 km), plus longer Medio, Geysers and Gran Fondo routes
+        - Not given on the page opened
+        - Not given on the page opened
+        - April (last run 25 April 2026)
+      - - GFNY New York
+        - New York City, crossing the closed George Washington Bridge
+        - A long timed race and a medium non-competitive ride
+        - Not given on the pages opened
+        - Not given on the pages opened
+        - May
+    after: General entry to the Fred Whitton is mainly by ballot, with other routes for volunteers, deferred entries, special charity places and overseas riders. Its organisers suggest first-timers have
+      already finished a 100-mile sportive with more than 2,800 metres (about 9,200 ft) of climbing. For a first event, British Cycling suggests something low-key and local, and Cycling UK points to events
+      with several distances, such as a New Forest sportive offering 100, 63 and 39 miles.
+  - h: The honest hard parts
+    list:
+    - Hills. British Cycling's Grade 3 events usually have 3,000 to 4,000 ft (about 900 to 1,200 m) of climbing over a middle distance, and the 2026 Dragon Ride roadbook gives its Devil's Elbow climb as
+      4.1 km at an average gradient of 3.9%. Cycling UK suggests choosing an event with gentler climbs for a first go.
+    - Cut-offs. On the 2026 Dragon Ride, riders on the 153 km route who started last needed to average 15 km/h (9.4 mph) to make the cut-offs; the shortest route had none.
+    - Going off too hard. British Cycling warns against getting caught up in the excitement of the start; Cycling UK says "think tortoise rather than hare".
+    - Riding in a group. It saves energy, but has its own etiquette. British Cycling suggests learning it on a local club's rides first.
+    - Mechanicals. Mechanics at feed stations can help, but at the Dragon Ride parts are charged for and there are no spare bikes. Cycling UK's advice is that you are responsible for yourself.
+    - Your stomach. British Cycling suggests sticking to the food you trained with, as unfamiliar feed-station treats can upset it.
+  - h: What you need
+    list:
+    - A road bike that suits the route and that you are comfortable on. Have it checked about a week before, and do not change parts the day before.
+    - A helmet. It is compulsory at the Fred Whitton, where tri-bars and electric, folding and fixed-gear bikes are not allowed.
+    - A multitool, a spare inner tube and a few spare parts.
+    - Your own snacks and bottles, because you may run low miles from the next feed station.
+    - Cycling clothing you have already worn on long rides, a phone, cash and a debit card, and the route map or GPX file (a route file for a bike computer or phone).
+    - Photo ID if the event asks for it; the Fred Whitton requires it at registration.
+  - h: How to build up
+    p:
+    - Use a training plan; Cycling UK publishes a 10-week plan for a 60-mile sportive. The two bodies set different marks. Cycling UK says that if you can comfortably ride half your target distance, you
+      should be able to finish. British Cycling suggests your longest training rides should reach about 75 to 80% of it.
+    - Either way, use the long rides to practise pacing and eating, and do not overtrain; Cycling UK recommends proper rest. On the day, read the pre-event information, pack the night before, arrive early
+      for the briefing and plan how you will get home, especially from a one-way route.
+  faq:
+  - q: What is a sportive in cycling?
+    a: A signposted, timed, non-competitive road ride with feed stations and usually several distances to choose from. British Cycling says routes usually range from 20 to more than 100 miles.
+  - q: Is a sportive a race?
+    a: No. British Cycling's advice is that it is not a race, and the Dragon Ride calls itself an open-road sportive, not a race. You are timed, though, and there may be cut-offs. Some US gran fondos include
+      a ranked race route, so check before you enter.
+  - q: How far should I ride in training before a sportive?
+    a: Cycling UK says comfortably riding half the distance should see you round; British Cycling suggests building to about 75 to 80% of it. Look at the total climb too, not just the distance.
+  - q: What do the British Cycling sportive grades mean?
+    a: Grades run from 1 (Moderate, shorter and flatter routes for new cyclists) to 5 (Very Hard, long routes with very hard climbs for highly prepared riders). Grade 3 usually means 3,000 to 4,000 ft of
+      climbing over a middle distance.
+  - q: What is the difference between a sportive and a gran fondo?
+    a: Both are long mass rides on marked routes with aid stations. Gran fondo is the Italian term, used widely in the US; some gran fondos, such as Gran Fondo New York's long route, are run as timed races
+      with ranked finishers.
+  - q: What should I take on my first sportive?
+    a: A multitool, a spare inner tube, your own snacks, a phone, cash and a debit card, and the route file. Cycling UK says not to rely on others for repairs.
+  sources:
+  - label: British Cycling, British Cycling launch sportive grading (2013)
+    url: https://britishcycling.org.uk/sportives/article/sp20131015-British-Cycling-launch-sportive-grading-0
+    checked: '2026-11-20'
+  - label: British Cycling, Take the Challenge, Ride a Sportive
+    url: https://britishcycling.org.uk/sportives/article/sp20141029--Get-into-sportives-0
+    checked: '2026-11-20'
+  - label: British Cycling, Riding your first sportive - Top 10 tips (2018)
+    url: https://www.britishcycling.org.uk/knowledge/article/izn20180503-Riding-your-first-sportive---Top-10-tips-0
+    checked: '2026-11-20'
+  - label: Cycling UK, A beginners' guide to … taking part in your first sportive
+    url: https://www.cyclinguk.org/article/beginners-guide-taking-part-first-sportive
+    checked: '2026-11-20'
+  - label: Dragon Ride, Official 2026 Dragon Ride Roadbook
+    url: https://www.dragonride.co.uk/wp-content/uploads/sites/10/2025/06/Dragon-Ride-2026-Roadbook.pdf
+    checked: '2026-11-20'
+  - label: Dragon Ride, 2027 entry types
+    url: https://www.dragonride.co.uk/2027-entry-types/
+    checked: '2026-11-20'
+  - label: Dragon Ride, Routes and distances
+    url: https://www.dragonride.co.uk/event-info/our-route
+    checked: '2026-11-20'
+  - label: Fred Whitton Challenge, FAQs
+    url: https://fredwhittonchallenge.co.uk/faqs/
+    checked: '2026-11-20'
+  - label: Fred Whitton Challenge, Entry
+    url: https://fredwhittonchallenge.co.uk/entry/
+    checked: '2026-11-20'
+  - label: Levi's GranFondo, Registration opens Friday, August 1st (2025)
+    url: https://levisgranfondo.com/dispatches/levis-granfondo-registration-2026
+    checked: '2026-11-20'
+  - label: GFNY, New to GFNY
+    url: https://gfny.com/new-to-gfny-cycling/
+    checked: '2026-11-20'
+  - label: GFNY New York, What is GFNY?
+    url: https://nyc.gfny.com/?p=160585
+    checked: '2026-11-20'
+  - label: 'road.cc, Interview: Leon Bond talks about riding ten Fred Whittons (2011)'
+    url: https://road.cc/content/news/36811-interview-leon-bond-talks-about-riding-ten-fred-whittons
+    checked: '2026-11-20'
   kit:
   - name: Cycle helmet
     why: check it fits snugly and sits level, two fingers above your eyebrows
@@ -2180,12 +2347,20 @@
   - name: Mini pump and puncture kit
     why: so a flat tyre doesn't end the ride
     url: https://www.amazon.co.uk/s?k=bike+mini+pump+puncture+repair+kit
+  - name: Bike multitool
+    why: for tightening a loose bolt or adjusting a saddle on the road
+    url: https://www.amazon.co.uk/s?k=bike+multitool
   - name: Saddle bag
     why: carries the pump, a spare tube and a snack
     url: https://www.amazon.co.uk/s?k=bike+saddle+bag
   - name: Padded cycling shorts
     why: more comfortable on rides of an hour or more
     url: https://www.amazon.co.uk/s?k=padded+cycling+shorts
+  related:
+  - join-a-cycling-club
+  - ride-london-to-brighton
+  - learn-bike-maintenance
+  - long-distance-cycle-route
 - id: masters-swimming
   title: Join a masters swimming session
   category: move
@@ -3127,24 +3302,137 @@
   why: Reels, jigs and strathspeys are danced in sets to lively music, with patterns you learn as you go. You do not need to bring a partner, and there are branches and groups in more than 50 countries.
   start:
   - Read the Royal Scottish Country Dance Society's page for newcomers.
-  - Use the branch and group finder to locate a beginners' class near you.
-  - Go along in soft, flat shoes and say it is your first time.
+  - Look on the RSCDS site for a branch or group class near you; some, such as Sheffield, let you try the first class free.
+  - Go along in soft, flat, non-slip shoes and say it is your first time.
   links:
   - label: 'RSCDS: new to Scottish country dancing'
     url: https://rscds.org/get-involved/new-scottish-country-dancing
     region: any
-    checked: '2026-10-06'
-  - label: RSCDS branch and group finder
-    url: https://rscds.org/branches
-    region: any
-    checked: '2026-10-06'
+    checked: '2026-11-20'
+  - label: 'RSCDS Sheffield: classes'
+    url: https://sites.google.com/view/rscds-sheffield/classes/general-information
+    region: uk
+    checked: '2026-11-20'
+  - label: 'RSCDS London: Euston beginners'' course'
+    url: https://www.rscdslondon.org.uk/euston-new-dancers/2026-beginners-resources
+    region: uk
+    checked: '2026-11-20'
+  - label: 'RSCDS Boston Branch: classes in Massachusetts'
+    url: https://www.rscdsboston.org/class-massachusetts.html
+    region: us
+    checked: '2026-11-20'
+  - label: 'RSCDS San Francisco Branch: FAQ for newcomers'
+    url: https://rscds-sf.org/faq/
+    region: us
+    checked: '2026-11-20'
+  seo_title: 'Scottish country dancing for beginners: what to expect'
+  description: Scottish country dancing for beginners, with reels, jigs and strathspeys explained, what shoes to wear, and real UK and US beginners' classes compared.
+  detail:
+  - h: What it is really like
+    p:
+    - Scottish country dancing is a social dance done in sets, usually of three, four or five couples, standing in two facing lines or a square. Each dance is a short sequence of formations that gives it
+      its identity, repeated to the music. Nearly every dance needs at least six people, and you usually take a new partner for each one.
+    - The Royal Scottish Country Dance Society (RSCDS), founded in Edinburgh in 1923, says there are 159 branches and more than 300 affiliated groups in over 50 countries. At RSCDS London's Euston beginners'
+      course, each class teaches several dances, and the steps and formations build week by week.
+  - h: The three dance types
+    table:
+      head:
+      - Type
+      - Time
+      - Feel
+      rows:
+      - - Reel
+        - Quick 2/4 or 4/4
+        - Fast and energetic, with a steady, driving beat; travelling figures with setting steps danced on the spot
+      - - Jig
+        - 6/8
+        - Lively and full of energy, with a light, skipping quality
+      - - Strathspey
+        - 4/4, slower than reel or jig
+        - Elegant and expressive, with the "Scotch snap" rhythm
+    after: The RSCDS calls these the three principal rhythm types.
+  - h: The honest hard parts
+    p:
+    - The RSCDS says there is more emphasis on footwork than in ceilidh dancing, and the formations can be more complex, so it takes a little time to pick up. It is good exercise, and the society notes
+      that the fitter you are, the easier it is to learn; RSCDS Sheffield says you can put in as much or as little effort as you like.
+  - h: Beginners' classes compared
+    table:
+      head:
+      - Class
+      - Where
+      - When
+      - Cost (as last listed)
+      rows:
+      - - RSCDS Sheffield beginners
+        - Bents Green Methodist Church Hall, Sheffield
+        - Mondays 6.30 to 8pm, from 28 September 2026
+        - First class free, then £5 a class (£4 RSCDS members, £2 students)
+      - - RSCDS London, Euston beginners' course
+        - Euston, central London
+        - Wednesdays, autumn course October to December 2026, with an improvers' course from January
+        - Course fee paid online; amount not shown on the page
+      - - RSCDS Boston Branch, Wee Bluets class
+        - Wonder Yoga, 240 Rantoul St, Beverly, Massachusetts (the page also gives 63 Park St for map apps, so check the address)
+        - Thursdays 7.45 to 9.30pm (the listing gives a start date of 5 September 2024, so check)
+        - $10 admission
+      - - RSCDS San Francisco Branch classes
+        - San Francisco area
+        - Varies by class
+        - First class typically free, then $4 to $10
+    after: On top of class fees, RSCDS membership started at £29 for 2025-26, with branches adding their own fee. All the Boston Branch classes welcome beginners, and none needs a partner.
+  - h: What to wear
+    list:
+    - Any comfortable shoes with a soft, non-slip sole, such as jazz or ballet shoes or canvas plimsolls (sneakers). Sheffield says trainers are fine for a first class.
+    - Later, women usually wear soft Scottish country dance pumps and men laced ghillies.
+    - Clothes you can move in; the RSCDS suggests a wide skirt or stretchy leggings, and San Francisco says comfortable casual clothes are enough.
+  faq:
+  - q: Do I need a partner for Scottish country dancing?
+    a: No. Dancers usually take a different partner for each dance, and branches including Sheffield, Boston and San Francisco say no partner is needed. You can bring one if you like.
+  - q: What shoes do you wear for Scottish country dancing?
+    a: To start, any comfortable shoes with a soft, non-slip sole, such as jazz or ballet shoes or plimsolls. Regular dancers usually move on to soft pumps or laced ghillies.
+  - q: Is Scottish country dancing the same as ceilidh dancing?
+    a: Not quite. The RSCDS says Scottish country dancing puts more emphasis on steps and footwork than ceilidh dancing, and its formations can be more complex.
+  - q: How fit do I need to be for Scottish country dancing?
+    a: No particular level is required. The RSCDS calls it excellent, healthy exercise and says the fitter you are the easier it is to learn; Sheffield's branch says you can put in as much or as little
+      effort as you like.
+  - q: What is the difference between a reel, a jig and a strathspey?
+    a: A reel is fast, in 2/4 or 4/4; a jig is lively and skipping, in 6/8; a strathspey is slower and stately, in 4/4 with the Scotch snap rhythm.
+  - q: How much do Scottish country dance classes cost?
+    a: As last listed, £5 a class in Sheffield and $4 to $10 in San Francisco, often with the first class free. RSCDS membership, from £29 for 2025-26 plus a branch fee, is a separate cost.
+  sources:
+  - label: RSCDS, Frequently asked questions
+    url: https://rscds.org/about/frequently-asked-questions
+    checked: '2026-11-20'
+  - label: RSCDS, What is Scottish country dancing?
+    url: https://rscds.org/what-scottish-country-dancing
+    checked: '2026-11-20'
+  - label: RSCDS, Types of Tunes
+    url: https://rscds.org/start-dancing/types-of-tunes/
+    checked: '2026-11-20'
+  - label: RSCDS Sheffield, General Information
+    url: https://sites.google.com/view/rscds-sheffield/classes/general-information
+    checked: '2026-11-20'
+  - label: RSCDS London, Beginners resources (Euston 2026 course)
+    url: https://www.rscdslondon.org.uk/euston-new-dancers/2026-beginners-resources
+    checked: '2026-11-20'
+  - label: Boston Branch RSCDS, Massachusetts Classes
+    url: https://www.rscdsboston.org/class-massachusetts.html
+    checked: '2026-11-20'
+  - label: RSCDS San Francisco Branch, FAQ
+    url: https://rscds-sf.org/faq/
+    checked: '2026-11-20'
   kit:
   - name: Scottish country dance shoes
-    why: soft, light ghillies made for reels and jigs
+    why: soft, light pumps or laced ghillies made for reels and jigs
     url: https://www.amazon.co.uk/s?k=scottish+country+dance+shoes+ghillies
   - name: Scottish dance music CD
     why: for practising steps and timing at home
     url: https://www.amazon.co.uk/s?k=scottish+country+dance+music+cd
+  related:
+  - go-to-a-folk-dance
+  - learn-highland-dancing
+  - take-a-ballroom-class
+  - learn-the-bagpipes
 - id: yoga-class
   title: Take a yoga class with a qualified teacher
   category: move
@@ -7275,18 +7563,205 @@
   - anywhere
   why: With nothing but flour and water you can raise a living culture of wild yeast on your kitchen counter. The first loaf it lifts feels like a small piece of alchemy.
   start:
-  - Mix flour and water to begin a starter, following a tested guide.
-  - Feed it daily until it is bubbly and doubles reliably after feeding.
+  - Mix equal weights of wholemeal flour and water in a lidded tub to begin a starter, following a tested guide.
+  - Feed it daily until it is bubbly and doubles reliably within six to eight hours of a feed.
   - Bake your first loaf with it and keep some starter back for the next.
   links:
   - label: 'Real Bread Campaign: simple sourdough starter and care guide'
     url: https://www.sustainweb.org/realbread/bake/jan19_simple_sourdough_starter/
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-20'
+  - label: 'Bread Ahead: Introduction to Sourdough Baking Workshop (London)'
+    url: https://www.breadahead.com/product/intro-to-sourdough
+    region: uk
+    checked: '2026-11-20'
+  - label: 'School of Artisan Food: Introduction to Sourdough Baking, 1 day (Nottinghamshire)'
+    url: https://schoolofartisanfood.org/courses/short-courses/baking/introduction-to-sourdough-baking-1-day
+    region: uk
+    checked: '2026-11-20'
   - label: 'King Arthur Baking: create a sourdough starter'
     url: https://www.kingarthurbaking.com/learn/guides/sourdough/create
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-20'
+  - label: 'King Arthur Baking School: Introduction to Sourdough (in person)'
+    url: https://www.kingarthurbaking.com/baking-school/classes/introduction-to-sourdough
+    region: us
+    checked: '2026-11-20'
+  - label: 'King Arthur Baking School: Sourdough for Beginners (on demand)'
+    url: https://shop.kingarthurbaking.com/classes/sourdough-for-beginners-on-demand
+    region: any
+    checked: '2026-11-20'
+  safety: King Arthur Baking says to throw a starter away if it grows mould, shows a pink or orange tint or streak, or smells putrid.
+  inspire:
+  - kind: read
+    person: Izabela Stuchlik, Stevenage
+    line: A former children's photographer who taught herself sourdough at home during the pandemic, gave her first loaves away, then opened Leavened, a sourdough microbakery in her local indoor market.
+    title: From passion to profession
+    outlet: Real Bread Campaign (Sustain)
+    url: https://www.sustainweb.org/realbread/articles/jan23-from-passion-to-profession-leavened-microbakery-izabela-stuchlik
+    checked: '2026-11-20'
+  seo_title: How to make a sourdough starter and bake your first loaf
+  description: How to make a sourdough starter day by day, the signs it is ready, the hard parts, a first-loaf timeline, and home guides versus classes compared by price.
+  detail:
+  - h: The first one to two weeks
+    p:
+    - A starter is just flour and water left to ferment, fed little and often until the wild yeasts and bacteria in it are strong enough to raise bread. The Real Bread Campaign's method is about as simple
+      as it gets. Each day, stir 30g of wholemeal rye flour and 30g of water at about 20°C (68°F) into the pot, cover it and leave it at room temperature. Nothing is thrown away.
+    - King Arthur Baking uses a different routine, with a daily discard and, from day three, two feeds a day. Both guides agree on the same thing. You are waiting for a sign, not a date.
+    table:
+      head:
+      - Stage
+      - What you do (King Arthur Baking method)
+      - What you are likely to see
+      rows:
+      - - Day 1
+        - Mix 113g (about 1 cup) wholemeal or pumpernickel flour with 113g (1/2 cup) water at 20-21°C (68-70°F); cover loosely
+        - A plain paste
+      - - Day 2
+        - Discard half, then feed 113g plain flour and 113g water
+        - No activity, or some bubbles
+      - - Day 3
+        - Keep 113g starter, discard the rest, feed 113g flour and 113g water; now twice a day, about 12 hours apart
+        - Bubbles, a fruity smell, some rise
+      - - Days 4-5
+        - Repeat the twice-daily feeds
+        - By the end of day 5, at least doubling, lots of bubbles, a pleasantly tangy smell
+      - - Day 6 onwards
+        - Keep feeding every 12 hours until it is vigorous
+        - Ready when it rises dramatically and reliably, at least doubling 6 to 8 hours after a feed
+    after: The Real Bread Campaign says its rye starter is usually ready to bake with in about four to seven days, once it is bubbling well and smells yeasty, perhaps floral. King Arthur Baking says reaching
+      its benchmark can take seven days or up to a couple of weeks, and its beginners' guide puts the range at five to 14 days depending on conditions. "Plain flour" is what US recipes call all-purpose
+      flour.
+  - h: The honest hard parts
+    list:
+    - The early smell. The Real Bread Campaign warns that in the first days the mixture may look lifeless and smell vinegary or "iffy". That is normal, and it should turn yeasty as the culture settles.
+    - A slow starter. Cold slows everything down. King Arthur Baking suggests a warmer spot if your home is below 20°C (68°F), such as on top of the fridge or a water heater, or in a turned-off oven with
+      only the light on.
+    - Hooch. A brownish liquid can collect on top as flour settles. Both guides say it is normal. King Arthur Baking says to stir it back in and feed; the Real Bread Campaign says stir it in, or pour it
+      off if the starter has been left a while, as it can turn alcoholic and slow things down.
+    - Discard. King Arthur's method has you throw away part of the starter at each feed, to keep the amount manageable and give the yeast more food. It suggests using the discard in pizza bases, pretzels,
+      waffles or cake. The Real Bread Campaign's method avoids discarding altogether.
+    - Glass jars. The Real Bread Campaign recommends a lidded plastic tub, as a glass jar could crack if a lively starter builds up pressure.
+    - A weak first loaf. King Arthur Baking suggests a recipe with a little added commercial yeast for a more reliable rise while your starter is still maturing.
+  - h: A first loaf, step by step
+    p:
+    - King Arthur Baking's Naturally Leavened Sourdough makes two round loaves (boules) from 454g ripe starter, 602g plain (all-purpose) flour, 85g wholemeal flour, 397g water and 2½ teaspoons of salt.
+      Its timings give a sense of how a baking day runs.
+    table:
+      head:
+      - Step
+      - What happens
+      - Time
+      rows:
+      - - Get the starter ready
+        - Feed the starter so it is bubbly and at its peak
+        - 6-8 hours before
+      - - Mix and rest
+        - Combine starter, flours and water, holding back the salt; cover and leave
+        - 20 minutes
+      - - Knead and first rise
+        - Add the salt, knead until smooth, leave to rise
+        - 1 hour
+      - - Fold and second rise
+        - Fold the dough like a letter, turn it and fold again; leave to rise
+        - 1 hour
+      - - Pre-shape
+        - Divide in two, round each piece, rest
+        - 20 minutes
+      - - Shape and prove
+        - Shape into tight rounds and leave until light and airy
+        - 2 to 2½ hours
+      - - Heat the oven
+        - Preheat to 232°C (450°F) with a baking stone if you have one
+        - About 60 minutes, overlapping the prove
+      - - Bake
+        - Score the tops, add steam, bake until crusty and golden
+        - 35-40 minutes
+    after: Allow most of a day once the starter is ready. King Arthur's recipe makes steam by pouring a cup of boiling water into a hot cast-iron pan below the loaves. Its beginners' guide notes that a
+      lidded pot such as a Dutch oven (a heavy cast-iron casserole) traps the dough's own steam in the same way.
+  - h: Ways to learn, compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Real Bread Campaign or King Arthur Baking online guides
+        - Free written guides to make a starter at home
+        - Free
+      - - King Arthur Baking School, Sourdough for Beginners
+        - On-demand video class with a recipe workbook, viewable for at least a year
+        - $40
+      - - Bread Ahead, Introduction to Sourdough Baking (Borough Market or Wembley, London)
+        - 3-hour workshop; you create your own starter and make a rye loaf
+        - £115
+      - - School of Artisan Food, Introduction to Sourdough Baking (Welbeck Estate, Nottinghamshire)
+        - Full day, 9.30am-4.30pm, no baking experience needed; covers creating and caring for a starter
+        - £215
+      - - Bread Ahead, Complete Sourdough Workshop (London)
+        - 6½-hour day with lunch; sourdough, rye, brown levain and baguette
+        - £240
+      - - King Arthur Baking School, Introduction to Sourdough (Vermont, Washington or Virginia)
+        - 5-hour in-person class on starter care, shaping, scoring and steam baking
+        - $170
+    after: A guide and a bag of flour is enough to start. The in-person classes above add shaping and baking under a tutor's eye, and Bread Ahead's workshops have you create your own starter in the class.
+  - h: Keeping a starter going
+    p:
+    - Once it is lively, a starter needs feeding with equal weights of flour and water each time you use some. The Real Bread Campaign suggests refreshing it the day before you bake. A looser starter ferments
+      faster than a stiff one.
+    - If you bake now and then, keep it in the fridge to slow it down. King Arthur Baking suggests a weekly feed of 113g flour and 113g water, plus a couple of feeds at room temperature a day or two before
+      baking. The Real Bread Campaign says a starter can sit in the fridge for weeks or even months; it will just need a few days of feeds to get back to full strength.
+  faq:
+  - q: How long does it take to make a sourdough starter?
+    a: The Real Bread Campaign says usually about four to seven days. King Arthur Baking says anywhere from five days to two weeks, depending on conditions such as temperature.
+  - q: How do I know when my sourdough starter is ready?
+    a: King Arthur Baking's test is that it rises dramatically and reliably, at least doubling within six to eight hours of a feed, and is very bubbly with a pleasantly tangy aroma. The Real Bread Campaign
+      looks for good bubbling and a yeasty or floral smell.
+  - q: What is the liquid on top of my sourdough starter?
+    a: Often called hooch, it collects as the flour settles, especially after a starter has been neglected. Both guides say it is normal. King Arthur Baking says to stir it back in and feed; the Real Bread
+      Campaign says stir it in, or pour it off if the starter has been left a while.
+  - q: Why is my sourdough starter not rising?
+    a: Usually it is too cold or too young. King Arthur Baking suggests moving it somewhere warmer and carrying on with regular feeds; the Real Bread Campaign says simply keep refreshing it until it bubbles.
+  - q: Do I have to throw away sourdough discard?
+    a: Not with every method. The Real Bread Campaign's starter has no discard. King Arthur Baking's does, and it suggests using the discard in pancakes, waffles, pizza or cake rather than throwing it out.
+  - q: How do I keep a sourdough starter in the fridge?
+    a: King Arthur Baking feeds a refrigerated starter once a week. Take it out the day before you bake and give it a feed or two at room temperature first.
+  sources:
+  - label: Real Bread Campaign (Sustain), Simple sourdough starter and care guide
+    url: https://www.sustainweb.org/realbread/bake/jan19_simple_sourdough_starter/
+    checked: '2026-11-20'
+  - label: King Arthur Baking, Sourdough Baking, Create
+    url: https://www.kingarthurbaking.com/learn/guides/sourdough/create
+    checked: '2026-11-20'
+  - label: King Arthur Baking, Sourdough Baking, Bake
+    url: https://www.kingarthurbaking.com/guides/sourdough/bake.html
+    checked: '2026-11-20'
+  - label: King Arthur Baking, Sourdough for beginners, everything you need to know (Rossi Anastopoulo)
+    url: https://www.kingarthurbaking.com/blog/2024/02/28/sourdough-for-beginners
+    checked: '2026-11-20'
+  - label: Bread Ahead, Introduction to Sourdough Baking Workshop
+    url: https://www.breadahead.com/product/intro-to-sourdough
+    checked: '2026-11-20'
+  - label: Bread Ahead, Complete Sourdough Workshop
+    url: https://www.breadahead.com/product/complete-sourdough
+    checked: '2026-11-20'
+  - label: The School of Artisan Food, Introduction to Sourdough Baking - 1 Day
+    url: https://schoolofartisanfood.org/courses/short-courses/baking/introduction-to-sourdough-baking-1-day
+    checked: '2026-11-20'
+  - label: King Arthur Baking School, Introduction to Sourdough
+    url: https://www.kingarthurbaking.com/baking-school/classes/introduction-to-sourdough
+    checked: '2026-11-20'
+  - label: King Arthur Baking School, Sourdough for Beginners (on-demand class)
+    url: https://shop.kingarthurbaking.com/classes/sourdough-for-beginners-on-demand
+    checked: '2026-11-20'
+  - label: Real Bread Campaign (Sustain), From passion to profession
+    url: https://www.sustainweb.org/realbread/articles/jan23-from-passion-to-profession-leavened-microbakery-izabela-stuchlik
+    checked: '2026-11-20'
+  related:
+  - take-a-bread-making-class
+  - preserve-a-seasons-fruit
+  - learn-cheesemaking
+  - brew-your-own-beer
   kit:
   - name: Proving basket (banneton)
     why: holds the dough's shape as it rises
@@ -7440,14 +7915,148 @@
   why: A structured course teaches you to taste methodically and to understand why a wine tastes as it does, from grape to climate to cellar. You finish with a recognised qualification and a much sharper
     palate.
   start:
-  - Use WSET's Where to Study finder to locate an approved course provider.
-  - Choose a level and a classroom or online course.
-  - Complete the course and sit the exam.
+  - Use WSET's course provider finder to locate an approved provider near you, or one that teaches online.
+  - Choose a level and a format, from a single day to weekly evenings or online.
+  - Complete the course and sit the exam, which is taken in person even on most online courses.
   links:
-  - label: 'WSET: where to study'
-    url: https://www.wset.co.uk/where-to-study
+  - label: 'WSET: find a course provider'
+    url: https://www.wsetglobal.com/find-a-course-provider/global-course-providers
     region: any
-    checked: '2026-10-06'
+    checked: '2026-11-20'
+  - label: 'WSET School London: Level 2 Award in Wines'
+    url: https://www.wsetglobal.com/wset-school-london/wset-courses/wset-level-2-award-in-wines
+    region: uk
+    checked: '2026-11-20'
+  - label: 'WSET School London: Level 1 Award in Wines'
+    url: https://www.wsetglobal.com/wset-school-london/wset-courses/wset-level-1-award-in-wines/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'WSET in the USA: find a course provider'
+    url: https://wsetglobal.com/usa/wset-in-the-usa
+    region: us
+    checked: '2026-11-20'
+  - label: 'International Wine Center, New York: WSET Level 2 Wines Course'
+    url: https://internationalwinecenter.com/registration/ic-2126/
+    region: us
+    checked: '2026-11-20'
+  inspire:
+  - kind: read
+    person: Candace Strickland
+    line: Moved from marketing in the music industry into wine, took WSET Levels 2 and 3, and now works as a wine writer and communicator championing English wine.
+    title: 'National Wine Careers Week: Getting Into Wine To Where I Am Now'
+    outlet: WineGB
+    url: https://winegb.co.uk/blog/national-wine-careers-week-getting-into-wine-to-where-i-am-now
+    checked: '2026-11-20'
+  seo_title: 'WSET Level 1, 2 and 3 wine courses: differences explained'
+  description: WSET Levels 1, 2 and 3 in wines compared side by side, with study hours, exam format, pass marks, entry rules and course prices in London and New York.
+  detail:
+  - h: What the course is really like
+    p:
+    - The Wine & Spirit Education Trust (WSET) sets the syllabus and the exams, but you study with one of its approved course providers, which WSET says operate in more than 80 countries. That means the
+      same qualification can be taken at its own school in London, at a wine school in New York, or online.
+    - Classes combine teaching with tasting. At Level 2 the International Wine Center in New York lists eight classes covering the major grape varieties and wine types, with nearly 50 wines tasted, and
+      every level ends in an exam. From Level 2 up, WSET also expects private study between classes.
+  - h: Levels 1, 2 and 3 side by side
+    table:
+      head:
+      - ''
+      - Level 1 Award in Wines
+      - Level 2 Award in Wines
+      - Level 3 Award in Wines
+      rows:
+      - - Who it is for
+        - Complete beginners, as a hands-on introduction
+        - Beginners wanting a wide range of wines, or those building on Level 1
+        - Those wanting to go deeper into wine
+      - - Entry requirements
+        - None
+        - None
+        - Level 2, or equivalent knowledge, recommended
+      - - Guided learning
+        - 6 hours
+        - 16 hours, plus 11 hours of private study
+        - 30 hours, plus about 51.5 to 54 hours of private study
+      - - Exam
+        - 30 multiple-choice questions, 45 minutes, closed book
+        - 50 multiple-choice questions, 1 hour, closed book
+        - 50 multiple-choice questions and four short written answers (2 hours), plus a blind tasting of two wines
+      - - Pass mark
+        - Not stated on the course page
+        - 55%
+        - 55% in each part
+      - - WSET School London, classroom (as last listed)
+        - £250
+        - £630
+        - £995
+      - - WSET School London, online (as last listed)
+        - £210
+        - £465
+        - £755
+    after: Hours and prices are from the WSET School London course pages; pass marks and the Level 3 exam detail are from WSET's published specifications (Level 2, 2019 issue; Level 3, 2022 issue), so check
+      the current specification with your provider. In the US, the International Wine Center in New York last listed its Level 2 classroom course, eight Wednesday evenings with a textbook and workbook,
+      at $998.
+  - h: How to choose a level
+    p:
+    - Level 1 is a single day, a couple of Saturdays or three evenings at WSET School London, and the school calls it fully guided. Level 2 has no entry requirements either and is also aimed at beginners,
+      so you can start there. WSET School London's page says it covers eight principal grape varieties, among them Chardonnay, Pinot Noir and Syrah/Shiraz, plus 22 other regionally important ones.
+    - Level 3 is a bigger step. On top of the multiple-choice questions there is a written paper of short answers and a blind tasting of two wines you are not told the identity of. WSET recommends Level
+      2 or equivalent knowledge first, and its 2022 specification puts the total study time at 84 hours, three times that of Level 2.
+  - h: Online or in a classroom
+    list:
+    - Formats in London run from intensive (three consecutive days at Level 2, six at Level 3) to weekly evenings or Saturdays, all at the same price for each level.
+    - Online is cheaper but longer. Level 2 online at WSET School London runs over five weeks, and you still sit the exam in person at the school. Level 3 online runs over nine weeks, with an attended tasting
+      tutorial in week two and an exam at a centre.
+    - On online courses at WSET School London the wine samples are not included, so you buy your own bottles to taste alongside the lessons.
+    - In-person courses at WSET School London include the wine samples, study materials, tuition and the exam in the price.
+  - h: Grades and results
+    p:
+    - Results arrive about four weeks after the exam. Both Level 2 and Level 3 are graded pass, pass with merit or pass with distinction. At Level 2, the 2019 specification sets merit at 70% and distinction
+      at 85%. At Level 3, the 2022 specification sets merit at 65% and distinction at 80%, and a distinction also needs no single paper below 65%.
+  faq:
+  - q: What is the difference between WSET Level 1, 2 and 3?
+    a: Mainly depth and study time. Level 1 is about 6 guided hours and a 30-question test; Level 2 is about 16 guided hours plus 11 of private study and a 50-question test; Level 3 adds a written paper
+      and a blind tasting, with around 84 hours of total study.
+  - q: Can I skip WSET Level 1 and go straight to Level 2?
+    a: Yes. WSET School London says there are no entry requirements for Level 2, which is intended for beginners as well as for people who have done Level 1.
+  - q: What is the pass mark for WSET Level 2?
+    a: 55%, on 50 multiple-choice questions in one hour, according to WSET's Level 2 specification. Merit starts at 70% and distinction at 85%.
+  - q: How much does WSET Level 2 cost?
+    a: It depends on the provider. WSET School London last listed £630 in a classroom and £465 online; the International Wine Center in New York last listed $998 for its classroom course.
+  - q: Can you do WSET Level 2 online?
+    a: Yes, with many providers. At WSET School London the online course runs over five weeks, wine samples are not included, and you sit the exam in person at the school.
+  - q: Do you have to drink the wine on a WSET course?
+    a: Tasting is part of the course, and you must be of legal drinking age to take part in it. WSET School London says not tasting does not stop you passing Level 2, but at Level 3 the specification says
+      you cannot complete the tasting unit without it.
+  sources:
+  - label: WSET School London, Level 1 Award in Wines
+    url: https://www.wsetglobal.com/wset-school-london/wset-courses/wset-level-1-award-in-wines/
+    checked: '2026-11-20'
+  - label: WSET School London, Level 2 Award in Wines
+    url: https://www.wsetglobal.com/wset-school-london/wset-courses/wset-level-2-award-in-wines
+    checked: '2026-11-20'
+  - label: WSET School London, Level 3 Award in Wines
+    url: https://wsetglobal.com/wset-school-london/wset-courses/wset-level-3-award-in-wines
+    checked: '2026-11-20'
+  - label: WSET, Level 2 Award in Wines Specification (Issue 1, 2019), hosted by a WSET course provider
+    url: https://www.adv.gr.jp/files/wset/2022_June_WSET_Lv2_specification_en.pdf
+    checked: '2026-11-20'
+  - label: WSET, Level 3 Award in Wines Specification (Issue 2, 2022), hosted by the University of Guelph
+    url: https://www.uoguelph.ca/hftm/system/files/2023%20wset_l3wines_specification_en_highres_may2022_issue2.pdf
+    checked: '2026-11-20'
+  - label: WSET, WSET in the USA (find a course provider)
+    url: https://wsetglobal.com/usa/wset-in-the-usa
+    checked: '2026-11-20'
+  - label: International Wine Center, WSET Level 2 Wines Course (IC 2126)
+    url: https://internationalwinecenter.com/registration/ic-2126/
+    checked: '2026-11-20'
+  - label: 'WineGB, National Wine Careers Week: Getting Into Wine To Where I Am Now'
+    url: https://winegb.co.uk/blog/national-wine-careers-week-getting-into-wine-to-where-i-am-now
+    checked: '2026-11-20'
+  related:
+  - tour-an-english-vineyard
+  - tour-a-whisky-distillery
+  - make-your-own-gin
+  - go-to-cookery-school
   kit:
   - name: Wine tasting glasses
     why: standard tasting glasses for comparing wines at home
@@ -101761,3 +102370,1373 @@
   - train-as-a-tourist-guide
   - guide-visitors-at-a-cathedral
   - volunteer-at-a-museum
+- id: photograph-birds-of-prey
+  title: Photograph birds of prey at a falconry centre
+  category: think
+  kind: experience
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A falconry centre's photography day puts trained owls, hawks and falcons on natural perches a few metres from your lens, then flies them across a field so you can practise catching birds in flight.
+    Sessions run from a 90-minute morning slot to a full day, and some include an eagle.
+  start:
+  - Choose between a short static session (birds on perches) and a longer day that includes birds in flight; flight work asks more of you and your camera.
+  - Read the kit notes before you book. The Falconry Centre in Hagley, for example, says phones and pocket cameras will not be suitable.
+  - Book early, pack a spare memory card and wear outdoor clothes, as most sessions are in fields and parkland.
+  links:
+  - label: 'Hawk Conservancy Trust: bird of prey photography experiences (Hampshire)'
+    url: https://www.hawk-conservancy.org/?p=31456
+    region: uk
+    checked: '2026-11-20'
+  - label: 'The Falconry Centre, Hagley: photography sessions (West Midlands)'
+    url: https://thefalconrycentre.co.uk/experiences/photography-experiences
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Leeds Castle: bird of prey photography day (Kent)'
+    url: https://www.leeds-castle.com/product/bird-of-prey-photography-day/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Carolina Raptor Center: PhotoWILD (North Carolina)'
+    url: https://carolinaraptorcenter.org/photo-wild/
+    region: us
+    checked: '2026-11-20'
+  - label: Audubon's Guide to Ethical Bird Photography and Videography
+    url: https://www.audubon.org/get-outside/audubons-guide-ethical-bird-photography
+    region: any
+    checked: '2026-11-20'
+  seo_title: 'Bird of prey photography days: UK and US options'
+  description: What happens on a bird of prey photography day, what camera you need, what UK falconry centres and a US raptor centre charge, and how to shoot ethically.
+  detail:
+  - h: What a photography day is like
+    p:
+    - Sessions are built around two kinds of picture. Static work means birds on natural perches against a rural backdrop; at Leeds Castle in Kent you can also photograph them posed in front of the castle.
+      Flight work means birds flown across a field or parkland for you to track.
+    - Formats vary a lot. The Hawk Conservancy Trust in Hampshire offers a full day, a three-hour half day and a workshop with the photographer Oliver Smart covering lighting, camera controls and composition.
+      The Falconry Centre in Hagley runs private sessions in a seven-acre field for up to ten photographers. Carolina Raptor Center's PhotoWILD is a 90-minute early-morning session with at least five perched
+      raptors and at least two free-flighted birds.
+    - The camera matters more than on most taster days. The Falconry Centre says a bridge camera or other digital camera with optical zoom is enough, as the birds are usually on static perches, but you
+      will get the most from a session with a DSLR and a range of lenses.
+  - h: Where to go and what it costs
+    table:
+      head:
+      - Provider/Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Falconry Centre, Hagley, West Midlands
+        - Private two-hour static session, or two and a half hours of static and flying including at least one eagle; up to ten photographers
+        - £250 weekdays, £300 weekends (static); £500 weekdays, £600 weekends (static and flying), per session
+      - - Leeds Castle, Kent
+        - Six-hour day with birds in flight and posed; behind-the-scenes tour and castle day ticket included; up to four people
+        - £150
+      - - Sir Harold Hillier Gardens, Hampshire (Hampshire County Council)
+        - One-day falconry photography workshop with hawks and falcons, for beginners or experienced photographers
+        - £111 per person including lunch (last run 3 October 2026)
+      - - Carolina Raptor Center, Huntersville, North Carolina
+        - 90-minute morning session, limited to 20 photographers; trail admission included
+        - $60, or $50 for members (last run September 2026)
+      - - Hawk Conservancy Trust, Hampshire
+        - Full day, three-hour half day, or a workshop with Oliver Smart
+        - See the Trust's page
+    after: The Falconry Centre's sessions are booked for the whole group, so the price is shared between up to ten photographers; it recommends booking at least ten weeks ahead and says summer weekends
+      fill fastest. Both Carolina Raptor Center dates in 2026 were listed as sold out.
+  faq:
+  - q: What camera do I need for bird of prey photography?
+    a: For perched birds, The Falconry Centre in Hagley says a bridge camera or other digital camera with optical zoom will do. For the best results, it recommends a DSLR with a variety of lenses, and says
+      phones and pocket cameras are not suitable.
+  - q: Do I need photography experience?
+    a: Not always. The Sir Harold Hillier Gardens day is described as suited to anyone with a passion for birds of prey, whether new to photography or experienced.
+  - q: Can I enter photos of captive birds in competitions?
+    a: Rules vary by competition. Audubon's ethics guide asks photographers always to say in the caption that a bird is captive and to explain its circumstances, and warns against photography game farms.
+  - q: Can I photograph wild birds of prey the same way?
+    a: Not by luring them. Audubon's guide says never to bait hawks, owls, eagles or ospreys, never to use direct flash on owls, and to keep enough distance for a bird to behave naturally.
+  sources:
+  - label: Hawk Conservancy Trust, Bird of prey photography experiences
+    url: https://www.hawk-conservancy.org/?p=31456
+    checked: '2026-11-20'
+  - label: The Falconry Centre, Hagley, Photography Sessions
+    url: https://thefalconrycentre.co.uk/experiences/photography-experiences
+    checked: '2026-11-20'
+  - label: Leeds Castle, Bird of Prey Photography Day
+    url: https://www.leeds-castle.com/product/bird-of-prey-photography-day/
+    checked: '2026-11-20'
+  - label: Hampshire County Council, Falconry Photography Day (Sir Harold Hillier Gardens)
+    url: https://www.hants.gov.uk/thingstodo/hilliergardens/whatson/Falconry-Oct26
+    checked: '2026-11-20'
+  - label: Carolina Raptor Center, PhotoWILD
+    url: https://carolinaraptorcenter.org/photo-wild/
+    checked: '2026-11-20'
+  - label: National Audubon Society, Audubon's Guide to Ethical Bird Photography and Videography
+    url: https://www.audubon.org/get-outside/audubons-guide-ethical-bird-photography
+    checked: '2026-11-20'
+  kit:
+  - name: Spare camera memory card
+    why: a day of flight shots fills a card fast
+    url: https://www.amazon.co.uk/s?k=camera+memory+card
+  - name: Camera rain cover
+    why: keeps the camera dry in an open field
+    url: https://www.amazon.co.uk/s?k=camera+rain+cover
+  - name: Camera monopod
+    why: takes the weight of a long lens between flights
+    url: https://www.amazon.co.uk/s?k=camera+monopod
+  related:
+  - fly-a-hawk-at-a-falconry-centre
+  - take-a-photography-course
+  - learn-photo-editing
+  - watch-the-hawk-migration-at-hawk-mountain
+- id: busk-with-an-instrument
+  title: Busk in the street with your instrument
+  category: connect
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Playing on a street corner turns practice into a performance for whoever happens to walk past, and some of them will stop, listen and drop a coin in the case. The catch is that every city sets its
+    own rules, from no licence at all in Edinburgh to a two-year permit in Chicago.
+  start:
+  - Look up your council's or city's busking page before you play; search for the council name and "busking".
+  - Note the hours, how long you can stay on one pitch, and whether amplifiers, drums or groups need a licence.
+  - Pick a short set you can play without music, and start somewhere you will not block a doorway or a cash machine.
+  links:
+  - label: 'Westminster City Council: apply for a busking and street entertainment licence'
+    url: https://westminster.gov.uk/licensing/apply-busking-and-street-entertainment-licence/busking-licence-fees
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Camden Council: busking licence'
+    url: https://www.camden.gov.uk/en/busking-licence
+    region: uk
+    checked: '2026-11-20'
+  - label: 'City of Edinburgh Council: busking'
+    url: https://www.edinburgh.gov.uk/licences-permits/busking
+    region: uk
+    checked: '2026-11-20'
+  - label: 'City of Chicago: street peddlers and performers'
+    url: https://www.chicago.gov/city/en/depts/bacp/supp_info/streetpeddlersandperformers.html
+    region: us
+    checked: '2026-11-20'
+  - label: MTA Music (New York subway performance programme)
+    url: https://www.mta.info/agency/arts-design/music
+    region: us
+    checked: '2026-11-20'
+  seo_title: 'Busking rules and licences: London, Edinburgh, Chicago, NYC'
+  description: Do you need a licence to busk? The rules, fees and hours in Westminster, Camden, Edinburgh, Chicago and the New York subway, from the official pages.
+  detail:
+  - h: The rules depend on where you stand
+    p:
+    - There is no single busking law. In London, rules are set borough by borough. Westminster issues a busking and street entertainment licence to perform in its regulated areas. Next door in Camden, you
+      need a licence only if you use an amplifier, play drums or wind instruments other than flutes and recorders, use dangerous equipment, play outside 10am to 9pm or perform as a group of three or more;
+      anyone busking there is still covered by the council's street entertainment policy.
+    - Edinburgh's council says you do not need a licence to busk, but asks you to play between 9am and 9pm, at a volume that does not disturb businesses and residents, to move at least 50 metres (about
+      55 yards) after an hour, and to stop if someone complains or Police Scotland asks you to.
+    - In the US, Chicago requires a street performer licence for each performer, which also covers peddling (street selling). Performing is allowed on sidewalks, parkways and playgrounds but not on CTA
+      or Metra transit platforms and stations. In New York, the MTA says you do not need to be part of its MTA Music programme to play in the subway, and points performers to section 1050.6 of its Rules
+      of Conduct.
+  - h: Licences and fees compared
+    table:
+      head:
+      - Where
+      - What you need
+      - Cost (as last listed)
+      rows:
+      - - Westminster, London
+        - Busking and street entertainment licence to perform in regulated areas
+        - £10 for one month or £20 for six months; students pay half
+      - - Camden, London
+        - Licence only for amplifiers, drums, most wind instruments, groups of three or more, dangerous equipment or hours outside 10am to 9pm; takes at least 20 days to approve
+        - £150 for 24 months
+      - - Edinburgh
+        - No licence; code of practice on hours, volume and moving pitch
+        - Free
+      - - Chicago
+        - Street peddler and performer licence for each performer, 18 or over; performances 10am to 8pm Sunday to Thursday, to 10pm Friday and Saturday
+        - $100 for two years; reduced fee for some groups
+      - - New York subway (MTA Music)
+        - Optional programme for scheduled spots, chosen by online application and spring auditions; members are not paid but may collect donations
+        - No fee mentioned
+    after: Camden asks licensed buskers to display their licence at all times when performing. MTA Music said there were no auditions scheduled when we checked.
+  faq:
+  - q: Do you need a licence to busk in the UK?
+    a: It depends on the council. Edinburgh says you do not need one; Westminster issues licences for its regulated areas; Camden requires one only for amplifiers, drums and most wind instruments, groups
+      of three or more, or busking outside 10am to 9pm.
+  - q: How long can you busk in one spot?
+    a: Edinburgh asks buskers to move at least 50 metres to another pitch after one hour, and not to set up within 50 metres of another busker. Other places set their own limits, so check the local page.
+  - q: Can I busk in the New York subway?
+    a: The MTA says you do not need to be in its MTA Music programme to play in the subway, and refers performers to section 1050.6 of its Rules of Conduct. MTA Music members get scheduled performances,
+      chosen through auditions usually held in spring.
+  - q: Can I busk on the London Underground?
+    a: Camden's page directs anyone wanting to perform on the Underground to Transport for London's busking scheme, which is separate from council licences.
+  sources:
+  - label: Westminster City Council, Apply for a busking and street entertainment licence (fees)
+    url: https://westminster.gov.uk/licensing/apply-busking-and-street-entertainment-licence/busking-licence-fees
+    checked: '2026-11-20'
+  - label: Camden Council, Busking licence
+    url: https://www.camden.gov.uk/en/busking-licence
+    checked: '2026-11-20'
+  - label: The City of Edinburgh Council, Busking
+    url: https://www.edinburgh.gov.uk/licences-permits/busking
+    checked: '2026-11-20'
+  - label: City of Chicago, Street Peddlers and Performers
+    url: https://www.chicago.gov/city/en/depts/bacp/supp_info/streetpeddlersandperformers.html
+    checked: '2026-11-20'
+  - label: MTA, MTA Music
+    url: https://www.mta.info/agency/arts-design/music
+    checked: '2026-11-20'
+  - label: MTA, Call for Performers, Auditions Frequently Asked Questions
+    url: https://www.mta.info/document/158536
+    checked: '2026-11-20'
+  kit:
+  - name: Folding music stand
+    why: holds a set list or music on the pavement
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  - name: Battery busking amplifier
+    why: for places that allow amplification; Camden needs a licence for one
+    url: https://www.amazon.co.uk/s?k=battery+busking+amplifier
+  - name: Contactless card reader
+    why: lets passers-by tip without cash
+    url: https://www.amazon.co.uk/s?k=contactless+card+reader
+  related:
+  - play-one-piece-for-someone
+  - learn-the-guitar
+  - learn-the-ukulele
+  - join-community-orchestra-or-band
+- id: take-a-cookery-holiday-in-italy
+  title: Take a cookery holiday in Italy
+  category: eat
+  kind: experience
+  effort: gentle
+  cost: high
+  time: days
+  setting: indoors
+  company: others
+  regions:
+  - world
+  why: Rolling out a sheet of egg pasta in a Romagna kitchen, or cooking four lessons in a Tuscan villa and eating what you made, teaches dishes you can take home. The choice runs from a three-hour class
+    to a full week with the room, the wine and the day trips arranged.
+  start:
+  - Decide between a single class on a trip you are already taking and a residential week where accommodation, meals and lessons come as one package.
+  - Read what the price covers. Flights are usually extra, and some weeks leave a lunch or dinner to you.
+  - Check the deposit and balance dates before you book, and your passport dates against the UK or US government advice for Italy.
+  links:
+  - label: 'Discover Cervia: Traditional egg pasta, practical course at Casa Artusi (Forlimpopoli)'
+    url: https://www.discovercervia.com/en/esperienze-e-pacchetti/esperienze/traditional-egg-pasta-practical-course-at-casa-artusi
+    region: any
+    checked: '2026-11-20'
+  - label: 'Organic Tuscany Cooking Classes: prices and calendar (Certaldo, Tuscany)'
+    url: https://organictuscany.org/prices-cooking-holidays/
+    region: any
+    checked: '2026-11-20'
+  - label: 'Flavours Holidays: all-inclusive activity holidays in Italy (Edinburgh-based operator)'
+    url: https://www.flavoursholidays.co.uk/all-inclusive-holidays/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Road Scholar: Cooking, Culture & Countryside in Tuscany'
+    url: https://www.roadscholar.org/find-an-adventure/19672/cooking-in-tuscany/dates
+    region: us
+    checked: '2026-11-20'
+  seo_title: 'Cookery holidays in Italy: classes, weeks and prices'
+  description: From a three-hour pasta class at Casa Artusi to a week in a Tuscan villa, what Italian cookery holidays include, what they cost and how to book.
+  detail:
+  - h: What you actually do
+    p:
+    - At Casa Artusi in Forlimpopoli, the three-hour egg pasta course is led by a tutor from the Mariette Association. Each person rolls out their own sheet of pasta by hand and learns shapes such as tagliatelle
+      and cappelletti, with a guided tour and an apron to take home.
+    - A residential week is a different thing. Organic Tuscany Cooking Classes, near Certaldo, runs Saturday-to-Saturday weeks in a 19th-century villa, with four hands-on classes taught in English, each
+      followed by a lunch or dinner, plus a winery visit, tastings and a guided walk in Florence.
+    - UK operators sell the week as a package. Flavours Holidays, based in Edinburgh, describes itself as an ATOL bonded tour operator; its all-inclusive price covers meals and wine, tuition, excursions
+      and airport transfers, and you book your own flights. It says it never charges a single room supplement.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider / Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Casa Artusi, Forlimpopoli (Emilia-Romagna), via Discover Cervia
+        - Three-hour practical egg pasta course; minimum two people; booking required
+        - €78 per person for 1-4 people, €72 for 5-9 (the page header also shows 'from €100'; confirm when booking)
+      - - Organic Tuscany Cooking Classes, Certaldo (Tuscany)
+        - Seven nights in a villa, four cooking classes, most meals, wine, tours
+        - €2,500 per person sharing (2026 table); non-cooking guest €1,900; single room +€900
+      - - Flavours Holidays (UK operator)
+        - All-inclusive holiday; meals, wine, tuition, excursions and transfers; flights booked separately
+        - Price not shown on the pages opened; no single supplement
+      - - Road Scholar (US not-for-profit), based in Lucca
+        - Ten days, nine nights; 19 meals, field trips and four hands-on experiences; group leader
+        - From 4,299 per person sharing (Dec 2027 departure); flights extra
+    after: Organic Tuscany takes a non-refundable 25% deposit with the balance due 120 days before departure, and its 2027 weeks run from May to early October. Road Scholar lists departures from March to
+      December 2027.
+  faq:
+  - q: How much does a cooking holiday in Italy cost?
+    a: A single class at Casa Artusi was last listed at €72-78 a head. A week at Organic Tuscany Cooking Classes was €2,500 per person sharing, without flights.
+  - q: Are flights included in Italian cookery holidays?
+    a: Not in the examples here. Organic Tuscany, Flavours Holidays and Road Scholar all leave flights out of the price, though Road Scholar can add airfare as an option.
+  - q: Can I go on a cooking holiday on my own?
+    a: Yes. Flavours Holidays says it charges no single supplement; Organic Tuscany charges €900 extra for a private room.
+  - q: Do I need a visa to go on a cookery holiday in Italy?
+    a: Not for a short trip. The UK government says British visitors can stay in the Schengen area for up to 90 days in any 180, and the US State Department says US citizens can enter Italy for up to 90
+      days without a visa; both set passport rules worth checking first.
+  sources:
+  - label: Discover Cervia, Traditional egg pasta - Practical Course at Casa Artusi
+    url: https://www.discovercervia.com/en/esperienze-e-pacchetti/esperienze/traditional-egg-pasta-practical-course-at-casa-artusi
+    checked: '2026-11-20'
+  - label: Organic Tuscany Cooking Classes, Prices and calendar
+    url: https://organictuscany.org/prices-cooking-holidays/
+    checked: '2026-11-20'
+  - label: Flavours Holidays, Cooking, Painting, Pilates, Language & Photography Holidays
+    url: https://www.flavoursholidays.co.uk/?p=22111
+    checked: '2026-11-20'
+  - label: Flavours Holidays, All-inclusive holidays
+    url: https://www.flavoursholidays.co.uk/all-inclusive-holidays/
+    checked: '2026-11-20'
+  - label: Road Scholar, Cooking, Culture & Countryside in Tuscany (program 19672)
+    url: https://www.roadscholar.org/find-an-adventure/19672/cooking-in-tuscany/dates
+    checked: '2026-11-20'
+  - label: GOV.UK, Entry requirements - Italy travel advice
+    url: https://gov.uk/foreign-travel-advice/italy/entry-requirements
+    checked: '2026-11-20'
+  - label: U.S. Department of State, Travel advisory - Italian Republic
+    url: https://travel.state.gov/en/international-travel/travel-advisories/italy.html
+    checked: '2026-11-20'
+  kit:
+  - name: Italian cookbook
+    why: to cook the dishes again at home after the class
+    url: https://www.amazon.co.uk/s?k=italian+regional+cookbook
+  - name: Pasta rolling pin
+    why: a long, thin pin for rolling egg pasta by hand
+    url: https://www.amazon.co.uk/s?k=pasta+rolling+pin+long
+  related:
+  - learn-to-make-pasta
+  - go-to-cookery-school
+  - go-on-a-food-walking-tour
+  - wset-wine-course
+- id: learn-italian-before-a-trip
+  title: Learn enough Italian for a trip
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: weeks
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Ordering lunch, asking the time and getting the formal and informal forms right makes a trip to Italy feel different. A short beginners' course covers exactly those situations, in a classroom or
+    online.
+  start:
+  - Choose a course for complete beginners, or one aimed at travellers, that starts a couple of months before you go.
+  - Check the format (in person, online or both), the number of sessions and whether the fee depends on age or income.
+  - Book early; institute courses run in fixed intakes and enrolment opens months ahead.
+  links:
+  - label: 'City Lit: Italian courses (London and online)'
+    url: https://www.citylit.ac.uk/courses/languages/european/italian
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Istituto Italiano di Cultura di Londra: Italian language courses'
+    url: https://iiclondra.esteri.it/en/lingua-e-cultura/i-corsi-di-lingua/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Istituto Italiano di Cultura di New York: language courses (with IACE)'
+    url: https://iicnewyork.esteri.it/en/?p=82
+    region: us
+    checked: '2026-11-20'
+  - label: 'Portland Community College: Italian for Travelers (online)'
+    url: https://www.pcc.edu/schedule/fall/lan/9lan615f/
+    region: us
+    checked: '2026-11-20'
+  seo_title: 'Italian for beginners: courses before a trip to Italy'
+  description: Beginners' and travellers' Italian courses in London, New York and online, what they cover, how long they run and what they cost as last listed.
+  detail:
+  - h: What a beginners' course covers
+    p:
+    - City Lit's Italian beginners module 1 is for complete beginners and is based on the first four chapters of the textbook Nuovo Espresso 1. It covers greetings, introductions, spelling, numbers and
+      the time, with the verbs to be, to have and to go, the present tense and formal and informal address.
+    - Courses aimed at travellers are shorter and more practical. Portland Community College's Italian for Travelers teaches basic expressions for common situations on a trip, plus tips on Italian travel
+      and culture.
+    - The Italian Cultural Institutes in London and New York follow the Common European Framework of Reference for Languages (CEFR), and absolute beginners start at A1.1. City Lit groups its courses as
+      beginners, some experience and advanced, across seven levels, and does not give CEFR levels.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider / Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London (Keeley Street and online)
+        - 'Italian beginners at a gentle pace: module 1, online from 11 January 2027; also a short online Italian taster'
+        - £239 full, £191 senior, £155 concession (gentle-pace module 1, January 2027); taster £19
+      - - Istituto Italiano di Cultura, London
+        - Elementary (A1.1 upwards), 2 hours a week for 18 weeks, in Westminster or on Zoom; intakes in September and February
+        - £550 for Elementary
+      - - Istituto Italiano di Cultura, New York, with IACE
+        - A1.1 Absolute Beginner; 10-week sessions (5 in summer), one 1 hr 25 min class a week, online or in person
+        - Fees on the IACE site, not on the institute page
+      - - Portland Community College, Oregon
+        - Italian for Travelers, online with scheduled Wednesday evening meetings; autumn 2026 term, ending 25 November 2026, so check for the next term
+        - $115 tuition, no fees
+    after: The London institute's February 2027 intake runs from the week of 22 February to the week of 12 July 2027, with enrolment expected to open towards the end of 2026. City Lit's Italian rapidamente
+      course moves faster and suits people who already speak another Romance language or want a faster pace.
+  faq:
+  - q: How long does it take to learn basic Italian for a holiday?
+    a: Beginners' courses are short. City Lit's first module runs for nine to twelve weekly sessions, and the New York institute's sessions last ten weeks.
+  - q: What is A1 in Italian?
+    a: It is the first level of the Common European Framework of Reference for Languages, which the Italian Cultural Institutes in London and New York use. Absolute beginners start at A1.1.
+  - q: Can I learn Italian online?
+    a: Yes. City Lit, the London and New York Italian Cultural Institutes and Portland Community College all offer online classes.
+  - q: Do I need any Italian to start a beginners' course?
+    a: No. City Lit says its beginners' course needs no previous knowledge of Italian.
+  sources:
+  - label: City Lit, Learn Italian
+    url: https://www.citylit.ac.uk/courses/languages/european/italian
+    checked: '2026-11-20'
+  - label: 'City Lit, Italian beginners: module 1'
+    url: https://www.citylit.ac.uk/courses/italian-beginners-module-1/ln001-2526
+    checked: '2026-11-20'
+  - label: Istituto Italiano di Cultura di Londra, Italian language courses
+    url: https://iiclondra.esteri.it/en/lingua-e-cultura/i-corsi-di-lingua/
+    checked: '2026-11-20'
+  - label: Istituto Italiano di Cultura di New York, Language courses
+    url: https://iicnewyork.esteri.it/en/?p=82
+    checked: '2026-11-20'
+  - label: Portland Community College, Italian for Travelers
+    url: https://www.pcc.edu/schedule/fall/lan/9lan615f/
+    checked: '2026-11-20'
+  kit:
+  - name: Italian phrasebook
+    why: for menus, directions and polite phrases on the trip
+    url: https://www.amazon.co.uk/s?k=italian+phrasebook
+  - name: Nuovo Espresso 1
+    why: the textbook City Lit's beginners' course is based on
+    url: https://www.amazon.co.uk/s?k=nuovo+espresso+1
+  related:
+  - learn-a-language-to-b1
+  - join-a-language-exchange
+  - see-carnival-in-venice
+  - walk-the-streets-of-pompeii
+- id: visit-the-colosseum-and-roman-forum
+  title: Walk through the Colosseum and the Roman Forum
+  category: travel
+  kind: experience
+  effort: moderate
+  cost: low
+  time: days
+  setting: either
+  company: either
+  regions:
+  - world
+  why: Standing on the arena floor of the Colosseum, then walking down the Roman Forum and up the Palatine Hill, puts ancient Rome's arena, law courts and palaces within a single ticket. The official park
+    sells several tickets, from the standard first-tier ticket to the arena, the underground and the attic.
+  start:
+  - Choose a ticket on the official Parco archeologico del Colosseo site; the standard 24-hour ticket does not include the arena floor.
+  - Book a timed Colosseum entry online when sales open, and carry the ID that matches the name on the ticket.
+  - Plan the Roman Forum and Palatine for the same or the next day; the ticket allows one entry to each area.
+  links:
+  - label: 'Parco archeologico del Colosseo: opening times and tickets'
+    url: https://colosseo.it/en/opening-times-and-tickets/
+    region: any
+    checked: '2026-11-20'
+  - label: 'GOV.UK: Italy travel advice, entry requirements'
+    url: https://gov.uk/foreign-travel-advice/italy/entry-requirements
+    region: uk
+    checked: '2026-11-20'
+  - label: 'U.S. Department of State: Italy travel advisory'
+    url: https://travel.state.gov/en/international-travel/travel-advisories/italy.html
+    region: us
+    checked: '2026-11-20'
+  seo_title: 'Colosseum tickets explained: arena, underground, Forum'
+  description: Which Colosseum and Roman Forum ticket to buy, what each includes, prices as last listed, timed entry, ID rules and the free first Sunday.
+  detail:
+  - h: How the tickets work
+    p:
+    - Each Colosseum ticket combines one entry to the Colosseum with one entry to the Roman Forum and Palatine Hill. The Colosseum entry is at a booked time that cannot be changed, and the park asks you
+      to arrive ten minutes early; the Forum and Palatine have no time slot.
+    - Tickets are issued in the holder's name and you must show valid ID at the entrances. For visits from 9 May 2026 the name can be changed only once, up to midnight seven days before, and only for reasons
+      the park lists. A receipt on your phone is enough; there is no need to print.
+    - Sales open 30 days ahead for the standard and underground tickets, and seven days ahead for the Full Experience Arena ticket. On Full Experience tickets you have 90 minutes inside the Colosseum, and
+      the Only Arena ticket gives 20 minutes on the arena floor.
+    - Entry is free on the first Sunday of every month and on 25 April, 2 June and 4 November. Free tickets cannot be booked and are handed out first come, first served at the Piazza del Colosseo ticket
+      office.
+  - h: Ticket options compared
+    table:
+      head:
+      - Ticket
+      - What it includes
+      - Cost (as last listed)
+      rows:
+      - - 24h Colosseum, Roman Forum and Palatine
+        - Timed entry to the Colosseum's first tier and viewpoints, not the arena; Forum, Palatine and Imperial Fora within 24 hours
+        - €16 full; €2 reduced; €2 booking fee
+      - - 24h Only Arena
+        - 20 minutes on the arena floor at the booked time; Forum and Palatine within 24 hours either side
+        - €18 full; €2 reduced (EU citizens 18-25); €11.50 with Roma Pass
+      - - Full Experience Arena
+        - Colosseum first and second levels, arena and museum; Forum, Palatine and extra sites; valid two consecutive days
+        - €24 full; €2 reduced (EU citizens 18-25)
+      - - Full Experience Underground and Arena
+        - As above plus the underground, subject to availability; valid two consecutive days
+        - €24 full; €32 with an educational tour; €2 reduced (EU citizens 18-25)
+    after: The park also sells a Full Experience Attic ticket with a panoramic lift and a Forum Pass SUPER that leaves out the Colosseum. From 25 October 2026 to 28 February 2027 the Colosseum opens at
+      8.30am and the Roman Forum and Palatine at 9am; everything closes at 4.30pm, with last admission at 3.30pm, and the park is closed on 25 December and 1 January.
+  faq:
+  - q: How much is a ticket to the Colosseum?
+    a: The standard 24-hour ticket for the Colosseum, Roman Forum and Palatine was last listed at €16 plus a €2 booking fee. Tickets including the arena floor were €18 to €24.
+  - q: Does the standard Colosseum ticket include the arena floor?
+    a: No. The official site says the 24h Colosseum, Roman Forum and Palatine ticket does not include the arena; choose Only Arena or a Full Experience ticket.
+  - q: Is the Colosseum free on the first Sunday of the month?
+    a: Yes. Entry is free on the first Sunday of each month, with tickets given out first come, first served at the Piazza del Colosseo ticket office; they cannot be booked.
+  - q: Do I need ID to visit the Colosseum?
+    a: Yes. Tickets are in the holder's name and valid ID must be shown at the entrances.
+  sources:
+  - label: Parco archeologico del Colosseo, Opening times and tickets
+    url: https://colosseo.it/en/opening-times-and-tickets/
+    checked: '2026-11-20'
+  - label: Parco archeologico del Colosseo, 24h Colosseum, Roman Forum and Palatine
+    url: https://colosseo.it/en/tickets/24h-colosseum-roman-forum-and-palatine/
+    checked: '2026-11-20'
+  - label: Parco archeologico del Colosseo, 24h Only Arena
+    url: https://colosseo.it/en/tickets/24h-only-arena/
+    checked: '2026-11-20'
+  - label: Parco archeologico del Colosseo, Full Experience Arena
+    url: https://colosseo.it/en/tickets/full-experience-arena/
+    checked: '2026-11-20'
+  - label: Parco archeologico del Colosseo, Full Experience Underground and Arena
+    url: https://colosseo.it/en/tickets/full-experience-underground-arena
+    checked: '2026-11-20'
+  - label: GOV.UK, Entry requirements - Italy travel advice
+    url: https://gov.uk/foreign-travel-advice/italy/entry-requirements
+    checked: '2026-11-20'
+  - label: U.S. Department of State, Travel advisory - Italian Republic
+    url: https://travel.state.gov/en/international-travel/travel-advisories/italy.html
+    checked: '2026-11-20'
+  kit:
+  - name: Comfortable walking shoes
+    why: for the uneven paths of the Forum and the climb up the Palatine
+    url: https://www.amazon.co.uk/s?k=comfortable+walking+shoes
+  - name: Ancient Rome guidebook
+    why: maps and plans to make sense of the ruins as you walk
+    url: https://www.amazon.co.uk/s?k=ancient+rome+guidebook
+  - name: Refillable water bottle
+    why: for a long day between the Colosseum and the Forum
+    url: https://www.amazon.co.uk/s?k=refillable+water+bottle
+  related:
+  - walk-the-streets-of-pompeii
+  - join-an-archaeology-dig
+  - walk-hadrians-wall-path
+  - see-carnival-in-venice
+- id: go-alpaca-walking
+  title: Go alpaca walking on a farm
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Alpacas were never bred to carry loads the way llamas were, but they take to a halter, and walking one across a field on a lead is an easy, absorbing way to spend an hour. Farms in the UK and US
+    run small guided walks, usually with an introduction and often a chance to feed the herd.
+  start:
+  - Look for an alpaca farm near you that runs guided walks, and book ahead.
+  - Check the farm's age rules, group size and what happens if the weather is bad.
+  - Wear wellies (rubber boots) or walking boots and long trousers, and leave the dog at home.
+  links:
+  - label: 'Spring Farm Alpacas, Fletching, East Sussex: alpaca walking'
+    url: https://www.farmstay.co.uk/things_to_do/864/alpaca_walking_at_spring_farm_alpacas
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Almond Valley, Livingston, West Lothian: alpaca experiences and walks'
+    url: https://almondvalley.co.uk/experiences/alpaca_walks/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'British Alpaca Society: about alpacas'
+    url: https://bas-uk.com/about-alpacas-2/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Outlaw Farm Alpacas: alpaca walks (US)'
+    url: https://openherd.com/pages/10432/outlaw-farm-alpacas-llc-alpaca-walks
+    region: us
+    checked: '2026-11-20'
+  - label: 'Crimson Skye Farm: walk an alpaca (US)'
+    url: https://openherd.com/pages/10045/crimson-skye-farm-walk-an-alpaca
+    region: us
+    checked: '2026-11-20'
+  seo_title: 'Alpaca walking: what to expect and where to book'
+  description: What an alpaca walk on a farm involves, how long it lasts, what to wear, age rules and prices at UK and US farms, and how it differs from llama trekking.
+  detail:
+  - h: Alpacas or llamas?
+    p:
+    - The British Alpaca Society points out that alpacas are the one domesticated camelid not traditionally used as a beast of burden. Unlike llamas, they have not been bred over thousands of years for
+      trekking, but they can easily be halter trained and people enjoy walking with them.
+    - So an alpaca walk is a short, gentle stroll on a lead, often around the farm's own fields, rather than a trek with a pack animal. The society says alpaca trekking in the UK began with one breeder
+      in Chichester around 2006, and that trekking farms usually use males, and need enough of them to rest between walks, because not every alpaca walks well with visitors.
+    - At Spring Farm Alpacas in East Sussex the walk covers about a mile (1.6 km) of uneven fields and takes about 50 minutes, with around two hours allowed for the whole visit, including an introduction
+      and feeding. The two US farms below run 30-minute walks.
+  - h: Alpaca walks compared
+    table:
+      head:
+      - Farm
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Spring Farm Alpacas, Fletching, East Sussex
+        - About 50 minutes and a mile of fields; over-12s walk alone, 8 to 12s with an adult; book ahead, 50% deposit
+        - £25 per alpaca walked; £10 per companion not walking one
+      - - Almond Valley, Livingston, West Lothian
+        - One-hour alpaca experience walking round the cropping field; online booking only
+        - Not listed on the page; see booking
+      - - Outlaw Farm Alpacas, US
+        - About 30 minutes; 12 and over walk alone, 8 to 12 with an adult holding a second lead; groups of 1 to 8
+        - $25 per person
+      - - Crimson Skye Farm, US
+        - 30 minutes; one walker per alpaca, up to three at a time; not suited to children under 10
+        - $25 per person, paid when booking
+    after: Spring Farm asks for wellies or walking boots and long trousers, and advises against very bright colours or loose, flapping clothing. Outlaw Farm asks for closed-toe shoes such as boots, with
+      no flip-flops or sandals. Neither farm allows visiting dogs.
+  faq:
+  - q: What is the difference between alpaca walking and llama trekking?
+    a: Llamas were bred to carry loads, while the British Alpaca Society says alpacas were not. An alpaca walk is usually a shorter stroll on a lead around a farm.
+  - q: How long is an alpaca walk?
+    a: It varies by farm. Spring Farm Alpacas in East Sussex walks about a mile in 50 minutes; the two US farms listed here run 30-minute walks.
+  - q: What should I wear for alpaca walking?
+    a: Sturdy, closed-toe footwear such as wellies or walking boots, long trousers and clothes for the weather. Spring Farm also asks visitors to avoid very bright or flapping clothes.
+  - q: Can I go alpaca walking on my own?
+    a: Usually, but check. Spring Farm needs at least two alpacas on a walk and groups single walkers with others; Outlaw Farm sends a member of staff with solo walkers, as its alpacas are never walked
+      alone.
+  sources:
+  - label: Farmstay UK, Alpaca walking at Spring Farm Alpacas
+    url: https://www.farmstay.co.uk/things_to_do/864/alpaca_walking_at_spring_farm_alpacas
+    checked: '2026-11-20'
+  - label: Almond Valley, Alpaca Experiences and Walks at Almond Valley
+    url: https://almondvalley.co.uk/experiences/alpaca_walks/
+    checked: '2026-11-20'
+  - label: British Alpaca Society, About Alpacas
+    url: https://bas-uk.com/about-alpacas-2/
+    checked: '2026-11-20'
+  - label: OpenHerd, Outlaw Farm Alpacas, Alpaca Walks
+    url: https://openherd.com/pages/10432/outlaw-farm-alpacas-llc-alpaca-walks
+    checked: '2026-11-20'
+  - label: OpenHerd, Crimson Skye Farm, Walk An Alpaca
+    url: https://openherd.com/pages/10045/crimson-skye-farm-walk-an-alpaca
+    checked: '2026-11-20'
+  kit:
+  - name: Wellington boots
+    why: for muddy, uneven farm fields
+    url: https://www.amazon.co.uk/s?k=wellington+boots
+  - name: Waterproof walking boots
+    why: closed-toe footwear that farms ask for
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+boots
+  related:
+  - go-llama-trekking
+  - horse-riding-lesson
+  - watch-a-sheepdog-trial
+  - foster-a-rescue-animal
+- id: train-your-gundog
+  title: Train your dog as a gundog
+  category: explore
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Gundog training channels what spaniels, retrievers and pointing breeds were bred for into controlled retrieving and hunting work, starting with basic obedience. You can work through graded tests
+    and friendly competitions with canvas dummies, and pet gundogs are welcome on the UK's main graded scheme.
+  start:
+  - Find a gundog class or an accredited instructor near you; in the UK, look at The Gundog Club's graded scheme, and in the US, an AKC hunting test club.
+  - Get the basics solid first, sit, stay, come and heel, which the AKC says are needed early on.
+  - 'Go along and watch before you enter: AKC hunt tests are free for spectators, and in the UK the Royal Kennel Club suggests joining a field trial society or gundog club and going to a training day first.'
+  links:
+  - label: 'The Gundog Club: National Graded Training Scheme'
+    url: https://thegundogclub.co.uk/student-portal/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'The Royal Kennel Club: beginner''s guide to field trials and gundog working tests (PDF)'
+    url: https://www.royalkennelclub.com/media/rz1gca24/beginners_fieldtrials_flyer_2022.pdf
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Nuneaton Dog Training Club: Gundog Beginner class'
+    url: https://nuneaton-dog-training-club.cademy.io/gundog-level-0-1
+    region: uk
+    checked: '2026-11-20'
+  - label: 'American Kennel Club: get started in retriever hunting tests'
+    url: https://www.akc.org/sports/retrievers/hunting-tests/join/
+    region: us
+    checked: '2026-11-20'
+  - label: 'Marin Retriever Club, California: join us'
+    url: https://marinretrieverclub.wildapricot.org/join-us
+    region: us
+    checked: '2026-11-20'
+  seo_title: 'Gundog training for beginners: classes, grades and tests'
+  description: How to start training your dog as a gundog, from The Gundog Club grades and Kennel Club working tests to AKC hunt tests, with classes and costs.
+  detail:
+  - h: The ladders you can climb
+    p:
+    - In the UK, The Gundog Club runs a National Graded Training Scheme of five grades, from Grade One (Beginner) to Grade Four (Proficient) and Grade Five, an advanced certificate. At the end of each grade
+      the dog and handler take a non-competitive field test. The club says pet owners can work through the first two or three grades simply to enjoy a well-controlled dog outdoors, and that its field tests
+      need no pedigree papers.
+    - Gundog working tests are friendly competitions run by gundog clubs and field trial societies, usually for their own members. The Royal Kennel Club's beginner's guide says they use dummies and do not
+      involve shooting live game, and cover spaniels, retrievers and hunt, point and retrieve breeds. To compete under its rules a dog must be on the club's Breed Register as a pure-bred gundog, and the
+      guide says most dogs are not ready to compete for at least two years. The Royal Kennel Club's own national working test has been discontinued, but registered societies still hold theirs.
+    - In the US, the American Kennel Club's retriever hunting tests have three levels, Junior, Senior and Master. At Junior level a dog makes four retrieves of birds, two on land and two from water, up
+      to 100 yards (about 90 m), and is scored on marking, style, perseverance and trainability; four passes earn the Junior Hunter title. Dogs must be of an eligible breed, AKC registered and at least
+      six months old.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Gundog Club, UK
+        - Five graded levels with a non-competitive field test at each; accredited instructors across the UK
+        - Not listed; ask your instructor
+      - - Nuneaton Dog Training Club, Warwickshire
+        - Gundog Beginner, one-hour group sessions for pets and working dogs of all gundog and gundog-cross breeds with little or no experience
+        - £4 a session; club membership needed to book
+      - - Gundog clubs and field trial societies, UK
+        - Members' working tests with dummies for spaniels, retrievers and HPR breeds; Kennel Club-registered pure-bred gundogs
+        - Club membership plus entry fees; varies
+      - - American Kennel Club hunting test clubs, US
+        - Junior, Senior and Master hunt tests for retrievers; clubs may run training days and fun days for newcomers
+        - Entry fee per dog, set in each event's premium list; free to watch
+      - - Marin Retriever Club, California
+        - Working club with training days and hunt tests, open to any AKC-registered retriever breed
+        - $50 first-year individual membership; $75 family
+    after: Use The Gundog Club's register of accredited instructors, the Royal Kennel Club's Find a Club service, or AKC Club Search (choose Hunting Test club and your state) to find a class near you.
+  faq:
+  - q: Can a pet dog do gundog training?
+    a: Yes. The Gundog Club welcomes pet gundogs and says pet owners can work through its first grades for control and fun outdoors, and Nuneaton Dog Training Club's beginner class is open to pets and working
+      dogs.
+  - q: Do gundog working tests involve shooting?
+    a: No. The Royal Kennel Club says working tests use dummies and do not involve shooting live game.
+  - q: How long does it take to train a gundog?
+    a: It takes time. The Royal Kennel Club's beginner's guide says most dogs are not ready for competition for at least two years.
+  - q: Does my dog need to be a pedigree to do gundog training?
+    a: Not for everything. The Gundog Club's field tests need no pedigree papers, but Royal Kennel Club working tests and AKC hunting tests are for registered dogs of eligible breeds.
+  sources:
+  - label: The Gundog Club, The Gundog Club National Graded Training Scheme
+    url: https://thegundogclub.co.uk/student-portal/
+    checked: '2026-11-20'
+  - label: The Royal Kennel Club, Beginner's guide to field trials and gundog working tests
+    url: https://www.royalkennelclub.com/media/rz1gca24/beginners_fieldtrials_flyer_2022.pdf
+    checked: '2026-11-20'
+  - label: The Royal Kennel Club, Kennel Club Gundog working tests
+    url: https://www.royalkennelclub.com/activities/heritage-sports/field-trials-and-working-gundogs/already-competing-in-field-trials/royal-kennel-club-gundog-working-tests/
+    checked: '2026-11-20'
+  - label: Nuneaton Dog Training Club, Gundog Beginner
+    url: https://nuneaton-dog-training-club.cademy.io/gundog-level-0-1
+    checked: '2026-11-20'
+  - label: American Kennel Club, Join In The Fun
+    url: https://www.akc.org/sports/retrievers/hunting-tests/join/
+    checked: '2026-11-20'
+  - label: Marin Retriever Club, Join us
+    url: https://marinretrieverclub.wildapricot.org/join-us
+    checked: '2026-11-20'
+  kit:
+  - name: Gundog whistle
+    why: for stop and recall signals at a distance
+    url: https://www.amazon.co.uk/s?k=gundog+whistle+210.5
+  - name: Canvas training dummy
+    why: the standard thing to retrieve in training and working tests
+    url: https://www.amazon.co.uk/s?k=gundog+training+dummy
+  - name: Slip lead
+    why: the quick on-and-off lead used at gundog training
+    url: https://www.amazon.co.uk/s?k=gundog+slip+lead
+  related:
+  - try-dog-agility-with-your-dog
+  - watch-a-sheepdog-trial
+  - try-canicross
+  - volunteer-with-your-dog
+- id: volunteer-at-a-donkey-sanctuary
+  title: Volunteer at a donkey sanctuary
+  category: connect
+  kind: habit
+  effort: moderate
+  cost: free
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Donkey sanctuaries need people to groom and keep company with the animals, welcome visitors, lay hedges and look after the land. Roles are regular, often a morning or an afternoon a week, and the
+    hands-on donkey work comes with proper training first.
+  start:
+  - Look at the current volunteer roles on The Donkey Sanctuary's opportunities page, or the volunteer page of a donkey rescue near you, and sign up for alerts.
+  - Pick a role you can commit to every week, since the sanctuary does not take short-term hands-on volunteers.
+  - Have proof of your right to volunteer ready, such as a passport, and allow for an induction. The sanctuary's pages describe anything from one day in person plus online training to four days for donkey-facing
+    roles, so check the role.
+  links:
+  - label: 'The Donkey Sanctuary: volunteer'
+    url: https://thedonkeysanctuary.org.uk/volunteer
+    region: uk
+    checked: '2026-11-20'
+  - label: 'The Donkey Sanctuary: volunteering roles and questions'
+    url: https://jobs.thedonkeysanctuary.org.uk/jobs/volunteers
+    region: uk
+    checked: '2026-11-20'
+  - label: 'The Donkey Sanctuary: Wildlife and Conservation Volunteer, Sidmouth'
+    url: https://jobs.thedonkeysanctuary.org.uk/jobs/vacancy/volunteer-role---wildlife-and-conservation-volunteer-2000/2018/description/
+    region: uk
+    checked: '2026-11-20'
+  - label: Peaceful Valley Donkey Rescue, San Angelo, Texas
+    url: https://donkeyrescue.org/
+    region: us
+    checked: '2026-11-20'
+  - label: 'Peaceful Valley Donkey Rescue: Satellite Adoption Center volunteers'
+    url: https://donkeyrescue.org/?p=173
+    region: us
+    checked: '2026-11-20'
+  seo_title: 'Volunteer at a donkey sanctuary: roles and how to apply'
+  description: Volunteer roles at The Donkey Sanctuary in Devon and Peaceful Valley Donkey Rescue in Texas, with weekly commitment, induction and how to apply.
+  detail:
+  - h: What volunteers do
+    p:
+    - The Donkey Sanctuary, based at Sidmouth in Devon, lists donkey-facing roles, such as spending time with donkeys who need extra contact and helping those preparing for rehoming, as well as visitor
+      welcome, seasonal shop work, conservation and occasional office projects. Its Quality Time Volunteers spend time with the donkeys after training.
+    - The sanctuary's scheme is built for long-term, regular volunteers, ideally a morning or an afternoon each week, and it does not support short-term hands-on volunteering. Its pages describe the induction
+      differently. The volunteering roles page gives a minimum of two days, and four days for donkey-facing roles, including practical donkey care. The main volunteer page describes a one-day in-person
+      induction followed by online courses and on-site training. Check the role you apply for. There is no waiting list, so roles must be applied for as they are advertised.
+    - The sanctuary's pages give different minimum ages, 16 for some roles and 18 for others, so check the role you want.
+  - h: Roles and places compared
+    table:
+      head:
+      - Where
+      - Role
+      - Commitment (as last listed)
+      rows:
+      - - The Donkey Sanctuary, Sidmouth, Devon
+        - Donkey-facing and Quality Time Volunteer roles
+        - Ideally a morning or afternoon a week; induction length varies by page, so check the role
+      - - The Donkey Sanctuary, Sidmouth, Devon
+        - Wildlife and Conservation Volunteer, from hedge laying and tree planting to butterfly surveys and nest boxes
+        - One or two days a week, usually Wednesday and Thursday, 10am to 4pm
+      - - The Donkey Sanctuary, Sidmouth, Devon
+        - Visitor engagement and tours, shop and kitchen, with some weekend shifts
+        - Varies by role; seasonal roles at times
+      - - Peaceful Valley Donkey Rescue, San Angelo, Texas
+        - Hands-on volunteering at the rescue; sign up online
+        - Not listed on the main page
+      - - Peaceful Valley Donkey Rescue, across the US
+        - Running a Satellite Adoption Center for donkeys, after application, interview and possibly up to six months of fostering
+        - About 25 hours a week
+    after: Volunteers also help grooms with resident donkeys and mules at the sanctuary's Town Barton site, and keep donkeys company at Paccombe Farm in Devon. Peaceful Valley Donkey Rescue says it has
+      4,255 donkeys in its direct care and a nationwide network of ranches and satellite adoption centres.
+  faq:
+  - q: How old do you have to be to volunteer at The Donkey Sanctuary?
+    a: At least 16, and 18 for some roles. The sanctuary's main volunteer page says it cannot accept volunteers under 18, so check the role's details.
+  - q: Can I volunteer at The Donkey Sanctuary for a week on holiday?
+    a: Not with the donkeys. The sanctuary says it cannot support short-term hands-on volunteering and asks for regular weekly time, though seasonal roles and short office projects come up occasionally.
+  - q: Do I need experience with donkeys to volunteer?
+    a: No. The Donkey Sanctuary trains its volunteers, though its pages give different induction lengths. One says four days for donkey-facing roles, including practical donkey care; another describes one
+      day in person plus online and on-site training. Check the role.
+  - q: How do I apply to volunteer at The Donkey Sanctuary?
+    a: Apply for a specific role on its current opportunities page and follow the instructions. There is no waiting list, so check back regularly or sign up for alerts.
+  sources:
+  - label: The Donkey Sanctuary, Volunteer
+    url: https://thedonkeysanctuary.org.uk/volunteer
+    checked: '2026-11-20'
+  - label: The Donkey Sanctuary, Volunteers
+    url: https://jobs.thedonkeysanctuary.org.uk/jobs/volunteers
+    checked: '2026-11-20'
+  - label: The Donkey Sanctuary, Volunteer Role - Wildlife and Conservation Volunteer
+    url: https://jobs.thedonkeysanctuary.org.uk/jobs/vacancy/volunteer-role---wildlife-and-conservation-volunteer-2000/2018/description/
+    checked: '2026-11-20'
+  - label: The Donkey Sanctuary, Volunteer power helps Dobbin through tricky recovery
+    url: https://www.thedonkeysanctuary.org.uk/articles/volunteer-power-helps-dobbin-through-tricky-recovery
+    checked: '2026-11-20'
+  - label: Peaceful Valley Donkey Rescue, home page
+    url: https://donkeyrescue.org/
+    checked: '2026-11-20'
+  - label: Peaceful Valley Donkey Rescue, Satellite Adoption Center
+    url: https://donkeyrescue.org/?p=173
+    checked: '2026-11-20'
+  inspire:
+  - kind: read
+    person: Gill, volunteer at The Donkey Sanctuary
+    line: Has volunteered weekly with The Donkey Sanctuary since 2011 and spent many days grooming and keeping company with a donkey called Dobbin at Paccombe Farm during his recovery.
+    title: Volunteer power helps Dobbin through tricky recovery
+    outlet: The Donkey Sanctuary
+    url: https://www.thedonkeysanctuary.org.uk/articles/volunteer-power-helps-dobbin-through-tricky-recovery
+    checked: '2026-11-20'
+  kit:
+  - name: Wellington boots
+    why: for yards, paddocks and muddy fields
+    url: https://www.amazon.co.uk/s?k=wellington+boots
+  - name: Work gloves
+    why: for hedge laying, coppicing and other conservation tasks
+    url: https://www.amazon.co.uk/s?k=gardening+work+gloves
+  related:
+  - volunteer-at-a-zoo
+  - volunteer-at-a-wildlife-hospital
+  - foster-a-rescue-animal
+  - walk-dogs-at-a-dogs-trust-centre
+- id: start-collecting-vinyl-records
+  title: Start a vinyl record collection
+  category: think
+  kind: project
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Flicking through crates in an independent shop or a record fair is half the pleasure, and every sleeve has a story. Learning to judge a record's condition before you pay turns browsing into a skill,
+    and stops you bringing home a scratched copy.
+  start:
+  - Find your nearest independent record shop with the Record Store Day store locator, in the UK or the US.
+  - Go to a record fair, where many sellers gather under one roof; VIP Record Fairs have held fairs in London and Norwich, and WFMU holds an annual fair in Brooklyn, New York.
+  - Learn the standard condition grades (Mint, Near Mint, VG+ and so on) from Discogs' grading guide before you buy second-hand.
+  links:
+  - label: 'Record Store Day UK: FAQ and store locator'
+    url: https://www.recordstoreday.co.uk/faq
+    region: uk
+    checked: '2026-11-20'
+  - label: 'VIP Record Fairs: past London fair listing (January 2026)'
+    url: https://www.eventbrite.co.uk/e/londons-biggest-record-fair-fast-track-tickets-tickets-1976588687974
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Record Store Day (US): RSD Black Friday FAQ'
+    url: https://recordstoreday.com/CustomPage/1210
+    region: us
+    checked: '2026-11-20'
+  - label: 'Discogs: How to grade items'
+    url: https://www.discogs.com/selling/resources/how-to-grade-items/
+    region: any
+    checked: '2026-11-20'
+  seo_title: 'How to start a vinyl record collection: where to buy'
+  description: Where to buy vinyl records in the UK and US, from independent shops and Record Store Day to record fairs, and how to judge a record's condition.
+  detail:
+  - h: Where to buy records
+    table:
+      head:
+      - Where
+      - What to expect
+      - Cost (as last listed)
+      rows:
+      - - Independent record shop (Record Store Day UK)
+        - Around 300 independent shops in the UK and Ireland take part in Record Store Day each April; its exclusive releases are sold in shops only, first come, first served, and queueing outside is part
+          of the tradition
+        - Shop prices
+      - - Independent record shop (Record Store Day, US)
+        - Stores taking part in RSD Black Friday are independent and choose for themselves whether to join in and which releases to carry; the store search covers US stores only
+        - Shop prices
+      - - 'Record fair: VIP Record Fairs, England'
+        - VIP Record Fairs have held fairs at venues such as the Royal Horticultural Halls in London and The Forum in Norwich, with fast-track tickets sold in advance; the Norwich listing promised "loads
+          of sellers"
+        - Not shown on the listings we opened
+      - - 'Record fair: WFMU Record Fair, Brooklyn, New York'
+        - An annual three-day fair at the Brooklyn Expo Center, with 28,000 square feet (about 2,600 square metres) of records, 45s, CDs, books and collectibles
+        - $8, or $30 early on the Friday (as reported by AnalogPlanet; check the fair's page)
+    after: Record Store Day UK says shops cannot reserve or pre-sell its releases, and any leftover stock may go online from the following week.
+  - h: How to judge a record's condition
+    p:
+    - Second-hand records are graded on the Goldmine standard, which Discogs uses. Mint means absolutely perfect in every way, and Discogs says the grade should be used sparingly; Near Mint means nearly
+      perfect with no audible or visible flaws.
+    - Very Good Plus (VG+) shows light handling wear but plays without affecting the sound. At Very Good (VG) you will hear surface noise, especially in quiet passages. Good and Good Plus records play through
+      without skipping but with plenty of noise, and Fair or Poor copies may be cracked, warped or skip.
+    - Discogs tells sellers to inspect the surface under a bright light held close, then play the record in full. The record and the sleeve are graded separately, so a Near Mint disc can come in a VG cover.
+  faq:
+  - q: When is Record Store Day?
+    a: Record Store Day UK takes place each April; the 2026 event was on Saturday 18 April, and the next date is announced on its website.
+  - q: Can I buy Record Store Day releases online?
+    a: Not on the day in the UK. Record Store Day UK says its exclusive releases are sold only in participating shops on the day, and shops may sell leftover stock online from the following week.
+  - q: What does VG+ mean on a record?
+    a: Very Good Plus. Discogs describes it as a record that shows light handling and cosmetic wear but plays without the sound being affected.
+  - q: Should I buy a record graded Mint?
+    a: Be wary. Discogs advises sellers to use Mint sparingly, for copies that are absolutely perfect in every way, and notes that many dealers will not grade above Near Mint.
+  sources:
+  - label: Record Store Day UK, FAQ
+    url: https://www.recordstoreday.co.uk/faq
+    checked: '2026-11-20'
+  - label: Record Store Day, The Black Friday FAQ
+    url: https://recordstoreday.com/CustomPage/1210
+    checked: '2026-11-20'
+  - label: VIP Record Fairs Limited, London's Biggest Record fair (Eventbrite)
+    url: https://www.eventbrite.co.uk/e/londons-biggest-record-fair-fast-track-tickets-tickets-1976588687974
+    checked: '2026-11-20'
+  - label: VIP Record Fairs Limited, Biggest Record fairs hit Norwich (Eventbrite)
+    url: https://www.eventbrite.co.uk/e/biggest-record-fairs-hit-norwich-fast-track-ticket-tickets-1752978619239
+    checked: '2026-11-20'
+  - label: AnalogPlanet, The Annual WFMU Record Fair Is This Weekend!
+    url: https://www.analogplanet.com/node/122728
+    checked: '2026-11-20'
+  - label: 'Discogs, How to Grade Items: Determine the Condition of Records'
+    url: https://www.discogs.com/selling/resources/how-to-grade-items/
+    checked: '2026-11-20'
+  kit:
+  - name: Record cleaning brush
+    why: for lifting dust off the surface before you play a record
+    url: https://www.amazon.co.uk/s?k=vinyl+record+cleaning+brush
+  - name: Anti-static inner sleeves
+    why: to replace worn paper sleeves on second-hand records
+    url: https://www.amazon.co.uk/s?k=anti+static+inner+record+sleeves
+  - name: LP storage box
+    why: to keep records upright and out of the dust
+    url: https://www.amazon.co.uk/s?k=vinyl+lp+storage+box
+  related:
+  - start-collecting-coins
+  - learn-to-dj
+  - browse-a-rare-book-fair
+- id: go-to-an-antiques-fair
+  title: Browse an antiques fair and bid at an auction
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  why: A big antiques fair is a day of rummaging through stall after stall, where the next table might hold anything from a clock to a chair. Bidding at a saleroom is the other half of the hunt, and it
+    is far less mysterious once you know how the buyer's premium works.
+  start:
+  - Pick a big fair, such as the International Antiques and Collectors Fair at Newark Showground in Nottinghamshire, or one of the Brimfield shows in Massachusetts; go early, as the organisers advise.
+  - Read a local auction house's buying page before the sale, and register with ID; at Pook & Pook in Pennsylvania you bring a driver's licence and a credit card.
+  - View the lots in person if you can, and work out the full price, hammer plus buyer's premium, before you bid.
+  links:
+  - label: 'IACF: Newark International Antiques Fair'
+    url: https://www.iacf.co.uk/?p=11
+    region: uk
+    checked: '2026-11-20'
+  - label: 'BADA: The BADA Standard'
+    url: https://www.bada.org/bada-standard
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Gildings: Buying with Gildings'
+    url: https://www.gildings.co.uk/buying-with-gildings
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Boston.com: What to know before you go to Brimfield Antique Flea Market'
+    url: https://www.boston.com/travel/new-england-travel/2026/09/11/what-to-know-before-you-go-to-brimfield-antique-flea-market/
+    region: us
+    checked: '2026-11-20'
+  - label: 'Pook & Pook: Buying information'
+    url: https://pookandpook.com/buying/buying-information
+    region: us
+    checked: '2026-11-20'
+  seo_title: 'Antiques fairs and auctions: a first-timer''s guide'
+  description: Visit a big antiques fair such as Newark or Brimfield, then bid at auction with confidence, with entry prices and the buyer's premium explained.
+  detail:
+  - h: Big fairs and how to buy
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - IACF Newark International Antiques Fair, Newark Showground, Nottinghamshire
+        - Up to 1,500 stands; six fairs a year, each over a Thursday and Friday
+        - £20 for Thursday (includes Friday); £6 for Friday only; free parking; accompanied under-16s free
+      - - Brimfield Antique Flea Market, Brimfield, Massachusetts
+        - More than 20 independently run shows across 150 acres (about 60 hectares), three times a year in May, July and September
+        - Some shows free, others typically $5 to $10; parking $10 to $20, cash only
+      - - Gildings, auction house (saleroom at Great Bowden Road, LE16)
+        - Online catalogues, viewing days and live online bidding; register with ID first
+        - Buyer's premium 28.8% of the hammer price including VAT (minimum £8), plus 3.6% for bidding live through Gildings' website or 5.94% through the-saleroom.com
+      - - Pook & Pook, auction house, Downingtown, Pennsylvania
+        - Bid in person, by absentee bid, by phone, on PookLive or through Bidsquare or Invaluable
+        - Buyer's premium 27% in-house; other platforms set their own, so check before bidding
+    after: The buyer's premium is added to the hammer price. Gildings gives the example of a £100 hammer price costing £128.80 in total.
+  - h: Buying with confidence
+    p:
+    - At Newark, the organisers' advice is simple; the earlier you come, the more dealers you will see. At Brimfield, Boston.com suggests comfortable shoes and layers for a day on pavement, grass and dirt,
+      and cash, since some vendors take nothing else and card machines can fail on busy days. Some vendors will haggle and some will not.
+    - In a shop or gallery, the British Antique Dealers' Association (BADA) says its members are vetted and elected, follow a code of conduct, and that disputes with a customer can go to its free arbitration
+      service.
+    - At auction, read the condition terms. Pook & Pook gives a limited guarantee on its Americana sales, but sells decorative arts and online-only lots as is, and notes that wear from age may not be mentioned
+      in a condition report.
+  faq:
+  - q: What is a buyer's premium at auction?
+    a: A percentage added to the hammer price. Gildings lists 28.8% including VAT, and Pook & Pook lists 27% in-house; online bidding can add a surcharge or a different rate.
+  - q: How much does it cost to get into Newark antiques fair?
+    a: As last listed, £20 for the Thursday, which also covers Friday, or £6 for Friday only, with free parking.
+  - q: When is the Brimfield antiques show?
+    a: Three times a year, in May, July and September, in Brimfield, Massachusetts. Check the dates before you travel.
+  - q: Do I need to register to bid at an auction?
+    a: Yes. Gildings asks all bidders to register an account with valid ID, and Pook & Pook asks for a driver's licence and a major credit card.
+  sources:
+  - label: IACF, Newark International Antiques Fair - Nottinghamshire, UK
+    url: https://www.iacf.co.uk/?p=11
+    checked: '2026-11-20'
+  - label: British Antique Dealers' Association, The BADA Standard
+    url: https://www.bada.org/bada-standard
+    checked: '2026-11-20'
+  - label: Gildings, Buying with Gildings
+    url: https://www.gildings.co.uk/buying-with-gildings
+    checked: '2026-11-20'
+  - label: Boston.com, What to know before you go to Brimfield Antique Flea Market (Kristi Palma, 11 September 2026)
+    url: https://www.boston.com/travel/new-england-travel/2026/09/11/what-to-know-before-you-go-to-brimfield-antique-flea-market/
+    checked: '2026-11-20'
+  - label: Pook & Pook, Buying information
+    url: https://pookandpook.com/buying/buying-information
+    checked: '2026-11-20'
+  kit:
+  - name: Jeweller's loupe
+    why: for reading hallmarks and makers' marks on a stall
+    url: https://www.amazon.co.uk/s?k=jewellers+loupe+magnifier
+  - name: Folding shopping trolley
+    why: for carrying finds round a large fair
+    url: https://www.amazon.co.uk/s?k=folding+shopping+trolley
+  - name: Tape measure
+    why: to check a piece will fit at home before you buy
+    url: https://www.amazon.co.uk/s?k=pocket+tape+measure
+  related:
+  - browse-a-rare-book-fair
+  - start-collecting-coins
+  - learn-to-upholster-a-chair
+  - learn-clock-repair
+- id: visit-an-air-museum
+  title: See historic aircraft up close at an air museum
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Air museums let you stand beneath Second World War fighters, and some offer time in a Spitfire cockpit (RAF Museum London's was closed for refurbishment when we checked) or let you walk through Air
+    Force One. Several large collections on both sides of the Atlantic are free to enter.
+  start:
+  - Choose a museum; RAF Museum London and RAF Museum Midlands at Cosford are free; London recommends booking ahead, and Cosford takes free online bookings.
+  - Check the experiences page for cockpit sessions and simulators, which are usually paid extras and can close for refurbishment.
+  - Allow at least half a day; IWM Duxford recommends that much for a visit.
+  links:
+  - label: 'RAF Museum London: Aviation experiences'
+    url: https://www.rafmuseum.org.uk/london/things-to-see-and-do/experiences/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'RAF Museum Midlands: Plan your visit'
+    url: https://www.rafmuseum.org.uk/midlands/plan-your-day/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'IWM Duxford: Book tickets'
+    url: https://www.iwm.org.uk/visits/iwm-duxford/booking
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Smithsonian National Air and Space Museum: Udvar-Hazy Center, what to expect'
+    url: https://airandspace.si.edu/visit/udvar-hazy-center/visiting-tips
+    region: us
+    checked: '2026-11-20'
+  - label: 'National Museum of the US Air Force: Hours and admission'
+    url: https://www.nationalmuseum.af.mil/Visit/Hours-and-Admission/
+    region: us
+    checked: '2026-11-20'
+  seo_title: 'Air museums to visit: Duxford, RAF Museum and more'
+  description: Free and paid air museums in the UK and US, from the RAF Museum and IWM Duxford to the Udvar-Hazy Center, with prices and cockpit experiences.
+  detail:
+  - h: Air museums compared
+    table:
+      head:
+      - Museum
+      - What you can see or sit in
+      - Cost (as last listed)
+      rows:
+      - - RAF Museum London
+        - 'Spitfire Experience: 10 minutes in the cockpit of a Second World War Spitfire (temporarily closed for refurbishment); 4D theatre and a Eurofighter Typhoon motion simulator'
+        - Entry free (booking recommended); Spitfire Experience £30; simulator or 4D film £5 a ride
+      - - RAF Museum Midlands, Cosford
+        - Free museum site, with experiences listed separately on its website (some have age limits)
+        - Entry free; car parking £7.50 for up to seven hours
+      - - IWM Duxford
+        - Aircraft in every hangar, the American Air Museum (included in admission) and recreated Second World War rooms such as the pilots' briefing room
+        - Adult £26.80, or £29.50 with donation; concessions £24.10 (1 October 2026 to 31 March 2027)
+      - - Smithsonian Udvar-Hazy Center, Chantilly, Virginia
+        - More than 3,000 aviation and space objects in two hangars, simulator rides and an observation tower over Washington Dulles airport
+        - Entry free; parking $15, free after 4pm
+      - - National Museum of the US Air Force, Dayton, Ohio
+        - Walk through four presidential aircraft, including a VC-137C Air Force One, and three cargo aircraft; climb aboard the space shuttle exhibit
+        - Entry free; theatre and flight simulators charged separately
+  - h: Getting more from a visit
+    p:
+    - Cockpit sessions are the closest most visitors get to flying the real thing, but they are small and can close. At RAF Museum London the Spitfire Experience is open to ages 8 and over and is temporarily
+      closed for refurbishment, so check before you go.
+    - At the National Museum of the US Air Force, the presidential gallery holds ten aircraft, four of which you can walk through, including the Sacred Cow and Columbine III. The museum is open 9am to 5pm
+      daily, except Thanksgiving, Christmas and New Year's Day.
+    - IWM Duxford offers £3 tickets for up to five members of a household to UK residents on Universal Credit, Pension Credit and other named benefits; these must be booked online in advance.
+  faq:
+  - q: Is the RAF Museum free?
+    a: Yes. RAF Museum London says entry is free but recommends booking in advance, and RAF Museum Midlands says admission to all areas is free; parking at Cosford is charged.
+  - q: Can you sit in a Spitfire cockpit?
+    a: RAF Museum London's Spitfire Experience offers ten minutes in the cockpit for £30 as last listed, but it was temporarily closed for refurbishment when we checked.
+  - q: How much does it cost to park at the Udvar-Hazy Center?
+    a: As last listed, $15, and free after 4pm. Entry to the museum itself is free.
+  - q: Can you go inside Air Force One at the Air Force museum?
+    a: Yes. The National Museum of the US Air Force says visitors can walk through four presidential aircraft, including the VC-137C Air Force One.
+  sources:
+  - label: RAF Museum, Aviation Experiences (London)
+    url: https://www.rafmuseum.org.uk/london/things-to-see-and-do/experiences/
+    checked: '2026-11-20'
+  - label: RAF Museum, Plan Your Visit Midlands
+    url: https://www.rafmuseum.org.uk/midlands/plan-your-day/
+    checked: '2026-11-20'
+  - label: Imperial War Museums, IWM Duxford - Book Tickets Online
+    url: https://www.iwm.org.uk/visits/iwm-duxford/booking
+    checked: '2026-11-20'
+  - label: Imperial War Museums, IWM Duxford
+    url: https://www.iwm.org.uk/visits/iwm-duxford
+    checked: '2026-11-20'
+  - label: Smithsonian National Air and Space Museum, Udvar-Hazy Center, What to Expect
+    url: https://airandspace.si.edu/visit/udvar-hazy-center/visiting-tips
+    checked: '2026-11-20'
+  - label: National Museum of the USAF, Hours and Admission
+    url: https://www.nationalmuseum.af.mil/Visit/Hours-and-Admission/
+    checked: '2026-11-20'
+  - label: National Museum of the USAF, Frequently Asked Questions
+    url: https://www.nationalmuseum.af.mil/Visit/Questions/
+    checked: '2026-11-20'
+  kit:
+  - name: Aircraft recognition guide
+    why: for putting names to the aircraft in the hangars
+    url: https://www.amazon.co.uk/s?k=aircraft+recognition+guide
+  - name: Small rucksack
+    why: for water and a coat on a long day in large hangars
+    url: https://www.amazon.co.uk/s?k=small+daypack+rucksack
+  related:
+  - fly-in-a-spitfire
+  - take-a-flying-lesson
+  - visit-all-smithsonian-museums
+  - try-gliding
+- id: stay-in-a-lighthouse-cottage
+  title: Stay in a lighthouse keeper's cottage
+  category: travel
+  kind: experience
+  effort: gentle
+  cost: mid
+  time: days
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  why: The cottages built for lighthouse keepers sit right beside the light, on clifftops and islands, and many are now holiday lets. In the US you can go a step further and act as keeper yourself, showing
+    visitors round in return for your stay.
+  start:
+  - Browse the Trinity House list of 32 cottages at 12 lighthouses in England and Wales; bookings go through Rural Retreats.
+  - Look at the National Trust's keepers' cottages at Foreland Point in Devon and Souter in Tyne and Wear, or the Landmark Trust's Old Light Cottage on Lundy.
+  - For a keeper stay in the US, start with the United States Lighthouse Society's accommodation list, then contact the lighthouse group directly.
+  links:
+  - label: 'Trinity House: Lighthouse holiday cottages'
+    url: https://trinityhouse.co.uk/lighthouse-cottages
+    region: uk
+    checked: '2026-11-20'
+  - label: 'National Trust: Lighthouse holiday cottages'
+    url: https://www.nationaltrust.org.uk/holiday-lists/lighthouse-holiday-cottages
+    region: uk
+    checked: '2026-11-20'
+  - label: 'Landmark Trust: Old Light Cottage, Lundy'
+    url: https://www.landmarktrust.org.uk/properties/old-light-cottage/
+    region: uk
+    checked: '2026-11-20'
+  - label: 'United States Lighthouse Society: Lighthouse accommodations'
+    url: https://uslhs.org/node/264
+    region: us
+    checked: '2026-11-20'
+  - label: 'American Lighthouse Foundation: Race Point Lighthouse overnight stays'
+    url: https://www.lighthousefoundation.org/news/what-we-do/programs/overnight-programs/rpl-overnight/
+    region: us
+    checked: '2026-11-20'
+  seo_title: Lighthouse cottages to rent in the UK and US
+  description: Where to stay in a lighthouse keeper's cottage, from Trinity House, National Trust and Landmark Trust lets to US volunteer keeper stays, with prices.
+  detail:
+  - h: Where to stay
+    table:
+      head:
+      - Provider / where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Trinity House, 12 lighthouses in England and Wales, including Lizard, Whitby and St Catherine's on the Isle of Wight
+        - 32 self-catering cottages, booked through Rural Retreats
+        - Not shown on the Trinity House pages; ask Rural Retreats
+      - - National Trust, Foreland Point (Devon) and Souter (Tyne and Wear)
+        - Self-catering keepers' cottages; Foreland sleeps 10, the two Souter cottages sleep four each and take dogs
+        - Not shown on the list page
+      - - Landmark Trust, Old Light Cottage, Lundy
+        - A one-person cottage, once the keepers' store, reached by boat in summer or helicopter in winter
+        - Not shown on the page; travel is extra
+      - - Borden Flats Lighthouse, Fall River, Massachusetts
+        - Overnight keeper stays with light duties; closed January to March
+        - From $549 a night for up to two keepers
+      - - New Dungeness Light Station, Sequim, Washington
+        - Week-long stays sharing keeper duties such as raising the flag and giving tours
+        - $470 per adult per week, plus membership ($35 a person or $50 a family)
+      - - Pottawatomie Lighthouse, Rock Island, Wisconsin
+        - Week-long volunteer stays giving tours and selling merchandise, late May to mid-October
+        - Free; apply through Friends of Rock Island
+    after: US prices are as given in Smithsonian Magazine's article on overnight keeper programmes; confirm with each lighthouse group before you book.
+  - h: Holiday let or keeper's stay
+    p:
+    - The United States Lighthouse Society says it lists stays in 14 states and Canada, of five kinds. There are bed and breakfasts, holiday rentals with no keeper duties, and hostels. A fee-paying keeper
+      stay may involve guiding tours or light maintenance. Volunteer host keepers get free lodging, often an RV hookup or small flat, in return for heavier duties.
+    - Some places take effort to reach. Race Point Lighthouse sits 2 miles (about 3 km) out over the dunes of Cape Cod National Seashore, and volunteers from the American Lighthouse Foundation's Cape Cod
+      Chapter drive guests in by four-wheel drive. Lundy is reached by the MS Oldenburg from Bideford or Ilfracombe in summer, or by a seven-minute helicopter flight from Hartland Point in winter.
+    - Trinity House describes itself as a charity dedicated to safeguarding shipping and seafarers, with a statutory duty as a General Lighthouse Authority. Its Lizard cottages stand at the southernmost
+      tip of mainland Britain, a quarter of a mile (400 metres) from Lizard village.
+  faq:
+  - q: Can you stay in a lighthouse in the UK?
+    a: Yes. Trinity House lets 32 cottages at 12 lighthouses through Rural Retreats, and the National Trust and Landmark Trust have keepers' cottages too.
+  - q: Can you be a lighthouse keeper for a week?
+    a: In the US, yes. Programmes such as New Dungeness in Washington and Pottawatomie in Wisconsin take keepers for a week at a time, sharing tours and chores.
+  - q: How much does it cost to stay in a lighthouse?
+    a: It varies. As last listed in Smithsonian Magazine, Borden Flats starts at $549 a night for up to two, New Dungeness charges $470 an adult a week, and Pottawatomie is free for volunteers.
+  - q: Can I take my dog to a lighthouse cottage?
+    a: Sometimes. The National Trust's two cottages at Souter welcome dogs, but its Foreland Point cottage does not.
+  sources:
+  - label: Trinity House, Lighthouse holiday cottages
+    url: https://trinityhouse.co.uk/lighthouse-cottages
+    checked: '2026-11-20'
+  - label: Trinity House, Lizard Lighthouse holiday cottages
+    url: https://trinityhouse.co.uk/lighthouse-cottage-rental/lizard-holiday-cottages
+    checked: '2026-11-20'
+  - label: National Trust, Lighthouse holiday cottages
+    url: https://www.nationaltrust.org.uk/holiday-lists/lighthouse-holiday-cottages
+    checked: '2026-11-20'
+  - label: Landmark Trust, Old Light Cottage
+    url: https://www.landmarktrust.org.uk/properties/old-light-cottage/
+    checked: '2026-11-20'
+  - label: United States Lighthouse Society, Lighthouse Accommodations
+    url: https://uslhs.org/node/264
+    checked: '2026-11-20'
+  - label: American Lighthouse Foundation, Race Point Lighthouse overnight programs
+    url: https://www.lighthousefoundation.org/news/what-we-do/programs/overnight-programs/rpl-overnight/
+    checked: '2026-11-20'
+  - label: Smithsonian Magazine, Five Lighthouses Where You Can Be an Overnight Keeper
+    url: https://www.smithsonianmag.com/travel/five-lighthouses-where-you-can-be-an-overnight-keeper-180982071/
+    checked: '2026-11-20'
+  kit:
+  - name: Binoculars
+    why: for watching ships and seabirds from the cottage
+    url: https://www.amazon.co.uk/s?k=binoculars+10x42
+  - name: Windproof jacket
+    why: headlands are exposed in any season
+    url: https://www.amazon.co.uk/s?k=windproof+jacket
+  related:
+  - stay-in-a-landmark-trust-building
+  - stay-in-a-fire-lookout
+  - stay-in-a-bothy
+  - walk-south-west-coast-path

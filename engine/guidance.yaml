@@ -63,13 +63,13 @@ guidance:
     applies: [all]
     use: rule
     text: Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them.
-    for: [ydnpa-three-peaks, bmc-hill-fit]
+    for: [ydnpa-three-peaks, bmc-hill-fit, bc-first-sportive-top10, cyclinguk-first-sportive]
   - id: cross-training
     topic: key session
     applies: [endurance]
     use: advice
     text: Low-impact exercise such as cycling, swimming or rowing builds fitness with less pounding and is useful for everyone, not just the injured.
-    for: [ea-training-pace, higdon-novice1]
+    for: [ea-training-pace, higdon-novice1, movingmedicine-cycling]
   - id: rest-days
     topic: recovery
     applies: [all]
@@ -203,7 +203,7 @@ guidance:
     applies: [endurance]
     use: advice
     text: Start slower than you think you need to; early miles feel easy and are where most people overdo it.
-    for: [ea-pavey-marathon, ea-training-pace, knechtle-nyc-2026, mcm-first-timer-tips]
+    for: [ea-pavey-marathon, ea-training-pace, knechtle-nyc-2026, mcm-first-timer-tips, bc-first-sportive-top10, cyclinguk-first-sportive]
     note: The 2026 systematic review of the New York City Marathon found pacing mostly positive (runners slow down), most in slower runners, and describes avoiding an excessively fast start; it does not say the early miles feel easy.
   - id: weather-daylight
     topic: on the day
