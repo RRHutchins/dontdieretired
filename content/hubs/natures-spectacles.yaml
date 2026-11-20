@@ -14,7 +14,7 @@ lead: Many of nature's great shows happen on a timetable. Here is when and where
 intro:
 - On Monday 2 August 2027 the Moon will cover the Sun completely along a track across southern Spain, Gibraltar and North Africa. Other spectacles come round every year, if you know the month and the place, from the northern lights to starlings over a reedbed at dusk.
 - Filter the list below by region, kind, month or how you see it. Every entry links to an official page (a national park, an observatory, a government or an official tourism body), opened on the date shown. Seasons shift with the weather, so check the official page before you travel.
-activities: [see-a-total-solar-eclipse, see-the-northern-lights, watch-old-faithful-erupt]
+activities: [see-a-total-solar-eclipse, see-the-northern-lights, watch-old-faithful-erupt, watch-a-meteor-shower, see-puffins, see-grey-seal-pups]
 tags: [nature, spectacle, spectacles, eclipse, 'solar eclipse', aurora, 'northern lights', meteor, perseids, geminids, murmuration, starlings, fireflies, bioluminescence, geyser, migration, 'cherry blossom', bluebells, 'autumn colour', wildlife]
 finder_title: Spectacle finder
 search_hint: Name, place or country
@@ -30,7 +30,7 @@ about: We list a spectacle only after opening an official page about it (a natio
 safety: "Eclipses: never look at the Sun without proper eclipse glasses (NASA says they should meet the ISO 12312-2 standard) or through binoculars, a camera or a telescope without a solar filter on the front. The only safe time to look with the naked eye is totality, when the Moon completely covers the Sun's bright face; put the glasses back on as soon as any bright Sun reappears. Sunglasses, however dark, are not safe. Rivers, coasts and wild animals: follow the site's own safety advice and keep well back."
 bands_def: []
 facets:
-  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania}
+  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania, south-america: South America}
   type: {sky: In the sky, living: Wildlife and living light, earth: Water and rock, season: Seasons and flowers}
   see: {own: On your own (no tour needed), guided: Guided tour, boat: Boat or kayak trip, booked: Booked, lottery or permit, vehicle: From a vehicle}
 events:
@@ -291,6 +291,157 @@ events:
   see_note: Check the Japan National Tourism Organization's autumn leaves forecast for the city you plan to visit.
   note: The colour starts in the colder areas of northern Hokkaido and moves south; the mountains turn first, then city gardens, parks and temples.
   link: {label: 'Japan National Tourism Organization: autumn leaves forecast', url: 'https://www.japan.travel/en/see-and-do/autumn-leaves-forecast/', checked: '2026-11-19'}
+# ---------- Added 20 Nov 2026 (build-out run 1) ----------
+- id: quadrantid-meteor-shower
+  name: Quadrantid meteor shower
+  type: sky
+  place: Anywhere away from street lights (the Royal Observatory's guide is written for the UK); the meteors seem to come from Boötes, near the Plough (Big Dipper)
+  country: UK
+  continent: europe
+  month: [1]
+  when: Active 28 December 2026 to 12 January 2027; peak 3 to 4 January 2027
+  see: [own]
+  see_note: In 2027 the peak is best seen just after midnight, while the Moon is far below the horizon. No binoculars or telescope are needed, but give your eyes at least 15 minutes to adjust to the dark.
+  note: The Royal Observatory gives a maximum rate of 120 meteors an hour on a clear night at the peak. Meteors can appear anywhere in the sky.
+  link: {label: 'Royal Museums Greenwich: Quadrantid meteor shower, when and where to see it in the UK', url: 'https://www.rmg.co.uk/stories/space-astronomy/quadrantid-meteor-shower-when-where-see-it-uk', checked: '2026-11-20'}
+- id: farne-islands-puffins
+  name: Puffins on the Farne Islands
+  type: living
+  place: Farne Islands, off the Northumberland coast; boats leave from Seahouses harbour
+  country: UK
+  continent: europe
+  month: [5, 6, 7]
+  when: Breeding season, May to July; the islands reopen to visitors on 1 April 2027
+  see: [boat]
+  see_note: Take a boat from Seahouses to sail round the islands or land on Inner Farne; the National Trust recommends booking the boat in advance. Bird numbers drop sharply from late July. No dogs on the islands, including assistance dogs.
+  note: The National Trust says the islands host up to 23 bird species in the breeding season, including around 40,000 pairs of puffins. The Trust adds that the islands have England's largest breeding population of Atlantic grey seals, with pups from October to December.
+  link: {label: 'National Trust: things to see on the Farne Islands', url: 'https://www.nationaltrust.org.uk/visit/north-east/farne-islands/things-to-do-on-the-farne-islands', checked: '2026-11-20'}
+  more:
+  - {label: 'National Trust: Farne Islands', url: 'https://www.nationaltrust.org.uk/visit/north-east/farne-islands', checked: '2026-11-20'}
+- id: donna-nook-grey-seals
+  name: Grey seal pups at Donna Nook
+  type: living
+  place: Donna Nook National Nature Reserve, near North Somercotes, Lincolnshire (access from Marsh Lane)
+  country: UK
+  continent: europe
+  month: [11, 12]
+  when: The viewing area is usually open from late October to December, depending on seal numbers
+  see: [own]
+  see_note: No booking needed. Stay in the viewing area behind the fence at the foot of the dunes. No dogs on the viewing area. The Lincolnshire Wildlife Trust names the six weekends from 7 November to 13 December 2026 as the busy ones.
+  note: Grey seals come ashore here every November and December to give birth. The Trust counted 1,924 pups in the 2025 season, and posts a weekly count during the season.
+  link: {label: 'Lincolnshire Wildlife Trust: Donna Nook', url: 'https://www.lincstrust.org.uk/get-involved/top-reserves/donna-nook', checked: '2026-11-20'}
+  more:
+  - {label: 'Lincolnshire Wildlife Trust: weekly seal update from Donna Nook', url: 'https://www.lincstrust.org.uk/get-involved/top-reserves/donna-nook/weekly-update', checked: '2026-11-20'}
+- id: deer-rut-richmond-bushy-park
+  name: The deer rut in Richmond Park and Bushy Park
+  type: living
+  place: Richmond Park and Bushy Park, south-west London
+  country: UK
+  continent: europe
+  month: [9, 10, 11]
+  when: From the end of September to early November
+  see: [own]
+  see_note: Keep at least 50 metres from the deer and never wave food or a phone at them. Keep dogs on a lead and under close control during the rut.
+  note: The Royal Parks say the two parks have more than 1,000 free-roaming red and fallow deer between them. Stags roar to warn off rivals; if neither backs down, they lock antlers.
+  link: {label: 'The Royal Parks: 12 things you should know about the deer rutting season', url: 'https://www.royalparks.org.uk/read-watch-listen/12-things-you-should-know-about-deer-rutting-season', checked: '2026-11-20'}
+- id: shenandoah-fall-colour
+  name: Autumn colour in Shenandoah National Park
+  type: season
+  place: Shenandoah National Park, Virginia
+  country: USA
+  continent: north-america
+  month: [9, 10, 11]
+  when: Late September, October and November; the park says the peak cannot be predicted
+  see: [own, vehicle]
+  see_note: Go on a weekday if you can. The two northern entrances, Front Royal and Thornton Gap, have the longest waits, and campgrounds and lodges are usually fully booked on September and October weekends. The park posts a fall update video each Thursday.
+  note: The park spans a wide range of heights, so the colour can be at very different stages from one area to the next.
+  link: {label: 'National Park Service: fall in Shenandoah', url: 'https://www.nps.gov/shen/planyourvisit/fall.htm', checked: '2026-11-20'}
+- id: natural-bridges-monarch-butterflies
+  name: Wintering monarch butterflies at Natural Bridges
+  type: living
+  place: Monarch Grove, Natural Bridges State Beach, Santa Cruz, California
+  country: USA
+  continent: north-america
+  month: [10, 11, 12, 1, 2]
+  when: Mid-October to mid-February; the park says late October and all of November are often best
+  see: [own, guided]
+  see_note: A boardwalk suitable for wheelchairs and pushchairs leads to an observation deck in the eucalyptus grove, and docents lead tours. No dogs or bicycles on the boardwalk. On chilly days the butterflies cluster together for warmth.
+  note: California State Parks calls the grove "the only State Monarch Preserve in California". It gives a temporary home to thousands of monarchs each winter.
+  link: {label: 'California State Parks: Natural Bridges State Beach', url: 'https://www.parks.ca.gov/?page_id=541', checked: '2026-11-20'}
+  more:
+  - {label: 'California State Parks: Natural Bridges, a winter haven for the monarch butterfly', url: 'https://www.parks.ca.gov/?page_id=26135', checked: '2026-11-20'}
+- id: iguazu-falls
+  name: Iguazú Falls
+  type: earth
+  place: Iguazú National Park (the Argentine side)
+  country: Argentina
+  continent: south-america
+  see: [own, guided, boat]
+  see_note: Walkways include the upper walk (Paseo Superior, 1,850 metres, no stairs), the lower walk (Paseo Inferior, 1,750 metres, with stairs) and the walkway to the Devil's Throat (1,100 metres, no stairs); a park train links the stations. Boat trips go into the canyon of the lower river. Full-moon walks to the Devil's Throat are booked online and called off if it rains.
+  note: Argentina's National Parks Administration says the lower walk brings you close enough to the falls to feel the spray. You can explore on your own or with a guide.
+  link: {label: 'Parques Nacionales (Argentina): Iguazú National Park, activities (Spanish)', url: 'https://www.argentina.gob.ar/parquesnacionales/nea/parque-nacional-iguazu/actividades', checked: '2026-11-20'}
+- id: perito-moreno-glacier
+  name: Perito Moreno Glacier
+  type: earth
+  place: Los Glaciares National Park, 50 km from El Calafate
+  country: Argentina
+  continent: south-america
+  month: [9, 10, 11, 12, 1, 2, 3, 4]
+  see: [own, boat, guided]
+  see_note: The park is reached on the paved RP 11 by car or regular bus. Walkways through the forest lead to viewpoints and the glacier front, with accessible options. Boat trips leave from the walkway area, and ice treks go with specialist guides and crampons.
+  note: The national park says Perito Moreno is its best-known glacier because it is easy to reach and because of its "spectacular rupture", which happens every so often when the advancing ice reaches the Magallanes Peninsula and dams the water between Lago Argentino and Brazo Rico. The park recommends visiting from September to April.
+  link: {label: 'Parques Nacionales (Argentina): Los Glaciares National Park, overview (Spanish)', url: 'https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/panoramica', checked: '2026-11-20'}
+  more:
+  - {label: 'Parques Nacionales (Argentina): Los Glaciares National Park, activities (Spanish)', url: 'https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/actividades', checked: '2026-11-20'}
+- id: victoria-falls
+  name: Victoria Falls (Mosi-oa-Tunya)
+  type: earth
+  place: Victoria Falls, seen from the rainforest path on the Zimbabwe side
+  country: Zimbabwe
+  continent: africa
+  month: [2, 3, 4, 5]
+  when: The Zimbabwe Tourism Authority says February to May, straight after the summer rains, is the best time
+  see: [own]
+  see_note: The Zimbabwe Tourism Authority says about 70% of the views are from the rainforest path on the Zimbabwe side, which has many viewpoints. Take an umbrella, because the spray will soak you.
+  note: The Zimbabwe Tourism Authority calls the falls "one of the seven natural wonders of the world" and gives them as 1,708 metres wide and 108 metres high, with spray rising more than 400 metres.
+  link: {label: 'Zimbabwe Tourism Authority: Victoria Falls / Mosi-oa-Tunya', url: 'https://zimbabwetourism.net/victoria-falls-mosi-a-tunya/', checked: '2026-11-20'}
+- id: christmas-island-red-crabs
+  name: The red crab migration on Christmas Island
+  type: living
+  place: Christmas Island National Park, Christmas Island (an Australian territory in the Indian Ocean)
+  country: Australia
+  continent: oceania
+  month: [10, 11]
+  when: Usually around October or November, at the start of the wet season; the baby crabs come out of the sea about a month after spawning
+  see: [own]
+  see_note: The migration starts with the first rain of the wet season and the Moon's phase sets its pace, so the dates move each year. Parks Australia staff close roads across the island to protect the crabs.
+  note: Parks Australia says tens of millions of red crabs move from the forest to the coast to spawn, each female releasing up to 100,000 eggs into the ocean, and that David Attenborough counted filming it among his 10 greatest TV moments.
+  link: {label: 'Christmas Island National Park: when to come', url: 'https://christmasislandnationalpark.gov.au/plan/when-come/', checked: '2026-11-20'}
+  more:
+  - {label: 'Parks Australia: millions of crabs march on Christmas Island (2021)', url: 'https://parksaustralia.gov.au/news/millions-of-crabs-march-on-christmas-island/', checked: '2026-11-20'}
+- id: phillip-island-penguin-parade
+  name: The Penguin Parade on Phillip Island
+  type: living
+  place: Summerlands Beach, Phillip Island, Victoria
+  country: Australia
+  continent: oceania
+  when: Every evening at sunset, all year round
+  see: [booked]
+  see_note: Booking is essential. You watch from grandstands above the beach or from an underground viewing area, and guided tours are offered. Book well ahead for mid-December to late January, long weekends and school holidays.
+  note: Phillip Island Nature Parks says the island is home to about 40,000 little penguins, which come ashore at sunset and walk up the beach to their burrows.
+  link: {label: 'Phillip Island Nature Parks: Penguin Parade', url: 'https://www.penguins.org.au/attractions/penguin-parade/', checked: '2026-11-20'}
+- id: liyu-lake-fireflies
+  name: Firefly season at Liyu Lake
+  type: living
+  place: Liyu Lake South Trail, Liyu Lake Recreation Area, in the East Longitudinal Valley National Scenic Area
+  country: Taiwan
+  continent: asia
+  month: [4, 5]
+  when: In 2026, Friday and Saturday evenings from 10 April to 2 May
+  see: [guided]
+  see_note: In 2026 online registration opened on 23 March. Follow the volunteer guides and staff. Cover your torch with red cellophane, wear long sleeves and trousers, and park at Tannan car park and walk in, as traffic on the trail is controlled.
+  note: The evenings are run by the East Longitudinal Valley National Scenic Area Administration; the organisers describe the display as the "Milky Way on Earth". The 2027 dates were not out when we checked.
+  link: {label: "Taiwan Tourism Administration: 2026 Liyu Lake firefly season", url: 'https://admin.taiwan.net.tw/english/News/NewsTravel?a=86&id=35481', checked: '2026-11-20'}
 guides:
 - slug: 2027-total-solar-eclipse
   title: How to see the 2027 total solar eclipse safely, and where
@@ -346,3 +497,83 @@ guides:
   - {label: 'HM Government of Gibraltar: planning begins for solar eclipses', url: 'https://www.gibraltar.gov.gi/press-releases/planning-begins-for-solar-eclipses-212026-11608', checked: '2026-11-19'}
   - {label: 'Royal Observatory Greenwich: solar eclipses explained', url: 'https://www.rmg.co.uk/stories/space-astronomy/solar-eclipses-explained', checked: '2026-11-19'}
   - {label: 'Royal Astronomical Society: viewing a partial solar eclipse safely', url: 'https://www.ras.ac.uk/education-and-careers/partial-solar-eclipse-25-october-2022-viewing-it-safely', checked: '2026-11-19'}
+- slug: northern-lights-when-and-where
+  title: 'The northern lights: when and where to see them'
+  short: Northern lights
+  seo_title: 'Northern lights: when and where to see them, from the UK to Lapland'
+  description: When and where to see the northern lights, from Scotland and northern England to Norway, Iceland and Finnish Lapland, how the UK alerts work, and what helps your chances.
+  standfirst: "The aurora needs three things to line up: activity on the Sun, a clear sky and real darkness. Here is when and where your odds are best, from the UK to the Arctic, taken from the official forecasters and tourism bodies."
+  detail:
+  - h: What you need on the night
+    p:
+    - "The official forecasters and tourism bodies agree on the basics. You need a clear sky, or at least gaps in the cloud. You need darkness, away from street lights and towns. And you need to look north: AuroraWatch UK, run by Lancaster University, asks for \"a good, unobstructed view of the northern horizon, preferably from a height (e.g. a hill)\"."
+    - The Met Office says green is the most common colour. The Royal Observatory Greenwich explains that green comes from oxygen, while hints of purple, blue or pink come from nitrogen.
+    - The US Space Weather Prediction Center (NOAA) says a full moon dims how bright the aurora looks, though not how bright it really is.
+  - h: The best time of night and of year
+    p:
+    - AuroraWatch UK says that, statistically, the best time to see an aurora is between 10pm and midnight. NOAA's Space Weather Prediction Center gives a wider window, usually within an hour or two of midnight, between 10pm and 2am local time.
+    - NOAA says the best seasons are around the spring and autumn equinoxes. Visit Norway says that, statistically, activity is highest in March and April and in September and October.
+    table:
+      head: [Where, Season]
+      rows:
+      - [Norway, 'September to April in northern Norway, and sometimes across the whole country (Visit Norway)']
+      - [Iceland, 'September to April, during the winter (Visit Iceland)']
+      - [Finland, 'End of August to April in Lapland and northern Lakeland (Visit Finland)']
+      - [UK, 'Any time it is dark enough; follow the AuroraWatch UK and Met Office alerts (below)']
+  - h: Seeing it from the UK
+    p:
+    - The Met Office says the aurora is sometimes seen as far south as "Scotland and Northern England/Ireland" when skies are clear. The Royal Observatory Greenwich says it has very occasionally been seen as far south as Cornwall and Brighton, and AuroraWatch UK says that generally, the further north you are in the UK, the better your chances.
+    - "AuroraWatch UK measures the Earth's magnetic field with magnetometers and sends alerts in four colours. Its alerts are real-time, not predictions:"
+    table:
+      head: [Alert, What AuroraWatch UK says it means]
+      rows:
+      - [Green, Aurora is unlikely to be visible by eye or camera from anywhere in the UK]
+      - [Yellow, Aurora may be visible by eye from Scotland]
+      - [Amber, 'Aurora is likely to be visible by eye from Scotland, northern England and Northern Ireland']
+      - [Red, It is likely that aurora will be visible by eye and camera from anywhere in the UK]
+    list:
+    - AuroraWatch UK sends alerts on X (Twitter, @aurorawatchuk), on Facebook and through a Telegram channel; third-party phone apps also carry them.
+    - The Met Office publishes a space weather forecast that says where and when you are likely to see an aurora.
+    - The Met Office says almost anyone with a smartphone or digital camera can photograph an aurora.
+  - h: Norway, Iceland and Finnish Lapland
+    p:
+    - NOAA puts the best viewing under an oval-shaped region between about 60 and 75 degrees north, which moves south when activity rises.
+    - "Norway: Visit Norway advises finding a dark place preferably at least 150 metres from buildings and looking north."
+    - "Iceland: Visit Iceland says there is no exact best time, that your chances are much better outside towns, especially away from the light of Reykjavík, and that you do not necessarily need a tour. The Icelandic Met Office (Veðurstofa Íslands) publishes an aurora forecast with a cloud-cover map and an activity scale from 0 to 9, and notes that even a low level can be beautiful."
+    - "Finland: Visit Finland says that in autumn and spring the lights are, statistically, visible on every second clear night, and advises checking the weather forecast alongside the aurora forecast, because cloud blocks the view entirely. In late summer, a calm lake can reflect the display."
+  - h: Is now a good time?
+    p:
+    - The Sun's activity rises and falls over a cycle of about 11 years. The Royal Observatory Greenwich says the Sun entered the peak of that cycle in late 2024, and that a peak usually lasts one to two years. NASA added that fairly significant storms are often still seen as the cycle declines, though less often.
+    - The Royal Observatory also says aurorae can happen at any time, whatever the Sun is doing, so a clear dark night and an alert matter more than the year.
+  faq:
+  - q: Can you see the northern lights in England?
+    a: Sometimes. The Met Office says they are sometimes seen from northern England when skies are clear, and the Royal Observatory says they have very occasionally been seen as far south as Cornwall and Brighton. An amber or red AuroraWatch UK alert is the sign to look.
+  - q: What time of night is best?
+    a: AuroraWatch UK says the best time is statistically between 10pm and midnight. NOAA gives 10pm to 2am local time.
+  - q: Which months are best for a trip to Norway, Iceland or Lapland?
+    a: Visit Norway and Visit Iceland give September to April, and Visit Finland the end of August to April. NOAA says activity tends to be highest around the spring and autumn equinoxes, and Visit Norway gives March and April and September and October.
+  - q: Do I need a tour?
+    a: Not necessarily. Visit Iceland says you do not need one; what matters is getting away from town lights on a clear night.
+  kit:
+  - name: Head torch with a red light
+    why: check it has a red mode, which keeps your night vision while you set up
+    url: https://www.amazon.co.uk/s?k=head+torch+red+light
+  - name: Compact travel tripod
+    why: check the maximum load covers your camera or phone holder, and that it is steady at full height
+    url: https://www.amazon.co.uk/s?k=compact+travel+tripod
+  - name: Insulated gloves with touchscreen fingertips
+    why: check they are rated for the cold you expect; you will be standing still for a long time
+    url: https://www.amazon.co.uk/s?k=insulated+touchscreen+gloves
+  sources:
+  - {label: 'AuroraWatch UK (Lancaster University): alerts', url: 'https://aurorawatch.lancs.ac.uk/alerts/', checked: '2026-11-20'}
+  - {label: 'AuroraWatch UK: when will I be able to see the aurora?', url: 'https://aurorawatch.lancs.ac.uk/faq/when-aurora-visible/', checked: '2026-11-20'}
+  - {label: 'AuroraWatch UK: where is the best place to see aurora?', url: 'https://aurorawatch.lancs.ac.uk/faq/best-place/', checked: '2026-11-20'}
+  - {label: 'Met Office: auroras', url: 'https://weather.metoffice.gov.uk/learn-about/space-weather/auroras', checked: '2026-11-20'}
+  - {label: 'NOAA Space Weather Prediction Center: tips on viewing the aurora', url: 'https://www.spaceweather.gov/content/tips-viewing-aurora', checked: '2026-11-20'}
+  - {label: 'NOAA Space Weather Prediction Center: aurora', url: 'https://www.spaceweather.gov/phenomena/aurora', checked: '2026-11-20'}
+  - {label: 'Visit Norway: the best time to see the northern lights', url: 'https://www.visitnorway.com/things-to-do/nature-attractions/northern-lights/best-time-to-see/', checked: '2026-11-20'}
+  - {label: 'Visit Iceland: the northern lights in Iceland', url: 'https://www.visiticeland.com/article/northern-lights-in-iceland/', checked: '2026-11-20'}
+  - {label: 'Icelandic Met Office: instructions for the aurora forecast', url: 'https://en.vedur.is/weather/articles/nr/2588', checked: '2026-11-20'}
+  - {label: 'Visit Finland: best times to see the northern lights in Finland', url: 'https://www.visitfinland.com/en/articles/the-best-times-to-see-northern-lights/', checked: '2026-11-20'}
+  - {label: 'Royal Museums Greenwich: what causes the northern lights?', url: 'https://www.rmg.co.uk/stories/space-astronomy/what-causes-northern-lights-aurora-borealis-explained', checked: '2026-11-20'}
+  - {label: 'NASA: NASA, NOAA say the Sun reaches maximum phase in 11-year solar cycle (15 October 2024)', url: 'https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/', checked: '2026-11-20'}

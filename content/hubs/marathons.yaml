@@ -23,8 +23,9 @@ series_any: Any
 none_text: No marathons match those choices yet. Try any month or any way in.
 safety: A marathon is a long, hard day on the heart, muscles and feet. Build up over months, follow your race's medical advice, and check with your GP (family doctor) before you start training if you have a heart condition or another health worry.
 bands_def: []
+event_pages: true
 facets:
-  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania, antarctica: Antarctica}
+  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania, antarctica: Antarctica, south-america: South America}
   terrain: {road: Road, trail: Trail and track, mountain: Mountain}
   entry: {open: Open entry (first come), register: Register with the organiser (see its rules), ballot: Ballot or lottery, qualifier: Qualifying time, charity: Charity place, tour: Travel package or tour operator}
   series: {wmm: Abbott World Marathon Majors, independent: Independent}
@@ -547,6 +548,180 @@ events:
   entry_note: Entry is through Marathon Tours & Travel's trip application, and runners travel on its voyage; the 2027 race was open for pre-registration. In 2026 the ship sailed from Ushuaia, Argentina. Runners must be at least 18 on race day.
   note: The 2027 race is on 14 March 2027. The course runs on dirt roads, often muddy, linking the research bases, and changes each year with base operations and conditions. No more than 100 passengers are ashore at a time. In 2026 marathoners had to finish within 6 hours 30 minutes, weather permitting.
   link: {label: 'Marathon Tours & Travel: Antarctica Marathon 2027', url: 'https://marathontours.com/en-au/events/antarctica-marathon/', checked: '2026-11-19'}
+# ---------- Added 20 Nov 2026 (build-out run 2) ----------
+- id: hamburg-marathon
+  name: Haspa Marathon Hamburg
+  series: independent
+  place: Hamburg; the first start is on Karolinenstraße
+  country: Germany
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [open]
+  entry_note: Entry is online through the organiser's registration, and every runner registers themselves. The organiser announced on 2 October 2026 that all 20,000 marathon places for 2027 had gone and the race was sold out.
+  note: The 41st race is on Sunday 25 April 2027. Start 1 is on Karolinenstraße from 08:30 to around 09:00, with a second start at 09:00. The race officially ends six hours after the last runner crosses the start line. Das Zehntel, a shorter race, is the day before.
+  link: {label: 'Haspa Marathon Hamburg: race info marathon', url: 'https://haspa-marathon-hamburg.de/en/race-info-marathon/', checked: '2026-11-20'}
+  more:
+  - {label: 'Haspa Marathon Hamburg: 2027 is officially sold out', url: 'https://haspa-marathon-hamburg.de/en/haspa-marathon-hamburg-2027-is-officially-sold-out/', checked: '2026-11-20'}
+- id: barcelona-marathon
+  name: Zurich Marató de Barcelona
+  series: independent
+  place: Barcelona (a fully urban course)
+  country: Spain
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [3]
+  entry: [open]
+  entry_note: Online entry, valid once paid. Entry closes when 37,000 runners have registered, or on 7 March 2027 if that comes first. Runners must be 18 on race day.
+  note: The 2027 race is on Sunday 14 March 2027, starting at 08:30. The time limit is six hours from when the last runner crosses the start line, and the race ends at 16:00.
+  link: {label: 'Zurich Marató Barcelona: regulation', url: 'https://zurichmaratobarcelona.es/en/i-am-a-runner/regulation/', checked: '2026-11-20'}
+- id: lisbon-marathon
+  name: EDP Lisbon Marathon
+  series: independent
+  place: From Carcavelos along the coast to Praça do Comércio, Lisbon
+  country: Portugal
+  continent: europe
+  km: [42.2]
+  distances: Marathon; a half marathon and an 8K run the next day
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: Online entry through the official site; the 2026 rules set a maximum of 18,000 runners and do not say how places are shared out. Runners must be 18 or over.
+  note: The 2026 race was on Saturday 10 October at 8am, with a six-hour time limit from the last start. No 2027 date was published when we checked.
+  link: {label: 'Maratona Clube de Portugal: EDP Lisbon Marathon 2026', url: 'https://maratonaclubedeportugal.com/en/prova/edp-lisbon-marathon-2026/', checked: '2026-11-20'}
+  more:
+  - {label: 'Maratona Clube de Portugal: EDP Lisbon Marathon rules, October 2026 (PDF)', url: 'https://maratonaclubedeportugal.com/wp-content/uploads/Rules_EDP_Lisbon_Marathon_OUT2026_EN-1.pdf', checked: '2026-11-20'}
+- id: yorkshire-marathon
+  name: Altra Yorkshire Marathon
+  series: independent
+  place: Starts and finishes at the University of York
+  country: England, UK
+  continent: europe
+  km: [42.2]
+  distances: Marathon; a 10-mile race and a marathon relay the same day
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: Online entry through the organiser, Run For All; its page does not say how places are allocated. Entrants must be 18 or over on the day.
+  note: The 2027 race is on Sunday 17 October 2027, starting at 09:30. Run For All says its profits go to the Jane Tomlinson Appeal.
+  link: {label: 'Run For All: Yorkshire Marathon', url: 'https://runforall.com/events/marathon/yorkshire-marathon', checked: '2026-11-20'}
+- id: los-angeles-marathon
+  name: ASICS Los Angeles Marathon
+  series: independent
+  place: From Dodger Stadium to Century City, Los Angeles
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [3]
+  entry: [open, charity]
+  entry_note: Online entry closes when the race sells out. There is also a charity route through the official nonprofit partners or the organiser's own Team TMF, where you commit to fundraising. Runners must be 16 or over on race day.
+  note: The 2027 race is on Sunday 7 March 2027; the full field starts at 7am, with earlier waves (times subject to change). The finish is on Santa Monica Boulevard at Avenue of the Stars. The time limit is 6 hours 30 minutes after the last runner crosses the start line.
+  link: {label: 'The McCourt Foundation: Los Angeles Marathon FAQs and race rules', url: 'https://www.mccourtfoundation.org/event/los-angeles-marathon/faqs/', checked: '2026-11-20'}
+- id: grandmas-marathon
+  name: Grandma's Marathon
+  series: independent
+  place: Point to point from near Two Harbors to Canal Park, Duluth, Minnesota
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; the Garry Bjorklund Half Marathon the same day and a 5K the day before
+  terrain: [road]
+  format: single
+  month: [6]
+  entry: [open, charity]
+  entry_note: Entry opened online on 1 October 2026 and the 2027 marathon is sold out. Places remain through the race's charity partners (terms vary by charity), donation entries for its Young Athletes Foundation, and official bib transfers until 1 May.
+  note: The 2027 race is on Saturday 19 June 2027. The time limit is seven hours; after it, runners move onto the pavement.
+  link: {label: "Grandma's Marathon: the marathon", url: 'https://grandmasmarathon.com/the-marathon/grandmas-marathon/', checked: '2026-11-20'}
+- id: seoul-marathon
+  name: Seoul Marathon
+  series: independent
+  place: Seoul
+  country: South Korea
+  continent: asia
+  km: [42.2]
+  distances: Marathon; also a 10K
+  terrain: [road]
+  format: single
+  month: [3]
+  entry: [qualifier]
+  entry_note: Overseas runners enter online (registration opened on 1 September 2026). The marathon needs a net time of 4:59:59 or faster, set between 1 January 2024 and 30 November 2026; the 10K needs no qualifying time. Overseas runners must collect their race pack in person at the expo.
+  note: The 2027 race is on Sunday 21 March 2027.
+  link: {label: 'Seoul Marathon: 2027 overseas registration information', url: 'https://en.seoul-marathon.com/60/?bmode=view&idx=173536131', checked: '2026-11-20'}
+- id: osaka-marathon
+  name: Osaka Marathon
+  series: independent
+  place: Osaka
+  country: Japan
+  continent: asia
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [2]
+  entry: [ballot, charity]
+  entry_note: General places are drawn by ballot, and entries for 2027 have closed (results were due on 28 September 2026). Charity runner and Osaka Sports Supporter Runner places were still open when general entries closed; check the official pages for details.
+  note: The 2027 race is on Sunday 28 February 2027. The official pages are in Japanese.
+  link: {label: 'Osaka Marathon 2027: about the 2027 race (Japanese)', url: 'https://www.osaka-marathon.com/2027/news/160/', checked: '2026-11-20'}
+  more:
+  - {label: 'Osaka Marathon 2027: entries closed (Japanese)', url: 'https://www.osaka-marathon.com/2027/news/239/', checked: '2026-11-20'}
+- id: buenos-aires-marathon
+  name: Maratón de Buenos Aires
+  series: independent
+  place: Buenos Aires; the start area is at Avenida Figueroa Alcorta and Dorrego
+  country: Argentina
+  continent: south-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: Online entry through the ticketing site linked from the official page, which does not say how places are allocated.
+  note: The official page gives the next race as 19 September 2027. In 2026 the start was at 7am.
+  link: {label: 'Maratón de Buenos Aires: 42K', url: 'https://www.maratondebuenosaires.com/', checked: '2026-11-20'}
+- id: rio-marathon
+  name: Maratona do Rio
+  series: independent
+  place: From Praia do Recreio to Aterro do Flamengo, Rio de Janeiro
+  country: Brazil
+  continent: south-america
+  km: [42.2]
+  distances: Marathon; a half marathon, 10K and 5K earlier in race week
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [ballot, register]
+  entry_note: General entries for the half and full marathon go through a draw (sign-up for the 2027 marathon draw ran from 31 August to 13 September 2026). The rules say foreign runners can enter through the official ticketing platform, GO DREAM, without the draw. Marathon runners must be 20 by 31 December 2027.
+  note: The 2027 race is on Sunday 30 May 2027, with a wave start at times to be announced. The time limit is six hours from the start of the last wave. The rules are in Portuguese.
+  link: {label: 'Maratona do Rio: official 2027 rules (PDF, Portuguese)', url: 'https://static.maratonadorio.com.br/media/upload/documento/a74b987c047b40a88a20461744586bd6.pdf', checked: '2026-11-20'}
+- id: melbourne-marathon
+  name: Nike Melbourne Marathon
+  series: independent
+  place: From Batman Avenue to the Melbourne Cricket Ground (MCG)
+  country: Australia
+  continent: oceania
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [ballot, charity, qualifier, tour]
+  entry_note: For 2026, places came through ballots, charity partners (with a fundraising target), a time standard, official travel packages and guaranteed-access programmes. A waitlist for 2027 is open. Runners must be 18 or over.
+  note: The 2026 race was on Sunday 11 October at 6.15am, with a course cut-off of 7 hours 45 minutes (gun time). No 2027 date was published when we checked.
+  link: {label: 'Nike Melbourne Marathon Festival: the marathon', url: 'https://melbournemarathon.com.au/nike-melbourne-marathon/', checked: '2026-11-20'}
+  more:
+  - {label: 'Nike Melbourne Marathon Festival: entry avenues', url: 'https://melbournemarathon.com.au/entry-avenues-to-the-nike-melbourne-marathon-festival/', checked: '2026-11-20'}
 guides:
 - slug: how-to-get-a-place
   title: How to get a place in a big marathon
