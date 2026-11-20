@@ -25,7 +25,7 @@ company:
 
 analytics:
   # Cloudflare Web Analytics: free and cookie-free, so no consent banner is needed for it.
-  cloudflare_token: ""                       # from Cloudflare > Analytics & Logs > Web Analytics > dontdieretired.com > the token in the JS snippet (leave "" to disable)
+  cloudflare_token: "01f48da2da1a4e49b8168943d92cb95d"                       # from Cloudflare > Analytics & Logs > Web Analytics > dontdieretired.com > the token in the JS snippet (leave "" to disable)
   # Plausible: off since 2 Nov 2026 (the trial ended). The site's event calls (affiliate_click, share, puzzle_done…) are kept and switch back on if an id is set here again.
   plausible_script_id: ""                    # from Plausible > Site settings > Site installation (leave "" to disable)
   ga4_id: ""                                 # e.g. G-XXXXXXXXXX
