@@ -260,7 +260,9 @@
     document.querySelectorAll('.gift-card-print').forEach(x => x.remove());
     const copy = card.cloneNode(true); copy.classList.add('gift-card-print'); document.body.appendChild(copy);
     document.documentElement.classList.add('gc-print');
-    const done = () => { document.documentElement.classList.remove('gc-print'); copy.remove(); window.removeEventListener('afterprint', done); };
+    // no page margin while the card prints, so browsers leave off their date, title and address lines (20 Nov 2026, Robin)
+    const pg = document.createElement('style'); pg.textContent = '@page{margin:0}'; document.head.appendChild(pg);
+    const done = () => { document.documentElement.classList.remove('gc-print'); copy.remove(); pg.remove(); window.removeEventListener('afterprint', done); };
     window.addEventListener('afterprint', done);
     window.print();
   }

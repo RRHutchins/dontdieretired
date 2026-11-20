@@ -1159,9 +1159,10 @@ h1{line-height:1.04}
 @media print{
   html.gc-print body>*:not(.gift-card-print){display:none!important}
   html.gc-print .gift-card-print{display:block}
-  .gift-card-in{border:2px solid #b23a48;border-radius:16px;padding:28px 32px;max-width:150mm;margin:10mm auto;color:#1b1b1f;font-size:12pt;line-height:1.45}
+  .gift-card-in{border:2px solid #b23a48;border-radius:16px;padding:28px 32px;max-width:150mm;margin:20mm auto;color:#1b1b1f;font-size:12pt;line-height:1.45}
   .gift-card-brand{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:15pt;color:#b23a48}
   .gift-card-h{font-family:Fraunces,Georgia,serif;font-size:24pt;margin:4px 0 10px}
+  .gift-card-link{color:inherit;font-weight:700;text-decoration:none}
   .gift-card-to,.gift-card-from{font-family:Fraunces,Georgia,serif;font-size:14pt;margin:0 0 6px}
   .gift-card-code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:20pt;font-weight:700;letter-spacing:.08em;text-align:center;border:1px dashed #c98a2b;border-radius:10px;padding:10px;margin:16px 0}
 }

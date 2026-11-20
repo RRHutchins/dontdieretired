@@ -307,7 +307,7 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
     giftCode = (await friend.textContent('.acct-giftcode')).trim();
     assert.match(giftCode, CODE);
     assert.ok(!friend.url().includes('gift='), 'the thanks flag is cleared from the address');
-    await friend.locator('.acct-cardopt summary').click();
+    // the names box is open from the start (20 Nov 2026), so no click is needed
     await friend.fill('#gift-to', 'Alex'); await friend.fill('#gift-from', 'Bea');
     await look(friend, 'gift-bought');
     await friend.emulateMedia({ media: 'print' });
