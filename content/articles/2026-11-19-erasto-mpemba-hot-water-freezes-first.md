@@ -9,6 +9,7 @@ level: any
 photo_file: "File:日本で一般的な家庭用冷凍庫と製氷皿で水道水を冷却して作成した個体の水（氷）のマクロ撮影1.jpg"
 photo_caption: "Ice cubes made by freezing tap water in an ice tray in an ordinary home freezer, photographed close up."
 photo_alt: "A close-up of pale, cloudy ice cubes piled together, some with frosted edges."
+photo_checked: 2026-11-21
 art: hills
 hook: "A batch of ice cream, a crowded school fridge and a puzzle physicists have argued over since 1969."
 lesson: "An odd result is worth writing down and testing, even when the textbook says it cannot happen."
