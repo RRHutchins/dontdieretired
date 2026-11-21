@@ -2,7 +2,7 @@
 
 Travelling alone is common, safe with a few habits, and often the best company you'll have. Here's how.
 
-A practical guide to solo travel: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
+A practical guide to solo travel: FCDO and State Department safety advice, how group tours and walking holidays suit solo travelers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
 
 Book the first night, tell someone your plan, use structure to meet people, and ask about single supplements before you pay.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/travel/solo-travel-after-50/?utm_source=x&utm_medium=
 
 ---
 
-2/ A practical guide to solo travel: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
+2/ A practical guide to solo travel: FCDO and State Department safety advice, how group tours and walking holidays suit solo travelers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
 
 ---
 
@@ -48,7 +48,7 @@ Solo travel: staying safe, dodging the single supplement and meeting people | Bo
 
 Travelling alone is common, safe with a few habits, and often the best company you'll have. Here's how.
 
-A practical guide to solo travel: FCDO and State Department safety advice, how group tours and walking holidays suit solo travellers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
+A practical guide to solo travel: FCDO and State Department safety advice, how group tours and walking holidays suit solo travelers, what single supplements are and how to avoid them, and simple ways to meet people on a slow trip.
 
 Why it matters for anyone over 50: Book the first night, tell someone your plan, use structure to meet people, and ask about single supplements before you pay.
 

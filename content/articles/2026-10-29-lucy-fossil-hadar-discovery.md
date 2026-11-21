@@ -14,7 +14,7 @@ photo_checked: 2026-10-29
 hook: "A scrap of elbow, a Beatles song in camp and 3.2 million years. How Lucy was found in Ethiopia in 1974."
 lesson: "The big find often comes on the walk back, when you are tired and nearly done, so keep looking."
 standfirst: "On 24 November 1974, heading back to the Land Rover in the Afar region of Ethiopia, Donald Johanson spotted a fragment of elbow. It was the first piece of Lucy, the 3.2-million-year-old skeleton that showed our ancestors walked upright before their brains grew large."
-summary: "How Lucy was found at Hadar in Ethiopia in 1974, how she got her names, what her bones showed about walking upright, where she has travelled since, and where the museums' accounts of her disagree."
+summary: "How Lucy was found at Hadar in Ethiopia in 1974, how she got her names, what her bones showed about walking upright, where she has traveled since, and where the museums' accounts of her disagree."
 description: "How the Lucy fossil was found at Hadar, Ethiopia, in 1974, what it showed about walking upright, and where museum accounts of her disagree."
 try_this:
   - "Visit the free Human Evolution gallery at the Natural History Museum in London (ground floor, East Wing) and find the 3.5-million-year-old Laetoli canine. In the US, the Cleveland Museum of Natural History holds the first casts ever made of Lucy's bones; check its website for what is on show."

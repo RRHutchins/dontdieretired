@@ -5,7 +5,7 @@ This brief governs every evergreen guide, article and product on dontdieretired.
 ## Non-negotiables (honesty)
 1. **Nothing invented.** No made-up people, names, ages, quotes, testimonials, reader stories, case studies or "one of our readers". If you want an example, write it as a clearly hypothetical illustration ("Suppose you're 58 and…"), never as a person who exists.
 2. **No statistics you have not verified.** Every number, guideline or research claim must come from a source you have actually fetched and read, and that source must be listed in `sources`. If you can't verify it, leave it out. Established general knowledge (muscles weaken without use; walking is low-impact) needs no citation; specific figures do.
-3. **Preferred sources:** NHS, NICE, UK Chief Medical Officers' guidelines, WHO, CDC, US Physical Activity Guidelines, British Dietetic Association, British Heart Foundation, Royal Osteoporosis Society, Alzheimer's Society, Age UK, AARP, MoneyHelper, Gov.uk, Citizens Advice, FCA, FTC, National Cyber Security Centre, Which?, Ramblers, Sport England, National Institute on Aging. Academic papers are fine if you fetched them. Avoid content farms and other blogs.
+3. **Preferred sources (US and UK equally; give the US equivalent of every UK source you lean on):** NHS, NICE, UK Chief Medical Officers' guidelines, WHO, CDC, US Physical Activity Guidelines, British Dietetic Association, British Heart Foundation, Royal Osteoporosis Society, Alzheimer's Society, Age UK, AARP, MoneyHelper, Gov.uk, Citizens Advice, FCA, FTC, National Cyber Security Centre, Which?, Ramblers, Sport England, National Institute on Aging. Academic papers are fine if you fetched them. Avoid content farms and other blogs.
 4. **No medical, dietary or financial advice.** Frame as general information; "check with your GP (family doctor)" for exercise and diet changes; "this is general information, not financial advice — a regulated adviser can look at your own situation" for money. Never give doses, supplement regimes, or specific investment recommendations.
 5. **No ageist framing.** No "despite their age", no "still", no body-shaming, no "seniors" as a label (say "people over 50", "in your sixties").
 6. **Positive and plain.** Encouraging, practical, warm, occasionally funny. No hype, no "you must", no guilt.
@@ -19,8 +19,8 @@ This brief governs every evergreen guide, article and product on dontdieretired.
 - Every guide tells the reader to keep names, account numbers and medical details out of what they type.
 
 ## Audience and voice
-- Readers are 50–85, UK (~40%) and USA (~40%), plus rest of world. Assume intelligent adults with no specialist knowledge.
-- **British spelling**, but gloss UK-only terms on first use: "GP (family doctor)", "NHS (the UK health service)", "State Pension (the UK's government pension; Social Security in the US)". Give distances and weights in both units where they matter; money as £/$ where it matters.
+- Readers are UK (~40%) and USA (~40%, and the larger audience), plus rest of world. Assume intelligent adults with no specialist knowledge.
+- **US and UK equally (21 Nov 2026; full rules in RUNBOOK §1a0).** American spelling (quotes and proper names unchanged). Gloss UK-only terms for US readers ("GP (family doctor)", "NHS (the UK health service)", "State Pension (the UK's government pension; Social Security in the US)") and US terms for UK readers ("Medicare (US government health insurance from 65)"). Name the US service beside every UK one. Miles and feet first, metric in brackets; money in both currencies with a rate checked that day.
 - Second person ("you"), short paragraphs, sub-headings every 150–250 words, one idea per section.
 - Every article ends with practical steps the reader can take this week.
 

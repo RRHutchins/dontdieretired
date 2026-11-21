@@ -2,7 +2,7 @@
 
 A scrap of elbow, a Beatles song in camp and 3.2 million years. How Lucy was found in Ethiopia in 1974.
 
-How Lucy was found at Hadar in Ethiopia in 1974, how she got her names, what her bones showed about walking upright, where she has travelled since, and where the museums' accounts of her disagree.
+How Lucy was found at Hadar in Ethiopia in 1974, how she got her names, what her bones showed about walking upright, where she has traveled since, and where the museums' accounts of her disagree.
 
 The big find often comes on the walk back, when you are tired and nearly done, so keep looking.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/curious/lucy-fossil-hadar-discovery/?utm_source=x&utm
 
 ---
 
-2/ How Lucy was found at Hadar in Ethiopia in 1974, how she got her names, what her bones showed about walking upright, where she has travelled since, and where the museums' accounts of her disagree.
+2/ How Lucy was found at Hadar in Ethiopia in 1974, how she got her names, what her bones showed about walking upright, where she has traveled since, and where the museums' accounts of her disagree.
 
 ---
 
@@ -48,7 +48,7 @@ Over his shoulder on a hot slope at Hadar, Donald Johanson saw the first bone of
 
 A scrap of elbow, a Beatles song in camp and 3.2 million years. How Lucy was found in Ethiopia in 1974.
 
-How Lucy was found at Hadar in Ethiopia in 1974, how she got her names, what her bones showed about walking upright, where she has travelled since, and where the museums' accounts of her disagree.
+How Lucy was found at Hadar in Ethiopia in 1974, how she got her names, what her bones showed about walking upright, where she has traveled since, and where the museums' accounts of her disagree.
 
 Why it matters for anyone over 50: The big find often comes on the walk back, when you are tired and nearly done, so keep looking.
 

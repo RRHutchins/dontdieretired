@@ -14,7 +14,7 @@ photo_alt: "A large curved building of glass and metal under a blue sky, with tr
 hook: "LiDAR, three depth cameras and a handle that buzzes before each turn. Chieko Asakawa's AI suitcase now leads museum tours."
 lesson: "The most useful AI often starts with one ordinary annoyance, noticed by someone who will not let it go."
 standfirst: "Chieko Asakawa, a computer scientist who has been blind since she was 14, began building a robot suitcase that guides its user in 2017. After a six-month trial at Expo 2025 in Osaka, visitors to the Tokyo museum she runs can take a walk with it three times a day."
-summary: "How a suitcase that bumped into a wall became an AI guide for blind travellers, what the trials have shown, and how to try AI that describes what a camera sees, with the two habits that keep it safe."
+summary: "How a suitcase that bumped into a wall became an AI guide for blind travelers, what the trials have shown, and how to try AI that describes what a camera sees, with the two habits that keep it safe."
 description: "Chieko Asakawa's AI suitcase guides blind visitors round a Tokyo museum. How it works, what the trials found, and how to try AI that describes what it sees."
 try_this:
   - "If your AI app has a camera or photo button, photograph one shelf at home and ask it to list what is there. Then check every item it names against the shelf: it will get some wrong."

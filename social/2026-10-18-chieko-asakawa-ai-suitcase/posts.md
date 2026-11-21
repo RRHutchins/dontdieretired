@@ -2,7 +2,7 @@
 
 LiDAR, three depth cameras and a handle that buzzes before each turn. Chieko Asakawa's AI suitcase now leads museum tours.
 
-How a suitcase that bumped into a wall became an AI guide for blind travellers, what the trials have shown, and how to try AI that describes what a camera sees, with the two habits that keep it safe.
+How a suitcase that bumped into a wall became an AI guide for blind travelers, what the trials have shown, and how to try AI that describes what a camera sees, with the two habits that keep it safe.
 
 The most useful AI often starts with one ordinary annoyance, noticed by someone who will not let it go.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/ai/chieko-asakawa-ai-suitcase/?utm_source=x&utm_mediu
 
 ---
 
-2/ How a suitcase that bumped into a wall became an AI guide for blind travellers, what the trials have shown, and how to try AI that describes what a camera sees, with the two habits that keep it safe.
+2/ How a suitcase that bumped into a wall became an AI guide for blind travelers, what the trials have shown, and how to try AI that describes what a camera sees, with the two habits that keep it safe.
 
 ---
 
@@ -48,7 +48,7 @@ In a Tokyo museum, the tour guide is a suitcase Chieko Asakawa dreamed up at an 
 
 LiDAR, three depth cameras and a handle that buzzes before each turn. Chieko Asakawa's AI suitcase now leads museum tours.
 
-How a suitcase that bumped into a wall became an AI guide for blind travellers, what the trials have shown, and how to try AI that describes what a camera sees, with the two habits that keep it safe.
+How a suitcase that bumped into a wall became an AI guide for blind travelers, what the trials have shown, and how to try AI that describes what a camera sees, with the two habits that keep it safe.
 
 Why it matters for anyone over 50: The most useful AI often starts with one ordinary annoyance, noticed by someone who will not let it go.
 

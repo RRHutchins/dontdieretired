@@ -24,7 +24,7 @@
     {% if t.id in ['call', 'doorstep'] %}
     <p>No tool can check a call or a caller at the door, so answer six quick questions instead. Nothing you tap leaves this page.</p>
     <div class="scam-quiz" data-quiz="{{ t.id }}"></div>
-    <noscript><p>The questions need JavaScript. Without it: if they want money, bank details or a code, are rushing you, or ask you to keep it secret, treat it as a scam and contact the organisation yourself on a number you already trust.</p></noscript>
+    <noscript><p>The questions need JavaScript. Without it: if they want money, bank details or a code, are rushing you, or ask you to keep it secret, treat it as a scam and contact the organization yourself on a number you already trust.</p></noscript>
     {% else %}
     {% for r, name in regs.items() %}<div data-reg="{{ r }}"><p class="scam-reg-label">{{ name }}</p>
       {% if t.tools[r] %}<ul class="scam-tools">{% for x in t.tools[r] %}
@@ -39,7 +39,7 @@
 </div>
 
 <section class="scam-note">
-  <p><strong>No tool is certain.</strong> A convincing scam can pass every check, and a genuine message can look odd. Whatever a tool says, the safe step is always the same: contact the organisation yourself, on a number or web address you already trust, not one given in the message or by the caller.</p>
+  <p><strong>No tool is certain.</strong> A convincing scam can pass every check, and a genuine message can look odd. Whatever a tool says, the safe step is always the same: contact the organization yourself, on a number or web address you already trust, not one given in the message or by the caller.</p>
 </section>
 <p>Know someone who would use this? {{ share_button(cfg.site.url ~ '/scam-help/', 'Scam checker: check it before you act') }}</p>
 
@@ -58,7 +58,7 @@
 <div class="prose narrow">
 <h2 id="about">About this page</h2>
 <p><strong>How we chose.</strong> We only list tools that are free for the basic check and need no account. We prefer official and independent bodies to products that are selling something. We earn nothing from any link on this page.</p>
-<p><strong>What we checked, and what we did not.</strong> On {{ scam_checked }} we opened each organisation's own page and confirmed who runs the tool, what it accepts and that it is free, and we confirmed every reporting route from an official page. {% if scam.tested == 'none' %}We have not tested how accurate the tools are ourselves. {% endif %}Independent reviews we read: {% for x in scam.reviews %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "." }}{% endfor %}</p>
+<p><strong>What we checked, and what we did not.</strong> On {{ scam_checked }} we opened each organization's own page and confirmed who runs the tool, what it accepts and that it is free, and we confirmed every reporting route from an official page. {% if scam.tested == 'none' %}We have not tested how accurate the tools are ourselves. {% endif %}Independent reviews we read: {% for x in scam.reviews %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "." }}{% endfor %}</p>
 <p><strong>What we left out.</strong> {% for x in scam.rejected %}{{ x.name }}: {{ x.why }} {% endfor %}</p>
 <p><strong>The six questions</strong> for calls and doorstep visits use fixed rules drawn from official guidance: {% for x in scam.question_sources %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "." }}{% endfor %} They are a prompt to stop and think, not a verdict.</p>
 <p>Spotted something out of date? {{ contact('Tell us', 'Scam help page') }} and we will fix it.</p>

@@ -1,5 +1,5 @@
 ---
-title: "An asteroid called Leilani, found by Todd Fisher in old telescope images, remembers a neighbourhood lost to lava"
+title: "An asteroid called Leilani, found by Todd Fisher in old telescope images, remembers a neighborhood lost to lava"
 slug: todd-fisher-asteroid-leilani
 date: 2026-11-06
 category: explore
@@ -14,7 +14,7 @@ photo_alt: "A low wall of glowing orange lava and dark rock spreading across the
 photo_checked: 2026-11-06
 hook: "No telescope, no astronomy degree: Todd Fisher found a new asteroid in archive images and named it for his sister's lost home."
 lesson: "Some of the most useful science left to do needs patient eyes more than expensive kit, and anyone with a computer can lend theirs."
-standfirst: "Todd Fisher, a volunteer with a background in economics and political science, took up astronomy in 2023. Searching archive images from the Subaru Telescope on Maunakea, he found a small body nobody had recorded. In April it was officially named Leilani, after the Hawaiian neighbourhood the 2018 Kīlauea eruption swept away."
+standfirst: "Todd Fisher, a volunteer with a background in economics and political science, took up astronomy in 2023. Searching archive images from the Subaru Telescope on Maunakea, he found a small body nobody had recorded. In April it was officially named Leilani, after the Hawaiian neighborhood the 2018 Kīlauea eruption swept away."
 summary: "How a citizen scientist with no training in astronomy found a new asteroid in eight-year-old telescope images, why he named it after Leilani Estates, and how to join the same search from a laptop."
 description: "Todd Fisher found a new asteroid in Subaru Telescope archive images through the COIAS project and named it Leilani. How it happened, and how to start."
 try_this:

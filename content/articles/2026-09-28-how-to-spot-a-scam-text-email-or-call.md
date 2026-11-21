@@ -9,7 +9,7 @@ segments: [learner, carer]
 level: any
 hook: "Scams change costume every week. The pressure underneath never does — learn it once and you'll see them all."
 lesson: "Feel urgency, secrecy or an odd way to pay? Hang up, and call back on the number printed on your card."
-standfirst: "Parcel texts, 'Hi Mum' messages, bank calls, pop-ups that say your computer is infected. Different disguises, same handful of tricks. Here is how to recognise the tricks."
+standfirst: "Parcel texts, 'Hi Mum' messages, bank calls, pop-ups that say your computer is infected. Different disguises, same handful of tricks. Here is how to recognize the tricks."
 summary: "The recurring patterns in scam texts, emails and calls — urgency, secrecy, unexpected contact, unusual payment — with the specific costumes they wear, the hang-up-and-call-back rule, and exactly where to report them in the UK and US."
 try_this:
   - "Forward the next junk text you receive to 7726. It is free, takes ten seconds, and you will never again wonder how."

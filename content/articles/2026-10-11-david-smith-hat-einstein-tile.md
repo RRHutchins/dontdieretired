@@ -11,7 +11,7 @@ subject_age: 64
 art: grid
 hook: "A 13-sided shape, cut from card on a table in Bridlington, answered a question mathematicians had asked for decades."
 lesson: "Play with something for long enough to know what normal looks like, and you will notice the day it does something new."
-standfirst: "David Smith, a retired print technician in East Yorkshire, likes jigsaws, fractals and road maps, and says he was not great at maths at school. In November 2022 a shape he was playing with on his computer began to tile in a way he had not seen before. He cut it out of card, sixty times, and then he emailed someone who could test it."
+standfirst: "David Smith, a retired print technician in East Yorkshire, likes jigsaws, fractals and road maps, and says he was not great at math at school. In November 2022 a shape he was playing with on his computer began to tile in a way he had not seen before. He cut it out of card, sixty times, and then he emailed someone who could test it."
 summary: "David Smith of Bridlington, a hobbyist with no training in mathematics, found 'the hat': the first single shape known to cover a flat surface only in patterns that never repeat. How he found it, why he could not prove it alone, and the free tools that let you put the same tiles on your own table."
 description: "David Smith, a retired print technician in Bridlington, found the 13-sided 'hat', the first einstein tile. How he did it, and how to try the tiles yourself."
 try_this:

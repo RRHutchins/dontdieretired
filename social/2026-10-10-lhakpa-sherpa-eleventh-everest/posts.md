@@ -2,7 +2,7 @@
 
 Eleven Everest summits, trained for on the walk to work in Connecticut. No woman has climbed it more often.
 
-Lhakpa Sherpa of West Hartford, Connecticut, climbed Everest for a record eleventh time on 17 May 2026, working as a guide. How she trained around ordinary jobs, what the NHS says about going above 2,500 metres, and how to build towards a high summit of your own, from a first hill to Mount Washington.
+Lhakpa Sherpa of West Hartford, Connecticut, climbed Everest for a record eleventh time on 17 May 2026, working as a guide. How she trained around ordinary jobs, what the NHS says about going above 2,500 meters, and how to build towards a high summit of your own, from a first hill to Mount Washington.
 
 The big day is built out of ordinary ones: the walk to work, the local hill, the pack you carry anyway.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/stories/lhakpa-sherpa-eleventh-everest/?utm_source=x&
 
 ---
 
-2/ Lhakpa Sherpa of West Hartford, Connecticut, climbed Everest for a record eleventh time on 17 May 2026, working as a guide. How she trained around ordinary jobs, what the NHS says about going above 2,500 metres, and how to build towards a high summit of your own, from a first hill to Mount Washington.
+2/ Lhakpa Sherpa of West Hartford, Connecticut, climbed Everest for a record eleventh time on 17 May 2026, working as a guide. How she trained around ordinary jobs, what the NHS says about going above 2,500 meters, and how to build towards a high summit of your own, from a first hill to Mount Washington.
 
 ---
 
@@ -48,7 +48,7 @@ The eleventh time Lhakpa Sherpa climbed Everest, she went as a guide | The big d
 
 Eleven Everest summits, trained for on the walk to work in Connecticut. No woman has climbed it more often.
 
-Lhakpa Sherpa of West Hartford, Connecticut, climbed Everest for a record eleventh time on 17 May 2026, working as a guide. How she trained around ordinary jobs, what the NHS says about going above 2,500 metres, and how to build towards a high summit of your own, from a first hill to Mount Washington.
+Lhakpa Sherpa of West Hartford, Connecticut, climbed Everest for a record eleventh time on 17 May 2026, working as a guide. How she trained around ordinary jobs, what the NHS says about going above 2,500 meters, and how to build towards a high summit of your own, from a first hill to Mount Washington.
 
 Why it matters for anyone over 50: The big day is built out of ordinary ones: the walk to work, the local hill, the pack you carry anyway.
 

@@ -1,5 +1,5 @@
 ---
-title: "Starting a business with experience behind you: what's different, and what's in your favour"
+title: "Starting a business with experience behind you: what's different, and what's in your favor"
 slug: starting-a-business-after-50
 date: 2026-09-28
 kind: guide
@@ -9,8 +9,8 @@ segments: [changer, learner]
 level: any
 hook: "The advantages of starting a business mid-career are real: experience, a network, some capital, and patience."
 lesson: "Test the idea on real paying customers before you spend anything you would miss, then register and make the first 90 days about selling."
-standfirst: "The stereotype of the founder is 26 and sleeping under a desk. In practice, the person with three decades of judgement, contacts and a bit of savings has a head start — provided they test before they spend."
-summary: "What is genuinely different about starting a business in your fifties or sixties, why most of the differences work in your favour, how to test an idea cheaply, the registration basics in the UK and US, and what to do in the first 90 days."
+standfirst: "The stereotype of the founder is 26 and sleeping under a desk. In practice, the person with three decades of judgment, contacts and a bit of savings has a head start — provided they test before they spend."
+summary: "What is genuinely different about starting a business in your fifties or sixties, why most of the differences work in your favor, how to test an idea cheaply, the registration basics in the UK and US, and what to do in the first 90 days."
 try_this:
   - "Describe your business idea in one sentence to three people who would actually buy it — not family — and write down the first question each of them asks."
   - "Sell one unit of the thing (an hour, a batch, a session, a sample) for real money before you spend anything on branding, premises or stock."

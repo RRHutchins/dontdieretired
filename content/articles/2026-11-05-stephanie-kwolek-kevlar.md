@@ -13,9 +13,9 @@ photo_alt: "A loose skein of golden-brown fibre thread lies coiled in a clear pl
 photo_checked: 2026-11-05
 hook: "A thin, cloudy liquid that colleagues doubted, and a chemist who kept asking for it to be spun. How Kevlar began."
 lesson: "When a result looks wrong, test it before throwing it out: the odd batch is sometimes the discovery."
-standfirst: "In the mid-1960s a DuPont chemist in Wilmington, Delaware, was looking for a light, strong fibre for car tyres. She made a cloudy solution that colleagues doubted, persuaded them to spin it, and found a fibre that DuPont would sell as Kevlar."
-summary: "How Stephanie Kwolek, a DuPont chemist, came to make the liquid-crystal solution that became Kevlar, why the lab hesitated to spin it, what the fibre is used for, and where the histories of it differ."
-description: "How Stephanie Kwolek's cloudy polymer solution at DuPont became Kevlar, the fibre in protective vests and cables, and where the accounts of it differ."
+standfirst: "In the mid-1960s a DuPont chemist in Wilmington, Delaware, was looking for a light, strong fiber for car tires. She made a cloudy solution that colleagues doubted, persuaded them to spin it, and found a fiber that DuPont would sell as Kevlar."
+summary: "How Stephanie Kwolek, a DuPont chemist, came to make the liquid-crystal solution that became Kevlar, why the lab hesitated to spin it, what the fiber is used for, and where the histories of it differ."
+description: "How Stephanie Kwolek's cloudy polymer solution at DuPont became Kevlar, the fiber in protective vests and cables, and where the accounts of it differ."
 try_this:
   - "Look at the sidewall of a bicycle tyre or the label of a pair of work gloves for the word aramid or Kevlar. The Science History Institute lists bicycle tyres among the fibre's uses."
   - "Read Stephanie Kwolek's page in the National Inventors Hall of Fame online. It takes three minutes and gives her dates, her patents and what the fibre is used for."

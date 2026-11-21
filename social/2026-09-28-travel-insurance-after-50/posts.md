@@ -2,7 +2,7 @@
 
 Premiums rise with age and every condition must be declared. Here's how travel insurance really works — UK and US.
 
-A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
+A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travelers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
 
 Declare everything you are asked, buy when you book, check the trip-length and age limits, and never rely on a GHIC or Medicare alone.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/travel/travel-insurance-after-50/?utm_source=x&utm_me
 
 ---
 
-2/ A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
+2/ A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travelers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
 
 ---
 
@@ -48,7 +48,7 @@ Travel insurance: what changes as you get older, what to declare, and where to c
 
 Premiums rise with age and every condition must be declared. Here's how travel insurance really works — UK and US.
 
-A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travellers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
+A plain guide to travel insurance as you get older: why premiums and age limits change, what counts as a pre-existing condition and why it must be declared, what the UK GHIC does and doesn't cover, Medicare's limits abroad for US travelers, and where to compare policies (MoneyHelper, Which?, State Department, CDC).
 
 Why it matters for anyone over 50: Declare everything you are asked, buy when you book, check the trip-length and age limits, and never rely on a GHIC or Medicare alone.
 

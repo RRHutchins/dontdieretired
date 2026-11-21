@@ -2,7 +2,7 @@
 
 A thin, cloudy liquid that colleagues doubted, and a chemist who kept asking for it to be spun. How Kevlar began.
 
-How Stephanie Kwolek, a DuPont chemist, came to make the liquid-crystal solution that became Kevlar, why the lab hesitated to spin it, what the fibre is used for, and where the histories of it differ.
+How Stephanie Kwolek, a DuPont chemist, came to make the liquid-crystal solution that became Kevlar, why the lab hesitated to spin it, what the fiber is used for, and where the histories of it differ.
 
 When a result looks wrong, test it before throwing it out: the odd batch is sometimes the discovery.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/curious/stephanie-kwolek-kevlar/?utm_source=x&utm_med
 
 ---
 
-2/ How Stephanie Kwolek, a DuPont chemist, came to make the liquid-crystal solution that became Kevlar, why the lab hesitated to spin it, what the fibre is used for, and where the histories of it differ.
+2/ How Stephanie Kwolek, a DuPont chemist, came to make the liquid-crystal solution that became Kevlar, why the lab hesitated to spin it, what the fiber is used for, and where the histories of it differ.
 
 ---
 
@@ -48,7 +48,7 @@ Kevlar began as a cloudy liquid that Stephanie Kwolek's lab was wary of spinning
 
 A thin, cloudy liquid that colleagues doubted, and a chemist who kept asking for it to be spun. How Kevlar began.
 
-How Stephanie Kwolek, a DuPont chemist, came to make the liquid-crystal solution that became Kevlar, why the lab hesitated to spin it, what the fibre is used for, and where the histories of it differ.
+How Stephanie Kwolek, a DuPont chemist, came to make the liquid-crystal solution that became Kevlar, why the lab hesitated to spin it, what the fiber is used for, and where the histories of it differ.
 
 Why it matters for anyone over 50: When a result looks wrong, test it before throwing it out: the odd batch is sometimes the discovery.
 

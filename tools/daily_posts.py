@@ -6,7 +6,7 @@
                                    social/<date>-do-<id>/ for every post in content/activity_posts.yaml
 build.py runs write_packs() on every full build and draw_all(dist, helpers) on every build (cards are drawn in CI).
 
-The day's posts, UK time: 08:00 puzzle, 13:00 story, 18:00 thing to do (post_social.py reads `slot`).
+The day's posts: 08:00 UK puzzle, 13:00 UK (8am US Eastern) story, 8pm US Eastern (1am UK) thing to do (post_social.py reads `slot`; " ET" means US Eastern).
 Never rewrites a pack whose date has passed (its text may already be in Buffer, and changed text posts again).
 """
 import datetime as dt, json, pathlib, random, sys
@@ -185,7 +185,7 @@ def activity_packs(today):
         tags = f"{BRAND_TAGS} {TOPIC_TAGS.get(a['category'], '')} #ThingsToDo".replace("  ", " ")
         meta = {
             "title": p["card"], "url": url, "date": p["date"], "category": a["category"], "kind": "activity",
-            "activity": a["id"], "slot": "18:00", "fb_image": True, "photo": bool(p.get("photo")),
+            "activity": a["id"], "slot": "20:00 ET", "fb_image": True, "photo": bool(p.get("photo")),
             "alt": a.get("photo_alt") or p["card"],
             "posts": {
                 "facebook": f"{p['text']}\n\nHow to start, and where to go → {utm(url, 'facebook', 'things-to-do')}"

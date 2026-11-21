@@ -16,7 +16,7 @@ hook: "A road with a steep drop, no street lights and a lot of fog. Percy Shaw's
 lesson: "Good inventions often start with one person paying close attention to a problem they meet every day."
 standfirst: "In the 1930s a Halifax road contractor who had left school at 13 drove home on a dark, foggy road and noticed what was keeping him on it. In 1934 he patented the reflecting road stud, and a world of motorists has been following his studs home ever since."
 summary: "How Percy Shaw turned a nightly drive, two tram lines and a cat on a fence into the cat's eye road stud, how it cleans itself, and why the Second World War made it."
-description: "The true story of how Percy Shaw invented the cat's eye road stud in 1930s Halifax, how it works, and what the colours on the road mean."
+description: "The true story of how Percy Shaw invented the cat's eye road stud in 1930s Halifax, how it works, and what the colors on the road mean."
 try_this:
   - "On your next drive after dark, as a passenger if you can, name the colour of each line of studs: white for lanes or the middle of the road, red for the left edge, amber for the central reservation, green at lay-bys and slip roads."
   - "Pick one everyday object near you and find out who first made it and why. Write the answer on a card: the problem, the person, the year."

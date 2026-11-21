@@ -13,7 +13,7 @@ photo_alt: "Looking down the length of an empty indoor pool, its clear blue wate
 photo_checked: 2026-10-27
 hook: "Sola Alegbe nearly drowned at school and feared water for 30 years. She took her first lesson at 48. Now she teaches swimming."
 lesson: "The first step does not have to be a jump: holding the rail and blowing bubbles counts."
-standfirst: "Sola Alegbe was pushed into the deep end at school and was afraid of water for more than 30 years. At 48, on an exercise bike at her local leisure centre, she watched a swimmer and booked a lesson. She now teaches children, adults and families across London, and has written a book about it."
+standfirst: "Sola Alegbe was pushed into the deep end at school and was afraid of water for more than 30 years. At 48, on an exercise bike at her local leisure center, she watched a swimmer and booked a lesson. She now teaches children, adults and families across London, and has written a book about it."
 summary: "How a Londoner who nearly drowned as a child learned to swim at 48, left her job at Transport for London and qualified as a swimming teacher. What the first lesson is really like, and how to start if water frightens you, or go further if you already swim."
 description: "Sola Alegbe feared water for 30 years, learned to swim at 48 and now teaches it in London. How to start swimming as a nervous adult, or go further."
 try_this:

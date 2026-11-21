@@ -89,7 +89,7 @@
 </section>
 
 <div class="prose narrow fl-about">
-  {% if h.about %}<p>{{ h.about }} Most recently checked {{ h.checked_human }}.</p>{% else %}<p>We list {{ h.noun_one or "a race" }} only after opening its organiser's own page, and every fact here comes from that page or another official page named in our guides. Dates, fees, limits and entry rules change each year: the organiser's page is the one to trust. Being listed does not mean any race or organiser endorses this site. We add more {{ h.noun_many or "races" }} every week; most recently checked {{ h.checked_human }}.</p>{% endif %}
+  {% if h.about %}<p>{{ h.about }} Most recently checked {{ h.checked_human }}.</p>{% else %}<p>We list {{ h.noun_one or "a race" }} only after opening its organizer's own page, and every fact here comes from that page or another official page named in our guides. Dates, fees, limits and entry rules change each year: the organizer's page is the one to trust. Being listed does not mean any race or organizer endorses this site. We add more {{ h.noun_many or "races" }} every week; most recently checked {{ h.checked_human }}.</p>{% endif %}
   {% if h.safety %}<p>{{ h.safety }}</p>{% endif %}
 </div>
 {% endblock %}

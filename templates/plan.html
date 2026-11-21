@@ -14,7 +14,7 @@
   <div class="prose">{{ plan.html | safe }}</div>
   {# the plan is email-gated, so sharing a plan shares the story it belongs to #}
   {{ share_button(a.abs_url, a.title, 'plan') }}
-  <p class="disclosure">General information, not medical advice. Check with your GP before starting a new exercise programme.</p>
+  <p class="disclosure">General information, not medical advice. Check with your GP before starting a new exercise program.</p>
 </article>
 <aside class="sidebar">
   {% set prod = (products.products | selectattr('category', 'equalto', a.category) | list + products.products) | first %}

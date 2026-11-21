@@ -11,7 +11,7 @@ level: any
 hook: "Forgetting a name is normal at any age. The levers that protect your brain are mostly not puzzles — and they are cheap."
 lesson: "Move, sleep, get your hearing and blood pressure checked, see people, and learn one real thing properly."
 standfirst: "Most of us have had the moment: the word on the tip of the tongue, the walk into a room with no idea why. Here is what is normal, what is not, and what the evidence says actually helps."
-summary: "A plain guide to cognitive ageing: the difference between normal forgetfulness and something to raise with a GP, the levers with real evidence behind them, and an honest look at brain-training apps. Start here for the Think section."
+summary: "A plain guide to cognitive aging: the difference between normal forgetfulness and something to raise with a GP, the levers with real evidence behind them, and an honest look at brain-training apps. Start here for the Think section."
 try_this:
   - "Book a hearing test. Most UK high-street opticians and pharmacies offer one free; in the US, ask your doctor or an audiologist."
   - "Pick one thing you have always wanted to learn and put a 20-minute slot for it in your diary on three days this week."

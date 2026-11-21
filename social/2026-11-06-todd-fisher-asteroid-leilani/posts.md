@@ -42,7 +42,7 @@ https://dontdieretired.com/explore/todd-fisher-asteroid-leilani/?utm_source=x&ut
 
 ## pinterest
 
-An asteroid called Leilani, found by Todd Fisher in old telescope images, remembers a neighbourhood lost to lava | Some of the most useful science left to do needs patient eyes more than expensive kit, and anyone with a computer can lend theirs. | https://dontdieretired.com/explore/todd-fisher-asteroid-leilani/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
+An asteroid called Leilani, found by Todd Fisher in old telescope images, remembers a neighborhood lost to lava | Some of the most useful science left to do needs patient eyes more than expensive kit, and anyone with a computer can lend theirs. | https://dontdieretired.com/explore/todd-fisher-asteroid-leilani/?utm_source=pinterest&utm_medium=social&utm_campaign=daily
 
 ## linkedin
 

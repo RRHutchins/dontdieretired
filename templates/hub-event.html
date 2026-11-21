@@ -41,7 +41,7 @@
   <section class="fl-detail hub-race-link">
     <h2>The official page</h2>
     <p><a class="btn" href="{{ e.link.url }}" target="_blank" rel="noopener" data-fl-out>{{ e.link.label }}</a></p>
-    <p class="meta">Opened {{ e.link.checked_human }}. Everything above comes from that page{% if e.more %} and the pages below{% endif %}. {% if h.trust_text %}{{ h.trust_text }}{% else %}Dates, fees, limits and entry rules change every year: the organiser's page is the one to trust.{% endif %}</p>
+    <p class="meta">Opened {{ e.link.checked_human }}. Everything above comes from that page{% if e.more %} and the pages below{% endif %}. {% if h.trust_text %}{{ h.trust_text }}{% else %}Dates, fees, limits and entry rules change every year: the organizer's page is the one to trust.{% endif %}</p>
     {% if e.more %}<ul>{% for m in e.more %}<li><a href="{{ m.url }}" target="_blank" rel="noopener" data-fl-out>{{ m.label }}</a> <span class="meta">(opened {{ m.checked_human }})</span></li>{% endfor %}</ul>{% endif %}
   </section>
   {% if h.guides %}
@@ -58,6 +58,6 @@
   {% endif %}
   <p class="hub-back"><a class="btn btn-ghost" href="/{{ h.slug }}/#hub-f-h">{{ h.back_text or ("Back to the " ~ (h.label | lower) ~ " finder") }}</a></p>
   {% if h.safety %}<p class="disclosure">{{ h.safety }}</p>{% endif %}
-  <p class="disclosure">{% if h.word %}We list {{ h.noun_one }} only after opening its official page. Being listed does not mean the {{ h.word }} or the body behind it endorses this site.{% else %}We list a race only after opening its organiser's own page. Being listed does not mean the race or its organiser endorses this site.{% endif %} Written with AI from the official page and checked against it.</p>
+  <p class="disclosure">{% if h.word %}We list {{ h.noun_one }} only after opening its official page. Being listed does not mean the {{ h.word }} or the body behind it endorses this site.{% else %}We list a race only after opening its organizer's own page. Being listed does not mean the race or its organizer endorses this site.{% endif %} Written with AI from the official page and checked against it.</p>
 </article>
 {% endblock %}

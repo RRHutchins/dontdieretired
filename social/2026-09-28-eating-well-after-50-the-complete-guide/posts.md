@@ -2,7 +2,7 @@
 
 With age you need fewer calories but more of the good stuff. Here's how to eat well without a diet.
 
-A plain-English guide to eating well, built on NHS, BDA and US Dietary Guidelines advice. What changes with age, how to get enough protein, fibre, calcium and vitamin D, sensible drinking, cooking for one or two, and why diets fail.
+A plain-English guide to eating well, built on NHS, BDA and US Dietary Guidelines advice. What changes with age, how to get enough protein, fiber, calcium and vitamin D, sensible drinking, cooking for one or two, and why diets fail.
 
 Forget diets — build every day around protein, plants, fibre, fluids and a bit of planning, and let the rest look after itself.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/eat/eating-well-after-50-the-complete-guide/?utm_sour
 
 ---
 
-2/ A plain-English guide to eating well, built on NHS, BDA and US Dietary Guidelines advice. What changes with age, how to get enough protein, fibre, calcium and vitamin D, sensible drinking, cooking for one or two, and why diets fail.
+2/ A plain-English guide to eating well, built on NHS, BDA and US Dietary Guidelines advice. What changes with age, how to get enough protein, fiber, calcium and vitamin D, sensible drinking, cooking for one or two, and why diets fail.
 
 ---
 
@@ -48,7 +48,7 @@ Eating well: the complete, no-fad guide | Forget diets — build every day aroun
 
 With age you need fewer calories but more of the good stuff. Here's how to eat well without a diet.
 
-A plain-English guide to eating well, built on NHS, BDA and US Dietary Guidelines advice. What changes with age, how to get enough protein, fibre, calcium and vitamin D, sensible drinking, cooking for one or two, and why diets fail.
+A plain-English guide to eating well, built on NHS, BDA and US Dietary Guidelines advice. What changes with age, how to get enough protein, fiber, calcium and vitamin D, sensible drinking, cooking for one or two, and why diets fail.
 
 Why it matters for anyone over 50: Forget diets — build every day around protein, plants, fibre, fluids and a bit of planning, and let the rest look after itself.
 

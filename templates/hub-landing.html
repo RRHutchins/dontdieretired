@@ -52,7 +52,7 @@
 
 <p class="hub-back"><a class="btn btn-ghost" href="/{{ h.slug }}/#hub-f-h">{{ h.back_text or ("Search all in the " ~ (h.label | lower) ~ " finder") }}</a></p>
 <div class="prose narrow fl-about">
-  <p>We list {{ h.noun_one or "a race" }} only after opening its organiser's own page, and the facts above come from those pages, each linked from its {{ h.word or "race" }} page with the date we opened it. Dates, fees, limits and entry rules change every year: the organiser's page is the one to trust. Being listed does not mean any {{ h.word or "race" }} or organiser endorses this site.</p>
+  <p>We list {{ h.noun_one or "a race" }} only after opening its organizer's own page, and the facts above come from those pages, each linked from its {{ h.word or "race" }} page with the date we opened it. Dates, fees, limits and entry rules change every year: the organizer's page is the one to trust. Being listed does not mean any {{ h.word or "race" }} or organizer endorses this site.</p>
   {% if h.safety %}<p>{{ h.safety }}</p>{% endif %}
 </div>
 {% endblock %}

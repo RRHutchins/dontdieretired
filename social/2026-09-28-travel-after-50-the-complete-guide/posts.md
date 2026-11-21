@@ -2,7 +2,7 @@
 
 More time, less rush. The start-here guide to travelling well — slower, longer, and properly insured.
 
-A plain-English overview of travelling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
+A plain-English overview of traveling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
 
 Go to fewer places for longer, travel by land where you can, sort insurance and health early, and let the trip be unhurried.
 
@@ -30,7 +30,7 @@ https://dontdieretired.com/travel/travel-after-50-the-complete-guide/?utm_source
 
 ---
 
-2/ A plain-English overview of travelling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
+2/ A plain-English overview of traveling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
 
 ---
 
@@ -48,7 +48,7 @@ Travel: the complete guide to going further, slower and for longer | Go to fewer
 
 More time, less rush. The start-here guide to travelling well — slower, longer, and properly insured.
 
-A plain-English overview of travelling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
+A plain-English overview of traveling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides.
 
 Why it matters for anyone over 50: Go to fewer places for longer, travel by land where you can, sort insurance and health early, and let the trip be unhurried.
 

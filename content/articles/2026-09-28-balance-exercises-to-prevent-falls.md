@@ -1,5 +1,5 @@
 ---
-title: "Balance: the exercise most people skip, and five ways to practise it"
+title: "Balance: the exercise most people skip, and five ways to practice it"
 slug: balance-exercises-to-prevent-falls
 date: 2026-09-28
 kind: guide
@@ -9,7 +9,7 @@ segments: [restarter, carer]
 level: starter
 hook: "More than one in four people over 65 fall each year. Two minutes a day of balance practice is the cheapest defence."
 lesson: "Practise standing on one leg and walking heel-to-toe, near a wall, every day."
-standfirst: "Nobody puts balance on their to-do list, and it fades without anyone noticing until a kerb or a rug catches them out. Here is why it matters and five safe ways to practise at home."
+standfirst: "Nobody puts balance on their to-do list, and it fades without anyone noticing until a curb or a rug catches them out. Here is why it matters and five safe ways to practice at home."
 summary: "Why falls are common after 65 and largely preventable, five simple balance exercises done near a wall or chair, what tai chi offers, and when to ask a GP or physiotherapist for help."
 try_this:
   - "Stand on one leg with your fingertips on a wall for ten seconds, each side, while the kettle boils. Every day."

@@ -82,7 +82,7 @@
       <li>{{ kthumb(t.name) }}<span class="kt-mini-body"><span class="kt-aw-label">{{ a.label }}</span> <strong>{{ p.name }}</strong> <span class="meta">{{ p.score }}/10 · in {{ p.n }} of {{ t.N }} reviews{% if p.band %} · {{ p.band }}{% endif %}</span></span>
         <a class="prod-btn prod-btn-sm" href="{{ p.buy }}" rel="sponsored nofollow noopener" target="_blank" data-aff>See prices<span class="prod-src">Amazon</span></a></li>{% endfor %}</ul>{% endfor %}
     <p><a class="btn btn-small" href="/kit/{{ t.id }}/">Compare all {{ t.main|length }} {{ t.name|lower }} reviewers recommend <span aria-hidden="true">→</span></a></p>
-    <p class="disclosure">Scores summarise what independent reviewers say; we have not tested these. <a href="/kit/how-we-score/">How the scores work</a>. Affiliate links: we may earn a commission at no extra cost to you.</p>
+    <p class="disclosure">Scores summarize what independent reviewers say; we have not tested these. <a href="/kit/how-we-score/">How the scores work</a>. Affiliate links: we may earn a commission at no extra cost to you.</p>
   </aside>
   {% endfor %}
   {% if not xg_show and c.kit %}{{ affiliate_box(c.kit, "Kit for this", c.category) }}{% endif %}

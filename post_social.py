@@ -20,9 +20,11 @@ API = "https://api.buffer.com"
 KEY = os.environ.get("BUFFER_API_KEY", "").strip()
 SITE = "https://dontdieretired.com"
 UK = ZoneInfo("Europe/London")
+ET = ZoneInfo("America/New_York")
 START_DATE = "2026-10-06"                # packs dated before this are never posted (no back-catalogue flood)
 SLOTS_UK = ["13:00", "18:00", "08:00", "20:00", "10:30", "15:30"]   # in order of preference: 13:00 UK is 8am US Eastern, 18:00 UK is 1pm. One slot per pack
-# A pack may name its own slot (meta.json "slot"): the daily puzzle 08:00, the story 13:00, the thing to do 18:00 (RUNBOOK §6d).
+# A pack may name its own slot (meta.json "slot"): the daily puzzle 08:00, the story 13:00, the thing to do "20:00 ET"
+# (8pm US Eastern, 1am UK; RUNBOOK §1a0 and §6d). A slot ending " ET" is US Eastern time, anything else is UK time.
 SERVICES = {"facebook": "facebook", "instagram": "instagram", "twitter": "x"}   # Buffer service -> key in meta.json posts
 
 
@@ -112,12 +114,15 @@ def wait_for(url, tries=12):
     return False
 
 
-def pick_slot(taken, now, want=None):
-    """The pack's own slot if free and still ahead; else the first free preferred UK slot still ahead today;
+def pick_slot(taken, now, want=None, day=None):
+    """The pack's own slot if free and still ahead (a " ET" slot on the pack's own date); else the first free preferred UK slot still ahead today;
     if none, ten minutes from now, then every half hour."""
     for hhmm in ([want] if want else []) + SLOTS_UK:
-        h, m = map(int, hhmm.split(":"))
-        t = now.astimezone(UK).replace(hour=h, minute=m, second=0, microsecond=0)
+        zone = ET if hhmm.endswith(" ET") else UK
+        h, m = map(int, hhmm.replace(" ET", "").split(":"))
+        t = now.astimezone(zone).replace(hour=h, minute=m, second=0, microsecond=0)
+        if zone is ET and day:   # a US Eastern slot belongs to the pack's own date (8pm ET on that date = 1am UK the next day)
+            t = dt.datetime.combine(dt.date.fromisoformat(day), dt.time(h, m), tzinfo=ET)
         if t > now + dt.timedelta(minutes=10) and all(abs((t - x).total_seconds()) > 300 for x in taken):
             return t
     t = now + dt.timedelta(minutes=10)
@@ -155,7 +160,7 @@ def post(named=None):
         todo = [c for c in ch if not same(c, live) and len(same(c, have)) < 2]
         if not todo:
             lines.append(f"{slug}: already in Buffer on every channel"); continue
-        when = pick_slot(taken, now, meta.get("slot")); taken.append(when)
+        when = pick_slot(taken, now, meta.get("slot"), pack.name[:10]); taken.append(when)
         cards = {"instagram": f"{SITE}/static/social/{slug}.png", "twitter": f"{SITE}/static/img/{slug}.png",
                  "facebook": f"{SITE}/static/social/{slug}.png"}
         for c in todo:

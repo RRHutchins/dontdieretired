@@ -11,7 +11,7 @@ level: any
 hook: "More time, less rush. The start-here guide to travelling well — slower, longer, and properly insured."
 lesson: "Go to fewer places for longer, travel by land where you can, sort insurance and health early, and let the trip be unhurried."
 standfirst: "With age the calendar loosens and the body prefers not to be rushed. That is the perfect combination for a different kind of travel: fewer destinations, longer stays, trains instead of airports, and time to get to know a place. This is the start-here guide."
-summary: "A plain-English overview of travelling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides."
+summary: "A plain-English overview of traveling well: what slow travel means in practice, how to budget for a long stay, the health and insurance steps that matter more with age, solo versus group travel, accessibility, and where to go next in our travel guides."
 try_this:
   - "Check your passport's issue and expiry dates tonight against the rules for the country you most want to visit."
   - "Write down every medical condition, medicine and recent appointment on one sheet, ready for an insurance quote."

@@ -9,7 +9,7 @@ segments: [restarter, mover]
 level: starter
 hook: "Knees complaining about running? Water and wheels carry your weight for you. Here is how to start, even from zero."
 lesson: "Pick the one you can get to easily, book a lesson if you need one, and build towards 150 minutes a week."
-standfirst: "If walking hurts or running is out of the question, swimming and cycling let you work your heart and lungs without pounding your joints. Both can be learnt at any age, and both count fully towards the activity guidelines."
+standfirst: "If walking hurts or running is out of the question, swimming and cycling let you work your heart and lungs without pounding your joints. Both can be learned at any age, and both count fully towards the activity guidelines."
 summary: "Why swimming and cycling are the low-impact options health bodies recommend, how to learn or relearn as an adult in the UK and US, what an e-bike does and does not do, and how to build up to the 150-minute guideline without hurting yourself."
 try_this:
   - "Look up your nearest pool's adult lane-swim or adult-lessons timetable and put one session in the diary."

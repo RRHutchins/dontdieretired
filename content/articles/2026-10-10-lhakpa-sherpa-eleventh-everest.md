@@ -12,7 +12,7 @@ art: mountains
 hook: "Eleven Everest summits, trained for on the walk to work in Connecticut. No woman has climbed it more often."
 lesson: "The big day is built out of ordinary ones: the walk to work, the local hill, the pack you carry anyway."
 standfirst: "Lhakpa Sherpa, 52, of West Hartford, Connecticut, reached the top of Everest on 17 May for the eleventh time, more than any other woman, and this time she was guiding a client. For years she prepared for the mountain by walking to work and hiking the hills near home."
-summary: "Lhakpa Sherpa of West Hartford, Connecticut, climbed Everest for a record eleventh time on 17 May 2026, working as a guide. How she trained around ordinary jobs, what the NHS says about going above 2,500 metres, and how to build towards a high summit of your own, from a first hill to Mount Washington."
+summary: "Lhakpa Sherpa of West Hartford, Connecticut, climbed Everest for a record eleventh time on 17 May 2026, working as a guide. How she trained around ordinary jobs, what the NHS says about going above 2,500 meters, and how to build towards a high summit of your own, from a first hill to Mount Washington."
 description: "Lhakpa Sherpa of Connecticut has climbed Everest eleven times, more than any other woman. How she trained around ordinary jobs, and how to build towards a summit."
 try_this:
   - "Pick the nearest hill you can walk up in under an hour and go up it this week at a pace you could talk at. Note the time."
