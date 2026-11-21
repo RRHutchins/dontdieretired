@@ -8713,24 +8713,37 @@
   regions:
   - uk
   - us
-  why: These are learning groups run for the pleasure of it, with no exams and subjects ranging from geology to jazz. Members teach each other, so you may well end up leading a session yourself.
+  why: These are learning groups run for the pleasure of it, with no exams and subjects from history and languages to gardening and photography. Members teach each other, so you may well end up leading
+    a session yourself.
   start:
   - Look up your nearest u3a in the UK, or Osher institute at a US university.
   - Read the list of interest groups or classes and pick one.
   - Join, attend your first meeting and introduce yourself to the group leader.
   links:
-  - label: 'u3a: home page'
-    url: https://www.u3a.org.uk/
+  - label: 'u3a: what we do'
+    url: https://www.u3a.org.uk/what-we-do
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-21'
   - label: 'u3a: join a u3a'
-    url: https://www.u3a.org.uk/join
+    url: https://u3a.org.uk/join
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-21'
+  - label: 'u3a: find your local u3a (map search by postcode)'
+    url: https://www.u3a.org.uk/get-involved/find-your-local-u3a
+    region: uk
+    checked: '2026-11-21'
+  - label: 'u3a: how to join Interest Groups Online'
+    url: https://www.u3a.org.uk/what-we-do/learning/interest-groups-online/how-to-join-igo
+    region: any
+    checked: '2026-11-21'
   - label: 'Bernard Osher Foundation: Osher Lifelong Learning Institutes'
     url: https://www.osherfoundation.org/olli.html
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-21'
+  - label: 'Osher National Resource Center (Northwestern University): the Osher Lifelong Learning Institute network'
+    url: https://sps.northwestern.edu/oshernrc/about/osher-lifelong-learning-institute-network.html
+    region: us
+    checked: '2026-11-21'
   guide: going-back-to-study-after-50
   kit:
   - name: Notebook and pen set
@@ -8739,6 +8752,122 @@
   - name: Tote bag
     why: carries books and handouts to meetings
     url: https://www.amazon.co.uk/s?k=canvas+tote+bag
+  related:
+  - finish-an-openlearn-course
+  - go-to-a-free-gresham-lecture
+  - join-a-local-history-society
+  - join-a-book-club
+  seo_title: What is u3a? How to find and join one near you
+  description: What a u3a is and how to find and join one, what it costs, and how the US Osher Lifelong Learning Institutes compare, with fees as last listed.
+  detail:
+  - h: What a u3a is really like
+    p:
+    - 'u3a describes itself as a network of locally run groups, with over 1,000 locations across the UK. Learning is member-led and member-run: in u3a''s own words there are "no teachers and students, no
+      classes and no exams". Each group has a volunteer leader or co-ordinator with an interest or some expertise in the subject, and the national u3a office is part of a charity, the Third Age Trust.'
+    - You join a local u3a for a modest annual fee and can then join its interest groups, or start one of your own. Age UK says that once you are a member you can usually join as many groups as you like,
+      though some activities, such as craft materials or trip admission, cost extra. Groups meet in members' homes or in libraries, churches and community centres.
+    - On who can join, u3a says there isn't an age limit for membership, and that most members are no longer in full-time employment. Age UK's guide puts it more firmly, saying members must be no longer
+      in full-time work, so if you work full time, ask your local u3a.
+  - h: u3a and OLLI side by side
+    table:
+      head:
+      - ''
+      - u3a (UK)
+      - Osher Lifelong Learning Institute (US)
+      rows:
+      - - Who runs it
+        - Each local u3a is run by its members; the national office is part of the Third Age Trust
+        - Each OLLI is part of a college or university and is funded in part by the Bernard Osher Foundation
+      - - Who teaches
+        - 'Members: volunteer group leaders, with no teachers and students'
+        - Varies by institute; at the University of Minnesota course leaders are volunteers, who need not be members or professional teachers
+      - - Exams or grades
+        - None
+        - 'None: the Osher National Resource Center says there are no tests and no grades'
+      - - Who it is for (in their words)
+        - No age limit for membership; most members are no longer in full-time employment
+        - Designed for people "50 and better", in the Osher National Resource Center's words
+      - - Cost (as last listed)
+        - Set by each u3a. Guildford Area u3a £35 a year per person; Elgin & District u3a £19 for April 2026 to March 2027
+        - Set by each OLLI. Vanderbilt $80 a year from July 2026, with course fees on top; University of Minnesota $375 for 12 months
+      - - Online option
+        - Interest Groups Online, a separate membership from your local u3a; new members joining after 1 October 2026 pay £6 and renew on 1 April 2027, when existing members renew at £12
+        - Varies by institute
+      - - How to find one
+        - 'u3a''s Google Map: search your postcode and click a pin, then contact that u3a directly'
+        - The Osher National Resource Center's map of 124 institutes in all 50 states and Washington DC, with courses in 334 cities and towns
+    after: Fees are those each page listed when we checked. Local u3as and OLLIs each set their own fees and sign-up process, so check the one near you.
+  - h: Joining a u3a, step by step
+    list:
+    - Open the Find your local u3a page, open the map, search your postcode and zoom out until a coloured pin appears.
+    - Click the pin for the u3a's details, then contact it, as each u3a runs its own membership and sign-up.
+    - Ask whether you can try a group first. Elgin & District u3a, for example, says to ask its membership secretary, who passes the request to the group leader.
+    - Pay the annual fee. At Guildford you can pay by bank transfer or by post with a cheque; methods vary by u3a.
+    - If you are unwell, live somewhere isolated or find it hard to leave home, Age UK points to Interest Groups Online, whose groups you join online.
+  - h: How an Osher institute works
+    p:
+    - Osher Lifelong Learning Institutes, known as OLLIs, offer non-credit courses at university level, alongside lectures, study groups, events and educational travel. The Osher National Resource Center
+      at Northwestern University calls it learning solely for the joy of learning.
+    - Unlike a u3a, an OLLI usually sits on a campus and sells a membership that opens up its course catalogue. What that membership includes varies. Vanderbilt's $80 a year covers things like free parking,
+      library access and Lunch and Learns, with course fees charged separately. Minnesota's 12-month membership gives access to hundreds of courses, groups and events, and it has a scholarship fund for
+      people with financial need.
+  faq:
+  - q: What is u3a?
+    a: A network of local, member-run learning groups with over 1,000 locations across the UK. Members share what they know in interest groups, with no teachers and students and no exams.
+  - q: How much does it cost to join a u3a?
+    a: Each u3a sets its own annual fee. When we checked, Guildford Area u3a listed £35 a year per person and Elgin & District u3a £19 for 2026-27; some groups also ask for money towards room hire or materials.
+  - q: How do I find a u3a near me?
+    a: Use the map on u3a's Find your local u3a page, search your postcode, click the nearest pin and contact that u3a directly.
+  - q: Do you have to be retired to join a u3a?
+    a: u3a says there isn't an age limit for membership and that most members are no longer in full-time employment. Age UK's guide says members must be no longer in full-time work, so ask your local u3a.
+  - q: Is there an online u3a?
+    a: Yes. Interest Groups Online is a separate membership from your local u3a, joined through the u3a members' portal. It listed £6 for new members joining after 1 October 2026, renewing on 1 April 2027,
+      and £12 for existing members renewing then.
+  - q: What is an Osher Lifelong Learning Institute?
+    a: A lifelong learning programme based at a US college or university and funded in part by the Bernard Osher Foundation. There are 124, offering non-credit courses with no tests and no grades.
+  sources:
+  - label: u3a, What we do
+    url: https://www.u3a.org.uk/what-we-do
+    checked: '2026-11-21'
+  - label: u3a, Join a u3a
+    url: https://u3a.org.uk/join
+    checked: '2026-11-21'
+  - label: u3a, Find your local u3a
+    url: https://www.u3a.org.uk/get-involved/find-your-local-u3a
+    checked: '2026-11-21'
+  - label: u3a, How to join IGO
+    url: https://www.u3a.org.uk/what-we-do/learning/interest-groups-online/how-to-join-igo
+    checked: '2026-11-21'
+  - label: Age UK, u3a – Later life learning
+    url: https://www.ageuk.org.uk/information-advice/work-learning/education-training/university-of-the-third-age/
+    checked: '2026-11-21'
+  - label: Guildford Area u3a, Join/Renew
+    url: https://guildford.u3asite.uk/joinrenew/
+    checked: '2026-11-21'
+  - label: Elgin & District u3a, Membership Information
+    url: https://elgin.u3asite.uk/membership/
+    checked: '2026-11-21'
+  - label: The Bernard Osher Foundation, Osher Lifelong Learning Institutes
+    url: https://www.osherfoundation.org/olli.html
+    checked: '2026-11-21'
+  - label: Osher National Resource Center, Northwestern University, The Osher Lifelong Learning Institute Network
+    url: https://sps.northwestern.edu/oshernrc/about/osher-lifelong-learning-institute-network.html
+    checked: '2026-11-21'
+  - label: Vanderbilt University, OLLI Membership Program
+    url: https://www.vanderbilt.edu/olli/membership/
+    checked: '2026-11-21'
+  - label: University of Minnesota, OLLI at the University of Minnesota
+    url: https://ccaps.umn.edu/olli
+    checked: '2026-11-21'
+  inspire:
+  - kind: read
+    person: Joan Mansperger, from Lewes, Delaware
+    line: Has taught courses at the University of Delaware's Osher institute on green living, sea level rise, tree identification, weather and beachcombing, after careers as a Navy air traffic controller
+      and in human resources.
+    title: OLLI member shares her passion for the environment
+    outlet: Osher Lifelong Learning Institute at the University of Delaware
+    url: https://www.olli.udel.edu/2020/01/29/joan-mansperger-volunteer/
+    checked: '2026-11-21'
 - id: toastmasters-first-speech
   title: Give your first prepared speech at a Toastmasters club
   category: think
@@ -9019,7 +9148,150 @@
   - label: 'GOV.UK: make, register or end a lasting power of attorney'
     url: https://www.gov.uk/power-of-attorney
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-21'
+  - label: 'Office of the Public Guardian (Scotland): power of attorney fees'
+    url: https://www.publicguardian-scotland.gov.uk/power-of-attorney/fees
+    region: uk
+    checked: '2026-11-21'
+  - label: 'nidirect: managing your affairs and enduring power of attorney (Northern Ireland)'
+    url: https://www.nidirect.gov.uk/articles/managing-your-affairs-and-enduring-power-attorney
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Consumer Financial Protection Bureau: Managing someone else''s money, help for agents under a power of attorney (PDF)'
+    url: https://files.consumerfinance.gov/f/documents/cfpb_msem_national_agents_guide.pdf
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'How to set up a lasting power of attorney: steps and fees'
+  description: How to set up a lasting power of attorney, step by step, with the fee, how long registration takes, and how Scotland and Northern Ireland differ.
+  detail:
+  - h: What a lasting power of attorney is
+    p:
+    - A lasting power of attorney (LPA) lets you, the donor, appoint one or more people, your attorneys, to make decisions for you, or help you make them, if you lack mental capacity. You must be 18 or
+      over and have mental capacity when you make it. This page is general information only, not legal advice.
+    - There are two types, and you can make one or both. A property and financial affairs LPA covers things such as bank accounts, bills, benefits, pensions and selling your home, and can be used once registered,
+      with your permission. A health and welfare LPA covers your daily routine, medical care, moving into a care home and life-sustaining treatment, and can only be used when you cannot make your own decisions.
+      An LPA is legally binding only in England and Wales.
+  - h: Making one, step by step
+    list:
+    - Choose your attorneys. They must be 18 or over and have mental capacity; they can be a relative, friend, partner or a professional such as a solicitor. Someone who is bankrupt or has a Debt Relief
+      Order cannot be an attorney for property and financial affairs.
+    - If you appoint more than one, decide whether they must all agree (jointly) or can each act alone (jointly and severally). You can also name replacement attorneys.
+    - Fill in the forms, either with the online service on GOV.UK, which guides you through each step and lets you save and come back, or on paper forms you download and print.
+    - Find a certificate provider, who confirms you are making the LPA by choice and understand it. MoneyHelper describes this as someone who is not a relative and has known you for at least two years,
+      or a professional such as a GP or lawyer. An attorney cannot be your certificate provider.
+    - Sign. Everyone signs the same printed original, not copies and not digitally, with witnesses aged 18 or over. MoneyHelper sets out the order as you first, then the certificate provider, then the attorneys.
+    - Send form LP3 to anyone you chose to be told. They have three weeks to raise concerns with the Office of the Public Guardian, the official body that registers LPAs.
+    - Register the LPA with the Office of the Public Guardian and pay the fee.
+  - h: Fees and timing in England and Wales
+    table:
+      head:
+      - Item
+      - Cost or time (as last listed)
+      rows:
+      - - Register one LPA
+        - £92
+      - - Register both types
+        - £184
+      - - Correct a mistake and reapply within 3 months
+        - £46
+      - - Reduced fee
+        - Possible if you earn less than £12,000
+      - - Exemption
+        - Possible if you get certain benefits, such as Income Support
+      - - Time to register
+        - 8 to 10 weeks if there are no mistakes; usually quicker if you make and pay online
+  - h: England and Wales, Scotland and Northern Ireland compared
+    table:
+      head:
+      - ''
+      - England and Wales
+      - Scotland
+      - Northern Ireland
+      rows:
+      - - Name
+        - Lasting power of attorney
+        - Continuing power of attorney (money and property) and welfare power of attorney
+        - Enduring power of attorney
+      - - What it covers
+        - Money and property, or health and welfare, or both (two separate documents)
+        - Money and property, or health and welfare, or both
+        - Financial matters only
+      - - Who confirms you understand it
+        - A certificate provider, aged 18 or over, who is not one of your attorneys
+        - A certificate signed by a practising solicitor or a registered doctor
+        - Not set out on the official page we checked
+      - - Where it is registered
+        - Office of the Public Guardian
+        - Office of the Public Guardian (Scotland)
+        - High Court (Office of Care and Protection)
+      - - When it is registered
+        - Before it can be used
+        - Before it can be used, even while you are capable
+        - When your attorney believes you are becoming unable to manage your affairs
+      - - Registration fee (as last listed)
+        - £92 each
+        - £99
+        - £189
+    after: In Scotland attorneys can be aged over 16. Each nation's own official page is the place to check current fees and forms.
+  faq:
+  - q: How much does it cost to register a lasting power of attorney?
+    a: £92 for one LPA, or £184 for both types, as last listed on GOV.UK. You may pay a reduced fee if you earn less than £12,000, or nothing if you get certain benefits.
+  - q: How long does a lasting power of attorney take to register?
+    a: GOV.UK says 8 to 10 weeks if there are no mistakes, and that it is usually quicker if you make and pay online.
+  - q: Do I need a solicitor to make a lasting power of attorney?
+    a: MoneyHelper says you do not need a solicitor, but suggests professional help if your situation is complex or you are unsure. This page is general information only, so take questions about your own
+      circumstances to a solicitor, or to the Office of the Public Guardian about the forms and registration.
+  - q: Who can be a certificate provider for a lasting power of attorney?
+    a: Someone aged 18 or over who is not one of your attorneys. MoneyHelper describes them as someone who is not a relative and has known you for at least two years, or a professional such as a GP or lawyer.
+  - q: Is a lasting power of attorney valid in Scotland or Northern Ireland?
+    a: GOV.UK says an LPA is legally binding only in England and Wales. Scotland has continuing and welfare powers of attorney, registered with its own Office of the Public Guardian, and Northern Ireland
+      has enduring powers of attorney, which cover money only.
+  - q: What about a power of attorney in the US?
+    a: The Consumer Financial Protection Bureau's guide for agents under a power of attorney says an agent's authority is strictly limited to what the document and state law allow, that state laws vary,
+      and to talk to a lawyer if you have questions about your duties.
+  sources:
+  - label: GOV.UK, Make, register or end a lasting power of attorney
+    url: https://www.gov.uk/power-of-attorney
+    checked: '2026-11-21'
+  - label: GOV.UK, Make, register or end a lasting power of attorney, Choose your attorney
+    url: https://www.gov.uk/power-of-attorney/choose
+    checked: '2026-11-21'
+  - label: GOV.UK, Make, register or end a lasting power of attorney, Make a lasting power of attorney
+    url: https://www.gov.uk/power-of-attorney/make-lasting-power
+    checked: '2026-11-21'
+  - label: GOV.UK, Make, register or end a lasting power of attorney, Register a lasting power of attorney
+    url: https://www.gov.uk/power-of-attorney/register
+    checked: '2026-11-21'
+  - label: MoneyHelper, How to make and register a power of attorney
+    url: https://www.moneyhelper.org.uk/en/family-and-care/long-term-care/setting-up-a-power-of-attorney
+    checked: '2026-11-21'
+  - label: Office of the Public Guardian (Scotland), Fees
+    url: https://www.publicguardian-scotland.gov.uk/power-of-attorney/fees
+    checked: '2026-11-21'
+  - label: Office of the Public Guardian (Scotland), What is a power of attorney (leaflet, February 2015)
+    url: https://publicguardian-scotland.gov.uk/docs/librariesprovider3/poa/pdf-documents/what-is-a-power-of-attorney5b6cc9a6898069d2b500ff0000d74aa7.pdf?sfvrsn=2
+    checked: '2026-11-21'
+  - label: nidirect, Managing your affairs and enduring power of attorney
+    url: https://www.nidirect.gov.uk/articles/managing-your-affairs-and-enduring-power-attorney
+    checked: '2026-11-21'
+  - label: Department of Justice (Northern Ireland), Information on Enduring Powers of Attorney (EPA)
+    url: https://www.justice-ni.gov.uk/articles/information-enduring-powers-attorney-epa
+    checked: '2026-11-21'
+  - label: Consumer Financial Protection Bureau, Managing someone else's money, Help for agents under a power of attorney
+    url: https://files.consumerfinance.gov/f/documents/cfpb_msem_national_agents_guide.pdf
+    checked: '2026-11-21'
+  kit:
+  - name: A4 document wallet
+    why: keeps the signed original forms together and flat until you post them
+    url: https://www.amazon.co.uk/s?k=a4+document+wallet
+  - name: Fireproof document bag
+    why: somewhere safe at home for the registered LPA and other important papers
+    url: https://www.amazon.co.uk/s?k=fireproof+document+bag
+  related:
+  - make-or-update-your-will
+  - book-a-pension-wise-appointment
+  - find-your-lost-pensions
+  - volunteer-with-citizens-advice
 - id: find-your-lost-pensions
   title: Track down every pension from your past jobs
   category: money
@@ -9832,7 +10104,148 @@
   - label: 'GOV.UK: become a magistrate'
     url: https://www.gov.uk/become-magistrate
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-21'
+  - label: 'Magistrates Recruitment (Judiciary of England and Wales): the application process'
+    url: https://magistrates.judiciary.uk/application-process/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Scottish Courts and Tribunals Service: Justice of the Peace recruitment'
+    url: https://www.scotcourts.gov.uk/about-us/careers/justice-of-the-peace-recruitment
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Northern Ireland Judicial Appointments Commission: Lay Magistrates FAQs'
+    url: https://www.nijac.gov.uk/lay-magistrates-faqs
+    region: uk
+    checked: '2026-11-21'
+  seo_title: 'How to become a magistrate: who can apply and the steps'
+  description: How to become a magistrate in England and Wales, who can apply, the days a year it takes, the interview, and how Scotland and Northern Ireland differ.
+  detail:
+  - h: What magistrates do
+    p:
+    - Magistrates are volunteers who hear cases in their local criminal court, family court, or both. Each case is usually heard by three magistrates, one of them trained to chair, and a legal adviser in
+      the court advises on the law and makes sure the right procedures are followed. No formal qualifications or legal training are needed, as full training is given.
+    - Almost every criminal case in England and Wales starts in a magistrates' court, with the most serious sent on to the Crown Court. Magistrates decide whether a defendant is kept in custody or released
+      on strict conditions, and deal with cases such as minor assaults, motoring offences, theft and TV licence evasion. In the family court they can arrange for a child to be taken into care or adopted,
+      help separated parents make arrangements for their children, and make orders to prevent domestic abuse.
+  - h: Who can apply, and the time it takes
+    list:
+    - You must be aged 18 to 74, and magistrates retire at 75. You must live permanently in England or Wales and be willing to take an Oath of Allegiance to the Crown.
+    - You are expected to serve for at least five years and sit at least 13 full days a year, or 26 half days if you prefer. Sitting in more than one type of court means at least 30 half days a year.
+    - Training is about 10 days over the first two years, mixing online and face-to-face sessions, and you are given a mentor. After that it is about one or two days a year.
+    - Magistrates are not paid. Employers must by law give reasonable time off, but they do not have to pay you, though many do. If you lose earnings, or are self-employed, you can claim up to £134.96 a
+      day, plus travel and subsistence, and carers' costs if you look after children or dependants.
+    - You are unlikely to be appointed if you have been found guilty of a serious crime or several minor offences, banned from driving in the past 5 to 10 years, or declared bankrupt. Some jobs, such as
+      police or prison officer, are a conflict of interest.
+  - h: The application, step by step
+    list:
+    - 'Visit a criminal court at least twice in the 12 months before you apply, and write down your reflections: the form asks about them. Family courts sit in private, so for the family court you research
+      the work instead.'
+    - Talk to your employer and agree the time off before you apply.
+    - Find a role in your area on the official recruitment site. If nothing is open near you, start an application to register your interest and you will be emailed when a role comes up.
+    - Fill in the online form with examples of how you understand other points of view, communicate with respect, and make fair decisions, and give two references (one from your employer if you are employed;
+      not a relative or anyone you live with).
+    - Take a scenario-based assessment, followed by an eligibility review. If you are not successful at this stage you can reapply after six months.
+    - Have one interview of up to 75 minutes, usually online, with a panel from your local advisory committee. If you are not successful you can ask for feedback, and can reapply after two years.
+    - Pass a Disclosure and Barring Service (DBS) criminal record check, after which you are recommended for appointment and formally appointed.
+  - h: Magistrates across the UK compared
+    table:
+      head:
+      - ''
+      - England and Wales
+      - Scotland
+      - Northern Ireland
+      rows:
+      - - Name of the role
+        - Magistrate
+        - Justice of the Peace (JP)
+        - Lay Magistrate
+      - - Courts
+        - Criminal court, family court, or both
+        - Summary criminal Justice of the Peace Courts
+        - Youth Court and Family Proceedings Court, usually alongside a District Judge
+      - - Who can apply
+        - Aged 18 to 74, living permanently in England or Wales
+        - Living in the sheriffdom or within 15 miles of it (2023 campaign)
+        - Aged 18 to 74, living in Northern Ireland
+      - - Time asked
+        - At least 13 full days a year, for at least five years
+        - At least 12 sittings and 12 hours of training a year (2023 campaign); appointed for five years
+        - Up to 10 sittings a year, plus training and some out-of-hours duties
+      - - Pay (as last listed)
+        - Unpaid; loss of earnings up to £134.96 a day, plus expenses
+        - Unpaid; reasonable travel expenses paid, or claim loss of earnings (2023 campaign)
+        - £226.92 a full day, £113.46 a half day (from September 2025); no loss-of-earnings allowance
+      - - How recruitment works
+        - Roles advertised by area; register your interest if none is open
+        - Campaigns run area by area; JP Advisory Committees recommend and Scottish Ministers appoint
+        - Campaigns run by the Judicial Appointments Commission; the 2026 scheme closed on 7 July 2026
+    after: Gaps in the table are things the official pages we checked do not say, such as an age range for Scotland. Northern Ireland expects its first appointments from the 2026 scheme on 1 April 2027.
+  faq:
+  - q: How do I become a magistrate?
+    a: In England and Wales, visit a criminal court at least twice, then apply online through the judiciary's recruitment site. After a scenario-based assessment and an eligibility review there is one interview
+      and a criminal record check before appointment.
+  - q: Do magistrates get paid?
+    a: Not in England and Wales. You can claim a loss-of-earnings allowance of up to £134.96 a day if your employer does not pay you or you are self-employed, plus travel and subsistence. In Northern Ireland,
+      lay magistrates are paid a fee for each sitting.
+  - q: How many days a year does a magistrate sit?
+    a: At least 13 full days a year in England and Wales, or 26 half days if you prefer, for at least five years. Training adds about 10 days over the first two years.
+  - q: Can I be a magistrate if I work full time?
+    a: Yes, if you can sit at least 13 days a year. Employers must by law give reasonable time off, but they do not have to pay you for it; the official advice is to talk to your employer before you apply.
+  - q: What is the age limit to become a magistrate?
+    a: You must be between 18 and 74 to apply in England and Wales and in Northern Ireland. Magistrates in England and Wales retire at 75.
+  - q: Do I need legal qualifications to be a magistrate?
+    a: No. Full training is given, and a legal adviser in court helps with questions about the law.
+  sources:
+  - label: GOV.UK, Become a magistrate
+    url: https://www.gov.uk/become-magistrate
+    checked: '2026-11-21'
+  - label: GOV.UK, Become a magistrate, Who can be a magistrate
+    url: https://www.gov.uk/become-magistrate/can-you-be-a-magistrate
+    checked: '2026-11-21'
+  - label: GOV.UK, Become a magistrate, Apply to be a magistrate
+    url: https://www.gov.uk/become-magistrate/apply-to-be-a-magistrate
+    checked: '2026-11-21'
+  - label: Magistrates Recruitment, Application process
+    url: https://magistrates.judiciary.uk/application-process/
+    checked: '2026-11-21'
+  - label: Magistrates Recruitment, Frequently asked questions
+    url: https://magistrates.judiciary.uk/frequently-asked-questions/
+    checked: '2026-11-21'
+  - label: Scottish Courts and Tribunals Service, Serving your community (31 July 2023)
+    url: https://www.scotcourts.gov.uk/about-us/news/news/2023/july/serving-your-community/
+    checked: '2026-11-21'
+  - label: Judiciary of Scotland, Judicial Appointments - Justices of the Peace
+    url: https://judiciary.scot/home/judiciary/judicial-office-holders/justices/judicial-appointments---justices-of-the-peace
+    checked: '2026-11-21'
+  - label: Northern Ireland Judicial Appointments Commission, Lay Magistrates FAQs
+    url: https://www.nijac.gov.uk/lay-magistrates-faqs
+    checked: '2026-11-21'
+  - label: Northern Ireland Judicial Appointments Commission, Lay Magistrates 2026
+    url: https://www.nijac.gov.uk/node/832
+    checked: '2026-11-21'
+  - label: Northern Ireland Judicial Appointments Commission, Video transcript, Am I eligible
+    url: https://www.nijac.gov.uk/files/nijac/2026-04/Video%20Transcript%20-%20Am%20I%20Eligible.pdf
+    checked: '2026-11-21'
+  kit:
+  - name: Pocket notebook
+    why: for notes on your two court visits, which the application form asks you to reflect on
+    url: https://www.amazon.co.uk/s?k=pocket+notebook
+  - name: Book on the magistrates' courts
+    why: background reading on how the courts work before you visit
+    url: https://www.amazon.co.uk/s?k=magistrates+court+book
+  related:
+  - volunteer-with-the-witness-service
+  - become-a-school-governor
+  - become-charity-trustee
+  - volunteer-with-citizens-advice
+  inspire:
+  - kind: read
+    person: Bob Harper, South Yorkshire magistrate
+    line: Answered a newspaper advert in 1985 and has sat as a magistrate ever since, alongside more than 40 years' work for what became British Telecom.
+    title: Pair with more than 80 years on the bench urge others to become magistrates
+    outlet: The Star
+    url: https://www.thestar.co.uk/your-world/pair-with-more-than-80-years-on-the-bench-urge-others-to-become-magistrates-9170468
+    checked: '2026-11-21'
 - id: mend-at-a-repair-cafe
   title: Take something broken to a Repair Café, or go as a fixer
   category: connect
@@ -57042,29 +57455,34 @@
   - anywhere
   hub: marathons
   plan_event: marathon
-  why: A marathon is 26.2 miles (42.195 km), and the big city races draw tens of thousands of runners and walkers. Some sell places to whoever enters first, others draw them by ballot, and charities and travel companies hold places for the rest.
+  why: A marathon is 26.2 miles (about 42.2 km). Some races take anyone who enters, others draw places by ballot, and charities and travel companies hold places for the rest.
   start:
   - Pick a race in our marathon finder, filtering by region, month and how you want to get in, and note when its entries or ballot open.
   - Apply for the ballot, or line up a charity place or a race with open entry as your back-up.
   - Train for several months, building up your longest run or walk gradually, and try your race-day shoes and food in training.
   links:
-  - label: 'London Marathon Events: how to enter the TCS London Marathon'
-    url: https://www.londonmarathonevents.co.uk/london-marathon/faqs
+  - label: 'London Marathon Events: how to enter the TCS London Marathon (all entry routes)'
+    url: https://www.londonmarathonevents.co.uk/london-marathon/how-enter
     region: uk
-    checked: '2026-11-19'
-  - label: 'Loch Ness Marathon: the race (direct entry, no ballot)'
-    url: https://lochnessmarathon.com/event/loch-ness-marathon/
+    checked: '2026-11-21'
+  - label: 'London Marathon Events: 2026 TCS London Marathon beginner training plan (PDF)'
+    url: https://www.londonmarathonevents.co.uk/sites/default/files/2025-10/2026_TCSLM_Beginner_Training_Plan.pdf
+    region: any
+    checked: '2026-11-21'
+  - label: 'NHS Better Health: get running with Couch to 5K'
+    url: https://www.nhs.uk/live-well/exercise/get-running-with-couch-to-5k/
     region: uk
-    checked: '2026-11-19'
+    checked: '2026-11-21'
   - label: 'Honolulu Marathon: open to all, no time limit'
     url: https://www.honolulumarathon.org/faqs-extra
     region: us
-    checked: '2026-11-19'
+    checked: '2026-11-21'
   - label: 'Chicago Marathon: apply'
     url: https://www.chicagomarathon.com/apply/
     region: us
-    checked: '2026-11-19'
-  safety: A marathon puts heavy strain on the heart, muscles and feet. Build up over months, follow the race's medical advice, and check with your GP (family doctor) before you start training if you have a heart condition or another health worry.
+    checked: '2026-11-21'
+  safety: A marathon puts heavy strain on the heart, muscles and feet. Build up over months, follow the race's medical advice, and if you are worried about your health before starting an exercise plan,
+    the NHS says to see a GP (family doctor) first.
   kit:
   - name: Running shoes
     why: the one thing worth spending on; a running shop can watch you run and suggest a fit
@@ -57076,10 +57494,155 @@
     why: for long runs; try it in training, not on the day
     url: https://www.amazon.co.uk/s?k=anti+chafe+balm
   related:
+  - couch-to-5k
   - parkrun
-  - marine-corps-marathon
+  - run-the-london-marathon
   - run-an-ultramarathon
-
+  seo_title: 'First marathon: how to get a place and how to train'
+  description: How to get into a big marathon by ballot, charity place, qualifying time or open entry, and how long official beginner training plans take.
+  detail:
+  - h: What it's really like
+    p:
+    - The distance is the same everywhere, 26.2 miles (about 42.2 km), but getting to the start line works differently from race to race. The best-known city marathons have far more applicants than places.
+      Time Out reported that a record 1,133,813 people entered the ballot for the 2026 London Marathon, with an estimated 1 in 50 getting a place.
+    - The training is the bigger commitment. The official training plans below run for 16 to 18 weeks, and none of them has you cover the full distance before race day; the longest training run comes a
+      few weeks before the race, and the plans then ease off. The London Marathon Events beginner plan is written for people who have done very little running but are generally in good health, and it builds
+      in walking breaks. If you are starting from scratch, the free NHS Couch to 5K plan for absolute beginners (9 weeks, three runs a week, with rest days in between) comes first.
+  - h: Ways into a big marathon compared
+    table:
+      head:
+      - Way in
+      - Real example
+      - How it works
+      - Cost (as last listed)
+      rows:
+      - - Ballot or drawing
+        - TCS London Marathon 2027
+        - Free to enter and you pay only if you get a place; the 2027 ballot opened on 24 April and closed on 1 May 2026, with results by early July
+        - Standard entry £79.99 (Time Out, April 2026); international runners pay more. An optional £49.99 second-chance ballot is open to UK residents only
+      - - Ballot or drawing
+        - Bank of America Chicago Marathon 2027
+        - Non-guaranteed entry drawing; the 2027 window ran 8 to 29 October 2026 and is now closed. More than one application does not improve your chances
+        - $250 US residents, $260 non-US residents, plus a processing fee
+      - - Charity place
+        - London 2027 with Mind
+        - Apply to the charity rather than the ballot and commit to a fundraising target; Mind lists its 2027 applications as closed
+        - £100 registration fee and a £2,500 minimum fundraising target
+      - - Charity place
+        - Chicago 2027 Charity Program
+        - Guaranteed entry through an official charity team, first come, first served until 10 September 2027 or until the charity is full
+        - $325 US residents, $335 non-US residents, with a $2,500 minimum fundraising requirement
+      - - Good for Age or time qualifier
+        - London 2027 Good For Age
+        - UK residents only, with a time from 1 October 2025 to 30 September 2026. Places capped at 6,000 and given fastest first by age group, so the time does not guarantee entry
+        - Not stated on the Good For Age page
+      - - Open entry
+        - Honolulu Marathon, 13 December 2026
+        - A non-qualifying race where everyone is welcome; the last online price band runs to 3 December, with a higher price at the Expo
+        - $215 to $255 for US and Canada residents and $260 to $320 international, depending on when you enter; $460 at the Expo
+      - - Tour operator
+        - Chicago 2027
+        - Official tour operator programmes; Chicago says its tour operator entries open on 8 December
+        - Set by each operator
+    after: London also lists Championship, British Athletics club, international and MyWay entry routes. Fees and dates are those each page showed when we checked; always confirm on the race's own site
+      before you commit.
+  - h: How long official beginner plans run
+    table:
+      head:
+      - Plan
+      - Length
+      - Runs a week
+      - Longest training run
+      rows:
+      - - London Marathon Events, 2026 beginner plan
+        - 16 weeks
+        - Three, each followed by a rest day
+        - 3 hours 30 minutes with walking breaks in week 13, aiming for 18 to 20 miles (29 to 32 km)
+      - - Mind, marathon beginner plan (by Full Potential)
+        - 16 weeks
+        - Usually three (two in some weeks), plus cross-training and conditioning
+        - 200 minutes in week 13, set by time only
+      - - Bank of America Chicago Marathon, 2026 official training plan
+        - 18 weeks (can be adjusted to 12, but not shorter)
+        - Five, plus a strength workout
+        - 20 miles (about 32.2 km), four weeks before the race
+      - - NHS Couch to 5K (a step before a marathon plan)
+        - 9 weeks, or longer if you need
+        - Three, with rest days in between
+        - Running 5 km (3.1 miles)
+    after: The two 16-week plans step the long runs down after week 13. The Chicago plan says its 18 weeks suit any experience level and that you may want to back off in distance or pace a few days before
+      the race.
+  - h: Time limits and walking
+    p:
+    - Check the cut-off before you enter. Chicago says you must be able to finish within six hours and 30 minutes (6:30:59), and the course reopens to traffic on a rolling schedule behind the field. Chicago's
+      minimum age is 16 on race day.
+    - Honolulu has no official time limit, and says the finish line stays open until the last participant crosses. Walkers are welcome there, and every finisher gets a medal and an official time, though
+      you must keep moving and follow the course rules.
+  faq:
+  - q: How long does it take to train for a first marathon?
+    a: The official training plans we checked run for 16 weeks (London Marathon Events and Mind) or 18 weeks (Chicago, which says it can be squeezed to 12 but no shorter). If you are starting from no running
+      at all, the NHS Couch to 5K plan takes 9 weeks first.
+  - q: How do you get a place in the London Marathon?
+    a: London Marathon Events lists the ballot, Good For Age, Championship, British Athletics club, international, charity and MyWay routes. The ballot is free to enter and opens shortly after each race,
+      usually for about a week.
+  - q: How much do you have to raise for a London Marathon charity place?
+    a: For 2027, Mind listed a £100 registration fee and a £2,500 minimum fundraising target. Check the figures with the charity you apply to.
+  - q: What is the longest run before a marathon?
+    a: In the London Marathon Events beginner plan it is 3 hours 30 minutes, aiming for 18 to 20 miles, in week 13 of 16. Chicago's official plan peaks at 20 miles (about 32.2 km) four weeks before the
+      race.
+  - q: Can you walk a marathon?
+    a: Some races welcome walkers. Honolulu has no official time limit and gives every finisher a medal, while Chicago requires you to finish within 6 hours 30 minutes, so check the cut-off first.
+  - q: What are the Good For Age times for the London Marathon?
+    a: For 2027 they range from sub 3:38 for women and sub 2:52 for men aged 18 to 39, to sub 7:45 and sub 7:20 at 90 and over; for example, sub 3:53 and sub 3:07 at 50 to 54. Only UK residents can apply,
+      and places go fastest first.
+  sources:
+  - label: London Marathon Events, How to enter
+    url: https://www.londonmarathonevents.co.uk/london-marathon/how-enter
+    checked: '2026-11-21'
+  - label: London Marathon Events, Good for age entry
+    url: https://www.londonmarathonevents.co.uk/london-marathon/good-age-entry
+    checked: '2026-11-21'
+  - label: London Marathon Events, Run for charity
+    url: https://www.londonmarathonevents.co.uk/london-marathon/run-charity
+    checked: '2026-11-21'
+  - label: London Marathon Events, 2026 TCSLM Beginner Training Plan
+    url: https://www.londonmarathonevents.co.uk/sites/default/files/2025-10/2026_TCSLM_Beginner_Training_Plan.pdf
+    checked: '2026-11-21'
+  - label: Time Out London, How to enter the London Marathon 2027 ballot – deadline, cost and everything you need to know
+    url: https://www.timeout.com/london/news/how-to-enter-the-london-marathon-2027-ballot-deadline-cost-and-everything-you-need-to-know-042626
+    checked: '2026-11-21'
+  - label: Let's Do This Help Center, The TCS London Marathon Ballot Process
+    url: https://help.letsdothis.com/en/articles/10485380-the-tcs-london-marathon-ballot-process
+    checked: '2026-11-21'
+  - label: Mind, 2027 TCS London Marathon
+    url: https://www.mind.org.uk/get-involved/donate-or-fundraise/take-on-an-active-challenge/run-for-mind/tcs-london-marathon-2027/
+    checked: '2026-11-21'
+  - label: Mind, Marathon beginner plan (PDF, by Full Potential)
+    url: https://mind.org.uk/media/3s0jkqi3/marathon-beginner.pdf
+    checked: '2026-11-21'
+  - label: NHS Better Health, Get running with Couch to 5K
+    url: https://www.nhs.uk/live-well/exercise/get-running-with-couch-to-5k/
+    checked: '2026-11-21'
+  - label: Bank of America Chicago Marathon, Apply
+    url: https://www.chicagomarathon.com/apply/
+    checked: '2026-11-21'
+  - label: Bank of America Chicago Marathon, 2026 Official Training Plan (PDF)
+    url: https://assets-chicagomarathon-com.s3.amazonaws.com/wp-content/uploads/2026/06/2026-BOA-Chicago-Marathon-Training-Plan-FINAL-5.29.pdf
+    checked: '2026-11-21'
+  - label: Honolulu Marathon, FAQs – Extra
+    url: https://www.honolulumarathon.org/faqs-extra
+    checked: '2026-11-21'
+  - label: Honolulu Marathon, How to Enter
+    url: https://www.honolulumarathon.org/key-information/how-to-enter
+    checked: '2026-11-21'
+  inspire:
+  - kind: read
+    person: Isabel Mohan, Second Act Editor at HELLO!
+    line: Ran her first London Marathon in 2024, four years on from completing Couch to 5K, with an official time of 5 hours 15 minutes, and raised £4,000 for Asthma + Lung UK.
+    title: I ran London Marathon for the first time aged 43 - here's what all average runners need to know
+    outlet: HELLO!
+    url: https://www.hellomagazine.com/second-act/897473/london-marathon-in-midlife-what-you-need-to-know/
+    checked: '2026-11-21'
 - id: learn-astrophotography
   title: Learn astrophotography
   category: explore
@@ -103740,3 +104303,1806 @@
   - stay-in-a-fire-lookout
   - stay-in-a-bothy
   - walk-south-west-coast-path
+- id: sing-sea-shanties
+  title: Sing sea shanties with a shanty crew
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: low
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Shanties were sailors' work songs, with a lead singer, the shantyman, taking the verses and everyone else answering with the chorus. Free festivals, monthly chantey sings and local shanty crews all
+    give you a way to join in.
+  start:
+  - 'Go and listen first: a free shanty festival such as Falmouth in Cornwall, or a public chantey sing such as the monthly one run by San Francisco Maritime National Historical Park.'
+  - Find a local shanty crew and ask whether you can sit in on a practice before you commit; the Sheringham Shantymen in Norfolk, for example, invite people to watch a session.
+  - Learn the choruses of two or three well-known shanties, such as Drunken Sailor, so you can join in from the first night.
+  links:
+  - label: 'Falmouth International Sea Shanty Festival: free festival in Cornwall'
+    url: https://falmouthseashanty.co.uk/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Royal Museums Greenwich: a history of sea shanties'
+    url: https://www.rmg.co.uk/stories/maritime-history/sea-shanty-facts-history-meaning
+    region: any
+    checked: '2026-11-21'
+  - label: 'San Francisco Maritime National Historical Park (NPS): Chantey Sing'
+    url: https://www.nps.gov/safr/learn/historyculture/chantey-sing.htm
+    region: us
+    checked: '2026-11-21'
+  - label: 'Connecticut Sea Music Festival: Chantey Blast sing-along (Mystic, Connecticut)'
+    url: https://ctseamusicfest.org/?p=1464
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Sea shanty singing: how to join a shanty group'
+  description: How sea shanties work, where to hear and sing them in the UK and US, from Falmouth's free festival to monthly chantey sings, and how to join a shanty crew.
+  detail:
+  - h: What it's really like
+    p:
+    - Royal Museums Greenwich explains that shanties follow a call-and-response pattern. A lead singer, the shantyman, sings the verses and the crew answers with the chorus, over a steady, heavy rhythm.
+      Each type matched a job on board, from short drag shanties for hard bouts of pulling on a rope, through hand-over-hand songs like Drunken Sailor, to halyard and capstan shanties for longer, steadier
+      work. They flourished in the 19th century, mainly on large merchant sailing ships.
+    - Some shanty groups sing for charity. The Sheringham Shantymen in Norfolk, a men's group, raise money for the RNLI (the Royal National Lifeboat Institution, the UK lifeboat charity) and other local
+      charities. North Norfolk News reported that they were looking for bass and harmony singers, that newcomers may be invited for an informal audition, and that members come from as far away as Beccles.
+      Ask any group you like the sound of whether it is open to all voices, how it chooses new members and whether you can watch a practice first.
+  - h: Ways to start compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Falmouth International Sea Shanty Festival, Cornwall
+        - Festival of over 80 groups from the UK, Europe and further afield in town and quayside venues; listed for 18 to 20 June 2027
+        - Free to attend; the festival supports the RNLI
+      - - Sheringham Shantymen, Norfolk
+        - Men's shanty group; North Norfolk News reported practices at 7.30pm on Thursdays at Oddfellows Hall, Sheringham; newcomers may be invited for an informal audition
+        - Not listed
+      - - San Francisco Maritime National Historical Park, California
+        - Sea Chantey Sing held on the first Saturday of the month; see the park's events calendar for the next one
+        - Not listed
+      - - Connecticut Sea Music Festival, Mystic, Connecticut
+        - 'Chantey Blast: an afternoon chantey sing-along that raises funds for the festival; last run January 2026'
+        - $20 suggested donation at the door
+    after: The Connecticut Sea Music Festival is a project of the Maritime Music & Tradition Society, and lists its next festival for June 2027 in Essex, Connecticut.
+  faq:
+  - q: What is the difference between a sea shanty and a sea song?
+    a: Shanties were work songs sung to match a particular job, such as hauling on a rope or turning the capstan. Royal Museums Greenwich notes that more lyrical songs were perhaps sung when sailors were
+      relaxing in the evenings.
+  - q: Do I need to be a good singer to join a shanty group?
+    a: Shanties are built on a chorus that the whole crew sings, but groups differ. Some may ask newcomers to an informal audition, as the Sheringham Shantymen do, so ask the group how it takes on new singers.
+  - q: Is the Falmouth sea shanty festival free?
+    a: Yes. The festival describes itself as free to attend, with over 80 groups performing around the town and quayside, and supports the RNLI.
+  - q: Where can I sing sea shanties in the US?
+    a: San Francisco Maritime National Historical Park holds a Sea Chantey Sing on the first Saturday of the month, and the Connecticut Sea Music Festival ran a Chantey Blast sing-along in Mystic, Connecticut,
+      in January 2026.
+  sources:
+  - label: Royal Museums Greenwich, A history of sea shanties
+    url: https://www.rmg.co.uk/stories/maritime-history/sea-shanty-facts-history-meaning
+    checked: '2026-11-21'
+  - label: Falmouth International Sea Shanty Festival, Welcome to Falmouth International Sea Shanty Festival
+    url: https://falmouthseashanty.co.uk/
+    checked: '2026-11-21'
+  - label: North Norfolk News, Sheringham Shantymen seeking new singers
+    url: https://northnorfolknews.co.uk/news/24068962.sheringham-shantymen-seeking-new-singers-sea-shanties
+    checked: '2026-11-21'
+  - label: San Francisco Maritime National Historical Park (U.S. National Park Service), Chantey Sing
+    url: https://www.nps.gov/safr/learn/historyculture/chantey-sing.htm
+    checked: '2026-11-21'
+  - label: The Connecticut Sea Music Festival, 2026 Chantey Blast
+    url: https://ctseamusicfest.org/?p=1464
+    checked: '2026-11-21'
+  - label: The Connecticut Sea Music Festival, Home
+    url: https://ctseamusicfest.org/
+    checked: '2026-11-21'
+  kit:
+  - name: Sea shanty songbook
+    why: words and choruses to learn before your first sing
+    url: https://www.amazon.co.uk/s?k=sea+shanty+songbook
+  - name: Sea shanty CD
+    why: to learn the tunes and choruses by ear
+    url: https://www.amazon.co.uk/s?k=sea+shanties+cd
+  related:
+  - go-to-a-folk-festival
+  - join-rock-choir
+  - sing-barbershop-chorus
+  - learn-the-concertina
+  inspire:
+  - kind: read
+    person: Nathan Evans, Scottish singer
+    line: Uploaded a video of himself singing The Scotsman in December 2020; his Wellerman then quickly gained momentum as others added duets and harmonies, which became known as
+    title: A history of sea shanties
+    outlet: Royal Museums Greenwich
+    url: https://www.rmg.co.uk/stories/maritime-history/sea-shanty-facts-history-meaning
+    checked: '2026-11-21'
+- id: play-in-a-folk-session
+  title: Take your instrument to a folk session
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: In a session, musicians sit together and play traditional tunes; at one relaxed slow session in North Carolina, tunes go in sets of two or three and anyone can suggest the next one. Slow sessions
+    and beginners' groups exist so learners can play the common tunes at a gentler pace before joining a full-speed session.
+  start:
+  - Find a slow or beginners' session near you, through a branch of Comhaltas Ceoltóirí Éireann, the Irish traditional music organisation, which has branches in Britain and the US, or a local folk society.
+  - Learn a handful of commonly played tunes; some beginners' groups, such as the one at the Chemic Tavern in Leeds, publish a list.
+  - Go along, listen to how that session runs, and ask the regulars how newcomers join in before you start playing.
+  links:
+  - label: 'Comhaltas in Britain: map of branches and sessions'
+    url: https://www.comhaltas.co.uk/branches
+    region: uk
+    checked: '2026-11-21'
+  - label: 'The Chemic Tavern, Leeds: Bigginers Irish Session for learners'
+    url: https://chemictavern.co.uk/weekly_event/bigginers-irish-session/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Comhaltas Boston: monthly music and dance sessions in Watertown, Massachusetts'
+    url: https://cceboston.org/?p=208
+    region: us
+    checked: '2026-11-21'
+  - label: 'Charlotte Folk Society: Slow Celtic Sessions (North Carolina)'
+    url: https://folksociety.org/jams/slow-celtic-sessions/
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Irish music sessions for beginners: how to join in'
+  description: What a folk or Irish traditional music session is, how slow sessions help learners, how newcomers join in, and where to find one in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - Sessions differ, so the rules are whatever that group says they are. An Irish Times article on sessions notes that friends join in by invitation, though visiting musicians may turn up, unpack their
+      instruments and sit in, and it quotes the banjo player and ethnomusicologist Daniel T Neely's advice to newcomers that "there is a good chance that an eyebrow raised in your direction is consequential".
+      In other words, watch the regulars.
+    - Slow sessions are more open. The Charlotte Folk Society in North Carolina runs a relaxed round-robin where anyone can suggest a tune without having to start it, tunes are grouped in sets of two or
+      three and you can play just one, and music stands, sheet music and tablets are fine. It assumes you can already play your instrument and warns, "Come prepared to play a lot!" The Bigginers group at
+      the Chemic Tavern in Leeds offers learners mutual support before they join regular Irish sessions, and points them to the venue's Wednesday session.
+  - h: Ways to start compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Comhaltas branches in Britain
+        - Branches across Scottish, Northern, Midland and London & Southern regions run lessons and sessions weekly and monthly; find one on the interactive map
+        - Varies by branch
+      - - Chemic Tavern, Leeds
+        - 'Bigginers Irish Session: Mondays from 6pm or 6.30pm to 7.30pm (the page gives both), all abilities welcome'
+        - Not listed
+      - - Charlotte Folk Society, North Carolina
+        - Monthly Slow Celtic Session, usually 2pm to about 5pm, all acoustic instruments; email the society for directions
+        - Not listed
+      - - Irish Arts Center, New York City
+        - 'Introduction to the Traditional Irish Session: eight weekly classes on playing in a group, session etiquette and common tunes, for advanced beginners on any instrument; last run autumn 2025'
+        - $204, or $164 for members
+    after: In the Boston area, the Comhaltas branch holds monthly traditional music and dance sessions at the Canadian-American Hall in Watertown; check its events calendar for dates.
+  faq:
+  - q: What is a slow session in Irish music?
+    a: A session where traditional tunes are played at a gentler pace so learners can join in. The Charlotte Folk Society's slow session is for beginners learning Celtic tunes and for experienced players
+      new to them.
+  - q: Can I just turn up and play at an Irish session?
+    a: It depends on the session. An Irish Times article notes that friends join in by invitation, though visiting musicians may sit in, so listen first and ask the regulars.
+  - q: Can I use sheet music at a session?
+    a: Some sessions allow it. The Charlotte Folk Society says music stands, sheet music and tablets are fine at its slow session; at other sessions, ask.
+  - q: How good do I need to be to join a session?
+    a: Generally you need to be able to play your instrument. The Charlotte Folk Society's slow session assumes you already play, and the Irish Arts Center's session course is pitched at advanced beginners.
+  sources:
+  - label: Comhaltas in Britain, Branches
+    url: https://www.comhaltas.co.uk/branches
+    checked: '2026-11-21'
+  - label: The Chemic Tavern, Bigginers Irish Session
+    url: https://chemictavern.co.uk/weekly_event/bigginers-irish-session/
+    checked: '2026-11-21'
+  - label: Comhaltas Ceoltóirí Éireann Boston, Seisiúns & Céilís
+    url: https://cceboston.org/?p=208
+    checked: '2026-11-21'
+  - label: Charlotte Folk Society, Slow Celtic Sessions
+    url: https://folksociety.org/jams/slow-celtic-sessions/
+    checked: '2026-11-21'
+  - label: 'Irish Arts Center, Introduction to the Traditional Irish Session: Beginner Level (Fall 2025) (In Person)'
+    url: https://irishartscenter.org/event/introduction-to-the-traditional-irish-session-beginner-fall-2025-in-person
+    checked: '2026-11-21'
+  - label: 'The Irish Times, Traditional Irish music session: ''Good chance an eyebrow raised in your direction is consequential'''
+    url: https://www.irishtimes.com/culture/music/traditional-irish-music-session-good-chance-an-eyebrow-raised-in-your-direction-is-consequential-1.3965815
+    checked: '2026-11-21'
+  kit:
+  - name: Irish session tune book
+    why: the melodies of commonly played session tunes to learn at home
+    url: https://www.amazon.co.uk/s?k=irish+session+tunes+book
+  - name: Clip-on tuner
+    why: to tune up quietly before you join in
+    url: https://www.amazon.co.uk/s?k=clip+on+tuner
+  related:
+  - learn-the-tin-whistle
+  - learn-the-violin
+  - learn-the-bodhran
+  - learn-the-concertina
+- id: learn-the-shakuhachi
+  title: Learn the shakuhachi, the Japanese bamboo flute
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The shakuhachi has only five finger holes, four in front and one behind, yet players get different tones and effects by changing the angle of their breath across a notch at the top. Fuke Zen monks
+    played it in the Edo period, and its solo repertoire is known as honkyoku, the "original pieces".
+  start:
+  - Find a teacher on the European Shakuhachi Society's teachers list, which includes teachers in London, Oxford, Bristol, Dartington, Edinburgh and Wembley; in the US, look for a teacher who offers lessons
+    in person or online.
+  - Ask your teacher which instrument to start on before you buy; some teachers sell plastic student instruments, and one UK teacher on the society's list can help beginners obtain one.
+  - Watch for free online events, such as the European Shakuhachi Society's Sunday Brunch on Zoom, which welcomes beginners; its 2025-26 programme lists no dates after May 2026.
+  links:
+  - label: 'European Shakuhachi Society: teachers list (includes UK teachers)'
+    url: https://shakuhachisociety.eu/?p=2920
+    region: uk
+    checked: '2026-11-21'
+  - label: 'European Shakuhachi Society: online events'
+    url: https://events.shakuhachisociety.eu/
+    region: any
+    checked: '2026-11-21'
+  - label: 'Japanese Traditional Music: Steven Taizen Casano shakuhachi lessons (Honolulu and online)'
+    url: https://japanese-music.com/class/steven-casano-shakuhachi
+    region: us
+    checked: '2026-11-21'
+  - label: 'shakuhachi.us: shakuhachi lessons (Santa Susana, California, and online)'
+    url: https://shakuhachi.us/about/shakuhachi-lessons/
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Learn the shakuhachi: lessons, teachers and first flute'
+  description: What the Japanese shakuhachi flute is, how a first lesson goes, where to find a teacher in the UK and US, and what lessons and a student instrument cost.
+  detail:
+  - h: What it's really like
+    p:
+    - The standard shakuhachi is 1.8 shaku long, about 54 cm (21 in), and made of bamboo, according to the University of Illinois's Japan House. It reached Japan from China via the Korean peninsula; in
+      the Edo period, monks of the Fuke Zen sect played it in public while begging. The spiritual practice of playing it is called suizen, "blowing Zen".
+    - The first lesson is about breath. Norman Stanfield, a sessional instructor in ethnomusicology at the University of British Columbia, describes blowing across the top "like a pop bottle", adds "If
+      you're lucky, you'll get a sound right away," and says breath and breathing seem to be the key to success. Traditional teaching relies on repetition. There are different schools and styles, and the
+      European Shakuhachi Society publishes fingering charts for several of them, so learn with a teacher and use the style they teach.
+  - h: Ways to start compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - European Shakuhachi Society teachers, UK
+        - Teachers listed in London, Oxford, Bristol, Dartington, Edinburgh and Wembley; the Wembley teacher can advise on choosing an instrument and help beginners obtain one
+        - Ask each teacher
+      - - European Shakuhachi Society Sunday Brunch, online
+        - Zoom event open to all levels, particularly welcoming beginners and elementary players; last listed for 3 May 2026
+        - Free
+      - - Steven Taizen Casano, Honolulu, Hawaii
+        - One-to-one lessons in person or on Skype
+        - $30 for 30 minutes, $45 for 45 minutes, $60 for 60 minutes
+      - - shakuhachi.us, Santa Susana, California
+        - One-hour lessons in person or by Skype, Zoom or FaceTime, usually weekly or every two weeks
+        - Lesson price not listed on the lessons page; plastic student shakuhachi from $85, refurbished bamboo from $500
+    after: The European Shakuhachi Society, first registered as a charity in the UK in 2008 (its legal base moved to France in 2020), says its events are open to everybody and welcome all playing levels;
+      it organised the World Shakuhachi Festival in London in 2018. The International Shakuhachi Society's site, komuso.com, is a resource for players rather than a shop.
+  faq:
+  - q: Is the shakuhachi hard to play?
+    a: Getting a sound can take time. One UBC instructor writes that if you are lucky you will get a sound right away, and stresses breath and breathing as the key.
+  - q: What size shakuhachi should a beginner buy?
+    a: The standard length is 1.8 shaku, about 54 cm (21 in). Ask your teacher before you buy, as schools differ and some teachers sell student instruments.
+  - q: How much does a shakuhachi cost?
+    a: One US teacher lists plastic student shakuhachi from $85 and refurbished bamboo instruments from $500.
+  - q: Can I learn the shakuhachi online?
+    a: Yes. Several teachers offer lessons by Skype or Zoom, and the European Shakuhachi Society has run free online events open to beginners.
+  sources:
+  - label: 'Japan House, University of Illinois, Shakuhachi: The History and Practice of Suizen'
+    url: https://japanhouse.illinois.edu/education/insights/shakuhachi
+    checked: '2026-11-21'
+  - label: The European Shakuhachi Society, Teachers
+    url: https://shakuhachisociety.eu/?p=2920
+    checked: '2026-11-21'
+  - label: The European Shakuhachi Society, Aims
+    url: https://shakuhachisociety.eu/?p=772
+    checked: '2026-11-21'
+  - label: The European Shakuhachi Society, Home
+    url: https://shakuhachisociety.eu/
+    checked: '2026-11-21'
+  - label: The European Shakuhachi Society, ESS online events 2025–2026
+    url: https://events.shakuhachisociety.eu/
+    checked: '2026-11-21'
+  - label: The European Shakuhachi Society, Getting started
+    url: https://shakuhachisociety.eu/resources/getting-started/
+    checked: '2026-11-21'
+  - label: Norman Stanfield (University of British Columbia blog), Your first shakuhachi lesson
+    url: https://blogs.ubc.ca/normanstanfield/2013/03/30/your-first-shakuhachi-lesson/
+    checked: '2026-11-21'
+  - label: Japanese Traditional Music, Steven Taizen Casano Shakuhachi Lessons
+    url: https://japanese-music.com/class/steven-casano-shakuhachi
+    checked: '2026-11-21'
+  - label: shakuhachi.us, Shakuhachi Lessons
+    url: https://shakuhachi.us/about/shakuhachi-lessons/
+    checked: '2026-11-21'
+  - label: Embassy of Japan in the UK, Japan-UK Events Calendar, World Shakuhachi Festival
+    url: https://www.uk.emb-japan.go.jp/japanuk150/events/theatre/WorldShakuhachiFestival.html
+    checked: '2026-11-21'
+  - label: International Shakuhachi Society, komuso.com
+    url: https://www.komuso.com
+    checked: '2026-11-21'
+  kit:
+  - name: Plastic student shakuhachi (1.8)
+    why: a standard-length practice instrument; check with your teacher before buying
+    url: https://www.amazon.co.uk/s?k=plastic+shakuhachi+1.8
+  - name: Shakuhachi tutor book
+    why: notation, fingering and exercises to work through between lessons
+    url: https://www.amazon.co.uk/s?k=shakuhachi+book
+  related:
+  - learn-taiko-drumming
+  - learn-the-japanese-tea-ceremony
+  - learn-the-flute
+  - learn-the-tin-whistle
+  inspire:
+  - kind: read
+    person: Riley Lee, American-born ethnomusicologist
+    line: Became the first non-Japanese to attain the rank of shakuhachi grand master, and co-taught a Princeton course on the instrument open to students with no musical experience.
+    title: Grand master guides novices in Japanese musical tradition
+    outlet: Princeton University
+    url: https://www.princeton.edu/news/2009/05/20/grand-master-guides-novices-japanese-musical-tradition
+    checked: '2026-11-21'
+- id: learn-violin-making
+  title: Make a violin on a course
+  category: think
+  kind: project
+  effort: moderate
+  cost: high
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A violin starts as a few blocks of spruce and maple, and on a making course you bend the ribs, carve the front and back and set it up to play under a luthier's eye. It is slow, exacting hand work,
+    and you can expect to come back to the bench for more than one course before the instrument is finished.
+  start:
+  - 'Read the British Violin Making Association''s list of part-time courses for amateurs and pick a format: a week-long residential, a weekly class or a college course.'
+  - Email the tutor before you book, say how much woodworking you have done and ask which instrument and course suit you.
+  - Budget for timber and materials on top of the fee, and plan for more than one course to finish an instrument.
+  links:
+  - label: 'British Violin Making Association: part-time courses for amateurs in the UK'
+    url: https://www.bvma.org.uk/part-time-courses
+    region: uk
+    checked: '2026-11-21'
+  - label: 'West Dean College: musical instrument making, violins, violas and cellos (West Sussex)'
+    url: https://www.westdean.ac.uk/short-courses/smi37702-musical-instrument-making-violins-violas-and-cellos
+    region: uk
+    checked: '2026-11-21'
+  - label: 'South Thames Colleges Group, Merton College: Violin Making and Repair, Beginners (Level 1)'
+    url: https://stcg.ac.uk/merton-college/musical-instrument-making-and-repair/violin-making-and-repair-beginners-level-1
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Bainbridge Artisan Resource Network: Make a Violin (Bainbridge Island, Washington)'
+    url: https://create.bainbridgebarn.org/event/make-a-violin-165171
+    region: us
+    checked: '2026-11-21'
+  - label: 'UNH Violin Craftsmanship Institute: Violin and Viola Building (New Hampshire)'
+    url: https://training.unh.edu/course/violin-and-viola-building
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Violin making courses for beginners: UK and US'
+  description: Where amateurs can learn to make a violin, viola or cello in the UK and US, how long an instrument takes, what courses cost and what to ask first.
+  detail:
+  - h: What it's really like
+    p:
+    - Do not expect to go home with a finished violin after one week. West Dean College says it is not possible to complete a violin, viola or cello in one nine-day course, and that most instruments take
+      more than one. On Merton College's 30-week beginners' course, the aim of the first year is to complete a substantial part of the making of a violin, such as the mould and ribs and jointing the front
+      and back, with scroll carving later in the year.
+    - Courses differ in who they suit. The British Violin Making Association says West Dean's course is better suited to more advanced amateurs who return year after year, while Halsway Manor's week in
+      Somerset is for all levels and welcomes beginners. Bainbridge Artisan Resource Network's class in Washington State is open to beginning woodworkers and to people who do not play the violin or fiddle.
+  - h: Ways to start compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - West Dean College, West Sussex
+        - Nine days, mostly one-to-one teaching; violin, viola or cello, or finish one in progress
+        - Course fee not shown on the page; tutor-supplied timber £120 to £200 for a violin
+      - - Halsway Manor, Somerset
+        - Five days, no more than five students per tutor; beginners welcome (last run July 2025)
+        - £695 full board, £550 camping or non-resident
+      - - Merton College, London
+        - 30 weeks, one day a week (last run September 2024 to June 2025)
+        - £0 to £1,155 for students 19 and over, plus a consumables fee and your own timber
+      - - Bainbridge Artisan Resource Network, Washington
+        - Three hours a week of instructor time over 12 weeks, taught by a local fiddle maker; members only; a woodshop orientation and safety checkouts first (last run August 2025)
+        - $575 for a new violin, $250 to continue one
+    after: The UNH Violin Craftsmanship Institute's week of violin and viola building was listed as currently unavailable, with a new date to be scheduled. Merton lists its fee as a range without saying
+      who pays what, so check with the college.
+  faq:
+  - q: Can a beginner make a violin?
+    a: Yes, on some courses. Halsway Manor's violin-making week says beginners are very welcome, and West Dean College says some of its instrument options suit complete beginners.
+  - q: How long does it take to make a violin on a course?
+    a: Longer than one course. West Dean College says it is not possible to complete one in a single nine-day course and that you will need more than two, and Merton College's first year of one day a week
+      builds a substantial part of a violin rather than a finished one.
+  - q: Do I need woodworking experience to make a violin?
+    a: Not always. Bainbridge Artisan Resource Network's class is open to beginning woodworkers, though it says experience would be an asset, and at West Dean you choose an instrument according to your
+      interests and experience in fine woodworking.
+  - q: How much does a violin making course cost in the UK?
+    a: As last listed, Halsway Manor's five-day course was £695 with full board, and West Dean lists timber for a violin at £120 to £200 on top of its fee.
+  sources:
+  - label: British Violin Making Association, Part Time Courses
+    url: https://www.bvma.org.uk/part-time-courses
+    checked: '2026-11-21'
+  - label: West Dean College, Musical instrument making – violins, violas and cellos with Colin Cross
+    url: https://www.westdean.ac.uk/short-courses/smi37702-musical-instrument-making-violins-violas-and-cellos
+    checked: '2026-11-21'
+  - label: South Thames Colleges Group, Violin Making And Repair - Beginners (Level 1)
+    url: https://stcg.ac.uk/merton-college/musical-instrument-making-and-repair/violin-making-and-repair-beginners-level-1
+    checked: '2026-11-21'
+  - label: Halsway Manor, Violin Making – Summer 2025
+    url: https://halswaymanor.org.uk/event/violin-making-summer-2025/
+    checked: '2026-11-21'
+  - label: Bainbridge Artisan Resource Network, Make a Violin
+    url: https://create.bainbridgebarn.org/event/make-a-violin-165171
+    checked: '2026-11-21'
+  - label: University of New Hampshire Professional Development & Training, Violin and Viola Building
+    url: https://training.unh.edu/course/violin-and-viola-building
+    checked: '2026-11-21'
+  kit:
+  - name: Cabinet scraper set
+    why: West Dean's list of tools to bring includes scrapers
+    url: https://www.amazon.co.uk/s?k=cabinet+scraper+set
+  - name: Block plane
+    why: also on West Dean's list of tools to bring
+    url: https://www.amazon.co.uk/s?k=block+plane
+  - name: Workshop apron
+    why: for the bench; West Dean asks students to bring one
+    url: https://www.amazon.co.uk/s?k=woodworking+apron
+  related:
+  - learn-guitar-making
+  - learn-the-violin
+  - learn-woodcarving
+  - learn-woodworking
+- id: learn-nalbinding
+  title: Learn nalbinding, the Viking needle-binding craft
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Nalbinding makes a dense, warm fabric from loops of wool worked with a single needle and short strands of yarn, and it is centuries older than knitting or crochet. The only Viking-age sock found
+    in England, now on show at JORVIK Viking Centre in York, was made this way.
+  start:
+  - Book a one-day workshop at a heritage site or living museum, or a beginners' online class with a kit posted to you.
+  - Use pure wool yarn, which is what the historical pieces were made from, and ask the tutor which stitch you will learn.
+  - Practise a small swatch or neck warmer before you try mittens or socks.
+  links:
+  - label: 'Butser Ancient Farm: Nalbinding Workshop (Hampshire)'
+    url: https://butserancientfarm.co.uk/whats-on/nalbinding-workshop
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Weald & Downland Living Museum: Introduction to Nalbinding (West Sussex)'
+    url: https://www.wealddown.co.uk/events/introduction-to-nalbinding-2/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Vesterheim Folk Art School: Nålbinding, online class with a kit (February to March 2027)'
+    url: https://store.vesterheim.org/products/2027-02-12-nalbinding-online.oembed
+    region: us
+    checked: '2026-11-21'
+  - label: 'North House Folk School blog: Nålbinding, what''s that?'
+    url: https://northhouse.org/blog/nalbinding-whats-that
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Nalbinding classes for beginners: the Viking craft'
+  description: What nalbinding is, how it differs from knitting, and where to learn it at a UK heritage site or a US folk art school, with costs as last listed.
+  detail:
+  - h: What it's really like
+    p:
+    - North House Folk School describes nålbinding as a way to make fabric out of loops, using one needle and short strands of woollen yarn worked in simple patterns. It dates back to the Bronze or early
+      Iron Age or earlier, variations are found in cultures around the world, and the common name comes from Scandinavia. Handling nålbound mittens or socks, it says, shows off the fabric's density, warmth
+      and texture.
+    - York Archaeology says the Viking-age wool sock on display at JORVIK Viking Centre was made with nålebinding, which creates a heavier, almost double-thickness fabric. On a beginners' day you usually
+      go home with a needle and something started. At Weald & Downland Living Museum you make your own nalbinding needle and take home sample swatches; at Butser Ancient Farm you learn the Coppergate and
+      Coptic stitches, start a project and take home a wooden needle and enough wool to finish it.
+  - h: Ways to start compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Butser Ancient Farm, Hampshire
+        - 10am to 2pm, ages 18 and over; wooden needle and wool to finish your project included
+        - £65 low income, £75 standard, £85 pay it forward
+      - - Weald & Downland Living Museum, West Sussex
+        - 10am to 4pm; make your own needle; materials, tea and coffee included, lunch not (last run July 2026)
+        - £85
+      - - Vesterheim Folk Art School, online
+        - Five 90-minute Zoom sessions, 12 February to 5 March 2027; make a neck warmer, a small bag and mittens; materials kit posted to your home
+        - $240, or $220 for members
+    after: Vesterheim says its class is open to all levels but that you should have some fibre arts experience, such as knitting, crochet or weaving, and students outside the US must provide their own supplies.
+      North House Folk School's blog also describes nålbinding classes there of three or five days.
+  faq:
+  - q: What is nalbinding?
+    a: An old way of making fabric from loops of yarn using a single needle and short strands of wool. North House Folk School says it predates knitting and crochet by many centuries.
+  - q: Is nalbinding the same as knitting?
+    a: No. Both make fabric from loops, but nalbinding uses one needle and short lengths of yarn, and York Archaeology says it gives a heavier, almost double-thickness fabric.
+  - q: Did the Vikings use nalbinding?
+    a: Yes. The only Viking-age sock found in England was made with the technique and is on display at JORVIK Viking Centre in York.
+  - q: Do I need to knit or crochet to learn nalbinding?
+    a: It helps. Vesterheim's online class is labelled beginner friendly but says you should have some fibre arts experience, such as knitting, crochet or weaving.
+  sources:
+  - label: York Archaeology, Winter in Jorvik
+    url: https://research.yorkarchaeology.co.uk/winter-in-jorvik/
+    checked: '2026-11-21'
+  - label: North House Folk School, Nålbinding--What's That?
+    url: https://northhouse.org/blog/nalbinding-whats-that
+    checked: '2026-11-21'
+  - label: Butser Ancient Farm, Nalbinding Workshop
+    url: https://butserancientfarm.co.uk/whats-on/nalbinding-workshop
+    checked: '2026-11-21'
+  - label: Weald & Downland Living Museum, Introduction To Nalbinding
+    url: https://www.wealddown.co.uk/events/introduction-to-nalbinding-2/
+    checked: '2026-11-21'
+  - label: Vesterheim, 2027-02-12 – Nålbinding (Online)
+    url: https://store.vesterheim.org/products/2027-02-12-nalbinding-online.oembed
+    checked: '2026-11-21'
+  kit:
+  - name: Wooden nalbinding needle
+    why: the single wide-eyed needle the technique uses
+    url: https://www.amazon.co.uk/s?k=nalbinding+needle+wooden
+  - name: Pure wool yarn
+    why: the historical pieces were made in wool
+    url: https://www.amazon.co.uk/s?k=100%25+wool+yarn+aran
+  related:
+  - learn-to-spin-yarn
+  - join-a-knitting-group
+  - learn-to-crochet
+  - learn-to-weave-on-a-loom
+- id: learn-to-ferment-vegetables
+  title: Learn to ferment vegetables on a class
+  category: eat
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Shredded cabbage, salt and a few weeks at room temperature turn into sauerkraut with no cooking at all, and the same idea gives you kimchi and sour dill pickles. A hands-on class shows you how much
+    salt, how to weigh the vegetables down and what to watch for, and you usually take your jars home.
+  start:
+  - Find a beginners' fermenting class at an adult learning centre, a cookery school or, in the US, a county extension office or Master Food Preservers group.
+  - Ask what you will make and whether to bring jars; some classes supply them, others ask you to bring clean glass jars with lids.
+  - At home, start with a tested recipe, such as the National Center for Home Food Preservation's sauerkraut, and follow its salt amounts exactly.
+  links:
+  - label: 'The School of Artisan Food: Introduction to Fermentation & Pickling (Nottinghamshire)'
+    url: https://schoolofartisanfood.org/courses/short-courses/preserving-fermentation/introduction-to-fermentation-pickling
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Surrey County Council Adult Learning: Gut Health Cookery, Kim Chi & Krauts (Guildford)'
+    url: https://www.surreycc.gov.uk/schools-and-learning/adult-learning/courses/overview?id=62082
+    region: uk
+    checked: '2026-11-21'
+  - label: 'UGA Cooperative Extension: Make Kimchi Safely at Home Workshop (Georgia)'
+    url: https://extension.uga.edu/calendar/event/28985/make-kimchi-safely-at-home-workshop.html
+    region: us
+    checked: '2026-11-21'
+  - label: 'National Center for Home Food Preservation: tested sauerkraut recipe'
+    url: https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/
+    region: any
+    checked: '2026-11-21'
+  seo_title: 'Fermenting classes for beginners: sauerkraut and kimchi'
+  description: What a beginners' fermenting class covers, from sauerkraut to kimchi and dill pickles, what to bring, what it costs and the official safety basics.
+  detail:
+  - h: What it's really like
+    p:
+    - Sauerkraut is cabbage and salt. The National Center for Home Food Preservation's tested recipe uses 3 tablespoons of canning or pickling salt for every 5 lb (about 2.3 kg) of cabbage. It says kraut
+      ferments fully in about 3 to 4 weeks at 70 to 75°F (about 21 to 24°C), takes 5 to 6 weeks at 60 to 65°F (about 16 to 18°C), may not ferment below 60°F and may go soft above 75°F. If you weigh the
+      cabbage down with jars rather than a brine-filled bag, you check it two or three times a week and skim off any scum, and fully fermented kraut keeps for several months tightly covered in the fridge.
+    - A class is short and practical. Surrey's two-and-a-half-hour class makes a red kraut and a kimchi, and asks you to bring your own glass jars. UGA Cooperative Extension's three-hour kimchi class uses
+      the National Center's tested recipe and sends you home with a batch of kimchi, the dry ingredients and a food scale to make more.
+  - h: Ways to start compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The School of Artisan Food, Welbeck, Nottinghamshire
+        - One day, 10am to 4.30pm; what you make depends on the season and may include kimchi, sauerkraut and pickles; lunch and jars included (last listed August 2026)
+        - £215 to £220
+      - - Surrey County Council Adult Learning, Guildford
+        - One 2.5-hour session; red kraut and kimchi; bring your own jars (last run June 2026)
+        - £30
+      - - UGA Cooperative Extension, Albany, Georgia
+        - Three-hour hands-on kimchi class; take home kimchi, ingredients and a food scale (last run August 2026)
+        - $10
+      - - UC Cooperative Extension Orange County Master Food Preservers, Irvine, California
+        - Two-hour hands-on class; small-batch sauerkraut and brined dill pickles; limited to 20 (last run October 2025)
+        - $35, plus an optional $5 for a loaner apron
+    after: Both School of Artisan Food dates in 2026 were listed as fully booked, and the school says it cannot cater for severe food allergies or coeliac disease.
+  faq:
+  - q: Is homemade sauerkraut safe?
+    a: Follow a tested recipe. The National Center for Home Food Preservation advises following a reliable recipe exactly, keeping to the salt it specifies, and not eating pickles if spoilage is evident.
+  - q: How long does sauerkraut take to ferment?
+    a: About 3 to 4 weeks at 70 to 75°F (21 to 24°C), or 5 to 6 weeks at 60 to 65°F (16 to 18°C), according to the National Center for Home Food Preservation.
+  - q: What salt do you use for sauerkraut?
+    a: The National Center for Home Food Preservation's recipe uses canning or pickling salt, 3 tablespoons for every 5 lb (about 2.3 kg) of cabbage.
+  - q: What do I need to bring to a fermenting class?
+    a: It varies. Surrey's class asks for two large and two medium glass jars with screw or flip-top lids, while the School of Artisan Food provides jars.
+  sources:
+  - label: National Center for Home Food Preservation, Sauerkraut
+    url: https://nchfp.uga.edu/how/ferment/recipes/sauerkraut/
+    checked: '2026-11-21'
+  - label: National Center for Home Food Preservation, Causes and Possible Solutions for Problems with Fermented Pickles
+    url: https://nchfp.uga.edu/how/ferment/general-information-on-fermenting/causes-and-possible-solutions-for-problems-with-fermented-pickles/
+    checked: '2026-11-21'
+  - label: The School of Artisan Food, Introduction to Fermentation & Pickling
+    url: https://schoolofartisanfood.org/courses/short-courses/preserving-fermentation/introduction-to-fermentation-pickling
+    checked: '2026-11-21'
+  - label: Surrey County Council, Gut Health Cookery - Kim Chi & Krauts
+    url: https://www.surreycc.gov.uk/schools-and-learning/adult-learning/courses/overview?id=62082
+    checked: '2026-11-21'
+  - label: UGA Cooperative Extension, Make Kimchi Safely at Home Workshop
+    url: https://extension.uga.edu/calendar/event/28985/make-kimchi-safely-at-home-workshop.html
+    checked: '2026-11-21'
+  - label: UC Agriculture and Natural Resources, Get Your Brine On! Fermentation Fun with Sauerkraut & Dill Pickles
+    url: https://ucanr.edu/node/162071
+    checked: '2026-11-21'
+  safety: The National Center for Home Food Preservation advises following a reliable recipe exactly, keeping to the salt it specifies, using food-grade unchipped enamelware, glass, stainless steel or stoneware
+    utensils, not using pickles if brass, copper or zinc utensils or brining equipment were used, and not eating pickles if spoilage is evident.
+  kit:
+  - name: Fermentation weights
+    why: to keep the vegetables under the brine
+    url: https://www.amazon.co.uk/s?k=fermentation+glass+weights
+  - name: Glass jars with clip-top lids
+    why: some classes ask you to bring your own jars
+    url: https://www.amazon.co.uk/s?k=kilner+clip+top+jar
+  - name: Pickling salt
+    why: the tested sauerkraut recipe uses canning or pickling salt
+    url: https://www.amazon.co.uk/s?k=pickling+salt
+  related:
+  - preserve-a-seasons-fruit
+  - learn-cheesemaking
+  - make-your-own-gin
+  - sourdough-from-starter
+- id: take-a-gelato-course
+  title: Learn to make gelato on a course
+  category: eat
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: days
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  - world
+  why: Gelato and ice cream look simple, but the ingredients you choose change both flavour and texture, and a course lets you taste the difference for yourself. You can try it in a 90-minute class at Carpigiani's
+    gelato museum near Bologna, a one-day ice cream course in Nottinghamshire or a two-day university course in the US.
+  start:
+  - 'Decide how deep you want to go: a short hands-on class, a one-day course for home cooks, or a longer course that also covers running a gelato business.'
+  - Read who the course is for before you book. Some are for home cooks and enthusiasts; others, such as Penn State's Ice Cream Short Course, are for people working in commercial ice cream.
+  - Check what is included (lunch, an apron, a booklet, tastings) and whether the class is hands-on or partly theory.
+  links:
+  - label: 'Carpigiani Gelato Museum: Gelato Masterclass (Anzola Emilia, near Bologna)'
+    url: https://www.gelatomuseum.com/en/book-your-gelato-experience/gelato-masterclass-6117
+    region: any
+    checked: '2026-11-21'
+  - label: 'Carpigiani Gelato University: Basic Gelato Course'
+    url: https://gelatouniversity.com/en/courses/basic-gelato-course/basic-gelato-course-273/?local=1
+    region: any
+    checked: '2026-11-21'
+  - label: 'The School of Artisan Food: Introduction to Ice Cream Making (Welbeck, Nottinghamshire)'
+    url: https://schoolofartisanfood.org/courses/short-courses/ice-cream-making/introduction-to-ice-cream-making
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Cornell University (CALS): Introduction to Artisan Ice Cream and Frozen Desserts'
+    url: https://cals.cornell.edu/education/degrees-programs/introduction-artisan-ice-cream-and-frozen-desserts
+    region: us
+    checked: '2026-11-21'
+  - label: 'Penn State Department of Food Science: Ice Cream 101'
+    url: https://foodscience.psu.edu/workshops/ice-cream-101
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Gelato courses: Bologna, UK and US classes compared'
+  description: Where to learn to make gelato and ice cream, from a 90-minute class near Bologna to UK and US courses, with what each covers and what it costs.
+  detail:
+  - h: What it's really like
+    p:
+    - A short class gets you making something straight away. At the Carpigiani Gelato Museum masterclass you tour the museum, follow a recipe to make a fruit sorbet in the laboratory and finish with a comparative
+      tasting of what was made, and you go home with an apron, a booklet, a student's kit and a diploma.
+    - A one-day course goes further. The School of Artisan Food's introduction, taught by Kitty Travers, founder of La Grotta Ices in London, covers how ingredients affect flavour and texture and how ice
+      cream, gelato and parfait differ, and you try both machine and hand-made methods for ice creams, sorbets and granitas. It is for home cooks and enthusiasts and needs no experience.
+    - Longer courses are aimed at people who want to sell what they make. Carpigiani Gelato University's five-day Basic Gelato Course is for aspiring gelato entrepreneurs and includes shop business and
+      profitability alongside sorbets, granita, soft-serve and stick gelato.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Carpigiani Gelato Museum, Anzola Emilia (Bologna), Italy
+        - 'Gelato Masterclass: 1 hour 30 minutes, museum tour, make and taste a fruit sorbet'
+        - €50
+      - - The School of Artisan Food, Welbeck, Nottinghamshire
+        - 'Introduction to Ice Cream Making: one day, 9am to 4.30pm, lunch included'
+        - £215
+      - - Carpigiani Gelato University, Anzola Emilia (Bologna), Italy
+        - 'Basic Gelato Course: five days in English, theory plus hands-on practice; also online'
+        - €1,500 without VAT (€1,830 with VAT)
+      - - Cornell University (CALS), New York
+        - Online modules plus two days in person (30 to 31 March 2027), with small-scale ice cream production; for makers and would-be ice cream businesses
+        - $725 to $880, depending on state of residence and booking date
+      - - Penn State, University Park, Pennsylvania
+        - 'Ice Cream 101: two days, lecture and hands-on, offered each January'
+        - Not listed on the course page
+    after: Penn State also runs a seven-day Ice Cream Short Course, but it is for people working in commercial ice cream manufacturing, such as production, quality control and research.
+  faq:
+  - q: Can you do a gelato course in Italy as a tourist?
+    a: Yes. The Carpigiani Gelato Museum near Bologna runs a 90-minute masterclass where you make a fruit sorbet, open Tuesday to Saturday by reservation, listed at €50.
+  - q: Do I need experience for an ice cream making course?
+    a: Not for beginners' courses. The School of Artisan Food says no prior experience is needed, and Penn State's Ice Cream 101 welcomes people with little or no ice cream manufacturing experience.
+  - q: What is the difference between ice cream and gelato?
+    a: It is one of the things a course covers. The School of Artisan Food's one-day introduction compares ice cream, gelato and parfait and shows how ingredients affect flavour and texture.
+  - q: Is Carpigiani Gelato University for beginners?
+    a: Its Basic Gelato Course is for aspiring gelato entrepreneurs taking a first step and lists no experience requirement, but it is a five-day course that includes running a gelato shop. For a taster,
+      the museum masterclass is shorter.
+  sources:
+  - label: Carpigiani Gelato Museum, Book Your Gelato Experience (Gelato Masterclass)
+    url: https://www.gelatomuseum.com/en/book-your-gelato-experience/gelato-masterclass-6117
+    checked: '2026-11-21'
+  - label: Carpigiani Gelato University, Basic Gelato Course
+    url: https://gelatouniversity.com/en/courses/basic-gelato-course/basic-gelato-course-273/?local=1
+    checked: '2026-11-21'
+  - label: The School of Artisan Food, Ice Cream Making Course with Kitty Travers
+    url: https://schoolofartisanfood.org/courses/short-courses/ice-cream-making/introduction-to-ice-cream-making
+    checked: '2026-11-21'
+  - label: Cornell CALS, Introduction to Artisan Ice Cream and Frozen Desserts
+    url: https://cals.cornell.edu/education/degrees-programs/introduction-artisan-ice-cream-and-frozen-desserts
+    checked: '2026-11-21'
+  - label: Penn State Department of Food Science, Ice Cream 101 "Introduction to Frozen Desserts"
+    url: https://foodscience.psu.edu/workshops/ice-cream-101
+    checked: '2026-11-21'
+  - label: Penn State Department of Food Science, Ice Cream Short Course
+    url: https://foodscience.psu.edu/workshops/ice-cream-short-course
+    checked: '2026-11-21'
+  kit:
+  - name: Ice cream maker
+    why: to churn and freeze your own batches at home after the course
+    url: https://www.amazon.co.uk/s?k=ice+cream+maker+gelato
+  - name: Gelato recipe book
+    why: recipes and ratios to practise with
+    url: https://www.amazon.co.uk/s?k=gelato+recipe+book
+  - name: Ice cream scoop
+    why: for serving and portioning
+    url: https://www.amazon.co.uk/s?k=ice+cream+scoop
+  related:
+  - take-a-cookery-holiday-in-italy
+  - learn-to-make-pasta
+  - take-a-patisserie-course
+  - learn-chocolate-making
+- id: climb-mount-etna
+  title: Go up Mount Etna with a volcano guide
+  category: travel
+  kind: experience
+  effort: moderate
+  cost: mid
+  time: days
+  setting: outdoors
+  company: others
+  regions:
+  - world
+  why: Etna in Sicily is, in the words of the IUCN's World Heritage Outlook, the highest Mediterranean island mountain and the most active stratovolcano in the world, with at least 2,700 years of recorded
+    activity. A cable car and 4x4 bus take you from about 1,900 metres to around 2,800 metres, and from there an authorised guide walks you close to the summit craters as far as the day's rules allow.
+  start:
+  - Choose a side. Etna Sud starts at Rifugio Sapienza, where the Funivia dell'Etna cable car runs from 1,923 m to 2,500 m (about 6,300 to 8,200 ft); Etna Nord treks leave from Piano Provenzana at about
+    1,800 m (5,905 ft).
+  - Book with an authorised guide for anything above the cable car, and check how high the tour actually goes, whether pick-up is included and whether the cable car and 4x4 fare is in the price.
+  - Read the latest INGV Etna bulletin and the UK Foreign Office (FCDO) advice for Italy before you go, and pack walking boots, long trousers, warm layers and a wind jacket even in summer.
+  links:
+  - label: 'INGV Osservatorio Etneo: weekly Etna bulletin for 24 to 30 August 2026 (in Italian)'
+    url: https://www.ct.ingv.it/index.php/monitoraggio-e-sorveglianza/prodotti-del-monitoraggio/bollettini-settimanali-multidisciplinari/1161-bollettino-Settimanale-sul-monitoraggio-vulcanico-geochimico-e-sismico-del-vulcano-Etna-del-2026-09-01/file
+    region: any
+    checked: '2026-11-21'
+  - label: 'GOV.UK (FCDO): Italy travel advice, safety and security'
+    url: https://www.gov.uk/foreign-travel-advice/italy/safety-and-security
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Funivia dell''Etna: cable car and guided tours from Etna Sud'
+    url: https://funiviaetna.com/
+    region: any
+    checked: '2026-11-21'
+  - label: 'IUCN World Heritage Outlook: Mount Etna'
+    url: https://worldheritageoutlook.iucn.org/node/1174
+    region: any
+    checked: '2026-11-21'
+  seo_title: 'Climbing Mount Etna: guides, cable car and rules'
+  description: How to go up Mount Etna in Sicily, from the cable car to guided walks near the summit craters, with the altitude rules, costs and what to wear.
+  detail:
+  - h: What it's really like
+    p:
+    - Etna has been a World Heritage site since 2013, managed by the Ente Parco dell'Etna. It erupts often. INGV's bulletin for 24 to 30 August 2026 reported occasional ash emissions from the North-East
+      Crater after eruptive activity between 6 and 23 August, and listed frequent explosive activity at the summit craters, with ash clouds and lava emissions, among its expected scenarios.
+    - How high you may go is set by local ordinances and changes with the volcano's activity. Lonely Planet (February 2026) says it is forbidden to go above 2,500 m without an authorised Etna guide, and
+      Euronews (January 2026) reported that hiking past 2,900 m requires a guide and that the Catania authorities had added restrictions after eruptions began on Christmas Eve, including staying at least
+      200 metres from the lava and finishing excursions by dusk. One guiding company, Etnatracking, says in an undated article that to date the summit craters cannot be reached, even with a guide, so expect
+      to stop near them rather than on the rim.
+    - High up it is cold and windy even when the lower slopes are hot, and you may smell sulphurous gas. Lonely Planet suggests April, May, September and October for hiking, as snow can linger into April
+      and return in November.
+  - h: Ways up compared
+    table:
+      head:
+      - Option
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - 'Funivia dell''Etna: cable car only (2500)'
+        - Return cable car from 1,923 m to 2,500 m, listed at 45 minutes; 4x4 buses replace it in bad weather
+        - Not shown on the official site; check when booking
+      - - 'Funivia dell''Etna: Tour 3000'
+        - Cable car to 2,500 m, 4x4 bus (snowcat in winter) to 2,800 m, then a short walk with a volcano guide to about 3,000 m
+        - Not shown on the official site; check when booking
+      - - Guided day from Catania or Taormina (Go-Etna, Emotion 3000)
+        - Guide, cable car and Unimog 4x4 to about 2,920 m (Torre del Filosofo), a walk of about 40 to 45 minutes near the craters; about 8 hours
+        - From €140 meeting at the Giarre motorway exit, or €155 with hotel pick-up (includes €65 for cable car and 4x4); listed as temporarily suspended for the 2026 season
+      - - Guided trek from Etna Nord (Piano Provenzana)
+        - Higher-altitude hikes typically of about 6 km in four to five hours, needing reasonable fitness
+        - Varies by guide; ask what is included
+    after: Lonely Planet advises using guides who belong to the Collegio Regionale delle Guide Alpine e Vulcanologiche, Sicily's regional body for alpine and volcano guides.
+  faq:
+  - q: Can you climb Mount Etna without a guide?
+    a: Only on the lower slopes. Lonely Planet says it is forbidden to go above 2,500 m without an authorised Etna guide, and the rules are tightened when the volcano is active.
+  - q: Can you see the summit craters of Etna?
+    a: You can get close with a guide; tours are listed to about 2,920 m at Torre del Filosofo or about 3,000 m, but one guiding company says that to date the summit craters themselves cannot be reached,
+      even with a guide.
+  - q: Is it safe to visit Mount Etna?
+    a: It is an active volcano and access changes with its activity. The UK Foreign Office says to follow the instructions of the local authorities during eruptions and notes that airspace, including flights
+      to and from Catania, can be affected.
+  - q: What should I wear to go up Etna?
+    a: Layers, long trousers and sturdy closed shoes, plus a wind jacket, warm hat, gloves, sunglasses and a scarf against dust and gas, according to Lonely Planet.
+  sources:
+  - label: IUCN World Heritage Outlook, Mount Etna
+    url: https://worldheritageoutlook.iucn.org/node/1174
+    checked: '2026-11-21'
+  - label: INGV Osservatorio Etneo, ETNA Bollettino settimanale 36/2026 (24 to 30 August 2026)
+    url: https://www.ct.ingv.it/index.php/monitoraggio-e-sorveglianza/prodotti-del-monitoraggio/bollettini-settimanali-multidisciplinari/1161-bollettino-Settimanale-sul-monitoraggio-vulcanico-geochimico-e-sismico-del-vulcano-Etna-del-2026-09-01/file
+    checked: '2026-11-21'
+  - label: GOV.UK, Safety and security - Italy travel advice
+    url: https://www.gov.uk/foreign-travel-advice/italy/safety-and-security
+    checked: '2026-11-21'
+  - label: Funivia dell'Etna, Unforgettable Etna Tours & Excursions
+    url: https://funiviaetna.com/
+    checked: '2026-11-21'
+  - label: Funivia dell'Etna, Tickets
+    url: https://funiviaetna.com/en
+    checked: '2026-11-21'
+  - label: 'Italia.it, Mount Etna: Roundtrip Cable Car Ticket'
+    url: https://www.italia.it/en/sicilia/nicolosi/experiences/mount-etna-roundtrip-cable-car-ticket-tiqets-1103912
+    checked: '2026-11-21'
+  - label: Lonely Planet, What to know before hiking Mt Etna (Nicola Williams, 22 February 2026)
+    url: https://www.lonelyplanet.com/articles/how-to-hike-mount-etna-sicily
+    checked: '2026-11-21'
+  - label: Euronews, Mount Etna tour guides protest new restrictions on visiting Europe's most active volcano (8 January 2026)
+    url: https://www.euronews.com/2026/01/08/mount-etna-tour-guides-protest-new-restrictions-on-visiting-europes-most-active-volcano
+    checked: '2026-11-21'
+  - label: Go-Etna, Mount Etna Emotion 3000 Tour
+    url: https://www.go-etna.com/emotion-on-10000-feet
+    checked: '2026-11-21'
+  - label: Etnatracking, Is it possible to reach Mount Etna's peak?
+    url: https://www.etnatracking.com/en/blog/raggiungere-cima-etna
+    checked: '2026-11-21'
+  safety: Etna erupts often and access limits change with its activity. Lonely Planet says it is forbidden to go above 2,500 m without an authorised Etna guide, and the UK Foreign Office says to follow
+    the instructions of the local authorities during eruptions. Expect cold, wind and sulphurous gas high up; Go-Etna says the crater area is prohibited for people with heart conditions, asthma or high
+    blood pressure and for pregnant women.
+  book:
+  - label: Guided Etna excursions on GetYourGuide
+    why: check the altitude reached, whether pick-up is included and whether the cable car and 4x4 fare is in the price
+    url: https://www.getyourguide.com/s/?q=Mount%20Etna
+    aff: getyourguide
+  kit:
+  - name: Walking boots
+    why: for loose volcanic ash and rock above the cable car
+    url: https://www.amazon.co.uk/s?k=walking+boots
+  - name: Windproof jacket
+    why: it is cold and windy at altitude even in summer
+    url: https://www.amazon.co.uk/s?k=windproof+jacket+hiking
+  - name: Neck gaiter
+    why: to pull over your mouth and nose against dust
+    url: https://www.amazon.co.uk/s?k=neck+gaiter+buff
+  related:
+  - climb-mount-st-helens
+  - walk-the-streets-of-pompeii
+  - walk-tongariro-alpine-crossing
+  - climb-kilimanjaro
+- id: visit-hawaii-volcanoes-national-park
+  title: See Kīlauea's crater in Hawaiʻi Volcanoes National Park
+  category: travel
+  kind: experience
+  effort: moderate
+  cost: low
+  time: days
+  setting: outdoors
+  company: either
+  regions:
+  - us
+  places:
+  - HI
+  why: Kīlauea, on Hawaiʻi Island, has been erupting on and off from Halemaʻumaʻu crater, with more than 50 eruptions since December 2024, and you watch from overlooks on the caldera rim, best of all at
+    night when the glow shows. By day you can walk across the solid floor of a 1959 lava lake or drive down Chain of Craters Road towards the sea.
+  start:
+  - Check the park's eruption viewing page, its webcams and the USGS daily update on the day, as eruptions can pause for days or weeks and some last only a few hours.
+  - Pay the entrance fee ($30 per private vehicle, as last listed) and arrive early, as car parks can fill by 10am during eruptions; for a night visit bring a head torch, warm clothes and a rain jacket.
+  - Pick a walk such as the Kīlauea Iki Trail, carry at least two quarts (about 2 litres) of water each, and check the air quality alert before you set off.
+  links:
+  - label: 'Hawaiʻi Volcanoes National Park (NPS): eruption viewing'
+    url: https://www.nps.gov/havo/planyourvisit/eruption-viewing.htm
+    region: us
+    checked: '2026-11-21'
+  - label: 'Hawaiʻi Volcanoes National Park (NPS): safety'
+    url: https://www.nps.gov/havo/planyourvisit/safety.htm
+    region: us
+    checked: '2026-11-21'
+  - label: 'Hawaiʻi Volcanoes National Park (NPS): fees and passes'
+    url: https://www.nps.gov/hawaiivolcanoes/planyourvisit/fees.htm
+    region: us
+    checked: '2026-11-21'
+  - label: 'USGS Hawaiian Volcano Observatory: Kīlauea volcano updates'
+    url: https://www.usgs.gov/kilauea-hvo-status-yt24
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Hawaiʻi Volcanoes National Park: eruption, trails, fees'
+  description: How to see Kīlauea's eruption and lava landscapes in Hawaiʻi Volcanoes National Park, with viewpoints, trails, the entrance fee and volcanic gas safety.
+  detail:
+  - h: What it's really like
+    p:
+    - The eruption area itself is closed, so you watch from caldera-rim overlooks along Crater Rim Drive, including Uēkahuna, Kīlauea Overlook at Kūkamāhuākea (Steam Vents), Kūpinaʻi Pali and Keanakākoʻi.
+      As of September 2026 the park said all activity was inside the park, that fog or rain can block the view, and that glow and fountains are most visible at night.
+    - The Kīlauea Iki Trail drops through rainforest to the solidified lava lake on the crater floor, below the Puʻupuaʻi cinder cone, where the 1959 vent erupted to a height of 1,900 feet (about 580 m).
+      The NPS rates it moderate to challenging, with steep, rocky ground.
+    - The NPS says lava fields are shadeless and hot, and to be ready for rain, fog and wind. Chain of Craters Road has no food, water or fuel along its 18.8 miles (30.3 km), so fill up before you go.
+  - h: Ways to see the park compared
+    table:
+      head:
+      - Option
+      - What you see
+      - Cost (as last listed)
+      rows:
+      - - Crater Rim Drive overlooks
+        - Halemaʻumaʻu crater from the caldera rim; eruption glow at night when active. Use Crater Rim Drive West for Uēkahuna and Kīlauea Overlook
+        - Included in the entrance fee ($30 per private vehicle, $15 per person on foot or bicycle)
+      - - Kīlauea Iki Trail
+        - Rainforest and a 1959 lava lake floor; 3.3 mile (5.3 km) loop from Kīlauea Iki Overlook, 2 to 3 hours, 400 ft (122 m) down and back up
+        - Included in the entrance fee
+      - - Chain of Craters Road
+        - An 18.8 mile (30.3 km) drive past old lava flows, with stops such as Maunaulu and the Puʻuloa petroglyph trailhead
+        - Included in the entrance fee
+      - - Hawaiʻi Tri-Park Annual Pass
+        - Twelve months' entry to Hawaiʻi Volcanoes, Haleakalā and Puʻuhonua o Hōnaunau; US citizens and residents only
+        - $55
+    after: Non-US residents can instead buy the America the Beautiful non-resident annual pass, listed at $250, which covers entrance fees at US national parks and other federal recreation lands.
+  faq:
+  - q: Can you see lava at Hawaii Volcanoes National Park?
+    a: Sometimes. Kīlauea erupts intermittently from Halemaʻumaʻu crater with pauses of days or weeks, so check the park's eruption viewing page, webcams and the USGS daily update before you go.
+  - q: How much does it cost to enter Hawaii Volcanoes National Park?
+    a: The NPS lists $30 for a private vehicle with up to 15 people, $25 for a motorcycle and $15 per person on foot or bicycle.
+  - q: What is the best time to see the eruption at Kīlauea?
+    a: Glow and fountains are most visible at night, and the park advises arriving early for better views and to avoid crowds, as car parks can fill by 10am.
+  - q: Is volcanic gas dangerous at Hawaii Volcanoes National Park?
+    a: It can be. The NPS says hazardous volcanic gases are a risk especially to people with heart or breathing problems, infants, children and pregnant women, and to check the air quality alert before
+      visiting.
+  sources:
+  - label: NPS, Eruption Viewing - Hawaiʻi Volcanoes National Park
+    url: https://www.nps.gov/havo/planyourvisit/eruption-viewing.htm
+    checked: '2026-11-21'
+  - label: NPS, Safety - Hawaiʻi Volcanoes National Park
+    url: https://www.nps.gov/havo/planyourvisit/safety.htm
+    checked: '2026-11-21'
+  - label: NPS, Fees & Passes - Hawaiʻi Volcanoes National Park
+    url: https://www.nps.gov/hawaiivolcanoes/planyourvisit/fees.htm
+    checked: '2026-11-21'
+  - label: NPS, Day Hike Kīlauea Iki Trail - Hawaiʻi Volcanoes National Park
+    url: https://www.nps.gov/havo/planyourvisit/hike_day_kilauea-iki.htm
+    checked: '2026-11-21'
+  - label: NPS, Drive Chain of Craters Road - Hawaiʻi Volcanoes National Park
+    url: https://nps.gov/havo/planyourvisit/ccr_tour.htm
+    checked: '2026-11-21'
+  - label: USGS, Volcano Updates (Kīlauea)
+    url: https://www.usgs.gov/kilauea-hvo-status-yt24
+    checked: '2026-11-21'
+  safety: Volcanic gas is a particular risk for people with heart or breathing problems, infants, children and pregnant women, so check the air quality alert before and during your visit, stay on marked,
+    open trails and overlooks, and keep well back from earth cracks, cliff edges and steam vents, which the NPS says may collapse.
+  kit:
+  - name: Head torch
+    why: the park advises a light for evening eruption viewing
+    url: https://www.amazon.co.uk/s?k=head+torch
+  - name: Lightweight rain jacket
+    why: fog or rain can roll in at the overlooks
+    url: https://www.amazon.co.uk/s?k=lightweight+rain+jacket+packable
+  - name: 2 litre water bottle
+    why: the NPS says to carry at least two quarts of water each on the lava fields
+    url: https://www.amazon.co.uk/s?k=2+litre+water+bottle
+  related:
+  - watch-sunrise-from-haleakala
+  - climb-mount-st-helens
+  - walk-tongariro-alpine-crossing
+- id: spend-a-day-on-a-working-farm
+  title: Spend a day working on a farm
+  category: explore
+  kind: experience
+  effort: moderate
+  cost: mid
+  time: afternoon
+  setting: outdoors
+  company: either
+  groups:
+  - animals
+  regions:
+  - uk
+  - us
+  why: A farm experience day puts you on the other side of the gate, collecting eggs, mucking out, weaning calves or helping in the lambing shed. If you just want to look round, LEAF Open Farm Sunday opens
+    farms across Britain for a day in June (13 June in 2027), with machinery displays, tractor and trailer rides and nature walks.
+  start:
+  - Decide between a one-day open event, a paid hands-on day and a farm stay, then check what each listing says you will actually do with the animals.
+  - Book ahead and check the age rules. Vauxhall City Farm's Farmer for a Day is for two people aged 16 and over, or a child of 12 or over with an adult, and many Open Farm Sunday farms ask you to book
+    a place.
+  - Wear waterproofs and wellies, and wash your hands with soap and water after touching animals and before you eat or drink.
+  links:
+  - label: 'LEAF Open Farm Sunday: find a farm to visit'
+    url: https://farmsunday.org/visit-a-farm
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Vauxhall City Farm, London: Farmer for a Day (for 2)'
+    url: https://vauxhallcityfarm.org/farmer-for-a-day
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Arnprior Farm, Stirling: lambing experience'
+    url: https://arnpriorfarm.com/lambing/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'FarmStay US: Liberty Hill Farm Inn, Vermont'
+    url: https://farmstayus.com/farms/liberty-hill-farm-inn
+    region: us
+    checked: '2026-11-21'
+  - label: 'Massachusetts Department of Agricultural Resources: Agritourism Program'
+    url: https://www.mass.gov/agritourism-program
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Farm experience days: lambing, feeding and farm stays'
+  description: Where to spend a day working on a farm in the UK and US, from free Open Farm Sunday visits to paid farmer-for-a-day experiences, lambing and farm stays.
+  detail:
+  - h: What it's really like
+    p:
+    - A hands-on day is real work. At Vauxhall City Farm in London you join the farm team for the day, cleaning out enclosures as well as spending time with the animals. The Full Day Farm Experience at
+      Briery Hill Llamas near Newent, Gloucestershire, lasts about seven to eight hours, from collecting eggs from rescued hens and visiting the cows at breakfast time to walking your own llama and feeding
+      and brushing the pigs.
+    - Lambing is seasonal. Arnprior Farm near Stirling runs one-hour lambing slots in spring, when you help feed, bed and water the ewes and new-born lambs; you may see a birth, but the farm does not promise
+      one. It advises anyone who is pregnant or trying for a baby not to take part. If you want longer on the land, Farm Adventure at Masham in North Yorkshire runs a three-day, two-night couples' break
+      that can include lambing, weaning calves, checking sheep's feet and driving the farm's John Deere tractors.
+    - In the US, state agriculture departments list farms that welcome visitors. Massachusetts publishes a directory of more than 250 farms, and North Carolina's Visit NC Farms website can be filtered for
+      farm visits, farm stays and workshops. At Liberty Hill Farm Inn in Rochester, Vermont, guests can help with chores if they wish, including milking, bottle-feeding and gathering eggs.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - What you do
+      - Cost (as last listed)
+      rows:
+      - - LEAF Open Farm Sunday, farms across the UK
+        - One open day; each farm's event differs, with machinery displays, tractor and trailer rides, demonstrations and nature walks. Next date given as Sunday 13 June 2027
+        - Not stated on the finder; check each farm's listing
+      - - Vauxhall City Farm, London
+        - Farmer for a Day with the farm team; 2 adults (16+), or 1 child (12+) with 1 adult
+        - £212 for two
+      - - Briery Hill Llamas, Newent, Gloucestershire
+        - One-to-one full day, about 7 to 8 hours, with hens, cows, llamas and pigs; lunch and afternoon tea
+        - From £249.99
+      - - Farm Adventure, Masham, North Yorkshire
+        - Couples' farm experience, three days and two nights, including tractor driving
+        - From £495
+      - - Arnprior Farm, Stirling
+        - One-hour lambing slot in spring; ages 5 and up, children with a paying adult; finished for 2026, back in spring 2027
+        - Price not shown on the page; one ticket per person
+      - - Liberty Hill Farm Inn, Rochester, Vermont
+        - Farm stay; help with chores if you wish, including milking and gathering eggs
+        - $152 per adult per night
+    after: Farm Stay US says rates are subject to change and asks guests to confirm with the farm host.
+  faq:
+  - q: When is Open Farm Sunday 2027?
+    a: LEAF gives the date as Sunday 13 June 2027. Many farms ask you to book a place, so check the farm's listing on the Open Farm Sunday finder.
+  - q: Can adults do a farmer for a day experience?
+    a: Yes. Vauxhall City Farm's Farmer for a Day is sold for two adults aged 16 and over, and the Briery Hill Llamas full day is a one-to-one experience.
+  - q: Can you help with lambing as a visitor?
+    a: Some farms run lambing sessions in spring. At Arnprior Farm near Stirling you help feed and bed the ewes and lambs in a one-hour slot, though a birth is not guaranteed.
+  - q: Is hand gel enough after touching farm animals?
+    a: No. The UK Health Security Agency says hand gels and wipes are not a substitute for washing with soap and running water.
+  sources:
+  - label: LEAF Open Farm Sunday, Open Farm Sunday celebrates two decades of farming's biggest open day
+    url: https://farmsunday.org/news/open-farm-sunday-celebrates-two-decades-of-farmings-biggest-open-day
+    checked: '2026-11-21'
+  - label: LEAF Open Farm Sunday, Visit a farm
+    url: https://farmsunday.org/visit-a-farm
+    checked: '2026-11-21'
+  - label: Vauxhall City Farm, Farmer for a Day (For 2)
+    url: https://vauxhallcityfarm.org/farmer-for-a-day
+    checked: '2026-11-21'
+  - label: Visit Dean Wye, Full Day Farm Experience
+    url: https://www.visitdeanwye.co.uk/experiences/full-day-farm-experience
+    checked: '2026-11-21'
+  - label: Visit North Yorkshire, The Couples Farm Experience
+    url: https://visitnorthyorkshire.com/experiences/the-couples-farm-experience
+    checked: '2026-11-21'
+  - label: Arnprior Farm, Lambing Experiences at Arnprior Farm, Stirling
+    url: https://arnpriorfarm.com/lambing/
+    checked: '2026-11-21'
+  - label: UK Health Security Agency, Avoiding infection on farm visits - advice for the public
+    url: https://www.gov.uk/government/publications/farm-visits-avoiding-infection/avoiding-infection-on-farm-visits-advice-for-the-public
+    checked: '2026-11-21'
+  - label: CDC, Farm Animals
+    url: https://www.cdc.gov/healthy-pets/about/farm-animals.html
+    checked: '2026-11-21'
+  - label: Massachusetts Department of Agricultural Resources, Agritourism Program
+    url: https://www.mass.gov/agritourism-program
+    checked: '2026-11-21'
+  - label: NC Department of Agriculture and Consumer Services, Visitors can now find statewide agritourism activities through Visit NC Farms website
+    url: https://www.ncagr.gov/news/press-releases/2025/10/03/visitors-can-now-find-statewide-agritourism-activities-through-visit-nc-farms-website
+    checked: '2026-11-21'
+  - label: FarmStay US, Liberty Hill Farm Inn
+    url: https://farmstayus.com/farms/liberty-hill-farm-inn
+    checked: '2026-11-21'
+  safety: The UK Health Security Agency says to wash your hands thoroughly with soap and water after touching animals and before eating or drinking, and that gels and wipes are not a substitute for soap
+    and running water; pregnant women should take extra care, and Arnprior Farm advises anyone pregnant or trying for a baby not to join its lambing sessions.
+  kit:
+  - name: Wellington boots
+    why: for yards, fields and lambing sheds
+    url: https://www.amazon.co.uk/s?k=wellington+boots
+  - name: Waterproof jacket
+    why: most farm work happens outdoors whatever the weather
+    url: https://www.amazon.co.uk/s?k=waterproof+jacket
+  - name: Nail brush
+    why: for scrubbing up with soap and water after handling animals
+    url: https://www.amazon.co.uk/s?k=nail+brush
+  related:
+  - go-alpaca-walking
+  - rehome-hens
+  - go-to-a-county-show
+- id: take-a-helicopter-trial-lesson
+  title: Fly a helicopter on a trial lesson
+  category: explore
+  kind: experience
+  effort: gentle
+  cost: mid
+  time: afternoon
+  setting: outdoors
+  company: solo
+  regions:
+  - uk
+  - us
+  why: On a helicopter trial lesson you take the controls of the helicopter yourself, and the instructor may demonstrate hovering and flying sideways and backwards. At some schools every minute goes in
+    a pilot's logbook and can count towards a licence if you carry on.
+  start:
+  - Compare trial lessons at helicopter schools near you, checking the aircraft, the flight time and what the price includes.
+  - Check the weight and age rules before you book. Sloane Helicopters gives a 15 stone (210 lb) seat limit for the Robinson R22, and Heli Air asks that students be over 16.
+  - Ask whether the flight is logged as training time, and keep the logbook entry in case you go on to a licence.
+  links:
+  - label: 'UK Civil Aviation Authority: private pilot licence for helicopters'
+    url: https://www.caa.co.uk/general-aviation/pilot-licences/helicopters/private-pilot-licence-for-helicopters/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Heli Air: 30-minute R22 helicopter lesson'
+    url: https://www.heliair.com/store/helicopter-lessons-r22-30min/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Sloane Helicopters: trial helicopter lesson'
+    url: https://flyingschool.sloanehelicopters.com/other-courses/trial-lesson
+    region: uk
+    checked: '2026-11-21'
+  - label: 'FAA: become a pilot (student pilot certificate)'
+    url: https://www.faa.gov/pilots/become/student_cert/
+    region: us
+    checked: '2026-11-21'
+  - label: 'Pelican Flight Training, Florida: helicopter discovery flight'
+    url: https://pelicanflightschool.com/helicopter-discovery-flight
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Helicopter trial lesson: prices, weight limits, logbook'
+  description: What happens on a helicopter trial lesson, what UK and US schools charge, weight and age rules, and how the flight counts towards a private pilot licence.
+  detail:
+  - h: What it's really like
+    p:
+    - A trial lesson starts on the ground. At Sloane Helicopters you meet your instructor for a briefing on the basic principles of flight and the controls and a safety brief, then fly with demonstrations
+      of hovering, sideways and backwards flight and possibly an autorotation. Heli Air's 30-minute lesson in a Robinson R22 takes over an hour in all with the welcome and briefing, and Pelican Flight Training
+      in Florida includes a walk-around inspection of the helicopter before you fly.
+    - If you carry on, the trial is the first step to a licence. The UK Civil Aviation Authority's private pilot licence for helicopters, the PPL(H), needs at least 45 hours of flight instruction, including
+      25 hours dual and 10 hours supervised solo, plus theory exams and a Class 2 medical, and you must be 17 to get the licence. In the US, the federal rules for a private pilot certificate with a helicopter
+      rating ask for at least 40 hours of flight time, including 20 hours with an instructor and 10 hours of solo flight training. The FAA says you do not need a student pilot certificate to take flying
+      lessons, only to fly solo.
+  - h: Trial lessons compared
+    table:
+      head:
+      - School
+      - Aircraft and flight time
+      - Cost (as last listed)
+      rows:
+      - - Heli Air, High Wycombe (Buckinghamshire) and Wellesbourne (Warwickshire)
+        - Robinson R22, 30 minutes; over 16; 15 stone weight limit
+        - £250
+      - - Sloane Helicopters
+        - Robinson R22, 30 or 60 minutes; Robinson R44, 30 or 60 minutes
+        - R22 £210 or £380; R44 £350 or £640
+      - - MaxFlight, Kissimmee, Florida
+        - Robinson R22, 30 minutes (about an hour in all); 210 lb per seat, or upgrade to the R44 at up to 300 lb
+        - From $235
+      - - Pelican Flight Training, North Perry Airport, Florida
+        - Schweizer 300C, 30 or 60 minutes; under 250 lb (113 kg); minimum age 16 with parental consent, no maximum
+        - $350 or $499, including fuel and instructor time
+    after: Sloane gives the R44 and R66 seat limit as 300 lb (21 stone), so heavier pupils may be able to fly in a larger helicopter at a higher price.
+  faq:
+  - q: Does a helicopter trial lesson count towards a licence?
+    a: It can. Heli Air says the time can be logged as the first step towards a private helicopter licence, and Pelican Flight Training logs every minute towards the 40 hours needed for a US private pilot
+      certificate.
+  - q: Is there a weight limit for helicopter lessons?
+    a: Yes, set by the aircraft. Sloane Helicopters gives 210 lb (15 stone) per seat for the Robinson R22 and 300 lb (21 stone) for the R44 and R66.
+  - q: How many hours does it take to get a helicopter licence?
+    a: The UK CAA asks for at least 45 hours of flight instruction for a PPL(H). US rules ask for at least 40 hours of flight time for a private pilot certificate with a helicopter rating.
+  - q: Is there a maximum age for a helicopter lesson?
+    a: Pelican Flight Training says there is no maximum age. For a licence, the UK CAA requires a Class 2 medical certificate.
+  sources:
+  - label: UK Civil Aviation Authority, Private pilot licence for helicopters
+    url: https://www.caa.co.uk/general-aviation/pilot-licences/helicopters/private-pilot-licence-for-helicopters/
+    checked: '2026-11-21'
+  - label: Federal Aviation Administration, Become a Pilot
+    url: https://www.faa.gov/pilots/become/student_cert/
+    checked: '2026-11-21'
+  - label: eCFR, 14 CFR 61.109 Aeronautical experience
+    url: https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-E/section-61.109
+    checked: '2026-11-21'
+  - label: Heli Air, Helicopter Lesson - 30 Minute - R22
+    url: https://www.heliair.com/store/helicopter-lessons-r22-30min/
+    checked: '2026-11-21'
+  - label: Sloane Helicopters, Trial Helicopter Lesson
+    url: https://flyingschool.sloanehelicopters.com/other-courses/trial-lesson
+    checked: '2026-11-21'
+  - label: MaxFlight, Robinson Helicopter Introductory Flight Lessons - 30 Minute R22 Lesson
+    url: https://maxflighthelicopters.rezdy.com/455286/robinson-helicopter-introductory-flight-lessons-30-minute-r22-lesson
+    checked: '2026-11-21'
+  - label: Pelican Flight Training, Helicopter Discovery Flight (Non Vocational)
+    url: https://pelicanflightschool.com/helicopter-discovery-flight
+    checked: '2026-11-21'
+  safety: Lessons depend on weather and visibility, and Heli Air says the captain can refuse to fly anyone not in a fit condition to fly.
+  kit:
+  - name: Pilot logbook
+    why: to record the flight if the school logs it as training time
+    url: https://www.amazon.co.uk/s?k=pilot+logbook
+  - name: Helicopter PPL theory book
+    why: for the theory exams if you go on to train for a licence
+    url: https://www.amazon.co.uk/s?k=helicopter+ppl+theory
+  related:
+  - take-a-flying-lesson
+  - fly-in-a-spitfire
+  - try-hot-air-balloon-ride
+  - try-gliding
+- id: build-an-arduino-project
+  title: Build your first Arduino project
+  category: tech
+  kind: project
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: An Arduino is a small programmable circuit board that can work with buttons, LEDs, motors and speakers, so a few lines of code make something in the real world light up, move or make a sound. The
+    classic first project, Blink, needs only the board, a USB cable and the Arduino Software on your computer.
+  start:
+  - Get an Arduino Uno and a USB cable, and install the Arduino Software (IDE) on your computer.
+  - Plug in the board, open File > Examples > 01.Basics > Blink, choose your board and port under Tools, and click Upload; the LED marked L (pin 13) should start to blink.
+  - Book a beginners' class, such as York College's one-day Introduction to the Arduino or a free library makerspace session, to move on to circuits and sensors with help on hand.
+  links:
+  - label: 'Arduino: Getting Started with Arduino UNO'
+    url: https://wiki-content.arduino.cc/en/Guide/ArduinoUno
+    region: any
+    checked: '2026-11-21'
+  - label: 'York College: Introduction to the Arduino (one-day course)'
+    url: https://www.yorkcollege.ac.uk/study/introduction-to-the-arduino-hobbies-leisure-activity
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Boulder Public Library, Colorado: Introduction to Physical Computing using Arduino'
+    url: https://calendar.boulderlibrary.org/event/14262471
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Arduino for beginners: first project and classes'
+  description: What an Arduino is, how to make an LED blink as your first project, how it differs from a Raspberry Pi, and beginners' Arduino classes in the UK and US.
+  detail:
+  - h: What it's really like
+    p:
+    - Arduino is an open-source platform for electronics projects, with a physical board, often called a microcontroller, and software that runs on your computer. SparkFun explains that you write the code
+      in the Arduino IDE in a simplified version of C++ and upload it to the board over USB, with no separate programmer needed. The board can then drive buttons, LEDs, motors, speakers and more.
+    - Arduino's own getting-started guide takes you from plugging in the board, when the green PWR light comes on, to uploading the Blink example; when the status bar says "Done uploading." the orange LED
+      on pin 13 starts to flash. From there, beginners' courses add circuits and sensors. York College's five-week course, last run in autumn 2024, supplied each student with a kit including a servo motor
+      and a small display, and covered projects from flashing lights to simple robotics.
+    - It is not the same as a Raspberry Pi. A Raspberry Pi needs boot media holding an operating system, usually a microSD card, plus a power supply and, set up as a desktop, a keyboard, mouse and monitor.
+      With an Arduino, the software runs on your computer and you upload your code to the board over USB.
+  - h: Ways to start compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - On your own, with Arduino's getting-started guide
+        - Arduino Uno, USB cable and the Arduino Software (IDE) or Web Editor; Blink example
+        - Guide online; you buy the board and cable
+      - - York College, York
+        - Introduction to the Arduino, one day, 10am to 3pm, in the college's computer rooms; listed for 19 June 2027
+        - £60
+      - - York College, York
+        - Making with Microcontrollers (Arduino), five weeks, with your own kit and book of projects; last run September to October 2024
+        - £110, plus £80 for the kit
+      - - Boulder Public Library, Colorado
+        - Introduction to Physical Computing using Arduino, a week of afternoon sessions for tweens, teens and adults, using a Grove Beginner Kit; last run June 2025
+        - Not stated on the page
+      - - Carlsbad City Library, California
+        - Beginning Arduino, one hour, ages 13 and up with a library card; equipment provided; last run May 2022
+        - Free
+    after: Library classes often fill up. Boulder asks people to register only if they can come to every session.
+  faq:
+  - q: What is the difference between Arduino and Raspberry Pi?
+    a: An Arduino is a microcontroller board that you program from a computer over USB. A Raspberry Pi runs an operating system from boot media, usually a microSD card, and can be set up as a desktop with
+      a keyboard, mouse and monitor.
+  - q: What programming language does Arduino use?
+    a: SparkFun says the Arduino IDE uses a simplified version of C++, which makes it easier to learn to program.
+  - q: What do I need to start with Arduino?
+    a: An Arduino board such as the Uno, a USB cable and a computer with the Arduino Software (IDE) or the browser-based Web Editor, according to Arduino's getting-started guide.
+  - q: Do I need to know how to solder to use an Arduino?
+    a: Not for a first project. The Blink example uses the LED already on the board, and beginners' classes such as Boulder's teach simple circuits using a ready-made kit.
+  sources:
+  - label: Arduino, Getting Started with Arduino UNO
+    url: https://wiki-content.arduino.cc/en/Guide/ArduinoUno
+    checked: '2026-11-21'
+  - label: SparkFun, What is an Arduino?
+    url: https://learn.sparkfun.com/tutorials/what-is-an-arduino
+    checked: '2026-11-21'
+  - label: Raspberry Pi, Getting started - Raspberry Pi Documentation
+    url: https://www.raspberrypi.com/documentation/computers/getting-started.html
+    checked: '2026-11-21'
+  - label: York College, Introduction to the Arduino - Hobbies & Leisure Activity
+    url: https://www.yorkcollege.ac.uk/study/introduction-to-the-arduino-hobbies-leisure-activity
+    checked: '2026-11-21'
+  - label: York College, Making with Microcontrollers (Arduino)
+    url: https://yorkcollege.ac.uk/study/making-with-microcontrollers-arduino
+    checked: '2026-11-21'
+  - label: 'Boulder Public Library, Studio 24: Introduction to Physical Computing using Arduino In-Person'
+    url: https://calendar.boulderlibrary.org/event/14262471
+    checked: '2026-11-21'
+  - label: Carlsbad City Library, Beginning Arduino In-Person
+    url: https://carlsbadca.libcal.com/event/9121218
+    checked: '2026-11-21'
+  kit:
+  - name: Arduino Uno
+    why: the board used in Arduino's getting-started guide
+    url: https://www.amazon.co.uk/s?k=arduino+uno
+  - name: Arduino starter kit
+    why: a breadboard, LEDs, resistors and sensors for projects beyond Blink
+    url: https://www.amazon.co.uk/s?k=arduino+starter+kit
+  - name: USB A to B cable
+    why: connects an Uno to your computer for uploading code
+    url: https://www.amazon.co.uk/s?k=usb+a+to+b+cable
+  related:
+  - build-a-raspberry-pi-project
+  - learn-to-solder
+  - learn-to-code-first-project
+- id: volunteer-with-mountain-rescue
+  title: Volunteer with a mountain rescue team
+  category: connect
+  kind: habit
+  effort: demanding
+  cost: free
+  time: months
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: 'Mountain rescue teams go out in all weathers, day and night, to find and bring down people who are lost or hurt on the hills, and in England and Wales the service would not exist without its volunteers.
+    Not every role is on the hill: teams also need help with fundraising, events, PR and practical jobs such as washing team vehicles.'
+  start:
+  - 'Find your local team (Mountain Rescue England and Wales, Scottish Mountain Rescue, or the Mountain Rescue Association in the US) and ask whether it is recruiting: some recruit only once a year, and
+    some have waiting lists.'
+  - 'Be honest about your hill skills against the team''s criteria: all-season experience on their ground, off-path navigation with map and compass, a reasonable level of fitness and basic first aid.'
+  - If you cannot commit to call-outs, ask the team about supporter roles such as fundraising, events and publicity.
+  links:
+  - label: 'Mountain Rescue England and Wales: how to volunteer'
+    url: https://www.mountain.rescue.org.uk/how-to-volunteer/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Scottish Mountain Rescue: volunteering, with the criteria for joining a team'
+    url: https://scottishmountainrescue.org/volunteering/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Keswick Mountain Rescue: join the team'
+    url: https://keswickmrt.org.uk/?p=21080
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Mountain Rescue Association: how to join (find a team near you on its map)'
+    url: https://mra.org/about-mra/how-to-join/
+    region: us
+    checked: '2026-11-21'
+  - label: 'Rocky Mountain Rescue Group: apply to join the team'
+    url: https://www.rockymountainrescue.org/membership
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'How to join mountain rescue: what teams ask of volunteers'
+  description: What mountain rescue teams in the UK and US ask of new volunteers, from hill skills to training nights, and how to help as a supporter instead.
+  detail:
+  - h: What it's really like
+    p:
+    - 'Joining a hill team is a selection process, not a sign-up. Keswick Mountain Rescue in the Lake District recruits once a year: an informal open evening in October and an application form, a hill assessment
+      day in early January, several Thursday training nights, then a vote by the whole team in early March. Those chosen spend a probationary year being trained for call-outs; the team is on call in all
+      weather, 24 hours a day, 365 days a year.'
+    - The commitment carries on after that. Keswick asks members to attend at least a quarter of call-outs and half of the Thursday training sessions across the year, and to live within a 20-minute drive
+      of base. Holme Valley Mountain Rescue runs a 12-month training programme in which trainees must attend at least 75% of training, then six call-outs as a probationary member; qualified members keep
+      up 25% to 50% of training.
+    - In the US, the Mountain Rescue Association says the vast majority of people providing mountain rescue are volunteers (in some National Parks, rangers carry out rescues as part of the job), and that
+      new members get on-the-job training as part of a team's orientation. Individuals cannot join the association itself; you find a team on its map and contact it directly.
+  - h: Ways to help compared
+    table:
+      head:
+      - Way to help
+      - Example
+      - What it asks (as listed)
+      rows:
+      - - Call-out team member
+        - Keswick Mountain Rescue, Lake District
+        - Self-sufficient on the fells in all conditions all year; at least 18; within 20 minutes' drive of base; at least 25% of call-outs and 50% of training; a probationary year
+      - - Call-out team member
+        - Holme Valley Mountain Rescue
+        - Experience in the outdoors in all seasons, map and compass navigation, reasonable fitness; from 18; a 12-month training programme. Call-out applications closed as last listed
+      - - Team member in Scotland
+        - Scottish Mountain Rescue's criteria for its teams
+        - Under 75; your own mountain kit; off-path navigation; basic first aid; live in or near the team's area; a probation period in some teams
+      - - Field member in the US
+        - Rocky Mountain Rescue Group, Colorado
+        - Training classes historically every two to three years; applications closed as last listed (last application period autumn 2025); non-field volunteering is not a route to field membership
+      - - Supporter
+        - Holme Valley Mountain Rescue; Mountain Rescue England and Wales
+        - Help with fundraising and events; Mountain Rescue England and Wales also lists PR and marketing, cooking during a call-out and washing team vehicles
+    after: None of these team pages mentions a fee to join; Holme Valley provides role-specific protective equipment as required. Mountain Rescue England and Wales also runs Basecamp, a paid supporters'
+      scheme with annual or quarterly subscriptions and a quarterly digital magazine.
+  faq:
+  - q: Do mountain rescue volunteers get paid?
+    a: No. Mountain Rescue England and Wales says the service in England and Wales would not exist without its volunteer team members. In the US, the Mountain Rescue Association says the vast majority of
+      rescuers are volunteers, though rangers in some National Parks carry out rescues as part of their job.
+  - q: What do you need to join mountain rescue?
+    a: Scottish Mountain Rescue lists hill or mountaineering experience in summer and winter, your own mountain kit, off-path navigation with map and compass, basic first aid, a reasonable level of fitness,
+      and living in or near the team's area. Each team sets its own criteria, so contact the team.
+  - q: How much time does mountain rescue take?
+    a: A lot. Keswick Mountain Rescue asks members to attend at least 25% of call-outs and 50% of its Thursday evening training, after a probationary year. Mountain Rescue England and Wales says of volunteering
+      that even an hour or two a week makes a difference.
+  - q: Can I help mountain rescue without going on call-outs?
+    a: Yes. Teams such as Holme Valley take supporters who help with fundraising and events, and Mountain Rescue England and Wales lists PR, marketing and practical jobs such as cooking during a call-out
+      and washing team vehicles.
+  sources:
+  - label: Mountain Rescue England and Wales, How to volunteer
+    url: https://www.mountain.rescue.org.uk/how-to-volunteer/
+    checked: '2026-11-21'
+  - label: Mountain Rescue England and Wales, Team Member Wellbeing
+    url: https://www.mountain.rescue.org.uk/team-member-wellbeing/
+    checked: '2026-11-21'
+  - label: Mountain Rescue England and Wales, Basecamp
+    url: https://www.mountain.rescue.org.uk/basecamp/
+    checked: '2026-11-21'
+  - label: Scottish Mountain Rescue, Volunteering
+    url: https://scottishmountainrescue.org/volunteering/
+    checked: '2026-11-21'
+  - label: Keswick Mountain Rescue, Join The Team
+    url: https://keswickmrt.org.uk/?p=21080
+    checked: '2026-11-21'
+  - label: Holme Valley Mountain Rescue Team, Joining the Holme Valley Mountain Rescue Team
+    url: https://holmevalleymrt.org.uk/joining-the-holme-valley-mountain-rescue-team/
+    checked: '2026-11-21'
+  - label: Mountain Rescue Association, How To Join
+    url: https://mra.org/about-mra/how-to-join/
+    checked: '2026-11-21'
+  - label: Mountain Rescue Association, How do I get a job in Mountain Rescue?
+    url: https://mra.org/how-do-i-get-a-job-in-mountain-rescue/
+    checked: '2026-11-21'
+  - label: Rocky Mountain Rescue Group, Apply to join the team
+    url: https://www.rockymountainrescue.org/membership
+    checked: '2026-11-21'
+  safety: Call-outs happen in all weathers, day and night, so teams train and assess new members before they go out; if you are ever in trouble on the hills yourself, in the UK call 999 and ask for Police,
+    then Mountain Rescue, as Scottish Mountain Rescue advises.
+  kit:
+  - name: Head torch
+    why: for Thursday-night training sessions and hill days that run into dark
+    url: https://www.amazon.co.uk/s?k=head+torch+rechargeable
+  - name: Baseplate compass
+    why: for practising the off-path navigation teams ask for
+    url: https://www.amazon.co.uk/s?k=baseplate+compass+navigation
+  - name: Waterproof map case
+    why: keeps a paper map usable in rain and wind
+    url: https://www.amazon.co.uk/s?k=waterproof+map+case
+  related:
+  - learn-map-and-compass
+  - learn-first-aid
+  - volunteer-with-the-rnli
+  - become-a-community-first-responder
+- id: volunteer-on-hospital-radio
+  title: Volunteer on hospital radio
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: free
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: Hospital radio stations broadcast to patients on the wards, and almost all of them are run by volunteers who present shows, collect requests on the wards and keep the equipment running. Radio experience
+    is not always needed; Sheffield Hospital Radio, for one, says none is needed and gives full training.
+  start:
+  - Find the station at your nearest hospital, on the hospital's own website or through its voluntary services team, and ask how to join.
+  - 'Expect checks before you start: Hospital Radio Stafford, for example, asks for a DBS (criminal record) check, Occupational Health clearance and the NHS trust''s induction modules.'
+  - Offer to collect requests on the wards, help in the music library or join the fundraising while you learn the studio, then ask about presenting.
+  links:
+  - label: 'Hospital Radio Stafford: join us'
+    url: https://hrstafford.org.uk/join-us/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Sheffield Hospital Radio: volunteering'
+    url: https://sheffieldhospitalradio.co.uk/volunteering.html
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Isle of Wight NHS Trust: Sunshine Radio at St Mary''s Hospital'
+    url: https://iow.nhs.uk/get-involved/sunshine-radio
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Hospital Broadcasting Association: member station profile, Hospital Radio Reading'
+    url: https://www.hbauk.com/member-stations/profile/218
+    region: uk
+    checked: '2026-11-21'
+  seo_title: 'Hospital radio volunteering: presenting and how to join'
+  description: What hospital radio volunteers do, from ward requests to presenting, the checks stations ask for, and how to find and join the station near you.
+  detail:
+  - h: What it's really like
+    p:
+    - A blog on the NHS England website says hospital radio comprises more than 200 stations, almost all managed and staffed by volunteers, who fundraise to cover their running costs. The Hospital Broadcasting
+      Association is the umbrella charity that supports them. Roles include presenters, producers, ward visitors, technical volunteers who keep the broadcasting and IT equipment running, fundraisers, administrators
+      and trustees.
+    - The listening is local. Hospital Radio Reading, running since 1957, aims to visit most wards twice a week and reaches patients through free bedside consoles, online and on smart speakers. Hospital
+      Radio Plymouth runs a live 24-hour service on 107.3FM within Derriford Hospital's grounds and online, and says its volunteers range from their teens to their seventies.
+  - h: What stations ask compared
+    table:
+      head:
+      - Station
+      - Roles listed
+      - What it asks (as listed)
+      rows:
+      - - Hospital Radio Stafford
+        - Ward requests, programmes, music library, fundraising, IT and equipment; some volunteers present their own show
+        - Over 18; approval by the NHS trust; DBS check and Occupational Health clearance; trust induction modules; a few hours a week; an informal interview and a look round the studios
+      - - Sheffield Hospital Radio
+        - Patient visiting, technical, fundraising, off-air content, administration, presenting
+        - No radio experience needed, full training given; a DBS check; at least four fundraising events a year. New applications paused as last listed
+      - - Sunshine Radio, St Mary's Hospital, Isle of Wight
+        - Collecting requests, helping patients use bedside terminals, administration, programming, presenting, engineering
+        - Get in touch with the team
+      - - Hospital Radio Plymouth, Derriford Hospital
+        - Live and recorded programmes, including Plymouth Argyle matches and a chapel service
+        - Email the station's membership team
+    after: Volunteering is unpaid; Sheffield Hospital Radio says the hospital trust reimburses volunteers' travel expenses.
+  faq:
+  - q: How do I become a hospital radio presenter?
+    a: Join your local station as a volunteer. Stations such as Hospital Radio Stafford involve new members in ward visits, the music library and programmes, and some go on to present their own show.
+  - q: Do you need experience to volunteer on hospital radio?
+    a: No. Sheffield Hospital Radio says no radio experience is needed and that it gives full training.
+  - q: Do hospital radio volunteers need a DBS check?
+    a: Often, yes, because the work takes you onto hospital wards. Hospital Radio Stafford and Sheffield Hospital Radio both require a DBS (criminal record) check, and Stafford also asks for Occupational
+      Health clearance.
+  - q: Is hospital radio paid?
+    a: No. A blog on the NHS England website describes almost all stations as managed and staffed by volunteers, and Sheffield Hospital Radio says all its volunteers are unpaid.
+  sources:
+  - label: NHS England, Music and health make for a perfect harmony
+    url: https://england.nhs.uk/blog/mel-ive
+    checked: '2026-11-21'
+  - label: Charity Commission, National Association of Hospital Broadcasting Organisations (Hospital Broadcasting Association)
+    url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/1015501/full-print
+    checked: '2026-11-21'
+  - label: Hospital Broadcasting Association, Hospital Radio Reading
+    url: https://www.hbauk.com/member-stations/profile/218
+    checked: '2026-11-21'
+  - label: Royal Berkshire NHS Foundation Trust, Hospital Radio Reading
+    url: https://royalberkshire.nhs.uk/about-us/community-engagement/hospital-radio-reading
+    checked: '2026-11-21'
+  - label: Plymouth hospitals NHS website, Hospital Radio Plymouth
+    url: https://www.plymouthhospitals.nhs.uk/hospital-radio-plymouth
+    checked: '2026-11-21'
+  - label: Hospital Radio Stafford, Join Us
+    url: https://hrstafford.org.uk/join-us/
+    checked: '2026-11-21'
+  - label: Sheffield Hospital Radio, Volunteer at Sheffield Hospital Radio
+    url: https://sheffieldhospitalradio.co.uk/volunteering.html
+    checked: '2026-11-21'
+  - label: Isle of Wight NHS Trust, Sunshine Radio
+    url: https://iow.nhs.uk/get-involved/sunshine-radio
+    checked: '2026-11-21'
+  - label: Cambridge University Hospitals, Radio Addenbrooke's - Hospital radio station
+    url: https://cuh.nhs.uk/visiting-our-hospitals/staying-with-us/radio-addenbrookes
+    checked: '2026-11-21'
+  kit:
+  - name: Closed-back headphones
+    why: for listening back to recorded links and shows at home
+    url: https://www.amazon.co.uk/s?k=closed+back+headphones+studio
+  - name: USB microphone
+    why: for practising and recording links before you go on air
+    url: https://www.amazon.co.uk/s?k=usb+microphone+voice+recording
+  related:
+  - volunteer-in-the-nhs
+  - start-a-podcast
+  - try-voice-acting
+- id: become-a-celebrant
+  title: Train as a celebrant
+  category: earn
+  kind: project
+  effort: moderate
+  cost: high
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Celebrants write and lead ceremonies built around the people in them, from weddings and namings to funerals and memorials. Training runs from a three-day online course to a five-day residential course,
+    and Humanists UK says its accredited celebrants can charge a reasonable fee for each ceremony.
+  start:
+  - Decide which ceremonies you want to lead (weddings, funerals, namings or all three), since some courses cover one type only.
+  - 'Read the legal position where you live before you promise anyone a wedding: GOV.UK for England and Wales, National Records of Scotland, or your state or county clerk in the US.'
+  - Compare two or three courses on format (residential or online), length, price and what accreditation, if any, you come away with.
+  links:
+  - label: 'GOV.UK: plan your marriage or civil partnership ceremony (England and Wales)'
+    url: https://www.gov.uk/marriages-civil-partnerships/plan-your-ceremony
+    region: uk
+    checked: '2026-11-21'
+  - label: 'National Records of Scotland: who can be a celebrant for marriage or civil partnership'
+    url: https://nrscotland.gov.uk/registration/i-want-to-get-married-in-scotland-how-do-i-go-about-it/who-can-be-a-celebrant-for-marriagecivil-partnership-in-scotland
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Humanists UK: become a celebrant'
+    url: https://humanists.uk/ceremonies/become-a-celebrant/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'California Department of Public Health: marriage officiant questions'
+    url: https://www.cdph.ca.gov/Programs/CHSI/Pages/Marriage-Officiant-Frequently-Asked-Questions.aspx
+    region: us
+    checked: '2026-11-21'
+  - label: 'Celebrant Foundation & Institute: become a wedding officiant (course schedule)'
+    url: https://www.celebrantinstitute.org/course-schedule.html
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'How to become a celebrant: training, cost and the law'
+  description: How to train as a wedding, funeral or naming celebrant in the UK or an officiant in the US, what courses cost, and what the law lets celebrants do.
+  detail:
+  - h: What the law allows
+    p:
+    - In England and Wales, GOV.UK says a registrar must carry out, or be present at, a marriage ceremony; at a religious wedding an authorised person, such as a minister, must attend and sign the marriage
+      schedule or marriage document. Civil ceremonies take place at a register office or a council-approved venue and must not include anything religious. GOV.UK does not mention independent celebrants,
+      and one celebrant training college says plainly that a celebrant "cannot currently legally marry anybody". A celebrant-led wedding is a ceremony; the legal marriage needs a registrar, or an authorised
+      person at a religious wedding, as GOV.UK sets out.
+    - That may change. The Ministry of Justice's consultation "Tying the knot" (16 July to 24 September 2026) says there is currently no legal provision for weddings conducted by non-religious belief organisations
+      such as Humanists, sets out plans to let Humanists conduct legally binding weddings, and proposes allowing independent officiants to do so too. The consultation has closed and the government is analysing
+      the feedback; it committed in October 2025 to reform weddings law "when parliamentary time allows".
+    - 'In Scotland, National Records of Scotland says marriages can be solemnised by registrars or by religious or belief celebrants authorised under the Marriage (Scotland) Act 1977, but independent or
+      private civil celebrants cannot be authorised to solemnise a civil marriage or civil partnership; they can lead non-legal ceremonies such as vow renewals and blessings. Funeral celebrancy is not regulated
+      in the same way: Last Word Training says there is no compulsory or recognised qualification needed to become a funeral celebrant. In California, the state keeps no central register of clergy, and
+      county clerks can appoint Deputy Commissioners of Civil Marriages, though the state says the deputy-for-a-day programme is not available in every county; Santa Cruz County charges $125. Whoever solemnises
+      the marriage must return the licence within 10 days of the ceremony.'
+  - h: Training compared
+    table:
+      head:
+      - Provider
+      - Course
+      - Cost (as last listed)
+      rows:
+      - - Humanists UK (England, Wales, Northern Ireland, Channel Islands)
+        - Wedding or funeral training in three stages, an online induction then two two-day residential stages at the University of Warwick conference centre; you must identify as humanist and join Humanists
+          UK
+        - £2,376 including VAT for 2027 courses
+      - - International College of Professional Celebrants, Settle, Yorkshire
+        - Five-day course with five nights' accommodation, covering weddings, funerals, namings and more, leading to the NOCN Level 3 Certificate in Civil Celebrancy
+        - £2,994; £4,500 for its Platinum Double Diploma
+      - - Last Word Training
+        - Funeral celebrant training, three days of lessons over Zoom across a long weekend, with the provider's own certificate
+        - £600
+      - - Celebrant Foundation & Institute (US)
+        - Fundamentals of Celebrancy plus one certificate course, taught in weekly live web-conference classes
+        - $2,500; further certificate courses $1,100
+    after: Humanists UK asks for a non-refundable £550 deposit four weeks before the induction, and its accredited celebrants pay a quarterly accreditation fee. This is general information, not legal or
+      financial advice; check the official pages before you plan or take money for a ceremony.
+  faq:
+  - q: Can a celebrant legally marry you in England?
+    a: Not on their own. GOV.UK says a registrar must carry out or be present at the ceremony, or an authorised person at a religious wedding, and a 2026 Ministry of Justice consultation says there is currently
+      no legal provision for weddings by non-religious belief organisations.
+  - q: Do you need a qualification to be a funeral celebrant?
+    a: Last Word Training says there is no compulsory or recognised qualification, and no national exam or regulation.
+  - q: How much does celebrant training cost in the UK?
+    a: As last listed, from £600 for a three-day online funeral course to £2,376 for a Humanists UK wedding or funeral course and £2,994 for a five-day course with accommodation.
+  - q: Can a friend officiate a wedding in California?
+    a: Possibly, through a county's Deputy Commissioner of Civil Marriages programme, which the state says is not offered in every county. Santa Cruz County, for example, charges $125 and requires applicants
+      to be at least 18 with valid government-issued photo ID.
+  sources:
+  - label: GOV.UK, Marriages and civil partnerships in England and Wales, Plan your ceremony
+    url: https://www.gov.uk/marriages-civil-partnerships/plan-your-ceremony
+    checked: '2026-11-21'
+  - label: 'Ministry of Justice, Tying the Knot: Reforming weddings law in England and Wales'
+    url: https://www.gov.uk/government/consultations/tying-the-knot-reforming-weddings-law-in-england-and-wales
+    checked: '2026-11-21'
+  - label: 'Ministry of Justice, Tying the knot: reforming weddings law in England and Wales: consultation document'
+    url: https://www.gov.uk/government/consultations/tying-the-knot-reforming-weddings-law-in-england-and-wales/tying-the-knot-reforming-weddings-law-in-england-and-wales-consultation-document
+    checked: '2026-11-21'
+  - label: National Records of Scotland, Who can be a celebrant for marriage/civil partnership in Scotland?
+    url: https://nrscotland.gov.uk/registration/i-want-to-get-married-in-scotland-how-do-i-go-about-it/who-can-be-a-celebrant-for-marriagecivil-partnership-in-scotland
+    checked: '2026-11-21'
+  - label: Humanists UK, Become a celebrant
+    url: https://humanists.uk/ceremonies/become-a-celebrant/
+    checked: '2026-11-21'
+  - label: Humanists UK, Course fees and dates
+    url: https://humanists.uk/?p=134962
+    checked: '2026-11-21'
+  - label: International College of Professional Celebrants (on Cademy), Residential celebrant training
+    url: https://cademy.io/international-college-of-professional-celebrants/residential-celebrant-training
+    checked: '2026-11-21'
+  - label: Last Word Training, Training
+    url: https://last-word-training.squarespace.com/training
+    checked: '2026-11-21'
+  - label: Celebrant Foundation & Institute, Become A Wedding Officiant
+    url: https://www.celebrantinstitute.org/course-schedule.html
+    checked: '2026-11-21'
+  - label: Celebrant Foundation & Institute, Celebrant Application & Tuition
+    url: https://www.celebrantinstitute.org/applications-tuition.html
+    checked: '2026-11-21'
+  - label: California Department of Public Health, Marriage Officiant Frequently Asked Questions
+    url: https://www.cdph.ca.gov/Programs/CHSI/Pages/Marriage-Officiant-Frequently-Asked-Questions.aspx
+    checked: '2026-11-21'
+  - label: California Department of Public Health, California Marriage - General Information
+    url: https://cdph.ca.gov/Programs/CHSI/Pages/California-Marriage-License-General-Information.aspx
+    checked: '2026-11-21'
+  - label: Santa Cruz County Clerk, Deputy Commissioner of Civil Marriages
+    url: https://sccoclerk.santacruzcountyca.gov/CountyClerkHome/MarriageLicenses/DeputyCommissionerofCivilMarriages.aspx
+    checked: '2026-11-21'
+  kit:
+  - name: A5 ring binder
+    why: holds a ceremony script neatly when you lead from the front
+    url: https://www.amazon.co.uk/s?k=a5+ring+binder+black
+  - name: Digital voice recorder
+    why: for rehearsing a ceremony aloud and timing it
+    url: https://www.amazon.co.uk/s?k=digital+voice+recorder
+  related:
+  - become-a-magistrate
+  - train-as-a-tourist-guide
+  - test-drive-a-new-career
+  - start-a-small-business

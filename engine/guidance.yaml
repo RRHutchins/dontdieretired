@@ -24,7 +24,8 @@ guidance:
     applies: [endurance]
     use: rule
     text: Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work.
-    for: [ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km]
+    for: [ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km, lme-beginner-plan-2026, mind-marathon-beginner]
+    note: London Marathon Events' 2026 beginner plan says easy runs should leave you breathing comfortably and able to hold a conversation, and Mind's plan (by Full Potential) calls easy and long runs conversational and warns that most people end up running too quickly; both add short marathon-pace sections in later weeks, which fits the small share of harder work (opened 21 Nov 2026).
   - id: easy-means-easy
     topic: intensity
     applies: [endurance]
@@ -75,7 +76,8 @@ guidance:
     applies: [all]
     use: rule
     text: Plan rest days into every week, and take an easier day when your legs are heavy.
-    for: [nhs-c25k, higdon-novice1, bmc-long-distance]
+    for: [nhs-c25k, higdon-novice1, bmc-long-distance, lme-beginner-plan-2026, chicago-plan-2026]
+    note: London Marathon Events' 2026 beginner plan asks that a run day be followed by a rest day; the 2026 Chicago Marathon plan says regular rest is just as important as regular running (both opened 21 Nov 2026).
 
   # ---------- maintaining the body ----------
   - id: strength-twice-weekly
