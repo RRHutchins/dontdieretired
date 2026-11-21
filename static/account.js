@@ -225,9 +225,26 @@
     head.textContent = 'Bought ' + day(g.bought) + ' · ' + st;
     li.appendChild(head);
     if (g.status === 'paid' && g.code) {
-      const code = document.createElement('p'); code.className = 'acct-giftcode'; code.textContent = g.code; li.appendChild(code);
-      const b = document.createElement('button'); b.type = 'button'; b.className = 'btn btn-ghost btn-small'; b.textContent = 'Print the card';
-      b.addEventListener('click', () => printCard(g.code)); li.appendChild(b);
+      // 21 Nov 2026 (Robin): the names sit beside the code they go on, not in a separate box above the list
+      giftLine.n = (giftLine.n || 0) + 1; const n = giftLine.n;
+      const row = document.createElement('div'); row.className = 'acct-gift-row';
+      const left = document.createElement('div'); left.className = 'acct-gift-code';
+      const code = document.createElement('p'); code.className = 'acct-giftcode'; code.textContent = g.code; left.appendChild(code);
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'btn btn-small'; b.textContent = 'Print the card';
+      const names = document.createElement('div'); names.className = 'acct-gift-names';
+      const help = document.createElement('p'); help.className = 'meta'; help.id = 'gift-names-help-' + n;
+      help.textContent = 'Fill these in before you print, and they appear on the card. Both are optional. They stay in this browser and are never sent to us.';
+      const field = (key, label) => {
+        const l = document.createElement('label'); l.htmlFor = 'gift-' + key + '-' + n; l.textContent = label;
+        const i = document.createElement('input'); i.id = l.htmlFor; i.maxLength = 60; i.autocomplete = 'off'; i.className = 'acct-plain';
+        i.setAttribute('aria-describedby', help.id); i.dataset['gift' + key[0].toUpperCase() + key.slice(1)] = '';
+        names.append(l, i); return i;
+      };
+      names.appendChild(help);
+      const to = field('to', 'To (who it is for)'), from = field('from', 'From');
+      b.addEventListener('click', () => printCard(g.code, to.value, from.value));
+      const go = document.createElement('p'); go.className = 'acct-gift-print'; go.appendChild(b);
+      row.append(left, names); li.append(row, go);   // code, then names (beside it on a wider screen), then print
     } else if (g.status === 'paid') {
       const x = document.createElement('p'); x.textContent = 'The code cannot be shown just now. Please contact us and we will help.'; li.appendChild(x);
     }
@@ -249,10 +266,10 @@
     }
     return null;
   }
-  function printCard(code) {
+  function printCard(code, toName, fromName) {
     const card = $('[data-gift-card]');
     card.querySelector('[data-gc-code]').textContent = code;
-    const to = $('#gift-to').value.trim(), from = $('#gift-from').value.trim();
+    const to = (toName || '').trim(), from = (fromName || '').trim();
     const t = card.querySelector('[data-gc-to]'), f = card.querySelector('[data-gc-from]');
     t.textContent = to ? 'For ' + to : ''; t.hidden = !to;
     f.textContent = from ? 'With love from ' + from : ''; f.hidden = !from;

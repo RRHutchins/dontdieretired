@@ -319,14 +319,17 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
     giftCode = (await friend.textContent('.acct-giftcode')).trim();
     assert.match(giftCode, CODE);
     assert.ok(!friend.url().includes('gift='), 'the thanks flag is cleared from the address');
-    // the names box is open from the start (20 Nov 2026), so no click is needed
-    await friend.fill('#gift-to', 'Alex'); await friend.fill('#gift-from', 'Bea');
+    // the names sit beside the code (21 Nov 2026)
+    await friend.locator('[data-acct-gift-list] li').first().locator('input[data-gift-to]').fill('Alex');
+    await friend.locator('[data-acct-gift-list] li').first().locator('input[data-gift-from]').fill('Bea');
     await look(friend, 'gift-bought');
     await friend.emulateMedia({ media: 'print' });
     await friend.evaluate(() => { window.print = () => {}; });
     await friend.locator('[data-acct-gift-list] button', { hasText: 'Print the card' }).first().click();
     await friend.waitForTimeout(300);
     if (SHOTS) await friend.screenshot({ path: path.join(SHOTS, String(++shot).padStart(2, '0') + '-friend-gift-card-print.png') });
+    assert.strictEqual((await friend.textContent('.gift-card-print [data-gc-to]')).trim(), 'For Alex', 'the To name is on the card');
+    assert.match(await friend.textContent('.gift-card-print [data-gc-from]'), /Bea/);
     await friend.emulateMedia({ media: 'screen' });
     const g = env.DB.raw.prepare('SELECT code_hash, code_box FROM gifts').get();
     assert.ok(!g.code_box.includes(giftCode.replace(/-/g, '')), 'the code is not stored as plain text');
