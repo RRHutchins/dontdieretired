@@ -24,6 +24,34 @@ none_text: No marathons match those choices yet. Try any month or any way in.
 safety: A marathon is a long, hard day on the heart, muscles and feet. Build up over months, follow your race's medical advice, and check with your GP (family doctor) before you start training if you have a heart condition or another health worry.
 bands_def: []
 event_pages: true
+# Landing pages for common filters (RUNBOOK §6u step 2, marathons 21 Nov 2026): /marathons/<slug>/. Facts on each page are
+# computed by the build; `intro` is our own short explanation of the filter only (no race facts). A page needs at least 4 races.
+landing_months: true
+landing_noun: Marathons
+landings:
+- {slug: in-the-uk, title: Marathons in the UK, short: UK, group: Where, filter: {country_has: UK}}
+- {slug: in-the-usa, title: Marathons in the USA, short: USA, group: Where, filter: {country_has: USA}}
+- {slug: in-spain, title: Marathons in Spain, short: Spain, group: Where, filter: {country_has: Spain}}
+- {slug: in-europe, title: Marathons in Europe, short: Europe, group: Where, filter: {continent: europe}}
+- {slug: in-north-america, title: Marathons in North America, short: North America, group: Where, filter: {continent: north-america}}
+- {slug: in-asia, title: Marathons in Asia, short: Asia, group: Where, filter: {continent: asia}}
+- {slug: in-oceania, title: Marathons in Australia and New Zealand, short: Australia and NZ, group: Where, filter: {continent: oceania}}
+- slug: world-marathon-majors
+  title: The Abbott World Marathon Majors
+  short: World Marathon Majors
+  group: Series
+  filter: {series: wmm}
+  intro: ['The Abbott World Marathon Majors is a series of big city marathons. Each race runs its own entry, so the way in differs from one to the next: read the "Getting in" line for each.']
+- slug: open-entry
+  title: Marathons with open entry
+  short: Open entry
+  group: How you get a place
+  filter: {entry: open}
+  intro: ['These races give places to whoever enters first, until they are full. The popular ones can sell out within days of opening, so note when entries open.']
+- {slug: ballot-marathons, title: Marathons with a ballot or lottery, short: Ballot or lottery, group: How you get a place, filter: {entry: ballot}}
+- {slug: charity-places, title: Marathons with charity places, short: Charity places, group: How you get a place, filter: {entry: charity}, intro: ['A charity place means promising to raise a set sum for the charity. Each charity sets its own target and terms, so read them before you apply.']}
+- {slug: qualifying-time, title: Marathons with qualifying-time entry, short: Qualifying time, group: How you get a place, filter: {entry: qualifier}, intro: ['These races offer places, sometimes only some places, to runners with a fast enough recent time. Most have other routes in as well.']}
+- {slug: travel-packages, title: Marathons with travel packages, short: Travel packages, group: How you get a place, filter: {entry: tour}}
 facets:
   continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania, antarctica: Antarctica, south-america: South America}
   terrain: {road: Road, trail: Trail and track, mountain: Mountain}
@@ -722,6 +750,160 @@ events:
   link: {label: 'Nike Melbourne Marathon Festival: the marathon', url: 'https://melbournemarathon.com.au/nike-melbourne-marathon/', checked: '2026-11-20'}
   more:
   - {label: 'Nike Melbourne Marathon Festival: entry avenues', url: 'https://melbournemarathon.com.au/entry-avenues-to-the-nike-melbourne-marathon-festival/', checked: '2026-11-20'}
+# ---------- Added 21 Nov 2026 (build-out run 3) ----------
+- id: frankfurt-marathon
+  name: Mainova Frankfurt Marathon
+  series: independent
+  place: Frankfurt am Main, from Friedrich-Ebert-Anlage to the Festhalle at Messe Frankfurt
+  country: Germany
+  continent: europe
+  km: [42.2]
+  distances: Marathon; also a relay, a mini-marathon and the Shock-headed Peter Run
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: You enter online. Late entry on site is possible while starting places remain. The pages we opened do not say how places are allocated.
+  note: The next race is on Sunday 31 October 2027, starting at 10am. The finish is inside the Festhalle and stays open until 4.45pm; the course can be completed in 6 hours (net time).
+  link: {label: 'Mainova Frankfurt Marathon: the marathon', url: 'https://www.frankfurt-marathon.com/en/yourrun/marathon/', checked: '2026-11-21'}
+  more:
+  - {label: 'Mainova Frankfurt Marathon: information', url: 'https://www.frankfurt-marathon.com/en/yourrun/marathon/information/', checked: '2026-11-21'}
+- id: madrid-marathon
+  name: Madrid Marathon (Zurich Rock 'n' Roll Running Series Madrid)
+  series: independent
+  place: Madrid
+  country: Spain
+  continent: europe
+  km: [42.2]
+  distances: Marathon; also a half marathon
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [open]
+  entry_note: For 2027 there are 17,000 marathon places. 2026 runners had the first chance, then the 2026 waiting list; general entry opened on 14 May 2026 and stays open until places run out, then a waiting list gives access to places freed by cancellations.
+  note: The next race is on 25 April 2027, organised by AD. MAPOMA. The entry page is in Spanish.
+  link: {label: 'Rock ''n'' Roll Madrid: the new entry system for 2027 (Spanish)', url: 'https://rocknrollmadridrun.com/madrid-anuncia-su-nuevo-sistema-de-inscripcion-para-la-edicion-2027/', checked: '2026-11-21'}
+  more:
+  - {label: 'Rock ''n'' Roll Madrid: the races', url: 'https://rocknrollmadridrun.com/about-the-event/?lang=en', checked: '2026-11-21'}
+- id: marrakech-marathon
+  name: International Marathon of Marrakech
+  series: independent
+  place: Marrakech, starting and finishing on Avenue de la Menara
+  country: Morocco
+  continent: africa
+  km: [42.2]
+  distances: Marathon; also a half marathon and the Course For All (the day before)
+  terrain: [road]
+  format: single
+  month: [1]
+  entry: [register, tour]
+  entry_note: Runners from abroad enter online through the SPORT UP site (open until 24 January 2027), or by post through the agency Prêt à Partir; Moroccan and resident runners enter through the Grand Atlas Association. The organisers also sell hotel packages that include a race number.
+  note: The 37th edition is on Sunday 31 January 2027, starting at 7.45am. The time limit is 5 hours 30 minutes.
+  link: {label: 'Marrakech Marathon 2027: the marathon', url: 'https://www.marathon-marrakech.com/en/races/marrakech-marathon', checked: '2026-11-21'}
+  more:
+  - {label: 'Marrakech Marathon: registration', url: 'https://www.marathon-marrakech.com/en/registration', checked: '2026-11-21'}
+- id: taipei-marathon
+  name: Taipei Marathon
+  series: independent
+  place: From Taipei City Hall Plaza to Taipei Municipal Stadium
+  country: Taiwan
+  continent: asia
+  km: [42.2]
+  distances: Marathon; also a half marathon (with a wheelchair division)
+  terrain: [road]
+  format: single
+  month: [12]
+  entry: [ballot, qualifier]
+  entry_note: Most places are drawn by computer lottery, with a waiting list. Runners with a recent certified finish inside the set standard for their age can apply for priority entry, and runners with a fast enough qualifying time can take one of 1,000 guaranteed "Gold Label" places, first come, first served.
+  note: The 2026 race is on Sunday 20 December 2026 at 6.30am, with 9,000 marathon places. The time limit is 5 hours 30 minutes, with checkpoint closing times along the course.
+  link: {label: 'Taipei Marathon: regulations', url: 'https://www.taipeicitymarathon.com/en/REGULATIONS.php', checked: '2026-11-21'}
+- id: hong-kong-marathon
+  name: Standard Chartered Hong Kong Marathon
+  series: independent
+  place: From Nathan Road, Tsim Sha Tsui, to Victoria Park
+  country: Hong Kong
+  continent: asia
+  km: [42.2]
+  distances: Marathon; also a half marathon, a 10K, a 10K wheelchair race and the 5km Harbourfront Run (the day before)
+  terrain: [road]
+  format: single
+  month: [1]
+  entry: [ballot, qualifier, charity]
+  entry_note: Public places are drawn by ballot. Priority entries are confirmed only after the organiser checks the runner's results. Selected charities get places for their runners (the 2027 charity application has closed).
+  note: The 2027 race is on Sunday 17 January 2027. The full course has a time limit of 6 hours.
+  link: {label: 'Hong Kong Marathon: race information', url: 'https://www.hkmarathon.com/race-information', checked: '2026-11-21'}
+  more:
+  - {label: 'Hong Kong Marathon: charity programme', url: 'https://www.hkmarathon.com/marathon-charity-programme', checked: '2026-11-21'}
+  - {label: 'Hong Kong Marathon: 5km Harbourfront Run', url: 'https://www.hkmarathon.com/harbourfront-run', checked: '2026-11-21'}
+- id: kyoto-marathon
+  name: Kyoto Marathon
+  series: independent
+  place: From Takebishi Stadium Kyoto to Heian-jingu Shrine
+  country: Japan
+  continent: asia
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [2]
+  entry: [ballot, open]
+  entry_note: Overseas runners have their own 3,000 marathon places, first come, first served (the 2027 window has closed). The general category was oversubscribed for 2027, so its runners were chosen by lottery. Runners must be born before 1 April 2008.
+  note: The 2027 race is on Sunday 21 February 2027, rain or shine, starting at 9am. The time limit is 6 hours from the gun, with eight checkpoints; runners who miss a checkpoint cannot continue.
+  link: {label: 'Kyoto Marathon 2027: application guidelines', url: 'https://kyoto-marathon.com/en/entry/', checked: '2026-11-21'}
+  more:
+  - {label: 'Kyoto Marathon: general entries over capacity (Japanese)', url: 'https://kyoto-marathon.com/news/202607238774/', checked: '2026-11-21'}
+- id: monumental-marathon
+  name: CNO Financial Indianapolis Monumental Marathon
+  series: independent
+  place: Indianapolis, Indiana, near the Indiana Convention Center
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; also a half marathon, a 5K and Marathon in a Month
+  terrain: [road]
+  format: single
+  month: [11]
+  entry: [open]
+  entry_note: Registration opens on 1 January and closes in early November, or sooner if the race sells out (the 2026 races sold out). Registration for 2027 reopens on 1 January 2027.
+  note: The 2026 race was on Saturday 7 November 2026; the organiser's page shows 6 November 2027 next. The time limit is 7 hours, a minimum pace of 16 minutes a mile. The organisers call it "a fast and flat 26.2 mile course".
+  link: {label: 'Monumental Marathon: the marathon', url: 'https://monumentalmarathon.com/races/cno-financial-indianapolis-monumental-marathon/', checked: '2026-11-21'}
+  more:
+  - {label: 'Monumental Marathon: 2026 FAQ', url: 'https://monumentalmarathon.com/participants/faq-2026/', checked: '2026-11-21'}
+- id: california-international-marathon
+  name: California International Marathon
+  series: independent
+  place: From near Folsom Dam to the State Capitol in Sacramento, California
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; also a two-person relay
+  terrain: [road]
+  format: single
+  month: [12]
+  entry: [open, charity]
+  entry_note: Places are released first come, first served, in tiers. There is also an entry route with a required charity donation, and a Gold Entry Draw. For 2026 all of these have sold out or closed; two-person relay teams were still open when we checked.
+  note: The 2026 race is on Sunday 6 December 2026. It is a one-way course, so runners take a bus to the start, and the start line closes at 7.30am. Sweep runners follow a 6-hour finish pace, and the finish closes at 1.30pm.
+  link: {label: 'California International Marathon: registration', url: 'https://runcim.org/registration/', checked: '2026-11-21'}
+  more:
+  - {label: 'California International Marathon: general information and FAQs', url: 'https://runcim.org/general-information-faqs/', checked: '2026-11-21'}
+- id: auckland-marathon
+  name: Barfoot & Thompson Runaway Auckland Marathon
+  series: independent
+  place: From King Edward Parade, Devonport, over the Auckland Harbour Bridge to Victoria Park
+  country: New Zealand
+  continent: oceania
+  km: [42.2]
+  distances: Marathon; also a half marathon, the 11km Traverse, a 5km, a Kids Marathon and a wheelchair division
+  terrain: [road]
+  format: single
+  month: [11]
+  entry: [register]
+  entry_note: Entries close once the event is sold out. The pages we opened do not say how places are allocated. Wheelchair entrants must apply.
+  note: The 2026 race was on Sunday 1 November 2026, and the organiser's home page gives Sunday 31 October 2027 next. The cut-off is 7 hours, with earlier cut-offs at 31 km and 40 km.
+  link: {label: 'Auckland Marathon: the marathon', url: 'https://aucklandmarathon.co.nz/race-info/full-marathon/', checked: '2026-11-21'}
+  more:
+  - {label: 'Auckland Marathon: entry information', url: 'https://aucklandmarathon.co.nz/entry-info/entry-info/', checked: '2026-11-21'}
+  - {label: 'Auckland Marathon: home', url: 'https://aucklandmarathon.co.nz/', checked: '2026-11-21'}
 guides:
 - slug: how-to-get-a-place
   title: How to get a place in a big marathon

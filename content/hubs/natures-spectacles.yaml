@@ -30,7 +30,7 @@ about: We list a spectacle only after opening an official page about it (a natio
 safety: "Eclipses: never look at the Sun without proper eclipse glasses (NASA says they should meet the ISO 12312-2 standard) or through binoculars, a camera or a telescope without a solar filter on the front. The only safe time to look with the naked eye is totality, when the Moon completely covers the Sun's bright face; put the glasses back on as soon as any bright Sun reappears. Sunglasses, however dark, are not safe. Rivers, coasts and wild animals: follow the site's own safety advice and keep well back."
 bands_def: []
 facets:
-  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania, south-america: South America}
+  continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania, south-america: South America, antarctica: Antarctica}
   type: {sky: In the sky, living: Wildlife and living light, earth: Water and rock, season: Seasons and flowers}
   see: {own: On your own (no tour needed), guided: Guided tour, boat: Boat or kayak trip, booked: Booked, lottery or permit, vehicle: From a vehicle}
 events:
@@ -442,6 +442,146 @@ events:
   see_note: In 2026 online registration opened on 23 March. Follow the volunteer guides and staff. Cover your torch with red cellophane, wear long sleeves and trousers, and park at Tannan car park and walk in, as traffic on the trail is controlled.
   note: The evenings are run by the East Longitudinal Valley National Scenic Area Administration; the organisers describe the display as the "Milky Way on Earth". The 2027 dates were not out when we checked.
   link: {label: "Taiwan Tourism Administration: 2026 Liyu Lake firefly season", url: 'https://admin.taiwan.net.tw/english/News/NewsTravel?a=86&id=35481', checked: '2026-11-20'}
+# ---------- Added 21 Nov 2026 (build-out run 2) ----------
+- id: leonid-meteor-shower
+  name: Leonid meteor shower
+  type: sky
+  place: Anywhere away from street lights with a wide view of the sky; the meteors seem to come from the constellation Leo
+  country: UK
+  continent: europe
+  month: [11]
+  when: Mid-November (in 2026, active 6 to 30 November and peaking overnight on 17 to 18 November)
+  see: [own]
+  see_note: No binoculars or telescope are needed. Find a safe spot away from street lights and other light pollution.
+  note: The Leonids come from debris left by Comet 55P/Tempel-Tuttle, which hits the atmosphere at up to 70 km a second. Royal Museums Greenwich describes fast, bright meteors with fine trains and gives a peak rate of about 10 to 15 an hour.
+  link: {label: 'Royal Museums Greenwich: Leonid meteor shower, when and where to see it in the UK', url: 'https://www.rmg.co.uk/stories/space-astronomy/leonid-meteor-shower-when-and-where-see-it-uk', checked: '2026-11-21'}
+- id: skomer-puffins
+  name: Skomer Island puffins
+  type: living
+  place: Skomer Island, Pembrokeshire, by boat from Martin's Haven
+  country: UK
+  continent: europe
+  month: [5, 6, 7]
+  when: Puffins start arriving in mid-April and are all gone by the end of July
+  see: [boat]
+  see_note: Boats leave Martin's Haven every 30 minutes between 10am and noon. The island is open April to August, Tuesday to Sunday, with fewer sailings in September; there are no boats on Mondays except the Whitsun bank holiday. Day trips for 2027 go on sale at 00:01 on 1 December 2026, and boats are sometimes cancelled in bad weather. There is no cafe or shop, dogs are not allowed, and the 87 steps on arrival mean wheelchair users cannot visit.
+  note: The Wildlife Trust of South and West Wales says puffins are on Skomer from May to July. The island has over 750,000 ground-nesting seabirds, and Manx shearwaters are there from April to September.
+  link: {label: 'The Wildlife Trust of South and West Wales: Skomer Island day trips', url: 'https://www.welshwildlife.org/skomer-island-day-trips', checked: '2026-11-21'}
+- id: anglesey-abbey-snowdrops
+  name: Snowdrops at Anglesey Abbey
+  type: season
+  place: Anglesey Abbey gardens, Cambridgeshire (the Winter Garden, Woodland Path and Jubilee Avenue)
+  country: UK
+  continent: europe
+  month: [1, 2]
+  when: Best from mid-January to early February
+  see: [own]
+  see_note: You do not need a tour to see the snowdrops in the gardens; look for the "snowdrop hotspot" signs. Specialist tours of the rarer varieties run on weekdays from 18 January to 12 February 2027 and must be booked ahead; tickets go on sale in the first week of December 2026.
+  note: The first snowdrops appear in the Winter Garden from early January. The National Trust grows hundreds of varieties here, some named after people and places linked to the estate, such as 'Anglesey Abbey' and 'Hobson's Choice'.
+  link: {label: 'National Trust: snowdrops at Anglesey Abbey', url: 'https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/snowdrops-at-anglesey-abbey', checked: '2026-11-21'}
+- id: rocky-mountain-elk-rut
+  name: Elk rut in Rocky Mountain National Park
+  type: living
+  place: Meadows of Rocky Mountain National Park, Colorado, such as Moraine Park, Horseshoe Park and Sheep Lakes
+  country: USA
+  continent: north-america
+  month: [9, 10]
+  see: [own, vehicle]
+  see_note: Stay by the roadside and keep at least 75 feet (23 metres), about two bus lengths, from elk. Turn off car lights and engines and keep noise down. Some meadow areas are closed from 5pm to 10am daily during the rut.
+  note: Every autumn, elk come down from the high country to the meadows to breed. Bulls weighing up to 1,100 pounds (about 500 kg) compete for females, and their bugle rises from deep tones to a high squeal before dropping to grunts. The park warns that bulls can be very aggressive in the rut.
+  link: {label: 'National Park Service: elk, Rocky Mountain National Park', url: 'https://www.nps.gov/romo/learn/nature/elk.htm', checked: '2026-11-21'}
+  more:
+  - {label: 'National Park Service: watching elk', url: 'https://www.nps.gov/thingstodo/romo_watchelk.htm', checked: '2026-11-21'}
+- id: platte-river-sandhill-cranes
+  name: Sandhill cranes on the Platte River
+  type: living
+  place: Platte River Valley, central Nebraska, near Kearney, Gibbon, Wood River and Alda
+  country: USA
+  continent: north-america
+  month: [3]
+  see: [own, guided]
+  see_note: Public viewing decks at Richard Plautz and Alda and the Fort Kearny Hike-Bike Trail bridge are self-guided; Rowe Sanctuary and the Crane Trust run guided tours from viewing blinds. Visit Nebraska says the best times at the public decks are an hour before sunrise and an hour before sunset.
+  note: Visit Nebraska says roughly a million sandhill cranes gather in the valley every March. You can hear them wake at dawn and watch them fly back to the river at sunset to roost.
+  link: {label: 'Visit Nebraska: experience Nebraska''s sandhill crane migration', url: 'https://visitnebraska.com/trip-idea/experience-nebraskas-sandhill-crane-migration', checked: '2026-11-21'}
+- id: atacama-flowering-desert
+  name: Atacama flowering desert
+  type: season
+  place: Atacama Region, including Llanos de Challe National Park (90 km northwest of Vallenar) and Desierto Florido National Park (30 km south of Copiapó)
+  country: Chile
+  continent: south-america
+  month: [9, 10]
+  when: Only in years with enough rain and cold. In 2026 the full bloom was expected from early September, peaking in the second half of October.
+  see: [own, vehicle]
+  see_note: Keep to established roads and do not drive off them. Walk only on marked tracks and trails, do not touch or cut the flowers or take seeds or bulbs, and leave pets at home (they are not allowed in protected areas).
+  note: More than 200 kinds of flower can bloom. It only happens when 15 to 30 mm of rain falls, mainly in June and July, and there are enough cold hours to wake the seeds. Chile's tourism board says the Atacama is known as the driest desert in the world.
+  link: {label: 'Chile Travel: flowering desert, the driest in the world fills with flowers', url: 'https://chile.travel/en/blog/flowering-desert-the-driest-in-the-world-fills-with-flowers-in-spring/', checked: '2026-11-21'}
+- id: port-lockroy-gentoo-penguins
+  name: Gentoo penguins at Port Lockroy
+  type: living
+  place: Port Lockroy, Goudier Island, Antarctic Peninsula
+  country: Antarctica
+  continent: antarctica
+  when: The UK Antarctic Heritage Trust team sails in early November and stays for the summer season (128 days in 2025 to 2026)
+  see: [boat]
+  see_note: Visitors arrive by ship or yacht with expedition teams. In the 2025 to 2026 season there were 189 visits from ships and yachts, and 11,450 people landed on Goudier Island.
+  note: A gentoo penguin colony made its home beside the historic base over 30 years ago. The base is now a museum with the Penguin Post Office. In the 2025 to 2026 season the team counted 445 gentoo pairs, 604 eggs and 876 chicks.
+  link: {label: 'UK Antarctic Heritage Trust: Port Lockroy 2025 season begins', url: 'https://ukaht.org/latest-news/open-sesame-port-lockroy-2025-season-begins/', checked: '2026-11-21'}
+  more:
+  - {label: 'UK Antarctic Heritage Trust: 128 days at Port Lockroy, the vital statistics', url: 'https://ukaht.org/latest-news/port-lockroy-2026-vital-statistics/', checked: '2026-11-21'}
+- id: jigokudani-snow-monkeys
+  name: Jigokudani snow monkeys
+  type: living
+  place: Jigokudani Snow Monkey Park, Yamanouchi, Nagano
+  country: Japan
+  continent: asia
+  month: [12, 1, 2, 3]
+  see: [own]
+  see_note: Take a bus to Kanbayashi Onsen, then walk 25 to 40 minutes on a forest trail, which is open all year. Do not feed, touch or threaten the monkeys, do not stare into their eyes, and do not get into the bath.
+  note: A troop of wild Japanese macaques comes down from the mountains and, in winter, often bathes in the hot spring water. JNTO says December to March is usually the best time to see them bathing.
+  link: {label: 'Japan National Tourism Organization: Jigokudani Snow Monkey Park', url: 'https://www.japan.travel/en/spot/1344/', checked: '2026-11-21'}
+  more:
+  - {label: 'Japan National Tourism Organization: see the bathing snow monkeys', url: 'https://www.japan.travel/national-parks/parks/joshinetsukogen/see-and-do/see-the-bathing-snow-monkeys/', checked: '2026-11-21'}
+- id: rwanda-gorilla-tracking
+  name: Gorilla tracking in Volcanoes National Park
+  type: living
+  place: Volcanoes National Park, Rwanda
+  country: Rwanda
+  continent: africa
+  see: [guided]
+  see_note: Visitors meet at the park headquarters in Kinigi at 7am for a briefing, then trackers and guides lead small groups. Hikes take from 30 minutes to four hours or more. Visitors must be at least 15. Eight tracking permits are issued per gorilla family each day, and Visit Rwanda recommends booking ahead through the Irembo platform. Wear solid walking shoes with gaiters and sturdy clothing against nettles, and carry a light waterproof.
+  note: Twelve gorilla families live in the park, watched over by park rangers. Time with the gorillas is limited to one hour a day.
+  link: {label: 'Visit Rwanda: gorilla tracking', url: 'https://visitrwanda.com/interests/gorilla-tracking/', checked: '2026-11-21'}
+- id: okavango-delta
+  name: Okavango Delta
+  type: earth
+  place: Okavango Delta, northern Botswana
+  country: Botswana
+  continent: africa
+  see: [guided, boat]
+  see_note: Explore the waterways by traditional mokoro dugout canoe or by motorboat; game drives are also offered.
+  note: The delta is fed by the Okavango River, which rises in the Angolan Highlands, and covers about 15,000 square km in drier periods and 22,000 in wetter ones. It is a UNESCO World Heritage Site, which Botswana Tourism calls "the largest intact inland delta in the world". Wildlife includes elephant, hippo, red lechwe, lion and leopard, and 444 species of bird.
+  link: {label: 'Botswana Tourism Organisation: Okavango Delta', url: 'https://botswanatourism.co.bw/explore/okavango-delta', checked: '2026-11-21'}
+- id: uluru-sunset
+  name: Uluru at sunset
+  type: earth
+  place: Uluṟu car sunset viewing area, Uluṟu-Kata Tjuṯa National Park, 15 to 20 minutes from Yulara
+  country: Australia
+  continent: oceania
+  see: [own, vehicle]
+  see_note: This viewing area is for cars only; arrive early for a good spot. There is no water and there are no toilets, so bring your own chairs and snacks. Parks Australia says you will have it almost to yourself at sunrise.
+  note: As the sun sets behind you, the rock turns from pinkish shades to a bright orange and then deep reds.
+  link: {label: 'Parks Australia: Uluṟu car sunset viewing area', url: 'https://uluru.gov.au/things-do/activities/sunrise-sunset/uluru-car-sunset-viewing-area/', checked: '2026-11-21'}
+- id: kaikoura-sperm-whales
+  name: Sperm whales at Kaikōura
+  type: living
+  place: Kaikōura coast, South Island
+  country: New Zealand
+  continent: oceania
+  when: Sperm whales all year; humpbacks pass in June and July, and orcas are seen from December to March
+  see: [boat]
+  see_note: See the whales by boat, or from the air by small plane or helicopter.
+  note: Sperm whales, about 20 metres long, live along the coast all year and come close to shore. Dusky dolphins, New Zealand fur seals and seabirds such as albatross are seen here too.
+  link: {label: 'Tourism New Zealand: top 10 things to do in Kaikōura', url: 'https://www.newzealand.com/nz/feature/top-experiences-in-kaikoura/', checked: '2026-11-21'}
 guides:
 - slug: 2027-total-solar-eclipse
   title: How to see the 2027 total solar eclipse safely, and where
@@ -577,3 +717,68 @@ guides:
   - {label: 'Visit Finland: best times to see the northern lights in Finland', url: 'https://www.visitfinland.com/en/articles/the-best-times-to-see-northern-lights/', checked: '2026-11-20'}
   - {label: 'Royal Museums Greenwich: what causes the northern lights?', url: 'https://www.rmg.co.uk/stories/space-astronomy/what-causes-northern-lights-aurora-borealis-explained', checked: '2026-11-20'}
   - {label: 'NASA: NASA, NOAA say the Sun reaches maximum phase in 11-year solar cycle (15 October 2024)', url: 'https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/', checked: '2026-11-20'}
+- slug: seeing-wildlife-responsibly
+  title: How to watch wildlife spectacles without disturbing them
+  short: Watching wildlife well
+  seo_title: 'Watching wildlife responsibly: distances, seasons and the codes'
+  description: How close to get to seals, puffins, elk, whales and other wildlife spectacles, when animals are most vulnerable, and what the official UK and US codes ask of visitors.
+  standfirst: The best wildlife spectacles are the ones the animals barely notice you watching. Here is what the official codes on both sides of the Atlantic ask, and why.
+  detail:
+  - h: The one rule every code agrees on
+    p:
+    - "If an animal changes what it is doing because of you, you are too close. The US National Park Service puts it plainly: \"In general, if animals react to your presence you are too close\", and it adds that if you are close enough for a selfie, you are definitely too close."
+    - "The UK's Marine and coastal wildlife code asks you to move further away if you think an animal is showing signs of disturbance, and not to approach animals head-on or from directly behind. Binoculars, a spotting scope or a camera zoom give you the close view without the closeness."
+  - h: How far away to stay
+    table:
+      head: [Where, Distance, Who says so]
+      rows:
+      - ['Most wildlife in many US national parks', '25 yards (about 23 m)', 'National Park Service (check each park: Olympic asks for 50 yards)']
+      - ['Bears, wolves and other predators in US parks', '100 yards (about 91 m)', 'National Park Service']
+      - ['Elk in Rocky Mountain National Park', '75 feet (23 m), about two bus lengths', 'National Park Service, Rocky Mountain']
+      - ['Seals, seabirds, dolphins and whales on UK coasts', 'At least 100 m (330 ft) if you can', 'Marine and coastal wildlife code (GOV.UK)']
+      - ['Boats near UK marine wildlife', '100 m (330 ft), under 6 knots', 'Marine and coastal wildlife code (GOV.UK)']
+    after: The National Park Service suggests a quick check, holding your arm straight out with your thumb up. If your thumb does not cover the animal, you are too close.
+  - h: When animals are most easily upset
+    p:
+    - "The Marine and coastal wildlife code says animals are especially vulnerable when breeding, in winter, and when resting or moulting, and that disturbed animals may abandon their nests, mates or young. Its breeding seasons: June to January for seals, February to September for birds, and the summer months for dolphins, whales and porpoises. Seals also moult between November and April, and in August."
+    - Several spectacles in our finder fall in these seasons, such as seal pupping and seabird colonies. Some places close or restrict access in these seasons, so follow the signs and the wardens.
+    - "If you find a seal pup on a beach, the code says not to move it or chase it into the sea, and not to touch or try to refloat any injured or stranded animal."
+  - h: Feeding, noise and calls
+    list:
+    - "Never feed wild animals. The Countryside Code says it can cause them harm, and the National Park Service says it is illegal in US parks to feed, touch, tease, frighten or intentionally disturb wildlife."
+    - Keep quiet, and do not use bird calls, wildlife calls or attractants (National Park Service).
+    - Avoid flash photography, and do not get too close for a picture (Marine and coastal wildlife code).
+    - Do not fly a drone where it will disturb or endanger wildlife (Marine and coastal wildlife code).
+    - "Follow each site's own rules. At Jigokudani, Japan's tourism body asks visitors not to feed, touch or threaten the snow monkeys or stare into their eyes; at Volcanoes National Park in Rwanda, time with each gorilla family is limited to one hour a day."
+  - h: Dogs, cars and boats
+    p:
+    - "The Countryside Code asks you to keep your dog under effective control, away from wildlife, and says that between 1 March and 31 July you must keep it on a lead on open access land, even with no livestock about. Many US parks require a leash, most often 6 feet long, where dogs are allowed at all; Skomer allows no dogs."
+    - "In a car, pull fully off the road into a marked pull-out to watch (National Park Service). In Rocky Mountain National Park, stay by the roadside and turn off lights and engines when watching elk."
+    - On a boat, the UK code asks skippers to slow down when they see an animal, stay under 6 knots, keep their distance if more than two boats are already there, and hold a steady speed and course if dolphins or whales come close, letting them leave when they choose. Look for operators in the WiSe (Wildlife Safe) scheme.
+  faq:
+  - q: How close can I get to a seal?
+    a: The UK's Marine and coastal wildlife code asks you to try to stay at least 100 metres (330 feet) away, or as far as you can, and to move further away if the seal wakes to look straight at you or heads for the water.
+  - q: How far should I stay from elk or bears in a US national park?
+    a: The National Park Service says many parks require 25 yards from most wildlife and 100 yards from predators like bears and wolves. Rocky Mountain National Park asks for at least 75 feet from elk. Each park sets its own rules, so check before you go.
+  - q: Is it ever all right to feed wild animals?
+    a: No. The Countryside Code says feeding can harm them, and in US national parks it is illegal.
+  kit:
+  - name: Binoculars
+    why: check the magnification and the weight in the listing; you may hold them up for a long time
+    url: https://www.amazon.co.uk/s?k=binoculars+wildlife
+  - name: Camera with a zoom lens or a phone telephoto adaptor
+    why: check the zoom range in the listing, so you can stay back and still get the picture
+    url: https://www.amazon.co.uk/s?k=camera+zoom+lens+wildlife
+  - name: Short dog lead
+    why: for places where a lead is required; check the length if a park sets one
+    url: https://www.amazon.co.uk/s?k=dog+lead+short
+  sources:
+  - {label: 'National Park Service: 7 ways to safely watch wildlife', url: 'https://www.nps.gov/subjects/watchingwildlife/7ways.htm', checked: '2026-11-21'}
+  - {label: 'National Park Service: Leave No Trace principle 6, respect wildlife', url: 'https://www.nps.gov/articles/000/idkt_lnt6.htm', checked: '2026-11-21'}
+  - {label: 'GOV.UK: the Countryside Code, advice for countryside visitors', url: 'https://www.gov.uk/government/publications/the-countryside-code/the-countryside-code-advice-for-countryside-visitors', checked: '2026-11-21'}
+  - {label: 'GOV.UK: Marine and coastal wildlife code, advice for visitors', url: 'https://www.gov.uk/government/publications/marine-and-coastal-wildlife-code/marine-and-coastal-wildlife-code-advice-for-visitors', checked: '2026-11-21'}
+  - {label: 'National Park Service: elk, Rocky Mountain National Park', url: 'https://www.nps.gov/romo/learn/nature/elk.htm', checked: '2026-11-21'}
+  - {label: 'National Park Service: watching elk', url: 'https://www.nps.gov/thingstodo/romo_watchelk.htm', checked: '2026-11-21'}
+  - {label: 'Japan National Tourism Organization: Jigokudani Snow Monkey Park', url: 'https://www.japan.travel/en/spot/1344/', checked: '2026-11-21'}
+  - {label: 'Visit Rwanda: gorilla tracking', url: 'https://visitrwanda.com/interests/gorilla-tracking/', checked: '2026-11-21'}
+  - {label: 'The Wildlife Trust of South and West Wales: Skomer Island day trips', url: 'https://www.welshwildlife.org/skomer-island-day-trips', checked: '2026-11-21'}

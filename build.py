@@ -1207,7 +1207,8 @@ def build(make_social=True):
                 _ev = L["events"]; _w = h.get("words") or "races"
                 _kms = [k for e in _ev for k in e["km"]]
                 _fmt = lambda k: f"{k:,.1f}".rstrip("0").rstrip(".")
-                facts = [f"{len(_ev)} {_w} on this page, with main distances from {_fmt(min(_kms))} km to {_fmt(max(_kms))} km."]
+                # One distance throughout (marathons): say so once rather than "from 42.2 km to 42.2 km"
+                facts = [f"{len(_ev)} {_w} on this page, " + (f"all {_fmt(min(_kms))} km." if min(_kms) == max(_kms) else f"with main distances from {_fmt(min(_kms))} km to {_fmt(max(_kms))} km.")]
                 _cn = sorted({e["country"] for e in _ev})
                 if not L["filter"].get("country_has") and len(_cn) > 1:
                     facts.append(f"They are in {len(_cn)} countries or areas.")
