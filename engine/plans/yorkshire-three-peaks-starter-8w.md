@@ -138,19 +138,19 @@ Rucksack with dry bags, worn-in boots, layers, waterproofs, hat, gloves, spare w
 
 ## On the day
 
-- Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. [1, 2, 41, 42, 43, 44, 45, 46]
-- Start slower than you think you need to; early miles feel easy and are where most people overdo it. [3, 4, 9, 29, 39, 47]
+- Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. [1, 2, 41, 42, 43, 44, 45, 46, 47, 48]
+- Start slower than you think you need to; early miles feel easy and are where most people overdo it. [3, 4, 9, 29, 39, 49]
 
 ## Safety
 
 - If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [25]
-- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [48]
-- Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. [1, 44, 49, 50, 51, 52, 53, 54]
-- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [55]
+- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [50]
+- Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. [1, 44, 51, 52, 53, 54, 55, 56]
+- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [57]
 - Stop if something does not feel right, and get it checked rather than training through it. [5, 29]
-- In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. [41, 42, 45, 56]
-- In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). [56, 57]
-- On a hill day carry a waterproof jacket and warm layers, even in summer, plus enough water for the day, food, sun protection and a small first aid kit, and wear sturdy footwear. Ramblers also lists a head torch, a charged phone, a whistle and a survival or bothy bag. [45, 46, 58]
+- In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. [41, 42, 45, 58]
+- In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). [58, 59]
+- On a hill day carry a waterproof jacket and warm layers, even in summer, plus enough water for the day, food, sun protection and a small first aid kit, and wear sturdy footwear. Ramblers also lists a head torch, a charged phone, a whistle and a survival or bothy bag. [45, 46, 60]
 - Wind usually gets stronger with height and can make exposed ridges hard or dangerous, and hill fog can come down quickly, slowing you and making it easier to get lost or caught out by dark. Have a shorter or lower alternative route ready and use it, or wait for better weather, if the forecast or the conditions turn against you. [45, 46]
 
 ## Where this comes from
@@ -203,15 +203,17 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 44. Den Norske Turistforening (DNT, the Norwegian Trekking Association), revised with the Norwegian Red Cross, *The Norwegian Mountain Code (undated page; year is the year opened)* (2026). Tier 3. https://www.dnt.no/en/Trips/tips-and-tricks/articles/The-Norwegian-Mountain-Code (opened 2026-11-17)
 45. Ramblers (Britain's national walking charity), *Top tips for mountain and hill walking* (2026). Tier 3. https://ramblers.org.uk/advice/safety/mountain-and-hill-walking.aspx (opened 2026-11-18)
 46. British Mountaineering Council, *Get to know British weather on the hills* (2026). Tier 3. https://thebmc.co.uk/en/get-to-know-british-weather-on-the-hills (opened 2026-11-18)
-47. EXCLI Journal 25, Doc591 (Knechtle, Thuany, Nikolaidis, Forte, Leite, Lepers, Chlíbková, Weiss, Rosemann, Vancini and Duric), *The New York City Marathon: A systematic review of performance, participation, pacing, and health-related outcomes* (2026). Tier 4. https://www.excli.de/vol25/2026-9354/2026-9354.htm (opened 2026-11-14)
-48. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
-49. New Hampshire Fish and Game Department (hikeSafe, with the White Mountain National Forest), *Hiking Safety* (2026). Tier 3. https://wildlife.nh.gov/get-outside/hiking-safety (opened 2026-11-11)
-50. Mount Washington Observatory, *Higher Summits Forecast* (2026). Tier 3. https://mountwashington.org/weather/higher-summits-forecast/ (opened 2026-11-11)
-51. USDA Forest Service, Gifford Pinchot National Forest, *Mount St. Helens Climbing Safety (last updated 1 May 2025)* (2025). Tier 3. https://www.fs.usda.gov/r06/giffordpinchot/recreation/mount-st-helens-climbing-safety (opened 2026-11-12)
-52. U.S. National Park Service, Haleakalā National Park, *Safety (last updated 27 July 2022)* (2022). Tier 3. https://home.nps.gov/hale/planyourvisit/safety.htm (opened 2026-11-17)
-53. South African National Parks (SANParks), Table Mountain National Park, *Safe Hiking (undated page; year is the year opened)* (2026). Tier 3. https://www.sanparks.org/parks/table-mountain/useful-information/safe-hiking (opened 2026-11-17)
-54. Safetravel (Icelandic Association for Search and Rescue, ICE-SAR), *Hiking / Trekking (last modified 23 November 2025)* (2025). Tier 3. https://safetravel.is/outdoors/hiking-trekking/ (opened 2026-11-17)
-55. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
-56. Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Tier 3. https://www.mountaineering.scot/news/avoid-hypothermia-when-hiking-in-scottish-winter (opened 2026-11-09)
-57. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
-58. Parks Canada, *Safety tips (date modified 2 December 2024)* (2024). Tier 3. https://parks.canada.ca/serapprocher-connect/ltc-dlc/bases-basics/securite-safety (opened 2026-11-18)
+47. Ordnance Survey (OS Maps Discover, Jonathan Elder), *How to Use a Compass: A Step-by-Step Guide* (2026). Tier 3. https://osmaps.com/discover/guides/beginners-guide-to-using-a-compass/ (opened 2026-11-21)
+48. Mountaineering Scotland Mountain Safety Advisor Team with the Mountain Safety Group (posted on the Mountain Weather Information Service blog), *Using your mobile phone for navigation in the hills?* (2023). Tier 3. https://mwis.org.uk/blog/post/using-phone-nav-hils (opened 2026-11-21)
+49. EXCLI Journal 25, Doc591 (Knechtle, Thuany, Nikolaidis, Forte, Leite, Lepers, Chlíbková, Weiss, Rosemann, Vancini and Duric), *The New York City Marathon: A systematic review of performance, participation, pacing, and health-related outcomes* (2026). Tier 4. https://www.excli.de/vol25/2026-9354/2026-9354.htm (opened 2026-11-14)
+50. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
+51. New Hampshire Fish and Game Department (hikeSafe, with the White Mountain National Forest), *Hiking Safety* (2026). Tier 3. https://wildlife.nh.gov/get-outside/hiking-safety (opened 2026-11-11)
+52. Mount Washington Observatory, *Higher Summits Forecast* (2026). Tier 3. https://mountwashington.org/weather/higher-summits-forecast/ (opened 2026-11-11)
+53. USDA Forest Service, Gifford Pinchot National Forest, *Mount St. Helens Climbing Safety (last updated 1 May 2025)* (2025). Tier 3. https://www.fs.usda.gov/r06/giffordpinchot/recreation/mount-st-helens-climbing-safety (opened 2026-11-12)
+54. U.S. National Park Service, Haleakalā National Park, *Safety (last updated 27 July 2022)* (2022). Tier 3. https://home.nps.gov/hale/planyourvisit/safety.htm (opened 2026-11-17)
+55. South African National Parks (SANParks), Table Mountain National Park, *Safe Hiking (undated page; year is the year opened)* (2026). Tier 3. https://www.sanparks.org/parks/table-mountain/useful-information/safe-hiking (opened 2026-11-17)
+56. Safetravel (Icelandic Association for Search and Rescue, ICE-SAR), *Hiking / Trekking (last modified 23 November 2025)* (2025). Tier 3. https://safetravel.is/outdoors/hiking-trekking/ (opened 2026-11-17)
+57. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
+58. Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Tier 3. https://www.mountaineering.scot/news/avoid-hypothermia-when-hiking-in-scottish-winter (opened 2026-11-09)
+59. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
+60. Parks Canada, *Safety tips (date modified 2 December 2024)* (2024). Tier 3. https://parks.canada.ca/serapprocher-connect/ltc-dlc/bases-basics/securite-safety (opened 2026-11-18)

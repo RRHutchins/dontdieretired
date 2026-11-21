@@ -9118,6 +9118,7 @@
   company: either
   regions:
   - uk
+  - us
   why: A will is the one document that puts your own decisions on record, in place of rules written by somebody else. Writing it prompts useful conversations that families tend to put off.
   start:
   - Read the GOV.UK guide to making a will.
@@ -9128,6 +9129,181 @@
     url: https://www.gov.uk/make-will
     region: uk
     checked: '2026-10-06'
+  - label: 'GOV.UK: make sure your will is legal'
+    url: https://www.gov.uk/make-will/make-sure-your-will-is-legal
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Citizens Advice: making a will'
+    url: https://www.citizensadvice.org.uk/index/family_parent/family/wills.htm
+    region: uk
+    checked: '2026-11-21'
+  - label: 'MoneyHelper: will writing services, pros and cons'
+    url: https://www.moneyhelper.org.uk/en/family-and-care/death-and-bereavement/will-writing-services-pros-and-cons
+    region: uk
+    checked: '2026-11-21'
+  - label: 'The Law Society: making a will'
+    url: https://lawsociety.org.uk/for-the-public/common-legal-issues/making-a-will
+    region: uk
+    checked: '2026-11-21'
+  - label: Free Wills Month
+    url: https://freewillsmonth.org.uk/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Age UK: Will Aid'
+    url: https://www.ageuk.org.uk/get-involved/donate/leave-legacy/will-aid/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'mygov.scot: sign and witness your will (Scotland)'
+    url: https://www.mygov.scot/create-will/sign-witness-will
+    region: uk
+    checked: '2026-11-21'
+  - label: 'nidirect: making a will (Northern Ireland)'
+    url: https://www.nidirect.gov.uk/articles/making-will
+    region: uk
+    checked: '2026-11-21'
+  - label: 'California Courts Self Help Guide: wills, estates and advance care planning'
+    url: https://selfhelp.courts.ca.gov/wills-estates-probate/legal-documents
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'How to make a will in the UK: options and costs compared'
+  description: How to make a valid will in the UK, with solicitors, will writers, DIY kits and free will schemes compared by cost, and when to update your will.
+  detail:
+  - h: What makes a will valid
+    p:
+    - This page is general information, not advice. For your own situation, talk to a solicitor (the Law Society's Find a Solicitor search has a Wills and probate option), Citizens Advice or MoneyHelper.
+    - GOV.UK sets out the rules. To be legally valid, you must be 18 or over, make the will voluntarily, be of sound mind and make it in writing. You must sign it in the presence of two witnesses, both
+      over 18, who also sign it. You and your witnesses sign the same document, and each witness needs a clear view of you signing, though they do not have to sign at the same time. If you cannot sign,
+      someone can sign on your behalf.
+    - Your witnesses, and their married partners, cannot be left anything in the will. In England and Wales a will can also be witnessed remotely, for example by video call.
+    - 'Without a valid will, your estate is shared under the intestacy rules. The Law Society points out that only married partners, civil partners and certain close relatives can inherit then: an unmarried
+      partner has no automatic right, even if you live together.'
+  - h: Ways to make a will, compared
+    table:
+      head:
+      - Way
+      - What it involves
+      - Cost (as last listed)
+      - Worth knowing
+      rows:
+      - - Solicitor
+        - A solicitor drafts the will with you
+        - 'MoneyHelper: a single will might cost £144 to £240, a joint will £150 to £300; complex affairs £500 to £600 (a Which? figure)'
+        - The Law Society suggests a firm in its Wills and Inheritance Quality Scheme; check whether a quote includes VAT
+      - - Will-writing service
+        - A will writer usually visits you at home; some banks offer a service
+        - Usually cheaper than a solicitor (no figure given)
+        - Citizens Advice says most are not regulated; MoneyHelper names the Society of Will Writers and the Institute of Professional Will Writers
+      - - DIY template or kit
+        - You write and arrange signing yourself
+        - 'MoneyHelper: as little as £10 for a basic template'
+        - Only for very simple affairs; mistakes can make a will invalid
+      - - Free Wills Month
+        - A participating solicitor writes or updates a simple will
+        - Free for a simple will; you may pay the balance if it is more complex
+        - For individuals or couples aged 55 and over, in selected locations; runs in March and October; the site says the next one begins 1 March 2027; no obligation to leave a gift
+      - - Will Aid
+        - Participating solicitors waive their fee each November
+        - Suggested voluntary donation of £120 for a simple will, £200 for mirror wills
+        - Solicitors are listed from September; appointments fill quickly
+      - - Charity free will schemes
+        - For example the Stroke Association Free Will Scheme, or Co-op Legal Services with Cancer Research UK
+        - Free for a simple will
+        - The charity hopes you will leave it a gift; the Stroke Association scheme is for people aged 60 or over or stroke survivors
+      - - Trade union or home insurance
+        - Some unions and some home insurance legal cover include a will service
+        - May be free
+        - Check your membership or policy documents
+    after: Citizens Advice says it is generally advisable to use a solicitor, or to have one check a will you have drawn up yourself. GOV.UK suggests advice if, for example, you share a home with someone
+      you are not married to or in a civil partnership with, own property overseas or a business, or expect family members to claim on the will.
+  - h: What to have ready
+    list:
+    - Everything you own that the will should cover, such as property, vehicles, savings and investments.
+    - Who you want to receive each thing, and what should happen if a beneficiary dies before you.
+    - Who will be your executor, and who should look after any children under 18.
+    - Details of children and family members, including step-children and adopted children.
+    - For a gift to charity, its full name, address and registered charity number.
+    - Any other wishes, such as the kind of funeral you would like.
+    after: Keep the signed will somewhere safe and tell your executor where it is. You can store it at home, with your solicitor (the Law Society says there is no charge if it is the solicitor who drew
+      it up) or with the government's Probate Service. The Law Society advises against a bank safety deposit box, because the bank cannot open it without legal permission, which needs the will.
+  - h: When and how to update it
+    p:
+    - 'GOV.UK suggests reviewing your will every five years and after any big change: separation or divorce, having a child, moving house, or the death of an executor. In England and Wales, marriage cancels
+      any will you made before; Citizens Advice adds that entering a registered civil partnership does too.'
+    - You cannot change a will once it has been signed and witnessed. For small changes, add a codicil, which must be signed and witnessed in the same way, and there is no limit on how many you add. For
+      bigger changes, make a new will that says it revokes all earlier wills and codicils, then destroy the old one.
+  - h: Scotland, Northern Ireland and the US
+    p:
+    - Scotland has its own rules. mygov.scot says you can make a will from the age of 12, it must be in writing and signed at the bottom of the last page, and a witness is not needed for it to be valid.
+      One witness, aged at least 16, makes it self-proving if you also sign every page, which usually means a court will accept it without more evidence. Unlike England and Wales, getting married or entering
+      a civil partnership in Scotland does not cancel an existing will, though gifts to a former spouse or partner no longer apply after divorce or dissolution.
+    - In Northern Ireland, nidirect says it is advisable to use a solicitor because of the legal formalities, though you can write your own. It points to the Law Society of Northern Ireland's solicitors
+      directory and to Age NI for help.
+    - In the US, wills are governed by each state's law, so start with your state's court self-help pages or state bar. California's courts, for example, say most will forms must be signed in front of a
+      notary or two witnesses who are not involved in the estate, while a handwritten will that you sign and date needs no witness. The state also publishes a simple statutory will form.
+  faq:
+  - q: Does a will need to be witnessed in the UK?
+    a: In England and Wales, yes. You sign in front of two witnesses aged over 18, who both sign too, and neither they nor their married partners can benefit from the will. In Scotland a witness is not
+      needed for validity, but one makes the will self-proving.
+  - q: Does getting married cancel a will?
+    a: In England and Wales, GOV.UK says marriage cancels any will you made before, and Citizens Advice says a civil partnership does too. In Scotland, mygov.scot says it does not.
+  - q: Can I write my own will?
+    a: Yes. Citizens Advice says there is no need for a solicitor to draw up or witness a will, but suggests DIY only for straightforward wills and advises having a solicitor check it.
+  - q: How much does it cost to make a will in the UK?
+    a: MoneyHelper says a single will from a solicitor might cost £144 to £240 and a joint will £150 to £300, while a basic template can cost as little as £10. Free Wills Month, Will Aid and some charities
+      offer simple wills free or for a suggested donation.
+  - q: When is Free Wills Month?
+    a: It runs in March and October, and its site says the next campaign begins 1 March 2027. It is for people aged 55 and over, and appointments go on a first come, first served basis.
+  - q: How do I change my will?
+    a: Add a codicil, signed and witnessed like the will itself, or for bigger changes make a new will that revokes the old one.
+  sources:
+  - label: GOV.UK, Making a will (make sure your will is legal)
+    url: https://www.gov.uk/make-will/make-sure-your-will-is-legal
+    checked: '2026-11-21'
+  - label: GOV.UK, Making a will (printable version of the whole guide)
+    url: https://www.hmrc.gov.uk/make-will/print
+    checked: '2026-11-21'
+  - label: Citizens Advice, Making a will
+    url: https://www.citizensadvice.org.uk/index/family_parent/family/wills.htm
+    checked: '2026-11-21'
+  - label: MoneyHelper, Will writing services pros and cons
+    url: https://www.moneyhelper.org.uk/en/family-and-care/death-and-bereavement/will-writing-services-pros-and-cons
+    checked: '2026-11-21'
+  - label: The Law Society, Making a will
+    url: https://lawsociety.org.uk/for-the-public/common-legal-issues/making-a-will
+    checked: '2026-11-21'
+  - label: Free Wills Month
+    url: https://freewillsmonth.org.uk/
+    checked: '2026-11-21'
+  - label: Age UK, Will Aid
+    url: https://www.ageuk.org.uk/get-involved/donate/leave-legacy/will-aid/
+    checked: '2026-11-21'
+  - label: mygov.scot, Sign and witness your will
+    url: https://www.mygov.scot/create-will/sign-witness-will
+    checked: '2026-11-21'
+  - label: mygov.scot, Update a will
+    url: https://www.mygov.scot/create-will/update-will
+    checked: '2026-11-21'
+  - label: nidirect, Making a will
+    url: https://www.nidirect.gov.uk/articles/making-will
+    checked: '2026-11-21'
+  - label: California Courts Self Help Guide, Wills, estates, and advance care planning
+    url: https://selfhelp.courts.ca.gov/wills-estates-probate/legal-documents
+    checked: '2026-11-21'
+  related:
+  - set-up-a-lasting-power-of-attorney
+  - book-a-pension-wise-appointment
+  - find-your-lost-pensions
+  - get-your-state-pension-forecast
+  kit:
+  - name: Fireproof document bag
+    why: somewhere to keep the signed original and related papers at home
+    url: https://www.amazon.co.uk/s?k=fireproof+document+bag
+  - name: Will writing kit
+    why: a template and guidance notes if your affairs are simple and you are writing it yourself
+    url: https://www.amazon.co.uk/s?k=will+writing+kit+uk
+  - name: Household finances organiser
+    why: to list what you own, accounts and policies before you meet a solicitor
+    url: https://www.amazon.co.uk/s?k=household+finance+organiser+book
 - id: set-up-a-lasting-power-of-attorney
   title: Make and register a lasting power of attorney
   category: money
@@ -9458,6 +9634,7 @@
   company: others
   regions:
   - uk
+  - us
   why: You get behind the ropes of a historic house, garden or stretch of coast and help look after it alongside people who know the place well. Roles range from outdoor conservation work to welcoming visitors,
     so you can pick the side of a property that interests you most.
   start:
@@ -9469,7 +9646,135 @@
     url: https://www.nationaltrust.org.uk/support-us/volunteer
     region: uk
     checked: '2026-10-06'
+  - label: 'National Trust: volunteer with us (roles in houses, gardens, coast and countryside)'
+    url: https://www.nationaltrust.org.uk/support-us/volunteer/volunteer-with-us
+    region: uk
+    checked: '2026-11-21'
+  - label: 'National Trust: frequently asked questions on volunteering'
+    url: https://www.nationaltrust.org.uk/support-us/volunteer/frequently-asked-questions-on-volunteering
+    region: uk
+    checked: '2026-11-21'
+  - label: 'National Trust for Scotland: volunteer FAQs'
+    url: https://www.nts.org.uk/support-us/get-involved/find-a-volunteering-opportunity/volunteer-faq
+    region: uk
+    checked: '2026-11-21'
+  - label: 'English Heritage: why volunteer with us'
+    url: https://www.english-heritage.org.uk/support-us/Volunteer/Why-Volunteer-with-us
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Canal & River Trust: ways to volunteer'
+    url: https://canalrivertrust.org.uk/volunteer/ways-to-volunteer
+    region: uk
+    checked: '2026-11-21'
+  - label: 'National Park Service: become a volunteer'
+    url: https://www.nps.gov/subjects/volunteer/become.htm
+    region: us
+    checked: '2026-11-21'
   guide: volunteering-after-50-where-to-start
+  seo_title: 'National Trust volunteering: roles, applying, what you get'
+  description: National Trust volunteer roles in houses, gardens and countryside, how applying works, time and expenses, and other heritage volunteering compared.
+  detail:
+  - h: What the roles are like
+    p:
+    - The National Trust says there are hundreds of different ways to volunteer, and they fall into a few broad groups. In historic houses, volunteers work as room guides, costumed interpreters, storytellers
+      and conservation assistants. In gardens, they plant, prune, catalogue seeds, support allotment groups and guide visitors round.
+    - On the coast and in the countryside the work is practical and outdoors, from volunteer rangers repairing steps near Froward Point in Devon to organised beach cleans on the Holnicote Estate in Somerset.
+      Volunteers also monitor wildlife, help at BioBlitz events and lead guided walks. Local supporter groups add talks, visits, social and fundraising events, and there are family and group days for anyone
+      who wants to try a one-off.
+  - h: How applying works
+    list:
+    - You do not need to be a member. The Trust says many of its volunteers are not.
+    - Search for opportunities on the Trust's myvolunteering website and fill in the application form for the role.
+    - The local team will then contact you, usually for a visit and a chat. Some places run an open day instead, and some roles have a more formal interview.
+    - Every volunteer gets an induction, with further training depending on the role.
+    - Once you start, the myvolunteering site is where you record hours, update rotas and claim expenses.
+  - h: Time, expenses and the honest limits
+    p:
+    - There is no minimum time commitment, though some roles work best with regular hours, such as one shift a week, which you agree with the volunteer manager. Volunteering is unpaid, but agreed out-of-pocket
+      expenses such as travel between home and your volunteering place are covered, and the Trust has insurance for liability claims involving volunteers. Recognition comes through social gatherings, a
+      long service awards scheme and mentions in local press and Trust publications.
+    - 'Accommodation is generally not provided, because most people volunteer near home, though it may be for some longer-term roles. If you hoped for a residential working holiday, check the volunteering
+      database for current options: when we checked, the Trust''s working holiday feature led to its general volunteering page, and the National Trust for Scotland says it cannot offer its Thistle Camps
+      at present. If you live outside the UK, you are responsible for having a visa that allows volunteering, as the Trust cannot sponsor one.'
+  - h: Heritage and countryside volunteering compared
+    table:
+      head:
+      - Organisation
+      - Where
+      - Typical roles
+      - Time asked
+      - Expenses and support (as last listed)
+      rows:
+      - - National Trust
+        - Houses, gardens, coast and countryside it looks after
+        - Room guides, interpreters, gardeners, volunteer rangers, wildlife monitoring, guided walks
+        - No minimum; some roles suit one regular shift a week
+        - Agreed out-of-pocket expenses such as travel; induction; insurance
+      - - National Trust for Scotland
+        - Its properties in Scotland
+        - Some specialist roles, many that need enthusiasm to learn and meet people; weekend Regional Volunteer Groups
+        - From a whole day a week to a few hours a month
+        - No accommodation and no help with travel or living costs; induction, training and insurance; Thistle Camps not currently offered
+      - - English Heritage
+        - Its historic sites
+        - Welcoming visitors, and behind the scenes in offices and archives
+        - No minimum time set, except for essential training or short projects
+        - Eligible travel and out-of-pocket expenses reimbursed; induction and role training
+      - - Canal & River Trust
+        - Its canals and rivers
+        - Volunteer lock keepers, welcome stations, swing bridge keepers on the Gloucester and Sharpness Canal, conservator volunteers, Towpath Taskforce
+        - A few hours a week or more; ongoing or one-off
+        - Not stated on its ways to volunteer page
+      - - US National Park Service (Volunteers-In-Parks)
+        - US national parks
+        - Opportunities listed on Volunteer.gov, plus citizen science, Trails & Rails and volunteer events
+        - Duration and schedule agreed with a supervisor; single and multi-day events
+        - Free Volunteer Pass; annual volunteer award
+    after: Every organisation in the table lists roles on its own site, so it is worth searching two or three near you and comparing what each place needs.
+  faq:
+  - q: Do you have to be a National Trust member to volunteer?
+    a: No. The Trust says many of its volunteers are not members.
+  - q: Do National Trust volunteers get paid?
+    a: No, but agreed out-of-pocket expenses are covered, such as travel between your home and where you volunteer.
+  - q: How many hours do National Trust volunteers do?
+    a: There is no minimum. Some roles benefit from a regular commitment, such as one shift a week, which you agree with the volunteer manager, and some places offer one-off days.
+  - q: How do I apply to volunteer with the National Trust?
+    a: Search the myvolunteering website, complete the application for the role you want, and the local team will usually invite you for a visit and a chat. Some roles have an open day or an interview instead.
+  - q: Is there an age limit for National Trust volunteering?
+    a: The Trust says there is no general age limit. Under-18s need permission from a parent or guardian, and some restrictions may apply for safeguarding reasons.
+  - q: Does the National Trust still run working holidays?
+    a: When we checked, the Trust's working holiday feature led to its general volunteering page, so search the volunteering database for anything residential. The National Trust for Scotland says it cannot
+      offer its Thistle Camps at present.
+  sources:
+  - label: National Trust, Volunteer with us
+    url: https://www.nationaltrust.org.uk/support-us/volunteer/volunteer-with-us
+    checked: '2026-11-21'
+  - label: National Trust, Ways to volunteer
+    url: https://www.nationaltrust.org.uk/ways-to-volunteer
+    checked: '2026-11-21'
+  - label: National Trust, Frequently asked questions on volunteering
+    url: https://www.nationaltrust.org.uk/support-us/volunteer/frequently-asked-questions-on-volunteering
+    checked: '2026-11-21'
+  - label: National Trust, A day in the life of a working holiday group (now leads to general volunteering content)
+    url: https://www.nationaltrust.org.uk/features/a-day-in-the-life-of-a-working-holiday-group
+    checked: '2026-11-21'
+  - label: National Trust for Scotland, Volunteer FAQs
+    url: https://www.nts.org.uk/support-us/get-involved/find-a-volunteering-opportunity/volunteer-faq
+    checked: '2026-11-21'
+  - label: English Heritage, Why volunteer with us
+    url: https://www.english-heritage.org.uk/support-us/Volunteer/Why-Volunteer-with-us
+    checked: '2026-11-21'
+  - label: Canal & River Trust, Ways to volunteer
+    url: https://canalrivertrust.org.uk/volunteer/ways-to-volunteer
+    checked: '2026-11-21'
+  - label: National Park Service, Become a volunteer
+    url: https://www.nps.gov/subjects/volunteer/become.htm
+    checked: '2026-11-21'
+  related:
+  - volunteer-us-national-park
+  - wildlife-trust-volunteer
+  - volunteer-at-a-museum
+  - volunteer-lock-keeper
   kit:
   - name: Book on country houses
     why: background on the history behind the ropes
@@ -10063,17 +10368,173 @@
   company: others
   regions:
   - uk
+  - us
+  - world
   why: A Shed is a shared workshop where people make and mend things side by side, and conversation happens over the workbench. You do not need tools, a project or any skill to walk in.
   start:
   - Use the UK Men's Sheds Association map to find the nearest Shed.
-  - Ring or email to ask which sessions suit a first visit.
-  - Go once with no plan beyond a cup of tea and a look round.
+  - Ring or email to ask which sessions suit a first visit, and whether the Shed welcomes women if that matters to you.
+  - Go once with no plan beyond a cup of tea and a look round, and ask about membership only if you want to come back.
   links:
   - label: 'UK Men''s Sheds Association: find a Shed'
     url: https://menssheds.org.uk/find-a-shed/
     region: uk
     checked: '2026-10-06'
+  - label: 'UK Men''s Sheds Association: questions and answers'
+    url: https://menssheds.org.uk/faq/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'UK Men''s Sheds Association: register or start a Shed'
+    url: https://menssheds.org.uk/start-a-shed/
+    region: uk
+    checked: '2026-11-21'
+  - label: Scottish Men's Sheds Association
+    url: https://scottishmsa.org.uk/what-is-a-mens-shed/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'AARP: U.S. Men Are Gathering in Aussie-Style ''Sheds'''
+    url: https://www.aarp.org/livable-communities/livable-in-action/info-2019/mens-sheds-in-us.html
+    region: us
+    checked: '2026-11-21'
+  - label: Irish Men's Sheds Association
+    url: https://menssheds.ie/what-goes-on-in-a-mens-shed/
+    region: any
+    checked: '2026-11-21'
+  - label: Australian Men's Shed Association
+    url: https://mensshed.org/about-amsa/
+    region: any
+    checked: '2026-11-21'
   guide: mens-sheds-walking-groups-and-clubs
+  seo_title: What is a Men's Shed? How to find and join one near you
+  description: What happens at a Men's Shed, what it costs, whether women can join, what a first visit is like, and how Sheds work in the UK, Ireland, US and Australia.
+  detail:
+  - h: What a Shed is really like
+    p:
+    - The UK Men's Sheds Association describes a Shed as a bit like a garden shed, a place to pursue practical interests at leisure, except that it is shared. Woodworking, metalworking, repairing and restoring,
+      and electronics are the usual activities, and many Sheds take on local work such as restoring village features or looking after parks.
+    - The making is only half of it. The association puts the weight on social connections, friendship, sharing skills and knowledge, and, in its words, a lot of laughter. A Shed is often not a shed at
+      all, and some start as a group that meets regularly with no premises; the association counts the group, not the building, as the Shed.
+  - h: Your first visit
+    p:
+    - The association says most Sheds welcome visitors and do not charge for a visit, but suggests you get in touch first. Frome Men's Shed in Somerset, for example, invites visitors on Thursdays from 9am
+      to 1pm to see what members are working on before deciding whether to join.
+    - If you do join, expect a short form and some safety rules. Waterlooville Men's Shed in Hampshire takes a photograph for its membership board, trains members on the equipment and keeps some machines
+      plug-locked until you have been trained, and asks everyone to follow its health and safety policy.
+  - h: Can women join?
+    p:
+    - It depends on the Shed. The UK association says it is down to each Shed whether it invites women or runs separate days for them, and estimates that 30% to 40% of Sheds include women. The Scottish
+      Men's Sheds Association, by contrast, defines a Shed as a single-gendered space for men aged 18 and over.
+    - Waterlooville Men's Shed answers the question "Theoretically yes", while noting its members are mostly retired men. Frome Men's Shed opens membership to everyone over 18 and has a separate Women's
+      Shed. In the US, AARP reported that the Honolulu Men's Shed had several women members. Ask the Shed you are thinking of visiting.
+  - h: What it costs
+    p:
+    - The UK association found average annual membership was £25, ranging from nothing to £100, with session fees from nothing to £5. Individual Sheds set their own.
+    table:
+      head:
+      - Shed
+      - Membership (as last listed)
+      - Per session (as last listed)
+      rows:
+      - - UK average (UK Men's Sheds Association)
+        - £25 a year (range £0 to £100)
+        - £0 to £5
+      - - Frome Men's Shed, Somerset
+        - £10 a year
+        - £5, pay what you can
+      - - Waterlooville Men's Shed, Hampshire
+        - £50 a year (pro rata if you join mid-year)
+        - 30p towards tea and coffee
+  - h: Sheds around the world
+    table:
+      head:
+      - Where
+      - National body
+      - What it says
+      rows:
+      - - England, Wales and Northern Ireland
+        - UK Men's Sheds Association
+        - About 1,100 Sheds across the UK as of March 2024 (its own figure); whether women join is up to each Shed
+      - - Scotland
+        - Scottish Men's Sheds Association
+        - A single-gendered space for men aged 18 and over
+      - - Ireland
+        - Irish Men's Sheds Association
+        - Over 450 Sheds registered; the first Irish Shed opened in Tipperary in 2009
+      - - United States
+        - US Men's Sheds Association (formed 2017)
+        - More than a dozen Sheds in eight states at the start of 2019 (AARP)
+      - - Australia
+        - Australian Men's Shed Association (set up 2007)
+        - National service provider to more than 1,300 Sheds
+    after: The Irish association says its movement was inspired by the Men's Shed movement in Australia, where Sheds developed in many areas over a number of years. Counts are each body's own and date quickly,
+      so use the national map to see what is open near you now.
+  - h: Starting a Shed
+    list:
+    - Check there is not already a Shed nearby; the UK association's map is the place to look.
+    - Gather a group first. Many Sheds start with no premises and simply meet regularly.
+    - Talk to the UK association, whose staff and volunteer Ambassadors (people who have run their own Sheds) give one-to-one advice, and to your local voluntary sector support body or council community
+      development staff.
+    - Download the association's Men's Sheds Toolkit; registered Sheds also get its Starting a Shed guide and health and safety templates.
+    - Register the Shed. You can register with or without joining; membership was listed at £30 a year, with a free first year for new registrants, and includes support with insurance, risk management and
+      fundraising.
+  faq:
+  - q: What is a Men's Shed?
+    a: A shared community workshop where people make, mend and restore things together, with as much emphasis on friendship and conversation as on the projects. Some have no building and meet as a group.
+  - q: Can women join a Men's Shed?
+    a: It depends on the Shed. The UK Men's Sheds Association says each Shed decides and estimates that 30% to 40% include women, while the Scottish association defines Sheds as spaces for men only.
+  - q: How much does a Men's Shed cost?
+    a: The UK association found an average of £25 a year, ranging from nothing to £100, with session fees from nothing to £5. Most Sheds do not charge for a first visit.
+  - q: Do I need woodworking skills?
+    a: No. Sheds share skills between members, and those with machinery train you before you use it; Waterlooville Men's Shed keeps some machines locked until you have been trained.
+  - q: Can I just turn up at a Men's Shed?
+    a: Most Sheds welcome visitors, but the UK association suggests contacting the Shed before you go so you arrive at a good time.
+  - q: How do I start a Men's Shed?
+    a: Gather a group, then contact the UK Men's Sheds Association for one-to-one advice; it offers a Men's Sheds Toolkit to download and a Starting a Shed guide for registered Sheds. You do not need premises
+      to begin.
+  sources:
+  - label: UK Men's Sheds Association, What is a Men's Shed?
+    url: https://menssheds.org.uk/about/what-is-a-mens-shed/
+    checked: '2026-11-21'
+  - label: UK Men's Sheds Association, FAQ (women, costs, visiting, number of Sheds)
+    url: https://menssheds.org.uk/faq/
+    checked: '2026-11-21'
+  - label: UK Men's Sheds Association, Sheds (groups without premises)
+    url: https://menssheds.org.uk/sheds/
+    checked: '2026-11-21'
+  - label: UK Men's Sheds Association, Register Your Shed (membership, support)
+    url: https://menssheds.org.uk/start-a-shed/
+    checked: '2026-11-21'
+  - label: Frome Men's Shed, How to join
+    url: https://www.hugofox.com/community/frome-shed-12888/how-to-join/
+    checked: '2026-11-21'
+  - label: Waterlooville Men's Shed, Membership
+    url: https://www.hugofox.com/community/waterlooville-men-s-shed-13618/membership/
+    checked: '2026-11-21'
+  - label: Scottish Men's Sheds Association, What is a Men's Shed?
+    url: https://scottishmsa.org.uk/what-is-a-mens-shed/
+    checked: '2026-11-21'
+  - label: Irish Men's Sheds Association, What goes on in a Men's Shed
+    url: https://menssheds.ie/what-goes-on-in-a-mens-shed/
+    checked: '2026-11-21'
+  - label: AARP, U.S. Men Are Gathering in Aussie-Style 'Sheds' (2019)
+    url: https://www.aarp.org/livable-communities/livable-in-action/info-2019/mens-sheds-in-us.html
+    checked: '2026-11-21'
+  - label: Australian Men's Shed Association, About AMSA
+    url: https://mensshed.org/about-amsa/
+    checked: '2026-11-21'
+  inspire:
+  - kind: read
+    person: Mike Jenn
+    line: Started a Men's Shed in Camden Town, north London, in 2012 to show a Shed need not cost tens of thousands of pounds, then called the meeting of 26 groups that became the UK Men's Sheds Association.
+    title: 'Changemakers: Mike Jenn is helping men to shed inhibitions'
+    outlet: The Big Issue
+    url: https://bigissue.com/latest/changemakers-mike-jenn-is-helping-men-to-shed-inhibitions
+    checked: '2026-11-21'
+  related:
+  - mend-at-a-repair-cafe
+  - learn-woodworking
+  - join-a-woodturning-club
+  - carve-a-wooden-spoon
   kit:
   - name: Work apron
     why: with pockets for pencils and small tools
@@ -16616,11 +17077,13 @@
   company: others
   regions:
   - uk
-  why: Contour lines turn into hills and valleys in your head once you have practised matching the paper to the ground, and a compass bearing will take you across open country with no path at all. The National Navigation Award Scheme teaches this in three steps, from following paths and walls to finding small features by the shape of the land.
+  - us
+  why: Contour lines turn into hills and valleys in your head once you have practised matching the paper to the ground, and a compass bearing will take you across open country with no path at all. The National
+    Navigation Award Scheme teaches this in three steps, from following paths and walls to finding small features by the shape of the land.
   start:
   - Work through Ordnance Survey's free beginner guides to map symbols, contour lines, grid references and using a compass.
-  - Use the Find a Course page on the National Navigation Award Scheme website to book a Bronze Navigator Award course near you.
-  - Buy the Ordnance Survey Explorer map for your home area and a baseplate compass, and plan and follow a short walk with them.
+  - Book a Bronze Navigator Award course with a provider listed by the National Navigation Award Scheme, or in the US a map and compass class at REI.
+  - Buy the Ordnance Survey Explorer map for your home area and a baseplate compass, and plan and follow a short walk with them, or try a permanent orienteering course.
   links:
   - label: National Navigation Award Scheme, Navigator Award (Bronze, Silver and Gold)
     url: https://nnas.org.uk/navigator-award/
@@ -16630,6 +17093,124 @@
     url: https://osmaps.com/discover/guides/beginners-guides-map-reading/
     region: uk
     checked: '2026-10-07'
+  - label: 'Ordnance Survey: A Beginner''s Guide to Using a Compass'
+    url: https://osmaps.com/discover/guides/beginners-guide-to-using-a-compass/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'British Orienteering: find a permanent orienteering course'
+    url: https://www.britishorienteering.org.uk/permanent_orienteering_courses
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Active Outdoor Pursuits, Newtonmore: NNAS courses'
+    url: https://www.activeoutdoorpursuits.com/bookings/ngb-outdoor-courses/walking-climbing-courses-qualifications/national-navigation-award-scheme/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'REI: Intro to Map & Compass Navigation classes'
+    url: https://www.rei.com/events/49378/intro-to-map-compass-navigation
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'How to use a map and compass: courses and free practice'
+  description: What a navigation course teaches, the NNAS Bronze, Silver and Gold awards compared with prices, free ways to practise, and US map and compass classes.
+  detail:
+  - h: What you actually learn
+    p:
+    - The core is putting map and compass together. You learn to read a topographic map, including what contour lines say about the shape of the land, to give and find grid references, and to take a bearing
+      from the map and follow it on the ground. Ordnance Survey's method is to line up your start and end points along the edge of the compass, turn the housing until its orienting lines match the map's
+      north-south grid lines, and then follow the direction-of-travel arrow.
+    - Then you learn to find yourself when you are unsure. Ordnance Survey describes using transit lines, where two features line up, a bearing to a feature you can see, and taking bearings to three features
+      spread well apart so the lines cross in a small triangle that contains your position. These all need some visibility; in fog, cloud, snow or darkness, Ordnance Survey says you will need other methods.
+  - h: The three Navigator Awards
+    p:
+    - In the UK the National Navigation Award Scheme (NNAS) runs three personal awards. Each level needs 12 hours of contact time, which can be run over two days or spread over a longer period, and they
+      sit on the Scottish Credit and Qualifications Framework at levels 4, 5 and 6.
+    table:
+      head:
+      - Award
+      - What it covers
+      - Course length
+      - Cost at Active Outdoor Pursuits, Newtonmore (as last listed)
+      rows:
+      - - Bronze
+        - Navigating on paths, tracks and other linear features; basic map reading and compass work
+        - 2 days of training and assessment
+        - £150
+      - - Silver
+        - Navigating to features and places away from paths and tracks; accurate compass work and choosing techniques for open country
+        - 2 days of training and assessment
+        - £160
+      - - Gold
+        - Complex contour features large and small; remote mountain navigation in poor weather
+        - 2 days of training and assessment, with pre- and post-course papers
+        - Not listed on the page; ask the provider
+    after: Bronze matches the navigation needed for a Bronze Duke of Edinburgh's Award expedition, and Silver covers Silver and most Gold expeditions. Prices vary between providers, so compare a few near
+      you.
+  - h: Magnetic variation, simply
+    p:
+    - A compass points to magnetic north, which is not quite the same as grid north on the map. Ordnance Survey says that for most beginner walks in the UK you can ignore the difference, which it put at
+      between -1° and 4° across Great Britain.
+    - When you do adjust, use the figure printed in your map's key. Ordnance Survey's rule is to turn the compass housing anticlockwise to add a positive variation and clockwise to subtract a negative one.
+      In the US, REI's introductory class covers magnetic north, true north and variation.
+  - h: Free and low-cost ways to practise
+    list:
+    - 'Ordnance Survey''s free online guides: map reading, grid references, contours and using a compass.'
+    - British Orienteering's permanent orienteering courses, from city centres to countryside, which you can go round at a time that suits you; colour coding shows the level of challenge.
+    - Your local Explorer map and a baseplate compass on a walk you already know, so a mistake costs you nothing.
+    - In the US, REI's Map and Compass Navigation Workshop, a two-hour class held outdoors in small groups, was listed at $30 for members and $60 for non-members at its Timonium, Maryland store.
+  - h: The honest hard parts
+    p:
+    - Following a bearing in good weather is easy; trusting it in mist, when the ground looks wrong, is not. That is why the Gold award is about poor weather and why a phone alone is not enough. Ordnance
+      Survey notes that GPS and mapping apps are useful but can fail because of battery life or signal, and that a compass works anywhere.
+    - In a Mountaineering Scotland survey of about 4,000 hill users, 40% of those who navigated with an electronic device said it had stopped working in some way; the resulting advice is to have another
+      way to navigate, such as a map and compass, and the ability to use them.
+  faq:
+  - q: How long does it take to learn map and compass?
+    a: Each National Navigation Award Scheme level needs 12 hours of contact time, which can be run over two days or spread over a longer period. Real confidence comes from practising on your own walks
+      afterwards.
+  - q: How much is a navigation course?
+    a: Active Outdoor Pursuits in Newtonmore listed Bronze at £150 and Silver at £160 for two days. In the US, an REI two-hour workshop was listed at $30 for members and $60 for non-members.
+  - q: What is the difference between NNAS Bronze, Silver and Gold?
+    a: Bronze teaches navigating along paths and other linear features, Silver adds finding places away from paths with accurate compass work, and Gold covers complex contour features and remote navigation
+      in poor weather.
+  - q: Do I need to worry about magnetic variation in the UK?
+    a: Ordnance Survey says that for most beginner walks in the UK you can ignore it, as it is only a few degrees. Use the figure in your map's key when you need precision.
+  - q: Can I just use my phone to navigate?
+    a: Ordnance Survey says technology can fail because of battery life or signal, and a compass works anywhere. Use a phone as well as a map and compass, not instead of them.
+  - q: Where can I practise navigation for free?
+    a: Ordnance Survey's online guides are free, and British Orienteering lists permanent orienteering courses you can go round whenever suits you.
+  safety: Practise on familiar, low ground before relying on these skills in the hills; in a UK emergency call 999 and ask for Police, then Mountain Rescue, and give a grid reference if you can.
+  sources:
+  - label: Ordnance Survey, A Beginner's Guide to Using a Compass (bearings, magnetic variation, phones)
+    url: https://osmaps.com/discover/guides/beginners-guide-to-using-a-compass/
+    checked: '2026-11-21'
+  - label: Ordnance Survey, Advanced guide to finding your exact location (transit lines, resection)
+    url: https://osmaps.com/discover/guides/navigation-pinpointing-your-location/
+    checked: '2026-11-21'
+  - label: SCQF, Is that on the SCQF? National Navigation Award Scheme (levels, contact time)
+    url: https://scqf.org.uk/news-and-blog/is-that-on-the-scqf-national-navigation-award-scheme-nnas/
+    checked: '2026-11-21'
+  - label: Active Outdoor Pursuits, National Navigation Award Scheme (syllabus, length, prices)
+    url: https://www.activeoutdoorpursuits.com/bookings/ngb-outdoor-courses/walking-climbing-courses-qualifications/national-navigation-award-scheme/
+    checked: '2026-11-21'
+  - label: British Orienteering, Find courses (permanent orienteering courses)
+    url: https://www.britishorienteering.org.uk/permanent_orienteering_courses
+    checked: '2026-11-21'
+  - label: REI, Intro to Map & Compass Navigation
+    url: https://www.rei.com/events/49378/intro-to-map-compass-navigation
+    checked: '2026-11-21'
+  - label: REI, Map & Compass Navigation Workshop, Timonium (length, price)
+    url: https://www.rei.com/events/99570/map-compass-navigation-workshop/a02cw00000bAQK6AAO
+    checked: '2026-11-21'
+  - label: Mountaineering Scotland (on the MWIS blog), Using your mobile phone for navigation in the hills?
+    url: https://mwis.org.uk/blog/post/using-phone-nav-hils
+    checked: '2026-11-21'
+  - label: Arrochar Mountain Rescue Team, advice (calling 999)
+    url: https://arrocharmrt.org.uk/advice.html
+    checked: '2026-11-21'
+  related:
+  - orienteering-course
+  - climb-ben-nevis
+  - walk-yorkshire-three-peaks
+  - climb-yr-wyddfa
   kit:
   - name: Baseplate compass
     why: the kind used with a paper map; learn it before you rely on it
@@ -106125,3 +106706,1328 @@
   - train-as-a-tourist-guide
   - test-drive-a-new-career
   - start-a-small-business
+- id: learn-kumihimo
+  title: Learn kumihimo, Japanese braiding
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Kumihimo turns a handful of threads into a round or flat cord by moving them in a set sequence, traditionally on a wooden stand called a marudai, and the patterns appear as you go. You can start
+    on a simple braiding disk or card loom at a kitchen table and make a bracelet, keyring or cord on your first day.
+  start:
+  - Look at the Braid Society's events page for a Come and Try Day or kumihimo workshop near you, or its tutors list for a teacher.
+  - If there is nothing nearby, book a one-day class that supplies the equipment, such as a card-loom or disk workshop.
+  - Make a short round cord first, then try a second pattern before buying a marudai.
+  links:
+  - label: 'The Braid Society: other events, including Come and Try Days'
+    url: https://thebraidsociety.wildapricot.org/Other-Events
+    region: uk
+    checked: '2026-11-21'
+  - label: 'The Braid Society: tutors'
+    url: https://thebraidsociety.wildapricot.org/Tutors
+    region: any
+    checked: '2026-11-21'
+  - label: 'Totally Textiles: Kumihimo, the art of Japanese braid making (West Sussex)'
+    url: https://www.craftcourses.com/bookings/dates?c=14378
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Morikami Museum and Japanese Gardens: Introduction to Kumihimo (Florida)'
+    url: https://morikami.org/event/guest-artist-workshop-kumihimo/
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Kumihimo for beginners: classes, disks and marudai'
+  description: How to start kumihimo, Japanese braiding, on a disk, card loom or marudai, with UK and US classes, Braid Society taster days and costs as last listed.
+  detail:
+  - h: What it is and how you start
+    p:
+    - Kumihimo is a traditional Japanese braiding technique. Totally Textiles notes that it is traditionally worked on a wooden loom called a marudai with fine silks; its beginners' class uses a card loom
+      with wool and cotton yarns instead, and Morikami's introduction uses a braiding disk to make a round cord for a keychain, bracelet or phone strap.
+    - The Braid Society, founded in 1993, promotes the making of braids and narrow bands and is open to anyone interested. It runs study days, workshops and Try Braiding days at places around the UK, publishes
+      an annual journal, Strands, and its Begin Braiding pages include kumihimo on a plate.
+    - Its tutors list includes kumihimo teachers in London, Devon, Shropshire, Leicestershire and Derbyshire, and in Florida and British Columbia, teaching on disks, plates and marudai. The Society says
+      it does not necessarily recommend those listed, so contact them directly.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Come and Try Day, The Memorial Hall, Aldbourne, Wiltshire (Braid Society listing)
+        - Day event, 10am to 4pm; the Society says its Try Braiding days are run by members and open to everyone
+        - £8, including tea, coffee, soft drinks and home-made cakes
+      - - Totally Textiles, Stedham, West Sussex
+        - Six-hour introduction on a card loom with wool and cotton; all equipment included; dates by arrangement
+        - £75
+      - - Morikami Museum and Japanese Gardens, Delray Beach, Florida
+        - 90-minute introduction making a round cord on a braiding disk; adults and teens 15 and over
+        - $55, plus a $20 material fee paid in cash to the instructor
+      - - A Braid Society tutor
+        - One-to-one, small group or day workshops on disk, plate or marudai, by arrangement
+        - Agree directly with the tutor
+    after: The Braid Society also lists an online Braid and Banter social chat. West Dean College in West Sussex runs a residential or non-residential short course, Kumihimo – Japanese braidmaking with
+      Jacqui Carey, covering equipment, warp threads, braiding sequences and pattern design; check its site for dates and fees.
+  faq:
+  - q: Do I need a marudai to learn kumihimo?
+    a: No. Beginners' classes often use a braiding disk or card loom; the marudai is the traditional wooden stand.
+  - q: Where can I learn kumihimo in the UK?
+    a: The Braid Society lists Come and Try Days and a tutors list, and craft schools such as Totally Textiles and West Dean College run kumihimo courses.
+  - q: What can you make with kumihimo?
+    a: Round cords for bracelets, keyrings and phone straps are typical first projects.
+  - q: Is there a kumihimo group I can join?
+    a: The Braid Society is open to anyone interested in braids and bands, with members in the UK and many other countries.
+  sources:
+  - label: The Braid Society, home page
+    url: https://thebraidsociety.wildapricot.org/
+    checked: '2026-11-21'
+  - label: The Braid Society, Other Events
+    url: https://thebraidsociety.wildapricot.org/Other-Events
+    checked: '2026-11-21'
+  - label: The Braid Society, Tutors
+    url: https://thebraidsociety.wildapricot.org/Tutors
+    checked: '2026-11-21'
+  - label: Craft Courses, Kumihimo – the art of Japanese braid making (Totally Textiles)
+    url: https://www.craftcourses.com/bookings/dates?c=14378
+    checked: '2026-11-21'
+  - label: Morikami Museum and Japanese Gardens, Introduction to Kumihimo
+    url: https://morikami.org/event/guest-artist-workshop-kumihimo/
+    checked: '2026-11-21'
+  - label: West Dean College, Kumihimo – Japanese braidmaking with Jacqui Carey
+    url: https://www.westdean.ac.uk/short-courses/s3d38000-kumihimo-japanese-braidmaking
+    checked: '2026-11-21'
+  kit:
+  - name: Kumihimo braiding disk
+    why: a foam disk with slots that holds the threads in order as you braid
+    url: https://www.amazon.co.uk/s?k=kumihimo+braiding+disk
+  - name: Embroidery thread or satin cord
+    why: threads for your first round and flat braids
+    url: https://www.amazon.co.uk/s?k=kumihimo+cord+satin
+  - name: Kumihimo bobbins
+    why: wind the long threads so they do not tangle
+    url: https://www.amazon.co.uk/s?k=kumihimo+bobbins
+  related:
+  - learn-macrame
+  - learn-sashiko
+  - learn-to-weave-on-a-loom
+  - learn-ropework-and-knots
+- id: learn-japanese-calligraphy
+  title: Learn shodō, Japanese calligraphy
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Shodō is writing Japanese characters with a brush and ink you grind yourself on an inkstone, so the ritual of preparing the ink is part of the lesson. Beginners' workshops in London, New York and
+    Florida supply the tools, and some send you home with a finished piece.
+  start:
+  - Book a beginners' shodō workshop that provides the tools, such as those at the Japan Society in London or New York, or check the Japan-UK Events Calendar for others.
+  - Ask whether you need any Japanese; some courses expect basic kana and kanji, while beginners' workshops do not.
+  - Wear dark clothes, as ink stains, and buy a pad of practice paper before you practise at home.
+  links:
+  - label: 'Japan Society (London): Writing the Seasons calligraphy workshop, on the Japan-UK Events Calendar'
+    url: https://www.uk.emb-japan.go.jp/JAPANUKEvent/event/2026/202605/16-JS-WritingtheSeasons.html
+    region: uk
+    checked: '2026-11-21'
+  - label: 'City Lit: Japanese calligraphy, Shodo part 1 (London)'
+    url: https://www.citylit.ac.uk/courses/japanese-calligraphy-shodo-part-1-peace-and-harmony
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Japan Society (New York): Shodo courses'
+    url: https://japansociety.org/language-center/calligraphy
+    region: us
+    checked: '2026-11-21'
+  - label: 'Morikami Museum and Japanese Gardens: Shodo workshop for beginners (Florida)'
+    url: https://morikami.org/?p=23302
+    region: us
+    checked: '2026-11-21'
+  seo_title: Japanese calligraphy (shodo) classes for beginners
+  description: Where to learn shodō, Japanese brush calligraphy, in the UK and US, what the brush, ink stick, inkstone and paper are for, and what classes cost.
+  detail:
+  - h: What you use and how it differs
+    p:
+    - 'Web Japan, run by Japan''s Ministry of Foreign Affairs, lists the tools: fude (brush), sumi (an ink stick rubbed on the suzuri, or inkstone, with water; the ink gets darker the more you rub), bokuju
+      (ready-made liquid ink), hanshi (paper, usually washi), a shitajiki (soft pad under the paper) and a bunchin (metal paperweight). It advises sitting up straight and holding the brush more upright
+      than a pencil.'
+    - City Lit describes its course as practising basic shodō technique with a brush, following a ritual that starts by relaxing your mind and then grinding ink, and covering stroke order and brush control.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Japan Society, London
+        - 75-minute beginner-friendly workshop writing seasonal phrases on an uchiwa fan; all tools provided
+        - £25, or £20 for members and their guests
+      - - City Lit, London
+        - Three-hour one-off class; brush and grinding palette provided, you buy the paper; for people with some basic knowledge of kana and kanji
+        - £49
+      - - Japan Society, New York
+        - Shodo workshop for beginners, 1 hour 45 minutes; supplies provided; no Japanese needed; adults 18 and over
+        - $42, or $35 for members
+      - - Morikami Museum and Japanese Gardens, Delray Beach, Florida
+        - 90-minute beginners' workshop with sumi ink, brush and practice paper, finishing on a shikishi board
+        - $45, including a $5 material fee
+    after: Japan Society New York also lists in-person and online shodō courses for beginners and experienced learners, with the online courses built on home practice, instructor demonstration and dialogue.
+      City Lit asks students to buy Japanese calligraphy paper of about 34 by 24.5 cm (about 13.4 by 9.6 in) and to bring newspaper, a small hand towel and a round stone or pebble 8 to 15 cm across.
+  faq:
+  - q: Do I need to know Japanese to learn shodo?
+    a: Not for a beginners' workshop; Japan Society New York says no Japanese is required. Some courses, such as City Lit's, expect basic kana and kanji.
+  - q: What do you need for Japanese calligraphy?
+    a: A brush, an ink stick and inkstone or ready-made liquid ink, paper, a soft pad to go under the paper and a paperweight.
+  - q: Is shodo the same as Chinese calligraphy?
+    a: Both use brush and ink. Shodō is the Japanese practice, writing kanji and the Japanese kana scripts.
+  - q: How much is a Japanese calligraphy class?
+    a: As last listed, beginners' workshops cost £25 at the Japan Society in London and $42 at Japan Society New York for non-members.
+  sources:
+  - label: Web Japan (Ministry of Foreign Affairs of Japan), Shodo posture and implements
+    url: https://web-japan.org/kidsweb/virtual/shodo/shodo02.html
+    checked: '2026-11-21'
+  - label: Embassy of Japan in the UK, Japan-UK Events Calendar, Writing the Seasons (Japan Society)
+    url: https://www.uk.emb-japan.go.jp/JAPANUKEvent/event/2026/202605/16-JS-WritingtheSeasons.html
+    checked: '2026-11-21'
+  - label: City Lit, Japanese calligraphy, Shodo part 1
+    url: https://www.citylit.ac.uk/courses/japanese-calligraphy-shodo-part-1-peace-and-harmony
+    checked: '2026-11-21'
+  - label: Japan Society New York, Shodo (Japanese Calligraphy)
+    url: https://japansociety.org/language-center/calligraphy
+    checked: '2026-11-21'
+  - label: Japan Society New York, Fall Shodo Workshop for Beginners (PDF)
+    url: https://japansociety.org/wp-content/uploads/2025/10/2025-Fall-Shodo-Workshop-for-Beginners-as-of-9-23-25.pdf
+    checked: '2026-11-21'
+  - label: Morikami Museum and Japanese Gardens, Japanese Calligraphy (Shodo) Workshop for Beginners
+    url: https://morikami.org/?p=23302
+    checked: '2026-11-21'
+  kit:
+  - name: Japanese calligraphy set
+    why: brush, ink stick, inkstone and paperweight for practice at home
+    url: https://www.amazon.co.uk/s?k=japanese+calligraphy+set+shodo
+  - name: Hanshi practice paper
+    why: thin paper sized for shodō practice
+    url: https://www.amazon.co.uk/s?k=hanshi+calligraphy+paper
+  - name: Felt shitajiki
+    why: the soft pad that goes under the paper
+    url: https://www.amazon.co.uk/s?k=shitajiki+calligraphy+felt
+  related:
+  - learn-calligraphy
+  - learn-chinese-brush-painting
+  - learn-the-japanese-tea-ceremony
+  - learn-ikebana
+- id: learn-ropework-and-knots
+  title: Learn knots, splicing and decorative ropework
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A handful of knots, the bowline, clove hitch, figure of eight, reef knot and sheet bend, does most of the work on a boat, and splicing and whipping let you finish a rope properly. Beyond that lies
+    fancy knotwork, and the International Guild of Knot Tyers has local branches that meet in pubs, clubs and on Zoom.
+  start:
+  - Learn the six beginner knots in UKSA's guide with a length of practice rope until you can tie them without looking.
+  - Find an IGKT branch near you, or a Zoom meeting, on the Guild's branch meetings page.
+  - Book a ropework day at a boating charity, sailing club or maritime museum to learn splicing and whipping hands-on.
+  links:
+  - label: 'International Guild of Knot Tyers: branch meetings (UK and North America)'
+    url: https://igkt.net/branches-2/branch-meetings
+    region: any
+    checked: '2026-11-21'
+  - label: 'UKSA: sailing knots for beginners'
+    url: https://uksa.org/news-and-guides/sailing-knots-for-beginners-guide/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'The Pirate Castle: Knot Ready ropework course'
+    url: https://thepiratecastle.org/news/labore-et-dolore-magna/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Herreshoff Marine Museum: Introduction to Marlinspike Seamanship (Rhode Island)'
+    url: https://herreshoff.org/event_calendar/introduction-to-marlinspike-seamanship
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Learn knots and rope splicing: courses and clubs'
+  description: The knots every sailor learns, where to learn splicing and whipping in the UK and US, and how to join the International Guild of Knot Tyers.
+  detail:
+  - h: The knots and the Guild
+    list:
+    - 'Bowline: a strong fixed loop that holds under strain.'
+    - 'Clove hitch: ties a line to a post, pole or another line for a while, often for fenders or docking.'
+    - 'Figure of eight: a stopper knot so a line cannot slip through a block or fitting.'
+    - 'Reef knot: joins two lines of the same size, as when reefing sails.'
+    - 'Sheet bend: joins two lines of different sizes or materials.'
+    - 'Cleat hitch: secures a line to a cleat on a boat, for docking, anchoring and mooring.'
+    after: These are the six beginner knots in a guide from UKSA (UK Sailing Academy), a registered charity. The International Guild of Knot Tyers, a UK charity, works to further practical, recreational
+      and theoretical knotting and publishes a quarterly newsletter, Knotting Matters. UK branches meet in Dorset, East Anglia, the Midlands, North West England, the Solent, near Bristol and Yorkshire;
+      in North America there is a monthly Zoom meeting, Rope Yarn Wednesday, an Alaskan branch in Anchorage and a Pacific Americas branch on Zoom. Adult membership is £26 a year and family membership £30,
+      as last listed.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - IGKT local branch
+        - Regular meetings in pubs, clubs and community venues, or on Zoom; contact the branch first
+        - Guild membership £26 a year for adults
+      - - The Pirate Castle
+        - Knot Ready day course; 12 important knots, splicing, whipping, rope handling and mooring safety; 2 to 6 trainees; also open to non-boaters
+        - £110 per person
+      - - Little Ship Club
+        - Basic ropework, six hours over three evenings, from coiling to splicing rope to chain; handbook and practice bosun's bag included
+        - See the club's site
+      - - Herreshoff Marine Museum, Bristol, Rhode Island
+        - 90-minute workshop in traditional splicing, whipping and rope grommets with three-strand line; adults 18 and over
+        - $75, or $60 for museum members; materials and admission included
+    after: National Historic Ships UK's Shipshape listings also include a two-day splicing and ropework course covering a range of splices and whippings on traditional three-strand rope and over 30 practical
+      and decorative knots.
+  faq:
+  - q: What knots should a beginner sailor learn?
+    a: UKSA's beginners' guide lists the bowline, clove hitch, figure of eight, reef knot, sheet bend and cleat hitch.
+  - q: Is there a club for knot tying?
+    a: Yes. The International Guild of Knot Tyers has UK local branches and North American branches, including meetings on Zoom.
+  - q: Where can I learn rope splicing?
+    a: Boating charities, sailing clubs and maritime museums run courses, such as The Pirate Castle's Knot Ready day and Herreshoff Marine Museum's marlinspike workshop.
+  - q: How much does it cost to join the IGKT?
+    a: As last listed, £26 a year for adults and £30 for a family.
+  sources:
+  - label: International Guild of Knot Tyers, About
+    url: https://igkt.net/about
+    checked: '2026-11-21'
+  - label: International Guild of Knot Tyers, National Organisations and UK Local Branches
+    url: https://igkt.net/branches-2/branch-meetings
+    checked: '2026-11-21'
+  - label: International Guild of Knot Tyers, Annual subscription rates
+    url: https://igkt.net/membership/12-annual-subscription-rates
+    checked: '2026-11-21'
+  - label: UKSA, Sailing knots for beginners
+    url: https://uksa.org/news-and-guides/sailing-knots-for-beginners-guide/
+    checked: '2026-11-21'
+  - label: The Pirate Castle, The Knot Ready Ropework Course 2026
+    url: https://thepiratecastle.org/news/labore-et-dolore-magna/
+    checked: '2026-11-21'
+  - label: Little Ship Club, Basic ropework course
+    url: https://littleshipclub.co.uk/training/lsc-basic-seamanship
+    checked: '2026-11-21'
+  - label: Herreshoff Marine Museum, Introduction to Marlinspike Seamanship
+    url: https://herreshoff.org/event_calendar/introduction-to-marlinspike-seamanship
+    checked: '2026-11-21'
+  - label: 'National Historic Ships UK, Course: Splicing and Ropework'
+    url: https://nationalhistoricships.org.uk/event/shipshape/course-splicing-and-ropework
+    checked: '2026-11-21'
+  kit:
+  - name: Three-strand practice rope
+    why: for learning splices and whippings
+    url: https://www.amazon.co.uk/s?k=three+strand+rope+10mm
+  - name: Fid and splicing tool set
+    why: opens the strands of a rope so you can tuck them when splicing
+    url: https://www.amazon.co.uk/s?k=rope+splicing+fid+set
+  - name: Whipping twine
+    why: binds rope ends so they do not fray
+    url: https://www.amazon.co.uk/s?k=whipping+twine+rope
+  related:
+  - learn-to-sail
+  - sail-on-a-tall-ship
+  - sing-sea-shanties
+  - learn-macrame
+- id: build-a-wooden-boat-on-a-course
+  title: Build a wooden boat on a course
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: days
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Boatbuilding schools run short courses where you work in a real boatshop, learning clinker and carvel planking, lofting from plans and making spars. Some week-long classes end with a small skiff
+    or dinghy you have built yourself.
+  start:
+  - Start with an introductory course, such as the Boat Building Academy's two-day Introduction to Boat Building in Lyme Regis, to learn the terms, tools and building methods.
+  - If you want to take a boat home, look for a week-long build class and check whether the boat kit or materials are charged on top of the tuition.
+  - Book early and ask about accommodation; when we checked, a WoodenBoat School class in Maine was down to its last seat.
+  links:
+  - label: 'Boat Building Academy, Lyme Regis: 1 to 10 day courses'
+    url: https://boatbuildingacademy.com/1-to-10-day-courses/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Boat Building Academy: Introduction to Boat Building'
+    url: https://boatbuildingacademy.com/product/introduction-to-boat-building/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'WoodenBoat School, Brooklin, Maine: Introduction to Boatbuilding: Skiffs & Dories'
+    url: https://woodenboatschool.coursestorm.com/course/introduction-to-boatbuilding-skiffs-dories6
+    region: us
+    checked: '2026-11-21'
+  - label: 'Northwest Maritime, Port Townsend: boatshop classes and workshops'
+    url: https://nwmaritime.org/?p=28126
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Wooden boat building courses: UK and US options'
+  description: Short wooden boatbuilding courses in the UK and US, from a two-day introduction to a week building a skiff, with course lengths and fees.
+  detail:
+  - h: What you learn on a short course
+    p:
+    - The Boat Building Academy's two-day Introduction to Boat Building covers boat terms such as draught and freeboard, the structure of a hull, traditional clinker and carvel construction, modern strip-planked
+      and cold-moulded methods, choosing timbers, adhesives and joints, lofting and moulds, and making masts and spars. Days run from 9am to 4.30pm.
+    - Longer classes put you on a single build. The Academy lists five-day courses in traditional and modern wooden boatbuilding and wooden boat restoration, and a ten-day Build a Skiff course. At WoodenBoat
+      School in Maine, one week-long class has students build a Chesapeake Light Craft kit dinghy or pram, with evening shop time expected.
+    - If you are hooked, the Boat Building Academy also runs a full-time 40-week course, five days a week.
+  - h: Courses and fees
+    table:
+      head:
+      - Where
+      - Course
+      - Cost (as last listed)
+      rows:
+      - - Boat Building Academy, Lyme Regis
+        - Introduction to Boat Building, two days
+        - £195
+      - - Boat Building Academy, Lyme Regis
+        - 40-week full-time boatbuilding course
+        - £19,450
+      - - WoodenBoat School, Brooklin, Maine
+        - Introduction to Boatbuilding, Skiffs and Dories, one week (Monday to Friday)
+        - $900 tuition
+      - - WoodenBoat School, Brooklin, Maine
+        - One-week Chesapeake Light Craft kit build (2024 class)
+        - $925 tuition, plus materials from $1,562 to $4,138 depending on the boat
+      - - Northwest Maritime, Port Townsend, Washington
+        - Adult boatshop workshops, from weekend skill classes to week-long boat builds
+        - Not listed; ask the registrar
+    after: The Boat Building Academy's course list does not show prices for its other short courses, but it offers 5% off when you book two or more. Northwest Maritime offers scholarships for people facing
+      financial barriers.
+  faq:
+  - q: Can I build my own boat on a course?
+    a: Yes, on some. A WoodenBoat School week-long class has each student build a Chesapeake Light Craft kit boat, with the kit charged as materials on top of tuition.
+  - q: How long is a boat building course?
+    a: From one day to 40 weeks. The Boat Building Academy runs one- to ten-day short courses, including a ten-day Build a Skiff course, and a full-time 40-week course.
+  - q: How much does a boat building course cost?
+    a: As last listed, the Boat Building Academy's two-day introduction costs £195 and WoodenBoat School's one-week Skiffs and Dories class costs $900 tuition. Building a kit boat to keep adds a materials
+      fee.
+  - q: Do I need woodworking experience to learn boatbuilding?
+    a: The course pages we checked do not set any experience requirement, and introductory courses start with the basic terms and tools. Ask the school if you are unsure.
+  sources:
+  - label: Boat Building Academy, Introduction to Boat Building
+    url: https://boatbuildingacademy.com/product/introduction-to-boat-building/
+    checked: '2026-11-21'
+  - label: Boat Building Academy, 1 to 10 day courses
+    url: https://boatbuildingacademy.com/1-to-10-day-courses/
+    checked: '2026-11-21'
+  - label: Boat Building Academy, boat building short courses
+    url: https://boatbuildingacademy.com/product-category/boat-building-short-courses/
+    checked: '2026-11-21'
+  - label: Boat Building Academy, 40 week boat building course
+    url: https://boatbuildingacademy.com/boat-building-courses/40-week-boat-building-course/
+    checked: '2026-11-21'
+  - label: 'WoodenBoat School, Introduction to Boatbuilding: Skiffs & Dories'
+    url: https://woodenboatschool.coursestorm.com/course/introduction-to-boatbuilding-skiffs-dories6
+    checked: '2026-11-21'
+  - label: Chesapeake Light Craft, boatbuilding class at WoodenBoat School
+    url: https://clcboats.com/boatbuilding_classes/838.html
+    checked: '2026-11-21'
+  - label: Northwest Maritime, classes and camps
+    url: https://nwmaritime.org/?p=28126
+    checked: '2026-11-21'
+  kit:
+  - name: Block plane
+    why: for shaping and fairing small pieces of timber
+    url: https://www.amazon.co.uk/s?k=block+plane
+  - name: Woodworking clamps
+    why: for holding planks and joints while glue sets
+    url: https://www.amazon.co.uk/s?k=woodworking+clamps+set
+  - name: Boatbuilding book for beginners
+    why: to read up on clinker and carvel construction before the course
+    url: https://www.amazon.co.uk/s?k=wooden+boat+building+book
+  related:
+  - learn-woodworking
+  - try-green-woodworking
+  - try-gig-rowing
+  - learn-to-sail
+- id: visit-portsmouth-historic-dockyard
+  title: See HMS Victory and the Mary Rose at Portsmouth Historic Dockyard
+  category: explore
+  kind: experience
+  groups:
+  - history
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: either
+  company: either
+  regions:
+  - uk
+  places:
+  - south-east
+  why: In one dockyard you can walk the decks of HMS Victory, where Nelson's crew served, and see the Mary Rose, a Tudor ship preserved on the seabed for almost 500 years, with thousands of 16th-century
+    objects. A ticket also covers HMS Warrior of 1860, HMS M.33 of 1915 and Royal Navy museums.
+  start:
+  - Decide how much you want to see. A one-day ticket covers one ship or museum; the annual tickets cover three or all nine attractions for 12 months.
+  - Book on the official Portsmouth Historic Dockyard site and check the opening times page for the day you go.
+  - Arrive from 10am, enter at Victory Gate, and allow about 60 to 90 minutes for HMS Victory and up to two hours for the Mary Rose Museum.
+  links:
+  - label: 'Portsmouth Historic Dockyard: buy your tickets'
+    url: https://historicdockyard.co.uk/buy-your-tickets/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Portsmouth Historic Dockyard: FAQs (opening, access, parking)'
+    url: https://historicdockyard.co.uk/faqs/
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Mary Rose Museum: tickets'
+    url: https://maryrose.org/tickets/
+    region: uk
+    checked: '2026-11-21'
+  seo_title: 'Portsmouth Historic Dockyard tickets: Victory and Mary Rose'
+  description: Ticket options and prices at Portsmouth Historic Dockyard, what each attraction is, how long to allow for HMS Victory and the Mary Rose, and access.
+  detail:
+  - h: Tickets and what they cover
+    table:
+      head:
+      - Ticket
+      - What it covers
+      - Cost (as last listed)
+      rows:
+      - - 1 Ship or Museum Day
+        - Any one of the nine attractions for one day, plus the Waterbus
+        - £36 adult (16+), £26 child (3 to 15)
+      - - 3 Ships or Museums annual
+        - Any three attractions, unlimited visits for 12 months, plus the Waterbus
+        - £46 individual (16+), £31 child (3 to 15)
+      - - Ultimate Experience annual
+        - All nine attractions, unlimited for 12 months, plus the Waterbus
+        - £51 individual (16+), £36 child, £99 one adult and up to three children, £120 two adults and up to three children
+    after: The official site says prices include no booking fees. The nine attractions are the Mary Rose Museum, HMS Victory, HMS Warrior, the Royal Marines Experience, HMS M.33, Royal Navy Museums Explosion
+      and Submarines (both in Gosport), the Royal Navy Museum and the Victory Gallery. From 4 May 2026, harbour tours are no longer included.
+  - h: How long to allow and getting around
+    p:
+    - The dockyard says to allow 60 to 90 minutes for HMS Victory and up to two hours for the Mary Rose Museum. It suggests about 90 minutes each for the Royal Navy Museum galleries and the Royal Marines
+      Experience, and about two hours at the submarine museum. Seeing everything is more than one day, which is what the annual tickets are for.
+    - The site opens at 10am, closing at 5.30pm in summer and 5pm in winter, and no timeslot is needed for general admission. The Waterbus to the Gosport attractions runs seasonally and cannot take wheelchairs
+      or mobility scooters.
+    - HMS Victory has stairs, rope banisters, low ceilings and uneven floors, with wheelchair access to the Lower Gun Deck only. HMS Warrior is boarded by a ramp whose slope changes with the tide. The Mary
+      Rose Museum is fully accessible, with lifts to all floors.
+  faq:
+  - q: How much are tickets for Portsmouth Historic Dockyard?
+    a: As last listed, a one-day ticket for one ship or museum is £36 for an adult, and the Ultimate Experience annual ticket for all nine attractions is £51.
+  - q: How long do you need at Portsmouth Historic Dockyard?
+    a: The dockyard suggests 60 to 90 minutes for HMS Victory and up to two hours for the Mary Rose Museum. Seeing all nine attractions takes more than one day.
+  - q: Is the Mary Rose included in the dockyard ticket?
+    a: Yes. The Mary Rose Museum is one of the nine attractions you can choose on every Portsmouth Historic Dockyard ticket.
+  - q: Is HMS Victory wheelchair accessible?
+    a: Only partly. Wheelchair access is to the Lower Gun Deck, and the dockyard advises contacting the team before visiting as conservation work can close areas.
+  sources:
+  - label: Portsmouth Historic Dockyard, Buy your tickets
+    url: https://historicdockyard.co.uk/buy-your-tickets/
+    checked: '2026-11-21'
+  - label: Portsmouth Historic Dockyard, FAQs
+    url: https://historicdockyard.co.uk/faqs/
+    checked: '2026-11-21'
+  - label: Portsmouth Historic Dockyard, Attractions
+    url: https://historicdockyard.co.uk/attractions/
+    checked: '2026-11-21'
+  - label: Portsmouth Historic Dockyard, HMS Victory
+    url: https://historicdockyard.co.uk/?p=17228591
+    checked: '2026-11-21'
+  - label: Mary Rose Museum, Tickets
+    url: https://maryrose.org/tickets/
+    checked: '2026-11-21'
+  kit:
+  - name: Comfortable walking shoes
+    why: for decks, ladders and a day on your feet across the dockyard
+    url: https://www.amazon.co.uk/s?k=comfortable+walking+shoes
+  - name: Small torch
+    why: for reading labels on dim lower decks
+    url: https://www.amazon.co.uk/s?k=small+pocket+torch
+  related:
+  - sail-on-a-tall-ship
+  - sing-sea-shanties
+  - visit-an-air-museum
+  - volunteer-at-a-museum
+- id: visit-uss-constitution
+  title: Go aboard USS Constitution in Boston
+  category: explore
+  kind: experience
+  groups:
+  - history
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: either
+  company: either
+  regions:
+  - us
+  places:
+  - MA
+  why: USS Constitution, Old Ironsides, launched in Boston in 1797 and is the oldest commissioned warship afloat, and you can board her free and talk to the serving US Navy sailors who crew her. Her nickname
+    comes from the War of 1812, when enemy cannonballs seemed unable to get through her oak hull.
+  start:
+  - Check the US Navy's USS Constitution visitor page for the ship's current days and hours; they change by season and the ship can close for weather or operations.
+  - Bring a physical photo ID or passport if you are 18 or over (digital IDs are not accepted) and expect airport-style security screening.
+  - Walk there along the Freedom Trail across the North Washington Street Bridge to the Charlestown Navy Yard, and add the USS Constitution Museum nearby.
+  links:
+  - label: 'US Navy: USS Constitution hours and visitor information'
+    url: https://www.navy.mil/USS-Constitution/Hours-Visitor-Info/
+    region: us
+    checked: '2026-11-21'
+  - label: 'USS Constitution Museum: hours and admission'
+    url: https://ussconstitutionmuseum.org/hours-admission/
+    region: us
+    checked: '2026-11-21'
+  - label: 'National Park Service, Boston National Historical Park: USS Constitution'
+    url: https://www.nps.gov/bost/learn/historyculture/ussconst.htm
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Visiting USS Constitution: free tours, ID rules, hours'
+  description: How to board USS Constitution in Boston for free, the ID and security rules, opening hours, the museum next door and the Freedom Trail walk there.
+  detail:
+  - h: Ways to see her
+    table:
+      head:
+      - Option
+      - What it involves
+      - Cost (as last listed)
+      rows:
+      - - Board the ship
+        - First come, first served; no advance reservations. Navy crew serve aboard and you can talk to them about the ship
+        - Free
+      - - USS Constitution Museum
+        - Two floors of exhibits in Building 22, across the pier from the ship; open daily 10am to 5pm
+        - Suggested $15 standard, $25 pay it forward, free to $10 reduced
+      - - Walk the Freedom Trail
+        - The trail crosses the North Washington Street Bridge to the ship; the NPS has a Freedom Trail audio tour
+        - Free
+      - - Hear the cannon
+        - The ship fires her cannon daily at 8am and at sunset
+        - Free
+      - - Virtual tour
+        - Look round the interior on Google Maps, linked from the NPS page
+        - Free
+  - h: Before you go
+    p:
+    - Everyone 18 and over must show a valid federal or state photo ID or a passport, and the Navy says physical IDs only. Visitors go through airport-style screening, where jackets, belts, watches, bags
+      and electronics are checked. Chewing gum and open food or drink are not allowed.
+    - Hours vary by season, so check before you go. When we checked, the Navy page listed Tuesday to Sunday, 10am to 6pm, while the museum's page listed the ship as open Wednesday to Sunday, 10am to 4pm.
+      The ship is closed on Thanksgiving, Christmas and New Year's Day, among other days.
+    - Because the ship is kept in her 1812 configuration, she is not ADA compliant. Below decks you climb steep, ladder-like steps. The Navy says wheelchair access is limited to the top deck and depends
+      on the tide, while the museum's page says wheelchairs, walkers, scooters and strollers must stay on the pier, so check before you go.
+  faq:
+  - q: Is it free to visit USS Constitution?
+    a: Yes. Boarding the ship and the tours are free. The USS Constitution Museum next door asks for a pay-what-you-can admission, with $15 as its standard suggestion.
+  - q: Do you need ID to go on USS Constitution?
+    a: Yes, if you are 18 or over. Bring a physical federal or state photo ID or a passport; digital IDs are not accepted.
+  - q: Can you book a tour of USS Constitution?
+    a: No. The Navy says tours are first come, first served and it does not take advance reservations.
+  - q: Is USS Constitution on the Freedom Trail?
+    a: Yes. The ship is in the Charlestown Navy Yard, and the National Park Service says you can follow the Freedom Trail across the North Washington Street Bridge to reach her.
+  sources:
+  - label: US Navy, USS Constitution hours and visitor info
+    url: https://www.navy.mil/USS-Constitution/Hours-Visitor-Info/
+    checked: '2026-11-21'
+  - label: USS Constitution Museum, Hours and admission
+    url: https://ussconstitutionmuseum.org/hours-admission/
+    checked: '2026-11-21'
+  - label: National Park Service, USS Constitution
+    url: https://www.nps.gov/bost/learn/historyculture/ussconst.htm
+    checked: '2026-11-21'
+  kit:
+  - name: Clear zip pouch
+    why: for keeping ID, phone and keys together through security screening
+    url: https://www.amazon.co.uk/s?k=clear+zip+pouch
+  - name: Boston street map
+    why: for following the Freedom Trail to the Navy Yard
+    url: https://www.amazon.co.uk/s?k=boston+map
+  related:
+  - walk-the-freedom-trail
+  - sail-on-a-tall-ship
+  - sing-sea-shanties
+  - visit-portsmouth-historic-dockyard
+- id: learn-irish
+  title: Learn Irish (Gaeilge)
+  category: think
+  kind: skill
+  effort: demanding
+  cost: low
+  time: year
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  - world
+  why: Irish opens up the songs, place names and Gaeltacht communities of Ireland, and you can learn it in a London classroom, on Zoom from New York or for a week in Donegal. Beginners' classes start from
+    no Irish at all, and the levels are graded so you can see yourself move up.
+  start:
+  - Choose a beginners' class with a set timetable; City Lit in London, Conradh na Gaeilge online and the Irish Arts Center in New York all run classes for beginners.
+  - If you are in London, ask the London Irish Centre about its informal classes and its free Ciorcal Comhrá conversation circle.
+  - Once you have a term or two behind you, look at a week in a Gaeltacht, an Irish-speaking area, such as Gael Linn's adult courses in Gaoth Dobhair, Co. Donegal.
+  links:
+  - label: 'City Lit: Irish Gaelic courses (London and online)'
+    url: https://www.citylit.ac.uk/courses/languages/celtic/irish-gaelic
+    region: uk
+    checked: '2026-11-21'
+  - label: 'London Irish Centre: Irish language classes'
+    url: https://londonirishcentre.org/our-services/education/language-classes
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Conradh na Gaeilge: online Irish classes'
+    url: https://www.cnag.ie/en/courses/location/online-classes.html
+    region: any
+    checked: '2026-11-21'
+  - label: 'Gael Linn: Gaeltacht courses for adults (Donegal)'
+    url: https://www.gael-linn.ie/en/courses/gaeltacht-courses/108-17/
+    region: any
+    checked: '2026-11-21'
+  - label: 'Irish Arts Center, New York: Irish Language I, Introduction (online)'
+    url: https://irishartscenter.org/event/irish-language-i-introduction-section-c-fall-2026-online
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'How to learn Irish (Gaeilge): classes online and in Ireland'
+  description: Where to learn Irish as a beginner, from London and Zoom classes to a week in the Donegal Gaeltacht, with formats and fees as last listed.
+  detail:
+  - h: How the classes work
+    p:
+    - Irish courses are graded by level. Gael Linn uses seven levels based on the TEG standards, from complete beginners (A0) and beyond beginners (A1) up to advanced (C1), and points learners to the TEG
+      online assessment to choose one. Conradh na Gaeilge's online classes run from Beginners (A1.1, A1.2) through to Advanced (C1), in ten-week terms of one 90-minute class a week.
+    - In London, City Lit runs online evening modules and an in-person intensive at Keeley Street that it describes as suitable for complete beginners, plus a short online taster. The London Irish Centre
+      runs informal classes in terms of eight lessons, at the centre and online, and a free Ciorcal Comhrá for people who already speak some Irish and want to strengthen it. Its page last said lessons would
+      return in May 2025, so register interest for the next term.
+  - h: Beginners' courses compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Irish beginners taster, online, Monday 14 December 2026
+        - £19
+      - - City Lit, London
+        - Irish beginners intensive, module 1, in person at Keeley Street, from Tuesday 12 January 2027; suitable for complete beginners
+        - £289, or £231 senior and £188 concession
+      - - Conradh na Gaeilge, online
+        - Ten weeks, one 90-minute class a week; evening classes and classes in other time zones; Spring Term 2027 open for registration
+        - €150 per term
+      - - Irish Arts Center, New York (online)
+        - Irish Language I, Introduction, on Zoom; eight Tuesday evenings, 7:30pm to 9pm (autumn 2026 run)
+        - $264, or $212 for members
+      - - Gael Linn, Gaoth Dobhair, Co. Donegal
+        - One-week Gaeltacht course, Sunday to Saturday, classes 10am to 3:30pm, levels from complete beginner (summer 2026 runs)
+        - €250 plus a €10 service fee; accommodation not included
+    after: Gael Linn's courses take up to 120 people, include optional evening events and need no textbook; you arrange your own accommodation and bring your own lunch. It offers 10% off to holders of a
+      valid student card, pension recipients and job seekers.
+  faq:
+  - q: Can I learn Irish online from the US?
+    a: Yes. The Irish Arts Center in New York runs beginners' classes on Zoom, and Conradh na Gaeilge's online classes include classes in other time zones.
+  - q: Where can I learn Irish in London?
+    a: City Lit runs online and in-person beginners' courses, and the London Irish Centre runs informal classes in eight-lesson terms, at the centre and online.
+  - q: Can adults do a Gaeltacht course?
+    a: Yes. Gael Linn runs one-week courses for adults in Gaoth Dobhair, Co. Donegal, with levels from complete beginner to advanced.
+  - q: How much does an Irish language course cost?
+    a: As last listed, Conradh na Gaeilge's online classes were €150 a term, City Lit's in-person intensive module was £289 and a Gael Linn Gaeltacht week was €260 including the service fee.
+  sources:
+  - label: City Lit, Irish Gaelic courses
+    url: https://www.citylit.ac.uk/courses/languages/celtic/irish-gaelic
+    checked: '2026-11-21'
+  - label: London Irish Centre, Language classes
+    url: https://londonirishcentre.org/our-services/education/language-classes
+    checked: '2026-11-21'
+  - label: Conradh na Gaeilge, Online classes
+    url: https://www.cnag.ie/en/courses/location/online-classes.html
+    checked: '2026-11-21'
+  - label: Gael Linn, Gaeltacht Courses for Adults 2026
+    url: https://www.gael-linn.ie/en/courses/gaeltacht-courses/108-17/
+    checked: '2026-11-21'
+  - label: Irish Arts Center, Irish Language I, Introduction, Section C, Fall 2026 (online)
+    url: https://irishartscenter.org/event/irish-language-i-introduction-section-c-fall-2026-online
+    checked: '2026-11-21'
+  kit:
+  - name: Irish-English dictionary
+    why: for looking words up away from a screen
+    url: https://www.amazon.co.uk/s?k=irish+english+dictionary
+  - name: Irish language course book with audio
+    why: a structured course to work through between classes
+    url: https://www.amazon.co.uk/s?k=learn+irish+language+course+book+audio
+  related:
+  - learn-scottish-gaelic
+  - learn-welsh
+  - learn-a-language-to-b1
+  - join-a-language-exchange
+- id: visit-newgrange
+  title: Go inside Newgrange at Brú na Bóinne
+  category: travel
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - world
+  places:
+  - IRL
+  why: Newgrange is a Neolithic passage tomb, about 5,000 years old, in the Boyne Valley, and on the mornings around the winter solstice the rising sun shines through its roof-box and up the passage to
+    light the chamber. The only way in is a guided tour from the Brú na Bóinne Visitor Centre, which takes you by shuttle bus and, on the main tours, into the chamber itself.
+  start:
+  - Book on the official Heritage Ireland booking site, not a resale site; tickets from third-party or resale sites are not valid.
+  - Watch the booking window, which is 7 days ahead in winter and 30 days ahead from April to 1 November, with tickets released at midnight Irish time.
+  - Go to the Visitor Centre, not the monument; you will not get in if you go straight to Newgrange.
+  links:
+  - label: 'Heritage Ireland: Brú na Bóinne Visitor Centre, Newgrange, Knowth and Dowth'
+    url: https://heritageireland.ie/places-to-visit/bru-na-boinne/
+    region: any
+    checked: '2026-11-21'
+  - label: 'Heritage Ireland: Newgrange Winter Solstice'
+    url: https://heritageireland.ie/learn/newgrange-winter-solstice
+    region: any
+    checked: '2026-11-21'
+  seo_title: 'Newgrange tickets and tours: how to visit Brú na Bóinne'
+  description: How to get inside Newgrange, which tours run when, 2026 prices as last listed, booking windows, Knowth, and the winter solstice lottery.
+  detail:
+  - h: How a visit works
+    p:
+    - Access to Newgrange and Knowth is by guided tour only. Every tour starts at the Brú na Bóinne Visitor Centre, and a shuttle bus takes you to the monuments. Heritage Ireland says pre-booking is essential
+      and availability is very limited; cancelled tickets go back on sale, and it suggests checking for them each afternoon from 3pm to 4pm and each morning from 8.30am to 9.30am.
+    - The Newgrange passage and chamber are low and narrow, so they may not suit people with claustrophobia or mobility difficulties, and the OPW says access at the monuments is very limited for visitors
+      with mobility issues; email the centre before booking if you use a wheelchair or need help. Photography is not allowed in the passage or chamber, there is no access to the Knowth chambers, and the
+      sites are outdoors with no shelter.
+  - h: The tours compared
+    table:
+      head:
+      - Tour
+      - When and how long
+      - Cost (as last listed, 2026)
+      rows:
+      - - Brú na Bóinne Tour + Newgrange Chamber
+        - 1 March to 1 November; about 3 hours
+        - €18 adult, €16 senior, €12 student or child 12+, €48 family
+      - - Newgrange Tour + Exhibition, with the chamber
+        - The main tour from 2 November to 28 February, and one tour a day in season; about 2 hours
+        - €10 adult, €8 senior, €5 student or child 12+, €25 family
+      - - Knowth Tour + Exhibition
+        - 1 March to 1 November, one tour a day; no access to the chambers
+        - Not shown in the trade catalogue; check when booking
+      - - Visitor Centre exhibition only
+        - About 45 minutes; no booking needed
+        - €5 adult, €4 senior, €3 student or child 12+, €13 family
+    after: The OPW's 2026 trade catalogue says children under 12 go free with an adult and that rates should be confirmed with the site, but the visitor page says everyone, including infants, needs a ticket.
+      The centre is closed from 23 to 27 December and on 1 January.
+  - h: The winter solstice
+    p:
+    - Around the winter solstice, sunlight at sunrise enters the roof-box, travels up to 19 metres (62 feet) along the passage and lights the chamber. The centre opens earlier on those mornings and regular
+      tours are suspended.
+    - Heritage Ireland says places in the chamber on those mornings have been decided by a public lottery. In 2024, 38 winners were drawn from thousands of applications by pupils from local schools, each
+      able to bring one guest, across five mornings; it said applications for 2025 were online only.
+  faq:
+  - q: Can you go inside Newgrange?
+    a: Yes, on a guided tour from the Brú na Bóinne Visitor Centre. Both Newgrange tours include the chamber, but the passage is low and narrow.
+  - q: How far ahead can you book Newgrange tickets?
+    a: Seven days ahead from 2 November to 1 March, and 30 days ahead from April to 1 November, with tickets released at midnight Irish time.
+  - q: Can you go straight to Newgrange without going to the visitor centre?
+    a: No. Heritage Ireland says not to go directly to the monuments, as you will not gain entry.
+  - q: How do you get into Newgrange for the winter solstice?
+    a: Chamber places have been given by a public lottery. In 2024, 38 winners could each bring one guest; check Heritage Ireland for how to apply each year.
+  sources:
+  - label: 'Heritage Ireland, Brú na Bóinne Visitor Centre: Newgrange, Knowth and Dowth'
+    url: https://heritageireland.ie/places-to-visit/bru-na-boinne/
+    checked: '2026-11-21'
+  - label: OPW, Ireland's Ancient East trade catalogue 2026
+    url: https://heritageireland.ie/assets/uploads/2026/02/8118-OPW-IAE-TradeCatalogue-2026_v6.pdf
+    checked: '2026-11-21'
+  - label: Heritage Ireland, Newgrange Winter Solstice
+    url: https://heritageireland.ie/learn/newgrange-winter-solstice
+    checked: '2026-11-21'
+  safety: The passage and chamber are low and narrow, and the monuments are outdoors with no shelter, so ask the centre first if you have mobility needs.
+  kit:
+  - name: Packable waterproof jacket
+    why: for the outdoor parts of the tour
+    url: https://www.amazon.co.uk/s?k=packable+waterproof+jacket
+  - name: Guidebook to Newgrange and the Boyne Valley
+    why: background on the passage tombs before or after the tour
+    url: https://www.amazon.co.uk/s?k=newgrange+boyne+valley+guide+book
+  related:
+  - visit-a-stone-circle-at-solstice
+  - visit-skara-brae
+  - join-an-archaeology-dig
+  - walk-giants-causeway-clifftop
+- id: go-to-the-fleadh
+  title: Go to Fleadh Cheoil na hÉireann
+  category: connect
+  kind: event
+  effort: gentle
+  cost: low
+  time: days
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  places:
+  - northern-ireland
+  collection: arts
+  why: Fleadh Cheoil na hÉireann is the week each August when Irish traditional music, song and dance take over a host town, with up to 150 competitions, street and pub sessions and concerts. Comhaltas
+    Ceoltóirí Éireann has confirmed that Belfast will host it again in 2027, after the 2026 Fleadh there.
+  start:
+  - Watch Comhaltas and Belfast City Council for the 2027 dates; the 2026 Fleadh ran from 2 to 9 August.
+  - Book somewhere to stay early, as Belfast City Council said over 800,000 visitors were expected in 2026.
+  - Before you go, find a Comhaltas branch or a session near you to get a feel for the tunes and how sessions work.
+  links:
+  - label: 'Comhaltas Ceoltóirí Éireann: Fleadh Cheoil na hÉireann'
+    url: https://comhaltas.ie/event/all-ireland-fleadh/
+    region: any
+    checked: '2026-11-21'
+  - label: 'Belfast City Council: Fleadh Cheoil na hÉireann to return to Belfast in 2027'
+    url: https://www.belfastcity.gov.uk/news/fleadh-cheoil-na-heireann-to-return-to-belfast-in
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Comhaltas in Britain: branch map'
+    url: https://www.comhaltas.co.uk/branches
+    region: uk
+    checked: '2026-11-21'
+  - label: 'Milwaukee Irish Fest: FAQs'
+    url: https://irishfest.com/Festival-Info/FAQ
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Fleadh Cheoil 2027 in Belfast: what to expect'
+  description: What happens at Fleadh Cheoil na hÉireann, the 2027 host city, and other places to hear traditional Irish music in Britain, Ireland and the US.
+  detail:
+  - h: What the Fleadh is
+    p:
+    - Comhaltas Ceoltóirí Éireann describes the Fleadh as the world's largest annual festival of Irish music, song and dance. It began in Mullingar in 1951 and runs over a week in August, with up to 150
+      competitions in solo and group music, singing and dance, including sean-nós dancing and céilí bands, plus workshops, lectures and exhibitions.
+    - You do not need to compete to enjoy it. Comhaltas says street sessions and pub sessions are a key part of the atmosphere, and big-name acts play on stages around the town. Competitors qualify through
+      county and provincial fleadhanna in late spring and early summer, and come from Britain, Japan, Australia and North America as well as Ireland.
+    - Belfast hosted the 2026 Fleadh from 2 to 9 August, with Sharon Shannon and her Big Band billed to headline the Main Stage outside City Hall on 2 August. On 7 March 2026 Comhaltas announced that Belfast
+      would host again in 2027, the first place in Northern Ireland to host twice; the 2027 dates had not been stated in the announcement.
+  - h: Other ways to hear traditional Irish music
+    table:
+      head:
+      - Where
+      - What it is
+      - Cost (as last listed)
+      rows:
+      - - Comhaltas branches in Britain
+        - Weekly and monthly lessons in Irish music, language and dance, with sessions and performances; an interactive map shows branches in four regions
+        - Ask the branch
+      - - Willie Clancy Summer School, Miltown Malbay, Co. Clare
+        - Week of graded classes in fiddle, flute, whistle, concertina, banjo, accordion, pipes, harp and more, plus dance classes, recitals and céilithe; 3 to 11 July 2027
+        - €150 for the week, including online registration
+      - - Milwaukee Irish Fest, Wisconsin
+        - Outdoor festival of music, cultural performances and exhibits at Henry Maier Festival Park; 19 to 22 August 2027
+        - Senior general admission $20 at the gates; children 12 and under free with a paid adult
+    after: At the Willie Clancy Summer School, classes are graded and only the uilleann pipes have classes for absolute beginners, who can otherwise join the singing workshops or dance classes; students
+      arrange their own accommodation, and afternoon lectures are open to the public for a small charge at the door.
+  faq:
+  - q: Where is the Fleadh in 2027?
+    a: Belfast. Comhaltas Ceoltóirí Éireann announced in March 2026 that the city would host for a second year running.
+  - q: When is the All-Ireland Fleadh?
+    a: It is held in August each year and lasts about a week; the 2026 Fleadh in Belfast ran from 2 to 9 August.
+  - q: Do you have to play music to go to the Fleadh?
+    a: No. Alongside the competitions there are street and pub sessions, concerts, workshops and exhibitions.
+  - q: How do musicians qualify for the Fleadh?
+    a: Comhaltas says competitors qualify through county and provincial fleadhanna held in late spring and early summer.
+  sources:
+  - label: Comhaltas Ceoltóirí Éireann, Fleadh Cheoil na hÉireann
+    url: https://comhaltas.ie/event/all-ireland-fleadh/
+    checked: '2026-11-21'
+  - label: Belfast City Council, Fleadh Cheoil na hÉireann to return to Belfast in 2027
+    url: https://www.belfastcity.gov.uk/news/fleadh-cheoil-na-heireann-to-return-to-belfast-in
+    checked: '2026-11-21'
+  - label: Comhaltas in Britain, Branches
+    url: https://www.comhaltas.co.uk/branches
+    checked: '2026-11-21'
+  - label: Scoil Samhraidh Willie Clancy, Information
+    url: https://www.scoilsamhraidhwillieclancy.com/information
+    checked: '2026-11-21'
+  - label: Milwaukee Irish Fest, FAQs
+    url: https://irishfest.com/Festival-Info/FAQ
+    checked: '2026-11-21'
+  kit:
+  - name: Tin whistle in D
+    why: for joining in with slow sessions and workshops
+    url: https://www.amazon.co.uk/s?k=tin+whistle+in+d
+  - name: Folding camping stool
+    why: for sitting through outdoor street sessions and stages
+    url: https://www.amazon.co.uk/s?k=folding+camping+stool+lightweight
+  related:
+  - play-in-a-folk-session
+  - go-to-a-folk-festival
+  - learn-the-tin-whistle
+  - learn-irish-dancing
+- id: see-the-last-supper-in-milan
+  title: See Leonardo's Last Supper in Milan
+  category: travel
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - world
+  places:
+  - ITA
+  why: Leonardo's Last Supper still covers the end wall of the refectory of Santa Maria delle Grazie, painted between 1494 and 1497 and saved when the room was bombed in 1943. Visits are timed at 15 minutes
+    for up to 40 people, and tickets are released in batches, so getting in is mostly a matter of booking on the right day.
+  start:
+  - Check the official Cenacolo Vinciano info page for the date the next quarter's tickets go on sale, and note it.
+  - Book online as soon as sales open (the last release the page announced opened at noon), with up to five tickets per online order, entering each visitor's name, as names cannot be changed later.
+  - Arrive 30 minutes before your slot with your payment receipt, collect the tickets at the office by the entrance and leave large bags at your hotel.
+  links:
+  - label: 'Museo del Cenacolo Vinciano: information and tickets'
+    url: https://cenacolovinciano.org/en/info/
+    region: any
+    checked: '2026-11-21'
+  - label: 'Musei Lombardia (Italian Ministry of Culture): Museo del Cenacolo Vinciano'
+    url: https://museilombardia.cultura.gov.it/en/museums/museo-del-cenacolo-vinciano
+    region: any
+    checked: '2026-11-21'
+  - label: 'GOV.UK: Italy travel advice, entry requirements'
+    url: https://gov.uk/foreign-travel-advice/italy/entry-requirements
+    region: uk
+    checked: '2026-11-21'
+  - label: 'U.S. Department of State: Italy travel advisory'
+    url: https://travel.state.gov/en/international-travel/travel-advisories/italy.html
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Last Supper tickets in Milan: how to book and when'
+  description: 'How to book Leonardo''s Last Supper in Milan: when tickets are released, the 15-minute timed visit, prices as last listed and the free first Sunday.'
+  detail:
+  - h: How booking works
+    p:
+    - 'Booking is compulsory for every visitor, including free tickets and infants. Tickets are released a quarter at a time: in September for November to January, in December for February to April, in
+      March for May to July and in June for August to October. Extra tickets go online every Wednesday at noon for the following week.'
+    - Each visit lasts 15 minutes, with at most 40 people in the room. You must arrive 30 minutes before your booked time or lose your place, and tickets cannot be changed or refunded. Tickets carry each
+      visitor's name to stop touting, and you collect them at the ticket office next to the entrance by showing your payment receipt.
+    - The museum is open Tuesday to Sunday, 8.15am to 7pm, with last admission at 6.45pm, and is closed on Mondays, 1 January and 25 December. Bulky luggage, food and drink are not allowed inside; free
+      lockers at the ticket office can be used for up to 60 minutes while they last.
+  - h: Ways to get in compared
+    table:
+      head:
+      - Way in
+      - How it works
+      - Cost (as last listed)
+      rows:
+      - - Official online ticket
+        - Timed 15-minute visit, booked on release day; up to 5 tickets per order
+        - €15 full (25 and over); €2 aged 18 to 25; free under 18
+      - - Official call centre
+        - Same timed visit, booked by phone; up to 9 tickets per call
+        - Same ticket prices
+      - - Free days, including first Sundays
+        - Free tickets go on sale online at noon on the Wednesday before; no groups or guided tours that day
+        - Free, booking still required
+      - - Ad Artem guided tour or workshop
+        - The museum licensee for guided tours and workshops; paid radio guides for these tours are sold at the ticket office
+        - Not listed on the official info page
+      - - Tour operator package
+        - A guided visit sold by a third party with its own ticket allocation
+        - Varies; compare before booking
+    after: A free official app offers an accompanying visit. The official page warns that free-day availability cannot be guaranteed, and that professional guided tours are not allowed on free days.
+  faq:
+  - q: How far in advance can you book the Last Supper?
+    a: Tickets are released quarterly, about two months before each three-month block opens (for example, in September for November to January). More tickets are added every Wednesday at noon for the following
+      week.
+  - q: How much is a ticket to see the Last Supper?
+    a: The full ticket was last listed at €15 for visitors aged 25 and over, €2 for those aged 18 to 25 and free for under-18s; booking is required for all of them.
+  - q: How long do you get to see the Last Supper?
+    a: Fifteen minutes, in a group of up to 40 people. You need to arrive 30 minutes before your slot.
+  - q: Is the Last Supper free on the first Sunday of the month?
+    a: Free days are offered, and free first-Sunday tickets go on sale online at noon on the previous Wednesday. They must still be booked and availability is not guaranteed.
+  sources:
+  - label: Museo del Cenacolo Vinciano, Info
+    url: https://cenacolovinciano.org/en/info/
+    checked: '2026-11-21'
+  - label: Musei Lombardia, Museo del Cenacolo Vinciano
+    url: https://museilombardia.cultura.gov.it/en/museums/museo-del-cenacolo-vinciano
+    checked: '2026-11-21'
+  - label: GOV.UK, Entry requirements - Italy travel advice
+    url: https://gov.uk/foreign-travel-advice/italy/entry-requirements
+    checked: '2026-11-21'
+  - label: U.S. Department of State, Travel advisory - Italy
+    url: https://travel.state.gov/en/international-travel/travel-advisories/italy.html
+    checked: '2026-11-21'
+  book:
+  - label: Last Supper tours and tickets on GetYourGuide
+    why: guided visits sold with their own ticket allocation, useful if official slots have gone
+    url: https://www.getyourguide.com/s/?q=Last%20Supper%20Milan
+    aff: getyourguide
+  kit:
+  - name: Leonardo da Vinci art book
+    why: to read up on the painting before your 15 minutes in front of it
+    url: https://www.amazon.co.uk/s?k=leonardo+da+vinci+last+supper+book
+  - name: Milan guidebook
+    why: maps and opening times for the rest of the city
+    url: https://www.amazon.co.uk/s?k=milan+guidebook
+  - name: Small crossbody bag
+    why: bulky luggage is not allowed inside the museum
+    url: https://www.amazon.co.uk/s?k=small+crossbody+travel+bag
+  related:
+  - take-an-art-history-course
+  - learn-italian-before-a-trip
+  - visit-the-colosseum-and-roman-forum
+  - see-carnival-in-venice
+- id: visit-the-uffizi
+  title: See the Uffizi Gallery in Florence
+  category: travel
+  kind: experience
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - world
+  places:
+  - ITA
+  why: The Uffizi fills the upper floors of a building Giorgio Vasari designed between 1560 and 1580, with paintings by Giotto, Botticelli, Leonardo, Raphael, Michelangelo and Caravaggio and corridors lined
+    with the Medici family's ancient statues. The ticket price depends on when you buy it and when you go in, so a little planning saves money.
+  start:
+  - Decide between a single Uffizi ticket and the PassePartout 5 Days, which adds Pitti Palace and the Boboli Gardens.
+  - Book a day and time on the official ticket site, or buy on the day at the ticket office under the Uffizi loggia, which was listed as cheaper.
+  - Leave bulky bags, backpacks and umbrellas at the free cloakroom under the eastern colonnade before you go in.
+  links:
+  - label: 'Uffizi Galleries: tickets'
+    url: https://uffizi.it/en/tickets
+    region: any
+    checked: '2026-11-21'
+  - label: 'Uffizi Galleries: visiting the Uffizi'
+    url: https://www.uffizi.it/en/the-uffizi
+    region: any
+    checked: '2026-11-21'
+  - label: 'GOV.UK: Italy travel advice, entry requirements'
+    url: https://gov.uk/foreign-travel-advice/italy/entry-requirements
+    region: uk
+    checked: '2026-11-21'
+  - label: 'U.S. Department of State: Italy travel advisory'
+    url: https://travel.state.gov/en/international-travel/travel-advisories/italy.html
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Uffizi Gallery tickets: prices, booking and PassePartout'
+  description: 'Uffizi Gallery tickets explained: on-the-day and advance prices as last listed, the 4pm discount, the PassePartout 5 Days, opening hours and free Sundays.'
+  detail:
+  - h: Opening times and what is there
+    p:
+    - The Uffizi opens Tuesday to Sunday, 8.15am to 6.30pm; the ticket office closes at 5.30pm. It is closed on Mondays, 1 January and 25 December. Entry to the national museums is free on the first Sunday
+      of each month.
+    - The gallery's collections run from ancient sculpture to paintings from the Middle Ages to the modern period. The official page names Giotto, Simone Martini, Piero della Francesca, Beato Angelico,
+      Filippo Lippi, Botticelli, Mantegna, Correggio, Leonardo, Raphael, Michelangelo and Caravaggio, as well as German, Dutch and Flemish painters.
+    - Audio guides were listed at €6 and need valid ID; they cover only the permanent collections. There are lifts, though the site has posted a notice about lifts in the East wing, so check it if you need
+      one. There is a second-floor cafeteria with a terrace.
+  - h: Tickets compared
+    table:
+      head:
+      - Ticket
+      - What it includes
+      - Cost (as last listed)
+      rows:
+      - - Uffizi, bought on the day
+        - Entry to the Uffizi
+        - €25
+      - - Uffizi, bought in advance
+        - Entry at a booked day and time
+        - €29
+      - - Uffizi from 4pm
+        - Entry from 4pm onwards, from 1 January 2026
+        - €16
+      - - Uffizi plus Vasari Corridor
+        - Uffizi with the Vasari Corridor
+        - €43 on the day; €47 in advance
+      - - PassePartout 5 Days
+        - One priority entry each to the Uffizi, Pitti Palace and Boboli Gardens over five consecutive days
+        - €40; €58 with the Vasari Corridor
+      - - Annual pass
+        - All the Uffizi Galleries museums for a year
+        - €80; family €120
+    after: Reduced tickets were listed at €2 and some visitors get in free; the official site has a separate page on who qualifies. With the PassePartout you book a day and time for the Uffizi first, then
+      visit Pitti Palace and the Boboli Gardens without a booking; a closing day within the five days adds a day. Priority entry does not apply on free days.
+  faq:
+  - q: How much are Uffizi tickets?
+    a: A single Uffizi ticket was last listed at €25 bought on the day and €29 bought in advance, or €16 for entry from 4pm.
+  - q: Do you need to book the Uffizi in advance?
+    a: No, you can buy on the day at the ticket office under the Uffizi loggia. Booking ahead fixes your day and time but was listed at €4 more.
+  - q: What is the Uffizi PassePartout?
+    a: A €40 ticket valid for five consecutive days, with one priority entry each to the Uffizi, Pitti Palace and Boboli Gardens. You book the Uffizi first.
+  - q: Is the Uffizi free on the first Sunday of the month?
+    a: Yes. The official site says entry to the national museums is free on the first Sunday of each month.
+  sources:
+  - label: Uffizi Galleries, Tickets
+    url: https://uffizi.it/en/tickets
+    checked: '2026-11-21'
+  - label: Uffizi Galleries, Tickets and fares
+    url: https://www.uffizi.it/en/pages/tickets-fares
+    checked: '2026-11-21'
+  - label: Uffizi Galleries, The Uffizi
+    url: https://www.uffizi.it/en/the-uffizi
+    checked: '2026-11-21'
+  - label: Uffizi Galleries, Passepartout 5 days combined ticket
+    url: https://www.uffizi.it/en/pages/combined-ticket
+    checked: '2026-11-21'
+  - label: GOV.UK, Entry requirements - Italy travel advice
+    url: https://gov.uk/foreign-travel-advice/italy/entry-requirements
+    checked: '2026-11-21'
+  - label: U.S. Department of State, Travel advisory - Italy
+    url: https://travel.state.gov/en/international-travel/travel-advisories/italy.html
+    checked: '2026-11-21'
+  book:
+  - label: Uffizi tours on Viator
+    why: guided tours with a booked entry, if you want someone to talk you through the rooms
+    url: https://www.viator.com/searchResults/all?text=Uffizi
+    aff: viator
+  kit:
+  - name: Florence guidebook
+    why: maps and plans for the Uffizi, Pitti Palace and the Boboli Gardens
+    url: https://www.amazon.co.uk/s?k=florence+guidebook
+  - name: Italian Renaissance art book
+    why: background on the painters before you see their work
+    url: https://www.amazon.co.uk/s?k=italian+renaissance+art+book
+  - name: Comfortable walking shoes
+    why: for long gallery corridors and the Boboli Gardens
+    url: https://www.amazon.co.uk/s?k=comfortable+walking+shoes
+  related:
+  - take-an-art-history-course
+  - learn-italian-before-a-trip
+  - walk-the-cinque-terre
+  - visit-the-colosseum-and-roman-forum
+- id: see-opera-at-the-arena-di-verona
+  title: See opera in the Arena di Verona
+  category: travel
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: outdoors
+  company: either
+  regions:
+  - world
+  places:
+  - ITA
+  why: Opera in Verona's Roman arena runs every summer, and the 2027 festival, from 11 June to 11 September, brings back Aida in two productions alongside La Traviata, Nabucco and Carmen, plus Romeo and
+    Juliet, the ballet that the Arena says marks the return of ballet after 34 years. Seats range from padded stalls to numbered places on the stone steps, so the same night can cost under €30 or over €300.
+  start:
+  - Look at the 2027 programme on the official Arena di Verona site and pick a date; premieres and the opening nights cost more.
+  - Choose a sector on the official rates page and book online, at the box office or through an authorised retailer; tickets cannot be refunded or exchanged.
+  - If you are on the stone steps, bring a cushion or buy one inside, and arrive at least an hour before the start.
+  links:
+  - label: 'Arena di Verona Opera Festival: rates and sectors 2027'
+    url: https://www.arena.it/en/arena-verona-opera-festival/tickets/rates-and-sectors
+    region: any
+    checked: '2026-11-21'
+  - label: 'Arena di Verona: 2027 festival programme'
+    url: https://www.arena.it/en/magazine/news/104-arena-di-verona-opera-festival-scopri-il-programma-2027/
+    region: any
+    checked: '2026-11-21'
+  - label: 'Arena di Verona: frequently asked questions'
+    url: https://www.arena.it/en/arena-di-verona/faq
+    region: any
+    checked: '2026-11-21'
+  - label: 'GOV.UK: Italy travel advice, entry requirements'
+    url: https://gov.uk/foreign-travel-advice/italy/entry-requirements
+    region: uk
+    checked: '2026-11-21'
+  - label: 'U.S. Department of State: Italy travel advisory'
+    url: https://travel.state.gov/en/international-travel/travel-advisories/italy.html
+    region: us
+    checked: '2026-11-21'
+  seo_title: 'Arena di Verona opera tickets: seats, prices, what to bring'
+  description: 'Arena di Verona Opera Festival 2027: dates, operas, seating sectors and prices as last listed, cushions, bag rules and what happens if it rains.'
+  detail:
+  - h: The 2027 festival and the night itself
+    p:
+    - 'The 2027 festival runs from 11 June to 11 September. The official programme lists five opera productions: La Traviata, Nabucco, Carmen in Franco Zeffirelli''s production, and Aida in both Gianfranco
+      de Bosio''s historical staging and Stefano Poda''s crystal edition. There is also Prokofiev''s Romeo and Juliet ballet, two Roberto Bolle and Friends nights, Carmina Burana, Viva Vivaldi, Paganini
+      Paradise and a gala for Jonas Kaufmann.'
+    - Gates open two hours before the show and the Arena asks you to arrive at least an hour early. A small backpack and a small folding umbrella without sharp points are allowed; bags over 17 litres, food,
+      drink, glass and plastic bottles over 0.5 litres, cameras and tripods are not. There is no compulsory dress code, though smart dress is recommended in the stalls, and men in the stalls may not wear
+      shorts, vests or flip-flops.
+    - If a show is stopped by bad weather there is no refund. If it stops before the end of the first act you can buy a ticket for another festival show chosen by the organiser for €2.50; if it stops later,
+      you get 30% off another show.
+  - h: Seats and prices compared
+    table:
+      head:
+      - Sector
+      - Seat
+      - Cost (as last listed, 2027)
+      rows:
+      - - 1st Sector Stalls Platinum
+        - Numbered, padded seat with backrest, first central rows
+        - From €265; €365 opening nights
+      - - 1st Sector Stalls
+        - Numbered, padded seat with backrest
+        - From €165; €230 opening nights
+      - - Sector Tribune
+        - Numbered, padded seat with backrest
+        - From €125
+      - - Verdi, Puccini and Rossini sectors
+        - Numbered seat with an unpadded backrest
+        - From €70 (Rossini) to €155 (Verdi, opening nights)
+      - - 4th and 5th sectors, steps
+        - Numbered place on the stone steps, no chair
+        - From €35 (5th sector) to €75 (4th sector, opening nights)
+      - - 6th sector, steps
+        - Numbered place on the stone steps, no chair
+        - From €28; €38 opening nights
+    after: 'Prices vary by night: opening nights cost most, then premieres; ordinary opera nights booked by 4 November 2026 were listed lower. Reduced rates apply for under-30s and over-65s (ID required),
+      and a Tribune Family seat for children up to 14 was €2.50 with an accompanying adult at €68. Cushions for the stone steps can be brought from home or bought inside.'
+  faq:
+  - q: How much are tickets for the Arena di Verona?
+    a: For 2027, full prices were last listed from €28 for a numbered place on the stone steps to €420 for the front row of the stalls on an opening night, with lower reduced rates for under-30s and over-65s.
+  - q: When is the Arena di Verona opera season?
+    a: The 2027 Arena di Verona Opera Festival runs from 11 June to 11 September 2027.
+  - q: Do you need a cushion at the Arena di Verona?
+    a: The step sectors are stone with no chair. The Arena says you can bring a cushion from home or buy one inside.
+  - q: What happens if it rains at the Arena di Verona?
+    a: There is no refund if the show is stopped. Depending on how far it got, you can buy another show ticket for €2.50 or get 30% off one.
+  sources:
+  - label: Arena di Verona, Rates and sectors 2027
+    url: https://www.arena.it/en/arena-verona-opera-festival/tickets/rates-and-sectors
+    checked: '2026-11-21'
+  - label: 'Arena di Verona, 104th Arena di Verona Opera Festival: discover the 2027 program'
+    url: https://www.arena.it/en/magazine/news/104-arena-di-verona-opera-festival-scopri-il-programma-2027/
+    checked: '2026-11-21'
+  - label: Arena di Verona, Frequently asked questions
+    url: https://www.arena.it/en/arena-di-verona/faq
+    checked: '2026-11-21'
+  - label: Arena di Verona, What happens if the show is cancelled or stopped
+    url: https://www.arena.it/en/arena-verona-opera-festival/frequently-asked-questions/cancelled-or-interrupted-shows/
+    checked: '2026-11-21'
+  - label: GOV.UK, Entry requirements - Italy travel advice
+    url: https://gov.uk/foreign-travel-advice/italy/entry-requirements
+    checked: '2026-11-21'
+  - label: U.S. Department of State, Travel advisory - Italy
+    url: https://travel.state.gov/en/international-travel/travel-advisories/italy.html
+    checked: '2026-11-21'
+  kit:
+  - name: Stadium seat cushion
+    why: for a numbered place on the stone steps
+    url: https://www.amazon.co.uk/s?k=stadium+seat+cushion
+  - name: Small folding umbrella
+    why: small folding umbrellas without sharp points are allowed in
+    url: https://www.amazon.co.uk/s?k=small+folding+umbrella
+  - name: Opera libretto
+    why: to follow the story of Aida or La Traviata before the night
+    url: https://www.amazon.co.uk/s?k=verdi+aida+libretto
+  related:
+  - see-opera-at-a-country-house-festival
+  - get-rush-tickets-at-the-met-opera
+  - learn-italian-before-a-trip
+  - see-carnival-in-venice

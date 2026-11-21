@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-21)
 
-109 sources, 92 statements, 12 event profiles. Core 73, supported 19, thin 0, contested 0.
+111 sources, 92 statements, 12 event profiles. Core 73, supported 19, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -110,6 +110,8 @@
 - Parks Canada, *Safety tips (date modified 2 December 2024)* (2024). Opened 2026-11-18.
 - London Marathon Events (written by Martin Yelling), *Beginner's training plan (16 weeks, TCS London Marathon 2026)* (2026). Opened 2026-11-21.
 - Bank of America Chicago Marathon (with Nike Run Club), *Official training plan 2026 Bank of America Chicago Marathon* (2026). Opened 2026-11-21.
+- Ordnance Survey (OS Maps Discover, Jonathan Elder), *How to Use a Compass: A Step-by-Step Guide* (2026). Opened 2026-11-21.
+- Mountaineering Scotland Mountain Safety Advisor Team with the Mountain Safety Group (posted on the Mountain Weather Information Service blog), *Using your mobile phone for navigation in the hills?* (2023). Opened 2026-11-21.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -127,10 +129,10 @@
 
 | Status | Weight | Topic | Statement | Sources |
 |---|---|---|---|---|
+| core | 29 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials, dnt-mountain-code, ramblers-hill-tips, bmc-hill-weather, os-using-a-compass, mountaineering-scotland-phone-nav |
 | core | 26 | body maintenance | Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. | cmo-2019, lauersen-2014, bmc-hill-fit, who-2011-older, nhs-bones-65, cdc-older-adults (against: higdon-novice1) |
 | core | 24 | body maintenance | Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. | cmo-2019, lauersen-2014, who-2011-older, nhs-bones-65, cdc-older-adults |
 | core | 24 | on the day | Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. | ydnpa-three-peaks, nhfg-hiking-safety, mwo-higher-summits, usfs-msh-climbing-safety, dnt-mountain-code, nps-hale-safety, sanparks-safe-hiking, safetravel-hiking |
-| core | 23 | kit | Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. | ydnpa-three-peaks, bmc-hill-fit, mrew-safety, pcta-safety-tips, nps-ten-essentials, dnt-mountain-code, ramblers-hill-tips, bmc-hill-weather |
 | core | 21 | altitude | Headache with nausea, dizziness or tiredness can be altitude sickness. Stop climbing and rest; if it gets worse or has not improved after a day, go down. Confusion, poor balance, breathlessness at rest or a wet cough are emergencies; descend at once and get help. | nhs-altitude, nathnac-altitude, cdc-altitude, inyo-whitney-leaflet, nps-hale-hiking |
 | core | 19 | body maintenance | Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third. | sherrington-2019, who-falls, nhs-falls, cdc-falls-prevention |
 | core | 18 | on the day | Start slower than you think you need to; early miles feel easy and are where most people overdo it. | ea-pavey-marathon, ea-training-pace, knechtle-nyc-2026, mcm-first-timer-tips, bc-first-sportive-top10, cyclinguk-first-sportive |
