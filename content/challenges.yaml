@@ -19757,6 +19757,15 @@
   - us
   places:
   - DC
+  where:
+    town: Washington, DC
+    venue: Walter E. Washington Convention Center
+    country: US
+    note: "The Library of Congress says the 2027 festival will be held on Saturday 21 August at the Walter E. Washington Convention Center, where more than 45,000 people came to the 2026 festival."
+    source:
+      label: 'Library of Congress Bookmarked blog: 2026 National Book Festival videos and looking ahead at 2027'
+      url: https://blogs.loc.gov/bookmarked/2026/09/15/2026-national-book-festival-videos-and-looking-ahead-at-2027/
+      checked: '2026-11-21'
   why: The Library of Congress National Book Festival brings best-selling authors and book fans together in Washington, DC, for a day of author talks, panel discussions and book signings. Admission is free
     for everyone, and the Library posts videos of the conversations online afterwards.
   start:
@@ -86981,6 +86990,7 @@
     - try-an-e-bike
     - cycle-the-erie-canalway
 - id: run-the-london-marathon
+  plan_event: marathon
   title: Run the London Marathon
   category: move
   kind: event
@@ -86994,6 +87004,15 @@
     - uk
   places:
     - london
+  where:
+    town: London
+    venue: Blackheath
+    country: GB
+    note: "The organisers give the start line as Greenwich/Blackheath and the finish on The Mall. In 2027 the race runs on Saturday 24 and Sunday 25 April and you run on the day your place gives you; the finish line on The Mall closes at 17:30 on the Saturday, and a secondary finish line in Green Park stays open until midnight on the Sunday. Start wave times are emailed about three weeks before. The links below are for the start, so plan how you will get home from Westminster too."
+    source:
+      label: 'London Marathon Events: event overview'
+      url: https://www.londonmarathonevents.co.uk/london-marathon/event-overview
+      checked: '2026-11-21'
   safety: If you are worried about your health before starting a running plan, the NHS advises making an appointment to see a GP (family doctor) and discussing it first.
   why: The London Marathon runs 26.2 miles (42.2 km) from Greenwich to a finish on The Mall, and in 2027, for one year only, it is spread over two days for 100,000 runners. A record 1.33 million people
     applied for that ballot, so knowing the other ways in matters as much as the training.

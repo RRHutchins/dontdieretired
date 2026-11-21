@@ -50,8 +50,16 @@ dates:
       source: {label: "Marine Corps Marathon Organization: Events", url: "https://www.marinemarathon.com/events/", checked: "2026-11-18"}
   - activity: go-to-national-book-festival
     months: [8, 9]
-    note: A single Saturday. The 2026 festival was on 22 August; the 2025 festival was on 6 September.
+    note: A single Saturday. The 2027 festival is on Saturday 21 August at the Walter E. Washington Convention Center; the 2026 festival was on 22 August.
+    next: "2027-08-21"
+    next_source: {label: "Library of Congress Bookmarked blog: 2026 National Book Festival videos and looking ahead at 2027", url: "https://blogs.loc.gov/bookmarked/2026/09/15/2026-national-book-festival-videos-and-looking-ahead-at-2027/", checked: "2026-11-21"}
     source: {label: "Library of Congress Bookmarked blog: 2026 National Book Festival date announced", url: "https://blogs.loc.gov/bookmarked/2026/02/18/2026-national-book-festival-date-announced-plus-learn-about-exhibiting-at-the-festival-this-year/", checked: "2026-11-01"}
+  - activity: run-the-london-marathon
+    months: [4]
+    note: Late April. For 2027 only, the race is on two days, Saturday 24 and Sunday 25 April, and each runner runs on the day their place gives them; the suggested date is the Sunday, so change it to the Saturday if that is your day. Entries for 2027 have closed.
+    next: "2027-04-25"
+    next_source: {label: "London Marathon Events: event overview", url: "https://www.londonmarathonevents.co.uk/london-marathon/event-overview", checked: "2026-11-21"}
+    source: {label: "London Marathon Events: event overview", url: "https://www.londonmarathonevents.co.uk/london-marathon/event-overview", checked: "2026-11-21"}
   - activity: paddle-devizes-to-westminster
     months: [3, 4]
     note: Over the Easter weekend each year, with a few exceptions. The 2027 race is 26 to 29 March.

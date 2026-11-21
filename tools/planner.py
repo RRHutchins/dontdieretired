@@ -21,7 +21,7 @@ START_AT = ("first", "second", "ongoing", "after_start", "later", "travel", "day
 NO_TEXT = ("first", "second", "ongoing", "after_start", "later")   # an activity's own start step supplies the words
 TRIP_KEYS = ("head", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs", "getting_help_span",
              "head_away", "stay", "stay_fold", "stay_help_span", "stay_help_day", "stay_help_month", "stay_more", "eat", "eat_help",
-             "near", "near_help", "near_area", "near_tours", "near_tours_help", "goes", "goes_help", "add", "add_on", "added", "see_plan", "pick_date", "pick_why_event", "pick_why_fixed", "pick_why_long")
+             "near", "near_help", "near_help_after", "near_area", "near_tours", "near_tours_help", "goes", "goes_help", "add", "add_on", "added", "see_plan", "pick_date", "pick_why_event", "pick_why_fixed", "pick_why_long")
 PICK_KEYS = ("head", "open", "top", "good", "value", "read", "buy", "note")
 PICK_TIERS = ("top", "good", "value")
 TOUR_AFF = ("viator", "getyourguide")   # the only travel-side affiliate schemes Robin has joined (site.yaml → affiliates)

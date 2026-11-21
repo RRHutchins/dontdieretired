@@ -601,6 +601,28 @@ t('trip day 10: Add to my year puts a nearby activity on a free day of the same 
   const local = acts.find(a => !a.place_tied && a.kind !== 'habit' && a.goes.length);
   if (local) assert.strictEqual(P.extras(local, data, { plan: planFor(local.id, { date: '2027-05-01' }), acts: byId, today: TODAY }).nearby.length, 0);
 });
+t('trip: a one-day event with training puts a nearby half-day on the day after, never on the event day (21 Nov 2026)', () => {
+  const half = acts.find(a => !a.place_tied && a.kind !== 'habit' && a.kind !== 'event' && a.time === 'afternoon' && !a.dates && !a.event && !a.when.length);
+  assert.ok(half, 'a real half-day activity to copy');
+  const byIdT = Object.assign({}, byIdAll, { 'test-half-day-in-london': Object.assign({}, half, { id: 'test-half-day-in-london', place_tied: true }) });
+  const m = Object.assign({}, byIdT['run-the-london-marathon']);
+  assert.ok(m.event, 'the London Marathon has engine training');
+  m.nearby = (m.nearby || []).concat([['test-half-day-in-london', 'London']]);
+  const plan = P.build(m, data, { today: TODAY, date: '2027-04-25' });
+  assert.strictEqual(plan.status, 'ok');
+  const x = P.extras(m, data, { plan, items: {}, acts: byIdT, today: TODAY });
+  assert.strictEqual(x.after, true);
+  const e = x.nearby.find(n => n.id === 'test-half-day-in-london');
+  assert.strictEqual(e.when.date, '2027-04-26', 'the day after the race');
+  assert.ok(x.nearby.every(n => !n.when || n.when.date !== '2027-04-25'), 'nothing offered on race day');
+  // the day after already taken by another plan: the race day is still not offered; the day after stays the suggestion
+  const busy = { other: { date: '2027-04-26' } };
+  assert.strictEqual(P.extras(m, data, { plan, items: busy, acts: byIdT, today: TODAY }).nearby.find(n => n.id === e.id).when.date, '2027-04-26');
+  // an event without training (the Fringe, one day) keeps that day, and has no `after`
+  const f = P.extras(byIdT['go-to-edinburgh-fringe'], data, { plan: P.build(byIdT['go-to-edinburgh-fringe'], data, { today: TODAY, date: '2027-08-14' }), items: {}, acts: byIdT, today: TODAY });
+  assert.ok(!f.after);
+  assert.ok(/day after/.test(data.trip.near_help_after), 'the words for it are in planner.yaml');
+});
 t('trip day 10: goes well with, for every real activity: its own suggested date, a plan that works, training and set-date events sent to their page', () => {
   let offered = 0;
   for (const a of acts) {

@@ -150,13 +150,14 @@
      `planned` is the label of a date or month the reader already gave it (then nothing is offered, so nothing is
      overwritten). Nearby (only for a trip away): activities tied to the same area, each on a free day of THIS trip
      (a stay: its second day on, the first day last; one day: that day; a month: that month), with `with` = this
-     activity's id so My year does not flag it as a clash with the trip. Goes well with: each on its own suggested date. */
+     activity's id so My year does not flag it as a clash with the trip; for a one-day event with training, the day after
+     it, never the event day (`after: true` on the result). Goes well with: each on its own suggested date. */
   function whenLabel(it) {
     if (!it) return '';
     if (it.date) { const u = okUntil(it.date, it.until); return u ? spanLabel(parse(it.date), parse(u)) : longDate(parse(it.date)); }
     return it.month ? monthYear(parse(it.month + '-01')) : '';
   }
-  function tripWhen(plan, items, self, target) {
+  function tripWhen(plan, items, self, target, after) {
     if (plan.by_month) return { month: plan.date.slice(0, 7) };
     const taken = new Set();
     Object.keys(items || {}).forEach(k => {
@@ -166,7 +167,8 @@
     });
     const days = [];
     if (plan.until) for (let d = iso(addDays(parse(plan.date), 1)); d <= plan.until; d = iso(addDays(parse(d), 1))) days.push(d);
-    days.push(plan.date);
+    if (after) days.push(iso(addDays(parse(plan.date), 1)));   // a one-day event with training: the day after, never race day
+    else days.push(plan.date);
     return { date: days.find(d => !taken.has(d)) || days[0] };
   }
   function extras(a, settings, opts) {
@@ -174,6 +176,9 @@
     const plan = opts.plan, items = opts.items || {}, acts = opts.acts || {}, today = iso(todayUTC(opts.today));
     const out = { nearby: [], goes: [] };
     if (!plan || plan.status !== 'ok') return out;
+    // A one-day physical event with training (a race, a long walk): the day is the event, so a nearby half-day goes on the
+    // day after it instead (`after`: the pages then say so, trip.near_help_after).
+    if (a.event && !plan.until && !plan.by_month) out.after = true;
     const entry = (id, area, nearby) => {
       const t = acts[id]; if (!t) return null;
       const e = { id, title: t.title, area: area || '', url: '/list/' + id + '/', when: null, with: nearby ? a.id : '', planned: whenLabel(items[id]), pick: '' };
@@ -182,7 +187,7 @@
       if (nearby) {
         if (t.dates || t.kind === 'event') { e.pick = 'fixed'; return e; }
         if (t.time !== 'afternoon') { e.pick = 'long'; return e; }   // weeks, months or a year: more than a free day on a trip
-        e.when = tripWhen(plan, items, a.id, id);
+        e.when = tripWhen(plan, items, a.id, id, out.after);
       } else {
         const sg = suggest(t, { today });
         if (t.kind === 'event' && sg.why === 'any') { e.pick = 'fixed'; return e; }
@@ -197,6 +202,7 @@
     // the months the trip covers; a nearby activity whose season misses all of them is not offered "while you're there"
     const tripMonths = new Set();
     for (let d = plan.date; d <= (plan.until || plan.date); d = iso(addDays(parse(d), 1))) tripMonths.add(+d.slice(5, 7));
+    if (out.after) tripMonths.add(+iso(addDays(parse(plan.date), 1)).slice(5, 7));
     const inSeason = t => !t || !(t.when || []).length || t.when.some(m => tripMonths.has(m));
     if (away) (a.nearby || []).forEach(n => { if (!inSeason(acts[n[0]])) return; const e = entry(n[0], n[1], true); if (e) out.nearby.push(e); });
     (a.goes || []).forEach(id => { if (out.nearby.some(e => e.id === id)) return; const e = entry(id, '', false); if (e) out.goes.push(e); });

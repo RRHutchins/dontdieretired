@@ -162,9 +162,9 @@
   }
   function nearHtml(r, T, plan) {
     if (!r.near || !T.near) return '';
-    const n = ex(plan).nearby, saved = !!(current && current.saved) && !ro();
+    const x = ex(plan), n = x.nearby, saved = !!(current && current.saved) && !ro();
     let h = '<p class="pl-wkh">' + esc(T.near) + '</p>';
-    if (n.length) h += '<p class="meta">' + esc(T.near_help) + '</p><ul class="pl-xs">' + n.map(e => xHtml(e, T, saved)).join('') + '</ul>';
+    if (n.length) h += '<p class="meta">' + esc(x.after && T.near_help_after ? T.near_help_after : T.near_help) + '</p><ul class="pl-xs">' + n.map(e => xHtml(e, T, saved)).join('') + '</ul>';
     return h + '<p class="pl-wkh pl-wkh-sub">' + esc(r.near.head) + '</p><p class="meta">' + esc(r.near.help) + '</p><ul class="pl-links">' + r.near.links.map(l => linkHtml(l, false)).join('') + '</ul>';
   }
   function goesHtml(plan) {

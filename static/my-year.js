@@ -106,9 +106,9 @@
   }
   function nearHtml(r, T, p) {
     if (!r.near || !T.near) return '';
-    const n = ex(p).nearby;
+    const x = ex(p), n = x.nearby;
     let h = '<p class="pl-wkh">' + esc(T.near) + '</p>';
-    if (n.length) h += '<p class="meta">' + esc(T.near_help) + '</p><ul class="pl-xs">' + n.map(e => xHtml(e, T)).join('') + '</ul>';
+    if (n.length) h += '<p class="meta">' + esc(x.after && T.near_help_after ? T.near_help_after : T.near_help) + '</p><ul class="pl-xs">' + n.map(e => xHtml(e, T)).join('') + '</ul>';
     return h + '<p class="pl-wkh pl-wkh-sub">' + esc(r.near.head) + '</p><p class="meta">' + esc(r.near.help) + '</p><ul class="pl-links">' + r.near.links.map(linkHtml).join('') + '</ul>';
   }
   function goesHtml(p) {
