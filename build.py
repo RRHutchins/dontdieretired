@@ -1175,6 +1175,67 @@ def build(make_social=True):
             assert all(str(x.get("url", "")).startswith("https://") and x.get("label") and x.get("checked") for x in g["sources"]), f"hub guide {g['slug']}: sources need url, label, checked"
             g["sources_checked"] = max(dt.date.fromisoformat(str(x["checked"])) for x in g["sources"]).strftime("%-d %B %Y")
             g["url"] = f"/{h['slug']}/{g['slug']}/"
+        # Landing pages for common filters (RUNBOOK §6u priority step 2, 21 Nov 2026): /<slug>/<landing slug>/, each a real page
+        # listing the races that match one filter. A race hub opts in with `landings:` (list) and optional `landing_months: true`
+        # (a page per usual month with enough races). Intro facts are computed from the rows; a page needs at least 4 races.
+        h["landing_pages"] = []
+        if h.get("landings") or h.get("landing_months"):
+            assert not PHEN and h.get("event_pages"), f"hub {h['id']}: landings need a race hub with event_pages"
+            for e in h["events"]:
+                e["url"] = f"/{h['slug']}/{e['id']}/"
+            _taken = {g["slug"] for g in h.get("guides") or []} | {e["id"] for e in h["events"]}
+            _defs = list(h.get("landings") or [])
+            if h.get("landing_months"):
+                _mn = h.get("landing_noun") or (h.get("words") or "races").capitalize()
+                _defs += [{"slug": f"in-{MONTHS[m - 1].lower()}", "title": f"{_mn} in {MONTHS[m - 1]}", "short": MONTHS[m - 1], "group": "Usual month", "filter": {"month": m}}
+                          for m in range(1, 13) if sum(1 for e in h["events"] if m in (e.get("month") or [])) >= 4]
+            _ok_keys = {"country_has", "continent", "band", "format", "month", "entry", "not_entry", "series", "terrain"}
+            def _match(e, f):
+                return ((not f.get("country_has") or f["country_has"] in e["country"]) and (not f.get("continent") or e["continent"] == f["continent"])
+                        and (not f.get("band") or f["band"] in e["bands"]) and (not f.get("format") or e["format"] == f["format"])
+                        and (not f.get("month") or f["month"] in (e.get("month") or [])) and (not f.get("entry") or f["entry"] in e["entry"])
+                        and (not f.get("not_entry") or f["not_entry"] not in e["entry"]) and (not f.get("series") or e["series"] == f["series"])
+                        and (not f.get("terrain") or f["terrain"] in e["terrain"]))
+            for L in _defs:
+                assert re.fullmatch(r"[a-z0-9-]+", L.get("slug", "")) and L.get("title") and L.get("short") and L.get("group") and L.get("filter"), f"hub {h['id']}: a landing needs slug, title, short, group, filter"
+                assert L["slug"] not in _taken, f"hub {h['id']}: landing {L['slug']} clashes with a race id, guide or another landing"
+                assert set(L["filter"]) <= _ok_keys, f"hub {h['id']} landing {L['slug']}: unknown filter key"
+                _taken.add(L["slug"])
+                L["events"] = [e for e in h["events"] if _match(e, L["filter"])]
+                assert len(L["events"]) >= 4, f"hub {h['id']} landing {L['slug']}: only {len(L['events'])} races (a page needs at least 4)"
+                L["url"] = f"/{h['slug']}/{L['slug']}/"
+                _ev = L["events"]; _w = h.get("words") or "races"
+                _kms = [k for e in _ev for k in e["km"]]
+                _fmt = lambda k: f"{k:,.1f}".rstrip("0").rstrip(".")
+                facts = [f"{len(_ev)} {_w} on this page, with main distances from {_fmt(min(_kms))} km to {_fmt(max(_kms))} km."]
+                _cn = sorted({e["country"] for e in _ev})
+                if not L["filter"].get("country_has") and len(_cn) > 1:
+                    facts.append(f"They are in {len(_cn)} countries or areas.")
+                _ms = sorted({m for e in _ev for m in e.get("month") or []})
+                if not L["filter"].get("month") and _ms:
+                    facts.append("Usual months run across " + (f"{len(_ms)} months of the year." if len(_ms) > 3 else " and ".join(MONTHS[m - 1] for m in _ms) + "."))
+                _ent = [(k, sum(1 for e in _ev if k in e["entry"])) for k in F["entry"]]
+                _ent = [(k, n) for k, n in _ent if n and k != L["filter"].get("entry")]
+                if _ent:
+                    facts.append("How you get a place: " + "; ".join(f"{F['entry'][k].lower()}, {n}" for k, n in _ent) + " (some races use more than one route).")
+                L["facts"] = facts
+                L["item_list"] = [{"@type": "ListItem", "position": n, "name": e["name"], "url": f"{cfg['site']['url']}{e['url']}"} for n, e in enumerate(_ev, 1)]
+                _t = L.get("seo_title") or f"{L['title']}: race list and how to enter"
+                L["seo_title"] = _t if len(_t) <= 60 else L["title"]
+                L["description"] = L.get("description") or f"{L['title']}: {len(_ev)} {_w} checked on their organisers' pages, with distances, usual month, terrain and how entry works."
+                h["landing_pages"].append(L)
+            for e in h["events"]:
+                e["landings"] = [L for L in h["landing_pages"] if e in L["events"]]
+            h["landing_groups"] = []
+            for L in h["landing_pages"]:
+                if not h["landing_groups"] or h["landing_groups"][-1][0] != L["group"]:
+                    h["landing_groups"].append((L["group"], []))
+                h["landing_groups"][-1][1].append(L)
+            for L in h["landing_pages"]:
+                urls.append(out(L["url"], "hub-landing.html", h=h, L=L))
+                pages.append({"title": L["title"], "key": L["seo_title"], "url": L["url"], "category": h["category"], "excerpt": L["facts"][0],
+                              "tags": [h["id"].replace("-", " ")] + list(h.get("tags") or []) + re.findall(r"[a-z0-9]+", L["title"].lower()),
+                              "image": "/static/og-default.png", "art": "/static/og-default.png"})
         # A page per race (RUNBOOK §6u priority step 1, 20 Nov 2026): /<slug>/<event id>/, opt in with `event_pages: true` on a race hub.
         # Event ids are permanent, so these addresses are too. No Event markup (rows have only a usual month).
         if h.get("event_pages"):

@@ -28,6 +28,13 @@
 </section>
 {% endif %}
 
+{% if h.landing_groups %}
+<nav class="hub-browse" aria-labelledby="hub-b-h">
+  <h2 id="hub-b-h">Browse {{ h.words or "races" }} by</h2>
+  {% for grp, items in h.landing_groups %}<p><strong>{{ grp }}:</strong> {% for x in items %}<a href="{{ x.url }}">{{ x.short }}</a>{{ " · " if not loop.last }}{% endfor %}</p>{% endfor %}
+</nav>
+{% endif %}
+
 <section class="hub-finder" aria-labelledby="hub-f-h" data-hub-finder>
   <h2 id="hub-f-h">{{ h.finder_title or ((h.word or "race") | capitalize ~ " finder") }}</h2>
   <form class="hub-filters" data-hub-filters hidden onsubmit="return false">

@@ -22,8 +22,59 @@ tags: [ultra, ultras, ultramarathon, ultramarathons, race, races, trail, mile, m
 facets:
   continent: {europe: Europe, north-america: North America, africa: Africa, asia: Asia, oceania: Oceania, south-america: South America}
   terrain: {mountain: Mountain, trail: Trail and path, road: Road, desert: Desert, winter: Winter, island: Island}
-  entry: {open: Open entry, ballot: Ballot or lottery, qualifier: Qualifying race needed, application: Application or invitation}
+  entry: {open: Open entry, register: Register with the organiser (see its rules), ballot: Ballot or lottery, qualifier: Qualifying race needed, application: Application or invitation}
   series: {utmb: UTMB World Series, centurion: Centurion Running, mds: Marathon des Sables, spine: Spine Races, aravaipa: Aravaipa Running, destination-trail: Destination Trail, racingtheplanet: RacingThePlanet 4 Deserts, threshold: Threshold Trail Series, wtm: World Trail Majors, independent: Independent}
+# Landing pages for common filters (RUNBOOK §6u step 2): /ultra-running/<slug>/. Facts on each page are computed by the build;
+# `intro` is our own short explanation of the filter only (no race facts). A page needs at least 4 races.
+landing_months: true
+landing_noun: Ultras
+landings:
+- {slug: in-the-uk, title: Ultramarathons in the UK, short: UK, group: Where, filter: {country_has: UK}}
+- {slug: in-the-usa, title: Ultramarathons in the USA, short: USA, group: Where, filter: {country_has: USA}}
+- {slug: in-france, title: Ultramarathons in France, short: France, group: Where, filter: {country_has: France}}
+- {slug: in-spain, title: Ultramarathons in Spain, short: Spain, group: Where, filter: {country_has: Spain}}
+- {slug: in-italy, title: Ultramarathons in Italy, short: Italy, group: Where, filter: {country_has: Italy}}
+- {slug: in-europe, title: Ultramarathons in Europe, short: Europe, group: Where, filter: {continent: europe}}
+- {slug: in-north-america, title: Ultramarathons in North America, short: North America, group: Where, filter: {continent: north-america}}
+- {slug: in-south-america, title: Ultramarathons in South America, short: South America, group: Where, filter: {continent: south-america}}
+- {slug: in-africa, title: Ultramarathons in Africa, short: Africa, group: Where, filter: {continent: africa}}
+- {slug: in-asia, title: Ultramarathons in Asia, short: Asia, group: Where, filter: {continent: asia}}
+- {slug: in-oceania, title: Ultramarathons in Australia and New Zealand, short: Australia and NZ, group: Where, filter: {continent: oceania}}
+- slug: under-100km
+  title: Ultras under 100 km
+  short: Under 100 km
+  group: Distance
+  filter: {band: u100}
+  intro: [A race is listed here if one of its main distances is longer than a marathon and under 100 km. Many festivals also have longer races, so the distance line shows them all.]
+- {slug: 100km-ultras, title: 'Ultras of 100 to 149 km', short: 100 to 149 km, group: Distance, filter: {band: 100k}}
+- {slug: 100-mile-ultras, title: 100-mile ultras, short: About 100 miles, group: Distance, filter: {band: 100m}, intro: ['A race is listed here if one of its main distances is between 150 and 180 km, which takes in the classic 100 miles (161 km) and mountain courses a little shorter or longer.']}
+- {slug: over-180km, title: Ultras over 180 km, short: Over 180 km, group: Distance, filter: {band: long}}
+- slug: stage-races
+  title: Multi-day stage ultras
+  short: Stage races
+  group: Distance
+  filter: {format: stage}
+  intro: ['In a stage race the distance is split into daily stages, with a camp or a bed between them. What you must carry, and what the organisers carry for you, differs a lot from race to race, so read each kit list.']
+- slug: open-entry
+  title: Ultras with open entry
+  short: Open entry
+  group: How you get a place
+  filter: {entry: open}
+  intro: ['These races give places to whoever enters first, on the day entries open, until they are full. Some still ask for a qualifying race, so check the "Getting in" line.']
+- slug: no-qualifier-needed
+  title: Ultras with no qualifying race needed
+  short: No qualifier needed
+  group: How you get a place
+  filter: {not_entry: qualifier}
+  intro: ['Our notes from each organiser''s page do not show a qualifying race for these. Some still ask for a medical certificate, an age limit or an online account, so read the entry rules on each race page.']
+- slug: ballot-ultras
+  title: Ultras with a ballot or lottery
+  short: Ballot or lottery
+  group: How you get a place
+  filter: {entry: ballot}
+  intro: ['These races draw places by ballot or lottery, usually months ahead. The race page says when the draw happens and what you need before you apply.']
+- {slug: utmb-world-series, title: UTMB World Series races, short: UTMB World Series, group: Organiser, filter: {series: utmb}}
+- {slug: centurion-running, title: Centurion Running races, short: Centurion Running, group: Organiser, filter: {series: centurion}}
 events:
 - id: utmb-mont-blanc
   name: HOKA UTMB Mont-Blanc
@@ -1228,6 +1279,219 @@ events:
   link: {label: 'Northburn 100: home page', url: 'https://www.northburn100.co.nz/', checked: '2026-11-20'}
   more:
   - {label: 'Northburn 100: the 100 miler', url: 'https://www.northburn100.co.nz/100miler', checked: '2026-11-20'}
+- id: grand-trail-des-templiers
+  name: Grand Trail des Templiers (Festival des Templiers)
+  series: independent
+  place: Millau, on the Causses of southern France
+  country: France
+  continent: europe
+  km: [80, 100.5, 60.1]
+  distances: Grand Trail 80 km; the festival also has the Endurance Trail (100.5 km), L'Intégrale des Causses (60.1 km), La Rock'Voizine (50.5 km), La Boffi Fifty (46.5 km) and shorter trails
+  climb: 3,497 m (Grand Trail); 4,075 m (Endurance Trail)
+  terrain: [trail, mountain]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: You register online and must pay by card when you sign up, or the bib is not reserved; there are no entries on the day. Runners must be 20 or over for races longer than 21 km, and runners without an FFA (French athletics federation) licence need the FFA's PPS health attestation.
+  note: The organisers call it "the legend of trail since 1995", and the Grand Trail follows the founding route of 1995. They say the festival draws 13,000 runners from 45 nationalities.
+  link: {label: 'Festival des Templiers: race overview (in French)', url: 'https://www.festivaldestempliers.com/english/', checked: '2026-11-21'}
+  more:
+  - {label: 'Festival des Templiers: practical information', url: 'https://www.festivaldestempliers.com/infos-pratiques', checked: '2026-11-21'}
+- id: penyagolosa-trails
+  name: FUGA Penyagolosa Trails (CSP and MiM)
+  series: independent
+  place: Castelló de la Plana to Sant Joan de Penyagolosa, Valencian Community
+  country: Spain
+  continent: europe
+  km: [106, 60]
+  distances: CSP 106 km and MiM 60 km
+  climb: 5,600 m (CSP); 3,300 m (MiM)
+  terrain: [mountain, trail]
+  format: single
+  month: [4]
+  entry: [ballot, open]
+  entry_note: You pre-register first, one per person (19 November to 8 December 2026). If demand is at least 20% above the places available, a draw on 11 December gives out the places; otherwise every pre-registrant gets a place and direct registration follows until full. Runners must be 18 or over, and CSP runners must upload a medical certificate by 1 March 2027.
+  note: The CSP runs from Castelló de la Plana up to the Sanctuary of Sant Joan de Penyagolosa, with a 25 hours 30 minutes limit. The 2027 regulations list it as a UTMB Index 100K qualifier and a 2028 Western States qualifier.
+  link: {label: 'Penyagolosa Trails: 2027 regulations (PDF)', url: 'https://www.penyagolosatrails.com/Source/Documentos/Reglamento_FUGA_Penyagolosa_Trails_2027_EN.pdf', checked: '2026-11-21'}
+  more:
+  - {label: 'Penyagolosa Trails: home page', url: 'https://www.penyagolosatrails.com/en/', checked: '2026-11-21'}
+- id: north-downs-way-50
+  name: North Downs Way 50
+  series: centurion
+  place: Farnham, Surrey to Knockholt Pound
+  country: England, UK
+  continent: europe
+  km: [81]
+  distances: 50 miles (81 km), point to point
+  climb: 5,600 ft (1,700 m)
+  terrain: [trail]
+  format: single
+  month: [5]
+  entry: [open, qualifier]
+  entry_note: First come, first served, with no waiting list; 2027 entries opened on 21 June 2026. You need to have finished at least a marathon-distance race inside its cut-off between 1 January 2021 and race day.
+  note: The course follows the first 50 miles of the North Downs Way 100 course, from the trailhead in Farnham to the edge of Greater London, with a 13-hour limit and about 20% on road. It is the second race in Centurion's 50 Mile Grand Slam.
+  link: {label: 'Centurion Running: North Downs Way 50 2027', url: 'https://www.centurionrunning.com/races/north-downs-way-50-2027', checked: '2026-11-21'}
+- id: wendover-woods-50
+  name: Wendover Woods 50
+  series: centurion
+  place: Wendover Woods, Halton, near Aylesbury
+  country: England, UK
+  continent: europe
+  km: [81]
+  distances: 50 miles (81 km) as five 10-mile loops
+  climb: 10,000 ft (3,050 m)
+  terrain: [trail]
+  format: single
+  month: [11]
+  entry: [open, qualifier]
+  entry_note: First come, first served, with no waiting list and no entries on the day (entries for the 2026 race opened on 6 December 2025). You need to have finished at least a marathon-distance race inside its cut-off between 1 January 2021 and race day.
+  note: Five 10-mile loops on forest trails and tracks with a 15-hour limit; the organisers say runners "will work hard for a finish at this race". It counts towards the 50 Mile Grand Slam. The page opened is for the November 2026 race; no 2027 page yet.
+  link: {label: 'Centurion Running: Wendover Woods 50 2026', url: 'https://www.centurionrunning.com/races/wendover-woods-50-2026', checked: '2026-11-21'}
+- id: chianti-ultra-trail
+  name: Chianti Ultra Trail by UTMB
+  series: utmb
+  place: Radda in Chianti, Tuscany
+  country: Italy
+  continent: europe
+  km: [123, 73, 46]
+  distances: Ultra Trail Chianti Castles 123 km, Chianti Ultra Trail 73 km, Chianti Marathon Trail 46 km, plus 20 km and 10 km races
+  climb: 5,200 m (123 km); 3,000 m (73 km)
+  terrain: [trail]
+  format: single
+  month: [3]
+  entry: [register]
+  entry_note: A registration is only validated once a medical certificate has been sent in and checked. When we looked on 21 November 2026, all the ultra distances showed as full.
+  note: The 123 km is a loop from Radda that, in the organisers' words, "retraces the paths that unite the Castles of Historic Chianti", among vineyards, with a 26 hours 30 minutes limit. The top two men and women win a Golden Ticket to Western States.
+  link: {label: 'Chianti Ultra Trail by UTMB', url: 'https://chianti.utmb.world/', checked: '2026-11-21'}
+  more:
+  - {label: 'Chianti Ultra Trail by UTMB: Ultra Trail Chianti Castles', url: 'https://chianti.utmb.world/races/utcc', checked: '2026-11-21'}
+- id: ultra-paine
+  name: Ultra Paine
+  series: independent
+  place: Around Torres del Paine National Park, Patagonia (base Puerto Natales)
+  country: Chile
+  continent: south-america
+  km: [51.5]
+  distances: 50K (51.5 km); also 35K, 21K and 14K
+  climb: 1,333 m (50K)
+  terrain: [trail, mountain]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: Registration is open and the organisers say the race is open to all levels. Mandatory equipment applies on every distance.
+  note: The organisers say it was the first trail-running event in both Torres del Paine National Park and Southern Patagonia. The 50K is the only ultra distance, with an 11-hour limit; official buses run from Puerto Natales to the starts.
+  link: {label: 'Ultra Paine: home page', url: 'https://www.ultrapaine.com/', checked: '2026-11-21'}
+  more:
+  - {label: 'Ultra Paine: race description', url: 'https://www.ultrapaine.com/description', checked: '2026-11-21'}
+- id: quito-trail-by-utmb
+  name: Quito Trail by UTMB
+  series: utmb
+  place: Quito and the Andes
+  country: Ecuador
+  continent: south-america
+  km: [76, 53]
+  distances: 80K Oso (76 km), 50K Nutria (53 km), plus 30K, 20K, 12K and 6K
+  climb: 4,400 m (80K); 2,800 m (50K)
+  terrain: [mountain, trail]
+  format: single
+  month: [7]
+  entry: [register]
+  entry_note: Registration opens in November 2026 and you need a complete MyUTMB profile first. Places are released in tiers, each with a set number of spaces.
+  note: Races run through the Andes and the Andean Chocó biosphere. The top three men and women in the 80K and 50K get entry to the CCC and OCC at UTMB Mont-Blanc.
+  link: {label: 'Quito Trail by UTMB', url: 'https://quito.utmb.world/', checked: '2026-11-21'}
+  more:
+  - {label: 'Quito Trail by UTMB: registration', url: 'https://quito.utmb.world/runers/registration', checked: '2026-11-21'}
+- id: torrencial-chile-by-utmb
+  name: Torrencial Chile by UTMB
+  series: utmb
+  place: Valdivia, Los Ríos region
+  country: Chile
+  continent: south-america
+  km: [101, 65, 45]
+  distances: Pilolcura 100K (101 km), Oncol 65K, Llancahue 45K, plus 20K, a 12K night race and 6K
+  climb: 4,100 m (100K); 2,600 m (65K)
+  terrain: [trail]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: Each race was listed as open for registration through the event's online sign-up.
+  note: The organisers call it "the only winter trail running race in Chile". The courses cross the Valdivian rainforest and the Coastal Range and follow the Pacific coast.
+  link: {label: 'Torrencial Chile by UTMB', url: 'https://torrencial.utmb.world/', checked: '2026-11-21'}
+  more:
+  - {label: 'Torrencial Chile by UTMB: the races', url: 'https://torrencial.utmb.world/races', checked: '2026-11-21'}
+- id: malaysia-ultra-trail-by-utmb
+  name: Malaysia Ultra-Trail by UTMB
+  series: utmb
+  place: Taiping, Perak
+  country: Malaysia
+  continent: asia
+  km: [97.7, 50]
+  distances: MY100 (97.7 km), plus 50 km, 25 km and 13 km races
+  climb: 4,802 m (MY100)
+  terrain: [trail, mountain]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: You need a MyUTMB account. Holders of a valid UTMB Index had 48 hours' early access, first come, first served, from 3 November 2026; general entries went on sale on 5 November 2026.
+  note: The MY100 mixes technical and non-technical trails through tropical rainforest around Maxwell Hill, which the organisers call one of Malaysia's oldest hill stations.
+  link: {label: 'Malaysia Ultra-Trail by UTMB: entry and registration', url: 'https://malaysia.utmb.world/runners/entry-info', checked: '2026-11-21'}
+  more:
+  - {label: 'Malaysia Ultra-Trail by UTMB: MY100', url: 'https://malaysia.utmb.world/races/MY100', checked: '2026-11-21'}
+- id: transjeju-by-utmb
+  name: TransJeju by UTMB
+  series: utmb
+  place: Jeju Island and Hallasan National Park
+  country: South Korea
+  continent: asia
+  km: [148, 104, 60]
+  distances: Jeju100M (148 km), Jeju100K (104 km), Jeju60K (60 km), plus a 20K
+  climb: 5,000 m (100M); 4,000 m (100K)
+  terrain: [mountain, trail, island]
+  format: single
+  month: [10]
+  entry: [open, qualifier]
+  entry_note: First come, first served. The 60K, 100K and 100M need a valid UTMB Index of at least 20K, 50K and 100K respectively.
+  note: The course crosses Hallasan National Park, which the organisers describe as UNESCO World Heritage, on the volcanic island of Jeju. The latest edition was 2 to 4 October 2026; no 2027 date was shown yet.
+  link: {label: 'TransJeju by UTMB', url: 'https://transjeju.utmb.world/', checked: '2026-11-21'}
+  more:
+  - {label: 'TransJeju by UTMB: registration', url: 'https://transjeju.utmb.world/races-runners/runners/Registration', checked: '2026-11-21'}
+  - {label: 'TransJeju by UTMB: about the event', url: 'https://transjeju.utmb.world/discover/the-event/about', checked: '2026-11-21'}
+- id: ultra-x-kenya
+  name: Ultra X Kenya
+  series: independent
+  place: Conservancies of Laikipia County
+  country: Kenya
+  continent: africa
+  km: [220, 110]
+  distances: 220 km or 110 km over five days
+  terrain: [trail]
+  format: stage
+  month: [5]
+  entry: [register]
+  entry_note: The 2027 event showed as sold out with a waiting list open. The page lists no experience or medical requirements.
+  note: Five days on trails through Laikipia's conservancies with six nights of camping, and ground assistance and medical staff on course and at every camp. The page says most people who take part walk half the course.
+  link: {label: 'Ultra X: Ultra X Kenya', url: 'https://ultra-x.co/event/kenya/', checked: '2026-11-21'}
+  more:
+  - {label: 'Ultra X: all races', url: 'https://ultra-x.co/races/', checked: '2026-11-21'}
+- id: old-ghost-ultra
+  name: Old Ghost Ultra
+  series: independent
+  place: Old Ghost Road, from near Seddonville to Lyell
+  country: New Zealand
+  continent: oceania
+  km: [85]
+  distances: 85 km
+  climb: More than 2,600 m
+  terrain: [mountain, trail]
+  format: single
+  month: [2]
+  entry: [register]
+  entry_note: Entries for 2027 sold out and a waiting list is in place. The organisers say eligibility is self-selecting, with entrants able to run most of the trail; mandatory gear is checked at registration.
+  note: The race follows the 85 km Old Ghost Road through remote backcountry, with 15 km above 1,000 metres. The organisers call it "the ultimate test in backcountry running".
+  link: {label: 'Old Ghost Ultra: home page', url: 'https://www.oldghostultra.com/', checked: '2026-11-21'}
+  more:
+  - {label: 'Old Ghost Ultra: entries', url: 'https://www.oldghostultra.com/entries', checked: '2026-11-21'}
+  - {label: 'Old Ghost Ultra: race information', url: 'https://www.oldghostultra.com/race-info', checked: '2026-11-21'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
@@ -1543,3 +1807,73 @@ guides:
   - {label: 'Centurion Running, South Downs Way 100 2026: crew instructions', url: 'https://onecommunity.centurionrunning.com/races/south-downs-way-100-2026/section/crew%20instructions', checked: '2026-11-20'}
   - {label: 'Montane Lakeland 50 and 100, 4 weeks to go: spectating (26 June 2026)', url: 'https://lakeland100.com/2026/06/26/family-and-friends-supporting-on-the-course/', checked: '2026-11-20'}
   - {label: 'HOKA UTMB Mont-Blanc, 2027 regulations', url: 'https://montblanc.utmb.world/races-runners/other-information/regulation', checked: '2026-11-20'}
+- slug: running-through-the-night
+  title: Running through the night in an ultra
+  short: Lights, cold, sleepiness and roads after dark
+  seo_title: 'Night running in an ultra: lights, cold and sleep'
+  description: What races make you carry after dark, why a spare light beats spare batteries, staying warm, sleepiness and hallucinations, and being seen on roads, from race rules, the Highway Code and research on ultra runners.
+  standfirst: Any ultra that runs past sunset becomes a different race in the dark. The trail is harder to read, the temperature drops and tiredness gets to work on your judgement. Races write rules for this, and they are worth reading closely.
+  detail:
+  - h: Why the night matters
+    p:
+    - Western States warns that almost half of its 100-mile trail may be covered at night. At UTMB Mont-Blanc, finishers take anything from under 20 hours to more than 46, and UTMB says your kit must let you spend one or two nights out on the course, depending on your speed.
+    - Centurion Running's mandatory kit page says that if any runner in the field will be out after sunset, a headtorch or other main light goes on the mandatory list. It explains why plainly - light is needed to move safely over the ground and to find your way.
+  - h: What races make you carry
+    table:
+      head: [Race, Lights, Other night rules]
+      rows:
+      - ['Centurion Running (all races that go past sunset)', 'A headtorch or main light; a phone does not count as a main or spare light', 'Spare batteries are "extremely worthwhile"; a light can also act as a beacon for race staff or rescuers']
+      - ['Centurion Winter Downs 100 (December 2026)', 'Two lights of at least 200 lumens each, spare batteries for both, and a red flashing rear light', 'A mid-layer, two pairs of warm gloves, a warm hat (a Buff does not count), an emergency long-sleeved top and a survival or bivi bag (not a blanket)']
+      - ['Lakeland 100 and 50 (England)', 'Headtorch with spare batteries or a spare headtorch', 'Spare base layers top and bottoms, sealed in a bag for emergencies; a survival blanket, bag or duvet; without the kit you may not start']
+      - ['Western States 100 (California)', 'Each runner should carry two LED torches; pick one up at Foresthill (or Michigan Bluff for slower runners) whatever the time', 'Reflectors mark the last 38 miles in the dark; warm clothing and a spare torch in drop bags are strongly recommended']
+      - ['OCC, MCC and ETC (UTMB Mont-Blanc week, 2027 penalty table)', 'No headlamp means immediate disqualification; only one headlamp brings a 30-minute penalty', 'UTMB''s kit must let you spend one or two nights out on the course and wait safely for rescue']
+    after: Taken from each race's pages opened on 21 November 2026. Kit lists change every year, so check your own race's version.
+  - h: A spare light, not just spare batteries
+    p:
+    - Centurion's reasoning is worth borrowing for any race. If the bulb or the lamp itself fails, no amount of batteries will fix it, and the spare lamp is there so you are not left in total darkness. It also recommends spare batteries.
+    - Western States' own advice if your lights fail is to wait for another runner with a light. Mountain Rescue England and Wales puts it more bluntly - without a torch, a map and compass are useless after dark - and reminds walkers to take spare batteries.
+    - AdventureSmart UK advises checking the batteries in your headtorch before you set out. In an emergency a torch can call for help - its page gives six short flashes, repeated at one-minute intervals, as the international distress signal.
+  - h: The cold after dark
+    p:
+    - Night brings the temperature down even in summer races. Western States says night temperatures on its course drop into the 40 to 50°F range (about 4 to 10°C) and calls hypothermia a potentially serious risk, especially at night. UTMB's kit page mentions temperatures as low as -10°C above 2,000 m, with rain, hail or snow.
+    - Mountain Rescue England and Wales lists the signs of hypothermia to watch for - disorientation, confusion, shivering, tiredness, a pale complexion and loss of circulation in the hands or toes - and says children and older people are especially susceptible. It advises warm, windproof and waterproof layers, and a spare hat and gloves even in summer.
+    - In the UK hills, Mountain Rescue says to dial 999 and ask for the police, then mountain rescue (AdventureSmart adds that 112 works too); in the US, call 911. Once you have called, Mountain Rescue says, stay safe and stay put. If you are deaf or have speech difficulties, register with emergencySMS in advance by texting "register" to 999.
+  - h: Sleepiness and the tricks it plays
+    p:
+    - Western States lists sleep deprivation among the conditions that, with fatigue, can bring disorientation and irrational thinking.
+    - A 2022 survey of 119 runners of races over 100 miles, published in the European Journal of Investigation in Health, Psychology and Education, found that in 74% of the 100 to 149-mile races they reported, they did not sleep at all, while in races of 200 miles or more they slept more. Signs of sleep loss reported for their races included visual hallucinations (26%), difficulty staying awake (20%) and trips and falls through inattention (12%). The authors suggest learning about sleep management, or talking to a sleep scientist, before a race.
+    - A 2018 survey of 636 ultra runners in PLoS ONE found that 73.9% had a plan for sleep before a race, mostly sleeping longer at night and napping, but only 21% had a plan for sleep during one. In a very small 2021 study of eight runners in a 246 km mountain race in Taiwan, three saw visual hallucinations in the last 60 km; all eight slept less than 30 minutes during the race.
+    - None of this tells you how long to sleep, and the research is mostly surveys. It does suggest deciding before the race whether and where you will rest, rather than in the small hours.
+  - h: Roads after dark
+    p:
+    - Many ultras cross or follow roads, often at night. The Highway Code (rule 2) says that where there is no pavement you should keep to the right-hand side of the road so you can see oncoming traffic, and be ready to go in single file, especially in poor light. Rule 3 says to use reflective materials when it is dark, which drivers can see by headlights up to three times as far away as non-reflective ones.
+    - In the US, NHTSA's advice is to use sidewalks where they exist and, where there is none, to walk facing traffic as far from it as possible. Western States singles out its Highway 49 crossing, which runners reach at night and tired.
+  faq:
+  - q: How bright should my headtorch be?
+    a: Most kit lists we opened do not give a figure. Centurion's Winter Downs 100 asks for at least 200 lumens for each of its two lights. Check your own race's list, and check the burn time at the setting you will use.
+  - q: Can I use my phone as a torch?
+    a: Not at Centurion races, whose page says a phone is not acceptable as a main or spare light. A phone is also your way to call for help, so keep its battery for that.
+  - q: Will I need to sleep in a 100-mile race?
+    a: In most of the 100 to 149-mile races reported in a 2022 survey, runners did not sleep at all, while in races of 200 miles or more they slept more. Plan your own approach before the race, and stop at an aid station if you cannot stay awake or think clearly.
+  kit:
+  - {name: Rechargeable headtorch, why: 'check the stated output against your race''s minimum, the burn time at that setting, and whether the battery can be swapped', url: 'https://www.amazon.co.uk/s?k=running+head+torch+rechargeable'}
+  - {name: 'Second, lighter headtorch', why: 'Centurion counts a spare lamp, not only spare batteries; check it meets your race''s minimum too', url: 'https://www.amazon.co.uk/s?k=lightweight+head+torch+running'}
+  - {name: Spare batteries, why: 'check they fit both lamps, as some races ask for spares for each', url: 'https://www.amazon.co.uk/s?k=head+torch+spare+battery'}
+  - {name: Red flashing rear light, why: 'check that it flashes and how it fixes to your vest or belt; some races list one', url: 'https://www.amazon.co.uk/s?k=red+rear+light+running+clip'}
+  - {name: Reflective armbands or vest, why: 'the Highway Code asks for reflective materials on roads after dark; check they fit over your pack', url: 'https://www.amazon.co.uk/s?k=reflective+running+armbands'}
+  sources:
+  - {label: 'Centurion Running, Why/What mandatory gear?', url: 'https://www.centurionrunning.com/section/resources/whywhat-mandatory-gear', checked: '2026-11-21'}
+  - {label: 'Centurion Running, Winter Downs 100 2026: rules', url: 'https://www.centurionrunning.com/races/winter-downs-100-2026/section/rules', checked: '2026-11-21'}
+  - {label: 'Montane Lakeland 50 and 100, kit requirements', url: 'https://lakeland100.com/kit-requirements/', checked: '2026-11-21'}
+  - {label: 'Western States Endurance Run, 2027 participant guide', url: 'https://www.wser.org/participant-guide/', checked: '2026-11-21'}
+  - {label: 'HOKA UTMB Mont-Blanc, UTMB race page', url: 'https://montblanc.utmb.world/races/UTMB', checked: '2026-11-21'}
+  - {label: 'HOKA UTMB Mont-Blanc, mandatory equipment', url: 'https://montblanc.utmb.world/races-runners/runners/mandatory-equipment', checked: '2026-11-21'}
+  - {label: 'HOKA UTMB Mont-Blanc, 2027 regulations', url: 'https://montblanc.utmb.world/races-runners/other-information/regulation', checked: '2026-11-21'}
+  - {label: 'Mountain Rescue England and Wales, Fact file 6: how to stay safe', url: 'https://www.mountain.rescue.org.uk/fact_file/fact-file-6-stay-safe-information/', checked: '2026-11-21'}
+  - {label: 'AdventureSmart UK, Think about gear', url: 'https://www.adventuresmart.uk/think-about-gear/', checked: '2026-11-21'}
+  - {label: 'AdventureSmart UK, Be adventure smart in winter', url: 'https://www.adventuresmart.uk/be-adventure-smart-in-winter/', checked: '2026-11-21'}
+  - {label: 'GOV.UK, The Highway Code: rules for pedestrians (1 to 35)', url: 'https://www.gov.uk/guidance/the-highway-code/rules-for-pedestrians-1-to-35', checked: '2026-11-21'}
+  - {label: 'NHTSA, Pedestrian safety', url: 'https://www.nhtsa.gov/road-safety/pedestrian-safety', checked: '2026-11-21'}
+  - {label: 'Miller, Bianchi and Lastella, Running on empty: self-reported sleep/wake behaviour during ultra-marathon events exceeding 100 miles (European Journal of Investigation in Health, Psychology and Education, 2022)', url: 'https://www.mdpi.com/2254-9625/12/7/58', checked: '2026-11-21'}
+  - {label: 'Martin, Arnal, Hoffman and Millet, Sleep habits and strategies of ultramarathon runners (PLoS ONE, 2018)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5942705/', checked: '2026-11-21'}
+  - {label: 'Huang and others, Visual hallucinations in 246-km mountain ultra-marathoners: an observational study (Chinese Journal of Physiology, 2021)', url: 'https://hub.tmu.edu.tw/en/publications/visual-hallucinations-in-246-km-mountain-ultra-marathoners-an-obs/', checked: '2026-11-21'}

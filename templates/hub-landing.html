@@ -1,0 +1,58 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button %}
+{# A landing page for one common filter (RUNBOOK §6u priority step 2): the races that match, with facts computed by the build
+   from the rows. No Event markup (rows carry only a usual month). #}
+{% block title %}{{ L.seo_title }}{% endblock %}
+{% block description %}{{ L.description | metadesc }}{% endblock %}
+{% block pagetype %}hub{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
+ {"@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":h.label,"item":cfg.site.url ~ "/" ~ h.slug ~ "/"},
+  {"@type":"ListItem","position":2,"name":L.title,"item":cfg.site.url ~ L.url}]},
+ {"@type":"ItemList","name":L.title,"itemListElement":L.item_list}]} | tojson }}</script>{% endblock %}
+{% block content %}
+<header class="page-head hub-head" data-cat="{{ h.category }}">
+  <p class="kicker"><a href="/{{ h.slug }}/">{{ h.label }}</a> · {{ L.group }}</p>
+  <h1>{{ L.title }}</h1>
+  <p class="lead">{% for f in L.facts %}{{ f }} {% endfor %}</p>
+  {{ share_button(cfg.site.url ~ L.url, L.title, 'hub') }}
+</header>
+{% if L.intro %}<div class="prose narrow hub-intro">{% for p in L.intro %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+
+<section class="hub-finder" aria-labelledby="hub-l-h">
+  <h2 id="hub-l-h" class="sr-only">The {{ h.words or "races" }}</h2>
+  <ul class="hub-events">
+  {% for e in L.events %}
+    <li class="hub-event" id="{{ e.id }}">
+      <p class="kicker">{{ h.facets.continent[e.continent] }} · {{ e.country }}{% if e.series != 'independent' %} · {{ h.facets.series[e.series] }}{% endif %}</p>
+      <h3><a href="{{ e.url }}">{{ e.name }}</a></h3>
+      <p class="hub-e-place">{{ e.place }}</p>
+      <dl class="hub-e-facts">
+        <div><dt>Distance</dt><dd>{{ e.distances }}{% if e.format == 'stage' %} ({{ h.stage_text or "stage race" }}){% endif %}</dd></div>
+        {% if e.climb %}<div><dt>Climb</dt><dd>{{ e.climb }}</dd></div>{% endif %}
+        {% if e.month_label %}<div><dt>{{ h.month_dt or "Usually" }}</dt><dd>{{ e.month_label }}</dd></div>{% endif %}
+        <div><dt>{{ h.getting_in or "Getting in" }}</dt><dd>{% for x in e.entry %}{{ h.facets.entry[x] }}{{ "; " if not loop.last }}{% endfor %}</dd></div>
+      </dl>
+      <p class="hub-e-link"><a class="hub-e-more" href="{{ e.url }}">{{ (h.word or "race") | capitalize }} page: entry rules and the official link →</a></p>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+<nav class="hub-browse" aria-labelledby="hub-b-h">
+  <h2 id="hub-b-h" class="h4">More ways to browse</h2>
+  {% for grp, items in h.landing_groups %}<p><strong>{{ grp }}:</strong> {% for x in items %}{% if x is sameas L %}<span aria-current="page">{{ x.short }}</span>{% else %}<a href="{{ x.url }}">{{ x.short }}</a>{% endif %}{{ " · " if not loop.last }}{% endfor %}</p>{% endfor %}
+</nav>
+
+{% if h.guides %}
+<section class="hub-guides" aria-labelledby="land-g-h">
+  <h2 id="land-g-h">Getting ready</h2>
+  <ul class="hub-cards">{% for g in h.guides %}<li><a href="{{ g.url }}"><strong>{{ g.title }}</strong><span>{{ g.standfirst }}</span></a></li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+<p class="hub-back"><a class="btn btn-ghost" href="/{{ h.slug }}/#hub-f-h">{{ h.back_text or ("Search all in the " ~ (h.label | lower) ~ " finder") }}</a></p>
+<div class="prose narrow fl-about">
+  <p>We list {{ h.noun_one or "a race" }} only after opening its organiser's own page, and the facts above come from those pages, each linked from its {{ h.word or "race" }} page with the date we opened it. Dates, fees, limits and entry rules change every year: the organiser's page is the one to trust. Being listed does not mean any {{ h.word or "race" }} or organiser endorses this site.</p>
+  {% if h.safety %}<p>{{ h.safety }}</p>{% endif %}
+</div>
+{% endblock %}

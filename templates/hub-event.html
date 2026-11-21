@@ -53,6 +53,9 @@
   {% if related %}
   <aside class="hub-more"><h2 class="h4">{{ (h.words or "races") | capitalize }} like this</h2><ul>{% for r in related %}<li><a href="{{ r[0].url }}">{{ r[0].name }}</a> <span class="meta">{{ r[0].country }} · {{ r[1] }}</span></li>{% endfor %}</ul></aside>
   {% endif %}
+  {% if e.landings %}
+  <nav class="hub-browse" aria-label="Lists this {{ h.word or 'race' }} is in"><p><strong>Also on these lists:</strong> {% for x in e.landings %}<a href="{{ x.url }}">{{ x.title }}</a>{{ " · " if not loop.last }}{% endfor %}</p></nav>
+  {% endif %}
   <p class="hub-back"><a class="btn btn-ghost" href="/{{ h.slug }}/#hub-f-h">{{ h.back_text or ("Back to the " ~ (h.label | lower) ~ " finder") }}</a></p>
   {% if h.safety %}<p class="disclosure">{{ h.safety }}</p>{% endif %}
   <p class="disclosure">{% if h.word %}We list {{ h.noun_one }} only after opening its official page. Being listed does not mean the {{ h.word }} or the body behind it endorses this site.{% else %}We list a race only after opening its organiser's own page. Being listed does not mean the race or its organiser endorses this site.{% endif %} Written with AI from the official page and checked against it.</p>
