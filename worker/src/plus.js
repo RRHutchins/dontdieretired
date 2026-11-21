@@ -2,10 +2,12 @@
 // Customer Portal for cancelling and changing card, and a webhook that keeps each member's status. Called from
 // accounts.js (which owns sessions, throttles and responses); tested by tools/test_plus.js.
 //
-// TEST MODE ONLY until Robin decides otherwise: a live key ("sk_live_" / "rk_live_") is refused unless the Worker
-// has STRIPE_LIVE = "1", which only Robin sets, after he has tried the whole thing in test mode (house rules).
+// Test mode until Robin switches: a live key ("sk_live_" / "rk_live_") is refused unless the Worker has STRIPE_LIVE = "1",
+// which the deploy sets only when Robin has set PLUS_STRIPE_MODE=live and added STRIPE_LIVE_SECRET_KEY (worker/README.md).
 //
-// Secrets (wrangler secret put, never in the repo): STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET.
+// Secrets (wrangler secret put, never in the repo): STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET (the test-mode endpoint's)
+// and, once Robin switches to live, STRIPE_WEBHOOK_SECRET_LIVE (the live endpoint's: Stripe gives each mode its own
+// endpoint and secret, so switching back to test never leaves the Worker checking test events with a live secret).
 // Prices are found by their lookup keys (made by worker/stripe-setup.mjs), so no price ids live in config.
 //
 // What we keep: the member's Stripe customer id (on users) and, per subscription, its status, plan and the end of
@@ -37,7 +39,12 @@ export function keyMode(env) {
   if (/^(sk|rk)_live_/.test(k)) return env.STRIPE_LIVE === '1' ? 'live' : null;
   return null;
 }
-export const payReady = env => !!keyMode(env) && /^whsec_/.test(String(env.STRIPE_WEBHOOK_SECRET || ''));
+// Live switch (21 Nov 2026): the webhook secret is the one for the key's mode; no usable key, no secret.
+export function hookSecret(env) {
+  const m = keyMode(env);
+  return String((m === 'live' ? env.STRIPE_WEBHOOK_SECRET_LIVE : m === 'test' ? env.STRIPE_WEBHOOK_SECRET : '') || '');
+}
+export const payReady = env => !!keyMode(env) && /^whsec_/.test(hookSecret(env));
 // Day 20 (review): memberships, gifts and the account's Stripe customer each record the mode they were made in, and only
 // those of the key's current mode count. With no usable key nothing counts ('none' matches no row).
 export const modeNow = env => keyMode(env) || 'none';
@@ -236,7 +243,7 @@ export async function webhook(env, req, h) {
   if (Number(req.headers.get('content-length') || 0) > HOOK_MAX) return h.json(env, { error: 'too big' }, 413);
   const raw = await readCapped(req, HOOK_MAX);   // counted as it arrives, so a body without a length cannot run on
   if (raw === null) return h.json(env, { error: 'too big' }, 413);
-  if (!(await verifySignature(env.STRIPE_WEBHOOK_SECRET, req.headers.get('stripe-signature'), raw))) return h.json(env, { error: 'signature' }, 400);
+  if (!(await verifySignature(hookSecret(env), req.headers.get('stripe-signature'), raw))) return h.json(env, { error: 'signature' }, 400);
   let ev; try { ev = JSON.parse(raw); } catch { return h.json(env, { error: 'bad json' }, 400); }
   if (!ev || ev.object !== 'event' || typeof ev.type !== 'string') return h.json(env, { error: 'bad json' }, 400);
   if (!!ev.livemode !== (keyMode(env) === 'live')) return h.json(env, { ok: true, ignored: 'mode' });   // a test event never touches a live member, nor the other way round

@@ -447,7 +447,7 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) { return `
     const e = env(), a = await login(e, 'testbuyer@example.com'), b = await login(e, 'testtaker@example.com');
     const g = await buy(e, a);
     assert.strictEqual(e.DB.raw.prepare('SELECT mode FROM gifts').get().mode, 'test');
-    e.STRIPE_SECRET_KEY = 'sk_live_abc'; e.STRIPE_LIVE = '1'; P.clearCache();
+    e.STRIPE_SECRET_KEY = 'sk_live_abc'; e.STRIPE_LIVE = '1'; e.STRIPE_WEBHOOK_SECRET_LIVE = 'whsec_live_gifts'; P.clearCache();
     assert.strictEqual((await redeem(e, b, g.code)).status, 404, 'as good as no code');
     assert.strictEqual((await me(e, b.cookie)).plus.member, false);
     const mine = await (await post(e, '/gift/mine', {}, { cookie: a.cookie })).json();
@@ -456,7 +456,7 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) { return `
     const e2 = env(), c = await login(e2, 'early@example.com'), d = await login(e2, 'early2@example.com');
     const g2 = await buy(e2, c); assert.strictEqual((await redeem(e2, d, g2.code)).status, 200);
     assert.strictEqual((await me(e2, d.cookie)).plus.member, true);
-    e2.STRIPE_SECRET_KEY = 'sk_live_abc'; e2.STRIPE_LIVE = '1'; P.clearCache();
+    e2.STRIPE_SECRET_KEY = 'sk_live_abc'; e2.STRIPE_LIVE = '1'; e2.STRIPE_WEBHOOK_SECRET_LIVE = 'whsec_live_gifts'; P.clearCache();
     assert.strictEqual((await me(e2, d.cookie)).plus.member, false, 'a test-mode gift year is not a real one');
   });
   console.log(`\n${n} tests passed`);

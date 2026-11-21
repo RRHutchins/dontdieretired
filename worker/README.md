@@ -19,3 +19,13 @@ Local test (no email sent; the link comes back in the response):
     # in another shell, from the repo root:
     DDR_ACCOUNTS_API=http://localhost:8787 python3 build.py --no-social && (cd dist && python3 -m http.server 8000)
     # open http://localhost:8000/account/
+
+## Stripe test and live mode (live switch added 21 Nov 2026)
+
+- `STRIPE_SECRET_KEY` (repository secret) is always the **test** key. The **live** key goes in a separate repository secret, `STRIPE_LIVE_SECRET_KEY`.
+- The workflow runs in live mode only when the repository variable `PLUS_STRIPE_MODE` is `live` **and** `STRIPE_LIVE_SECRET_KEY` exists (variable set without the key: the deploy stops). Any other value of the variable stops the deploy; unset or `test` means test mode.
+- In live mode the deploy sets the Worker's `STRIPE_LIVE` var to `"1"` (it is `"0"` in `wrangler.toml` and is set afresh on every deploy), runs `stripe-setup.mjs` with `ALLOW_LIVE=1`, puts the live webhook's signing secret into `STRIPE_WEBHOOK_SECRET_LIVE`, and gives the Worker the live key last. The Worker checks webhooks with the secret for its key's mode (`hookSecret()` in `src/plus.js`), so going back to test never mixes the two.
+- If the Worker has no webhook secret for the current mode, the deploy makes that mode's endpoint afresh so its secret is caught (Stripe shows it only once).
+- Back to test: set `PLUS_STRIPE_MODE` to `test` (or delete it) and run the workflow (changing a variable does not start it; deleting the live key does not switch anything off). The test key goes back in only if `STRIPE_SECRET_KEY` still exists; without it payments are simply closed. Memberships and gifts made in one mode never count in the other.
+- **Going back to test does not stop live billing.** Live subscriptions keep renewing in Stripe while their memberships stop counting here, and live webhook events are refused (no live secret in test mode; Stripe gives up after about three days). So a rollback with paying members means pausing or cancelling their subscriptions in the live Dashboard; and on switching to live again, resend the missed events from the Dashboard (Developers → Webhooks → the endpoint → failed events).
+- If a run made a new endpoint but failed to put its secret, it says so: run the workflow again with `rotate_webhook` ticked.

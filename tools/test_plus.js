@@ -8,6 +8,7 @@ const d1 = require('./d1_stub.js');
 
 const SITE = 'https://dontdieretired.com';
 const WHSEC = 'whsec_test_0123456789abcdef';
+const WHSEC_LIVE = 'whsec_live_fedcba9876543210';
 const calls = [];
 // ---- a stand-in for Stripe ----
 let stripeDown = false;
@@ -84,8 +85,8 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
     const r = await post(e, '/auth/verify', { token: tok }); const d = await r.json();
     return { cookie: `${W.COOKIE}=${(r.headers.get('set-cookie') || '').match(/__Host-ddr_s=([^;]*)/)[1]}`, id: d.account, email };
   };
-  const hook = (e, ev, h = {}) => { const raw = JSON.stringify(ev); return W.handle(new Request('https://api.dontdieretired.com/stripe/webhook', {
-    method: 'POST', headers: { 'content-type': 'application/json', 'stripe-signature': sign(raw), ...h }, body: raw }), e); };
+  const hook = (e, ev, h = {}, secret = WHSEC) => { const raw = JSON.stringify(ev); return W.handle(new Request('https://api.dontdieretired.com/stripe/webhook', {
+    method: 'POST', headers: { 'content-type': 'application/json', 'stripe-signature': sign(raw, secret), ...h }, body: raw }), e); };
   const evt = (type, object, o = {}) => ({ id: 'evt_' + Math.random().toString(36).slice(2), object: 'event', type, livemode: false, data: { object }, ...o });
   const completed = (sub, user, customer = 'cus_1') => evt('checkout.session.completed', { id: 'cs_test_1', object: 'checkout.session', mode: 'subscription', subscription: sub, customer, client_reference_id: user });
   const stripeCalls = () => calls.filter(c => c.url.startsWith('https://api.stripe.com/'));
@@ -118,6 +119,16 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
     assert.strictEqual(P.keyMode({ STRIPE_SECRET_KEY: 'pk_test_x' }), null, 'a publishable key is not a secret key');
     assert.strictEqual(P.payReady({ STRIPE_SECRET_KEY: 'sk_test_x' }), false, 'no webhook secret: closed');
     assert.strictEqual(P.payReady({ STRIPE_SECRET_KEY: 'sk_test_x', STRIPE_WEBHOOK_SECRET: WHSEC }), true);
+  });
+  await t('live switch: each mode checks webhooks with its own endpoint secret', () => {
+    const both = { STRIPE_WEBHOOK_SECRET: WHSEC, STRIPE_WEBHOOK_SECRET_LIVE: 'whsec_live_x' };
+    assert.strictEqual(P.hookSecret({ ...both, STRIPE_SECRET_KEY: 'sk_test_x' }), WHSEC);
+    assert.strictEqual(P.hookSecret({ ...both, STRIPE_SECRET_KEY: 'sk_live_x', STRIPE_LIVE: '1' }), 'whsec_live_x');
+    assert.strictEqual(P.hookSecret({ ...both, STRIPE_SECRET_KEY: 'sk_live_x' }), '', 'a live key without STRIPE_LIVE: no secret');
+    assert.strictEqual(P.hookSecret({ ...both, STRIPE_SECRET_KEY: '' }), '');
+    assert.strictEqual(P.payReady({ STRIPE_SECRET_KEY: 'sk_live_x', STRIPE_LIVE: '1', STRIPE_WEBHOOK_SECRET: WHSEC }), false, 'live with only the test secret: closed');
+    assert.strictEqual(P.payReady({ STRIPE_SECRET_KEY: 'sk_live_x', STRIPE_LIVE: '1', STRIPE_WEBHOOK_SECRET_LIVE: 'whsec_live_x' }), true);
+    assert.strictEqual(P.payReady({ STRIPE_SECRET_KEY: 'sk_test_x', STRIPE_WEBHOOK_SECRET_LIVE: 'whsec_live_x' }), false, 'test with only the live secret: closed');
   });
   await t('closed until set up: no buttons, checkout refused, webhook refused', async () => {
     const e = env({ STRIPE_SECRET_KEY: '', STRIPE_WEBHOOK_SECRET: '' }), a = await login(e);
@@ -512,9 +523,10 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
     assert.strictEqual((await me(e, a.cookie)).plus.member, true, 'a member in test mode');
     assert.strictEqual(e.DB.raw.prepare('SELECT mode FROM memberships').get().mode, 'test');
     // Robin switches to live
-    e.STRIPE_SECRET_KEY = 'sk_live_abc'; e.STRIPE_LIVE = '1'; P.clearCache();
+    e.STRIPE_SECRET_KEY = 'sk_live_abc'; e.STRIPE_LIVE = '1'; e.STRIPE_WEBHOOK_SECRET_LIVE = WHSEC_LIVE; P.clearCache();
     assert.strictEqual((await me(e, a.cookie)).plus.member, false, 'the test membership does not count');
-    assert.strictEqual((await hook(e, completed('sub_testmode', a.id, testCus))).status, 200, 'a test event is ignored, not refused');
+    assert.strictEqual((await hook(e, completed('sub_testmode', a.id, testCus))).status, 400, 'signed with the test endpoint secret: refused in live mode');
+    assert.strictEqual((await hook(e, completed('sub_testmode', a.id, testCus), {}, WHSEC_LIVE)).status, 200, 'a test event (even signed with the live secret) is ignored, not refused');
     assert.strictEqual((await me(e, a.cookie)).plus.member, false);
     assert.strictEqual((await post(e, '/plus/portal', {}, { cookie: a.cookie })).status, 404, 'no portal for a test customer in live mode');
     calls.length = 0;
@@ -526,7 +538,9 @@ function sign(raw, secret = WHSEC, t = Math.floor(Date.now() / 1000)) {
     // a live subscription for the new customer counts
     makeSub('sub_livemode', u.stripe_customer, { metadata: { user_id: a.id, site: SITE }, extra: { livemode: true } });
     const live = evt('checkout.session.completed', { id: 'cs_live_1', object: 'checkout.session', mode: 'subscription', subscription: 'sub_livemode', customer: u.stripe_customer, client_reference_id: a.id }, { livemode: true });
-    assert.strictEqual((await hook(e, live)).status, 200);
+    assert.strictEqual((await hook(e, live)).status, 400, 'a live event signed with the test secret is refused');
+    assert.strictEqual((await me(e, a.cookie)).plus.member, false);
+    assert.strictEqual((await hook(e, live, {}, WHSEC_LIVE)).status, 200);
     assert.strictEqual((await me(e, a.cookie)).plus.member, true, 'the live membership counts');
     assert.strictEqual(e.DB.raw.prepare("SELECT mode FROM memberships WHERE subscription = 'sub_livemode'").get().mode, 'live');
   });

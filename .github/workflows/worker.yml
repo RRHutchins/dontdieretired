@@ -5,6 +5,11 @@ name: Accounts worker
 # STRIPE_SECRET_KEY (a TEST key, sk_test_...), each deploy gives it to the Worker and runs worker/stripe-setup.mjs, which
 # makes the Planner Plus prices, the Customer Portal set-up and the webhook (its signing secret goes straight into the
 # Worker), and makes the gift-code key GIFT_KEY once. A live key is refused by both the script and the Worker until Robin switches to live himself.
+# The live switch (21 Nov 2026, RUNBOOK §6t launch step 11) takes two things only Robin can do: the repository secret
+# STRIPE_LIVE_SECRET_KEY (sk_live_... or rk_live_...) AND the repository variable PLUS_STRIPE_MODE set to "live". Then
+# this deploy sets the Worker's STRIPE_LIVE to "1", makes the live products, portal and webhook (its secret goes into
+# STRIPE_WEBHOOK_SECRET_LIVE) and gives the Worker the live key, last. Setting the variable back to "test" (or removing
+# it) and running the workflow again puts the test key back. STRIPE_SECRET_KEY stays the test key throughout.
 on:
   push:
     branches: [main]
@@ -51,6 +56,8 @@ jobs:
           HAS_D1: ${{ secrets.D1_DATABASE_ID != '' }}
           HAS_RESEND: ${{ secrets.RESEND_API_KEY != '' }}
           HAS_STRIPE: ${{ secrets.STRIPE_SECRET_KEY != '' }}
+          HAS_LIVE: ${{ secrets.STRIPE_LIVE_SECRET_KEY != '' }}
+          MODE_VAR: ${{ vars.PLUS_STRIPE_MODE }}
         run: |
           missing=""
           [ -n "$CLOUDFLARE_API_TOKEN" ] || missing="$missing CLOUDFLARE_API_TOKEN"
@@ -58,7 +65,16 @@ jobs:
           [ "$HAS_D1" = "true" ] || missing="$missing D1_DATABASE_ID"
           [ "$HAS_RESEND" = "true" ] || missing="$missing RESEND_API_KEY"
           if [ -n "$missing" ]; then echo "::notice::Accounts worker not deployed: repository secrets not set yet:$missing (RUNBOOK §6t)"; echo "go=no" >> "$GITHUB_OUTPUT"; else echo "go=yes" >> "$GITHUB_OUTPUT"; fi
-          if [ "$HAS_STRIPE" = "true" ]; then echo "stripe=yes" >> "$GITHUB_OUTPUT"; else echo "::notice::Payments not set up: no STRIPE_SECRET_KEY secret yet (RUNBOOK §6t)"; echo "stripe=no" >> "$GITHUB_OUTPUT"; fi
+          # Stripe mode: "live" only when Robin has set BOTH the variable and the live key; anything unclear stops the deploy
+          case "$MODE_VAR" in
+            live)
+              if [ "$HAS_LIVE" != "true" ]; then echo "::error::PLUS_STRIPE_MODE is live but there is no STRIPE_LIVE_SECRET_KEY secret: nothing deployed (RUNBOOK §6t step 11)"; exit 1; fi
+              echo "::notice::Stripe LIVE mode (PLUS_STRIPE_MODE=live)"; echo "mode=live" >> "$GITHUB_OUTPUT"; echo "stripe=yes" >> "$GITHUB_OUTPUT";;
+            ""|test)
+              echo "mode=test" >> "$GITHUB_OUTPUT"
+              if [ "$HAS_STRIPE" = "true" ]; then echo "stripe=yes" >> "$GITHUB_OUTPUT"; else echo "::notice::Payments not set up: no STRIPE_SECRET_KEY secret yet (RUNBOOK §6t)"; echo "stripe=no" >> "$GITHUB_OUTPUT"; fi;;
+            *) echo "::error::PLUS_STRIPE_MODE must be test or live (or not set): nothing deployed"; exit 1;;
+          esac
       - if: steps.ready.outputs.go == 'yes'
         uses: actions/setup-node@v4
         with:
@@ -68,9 +84,14 @@ jobs:
         env:
           D1_DATABASE_ID: ${{ secrets.D1_DATABASE_ID }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MODE: ${{ steps.ready.outputs.mode }}
         run: |
           echo "$D1_DATABASE_ID" | grep -Eq '^[0-9a-f-]{36}$' || { echo "::error::D1_DATABASE_ID is not a database id"; exit 1; }
           sed -i "s/00000000-0000-0000-0000-000000000000/$D1_DATABASE_ID/" wrangler.toml
+          # the Worker accepts a live key only with STRIPE_LIVE = "1"; every deploy sets it from the mode, so it can never be left on
+          grep -q '^STRIPE_LIVE = "0"$' wrangler.toml || { echo "::error::wrangler.toml must say STRIPE_LIVE = \"0\""; exit 1; }
+          if [ "$MODE" = "live" ]; then sed -i 's/^STRIPE_LIVE = "0"$/STRIPE_LIVE = "1"/' wrangler.toml; fi
+          grep '^STRIPE_LIVE = ' wrangler.toml
           npx --yes wrangler@3.114.0 d1 migrations apply ddr-accounts --remote
           npx --yes wrangler@3.114.0 deploy
           # SALT keys the abuse counters (sign-in, gift-code and calendar limits). Made once, only when missing (review, day 20:
@@ -83,14 +104,30 @@ jobs:
       - if: steps.ready.outputs.go == 'yes' && steps.ready.outputs.stripe == 'yes'
         working-directory: worker
         env:
-          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          MODE: ${{ steps.ready.outputs.mode }}
+          # only the key for this run's mode is given to this step
+          TEST_KEY: ${{ steps.ready.outputs.mode == 'test' && secrets.STRIPE_SECRET_KEY || '' }}
+          LIVE_KEY: ${{ steps.ready.outputs.mode == 'live' && secrets.STRIPE_LIVE_SECRET_KEY || '' }}
           ROTATE: ${{ inputs.rotate_webhook && '--rotate-webhook' || '' }}
         run: |
-          case "$STRIPE_SECRET_KEY" in sk_test_*|rk_test_*) ;; *) echo "::error::STRIPE_SECRET_KEY must be a test key (sk_test_...) until Robin switches to live (RUNBOOK §6t)"; exit 1;; esac
-          printf '%s' "$STRIPE_SECRET_KEY" | npx --yes wrangler@3.114.0 secret put STRIPE_SECRET_KEY
-          node stripe-setup.mjs --secret-out "$RUNNER_TEMP/whsec" $ROTATE
-          if [ -s "$RUNNER_TEMP/whsec" ]; then npx --yes wrangler@3.114.0 secret put STRIPE_WEBHOOK_SECRET < "$RUNNER_TEMP/whsec"; fi
+          if [ "$MODE" = "live" ]; then
+            KEY="$LIVE_KEY"; HOOK=STRIPE_WEBHOOK_SECRET_LIVE; export ALLOW_LIVE=1
+            case "$KEY" in sk_live_*|rk_live_*) ;; *) echo "::error::STRIPE_LIVE_SECRET_KEY must be a live secret key (sk_live_...)"; exit 1;; esac
+          else
+            KEY="$TEST_KEY"; HOOK=STRIPE_WEBHOOK_SECRET
+            case "$KEY" in sk_test_*|rk_test_*) ;; *) echo "::error::STRIPE_SECRET_KEY must be a test key (sk_test_...); the live key goes in STRIPE_LIVE_SECRET_KEY (RUNBOOK §6t)"; exit 1;; esac
+          fi
+          # Stripe shows a webhook's signing secret only when the endpoint is made. If the Worker has no secret for this
+          # mode (the first switch to live, or a run that stopped half way), make the endpoint afresh so its secret is caught.
+          names=$(npx --yes wrangler@3.114.0 secret list --format json) || names=""
+          hookhas=$(printf '%s' "$names" | HOOK="$HOOK" node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{let a;try{a=JSON.parse(s)}catch(e){console.log("unknown");return}console.log(Array.isArray(a)?(a.some(x=>x&&x.name===process.env.HOOK)?"yes":"no"):"unknown")})')
+          if [ "$hookhas" = "unknown" ]; then echo "::warning::could not read the Worker's secrets; the $MODE webhook endpoint was not made afresh. If payments stay closed, run this workflow with rotate_webhook ticked"; fi
+          if [ "$hookhas" = "no" ] && [ -z "$ROTATE" ]; then ROTATE=--rotate-webhook; echo "No $HOOK in the Worker yet: making the $MODE webhook endpoint afresh"; fi
+          STRIPE_SECRET_KEY="$KEY" node stripe-setup.mjs --secret-out "$RUNNER_TEMP/whsec" $ROTATE
+          if [ -s "$RUNNER_TEMP/whsec" ]; then npx --yes wrangler@3.114.0 secret put "$HOOK" < "$RUNNER_TEMP/whsec" || { rm -f "$RUNNER_TEMP/whsec"; echo "::error::a new $MODE webhook endpoint was made but its secret did not reach the Worker: run this workflow again with rotate_webhook ticked"; exit 1; }; fi
           rm -f "$RUNNER_TEMP/whsec"
+          # the key goes in last, so the Worker never pairs a live key with a missing or test-mode webhook secret
+          printf '%s' "$KEY" | npx --yes wrangler@3.114.0 secret put STRIPE_SECRET_KEY
           # Gifts (day 16): GIFT_KEY seals each gift code so its buyer can see it again. Made once and NEVER replaced (a new
           # key would hide unused codes from their buyers, though the codes would still work), so only when it is missing.
           # If the list cannot be read as JSON, stop rather than risk replacing a key that exists (review, day 16).

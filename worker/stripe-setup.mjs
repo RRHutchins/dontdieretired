@@ -8,7 +8,9 @@
 // https://api.dontdieretired.com/stripe/webhook. Its signing secret is shown by Stripe only when the endpoint is
 // made, so it is written to --secret-out (for `wrangler secret put STRIPE_WEBHOOK_SECRET`) and never printed.
 //
-// TEST MODE ONLY: a live key is refused unless ALLOW_LIVE=1, which is Robin's step when he switches to live.
+// TEST MODE unless Robin switches: a live key is refused unless ALLOW_LIVE=1, which the workflow sets only when Robin has
+// set PLUS_STRIPE_MODE=live and added STRIPE_LIVE_SECRET_KEY (worker/README.md). The workflow puts the signing secret into
+// STRIPE_WEBHOOK_SECRET (test) or STRIPE_WEBHOOK_SECRET_LIVE (live).
 import { writeFileSync } from 'node:fs';
 import { form, STRIPE_VERSION, LOOKUP, EVENTS } from './src/plus.js';
 
@@ -108,6 +110,8 @@ if (mine.length) {
   say('webhook endpoint: exists (its secret is already in the Worker; run with --rotate-webhook to replace it)');
   // day 16 added gift events: bring an older endpoint's list up to date (its secret does not change)
   for (const h of mine) {
+    // Stripe disables an endpoint after days of failed deliveries (for example test events while the Worker was live)
+    if (h.status === 'disabled') { await call('POST', 'webhook_endpoints/' + h.id, { disabled: 'false' }); say('webhook endpoint: was disabled by Stripe; enabled again'); }
     const have = new Set(h.enabled_events || []);
     if (!have.has('*') && EVENTS.some(e => !have.has(e))) { await call('POST', 'webhook_endpoints/' + h.id, { enabled_events: EVENTS }); say('webhook endpoint: events brought up to date'); }
   }
