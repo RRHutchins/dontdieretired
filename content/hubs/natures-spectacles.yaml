@@ -582,6 +582,159 @@ events:
   see_note: See the whales by boat, or from the air by small plane or helicopter.
   note: Sperm whales, about 20 metres long, live along the coast all year and come close to shore. Dusky dolphins, New Zealand fur seals and seabirds such as albatross are seen here too.
   link: {label: 'Tourism New Zealand: top 10 things to do in Kaikōura', url: 'https://www.newzealand.com/nz/feature/top-experiences-in-kaikoura/', checked: '2026-11-21'}
+# ---------- Added 22 Nov 2026 (build-out run 3) ----------
+- id: galloway-dark-sky-park
+  name: Stargazing in Galloway International Dark Sky Park
+  type: sky
+  place: Galloway Forest Park, Dumfries and Galloway, Scotland, such as Kirroughtree visitor hub, Clatteringshaws Loch, Stroan Loch and Glentrool
+  country: UK
+  continent: europe
+  when: Any clear night; nights around the new moon show the most stars
+  see: [own]
+  see_note: You do not need a tour. The visitor hub at Kirroughtree has information points to help you pick out constellations and planets. Give your eyes 30 minutes to adjust, use a red light or a red filter on your flashlight (torch), check the moon's phase and the cloud forecast before you go, and take a chair.
+  note: In 2009 Galloway became one of the first places in the world named an International Dark Sky Park, and it holds Gold Tier status. On a clear night more than 7,000 stars and planets can be seen with the naked eye, the Milky Way is usually easy to see, and you can pick out the Andromeda galaxy, which Forestry and Land Scotland calls the most distant thing you can see with your naked eye.
+  activity: dark-sky-place
+  link: {label: 'Forestry and Land Scotland: Galloway International Dark Sky Park', url: 'https://forestryandland.gov.scot/visit/forest-parks/galloway-forest-park/galloway-international-dark-sky-park', checked: '2026-11-22'}
+- id: midnight-sun-norway
+  name: Midnight sun in Northern Norway
+  type: sky
+  place: Northern Norway, from Bodø and Lofoten to Tromsø, the North Cape and Svalbard
+  country: Norway
+  continent: europe
+  month: [5, 6, 7]
+  when: 'Visit Norway gives these dates: Bodø 4 June to 8 July, Lofoten 28 May to 14 July, Tromsø 20 May to 22 July, the North Cape 14 May to 29 July, and Svalbard 20 April to 22 August'
+  see: [own]
+  see_note: You can simply stay up for it anywhere in the north. Visit Norway suggests whale safaris, hiking, a midnight swim, camping, cycling, kayaking or fishing under the midnight sun, and on Svalbard a guided glacier hike or a dog sled ride.
+  note: Above the Arctic Circle you can have up to 24 hours of sunlight in summer, and the further north you go, the more days of midnight sun there are.
+  activity: see-the-midnight-sun
+  link: {label: 'Visit Norway: the midnight sun', url: 'https://www.visitnorway.com/things-to-do/nature-attractions/midnight-sun/', checked: '2026-11-22'}
+- id: monarch-butterflies-mexico
+  name: Monarch butterflies in Mexico's sanctuaries
+  type: living
+  place: Monarch Butterfly Biosphere Reserve, State of Mexico and Michoacán, with sanctuary access at places such as Sierra Chincua, Sierra Campanario, Chivati-Huacal and Cerro Altamirano
+  country: Mexico
+  continent: north-america
+  month: [11, 12, 1, 2, 3]
+  see: [guided]
+  see_note: Visits follow trails with local guides, whose directions you must follow. Stay on the marked trails, stay no more than 15 minutes in a sanctuary (so others get a turn and the butterflies are not disturbed), keep quiet, and do not use flash. Do not touch, disturb or take butterflies, and do not bring food, alcohol, pets or hand sanitizer near the colonies.
+  note: Monarchs travel more than 4,000 km from Canada and the United States to spend the winter in the reserve's forests, in the mountains of Mexico's Trans-Mexican Volcanic Belt. Mexico's protected areas agency, CONANP, says the sanctuaries are open to visitors from November to March.
+  link: {label: 'CONANP (Mexico National Commission of Natural Protected Areas): Monarch Butterfly Biosphere Reserve', url: 'https://descubreanp.conanp.gob.mx/es/conanp/ANP?suri=108', checked: '2026-11-22'}
+- id: hawaii-humpback-whales
+  name: Humpback whales in Hawaii
+  type: living
+  place: Hawaiian Islands Humpback Whale National Marine Sanctuary, especially the shallow waters around Maui, Lānaʻi, Molokaʻi and Kahoʻolawe (Maui Nui), Penguin Bank, Kauaʻi, Oʻahu and Hawaiʻi Island
+  country: USA
+  continent: north-america
+  month: [11, 12, 1, 2, 3, 4]
+  when: Peak season is January to March
+  see: [own]
+  see_note: The sanctuary visitor center on the beach at Kīhei, Maui (open weekdays, closed on federal holidays) is, NOAA says, an ideal spot to see humpbacks breaching. Wherever you watch from, stay more than 100 yards from whales.
+  note: Hawaii is the main winter breeding ground for North Pacific humpback whales, which come here to breed, give birth and nurse their young. NOAA says about half of the North Pacific population, thousands of animals, visits Hawaiian waters each winter and spring, and they prefer water less than about 600 feet (180 meters) deep.
+  link: {label: 'NOAA: about the Hawaiian Islands Humpback Whale National Marine Sanctuary', url: 'https://hawaiihumpbackwhale.noaa.gov/about/about.html', checked: '2026-11-22'}
+  more:
+  - {label: 'NOAA: responsible recreation in the sanctuary', url: 'https://hawaiihumpbackwhale.noaa.gov/visit/recreation.html', checked: '2026-11-22'}
+  - {label: 'NOAA: sanctuary visitor centers', url: 'https://hawaiihumpbackwhale.noaa.gov/visit/visitor-centers.html', checked: '2026-11-22'}
+- id: hervey-bay-humpback-whales
+  name: Humpback whales in Hervey Bay
+  type: living
+  place: Hervey Bay, Fraser Coast, Queensland, in the sheltered waters behind Fraser Island such as Platypus Bay
+  country: Australia
+  continent: oceania
+  month: [7, 8, 9, 10, 11]
+  see: [boat]
+  see_note: Whale-watching tours run from July to November with a local fleet of eco-certified operators working under regulations. Since 2017 some operators also offer a whale immersion program under special permits, when conditions suit.
+  note: Thousands of humpbacks pass the coast each year on their winter migration from feeding grounds in the Antarctic. In the calm, sheltered bay, mothers rest and nurse their calves and teach them tail slapping, spy hopping and breaching before the whales head back south. Visit Fraser Coast says Hervey Bay is known as "Australia's whale watching capital", and the World Cetacean Alliance named it the world's first Whale Heritage Site in October 2019.
+  activity: go-whale-watching-by-boat
+  link: {label: 'Visit Fraser Coast: whales in Hervey Bay', url: 'https://www.visitfrasercoast.com/whales-hervey-bay/', checked: '2026-11-22'}
+  more:
+  - {label: 'Visit Fraser Coast: whale watching in Hervey Bay', url: 'https://www.visitfrasercoast.com/whale-watching/', checked: '2026-11-22'}
+- id: pantanal-jaguars
+  name: Jaguars in the Pantanal
+  type: living
+  place: Porto Jofre, Poconé, Mato Grosso, on the Cuiabá, Piquiri and São Lourenço rivers, reached from Cuiabá
+  country: Brazil
+  continent: south-america
+  month: [6, 7, 8, 9]
+  when: Jaguars can be seen at other times of year too
+  see: [boat, guided]
+  see_note: Guided boat trips of about three to four hours run on the rivers; the guide gives a safety briefing and stops to watch other animals. From Cuiabá it is about 100 km of paved road and then 145 km of dirt road.
+  note: Visit Brasil says the best time to spot jaguars in the Pantanal is between June and September, with an 80 to 90% chance of a sighting. Caimans, capybaras, tapirs, deer, parrots, macaws and anteaters are seen too.
+  link: {label: 'Visit Brasil: photographic safari in the best region of the Pantanal to see jaguars', url: 'https://visitbrasil.com/en/embark-on-a-photographic-safari-in-the-best-region-of-the-pantanal-to-observe-jaguars/', checked: '2026-11-22'}
+- id: valdes-southern-right-whales
+  name: Southern right whales at Península Valdés
+  type: living
+  place: Península Valdés, Chubut, with boat trips from Puerto Pirámides and shore watching at Playa El Doradillo near Puerto Madryn
+  country: Argentina
+  continent: south-america
+  month: [6, 7, 8, 9, 10, 11, 12]
+  when: Whales arrive in late May. Mothers and calves are often close to shore in July and August, and September and October are the best months for boat trips.
+  see: [boat, own]
+  see_note: Puerto Pirámides is the only place in Argentina authorized for whale watching by boat; trips on semi-rigid boats or catamarans run daily from June to December and last about 1.5 to 2 hours. In winter you can also watch from Playa El Doradillo, about 15 km from the center of Puerto Madryn, sometimes just meters from the beach.
+  note: Southern right whales come to the gulfs of Nuevo and San José to mate, give birth and care for their calves. Adults reach about 16 meters and 50 tons, females are larger than males, and each whale can be told apart by the callosities on its head. The peninsula is a UNESCO World Heritage Site.
+  link: {label: 'Visit Argentina: southern right whale in Argentina, when and where to see them', url: 'https://www.argentina.travel/en/news/southern-right-whale-in-argentina-when-and-where-to-see-them-in-their-natural-habitat', checked: '2026-11-22'}
+- id: rotorua-geothermal
+  name: Rotorua's geysers and mud pools
+  type: earth
+  place: Rotorua, North Island, at Te Puia and Whakarewarewa, Wai-O-Tapu, Hell's Gate and Waimangu Volcanic Valley
+  country: New Zealand
+  continent: oceania
+  when: All year; Pōhutu Geyser erupts up to 20 times a day
+  see: [guided]
+  see_note: Whakarewarewa, The Living Māori Village, is open every day from 8:30am to 4pm (closed on Christmas Eve and Christmas Day), with guided village tours that show how its geothermal features are used for cooking and everyday living.
+  note: Tourism New Zealand says Rotorua is famous for its geothermal sights, from bubbling mud pools and steaming vents to geysers, with a faint smell of sulfur in the air. At Te Puia, Pōhutu Geyser sends hot water up to 30 meters into the air; Whakarewarewa calls it the largest geyser in the Southern Hemisphere. Wai-O-Tapu has the colorful Artist's Palette and Champagne Pool and the Lady Knox Geyser, which erupts every day.
+  link: {label: 'Tourism New Zealand: Rotorua attractions', url: 'https://www.newzealand.com/us/feature/rotorua-attractions/', checked: '2026-11-22'}
+  more:
+  - {label: 'Tourism New Zealand: Whakarewarewa, The Living Māori Village', url: 'https://www.newzealand.com/nz/plan/business/whakarewarewa-thermal-village-tours/', checked: '2026-11-22'}
+  - {label: 'Tourism New Zealand: top 5 geothermal areas in New Zealand', url: 'https://www.newzealand.com/uk/feature/top-5-geothermal-areas-in-new-zealand/', checked: '2026-11-22'}
+- id: hokkaido-drift-ice
+  name: Drift ice off Hokkaido
+  type: earth
+  place: Sea of Okhotsk coast of Hokkaido, from Abashiri, Monbetsu and Utoro on the Shiretoko Peninsula
+  country: Japan
+  continent: asia
+  month: [1, 2, 3]
+  when: Late January to March
+  see: [boat, guided]
+  see_note: JNTO says you need to join a tour to get close to the ice. The Aurora icebreaker sails from Abashiri Port and is fairly large and stable; cruises can be bumpy. Walking on the ice is done in a life jacket under a tour guide's supervision. Temperatures can fall below minus 20°C (minus 4°F).
+  note: Every year seasonal winds and currents push sea ice from the coast of Siberia south, and the floes grow as they drift toward Hokkaido. White-tailed and Steller's sea eagles are seen from the cruises, and you may see ribbon seals and sea lions off Shiretoko. JNTO's guide dates from 2019, so check current sailings with the operator.
+  link: {label: 'Japan National Tourism Organization: drift ice (ryuhyo) cruise in Hokkaido', url: 'https://www.japan.travel/en/sg/guide/drift-ice-ryuhyo-cruise-hokkaido/', checked: '2026-11-22'}
+- id: kawah-ijen-blue-fire
+  name: Blue fire at Kawah Ijen
+  type: earth
+  place: Ijen Crater, on the border of Banyuwangi and Bondowoso regencies, East Java
+  country: Indonesia
+  continent: asia
+  month: [4, 5, 6, 7, 8, 9, 10]
+  when: The dry season, April to October; the flames show only in the dark, so arrive between 2am and 4am
+  see: [own, guided]
+  see_note: The trek is about 3.8 to 4 km and takes two to three hours in the cold early morning. Indonesia's tourism ministry strongly recommends a guided tour because toxic gases can be present around the crater. Bring a mask against sulfur fumes and dust.
+  note: The electric-blue flames come from sulfur gases burning as they escape from cracks in the ground. The crater holds a turquoise lake that the ministry calls one of the world's largest acidic crater lakes, with a pH close to zero.
+  link: {label: 'Indonesia Travel (Ministry of Tourism): the magic of Kawah Ijen, a journey to Indonesia''s blue fire', url: 'https://www.indonesia.travel/gb/en/travel-ideas/adventure/the-magic-of-kawah-ijen-a-journey-to-indonesias-blue-fire', checked: '2026-11-22'}
+- id: smokies-fall-color
+  name: Fall color in the Great Smoky Mountains
+  type: season
+  place: Great Smoky Mountains National Park, Tennessee and North Carolina, on drives such as the Foothills Parkway, Lakeview Drive, Cades Cove Loop Road and Roaring Fork Motor Nature Trail
+  country: USA
+  continent: north-america
+  month: [10, 11]
+  when: Above 4,000 feet, early to mid-October (sometimes from mid-September); lower down, mid-October to early November
+  see: [own, vehicle]
+  see_note: Drive or walk on your own; the park suggests hikes such as Porters Creek Trail, Oconaluftee River Trail and Cove Hardwood Trail. October is the park's busiest month, so expect long delays, buy and print your parking tag before you arrive, and have a Plan B, as popular parking areas fill quickly.
+  note: More than 100 kinds of tree and many shrubs color the hills. Yellow birch, American beech and mountain maple turn first high up; lower down the brightest color comes from sugar maple, scarlet oak, sweetgum, red maple, yellow poplar and hickories.
+  link: {label: 'National Park Service: fall colors, Great Smoky Mountains National Park', url: 'https://www.nps.gov/grsm/planyourvisit/fallcolor.htm', checked: '2026-11-22'}
+- id: dutch-tulip-fields
+  name: Tulip fields in the Netherlands
+  type: season
+  place: The bulb region (Bollenstreek) around Lisse and Keukenhof, the Noordoostpolder in Flevoland, and the Kop van Noord-Holland
+  country: Netherlands
+  continent: europe
+  month: [3, 4, 5]
+  when: Late March to mid-May, usually at their best in mid-April
+  see: [own]
+  see_note: Rent a bike and follow the cycling routes, or take a signposted walking route through the bulb region. Enjoy the fields in a tulip-friendly way, with respect for nature. Keukenhof garden is open in spring, from March to May.
+  note: Visit Holland calls the Kop van Noord-Holland the largest continuous flower bulb area in the world, and Keukenhof, with more than 7 million bulbs in bloom, the largest flower exhibition in the world.
+  activity: see-the-tulips-at-keukenhof
+  link: {label: 'Netherlands Board of Tourism (Holland.com): tulip season in the Netherlands', url: 'https://www.holland.com/global/tourism/get-inspired/dutch-icons/tulip-season-in-the-netherlands', checked: '2026-11-22'}
 guides:
 - slug: 2027-total-solar-eclipse
   title: How to see the 2027 total solar eclipse safely, and where
@@ -782,3 +935,83 @@ guides:
   - {label: 'Japan National Tourism Organization: Jigokudani Snow Monkey Park', url: 'https://www.japan.travel/en/spot/1344/', checked: '2026-11-21'}
   - {label: 'Visit Rwanda: gorilla tracking', url: 'https://visitrwanda.com/interests/gorilla-tracking/', checked: '2026-11-21'}
   - {label: 'The Wildlife Trust of South and West Wales: Skomer Island day trips', url: 'https://www.welshwildlife.org/skomer-island-day-trips', checked: '2026-11-21'}
+- slug: photographing-the-night-sky
+  title: How to photograph the night sky
+  short: Night sky photography
+  seo_title: 'How to photograph the night sky: stars, star trails, the Moon and the aurora'
+  description: Simple camera and phone settings for stars, star trails and the Moon, how to focus in the dark, where to go and how to keep your eyes and kit safe, from NASA, the National Park Service and Royal Museums Greenwich.
+  standfirst: "You do not need an expensive camera to start. A tripod, a dark place and a few settings you can learn in daylight will get you your first starry sky. Here is how, taken from NASA, the US National Park Service and the astronomers at Royal Museums Greenwich."
+  detail:
+  - h: What you need
+    p:
+    - "Royal Museums Greenwich (RMG) advises starting simple with a camera on a tripod and not spending heavily on equipment at first. As one photographer told it: \"You don't need professional cameras and equipment to do astrophotography, just start with what you have.\""
+    - "The National Park Service's guide for Acadia National Park lists a digital camera with manual settings, a wide-angle lens and a sturdy tripod. RMG's star trails guide adds a remote or cable release, and suggests a lens of 28 mm or wider to take in as much sky and foreground as possible."
+    - "Phones work too. NASA's Guide to Smartphone Astrophotography suggests putting the phone on a tripod, setting a 5-second delay so you do not shake it, and starting with a 10-second exposure at ISO 400."
+  - h: Settings to start with
+    p:
+    - These are starting points from the official pages, not fixed rules. Take a test shot, zoom in on the screen to check the stars are sharp, then adjust.
+    table:
+      head: [Setting, Stars and the Milky Way (NPS), Star trails (RMG)]
+      rows:
+      - [Mode, Manual, Manual]
+      - [Aperture, 'The widest your lens allows; f/1.4 to f/3.5 works well', f/2 to f/9]
+      - [ISO, 'Start at 400 and go higher if needed', 200 to 600]
+      - [Shutter, '10 to 20 seconds; leave it open too long and the stars start to trail', '30 seconds a frame, many frames in a row']
+      - [Focus, 'Manual, on a distant bright light such as a star or a streetlight', 'Manual, set to infinity']
+      - [Trigger, 'A 2 to 5 second self-timer or a remote', A remote or cable release]
+    after: The NPS guide also suggests leaving white balance on auto. RMG notes that a lower ISO gives less noise but shows fewer faint stars.
+  - h: Focusing in the dark
+    p:
+    - The NPS says to focus manually on a distant bright light, such as a star, a streetlight or a house. RMG's photographers suggest learning to focus by hand in daylight first, and getting to know which button does what before you go out, because you will be doing it in the dark.
+  - h: Star trails
+    p:
+    - "RMG's guide to star trails points the camera at the celestial pole, north in the northern hemisphere, for circles, or east or west for straight lines. Rather than one exposure of half an hour or more, which adds noise, it recommends taking many short ones, \"100 or more shots at 30 seconds each\", and combining them afterward with free stacking software."
+    - "It suggests starting a good two hours after sunset, checking the moonrise time and the forecast, and putting trees, rocks or buildings in the foreground. If you want to light the foreground with a flashlight (torch), do it at the very start or end of the sequence, so there is no gap in the trails."
+  - h: The Moon
+    p:
+    - "The Moon is bright, so it needs the opposite of star settings. RMG's guide suggests a telephoto lens of about 250 mm to start, a low ISO, and slightly underexposing \"to prevent bright details burning out\"; with an SLR on a long telescope and a tripod, a shutter speed of 1/30 of a second is fine. NASA's smartphone guide notes that a phone held behind the eyepiece of a modest telescope, or even binoculars, can do very well."
+  - h: Where and when to go
+    p:
+    - "Darkness matters most. NASA's smartphone guide calls location \"a huge factor\", though it also says not to be discouraged if you cannot travel to a dark site. The NPS suggests looking up a dark sky map, and RMG's photographers advise scouting a dark site ahead of time and choosing clear, still nights."
+    - "Give your eyes time. Forestry and Land Scotland, which runs Galloway International Dark Sky Park, advises giving your eyes 30 minutes to adjust, using a red light or a red filter on your flashlight, and checking the Moon's phase: nights around the new moon show the most stars."
+    - For the northern lights, our northern lights guide covers the alerts and the best places.
+  - h: Staying safe
+    list:
+    - "Never point a camera, phone, binoculars or telescope at the Sun without a proper solar filter. NASA says viewing any part of the bright Sun through a camera lens, binoculars or a telescope without a special-purpose solar filter secured over the front of the optics \"will instantly cause severe eye injury\", and that eclipse glasses must not be used with them: those need different filters. Ask an astronomer before using a solar filter on any optics."
+    - "For your eyes, NASA's one exception is totality in a total solar eclipse, when the Moon completely hides the Sun's bright face; put your eclipse glasses back on as soon as any bright Sun reappears. That exception is about your eyes: NASA does not say cameras or other optics are safe unfiltered then. See our guide to the 2027 eclipse."
+    - NASA's smartphone guide also warns that pointing a phone at the Sun unfiltered can damage its sensitive light meters.
+    - Night shoots are often remote. RMG's photographers advise staying aware of your surroundings, carrying a head torch with a red light and wearing warm clothes,.
+  - h: Keep it honest
+    p:
+    - "One of RMG's photographers advises against pasting the Milky Way or a giant Moon into a landscape."
+  faq:
+  - q: What settings should I use to photograph stars?
+    a: "The NPS suggests manual mode, the widest aperture your lens allows (f/1.4 to f/3.5 works well), ISO 400 to start and a shutter of 10 to 20 seconds, on a tripod with a self-timer. Focus by hand on a distant bright light."
+  - q: Can I photograph the stars with my phone?
+    a: Yes. NASA's smartphone guide suggests a tripod, a 5-second delay, a 10-second exposure and ISO 400 as a first try, as dark a site as you can reach, and a red flashlight to see what you are doing.
+  - q: How long should a star trail exposure be?
+    a: Royal Museums Greenwich recommends many 30-second shots, 100 or more, combined afterward, instead of one very long exposure, which adds noise.
+  - q: Can I photograph the Sun or a solar eclipse?
+    a: Only with a proper solar filter fitted over the front of the lens. NASA says eclipse glasses must not be used with cameras, binoculars or telescopes. NASA says the one time you can look at the Sun with your own eyes is during totality.
+  kit:
+  - name: Sturdy tripod
+    why: check its maximum load covers your camera, and that it stays steady at full height in wind
+    url: https://www.amazon.co.uk/s?k=sturdy+camera+tripod
+  - name: Phone tripod mount
+    why: check it fits your phone's width with its case on
+    url: https://www.amazon.co.uk/s?k=phone+tripod+mount
+  - name: Wireless shutter remote
+    why: check it works with your camera model
+    url: https://www.amazon.co.uk/s?k=camera+shutter+remote
+  - name: Head torch with a red light
+    why: check it has a red mode, which keeps your night vision
+    url: https://www.amazon.co.uk/s?k=head+torch+red+light
+  sources:
+  - {label: 'National Park Service: how to photograph Acadia''s night skies', url: 'https://www.nps.gov/articles/000/night-skies-photography-acadia.htm', checked: '2026-11-22'}
+  - {label: 'Royal Museums Greenwich: how to get started in astrophotography', url: 'https://www.rmg.co.uk/stories/space-astronomy/how-get-started-astrophotography', checked: '2026-11-22'}
+  - {label: 'Royal Museums Greenwich: top 10 astrophotography tips (2017)', url: 'https://www.rmg.co.uk/stories/space-astronomy/astronomy/top-10-astrophotography-tips', checked: '2026-11-22'}
+  - {label: 'Royal Museums Greenwich: how to photograph star trails', url: 'https://www.rmg.co.uk/how-photograph-star-trails', checked: '2026-11-22'}
+  - {label: 'Royal Museums Greenwich: how to photograph the Moon', url: 'https://www.rmg.co.uk/stories/space-astronomy/how-photograph-moon', checked: '2026-11-22'}
+  - {label: 'NASA: eclipse viewing safety', url: 'https://science.nasa.gov/eclipses/safety/', checked: '2026-11-22'}
+  - {label: 'NASA: A Guide to Smartphone Astrophotography (Sten Odenwald, PDF)', url: 'https://science.nasa.gov/wp-content/uploads/2023/09/Astrophotography_Guide.pdf', checked: '2026-11-22'}
+  - {label: 'Forestry and Land Scotland: Galloway International Dark Sky Park', url: 'https://forestryandland.gov.scot/visit/forest-parks/galloway-forest-park/galloway-international-dark-sky-park', checked: '2026-11-22'}

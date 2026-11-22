@@ -1154,12 +1154,20 @@ def build(make_social=True):
             e["pace"] = []
             for t in e.get("time_limit") or []:
                 assert float(t.get("km", 0)) > 0 and float(t.get("hours", 0)) > 0, f"hub {h['id']} event {e['id']}: time_limit items need km and hours"
+            # A hub may set `pace_slow_min_km` (default 12) and `pace_slow_label`; marathons use 9.9 (a 7-hour limit or longer).
+            # `no_time_limit: true` (with `time_limit_text` in the organizer's words) is for a race whose page says there is no limit.
+            _slow = float(h.get("pace_slow_min_km", 12))
+            assert not (e.get("no_time_limit") and e.get("time_limit")), f"hub {h['id']} event {e['id']}: no_time_limit or time_limit, not both"
             if e.get("time_limit"):
                 _hf = lambda x: f"{x:g}"
                 e["tl_label"] = e.get("time_limit_text") or "; ".join(f"{_hf(t['hours'])} hours for {round(t['km'] / 1.609344):,} miles ({_hf(t['km'])} km)" for t in e["time_limit"])
-                if any(t["hours"] * 60 / t["km"] >= 12 for t in e["time_limit"]):
+                if any(t["hours"] * 60 / t["km"] >= _slow for t in e["time_limit"]):
                     e["pace"].append("slow")
-            assert not e.get("time_limit_text") or e.get("time_limit"), f"hub {h['id']} event {e['id']}: time_limit_text needs time_limit"
+            elif e.get("no_time_limit"):
+                assert e.get("time_limit_text"), f"hub {h['id']} event {e['id']}: no_time_limit needs time_limit_text"
+                e["tl_label"] = e["time_limit_text"]
+                e["pace"].append("slow")
+            assert not e.get("time_limit_text") or e.get("time_limit") or e.get("no_time_limit"), f"hub {h['id']} event {e['id']}: time_limit_text needs time_limit"
             assert bool(e.get("walkers")) == bool(e.get("walkers_note")), f"hub {h['id']} event {e['id']}: walkers needs walkers_note (and the reverse)"
             if e.get("walkers"):
                 e["pace"].insert(0, "walkers")

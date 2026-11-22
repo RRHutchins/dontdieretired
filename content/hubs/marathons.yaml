@@ -23,6 +23,9 @@ series_any: Any
 none_text: No marathons match those choices yet. Try any month or any way in.
 safety: A marathon is a long, hard day on the heart, muscles and feet. Build up over months, follow your race's medical advice, and check with your GP (family doctor) before you start training if you have a heart condition or another health worry.
 bands_def: []
+# Pace filter (RUNBOOK §6u step 3, marathons 22 Nov 2026): "slow" here means a stated limit of 7 hours or more (9.9+ min per km), or no limit.
+pace_slow_min_km: 9.9
+pace_slow_label: 7 hours or more, or no limit
 event_pages: true
 # Landing pages for common filters (RUNBOOK §6u step 2, marathons 21 Nov 2026): /marathons/<slug>/. Facts on each page are
 # computed by the build; `intro` is our own short explanation of the filter only (no race facts). A page needs at least 4 races.
@@ -36,6 +39,8 @@ landings:
 - {slug: in-north-america, title: Marathons in North America, short: North America, group: Where, filter: {continent: north-america}}
 - {slug: in-asia, title: Marathons in Asia, short: Asia, group: Where, filter: {continent: asia}}
 - {slug: in-oceania, title: Marathons in Australia and New Zealand, short: Australia and NZ, group: Where, filter: {continent: oceania}}
+- {slug: in-japan, title: Marathons in Japan, short: Japan, group: Where, filter: {country_has: Japan}}
+- {slug: in-australia, title: Marathons in Australia, short: Australia, group: Where, filter: {country_has: Australia}}
 - slug: world-marathon-majors
   title: The Abbott World Marathon Majors
   short: World Marathon Majors
@@ -52,6 +57,18 @@ landings:
 - {slug: charity-places, title: Marathons with charity places, short: Charity places, group: How you get a place, filter: {entry: charity}, intro: ['A charity place means promising to raise a set sum for the charity. Each charity sets its own target and terms, so read them before you apply.']}
 - {slug: qualifying-time, title: Marathons with qualifying-time entry, short: Qualifying time, group: How you get a place, filter: {entry: qualifier}, intro: ['These races offer places, sometimes only some places, to runners with a fast enough recent time. Most have other routes in as well.']}
 - {slug: travel-packages, title: Marathons with travel packages, short: Travel packages, group: How you get a place, filter: {entry: tour}}
+- slug: seven-hours-or-more
+  title: Marathons with seven hours or more to finish
+  short: Seven hours or more
+  group: Pace
+  filter: {pace: slow}
+  intro: ['A race is listed here if its organizer''s page gives a time limit of at least seven hours for the marathon, or says there is no limit. Some count the time from the gun and some from when the last runner starts, and many also close checkpoints along the way, so read each race page before you plan to walk.']
+- slug: walkers-welcome
+  title: Marathons that welcome walkers
+  short: Walkers welcome
+  group: Pace
+  filter: {pace: walkers}
+  intro: ['A race is listed here only where the organizer''s own page says walkers are welcome or allowed, or runs a walking division. The time limit still applies, so check it against your walking pace.']
 facets:
   continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania, antarctica: Antarctica, south-america: South America}
   terrain: {road: Road, trail: Trail and track, mountain: Mountain}
@@ -103,7 +120,11 @@ events:
   entry: [ballot, charity, qualifier, tour]
   entry_note: The public ballot closes in early May for the next year's race (for 2027, on 1 May 2026), with results by early July. Missed out? Apply for a charity place, use an international tour operator, or, if you live in the UK and have a fast enough marathon time for your age, apply for Good For Age (6,000 places a year). Runners must be 18 or over.
   note: For the first and only time the 2027 race runs over two days, Saturday 24 and Sunday 25 April 2027, with 100,000 runners. 1,338,544 people applied in the 2027 ballot.
+  time_limit: [{km: 42.2, hours: 8}]
+  time_limit_text: '8 hours after the last participant starts (from the 2026 event guide; the 2027 race runs over two days)'
   link: {label: 'London Marathon Events: TCS London Marathon', url: 'https://www.londonmarathonevents.co.uk/london-marathon', checked: '2026-11-19'}
+  more:
+  - {label: 'London Marathon 2026 participant event guide (PDF)', url: 'https://www.londonmarathonevents.co.uk/sites/default/files/2026-04/TCSLM-2026-Event-Guide_FINAL_v2.pdf', checked: '2026-11-22'}
 - id: cape-town-marathon
   name: Sanlam Cape Town Marathon
   series: wmm
@@ -148,7 +169,11 @@ events:
   entry: [ballot]
   entry_note: Places are drawn by lottery, with registration in October and early November and results in early December. Fast runners with a qualifying time send proof instead, which the organiser checks; a place is not guaranteed, and only runners whose proof is not accepted go into the general lottery. Members of the race's Jubilee Club have guaranteed entry.
   note: The 2027 race, the first as the GENERALI BERLIN-MARATHON, is on Sunday 26 September 2027, starting on Straße des 17. Juni by the Brandenburg Gate.
+  time_limit: [{km: 42.2, hours: 6.25}]
+  time_limit_text: '6 hours 15 minutes'
   link: {label: 'Berlin Marathon: registration and lottery', url: 'https://www.generali-berlin-marathon.com/en/registration/run', checked: '2026-11-20'}
+  more:
+  - {label: 'Berlin Marathon: race day for runners', url: 'https://www.generali-berlin-marathon.com/en/race-weekend/race-day-for-participants', checked: '2026-11-22'}
 - id: chicago-marathon
   name: Chicago Marathon
   series: wmm
@@ -163,7 +188,10 @@ events:
   entry: [ballot, qualifier, charity, tour]
   entry_note: A three-week application window in October for the next year's race, with a non-guaranteed drawing (free to apply) and guaranteed paths such as time qualifiers. After that, places come through the official charity teams (each sets a minimum to raise) and official tour operators.
   note: The 2027 race is on Sunday 10 October 2027. Finishers of every 2027 Chicago Distance Series event get guaranteed entry to the 50th race in 2028.
+  time_limit: [{km: 42.2, hours: 6.5}]
   link: {label: 'Chicago Marathon: apply', url: 'https://www.chicagomarathon.com/apply/', checked: '2026-11-19'}
+  more:
+  - {label: 'Chicago Marathon: event rules', url: 'https://www.chicagomarathon.com/event-info/rules-safety/event-rules/', checked: '2026-11-22'}
 - id: new-york-city-marathon
   name: New York City Marathon
   series: wmm
@@ -194,7 +222,11 @@ events:
   entry: [open, charity]
   entry_note: Public places go on sale soon after each race and sell out fast (for 2027, over 40,000 went in ten days). After that, the only way in is through one of the official charity partners.
   note: The 2027 race is on Sunday 18 April 2027. The organisers call it the UK's second largest marathon. The cut-off is six hours.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: '6 hours (from the 2026 participant guide)'
   link: {label: 'Manchester Marathon: how to get a place in 2027', url: 'https://www.manchestermarathon.co.uk/news/how-to-get-a-place-in-the-2027-adidas-manchester-marathon/', checked: '2026-11-19'}
+  more:
+  - {label: 'Manchester Marathon 2026 participant guide (PDF)', url: 'https://www.manchestermarathon.co.uk/wp-content/uploads/sites/9/2026/03/2026-Participant-Guide-adidas-Manchester-Marathon.pdf', checked: '2026-11-22'}
 - id: edinburgh-marathon
   name: Edinburgh Marathon
   series: independent
@@ -221,10 +253,11 @@ events:
   terrain: [road]
   format: single
   month: [9]
-  entry: [open, charity]
-  entry_note: Entries are sold direct online, with no ballot, and through charities. Register your interest to hear when early-bird entry opens. The 2025 race sold out.
+  entry: [register]
+  entry_note: The race is now run by Caledonian Group Events, whose race page does not say how places are allocated.
   note: The 2027 race is on Sunday 26 September 2027. Coaches take runners to a moorland start between Whitebridge and Fort Augustus; the course follows the south-eastern shore of Loch Ness and finishes in Inverness. The cut-off is seven hours.
-  link: {label: 'Loch Ness Marathon: the race', url: 'https://lochnessmarathon.com/event/loch-ness-marathon/', checked: '2026-11-19'}
+  time_limit: [{km: 42.2, hours: 7}]
+  link: {label: 'Caledonian Group Events: Loch Ness Marathon', url: 'https://www.caledoniangroupevents.co.uk/loch-ness-marathon/event/loch-ness-marathon', checked: '2026-11-22'}
 # ---------- Europe ----------
 - id: paris-marathon
   name: Paris Marathon
@@ -330,8 +363,9 @@ events:
   month: [4]
   entry: [ballot, tour]
   entry_note: A two-week random drawing in late August and early September for the following April; general registration then sells out. Marathon Tours and Travel and other packages are listed on the race site. About 4,500 entrants, aged 16 and over.
-  note: Always the last Sunday in April; the 40th race is on Sunday 25 April 2027. The organisers call it a challenging course. The road reopens at 1pm, a cut-off of about six hours (13:45 a mile).
-  link: {label: 'Big Sur International Marathon: the marathon', url: 'https://www.bigsurmarathon.org/races/marathon/', checked: '2026-11-19'}
+  note: Always the last Sunday in April; the 40th race is on Sunday 25 April 2027. The organisers call it a challenging course. The time limit is six hours, and the race ends at 1pm (13:45 a mile), with checkpoints at mile 15.2 by 10:30am and mile 21.2 by 11:50am.
+  time_limit: [{km: 42.2, hours: 6}]
+  link: {label: 'Big Sur International Marathon: the marathon', url: 'https://www.bigsurmarathon.org/races/marathon/', checked: '2026-11-22'}
 - id: honolulu-marathon
   name: Honolulu Marathon
   series: independent
@@ -346,7 +380,11 @@ events:
   entry: [open]
   entry_note: Anyone can enter; there is no qualifying time. Registration for the 2027 race opens on Monday 14 December 2026, and online entry closes in early December, with late entries at the expo.
   note: There is no time limit, and the organisers say many people walk part or all of the course; the finish stays open until the last person is in. Always the second Sunday in December, starting at 5am.
-  link: {label: 'Honolulu Marathon: FAQs', url: 'https://www.honolulumarathon.org/key-information/faqs', checked: '2026-11-19'}
+  no_time_limit: true
+  time_limit_text: 'None: the organizers say there is no cut-off time'
+  walkers: true
+  walkers_note: 'The organizers say walkers are welcome, and there is no cut-off.'
+  link: {label: 'Honolulu Marathon: FAQs', url: 'https://www.honolulumarathon.org/key-information/faqs', checked: '2026-11-22'}
 - id: marine-corps-marathon-race
   name: Marine Corps Marathon
   series: independent
@@ -361,7 +399,9 @@ events:
   entry: [register]
   entry_note: General registration opens on a set date in the spring (6 April in 2026; 3 April for 2027), after earlier windows for some groups such as active-duty service members and Runners Club members; it is not a lottery on the 2026 race page. Finishers of the Marine Corps 17.75K in March get guaranteed entry; that race's registration opens on 1 January.
   note: The 2027 race is on Sunday 31 October 2027. It pays no prize money, hence its nickname, The People's Marathon. Runners must hold a pace of 14 minutes a mile and pass the course checkpoints in time.
-  link: {label: 'Marine Corps Marathon: the race', url: 'https://www.marinemarathon.com/event/marine-corps-marathon/', checked: '2026-11-19'}
+  time_limit: [{km: 1.609344, hours: 0.233333}]
+  time_limit_text: 'A minimum pace of 14 minutes a mile, and every course checkpoint ("gauntlet") cleared in time'
+  link: {label: 'Marine Corps Marathon: the race', url: 'https://www.marinemarathon.com/event/marine-corps-marathon/', checked: '2026-11-22'}
 # ---------- Asia ----------
 - id: great-wall-marathon
   name: Great Wall Marathon
@@ -396,7 +436,10 @@ events:
   - {label: 'Run Rome The Marathon: the marathon', url: 'https://www.runromethemarathon.com/en/home-2025-en-2/marathon/', checked: '2026-11-19'}
   - {label: 'Run Rome The Marathon: relay and charity programme', url: 'https://www.runromethemarathon.com/en/home-2025-en-2/relay-charity-program/', checked: '2026-11-19'}
   note: The 32nd race is on Sunday 14 March 2027, starting at about 8.30am. The time limit is 7 hours, and the organisers say fitwalkers are welcome. The route passes the Colosseum, St Peter's, Castel Sant'Angelo and Piazza Navona.
-  link: {label: 'Run Rome The Marathon 2027: rules (PDF)', url: 'https://www.runromethemarathon.com/wp-content/uploads/2026/04/RRTM27-regolamento-inglese-23-4-2026.pdf', checked: '2026-11-19'}
+  time_limit: [{km: 42.2, hours: 7}]
+  walkers: true
+  walkers_note: 'The organizers say you can do the marathon walking, too, and that fitwalkers are welcome.'
+  link: {label: 'Run Rome The Marathon 2027: rules (PDF)', url: 'https://www.runromethemarathon.com/wp-content/uploads/2026/04/RRTM27-regolamento-inglese-23-4-2026.pdf', checked: '2026-11-22'}
 - id: dublin-marathon
   name: Irish Life Dublin Marathon
   series: independent
@@ -411,9 +454,13 @@ events:
   entry: [ballot, charity, qualifier, tour]
   entry_note: The main way in is a ballot; the 2027 ballot ran from 12 to 17 November 2026. Charity places come through the official charity partners on Realbuzz, and there are approved international tour operators and a Good For Age route for runners with a fast enough time.
   note: The 2027 race is on Sunday 24 October 2027 at 8.45am, for up to 22,500 runners, from Leeson Street Lower to Mount Street Upper. The course stays open for seven hours from when the last runner crosses the start, and tail walkers support those finishing near the cut-off.
+  time_limit: [{km: 42.2, hours: 7}]
+  time_limit_text: '7 hours from when the last runner crosses the start line'
+  walkers: true
+  walkers_note: 'The organizers'' FAQ says runners, joggers and walkers all take part; walkers start in their allocated wave.'
   link: {label: 'Dublin Marathon: 2027 dates and entry information', url: 'https://irishlifedublinmarathon.ie/2027-event-dates-entry-information/', checked: '2026-11-19'}
   more:
-  - {label: 'Dublin Marathon: FAQs', url: 'https://irishlifedublinmarathon.ie/faqs-frequentlyaskedquestions/', checked: '2026-11-19'}
+  - {label: 'Dublin Marathon: FAQs', url: 'https://irishlifedublinmarathon.ie/faqs-frequentlyaskedquestions/', checked: '2026-11-22'}
 - id: vienna-city-marathon
   name: Vienna City Marathon
   series: independent
@@ -443,9 +490,12 @@ events:
   entry: [open]
   entry_note: Registration for 2027 runs from 9 April 2026 to 15 February 2027, or until the 20,000 places are gone; after that a waiting list offers places released by other runners.
   note: The 2027 race is on Sunday 21 February 2027, starting at 8.30am on Avenida de María Luisa and finishing on Paseo de las Delicias. The time limit is 6 hours from the last runner's start, with the finish closing at 3pm.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: '6 hours from the last runner''s start'
   link: {label: 'Zurich Seville Marathon: registrations', url: 'https://www.zurichmaratonsevilla.es/en/zms-registrations', checked: '2026-11-19'}
   more:
   - {label: 'Zurich Maratón de Sevilla: FAQ (Spanish)', url: 'https://www.zurichmaratonsevilla.es/zm2-preguntas-frecuentes', checked: '2026-11-19'}
+  - {label: 'Zurich Seville Marathon: FAQ', url: 'https://www.zurichmaratonsevilla.es/en/zms-faq', checked: '2026-11-22'}
 - id: prague-marathon
   name: Vodafone Prague Marathon
   series: independent
@@ -477,9 +527,11 @@ events:
   entry: [open]
   entry_note: Online registration is open until race day unless the race sells out. Marathon runners must be 18 or over.
   note: The 2027 race is on 21 August 2027. The marathon is one lap, mostly on city streets, starting outside the University of Iceland on Sæmundargata and finishing on Geirsgata. Runners have 6 hours 30 minutes.
+  time_limit: [{km: 42.2, hours: 6.5}]
   link: {label: 'Reykjavik Marathon: the race', url: 'https://www.rmi.is/en/the-race', checked: '2026-11-19'}
   more:
   - {label: 'Reykjavik Marathon: FAQ', url: 'https://www.rmi.is/en/faq', checked: '2026-11-19'}
+  - {label: 'Reykjavik Marathon: the marathon', url: 'https://www.rmi.is/en/marathon', checked: '2026-11-22'}
 - id: midnight-sun-marathon
   name: Midnight Sun Marathon
   series: independent
@@ -511,7 +563,9 @@ events:
   entry: [register]
   entry_note: Registration for 2027 reopens on 2 March 2027; the 2026 race sold out.
   note: From 2027 the race moves to mid-October, after extreme heat cancelled the Sunday events in 2023; the 2027 race is on Sunday 17 October 2027 at 8am, pending permits. Runners must be able to finish in 6 hours 30 minutes from when the start line closes, an average of 14:52 a mile. The route runs from downtown Minneapolis past the chain of lakes to St Paul.
-  link: {label: 'Twin Cities Marathon: the race', url: 'https://www.tcmevents.org/alleventsandraces/medtronictwincitiesmarathonweekend/medtronictwincitiesmarathon', checked: '2026-11-19'}
+  time_limit: [{km: 42.2, hours: 6.5}]
+  time_limit_text: '6 hours 30 minutes from when the start line closes'
+  link: {label: 'Twin Cities Marathon: the race', url: 'https://www.tcmevents.org/alleventsandraces/medtronictwincitiesmarathonweekend/medtronictwincitiesmarathon', checked: '2026-11-22'}
   more:
   - {label: 'Twin Cities Marathon: the move to mid-October', url: 'https://www.tcmevents.org/post/starting-in-2027-twin-cities-marathon-weekend-moves-to-mid-october', checked: '2026-11-19'}
 - id: philadelphia-marathon
@@ -528,7 +582,11 @@ events:
   entry: [register, charity]
   entry_note: No qualifying time is needed. The 2026 races sold out. Runners must be 16 or over. Only the charities on the race's charity page may hand out places.
   note: The 2026 race is on 22 November 2026 at 7am, starting at 22nd Street and the Benjamin Franklin Parkway; the 2027 date was not yet published. Walkers are allowed on the course, which is open for 7 hours, at a 16-minute-mile pace.
-  link: {label: 'Philadelphia Marathon: FAQ', url: 'https://www.philadelphiamarathon.com/info/faq/', checked: '2026-11-19'}
+  time_limit: [{km: 42.2, hours: 7}]
+  time_limit_text: '7 hours, a pace of 16 minutes a mile'
+  walkers: true
+  walkers_note: 'The FAQ says the marathon is walker-friendly and open to all, with few restrictions.'
+  link: {label: 'Philadelphia Marathon: FAQ', url: 'https://www.philadelphiamarathon.com/info/faq/', checked: '2026-11-22'}
 - id: toronto-waterfront-marathon
   name: TCS Toronto Waterfront Marathon
   series: independent
@@ -543,7 +601,12 @@ events:
   entry: [register]
   entry_note: The marathon is capped at 9,500 runners, and the 2026 race sold out.
   note: The 2026 race was on 18 October 2026, starting on Yonge Street north of Gerrard and finishing on Bay Street north of Queen, through downtown and along the waterfront. The 2027 races are on 16 and 17 October 2027. The time limit is 6 hours, and the start line closes after the walking corral.
-  link: {label: 'Toronto Waterfront Marathon: event info', url: 'https://www.torontowaterfrontmarathon.com/event-info/', checked: '2026-11-19'}
+  time_limit: [{km: 42.2, hours: 6}]
+  walkers: true
+  walkers_note: 'The organizer runs a marathon walk division, with its own walking corral at the start.'
+  link: {label: 'Toronto Waterfront Marathon: event info', url: 'https://www.torontowaterfrontmarathon.com/event-info/', checked: '2026-11-22'}
+  more:
+  - {label: 'Toronto Waterfront Marathon: the walk divisions', url: 'https://www.torontowaterfrontmarathon.com/highlighting-the-walk-divisions-of-the-tcs-toronto-waterfront-marathon-and-half-marathon/', checked: '2026-11-22'}
 - id: gold-coast-marathon
   name: ASICS Gold Coast Marathon
   series: independent
@@ -558,7 +621,9 @@ events:
   entry: [open]
   entry_note: Entries for 2026 opened on 2 December 2025 and the marathon sold out. Runners must be 18 or over.
   note: The 2026 race was on Sunday 5 July 2026 at 6.15am, beside the surf beaches to Runaway Bay and finishing by the Broadwater in Southport. The 2027 date was not yet published. The time limit is 6 hours 40 minutes from the last wave start. The organisers call it Australia's flattest, fastest and most scenic course.
-  link: {label: 'Gold Coast Marathon: the marathon', url: 'https://goldcoastmarathon.com.au/races/marathon/', checked: '2026-11-19'}
+  time_limit: [{km: 42.2, hours: 6.67}]
+  time_limit_text: '6 hours 40 minutes from the last wave start'
+  link: {label: 'Gold Coast Marathon: the marathon', url: 'https://goldcoastmarathon.com.au/races/marathon/', checked: '2026-11-22'}
   more:
   - {label: 'Gold Coast Marathon: enter', url: 'https://goldcoastmarathon.com.au/enter/', checked: '2026-11-19'}
 - id: antarctica-marathon
@@ -591,7 +656,9 @@ events:
   entry: [open]
   entry_note: Entry is online through the organiser's registration, and every runner registers themselves. The organiser announced on 2 October 2026 that all 20,000 marathon places for 2027 had gone and the race was sold out.
   note: The 41st race is on Sunday 25 April 2027. Start 1 is on Karolinenstraße from 08:30 to around 09:00, with a second start at 09:00. The race officially ends six hours after the last runner crosses the start line. Das Zehntel, a shorter race, is the day before.
-  link: {label: 'Haspa Marathon Hamburg: race info marathon', url: 'https://haspa-marathon-hamburg.de/en/race-info-marathon/', checked: '2026-11-20'}
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: '6 hours after the last runner crosses the start line'
+  link: {label: 'Haspa Marathon Hamburg: race info marathon', url: 'https://haspa-marathon-hamburg.de/en/race-info-marathon/', checked: '2026-11-22'}
   more:
   - {label: 'Haspa Marathon Hamburg: 2027 is officially sold out', url: 'https://haspa-marathon-hamburg.de/en/haspa-marathon-hamburg-2027-is-officially-sold-out/', checked: '2026-11-20'}
 - id: barcelona-marathon
@@ -608,7 +675,9 @@ events:
   entry: [open]
   entry_note: Online entry, valid once paid. Entry closes when 37,000 runners have registered, or on 7 March 2027 if that comes first. Runners must be 18 on race day.
   note: The 2027 race is on Sunday 14 March 2027, starting at 08:30. The time limit is six hours from when the last runner crosses the start line, and the race ends at 16:00.
-  link: {label: 'Zurich Marató Barcelona: regulation', url: 'https://zurichmaratobarcelona.es/en/i-am-a-runner/regulation/', checked: '2026-11-20'}
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: '6 hours from when the last runner crosses the start line'
+  link: {label: 'Zurich Marató Barcelona: regulation', url: 'https://zurichmaratobarcelona.es/en/i-am-a-runner/regulation/', checked: '2026-11-22'}
 - id: lisbon-marathon
   name: EDP Lisbon Marathon
   series: independent
@@ -655,7 +724,9 @@ events:
   entry: [open, charity]
   entry_note: Online entry closes when the race sells out. There is also a charity route through the official nonprofit partners or the organiser's own Team TMF, where you commit to fundraising. Runners must be 16 or over on race day.
   note: The 2027 race is on Sunday 7 March 2027; the full field starts at 7am, with earlier waves (times subject to change). The finish is on Santa Monica Boulevard at Avenue of the Stars. The time limit is 6 hours 30 minutes after the last runner crosses the start line.
-  link: {label: 'The McCourt Foundation: Los Angeles Marathon FAQs and race rules', url: 'https://www.mccourtfoundation.org/event/los-angeles-marathon/faqs/', checked: '2026-11-20'}
+  time_limit: [{km: 42.2, hours: 6.5}]
+  time_limit_text: '6 hours 30 minutes after the last runner crosses the start line'
+  link: {label: 'The McCourt Foundation: Los Angeles Marathon FAQs and race rules', url: 'https://www.mccourtfoundation.org/event/los-angeles-marathon/faqs/', checked: '2026-11-22'}
 - id: grandmas-marathon
   name: Grandma's Marathon
   series: independent
@@ -670,7 +741,9 @@ events:
   entry: [open, charity]
   entry_note: Entry opened online on 1 October 2026 and the 2027 marathon is sold out. Places remain through the race's charity partners (terms vary by charity), donation entries for its Young Athletes Foundation, and official bib transfers until 1 May.
   note: The 2027 race is on Saturday 19 June 2027. The time limit is seven hours; after it, runners move onto the pavement.
-  link: {label: "Grandma's Marathon: the marathon", url: 'https://grandmasmarathon.com/the-marathon/grandmas-marathon/', checked: '2026-11-20'}
+  time_limit: [{km: 42.2, hours: 7}]
+  time_limit_text: '7 hours, about 16 minutes a mile'
+  link: {label: "Grandma's Marathon: the marathon", url: 'https://grandmasmarathon.com/the-marathon/grandmas-marathon/', checked: '2026-11-22'}
 - id: seoul-marathon
   name: Seoul Marathon
   series: independent
@@ -732,7 +805,9 @@ events:
   entry: [ballot, register]
   entry_note: General entries for the half and full marathon go through a draw (sign-up for the 2027 marathon draw ran from 31 August to 13 September 2026). The rules say foreign runners can enter through the official ticketing platform, GO DREAM, without the draw. Marathon runners must be 20 by 31 December 2027.
   note: The 2027 race is on Sunday 30 May 2027, with a wave start at times to be announced. The time limit is six hours from the start of the last wave. The rules are in Portuguese.
-  link: {label: 'Maratona do Rio: official 2027 rules (PDF, Portuguese)', url: 'https://static.maratonadorio.com.br/media/upload/documento/a74b987c047b40a88a20461744586bd6.pdf', checked: '2026-11-20'}
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: '6 hours from the start of the last wave'
+  link: {label: 'Maratona do Rio: official 2027 rules (PDF, Portuguese)', url: 'https://static.maratonadorio.com.br/media/upload/documento/a74b987c047b40a88a20461744586bd6.pdf', checked: '2026-11-22'}
 - id: melbourne-marathon
   name: Nike Melbourne Marathon
   series: independent
@@ -747,7 +822,9 @@ events:
   entry: [ballot, charity, qualifier, tour]
   entry_note: For 2026, places came through ballots, charity partners (with a fundraising target), a time standard, official travel packages and guaranteed-access programmes. A waitlist for 2027 is open. Runners must be 18 or over.
   note: The 2026 race was on Sunday 11 October at 6.15am, with a course cut-off of 7 hours 45 minutes (gun time). No 2027 date was published when we checked.
-  link: {label: 'Nike Melbourne Marathon Festival: the marathon', url: 'https://melbournemarathon.com.au/nike-melbourne-marathon/', checked: '2026-11-20'}
+  time_limit: [{km: 42.2, hours: 7.75}]
+  time_limit_text: '7 hours 45 minutes (gun time)'
+  link: {label: 'Nike Melbourne Marathon Festival: the marathon', url: 'https://melbournemarathon.com.au/nike-melbourne-marathon/', checked: '2026-11-22'}
   more:
   - {label: 'Nike Melbourne Marathon Festival: entry avenues', url: 'https://melbournemarathon.com.au/entry-avenues-to-the-nike-melbourne-marathon-festival/', checked: '2026-11-20'}
 # ---------- Added 21 Nov 2026 (build-out run 3) ----------
@@ -765,9 +842,11 @@ events:
   entry: [register]
   entry_note: You enter online. Late entry on site is possible while starting places remain. The pages we opened do not say how places are allocated.
   note: The next race is on Sunday 31 October 2027, starting at 10am. The finish is inside the Festhalle and stays open until 4.45pm; the course can be completed in 6 hours (net time).
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: '6 hours (net time)'
   link: {label: 'Mainova Frankfurt Marathon: the marathon', url: 'https://www.frankfurt-marathon.com/en/yourrun/marathon/', checked: '2026-11-21'}
   more:
-  - {label: 'Mainova Frankfurt Marathon: information', url: 'https://www.frankfurt-marathon.com/en/yourrun/marathon/information/', checked: '2026-11-21'}
+  - {label: 'Mainova Frankfurt Marathon: information', url: 'https://www.frankfurt-marathon.com/en/yourrun/marathon/information/', checked: '2026-11-22'}
 - id: madrid-marathon
   name: Madrid Marathon (Zurich Rock 'n' Roll Running Series Madrid)
   series: independent
@@ -799,7 +878,8 @@ events:
   entry: [register, tour]
   entry_note: Runners from abroad enter online through the SPORT UP site (open until 24 January 2027), or by post through the agency Prêt à Partir; Moroccan and resident runners enter through the Grand Atlas Association. The organisers also sell hotel packages that include a race number.
   note: The 37th edition is on Sunday 31 January 2027, starting at 7.45am. The time limit is 5 hours 30 minutes.
-  link: {label: 'Marrakech Marathon 2027: the marathon', url: 'https://www.marathon-marrakech.com/en/races/marrakech-marathon', checked: '2026-11-21'}
+  time_limit: [{km: 42.2, hours: 5.5}]
+  link: {label: 'Marrakech Marathon 2027: the marathon', url: 'https://www.marathon-marrakech.com/en/races/marrakech-marathon', checked: '2026-11-22'}
   more:
   - {label: 'Marrakech Marathon: registration', url: 'https://www.marathon-marrakech.com/en/registration', checked: '2026-11-21'}
 - id: taipei-marathon
@@ -831,7 +911,8 @@ events:
   entry: [ballot, qualifier, charity]
   entry_note: Public places are drawn by ballot. Priority entries are confirmed only after the organiser checks the runner's results. Selected charities get places for their runners (the 2027 charity application has closed).
   note: The 2027 race is on Sunday 17 January 2027. The full course has a time limit of 6 hours.
-  link: {label: 'Hong Kong Marathon: race information', url: 'https://www.hkmarathon.com/race-information', checked: '2026-11-21'}
+  time_limit: [{km: 42.2, hours: 6}]
+  link: {label: 'Hong Kong Marathon: race information', url: 'https://www.hkmarathon.com/race-information', checked: '2026-11-22'}
   more:
   - {label: 'Hong Kong Marathon: charity programme', url: 'https://www.hkmarathon.com/marathon-charity-programme', checked: '2026-11-21'}
   - {label: 'Hong Kong Marathon: 5km Harbourfront Run', url: 'https://www.hkmarathon.com/harbourfront-run', checked: '2026-11-21'}
@@ -849,7 +930,9 @@ events:
   entry: [ballot, open]
   entry_note: Overseas runners have their own 3,000 marathon places, first come, first served (the 2027 window has closed). The general category was oversubscribed for 2027, so its runners were chosen by lottery. Runners must be born before 1 April 2008.
   note: The 2027 race is on Sunday 21 February 2027, rain or shine, starting at 9am. The time limit is 6 hours from the gun, with eight checkpoints; runners who miss a checkpoint cannot continue.
-  link: {label: 'Kyoto Marathon 2027: application guidelines', url: 'https://kyoto-marathon.com/en/entry/', checked: '2026-11-21'}
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: '6 hours from the gun'
+  link: {label: 'Kyoto Marathon 2027: application guidelines', url: 'https://kyoto-marathon.com/en/entry/', checked: '2026-11-22'}
   more:
   - {label: 'Kyoto Marathon: general entries over capacity (Japanese)', url: 'https://kyoto-marathon.com/news/202607238774/', checked: '2026-11-21'}
 - id: monumental-marathon
@@ -866,9 +949,11 @@ events:
   entry: [open]
   entry_note: Registration opens on 1 January and closes in early November, or sooner if the race sells out (the 2026 races sold out). Registration for 2027 reopens on 1 January 2027.
   note: The 2026 race was on Saturday 7 November 2026; the organiser's page shows 6 November 2027 next. The time limit is 7 hours, a minimum pace of 16 minutes a mile. The organisers call it "a fast and flat 26.2 mile course".
+  time_limit: [{km: 42.2, hours: 7}]
+  time_limit_text: '7 hours, a pace of 16 minutes a mile'
   link: {label: 'Monumental Marathon: the marathon', url: 'https://monumentalmarathon.com/races/cno-financial-indianapolis-monumental-marathon/', checked: '2026-11-21'}
   more:
-  - {label: 'Monumental Marathon: 2026 FAQ', url: 'https://monumentalmarathon.com/participants/faq-2026/', checked: '2026-11-21'}
+  - {label: 'Monumental Marathon: 2026 FAQ', url: 'https://monumentalmarathon.com/participants/faq-2026/', checked: '2026-11-22'}
 - id: california-international-marathon
   name: California International Marathon
   series: independent
@@ -883,9 +968,11 @@ events:
   entry: [open, charity]
   entry_note: Places are released first come, first served, in tiers. There is also an entry route with a required charity donation, and a Gold Entry Draw. For 2026 all of these have sold out or closed; two-person relay teams were still open when we checked.
   note: The 2026 race is on Sunday 6 December 2026. It is a one-way course, so runners take a bus to the start, and the start line closes at 7.30am. Sweep runners follow a 6-hour finish pace, and the finish closes at 1.30pm.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 'The course reopens at a 6-hour finish pace (13:44 a mile)'
   link: {label: 'California International Marathon: registration', url: 'https://runcim.org/registration/', checked: '2026-11-21'}
   more:
-  - {label: 'California International Marathon: general information and FAQs', url: 'https://runcim.org/general-information-faqs/', checked: '2026-11-21'}
+  - {label: 'California International Marathon: general information and FAQs', url: 'https://runcim.org/general-information-faqs/', checked: '2026-11-22'}
 - id: auckland-marathon
   name: Barfoot & Thompson Runaway Auckland Marathon
   series: independent
@@ -899,11 +986,213 @@ events:
   month: [11]
   entry: [register]
   entry_note: Entries close once the event is sold out. The pages we opened do not say how places are allocated. Wheelchair entrants must apply.
-  note: The 2026 race was on Sunday 1 November 2026, and the organiser's home page gives Sunday 31 October 2027 next. The cut-off is 7 hours, with earlier cut-offs at 31 km and 40 km.
-  link: {label: 'Auckland Marathon: the marathon', url: 'https://aucklandmarathon.co.nz/race-info/full-marathon/', checked: '2026-11-21'}
+  note: The 2026 race was on Sunday 1 November 2026, and the organiser's home page gives Sunday 31 October 2027 next. The cut-off is 7 hours, with earlier cut-offs at 10, 14, 31, 33, 36 and 40 km.
+  time_limit: [{km: 42.2, hours: 7}]
+  link: {label: 'Auckland Marathon: the marathon', url: 'https://aucklandmarathon.co.nz/race-info/full-marathon/', checked: '2026-11-22'}
   more:
   - {label: 'Auckland Marathon: entry information', url: 'https://aucklandmarathon.co.nz/entry-info/entry-info/', checked: '2026-11-21'}
   - {label: 'Auckland Marathon: home', url: 'https://aucklandmarathon.co.nz/', checked: '2026-11-21'}
+# ---------- Added 22 Nov 2026 (build-out run 4) ----------
+- id: stockholm-marathon
+  name: adidas Stockholm Marathon
+  series: independent
+  place: Stockholm, finishing in the 1912 Olympic Stadium
+  country: Sweden
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Entry is online. The page we opened does not say how places are allocated or when entry closes. Runners must be 18 or over (born in 2009 or earlier).
+  note: The 2027 race is on 29 May 2027, with a provisional start at 12 noon. The maximum time allowed is 6 hours 30 minutes, under the Swedish Police Authority permit, with four checkpoints whose cut-offs apply whenever you crossed the start line. The finish is inside the 1912 Olympic Stadium.
+  time_limit:
+  - {km: 42.2, hours: 6.5}
+  time_limit_text: 6 hours 30 minutes, under the Swedish Police Authority permit
+  link: {label: 'Stockholm Marathon 2027: about the race', url: 'https://stockholmmarathon.se/eng/eng-lopare/', checked: '2026-11-22'}
+- id: copenhagen-marathon
+  name: Copenhagen Marathon
+  series: independent
+  place: Copenhagen
+  country: Denmark
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [ballot]
+  entry_note: From 2027 places are drawn at random from everyone who enters the lottery. Entering the lottery is free, one entry per person, and you can enter as a group of up to three. The 2027 lottery ran from 13 May to 3 June 2026 and has closed; runners who were drawn had 48 hours to complete registration and pay.
+  note: The 2027 race is on 9 May 2027. The organizers say their goal is to welcome 30,000 runners to the start line.
+  link: {label: 'Copenhagen Marathon 2027: entries allocated through a lottery', url: 'https://copenhagenmarathon.dk/en/entries-for-copenhagen-marathon-2027-will-be-allocated-through-a-lottery/', checked: '2026-11-22'}
+- id: florence-marathon
+  name: Estra Firenze Marathon
+  series: independent
+  place: Florence, starting in Piazza Duomo
+  country: Italy
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [11]
+  entry: [open]
+  entry_note: Places are limited to 13,000 runners. Registration for 2026 closed on 20 November 2026, and the organizers may close it earlier if the race sells out. Non-Italian runners need a card from a World Athletics-affiliated federation, or a RUNCARD plus a health form; foreign runners with neither can only take part in the non-competitive race (timed but not ranked). Runners must be 20 or over.
+  note: The 2026 race is on Sunday 29 November 2026, starting at 8.30am. The time limit is 6 hours, with cut-offs of 3 hours at halfway and 4 hours 15 minutes at 30 km.
+  time_limit:
+  - {km: 42.2, hours: 6}
+  time_limit_text: 6 hours, with cut-offs at halfway (3 hours) and 30 km (4 hours 15 minutes)
+  link: {label: 'Firenze Marathon: marathon regulation', url: 'https://www.firenzemarathon.it/en/marathon-regulation/', checked: '2026-11-22'}
+- id: malaga-marathon
+  name: Generali Maratón Málaga
+  series: independent
+  place: Málaga, starting and finishing on the Paseo del Parque
+  country: Spain
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [11]
+  entry: [open]
+  entry_note: Online entry runs until the closing date or until the 12,000 bibs are gone, whichever comes first; any bibs left are sold at the runners' fair. Adults only.
+  note: The 2026 race was on Sunday 8 November 2026, starting at 8.30am in waves; no 2027 date is online yet. The time limit is 5 hours 30 minutes from the last official start, with timed checkpoints every 5 km; runners who miss one are disqualified.
+  time_limit:
+  - {km: 42.2, hours: 5.5}
+  time_limit_text: 5 hours 30 minutes from the last official start
+  link: {label: 'Málaga Marathon 2026: regulations', url: 'https://www.generalimaratonmalaga.com/regulations-marathon-malaga/', checked: '2026-11-22'}
+- id: venice-marathon
+  name: Venicemarathon
+  series: independent
+  place: From Villa Pisani in Stra to Riva Sette Martiri in Venice
+  country: Italy
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: Entry is online, and the 2026 rules capped the field at 10,000 athletes; the rules do not say places go first come until full, and the organizer may close entries early. Competitive runners from outside Italy need membership of a World Athletics-affiliated federation; others can enter the non-competitive race with a signed waiver. Runners must be 20 or over.
+  note: The 40th race was on Sunday 25 October 2026; no 2027 date is online yet. The time limit is 6 hours, with a cut-off of 3 hours 50 minutes at 30 km and an earlier checkpoint.
+  time_limit:
+  - {km: 42.2, hours: 6}
+  time_limit_text: 6 hours, with a cut-off of 3 hours 50 minutes at 30 km
+  link: {label: 'Venicemarathon 2026: official rulebook (PDF)', url: 'https://www.venicemarathon.it/images/2026/atleti/Official%20Rulebook%20VM42K%20-%202026.pdf', checked: '2026-11-22'}
+- id: houston-marathon
+  name: Chevron Houston Marathon
+  series: independent
+  place: Houston, Texas, from Congress Avenue at Fannin to Lamar and Crawford, by the George R. Brown Convention Center
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; also the Aramco Houston Half Marathon and the We Are Houston 5K
+  terrain: [road]
+  format: single
+  month: [1]
+  entry: [register, charity]
+  entry_note: Entry is sold in price tiers, and every marathon tier for 2027 is sold out; there is no waiting list. Charity places come through the Run for a Reason program, either by committing to a fundraising minimum for a partner charity or by making a one-time donation with a reduced-price entry; the 2027 campaign closes at noon on 29 January 2027. A qualifying time only places you in a front corral; it is not a way in.
+  note: The 2027 race is on Sunday 17 January 2027. The time limit is 6 hours (chip time), a pace of 13 minutes 45 seconds a mile.
+  time_limit:
+  - {km: 42.2, hours: 6}
+  time_limit_text: 6 hours (chip time), a pace of 13:45 a mile
+  link: {label: 'Chevron Houston Marathon: 2027 registration', url: 'https://www.chevronhoustonmarathon.com/participants/registration/', checked: '2026-11-22'}
+  more:
+  - {label: 'Chevron Houston Marathon: course info and time limits', url: 'https://www.chevronhoustonmarathon.com/race-weekend/course-info/', checked: '2026-11-22'}
+  - {label: 'Chevron Houston Marathon: Run for a Reason charity registration', url: 'https://www.chevronhoustonmarathon.com/rfar-charity-race-registration/', checked: '2026-11-22'}
+  - {label: 'Chevron Houston Marathon: FAQ', url: 'https://www.chevronhoustonmarathon.com/participants/faq/', checked: '2026-11-22'}
+- id: austin-marathon
+  name: Ascension Seton Austin Marathon
+  series: independent
+  place: Austin, Texas, from 2nd and Congress to 9th and Congress
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; also a half marathon and a 5K
+  terrain: [road]
+  format: single
+  month: [2]
+  entry: [open]
+  entry_note: The marathon is limited to 10,000 entrants. As long as it does not sell out, you can register until 3pm at the expo the day before the race. Registration for 2027 opened on 12 May 2026.
+  note: The 2027 race is on Sunday 14 February 2027. The time limit is 7 hours, a pace of 16 minutes a mile, and the marathon course closes at 2.18pm; runners behind that pace are directed onto the sidewalk.
+  time_limit:
+  - {km: 42.2, hours: 7}
+  time_limit_text: 7 hours, a pace of 16 minutes a mile
+  link: {label: 'Austin Marathon: FAQ', url: 'https://youraustinmarathon.com/faq/', checked: '2026-11-22'}
+  more:
+  - {label: 'Austin Marathon: 2027 registration opens', url: 'https://youraustinmarathon.com/austin-marathon-opens-2027-registration-with-weeklong-launch-celebration/', checked: '2026-11-22'}
+  - {label: 'Austin Marathon: course', url: 'https://youraustinmarathon.com/course/', checked: '2026-11-22'}
+- id: perth-marathon
+  name: Perth Running Festival Marathon
+  series: independent
+  place: Perth, Western Australia, finishing inside a stadium
+  country: Australia
+  continent: oceania
+  km: [42.2]
+  distances: Marathon; also a half marathon and shorter runs
+  terrain: [road]
+  format: single
+  month: [8]
+  entry: [register]
+  entry_note: Entry is online through Race Roster. The page we opened does not say how places are allocated. Runners must be 18 or over. Wheelchair entries for 2027 are not open yet.
+  note: The 2027 race is on Sunday 1 August 2027. The cut-off is 7 hours. The organizers call it "a beautiful, fast and flat world-class marathon", passing Burswood Park and the Swan River.
+  time_limit:
+  - {km: 42.2, hours: 7}
+  link: {label: 'Perth Running Festival: marathon', url: 'https://perthrunningfestival.com.au/marathon/', checked: '2026-11-22'}
+- id: kobe-marathon
+  name: Kobe Marathon
+  series: independent
+  place: From Kobe City Hall to Kobe Harborland, turning near Akashi
+  country: Japan
+  continent: asia
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [11]
+  entry: [open]
+  entry_note: The overseas category (foreign nationals living in Japan, and anyone living overseas) took entries first come, first served for 2026; your place is confirmed once you pay. Runners must be born before 1 April 2008 and able to finish within 6 hours 30 minutes. A charity runner bib can be added.
+  note: The 2026 race was on Sunday 15 November 2026, with waves starting at 9am and 9.15am; no 2027 date is online yet. The 2026 race had 20,000 places for individual runners. The time limit is 7 hours from the first gun, with checkpoints along the course.
+  time_limit:
+  - {km: 42.2, hours: 7}
+  time_limit_text: 7 hours from the first gun
+  link: {label: 'Kobe Marathon 2026: application guidelines (overseas)', url: 'https://global.kobe-marathon.net/2026/global/runner/guidelines/', checked: '2026-11-22'}
+- id: beijing-marathon
+  name: Bank of China Beijing Marathon
+  series: independent
+  place: From Tian'anmen Square to the Beijing Olympic Park
+  country: China
+  continent: asia
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [ballot, qualifier]
+  entry_note: Mass runners apply online in a short window in September; if applications exceed the places, a lottery decides. Runners who finished the previous year's Beijing Marathon within set times (for example 2:40 for men and 3:10 for women aged 20 to 34) can enter directly. Everyone needs one marathon or two half marathon results from the last 24 months, and must be at least 20; runners 65 and over sign a commitment with their family.
+  note: The 2026 race was on Sunday 18 October 2026, starting at 7.30am, with a field of 32,000; no 2027 date is online yet.
+  link: {label: 'Beijing Marathon 2026: registration guidelines', url: 'https://en.beijing-marathon.com/registration-guidelines.html', checked: '2026-11-22'}
+- id: lagos-city-marathon
+  name: Access Bank Lagos City Marathon
+  series: independent
+  place: From the National Stadium, Surulere, to Eko Atlantic City, Lagos
+  country: Nigeria
+  continent: africa
+  km: [42.2]
+  distances: Marathon; also a 10 km
+  terrain: [road]
+  format: single
+  month: [2]
+  entry: [register]
+  entry_note: Entry is by online registration form. The pages we opened do not say how places are allocated. Registration for 2026 has closed.
+  note: The 2026 race was on 14 February 2026, flagged off at 6.30am, with a cut-off of 12.30pm; no 2027 date is online yet.
+  time_limit:
+  - {km: 42.2, hours: 6}
+  time_limit_text: 6 hours in 2026 (flag-off at 6.30am, cut-off at 12.30pm)
+  link: {label: 'Lagos City Marathon: general information', url: 'https://lagoscitymarathon.com/general-info/', checked: '2026-11-22'}
+  more:
+  - {label: 'Lagos City Marathon: home', url: 'https://lagoscitymarathon.com/', checked: '2026-11-22'}
 guides:
 - slug: how-to-get-a-place
   title: How to get a place in a big marathon
@@ -978,7 +1267,7 @@ guides:
   title: Marathons you can take your time over
   short: Generous time limits
   seo_title: 'Marathons with no time limit or a generous cut-off'
-  description: Big marathons where walkers and slower runners are welcome, from Honolulu, which has no time limit, to Loch Ness, Manchester, Big Sur and the Marine Corps Marathon.
+  description: Big marathons where walkers and slower runners have time, from Honolulu, which has no time limit, to Loch Ness, Philadelphia, Austin, Melbourne and London.
   standfirst: You do not have to run all 26.2 miles. Here are big marathons whose own rules give you time to walk part of the way.
   detail:
   - h: What a cut-off means
@@ -992,8 +1281,15 @@ guides:
       - ['Honolulu Marathon', 'None', 'The finish stays open until the last person is in. Many walk part or all of the course.']
       - ['Loch Ness Marathon', 'Seven hours', 'The cut-off is 5pm for a 10am start.']
       - ['Manchester Marathon', 'Six hours', 'All finishers should cross the line by 5pm.']
-      - ['Big Sur International Marathon', 'About six hours', 'The road reopens at 1pm, a pace of 13:45 a mile.']
+      - ['Big Sur International Marathon', 'Six hours', 'The race ends at 1pm, a pace of 13:45 a mile, with checkpoints at miles 15.2 and 21.2.']
       - ['Marine Corps Marathon', 'A pace of 14 minutes a mile', 'Runners must also pass checkpoints ("gauntlets") in time.']
+      - ['London Marathon', 'Eight hours (2026 guide)', 'Counted from when the last participant starts; tailwalkers keep an eight-hour pace.']
+      - ['Melbourne Marathon', '7 hours 45 minutes', 'Gun time, with earlier cut-offs on the course.']
+      - ['Philadelphia Marathon', 'Seven hours', 'A 16-minute-mile pace; the FAQ calls the race walker-friendly.']
+      - ['Grandma''s Marathon', 'Seven hours', 'About 16 minutes a mile; after that, runners move onto the sidewalk.']
+      - ['Indianapolis Monumental Marathon', 'Seven hours', 'A minimum pace of 16 minutes a mile.']
+      - ['Austin Marathon', 'Seven hours', 'A 16-minute-mile pace; the course closes at 2:18pm.']
+      - ['Perth Running Festival Marathon', 'Seven hours', 'The cut-off is 7 hours.']
   - h: Training to walk a marathon
     p:
     - Walking 26.2 miles is still a long day on your feet; at 15 minutes a mile, that is six and a half hours. Build up your longest walk gradually over months, as runners do, and practise eating and drinking on the move.
@@ -1013,7 +1309,15 @@ guides:
   sources:
   - {label: 'Honolulu Marathon: FAQs - Extra', url: 'https://www.honolulumarathon.org/faqs-extra', checked: '2026-11-19'}
   - {label: 'Honolulu Marathon: what to expect', url: 'https://www.honolulumarathon.org/key-information/what-to-expect', checked: '2026-11-19'}
-  - {label: 'Loch Ness Marathon: the race', url: 'https://lochnessmarathon.com/event/loch-ness-marathon/', checked: '2026-11-19'}
+  - {label: 'Caledonian Group Events: Loch Ness Marathon', url: 'https://www.caledoniangroupevents.co.uk/loch-ness-marathon/event/loch-ness-marathon', checked: '2026-11-22'}
   - {label: 'Manchester Marathon: Recharge Lounge FAQs', url: 'https://www.manchestermarathon.co.uk/recharge-lounge-faqs/', checked: '2026-11-19'}
-  - {label: 'Big Sur International Marathon: home', url: 'https://www.bigsurmarathon.org/', checked: '2026-11-19'}
-  - {label: 'Marine Corps Marathon: the race', url: 'https://www.marinemarathon.com/event/marine-corps-marathon/', checked: '2026-11-19'}
+  - {label: 'Big Sur International Marathon: the marathon', url: 'https://www.bigsurmarathon.org/races/marathon/', checked: '2026-11-22'}
+  - {label: 'Marine Corps Marathon: the race', url: 'https://www.marinemarathon.com/event/marine-corps-marathon/', checked: '2026-11-22'}
+  - {label: 'London Marathon 2026 participant event guide (PDF)', url: 'https://www.londonmarathonevents.co.uk/sites/default/files/2026-04/TCSLM-2026-Event-Guide_FINAL_v2.pdf', checked: '2026-11-22'}
+  - {label: 'Melbourne Marathon: the marathon', url: 'https://melbournemarathon.com.au/nike-melbourne-marathon/', checked: '2026-11-22'}
+  - {label: 'Philadelphia Marathon: FAQ', url: 'https://www.philadelphiamarathon.com/info/faq/', checked: '2026-11-22'}
+  - {label: 'Grandma''s Marathon: the marathon', url: 'https://grandmasmarathon.com/the-marathon/grandmas-marathon/', checked: '2026-11-22'}
+  - {label: 'Indianapolis Monumental Marathon: 2026 FAQ', url: 'https://monumentalmarathon.com/participants/faq-2026/', checked: '2026-11-22'}
+  - {label: 'Austin Marathon: FAQ', url: 'https://youraustinmarathon.com/faq/', checked: '2026-11-22'}
+  - {label: 'Austin Marathon: course', url: 'https://youraustinmarathon.com/course/', checked: '2026-11-22'}
+  - {label: 'Perth Running Festival: marathon', url: 'https://perthrunningfestival.com.au/marathon/', checked: '2026-11-22'}

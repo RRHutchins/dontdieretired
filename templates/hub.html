@@ -50,7 +50,7 @@
     {% if h.used.terrain | length > 1 %}<label>Terrain <select name="terrain"><option value="">Any terrain</option>{% for k, v in h.facets.terrain.items() if k in h.used.terrain %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>{% endif %}
     {% if h.months %}<label>{{ h.month_filter or "Usual month" }} <select name="month"><option value="">Any month</option>{% for n, m in h.months %}<option value="{{ n }}">{{ m }}</option>{% endfor %}</select></label>{% endif %}
     <label>{{ h.entry_label or "Entry" }} <select name="entry"><option value="">{{ h.entry_any or "Any way in" }}</option>{% for k, v in h.facets.entry.items() if k in h.used.entry %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
-    {% if h.used.pace %}<label>Pace <select name="pace"><option value="">Any pace</option>{% if 'walkers' in h.used.pace %}<option value="walkers">Walkers or early start</option>{% endif %}{% if 'slow' in h.used.pace %}<option value="slow">12+ min per km allowed</option>{% endif %}</select></label>{% endif %}
+    {% if h.used.pace %}<label>Pace <select name="pace"><option value="">Any pace</option>{% if 'walkers' in h.used.pace %}<option value="walkers">Walkers or early start</option>{% endif %}{% if 'slow' in h.used.pace %}<option value="slow">{{ h.pace_slow_label or '12+ min per km allowed' }}</option>{% endif %}</select></label>{% endif %}
     <label>{{ h.series_label or "Organiser" }} <select name="series"><option value="">{{ h.series_any or "Any organiser" }}</option>{% for k, v in h.facets.series.items() if k in h.used.series %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select></label>
     {% endif %}
     <button type="reset" class="btn btn-ghost btn-small">Clear</button>
