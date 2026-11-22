@@ -869,11 +869,12 @@ h1{line-height:1.04}
 .fl-map{background:var(--stone);border-radius:16px;padding:18px 18px 10px;margin:0 0 16px}
 .fl-map-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .fl-map-head h2{font-size:1.35rem;margin:0}
-.fl-map-tabs{display:flex;gap:8px}.fl-map-tabs .chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.fl-map-tabs{display:flex;flex-wrap:wrap;gap:8px}.fl-map-tabs .chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
 .fl-map-help{margin:.5em 0 .6em}
 .fl-map-wrap svg{display:block;width:100%;height:auto}
 .fl-map-uk svg{max-height:440px;max-width:300px;margin:0 auto}
 .fl-map-us svg{max-height:460px}
+.fl-map-ca svg{max-height:460px}
 .fl-map path{fill:#dcd8d1;stroke:#fff;stroke-width:1;vector-effect:non-scaling-stroke}
 .fl-map path.has{fill:var(--connect);cursor:pointer;transition:fill .15s}
 .fl-map path.has:hover,.fl-map path.has:focus-visible{fill:var(--gold);outline:none}

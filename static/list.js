@@ -158,11 +158,11 @@
   // The map (27 Oct 2026, Robin): tap a UK area or a US state to see the activities tied to that place.
   let place = '';
   const mapBox = $('[data-fl-map]', root);
-  const areaName = id => { const pth = mapBox && $('[data-area="' + id + '"]', mapBox); return pth ? pth.dataset.name : id; };
-  const areaCountry = id => (/^[A-Z]{3}$/.test(id) ? 'world' : /^[A-Z]{2}$/.test(id) ? 'us' : 'uk');
-  const CNAME = { uk: 'the UK', us: 'the USA', world: 'the rest of the world' };
+  const areaName = id => { if (id === 'CA*') return 'Canada'; const pth = mapBox && $('[data-area="' + id + '"]', mapBox); return pth ? pth.dataset.name : id; };
+  const areaCountry = id => (/^CA[-*]/.test(id) ? 'ca' : /^[A-Z]{3}$/.test(id) ? 'world' : /^[A-Z]{2}$/.test(id) ? 'us' : 'uk');
+  const CNAME = { uk: 'the UK', us: 'the USA', ca: 'Canada', world: 'the rest of the world' };
   function matches(li) {
-    if (place && !(' ' + li.dataset.places + ' ').includes(' ' + place + ' ')) return false;
+    if (place === 'CA*' ? !/(^| )(CA-[A-Z]{2}|CAN)( |$)/.test(li.dataset.places) : place && !(' ' + li.dataset.places + ' ').includes(' ' + place + ' ')) return false;   // CA*: anywhere in Canada
     if (qWords && !(F ? (loose ? F.some(li.dataset.text, qWords) > 0 : F.match(li.dataset.text, qWords)) : qWords.every(w => li.dataset.text.includes(w)))) return false;
     return sels.every(s => {
       const k = s.dataset.flF, v = s.value; if (!v) return true;
@@ -225,7 +225,7 @@
     const showMap = k => {
       $$('[data-map]', mapBox).forEach(w => { w.hidden = w.dataset.map !== k; });
       $$('[data-map-show]', mapBox).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mapShow === k)));
-      $('[data-map-cname]', mapBox).textContent = { uk: 'UK', us: 'USA', world: 'rest of the world' }[k]; mapBox.dataset.country = k;
+      $('[data-map-cname]', mapBox).textContent = { uk: 'UK', us: 'USA', ca: 'Canada', world: 'rest of the world' }[k]; mapBox.dataset.country = k;
       const w = $('[data-map="' + k + '"][data-src]', mapBox);
       if (w && !w.dataset.loaded) {   // the world map is a separate file, fetched the first time its tab is opened
         w.dataset.loaded = '1';
@@ -235,10 +235,10 @@
     const pickArea = id => {
       // an area narrows to that place only: clear the other filters so nothing hides what the reader just asked for
       place = id; q.value = ''; sels.forEach(s => { s.value = ''; });
-      showMap(areaCountry(id)); $('[data-map-pick]', mapBox).value = id;
+      showMap(areaCountry(id)); $('[data-map-pick]', mapBox).value = id === 'CA*' ? '' : id;
       filter(true); toResults(); track('list_map', { area: id });
     };
-    const wide = c => { place = ''; q.value = ''; sels.forEach(s => { s.value = ''; }); regSel.value = c; $('[data-map-pick]', mapBox).value = ''; showMap(c); filter(true); toResults(); };
+    const wide = c => { if (c === 'ca') return pickArea('CA*'); place = ''; q.value = ''; sels.forEach(s => { s.value = ''; }); regSel.value = c; $('[data-map-pick]', mapBox).value = ''; showMap(c); filter(true); toResults(); };
     showMap(region === 'us' ? 'us' : region === 'uk' ? 'uk' : ($('[data-map="world"]', mapBox) ? 'world' : 'uk'));
     mapBox.addEventListener('click', e => {
       const j = e.target.closest('path.jump'); if (j) return showMap(j.dataset.jump);

@@ -93,6 +93,28 @@ def world(src):
     return {"viewBox": f"0 0 {W} {math.ceil(max(ys)) + 4}", "areas": sorted(areas, key=lambda a_: a_["name"])}
 
 
+def canada(feats):
+    """Canada's 13 provinces and territories (Robin, 22 Nov 2026), Lambert-style conic, ids CA-XX so they never clash with US postal codes."""
+    ca = {}
+    for f in feats:
+        pr = f["properties"]
+        if pr.get("adm0_a3") != "CAN": continue
+        code = "CA-" + str(pr.get("postal") or pr.get("iso_3166_2", "")[-2:])
+        g = shape(f["geometry"]).buffer(0)
+        ca[code] = (pr["name"], unary_union([ca[code][1], g]) if code in ca else g)
+    assert len(ca) == 13, sorted(ca)
+    proj = lambda lon, lat: albers(lon, lat, lon0=-96, lat0=40, p1=49, p2=77)
+    W, H = 960, 760
+    fx = fit([g.simplify(0.1) for _, g in ca.values()], W, H, proj, pad=10)
+    out = []
+    for k, (name, g) in sorted(ca.items()):
+        polys = list(g.geoms) if g.geom_type == "MultiPolygon" else [g]
+        big = max(polys, key=lambda p_: p_.area)
+        keep = unary_union([p_ for p_ in polys if p_.area > 0.05 or p_ is big])
+        out.append({"id": k, "name": name, "d": to_d(keep.simplify(0.06 if k != "CA-PE" else 0.01, preserve_topology=True), fx)})
+    return {"viewBox": f"0 0 {W} {H}", "areas": out}
+
+
 def main(src, world_src=None):
     feats = json.loads(pathlib.Path(src).read_text(encoding="utf-8"))["features"]
     # ---- UK: dissolve counties into the twelve areas
@@ -131,4 +153,11 @@ def main(src, world_src=None):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None)
+    if sys.argv[1] == "--canada":   # add or refresh only the Canada map, leaving the other shapes as they are
+        dest = ROOT / "content" / "map_shapes.json"
+        out = json.loads(dest.read_text(encoding="utf-8"))
+        out["ca"] = canada(json.loads(pathlib.Path(sys.argv[2]).read_text(encoding="utf-8"))["features"])
+        dest.write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
+        print(f"wrote {dest}: {len(out['ca']['areas'])} Canadian provinces and territories")
+    else:
+        main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None)

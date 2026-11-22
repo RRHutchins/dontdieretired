@@ -893,8 +893,9 @@ def build(make_social=True):
         # The map (RUNBOOK §6h): UK areas and US states, shapes made once by tools/build_map.py from Natural Earth (public domain)
         _ms = CONTENT / "map_shapes.json"
         shapes = json.loads(_ms.read_text(encoding="utf-8")) if _ms.exists() else {"uk": {"areas": []}, "us": {"areas": []}}
-        MAPS = [k for k in ("uk", "us", "world") if k in shapes]
-        AREA = {a["id"]: (k, a["name"]) for k in MAPS for a in shapes[k]["areas"] if not (k == "world" and a["id"] in ("GBR", "USA"))}
+        MAPS = [k for k in ("uk", "us", "ca", "world") if k in shapes]
+        # Canada's provinces (Robin, 22 Nov 2026) sit in the `world` region, like the country itself
+        AREA = {a["id"]: ("world" if k == "ca" else k, a["name"]) for k in MAPS for a in shapes[k]["areas"] if not (k == "world" and a["id"] in ("GBR", "USA"))}
         for c in chs:
             miss = [k for k in need if not c.get(k)]
             assert not miss, f"challenge {c.get('id')}: missing {miss}"
@@ -1033,8 +1034,8 @@ def build(make_social=True):
             parts = []
             for a in shapes["world"]["areas"]:
                 n, nm = area_n.get(a["id"], 0), html.escape(a["name"])
-                if a["id"] in ("GBR", "USA"):   # these open their own detailed maps
-                    k = "uk" if a["id"] == "GBR" else "us"
+                if a["id"] in ("GBR", "USA") or (a["id"] == "CAN" and "ca" in shapes):   # these open their own detailed maps
+                    k = {"GBR": "uk", "USA": "us", "CAN": "ca"}[a["id"]]
                     parts.append(f'<path d="{a["d"]}" class="has jump" data-jump="{k}" data-name="{nm}" tabindex="0" role="button" aria-label="{nm}: open the detailed map"><title>{nm}: open the detailed map</title></path>')
                 elif n:
                     parts.append(f'<path d="{a["d"]}" class="has" data-area="{a["id"]}" data-name="{nm}" tabindex="0" role="button" aria-label="{nm}: {n} {"activity" if n == 1 else "activities"}"><title>{nm}: {n}</title></path>')

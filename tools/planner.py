@@ -278,7 +278,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
 def _areas(root: Path = ROOT) -> dict:
     """Area key → name, from content/map_shapes.json (the same names build.py shows as an activity's place label)."""
     shapes = _load(root / "content" / "map_shapes.json") or {}
-    return {a["id"]: a["name"] for k in ("uk", "us", "world") for a in (shapes.get(k) or {}).get("areas", [])
+    return {a["id"]: a["name"] for k in ("uk", "us", "ca", "world") for a in (shapes.get(k) or {}).get("areas", [])
             if not (k == "world" and a["id"] in ("GBR", "USA"))}
 
 
