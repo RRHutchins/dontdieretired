@@ -20,6 +20,8 @@
       {% if e.climb %}<div><dt>Climb</dt><dd>{{ e.climb }}</dd></div>{% endif %}
       <div><dt>Terrain</dt><dd>{% for t in e.terrain %}{{ h.facets.terrain[t] }}{{ ", " if not loop.last }}{% endfor %}</dd></div>
       {% if e.month_label %}<div><dt>{{ h.month_dt or "Usually" }}</dt><dd>{{ e.month_label }} {% if h.month_suffix %}{{ h.month_suffix }}{% else %}(check the official page for this year's date){% endif %}</dd></div>{% endif %}
+      {% if e.tl_label %}<div><dt>Time limit</dt><dd>{{ e.tl_label }}</dd></div>{% endif %}
+      {% if e.walkers %}<div><dt>Walkers and slower runners</dt><dd>{{ e.walkers_note }}</dd></div>{% endif %}
       <div><dt>Where</dt><dd>{{ e.place }}, {{ e.country }}</dd></div>
       <div><dt>{{ h.series_dt or "Organiser" }}</dt><dd>{% if e.series != 'independent' %}{{ h.facets.series[e.series] }}{% else %}Independent {{ h.word or "race" }}{% endif %}</dd></div>
     </dl>

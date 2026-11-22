@@ -73,6 +73,12 @@ landings:
   group: How you get a place
   filter: {entry: ballot}
   intro: ['These races draw places by ballot or lottery, usually months ahead. The race page says when the draw happens and what you need before you apply.']
+- slug: generous-time-limits
+  title: Ultras with generous time limits
+  short: Generous time limits
+  group: Pace
+  filter: {pace: slow}
+  intro: ['A race is listed here if a time limit on its organizer''s page allows at least 12 minutes per km (about 19 minutes per mile) for one of its distances. We work that out from the stated limit and distance only: climb, heat, altitude and checkpoint cut-offs along the way can make the same limit much harder, so read each race page.']
 - {slug: utmb-world-series, title: UTMB World Series races, short: UTMB World Series, group: Organiser, filter: {series: utmb}}
 - {slug: centurion-running, title: Centurion Running races, short: Centurion Running, group: Organiser, filter: {series: centurion}}
 events:
@@ -106,7 +112,10 @@ events:
   entry: [ballot, qualifier]
   entry_note: Lottery each November and early December. Every applicant must have finished a qualifying race of 100 km or more in the qualifying year; tickets build up for each year you miss out. Top finishers at the HOKA Golden Ticket races get places.
   note: Finishers earn Running Stones for the UTMB lottery under an agreement between the two races.
+  time_limit: [{km: 161, hours: 30}]
   link: {label: 'Western States: entry process', url: 'https://www.wser.org/entry-process/', checked: '2026-11-17'}
+  more:
+  - {label: 'Western States: 2027 participant guide (30-hour cutoff)', url: 'https://www.wser.org/participant-guide/', checked: '2026-11-22'}
 - id: hardrock-100
   name: Hardrock 100
   series: independent
@@ -190,15 +199,18 @@ events:
   place: Pietermaritzburg and Durban, KwaZulu-Natal
   country: South Africa
   continent: africa
-  km: [89]
-  distances: About 89 km on road
+  km: [90]
+  distances: About 90 km on road (the 2027 race is a "down run" from Pietermaritzburg to Durban)
   terrain: [road]
   format: single
   month: [6]
   entry: [qualifier]
-  entry_note: You need a qualifying time, such as an officially timed marathon in under 4 hours 50 minutes.
+  entry_note: You need a qualifying time; for 2027 that includes an officially timed marathon in 4:59:59 or less.
   note: A point-to-point road race between the two cities, run in June.
+  time_limit: [{km: 90, hours: 12}]
   link: {label: 'Comrades Marathon: race launch and qualifying times', url: 'https://comrades.com/blogs/launch-of-2025-comrades-marathon', checked: '2026-11-17'}
+  more:
+  - {label: 'Comrades Marathon: race information (2027 date and 12-hour limit)', url: 'https://comrades.com/race-information', checked: '2026-11-22'}
 - id: two-oceans-ultra
   name: Two Oceans Ultra Marathon
   series: independent
@@ -429,7 +441,10 @@ events:
   entry: [ballot, qualifier]
   entry_note: Ballot in early September. The 100 has strict qualification criteria; the 50 has none, but the organisers advise you to have run a marathon distance on mountain terrain.
   note: A clockwise loop of the Lake District fells on bridleways and footpaths. The 100 starts on a Friday evening.
+  time_limit: [{km: 169, hours: 40}, {km: 80, hours: 24}]
   link: {label: 'Lakeland 50 and 100: entry', url: 'https://lakeland100.com/enter-the-event/', checked: '2026-11-17'}
+  more:
+  - {label: 'Lakeland 50 and 100: the events (time limits)', url: 'https://lakeland100.com/thelakeland50100/', checked: '2026-11-22'}
 - id: dragons-back-race
   name: Dragon's Back Race
   series: independent
@@ -1015,7 +1030,11 @@ events:
   entry: [open, qualifier]
   entry_note: You need to have finished an ultra, a trail marathon or a road marathon in under 5 hours in the qualifying period, and be at least 20 on race day.
   note: The southern 53 miles of the West Highland Way through Loch Lomond and the Trossachs National Park, on a waymarked route, with an early start for slower runners.
+  walkers: true
+  walkers_note: A 5am early start, with an extra hour on each checkpoint cut-off, is offered only to slower runners realistically expecting to take 14 hours or more.
   link: {label: 'Highland Fling: official site', url: 'https://www.highlandflingrace.org/', checked: '2026-11-19'}
+  more:
+  - {label: 'Highland Fling: FAQ (early start and cut-offs)', url: 'https://highlandflingrace.org/faq.html', checked: '2026-11-22'}
 - id: race-to-the-king
   name: Race to the King
   series: threshold
@@ -1030,7 +1049,9 @@ events:
   entry: [open]
   entry_note: Open registration for runners and walkers, from first-time trail runners and hikers to experienced ultra runners.
   note: Routes start and finish at West Dean Gardens, on chalk downland and coastal paths around Chichester Harbour, close to the summer solstice.
-  link: {label: 'Threshold Trail Series: Race to the King 2027', url: 'https://www.thresholdtrailseries.com/race-to-the-king/', checked: '2026-11-19'}
+  walkers: true
+  walkers_note: The organizer welcomes runners and walkers, from first-time trail runners and hikers to experienced ultrarunners.
+  link: {label: 'Threshold Trail Series: Race to the King 2027', url: 'https://www.thresholdtrailseries.com/threshold-trail-series-2026/race-to-the-king/', checked: '2026-11-22'}
 - id: summer-spine-race
   name: Montane Summer Spine Race
   series: spine
@@ -1470,7 +1491,11 @@ events:
   entry: [register]
   entry_note: The 2027 event showed as sold out with a waiting list open. The page lists no experience or medical requirements.
   note: Five days on trails through Laikipia's conservancies with six nights of camping, and ground assistance and medical staff on course and at every camp. The page says most people who take part walk half the course.
-  link: {label: 'Ultra X: Ultra X Kenya', url: 'https://ultra-x.co/event/kenya/', checked: '2026-11-21'}
+  time_limit: [{km: 10, hours: 2.5}]
+  time_limit_text: 2.5 hours for every 10 km (about 6 miles)
+  walkers: true
+  walkers_note: The organizer says the race can be done running or walking and welcomes "runners and walkers and everyone in between".
+  link: {label: 'Ultra X: Ultra X Kenya', url: 'https://ultra-x.co/event/kenya/', checked: '2026-11-22'}
   more:
   - {label: 'Ultra X: all races', url: 'https://ultra-x.co/races/', checked: '2026-11-21'}
 - id: old-ghost-ultra
@@ -1492,6 +1517,205 @@ events:
   more:
   - {label: 'Old Ghost Ultra: entries', url: 'https://www.oldghostultra.com/entries', checked: '2026-11-21'}
   - {label: 'Old Ghost Ultra: race information', url: 'https://www.oldghostultra.com/race-info', checked: '2026-11-21'}
+- id: ultra-x-south-africa
+  name: Ultra X South Africa
+  series: independent
+  place: Tulbagh to the Cederberg, Western Cape (shuttles from and back to Cape Town)
+  country: South Africa
+  continent: africa
+  km: [330]
+  distances: 330 km over six stages, as the organizer gives it
+  terrain: [mountain, trail]
+  format: stage
+  month: [10]
+  entry: [application]
+  entry_note: The 2027 race is capped at 100 runners and entry is by application, with priority for runners with multi-day or ultra experience. Applications closed on 1 November 2026 and the page now shows a waiting list.
+  note: Through the valleys and mountains of the Western Cape and the sandstone of the Cederberg, with nights in wild camps; the organizers move your kit between camps. The organizer calls it "Africa's Toughest Foot Race".
+  time_limit: [{km: 10, hours: 2.5}]
+  time_limit_text: 2.5 hours for every 10 km (about 6 miles)
+  link: {label: 'Ultra X: Ultra X South Africa', url: 'https://ultra-x.co/event/ultra-marathon-in-south-africa/', checked: '2026-11-22'}
+- id: ultra-x-morocco
+  name: Ultra X Morocco
+  series: independent
+  place: Ouarzazate
+  country: Morocco
+  continent: africa
+  km: [50, 60, 110]
+  distances: 110 km over two days (60 km then 50 km), or 60 km or 50 km in a single day; a 25 km race too
+  climb: 957 m (60 km); 481 m (50 km)
+  terrain: [desert, trail]
+  format: stage
+  month: [11]
+  entry: [register]
+  entry_note: The page lists no experience requirement. 2027 entries are on sale as a "First Release" of the first 200 tickets.
+  note: Rocky desert trails, open valleys, villages, palm groves and kasbahs around Ouarzazate. The organizer bills it as "your most accessible desert ultra marathon".
+  time_limit: [{km: 10, hours: 2.5}]
+  time_limit_text: 2.5 hours for every 10 km (about 6 miles)
+  link: {label: 'Ultra X: Ultra Marathon in Morocco', url: 'https://ultra-x.co/event/ultra-marathon-in-morocco/', checked: '2026-11-22'}
+- id: ultra-x-rwanda
+  name: Ultra X Rwanda
+  series: independent
+  place: Burera and Musanze districts, northern Rwanda
+  country: Rwanda
+  continent: africa
+  km: [50, 110]
+  distances: 110 km over two days (60 km then 50 km), or 50 km in one stage
+  climb: 2,140 m (110 km); 902 m (50 km)
+  terrain: [trail]
+  format: stage
+  month: [12]
+  entry: [register]
+  entry_note: The page lists no experience requirement. You enter online; locals, East Africans and expats living in Rwanda are asked to email the local partner.
+  note: Gentle hills and valleys through coffee and banana fields, past volcanoes and twin lakes and over a lake peninsula, with an after-party at Lake Ruhondo.
+  time_limit: [{km: 10, hours: 2.5}]
+  time_limit_text: 2.5 hours for every 10 km (about 6 miles)
+  link: {label: 'Ultra X: Rwanda', url: 'https://ultra-x.co/event/ultra-marathon-in-rwanda/', checked: '2026-11-22'}
+- id: ultra-trail-great-wall
+  name: JD Ultra-Trail Great Wall by UTMB
+  series: utmb
+  place: Dajingmen, Zhangjiakou, Hebei Province
+  country: China
+  continent: asia
+  km: [52, 68, 100]
+  distances: 100 km, 68 km and 52 km (31 km too)
+  climb: 3,800 m (100 km); 2,600 m (68 km); 2,100 m (52 km)
+  terrain: [mountain, trail]
+  format: single
+  entry: [register]
+  entry_note: The pages do not say how places are allocated. The 2026 races (11 to 13 September) show registrations closed, and no 2027 date is posted yet.
+  note: The 100 km starts at Dajingmen, which the race director calls the "First Gate of the Great Wall", and follows ruined sections of the Ming dynasty Great Wall.
+  time_limit: [{km: 100, hours: 26}]
+  link: {label: 'UTMB: JD Ultra-Trail Great Wall by UTMB', url: 'https://dajingmen.utmb.world/', checked: '2026-11-22'}
+  more:
+  - {label: 'UTMB: DGW100 race page', url: 'https://dajingmen.utmb.world/races/DGW100', checked: '2026-11-22'}
+  - {label: 'UTMB: two new UTMB World Series events come to China', url: 'https://utmb.world/news/announcement-new-events-in-China', checked: '2026-11-22'}
+- id: ultra-trail-mount-yun
+  name: Ultra-Trail Mount Yun by UTMB
+  series: utmb
+  place: Mount Yun, southern Shanxi Province
+  country: China
+  continent: asia
+  km: [48, 97, 166]
+  distances: 166 km, 97 km and 48 km (22 km too)
+  climb: 7,400 m (166 km); 4,300 m (97 km); 2,400 m (48 km)
+  terrain: [mountain, trail]
+  format: single
+  entry: [register]
+  entry_note: The pages do not say how places are allocated. The 2026 races (16 to 18 October) show registrations closed, and no 2027 date is posted yet.
+  note: The 100-mile course crosses the hills, valleys, ancient villages and cultural landmarks of southern Shanxi, on a mountain the organizer says Laozi, the founder of Taoism, once visited.
+  time_limit: [{km: 166, hours: 48}]
+  link: {label: 'UTMB: Ultra-Trail Mount Yun by UTMB', url: 'https://mount-yun.utmb.world/', checked: '2026-11-22'}
+  more:
+  - {label: 'UTMB: UMY 100M race page', url: 'https://mount-yun.utmb.world/races/100M', checked: '2026-11-22'}
+  - {label: 'UTMB: Mount Yun 2023 results', url: 'https://utmb.world/news/results-Mount-Yun-2023', checked: '2026-11-22'}
+- id: monte-rosa-walserwaeg
+  name: Monte Rosa Walserwaeg by UTMB
+  series: utmb
+  place: Aosta, Pont-Saint-Martin and the Gressoney valley, Aosta Valley
+  country: Italy
+  continent: europe
+  km: [43, 82, 120]
+  distances: 120 km (Les Sentiers des Valdôtains), 82 km (Monte Rosa Trail) and 43 km (Walserwaeg Trail)
+  climb: About 8,200 m (120 km); 6,300 m (82 km); 3,100 m (43 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [7]
+  entry: [register]
+  entry_note: Registrations for 2027 are open. The pages do not say how places are allocated; they link to separate registration conditions.
+  note: Routes at the foot of the Matterhorn and Monte Rosa and through Walser villages. The organizer describes "Europe's most stunning 4,000-meter peaks".
+  time_limit: [{km: 120, hours: 36}, {km: 82, hours: 25}, {km: 43, hours: 12}]
+  link: {label: 'UTMB: Monte Rosa Walserwaeg by UTMB, list of races', url: 'https://mrww.utmb.world/races', checked: '2026-11-22'}
+  more:
+  - {label: 'UTMB: Les Sentiers des Valdôtains (120 km)', url: 'https://mrww.utmb.world/races/SDV', checked: '2026-11-22'}
+  - {label: 'UTMB: Monte Rosa Trail (82 km)', url: 'https://mrww.utmb.world/races-runners/races/MRT', checked: '2026-11-22'}
+  - {label: 'UTMB: Walserwaeg Trail (43 km)', url: 'https://mrww.utmb.world/races-runners/races/WWT', checked: '2026-11-22'}
+- id: centurion-winter-downs-100
+  name: Winter Downs 100
+  series: centurion
+  place: Amberley to Juniper Hall, near Box Hill
+  country: England, UK
+  continent: europe
+  km: [160]
+  distances: 100 miles (160 km), point to point
+  climb: 10,000 feet (3,050 m)
+  terrain: [trail, winter]
+  format: single
+  month: [12]
+  entry: [open, application]
+  entry_note: You apply with your experience; a single-stage trail finish of 100 km or more "would stand a good chance", and the organizers may refuse any application. Places go first come, first served subject to acceptance, for a field of about 100, with no waiting list. The 2026 race is full.
+  note: A winter route linking the South Downs Way, Wayfarers Walk, St Swithuns Way and North Downs Way. The course is not marked (you follow a GPX file) and pacers are not permitted.
+  time_limit: [{km: 160, hours: 35}]
+  link: {label: 'Centurion Running: Winter Downs 100 2026', url: 'https://www.centurionrunning.com/races/winter-downs-100-2026', checked: '2026-11-22'}
+- id: canadian-death-race
+  name: Canadian Death Race
+  series: independent
+  place: Grande Cache, Alberta
+  country: Canada
+  continent: north-america
+  km: [118]
+  distances: 118 km solo or as a relay (42 km too)
+  climb: 17,000 feet (5,181 m)
+  terrain: [mountain, trail]
+  format: single
+  month: [7]
+  entry: [open]
+  entry_note: Registration opens on 10 October and closes on 18 July "or when full", with 1,000 racers in all, 350 solo places held until 15 March and relay teams making up the balance.
+  note: The route passes over three mountain summits. The organizer calls it "one of the world's toughest ultramarathons", and it is a Western States qualifier.
+  time_limit: [{km: 118, hours: 24}]
+  link: {label: 'Sinister Sports: Canadian Death Race', url: 'https://www.sinistersports.ca/deathrace/', checked: '2026-11-22'}
+- id: jujuy-fuerza-sagrada
+  name: Jujuy Fuerza Sagrada by UTMB
+  series: utmb
+  place: Tilcara, Quebrada de Humahuaca, Jujuy
+  country: Argentina
+  continent: south-america
+  km: [50.3, 87.2]
+  distances: 87.2 km (INTI 88K) and 50.3 km (KUNTUR 50K); shorter races too
+  climb: 5,101 m (87.2 km); 2,754 m (50.3 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [4]
+  entry: [register]
+  entry_note: The 2027 races are marked sold out, with a waiting-list form linked from the registration page.
+  note: The 88K starts in Tilcara and crosses ravines, ridgelines and ancestral villages, reaching nearly 4,000 m in the Andes of far northern Argentina.
+  time_limit: [{km: 87.2, hours: 23.5}]
+  link: {label: 'UTMB: Jujuy Fuerza Sagrada by UTMB', url: 'https://jujuy.utmb.world/', checked: '2026-11-22'}
+  more:
+  - {label: 'UTMB: INTI 88K race page', url: 'https://jujuy.utmb.world/races/INTI', checked: '2026-11-22'}
+  - {label: 'UTMB: Jujuy, where history is still alive', url: 'https://jujuy.utmb.world/discover/jujuy', checked: '2026-11-22'}
+- id: christchurch-self-transcendence-100k
+  name: Sri Chinmoy Self-Transcendence 100 km (Christchurch)
+  series: independent
+  place: Hagley Park North, Christchurch
+  country: New Zealand
+  continent: oceania
+  km: [50, 100]
+  distances: 100 km (solo or a four-person relay) and 50 km, on a 2.5 km loop
+  terrain: [road]
+  format: single
+  entry: [register]
+  entry_note: You enter online in advance; entries on the day are not accepted (the 2026 entries closed on 28 October). No 2027 date is posted yet.
+  note: The organizer says the 100 km is an IAU Bronze Label event, run on a certified 2.5 km asphalt loop.
+  time_limit: [{km: 100, hours: 12}]
+  time_limit_text: 12 hours (all events start at 7am and are cut off at 7pm)
+  link: {label: 'Sri Chinmoy Races NZ: Self-Transcendence 100 km', url: 'https://nz.srichinmoyraces.org/100km-race', checked: '2026-11-22'}
+- id: race-across-scotland
+  name: Race Across Scotland
+  series: independent
+  place: Portpatrick to Cockburnspath, along the Southern Upland Way
+  country: Scotland, UK
+  continent: europe
+  km: [346]
+  distances: 215 miles (346 km), coast to coast
+  climb: 7,218 m
+  terrain: [trail]
+  format: single
+  month: [8]
+  entry: [application]
+  entry_note: Entry is by application only. You need "a solid background of endurance/ultrarunning", must be able to navigate with map and compass, and must be 20 or older. The 2027 race is full; 2028 applications are open.
+  note: Coast to coast across southern Scotland on the Southern Upland Way, with 12 checkpoints and no pacers or support runners.
+  time_limit: [{km: 346, hours: 100}]
+  link: {label: 'GBUltras: Race Across Scotland', url: 'https://www.gbultras.com/ultra-great-britain/', checked: '2026-11-22'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
@@ -1877,3 +2101,84 @@ guides:
   - {label: 'Miller, Bianchi and Lastella, Running on empty: self-reported sleep/wake behaviour during ultra-marathon events exceeding 100 miles (European Journal of Investigation in Health, Psychology and Education, 2022)', url: 'https://www.mdpi.com/2254-9625/12/7/58', checked: '2026-11-21'}
   - {label: 'Martin, Arnal, Hoffman and Millet, Sleep habits and strategies of ultramarathon runners (PLoS ONE, 2018)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5942705/', checked: '2026-11-21'}
   - {label: 'Huang and others, Visual hallucinations in 246-km mountain ultra-marathoners: an observational study (Chinese Journal of Physiology, 2021)', url: 'https://hub.tmu.edu.tw/en/publications/visual-hallucinations-in-246-km-mountain-ultra-marathoners-an-obs/', checked: '2026-11-21'}
+- slug: running-in-the-heat
+  title: Running an ultra in the heat
+  short: Heat illness, getting used to heat, drinking and cooling
+  seo_title: 'Ultramarathon in the heat: acclimatizing, drinking, cooling'
+  description: How to spot heat exhaustion and heatstroke, how long it takes to get used to heat, why drinking too much is a risk too, and what desert races make you carry.
+  standfirst: Heat turns an ultra you could finish into one that can hurt you. The good news is that the body adapts within days to weeks, and the rules races write for the desert show what matters most.
+  detail:
+  - h: Why heat matters
+    p:
+    - Western States says temperatures during its 100 miles can range from 20°F to above 110°F (about -7°C to above 43°C), and that heat stroke can cause death, kidney failure and brain damage. Its medical page notes that in 1989 the heat radiating off the rocks was measured at 114°F (about 46°C).
+    - Desert stage races plan around heat. The Marathon des Sables regulations let the organizers change the race for "extreme heat", among other reasons, and the 2015 expert consensus on training and competing in the heat, published in the British Journal of Sports Medicine, asks organizers to plan for large shaded areas with cooling and drinks.
+    - The NHS lists people at higher risk in hot weather, including people aged 65 and over, people with serious long-term conditions such as heart or breathing problems, and people taking medicines that may make them more likely to be badly affected by heat. If any of those apply to you, talk to your GP (family doctor) or primary care doctor before a hot race.
+  - h: Know the signs, and when to call for help
+    table:
+      head: [What you notice, What it may be, What to do]
+      rows:
+      - ['Tiredness, dizziness, headache, heavy sweating with pale and clammy skin, cramps, being very thirsty', 'Heat exhaustion (NHS and CDC)', 'Get to a cool place, loosen or remove extra clothing, sip water, cool the skin with cool water and fanning. The NHS says people should feel better within 30 minutes']
+      - ['Still unwell after 30 minutes of rest and cooling; hot skin that is not sweating; a fast heartbeat or fast breathing; confusion or poor coordination; a seizure; passing out', 'Heatstroke, a medical emergency', 'Call 999 in the UK or 911 in the US, or alert the nearest race medic. Keep cooling while you wait. The CDC says not to give someone with heat stroke anything to drink']
+      - ['Muscle pain or spasms during hard exercise with heavy sweating', 'Heat cramps (CDC)', 'Stop the activity and move to a cool place']
+    after: Taken from the NHS heat exhaustion and heatstroke page (reviewed 28 May 2026) and the CDC's heat-related illnesses sheet, opened on 22 November 2026. For heat exhaustion, the CDC says to get medical help right away if you are throwing up, symptoms get worse or they last longer than an hour.
+  - h: Getting used to the heat
+    p:
+    - The 2015 consensus, written after an expert conference in Doha, says heat acclimatization should be repeated exercise in the heat over one to two weeks, in sessions of at least 60 minutes a day. Early changes come within the first few days, and most of the benefit (on heart rate and core temperature, for example) lasts for two to four weeks.
+    - A 2023 American College of Sports Medicine consensus on exertional heat illness agrees that one to two weeks of heat acclimatization brings most of the body's adaptations.
+    - Western States says acclimatizing takes about two weeks, and recommends training for 90 minutes in heat of 90°F (about 32°C) or more for at least two weeks before its race if you can.
+    - If you live somewhere cool, the practical question is when you can get that heat, so plan it against your race date. Build up gradually, and stop if you notice any of the signs above.
+  - h: Drinking and salt
+    p:
+    - Not drinking enough is one risk; drinking too much is the other. The 2015 heat consensus says to start well hydrated and keep dehydration down during exercise, but warns that recreational athletes in prolonged exercise should be careful not to overhydrate.
+    - The 2015 international consensus statement on exercise-associated hyponatremia (low blood sodium), published in the British Journal of Sports Medicine, says the main cause is drinking more fluid than the body loses, and that using thirst to guide drinking should limit drinking too much. It reports rates in 161 km (100-mile) ultramarathons, mostly without symptoms, ranging from 5% to 51%, says sodium-containing sports drinks will not prevent it in people who overdrink, and says gaining weight during exercise is a sign you have drunk more than you lost.
+    - Western States puts it simply - the best way to avoid symptomatic hyponatremia is not to overhydrate - and says untreated it can lead to seizures, coma and death. It also warns that ibuprofen or naproxen can lead to kidney problems, and the hyponatremia consensus names these anti-inflammatory painkillers (NSAIDs) as a risk factor.
+    - A 2021 study of 266 runners enrolled (174 with blood tests) in an 80 km stage of a six-stage RacingThePlanet desert race, in the Clinical Journal of Sport Medicine, found that 6.3% developed low blood sodium and 17.2% high blood sodium. Hot race climates were linked to both, though only the link with high sodium was statistically clear. Taking sodium supplements neither prevented low sodium nor caused high sodium.
+    - Our guide to eating and drinking on the move covers fuel. We give no figures for how much salt to take; desert races that list electrolytes tell you to test your plan in training.
+  - h: Staying cool on the move
+    p:
+    - Western States says a light-colored shirt and cap, especially if kept wet, can help, and if signs of heat exhaustion appear it recommends rapid cooling with ice on the groin, neck and armpits.
+    - Badwater 135, which runs from below sea level in Death Valley in July, allows ice, wet towels, hand-held water sprayers or misters and modern fabrics. Its rules ban cooling vests, cooling hats and umbrellas or shade while moving forward, require every runner to have their own support crew, and disqualify anyone who receives an intravenous drip during the race.
+    - For heatstroke itself, the 2023 American College of Sports Medicine consensus says cold water immersion cools effectively and that aggressive cooling should start within minutes of collapse, on site, so it is not delayed by transport. That is a job for race medics; your part is to stop early and get help.
+  - h: What desert races make you carry
+    table:
+      head: [Race, Water rules, Sun and other heat items]
+      rows:
+      - ['Marathon des Sables Legendary 2027 (Morocco)', 'Carry at least 1.5 liters. You get 5 liters at the end of each stage, then water again at the next day''s first checkpoint. Water from anywhere outside the organizers'' supply is banned (at least a 3-hour penalty)', 'A survival blanket (2-hour penalty if missing), stock cubes to help rehydration (two per race day) and a pack of 6.5 to 15 kg (14 to 33 pounds) without water']
+      - ['Gobi March 2027 (Mongolia)', 'Containers that hold 2.5 liters at all times', 'Electrolytes ("critical to a safe race"), at least 60 ml of sunscreen (high-SPF and waterproof recommended) and UV-protection sunglasses']
+      - ['RacingThePlanet UltraLite Namibia', 'Leave every checkpoint with 1.5 liters', 'A cap with a neck cover, at least 60 ml (2 fl oz) of sunscreen, and electrolytes you have tested in training. A missing item can mean a time penalty or not starting']
+      - ['Badwater 135 (California)', 'Your own crew in one vehicle carries your water and ice', 'Ice, wet towels and sprayers allowed; no cooling vests or umbrellas while moving; an intravenous drip means disqualification']
+    after: From each race's regulations or equipment list, opened on 22 November 2026. Lists change each year, so check your own race's current version.
+  - h: The sun
+    p:
+    - The NHS advises sunscreen of at least SPF 30 with at least 4-star UVA protection, reapplied every two hours and after sweating or toweling, a wide-brimmed hat that shades the face, neck and ears, and shade between 11am and 3pm. It says covering the whole body takes around 6 to 8 teaspoons of sunscreen.
+    - In a race you cannot always choose the hours, which is why desert races write a neck-cover cap and sunscreen into their kit lists.
+  faq:
+  - q: How long does it take to get used to running in the heat?
+    a: The 2015 heat consensus and a 2023 American College of Sports Medicine consensus both say one to two weeks of repeated exercise in the heat brings most of the adaptations, with some changes in the first few days. Most of the benefit lasts two to four weeks, so time it against your race.
+  - q: Do salt tablets stop hyponatremia?
+    a: No source we opened says so. The 2015 hyponatremia consensus says sodium drinks will not prevent it in people who overdrink, and a 2021 desert race study found sodium supplements did not prevent it. Drinking to thirst is the consensus advice.
+  - q: Should I drink as much as I can in a hot race?
+    a: No. Both the heat consensus and Western States warn against overhydrating, because drinking more than you lose can cause dangerously low blood sodium. Use thirst as your guide and follow your race's water rules.
+  - q: When is it an emergency?
+    a: Confusion, hot skin that has stopped sweating, a fast heartbeat or breathing, a seizure, passing out, or still feeling unwell after 30 minutes of rest and cooling. Call 999 in the UK or 911 in the US, or get the nearest race medic.
+  kit:
+  - {name: Cap with a neck cover, why: 'some desert races require one; check it shades the back of the neck and can be soaked', url: 'https://www.amazon.co.uk/s?k=running+cap+neck+flap'}
+  - {name: Sunscreen SPF 30 or more, why: 'the NHS asks for SPF 30 or more and 4-star UVA; check the label for both and for sweat resistance', url: 'https://www.amazon.co.uk/s?k=sunscreen+spf50+4+star+uva+sport'}
+  - {name: UV-protection sunglasses, why: 'Gobi March asks for UV protection; check the label says UV400 or 100% UV', url: 'https://www.amazon.co.uk/s?k=uv400+running+sunglasses'}
+  - {name: Soft flasks or a bladder, why: 'check the total holds what your race asks for (1.5 to 2.5 liters on the lists above)', url: 'https://www.amazon.co.uk/s?k=running+soft+flask+500ml'}
+  - {name: Hand-held water sprayer, why: 'Badwater allows sprayers for cooling; check what your race allows and how much it holds', url: 'https://www.amazon.co.uk/s?k=handheld+water+mister+spray+bottle'}
+  sources:
+  - {label: 'NHS, Heat exhaustion and heatstroke (reviewed 28 May 2026)', url: 'https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/', checked: '2026-11-22'}
+  - {label: 'CDC, Heat-related illnesses (fact sheet)', url: 'https://www.cdc.gov/extreme-heat/media/pdf/Heat_Related_Illness.pdf', checked: '2026-11-22'}
+  - {label: 'NHS, Heatwave: how to cope in hot weather (reviewed 12 June 2026)', url: 'https://www.nhs.uk/live-well/seasonal-health/heatwave-how-to-cope-in-hot-weather/', checked: '2026-11-22'}
+  - {label: 'NHS, Sunscreen and sun safety (reviewed 24 March 2026)', url: 'https://www.nhs.uk/live-well/seasonal-health/sunscreen-and-sun-safety/', checked: '2026-11-22'}
+  - {label: 'Racinais and others, Consensus recommendations on training and competing in the heat (British Journal of Sports Medicine, 2015)', url: 'https://www.doi.org/10.1136/BJSPORTS-2015-094915', checked: '2026-11-22'}
+  - {label: 'Roberts and others, ACSM Expert Consensus Statement on Exertional Heat Illness (Current Sports Medicine Reports, 2023; copy hosted by KHSAA)', url: 'https://khsaa.org/common_documents/Sports%20Medicine/EHIPositionStatement//B-ACSM%20EHI%20Consensus%20Statement%202023.pdf', checked: '2026-11-22'}
+  - {label: 'Hew-Butler and others, Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference, Carlsbad, California, 2015 (British Journal of Sports Medicine)', url: 'https://bjsm.bmj.com/content/49/22/1432.long', checked: '2026-11-22'}
+  - {label: 'Lipman and others, Effect of sodium supplements and climate on dysnatremia during ultramarathon running (Clinical Journal of Sport Medicine, 2021)', url: 'https://ohsu.elsevierpure.com/en/publications/effect-of-sodium-supplements-and-climate-on-dysnatremia-during-ul', checked: '2026-11-22'}
+  - {label: 'Western States Endurance Run, Medical and other risks', url: 'https://www.wser.org/medical-and-other-risks/', checked: '2026-11-22'}
+  - {label: 'Western States Endurance Run, 2027 participant guide', url: 'https://www.wser.org/participant-guide/', checked: '2026-11-22'}
+  - {label: 'Marathon des Sables, Race regulation MDS Legendary 2027', url: 'https://registration.marathondessables.com/regulations-and-terms-legendary-2027', checked: '2026-11-22'}
+  - {label: 'Badwater, Badwater 135 (event page and race rules)', url: 'https://www.badwater.com/event/badwater-135/', checked: '2026-11-22'}
+  - {label: 'RacingThePlanet, Gobi March competitor equipment list', url: 'https://www.racingtheplanet.com/gobimarch/equipment', checked: '2026-11-22'}
+  - {label: 'RacingThePlanet, UltraLite Namibia equipment list', url: 'https://www.racingtheplanet.com/namibia/ultralite/equipment/download', checked: '2026-11-22'}

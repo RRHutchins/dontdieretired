@@ -1146,7 +1146,23 @@ def build(make_social=True):
             for L_ in [e["link"]] + list(e.get("more") or []):
                 assert str(L_.get("url", "")).startswith("https://") and L_.get("label") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(L_.get("checked", ""))), f"hub {h['id']} event {e['id']}: link needs https url, label, checked"
                 L_["checked_human"] = dt.date.fromisoformat(str(L_["checked"])).strftime("%-d %B %Y")
-            assert not re.search(r"[£$€]\s?\d", e["note"] + e["entry_note"] + e["distances"] + e.get("see_note", "") + e.get("when", "")), f"hub {h['id']} event {e['id']}: no prices (they change)"
+            assert not re.search(r"[£$€]\s?\d", e["note"] + e["entry_note"] + e["distances"] + e.get("see_note", "") + e.get("when", "") + e.get("walkers_note", "") + e.get("time_limit_text", "")), f"hub {h['id']} event {e['id']}: no prices (they change)"
+            # Priority step 3 (RUNBOOK §6u, 22 Nov 2026): optional `time_limit` (list of {km, hours} from the official page; a page that gives
+            # a rate such as "2.5 hours per 10 km" is stored as {km: 10, hours: 2.5} with `time_limit_text` in the page's terms) and
+            # `walkers: true` with `walkers_note`, only where the organizer's page welcomes walkers or offers an early start for slower runners.
+            # `pace` tokens drive the finder's Pace filter: "walkers", and "slow" when a stated limit allows 12+ minutes per km (a computed fact).
+            e["pace"] = []
+            for t in e.get("time_limit") or []:
+                assert float(t.get("km", 0)) > 0 and float(t.get("hours", 0)) > 0, f"hub {h['id']} event {e['id']}: time_limit items need km and hours"
+            if e.get("time_limit"):
+                _hf = lambda x: f"{x:g}"
+                e["tl_label"] = e.get("time_limit_text") or "; ".join(f"{_hf(t['hours'])} hours for {round(t['km'] / 1.609344):,} miles ({_hf(t['km'])} km)" for t in e["time_limit"])
+                if any(t["hours"] * 60 / t["km"] >= 12 for t in e["time_limit"]):
+                    e["pace"].append("slow")
+            assert not e.get("time_limit_text") or e.get("time_limit"), f"hub {h['id']} event {e['id']}: time_limit_text needs time_limit"
+            assert bool(e.get("walkers")) == bool(e.get("walkers_note")), f"hub {h['id']} event {e['id']}: walkers needs walkers_note (and the reverse)"
+            if e.get("walkers"):
+                e["pace"].insert(0, "walkers")
             e["bands"] = sorted({b[0] for k in e["km"] for b in BANDS if b[2] <= k <= b[3]})
             if (PHEN or h.get("month_range")) and e.get("month"):
                 # Months that wrap the year (September to April) read as a range; otherwise a list
@@ -1158,7 +1174,7 @@ def build(make_social=True):
         h["events"] = sorted(h["events"], key=lambda e: (list(F["continent"]).index(e["continent"]), e["name"].lower()))
         h["bands"] = [b[:2] for b in BANDS if any(b[0] in e["bands"] for e in h["events"])]
         h["used"] = {"terrain": {t for e in h["events"] for t in e["terrain"]}, "entry": {x for e in h["events"] for x in e["entry"]}, "series": {e["series"] for e in h["events"]},
-                     "type": {e.get("type") for e in h["events"] if e.get("type")}, "see": {x for e in h["events"] for x in e.get("see") or []}}
+                     "type": {e.get("type") for e in h["events"] if e.get("type")}, "see": {x for e in h["events"] for x in e.get("see") or []}, "pace": {x for e in h["events"] for x in e.get("pace") or []}}
         h["months"] = [(i + 1, MONTHS[i]) for i in range(12) if any(i + 1 in (e.get("month") or []) for e in h["events"])]
         h["acts"] = [_chs_by[i] for i in h.get("activities") or [] if i in _chs_by]
         h["checked_human"] = max(dt.date.fromisoformat(str(e["link"]["checked"])) for e in h["events"]).strftime("%-d %B %Y")
@@ -1189,13 +1205,13 @@ def build(make_social=True):
                 _mn = h.get("landing_noun") or (h.get("words") or "races").capitalize()
                 _defs += [{"slug": f"in-{MONTHS[m - 1].lower()}", "title": f"{_mn} in {MONTHS[m - 1]}", "short": MONTHS[m - 1], "group": "Usual month", "filter": {"month": m}}
                           for m in range(1, 13) if sum(1 for e in h["events"] if m in (e.get("month") or [])) >= 4]
-            _ok_keys = {"country_has", "continent", "band", "format", "month", "entry", "not_entry", "series", "terrain"}
+            _ok_keys = {"country_has", "continent", "band", "format", "month", "entry", "not_entry", "series", "terrain", "pace"}
             def _match(e, f):
                 return ((not f.get("country_has") or f["country_has"] in e["country"]) and (not f.get("continent") or e["continent"] == f["continent"])
                         and (not f.get("band") or f["band"] in e["bands"]) and (not f.get("format") or e["format"] == f["format"])
                         and (not f.get("month") or f["month"] in (e.get("month") or [])) and (not f.get("entry") or f["entry"] in e["entry"])
                         and (not f.get("not_entry") or f["not_entry"] not in e["entry"]) and (not f.get("series") or e["series"] == f["series"])
-                        and (not f.get("terrain") or f["terrain"] in e["terrain"]))
+                        and (not f.get("terrain") or f["terrain"] in e["terrain"]) and (not f.get("pace") or f["pace"] in e["pace"]))
             for L in _defs:
                 assert re.fullmatch(r"[a-z0-9-]+", L.get("slug", "")) and L.get("title") and L.get("short") and L.get("group") and L.get("filter"), f"hub {h['id']}: a landing needs slug, title, short, group, filter"
                 assert L["slug"] not in _taken, f"hub {h['id']}: landing {L['slug']} clashes with a race id, guide or another landing"
