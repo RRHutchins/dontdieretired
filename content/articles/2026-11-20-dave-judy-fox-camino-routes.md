@@ -5,6 +5,7 @@ date: 2026-11-20
 photo_file: "File:Camiño de Inverno.jpg"
 photo_caption: "A Camino de Invierno waymark near Quiroga, Galicia."
 photo_alt: "A wooden arrow sign reading Camiño de Inverno beside a frosted grassy verge, with autumn scrub lit gold by low sun behind."
+photo_checked: 2026-11-22
 category: travel
 tags: [camino, walking, long-distance-walking, pilgrimage, spain, colorado, couples, men, women]
 segments: [mover, restarter]
