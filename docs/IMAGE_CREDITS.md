@@ -216,6 +216,7 @@ Each photo is resized for the web and not otherwise changed.
 | marie-fowler-doctorate-at-83 | File:Howard University Washington DC - Founders Library.jpg | Derek E. Morton | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Howard_University_Washington_DC_-_Founders_Library.jpg | 2026-10-07 |
 | mark-herbst-round-the-world-bike-ride | File:Loaded touring bicycle.JPG | Keithonearth | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Loaded_touring_bicycle.JPG | 2026-11-17 |
 | martine-barons-world-champion-deadlift-65 | File:Deadlift grip.JPG | U.S. Air Force photo by Senior Airman Clayton Lenhardt | Public domain | https://commons.wikimedia.org/wiki/File:Deadlift_grip.JPG | 2026-10-07 |
+| mary-anning-lyme-regis-sea-dragons | File:Plesiosaurus dolichodeirus.JPG | Ghedoghedo | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Plesiosaurus_dolichodeirus.JPG | 2026-11-22 |
 | masahiro-hara-qr-code | File:QR Code Preparation Derbyshire.jpg | Roger from Derby, UK | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:QR_Code_Preparation_Derbyshire.jpg | 2026-11-17 |
 | maurice-newman-skating-at-80 | File:Berlin inlinemarathon riesengrppe.JPG | Dirk Ingo Franke | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Berlin_inlinemarathon_riesengrppe.JPG | 2026-10-07 |
 | melanie-harris-mom-a-vibez-dj | File:Turntables and mixer.jpg | Baskoner | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Turntables_and_mixer.jpg | 2026-11-17 |
