@@ -55,7 +55,9 @@ def channels():
     for o in orgs:
         for c in gql("query($o: OrganizationId!) { channels(input: {organizationId: $o}) { id name service } }",
                      {"o": o["id"]})["channels"]:
-            found.append({**c, "org": o["id"]})
+            # Paws on the Sand shares the Buffer account and posts with its own script: never post DDR content to its channels.
+            if "paws" not in (c.get("name") or "").lower():
+                found.append({**c, "org": o["id"]})
     return found
 
 
