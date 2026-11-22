@@ -132,3 +132,27 @@ dates:
     next: "2027-02-09"
     next_source: {label: "New Orleans & Company: Future Mardi Gras dates", url: "https://www.neworleans.com/events/holidays-seasonal/mardi-gras/future-mardi-gras-dates", checked: "2026-11-22"}
     source: {label: "New Orleans & Company: Future Mardi Gras dates", url: "https://www.neworleans.com/events/holidays-seasonal/mardi-gras/future-mardi-gras-dates", checked: "2026-11-22"}
+  - activity: watch-the-braemar-gathering
+    months: [9]
+    note: "Held on the first Saturday of September each year. The 2027 Gathering is on Saturday 4 September, from about 9am to 5pm; general admission tickets go on sale on 1 February 2027 (seated tickets have no on-sale date yet)."
+    next: "2027-09-04"
+    next_source: {label: "The Braemar Gathering: Tickets", url: "https://www.braemargathering.org/tickets", checked: "2026-11-22"}
+    source: {label: "The Braemar Gathering", url: "https://www.braemargathering.org/", checked: "2026-11-22"}
+    book:
+      step: 1
+      from: "2027-02-01"
+      for: "2027-09-04"
+      note: "The organiser says general admission tickets go on sale on 1 February 2027; seated tickets were marked not on sale yet, with no date."
+      source: {label: "The Braemar Gathering: Tickets", url: "https://www.braemargathering.org/tickets", checked: "2026-11-22"}
+  - activity: go-to-hay-festival
+    months: [5, 6]
+    note: "Eleven days each spring at Hay-on-Wye. Hay Festival 2027, its 40th, runs from Thursday 27 May to Sunday 6 June; the festival has not yet said when the programme and tickets come out, and its members get priority booking before general release."
+    next: "2027-05-27"
+    next_source: {label: "Hay Festival Hay-on-Wye: FAQ", url: "https://www.hayfestival.com/hay-on-wye/faq", checked: "2026-11-22"}
+    source: {label: "Hay Festival Hay-on-Wye", url: "https://www.hayfestival.com/hay-on-wye/home", checked: "2026-11-22"}
+  - activity: watch-henley-royal-regatta
+    months: [6, 7]
+    note: "Six days around the start of July. Henley Royal Regatta 2027 runs from Tuesday 29 June to Sunday 4 July; the regatta says tickets go on sale in spring 2027, without a date yet."
+    next: "2027-06-29"
+    next_source: {label: "Henley Royal Regatta", url: "https://www.hrr.co.uk/", checked: "2026-11-22"}
+    source: {label: "Henley Royal Regatta", url: "https://www.hrr.co.uk/", checked: "2026-11-22"}
