@@ -330,6 +330,31 @@
 
   // Scroll depth (tells us whether article formats hold attention)
   let marks = { 50: 0, 90: 0 };
+  /* My year in the menu (RUNBOOK §6t row 24c, Robin 21 Nov 2026: he could not find My year). Before launch the link is
+     shown only to someone with a plan saved in this browser or who has signed in here (from launch, base.html shows it
+     to everyone). This only LOOKS at the list: it is read and written through static/list-store.js, which every page
+     with a list loads; the menu needs to know just whether anything has a date or a month. */
+  const navYear = () => {
+    const a = document.querySelector('[data-nav-myyear]'); if (!a || !a.hidden) return;
+    let show = false;
+    try {
+      show = localStorage.getItem('ddr_list_acct') === '1';
+      const d = JSON.parse(localStorage.getItem('ddr_list') || 'null');
+      if (!show && d && Array.isArray(d.items)) show = d.items.some(it => it && !it.deleted && (it.date || it.month));
+    } catch (e) {}
+    if (show) { a.hidden = false; const nav = a.closest('.nav'); if (nav) nav.classList.add('nav-plus'); }
+  };
+  navYear(); window.DDRNavYear = navYear;   // list.js calls it after a plan is saved or removed
+  document.addEventListener('ddr:list', navYear); window.addEventListener('storage', navYear);   // the first plan saved on this page
+  /* "How the planner works" (row 24d): Close hides it on every page, remembered in this browser only */
+  document.querySelectorAll('[data-howto]').forEach(box => {
+    try { if (localStorage.getItem('ddr_howto_closed') === '1') { box.hidden = true; return; } } catch (e) {}
+    const x = box.querySelector('[data-howto-close]');
+    if (x) x.addEventListener('click', () => {
+      box.hidden = true; try { localStorage.setItem('ddr_howto_closed', '1'); } catch (e) {}
+      const h = document.querySelector('h1'); if (h) { h.setAttribute('tabindex', '-1'); h.focus(); }
+    });
+  });
   window.addEventListener('scroll', () => {
     const pct = (scrollY + innerHeight) / document.body.scrollHeight * 100;
     for (const m in marks) if (!marks[m] && pct >= m) { marks[m] = 1; track('scroll_depth', { pct: m }); }

@@ -12,8 +12,15 @@
   const monthName = m => MONTHS[+m.slice(5, 7) - 1] + ' ' + m.slice(0, 4);   // "2027-06" → "June 2027" (My year plans)
   const shortDate = d => new Date(d + 'T12:00').toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });   // "14 Aug 2027"
   const count = () => { const l = L.live(L.load()); return { n: l.length, done: l.filter(i => i.status === 'done').length }; };
+  // In My year (Planner Plus interface day, RUNBOOK §6t row 24a): anything with a date or a month shows in My year
+  const inYear = it => !!(it && (it.date || it.month));
+  const whenText = it => (it.date ? shortDate(it.date) + (it.until ? ' to ' + shortDate(it.until) : '') : monthName(it.month));
+  const yearHref = it => '/my-year/#' + (it.date || it.month);
 
-  /* ---------- "Add to my list" buttons (catalogue cards, challenge pages, invite line) ---------- */
+  /* ---------- "Save for later" buttons (catalogue cards, challenge pages, invite line) ----------
+     Two choices everywhere an activity has buttons (Robin, 21 Nov 2026, RUNBOOK §6t row 24a): "Add to my year" (a link
+     to the plan box: a date and a step-by-step plan) and "Save for later" (data-fl-add: on the list with no date, what
+     "Add to my list" did). Once the activity has a date or month, both give way to "In my year: <date> · See it". */
   // Removing (20 Nov 2026, Robin: "I added an activity to my list and now can't remove it"). Every "Add to my list"
   // button outside the invite line gets a "Remove" beside it while the activity is on the list; a removal can be undone.
   let undoSnap = null, undoTimer = 0;
@@ -22,7 +29,7 @@
     $$('[data-fl-add]').forEach(b => {
       const id = b.dataset.flAdd, on = L.has(id);
       b.setAttribute('aria-pressed', String(on));
-      b.textContent = on ? 'On my list ✓' : 'Add to my list';
+      b.textContent = on ? 'Saved ✓' : 'Save for later';
       if (b.closest('[data-fl-invited]')) return;
       let r = b.parentNode.classList.contains('fl-addrow') ? $('[data-fl-unadd]', b.parentNode) : null;
       if (!r) {
@@ -38,9 +45,29 @@
       r.dataset.undo = undo ? '1' : '';
     });
     const ml = $('[data-fl-minelink]'), pg = $('[data-fl-challenge]');
-    if (ml && pg) ml.hidden = !L.has(pg.dataset.flChallenge);
+    if (ml && pg) { const it = L.get(pg.dataset.flChallenge); ml.hidden = !it || inYear(it); }
+    paintYear(); if (window.DDRNavYear) window.DDRNavYear();
     const c = count();
     $$('[data-fl-n]').forEach(e => { e.textContent = c.n ? '(' + c.n + ')' : ''; });
+  }
+  // Cards: the "Add to my year" chip becomes one "In my year: <date> · See it" link, and Save for later steps aside.
+  // The activity page: the two choices give way to the "In my year" line (data-fl-inyear) with a link to the plan.
+  function paintYear() {
+    const byId = {}; L.live(L.load()).forEach(it => { byId[it.id] = it; });   // one read for every card on the page
+    $$('[data-fl-year]').forEach(a => {
+      const id = a.dataset.flYear, it = byId[id], on = inYear(it), acts = a.closest('.fl-cardacts');
+      a.classList.toggle('is-planned', on);
+      if (on) { a.href = yearHref(it); a.innerHTML = 'In my year: ' + esc(whenText(it)) + ' · <span class="fl-see">See it<span class="sr-only"> in My year</span></span>'; }
+      else { a.href = '/list/' + encodeURIComponent(id) + '/#plan'; a.textContent = 'Add to my year'; }
+      if (acts) $$('[data-fl-add]', acts).forEach(b => { const row = b.closest('.fl-addrow') || b; row.hidden = on; });
+    });
+    const pg = $('[data-fl-challenge]'), box = pg && $('[data-fl-inyear]', pg);
+    if (box) {
+      const it = byId[pg.dataset.flChallenge], on = inYear(it);
+      box.hidden = !on; $$('[data-fl-choice]', pg).forEach(c => { c.hidden = on; });
+      $$('[data-fl-invited] [data-fl-add]', pg).forEach(b => { b.hidden = on; });   // a friend's invite: already in the year
+      if (on) { $('[data-fl-inyear-when]', box).textContent = whenText(it); $('[data-fl-inyear-see]', box).href = yearHref(it); }
+    }
   }
   window.DDRListPaint = paintAdds;   // plan-page.js calls this after saving or removing a plan
   const changedHere = () => document.dispatchEvent(new CustomEvent('ddr:list'));
@@ -263,7 +290,7 @@
     const stretch = ints.length ? rot(by(pool.filter(li => !ints.includes(li.dataset.category) && score(li) >= 0)), 2) : [];
     if (!picks.length && !stretch.length) { box.hidden = true; return; }
     const why = li => ints.includes(li.dataset.category) ? 'Because you picked ' + catLabel(li) + (lvl && FIT[lvl][li.dataset.effort] === 3 ? '. ' + LEVEL_WHY[lvl] : '') : LEVEL_WHY[lvl] || '';
-    const cardOf = (li, reason) => '<li data-cat="' + esc(li.dataset.category) + '"><p class="kicker">' + esc(reason) + '</p><h3><a href="/list/' + li.dataset.id + '/">' + esc(li.dataset.title) + '</a></h3><p class="fl-meta">' + esc($('.fl-meta', li).textContent) + '</p><p class="fl-go" aria-hidden="true">How to start and where to go <span>→</span></p><button type="button" class="chip fl-add" data-fl-add="' + li.dataset.id + '" aria-pressed="false">Add to my list</button></li>';
+    const cardOf = (li, reason) => '<li data-cat="' + esc(li.dataset.category) + '"><p class="kicker">' + esc(reason) + '</p><h3><a href="/list/' + li.dataset.id + '/">' + esc(li.dataset.title) + '</a></h3><p class="fl-meta">' + esc($('.fl-meta', li).textContent) + '</p><p class="fl-go" aria-hidden="true">How to start and where to go <span>→</span></p><div class="fl-cardacts"><a class="chip fl-year" href="/list/' + li.dataset.id + '/#plan" data-fl-year="' + li.dataset.id + '">Add to my year</a><button type="button" class="chip fl-add" data-fl-add="' + li.dataset.id + '" aria-pressed="false">Save for later</button></div></li>';
     box.innerHTML = '<div class="fl-suggest-head"><h2>Suggested for you</h2><p class="meta">From the interests and starting point you gave us. <button type="button" class="linklike" data-open-segments2>Change them</button></p></div><ul class="fl-grid">'
       + picks.map(li => cardOf(li, why(li))).join('') + stretch.map(li => cardOf(li, 'Something different: ' + catLabel(li))).join('')
       + '</ul>' + (mine.length > 4 ? '<p><button type="button" class="linklike" data-fl-more>Show me different ones</button></p>' : '');
@@ -301,7 +328,7 @@
         + '<span class="fl-row-ctl"><label class="sr-only" for="st-' + i + '">Status</label><select id="st-' + i + '" data-fl-status>' + L.STATUSES.map(s => '<option value="' + s + '"' + (s === it.status ? ' selected' : '') + '>' + STATUS[s] + '</option>').join('') + '</select>'
         + '<button type="button" class="fl-row-x" data-fl-remove aria-label="Remove ' + esc(gone ? 'this activity' : t) + ' from my list"><span aria-hidden="true">✕</span> Remove</button></span></div>'
         + '<details><summary>' + (it.date || it.month || it.note ? esc([it.date ? shortDate(it.date) + (it.until ? ' to ' + shortDate(it.until) : '') : it.month ? monthName(it.month) : '', it.note].filter(Boolean).join(' · ').slice(0, 70)) : 'Add a date or note, or move it') + '</summary>'
-        + '<div class="fl-row-more">' + (it.cid && !gone ? '<p class="fl-row-plan"><a href="/list/' + esc(it.cid) + '/#plan">' + ((it.date || it.month) && it.plan_made ? 'See the plan' : 'Plan this') + ' <span aria-hidden="true">→</span></a>' + (it.month ? ' <span class="meta">Planned for ' + esc(monthName(it.month)) + '</span>' : '') + '</p>' : '')
+        + '<div class="fl-row-more">' + (it.cid && !gone ? '<p class="fl-row-plan"><a href="/list/' + esc(it.cid) + '/#plan">' + ((it.date || it.month) && it.plan_made ? 'See the plan' : 'Add to my year') + ' <span aria-hidden="true">→</span></a>' + (inYear(it) ? ' · <a href="' + esc(yearHref(it)) + '">See it in My year</a>' : '') + (it.month ? ' <span class="meta">Planned for ' + esc(monthName(it.month)) + '</span>' : '') + '</p>' : '')
         + '<label>Date <small>(planned for, or done on)</small><input type="date" data-fl-date value="' + esc(it.date) + '"></label>'
         + '<label>Note<textarea rows="2" maxlength="500" data-fl-note placeholder="Who with, where, how it went">' + esc(it.note) + '</textarea></label>'
         + '<p class="fl-row-acts"><button type="button" class="chip" data-fl-move="-1"' + (i === 0 ? ' disabled' : '') + '>Move up</button><button type="button" class="chip" data-fl-move="1"' + (i === l.length - 1 ? ' disabled' : '') + '>Move down</button></p></div></details></li>';

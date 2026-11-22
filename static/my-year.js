@@ -25,6 +25,7 @@
   const addMonths = (m, n) => { const y = +m.slice(0, 4), mo = +m.slice(5, 7) - 1 + n; return (y + Math.floor(mo / 12)) + '-' + pad(((mo % 12) + 12) % 12 + 1); };
 
   let S = null, byId = {}, view = 'year', month = thisMonth, all = null, ro = true, gated = false;   // read-only until static/plus.js answers
+  let calMonth = thisMonth, calSel = '';   // the calendar (row 24b): the month shown and the day picked
 
   /* ---------- put everything together ---------- */
   function gather() {
@@ -128,12 +129,12 @@
     if (r.eat) h += '<p class="pl-wkh">' + esc(T.eat) + '</p><p class="meta">' + esc(r.eat.help) + '</p><ul class="pl-links">' + r.eat.links.map(linkHtml).join('') + '</ul>';
     return h;
   }
-  function stepHtml(s, n) {
+  function stepHtml(s, n, inPanel) {
     const p = planOf(s.pid), gone = s.date < today && !s.done, uid = 'my-s' + n;
     if (s.bare) {
       return '<li class="pl-step is-day" data-strand="day"><p class="pl-date"><time datetime="' + s.date + '">' + esc(s.by_month ? 'Some time this month' : daysText(s)) + '</time> <span class="pl-tag">The day</span>' + (p.status === 'done' ? ' <span class="pl-tag">Done</span>' : '') + '</p>'
         + '<p class="pl-text">' + esc(s.text) + '</p>'
-        + '<p class="pl-why">' + (p.cid ? 'No get-ready plan saved for this yet. <a href="' + link(p) + '">Plan this</a>' : 'One of your own, so there is no get-ready plan for it. <a href="/list/#mine">Change it on your list</a>') + '</p></li>';
+        + '<p class="pl-why">' + (p.cid ? 'No get-ready plan saved for this yet. <a href="' + link(p) + '">Get the steps: Add to my year</a>' : 'One of your own, so there is no get-ready plan for it. <a href="/list/#mine">Change it on your list</a>') + '</p></li>';
     }
     // where it may move: judged from where the plan first put it, so a step moved once can still be moved again
     const w = s.done ? null : P.window(p.plan, Object.assign({}, s, { date: s.moved ? s.moved.from : s.date }), today) || P.window(p.plan, s, today);
@@ -148,13 +149,13 @@
       + (items.length ? '<ul class="pl-links pl-kit">' + items.map(x => '<li><a href="' + esc(x.aff ? affUrl(x.url, x.aff) : x.url) + '" target="_blank" rel="' + (x.aff ? AFF_REL : 'noopener') + '">' + esc(x.name) + '</a><span class="pl-lwhy">' + esc(x.why) + '</span></li>').join('') + '</ul>' : '')
       + (s.picks ? P.picksHtml(s.picks, S.picks, { esc, aff: u => affUrl(u, 'amazon') }) : '')
       // a stay that began in an earlier month: point back to it rather than repeating "everything above is ready"
-      + (s.strand === 'day' && s.until && view === 'month' && s.date.slice(0, 7) !== month
+      + (s.strand === 'day' && s.until && !inPanel && view === 'month' && s.date.slice(0, 7) !== month
         ? '<p class="pl-why">Your stay began in ' + esc(P.MONTHS[+s.date.slice(5, 7) - 1]) + '. <button type="button" class="linklike" data-my-goto="' + s.date.slice(0, 7) + '">See ' + esc(P.monthYear(s.date.slice(0, 7))) + '</button> for the steps to get ready.</p>'
         : s.why ? '<p class="pl-why"><span>Why then:</span> ' + esc(s.why) + '</p>' : '')
       + (s.moved ? '<p class="pl-why my-moved">' + esc(s.moved.why) + '</p>' : '')
       + (s.with ? '<p class="meta my-with">' + esc(s.with) + '</p>' : '')
       + (s.strand === 'day' ? tripHtml(p, s) + goesHtml(p) : ro ? '' : '<div class="my-acts">'
-        + '<label class="my-tick"><input type="checkbox" data-my-tick' + (s.done ? ' checked' : '') + '> Done</label>'
+        + '<label class="my-tick"><input type="checkbox" data-my-tick' + (s.done ? ' checked' : '') + '> Done<span class="sr-only">: ' + esc(s.text) + '</span></label>'
         + (w ? '<details class="my-move"><summary>Move this step</summary><div class="my-move-in"><label for="' + uid + '">Move to</label> <input type="date" id="' + uid + '" min="' + w.min + '" max="' + w.max + '" value="' + s.date + '" data-my-to> '
           + '<button type="button" class="btn btn-small" data-my-shift>Move</button>' + (s.moved && s.moved.by === 'you' ? ' <button type="button" class="btn btn-small btn-ghost" data-my-back>Put it back</button>' : '')
           + '<p class="meta">Between ' + esc(P.longDate(w.min)) + ' and ' + esc(P.longDate(w.max)) + ', so it stays ' + (after ? 'after the day.' : 'before the day.') + '</p></div></details>' : '')
@@ -207,6 +208,91 @@
     if (focus) { const sec = $('[data-my-month]'); sec.focus({ preventScroll: true }); sec.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' }); }
   }
 
+  /* ---------- the calendar (Robin, 21 Nov 2026; RUNBOOK §6t row 24b) ----------
+     A month grid, Monday first, above the year and month views, from the same steps (all.steps from DDRPlan.combine):
+     each planned day shows its activity as a coloured bar (one bar across the days of a stay), and a dot marks a day
+     with steps to get ready (training sessions included). Every day is a real button; the arrow keys move between days
+     (Home and End: start and end of the week; Page Up and Page Down: a month), Enter or a tap opens the day under the
+     grid with its plans and steps, ticks and moves as in the month view. Read-only plans show the same grid. */
+  const FULL_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const isoOf = d => d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate());
+  const addDays = (iso, n) => { const d = P.parse(iso); d.setUTCDate(d.getUTCDate() + n); return isoOf(d); };
+  const longDay = iso => { const d = P.parse(iso); return FULL_DAYS[d.getUTCDay()] + ' ' + d.getUTCDate() + ' ' + P.MONTHS[d.getUTCMonth()] + ' ' + d.getUTCFullYear(); };
+  const covers = (s, d) => s.strand === 'day' && !s.by_month && (s.date === d || (!!s.until && s.date <= d && s.until >= d));
+  const catOf = p => (p && p.cid && byId[p.cid] ? byId[p.cid].category : '');
+  function calRange() {   // from the earliest step (or this month) to the last month the year view shows
+    const ms = months(), first = all.steps.length && all.steps[0].date.slice(0, 7) < thisMonth ? all.steps[0].date.slice(0, 7) : thisMonth;
+    return [first, ms[ms.length - 1]];
+  }
+  function dayInfo(d) {
+    const days = all.steps.filter(s => covers(s, d)), prep = all.steps.filter(s => s.strand !== 'day' && s.date === d);
+    return { days, prep: prep.filter(s => !s.week), ses: prep.filter(s => s.week) };
+  }
+  function drawCal(focusDay) {
+    const [lo, hi] = calRange();
+    if (calMonth < lo) calMonth = lo; if (calMonth > hi) calMonth = hi;
+    $('[data-cal-title]').textContent = P.monthYear(calMonth); $('[data-cal-cap]').textContent = P.monthYear(calMonth);
+    const prev = addMonths(calMonth, -1), next = addMonths(calMonth, 1);
+    const bp = $('[data-cal-step="-1"]'), bn = $('[data-cal-step="1"]');
+    bp.hidden = prev < lo; bn.hidden = next > hi;
+    $('[data-cal-prev]').textContent = P.MONTHS[+prev.slice(5) - 1]; $('[data-cal-next]').textContent = P.MONTHS[+next.slice(5) - 1];
+    // month plans ("some time in"): one line above the grid, since they have no day of their own
+    const mp = all.steps.filter(s => s.strand === 'day' && s.by_month && s.date.slice(0, 7) === calMonth);
+    const mb = $('[data-cal-mplans]'); mb.hidden = !mp.length;
+    mb.innerHTML = mp.length ? '<strong>Some time this month:</strong> ' + mp.map(s => { const pl = planOf(s.pid); return '<a href="' + link(pl) + '"><span class="cal-mdot" data-cat="' + esc(catOf(pl)) + '" aria-hidden="true"></span>' + esc(pl.title) + '</a>'; }).join(', ') : '';
+    const first = P.parse(calMonth + '-01'), lead = (first.getUTCDay() + 6) % 7;   // Monday first
+    const dim = new Date(Date.UTC(first.getUTCFullYear(), first.getUTCMonth() + 1, 0)).getUTCDate();
+    const inMonth = d => d.slice(0, 7) === calMonth;
+    let tab = calSel && inMonth(calSel) ? calSel : inMonth(today) ? today : calMonth + '-01';
+    let html = '<tr>' + '<td class="cal-blank"></td>'.repeat(lead);
+    for (let i = 1; i <= dim; i++) {
+      const d = calMonth + '-' + pad(i), col = (lead + i - 1) % 7, info = dayInfo(d);
+      if (col === 0 && i > 1) html += '</tr><tr>';
+      const bars = info.days.slice(0, 2).map(s => {
+        const pl = planOf(s.pid), start = s.date === d || col === 0 || i === 1;   // the name at the start of the bar and of each week
+        return '<span class="cal-bar' + (s.date === d ? ' is-start' : '') + (!s.until || s.until === d ? ' is-end' : '') + (pl.status === 'done' ? ' is-done' : '') + '" data-cat="' + esc(catOf(pl)) + '">'
+          + (start ? '<span class="cal-bt">' + esc(pl.title) + '</span>' : '') + '</span>';
+      }).join('') + (info.days.length > 2 ? '<span class="cal-more">+' + (info.days.length - 2) + '</span>' : '');
+      const nPrep = info.prep.length, nSes = info.ses.length;
+      const words = [longDay(d) + (d === today ? ', today' : '')]
+        .concat(info.days.map(s => planOf(s.pid).title + (s.until ? ' (' + daysText(s) + ')' : '')))
+        .concat(nPrep ? [nPrep + (nPrep === 1 ? ' step' : ' steps') + ' to get ready'] : [])
+        .concat(nSes ? [nSes + (nSes === 1 ? ' training session' : ' training sessions')] : []);
+      if (!info.days.length && !nPrep && !nSes) words.push('nothing planned');
+      html += '<td><button type="button" class="cal-day' + (d === today ? ' is-today' : '') + (d === calSel ? ' is-sel' : '') + (d < today ? ' is-past' : '') + (info.days.length ? ' has-day' : '') + '" data-cal-day="' + d + '" aria-pressed="' + (d === calSel) + '"' + (d === today ? ' aria-current="date"' : '') + ' tabindex="' + (d === tab ? 0 : -1) + '" aria-label="' + esc(words.join('. ')) + '">'
+        + '<span class="cal-n" aria-hidden="true">' + i + '</span>' + (bars ? '<span class="cal-bars" aria-hidden="true">' + bars + '</span>' : '')
+        + (nPrep || nSes ? '<span class="cal-dot" aria-hidden="true"></span>' : '') + '</button></td>';
+    }
+    html += '<td class="cal-blank"></td>'.repeat((7 - (lead + dim) % 7) % 7) + '</tr>';
+    $('[data-cal-body]').innerHTML = html;
+    drawPanel();
+    if (focusDay) { const b = $('[data-cal-day="' + focusDay + '"]'); if (b) b.focus(); }
+  }
+  function sesHtml(x) {   // one training session in the day panel, with its Done box (as in the month view's weeks)
+    const p = planOf(x.pid), gone = x.date < today && !x.done, tr = p.plan && p.plan.train;
+    return '<li class="pl-step pl-ses' + (x.done ? ' is-done' : '') + (gone ? ' is-gone' : '') + '" data-strand="train" data-pid="' + esc(x.pid) + '" data-sid="' + esc(x.id) + '">'
+      + '<p class="pl-date"><span class="pl-tag">Train</span>' + (tr ? ' <span class="meta">' + esc(fill(S.notes.train_week, { w: x.week, weeks: tr.weeks, head: tr.list[x.week - 1].head })) + '</span>' : '') + (gone ? ' <span class="pl-tag pl-tag-gone">Gone by</span>' : '') + '</p>'
+      + '<p class="my-for"><a href="' + link(p) + '">' + esc(p.title) + '</a></p><p class="pl-text">' + esc(x.text) + '</p>' + (x.detail ? '<p class="pl-detail">' + esc(x.detail) + '</p>' : '')
+      + '<p class="pl-why"><span>Why:</span> ' + esc(x.why) + '</p>'
+      + (ro ? '' : '<div class="my-acts"><label class="my-tick"><input type="checkbox" data-my-tick' + (x.done ? ' checked' : '') + '> Done<span class="sr-only">: ' + esc(x.text) + '</span></label></div>') + '</li>';
+  }
+  function drawPanel() {
+    const box = $('[data-cal-panel]');
+    if (!calSel || calSel.slice(0, 7) !== calMonth) { box.innerHTML = '<p class="meta cal-hint">Tap a day to see its plans and the steps to get ready.</p>'; return; }
+    const info = dayInfo(calSel);
+    let n = 5000;   // ids apart from the month view's
+    const items = info.days.map(s => stepHtml(s, n++, true)).concat(info.prep.map(s => stepHtml(s, n++, true))).concat(info.ses.map(sesHtml));
+    box.innerHTML = '<h3 class="cal-dayh" tabindex="-1">' + esc(longDay(calSel)) + (calSel === today ? ' <span class="pl-tag">Today</span>' : '') + '</h3>'
+      + (items.length ? '<ol class="pl-steps">' + items.join('') + '</ol>' : '<p class="meta">Nothing planned on this day. <a href="/list/">Find something in Things to do</a>.</p>');
+  }
+  function pickDay(d, focus) {
+    calSel = d; calMonth = d.slice(0, 7);
+    const inf = dayInfo(d), n = inf.days.length + inf.prep.length + inf.ses.length, say = $('[data-cal-say]');   // a short line for screen readers, not the whole panel
+    if (say) { say.textContent = ''; setTimeout(() => { say.textContent = longDay(d) + ': ' + (n ? n + (n === 1 ? ' thing' : ' things') + ' below the calendar.' : 'nothing planned.'); }, 30); }
+    try { history.replaceState(null, '', '#' + d); } catch (e) {}
+    drawCal(focus ? d : null);
+  }
+
   /* ---------- the whole page ---------- */
   function draw(focus) {
     gather();
@@ -221,12 +307,14 @@
         + (any ? '' : '<a class="btn btn-ghost" href="/planner-plus/sample/">' + esc(PP.sample) + '</a>') + '</p><p class="meta"><a href="/account/">' + esc(PP.signin) + '</a></p>';
     }
     if (!any) return;
+    if (!calSel && !location.hash) { const t = dayInfo(today); if (t.days.length || t.prep.length || t.ses.length) calSel = today; }   // today, when there is something on it
+    drawCal();
     drawClashes();
     $$('[data-my-view]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.myView === view)));
     $('[data-my-year]').hidden = view !== 'year'; $('[data-my-month]').hidden = view !== 'month';
     if (view === 'year') drawYear(); else drawMonth(focus);
     const u = $('[data-my-undated]');
-    u.hidden = !all.undated; u.innerHTML = all.undated ? (all.undated === 1 ? 'One more thing on <a href="/list/#mine">your list</a> has no date yet.' : all.undated + ' more things on <a href="/list/#mine">your list</a> have no date yet.') + ' Give one a day or a month with Plan this on its page.' : '';
+    u.hidden = !all.undated; u.innerHTML = all.undated ? (all.undated === 1 ? 'One more thing on <a href="/list/#mine">your list</a> has no date yet.' : all.undated + ' more things on <a href="/list/#mine">your list</a> have no date yet.') + ' Give one a day or a month with Add to my year on its page.' : '';
     // the tour searches under "While you're there" (day 10) carry affiliate ids too
     const aff = all.steps.some(s => (s.links || []).some(l => l.aff) || (s.items || []).some(x => x.aff) || s.picks) || all.plans.some(p => p.plan && p.plan.status === 'ok' && p.away && p.cid && byId[p.cid]
       && P.trip(byId[p.cid], S, { place: (all.items[p.id] || {}).where || '', until: p.until }).near);
@@ -249,6 +337,10 @@
   const say = t => { const m = $('[data-my-msg]'); m.textContent = ''; setTimeout(() => { m.textContent = t; }, 30); };
 
   root.addEventListener('click', e => {
+    const cd = e.target.closest('[data-cal-day]');
+    if (cd) { pickDay(cd.dataset.calDay, true); return; }
+    const cs = e.target.closest('[data-cal-step]');
+    if (cs) { calMonth = addMonths(calMonth, +cs.dataset.calStep); drawCal(); if (cs.hidden) { const o = $('.cal-step:not([hidden])'); if (o) o.focus(); } return; }
     const v = e.target.closest('[data-my-view]');
     if (v) { view = v.dataset.myView; draw(); setHash(); return; }
     const g = e.target.closest('[data-my-goto]');
@@ -282,18 +374,43 @@
       L.shift(pid, sid, ''); draw(); say('Put back where the plan had it.');
     }
   });
+  root.addEventListener('keydown', e => {   // the calendar: arrow keys between days
+    const b = e.target.closest && e.target.closest('[data-cal-day]'); if (!b) return;
+    const d = b.dataset.calDay, dow = (P.parse(d).getUTCDay() + 6) % 7;
+    const to = { ArrowLeft: -1, ArrowRight: 1, ArrowUp: -7, ArrowDown: 7, Home: -dow, End: 6 - dow }[e.key];
+    let nd = to !== undefined ? addDays(d, to) : e.key === 'PageUp' ? addMonths(d.slice(0, 7), -1) + d.slice(7) : e.key === 'PageDown' ? addMonths(d.slice(0, 7), 1) + d.slice(7) : '';
+    if (!nd) return;
+    e.preventDefault();
+    if (!P.parse(nd) || P.parse(nd).toISOString().slice(0, 10) !== nd) {   // 31 Jan → the last day of February
+      const m = nd.slice(0, 7), last = new Date(Date.UTC(+m.slice(0, 4), +m.slice(5, 7), 0)).getUTCDate(); nd = m + '-' + pad(Math.min(+d.slice(8), last));
+    }
+    const [lo, hi] = calRange(); if (nd.slice(0, 7) < lo || nd.slice(0, 7) > hi) return;
+    if (nd.slice(0, 7) !== calMonth) { calMonth = nd.slice(0, 7); drawCal(); }
+    $$('[data-cal-day]').forEach(x => { x.tabIndex = x.dataset.calDay === nd ? 0 : -1; });
+    const t = $('[data-cal-day="' + nd + '"]'); if (t) t.focus();
+  });
   root.addEventListener('change', e => {
     if (ro || !e.target.matches('[data-my-tick]')) return;
     const li = e.target.closest('[data-sid]'), done = e.target.checked;
     L.tick(li.dataset.pid, li.dataset.sid, done);
     li.classList.toggle('is-done', done);   // no full redraw, so keyboard focus stays on the box
+    // the same step can be on screen twice (the day under the calendar and the month view): keep both the same
+    $$('[data-sid]').forEach(x => { if (x !== li && x.dataset.pid === li.dataset.pid && x.dataset.sid === li.dataset.sid) { x.classList.toggle('is-done', done); const c = $('[data-my-tick]', x); if (c) c.checked = done; } });
     gather(); say(done ? 'Ticked off.' : 'Not done yet.');
+  });
+  // a link to a day or a month on this page (or Back to one): show it
+  window.addEventListener('hashchange', () => {
+    if (!S || !gated) return;
+    const hh = location.hash.slice(1);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(hh) && P.parse(hh) && (hh !== calSel || hh.slice(0, 7) !== calMonth)) { pickDay(hh); $('[data-cal]').scrollIntoView({ block: 'start' }); }
+    else if (/^\d{4}-\d{2}$/.test(hh) && (view !== 'month' || hh !== month)) { view = 'month'; month = hh; calMonth = hh; draw(); }
   });
   // A plan changed in another tab (an activity page, the list): redraw
   window.addEventListener('storage', ev => { if (ev.key === L.KEY && S && gated) draw(); });
 
   const h = location.hash.slice(1);
-  if (/^\d{4}-\d{2}$/.test(h)) { view = 'month'; month = h; }
+  if (/^\d{4}-\d{2}$/.test(h)) { view = 'month'; month = h; calMonth = h; }
+  if (/^\d{4}-\d{2}-\d{2}$/.test(h) && P.parse(h)) { calSel = h; calMonth = h.slice(0, 7); month = calMonth; }   // "See it" on an activity: open on its day
   fetch('/planner/activities.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
     S = d; d.activities.forEach(a => { byId[a.id] = a; });
     // the engine's training (day 6), only for the events in the reader's saved plans; without it a plan shows when to start

@@ -4,9 +4,10 @@
 {# Not in the sitemap and not indexed until the planner launches (RUNBOOK §6s, day 14): it is empty for anyone without plans. #}
 {% block robots %}<meta name="robots" content="noindex">{% endblock %}
 {% block pagetype %}my-year{% endblock %}
-{% block content %}
+{% from "_macros.html" import howto %}{% block content %}
 <header class="page-head"><p class="kicker"><a href="/list/">Things to do</a></p><h1>My year</h1>
-<p class="lead">Everything you have planned, together: the days to look forward to, and the steps to get ready for each, month by month.</p></header>
+<p class="lead">Everything you have planned, together: the days to look forward to, and the steps to get ready for each, on a calendar and month by month.</p></header>
+{{ howto(where='-my') }}
 
 <div class="my" data-my aria-busy="true">
   <noscript><p>My year is made in your browser from the plans on your list, so it needs JavaScript switched on. Every activity page still works without it.</p></noscript>
@@ -16,29 +17,49 @@
   <div class="pl-guest" data-my-ro hidden></div>
   <div class="my-empty" data-my-empty hidden>
     <h2>Nothing planned yet</h2>
-    <p>Open anything in <a href="/list/">Things to do</a>, press <strong>Plan this</strong>, choose a day or a month and save the plan. It appears here with your other plans, and you can tick off each step as you go.</p>
+    <p>Open anything in <a href="/list/">Things to do</a>, press <strong>Add to my year</strong> and choose a day or a month. It appears here on your calendar with your other plans, and you can tick off each step as you go.</p>
   </div>
 
   <div data-my-main hidden>
+    {# The calendar (Robin, 21 Nov 2026; RUNBOOK §6t row 24b): a month grid, Monday first, built from the same steps as the
+       list below (DDRPlan.combine). Tap a day to see its plans and steps under the grid. #}
+    <section class="cal" data-cal aria-labelledby="cal-h">
+      <div class="cal-nav">
+        <button type="button" class="btn btn-small btn-ghost cal-step" data-cal-step="-1"><span aria-hidden="true">←</span> <span class="sr-only">Previous month:</span> <span class="cal-mname" data-cal-prev></span></button>
+        <h2 id="cal-h" class="cal-title" data-cal-title></h2>
+        <button type="button" class="btn btn-small btn-ghost cal-step" data-cal-step="1"><span class="sr-only">Next month:</span> <span class="cal-mname" data-cal-next></span> <span aria-hidden="true">→</span></button>
+      </div>
+      <p class="cal-mplans" data-cal-mplans hidden></p>
+      <table class="cal-grid">
+        <caption class="sr-only">Your plans in <span data-cal-cap></span>. Use the arrow keys to move between days, and Enter to see a day's plans.</caption>
+        <thead><tr>{% for d in ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'] %}<th scope="col"><abbr title="{{ d }}">{{ d[:3] }}</abbr></th>{% endfor %}</tr></thead>
+        <tbody data-cal-body></tbody>
+      </table>
+      <p class="cal-key meta"><span class="cal-key-bar" aria-hidden="true"></span> a day you have planned <span class="cal-key-dot" aria-hidden="true"></span> steps to get ready</p>
+      <p class="sr-only" data-cal-say role="status" aria-live="polite"></p>
+      <div class="cal-panel" data-cal-panel></div>
+    </section>
+
     <section class="my-clashes" data-my-clashes hidden aria-labelledby="my-cl-h">
       <h2 id="my-cl-h" class="h3">Worth a look</h2>
       <ul data-my-clash-list></ul>
     </section>
 
+    <h2 class="my-all-h">All your plans</h2>
     <div class="my-switch" role="group" aria-label="Show">
       <button type="button" class="chip" data-my-view="year" aria-pressed="true">The year</button>
       <button type="button" class="chip" data-my-view="month" aria-pressed="false">Month by month</button>
     </div>
 
     <section data-my-year aria-labelledby="my-y-h">
-      <h2 id="my-y-h" class="sr-only">The year ahead</h2>
+      <h3 id="my-y-h" class="sr-only">The year ahead</h3>
       <ol class="my-grid" data-my-grid></ol>
     </section>
 
     <section data-my-month hidden aria-labelledby="my-m-h" tabindex="-1">
       <div class="my-mnav">
         <button type="button" class="btn btn-small btn-ghost" data-my-step="-1"><span aria-hidden="true">←</span> <span data-my-prev></span></button>
-        <h2 id="my-m-h" data-my-mtitle></h2>
+        <h3 id="my-m-h" data-my-mtitle></h3>
         <button type="button" class="btn btn-small btn-ghost" data-my-step="1"><span data-my-next></span> <span aria-hidden="true">→</span></button>
       </div>
       <div data-my-mbody></div>

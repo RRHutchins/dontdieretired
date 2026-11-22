@@ -1474,3 +1474,106 @@ li.prod{display:grid;grid-template-columns:56px minmax(0,1fr);gap:.85em;align-it
 /* Narrow phones (20 Nov 2026): the group tiles and product buttons had pushed pages 5-6px sideways at 320px */
 @media (max-width:374px){.gx-tile{padding:11px 8px 11px 10px}.gx-tile strong{font-size:.8rem}}
 .fl-actions .linklike:not([hidden]){display:inline-flex;align-items:center;min-height:44px}
+
+/* Planner Plus interface day (Robin, 21 Nov 2026; RUNBOOK §6t rows 24a to 24d) */
+/* 24a: two choices on an activity page, each with one line saying what it does; "In my year" once it has a date */
+.fl-choices{align-items:stretch;gap:12px 16px}
+.fl-choice{display:flex;flex-direction:column;gap:6px;flex:1 1 240px;max-width:360px}
+.fl-choice[hidden],.fl-addrow[hidden],.fl-inyear[hidden],.fl-cardacts [hidden]{display:none!important}
+.fl-choice .btn{align-self:flex-start;min-height:44px}
+.fl-choice-help{margin:0;font-size:.92rem;color:var(--muted);line-height:1.4}
+.fl-choice-help .fl-mine-link{white-space:nowrap}
+.fl-choices .share-wrap{align-self:flex-start;margin-top:2px}
+.fl-inyear{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin:0;padding:10px 14px;border-radius:12px;background:#eef6f1;border:1px solid #cfe5d8;flex:1 1 100%}
+.fl-inyear-t{font-weight:600;margin-right:4px}
+.fl-inyear .btn{min-height:44px}
+/* cards: "Add to my year" (filled) and "Save for later" (outline) */
+.fl-cardacts{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center;position:relative;z-index:1}
+.fl-cardacts .fl-addrow{margin-top:0}
+.fl-cardacts .fl-add.chip{margin-top:0}
+.chip.fl-year{display:inline-flex;align-items:center;text-decoration:none;background:var(--ink);border-color:var(--ink);color:#fff}
+.chip.fl-year:hover{background:#000}
+.chip.fl-year.is-planned{background:#eef6f1;border-color:var(--accent);color:var(--accent);font-weight:600}
+.fl-year .fl-see{text-decoration:underline;text-underline-offset:3px;margin-left:.25em}
+.fl-grid>li[data-cat] .chip.fl-year{background:#fff;border-color:#fff;color:var(--c)}
+.fl-grid>li[data-cat] .chip.fl-year:hover{background:rgba(255,255,255,.88)}
+.fl-grid>li[data-cat] .chip.fl-year.is-planned{background:rgba(255,255,255,.15);border-color:#fff;color:#fff}
+.fl-choices-note{margin:-4px 0 14px}
+/* 24d: How the planner works */
+.howto{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--brand);border-radius:12px;padding:14px 18px 12px;margin:0 0 22px}
+.howto[hidden]{display:none}
+.howto-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.howto-h{font-size:1.15rem;margin:0}
+.howto-x{font:inherit;font-size:1.4rem;line-height:1;min-width:44px;min-height:44px;border:0;background:transparent;color:var(--muted);cursor:pointer;border-radius:8px;margin:-8px -10px -8px 0}
+.howto-x:hover{background:var(--stone,#f1eee8);color:var(--ink)}
+.howto-steps{list-style:none;counter-reset:hw;margin:10px 0 8px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 18px}
+.howto-steps li{counter-increment:hw;position:relative;padding-left:44px;line-height:1.4}
+.howto-steps li::before{content:counter(hw);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.howto-steps strong{display:block;font-size:1.02rem}
+.howto-steps span{font-size:.94rem;color:var(--muted)}
+.howto-foot{margin:0;font-size:.9rem;color:var(--muted)}
+@media (max-width:760px){.howto-steps{grid-template-columns:1fr;gap:10px}}
+/* 24b: My year as a calendar */
+.cal{margin:0 0 26px}
+.cal-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 8px}
+.cal-title{font-size:1.35rem;margin:0;text-align:center;flex:1}
+.cal-step{min-height:44px;min-width:44px}
+.cal-step[hidden]{visibility:hidden;display:inline-flex}
+.cal-mplans{margin:0 0 8px;font-size:.95rem}
+.cal-mdot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:5px;vertical-align:middle}
+.cal-grid{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:3px;margin:0 -3px}
+.cal-grid th{font-size:.8rem;font-weight:600;color:var(--muted);padding:2px 0 4px;text-align:center}
+.cal-grid abbr{text-decoration:none}
+.cal-grid td{padding:0;vertical-align:top}
+.cal-day{font:inherit;width:100%;min-height:76px;min-width:44px;display:flex;flex-direction:column;align-items:stretch;gap:3px;padding:5px 4px 6px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer;text-align:left;position:relative;overflow:hidden}
+.cal-day:hover{border-color:var(--ink)}
+.cal-day.is-past{background:#f7f5f0;color:var(--muted)}
+.cal-day.is-today{border:2px solid var(--brand);padding:4px 3px 5px}
+.cal-day.is-today .cal-n{color:var(--brand)}
+.cal-day.is-sel{background:#fdf3e4;border:2px solid var(--gold);padding:4px 3px 5px}
+.cal-day:focus-visible{outline:3px solid var(--focus,#8a5a12);outline-offset:2px;z-index:1}
+.cal-n{font-weight:700;font-size:.95rem;line-height:1.1}
+.cal-bars{display:flex;flex-direction:column;gap:2px}
+.cal-bar{display:block;background:var(--c);color:#fff;font-size:.74rem;font-weight:600;line-height:1.25;padding:1px 5px;border-radius:0;margin:0 -5px;min-height:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cal-bar[data-cat=""]{--c:var(--brand)}
+.cal-bar.is-start{border-radius:4px 0 0 4px;margin-left:0}
+.cal-bar.is-end{border-radius:0 4px 4px 0;margin-right:0}
+.cal-bar.is-start.is-end{border-radius:4px}
+.cal-bar.is-done{opacity:.55}
+.cal-bt{overflow:hidden;text-overflow:ellipsis}
+.cal-more{font-size:.72rem;font-weight:700;color:var(--muted)}
+.cal-dot{position:absolute;right:6px;top:7px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.cal-key{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:8px 0 10px}
+.cal-key-bar{display:inline-block;width:22px;height:8px;border-radius:4px;background:var(--brand)}
+.cal-key-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-left:10px}
+.cal-panel{border-top:1px solid var(--line);padding-top:12px}
+.cal-dayh{font-size:1.15rem;margin:0 0 8px}
+.cal-hint{margin:0}
+.my-all-h{font-size:1.25rem;margin:6px 0 10px}
+@media (max-width:640px){
+  .cal-grid{border-spacing:2px;margin:0 -2px}
+  .cal-day{min-height:52px;padding:4px 3px;align-items:center;text-align:center}
+  .cal-day.is-today,.cal-day.is-sel{padding:3px 2px}
+  .cal-bt{display:none}
+  .cal-bar{min-height:6px;height:6px;padding:0;margin:0 -4px;width:auto;align-self:stretch}
+  .cal-bars{width:100%;margin-top:auto}
+  .cal-dot{right:4px;top:4px;width:7px;height:7px}
+  .cal-grid th{font-size:.74rem}
+}
+@media (prefers-reduced-motion:reduce){.cal-day,.fl-year{transition:none}}
+.nav a[hidden]{display:none!important}
+/* today: the number on a filled circle; phone: the month buttons show arrows only (names stay for screen readers) */
+.cal-day.is-today{border:1px solid var(--line);padding:5px 4px 6px}
+.cal-day.is-today .cal-n{background:var(--brand);color:#fff;border-radius:999px;min-width:1.7em;height:1.7em;display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;margin:-2px 0 0 -2px}
+.cal-day.is-today.is-sel{border:2px solid var(--gold);padding:4px 3px 5px}
+.pl-inyear-top{margin:6px 0 0;padding:8px 12px;border-radius:10px;background:#eef6f1;border:1px solid #cfe5d8}
+@media (max-width:640px){
+  .cal-day.is-today .cal-n{align-self:center;margin:-2px 0 0}
+  .cal-mname{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .cal-step{padding:0 14px}
+  .fl-choices{gap:10px}
+  .fl-choice{flex-basis:100%}
+}
+.fl-choice{flex:0 1 330px}
+.fl-grid>li[data-cat] .chip.fl-year.is-planned{background:#fff;border-color:#fff;color:var(--c)}
+.my-mnav h3{margin:0;font-size:clamp(1.4rem,3vw,1.8rem);grid-column:1/-1;order:-1}

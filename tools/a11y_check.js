@@ -3,7 +3,7 @@
 //   sideways scroll; buttons, form fields, summaries and button-style links under 44px tall; a focus ring
 //   that does not show when the element is reached by keyboard; console errors; and, if axe-core is given,
 //   its WCAG 2.x A/AA findings.
-// Usage: node tools/a11y_check.js <built site dir> [path to axe.min.js] [screenshot dir]
+// Usage: node tools/a11y_check.js <built site dir> [path to axe.min.js] [screenshot dir]   (A11Y_SEED=1: with plans saved first)
 // axe-core is not a dependency of the site: install it anywhere (npm i axe-core) and pass its axe.min.js.
 const fs = require('fs'), path = require('path'), http = require('http');
 const SITE_DIR = process.argv[2], AXE = process.argv[3] && process.argv[3] !== '-' ? fs.readFileSync(process.argv[3], 'utf8') : null, SHOTS = process.argv[4] || null;
@@ -34,6 +34,14 @@ const TYPES = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascrip
     await ctx.route(/^https?:\/\/(?!localhost)/, route => route.abort());
     const page = await ctx.newPage();
     let cur = '';
+    if (process.env.A11Y_SEED) {   // A11Y_SEED=1: check the planner pages with plans saved (interface day, 22 Nov 2026)
+      await page.goto(SITE + '/list/', { waitUntil: 'networkidle' });
+      await page.evaluate(() => {
+        const L = window.DDRList, d = n => { const x = new Date(); x.setUTCDate(x.getUTCDate() + n); return x.toISOString().slice(0, 10); }, t = d(0);
+        L.plan('go-to-edinburgh-fringe', { date: d(40), until: d(44) }, t); L.plan('take-up-beekeeping', { month: d(40).slice(0, 7) }, t);
+        L.plan('big-garden-birdwatch', { date: d(9) }, t); L.plan('run-great-north-run', { date: d(150), level: 'active' }, t); L.add('learn-the-ukulele');
+      });
+    }
     page.on('console', m => { if (m.type() === 'error' && !/Failed to load resource|net::ERR/.test(m.text())) note('console', cur, m.text().slice(0, 160), w); });
     page.on('pageerror', e => note('page error', cur, e.message.slice(0, 160), w));
     for (const pg of PAGES) {

@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import share_button %}
+{% extends "base.html" %}{% from "_macros.html" import share_button, year_acts, howto %}
 {% block title %}Things to do: activities worth trying, with how to start — {{ cfg.site.name }}{% endblock %}
 {% block description %}Things worth doing near you and anywhere, each with how to start and where to go. Build your own list at any age, choose your own number, and tick them off in your own time.{% endblock %}
 {% block pagetype %}list{% endblock %}
@@ -6,6 +6,7 @@
 <header class="page-head"><p class="kicker">Have a go</p><h1>Things to do</h1>
 <p class="lead"><strong>{{ list_total_text }} things worth doing</strong>, near you and anywhere, each with how to start, where to go and, for more and more of them, someone who has done it. Make a list of your own at any age: choose your own number and take as long as you like. You don't have to do them all.</p>
 {{ share_button(cfg.site.url ~ '/list/', 'Things to do: activities worth trying, and a list of your own', 'list') }}</header>
+{{ howto(where='-list') }}
 
 {% if groups %}<section class="gx" aria-labelledby="gx-h">
   <h2 id="gx-h" class="gx-h">Browse by group <span class="gx-sub">{{ groups|length }} groups, {{ list_total_text|lower }} activities</span></h2>
@@ -65,7 +66,7 @@
         <p class="fl-meta">{{ L.cost[c.cost] }} · {{ L.time[c.time] }}{% if c.place_label %} · {{ c.place_label }}{% elif c.region_label %} · {{ c.region_label }}{% endif %}</p>
         {% if c.has_story or c.has_film %}<p class="fl-insp">{% if c.has_story %}<span>Someone who did it</span>{% endif %}{% if c.has_film %}<span>Film</span>{% endif %}</p>{% endif %}
         <p class="fl-go" aria-hidden="true">How to start and where to go <span>→</span></p>
-        <button type="button" class="chip fl-add" data-fl-add="{{ c.id }}" aria-pressed="false">Add to my list</button>
+        {{ year_acts(c.id) }}
       </li>
     {% endfor %}
     </ul>

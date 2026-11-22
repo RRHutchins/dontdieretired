@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import share_button %}
+{% extends "base.html" %}{% from "_macros.html" import share_button, year_acts %}
 {% block title %}{{ (coll.title or (coll.plural ~ " you can enter")) | seotitle }}{% endblock %}
 {% block description %}{{ (coll.meta or (coll.plural ~ " open to the public, each with how to start and a link to the official page. " ~ coll.blurb)) | metadesc }}{% endblock %}
 {% block pagetype %}list{% endblock %}
@@ -11,6 +11,7 @@
 <header class="page-head"><p class="kicker"><a href="/list/">Things to do</a> · {{ coll.acts|length }} activities</p><h1>{{ coll.plural }}</h1>
 <p class="lead">{{ coll.blurb }}</p>
 {{ share_button(cfg.site.url ~ '/list/' ~ coll.slug ~ '/', coll.plural, 'list') }}</header>
+<p class="meta fl-choices-note"><strong>Add to my year</strong> gives it a date and a step-by-step plan. <strong>Save for later</strong> keeps it on your list with no date.</p>
 
 <ul class="fl-grid">
 {% for c in coll.acts %}
@@ -21,7 +22,7 @@
     <p class="fl-why">{{ c.why_short }}</p>
     <p class="fl-meta">{{ L.cost[c.cost] }} · {{ L.time[c.time] }}</p>
     <p class="fl-go" aria-hidden="true">How to start and where to go <span>→</span></p>
-    <button type="button" class="chip fl-add" data-fl-add="{{ c.id }}" aria-pressed="false">Add to my list</button>
+    {{ year_acts(c.id) }}
   </li>
 {% endfor %}
 </ul>

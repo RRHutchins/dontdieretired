@@ -262,8 +262,18 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
   });
   await step('phone: a member plans two things and they are kept on the account', async () => {
     await planOn(phone, 'take-up-beekeeping', '2027-03-13'); await look(phone, 'plan-saved');
+    // interface day (22 Nov 2026, rows 24a to 24c): the two choices give way to "In my year: <date> · See it", which opens
+    // My year's calendar on that day; My year is in the menu
+    await vis(phone, '[data-fl-inyear]');
+    assert.ok(/In my year:/.test(await phone.textContent('[data-fl-inyear]')), 'the planned line on the activity page');
+    assert.ok(await phone.locator('[data-fl-choice]').first().isHidden(), 'Add to my year and Save for later give way to it');
+    assert.strictEqual(await phone.getAttribute('[data-fl-inyear-see]', 'href'), '/my-year/#2027-03-13');
+    assert.ok(await phone.locator('[data-nav-myyear]').isVisible(), 'My year in the menu');
     await planOn(phone, 'visit-an-open-garden', '2027-06-20');
     await myYearHas(phone, 'garden'); await look(phone, 'my-year');
+    await phone.goto(SITE + '/my-year/#2027-06-20'); await vis(phone, '[data-cal-day="2027-06-20"].is-sel');
+    assert.ok((await phone.textContent('[data-cal-panel]')).includes('garden'), 'the calendar opens on the day with its plan');
+    await look(phone, 'my-year-calendar-day');
     await phone.waitForTimeout(2500);   // the change is sent 1.5 s after it is made
     const row = env.DB.raw.prepare('SELECT data FROM lists').get();
     assert.ok(row && row.data.includes('take-up-beekeeping') && row.data.includes('visit-an-open-garden'), 'both plans stored on the account');

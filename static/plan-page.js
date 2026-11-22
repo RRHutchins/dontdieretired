@@ -204,6 +204,8 @@
     if (plan.status === 'ok') {
       const ses = plan.steps.filter(x => x.week).length, other = plan.steps.length - ses;
       html += '<p class="meta">' + other + ' steps' + (ses ? ' and ' + ses + ' training sessions' : '') + ', from ' + esc(P.longDate(plan.starts)) + '. Each one says why it comes when it does.</p>';
+      // a saved plan says so at the top, not only after its last step (interface day, row 24c)
+      if (saved && (mode === 'open' || mode === 'member')) html += '<p class="pl-inyear-top"><strong>In My year ✓</strong> <a href="' + yearHref(plan) + '">See it in My year</a></p>';
     }
     html += '</div>';
     if (notes.length) html += '<ul class="pl-notes">' + notes.map(n => '<li>' + esc(n) + '</li>').join('') + '</ul>';
@@ -241,18 +243,20 @@
     if (hasAff) html += '<p class="disclosure">' + esc(N.affiliate) + '</p>';
     if (mode === 'sample') { out.innerHTML = html; return; }
     if (mode === 'guest') {   // a plan saved in this browser before the paywall (or by a lapsed member): see it, keep it, remove it
-      html += '<div class="pl-saved pl-ro"><p>' + esc(PP.saved_ro) + '</p><p><a href="/my-year/#' + plan.date.slice(0, 7) + '">See it with your other plans in My year</a></p>'
+      html += '<div class="pl-saved pl-ro"><p>' + esc(PP.saved_ro) + '</p><p><a href="' + yearHref(plan) + '">See it in My year</a></p>'
         + '<div class="pl-cal"><p class="pl-acts"><button type="button" class="btn btn-small" data-pl-ics>Add to my calendar</button></p><p class="meta">' + esc(N.cal_help) + '</p><p class="pl-calmsg" data-pl-calmsg role="status" aria-live="polite"></p></div>'
         + '<p class="pl-acts"><a class="btn btn-small" href="/account/">' + esc(PP.join) + '</a><button type="button" class="btn btn-small btn-ghost" data-pl-clear>Remove this plan</button></p></div>';
       out.innerHTML = html; return;
     }
     html += saved
-      ? '<div class="pl-saved"><p><strong>Saved to your list ✓</strong> <a href="/list/#mine">See my list</a> · <a href="/my-year/#' + plan.date.slice(0, 7) + '">See it with your other plans in My year</a></p><p class="meta">' + esc(N.saved) + '</p>'
+      ? '<div class="pl-saved"><p><strong>In My year ✓</strong> <a class="btn btn-small" href="' + yearHref(plan) + '">See it in My year</a> <a href="/list/#mine">See my list</a></p><p class="meta">' + esc(N.saved) + '</p>'
         + '<div class="pl-cal"><p class="pl-acts"><button type="button" class="btn btn-small" data-pl-ics>Add to my calendar</button></p><p class="meta">' + esc(N.cal_help) + '</p><p class="pl-calmsg" data-pl-calmsg role="status" aria-live="polite"></p></div>'
         + '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-pl-change>' + (A.event ? 'Change the date or starting point' : 'Change the date') + '</button><button type="button" class="btn btn-small btn-ghost" data-pl-clear>Remove this plan</button></p></div>'
-      : '<p class="pl-acts"><button type="button" class="btn" data-pl-save>Save this plan to my list</button></p><p class="meta">' + esc(N.saved) + '</p>';
+      : '<p class="pl-acts"><button type="button" class="btn" data-pl-save>Add to my year</button></p><p class="meta">' + esc(N.saved) + '</p>';
     out.innerHTML = html;
   }
+  // My year opens on the plan's own day (its calendar, row 24b) or, for a month plan, on that month
+  const yearHref = plan => '/my-year/#' + (plan.by_month ? plan.date.slice(0, 7) : plan.date);
   function saveFile(text, name) {   // a download made in the browser: nothing is sent anywhere
     const u = URL.createObjectURL(new Blob([text], { type: 'text/calendar;charset=utf-8' })), a = document.createElement('a');
     a.href = u; a.download = name; a.hidden = true; document.body.appendChild(a); a.click(); a.remove();
@@ -285,11 +289,8 @@
     if (mode === 'guest') { form.hidden = true; if (guestBox) guestBox.hidden = false; return; }   // what Plus does, the price, the sample
     form.hidden = false; setWhen(suggestion());
   }
-  function paintList() {   // the page's own "Add to my list" button, which list.js drew before the plan was saved
-    const on = L.has(id);
-    document.querySelectorAll('[data-fl-add="' + id + '"]').forEach(b => { b.setAttribute('aria-pressed', String(on)); b.textContent = on ? 'On my list ✓' : 'Add to my list'; });
-    const ml = document.querySelector('[data-fl-minelink]'); if (ml) ml.hidden = !on;
-    if (window.DDRListPaint) window.DDRListPaint();   // the Remove button beside it (list.js)
+  function paintList() {   // the page's own Save for later / In my year line (static/list.js), drawn before the plan was saved
+    if (window.DDRListPaint) window.DDRListPaint();
   }
 
   if (form) form.addEventListener('submit', e => {
@@ -390,7 +391,8 @@
   }
 
   box.hidden = false;
-  const open = document.querySelector('[data-pl-open]'); if (open) { open.hidden = false; open.addEventListener('click', e => { e.preventDefault(); box.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' }); box.focus({ preventScroll: true }); try { history.replaceState(null, '', '#plan'); } catch (x) {} }); }
+  // "Add to my year" and "See the plan" at the top of the page jump to this box
+  document.querySelectorAll('[data-pl-open],[data-pl-open2]').forEach(open => { open.hidden = false; open.addEventListener('click', e => { e.preventDefault(); box.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' }); box.focus({ preventScroll: true }); try { history.replaceState(null, '', '#plan'); } catch (x) {} }); });
   if (sample) {   // the sample page: one fixed plan, as a member would see it
     ready.then(() => {
       const when = sample.until ? { date: sample.date, until: sample.until } : { date: sample.date };
