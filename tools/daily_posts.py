@@ -164,6 +164,8 @@ def check_activity_posts():
         assert a, f"activity_posts: no activity {p['id']}"
         assert p["date"] not in seen, f"activity_posts: two posts on {p['date']}"; seen.add(p["date"])
         assert len(p["card"].split()) <= 20, f"activity_posts {p['id']}: card hook over 20 words"
+        # From 23 Nov 2026 every post is checked by a second Claude model before it goes in the queue (RUNBOOK §6d1)
+        assert p["date"] < "2026-11-23" or p.get("reviewed"), f"activity_posts {p['id']}: no `reviewed:` line (RUNBOOK §6d1)"
         if p.get("photo"):
             assert a.get("photo_checked") and ("list-" + a["id"]) in credits, f"activity_posts {p['id']}: photo not checked"
             c = credits["list-" + a["id"]]

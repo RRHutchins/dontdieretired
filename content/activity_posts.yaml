@@ -5,6 +5,11 @@
 # no age words. `photo: true` only after looking at the downloaded photo for social use (§6l: no identifiable person,
 # no logo or someone else's artwork filling the frame, licence PD / CC0 / CC BY / CC BY-SA). Never edit a post once its
 # date has passed. Keep this list at least seven days ahead; pick what suits the season.
+# From 23 Nov 2026 (Robin, 22 Nov 2026, after reader complaints) every post follows RUNBOOK §6d1: written to be read
+# aloud, any place, body or term a UK or US reader may not know explained on first mention, opening with the moment or
+# the surprise, ending with one easy question. Every post carries `reviewed:` naming the second Claude model that checked
+# it (a different model from the writer) and the date; build.py refuses posts from 23 Nov without it. Use a photo
+# (`photo: true`) whenever a checked one exists; the plain card is the last resort.
 posts:
   - date: "2026-11-19"
     id: see-the-northern-lights
@@ -29,51 +34,131 @@ posts:
   - date: "2026-11-23"
     id: learn-kintsugi
     photo: true
+    reviewed: "2026-11-22, Claude Sonnet (writer: Claude Opus)"
     card: "Mend a broken bowl with gold, so the crack becomes the decoration"
-    text: "Kintsugi is the Japanese art of mending ceramics with lacquer and gold. Traditional urushi lacquer is slow, cured layer by layer over weeks, while modern classes use glue and gold leaf in a day. Find a broken glazed piece that is mostly complete, and book a beginners' class."
+    text: |-
+      Got a favorite bowl or mug with a crack in it? Don't throw it away.
+
+      Kintsugi is the Japanese art of mending broken pottery with lacquer and gold. The crack isn't hidden. It becomes the decoration.
+
+      The traditional method uses a natural lacquer called urushi and takes weeks, layer by layer. Modern beginners' classes use glue and gold leaf, and you finish in a day.
+
+      What would you mend first?
   - date: "2026-11-24"
     id: try-curling
     photo: true
-    card: "Curling is a game of touch and tactics more than strength"
-    text: "Two teams slide granite stones down the ice towards a target called the house, and sweeping in front of a stone changes how far it travels and how much it curls. A taster session gets you delivering a stone within the hour, with brushes, sliders and stones supplied. Rinks have ice from autumn to spring."
+    reviewed: "2026-11-22, Claude Sonnet (writer: Claude Opus)"
+    card: "Curling is about touch and tactics, not strength, and you can slide your first stone within the hour"
+    text: |-
+      You may have seen it at the Winter Olympics: players sliding heavy granite stones down the ice while teammates sweep hard in front of them.
+
+      It's a game of touch and tactics more than strength. Two teams of four aim at a target on the ice called the house. Sweeping changes how far each stone travels and how much it curls.
+
+      At a beginners' taster session you'll be sliding your first stone within the hour, with brushes, sliders and stones supplied. Rinks have ice from fall to spring.
+
+      Would you have a go?
   - date: "2026-11-25"
     id: learn-astrophotography
     photo: true
+    reviewed: "2026-11-22, Claude Sonnet (writer: Claude Opus)"
     card: "You don't need a telescope to photograph the Milky Way"
-    text: "A camera on a tripod, left open long enough, records stars your eyes can barely make out. Bring the camera you already have, a tripod and a red head torch to a beginners' course or a dark-sky evening, and join a local astronomy society to find dark sites."
+    text: |-
+      Here's a surprise: you don't need a telescope to photograph the Milky Way.
+
+      Put a camera on a tripod and leave the shutter open long enough, and it records stars your eyes can barely make out.
+
+      A beginners' course, or an evening at a dark-sky site, will teach you the settings. Bring the camera you already have, a tripod and a red head torch (a headlamp, in the US). A local astronomy society can point you to dark sites.
+
+      Have you ever seen the Milky Way with your own eyes?
   - date: "2026-11-26"
     id: learn-origami
     photo: true
+    reviewed: "2026-11-22, Claude Sonnet (writer: Claude Opus)"
     card: "Turn a square of paper into a swan, with folds alone"
-    text: "Origami needs nothing but paper. The British Origami Society and OrigamiUSA both publish free diagrams, and local groups and library classes meet in the UK and the US. Fold a few simple models first, then look for a beginners' class."
+    text: |-
+      All you need is a square of paper.
+
+      With folds alone, origami turns it into a swan, a penguin or a cat's head.
+
+      The British Origami Society and OrigamiUSA both share free diagrams, so you could fold your first model tonight. If you'd like company, libraries run beginners' classes and local folding groups meet in the UK and the US.
+
+      What would you fold first?
   - date: "2026-11-27"
     id: learn-to-ice-skate
     photo: true
-    card: "Ice skating is learned in small, definite steps, which makes it easier to start"
-    text: "Ice skating is built in small steps, which is why the national programmes are set out in levels. Skate UK is taught at more than 40 rinks across Britain, and Learn to Skate USA has an adult curriculum of six levels. Many adult beginners' courses include skate hire: bring gloves, thin socks and warm layers."
+    reviewed: "2026-11-22, Claude Sonnet (writer: Claude Opus)"
+    card: "Ice skating is learned in small, clear steps, one level at a time"
+    text: |-
+      Fancy gliding around the ice rink this winter?
+
+      Skating is learned in small, clear steps, which is why lessons are set out in levels. In Britain, Skate UK, the national learn-to-skate program, is taught at more than 40 rinks. In the US, Learn to Skate USA has a six-level course for adults.
+
+      Many adult beginners' courses include skate rental. Just bring gloves, thin socks and warm layers.
+
+      Who would you take to the rink with you?
   - date: "2026-11-28"
     id: take-up-beekeeping
     photo: true
-    card: "Beekeeping courses often start in winter, ready for the bees in spring"
-    text: "A colony of honey bees is something you learn to read through the year, from swarms in spring to winter food stores. Local beekeeping associations run taster days and beginners' courses and can often find you a mentor, so you handle bees before you buy anything."
+    reviewed: "2026-11-22, Claude Sonnet (writer: Claude Opus)"
+    card: "Try beekeeping before you buy a single thing: start with a taster day"
+    text: |-
+      Ever wondered what goes on inside a beehive?
+
+      A honey bee colony changes through the year, from spring swarming, when part of the colony leaves to find a new home, to living on its food stores through winter. Learning to read those signs is a big part of the craft.
+
+      Your local beekeeping association runs taster days and beginners' courses, and can often pair you with a mentor. That way you handle bees before you buy a single thing.
+
+      Would you like to see inside a hive?
   - date: "2026-11-29"
     id: learn-cross-country-skiing
     photo: true
+    reviewed: "2026-11-22, Claude Sonnet (writer: Claude Opus)"
     card: "You can learn cross-country skiing without waiting for snow"
-    text: "Cross-country skiing takes you along forest trails rather than down a slope. In Scotland you can learn on an all-weather track, and in the US many Nordic centres sell a beginner package with ski hire and a trail pass. Start with classic technique."
+    text: |-
+      Cross-country skiing isn't about racing down a mountain. You glide along quiet forest trails under your own power.
+
+      And you don't have to wait for snow. In Scotland, the Huntly Nordic and Outdoor Centre, in Aberdeenshire in the north-east, teaches on an all-weather track. In the US, many Nordic (cross-country) ski centers sell a beginner package with ski rental and a trail pass.
+
+      According to the US Cross Country Ski Areas Association, a couple of hours with an instructor builds the basic skills.
+
+      Forest trails or mountain slopes: which would you choose?
   - date: "2026-11-30"
     id: learn-to-play-bridge
     photo: true
-    card: "In club bridge, your score is compared with players who held the same cards"
-    text: "Clubs play duplicate bridge: several tables play the same deals in turn, so your score is compared with others who held exactly the same cards. To begin, try MiniBridge, a free practice game, then use the English Bridge Union's or the American Contract Bridge League's search to find lessons and a club with games for newcomers."
+    reviewed: "2026-11-22, Claude Sonnet (writer: Claude Opus)"
+    card: "In club bridge, you're scored against players who held exactly the same cards"
+    text: |-
+      Think card games are all about luck? Club bridge is built to even the luck out.
+
+      In a club, several tables play the same hands in turn. Your score is compared with everyone else who held exactly the same cards, so it comes down to how well you played them.
+
+      To begin, try MiniBridge, a free practice game. Then the English Bridge Union or the American Contract Bridge League can help you find lessons and a club with games for newcomers.
+
+      What's your favorite card game?
   - date: "2026-12-01"
     id: visit-a-stone-circle-at-solstice
     photo: true
-    card: "English Heritage opens the Stonehenge stone circle to everyone, free, at the winter solstice"
+    reviewed: "2026-11-22, Claude Sonnet (writer: Claude Opus)"
+    card: "Stand inside the Stonehenge stone circle, free, for the winter solstice"
     x: "Stonehenge opens its stone circle to everyone, free, for the winter solstice on Tuesday 22 December."
-    text: "English Heritage opens the stone circle at Stonehenge to everyone, free, for the winter solstice, this year on Tuesday 22 December. Anyone coming by car must pre-book parking or be turned away, so plan to travel through Salisbury by public transport. Dress for a cold night outdoors and check English Heritage's list of items that are not allowed."
+    text: |-
+      Picture yourself among the stones at Stonehenge, the ancient stone circle in the south of England, at the winter solstice.
+
+      That day, English Heritage, the charity that looks after Stonehenge, opens the stone circle to everyone, free. This year it's on Tuesday 22 December.
+
+      Travel by public transport through the nearby city of Salisbury if you can: anyone coming by car must pre-book parking or be turned away. Dress for a cold night outdoors, and check English Heritage's list of items that aren't allowed.
+
+      Would you go?
   - date: "2026-12-02"
     id: give-blood
     photo: true
+    reviewed: "2026-11-22, Claude Sonnet (writer: Claude Opus)"
     card: "Every unit of blood a hospital uses began with someone in a donor chair"
-    text: "Read the eligibility rules from NHS Blood and Transplant in England or the American Red Cross, then book an appointment at a donor centre or blood drive near you. On the day, answer the health and lifestyle check honestly and accept the service's decision."
+    text: |-
+      Every unit of blood a hospital uses began with someone sitting in a donor chair. Curious what it takes?
+
+      First, check whether you can give. NHS Blood and Transplant in England and the American Red Cross publish their rules online. Then book an appointment at a donor center, or at a blood drive (a pop-up collection session) near you.
+
+      On the day, you'll answer a health and lifestyle check, so the team can decide whether donating is right for you. Just answer honestly.
+
+      Have you given blood before?

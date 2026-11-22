@@ -285,6 +285,7 @@ def load_articles(cfg, credits=None, held=None):
         a["photo"] = story_photo(fm, slug, credits or {})
         # social photo cards (RUNBOOK §6l, Robin 16 Nov 2026): only Commons files a session has passed for social use
         a["photo_social"] = bool(a["photo"] and a["photo"]["open"] and fm.get("photo_social") is True)
+        a["photo_social_decided"] = "photo_social" in fm
         if a["photo"]:
             a["art"] = a["photo"]["small"]
         a["video"] = story_video(fm, held or set())
@@ -491,6 +492,7 @@ def social_card(a, title, kicker, out, size):
 # Hashtags (Robin, 9 Nov 2026: adults are the audience, so no age tags). Every Instagram post carries the three brand
 # tags, one fixed tag for the topic and two from the article's own tags; X gets #DontDieRetired and one article tag;
 # Facebook gets #DontDieRetired. Never #over50, #activeageing, #seniors, #agingwell or #retirementlife (RUNBOOK §6d).
+SOCIAL_V2_FROM = "2026-11-23"   # hand-written, second-model-reviewed captions (`social_text`, `social_card`) from this date (RUNBOOK §6d1)
 PHOTO_SOCIAL_FROM = "2026-11-17"   # photo cards and photo credits in captions only for packs from this date (older packs are never rewritten)
 HASHTAGS_FROM = "2026-11-10"   # social packs dated before this keep their old text (changing a sent pack re-posts it)
 BRAND_HASHTAGS = ["#DontDieRetired", "#NeverRetireFromLife", "#TryNewThings"]
@@ -528,6 +530,16 @@ def social_pack(a, cfg):
     utm = lambda src: f"{a['abs_url']}?utm_source={src}&utm_medium=social&utm_campaign=daily"
     hook = a.get("hook") or a["title"]
     lesson = a.get("lesson", "")
+    v2 = sdate >= SOCIAL_V2_FROM
+    if v2:
+        # Robin, 22 Nov 2026: posts must read well, explain places and terms, and carry a photo whenever one is suitable.
+        if not a.get("social_text"):
+            print(f"SOCIAL NOTE {a['slug']}: no social_text, so the post falls back to hook + summary (RUNBOOK §6d1).")
+        elif not a.get("social_reviewed"):
+            print(f"SOCIAL NOTE {a['slug']}: social_text has not been reviewed by a second model (RUNBOOK §6d1).")
+        if a.get("photo") and a["photo"].get("open") and not a.get("photo_social_decided"):
+            print(f"SOCIAL NOTE {a['slug']}: has a checked photo but no photo_social decision; check it for social use (§6l) and set true, or false with a reason.")
+        hook = a.get("social_card") or hook
     if sdate < HASHTAGS_FROM:
         # Packs dated before the hashtag change keep their old wording exactly: Buffer posts again any pack whose
         # text changes (RUNBOOK §6d), so already-sent packs must never be rewritten.
@@ -542,11 +554,13 @@ def social_pack(a, cfg):
         fb_tags = "#DontDieRetired"
         why_line = ""
 
+    st = a.get("social_text") if v2 else None
     posts = {
-        "facebook": f"{hook}\n\n{a['excerpt']}\n\n{lesson}\n\nRead the full story → {utm('facebook')}"
+        "facebook": (f"{st}\n\nRead the full story → {utm('facebook')}" if st else
+                     f"{hook}\n\n{a['excerpt']}\n\n{lesson}\n\nRead the full story → {utm('facebook')}")
                     + (f"\n\n{fb_tags}" if fb_tags else ""),
-        "instagram": f"{hook}\n\n{lesson}\n\nFull story at the link in our bio (dontdieretired.com).\n\n{ig_tags}",
-        "x": textwrap.shorten(f"{hook} {lesson}", 200, placeholder="…") + f"\n\n{utm('x')}"
+        "instagram": (f"{st}" if st else f"{hook}\n\n{lesson}") + f"\n\nFull story at the link in our bio (dontdieretired.com).\n\n{ig_tags}",
+        "x": textwrap.shorten(hook if st else f"{hook} {lesson}", 200, placeholder="…") + f"\n\n{utm('x')}"
              + (f"\n\n{x_tags}" if x_tags else ""),
         "x_thread": "\n\n---\n\n".join([
             f"1/ {hook}",
