@@ -2550,7 +2550,6 @@
   - open-water-swim
   - swim-swimathon
   - wild-swim
-
 - id: walking-football
   title: Play a game of walking football
   category: move
@@ -7814,20 +7813,170 @@
   company: either
   regions:
   - uk
-  why: An allotment gives you room to grow food on a scale a garden rarely allows, among neighbours who are generous with advice and spare seedlings. Eating a meal you grew from seed is a pleasure all of its own.
+  - us
+  why: A full allotment is about 250 square meters (2,700 square feet), room to grow food on a scale a garden rarely allows, among neighbors who are generous with advice and spare seedlings. Rent is modest;
+    the waiting list is usually the real cost.
   start:
-  - Contact your local council to apply for a plot or join the waiting list.
-  - Visit nearby sites and ask plot-holders what grows well there.
-  - When your plot comes, clear one bed first and sow something quick.
+  - Ask your local council to put you on the list for a named site, and ask whether a half or quarter plot would come sooner.
+  - While you wait, visit nearby sites and ask plot-holders what grows well and what the soil is like.
+  - When your plot comes, clear one section first, smother the rest, and sow something quick.
   links:
-  - label: 'GOV.UK: apply for an allotment'
+  - label: 'GOV.UK: apply for an allotment (England and Wales)'
     url: https://www.gov.uk/apply-allotment
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-22'
   - label: 'National Allotment Society: how to find an allotment'
     url: https://thenas.org.uk/findinganallotment
     region: uk
     checked: '2026-10-06'
+  - label: 'National Allotment Society: allotment laws'
+    url: https://thenas.org.uk/Allotment-Laws
+    region: uk
+    checked: '2026-11-22'
+  - label: 'RHS: how to start an allotment'
+    url: https://www.rhs.org.uk/advice/grow-your-own/allotments/allotments-getting-started
+    region: uk
+    checked: '2026-11-22'
+  - label: 'American Community Gardening Association: find a community garden'
+    url: https://www.communitygarden.org/garden
+    region: us
+    checked: '2026-11-22'
+  safety: Most sites allow only small fires of dry garden waste; warn your neighbors first, never burn household waste, and store garden chemicals safely.
+  seo_title: 'How to get an allotment: applying, costs and rules'
+  description: How to apply for an allotment, waiting lists, plot sizes, rents at three councils, tenancy rules, your first year, and the US community-garden route.
+  detail:
+  - h: How applying works
+    p:
+    - In England and Wales you apply to your local council. GOV.UK says the council will either allocate you a plot or, "in many cases", add your name to a waiting list. The National Allotment Society notes
+      that some sites are run by parish or town councils, allotment associations or private owners, so the council may point you elsewhere.
+    - Councils vary in how they run lists. Manchester asks applicants to be over 18, a Manchester resident and to name the site they want, and says more than 2,500 people are on its lists; when you reach
+      the top you have 14 days to view and accept. Bristol lets you apply for one site only, gives Bristol residents priority and warns that on popular sites you may be offered only a small or half plot.
+      Leeds says it has no vacant plots at present and takes waiting-list requests by email.
+    - If there is no provision at all, the National Allotment Society says that under the Small Holdings and Allotments Act 1908, at least six local residents (registered voters or council tax payers) can
+      make a written request that obliges an English or Welsh council to consider demand. The law does not define "sufficient demand", so this is a lever, not a guarantee.
+    - In Scotland, the Community Empowerment (Scotland) Act 2015 requires councils to provide plots on request and to make sure no one waits longer than five years. None of the pages opened for this guide
+      covers Northern Ireland, so ask your local council there directly.
+  - h: Plot sizes and what they cost
+    p:
+    - A full plot is 10 rods, about 250 square meters (2,700 square feet). The RHS notes that half plots are usually available if that is too much, and Leeds also lets quarter plots. Rent is set by each
+      council, and water, set-up and admin fees are often extra.
+    table:
+      head:
+      - Council
+      - Plot size
+      - Rent per year (as last listed)
+      - Extras
+      - Waiting list (as last listed)
+      rows:
+      - - Leeds
+        - Full 250 m², half 125 m², quarter 63 m²
+        - £81 full, £40.50 half, £20.25 quarter (1 Oct 2026 to 30 Sep 2027)
+        - Water £22 full, £15.50 half or quarter; concessions for state pension, unemployed, eligible disabled people and full-time students
+        - No vacant plots; join the list by email
+      - - Calderdale
+        - Standard 250 m²; smaller plots charged less
+        - £66 standard (page dated June 2026)
+        - Water £22; one-off £40 set-up; 40% off rent with a Passport to Leisure or English National Concessionary Pass
+        - Not stated on the page opened
+      - - Bristol
+        - Banded by area; Band D is 225-349 m²
+        - Band D £129 with water, £109 without; Band B (75-149 m²) £76 with water, £66 without (billing year 29 Sep to 28 Sep, year not shown)
+        - One-off £15 admin fee; 50% low-income or community discount, applied for 1 July to 1 August
+        - Most sites have waiting lists; a few list plots now or soon
+      - - Manchester
+        - Not stated on the page opened
+        - Not stated on the page opened
+        - Not stated
+        - More than 2,500 people on the lists; 14 days to accept an offer
+    after: Bristol's banding means a 250 m² plot falls in Band D, at £109 without water against £81 for a full plot in Leeds, so check how your council measures before you compare. Concessions differ more
+      than the headline rents.
+  - h: What you can and cannot do
+    p:
+    - Every council or association writes its own tenancy agreement, so read yours. Leeds's rules are a fair example of what to expect.
+    list:
+    - At least 60% of the plot must grow edible crops; the other 40% can be sheds, lawn, flowers, livestock or bees.
+    - Keep the plot clean, weed-free and fertile, and the paths beside it reasonably clear.
+    - One hut (up to 2.4 x 1.8 m) and one greenhouse (up to 3.6 x 2.4 m), or a combined unit or a growing tunnel, all with written approval first.
+    - Hens and rabbits with prior permission; no cockerels. Beekeepers must be registered beekeepers and talk to neighboring tenants before placing hives.
+    - Produce is for you and your family. You can give it away but not sell it, eggs included.
+    - Only small fires of dry garden waste, with neighbors warned; no household waste.
+    - Water is off from around the end of October to March.
+    - Rent unpaid by 10 December ends the tenancy, and you cannot sublet or share without consent.
+  - h: Your first year
+    p:
+    - The RHS advice is to take your time. Before you sign, check the plot's size, water, facilities and any limits on fruit trees or structures. On a neglected plot it suggests clearing half in the first
+      year, cutting down and digging out woody plants, and removing the roots of perennial weeds such as bindweed and couch grass rather than composting them. Smothering weeds under an opaque mulch takes
+      at least one growing season, and carpet is no longer recommended.
+    - Make a crop rotation plan before you plant, and watch for clubroot and onion white rot, which the RHS flags on new plots. If parts of the plot are shaded, beetroot, chard, kale, kohl rabi and lettuce
+      cope with some shade, as do raspberries, redcurrants and gooseberries.
+    - Rosee Woodland, writing in Countryfile about the half plot she waited more than ten years for in Bristol, planned to strim it, dig grass roots and brambles out of three beds for late crops, and cover
+      the rest with black membrane.
+  - h: In the US - community gardens
+    p:
+    - The US has no national allotment system. The honest equivalent is a community garden plot, often run by a city parks department or a local nonprofit. The American Community Gardening Association,
+      based in Atlanta, keeps a map of community gardens you can browse by area, and suggests asking your Cooperative Extension office or parks and recreation department.
+    - Fees are usually set per square foot. Seattle's P-Patch program, for example, proposed raising its application fee from $36 to $44 and its plot fee from $17 to $21 per 100 square feet for 2026.
+  faq:
+  - q: How long is the waiting list for an allotment?
+    a: There is no national figure; it depends on the site. Manchester says more than 2,500 people are on its lists, Leeds has no vacant plots, and in Scotland councils must keep waits under five years.
+  - q: How much does an allotment cost per year?
+    a: At the councils checked for this guide, a full plot of about 250 square meters was £66 in Calderdale, £81 in Leeds (2026-27) and £109 to £129 in Bristol, with water and one-off fees often extra.
+  - q: How big is an allotment plot?
+    a: A traditional full plot is 10 rods, about 250 square meters (2,700 square feet). Half plots are common, and some councils such as Leeds also let quarter plots.
+  - q: Can I keep chickens on an allotment?
+    a: Often, with permission. Leeds allows hens and rabbits with prior permission but not cockerels; check your own tenancy agreement.
+  - q: Can I sell produce from my allotment?
+    a: Usually not. Leeds's rules say produce is for personal or family use and may be given away but not sold, eggs included.
+  - q: What if my council has no allotments?
+    a: In England and Wales, six or more local residents who are registered voters or council tax payers can send a written request, which the council must consider under the 1908 Act. The National Allotment
+      Society can advise.
+  sources:
+  - label: 'GOV.UK: Apply for an allotment'
+    url: https://www.gov.uk/apply-allotment
+    checked: '2026-11-22'
+  - label: 'National Allotment Society: Are there laws governing allotments?'
+    url: https://thenas.org.uk/Allotment-Laws
+    checked: '2026-11-22'
+  - label: 'Leeds City Council: Allotments'
+    url: https://www.leeds.gov.uk/parks-and-countryside/grow-your-own/allotments
+    checked: '2026-11-22'
+  - label: 'Calderdale Council: Allotment costs'
+    url: https://new.calderdale.gov.uk/leisure/parks-and-open-spaces/allotments/costs
+    checked: '2026-11-22'
+  - label: 'Bristol City Council: Apply for an allotment'
+    url: https://www.bristol.gov.uk/residents/museums-parks-sports-and-culture/allotments-and-gardens/apply-for-an-allotment
+    checked: '2026-11-22'
+  - label: 'Bristol City Council: Annual rent charges for allotments'
+    url: https://www.bristol.gov.uk/files/documents/1388-annual-rent-charges-for-allotments
+    checked: '2026-11-22'
+  - label: 'Manchester City Council: Applying for an allotment'
+    url: https://www.manchester.gov.uk/info/500379/allotments/3104/allotments_in_manchester/2
+    checked: '2026-11-22'
+  - label: 'RHS: How to start an allotment'
+    url: https://www.rhs.org.uk/advice/grow-your-own/allotments/allotments-getting-started
+    checked: '2026-11-22'
+  - label: 'Countryfile: The allotment diary - the long awaited plot'
+    url: https://www.countryfile.com/how-to/outdoor-skills/the-allotment-diary-the-long-awaited-plot/
+    checked: '2026-11-22'
+  - label: 'American Community Gardening Association: find a garden'
+    url: https://www.communitygarden.org/garden
+    checked: '2026-11-22'
+  - label: 'Seattle Department of Neighborhoods (Front Porch): Notice of proposed P-Patch plot fee increase'
+    url: https://frontporch.seattle.gov/2025/12/23/notice-of-proposed-directors-rule-p-patch-community-gardens-plot-fee-increase/
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: Rosee Woodland, Perrett's Park allotments, Bristol
+    line: Took on a half plot on a steep, south-west-facing Bristol site after waiting more than ten years, and found four compost bins and an old metal dustbin under the grass as she began clearing it.
+    title: 'The allotment diary: the long awaited plot'
+    outlet: Countryfile
+    url: https://www.countryfile.com/how-to/outdoor-skills/the-allotment-diary-the-long-awaited-plot/
+    checked: '2026-11-22'
+  related:
+  - community-garden-plot
+  - start-composting
+  - save-your-own-seed
+  - rehome-hens
   kit:
   - name: Gardening gloves
     why: for brambles, nettles and rough work
@@ -7838,6 +7987,9 @@
   - name: Hand trowel and fork set
     why: for planting and weeding
     url: https://www.amazon.co.uk/s?k=hand+trowel+fork+set
+  - name: Opaque weed-suppressing membrane
+    why: to smother the beds you are not ready to clear yet
+    url: https://www.amazon.co.uk/s?k=weed+suppressing+membrane
 - id: community-garden-plot
   title: Grow food in a community garden
   category: eat
@@ -14126,7 +14278,6 @@
   - ride-a-century
   - ride-the-fred-whitton-challenge
   - learn-bike-maintenance
-
 - id: run-great-north-run
   title: Run the Great North Run
   category: move
@@ -20085,7 +20236,6 @@
   - name: Small crossbody bag
     why: to keep within the Globe's 40 x 35 x 19 cm bag limit
     url: https://www.amazon.co.uk/s?k=small+crossbody+bag
-
 - id: queue-for-wimbledon
   title: Join the Queue at Wimbledon
   category: travel
@@ -20446,17 +20596,152 @@
   company: others
   regions:
   - us
-  why: Extension Master Gardeners are volunteers trained through a state land-grant university and its Cooperative Extension Service to pass on research-based gardening advice. Once certified they staff
-    helplines and plant clinics and run workshops, which makes it a horticulture course with a public job attached.
+  - uk
+  why: Extension Master Gardeners take 40 to 80 hours of university Extension training, then repay it in volunteer hours on helplines, plant clinics and community gardens. It is a horticulture course with
+    a public job attached.
   start:
-  - Open the Extension Master Gardener site and use its Find a Master Gardener Program listing to locate your state's programme.
-  - Read your state or county extension office's page for the training timetable and the volunteer hours it asks for.
-  - Apply for the next intake and visit a local plant clinic to see the volunteers at work.
+  - Use the Extension Master Gardener site's Find a Program listing to reach your state program, then your county office.
+  - Read your county page for the fee, the training schedule and the application window, which can be a few weeks in the fall.
+  - Join the county's notification list or information session, and visit a local plant clinic to see the volunteers at work.
   links:
   - label: Extension Master Gardener national site (Cooperative Extension)
     url: https://mastergardener.extension.org/
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-22'
+  - label: UC Master Gardener Program, Become a UC Master Gardener (California)
+    url: https://ucanr.edu/program/uc-master-gardener-program/become-uc-master-gardener
+    region: us
+    checked: '2026-11-22'
+  - label: Penn State Extension, Join the Master Gardener program
+    url: https://extension.psu.edu/programs/master-gardener/join
+    region: us
+    checked: '2026-11-22'
+  - label: Garden Organic, Master Gardener volunteers (UK)
+    url: https://gardenorganic.org.uk/master-gardeners
+    region: uk
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: Oliver Bond, Pierce County, Washington
+    line: A schoolteacher who joined the Pierce County Master Gardeners in 1978 and has worked its plant clinics for more than four decades, with a focus on fruit and insects.
+    title: 'Seeds of a movement: 50 years ago, Master Gardeners began with WSU-trained volunteers'
+    outlet: Washington State University CAHNRS News
+    url: https://news.cahnrs.wsu.edu/article/seeds-of-a-movement-50-years-ago-master-gardeners-began-with-wsu-trained-volunteers
+    checked: '2026-11-22'
+  seo_title: 'How to become a Master Gardener: hours, fees, programs'
+  description: What Extension Master Gardener training covers, the hours and fees in four state programs side by side, what volunteers do, and the closest UK options.
+  detail:
+  - h: What a Master Gardener is
+    p:
+    - Extension Master Gardeners are volunteers trained by the Cooperative Extension Service, through state universities such as the University of California, Texas A&M, Penn State and Washington State,
+      to pass on research-based gardening advice. The idea began in Washington state with two WSU Extension agents, David Gibby and Bill Scheer; a trial plant clinic at the Tacoma Mall in fall 1972 drew
+      strong interest, and the first class took 150 of several hundred applicants. The name borrows from the German Gartenmeister.
+    - WSU now counts more than 86,000 certified Master Gardener volunteers, and says the program runs in all 50 states; the national Extension Master Gardener site counts 49 states and the District of Columbia.
+      The national site describes the basic deal plainly. Initial training usually runs 40 to 80 hours, and you then give an equal number of volunteer hours over the next 12 months. After that, most programs
+      ask for 20 to 30 volunteer hours and about 5 to 15 hours of further training a year to stay active.
+  - h: Four state programs side by side
+    p:
+    - Rules are set by each state and often by each county, so the same state can vary. These are the figures each county page last listed.
+    table:
+      head:
+      - Program (county page)
+      - Training
+      - Volunteer hours to certify
+      - Each later year
+      - Fee (as last listed)
+      - Application window
+      rows:
+      - - UC Master Gardener (Los Angeles County)
+        - At least 50 hours statewide; 13 full Saturdays in spring
+        - 50, by June 30 of the following year
+        - 25 hours plus 12 hours of continuing education (statewide)
+        - $375 for the 2027 class; partial scholarships up to $200
+        - September 29 to November 9, 2026, for the 2027 class
+      - - Texas Master Gardener (Travis County)
+        - About 85 hours of weekday coursework
+        - 50, by December 31 of the following year
+        - Not listed on the page
+        - About $400
+        - By invitation after an information session; next class not yet scheduled
+      - - Penn State Extension (Berks County)
+        - At least 40 hours statewide; about 15 three-hour classes, October to March
+        - 50 in the first year
+        - 20 hours plus 10 hours of continuing education
+        - $250 including the manual
+        - Next class begins fall 2027; contact the county office
+      - - WSU Extension (Pierce County)
+        - About 8 hours a week for 19 weeks, January to May, mostly on Zoom
+        - 40, by November of the training year
+        - 25 hours plus 10 hours of continuing education
+        - $249 including a $14 background check
+        - Opens in September, closes October 31
+    after: Penn State asks trainees to score 80 percent on a midterm and a final exam. Pierce County says no one is turned away for lack of funds, and Penn State says financial aid may be available.
+  - h: What the training covers, and what volunteers do
+    p:
+    - The UC program lists the range a typical course covers. That includes soils and fertilizer, water management, propagation, plant disease, insects, weeds and pest management, lawns, trees and shrubs,
+      vegetables and fruit, landscape design and poisonous plants, and diagnosing plant problems. Texas adds water conservation and home fruit production.
+    - Once trained, volunteers answer the public's questions by phone and at plant clinics and farmers' market tables. They speak to local groups, run workshops, start community and school gardens and help
+      with youth programs. The county coordinator decides where your hours go, so ask what roles your county needs before you apply.
+  - h: The honest UK options
+    p:
+    - The UK has no Extension service like the US land-grant system. The closest match in name and spirit is Garden Organic's Master Gardener volunteers, who mentor households new to food growing through
+      a growing season and give local talks and school sessions. Its page names a project at North Road in Mid Wales and does not set out training hours or fees. Ask the charity what is recruiting near
+      you.
+    - For a structured horticulture course with exams, the Royal Horticultural Society's Level 2 qualifications are the usual starting point in the UK. See our page on studying for RHS Level 2.
+  faq:
+  - q: How long does it take to become a Master Gardener?
+    a: Initial training usually runs 40 to 80 hours, often spread over a season of weekly classes. You then give a similar number of volunteer hours, which counties typically ask you to finish within about
+      a year.
+  - q: How much does Master Gardener training cost?
+    a: Fees are set locally. The county pages we read last listed $249 in Pierce County, Washington, $250 in Berks County, Pennsylvania, $375 in Los Angeles County and about $400 in Travis County, Texas,
+      and several offer scholarships or aid.
+  - q: Do you need gardening experience to become a Master Gardener?
+    a: Most pages we read set no minimum level of experience, though Los Angeles County lists basic gardening knowledge among its applicant qualifications. Entry is still selective in places; Travis County,
+      Texas, invites applicants only after an information session, and Penn State requires applicants to be at least 18.
+  - q: What do Master Gardeners do?
+    a: They share research-based advice with the public through helplines, plant clinics, workshops, demonstration and community gardens and school programs. The county coordinator decides how volunteer
+      time is used.
+  - q: Is there a Master Gardener program in the UK?
+    a: Garden Organic runs Master Gardener volunteers who mentor households growing their own food. For a formal qualification, the RHS Level 2 courses are the usual route.
+  sources:
+  - label: Extension Master Gardener, Becoming an Extension Master Gardener
+    url: https://mastergardener.extension.org/contact-us/becoming-an-extension-master-gardener/
+    checked: '2026-11-22'
+  - label: 'WSU CAHNRS News, Seeds of a movement: 50 years ago, Master Gardeners began with WSU-trained volunteers'
+    url: https://news.cahnrs.wsu.edu/article/seeds-of-a-movement-50-years-ago-master-gardeners-began-with-wsu-trained-volunteers
+    checked: '2026-11-22'
+  - label: UC Master Gardener Program, Become a UC Master Gardener
+    url: https://ucanr.edu/program/uc-master-gardener-program/become-uc-master-gardener
+    checked: '2026-11-22'
+  - label: UC Cooperative Extension Los Angeles County, Become a UC Master Gardener
+    url: https://ucanr.edu/county/los-angeles-county/become-uc-master-gardener
+    checked: '2026-11-22'
+  - label: Texas Master Gardeners, Become a Texas Master Gardener
+    url: https://txmg.org/become-a-master-gardener/become-a-texas-master-gardener
+    checked: '2026-11-22'
+  - label: Texas A&M AgriLife Extension Travis County, Master Gardener Training
+    url: https://travis-tx.tamu.edu/about-2/horticulture/master-gardener-training/
+    checked: '2026-11-22'
+  - label: Penn State Extension, Join the Master Gardener program
+    url: https://extension.psu.edu/programs/master-gardener/join
+    checked: '2026-11-22'
+  - label: Penn State Extension, Become a Master Gardener in Berks County
+    url: https://extension.psu.edu/programs/master-gardener/counties/berks/become-a-master-gardener-in-berks-county
+    checked: '2026-11-22'
+  - label: WSU Extension Pierce County, Master Gardener training
+    url: https://extension.wsu.edu/pierce/pierce-county-master-gardener-training-become-a-master-gardener
+    checked: '2026-11-22'
+  - label: Garden Organic, Master Gardeners
+    url: https://gardenorganic.org.uk/master-gardeners
+    checked: '2026-11-22'
+  - label: Garden Organic, Supporting volunteers
+    url: https://gardenorganic.org.uk/what-we-do/supporting-volunteers
+    checked: '2026-11-22'
+  related:
+  - take-rhs-level-2
+  - community-garden-plot
+  - save-your-own-seed
+  - take-on-an-allotment
   kit:
   - name: Gardening encyclopedia
     why: a reference for answering questions from the public
@@ -20467,6 +20752,9 @@
   - name: Garden notebook
     why: for course and plant notes
     url: https://www.amazon.co.uk/s?k=garden+notebook
+  - name: Hand lens
+    why: for looking closely at insects and leaf damage brought to a plant clinic
+    url: https://www.amazon.co.uk/s?k=hand+lens+10x
 - id: take-rhs-level-2
   title: Study for an RHS Level 2 horticulture qualification
   category: eat
@@ -21573,7 +21861,6 @@
   - learn-to-solder
   - build-a-raspberry-pi-project
   - spot-the-space-station
-
 - id: build-a-raspberry-pi-project
   title: Build something with a Raspberry Pi
   category: tech
@@ -22304,30 +22591,179 @@
   category: earn
   kind: project
   effort: demanding
-  cost: mid
+  cost: high
   time: year
   setting: outdoors
   company: others
   regions:
   - uk
-  why: The Mountain Leader qualification is for people who want to lead groups in the mountains, hills and moorlands of the UK and Ireland. It is built on a logbook of your own mountain days, followed by
-    a training course and an assessment that includes an expedition with overnight camps.
+  why: The Mountain Leader award lets you lead groups in the mountains of the UK and Ireland, and it is earned mostly on your own boots, through a logbook of at least 40 quality mountain days. Mountain
+    Training says the average time from training course to passing the assessment is 3.3 years.
   start:
-  - Join a mountaineering council (the BMC, Mountaineering Scotland or Mountaineering Ireland) and read the Mountain Leader page for where you live.
-  - Start logging full mountain days that you planned and navigated yourself; in Ireland, book a Mountain Skills course and assessment first.
-  - Register for the scheme, book the training course, then take an in-person first aid course before assessment.
+  - Join the BMC, Mountaineering Scotland or Mountaineering Ireland, then register with Mountain Training (£69 as last listed) to open your DLOG digital logbook.
+  - Log at least 20 quality mountain days you planned and navigated yourself, then book the six-day training course with an approved provider.
+  - Build to 40 days in three regions and eight camping nights, take a two-day in-person first aid course, and book the five-day assessment.
   links:
   - label: Mountain Training, Mountain Leader qualification page (UK)
     url: https://www.mountain-training.org/qualifications/walking/mountain-leader
     region: uk
-    checked: '2026-10-09'
+    checked: '2026-11-22'
   - label: Mountaineering Ireland, Mountain Leader page
-    url: https://www.mountaineering.ie/content/MountainLeader/102
+    url: https://mountaineering.ie/content/MountainLeader/102
     region: any
-    checked: '2026-10-09'
+    checked: '2026-11-22'
+  - label: Plas y Brenin, Mountain Leader training dates and prices
+    url: https://booking.pyb.co.uk/courses/mountain-leader-training-summer/?book
+    region: uk
+    checked: '2026-11-22'
+  - label: Glenmore Lodge, Mountain Leader training
+    url: https://www.glenmorelodge.org.uk/summer-rock-mountain/qualifications/mountain-leader-training/
+    region: uk
+    checked: '2026-11-22'
   story: barbara-odonnell-mountain-leader
   story_note: Barbara O'Donnell left a job in IT management and qualified as a mountain leader in Ireland.
-  safety: Mountain weather changes fast; build experience with a club or a qualified leader before going out alone.
+  safety: You will be responsible for other people on steep, rocky ground in fast-changing weather, so build your own experience well beyond the logbook minimums before you lead anyone.
+  inspire:
+  - kind: read
+    person: Phil Watson, south west England
+    line: After 33 years in the Royal Marines band service, he took Mountain Leader training, spent a year gaining experience in Scotland, the Lake District and Snowdonia, passed the assessment and now
+      takes groups, including Ten Tors teams, into the hills.
+    title: Interview with a Summer Mountain Leader
+    outlet: British Mountaineering Council
+    url: https://services.thebmc.co.uk/interview-with-a-summer-mountain-leader
+    checked: '2026-11-22'
+  seo_title: 'How to become a Mountain Leader: days, costs and steps'
+  description: What the Mountain Leader award asks, from 40 quality mountain days to a five-day assessment, with course costs and the walking awards side by side.
+  detail:
+  - h: What the award is, and what it asks of you
+    p:
+    - The Mountain Leader award, run by Mountain Training, qualifies you to lead groups in the mountains of the UK and Ireland, including ground where steep and rocky terrain cannot be avoided. You must
+      be 18 for training and assessment, and a member of the BMC, Mountaineering Ireland or Mountaineering Scotland.
+    - Most of the work happens on your own time. Mountain Training recommends at least a year of mountain walking before you register, and asks for 20 quality mountain days before the six-day training course
+      and 40 before the five-day assessment, spread across at least three regions of the UK or Ireland. You also need at least eight camping nights logged, four of them wild camps.
+    - The training course includes a two-day expedition with an overnight camp. The assessment includes a three-day expedition with two nights out. Before assessment you need a current first aid certificate
+      from an in-person course of at least two full days, with an assessed element; online courses do not count.
+  - h: The walking award ladder, side by side
+    table:
+      head:
+      - Award
+      - Terrain it covers
+      - Logged days before training
+      - Training
+      - Logged days before assessment
+      - Assessment
+      rows:
+      - - Lowland Leader
+        - Lowland countryside and woodland
+        - 10 quality lowland walks (or a Hill Skills course)
+        - 2 days
+        - 20 lowland walks in different terrain types
+        - 2 days
+      - - Hill and Moorland Leader
+        - Open, non-mountainous hill and moorland such as Dartmoor, the Peak District and the North York Moors; excludes steep, rocky ground
+        - 20 quality hill days
+        - 3 days
+        - 40 hill days in three upland areas
+        - 3 days
+      - - Mountain Leader
+        - Mountains of the UK and Ireland, including unavoidable steep, rocky ground
+        - 20 quality mountain days
+        - 6 days, with a two-day expedition
+        - 40 quality mountain days in three regions, plus 8 camping nights (4 wild)
+        - 5 days, with a three-day expedition
+      - - Winter Mountain Leader
+        - The same mountains in winter conditions, with snow and ice; excludes winter climbing and planned rope use
+        - Must hold Mountain Leader; 20 winter quality mountain days to register
+        - At least 6 days, in Scotland
+        - 40 winter quality mountain days, 20 in Scotland, over three winter seasons, plus 10 Grade I winter routes
+        - At least 5 days, in Scotland
+    after: Mountain Training listed a £69 registration fee for each of the first three awards; the Winter Mountain Leader handbook (October 2025) does not state its fee. A completed Mountain Leader training
+      course is accepted in place of Hill and Moorland Leader training if you later decide to be assessed on the lower award.
+  - h: Logging your days
+    p:
+    - The days in your logbook need to be quality mountain days as Mountain Training defines them, not just any walk, so read its guidance before you start logging.
+    - Days are best recorded in DLOG, Mountain Training's digital logbook, which opens once you register.
+  - h: What it costs
+    table:
+      head:
+      - Item
+      - Provider
+      - Cost (as last listed)
+      - Notes
+      rows:
+      - - Registration
+        - Mountain Training
+        - £69
+        - Opens your DLOG logbook
+      - - Registration (Ireland)
+        - Mountaineering Ireland
+        - €76
+        - After passing the Mountain Skills Assessment
+      - - Training course (6 days)
+        - Plas y Brenin, Capel Curig
+        - £455 non-residential, £875 residential
+        - Prices shown for 2027 dates; residential includes catering
+      - - Training course (6 days)
+        - Glenmore Lodge
+        - £485 without accommodation
+        - Prices shown with 2025 dates; includes kit use, packed lunch and in-course transport
+      - - Assessment (5 days)
+        - Plas y Brenin, Capel Curig
+        - £475 non-residential, £825 residential
+        - Prices shown for 2026 dates
+    after: Add a two-day first aid course, a mountaineering council membership, and the travel and camping needed to log 40 days in three regions. Glenmore Lodge listed no assessment price on the page we
+      opened.
+  - h: The route in Ireland
+    p:
+    - Mountaineering Ireland runs an all-Ireland version adopted in 2018. You pass a Mountain Skills Assessment first, then register (€76 as last listed), complete 60 hours of training with an approved
+      provider, usually in two blocks, and sit a four-day assessment that includes a two-night expedition. Its page also asks for observation days with a recognized provider and a planned two-day group
+      expedition before assessment.
+  faq:
+  - q: How long does it take to become a Mountain Leader?
+    a: Mountain Training says the average time from the training course to passing the assessment is 3.3 years. That comes on top of the year of mountain walking it expects before you register.
+  - q: How many quality mountain days do you need for Mountain Leader?
+    a: At least 20 before the training course and at least 40 before assessment, in at least three regions of the UK or Ireland. You also need eight logged camping nights, four of them wild camps.
+  - q: How much does Mountain Leader training cost?
+    a: Registration with Mountain Training was listed at £69. Six-day training courses were last listed at £455 non-residential at Plas y Brenin and £485 without accommodation at Glenmore Lodge, with the
+      assessment a separate cost.
+  - q: What first aid do you need for Mountain Leader?
+    a: A current certificate from an in-person course of at least two full days of instruction that included an assessment. Online-only courses are not accepted.
+  - q: What is the difference between Hill and Moorland Leader and Mountain Leader?
+    a: Hill and Moorland Leader covers open, non-mountainous upland such as Dartmoor and the Peak District, and excludes steep, rocky ground. Mountain Leader covers the mountains themselves, with a six-day
+      training course and a five-day assessment against three days each for Hill and Moorland.
+  sources:
+  - label: Mountain Training, Mountain Leader
+    url: https://www.mountain-training.org/qualifications/walking/mountain-leader
+    checked: '2026-11-22'
+  - label: Mountain Training, Hill and Moorland Leader
+    url: https://www.mountain-training.org/qualifications/walking/hill-and-moorland-leader
+    checked: '2026-11-22'
+  - label: Mountain Training, Lowland Leader
+    url: https://www.mountain-training.org/qualifications/walking/lowland-leader/
+    checked: '2026-11-22'
+  - label: Mountain Training, Winter Mountain Leader candidate handbook (October 2025)
+    url: https://www.mountain-training.org/media/bazng02p/winter-mountain-leader-candidate-handbook.pdf
+    checked: '2026-11-22'
+  - label: Mountaineering Ireland, Mountain Leader
+    url: https://mountaineering.ie/content/MountainLeader/102
+    checked: '2026-11-22'
+  - label: Plas y Brenin, Mountain Leader Training Summer (booking)
+    url: https://booking.pyb.co.uk/courses/mountain-leader-training-summer/?book
+    checked: '2026-11-22'
+  - label: Plas y Brenin, Mountain Leader Assessment Summer (booking)
+    url: https://booking.pyb.co.uk/?p=953283
+    checked: '2026-11-22'
+  - label: Glenmore Lodge, Mountain Leader Training
+    url: https://www.glenmorelodge.org.uk/summer-rock-mountain/qualifications/mountain-leader-training/
+    checked: '2026-11-22'
+  - label: British Mountaineering Council, Interview with a Summer Mountain Leader
+    url: https://services.thebmc.co.uk/interview-with-a-summer-mountain-leader
+    checked: '2026-11-22'
+  related:
+  - qualify-as-a-walk-leader
+  - learn-map-and-compass
+  - learn-to-wild-camp
+  - learn-first-aid
   kit:
   - name: Navigation skills book
     why: map and compass technique for the hills
@@ -22338,6 +22774,9 @@
   - name: Map case
     why: keeps your map dry and readable
     url: https://www.amazon.co.uk/s?k=waterproof+map+case
+  - name: Lightweight backpacking tent
+    why: for the camping nights the logbook asks for and the expedition on assessment
+    url: https://www.amazon.co.uk/s?k=lightweight+backpacking+tent
 - id: volunteer-as-a-befriender
   title: Become a telephone befriender
   category: connect
@@ -24304,16 +24743,171 @@
   company: either
   regions:
   - anywhere
-  why: A thousand miles sounds like an expedition, yet spread across a year it works out at a little under three miles a day. The Walk 1000 Miles challenge is free to join and leaves it to you how you record your miles.
+  why: A thousand miles sounds like an expedition, yet spread across a year it works out at 2.74 miles a day, or about an hour's walking. The Walk 1000 Miles challenge run by Country Walking magazine is
+    free to join, runs on honesty, and leaves it to you which miles count.
   start:
-  - Sign up on the official Walk 1000 Miles site.
-  - Decide how you will log your miles, whether on a phone app, a watch or a paper chart on the fridge.
-  - Work out a weekly mileage that gets you to 1,000 and plan a regular route that covers a day's share.
+  - Register free on the official Walk 1000 Miles site and join its Facebook group if you want company.
+  - Decide your counting rule before day one, either every step on a tracker or only deliberate walks logged on an app or a paper chart.
+  - Aim for about 19 miles (31 km) a week and plan a regular route that covers a day's share.
   links:
-  - label: Walk 1000 Miles official challenge site
+  - label: Walk 1000 Miles official challenge site (Country Walking)
     url: https://www.walk1000miles.co.uk/
     region: any
-    checked: '2026-10-08'
+    checked: '2026-11-22'
+  - label: 'Walk 1000 Miles: how it works'
+    url: https://walk1000miles.co.uk/articles/howitworks
+    region: any
+    checked: '2026-11-22'
+  - label: 'Ramblers: free Wellbeing Walks across England'
+    url: https://www.ramblers.org.uk/go-walking/wellbeing-walks
+    region: uk
+    checked: '2026-11-22'
+  - label: 'American Volkssport Association: find walking events and clubs'
+    url: https://ava.org/
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Walk 1000 miles in a year challenge: how it works'
+  description: How the free Walk 1000 Miles challenge works, the miles per day and week, what counts, ways to log your walks, and how to catch up if you fall behind.
+  detail:
+  - h: What the challenge is
+    p:
+    - Walk 1000 Miles was created by Country Walking magazine. Registration on the official site is free and brings next steps, a monthly newsletter and entry to competitions with prizes from the magazine's
+      partners. The site says the 12 months run "from the day you start", so a calendar-year January start is a habit rather than a rule.
+    - The magazine sets the target and you set the counting rules. The site calls the challenge honesty-based and says you can walk "wherever and however you like". It suggests two approaches. People whose
+      fitness or circumstances are limited can count every step on a wearable tracker. People who want a stretch can count only walks on top of their usual activity, logged with a phone app.
+    - Around the challenge sit a Facebook group, where members share walks, arrange meet-ups and ask for help, and a shop that sells a progress chart, badges so 1,000-milers can spot each other, and completer's
+      medals at 500 miles, 1,000 miles and higher totals; the homepage says medals come through a Country Walking tracker that is available to buy. The site lists no prices on the pages opened for this
+      guide, so check the shop before you buy.
+  - h: The arithmetic
+    table:
+      head:
+      - Period
+      - Miles
+      - Kilometers
+      rows:
+      - - Year
+        - 1,000
+        - 1,609
+      - - Month (average)
+        - '83.3'
+        - '134'
+      - - Week
+        - '19.2'
+        - '30.9'
+      - - Day
+        - '2.74'
+        - '4.41'
+      - - Day, if you rest one day a week
+        - '3.20'
+        - '5.15'
+    after: The 2.74-mile daily figure is the one the official site quotes. The NHS describes a brisk walk as about 3 miles an hour, so a day's share is a little under an hour at that pace, which matches
+      the site's own line that the challenge "encourages you to walk about an hour a day". The other figures are our own sums.
+  - h: Ways to log your miles
+    table:
+      head:
+      - Method
+      - What it counts
+      - What the source says
+      rows:
+      - - Paper progress chart
+        - Totals you write in
+        - Double-sided chart for daily, weekly and monthly totals; sold in the challenge shop and, as last listed, given free with the first 2024 issue of Country Walking
+      - - Wearable fitness tracker
+        - Every step you take
+        - The site suggests this route for people with limited fitness or circumstances
+      - - OS Maps app on a phone
+        - Walks you record
+        - The challenge site recommends it for tracking miles on your phone
+      - - Strava
+        - Walks you record
+        - Rebecca Johnson tracked her 2021 challenge on Strava
+      - - NHS Active 10 app
+        - How much and how fast you walk
+        - The NHS says it tells you when you are walking fast enough to count as brisk
+    after: Whichever you choose, decide on day one whether you count all steps or only deliberate walks. Switching halfway makes the total hard to trust, and the challenge depends on your own honesty.
+  - h: Building up, and catching up
+    p:
+    - The NHS advice for people who are not very active is to increase walking distance gradually. Ten-minute brisk walks count toward its weekly 150 minutes, so a short walk most days is a reasonable first
+      month while the daily average is still low.
+    - Falling behind is normal; winter weeks and illness both cost miles. Our sums for a calendar-year start show the cost of a slow first quarter.
+    table:
+      head:
+      - Miles done by 1 April
+      - Miles left
+      - Daily average needed for the rest of the year
+      rows:
+      - - 250 (on pace)
+        - '750'
+        - '2.73'
+      - - 180 (2 miles a day)
+        - '820'
+        - '2.98'
+      - - 90 (1 mile a day)
+        - '910'
+        - '3.31'
+    after: Rebecca Johnson, a 1,000-miler from West Yorkshire, still had about 18 miles to go on 31 December 2021. She used two days of holiday for long walks and finished on the last day by taking a train
+      to Leeds and walking back along a canal.
+  - h: For US readers
+    p:
+    - The challenge counts in miles and works anywhere, but it is a British magazine's project and its Facebook group and prizes lean that way. In the US, the American Volkssport Association, a nonprofit,
+      lists more than 2,500 noncompetitive events a year, mostly walks, through over 200 clubs. Its walks are usually 5 km (3.1 miles) or 10 km (6.2 miles), and its achievement awards program gives patches,
+      pins and certificates for total distance and events walked, which can sit alongside your own 1,000-mile tally.
+    - The CDC's guideline for adults is at least 150 minutes a week of moderate-intensity activity such as brisk walking, for example 30 minutes on five days, plus muscle-strengthening activity on at least
+      two days.
+  faq:
+  - q: Is the Walk 1000 Miles challenge free?
+    a: Yes. The official site says to register free to take part. The progress chart, badges and medals are sold separately in its shop.
+  - q: How many miles a day is 1,000 miles in a year?
+    a: 2.74 miles (4.41 km) a day, or about 19.2 miles (30.9 km) a week. At the NHS's brisk pace of about 3 miles an hour, that is a little under an hour a day.
+  - q: Do everyday steps count toward Walk 1000 Miles?
+    a: They can. The site lets you choose, either counting every step on a fitness tracker or counting only walks on top of your usual activity. Pick one rule and keep to it.
+  - q: Do I have to start Walk 1000 Miles on 1 January?
+    a: No. The sign-up page says the challenge runs for 12 months from the day you start.
+  - q: Is there a medal for walking 1,000 miles?
+    a: The challenge shop sells completer's medals for 500 miles, 1,000 miles and higher totals. The homepage says medals come through a Country Walking tracker that is available to buy.
+  - q: Is there a US version of the 1,000-mile walking challenge?
+    a: The Walk 1000 Miles challenge itself is open to anyone. For organized walks in the US, the American Volkssport Association lists more than 2,500 noncompetitive events a year through over 200 clubs.
+  sources:
+  - label: 'Walk 1000 Miles: how it works'
+    url: https://walk1000miles.co.uk/articles/howitworks
+    checked: '2026-11-22'
+  - label: 'Walk 1000 Miles: sign up'
+    url: https://walk1000miles.co.uk/signup
+    checked: '2026-11-22'
+  - label: 'Walk 1000 Miles: What is this?'
+    url: https://walk1000miles.co.uk/articles/whatisthis
+    checked: '2026-11-22'
+  - label: 'Walk 1000 Miles: Hours to spare! How one 1000-miler''s challenge went down to the wire'
+    url: https://walk1000miles.co.uk/articles/hours-to-spare-how-one-1000-milers-challenge-went-down-to-the-wire
+    checked: '2026-11-22'
+  - label: 'NHS: Walking for health'
+    url: https://www.nhs.uk/live-well/exercise/walking-for-health/
+    checked: '2026-11-22'
+  - label: 'CDC: What you can do to meet physical activity recommendations'
+    url: https://www.cdc.gov/physical-activity-basics/guidelines/index.html
+    checked: '2026-11-22'
+  - label: 'Ramblers: Wellbeing Walks'
+    url: https://www.ramblers.org.uk/go-walking/wellbeing-walks
+    checked: '2026-11-22'
+  - label: 'American Volkssport Association: Come Walk With Us (2026 brochure)'
+    url: https://cb.ava.org/CLUB_PUBLICITY_TOOLKIT/2026/Come_Walk_With_Us_8.18.2026.pdf
+    checked: '2026-11-22'
+  - label: 'American Volkssport Association: What is Volksmarching?'
+    url: https://cb.ava.org/CLUB_PUBLICITY_TOOLKIT/What%20is%20Volksmarching.pdf
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: Rebecca Johnson, from West Yorkshire
+    line: Started the challenge on 1 January 2021, still had about 18 miles to go on New Year's Eve, and finished that day by catching a train to Leeds and walking back along a canal.
+    title: Hours to spare! How one 1000-miler's challenge went down to the wire
+    outlet: Walk 1000 Miles (Country Walking)
+    url: https://walk1000miles.co.uk/articles/hours-to-spare-how-one-1000-milers-challenge-went-down-to-the-wire
+    checked: '2026-11-22'
+  related:
+  - join-a-wellbeing-walk
+  - join-a-ramblers-group
+  - walk-a-national-trail
+  - nordic-walking-lesson
   kit:
   - name: Walking boots
     why: try them on in the afternoon with your walking socks, and break them in before a long day
@@ -24322,8 +24916,11 @@
     why: fewer blisters on long days; bring a spare pair
     url: https://www.amazon.co.uk/s?k=merino+walking+socks
   - name: Step counter or pedometer
-    why: an easy way to keep a tally
+    why: an easy way to keep a tally if you count every step
     url: https://www.amazon.co.uk/s?k=pedometer
+  - name: Head torch
+    why: for winter walks that start or finish in the dark
+    url: https://www.amazon.co.uk/s?k=head+torch
 - id: hike-a-fourteener
   photo_file: "File:Lower East Ridge Trail on Quandary Peak.jpg"
   photo_caption: "The lower East Ridge trail on Quandary Peak, Colorado, August 2026."
@@ -44784,7 +45381,6 @@
   - learn-judo
   - learn-tai-chi-form
   - try-trampolining
-
 - id: eat-at-a-michelin-starred-restaurant
   title: Eat at a Michelin-starred restaurant
   category: eat
@@ -44890,7 +45486,6 @@
   - wset-wine-course
   - cook-a-community-meal
   - grow-your-own-herbs
-
 - id: take-a-bread-making-class
   title: Learn to bake bread on a one-day class
   category: eat
@@ -45005,7 +45600,6 @@
   - five-dinners-by-heart
   - cook-a-community-meal
   - preserve-a-seasons-fruit
-
 - id: go-to-cookery-school
   title: Take a course at a cookery school or college
   category: eat
@@ -45125,7 +45719,6 @@
   - sourdough-from-starter
   - cook-a-community-meal
   - wset-wine-course
-
 - id: row-across-the-atlantic
   title: Row across the Atlantic
   category: move
@@ -45243,7 +45836,6 @@
   - try-rowing-indoor
   - learn-to-sail
   - learn-to-kayak
-
 - id: paddle-devizes-to-westminster
   title: Paddle the Devizes to Westminster canoe race
   category: move
@@ -53863,7 +54455,6 @@
   - learn-the-steel-pan
   - join-community-orchestra-or-band
   - learn-salsa
-
 - id: learn-gamelan
   title: Play in a gamelan
   category: think
@@ -54319,7 +54910,6 @@
   - go-to-a-folk-dance
   - learn-tap-dancing
   - learn-irish-dancing
-
 - id: play-real-tennis
   title: Play real tennis
   category: move
@@ -58033,7 +58623,6 @@
   related:
   - parkrun
   - marine-corps-marathon
-
 - id: run-a-marathon
   title: Run a marathon
   category: move
@@ -78928,7 +79517,8 @@
       p:
         - In the UK, GOV.UK describes the trading allowance as a tax exemption of up to £1,000 a year for individuals with trading income. If your gross trading income is over £1,000, you must register
           for Self Assessment by 5 October in the following tax year. The page's examples of trading income are self-employment, casual services and hiring out personal equipment; it does not mention sales
-          of handmade goods.
+          of handmade goods. A GOV.UK policy paper published on 28 October 2026 proposes raising the allowance, and the Self Assessment reporting threshold, from £1,000 to £3,000 from 6 April 2027; it was a
+          proposal, not yet law, when we checked.
         - In California, the state tax department says anyone selling new or used merchandise, including handcrafted items, generally needs a seller's permit, plus a sub-permit for each temporary selling
           location. Sellers give event operators their details on form CDTFA-410-D. Someone who sells only occasionally may not need a permit, but the department judges this case by case and does not set
           a fixed number. Other states run their own schemes. At federal level, the IRS says you must pay self-employment tax if you had net earnings of $400 or more as a self-employed person.
@@ -78947,6 +79537,9 @@
       a: Organisers set their own prices. As last listed, Carmarthenshire Council charged £10 per 3 square metres (about 32 sq ft) for a casual outdoor pitch and £30 a week for a Carmarthen indoor pop-up
         unit.
   sources:
+    - label: GOV.UK, Increasing the trading allowance (policy paper, 28 October 2026)
+      url: https://www.gov.uk/government/publications/income-tax-increasing-the-trading-allowance/increasing-the-trading-allowance
+      checked: '2026-11-22'
     - label: Carmarthenshire County Council, Become a trader
       url: https://www.carmarthenshire.gov.wales/council-services/markets/become-a-trader/
       checked: '2026-11-20'
@@ -112139,3 +112732,1167 @@
   - try-white-water-rafting
   - tandem-skydive
   - drive-a-scenic-byway
+- id: go-on-a-painting-holiday
+  title: Go on a painting holiday
+  category: travel
+  kind: experience
+  effort: gentle
+  cost: mid
+  time: days
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A painting holiday gives you two to six days of tutored painting, often on a different theme or technique each day, with meals cooked for you. Many are run for mixed groups, so a complete beginner
+    can paint alongside someone with years of practice.
+  start:
+  - Pick the length and level you want, from a two-night beginners' break to a full week, and check that the course says all levels are welcome.
+  - Read what is included. Some fees cover tuition, room and all meals; others leave out lunches, materials or the room.
+  - Order the materials on the kit list early, since several providers expect you to bring your own paints, paper and brushes.
+  links:
+  - label: 'HF Holidays: art and craft holidays (UK country houses)'
+    url: https://www.hfholidays.co.uk/activities/leisure-activities/art-craft/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Higham Hall: residential art and craft courses (Cumbria)'
+    url: https://highamhall.com/wp-content/uploads/2025/07/161579-Course-Brochure-April-25-to-March-26-WEB.pdf
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Dedham Hall: residential art courses in Constable Country (Essex)'
+    url: https://www.painters-online.co.uk/courses-holidays/residential-art-courses-at-dedham-hall/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'John C. Campbell Folk School: tuition, housing and meals (North Carolina)'
+    url: https://www.folkschool.org/folk-school-experience/housing-and-meals/
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Painting holidays for beginners: what they cost'
+  description: What a residential painting holiday includes, who it suits and what it costs in the UK and US, from a two-night watercolor break to a full week.
+  detail:
+  - h: What a painting holiday is like
+    p:
+    - Most run on a set pattern of tutored painting by day and shared meals in the evening. HF Holidays' four-night Introduction to Watercolours at Harrington House in the Cotswolds gives one theme a day,
+      from brush control and color mixing to wet-on-wet blending and pen and wash, for a group of up to 15.
+    - Levels are often mixed. HF says its Cotswolds course caters for all ability levels, Dedham Hall in Essex welcomes artists of all levels to studio and outdoor painting, and a week-long acrylics class
+      at the John C. Campbell Folk School is listed as open to all levels.
+    - Check what you must bring. HF lends A3 boards but asks guests to buy their own paints, brushes and paper from a kit list; the Folk School class lists acrylic paints, brushes and a palette tray as
+      yours to supply.
+  - h: Real painting holidays compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - HF Holidays, Harrington House, Cotswolds
+        - 4 nights, introduction to watercolor; tuition, en-suite room, breakfast, packed lunch and dinner included
+        - Price on enquiry
+      - - Higham Hall, Cumbria
+        - 'Discovering Watercolours (materials provided): Sunday to Tuesday, October 2025'
+        - £380 residential, £275 non-residential
+      - - Higham Hall, Cumbria
+        - 'Capture Scottish Scapes: 5 nights, October 2025'
+        - £675 residential, £390 non-residential
+      - - John C. Campbell Folk School, Brasstown, North Carolina
+        - 'Learn to "See" and Paint Nature: acrylics, Sunday to Saturday, all levels'
+        - $870 tuition; housing with all meals $600 to $1,155 for the six nights, Sunday to Saturday (2026)
+      - - Arrowmont School of Arts and Crafts
+        - 'Wax and Vision: one-week encaustic painting workshop, June 28 to July 3, 2026, all levels'
+        - $760 tuition plus $50 registration; housing, meals and materials extra
+    after: Higham Hall courses start with dinner at 6.30pm on the first day and end after lunch on the last day, unless the program says otherwise. At the Folk School, housing rates run from dormitory rooms
+      with four or five twin beds to single rooms with a private bath.
+  faq:
+  - q: Can a complete beginner go on a painting holiday?
+    a: Yes, if the course says so. HF Holidays' introduction to watercolours is for complete beginners as well as more experienced painters, and the Folk School and Arrowmont list classes open to all levels.
+  - q: How much does a painting holiday cost?
+    a: A short UK residential course can start at a few hundred pounds; Higham Hall listed a two-night watercolor course at £380 residential. A week at the John C. Campbell Folk School was $870 tuition
+      plus $600 to $1,155 for six nights of housing and meals in 2026.
+  - q: Do I need to bring my own paints on a painting holiday?
+    a: Often. HF Holidays and the Folk School class above ask you to bring your own paints and brushes, while some Higham Hall courses are listed with materials provided.
+  - q: Can a partner who does not paint come too?
+    a: At some places. The Folk School charges non-students its housing and meal rates plus a guest fee of $75 for a week or $30 for a weekend.
+  sources:
+  - label: HF Holidays, 4 Night Introduction to Watercolours in the Cotswolds
+    url: https://www.hfholidays.co.uk/holidays-and-tours/4-night-introduction-to-watercolours-in-the-cotswolds
+    checked: '2026-11-22'
+  - label: Higham Hall, Course brochure April 2025 to March 2026
+    url: https://highamhall.com/wp-content/uploads/2025/07/161579-Course-Brochure-April-25-to-March-26-WEB.pdf
+    checked: '2026-11-22'
+  - label: Painters Online, Residential Art Courses at Dedham Hall
+    url: https://www.painters-online.co.uk/courses-holidays/residential-art-courses-at-dedham-hall/
+    checked: '2026-11-22'
+  - label: John C. Campbell Folk School, Tuition, Housing, and Meals
+    url: https://www.folkschool.org/folk-school-experience/housing-and-meals/
+    checked: '2026-11-22'
+  - label: John C. Campbell Folk School, Learn to "See" and Paint Nature!
+    url: https://folkschool.configio.com/pd/3959/learn-to-see-and-paint-nature
+    checked: '2026-11-22'
+  - label: 'Arrowmont, Wax and Vision: Building Your Encaustic Language'
+    url: https://arrowmont.org/workshop/wax-and-vision-building-your-encaustic-language
+    checked: '2026-11-22'
+  kit:
+  - name: Travel watercolor set
+    why: a compact pan set for painting away from home
+    url: https://www.amazon.co.uk/s?k=travel+watercolour+set
+  - name: Watercolor paper pad
+    why: paper heavy enough to take washes without buckling
+    url: https://www.amazon.co.uk/s?k=watercolour+paper+pad+300gsm
+  - name: Folding sketching stool
+    why: a seat for painting outdoors
+    url: https://www.amazon.co.uk/s?k=folding+sketching+stool
+  related:
+  - paint-in-watercolour
+  - try-plein-air-painting
+  - paint-in-acrylics
+  - try-encaustic-painting
+- id: go-on-a-residential-craft-course
+  title: Go on a residential craft course
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: days
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A few days at a craft college puts you at a bench with a specialist tutor and proper tools, and you often go home with the bench, bowl or panel you made. You sleep and eat on site with the other
+    students, so the making carries on over dinner.
+  start:
+  - Choose the craft first, then look for a beginners' course of two to five days at a residential craft college.
+  - Check what the fee covers. Tuition, rooms, meals and materials are often priced separately.
+  - Book the room when you book the course, as some on-site rooms are limited.
+  links:
+  - label: 'West Dean College: short courses and accommodation (West Sussex)'
+    url: https://westdean.ac.uk/short-courses/accommodation
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Higham Hall: residential course brochure (Cumbria)'
+    url: https://highamhall.com/wp-content/uploads/2025/07/161579-Course-Brochure-April-25-to-March-26-WEB.pdf
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Penland School of Craft: workshop fees (North Carolina)'
+    url: https://penland.org/workshops/fees
+    region: us
+    checked: '2026-11-22'
+  - label: 'John C. Campbell Folk School: tuition, housing and meals (North Carolina)'
+    url: https://www.folkschool.org/folk-school-experience/housing-and-meals/
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Residential craft courses: weekend and week-long'
+  description: How residential craft courses at colleges such as West Dean, Higham Hall, Penland and the John C. Campbell Folk School work, and what they cost.
+  detail:
+  - h: How a residential craft course works
+    p:
+    - You arrive, eat dinner, and start work the next morning. At West Dean, teaching days run from 9.15am to 5pm, with dinner on arrival day and lunch each teaching day included; residential students also
+      get breakfast and dinner throughout. Higham Hall courses start with dinner at 6.30pm on the first day and end after lunch on the last.
+    - Beginners are catered for. West Dean's Simple furniture making for beginners is for people with no previous woodworking experience and ends with a small bench made from solid timber, with hand planes
+      and chisels provided.
+    - Materials are often extra. West Dean's timber costs around £95, paid to the tutor; at the Folk School and Arrowmont, check each class page for any materials fee or supply list.
+  - h: Craft colleges compared
+    table:
+      head:
+      - College
+      - What it teaches
+      - Length
+      - Cost (as last listed)
+      - Rooms on site
+      rows:
+      - - West Dean College, West Sussex
+        - Short craft courses, including furniture making for beginners
+        - Arrival day, full teaching days 9.15am to 5pm, departure day
+        - 'Simple furniture making for beginners: £599, plus about £95 timber; accommodation extra'
+        - Yes, in the main house, the Vicarage and annexes
+      - - Higham Hall, Cumbria
+        - Upholstery, stained glass, painting and other subjects
+        - Two to five nights
+        - 'Traditional Stained Glass, November 2025: £615 residential, £410 non-residential'
+        - Yes; lower fees for non-residents
+      - - Penland School of Craft, North Carolina
+        - Studio craft workshops, including hot glass
+        - Four-day short sessions to eight-week concentrations
+        - '4-day short session: $415 tuition at the work-scholarship rate (about 20 hours of work a week); room and all meals from $904'
+        - Yes, with double and single rooms
+      - - John C. Campbell Folk School, North Carolina
+        - Craft classes, including painting and drawing
+        - Weekend or week
+        - '2026: weekend $475, Sunday to Friday $730; housing and meals $210 (weekend) to $1,155 (Sunday to Saturday)'
+        - Yes, from dormitory rooms to single rooms with private bath
+    after: Penland's fees page lists spring rates without a year; check the current page before booking. The Folk School has published 2027 rates, with a three-night weekend at $650 and a week at $950 tuition.
+  faq:
+  - q: Do I need experience to go on a residential craft course?
+    a: No, if you pick a beginners' course. West Dean's beginners' furniture course is for people with no woodworking experience.
+  - q: Are meals included on a residential craft course?
+    a: Usually, for residents. West Dean includes breakfast and dinner for residential students and lunch for everyone, and Folk School housing rates include all meals in the dining hall.
+  - q: How much does a craft course at West Dean cost?
+    a: It depends on the course and room. Simple furniture making for beginners was listed at £599 with accommodation extra, with timber around £95 and the room charged separately.
+  - q: Can I stay off site and just take the class?
+    a: Yes, at several colleges. Higham Hall lists lower non-residential fees, and the Folk School and Penland sell meal plans for students staying off campus.
+  sources:
+  - label: West Dean College, Simple furniture making – beginners with Tom Kealy
+    url: https://www.westdean.ac.uk/short-courses/slw40270-simple-furniture-making-beginners
+    checked: '2026-11-22'
+  - label: West Dean College, Residential accommodation for short courses
+    url: https://westdean.ac.uk/short-courses/accommodation
+    checked: '2026-11-22'
+  - label: Higham Hall, Course brochure April 2025 to March 2026
+    url: https://highamhall.com/wp-content/uploads/2025/07/161579-Course-Brochure-April-25-to-March-26-WEB.pdf
+    checked: '2026-11-22'
+  - label: Penland School of Craft, Workshop Fees
+    url: https://penland.org/workshops/fees
+    checked: '2026-11-22'
+  - label: John C. Campbell Folk School, Tuition, Housing, and Meals
+    url: https://www.folkschool.org/folk-school-experience/housing-and-meals/
+    checked: '2026-11-22'
+  - label: 'Arrowmont, Wax and Vision: Building Your Encaustic Language'
+    url: https://arrowmont.org/workshop/wax-and-vision-building-your-encaustic-language
+    checked: '2026-11-22'
+  kit:
+  - name: Canvas work apron
+    why: keeps dust, glue and finish off your clothes
+    url: https://www.amazon.co.uk/s?k=canvas+work+apron
+  - name: Safety glasses
+    why: eye protection for workshop crafts
+    url: https://www.amazon.co.uk/s?k=safety+glasses+workshop
+  - name: Sketchbook
+    why: for notes and drawings of what the tutor shows you
+    url: https://www.amazon.co.uk/s?k=a5+sketchbook
+  related:
+  - learn-a-heritage-craft
+  - learn-woodworking
+  - try-blacksmithing
+  - weave-a-willow-basket
+- id: write-your-life-story
+  title: Write your memoir or life story
+  category: think
+  kind: project
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A memoir does not need to cover a whole life; one class asks students to write about a single moment or person that shaped them. A short course gives you prompts, a structure and readers, which is
+    often what turns scattered memories into finished chapters.
+  start:
+  - Try a free introduction first, such as OpenLearn's Writing what you know, to start writing from memory.
+  - Book a short memoir course, online or at a local college or library, to get feedback from a tutor and other students.
+  - Choose one moment or person to write about first, and set a weekly time to write.
+  links:
+  - label: 'City Lit: Life writing: getting started (online)'
+    url: https://www.citylit.ac.uk/courses/life-writing-getting-started/hw109-2526
+    region: uk
+    checked: '2026-11-22'
+  - label: 'OpenLearn: Writing what you know (free)'
+    url: https://www.open.edu/openlearn/history-the-arts/creative-writing/writing-what-you-know/content-section-0?intro=1
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Gotham Writers: Memoir Writing I (NYC, Zoom and online)'
+    url: https://wp.writingclasses.com/courses/memoir-writing-i/me1z4d26-10w-1
+    region: us
+    checked: '2026-11-22'
+  - label: 'Newberry Library: Write Your Memoir (Chicago)'
+    url: https://www.newberry.org/calendar/write-your-memoir
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Memoir writing courses: how to write your life story'
+  description: Ways to start writing your memoir or life story, from free online courses to memoir classes and residential life-writing courses in the UK and US.
+  detail:
+  - h: What a memoir course covers
+    p:
+    - Courses start with memory and move on to craft. Gotham Writers' Memoir Writing I runs through mining your memory, character, plot, description, dialogue, point of view and voice, setting and pacing,
+      theme and revision, then the business of publishing.
+    - Some keep the scope small on purpose. The Newberry Library's five-session Write Your Memoir in Chicago had students write about one moment or person from their past, covering structure, imagery, dialogue
+      and how to open and close.
+    - A free start is possible. OpenLearn's Writing what you know is about eight hours and uses memory, observation and the senses; it is framed around fiction, with sections such as Raiding your past,
+      but the techniques carry over.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - OpenLearn, Writing what you know
+        - Free online course, about 8 hours, introductory; free statement of participation
+        - Free
+      - - City Lit, London
+        - 'Life writing, getting started: two online evening sessions, introductory'
+        - £79, concession £40
+      - - Arvon, Hebden Bridge, Yorkshire
+        - 'Residential short course, Life Writing: Everyone has a story, 3 nights, all levels, fully catered (2023)'
+        - £590, limited concessions £413 (2023)
+      - - Gotham Writers, New York and online
+        - Memoir Writing I, 10 weeks, for beginners
+        - $490 in person in NYC; $464 on Zoom or online
+      - - Newberry Library, Chicago
+        - Write Your Memoir, 5 weekly evening sessions, in person (2025)
+        - $270, or $243 for members, seniors and students
+    after: Many public libraries run free memoir workshops; search your library's events calendar for "memoir" or "life writing".
+  faq:
+  - q: How do I start writing my life story?
+    a: Pick one moment or person rather than the whole of your life. The Newberry Library's memoir class takes this approach, and OpenLearn's free Writing what you know helps you write from memory.
+  - q: Are there free memoir writing courses?
+    a: Yes. OpenLearn's Writing what you know is free, takes about eight hours and gives a free statement of participation. Some public libraries also run free memoir workshops.
+  - q: Can I take a memoir writing class online?
+    a: Yes. City Lit's Life writing, getting started runs online over two evenings, and Gotham Writers runs Memoir Writing I on Zoom and as an online class.
+  - q: Do I need writing experience to join a memoir class?
+    a: No. City Lit's course is introductory and asks only for a good level of literacy, and Gotham's Memoir Writing I is for beginners.
+  sources:
+  - label: 'City Lit, Life writing: getting started'
+    url: https://www.citylit.ac.uk/courses/life-writing-getting-started/hw109-2526
+    checked: '2026-11-22'
+  - label: OpenLearn, Writing what you know
+    url: https://www.open.edu/openlearn/history-the-arts/creative-writing/writing-what-you-know/content-section-0?intro=1
+    checked: '2026-11-22'
+  - label: 'NAWE, Arvon Residential Short Course: Life Writing - Everyone has a story'
+    url: https://www.nawe.co.uk/DB/events/arvon-residential-short-course-life-writing-everyone-has-a-story-with-amy-liptrot-and-dan-richards.html
+    checked: '2026-11-22'
+  - label: Gotham Writers, Memoir Writing I
+    url: https://wp.writingclasses.com/courses/memoir-writing-i/me1z4d26-10w-1
+    checked: '2026-11-22'
+  - label: Newberry Library, Write Your Memoir
+    url: https://www.newberry.org/calendar/write-your-memoir
+    checked: '2026-11-22'
+  kit:
+  - name: Hardback notebook
+    why: for jotting memories as they come back
+    url: https://www.amazon.co.uk/s?k=hardback+a5+notebook
+  - name: Memoir prompt journal
+    why: questions to get each chapter started
+    url: https://www.amazon.co.uk/s?k=memoir+writing+prompts+journal
+  - name: Photo scanner
+    why: to copy old family photographs you are writing about
+    url: https://www.amazon.co.uk/s?k=photo+scanner
+  related:
+  - record-a-life-story
+  - take-a-creative-writing-course
+  - write-a-book
+  - finish-an-openlearn-course
+- id: read-at-a-poetry-open-mic
+  title: Read your own poem at an open mic night
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: An open mic gives you a few minutes and a live audience for a poem you wrote, with no audition and often no booking. Slots are usually three to five minutes, you sign up on the night, and entry runs
+    from free to about £8 or $10.
+  start:
+  - Find a poetry open mic near you through a listings site such as Write Out Loud in the UK, a library events calendar, or a venue such as the Poetry Café in London or the Nuyorican Poets Cafe in New York.
+  - Choose one poem that fits the slot (three minutes at the Poetry Society's open mic, five at one Los Angeles library) and read it aloud against a timer at home.
+  - Arrive when the doors open, as many open mics fill slots first come, first served, and put your name on the list.
+  links:
+  - label: 'Southbank Centre: Poetry Society open mic at the Poetry Café (London)'
+    url: https://www.southbankcentre.co.uk/venues/national-poetry-library/national-events/poetry-society-august-open-mic/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Write Out Loud: poetry venues directory (UK)'
+    url: https://writeoutloud.net/public/venues.php
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Nuyorican Poets Cafe: open mics (New York and online)'
+    url: https://www.nuyorican.org/openmics
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Poetry open mic nights: how to sign up and read'
+  description: How poetry open mic nights work, how sign-up and slot lengths work, what they cost in the UK and US, and how to find one near you.
+  detail:
+  - h: How an open mic works
+    p:
+    - Most poetry open mics work the same way. You put your name down on the night, wait to be called and read for a fixed time. At the Poetry Society's open mic at the Poetry Café in London, sign-up is
+      at the door only, slots are three minutes and are allotted first come, first served, so the organizers advise arriving when the doors open.
+    - Some nights add rules. The Poetry Society asked open mic readers to avoid graphic depictions of violent or traumatic events, and a Los Angeles Public Library open mic asked each poet to read an original
+      work. Many evenings also have a featured poet who reads a longer set.
+    - Finding one is mostly a matter of listings. Write Out Loud's UK directory lists about 4,375 venues, though it has no open mic filter, so open the event pages. In the US, the Academy of American Poets'
+      website has a Poetry Near You search by zip code, and library event calendars list free readings.
+  - h: Where to read
+    table:
+      head:
+      - Venue or organizer
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Poetry Society open mic, Poetry Café, 22 Betterton Street, London
+        - Sign up at the door from 7pm; three-minute slots, first come, first served; a headline poet (August 2025)
+        - £6 members, £8 non-members
+      - - Nuyorican Poets Cafe open mic at the Loisaida Center, New York
+        - Every Wednesday except the first of the month, 6:30pm; in person or livestreamed on YouTube
+        - $10 in person
+      - - Nuyorican Poets Cafe Online Open Mic
+        - RSVP opens every Wednesday for an 8pm ET livestream; all languages, mediums and themes welcome
+        - Free
+      - - Los Angeles Public Library, Eagle Rock branch
+        - Sign up on arrival; five minutes each to read an original work, with a featured poet (January 2026)
+        - Not listed
+    after: The Nuyorican also runs a Twilight Hour open mic straight after its Final Friday Slam on the last Friday of the month, with sign-up in person on the night.
+  faq:
+  - q: How long do you get at a poetry open mic?
+    a: Usually a few minutes. The Poetry Society's open mic gives three-minute slots, and a Los Angeles Public Library open mic gave each poet five minutes.
+  - q: Do you have to book an open mic slot in advance?
+    a: Often not. The Poetry Society open mic signs readers up at the door, first come, first served, and the Los Angeles library asked readers to sign up when they arrived.
+  - q: Can you go to a poetry open mic just to listen?
+    a: Yes. The Poetry Society sells a limited number of tickets on the door, and the Los Angeles library invited people to read or just enjoy listening.
+  - q: Are there online poetry open mics?
+    a: Yes. The Nuyorican Poets Cafe runs a free online open mic, with RSVP opening each Wednesday for an 8pm ET livestream.
+  sources:
+  - label: Southbank Centre, Poetry Society August open mic
+    url: https://www.southbankcentre.co.uk/venues/national-poetry-library/national-events/poetry-society-august-open-mic/
+    checked: '2026-11-22'
+  - label: Write Out Loud, Venues
+    url: https://writeoutloud.net/public/venues.php
+    checked: '2026-11-22'
+  - label: Nuyorican Poets Cafe, Nuyorican Open Mics
+    url: https://www.nuyorican.org/openmics
+    checked: '2026-11-22'
+  - label: Los Angeles Public Library, Open Mic Poetry (Eagle Rock)
+    url: https://lapl.org/whats-on/events/open-mic-poetry-0
+    checked: '2026-11-22'
+  - label: Academy of American Poets, Open Mic Poetry Night (Poetry Near You search)
+    url: https://poets.org/event/open-mic-poetry-night-1
+    checked: '2026-11-22'
+  kit:
+  - name: Pocket notebook
+    why: for drafting and carrying the poem you plan to read
+    url: https://www.amazon.co.uk/s?k=pocket+notebook
+  - name: Digital kitchen timer
+    why: for timing your reading against the slot length at home
+    url: https://www.amazon.co.uk/s?k=digital+kitchen+timer
+  related:
+  - take-a-poetry-workshop
+  - try-stand-up-comedy
+  - learn-oral-storytelling
+  - take-a-creative-writing-course
+- id: enter-a-short-story-competition
+  title: Enter a short story competition
+  category: think
+  kind: project
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: solo
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A short story competition gives you a word limit, a deadline and an anonymous reader who judges only the page. Entry fees run from about £9 to $35, and the Bridport, Bath and Writer's Digest competitions
+    accept entries from outside their home country.
+  start:
+  - Pick a competition from the organizer's own rules page, or filter Poets & Writers' contest database by genre and entry fee, and check the word limit and who can enter.
+  - Write or revise one unpublished story to fit the limit, and remember that some competitions count a blog post as publication.
+  - Remove your name from the story pages and file name, enter through the official site before the closing date, and keep a note of where each story is entered.
+  links:
+  - label: 'Bridport Prize: short story'
+    url: https://www.bridportprize.org.uk/the-competition/short-story
+    region: any
+    checked: '2026-11-22'
+  - label: 'Bath Short Story Award: rules'
+    url: https://bathshortstoryaward.org/rules
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Writer''s Digest: Annual Writing Competition'
+    url: https://www.writersdigest.com/writers-digest-competitions/annual-writing-competition
+    region: us
+    checked: '2026-11-22'
+  - label: 'Poets & Writers: writing contests, grants and awards database'
+    url: https://pw.org/grants
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Short story competitions: fees, word limits and rules'
+  description: Word limits, entry fees, prizes and rules for short story competitions in the UK, Ireland and the US, and how to prepare a story to enter.
+  detail:
+  - h: Competitions to know
+    table:
+      head:
+      - Competition
+      - Word limit
+      - Entry fee (as last listed)
+      - Prize (as last listed)
+      - Who can enter
+      rows:
+      - - Bridport Prize, Dorset (short story)
+        - 5,000
+        - £15
+        - £5,000 first, £1,000 second, £500 third, ten £100 highly commended
+        - Writers 16 and over worldwide; closing date listed as 31 May 2027
+      - - Bath Short Story Award
+        - 2,200
+        - £9 per story
+        - £1,200 first, £300 second, £100 third, plus a £50 local prize and the £100 Acorn Award for an unpublished writer
+        - Open to everyone 16 and over, nationally or internationally; stories in English; the 2026 award closed on 27 April 2026
+      - - Fish Short Story Prize, Co. Cork, Ireland
+        - 5,000
+        - €24 online, €16 for further entries
+        - €3,000 (€1,000 of it toward travel to the anthology launch) and a fiction workshop at the West Cork Literary Festival; top ten published in the Fish Anthology
+        - Accepts postal entries from outside Ireland; the 2025 prize closed on 10 December 2025
+      - - Writer's Digest Annual Writing Competition, US
+        - 4,000 (mainstream/literary and genre short story)
+        - $30 early bird, $35 regular, for the first manuscript
+        - $5,000 grand prize; $1,000 for first place in each category
+        - U.S. and non-U.S. residents, with some exclusions; deadline listed as June 1, 2027
+      - - BBC National Short Story Award with Cambridge University
+        - Not stated on the pages opened
+        - Not stated on the pages opened
+        - £15,000 to the winner, £600 to each of four other shortlisted authors
+        - British nationals or UK residents 18 and over with a prior record of publication in creative writing in the UK; the 2026 deadline was 16 March 2026
+    after: Poets & Writers keeps a database of the contests its magazine has listed in the past year, which you can filter by genre (including fiction) and by entry fee, from no fee to over $20, and sort
+      by deadline.
+  - h: Read the rules before you write
+    p:
+    - Unpublished means different things to different organizers. The Bridport Prize says a story posted on a blog counts as published and is not eligible. Writer's Digest says work published in print,
+      digital or online outlets does not qualify, but work self-published on a blog or social media does, and it will not consider AI-generated or AI-assisted work.
+    - Judging is usually anonymous, so your name must not appear on the story. Bath asks entrants to leave their name and any identifying details off every page; Writer's Digest wants only the category,
+      word count and title on the uploaded file, with nothing identifying in the file name; Bridport codes entries and matches them to names only after judging.
+    - 'Treat the word limit as a hard ceiling and check the other small print. Bath has a 2,200-word maximum and no minimum, and it accepts simultaneous submissions as long as you tell it by the beginning
+      of July if the story is taken elsewhere. Not every prize is open to everyone: the BBC National Short Story Award needs a prior UK publication record.'
+  faq:
+  - q: Can I enter a short story that I posted on my blog?
+    a: It depends on the competition. The Bridport Prize counts a blog post as publication, while Writer's Digest accepts work self-published on a blog or social media.
+  - q: Should I put my name on a competition entry?
+    a: No, not on the story itself. Bath, Fish and Writer's Digest judge anonymously and ask for your details only on the entry form or a separate sheet.
+  - q: Can I send the same story to more than one competition?
+    a: Some allow it. The Bath Short Story Award accepts simultaneous submissions but asks you to tell it by the beginning of July if the story is accepted elsewhere.
+  - q: Can anyone enter the BBC National Short Story Award?
+    a: No. It is for British nationals or UK residents aged 18 or over who already have a record of publication in creative writing in the UK.
+  sources:
+  - label: Bridport Prize, Short story
+    url: https://www.bridportprize.org.uk/the-competition/short-story
+    checked: '2026-11-22'
+  - label: Bath Short Story Award, Rules
+    url: https://bathshortstoryaward.org/rules
+    checked: '2026-11-22'
+  - label: Fish Publishing, Short Story Contest
+    url: https://fishpublishing.com/competition/short-story-contest/
+    checked: '2026-11-22'
+  - label: Writer's Digest, Annual Writing Competition
+    url: https://www.writersdigest.com/writers-digest-competitions/annual-writing-competition
+    checked: '2026-11-22'
+  - label: University of Cambridge, Submissions open for BBC Short Story Awards 2026
+    url: https://www.cam.ac.uk/news/submissions-open-for-bbc-short-story-awards-2026
+    checked: '2026-11-22'
+  - label: NAWE, The BBC National Short Story Awards 2026
+    url: https://www.nawe.co.uk/DB/jobs-and-opportunities/the-bbc-national-short-story-awards-2026.html
+    checked: '2026-11-22'
+  - label: Poets & Writers, Writing Contests, Grants & Awards
+    url: https://pw.org/grants
+    checked: '2026-11-22'
+  kit:
+  - name: Writers' and Artists' Yearbook
+    why: for finding UK publishers and magazines to send stories to
+    url: https://www.amazon.co.uk/s?k=writers+and+artists+yearbook
+  - name: Short story writing guide
+    why: for help with structure and revision before you enter
+    url: https://www.amazon.co.uk/s?k=how+to+write+short+stories+book
+  related:
+  - take-a-creative-writing-course
+  - write-a-book
+  - take-a-poetry-workshop
+  - join-a-book-club
+- id: go-to-a-bluegrass-festival
+  title: Go to a bluegrass festival
+  category: connect
+  kind: event
+  effort: gentle
+  cost: mid
+  time: days
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Bluegrass festivals run for three or four days, with stage shows by day and jam sessions in the campground, and several fold camping into the ticket. A full weekend at Didmarton in England was listed
+    from £95, and a four-day pass to California's Father's Day Festival at $280 with tent camping included.
+  start:
+  - Pick a festival and read its ticket page closely; Didmarton's weekend ticket and the California Bluegrass Association's full pass both include camping, while MerleFest sells RV parking separately.
+  - Book early if price matters. Didmarton's 2027 weekend ticket rises from £95 to £120 at the gate in stages through the year.
+  - Check the seating rules and pack a low chair or tarp where they allow it; at the Father's Day Festival the main stage is bring-your-own seating, while MerleFest also sells reserved seats at its Watson
+    Stage.
+  links:
+  - label: Didmarton Bluegrass Festival, tickets
+    url: https://didmarton-bluegrass.co.uk/?p=22
+    region: uk
+    checked: '2026-11-22'
+  - label: MerleFest, multi-day tickets (Wilkesboro, North Carolina)
+    url: https://merlefest.org/purchase
+    region: us
+    checked: '2026-11-22'
+  - label: California Bluegrass Association, Father's Day Festival tickets (Grass Valley)
+    url: https://californiabluegrass.org/cbaevent/fathers-day-festival/tickets/
+    region: us
+    checked: '2026-11-22'
+  - label: IBMA World of Bluegrass, about the festival (Chattanooga)
+    url: https://worldofbluegrass.org/festival/about/
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Bluegrass festivals UK and US: tickets, camping, jams'
+  description: What a bluegrass festival weekend involves, what Didmarton, MerleFest, Telluride and the Father's Day Festival charge, and how to join a jam politely.
+  detail:
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Festival
+      - When and format
+      - Cost (as last listed)
+      rows:
+      - - Didmarton Bluegrass Festival, England
+        - 3 to 5 September 2027; main stage, marquee, instrument workshops, gospel, old-time and jam sessions
+        - Weekend £95 super early bird to £120 at the gate, camping from Thursday included; day tickets £40 to £55; under-18s free with an adult
+      - - MerleFest, Wilkesboro, North Carolina
+        - Four days at Wilkes Community College in spring; 2027 backstage tours listed for Friday 30 April and Saturday 1 May
+        - 4-day general admission $267.50 ($288.90 at the gate); single days $101.65 to $117.70 in advance; Saturday Late Night Jam $69.55 extra
+      - - Father's Day Festival, Grass Valley, California (California Bluegrass Association)
+        - Thursday to Sunday at the Nevada County Fairgrounds, rain or shine
+        - 4-day adult pass $280 with tent camping and one car; day tickets $60 to $100; dry RV camping $125
+      - - Telluride Bluegrass Festival, Colorado
+        - Four days around the summer solstice; 18 to 21 June 2026
+        - Not listed on the official pages opened; camping is sold per person; four-day passes can be earned by volunteering about four four-hour shifts
+      - - IBMA World of Bluegrass, Chattanooga, Tennessee
+        - Business conference 20 to 24 October 2026, with IBMA Bluegrass Live! on 23 and 24 October
+        - Weekend pass price not given in the pages opened; Pickin' in the Park is free
+    after: Telluride's festival FAQ notes the site is close to 9,000 feet (2,700 m) up, that nights get chilly even after 90-degree days, and that the show goes ahead rain or shine.
+  - h: Joining a jam
+    p:
+    - Much of the playing at a bluegrass festival happens off stage. Didmarton lists jam and old-time sessions alongside its concerts, MerleFest ends its Saturday with a separately ticketed Late Night Jam,
+      and IBMA's free Pickin' in the Park in Chattanooga featured college bands and local musicians.
+    - Blue Ridge Music Trails, supported by the Blue Ridge National Heritage Area and the North Carolina Arts Council, publishes plain jam etiquette. Watch how a jam runs before you join, since some go
+      round the circle and others have a leader. Tune to the other players first. In bluegrass each player takes a short solo, or break, when the leader signals; in old-time music everyone plays the tune
+      together. If you lose your place, hang back and play quietly. The person who starts a tune ends it, and nobody wants you noodling between tunes.
+  faq:
+  - q: Is camping included in a bluegrass festival ticket?
+    a: Often, but not always. Didmarton's weekend ticket and the Father's Day Festival's full pass include camping; MerleFest sells RV parking separately and Telluride sells camping per person.
+  - q: Are there bluegrass festivals in the UK?
+    a: Yes. Didmarton Bluegrass Festival listed 3 to 5 September 2027, with weekend tickets from £95 including camping.
+  - q: Can I join a jam at a bluegrass festival if I am a beginner?
+    a: Yes, if you follow the etiquette. Blue Ridge Music Trails advises watching first, tuning to the group, playing quietly while you learn a tune and enjoying yourself.
+  - q: What should I bring to a bluegrass festival?
+    a: A low chair or tarp where the festival allows your own seating, and clothes for any weather. Telluride's FAQ calls sunscreen a must and warns the weather at altitude can change quickly.
+  sources:
+  - label: Didmarton Bluegrass Festival, Tickets 2027
+    url: https://didmarton-bluegrass.co.uk/?p=22
+    checked: '2026-11-22'
+  - label: Didmarton Bluegrass Festival, More information
+    url: https://didmarton-bluegrass.co.uk/?p=30
+    checked: '2026-11-22'
+  - label: MerleFest, Multi-day tickets
+    url: https://merlefest.org/purchase
+    checked: '2026-11-22'
+  - label: California Bluegrass Association, Father's Day Festival tickets
+    url: https://californiabluegrass.org/cbaevent/fathers-day-festival/tickets/
+    checked: '2026-11-22'
+  - label: Telluride Bluegrass Festival, Frequently asked questions
+    url: https://Bluegrass.com/telluride/festival-info/frequently-asked-questions
+    checked: '2026-11-22'
+  - label: Planet Bluegrass, 2026 on-sale info
+    url: https://bluegrass.com/planet/ticket-on-sale
+    checked: '2026-11-22'
+  - label: IBMA World of Bluegrass, About the festival
+    url: https://worldofbluegrass.org/festival/about/
+    checked: '2026-11-22'
+  - label: WUTC, Sierra Ferrell, Leftover Salmon to headline 2026 IBMA Bluegrass Live in Chattanooga
+    url: https://www.wutc.org/2026-07-13/sierra-ferrell-leftover-salmon-to-headline-2026-ibma-bluegrass-live-in-chattanooga
+    checked: '2026-11-22'
+  - label: Blue Ridge Music Trails, Jam session etiquette
+    url: https://www.blueridgemusicnc.com/?p=1145
+    checked: '2026-11-22'
+  kit:
+  - name: Low-back camping chair
+    why: seating where the festival has general-admission lawns
+    url: https://www.amazon.co.uk/s?k=low+back+festival+chair
+  - name: Clip-on tuner
+    why: a backup for tuning before you join a jam
+    url: https://www.amazon.co.uk/s?k=clip+on+instrument+tuner
+  - name: Groundsheet tarp
+    why: to sit on, and to mark your patch in front of a stage
+    url: https://www.amazon.co.uk/s?k=waterproof+picnic+tarp
+  related:
+  - go-to-a-folk-festival
+  - learn-the-banjo
+  - go-to-the-grand-ole-opry
+  - learn-the-violin
+- id: exhibit-at-a-juried-craft-show
+  title: Get your work into a juried craft show
+  category: earn
+  kind: project
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: At a selected craft festival a panel chooses the makers from photographs, so the application is the first sale you have to make. Craft Festival Bovey Tracey charges £15 plus VAT to apply, and the
+    American Craft Council's St. Paul show charged $15 to apply and $300 for a booth.
+  start:
+  - Photograph five or six of your strongest pieces well; both Bovey Tracey and the American Craft Council judge mainly on images.
+  - Note the deadlines, which fall months ahead; applications for Bovey Tracey's June 2027 festival close on 27 November 2026, and StartUp on 29 January 2027.
+  - Read the tax pages before you sell, and keep records of sales and costs from the first show.
+  links:
+  - label: Craft Festival (Bovey Tracey and Cardigan), apply
+    url: https://craftfestival.co.uk/apply
+    region: uk
+    checked: '2026-11-22'
+  - label: GOV.UK, increasing the trading allowance (policy paper)
+    url: https://www.gov.uk/government/publications/income-tax-increasing-the-trading-allowance/increasing-the-trading-allowance
+    region: uk
+    checked: '2026-11-22'
+  - label: American Craft Council, American Craft Fest St. Paul 2026 application
+    url: https://craftcouncil.org/2026-american-craft-fest-st-paul-application/
+    region: us
+    checked: '2026-11-22'
+  - label: IRS, is that activity just a hobby or a business?
+    url: https://www.irs.gov/newsroom/is-that-activity-just-a-hobby-or-a-business
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'How to get into a juried craft show: fees, jury, tax'
+  description: How selected craft shows in the UK and US choose makers, what they charge, and the UK trading allowance and IRS hobby rules, as general information.
+  detail:
+  - h: How selection works and what it costs
+    p:
+    - A juried or selected show is different from a market where anyone can book a pitch. At Craft Festival, which runs shows at Bovey Tracey in Devon and at Cardigan Castle in Wales, an expert panel looks
+      at six images per application, and the organizers say image quality strongly affects selection. The application fee is not refundable. StartUp, with its own £5 application fee, is for makers in their
+      first two years of business, and the organizers say a maker can take part only once.
+    - The American Craft Council's St. Paul show used a staff jury that scored each maker from 1 to 7 on three things, imagery and originality, craftsmanship, and presentation. It asked for five images
+      of work, encouraged a booth photo, and asked for an artist statement of up to 600 characters. Work had to be small-studio production made under the applicant's direct supervision.
+    table:
+      head:
+      - Show
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Craft Festival Bovey Tracey, Devon
+        - Selected show, 11 to 13 June 2027; main sections and StartUp
+        - Application £15 plus VAT (StartUp £5); stand fees given only on the application form
+      - - Craft Festival Wales, Cardigan Castle
+        - Selected show, 10 to 12 September 2027; applications open in January
+        - Application £15 plus VAT (StartUp £5)
+      - - American Craft Fest St. Paul, Minnesota (American Craft Council)
+        - Juried show for early-career artists, 13 and 14 June 2026, Union Depot; free entry for visitors
+        - Application $15; 10 ft by 5 ft booth $300, including a six-foot table and two chairs; displays, cords and parking extra, power not guaranteed
+    after: Neither the Craft Festival apply pages nor the St. Paul application page opened for this guide mentioned insurance; ask the organizer what cover it requires before you pay for a stand.
+  - h: Tax, in general terms
+    p:
+    - This is general information, not tax advice. In the UK, GOV.UK describes the trading allowance as a tax exemption of up to £1,000 a year for individuals with trading income, and says that if your
+      gross trading income is over £1,000 you must register for Self Assessment by 5 October after the tax year. A policy paper published on 28 October 2026 proposes raising the allowance, and the Self
+      Assessment reporting threshold, to £3,000 from 6 April 2027, through the Finance Bill 2026-27. It is not yet law.
+    - In the US, the IRS lists eight questions for telling a hobby from a business, including whether you intend to make a profit, keep complete and accurate books, and change how you work to improve profitability.
+      It says no single factor decides it. Payments for goods through payment apps may generate a Form 1099-K, and the IRS says such payments are taxable income that must be reported.
+  faq:
+  - q: What is a juried craft show?
+    a: A show where a panel or staff jury chooses the exhibitors, usually from photographs of their work. The American Craft Council's St. Paul jury scored originality, craftsmanship and presentation.
+  - q: How much does it cost to apply to a craft show?
+    a: As last listed, Craft Festival Bovey Tracey charged £15 plus VAT to apply (£5 for StartUp), and the American Craft Council's St. Paul show $15, with a $300 booth on top if selected.
+  - q: Do I have to pay tax on craft fair sales in the UK?
+    a: GOV.UK describes a trading allowance of up to £1,000 a year, proposed to rise to £3,000 from 6 April 2027. Whether your sales count as trading is a question for HMRC or a tax adviser.
+  - q: Is selling crafts a hobby or a business for the IRS?
+    a: It depends on the facts. The IRS lists eight factors, such as profit motive and record keeping, and says no single factor decides it.
+  sources:
+  - label: Craft Festival, Apply
+    url: https://craftfestival.co.uk/apply
+    checked: '2026-11-22'
+  - label: Craft Festival, Apply FAQ
+    url: https://craftfestival.co.uk/apply-faq/
+    checked: '2026-11-22'
+  - label: American Craft Council, 2026 American Craft Fest St. Paul application
+    url: https://craftcouncil.org/2026-american-craft-fest-st-paul-application/
+    checked: '2026-11-22'
+  - label: GOV.UK, Tax-free allowances on property and trading income
+    url: https://gov.uk/guidance/tax-free-allowances-on-property-and-trading-income
+    checked: '2026-11-22'
+  - label: GOV.UK, Increasing the trading allowance (published 28 October 2026)
+    url: https://www.gov.uk/government/publications/income-tax-increasing-the-trading-allowance/increasing-the-trading-allowance
+    checked: '2026-11-22'
+  - label: IRS Tax Tip 2026-45, Is that activity just a hobby or a business?
+    url: https://www.irs.gov/newsroom/is-that-activity-just-a-hobby-or-a-business
+    checked: '2026-11-22'
+  kit:
+  - name: Lightbox photo tent
+    why: for even, plain-background photographs of work for an application
+    url: https://www.amazon.co.uk/s?k=photo+light+box+tent
+  - name: Portable display shelves
+    why: to raise work to eye level in a booth that comes empty
+    url: https://www.amazon.co.uk/s?k=folding+display+shelves+craft+fair
+  - name: Receipt book
+    why: a paper record of each sale for your accounts
+    url: https://www.amazon.co.uk/s?k=duplicate+receipt+book
+  related:
+  - sell-at-a-craft-fair
+  - start-a-small-business
+  - learn-a-heritage-craft
+  - try-pottery-on-the-wheel
+- id: visit-jorvik-viking-centre
+  title: Ride through Viking-age York at the Jorvik Viking Centre
+  category: travel
+  kind: experience
+  groups:
+  - history
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  places:
+  - yorkshire
+  why: The Jorvik Viking Centre stands on the spot in Coppergate, York, where archaeologists dug from 1976 and found well-preserved Viking-age timbers, five tonnes of animal bones and 20,000 objects. You
+    ride in a small capsule through a reconstruction of the same street in 975 AD, smells included, then see the finds and real timbers from the site.
+  start:
+  - Pre-book a time slot online or by phone, and arrive on time; the centre says late arrivals cannot be admitted, though staff may move you to a free slot.
+  - Allow about an hour, and go in winter or after 2pm on most days if you want it quieter.
+  - 'Keep your ticket: it is valid for a year with unlimited returns, and the Pastport adds Barley Hall and DIG nearby.'
+  links:
+  - label: 'Jorvik Viking Centre: plan your visit'
+    url: https://www.jorvikvikingcentre.co.uk/visit/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Jorvik Viking Centre: access'
+    url: https://www.jorvikvikingcentre.co.uk/visit/access/
+    region: uk
+    checked: '2026-11-22'
+  - label: Jorvik Viking Festival
+    url: https://jorvikvikingfestival.co.uk
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Parks Canada: L''Anse aux Meadows National Historic Site, Newfoundland (Canada)'
+    url: https://parks.canada.ca/lhn-nhs/nl/meadows/visit
+    region: any
+    checked: '2026-11-22'
+  seo_title: 'Jorvik Viking Centre, York: tickets, ride and festival'
+  description: What the Jorvik Viking Centre ride in York is like, what the Coppergate dig found, ticket prices as last listed, access and the Jorvik Viking Festival.
+  detail:
+  - h: What it's really like
+    p:
+    - The visit centers on a ride. A ride carries you through a reconstruction of Viking-age Coppergate set in 975 AD. Jorvik was the first museum to add smells to its re-creation. Expect the whole visit
+      to take about an hour. For fire safety, only one wheelchair user can be inside at a time, so ask when you book.
+    - It sits on the dig itself. Archaeologists found Viking-age timbers under the site of Craven's sweet factory in 1976, and the excavation ran for five years over about 10,800 square feet (1,000 square
+      meters). It recorded 40,000 archaeological contexts and turned up five tonnes of animal bones, large quantities of oyster shells and 20,000 objects. Real timbers from the site are on show.
+    - Jorvik opened on 14 April 1984. The Boxing Day floods of 2015 damaged it after the Foss Barrier failed, though staff had already moved the artifacts to safety, and the rebuilt attraction reopened
+      on 14 April 2017. The current time capsules replaced the original Time Cars, which made their last run in October 2020.
+    - Access is step-free, with a lift from admissions to the start of the visit. One capsule has a space for a wheelchair; large electric chairs may struggle to board, a manual chair is available to transfer
+      to, and wheelchair users must pre-book by phone or email. Carers go free, and there are hearing loops and sensory packs.
+  - h: Ways to visit
+    table:
+      head:
+      - Option
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - Jorvik Viking Centre ticket
+        - The ride and galleries, about an hour; valid for a year with unlimited returns
+        - Adult £16.50, concession £13.25, child £11, family of four £46 (the official page dates these prices to 1 March 2024)
+      - - Pastport
+        - Entry to the Jorvik Viking Centre, Barley Hall and DIG
+        - Adult £25, student £21.50, child (5-16) £19, family of four £72
+      - - Jorvik Viking Festival, York
+        - Living history encampments, talks, crafts, combat displays, a march to Coppergate and a candlelit feast; some events free
+        - Back in 2027; tickets not yet on sale, and prices not listed
+    after: Under-fives and carers go free. Family tickets cover no more than two adults.
+  faq:
+  - q: How long does the Jorvik Viking Centre take?
+    a: The centre says to expect about an hour.
+  - q: Do you need to book Jorvik in advance?
+    a: Pre-booking online or by phone is advised, and you need to arrive on time for your slot. Wheelchair users must pre-book by phone or email.
+  - q: Is a Jorvik ticket valid for a year?
+    a: Yes. The centre says tickets are valid for one year and allow unlimited returns and re-entries.
+  - q: When is the Jorvik Viking Festival 2027?
+    a: The festival says it will be back in 2027 but had not published exact dates or put tickets on sale when we checked.
+  sources:
+  - label: Jorvik Viking Centre, Visit
+    url: https://www.jorvikvikingcentre.co.uk/visit/
+    checked: '2026-11-22'
+  - label: Jorvik Viking Centre, Access
+    url: https://www.jorvikvikingcentre.co.uk/visit/access/
+    checked: '2026-11-22'
+  - label: Jorvik Viking Centre, JORVIK turns 40!
+    url: https://www.jorvikvikingcentre.co.uk/2024/04/11/jorvik-turns-40/
+    checked: '2026-11-22'
+  - label: Barley Hall, Opening hours and prices (Pastport)
+    url: https://www.barleyhall.co.uk/visit/opening-hours-prices/
+    checked: '2026-11-22'
+  - label: Jorvik Viking Festival
+    url: https://jorvikvikingfestival.co.uk
+    checked: '2026-11-22'
+  - label: Parks Canada, L'Anse aux Meadows National Historic Site, Plan your visit
+    url: https://parks.canada.ca/lhn-nhs/nl/meadows/visit
+    checked: '2026-11-22'
+  kit:
+  - name: Viking York guidebook
+    why: background on Jorvik and the Coppergate finds before or after the ride
+    url: https://www.amazon.co.uk/s?k=viking+york+jorvik+book
+  - name: York city map
+    why: finding Coppergate, Barley Hall and DIG on foot
+    url: https://www.amazon.co.uk/s?k=york+city+map
+  related:
+  - join-an-archaeology-dig
+  - visit-heritage-open-days
+  - walk-hadrians-wall-path
+  - unesco-world-heritage-site
+- id: visit-the-viking-ship-museum-in-roskilde
+  title: Row and sail on Roskilde Fjord at the Viking Ship Museum
+  category: travel
+  kind: experience
+  groups:
+  - history
+  effort: moderate
+  cost: low
+  time: afternoon
+  setting: either
+  company: others
+  regions:
+  - world
+  places:
+  - DNK
+  season: May to September
+  why: The Viking Ship Museum in Roskilde, Denmark, shows five Viking-age ships, about a thousand years old, that were filled with stones and sunk across a channel in Roskilde Fjord, then dug out of the
+    fjord bed from 1962. In summer you can join the crew of a traditional wooden boat on the fjord, rowing and setting sail with an instructor, and watch boatbuilders at work with copies of Viking-age tools.
+  start:
+  - Check the museum's daily summer sailing page during the winter, when it publishes the coming season's program, and buy your sailing ticket online; it is sold only online.
+  - Wear practical, waterproof clothing and check the forecast; trips can be cancelled for safety or if too few people book.
+  - Leave time for the Viking Ship Hall and the boatyard, which is open every day in summer and on weekdays only in winter.
+  links:
+  - label: 'Viking Ship Museum: daily summer sailing trips'
+    url: https://www.vikingeskibsmuseet.dk/en/visit-the-museum/activities/boat-trips/daily-summer-sailing-trips
+    region: any
+    checked: '2026-11-22'
+  - label: 'Viking Ship Museum: opening hours and admission'
+    url: https://www.vikingeskibsmuseet.dk/en/visit-the-museum/opening-hours-and-admission
+    region: any
+    checked: '2026-11-22'
+  - label: 'Viking Ship Museum: sailing a Viking ship (groups)'
+    url: https://www.vikingeskibsmuseet.dk/en/buy/boat-trips/sailing-a-viking-ship
+    region: any
+    checked: '2026-11-22'
+  seo_title: 'Viking Ship Museum Roskilde: sailing trips and tickets'
+  description: How to row and sail on Roskilde Fjord at Denmark's Viking Ship Museum, what the five Skuldelev ships are, the boatyard, and prices as last listed.
+  detail:
+  - h: What it's really like
+    p:
+    - The museum's centerpiece is five ships found in Roskilde Fjord, known as Skuldelev 1, 2, 3, 5 and 6. They were an ocean-going cargo ship, a great longship, a coastal trader, a small longship and a
+      fishing boat. Timber from Skuldelev 2 dates to around 1042. Excavation began in July 1962 inside a cofferdam enclosing about 26,900 square feet (2,500 square meters) of the fjord, with the water lowered
+      slowly and sprinklers keeping the soft wood wet.
+    - The museum has built full-size reconstructions of all five, including Ottar (Skuldelev 1), the Sea Stallion from Glendalough (Skuldelev 2) and Helge Ask (Skuldelev 5). In summer they are moored in
+      the museum harbor beside traditional wooden boats. At the boatyard you can watch boatbuilders use copies of Viking-age tools and smell the tar and split timber.
+    - The daily summer trips last about an hour, including a life jacket briefing and an introduction to the boat and to rowing. You are part of the crew, rowing and setting sail if the weather allows,
+      with an experienced instructor. These trips use traditional Nordic wooden boats, which the museum describes as descendants of the Viking ships. Sailing on one of the reconstructed Viking ships themselves
+      is booked for groups, or on a full-day course.
+  - h: Ways to visit
+    table:
+      head:
+      - Option
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Museum admission
+        - Viking Ship Hall, DocuLab and boatyard
+        - Adult 170 DKK in summer (1 May to 24 October), 130 DKK in winter; children 0-17 free; 10 DKK off online
+      - - Daily summer sailing trip
+        - About an hour in a traditional wooden boat, 1 May to 30 September; online tickets only; children under 4 cannot go
+        - 295 DKK adult, 140 DKK child (4-17), including museum admission (2026 prices)
+      - - Group trip on a Viking ship
+        - About 2 hours on Roskilde Fjord; minimum 8 paying adults; longer trips with a shore stop possible
+        - 580 DKK per adult, plus 125 DKK per extra hour
+      - - Helge Ask charter
+        - Small longship with a dragon head, up to 20 people, 2 hours
+        - 12,000 DKK, plus 2,500 DKK per extra hour
+      - - Learn to sail a Viking ship
+        - Full-day course on Kraka Fyr or Helge Ask
+        - Price not listed
+    after: The 2026 daily trips have ended; the museum says it will publish the 2027 program during the winter. Visitors with a free-entry card such as the Copenhagen Card buy a supplementary sailing ticket.
+  faq:
+  - q: Can you sail a Viking ship in Roskilde?
+    a: Yes, from 1 May to 30 September. Daily trips use traditional Nordic wooden boats; the reconstructed Viking ships sail with booked groups of at least eight adults or on a full-day course.
+  - q: How much is the Viking Ship Museum sailing trip?
+    a: In 2026 it was 295 DKK for adults and 140 DKK for children aged 4 to 17, including museum admission.
+  - q: Do you have to row on the Roskilde sailing trip?
+    a: You are part of the crew and help row and set sail, weather permitting. Children aged 4 to 14 and others who cannot row have a limited number of seats.
+  - q: What are the Skuldelev ships?
+    a: Five Viking-age ships deliberately sunk across a channel in Roskilde Fjord and excavated from 1962. They are on show in the Viking Ship Hall in Roskilde.
+  sources:
+  - label: Viking Ship Museum, Daily summer sailing trips
+    url: https://www.vikingeskibsmuseet.dk/en/visit-the-museum/activities/boat-trips/daily-summer-sailing-trips
+    checked: '2026-11-22'
+  - label: Viking Ship Museum, Sailing trips on Roskilde Fjord
+    url: https://www.vikingeskibsmuseet.dk/en/visit-the-museum/activities/boat-trips
+    checked: '2026-11-22'
+  - label: Viking Ship Museum, Go sailing in a Viking ship
+    url: https://www.vikingeskibsmuseet.dk/en/buy/boat-trips/sailing-a-viking-ship
+    checked: '2026-11-22'
+  - label: Viking Ship Museum, Opening hours and admission prices
+    url: https://www.vikingeskibsmuseet.dk/en/visit-the-museum/opening-hours-and-admission
+    checked: '2026-11-22'
+  - label: Viking Ship Museum, The excavation
+    url: https://www.vikingeskibsmuseet.dk/en/visit-the-museum/exhibitions/the-five-viking-ships/the-excavation
+    checked: '2026-11-22'
+  - label: Viking Ship Museum, The five reconstructions
+    url: https://www.vikingeskibsmuseet.dk/en/visit-the-museum/exhibitions/the-five-reconstructions
+    checked: '2026-11-22'
+  kit:
+  - name: Waterproof jacket
+    why: the museum warns it is colder and wetter on the water when it is windy
+    url: https://www.amazon.co.uk/s?k=waterproof+jacket+packable
+  - name: Sailing gloves
+    why: protecting your hands on the oars and ropes
+    url: https://www.amazon.co.uk/s?k=sailing+gloves
+  related:
+  - sail-on-a-tall-ship
+  - learn-to-row
+  - try-gig-rowing
+  - sail-the-norwegian-coast-on-the-hurtigruten
+- id: volunteer-at-lambing
+  title: Help out on a farm at lambing time
+  category: explore
+  kind: experience
+  groups:
+  - animals
+  - volunteering
+  effort: demanding
+  cost: low
+  time: days
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  season: Spring
+  why: Lambing is the few weeks each spring when a sheep farm needs every pair of hands, for feeding, bedding, checking ewes and helping with twin and triplet births. You can volunteer for a week on a farm,
+    take a one-day lambing course at an agricultural college, or join a farm's regular livestock volunteers.
+  start:
+  - Start looking in winter; in 2021 one Welsh farm advertised before Christmas for lambing volunteers in early March.
+  - If you have never handled sheep, book a one-day course first, such as Plumpton College's or SRUC's, or a US lambing workshop through a university extension service.
+  - Ask the farm about hours, food and somewhere to stay, and do not take part if you are pregnant.
+  links:
+  - label: 'Plumpton College: lambing practical one-day course'
+    url: https://www.plumpton.ac.uk/courses/lambing-practical-one-day-course-60
+    region: uk
+    checked: '2026-11-22'
+  - label: 'SRUC: lambing course (Barony)'
+    url: https://www.sruc.ac.uk/short-courses-and-professional-development/lambing/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Slade Farm Organics, Vale of Glamorgan: farm volunteering'
+    url: https://sladefarmorganics.com/farm-volunteering
+    region: uk
+    checked: '2026-11-22'
+  - label: 'University of Wisconsin Extension: sheep lambing workshop at Four Winds Farm'
+    url: https://livestock.extension.wisc.edu/2026/01/21/four-winds-farm-to-host-hands-on-lambing-school-in-fitchburg-on-march-28
+    region: us
+    checked: '2026-11-22'
+  - label: 'UC Hopland Research and Extension Center, California: Lambing School'
+    url: https://www.ucanr.edu/rec/hopland-research-and-extension-center/event/lambschool26
+    region: us
+    checked: '2026-11-22'
+  seo_title: Lambing volunteer and lambing courses for beginners
+  description: How to help at lambing time in the UK and US, from a week volunteering on a sheep farm to one-day lambing courses, with costs as last listed.
+  safety: UK health guidance says anyone who is pregnant should not help to lamb ewes or touch newborn lambs, afterbirth, or clothing and boots that have been near them, because of an infection that can
+    cause miscarriage.
+  detail:
+  - h: What it's really like
+    p:
+    - Expect long days. A volunteer at Slade Farm Organics in the Vale of Glamorgan described seven days a week, 7.30am to 5pm with a lunch break, and later when lambing ran on. Volunteers there helped
+      with twin and triplet births and hand-reared pet lambs; stays lasted about a week.
+    - A course is a gentler first step. Plumpton College's one-day practical covers preparing for lambing, the signs of lambing and care of the newborn lamb. The Wisconsin workshop at Four Winds Farm covers
+      when to step in and has hands-on practice pulling lambs from a life-size ewe replica, with a chance to see live lambing on the farm.
+    - Regular farm volunteering is another way in. At the National Trust's Park Farm on the Shugborough Estate in Staffordshire, volunteers check Southdown sheep and Longhorn cattle and help get ready for
+      lambing.
+    - WWOOF is how volunteer farm stays work in many countries. You join each country's organization separately and pay its membership fee before you can contact hosts. Hosts provide free room and board;
+      one WWOOF-USA host asked for four hours' work a day.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Slade Farm Organics, Vale of Glamorgan
+        - Lambing volunteers in early March; contact the farm by email
+        - Not stated
+      - - Plumpton College
+        - One-day lambing practical, 9am to 4pm (19 March in 2026); minimum age 16
+        - £125
+      - - SRUC, Barony
+        - One-day lambing course for people with limited experience of sheep
+        - £100
+      - - Four Winds Farm, Fitchburg, Wisconsin (UW Extension)
+        - Full-day sheep lambing workshop (28 March in 2026), lunch included
+        - $45
+      - - UC Hopland Research and Extension Center, California
+        - Three-day lambing school, about 16 hours (January in 2026); full for 2026
+        - $190 to $250, sliding scale
+    after: The Hopland school asks participants to wear cleanable rubber boots and coveralls and provides masks and gloves for hands-on work.
+  faq:
+  - q: Can I volunteer to help with lambing?
+    a: Yes, some farms ask for volunteers each spring. Slade Farm Organics in Wales advertised in 2021, before Christmas, for lambing in early March, and volunteers stayed about a week.
+  - q: Is there a lambing course for beginners?
+    a: Yes. Plumpton College and SRUC both run one-day lambing courses, listed at £125 and £100, and US university extension services run lambing workshops.
+  - q: Can pregnant women help with lambing?
+    a: No. UK health guidance says pregnant women should not help to lamb or milk ewes, and should avoid newborn lambs, afterbirth and clothing that has touched ewes or lambs.
+  - q: How does WWOOF work?
+    a: You join the WWOOF organization of the country you want to visit and pay its membership fee, then contact hosts, who give free room and board in return for help on the farm.
+  sources:
+  - label: 'UKHSA, Chlamydia abortus: epidemiology, transmission and prevention'
+    url: https://www.gov.uk/guidance/chlamydophila-abortus
+    checked: '2026-11-22'
+  - label: Plumpton College, Lambing practical one-day course
+    url: https://www.plumpton.ac.uk/courses/lambing-practical-one-day-course-60
+    checked: '2026-11-22'
+  - label: SRUC, Lambing course
+    url: https://www.sruc.ac.uk/short-courses-and-professional-development/lambing/
+    checked: '2026-11-22'
+  - label: Slade Farm Organics, Farm volunteering
+    url: https://sladefarmorganics.com/farm-volunteering
+    checked: '2026-11-22'
+  - label: University of Wisconsin Extension, Four Winds Farm to host hands-on lambing school in Fitchburg
+    url: https://livestock.extension.wisc.edu/2026/01/21/four-winds-farm-to-host-hands-on-lambing-school-in-fitchburg-on-march-28
+    checked: '2026-11-22'
+  - label: UC Hopland Research and Extension Center, Lambing School
+    url: https://www.ucanr.edu/rec/hopland-research-and-extension-center/event/lambschool26
+    checked: '2026-11-22'
+  - label: Farmers Guardian, How a network of volunteers is helping to keep rural organisations ticking
+    url: https://www.farmersguardian.com/news/4093809/network-volunteers-helping-rural-organisations-ticking
+    checked: '2026-11-22'
+  - label: WWOOF help center, How do I become a WWOOFer
+    url: https://help.wwoof.net/hc/en-us/articles/16654291361309-How-do-I-become-a-WWOOFer
+    checked: '2026-11-22'
+  - label: 'WWOOF-USA, Front Porch News: What is WWOOFing?'
+    url: https://info.wwoofusa.org/blog/2023/08/16/front-porch-news-what-is-wwoofing/
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: John Darby, Park Farm, Shugborough Estate, Staffordshire
+    line: Volunteers three times a week at the National Trust's Park Farm, checking Southdown sheep and Longhorn cattle, tending pigs and clearing frozen water troughs.
+    title: How a network of volunteers is helping to keep rural organisations ticking
+    outlet: Farmers Guardian
+    url: https://www.farmersguardian.com/news/4093809/network-volunteers-helping-rural-organisations-ticking
+    checked: '2026-11-22'
+  kit:
+  - name: Wellington boots
+    why: lambing sheds are wet and muddy, and boots can be washed down
+    url: https://www.amazon.co.uk/s?k=wellington+boots
+  - name: Disposable gloves
+    why: hands-on work with ewes and newborn lambs
+    url: https://www.amazon.co.uk/s?k=disposable+nitrile+gloves
+  - name: Waterproof overtrousers
+    why: kneeling in straw and working outside in spring weather
+    url: https://www.amazon.co.uk/s?k=waterproof+overtrousers
+  related:
+  - spend-a-day-on-a-working-farm
+  - watch-a-sheepdog-trial
+  - volunteer-national-trust
+  - wildlife-trust-volunteer

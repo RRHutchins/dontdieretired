@@ -248,7 +248,7 @@ guidance:
     applies: [multiday]
     use: advice
     text: On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days.
-    for: [bmc-long-distance, wanderlust-trek-prep]
+    for: [bmc-long-distance, wanderlust-trek-prep, ldwa-body-prep]
   - id: multiday-heat
     topic: on the day
     applies: [multiday]
@@ -266,7 +266,7 @@ guidance:
     applies: [multiday, walking]
     use: rule
     text: Build your training walks from a few miles up to a full day's distance, carrying the pack you will use.
-    for: [wanderlust-trek-prep, bmc-hill-fit]
+    for: [wanderlust-trek-prep, bmc-hill-fit, csj-camino-training, apoc-prepare-camino]
 
   # ---------- altitude ----------
   - id: altitude-ascent-rate
