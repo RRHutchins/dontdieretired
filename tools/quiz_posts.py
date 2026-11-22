@@ -30,8 +30,12 @@ def live_books():
     return ok if len(ok) == len(qb) and ok else []
 
 
+def data():
+    return yaml.safe_load((ROOT / "content" / "quiz_posts.yaml").read_text(encoding="utf-8")) or {}
+
+
 def load():
-    return (yaml.safe_load((ROOT / "content" / "quiz_posts.yaml").read_text(encoding="utf-8")) or {}).get("posts") or []
+    return data().get("posts") or []
 
 
 def check():
@@ -73,8 +77,16 @@ def draw_all(dist):
     n = 0
     for p in load():
         kicker = "Christmas quiz: can you answer this?" if p.get("question") else "The Christmas Quiz Book, on Amazon"
-        bp.card(cov, p["card"], kicker, (1080, 1080), dist / "static" / "social" / f"{p['slug']}.png")
-        bp.card(fan, p["card"], kicker, (1200, 675), dist / "static" / "img" / f"{p['slug']}.png")
+        ph = bp.photo_for(data(), p["date"])
+        if p.get("compare"):
+            for sz, sub in (((1080, 1080), "social"), ((1200, 675), "img")):
+                bp.compare_card(ROOT / p["compare"][0], ROOT / p["compare"][1], p["card"], sz, dist / "static" / sub / f"{p['slug']}.png")
+        elif ph:
+            bp.photo_card(ph, p["card"], kicker, (1080, 1080), dist / "static" / "social" / f"{p['slug']}.png")
+            bp.photo_card(ph, p["card"], kicker, (1200, 675), dist / "static" / "img" / f"{p['slug']}.png")
+        else:
+            bp.card(cov, p["card"], kicker, (1080, 1080), dist / "static" / "social" / f"{p['slug']}.png")
+            bp.card(fan, p["card"], kicker, (1200, 675), dist / "static" / "img" / f"{p['slug']}.png")
         n += 1
     return n
 
@@ -102,7 +114,8 @@ def write_packs():
         meta = {
             "title": p["card"], "url": PAGE, "date": p["date"], "category": "think", "kind": "book", "slot": "20:00", "fb_image": True,
             "tags": ["quiz", "quiz-book", "christmas"],
-            "alt": "The covers of the UK and American editions of The Don't Die Retired Christmas Quiz Book, beside the words: " + p["card"],
+            "alt": p.get("alt") or (bp.PHOTO_ALT if bp.photo_for(data(), p["date"]) else
+                    "The covers of the UK and American editions of The Don't Die Retired Christmas Quiz Book, beside the words: ") + p["card"],
             "posts": {
                 "facebook": f"{body}\n\nSee it → {utm('facebook')}",
                 "instagram": f"{body}\n\nLink in our bio (dontdieretired.com/puzzle-books).\n\n{HASHTAGS}",

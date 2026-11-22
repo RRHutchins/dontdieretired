@@ -92,6 +92,79 @@ def card(cover, headline, kicker, size, out):
     img.save(out, optimize=True)
 
 
+PHOTO_CREDIT = "Photo: Don't Die Retired"
+PHOTO_ALT = ("Printed copies of The Don't Die Retired Christmas Puzzle Book and the UK and American editions of the "
+             "Christmas Quiz Book on a wooden table, beside the words: ")
+
+
+def photo_for(data, date):
+    """Robin's own photo of the printed books (sent 22 Nov 2026), for posts dated on or after `photo_from`.
+    Earlier posts keep the cover card: a sent post is never changed."""
+    if data.get("photo") and str(date) >= str(data.get("photo_from") or "9999"):
+        return ROOT / data["photo"]
+    return None
+
+
+def photo_card(photo, headline, kicker, size, out):
+    """Our own photograph of the books on one side, cropped to fill; kicker, headline, credit and address on the stone panel."""
+    from PIL import ImageOps
+    W, H = size
+    img = Image.new("RGB", size, STONE); d = ImageDraw.Draw(img)
+    src = ImageOps.exif_transpose(Image.open(photo)).convert("RGB")
+    pw = round(W * (0.62 if W == H else 0.44))
+    sc = max(pw / src.width, H / src.height)
+    rs = src.resize((round(src.width * sc) + 1, round(src.height * sc) + 1), Image.LANCZOS)
+    l, t = 0, (rs.height - H) // 2            # left-anchored: keeps the puzzle book's full title in shot
+    img.paste(rs.crop((l, t, l + pw, t + H)), (W - pw, 0))
+    pad = round(W * 0.05); tw = W - pw - 2 * pad
+    kf = font("SourceSans3-SemiBold.ttf", 28 if W == H else 26)
+    kl = wrap(d, kicker, kf, tw)
+    uf = font("SourceSans3-SemiBold.ttf", 24); cf = font("SourceSans3-Regular.ttf", 20)
+    top = pad + len(kl) * 34 + 24
+    size_ = 64
+    while True:                                     # shrink until the block fits and no single word runs onto the photo
+        f, lines, lh = fit_text(d, headline, "Fraunces-SemiBold.ttf", tw, H - top - pad - 110, size_, 30)
+        if max(d.textlength(ln, font=f) for ln in lines) <= tw or f.size <= 30:
+            break
+        size_ = f.size - 2
+    y = pad
+    for k in kl: d.text((pad, y), k, font=kf, fill=RED); y += 34
+    y += 24
+    for ln in lines: d.text((pad, y), ln, font=f, fill=INK); y += lh
+    d.text((pad, H - pad - 62), PHOTO_CREDIT, font=cf, fill="#5b5f6b")
+    d.text((pad, H - pad - 28), "dontdieretired.com/puzzle-books", font=uf, fill="#5b5f6b")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    img.save(out, optimize=True)
+
+
+def compare_card(left, right, headline, size, out):
+    """The bad AI cartoon (labelled AI-made) beside Robin's real photo of the books, headline above (Robin, 22 Nov 2026)."""
+    from PIL import ImageOps
+    W, H = size
+    img = Image.new("RGB", size, STONE); d = ImageDraw.Draw(img)
+    pad = round(W * 0.045)
+    sq = W == H
+    f, lines, lh = fit_text(d, headline, "Fraunces-SemiBold.ttf", W - 2 * pad, round(H * (0.2 if sq else 0.22)), 60, 30)
+    y = pad
+    for ln in lines: d.text((pad, y), ln, font=f, fill=INK); y += lh
+    top = y + 18; lab = 44; foot = 40
+    ph = H - top - lab - foot - pad
+    gap = 24; pw = (W - 2 * pad - gap) // 2
+    lf = font("SourceSans3-SemiBold.ttf", 28)
+    for i, (src, label, col) in enumerate([(left, "AI-made: please, no", RED), (right, "The real books", "#2F5D3A")]):
+        im = ImageOps.exif_transpose(Image.open(src)).convert("RGB")
+        im = ImageOps.fit(im, (pw, ph), Image.LANCZOS, centering=(0.0, 0.05) if i else (0.5, 0.5))
+        x = pad + i * (pw + gap)
+        img.paste(im, (x, top))
+        d.text((x, top + ph + 8), label, font=lf, fill=col)
+        if i == 0:
+            d.line((x + 10, top + 10, x + pw - 10, top + ph - 10), fill=RED, width=10)
+            d.line((x + pw - 10, top + 10, x + 10, top + ph - 10), fill=RED, width=10)
+    d.text((pad, H - pad - 28), "dontdieretired.com/puzzle-books", font=font("SourceSans3-SemiBold.ttf", 24), fill="#5b5f6b")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    img.save(out, optimize=True)
+
+
 def draw_all(dist):
     data, book = load()
     if not book:
@@ -101,8 +174,10 @@ def draw_all(dist):
     card(cover, book["title"], kicker, (1200, 630), pathlib.Path(dist) / "static" / "img" / "books" / f"og-{book['id']}.png")
     n = 0
     for p in data.get("posts") or []:
-        card(cover, p["card"], "The Christmas Puzzle Book, on Amazon", (1080, 1080), pathlib.Path(dist) / "static" / "social" / f"{p['slug']}.png")
-        card(cover, p["card"], "The Christmas Puzzle Book, on Amazon", (1200, 675), pathlib.Path(dist) / "static" / "img" / f"{p['slug']}.png")
+        ph = photo_for(data, p["date"])
+        draw = (lambda *a: photo_card(ph, *a)) if ph else (lambda *a: card(cover, *a))
+        draw(p["card"], "The Christmas Puzzle Book, on Amazon", (1080, 1080), pathlib.Path(dist) / "static" / "social" / f"{p['slug']}.png")
+        draw(p["card"], "The Christmas Puzzle Book, on Amazon", (1200, 675), pathlib.Path(dist) / "static" / "img" / f"{p['slug']}.png")
         n += 1
     return n
 
@@ -124,6 +199,7 @@ def write_packs():
         meta = {
             "title": p["card"], "url": PAGE, "date": p["date"], "category": "think", "kind": "book",
             "tags": ["puzzles", "puzzle-book", "christmas"],
+            **({"alt": PHOTO_ALT + p["card"], "fb_image": True} if photo_for(data, p["date"]) else {}),
             "posts": {
                 "facebook": f"{p['text']}\n\nSee it → {utm('facebook')}",
                 "instagram": f"{p['text']}\n\nLink in our bio (dontdieretired.com/puzzle-books).\n\n{HASHTAGS}",

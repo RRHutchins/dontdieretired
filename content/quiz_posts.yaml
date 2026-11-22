@@ -5,6 +5,10 @@
 # printed in BOTH editions, word for word with the book's answer and note. No prices, reviews, counts of sales or
 # delivery promises. Never edit a post once its date has passed: it would post again.
 until: "2026-12-15"   # Robin, 18 Nov 2026: no book posts after 15 Dec, as orders after that may not arrive for Christmas
+# Robin's own photo of the printed books (sent 22 Nov 2026) is the picture on every post dated from photo_from;
+# earlier posts keep the cover card. Use a newer photo only for posts dated after it arrives.
+photo: "static/img/books/photos/three-books.jpg"
+photo_from: "2026-11-23"
 posts:
   - date: "2026-11-18"
     slug: quiz-christmas-out
@@ -19,6 +23,12 @@ posts:
     slug: quiz-christmas-everyone-plays
     card: "A quiz the whole family can play, from grandparents to grandchildren"
     text: "Every round of our Christmas Quiz Book has questions marked for anyone, for grown-ups, and a couple of hard ones, so the children can answer some and the grown-ups have to work for the rest."
+  - date: "2026-11-25"
+    slug: quiz-christmas-no-bad-ai
+    compare: ["static/img/books/photos/ai-cartoon.png", "static/img/books/photos/three-books.jpg"]
+    alt: "Left, crossed out: a clumsy AI-made cartoon of a family quiz night. Right: a photo of the printed Christmas Quiz Book and Christmas Puzzle Book on a table. Above them the words: Avoid bad Christmas AI like this. Have a family quiz and puzzle time with the real books."
+    card: "Avoid bad Christmas AI like this. Have a family quiz and puzzle time with the real books"
+    text: "Left: a family quiz night we asked AI to draw. We won't do that again. Right: the real thing, our Christmas Quiz Book (UK and American editions) and Christmas Puzzle Book. Put the screens down and have a family quiz and puzzle time."
   - date: "2026-11-26"
     slug: quiz-christmas-q-silent-night
     question: true

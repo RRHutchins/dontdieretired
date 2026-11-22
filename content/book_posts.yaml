@@ -5,6 +5,10 @@
 # Facts only from the book itself (books/build_book.py, verify.py) and site.yaml. No prices, no delivery promises, no reviews.
 book: christmas
 until: "2026-12-15"   # Robin, 18 Nov 2026: no book posts after 15 Dec, as orders after that may not arrive for Christmas
+# Robin's own photo of the printed books (sent 22 Nov 2026) is the picture on every post dated from photo_from;
+# earlier posts keep the cover card. Use a newer photo only for posts dated after it arrives.
+photo: "static/img/books/photos/three-books.jpg"
+photo_from: "2026-11-23"
 posts:
   - date: "2026-10-30"
     slug: book-christmas-out
