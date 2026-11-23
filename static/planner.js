@@ -129,6 +129,9 @@
     if (away && T.near) out.near = { head: fill(T.near_tours, { place: out.label }), help: T.near_tours_help, links: [] };
     (T.links || []).forEach(l => {
       if (l.countries !== 'any' && !(country && l.countries.indexOf(country) >= 0)) return;
+      // a link for part of a country (YHA: England and Wales; Hostelling Scotland): only for an activity tied to one of
+      // those areas (so a Northern Ireland trip gets neither); an activity tied to no area keeps it
+      if (l.areas && (a.places || []).length && !(a.places || []).some(p => l.areas.indexOf(p) >= 0)) return;
       const sec = l.section || 'getting';
       if ((sec === 'stay' && !out.stay) || (sec === 'eat' && !out.eat) || (sec === 'near' && !out.near)) return;
       // affiliate ids only on the tour searches (tools/planner.py refuses one anywhere else)
@@ -210,7 +213,8 @@
   }
 
   /* "Plan it yourself" (RUNBOOK §6t, Planner Plus day 15): the free links, with no dates and nothing saved.   PURE.
-     diy(activity, settings, { place, acts }) → { links, trip, nearby, goes }: the activity's own links (book it, find
+     diy(activity, settings, { place, acts }) → { finders, links, trip, nearby, goes }: the official finders for a place
+     (23 Nov 2026), the activity's own links (book it, find
      out more), trip() with no dates (the map, journey planners, hotel and food searches, tour searches), and the nearby
      and goes-with activities as links to their own pages (no Add to my year: that is Planner Plus). */
   function diy(a, settings, opts) {
@@ -219,7 +223,7 @@
     const link = (id, area) => (acts[id] ? { id, title: acts[id].title, area: area || '', url: '/list/' + id + '/' } : null);
     const nearby = t.away ? (a.nearby || []).map(n => link(n[0], n[1])).filter(Boolean) : [];
     const goes = (a.goes || []).filter(id => !nearby.some(e => e.id === id)).map(id => link(id)).filter(Boolean);
-    return { links: (a.links || []).slice(), trip: t, nearby, goes };
+    return { finders: (a.finders || []).slice(), links: (a.links || []).slice(), trip: t, nearby, goes };
   }
 
   function build(a, settings, opts) {
@@ -300,7 +304,9 @@
       // 'travel': shown with getting there (e.g. "reserve your train and somewhere to stay"), at the same point in the run-up
       // it then stands in for the general "Sort out getting there" step, so the plan does not say the same thing twice
       if (name === 'travel') travelOwn = true;
-      add('start-' + i, name === 'travel' ? 'travel' : startStrand(t), S[name].at, i > 0, Object.assign({ text: t, why: S[name].why, links: i === 0 ? links(a.links) : [] }, name === 'travel' && settings.trip ? { detail: settings.trip.step_detail } : {}));
+      // the first step carries the official finders ("Find one near you", 23 Nov 2026) ahead of the activity's own links
+      add('start-' + i, name === 'travel' ? 'travel' : startStrand(t), S[name].at, i > 0, Object.assign({ text: t, why: S[name].why, links: i === 0 ? links(a.finders).concat(links(a.links)) : [] },
+        i === 0 && (a.finders || []).length && settings.trip && settings.trip.find_detail ? { detail: settings.trip.find_detail } : {}, name === 'travel' && settings.trip ? { detail: settings.trip.step_detail } : {}));
     });
     // 2. Fixed yearly dates (dates.yaml)
     if (a.dates) add('dates', 'book', S.dates.at, false, { text: S.dates.text, detail: a.dates.note, why: S.dates.why, links: [{ label: a.dates.source.label, url: a.dates.source.url, region: 'any', why: '', aff: null }] });

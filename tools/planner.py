@@ -19,7 +19,7 @@ STRANDS = ("book", "learn", "train", "travel", "kit")
 STEP_KEYS = ("first", "second", "ongoing", "after_start", "dates", "book", "travel", "kit_before", "kit_after", "safety", "day", "day_month", "train_start", "look_back", "take_stock", "safety_month", "later", "day_span", "book_window")
 START_AT = ("first", "second", "ongoing", "after_start", "later", "travel", "day")
 NO_TEXT = ("first", "second", "ongoing", "after_start", "later")   # an activity's own start step supplies the words
-TRIP_KEYS = ("head", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs", "getting_help_span",
+TRIP_KEYS = ("head", "find_head", "find_detail", "where_label", "where_q", "where_help", "where_hint", "where_save", "where_change", "where_source", "when_none", "getting", "getting_help", "step_detail", "my_needs", "getting_help_span",
              "head_away", "stay", "stay_fold", "stay_help_span", "stay_help_day", "stay_help_month", "stay_more", "eat", "eat_help",
              "near", "near_help", "near_help_after", "near_area", "near_tours", "near_tours_help", "goes", "goes_help", "add", "add_on", "added", "see_plan", "pick_date", "pick_why_event", "pick_why_fixed", "pick_why_long")
 PICK_KEYS = ("head", "open", "top", "good", "value", "read", "buy", "note")
@@ -90,6 +90,7 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
     trip = cfg.get("trip") or {}
     for k in TRIP_KEYS: assert trip.get(k), f"planner trip.{k}: missing"
     tids = set()
+    AREA_IDS = set(_areas(root))
     for l in trip.get("links") or []:
         assert l.get("id") and l["id"] not in tids and l.get("label") and l.get("why"), f"planner trip link {l.get('id')}: needs a unique id, label and why"
         tids.add(l["id"])
@@ -108,6 +109,8 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
         assert not l.get("aff") or (l["section"] == "near" and l["aff"] in TOUR_AFF), f"planner trip link {l['id']}: affiliate ids only on tour searches (section near, aff {'/'.join(TOUR_AFF)}); none yet for travel or hotels"
         c_ = l.get("countries")
         assert c_ == "any" or (isinstance(c_, list) and c_ and all(isinstance(x, str) and COUNTRY.fullmatch(x) for x in c_)), f"planner trip link {l['id']}: countries is any or a list of two-letter codes"
+        a_ = l.get("areas")
+        assert a_ is None or (isinstance(a_, list) and a_ and all(x in AREA_IDS for x in a_)), f"planner trip link {l['id']}: areas is a list of area ids from content/map_shapes.json (uk, us)"
     assert any(l["section"] == "where" for l in trip.get("links") or []), "planner trip: needs a map link (section: where)"
     plus = cfg.get("plus") or {}   # Planner Plus day 15: the two ways to plan, the paywall and the sample plan
     for k in PLUS_KEYS: assert isinstance(plus.get(k), str) and plus[k].strip(), f"planner plus.{k}: missing"
@@ -222,6 +225,18 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
             dt.date.fromisoformat(str(src["checked"]))
             where = {"town": w["town"], "venue": w.get("venue", ""), "postcode": w.get("postcode", ""), "country": w["country"], "note": w.get("note", ""),
                      "source": {"label": src["label"], "url": src["url"], "checked": str(src["checked"])}}
+        # "Find one near you" (improvements by 1 Jan 2027, item 1(1); first built 23 Nov 2026): the official finders that
+        # search by place, each opened in a session (`checked`). A plain link: the member types their own town or
+        # postcode on the finder's page (no finder with a place in its address has been checked yet). No affiliate ids.
+        finders = []
+        for f_ in c.get("finders") or []:
+            assert isinstance(f_, dict) and set(f_) <= {"label", "url", "why", "region", "checked"}, f"challenge {cid}: a finder takes label, url, why, region, checked"
+            assert f_.get("label") and f_.get("why") and str(f_.get("url", "")).startswith("https://"), f"challenge {cid}: a finder needs label, why and an https:// url"
+            assert f_.get("region", "any") in ("uk", "us", "any"), f"challenge {cid}: finder region is uk, us or any"
+            assert not re.search(r"amazon\.|[?&](tag|aid|partner_id|ref)=", f_["url"]), f"challenge {cid}: no affiliate links in finders"
+            dt.date.fromisoformat(str(f_.get("checked")))
+            finders.append({"label": f_["label"], "url": f_["url"], "why": f_["why"], "region": f_.get("region", "any")})
+        fnd = {f_["url"].lower().rstrip("/") for f_ in finders}
         regs = c.get("regions") or []
         country = where["country"] if where else "GB" if regs == ["uk"] else "US" if regs == ["us"] else ""
         strands = list(k["strands"])
@@ -233,10 +248,11 @@ def prepare(chs: list[dict], root: Path = ROOT, today: dt.date | None = None):
             "id": cid, "title": c["title"], "category": c["category"], "kind": kind, "effort": c["effort"], "time": c["time"],
             "when": sorted(when), "when_from": when_from, "season": c.get("season", ""),
             "lead_weeks": lead, "strands": strands, "event": ({"id": ev["id"], "name": ev["name"], "weeks": ev["weeks"], "min_weeks": ev["min_weeks"], "prerequisite": ev["prerequisite"], "key": ev["key"], "levels": ev["levels"]} if ev else None),
-            "dates": dates.get(cid), "place_tied": bool(c.get("places")),
+            "dates": dates.get(cid), "place_tied": bool(c.get("places")), "places": list(c.get("places") or []),
             "where": where, "country": country, "area": c.get("place_label", ""),
             "start": c["start"], "start_at": c.get("start_at"), "safety": c.get("safety", ""),
-            "links": [{"label": l["label"], "url": l["url"], "region": l.get("region", "any")} for l in c["links"]],
+            "links": [{"label": l["label"], "url": l["url"], "region": l.get("region", "any")} for l in c["links"] if l["url"].lower().rstrip("/") not in fnd],
+            "finders": finders,
             "book": [{"label": b["label"], "why": b["why"], "url": b["url"], "aff": b.get("aff")} for b in c.get("book") or []],
             "kit": [{"name": x["name"], "why": x["why"], "url": x["url"]} for x in c.get("kit") or []],
             "picks": _picks(c, shared_picks),

@@ -198,6 +198,9 @@ def load_terms():
     return sorted(d.items(), key=lambda kv: -len(kv[0]))
 
 
+_TERM_RX = {}
+
+
 class Linker:
     """Turn the first mention of a known term into a link. One Linker per page, so the four-link limit spans the page."""
     def __init__(self, terms, self_url, limit=4):
@@ -207,8 +210,10 @@ class Linker:
         hits = []
         for term, url in self.terms:
             if url == self.self_url or url in self.used: continue
-            flags = 0 if term[:1].isupper() else re.I
-            m = re.search(r"(?<![\w-])" + re.escape(term) + r"(?![\w-])", text, flags)
+            rx = _TERM_RX.get(term)
+            if rx is None:   # compiled once per term: re's own cache holds 512 patterns and the terms outgrew it (23 Nov 2026)
+                rx = _TERM_RX[term] = re.compile(r"(?<![\w-])" + re.escape(term) + r"(?![\w-])", 0 if term[:1].isupper() else re.I)
+            m = rx.search(text)
             if m and not any(m.start() < e and s_ < m.end() for s_, e, _ in hits):
                 hits.append((m.start(), m.end(), url)); self.used.add(url)
         hits = sorted(hits)

@@ -360,6 +360,9 @@ notes:
 # activity tied to a place (not a weekly habit). `url_dated` is the same search with the nights filled in ({in} and
 # {out}, YYYY-MM-DD: the first and last days of a stay, or the night of a single day); a month plan uses `url`.
 # `section: eat` is a map search near the place. Never name or recommend a place to stay or eat that we have not checked.
+# `areas` (23 Nov 2026): a link that covers only part of a country (YHA: England and Wales; Hostelling Scotland) shows
+# only when the activity's own `places` include one of those areas; with no area known (a typed place on an activity
+# not tied to one), it shows as before.
 # The Google Maps forms are Google's documented Maps URLs (api=1); with no origin, Google asks for one or uses the
 # device's own location, so the member's home is never in our links.
 trip:
@@ -402,6 +405,10 @@ trip:
   pick_why_event: "It has a training plan, so choose its date and starting point on its page."
   pick_why_fixed: "It happens on set dates, so check them on its page."
   pick_why_long: "It takes more than an afternoon, so give it its own dates on its page."
+  # "Find one near you" (23 Nov 2026): an activity's official finders (content/challenges.yaml → finders), on the plan's
+  # first step and at the top of "Plan it yourself". Each is a plain link: the member types their town or postcode there.
+  find_head: "Find one near you"
+  find_detail: "These finders are on each organization's own site: type your town, postcode or ZIP code there, or pick from their map or list, to see the groups and courses near you."
   # the words put in front of the place for the map searches above ({q_hotels} and so on)
   near_q: {hotels: "hotels near", campsites: "campsites near", eat: "restaurants near", cafes: "cafes near"}
   eat_help: "Map searches near {place}. We have not checked or chosen any of these places: see what is open on your day."
@@ -462,6 +469,7 @@ trip:
       url: "https://www.yha.org.uk/"
       why: "Hostels in England and Wales. Check the hostel's own page for rooms and ages."
       countries: [GB]
+      areas: [north-east, north-west, yorkshire, east-midlands, west-midlands, east, london, south-east, south-west, wales]
       section: stay
       more: true
     - id: hostelling-scotland
@@ -469,6 +477,7 @@ trip:
       url: "https://www.hostellingscotland.org.uk/"
       why: "Hostels across Scotland."
       countries: [GB]
+      areas: [scotland]
       section: stay
       more: true
     - id: hi-usa

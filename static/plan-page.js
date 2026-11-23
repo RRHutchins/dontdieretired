@@ -212,7 +212,7 @@
     if (plan.fuller && !saved && !ro()) html += '<p class="pl-acts"><button type="button" class="btn btn-small" data-pl-use="' + esc(plan.fuller) + '">Use ' + esc(P.longDate(plan.fuller)) + '</button></p>';
     if (plan.status === 'too_soon' && !ro()) html += '<p class="pl-acts"><button type="button" class="btn btn-small" data-pl-use="' + esc(plan.earliest) + '">Use ' + esc(P.longDate(plan.earliest)) + '</button></p>';
     if (plan.status !== 'ok') { out.innerHTML = html; return; }
-    const multi = new Set(A.links.map(l => l.region)).size > 1;
+    const multi = new Set(A.links.concat(A.finders || []).map(l => l.region)).size > 1;
     let month = '';
     const weeksDone = new Set();
     // the next four training weeks (not yet over) are drawn in full; the weeks after them one line each
@@ -351,6 +351,8 @@
     const T = S.trip || {}, d = P.diy(A, S, { place: diyPlace || ((L.get(id) || {}).where || ''), acts: X }), r = d.trip;
     let h = '', aff = false;
     const li = l => { if (l.aff) aff = true; return linkHtml(l, multi); }, multi = new Set(d.links.map(l => l.region)).size > 1;
+    // the official finders first (23 Nov 2026): plain links, the reader types their own town or postcode on each
+    if (d.finders.length) h += '<p class="pl-wkh">' + esc(T.find_head) + '</p><p class="meta">' + esc(T.find_detail) + '</p><ul class="pl-links">' + d.finders.map(l => linkHtml(l, true)).join('') + '</ul>';
     if (d.links.length) h += '<p class="pl-wkh">' + esc(PP.diy_book) + '</p><ul class="pl-links">' + d.links.map(li).join('') + '</ul>';
     h += '<p class="pl-wkh">' + esc(T.where_label) + '</p>';
     if (r.needs || (!r.sourced && diyPlace === null)) {

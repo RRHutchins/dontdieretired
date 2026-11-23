@@ -18,7 +18,7 @@ function checkSourced(a, plan) {
   const texts = new Set(a.start);
   const okText = s => texts.has(s.text) || Object.values(S).some(v => v.text && fills(v.text).test(s.text));
   const okWhy = s => Object.values(S).some(v => fills(v.why).test(s.why));
-  const urls = new Set([...a.links, ...a.book].map(l => l.url).concat(a.dates ? [a.dates.source.url] : [], a.dates && a.dates.book ? [a.dates.book.source.url] : []));
+  const urls = new Set([...a.links, ...a.book, ...(a.finders || [])].map(l => l.url).concat(a.dates ? [a.dates.source.url] : [], a.dates && a.dates.book ? [a.dates.book.source.url] : []));
   const kit = new Set(a.kit.map(k => k.url));
   // training sessions: every word is one of the engine's own strings, with only the day names put in
   const TR = a.event && data.training[a.event.id], DAYRX = /\b(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\b/g;
@@ -35,7 +35,7 @@ function checkSourced(a, plan) {
     (s.links || []).forEach(l => assert.ok(urls.has(l.url), `${a.id}: link not from the activity: ${l.url}`));
     (s.items || []).forEach(k => assert.ok(kit.has(k.url), `${a.id}: kit not from the activity: ${k.url}`));
     if (s.detail) {
-      const pieces = [a.safety, a.dates && a.dates.note, a.dates && a.dates.book && a.dates.book.note, a.event && a.event.prerequisite, data.trip.step_detail, ...a.start].filter(Boolean);
+      const pieces = [a.safety, a.dates && a.dates.note, a.dates && a.dates.book && a.dates.book.note, a.event && a.event.prerequisite, data.trip.step_detail, (a.finders || []).length && data.trip.find_detail, ...a.start].filter(Boolean);
       let rest = s.detail; pieces.forEach(p => { rest = rest.split(p).join(''); });
       assert.strictEqual(rest.trim(), '', `${a.id}: step detail not from the activity: ${s.detail}`);
     }
@@ -467,6 +467,39 @@ t('a stay in My year: one calendar block, overlaps flagged, flexible steps kept 
   assert.strictEqual(day.DTSTART, '20270814'); assert.strictEqual(day.DTEND, '20270819');
   const w = P.window(fp.plan, { flexible: true, date: '2027-08-20' }, TODAY); assert.strictEqual(w.min, '2027-08-19');
 });
+t('find one near you (23 Nov): official finders on the first step, ahead of the links, not repeated, none with an affiliate id; also in Plan it yourself', () => {
+  const b = byId['take-up-beekeeping'];
+  assert.ok(b && b.finders.length >= 3);
+  assert.ok(b.finders.every(f => /^https:\/\//.test(f.url) && f.why && ['uk', 'us', 'any'].includes(f.region)));
+  const fu = new Set(b.finders.map(f => f.url.toLowerCase().replace(/\/$/, '')));
+  assert.ok(!b.links.some(l => fu.has(l.url.toLowerCase().replace(/\/$/, ''))), 'a finder is repeated in the links');
+  const plan = P.build(b, data, { today: '2026-11-23', month: '2027-03' });
+  assert.strictEqual(plan.status, 'ok');
+  const first = plan.steps.find(x => x.id === 'start-0');
+  assert.deepStrictEqual(first.links.slice(0, b.finders.length).map(l => l.url), b.finders.map(f => f.url));
+  assert.ok(first.links.every(l => !l.aff) && first.detail === data.trip.find_detail);
+  const d = P.diy(b, data, {});
+  assert.deepStrictEqual(d.finders.map(f => f.url), b.finders.map(f => f.url));
+  // an activity without finders: first step as before, no finder words
+  const other = acts.find(a => !(a.finders || []).length && a.links.length && !a.event);
+  const p2 = P.build(other, data, { today: '2026-11-23', month: '2027-06' });
+  if (p2.status === 'ok') { const f2 = p2.steps.find(x => x.id === 'start-0'); if (f2) assert.ok(f2.detail !== data.trip.find_detail); }
+  for (const a of acts) assert.ok(Array.isArray(a.finders));
+});
+t('hostels by area (23 Nov): Scotland gets Hostelling Scotland, Wales and England get YHA, Northern Ireland neither, no area both', () => {
+  const pick = pl => acts.find(a => a.place_tied && a.kind !== 'habit' && a.country === 'GB' && a.places.length === 1 && a.places[0] === pl);
+  const ids = (a, place) => P.trip(a, data, { place: place || 'Somewhere', date: '2027-06-01' }).stay.more.map(l => l.id);
+  const sc = pick('scotland'), wa = pick('wales'), lo = pick('london'), ni = pick('northern-ireland');
+  assert.ok(sc && wa && lo);
+  assert.ok(ids(sc).includes('hostelling-scotland') && !ids(sc).includes('yha'));
+  assert.ok(ids(wa).includes('yha') && !ids(wa).includes('hostelling-scotland'));
+  assert.ok(ids(lo).includes('yha') && !ids(lo).includes('hostelling-scotland'));
+  if (ni) assert.ok(!ids(ni).includes('yha') && !ids(ni).includes('hostelling-scotland') && ids(ni).includes('campsites-map'));
+  // not tied to an area, but a stay in Great Britain: both, as before
+  const free = Object.assign({}, acts.find(a => !a.place_tied && a.kind !== 'habit'), { country: 'GB', places: [] });
+  const r = P.trip(free, data, { place: 'Leeds', date: '2027-03-01', until: '2027-03-03' }).stay.more.map(l => l.id);
+  assert.ok(r.includes('yha') && r.includes('hostelling-scotland'));
+});
 t('trip day 9: where to stay for a trip away (dated nights), folded for a single day, none for a habit or a local thing; where to eat near the place', () => {
   const T = data.trip, esc_ = x => x.replace(/[.*+?^$()|[\]\\]/g, '\\$&');
   const tpl = T.links.flatMap(l => [l.url, l.url_dated].filter(Boolean)).map(u => new RegExp('^' + esc_(u).replace(/\\\{(q(?:_[a-z]+)?)\\\}|\{(q(?:_[a-z]+)?)\}/g, '[^&#]*').replace(/\{(in|out)\}/g, '\\d{4}-\\d{2}-\\d{2}') + '$'));
@@ -478,7 +511,7 @@ t('trip day 9: where to stay for a trip away (dated nights), folded for a single
   const bk = r.stay.links.find(l => l.id === 'hotels');
   assert.ok(bk.url.includes('ss=' + encodeURIComponent('Edinburgh, UK')) && bk.url.includes('checkin=2027-08-14') && bk.url.includes('checkout=2027-08-18'));
   assert.ok(r.stay.help.includes('14 August 2027') && r.stay.help.includes('18 August 2027'));
-  assert.ok(r.stay.more.some(l => l.id === 'yha') && !r.stay.more.some(l => l.id === 'hi-usa'));
+  assert.ok(r.stay.more.some(l => l.id === 'hostelling-scotland') && !r.stay.more.some(l => l.id === 'yha') && !r.stay.more.some(l => l.id === 'hi-usa'));
   const all = r.where.concat(r.getting, r.stay.links, r.stay.more, r.eat.links);
   all.forEach(l => { assert.ok(tpl.some(x => x.test(l.url)), 'not a planner.yaml link: ' + l.url); assert.ok(!/[{}<>"\s]/.test(l.url), l.url); assert.strictEqual(l.aff, null); });
   assert.ok(r.eat.links.find(l => l.id === 'eat-map').url.endsWith(encodeURIComponent(T.near_q.eat + ' Edinburgh, UK')));
