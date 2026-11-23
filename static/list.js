@@ -225,7 +225,7 @@
     const showMap = k => {
       $$('[data-map]', mapBox).forEach(w => { w.hidden = w.dataset.map !== k; });
       $$('[data-map-show]', mapBox).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mapShow === k)));
-      $('[data-map-cname]', mapBox).textContent = { uk: 'UK', us: 'USA', ca: 'Canada', world: 'rest of the world' }[k]; mapBox.dataset.country = k;
+      $('[data-map-cname]', mapBox).textContent = { uk: 'the UK', us: 'the USA', ca: 'Canada', world: 'the rest of the world' }[k]; mapBox.dataset.country = k;
       const w = $('[data-map="' + k + '"][data-src]', mapBox);
       if (w && !w.dataset.loaded) {   // the world map is a separate file, fetched the first time its tab is opened
         w.dataset.loaded = '1';

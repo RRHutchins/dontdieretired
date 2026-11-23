@@ -56,6 +56,11 @@ kinds:
 # Northern hemisphere unless the phrase says otherwise. null = no particular months (any time of year).
 # A phrase missing from this list prints a LIST WARNING and the activity is treated as any time until it is added here.
 seasons:
+  "June and July": [6, 7]
+  "July and August": [7, 8]
+  "Late August and September, or winter": [8, 9, 12, 1, 2]
+  "June to mid-October": [6, 7, 8, 9, 10]
+  "July to mid-September": [7, 8, 9]
   "Spring or fall": [3, 4, 5, 9, 10, 11]
   "Late May to November": [5, 6, 7, 8, 9, 10, 11]
   "Late July": [7]
