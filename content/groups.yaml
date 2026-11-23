@@ -208,12 +208,16 @@ groups:
     match: "volunteer|befriend|mentor|trustee|magistrate|governor|give blood|meals on wheels|food bank|habitat|scout|samaritans|first responder|coast guard|rnli|guide dog|foster|litter|beach clean|polls|referee|steward|invigilat|dementia friend|help a child|lock keeper|blood bikes|witness|st john|red cross|crisis at christmas|weather observer|be my eyes|wikipedia|openstreetmap|transcribe|citizen"
   community:
     slug: clubs-and-community
-    label: Clubs and community
-    short: "Choirs, clubs, groups and ways to meet people"
-    title: "Clubs and groups to join: how to meet people doing things"
-    meta: "Choirs, clubs, societies, groups and community projects to join, from the u3a and Men's Sheds to book clubs and language exchanges."
+    # Widened 23 Nov 2026 (Robin: "I want more arts, craft, group stuff, clubs"): `also` pulls in every club, society, guild,
+    # league, choir, band and group from any category (cycling club, chess club, camera club, brass band...), so one tile
+    # shows them all. The slug stays clubs-and-community because it is live.
+    label: Clubs and groups
+    short: "Choirs, bands, guilds, societies, leagues and clubs of every kind"
+    title: "Clubs and groups to join: meet people doing things"
+    meta: "Clubs, societies, guilds, choirs, bands, leagues and groups to join, from craft guilds and camera clubs to the u3a, Men's Sheds, running clubs and book clubs."
     categories: [connect]
-    not: "volunteer|befriend|mentor|trustee|magistrate|governor|give blood|meals on wheels|food bank|habitat|scout|samaritans|first responder|guide dog|foster|litter|beach clean|polls"
+    not: "volunteer|befriend|mentor|trustee|magistrate|governor|give blood|meals on wheels|food bank|habitat|scout|samaritans|first responder|guide dog|foster|litter|beach clean|polls|husky|relay|jazz club|rescue|stone circle|learn to conduct"
+    also: "\\bclubs?\\b|choir|choral|\\bsociety\\b|societies|\\bguild\\b|\\bleague\\b|\\bband\\b|orchestra|u3a|men'?s shed|\\bgroup\\b|\\bcircle\\b|handbell team|morris side|folk session|meetup|probus|red hat|chapter"
   work:
     slug: money-and-work
     label: Money and work
