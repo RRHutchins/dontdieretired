@@ -459,8 +459,8 @@ guidance:
     topic: before you start
     applies: [running]
     use: advice
-    text: If you are new to running, give yourself 8 to 12 weeks to get ready for a 10k rather than 6, and if time is short use a run-walk approach.
-    for: [greatrun-10k-how-long, greatrun-10k-plans]
+    text: If you are new to running, give yourself 8 to 12 weeks to get ready for a 10k rather than 6 (most beginner plans assume you can already run for 20 to 30 minutes), and if time is short use a run-walk approach.
+    for: [greatrun-10k-how-long, greatrun-10k-plans, stjude-memphis-10k, emf-10k-beginner, lme-brighton-10k-plan]
 
   # ---------- open water swimming (added 1 Nov 2026) ----------
   - id: ow-never-alone
@@ -518,7 +518,7 @@ guidance:
     applies: [swimming]
     use: advice
     text: If you will wear a wetsuit on the day, train in that same wetsuit beforehand rather than changing kit for the event.
-    for: [usms-wetsuit-temp]
+    for: [usms-wetsuit-temp, britri-beginner-tips, usat-open-water-feel-good]
   - id: ow-float-practise
     topic: key session
     applies: [swimming]
@@ -617,7 +617,7 @@ guidance:
     applies: [swimming]
     use: safety
     text: In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack.
-    for: [britri-beginners-wales]
+    for: [britri-beginners-wales, tri-ireland-rules, usat-multisport-rules]
   - id: tri-water-confidence
     events: [sprint-triathlon]
     topic: before you start

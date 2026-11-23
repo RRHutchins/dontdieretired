@@ -9064,29 +9064,217 @@
   regions:
   - uk
   - us
-  why: Census pages, service records and ship lists turn names into people with addresses, trades and neighbours. Each record you find tends to raise a better question than the one it answers.
+  why: Census pages, certificates and parish registers turn names into people with addresses, trades and neighbors. Each record you find tends to raise a better question than the one it answers.
   start:
-  - Write down every name, date and place you already know and ask relatives for more.
-  - Read the national archives guidance for people starting family history.
-  - Pick one line and find it in the most recent open census.
+  - Write down every name, date and place you already know, and gather family papers and photos.
+  - 'Find your grandparents in the most recent open census: 1921 for England, Wales and Scotland, or 1950 in the US.'
+  - Use birth and marriage records to step back one generation at a time, checking each link before moving on.
   links:
-  - label: 'The National Archives (UK): start here'
-    url: https://www.nationalarchives.gov.uk/help-with-your-research/start-here/
+  - label: 'GOV.UK: Discover your family history (GRO guide)'
+    url: https://www.gov.uk/government/publications/discover-your-family-history/discover-your-family-history-accessible-version
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-22'
+  - label: 'The National Archives (UK): census records'
+    url: https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/census-records/
+    region: uk
+    checked: '2026-11-22'
+  - label: FreeBMD
+    url: https://www.freebmd.org.uk/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'ScotlandsPeople: census returns'
+    url: https://www.scotlandspeople.gov.uk/help-and-support/guides/census-returns
+    region: uk
+    checked: '2026-11-22'
   - label: 'US National Archives: resources for genealogists'
     url: https://www.archives.gov/research/genealogy
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-22'
+  - label: Official 1950 Census website
+    url: https://1950census.archives.gov/
+    region: us
+    checked: '2026-11-22'
+  - label: 'FamilySearch: find a FamilySearch center'
+    url: https://www.familysearch.org/en/locations/
+    region: any
+    checked: '2026-11-22'
+  seo_title: How to trace your family tree back four generations
+  description: 'How to trace your family tree step by step: certificates, which censuses are open in the UK and US, free vs paid sites, and where to get help.'
+  detail:
+  - h: Working back one generation at a time
+    p:
+    - Start with yourself and the people you can ask. The General Register Office suggests gathering memories, photos and papers to cover the last couple of generations before you touch a database. Then
+      take one line, say your mother's father's family, and push it back one step at a time.
+    - 'In England and Wales, civil registration began on 1 July 1837, so certificates carry you back to then. A birth certificate gives the mother''s name (sometimes her maiden name) and the father''s name
+      and job; a marriage certificate gives both fathers'' names and jobs. That maiden name is the key to the previous generation: find her parents'' marriage, then her own birth. Before 1837 you move to
+      parish registers of baptisms, marriages and burials, usually held by county record offices or put online.'
+    - Census returns fill in the household around each certificate. From 1851 they list everyone at the address with their relationship, age, job and birthplace; 1841 is sparser and 1911 adds years married
+      and number of children. Treat ages on census returns with caution, as the GRO warns, and check each find against a second record.
+  - h: Which censuses are open
+    table:
+      head:
+      - Country
+      - Open census years
+      - Latest release
+      - Where to see it
+      rows:
+      - - England and Wales
+        - 1841 to 1921 (1931 destroyed in a Second World War fire; no census in 1941)
+        - 1921 census, taken 19 June 1921, about 38 million people
+        - 1841 to 1911 on several sites; 1921 on Findmypast, free to view at The National Archives in Kew, Manchester Central Library and the National Library of Wales
+      - - Scotland
+        - 1841 to 1921 (closed for 100 years; no census in 1941)
+        - 1921 census
+        - ScotlandsPeople
+      - - United States
+        - 1790 to 1950 (closed for 72 years)
+        - 1950 census, released April 1, 2022, about 151 million people
+        - Official 1950 Census website from the National Archives, free to search
+    after: Because of the 100-year rule in Britain, the 1921 census is the last England and Wales release for some time. For 1939 there is a separate register, available online on a paid basis, that records
+      name, address, date of birth, marital status and job.
+  - h: Free and paid sites compared
+    table:
+      head:
+      - Site
+      - What it has
+      - Cost (as last listed)
+      rows:
+      - - FamilySearch
+        - Worldwide records and trees; name indexes for the 1841 to 1911 England and Wales censuses; 6,500+ centers with volunteer help
+        - Free (sign-in is free)
+      - - FreeBMD
+        - Transcribed GRO index of births, marriages and deaths in England and Wales, 1837 onward (not yet complete)
+        - Free; a charity that takes donations
+      - - FreeCEN
+        - Volunteer transcriptions of UK censuses; coverage is partial, so check the originals
+        - Free; a charity that takes donations
+      - - GRO online index
+        - Historical birth and death index for England and Wales
+        - Free to search; PDF of a historical entry £7; certificate £12.50
+      - - Findmypast
+        - UK censuses including the 1921 England and Wales census
+        - Free to search; subscriptions from £6.67 a month (UK) or US$10.75 a month (US), billed annually
+      - - Ancestry
+        - Large subscription site; Ancestry Library Edition is available on library computers at some public libraries (free at Leicestershire libraries)
+        - Subscription price not shown on the pages we could open; free in some libraries
+      - - ScotlandsPeople
+        - Scottish census returns 1841 to 1921, statutory registers, church registers and wills
+        - 'Pay per view: 1 credit = 25p; a census page or register entry is 6 credits (£1.50)'
+      - - 1950 Census website (NARA)
+        - 1950 US census images, searchable by name and place
+        - Free to search
+    after: The National Archives in Kew gives free on-site use of the subscription census sites, many UK libraries and record offices hold subscriptions, and US National Archives research rooms offer Ancestry,
+      Fold3, FamilySearch and HeritageQuest free.
+  - h: Ordering certificates in England and Wales
+    p:
+    - Find the entry in the free GRO index (or FreeBMD) first and note its GRO reference. With it, a standard paper certificate costs £12.50 and is sent four days after you apply; the priority service is
+      £38.50. Without a reference there is an extra £3.50 search fee and a wait of 15 working days.
+    - For research you rarely need the paper. The GRO sells a PDF of a digitized historical entry for £7.00, ordered online with the index reference; its guide lists births from 1837 to 1918 and deaths
+      from 1837 to 1957. The aim is to send it within four working days, and it stays viewable for three months, so save a copy.
+  - h: DNA tests and getting help
+    p:
+    - A DNA test can confirm a paper trail but rarely replaces one. MedlinePlus explains that Y-chromosome tests follow only the direct male line, mitochondrial tests only the female line, and autosomal
+      tests look across many lines; ethnicity estimates differ between companies, and sharing results can reveal unexpected relatives.
+    - When you get stuck, ask people. The Family History Federation lists family history societies by area across the UK and Ireland, plus one-name and specialist societies. In the US, the National Archives
+      suggests joining a local society and one where your ancestors lived, and FamilySearch centers offer computers, scanners, classes and help from trained volunteers.
+  faq:
+  - q: How do I start tracing my family tree?
+    a: 'Start with what you know: gather memories, photos and documents for the last couple of generations, then use certificates and census returns to step back one generation at a time.'
+  - q: Is the 1921 census free to view?
+    a: It is free to search on Findmypast, but viewing full results needs a subscription or free trial. It is free to view at The National Archives in Kew, Manchester Central Library and the National Library
+      of Wales.
+  - q: Why is there no 1931 census for England and Wales?
+    a: The 1931 census was destroyed in a fire during the Second World War, and no census was taken in 1941.
+  - q: How much does a birth certificate cost for family history?
+    a: As last listed on GOV.UK, a standard certificate is £12.50, plus £3.50 if you have no GRO index reference. The GRO's own guide lists a PDF of a historical birth or death entry at £7.00.
+  - q: When was the 1950 US census released?
+    a: The National Archives released it on April 1, 2022, after the 72-year closure period. Anyone can search it free on the official 1950 Census website.
+  - q: Is FamilySearch really free?
+    a: Yes. FamilySearch says its tools and resources are free, and features that need a sign-in are free too.
+  sources:
+  - label: GOV.UK, Discover your family history (civil registration from 1837, certificates, parish registers, free GRO index)
+    url: https://www.gov.uk/government/publications/discover-your-family-history/discover-your-family-history-accessible-version
+    checked: '2026-11-22'
+  - label: GOV.UK, Order a birth, death, marriage or civil partnership certificate (prices)
+    url: https://www.gov.uk/order-copy-birth-death-marriage-certificate
+    checked: '2026-11-22'
+  - label: General Register Office, PDF Service Guide (£7 PDF, years covered)
+    url: https://www.gro.gov.uk/gro/content/certificates/images/CG5.pdf
+    checked: '2026-11-22'
+  - label: The National Archives, Census records (1841-1911, contents, 100-year rule, 1939 Register, free at Kew)
+    url: https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/census-records/
+    checked: '2026-11-22'
+  - label: The National Archives, 1921 Census for England and Wales published today (19 June 1921, 38 million, 1931 fire, no 1941)
+    url: https://www.nationalarchives.gov.uk/about/news/1921-census-for-england-and-wales-published-today/
+    checked: '2026-11-22'
+  - label: The National Archives, Where can I access the 1921 Census (Findmypast, free venues)
+    url: https://www.nationalarchives.gov.uk/20s-people/the-1921-census/where-can-i-access-the-1921-census
+    checked: '2026-11-22'
+  - label: Findmypast, How to access the 1921 Census (free to search, subscription to view)
+    url: https://www.findmypast.co.uk/guides/access-1921-census
+    checked: '2026-11-22'
+  - label: Findmypast, How much does a Findmypast subscription cost?
+    url: https://www.findmypast.co.uk/help/articles/360009035778-how-much-does-a-findmypast-subscription-cost-
+    checked: '2026-11-22'
+  - label: ScotlandsPeople, Census returns (1841-1921, 100-year closure)
+    url: https://www.scotlandspeople.gov.uk/help-and-support/guides/census-returns
+    checked: '2026-11-22'
+  - label: ScotlandsPeople, Our charges (credits and record costs)
+    url: https://www.scotlandspeople.gov.uk/help-and-support/our-charges
+    checked: '2026-11-22'
+  - label: US National Archives, 1950 Census Fact Sheet (release date, 72 years, 151 million, free search)
+    url: https://www.archives.gov/press/press-kits/1950-census-fact-sheet
+    checked: '2026-11-22'
+  - label: US National Archives, Census Records (1790-1950 held)
+    url: https://www.archives.gov/research/census
+    checked: '2026-11-22'
+  - label: US National Archives, Start Your Genealogy Research (societies, free databases in research rooms)
+    url: https://www.archives.gov/research/genealogy/start-research
+    checked: '2026-11-22'
+  - label: FamilySearch, Locations (free, centers, 6,500+ locations)
+    url: https://www.familysearch.org/en/locations/
+    checked: '2026-11-22'
+  - label: FreeBMD home page (free, 1837-1999 index, charity)
+    url: https://www.freebmd.org.uk/
+    checked: '2026-11-22'
+  - label: FreeCEN help (free, partial coverage, finding tool)
+    url: https://www.freecen.org.uk/help
+    checked: '2026-11-22'
+  - label: Leicestershire County Council, Ancestry Library Edition (free on library computers)
+    url: https://www.leicestershire.gov.uk/leisure-and-community/libraries/our-digital-library/ancestry-library-edition
+    checked: '2026-11-22'
+  - label: Boston Public Library, Ancestry Library Edition (in-library use)
+    url: https://bpl.org/resource/ancestry-library-edition
+    checked: '2026-11-22'
+  - label: Family History Federation, Find a society
+    url: https://www.familyhistoryfederation.com/find-a-society
+    checked: '2026-11-22'
+  - label: MedlinePlus Genetics, What is genetic ancestry testing?
+    url: https://medlineplus.gov/genetics/understanding/dtcgenetictesting/ancestrytesting
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: Rosemary Wilmot, a Who Do You Think You Are? Magazine reader
+    line: Spent 42 years chasing an elusive great-grandfather through certificates, census returns and baptism records until a 1926 marriage record and an AncestryDNA match to a third cousin identified
+      him as John George Gray of Sunderland.
+    title: It took 42 years, but a DNA test revealed the truth about my elusive great grandfather
+    outlet: Who Do You Think You Are? Magazine
+    url: https://www.whodoyouthinkyouaremagazine.com/real-stories/rosemary-wilmot-great-grandfather-dna-test
+    checked: '2026-11-22'
+  related:
+  - trace-your-house-history
+  - find-a-relative-in-war-records
+  - join-a-local-history-society
+  - transcribe-for-an-archive
   kit:
   - name: Family tree chart
-    why: a large blank chart to fill in as you go
+    why: a large blank chart to fill in as each generation is confirmed
     url: https://www.amazon.co.uk/s?k=family+tree+chart+blank
   - name: Genealogy research guide
-    why: explains census, parish and civil records
+    why: explains census, parish and civil records in more depth
     url: https://www.amazon.co.uk/s?k=genealogy+research+guide+book
   - name: Archival document wallets
-    why: keeps old certificates and photos flat and clean
+    why: keep old certificates and photos flat and clean
     url: https://www.amazon.co.uk/s?k=archival+document+sleeves
 - id: learn-to-code-first-project
   title: Learn to code and finish one small project
@@ -10012,27 +10200,163 @@
   collection: arts
   regions:
   - uk
-  why: Singing pop and rock songs in harmony with a room full of people is a quick way to feel part of something. Rock Choir asks for no audition and welcomes complete beginners, so the only requirement
-    is turning up.
+  - us
+  why: Singing pop and rock songs in harmony with a room full of people is a quick way to feel part of something. Networks such as Rock Choir in the UK and Voices Rock in the US ask for no audition and
+    no music reading, so the only requirement is turning up.
   start:
-  - Use the Rock Choir site to find your nearest choir.
-  - Book a taster session at that choir.
-  - Go along, sing through the session, and decide whether to become a member.
+  - Use the Rock Choir or Popchoir site in the UK, or the Voices Rock site in the US, to find the nearest rehearsal.
+  - Book a free taster session where one is offered; Rock Choir says you need no equipment for it.
+  - Sing through the taster, then decide whether to pay for a term or session.
   links:
-  - label: Rock Choir
-    url: https://www.rockchoir.com/
+  - label: 'Rock Choir: join or book a free taster'
+    url: https://rockchoir.com/join/
     region: uk
-    checked: '2026-10-06'
+    checked: '2026-11-22'
+  - label: 'Popchoir: membership and tasters'
+    url: https://www.popchoir.com/membership
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Got 2 Sing: choirs in the Midlands'
+    url: https://www.got2sing.co.uk/about-got2sing-choir-midlands
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Natural Voice Network: find a choir or singing group'
+    url: https://naturalvoice.net/find-a-choir/page/2
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Voices Rock: FAQ'
+    url: https://voicesrock.com/faq/
+    region: us
+    checked: '2026-11-22'
+  - label: 'Barbershop Harmony Society: find or start a chorus'
+    url: https://www.barbershop.org/join/find-or-start-a-chorus
+    region: us
+    checked: '2026-11-22'
+  seo_title: Rock Choir and other choirs with no audition near you
+  description: 'Rock Choir, Popchoir, Voices Rock and more compared: what a rehearsal is like, free tasters, fees as listed, and how to find a choir near you.'
+  detail:
+  - h: What a rehearsal is like
+    p:
+    - Rock Choir, founded by Caroline Redman Lusher in 2005, runs more than 400 local choirs across England, Scotland, Wales and Ireland. Nobody hands you sheet music. The leader teaches each song by rote,
+      a line and a phrase at a time, while you follow annotated lyrics that cue you through it. Each term you learn two to four new songs, mostly pop and contemporary arrangements with some musical theater
+      and gospel.
+    - The lyrics arrive before a song is taught, so you can print them off and bring them with you. Once the leader has taught the song, audio and video learning aids go up in the members' area so you can
+      practice at home.
+    - Popchoir, founded by Helen Hampton in 2008 and based mainly in London with a choir in Launceston, Cornwall, also teaches everything by ear. Songs are sung in parts, and when you book you choose Top,
+      Mid 1, Mid 2, Low or "don't know yet". Got 2 Sing, in the West Midlands, gives members ready-made teach tracks to sing along with at home.
+  - h: The taster session
+    p:
+    - Rock Choir's free taster lasts about 90 minutes with a short break. You join the warm-ups, learn part of a new song and watch the choir perform at the end. It is one free taster per person, subject
+      to space; afterwards you can join on the spot or take time to decide.
+    - Popchoir's taster is free and is a normal rehearsal, but tasters are offered only in the first six weeks of each term. Got 2 Sing choirs also offer a free taster; check the local choir's term dates
+      before you go.
+  - h: Pop and community choir networks compared
+    table:
+      head:
+      - Network
+      - Where
+      - How you learn
+      - Cost (as last listed)
+      rows:
+      - - Rock Choir
+        - Over 400 rehearsals in England, Scotland, Wales and Ireland, plus online
+        - By rote from the leader, with annotated lyrics and audio and video aids
+        - £120 a term (three terms, £360 a year) or £30 a month by Direct Debit over 12 months; free taster
+      - - Popchoir
+        - London choirs and Launceston, Cornwall, plus online catch-up
+        - By ear, in arranged parts (Top, Mid 1, Mid 2, Low)
+        - £120 a term or £30 a month (minimum one term); free taster in the first six weeks of term
+      - - Got 2 Sing
+        - 17 adult choirs in the West Midlands and nearby, plus an online choir; audition policy not stated
+        - Teach tracks in an online members' area
+        - Not listed on the pages we opened; free taster
+      - - Natural Voice Network
+        - Directory of community choirs across the UK and abroad
+        - Set by each choir; some listings say songs are taught by ear
+        - Set by each choir
+      - - Voices Rock (US)
+        - Colorado, Portland (Oregon), Seattle, Tacoma and Gig Harbor (Washington), Raleigh (North Carolina), Tucson (Arizona)
+        - Parts practiced with jam tracks; concerts sung from memory
+        - $285 for a 10-week session, payable in three monthly installments; scholarships available
+    after: 'Natural Voice Network is a directory rather than one organization, so read each listing: some, such as Acapellies in Stroud, describe themselves as non-auditioned. In the US, the Barbershop
+      Harmony Society''s chapter finder lists local choruses, but its pages do not say whether they audition, so ask the chapter (and see our barbershop page).'
+  - h: Costs and commitment
+    p:
+    - Rock Choir members pay either per term or by monthly Direct Debit, and the Direct Debit is taken in all 12 months, including the ones without rehearsals. You can join for a single term. Refunds are
+      given only in exceptional circumstances, and there are concessions for full-time students, serving armed forces and families with three or more relatives taking part.
+    - 'Popchoir''s monthly option is not month to month: it commits you to at least one term of four payments. Voices Rock runs 10-week sessions of 10 rehearsals, a dress rehearsal and a concert, and after
+      the first rehearsal a refund carries a $30 admin fee.'
+  - h: Performances
+    p:
+    - Performing is optional in Rock Choir, Popchoir and Voices Rock. Rock Choir has sung at Wembley Arena and made a top-twenty album; most of its performances are free for members apart from your own
+      travel and refreshments, while tours, recording sessions and arena events are ticketed extras. Popchoir performs year round, from the O2 to fundraising at shopping centers and farmers' markets.
+    - Voices Rock concerts last about an hour, are sung off book, and usually mean wearing all black; audience tickets cost $25 to $30 depending on the venue.
+  faq:
+  - q: Do you have to audition for Rock Choir?
+    a: No. Rock Choir says there is no audition and you do not need to read music; members learn from annotated lyrics instead of written music.
+  - q: How much does Rock Choir cost?
+    a: As last listed, membership is £120 a term, with three terms a year (£360), or £30 a month by Direct Debit taken over 12 months. The first taster session is free.
+  - q: What happens at a Rock Choir taster session?
+    a: It lasts about 90 minutes with a short break. You can join the warm-ups and learn part of a song or just watch, and you hear the choir perform.
+  - q: Do I need to read music to join a choir?
+    a: Not for these networks. Rock Choir teaches line by line from lyrics, and Popchoir teaches everything by ear.
+  - q: Do I have to perform in concerts?
+    a: No. Rock Choir, Popchoir and Voices Rock all say performing is optional, though Rock Choir members pay their own travel to performances.
+  - q: Is there a choir with no audition in the US?
+    a: Voices Rock is a non-audition rock and pop choir with chapters in Colorado, Oregon, Washington, North Carolina and Arizona. As last listed, a 10-week session costs $285 and adult choirs are for people
+      over 21.
+  sources:
+  - label: Rock Choir, FAQs (audition, lyrics, fees, payment, performances, taster length)
+    url: https://rockchoir.com/faqs/
+    checked: '2026-11-22'
+  - label: Rock Choir, Join (taster, 400+ choirs, 2-4 songs a term, fees)
+    url: https://rockchoir.com/join/
+    checked: '2026-11-22'
+  - label: Rock Choir, About Rock Choir (founder, taught by rote, performances)
+    url: https://rockchoir.com/about-rock-choir/
+    checked: '2026-11-22'
+  - label: Popchoir, Membership (no audition, taster, fees, voice parts, performances)
+    url: https://www.popchoir.com/membership
+    checked: '2026-11-22'
+  - label: Popchoir, About us (founded 2008, taught by ear, locations)
+    url: https://www.popchoir.com/about-us
+    checked: '2026-11-22'
+  - label: Got 2 Sing, About Got 2 Sing (choir list, teach tracks, free taster)
+    url: https://www.got2sing.co.uk/about-got2sing-choir-midlands
+    checked: '2026-11-22'
+  - label: Natural Voice Network, Find a choir or singing group (directory and sample listings)
+    url: https://naturalvoice.net/find-a-choir/page/2
+    checked: '2026-11-22'
+  - label: Voices Rock, FAQ (no audition, fees, sessions, concerts, locations)
+    url: https://voicesrock.com/faq/
+    checked: '2026-11-22'
+  - label: OPB, Portland Voices Rock non-audition choir (founded Denver 2014)
+    url: https://www.opb.org/article/2025/11/19/think-out-loud-portland-oregon-rock-voices-choir/
+    checked: '2026-11-22'
+  - label: Barbershop Harmony Society, Find or Start a Chorus
+    url: https://www.barbershop.org/join/find-or-start-a-chorus
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: Bev Walsh, from Saddleworth, Greater Manchester
+    line: Joined the new Rock Choir in Saddleworth after years of shift work as a nurse kept her from choirs, and has since sung at The Bridgewater Hall, the Edinburgh Fringe and three times at Abbey Road
+      Studios.
+    title: I waited years for the opportunity to join
+    outlet: Rock Choir
+    url: https://rockchoir.com/member-stories/waiting-years-to-join-rock-choir/
+    checked: '2026-11-22'
+  related:
+  - sing-barbershop-chorus
+  - join-a-gospel-choir
+  - take-singing-lessons
+  - sing-messiah-from-scratch
   kit:
   - name: Choir folder
-    why: holds lyric sheets and music with a hand strap
+    why: holds lyric sheets flat, with a hand strap for standing rehearsals
     url: https://www.amazon.co.uk/s?k=choir+folder
-  - name: Water bottle
-    why: singing for two hours is thirsty work
+  - name: Reusable water bottle
+    why: for sips between songs in a long rehearsal
     url: https://www.amazon.co.uk/s?k=reusable+water+bottle
-  - name: Book on singing
-    why: tips on breathing and finding your voice
-    url: https://www.amazon.co.uk/s?k=singing+for+beginners+book
 - id: sing-barbershop-chorus
   title: Sing with a barbershop chorus
   category: connect
@@ -20535,24 +20859,201 @@
   regions:
   - uk
   - us
-  why: Brewing is cookery, chemistry and patience in one pot, and the result is a beer that exists nowhere else. Most people begin with malt extract, which the American Homebrewers Association describes as needing minimal equipment, and move on to mashing their own grain once the first batch has been drunk.
+  why: Brewing is cookery, chemistry and patience in one pot, and the result is a beer that exists nowhere else. Most people begin with malt extract, which the American Homebrewers Association says needs
+    only minimal equipment, and some later move on to partial mash or all-grain brewing.
   start:
-  - Watch the American Homebrewers Association's all-extract tutorial, which follows a brew day from the boil to bottling.
-  - Buy a starter kit with a fermenter, airlock, siphon and steriliser, plus a malt extract recipe kit in a style you like to drink.
-  - Look up a local homebrew club, through the National Association of Wine and Beer Makers in the UK, and take a bottle along for an honest opinion.
+  - Watch the American Homebrewers Association's all-extract tutorial, which follows a full brew day from the boil to bottling.
+  - Buy a starter kit with a fermenter, airlock and no-rinse sanitizer, plus a recipe kit in a style you like to drink.
+  - Find a homebrew club, through the American Homebrewers Association finder in the US or the National Association of Wine and Beer Makers in the UK, and take a bottle along for an honest opinion.
   links:
   - label: American Homebrewers Association all-extract homebrewing tutorials
-    url: https://homebrewersassociation.org/category/all-extract-homebrewing
+    url: https://www.homebrewersassociation.org/category/all-extract-homebrewing
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-22'
+  - label: 'American Homebrewers Association: find a homebrew club'
+    url: https://www.homebrewersassociation.org/homebrew-clubs/find-a-homebrew-club/
+    region: us
+    checked: '2026-11-22'
   - label: 'National Association of Wine and Beer Makers: who we are (UK amateur body)'
     url: https://nawb.org.uk/who-we-are/
     region: uk
-    checked: '2026-10-07'
+    checked: '2026-11-22'
+  - label: 'National Association of Wine and Beer Makers: homebrew and wine appreciation clubs'
+    url: https://nawb.org.uk/affiliations/
+    region: uk
+    checked: '2026-11-22'
+  seo_title: 'How to brew beer at home: a beginner''s guide'
+  description: How to brew beer at home, from extract kits to brew in a bag, with timings, kit costs, the UK and US rules, clubs and courses for a first batch.
+  safety: Bottles can burst if you add too much priming sugar, bottle too early or the beer is infected. Craft Beer & Brewing advises safety glasses or a face shield, gloves and chilling the bottles before
+    handling a batch that has started to explode.
+  detail:
+  - h: What brew day is really like
+    p:
+    - On the American Homebrewers Association's beginner recipe, you bring 1 gallon (3.8 liters) of water to the boil, take the pot off the heat to stir in the malt extract so it does not scorch, then boil
+      it again and add hops at set times. That recipe uses a 30-minute boil.
+    - The hot wort goes into a fermenter half full of cold water and is topped up to 5 gallons (about 19 liters). Once it has cooled to 70-75°F (21-24°C) you add the yeast, fit an airlock and shake the
+      fermenter for a minute or two so the yeast has oxygen.
+    - Then comes the waiting. Bubbling usually starts within 12 to 72 hours, fermentation takes about one to two weeks, and the AHA says the beer is ready to bottle after three to four weeks in the fermenter.
+      After priming and bottling, it needs another two to three weeks at around 70°F (21°C) to carbonate, so plan on five to seven weeks from brew day to first glass.
+  - h: Extract, brew in a bag or full all-grain
+    table:
+      head:
+      - Method
+      - What you do
+      - Extra kit beyond the basics
+      - How the AHA describes it
+      rows:
+      - - All-extract
+        - Dissolve ready-made malt extract in water, boil with hops, cool and ferment
+        - A boil pot of 2 gallons or more
+        - The starting point for most new brewers, with minimal equipment
+      - - All-grain, brew in a bag (BIAB)
+        - Steep crushed grain in a mesh bag inside the boil pot, around 152°F (66.7°C) for 60 minutes, then lift the bag out and boil
+        - A BIAB bag and a pot big enough for the full volume (the example recipe starts with 8.5 gallons, or 32.2 liters, of water)
+        - All-grain control with minimal equipment, suited to tight space, time or budget
+      - - All-grain, batch sparge
+        - Mash grain in a separate mash tun around 150°F (65.6°C) for 60 minutes, rinse it with hot water from a second pot, then boil
+        - A mash tun and a second pot for the rinse water
+        - Advanced, with more steps and more equipment
+    after: The AHA suggests a partial mash as a step between extract and full all-grain. Brew in a bag lets you make all-grain beer with one large pot instead of a mash tun.
+  - h: Keeping it clean, and the hard parts
+    list:
+    - Everything that touches the wort after the boil must be sanitized, and the AHA warns that leftover debris can harbor microbes that spoil beer even when you sanitize.
+    - Do not pour wort hotter than 100°F (37.8°C) into a glass fermenter, as it could shatter.
+    - Slowing bubbles in the airlock do not prove fermentation has finished. A hydrometer reading tells you.
+    - The AHA recipe primes a 5-gallon batch with 5 ounces (141.7 g) of dextrose. Craft Beer & Brewing names too much priming sugar, bottling too early and infection as the causes of exploding bottles,
+      and suggests opening a test bottle four to five days after bottling.
+  - h: What it costs to start
+    table:
+      head:
+      - Option
+      - Where
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - Essential Starter Kit
+        - The Malt Miller (UK)
+        - 30-liter fermenting bucket, tap, airlock, Chemsan no-rinse sanitizer, paddle and hydrometer; ingredients bought separately
+        - £30.00
+      - - Essential Brew Share Enjoy Homebrew Starter Kit
+        - Northern Brewer (US)
+        - 6.5-gallon fermenter, bottling bucket, capper and caps, cleanser and a Block Party Amber Ale recipe kit for 5 gallons; kettle and bottles not included
+        - $79.98 sale price (regular $99.99)
+      - - Brew Day
+        - The Malt Miller, Swindon (UK)
+        - About five hours brewing all-grain on Grainfather equipment with instructors, lunch, and about 23 liters of wort to ferment at home
+        - £129.00 to £139.00
+      - - Brewing Course (Brew Smarter)
+        - Harper Adams University (UK)
+        - Two-day weekend on ingredients, equipment, malt and water chemistry, brewing microbiology and tasting
+        - £450, with optional bed and breakfast at £60 a night
+      - - Introduction to Home Brewing
+        - Calhoun Community College, at Fractal Brewing Project, Huntsville, Alabama (US)
+        - Six sessions, three on theory and equipment and three brewing, fermenting and packaging a beer with the head brewer; 21 and over
+        - $320
+    after: Northern Brewer suggests an 8-gallon kettle and two cases of bottles on top of its kit. Course dates change, so check each page for the next one.
+  - h: The law, clubs and competitions
+    p:
+    - In the UK, section 72 of the Finance (No. 2) Act 2023 says alcohol duty is not charged on alcohol, other than spirits, made by someone who produces it only for their own domestic use. Selling is a
+      different matter. GOV.UK's guidance for commercial brewers says you need HMRC approval as an alcoholic products producer and licences to sell alcohol.
+    - In the US, federal rules (27 CFR 25.205) let any adult of 18 or over brew beer tax free for personal or family use, not for sale, up to 100 gallons a calendar year in a household with one adult and
+      200 gallons with two or more. If your area sets a higher minimum age for buying beer, that age applies, and the rule does not override state or local law.
+    - Clubs are where you get honest feedback. The AHA's finder lists more than 1,800 registered clubs, and the association runs the National Homebrew Competition. In the UK, the National Association of
+      Wine and Beer Makers describes itself as the main amateur body, holds an annual show judged to National Guild of Wine and Beer Judges standards, and links to regional federations of clubs. Its 2027
+      show is listed for 16 to 18 April at the Royal Court Hotel, Coventry.
+  faq:
+  - q: How long does it take to brew beer at home?
+    a: On the AHA's extract recipe, fermentation takes about one to two weeks and the beer is ready to bottle after three to four weeks. Bottles then need two to three weeks at room temperature to carbonate.
+  - q: Is it legal to brew beer at home in the UK?
+    a: Yes. The Finance (No. 2) Act 2023 exempts alcohol other than spirits from duty when it is made only for the maker's own domestic use. Selling beer needs HMRC approval and alcohol licences, according
+      to GOV.UK.
+  - q: How much beer can you legally brew at home in the US?
+    a: Federal rules allow 100 gallons a calendar year in a household with one adult and 200 gallons with two or more adults, for personal or family use and not for sale. State and local law still applies.
+  - q: What is brew in a bag?
+    a: An all-grain method where crushed grain steeps in a mesh bag inside the boil pot, then the bag is lifted out before the boil. The AHA says it needs minimal equipment compared with sparging methods.
+  - q: How much does it cost to start home brewing?
+    a: As last listed, The Malt Miller's Essential Starter Kit was £30.00 without ingredients, and Northern Brewer's Essential Brew Share Enjoy kit, with a recipe kit, was $79.98 on sale. You may also need
+      a kettle and bottles.
+  - q: Why do homebrew bottles explode?
+    a: Craft Beer & Brewing names too much priming sugar, bottling too early and infection. It suggests opening a test bottle a few days after bottling and refrigerating early if carbonation is high.
+  sources:
+  - label: American Homebrewers Association, All-Extract Homebrewing Archives (starting point, minimal equipment)
+    url: https://www.homebrewersassociation.org/category/all-extract-homebrewing
+    checked: '2026-11-22'
+  - label: American Homebrewers Association, All-Extract Homebrewing (equipment, brew day steps, timings, priming, glass fermenter warning)
+    url: https://homebrewersassociation.org/tutorials/all-extract-homebrewing/all-extract-homebrewing/
+    checked: '2026-11-22'
+  - label: American Homebrewers Association, All-Grain (Brew in a Bag) Homebrewing
+    url: https://homebrewersassociation.org/tutorials/all-grain-brew-in-a-bag/all-grain-brew-in-a-bag-homebrewing/
+    checked: '2026-11-22'
+  - label: American Homebrewers Association, All-Grain (Batch Sparge) Homebrewing
+    url: https://homebrewersassociation.org/tutorials/all-grain-batch-sparge-homebrewing/all-grain-batch-sparge-homebrewing/
+    checked: '2026-11-22'
+  - label: American Homebrewers Association, Find a Homebrew Club
+    url: https://www.homebrewersassociation.org/homebrew-clubs/find-a-homebrew-club/
+    checked: '2026-11-22'
+  - label: legislation.gov.uk, Finance (No. 2) Act 2023, section 72, Exemption for production for personal consumption
+    url: https://legislation.gov.uk/ukpga/2023/30/section/72?view=plain
+    checked: '2026-11-22'
+  - label: GOV.UK, rules and regulations for commercial brewing
+    url: https://www.gov.uk/guidance/brewing-beer-rules-and-regulations-for-commercial-brewing
+    checked: '2026-11-22'
+  - label: Cornell Law School LII, 27 CFR 25.205 Production
+    url: https://www.law.cornell.edu/cfr/text/27/25/205
+    checked: '2026-11-22'
+  - label: TTB, Beer FAQs (home brewing limits, competitions)
+    url: https://www.ttb.gov/beer/beer-faqs/print
+    checked: '2026-11-22'
+  - label: National Association of Wine and Beer Makers, Who We Are
+    url: https://nawb.org.uk/who-we-are/
+    checked: '2026-11-22'
+  - label: National Association of Wine and Beer Makers, home page (2027 annual show)
+    url: https://nawb.org.uk/
+    checked: '2026-11-22'
+  - label: National Association of Wine and Beer Makers, Homebrew / Wine Appreciation Clubs
+    url: https://nawb.org.uk/affiliations/
+    checked: '2026-11-22'
+  - label: 'Craft Beer & Brewing, Safety First: Don''t Get (Bottle) Bombed'
+    url: https://beerandbrewing.com/safety-first-don-t-get-bottle-bombed
+    checked: '2026-11-22'
+  - label: The Malt Miller, Essential Starter Kit
+    url: https://www.themaltmiller.co.uk/product/essential-starter-kit/
+    checked: '2026-11-22'
+  - label: Northern Brewer, Essential Brew Share Enjoy Homebrew Starter Kit
+    url: https://www.northernbrewer.com/collections/5-gallon-homebrew-kits/products/essential-brew-share-enjoy-homebrew-starter-kit
+    checked: '2026-11-22'
+  - label: The Malt Miller, Brew Day
+    url: https://www.themaltmiller.co.uk/product/brew-day-10-february-2024/
+    checked: '2026-11-22'
+  - label: Harper Adams University, Brewing Course
+    url: https://store.harper-adams.ac.uk/product-catalogue/conferences-events/short-course-conference-office/conference-and-events/brewing-course
+    checked: '2026-11-22'
+  - label: Calhoun Community College, Introduction to Home Brewing
+    url: https://calhoun.edu/programs-training/career-training/home-brewing/
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: Stephen Folland, from Great Shefford
+    line: Won CAMRA's first national homebrew competition with a 16% stout, the first beer he had ever brewed, which he made in 2017 and aged for five years.
+    title: Home brewer from Great Shefford wins national award
+    outlet: Newbury Today
+    url: https://www.newburytoday.co.uk/news/home-brewer-is-crowned-brewer-of-the-future-in-national-co-9267529
+    checked: '2026-11-22'
+  related:
+  - press-your-own-cider
+  - make-your-own-gin
+  - tour-a-whisky-distillery
+  - learn-to-ferment-vegetables
   kit:
   - name: Beer brewing starter kit
     why: a fermenter, airlock and hydrometer are the basics
     url: https://www.amazon.co.uk/s?k=home+brew+beer+starter+kit
+  - name: No-rinse brewing sanitizer
+    why: for everything that touches the beer after the boil
+    url: https://www.amazon.co.uk/s?k=no+rinse+brewing+steriliser
+  - name: Bottle capper and crown caps
+    why: to seal glass bottles for conditioning
+    url: https://www.amazon.co.uk/s?k=beer+bottle+capper+crown+caps
 - id: rehome-hens
   title: Give a home to ex-commercial hens
   category: eat
@@ -23173,20 +23674,174 @@
   regions:
   - uk
   - us
-  why: A future guide dog spends its early life in an ordinary home, where a volunteer teaches it house manners and takes it into shops, offices, parks and public transport. The puppy then goes on to formal training, which means the job ends with handing the dog back.
+  why: A future guide dog spends its first year or so in an ordinary home, where a volunteer teaches it house manners and takes it into shops, offices, parks and onto public transport. The charity covers
+    the vet bills, and the job ends with handing the dog back for formal training.
   start:
-  - Read the Guide Dogs puppy raiser page in the UK, or the Guide Dogs for the Blind page, which lists the US states it covers.
-  - Check the practical requirements on the page, such as a secure outdoor area and the landlord's permission if you rent.
-  - Contact the charity's volunteering team or complete its puppy raising interest form.
+  - Read the puppy raiser page of a charity that covers where you live, such as Guide Dogs in the UK, or Guide Dogs for the Blind, The Seeing Eye or Guiding Eyes for the Blind in the US.
+  - Check the practical rules, such as a secure outdoor area, how long the puppy may be left alone, whether you have a car and your landlord's permission if you rent.
+  - Contact the charity's volunteering team or fill in its puppy raising interest form, and expect a home visit.
   links:
   - label: Guide Dogs puppy raiser volunteering page (UK charity)
     url: https://www.guidedogs.org.uk/how-you-can-help/volunteering/volunteer-with-our-dogs/puppy-raiser/
     region: uk
-    checked: '2026-10-08'
+    checked: '2026-11-22'
+  - label: Canine Partners puppy training volunteer page (UK charity)
+    url: https://caninepartners.org.uk/?p=238
+    region: uk
+    checked: '2026-11-22'
   - label: Guide Dogs for the Blind puppy raising volunteers page (US charity)
     url: https://www.guidedogs.com/volunteering/puppy-raising-volunteers
     region: us
-    checked: '2026-10-08'
+    checked: '2026-11-22'
+  - label: The Seeing Eye puppy raising page (US charity)
+    url: https://seeingeye.org/puppyraising/
+    region: us
+    checked: '2026-11-22'
+  - label: Guiding Eyes for the Blind puppy raising program (US charity)
+    url: https://www.guidingeyes.org/volunteer/puppy-raising/
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Become a guide dog puppy raiser: what it involves'
+  description: What a guide dog puppy raiser does, how long it lasts, what the charity pays for and the rules, with Guide Dogs and three US schools side by side.
+  detail:
+  - h: What the job involves day to day
+    p:
+    - With Guide Dogs in the UK, the puppy arrives at six to eight weeks old. You look after it at home and take it to everyday places so it gets used to them, teach it to settle on its own, go to monthly
+      puppy classes, meet your volunteer manager and fill in short questionnaires on its progress. Online modules cover things like food manners and greeting visitors.
+    - Guide Dogs for the Blind in the US asks raisers to take the puppy almost everywhere they go, including workplaces, buses and restaurants, and links each raiser to the nearest puppy club. Guiding Eyes
+      for the Blind warns that a young puppy needs a toilet break and feeding every three to four hours.
+  - h: Who can do it
+    list:
+    - 'Time at home: Guide Dogs says to build up time alone gradually, to a maximum of three hours (its role description says four). Canine Partners also sets three hours as the limit and asks raisers to
+      be at home for most of the day, and considers part-time workers who can show they have time to supervise the puppy.'
+    - 'Outdoor space: Guide Dogs asks for a safe, secure outdoor toilet area, and Canine Partners for a secure garden that is not shared. Guide Dogs for the Blind says no changes to your house or yard are
+      required.'
+    - 'Strength and transport: Guide Dogs wants someone at home who can handle a dog of 25-40 kg (55-88 lb) and, ideally, access to a car. Guiding Eyes says its dogs may reach 60-80 lb (27-36 kg).'
+    - 'Renting and age: Guide Dogs needs your landlord''s agreement and applicants must be 18 or over. Both Guide Dogs and Guide Dogs for the Blind include a home visit; Guide Dogs for the Blind''s can
+      be virtual or in person.'
+    - 'Experience: The Seeing Eye and Guide Dogs for the Blind both say none is needed.'
+  - h: Five charities side by side
+    table:
+      head:
+      - Charity
+      - Area covered
+      - How long the puppy stays
+      - What the charity pays for
+      - Rules worth knowing
+      rows:
+      - - Guide Dogs (UK)
+        - UK, with local puppy classes
+        - Arrives at 6-8 weeks, stays 12-16 months
+        - Vet costs, food and training materials; optional allowance up to £100 a year
+        - Secure outdoor area, up to 3 hours alone, ideally a car, landlord's permission
+      - - Canine Partners (UK, assistance dogs)
+        - Listed regions including Bedfordshire, Derbyshire and Nottinghamshire, Hull, Leicestershire, Staffordshire and West Midlands, East and West Berkshire, South Hampshire and Surrey
+        - Arrives at about 8 weeks, stays until around 14 months
+        - A starter pack; you pay for extras such as chews, toys, poo bags, ID tag and local travel (food and vet costs are not stated on its pages)
+        - Home most of the day, secure non-shared garden, house, bungalow or ground-floor flat, own transport
+      - - Guide Dogs for the Blind (US)
+        - Nine western states, with hybrid raising in the San Francisco Bay Area and around Portland, Oregon
+        - About a year
+        - Vet care, equipment and learning materials
+        - Join a local puppy club; no house or yard changes needed; joining takes two to four months on average
+      - - The Seeing Eye (US)
+        - All of New Jersey, 21 Pennsylvania counties, Delaware, Carroll and Cecil counties in Maryland, and Orange, Rockland and Westchester counties in New York
+        - Arrives at 7-8 weeks, returns at about 13-16 months
+        - Food, heartworm, flea and tick medicines, and all medical costs
+        - Join a local puppy club; another dog at home must be at least six months older than the puppy
+      - - Guiding Eyes for the Blind (US)
+        - Regional programs from Maine to North Carolina and Ohio, with a remote option elsewhere
+        - Roughly 12-18 months, sometimes in more than one home
+        - Preventive medicines and all pre-authorized vet bills; the raiser buys the food
+        - Most raisers live within about an hour of a class location; remote raising is available elsewhere; a pre-placement class first
+    after: The Seeing Eye sends people outside its area to Assistance Dogs International to find a closer organization.
+  - h: The hard part, giving the dog back
+    p:
+    - At the end, the dog goes back for formal training. Guide Dogs says this takes about 20 weeks before an assessment and, if the dog passes, a match with a guide dog owner. At The Seeing Eye, a returning
+      dog spends about a month in the kennel and then four months training with an instructor, and raisers are invited to a town walk.
+    - Raisers who have done it many times still talk about the goodbye. In an ITV News report, one long-serving Wiltshire raiser described the final days and last walk as part of the experience.
+  - h: If the puppy does not qualify
+    p:
+    - Not every puppy becomes a guide. Guide Dogs says it may look at another role, such as its Buddy Dog service, or rehome the dog as a pet, possibly with its puppy raiser. Guide Dogs for the Blind gives
+      the most recent raiser the first option to adopt when a dog is not placed with another organization, and charges members of the public a $2,000 adoption fee. The Seeing Eye says the raiser usually
+      gets the first chance to adopt, and Canine Partners may train a dog for a different role, place it with another organization or rehome it.
+  faq:
+  - q: How long do you keep a guide dog puppy?
+    a: Guide Dogs in the UK says 12 to 16 months, from six to eight weeks old. In the US, Guide Dogs for the Blind says about a year, The Seeing Eye until about 13 to 16 months old, and Guiding Eyes for
+      the Blind roughly 12 to 18 months.
+  - q: Do you have to pay to raise a guide dog puppy?
+    a: Guide Dogs pays for vet costs, food and training materials, and The Seeing Eye covers food and all medical costs. Guiding Eyes for the Blind covers vet bills and preventive medicines but expects
+      raisers to buy the food.
+  - q: Can I work and be a puppy raiser?
+    a: Guide Dogs says working from home can fit if you make time for the puppy, and puppies can be left alone for no more than three hours once built up to it. Canine Partners considers part-time workers
+      who can show they have time to supervise the puppy, and may allow the puppy at work after an assessment.
+  - q: Do I need a garden to raise a guide dog puppy?
+    a: Guide Dogs asks for a safe, secure outdoor area for toilet breaks and Canine Partners for a secure, non-shared garden. Guide Dogs for the Blind says no changes to your house or yard are required.
+  - q: What happens if a guide dog puppy fails training?
+    a: It may move to another role or be adopted as a pet. Guide Dogs for the Blind and The Seeing Eye both offer the puppy raiser the first chance to adopt.
+  - q: Which states can you raise a guide dog puppy in?
+    a: Guide Dogs for the Blind covers nine western states, The Seeing Eye covers New Jersey and parts of Pennsylvania, Delaware, Maryland and New York, and Guiding Eyes for the Blind runs from Maine to
+      North Carolina and Ohio, with a remote option elsewhere.
+  sources:
+  - label: Guide Dogs, Puppy Raiser (UK)
+    url: https://www.guidedogs.org.uk/how-you-can-help/volunteering/volunteer-with-our-dogs/puppy-raiser/
+    checked: '2026-11-22'
+  - label: Guide Dogs, Puppy Raiser role description (arrival age, length, formal training, career change)
+    url: https://guidedogs.org.uk/how-you-can-help/volunteering-for-guide-dogs/volunteer-role-descriptions/puppy-walker
+    checked: '2026-11-22'
+  - label: Canine Partners, Puppy Training Volunteer
+    url: https://caninepartners.org.uk/?p=238
+    checked: '2026-11-22'
+  - label: Canine Partners, Puppy Training Volunteer Frequently Asked Questions (PDF)
+    url: https://caninepartners.org.uk/app/uploads/2026/03/Puppy-Training-Volunteer-Frequently-asked-Questions.pdf
+    checked: '2026-11-22'
+  - label: Guide Dogs for the Blind, Puppy Raising Volunteers
+    url: https://www.guidedogs.com/volunteering/puppy-raising-volunteers
+    checked: '2026-11-22'
+  - label: Guide Dogs for the Blind, Volunteering Overview (nine western states)
+    url: https://www.guidedogs.com/support-gdb/volunteer
+    checked: '2026-11-22'
+  - label: 'Guide Dogs for the Blind, Explainer Video: Guide Dogs for the Blind Puppy Raising'
+    url: https://guidedogs.com/resources/explainer-videos/explainer-video-guide-dogs-for-the-blind-puppy-raising
+    checked: '2026-11-22'
+  - label: Guide Dogs for the Blind, Puppy Raising Volunteer Application Process
+    url: https://www.guidedogs.com/puppy-raising-guidebook/lets-work-together/puppy-raising-volunteer-application-process
+    checked: '2026-11-22'
+  - label: Guide Dogs for the Blind, Career Change Adoption and Placement
+    url: https://www.guidedogs.com/puppy-raising-guidebook/beyond-puppy-raising/career-change-adoption-and-placement
+    checked: '2026-11-22'
+  - label: The Seeing Eye, Puppy Raising
+    url: https://seeingeye.org/puppyraising/
+    checked: '2026-11-22'
+  - label: Guiding Eyes for the Blind, Puppy Raising Program
+    url: https://www.guidingeyes.org/volunteer/puppy-raising/
+    checked: '2026-11-22'
+  - label: ITV News, Meet the Wiltshire couple who have helped train guide dog puppies for 15 years
+    url: https://itv.com/news/westcountry/2023-01-13/meet-the-couple-training-guide-dog-puppies-in-wiltshire
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: Janice Boswell and George McCaffery, from Corsham, Wiltshire
+    line: Have helped train more than 20 puppies for Guide Dogs from their home over about 15 years.
+    title: Meet the Wiltshire couple who have helped train guide dog puppies for 15 years
+    outlet: ITV News
+    url: https://itv.com/news/westcountry/2023-01-13/meet-the-couple-training-guide-dog-puppies-in-wiltshire
+    checked: '2026-11-22'
+  related:
+  - foster-a-rescue-animal
+  - volunteer-with-your-dog
+  - walk-dogs-at-a-dogs-trust-centre
+  - walk-a-dog-for-the-cinnamon-trust
+  kit:
+  - name: Dog training treat pouch
+    why: keeps rewards to hand on walks and at puppy class
+    url: https://www.amazon.co.uk/s?k=dog+training+treat+pouch
+  - name: Waterproof walking coat
+    why: socializing a puppy means going out in all weathers
+    url: https://www.amazon.co.uk/s?k=waterproof+walking+coat
+  - name: Enzyme pet stain and odour remover
+    why: for the accidents that come with house training
+    url: https://www.amazon.co.uk/s?k=enzyme+pet+stain+odour+remover
 - id: volunteer-in-the-nhs
   title: Volunteer with the NHS
   category: connect
@@ -113926,3 +114581,1653 @@
   - watch-a-sheepdog-trial
   - volunteer-national-trust
   - wildlife-trust-volunteer
+- id: join-a-choral-society
+  title: Join a choral society and sing a requiem or oratorio
+  category: connect
+  kind: habit
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A choral society works on the big pieces for choir and orchestra, such as Handel's Messiah, and spends a season of weekly rehearsals getting each one ready for a concert. You learn one part inside
+    a large chorus and end up singing it in a cathedral or concert hall with an orchestra.
+  start:
+  - Search the Making Music group finder (UK) or the Singers.com chorus listings (US) for a classical choir or choral society near you.
+  - Read the society's joining page to see whether it holds a voice test, when it takes new singers and what the annual subscription is.
+  - Go to an open or trial rehearsal before you commit, and ask the conductor which voice part suits you.
+  links:
+  - label: 'Making Music: Find a music group'
+    url: https://www.makingmusic.org.uk/resources/find-a-group-list
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Bristol Choral Society: Join'
+    url: https://www.bristolchoral.co.uk/join
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Singers.com: Choral groups by state'
+    url: https://www.singers.com/lists/choral-groups/state/
+    region: us
+    checked: '2026-11-22'
+  - label: 'Oratorio Society of New York: Auditions'
+    url: https://osny.org/?p=658
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'How to join a choral society: auditions and subs'
+  description: How amateur choral societies work, what the voice test involves, when they take new singers and what the annual subscription costs in the UK and US.
+  detail:
+  - h: How joining works
+    p:
+    - Many choral societies let you try a few rehearsals first. Bristol Choral Society invites new singers to a few rehearsals with no obligation and then holds a short, friendly audition with its conductor.
+      Wimbledon Choral Society takes new members only in the first two rehearsals of a term, and its voice test, held a week or two later, lasts a few minutes and needs no preparation.
+    - At many societies the test is about singing in tune rather than sight-reading. Hereford Choral Society says it listens for singing in tune and blending with the chorus, and Wimbledon does not test
+      sight-reading but expects you to be able to follow music. Larger city choirs ask for more; the Oratorio Society of New York looks for strong sight-reading and some chorus experience.
+  - h: Three choral societies compared
+    table:
+      head:
+      - Society
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Bristol Choral Society
+        - Wednesdays 7.15pm to 9.30pm at City Hall, Bristol; short audition after trial rehearsals
+        - £240 a year, payable by season or term; reduced rate for under-25s
+      - - Hereford Choral Society
+        - Mondays 7.30pm to 9.15pm, September to March; short audition; three concerts a season with orchestra in Hereford Cathedral, including Messiah in December
+        - £150 a year, including loan of scores (you buy your own Messiah)
+      - - Oratorio Society of New York
+        - Thursday evenings and some Saturdays, September to May, Upper East Side of Manhattan; audition; concerts include Messiah at Carnegie Hall
+        - $200 for the season; part or all may be waived for hardship
+    after: Subscriptions are usually charged pro rata if you join partway through a season, and Bristol says anyone worried about cost can talk to its treasurer in confidence.
+  faq:
+  - q: Do you have to audition to join a choral society?
+    a: Many do, but the test is short. Wimbledon Choral Society's voice test lasts a few minutes, needs no preparation and does not include sight-reading.
+  - q: Do I need to read music to join a choral society?
+    a: It helps. Bristol Choral Society says some sight-reading experience is helpful, while the Oratorio Society of New York asks for strong sight-reading skills.
+  - q: How much does it cost to join a choral society?
+    a: Annual subscriptions on the pages we checked ran from £150 at Hereford Choral Society to £240 at Bristol Choral Society, and $200 a season at the Oratorio Society of New York.
+  - q: When can I join a choral society?
+    a: Usually at the start of a term or season. Wimbledon Choral Society takes new singers only during the first two rehearsals of each term, and Hereford charges pro rata if you join after September.
+  sources:
+  - label: Making Music, Find a music group
+    url: https://www.makingmusic.org.uk/resources/find-a-group-list
+    checked: '2026-11-22'
+  - label: Bristol Choral Society, Join
+    url: https://www.bristolchoral.co.uk/join
+    checked: '2026-11-22'
+  - label: Wimbledon Choral Society, Join us
+    url: https://wimbledon-choral.org.uk/page.asp?ID=9
+    checked: '2026-11-22'
+  - label: Hereford Choral Society, Join us
+    url: https://www.herefordchoralsociety.org/JoinUs.php
+    checked: '2026-11-22'
+  - label: Oratorio Society of New York, Auditions
+    url: https://osny.org/?p=658
+    checked: '2026-11-22'
+  - label: Singers.com, Choral groups by state
+    url: https://www.singers.com/lists/choral-groups/state/
+    checked: '2026-11-22'
+  kit:
+  - name: Choral folder
+    why: holds your scores at rehearsals and concerts
+    url: https://www.amazon.co.uk/s?k=choir+music+folder
+  - name: Pencil and eraser set
+    why: for marking breaths and the conductor's notes in your score
+    url: https://www.amazon.co.uk/s?k=pencil+eraser+set
+  - name: Vocal score of Handel's Messiah
+    why: the piece many choral societies sing each December
+    url: https://www.amazon.co.uk/s?k=handel+messiah+vocal+score
+  related:
+  - sing-messiah-from-scratch
+  - take-singing-lessons
+  - learn-to-read-music
+  - join-a-gospel-choir
+- id: sing-sacred-harp
+  title: Sing shape-note music at a Sacred Harp singing
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  - world
+  collection: arts
+  why: Sacred Harp is an American tradition of loud, unaccompanied four-part hymn singing, with the singers seated in a hollow square facing a leader who beats time in the middle. The music uses four note
+    shapes, fa, sol, la and mi, so newcomers can join in without reading music, and anyone may take a turn leading a song.
+  start:
+  - Find a local singing on the fasola.org singings page, which lists groups by US state and in the UK and other countries.
+  - Go along, borrow a loaner tunebook and sit with the tenors, who carry the melody.
+  - Once you know a few songs, try an all-day singing or a weekend convention.
+  links:
+  - label: 'fasola.org: Singings'
+    url: https://fasola.org/singings/
+    region: any
+    checked: '2026-11-22'
+  - label: About London Sacred Harp
+    url: https://londonsacredharp.org/?p=44
+    region: uk
+    checked: '2026-11-22'
+  - label: 'UK Sacred Harp Calendar: UK convention'
+    url: https://www.sacredharp.uk/event/uk-convention/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Camp Fasola: Camp information'
+    url: https://campfasola.org/camp-info/
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Sacred Harp singing: how to join a shape-note singing'
+  description: What happens at a Sacred Harp shape-note singing, how the hollow square works, what it costs and how to find local singings, conventions and camps.
+  detail:
+  - h: What happens at a singing
+    p:
+    - Singers sit in a hollow square with treble, alto, tenor and bass each on one side, facing the center. The tenors have the melody, and Lisa Grayson's beginner's guide suggests sitting with them if
+      you are lost. Each song is usually sung first on its shape syllables and then with the words.
+    - Leading is open to everyone. The leader stands in the middle of the square, faces the tenors and beats time. London Sacred Harp says its singings last about two hours with a short break, and that
+      you need neither music-reading experience nor a so-called good voice.
+  - h: Ways in
+    table:
+      head:
+      - Option
+      - What it is
+      - Cost (as last listed)
+      rows:
+      - - London Sacred Harp
+        - Local singing roughly once a week in London; loaner books for beginners
+        - No admission charge; suggested donation £4 to £6 per singing
+      - - Pikes Peak Sacred Harp Singers, Colorado Springs
+        - Local singing 6pm to 8pm on the first and third Mondays at Switchback Coffee
+        - Free
+      - - All-day singings and conventions
+        - Day or weekend singings; the UK convention runs Saturday to Sunday in Stretford, Manchester, with a Friday evening singing school and pre-registration required
+        - Conventions are free, according to Lisa Grayson's beginner's guide; the UK convention page lists no fee
+      - - Camp Fasola, Anniston, Alabama
+        - Five-day summer camp for youth and adults with at least three hours of singing school a day; the 2026 camp was full
+        - $50 registration fee; full fee not listed online
+    after: If you want your own copy of the 1991 Denson Revision of The Sacred Harp, Grayson's guide lists it at $25 including shipping.
+  faq:
+  - q: What is Sacred Harp singing?
+    a: An American tradition of unaccompanied four-part singing from a tunebook printed in shape notes, sung by a group seated in a hollow square.
+  - q: Do you need to read music to sing Sacred Harp?
+    a: No. London Sacred Harp says the shape-note system was devised so people could learn without music-reading experience, and loaner books are available for beginners.
+  - q: Is Sacred Harp singing free?
+    a: Usually. The Pikes Peak singing in Colorado Springs are free, and London Sacred Harp asks only for a suggested donation of £4 to £6 toward the room.
+  - q: Do you have to be religious to sing Sacred Harp?
+    a: No. The songs are hymns, but London Sacred Harp welcomes singers of any religion or none.
+  sources:
+  - label: fasola.org, Singings
+    url: https://fasola.org/singings/
+    checked: '2026-11-22'
+  - label: Lisa Grayson, A Beginner's Guide to Shape-Note Singing (2024)
+    url: https://fasola.org/resources/Grayson_Beginners_Guide_2024.pdf
+    checked: '2026-11-22'
+  - label: London Sacred Harp, About London Sacred Harp
+    url: https://londonsacredharp.org/?p=44
+    checked: '2026-11-22'
+  - label: UK Sacred Harp Calendar, UK convention
+    url: https://www.sacredharp.uk/event/uk-convention/
+    checked: '2026-11-22'
+  - label: The Gazette, Colorado Springs group carries on centuries-old sacred harp singing tradition
+    url: https://gazette.com/2026/01/09/colorado-springs-group-carries-on-centuries-old-sacred-harp-singing-tradition/
+    checked: '2026-11-22'
+  - label: Camp Fasola, Camp information
+    url: https://campfasola.org/camp-info/
+    checked: '2026-11-22'
+  - label: Camp Fasola, Register
+    url: https://campfasola.org/register
+    checked: '2026-11-22'
+  kit:
+  - name: The Sacred Harp tunebook (1991 Denson Revision)
+    why: your own copy of the book used at most singings
+    url: https://www.amazon.co.uk/s?k=the+sacred+harp+1991+denson+revision
+  - name: Reusable water bottle
+    why: singings are loud and last a couple of hours or all day
+    url: https://www.amazon.co.uk/s?k=reusable+water+bottle
+  related:
+  - sing-sea-shanties
+  - play-in-a-folk-session
+  - join-a-gospel-choir
+  - sing-barbershop-chorus
+- id: learn-hula
+  title: Learn hula at a hālau or class
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - us
+  collection: arts
+  why: Before Hawaiian had a written form, hula was how stories and knowledge passed between generations, and dancers still use their hands and feet to tell a story. A class teaches the steps alongside
+    the chants, the Hawaiian words and the history behind each dance.
+  start:
+  - Try a free or one-off lesson first, such as the free Tuesday hula lesson at the Royal Hawaiian Center in Waikīkī, or an introductory class at a community college when one is listed.
+  - 'When you look for a regular hālau (hula school), ask who trained the teacher: one Hawaiʻi practitioner advises learning from someone trained by a kumu hula.'
+  - Wear leggings or shorts and a T-shirt with a sarong or pāʻū (hula skirt) on top, and bring a binder and pencil for chant and song words.
+  links:
+  - label: 'Royal Hawaiian Center: free hula lessons (Honolulu)'
+    url: https://www.royalhawaiiancenter.com/events/hula-lessons
+    region: us
+    checked: '2026-11-22'
+  - label: 'Kalani: Hawaiian cultural class series, Hula I (Puna, Hawaiʻi Island)'
+    url: https://kalani.com/hawaiian-cultural-classes
+    region: us
+    checked: '2026-11-22'
+  - label: 'Las Positas College Community Education: Introduction to Hula (California)'
+    url: https://communityed.laspositascollege.edu/laspositas/Course/Course.aspx?c=107
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Hula classes for beginners: how to find a hālau'
+  description: 'How to start learning hula: what a hālau is, kahiko and ʻauana, what to wear, respecting the tradition, and real classes in Hawaii and California.'
+  detail:
+  - h: What a hālau is, and what to expect
+    p:
+    - 'A hālau is a hula school or group led by a kumu hula, a teacher who has completed formal training ending in a ceremony called ʻuniki. Students learn far more than steps: techniques, chants, protocol,
+      Hawaiian language and the history behind each dance, and the practice is treated as sacred.'
+    - 'Two broad styles are taught. Kahiko is the ancient form from before Western contact, danced to chant and traditional instruments; ʻauana is modern hula, danced to ukulele and guitar. A beginners
+      course may include one of each: the Las Positas College class teaches one kahiko and one modern hula.'
+    - 'Respect is part of the training. Students generally do not teach a hālau’s dances to others without the kumu’s permission, and when you perform a dance your kumu choreographed you name and credit
+      them. Expect it to be physically demanding, and expect a dress code: one Honolulu hālau asks women for a tank top or white blouse and men for a white T-shirt.'
+  - h: Real ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Royal Hawaiian Center, Waikīkī, Honolulu
+        - 'Drop-in lesson on Tuesdays in the Royal Grove: basic hand gestures and footwork; ages 10 and up, no reservations'
+        - Free
+      - - Kalani (based in Pāhoa, Hawaiʻi Island)
+        - Hula I beginner series with Kumu Lei; needs at least 8 students, dates to be set
+        - $150 a month
+      - - Las Positas College Community Education, California
+        - 'Introduction to Hula: steps, gestures, history and philosophy'
+        - $20 materials fee on the first day (tuition not shown; no classes currently listed)
+  faq:
+  - q: What is the difference between hula kahiko and hula auana?
+    a: Kahiko is ancient hula from before Western contact, performed to chant and traditional instruments in traditional dress. ʻAuana is modern hula, accompanied by ukulele and guitar and usually danced
+      in more casual dress.
+  - q: Can anyone learn hula?
+    a: Yes, if you take it seriously. A hula student quoted by Ke Alakaʻi says anyone committed is welcome, and the Royal Hawaiian Center lesson takes no reservations, so you just turn up.
+  - q: What do you wear to a hula class?
+    a: Comfortable leggings or shorts and a T-shirt with a sarong or pāʻū skirt over them, as Las Positas College asks. Some hālau set a dress code, so ask before the first class.
+  - q: How do I find a good hula teacher?
+    a: Ask about the teacher’s hula genealogy, meaning who trained them. A Hawaiʻi practitioner recommends learning from someone trained by a kumu hula rather than from online videos.
+  sources:
+  - label: Ke Alakaʻi (BYU–Hawaii), What hula is
+    url: https://kealakai.byuh.edu/kuleana/what-hula-is
+    checked: '2026-11-22'
+  - label: Royal Hawaiian Center, Hula Lessons
+    url: https://www.royalhawaiiancenter.com/events/hula-lessons
+    checked: '2026-11-22'
+  - label: Hālau Nā Mamo O Puʻuanahulu, Frequently asked questions (enrollment info)
+    url: https://sonnyching.com/enroll/info.html
+    checked: '2026-11-22'
+  - label: Hālau Nā Mamo O Puʻuanahulu, Hālau enrollment
+    url: https://sonnyching.com/halau_enrollment.html
+    checked: '2026-11-22'
+  - label: Kalani, Hawaiian Cultural Class Series 2026
+    url: https://kalani.com/hawaiian-cultural-classes
+    checked: '2026-11-22'
+  - label: Las Positas College Community Education, Introduction to Hula
+    url: https://communityed.laspositascollege.edu/laspositas/Course/Course.aspx?c=107
+    checked: '2026-11-22'
+  kit:
+  - name: Hula pāʻū skirt or sarong
+    why: worn over leggings or shorts in class
+    url: https://www.amazon.co.uk/s?k=hula+pau+skirt
+  - name: Ring binder with dividers
+    why: for chant and song words and class notes
+    url: https://www.amazon.co.uk/s?k=a4+ring+binder+with+dividers
+  related:
+  - visit-hawaii-volcanoes-national-park
+  - learn-the-ukulele
+  - learn-salsa
+  - go-to-a-folk-dance
+- id: learn-west-coast-swing
+  title: Learn West Coast Swing
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: West Coast Swing is a smooth partner dance danced in a narrow slot to pop and R&B, slower and more relaxed than jive or East Coast Swing. The follower is encouraged to interpret the music too, so
+    it feels like a conversation rather than a routine.
+  start:
+  - 'Find a beginners course or a weekly class: a swing dance club, a dance school or a community college continuing-education program.'
+  - Go on your own if you like; the beginner courses below say no partner is needed.
+  - Book a short block of four to eight weeks so you learn the basic six- and eight-count patterns before you try a social dance.
+  links:
+  - label: 'Bristol City Swing: West Coast Swing beginner course'
+    url: https://goteamup.com/p/9981203-bristol-city-swing/courses/132784
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Meetup: West Coast Swing groups in the UK'
+    url: https://www.meetup.com/topics/west-coast-swing/gb/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Portland Community College: West Coast Swing Beginners (Oregon)'
+    url: https://www.pcc.edu/schedule/winter/dan/9dan601x
+    region: us
+    checked: '2026-11-22'
+  - label: 'North Seattle College continuing education: West Coast Swing'
+    url: https://conted.northseattle.edu/node/97141
+    region: us
+    checked: '2026-11-22'
+  - label: 'World Swing Dance Council: The Evolution of West Coast Swing (PDF)'
+    url: https://www.worldsdc.com/wp-content/uploads/2022/03/Article-Evolution-of-WCS.pdf
+    region: any
+    checked: '2026-11-22'
+  seo_title: West Coast Swing classes for beginners (UK and US)
+  description: What West Coast Swing is, how it differs from Lindy Hop and jive, whether you need a partner, and real beginner courses and costs in the UK and US.
+  detail:
+  - h: How it differs from other swing dances
+    p:
+    - West Coast Swing grew up in California as "slot swing" and was codified in the early 1950s; in 1988 the California Legislature made it the state’s official social dance. It stays in one shared slot,
+      which is why one college calls it good for crowded floors, and the basic patterns end in an "anchor".
+    - It is slower and more relaxed than jive or East Coast Swing, and it is danced to many kinds of music, including pop and rhythm and blues. Unusually, the follower is encouraged to add their own musical
+      interpretation. Bristol City Swing's beginner course starts with six- and eight-count patterns, basic figures and partner connection.
+    - The World Swing Dance Council, which made its debut in 1995, has authorized 14 basic patterns as the foundation of its "West Coast 101" competitions.
+  - h: Real ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Bristol City Swing, Bristol
+        - Four-week Level 1 beginner course, 90 minutes each Wednesday; book as leader or follower, no partner needed
+        - £30
+      - - Contemporary Partner Dancing London (Meetup group)
+        - London group listed under West Coast Swing on Meetup
+        - See group events
+      - - Portland Community College, Oregon
+        - Weekly 55-minute Monday evening classes in month-long sections; basic steps, timing, connection and styling; no partner required
+        - $49 or $65 tuition per section
+      - - North Seattle College continuing education, Washington
+        - Eight Thursday sessions for beginners and improvers; no partner necessary
+        - $130
+    after: Dates change each term, so check the provider’s page for the next course.
+  faq:
+  - q: What is the difference between West Coast Swing and Lindy Hop?
+    a: West Coast Swing has roots in Lindy Hop but is danced in a single slot, slower and smoother, to many kinds of music including pop and R&B. It also gives the follower more freedom to interpret the
+      music.
+  - q: Do I need a partner to learn West Coast Swing?
+    a: No. Portland Community College, North Seattle College and Bristol City Swing all say no partner is needed; at Bristol City Swing partners rotate during class.
+  - q: What music is West Coast Swing danced to?
+    a: Many styles, including pop and rhythm and blues; one UK school describes it as danced to many kinds of music at a slower, smoother pace than jive.
+  - q: Is West Coast Swing hard to learn?
+    a: It takes some formal teaching. A history published by the World Swing Dance Council notes that Lindy and East Coast Swing were easier to pick up naturally, while West Coast Swing needed specific
+      training.
+  sources:
+  - label: World Swing Dance Council, The Evolution of West Coast Swing (Skippy Blair)
+    url: https://www.worldsdc.com/wp-content/uploads/2022/03/Article-Evolution-of-WCS.pdf
+    checked: '2026-11-22'
+  - label: 'Bristol City Swing, Level 1 Leader: West Coast Swing Beginner Course'
+    url: https://goteamup.com/p/9981203-bristol-city-swing/courses/132784
+    checked: '2026-11-22'
+  - label: Meetup, West Coast Swing groups in the United Kingdom
+    url: https://www.meetup.com/topics/west-coast-swing/gb/
+    checked: '2026-11-22'
+  - label: Portland Community College, West Coast Swing Beginners
+    url: https://www.pcc.edu/schedule/winter/dan/9dan601x
+    checked: '2026-11-22'
+  - label: North Seattle College continuing education, West Coast Swing
+    url: https://conted.northseattle.edu/node/97141
+    checked: '2026-11-22'
+  - label: Donaheys Dance Studios, West Coast Swing
+    url: https://www.donaheys.co.uk/classes/west-coast-swing/
+    checked: '2026-11-22'
+  kit:
+  - name: Suede-soled dance shoes
+    why: let you turn and slide on a wooden floor
+    url: https://www.amazon.co.uk/s?k=suede+sole+dance+shoes
+  - name: Dance sneakers
+    why: a cushioned, turnable option for weekly classes
+    url: https://www.amazon.co.uk/s?k=dance+sneakers+split+sole
+  related:
+  - learn-swing-dancing
+  - learn-modern-jive
+  - take-a-ballroom-class
+  - learn-salsa
+- id: learn-to-play-mahjong
+  title: Learn to play mahjong
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Mahjong is a tile game of collecting sets and building a winning hand, and once you know the rules it makes a sociable regular game with friends or a club. There are several distinct styles, from
+    American mah jongg with its card of hands that changes every year to Japanese Riichi.
+  start:
+  - 'Pick a style first: American mah jongg is played from the National Mah Jongg League card, City Lit and the u3a''s subject adviser use British Mah-Jong Association rules, and Riichi is the Japanese
+    game.'
+  - Take a short beginners course at an adult-education college, a community-education program or a games workshop, where sets are usually provided.
+  - For American style, buy the current year’s card from the National Mah Jongg League before class if the course asks for it.
+  links:
+  - label: 'City Lit: An Introduction to Mah Jong, learn to play (London)'
+    url: https://www.citylit.ac.uk/courses/an-introduction-to-mah-jong-learn-to-play/ubd59-2425
+    region: uk
+    checked: '2026-11-22'
+  - label: 'u3a: Mah-jong subject advice and interest groups'
+    url: https://www.u3a.org.uk/learning/subjects/mah-jong
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Dear Asia on ClassBento: Riichi Mahjong workshop for newbies (London)'
+    url: https://classbento.co.uk/weekend-riichi-mahjong-workshop-for-newbies-london
+    region: uk
+    checked: '2026-11-22'
+  - label: 'National Mah Jongg League: store and annual card'
+    url: https://www.nationalmahjonggleague.org/store.aspx
+    region: us
+    checked: '2026-11-22'
+  - label: 'Osher Lifelong Learning Institute, University of Utah: American Mahjong for Beginners'
+    url: https://continue.utah.edu/class/OSHER/667
+    region: us
+    checked: '2026-11-22'
+  - label: 'Forest View Educational Center: American Mah-Jongg Beginner'
+    url: https://d214.ce.eleyo.com/course/3014/fall-2026/american-mah-jongg-beginner
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Learn to play mahjong: styles, classes and the card'
+  description: 'How to start playing mahjong: American, British and Riichi styles, the annual National Mah Jongg League card, and real beginner classes in the UK and US.'
+  detail:
+  - h: Which style to learn
+    list:
+    - 'American mah jongg: the game came to the US in 1920 and the National Mah Jongg League was founded in New York in 1937 to standardize it. The League issues a new card of official hands and rules every
+      year; the 2026 card is listed at $14 standard or $15 large print. Beginners learn the tiles, the card and the Charleston, a passing phase at the start of each game.'
+    - 'British rules: City Lit and the u3a''s subject adviser use British Mah-Jong Association rules, with scoring, doubling and special hands. The u3a adviser warns that groups differ, for example on how
+      many chows are allowed, so agree the rules before you start.'
+    - 'Riichi: the Japanese game, taught in London by Dear Asia in small beginner workshops covering the tiles, sets, winning hands and basic rules.'
+    - The u3a notes that mahjong can be played by two, three or four people, so a small group can start at home.
+  - h: Real ways in
+    table:
+      head:
+      - Where
+      - Style
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - British Mah-Jong Association rules
+        - Four or five weekly two-hour sessions; sets and racks provided
+        - £119 to £129, or £95 to £103 senior and £77 to £84 concession
+      - - Dear Asia, Aldgate, London
+        - Riichi (Japanese)
+        - Two-hour workshop for 1 to 6 people; worksheets included
+        - £40
+      - - Osher Lifelong Learning Institute, Salt Lake City
+        - American
+        - Six Monday or Tuesday sessions of 90 minutes; all materials provided
+        - $99 tuition
+      - - Forest View Educational Center
+        - American
+        - Four weekly sessions; 2026 card required
+        - $69, plus the 2026 card from the League ($14, or $15 large print)
+    after: The City Lit prices are from its 2025 listing; check the college for the next course.
+  faq:
+  - q: Do you need a new mahjong card every year?
+    a: For American mah jongg, yes. The National Mah Jongg League changes the hands and rules every year and sells the new card, listed at $14 standard and $15 large print for 2026.
+  - q: Do I need my own mahjong set for a beginners class?
+    a: Usually not. City Lit provides sets and racks and the Utah course provides all materials, but the Forest View class asks students to bring the current League card.
+  - q: What is the difference between American mahjong and other styles?
+    a: American mah jongg is played from a card of set hands that the National Mah Jongg League changes each year. British clubs often follow British Mah-Jong Association rules instead, and Riichi is the
+      Japanese game; rules for special hands vary from group to group.
+  - q: How many people do you need to play mahjong?
+    a: The u3a says mahjong can be played by two, three or four players.
+  sources:
+  - label: National Mah Jongg League, The Store (2026 Annual Card)
+    url: https://www.nationalmahjonggleague.org/store.aspx
+    checked: '2026-11-22'
+  - label: National Mah Jongg League, The League
+    url: https://www.nationalmahjonggleague.org/league.aspx
+    checked: '2026-11-22'
+  - label: 'City Lit, An Introduction to Mah Jong: learn to play'
+    url: https://www.citylit.ac.uk/courses/an-introduction-to-mah-jong-learn-to-play/ubd59-2425
+    checked: '2026-11-22'
+  - label: u3a, Mah-jong subject page
+    url: https://www.u3a.org.uk/learning/subjects/mah-jong
+    checked: '2026-11-22'
+  - label: ClassBento, Weekend Riichi Mahjong Workshop for Newbies (Dear Asia)
+    url: https://classbento.co.uk/weekend-riichi-mahjong-workshop-for-newbies-london
+    checked: '2026-11-22'
+  - label: University of Utah Continuing Education, American Mahjong for Beginners (OSHER 667)
+    url: https://continue.utah.edu/class/OSHER/667
+    checked: '2026-11-22'
+  - label: American Mah-Jongg Beginner, Fall 2026 (Forest View Educational Center)
+    url: https://d214.ce.eleyo.com/course/3014/fall-2026/american-mah-jongg-beginner
+    checked: '2026-11-22'
+  kit:
+  - name: Mahjong tile set
+    why: to practice at home once you know the basics; check it matches your style
+    url: https://www.amazon.co.uk/s?k=mahjong+set
+  - name: American mahjong set with racks
+    why: a set with racks for American-style play
+    url: https://www.amazon.co.uk/s?k=american+mahjong+set+racks
+  - name: 'Know the Game: Mah Jong'
+    why: the rules book City Lit recommends for reference
+    url: https://www.amazon.co.uk/s?k=know+the+game+mah+jong
+  related:
+  - learn-to-play-bridge
+  - learn-the-game-of-go
+  - learn-backgammon
+  - go-to-a-board-game-cafe
+- id: try-hang-gliding
+  title: Fly a hang glider
+  category: move
+  kind: experience
+  effort: demanding
+  cost: mid
+  time: days
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: A hang glider is an unpowered wing you fly hanging in a harness beneath it, and it can soar along a ridge or climb on thermals for long cross-country flights. It is faster than a paraglider and takes
+    more effort to learn, which is part of the appeal.
+  start:
+  - Decide between a taster day of short hops on a gentle training slope and, where a school offers one, a tandem flight with an instructor; some US schools offer both together.
+  - Find a school through the BHPA schools list in the UK or the USHPA school and instructor finder in the US, and check it teaches hang gliding, not just paragliding.
+  - Book for a flexible date, since training depends on the weather, and wear sturdy boots that support your ankles.
+  links:
+  - label: 'BHPA: registered schools'
+    url: https://www.bhpa.co.uk/schools/schools.php?region=UK
+    region: uk
+    checked: '2026-11-22'
+  - label: 'BHPA: hang gliding'
+    url: https://bhpa.co.uk/sport/hg
+    region: uk
+    checked: '2026-11-22'
+  - label: 'USHPA: find a school or instructor'
+    url: https://www.ushpa.org/Public/learntofly/find-a-school-or-instructor.aspx
+    region: us
+    checked: '2026-11-22'
+  - label: 'Lookout Mountain Flight Park: book a tandem flight (Georgia)'
+    url: https://flylookout.com/book-your-flight-today/
+    region: us
+    checked: '2026-11-22'
+  - label: 'Morningside Flight Park: hang gliding lessons (New Hampshire)'
+    url: https://flymorningside.kittyhawk.com/hang-gliding-lessons/
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Hang gliding for beginners: tandem flights and lessons'
+  description: How to try hang gliding with a tandem flight or a taster day, how training to solo works, and what UK and US schools charge for first flights.
+  safety: Choose a BHPA-registered school in the UK or a USHPA-certified instructor in the US. USHPA advises moving on to another instructor if you suspect one is unsafe.
+  detail:
+  - h: How learning works
+    p:
+    - In the UK you begin with short hops on a tethered glider, then move on to higher and longer flights with some theory. A simple exam and set tasks earn the Elementary Pilot award, and a further 4 to
+      6 days on a more advanced glider leads to Club Pilot, the level at which you can fly unsupervised with a club. The BHPA puts the whole course at about ten days of flyable weather.
+    - US students first learn to set up and carry the glider, then run with it down a gentle training hill with an instructor beside them. Schools that aerotow, where an ultralight aircraft pulls the glider
+      up, also offer tandem flights with an instructor. A tandem gets you to height on day one; a training-hill day teaches you to launch and land yourself.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - BHPA-registered school (UK typical figures)
+        - Taster day, or pay-per-day tuition
+        - about £150 a day
+      - - BHPA-registered school (UK typical figures)
+        - Full course to Club Pilot
+        - about £1,200 to £1,600
+      - - Lookout Mountain Flight Park, Rising Fawn, Georgia
+        - Aerotowed tandem to 1,500 ft (460 m) or 3,000 ft (910 m); no experience needed
+        - $199 or $299
+      - - Lookout Mountain Flight Park
+        - Introductory package of up to five solo flights on the training hills plus a tandem
+        - $249 or $349
+      - - Morningside Flight Park, Charlestown, New Hampshire
+        - 'Introductory foot-launch lesson: ground school, simulator and training slope'
+        - $149
+      - - Morningside Flight Park
+        - Tandem of about 20 minutes, towed to roughly 2,500 ft (760 m), plus an intro lesson
+        - $269 (tandem only $155)
+    after: Lookout Mountain's tandems are for people at least 14 years old and under 250 lb (113 kg); its introductory package also asks that you weigh at least 100 lb (45 kg) and can run about 30 yards
+      (27 m).
+  faq:
+  - q: How long does it take to learn to hang glide?
+    a: The BHPA says reaching Club Pilot, the minimum standard to fly unsupervised with a club, usually takes about ten days of flyable weather at a registered school.
+  - q: How much does a hang gliding lesson cost?
+    a: The BHPA lists a UK taster day at about £150. In the US, Morningside Flight Park listed an introductory lesson at $149 and Lookout Mountain Flight Park a 1,500 ft tandem at $199.
+  - q: Is hang gliding harder than paragliding?
+    a: The BHPA says hang gliders are faster and fly in stronger winds than paragliders, but take more effort to learn.
+  - q: Is there a weight limit for tandem hang gliding?
+    a: Yes, and it varies by school. Lookout Mountain Flight Park lists under 250 lb for its hang gliding tandems and a minimum age of 14.
+  sources:
+  - label: BHPA, Hang Gliding
+    url: https://bhpa.co.uk/sport/hg
+    checked: '2026-11-22'
+  - label: BHPA, Registered Schools
+    url: https://www.bhpa.co.uk/schools/schools.php?region=UK
+    checked: '2026-11-22'
+  - label: USHPA, How do I learn to fly?
+    url: https://ushpa.org/page/how-do-i-learn-to-fly
+    checked: '2026-11-22'
+  - label: USHPA, How to choose an instructor
+    url: https://ushpa.org/page/how-to-choose-an-instructor
+    checked: '2026-11-22'
+  - label: USHPA, Find a School or Instructor
+    url: https://www.ushpa.org/Public/learntofly/find-a-school-or-instructor.aspx
+    checked: '2026-11-22'
+  - label: Lookout Mountain Flight Park, Book your flight today
+    url: https://flylookout.com/book-your-flight-today/
+    checked: '2026-11-22'
+  - label: Morningside Flight Park, Hang Gliding Lessons
+    url: https://flymorningside.kittyhawk.com/hang-gliding-lessons/
+    checked: '2026-11-22'
+  kit:
+  - name: Ankle-support hiking boots
+    why: for running off the training slope and landing on rough ground
+    url: https://www.amazon.co.uk/s?k=ankle+support+hiking+boots
+  - name: Windproof jacket
+    why: it is colder at height and on an exposed hilltop
+    url: https://www.amazon.co.uk/s?k=windproof+jacket
+  related:
+  - try-paragliding
+  - try-gliding
+  - take-a-flying-lesson
+- id: join-masters-athletics
+  title: Compete in masters track and field
+  category: move
+  kind: habit
+  effort: demanding
+  cost: low
+  time: months
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Masters athletics is ordinary track and field (sprints, hurdles, jumps, throws, middle distance and race walking) with results split into five-year age bands, so you race people at your own stage.
+    You can pick up a discipline you never tried at school, from the shot put to the 200m, and chase records within your band.
+  start:
+  - 'Join a club: in the UK a BMAF area masters club (plus England Athletics or other UKA registration); in the US, USATF membership and a local club through your USATF association.'
+  - Watch a masters meet first to see how events and age bands work, and check the hurdle heights and throwing weights for your band.
+  - Enter an open meeting or area championship in one or two events, then build up to national championships.
+  links:
+  - label: 'British Masters Athletic Federation: become a master athlete'
+    url: https://bmaf.org.uk/become-a-master-athlete/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'England Athletics: age group masters opportunities'
+    url: https://www.englandathletics.org/team-england/age-group-masters
+    region: uk
+    checked: '2026-11-22'
+  - label: Southern Counties Veterans Athletics Club
+    url: https://www.scvac.org.uk/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'USATF Masters: how to get started in masters track and field'
+    url: https://usatfmasters.org/for-athletes/how-to-get-started-in-masters-track-and-field/
+    region: us
+    checked: '2026-11-22'
+  - label: 'USATF: masters getting started'
+    url: https://usatf.org/programs/masters/getting-started
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Masters athletics: how to start track and field from 35'
+  description: How to join masters track and field in the UK or US, from clubs and registration to open meetings and championships, with fees as last listed.
+  detail:
+  - h: How masters athletics works
+    p:
+    - Both BMAF and USATF start masters competition at 35, with age categories in five-year blocks (35, 40, 45 and on up). USATF also lets athletes from 25 to 34 enter masters meets as sub-masters. Events
+      cover any track and field discipline, plus cross-country, road running and race walking. USATF publishes its own hurdle and throwing-implement specifications for masters events.
+    - In the UK, joining an area masters club affiliates you to BMAF, which you need for national and international masters events. If you already belong to a UKA-registered club you can add a masters club
+      as a second claim for a lower fee, or enter some meetings as an open competitor for a per-entry supplement. England Athletics also picks England Masters teams, including a new 3000m track match against
+      Wales.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Way in
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - Veterans AC, London and the South East (affiliated to BMAF), first claim
+        - Club membership and England Athletics registration for 2026-27
+        - £35 (£12 club fee plus £23 registration)
+      - - Veterans AC, second claim
+        - For athletes who already have a first-claim club
+        - £12
+      - - Open competitor at BMAF events
+        - Enter without joining a masters club, if you are in a UKA club
+        - a supplement per entry (amount not listed)
+      - - USATF Masters Outdoor Championships 2026
+        - Five-year age divisions, no qualifying standards; USATF membership required
+        - $65 first event, $41 second, $20 each extra
+    after: USATF Masters suggests checking its events listings, the USATF calendar and online entry sites for local meets, and notes that many youth and open meets welcome masters athletes.
+  faq:
+  - q: What age is masters athletics?
+    a: BMAF and England Athletics say masters athletics starts at 35, with age groups in five-year bands. In the US, USATF also allows athletes aged 25 to 34 to compete as sub-masters.
+  - q: Do I need to join a club to compete in masters athletics?
+    a: For BMAF championships you need an area masters club and UKA registration, though UKA club members can enter some events as open competitors for a supplement. USATF championships require USATF membership.
+  - q: Do you need qualifying times for masters championships?
+    a: Not for the 2026 USATF Masters Outdoor Championships, which listed no qualifying standards.
+  - q: What events can masters athletes do?
+    a: BMAF says any track and field discipline, as well as marathons, cross-country and race walking.
+  sources:
+  - label: BMAF, Everything You Need To Know
+    url: https://bmaf.org.uk/become-a-master-athlete/
+    checked: '2026-11-22'
+  - label: BMAF, How To Start Your Masters Athletics Journey
+    url: https://bmaf.org.uk/how-to-start-your-masters-athletics-journey/
+    checked: '2026-11-22'
+  - label: BMAF, Membership and Competition
+    url: https://bmaf.org.uk/how-to-join
+    checked: '2026-11-22'
+  - label: England Athletics, Age Group Masters opportunities
+    url: https://www.englandathletics.org/team-england/age-group-masters
+    checked: '2026-11-22'
+  - label: England Athletics, Club and member body affiliation and athlete registration fees for 2026
+    url: https://www.englandathletics.org/news/club-and-member-body-affiliation-and-athlete-registration-fees-for-2026/
+    checked: '2026-11-22'
+  - label: Veterans AC, membership form 2026-2027
+    url: https://vetsac.org.uk/Forms/VAC%20Membership%20Form%202026-2027.pdf
+    checked: '2026-11-22'
+  - label: Veterans AC, home page
+    url: https://www.vetsac.org.uk
+    checked: '2026-11-22'
+  - label: Southern Counties Veterans Athletics Club, home page
+    url: https://www.scvac.org.uk/
+    checked: '2026-11-22'
+  - label: USATF Masters, How to get started in Masters Track and Field
+    url: https://usatfmasters.org/for-athletes/how-to-get-started-in-masters-track-and-field/
+    checked: '2026-11-22'
+  - label: USATF, Masters Getting Started
+    url: https://usatf.org/programs/masters/getting-started
+    checked: '2026-11-22'
+  - label: USATF, 2026 Masters Outdoor Championships eligibility and entry information
+    url: https://www.usatf.org/events/2026/2026-usatf-masters-outdoor-championships/eligibility-entry-information
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: Naana Adusei, Sale Harriers
+    line: Came back to athletics at 35 after a break from the sport, raced her first international at the 2016 European Masters Indoors in Ancona and now competes in the W45 200m while working full time.
+    title: '"I don''t age, I evolve" – competing as a Masters athlete'
+    outlet: England Athletics
+    url: https://www.englandathletics.org/news/i-dont-age-i-evolve-competing-as-a-masters-athlete/
+    checked: '2026-11-22'
+  kit:
+  - name: Track spikes
+    why: grip on a synthetic track for sprints and jumps
+    url: https://www.amazon.co.uk/s?k=athletics+track+spikes
+  - name: Foam roller
+    why: loosening legs between training sessions
+    url: https://www.amazon.co.uk/s?k=foam+roller
+  related:
+  - enter-senior-games
+  - join-a-running-club
+  - try-fell-running
+  - parkrun
+- id: try-race-walking
+  title: Learn to race walk
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Race walking is the Olympic event in which you must keep contact with the ground and walk on a straightened leg, with judges watching every step by eye. The technique takes time to master, but once
+    it clicks you can build real endurance fitness from walking alone.
+  start:
+  - 'Learn the two rules: no visible loss of contact with the ground, and the front leg straight from the moment the foot lands until it passes under your body.'
+  - Find a coached group at an athletics club or a race walking club, or a clinic through your USATF association.
+  - Practice drills and short efforts on a track before longer walks, then enter a race; some races allow bent knees while you learn.
+  links:
+  - label: 'Welsh Athletics: race walking'
+    url: https://welshathletics.org/en/page/race-walking
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Abingdon Athletics Club: race walking (Oxfordshire)'
+    url: https://www.abingdonac.org.uk/race-walking
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Cambridge & Coleridge AC: race walking training'
+    url: https://www.cambridgeandcoleridge.org.uk/page-tab/race-walking-training
+    region: uk
+    checked: '2026-11-22'
+  - label: 'USATF: race walking'
+    url: https://www.usatf.org/sports/race-walking
+    region: us
+    checked: '2026-11-22'
+  - label: 'New England Walkers: club membership (Massachusetts)'
+    url: https://runsignup.com/Club/MA/Brookline/NewEnglandWalkers
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'How to race walk: rules, technique and clubs'
+  description: What the race walking rules say about contact and straight knees, how to learn the technique with a club, and how judged races work in the UK and US.
+  detail:
+  - h: The rules and how judging works
+    p:
+    - World Athletics, USATF and Welsh Athletics give the same two rules. One foot must always be in contact with the ground, as far as the human eye can see, and the leading leg must be straightened from
+      first contact until it passes the vertical under the body. Qualified judges watch by eye, with no technology, and report fouls that can end in disqualification.
+    - Abingdon Athletics Club describes two race standards. In B-races bent knees are allowed but you must keep contact; A-races penalize both bent knees and having both feet off the ground. Coaches quoted
+      by World Athletics warn that over-thinking the rules can make you stiff, and suggest regular stretching, figure-of-eight walking and strengthening the hamstrings and back.
+  - h: Ways in
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Abingdon Athletics Club, Tilsley Park, Oxfordshire
+        - Coached sessions Monday and Wednesday evenings; drills, short speed work and circuits
+        - Track fee (amount not listed; a track pass is suggested)
+      - - Cambridge & Coleridge AC, Cambridge
+        - Technical, tempo and track sessions for juniors, seniors and masters; beginners welcome
+        - Not listed; ask the club
+      - - New England Walkers, Brookline, Massachusetts
+        - Club membership; USATF membership also needed for sanctioned race walks
+        - $10 a year individual, $15 family
+    after: Welsh Athletics says qualified athletics coaches should know the basics, so asking at a local athletics club is a sensible first step; masters clubs such as Veterans AC also run race walking.
+  faq:
+  - q: What are the rules of race walking?
+    a: You must keep contact with the ground with no loss visible to the eye, and your front leg must be straight from when the foot lands until it passes under your body.
+  - q: How are race walkers disqualified?
+    a: Judges watch technique by eye and report fouls on contact or bent knees, and these can lead to disqualification, according to USATF.
+  - q: Can beginners enter race walking competitions?
+    a: Yes. Abingdon Athletics Club notes that B-races allow bent knees as long as you keep contact, and Cambridge & Coleridge AC holds development races from 1 km.
+  - q: Why can't I straighten my knee when race walking?
+    a: A World Athletics feature quotes a coach saying 10 to 15 percent of people find it hard because of tight hamstrings and glutes, and recommends regular stretching.
+  sources:
+  - label: 'World Athletics, Way of the walk: straightened leg rule'
+    url: https://worldathletics.org/news/series/race-walking-technique-rules-straight-leg
+    checked: '2026-11-22'
+  - label: USATF, Race Walking
+    url: https://www.usatf.org/sports/race-walking
+    checked: '2026-11-22'
+  - label: Welsh Athletics, Race Walking
+    url: https://welshathletics.org/en/page/race-walking
+    checked: '2026-11-22'
+  - label: Abingdon Athletics Club, Race walking
+    url: https://www.abingdonac.org.uk/race-walking
+    checked: '2026-11-22'
+  - label: Cambridge & Coleridge AC, Race Walking
+    url: https://www.cambridgeandcoleridge.org.uk/page-tab/race-walking-training
+    checked: '2026-11-22'
+  - label: New England Walkers, club membership
+    url: https://runsignup.com/Club/MA/Brookline/NewEnglandWalkers
+    checked: '2026-11-22'
+  - label: Veterans AC, home page
+    url: https://www.vetsac.org.uk
+    checked: '2026-11-22'
+  kit:
+  - name: Lightweight racing shoes
+    why: light shoes with a thin sole for walking fast
+    url: https://www.amazon.co.uk/s?k=lightweight+racing+flats
+  - name: Running watch
+    why: timing laps and pace in training
+    url: https://www.amazon.co.uk/s?k=running+watch
+  related:
+  - nordic-walking-lesson
+  - walk-a-half-marathon
+  - join-a-running-club
+  - parkrun
+- id: learn-japanese
+  title: Learn Japanese
+  category: think
+  kind: skill
+  effort: demanding
+  cost: low
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  - world
+  groups:
+  - japan
+  why: Written Japanese mixes three scripts in a single sentence, with hiragana carrying the grammar, katakana the borrowed words and kanji the core meaning. You can start for free with the Japan Foundation's
+    own coursebook and online course, then test yourself against the five levels of the official JLPT.
+  start:
+  - Try a short taster first, such as City Lit's 90-minute online Japanese beginners taster, or the Japan Foundation's free self-study course Marugoto A1-1 (Katsudoo) on its Minato site.
+  - Book a beginners' class that starts at level 1, such as City Lit's Japanese beginners module 1 in London or online, or a Level 1 term course at Japan Society in New York or on Zoom.
+  - Download the free Irodori coursebook and audio from the Japan Foundation for extra practice, and look at the JLPT N5 description to see what the first level expects.
+  links:
+  - label: 'JLPT: N1-N5 summary of linguistic competence required for each level'
+    url: https://www.jlpt.jp/e/about/levelsummary.html
+    region: any
+    checked: '2026-11-22'
+  - label: 'City Lit: Japanese courses for beginners (London and online)'
+    url: https://www.citylit.ac.uk/courses/languages/asian/japanese/beginners
+    region: uk
+    checked: '2026-11-22'
+  - label: 'The Japan Foundation London: Japanese courses'
+    url: https://jpf.org.uk/language/courses.php
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Japan Society: Fall Japanese Courses (New York and online)'
+    url: https://japansociety.org/courses/japanese-fall
+    region: us
+    checked: '2026-11-22'
+  - label: 'Irodori: Japanese for Life in Japan (free coursebook and audio)'
+    url: https://www.irodori.jpf.go.jp/en/about.html
+    region: any
+    checked: '2026-11-22'
+  - label: 'JF Japanese e-Learning Minato: Marugoto A1-1 (Katsudoo) Self-Study Course'
+    url: https://minato-jf.jp/CourseDetail/Index/KC25_MGKS_A101_EN02
+    region: any
+    checked: '2026-11-22'
+  seo_title: 'Learn Japanese as an adult: classes, free courses and JLPT'
+  description: How to start learning Japanese, with free Japan Foundation materials, beginners' classes in London and New York, the three scripts and the JLPT levels.
+  detail:
+  - h: What learning Japanese is really like
+    p:
+    - The first hurdle is the writing. An explainer from the Japanese publisher ALC sets out the three scripts as a team. Hiragana handles particles and grammar endings, katakana is used mainly for foreign
+      words, names and sound words, and kanji carries the core of nouns, verbs and adjectives. A sentence such as "I like coffee" uses all three.
+    - City Lit runs a separate Saturday writing course for beginners on hiragana and katakana alone. Kanji comes more slowly. The Japan Foundation's free Irodori books teach 429 kanji across their first
+      three parts, each one met in a conversation or reading passage.
+    - To measure progress, the Japanese-Language Proficiency Test has five levels, from N5, the easiest, to N1. At N5 you can read simple sentences in hiragana, katakana and basic kanji and follow slow
+      classroom exchanges. At N1 you can read editorials and follow lectures at natural speed. The test is held twice a year, in July and December, though some overseas cities offer only one session, and
+      it has no speaking or writing section.
+  - h: Ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - JF Japanese e-Learning Minato (Japan Foundation), online
+        - Marugoto A1-1 (Katsudoo) Self-Study Course, about 24 hours, taught in English, six months' access; enrolment opens in application periods
+        - Free
+      - - Irodori (Japan Foundation), download
+        - Coursebook in PDF from Starter (A1) to Pre-Intermediate (A2/B1), with audio to download or stream
+        - Free
+      - - City Lit, London or online
+        - Japanese beginners taster, 90 minutes online
+        - £19
+      - - City Lit, London or online
+        - Japanese beginners module 1, followed by modules 2 and 3
+        - £259, or £168 concession, per module
+      - - The Japan Foundation London
+        - Japanese from Scratch, single-evening workshops several times a year for people just starting
+        - Not listed on the courses page
+      - - Japan Society, New York or Zoom
+        - Ten-week courses from Level 1 for adults 18 and over; no placement exam for complete beginners
+        - $360, or $310 for members, for a 10-class course; textbook may be extra (fall 2026 term; that term is under way)
+    after: The Japan Foundation London also keeps a directory of schools, universities and other organizations that teach Japanese across the UK, if you want a class nearer home.
+  faq:
+  - q: What are the three Japanese alphabets?
+    a: Hiragana, katakana and kanji. Hiragana is used mainly for grammar, katakana mainly for foreign words and names, and kanji for the core meaning of words, and all three can appear in one sentence.
+  - q: What is the easiest JLPT level?
+    a: N5. The levels run from N5, the easiest, to N1, the hardest, with N3 bridging the lower and upper levels.
+  - q: Is there an age limit for the JLPT?
+    a: No. The official JLPT FAQ says there is no age limit, though local test centers may set their own requirements, so check with the host institution in your city before you register.
+  - q: Can I learn Japanese for free?
+    a: You can make a good start. The Japan Foundation's Irodori coursebook and audio are free, and its Marugoto A1-1 (Katsudoo) self-study course on the Minato site is free when enrolment is open.
+  sources:
+  - label: JLPT, N1-N5 summary of linguistic competence required for each level
+    url: https://www.jlpt.jp/e/about/levelsummary.html
+    checked: '2026-11-22'
+  - label: JLPT, Frequently Asked Questions
+    url: https://www.jlpt.jp/e/faq/
+    checked: '2026-11-22'
+  - label: ENGLISH JOURNAL (ALC), What's the Difference Between Hiragana, Katakana and Kanji?
+    url: https://ej.alc.co.jp/tag/fun-fun-nihongo/20260331-hiragana-katakana-kanji-difference
+    checked: '2026-11-22'
+  - label: City Lit, Japanese courses for beginners
+    url: https://www.citylit.ac.uk/courses/languages/asian/japanese/beginners
+    checked: '2026-11-22'
+  - label: The Japan Foundation London, Japanese courses
+    url: https://jpf.org.uk/language/courses.php
+    checked: '2026-11-22'
+  - label: Japan Society, Fall Japanese Courses 2026
+    url: https://japansociety.org/courses/japanese-fall
+    checked: '2026-11-22'
+  - label: Irodori, About Irodori
+    url: https://www.irodori.jpf.go.jp/en/about.html
+    checked: '2026-11-22'
+  - label: The Japan Foundation, Free! New Teaching Materials "Irodori Japanese for Life in Japan"
+    url: https://www.jpf.go.jp/e/project/japanese/teach/tsushin/news/202105.html
+    checked: '2026-11-22'
+  - label: JF Japanese e-Learning Minato, Marugoto A1-1 (Katsudoo) Self-Study Course
+    url: https://minato-jf.jp/CourseDetail/Index/KC25_MGKS_A101_EN02
+    checked: '2026-11-22'
+  kit:
+  - name: Hiragana and katakana workbook
+    why: for practicing the two beginner scripts by hand
+    url: https://www.amazon.co.uk/s?k=hiragana+katakana+workbook
+  - name: Genkouyoushi practice notebook
+    why: squared paper for writing kana and kanji neatly
+    url: https://www.amazon.co.uk/s?k=genkouyoushi+notebook
+  - name: Japanese-English dictionary
+    why: for looking up words as you read
+    url: https://www.amazon.co.uk/s?k=japanese+english+dictionary
+  related:
+  - learn-japanese-calligraphy
+  - explore-the-temples-of-kyoto
+  - see-the-cherry-blossom-in-japan
+  - learn-a-language-to-b1
+- id: learn-ancient-greek
+  title: Learn Ancient Greek
+  category: think
+  kind: skill
+  effort: demanding
+  cost: low
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Learning the Greek alphabet, with its accents and breathings, is the first step toward reading Homer, Plato and the New Testament in the words they were written in. Beginners can start in a ten-week
+    class online or go fast at a summer school that aims to have them reading simple texts within weeks.
+  start:
+  - Book a complete beginners' class, such as City Lit's Ancient Greek 1 module 1 online, Oxford's Ancient Greek Beginners Part 1, or a beginners' course at a US university such as the University of Utah.
+  - If grammar terms like case and declension are new to you, take a short grammar introduction first; City Lit suggests its Grammar for ancient languages course.
+  - Buy the textbook your course names, and plan for one to two hours of homework a week, as City Lit's beginners' module asks.
+  links:
+  - label: 'City Lit: Ancient Greek 1, module 1 (online)'
+    url: https://www.citylit.ac.uk/courses/ancient-greek-1-module-1
+    region: uk
+    checked: '2026-11-22'
+  - label: 'University of Oxford Lifelong Learning: Ancient Greek: Beginners, Part 1'
+    url: https://lifelong-learning.ox.ac.uk/?p=12955
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Classical Association: JACT Greek Summer School 2026'
+    url: https://classicalassociation.org/?p=30971
+    region: uk
+    checked: '2026-11-22'
+  - label: 'University of Utah Continuing Education: Beginning Ancient & New Testament Greek I'
+    url: https://continue.utah.edu/class/GREEK/101
+    region: us
+    checked: '2026-11-22'
+  - label: 'Paideia Institute: Telepaideia live online classes'
+    url: https://paideiainstitute.nationbuilder.com/telepaideia
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Learn Ancient Greek as an adult: courses and summer schools'
+  description: How to start Ancient Greek from scratch, with beginners' classes, intensive summer schools and online courses in the UK and US, the books and the costs.
+  detail:
+  - h: What learning Ancient Greek is really like
+    p:
+    - The first weeks go on the alphabet. City Lit's beginners' module starts with reading and writing Greek letters, including accents and breathings, then moves to the definite article, the present tense
+      and simple sentences, with noun and adjective endings and verb forms to learn along the way.
+    - Many UK courses use the JACT Reading Greek books from Cambridge University Press, a Grammar and Exercises volume and a Text and Vocabulary volume. Oxford's beginners' course sets both, and King's
+      College London's summer school teaches from them too. Some US courses go straight to Homer; the University of Chicago's online beginners' course uses Clyde Pharr's Homeric Greek, A Book for Beginners,
+      and aims to reach the first book of the Iliad by the end of the textbook.
+    - If you want speed, King's College London's three-week beginners' session aims to take complete beginners to the point of reading simple texts, and the two-week JACT Greek Summer School at Bryanston
+      School in Dorset takes all levels from complete beginners up.
+  - h: Ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, online
+        - Ancient Greek 1, module 1, ten 90-minute sessions for complete beginners
+        - £239, or £191 senior and £155 concession
+      - - University of Oxford Lifelong Learning, online
+        - Ancient Greek Beginners Part 1, ten weeks of a recorded lecture plus a live small-group webinar; no prior knowledge needed
+        - £430; people on UK state benefits may get 50% off (autumn 2026 run closed, waiting list)
+      - - King's College London
+        - Intensive Ancient Greek Summer School, three-week beginners' session with daily classes
+        - £990 without exam or £1,270 with exam, plus a £60 application fee (2026; held each summer)
+      - - JACT Greek Summer School, Bryanston School, Dorset
+        - About two weeks, courses for all levels from complete beginners
+        - Fee not listed on the Classical Association page (2026; held each summer)
+      - - University of Utah Continuing Education
+        - Beginning Ancient & New Testament Greek I, academic noncredit, in person four mornings a week alongside a university class
+        - $602.50
+      - - Paideia Institute, Telepaideia
+        - Live online Latin and Greek classes on Google Meet in ten-week terms, groups of about five or fewer
+        - Not listed on the overview page
+    after: City Lit's module 1 leads on to Ancient Greek 1 module 2.
+  faq:
+  - q: Do I need to know grammar to learn Ancient Greek?
+    a: No, but it helps. City Lit's beginners' module is for complete beginners and suggests its short course Grammar for ancient languages first if you have never studied grammar.
+  - q: What textbook do Ancient Greek beginners use?
+    a: Many UK courses use JACT's Reading Greek, published by Cambridge University Press in two volumes; Oxford and King's College London both teach from it. The University of Chicago's online beginners'
+      course uses Pharr's Homeric Greek instead.
+  - q: Can I learn Ancient Greek online?
+    a: Yes. City Lit and Oxford both run live online beginners' courses over ten weeks, and the Paideia Institute's Telepaideia teaches Greek online in small groups.
+  - q: Are there Ancient Greek summer schools for beginners?
+    a: Yes. The JACT Greek Summer School welcomes complete beginners, and King's College London runs a three-week intensive beginners' session.
+  sources:
+  - label: 'City Lit, Ancient Greek 1: module 1'
+    url: https://www.citylit.ac.uk/courses/ancient-greek-1-module-1
+    checked: '2026-11-22'
+  - label: 'University of Oxford Lifelong Learning, Ancient Greek: Beginners, Part 1'
+    url: https://lifelong-learning.ox.ac.uk/?p=12955
+    checked: '2026-11-22'
+  - label: King's College London, Intensive Ancient Greek Summer School
+    url: https://www.kcl.ac.uk/summer/courses/intensive-ancient-greek-summer-school
+    checked: '2026-11-22'
+  - label: Classical Association, JACT Greek Summer School 2026
+    url: https://classicalassociation.org/?p=30971
+    checked: '2026-11-22'
+  - label: University of Utah Continuing Education, Beginning Ancient & New Testament Greek I
+    url: https://continue.utah.edu/class/GREEK/101
+    checked: '2026-11-22'
+  - label: UChicago Graham School, Ancient Greek Part 1
+    url: https://graham.uchicago.edu/course/ancient-greek-part-1/
+    checked: '2026-11-22'
+  - label: Paideia Institute, Telepaideia programme overview
+    url: https://paideiainstitute.nationbuilder.com/telepaideia
+    checked: '2026-11-22'
+  kit:
+  - name: 'Reading Greek: Grammar and Exercises'
+    why: the JACT grammar volume that Oxford's beginners' course sets
+    url: https://www.amazon.co.uk/s?k=reading+greek+grammar+and+exercises+jact
+  - name: 'Reading Greek: Text and Vocabulary'
+    why: the companion reading volume to the JACT course
+    url: https://www.amazon.co.uk/s?k=reading+greek+text+and+vocabulary+jact
+  - name: Ancient Greek lexicon
+    why: for looking up words as you translate
+    url: https://www.amazon.co.uk/s?k=ancient+greek+english+lexicon
+  related:
+  - learn-latin
+  - visit-the-acropolis
+  - learn-to-read-hieroglyphs
+  - take-a-philosophy-course
+- id: learn-to-read-old-handwriting
+  title: Learn to read old handwriting (palaeography)
+  category: think
+  kind: skill
+  effort: moderate
+  cost: free
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  why: Many English wills, property records and letters written between about 1500 and 1700 are in secretary hand, a script whose letters look very different from their modern forms. Free online tutorials
+    from the national archives of England and Scotland and from Brigham Young University teach you to read them, so the documents behind your family or house history open up.
+  start:
+  - Start with a free tutorial matched to your records, such as The National Archives' palaeography tutorial for English documents from 1500 to 1800, or Scottish Handwriting from ScotlandsPeople for Scottish
+    records from 1500 to 1750.
+  - Work through the documents in order of difficulty, with a secretary hand alphabet chart beside you; FamilySearch's handwriting help page has one.
+  - When you want a tutor, book a short course such as Oxford's weekend Reading the Past course, then try a real document from your own research.
+  links:
+  - label: 'The National Archives: Reading old documents'
+    url: https://www.nationalarchives.gov.uk/help-with-your-research/reading-old-documents
+    region: uk
+    checked: '2026-11-22'
+  - label: 'ScotlandsPeople: Scottish Handwriting'
+    url: https://www.scotlandspeople.gov.uk/scottish-handwriting/about-us
+    region: uk
+    checked: '2026-11-22'
+  - label: 'University of Cambridge: English Handwriting 1500-1700, An Online Course'
+    url: https://www.english.cam.ac.uk/ceres/ehoc/welcome.html
+    region: uk
+    checked: '2026-11-22'
+  - label: 'BYU Script Tutorial: Introduction to English Paleography'
+    url: https://script.byu.edu/english-handwriting/introduction
+    region: us
+    checked: '2026-11-22'
+  - label: 'FamilySearch: English Language Resources and Handwriting Helps'
+    url: https://www.familysearch.org/en/help/helpcenter/article/english-language-resources-and-handwriting-helps
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'How to read old handwriting: free palaeography tutorials'
+  description: How to read old handwriting in wills, deeds and parish records, with free palaeography tutorials from UK and US archives and short courses with a tutor.
+  detail:
+  - h: What reading old handwriting is really like
+    p:
+    - Palaeography is the study of old handwriting. For English records the big hurdle is secretary hand, which BYU's Script Tutorial calls the dominant script of the early modern period, from about 1500
+      to 1700, with some older letter forms hanging on in certain records into the 1850s. Documents also throw in Latin phrases, abbreviations, old numbering systems and calendars, and old money.
+    - The free tutorials arrange documents from easy to hard. The National Archives' tutorial covers English handwriting from 1500 to 1800, and it also has lessons on Latin handwriting from 1086 to 1500
+      and a guide to Roman numerals. Its older education version, built with UCL, says its interactive parts no longer work, but the documents and tasks can still be used.
+    - Scottish Handwriting, maintained by the National Records of Scotland, offers free tutorials, "posers" arranged by type of record and date, and a coaching manual for records from 1500 to 1750. BYU's
+      Script Tutorial goes beyond English into German, Dutch, Latin, Spanish, French, Italian and other languages, which helps if your family came from Europe.
+  - h: Ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The National Archives, online
+        - Palaeography tutorial for English documents 1500-1800, plus Latin palaeography 1086-1500
+        - No fee shown
+      - - Scottish Handwriting (ScotlandsPeople), online
+        - Tutorials, posers and a coaching manual for Scottish documents 1500-1750
+        - Free
+      - - University of Cambridge, online
+        - English Handwriting 1500-1700, a manuscript archive with transcription conventions and dating tips, for beginners and as a reference
+        - No fee shown
+      - - BYU Script Tutorial, online
+        - Interactive tutorials on English secretary hand and on handwriting in about a dozen languages
+        - No fee shown
+      - - University of Oxford Lifelong Learning, Rewley House, Oxford
+        - 'Reading the Past: Early Modern Handwriting and Palaeography c1550-c1750, a seminar weekend on secretary, italic and mixed hands; no Latin needed'
+        - £260, meals and bed and breakfast extra
+    after: The Oxford weekend works with property records, wills, accounts and letters, mainly in English, which are the kinds of documents family and house historians most often meet.
+  faq:
+  - q: What is palaeography?
+    a: It is the study of old handwriting. American sources often spell it paleography, as BYU's Script Tutorial does.
+  - q: Where can I learn to read old handwriting for free?
+    a: Scottish Handwriting on ScotlandsPeople offers free tuition for Scottish documents from 1500 to 1750, and The National Archives has online tutorials for English handwriting from 1500 to 1800 and
+      Latin from 1086 to 1500.
+  - q: What is secretary hand?
+    a: It is the main English handwriting style of the early modern period, roughly 1500 to 1700. FamilySearch's handwriting help page includes a secretary hand alphabet for decoding its letters.
+  - q: Do I need Latin to read old documents?
+    a: Not to start. Oxford's weekend course on English handwriting from about 1550 says no Latin is needed, though some documents may include Latin.
+  sources:
+  - label: The National Archives, Reading old documents
+    url: https://www.nationalarchives.gov.uk/help-with-your-research/reading-old-documents
+    checked: '2026-11-22'
+  - label: The National Archives Education, Palaeography
+    url: https://www.nationalarchives.gov.uk/education/resources/palaeography/
+    checked: '2026-11-22'
+  - label: ScotlandsPeople, About us (Scottish Handwriting)
+    url: https://www.scotlandspeople.gov.uk/scottish-handwriting/about-us
+    checked: '2026-11-22'
+  - label: 'ScotlandsPeople, News article: Scottish Handwriting resource'
+    url: https://www.scotlandspeople.gov.uk/news-and-articles/news-article-scottish-handwriting-resource
+    checked: '2026-11-22'
+  - label: 'University of Cambridge, English Handwriting 1500-1700: An Online Course'
+    url: https://www.english.cam.ac.uk/ceres/ehoc/welcome.html
+    checked: '2026-11-22'
+  - label: BYU Script Tutorial, Introduction to English Paleography
+    url: https://script.byu.edu/english-handwriting/introduction
+    checked: '2026-11-22'
+  - label: BYU Script Tutorial, About
+    url: https://script.byu.edu/about
+    checked: '2026-11-22'
+  - label: FamilySearch, English Language Resources and Handwriting Helps
+    url: https://www.familysearch.org/en/help/helpcenter/article/english-language-resources-and-handwriting-helps
+    checked: '2026-11-22'
+  - label: 'University of Oxford Lifelong Learning, Reading the Past: Early Modern Handwriting and Palaeography c1550-c1750'
+    url: https://lifelong-learning.ox.ac.uk/?p=15808
+    checked: '2026-11-22'
+  - label: BYU Library Family History Center, Learning to Read Old Handwriting
+    url: https://familyhistory.lib.byu.edu/all-webinars/learning-to-read-old-handwriting
+    checked: '2026-11-22'
+  kit:
+  - name: Reading Early American Handwriting by Kip Sperry
+    why: a book mentioned in a BYU Family History Center webinar for American records
+    url: https://www.amazon.co.uk/s?k=reading+early+american+handwriting+sperry
+  - name: Magnifying glass with light
+    why: for faded ink and small letters on documents and printouts
+    url: https://www.amazon.co.uk/s?k=magnifying+glass+with+light
+  related:
+  - trace-family-to-great-great-grandparents
+  - transcribe-for-an-archive
+  - trace-your-house-history
+  - join-a-local-history-society
+- id: volunteer-with-riding-for-the-disabled
+  title: Volunteer at a riding center for disabled riders
+  category: connect
+  kind: habit
+  effort: moderate
+  cost: free
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Walking beside a rider as a sidewalker, or leading the horse, puts you right at the center of a lesson that can matter enormously to the person in the saddle. Groups also need people to groom, tack
+    up, clear the yard and greet families, so there is a job whether or not you know horses.
+  start:
+  - 'Find your nearest group: in the UK use the RDA Find Your Local Group search; in the US look for a therapeutic riding center near you.'
+  - Contact the group and ask which roles need help, the minimum age, and how long a commitment they ask for (some want a full term or six months of weekly shifts).
+  - Book onto the volunteer orientation or induction and go along in sturdy boots and clothes you can work in.
+  links:
+  - label: 'Riding for the Disabled Association (RDA): Volunteer'
+    url: https://rda.org.uk/volunteer/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'RDA: Find your local group'
+    url: https://rda.org.uk/rda-groups/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'RDA: Become an RDA Coach'
+    url: https://rda.org.uk/become-an-rda-coach/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Little Bit Therapeutic Riding Center: Volunteer (Redmond, Washington)'
+    url: https://littlebittrc.squarespace.com/volunteer
+    region: us
+    checked: '2026-11-22'
+  - label: 'Texan Therapeutic Riding (Tarleton State University): Volunteer Information'
+    url: https://www.tarleton.edu/ttr/?p=782
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Volunteering with Riding for the Disabled: roles and ages'
+  description: What RDA and therapeutic riding volunteers do, from sidewalking to grooming, plus minimum ages, training and time commitments in the UK and US.
+  detail:
+  - h: What a session involves
+    p:
+    - A sidewalker walks alongside the horse to help the rider get the most out of the session. At Orkney RDA there are usually two sidewalkers per rider, working as a team with the horse leader and the
+      coach. Other volunteers lead the horse.
+    - Around the lesson there is plenty of other work. Little Bit Therapeutic Riding Center's program volunteers groom and tack horses and put the tack away afterward, while its barn team fills water buckets
+      and cleans paddocks. RDA says it needs a wide range of skills, not just with horses, from coaching to baking.
+    - You do not always need horse experience. Little Bit says none is necessary, Orkney RDA asks only that you are comfortable around horses, and RDA's coach program is open to people with no horse background.
+  - h: Ways in compared
+    table:
+      head:
+      - Organization
+      - Role
+      - Time commitment (as listed)
+      rows:
+      - - RDA groups, UK
+        - General volunteer, from age 12 with no upper age limit (the minimum can vary by group)
+        - Ask your local group
+      - - Orkney RDA, Scotland
+        - Sidewalker; two introductory sessions for new volunteers
+        - The full spring/summer term, for continuity
+      - - RDA coach, UK
+        - Coach, from age 16; e-learning, training days and an observed assessment
+        - Flexible, agreed with the group, such as a weekly session or a block in school holidays
+      - - Little Bit Therapeutic Riding Center, Washington
+        - Program volunteer from age 14; one-hour orientation and, for adults, a background check
+        - Encouraged to commit weekly for at least six months; shifts are typically two hours
+      - - Texan Therapeutic Riding, Texas
+        - Horse leader or sidewalker from age 14 (younger with a parent); training and orientation
+        - A summer lesson block (six weeks as listed for 2026)
+    after: RDA says coach training costs vary by group and region; some groups cover it fully and others ask for a small contribution.
+  faq:
+  - q: Do you need horse experience to volunteer with RDA?
+    a: Not always. Orkney RDA's sidewalker role needs little horse experience, only that you are comfortable around horses, and RDA's coach program accepts people with no horse background.
+  - q: How old do you have to be to volunteer at Riding for the Disabled?
+    a: RDA takes volunteers from age 12 with no upper age limit, though local groups may differ; coaches start at 16. Little Bit in Washington asks for volunteers aged 14 or over to work with clients and
+      horses.
+  - q: What does a sidewalker do in therapeutic riding?
+    a: A sidewalker walks beside the horse and rider during the lesson, helping the rider get the most from it, as part of a team with the horse leader and coach.
+  - q: How much time does volunteering at a therapeutic riding center take?
+    a: It varies. Little Bit encourages program volunteers to commit to a weekly shift of about two hours for at least six months, while Orkney RDA asks sidewalkers to commit to a full term.
+  sources:
+  - label: Riding for the Disabled Association, Volunteer
+    url: https://rda.org.uk/volunteer/
+    checked: '2026-11-22'
+  - label: Riding for the Disabled Association, RDA Groups
+    url: https://rda.org.uk/rda-groups/
+    checked: '2026-11-22'
+  - label: Riding for the Disabled Association, Become an RDA Coach
+    url: https://rda.org.uk/become-an-rda-coach/
+    checked: '2026-11-22'
+  - label: Volunteer Scotland, Volunteer Sidewalkers (Orkney Riding for the Disabled Association)
+    url: https://volunteer.scot/search/a0gQD0000095HcXYAU/volunteer-sidewalkers-orkney-riding-for-the-disabled-association
+    checked: '2026-11-22'
+  - label: Little Bit Therapeutic Riding Center, Volunteer
+    url: https://littlebittrc.squarespace.com/volunteer
+    checked: '2026-11-22'
+  - label: Texan Therapeutic Riding, Volunteer Information
+    url: https://www.tarleton.edu/ttr/?p=782
+    checked: '2026-11-22'
+  - label: PATH Intl., PATH Intl. Centers
+    url: https://www.pathintl.org/path-intl-centers/path-intl-centers
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: Glynis Dalley, Scropton RDA
+    line: Signed up as a volunteer at Scropton RDA after her son began riding there, and became a long-serving trustee handling governance, admin and fundraising.
+    title: A mother and son volunteering team find a way to give back
+    outlet: Riding for the Disabled Association (RDA)
+    url: https://rda.org.uk/news/a-mother-and-son-volunteering-team-find-a-way-to-give-back/
+    checked: '2026-11-22'
+  kit:
+  - name: Waterproof yard boots
+    why: for the yard, paddock and arena
+    url: https://www.amazon.co.uk/s?k=waterproof+yard+boots
+  - name: Horse grooming kit
+    why: brushes and a hoof pick, if you want to practice grooming
+    url: https://www.amazon.co.uk/s?k=horse+grooming+kit
+  - name: Waterproof jacket
+    why: many sessions and yard jobs happen outdoors
+    url: https://www.amazon.co.uk/s?k=waterproof+jacket+outdoor
+  related:
+  - horse-riding-lesson
+  - go-pony-trekking
+  - volunteer-at-a-donkey-sanctuary
+  - volunteer-at-lambing
+- id: become-a-tree-warden
+  title: Become a volunteer tree warden
+  category: connect
+  kind: habit
+  effort: moderate
+  cost: free
+  time: months
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Tree wardens are the local people who plant, water and keep an eye on the trees in their own streets, parks and woods, and report problems to the council. In the US, city programs go further and
+    train volunteers to prune street trees or lead planting crews.
+  start:
+  - 'UK: find your local network on The Tree Council''s map and contact its coordinator. If there is none, contact The Tree Council or your council''s tree officer.'
+  - 'US: look for a city or nonprofit program such as Trees New York''s Citizen Pruner course or Trees Atlanta''s TreeKeeper training, and check the next course and fee.'
+  - Go to your first group meeting or training session and ask which local projects need hands, from planting days to checking young trees.
+  links:
+  - label: 'The Tree Council: Become a Tree Warden'
+    url: https://treecouncil.org.uk/tree-wardens/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'The Tree Council: Become a volunteer Tree Warden (find your local network)'
+    url: https://treecouncil.org.uk/tree-wardens/become-a-volunteer-tree-warden/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Brooklyn Botanic Garden: Citizen Pruners (Trees New York course)'
+    url: https://www.bbg.org/learn/pruners
+    region: us
+    checked: '2026-11-22'
+  - label: 'Trees Atlanta: TreeKeeper'
+    url: https://www.treesatlanta.org/treekeeper/
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'How to become a tree warden: what volunteers do'
+  description: What Tree Council tree wardens do, how to join a local network, and US options such as Citizen Pruner and TreeKeeper training, with costs.
+  detail:
+  - h: What tree wardens actually do
+    p:
+    - The Tree Council's tree wardens plant, protect and promote local trees. Its list of projects includes organizing planting days, pruning and watering, working with councils on street trees, reviving
+      local woods, finding land and money for planting, and talking to schools.
+    - Local networks run themselves and meet regularly to choose what to work on. In a St Albans pilot, new wardens looked for planting sites, checked the stakes and ties on young trees, watered them and
+      reported worries such as disease or broken branches, after a first training session at the council offices.
+    - The Tree Council says no training or experience in tree management is needed, just a love of trees and a few hours to spare.
+  - h: Ways in compared
+    table:
+      head:
+      - Program
+      - What you do
+      - Training
+      - Cost (as last listed)
+      rows:
+      - - The Tree Council Tree Warden scheme, UK
+        - Plant, water and care for local trees; work with the council on street trees
+        - None needed to join; some schemes run training
+        - No fee shown on The Tree Council's pages
+      - - Trees New York Citizen Pruner course, New York City
+        - Once certified, work on city street trees and most park trees
+        - 12 hours (eight in the classroom over four weeks, four in the field on a Saturday) and a final exam; renew every five years
+        - $100, including a manual
+      - - Trees Atlanta TreeKeeper, Atlanta
+        - Lead small groups at Trees Atlanta volunteer projects; some go on to run their own
+        - Saturday morning classes, 9am to noon, then 24 hours of volunteer leadership for Certified TreeKeeper status
+        - $120 per person (2026 training); a few scholarships for City of Atlanta residents
+    after: Citizen Pruner certificates are issued by Trees New York and NYC Parks, and parks with their own conservancies, such as Central Park and Prospect Park, are not covered.
+  faq:
+  - q: What does a tree warden do?
+    a: Tree wardens plant, care for and look out for local trees. Projects include planting days, pruning and watering, working with the council on street trees and reporting problems such as disease or
+      broken branches.
+  - q: Do you need qualifications to be a tree warden?
+    a: No. The Tree Council says no training or experience in tree management is needed, and some schemes run training, such as the first session St Albans held with The Tree Council.
+  - q: How do I become a tree warden?
+    a: Find your local network on The Tree Council's map and contact the coordinator. If there is no network nearby, contact The Tree Council or your local authority's tree officer.
+  - q: What is a Citizen Pruner in New York?
+    a: A volunteer who has passed Trees New York's 12-hour tree care course and exam, which certifies them to work on New York City street trees and most park trees.
+  sources:
+  - label: The Tree Council, Become a Tree Warden
+    url: https://treecouncil.org.uk/tree-wardens/
+    checked: '2026-11-22'
+  - label: The Tree Council, Become a volunteer Tree Warden
+    url: https://treecouncil.org.uk/tree-wardens/become-a-volunteer-tree-warden/
+    checked: '2026-11-22'
+  - label: The Tree Council, St Albans joins Tree Warden Scheme
+    url: https://treecouncil.org.uk/st-albans-joins-tree-warden-scheme/
+    checked: '2026-11-22'
+  - label: Brooklyn Botanic Garden, Citizen Pruners
+    url: https://www.bbg.org/learn/pruners
+    checked: '2026-11-22'
+  - label: Trees Atlanta, TreeKeeper
+    url: https://www.treesatlanta.org/treekeeper/
+    checked: '2026-11-22'
+  - label: Trees Atlanta, TreeKeeper Training 2026
+    url: https://www.treesatlanta.org/get-involved/events/treekeeper-training-2026-a2BUd000002ODCfMAO
+    checked: '2026-11-22'
+  inspire:
+  - kind: read
+    person: Susan Hart, from Atlanta
+    line: Took Trees Atlanta's TreeKeeper course, moved on to forest restoration in Kirkwood, and won a grant that has planted more than 350 native trees on a Georgia State University campus.
+    title: 'Volunteer Spotlight: Susan Hart’s TreeKeeper Journey'
+    outlet: Trees Atlanta
+    url: https://www.treesatlanta.org/news/volunteer-spotlight-susan-harts-treekeeper-journey/
+    checked: '2026-11-22'
+  kit:
+  - name: Tree identification guide
+    why: to name the trees on your patch
+    url: https://www.amazon.co.uk/s?k=tree+identification+guide+book
+  - name: Gardening gloves
+    why: for planting days and checking stakes and ties
+    url: https://www.amazon.co.uk/s?k=gardening+gloves
+  - name: Watering can, large
+    why: young trees need watering through dry spells
+    url: https://www.amazon.co.uk/s?k=large+watering+can
+  related:
+  - plant-a-tree
+  - identify-twenty-trees
+  - plant-a-community-orchard
+  - learn-to-prune-fruit-trees
+- id: try-pinhole-photography
+  title: Make a photograph with a pinhole camera
+  category: think
+  kind: project
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  - world
+  collection: arts
+  why: A box, a pin and a sheet of photo paper are enough to make a real photograph, with no lens at all. Exposures run from seconds to hours, so you learn to think about light in a way a phone camera never
+    asks of you.
+  start:
+  - Book a one-off pinhole workshop at a college or arts center, or follow a museum's instructions to make a camera from a tin or box, foil and a pin.
+  - Load it with black-and-white photo paper in the dark, then try a bright outdoor scene first, where exposures are shortest.
+  - Develop the paper negative in a darkroom and contact print it to get a positive image.
+  links:
+  - label: 'George Eastman Museum: Instructions for Making a Pinhole Camera (PDF)'
+    url: https://eastman.org/sites/default/files/GEM-EDU-PinholeCamera-InstructionsFinal.pdf
+    region: any
+    checked: '2026-11-22'
+  - label: 'Worldwide Pinhole Photography Day: Participation Rules'
+    url: https://pinholeday.org/participate/?pid=rules
+    region: any
+    checked: '2026-11-22'
+  - label: 'East Sussex College: Pinhole Camera Workshop (Hastings)'
+    url: https://adult.escg.ac.uk/courses/art-crafts-design/photography/pinhole-camera-workshop-105784/
+    region: uk
+    checked: '2026-11-22'
+  - label: 'West Dean College: Pinhole Photography with Peter Renn'
+    url: https://www.westdean.ac.uk/short-courses/swe41833-pinhole-photography
+    region: uk
+    checked: '2026-11-22'
+  - label: 'Mesa Arts Center: Photography Workshop: Pinhole Camera (Arizona)'
+    url: https://www.mesaartscenter.com/class-details/photography-workshop-pinhole-camera-8
+    region: us
+    checked: '2026-11-22'
+  seo_title: 'Pinhole photography for beginners: how it works'
+  description: How a pinhole camera works, what to build one from, typical exposure times, Worldwide Pinhole Photography Day, and pinhole workshops in the UK and US.
+  detail:
+  - h: How a pinhole camera works
+    p:
+    - Light travels in straight lines, so a tiny hole in one side of a light-tight box throws an upside-down, back-to-front image onto whatever light-sensitive surface sits opposite. The George Eastman
+      Museum's instructions use a box or tin, aluminum foil pierced with a pin, black tape and paint, and resin-coated black-and-white photo paper.
+    - Exposures are long. The museum's guide suggests 10 to 30 seconds in full sun, 1 to 5 minutes on a slightly overcast day, 5 to 15 minutes in shade, and from 30 minutes to several hours indoors. The
+      paper comes out as a negative, which you develop in a darkroom and then contact print onto fresh paper to get a positive.
+    - Worldwide Pinhole Photography Day is a free, non-commercial event held once a year, when anyone can take a pinhole photograph on the day and upload one image to its online gallery. Any homemade or
+      commercial lensless camera counts, and digital is allowed.
+  - h: Pinhole workshops compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - East Sussex College, Hastings
+        - 'Pinhole Camera Workshop: one three-hour session; make cameras from household containers, take pictures and develop them in the darkroom'
+        - £45
+      - - West Dean College
+        - 'Pinhole Photography with Peter Renn: arrival evening, two full teaching days and a half day; materials and chemicals supplied; residential option'
+        - Not shown on the course page
+      - - Mesa Arts Center, Arizona
+        - Three Saturday afternoon sessions; build a camera from a box and a pin and develop the photo in the darkroom; ages 16 and up, all materials included
+        - $117 (November 2026 run)
+  faq:
+  - q: How long is a pinhole camera exposure?
+    a: Much longer than a normal camera. The George Eastman Museum suggests 10 to 30 seconds in full sun, 1 to 15 minutes in cloud or shade, and 30 minutes to several hours indoors.
+  - q: Can you do pinhole photography with a digital camera?
+    a: Yes. Worldwide Pinhole Photography Day accepts images from any lensless device on any photographic material, including digital.
+  - q: What paper goes in a pinhole camera?
+    a: The George Eastman Museum's instructions use resin-coated (RC) black-and-white photo paper, which you load in the dark and develop in a darkroom.
+  - q: What is Worldwide Pinhole Photography Day?
+    a: A free, non-commercial annual event in which people around the world make a pinhole photograph on the day and each submit one image to its website gallery.
+  sources:
+  - label: George Eastman Museum, Instructions for Making a Pinhole Camera
+    url: https://eastman.org/sites/default/files/GEM-EDU-PinholeCamera-InstructionsFinal.pdf
+    checked: '2026-11-22'
+  - label: Worldwide Pinhole Photography Day, Participation Rules
+    url: https://pinholeday.org/participate/?pid=rules
+    checked: '2026-11-22'
+  - label: East Sussex College, Pinhole Camera Workshop
+    url: https://adult.escg.ac.uk/courses/art-crafts-design/photography/pinhole-camera-workshop-105784/
+    checked: '2026-11-22'
+  - label: West Dean College, Pinhole Photography with Peter Renn
+    url: https://www.westdean.ac.uk/short-courses/swe41833-pinhole-photography
+    checked: '2026-11-22'
+  - label: 'Mesa Arts Center, Photography Workshop: Pinhole Camera'
+    url: https://www.mesaartscenter.com/class-details/photography-workshop-pinhole-camera-8
+    checked: '2026-11-22'
+  kit:
+  - name: Pinhole camera kit
+    why: a ready-made camera body if you would rather not build your own
+    url: https://www.amazon.co.uk/s?k=pinhole+camera+kit
+  - name: Black and white RC photo paper
+    why: the light-sensitive sheet that records the image
+    url: https://www.amazon.co.uk/s?k=black+and+white+rc+photographic+paper
+  - name: Black masking tape
+    why: to light-proof the seams of a homemade camera and cover the pinhole
+    url: https://www.amazon.co.uk/s?k=black+masking+tape
+  related:
+  - learn-film-photography
+  - try-cyanotype
+  - join-a-camera-club
+  - take-a-photography-course

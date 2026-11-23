@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-22)
 
-114 sources, 92 statements, 12 event profiles. Core 75, supported 17, thin 0, contested 0.
+121 sources, 92 statements, 12 event profiles. Core 78, supported 14, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -115,6 +115,13 @@
 - The Confraternity of Saint James (Hannah Murray), *How do I train for my Camino? (published 15 April 2020, updated 16 April 2020)* (2020). Opened 2026-11-22.
 - American Pilgrims on the Camino, *Prepare for Your Camino (last updated 14 May 2026)* (2026). Opened 2026-11-22.
 - Long Distance Walkers Association (Bill Orme, first published in Strider), *Preparing and Care of the Body (undated page; year is the year opened)* (2026). Opened 2026-11-22.
+- Triathlon Ireland, *Rules of Triathlon* (2026). Opened 2026-11-22.
+- USA Triathlon, *Multisport Rules* (2026). Opened 2026-11-22.
+- St. Jude Memphis Marathon Weekend (St. Jude Children's Research Hospital), *10K training plan - St. Jude Memphis Marathon Weekend* (2026). Opened 2026-11-22.
+- Edinburgh Marathon Festival, *How to Train for Your First 10K, A Beginner Training Plan & Essential Tips* (2026). Opened 2026-11-22.
+- London Marathon Events (Brighton Marathon Weekend), *10 weeks to 10k training plan* (2025). Opened 2026-11-22.
+- British Triathlon, *Triathlon Tips for Beginners* (2026). Opened 2026-11-22.
+- USA Triathlon (Beatrice Black), *Feel good about open water swimming* (2023). Opened 2026-11-22.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -152,6 +159,7 @@
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
 | core | 12 | progression | Every third or fourth week, ease back on volume to let your body absorb the work before building again; older runners and people under other stress may do best with every third week. | higdon-novice1, rc-down-weeks, bc-missing-weeks, meeusen-2013-overtraining |
 | core | 12 | warning signs | In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. | mrew-safety, ms-hypothermia, pcta-safety-tips, ramblers-hill-tips |
+| core | 12 | before you start | If you are new to running, give yourself 8 to 12 weeks to get ready for a 10k rather than 6 (most beginner plans assume you can already run for 20 to 30 minutes), and if time is short use a run-walk approach. | greatrun-10k-how-long, greatrun-10k-plans, stjude-memphis-10k, emf-10k-beginner, lme-brighton-10k-plan |
 | core | 12 | kit | Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire. | rnli-cold-water-2025, usms-open-water, swimeng-stay-safe, bewl-ows, rnli-open-water-swimming |
 | core | 11 | key session | Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them. | ydnpa-three-peaks, bmc-hill-fit, bc-first-sportive-top10, cyclinguk-first-sportive |
 | core | 11 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. | lauersen-2014, cmo-2019, bmc-hill-fit |
@@ -168,8 +176,10 @@
 | core | 9 | why | An easier week, every third week in this plan, lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. | rc-down-weeks, higdon-novice1, meeusen-2013-overtraining |
 | core | 9 | on the day | Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, rnli-open-water-swimming |
 | core | 9 | key session | Keep your first cold-water swims short and close to the shore. Tolerance of cold builds with repeated exposure (a 2024 review of the research found the gasp and fast breathing of cold water shock eased after about four immersions), so keep swimming outdoors as the water cools rather than starting in the coldest months. | usms-open-water, barwood-2024, oss-cold-water |
+| core | 9 | kit | If you will wear a wetsuit on the day, train in that same wetsuit beforehand rather than changing kit for the event. | usms-wetsuit-temp, britri-beginner-tips, usat-open-water-feel-good |
 | core | 9 | on the day | Your body temperature can keep falling for a while after you get out of cold water (afterdrop), so dry off and get into warm, windproof clothes and a hat as soon as you are out, and move about to make heat. After a short swim a warm shower is enough; avoid very hot water, and do not hold a hot water bottle against numb skin, which burns easily. | oss-cold-water, rlss-safer-open-water, knechtle-2020 |
 | core | 9 | on the day | In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. | rnli-rip-currents, noaa-rip-safety, redcross-beach-safety |
+| core | 9 | on the day | In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. | britri-beginners-wales, tri-ireland-rules, usat-multisport-rules |
 | core | 9 | kit | On a hill day carry a waterproof jacket and warm layers, even in summer, plus enough water for the day, food, sun protection and a small first aid kit, and wear sturdy footwear. Ramblers also lists a head torch, a charged phone, a whistle and a survival or bothy bag. | bmc-hill-weather, ramblers-hill-tips, pc-safety-tips |
 | core | 8 | key session | Low-impact exercise such as cycling, swimming or rowing builds fitness with less pounding and is useful for everyone, not just the injured. | ea-training-pace, higdon-novice1, movingmedicine-cycling |
 | core | 8 | warning signs | In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). | nhs-hypothermia, ms-hypothermia |
@@ -218,12 +228,9 @@
 | supported | 3 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit |
 | supported | 3 | key session | For a first half marathon, think of the long run in minutes rather than miles, at an easy pace, building to about 80 minutes by two weeks before the race. | greatrun-half-plan |
 | supported | 3 | key session | For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60. | greatrun-10k-plans |
-| supported | 3 | before you start | If you are new to running, give yourself 8 to 12 weeks to get ready for a 10k rather than 6, and if time is short use a run-walk approach. | greatrun-10k-how-long, greatrun-10k-plans |
-| supported | 3 | kit | If you will wear a wetsuit on the day, train in that same wetsuit beforehand rather than changing kit for the event. | usms-wetsuit-temp |
 | supported | 3 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water |
 | supported | 3 | key session | With three days a week, swim once or twice working on technique, ride once at a steady pace and run twice, one easy and one a little faster. Regular sessions of 30 to 45 minutes are enough to start, rather than long, hard ones. | tri-ireland-first |
 | supported | 3 | on the day | Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast. | usat-brick |
-| supported | 3 | on the day | In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. | britri-beginners-wales |
 
 ## Coverage by kind of challenge
 
