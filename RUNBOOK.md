@@ -2,6 +2,8 @@
 
 This is the instruction set Claude follows to run dontdieretired.com. It is written so a fresh Claude session with this repo can do the job without any other context.
 
+**Hosting and GitHub minutes (Robin, 23 Nov 2026):** follow `docs/hosting-standard.md` for any change to workflows, hosting or repo settings. This repo stays public on GitHub Pages until the move in that file is done; do not make it private before then.
+
 ## 1. What the site is
 **Positioning (Robin, 19 Nov 2026; supersedes the older description below where they differ):** Don't Die Retired is **a guide to things worth doing, and how to start.** Things to do is the core: each activity page says how to start, where to go and roughly what it costs, and the full guides and deep hubs (§6u) go further. Stories are the proof that someone went and did it; Planner Plus is how a reader fits the chosen things into their year. Line: "Never retire from life." Promise under it: "Find something worth doing, and how to start." Use that promise wherever the site describes itself (home lead, Start here, About, `site.description`, social bios, the newsletter's welcome). Do not describe the site as for an age group. Where to grow: depth, not breadth. Most effort goes into a few areas we aim to cover better than anyone (endurance events, outdoor adventure, learning a craft or instrument, travel experiences): hubs, a page per event and real filter landing pages, because those are what people search for; the rest are supporting pages. Check Search Console monthly and put effort into whatever already earns impressions.
 
