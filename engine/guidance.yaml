@@ -242,7 +242,8 @@ guidance:
     applies: [multiday]
     use: rule
     text: Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day.
-    for: [bmc-long-distance, ldwa-trailwalker]
+    for: [bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit]
+    note: Cicerone (opened 23 Nov 2026) suggests back-to-back walks at weekends to build stamina for longer distances before a trek, tapering to about 12 km each day before it; the point about learning how you cope on the second day comes from the BMC and LDWA. Mind's intermediate trekking plan (by Full Potential, opened 23 Nov 2026) pairs 180-minute walks on Saturday and Sunday so you train to move when tired, but for the one-day 3 Peaks Challenge, so it is not counted here.
   - id: multiday-pacing
     topic: on the day
     applies: [multiday]
@@ -415,7 +416,8 @@ guidance:
     use: why
     text: Training with your loaded pack matches the conditions of the day and shows you what you really need to carry.
     short: it matches the conditions of the day and shows you what you really need to carry
-    for: [wanderlust-trek-prep, bmc-hill-fit]
+    for: [wanderlust-trek-prep, bmc-hill-fit, cicerone-hill-fit]
+    note: Cicerone (opened 23 Nov 2026) says to train with the equipment and pack you will take on the hills or the trek, building the weight steadily as the miles build; it backs matching the day's conditions, while the point about what you really need to carry comes from the other sources.
   - id: why-taper
     topic: why
     role: taper
@@ -437,8 +439,9 @@ guidance:
     topic: key session
     applies: [running]
     use: advice
-    text: For a first half marathon, think of the long run in minutes rather than miles, at an easy pace, building to about 80 minutes by two weeks before the race.
-    for: [greatrun-half-plan]
+    text: For a first half marathon, think of the long run as time on your feet rather than miles, at an easy pace. Great Run's beginner plan builds it to about 80 minutes by two weeks before the race.
+    for: [greatrun-half-plan, rphm-coopah-beginner]
+    note: The Royal Parks Half beginner plan (by Coopah, opened 23 Nov 2026) sets long runs in minutes (30 minutes in week 1, 2 hours 30 minutes by week 14 of 16; one week is set as 10 km) and says to keep them at an easy, comfortable pace, focusing on time on feet rather than distance or pace. It backs running by time at an easy pace, not the 80-minute figure, which is Great Run's.
   - id: warm-up-dynamic
     topic: on the day
     applies: [running]

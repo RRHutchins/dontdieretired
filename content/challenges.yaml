@@ -17958,24 +17958,219 @@
   company: either
   regions:
   - uk
-  why: A coin or buckle lifted from a ploughed field becomes evidence once its exact find spot is written down, and the Portable Antiquities Scheme exists to record such objects on a public database. Its Finds Liaison Officers describe, photograph and measure each find, then normally hand it back with a reference number.
+  - us
+  why: A coin or buckle lifted from a plowed field becomes evidence once its exact find spot is written down, and in England and Wales the Portable Antiquities Scheme exists to record such objects. Its
+    Finds Liaison Officers identify, date, photograph and measure what you bring in, and return finds that are not Treasure as soon as possible, though they may keep them for several weeks.
   start:
-  - Read the National Council for Metal Detecting's beginners guide, which covers permission, protected sites and the law on treasure.
-  - Get the landowner's written permission before you search any land, and agree in writing who owns what is found.
-  - Note a National Grid Reference for each find and take it to your local Finds Liaison Officer to be recorded.
+  - Read the National Council for Metal Detecting's guide for newcomers, and join it for public liability insurance, or find a local club through its directory.
+  - Get the landowner's permission before you search any land, and agree in writing who owns what is found.
+  - Bag each find with its National Grid Reference and show it to your local Finds Liaison Officer (in Scotland, the Treasure Trove Unit; on a US national forest, the local Forest Service office).
   links:
-  - label: National Council for Metal Detecting, beginners guide (UK)
-    url: https://www.ncmd.co.uk/beginners-guide/
+  - label: 'National Council for Metal Detecting: new to metal detecting?'
+    url: https://www.ncmd.co.uk/2024/01/09/a-beginners-guide-to-metal-detecting/
     region: uk
-    checked: '2026-10-07'
-  - label: Portable Antiquities Scheme, guidance for landowners in England and Wales (explains how finds are recorded)
-    url: https://finds.org.uk/getinvolved/guides/guidancelandowners
+    checked: '2026-11-23'
+  - label: 'The Crown Estate: metal detecting on the foreshore'
+    url: https://www.thecrownestate.co.uk/our-business/marine/metal-detecting-and-drone-flying
     region: uk
-    checked: '2026-10-07'
+    checked: '2026-11-23'
+  - label: 'Treasure Trove Scotland: information for finders'
+    url: https://treasuretrovescotland.co.uk/information/information-for-finders/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'USDA Forest Service: metal detecting on national forests'
+    url: https://www.fs.usda.gov/visit/know-before-you-go/metal-detecting
+    region: us
+    checked: '2026-11-23'
+  safety: If you uncover anything that could be live ammunition or an explosive, do not touch it, keep your detector and phone away from it, and call the police or HM Coastguard.
+  seo_title: 'Metal detecting for beginners: UK and US laws explained'
+  description: How to start metal detecting in the UK or US, where you may not search, what you must report as treasure, and how to get your finds recorded.
+  detail:
+  - h: What it's really like
+    p:
+    - Most of the work happens before you switch the detector on. The voluntary Code of Practice for Responsible Metal Detecting in England and Wales starts with permission from the landowner or occupier,
+      whatever the land, and a written agreement on who owns any finds. Detecting on private land without permission is trespass, and finds made that way belong to the landowner.
+    - In the field, the code asks you to work on ground that has already been disturbed, such as plowed land, and only within the depth of plowing. Bag each find separately with its National Grid Reference,
+      record the find spot to at least about 1,076 square feet (100 square meters), and fill your holes neatly. Do not share find spots without the landowner's agreement.
+    - Recording is where a find becomes useful. In Lancashire, for example, the Finds Liaison Officers identify each object, date it as closely as they can, photograph, measure and describe it, and hand
+      it back as soon as possible, though finds may be kept for several weeks. Records go on the scheme's public database at finds.org.uk, with grid references kept restricted to protect find sites.
+  - h: Where you may not detect
+    list:
+    - 'Scheduled monuments: in England and Wales it is an offense to detect on one without written permission, and the National Trust describes this as needing a Section 42 license from Historic England
+      (or Cadw in Wales).'
+    - The Areas of Archaeological Importance in Hereford, York, Chester, Exeter and Canterbury, which need the same written permission.
+    - 'National Trust land, including its beaches: the Trust does not allow detecting except as part of a defined archaeological project, and it does not issue detecting licenses.'
+    - 'Sites of Special Scientific Interest (SSSIs, protected wildlife and geology sites): the code says to check for them before you go and to take extra care when detecting near protected sites.'
+    - Council land where local byelaws ban detectors. Ask the council first.
+    - The Thames foreshore in London, which needs a permit from the Port of London Authority. Elsewhere, Crown Estate foreshore (between mean high and mean low water) can be searched without formal consent,
+      but only under its published terms and conditions; this does not cover the seabed, riverbeds or other Crown Estate land.
+    - 'US National Park Service land: the federal rule 36 CFR 2.1(a)(7) bans possessing or using a metal detector, and one park calls detecting there a felony.'
+  - h: The rules side by side
+    table:
+      head:
+      - Where
+      - What must be reported
+      - Who to tell
+      - Deadline
+      - Permission or license
+      rows:
+      - - England and Wales
+        - Treasure as defined by the Treasure Act 1996, including the class added in 2023. Other finds are voluntary but welcome.
+        - The coroner, usually through your local Finds Liaison Officer
+        - 14 days
+        - Landowner permission; a Section 42 license for scheduled monuments
+      - - Scotland
+        - All portable antiquities of archaeological, historical or cultural significance, not only metal. Not modern ceramics, glass or coins, or pieces of farm machinery.
+        - Treasure Trove Unit at National Museums Scotland
+        - No fixed number of days given; contact them at once if a find is still in the ground
+        - Landowner permission; Historic Environment Scotland permission for scheduled sites
+      - - Northern Ireland
+        - Archaeological objects, plus potential Treasure.
+        - National Museums NI, the Department for Communities or a police station; Treasure to the Coroners Service for Northern Ireland
+        - 14 days
+        - A Department for Communities license to dig or search for archaeological objects
+      - - US national forests
+        - Any possible historic or archaeological find (the agency counts items over 50 years old as historical and 100 years or more as archaeological)
+        - The local Forest Service office
+        - Stop and report when found
+        - Allowed in appropriate places; most developed recreation sites need no permit
+      - - US national parks
+        - Not applicable
+        - Not applicable
+        - Not applicable
+        - Possessing or using a detector is banned
+      - - US state parks (example Pennsylvania)
+        - Historical objects
+        - The park manager
+        - When found
+        - Prior approval from the park manager; sunrise to sunset; narrow probes only on grass
+    after: In Northern Ireland the license is usually granted only to archaeologists, historians or experienced amateurs, so casual digging for old objects is not an option there. US state parks set their
+      own rules, and Pennsylvania's are only one example, so check your state's before you go.
+  - h: What counts as Treasure in England and Wales
+    p:
+    - Under the Treasure Act 1996, a finder who believes an object is Treasure must tell the local coroner within 14 days. In Dorset, the Finds Liaison Officer asks for the date, grid reference, your and
+      the landowner's details, photos with a ruler for scale and the weight, and once you have signed a treasure form and arranged to hand over the find, the officer can formally notify the coroner.
+    list:
+    - Single metal objects (not coins) at least 300 years old with at least 10% precious metal by weight.
+    - Any prehistoric object containing precious metal, and two or more prehistoric metal objects found together.
+    - Two or more gold or silver coins over 300 years old from the same find, or ten or more base metal coins of that age.
+    - Anything found with other Treasure.
+    - 'Since 30 July 2023, a new class: metal objects and coins over 200 years old that give exceptional insight into national or regional history, through rarity, the place they were found, or a link to
+      a notable person or event. Single coins can qualify.'
+  - h: Getting started with a club and insurance
+    table:
+      head:
+      - Option
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - National Council for Metal Detecting (UK)
+        - Public liability insurance up to £10 million with no excess, including at rallies, events and group digs, plus a members' club directory and forum
+        - £8 (about $11) a year, as listed November 2026
+      - - A local club (UK)
+        - Found through the NCMD club directory; club digs on land the club has permission for
+        - Set by each club
+      - - Your Finds Liaison Officer (England and Wales)
+        - Identification and recording of your finds; some hold regular drop-in sessions at museums
+        - No charge stated
+      - - Treasure Trove Unit (Scotland)
+        - Reporting by online form with photos
+        - No charge stated
+  faq:
+  - q: Do I need permission to metal detect in the UK?
+    a: Yes. You need the landowner's or occupier's permission on any land, public or private, and detecting on private land without it is trespass. Get it in writing, with an agreement on who owns any finds.
+  - q: Do you have to report metal detecting finds in the UK?
+    a: In England and Wales you must report possible Treasure to the coroner within 14 days, usually through a Finds Liaison Officer; recording other finds is voluntary. In Scotland the law requires you
+      to report anything of archaeological, historical or cultural significance to Treasure Trove.
+  - q: Can you metal detect on UK beaches?
+    a: On Crown Estate foreshore you can, without formal consent, under its terms and conditions. National Trust beaches are off limits, and the Thames foreshore needs a Port of London Authority permit.
+  - q: What counts as treasure in the UK?
+    a: In England and Wales it includes metal objects over 300 years old with at least 10% gold or silver, groups of old coins, prehistoric metalwork, and since July 2023 some exceptional metal objects
+      over 200 years old. Scotland's Treasure Trove system covers a much wider range of finds.
+  - q: Is metal detecting legal in US national parks?
+    a: No. Federal rules ban possessing or using a metal detector in National Park Service areas. National forests allow it in appropriate places, but you may not remove any historic or archaeological object.
+  - q: What happens when you take a find to a Finds Liaison Officer?
+    a: The officer identifies and dates it, then photographs, measures and describes it for the Portable Antiquities Scheme database. Finds that are not Treasure are returned as soon as possible, though
+      they may be kept for several weeks.
+  sources:
+  - label: Herefordshire Through Time, Code of Practice for Responsible Metal Detecting in England and Wales
+    url: https://htt.herefordshire.gov.uk/information-and-resources/metal-detecting/code-of-practice-for-responsible-metal-detecting-in-england-and-wales
+    checked: '2026-11-23'
+  - label: Herefordshire Through Time, Metal detecting and the law
+    url: https://htt.herefordshire.gov.uk/information-and-resources/metal-detecting/metal-detecting-and-the-law
+    checked: '2026-11-23'
+  - label: Herefordshire Through Time, The Portable Antiquities Scheme
+    url: https://htt.herefordshire.gov.uk/information-and-resources/metal-detecting/the-portable-antiquities-scheme
+    checked: '2026-11-23'
+  - label: GOV.UK, Thousands more treasures to be saved for the nation as rules about discoveries are changed
+    url: https://www.gov.uk/government/news/thousands-more-treasures-to-be-saved-for-the-nation-as-rules-about-discoveries-are-changed
+    checked: '2026-11-23'
+  - label: GOV.UK, Explanatory memorandum to the Treasure Act 1996 Code of Practice (3rd revision) 2023
+    url: https://www.gov.uk/government/publications/treasure-act-1996-code-of-practice-3rd-revision/explanatory-memorandum-to-the-treasure-act-1996-code-of-practice-3rd-revision-2023
+    checked: '2026-11-23'
+  - label: Amgueddfa Cymru – Museum Wales, What qualifies legally as Treasure
+    url: https://museum.wales/curatorial/archaeology/treasure/what-qualifies-legally-as-treasure
+    checked: '2026-11-23'
+  - label: Dorset Council, How to report treasure
+    url: https://www.dorsetcouncil.gov.uk/w/how-to-report-treasure
+    checked: '2026-11-23'
+  - label: The Crown Estate, Metal detecting and drone flying
+    url: https://www.thecrownestate.co.uk/our-business/marine/metal-detecting-and-drone-flying
+    checked: '2026-11-23'
+  - label: National Trust, Metal detecting on National Trust land
+    url: https://www.nationaltrust.org.uk/who-we-are/about-us/metal-detecting-on-national-trust-land
+    checked: '2026-11-23'
+  - label: Treasure Trove Scotland, Information for finders
+    url: https://treasuretrovescotland.co.uk/information/information-for-finders/
+    checked: '2026-11-23'
+  - label: Department for Communities (Northern Ireland), Guide to metal detecting, archaeology and the law
+    url: https://www.communities-ni.gov.uk/articles/guide-metal-detecting-archaeology-and-law
+    checked: '2026-11-23'
+  - label: National Park Service (Fort Smith), Metal detectors, don't dig here
+    url: https://www.nps.gov/fosm/learn/management/metal-detecting.htm
+    checked: '2026-11-23'
+  - label: USDA Forest Service, Metal detecting
+    url: https://www.fs.usda.gov/visit/know-before-you-go/metal-detecting
+    checked: '2026-11-23'
+  - label: Pennsylvania DCNR, Metal detecting in state parks
+    url: https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/rules-and-regulations/metal-detecting
+    checked: '2026-11-23'
+  - label: National Council for Metal Detecting, New to metal detecting?
+    url: https://www.ncmd.co.uk/2024/01/09/a-beginners-guide-to-metal-detecting/
+    checked: '2026-11-23'
+  - label: National Council for Metal Detecting, Benefits of membership
+    url: https://www.ncmd.co.uk/benefits-of-membership/
+    checked: '2026-11-23'
+  - label: Blackpool Gazette, How Lancashire's special finds are recorded through the Portable Antiquities Scheme
+    url: https://www.blackpoolgazette.co.uk/news/it-treasure-trove-how-lancashires-special-finds-silverdale-hoard-rare-coins-and-jewellery-are-recorded-through-portable-antiquities-scheme-651634
+    checked: '2026-11-23'
+  - label: Voice of America, With metal detectors, treasure hunters unearth pieces of British history
+    url: https://www.voanews.com/a/with-metal-detectors-treasure-hunters-unearth-pieces-of-british-history-/7974646.html
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Andy Akroyd, from Bedfordshire
+    line: Found a 16th-century signet ring engraved with a phoenix, a symbol linked to Elizabeth I, which was declared treasure and shown at the British Museum when it published its Portable Antiquities
+      Scheme report.
+    title: With metal detectors, treasure hunters unearth pieces of British history
+    outlet: Voice of America
+    url: https://www.voanews.com/a/with-metal-detectors-treasure-hunters-unearth-pieces-of-british-history-/7974646.html
+    checked: '2026-11-23'
+  related:
+  - join-an-archaeology-dig
+  - try-a-thames-foreshore-walk
+  - jurassic-coast-fossil-hunt
+  - trace-your-house-history
   kit:
   - name: Finds bags and labels
-    why: write where and when you found it
+    why: one bag per find, labeled with the date and grid reference
     url: https://www.amazon.co.uk/s?k=finds+bags+archaeology
+  - name: Pinpointer probe
+    why: narrows down where a signal is once you have opened a small hole
+    url: https://www.amazon.co.uk/s?k=metal+detector+pinpointer
+  - name: Digging trowel
+    why: for cutting a neat plug of turf or soil that you can put back
+    url: https://www.amazon.co.uk/s?k=metal+detecting+digging+trowel
 - id: join-an-archaeology-dig
   title: Dig on an archaeological excavation
   category: explore
@@ -17990,30 +18185,169 @@
   - uk
   - us
   why: Excavation is slow work with a trowel, and the reward is being the first person to see an object or a floor surface since it was buried. Volunteers dig alongside professional archaeologists on projects
-    listed by the Council for British Archaeology and through the US Forest Service's Passport in Time programme.
+    listed by the Council for British Archaeology and through the US Forest Service's Passport in Time program.
   start:
-  - Filter the Council for British Archaeology's Volunteer Hub by Fieldwork and by region in the UK, or read the Forest Service's Passport in Time page in the US.
-  - Contact the organiser named on a UK listing, or create an account at volunteer.gov to search for Passport in Time projects.
-  - Ask what tools, clothing and level of fitness the project expects, and what training is given on site.
+  - Filter the Council for British Archaeology's Volunteer Hub by Fieldwork and by region in the UK, or create an account at volunteer.gov and search for Passport in Time projects in the US.
+  - Find your nearest archaeology society on the CBA's groups map; groups run their own events and hands-on training.
+  - Ask the organizer what tools, clothing, fitness and accommodation to expect, and what training is given on site.
   links:
-  - label: Council for British Archaeology, Volunteer Hub (UK listings run by third-party organisers)
+  - label: 'Council for British Archaeology: Volunteer Hub'
     url: https://www.archaeologyuk.org/get-involved/volunteer-hub.html
     region: uk
-    checked: '2026-10-07'
-  - label: USDA Forest Service heritage programme, including Passport in Time volunteering
-    url: https://www.fs.usda.gov/managing-land/heritage
+    checked: '2026-11-23'
+  - label: 'Council for British Archaeology: groups and societies map'
+    url: https://www.archaeologyuk.org/get-involved/groups-and-societies.html
+    region: uk
+    checked: '2026-11-23'
+  - label: 'USDA Forest Service: heritage program and Passport in Time'
+    url: https://fs.usda.gov/managing-land/heritage
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-23'
+  - label: 'Archaeological Institute of America: Fieldwork Opportunities Bulletin'
+    url: https://www.archaeological.org/fieldwork/afob/4187
+    region: anywhere
+    checked: '2026-11-23'
+  safety: Make sure your tetanus vaccination is up to date, bring sun protection, and attend the site's tool talk and risk assessment.
+  seo_title: 'Volunteer archaeology digs in the UK and US: how to join'
+  description: What a day on an archaeological dig is like, the ways in for volunteers in the UK and US compared by cost, what to bring, and how to build up.
+  detail:
+  - h: What a day on a dig is really like
+    p:
+    - Most of the day is spent low down. Barbara Marshall, who volunteers with Gwynedd Archaeological Trust in North Wales, describes three weeks in a large trench at Dinas Dinlle working on hands and knees,
+      trowel at the ready, and another three weeks at the Roman site of Segontium, where finds turned up as soon as they began troweling, including beads, Samian Ware pottery, blue glass and metal objects.
+    - Digging is only part of it. Volunteers sieve (screen) soil, wash and catalog finds, measure, draw and photograph, and keep written records. Marshall and her partner spent a winter washing, identifying
+      and cataloging well over a thousand finds from Segontium. She also asks if you have ever tried writing up notes in a howling gale in pouring rain; fortunately, they had waterproof paper.
+    - 'Expect physical hard work and few finds, says a first-timer''s guide in Current Archaeology; its author found nothing of major significance across several digs but found each one thrilling. The same
+      guide lists what you learn instead: reading maps, using a compass, surveying, excavation technique, drawing site plans, keeping records, and identifying and cataloging finds.'
+  - h: The ways in compared
+    table:
+      head:
+      - Route
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Council for British Archaeology Volunteer Hub (UK)
+        - Listings posted by third-party organizers; filter by Fieldwork, Finds Handling and region
+        - Set by each organizer
+      - - Local archaeology society (UK)
+        - Found on the CBA groups map; in Scotland the CBA works with its sister organization, Archaeology Scotland
+        - Set by each society
+      - - Festival of Archaeology (CBA; UK)
+        - Events across the UK each summer; the 2026 festival ran from 18 July to 2 August with more than 500 events
+        - Not stated on the festival page; check each event
+      - - Archeoscan training digs (Cotswolds and Gloucestershire)
+        - Day bookings; no experience needed; equipment and tuition provided
+        - £40 (about $53) a person a day, 2025 season; meals and accommodation extra
+      - - DigVentures (Sudeley Castle, Gloucestershire)
+        - Two-day, one-week and two-week digs
+        - £380 (about $502) for two days, £900 (about $1,188) a week, £1,600 (about $2,112) for two weeks, 2025
+      - - Mercian Archaeological Services post-excavation course (Nottinghamshire)
+        - Five days on cleaning and processing finds, drawing and GIS
+        - £450 (about $594), 2025; accommodation not provided
+      - - Passport in Time (USDA Forest Service)
+        - Projects on national forests, advertised on volunteer.gov; excavation, survey, artifact curation, oral history
+        - No fee listed on the Forest Service heritage page; check each project
+      - - Archaeological Institute of America Fieldwork Opportunities Bulletin (US and abroad)
+        - Database of field schools and projects posted by their directors
+        - Set by each project
+      - - Crow Canyon Archaeology Research Program (Colorado)
+        - Multi-day, small-group hands-on research near Mesa Verde for non-professionals
+        - Paused during strategic planning (as of November 2026); a $500 deposit was listed for the most recent session, in 2024
+    after: 'A Current Archaeology guide for first-time diggers sorts digs into three kinds: tuition-based field schools, volunteer-led digs, and academic projects looking for summer workers. Know which
+      one you are signing up for.'
+  - h: The honest hard parts
+    p:
+    - 'Nobody checks the listings for you. The CBA says the opportunities on its Volunteer Hub are run by third-party providers and that it is not responsible for their content or delivery. The Archaeological
+      Institute of America says the same of its bulletin: it does not sponsor digs, and it suggests asking for references from past participants before you sign up.'
+    - Living arrangements on residential digs range from tents and cabins to hotels, with showers and toilets sometimes limited and sleeping space often basic and shared. Confirm exactly what is provided,
+      and whether you need your own bedding or tent, before you book.
+  - h: What to bring
+    list:
+    - Your own trowel. Projects usually supply the main tools, but most archaeologists treat a trowel as personal and will not lend theirs.
+    - Sturdy boots, broken in before you go.
+    - A kneeling mat or knee pads, and gloves.
+    - Your own small first aid kit, high-factor sunscreen and insect repellent.
+    - A notebook with waterproof paper, if you will be recording outdoors.
+  - h: How to build up
+    p:
+    - 'Start close to home. A local society, found on the CBA''s map, puts you in touch with people near you who dig. Recording and finds work are good ways in too, and finds work can carry on through the
+      winter: Barbara Marshall''s first taste was a recording project, measuring and drawing ruined quarry workers'' buildings at Pen-y-Bryn in the Nantlle Valley, and she says she was hooked from then
+      on.'
+    - If you want a structured week, a short training dig or a post-excavation course (see the table) teaches skills that community digs value. In the US, Passport in Time projects let you work beside Forest
+      Service archaeologists; the agency asks you to create an account on volunteer.gov and search for terms such as Archaeology or Historic Preservation.
+  faq:
+  - q: Can I volunteer on an archaeological dig with no experience?
+    a: Yes. Training digs such as Archeoscan's say no experience is needed and provide equipment and tuition, and Passport in Time volunteers work alongside Forest Service professionals.
+  - q: How do I find archaeology volunteer opportunities near me?
+    a: In the UK, use the Council for British Archaeology's Volunteer Hub and its map of local groups and societies. In the US, search volunteer.gov for Passport in Time projects, or browse the Archaeological
+      Institute of America's Fieldwork Opportunities Bulletin.
+  - q: Do you have to pay to go on an archaeology dig?
+    a: Not always. Training digs charge by the day or week, while community and society digs set their own terms, so ask the organizer.
+  - q: What should I bring to an archaeological dig?
+    a: Your own trowel, broken-in boots, a kneeling mat or knee pads, gloves, a small first aid kit, sunscreen and insect repellent. Check your tetanus vaccination is up to date.
+  - q: What is Passport in Time?
+    a: The US Forest Service's best-known heritage volunteer program. Projects can include excavation, surveys, restoring historic buildings, oral history and artifact curation, and all are now advertised
+      on volunteer.gov.
+  sources:
+  - label: Council for British Archaeology, A day in archaeology, a volunteer's experience
+    url: https://www.archaeologyuk.org/resource/a-day-in-archaeology---a-volunteers-experience.html
+    checked: '2026-11-23'
+  - label: Council for British Archaeology, Volunteer Hub
+    url: https://www.archaeologyuk.org/get-involved/volunteer-hub.html
+    checked: '2026-11-23'
+  - label: Council for British Archaeology, Groups and societies
+    url: https://www.archaeologyuk.org/get-involved/groups-and-societies.html
+    checked: '2026-11-23'
+  - label: Council for British Archaeology, Festival of Archaeology
+    url: https://www.archaeologyuk.org/festival.html
+    checked: '2026-11-23'
+  - label: USDA Forest Service, Heritage program (Passport in Time)
+    url: https://fs.usda.gov/managing-land/heritage
+    checked: '2026-11-23'
+  - label: Advisory Council on Historic Preservation, Passport in Time program
+    url: https://www.achp.gov/node/7929
+    checked: '2026-11-23'
+  - label: National Forest Foundation, Channeling your inner Indiana Jones
+    url: https://nationalforests.org/our-forests/light-and-seed-magazine/channeling-your-inner-indiana-jones
+    checked: '2026-11-23'
+  - label: Archaeological Institute of America, Archaeological Fieldwork Opportunities Bulletin
+    url: https://www.archaeological.org/fieldwork/afob/4187
+    checked: '2026-11-23'
+  - label: Crow Canyon Archaeological Center, Archaeology Research Program
+    url: https://crowcanyon.org/archaeology-research-program/
+    checked: '2026-11-23'
+  - label: Current Archaeology, Go digging
+    url: https://the-past.com/current-archaeology/425/digging/go-digging-8/
+    checked: '2026-11-23'
+  - label: Current Archaeology, Advice and encouragement for first-time diggers
+    url: https://archaeology.co.uk/articles/features/advice-and-encouragement-for-first-time-diggers.htm
+    checked: '2026-11-23'
+  - label: The Past, Survival guide to volunteer excavation
+    url: https://the-past.com/guide/digging/survival-guide-to-volunteer-excavation/
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Barbara Marshall, volunteer with Gwynedd Archaeological Trust
+    line: Took up archaeology as a volunteer after she retired, dug at Dinas Dinlle and the Roman site of Segontium, and spent a winter washing and cataloging more than a thousand finds.
+    title: A Day in Archaeology - a volunteers experience
+    outlet: Council for British Archaeology
+    url: https://www.archaeologyuk.org/resource/a-day-in-archaeology---a-volunteers-experience.html
+    checked: '2026-11-23'
+  related:
+  - record-a-find
+  - join-a-local-history-society
+  - volunteer-at-a-museum
+  - walk-hadrians-wall-path
   kit:
   - name: Archaeology trowel
-    why: the main tool on any excavation
+    why: the main tool on any excavation, and one most diggers keep for themselves
     url: https://www.amazon.co.uk/s?k=archaeology+trowel
   - name: Kneeling pad
     why: for long hours kneeling in a trench
     url: https://www.amazon.co.uk/s?k=kneeling+pad
-  - name: Wide-brimmed sun hat
-    why: for a day on an open site
-    url: https://www.amazon.co.uk/s?k=wide+brimmed+sun+hat
+  - name: Waterproof notebook
+    why: for writing up notes outdoors in rain and wind
+    url: https://www.amazon.co.uk/s?k=waterproof+notebook
 - id: learn-to-fish
   title: Learn to fish
   category: explore
@@ -21086,27 +21420,195 @@
   company: either
   regions:
   - uk
-  why: The British Hen Welfare Trust places hens from commercial laying farms with people who have a garden and a secure coop. The birds are not sold, though the charity asks for a donation towards its
-    costs, and you collect them yourself from one of its rehoming points around the country.
+  - us
+  why: Hens from commercial laying farms often arrive scruffy and short of feathers, but within a few days many are eating from your hand and following you around the garden, and within a couple of months
+    they usually look transformed. In the UK the British Hen Welfare Trust asks only a small donation per bird, and some US rescues run similar schemes.
   start:
-  - Read the British Hen Welfare Trust's rehoming page and its FAQs to see what the birds need.
-  - Set up a fox-proof coop and run before you register, then find your nearest collection point on the Trust's site.
-  - Register online or by phone and ring the Trust to confirm your booking and collection day.
+  - Build or buy a secure, lockable hen house and an enclosed run with at least 1 square meter of clear floor per hen.
+  - In England or Wales, register as a bird keeper on GOV.UK; in the US, check your local rules on keeping chickens.
+  - Find your nearest British Hen Welfare Trust rehoming site, or a US rescue such as Animal Place, and reserve at least three hens.
   links:
-  - label: British Hen Welfare Trust rehoming page (UK charity)
-    url: https://www.bhwt.org.uk/rehome-some-hens/
+  - label: 'British Hen Welfare Trust: Adopt hens'
+    url: https://www.bhwt.org.uk/hen-adoption/
     region: uk
-    checked: '2026-10-07'
+    checked: '2026-11-23'
+  - label: 'GOV.UK: Register as a keeper of less than 50 poultry'
+    url: https://www.gov.uk/guidance/register-as-a-keeper-of-less-than-50-poultry-or-other-captive-birds
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Animal Place: Adoptable chickens (California)'
+    url: https://animalplace.org/adopt/adoptable-chickens/
+    region: us
+    checked: '2026-11-23'
+  - label: 'The Humane League: How you can rescue and rehome hens from factory farms'
+    url: https://thehumaneleague.org/article/hen-rescue-and-rehoming
+    region: us
+    checked: '2026-11-23'
+  safety: Wash your hands after handling hens or cleaning the coop, and follow any bird flu rules in force where you live.
+  seo_title: 'How to rehome ex-battery hens: a step-by-step guide'
+  description: How to adopt ex-battery hens in the UK and US, what they are like when they arrive, the housing and daily care they need, and the rules on registering.
+  detail:
+  - h: How rehoming works
+    p:
+    - The British Hen Welfare Trust has rehomed more than 1.1 million hens since 2005, through around 50 rehoming sites and more than 1,400 volunteers. Hens are collected from farms at about 17 months old,
+      when they would otherwise go for slaughter, so rehoming days follow farm slaughter dates and most volunteer teams hold one every four to six weeks. New adopters fill in an online questionnaire, send
+      a photo of their hen house and run, then phone to book; full details of the collection point are given once the reservation is confirmed.
+    table:
+      head:
+      - Route
+      - Where
+      - How it works
+      - Cost (as last listed)
+      rows:
+      - - British Hen Welfare Trust
+        - England, Scotland and Wales
+        - Reserve between three and 20 hens, then collect them from a rehoming site on its rehoming day
+        - Suggested donation of £3 (about $4) per hen, or £6 (about $8) to support extra work such as its Hen Helpline
+      - - Animal Place
+        - Grass Valley and Petaluma, California
+        - Fill in the adoption form, then pick up hens by appointment; no more than ten per person
+        - $10 per chicken
+      - - HenPals Network
+        - Montgomery County, Maryland
+        - Takes hens from large egg producers and finds adopters; started in late 2025 on a UK model
+        - Not stated in the article
+      - - Farm Sanctuary and Hen Harbor
+        - New York-based (nationwide) and Santa Cruz, California
+        - Farm animal adoption networks listed by The Humane League
+        - Ask the organization
+    after: Some US rescues adopt hens out only in pairs or flocks, and Animal Place requires that chickens be kept in a flock rather than alone.
+  - h: What the hens are like when they arrive
+    p:
+    - Expect them to look a little scruffy and to be missing a few feathers, with large, pale, floppy combs. Bruising for a few days after collection is not unusual. Many sleep on the floor at first until
+      they learn to perch.
+    - They usually start to grow new feathers within a few weeks, and the trust says they look "amazing within a couple of months", with combs that shrink and turn bright red once they are outdoors. Many
+      are eating out of your hand and following you around the garden within a few days. Egg numbers are likely to fall over time, so treat any eggs as a bonus.
+  - h: Housing, space and foxes
+    list:
+    - A secure, lockable, sturdy hen house with nest boxes and perches. Inside, the trust asks for at least 25 cm (about 10 inches) of perch per bird.
+    - An enclosed run with at least 1 square meter (about 11 square feet) of clear floor per ex-caged hen, or 2 square meters for hens from other systems. Space under the coop and under feeders does not
+      count.
+    - Fencing that keeps out foxes and other predators. The trust suggests stock or electric fencing where foxes are a problem, and free-range hens must be fenced away from roads.
+    - A roof on the run, which gives shelter and helps if a bird flu housing order is declared.
+    - Go by the smallest number of hens the coop maker lists, and be wary of the small runs attached to some wooden coops, which the trust says are not suitable.
+    - In the US, The Humane League suggests at least 10 square feet of outdoor space per hen, plus safe shelter.
+  - h: Daily and weekly care
+    table:
+      head:
+      - How often
+      - Task
+      rows:
+      - - Every day
+        - Fresh water in the morning, topped up as needed, ideally from more than one drinker
+      - - Every day
+        - About 100 to 120 grams (3.5 to 4.2 ounces) of layers feed per hen; treats no more than a dessert spoonful of that
+      - - Every day
+        - Pick up droppings and wet bedding, and spend a few minutes watching the hens so you learn what normal looks like
+      - - Every week
+        - Sweep out, scrape the floor and put down fresh bedding, wearing a face mask against dust
+      - - Every month
+        - Clean and disinfect the coop with a government-approved disinfectant
+      - - Three or four times a year
+        - Worm the hens with a licensed product
+      - - Regularly
+        - Check hens and coop for red mite and other parasites
+    after: The trust says commercial hens have eaten dry mash all their lives and suggests a crumble feed as they start free ranging. It also points out that feeding kitchen scraps to hens is illegal in
+      the UK. If you already keep hens, keep the newcomers separate at first; the trust suggests up to two weeks' quarantine.
+  - h: The legal side, and bird flu
+    p:
+    - In England and Wales you must register within one month of keeping poultry, however few birds you have. Registration is online or by phone on 03000 200 301, and the Animal and Plant Health Agency
+      (APHA) will then contact you if there is a disease outbreak such as bird flu nearby. Scotland has its own register, the Scottish Kept Bird Register.
+    - Bird flu rules change through the winter, so check GOV.UK before you collect hens. As of 22 November 2026, England and Scotland were in an Avian Influenza Prevention Zone, which makes strict biosecurity
+      a legal requirement for all bird keepers, and Wales had declared its own zone from 16 November with mandatory biosecurity but no housing order. In England, keepers of fewer than 50 birds kept for
+      their own use did not have to house them, but those who sell or give away eggs did. The government also publishes a disease zone map.
+    - In the US there is no national register for backyard hens, but local ordinances can limit or require a permit for chickens, and renters should check their lease. The USDA asks keepers to wash hands,
+      clean equipment and disinfect surfaces often, protect birds from pests and wildlife, and report sick or dying birds to the state veterinarian or to USDA on 1-866-536-7593.
+  faq:
+  - q: How much does it cost to rehome ex battery hens?
+    a: The British Hen Welfare Trust asks for a donation of £3 (about $4) per hen towards its costs. In California, Animal Place lists an adoption fee of $10 per chicken.
+  - q: How many hens do I have to adopt?
+    a: The British Hen Welfare Trust's minimum is three. Some US rescues adopt hens only in pairs or flocks, so a hen is never kept alone.
+  - q: Do I need to register my chickens in the UK?
+    a: In England and Wales, yes. GOV.UK says you must register within one month of keeping poultry at any premises, however small the flock; Scotland has its own register.
+  - q: Do ex battery hens still lay eggs?
+    a: Usually, but the trust says egg numbers are likely to fall as they age and shell quality may decline.
+  - q: How long does it take for ex battery hens to grow feathers back?
+    a: The trust says they usually start to re-feather within a few weeks and look transformed within a couple of months.
+  - q: Can I feed my chickens kitchen scraps?
+    a: Not in the UK, where the British Hen Welfare Trust says it is illegal. Small amounts of fresh garden vegetables are fine, up to a dessert spoonful per hen a day.
+  sources:
+  - label: British Hen Welfare Trust, Hen adoption FAQs
+    url: https://www.bhwt.org.uk/adopt-hens/hen-adoption-faqs/
+    checked: '2026-11-23'
+  - label: British Hen Welfare Trust, Adopt now
+    url: https://www.bhwt.org.uk/hen-adoption/
+    checked: '2026-11-23'
+  - label: British Hen Welfare Trust, About us
+    url: https://www.bhwt.org.uk/about-us/
+    checked: '2026-11-23'
+  - label: British Hen Welfare Trust, Getting set up to adopt hens
+    url: https://www.bhwt.org.uk/adopt-hens/hen-setup/
+    checked: '2026-11-23'
+  - label: British Hen Welfare Trust, Newly adopted hens
+    url: https://bhwt.org.uk/hen-adoption/newly-adopted-hens
+    checked: '2026-11-23'
+  - label: British Hen Welfare Trust, Feeding your hens
+    url: https://www.bhwt.org.uk/feeding-your-hens/
+    checked: '2026-11-23'
+  - label: British Hen Welfare Trust, Hen husbandry
+    url: https://www.bhwt.org.uk/adopt-hens/hen-husbandry/
+    checked: '2026-11-23'
+  - label: GOV.UK, Register as a keeper of less than 50 poultry or other captive birds
+    url: https://www.gov.uk/guidance/register-as-a-keeper-of-less-than-50-poultry-or-other-captive-birds
+    checked: '2026-11-23'
+  - label: 'GOV.UK, Bird flu (avian influenza): latest situation in England'
+    url: https://www.gov.uk/guidance/bird-flu-avian-influenza-latest-situation-in-england
+    checked: '2026-11-23'
+  - label: USDA APHIS, Defend the Flock biosecurity basics
+    url: https://www.aphis.usda.gov/livestock-poultry-disease/avian/defend-the-flock/biosecurity-basics
+    checked: '2026-11-23'
+  - label: Animal Place, Adoptable Chickens
+    url: https://animalplace.org/adopt/adoptable-chickens/
+    checked: '2026-11-23'
+  - label: The Humane League, How you can rescue and rehome hens from factory farms
+    url: https://thehumaneleague.org/article/hen-rescue-and-rehoming
+    checked: '2026-11-23'
+  - label: WTOP, When egg producers retire, HenPals finds them new homes
+    url: https://wtop.com/montgomery-county/2026/04/montgomery-county-nonprofit-rehomes-retired-chickens-from-egg-producers
+    checked: '2026-11-23'
+  - label: Farmers Weekly, Hen rehoming trust hits half-a-million-bird milestone
+    url: https://www.fwi.co.uk/livestock/poultry/hen-rehoming-trust-hits-half-million-bird-milestone
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Abby Johnson, from Montgomery County, Maryland
+    line: Started HenPals Network in late 2025, modeled on a UK scheme, and has found homes for more than 200 hens from large egg producers.
+    title: When egg producers retire, HenPals finds them new homes
+    outlet: WTOP
+    url: https://wtop.com/montgomery-county/2026/04/montgomery-county-nonprofit-rehomes-retired-chickens-from-egg-producers
+    checked: '2026-11-23'
+  - kind: read
+    person: Jane Howorth
+    line: Founded the British Hen Welfare Trust, which had rehomed half a million hens from farms as garden pets by early 2016, and was made an MBE.
+    title: Hen rehoming trust hits half-a-million-bird milestone
+    outlet: Farmers Weekly
+    url: https://www.fwi.co.uk/livestock/poultry/hen-rehoming-trust-hits-half-million-bird-milestone
+    checked: '2026-11-23'
+  related:
+  - take-up-beekeeping
+  - start-composting
+  - take-on-an-allotment
+  - grow-a-wildflower-patch
   kit:
-  - name: Book on keeping hens
-    why: covers housing, feeding and daily care
-    url: https://www.amazon.co.uk/s?k=keeping+chickens+book
-  - name: Chicken feeder
-    why: keeps feed clean and dry
-    url: https://www.amazon.co.uk/s?k=chicken+feeder
+  - name: Treadle feeder
+    why: the lid opens only when a hen steps on it, which cuts waste from wild birds and vermin
+    url: https://www.amazon.co.uk/s?k=treadle+chicken+feeder
   - name: Poultry drinker
-    why: a steady supply of clean water
+    why: a second drinker stops one hen guarding the water
     url: https://www.amazon.co.uk/s?k=poultry+drinker
+  - name: Dust mask
+    why: for the weekly coop clean-out, as the trust advises
+    url: https://www.amazon.co.uk/s?k=dust+mask+ffp2
 - id: become-a-master-gardener
   title: Train as a Master Gardener volunteer
   category: eat
@@ -21288,27 +21790,167 @@
   company: either
   regions:
   - uk
-  why: The Royal Horticultural Society's qualifications turn a gardener's instincts into knowledge of how plants actually grow, and Level 2 is a common place to begin. The RHS says you can study at home
-    or at one of more than 90 centres in the UK and Ireland.
+  - us
+  why: RHS Level 2 turns a gardener's hunches into a working knowledge of how plants grow and develop, backed by hands-on skills that are formally assessed. You can study it at a college, in a garden or
+    online, and take the theory and practical certificates separately.
   start:
-  - Read the RHS Qualifications page and its questions and answers to see what Level 2 involves.
-  - Use the RHS Find an approved centre page to choose a college, garden or distance-learning provider.
-  - Enrol with the centre and ask how it registers you for the RHS exams.
+  - Read the RHS Level 2 page and decide whether you want the theory certificate, the practical one, or both.
+  - Use the RHS Find a centre page to compare a local college, a garden and an online course on format and price.
+  - Ask your chosen center what the fee includes, especially RHS registration and exam fees, before you enroll.
   links:
-  - label: RHS Qualifications overview (Royal Horticultural Society)
-    url: https://www.rhs.org.uk/education-learning/qualifications-and-training/rhs-qualifications
+  - label: 'Royal Horticultural Society: RHS Level 2 qualifications'
+    url: https://www.rhs.org.uk/education-learning/qualifications-and-training/rhs-qualifications/level-two
     region: uk
-    checked: '2026-10-07'
+    checked: '2026-11-23'
+  - label: 'Royal Horticultural Society: Find a study centre'
+    url: https://www.rhs.org.uk/education-learning/qualifications-and-training/rhs-qualifications/find-a-centre
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Royal Botanic Garden Edinburgh: RHS Level 2 theory certificate online'
+    url: https://rbge.org.uk/learn/certificate-courses/rhs-level-2-certificate-in-the-principles-of-plant-growth-and-development
+    region: anywhere
+    checked: '2026-11-23'
+  - label: 'Brooklyn Botanic Garden: Certificate in Horticulture'
+    url: https://www.bbg.org/learn/certificate
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'RHS Level 2 explained: courses, exams and costs'
+  description: What the RHS Level 2 horticulture certificates involve, how the exams work, what real courses cost at a college, a garden and online, and what comes next.
+  detail:
+  - h: What RHS Level 2 actually is
+    p:
+    - The Royal Horticultural Society (RHS) offers Level 2 as two separate qualifications, one theory and one practical. Each needs about 120 hours of guided learning. Pass both and you are awarded a third,
+      combined qualification. There are no entry requirements; the RHS says all you need is a passion for gardening.
+    table:
+      head:
+      - Qualification
+      - What it covers
+      - How it is assessed
+      rows:
+      - - Level 2 Certificate in the Principles of Plant Growth and Development
+        - The theory of how plants grow and develop
+        - Two exams of 120 minutes each, online or on paper, in February, June or October; you need at least 50% in each
+      - - Level 2 Certificate in Practical Horticulture
+        - Core hands-on gardening skills
+        - A 75-minute online test (20% of the marks, pass mark 60%) and two practical assessments, one in winter and one in summer (40% of the marks each)
+      - - Level 2 Certificate in the Principles and Practices of Horticulture
+        - The combined award
+        - Awarded automatically when you hold both certificates above
+    after: 'Both certificates are graded the same way: 50 to 64% is a pass, 65 to 79% a merit and 80% or more a distinction. The two parts of the practical certificate can be taken in either order, and
+      the online test can be sat at home with a live remote invigilator.'
+  - h: What it is really like
+    p:
+    - Most courses run part time over an academic year from September, though some gardens spread the work over two years and distance-learning students can start whenever they like. One learner on the
+      RHS's case-study pages says the content, especially on the theory course, was much more detailed than she expected.
+    - 'The practical assessments are not a demonstration of what you have rehearsed: on the day, you are given written instructions for around three to five core skills. You also cannot simply turn up and
+      sit the exams. The RHS says you must enroll with an approved center, which registers you, and you get your results from the center where you sat the exam.'
+  - h: Where to study, and what it costs
+    table:
+      head:
+      - Provider
+      - Type
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Abingdon & Witney College
+        - Further education college
+        - Theory certificate, Thursday evenings 6pm to 9:30pm, September 2025 to June 2026
+        - £720 (about $950) for adults, £360 reduced fee; full course cost £1,150 (2025/26). Ask whether exam fees are included
+      - - Beth Chatto Education Trust
+        - Garden
+        - Theory certificate, Thursdays 1pm to 3pm, weekly over two years, starting 10 September 2026
+        - £1,475 (about $1,947), including RHS registration and exam fees
+      - - Royal Botanic Garden Edinburgh
+        - Botanic garden (online)
+        - Theory certificate, self-paced with tutor support, two years' access, start any time
+        - '£995 (about $1,313): £790 for the course plus £205 RHS fees'
+      - - Brooklyn Botanic Garden (US)
+        - Botanic garden certificate, not RHS
+        - Eight courses mixing classroom lectures and hands-on work with the garden's plant collections, from plant identification to soil management; can be finished in as little as a year, though many
+          take several
+        - $389 to $519 per course (2025), 10% off for garden members
+    after: The RHS says each approved center sets its own fees, so prices vary a lot. College fees can be lower if you qualify for funding; Capel Manor College in London, for example, says adults may get
+      help with tuition depending on their circumstances. The RHS registration fee includes your first attempt at the exams and assessments.
+  - h: After Level 2, and the US route
+    p:
+    - Level 3 also comes as a practical certificate and a theory certificate, the Level 3 Certificate in the Principles of Plant Growth, Garden Planning and Applied Propagation. Level 2 is not strictly
+      required, but the RHS strongly recommends it or similar experience. The RHS says Level 3 can lead to roles such as garden supervisor or team leader, and on to its Master of Horticulture (MHort).
+    - RHS qualifications are British, but the Royal Botanic Garden Edinburgh says its online theory course can be studied wherever you are located. In the US, the closest equivalent is a botanic garden
+      certificate. Brooklyn Botanic Garden's Certificate in Horticulture has eight required courses, to be finished within ten years, and the New York Botanical Garden runs a New York State-licensed Horticulture
+      Program with four tracks, from 158 to 202 course hours, finished within six years.
+  faq:
+  - q: What is RHS Level 2?
+    a: A set of horticulture qualifications from the Royal Horticultural Society, made up of a theory certificate and a practical certificate. Pass both and you also receive the combined Level 2 Certificate
+      in the Principles and Practices of Horticulture.
+  - q: How much does RHS Level 2 cost?
+    a: Centers set their own fees. As last listed, the online theory course at the Royal Botanic Garden Edinburgh was £995 (about $1,313) including RHS fees, and a two-year garden course at Beth Chatto
+      was £1,475 (about $1,947).
+  - q: Can I do RHS Level 2 online?
+    a: Yes, the theory certificate can be studied by distance learning, and the practical certificate's online test can be sat at home. The two practical assessments are hands-on tasks done in person, one
+      in winter and one in summer.
+  - q: How long does RHS Level 2 take?
+    a: Most courses run part time over one academic year from September. Some gardens spread it over two years, and the Royal Botanic Garden Edinburgh's online course gives two years' access.
+  - q: Do you need qualifications to do RHS Level 2?
+    a: No. The RHS says there are no entry requirements at Level 2.
+  - q: What are the RHS Level 2 exam dates?
+    a: Theory exams are held in February, June and October each year. The RHS publishes the exact dates for each year as a PDF on its exams page.
+  sources:
+  - label: Royal Horticultural Society, RHS Level 2 Qualifications
+    url: https://www.rhs.org.uk/education-learning/qualifications-and-training/rhs-qualifications/level-two
+    checked: '2026-11-23'
+  - label: 'Royal Horticultural Society, RHS Level 2: Exams and assessment'
+    url: https://www.rhs.org.uk/education-learning/qualifications-and-training/rhs-qualifications/level-two/exams-and-assessment
+    checked: '2026-11-23'
+  - label: Royal Horticultural Society, Frequently asked questions about RHS Horticultural Qualifications
+    url: https://www.rhs.org.uk/education-learning/qualifications-and-training/rhs-qualifications/qualifications-faqs
+    checked: '2026-11-23'
+  - label: Royal Horticultural Society, RHS Level 3 Qualifications
+    url: https://www.rhs.org.uk/education-learning/qualifications-and-training/rhs-qualifications/level-three
+    checked: '2026-11-23'
+  - label: 'Royal Horticultural Society, Liz Pinfield-Wells: RHS qualifications journey'
+    url: https://www.rhs.org.uk/education-learning/qualifications-and-training/rhs-qualifications/learner-case-studies/liz-pinfield
+    checked: '2026-11-23'
+  - label: Royal Botanic Garden Edinburgh, RHS Level 2 Theory Certificate - Online
+    url: https://rbge.org.uk/learn/certificate-courses/rhs-level-2-certificate-in-the-principles-of-plant-growth-and-development
+    checked: '2026-11-23'
+  - label: Abingdon & Witney College, RHS Certificate in the Principles of Plant Growth and Development Level 2
+    url: https://abingdon-witney.ac.uk/courses/rhs-certificate-in-the-principles-of-plant-growth-and-development-level-2-2168233
+    checked: '2026-11-23'
+  - label: Beth Chatto Education Trust, RHS Level 2 Certificate in Principles of Plant Growth and Development
+    url: https://bcet.bethchatto.co.uk/courses/rhs-level-2-certificate-in-principles-of-plant-growth-development_1.htm
+    checked: '2026-11-23'
+  - label: Capel Manor College, RHS Level 2 Certificate in the Principles of Plant Growth and Development
+    url: https://www.capel.ac.uk/?p=7601
+    checked: '2026-11-23'
+  - label: Brooklyn Botanic Garden, Certificate in Horticulture
+    url: https://www.bbg.org/learn/certificate
+    checked: '2026-11-23'
+  - label: New York Botanical Garden, Certificate Program
+    url: https://www.nybg.org/education/adult-education/certificate-program/
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Liz Pinfield-Wells
+    line: Moved from journalism and social care into horticulture by studying RHS courses at South Staffordshire College, and now works as a freelance gardener and leads activities at two community gardens.
+    title: 'Liz Pinfield-Wells: RHS qualifications journey'
+    outlet: Royal Horticultural Society
+    url: https://www.rhs.org.uk/education-learning/qualifications-and-training/rhs-qualifications/learner-case-studies/liz-pinfield
+    checked: '2026-11-23'
+  related:
+  - become-a-master-gardener
+  - learn-garden-design
+  - take-on-an-allotment
+  - visit-kew-gardens
   kit:
   - name: Horticulture textbook
-    why: covers the science in the syllabus
+    why: for reading around the theory syllabus between classes
     url: https://www.amazon.co.uk/s?k=rhs+level+2+horticulture+book
-  - name: Botanical Latin dictionary
-    why: for learning plant names
-    url: https://www.amazon.co.uk/s?k=botanical+latin+dictionary
   - name: Hand lens
-    why: for looking at plant structures close up
+    why: for looking at flowers, leaves and roots close up
     url: https://www.amazon.co.uk/s?k=botanical+hand+lens
+  - name: Botanical Latin dictionary
+    why: for learning and remembering plant names
+    url: https://www.amazon.co.uk/s?k=botanical+latin+dictionary
 - id: save-your-own-seed
   title: Save seed from your own vegetables
   category: eat
@@ -119470,3 +120112,1683 @@
   - join-a-model-railway-club
   - send-a-postcard-to-a-stranger
   - join-a-chess-club
+
+- id: join-a-gilbert-and-sullivan-society
+  title: Sing in a Gilbert and Sullivan show
+  category: connect
+  kind: experience
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Gilbert and Sullivan's comic operas, from The Pirates of Penzance to The Mikado, have big singing choruses. Some amateur societies, such as the Grosvenor Light Opera Company in London, take chorus
+    members without an audition and save the auditions for the principal roles.
+  start:
+  - Look for a Gilbert and Sullivan or light opera society near you. In the UK, NODA (the National Operatic and Dramatic Association) lists member societies; in the US, search for a "Savoyards" or "light
+    opera" company in your area.
+  - Go to an open rehearsal at the start of a production, or ask to sit in on a rehearsal and meet the members before you commit.
+  - If you want a principal role, prepare a verse of a G&S song of your choice. For the chorus, ask whether there is an audition at all.
+  links:
+  - label: 'Grosvenor Light Opera Company: how to join (London)'
+    url: https://gloc.org/join-gloc/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'The Gilbert and Sullivan Society: International G&S Festival, Buxton'
+    url: https://www.gilbertandsullivansociety.org.uk/events/32nd-international-g-s-festival
+    region: uk
+    checked: '2026-11-23'
+  - label: 'The Savoyaires: join us, on or off the stage (Evanston, Illinois)'
+    url: https://savoyaires.org/join-us.html
+    region: us
+    checked: '2026-11-23'
+  - label: 'Gilbert and Sullivan Light Opera Company of Long Island: auditions'
+    url: https://gaslocoli.org/join-us/auditions
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Gilbert and Sullivan societies: how to join the chorus'
+  description: How amateur Gilbert and Sullivan societies work, how chorus and principal auditions differ, what joining costs, and how to find one in the UK and US.
+  detail:
+  - h: How auditions and the chorus work
+    p:
+    - Practice varies, so ask. The Grosvenor Light Opera Company in London holds auditions for principal roles only; you do not need to audition to join the chorus. It welcomes new members regardless of
+      experience, and each production starts with an open rehearsal where you can meet the team.
+    - The Gilbert and Sullivan Light Opera Company of Long Island asks new company members for a fairly basic audition, which it says is not competitive. Principal roles are competitive. A typical principal
+      audition there is a verse of a G&S song of your choice and a scene reading chosen by the directors, with scales and arpeggios to check your voice.
+    - Not everyone sings. The Savoyaires in Illinois welcome orchestral players and volunteers for publicity, costumes and set building, and the Matlock G&S Society in Derbyshire asks for help with tickets,
+      costumes, scenery and fundraising.
+  - h: Some ways in
+    table:
+      head:
+      - Society
+      - How it works
+      - Cost (as last listed)
+      rows:
+      - - Grosvenor Light Opera Company, London
+        - Wednesday rehearsals in Pimlico; no audition for the chorus
+        - £180 (about $238) for the main summer show, £90 (about $119) for the winter show; can be paid in two parts
+      - - Matlock G&S Society, Derbyshire
+        - A four-part choir that stages a G&S show each summer in Bakewell; Friday rehearsals; come along, listen and chat first
+        - Not listed
+      - - The Savoyaires, Evanston, Illinois
+        - Open auditions for all principal and chorus parts; one song in English, preferably G&S, with an accompanist provided
+        - Not listed
+      - - Gilbert and Sullivan Light Opera Company of Long Island
+        - Basic, non-competitive audition to join; best time to join is the fall
+        - Not listed
+    after: The International Gilbert and Sullivan Festival in Buxton, Derbyshire, includes an amateur competition alongside professional productions; in 2026 it ran from 1 to 15 August.
+  faq:
+  - q: Do you have to audition for a Gilbert and Sullivan society?
+    a: Not always for the chorus. The Grosvenor Light Opera Company in London auditions principals only, while the Long Island company asks for a basic, non-competitive audition to join.
+  - q: What should I sing at a Gilbert and Sullivan audition?
+    a: Usually a G&S song of your choice. The Savoyaires ask for one song in English, preferably Gilbert and Sullivan, and provide an accompanist.
+  - q: How much does it cost to join an amateur operatic society?
+    a: It varies. The Grosvenor Light Opera Company charged £180 (about $238) for its main summer show and £90 (about $119) for its winter show, with half price for full-time students.
+  - q: Can I help a Gilbert and Sullivan society without singing?
+    a: Yes. Societies such as the Savoyaires look for orchestral players and volunteers for publicity, costumes and set building.
+  sources:
+  - label: Grosvenor Light Opera Company, Join GLOC
+    url: https://gloc.org/join-gloc/
+    checked: '2026-11-23'
+  - label: Gilbert and Sullivan Light Opera Company of Long Island, Auditions
+    url: https://gaslocoli.org/join-us/auditions
+    checked: '2026-11-23'
+  - label: The Savoyaires, Join us - on or off the stage
+    url: https://savoyaires.org/join-us.html
+    checked: '2026-11-23'
+  - label: The Savoyaires, Auditions
+    url: https://www.savoyaires.org/auditions.html
+    checked: '2026-11-23'
+  - label: The Gilbert and Sullivan Society, 32nd International Gilbert and Sullivan Festival 2026
+    url: https://www.gilbertandsullivansociety.org.uk/events/32nd-international-g-s-festival
+    checked: '2026-11-23'
+  - label: Derbyshire Times, Matlock G&S Society launches recruitment drive
+    url: https://derbyshiretimes.co.uk/arts-and-culture/theatre-and-stage/matlock-gs-society-launches-recruitment-drive-3407324
+    checked: '2026-11-23'
+  - label: NODA, Preston G&S Society
+    url: https://www.noda.org.uk/societies/preston-g-s-society
+    checked: '2026-11-23'
+  kit:
+  - name: Gilbert and Sullivan vocal score
+    why: for learning your chorus part at home
+    url: https://www.amazon.co.uk/s?k=gilbert+and+sullivan+vocal+score
+  - name: Pencil and eraser set
+    why: for marking cuts and cues in your score
+    url: https://www.amazon.co.uk/s?k=pencil+and+eraser+set
+  related:
+  - join-amateur-theatre
+  - join-rock-choir
+  - sing-messiah-from-scratch
+  - see-opera-at-a-country-house-festival
+- id: join-a-big-band
+  title: Play in a community big band
+  category: connect
+  kind: experience
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A big band is a jazz orchestra of saxophones, trumpets and trombones over a rhythm section of piano, guitar, bass and drums, and community bands play anything from swing and trad jazz to pop and
+    rock classics arranged in swing, funk and R&B styles.
+  start:
+  - Check that you can read music at a steady tempo on your instrument. If you are rusty, a college big band course or a jam is a gentler way back in.
+  - Look for bands seeking players. In the UK, Making Music posts notices from groups looking for instrumentalists; in the US, ask at your local community college or community music school.
+  - Ask for a trial rehearsal, and find out whether the band auditions, what it charges and which parts it needs.
+  links:
+  - label: 'The People''s Big Band: no auditions, two free trial sessions (Birmingham)'
+    url: https://thepeoplesorchestra.com/the-peoples-big-band/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Making Music: groups looking for instrumentalists (UK)'
+    url: https://www.makingmusic.org.uk/vacancy-type/instrumentalist
+    region: uk
+    checked: '2026-11-23'
+  - label: 'MSU Community Music School-Detroit: adult jazz ensembles'
+    url: https://www.cmsd.msu.edu/ensembles/adult-jazz
+    region: us
+    checked: '2026-11-23'
+  - label: 'Elgin Community College: Jazz Lab Band, open to qualified adults (Illinois)'
+    url: https://elgin.edu/areas-of-study/music/music-ensembles/jazz-lab-band/
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'How to join a big band: community jazz bands for adults'
+  description: How to find a community big band in the UK or US, what the line-up is, whether you need to audition, and what college and community bands charge to join.
+  detail:
+  - h: What a big band needs
+    p:
+    - The North Swindon Big Band's listing on Making Music gives its line-up as six saxophones, four trumpets, four trombones, piano, guitar, bass and drums, plus vocalists. It plays contemporary jazz,
+      swing and trad jazz.
+    - Repertoire varies. The People's Big Band in Birmingham plays pop and rock classics arranged for a 20-piece band in swing, blues, funk and R&B styles, and is looking for rhythm, brass and woodwind
+      players.
+    - Making Music's notices list groups looking for new players, some with rehearsal details. Some bands also advertise for "deps," or stand-in players; the Milestone Big Band, for example, has posted
+      a notice there looking for deps.
+  - h: Some ways in
+    table:
+      head:
+      - Band
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The People's Big Band, Birmingham
+        - Every other Sunday evening, 7:30pm to 9:30pm; no auditions; two free trial sessions
+        - Membership options; amounts not listed
+      - - North Swindon Big Band
+        - Monday afternoons; says it is always keen to find new members
+        - Not listed
+      - - Spartan Detroit Community Jazz Band, MSU Community Music School-Detroit
+        - Tuesdays, 5pm to 7pm; adults 18 and up
+        - $240 a semester
+      - - Jazz Lab Band, Elgin Community College, Illinois
+        - Open to qualified adults as well as students; audition at the first class of the semester
+        - College tuition; see the college's cost calculator
+  faq:
+  - q: Do I need to audition to join a big band?
+    a: It depends on the band. The People's Big Band in Birmingham says there are no auditions, while Elgin Community College's Jazz Lab Band auditions at the first class of each semester.
+  - q: What instruments are in a big band?
+    a: Typically saxophones, trumpets and trombones with piano, guitar, bass and drums. The North Swindon Big Band lists six saxophones, four trumpets and four trombones.
+  - q: Can adults join a college jazz band?
+    a: Some colleges allow it. Elgin Community College's Jazz Lab Band is open to all qualified adults as well as students, and MSU's Community Music School-Detroit runs jazz ensembles for adults.
+  sources:
+  - label: The People's Orchestra, Join The People's Big Band
+    url: https://thepeoplesorchestra.com/the-peoples-big-band/
+    checked: '2026-11-23'
+  - label: Making Music, North Swindon Big Band
+    url: https://www.makingmusic.org.uk/group/north-swindon-big-band
+    checked: '2026-11-23'
+  - label: Making Music, Instrumentalist vacancies
+    url: https://www.makingmusic.org.uk/vacancy-type/instrumentalist?page=8
+    checked: '2026-11-23'
+  - label: MSU Community Music School-Detroit, Adult Jazz
+    url: https://www.cmsd.msu.edu/ensembles/adult-jazz
+    checked: '2026-11-23'
+  - label: Elgin Community College, Jazz Lab Band
+    url: https://elgin.edu/areas-of-study/music/music-ensembles/jazz-lab-band/
+    checked: '2026-11-23'
+  kit:
+  - name: Folding music stand
+    why: for rehearsals where stands are not provided
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  - name: Big band sight-reading book
+    why: for practicing reading swing rhythms at tempo
+    url: https://www.amazon.co.uk/s?k=big+band+sight+reading+book
+  - name: Clip-on music stand light
+    why: for dim rehearsal rooms and gigs
+    url: https://www.amazon.co.uk/s?k=clip+on+music+stand+light
+  related:
+  - join-community-orchestra-or-band
+  - learn-jazz-improvisation
+  - join-a-brass-band
+  - go-to-a-jazz-club
+- id: play-the-handpan
+  title: Learn to play the handpan
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The handpan is a steel instrument played on the lap with the fingertips, with a ring of notes around a central dome that sounds the lowest note. Beginners' workshops need no musical experience, and
+    some teach simple melodic patterns you can play right away.
+  start:
+  - Book a beginners' workshop that lends you an instrument, so you can try one before you think about buying.
+  - Look for a local handpan group or meetup. Some share instruments and welcome people who have never played.
+  - If you want to keep going, ask your teacher which scale the class uses and try several instruments before you buy, as each one is tuned and finished differently.
+  links:
+  - label: 'The London Handpan School: Discover the Handpan beginner workshop'
+    url: https://www.tickettailor.com/events/thelondonhandpanschool/2457572
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Old Town School of Folk Music: drumming and handpan workshops (Chicago)'
+    url: https://oldtownschool.org/classes/adults/drumming
+    region: us
+    checked: '2026-11-23'
+  - label: 'Madison Handpan Meetup Group: group lessons (Wisconsin)'
+    url: https://www.meetup.com/madison-handpan-meetup-group/events/312733778
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Handpan lessons for beginners: workshops and groups'
+  description: What a handpan is, how a beginners' handpan workshop works, whether instruments are provided, and what classes and groups cost in the UK and the US.
+  detail:
+  - h: What you are learning
+    p:
+    - The first handpan, the Hang, was invented by two Swiss artists in 2000. A handpan has between seven and 11 notes, arranged as a ring of shallow dimples around a central dome that gives the lowest
+      note, and you strike the steel with your fingertips rather than mallets. Each weighs about 10 pounds (4.5 kg).
+    - Every instrument is custom-made and varies in steel, finish and tuning, so borrowing one at a class is the sensible first step. A 2017 report from WGBH described a player who waited about 18 months
+      and spent a few thousand dollars before he owned one.
+    - Beginners' classes concentrate on touch and tone. The London Handpan School's workshop covers basic technique, simple rhythms for coordination and gentle melodic patterns, and says no musical experience
+      is needed.
+  - h: Some ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The London Handpan School, north London
+        - Two-hour beginner workshop for up to five students; D Kurd instruments provided
+        - £75 (about $99) with a handpan, £60 (about $79) with your own (December 2026)
+      - - Old Town School of Folk Music, Chicago
+        - 'Introduction to Handpan: a single 75-minute beginner workshop'
+        - $30, or $25 for members
+      - - Madison Handpan Meetup Group, Wisconsin
+        - 75-minute group lesson; instruments to share; total beginners welcome
+        - $5 to $25 sliding scale (February 2026)
+  faq:
+  - q: Do I need my own handpan to take a lesson?
+    a: Not always. The London Handpan School includes handpan hire in its beginner workshop, and the Madison Handpan Meetup Group has instruments to share.
+  - q: Is the handpan hard to learn?
+    a: Beginners' workshops are designed for people with no musical experience. The London Handpan School focuses on ease, listening and simple musical foundations.
+  - q: How much does a handpan lesson cost?
+    a: Group workshops are modest. The Old Town School of Folk Music listed $30 for a 75-minute introduction, and the London Handpan School £75 (about $99) for two hours with an instrument.
+  sources:
+  - label: The London Handpan School, Discover the Handpan - Beginner Workshop
+    url: https://www.tickettailor.com/events/thelondonhandpanschool/2457572
+    checked: '2026-11-23'
+  - label: Old Town School of Folk Music, Adult drumming classes
+    url: https://oldtownschool.org/classes/adults/drumming
+    checked: '2026-11-23'
+  - label: Madison Handpan Meetup Group, Handpan Group Lessons
+    url: https://www.meetup.com/madison-handpan-meetup-group/events/312733778
+    checked: '2026-11-23'
+  - label: WGBH, In a Berlin handpan class, a close encounter of the musical kind
+    url: https://www.wgbh.org/news/2017-07-05/in-a-berlin-handpan-class-a-close-encounter-of-the-musical-kind
+    checked: '2026-11-23'
+  kit:
+  - name: Handpan carry bag
+    why: for carrying a borrowed or new instrument to class
+    url: https://www.amazon.co.uk/s?k=handpan+bag
+  - name: Handpan stand
+    why: holds the instrument when you play sitting on a chair
+    url: https://www.amazon.co.uk/s?k=handpan+stand
+  related:
+  - learn-the-steel-pan
+  - learn-taiko-drumming
+  - join-a-samba-band
+- id: learn-the-koto
+  title: Learn to play the koto
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The koto is a Japanese 13-string zither made of paulownia wood, tuned by moving its bridges and played with three picks on the thumb and first two fingers. It has been played in Japan for more than
+    a thousand years, and a few teachers outside Japan take complete beginners.
+  start:
+  - Look for a group class that lends instruments, such as a Japanese cultural center or museum, so you can learn before buying a koto.
+  - If there is no class nearby, contact a koto teacher for private lessons. Ask about a trial lesson and whether you will need your own instrument.
+  - In the UK, start with The Japan Society's list of koto players, some of whom teach or give workshops.
+  links:
+  - label: 'The Japan Society (UK): music, dance and theatre experts, including koto players'
+    url: https://www.japansociety.org.uk/music-dance-theatre-experts
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Morikami Museum and Japanese Gardens: koto classes (Delray Beach, Florida)'
+    url: https://morikami.org/event/koto/
+    region: us
+    checked: '2026-11-23'
+  - label: 'Japanese Traditional Music: Masayo Ishigure koto lessons (New York)'
+    url: https://japanese-music.com/class/masayo-ishigure-lessons-ny
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Koto lessons for beginners: classes in the US and UK'
+  description: What the Japanese koto is, how beginners learn it, where to find koto classes and teachers in the US and UK, and what lessons cost.
+  detail:
+  - h: What you are learning
+    p:
+    - The koto has 13 strings and movable bridges for tuning. Players wear three picks, called tsume, on the thumb and first two fingers. Miyagi Michio invented a 17-string version, sometimes called the
+      bass koto.
+    - Teachers belong to schools of playing. Masayo Ishigure in New York, for example, teaches in the Ikuta school through the Sawai Koto Institute.
+    - Classes outside Japan are few, so group courses that provide instruments are valuable. Morikami's five-week course provides instruments; Masayo Ishigure's private lessons do not, and students need
+      a koto for home practice.
+  - h: Some ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Morikami Museum and Japanese Gardens, Delray Beach, Florida
+        - Five Saturdays, 10:30am to 12:30pm; beginners of all levels; instruments provided
+        - $155, or $150 for members (2026-27 sessions)
+      - - Masayo Ishigure, Manhattan, New York
+        - Private lessons only, Ikuta school; free 30-minute trial; no rental instruments
+        - $95 a month for one hour-long lesson; $120 for a single hour
+      - - The Japan Society, UK
+        - A list of koto players, with notes on who teaches or gives workshops; contact them directly
+        - Set by each player
+      - - ICHION koto school, Chiba, Japan
+        - Visitor lessons of 60 minutes; instrument rental available; free trial lessons
+        - ¥5,000 a visitor lesson
+  faq:
+  - q: How many strings does a koto have?
+    a: The standard koto has 13 strings, with movable bridges for tuning. There is also a 17-string bass koto, invented by Miyagi Michio.
+  - q: Do I need to buy a koto to take lessons?
+    a: Not for every class. Morikami in Florida provides instruments for its course, but some private teachers, such as Masayo Ishigure in New York, have none to rent.
+  - q: Where can I learn koto in the UK?
+    a: There are few regular classes. The Japan Society lists koto players in the UK, including some who teach or run workshops, though it says inclusion is not a recommendation.
+  sources:
+  - label: Nippon.com, The Koto - An Ancient Japanese Musical Instrument
+    url: https://www.nippon.com/en/guide-to-japan/cs00075/the-koto-an-ancient-japanese-musical-instrument.html
+    checked: '2026-11-23'
+  - label: Morikami Museum and Japanese Gardens, Koto
+    url: https://morikami.org/event/koto/
+    checked: '2026-11-23'
+  - label: Japanese Traditional Music, Masayo Ishigure Koto and Shamisen Lessons - New York
+    url: https://japanese-music.com/class/masayo-ishigure-lessons-ny
+    checked: '2026-11-23'
+  - label: The Japan Society, Music, dance and theatre experts
+    url: https://www.japansociety.org.uk/music-dance-theatre-experts
+    checked: '2026-11-23'
+  - label: ICHION koto school, Learn a Japanese koto
+    url: https://sites.google.com/view/kotolessons/english
+    checked: '2026-11-23'
+  kit:
+  - name: Koto picks (tsume)
+    why: the three finger picks worn to play
+    url: https://www.amazon.co.uk/s?k=koto+tsume+picks
+  - name: Japanese koto music book
+    why: for listening and reading about the repertoire
+    url: https://www.amazon.co.uk/s?k=koto+music+book
+  related:
+  - learn-the-shakuhachi
+  - learn-taiko-drumming
+  - learn-the-harp
+  - learn-japanese
+  groups:
+  - japan
+- id: join-a-lapidary-club
+  title: Cut and polish a stone at a lapidary club
+  category: think
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Lapidary is the craft of cutting, polishing and engraving stones, and a first project is usually a cabochon, a domed polished stone for jewelry. Rock and gem clubs own the saws and grinding wheels,
+    so members can use the workshop without buying any machinery.
+  start:
+  - Find a club. In the US, the American Federation of Mineralogical Societies (AFMS) lists clubs and guilds; in the UK, search for a "mineral and lapidary society" near you.
+  - Ask whether the club runs a beginners' course or a supervised workshop, and whether you need to pass a course before using the machines on your own.
+  - Ask whether safety glasses, hearing protection and an apron are provided, or buy your own before your first workshop session.
+  links:
+  - label: 'Scottish Mineral & Lapidary Club on Mindat: workshop for lapidary, faceting and silversmithing'
+    url: https://zh.mindat.org/club.php?id=499
+    region: uk
+    checked: '2026-11-23'
+  - label: Sussex Mineral and Lapidary Society (Haywards Heath)
+    url: https://www.westsussex.gov.uk/find-my-nearest/local-club-or-society/details/api/type/localsociety/view/sussex-mineral-and-lapidary-society
+    region: uk
+    checked: '2026-11-23'
+  - label: 'International Gem Society: finding a lapidary or faceting club (US)'
+    url: https://www.gemsociety.org/article/finding-lapidary-faceting-club/
+    region: us
+    checked: '2026-11-23'
+  - label: 'Houston Gem & Mineral Society: lapidary shop open to members'
+    url: https://hgms.org/
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Lapidary clubs: how to learn to cut and polish stones'
+  description: How rock, gem and lapidary clubs work, what a beginners' cabochon course covers, how shop access and fees work, and how to find a club in the UK and US.
+  detail:
+  - h: How club workshops work
+    p:
+    - Most clubs ask you to learn before you work alone. The Madison Gem & Mineral Club's beginners' course in Wisconsin teaches students to saw, grind, sand and polish rock into cabochons, and completing
+      it certifies you to use the lab during open shop periods.
+    - Once you are in, you bring your own tools and materials. The Houston Gem & Mineral Society's lapidary, jewelry and air abrasives shops open to members on Wednesdays, Saturdays and Sundays, and it
+      asks members to bring their own tools and consumables.
+    - Clubs are also social. The Sussex Mineral and Lapidary Society has about 120 members, usually meets on the first Friday of the month and runs field trips, and prospective members can attend a couple
+      of meetings with no obligation.
+  - h: Some ways in
+    table:
+      head:
+      - Club
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Orange Belt Mineralogical Society, San Bernardino, California
+        - Volunteer-run workshop where newcomers get help making a first cabochon
+        - $5 workshop fee and $5 shop fee to use the equipment listed (2025); members also pay a yearly fee
+      - - Madison Gem & Mineral Club, Wisconsin
+        - Beginners' lapidary course, Wednesdays from late September to late October 2026; certifies you for open shop
+        - Fee not shown; project supplies extra
+      - - Scottish Mineral & Lapidary Club, Scotland
+        - Own workshop for lapidary, faceting and silversmithing
+        - Not listed
+      - - Sussex Mineral and Lapidary Society, Haywards Heath
+        - Monthly Friday meetings and field trips; minerals are the main focus
+        - Not listed
+  faq:
+  - q: What is a lapidary club?
+    a: A club for people who collect, cut and polish stones. Many own a workshop with saws and polishing machines that members can use.
+  - q: What is a cabochon?
+    a: A stone shaped and polished into a smooth dome rather than cut with facets. It is the usual first project on a beginners' lapidary course.
+  - q: Do I need my own equipment to join a lapidary club?
+    a: Not the machines. Clubs such as the Houston Gem & Mineral Society provide the shop, but ask members to bring their own tools and consumables.
+  sources:
+  - label: International Gem Society, Finding a Lapidary/Faceting Club
+    url: https://www.gemsociety.org/article/finding-lapidary-faceting-club/
+    checked: '2026-11-23'
+  - label: Houston Gem & Mineral Society, Welcome to the Houston Gem & Mineral Society
+    url: https://hgms.org/
+    checked: '2026-11-23'
+  - label: ACTIVE.com, Intro to Lapidary 2026 (Madison Gem & Mineral Club)
+    url: https://www.active.com/madison-wi/jewelry-making/classes/intro-to-lapidary-2026
+    checked: '2026-11-23'
+  - label: 'Meetup, OBMS Workshop: We have Lapidary Tools, Come Make a Cabochon'
+    url: https://www.meetup.com/obmsrocks-lapidary-hobby/events/309060815
+    checked: '2026-11-23'
+  - label: West Sussex County Council, Sussex Mineral and Lapidary Society
+    url: https://www.westsussex.gov.uk/find-my-nearest/local-club-or-society/details/api/type/localsociety/view/sussex-mineral-and-lapidary-society
+    checked: '2026-11-23'
+  - label: Mindat, The Scottish Mineral & Lapidary Club
+    url: https://zh.mindat.org/club.php?id=499
+    checked: '2026-11-23'
+  - label: AOL, Fight to save workshop that turns stones into gems
+    url: https://www.aol.com/articles/fight-save-workshop-turns-stones-110025621.html
+    checked: '2026-11-23'
+  safety: Lapidary saws and grinding wheels are powered machinery, so take the club's course or induction and wear safety glasses and hearing protection.
+  inspire:
+  - kind: read
+    person: Allison Parkes-Norris, of the Bristol and District Lapidary Society
+    line: Fell in love with the Bristol club as a newcomer after her first taster session, and organized a campaign to raise money to keep its workshop open, largely by replacing worn-out equipment.
+    title: Fight to save workshop that turns stones into gems
+    outlet: AOL
+    url: https://www.aol.com/articles/fight-save-workshop-turns-stones-110025621.html
+    checked: '2026-11-23'
+  kit:
+  - name: Safety glasses
+    why: eye protection at the saw and grinding wheels
+    url: https://www.amazon.co.uk/s?k=safety+glasses
+  - name: Ear defenders
+    why: hearing protection in a noisy workshop
+    url: https://www.amazon.co.uk/s?k=ear+defenders
+  - name: Cabochon template
+    why: for marking ovals and circles on a stone slab before cutting
+    url: https://www.amazon.co.uk/s?k=cabochon+template
+  related:
+  - hunt-for-gemstones
+  - make-silver-jewellery
+  - learn-enamelling
+  - join-a-woodturning-club
+- id: join-an-open-access-print-studio
+  title: Join an open-access print studio
+  category: think
+  kind: habit
+  effort: gentle
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: An open-access print studio rents out time on etching presses, screen-printing equipment and other printmaking kit. Once you have passed an induction you can book a session and work on your own prints
+    alongside other printmakers.
+  start:
+  - Find a community or open-access print studio near you, and check which processes it covers, such as etching, screen printing, relief or lithography.
+  - If you are new to printmaking, take one of the studio's beginners' courses first; many studios require a course or a skill check before you can work unsupervised.
+  - Book an induction, then budget for both the membership fee and the session fees, plus your own ink and paper.
+  links:
+  - label: 'Edinburgh Printmakers: studio membership and open access'
+    url: https://edinburghprintmakers.co.uk/studio/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Northern Print: membership costs and induction'
+    url: https://northernprint.org.uk/pages/membership-costs
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Postmark Center for the Arts: open studio print membership (Auburn, Washington)'
+    url: https://www.auburnwa.gov/city_hall/parks_arts_recreation/arts_and_entertainment/postmark_center_for_the_arts/open_studio_print_membership
+    region: us
+    checked: '2026-11-23'
+  - label: 'Manhattan Graphics Center: community print studio at Powerhouse Arts (Brooklyn)'
+    url: https://www.manhattangraphicscenter.org
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Open-access print studios: membership, induction and cost'
+  description: How open-access and community print studios work, what an induction involves, and what membership and session fees cost in the UK and the US.
+  detail:
+  - h: How joining works
+    p:
+    - Studios usually want proof you can work safely first. Northern Print says all new members must complete a studio induction before using the facilities unsupervised, whatever their experience, and
+      suggests a class first if you are new or rusty.
+    - Edinburgh Printmakers asks for a level of printmaking competency, usually a course or an induction. Taking one of its weekend or evening courses gives free associate membership, with studio access
+      for three months after the course ends.
+    - In the US, Postmark Center for the Arts in Auburn, Washington, asks for a skill assessment with staff or equivalent Postmark classes, plus a signed liability waiver. Its membership includes a flat
+      file drawer, storage, screens and some consumables, but not inks, gloves, tape or paper.
+  - h: What it costs
+    table:
+      head:
+      - Studio
+      - Processes
+      - Cost (as last listed)
+      rows:
+      - - Edinburgh Printmakers
+        - Etching, screen printing, lithography, relief, large-format inkjet, laser cutting
+        - £110 (about $145) a year, £75 (about $99) concession, plus £9 (about $12) for a 3.5-hour press booking
+      - - Northern Print
+        - Studio facilities after induction; ink, paper and plates bought separately
+        - £68 (about $90) a year, £34 (about $45) concession, plus £10 (about $13) a half day
+      - - Postmark Center for the Arts, Auburn, Washington
+        - Etching press, screen-printing exposure unit and washout booth
+        - $20 day pass or $40 a month
+      - - Manhattan Graphics Center, Brooklyn
+        - Intaglio, relief, lithography and screen printing; classes and memberships
+        - Not listed; tours can be booked
+  faq:
+  - q: What is an open-access print studio?
+    a: A shared printmaking workshop where members pay to book time on presses and other equipment for their own work, usually after an induction.
+  - q: Do I need experience to use an open-access print studio?
+    a: Usually some. Northern Print requires an induction for every new member, and Edinburgh Printmakers asks for a course or induction first.
+  - q: How much does print studio membership cost?
+    a: Northern Print charged £68 (about $90) a year plus £10 (about $13) a half day; Postmark Center for the Arts in Washington State charged $40 a month.
+  sources:
+  - label: Edinburgh Printmakers, Find out more about our print studio
+    url: https://edinburghprintmakers.co.uk/studio/
+    checked: '2026-11-23'
+  - label: Northern Print, Membership costs
+    url: https://northernprint.org.uk/pages/membership-costs
+    checked: '2026-11-23'
+  - label: City of Auburn, Open Studio Print Membership
+    url: https://www.auburnwa.gov/city_hall/parks_arts_recreation/arts_and_entertainment/postmark_center_for_the_arts/open_studio_print_membership
+    checked: '2026-11-23'
+  - label: Manhattan Graphics Center, Home
+    url: https://www.manhattangraphicscenter.org
+    checked: '2026-11-23'
+  kit:
+  - name: Printmaking apron
+    why: keeps ink off your clothes in the studio
+    url: https://www.amazon.co.uk/s?k=printmaking+apron
+  - name: Nitrile gloves
+    why: for inking up and cleaning down
+    url: https://www.amazon.co.uk/s?k=nitrile+gloves
+  - name: Portfolio folder
+    why: for carrying paper and finished prints to and from the studio
+    url: https://www.amazon.co.uk/s?k=a2+portfolio+folder
+  related:
+  - make-a-linocut-print
+  - try-etching
+  - try-screen-printing
+  - try-letterpress-printing
+- id: learn-spanish
+  title: Learn Spanish in a class and take a DELE exam
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: year
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Spanish has its own official ladder of six diplomas, the DELE, set out in Spanish law and run by the Instituto Cervantes, and the diplomas do not expire. A weekly class gets you started, and an exam
+    date gives each year of study a finish line.
+  start:
+  - 'Book a beginners'' course: an Instituto Cervantes, an adult education college such as City Lit, or a community college continuing education program.'
+  - If you have some Spanish already, ask the school about placement before you book, so you join at the right level.
+  - Read the DELE ladder below, pick the level you want to reach, and check the exam dates and registration deadlines at your nearest exam center.
+  links:
+  - label: 'City Lit, London: Spanish beginners intensive, module 1'
+    url: https://www.citylit.ac.uk/courses/spanish-beginners-intensive-module-1/ls119-2526
+    region: uk
+    checked: '2026-11-23'
+  - label: 'University of Exeter Language Centre: DELE Spanish exams, fees and dates'
+    url: https://language-centre.exeter.ac.uk/exams/dele/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Instituto Cervantes Los Angeles: general Spanish courses, on site and online'
+    url: https://cervantes.org/us/los-angeles/en/learning-teaching/spanish-courses/general-spanish-courses
+    region: us
+    checked: '2026-11-23'
+  - label: 'Seattle Central College Continuing Education: Spanish Level 1'
+    url: https://ce.seattlecentral.edu/category/person-classes/spanish-level-1
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Learn Spanish as an adult: classes and DELE levels'
+  description: Where to take Spanish classes in the UK and US, what beginners pay, and what each DELE exam level from A1 to C2 says you can do in Spanish.
+  detail:
+  - h: Ways in, compared
+    p:
+    - The courses below run in blocks of about 15 to 30 hours, so you can try one term before committing to a year. The Instituto Cervantes is Spain's own language institute; the adult and community colleges
+      below cost less per hour.
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Spanish beginners intensive: module 1. Six 2.5-hour Saturday or weekday sessions in person, or eight 2-hour evening sessions online. For complete beginners'
+        - £219 (about $289), £142 concession (2025 courses)
+      - - Instituto Cervantes, Los Angeles
+        - 30-hour courses from A1.1 upward, one 3-hour class a week on site or two 90-minute classes a week online
+        - $790 (fall term, late September to mid-December)
+      - - Seattle Central College Continuing Education
+        - Spanish Level 1, non-credit, 2-hour evening classes, in person or on Zoom depending on the section. Beginners welcome
+        - $299 (fall 2026), $289 (winter 2027)
+    after: City Lit asks anyone with some Spanish already to contact its language department before booking. The Instituto Cervantes in Los Angeles takes enrollments by email.
+  - h: The DELE ladder, level by level
+    p:
+    - Spain's royal decree on the DELE diplomas sets out what each level certifies. Here it is in plain English, beside what the exam cost at two centers. The written exam is on a fixed date; the oral may
+      be the day before, the same day or the day after.
+    table:
+      head:
+      - Level
+      - What the diploma certifies
+      - Exam fee, Instituto Cervantes Los Angeles (2026)
+      - Exam fee, University of Exeter (Nov 2025)
+      rows:
+      - - A1
+        - You understand and use very common everyday expressions to meet immediate needs, when the other person speaks slowly and helps
+        - $128
+        - £125 (about $165)
+      - - A2
+        - You understand frequent everyday expressions and handle simple exchanges on familiar subjects
+        - $130
+        - £165 (about $218)
+      - - B1
+        - You understand the main points of spoken and written texts on familiar matters and can write simple texts about your interests
+        - $154
+        - £180 (about $238)
+      - - B2
+        - You understand the gist of complex texts, including technical ones, talk fluently and defend a point of view
+        - $176
+        - £200 (about $264)
+      - - C1
+        - You use Spanish flexibly and effectively in social, work and academic settings, including catching implied meanings
+        - $195
+        - £210 (about $277)
+      - - C2
+        - You cope in any situation, understand practically everything, and express yourself precisely and with nuance, even on specialist subjects
+        - $210
+        - £240 (about $317)
+    after: The B1 exam, for example, has four parts of 25 points each, reading (70 minutes), listening (40 minutes), writing (60 minutes) and speaking (15 minutes plus 15 minutes to prepare).
+  faq:
+  - q: Do DELE certificates expire?
+    a: No. The Instituto Cervantes in Los Angeles describes them as official diplomas with no expiration.
+  - q: How many hours is a Spanish course?
+    a: It varies. Instituto Cervantes courses in Los Angeles are 30 hours each, while a City Lit beginners' module in London is six sessions of two and a half hours.
+  - q: When are DELE exams held?
+    a: Several times a year. The Instituto Cervantes in Los Angeles listed sittings in February, May, October and November 2026, with registration closing five to seven weeks before each.
+  - q: What DELE level is conversational?
+    a: B1 certifies that you understand the main points of everyday spoken and written Spanish on familiar matters, which is the point most people mean by holding a conversation.
+  sources:
+  - label: Instituto Cervantes Los Angeles, DELE
+    url: https://cervantes.org/us/los-angeles/en/learning-teaching/certification/dele
+    checked: '2026-11-23'
+  - label: Instituto Cervantes, Real Decreto 1137/2002 on the DELE diplomas (as amended 2008)
+    url: https://cervantes.org/sites/public/produccion/files/2023-05/real-decreto-2002-diplomas-dele-instituto-cervantes.pdf
+    checked: '2026-11-23'
+  - label: Instituto Cervantes, DELE B1 exam
+    url: https://agenda.cervantes.es/es/node/27166877
+    checked: '2026-11-23'
+  - label: Instituto Cervantes Los Angeles, General Spanish courses
+    url: https://cervantes.org/us/los-angeles/en/learning-teaching/spanish-courses/general-spanish-courses
+    checked: '2026-11-23'
+  - label: 'City Lit, Spanish beginners intensive: module 1'
+    url: https://www.citylit.ac.uk/courses/spanish-beginners-intensive-module-1/ls119-2526
+    checked: '2026-11-23'
+  - label: Seattle Central College Continuing Education, Spanish Level 1
+    url: https://ce.seattlecentral.edu/category/person-classes/spanish-level-1
+    checked: '2026-11-23'
+  - label: University of Exeter Language Centre, Spanish DELE exams
+    url: https://language-centre.exeter.ac.uk/exams/dele/
+    checked: '2026-11-23'
+  - label: Instituto Cervantes London blog, I am enormously grateful to all at Instituto Cervantes London who conspired to get me over the finish line
+    url: https://blogs.cervantes.es/londres/?p=10736
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Joseph McGowan, a student at the Instituto Cervantes in London
+    line: After years of unstructured French, he set out in his 40th year to take the DELE as a personal challenge, passing C1 and then C2.
+    title: I am enormously grateful to all at Instituto Cervantes London who conspired to get me over the finish line
+    outlet: Instituto Cervantes London blog
+    url: https://blogs.cervantes.es/londres/?p=10736
+    checked: '2026-11-23'
+  kit:
+  - name: Spanish-English dictionary
+    why: for looking up words between classes
+    url: https://www.amazon.co.uk/s?k=spanish+english+dictionary
+  - name: DELE B1 preparation book
+    why: practice papers in the exam's four parts
+    url: https://www.amazon.co.uk/s?k=dele+b1+preparation+book
+  related:
+  - learn-a-language-to-b1
+  - join-a-language-exchange
+  - walk-a-camino
+  - learn-flamenco
+- id: learn-french
+  title: Learn French in a class and take a DELF exam
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: year
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: French has an official exam ladder, the DELF and DALF, awarded by the French Ministry of Education and valid for life. Alliance Française schools and adult colleges both teach to it, so a weekly
+    class and a named level give you something definite to work toward.
+  start:
+  - 'Book a beginners'' course: an Alliance Française or Institut français, or an adult education college such as City Lit.'
+  - If you have some French already, take the school's placement test. L'Alliance New York's is free and takes about 10 minutes.
+  - Read the DELF ladder below, pick a level, and check the exam dates and registration deadline at your nearest center.
+  links:
+  - label: 'City Lit, London: French courses for beginners'
+    url: https://www.citylit.ac.uk/courses/languages/european/french/beginners
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Institut français UK: which French diploma or certificate is right for you'
+    url: https://www.institut-francais.org.uk/?p=537
+    region: uk
+    checked: '2026-11-23'
+  - label: 'L''Alliance New York: French classes for adults, in person and online'
+    url: https://lallianceny.org/language-center/adults/
+    region: us
+    checked: '2026-11-23'
+  - label: 'L''Alliance New York: DELF and DALF exam dates and fees'
+    url: https://lallianceny.org/exams/delf-dalf/
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Learn French as an adult: classes and DELF levels'
+  description: Where to take French classes in the UK and US, what beginners pay, how many class hours each level takes, and what the DELF and DALF levels mean.
+  detail:
+  - h: Ways in, compared
+    p:
+    - Adult French classes come in short modules or 10-week terms, at different speeds. The same 30 hours can be spread over ten weeks or squeezed into two.
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'French beginners: module 1, evening, online; gentle-pace versions cover the same material more slowly. Beginners'' courses start at CEFR level A1'
+        - £239 (about $315), £155 concession (January 2027 courses)
+      - - L'Alliance New York, Manhattan, Montclair (NJ) or online
+        - Regular pace, 3 hours a week for 10 weeks (about 30 hours)
+        - $629, plus materials and registration fee
+      - - L'Alliance New York
+        - Leisurely pace, 1.5 hours a week for 10 weeks
+        - $399, plus materials and registration fee
+    after: L'Alliance New York also offers accelerated (6 hours a week for 5 weeks) and intensive (3 hours a day for 2 weeks) courses at the same $629, and four terms a year.
+  - h: The DELF and DALF ladder, level by level
+    p:
+    - The DELF covers A1 to B2 and the DALF covers C1 and C2. The descriptions below are from Alliance Française de la Nouvelle-Orléans; the class hours and fees are L'Alliance New York's own course plan
+      and 2026 exam fees.
+    table:
+      head:
+      - Level
+      - What the diploma recognizes
+      - Class hours at L'Alliance New York
+      - Exam fee at L'Alliance New York (2026)
+      rows:
+      - - DELF A1
+        - Basic ability to interact in a simple way
+        - '120'
+        - $135
+      - - DELF A2
+        - A basic user who can communicate socially
+        - '120'
+        - $145
+      - - DELF B1
+        - A user who can manage with some independence in most situations met while traveling
+        - '120'
+        - $155
+      - - DELF B2
+        - A user who can communicate independently in most situations, including arguing a case, giving opinions and negotiating
+        - '120'
+        - $190
+      - - DALF C1
+        - Fluent and spontaneous, with an extensive vocabulary
+        - 180 for C1 and C2 together
+        - $245
+      - - DALF C2
+        - Precise, fluent, sophisticated French in advanced and academic settings
+        - (included above)
+        - $245
+    after: L'Alliance New York adds a $50 administrative fee to each exam. It runs two sessions a year, in June and December, with the written exams spread over one week (A1 and A2 share a day).
+  faq:
+  - q: Do DELF certificates expire?
+    a: No. The Institut français UK and L'Alliance New York both say the diplomas are valid for life.
+  - q: How many hours does it take to learn French to B1?
+    a: L'Alliance New York's course plan allows 120 class hours each for A1, A2 and B1, so 360 hours of classes in all, before homework.
+  - q: What is the difference between DELF and DALF?
+    a: The DELF covers levels A1 to B2 and the DALF covers the advanced levels C1 and C2. Both are official French Ministry of Education diplomas.
+  - q: Where can I take the DELF in the UK?
+    a: The Institut français in London is an exam center and links to a map of other UK centers.
+  sources:
+  - label: L'Alliance New York, Adult French
+    url: https://lallianceny.org/language-center/adults/
+    checked: '2026-11-23'
+  - label: L'Alliance New York, DELF DALF
+    url: https://lallianceny.org/exams/delf-dalf/
+    checked: '2026-11-23'
+  - label: Alliance Française de la Nouvelle-Orléans, Tout public exams
+    url: https://af-neworleans.org/exams/tout-public
+    checked: '2026-11-23'
+  - label: Institut français UK, Which diploma or certification is right for you?
+    url: https://www.institut-francais.org.uk/?p=537
+    checked: '2026-11-23'
+  - label: Alliance française de Bruxelles-Europe, DELF DALF exam
+    url: https://www.alliancefr.be/en/delf-dalf-exam
+    checked: '2026-11-23'
+  - label: City Lit, Learn French, beginners
+    url: https://www.citylit.ac.uk/courses/languages/european/french/beginners
+    checked: '2026-11-23'
+  kit:
+  - name: French-English dictionary
+    why: for looking up words between classes
+    url: https://www.amazon.co.uk/s?k=french+english+dictionary
+  - name: DELF B1 preparation book
+    why: practice papers for the exam
+    url: https://www.amazon.co.uk/s?k=delf+b1+preparation+book
+  related:
+  - learn-a-language-to-b1
+  - join-a-language-exchange
+  - learn-italian-before-a-trip
+  - watch-a-stage-of-the-tour-de-france
+- id: learn-german
+  title: Learn German in a class and take a Goethe exam
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: year
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: The Goethe-Institut sets out, level by level, what each of its German certificates shows you can do, from introducing yourself at A1 to understanding practically everything at C2. From B1 upward
+    you can sit the parts of the exam one at a time.
+  start:
+  - 'Book a beginners'' course: a Goethe-Institut (in London, or online from the US) or a community college non-credit class.'
+  - If you have never studied German, start at the first level; if you have some, take the placement test (the Goethe-Institut USA charges $25 and takes it off a course booked within a year).
+  - Read the exam ladder below and pick the level you want to reach.
+  links:
+  - label: 'Goethe-Institut London: all German courses, with prices'
+    url: https://goethe.de/ins/gb/en/sta/lon/kur/all.html
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Goethe-Institut UK: German exams'
+    url: https://www.goethe.de/ins/gb/en/spr/prf.html
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Goethe-Institut USA: online German courses'
+    url: https://www.goethe.de/ins/us/en/spr/kur/kue.html
+    region: us
+    checked: '2026-11-23'
+  - label: 'Portland Community College: German Conversation Level 1 (non-credit, online)'
+    url: https://www.pcc.edu/schedule/winter/lan/9lan614h
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Learn German as an adult: classes and Goethe exam levels'
+  description: Where to take German classes in the UK and US, what beginners pay, and what each Goethe-Zertifikat level from A1 to C2 says you can do in German.
+  detail:
+  - h: Ways in, compared
+    p:
+    - The Goethe-Institut is Germany's own cultural institute. Its standard London course is 40 lessons of 45 minutes, which is 30 hours, over 10 weeks. Community colleges offer shorter, cheaper conversation
+      courses.
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Goethe-Institut London
+        - Onsite course, 10 weeks, 40 lessons of 45 minutes, A1 to C2, up to 18 students; starts January, April, July and September
+        - £449 (about $593)
+      - - Goethe-Institut London
+        - Super Intensive, 2 weeks, 3.5 hours a day Monday to Friday, A1 only
+        - £449 (about $593)
+      - - Portland Community College, Oregon
+        - 'German Conversation: Level 1, non-credit, online, about 10 weekly sessions of just under 2 hours; for beginners and anyone refreshing their German'
+        - $145 (winter 2027)
+      - - Goethe-Institut USA
+        - Online group and individual courses, A1 to C2; placement test
+        - Placement test $25, deducted from a course booked within a year
+    after: Goethe-Institut London may cancel a class with fewer than 10 students up to 24 hours before it starts, with a full refund of the course fee.
+  - h: The Goethe exam ladder, level by level
+    p:
+    - Each Goethe-Zertifikat matches a level of the Common European Framework. This is what the Goethe-Institut says each one shows.
+    table:
+      head:
+      - Level
+      - Exam
+      - What the Goethe-Institut says you can do
+      rows:
+      - - A1
+        - 'Goethe-Zertifikat A1: Start Deutsch 1'
+        - Interact in a simple way and introduce yourself; understand short, basic everyday conversations if people speak slowly and clearly
+      - - A2
+        - Goethe-Zertifikat A2
+        - Use and understand common everyday expressions; pick out the main information from short texts with frequent vocabulary
+      - - B1
+        - Goethe-Zertifikat B1
+        - Understand the main information when clear standard German is spoken; talk in a simple, structured way about familiar topics
+      - - B2
+        - Goethe-Zertifikat B2
+        - Understand the main points of complex texts on concrete and abstract topics; communicate spontaneously and fluently
+      - - C1
+        - Goethe-Zertifikat C1
+        - Use German flexibly and effectively in private, public, academic and professional settings; understand long, demanding texts and their implied meaning
+      - - C2
+        - 'Goethe-Zertifikat C2: Großes Deutsches Sprachdiplom'
+        - Understand practically everything you read or hear without effort; summarize information from different written and spoken sources
+    after: From B1 to C2 the exam modules (reading, listening, writing, speaking) can be taken individually or together.
+  faq:
+  - q: How long is a Goethe-Institut German course?
+    a: The standard course in London is 10 weeks of 40 lessons, each 45 minutes long, which comes to 30 hours.
+  - q: Do I need a placement test to learn German at the Goethe-Institut?
+    a: Not if you are a complete beginner; you start at A1.1. If you have some German, you take a written test online followed by a short oral assessment.
+  - q: Can I take the Goethe exam one part at a time?
+    a: From B1 up, yes. The Goethe-Institut says the modules can be taken individually or combined.
+  sources:
+  - label: Goethe-Institut, German examinations
+    url: https://www.goethe.de/en/spr/kup/prf/prf.html
+    checked: '2026-11-23'
+  - label: Goethe-Institut London, German courses
+    url: https://goethe.de/ins/gb/en/sta/lon/kur/all.html
+    checked: '2026-11-23'
+  - label: Goethe-Institut UK, German exams
+    url: https://www.goethe.de/ins/gb/en/spr/prf.html
+    checked: '2026-11-23'
+  - label: Goethe-Institut USA, German courses online
+    url: https://www.goethe.de/ins/us/en/spr/kur/kue.html
+    checked: '2026-11-23'
+  - label: 'Portland Community College, German Conversation: Level 1'
+    url: https://www.pcc.edu/schedule/winter/lan/9lan614h
+    checked: '2026-11-23'
+  kit:
+  - name: German-English dictionary
+    why: for looking up words between classes
+    url: https://www.amazon.co.uk/s?k=german+english+dictionary
+  - name: Goethe-Zertifikat B1 practice book
+    why: practice papers for each module of the exam
+    url: https://www.amazon.co.uk/s?k=goethe+zertifikat+b1+practice
+  related:
+  - learn-a-language-to-b1
+  - join-a-language-exchange
+  - learn-italian-before-a-trip
+  - run-the-berlin-marathon
+- id: learn-mandarin-chinese
+  title: Learn Mandarin Chinese and take an HSK test
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: year
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Mandarin means learning to read and write characters as well as speak; China Institute's first level, for example, teaches about 80 characters. Its official test, the HSK, is changing from six levels
+    to nine from 13 December 2026, which makes this a good moment to understand what the levels mean.
+  start:
+  - 'Book a beginners'' course: an adult college such as City Lit, a university continuing education program, or China Institute in New York.'
+  - Ask which characters the course teaches and how many hours each module runs, so you know what comes next.
+  - Look up the HSK test center nearest you and check which version of the test (HSK 2.0 or the new HSK 3.0) it will run.
+  links:
+  - label: 'City Lit, London: Chinese (Mandarin) courses for beginners'
+    url: https://www.citylit.ac.uk/courses/languages/asian/chinese-mandarin/beginners
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Confucius Institute, University of Sheffield: HSK tests, fees and the move to HSK 3.0'
+    url: https://sheffield.ac.uk/confucius/proficiency-tests/hsk
+    region: uk
+    checked: '2026-11-23'
+  - label: 'China Institute, New York: adult Chinese language classes'
+    url: https://chinainstitute.org/school/for-adults/language-classes
+    region: us
+    checked: '2026-11-23'
+  - label: 'University of Utah Continuing Education: Mandarin Chinese Beginning I (non-credit)'
+    url: https://continue.utah.edu/noncredit/class/chin_101_mandarin_chinese_beginning_i
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Learn Mandarin as an adult: classes and HSK levels'
+  description: Where to take Mandarin classes in the UK and US, what beginners pay, what each HSK level means, and what changes when the nine-level HSK 3.0 arrives.
+  detail:
+  - h: Ways in, compared
+    p:
+    - Beginners' Mandarin is usually taught in short modules that build on each other. At City Lit, module 2 assumes module 1 or about 15 hours of study, and module 3 about 30.
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Chinese beginners: module 1, evenings, in person or online'
+        - £259 (about $342), £168 concession (January 2027)
+      - - City Lit, London
+        - 'Chinese beginners: short introduction, evening, in person or online'
+        - £99 (about $131) (November 2026)
+      - - University of Utah Continuing Education
+        - Mandarin Chinese Beginning I, non-credit, in person, four 50-minute classes a week alongside a university credit course; for people with no previous Mandarin
+        - $602.50 (fall 2026)
+      - - China Institute, New York
+        - Levels 101 to 103 and conversation classes, in person or on Zoom, mostly 4 to 5 weeks; Level 101 teaches about 80 basic characters
+        - Not listed on the page we checked (summer 2025 schedule)
+    after: China Institute says its Level 102 may qualify students for HSK 1 and Level 103 for HSK 2.
+  - h: The HSK ladder, level by level
+    p:
+    - The HSK (Hanyu Shuiping Kaoshi) is China's official proficiency test for non-native speakers. These are the six levels of the current test as the Confucius Institute at the University of Sheffield
+      describes them, with its fees for the 5 December 2026 sitting.
+    table:
+      head:
+      - Level
+      - What a candidate can do
+      - Fee at Sheffield (December 2026)
+      rows:
+      - - HSK 1
+        - Use simple words and sentences for specific everyday needs
+        - £10 (about $13)
+      - - HSK 2
+        - Communicate simply and directly on familiar daily topics
+        - £20 (about $26)
+      - - HSK 3
+        - Handle basic communication in daily life, study and work, and most situations when traveling in China
+        - £30 (about $40)
+      - - HSK 4
+        - Discuss a fairly wide range of topics and talk with native speakers
+        - £40 (about $53)
+      - - HSK 5
+        - Read Chinese newspapers and magazines, enjoy Chinese films and television, and give a full speech
+        - £50 (about $66)
+      - - HSK 6
+        - Easily understand what you read and hear, and express yourself fluently in speech and writing
+        - £60 (about $79)
+    after: From 13 December 2026 the HSK moves worldwide to HSK 3.0, with nine levels in three stages (1 to 3, 4 to 6 and 7 to 9) and handwriting required from level 5. Sheffield says it will run HSK 3.0
+      from early spring 2027. A separate speaking test, the HSKK, is offered at basic, intermediate and advanced levels.
+  faq:
+  - q: How many levels does the HSK have?
+    a: Six in the current version. HSK 3.0, which replaces it worldwide from 13 December 2026, has nine levels in three stages.
+  - q: What HSK level is conversational?
+    a: The Confucius Institute at Sheffield says HSK 3 covers basic communication in daily life, study and work, and most situations when traveling in China.
+  - q: Do I need to learn characters to pass the HSK?
+    a: HSK 1 and 2 test listening and reading, and writing is added from HSK 3. Under HSK 3.0, handwriting is required from level 5.
+  - q: How much does the HSK cost?
+    a: It depends on the center and level. At the University of Sheffield, HSK 1 cost £10 and HSK 6 £60 for the December 2026 sitting.
+  sources:
+  - label: Confucius Institute, University of Sheffield, HSK 2.0 Chinese proficiency tests
+    url: https://sheffield.ac.uk/confucius/proficiency-tests/hsk
+    checked: '2026-11-23'
+  - label: Business Confucius Institute at AUEB, HSK 3.0 Chinese Proficiency Test
+    url: https://confucius.aueb.gr/en/exams/sk-exam
+    checked: '2026-11-23'
+  - label: City Lit, Learn Chinese (Mandarin), beginners
+    url: https://www.citylit.ac.uk/courses/languages/asian/chinese-mandarin/beginners
+    checked: '2026-11-23'
+  - label: China Institute, Adult Chinese language classes
+    url: https://chinainstitute.org/school/for-adults/language-classes
+    checked: '2026-11-23'
+  - label: 'University of Utah Continuing Education, Mandarin Chinese: Beginning I'
+    url: https://continue.utah.edu/noncredit/class/chin_101_mandarin_chinese_beginning_i
+    checked: '2026-11-23'
+  kit:
+  - name: Chinese character practice book
+    why: squared paper for writing characters by hand
+    url: https://www.amazon.co.uk/s?k=chinese+character+practice+book
+  - name: HSK vocabulary book
+    why: the word lists for each level in one place
+    url: https://www.amazon.co.uk/s?k=hsk+vocabulary+book
+  related:
+  - learn-chinese-brush-painting
+  - learn-tai-chi-form
+  - walk-on-the-great-wall-of-china
+  - learn-a-language-to-b1
+- id: learn-wildflower-identification
+  title: Learn to identify wildflowers properly
+  category: explore
+  kind: skill
+  effort: gentle
+  cost: low
+  time: months
+  setting: outdoors
+  company: either
+  regions:
+  - uk
+  - us
+  season: April to August
+  why: Moving from matching pictures in a book to working a plant out with a key, a hand lens and its family features changes how you see every verge and hedge. The botanical societies run beginners' courses,
+    and once you know a few dozen species you can put them to use in national plant surveys.
+  start:
+  - Buy a x10 hand lens and a field guide with keys. The Botanical Society of Britain and Ireland's Identiplant course uses The Wild Flower Key by Francis Rose; in New England, Native Plant Trust's free
+    Go Botany site has keys online.
+  - Learn the main plant families first. A Field Studies Council course covers 10 common UK families that make up about 45% of UK wildflower species.
+  - Once you know some common species, join a survey such as the UK's National Plant Monitoring Scheme, which has a beginner level.
+  links:
+  - label: 'BSBI: Identiplant online plant identification course'
+    url: https://identiplant.bsbi.org/the-course
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Field Studies Council: Wildflowers, top ten families identification (one day)'
+    url: https://www.field-studies-council.org/courses-and-experiences/static-courses/wildflowers-top-ten-families-identification/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Plantlife: National Plant Monitoring Scheme'
+    url: https://www.plantlife.org.uk/case-studies/npms-national-plant-monitoring-scheme/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Native Plant Trust: Go Botany plant identification keys (New England)'
+    url: https://gobotany.nativeplanttrust.org/about/
+    region: us
+    checked: '2026-11-23'
+  seo_title: Wildflower identification courses for beginners
+  description: How to learn to identify wildflowers, from family features and keys to beginners' courses in the UK and US and a national survey you can join.
+  detail:
+  - h: How beginners learn
+    p:
+    - Most courses start with plant families rather than single species. The Field Studies Council's online course on wildflower families teaches the features of 10 families, from the rose and buttercup
+      families to the daisy, dead-nettle and orchid families, over two weeks at two to three hours a week.
+    - BSBI's Identiplant is for beginners who already know some plants and want to move from matching pictures to a systematic approach with scientific names and keys. It has 15 units with fortnightly question
+      sheets to be finished by 30 September, and each student has a personal tutor, an experienced botanist who knows their area.
+    - The US has no single national course. Native Plant Trust, in New England, runs online botany classes, and its Go Botany site has a Simple Key covering 1,200 common New England species. State native
+      plant societies are worth checking where you live.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - BSBI Identiplant (UK)
+        - Online, 15 units with a personal tutor, about 45 hours plus time finding plants
+        - £310 (about $409) for 2025; BSBI awards 15 training grants of £250 a year
+      - - Field Studies Council (UK)
+        - One-day classroom and field course for beginners, or a two-week online course on families
+        - Not listed; not open for booking when checked
+      - - National Plant Monitoring Scheme (UK)
+        - Survey five plots in a 1 km square twice a year, at beginner, intermediate or advanced level
+        - Volunteer survey; training materials free
+      - - 'Native Plant Trust: Plants 101 (US)'
+        - Online, self-paced beginners' botany course
+        - $115 (2025 course)
+      - - Native Plant Trust Go Botany (US)
+        - Free online keys for New England plants
+        - Free
+    after: At NPMS beginner level you record about 10 to 15 common, easily identified species per plot, so it is a realistic first goal after a season of practice.
+  faq:
+  - q: What is the best way to learn wildflower identification?
+    a: Start with the main plant families and a key, using a x10 hand lens. Beginners' courses from the Field Studies Council and BSBI teach this approach.
+  - q: What hand lens do I need for identifying plants?
+    a: A x10 hand lens. BSBI's Identiplant course says an ordinary magnifying glass is not powerful enough and advises against buying one stronger than x10.
+  - q: Can I learn plant identification online?
+    a: Yes. BSBI's Identiplant, the Field Studies Council's wildflower families course and Native Plant Trust's Plants 101 are all online.
+  - q: How do I join the National Plant Monitoring Scheme?
+    a: Volunteers are allocated a 1 km square and survey five plots in it twice a year. Plantlife's page explains how to find unadopted squares near you.
+  sources:
+  - label: BSBI, Training
+    url: https://bsbi.org.uk/training
+    checked: '2026-11-23'
+  - label: BSBI Identiplant, The course
+    url: https://identiplant.bsbi.org/the-course
+    checked: '2026-11-23'
+  - label: BSBI Identiplant, Fees and equipment
+    url: https://identiplant.bsbi.org/fees-and-equipment
+    checked: '2026-11-23'
+  - label: Field Studies Council, Identifying wildflower families
+    url: https://www.field-studies-council.org/courses-and-experiences/static-courses/identifying-wildflower-families/
+    checked: '2026-11-23'
+  - label: Field Studies Council, Wildflowers top ten families identification
+    url: https://www.field-studies-council.org/courses-and-experiences/static-courses/wildflowers-top-ten-families-identification/
+    checked: '2026-11-23'
+  - label: JNCC, National Plant Monitoring Scheme
+    url: https://jncc.defra.gov.uk/our-work/national-plant-monitoring-scheme
+    checked: '2026-11-23'
+  - label: Plantlife, NPMS National Plant Monitoring Scheme
+    url: https://www.plantlife.org.uk/case-studies/npms-national-plant-monitoring-scheme/
+    checked: '2026-11-23'
+  - label: 'Native Plant Trust, Plants 101: Introduction to the Green World'
+    url: https://www.nativeplanttrust.org/events/plants-101-introduction-to-the-green-world-ss25
+    checked: '2026-11-23'
+  - label: Native Plant Trust, About Go Botany
+    url: https://gobotany.nativeplanttrust.org/about/
+    checked: '2026-11-23'
+  kit:
+  - name: x10 hand lens
+    why: for looking at the small parts of a flower that keys ask about
+    url: https://www.amazon.co.uk/s?k=x10+hand+lens+botany
+  - name: The Wild Flower Key by Francis Rose
+    why: the identification guide the BSBI Identiplant course follows
+    url: https://www.amazon.co.uk/s?k=wild+flower+key+francis+rose
+  related:
+  - learn-botanical-illustration
+  - grow-a-wildflower-patch
+  - try-nature-journaling
+  - city-nature-challenge
+- id: become-a-special-constable
+  title: Volunteer as a special constable
+  category: connect
+  kind: habit
+  effort: demanding
+  cost: free
+  time: year
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Special constables are unpaid volunteers with the same powers as regular police officers, in uniform and on duty alongside them. Most forces ask for at least 16 hours a month, and there is no upper
+    age limit, though you must pass a medical and a fitness test.
+  start:
+  - Read your local force's special constable pages for its training schedule and hours; in Scotland, Police Scotland asks for at least 96 hours a year.
+  - Check you meet the basics, including at least three years' continuous residence in the UK and the eyesight standard, and practice for the bleep (shuttle run) fitness test.
+  - Apply through your force. In the US, look for a reserve police officer program with your city or county police department.
+  links:
+  - label: 'Joining the Police: special constables, common questions'
+    url: https://www.joiningthepolice.co.uk/training-progression/career-progression/special-constables/special-constables-common-questions
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Police Scotland: special constable'
+    url: https://www.scotland.police.uk/jobs/special-constable/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Long Beach Police Department: reserve officers (California)'
+    url: https://longbeach.gov/police/about-the-lbpd/employment/reserve-officers
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'How to become a special constable: hours and training'
+  description: What special constables do, the hours forces ask for, how long training takes, the fitness test, and the US reserve police officer equivalent.
+  detail:
+  - h: What the role asks of you
+    p:
+    - The College of Policing says special constables are warranted, uniformed volunteers with all the powers of a regular police officer. As of 31 March 2025 there were 5,534 in the Home Office forces
+      of England and Wales. Many work in frontline and neighborhood policing; others work in areas such as roads policing, rural crime and cyber-crime.
+    - There is no national minimum, but most forces expect an average of at least 16 hours a month. Specials are unpaid; uniform, training and equipment are free and travel to duty is refunded. You must
+      be at least 18 when appointed, and the official recruitment site says there is no upper age limit.
+  - h: Training and the US equivalent
+    table:
+      head:
+      - Force or program
+      - Training and time asked
+      - Cost (as last listed)
+      rows:
+      - - Dorset Police
+        - 29 training days over 21 consecutive weekends, plus about 40 hours of home study; then about 16 hours a month
+        - Unpaid; uniform and training free
+      - - Devon and Cornwall Police
+        - 19 weeks of online distance learning, then 9 weekends over 4 to 5 months
+        - Unpaid; accommodation for those living over 30 miles away
+      - - Police Scotland
+        - At least 96 hours a year
+        - Unpaid
+      - - Long Beach Police Department reserves, California (US)
+        - A state-certified (POST) reserve academy; at least 20 hours of service a month
+        - Unpaid volunteers
+    after: Dorset's fitness test is a bleep test to level 5.4, about 3 minutes 30 seconds of running. In the US, reserve officers at Long Beach's higher levels are armed peace officers who must be at least
+      21 and hold a California driver's license.
+  faq:
+  - q: Is there an upper age limit to be a special constable?
+    a: No. The UK recruitment site says there is no upper age limit, but you must be fit enough for the role and pass a medical and fitness test.
+  - q: How many hours a month does a special constable do?
+    a: Most forces in England and Wales expect at least 16 hours a month. Police Scotland asks for at least 96 hours a year.
+  - q: Do special constables get paid?
+    a: No. Uniform, training and equipment are free, and travel to duty is refunded.
+  - q: What is the US equivalent of a special constable?
+    a: A reserve police officer. Programs are run by individual departments; Long Beach, California, asks reserves for at least 20 hours of service a month.
+  sources:
+  - label: Joining the Police, Special Constables common questions
+    url: https://www.joiningthepolice.co.uk/training-progression/career-progression/special-constables/special-constables-common-questions
+    checked: '2026-11-23'
+  - label: College of Policing, Special constables
+    url: https://www.college.police.uk/guidance/special-constables
+    checked: '2026-11-23'
+  - label: North Yorkshire Police, Special constables frequently asked questions
+    url: https://northyorkshire.police.uk/police-forces/north-yorkshire-police/areas/careers/jobs-volunteers/special-constables/frequently-asked-questions/
+    checked: '2026-11-23'
+  - label: Dorset Police, Special Constable FAQs and entry requirements
+    url: https://recruitment.dorset.police.uk/resources-reference-and-faqs/faqs/special-constable-faq-s-entry-requirements/
+    checked: '2026-11-23'
+  - label: Police Scotland, Special constable
+    url: https://www.scotland.police.uk/jobs/special-constable/
+    checked: '2026-11-23'
+  - label: Long Beach Police Department, Reserve officers
+    url: https://longbeach.gov/police/about-the-lbpd/employment/reserve-officers
+    checked: '2026-11-23'
+  safety: Specials do frontline police work alongside regular officers, so take the training, fitness test and medical seriously.
+  inspire:
+  - kind: read
+    person: Mark Edwards, a team vicar in Newcastle
+    line: A team vicar in Newcastle who began training as a Northumbria Police special constable almost 50 years after he first dreamed of being a police officer.
+    title: Priest realises his childhood dream to become a police officer
+    outlet: Church Times
+    url: https://www.churchtimes.co.uk/articles/2020/17-january/news/uk/priest-realises-his-childhood-dream-to-become-a-police-officer
+    checked: '2026-11-23'
+  kit:
+  - name: Shuttle run (bleep test) audio
+    why: for practicing the fitness test at home
+    url: https://www.amazon.co.uk/s?k=bleep+test+cd
+  - name: Notebook and pen
+    why: for notes during weekend training sessions
+    url: https://www.amazon.co.uk/s?k=pocket+notebook+waterproof
+  related:
+  - become-a-magistrate
+  - volunteer-with-the-witness-service
+  - volunteer-for-the-coastguard
+  - volunteer-with-st-john-ambulance
+- id: become-an-appropriate-adult
+  title: Volunteer as an appropriate adult at a police station
+  category: connect
+  kind: habit
+  effort: moderate
+  cost: free
+  time: year
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  why: An appropriate adult sits with a child or vulnerable adult who has been detained or interviewed by police, making sure they understand their rights and are treated fairly. When no family member or
+    carer can attend, the police call a trained volunteer from a local scheme.
+  start:
+  - Find the appropriate adult scheme for your area. Some are run by the police and crime commissioner (the elected police oversight official) for vulnerable adults, others by the council's youth justice
+    service for under-18s.
+  - Check the time asked. One scheme asks for at least two years and a place on the rota twice a month; another lets volunteers choose which call-outs to take.
+  - Expect police vetting and a DBS (criminal records) check, then several training sessions including a visit to a custody suite.
+  links:
+  - label: 'GOV.UK: Being an appropriate adult'
+    url: https://gov.uk/government/publications/guidance-for-appropriate-adults/being-an-appropriate-adult
+    region: uk
+    checked: '2026-11-23'
+  - label: 'West Midlands Police and Crime Commissioner: appropriate adults'
+    url: https://www.westmidlands-pcc.gov.uk/careers/volunteer/appropriate-adults
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Hertfordshire County Council: appropriate adult volunteers (under-18s)'
+    url: https://www.hertfordshire.gov.uk/about-the-council/volunteering/schools-and-youth-work/youth-justice-service/appropriate-adult-volunteers.aspx
+    region: uk
+    checked: '2026-11-23'
+  seo_title: How to become an appropriate adult volunteer
+  description: What an appropriate adult does at a police station, who needs one, the training schemes give and the time they ask, with three UK schemes compared.
+  detail:
+  - h: What happens at the police station
+    p:
+    - Under-18s and vulnerable people of any age must have an appropriate adult when they are held in police detention or interviewed under caution. The role, set out in Code C of the Police and Criminal
+      Evidence Act 1984, is to support and advise them, help them communicate, check their rights are protected and tell a more senior officer if police are not acting properly and fairly.
+    - The West Midlands scheme says appropriate adults do not give legal advice; GOV.UK says they can make sure legal advice is available. In the West Midlands, volunteers support adults with mental ill-health,
+      learning difficulties or autism, and attend interviews, identity procedures and reviews of detention, then write a short report after each visit.
+    - The National Appropriate Adult Network is the charity that supports and represents appropriate adult services in England and Wales.
+  - h: Three schemes compared
+    table:
+      head:
+      - Scheme
+      - Training and time asked
+      - Cost (as last listed)
+      rows:
+      - - Hertfordshire youth justice service (under-18s)
+        - Five 2.5-hour group sessions with home study, ending with a custody visit; at least two years, on the rota at least twice a month
+        - Unpaid; travel expenses paid
+      - - Warwickshire Police and Crime Commissioner (adults)
+        - Training at police headquarters and shadowing; call-outs are opt-in, none between 11pm and 7am, plus four evening meetings a year
+        - Unpaid; travel expenses reimbursed
+      - - West Midlands Police and Crime Commissioner (adults)
+        - Vetting and training; volunteers should be available during the day and early evening
+        - Volunteer role
+    after: Warwickshire says a car is highly desirable because its custody suites are in Leamington Spa and Nuneaton. Both PCC schemes ask that volunteers be over 18.
+  faq:
+  - q: What does an appropriate adult do?
+    a: They support a child or vulnerable adult during police detention or interview, help them understand their rights and check the police act fairly.
+  - q: Can an appropriate adult give legal advice?
+    a: No. They can make sure legal advice is available, but they do not give it themselves.
+  - q: Do appropriate adult volunteers get paid?
+    a: No. The schemes in Hertfordshire and Warwickshire pay travel expenses.
+  - q: Do I need experience to be an appropriate adult?
+    a: No. Hertfordshire says no experience is needed because training is provided.
+  sources:
+  - label: GOV.UK, Being an appropriate adult
+    url: https://gov.uk/government/publications/guidance-for-appropriate-adults/being-an-appropriate-adult
+    checked: '2026-11-23'
+  - label: Hertfordshire County Council, Appropriate adult volunteers
+    url: https://www.hertfordshire.gov.uk/about-the-council/volunteering/schools-and-youth-work/youth-justice-service/appropriate-adult-volunteers.aspx
+    checked: '2026-11-23'
+  - label: West Midlands Police and Crime Commissioner, Appropriate adults
+    url: https://www.westmidlands-pcc.gov.uk/careers/volunteer/appropriate-adults
+    checked: '2026-11-23'
+  - label: Warwickshire Police and Crime Commissioner, Appropriate adult volunteer role
+    url: https://warwickshire-pcc.gov.uk/your-pcc/jobs-and-opportunities/appropriate-adult-volunteer-role
+    checked: '2026-11-23'
+  - label: Charity Commission, The National Appropriate Adult Network Limited
+    url: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/4002724
+    checked: '2026-11-23'
+  kit:
+  - name: Notebook and pen
+    why: for the notes you need to write your report after each visit
+    url: https://www.amazon.co.uk/s?k=a5+notebook+pen
+  - name: PACE codes of practice guide
+    why: to read up on Code C, which sets out the role
+    url: https://www.amazon.co.uk/s?k=pace+codes+of+practice
+  related:
+  - volunteer-with-the-witness-service
+  - become-a-magistrate
+  - volunteer-with-samaritans
+  - volunteer-with-citizens-advice
+- id: become-a-cricket-umpire
+  title: Qualify as a cricket umpire
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  season: April to September
+  why: An umpire stands closer to the game than anyone but the batter, making every call on the Laws from leg before wicket to no-balls. In England and Wales one course puts you on a pathway that runs from
+    junior and social cricket up to the professional panel.
+  start:
+  - Learn the Laws of Cricket, published by MCC. Moving up the ECB pathway means passing MCC Laws tests.
+  - Try the ECB's free online umpiring module, about 60 minutes, then book an ECB Umpire Course through your county cricket board.
+  - Join the ECB Association of Cricket Officials to be offered local fixtures. In the US, register with USA Cricket and take its Level 1 Umpiring Fundamentals course.
+  links:
+  - label: 'ECB: become an umpire'
+    url: https://ecb.co.uk/play/officials/umpire
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Sussex Cricket: umpiring and scoring courses'
+    url: https://sussexcricket.co.uk/umpiring-scoring-aco
+    region: uk
+    checked: '2026-11-23'
+  - label: 'USA Cricket: umpiring program'
+    url: https://usacricket.org/umpiring-program/
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'How to become a cricket umpire: courses and costs'
+  description: How to qualify as a cricket umpire in England and Wales or the US, what the first course costs, and how the umpire levels work once you start.
+  detail:
+  - h: How the ladder works
+    p:
+    - In England and Wales, finishing the ECB Umpire Course puts you at Level 6, umpiring junior, non-county and social cricket. To move up you umpire a set number of matches and pass MCC Laws tests, and
+      to reach Level 4 and above you also need marked observations by Umpire Developers. The top of the men's and women's pathways is the professional umpiring team.
+    - The free online module is a taster. Norfolk Cricket Board notes that it does not give access to the progression pathway; only the full ECB Umpire Course does.
+    - USA Cricket runs its own levels, from Level 1 Umpiring Fundamentals to Level 3 Umpiring Advanced, with zonal volunteer umpire coordinators around the country.
+  - h: First courses compared
+    table:
+      head:
+      - Course
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - ECB free online umpiring module
+        - Online, about 60 minutes; from age 13
+        - Free (2025)
+      - - ECB Umpire Course, Sussex
+        - Up to 90 minutes of e-learning, then classroom and practical sessions; from age 14
+        - £70 (about $92), 2026 courses; bursaries available
+      - - 'USA Cricket Level 1: Umpiring Fundamentals'
+        - 13 self-paced online modules, four health and safety courses, an online exam and a 3-hour remote session
+        - Modules free; $75 exam fee (2022 course)
+    after: The USA Cricket details come from its 2022 course announcement; check with USA Cricket for the current course before you register.
+  faq:
+  - q: How do I become a cricket umpire in England?
+    a: Book an ECB Umpire Course through your county cricket board. Finishing it puts you at Level 6 of the ECB pathway, umpiring junior and social cricket.
+  - q: How much does an ECB umpire course cost?
+    a: Sussex Cricket listed its 2026 ECB Umpire Courses at £70, with bursaries available.
+  - q: Is there a free cricket umpiring course?
+    a: Yes. The ECB has a free online module of about 60 minutes, though it does not admit you to the progression pathway.
+  - q: How do I become a cricket umpire in the USA?
+    a: Register with USA Cricket and take its Level 1 Umpiring Fundamentals course, which is online with a final exam.
+  sources:
+  - label: ECB, Umpire
+    url: https://ecb.co.uk/play/officials/umpire
+    checked: '2026-11-23'
+  - label: Norfolk Cricket Board, ECB umpire online education offer launch
+    url: https://www.norfolkcricket.co.uk/ecb-umpire-online-education-offer-launch/
+    checked: '2026-11-23'
+  - label: Sussex Cricket, Umpiring and scoring ACO
+    url: https://sussexcricket.co.uk/umpiring-scoring-aco
+    checked: '2026-11-23'
+  - label: USA Cricket, Umpiring program
+    url: https://usacricket.org/umpiring-program/
+    checked: '2026-11-23'
+  - label: USA Cricket, Second Level 1 Umpiring Course now open for registration
+    url: https://usacricket.org/media-release/second-level-1-umpiring-course-now-open-for-registration/
+    checked: '2026-11-23'
+  kit:
+  - name: Umpire counter
+    why: for counting the balls in each over
+    url: https://www.amazon.co.uk/s?k=cricket+umpire+counter
+  - name: White umpire coat
+    why: the traditional dress for standing in a match
+    url: https://www.amazon.co.uk/s?k=cricket+umpire+coat
+  - name: Laws of Cricket book
+    why: for revising the Laws away from a screen
+    url: https://www.amazon.co.uk/s?k=mcc+laws+of+cricket
+  related:
+  - play-walking-cricket
+  - play-cricket-as-an-adult
+  - become-a-referee
+  - volunteer-at-parkrun
+- id: volunteer-as-an-adult-literacy-tutor
+  title: Help an adult learn to read
+  category: connect
+  kind: habit
+  effort: moderate
+  cost: free
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Coaching an adult who never learned to read, one to one with a structured phonics manual, gives you a front-row seat as someone reads their first whole book. Volunteers need no teaching experience;
+    the charities and literacy councils train you first.
+  start:
+  - In the UK, look for a Read Easy group near you or your council's adult learning service. In the US, search ProLiteracy's National Literacy Directory by zip code.
+  - Check the time asked. Read Easy coaches meet a reader for two half-hour sessions a week; US programs typically ask for one or two sessions a week of 1.5 to 2 hours for at least six months.
+  - Book the initial training and expect a background check. Read Easy may ask for an enhanced DBS (criminal records) check, and US councils such as Frederick County ask for background screening.
+  links:
+  - label: 'Read Easy Chichester and Arun: one-to-one reading coaching (a local Read Easy group)'
+    url: https://chichestercity.gov.uk/read-easy-chichester-and-arun-helping-adults-learn-to-read
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Highland Council: volunteer with adult learning (Scotland)'
+    url: https://www.highland.gov.uk/adult-learning/volunteer-adult-learning
+    region: uk
+    checked: '2026-11-23'
+  - label: 'ProLiteracy: volunteer as an adult literacy tutor'
+    url: https://proliteracy.org/Get-Involved/Volunteer
+    region: us
+    checked: '2026-11-23'
+  - label: 'Literacy Council of Frederick County: tutor training (Maryland)'
+    url: https://www.frederickliteracy.org/volunteer/tutor-training/
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Volunteer adult literacy tutor: training and time'
+  description: How to volunteer as an adult reading tutor with Read Easy in the UK or a US literacy council, what the training involves and the time each one asks.
+  detail:
+  - h: What the coaching is like
+    p:
+    - Read Easy UK's local groups, run by volunteers, give free, confidential, one-to-one reading coaching to adults. Coaches use Turning Pages, a phonics program from the Shannon Trust with five manuals
+      and 30 graded reading books written for adults. Some readers finish in nine months; others take two years or more.
+    - You and your reader choose an approved venue that suits you both. In the US, ProLiteracy says most tutors start within a few weeks of training, and sessions are usually at the program site, a library
+      or another convenient place, often in the evening.
+  - h: Ways in compared
+    table:
+      head:
+      - Organization
+      - Training and time asked
+      - Cost (as last listed)
+      rows:
+      - - Read Easy UK
+        - Two one-day training sessions; two half-hour sessions a week with your reader
+        - Free volunteer role
+      - - Highland Council adult learning (Scotland)
+        - Council tutor training course; at least one hour a week of one-to-one tuition
+        - Free volunteer role
+      - - ProLiteracy member programs (US)
+        - Local training; one or two sessions a week of 1.5 to 2 hours, for at least six months
+        - Free volunteer role
+      - - Literacy Council of Frederick County, Maryland (US)
+        - One-hour information session, then about 6 hours of training on Zoom
+        - No cost listed
+    after: ProLiteracy asks tutors for a high school diploma or equivalent and fluent English; no teaching experience is needed.
+  faq:
+  - q: Do I need teaching experience to be a literacy tutor?
+    a: No. ProLiteracy says no prior teaching experience is needed, and Read Easy and US literacy councils train volunteers before they are matched.
+  - q: How much time does volunteering as a reading coach take?
+    a: Read Easy coaches meet their reader twice a week for half an hour. US programs typically ask for one or two sessions a week of 1.5 to 2 hours for at least six months.
+  - q: How long does it take an adult to learn to read with Read Easy?
+    a: It varies. Read Easy says some readers finish in nine months and others take two years or longer.
+  - q: How do I find an adult literacy program near me in the US?
+    a: Use the National Literacy Directory, linked from ProLiteracy, which you can search by zip code, city or state.
+  sources:
+  - label: Read Easy UK, Reading coach role description (via CharityJob, 2026)
+    url: https://downloads.charityjob.co.uk/attachments/reading_coach_role_description_2026_08_17_02_05_26_pm.pdf
+    checked: '2026-11-23'
+  - label: Chichester City Council, Read Easy Chichester and Arun helping adults learn to read
+    url: https://chichestercity.gov.uk/read-easy-chichester-and-arun-helping-adults-learn-to-read
+    checked: '2026-11-23'
+  - label: Highland Council, Volunteer with adult learning
+    url: https://www.highland.gov.uk/adult-learning/volunteer-adult-learning
+    checked: '2026-11-23'
+  - label: ProLiteracy, Get involved, volunteer
+    url: https://proliteracy.org/Get-Involved/Volunteer
+    checked: '2026-11-23'
+  - label: Literacy Council of Frederick County, Tutor training
+    url: https://www.frederickliteracy.org/volunteer/tutor-training/
+    checked: '2026-11-23'
+  kit:
+  - name: Phonics guide for adult learners
+    why: for background reading on how phonics teaching works
+    url: https://www.amazon.co.uk/s?k=phonics+for+adult+learners
+  - name: Reading notebook
+    why: for keeping a record of each session with your reader
+    url: https://www.amazon.co.uk/s?k=a5+notebook+lined
+  related:
+  - help-children-read
+  - teach-english-as-a-volunteer
+  - volunteer-as-a-befriender
+  - become-a-private-tutor

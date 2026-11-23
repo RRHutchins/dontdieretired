@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-22)
+# Guidance engine report (2026-11-23)
 
-121 sources, 92 statements, 12 event profiles. Core 78, supported 14, thin 0, contested 0.
+123 sources, 92 statements, 12 event profiles. Core 80, supported 12, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -122,6 +122,7 @@
 - London Marathon Events (Brighton Marathon Weekend), *10 weeks to 10k training plan* (2025). Opened 2026-11-22.
 - British Triathlon, *Triathlon Tips for Beginners* (2026). Opened 2026-11-22.
 - USA Triathlon (Beatrice Black), *Feel good about open water swimming* (2023). Opened 2026-11-22.
+- Royal Parks Half Marathon (plan powered by Coopah), *Royal Parks Half Marathon Training Plan: Beginner* (2026). Opened 2026-11-23.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -131,6 +132,7 @@
 - RunnersConnect (Jeff Gaudette, running coach since 2005 and former Olympic Trials qualifier), *What is a down week in running? How and when to take one* (2026). Opened 2026-10-27.
 - Outdoor Swimming Society (Kate Rew, author of The Outdoor Swimmers' Handbook), *Risks of Cold Water (published 3 February 2017, updated 30 May 2026)* (2026). Opened 2026-11-08.
 - Mind (plan by Full Potential, Mind's training partner), *Marathon beginner plan* (2026). Opened 2026-11-21.
+- Cicerone Press (Lesley Williams, Cicerone guidebook author, and Joe Williams), *How to get hill-fit and train for long-distance walking* (2026). Opened 2026-11-23.
 
 **1. General**
 - Wanderlust (with advice from the Long Distance Walkers Association and experienced trekkers), *How to prepare for a long-distance trek* (2026). Opened 2026-10-27.
@@ -189,6 +191,7 @@
 | core | 7 | body maintenance | Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground. | bmc-hill-fit, nhs-strength-exercises |
 | core | 7 | recovery | If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. | ea-pavey-marathon, nhs-c25k |
 | core | 7 | feet | Deal with a hot spot as soon as you feel it. Cover a blister with a soft or padded plaster and do not burst it; get advice if it shows signs of infection. | nhs-blisters, bmc-long-distance |
+| core | 7 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit |
 | core | 7 | warning signs | Stop if something does not feel right, and get it checked rather than training through it. | nhs-c25k, ea-pavey-marathon |
 | core | 7 | why | The long session prepares you for the length of the day itself. Its pace does not matter; covering the time or distance does, so keep it at a conversational effort. | higdon-novice1, bmc-hill-fit, ydnpa-three-peaks |
 | core | 7 | why | Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. | ea-training-pace, ijspp-2010-intensity |
@@ -199,6 +202,7 @@
 | core | 6 | on the day | On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. | bmc-long-distance, wanderlust-trek-prep, ldwa-body-prep |
 | core | 6 | on the day | On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard. | swcpa-safety, wcp-safety |
 | core | 6 | why | Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. | bosquet-2007, ea-pavey-marathon |
+| core | 6 | key session | For a first half marathon, think of the long run as time on your feet rather than miles, at an easy pace. Great Run's beginner plan builds it to about 80 minutes by two weeks before the race. | greatrun-half-plan, rphm-coopah-beginner |
 | core | 6 | warning signs | If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. | rnli-cold-water-2025, swimeng-stay-safe |
 | core | 6 | key session | Use the pool to practise what open water needs and a pool does not teach you, looking up to sight every five to ten strokes and breathing to both sides, and learn to tread water so you can rest. | usms-open-water, swimeng-pool-prep |
 | core | 6 | key session | Practise floating on your back at a supervised pool or venue so you can do it without thinking. Tilt your head back with your ears under the water, spread your arms and legs, and keep your breathing calm; your legs may sink, and that is fine. If cold water takes your breath away, float for about a minute until your breathing is under control, then call for help or swim to safety. | rnli-float, swimeng-hot-weather |
@@ -219,14 +223,12 @@
 | core | 5 | intensity | For walking to count as exercise, walk briskly, at about 3 miles an hour, faster than a stroll; you should still be able to talk but not sing. Even a brisk 10-minute walk each day counts. If you are not very active, increase your walking distance gradually. | nhs-walking |
 | supported | 5 | key session | Train for the ground you will cover. For hill challenges walk hills fast, or use stairs, and add short hill repeats of 50 to 100 metres of climb, four to six times, coming down slowly. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 5 | fuel and drink | Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. | eah-consensus-2015 (against: bc-sofa-50km, bc-nutrition-top10) |
-| supported | 5 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker |
 | supported | 5 | why | Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control. | bmc-hill-fit, ydnpa-three-peaks |
+| supported | 5 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit, cicerone-hill-fit |
 | supported | 3 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace |
 | supported | 3 | on the day | Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month. | inyo-whitney-leaflet |
 | supported | 3 | before you start | Plan for the snow-free season, usually July to late September. When snow or ice is on the mountain it needs winter mountaineering skills and equipment. | inyo-whitney, inyo-whitney-leaflet |
 | supported | 3 | before you start | The Coast to Coast is a demanding trail, hardest at the western end through the Lake District, where waymarks usually stop above the fell wall. Some high sections may be difficult in winter or bad weather; know the low-level options and use them when the weather is poor. | govuk-c2c |
-| supported | 3 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit |
-| supported | 3 | key session | For a first half marathon, think of the long run in minutes rather than miles, at an easy pace, building to about 80 minutes by two weeks before the race. | greatrun-half-plan |
 | supported | 3 | key session | For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60. | greatrun-10k-plans |
 | supported | 3 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water |
 | supported | 3 | key session | With three days a week, swim once or twice working on technique, ride once at a steady pace and run twice, one easy and one a little faster. Regular sessions of 30 to 45 minutes are enough to start, rather than long, hard ones. | tri-ireland-first |
