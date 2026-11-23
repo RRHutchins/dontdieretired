@@ -2396,6 +2396,17 @@
     url: https://www.usms.org/join-usms/trial-membership
     region: us
     checked: '2026-11-20'
+  finders:
+  - label: 'Swim England: find a club (England)'
+    url: https://swimming.org/sport/find-a-club
+    why: Swim England's look-up of clubs in England; it says anyone over 18 looking to join a club needs masters swimming, so ask a club about its masters sessions.
+    region: uk
+    checked: '2026-11-23'
+  - label: 'U.S. Masters Swimming: club finder'
+    url: https://www.usms.org/clubs
+    why: Search by city, state or ZIP code and choose a distance; filters include indoor, outdoor and open water.
+    region: us
+    checked: '2026-11-23'
   story: betty-brussel-99-three-world-records
   guide: swimming-and-cycling-after-50
   inspire:
@@ -2899,6 +2910,17 @@
     url: https://sites.google.com/harlemrivercr.org/hrcr/home/row-with-us/learn-to-row
     region: us
     checked: '2026-11-11'
+  finders:
+  - label: 'USRowing: find a club'
+    url: https://usrowing.org/find-a-club
+    why: Use your location or pick your state and a distance; USRowing says its member clubs welcome people taking their first strokes.
+    region: us
+    checked: '2026-11-23'
+  - label: 'Scottish Rowing: club finder (Scotland)'
+    url: https://scottish-rowing.org.uk/clubsupport/cf
+    why: A map of rowing clubs across Scotland; choose the nearest club and ask about its beginners' course. In England and Wales, start from British Rowing's Learn to Row page below.
+    region: uk
+    checked: '2026-11-23'
   story: dave-bell-peru-to-kenya-row
   story_note: Dave Bell rowed alone from Peru to Kenya; a club beginner course is where most rowers take their first strokes.
   seo_title: 'Learn to row: beginner courses, costs and what to expect'
@@ -8917,6 +8939,17 @@
     url: https://sps.northwestern.edu/oshernrc/about/osher-lifelong-learning-institute-network.html
     region: us
     checked: '2026-11-21'
+  finders:
+  - label: 'u3a: find your local u3a'
+    url: https://www.u3a.org.uk/get-involved/find-your-local-u3a
+    why: Type your postcode into the map's search, zoom out until a pin appears, then choose it for that u3a's details; each u3a runs its own sign-up.
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Osher National Resource Center: find an Osher institute near you'
+    url: https://sps.northwestern.edu/oshernrc/find-an-osher-near-you.html
+    why: An interactive map of the Osher Lifelong Learning Institutes, which the network says span all 50 states and DC; each offers non-credit courses.
+    region: us
+    checked: '2026-11-23'
   guide: going-back-to-study-after-50
   kit:
   - name: Notebook and pen set
