@@ -1578,3 +1578,14 @@ li.prod{display:grid;grid-template-columns:56px minmax(0,1fr);gap:.85em;align-it
 .fl-choice{flex:0 1 330px}
 .fl-grid>li[data-cat] .chip.fl-year.is-planned{background:#fff;border-color:#fff;color:var(--c)}
 .my-mnav h3{margin:0;font-size:clamp(1.4rem,3vw,1.8rem);grid-column:1/-1;order:-1}
+/* Deep hub entry dates and hub sign-up (RUNBOOK §6u step 4, 23 Nov 2026) */
+.hub-dates{margin:22px 0 26px;padding:16px 18px;border:2px solid var(--line);border-radius:var(--r)}
+.hub-dates h2{margin-top:0}.hub-dates-page{border:0;padding:0}
+.hub-ed-list{list-style:none;padding:0;margin:0 0 14px}
+.hub-ed{padding:8px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.hub-ed:last-child{border-bottom:0}
+.hub-ed time{display:inline-block;min-width:10.5em;font-weight:700}
+.hub-signup{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
+.hub-signup p{flex:1 1 100%;margin:0 0 4px}
+.hub-signup input[type=email]{flex:1 1 14em;min-width:0;min-height:44px}
+@media (max-width:600px){.hub-ed time{display:block;min-width:0}}

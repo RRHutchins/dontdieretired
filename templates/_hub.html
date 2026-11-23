@@ -1,0 +1,12 @@
+{# Deep hub pieces shared by the hub, race and calendar pages (RUNBOOK §6u priority step 4, 23 Nov 2026). #}
+{% macro entry_item(d, e, show_race=True) %}<li class="hub-ed" data-end="{{ d.end_iso }}"><time datetime="{{ d.iso }}">{{ d.human }}</time>{% if show_race %} <a href="{{ e.url }}">{{ e.name }}</a>:{% endif %} {{ d.what }} <span class="meta">(<a href="{{ d.url }}" target="_blank" rel="noopener" data-fl-out>official page</a>, opened {{ d.checked_human }})</span></li>{% endmacro %}
+
+{% macro signup(h, cfg) %}{% if h.signup_tag %}
+<form class="nl-form hub-signup" action="{{ cfg.newsletter.form_action }}" method="post" target="_blank" data-nl>
+  <p><strong>Join the email list.</strong> Leave your address and we will know you are interested in {{ h.label | lower }}. We do not send entry-date alerts yet, so for now check the dates above and the organizer's page.</p>
+  <input type="hidden" name="tag" value="{{ h.signup_tag }}">
+  <label class="sr-only" for="hub-nl-{{ h.id }}">Email address</label>
+  <input id="hub-nl-{{ h.id }}" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+  <button class="btn" type="submit">Join free</button>
+</form>
+{% endif %}{% endmacro %}

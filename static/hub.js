@@ -1,4 +1,9 @@
 // Deep hub race finder (RUNBOOK §6u): filters the events already in the page. No storage, no network.
+// Entry dates (step 4): hide any that passed since the page was built (the build drops them; deploys run several times a day).
+(() => {
+  const d = new Date(), today = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  document.querySelectorAll('.hub-ed[data-end]').forEach(li => { if (li.dataset.end < today) li.hidden = true; });
+})();
 (() => {
   const root = document.querySelector('[data-hub-finder]'); if (!root) return;
   const form = root.querySelector('[data-hub-filters]'), none = root.querySelector('[data-hub-none]');

@@ -1199,6 +1199,42 @@ def build(make_social=True):
         h["used"] = {"terrain": {t for e in h["events"] for t in e["terrain"]}, "entry": {x for e in h["events"] for x in e["entry"]}, "series": {e["series"] for e in h["events"]},
                      "type": {e.get("type") for e in h["events"] if e.get("type")}, "see": {x for e in h["events"] for x in e.get("see") or []}, "pace": {x for e in h["events"] for x in e.get("pace") or []}}
         h["months"] = [(i + 1, MONTHS[i]) for i in range(12) if any(i + 1 in (e.get("month") or []) for e in h["events"])]
+        # Entry calendar (RUNBOOK §6u priority step 4, 23 Nov 2026): optional `entry_dates` on a race, each {date: YYYY-MM-DD or
+        # month: YYYY-MM, what (the organizer's terms), url, checked}, only as the official page shows them, with the year.
+        # Dates before the build day drop out at each build (hub.js also hides any that pass between builds).
+        _td = dt.date.today()
+        h["entry_cal"] = []
+        for e in h["events"]:
+            e["entry_dates_up"] = []
+            for d in e.get("entry_dates") or []:
+                assert bool(d.get("date")) != bool(d.get("month")), f"hub {h['id']} event {e['id']}: an entry date needs date or month (not both)"
+                assert d.get("what") and str(d.get("url", "")).startswith("https://") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(d.get("checked", ""))), f"hub {h['id']} event {e['id']}: an entry date needs what, https url, checked"
+                assert not re.search(r"[£$€]\s?\d", d["what"]), f"hub {h['id']} event {e['id']}: no prices (they change)"
+                if d.get("date"):
+                    _d = dt.date.fromisoformat(str(d["date"])); d["iso"] = _d.isoformat(); d["human"] = _d.strftime("%-d %B %Y"); _end = _d
+                else:
+                    _y, _m = map(int, str(d["month"]).split("-")); _d = dt.date(_y, _m, 1); d["iso"] = _d.isoformat()[:7]; d["human"] = _d.strftime("%B %Y") + " (day not given yet)"
+                    _end = (dt.date(_y + (_m == 12), _m % 12 + 1, 1) - dt.timedelta(days=1))
+                d["end_iso"] = _end.isoformat(); d["checked_human"] = dt.date.fromisoformat(str(d["checked"])).strftime("%-d %B %Y")
+                d["month_key"] = _d.strftime("%B %Y"); d["sort"] = _d.isoformat()
+                if _end >= _td:
+                    e["entry_dates_up"].append(d); h["entry_cal"].append((d, e))
+            e["entry_dates_up"].sort(key=lambda d: d["sort"])
+        h["entry_cal"].sort(key=lambda x: (x[0]["sort"], x[1]["name"].lower()))
+        h["entry_soon"] = [x for x in h["entry_cal"] if dt.date.fromisoformat(x[0]["sort"]) <= _td + dt.timedelta(days=120)][:10]
+        h["entry_months"] = []
+        for d, e in h["entry_cal"]:
+            if not h["entry_months"] or h["entry_months"][-1][0] != d["month_key"]:
+                h["entry_months"].append((d["month_key"], []))
+            h["entry_months"][-1][1].append((d, e))
+        # The calendar page (`entry_calendar: {slug, title, intro, ...}` on a race hub with event pages): built only with 4+ dates to come
+        h["entry_cal_page"] = None
+        if h.get("entry_calendar") and h.get("event_pages") and len(h["entry_cal"]) >= 4:
+            EC = h["entry_calendar"]
+            assert re.fullmatch(r"[a-z0-9-]+", EC.get("slug", "")) and EC.get("title") and EC["slug"] not in {e["id"] for e in h["events"]} | {g["slug"] for g in h.get("guides") or []} | {L["slug"] for L in h.get("landings") or []}, f"hub {h['id']}: entry_calendar needs a free slug and a title"
+            EC["url"] = f"/{h['slug']}/{EC['slug']}/"
+            h["entry_cal_page"] = EC
+        assert not h.get("signup_tag") or re.fullmatch(r"int-[a-z0-9-]+", h["signup_tag"]), f"hub {h['id']}: signup_tag looks like int-<subject>"
         h["acts"] = [_chs_by[i] for i in h.get("activities") or [] if i in _chs_by]
         h["checked_human"] = max(dt.date.fromisoformat(str(e["link"]["checked"])) for e in h["events"]).strftime("%-d %B %Y")
         lk = Linker(terms, f"/{h['slug']}/")
@@ -1306,6 +1342,15 @@ def build(make_social=True):
             urls.append(out(g["url"], "hub-guide.html", h=h, g=g, others=[x for x in h["guides"] if x is not g]))
             pages.append({"title": g["title"], "key": g.get("seo_title") or "", "url": g["url"], "category": h["category"], "excerpt": g["standfirst"],
                           "tags": [h["id"].replace("-", " "), "guide"] + list(h.get("tags") or []) + re.findall(r"[a-z]+", g["title"].lower()),
+                          "image": "/static/og-default.png", "art": "/static/og-default.png"})
+        if h.get("entry_cal_page"):
+            EC = h["entry_cal_page"]
+            EC["seo_title"] = EC.get("seo_title") or EC["title"]
+            _uniq = list({e["id"]: e for d, e in h["entry_cal"]}.values())
+            EC["item_list"] = [{"@type": "ListItem", "position": n, "name": e["name"], "url": f"{cfg['site']['url']}{e['url']}"} for n, e in enumerate(_uniq, 1)]
+            urls.append(out(EC["url"], "hub-entry-dates.html", h=h, EC=EC))
+            pages.append({"title": EC["title"], "key": EC["seo_title"], "url": EC["url"], "category": h["category"], "excerpt": EC.get("description") or EC["title"],
+                          "tags": [h["id"].replace("-", " "), "entry", "ballot", "lottery", "registration"] + list(h.get("tags") or []),
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})
         item_list = [{"@type": "ListItem", "position": n, "name": e["name"], "url": f"{cfg['site']['url']}{e['url']}" if e.get("url") else f"{cfg['site']['url']}/{h['slug']}/#{e['id']}"} for n, e in enumerate(h["events"], 1)]
         urls.append(out(f"/{h['slug']}/", "hub.html", h=h, item_list=item_list))

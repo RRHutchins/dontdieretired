@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import share_button %}
+{% extends "base.html" %}{% from "_macros.html" import share_button %}{% from "_hub.html" import entry_item, signup %}
 {# A page per race (RUNBOOK §6u priority step 1): everything in the finder row, the official link and checked date, related races and the guides.
    No Event/SportsEvent markup: rows carry only a usual month, and Google treats guessed dates as misleading. #}
 {% block title %}{{ e.seo_title }}{% endblock %}
@@ -29,6 +29,9 @@
   <section class="fl-detail">
     <h2>{{ h.entry_h2 or "How you get a place" }}</h2>
     <p><strong>{% for x in e.entry %}{{ h.facets.entry[x] }}{{ "; " if not loop.last }}{% endfor %}.</strong> {{ e.entry_note }}</p>
+    {% if e.entry_dates_up %}<h3 class="h4">Entry dates</h3>
+    <ul class="hub-ed-list">{% for d in e.entry_dates_up %}{{ entry_item(d, e, False) }}{% endfor %}</ul>
+    <p class="meta">As the organizer's page showed them on the day we opened it.{% if h.entry_cal_page %} <a href="{{ h.entry_cal_page.url }}">All entry dates we have checked</a>.{% endif %}</p>{% endif %}
   </section>
   <section class="fl-detail">
     <h2>What stands out</h2>
@@ -63,3 +66,4 @@
   <p class="disclosure">{% if h.word %}We list {{ h.noun_one }} only after opening its official page. Being listed does not mean the {{ h.word }} or the body behind it endorses this site.{% else %}We list a race only after opening its organizer's own page. Being listed does not mean the race or its organizer endorses this site.{% endif %} Written with AI from the official page and checked against it.</p>
 </article>
 {% endblock %}
+{% block scripts %}<script src="/static/hub.js?v={{ asset_v }}" defer></script>{% endblock %}

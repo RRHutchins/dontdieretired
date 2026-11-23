@@ -27,6 +27,14 @@ facets:
 # Landing pages for common filters (RUNBOOK §6u step 2): /ultra-running/<slug>/. Facts on each page are computed by the build;
 # `intro` is our own short explanation of the filter only (no race facts). A page needs at least 4 races.
 landing_months: true
+# Entry calendar (RUNBOOK §6u step 4): races may carry `entry_dates`; the hub shows those in the next 120 days and this page shows all to come
+entry_calendar:
+  slug: entry-dates
+  title: Ultramarathon ballots and entry dates
+  seo_title: 'Ultramarathon ballot and entry dates: the calendar'
+  description: When ultramarathon lotteries, ballots and registrations open and close, month by month, each date copied from the organizer's own page with the day we checked it.
+  lead: When lotteries open and close, when draws happen and when registration starts, for the races in our finder that have posted their next dates.
+signup_tag: int-ultra
 landing_noun: Ultras
 landings:
 - {slug: in-the-uk, title: Ultramarathons in the UK, short: UK, group: Where, filter: {country_has: UK}}
@@ -116,6 +124,8 @@ events:
   link: {label: 'Western States: entry process', url: 'https://www.wser.org/entry-process/', checked: '2026-11-17'}
   more:
   - {label: 'Western States: 2027 participant guide (30-hour cutoff)', url: 'https://www.wser.org/participant-guide/', checked: '2026-11-22'}
+  entry_dates:
+  - {date: '2026-12-05', what: 'Lottery draw for the 2027 race (8 to 11am Pacific, Placer High School, Auburn; lottery registration closed on 21 November)', url: 'https://www.wser.org/lottery/', checked: '2026-11-23'}
 - id: hardrock-100
   name: Hardrock 100
   series: independent
@@ -132,6 +142,8 @@ events:
   entry_note: Lottery drawn in early December.
   note: The average height is over 11,000 ft (3,350 m). The loop crosses 13 passes above 12,000 ft and tops out on Handies Peak at 14,048 ft. The organisers warn of ice-cold stream crossings and snowfields.
   link: {label: 'Hardrock 100: course description', url: 'https://hardrock100.com/hardrock-course.php', checked: '2026-11-17'}
+  entry_dates:
+  - {date: '2026-12-05', what: 'Lottery draw for the 2027 race, from 9am Mountain time (lottery registration is closed)', url: 'https://hardrock100.com/', checked: '2026-11-23'}
 - id: leadville-trail-100
   name: Leadville Trail 100 Run
   series: independent
@@ -145,9 +157,16 @@ events:
   format: single
   month: [8]
   entry: [ballot]
-  entry_note: Lottery in early December. Finishers of other Leadville series races, such as the Silver Rush 50, can also win entry coins at the awards.
+  entry_note: Lottery from 1 to 15 December 2026, with results on 6 January 2027 and general registration from 7 January. Finishers of other Leadville series races, such as the Silver Rush 50, can also win entry coins at the awards.
   note: Runners cross Hope Pass, about 12,500 ft, on the way out and again on the way back.
   link: {label: 'Leadville Trail 100 Run', url: 'https://www.leadvilleraceseries.com/run/leadvilletrail100run/', checked: '2026-11-17'}
+  more:
+  - {label: 'Leadville Race Series: lottery and qualification (2027)', url: 'https://www.leadvilleraceseries.com/lottery-qualification/', checked: '2026-11-23'}
+  entry_dates:
+  - {date: '2026-12-01', what: 'Lotteries open, 10am Mountain time (they close on 15 December)', url: 'https://www.leadvilleraceseries.com/lottery-qualification/', checked: '2026-11-23'}
+  - {date: '2026-12-15', what: 'Lotteries close', url: 'https://www.leadvilleraceseries.com/lottery-qualification/', checked: '2026-11-23'}
+  - {date: '2027-01-06', what: 'Lottery results sent to every applicant', url: 'https://www.leadvilleraceseries.com/lottery-qualification/', checked: '2026-11-23'}
+  - {date: '2027-01-07', what: 'General registration opens for all events and for qualifiers', url: 'https://www.leadvilleraceseries.com/lottery-qualification/', checked: '2026-11-23'}
 - id: badwater-135
   name: Badwater 135
   series: independent
@@ -163,6 +182,10 @@ events:
   entry_note: Invitational. Applicants must meet a qualifying standard, such as four official finishes of 100 continuous miles or more.
   note: Up to 100 runners, a 48-hour limit and a July date in Death Valley.
   link: {label: 'Badwater 135: event and qualifying standards', url: 'https://www.badwater.com/event/badwater-135/', checked: '2026-11-17'}
+  entry_dates:
+  - {date: '2027-01-02', what: 'Applications open for the 2027 race (they close on 20 January)', url: 'https://www.badwater.com/event/badwater-135/', checked: '2026-11-23'}
+  - {date: '2027-01-20', what: 'Applications close', url: 'https://www.badwater.com/event/badwater-135/', checked: '2026-11-23'}
+  - {date: '2027-02-06', what: 'The 2027 race field is announced live', url: 'https://www.badwater.com/event/badwater-135/', checked: '2026-11-23'}
 - id: canyons-endurance-runs
   name: HOKA Canyons Endurance Runs by UTMB
   series: utmb
@@ -178,6 +201,8 @@ events:
   entry_note: Entry through UTMB. The 100-mile course runs on the Western States Trail from China Wall to Auburn.
   note: A UTMB World Series Major for 2027 and a qualifier for Western States.
   link: {label: 'Canyons Endurance Runs by UTMB', url: 'https://canyons.utmb.world/', checked: '2026-11-17'}
+  entry_dates:
+  - {date: '2027-04-18', what: 'Online registration closes at 11:59pm Pacific, or earlier if races sell out', url: 'https://canyons.utmb.world/runners/registration', checked: '2026-11-23'}
 - id: kodiak-ultra-marathons
   name: HOKA Kodiak Ultra Marathons by UTMB
   series: utmb
@@ -907,6 +932,10 @@ events:
   entry_note: Lottery for 2027, open in January 2027 with the draw soon after. The page lists no qualifying race.
   note: Desert, canyons, slickrock and two mountain ranges near Canyonlands and Arches, with 15 full aid stations (five of them sleep stations) and a 112-hour cut-off. The 2026 race was cancelled because of dangerous weather on the course.
   link: {label: 'Destination Trail: Moab 240', url: 'https://www.destinationtrailrun.com/moab', checked: '2026-11-19'}
+  entry_dates:
+  - {date: '2027-01-05', what: 'Lottery opens, 8am Mountain time', url: 'https://www.destinationtrailrun.com/race-calendar/moab-240-2027', checked: '2026-11-23'}
+  - {date: '2027-01-24', what: 'Lottery closes, 11:59pm Mountain time', url: 'https://www.destinationtrailrun.com/race-calendar/moab-240-2027', checked: '2026-11-23'}
+  - {date: '2027-01-26', what: 'Lottery drawing, 10am Mountain time', url: 'https://www.destinationtrailrun.com/race-calendar/moab-240-2027', checked: '2026-11-23'}
 - id: iditarod-trail-invitational
   name: Iditarod Trail Invitational
   series: independent
@@ -1716,6 +1745,209 @@ events:
   note: Coast to coast across southern Scotland on the Southern Upland Way, with 12 checkpoints and no pacers or support runners.
   time_limit: [{km: 346, hours: 100}]
   link: {label: 'GBUltras: Race Across Scotland', url: 'https://www.gbultras.com/ultra-great-britain/', checked: '2026-11-22'}
+- id: passatore-100
+  name: 100 km del Passatore
+  series: independent
+  place: Florence (Piazza Duomo) to Faenza (Piazza del Popolo)
+  country: Italy
+  continent: europe
+  km: [100]
+  distances: 100 km, point to point
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [open]
+  entry_note: Registration opened on 4 November 2026 and closes on 6 May 2027, with a maximum of 3,500 runners; an entry counts only once it is paid. You must be born in 2007 or earlier. Runners based in Italy need a FIDAL card or a Runcard with a competitive-sport medical certificate; runners from other countries need membership of a federation affiliated to World Athletics, or a Runcard with a medical certificate.
+  note: The 52nd edition starts in Florence at 3pm on Saturday 22 May 2027 and finishes in Faenza on the Sunday.
+  time_limit: [{km: 100, hours: 20}]
+  link: {label: '100 km del Passatore: regolamento (rules, in Italian)', url: 'https://www.100kmdelpassatore.it/regolamento-3/', checked: '2026-11-23'}
+  more:
+  - {label: '100 km del Passatore: 2027 registration opens (press release, in Italian)', url: 'https://www.100kmdelpassatore.it/comunicati-stampa/cento-del-passatore-2027-si-aprono-le-iscrizioni/', checked: '2026-11-23'}
+  entry_dates:
+  - {date: '2027-05-06', what: 'Registration closes (or earlier if the 3,500 places fill)', url: 'https://www.100kmdelpassatore.it/regolamento-3/', checked: '2026-11-23'}
+- id: bieler-lauftage-100
+  name: Bieler Lauftage 100 km
+  series: independent
+  place: Biel/Bienne, canton of Bern
+  country: Switzerland
+  continent: europe
+  km: [100]
+  distances: 100 km run, plus 100 km relays for teams of two or five, military patrol and military relay races, a half marathon and a 10 km
+  terrain: [road]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: Registration for 2027 is open through Datasport. The 100 km is for runners born in 2009 or earlier, and the organizer says this age limit is binding. From January 2027 you can transfer an entry to someone else.
+  note: The 2027 event runs on 11 and 12 June; the 100 km finish in Biel closes at 7pm on Saturday 12 June.
+  link: {label: 'Bieler Lauftage: 2027 rules (PDF, in German)', url: 'https://100km.ch/wp-content/uploads/2026/11/reglement-blt-2027-de.pdf', checked: '2026-11-23'}
+  more:
+  - {label: 'Bieler Lauftage: home page', url: 'https://100km.ch/', checked: '2026-11-23'}
+- id: kullamannen-by-utmb
+  name: Kullamannen by UTMB
+  series: utmb
+  place: Höganäs to Båstad, around the Kullaberg peninsula, Skåne
+  country: Sweden
+  continent: europe
+  km: [168, 108, 50]
+  distances: Ultra 100 Miles (168 km), Sprint Ultra (108 km), Seventh Seal 50 km, North Shore 20 km
+  climb: 2,020 m (100 miles)
+  terrain: [trail]
+  format: single
+  month: [11]
+  entry: [register]
+  entry_note: The 2027 registration page shows the 100 miles, Sprint Ultra and 50 km as sold out (the race pages offer a "get notified" sign-up), and it does not say how places are allocated.
+  note: The 100-mile race starts at Höganäs Church at 6pm on 5 November 2027; the race page notes that November in Sweden has more darkness than daylight. It says the terrain is relatively flat but the race is very demanding.
+  time_limit: [{km: 168, hours: 32}, {km: 108, hours: 28}]
+  link: {label: 'Kullamannen by UTMB: Ultra 100 Miles', url: 'https://kullamannen.utmb.world/races/ultra-100-miles', checked: '2026-11-23'}
+  more:
+  - {label: 'Kullamannen by UTMB: Sprint Ultra', url: 'https://kullamannen.utmb.world/races/sprint-ultra-100-km', checked: '2026-11-23'}
+  - {label: 'Kullamannen by UTMB: registration (2027)', url: 'https://kullamannen.utmb.world/registration', checked: '2026-11-23'}
+- id: wasatch-front-100
+  name: Wasatch Front 100 Mile Endurance Run
+  series: independent
+  place: Kaysville to Soldier Hollow, Wasatch Mountain State Park, Utah
+  country: USA
+  continent: north-america
+  km: [161]
+  distances: 100 miles, point to point
+  terrain: [mountain, trail]
+  format: single
+  month: [9]
+  entry: [ballot, application]
+  entry_note: Apply from 1 December 2026 to 4 January 2027; the lottery is on 30 January 2027. You must be 18 or over and show successful ultrarunning experience or its equivalent, and your place becomes final only when you report 8 hours of supervised trail work (deadline 15 August 2027). Past winners and six-time finishers get automatic entry, and runners not drawn get extra lottery tickets the next year.
+  note: The race runs at altitudes from 5,000 to 10,480 feet, mostly on footpaths, game trails and dirt roads.
+  time_limit: [{km: 161, hours: 36}]
+  time_limit_text: 36 hours (our count from the organizer's dates - start 5am on 10 September 2027, end of race 5pm on 11 September)
+  link: {label: 'Wasatch 100: important race dates', url: 'https://wasatch100.com/important-race-dates/', checked: '2026-11-23'}
+  more:
+  - {label: 'Wasatch 100: application process', url: 'https://wasatch100.com/registration/application-process/', checked: '2026-11-23'}
+  - {label: 'Wasatch 100: selection process', url: 'https://wasatch100.com/registration/selection-process/', checked: '2026-11-23'}
+  - {label: 'Wasatch 100: about the race', url: 'https://wasatch100.com/about/', checked: '2026-11-23'}
+  entry_dates:
+  - {date: '2026-12-01', what: 'Registration for the lottery opens (it closes on 4 January 2027)', url: 'https://wasatch100.com/important-race-dates/', checked: '2026-11-23'}
+  - {date: '2027-01-04', what: 'Registration closes', url: 'https://wasatch100.com/important-race-dates/', checked: '2026-11-23'}
+  - {date: '2027-01-30', what: 'Lottery', url: 'https://wasatch100.com/important-race-dates/', checked: '2026-11-23'}
+- id: bighorn-trail-run
+  name: Bighorn Trail Run
+  series: independent
+  place: Bighorn National Forest, near Sheridan and Dayton, Wyoming
+  country: USA
+  continent: north-america
+  km: [161, 84, 51]
+  distances: 100 miles (out and back), 52 miles, 32 miles and 18 miles (2026 page)
+  climb: Over 20,500 ft (100 miles)
+  terrain: [mountain, trail]
+  format: single
+  entry: [register]
+  entry_note: The site says registration opens on 15 October for the 100 and 52 miles but does not give the year, and it does not describe a lottery or qualifier. Only 2026 pages were online on the day we checked.
+  note: The 100-mile course is an out-and-back on single-track, jeep road and gravel road.
+  time_limit: [{km: 161, hours: 35}]
+  link: {label: 'Bighorn Trail Run: home page (2026)', url: 'https://bighorntrailrun.com/', checked: '2026-11-23'}
+  more:
+  - {label: 'Bighorn Trail Run: 100 mile (2026)', url: 'https://bighorntrailrun.com/100-mile', checked: '2026-11-23'}
+- id: superior-100
+  name: Superior 100 Mile Trail Race
+  series: independent
+  place: Gooseberry Falls State Park to Lutsen, on the North Shore of Lake Superior, Minnesota
+  country: USA
+  continent: north-america
+  km: [165.6]
+  distances: 102.9 miles point to point (2026 course), plus 50-mile and 26.2-mile races
+  climb: 17,350 ft (2026)
+  terrain: [trail]
+  format: single
+  month: [9]
+  entry: [ballot, qualifier]
+  entry_note: The 2027 lottery is tentatively set to open on 1 January 2027 for 15 days, with no waiting list. For 2026 you needed a past finish of a 50-mile or longer trail race, a past Superior race, or 50 miles within 12 hours in a timed event; the organizer says the 2027 rules may change.
+  note: The course follows the Superior Hiking Trail, which the race page says is 95% technical single-track. The 2027 date of 10 September is tentative.
+  time_limit: [{km: 165.6, hours: 38}]
+  link: {label: 'Superior Fall Trail Race: 100 mile info', url: 'https://www.superiorfalltrailrace.com/100-mile-info/', checked: '2026-11-23'}
+  more:
+  - {label: 'Superior Fall Trail Race: registration info', url: 'https://www.superiorfalltrailrace.com/registration-info/', checked: '2026-11-23'}
+  entry_dates:
+  - {date: '2027-01-01', what: 'Lottery opens for 15 days (the organizer calls this date tentative)', url: 'https://www.superiorfalltrailrace.com/registration-info/', checked: '2026-11-23'}
+- id: addo-elephant-trail-run
+  name: Addo Elephant Trail Run
+  series: independent
+  place: Addo Elephant National Park to Zuurberg Mountain Village, Eastern Cape
+  country: South Africa
+  continent: africa
+  km: [161, 80, 50]
+  distances: 100 miles, 50 miles, 50 km and 21 km
+  terrain: [trail]
+  format: single
+  month: [3]
+  entry: [open]
+  entry_note: First come, first served, with caps of 100 runners for the 100 miles, 125 each for the 50 miles and 50 km, and 250 for the 21 km. Pre-entry only, and your place is secure only when the final payment arrives. Entries close at midnight on 28 February 2027 or when sold out.
+  note: The 2027 event runs from 25 to 28 March; the 100 miles starts at the park's Main Camp at 11am on Friday 26 March and finishes at Zuurberg Mountain Village.
+  time_limit: [{km: 161, hours: 40}]
+  link: {label: 'Addo Elephant Trail Run: 25 to 28 March 2027', url: 'https://addo.run/', checked: '2026-11-23'}
+  entry_dates:
+  - {date: '2027-02-28', what: 'Entries close at midnight, or earlier if sold out', url: 'https://addo.run/', checked: '2026-11-23'}
+- id: everest-trail-race
+  name: Everest Trail Race
+  series: independent
+  place: Solukhumbu, in the Everest region
+  country: Nepal
+  continent: asia
+  km: [160]
+  distances: About 160 km in six stages (about 22, 24, 37, 28, 20 and 30 km)
+  climb: More than 29,000 m of cumulative climb and descent
+  terrain: [mountain, trail]
+  format: stage
+  entry: [open]
+  entry_note: Places go in order of registration and first payment until they are full. You must be over 18, bring a resting ECG and a medical record on the organizer's form, both from within 30 days of the start, to the medical check in Kathmandu, and have accident and rescue insurance. Only the 2026 edition (November) was on the site when we checked; no 2027 dates yet.
+  note: The stages run between 2,000 and 4,100 m. Food is provided (it is not a food self-sufficiency race), but you carry your own technical kit.
+  link: {label: 'Everest Trail Race: the race', url: 'https://www.everesttrailrace.com/en/the-race', checked: '2026-11-23'}
+  more:
+  - {label: 'Everest Trail Race: registration procedure', url: 'https://www.everesttrailrace.com/en/runners/procedure', checked: '2026-11-23'}
+  - {label: 'Everest Trail Race: rules', url: 'https://www.everesttrailrace.com/en/runners/rules', checked: '2026-11-23'}
+- id: patagonia-run
+  name: Patagonia Run
+  series: independent
+  place: San Martín de los Andes, Neuquén, Patagonia
+  country: Argentina
+  continent: south-america
+  km: [160.3, 107.3, 71]
+  distances: 100 miles (160.3 km), 110K (107.3 km) and 70K (71 km), plus 42K, 21K and 12K
+  climb: 9,221 m (100 miles)
+  terrain: [mountain, trail]
+  format: single
+  month: [4]
+  entry: [application, register]
+  entry_note: The 100 miles is by application to the organizing committee. You need at least 12 ITRA points from up to three races in 2024 to 2026 (one of them a non-stop race of 110 km or more), a finish in the Patagonia Run 110K or 100 miles in 2025 or 2026, or a similar non-stop race in 2024 to 2026 with proof of your time. The 110K and 70K pages do not say how places are given out, and the registration page said registration was closed when we checked.
+  note: The 2027 festival runs from 7 to 11 April, with the 100 miles starting on Friday 9 April. The 110K page says 2026 finishers in 27 hours or less can enter the 2027 Western States 100 lottery.
+  time_limit: [{km: 160.3, hours: 42}, {km: 107.3, hours: 35}, {km: 71, hours: 23.5}]
+  time_limit_text: 'The race pages show 42 hours (100 miles), 35 hours (110K) and 23 hours 30 minutes (70K)'
+  link: {label: 'Patagonia Run: 100 miles', url: 'https://patagoniarun.com/en/100-millas/', checked: '2026-11-23'}
+  more:
+  - {label: 'Patagonia Run 2027: home page', url: 'https://patagoniarun.com/en/', checked: '2026-11-23'}
+  - {label: 'Patagonia Run: 110K', url: 'https://patagoniarun.com/en/110k/', checked: '2026-11-23'}
+  - {label: 'Patagonia Run: 70K', url: 'https://patagoniarun.com/en/70k/', checked: '2026-11-23'}
+  - {label: 'Patagonia Run 2027: registration', url: 'https://patagoniarun.com/en/inscripciones/', checked: '2026-11-23'}
+- id: surf-coast-century
+  name: Surf Coast Century
+  series: independent
+  place: Anglesea, on the Great Ocean Road, Victoria
+  country: Australia
+  continent: oceania
+  km: [100, 50]
+  distances: 100 km solo, 50 km solo, 100 km relay for teams of two to four, and a 2.5 km kids' run
+  climb: About 1,800 m (100 km, the organizer's figure)
+  terrain: [trail]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: Entries for 2027 open in March 2027 (no day given yet). The pages list no qualifying standard and do not say how places are allocated.
+  note: The 2027 race is on Saturday 18 September. The course mixes hard sand and the tidal zone, with some technical ground over reefs, gravel paths and bush single-track; the organizer calls it "Australia's Feel-Good Ultra Marathon".
+  time_limit: [{km: 50, hours: 9.5}]
+  time_limit_text: 9 hours 30 minutes for the 50 km; the 100 km has provisional checkpoint cut-offs, the last at the 95 km mark at 18 hours
+  link: {label: 'Surf Coast Century: home page', url: 'https://surfcoastcentury.rapidascent.com.au/', checked: '2026-11-23'}
+  more:
+  - {label: 'Surf Coast Century: rules and cut-offs', url: 'https://surfcoastcentury.rapidascent.com.au/event-details/the-race/rules-cut-offs/', checked: '2026-11-23'}
+  - {label: 'Surf Coast Century: course descriptions', url: 'https://surfcoastcentury.rapidascent.com.au/event-details/the-race/course-descriptions/', checked: '2026-11-23'}
+  entry_dates:
+  - {month: '2027-03', what: 'Entries open for the 2027 race', url: 'https://surfcoastcentury.rapidascent.com.au/', checked: '2026-11-23'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
@@ -2182,3 +2414,65 @@ guides:
   - {label: 'Badwater, Badwater 135 (event page and race rules)', url: 'https://www.badwater.com/event/badwater-135/', checked: '2026-11-22'}
   - {label: 'RacingThePlanet, Gobi March competitor equipment list', url: 'https://www.racingtheplanet.com/gobimarch/equipment', checked: '2026-11-22'}
   - {label: 'RacingThePlanet, UltraLite Namibia equipment list', url: 'https://www.racingtheplanet.com/namibia/ultralite/equipment/download', checked: '2026-11-22'}
+- slug: poles
+  title: Poles in an ultra
+  short: Whether poles help, which races allow them and how to carry them
+  seo_title: 'Trekking poles in ultramarathons: research and race rules'
+  description: What studies found about poles on steep climbs, which race rules cover them (Western States, UTMB), and how to use and carry them without hurting anyone.
+  standfirst: On a long, steep climb many ultra runners reach for poles. The research says the energy saving is small but the effort feels easier and the legs take a little less load, and race rules decide where you can use them.
+  detail:
+  - h: Do poles help?
+    p:
+    - 'A 2019 study in the European Journal of Applied Physiology had 14 mountain runners walk uphill on a treadmill at seven slopes, with and without poles. Poles cut the energy cost of climbing only on three of the steeper slopes (25.4, 29.8 and 35.5 degrees, but not the steepest), and only by about 2 to 3 percent, which the authors called small. But the runners rated the effort lower with poles on five of the seven slopes, and the authors suggest that this may delay fatigue in long efforts.'
+    - 'A 2023 study by the same group, with 15 male trail runners walking uphill on a treadmill and outdoors, found poles reduced the force through the feet by a few percent and made no difference to heart and breathing measures. In the hardest outdoor trial the runners climbed about 2.5 percent faster with poles.'
+    - 'A 2011 study in Medicine and Science in Sports and Exercise split 37 walkers into a pole group and a no-pole group for a walk up and down Snowdon with a day pack. The pole group lost less leg strength straight after and over the next two days, had less muscle soreness at 24 and 48 hours, and rated the climb as easier.'
+    - None of these studies was a race. They suggest poles make long climbs feel easier and spare the legs a little; they do not show that poles make you faster over a whole ultra.
+  - h: What the studies found
+    table:
+      head: [Study, Who and what, What poles changed]
+      rows:
+      - ['Giovanelli and others, European Journal of Applied Physiology, 2019', '14 mountain runners walking uphill on a treadmill at seven slopes', 'Energy cost down about 2 to 3 percent on three slopes only; effort felt easier on five slopes; longer, less frequent strides']
+      - ['Giovanelli and others, European Journal of Applied Physiology, 2023', '15 male trail runners walking uphill, treadmill and outdoors', 'A few percent less force through the feet; no change in heart and breathing measures; about 2.5 percent faster in the hardest outdoor trial']
+      - ['Howatson and others, Medicine and Science in Sports and Exercise, 2011', '37 walkers up and down Snowdon with a day pack', 'Less loss of leg strength and less soreness over the next two days; the climb felt easier']
+    after: 'From the papers'' abstracts and publisher or university pages, opened on 23 November 2026.'
+  - h: What the race rules say
+    p:
+    - 'Western States says poles may be used anywhere on its course, and you can drop them or pick them up at aid stations where crews or drop bags are allowed. Its pacers must not carry anything for their runner ("muling" is forbidden), so plan to carry your own.'
+    - 'The UTMB Mont-Blanc 2027 regulations list penalties for the OCC, MCC and ETC races: 30 minutes for using poles you did not carry from the start or for leaving poles behind during the race, and 10 minutes for carrying poles with uncovered tips pointing at runners or spectators. Ultra-Trail Australia by UTMB lists the 30-minute penalty for using poles not carried from the start, and the 10-minute penalty for tips, for its 20K and 50K. The pages we opened do not say how these rules apply to UTMB''s longer races, so read your own race''s regulations.'
+    - 'The Everest Trail Race does not make poles compulsory but says they are advisable.'
+    - Rules change from race to race and year to year, so check your race's current regulations before you train with poles.
+  - h: Using them well
+    p:
+    - 'The British Mountaineering Council''s guide to trekking poles says that on the way down you can put your hands on top of the handles, and that each step down then puts some of your body weight through your arms rather than your knees.'
+    - 'On boulder fields and river crossings it suggests taking your hands out of the straps, so that you can let go of the poles if you slip. It warns that poles do not grip rock well and can become a hazard, suggests storing them inside your pack on the approach to a climb, and in winter says to get the ice axe out early.'
+    - 'The Medical Commission of the UIAA, the international mountaineering and climbing federation, says two poles balance a loaded walker better than one, but that tripping or stumbling can become a greater risk with poles and that they should not be used everywhere. It names narrow ridges and climbing terrain as places they cannot be used.'
+    - 'Both warn that relying on poles all the time can leave you out of practice at balancing on your own. If your race allows them, try them on long climbs and descents in training first: the 2019 study found they change your stride.'
+  - h: Carrying them without hurting anyone
+    p:
+    - 'The UIAA says to carry poles on your pack with the tips pointing down, so they do not injure the person behind you.'
+    - 'UTMB Mont-Blanc''s rules for the OCC, MCC and ETC penalize uncovered tips pointed at runners or spectators, so fit rubber tip covers or keep the points down when you carry them in a crowd, at aid stations and in town.'
+    - At Western States you can leave them with your crew or in a drop bag at the aid stations that allow it. In the UTMB races with the penalty above, once you start with poles you carry them to the finish.
+  faq:
+  - q: Do poles make you faster in an ultra?
+    a: The studies we opened did not test whole races. On steep treadmill climbs poles saved only about 2 to 3 percent of energy on some slopes, but the effort felt easier, and in one outdoor trial runners climbed about 2.5 percent faster.
+  - q: Are poles allowed at Western States?
+    a: Yes. Its performance rules say poles may be used anywhere on the course, and dropped or collected at aid stations with crew access or drop bags. Pacers may not carry them for you.
+  - q: Can I pick up poles partway through a UTMB race?
+    a: For the OCC, MCC and ETC, the 2027 regulations give a 30-minute penalty for using poles you did not carry from the start, and the same for abandoning them during the race. Check your own race's regulations.
+  - q: Do poles help my knees on the way down?
+    a: The British Mountaineering Council says resting your hands on top of the handles when descending takes some of your body weight on your arms at each step. A 2011 study on Snowdon found walkers with poles had less muscle soreness over the next two days.
+  kit:
+  - {name: Folding trail running poles, why: 'check the folded length fits the pole holder on your vest, the weight per pair, and the length range for your height', url: 'https://www.amazon.co.uk/s?k=folding+trail+running+poles'}
+  - {name: Rubber pole tip covers, why: 'UTMB Mont-Blanc''s OCC, MCC and ETC rules penalize uncovered tips pointed at people; check the covers fit your pole''s tip size', url: 'https://www.amazon.co.uk/s?k=trekking+pole+rubber+tip+protectors'}
+  - {name: Pole holder or quiver for a running vest, why: 'check it fits your vest and that you can stow and pull out the poles without stopping', url: 'https://www.amazon.co.uk/s?k=running+vest+pole+holder+quiver'}
+  sources:
+  - {label: 'Giovanelli and others, Do poles save energy during steep uphill walking? (European Journal of Applied Physiology, 2019)', url: 'https://link.springer.com/10.1007/s00421-019-04145-2', checked: '2026-11-23'}
+  - {label: 'Giovanelli and others, Do poles really "save the legs" during uphill pole walking at different intensities? (European Journal of Applied Physiology, 2023)', url: 'https://link.springer.com/article/10.1007/s00421-023-05254-9', checked: '2026-11-23'}
+  - {label: 'Howatson and others, Trekking poles reduce exercise-induced muscle injury during mountain walking (Medicine and Science in Sports and Exercise, 2011; University of Westminster repository)', url: 'https://westminsterresearch.westminster.ac.uk/item/w6zyq/trekking-poles-reduce-exercise-induced-muscle-injury-during-mountain-walking', checked: '2026-11-23'}
+  - {label: 'Western States Endurance Run, Performance rules', url: 'https://www.wser.org/performance-rules/', checked: '2026-11-23'}
+  - {label: 'Western States Endurance Run, Pacer rules', url: 'https://www.wser.org/pacer-rules/', checked: '2026-11-23'}
+  - {label: 'HOKA UTMB Mont-Blanc, 2027 regulations', url: 'https://montblanc.utmb.world/races-runners/other-information/regulation', checked: '2026-11-23'}
+  - {label: 'Ultra-Trail Australia by UTMB, Race regulations', url: 'https://uta.utmb.world/runners/regulations', checked: '2026-11-23'}
+  - {label: 'Everest Trail Race, Rules', url: 'https://www.everesttrailrace.com/en/runners/rules', checked: '2026-11-23'}
+  - {label: 'UIAA Medical Commission, The use of hiking sticks in the mountains (Recommendation No. 11, 2021)', url: 'https://www.theuiaa.org/documents/mountainmedicine/English_UIAA_MedCom_RecNo11_Hikingsticks2021_V1-1.pdf', checked: '2026-11-23'}
+  - {label: 'British Mountaineering Council, How to use trekking poles when hill walking', url: 'https://thebmc.co.uk/en/hill-walking-trekking-poles', checked: '2026-11-23'}

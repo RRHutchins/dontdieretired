@@ -1,0 +1,41 @@
+{% extends "base.html" %}{% from "_macros.html" import share_button %}{% from "_hub.html" import entry_item, signup %}
+{# Entry calendar (RUNBOOK §6u priority step 4): every dated entry step still to come, month by month, from the races'
+   `entry_dates` (each from the organizer's page on its checked date). No Event markup: these are entry steps, not races. #}
+{% block title %}{{ EC.seo_title }}{% endblock %}
+{% block description %}{{ (EC.description or EC.title) | metadesc }}{% endblock %}
+{% block pagetype %}hub{% endblock %}
+{% block head %}<script type="application/ld+json">{{ {"@context":"https://schema.org","@graph":[
+ {"@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":h.label,"item":cfg.site.url ~ "/" ~ h.slug ~ "/"},
+  {"@type":"ListItem","position":2,"name":EC.title,"item":cfg.site.url ~ EC.url}]},
+ {"@type":"ItemList","name":EC.title,"itemListElement":EC.item_list}]} | tojson }}</script>{% endblock %}
+{% block content %}
+<header class="page-head hub-head" data-cat="{{ h.category }}">
+  <p class="kicker"><a href="/{{ h.slug }}/">{{ h.label }}</a> · How you get a place</p>
+  <h1>{{ EC.title }}</h1>
+  {% if EC.lead %}<p class="lead">{{ EC.lead }}</p>{% endif %}
+  {{ share_button(cfg.site.url ~ EC.url, EC.title, 'hub') }}
+</header>
+{% if EC.intro %}<div class="prose narrow hub-intro">{% for p in EC.intro %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+
+<section class="hub-dates hub-dates-page" aria-label="Entry dates by month">
+  {% for m, items in h.entry_months %}
+  <h2 class="h3">{{ m }}</h2>
+  <ul class="hub-ed-list">{% for d, e in items %}{{ entry_item(d, e) }}{% endfor %}</ul>
+  {% endfor %}
+  {{ signup(h, cfg) }}
+</section>
+
+{% if h.landing_groups %}
+<nav class="hub-browse" aria-labelledby="hub-b-h">
+  <h2 id="hub-b-h" class="h4">Browse {{ h.words or "races" }} by</h2>
+  {% for grp, items in h.landing_groups %}<p><strong>{{ grp }}:</strong> {% for x in items %}<a href="{{ x.url }}">{{ x.short }}</a>{{ " · " if not loop.last }}{% endfor %}</p>{% endfor %}
+</nav>
+{% endif %}
+
+<p class="hub-back"><a class="btn btn-ghost" href="/{{ h.slug }}/#hub-f-h">{{ h.back_text or ("Search all in the " ~ (h.label | lower) ~ " finder") }}</a></p>
+<div class="prose narrow fl-about">
+  <p>Each date is copied from the organizer's own page, linked beside it with the day we opened it. Organizers move dates and add conditions, and some open at a set hour in their own time zone, so check the official page before you plan around a date. A race missing from this page may simply not have posted its next dates yet. Being listed does not mean any {{ h.word or "race" }} or organizer endorses this site.</p>
+</div>
+{% endblock %}
+{% block scripts %}<script src="/static/hub.js?v={{ asset_v }}" defer></script>{% endblock %}

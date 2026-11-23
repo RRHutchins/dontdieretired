@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import share_button %}
+{% extends "base.html" %}{% from "_macros.html" import share_button %}{% from "_hub.html" import entry_item, signup %}
 {# Deep hub (RUNBOOK §6u): an event finder, guides and the activities that lead in. Works without JavaScript: every event is in the page. #}
 {% block title %}{{ h.seo_title or h.h1 }}{% endblock %}
 {% block description %}{{ h.description | metadesc }}{% endblock %}
@@ -33,6 +33,16 @@
   <h2 id="hub-b-h">Browse {{ h.words or "races" }} by</h2>
   {% for grp, items in h.landing_groups %}<p><strong>{{ grp }}:</strong> {% for x in items %}<a href="{{ x.url }}">{{ x.short }}</a>{{ " · " if not loop.last }}{% endfor %}</p>{% endfor %}
 </nav>
+{% endif %}
+
+{% if h.entry_soon %}
+<section class="hub-dates" aria-labelledby="hub-d-h">
+  <h2 id="hub-d-h">Ballots and entries opening soon</h2>
+  <p>Dates from the organizers' own pages, as they showed on the day we opened them. Times and rules are on each page.</p>
+  <ul class="hub-ed-list">{% for d, e in h.entry_soon %}{{ entry_item(d, e) }}{% endfor %}</ul>
+  {% if h.entry_cal_page %}<p><a href="{{ h.entry_cal_page.url }}">{{ h.entry_cal_page.title }}: every date we have checked, month by month →</a></p>{% endif %}
+  {{ signup(h, cfg) }}
+</section>
 {% endif %}
 
 <section class="hub-finder" aria-labelledby="hub-f-h" data-hub-finder>
