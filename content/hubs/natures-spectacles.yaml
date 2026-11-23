@@ -735,6 +735,161 @@ events:
   note: Visit Holland calls the Kop van Noord-Holland the largest continuous flower bulb area in the world, and Keukenhof, with more than 7 million bulbs in bloom, the largest flower exhibition in the world.
   activity: see-the-tulips-at-keukenhof
   link: {label: 'Netherlands Board of Tourism (Holland.com): tulip season in the Netherlands', url: 'https://www.holland.com/global/tourism/get-inspired/dutch-icons/tulip-season-in-the-netherlands', checked: '2026-11-22'}
+# ---------- Added 23 Nov 2026 (build-out run 4) ----------
+- id: etosha-waterholes
+  name: Wildlife at Etosha's waterholes
+  type: living
+  place: Etosha National Park, northern Namibia, along the southern edge of the Etosha pan, with floodlit waterholes at the Okaukuejo, Halali and Namutoni camps
+  country: Namibia
+  continent: africa
+  month: [5, 6, 7, 8, 9, 10]
+  when: Game viewing is best from May to October, in the cooler months
+  see: [vehicle, guided]
+  see_note: The Namibia Tourism Board says the best viewing spots are along the southern edge of the pan. Okaukuejo and Halali offer guided morning, afternoon and night game drives, and at the Okaukuejo waterhole at night it is possible to see black rhino, lion and elephant. For self-drive safaris in general, the board suggests stopping every now and then.
+  note: The park covers 22,935 km² and is dominated by a vast saltpan. In the cooler months animals are more likely to be seen in daylight as they come to the waterholes to drink. Elephant, black and white rhino, black-faced impala, lion, giraffe, leopard and eland live here, and 407 bird species have been recorded. The western part of the park is open only to Namibian-registered tour operators.
+  link: {label: 'Namibia Tourism Board: Northern Region', url: 'https://visitnamibia.com.na/2022/03/northern-region/', checked: '2026-11-23'}
+  more:
+  - {label: 'Namibia Tourism Board: Etosha National Park', url: 'https://visitnamibia.com.na/2022/02/etosha-national-park/', checked: '2026-11-23'}
+  - {label: 'Namibia Tourism Board: why Namibia is a great safari country', url: 'https://visitnamibia.com.na/2017/07/why-namibia-is-a-great-safari-country/', checked: '2026-11-23'}
+- id: kruger-winter-game-viewing
+  name: Winter game viewing in Kruger
+  type: living
+  place: Kruger National Park, Limpopo and Mpumalanga provinces
+  country: South Africa
+  continent: africa
+  month: [4, 5, 6, 7, 8, 9]
+  when: The dry winter months, April to September; summers from October to March are hot and rainy
+  see: [vehicle, guided]
+  see_note: SANParks says game drives are a staple, with both day and night drives on offer.
+  note: SANParks says that traditionally the best game viewing is in winter, when the bush thins after the drop in rainfall and the dry weather draws animals to the waterholes. Winter days are warm and dry and the nights cold. All of the Big Five (lion, leopard, rhino, elephant and Cape buffalo) live in the park.
+  link: {label: 'SANParks: our top 3 South African national parks for winter game viewing', url: 'https://www.sanparks.org/travel/guide/our-top-3-south-african-national-parks-for-winter-game-viewing', checked: '2026-11-23'}
+  more:
+  - {label: 'SANParks: Kruger National Park climate', url: 'https://www.sanparks.org/parks/kruger/explore/climate', checked: '2026-11-23'}
+- id: komodo-dragons
+  name: Komodo dragons
+  type: living
+  place: Komodo National Park, East Nusa Tenggara, on Komodo and Rinca islands, reached by boat from Labuan Bajo on Flores
+  country: Indonesia
+  continent: asia
+  month: [4, 5, 6, 9, 10, 11, 12]
+  when: The ministry suggests April to June or September to December, with September to November best for dragons. July and August is the dragons' mating season, when they are harder to spot, and the January to March rains often disrupt boat trips.
+  see: [booked, guided, boat]
+  see_note: Entry to the park requires a permit from the park office in Labuan Bajo, and a local guide is mandatory on dragon treks. The ministry says Rinca, about two hours by ferry from Labuan Bajo, has the largest population of dragons, while on Komodo itself they can be hard to spot. Go in the early morning, when it is cooler and wildlife is most active; afternoon seas can be rough.
+  note: Indonesia's tourism ministry says most of the remaining 3,000 endangered Komodo dragons live in the park area. They can reach 3 meters and 150 kilograms, and can be dangerous if provoked, so keep a safe distance. The park is a UNESCO World Heritage Site.
+  link: {label: 'Indonesia Travel (Ministry of Tourism): first-timer''s guide to Komodo National Park', url: 'https://www.indonesia.travel/gb/en/travel-ideas/marine/unveil-the-lands-of-dragons-firsttimers-guide-to-komodo-national-park', checked: '2026-11-23'}
+- id: ha-long-bay
+  name: The karst islands of Ha Long Bay
+  type: earth
+  place: Ha Long Bay, about two and a half hours by road from Hanoi
+  country: Vietnam
+  continent: asia
+  month: [9, 10, 11]
+  when: September to November is the best time; autumn and spring bring clear, calm days for cruising, while summer is hot with a chance of storms
+  see: [boat]
+  see_note: Cruises pass thousands of rugged islands and islets and stop at caves visitors can walk through. Vietnam's tourism body suggests paddling a kayak just before sunset to see quiet lagoons and fishing boats.
+  note: The bay's ancient karsts were shaped by rain and water currents, and fishing communities live on the water. It is a UNESCO-listed site. Winters are cool and drier, with a light mist over the bay.
+  link: {label: 'Vietnam National Authority of Tourism (Vietnam.travel): Ha Long', url: 'https://vietnam.travel/places-to-go/northern-vietnam/ha-long', checked: '2026-11-23'}
+- id: great-barrier-reef-coral-spawning
+  name: Coral spawning on the Great Barrier Reef
+  type: living
+  place: Great Barrier Reef Marine Park, off the Queensland coast
+  country: Australia
+  continent: oceania
+  month: [10, 11, 12]
+  when: One to six nights after the October, November and December full moons, at night; the exact date varies with reef location and cannot be predicted
+  see: [boat, guided]
+  see_note: The Great Barrier Reef Marine Park Authority suggests booking a dedicated coral spawning trip with one of its High Standard Tourism Operators, which run trips around the predicted dates. If you see a spawning, you can report it in the Eye on the Reef app.
+  note: Triggered by water temperature and the lunar cycle, coral polyps release millions of bundles of eggs and sperm into the water. The young corals float for several days or weeks before settling on the reef.
+  link: {label: 'Great Barrier Reef Marine Park Authority: coral spawning 101', url: 'https://www.gbrmpa.gov.au/learn/coral-spawning-101', checked: '2026-11-23'}
+  more:
+  - {label: 'Great Barrier Reef Marine Park Authority: your top questions on coral spawning answered', url: 'https://www2.gbrmpa.gov.au/news/your-top-questions-coral-spawning-answered', checked: '2026-11-23'}
+- id: aoraki-mackenzie-dark-sky
+  name: Stargazing in the Aoraki Mackenzie Dark Sky Reserve
+  type: sky
+  place: Takapō (Lake Tekapo) and Mt John Observatory, Mackenzie Basin, Canterbury, South Island
+  country: New Zealand
+  continent: oceania
+  when: All clear nights; Tourism New Zealand says winter is the best time, because the colder air holds less water vapour
+  see: [own, guided]
+  see_note: The Dark Sky Project runs tours from Takapō, including visits to Mt John Observatory, which Tourism New Zealand calls New Zealand's only professional research observatory, and an introduction to Māori astronomy. Tekapo Springs offers a guided hot pools and stargazing evening.
+  note: Tourism New Zealand calls the reserve New Zealand's largest dark sky reserve, covering 4,300 square kilometres with minimal light pollution. The Dark Sky Project offers views of the Milky Way through a restored 125-year-old Brashear telescope.
+  link: {label: 'Tourism New Zealand: top 10 stargazing experiences', url: 'https://www.newzealand.com/us/feature/top-10-stargazing-experiences/', checked: '2026-11-23'}
+  more:
+  - {label: 'Tourism New Zealand: Lake Tekapo/Takapō', url: 'https://www.newzealand.com/int/lake-tekapo/', checked: '2026-11-23'}
+- id: yellowstone-lamar-valley-wildlife
+  name: Bison and wolves in Yellowstone's Lamar Valley
+  type: living
+  place: Lamar Valley, in the northeast of Yellowstone National Park, and Hayden Valley
+  country: USA
+  continent: north-america
+  when: Large numbers of bison spend the summer in Lamar Valley; grizzlies are seen particularly in spring, when elk are calving. Park access is limited in winter.
+  see: [own, vehicle]
+  see_note: The National Park Service says road pullouts are excellent places to watch wildlife; use binoculars or a telephoto lens rather than approaching. Stay at least 100 yards (91 m) from bears and wolves and 25 yards (23 m) from all other animals.
+  note: Lamar Valley is one of the major summer grounds for bison and elk, which draw predators such as wolves and grizzly bears. The NPS calls Yellowstone's northern range one of the best places in the world to watch wolves. Black bears, bighorn sheep, mule deer and pronghorn are also seen in Lamar Valley.
+  link: {label: 'NPS Yellowstone: Tower-Roosevelt and the Northeast', url: 'https://www.nps.gov/yell/planyourvisit/towerrplan.htm', checked: '2026-11-23'}
+  more:
+  - {label: 'NPS Yellowstone: photography and wildlife watching', url: 'https://www.nps.gov/yell/planyourvisit/photography.htm', checked: '2026-11-23'}
+  - {label: 'NPS: Lamar Valley, predators and prey', url: 'https://www.nps.gov/places/000/lamar-valley-predators-and-prey.htm', checked: '2026-11-23'}
+- id: yosemite-horsetail-fall
+  name: Horsetail Fall's winter glow in Yosemite
+  type: earth
+  place: Horsetail Fall on El Capitan, Yosemite Valley, viewed from near the El Capitan Picnic Area
+  country: USA
+  continent: north-america
+  month: [2]
+  when: Mid to late February, at sunset, and only on rare occasions
+  see: [own]
+  see_note: Park at Yosemite Falls parking (or Yosemite Village or Curry Village and take the free shuttle) and walk 1.5 miles each way to the viewing area; stopping and parking are banned on stretches of Northside and Southside Drive during the event. The NPS said no reservation was needed to visit Yosemite or the Horsetail Fall area in February 2026; check the page for 2027.
+  note: The fall usually flows only in winter. On rare evenings it glows orange in the setting sun, but only with a clear sky and water flowing; even light haze or a little cloud greatly reduces the effect.
+  link: {label: 'NPS Yosemite: Horsetail Fall', url: 'https://www.nps.gov/yose/planyourvisit/horsetailfall.htm', checked: '2026-11-23'}
+- id: bay-of-fundy-tides
+  name: The Bay of Fundy tides at Hopewell Rocks
+  type: earth
+  place: Hopewell Rocks Provincial Park, on the New Brunswick side of the Bay of Fundy
+  country: Canada
+  continent: north-america
+  when: Twice a day, every day; check the tide schedules before you go
+  see: [own, boat]
+  see_note: At low tide you can walk on the ocean floor around the tree-topped sandstone sea stacks; at high tide you can paddle a kayak round their tops. Tourism New Brunswick suggests giving yourself enough time for the full experience. Moncton's Tidal Bore Park and the Reversing Rapids in Saint John show the tides too.
+  note: Tourism New Brunswick says the tides can rise 16 metres (52.5 ft), with 160 billion tonnes of seawater flowing in and out of the bay twice a day. It calls them "the world's highest tides".
+  link: {label: 'Tourism New Brunswick: the Bay of Fundy', url: 'https://tourismnewbrunswick.ca/bay-fundy', checked: '2026-11-23'}
+  more:
+  - {label: 'Tourism New Brunswick: Hopewell Rocks', url: 'https://tourismnewbrunswick.ca/hopewell-rocks', checked: '2026-11-23'}
+- id: camargue-flamingos
+  name: Flamingos in the Camargue
+  type: living
+  place: The Camargue, Bouches-du-Rhône, Provence, notably the Parc ornithologique du Pont de Gau just outside Saintes-Maries-de-la-Mer
+  country: France
+  continent: europe
+  month: [12, 1, 2, 6, 7, 8]
+  when: Courtship displays from December to the end of February; the biggest numbers in summer
+  see: [own]
+  see_note: Provence Tourisme calls the Pont de Gau ornithological park the best spot for flamingo lovers; it is open all year (in January from Wednesday to Sunday, 10am to 5pm) and several of its trails carry the Tourisme & Handicap label. The Marais du Vigueirat is another of the Camargue's observation sites.
+  note: In summer close to 100,000 flamingos gather in the marshes to feed on tiny shrimp, and more than 150,000 birds, mostly ducks and other waterbirds, pass through the Camargue each year. From December to February you can watch the birds' courtship parade.
+  link: {label: 'MyProvence (Provence Tourisme): where to watch birds in the Camargue', url: 'https://www.myprovence.fr/ca-s-agite-dans-le-local/au-grand-air/reportage/la-camargue/ou-observer-les-oiseaux-en-camargue', checked: '2026-11-23'}
+- id: giants-causeway
+  name: The Giant's Causeway
+  type: earth
+  place: Causeway Road, Bushmills, County Antrim
+  country: UK
+  continent: europe
+  when: All year; the National Trust lists the coastline as open dawn to dusk
+  see: [own, guided]
+  see_note: Four trails cross the 5 km World Heritage site, from the Blue Trail (under a mile, straight to the stones) to clifftop routes of up to 2 miles, including the accessible Green Trail. Visitor Experience tickets cover the Visitor Centre exhibition, guided tours and audio guides; the National Trust strongly recommends pre-booking them.
+  note: The National Trust says there are over 40,000 basalt columns, formed some 60 million years ago, and that this was Northern Ireland's first UNESCO World Heritage Site. The Trust's Blue Trail takes in rock formations steeped in Irish legend.
+  link: {label: 'National Trust: Giant''s Causeway', url: 'https://www.nationaltrust.org.uk/visit/northern-ireland/giants-causeway', checked: '2026-11-23'}
+- id: galapagos-wildlife
+  name: Wildlife of the Galápagos
+  type: living
+  place: The Galápagos Islands, 1,000 km off the coast of Ecuador, including San Cristóbal, Santa Cruz and Isabela
+  country: Ecuador
+  continent: south-america
+  see: [guided, boat]
+  see_note: Galápagos National Park asks visitors to use authorised tourist services, keep two metres from wildlife (cameras included), stay on marked trails, never touch or feed the animals and take no stones or sand.
+  note: Ecuador's tourism body says San Cristóbal has sea lions, tropical birds and giant tortoises, Santa Cruz has giant tortoise ranches and marine iguanas (the world's only marine lizards), and Isabela has the only penguin species that lives in the tropics. The volcanic islands are a World Heritage Site.
+  link: {label: 'Ecuador Travel (Ministry of Tourism): Galápagos', url: 'https://ecuador.travel/en/galapagos/', checked: '2026-11-23'}
+  more:
+  - {label: 'Galápagos National Park Directorate: "Yo sí cumplo" campaign on the visitor rules (Spanish)', url: 'https://galapagos.gob.ec/campana-yo-si-cumplo-promueve-el-respeto-de-las-reglas-de-visita-en-galapagos/', checked: '2026-11-23'}
 guides:
 - slug: 2027-total-solar-eclipse
   title: How to see the 2027 total solar eclipse safely, and where
@@ -758,6 +913,40 @@ guides:
       - [Melilla, '10:48', 4 minutes 34 seconds]
       - [Cádiz, '10:45', 2 minutes 54 seconds]
       - [Málaga, '10:48', 1 minute 48 seconds]
+  - h: Totality times in Cádiz, Málaga and Granada
+    p:
+    - "The IGN's eclipse site lists times for each town in the path. Here are some of them, in local time on 2 August 2027. The last column is our own count from the IGN's start and end times; the IGN does not print a length. The partial phases begin at about 9.40am and end at about noon."
+    table:
+      head: [Town, Totality begins, Totality ends, How long (our count)]
+      rows:
+      - ['Tarifa (Cádiz)', '10:45:00', '10:49:38', 4 min 38 s]
+      - ['Algeciras (Cádiz)', '10:45:19', '10:49:45', 4 min 26 s]
+      - ['La Línea de la Concepción (Cádiz)', '10:45:28', '10:49:51', 4 min 23 s]
+      - ['Barbate (Cádiz)', '10:44:53', '10:49:08', 4 min 15 s]
+      - ['Vejer de la Frontera (Cádiz)', '10:44:56', '10:49:01', 4 min 5 s]
+      - ['Conil de la Frontera (Cádiz)', '10:44:51', '10:48:51', 4 min]
+      - ['Jerez de la Frontera (Cádiz)', '10:46:17', '10:47:38', 1 min 21 s]
+      - ['Estepona (Málaga)', '10:46:11', '10:49:47', 3 min 36 s]
+      - ['Marbella (Málaga)', '10:46:41', '10:49:57', 3 min 16 s]
+      - ['Fuengirola (Málaga)', '10:47:03', '10:50:13', 3 min 10 s]
+      - ['Torremolinos (Málaga)', '10:47:29', '10:50:09', 2 min 40 s]
+      - ['Ronda (Málaga)', '10:47:24', '10:48:42', 1 min 18 s]
+      - ['Nerja (Málaga)', '10:48:46', '10:50:25', 1 min 39 s]
+      - ['Motril (Granada)', '10:49:11', '10:50:52', 1 min 41 s]
+    after: "Granada city, Huelva and Madrid are outside the path: the IGN gives them only a partial eclipse (in Madrid the Sun is 85% covered, at 10:51)."
+  - h: Weather, heat and getting there
+    p:
+    - The IGN's weather page says the path of totality in Spain has a low chance of cloud in August, slightly higher in western Cádiz. Its map is an average for August from 2001 to 2017, not a forecast; it suggests checking the forecasts from AEMET, Spain's state weather agency, in the days before.
+    - "Spain's Ministry of Health has assessed the risks of the eclipses of 2026 to 2028. It notes that two of the three fall in August, when high temperatures matter, and that time in the sun can bring heatstroke, dehydration and sunburn. It also warns of traffic accidents and congestion."
+    - "The IGN's practical advice: do not travel on the day of the eclipse, especially afterwards; set off in good time to avoid jams; avoid improvised trips, especially in busy tourist areas; and choose a viewing spot near a main road. Andalusia's official tourism body advises booking accommodation and transport early."
+    - "The NHS says to stay in the shade between 11am and 3pm in hot weather and to drink plenty of cold drinks; the eclipse's partial phase runs to about noon, so bring shade and water for the whole morning. The CDC says heatstroke is a medical emergency: get medical help immediately."
+  - h: What you will see in totality
+    p:
+    - "NASA describes the sequence. Just before totality, Baily's beads appear: sunlight streaming through valleys on the Moon's edge. Then the diamond ring, a last bright point of Sun. In totality the sky darkens as if at dawn or dusk, the Sun's outer atmosphere, the corona, shows as streams of white light, and you may see bright planets or stars. NASA says the air temperature drops, by about 5°C (10°F) depending on humidity and cloud, and you may see a sunset glow all round the horizon."
+    - NASA's reminder at the end of totality is to put your eclipse glasses back on before the bright Sun returns.
+  - h: Seeing it from the US
+    p:
+    - NASA says the 2027 eclipse is partial in the United States, and only in northern Maine (it is also partial in eastern Canada). NASA lists totality in southern Spain, North Africa, Saudi Arabia and Yemen, and the Government of Gibraltar says Gibraltar is in the path too. NASA's eclipse FAQ says the next total solar eclipse in the contiguous US will be in 2044.
   - h: Seeing it from the UK
     p:
     - The UK sees only a partial eclipse. The Royal Observatory Greenwich says it will begin at 9.03am BST in London. The same eye rules apply all the way through, because no part of the UK sees totality.
@@ -773,6 +962,10 @@ guides:
     a: Only during totality, when the Moon completely covers the Sun's bright face, and only if you are inside the path of totality. Put your eclipse glasses back on as soon as any bright Sun reappears. Outside the path, you need protection the whole time.
   - q: How long does totality last?
     a: It depends on where you stand. The IGN gives 4 minutes 48 seconds in Ceuta and 2 minutes 54 seconds in Cádiz; NASA gives 6 minutes 23 seconds at the point of greatest eclipse.
+  - q: Which of the towns listed here gets the longest totality?
+    a: Of the towns in the IGN's tables that we list, Tarifa has the longest, about 4 minutes 38 seconds by our count from the IGN's times (10:45:00 to 10:49:38 local time). Ceuta, across the strait, has 4 minutes 48 seconds.
+  - q: Will the US see the 2027 eclipse?
+    a: Only as a partial eclipse, and only in northern Maine, according to NASA. The next total solar eclipse in the contiguous US is in 2044.
   - q: Will the UK see a total eclipse?
     a: No. The UK sees a partial eclipse, starting at 9.03am BST in London according to the Royal Observatory Greenwich, so eclipse glasses are needed throughout.
   kit:
@@ -790,6 +983,15 @@ guides:
   - {label: 'HM Government of Gibraltar: planning begins for solar eclipses', url: 'https://www.gibraltar.gov.gi/press-releases/planning-begins-for-solar-eclipses-212026-11608', checked: '2026-11-19'}
   - {label: 'Royal Observatory Greenwich: solar eclipses explained', url: 'https://www.rmg.co.uk/stories/space-astronomy/solar-eclipses-explained', checked: '2026-11-19'}
   - {label: 'Royal Astronomical Society: viewing a partial solar eclipse safely', url: 'https://www.ras.ac.uk/education-and-careers/partial-solar-eclipse-25-october-2022-viewing-it-safely', checked: '2026-11-19'}
+  - {label: 'IGN eclipses: the total eclipse of 2 August 2027 (town tables, Spanish)', url: 'https://eclipses.ign.es/eclipse-total-sol-de-2-de-agosto-2027.html', checked: '2026-11-23'}
+  - {label: 'IGN eclipses: practical recommendations (Spanish)', url: 'https://eclipses.ign.es/recomendaciones-practicas.html', checked: '2026-11-23'}
+  - {label: 'IGN eclipses: weather information (Spanish)', url: 'https://eclipses.ign.es/informacion-meteorologica.html', checked: '2026-11-23'}
+  - {label: 'Turismo de Andalucía: trío de eclipses (Spanish)', url: 'https://www.andalucia.org/actividades-y-atracciones/astroturismo-turismo-de-estrella/trio-de-eclipses/', checked: '2026-11-23'}
+  - {label: 'Spain Ministry of Health: rapid risk assessment of the 2026 to 2028 eclipses (PDF, Spanish)', url: 'https://www.sanidad.gob.es/areas/alertasEmergenciasSanitarias/situacionRiesgo/docs/20260518_ERR_Eclipse.pdf', checked: '2026-11-23'}
+  - {label: 'NHS: heatwave, how to cope in hot weather', url: 'https://www.nhs.uk/live-well/seasonal-health/heatwave-how-to-cope-in-hot-weather/', checked: '2026-11-23'}
+  - {label: 'CDC Travelers'' Health: heat illnesses', url: 'https://wwwnc.cdc.gov/travel/page/heat-illnesses', checked: '2026-11-23'}
+  - {label: 'NASA Science: total eclipse, what to expect', url: 'https://science.nasa.gov/eclipses/future-eclipses/eclipse-2024/what-to-expect/', checked: '2026-11-23'}
+  - {label: 'NASA Science: total solar eclipse FAQ', url: 'https://science.nasa.gov/eclipses/future-eclipses/eclipse-2024/faq/', checked: '2026-11-23'}
 - slug: northern-lights-when-and-where
   title: 'The northern lights: when and where to see them'
   short: Northern lights
