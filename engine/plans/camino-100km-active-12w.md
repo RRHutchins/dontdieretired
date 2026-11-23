@@ -163,9 +163,9 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 ## Safety
 
 - If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [25]
-- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [51]
+- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [51, 52, 53]
 - On hot days drink more cold drinks while you are active, wear light, loose clothing and keep out of the sun between 11am and 3pm where you can. Call 999 (911 in the US) if someone is still unwell after 30 minutes resting somewhere cool, being cooled and drinking, or has a very high temperature, hot skin that is not sweating, a fast heartbeat or breathing, confusion, a fit or loses consciousness. [49]
-- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [52]
+- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [54]
 - Stop if something does not feel right, and get it checked rather than training through it. [5, 29]
 
 ## Where this comes from
@@ -223,4 +223,6 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 49. NHS, *Heat exhaustion and heatstroke (last reviewed 28 May 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/ (opened 2026-11-18)
 50. Stichting DE 4DAAGSE (Four Days Marches Nijmegen), *Medical (heat advice and common injuries)* (2026). Tier 3. https://www.4daagse.nl/en/practical/medical (opened 2026-11-19)
 51. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
-52. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
+52. American Family Physician 103(4) (Jonas and Arnold), summarizing the Wilderness Medical Society guideline (Wilderness Environ Med 2020;31(1):50-62), *Exercise-Associated Hyponatremia: Updated Guidelines from the Wilderness Medical Society* (2021). Tier 4. https://www.aafp.org/pubs/afp/issues/2021/0215/p252.html (opened 2026-11-23)
+53. Great Run (organiser of the Great North Run), *Hydration tips for runners* (2025). Tier 3. https://www.greatrun.org/training/respect-the-challenge/hydration (opened 2026-11-23)
+54. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)

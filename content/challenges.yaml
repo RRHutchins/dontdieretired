@@ -12750,30 +12750,172 @@
   regions:
   - uk
   - us
-  why: Croquet on a club lawn is a tactical game, a long way from knocking balls about on a bumpy garden. The basics can be picked up in minutes, yet there are several distinct forms of the game, from golf
-    croquet to association croquet and the American six-wicket sport.
+  why: Croquet on a club lawn is a tactical game, a long way from knocking balls about on a bumpy garden; the 2022 golf croquet world champion described it as the touch of golf, the strategy of chess and
+    the angles of pool. Clubs on both sides of the Atlantic run free tasters with mallets provided.
   start:
-  - Look up a club on Croquet England's Where to Play page or in the United States Croquet Association club directory.
-  - Ask the club about a taster or beginners' session, where mallets and balls are provided.
-  - Wear flat-soled shoes, which clubs ask for to protect the lawns.
+  - Find a club through Croquet England's club guide or the United States Croquet Association's club directory.
+  - Book a free taster or introductory session; clubs such as Bath, Purley Bury and Sarasota provide the equipment.
+  - Wear flat-soled shoes, which clubs ask for, and ask about a beginners' course if you enjoy it.
   links:
-  - label: Croquet England (national governing body for croquet in England)
-    url: https://www.croquetengland.org.uk/
+  - label: 'Croquet England: How to play, rules, coaching and handicapping'
+    url: https://www.croquet.org.uk/?p=games
     region: uk
-    checked: '2026-10-07'
+    checked: '2026-11-23'
+  - label: 'Croquet England: clubs and where to play'
+    url: https://www.croquet.org.uk/?p=games/clubs
+    region: uk
+    checked: '2026-11-23'
   - label: United States Croquet Association
-    url: https://www.croquetamerica.com/
+    url: https://croquetamerica.com/
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-23'
+  - label: United States Croquet Association, club directory and croquet introduction
+    url: https://uscroquet.clubexpress.com
+    region: us
+    checked: '2026-11-23'
+  - label: 'World Croquet Federation: Croquet information'
+    url: https://worldcroquet.org/croquet-information/
+    region: any
+    checked: '2026-11-23'
+  seo_title: 'How to play croquet: forms, clubs, costs and kit'
+  description: How to play croquet properly, from golf croquet to association and American six-wicket, how to find a club near you, what it costs and what to wear.
+  detail:
+  - h: The forms of croquet, compared
+    p:
+    - A full-size lawn is 35 by 28 yards (32 by 25.6 m), with six cast-iron hoops (called wickets in the US) and a peg set firmly in the ground. The aim is to get your balls through the hoops and peg out
+      before your opponent. What changes between the forms is how much you can do in one turn.
+    table:
+      head:
+      - Form
+      - How a turn works
+      - What the governing bodies say
+      rows:
+      - - Golf croquet
+        - One stroke per turn; once a hoop is scored, everyone moves on to contest the next
+        - The fastest-growing version, with shorter games that are easier for beginners (WCF); simpler rules and more interactive, but needs a similar level of accuracy and tactics (Croquet England)
+      - - Association croquet
+        - You can score many hoops in a single turn by playing "breaks"
+        - The oldest current form, settled into roughly its present shape in the 1860s (WCF)
+      - - Short croquet
+        - Association croquet with handicaps, on a half-size lawn
+        - A handicap version of association croquet (Croquet England)
+      - - American six-wicket (American Rules)
+        - Played on six-wicket courts
+        - The most widespread version in North America, though association and golf croquet are now played there too (WCF)
+      - - Nine-wicket and backyard croquet
+        - Not described in detail by the WCF
+        - The WCF notes Americans also play nine-wicket croquet; Croquet England has its own garden croquet, a simplified association game
+    after: The New York Croquet Club's free public clinics alternate between American Rules and golf croquet, so you can try both.
+  - h: How to start, and how handicaps keep it fair
+    p:
+    - The usual route is a free taster, then a short beginners' course, then membership. Bath Croquet Club offers a free taster to anyone interested, with qualified coaches and all equipment provided, followed
+      by an Introduction to Croquet course. Bowdon Croquet Club in Cheshire runs tasters periodically and lends mallets. Purley Bury in Surrey holds free taster afternoons that go ahead even in the rain,
+      and will arrange a private taster with a coach if you cannot make the date.
+    - Handicaps let players of different standards have a real game. A high number means a weaker player and a low one a stronger player. The weaker side gets extra turns, worked out from the difference
+      between the two handicaps, and chooses when to use them. In association croquet an extra turn is a "bisque"; in golf croquet, where a turn is one stroke, it is an "extra stroke."
+  - h: What it costs, as last listed
+    table:
+      head:
+      - Club
+      - What newcomers get
+      - Cost (as last listed)
+      rows:
+      - - Bath Croquet Club, England
+        - Free taster session with coaches and equipment; Introduction to Croquet course
+        - Full single membership £225 for the April to October season (2023 fees); reduced first-year fees for new members, listed as £30 per month based on when you join; separate winter membership
+      - - Purley Bury Croquet Club, Surrey, England
+        - Free taster afternoon (the last listed was Saturday 13 June 2026, 1pm to 5pm); private taster with a coach on request
+        - Taster free; mallet provided
+      - - Sarasota County Croquet Club, Venice, Florida
+        - Free Sunday Funday introductory lessons, 3pm to 4:30pm, equipment provided; free Tuesday instruction, which non-members may attend twice
+        - $395 a year per person including USCA membership; $295 for new resident members; season starts October 1
+      - - New York Croquet Club
+        - Two free public clinics on Sundays between the weekend after Memorial Day and Labor Day weekend
+        - Clinics free; membership dues not listed
+    after: Clubs set their own fees and change them, so check the club's page before you go.
+  - h: What to wear
+    p:
+    - Flat-soled shoes are the one thing clubs ask for. Bath and Bowdon say flat-soled shoes are all you need, and Purley Bury asks for flat soles and normal clothing. The New York Croquet Club requires
+      flat soles and says croquet whites are encouraged but not required.
+  faq:
+  - q: How do you play croquet?
+    a: Players take turns hitting their balls with a mallet through six hoops in a set order and finally against a central peg. In golf croquet each turn is one stroke; in association croquet you can run
+      several hoops in one turn.
+  - q: What is the difference between golf croquet and association croquet?
+    a: In golf croquet each turn is a single stroke and all players contest the same hoop before moving on. In association croquet you can score many hoops in one turn by building a break.
+  - q: How do I find a croquet club near me?
+    a: In England, use Croquet England's club guide; in the US, the United States Croquet Association keeps a club directory.
+  - q: How much does it cost to join a croquet club?
+    a: As last listed, Bath Croquet Club charged £225 for a full season (2023) and Sarasota County Croquet Club in Florida $395 a year including USCA membership. Taster sessions at many clubs are free.
+  - q: What should I wear to play croquet?
+    a: Flat-soled shoes, to protect the lawn. Everyday clothes are fine at most clubs; the New York Croquet Club encourages, but does not require, croquet whites.
+  - q: How do croquet handicaps work?
+    a: Weaker players get extra turns, calculated from the difference between the two handicaps. They are called bisques in association croquet and extra strokes in golf croquet.
+  sources:
+  - label: 'Croquet England, How to Play: Rules, Coaching, Handicapping, Ranking, Refereeing'
+    url: https://www.croquet.org.uk/?p=games
+    checked: '2026-11-23'
+  - label: Croquet England, Golf Croquet
+    url: https://www.croquet.org.uk/?p=games/golf
+    checked: '2026-11-23'
+  - label: Croquet England, Handicapping
+    url: https://www.croquet.org.uk/?p=games/handicapping
+    checked: '2026-11-23'
+  - label: Croquet England, Clubs
+    url: https://www.croquet.org.uk/?p=games/clubs
+    checked: '2026-11-23'
+  - label: World Croquet Federation, Croquet Information
+    url: https://worldcroquet.org/croquet-information/
+    checked: '2026-11-23'
+  - label: World Croquet Federation, American Versions
+    url: https://worldcroquet.org/croquet-information/american-versions/
+    checked: '2026-11-23'
+  - label: United States Croquet Association
+    url: https://croquetamerica.com/
+    checked: '2026-11-23'
+  - label: United States Croquet Association, member site
+    url: https://uscroquet.clubexpress.com
+    checked: '2026-11-23'
+  - label: Bath Croquet Club, How to Join
+    url: https://www.bathcroquet.com/?p=7
+    checked: '2026-11-23'
+  - label: Bowdon Croquet Club, Taking part
+    url: https://bowdoncroquet.co.uk/elementor-5/taking-part/
+    checked: '2026-11-23'
+  - label: Purley Bury Croquet Club, Taster days
+    url: https://purleyburycroquet.org.uk/visiting-groups/
+    checked: '2026-11-23'
+  - label: Sarasota County Croquet Club
+    url: https://sarasotacroquet.clubexpress.com/
+    checked: '2026-11-23'
+  - label: New York Croquet Club, Clinics
+    url: https://www.newyorkcroquetclub.com/clinics-1
+    checked: '2026-11-23'
+  - label: CBS New York, Long Island resident Matthew Essick crowned world champion of golf croquet
+    url: https://www.cbsnews.com/amp/newyork/news/matthew-essick-world-champion-golf-croquet-quogue-long-island
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Matthew Essick
+    line: Swapped basketball for croquet in college because of bad knees, and went on to win the world golf croquet title in Europe against 63 players from 17 nations.
+    title: Long Island resident Matthew Essick crowned world champion of golf croquet
+    outlet: CBS New York
+    url: https://www.cbsnews.com/amp/newyork/news/matthew-essick-world-champion-golf-croquet-quogue-long-island
+    checked: '2026-11-23'
+  related:
+  - lawn-bowls
+  - play-petanque
+  - play-pickleball
+  - first-golf-lessons
   kit:
   - name: Croquet set
-    why: to practise on your own lawn
+    why: for practicing strokes on your own lawn between club sessions
     url: https://www.amazon.co.uk/s?k=croquet+set
   - name: Croquet rules book
-    why: explains the tactics and the rules
+    why: explains the rules and tactics of the different forms
     url: https://www.amazon.co.uk/s?k=croquet+book
-  - name: Flat-soled white trainers
-    why: lawns need flat soles
+  - name: Flat-soled white sneakers
+    why: clubs ask for flat-soled shoes on the lawn
     url: https://www.amazon.co.uk/s?k=white+flat+sole+trainers
 - id: first-golf-lessons
   title: Take a first set of golf lessons
@@ -16787,27 +16929,217 @@
   company: either
   regions:
   - uk
-  why: When the tide drops, a rocky shore turns into a row of small aquariums holding crabs, starfish, anemones, blennies and shrimp. The lowest spring tides uncover the kelp beds, where the rummaging is at its best and the animals are ones you rarely see otherwise.
+  - us
+  why: When the tide drops, a rocky shore turns into a row of small aquariums holding crabs, starfish, anemones, blennies and shrimp. On spring tides The Wildlife Trusts suggest rummaging, or taking a flashlight
+    into the crevices under big boulders.
   start:
-  - Choose a shore from The Wildlife Trusts' list of rockpooling places around the UK.
-  - Look up the local tide table and plan to arrive as the tide is going out.
-  - Take a bucket, keep one animal in it at a time and put everything back where you found it.
+  - Pick a shore from The Wildlife Trusts' rockpooling list in the UK, or a national park tidepool area such as Cabrillo, Acadia or Olympic in the US.
+  - Look up the day's low tide on EasyTide (UK) or NOAA Tide Predictions (US), aim for a spring tide around a full or new moon, and arrive before low water.
+  - Go quietly, keep any animal in seawater for a short time only, put stones back the way you found them, and follow the local rules on touching and containers.
   links:
   - label: The Wildlife Trusts, rockpool wildlife and where to see it
     url: https://www.wildlifetrusts.org/where_to_see_rockpool_wildlife
     region: uk
-    checked: '2026-10-07'
-  safety: Check tide times before you set out and leave before the incoming tide can cut you off, as wet rock and seaweed are slippery.
+    checked: '2026-11-23'
+  - label: 'ADMIRALTY EasyTide (UK Hydrographic Office): free UK tide times'
+    url: https://easytide.admiralty.co.uk/FAQs
+    region: uk
+    checked: '2026-11-23'
+  - label: 'The Wildlife Trusts: Shoresearch, citizen science on the shore'
+    url: https://www.wildlifetrusts.org/blog/wildlife-trusts-team/shoresearch-citizen-science-shore
+    region: uk
+    checked: '2026-11-23'
+  - label: NOAA Tides & Currents, tide predictions user guide
+    url: https://tidesandcurrents.noaa.gov/noaatidepredictionshelp.html
+    region: us
+    checked: '2026-11-23'
+  - label: 'National Park Service: Visit the Cabrillo tidepools'
+    url: https://home.nps.gov/thingstodo/visit-the-cabrillo-tidepools.htm
+    region: us
+    checked: '2026-11-23'
+  - label: LiMPETS, community monitoring of California's rocky shores
+    url: https://limpets.org/what-is-limpets/
+    region: us
+    checked: '2026-11-23'
+  safety: The incoming tide can cut off your way back from behind, so check tide times, start before low water and keep an eye on the turn; wet rock and weed are very slippery and big waves can arrive even
+    at low tide. In an emergency on the UK coast call 999 and ask for the Coastguard; in the US call 911.
+  seo_title: 'Rockpooling for beginners: tides, finds and best shores'
+  description: How to go rockpooling or tide pooling in the UK and US, from reading a tide table and catching spring tides to what you will find and each shore's rules.
+  detail:
+  - h: Reading the tide, and why spring tides matter
+    p:
+    - The Natural History Museum says the pools uncovered at low tide have the widest variety of life, and that spring tides, around the time of a full and new moon, are the strongest and go out the furthest.
+      On a spring tide The Wildlife Trusts suggest rummaging in the kelp beds or taking a flashlight into crevices under large boulders.
+    - 'In the UK, the UK Hydrographic Office''s EasyTide is free and gives tide times for today and six days ahead. Its times are in GMT: you can add an hour for British Summer Time, but it will not switch
+      back for you when BST ends. Heights are measured from Chart Datum, which in the UK is roughly the level of the lowest astronomical tide.'
+    - In the US, NOAA's Tide Predictions cover more than 3,000 locations, up to two years ahead, with a graph and a printable table, in feet or meters. At many stations heights are relative to Mean Lower
+      Low Water (MLLW), and you can choose local time with daylight saving.
+    - Both are predictions only. EasyTide warns that wind and air pressure can significantly alter the real tide, and that a storm surge can push the water higher than forecast.
+  - h: What you are likely to find
+    p:
+    - Approach a pool quietly and try not to cast a shadow over it; Kent Wildlife Trust says you may look like a predator. Then stay still and wait, and animals start to appear.
+    table:
+      head:
+      - Animal
+      - Where to look
+      - How to tell
+      rows:
+      - - Common shore crab
+        - Not stated by the museum
+        - Often greenish but can be orange or red; shell up to about 3.5 in (9 cm) across, with five spikes on each side of the eyes
+      - - Common limpet
+        - Returns to its base at low tide, leaving a "home scar"
+        - Gray, ridged cone-shaped shell up to about 2.4 in (6 cm)
+      - - Beadlet anemone
+        - Not stated by the museum
+        - Out of water it looks like a blob of red jelly; underwater it opens a ring of short tentacles. Usually red, sometimes green or brown, about 2 in (5 cm) across
+      - - Common starfish
+        - Not stated by the museum
+        - Five arms, usually orange but sometimes brown or violet, covered in small white spines; 4 to 12 in (10 to 30 cm) across
+      - - Common blenny (shanny)
+        - Sheltering in pools at low tide
+        - Long body, blunt head, brownish and mottled with darker patches, up to about 6 in (16 cm)
+      - - Common prawn and edible winkle
+        - Even the highest, shallowest pools
+        - Kent Wildlife Trust names the shore crab and common prawn as easy to spot
+      - - Squat lobsters
+        - Deeper pools at the reef edge and in crevices
+        - Listed by The Wildlife Trusts at Gyllyngvase in Cornwall and Porth y Pwll in North Wales
+    after: 'Species descriptions are from the Natural History Museum and The Wildlife Trusts. On the US Pacific coast the cast is different: Cabrillo lists barnacles, limpets, chitons, crabs and mussels
+      high on the shore, anemones and snails in the middle, and octopus, sea stars, nudibranchs and sea hares only at the lowest tides.'
+  - h: Eight shores compared, from their own pages
+    p:
+    - Rules are not the same everywhere. The Natural History Museum and Kent Wildlife Trust say you can turn a stone to look underneath; at Cabrillo turning rocks over is banned, and at Fitzgerald Marine
+      Reserve you may not touch at all.
+    table:
+      head:
+      - Shore
+      - Best time, per the official page
+      - The local rules
+      - Worth knowing
+      rows:
+      - - Kimmeridge Bay, Dorset (Dorset Wildlife Trust)
+        - Best April to October
+        - A Marine Conservation Zone; follow the Seashore Code, and fins are not recommended on the snorkel trail as they disturb wildlife
+        - Fine Foundation Wild Seas Centre with aquaria (closed for winter until 27 March 2027); a £6 road toll that includes parking, as last listed
+      - - Wembury, Devon (Devon Wildlife Trust)
+        - Rockpool Safaris in summer
+        - Devon Wildlife Trust publishes a Seashore Code bookmark
+        - Wembury Marine Centre, open 10am to 4pm every day; call ahead, as it sometimes closes for school visits
+      - - Gyllyngvase Beach, Cornwall
+        - Not stated
+        - Not stated on the Trust's page
+        - Shrimp and winkles in shallow upper pools, crabs and squat lobsters in deeper pools at the reef edge
+      - - Thanet and St Margaret's Bay, Kent
+        - Low tide
+        - Replace stones the way you found them
+        - Chalk reefs, with some algae found only on Kent's shores
+      - - Cabrillo National Monument, San Diego, California
+        - Fall and winter, when the good low tides fall in park hours; a tide of 0.7 feet (0.2 m) or lower, from about two hours before to two hours after low tide
+        - Don't collect anything, including shells and rocks; no turning rocks, no containers or nets; touch only very gently
+        - Tidepools open at 9am and usually close at 4:30pm; no cell service at the pools; check the park's fees page
+      - - Fitzgerald Marine Reserve, Moss Beach, California
+        - Not stated
+        - Part of Montara State Marine Reserve; taking any marine life, shells, rocks or driftwood is prohibited; look only, and no containers even briefly
+        - No admission or parking fee listed by San Mateo County Parks
+      - - Acadia National Park, Maine
+        - From 1.5 hours before to 1.5 hours after low tide
+        - Collecting is prohibited; replace animals where you find them; never use force; do not wade into pools
+        - Bar Island, Wonderland, Ship Harbor and Schoodic Peninsula; summer sea temperatures average 55 to 60°F (13 to 16°C)
+      - - Olympic National Park, Washington
+        - Tides lower than 1 foot (0.3 m); a 3-foot (0.9 m) low isn't good
+        - Keep at least one foot on the ground and do not leap from rock to rock
+        - Kalaloch Beach 4 and Hole in the Wall are the most popular; Hole in the Wall is 1.5 miles (2.4 km) from the Rialto Beach trailhead, about an hour's hike; the park says to arrive at least 30 minutes
+          before the lowest tide
+    after: The Wildlife Trusts list many more British shores, from St Bees in Cumbria and Flamborough in Yorkshire to Cemlyn Bay on Anglesey, Calgary Beach on Mull and Dunseverick Harbour in Northern Ireland.
+      Opening times, tolls and fees change, so check the page before you travel.
+  - h: The seashore code, and turning a hobby into science
+    list:
+    - Turn stones carefully and put them back the way you found them, as gently as you can (Kent Wildlife Trust).
+    - Fill your bucket with seawater first, keep only one animal in it at a time, and not for long, as they get stressed by temperature changes. Return it by sinking the bucket back into the pool.
+    - Never pull animals off the rock. San Mateo County Parks says gulls can injure them afterward.
+    - In US parks, check before you bring a bucket at all. Cabrillo and Fitzgerald ban containers, and Acadia asks you to wash off sunscreen, hand sanitizer and bug spray first.
+    after: If you want to do more than look, The Wildlife Trusts' Shoresearch project trains volunteers to survey the shore, with quadrat counts, walkover surveys and timed searches for climate change indicator
+      species and non-native species; contact your local coastal Wildlife Trust to find an event. In California, the LiMPETS network has community groups as well as students monitoring more than 60 sites
+      in the national marine sanctuaries.
+  faq:
+  - q: When is the best time to go rockpooling?
+    a: At low tide, ideally on a spring tide around a full or new moon, when the sea goes out furthest. Arrive before low water; Acadia suggests from 1.5 hours before to 1.5 hours after low tide.
+  - q: How do I read a tide table for rockpooling?
+    a: Find the low water time and height for the nearest port or station, and check whether times are in GMT or local time; EasyTide uses GMT, NOAA lets you pick local time. Remember that wind and air
+      pressure can change the real tide.
+  - q: Can you take shells or animals home from rock pools?
+    a: Put animals back where you found them. In many US parks and marine reserves, including Cabrillo, Acadia and Fitzgerald Marine Reserve, collecting anything, even shells and rocks, is prohibited.
+  - q: What do you need for rockpooling?
+    a: Sturdy, grippy shoes you do not mind getting wet, an ID guide, and a clear bucket or tub where containers are allowed. Dress for the weather, and bring a flashlight for crevices on spring tides.
+  - q: Where are the best places to go rockpooling in the UK?
+    a: The Wildlife Trusts list shores across the country, including Wembury in Devon, Kimmeridge Bay in Dorset, Flamborough in Yorkshire, Cemlyn Bay on Anglesey and Dunseverick Harbour in Northern Ireland.
+  - q: Where can I go tide pooling in the US?
+    a: National parks with tidepool areas include Cabrillo National Monument in San Diego, Acadia in Maine and Olympic in Washington, each with its own timing advice and rules on its NPS pages.
+  sources:
+  - label: The Wildlife Trusts, Rockpool wildlife
+    url: https://www.wildlifetrusts.org/where_to_see_rockpool_wildlife
+    checked: '2026-11-23'
+  - label: Natural History Museum, How to go rockpooling
+    url: https://nhm.ac.uk/discover/how-to-go-rockpooling.html
+    checked: '2026-11-23'
+  - label: Kent Wildlife Trust, How to go rockpooling with the family
+    url: https://kentwildlifetrust.org.uk/blog/guide-to-rockpooling
+    checked: '2026-11-23'
+  - label: ADMIRALTY EasyTide, FAQs
+    url: https://easytide.admiralty.co.uk/FAQs
+    checked: '2026-11-23'
+  - label: NOAA Tides & Currents, Tide Predictions Users Guide
+    url: https://tidesandcurrents.noaa.gov/noaatidepredictionshelp.html
+    checked: '2026-11-23'
+  - label: HM Coastguard, Coast Clever
+    url: https://hmcoastguard.uk/coast-clever
+    checked: '2026-11-23'
+  - label: National Weather Service Eureka, Beach Safety brochure
+    url: https://www.weather.gov/media/eka/Beach_Safety_Brochure_2022.pdf
+    checked: '2026-11-23'
+  - label: National Park Service, Visit the Cabrillo Tidepools
+    url: https://home.nps.gov/thingstodo/visit-the-cabrillo-tidepools.htm
+    checked: '2026-11-23'
+  - label: 'National Park Service, Slick Rocks, Steady Feet: How to Safely Explore the Tidepools'
+    url: https://home.nps.gov/cabr/blogs/slick-rocks-steady-feet-how-to-safely-explore-the-tidepools.htm
+    checked: '2026-11-23'
+  - label: National Park Service, Tidepooling in Acadia
+    url: https://www.nps.gov/acad/planyourvisit/tidepooling.htm
+    checked: '2026-11-23'
+  - label: National Park Service, Tidepool Activities on the Coast of Olympic National Park
+    url: https://www.nps.gov/olym/planyourvisit/tidepool-activities.htm
+    checked: '2026-11-23'
+  - label: San Mateo County Parks, Fitzgerald Marine Reserve regulations
+    url: https://www.smcgov.org/parks/fitzgerald-marine-reserve-regulations
+    checked: '2026-11-23'
+  - label: Dorset Wildlife Trust, The Fine Foundation Wild Seas Centre
+    url: https://www.dorsetwildlifetrust.org.uk/wild-seas-centre
+    checked: '2026-11-23'
+  - label: Devon Wildlife Trust, Wembury Marine Centre
+    url: https://www.devonwildlifetrust.org/visit-us/our-visitor-centres/wembury-marine-centre
+    checked: '2026-11-23'
+  - label: 'The Wildlife Trusts, Shoresearch: citizen science on the shore'
+    url: https://www.wildlifetrusts.org/blog/wildlife-trusts-team/shoresearch-citizen-science-shore
+    checked: '2026-11-23'
+  - label: LiMPETS, What is LiMPETS?
+    url: https://limpets.org/what-is-limpets/
+    checked: '2026-11-23'
+  related:
+  - join-a-beach-clean
+  - jurassic-coast-fossil-hunt
+  - learn-to-snorkel
+  - try-nature-journaling
   kit:
   - name: Water shoes
-    why: for slippery launch spots and rocky entries
+    why: for grip on wet, weedy rock and protection from sharp barnacles
     url: https://www.amazon.co.uk/s?k=water+shoes+adult
   - name: Clear bucket or viewer
-    why: look at creatures in water, then put them back where you found them
+    why: for a brief look at animals in seawater on shores where containers are allowed
     url: https://www.amazon.co.uk/s?k=rock+pool+bucket+viewer
-  - name: Hand lens (10x)
-    why: for looking closely at fossils, rocks, insects and plants
-    url: https://www.amazon.co.uk/s?k=hand+lens+10x+loupe
+  - name: Seashore identification guide
+    why: for putting names to the crabs, anemones and seaweeds you find
+    url: https://www.amazon.co.uk/s?k=seashore+identification+guide
 - id: join-a-beach-clean
   title: Join a beach clean
   category: explore
@@ -24327,16 +24659,171 @@
   company: others
   regions:
   - uk
-  why: The Royal National Lifeboat Institution is the charity that saves lives at sea, and it depends on volunteers to do it. The roles reach well beyond lifeboat and shore crew, taking in the charity's shops, water safety work in the community and local fundraising groups.
+  why: The Royal National Lifeboat Institution runs its rescue service on volunteers, from the crew who carry a pager day and night to the people who launch the boats, run the seaside shops and teach water
+    safety. The charity says it relies on thousands of volunteers in more than 100 different roles, and many need no experience at all.
   start:
-  - Read the RNLI volunteering page and decide which kind of role suits you.
-  - Open "Where you can help" to see the current vacancies at stations, shops and fundraising groups.
-  - Register your interest with the RNLI Volunteering Team if nothing nearby is listed.
+  - Read the RNLI's "How you can volunteer" page and pick a kind of role, from lifeboat station and shore crew to shops, fundraising and water safety.
+  - Look at the current vacancies on the RNLI's volunteering site; for crew and shore crew, contact your nearest lifeboat station to ask about its own requirements.
+  - If nothing nearby suits you, contact the RNLI Volunteering Team.
   links:
-  - label: RNLI volunteering page (official charity site)
-    url: https://rnli.org/support-us/volunteer
+  - label: 'RNLI: How you can volunteer'
+    url: https://rnli.org/support-us/volunteer/how-you-can-volunteer
     region: uk
-    checked: '2026-10-08'
+    checked: '2026-11-23'
+  - label: 'RNLI: Be a lifeboat station volunteer (crew requirements)'
+    url: https://rnli.org/support-us/volunteer/how-you-can-volunteer/be-a-lifeboat-station-volunteer
+    region: uk
+    checked: '2026-11-23'
+  - label: 'RNLI: Volunteering FAQs'
+    url: https://rnli.org/support-us/volunteer/faqs
+    region: uk
+    checked: '2026-11-23'
+  - label: 'U.S. Coast Guard Auxiliary: membership eligibility'
+    url: https://join.cgaux.org/eligibility
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Volunteer with the RNLI: roles, crew rules and training'
+  description: Every way to volunteer with the RNLI, from lifeboat crew to shops, with the crew rules on age, distance and eyesight, the training and the US equivalent.
+  safety: Crew roles are physically demanding work at sea in all weathers. The RNLI requires a health assessment, including an eyesight test, and crew follow a structured training program and probation.
+  detail:
+  - h: The roles, side by side
+    p:
+    - The RNLI says many of its volunteer roles need no experience or specialist skills, and that you can give "as much or as little as you choose", though some roles state their own time requirements.
+      Training for lifeboat crew or volunteer lifeguards is very different from what a shop role asks.
+    table:
+      head:
+      - Role
+      - What you do
+      - Time commitment
+      - Requirements, as the RNLI states them
+      rows:
+      - - Lifeboat crew
+        - Go to sea on rescues and train regularly in boat handling, radio, casualty care, navigation and radar
+        - On call whenever your pager is on; at least 12 training exercises afloat in any 12 months; probation usually lasts a year
+        - Over 18; under 55 for inshore lifeboat crew or 65 for all-weather lifeboat crew; live and/or work close to the station; pass a health assessment and eyesight test; be physically fit
+      - - Shore crew
+        - Help launch and recover the lifeboats on rescues and exercises, and help keep the station, boats and equipment in order
+        - Carry your pager and stay within range of the station while on duty
+        - Set by each station; the RNLI asks you to contact your local station
+      - - Lifeboat operations manager
+        - Manage all operational activities at the station, including authorizing launches, and its day-to-day running
+        - Not stated; ask the station
+        - Not stated; ask the station
+      - - Water safety volunteer
+        - Give water safety advice to people from school groups to walkers, commercial fishermen and college students
+        - Not stated
+        - Good communication, presenting and people skills
+      - - Shop volunteer
+        - Serve customers in one of more than 170 RNLI shops; lead volunteers help with rotas, stock, banking and training
+        - Not stated
+        - None listed; the RNLI welcomes people of all ages and abilities
+      - - Fundraising, events, tours and heritage
+        - Raise funds and support, host tours and visits, or help in the RNLI's heritage and museum work
+        - Varies; there are also "quick ways to volunteer" for people who cannot commit to a role
+        - Many roles need no experience
+      - - Beach lifeguard (paid, not volunteer)
+        - Patrol beaches on a paid seasonal contract
+        - The summer season
+        - Over 16 and of school-leaving age; a beach lifeguard qualification such as the NVBLQ; timed swim and run tests
+    after: Beach lifeguarding is a paid job, not a volunteer role. Its tests include a 437-yard (400 m) pool swim in under 7½ minutes and a 219-yard (200 m) beach run in under 40 seconds. Qualified lifeguards
+      can also volunteer to support the RNLI's beach teams.
+  - h: The rules for crew that most people never see
+    p:
+    - Distance matters more than experience. The RNLI aims for an average launch time of 10 minutes from the moment the pagers go off, so crew need to live and/or work close to the station, though it says
+      some stations set no distance at all. Shore crew likewise stay within range of the station while their pager is on.
+    - 'The eyesight standard is specific: the RNLI says you are unlikely to meet the standard if you cannot read 6/6 with your better eye and 6/12 with your worse eye, with glasses or lenses if needed,
+      or 6/60 with at least one eye unaided. Color vision is checked with Ishihara plates, and up to two errors are allowed.'
+    - The RNLI says some medical histories may prevent you being certified as crew, including a heart attack or heart surgery, blood pressure that is significantly raised and not well controlled with drugs,
+      insulin-treated diabetes, stroke, epilepsy, Parkinson's or multiple sclerosis. Crew medicals are carried out by a lifeboat medical adviser, another volunteer role, so ask about your own history early
+      rather than guessing.
+  - h: How crew training works, stage by stage
+    list:
+    - 'Join a station and start a crew development plan: the station''s roles, your protective kit, the layout of the lifeboat and safe rope handling.'
+    - Train with the crew every week, at sea and ashore. The RNLI asks for at least 12 exercises afloat in any 12 months, and most training happens at your own station.
+    - After about six months of regular training, and depending on your progress, you may go on the Crew Emergency Procedures course at the RNLI College in Poole, Dorset, whose Sea Survival Centre has a
+      wave tank that can simulate conditions such as darkness and thunder.
+    - Pass your assessments and finish the probationary period, usually 12 months, to become full crew.
+    - Keep going if you want to. Experienced crew can go on to train for roles such as helm or coxswain.
+    after: The RNLI College runs more than 40 specialist courses a year, and mobile training units bring some of that training to stations on the coast.
+  - h: What it is honestly like
+    p:
+    - Shouts come at any time, day or night. When the pager goes, shore crew gather, the head launcher, in an orange hi-vis jacket, gives out the jobs, and in the RNLI's own example of a launch about 10
+      minutes pass between the pager and the boat reaching the water. The most urgent call means someone may already be in the water.
+    - A Rye Harbour volunteer describes how hard it can be to fit the training and the shouts into a weekly routine, with birthday parties, Sunday lunches and days out often cut short by a dash to the station.
+      The RNLI says a crew member's employer must be informed and agree. Volunteers are not paid, but crew can claim back their expenses.
+  - h: The US equivalent, the Coast Guard Auxiliary
+    p:
+    - There is no RNLI in the United States. The nearest honest equivalent is the U.S. Coast Guard Auxiliary, a volunteer group that supports the Coast Guard. Members teach public boating safety classes,
+      offer voluntary vessel safety checks to boaters and, once trained and qualified as boat crew or coxswain, patrol local waters in their area and support events such as regattas and fireworks. Members
+      with skills such as administration, photography or web design support those teams.
+    - You must be 17 or older, with no mandatory maximum age, and a citizen of the U.S. or its territories. Membership depends on a favorable background check (a Personnel Security Investigation) and passing
+      the New Member Exam, and there are annual dues. There are no physical standards to enroll, but operational roles require you to show the ability, mobility and endurance to do them.
+  faq:
+  - q: How do I join RNLI lifeboat crew?
+    a: Contact your nearest lifeboat station, since each sets its own requirements, and check the vacancies on the RNLI's volunteering site. Crew must be over 18, live or work close to the station, pass
+      a health assessment and complete a probation that usually lasts a year.
+  - q: Is there an age limit for RNLI lifeboat crew?
+    a: The RNLI says crew must be over 18 and under 55 for inshore lifeboats or under 65 for all-weather lifeboats. Other RNLI volunteering is open from age 13, with no upper limit stated.
+  - q: How close do you have to live to an RNLI lifeboat station?
+    a: Close enough to help the station reach its target of an average launch within 10 minutes of the pagers going off. The RNLI says some stations have no set distance, so ask yours.
+  - q: Do RNLI volunteers get paid?
+    a: No, but volunteers can claim back travel and other legitimate expenses. RNLI beach lifeguards are different; they are paid on seasonal contracts.
+  - q: Do you need sea experience to volunteer with the RNLI?
+    a: Not for many roles; the RNLI says many need no experience or specialist skills. Crew are trained from scratch through a structured program at their station and the RNLI College.
+  - q: Is there an RNLI in the US?
+    a: No. The closest equivalent is the U.S. Coast Guard Auxiliary, whose volunteers run boating safety classes, vessel safety checks and patrols. You must be 17 or older, a U.S. citizen and pass a background
+      check.
+  sources:
+  - label: RNLI, Be a lifeboat station volunteer
+    url: https://rnli.org/support-us/volunteer/how-you-can-volunteer/be-a-lifeboat-station-volunteer
+    checked: '2026-11-23'
+  - label: RNLI, How you can volunteer
+    url: https://rnli.org/support-us/volunteer/how-you-can-volunteer
+    checked: '2026-11-23'
+  - label: RNLI, Volunteering FAQs
+    url: https://rnli.org/support-us/volunteer/faqs
+    checked: '2026-11-23'
+  - label: RNLI, Lifeboat crew training
+    url: https://rnli.org/what-we-do/lifeboats-and-stations/lifeboat-crew-training
+    checked: '2026-11-23'
+  - label: RNLI, Be a water safety education volunteer
+    url: https://rnli.org/support-us/volunteer/how-you-can-volunteer/be-a-water-safety-education-volunteer
+    checked: '2026-11-23'
+  - label: RNLI, Be a shop volunteer
+    url: https://rnli.org/support-us/volunteer/how-you-can-volunteer/be-a-shop-volunteer
+    checked: '2026-11-23'
+  - label: RNLI Lifesaving Jobs, Lifeguard requirements and training
+    url: https://lifesavingjobs.rnli.org/become-a-lifeguard/requirements-and-training
+    checked: '2026-11-23'
+  - label: RNLI magazine, Your first shout as shore crew
+    url: https://rnli.org/magazine/magazine-featured-list/2026/may/your-first-shout-as-shore-crew
+    checked: '2026-11-23'
+  - label: RNLI, A day in the life of a lifeboat volunteer at Rye Harbour
+    url: https://rnli.org/news-and-media/2019/january/08/a-day-in-the-life-a-lifeboat-volunteer-at-rye-harbour
+    checked: '2026-11-23'
+  - label: RNLI, Local GP joins frontline of Weymouth RNLI rescue team
+    url: https://rnli.org/news-and-media/2026/may/22/local-gp-joins-frontline-of-weymouth-rnli-rescue-team
+    checked: '2026-11-23'
+  - label: U.S. Coast Guard Auxiliary, Membership eligibility
+    url: https://join.cgaux.org/eligibility
+    checked: '2026-11-23'
+  - label: U.S. Coast Guard Auxiliary, Why join
+    url: https://join.cgaux.org/whyjoin.php
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Dr Rupert Turberville-Smith
+    line: Started as shore crew at Weymouth RNLI, then completed the RNLI Sea Survival course and later casualty care training, and now qualifies as operational crew on the station's inshore lifeboat, while
+      still working as a local GP, as he has since 1999.
+    title: Local GP joins frontline of Weymouth RNLI rescue team
+    outlet: RNLI
+    url: https://rnli.org/news-and-media/2026/may/22/local-gp-joins-frontline-of-weymouth-rnli-rescue-team
+    checked: '2026-11-23'
+  related:
+  - volunteer-for-the-coastguard
+  - join-the-coast-guard-auxiliary
+  - volunteer-with-mountain-rescue
+  - learn-to-sail
 - id: join-the-coast-guard-auxiliary
   title: Join the U.S. Coast Guard Auxiliary
   category: connect
@@ -121825,3 +122312,1625 @@
   - teach-english-as-a-volunteer
   - volunteer-as-a-befriender
   - become-a-private-tutor
+- id: learn-the-erhu
+  title: Learn to play the erhu
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The erhu is a two-stringed bowed Chinese fiddle with a haunting sound, best known in the West from the soundtrack of Crouching Tiger, Hidden Dragon. Goldsmiths says it is thought to descend from
+    an instrument that came out of central Asia over 1,000 years ago. A beginners' course at Goldsmiths in London starts students on pieces such as "Happy Boy" and "Jasmine Flower"; small beginner classes
+    also run in the US.
+  start:
+  - 'Look for a beginners'' group class: in London, the Goldsmiths Confucius Institute and UK Chinese Music at SOAS; in the US, Chinese cultural centers and community education programs.'
+  - Ask whether the class lends or rents instruments before you buy one. Some do, some ask you to bring your own.
+  - If you have played the violin or another string instrument, say so; Goldsmiths says string players can progress more quickly.
+  links:
+  - label: 'Goldsmiths Confucius Institute: erhu short course (London)'
+    url: https://www.gold.ac.uk/confucius-institute/chinese-artistic/erhu-chinese-fiddle/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'UK Chinese Music: group courses held at SOAS, autumn 2024 listing (London)'
+    url: https://ukchinesemusic.org/music-course-oct-2024
+    region: uk
+    checked: '2026-11-23'
+  - label: 'UK Chinese Music: one-to-one erhu course, 2025 listing (London)'
+    url: https://ukchinesemusic.org/music-course-2025
+    region: uk
+    checked: '2026-11-23'
+  - label: 'China Institute: erhu introduction (New York)'
+    url: https://chinainstitute.org/course/erhu-introduction
+    region: us
+    checked: '2026-11-23'
+  - label: 'Lexington Community Education: beginner erhu class for adults'
+    url: https://lexingtoncommunityed.org/?p=67705
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Erhu lessons for beginners: classes in the UK and US'
+  description: Where to learn the erhu, the Chinese two-string fiddle, in London and the US, what beginner classes cost, and whether you need your own instrument.
+  detail:
+  - h: What beginners play
+    p:
+    - Goldsmiths Confucius Institute in London tailors pieces to each student's level. Beginners start with "Happy Boy" and "Jasmine Flower"; intermediate players move on to "Beautiful Night" and "Horse
+      Racing"; advanced players tackle pieces such as "Galloping War-Horse" and "The Moon Over a Fountain."
+    - Classes are small. China Institute's introduction takes at most four students, and UK Chinese Music split its group classes into levels 0 to 3 and 4 to 7 (2024 listing).
+    - Check the instrument question early. Lexington Community Education provides loaner erhus for in-class use, China Institute offers short-term rentals at extra cost, and UK Chinese Music asks students
+      to bring their own, with a limited number of instruments available to hire or buy.
+  - h: Some ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Goldsmiths Confucius Institute, London
+        - Wednesdays, 5:30pm to 7pm (autumn 2026 listing); open to beginners, with a professional instructor
+        - Not listed on the course page
+      - - UK Chinese Music, classes held at SOAS, London
+        - Ten weekly Saturday group classes; beginner and intermediate groups (autumn 2024 listing)
+        - £300 a course, with a 10% concession
+      - - UK Chinese Music, London
+        - Ten one-to-one lessons, levels 0 to 3/4 (2025 listing)
+        - Not listed on the page
+      - - China Institute, New York
+        - Six 45-minute group classes, at most four students
+        - $270 plus a $15 registration fee; erhu rental extra
+      - - Lexington Community Education
+        - Six one-hour meetings for adult beginners; loaner erhus provided in class
+        - $230
+  faq:
+  - q: What is an erhu?
+    a: A two-stringed bowed Chinese instrument, sometimes called the Chinese fiddle. Goldsmiths describes it as thought to have evolved from the xiqin, which originated in central Asia over 1,000 years
+      ago.
+  - q: Do I need my own erhu for lessons?
+    a: Not always. Lexington Community Education lends erhus for class and China Institute offers short-term rentals, but UK Chinese Music asks students to bring their own.
+  - q: Where can I learn erhu in London?
+    a: Goldsmiths Confucius Institute runs a weekly short course, and UK Chinese Music runs group and one-to-one courses, some held at SOAS.
+  - q: Is the erhu easier if I play the violin?
+    a: Goldsmiths says students with some string-instrument experience can progress more quickly, though its course is open to complete beginners.
+  sources:
+  - label: Goldsmiths, University of London, Short course - Erhu (Chinese fiddle)
+    url: https://www.gold.ac.uk/confucius-institute/chinese-artistic/erhu-chinese-fiddle/
+    checked: '2026-11-23'
+  - label: Eventbrite, Erhu (Chinese Fiddle) - Spring Term 2026, Goldsmiths Confucius Institute
+    url: https://www.eventbrite.co.uk/e/erhu-chinese-fiddle-spring-term-2026-tickets-1975613803067
+    checked: '2026-11-23'
+  - label: UK Chinese Music, Music Courses (October 2024)
+    url: https://ukchinesemusic.org/music-course-oct-2024
+    checked: '2026-11-23'
+  - label: UK Chinese Music, Music Course 2025
+    url: https://ukchinesemusic.org/music-course-2025
+    checked: '2026-11-23'
+  - label: China Institute, Erhu introduction
+    url: https://chinainstitute.org/course/erhu-introduction
+    checked: '2026-11-23'
+  - label: Lexington Community Education, Beginner Erhu Class for Adults
+    url: https://lexingtoncommunityed.org/?p=67705
+    checked: '2026-11-23'
+  kit:
+  - name: Erhu rosin
+    why: for keeping the bow hair gripping the strings
+    url: https://www.amazon.co.uk/s?k=erhu+rosin
+  - name: Folding music stand
+    why: for practicing from sheet music at home
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  - name: Clip-on tuner
+    why: for tuning the two strings before practice
+    url: https://www.amazon.co.uk/s?k=clip+on+tuner+violin
+  related:
+  - learn-mandarin-chinese
+  - learn-the-violin
+  - learn-chinese-brush-painting
+  - learn-tai-chi-form
+- id: join-a-male-voice-choir
+  title: Sing in a male voice choir
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A male voice choir sings in parts for tenors, baritones and basses. The Welsh Association of Male Choirs has over 100 member choirs. Several of the choirs listed here need no audition and no music
+    reading, and teach the songs by ear, Welsh words included.
+  start:
+  - Find a choir near you. In Wales, the Welsh Association of Male Choirs lists its member choirs; elsewhere in the UK, many towns have a male voice choir, and in the US look for a community men's chorus.
+  - Go along to a rehearsal. Many choirs let you try a rehearsal first, and a short voice check places you in a section.
+  - Ask about the subscription and uniform, and whether rehearsal recordings are available to practice with at home.
+  links:
+  - label: 'Welsh Association of Male Choirs: about the association and its member choirs'
+    url: https://www.welshassocmalechoirs.co.uk/about
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Cardiff Arms Park Male Choir: join the choir'
+    url: https://cardiffarmsparkmalechoir.com/join
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Weybridge Male Voice Choir: FAQ for new singers (Surrey)'
+    url: https://www.weybridgemvc.org.uk/faq
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Marin Men''s Chorus: membership information (California)'
+    url: https://sites.google.com/site/marinmenschorus/membership-information
+    region: us
+    checked: '2026-11-23'
+  - label: 'San Diego Gay Men''s Chorus: join the chorus'
+    url: https://sdgmc.org/join-the-chorus/
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'How to join a male voice choir: no audition needed'
+  description: How to join a male voice choir in the UK or a men's chorus in the US, whether you need to audition or read music, and what choirs charge members.
+  detail:
+  - h: What joining is like
+    p:
+    - The Welsh Association of Male Choirs was founded in 1962 by 26 choirs and now has over 100 members, including associate and overseas choirs. It runs competitions and festivals and arranges massed
+      choir concerts.
+    - Weybridge Male Voice Choir sings in four parts (Tenor 1, Tenor 2, Baritone, Bass) and says reading music is not essential; members learn by listening and repetition.
+    - Welsh is not a barrier. Cardiff Arms Park Male Choir says the musical director teaches the pronunciation for each piece, music is taught by rote, and members can download rehearsal recordings.
+    - In the US, some men's choruses are community choruses and some are LGBTQ+ choruses, such as the San Diego Gay Men's Chorus, which auditions singers of any gender who can sing tenor, baritone or bass.
+  - h: Some ways in
+    table:
+      head:
+      - Choir
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Cardiff Arms Park Male Choir
+        - Tuesdays and Thursdays, 7:30pm to 9pm; short voice test, no formal audition; music reading and Welsh not required
+        - Fees not listed; music copies provided free
+      - - Weybridge Male Voice Choir, Surrey
+        - Tuesdays, 8pm to 10pm; no formal audition, informal voice check after a few weeks
+        - Subscription; amount not listed
+      - - Marin Men's Chorus, California
+        - No experience needed; a brief voice check places you; sheet music provided and rehearsals recorded
+        - $300 per concert season
+      - - San Diego Gay Men's Chorus
+        - Mondays, 7pm to 10pm; info night and audition before each semester
+        - $95 per semester, with payment plans and scholarships
+  faq:
+  - q: Do I have to audition for a male voice choir?
+    a: Often not. Weybridge Male Voice Choir and Cardiff Arms Park Male Choir hold no formal audition, just a voice check to place you in a section; the San Diego Gay Men's Chorus does audition.
+  - q: Do I need to read music to join a male voice choir?
+    a: Not usually. Cardiff Arms Park Male Choir teaches music by rote, and Marin Men's Chorus provides sheet music and recordings and does not require reading.
+  - q: Do I need to speak Welsh to join a Welsh male voice choir?
+    a: No. Cardiff Arms Park Male Choir says Welsh is not required and the musical director teaches the pronunciation.
+  - q: How much does it cost to join a men's chorus?
+    a: It varies. Marin Men's Chorus lists $300 a concert season and the San Diego Gay Men's Chorus $95 a semester; UK choirs charge a subscription, so ask the choir.
+  sources:
+  - label: Welsh Association of Male Choirs, About
+    url: https://www.welshassocmalechoirs.co.uk/about
+    checked: '2026-11-23'
+  - label: Cardiff Arms Park Male Choir, Join
+    url: https://cardiffarmsparkmalechoir.com/join
+    checked: '2026-11-23'
+  - label: Weybridge Male Voice Choir, FAQ
+    url: https://www.weybridgemvc.org.uk/faq
+    checked: '2026-11-23'
+  - label: Marin Men's Chorus, Membership Information
+    url: https://sites.google.com/site/marinmenschorus/membership-information
+    checked: '2026-11-23'
+  - label: San Diego Gay Men's Chorus, Join the Chorus
+    url: https://sdgmc.org/join-the-chorus/
+    checked: '2026-11-23'
+  kit:
+  - name: Folding music stand
+    why: for practicing your part at home
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  - name: Choir music folder
+    why: for keeping your copies together at rehearsals and concerts
+    url: https://www.amazon.co.uk/s?k=choir+music+folder
+  related:
+  - join-a-choral-society
+  - sing-barbershop-chorus
+  - learn-welsh
+  - take-singing-lessons
+- id: join-a-pipe-band
+  title: Join a pipe band
+  category: connect
+  kind: skill
+  effort: moderate
+  cost: low
+  time: year
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: 'A pipe band is bagpipes over a drum corps of snare, tenor and bass drums. Bands compete in grades: the RSPBA''s season includes the World Championships, and in the US, EUSPBA contests run from novice
+    to professional. Many bands teach learners from scratch, starting on a practice chanter or a drum pad, and some do it for free.'
+  start:
+  - In the UK, ask a local band, or contact the RSPBA's local branch, about learner places; in the US, the Eastern United States Pipe Band Association covers the East Coast, and bands advertise learner
+    classes locally.
+  - Decide on pipes or drums. Pipers start on a practice chanter and drummers on a practice pad, which the Nittany Highland Pipe Band says are about as loud as a human voice.
+  - Ask the band whether tuition and instruments are provided, and when its learners' class meets.
+  links:
+  - label: 'Royal Scottish Pipe Band Association: FAQs and contacts'
+    url: https://rspba.org/frequently-asked-questions-faqs/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'RSPBA Pipe Band College: courses and qualifications'
+    url: https://rspba.org/2023/01/16/rspba-pipe-band-college-educational-opportunities/
+    region: uk
+    checked: '2026-11-23'
+  - label: Eastern United States Pipe Band Association (EUSPBA)
+    url: https://euspba.org/?p=730
+    region: us
+    checked: '2026-11-23'
+  - label: 'Nittany Highland Pipe Band: lessons'
+    url: https://sites.google.com/view/nittanyhighlandpipeband/lessons
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'How to join a pipe band as a beginner: pipes or drums'
+  description: How to join a pipe band as a learner piper or drummer in the UK or US, what you start on, what it costs, and how bands are graded in competition.
+  detail:
+  - h: Pipes, snare, tenor and bass
+    p:
+    - A band has more than pipers. The Eastern United States Pipe Band Association runs contests for pipers, snare, tenor and bass drummers, drum majors and full bands, at every level from novice to professional.
+    - Learners do not start on the full instrument. The Nittany Highland Pipe Band tells beginners not to buy bagpipes first; pipers spend about a year on a practice chanter learning fingerwork, and drummers
+      start on a practice pad. Both are about as loud as a human voice.
+    - The Royal Scottish Pipe Band Association's Pipe Band College offers qualifications in chanter, bagpipes, snare, bass and tenor drumming, through courses that can run at branch level over about four
+      weekends.
+    - Bands compete in grades. The RSPBA runs up to five Major Championships a season (Scottish, UK, British, European and World), and its Grade 4 bands choose tunes from a prescribed list.
+  - h: Some ways in
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Kilrea Pipe Band (reported by the Ballymena Times)
+        - Weekly evening classes in piping and drumming for adults of any age and children from eight
+        - Free tuition and free use of the band's instruments
+      - - Nittany Highland Pipe Band, US
+        - Lessons for all ages and abilities, no experience needed; the band supports continuing lessons and workshops
+        - Practice chanter about $65; drum pad a modest cost
+      - - RSPBA Pipe Band College, UK
+        - Certification courses over about four weekends at branch level, then an exam
+        - Not listed; depends on numbers and instruments
+      - - EUSPBA, US East Coast
+        - Workshops in piping and drumming instruction, plus graded contests
+        - Not listed on the home page
+  faq:
+  - q: Can adults join a pipe band with no experience?
+    a: Yes, at many bands. Kilrea Pipe Band's classes are open to adults of any age, and the Nittany Highland Pipe Band says no prior musical experience is needed.
+  - q: How long does it take to learn the bagpipes for a band?
+    a: The Nittany Highland Pipe Band says beginners spend about a year on a practice chanter before moving to a full set of pipes.
+  - q: What drums are in a pipe band?
+    a: Snare, tenor and bass drums. Both the EUSPBA and the RSPBA's Pipe Band College cover all three.
+  - q: Do I have to buy bagpipes to join a pipe band?
+    a: Not at first. Learners start on a practice chanter or a drum pad, and some bands, such as Kilrea Pipe Band, lend their instruments for free.
+  sources:
+  - label: Royal Scottish Pipe Band Association, Frequently Asked Questions
+    url: https://rspba.org/frequently-asked-questions-faqs/
+    checked: '2026-11-23'
+  - label: RSPBA, Pipe Band College - Educational Opportunities
+    url: https://rspba.org/2023/01/16/rspba-pipe-band-college-educational-opportunities/
+    checked: '2026-11-23'
+  - label: Eastern United States Pipe Band Association, home page
+    url: https://euspba.org/?p=730
+    checked: '2026-11-23'
+  - label: Nittany Highland Pipe Band, Lessons
+    url: https://sites.google.com/view/nittanyhighlandpipeband/lessons
+    checked: '2026-11-23'
+  - label: Ballymena Times, Ever wanted to join a pipe band? Then Kilrea Pipe Band might just be able to help
+    url: https://ballymenatimes.com/whats-on/arts-and-entertainment/ever-wanted-to-join-a-pipe-band-then-kilrea-pipe-band-might-just-be-able-to-help-4578358
+    checked: '2026-11-23'
+  kit:
+  - name: Practice chanter
+    why: for practice before you move to the full pipes
+    url: https://www.amazon.co.uk/s?k=bagpipe+practice+chanter
+  - name: Drum practice pad
+    why: for snare practice before you move to the full drum
+    url: https://www.amazon.co.uk/s?k=drum+practice+pad
+  - name: Pipe band drumsticks
+    why: for snare practice on the pad
+    url: https://www.amazon.co.uk/s?k=pipe+band+snare+drum+sticks
+  related:
+  - learn-the-bagpipes
+  - learn-highland-dancing
+  - join-a-brass-band
+  - scottish-country-dancing
+- id: join-a-recorder-society
+  title: Join a recorder society
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Recorder societies meet to play consort music; the Guildford branch plays every size of recorder from sopranino to contra bass, with music from the early medieval to the contemporary. The Society
+    of Recorder Players has 49 branches in the UK and Ireland, and the American Recorder Society links players to local chapters and consorts.
+  start:
+  - Find your nearest group. In the UK, look up a Society of Recorder Players branch; in the US, an American Recorder Society chapter.
+  - Go to a meeting as a visitor. Many groups let you try one first, sometimes free, and provide the music.
+  - Bring a music stand and the recorders you play, and say which sizes you can read for.
+  links:
+  - label: 'Society of Recorder Players: membership and branches'
+    url: https://www.srp.org.uk/srp-membership
+    region: uk
+    checked: '2026-11-23'
+  - label: Guildford SRP branch (Surrey)
+    url: https://srp.org.uk/guildford
+    region: uk
+    checked: '2026-11-23'
+  - label: 'American Recorder Society: membership levels'
+    url: https://americanrecorder.org/membership_levels.php
+    region: us
+    checked: '2026-11-23'
+  - label: 'American Recorder Society: chapters, consorts and recorder orchestras'
+    url: https://americanrecorder.org/what_are_the_main_ars_groups.php
+    region: us
+    checked: '2026-11-23'
+  - label: 'Twin Cities Recorder Guild: membership (Minnesota)'
+    url: https://sites.google.com/view/twincitiesrecorderguild/tcrg-membership
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Recorder societies and consorts: how to join one'
+  description: How to join a recorder society branch or chapter in the UK or US, what happens at meetings and playing days, and what membership costs as last listed.
+  detail:
+  - h: What a branch meeting is like
+    p:
+    - Society of Recorder Players branches meet regularly with experienced conductors, and a panel of visiting conductors regularly leads branch meetings. Branches keep libraries of parts for consort playing,
+      and you can try a meeting before you join.
+    - The Guildford branch meets for three hours on a Saturday afternoon once a month, with a tea break, plus a playing day each year with a guest conductor. It plays all sizes from contra bass to sopranino,
+      welcomes players from post-beginner to diploma level, and provides the music; bring your own stand.
+    - In the US, the Twin Cities Recorder Guild, an affiliate chapter of the American Recorder Society, meets monthly from September to June, performs publicly during Play the Recorder Month and holds a
+      members' concert.
+    - The SRP also runs an annual festival, which it describes as the greatest gathering of recorder players in the UK.
+  - h: Some ways in
+    table:
+      head:
+      - Group
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Society of Recorder Players (national)
+        - Magazine, member database, music libraries; join a branch to play with it
+        - £30 main subscription, plus a branch subscription that varies
+      - - Guildford SRP branch, Surrey
+        - Monthly Saturday afternoons; post-beginner to diploma level
+        - Visitor £12.50; full branch member £65 (2025-26 rates)
+      - - American Recorder Society (national)
+        - Quarterly magazine, downloadable music, directory of chapters and consorts
+        - $30 new standard one-year membership; $60 renewal
+      - - Twin Cities Recorder Guild, St. Paul, Minnesota
+        - Monthly Sunday afternoons, September to June; open to all
+        - First meeting free, then $15 a meeting or $80 a year
+  faq:
+  - q: Can I join a recorder group if I am not very good?
+    a: Many groups welcome a range of levels. The Guildford SRP branch takes players from post-beginner to diploma level, and the SRP welcomes players from young to professional; some events specify levels.
+  - q: Do I have to be a member to go to a recorder society meeting?
+    a: Usually not for a first visit. The Twin Cities Recorder Guild lets non-members attend their first meeting free, and SRP branches let you try a meeting before joining.
+  - q: How much does it cost to join the Society of Recorder Players?
+    a: The main subscription is £30, with £10 for those under 30 or in full-time education, plus a branch subscription that varies by branch.
+  - q: What is a recorder consort?
+    a: A group playing recorders of different sizes together in parts. SRP branches keep libraries of parts for consort playing.
+  sources:
+  - label: Society of Recorder Players, SRP Membership
+    url: https://www.srp.org.uk/srp-membership
+    checked: '2026-11-23'
+  - label: Society of Recorder Players, Guildford branch
+    url: https://srp.org.uk/guildford
+    checked: '2026-11-23'
+  - label: American Recorder Society, Membership Levels
+    url: https://americanrecorder.org/membership_levels.php
+    checked: '2026-11-23'
+  - label: American Recorder Society, What are the Main ARS Groups?
+    url: https://americanrecorder.org/what_are_the_main_ars_groups.php
+    checked: '2026-11-23'
+  - label: Twin Cities Recorder Guild, TCRG Membership
+    url: https://sites.google.com/view/twincitiesrecorderguild/tcrg-membership
+    checked: '2026-11-23'
+  kit:
+  - name: Treble (alto) recorder
+    why: for playing the alto parts most consort music includes
+    url: https://www.amazon.co.uk/s?k=treble+recorder
+  - name: Folding music stand
+    why: some branches ask you to bring your own
+    url: https://www.amazon.co.uk/s?k=folding+music+stand
+  - name: Recorder consort music
+    why: for playing in parts with friends between meetings
+    url: https://www.amazon.co.uk/s?k=recorder+consort+music
+  related:
+  - learn-the-recorder
+  - join-community-orchestra-or-band
+  - play-in-a-folk-session
+  - learn-the-harp
+- id: join-a-dolls-house-miniatures-club
+  title: Join a dollhouse and miniatures club
+  category: connect
+  kind: project
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Miniatures clubs meet to make furniture, food and whole rooms in tiny scale, choosing projects together and passing skills on to each other. In the US, clubs such as the Miniature Society of Cincinnati
+    are affiliated with the National Association of Miniature Enthusiasts, which has around 2,900 members, and the two UK clubs here meet monthly.
+  start:
+  - Find a local club. In the UK, search your council's community directory for a dolls' house or miniatures club; in the US, look for a local club affiliated with the National Association of Miniature
+    Enthusiasts (NAME).
+  - Go to a meeting as a guest first. Some clubs ask you to visit once before joining.
+  - Visit a dollhouse show or fair to see what members make and buy materials.
+  links:
+  - label: Quarry Bank Dolls House Club (Dudley community directory)
+    url: https://dudleyci.co.uk/services/quarry-bank-dolls-house-club
+    region: uk
+    checked: '2026-11-23'
+  - label: Market Town Miniaturists, Thame (Thame Town Council)
+    url: https://thametowncouncil.gov.uk/?p=17796
+    region: uk
+    checked: '2026-11-23'
+  - label: Miniatura dolls house show tickets (Stoneleigh)
+    url: https://thelittleboxoffice.com/miniatura/event/view/177441
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Miniature Society of Cincinnati: membership and guests'
+    url: https://cincy-miniatures.org/?p=1191
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Dollhouse and miniatures clubs: how to join one'
+  description: How to find a dollhouse or dolls' house miniatures club in the UK or US, what members do at meetings, and what clubs and miniatures shows charge.
+  detail:
+  - h: What clubs do
+    p:
+    - Market Town Miniaturists in Thame choose projects together each year, learn new skills and pass them on, and exhibit their larger projects at the Thame Dolls House and Miniatures Fair.
+    - Quarry Bank Dolls House Club in the West Midlands describes itself as making things in miniature, suitable for any age and ability.
+    - In the US, the Miniature Society of Cincinnati is a local NAME club with about 50 members, founded by Jean Ellsworth. Its members must also join NAME, whose dues include the magazine The Miniature
+      Gazette. NAME holds a national convention with a sales room of dealers and an exhibit room; the 2025 convention in Cincinnati was open to the public on its final two days.
+  - h: Some ways in
+    table:
+      head:
+      - Club or event
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Quarry Bank Dolls House Club, Brierley Hill
+        - First Monday of the month, 7:30pm to 9:30pm; any age and ability
+        - £2 (as listed)
+      - - Market Town Miniaturists, Thame
+        - Second Monday evening of the month; group projects, exhibits at the Thame fair
+        - Not listed
+      - - Miniature Society of Cincinnati
+        - Second Wednesday of the month, 7pm; guests 16 and over free, except at the August and December members-only parties; attend one meeting before joining
+        - $20 a year, plus separate NAME dues
+      - - Miniatura show, Stoneleigh (March 2025 show, past; check the next date)
+        - Two-day miniatures show specializing in dolls' houses
+        - Adult Saturday ticket £7 in advance, £9.50 on the door
+  faq:
+  - q: How do I find a dollhouse club near me?
+    a: In the UK, council community directories list local clubs such as Quarry Bank Dolls House Club. In the US, look for a club affiliated with the National Association of Miniature Enthusiasts.
+  - q: Do I have to join NAME to join a US miniatures club?
+    a: Some clubs require it. The Miniature Society of Cincinnati says members must also join NAME.
+  - q: Can I visit a miniatures club before joining?
+    a: Usually. The Miniature Society of Cincinnati lets guests attend regular meetings free, except at the August and December meetings, which are members-only parties, and asks prospective members to
+      attend one before joining.
+  sources:
+  - label: Dudley Community Information, Quarry Bank Dolls House Club
+    url: https://dudleyci.co.uk/services/quarry-bank-dolls-house-club
+    checked: '2026-11-23'
+  - label: Thame Town Council, Market Town Miniaturists
+    url: https://thametowncouncil.gov.uk/?p=17796
+    checked: '2026-11-23'
+  - label: The Little Box Office, Miniatura miniatures show
+    url: https://thelittleboxoffice.com/miniatura/event/view/177441
+    checked: '2026-11-23'
+  - label: Miniature Society of Cincinnati, Membership & Guests
+    url: https://cincy-miniatures.org/?p=1191
+    checked: '2026-11-23'
+  - label: Cincinnati Magazine, Cincinnati to Host National Convention of Miniature Enthusiasts
+    url: https://www.cincinnatimagazine.com/article/national-convention-of-miniature-enthusiasts/
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Jean Ellsworth, Cincinnati
+    line: Left nursing in 1975 to open a dollhouse shop, then founded the Miniature Society of Cincinnati, which was celebrating its 50th anniversary.
+    title: Cincinnati to Host National Convention of Miniature Enthusiasts
+    outlet: Cincinnati Magazine
+    url: https://www.cincinnatimagazine.com/article/national-convention-of-miniature-enthusiasts/
+    checked: '2026-11-23'
+  kit:
+  - name: Craft knife and cutting mat
+    why: for cutting card, wood strip and fabric to scale
+    url: https://www.amazon.co.uk/s?k=craft+knife+cutting+mat
+  - name: Dolls house wood strip
+    why: for making miniature furniture and fittings
+    url: https://www.amazon.co.uk/s?k=dolls+house+wood+strip
+  - name: Magnifying lamp
+    why: for close work on small pieces
+    url: https://www.amazon.co.uk/s?k=magnifying+lamp+craft
+  related:
+  - learn-miniature-painting
+  - build-a-model-railway
+  - join-a-model-railway-club
+  - sell-at-a-craft-fair
+- id: join-a-potters-guild
+  title: Join a potters' guild
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A potters' guild or association brings demonstrations, workshops, members' exhibitions and selling shows within reach, and some US guilds run their own studios with round-the-clock access for members.
+    UK associations welcome hobby potters and even non-makers alongside professionals.
+  start:
+  - 'Find your regional association or local guild: in the UK, groups such as the Scottish Potters Association or Anglian Potters; in the US, a city or county potters'' guild.'
+  - Check what membership gives. Some UK associations offer demonstrations, newsletters and exhibitions, while US guilds with a studio may offer studio time, clay and firing.
+  - Ask about conditions. A studio guild may ask you to take classes first and share chores.
+  links:
+  - label: 'Scottish Potters Association: join us'
+    url: https://scottishpotters.org/join-us
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Anglian Potters: about the association (East Anglia)'
+    url: https://www.anglianpotters.org.uk/?p=8413
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Craft Potters Association: associate membership (sold via Ceramic Review)'
+    url: https://www.ceramicreview.com/?p=5504
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Hawaii Potters'' Guild: become a member'
+    url: https://www.hawaiipottersguild.org/become-a-member
+    region: us
+    checked: '2026-11-23'
+  - label: 'KC Clay Guild: membership (Kansas City)'
+    url: https://kcclayguild.wildapricot.org/membership
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Potters guild membership: what you get and how to join'
+  description: What joining a potters' guild or association gives you in the UK and US, from workshops and exhibitions to studio access and firing, and what it costs.
+  detail:
+  - h: What membership gives
+    p:
+    - UK associations are mostly about learning and showing work. The Scottish Potters Association offers regular workshops, an annual residential weekend with guest demonstrators, a quarterly newsletter
+      and annual members' exhibitions, and is open to professional, amateur and hobby potters.
+    - Anglian Potters, founded in 1983, grew to over 500 active members in its first 30 years. It runs demonstration days, an annual members' potters' camp, two or more selling exhibitions a year and bulk-price
+      clay from dumps in four counties. It welcomes anyone with an interest in clay, makers or not.
+    - Some US guilds run a working studio. Hawaii Potters' Guild members get studio access 24 hours a day outside class times, shelf space and cheaper classes, but must first take three classes within two
+      years, and must do studio chores and, if not taking a class, sit the studio.
+  - h: Some ways in
+    table:
+      head:
+      - Guild or association
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - Scottish Potters Association
+        - Workshops, residential weekend, newsletter, members' exhibitions
+        - £27 a year individual; lower rates for students
+      - - Anglian Potters, East Anglia
+        - Demonstration days, potters' camp, selling exhibitions, bulk clay
+        - Fees on a separate page; not listed on the about page
+      - - Craft Potters Association, associate membership
+        - E-bulletin, discounts, the chance to exhibit at CPA fairs
+        - £35 a year
+      - - Hawaii Potters' Guild
+        - 24-hour studio access, shelf space, reduced class and studio fees
+        - $50 a year, plus studio use or class fees
+      - - KC Clay Guild, Kansas City
+        - 50% off studio rates, clay and firing; discounts on classes
+        - Sliding scale; amounts not listed
+  faq:
+  - q: Can I join a potters' guild as a beginner?
+    a: Often, yes. The Scottish Potters Association takes hobby potters and Anglian Potters welcomes anyone interested in clay, though Hawaii Potters' Guild asks for three classes within two years first.
+  - q: Does a potters' guild give you studio access?
+    a: Some do. Hawaii Potters' Guild members get 24-hour studio access outside classes, and KC Clay Guild members get half-price studio time and firing; UK regional associations mostly offer events and
+      exhibitions instead.
+  - q: Can I sell my pottery through a guild?
+    a: Some associations hold selling shows. Anglian Potters runs two or more selling exhibitions a year, and Craft Potters Association associate members can exhibit at CPA fairs.
+  sources:
+  - label: Scottish Potters Association, Join us
+    url: https://scottishpotters.org/join-us
+    checked: '2026-11-23'
+  - label: Anglian Potters, About AP
+    url: https://www.anglianpotters.org.uk/?p=8413
+    checked: '2026-11-23'
+  - label: Ceramic Review, CPA Associate 1 Year Membership
+    url: https://www.ceramicreview.com/?p=5504
+    checked: '2026-11-23'
+  - label: Hawaii Potters' Guild, Become a Member
+    url: https://www.hawaiipottersguild.org/become-a-member
+    checked: '2026-11-23'
+  - label: KC Clay Guild, Membership
+    url: https://kcclayguild.wildapricot.org/membership
+    checked: '2026-11-23'
+  kit:
+  - name: Pottery tool set
+    why: for workshops and studio sessions
+    url: https://www.amazon.co.uk/s?k=pottery+tool+set
+  - name: Canvas apron
+    why: for keeping clay off your clothes in a shared studio
+    url: https://www.amazon.co.uk/s?k=pottery+apron+canvas
+  related:
+  - try-pottery-on-the-wheel
+  - try-hand-building-with-clay
+  - sell-at-a-craft-fair
+  - exhibit-at-a-juried-craft-show
+- id: try-canoe-polo
+  title: Try canoe polo
+  category: move
+  kind: skill
+  effort: moderate
+  cost: low
+  time: weeks
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Canoe polo is a five-a-side ball game played from short, nimble kayaks, with goals in raised nets and contact play. Clubs play in pools or on flat open water, and some, such as Viking Kayak Club
+    and New York Kayak Polo, move between the two with the seasons. Some clubs, such as Viking Kayak Club, provide all the kit.
+  start:
+  - Find a club near you. In the UK, the Paddle UK Polo club map lists more than 80 clubs; in the US, look for a local kayak polo group such as New York Kayak Polo.
+  - Ask about a beginners' or novice session and whether the club lends boats, paddles, helmets and buoyancy aids.
+  - Bring clothes you are happy to swim in and expect to get wet.
+  links:
+  - label: 'Paddle UK Polo: club map'
+    url: https://canoepolo.org.uk/about/club-map/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Paddle UK Polo: about canoe polo'
+    url: https://canoepolo.org.uk/about/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Viking Kayak Club: canoe polo sessions (Bedford)'
+    url: https://vikingkayak.co.uk/polo/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'New York Kayak Polo: about the club, first session free'
+    url: https://nykayakpolo.org/about/
+    region: us
+    checked: '2026-11-23'
+  safety: Helmets with face guards and body protection are compulsory in canoe polo. At New York Kayak Polo's beginner session newcomers learn how to exit a capsized boat; ask your club about this.
+  seo_title: 'Canoe polo for beginners: how to find a club and start'
+  description: What canoe polo is, what kit you need, what beginners' sessions cost in the UK and US, and how to find a club that lends boats to new players.
+  detail:
+  - h: What the game is like
+    p:
+    - Paddle UK's polo site describes canoe polo as a five-a-side, fast and dynamic team sport, with goals in raised nets, that mixes paddling and ball handling with contact play. The boats are short, maneuverable
+      kayaks with padded ends, and the paddles are light, built for pulling power and ball control.
+    - Pitches can be set up in swimming pools or on any stretch of flat water. In the UK there is a National League with open, women's and youth categories, regional events, and big outdoor tournaments
+      run by clubs in summer. Paddle UK Polo's club map lists the national home venue at Holme Pierrepont, Nottingham, with four enclosed pitches.
+    - Bedford's Viking Kayak Club says a team is five players plus up to three substitutes, and its teams play in open, youth and women's leagues.
+  - h: Some ways in
+    table:
+      head:
+      - Club
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Viking Kayak Club, Bedford
+        - River sessions May to September; pool sessions late September to April, with a Friday session for novices; all kit for new players provided
+        - 'Pool sessions: £5 members, £11.50 non-members with own boat, £18 non-members borrowing club kit'
+      - - New York Kayak Polo
+        - Beginner-friendly sessions year-round, on the Hudson in summer and in an indoor pool in winter; gear provided
+        - First session free, then $25 a session unless you pay season or annual dues
+    after: New York Kayak Polo asks players to sign up at least 48 hours ahead, because sessions with fewer than six sign-ups are canceled. Wear shorts and a shirt you can swim in and low-profile water
+      shoes.
+  faq:
+  - q: Do I need my own kayak to play canoe polo?
+    a: Not to start. Viking Kayak Club says it provides all the equipment a new player needs, and New York Kayak Polo says it has all the gear you will need.
+  - q: How many players are on a canoe polo team?
+    a: Five on the water, and Viking Kayak Club says a team can have up to three substitutes.
+  - q: Is canoe polo a contact sport?
+    a: Yes. Paddle UK's polo site says the game includes contact play, and helmets, face guards and body protection are compulsory.
+  - q: Can complete beginners play canoe polo?
+    a: Yes, at clubs that run novice sessions. Viking Kayak Club invites complete beginners to get in touch, and New York Kayak Polo runs beginner-friendly sessions with the first one free.
+  sources:
+  - label: Paddle UK Polo, About
+    url: https://canoepolo.org.uk/about/
+    checked: '2026-11-23'
+  - label: Paddle UK Polo, Club map
+    url: https://canoepolo.org.uk/about/club-map/
+    checked: '2026-11-23'
+  - label: Viking Kayak Club, Polo
+    url: https://vikingkayak.co.uk/polo/
+    checked: '2026-11-23'
+  - label: New York Kayak Polo, About
+    url: https://nykayakpolo.org/about/
+    checked: '2026-11-23'
+  - label: New York Kayak Polo on Meetup, Beginner-friendly Kayak Polo
+    url: https://www.meetup.com/nykayakpolo/events/312987519
+    checked: '2026-11-23'
+  kit:
+  - name: Low-profile water shoes
+    why: to protect and pad your feet inside the boat
+    url: https://www.amazon.co.uk/s?k=low+profile+water+shoes
+  - name: Rash vest
+    why: a top you can swim in for pool sessions
+    url: https://www.amazon.co.uk/s?k=rash+vest+adult
+  related:
+  - learn-to-kayak
+  - play-water-polo
+  - try-outrigger-canoeing
+  - learn-to-row
+- id: play-adult-baseball
+  title: Join an adult baseball team
+  category: move
+  kind: experience
+  effort: moderate
+  cost: low
+  time: months
+  setting: outdoors
+  company: others
+  season: April to September
+  regions:
+  - uk
+  - us
+  why: Adult baseball leagues run from social and recreational to competitive. In the US, the Men's Senior Baseball League runs age divisions from 18 and over to 55 and over. In the UK, Herts Baseball Club
+    plays mostly on Sundays and takes adult beginners, men and women, with bats and helmets included in membership.
+  start:
+  - In the UK, use the BaseballSoftballUK team finder; in the US, use the MSBL/MABL league finder, or look for a women's league such as the Eastern Women's Baseball Conference.
+  - Ask the club when spring training starts (one UK club starts adults in February) and whether the first session is free.
+  - Check what membership includes. Herts Baseball Club includes bats, helmets, balls and catcher's gear, but charges extra for the uniform.
+  links:
+  - label: 'BaseballSoftballUK: play baseball and team finder'
+    url: https://baseballsoftballuk.com/play/baseball
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Herts Baseball Club: play baseball, join the club (Hemel Hempstead and NW London)'
+    url: https://hertsbaseball.com/?p=124
+    region: uk
+    checked: '2026-11-23'
+  - label: 'MSBL/MABL: experience the league and find a league'
+    url: https://msblnational.com/?p=274
+    region: us
+    checked: '2026-11-23'
+  - label: 'CBS Baltimore: the Eastern Women''s Baseball Conference'
+    url: https://www.cbsnews.com/baltimore/news/eastern-womens-baseball-conference-baseball-maryland
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Adult baseball leagues: how to start playing baseball'
+  description: How to join an adult baseball team in the UK or US, who can play, what age divisions and membership cost, and where women's baseball leagues play.
+  detail:
+  - h: Who can play
+    p:
+    - In the US, MSBL/MABL is for adults 18 and older, with age divisions of 18 and over, 25 and over, 35 and over, 45 and over and 55 and over. It lists 325 local affiliates and 3,200 teams. Its own page
+      does not say whether women can play, and a 2025 Saturday Evening Post feature describes it as a league for men.
+    - Women have their own leagues. The Eastern Women's Baseball Conference, launched in 2000, has five teams across Baltimore, Washington D.C. and Virginia, with players from about 13 to their 70s, and
+      plays under MLB rules from May through August.
+    - In the UK, BaseballSoftballUK says there are clubs around the country for adults, juniors and students, in leagues from social and recreational to competitive. Herts Baseball Club, for example, says
+      men and women aged 14 to 60-plus play in its adult leagues and that beginners are welcome.
+  - h: What it costs
+    table:
+      head:
+      - League or club
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Herts Baseball Club, Hemel Hempstead and NW London
+        - Adult spring training from about February, league season April to September, mostly Sundays; midweek evening sessions May to August; first training session free
+        - £96 to £220 a year adult membership; jerseys £10 to £59, pants about £25, caps £15 to £20
+      - - MSBL/MABL local leagues, US
+        - About 20 games a season plus playoffs, in age divisions from 18+ to 55+
+        - Most leagues under $15 per player per game
+      - - Eastern Women's Baseball Conference, Baltimore, D.C. and Virginia
+        - Five teams, May through August, MLB rules
+        - Not given in the report
+    after: Herts Baseball Club includes bats, batting helmets, balls and catcher's gear in membership. MSBL/MABL also runs a World Series in Arizona each October and November on MLB spring training fields.
+  faq:
+  - q: Can adults learn to play baseball from scratch?
+    a: Yes. Herts Baseball Club welcomes beginners and makes the first training session free, and BaseballSoftballUK says it can help rookies get in the game.
+  - q: Can women play adult baseball?
+    a: Yes, in clubs and leagues that take them. Herts Baseball Club fields men and women in its adult leagues, and the Eastern Women's Baseball Conference has five teams with players from about 13 to their
+      70s.
+  - q: How much does it cost to play adult baseball?
+    a: MSBL/MABL says most of its leagues cost under $15 per player per game. At Herts Baseball Club in the UK, adult membership was listed at £96 to £220 a year, plus uniform.
+  - q: Which age divisions does the MSBL/MABL have?
+    a: MSBL/MABL runs divisions of 18 and over, 25 and over, 35 and over, 45 and over and 55 and over, and the Saturday Evening Post reports even older divisions at its Arizona World Series.
+  sources:
+  - label: BaseballSoftballUK, Baseball
+    url: https://baseballsoftballuk.com/play/baseball
+    checked: '2026-11-23'
+  - label: Herts Baseball Club, Play Baseball, Join the Club
+    url: https://hertsbaseball.com/?p=124
+    checked: '2026-11-23'
+  - label: MSBL/MABL, Experience MSBL/MABL
+    url: https://msblnational.com/?p=274
+    checked: '2026-11-23'
+  - label: CBS Baltimore, Women of all ages step up to the plate for the Eastern Women's Baseball Conference
+    url: https://www.cbsnews.com/baltimore/news/eastern-womens-baseball-conference-baseball-maryland
+    checked: '2026-11-23'
+  - label: The Saturday Evening Post, A Whole New Ballgame
+    url: https://www.saturdayeveningpost.com/2025/06/a-whole-new-ballgame/
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Allan Green, vintner and graphic designer
+    line: Took up baseball again after playing softball, plays center field and manages two teams in the MSBL.
+    title: A Whole New Ballgame
+    outlet: The Saturday Evening Post
+    url: https://www.saturdayeveningpost.com/2025/06/a-whole-new-ballgame/
+    checked: '2026-11-23'
+  kit:
+  - name: Baseball glove
+    why: for fielding
+    url: https://www.amazon.co.uk/s?k=adult+baseball+glove
+  - name: Baseball cleats
+    why: for grip on a grass and dirt field
+    url: https://www.amazon.co.uk/s?k=baseball+cleats+adult
+  related:
+  - play-softball
+  - try-gaelic-football
+  - play-handball
+  - learn-to-lift-weights
+- id: learn-italian
+  title: Learn Italian in a class and take a CILS exam
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: year
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Italian has its own certificate ladder, the CILS from the Università per Stranieri di Siena, with six levels from A1 to C2. A weekly class through the Italian Cultural Institutes or a Dante Alighieri
+    Society gets you moving, and an exam date turns a hobby into a finish line.
+  start:
+  - 'Book a term of classes: an Istituto Italiano di Cultura, a Dante Alighieri Society, or a university or adult education course.'
+  - If you have some Italian already, ask for the placement test before you enroll so you join at the right level.
+  - Pick a CILS level from the table below and check the exam dates and registration window at your nearest center; sessions can fill early.
+  links:
+  - label: 'Istituto Italiano di Cultura Edinburgh: how to enrol in Italian classes'
+    url: https://iicedimburgo.esteri.it/en/lingua-e-cultura/i-corsi-di-lingua/how-to-enrol/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'International House London: Italian CILS exams, dates and fees'
+    url: https://www.ihlondon.com/course/italian-cils-qualification/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Istituto Italiano di Cultura New York: CILS exams'
+    url: https://iicnewyork.esteri.it/en/lingua-e-cultura/certificazioni/
+    region: us
+    checked: '2026-11-23'
+  - label: 'Dante Alighieri Society of Massachusetts: PLIDA and Italian classes (Massachusetts)'
+    url: https://dantemass.org/class-info
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Learn Italian as an adult: classes and CILS exam levels'
+  description: Where to take Italian classes in the UK and US, what a term costs, and what each CILS exam level from A1 to C2 means, with exam fees as last listed.
+  detail:
+  - h: Ways in, compared
+    p:
+    - Classes run by the term, so you can try one before committing to a year. The Dante Alighieri Society of Massachusetts names its levels after the PLIDA certificate.
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Istituto Italiano di Cultura, Edinburgh
+        - Termly classes in person or online, 6 to 14 students; placement test unless you are a complete beginner; adults over 18
+        - £150 a term, or £140 for members, students, unemployed people and those over 60; textbooks extra
+      - - Dante Alighieri Society of Massachusetts
+        - Weekly two-hour classes for 10 weeks, in person or online, from PLIDA A1.1 up to B2.1
+        - $350, or $325 for members, as last listed
+    after: The Edinburgh institute has no end-of-course exams but gives a certificate of attendance on request. In Massachusetts, tuition is paid in full before the first class, and a $50 administration
+      fee comes off any refund.
+  - h: The CILS ladder, level by level
+    p:
+    - The Italian Cultural Institute in New York runs CILS exams on behalf of the Università per Stranieri di Siena. No earlier certificate is needed to sit any level. Here is the ladder with its Italian
+      names and the fees at two centers.
+    table:
+      head:
+      - Level
+      - What it means
+      - Fee, IIC New York
+      - Fee, International House London
+      rows:
+      - - A1
+        - Contact
+        - $90
+        - £145
+      - - A2
+        - Survival
+        - $90
+        - £155
+      - - B1 (CILS Uno)
+        - Threshold
+        - $150
+        - £205
+      - - B2 (CILS Due)
+        - Progress
+        - $160
+        - £215
+      - - C1 (CILS Tre)
+        - Effectiveness
+        - $190
+        - £240
+      - - C2 (CILS Quattro)
+        - Mastery
+        - $220
+        - £270
+    after: International House London also runs a B1 Cittadinanza exam (£205), which it says certifies your Italian for citizenship applications. Two other Italian certificates exist, CELI from the Università
+      per Stranieri di Perugia and PLIDA.
+  faq:
+  - q: When are CILS exams held?
+    a: The main sittings for all levels are in June and December. International House London lists 10 June and 2 December 2027, with registration closing in early May and late October.
+  - q: How much does the CILS exam cost?
+    a: It depends on the level and center. Fees were listed at $90 to $220 at the Italian Cultural Institute in New York and £145 to £270 at International House London.
+  - q: What is the difference between CILS, CELI and PLIDA?
+    a: They are three different Italian language certificates. CILS comes from the University for Foreigners of Siena and CELI from the University for Foreigners of Perugia; the Dante Alighieri Society
+      of Massachusetts names its class levels after PLIDA.
+  - q: What level of Italian do you need for citizenship?
+    a: B1. International House London runs a dedicated B1 Cittadinanza exam for citizenship applications, and the New York institute says B1 can also be used to apply for Italian citizenship.
+  sources:
+  - label: Istituto Italiano di Cultura di New York, CILS Exams
+    url: https://iicnewyork.esteri.it/en/lingua-e-cultura/certificazioni/
+    checked: '2026-11-23'
+  - label: International House London, Italian CILS qualification
+    url: https://www.ihlondon.com/course/italian-cils-qualification/
+    checked: '2026-11-23'
+  - label: Istituto Italiano di Cultura di Edimburgo, How to enrol
+    url: https://iicedimburgo.esteri.it/en/lingua-e-cultura/i-corsi-di-lingua/how-to-enrol/
+    checked: '2026-11-23'
+  - label: Dante Alighieri Society of Massachusetts, PLIDA and Italian classes
+    url: https://dantemass.org/class-info
+    checked: '2026-11-23'
+  kit:
+  - name: Italian-English dictionary
+    why: for looking up words between classes
+    url: https://www.amazon.co.uk/s?k=italian+english+dictionary
+  - name: CILS practice book
+    why: for working through past-paper style exercises before the exam
+    url: https://www.amazon.co.uk/s?k=CILS+italian+exam+practice
+  related:
+  - learn-italian-before-a-trip
+  - learn-spanish
+  - learn-a-language-to-b1
+  - learn-to-make-pasta
+- id: learn-portuguese
+  title: Learn Portuguese and aim for a CAPLE certificate
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: year
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  - anywhere
+  why: Portuguese comes in two main flavors, Brazilian and European, and the two London courses we checked focus mainly on Brazilian Portuguese, so it is worth knowing which you want before you book. For
+    a formal goal, Portugal's CAPLE exams certify five levels, from the CIPLE at A2 to the DUPLE at C2.
+  start:
+  - Decide whether you want Brazilian or European Portuguese, and check which a course teaches before you book.
+  - Start with a beginners' module or a taster at an adult education college or a university short course, or a live online course.
+  - When you reach a level you are happy with, find a CAPLE exam center and check its dates and fees.
+  links:
+  - label: 'City Lit: Portuguese courses for beginners (London and online)'
+    url: https://www.citylit.ac.uk/courses/languages/european/portuguese/beginners
+    region: uk
+    checked: '2026-11-23'
+  - label: 'City, University of London: Portuguese Beginners (Year 1) short course'
+    url: https://www.city.ac.uk/study/courses/short-courses/courses/portuguese-beginners-year-1
+    region: uk
+    checked: '2026-11-23'
+  - label: 'International Language Institute of Massachusetts: Portuguese (Northampton, MA)'
+    url: https://ili.edu/language-courses/learn-portuguese/group-lessons/
+    region: us
+    checked: '2026-11-23'
+  - label: 'NOVA FCSH: Camões online summer course in Portuguese'
+    url: https://www.fcsh.unl.pt/en/portuguese-language-lab/online-summer-course
+    region: any
+    checked: '2026-11-23'
+  seo_title: 'Learn Portuguese as an adult: classes and CAPLE exams'
+  description: Where to learn Portuguese in the UK, the US and online, whether a course teaches Brazilian or European Portuguese, and what the CAPLE exam levels cost.
+  detail:
+  - h: Ways in, compared
+    p:
+    - Check the variety. City Lit's beginners' module centers on Brazilian Portuguese but may cover other varieties, and City, University of London says the focus of its beginners' course is Brazilian Portuguese,
+      with some references to European Portuguese.
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London and online
+        - Brazilian Portuguese beginners module 1, evening, online, from 11 January 2027; also a taster at Keeley Street
+        - £239, £155 concession; taster £19
+      - - City, University of London
+        - Portuguese Beginners (Year 1), one evening a week for 30 weeks in three modules, on campus, starting in October
+        - To be confirmed
+      - - International Language Institute of Massachusetts, Northampton
+        - Small online groups of up to 12, 18 hours over 6 or 12 weeks; the page says only private tutorials are running now, with group dates to be announced
+        - $429 to $479 for group classes when last run
+      - - Camões Institute and six Portuguese universities, online
+        - Summer course; ran 29 June to 24 July 2026 (A2 edition, half self-study), 60 hours, live sessions weekdays 2pm to 3:30pm Lisbon time; check for the next edition
+        - €325 plus €10 insurance; Camões scholarships can cover tuition
+  - h: The CAPLE ladder
+    p:
+    - The Camões Centre at the University of Leeds says the CAPLE exams were set up by Instituto Camões, the Portuguese education department and the University of Lisbon, and are open to anyone aged 15
+      or over. There are five levels, from A2 to C2.
+    table:
+      head:
+      - Level
+      - Exam
+      - Certificate
+      - Tuition fee at the University of Coimbra exam center (a separate registration fee also applies)
+      rows:
+      - - A2
+        - CIPLE
+        - Initial Certificate
+        - €95
+      - - B1
+        - DEPLE
+        - Elementary Diploma
+        - €115
+      - - B2
+        - DIPLE
+        - Intermediate Diploma
+        - €135
+      - - C1
+        - DAPLE
+        - Advanced Diploma
+        - €155
+      - - C2
+        - DUPLE
+        - University Diploma
+        - €170
+    after: Coimbra lets each candidate sit only one exam per exam period. Results are published within 20 working days of CAPLE receiving the papers, and the certificate is ready 15 to 20 working days after
+      that.
+  faq:
+  - q: Should I learn Brazilian or European Portuguese?
+    a: 'It depends where you will use it. Check before you book: City Lit''s beginners'' module centers on Brazilian Portuguese but may cover other varieties, and City, University of London''s beginners''
+      course focuses on Brazilian Portuguese.'
+  - q: What is the CIPLE exam?
+    a: CIPLE is the CAPLE exam at A2, the first level with a certificate. The tuition fee was €95 as last listed at the University of Coimbra, plus a registration fee.
+  - q: How many levels does CAPLE have?
+    a: Five, from CIPLE at A2 through DEPLE, DIPLE and DAPLE to DUPLE at C2.
+  - q: Can I learn Portuguese online with the Camões Institute?
+    a: Possibly. A Camões Institute online summer course with six Portuguese universities ran in summer 2026 (A2 edition, half self-study), 60 hours over four weeks; check for the next edition.
+  sources:
+  - label: City Lit, Portuguese courses for beginners
+    url: https://www.citylit.ac.uk/courses/languages/european/portuguese/beginners
+    checked: '2026-11-23'
+  - label: City, University of London, Portuguese Beginners (Year 1)
+    url: https://www.city.ac.uk/study/courses/short-courses/courses/portuguese-beginners-year-1
+    checked: '2026-11-23'
+  - label: International Language Institute of Massachusetts, Portuguese group lessons
+    url: https://ili.edu/language-courses/learn-portuguese/group-lessons/
+    checked: '2026-11-23'
+  - label: NOVA FCSH, Online Summer Course, Portuguese Universities/Camões Consortium
+    url: https://www.fcsh.unl.pt/en/portuguese-language-lab/online-summer-course
+    checked: '2026-11-23'
+  - label: University of Coimbra, CAPLE Exams
+    url: https://ucpages.uc.pt/en/fluc/iro/lape-1
+    checked: '2026-11-23'
+  - label: University of Leeds, Camões Centre for Portuguese Language
+    url: https://ahc.leeds.ac.uk/camoes-centre-portuguese-language-0
+    checked: '2026-11-23'
+  kit:
+  - name: Portuguese-English dictionary
+    why: for looking up words between classes
+    url: https://www.amazon.co.uk/s?k=portuguese+english+dictionary
+  - name: Portuguese verb book
+    why: for drilling verb tables, the main grammar load for beginners
+    url: https://www.amazon.co.uk/s?k=portuguese+verbs+book
+  related:
+  - learn-spanish
+  - learn-french
+  - learn-a-language-to-b1
+  - learn-with-an-ai-tutor
+- id: learn-arabic
+  title: Learn Arabic in a class
+  category: think
+  kind: skill
+  effort: demanding
+  cost: mid
+  time: year
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Arabic means learning a new script as well as a new language, and choosing between Modern Standard Arabic, used for formal speech and writing, and a spoken dialect such as Egyptian or Levantine.
+    Ten-week beginners' terms in London and online let you try one before you commit.
+  start:
+  - Decide whether you want Modern Standard Arabic (for reading, news and formal use) or a spoken dialect (for conversation in one region), and check which a course teaches.
+  - 'Book a beginners'' term: an adult education college, a university language center, or a continuing education class.'
+  - Expect the alphabet to come gradually; City Lit, for example, introduces the script over three terms.
+  links:
+  - label: 'City Lit: Arabic beginners module 1 (London and online)'
+    url: https://www.citylit.ac.uk/courses/arabic-beginners-module-1
+    region: uk
+    checked: '2026-11-23'
+  - label: 'SOAS Language Centre: Arabic language courses'
+    url: https://www.soas.ac.uk/study/language-centre/our-language-short-courses/arabic-language-courses
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Portland Community College: Arabic Conversation Level 1 (online)'
+    url: https://www.pcc.edu/schedule/winter/lan/9lan611a
+    region: us
+    checked: '2026-11-23'
+  - label: 'University of Denver Continuing Education: Beginners'' Arabic (online)'
+    url: https://www.du.edu/continuing-education/course/beginners-arabic
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Learn Arabic as an adult: Modern Standard or dialect?'
+  description: Modern Standard Arabic or a dialect like Levantine? What beginners' Arabic classes in the UK and US teach, how long they run and what they cost.
+  detail:
+  - h: Modern Standard Arabic or a dialect?
+    p:
+    - SOAS describes Modern Standard Arabic as the standard form of formal spoken and written Arabic, used in official settings, education, and the media.
+    - Middlebury's Language Schools blog says Egyptian is the most commonly spoken dialect, Levantine (Syria, Jordan, Palestine and Lebanon) is next, and many speakers from other regions struggle to understand
+      Moroccan. It says choosing a dialect depends on your interests and goals; Middlebury itself teaches Modern Standard Arabic and brings in Egyptian and Levantine from its first levels.
+    - The choice matters less at the very start than you might think. SOAS's Levantine beginners' course compares the dialect with Modern Standard Arabic and says learners can often move between the two
+      at that stage, because the difference is minimal. SOAS also runs Egyptian, Maghrebi and Qur'anic Arabic courses.
+  - h: Ways in, compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London and online
+        - Arabic beginners module 1, Modern Standard Arabic with the alphabet introduced gradually; 10 weekly sessions in person at Keeley Street or online, or 8 online, from January 2027
+        - £259; £207 senior for the Thursday daytime class; £168 concession
+      - - SOAS Language Centre, London and online
+        - Modern Standard Arabic beginners on campus (20 hours over a 10-week term) or Levantine beginners online (15 hours with a teacher plus 5 of guided study)
+        - Not given on the course pages; see SOAS's course fees page
+      - - Portland Community College, Oregon (online)
+        - Arabic Conversation Level 1, Modern Standard Arabic, one evening a week, January to March 2027
+        - $109 or $145, depending on section
+      - - University of Denver Continuing Education (online)
+        - Beginners' Arabic, non-credit, 90 minutes a week for 10 weeks; the full course runs fall, winter and spring
+        - $330
+    after: SOAS's Modern Standard Arabic on-campus beginners' course gives a certificate of attendance at 70% attendance; its beginners' courses may not run if too few enroll.
+  faq:
+  - q: Should I learn Modern Standard Arabic or a dialect first?
+    a: There is no single answer. Modern Standard Arabic is the language of formal speech, education and the media, while dialects are for everyday talk in one region; SOAS says the two differ only minimally
+      at beginners' level.
+  - q: Which Arabic dialect is most widely spoken?
+    a: Middlebury's Language Schools blog says Egyptian is the most commonly spoken dialect in the Arab world, followed by Levantine.
+  - q: Do I need to learn the Arabic alphabet?
+    a: Yes, on most courses, but gradually. City Lit introduces the script over three terms, and SOAS's Levantine beginners' course teaches the alphabet.
+  - q: How long is a beginners' Arabic course?
+    a: Usually about ten weeks a term. City Lit runs 10 weekly sessions, SOAS 20 hours over a 10-week term, and the University of Denver 10 weeks at 90 minutes a week.
+  sources:
+  - label: City Lit, Arabic beginners module 1
+    url: https://www.citylit.ac.uk/courses/arabic-beginners-module-1
+    checked: '2026-11-23'
+  - label: SOAS Language Centre, Arabic language courses
+    url: https://www.soas.ac.uk/study/language-centre/our-language-short-courses/arabic-language-courses
+    checked: '2026-11-23'
+  - label: SOAS, Arabic (Modern Standard) Beginners course on campus
+    url: https://soas.ac.uk/study/find-course/arabic-modern-standard-beginners-course-campus
+    checked: '2026-11-23'
+  - label: SOAS, Arabic (Colloquial Levantine) Beginners Course
+    url: https://www.soas.ac.uk/study/find-course/arabic-colloquial-levantine-beginners-course
+    checked: '2026-11-23'
+  - label: Middlebury Language Schools blog, Which Arabic Dialect Should I Learn?
+    url: https://www.middlebury.edu/language-schools/blog/which-arabic-dialect-to-learn
+    checked: '2026-11-23'
+  - label: Portland Community College, Arabic Conversation Level 1
+    url: https://www.pcc.edu/schedule/winter/lan/9lan611a
+    checked: '2026-11-23'
+  - label: University of Denver, Beginners' Arabic
+    url: https://www.du.edu/continuing-education/course/beginners-arabic
+    checked: '2026-11-23'
+  kit:
+  - name: Arabic alphabet workbook
+    why: for practicing letter shapes between classes
+    url: https://www.amazon.co.uk/s?k=arabic+alphabet+workbook
+  - name: Arabic-English dictionary
+    why: for looking up words between classes
+    url: https://www.amazon.co.uk/s?k=arabic+english+dictionary
+  related:
+  - learn-the-oud
+  - learn-a-language-to-b1
+  - learn-with-an-ai-tutor
+  - learn-to-read-hieroglyphs
+- id: volunteer-for-lowland-search-and-rescue
+  title: Volunteer with a lowland search and rescue team
+  category: connect
+  kind: experience
+  effort: demanding
+  cost: low
+  time: months
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Lowland search and rescue teams look for missing and vulnerable people in woodland, farmland, towns and near water, often at the request of the police, and they are on call around the clock. You
+    need no special skills to start, because teams train you; Wiltshire says training takes about 100 hours over about six months.
+  start:
+  - Find your nearest team on Lowland Rescue's list of member teams in the UK, or ask your county sheriff's office in the US whether it has a volunteer search and rescue unit.
+  - Check when the team next recruits, and read its fitness test, such as a timed walk of 5 to 6 miles (8 to 10 km).
+  - Work out how much on-call time and money you can give; members choose their own on-call hours, and Wiltshire says members pay their own fuel and outdoor clothing.
+  links:
+  - label: 'Lowland Rescue: member teams across the UK'
+    url: https://www.lowlandrescue.org/member-teams
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Wiltshire Search and Rescue: volunteering FAQs'
+    url: https://www.wilsar.org.uk/volunteering/faqs
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Surrey Search and Rescue: what being a member involves'
+    url: https://surreysar.org.uk/membership/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'NASAR: ground search and rescue courses and SARTECH certification'
+    url: https://nasar.org/page/GSAR
+    region: us
+    checked: '2026-11-23'
+  - label: 'San Diego County Sheriff: Search and Rescue volunteers'
+    url: https://www.sdsheriff.gov/recruitment/search-and-rescue
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'Lowland search and rescue volunteering: how to join'
+  description: How to join a lowland search and rescue team in the UK or a sheriff's unit in the US, and the training, fitness tests and on-call time teams expect.
+  detail:
+  - h: What the work involves
+    p:
+    - Lowland Rescue (ALSAR) is the UK association of lowland search and rescue teams. It lists 36 member teams, including one in Northern Ireland and one in Jersey, and none in Scotland.
+    - Surrey Search and Rescue, one of the busiest lowland teams, has around 80 volunteers who search woodland, farmland, urban areas and places near water for missing people. It says it deploys about 50
+      times a year, mostly for Surrey Police, and that the public cannot call it directly. In an emergency, call 999 in the UK or 911 in the US.
+    - The Community Rescue Service, the only member of ALSAR in Ireland, says its members use set patterns of visual search and can be deployed for long periods for people who do not want to be found.
+    - Lincolnshire Lowland Search and Rescue told Lincolnshire Life it is called out about once a week on average, needs at least four people on each call-out, and that searches can last from a few hours
+      to a few days.
+  - h: Some ways in
+    table:
+      head:
+      - Team or course
+      - What it asks
+      - Commitment or cost (as last listed)
+      rows:
+      - - Wiltshire Search and Rescue
+        - From 18, no upper age limit; walk 5 miles (8 km) in under two hours over rough terrain; police vetting
+        - About 100 hours of training over about six months; attend at least 25% of call-outs and training each year; training free, own fuel and clothing
+      - - Surrey Search and Rescue
+        - Recreational walking and basic navigation; Hill Day fitness walk of 6 miles (10 km) in 2 hours
+        - Nine-week training course of weekends and evenings; about 5 to 6 months to become operational
+      - - Tulare County Sheriff's Search and Rescue, California
+        - From 18; acceptance by a team, then a sheriff's background check; California driver's license
+        - An initial 80-hour SAR Academy; own transport to all activities
+      - - San Diego County Sheriff's Search and Rescue
+        - Nine units, from tactical search and canine to communications and search management
+        - More than 220 hours of search training before responding to missions
+      - - NASAR courses (US)
+        - Introduction to SAR, leading to SARTECH III; Fundamentals of SAR (FUNSAR), leading to SARTECH II
+        - 16 hours and 38 hours of classroom time; fees not listed on the overview page
+    after: Not every role is in the field. Wiltshire Search and Rescue says its support roles have no fitness requirement, and NASAR's awareness-level SARTECH IV prepares people to help at a search base
+      or command post.
+  faq:
+  - q: What is lowland search and rescue?
+    a: It is volunteer searching for missing and vulnerable people away from the mountains, in woodland, farmland, towns and near water. Lowland Rescue (ALSAR) is the UK association of lowland search and
+      rescue teams.
+  - q: Do you need experience to join a search and rescue team?
+    a: Usually not. Wiltshire Search and Rescue says no special skills are needed, though Surrey Search and Rescue asks for recreational walking experience and basic navigation.
+  - q: How much time does search and rescue volunteering take?
+    a: Expect about six months of training, then on-call time you choose yourself. Wiltshire asks operational members to attend at least a quarter of call-outs and training sessions each year.
+  - q: Do search and rescue volunteers get paid?
+    a: No. Wiltshire Search and Rescue says its roles are unpaid and expenses are not reimbursed, and that fuel is members' biggest cost.
+  safety: Searches run day and night in all weather, often over rough ground and near water, and teams test fitness before you go out. Water rescue and other specialist work comes only after further training.
+  sources:
+  - label: Lowland Rescue, Member Teams
+    url: https://www.lowlandrescue.org/member-teams
+    checked: '2026-11-23'
+  - label: Community Rescue Service, Lowland Rescue
+    url: https://communityrescue.org/service/lowland-rescue
+    checked: '2026-11-23'
+  - label: Surrey Search and Rescue, What does being a member involve?
+    url: https://surreysar.org.uk/membership/
+    checked: '2026-11-23'
+  - label: Surrey Police and Crime Commissioner, The volunteers making a life-or-death difference to some of Surrey's vulnerable missing people
+    url: https://www.surrey-pcc.gov.uk/volunteers-making-life-or-death-difference-surreys-vulnerable-missing-people
+    checked: '2026-11-23'
+  - label: Wiltshire Search and Rescue, Frequently Asked Questions
+    url: https://www.wilsar.org.uk/volunteering/faqs
+    checked: '2026-11-23'
+  - label: Lincolnshire Life, Bringing 'mispers' home
+    url: https://www.lincolnshirelife.co.uk/?p=48243
+    checked: '2026-11-23'
+  - label: National Association for Search and Rescue, Ground SAR Education
+    url: https://nasar.org/page/GSAR
+    checked: '2026-11-23'
+  - label: Tulare County Sheriff, Volunteer Requirements
+    url: https://tularecounty.ca.gov/sheriff/divisions/patrol-division/emergency-services/emergency-services-division/join-search-and-rescue/volunteer-requirements
+    checked: '2026-11-23'
+  - label: San Diego County Sheriff, Search and Rescue
+    url: https://www.sdsheriff.gov/recruitment/search-and-rescue
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Jack O'Hern, Lincolnshire Lowland Search and Rescue
+    line: Is training as a search technician with Lincolnshire Lowland Search and Rescue after nine years with Lincs and Notts Air Ambulance.
+    title: Bringing 'mispers' home
+    outlet: Lincolnshire Life
+    url: https://www.lincolnshirelife.co.uk/?p=48243
+    checked: '2026-11-23'
+  kit:
+  - name: Head torch
+    why: for night searches and call-outs after dark
+    url: https://www.amazon.co.uk/s?k=head+torch+rechargeable
+  - name: Waterproof over-trousers
+    why: members buy their own outdoor clothing for searches in all weather
+    url: https://www.amazon.co.uk/s?k=waterproof+over+trousers+walking
+  - name: Map and compass navigation book
+    why: for practicing the basic navigation teams ask for
+    url: https://www.amazon.co.uk/s?k=map+and+compass+navigation+book
+  related:
+  - volunteer-with-mountain-rescue
+  - learn-map-and-compass
+  - learn-first-aid
+  - become-a-community-first-responder
+- id: become-an-on-call-firefighter
+  title: Become an on-call firefighter
+  category: connect
+  kind: experience
+  effort: demanding
+  cost: free
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: On-call firefighters in the UK keep their own jobs and lives, carry a pager and go to their local station only when a call comes in, to fires, crashes, floods and rescues. It is paid part-time work,
+    and several fire services say there is no upper age limit for applying.
+  start:
+  - Check that you live or work close enough to a station; services set a response time, such as five minutes in Cornwall or eight minutes in Scotland.
+  - Read your fire and rescue service's on-call page for the hours of cover it wants, the fitness tests and whether your nearest station is recruiting, and register your interest.
+  - In the US, search the National Volunteer Fire Council's Make Me a Firefighter finder for volunteer fire and EMS departments near you, including support roles.
+  links:
+  - label: 'Cornwall Fire and Rescue Service: on-call firefighter'
+    url: https://www.cornwall.gov.uk/fire-and-rescue-service/service-careers/on-call-firefighter-retained/
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Hampshire and Isle of Wight Fire and Rescue Service: become an on-call firefighter'
+    url: https://www.hantsfire.gov.uk/careers/the-role-of-a-firefighter/become-an-on-call-firefighter
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Scottish Fire and Rescue Service: on-call firefighter'
+    url: https://www.firescotland.gov.uk/careers/on-call-firefighter/on-call-firefighter
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Make Me a Firefighter: find a volunteer fire department (US)'
+    url: https://makemeafirefighter.org/about
+    region: us
+    checked: '2026-11-23'
+  - label: 'Forest Grove Fire and Rescue: volunteer program (Oregon)'
+    url: https://forestgrove-or.gov/230/Volunteer-Program
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'How to become an on-call firefighter: tests, pay, hours'
+  description: How on-call firefighting works in the UK and volunteer firefighting in the US, from response times and fitness tests to hours of cover, training and pay.
+  detail:
+  - h: How on-call firefighting works
+    p:
+    - On-call firefighters, also called retained firefighters, attend the station only for emergency call-outs and a weekly training session. Hampshire and Isle of Wight says call-outs typically come two
+      or three times a week and last a few hours, by day, evening or weekend.
+    - You must be able to get to the station fast. Hampshire asks you to live or work within 4 to 6 minutes of the station, depending on which one; Cornwall says five minutes; Scotland says you must be
+      able to respond within eight minutes. Warwickshire Fire and Rescue Service has asked recruits to be available at least two nights a week, from 7pm to 7am, at home with a pager.
+    - It is paid. Services pay a retainer for being available plus pay for call-outs and training. Staffordshire Fire and Rescue Service says most of its on-call firefighters earn between £300 and £1,000
+      a month and asks for at least 50 hours of cover a week; Scotland offers availability levels from up to 30 hours a week to 120 hours or more.
+    - If you have a job, you need your employer's support or permission to be released for call-outs. Cornwall, Hampshire and Staffordshire all say there is no upper age limit; the minimum is 18 at the
+      start of employment in Cornwall.
+  - h: Tests and training, as listed
+    table:
+      head:
+      - Service
+      - Tests and requirements
+      - Training and cover (as last listed)
+      rows:
+      - - Staffordshire Fire and Rescue Service
+        - Bleep test to level 8.8, then job-related tests including casualty evacuation, confined space, equipment carry and ladder climb
+        - 20 weeks of 2-hour sessions at the station; about three years to become competent; at least 50 hours of cover a week
+      - - Hampshire and Isle of Wight Fire and Rescue Service
+        - Fitness test of strength, endurance and agility; two online tests if you lack GCSE maths and English at grade C/4
+        - 8-day core skills course, then courses in breathing apparatus, road traffic collisions and emergency care
+      - - Cornwall Fire and Rescue Service
+        - Fitness and practical tests, vision standards, NFCC written tests in maths and English; hold, or be working towards, a full category B UK driving license by the start of employment
+        - Weekly two-hour training session; pay varies with availability and station activity
+      - - Scottish Fire and Rescue Service
+        - Fitness test, vision and color perception check; 18 or over
+        - Agreed hours, from up to 30 to 120 or more a week
+      - - Forest Grove Fire and Rescue, Oregon (volunteer)
+        - From 18; high school diploma or equivalent; Oregon driver's license; background check
+        - Three-month academy, three days a week, over 350 hours; higher certifications paid by the department
+    after: In the US, most firefighters are volunteers; the National Volunteer Fire Council says seven out of ten firefighters and emergency responders volunteer. It says departments usually provide training
+      free, that some offer pay per call, which varies widely, and that many also need volunteers for fundraising, translation and fire prevention education.
+  faq:
+  - q: How close do you have to live to be an on-call firefighter?
+    a: It depends on the service. Hampshire asks for 4 to 6 minutes from the station, Cornwall five minutes, and Scotland a response within eight minutes.
+  - q: How much do on-call firefighters get paid?
+    a: They get a retainer plus pay for call-outs and training. Staffordshire Fire and Rescue Service says most of its on-call firefighters earn between £300 and £1,000 a month.
+  - q: Is there an age limit for on-call firefighters?
+    a: Cornwall, Hampshire and Staffordshire all say there is no upper age limit. You must pass the same fitness tests as everyone else.
+  - q: Can I be an on-call firefighter and have a full-time job?
+    a: Yes, many do, but you need your employer's support to be released for call-outs. The Scottish Fire and Rescue Service asks for your employer's express permission.
+  safety: Firefighting is hard physical work, and services test strength and fitness before you start, with tests such as casualty evacuation, confined space, equipment carry and ladder climb.
+  sources:
+  - label: Cornwall Council, On-call firefighter (retained)
+    url: https://www.cornwall.gov.uk/fire-and-rescue-service/service-careers/on-call-firefighter-retained/
+    checked: '2026-11-23'
+  - label: Hampshire and Isle of Wight Fire and Rescue Service, Become an on-call firefighter
+    url: https://www.hantsfire.gov.uk/careers/the-role-of-a-firefighter/become-an-on-call-firefighter
+    checked: '2026-11-23'
+  - label: Staffordshire Fire and Rescue Service, On-call firefighters
+    url: https://www.staffordshirefire.gov.uk/careers/on-call-firefighters
+    checked: '2026-11-23'
+  - label: Scottish Fire and Rescue Service, On call firefighter
+    url: https://www.firescotland.gov.uk/careers/on-call-firefighter/on-call-firefighter
+    checked: '2026-11-23'
+  - label: Warwickshire County Council, Do you want to become an on-call firefighter like Jamie?
+    url: https://www.warwickshire.gov.uk/news/article/6132/do-you-want-to-become-an-on-call-firefighter-like-jamie
+    checked: '2026-11-23'
+  - label: National Volunteer Fire Council, Make Me a Firefighter
+    url: https://makemeafirefighter.org/about
+    checked: '2026-11-23'
+  - label: Make Me a Firefighter, FAQ
+    url: https://makemeafirefighter.org/faq
+    checked: '2026-11-23'
+  - label: City of Forest Grove, Volunteer Program
+    url: https://forestgrove-or.gov/230/Volunteer-Program
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Jamie Jeffs, Warwickshire Fire and Rescue Service
+    line: Joined Warwickshire Fire and Rescue Service as an on-call firefighter, a job he had wanted since childhood, and says his first call made the hairs on the back of his neck stand up.
+    title: Do you want to become an on-call firefighter like Jamie?
+    outlet: Warwickshire County Council
+    url: https://www.warwickshire.gov.uk/news/article/6132/do-you-want-to-become-an-on-call-firefighter-like-jamie
+    checked: '2026-11-23'
+  kit:
+  - name: Marker cones
+    why: for marking out a 20 m shuttle run to practice the bleep test
+    url: https://www.amazon.co.uk/s?k=marker+cones+fitness
+  - name: Kettlebell
+    why: for strength training ahead of equipment-carry and casualty-evacuation tests
+    url: https://www.amazon.co.uk/s?k=kettlebell
+  related:
+  - volunteer-for-the-coastguard
+  - volunteer-with-st-john-ambulance
+  - become-a-community-first-responder
+  - learn-first-aid
+- id: volunteer-at-an-animal-shelter
+  title: Volunteer at an animal shelter
+  category: connect
+  kind: habit
+  effort: moderate
+  cost: free
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: Behind every rehoming center is a steady routine of cleaning pens, laundry, feeding, grooming and playing with animals waiting for new homes, and volunteers help with it on regular shifts. Cats Protection
+    asks for two to three hours a week from its cat care volunteers, and Battersea has more than 600 volunteers across its three centers.
+  start:
+  - Pick a shelter near you and look at its volunteer roles; many split them into animal care, shelter support, reception and events.
+  - Check the minimum age, the weekly commitment and how long they want you to stay; Battersea asks most volunteers for at least six months.
+  - Apply online and expect an information session or interview, then an induction and hands-on training before you work alone.
+  links:
+  - label: 'Cats Protection: join us as a centre volunteer'
+    url: https://www.cats.org.uk/support-us/volunteering/join-us-as-a-centre-volunteer
+    region: uk
+    checked: '2026-11-23'
+  - label: 'Battersea: volunteering at Battersea'
+    url: https://www.battersea.org.uk/support-us/volunteer/volunteering-battersea
+    region: uk
+    checked: '2026-11-23'
+  - label: 'ASPCA: volunteer at the ASPCA Adoption Center (New York City)'
+    url: https://www.aspca.org/get-involved/volunteer/volunteer-aspca-adoption-center
+    region: us
+    checked: '2026-11-23'
+  - label: 'Humane Society of Missouri: in-shelter volunteering (St. Louis)'
+    url: https://hsmo.org/in-shelter/
+    region: us
+    checked: '2026-11-23'
+  seo_title: 'How to volunteer at an animal shelter: roles and hours'
+  description: What animal shelter volunteers do in the UK and US, from cat care to shelter support, with the age limits, weekly hours and training shelters ask for.
+  detail:
+  - h: What volunteers do
+    p:
+    - Cat care volunteers at Cats Protection clean the cats' living areas, groom them, help with feeding and play with and handle them, for two to three hours a week that can be shared with other volunteers.
+      The charity has more than 30 adoption and homing centers across the UK and takes centre volunteers from 14.
+    - Not every role is hands-on with animals. The ASPCA's main need at its New York City Adoption Center is Shelter Support, which means laundry, sorting donations, cleaning empty enclosures, stocking
+      supplies and washing dishes and transport cages. Volunteers must be able to stand for up to three hours and lift up to 35 pounds (16 kg).
+    - Larger shelters train you in stages. At the Humane Society of Missouri, dog walkers attend an orientation and at least two hands-on training sessions, and enrichment volunteers attend an orientation
+      and three mentoring sessions.
+  - h: Some ways in
+    table:
+      head:
+      - Shelter
+      - Roles
+      - Commitment (as last listed)
+      rows:
+      - - Cats Protection, centres across the UK
+        - Cat care, customer service, transport, site upkeep, education and fundraising
+        - Cat care 2 to 3 hours a week; from age 14
+      - - Battersea, three centres
+        - Kennel and cattery support, office support, events
+        - At least six months for most roles; from age 18; competitive selection
+      - - ASPCA Adoption Center, New York City
+        - Shelter Support under the care team
+        - From age 16; a 20-minute information session before applying
+      - - Humane Society of Missouri, St. Louis
+        - Dog walking, kennel and feline enrichment, shelter support, greeter and gift shop
+        - Dog walking 1 to 3 hours a week for at least six months; shelter support two to three times a month
+    after: None of the four mentions a fee to volunteer. If you mainly want to walk dogs, see our page on Dogs Trust centers; if you can take an animal home for a while, see fostering.
+  faq:
+  - q: How old do you have to be to volunteer at an animal shelter?
+    a: It varies. Cats Protection takes centre volunteers from 14, the ASPCA in New York from 16 with a separate youth application, and Battersea from 18.
+  - q: How many hours do animal shelter volunteers work?
+    a: Usually a few hours a week. Cats Protection asks for two to three hours a week for cat care, and the Humane Society of Missouri asks dog walkers for one to three hours a week for at least six months.
+  - q: Do you get to play with the animals when volunteering at a shelter?
+    a: In some roles. Cats Protection's cat care role includes play and handling, but the ASPCA's main New York role is shelter support such as laundry and cleaning.
+  - q: Do I need experience to volunteer at an animal shelter?
+    a: Not usually. Cats Protection asks for basic knowledge of cats and gives online and face-to-face training, and Battersea trains new volunteers at an induction.
+  sources:
+  - label: Cats Protection, Join us as a centre volunteer
+    url: https://www.cats.org.uk/support-us/volunteering/join-us-as-a-centre-volunteer
+    checked: '2026-11-23'
+  - label: Cats Protection, Cat care volunteer role description
+    url: https://www.cats.org.uk/media/2153/cat_care_volunteer_role.pdf
+    checked: '2026-11-23'
+  - label: Battersea, Volunteering at Battersea
+    url: https://www.battersea.org.uk/support-us/volunteer/volunteering-battersea
+    checked: '2026-11-23'
+  - label: Battersea, Battersea Old Windsor's longest serving volunteer spends almost a quarter of a century caring for dogs
+    url: https://www.battersea.org.uk/about-us/press/press-releases/longest-serving-battersea-volunteer
+    checked: '2026-11-23'
+  - label: ASPCA, Volunteer at the ASPCA Adoption Center
+    url: https://www.aspca.org/get-involved/volunteer/volunteer-aspca-adoption-center
+    checked: '2026-11-23'
+  - label: Humane Society of Missouri, In-Shelter Volunteering
+    url: https://hsmo.org/in-shelter/
+    checked: '2026-11-23'
+  inspire:
+  - kind: read
+    person: Ann Palmer, Battersea Old Windsor
+    line: Has volunteered as a dog socialiser at Battersea's Old Windsor centre since 2000, walking dogs, keeping them mentally stimulated and giving them affection, and also fosters dogs at home.
+    title: Battersea Old Windsor's Longest Serving Volunteer Spends Almost a Quarter of a Century Caring for Dogs
+    outlet: Battersea
+    url: https://www.battersea.org.uk/about-us/press/press-releases/longest-serving-battersea-volunteer
+    checked: '2026-11-23'
+  kit:
+  - name: Lint roller
+    why: for removing animal hair from clothes after a shift
+    url: https://www.amazon.co.uk/s?k=lint+roller
+  - name: Treat pouch
+    why: for carrying treats on dog walks and enrichment sessions, where the shelter allows them
+    url: https://www.amazon.co.uk/s?k=dog+treat+pouch
+  related:
+  - walk-dogs-at-a-dogs-trust-centre
+  - foster-a-rescue-animal
+  - volunteer-at-a-wildlife-hospital
+  - volunteer-at-a-donkey-sanctuary

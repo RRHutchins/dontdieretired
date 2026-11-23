@@ -152,14 +152,14 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 ## Safety
 
 - If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [25]
-- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [53]
-- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [54]
+- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [53, 54, 55]
+- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [56]
 - Stop if something does not feel right, and get it checked rather than training through it. [6, 28]
-- Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. [30, 33, 43, 44, 55, 56, 57]
+- Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. [30, 33, 43, 44, 57, 58, 59]
 - In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes. [32, 33, 43, 44, 50]
-- Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. [30, 44, 58]
+- Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. [30, 44, 60]
 - If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats. [43, 44]
-- In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. [59, 60, 61]
+- In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. [61, 62, 63]
 
 ## Where this comes from
 
@@ -218,11 +218,13 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 51. Royal Life Saving Society UK (RLSS UK), *Top Recommendations for Safer Open Water Swimming (published 20 June 2024, updated 26 November 2025)* (2025). Tier 3. https://www.rlss.org.uk/blog/top-recommendations-for-safer-open-water-swimming (opened 2026-11-09)
 52. International Journal of Environmental Research and Public Health 17(23), 8984 (Knechtle, Waśkiewicz, Sousa, Hill and Nikolaidis), *Cold Water Swimming, Benefits and Risks, a Narrative Review* (2020). Tier 4. https://pmc.ncbi.nlm.nih.gov/articles/PMC7730683 (opened 2026-11-09)
 53. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
-54. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
-55. Scottish Wildlife Trust (Living Seas snorkel trail), *Snorkel safety (last modified 16 July 2026)* (2026). Tier 3. https://snorkel.scottishwildlifetrust.org.uk/safety/ (opened 2026-11-13)
-56. U.S. National Park Service, Buck Island Reef National Monument, *Safety (last updated 10 August 2017)* (2017). Tier 3. https://www.nps.gov/buis/planyourvisit/safety.htm (opened 2026-11-13)
-57. Swim England (Open Water Swimming Hub), *Tips for practising in open water* (2026). Tier 3. https://www.swimming.org/openwater/tips-practising-open-water/ (opened 2026-11-13)
-58. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
-59. RNLI (Royal National Lifeboat Institution), *Rip currents (undated page; year is the year opened)* (2026). Tier 3. https://rnli.org/safety/know-the-risks/rip-currents (opened 2026-11-09)
-60. National Oceanic and Atmospheric Administration (NOAA), JetStream, *Rip Current Safety (last updated 11 July 2023)* (2023). Tier 3. https://noaa.gov/jetstream/ocean/rip-currents/rip-current-safety (opened 2026-11-12)
-61. American Red Cross, *Beach and Ocean Safety (undated page; year is the year opened)* (2026). Tier 3. https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/water-safety/beach-safety.html (opened 2026-11-12)
+54. American Family Physician 103(4) (Jonas and Arnold), summarizing the Wilderness Medical Society guideline (Wilderness Environ Med 2020;31(1):50-62), *Exercise-Associated Hyponatremia: Updated Guidelines from the Wilderness Medical Society* (2021). Tier 4. https://www.aafp.org/pubs/afp/issues/2021/0215/p252.html (opened 2026-11-23)
+55. Great Run (organiser of the Great North Run), *Hydration tips for runners* (2025). Tier 3. https://www.greatrun.org/training/respect-the-challenge/hydration (opened 2026-11-23)
+56. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
+57. Scottish Wildlife Trust (Living Seas snorkel trail), *Snorkel safety (last modified 16 July 2026)* (2026). Tier 3. https://snorkel.scottishwildlifetrust.org.uk/safety/ (opened 2026-11-13)
+58. U.S. National Park Service, Buck Island Reef National Monument, *Safety (last updated 10 August 2017)* (2017). Tier 3. https://www.nps.gov/buis/planyourvisit/safety.htm (opened 2026-11-13)
+59. Swim England (Open Water Swimming Hub), *Tips for practising in open water* (2026). Tier 3. https://www.swimming.org/openwater/tips-practising-open-water/ (opened 2026-11-13)
+60. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
+61. RNLI (Royal National Lifeboat Institution), *Rip currents (undated page; year is the year opened)* (2026). Tier 3. https://rnli.org/safety/know-the-risks/rip-currents (opened 2026-11-09)
+62. National Oceanic and Atmospheric Administration (NOAA), JetStream, *Rip Current Safety (last updated 11 July 2023)* (2023). Tier 3. https://noaa.gov/jetstream/ocean/rip-currents/rip-current-safety (opened 2026-11-12)
+63. American Red Cross, *Beach and Ocean Safety (undated page; year is the year opened)* (2026). Tier 3. https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/water-safety/beach-safety.html (opened 2026-11-12)

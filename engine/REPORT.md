@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-23)
 
-123 sources, 92 statements, 12 event profiles. Core 80, supported 12, thin 0, contested 0.
+125 sources, 92 statements, 12 event profiles. Core 81, supported 11, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -38,6 +38,7 @@
 - International Journal of Environmental Research and Public Health 17(23), 8984 (Knechtle, Waśkiewicz, Sousa, Hill and Nikolaidis), *Cold Water Swimming, Benefits and Risks, a Narrative Review* (2020). Opened 2026-11-09.
 - Cochrane Database of Systematic Reviews 2019(1), CD012424, *Exercise for preventing falls in older people living in the community (systematic review of 108 randomised trials)* (2019). Opened 2026-11-11.
 - EXCLI Journal 25, Doc591 (Knechtle, Thuany, Nikolaidis, Forte, Leite, Lepers, Chlíbková, Weiss, Rosemann, Vancini and Duric), *The New York City Marathon: A systematic review of performance, participation, pacing, and health-related outcomes* (2026). Opened 2026-11-14.
+- American Family Physician 103(4) (Jonas and Arnold), summarizing the Wilderness Medical Society guideline (Wilderness Environ Med 2020;31(1):50-62), *Exercise-Associated Hyponatremia: Updated Guidelines from the Wilderness Medical Society* (2021). Opened 2026-11-23.
 
 **3. Governing body or route authority**
 - England Athletics (Tom Craggs, National Endurance Manager), *Simplifying the running jargon, training pace* (2024). Opened 2026-10-27.
@@ -123,6 +124,7 @@
 - British Triathlon, *Triathlon Tips for Beginners* (2026). Opened 2026-11-22.
 - USA Triathlon (Beatrice Black), *Feel good about open water swimming* (2023). Opened 2026-11-22.
 - Royal Parks Half Marathon (plan powered by Coopah), *Royal Parks Half Marathon Training Plan: Beginner* (2026). Opened 2026-11-23.
+- Great Run (organiser of the Great North Run), *Hydration tips for runners* (2025). Opened 2026-11-23.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -184,6 +186,7 @@
 | core | 9 | on the day | In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. | britri-beginners-wales, tri-ireland-rules, usat-multisport-rules |
 | core | 9 | kit | On a hill day carry a waterproof jacket and warm layers, even in summer, plus enough water for the day, food, sun protection and a small first aid kit, and wear sturdy footwear. Ramblers also lists a head torch, a charged phone, a whistle and a survival or bothy bag. | bmc-hill-weather, ramblers-hill-tips, pc-safety-tips |
 | core | 8 | key session | Low-impact exercise such as cycling, swimming or rowing builds fitness with less pounding and is useful for everyone, not just the injured. | ea-training-pace, higdon-novice1, movingmedicine-cycling |
+| core | 8 | fuel and drink | Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. | eah-consensus-2015, wms-eah-2020-afp, greatrun-hydration (against: bc-sofa-50km, bc-nutrition-top10) |
 | core | 8 | warning signs | In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). | nhs-hypothermia, ms-hypothermia |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
@@ -222,7 +225,6 @@
 | core | 5 | warning signs | Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. | nhs-heart-attack |
 | core | 5 | intensity | For walking to count as exercise, walk briskly, at about 3 miles an hour, faster than a stroll; you should still be able to talk but not sing. Even a brisk 10-minute walk each day counts. If you are not very active, increase your walking distance gradually. | nhs-walking |
 | supported | 5 | key session | Train for the ground you will cover. For hill challenges walk hills fast, or use stairs, and add short hill repeats of 50 to 100 metres of climb, four to six times, coming down slowly. | bmc-hill-fit, ydnpa-three-peaks |
-| supported | 5 | fuel and drink | Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. | eah-consensus-2015 (against: bc-sofa-50km, bc-nutrition-top10) |
 | supported | 5 | why | Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 5 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit, cicerone-hill-fit |
 | supported | 3 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace |

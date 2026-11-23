@@ -992,3 +992,19 @@ sources:
     year: 2026  # undated page; only a 2026 copyright line
     url: https://www.cicerone.co.uk/how-to-get-hill-fit-and-train-for-long-distance-walking
     opened: '2026-11-23'
+  - id: wms-eah-2020-afp
+    tier: 4
+    group: eah-consensus  # the AFP summary does not name the WMS panel, which may overlap the 2015 consensus panel, so it is not counted as an independent voice
+    publisher: American Family Physician 103(4) (Jonas and Arnold), summarizing the Wilderness Medical Society guideline (Wilderness Environ Med 2020;31(1):50-62)
+    title: 'Exercise-Associated Hyponatremia: Updated Guidelines from the Wilderness Medical Society'
+    year: 2021
+    url: https://www.aafp.org/pubs/afp/issues/2021/0215/p252.html
+    opened: '2026-11-23'
+  - id: greatrun-hydration
+    tier: 3
+    group: greatrun
+    publisher: Great Run (organiser of the Great North Run)
+    title: Hydration tips for runners
+    year: 2025  # page metadata last modified 25 April 2025; no date in the text
+    url: https://www.greatrun.org/training/respect-the-challenge/hydration
+    opened: '2026-11-23'
