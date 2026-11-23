@@ -5,6 +5,8 @@ date: 2026-11-21
 photo_file: "File:Plesiosaurus dolichodeirus.JPG"
 photo_caption: "A Plesiosaurus fossil on show at the Natural History Museum, London. Mary Anning found the first complete plesiosaur skeleton in 1823."
 photo_alt: "A long-necked fossil reptile skeleton, dark bones set flat in pale stone, in a wooden-framed glass case with a small label in the corner."
+photo_checked: 2026-11-23
+photo_social: false  # photo passes §6l, but the 21 Nov pack has already gone out and is not rewritten (§6d)
 category: curious
 tags: [fossils, palaeontology, lyme-regis, jurassic-coast, dorset, science, history, women]
 segments: [learner, changer]

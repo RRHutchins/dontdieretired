@@ -2,6 +2,10 @@
 title: "Kevin Marshall and Danny Wood split the sled push and took a Hyrox world title home to Cornwall"
 slug: kevin-marshall-danny-wood-hyrox-world-title
 date: 2026-11-22
+photo_file: "File:U.S. Soldiers and Navy SEALs participate in a HYROX fitness competition at the Fort Myer Fitness Center on Joint Base Myer Henderson-Hall, Arlington, Va., Jan 15, 2026 - 33.jpg"
+photo_caption: "A competitor on a SkiErg, one of the Hyrox stations, at a Hyrox event at Fort Myer in Arlington, Virginia, in January 2026. The picture is not of Kevin Marshall or Danny Wood."
+photo_alt: "A man seen from behind pulls down on the handles of a SkiErg ski machine fixed to a gray block wall."
+photo_social: false  # the 22 Nov pack has already gone out and is not rewritten (§6d)
 category: move
 tags: [hyrox, fitness-racing, strength-training, running, doubles, cornwall, men]
 segments: [mover, changer]
