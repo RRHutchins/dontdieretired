@@ -15,7 +15,7 @@ SITE_ORIGIN = "https://dontdieretired.com"
 MAIL_FROM = "Don't Die Retired <signin@dontdieretired.com>"
 # Planner Plus paywall (RUNBOOK §6t day 15): "1" only on launch day, in the same change that sets site.yaml → plus.paywall
 # true. With "1" (and payments set up), an account without Plus can read its list but nothing it sends is stored.
-PLUS_PAYWALL = "0"
+PLUS_PAYWALL = "1"
 # Stripe live switch (RUNBOOK §6t launch step 11): always "0" here. The workflow makes it "1" for one deploy only when Robin
 # has set the repository variable PLUS_STRIPE_MODE to live and added STRIPE_LIVE_SECRET_KEY. Never edit it by hand.
 STRIPE_LIVE = "0"

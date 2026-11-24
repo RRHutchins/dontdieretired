@@ -60,7 +60,7 @@ plus:
   # get "Plan it yourself" links, the sample plan and the price, and plans already in their browser are read-only.
   # Set true only on launch day, once accounts.api is set, Stripe is live and Robin has bought and refunded once.
   # DDR_PLUS_PAYWALL=1 turns it on for a local test build.
-  paywall: false
+  paywall: true
 
 newsletter:
   provider: "buttondown"                     # buttondown | beehiiv | mailerlite | kit
