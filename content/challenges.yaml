@@ -90853,13 +90853,13 @@
     - uk
     - us
     - world
-  safety: HYROX advises trying the sled push at least once before race day and wearing shoes with good grip.
+  safety: "HYROX advises trying the sled push at least once before race day and wearing shoes with good grip. Build up over months, keep at least two rest days a week, and if you have osteoporosis or a high fracture risk, ask your doctor about the running and jumping first."
   why: HYROX alternates eight 1km runs with eight gym stations, from a 1,000m row to 100 wall balls, in the same format in every city. You can race alone, share the work with a partner in Doubles, or split
     it four ways in a Relay.
   start:
     - Read the format and the Open weights on the HYROX site, and use its Find my Level questionnaire as a rough guide to which division suits you.
     - Find a HYROX Training Club gym near you to practise the sled push, sled pull and wall balls.
-    - Pick an event a few months away, such as Phoenix in February 2027, and enter with a partner or a relay team if you prefer.
+    - Make your first race a Doubles or a Relay rather than a solo race, so the stations are shared, and pick one at least three months away, such as Phoenix in February 2027.
   links:
     - label: 'HYROX: the fitness race format and weights'
       url: https://hyrox.com/the-fitness-race/
@@ -90903,17 +90903,24 @@
             - Both events list relays
       after: Ticket prices were not shown on HYROX's event pages in November 2026; athlete tickets are sold through HYROX's regional ticket sites, so check the price when you book. London also lists charity
         entries with a fundraising pledge of £400 solo or £800 for a double, and both events list Adaptive divisions.
+    - h: Look after your body
+      p:
+        - "The pounding parts of a HYROX race are the 8km (5 miles) of running and the 80m of burpee broad jumps. The SkiErg, sled, rower, carry and wall-ball stations involve no running, and in Doubles you choose who does which, so you can give the heavier work to whoever handles it better."
+        - "Build up over months, not weeks, and keep at least two rest days a week with no hard days back to back. In a 2014 Danish study of 874 new runners, those who added more than 30 percent a week had more injuries from running too far, though the authors called the finding exploratory. Warm up for at least six minutes before every session, as the NHS warm-up routine does, and while you learn, step back out of the burpee instead of jumping."
+        - "The NHS says people with osteoporosis or a high fracture risk may need to be careful with some high-impact exercise, and that a GP can advise. Stop if something does not feel right. Our twelve-week plan for this race has easier weeks built in, explains why each block is there, and covers what to do about a strain."
   faq:
     - q: How long is a HYROX race?
       a: The running adds up to 8km (5 miles), in eight 1km legs, with a workout station after each one.
     - q: What weights are used in HYROX Open?
       a: For women, a 102kg sled push, 78kg sled pull, two 16kg kettlebells, a 10kg sandbag and a 4kg wall ball. For men, 152kg, 103kg, two 24kg kettlebells, 20kg and 6kg.
     - q: Can beginners do HYROX?
-      a: HYROX says it is for everyone, whatever their fitness level. Doubles and Relay let you share the stations, and you can enter any division whatever the Find my Level questionnaire suggests.
+      a: HYROX says it is for everyone, whatever their fitness level. Doubles and Relay let you share the stations, and you can enter any division whatever the Find my Level questionnaire suggests. For a first race, Doubles or Relay is the gentler start.
+    - q: Is HYROX hard on the joints?
+      a: The running and burpee broad jumps are high impact; the other stations involve no jumping or landing. Build up slowly, keep rest days, and if you have osteoporosis or a high fracture risk, ask your doctor about high-impact exercise first.
   sources:
     - label: HYROX, The fitness race
       url: https://hyrox.com/the-fitness-race/
-      checked: '2026-11-20'
+      checked: '2026-11-24'
     - label: HYROX, About the race
       url: https://hyrox.com/about-race/
       checked: '2026-11-20'
@@ -90923,6 +90930,15 @@
     - label: HYROX, InBody HYROX Phoenix
       url: https://hyrox.com/event/inbody-hyrox-phoenix-26-27/
       checked: '2026-11-20'
+    - label: NHS, How to warm up before exercising
+      url: https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/
+      checked: '2026-11-24'
+    - label: NHS, Keep your bones strong over 65
+      url: https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/
+      checked: '2026-11-24'
+    - label: NHS, Couch to 5K running plan (rest days)
+      url: https://www.nhs.uk/better-health/get-active/get-running-with-couch-to-5k/couch-to-5k-running-plan/
+      checked: '2026-11-24'
   kit:
     - name: Training shoes with grip
       why: for the sled push and the running legs
