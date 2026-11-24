@@ -2,6 +2,9 @@
 title: "Judy Dobles counted water bears in the moss at a New York nature center and found one new to science"
 slug: judy-dobles-water-bear-new-species
 date: 2026-11-23
+photo_file: "File:Moss-covered log, Seldom Seen, 2021-01-02, 02.jpg"
+photo_caption: "Moss on a fallen log in the woods of Seldom Seen Greenway, Pittsburgh, in January 2021: the kind of moss Judy Dobles sampled for water bears. The picture is not of Cumming Nature Center."
+photo_alt: "A fallen log topped with a thick strip of bright green moss, lying among brown fallen leaves and thin bare saplings."
 category: explore
 tags: [tardigrades, citizen-science, microscopy, moss, new-york, women, science, nature]
 segments: [learner, changer]
