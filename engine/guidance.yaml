@@ -31,8 +31,8 @@ guidance:
     applies: [endurance]
     use: advice
     text: Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit.
-    for: [ea-training-pace]
-    note: Seiler's 2010 review (ijspp-2010-intensity; PubMed abstract re-opened 16 Nov 2026) describes about 80 per cent of sessions at low intensity and about 20 per cent hard, but the abstract does not say that drifting into a steadier pace on easy days does harm, so it backs `mostly-easy`, not this statement. Opened 19 Nov 2026 and also not added, Stöggl and Sperlich 2015 (Frontiers in Physiology 6:295, review) says overdoing threshold work at the expense of low-intensity training "may exert a negative impact on the autonomic nervous system" with no further adaptation, but in elite athletes, and it adds that threshold training may suit recreational people more; Inoue and colleagues 2022 (Sports Medicine - Open 8:35, systematic review and meta-analysis) found athletes rate easy sessions harder than coaches intended, at very low certainty, and does not test the consequence. Neither backs the statement as worded for our readers.
+    for: [ea-training-pace, mcmillan-easy-runs]
+    note: Greg McMillan's "Keep easy runs easy" (opened 24 Nov 2026) says that to get the most out of your tough workouts you need to keep easy runs truly easy, so the body recovers instead of enduring unnecessary fatigue. Seiler's 2010 review (ijspp-2010-intensity; PubMed abstract re-opened 16 Nov 2026) describes about 80 per cent of sessions at low intensity and about 20 per cent hard, but the abstract does not say that drifting into a steadier pace on easy days does harm, so it backs `mostly-easy`, not this statement. Opened 19 Nov 2026 and also not added, Stöggl and Sperlich 2015 (Frontiers in Physiology 6:295, review) says overdoing threshold work at the expense of low-intensity training "may exert a negative impact on the autonomic nervous system" with no further adaptation, but in elite athletes, and it adds that threshold training may suit recreational people more; Inoue and colleagues 2022 (Sports Medicine - Open 8:35, systematic review and meta-analysis) found athletes rate easy sessions harder than coaches intended, at very low certainty, and does not test the consequence. Neither backs the statement as worded for our readers.
   - id: no-big-jumps
     topic: progression
     applies: [endurance]
@@ -550,7 +550,8 @@ guidance:
     use: why
     text: Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them.
     short: it turns sighting and two-sided breathing into habits before you need them outdoors
-    for: [usms-open-water]
+    for: [usms-open-water, 220tri-ow-pool-skills]
+    note: 220 Triathlon (opened 24 Nov 2026) lists sighting among the open water challenges, says it is easy to practise in the pool, and calls breathing to both sides very useful in open water because waves, wind or sun can stop you breathing to your favoured side, with side-kick drills in both directions to practise it.
 
   # ---------- cycling (added 1 Nov 2026) ----------
   - id: cyc-long-ride
@@ -612,8 +613,9 @@ guidance:
     topic: on the day
     applies: [swimming]
     use: advice
-    text: Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast.
-    for: [usat-brick]
+    text: Ride the last part of the bike leg in an easier gear, then start the run controlled rather than fast; USA Triathlon suggests shortening your stride for the first half mile to a mile.
+    for: [usat-brick, tri247-bike-pacing-run]
+    note: TRI247 (opened 24 Nov 2026) says to use gearing to avoid heavy pedal strokes, particularly late in the bike leg, not to sprint the end of the bike, and to save enough to start the run smoothly and under control; it does not mention stride, so that detail stays attributed to USA Triathlon.
   - id: tri-helmet
     events: [sprint-triathlon]
     topic: on the day

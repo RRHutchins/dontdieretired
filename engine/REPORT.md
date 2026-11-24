@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-23)
+# Guidance engine report (2026-11-24)
 
-125 sources, 92 statements, 12 event profiles. Core 81, supported 11, thin 0, contested 0.
+128 sources, 92 statements, 12 event profiles. Core 81, supported 11, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -135,6 +135,9 @@
 - Outdoor Swimming Society (Kate Rew, author of The Outdoor Swimmers' Handbook), *Risks of Cold Water (published 3 February 2017, updated 30 May 2026)* (2026). Opened 2026-11-08.
 - Mind (plan by Full Potential, Mind's training partner), *Marathon beginner plan* (2026). Opened 2026-11-21.
 - Cicerone Press (Lesley Williams, Cicerone guidebook author, and Joe Williams), *How to get hill-fit and train for long-distance walking* (2026). Opened 2026-11-23.
+- 220 Triathlon (Our Media), *6 open water swimming skills to practise in the pool* (2026). Opened 2026-11-24.
+- TRI247 (John Levison, Chief Correspondent), *How should you pace the bike to run better in a triathlon?* (2026). Opened 2026-11-24.
+- McMillan Running (Greg McMillan), *Keep easy runs easy* (2024). Opened 2026-11-24.
 
 **1. General**
 - Wanderlust (with advice from the Long Distance Walkers Association and experienced trekkers), *How to prepare for a long-distance trek* (2026). Opened 2026-10-27.
@@ -224,17 +227,17 @@
 | core | 5 | warning signs | On hot days drink more cold drinks while you are active, wear light, loose clothing and keep out of the sun between 11am and 3pm where you can. Call 999 (911 in the US) if someone is still unwell after 30 minutes resting somewhere cool, being cooled and drinking, or has a very high temperature, hot skin that is not sweating, a fast heartbeat or breathing, confusion, a fit or loses consciousness. | nhs-heat |
 | core | 5 | warning signs | Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. | nhs-heart-attack |
 | core | 5 | intensity | For walking to count as exercise, walk briskly, at about 3 miles an hour, faster than a stroll; you should still be able to talk but not sing. Even a brisk 10-minute walk each day counts. If you are not very active, increase your walking distance gradually. | nhs-walking |
+| supported | 5 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace, mcmillan-easy-runs |
 | supported | 5 | key session | Train for the ground you will cover. For hill challenges walk hills fast, or use stairs, and add short hill repeats of 50 to 100 metres of climb, four to six times, coming down slowly. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 5 | why | Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 5 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit, cicerone-hill-fit |
-| supported | 3 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace |
+| supported | 5 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water, 220tri-ow-pool-skills |
+| supported | 5 | on the day | Ride the last part of the bike leg in an easier gear, then start the run controlled rather than fast; USA Triathlon suggests shortening your stride for the first half mile to a mile. | usat-brick, tri247-bike-pacing-run |
 | supported | 3 | on the day | Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month. | inyo-whitney-leaflet |
 | supported | 3 | before you start | Plan for the snow-free season, usually July to late September. When snow or ice is on the mountain it needs winter mountaineering skills and equipment. | inyo-whitney, inyo-whitney-leaflet |
 | supported | 3 | before you start | The Coast to Coast is a demanding trail, hardest at the western end through the Lake District, where waymarks usually stop above the fell wall. Some high sections may be difficult in winter or bad weather; know the low-level options and use them when the weather is poor. | govuk-c2c |
 | supported | 3 | key session | For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60. | greatrun-10k-plans |
-| supported | 3 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water |
 | supported | 3 | key session | With three days a week, swim once or twice working on technique, ride once at a steady pace and run twice, one easy and one a little faster. Regular sessions of 30 to 45 minutes are enough to start, rather than long, hard ones. | tri-ireland-first |
-| supported | 3 | on the day | Ride the last part of the bike leg in an easier gear, then shorten your stride and keep the first half mile to a mile of the run controlled rather than fast. | usat-brick |
 
 ## Coverage by kind of challenge
 
