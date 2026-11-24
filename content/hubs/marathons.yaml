@@ -50,6 +50,8 @@ landings:
 - {slug: in-japan, title: Marathons in Japan, short: Japan, group: Where, filter: {country_has: Japan}}
 - {slug: in-australia, title: Marathons in Australia, short: Australia, group: Where, filter: {country_has: Australia}}
 - {slug: in-italy, title: Marathons in Italy, short: Italy, group: Where, filter: {country_has: Italy}}
+- {slug: in-canada, title: Marathons in Canada, short: Canada, group: Where, filter: {country_has: Canada}}
+- {slug: in-germany, title: Marathons in Germany, short: Germany, group: Where, filter: {country_has: Germany}}
 - slug: world-marathon-majors
   title: The Abbott World Marathon Majors
   short: World Marathon Majors
@@ -1421,6 +1423,202 @@ events:
   - {km: 42.2, hours: 6}
   time_limit_text: 6 hours
   link: {label: 'Marathon Beneva de Montréal: 42 km', url: 'https://couronsmtl.com/en/courses/marathon/42km/', checked: '2026-11-23'}
+# ---------- Added 24 Nov 2026 (marathon build-out run 6) ----------
+- id: ottawa-marathon
+  name: Tamarack Ottawa International Marathon
+  series: independent
+  place: Ottawa, Ontario, from Ottawa City Hall
+  country: Canada
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Registration for 2027 is online. The pages we opened do not say how places are allocated; the marathon page gives a total event capacity of 6,000. Runners must be 18 or over.
+  note: The 2027 race is on Sunday 30 May 2027, starting at 7am at Ottawa City Hall. Marathoners are expected to finish within 7 hours and to reach the 27 km marker (Pretoria Bridge area) by 11.30am. The organizers say it is a certified course and a Boston Marathon qualifying event.
+  time_limit:
+  - {km: 42.2, hours: 7}
+  time_limit_text: 7 hours, with a cut-off at 27 km at 11.30am
+  walkers: true
+  walkers_note: 'The race weekend FAQ says many participants choose to walk, speed walk or pole walk; walkers pick the walking option when they register.'
+  link: {label: 'Tamarack Ottawa International Marathon', url: 'https://www.runottawa.ca/races-and-events/ottawa-marathon/', checked: '2026-11-24'}
+  more:
+  - {label: 'Tamarack Ottawa Race Weekend: information page (FAQ)', url: 'https://www.runottawa.ca/torw/runners/faq/', checked: '2026-11-24'}
+- id: richmond-marathon
+  name: Allianz Richmond Marathon
+  series: independent
+  place: Richmond, Virginia, from 4th and Broad Street
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [11]
+  entry: [register]
+  entry_note: Registration is online, or by a mail-in form. The pages we opened do not say how places are allocated; race-day entry is offered only if the event has not sold out. Runners must be 16 or over on race day.
+  note: The 2027 race, the 50th running, is on Saturday 13 November 2027, starting at 7am at 4th and Broad Street, and the course closes at 2pm. It ends on a downhill finish, followed by the post-race party on the riverfront. The organizers call it "America's Friendliest Marathon" and say it is one of the top 25 qualifying races for the Boston Marathon.
+  time_limit:
+  - {km: 42.2, hours: 7}
+  time_limit_text: 7 hours (the course closes at 2pm), with a 16-minute-mile pace at the cut-off points
+  link: {label: 'Allianz Richmond Marathon: the marathon', url: 'https://www.richmondmarathon.org/races/marathon/', checked: '2026-11-24'}
+  more:
+  - {label: 'Richmond Marathon: event schedule', url: 'https://www.richmondmarathon.org/race-weekend/event-schedule/', checked: '2026-11-24'}
+  - {label: 'Richmond Marathon: FAQ', url: 'https://www.richmondmarathon.org/faq/', checked: '2026-11-24'}
+- id: calgary-marathon
+  name: Beneva Calgary Marathon
+  series: independent
+  place: Calgary, Alberta, finishing at Enmax Park
+  country: Canada
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Registration is online. The pages we opened do not say how places are allocated. Runners must be 16 or over on race day.
+  note: The 2027 race is on Sunday 30 May 2027 at 6.45am (the start line closes at 7.05am); the start was still to be announced when we checked, and the finish is at Enmax Park. The time limit is 6 hours 30 minutes; after the sweep cyclists pass, roads reopen and runners must finish unsupported. The organizers say the course is certified by Athletics Alberta and Athletics Canada and can be used to qualify for the Abbott World Marathon Majors, including Boston.
+  time_limit:
+  - {km: 42.2, hours: 6.5}
+  time_limit_text: 6 hours 30 minutes
+  walkers: true
+  walkers_note: 'The FAQ says walkers are invited to take part in all events; they start in corrals by estimated finish time.'
+  link: {label: 'Beneva Calgary Marathon: 42.2 km marathon', url: 'https://calgarymarathon.com/races/marathon/', checked: '2026-11-24'}
+  more:
+  - {label: 'Beneva Calgary Marathon: FAQs', url: 'https://calgarymarathon.com/info/faq/', checked: '2026-11-24'}
+- id: victoria-marathon
+  name: Royal Victoria Marathon
+  series: independent
+  place: Victoria, British Columbia, from the Legislative Grounds downtown
+  country: Canada
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: Registration for 2027 is open online. The page we opened does not say how places are allocated. Runners must be 18 or over.
+  note: The 2027 race is on Sunday 10 October 2027 at 8.15am, starting and finishing at the Legislative Grounds in downtown Victoria. The time limit is 6.5 hours, and marathoners must pass the 13 km mark by 10.30am. The organizers say it is a Boston qualifier and a World Athletics sanctioned event.
+  time_limit:
+  - {km: 42.2, hours: 6.5}
+  time_limit_text: 6.5 hours, with a cut-off at 13 km at 10.30am
+  link: {label: 'Royal Victoria Marathon', url: 'https://www.runvictoriamarathon.com/royal-victoria-marathon', checked: '2026-11-24'}
+- id: cologne-marathon
+  name: Generali Köln Marathon
+  series: independent
+  place: Cologne, from Deutz to the cathedral
+  country: Germany
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [open]
+  entry_note: Entry is only through the official website. For 2026, places were limited to 15,000 (14,600 on open sale) and entry closed on 20 September 2026 or earlier once the limit was reached. The organizers' announcement of 13 November 2026 says registration for 2027 opens on 25 November at 11.11am.
+  note: The 2027 race is on 3 October 2027. In 2026 the marathon started at 10.30am on Opladener Straße by Deutz station and finished on Komödienstraße by Cologne Cathedral, and runners had 6 hours (net time) to finish.
+  time_limit:
+  - {km: 42.2, hours: 6}
+  time_limit_text: 6 hours net (2026 rules)
+  link: {label: 'Generali Köln Marathon: registration opens 25 November (German)', url: 'https://generali-koeln-marathon.de/save-the-date-anmeldestart-fuer-den-generali-koeln-marathon-am-25-november/', checked: '2026-11-24'}
+  more:
+  - {label: 'Generali Köln Marathon: the marathon (2026)', url: 'https://generali-koeln-marathon.de/en/events/marathon/', checked: '2026-11-24'}
+- id: warsaw-marathon
+  name: Maraton Warszawski (Warsaw Marathon)
+  series: independent
+  place: Warsaw
+  country: Poland
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [9]
+  entry: [open, charity]
+  entry_note: Entry for 2027 is online, with 15,000 places in all (14,000 standard entries and 1,000 through the #BiegamDobrze charity fundraising route). Both routes are open until 16 August 2027, then standard entry only; online entry closes at 7pm on 25 September 2027, or earlier if the limit is reached. Runners must be 18 by race day.
+  note: The 2027 race, the 49th, is on 26 September 2027, starting at 9am; the exact route is to be announced. The time limit is 6 hours 30 minutes from the starting gun. Nordic walking poles are not allowed.
+  time_limit:
+  - {km: 42.2, hours: 6.5}
+  time_limit_text: 6 hours 30 minutes from the gun
+  link: {label: '49th Warsaw Marathon: rules 2027 (Polish, PDF)', url: 'https://maratonwarszawski.com/wp-content/uploads/2026/09/Regulamin-49.-Maraton-Warszawski.2027.pdf', checked: '2026-11-24'}
+  entry_dates:
+  - {date: '2027-08-16', what: 'Last day of the #BiegamDobrze charity entry route (standard entry continues)', url: 'https://maratonwarszawski.com/wp-content/uploads/2026/09/Regulamin-49.-Maraton-Warszawski.2027.pdf', checked: '2026-11-24'}
+  - {date: '2027-09-25', what: 'Online entry closes at 7pm, or earlier if the limit is reached', url: 'https://maratonwarszawski.com/wp-content/uploads/2026/09/Regulamin-49.-Maraton-Warszawski.2027.pdf', checked: '2026-11-24'}
+- id: medellin-marathon
+  name: Maratón Medellín Sistecrédito
+  series: independent
+  place: Medellín, from Parque de las Luces to Parque de los Pies Descalzos
+  country: Colombia
+  continent: south-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: The 2026 page we opened shows all distances sold out and does not say how places are allocated. Marathon runners must be 18 or over.
+  note: The 2026 race was on Sunday 6 September 2026 at 5am, from Parque de las Luces on Avenida San Juan to the EPM Building at Parque de los Pies Descalzos; no 2027 date was shown when we checked. The time limit is 6 hours. The organizers say more than 24,000 athletes from over 40 countries took part across the 2024 event.
+  time_limit:
+  - {km: 42.2, hours: 6}
+  time_limit_text: 6 hours (2026)
+  link: {label: 'Maratón Medellín 2026: general information (Spanish)', url: 'https://maratonmedellin.com/pages/informacion-general-2026', checked: '2026-11-24'}
+- id: kuala-lumpur-marathon
+  name: Standard Chartered Kuala Lumpur Marathon
+  series: independent
+  place: Kuala Lumpur, from Dataran Merdeka
+  country: Malaysia
+  continent: asia
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: The pages we opened do not say how to register or how places are allocated.
+  note: The 2026 race was on Sunday 4 October 2026, with the marathon flagged off at 3.30am at Dataran Merdeka; no 2027 date was shown when we checked. The time limit is 7 hours 15 minutes.
+  time_limit:
+  - {km: 42.2, hours: 7.25}
+  time_limit_text: 7 hours 15 minutes (2026)
+  link: {label: 'Kuala Lumpur Marathon 2026: full marathon', url: 'https://www.kl-marathon.com/race-info/categories/categories-information/individual/marathon/', checked: '2026-11-24'}
+  more:
+  - {label: 'Kuala Lumpur Marathon 2026: race weekend schedule', url: 'https://www.kl-marathon.com/race-info/race-weekend-schedule/', checked: '2026-11-24'}
+- id: chennai-marathon
+  name: Freshworks Chennai Marathon
+  series: independent
+  place: Chennai, finishing at India Maritime University, Uthandi
+  country: India
+  continent: asia
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [1]
+  entry: [register]
+  entry_note: Registration is online. The page we opened does not say how places are allocated or when entry closes. Marathon runners must be 18 or over (born on or before 3 January 2009).
+  note: The 2027 race, the 15th edition, is on Sunday 3 January 2027. Race timings, the cut-off and the start were still to be announced when we checked; the FAQ says the marathon finishes at India Maritime University, Uthandi, with shuttle buses back to the start.
+  link: {label: 'Freshworks Chennai Marathon 2027', url: 'https://www.thechennaimarathon.com/', checked: '2026-11-24'}
+- id: kilimanjaro-marathon
+  name: Kilimanjaro Marathon
+  series: independent
+  place: Moshi, starting and finishing at the MoCU Stadium Grounds
+  country: Tanzania
+  continent: africa
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [2]
+  entry: [register]
+  entry_note: Online entries for 2027 opened on 19 October 2026, with separate group entries. The page we opened does not say how places are allocated or when entry closes, and says no late entries will be accepted. Marathon runners must be 20 or over.
+  note: The 2027 race, the 25th anniversary edition, is on 7 February 2027, starting at 6.30am and finishing back at the MoCU Stadium in Moshi. The final cut-off is 12.30pm, which by our count gives 6 hours. The first 950 marathon finishers get a medal and shirt.
+  time_limit:
+  - {km: 42.2, hours: 6}
+  time_limit_text: 6 hours (our count from the 6.30am start and 12.30pm final cut-off)
+  link: {label: 'Kilimanjaro Marathon: race info', url: 'https://www.kilimanjaromarathon.com/registration-race-info/race-info/', checked: '2026-11-24'}
 guides:
 - slug: how-to-get-a-place
   title: How to get a place in a big marathon
@@ -1549,3 +1747,127 @@ guides:
   - {label: 'Austin Marathon: FAQ', url: 'https://youraustinmarathon.com/faq/', checked: '2026-11-22'}
   - {label: 'Austin Marathon: course', url: 'https://youraustinmarathon.com/course/', checked: '2026-11-22'}
   - {label: 'Perth Running Festival: marathon', url: 'https://perthrunningfestival.com.au/marathon/', checked: '2026-11-22'}
+- slug: marathon-kit
+  title: 'Marathon kit: shoes, watch and belt'
+  short: What race organizers say about kit on the day, how to choose shoes, and the shoes, watches and belts independent reviewers pick
+  seo_title: 'Marathon kit: running shoes, GPS watches and running belts'
+  description: What to wear and carry in a marathon, from London Marathon Events, the B.A.A. and the NHS, plus the running shoes, GPS watches and running belts that RTINGS, Tom's Guide and iRunFar pick in their 2026 reviews.
+  standfirst: A marathon needs less kit than you might think, but what you have must be tried and tested. Here is what the organizers of the London and Boston marathons say about race day, and what three independent reviewers pick.
+  detail:
+  - h: Nothing new on race day
+    p:
+    - 'London Marathon Events, which runs the London Marathon, puts it plainly in its advice for first-timers: "You shouldn’t try anything new on Event Day". It suggests approaching kit testing the same way you do training, building it slowly and intentionally, and says the two things you want to avoid are blisters and chafing.'
+    - The same goes for food. London's advice is to test energy gels in training, taking only a little at a time to begin with, and to follow the guidance on the packet.
+    - 'It is cold waiting at the start. London says many participants wear old clothes to keep warm before their wave starts; its 2026 event guide says collection points near every start line take any extra layers you do not want to run in, as long as they are clean and in good condition.'
+  - h: Shoes
+    p:
+    - 'The NHS says it is important to buy the correct running shoes, and that it is best to go to a running shop to get fitted. London Marathon Events says you can get your gait analyzed for free in most running shops.'
+    - 'You do not have to spend a lot. The NHS says all running shoe brands make cheaper versions that are suitable for beginners, and that expensive shoes may just be more durable and lightweight, so more suitable for people running long distances. Worn-out shoes are one of the causes of heel pain it lists.'
+    - Run your long training runs in the pair you will race in, so that any rubbing shows up in training rather than at mile 20.
+  - h: Water, belts and what the race provides
+    p:
+    - 'Big city marathons provide drinks on the course, but the rules on what you may carry differ. London''s 2026 event guide said there was water every three miles from mile 3 to 12, then every two miles to mile 24, with Lucozade Sport at miles 7, 15, 21 and 23, gels at miles 13 and 19 and refill stations at miles 5, 10, 14, 17 and 20. It recommended a bottle belt or hydration pack to reduce bottle waste and stops.'
+    - 'Boston is stricter. The B.A.A.''s list of prohibited items for participants bans bags larger than one gallon, including personal hydration systems, but allows one fanny pack (bum bag) no larger than 5 x 15 x 5 inches and a fuel belt with bottles of 1 liter or smaller.'
+    - So read your own race's participant guide before you buy a belt or pack.
+  - h: Bag drop and headphones
+    p:
+    - 'London accepts only its official event kitbag at bag drop, with nothing attached to it, and asks runners not to put expensive items such as a phone in it. It suggests packing something to eat after you finish.'
+    - 'Headphone rules vary too. London''s 2026 guide allowed non-noise-cancelling or bone conduction headphones, or a single earpiece, because you must be able to hear safety instructions. Boston''s list says headphones are "Discouraged, but permitted".'
+  - h: How the picks below were chosen
+    p:
+    - 'The picks come from three independent reviews, each opened on 24 November 2026: RTINGS''s "The 5 Best Marathon Running Shoes of 2026" (updated 16 October 2026), Tom''s Guide''s "Best running watches 2026: tested and ranked by experts" (updated 28 September 2026) and iRunFar''s "Best Running Belts of 2026" (26 October 2026). The labels and quotes are the reviewers'' own words; we have not tested any of these products ourselves.'
+    - RTINGS's overall pick is a racing shoe it rates highest for raw performance efficiency; its cheaper pick is the one it suggests if you simply want to finish. Try any shoe on in a running shop before you buy.
+  picks:
+  - item: Marathon running shoes
+    why: 'From RTINGS''s October 2026 guide to marathon shoes. The best shoe for you is the one that fits your feet, so get fitted first.'
+    options:
+    - tier: top
+      name: PUMA Fast-R NITRO Elite 3
+      label: Best Marathon Running Shoe
+      quote: It returns the energy you put into each stride with amazing efficiency, making it easier to sustain faster paces
+      reviewer: RTINGS
+      review: {title: 'The 5 Best Marathon Running Shoes of 2026', url: 'https://www.rtings.com/running-shoes/reviews/best/marathon', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=PUMA+Fast-R+NITRO+Elite+3'
+    - tier: good
+      name: ASICS MEGABLAST
+      label: Best Upper Mid-Range Marathon Running Shoe
+      quote: This shoe is also more comfortable and durable than many specialized racing shoes
+      reviewer: RTINGS
+      review: {title: 'The 5 Best Marathon Running Shoes of 2026', url: 'https://www.rtings.com/running-shoes/reviews/best/marathon', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=ASICS+Megablast'
+    - tier: value
+      name: Nike Winflo 12
+      label: Best Cheap Marathon Running Shoes
+      quote: If you're simply trying to finish the marathon and don't want to invest much in your shoes, check out the Nike Winflo 12.
+      reviewer: RTINGS
+      review: {title: 'The 5 Best Marathon Running Shoes of 2026', url: 'https://www.rtings.com/running-shoes/reviews/best/marathon', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=Nike+Winflo+12'
+  - item: GPS running watch
+    why: 'From Tom''s Guide''s September 2026 guide. Check the watch pairs with the phone you use and that its battery outlasts your expected finish time.'
+    options:
+    - tier: top
+      name: Garmin Forerunner 570
+      label: Best overall
+      quote: After combining all of our experiences, the best running watch you can buy right now is the Garmin Forerunner 570.
+      reviewer: Tom's Guide
+      review: {title: 'Best running watches 2026: tested and ranked by experts', url: 'https://www.tomsguide.com/best-picks/best-running-watches', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=Garmin+Forerunner+570'
+    - tier: good
+      name: Garmin Forerunner 55
+      label: Best for beginners
+      quote: What'll serve you best is something that is a step up from a fitness tracker, focused on running and won't break the bank.
+      reviewer: Tom's Guide
+      review: {title: 'Best running watches 2026: tested and ranked by experts', url: 'https://www.tomsguide.com/best-picks/best-running-watches', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=Garmin+Forerunner+55'
+    - tier: value
+      name: Coros Pace 3
+      label: Best budget
+      quote: the Coros Pace 3 is easily the best budget running watch you can buy right now
+      reviewer: Tom's Guide
+      review: {title: 'Best running watches 2026: tested and ranked by experts', url: 'https://www.tomsguide.com/best-picks/best-running-watches', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=Coros+Pace+3'
+  - item: Running belt
+    why: 'From iRunFar''s October 2026 guide. Check your race allows a belt of that kind, then test it on long runs for bounce.'
+    options:
+    - tier: top
+      name: Mammut Aenergy Trail Belt
+      label: Best Overall Running Belt
+      quote: The stretch allows these pockets to accommodate a surprising number of snacks and other bits and bobs.
+      reviewer: iRunFar
+      review: {title: 'Best Running Belts of 2026', url: 'https://www.irunfar.com/best-running-belts', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=Mammut+Aenergy+Trail+Belt'
+    - tier: good
+      name: Naked Running Band
+      label: Best Running Belt for Marathons and Ultras
+      quote: Much of its appeal comes from its simplicity.
+      reviewer: iRunFar
+      review: {title: 'Best Running Belts of 2026', url: 'https://www.irunfar.com/best-running-belts', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=Naked+Running+Band'
+    - tier: value
+      name: UltrAspire Fitted Race Belt 2.0
+      label: Best Budget Running Belt
+      quote: The other two pockets are open at the top, making it easy to slip items in and out.
+      reviewer: iRunFar
+      review: {title: 'Best Running Belts of 2026', url: 'https://www.irunfar.com/best-running-belts', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=UltrAspire+Fitted+Race+Belt'
+  faq:
+  - q: Can I wear new shoes for my marathon?
+    a: Best not. London Marathon Events' advice for first-timers is that you should not try anything new on event day, and to build up kit testing slowly in training. Get fitted at a running shop and do your long runs in the pair you will race in.
+  - q: Do I need to carry water in a marathon?
+    a: It depends on the race. London's 2026 course had water, Lucozade Sport and refill stations, and the organizers recommended a bottle belt or hydration pack to cut bottle waste and stops. Boston allows a fuel belt with bottles of 1 liter or smaller but bans bags over one gallon, including personal hydration systems. Check your race's rules.
+  - q: Can I run a marathon with headphones?
+    a: Often, with limits. London's 2026 guide allowed non-noise-cancelling or bone conduction headphones, or one earpiece, so you can hear safety instructions. Boston says headphones are discouraged, but permitted.
+  - q: Do I need expensive running shoes?
+    a: No. The NHS says you do not have to spend a lot of money and that all running shoe brands make cheaper versions suitable for beginners; more expensive shoes may just be more durable and lightweight.
+  kit:
+  - {name: Running shoes for road marathons, why: 'get fitted at a running shop first, and run your long training runs in the pair you will race in', url: 'https://www.amazon.co.uk/s?k=road+running+shoes+cushioned'}
+  - {name: Running belt with bottle holder, why: 'check your race allows it (Boston limits fuel-belt bottles to 1 liter) and test it on long runs for bounce', url: 'https://www.amazon.co.uk/s?k=running+belt+bottle+holder'}
+  - {name: Open-ear or bone conduction headphones, why: 'London''s 2026 guide allowed only non-noise-cancelling or bone conduction headphones, or one earpiece; check your race''s rule', url: 'https://www.amazon.co.uk/s?k=bone+conduction+headphones+running'}
+  sources:
+  - {label: 'London Marathon Events: 10 things you need to know before running your first marathon (October 2025)', url: 'https://www.londonmarathonevents.co.uk/london-marathon-events/training/10-things-you-need-know-running-your-first-marathon', checked: '2026-11-24'}
+  - {label: 'London Marathon 2026 participant event guide (PDF)', url: 'https://www.londonmarathonevents.co.uk/sites/default/files/2026-04/TCSLM-2026-Event-Guide_FINAL_v2.pdf', checked: '2026-11-24'}
+  - {label: 'B.A.A.: Boston Marathon prohibited items for participants (PDF)', url: 'https://www.baa.org/wp-content/uploads/2025/09/Prohibited_Participants.pdf', checked: '2026-11-24'}
+  - {label: 'NHS: knee pain and other running injuries', url: 'https://www.nhs.uk/live-well/exercise/knee-pain-and-other-running-injuries/', checked: '2026-11-24'}
+  - {label: 'RTINGS: The 5 Best Marathon Running Shoes of 2026', url: 'https://www.rtings.com/running-shoes/reviews/best/marathon', checked: '2026-11-24'}
+  - {label: 'Tom''s Guide: Best running watches 2026: tested and ranked by experts', url: 'https://www.tomsguide.com/best-picks/best-running-watches', checked: '2026-11-24'}
+  - {label: 'iRunFar: Best Running Belts of 2026', url: 'https://www.irunfar.com/best-running-belts', checked: '2026-11-24'}

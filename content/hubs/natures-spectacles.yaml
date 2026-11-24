@@ -14,7 +14,7 @@ lead: Many of nature's great shows happen on a timetable. Here is when and where
 intro:
 - On Monday 2 August 2027 the Moon will cover the Sun completely along a track across southern Spain, Gibraltar and North Africa. Other spectacles come round every year, if you know the month and the place, from the northern lights to starlings over a reedbed at dusk.
 - Filter the list below by region, kind, month or how you see it. Every entry links to an official page (a national park, an observatory, a government or an official tourism body), opened on the date shown. Seasons shift with the weather, so check the official page before you travel.
-activities: [see-a-total-solar-eclipse, see-the-northern-lights, watch-old-faithful-erupt, watch-a-meteor-shower, see-puffins, see-grey-seal-pups]
+activities: [see-a-total-solar-eclipse, see-the-northern-lights, watch-old-faithful-erupt, watch-a-meteor-shower, see-puffins, see-grey-seal-pups, see-the-northern-lights-in-yellowknife, see-monument-valley]
 tags: [nature, spectacle, spectacles, eclipse, 'solar eclipse', aurora, 'northern lights', meteor, perseids, geminids, murmuration, starlings, fireflies, bioluminescence, geyser, migration, 'cherry blossom', bluebells, 'autumn colour', wildlife]
 finder_title: Spectacle finder
 search_hint: Name, place or country
@@ -890,6 +890,151 @@ events:
   link: {label: 'Ecuador Travel (Ministry of Tourism): Galápagos', url: 'https://ecuador.travel/en/galapagos/', checked: '2026-11-23'}
   more:
   - {label: 'Galápagos National Park Directorate: "Yo sí cumplo" campaign on the visitor rules (Spanish)', url: 'https://galapagos.gob.ec/campana-yo-si-cumplo-promueve-el-respeto-de-las-reglas-de-visita-en-galapagos/', checked: '2026-11-23'}
+# ---------- Added 24 Nov 2026 (build-out run 5) ----------
+# ---------- In the sky ----------
+- id: northern-lights-fairbanks
+  name: Northern lights in Fairbanks, Alaska
+  type: sky
+  place: Fairbanks, Interior Alaska
+  country: USA
+  continent: north-america
+  month: [8, 9, 10, 11, 12, 1, 2, 3, 4]
+  when: Usually 21 August to 21 April
+  see: [own, guided]
+  see_note: Drive to a nearby vantage point and wait, or take a tour and watch from a heated cabin, yurt, dome or lodge. Explore Fairbanks says staying at least three nights and being out in the late evening raise your chances.
+  note: Explore Fairbanks says the city sits under the "Auroral Oval" and that the aurora is visible an average of four out of five nights when the sky is clear and dark enough. Dress in warm layers, because you will be outside for long spells.
+  activity: see-the-northern-lights
+  link: {label: 'Explore Fairbanks: aurora season', url: 'https://www.explorefairbanks.com/explore-the-area/aurora-season/', checked: '2026-11-24'}
+  more:
+  - {label: 'Travel Alaska: how to see the northern lights in Alaska', url: 'https://www.travelalaska.com/explore-alaska/articles/how-to-see-alaskas-northern-lights', checked: '2026-11-24'}
+- id: northern-lights-yellowknife
+  name: Northern lights in Yellowknife and the Northwest Territories
+  type: sky
+  place: Yellowknife and the wider Northwest Territories
+  country: Canada
+  continent: north-america
+  month: [8, 9, 11, 12, 1, 2, 3, 4]
+  when: Usually mid August to the end of September, and mid November to early April
+  see: [guided]
+  see_note: Licensed tour operators run aurora trips, from day trips to the best viewing spots each night to stays at lodges where the lights appear at the door.
+  note: Spectacular NWT says the territory lies under the auroral oval, and that with its low humidity the skies are "wide, open and clear". It says the aurora shows on up to 240 nights a year.
+  activity: see-the-northern-lights-in-yellowknife
+  link: {label: 'Spectacular NWT: aurora', url: 'https://spectacularnwt.com/activities/aurora/', checked: '2026-11-24'}
+- id: northern-lights-swedish-lapland
+  name: Northern lights in Swedish Lapland
+  type: sky
+  place: Arctic Sweden, including Abisko National Park, Kiruna, Jukkasjärvi and Gällivare
+  country: Sweden
+  continent: europe
+  month: [9, 10, 11, 12, 1, 2, 3]
+  when: Usually September to late March, sometimes into early April
+  see: [own, guided]
+  see_note: Look between 6pm and 2am on a clear night, and check the local weather forecast. From Kiruna you can chase the aurora by car, snowmobile, snowshoe, dogsled or ski with local operators; at Abisko a chairlift goes up to the Aurora Sky Station.
+  note: Visit Sweden calls Abisko "one of Sweden's most reliable spots" because, lying between mountains, it often has clear skies when nearby areas are cloudy. It says activity is usually most intense around 10 to 11pm, and that the lights are sometimes seen as far south as Skåne.
+  activity: see-the-northern-lights
+  link: {label: 'Visit Sweden: when and where to see the northern lights in Sweden', url: 'https://visitsweden.com/where-to-go/northern-sweden/swedish-lapland/abisko-and-northern-lights/', checked: '2026-11-24'}
+- id: total-lunar-eclipse-2028
+  name: Total lunar eclipse of New Year's Eve 2028
+  type: sky
+  place: Anywhere the Moon is up during the eclipse; NASA lists Europe, Africa, Asia, Australia and the Pacific
+  country: Europe, Africa, Asia, Australia, Pacific
+  continent: asia
+  month: [12]
+  when: Sunday 31 December 2028; totality 16:16 to 17:28 UT
+  see: [own]
+  see_note: NASA says you need no special equipment to watch a lunar eclipse, just a line of sight to the Moon. Binoculars or a telescope enhance the view, and a dark spot away from bright lights makes it more dramatic.
+  note: NASA's catalog gives greatest eclipse at 16:52 UT and 1 hour 11 minutes of totality, with the Moon overhead at 23°N, 108°E. The Moon looks red because Earth blocks most of the Sun's light, and the light that still reaches it has passed through Earth's atmosphere. NASA's catalog lists no total lunar eclipse in 2027; the next after this one are on 26 June 2029 (the Americas, Europe, Africa and the Middle East) and 20 December 2029.
+  link: {label: 'NASA: lunar eclipses 2021 to 2030', url: 'https://eclipse.gsfc.nasa.gov/LEdecade/LEdecade2021.html', checked: '2026-11-24'}
+  more:
+  - {label: 'NASA: eclipses during 2028', url: 'https://eclipse.gsfc.nasa.gov/OH/OH2028.html', checked: '2026-11-24'}
+  - {label: 'NASA Science: March 2026 total lunar eclipse, your questions answered', url: 'https://science.nasa.gov/solar-system/moon/march-2026-total-lunar-eclipse-your-questions-answered/', checked: '2026-11-24'}
+# ---------- Wildlife and living light ----------
+- id: wadden-sea-harbor-seals
+  name: Harbor seals of the Wadden Sea
+  type: living
+  place: Sandbanks of the German Wadden Sea national parks, for example by boat from Wilhelmshaven to the seal banks of the Jadebusen
+  country: Germany
+  continent: europe
+  month: [5, 6, 7, 8, 9]
+  when: Seals gather on the sandbanks May to September; pups are born early June to early July
+  see: [boat]
+  see_note: Watch from a boat trip to the seal banks, such as the national park trips run with the Wilhelmshaven World Heritage visitor center. If you find a lone pup on the beach, do not touch it and keep at least 300 meters away so its mother can find it.
+  note: The national parks say the pups are born at low tide on sandbanks that dry out, and are suckled only at low water, in several small feeds. The harbor seal population has shown a steady upward trend for more than 40 years.
+  link: {label: 'Nationalpark Wattenmeer: harbor seal (German)', url: 'https://www.nationalpark-wattenmeer.de/wissensbeitrag/seehund/', checked: '2026-11-24'}
+  more:
+  - {label: 'Nationalpark Wattenmeer: boat trip to the Jadebusen seal banks (German, 2025 listing)', url: 'https://www.nationalpark-wattenmeer.de/event/nationalpark-erlebnisfahrt-zu-den-seehundbaenken-im-jadebusen-mit-schaufischen-37/', checked: '2026-11-24'}
+- id: sepilok-orangutans
+  name: Orangutans at Sepilok
+  type: living
+  place: Sepilok Orang Utan Rehabilitation Centre, Kabili-Sepilok Forest Reserve, about 23 km from Sandakan, Sabah, Borneo
+  country: Malaysia
+  continent: asia
+  see: [own]
+  see_note: Come for the 10am or 3pm feeding at the platform, when orangutans can usually be seen; some can also be seen from the outdoor nursery. The centre opens mornings and afternoons, with a shorter morning on Fridays.
+  note: The centre was set up in 1964 to rehabilitate orphaned orangutans. Sabah Tourism asks visitors not to touch the orangutans, including any on the boardwalk, because many human diseases can pass to them.
+  link: {label: 'Sabah Tourism: Sepilok Orang Utan Rehabilitation Centre', url: 'https://sabahtourism.com/destination/sepilok-orangutan-rehabilitation-centre/', checked: '2026-11-24'}
+- id: lake-malawi-cichlids
+  name: The cichlid fish of Lake Malawi
+  type: living
+  place: Lake Malawi National Park, at the southern end of Lake Malawi
+  country: Malawi
+  continent: africa
+  see: [boat]
+  see_note: Malawi's Department of Tourism lists snorkeling, scuba diving and kayaking in the park.
+  note: Visit Malawi says the lake holds 30 percent of all known cichlid fish in the world. The park takes in miombo woodland and 13 islands, and is one of Malawi's two UNESCO World Heritage Sites.
+  activity: learn-to-snorkel
+  link: {label: 'Visit Malawi (Department of Tourism): Lake Malawi National Park', url: 'https://visitmalawi.mw/lake-malawi-national-park/', checked: '2026-11-24'}
+- id: south-georgia-king-penguins
+  name: King penguins of South Georgia
+  type: living
+  place: St Andrews Bay and Salisbury Plain, South Georgia
+  country: South Georgia and the South Sandwich Islands (UK)
+  continent: antarctica
+  see: [boat, booked]
+  see_note: Every vessel needs a visit permit from the island's government; cruise passengers are covered by their ship's permit. Boots must be washed and bags cleaned before landing, and landings depend on surf, wind and weather. Keep at least 10 meters from the edge of the colony.
+  note: The Government of South Georgia says the St Andrews Bay colony is the largest king penguin colony on South Georgia. Both sites are breeding beaches for elephant and fur seals, and no more than 100 visitors may be ashore at once, with at least one guide for every 20.
+  activity: sail-to-antarctica
+  link: {label: 'Government of South Georgia: St Andrews Bay visitor management plan (PDF)', url: 'https://gov.gs/wp-content/uploads/2022/10/St-Andrews-Bay.pdf', checked: '2026-11-24'}
+  more:
+  - {label: 'Government of South Georgia: Salisbury Plain visitor management plan (PDF)', url: 'https://gov.gs/wp-content/uploads/2022/10/Salisbury-Plain.pdf', checked: '2026-11-24'}
+  - {label: 'Government of South Georgia: visiting South Georgia 2024-25 (PDF)', url: 'https://gov.gs/wp-content/uploads/2024/06/Visiting-South-Georgia-24-25.pdf', checked: '2026-11-24'}
+# ---------- Water and rock ----------
+- id: monument-valley
+  name: Monument Valley
+  type: earth
+  place: Monument Valley Navajo Tribal Park, on the Utah and Arizona border
+  country: USA
+  continent: north-america
+  see: [vehicle, guided]
+  see_note: Drive the 17-mile loop road (no motorcycles, because of rough ground and deep sand), or join a Navajo tour operator who takes you into the valley by jeep. Some places, such as Ear of the Wind, can only be reached on a guided tour. In winter, entry is first come, first served.
+  note: Navajo Parks says the sandstone formations tower 400 to 1,000 feet. The park covers 91,696 acres at 5,564 feet above sea level. For the 1.5-mile Wildcat Trail, you sign in and out at the visitor center.
+  activity: see-monument-valley
+  link: {label: 'Navajo Nation Parks and Recreation: Monument Valley', url: 'https://navajonationparks.org/navajo-tribal-parks/monument-valley/', checked: '2026-11-24'}
+- id: sossusvlei-dunes
+  name: The dunes of Sossusvlei
+  type: earth
+  place: Sossusvlei and Sesriem, Namib-Naukluft Park
+  country: Namibia
+  continent: africa
+  see: [vehicle, guided]
+  see_note: Sesriem is the gateway to the dunes. The park page lists 4x4 routes, walking trails, guided nature drives, stargazing and walks to Sesriem Canyon, and sunset drives at Sossusvlei.
+  note: The Namibia Tourism Board describes "rust-orange dunes" and the bleached white pan of Deadvlei with its knotted ancient trees, and says the Sossusvlei dunes are some of the highest in the world. It calls Namib-Naukluft Namibia's largest conservation area, at 49,768 square kilometers.
+  link: {label: 'Visit Namibia (Namibia Tourism Board): Namib-Naukluft Park', url: 'https://visitnamibia.com.na/namib-naukluft-park', checked: '2026-11-24'}
+  more:
+  - {label: 'Visit Namibia: Namib-Naukluft Park, park facts', url: 'https://visitnamibia.com.na/namib-naukluft-park-2', checked: '2026-11-24'}
+  - {label: 'Visit Namibia: highest sand dunes', url: 'https://visitnamibia.com.na/services/highest-sand-dunes/', checked: '2026-11-24'}
+# ---------- Seasons and flowers ----------
+- id: lencois-maranhenses-lagoons
+  name: The rain lagoons of Lençóis Maranhenses
+  type: season
+  place: Lençóis Maranhenses National Park, Maranhão, between Barreirinhas and Santo Amaro
+  country: Brazil
+  continent: south-america
+  when: The lagoons form in the rainy season, which Visit Brasil gives as February to May; most dry up from June to January
+  see: [guided, vehicle]
+  see_note: Head into the national park by 4x4, and walk with local guides who know the park; Visit Brasil describes a three-day hike from Barreirinhas to Santo Amaro. Bring cash, because ATMs do not work in the region, plus sun protection and water.
+  note: Visit Brasil says thousands of freshwater lagoons lie among the white dunes of the 155,000-hectare park. Only two lagoons, Esperança and Peixe, last through the dry season.
+  link: {label: 'Visit Brasil: a three-day trip through the Lençóis Maranhenses', url: 'https://visitbrasil.com/en/embark-on-a-3-day-trip-through-the-lencois-maranhenses/', checked: '2026-11-24'}
 guides:
 - slug: 2027-total-solar-eclipse
   title: How to see the 2027 total solar eclipse safely, and where
@@ -995,8 +1140,8 @@ guides:
 - slug: northern-lights-when-and-where
   title: 'The northern lights: when and where to see them'
   short: Northern lights
-  seo_title: 'Northern lights: when and where to see them, from the UK to Lapland'
-  description: When and where to see the northern lights, from Scotland and northern England to Norway, Iceland and Finnish Lapland, how the UK alerts work, and what helps your chances.
+  seo_title: 'Northern lights: when and where to see them, from the UK and Alaska to Lapland'
+  description: When and where to see the northern lights, from Scotland and northern England to Norway, Iceland, Lapland, Alaska and Canada, how the UK alerts work, and what helps your chances.
   standfirst: "The aurora needs three things to line up: activity on the Sun, a clear sky and real darkness. Here is when and where your odds are best, from the UK to the Arctic, taken from the official forecasters and tourism bodies."
   detail:
   - h: What you need on the night
@@ -1015,6 +1160,9 @@ guides:
       - [Iceland, 'September to April, during the winter (Visit Iceland)']
       - [Finland, 'End of August to April in Lapland and northern Lakeland (Visit Finland)']
       - [UK, 'Any time it is dark enough; follow the AuroraWatch UK and Met Office alerts (below)']
+      - [Sweden, 'September to late March in Arctic Sweden, sometimes into early April (Visit Sweden)']
+      - [Alaska, 'Late August to late April (Travel Alaska); 21 August to 21 April in Fairbanks (Explore Fairbanks)']
+      - [Canada's Northwest Territories, 'Mid August to the end of September, and mid November to early April (Spectacular NWT)']
   - h: Seeing it from the UK
     p:
     - The Met Office says the aurora is sometimes seen as far south as "Scotland and Northern England/Ireland" when skies are clear. The Royal Observatory Greenwich says it has very occasionally been seen as far south as Cornwall and Brighton, and AuroraWatch UK says that generally, the further north you are in the UK, the better your chances.
@@ -1030,12 +1178,19 @@ guides:
     - AuroraWatch UK sends alerts on X (Twitter, @aurorawatchuk), on Facebook and through a Telegram channel; third-party phone apps also carry them.
     - The Met Office publishes a space weather forecast that says where and when you are likely to see an aurora.
     - The Met Office says almost anyone with a smartphone or digital camera can photograph an aurora.
-  - h: Norway, Iceland and Finnish Lapland
+  - h: Norway, Iceland, and Finnish and Swedish Lapland
     p:
     - NOAA puts the best viewing under an oval-shaped region between about 60 and 75 degrees north, which moves south when activity rises.
     - "Norway: Visit Norway advises finding a dark place preferably at least 150 metres from buildings and looking north."
     - "Iceland: Visit Iceland says there is no exact best time, that your chances are much better outside towns, especially away from the light of Reykjavík, and that you do not necessarily need a tour. The Icelandic Met Office (Veðurstofa Íslands) publishes an aurora forecast with a cloud-cover map and an activity scale from 0 to 9, and notes that even a low level can be beautiful."
     - "Finland: Visit Finland says that in autumn and spring the lights are, statistically, visible on every second clear night, and advises checking the weather forecast alongside the aurora forecast, because cloud blocks the view entirely. In late summer, a calm lake can reflect the display."
+    - "Sweden: Visit Sweden says the lights show over Arctic Sweden from September to March, sometimes into early April, best between 6pm and 2am and usually most intense around 10 to 11pm. It calls Abisko National Park one of Sweden's most reliable spots, because the surrounding mountains often keep its skies clear when nearby areas are cloudy, and says the aurora is occasionally seen as far south as Skåne."
+  - h: Seeing it from Alaska, Canada and the rest of the US
+    p:
+    - Travel Alaska, the state's official tourism site, gives the season as late August to late April, and says the Interior, Arctic and Southcentral regions are best for viewing, with Fairbanks in the Interior and bases such as Anchorage in Southcentral. It puts the prime viewing hours at 10pm to 2am and points to a statewide aurora forecast that looks 27 days ahead.
+    - Explore Fairbanks says the city sits under the auroral oval, and that the aurora is visible there on average four nights out of five when the sky is clear and dark enough. It suggests staying at least three nights.
+    - In Canada, Spectacular NWT, the Northwest Territories' tourism body, says the territory lies under the auroral oval, that its low humidity keeps the skies clear, and that the aurora shows on up to 240 nights a year, in two seasons, mid August to the end of September and mid November to early April.
+    - For the rest of North America, NOAA's Space Weather Prediction Center publishes an experimental map of where the aurora is likely tonight and tomorrow night, and a 30-minute forecast that looks 30 to 90 minutes ahead; its experimental aurora dashboard puts the forecasts on one page. NOAA notes that a bright aurora can be seen from as much as 1,000 km (about 620 miles) away, so it does not need to be overhead. NOAA removed the "view line" from the tonight-and-tomorrow map in May 2026, so older advice to check the view line is out of date.
   - h: Is now a good time?
     p:
     - The Sun's activity rises and falls over a cycle of about 11 years. The Royal Observatory Greenwich says the Sun entered the peak of that cycle in late 2024, and that a peak usually lasts one to two years. NASA added that fairly significant storms are often still seen as the cycle declines, though less often.
@@ -1047,6 +1202,8 @@ guides:
     a: AuroraWatch UK says the best time is statistically between 10pm and midnight. NOAA gives 10pm to 2am local time.
   - q: Which months are best for a trip to Norway, Iceland or Lapland?
     a: Visit Norway and Visit Iceland give September to April, and Visit Finland the end of August to April. NOAA says activity tends to be highest around the spring and autumn equinoxes, and Visit Norway gives March and April and September and October.
+  - q: Can you see the northern lights from the US or Canada?
+    a: Yes. Travel Alaska gives late August to late April, with Fairbanks among the best places, and Spectacular NWT gives mid August to the end of September and mid November to early April in Canada's Northwest Territories. Farther south, NOAA's Space Weather Prediction Center publishes a forecast map for tonight and tomorrow night over North America.
   - q: Do I need a tour?
     a: Not necessarily. Visit Iceland says you do not need one; what matters is getting away from town lights on a clear night.
   kit:
@@ -1072,6 +1229,13 @@ guides:
   - {label: 'Visit Finland: best times to see the northern lights in Finland', url: 'https://www.visitfinland.com/en/articles/the-best-times-to-see-northern-lights/', checked: '2026-11-20'}
   - {label: 'Royal Museums Greenwich: what causes the northern lights?', url: 'https://www.rmg.co.uk/stories/space-astronomy/what-causes-northern-lights-aurora-borealis-explained', checked: '2026-11-20'}
   - {label: 'NASA: NASA, NOAA say the Sun reaches maximum phase in 11-year solar cycle (15 October 2024)', url: 'https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/', checked: '2026-11-20'}
+  - {label: 'Visit Sweden: when and where to see the northern lights in Sweden', url: 'https://visitsweden.com/where-to-go/northern-sweden/swedish-lapland/abisko-and-northern-lights/', checked: '2026-11-24'}
+  - {label: 'Travel Alaska: how to see the northern lights in Alaska', url: 'https://www.travelalaska.com/explore-alaska/articles/how-to-see-alaskas-northern-lights', checked: '2026-11-24'}
+  - {label: 'Explore Fairbanks: aurora season', url: 'https://www.explorefairbanks.com/explore-the-area/aurora-season/', checked: '2026-11-24'}
+  - {label: 'Spectacular NWT: aurora', url: 'https://spectacularnwt.com/activities/aurora/', checked: '2026-11-24'}
+  - {label: 'NOAA Space Weather Prediction Center: aurora, tonight and tomorrow night (experimental)', url: 'https://www.spaceweather.gov/products/aurora-viewline-tonight-and-tomorrow-night-experimental', checked: '2026-11-24'}
+  - {label: 'NOAA Space Weather Prediction Center: aurora, 30-minute forecast', url: 'https://www.spaceweather.gov/products/aurora-30-minute-forecast', checked: '2026-11-24'}
+  - {label: 'NOAA Space Weather Prediction Center: aurora dashboard (experimental)', url: 'https://www.spaceweather.gov/communities/aurora-dashboard-experimental', checked: '2026-11-24'}
 - slug: seeing-wildlife-responsibly
   title: How to watch wildlife spectacles without disturbing them
   short: Watching wildlife well
