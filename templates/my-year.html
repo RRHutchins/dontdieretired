@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% block title %}My year: your plans, month by month — {{ cfg.site.name }}{% endblock %}
+{% block title %}Planner: my year, your plans month by month — {{ cfg.site.name }}{% endblock %}
 {% block description %}Everything you have planned from Things to do, together: the days to look forward to and the steps to get ready for each, month by month.{% endblock %}
 {# Not in the sitemap and not indexed until the planner launches (RUNBOOK §6s, day 14): it is empty for anyone without plans. #}
 {% block robots %}<meta name="robots" content="noindex">{% endblock %}
 {% block pagetype %}my-year{% endblock %}
 {% from "_macros.html" import howto %}{% block content %}
-<header class="page-head"><p class="kicker"><a href="/list/">Things to do</a></p><h1>My year</h1>
+<header class="page-head"><p class="kicker"><a href="/list/">Things to do</a></p><h1>Planner: my year</h1>
 <p class="lead">Everything you have planned, together: the days to look forward to, and the steps to get ready for each, on a calendar and month by month.</p></header>
 {{ howto(where='-my') }}
 

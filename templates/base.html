@@ -41,9 +41,9 @@
     <a class="brand" href="/" aria-label="Don't Die Retired — home"><svg class="brand-mark" aria-hidden="true" width="34" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#B23A48"/><clipPath id="hdr"><rect width="100" height="58"/></clipPath><circle cx="50" cy="58" r="17" fill="#FBFAF7" clip-path="url(#hdr)"/><g stroke="#FBFAF7" stroke-width="4.5" stroke-linecap="round"><line x1="27.8" y1="52.0" x2="20.1" y2="50.0"/><line x1="33.7" y1="41.7" x2="28.1" y2="36.1"/><line x1="44.0" y1="35.8" x2="42.0" y2="28.1"/><line x1="56.0" y1="35.8" x2="58.0" y2="28.1"/><line x1="66.3" y1="41.7" x2="71.9" y2="36.1"/><line x1="72.2" y1="52.0" x2="79.9" y2="50.0"/></g><rect x="16" y="60" width="68" height="5" rx="2.5" fill="#FBFAF7"/><rect x="28" y="70" width="44" height="4" rx="2" fill="#FBFAF7" opacity=".75"/><rect x="38" y="79" width="24" height="3.5" rx="1.75" fill="#FBFAF7" opacity=".5"/></svg><span class="brand-name">Don't Die Retired</span></a>
     <nav class="nav{% if plus_paywall %} nav-plus{% endif %}{% if gifts_season %} nav-gifts{% endif %}" aria-label="Main">
       <a href="/list/" class="nav-lead" {% if path.startswith('/list/') %}aria-current="page"{% endif %}>Things to do</a>
-      {# My year in the menu (RUNBOOK §6t row 24c): for everyone once the paywall is on; before that, static/app.js shows it
+      {# The planner in the menu, labelled "Planner" since 24 Nov 2026 (Robin: "it is hard to find the planner"; RUNBOOK §6t row 24c): for everyone once the paywall is on; before that, static/app.js shows it
          to anyone with a plan saved in this browser or who has signed in here #}
-      <a href="/my-year/" class="nav-myyear" data-nav-myyear {% if path.startswith('/my-year/') %}aria-current="page"{% endif %}{% if not plus_paywall %} hidden{% endif %}>My year</a>
+      <a href="/my-year/" class="nav-myyear" data-nav-myyear {% if path.startswith('/my-year/') %}aria-current="page"{% endif %}{% if not plus_paywall %} hidden{% endif %}>Planner</a>
       <details class="topics" data-topics>
         <summary>Topics</summary>
         <div class="dd">
@@ -114,7 +114,7 @@
       <a href="/editorial-policy/">Editorial policy &amp; corrections</a>
       <a href="/photo-credits/">Photo and film credits</a>
       <a href="/privacy/">Privacy &amp; cookies</a>
-      {% if plus_paywall %}<a href="/my-year/">My year</a>
+      {% if plus_paywall %}<a href="/my-year/">Planner (my year)</a>
       <a href="/account/">Your account and gifts</a>
       <a href="/planner-plus/">Planner Plus</a>
       <a href="/planner-plus/terms/">Planner Plus terms</a>{% endif %}
