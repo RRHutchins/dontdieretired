@@ -4937,30 +4937,298 @@
   time: weeks
   setting: outdoors
   company: either
-  season: Spring to autumn
+  season: Spring to fall
   regions:
   - us
-  places: [PA, MD]
-  why: This 150-mile rail-trail through Pennsylvania and Maryland follows old railway lines on a crushed limestone surface, away from traffic. It links with the C&O Canal Towpath, so the ambitious can carry on to Washington, D.C.
+  places:
+  - PA
+  - MD
+  why: The Great Allegheny Passage runs 150 miles (241 km) from Pittsburgh to Cumberland, Maryland, on old railroad grades mostly topped with crushed limestone, over the 1,908-foot Salisbury Viaduct, through
+    the Big Savage Tunnel and across the Eastern Continental Divide. At Cumberland it meets the C&O Canal Towpath, so you can carry on for another 184.5 miles (297 km) to Washington, D.C.
   start:
-  - Read the Rails to Trails Conservancy's account of the trail and decide how many days to take.
-  - Book places to stay in trail towns along the way and sort out bike transport.
-  - Ride two consecutive days on gravel paths with loaded panniers before you go.
+  - Choose a direction and a plan, such as the GAP's own four-day Pittsburgh to Cumberland trip or its six-day ride on to Washington, D.C.
+  - Book beds in the trail towns, and reserve a bike space on Amtrak or a shuttle for the return well ahead, since the GAP site says bike spots are limited.
+  - The GAP site says most overnight riders cover 35 to 60 miles (56 to 97 km) a day, so try back-to-back rides of that length on gravel with loaded panniers before you go.
   links:
-  - label: 'Rails to Trails Conservancy: Great Allegheny Passage'
+  - label: 'Great Allegheny Passage: How to prepare'
+    url: https://gaptrail.org/before-you-go/how-to-prepare/
+    region: us
+    checked: '2026-11-24'
+  - label: 'Great Allegheny Passage: Trail towns'
+    url: https://gaptrail.org/where-to-go/trail-towns/
+    region: us
+    checked: '2026-11-24'
+  - label: 'Great Allegheny Passage: Shuttles'
+    url: https://gaptrail.org/where-to-go/sites-amenities/shuttles/
+    region: us
+    checked: '2026-11-24'
+  - label: 'National Park Service: Camping on the C&O Canal'
+    url: https://home.nps.gov/choh/planyourvisit/camping.htm
+    region: us
+    checked: '2026-11-24'
+  - label: 'Amtrak: The Floridian (Chicago, Pittsburgh, Washington)'
+    url: https://www.amtrak.com/floridian
+    region: us
+    checked: '2026-11-24'
+  - label: 'Rails-to-Trails Conservancy: Great Allegheny Passage, first trail in its Rail-Trail Hall of Fame'
     url: https://www.railstotrails.org/trailblog/pennsylvania-and-marylands-great-allegheny-passage/
     region: us
-    checked: '2026-10-06'
+    checked: '2026-11-24'
+  safety: Walk your bike through the unlit Pinkerton and Paw Paw tunnels with a light, ride in daylight, stay off the C&O towpath during flood watches and never cross a flooded section, and call 911 in
+    an emergency, ready to give your location, such as the nearest mile marker.
+  inspire:
+  - kind: read
+    person: Dennis Romboy, from Utah
+    line: Rode the Great Allegheny Passage and the C&O Canal Towpath from Pittsburgh to Washington, D.C. with his son Marcus, finishing a day earlier than the five days they had planned.
+    title: What's the secret to life? Enjoying the ride — even if it's 340 miles on 2 wheels
+    outlet: Deseret News
+    url: https://www.deseret.com/2023/9/15/23868275/gravel-bike-cycling-great-allegheny-passage-c-o-canal-father-son-secret-life
+    checked: '2026-11-24'
+  seo_title: 'Great Allegheny Passage itinerary: towns, trains, tunnels'
+  description: 'How to ride the Great Allegheny Passage and C&O Canal towpath: trail towns by milepost, which way is downhill, Amtrak bikes, tunnels and free camping.'
+  detail:
+  - h: What it's really like
+    p:
+    - Nearly all of the Great Allegheny Passage, the GAP, is evenly topped with crushed limestone, and the GAP site says many types of bicycle work well on it. The trail runs 150 miles (241 km) from Point
+      State Park in downtown Pittsburgh, where the Monongahela and Allegheny rivers meet, to Mile 0 under the arch at Canal Place in Cumberland, Maryland. Mileposts count up from Cumberland, so downtown
+      Pittsburgh is Mile 148.8.
+    - The best-known engineering comes in the last 35 miles before Cumberland. The Salisbury Viaduct near Meyersdale, at about Mile 33.7, is 1,908 feet (582 m) long and 101 feet (31 m) high over the Casselman
+      River. The Eastern Continental Divide is at Mile 23.7, at 2,375 feet (724 m), and the 3,294-foot (1,004 m) Big Savage Tunnel is close by, between Meyersdale and Frostburg. Rails-to-Trails Conservancy
+      chose the GAP as the first trail in its Rail-Trail Hall of Fame.
+    - The GAP is promoted by the Great Allegheny Passage Conservancy, founded in 1995 as the Allegheny Trail Alliance, which publishes TrailGuide, the official guide to the GAP and the C&O Canal Towpath.
+      The conservancy says the trail itself is maintained by local residents, most of them volunteers who live in or near the trail towns.
+  - h: Which way is downhill
+    p:
+    - The trail climbs to a high point at the Eastern Continental Divide, much nearer Cumberland than Pittsburgh, so the two directions feel very different. The GAP site's own figures are below.
+    table:
+      head:
+      - Direction
+      - First part
+      - Second part
+      rows:
+      - - Pittsburgh to Cumberland (eastbound)
+        - 125.1 miles (201 km) climbing 1,680 feet (512 m), about 0.25 percent on average, which the GAP calls imperceptible
+        - 23.7 miles (38 km) downhill from the Divide into Cumberland, dropping 1,767 feet (539 m)
+      - - Cumberland to Pittsburgh (westbound)
+        - 23.7 miles (38 km) climbing 1,767 feet (539 m) steadily, about 1.5 percent on average
+        - 125.1 miles (201 km) of gentle descent to Pittsburgh, which the GAP says can feel like a light tailwind
+    after: The GAP's recommended four-day trip runs west to east, from Pittsburgh, and ends with the long coast from the Divide into Cumberland, but it says the trip works in reverse too. Riding from Cumberland
+      gets the only sustained climb over on the first day, on fresh legs. The C&O Canal Towpath is close to flat by comparison, gaining only 605 feet (184 m) between Washington and Cumberland.
+  - h: Trail towns on the GAP
+    table:
+      head:
+      - Town
+      - GAP mile
+      - What the GAP site lists (as last listed)
+      rows:
+      - - Downtown Pittsburgh, PA
+        - '148.8'
+        - Western end in Point State Park; hotels, restaurants, bike rental and shuttles, parking garages
+      - - West Newton, PA
+        - '114.1'
+        - B&Bs and an inn, restaurants, a bakery and supermarket, a full-service bike shop, shuttles, a hiker-biker campground, visitor center, parking
+      - - Connellsville, PA
+        - '88.8'
+        - Trailside hotel and B&Bs, restaurants and breweries, a bike shop, Connellsville Hiker-Biker Campground, parking, Amtrak station
+      - - Ohiopyle, PA
+        - '71.9'
+        - Guesthouses, cabins and an inn, restaurants, outfitters, parking, Ohiopyle State Park
+      - - Confluence, PA
+        - '61.6'
+        - B&Bs, guesthouses and inns, restaurants and cafes, a bike shop, a luggage shuttle, Outflow Campground, parking
+      - - Rockwood, PA
+        - '43.8'
+        - A B&B, a creperie and a brewery, parking
+      - - Meyersdale, PA
+        - '31.9'
+        - B&Bs, guesthouses and an inn, restaurants, a seasonal campground, an outfitter offering trip planning and luggage shuttling, museum visitor center, parking
+      - - Frostburg, MD
+        - '15.5'
+        - B&B and hotel rooms, restaurants and coffee shops, a campground, a bike shop with shuttles; a switchback climbs from the trail up to the depot
+      - - Cumberland, MD
+        - '0'
+        - Mile 0 under the arch at Canal Place; hotels, B&Bs and a hostel, restaurants, a bike shop, C&O Canal visitor center, paid day-use and overnight parking
+    after: The GAP also lists Pittsburgh's South Side (Mile 145.2), Homestead (Mile 140.5) and McKeesport (Mile 132.5) as trail towns. Much of the GAP runs along private land, so you cannot camp just anywhere;
+      use the campgrounds above. Each town has its own page on the GAP site with named places to stay and eat.
+  - h: Itineraries from the GAP itself
+    table:
+      head:
+      - Trip
+      - Days
+      - Overnight stops
+      - Daily distance
+      rows:
+      - - Pedal the Passage, Pittsburgh to Cumberland
+        - '4'
+        - West Newton, Ohiopyle, Meyersdale
+        - 31.9 to 42.2 miles (51 to 68 km)
+      - - Ride of Your Life, Pittsburgh to Washington, D.C.
+        - '6'
+        - Connellsville, Rockwood, Cumberland, Hancock, Harpers Ferry
+        - 43.8 to 63.4 miles (70 to 102 km)
+      - - Both Trails, Easily, Pittsburgh to Washington, D.C.
+        - 12, over four long weekends
+        - The town where each day ends, from West Newton and Connellsville to Cumberland, Hancock, Shepherdstown and Brunswick
+        - 5.7 to 55 miles (9 to 89 km), most days 25 to 35
+    after: The GAP site says most overnight and thru-riders cover 35 to 60 miles (56 to 97 km) a day. Its two Pittsburgh to Washington trips total 333.3 miles (536 km).
+  - h: Getting bikes and people to the ends
+    p:
+    - Amtrak has temporarily combined its Capitol Limited and Silver Star trains into the Floridian, which runs daily and stops at Pittsburgh, Connellsville, Cumberland, Martinsburg, Harpers Ferry, Rockville
+      and Washington, D.C., so you can leave a car at one end and take the train back. The Floridian offers trainside checked bicycles at select stations, so check your stations when you book. You take
+      off panniers and bags and hand the bike up to a crew member in the baggage car, advance reservations are required, and any fee shows at booking. Amtrak's limits are 50 lb (23 kg) and tires up to 2
+      inches wide.
+    - The GAP site gives the bike fee as an extra $20, as last listed, and says bike spots are limited, so reserve well in advance.
+    - The GAP site also lists shuttle and luggage services along the trail, including Golden Triangle Bike and Bill's Car & Shuttle Service in Pittsburgh, 2 Wheel Escapes in West Newton, Wilderness Voyageurs
+      in Ohiopyle, Sunshine Luggage Shuttle in Confluence, Maple Leaf Outfitters in Meyersdale, Allegheny Trail House in Frostburg, Wheelzup Adventures & Shuttles in Cumberland, and Shepherdstown Pedal
+      & Paddle on the C&O. They can take you back to your car or carry your bags to the next night's stop.
+  - h: On to Washington on the C&O Canal Towpath
+    p:
+    - The towpath runs 184.5 miles (297 km) from Cumberland to Washington, D.C., and is a different ride. The GAP site describes it as largely two-track packed dirt, roots and rocks, and suggests tires
+      at least 32 mm wide with some grip. The National Park Service says it can be very muddy after heavy rain. Towpath mile markers run from Mile 0 in Georgetown to Mile 184.5 in Cumberland.
+    - Services are further apart. The GAP site says you can be in the woods for nearly 30 miles at a time, so carry two bottles and consider a water filter. In return there are free hiker-biker campsites.
+      The park says they are first-come, first-served with no reservations, limited to one night per site, and each has a chemical toilet, picnic table, fire pit and well water that must be filtered, treated
+      or boiled. The water is generally on from about mid-April to mid-November.
+    - The park's rules include a 15 mph limit, riding single file, yielding to walkers, horses and mules, and walking your bike over aqueducts and through tunnels. E-bikes are allowed where bicycles are,
+      but the park has no charging points along the towpath.
+  - h: Tunnels and the winter closure
+    p:
+    - The Big Savage Tunnel closes in winter, and the GAP site says there is no easy detour; its closure notice calls the local roads narrow and treacherous. It usually closes from early December to early
+      April, with dates announced each year. For the 2026-27 winter the GAP announced a closing date of November 25 and a reopening in late March or early April, depending on conditions.
+    - The Pinkerton Tunnel on the GAP and the 3,118-foot (950 m) Paw Paw Tunnel on the C&O, at towpath Mile 155.2, are unlit. Walk your bike through them with a light. The GAP site advises planning on daylight
+      travel only.
+  - h: When to go
+    p:
+    - Both trails are open all year, but the GAP site says spring and fall are more temperate, and spring, summer and fall all bring busy sections. With the Big Savage Tunnel shut through winter and the
+      towpath campsite water generally on only from about mid-April to mid-November, those published dates leave mid-April to mid-November as the window for an end-to-end ride with camping.
+  - h: Rail-trails in the UK
+    p:
+    - In the UK the same kind of riding comes in shorter form. The Monsal Trail in the Peak District follows 8.5 miles of the former Midland Railway, with long tunnels lit in daylight hours, and Cornwall's
+      Camel Trail runs 18 miles on a disused railway from Padstow to Wenfordbridge, surfaced and virtually level.
+  faq:
+  - q: How many days does it take to bike the Great Allegheny Passage?
+    a: The GAP's own recommended trip from Pittsburgh to Cumberland takes four days of 32 to 42 miles. The GAP site says most overnight riders cover 35 to 60 miles a day.
+  - q: Is it easier to ride the GAP from Pittsburgh or Cumberland?
+    a: From Pittsburgh you climb very gradually for 125 miles to the Eastern Continental Divide, then drop 1,767 feet in 23.7 miles into Cumberland. From Cumberland you climb that 23.7 miles first, at about
+      1.5 percent, then descend gently for the rest of the way.
+  - q: Is the Big Savage Tunnel open in winter?
+    a: No. The GAP site says it closes from about early December to early April with no easy detour, and dates are announced each year. For 2026-27 it announced closing on November 25 and reopening in late
+      March or early April.
+  - q: Can I take my bike on Amtrak to the Great Allegheny Passage?
+    a: Yes. Amtrak's Floridian, which has temporarily replaced the Capitol Limited, stops at Pittsburgh, Connellsville, Cumberland, Harpers Ferry and Washington, D.C., and offers trainside checked bikes
+      at select stations. Reservations are required, and the GAP site says spaces are limited.
+  - q: Is camping free on the C&O Canal towpath?
+    a: Yes, at the hiker-biker campsites. The National Park Service says there is no fee and no reservations, one night per site, and the well water must be treated before drinking.
+  - q: How long is the GAP and C&O Canal trail from Pittsburgh to DC?
+    a: The GAP is 150 miles and the C&O Canal Towpath is 184.5 miles. The GAP's own Pittsburgh to Washington itineraries total 333.3 miles.
+  sources:
+  - label: Great Allegheny Passage, How to prepare
+    url: https://gaptrail.org/before-you-go/how-to-prepare/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Trail towns
+    url: https://gaptrail.org/where-to-go/trail-towns/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Big Savage Tunnel to close for winter (trail alert)
+    url: https://gaptrail.org/trail-alert/big-savage-tunnel-to-close-for-winter/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Pedal the Passage (four-day itinerary)
+    url: https://gaptrail.org/things-to-do/recommended-trips/pedal-the-passage/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Ride of Your Life (six-day itinerary)
+    url: https://gaptrail.org/things-to-do/recommended-trips/ride-of-your-life/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Both Trails, Easily (four weekends)
+    url: https://gaptrail.org/things-to-do/recommended-trips/both-trails-easily/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Shuttles
+    url: https://gaptrail.org/where-to-go/sites-amenities/shuttles/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, GAP Conservancy
+    url: https://gaptrail.org/about/gap-conservancy/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Downtown Pittsburgh
+    url: https://gaptrail.org/amenities/downtown-pittsburgh/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, West Newton
+    url: https://gaptrail.org/amenities/west-newton-pennsylvania/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Connellsville
+    url: https://gaptrail.org/amenities/connellsville-pennsylvania/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Ohiopyle
+    url: https://gaptrail.org/amenities/ohiopyle-pennsylvania/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Confluence
+    url: https://gaptrail.org/amenities/confluence-pennsylvania/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Rockwood
+    url: https://gaptrail.org/amenities/rockwood-pennsylvania/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Meyersdale
+    url: https://gaptrail.org/amenities/meyersdale-pennsylvania/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Frostburg
+    url: https://gaptrail.org/amenities/frostburg-maryland/
+    checked: '2026-11-24'
+  - label: Great Allegheny Passage, Cumberland
+    url: https://gaptrail.org/amenities/cumberland-maryland/
+    checked: '2026-11-24'
+  - label: GAP History, Salisbury Viaduct
+    url: https://gaphistory.org/point_of_interest/salisbury-viaduct/
+    checked: '2026-11-24'
+  - label: GAP History, Big Savage Tunnel
+    url: https://gaphistory.org/?p=185
+    checked: '2026-11-24'
+  - label: National Park Service, Big Savage Tunnel (Potomac Heritage Trail; elevation of the Divide)
+    url: https://www.nps.gov/pohe/planyourvisit/big_savage_tunnel.htm
+    checked: '2026-11-24'
+  - label: National Park Service, C&O Canal camping
+    url: https://home.nps.gov/choh/planyourvisit/camping.htm
+    checked: '2026-11-24'
+  - label: National Park Service, C&O Canal biking
+    url: https://www.nps.gov/choh/planyourvisit/bicycle.htm
+    checked: '2026-11-24'
+  - label: National Park Service, Paw Paw Tunnel
+    url: https://www.nps.gov/choh/planyourvisit/paw-paw-tunnel.htm
+    checked: '2026-11-24'
+  - label: National Park Service, C&O Canal safety
+    url: https://www.nps.gov/choh/planyourvisit/safety.htm
+    checked: '2026-11-24'
+  - label: Amtrak, The Floridian
+    url: https://www.amtrak.com/floridian
+    checked: '2026-11-24'
+  - label: Amtrak, Capitol Limited (temporarily combined into the Floridian)
+    url: https://www.amtrak.com/routes/capitol-limited-train
+    checked: '2026-11-24'
+  - label: Amtrak, Bring your bicycle onboard
+    url: https://www.amtrak.com/bikes
+    checked: '2026-11-24'
+  - label: Rails-to-Trails Conservancy, Pennsylvania and Maryland's Great Allegheny Passage (Hall of Fame)
+    url: https://www.railstotrails.org/trailblog/pennsylvania-and-marylands-great-allegheny-passage/
+    checked: '2026-11-24'
+  - label: Peak District National Park, Monsal Trail
+    url: https://www.peakdistrict.gov.uk/visiting/places-to-visit/trails/monsaltrail
+    checked: '2026-11-24'
+  - label: Cornwall Council, The Camel Trail
+    url: https://www.cornwall.gov.uk/environment/countryside/cycle-routes-and-trails/the-camel-trail/
+    checked: '2026-11-24'
+  related:
+  - ride-the-katy-trail
+  - cycle-the-erie-canalway
+  - walk-the-monsal-trail
+  - ride-the-camel-trail
   kit:
-  - name: Cycle helmet
-    why: check it fits snugly and sits level, two fingers above your eyebrows
-    url: https://www.amazon.co.uk/s?k=cycle+helmet+adult
+  - name: Front and rear bike lights
+    why: for walking the unlit Pinkerton and Paw Paw tunnels and for gloomy stretches in the woods
+    url: https://www.amazon.co.uk/s?k=bike+lights+front+and+rear
   - name: Mini pump and puncture kit
-    why: so a flat tyre doesn't end the ride
+    why: so a flat tire doesn't end the ride between towns
     url: https://www.amazon.co.uk/s?k=bike+mini+pump+puncture+repair+kit
   - name: Bike panniers
     why: carry your things on the bike, not your back
     url: https://www.amazon.co.uk/s?k=bike+panniers
+  - name: Water filter bottle
+    why: for topping up on the C&O towpath, where campsite well water must be treated
+    url: https://www.amazon.co.uk/s?k=water+filter+bottle
 - id: guided-mushroom-foray
   title: Go on a guided mushroom foray
   category: explore
@@ -13463,27 +13731,182 @@
   company: others
   regions:
   - uk
-  why: Walking netball is netball played at walking pace with the rules slightly tweaked, so the game turns on passing and positioning instead of sprinting. Sessions are run weekly by trained hosts in leisure
-    centres and community venues, and you can pay for one session at a time.
+  why: Walking netball is netball played at walking pace with the rules slightly tweaked, so the game turns on passing and positioning instead of sprinting and jumping. Sessions are run weekly by trained
+    hosts, mostly at indoor venues, and you can pay for one session at a time.
   start:
-  - Open England Netball's Walking Netball page and use its Session Finder to find a group near you.
-  - Contact the host, say whether you have played before, and book a single session.
+  - Open England Netball's Walking Netball page and use its Session Finder, or Netball Scotland's Club Finder with the club type set to Walking.
+  - Contact the host, say whether you have played before and mention any injuries, then book a single session.
   - Wear trainers and comfortable sports clothes, and bring a bottle of water.
   links:
-  - label: England Netball Walking Netball page
+  - label: England Netball Walking Netball page and Session Finder
     url: https://www.englandnetball.co.uk/walking-netball/
     region: uk
-    checked: '2026-10-07'
+    checked: '2026-11-24'
+  - label: 'Netball Scotland: Walking Netball'
+    url: https://www.netballscotland.com/get-involved/walking-netball/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'Wales Netball: introduction to Walking Netball and its rules'
+    url: https://walesnetball.com/products-and-programmes/walking-netball
+    region: uk
+    checked: '2026-11-24'
+  - label: 'Netball Northern Ireland: Walking Netball'
+    url: https://netballni.org/social/walking-netball/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'u3a: walking netball subject page and group map'
+    url: https://www.u3a.org.uk/learning/subjects/walking-netball
+    region: uk
+    checked: '2026-11-24'
+  - label: 'North Northamptonshire Council: walking netball sessions'
+    url: https://www.northnorthants.gov.uk/leisure-and-sports/walking-sports/walking-netball
+    region: uk
+    checked: '2026-11-24'
+  safety: Tell the host about any injury or health condition before you play; Wales Netball asks its session leaders to stay aware of players' ailments and injuries throughout.
+  seo_title: 'Walking netball: rules, sessions near you and costs'
+  description: What a walking netball session is like, how its rules differ from standard netball, what a session costs, and how to find one across the UK.
+  detail:
+  - h: What a session is like
+    p:
+    - England Netball describes walking netball as netball at a walking pace with the rules slightly tweaked. Sessions are usually indoors, run weekly by trained Walking Netball Hosts, and England Netball
+      says there are over 200 programs around the country. You can pay and play for a single session, with no long-term commitment.
+    - The u3a describes a typical session as a warm-up, skill drills such as passing or shooting, a game and some stretches, often followed by a drink and a chat. At Hayling Island u3a, the Portsmouth News
+      reported quarters of seven to eight minutes, against 15 minutes in the standard game.
+  - h: How the rules change
+    table:
+      head:
+      - Rule
+      - Standard netball
+      - Walking netball
+      rows:
+      - - Holding the ball
+        - Three seconds before it is called held
+        - Four seconds before you pass
+      - - Footwork
+        - One step in any direction, then pivot only
+        - You can take an extra step when you catch the ball
+      - - Defending distance
+        - 3 feet (0.9 meters) from the landing foot of the player with the ball
+        - 3 feet (0.9 meters) from the player with the ball
+      - - Quarter length
+        - 15 minutes
+        - Seven to eight minutes at Hayling Island u3a
+    after: Walking netball also rules out running and jumping, since one foot must always be on the floor. The standard rules here are as the Netball Super League explains them, and the walking rules as
+      Wales Netball and the u3a list them. England Netball's own page does not spell its tweaks out, and Netball Scotland's rules document is open only to its Level 2 members, so ask your host which version
+      they play.
+  - h: Who it suits
+    p:
+    - England Netball says the game is designed so that anyone can play, regardless of age or fitness level, and names people who stopped playing because of injury, people who feel isolated, people who
+      think they are too unfit to run and people who have never played. Netball Scotland says no experience is needed, and the u3a says the game is easy to pick up because it is based on school netball.
+    - Check who a session is for before you go. North Northamptonshire's sessions are open to all genders, while others, such as those listed in Bournemouth, Christchurch and Poole, are for girls and women.
+  - h: What it costs
+    table:
+      head:
+      - Session
+      - When
+      - Cost (as last listed)
+      rows:
+      - - Kettering Arena Sports, Northamptonshire
+        - Wednesdays, 9am to 11am; no booking or experience needed
+        - £6, or £5.10 with a leisure pass
+      - - Redwell Leisure Centre, Wellingborough
+        - Wednesdays, 1:45pm to 2:45pm
+        - £4.20
+      - - Pemberton Leisure Centre, Rushden
+        - Tuesdays, 11am to noon
+        - £4, or included in Freedom Leisure membership
+      - - Desborough, Northamptonshire
+        - Thursdays, 1pm to 2pm
+        - £4, or £3 with a leisure pass
+      - - Glasgow Life (Glasgow Club Bellahouston and Glasgow International Arena)
+        - Mondays, 12:45pm to 1:45pm (Bellahouston); Wednesdays, noon to 1pm (International Arena)
+        - £5.50, or free with Glasgow Club membership
+      - - Active Leeds (Aireborough, Pudsey and Rothwell leisure centers)
+        - Non-members can book up to seven days ahead or just turn up and pay
+        - Not listed; included in Active Leeds membership
+    after: In Scotland, walking players get half off Netball Scotland's Level 2 membership, which includes personal accident insurance for affiliated sessions. Without it, cover depends on the leisure provider's
+      insurance, which may not specifically cover netball.
+  - h: How to find a session
+    list:
+    - England. Use the Session Finder on England Netball's Walking Netball page.
+    - Scotland. Use Netball Scotland's Club Finder with the club type set to Walking, or email membership@netballscotland.com to be put in touch with your local Walking Netball Activator.
+    - Wales. Wales Netball publishes the walking rules and session format; its site also has a Club Finder.
+    - Northern Ireland. Netball Northern Ireland has a walking netball page with links to its Find a Club listings; its contact address is admin@netballni.org.
+    - Through the u3a. Its walking netball page has a map of u3a groups, and some u3as offer start-up grants for new ones.
+    - In the US, we could not find a walking netball program with a public page.
+  faq:
+  - q: What are the rules of walking netball?
+    a: No running or jumping, with one foot always on the floor. Wales Netball's version lets you hold the ball for four seconds instead of three and take an extra step when you catch it.
+  - q: How much does walking netball cost?
+    a: Usually a few pounds a session. As last listed, North Northamptonshire's sessions cost £4 to £6, and Glasgow Life's £5.50.
+  - q: Do I need to have played netball before?
+    a: No. England Netball names people who have never played among those it is designed for, and Netball Scotland says no experience is needed.
+  - q: Can men play walking netball?
+    a: At some sessions. North Northamptonshire's and Glasgow Life's sessions are open to all genders, but others are for girls and women, so check with the host.
+  - q: How long is a walking netball session?
+    a: Most listed sessions run about an hour, though Kettering's runs for two. Hayling Island u3a plays quarters of seven to eight minutes.
+  - q: Is there walking netball in the US?
+    a: We could not find a US walking netball program with a public page. Walking versions of other sports, such as walking basketball, are different games.
+  sources:
+  - label: England Netball, Walking Netball
+    url: https://www.englandnetball.co.uk/walking-netball/
+    checked: '2026-11-24'
+  - label: Netball Scotland, Walking Netball
+    url: https://www.netballscotland.com/get-involved/walking-netball/
+    checked: '2026-11-24'
+  - label: Wales Netball, Introduction to Walking Netball
+    url: https://walesnetball.com/products-and-programmes/walking-netball
+    checked: '2026-11-24'
+  - label: Netball Northern Ireland, Walking Netball
+    url: https://netballni.org/social/walking-netball/
+    checked: '2026-11-24'
+  - label: u3a, Walking netball
+    url: https://www.u3a.org.uk/learning/subjects/walking-netball
+    checked: '2026-11-24'
+  - label: Netball Super League, Learn the game
+    url: https://www.netballsl.com/list/goals
+    checked: '2026-11-24'
+  - label: North Northamptonshire Council, Walking netball
+    url: https://www.northnorthants.gov.uk/leisure-and-sports/walking-sports/walking-netball
+    checked: '2026-11-24'
+  - label: Active Leeds, Walking Netball
+    url: https://active.leeds.gov.uk/classesandactivities/sports/Netball
+    checked: '2026-11-24'
+  - label: BCP Council, Walking netball Broadstone
+    url: https://www.bcpcouncil.gov.uk/adult-social-care-and-health/our-adult-social-care-directory/walking-netball-broadstone
+    checked: '2026-11-24'
+  - label: Glasgow Life, Walking Netball (Glasgow International Arena)
+    url: https://glasgowlife.sportsuite.co.uk/activity-finder/activity/walking-netball-glasgow-international-arena
+    checked: '2026-11-24'
+  - label: Glasgow Life, Walking Netball (Glasgow Club Bellahouston)
+    url: https://glasgowlife.sportsuite.co.uk/activity-finder/activity/walking-netball-glasgow-club-bellahouston
+    checked: '2026-11-24'
+  - label: Portsmouth News, How walking netball with Hayling Island U3A inspired an active retirement
+    url: https://portsmouth.co.uk/news/people/how-walking-netball-with-hayling-island-u3a-inspired-an-active-retirement-including-a-500-mile-walk-in-spain-4109508
+    checked: '2026-11-24'
+  inspire:
+  - kind: read
+    person: Marlene, from Hayling Island
+    line: Took up walking netball with Hayling Island u3a, playing as a shooter in her first netball since 1966, and went on to long-distance walks including the Camino de Santiago.
+    title: How walking netball with Hayling Island U3A inspired an active retirement - including a 500-mile walk in Spain
+    outlet: Portsmouth News
+    url: https://portsmouth.co.uk/news/people/how-walking-netball-with-hayling-island-u3a-inspired-an-active-retirement-including-a-500-mile-walk-in-spain-4109508
+    checked: '2026-11-24'
   kit:
   - name: Netball
-    why: for practising passing at home
+    why: for practicing passing at home between sessions
     url: https://www.amazon.co.uk/s?k=netball+size+5
-  - name: Supportive trainers
-    why: comfortable shoes for a sports hall
+  - name: Indoor court trainers
+    why: for grip on a sports hall floor
     url: https://www.amazon.co.uk/s?k=indoor+court+trainers
   - name: Sports water bottle
     why: to drink between quarters
     url: https://www.amazon.co.uk/s?k=sports+water+bottle
+  related:
+  - play-netball
+  - walking-football
+  - try-walking-basketball
+  - play-walking-rugby
 - id: play-table-tennis
   title: Join a table tennis session
   category: move
@@ -24042,7 +24465,7 @@
     why: for low light and steady landscapes
     url: https://www.amazon.co.uk/s?k=camera+tripod+lightweight
 - id: join-amateur-theatre
-  title: Join an amateur theatre company
+  title: Join an amateur theater company
   category: connect
   kind: project
   effort: moderate
@@ -24054,35 +24477,212 @@
   regions:
   - uk
   - us
-  why: Amateur theatre groups stage everything from pantomimes to musicals, in venues that run from small village halls to large theatres. A production needs directors and technicians as well as performers,
-    so there is a part to play whether or not you want to be on stage.
+  why: Amateur theater groups stage everything from pantomimes to musicals, in venues that run from community halls to theaters the groups own or lease themselves. A production needs set builders, lighting
+    and sound operators, prompters and front of house as well as actors, so there is a part to play whether or not you want to be on stage.
   start:
-  - Search the NODA groups directory in the UK, or find your state association through the American Association of Community Theatre.
-  - Contact a group near you and ask when it next holds auditions or needs backstage help.
-  - Go to a rehearsal or a show to meet the company before you commit to a production.
+  - Find groups near you through your NODA region or the Little Theatre Guild's list of member theaters in the UK, or through your state theater association, listed by the American Association of Community
+    Theatre, in the US.
+  - Look at each group's join or auditions page for its next audition, its yearly subscription and whether you must be a member to audition.
+  - Go to a show, a casting evening or a set-building session first, and offer to help backstage if you are not ready to audition.
   links:
-  - label: NODA groups directory (National Operatic and Dramatic Association, UK)
-    url: https://www.noda.org.uk/societies
-    region: uk
-    checked: '2026-10-08'
-  - label: NODA home page
+  - label: NODA (National Operatic and Dramatic Association, UK)
     url: https://www.noda.org.uk/
     region: uk
-    checked: '2026-10-08'
-  - label: American Association of Community Theatre list of state theatre associations
-    url: https://aact.org/state-theatre-associations
+    checked: '2026-11-24'
+  - label: 'NODA: member societies directory (opens on the London region)'
+    url: https://www.noda.org.uk/regions/london/societies
+    region: uk
+    checked: '2026-11-24'
+  - label: 'Little Theatre Guild of Great Britain: member theaters'
+    url: https://littletheatreguild.org/our-theatres/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'National Drama Festivals Association: about the festivals'
+    url: https://ndfa.co.uk/about-us/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'American Association of Community Theatre: state theater associations'
+    url: https://aact.org/node/5670
     region: us
-    checked: '2026-10-08'
+    checked: '2026-11-24'
+  - label: 'Community Players Theatre, Bloomington, Illinois: audition information'
+    url: https://communityplayers.org/get-involved/audition-information/
+    region: us
+    checked: '2026-11-24'
+  - label: 'Little Theatre of Alexandria, Virginia: auditions'
+    url: https://thelittletheatre.com/auditions/
+    region: us
+    checked: '2026-11-24'
+  seo_title: 'How to join amateur dramatics: auditions, costs, time'
+  description: How joining an amateur theater group really works, from auditions and rehearsal nights to show week, backstage roles and real groups' yearly fees.
+  detail:
+  - h: What joining is really like
+    p:
+    - Most groups work show by show. Casting comes first, often weeks or months ahead. The Little Theatre in Dunstable usually holds auditions about eight weeks before a production opens, Putney Arts Theatre
+      two to three months before, and the Cotswold Players four to six months before, with about two months of rehearsal.
+    - Then come rehearsals, usually on fixed weeknights. Adel Players in Leeds rehearse on Wednesday and Friday nights for the eight weeks before each play, and add Sunday and Tuesday rehearsals in the
+      final week. The writer Kelly Apter, who spent a year with Edinburgh Theatre Arts, put her own commitment at two evenings a week, for a few hours each time.
+    - The week before opening is tech week, when lighting, sound, costumes and props come together. BroadwayWorld notes that it is also called "hell week", because rehearsals run longer and stress runs
+      high. Community Players Theatre in Bloomington, Illinois allows conflicts for some rehearsals, but not for tech week or performances.
+    - 'The hard parts, honestly:'
+    list:
+    - The time. Community Players Theatre in Illinois rehearses Monday to Friday evenings, from about 6:30 or 7pm until 9 or 10pm. Once you are cast, BroadwayWorld's advice is to commit fully to the rehearsal
+      and performance schedule.
+    - The cost. Most groups charge a yearly subscription, and many ask you to join once you are cast. The Little Theatre of Alexandria in Virginia requires cast members to become members within two weeks
+      of accepting a role.
+    - Not being cast, or cast small. Directors cast for the play in front of them. BroadwayWorld's point is that missing a role does not mean you were not good, and that you can try again at the next audition.
+    - Helping out. Progress Theatre in Reading expects all its members to help with front of house.
+  - h: Ways in compared
+    table:
+      head:
+      - Group or class
+      - How you get in, and the commitment
+      - Cost (as last listed)
+      rows:
+      - - Adel Players, Leeds
+        - No auditions. Two casting evenings where the whole play is read with parts rotated, then a casting committee chooses. Three plays a year; rehearsals Wednesday and Friday for eight weeks, plus
+          two extra nights in show week
+        - £48 a year (£36 group fee plus £12 Adel War Memorial Association membership), or £35 for over-65s
+      - - Progress Theatre, Reading (Little Theatre Guild member)
+        - Audition notices emailed to members; all members help with front of house
+        - £24 a year (26 and over), £12 (18 to 25); free membership for anyone facing financial difficulty
+      - - Cotswold Players, Cotswold Playhouse, Gloucestershire (Little Theatre Guild member)
+        - Every show auditioned, usually four to six months ahead; about two months of rehearsal
+        - £30 a year, £20 non-acting, £15 (18 to 25); first year free
+      - - Dunstable Rep, The Little Theatre, Dunstable (Little Theatre Guild member)
+        - Open auditions, including for first-timers, about eight weeks before opening; join if offered a role
+        - From £10 a year
+      - - Community Players Theatre, Bloomington, Illinois
+        - Two evenings of script readings for a play, three for a musical (a prepared song, simple dance steps and a scene reading); rehearsals Monday to Friday evenings
+        - Not listed
+      - - Little Theatre of Alexandria, Virginia
+        - Membership not needed to audition; cast must join within two weeks of accepting a role
+        - Not listed
+      - - City Lit, London (adult-education class)
+        - 'Acting: beginners, 5 to 11 weekly sessions, mostly two hours each'
+        - £179 to £329; £125 to £230 concession
+      - - Community College of Beaver County, Pennsylvania (adult-education class)
+        - 'The Adult Actor: six weekly two-hour evening sessions, beginners welcome'
+        - $79 (2025 listing)
+    after: A class does not put you in a show, but City Lit says its beginners' course suits people returning to acting after a long break as well as complete beginners.
+  - h: Roles off stage
+    p:
+    - Many people start backstage. Adel Players list set building, directing, lighting, sound, props, costumes, special effects, set dressing, prompting and helping actors backstage, plus front of house
+      jobs such as selling tickets, ushering and selling refreshments and programs. Dunstable Rep adds the bar team and hall management, and says experienced volunteers can train you in many of the roles.
+    - Cotswold Players say no previous experience is needed for their backstage jobs, only a willingness to learn. Kelly Apter began at Edinburgh Theatre Arts by sourcing props, changing sets and prompting,
+      and within a year had taken a fairly large role at the Edinburgh Fringe.
+  - h: How auditions work, and how to prepare
+    p:
+    - For a play, the audition is often a cold read. At the Little Theatre of Walla Walla in Washington, directors use readings from the script to see how you read with others, and headshots and résumés
+      are optional. Community Players Theatre says no special preparation is needed.
+    - For a musical, bring a song. Walla Walla asks for one that shows your range, usually no longer than one to two minutes, with marked sheet music for the pianist or a backing track on your phone. Some
+      musicals add a movement audition, so wear clothes you can move in, with closed-toe shoes.
+    - Bring a list of your dates. The Little Theatre of Alexandria asks for an accurate list of rehearsal conflicts at the audition, and Community Players Theatre says conflicts can affect casting.
+  - h: Finding a group
+    p:
+    - In the UK, NODA, the National Operatic and Dramatic Association, has supported amateur theater since 1899 and lists its member groups by region across 11 regions. The Little Theatre Guild of Great
+      Britain has 124 member theaters, which are amateur companies that own or lease the theater they perform in, with between 64 and 450 seats.
+    - Groups that enter drama festivals can take you further. The National Drama Festivals Association runs the National Drama Festival each summer for one-act and full-length plays that did well at a qualifying
+      festival, and works with regional bodies including the Scottish Community Drama Association and the Drama Association of Wales.
+    - In the US, the American Association of Community Theatre lists 32 state and regional theater associations, though it notes that not every state has an active one. Contact yours to ask about groups
+      near you.
+  faq:
+  - q: Do you need experience to join amateur dramatics?
+    a: No. Dunstable Rep's auditions are open to everyone, including first-time performers, and La Crosse Community Theatre in Wisconsin welcomes everyone from people with no experience to seasoned actors.
+  - q: How much does it cost to join an amateur dramatics society?
+    a: Usually a yearly subscription. As last listed, Dunstable Rep started from £10 a year, Progress Theatre in Reading charged £24 for adults and Adel Players £48, including the £12 Adel War Memorial
+      Association membership every member must take.
+  - q: Do you have to be a member to audition for community theater?
+    a: Often not. Dunstable Rep, Putney Arts Theatre and the Little Theatre of Alexandria let non-members audition, but ask you to join if you are cast.
+  - q: What do you do at a community theater audition?
+    a: For a play, usually a reading from the script with other people. For a musical, expect to sing a short prepared song, and sometimes learn some simple dance steps.
+  - q: How many nights a week are amateur theater rehearsals?
+    a: It varies by group. Adel Players rehearse two nights a week for eight weeks, plus extra nights in show week, while Community Players Theatre in Illinois rehearses Monday to Friday evenings.
+  - q: Can I join a theater group without acting?
+    a: Yes. Groups need set builders, lighting and sound operators, prop and costume makers, prompters and front of house volunteers. Cotswold Players say no previous experience is needed backstage, and
+      Dunstable Rep says many roles can be learned with support from experienced volunteers.
+  sources:
+  - label: NODA, About us
+    url: https://www.noda.org.uk/about-us
+    checked: '2026-11-24'
+  - label: NODA, member societies, London region
+    url: https://www.noda.org.uk/regions/london/societies
+    checked: '2026-11-24'
+  - label: Little Theatre Guild of Great Britain, Our Theatres
+    url: https://littletheatreguild.org/our-theatres/
+    checked: '2026-11-24'
+  - label: Little Theatre Guild of Great Britain, About the Little Theatre Guild
+    url: https://littletheatreguild.org/?p=2
+    checked: '2026-11-24'
+  - label: National Drama Festivals Association, About us
+    url: https://ndfa.co.uk/about-us/
+    checked: '2026-11-24'
+  - label: American Association of Community Theatre, State Theatre Associations
+    url: https://aact.org/node/5670
+    checked: '2026-11-24'
+  - label: Adel Players, Join Adel Players
+    url: https://www.adel-players.org.uk/join-adel-players
+    checked: '2026-11-24'
+  - label: Progress Theatre, Membership
+    url: https://progresstheatre.co.uk/membership
+    checked: '2026-11-24'
+  - label: Cotswold Playhouse, Cotswold Players
+    url: https://cotswoldplayhouse.co.uk/everything-else/cotswold-players
+    checked: '2026-11-24'
+  - label: The Little Theatre Dunstable, Join Dunstable Rep
+    url: https://littletheatre.org.uk/join-dunstable-rep
+    checked: '2026-11-24'
+  - label: Putney Arts Theatre, Putney Theatre Company auditions
+    url: https://putneyartstheatre.org.uk/putney-theatre-company/auditions
+    checked: '2026-11-24'
+  - label: Community Players Theatre, Audition Information
+    url: https://communityplayers.org/get-involved/audition-information/
+    checked: '2026-11-24'
+  - label: Little Theatre of Alexandria, Auditions
+    url: https://thelittletheatre.com/auditions/
+    checked: '2026-11-24'
+  - label: Little Theatre of Walla Walla, Auditions
+    url: https://ltww.org/audition
+    checked: '2026-11-24'
+  - label: La Crosse Community Theatre, Auditions
+    url: https://www.lacrossecommunitytheatre.org/index.php/audition
+    checked: '2026-11-24'
+  - label: City Lit, Acting beginners
+    url: https://www.citylit.ac.uk/courses/acting-beginners
+    checked: '2026-11-24'
+  - label: Community College of Beaver County, The Adult Actor
+    url: https://ccbc.coursestorm.com/course/the-adult-actor-crafting-characters-and-confidence
+    checked: '2026-11-24'
+  - label: BroadwayWorld, Everything You Need To Know About Auditioning For Community Theatre (Ashlee Reck)
+    url: https://broadwayworld.com/article/Everything-You-Need-To-Know-About-Community-Theatre-20190716
+    checked: '2026-11-24'
+  - label: The List, Kelly Apter's year in amdram
+    url: https://list.co.uk/news/kelly-apters-year-in-amdram-47923
+    checked: '2026-11-24'
+  inspire:
+  - kind: read
+    person: Kelly Apter, Edinburgh Theatre Arts
+    line: Walked into Edinburgh Theatre Arts on her third attempt, sourced props, changed sets and helped prompt at rehearsals, and within a year had taken a fairly large role during the Fringe and was
+      assistant director on the group's spring double-bill.
+    title: Kelly Apter's year in amdram
+    outlet: The List
+    url: https://list.co.uk/news/kelly-apters-year-in-amdram-47923
+    checked: '2026-11-24'
   kit:
   - name: Script highlighter set
-    why: for marking your lines in the script
+    why: for marking your lines and cues in the script
     url: https://www.amazon.co.uk/s?k=highlighter+pens
   - name: Book on acting
-    why: exercises and tips for stage acting
+    why: exercises for stage acting to work through between rehearsals
     url: https://www.amazon.co.uk/s?k=acting+book+beginners
   - name: Rehearsal bag
-    why: carries script, water and a change of shoes
+    why: carries your script, water and a change of shoes to rehearsal
     url: https://www.amazon.co.uk/s?k=canvas+tote+bag
+  related:
+  - take-an-acting-class
+  - try-improv-comedy
+  - join-a-gilbert-and-sullivan-society
+  - try-voice-acting
 - id: join-a-woodturning-club
   title: Turn a bowl on a lathe
   category: think
@@ -127343,3 +127943,1347 @@
   - join-a-model-railway-club
   - go-to-a-board-game-cafe
   - join-a-chess-club
+- id: sing-in-a-church-choir
+  title: Sing in a church choir
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A church choir leads the singing and sings choral music at services, often every Sunday, after a weekly evening practice. Many parish choirs welcome new members without an audition, and cathedrals
+    also run voluntary choirs that sing evensong a few times a year.
+  start:
+  - Ask the director of music at a church near you, or look for a choir notice on A Church Near You in England; many parish choirs practice on a weekday evening.
+  - Go to a practice and a service to see what the commitment is. Some choirs sing most Sundays, others one Sunday a month.
+  - If you read music and want more, ask a cathedral about its voluntary choir or try an RSCM choir or summer residency.
+  links:
+  - label: 'Ss Peter and Paul, Eye, Suffolk: church choir (A Church Near You)'
+    url: https://www.achurchnearyou.com/church/2003/news/166506/church-choir
+    region: uk
+    checked: '2026-11-24'
+  - label: Chichester Cathedral Voluntary Choir
+    url: https://chichestercathedral.org.uk/learning/learn-something-new/chichester-cathedral-voluntary-choir
+    region: uk
+    checked: '2026-11-24'
+  - label: 'RSCM Voices South: auditioned adult choir singing in cathedrals'
+    url: https://www.rscm.org.uk/learn-with-us/rscm-choirs/vs/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'St. Martin''s Episcopal Church, Houston: parish choir'
+    url: https://www.stmartinsepiscopal.org/smecministries/parish-choir/
+    region: us
+    checked: '2026-11-24'
+  - label: 'RSCM America: summer choral residencies for adults and young singers'
+    url: https://www.rscmamerica.org/choral-residencies
+    region: us
+    checked: '2026-11-24'
+  seo_title: 'How to join a church choir: rehearsals, services, auditions'
+  description: What singing in a church choir involves, from weekly practice to Sunday services, whether to audition, and cathedral and RSCM choirs in the UK and US.
+  detail:
+  - h: What it involves
+    p:
+    - The pattern is usually one practice a week plus services. The adult choir at Ss Peter and Paul in Eye, Suffolk, sings at most regular Sunday services and normally practices on Thursday evenings; new
+      members are always welcome. St. Martin's Episcopal Church in Houston rehearses on Thursdays at 7 p.m., holds no auditions, and pairs newer singers with experienced ones.
+    - Commitment varies. The volunteer parish choir at St Peter's, Bournemouth, rehearses on Thursday evenings most weeks, from 7 to 8pm, and normally sings the 10am Sung Eucharist on the third Sunday of
+      the month, and asks for some experience of reading music but not previous choral experience.
+    - Cathedrals ask more. Belfast Cathedral's choir, which recruits voluntary adult singers in every part through an informal audition, sings two services on Sunday and Friday evensong in term time, with
+      a Thursday rehearsal, and expects members at most of them. Chichester Cathedral's Voluntary Choir commits to a weekday evensong or a full Sunday of services every few months, after an informal chat
+      and a simple audition. Rochester Cathedral's Voluntary Choir asks for good sight-reading skills and some experience of singing Anglican choral music.
+    - Some cathedral singing is paid. Worcester Cathedral recruits freelance Associate Soprano Lay Clerks to sing Saturday evensong, listing a fee of £31.84 a service in its September 2026 job pack, and
+      its person specification asks for high capability in sight-reading.
+  - h: Ways in compared
+    table:
+      head:
+      - Choir
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Parish choir, Ss Peter and Paul, Eye, Suffolk
+        - Thursday evening practice; most Sunday services; new members always welcome
+        - Not listed
+      - - Chichester Cathedral Voluntary Choir
+        - Informal chat and simple audition; a weekday evensong or full Sunday every few months
+        - Not listed
+      - - RSCM Voices South
+        - Audition at about RSCM Silver Award level; about five services a year, mostly on Saturdays, in cathedrals across the south of England
+        - £117 a year (£54 for 18 to 24s); singers buy their own music
+      - - St. Martin's Episcopal Church, Houston
+        - Thursday 7 p.m. rehearsal; no auditions
+        - Not listed
+      - - RSCM America Washington, D.C. residency
+        - A week in July for adults and young singers, with services including Washington National Cathedral
+        - $950 residential or $625 commuter (adults), as listed for 2026
+    after: The RSCM supports church music in the UK. Its individual membership was listed at £89 a year by Direct Debit (2024 rate), with magazines, course discounts and entry to its Voice for Life singing
+      awards. Voices South is open only to adult members of RSCM-affiliated churches and choirs or individual RSCM members.
+  faq:
+  - q: Do you have to audition to join a church choir?
+    a: Not always. St. Martin's Episcopal in Houston says there are no auditions, while cathedral voluntary choirs such as Chichester and Belfast hold a short or informal audition.
+  - q: Do you need to read music to sing in a church choir?
+    a: It depends on the choir. St Peter's, Bournemouth, asks for some experience of reading music, and cathedral choirs such as Rochester ask for good sight-reading.
+  - q: How often does a church choir rehearse?
+    a: Usually once a week plus services. The choirs at Eye, Bournemouth and Houston all practice on Thursday evenings.
+  - q: Are church choir singers paid?
+    a: Parish choirs are usually volunteers. Some cathedrals pay lay clerks; Worcester Cathedral listed £31.84 a service for its associate soprano lay clerks.
+  sources:
+  - label: A Church Near You, Ss Peter and Paul, Eye, Church choir
+    url: https://www.achurchnearyou.com/church/2003/news/166506/church-choir
+    checked: '2026-11-24'
+  - label: St Peter's Choral Foundation, Bournemouth, Parish Choir
+    url: https://choralfoundation.stpetersbournemouth.org.uk/adults
+    checked: '2026-11-24'
+  - label: Belfast Cathedral, Join our choir
+    url: https://belfastcathedral.org/music/our-choir/
+    checked: '2026-11-24'
+  - label: Chichester Cathedral, Chichester Cathedral Voluntary Choir
+    url: https://chichestercathedral.org.uk/learning/learn-something-new/chichester-cathedral-voluntary-choir
+    checked: '2026-11-24'
+  - label: Rochester Cathedral, The Cathedral Voluntary Choir
+    url: https://www.rochestercathedral.org/voluntarychoir
+    checked: '2026-11-24'
+  - label: Worcester Cathedral, Associate Soprano Lay Clerks job pack (September 2026)
+    url: https://www.worcestercathedral.org.uk/media/yx2fqmpg/associate-soprano-lay-clerks_job-pack_sept-26.pdf
+    checked: '2026-11-24'
+  - label: RSCM, RSCM Voices South
+    url: https://www.rscm.org.uk/learn-with-us/rscm-choirs/vs/
+    checked: '2026-11-24'
+  - label: RSCM, UK memberships
+    url: https://www.rscm.org.uk/?p=205916
+    checked: '2026-11-24'
+  - label: St. Martin's Episcopal Church, Parish Choir
+    url: https://www.stmartinsepiscopal.org/smecministries/parish-choir/
+    checked: '2026-11-24'
+  - label: RSCM America
+    url: https://www.rscmamerica.org/
+    checked: '2026-11-24'
+  - label: RSCM America, Summer choral residencies
+    url: https://www.rscmamerica.org/choral-residencies
+    checked: '2026-11-24'
+  - label: RSCM Washington DC, 2026 Washington DC Summer Residency registration (Zeffy)
+    url: https://www.zeffy.com/en-US/ticketing/2026-washington-dc-summer-residency
+    checked: '2026-11-24'
+  - label: Church Times, Two church musicians awarded for long service (1 June 2022)
+    url: https://www.churchtimes.co.uk/articles/2022/10-june/news/uk/two-church-musicians-awarded-for-long-service
+    checked: '2026-11-24'
+  inspire:
+  - kind: read
+    person: Heather Braddock, Christ Church, Woodford, diocese of Chester
+    line: Has sung in her church choir since she was 11, more than 70 years, and has run it for the past 20 years.
+    title: Two church musicians awarded for long service
+    outlet: Church Times
+    url: https://www.churchtimes.co.uk/articles/2022/10-june/news/uk/two-church-musicians-awarded-for-long-service
+    checked: '2026-11-24'
+  kit:
+  - name: Choir music folder
+    why: for keeping your copies together at practices and services
+    url: https://www.amazon.co.uk/s?k=choir+music+folder
+  - name: Hymn book
+    why: for getting to know the hymns your choir sings
+    url: https://www.amazon.co.uk/s?k=hymns+ancient+and+modern
+  - name: Pencil and eraser
+    why: for marking breaths and notes on your music at practice
+    url: https://www.amazon.co.uk/s?k=pencil+and+eraser+set
+  related:
+  - join-a-choral-society
+  - learn-to-ring-church-bells
+  - learn-to-read-music
+  - sing-messiah-from-scratch
+- id: join-a-bluegrass-jam
+  title: Join a bluegrass jam
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: At a bluegrass jam, players sit in a circle and take turns calling songs and taking short solos, called breaks, while everyone else plays the chords. Slow jams and Wernick Method classes are set
+    up for learners; one class asks only that you can tune up and change smoothly between four chords.
+  start:
+  - Get the basics in your hands. One Wernick Method class asks students to tune their instrument and change smoothly between G, C, D and A.
+  - Find a slow or beginners' jam through a regional bluegrass association's jam list, or a Wernick Method class through its class finder.
+  - At your first jam, watch for a while, tune to the group, and play quietly until you know the tune.
+  links:
+  - label: 'Wernick Method: find a beginner bluegrass jam class'
+    url: https://wernickmethod.org/
+    region: any
+    checked: '2026-11-24'
+  - label: 'Minnesota Bluegrass and Old-Time Music Association: public jams, including slow jams'
+    url: https://minnesotabluegrass.org/Public-Jams
+    region: us
+    checked: '2026-11-24'
+  - label: 'PineCone: beginners'' bluegrass jam, Harry''s Guitar Shop, Raleigh'
+    url: https://www.pinecone.org/events/pinecone-beginners-bluegrass-jam-4
+    region: us
+    checked: '2026-11-24'
+  - label: 'The Skinny: Sociograss and the Sunday bluegrass jams in Leith, Edinburgh'
+    url: https://www.theskinny.co.uk/music/interviews/edinburgh-band-sociograss-on-music-and-community
+    region: uk
+    checked: '2026-11-24'
+  - label: Bristol Bluegrass Session at Moor Beer Co (Headfirst Bristol listing)
+    url: https://www.headfirstbristol.co.uk/whats-on/moor-beer-co/thu-16-jan-bristol-bluegrass-session-121110
+    region: uk
+    checked: '2026-11-24'
+  seo_title: 'Bluegrass jams for beginners: slow jams and etiquette'
+  description: How a bluegrass jam works, what to play before you go, slow jams and Wernick Method classes for learners, and where to find a jam in the US and UK.
+  detail:
+  - h: How a jam works
+    p:
+    - Blue Ridge Music Trails, an initiative of the Blue Ridge National Heritage Area, publishes plain jam etiquette. Watch first, because some jams go round the circle and others are led by one or two
+      people. At an informal jam, wait until a tune ends and ask if you can join. Tune to the other players first and your tuner second.
+    - In bluegrass, players take turns improvising a short break, usually when the leader signals. If you do not know a tune, play quietly until you do, and if you lose your place, hang back until you find
+      it. The person who starts a tune ends it, often with a call such as "last time". Resist the urge to noodle between tunes.
+    - Slow jams are a gentler start. In Raleigh, North Carolina, PineCone's monthly beginners' jam spends the first hour as one large group that stops often to talk about songs, then splits into two smaller
+      groups, and describes itself as a place to learn basic jam etiquette before joining a traditional jam. The Wernick Method, credited to Pete Wernick, runs weekly classes, one-day classes and weekend
+      camps for beginning and experienced jammers; its class finder listed classes in the US and a few other countries, but none in the UK, when we checked.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - PineCone beginners' jam, Harry's Guitar Shop, Raleigh, North Carolina
+        - Third Monday of the month, 7pm to 9pm; open to all musicians and all abilities
+        - Not listed
+      - - Slow Bluegrass Jam, American Legion
+        - First and third Wednesdays, 6pm to 8pm, slow pace (Minnesota Bluegrass listing)
+        - Not listed
+      - - Wernick Method jam camp, New York City (Bluegrass Jams in and around NYC)
+        - Friday evening to Sunday afternoon
+        - $225, including two jam songbooks (April 2026 camp)
+      - - Bowler's Rest, Leith, Edinburgh
+        - Sunday bluegrass jams, 6pm to 9pm; musicians of every skill level encouraged
+        - Not listed
+      - - Bristol Bluegrass Session, Moor Beer Co tap room
+        - Thursday evening session for players at all levels (January 2025 listing)
+        - Free entry, pay what you can
+    after: The Minnesota association says a call or email may be advisable before a first visit, especially to check holiday and weather schedules, and notes that musical tastes and etiquette vary from
+      place to place.
+  faq:
+  - q: How good do you have to be to join a bluegrass jam?
+    a: Enough to keep up with the chords. One Wernick Method class asks students to tune their instrument and change smoothly between G, C, D and A, and needs no jamming experience.
+  - q: What is a slow jam in bluegrass?
+    a: A jam played at a slower pace so learners can keep up. The Minnesota Bluegrass association lists slow bluegrass and old-time jams in Minneapolis.
+  - q: What is a break in a bluegrass jam?
+    a: A short improvised solo. Blue Ridge Music Trails says bluegrass players take turns, usually when the leader signals, while old-time players all play the tune together.
+  - q: Can I just turn up to a bluegrass jam?
+    a: Often, but watch first and ask. Blue Ridge Music Trails suggests waiting until a tune ends and asking whether the group minds you joining.
+  sources:
+  - label: Blue Ridge Music Trails, Jam session etiquette
+    url: https://www.blueridgemusicnc.com/?p=1145
+    checked: '2026-11-24'
+  - label: Wernick Method
+    url: https://wernickmethod.org/
+    checked: '2026-11-24'
+  - label: Bluegrass Today, Wernick Method Bluegrass Jam Class with Debbie Wagner, Appleton, WI
+    url: https://bluegrasstoday.com/?p=134320
+    checked: '2026-11-24'
+  - label: Meetup, Bluegrass Jams in and around NYC, Bluegrass Jam Camp
+    url: https://www.meetup.com/bluegrassjams/events/313961049
+    checked: '2026-11-24'
+  - label: Minnesota Bluegrass and Old-Time Music Association, Public jams
+    url: https://minnesotabluegrass.org/Public-Jams
+    checked: '2026-11-24'
+  - label: PineCone, PineCone Beginners Bluegrass Jam
+    url: https://www.pinecone.org/events/pinecone-beginners-bluegrass-jam-4
+    checked: '2026-11-24'
+  - label: The Skinny, Edinburgh's Sociograss on music and community (15 October 2026)
+    url: https://www.theskinny.co.uk/music/interviews/edinburgh-band-sociograss-on-music-and-community
+    checked: '2026-11-24'
+  - label: Headfirst Bristol, Bristol Bluegrass Session at Moor Beer Co
+    url: https://www.headfirstbristol.co.uk/whats-on/moor-beer-co/thu-16-jan-bristol-bluegrass-session-121110
+    checked: '2026-11-24'
+  kit:
+  - name: Clip-on tuner
+    why: for tuning quietly before you join the circle
+    url: https://www.amazon.co.uk/s?k=clip+on+tuner
+  - name: Guitar capo
+    why: for playing in the keys a jam calls without new chord shapes
+    url: https://www.amazon.co.uk/s?k=guitar+capo
+  - name: Bluegrass jam songbook
+    why: words and chords of common jam songs to learn at home
+    url: https://www.amazon.co.uk/s?k=bluegrass+jam+songbook
+  related:
+  - learn-the-banjo
+  - learn-the-mandolin
+  - go-to-a-bluegrass-festival
+  - play-in-a-folk-session
+- id: join-a-lace-guild
+  title: Join a lace guild or lace group
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A lace group is where lacemakers bring their pillows, work on their own pieces and help each other, and the national guilds add magazines, libraries, courses and awards. Some local groups welcome
+    beginners, one we found can provide equipment, and some meetings are free.
+  start:
+  - Find a group. The Lace Guild publishes UK group lists by name and county, and the International Organization of Lace (IOLI) maps its US charter chapters.
+  - Ask whether you can visit first. L.A.C.E. in Elmhurst, Illinois, lets you attend up to three meetings free before joining.
+  - Decide whether to join the national body too, for its magazine, library and member rates on courses.
+  links:
+  - label: 'The Lace Guild: membership'
+    url: https://www.laceguild.org/guild-membership
+    region: uk
+    checked: '2026-11-24'
+  - label: 'The Lace Guild: groups and teachers by name and county'
+    url: https://www.laceguild.org/group-and-tutor-lists
+    region: uk
+    checked: '2026-11-24'
+  - label: 'Farnborough u3a: bobbin lace group'
+    url: https://farnborough.u3asite.uk/u3a_groups/bobbin-lace/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'International Organization of Lace (IOLI): membership'
+    url: https://main.internationalorganizationoflace.org/about-us/membership
+    region: us
+    checked: '2026-11-24'
+  - label: 'IOLI: charter chapters (local lace groups)'
+    url: https://main.internationalorganizationoflace.org/about-us/charter-chapters
+    region: us
+    checked: '2026-11-24'
+  seo_title: How to join a lace guild or lacemaking group
+  description: What the Lace Guild and the International Organization of Lace give members, what membership costs, and how to find a local lace group in the UK or US.
+  detail:
+  - h: What a guild gives you
+    p:
+    - The Lace Guild, an educational charity based at The Hollies in Stourbridge, calls itself the largest lace organization in the UK. It is open to anyone in the world interested in making, collecting
+      or enjoying lace. Members get the quarterly magazine Lace or Early Days In Lacemaking, reduced fees for courses and Lace Guild events, and may be able to apply to a small grant scheme for courses
+      or training. The Guild also has an accredited museum, a large library and an assessment scheme.
+    - In the US, IOLI was founded in 1954 as the Old Lacers, became International Old Lacers, Inc. in 1970 and took its current name in 2012, and has over 1,100 active members. Membership brings a quarterly
+      Bulletin, an annual handbook with a directory of chapters and members, lending libraries, grants for lace education and an annual convention with lectures and classes in a variety of lacemaking techniques.
+    - Local groups are where the making happens. Farnborough u3a's bobbin lace group meets every two weeks, ranges from a beginner to a member who designs patterns, and can provide equipment for beginners.
+      Lacers of the Lake, an IOLI charter chapter based in Cortland, Ohio, meets on the third Saturday of the month at local libraries, and its meetings are free and open to anyone interested.
+  - h: Ways in compared
+    table:
+      head:
+      - Organization or group
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Lace Guild (UK)
+        - Lace magazine by post or online, or Early Days for newer lacemakers; member rates on events
+        - £43 a year by post (£40 by Direct Debit), £30 online, Early Days £15 (2026-27 UK rates)
+      - - International Organization of Lace (US)
+        - Printed and digital Bulletin, handbook, libraries, convention
+        - $40 a year in the US, or $30 digital only worldwide
+      - - Farnborough u3a bobbin lace group, Hampshire
+        - Every two weeks on Mondays, 2pm to 4pm; equipment for beginners
+        - Not listed (u3a membership applies)
+      - - L.A.C.E., Elmhurst Public Library, Illinois
+        - Third Saturday of the month (not December), 10am to 2pm; IOLI charter chapter
+        - Up to three meetings free, then membership; amount not listed
+      - - Lacers of the Lake, Cortland and Howland, Ohio
+        - Third Saturday of the month, 10am to 1pm, usually March to November
+        - Free
+    after: The Lace Guild publishes its group lists on its website, and full contact details for each group come from its office. UK taxpayers can add Gift Aid to the subscription.
+  faq:
+  - q: How much does it cost to join the Lace Guild?
+    a: For 2026-27 the Lace Guild listed UK membership at £43 a year with the magazine by post, £40 by Direct Debit, or £30 with the magazine online.
+  - q: Can a beginner join a lace group?
+    a: Yes. Farnborough u3a's bobbin lace group welcomes beginners and can provide equipment, and L.A.C.E. in Elmhurst, Illinois, says beginning lacemakers are among its members.
+  - q: What is the International Organization of Lace?
+    a: A US-based lace organization founded in 1954 as the Old Lacers. It publishes a quarterly Bulletin, charters local chapters and holds an annual convention.
+  - q: How do I find a lacemaking group near me?
+    a: In the UK, the Lace Guild publishes lists of groups by county, with contact details from its office. In the US, IOLI's charter chapters page has a map of local groups.
+  sources:
+  - label: The Lace Guild, Membership
+    url: https://www.laceguild.org/guild-membership
+    checked: '2026-11-24'
+  - label: The Lace Guild, Membership of The Lace Guild (shop)
+    url: https://www.laceguild.org/shop-5
+    checked: '2026-11-24'
+  - label: The Lace Guild, What the Guild does
+    url: https://www.laceguild.org/what-the-guild-does
+    checked: '2026-11-24'
+  - label: The Lace Guild, Groups and teachers
+    url: https://www.laceguild.org/group-and-tutor-lists
+    checked: '2026-11-24'
+  - label: International Organization of Lace, Membership
+    url: https://main.internationalorganizationoflace.org/about-us/membership
+    checked: '2026-11-24'
+  - label: International Organization of Lace, Historical highlights
+    url: https://main.internationalorganizationoflace.org/about-us/historical-highlights
+    checked: '2026-11-24'
+  - label: International Organization of Lace, Charter chapters
+    url: https://main.internationalorganizationoflace.org/about-us/charter-chapters
+    checked: '2026-11-24'
+  - label: Farnborough u3a, Bobbin Lace
+    url: https://farnborough.u3asite.uk/u3a_groups/bobbin-lace/
+    checked: '2026-11-24'
+  - label: L.A.C.E., About us
+    url: https://sites.google.com/view/illacemakers/about-us
+    checked: '2026-11-24'
+  - label: Tribune Chronicle, Lacers share their artistry at library (16 February 2026)
+    url: https://www.tribtoday.com/news/local-news/2026/02/lacers-share-their-artistry-at-library/
+    checked: '2026-11-24'
+  inspire:
+  - kind: read
+    person: Holly Lacusky, Lacers of the Lake, Ohio
+    line: First saw bobbin lace at a festival in Columbiana and has made it for about 25 years, demonstrating Ipswich lace with her local lace chapter.
+    title: Lacers share their artistry at library
+    outlet: Tribune Chronicle
+    url: https://www.tribtoday.com/news/local-news/2026/02/lacers-share-their-artistry-at-library/
+    checked: '2026-11-24'
+  kit:
+  - name: Bobbin lace pillow
+    why: a firm base to carry your work to group meetings
+    url: https://www.amazon.co.uk/s?k=bobbin+lace+pillow
+  - name: Lace bobbins
+    why: for winding pairs for a new pattern at the group
+    url: https://www.amazon.co.uk/s?k=bobbin+lace+bobbins
+  - name: Pillow cover bag
+    why: for carrying a dressed pillow to meetings without disturbing the pins
+    url: https://www.amazon.co.uk/s?k=lace+pillow+bag
+  related:
+  - learn-lacemaking
+  - learn-tatting
+  - join-an-embroiderers-guild
+  - join-a-spinners-and-weavers-guild
+- id: join-a-basketmaking-group
+  title: Join a basketmaking group
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A basketmaking group gives you a table of people working willow and other fibers side by side, a library of books to borrow and, in some groups, cheaper willow. National bodies in the UK and US publish
+    journals and run courses, while local groups meet to make baskets together and share skills.
+  start:
+  - 'Find a group: the Basketmakers'' Association lists UK and overseas groups by region, and the National Basketry Organization lists US guilds by state.'
+  - Take a beginners' workshop first if you have never woven; Northumbria Basketry Group says newcomers gain more from its Tyne Valley sessions if they have done one.
+  - Contact the group coordinator before your first session, so there is enough willow for you and you know which tools to bring or borrow.
+  links:
+  - label: 'The Basketmakers'' Association: benefits of membership'
+    url: https://basketmakersassociation.org.uk/membership/benefits-of-membership/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'The Basketmakers'' Association: find a group near you'
+    url: https://basketmakersassociation.org.uk/?p=8627
+    region: uk
+    checked: '2026-11-24'
+  - label: 'Northumbria Basketry Group: join us'
+    url: https://northumbriabasketrygroup.co.uk/join-us
+    region: uk
+    checked: '2026-11-24'
+  - label: 'National Basketry Organization: basket and weaving guilds by state'
+    url: https://nationalbasketry.org/learn-basketry-skills/basket-weavers-guilds
+    region: us
+    checked: '2026-11-24'
+  - label: 'National Basketry Organization: join NBO'
+    url: https://nationalbasketry.org/join-nbo
+    region: us
+    checked: '2026-11-24'
+  - label: 'Missouri Basketweavers Guild: membership'
+    url: https://sites.google.com/basketweavers.org/missouribasketweaversguild/membership
+    region: us
+    checked: '2026-11-24'
+  seo_title: 'Basket weaving groups and guilds near me: how to join'
+  description: How to find a basketmaking group or guild in the UK or US, what members get, how local sessions work and what membership costs as last listed.
+  detail:
+  - h: What a group gives you
+    p:
+    - The Basketmakers' Association is open to amateur and professional basketmakers, chair seaters, students, historians, collectors and anyone interested in basketry. Members get three journals a year,
+      access to courses the association runs, a lending library, and bursaries and awards subject to eligibility. Its list of local groups runs from the Scottish Basketmakers Circle to Swansea and Gower
+      Willow Craft Group, though the association notes that these groups are independent and not affiliated to it.
+    - Local groups are often run by their members. Northumbria Basketry Group began in 2007 among people who met on a beginners' class in Rothbury. Its Tyne Valley group meets at Newburn Village Hall for
+      two-day sessions, from 10:30 to 15:30, and works without a tutor; everyone helps one another and shares skills. Essential tools can be borrowed at first, tea and coffee are provided, and you bring
+      your own lunch.
+    - In the US, the National Basketry Organization says each guild it lists is independent and plans its own programs. Some hold an annual gathering. The Missouri Basketweavers Guild's membership includes
+      a newsletter, a member directory and its annual convention, with workshops, demonstrations and shopping.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Organization
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - The Basketmakers' Association (UK)
+        - Three journals a year, courses, lending library, bursaries and awards
+        - £30 a year with PDF journal; £43 with printed journal in the UK
+      - - Northumbria Basketry Group
+        - Early booking for courses and workshops, reduced willow prices, lending library of basketry books; local self-help groups meet across the region
+        - £10 a year; tuition at self-help groups is extra, by arrangement
+      - - National Basketry Organization (US)
+        - Basketry+ magazine, e-news, NBO Presents! live online workshops, early conference registration
+        - $25 student, $45 Friend, $65 Digital, $80 Basic, $110 Enhanced, $250 or more Advocate (a year)
+      - - Missouri Basketweavers Guild
+        - Newsletter, member directory, annual convention, year-round workshops
+        - $35 a year (January to December); first year free for first-time members
+    after: On the National Basketry Organization's join page, the comparison table and the benefit notes do not fully agree on which level includes what, so check with it if one benefit matters to you.
+  faq:
+  - q: How do I find a basket weaving guild near me?
+    a: In the UK, the Basketmakers' Association keeps a list of local groups by region. In the US, the National Basketry Organization lists guilds by state, often with contact links.
+  - q: How much does it cost to join the Basketmakers' Association?
+    a: As last listed, £30 a year with a PDF journal or £43 with a printed journal in the UK, with higher rates for printed journals sent to Europe and worldwide.
+  - q: Can a beginner join a basketry group?
+    a: Often, though some groups suit people who know the basics. Northumbria Basketry Group's Tyne Valley sessions have no tutor, and the group says newcomers gain more from them after a beginner's workshop.
+  - q: Do I need my own tools for a basketmaking group?
+    a: Not at first in some groups. Northumbria Basketry Group's Tyne Valley group lends essential tools to start with and suggests buying some later.
+  sources:
+  - label: The Basketmakers' Association, Benefits of membership
+    url: https://basketmakersassociation.org.uk/membership/benefits-of-membership/
+    checked: '2026-11-24'
+  - label: The Basketmakers' Association, Find a group near you
+    url: https://basketmakersassociation.org.uk/?p=8627
+    checked: '2026-11-24'
+  - label: Northumbria Basketry Group, Join us
+    url: https://northumbriabasketrygroup.co.uk/join-us
+    checked: '2026-11-24'
+  - label: Northumbria Basketry Group, About our groups
+    url: https://northumbriabasketrygroup.co.uk/self-help-groups/about-our-groups
+    checked: '2026-11-24'
+  - label: Northumbria Basketry Group, Tyne Valley
+    url: https://northumbriabasketrygroup.co.uk/self-help-groups/tyne-valley
+    checked: '2026-11-24'
+  - label: National Basketry Organization, Basket and Weaving Guilds
+    url: https://nationalbasketry.org/learn-basketry-skills/basket-weavers-guilds
+    checked: '2026-11-24'
+  - label: National Basketry Organization, Join NBO
+    url: https://nationalbasketry.org/join-nbo
+    checked: '2026-11-24'
+  - label: Missouri Basketweavers Guild, Membership
+    url: https://sites.google.com/basketweavers.org/missouribasketweaversguild/membership
+    checked: '2026-11-24'
+  kit:
+  - name: Secateurs
+    why: for cutting and trimming willow rods at group sessions
+    url: https://www.amazon.co.uk/s?k=secateurs+bypass
+  - name: Basketry bodkin
+    why: for opening up the weave to insert stakes and finish borders
+    url: https://www.amazon.co.uk/s?k=basketry+bodkin
+  - name: Basket making book for beginners
+    why: for working through a pattern between sessions
+    url: https://www.amazon.co.uk/s?k=basket+making+book+beginners
+  related:
+  - weave-a-willow-basket
+  - learn-chair-caning
+  - learn-a-heritage-craft
+  - join-a-spinners-and-weavers-guild
+- id: join-an-origami-society
+  title: Join an origami society
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: An origami society brings magazines full of new models, local folding meetings and conventions where you spend whole days in classes with other folders. The British and American societies even run
+    an online convention together, so you can try one from home.
+  start:
+  - Join the British Origami Society (listed from £15 a year) or OrigamiUSA, which offers an online membership as well as one with a print magazine.
+  - Look for a meeting near you, such as the British Origami Society's mini meetings, a u3a origami group, or a group in OrigamiUSA's US directory.
+  - Try a convention online first; the joint BOS and OrigamiUSA virtual convention runs on Zoom.
+  links:
+  - label: 'British Origami Society: membership, mini meetings and conventions'
+    url: https://britishorigami.org/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'British Origami Society: convention bookings'
+    url: https://www.tickettailor.com/events/bos
+    region: any
+    checked: '2026-11-24'
+  - label: 'Halesowen u3a: origami group'
+    url: https://halesowen.u3asite.uk/u3a_groups/origami/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'OrigamiUSA: annual convention and other events'
+    url: https://origamiusa.org/convention
+    region: us
+    checked: '2026-11-24'
+  - label: 'OrigamiUSA: community origami groups in the US'
+    url: https://origamiusa.org/groups_us
+    region: us
+    checked: '2026-11-24'
+  seo_title: 'Origami clubs and societies: how to join and what it costs'
+  description: What the British Origami Society and OrigamiUSA offer members, how local folding groups and conventions work, and what they cost as last listed.
+  detail:
+  - h: What membership gives you
+    p:
+    - The British Origami Society lists membership from £15 a year. Members get magazines every two months and member-only content online. The society runs mini meetings, with new ones announced for Salisbury,
+      starting on 1 August 2026, and Bristol, announced in September 2026.
+    - OrigamiUSA membership brings The Paper, its print magazine, The Fold, its online magazine, and a discount of 10% or more at its shop, The Origami Source. An online membership sends everything electronically,
+      and OrigamiUSA suggests it for members outside the US because posting The Paper abroad costs more. A family membership covers two adults and up to four children at the same address. OrigamiUSA also
+      holds Folding Sundays, monthly meetings in New York City.
+    - Local groups vary. OrigamiUSA's directory lists groups such as the Tucson Origami Club and a Princeton Origami Group at Princeton Public Library. In the UK, Halesowen u3a's origami group meets every
+      four weeks in term time and runs a new members' course of about four terms; beginners can join only at the start of a course.
+    - At a convention you spend days in classes. The British Origami Society's 60th anniversary convention in Nottingham has a three-day program of classes and special guests from the US, Denmark, France
+      and the UK. OrigamiUSA's annual convention in New York has classes on models and techniques, and lectures.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - British Origami Society
+        - Membership with a magazine every two months and member content
+        - From £15 a year
+      - - BOS and OrigamiUSA virtual convention
+        - Online via Zoom, 3 to 4 April 2027; OrigamiUSA lists 32 classes
+        - Not shown on the booking page
+      - - BOS 60th anniversary convention
+        - East Midlands Conference Centre, Nottingham, 2 to 5 September 2027
+        - Ticket price not shown; bed and breakfast at the Orchard Hotel £114 single or £124 twin or double, or £72 single at Rutland Hall
+      - - OrigamiUSA annual convention
+        - Sheraton Times Square, New York, 22 to 25 July 2027; details expected in May 2027
+        - Not yet listed; at the 2022 convention, one day of classes was $140, or $126 for members
+      - - OrigamiUSA Pacific Coast convention
+        - Bellevue, Washington, 23 to 27 September 2027
+        - Not yet listed
+      - - Halesowen u3a origami group
+        - Every four weeks in term time; materials for the first two meetings, then buy a course book and paper
+        - Not shown; the group was full with a waiting list
+    after: OrigamiUSA gave members a 10% discount on registration at its 2022 convention. We could not open OrigamiUSA's membership price page, so check its site for current rates.
+  faq:
+  - q: How much does it cost to join the British Origami Society?
+    a: Membership is listed from £15 a year and includes a magazine every two months.
+  - q: Is there an online origami convention?
+    a: Yes. The British Origami Society and OrigamiUSA run a joint virtual convention on Zoom, listed for 3 to 4 April 2027.
+  - q: What do you get with OrigamiUSA membership?
+    a: The Paper, a print magazine, The Fold, an online magazine, and a discount at The Origami Source shop. An online membership sends everything electronically.
+  - q: Where is the OrigamiUSA convention held?
+    a: In New York City, at the Sheraton Times Square Hotel, each summer. The 2027 convention is listed for 22 to 25 July.
+  sources:
+  - label: British Origami Society, Home page
+    url: https://britishorigami.org/
+    checked: '2026-11-24'
+  - label: British Origami Society, Events (Ticket Tailor)
+    url: https://www.tickettailor.com/events/bos
+    checked: '2026-11-24'
+  - label: British Origami Society, BOS 60th Anniversary Convention - Nottingham 2027 (Ticket Tailor)
+    url: https://www.tickettailor.com/events/bos/2443260
+    checked: '2026-11-24'
+  - label: OrigamiUSA, Home page
+    url: https://origamiusa.org
+    checked: '2026-11-24'
+  - label: OrigamiUSA, What are the benefits of OrigamiUSA Membership?
+    url: https://origamiusa.org/node/14846
+    checked: '2026-11-24'
+  - label: OrigamiUSA, Convention
+    url: https://origamiusa.org/convention
+    checked: '2026-11-24'
+  - label: OrigamiUSA, Convention 2022 prices
+    url: https://origamiusa.org/node/18164
+    checked: '2026-11-24'
+  - label: OrigamiUSA, Community origami groups in the US
+    url: https://origamiusa.org/groups_us
+    checked: '2026-11-24'
+  - label: Halesowen u3a, Origami
+    url: https://halesowen.u3asite.uk/u3a_groups/origami/
+    checked: '2026-11-24'
+  kit:
+  - name: Origami paper, 15 cm squares
+    why: for folding models from society magazines and classes
+    url: https://www.amazon.co.uk/s?k=origami+paper+15cm
+  - name: Bone folder
+    why: for pressing sharp creases
+    url: https://www.amazon.co.uk/s?k=bone+folder+origami
+  - name: Paper storage folder
+    why: for carrying paper and diagrams to meetings
+    url: https://www.amazon.co.uk/s?k=a4+document+wallet+folder
+  related:
+  - learn-origami
+  - join-a-calligraphy-society
+  - learn-papercutting
+  - learn-paper-quilling
+- id: join-a-rug-hooking-guild
+  title: Join a rug hooking guild
+  category: connect
+  kind: habit
+  effort: gentle
+  cost: low
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A rug hooking guild gives you a weekly or monthly table of people pulling wool loops through backing, plus visiting teachers, lending libraries and hook-ins. In the US, local guilds are chapters
+    of a national association; in the north of England, volunteer groups keep proggy and hooky rug making going.
+  start:
+  - In the US, find a chapter on the Association of Traditional Hooking Artists' chapter list; in the UK, look for a local rag rug group such as Durham Rug Makers or Yorkshire Rugmakers.
+  - Ask whether you can visit first. Brandywine Rug Hooking Guild welcomes visitors to its regular meetings, and Cranberry Rug Hookers in Harwich, Massachusetts, describes itself as beginners and all levels.
+  - If you have never hooked, try a beginners' workshop first (see Make a rag rug), then bring your piece to the group.
+  links:
+  - label: 'Association of Traditional Hooking Artists: chapters'
+    url: https://atharugs.com/chapters/
+    region: us
+    checked: '2026-11-24'
+  - label: 'Association of Traditional Hooking Artists: why join'
+    url: https://atharugs.com/why-join
+    region: us
+    checked: '2026-11-24'
+  - label: Mason Dixon Rug Hookers, ATHA Chapter 10 (Maryland)
+    url: https://sites.google.com/view/mason-dixon-rug-hookers/home
+    region: us
+    checked: '2026-11-24'
+  - label: 'Durham Rug Makers: about us'
+    url: https://e-voice.org.uk/durhamrugmakers/about-us
+    region: uk
+    checked: '2026-11-24'
+  - label: 'National Coal Mining Museum for England: Yorkshire Rugmakers open day'
+    url: https://www.ncm.org.uk/whats-on/yorkshire-rugmakers/
+    region: uk
+    checked: '2026-11-24'
+  seo_title: 'Rug hooking guilds near me: how to join and what it costs'
+  description: How to find a rug hooking guild or rag rug group in the US or UK, what happens at meetings, and what ATHA and chapter membership cost as last listed.
+  detail:
+  - h: What a guild gives you
+    p:
+    - The Association of Traditional Hooking Artists (ATHA) is a US non-profit with about 87 chapters listed across 11 regions of the US and Canada. Membership brings a full-color magazine six times a year,
+      website access to an archive of photos, articles and patterns, and the chance to attend conventions, hook-ins and rug camps.
+    - Chapters run their own programs. Mason Dixon Rug Hookers, ATHA Chapter 10, meets on the third Tuesday of each month, 10am to 2pm, in Ellicott City, Maryland. It sponsors speakers and demonstrations,
+      lends books, magazines and DVDs, and brings in teachers from across the country for one- to three-day workshops. Cranberry Rug Hookers, listed by the Town of Harwich, Massachusetts, meets weekly on
+      Monday mornings. Brandywine Rug Hooking Guild, Chapter 83, founded in 2001, holds a free open house several times a year and an annual hook-in each October.
+    - The UK has no equivalent national association that we could find, but there are local groups, especially in the north of England. Durham Rug Makers is a self-help group of volunteers, formed in 2003,
+      that practices hooking and progging at Clayport Library and Bowburn Community Centre. Yorkshire Rugmakers normally meet monthly at the National Coal Mining Museum, and Ebor Ruggers in York meets monthly
+      and welcomes beginners and experienced makers.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Group
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Association of Traditional Hooking Artists (US)
+        - National membership; magazine six times a year, pattern archive, chapter listings
+        - $32 a year (US)
+      - - Mason Dixon Rug Hookers, Ellicott City, Maryland
+        - Monthly meetings, speakers, lending library, visiting-teacher workshops
+        - $30 a year chapter dues, plus ATHA membership
+      - - Cranberry Rug Hookers, Harwich, Massachusetts
+        - Weekly, Mondays 9:30am to 12:30pm; beginners and all levels
+        - Contact the group
+      - - Durham Rug Makers, County Durham
+        - Volunteer self-help group; hooking and progging
+        - Not listed
+      - - Yorkshire Rugmakers
+        - Normally monthly, at the National Coal Mining Museum
+        - Not listed
+    after: Mason Dixon Rug Hookers asks members to belong to ATHA as well as the chapter, so budget for both. Durham Rug Makers' own page does not give meeting days, so contact the group first.
+  faq:
+  - q: How much does it cost to join ATHA?
+    a: The Association of Traditional Hooking Artists lists membership at $32 (US) a year, including its magazine and website access.
+  - q: How do I find a rug hooking guild near me?
+    a: In the US and Canada, ATHA lists its chapters by region and state or province. In the UK, look for local rag rug groups, such as Durham Rug Makers or Yorkshire Rugmakers.
+  - q: Do I have to join ATHA to join a local rug hooking guild?
+    a: Some chapters require it. Mason Dixon Rug Hookers asks members to be ATHA national members as well as paying chapter dues.
+  - q: Is there a rug hooking guild in the UK?
+    a: We could not find a UK national rug hooking association, but local groups such as Durham Rug Makers and Yorkshire Rugmakers meet to hook and prog rugs.
+  sources:
+  - label: Association of Traditional Hooking Artists, Chapters
+    url: https://atharugs.com/chapters/
+    checked: '2026-11-24'
+  - label: Association of Traditional Hooking Artists, Why join
+    url: https://atharugs.com/why-join
+    checked: '2026-11-24'
+  - label: Mason Dixon Rug Hookers, Home
+    url: https://sites.google.com/view/mason-dixon-rug-hookers/home
+    checked: '2026-11-24'
+  - label: Town of Harwich, Cranberry Rug Hookers
+    url: https://www.harwich-ma.gov/node/347101
+    checked: '2026-11-24'
+  - label: The Brandywine Rug Hooking Guild, Home
+    url: https://www.brandywinerughookingguild.org/
+    checked: '2026-11-24'
+  - label: Durham Rug Makers, About us
+    url: https://e-voice.org.uk/durhamrugmakers/about-us
+    checked: '2026-11-24'
+  - label: Durham Rug Makers, Links
+    url: https://e-voice.org.uk/durhamrugmakers/links
+    checked: '2026-11-24'
+  - label: National Coal Mining Museum for England, Yorkshire Rugmakers Open Day
+    url: https://www.ncm.org.uk/whats-on/yorkshire-rugmakers/
+    checked: '2026-11-24'
+  kit:
+  - name: Rug hook
+    why: pulls wool strips through the backing to form loops
+    url: https://www.amazon.co.uk/s?k=rug+hooking+hook
+  - name: Rug hooking frame
+    why: holds the backing taut while you work at meetings
+    url: https://www.amazon.co.uk/s?k=rug+hooking+frame
+  - name: Monk's cloth or hessian backing
+    why: the base fabric you hook into
+    url: https://www.amazon.co.uk/s?k=monks+cloth+rug+hooking
+  related:
+  - make-a-rag-rug
+  - try-rug-tufting
+  - join-a-quilt-guild
+  - join-a-spinners-and-weavers-guild
+- id: try-speed-puzzling
+  title: Try speed puzzling
+  category: think
+  kind: event
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  - world
+  why: Speed puzzling turns a jigsaw into a race, with hundreds of people opening the same unseen puzzle at the same moment. Competitions run solo, in pairs and in teams, from local club events to national
+    championships in Bradford and Atlanta and a world championship in Spain.
+  start:
+  - Time yourself on a 500-piece puzzle at home; Anneka Thompson, founder of the UK Jigsaw Puzzle Association, suggests newcomers start by setting a timer.
+  - Enter a local or state event first, such as a USAJPA-sanctioned club competition in the US; the Chicago Puzzle Club's allow two hours for 500 pieces.
+  - When you are ready, enter the UK or US national championship, or the World Jigsaw Puzzle Championship in Valladolid, Spain, alone, with a partner or in a team.
+  links:
+  - label: 'World Jigsaw Puzzle Federation: World Jigsaw Puzzle Championship'
+    url: https://worldjigsawpuzzle.org/en/championship_en.htm
+    region: any
+    checked: '2026-11-24'
+  - label: 'Visit Bradford: UK Nationals Speed Puzzle Championship'
+    url: https://www.visitbradford.com/whats-on/uk-nationals-2026-speed-puzzle-championship-p2551681
+    region: uk
+    checked: '2026-11-24'
+  - label: 'USA Jigsaw Puzzle Association: 2026 USA Jigsaw Nationals and Convention'
+    url: https://www.tickettailor.com/events/usajigsawpuzzleassociation/1841501
+    region: us
+    checked: '2026-11-24'
+  - label: 'Chicago Puzzle Club: USAJPA-sanctioned solo and pairs competitions'
+    url: https://www.tickettailor.com/events/chicagopuzzleclub/2405332
+    region: us
+    checked: '2026-11-24'
+  - label: 'Wisconsin Jigsaw Puzzle Association: state championship'
+    url: https://www.zeffy.com/en-US/ticketing/2026-wisconsin-state-jigsaw-puzzle-championship
+    region: us
+    checked: '2026-11-24'
+  seo_title: 'Speed puzzling competitions: how to enter and what it costs'
+  description: How jigsaw speed puzzling competitions work, solo, pairs and teams, piece counts and time limits, and what UK, US and world events cost to enter.
+  detail:
+  - h: How a competition works
+    p:
+    - Everyone gets the same puzzle, which they have never seen, and starts at the same time. At the World Jigsaw Puzzle Championship the final puzzle is kept secret until the day; about 1,700 people from
+      70 countries took part in 2026, according to Euronews. For the 2026 UK Nationals, sponsor Ravensburger worked with five UK-based artists on five puzzles that had never been available before.
+    - The events we looked at use 500 pieces for solo puzzlers and 500 or 1,000 for pairs and teams. At the 2026 world championship, the first individual rounds gave 75 minutes for 500 pieces, the pairs
+      final 75 minutes for an unpublished 1,000-piece puzzle, and teams of three or four had 2 hours 30 minutes for two 1,000-piece puzzles in qualifying. If nobody finishes, judges count the correctly
+      placed pieces.
+    - The fastest are very fast. The Guardian reported that the 2024 individual world champion finished 500 pieces in 37 minutes 38 seconds, but local events give much longer. The Chicago Puzzle Club's
+      solo and pairs competitions allow two hours for 500 pieces and rank unfinished puzzles by pieces remaining.
+  - h: Ways in and what they cost
+    table:
+      head:
+      - Event
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Wisconsin State Jigsaw Puzzle Championship (US)
+        - Solo 500 pieces, 2 hours; pairs 500 pieces, 2 hours; teams of up to four, 1,000 pieces, 2.5 hours
+        - $25 solo, $30 pairs, $40 team
+      - - USA Jigsaw Nationals, Atlanta (US)
+        - Individual, pairs and teams of four; finals on the Sunday
+        - $125 plus tax entry badge for every competitor (2026)
+      - - UK Nationals, Woodhouse Grove School, Bradford
+        - Two days; solo, pairs and teams; cash prizes for the top three in each category
+        - £35 solo, £50 for a team of up to four (2026); pairs not listed
+      - - World Jigsaw Puzzle Championship, Valladolid, Spain
+        - Individual, pairs, teams of three or four, and country teams; several rounds
+        - €50 individual, €50 a pair, €125 a team for registrations by 31 May 2026 (an early rate with a 20% discount)
+    after: Popular events sell out. The 2026 USA Jigsaw Nationals was sold out, with walk-up lines to fill late cancellations, and the Wisconsin championship's solo, pairs and team places were full, with
+      free waitlist tickets. To place in the top three at the 2025 UK championship, you had to live in the UK, its overseas territories or the Republic of Ireland.
+  faq:
+  - q: How does speed puzzling work?
+    a: Competitors race to finish the same unseen jigsaw, usually 500 pieces solo or 500 to 1,000 pieces in pairs and teams, within a time limit. If nobody finishes, judges count the pieces placed.
+  - q: How much does it cost to enter a speed puzzling competition?
+    a: As last listed, from $25 solo at the Wisconsin state championship to $125 plus tax at the USA Jigsaw Nationals, £35 solo at the UK Nationals and €50 (early rate) at the world championship.
+  - q: Where is the World Jigsaw Puzzle Championship held?
+    a: In Valladolid, Spain. The 2026 championship ran from 16 to 20 September at the city's exhibition fair, organized by the World Jigsaw Puzzle Federation.
+  - q: Do you have to sort pieces in speed puzzling?
+    a: No. The Guardian found methods ranging from careful sorting to none at all, and Anneka Thompson of the UK Jigsaw Puzzle Association says the best method depends on the puzzle.
+  sources:
+  - label: World Jigsaw Puzzle Federation, World Championship
+    url: https://worldjigsawpuzzle.org/en/championship_en.htm
+    checked: '2026-11-24'
+  - label: World Jigsaw Puzzle Federation, Rules WJPC 2026
+    url: https://worldjigsawpuzzle.org/wjpc/2026/rules
+    checked: '2026-11-24'
+  - label: Euronews, Who can solve it fastest? Speed puzzlers race against the clock at World Championships (21 September 2026)
+    url: https://www.euronews.com/2026/09/21/who-can-solve-it-fastest-speed-puzzlers-race-against-the-clock-at-world-championships
+    checked: '2026-11-24'
+  - label: The Guardian via Yahoo, Jigsaws get a piece of the action as 'speed puzzling fever' grips UK (25 January 2025)
+    url: https://uk.style.yahoo.com/jigsaws-piece-action-speed-puzzling-060014579.html
+    checked: '2026-11-24'
+  - label: Visit Bradford, UK Nationals 2026 Speed Puzzle Championship
+    url: https://www.visitbradford.com/whats-on/uk-nationals-2026-speed-puzzle-championship-p2551681
+    checked: '2026-11-24'
+  - label: TryBooking, United Kingdom Jigsaw Puzzle National Championship (2025)
+    url: https://trybooking.com/uk/dxlv
+    checked: '2026-11-24'
+  - label: Ravensburger UK, UK JPA Nationals
+    url: https://www.ravensburger.co.uk/en-GB/discover/blog/uk-jpa-nationals
+    checked: '2026-11-24'
+  - label: USA Jigsaw Puzzle Association, 2026 USA Jigsaw Nationals & Convention (Ticket Tailor)
+    url: https://www.tickettailor.com/events/usajigsawpuzzleassociation/1841501
+    checked: '2026-11-24'
+  - label: Discover Atlanta, Atlanta Hosts the Country's Fastest Puzzle Competition, USA Jigsaw Nationals
+    url: https://discoveratlanta.com/stories/things-to-do/atlanta-hosts-the-countrys-fastest-puzzle-competition-usa-jigsaw-nationals/
+    checked: '2026-11-24'
+  - label: Chicago Puzzle Club, USAJPA Sanctioned Solo and Pairs Speed Puzzle Competitions (Ticket Tailor)
+    url: https://www.tickettailor.com/events/chicagopuzzleclub/2405332
+    checked: '2026-11-24'
+  - label: Wisconsin Jigsaw Puzzle Association, 2026 Wisconsin State Jigsaw Puzzle Championship (Zeffy)
+    url: https://www.zeffy.com/en-US/ticketing/2026-wisconsin-state-jigsaw-puzzle-championship
+    checked: '2026-11-24'
+  inspire:
+  - kind: read
+    person: Alejandro Clemente León, Barcelona
+    line: Won the individual title at the World Jigsaw Puzzle Championship two years running, taking the second by finishing a 500-piece puzzle in just under 38 minutes.
+    title: '‘For a long time, it was just a solitary activity’: Piecing together the explosion of jigsaw puzzle culture'
+    outlet: The Irish Times
+    url: https://www.irishtimes.com/life-style/people/2024/08/05/for-a-long-time-it-was-just-a-solitary-activity-piecing-together-the-rise-of-jigsaw-puzzle-culture
+    checked: '2026-11-24'
+  kit:
+  - name: 500-piece jigsaw puzzle
+    why: the standard size for solo competitions, for timed practice at home
+    url: https://www.amazon.co.uk/s?k=500+piece+jigsaw+puzzle
+  - name: Puzzle sorting trays
+    why: for sorting pieces by color or shape while you practice
+    url: https://www.amazon.co.uk/s?k=jigsaw+puzzle+sorting+trays
+  - name: Kitchen timer
+    why: for timing practice runs
+    url: https://www.amazon.co.uk/s?k=digital+kitchen+timer
+  related:
+  - solve-a-rubiks-cube
+  - join-a-quiz-league
+  - join-a-scrabble-club
+  - do-an-escape-room
+- id: join-a-vintage-tractor-club
+  title: Join a vintage tractor club
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: low
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Vintage tractor clubs exist for rescuing, repairing, restoring and showing old farm machinery, from tractors to stationary engines, and their members swap knowledge at monthly meetings and rallies.
+    Membership of the UK's national club was listed at about £21 a year.
+  start:
+  - In the UK, look up the National Vintage Tractor & Engine Club's (NVTEC) list of local groups; in the US, use the National Early Day Gas Engine and Tractor Association (EDGE&TA) branch finder, which
+    you can filter by state.
+  - Go to a group's monthly meeting as a visitor and ask about its rallies, shows and events.
+  - Join through the group, or as a national NVTEC member if there is no group near you.
+  links:
+  - label: 'NVTEC: local groups and meeting times (UK)'
+    url: https://nvtec.co.uk/Home/Groups
+    region: uk
+    checked: '2026-11-24'
+  - label: 'NVTEC: membership and fees (UK)'
+    url: https://nvtec.co.uk/Home/Membership
+    region: uk
+    checked: '2026-11-24'
+  - label: 'EDGE&TA: branch locations by state (US)'
+    url: https://edgeta.com/branch-locations/
+    region: us
+    checked: '2026-11-24'
+  - label: 'EDGE&TA Branch 15: how to join (Oregon)'
+    url: https://branch15edgeta.org/html/join_us.html
+    region: us
+    checked: '2026-11-24'
+  seo_title: 'Vintage tractor clubs: how to join and what it costs'
+  description: How to find a vintage tractor and engine club in the UK or US, what local groups and branches do, and what membership costs, from about £21 or $35 a year.
+  detail:
+  - h: What club life is like
+    p:
+    - The NVTEC began as an area group in Northumberland in 1970 and took its national name in 1977. It says it is a focus for people interested in "rescuing, repairing, restoring and exhibiting" agricultural
+      tractors, stationary engines and associated farm machinery. It lists 24 local groups, from Thames Valley and East Anglia to South West Wales, each with a meeting venue and most with a regular monthly
+      meeting night. Its quarterly color magazine, Vaporising, carries event reports, an events list and sales and wants.
+    - In the US, EDGE&TA lists 131 branches in 33 states, which you can filter by region or state. Branches run their own shows. Branch 22 in Pine Valley, California, says its purpose is to "collect, restore,
+      and preserve antique engines, tractors, and related items"; it holds an annual show at Santee Lakes and takes part in local parades and fairs. Branch 15 in Oregon, a charter organization at Antique
+      Powerland, runs the Wolf Iron Works Museum, a preserved line shaft shop.
+    - Road runs are another way to take part. The 35th National Vintage Tractor Road Run, hosted by the South East Vintage Agricultural Club in 2024, started and finished at Plumpton College near Lewes,
+      Sussex, and took 256 machines on a route of about 25 miles (40 km) by country lanes, roads and part of the South Downs Way, Heritage Machines reported.
+  - h: Ways in compared
+    table:
+      head:
+      - Club
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - NVTEC local group (UK)
+        - Monthly meetings, quarterly Vaporising magazine, free ads in it, public liability insurance for UK members, a TVO substitute mixing license for members
+        - £21 individual or senior; £23 joint; £19 junior
+      - - NVTEC national member (UK and worldwide)
+        - For people with no active local group nearby; magazine for all, insurance and mixing license for UK residents only; no group meetings
+        - Same rates as above
+      - - EDGE&TA Branch 15 (Oregon)
+        - Meetings every other month, most with a potluck lunch; national EDGE&TA membership; liability insurance for branch events; Backfire newsletter
+        - $35 full member a calendar year; $25 associate (same household); $15 if already in another branch; $12 newsletter only
+    after: EDGE&TA branches set their own dues, so check with the branch you choose. Branch 15 welcomes anyone interested in preserving antique power and the machinery it drove.
+  faq:
+  - q: How much does it cost to join a vintage tractor club?
+    a: NVTEC listed £21 a year for an individual and £23 joint. In the US, EDGE&TA Branch 15 in Oregon listed $35 a calendar year for a full member, including national membership.
+  - q: Do I need to own a vintage tractor to join a club?
+    a: The NVTEC membership page does not say ownership is required, and EDGE&TA Branch 15 welcomes anyone interested in preserving antique power. Ask the group if you are unsure.
+  - q: What if there is no tractor club near me?
+    a: The NVTEC says you are welcome to join as a national member, which brings the magazine and, for UK residents, the insurance, though there are no group meetings.
+  - q: What is a vintage tractor road run?
+    a: An organized run for old tractors along lanes and tracks. The 2024 National Vintage Tractor Road Run in Sussex covered about 25 miles with 256 machines.
+  sources:
+  - label: NVTEC, home page
+    url: https://nvtec.co.uk/
+    checked: '2026-11-24'
+  - label: NVTEC, Our history
+    url: https://nvtec.co.uk/Services/About
+    checked: '2026-11-24'
+  - label: NVTEC, Local groups
+    url: https://nvtec.co.uk/Home/Groups
+    checked: '2026-11-24'
+  - label: NVTEC, Membership
+    url: https://nvtec.co.uk/Home/Membership
+    checked: '2026-11-24'
+  - label: Heritage Machines, Red and grey classics on the National Vintage Tractor Road Run
+    url: https://heritagemachines.com/?p=23242
+    checked: '2026-11-24'
+  - label: National Early Day Gas Engine and Tractor Association, Branch locations
+    url: https://edgeta.com/branch-locations/
+    checked: '2026-11-24'
+  - label: EDGE&TA, About Branch 22
+    url: https://edgeta.com/branch/branch-22/about-branch-22/
+    checked: '2026-11-24'
+  - label: EDGE&TA Branch 15, Join us
+    url: https://branch15edgeta.org/html/join_us.html
+    checked: '2026-11-24'
+  - label: NW Vintage Car and Motorcycle Museum, Branch 15 Early Day Gas Engine and Tractor Association
+    url: https://www.nwcarandcycle.org/post/branch-15-early-day-gas-engine-and-tractor-association-edge-ta
+    checked: '2026-11-24'
+  kit:
+  - name: Work overalls
+    why: for restoration work and handling oily machinery at rallies
+    url: https://www.amazon.co.uk/s?k=work+overalls
+  - name: Socket set
+    why: for basic jobs on a tractor or stationary engine
+    url: https://www.amazon.co.uk/s?k=socket+set
+  - name: Ear defenders
+    why: for standing near running engines at shows
+    url: https://www.amazon.co.uk/s?k=ear+defenders
+  related:
+  - go-to-a-steam-rally
+  - join-a-classic-car-club
+  - join-a-model-engineering-society
+  - go-to-a-county-show
+- id: join-a-diving-club
+  title: Join a diving club
+  category: connect
+  kind: experience
+  effort: moderate
+  cost: mid
+  time: year
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  why: A diving club gives you buddies, boats, air fills and a calendar of shore dives and trips, with the costs shared among members. British clubs also train you, often with club kit to borrow while you
+    work out what to buy.
+  start:
+  - Find a club near you with the British Sub-Aqua Club (BSAC) club finder, or in Scotland the Scottish Sub Aqua Club (ScotSAC) branch finder; in the US, ask local dive shops whether they run a club, as
+    PADI suggests.
+  - Contact the club and ask about a try dive in its regular pool session; you will fill in a medical form first.
+  - If you already hold a PADI or SSI qualification, ask how the club will recognize it.
+  links:
+  - label: 'BSAC: why join a local club (with link to the Club Finder)'
+    url: https://www.bsac.com/news-and-blog/join-a-local-scuba-club-why-joining-a-bsac-club-is-the-best-way/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'BSAC: try scuba diving with a club'
+    url: https://bsac.com/find-a-club/try-scuba-diving-with-a-club
+    region: uk
+    checked: '2026-11-24'
+  - label: 'BSAC: membership plans and prices'
+    url: https://www.bsac.com/membership/membership-plans-and-prices/
+    region: uk
+    checked: '2026-11-24'
+  - label: 'ScotSAC: how to join a branch'
+    url: https://www.scotsac.com/node/219
+    region: uk
+    checked: '2026-11-24'
+  - label: 'PADI: how to find a dive club near you'
+    url: https://blog.padi.com/how-to-find-a-dive-club-near-you/
+    region: any
+    checked: '2026-11-24'
+  - label: 'MetroWest Dive Club: joining (Massachusetts)'
+    url: https://www.mwdc.org/join
+    region: us
+    checked: '2026-11-24'
+  safety: BSAC advises staying within the depth limits set by your qualification, diving with a buddy, agreeing before every dive who will lead, and doing some build-up dives if you have not dived for a
+    while. Clubs ask you to fill in a medical form before a try dive; answer it fully and honestly.
+  seo_title: 'Join a scuba diving club: BSAC, ScotSAC and US clubs'
+  description: What a scuba diving club gives you, how to find a BSAC or ScotSAC club or a US dive club, what a club try dive involves and what membership costs.
+  detail:
+  - h: What club diving is like
+    p:
+    - BSAC sums up club life as "buddies, boats, gas, pool time and a reason to be in the water in February." Clubs keep a dive calendar and club nights, run pool sessions, shore dives, coastal weekends
+      and trips away, and have members who know the local sites. BSAC says clubs offer boats and RIBs, compressors and gas fills, and club equipment to borrow, and that club diving usually works out considerably
+      cheaper because boat and facility costs are shared. Clubs are run by volunteers.
+    - A club try dive is usually arranged on request at a regular pool night. BSAC describes a lesson beside the pool on techniques and equipment, then a pool dive supervised by a BSAC-qualified instructor;
+      you fill in a medical form first. If you learned with PADI or SSI, BSAC says its clubs welcome you and recognize those qualifications.
+    - In Scotland and northern England, ScotSAC works the same way. You must belong to both ScotSAC and one of its clubs; the Branch Diving Officer can arrange a try dive and advise on medicals, and each
+      club adds a local levy that depends on its equipment, such as a boat or compressor.
+    - In the US, PADI's advice is to use its dive shop locator and ask local shops whether they have a club or arrange social events and group travel. Independent clubs exist too. The MetroWest Dive Club
+      in Massachusetts meets on the second Tuesday of each month, with meetings open to non-members, and runs several club trips a year.
+  - h: Ways in compared
+    table:
+      head:
+      - Club
+      - What you get
+      - Cost (as last listed)
+      rows:
+      - - BSAC London No.1
+        - Tuesday pool nights with club kit and air, training the club says it runs free or at a loss, club dive trips, SCUBA magazine, third-party insurance
+        - BSAC £74 plus branch £197.70 a year (full, 2026); try dive £45, refundable if you join straight away
+      - - Mercian Divers (BSAC)
+        - Monday pool sessions, club training kit (some items need a deposit); BSAC renewal covered by the subscription
+        - £17 a month, plus £56.50 BSAC joining fee, £25 club joining fee and £40 training pack (adult)
+      - - BSAC membership on its own
+        - Third-party liability insurance, SCUBA magazine, member discounts
+        - £74 a year through a club or £84 direct (adult, up to Dive Leader); £139 family through BSAC direct
+      - - ScotSAC branch (Scotland and northern England)
+        - Try dive, training program and local club diving
+        - Fees not shown on the pages we checked; ask the branch, which also sets a local levy
+      - - MetroWest Dive Club, Massachusetts
+        - Monthly talks, club trips, member-driven diving and an email list for finding buddies
+        - $55 individual, $70 family, $33 veteran, first responder or senior (65) a year
+    after: Club prices change each year and vary widely, so ask a club what its subscription covers, such as pool time, air fills and kit.
+  faq:
+  - q: How much does it cost to join a diving club in the UK?
+    a: You pay BSAC membership, listed at £74 a year through a club for adults, plus the club's own fee. BSAC London No.1 listed £197.70 a year for full branch membership and Mercian Divers £17 a month.
+  - q: Can I join a BSAC club if I learned with PADI?
+    a: Yes. BSAC says clubs welcome divers trained with agencies such as PADI or SSI, recognize their qualifications and help them continue training.
+  - q: Can I try scuba diving before joining a club?
+    a: Many BSAC clubs offer a try dive at their regular pool session on request. BSAC London No.1 listed £45 for adults, refundable if you join straight away.
+  - q: How do I find a dive club near me in the US?
+    a: PADI suggests asking local dive shops whether they run a club, searching local Facebook groups or Google, or joining its online PADI Club.
+  inspire:
+  - kind: read
+    person: Sammy Norton, Barnsley BSAC Divers
+    line: Went to a try dive, joined Barnsley BSAC Divers, passed Ocean Diver after one-to-one theory sessions with the same instructor, and went on to become an Assistant Diving Instructor who helps at
+      Dearne Valley Divers.
+    title: Meet a Member! Sammy Norton
+    outlet: British Sub-Aqua Club
+    url: https://www.bsac.com/news-and-blog/meet-a-member-sammy-norton/
+    checked: '2026-11-24'
+  sources:
+  - label: BSAC, Join a local scuba club
+    url: https://www.bsac.com/news-and-blog/join-a-local-scuba-club-why-joining-a-bsac-club-is-the-best-way/
+    checked: '2026-11-24'
+  - label: BSAC, Is club life for me?
+    url: https://www.bsac.com/club-life/is-club-life-for-me
+    checked: '2026-11-24'
+  - label: BSAC, Try scuba diving with a club
+    url: https://bsac.com/find-a-club/try-scuba-diving-with-a-club
+    checked: '2026-11-24'
+  - label: BSAC, Join a BSAC club, join a community
+    url: https://www.bsac.com/news-and-blog/join-a-bsac-club-join-a-community/
+    checked: '2026-11-24'
+  - label: BSAC, Membership plans and prices
+    url: https://www.bsac.com/membership/membership-plans-and-prices/
+    checked: '2026-11-24'
+  - label: BSAC, Safe diving guide (going diving)
+    url: https://www.bsac.com/safety/safe-diving-guide/going-diving/
+    checked: '2026-11-24'
+  - label: BSAC London No.1, Membership benefits
+    url: https://www.londondiver.com/?p=18
+    checked: '2026-11-24'
+  - label: Mercian Divers, Membership
+    url: https://mercian-divers.org.uk/index.php/membership
+    checked: '2026-11-24'
+  - label: Scottish Sub Aqua Club, Membership FAQ
+    url: https://www.scotsac.com/join-now/membership-faq
+    checked: '2026-11-24'
+  - label: Scottish Sub Aqua Club, How to join
+    url: https://www.scotsac.com/node/219
+    checked: '2026-11-24'
+  - label: PADI, How to find a dive club near you
+    url: https://blog.padi.com/how-to-find-a-dive-club-near-you/
+    checked: '2026-11-24'
+  - label: MetroWest Dive Club, Joining or renewing
+    url: https://www.mwdc.org/join
+    checked: '2026-11-24'
+  - label: BSAC, Meet a Member! Sammy Norton
+    url: https://www.bsac.com/news-and-blog/meet-a-member-sammy-norton/
+    checked: '2026-11-24'
+  kit:
+  - name: Mask and snorkel set
+    why: often the first kit club trainees buy for pool sessions
+    url: https://www.amazon.co.uk/s?k=diving+mask+and+snorkel+set
+  - name: Dive log book
+    why: for recording your dives as you train and go on club trips
+    url: https://www.amazon.co.uk/s?k=scuba+dive+log+book
+  - name: Mesh gear bag
+    why: for carrying and draining wet kit after a pool night or shore dive
+    url: https://www.amazon.co.uk/s?k=mesh+dive+gear+bag
+  related:
+  - try-scuba-diving
+  - learn-to-snorkel
+  - try-freediving
+  - open-water-swim
+- id: join-a-language-conversation-group
+  title: Join a language conversation group
+  category: think
+  kind: habit
+  effort: gentle
+  cost: low
+  time: months
+  setting: either
+  company: others
+  regions:
+  - uk
+  - us
+  why: Many learners find speaking harder than reading or listening, and a conversation group gives you a regular, low-pressure hour to do just that, grouped by level and often led by a teacher. Cultural
+    institutes, u3a groups and public libraries all run them.
+  start:
+  - Work out your level, for example from your last course or a placement test; Alliance Française Glasgow offers a free phone assessment.
+  - Look at the conversation groups of the cultural institute for your language, your u3a or Interest Groups Online, and your library's events.
+  - Pick one at your level, book or register if asked, and go back every week.
+  links:
+  - label: 'Alliance Française de Glasgow: French conversation courses'
+    url: https://www.afglasgow.org.uk/learn-french/adult-courses/conversation-courses
+    region: uk
+    checked: '2026-11-24'
+  - label: 'Instituto Cervantes Manchester: ¿Hablamos el martes? conversation club'
+    url: https://cultura.cervantes.es/manchester/en/-hablamos-el-martes--%3a-club-de-conversaci%c3%b3n/188804
+    region: uk
+    checked: '2026-11-24'
+  - label: 'u3a Interest Groups Online: how to join'
+    url: https://www.u3a.org.uk/what-we-do/learning/interest-groups-online/how-to-join-igo
+    region: uk
+    checked: '2026-11-24'
+  - label: 'Alliance Française de Portland: French conversation groups'
+    url: https://www.afportland.org/french-community/french-conversation-groups-in-portland
+    region: us
+    checked: '2026-11-24'
+  - label: 'Alliance Française USA: Weekly Apéro conversation group'
+    url: https://www.afusa.org/cultural-events/online-events/apero-registration/
+    region: us
+    checked: '2026-11-24'
+  - label: 'Chandler Public Library, Arizona: ¡Hablemos Juntos! Spanish conversation group'
+    url: https://chandler.bibliocommons.com/events/68c451d59ff7b63d00c9f469
+    region: us
+    checked: '2026-11-24'
+  seo_title: 'Language conversation groups: where to practice speaking'
+  description: Where to find a conversation group for the language you are learning, from Alliance Française and Instituto Cervantes to u3a groups and US libraries.
+  detail:
+  - h: What a conversation group is like
+    p:
+    - Unlike a language exchange, where two people swap languages, a conversation group puts learners at the same level together, usually with a teacher or a native speaker leading. Alliance Française de
+      Glasgow runs two-hour weekly classes on different themes, capped at 15 students, from Elementary-Intermediate (A2 minimum) to Expert, and some add grammar review. At Instituto Cervantes Manchester,
+      two of its teachers lead "¿Hablamos el martes?", an hour of conversation for intermediate (B1) learners in the institute's library.
+    - u3a groups are run by members for members. On u3a's national Interest Groups Online, Spanish Conversation Improvers 2 meets online on Monday afternoons for 3 to 12 members; each week members prepare
+      a chosen topic, and the group says many members find understanding and reading Spanish easier than speaking unprompted, which it aims to improve.
+    - In the US, Alliance Française chapters run groups by level. Portland's are free for members (membership was listed at $36 a year), and the page also lists independent groups that meet in stores and
+      other venues around Oregon and in Vancouver, Washington. The federation runs a national Weekly Apéro for high-intermediate to advanced speakers on Wednesday evenings, for members of a US chapter and
+      some partner groups. Public libraries are another way in; Chandler Public Library in Arizona has run a weekly Spanish group, on Fridays at 1pm, led by native speakers, with no registration needed.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Alliance Française de Glasgow
+        - Weekly two-hour classes in terms of nine weeks, mostly in person, levels A2 to Expert; free phone assessment
+        - From under £10 an hour (early-bird offer)
+      - - Instituto Cervantes Manchester
+        - One-hour Spanish conversation club for B1 learners, led by teachers, booked on Eventbrite (a Wednesday edition has also been listed)
+        - Free
+      - - Goethe-Institut London
+        - Literature and Conversation, 10 weeks, online or in person, C1 to C2
+        - £339
+      - - u3a Interest Groups Online
+        - Weekly online groups by language and level, run by members
+        - £6 if joining after 1 October 2026 (to the 1 April 2027 renewal); £12 to renew in April 2027 or to join after 1 February 2027
+      - - Alliance Française de Portland, Oregon
+        - Groups by level during school terms, mostly online; national Weekly Apéro on Zoom
+        - Free for members; membership $36 a year
+      - - Chandler Public Library, Arizona
+        - Weekly one-hour Spanish group led by native speakers; some Spanish recommended
+        - No cost listed; no registration needed
+    after: Schedules change by term, so check the provider's current listings before you go.
+  faq:
+  - q: Where can I practice speaking a language I'm learning?
+    a: Try a conversation group at a cultural institute such as Alliance Française or Instituto Cervantes, a u3a language group, or your public library's events listings.
+  - q: Are Alliance Française conversation groups free?
+    a: It depends on the chapter. Alliance Française de Portland's groups were free for members, with membership at $36 a year, while Alliance Française de Glasgow's conversation classes were advertised
+      from under £10 an hour in its early-bird offer.
+  - q: What level do I need for a conversation group?
+    a: Groups are usually split by level. Alliance Française de Glasgow asks for at least A2 for its elementary-intermediate class, and Instituto Cervantes Manchester's club is for B1 learners.
+  - q: Does u3a have language groups?
+    a: Yes. u3a's national Interest Groups Online include Spanish Conversation Improvers 2, a weekly online group for members with some Spanish. Joining IGO is separate from joining a local u3a.
+  sources:
+  - label: Alliance Française de Glasgow, French conversation courses for adults
+    url: https://www.afglasgow.org.uk/learn-french/adult-courses/conversation-courses
+    checked: '2026-11-24'
+  - label: Instituto Cervantes Manchester, ¿Hablamos el martes? Club de conversación
+    url: https://cultura.cervantes.es/manchester/en/-hablamos-el-martes--%3a-club-de-conversaci%c3%b3n/188804
+    checked: '2026-11-24'
+  - label: Eventbrite, ¿Hablamos el martes? Conversation club (Instituto Cervantes Manchester)
+    url: https://www.eventbrite.com.au/cc/hablamos-el-martes-conversation-club-4715693
+    checked: '2026-11-24'
+  - label: Goethe-Institut United Kingdom, Specialised courses
+    url: https://goethe.de/ins/gb/en/sta/lon/kur/spe.html
+    checked: '2026-11-24'
+  - label: u3a, Spanish Conversation Improvers 2
+    url: https://www.u3a.org.uk/what-we-do/learning/interest-groups-online/interest-groups-online-groups/igo-spanish-conversation-improvers-2
+    checked: '2026-11-24'
+  - label: u3a, How to join IGO
+    url: https://www.u3a.org.uk/what-we-do/learning/interest-groups-online/how-to-join-igo
+    checked: '2026-11-24'
+  - label: u3a, Join a u3a
+    url: https://u3a.org.uk/join?highlight=WyJjb3N0Il0=
+    checked: '2026-11-24'
+  - label: Alliance Française de Portland, French conversation groups in Portland
+    url: https://www.afportland.org/french-community/french-conversation-groups-in-portland
+    checked: '2026-11-24'
+  - label: Alliance Française USA, Weekly Apéro national French conversation group
+    url: https://www.afusa.org/cultural-events/online-events/apero-registration/
+    checked: '2026-11-24'
+  - label: Chandler Public Library, ¡Hablemos Juntos! Spanish conversation group
+    url: https://chandler.bibliocommons.com/events/68c451d59ff7b63d00c9f469
+    checked: '2026-11-24'
+  kit:
+  - name: Bilingual dictionary
+    why: for looking up words while you prepare a topic
+    url: https://www.amazon.co.uk/s?k=bilingual+dictionary
+  - name: Vocabulary notebook
+    why: for noting new words and corrections after each session
+    url: https://www.amazon.co.uk/s?k=vocabulary+notebook
+  related:
+  - join-a-language-exchange
+  - learn-a-language-to-b1
+  - learn-french
+  - learn-spanish

@@ -21,9 +21,9 @@
 - Know the real demands of your challenge (distance, total climb, time on your feet, altitude) and make sure your plan builds towards them. [1, 2, 3, 4]
 - Plan rest days into every week, and take an easier day when your legs are heavy. [5, 11, 13, 22, 23]
 - Do strength exercises for the whole body on at least two days a week. In trials, strength training cut sports injuries to about a third. [2, 7, 8, 24, 25, 26]
-- In the later weeks, train with the pack and the kit you will carry on the day so nothing is new. [1, 2, 27]
-- In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. [11, 20, 28, 29, 30]
-- Build your training walks from a few miles up to a full day's distance, carrying the pack you will use. [2, 27, 31, 32]
+- In the later weeks, train with the pack and the kit you will carry on the day so nothing is new. [1, 2, 27, 28]
+- In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. [11, 20, 29, 30, 31]
+- Build your training walks from a few miles up to a full day's distance, carrying the pack you will use. [2, 27, 32, 33]
 
 ## Week by week
 
@@ -54,8 +54,8 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 - **Strength and balance.** Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, it is part of the official guidance for everyone on at least two days a week, and core and balance work helps on rough ground. [2, 7, 24]
 - **Rest days.** Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. [5, 17]
 - **Easier weeks.** An easier week, every third week in this plan, lets the tiredness of the previous weeks clear, so your fitness can rebound before you build again. [11, 17, 19]
-- **Carrying your pack.** Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. [2, 27, 33]
-- **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [28, 29]
+- **Carrying your pack.** Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. [2, 27, 34]
+- **The taper.** Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. [29, 30]
 
 ## Each week, and why
 
@@ -97,7 +97,7 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 
 - The long hill walk eases back to 5 hours.
 - Why ease off: it lets the last two weeks' tiredness clear so your fitness can catch up [11, 17, 19]
-- New this week, your loaded pack on the long session: it matches the conditions of the day and shows you what you really need to carry [2, 27, 33]
+- New this week, your loaded pack on the long session: it matches the conditions of the day and shows you what you really need to carry [2, 27, 34]
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [5, 17]
 
 **Week 7: building.**
@@ -128,57 +128,57 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 **Week 11: taper.**
 
 - The long hill walk drops to 5.5 hours, but you keep every session.
-- Why less now: your muscles recover and your body refuels, so you arrive fresh [28, 29]
+- Why less now: your muscles recover and your body refuels, so you arrive fresh [29, 30]
 - Tuesday's easy brisk walk: it adds fitness while leaving you fresh for the long session [9, 10]
 - Keep both strength sessions but make them lighter: same sessions, less of each.
 - Rest on Monday and Friday: your body recovers and adapts on the days you rest, not the days you train [5, 17]
 
 **Week 12: the challenge.**
 
-- One short, easy outing early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [28, 29]
+- One short, easy outing early in the week and plenty of rest: your muscles recover and your body refuels, so you arrive fresh [29, 30]
 - No strength sessions this week; arrive rested.
 
 
 ## Looking after your body
 
 - Include balance work; for older adults the official guidance pairs it with strength on two days a week, the NHS says balance and flexibility work twice a week can reduce the risk of falling, and balance (proprioception) training also reduced injuries in trials. [7, 8, 24, 25, 26]
-- Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground. [2, 34]
+- Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground. [2, 35]
 - Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. [2, 24]
 - Weight-bearing activity such as walking and running helps keep bones strong. [7]
 - If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [25]
-- Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third. [35, 36, 37, 38]
-- Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. [22, 29, 39]
-- If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. [5, 29]
+- Exercise that challenges your balance and builds functional strength, progressed regularly and kept up over time, helps prevent falls as you get older; tai chi is another option. A review of 108 trials found exercise cut the rate of falls by about a quarter, and balance and functional exercises combined with strength work probably cut it by about a third. [36, 37, 38, 39]
+- Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. [22, 30, 40]
+- If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. [5, 30]
 
-**Strength and balance routine (twice a week).** Squats, lunges, a core exercise such as a plank, and a balance exercise such as standing on one leg. Start with your own body weight, two sets of 8 to 12 slow repetitions, and add load only when that feels easy. [2, 7, 8, 24, 25, 26, 34]
+**Strength and balance routine (twice a week).** Squats, lunges, a core exercise such as a plank, and a balance exercise such as standing on one leg. Start with your own body weight, two sets of 8 to 12 slow repetitions, and add load only when that feels easy. [2, 7, 8, 24, 25, 26, 35]
 
 ## Fuel, drink and feet
 
-- On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. [2, 40, 41]
-- Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. [29, 40, 42]
-- Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. [22, 29, 43]
-- Deal with a hot spot as soon as you feel it. Cover a blister with a soft or padded plaster and do not burst it; get advice if it shows signs of infection. [22, 43]
+- On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. [2, 41, 42]
+- Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. [30, 41, 43]
+- Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. [22, 30, 44]
+- Deal with a hot spot as soon as you feel it. Cover a blister with a soft or padded plaster and do not burst it; get advice if it shows signs of infection. [22, 44]
 
 ## Kit for the day
 
-Rucksack with dry bags, worn-in boots, layers, waterproofs, hat, gloves, spare warm clothes, food, water, map (OS Explorer OL2), compass, whistle, first aid kit, sun protection, torch with spare batteries, charged phone, emergency shelter, poles if you use them. [1, 2, 27]
+Rucksack with dry bags, worn-in boots, layers, waterproofs, hat, gloves, spare warm clothes, food, water, map (OS Explorer OL2), compass, whistle, first aid kit, sun protection, torch with spare batteries, charged phone, emergency shelter, poles if you use them. [1, 2, 27, 28]
 
 ## On the day
 
-- Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. [1, 2, 44, 45, 46, 47, 48, 49, 50, 51]
-- Start slower than you think you need to; early miles feel easy and are where most people overdo it. [3, 4, 9, 29, 42, 52]
+- Carry a map and compass and know how to use them; do not rely on signs or a phone, whose signal and battery can fail. [1, 2, 45, 46, 47, 48, 49, 50, 51, 52]
+- Start slower than you think you need to; early miles feel easy and are where most people overdo it. [3, 4, 9, 30, 43, 53]
 
 ## Safety
 
 - If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [25]
-- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [53, 54, 55]
-- Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. [1, 47, 56, 57, 58, 59, 60, 61]
-- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [62]
-- Stop if something does not feel right, and get it checked rather than training through it. [5, 29]
-- In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. [44, 45, 48, 63]
-- In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). [63, 64]
-- On a hill day carry a waterproof jacket and warm layers, even in summer, plus enough water for the day, food, sun protection and a small first aid kit, and wear sturdy footwear. Ramblers also lists a head torch, a charged phone, a whistle and a survival or bothy bag. [48, 49, 65]
-- Wind usually gets stronger with height and can make exposed ridges hard or dangerous, and hill fog can come down quickly, slowing you and making it easier to get lost or caught out by dark. Have a shorter or lower alternative route ready and use it, or wait for better weather, if the forecast or the conditions turn against you. [48, 49]
+- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [54, 55, 56]
+- Check the forecast and conditions, walk in daylight, leave your route and return time with someone, and turn back if conditions get beyond you; the mountain will be there another day. Summits are colder than valleys. [1, 48, 57, 58, 59, 60, 61, 62]
+- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [63]
+- Stop if something does not feel right, and get it checked rather than training through it. [5, 30]
+- In the hills, leave your route and expected return time with someone. In an emergency in the UK call 999 or 112 and ask for Police, then Mountain Rescue (911 in the US); if you have registered for emergency SMS, you can text 999. [45, 46, 49, 64]
+- In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). [64, 65]
+- On a hill day carry a waterproof jacket and warm layers, even in summer, plus enough water for the day, food, sun protection and a small first aid kit, and wear sturdy footwear. Ramblers also lists a head torch, a charged phone, a whistle and a survival or bothy bag. [49, 50, 66]
+- Wind usually gets stronger with height and can make exposed ridges hard or dangerous, and hill fog can come down quickly, slowing you and making it easier to get lost or caught out by dark. Have a shorter or lower alternative route ready and use it, or wait for better weather, if the forecast or the conditions turn against you. [49, 50]
 
 ## Where this comes from
 
@@ -211,41 +211,42 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 25. NHS, *Keep bones healthy over 65 (last reviewed 31 October 2023)* (2023). Tier 5. https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/ (opened 2026-11-02)
 26. Centers for Disease Control and Prevention (CDC), *Older adult activity, an overview (last reviewed 4 December 2025)* (2025). Tier 5. https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html (opened 2026-11-03)
 27. Wanderlust (with advice from the Long Distance Walkers Association and experienced trekkers), *How to prepare for a long-distance trek* (2026). Tier 1. https://www.wanderlust.co.uk/content/how-to-prepare-long-distance-trek (opened 2026-10-27)
-28. Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Tier 4. https://pubmed.ncbi.nlm.nih.gov/17762369/ (opened 2026-10-27)
-29. England Athletics (Jo Pavey, five-time Olympian), *Top marathon tips from five-time Olympian Jo Pavey* (2023). Tier 2. https://www.englandathletics.org/news/top-marathon-tips-from-five-time-olympian-jo-pavey/ (opened 2026-10-27)
-30. Great Run (organiser of the Great North Run), *Half marathon training plan (12-week Run/Walk, Beginner and Improver plans)* (2026). Tier 3. https://www.greatrun.org/train-and-prepare/training-plans/half-marathon-training-plan/ (opened 2026-10-27)
-31. The Confraternity of Saint James (Hannah Murray), *How do I train for my Camino? (published 15 April 2020, updated 16 April 2020)* (2020). Tier 3. https://www.csj.org.uk/faqs/how-do-i-train-for-my-camino (opened 2026-11-22)
-32. American Pilgrims on the Camino, *Prepare for Your Camino (last updated 14 May 2026)* (2026). Tier 3. https://americanpilgrims.org/prepare-for-camino/ (opened 2026-11-22)
-33. Cicerone Press (Lesley Williams, Cicerone guidebook author, and Joe Williams), *How to get hill-fit and train for long-distance walking* (2026). Tier 2. https://www.cicerone.co.uk/how-to-get-hill-fit-and-train-for-long-distance-walking (opened 2026-11-23)
-34. NHS, *Strength exercises (last reviewed 28 February 2024)* (2024). Tier 5. https://www.nhs.uk/live-well/exercise/strength-exercises (opened 2026-10-27)
-35. Cochrane Database of Systematic Reviews 2019(1), CD012424, *Exercise for preventing falls in older people living in the community (systematic review of 108 randomised trials)* (2019). Tier 4. https://pubmed.ncbi.nlm.nih.gov/30703272/ (opened 2026-11-11)
-36. World Health Organization, *Falls (fact sheet, 21 October 2026)* (2026). Tier 5. https://www.who.int/news-room/fact-sheets/detail/falls (opened 2026-11-11)
-37. NHS, *Falls, prevention (last reviewed 6 March 2025)* (2025). Tier 5. https://www.nhs.uk/conditions/falls/prevention/ (opened 2026-11-12)
-38. Centers for Disease Control and Prevention (CDC), National Center for Injury Prevention and Control, *Preventing Falls and Hip Fractures (27 January 2026)* (2026). Tier 5. https://www.cdc.gov/falls/prevention/index.html (opened 2026-11-12)
-39. NHS (Every Mind Matters), *Sleep problems (undated page; year is the year opened)* (2026). Tier 5. https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/ (opened 2026-11-11)
-40. Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Tier 4. https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/ (opened 2026-10-27)
-41. Cycling UK, *A beginners' guide to what to eat on a long bike ride* (2026). Tier 3. https://www.cyclinguk.org/article/beginners-guide-what-eat-long-bike-ride (opened 2026-11-20)
-42. Marine Corps Marathon Organization, *20 Tips for First-Time Marathon Runners (10 March 2020)* (2020). Tier 3. https://www.marinemarathon.com/20-tips-for-first-time-marathon-runners/ (opened 2026-11-19)
-43. NHS, *Blisters (last reviewed 22 November 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/blisters/ (opened 2026-10-27)
-44. Mountain Rescue England and Wales, *Be AdventureSmart (safety advice leaflet)* (2025). Tier 3. https://new.cro.org.uk/wp-content/uploads/2025/04/MREWSafetyAdvice.pdf (opened 2026-11-07)
-45. Pacific Crest Trail Association, *Safety advice for the Pacific Crest Trail (undated page; year is the year opened)* (2026). Tier 3. https://www.pcta.org/discover-the-trail/backcountry-basics/safety-tips/ (opened 2026-11-10)
-46. U.S. National Park Service, *Ten Essentials (last updated 28 May 2026)* (2026). Tier 3. https://www.nps.gov/articles/10essentials.htm (opened 2026-11-13)
-47. Den Norske Turistforening (DNT, the Norwegian Trekking Association), revised with the Norwegian Red Cross, *The Norwegian Mountain Code (undated page; year is the year opened)* (2026). Tier 3. https://www.dnt.no/en/Trips/tips-and-tricks/articles/The-Norwegian-Mountain-Code (opened 2026-11-17)
-48. Ramblers (Britain's national walking charity), *Top tips for mountain and hill walking* (2026). Tier 3. https://ramblers.org.uk/advice/safety/mountain-and-hill-walking.aspx (opened 2026-11-18)
-49. British Mountaineering Council, *Get to know British weather on the hills* (2026). Tier 3. https://thebmc.co.uk/en/get-to-know-british-weather-on-the-hills (opened 2026-11-18)
-50. Ordnance Survey (OS Maps Discover, Jonathan Elder), *How to Use a Compass: A Step-by-Step Guide* (2026). Tier 3. https://osmaps.com/discover/guides/beginners-guide-to-using-a-compass/ (opened 2026-11-21)
-51. Mountaineering Scotland Mountain Safety Advisor Team with the Mountain Safety Group (posted on the Mountain Weather Information Service blog), *Using your mobile phone for navigation in the hills?* (2023). Tier 3. https://mwis.org.uk/blog/post/using-phone-nav-hils (opened 2026-11-21)
-52. EXCLI Journal 25, Doc591 (Knechtle, Thuany, Nikolaidis, Forte, Leite, Lepers, Chlíbková, Weiss, Rosemann, Vancini and Duric), *The New York City Marathon: A systematic review of performance, participation, pacing, and health-related outcomes* (2026). Tier 4. https://www.excli.de/vol25/2026-9354/2026-9354.htm (opened 2026-11-14)
-53. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
-54. American Family Physician 103(4) (Jonas and Arnold), summarizing the Wilderness Medical Society guideline (Wilderness Environ Med 2020;31(1):50-62), *Exercise-Associated Hyponatremia: Updated Guidelines from the Wilderness Medical Society* (2021). Tier 4. https://www.aafp.org/pubs/afp/issues/2021/0215/p252.html (opened 2026-11-23)
-55. Great Run (organiser of the Great North Run), *Hydration tips for runners* (2025). Tier 3. https://www.greatrun.org/training/respect-the-challenge/hydration (opened 2026-11-23)
-56. New Hampshire Fish and Game Department (hikeSafe, with the White Mountain National Forest), *Hiking Safety* (2026). Tier 3. https://wildlife.nh.gov/get-outside/hiking-safety (opened 2026-11-11)
-57. Mount Washington Observatory, *Higher Summits Forecast* (2026). Tier 3. https://mountwashington.org/weather/higher-summits-forecast/ (opened 2026-11-11)
-58. USDA Forest Service, Gifford Pinchot National Forest, *Mount St. Helens Climbing Safety (last updated 1 May 2025)* (2025). Tier 3. https://www.fs.usda.gov/r06/giffordpinchot/recreation/mount-st-helens-climbing-safety (opened 2026-11-12)
-59. U.S. National Park Service, Haleakalā National Park, *Safety (last updated 27 July 2022)* (2022). Tier 3. https://home.nps.gov/hale/planyourvisit/safety.htm (opened 2026-11-17)
-60. South African National Parks (SANParks), Table Mountain National Park, *Safe Hiking (undated page; year is the year opened)* (2026). Tier 3. https://www.sanparks.org/parks/table-mountain/useful-information/safe-hiking (opened 2026-11-17)
-61. Safetravel (Icelandic Association for Search and Rescue, ICE-SAR), *Hiking / Trekking (last modified 23 November 2025)* (2025). Tier 3. https://safetravel.is/outdoors/hiking-trekking/ (opened 2026-11-17)
-62. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
-63. Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Tier 3. https://www.mountaineering.scot/news/avoid-hypothermia-when-hiking-in-scottish-winter (opened 2026-11-09)
-64. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
-65. Parks Canada, *Safety tips (date modified 2 December 2024)* (2024). Tier 3. https://parks.canada.ca/serapprocher-connect/ltc-dlc/bases-basics/securite-safety (opened 2026-11-18)
+28. Cycling UK, *Top tips for first-time bike touring and bikepacking (no article date; page copyright 2026)* (2026). Tier 3. https://www.cyclinguk.org/article/first-time-bike-touring-and-bikepacking (opened 2026-11-24)
+29. Medicine & Science in Sports & Exercise 39(8), *Effects of tapering on performance, a meta-analysis of 27 studies* (2007). Tier 4. https://pubmed.ncbi.nlm.nih.gov/17762369/ (opened 2026-10-27)
+30. England Athletics (Jo Pavey, five-time Olympian), *Top marathon tips from five-time Olympian Jo Pavey* (2023). Tier 2. https://www.englandathletics.org/news/top-marathon-tips-from-five-time-olympian-jo-pavey/ (opened 2026-10-27)
+31. Great Run (organiser of the Great North Run), *Half marathon training plan (12-week Run/Walk, Beginner and Improver plans)* (2026). Tier 3. https://www.greatrun.org/train-and-prepare/training-plans/half-marathon-training-plan/ (opened 2026-10-27)
+32. The Confraternity of Saint James (Hannah Murray), *How do I train for my Camino? (published 15 April 2020, updated 16 April 2020)* (2020). Tier 3. https://www.csj.org.uk/faqs/how-do-i-train-for-my-camino (opened 2026-11-22)
+33. American Pilgrims on the Camino, *Prepare for Your Camino (last updated 14 May 2026)* (2026). Tier 3. https://americanpilgrims.org/prepare-for-camino/ (opened 2026-11-22)
+34. Cicerone Press (Lesley Williams, Cicerone guidebook author, and Joe Williams), *How to get hill-fit and train for long-distance walking* (2026). Tier 2. https://www.cicerone.co.uk/how-to-get-hill-fit-and-train-for-long-distance-walking (opened 2026-11-23)
+35. NHS, *Strength exercises (last reviewed 28 February 2024)* (2024). Tier 5. https://www.nhs.uk/live-well/exercise/strength-exercises (opened 2026-10-27)
+36. Cochrane Database of Systematic Reviews 2019(1), CD012424, *Exercise for preventing falls in older people living in the community (systematic review of 108 randomised trials)* (2019). Tier 4. https://pubmed.ncbi.nlm.nih.gov/30703272/ (opened 2026-11-11)
+37. World Health Organization, *Falls (fact sheet, 21 October 2026)* (2026). Tier 5. https://www.who.int/news-room/fact-sheets/detail/falls (opened 2026-11-11)
+38. NHS, *Falls, prevention (last reviewed 6 March 2025)* (2025). Tier 5. https://www.nhs.uk/conditions/falls/prevention/ (opened 2026-11-12)
+39. Centers for Disease Control and Prevention (CDC), National Center for Injury Prevention and Control, *Preventing Falls and Hip Fractures (27 January 2026)* (2026). Tier 5. https://www.cdc.gov/falls/prevention/index.html (opened 2026-11-12)
+40. NHS (Every Mind Matters), *Sleep problems (undated page; year is the year opened)* (2026). Tier 5. https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/ (opened 2026-11-11)
+41. Journal of the International Society of Sports Nutrition (Tiller and colleagues), *International Society of Sports Nutrition position stand: nutritional considerations for single-stage ultra-marathon training and racing* (2019). Tier 4. https://pmc.ncbi.nlm.nih.gov/articles/PMC6839090/ (opened 2026-10-27)
+42. Cycling UK, *A beginners' guide to what to eat on a long bike ride* (2026). Tier 3. https://www.cyclinguk.org/article/beginners-guide-what-eat-long-bike-ride (opened 2026-11-20)
+43. Marine Corps Marathon Organization, *20 Tips for First-Time Marathon Runners (10 March 2020)* (2020). Tier 3. https://www.marinemarathon.com/20-tips-for-first-time-marathon-runners/ (opened 2026-11-19)
+44. NHS, *Blisters (last reviewed 22 November 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/blisters/ (opened 2026-10-27)
+45. Mountain Rescue England and Wales, *Be AdventureSmart (safety advice leaflet)* (2025). Tier 3. https://new.cro.org.uk/wp-content/uploads/2025/04/MREWSafetyAdvice.pdf (opened 2026-11-07)
+46. Pacific Crest Trail Association, *Safety advice for the Pacific Crest Trail (undated page; year is the year opened)* (2026). Tier 3. https://www.pcta.org/discover-the-trail/backcountry-basics/safety-tips/ (opened 2026-11-10)
+47. U.S. National Park Service, *Ten Essentials (last updated 28 May 2026)* (2026). Tier 3. https://www.nps.gov/articles/10essentials.htm (opened 2026-11-13)
+48. Den Norske Turistforening (DNT, the Norwegian Trekking Association), revised with the Norwegian Red Cross, *The Norwegian Mountain Code (undated page; year is the year opened)* (2026). Tier 3. https://www.dnt.no/en/Trips/tips-and-tricks/articles/The-Norwegian-Mountain-Code (opened 2026-11-17)
+49. Ramblers (Britain's national walking charity), *Top tips for mountain and hill walking* (2026). Tier 3. https://ramblers.org.uk/advice/safety/mountain-and-hill-walking.aspx (opened 2026-11-18)
+50. British Mountaineering Council, *Get to know British weather on the hills* (2026). Tier 3. https://thebmc.co.uk/en/get-to-know-british-weather-on-the-hills (opened 2026-11-18)
+51. Ordnance Survey (OS Maps Discover, Jonathan Elder), *How to Use a Compass: A Step-by-Step Guide* (2026). Tier 3. https://osmaps.com/discover/guides/beginners-guide-to-using-a-compass/ (opened 2026-11-21)
+52. Mountaineering Scotland Mountain Safety Advisor Team with the Mountain Safety Group (posted on the Mountain Weather Information Service blog), *Using your mobile phone for navigation in the hills?* (2023). Tier 3. https://mwis.org.uk/blog/post/using-phone-nav-hils (opened 2026-11-21)
+53. EXCLI Journal 25, Doc591 (Knechtle, Thuany, Nikolaidis, Forte, Leite, Lepers, Chlíbková, Weiss, Rosemann, Vancini and Duric), *The New York City Marathon: A systematic review of performance, participation, pacing, and health-related outcomes* (2026). Tier 4. https://www.excli.de/vol25/2026-9354/2026-9354.htm (opened 2026-11-14)
+54. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
+55. American Family Physician 103(4) (Jonas and Arnold), summarizing the Wilderness Medical Society guideline (Wilderness Environ Med 2020;31(1):50-62), *Exercise-Associated Hyponatremia: Updated Guidelines from the Wilderness Medical Society* (2021). Tier 4. https://www.aafp.org/pubs/afp/issues/2021/0215/p252.html (opened 2026-11-23)
+56. Great Run (organiser of the Great North Run), *Hydration tips for runners* (2025). Tier 3. https://www.greatrun.org/training/respect-the-challenge/hydration (opened 2026-11-23)
+57. New Hampshire Fish and Game Department (hikeSafe, with the White Mountain National Forest), *Hiking Safety* (2026). Tier 3. https://wildlife.nh.gov/get-outside/hiking-safety (opened 2026-11-11)
+58. Mount Washington Observatory, *Higher Summits Forecast* (2026). Tier 3. https://mountwashington.org/weather/higher-summits-forecast/ (opened 2026-11-11)
+59. USDA Forest Service, Gifford Pinchot National Forest, *Mount St. Helens Climbing Safety (last updated 1 May 2025)* (2025). Tier 3. https://www.fs.usda.gov/r06/giffordpinchot/recreation/mount-st-helens-climbing-safety (opened 2026-11-12)
+60. U.S. National Park Service, Haleakalā National Park, *Safety (last updated 27 July 2022)* (2022). Tier 3. https://home.nps.gov/hale/planyourvisit/safety.htm (opened 2026-11-17)
+61. South African National Parks (SANParks), Table Mountain National Park, *Safe Hiking (undated page; year is the year opened)* (2026). Tier 3. https://www.sanparks.org/parks/table-mountain/useful-information/safe-hiking (opened 2026-11-17)
+62. Safetravel (Icelandic Association for Search and Rescue, ICE-SAR), *Hiking / Trekking (last modified 23 November 2025)* (2025). Tier 3. https://safetravel.is/outdoors/hiking-trekking/ (opened 2026-11-17)
+63. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
+64. Mountaineering Scotland (Naomi Dodds, International Mountain Leader and Aberdeen Mountain Rescue Team doctor; from Scottish Mountaineer 104), *Avoid Hypothermia when hiking in Scottish winter (10 February 2026)* (2026). Tier 3. https://www.mountaineering.scot/news/avoid-hypothermia-when-hiking-in-scottish-winter (opened 2026-11-09)
+65. NHS, *Hypothermia (last reviewed 9 June 2023)* (2023). Tier 5. https://www.nhs.uk/conditions/hypothermia/ (opened 2026-11-09)
+66. Parks Canada, *Safety tips (date modified 2 December 2024)* (2024). Tier 3. https://parks.canada.ca/serapprocher-connect/ltc-dlc/bases-basics/securite-safety (opened 2026-11-18)

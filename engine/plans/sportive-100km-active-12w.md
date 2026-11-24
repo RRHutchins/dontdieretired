@@ -152,14 +152,14 @@ Rest on Mondays and Fridays. Strength and balance (about 30 minutes, routine bel
 ## On the day
 
 - Start slower than you think you need to; early miles feel easy and are where most people overdo it. [3, 4, 9, 28, 38, 40]
-- Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. [12, 30]
-- Start every ride easy, for at least the first five minutes, and build up to your riding pace gradually rather than setting off fast; finish with five to ten minutes of easy, slower riding. [12, 41]
+- Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. [12, 30, 41, 42]
+- Start every ride easy, for at least the first five minutes, and build up to your riding pace gradually rather than setting off fast; finish with five to ten minutes of easy, slower riding. [12, 43]
 
 ## Safety
 
 - If you have osteoporosis or a high risk of fractures, ask your GP (family doctor) whether high-impact exercise is right for you before adding it. [25]
-- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [42, 43, 44]
-- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [45]
+- Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. [44, 45, 46]
+- Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. [47]
 - Stop if something does not feel right, and get it checked rather than training through it. [6, 28]
 
 ## Where this comes from
@@ -206,8 +206,10 @@ Ranked by the engine: tier 5 official health guidance or international consensus
 38. Marine Corps Marathon Organization, *20 Tips for First-Time Marathon Runners (10 March 2020)* (2020). Tier 3. https://www.marinemarathon.com/20-tips-for-first-time-marathon-runners/ (opened 2026-11-19)
 39. British Cycling (Insight Zone), *Get started, cycling nutrition, top 10 tips* (2018). Tier 3. https://www.britishcycling.org.uk/knowledge/article/izn20180118-Get-Started-Cycling-Nutrition---Top-10-tips-0 (opened 2026-11-20)
 40. EXCLI Journal 25, Doc591 (Knechtle, Thuany, Nikolaidis, Forte, Leite, Lepers, Chlíbková, Weiss, Rosemann, Vancini and Duric), *The New York City Marathon: A systematic review of performance, participation, pacing, and health-related outcomes* (2026). Tier 4. https://www.excli.de/vol25/2026-9354/2026-9354.htm (opened 2026-11-14)
-41. British Cycling (Insight Zone; Dr Andy Kirkland, BASES-accredited sports scientist), *Warm ups and cool downs for cyclists (page undated; year from the article reference izn20140115)* (2014). Tier 3. https://www.britishcycling.org.uk/knowledge/article/izn20140115-Intermediate-Warming-Up-and-Cooling-Down-0 (opened 2026-11-10)
-42. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
-43. American Family Physician 103(4) (Jonas and Arnold), summarizing the Wilderness Medical Society guideline (Wilderness Environ Med 2020;31(1):50-62), *Exercise-Associated Hyponatremia: Updated Guidelines from the Wilderness Medical Society* (2021). Tier 4. https://www.aafp.org/pubs/afp/issues/2021/0215/p252.html (opened 2026-11-23)
-44. Great Run (organiser of the Great North Run), *Hydration tips for runners* (2025). Tier 3. https://www.greatrun.org/training/respect-the-challenge/hydration (opened 2026-11-23)
-45. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)
+41. Great Allegheny Passage Conservancy, *How To Prepare (last modified 11 December 2024)* (2024). Tier 3. https://gaptrail.org/before-you-go/how-to-prepare/ (opened 2026-11-24)
+42. Cycling UK, *Top tips for first-time bike touring and bikepacking (no article date; page copyright 2026)* (2026). Tier 3. https://www.cyclinguk.org/article/first-time-bike-touring-and-bikepacking (opened 2026-11-24)
+43. British Cycling (Insight Zone; Dr Andy Kirkland, BASES-accredited sports scientist), *Warm ups and cool downs for cyclists (page undated; year from the article reference izn20140115)* (2014). Tier 3. https://www.britishcycling.org.uk/knowledge/article/izn20140115-Intermediate-Warming-Up-and-Cooling-Down-0 (opened 2026-11-10)
+44. Clinical Journal of Sport Medicine, reported by Wolters Kluwer, *Statement of the 3rd International Exercise-Associated Hyponatremia Consensus Development Conference (Hew-Butler and colleagues, 2015)* (2015). Tier 5. https://www.wolterskluwer.com/en/news/drink-when-thirsty-to-avoid-fatal-drops-in-blood-sodium-levels-during-exercise (opened 2026-10-27)
+45. American Family Physician 103(4) (Jonas and Arnold), summarizing the Wilderness Medical Society guideline (Wilderness Environ Med 2020;31(1):50-62), *Exercise-Associated Hyponatremia: Updated Guidelines from the Wilderness Medical Society* (2021). Tier 4. https://www.aafp.org/pubs/afp/issues/2021/0215/p252.html (opened 2026-11-23)
+46. Great Run (organiser of the Great North Run), *Hydration tips for runners* (2025). Tier 3. https://www.greatrun.org/training/respect-the-challenge/hydration (opened 2026-11-23)
+47. NHS, *Symptoms of a heart attack (last reviewed 31 March 2026)* (2026). Tier 5. https://www.nhs.uk/conditions/heart-attack/symptoms/ (opened 2026-10-27)

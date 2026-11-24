@@ -183,7 +183,8 @@ guidance:
     applies: [hill, walking, multiday]
     use: rule
     text: In the later weeks, train with the pack and the kit you will carry on the day so nothing is new.
-    for: [bmc-hill-fit, ydnpa-three-peaks, wanderlust-trek-prep]
+    for: [bmc-hill-fit, ydnpa-three-peaks, wanderlust-trek-prep, cyclinguk-first-touring]
+    note: For a bike tour, Cycling UK's first-time touring tips (opened 24 Nov 2026) say to go on shorter rides with a fully loaded bike to understand how it handles and to find any problems before the trip.
   - id: navigation
     topic: kit
     applies: [hill]
@@ -242,8 +243,8 @@ guidance:
     applies: [multiday]
     use: rule
     text: Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day.
-    for: [bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit]
-    note: Cicerone (opened 23 Nov 2026) suggests back-to-back walks at weekends to build stamina for longer distances before a trek, tapering to about 12 km each day before it; the point about learning how you cope on the second day comes from the BMC and LDWA. Mind's intermediate trekking plan (by Full Potential, opened 23 Nov 2026) pairs 180-minute walks on Saturday and Sunday so you train to move when tired, but for the one-day 3 Peaks Challenge, so it is not counted here.
+    for: [bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit, cyclinguk-first-touring]
+    note: Cycling UK's first-time touring tips (opened 24 Nov 2026) say to build your endurance and "get accustomed to riding consecutive days" before a bike tour, so the point holds for multi-day rides as well as walks. Cicerone (opened 23 Nov 2026) suggests back-to-back walks at weekends to build stamina for longer distances before a trek, tapering to about 12 km each day before it; the point about learning how you cope on the second day comes from the BMC and LDWA. Mind's intermediate trekking plan (by Full Potential, opened 23 Nov 2026) pairs 180-minute walks on Saturday and Sunday so you train to move when tired, but for the one-day 3 Peaks Challenge, so it is not counted here.
   - id: multiday-pacing
     topic: on the day
     applies: [multiday]
@@ -571,7 +572,8 @@ guidance:
     applies: [cycling]
     use: advice
     text: Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump.
-    for: [cyclinguk-100km, bc-sofa-50km]
+    for: [cyclinguk-100km, bc-sofa-50km, gap-how-to-prepare, cyclinguk-first-touring]
+    note: The Great Allegheny Passage Conservancy's How To Prepare page (opened 24 Nov 2026) says to make sure your bike is in good condition before you start, suggests having a bike shop fit it to you, and says to know how to fix a flat and to bring a hand pump and spare tubes even on a day ride; it does not give a before-every-ride check. Cycling UK's first-time touring tips (same day, same group as `cyclinguk-100km`) ask for a bike that is comfortable, fits you and is in good working condition, regular checks of the chain, tyre pressure and brake pads, and a repair kit with spare tubes, patch kit and pump.
   - id: cyc-fuel-on-bike
     topic: fuel and drink
     applies: [cycling]

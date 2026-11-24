@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-24)
 
-128 sources, 92 statements, 12 event profiles. Core 81, supported 11, thin 0, contested 0.
+130 sources, 92 statements, 12 event profiles. Core 81, supported 11, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -59,6 +59,8 @@
 - British Cycling (Insight Zone), *Get started, cycling nutrition, top 10 tips* (2018). Opened 2026-11-20.
 - Cycling UK, *A beginners' guide to what to eat on a long bike ride* (2026). Opened 2026-11-20.
 - British Heart Foundation (with Full Potential), *London to Brighton Bike Ride 16-week training guide* (2026). Opened 2026-11-20.
+- Cycling UK, *Top tips for first-time bike touring and bikepacking (no article date; page copyright 2026)* (2026). Opened 2026-11-24.
+- Great Allegheny Passage Conservancy, *How To Prepare (last modified 11 December 2024)* (2024). Opened 2026-11-24.
 - Great Run (organiser of the Great North Run), *10k training plans (16-week Beginner, 8-week Run/Walk and 12-week Improver plans)* (2026). Opened 2026-11-02.
 - Great Run (organiser of the Great North Run), *How long does it take to train for a 10k?* (2024). Opened 2026-11-02.
 - Edinburgh Marathon Festival, *How to train for your first half marathon, a beginner's guide to going the distance* (2026). Opened 2026-11-03.
@@ -173,10 +175,12 @@
 | core | 11 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water, nhs-hypothermia |
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
 | core | 10 | key session | Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. | higdon-novice1, bmc-hill-fit, emf-half-beginner, bhf-l2b-training |
+| core | 10 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit, cyclinguk-first-touring |
 | core | 9 | recovery | Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. | ea-pavey-marathon, bmc-long-distance, nhs-emm-sleep |
 | core | 9 | fuel and drink | On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. | bmc-hill-fit, issn-ultra-2019, cyclinguk-eat-long-ride |
 | core | 9 | fuel and drink | Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. | ea-pavey-marathon, issn-ultra-2019, mcm-first-timer-tips |
 | core | 9 | feet | Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. | nhs-blisters, ea-pavey-marathon, bmc-long-distance |
+| core | 9 | kit | In the later weeks, train with the pack and the kit you will carry on the day so nothing is new. | bmc-hill-fit, ydnpa-three-peaks, wanderlust-trek-prep, cyclinguk-first-touring |
 | core | 9 | key session | Build your training walks from a few miles up to a full day's distance, carrying the pack you will use. | wanderlust-trek-prep, bmc-hill-fit, csj-camino-training, apoc-prepare-camino |
 | core | 9 | on the day | Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard. | rnli-tidal-wales-2026, swcpa-safety, wcp-safety |
 | core | 9 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. | lauersen-2014, cmo-2019 |
@@ -186,6 +190,7 @@
 | core | 9 | kit | If you will wear a wetsuit on the day, train in that same wetsuit beforehand rather than changing kit for the event. | usms-wetsuit-temp, britri-beginner-tips, usat-open-water-feel-good |
 | core | 9 | on the day | Your body temperature can keep falling for a while after you get out of cold water (afterdrop), so dry off and get into warm, windproof clothes and a hat as soon as you are out, and move about to make heat. After a short swim a warm shower is enough; avoid very hot water, and do not hold a hot water bottle against numb skin, which burns easily. | oss-cold-water, rlss-safer-open-water, knechtle-2020 |
 | core | 9 | on the day | In the sea, choose a lifeguarded beach and swim between the red and yellow flags. If a rip current carries you out, do not swim against it. If you can stand, wade; if not, float. Then swim or wade parallel to the shore until you are out of the rip before heading in, and raise your hand and shout for help. | rnli-rip-currents, noaa-rip-safety, redcross-beach-safety |
+| core | 9 | kit | Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. | cyclinguk-100km, bc-sofa-50km, gap-how-to-prepare, cyclinguk-first-touring |
 | core | 9 | on the day | In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. | britri-beginners-wales, tri-ireland-rules, usat-multisport-rules |
 | core | 9 | kit | On a hill day carry a waterproof jacket and warm layers, even in summer, plus enough water for the day, food, sun protection and a small first aid kit, and wear sturdy footwear. Ramblers also lists a head torch, a charged phone, a whistle and a survival or bothy bag. | bmc-hill-weather, ramblers-hill-tips, pc-safety-tips |
 | core | 8 | key session | Low-impact exercise such as cycling, swimming or rowing builds fitness with less pounding and is useful for everyone, not just the injured. | ea-training-pace, higdon-novice1, movingmedicine-cycling |
@@ -197,13 +202,11 @@
 | core | 7 | body maintenance | Squat-type exercises are the backbone of leg and hip strength. Start with sit-to-stand and mini-squats, adding repetitions gradually, then move on to squats and lunges, with core work for balance on rough ground. | bmc-hill-fit, nhs-strength-exercises |
 | core | 7 | recovery | If you miss a session, do not worry about it; carry on with the plan, or repeat a week if you need to. | ea-pavey-marathon, nhs-c25k |
 | core | 7 | feet | Deal with a hot spot as soon as you feel it. Cover a blister with a soft or padded plaster and do not burst it; get advice if it shows signs of infection. | nhs-blisters, bmc-long-distance |
-| core | 7 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit |
 | core | 7 | warning signs | Stop if something does not feel right, and get it checked rather than training through it. | nhs-c25k, ea-pavey-marathon |
 | core | 7 | why | The long session prepares you for the length of the day itself. Its pace does not matter; covering the time or distance does, so keep it at a conversational effort. | higdon-novice1, bmc-hill-fit, ydnpa-three-peaks |
 | core | 7 | why | Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. | ea-training-pace, ijspp-2010-intensity |
 | core | 7 | why | Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. | nhs-c25k, rc-down-weeks |
 | core | 6 | body maintenance | Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. | lauersen-2014, bmc-hill-fit |
-| core | 6 | kit | In the later weeks, train with the pack and the kit you will carry on the day so nothing is new. | bmc-hill-fit, ydnpa-three-peaks, wanderlust-trek-prep |
 | core | 6 | on the day | In high mountains thunderstorms usually build in the afternoon. Check the forecast before you go and stay away if a high chance of thunderstorms is forecast; start early and plan to be down by noon; keep off hilltops and ridge tops in a storm, and at the first sign of one get below the treeline. Carry rain gear and warm layers. | nws-lightning-outdoors, usfs-elbert |
 | core | 6 | on the day | On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. | bmc-long-distance, wanderlust-trek-prep, ldwa-body-prep |
 | core | 6 | on the day | On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard. | swcpa-safety, wcp-safety |
@@ -214,7 +217,6 @@
 | core | 6 | key session | Practise floating on your back at a supervised pool or venue so you can do it without thinking. Tilt your head back with your ears under the water, spread your arms and legs, and keep your breathing calm; your legs may sink, and that is fine. If cold water takes your breath away, float for about a minute until your breathing is under control, then call for help or swim to safety. | rnli-float, swimeng-hot-weather |
 | core | 6 | key session | Build one long ride a week at an easy pace, growing gradually towards the distance of the event; Cycling UK's plan for a 100 km ride takes the long ride from 15 to 25 km up to 90 to 100 km over nine weeks. | cyclinguk-100km, bc-sofa-50km |
 | core | 6 | intensity | Judge effort by talking. On easy rides you can hold a conversation, on steady efforts you can manage short sentences, and only the short hard efforts should leave you out of breath. | cyclinguk-100km, bc-sofa-50km |
-| core | 6 | kit | Make sure your bike is the right size, comfortable and working, check tyres, brakes and chain before each ride, and carry a spare inner tube, repair kit and pump. | cyclinguk-100km, bc-sofa-50km |
 | core | 6 | fuel and drink | On long rides eat something every 20 to 30 minutes, and carry enough food and drink for the whole ride rather than relying on finding a shop. | bc-sofa-50km, cyclinguk-100km, bc-nutrition-top10 |
 | core | 6 | on the day | Start every ride easy, for at least the first five minutes, and build up to your riding pace gradually rather than setting off fast; finish with five to ten minutes of easy, slower riding. | cyclinguk-100km, bc-warm-up-cool-down |
 | core | 6 | before you start | For a first triathlon, start with a super sprint or a sprint rather than a longer race. A sprint is a 400 metre pool swim or 750 metre open water swim, a 20 km (12.4 mile) ride and a 5 km (3.1 mile) run, and usually takes 75 to 90 minutes. | britri-distances, tri-ireland-first |
