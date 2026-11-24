@@ -1252,6 +1252,29 @@ def build(make_social=True):
                 sec["p_html"] = [lk.plain(x) for x in sec.get("p") or []]
             for k in g.get("kit") or []:
                 assert k.get("name") and k.get("why") and str(k.get("url", "")).startswith("https://www.amazon.co.uk/"), f"hub guide {g['slug']}: kit needs name, why, amazon.co.uk url"
+            # Reviewers' picks on hub guides (RUNBOOK §6u priority step 5, 24 Nov 2026): `picks:` is a list of blocks in the
+            # activity shape (§6t row 17: item, why, options of tier top|good|value, name, the reviewer's own label, a quote of
+            # at most 30 words copied from the review opened on `checked`, reviewer, review, Amazon UK search `buy`), or keys
+            # into content/picks.yaml. Top only for the reviewer's overall pick, value only for its budget pick; no prices.
+            _gp = []
+            for pk in g.get("picks") or []:
+                if isinstance(pk, str):
+                    _sp = load_yaml(CONTENT / "picks.yaml") if (CONTENT / "picks.yaml").exists() else {}
+                    assert pk in _sp, f"hub guide {g['slug']}: picks key {pk!r} is not in content/picks.yaml"
+                    pk = copy.deepcopy(_sp[pk])
+                assert pk.get("item") and pk.get("why") and pk.get("options"), f"hub guide {g['slug']}: picks need item, why and options"
+                _order = {"top": 0, "good": 1, "value": 2}
+                for o in pk["options"]:
+                    assert o.get("tier") in _order and o.get("name") and o.get("label") and o.get("quote") and o.get("reviewer"), f"hub guide {g['slug']}: each pick needs tier top/good/value, name, label, quote and reviewer"
+                    assert len(str(o["quote"]).split()) <= 30, f"hub guide {g['slug']}: a pick's quote is at most 30 words"
+                    r = o.get("review") or {}
+                    assert r.get("title") and str(r.get("url", "")).startswith("https://") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(r.get("checked", ""))), f"hub guide {g['slug']}: each pick needs review title, url and checked date"
+                    assert str(o.get("buy", "")).startswith("https://www.amazon.co.uk/"), f"hub guide {g['slug']}: a pick's buy link is an amazon.co.uk url"
+                    assert not re.search(r"[£$€]\s?\d", str(o["quote"]) + str(o["label"])), f"hub guide {g['slug']}: no prices in picks"
+                pk["options"] = sorted(pk["options"], key=lambda o: _order[o["tier"]])
+                pk["checked_human"] = dt.datetime.strptime(max(str(o["review"]["checked"]) for o in pk["options"]), "%Y-%m-%d").strftime("%-d %B %Y")
+                _gp.append(pk)
+            g["picks"] = _gp
             assert all(str(x.get("url", "")).startswith("https://") and x.get("label") and x.get("checked") for x in g["sources"]), f"hub guide {g['slug']}: sources need url, label, checked"
             g["sources_checked"] = max(dt.date.fromisoformat(str(x["checked"])) for x in g["sources"]).strftime("%-d %B %Y")
             g["url"] = f"/{h['slug']}/{g['slug']}/"

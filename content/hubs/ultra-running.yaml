@@ -42,6 +42,10 @@ landings:
 - {slug: in-france, title: Ultramarathons in France, short: France, group: Where, filter: {country_has: France}}
 - {slug: in-spain, title: Ultramarathons in Spain, short: Spain, group: Where, filter: {country_has: Spain}}
 - {slug: in-italy, title: Ultramarathons in Italy, short: Italy, group: Where, filter: {country_has: Italy}}
+- {slug: in-switzerland, title: Ultramarathons in Switzerland, short: Switzerland, group: Where, filter: {country_has: Switzerland}}
+- {slug: in-canada, title: Ultramarathons in Canada, short: Canada, group: Where, filter: {country_has: Canada}}
+- {slug: in-south-africa, title: Ultramarathons in South Africa, short: South Africa, group: Where, filter: {country_has: South Africa}}
+- {slug: in-new-zealand, title: Ultramarathons in New Zealand, short: New Zealand, group: Where, filter: {country_has: New Zealand}}
 - {slug: in-europe, title: Ultramarathons in Europe, short: Europe, group: Where, filter: {continent: europe}}
 - {slug: in-north-america, title: Ultramarathons in North America, short: North America, group: Where, filter: {continent: north-america}}
 - {slug: in-south-america, title: Ultramarathons in South America, short: South America, group: Where, filter: {continent: south-america}}
@@ -1948,6 +1952,225 @@ events:
   - {label: 'Surf Coast Century: course descriptions', url: 'https://surfcoastcentury.rapidascent.com.au/event-details/the-race/course-descriptions/', checked: '2026-11-23'}
   entry_dates:
   - {month: '2027-03', what: 'Entries open for the 2027 race', url: 'https://surfcoastcentury.rapidascent.com.au/', checked: '2026-11-23'}
+- id: vermont-100
+  name: Vermont 100 Endurance Race
+  series: independent
+  place: Silver Hill Meadow, Vermont
+  country: USA
+  continent: north-america
+  km: [161, 100]
+  distances: 100 miles and 100 km
+  climb: 17,000 ft (100 miles); 9,000 ft (100 km)
+  terrain: [trail]
+  format: single
+  month: [7]
+  entry: [ballot, qualifier]
+  entry_note: Most places come from a January lottery, which you can enter alone or with a partner; six early-entry groups (such as repeat finishers and aid-station captains) register first in December. 100-mile runners must submit a qualifying race by June 1, and every runner must do 8 hours of volunteer service (or pay a hardship buyout).
+  note: The course is mostly rolling dirt roads and horse trails across more than 30 private properties, and the Vermont 100 Endurance Ride for horses is held at the same time.
+  time_limit: [{km: 161, hours: 30}, {km: 100, hours: 25}]
+  link: {label: 'Vermont 100: race details', url: 'https://vermont100.com/race-details/', checked: '2026-11-24'}
+  more:
+  - {label: 'Vermont 100: race entry', url: 'https://vermont100.com/race-entry/', checked: '2026-11-24'}
+  entry_dates:
+  - {date: '2026-12-11', what: 'Early registration opens for early-entry groups (to 20 December)', url: 'https://vermont100.com/race-entry/', checked: '2026-11-24'}
+  - {date: '2027-01-01', what: 'Lottery registration opens for everyone else (to 8 January)', url: 'https://vermont100.com/race-entry/', checked: '2026-11-24'}
+  - {date: '2027-01-10', what: 'Live lottery, in person or on Zoom', url: 'https://vermont100.com/race-entry/', checked: '2026-11-24'}
+- id: angeles-crest-100
+  name: Angeles Crest 100 Mile Endurance Run
+  series: independent
+  place: Altadena, California
+  country: USA
+  continent: north-america
+  km: [161, 100]
+  distances: 100 miles and 100K (about 62.5 miles)
+  climb: about 11,800 ft (100K)
+  terrain: [mountain, trail]
+  format: single
+  month: [10]
+  entry: [ballot, qualifier]
+  entry_note: 'The 100-mile race uses a lottery for qualified runners; the 2027 lottery ran from 12 to 26 October 2026 and has closed, with entrants and a waitlist announced on 30 October. You need an official race of 50 miles or more finished between 1 January 2026 and 2 September 2027, plus 8 hours of trail work (4 hours for the 100K, which registers separately).'
+  note: Run since 1986 in the San Gabriel back country; the 2027 course goes out and back from Loma Alta Park to Mt. Hillyer.
+  link: {label: 'Angeles Crest 100: home page', url: 'https://ac100.com', checked: '2026-11-24'}
+  more:
+  - {label: 'Angeles Crest 100: 2027 lottery and entry', url: 'https://ac100.com/reg/', checked: '2026-11-24'}
+- id: run-rabbit-run
+  name: Run Rabbit Run
+  series: independent
+  place: Steamboat Springs, Colorado
+  country: USA
+  continent: north-america
+  km: [161, 80]
+  distances: 100 miles (Hares or Tortoises) and 50 miles
+  terrain: [mountain, trail]
+  format: single
+  month: [9]
+  entry: [open]
+  entry_note: Registration is on UltraSignup, with caps of 100 Hares, 350 Tortoises and 200 50-milers and a waitlist once a cap is reached. Hares run for prize money and must agree to drug testing.
+  note: 'The 100-miler has two divisions: Tortoises (36 hours) and Hares (30 hours, prize money). The course starts at the Steamboat ski area and crosses Buffalo Pass, Mount Werner and Rabbit Ears, all above 10,000 ft.'
+  time_limit: [{km: 161, hours: 36}, {km: 80, hours: 15}]
+  link: {label: 'Run Rabbit Run: race information', url: 'https://runrabbitrunsteamboat.com/race-information/', checked: '2026-11-24'}
+  more:
+  - {label: 'Run Rabbit Run: registration', url: 'https://runrabbitrunsteamboat.com/registration/', checked: '2026-11-24'}
+- id: massanutten-mountain-trails-100
+  name: Massanutten Mountain Trails 100
+  series: independent
+  place: Fort Valley, Virginia
+  country: USA
+  continent: north-america
+  km: [161, 100]
+  distances: 100 miles and 100 km
+  climb: about 18,500 ft (100 miles); 11,250 ft (100 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [5]
+  entry: [open]
+  entry_note: Entry is on UltraSignup, capped at 250 runners for the 100 miles and 200 for the 100 km; a waitlist starts if the race fills. The entry page lists no qualifier.
+  note: Organized by the Virginia Happy Trails Running Club, it is a rocky race with short, rugged climbs in the Massanutten Mountains of the George Washington National Forest.
+  time_limit: [{km: 161, hours: 36}]
+  link: {label: 'MMT 100: race page', url: 'https://new.vhtrc.org/races/mmt', checked: '2026-11-24'}
+  more:
+  - {label: 'MMT 100: entry', url: 'https://new.vhtrc.org/races/mmt/entry', checked: '2026-11-24'}
+  entry_dates:
+  - {date: '2027-04-25', what: 'Entry closes', url: 'https://new.vhtrc.org/races/mmt/entry', checked: '2026-11-24'}
+- id: ultra-trail-whistler-by-utmb
+  name: Ultra Trail Whistler by UTMB
+  series: utmb
+  place: Whistler
+  country: Canada
+  continent: north-america
+  km: [100, 50]
+  distances: 100K and 50K
+  climb: 5,100 m (100K)
+  terrain: [mountain, trail]
+  format: single
+  month: [6]
+  entry: [open]
+  entry_note: Register online; the register page still shows a 2026 closing date, "or until the races are sold out". Distances still open can be entered at the expo, with no race-day entry. The minimum age for the 100K and 50K is 18.
+  note: The 100K climbs both Whistler and Blackcomb mountains and finishes in Spruce Grove Park; the course details shown are 2026's, with the 2027 routes awaiting approval.
+  time_limit: [{km: 100, hours: 24}]
+  link: {label: 'Ultra Trail Whistler: list of races', url: 'https://whistler.utmb.world/races', checked: '2026-11-24'}
+  more:
+  - {label: 'Ultra Trail Whistler: 100K', url: 'https://whistler.utmb.world/races/100K', checked: '2026-11-24'}
+  - {label: 'Ultra Trail Whistler: register', url: 'https://whistler.utmb.world/register', checked: '2026-11-24'}
+- id: buffalo-stampede
+  name: Buffalo Stampede
+  series: independent
+  place: Bright, Victoria
+  country: Australia
+  continent: oceania
+  km: [100]
+  distances: 100 km (also a 152 km three-day Ultra Slam of the 10k, 100k and 42k)
+  terrain: [mountain]
+  format: single
+  month: [3]
+  entry: [register]
+  entry_note: Entries are open online, with early, standard and late entry periods; late entry runs until race day. Pacers are free but must be registered.
+  note: The organizer calls it "Australia's Original Sky Run"; the 100 km goes from Bright to the Horn, the highest point of Mount Buffalo.
+  time_limit: [{km: 100, hours: 28}]
+  link: {label: 'Buffalo Stampede: festival home page', url: 'https://buffalostampede.au/', checked: '2026-11-24'}
+  more:
+  - {label: 'Buffalo Stampede: cut-offs', url: 'https://buffalostampede.au/cut-offs', checked: '2026-11-24'}
+  - {label: 'Buffalo Stampede: fees and key dates', url: 'https://buffalostampede.au/fees-key-dates', checked: '2026-11-24'}
+  entry_dates:
+  - {date: '2027-02-25', what: 'Standard entry period ends (late entry continues until race day)', url: 'https://buffalostampede.au/fees-key-dates', checked: '2026-11-24'}
+- id: mozart-100-by-utmb
+  name: mozart 100 by UTMB
+  series: utmb
+  place: Fuschl am See, Salzkammergut
+  country: Austria
+  continent: europe
+  km: [119, 84]
+  distances: 119 km (mozart 100) and 84 km (mozart Ultra), plus shorter races
+  climb: 6,000 m (119 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: General registration for 2027 is open online; the pages do not describe a lottery. The 119 km race carries 4 Running Stones.
+  note: In 2026 the race moved from Salzburg city, its home for more than a decade, to the lakes of the Salzkammergut; the 119 km climbs the Schafberg and the Zwölferhorn along Lake Wolfgangsee.
+  time_limit: [{km: 119, hours: 24}]
+  link: {label: 'mozart 100 by UTMB: the race page', url: 'https://mozart.utmb.world/races/mozart100', checked: '2026-11-24'}
+  more:
+  - {label: 'mozart 100 by UTMB: event home', url: 'https://mozart.utmb.world/', checked: '2026-11-24'}
+  - {label: 'mozart 100 by UTMB: A new chapter for mozart 100', url: 'https://mozart.utmb.world/news/a-new-chapter-for-mozart-100-by-utmb', checked: '2026-11-24'}
+- id: swiss-canyon-trail
+  name: Swiss Canyon Trail
+  series: independent
+  place: Couvet, Val-de-Travers
+  country: Switzerland
+  continent: europe
+  km: [114, 83]
+  distances: 111K (114.2 km) and 81K (82.6 km), plus shorter races
+  climb: 4,701 m (111K)
+  terrain: [mountain, trail]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: You sign up online through the race's registration link; the page does not say how places are allocated. Mandatory kit includes an ID card, a one-liter water reserve, a headlamp and a waterproof jacket.
+  note: The 111K, which the organizer calls "a true Swiss Canyon Trail classic," crosses the Val-de-Travers and northern Vaud, and the page lists it as a qualifying race for the 2028 Western States 100.
+  time_limit: [{km: 114, hours: 28}, {km: 83, hours: 27}]
+  link: {label: 'Swiss Canyon Trail: the 111K page', url: 'https://www.swisscanyontrail.com/en/pages/111k', checked: '2026-11-24'}
+  more:
+  - {label: 'Swiss Canyon Trail: the 81K page', url: 'https://www.swisscanyontrail.com/en/pages/81k', checked: '2026-11-24'}
+- id: beacons-way-ultra-100
+  name: Beacons Way Ultra 100 Mile
+  series: independent
+  place: Abergavenny to Llangadog, Bannau Brycheiniog (Brecon Beacons)
+  country: Wales, UK
+  continent: europe
+  km: [161]
+  distances: 100 miles
+  climb: 6,143 m (20,100 ft)
+  terrain: [mountain, trail]
+  format: single
+  month: [7]
+  entry: [qualifier]
+  entry_note: There are 250 places. Entrants must be at least 20, have finished an organized ultra of at least 50 miles in race conditions (you may register first and send the result later), and be able to navigate with map and compass.
+  note: A GB Ultras race along the Beacons Way across the Black Mountains, Pen-y-Fan and the Carmarthen Fans, self-navigated; the page lists it as a Western States 100 qualifying race.
+  time_limit: [{km: 161, hours: 40}]
+  link: {label: 'GB Ultras: Beacons Way Ultra 100', url: 'https://www.gbultras.com/beacons-way-ultra-100/', checked: '2026-11-24'}
+- id: mut-by-utmb
+  name: MUT by UTMB (Mountain Ultra Trail)
+  series: utmb
+  place: George
+  country: South Africa
+  continent: africa
+  km: [168, 100, 58]
+  distances: 168 km (MUT Miler), 100 km (MUT 100) and 58 km (MUT 60), plus shorter races
+  climb: 8,014 m (168 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: General registration is open online; UTMB Index holders had a 48-hour priority window first. The pages do not say whether places are first come or by lottery.
+  note: The races cross the Outeniqua Mountains through fynbos and native forest; the miler also reaches the coast at Wilderness before finishing in George.
+  time_limit: [{km: 168, hours: 50}, {km: 100, hours: 25}]
+  link: {label: 'MUT by UTMB: the MUT Miler page', url: 'https://mut.utmb.world/races/mutmiler', checked: '2026-11-24'}
+  more:
+  - {label: 'MUT by UTMB: the MUT 100 page', url: 'https://mut.utmb.world/races/mut100', checked: '2026-11-24'}
+  - {label: 'MUT by UTMB: event home', url: 'https://mut.utmb.world/', checked: '2026-11-24'}
+  - {label: 'MUT by UTMB: registration', url: 'https://mut.utmb.world/registration', checked: '2026-11-24'}
+- id: xtrail-kenting-by-utmb
+  name: Xtrail Kenting by UTMB
+  series: utmb
+  place: Kenting
+  country: Taiwan
+  continent: asia
+  km: [98]
+  distances: 98 km (Xtrail 100K), plus 50K and shorter races
+  climb: 3,291 m (98 km)
+  terrain: [trail]
+  format: single
+  month: [3]
+  entry: [open, qualifier]
+  entry_note: Registration is first come, first served and closes on 31 December 2026, with no race-day entry. The 100K needs a valid UTMB Index of at least 50K.
+  note: The course runs along the southern edge of the island across coral plateaus, tropical hills and wind-swept ridges, starting at 4 a.m. in Kenting.
+  time_limit: [{km: 98, hours: 24}]
+  link: {label: 'Xtrail Kenting by UTMB: the 100K page', url: 'https://xtrail.utmb.world/races/Top-100K', checked: '2026-11-24'}
+  more:
+  - {label: 'Xtrail Kenting by UTMB: registrations', url: 'https://xtrail.utmb.world/registrations', checked: '2026-11-24'}
+  entry_dates:
+  - {date: '2026-12-31', what: 'Registration closes (first come, first served)', url: 'https://xtrail.utmb.world/registrations', checked: '2026-11-24'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
@@ -2476,3 +2699,68 @@ guides:
   - {label: 'Everest Trail Race, Rules', url: 'https://www.everesttrailrace.com/en/runners/rules', checked: '2026-11-23'}
   - {label: 'UIAA Medical Commission, The use of hiking sticks in the mountains (Recommendation No. 11, 2021)', url: 'https://www.theuiaa.org/documents/mountainmedicine/English_UIAA_MedCom_RecNo11_Hikingsticks2021_V1-1.pdf', checked: '2026-11-23'}
   - {label: 'British Mountaineering Council, How to use trekking poles when hill walking', url: 'https://thebmc.co.uk/en/hill-walking-trekking-poles', checked: '2026-11-23'}
+- slug: running-vests
+  title: Choosing a running vest for an ultra
+  short: What your race's kit list asks you to carry, how to check a vest against it, and the vests one independent reviewer picks
+  seo_title: 'Running vests for ultras: kit lists, fit and reviewers'' picks'
+  description: How to choose a running vest for an ultra from your race's kit list (Lakeland, UTMB Mont-Blanc), what to check on fit and flasks, and the vests iRunFar's testers name in their November 2026 guide.
+  standfirst: In most mountain and trail ultras the vest is what carries the kit list, and the kit is checked. Start from your race's list, then choose the vest that carries all of it comfortably; here is what two organizers ask for and what one independent review recommends.
+  detail:
+  - h: Start from your race's kit list
+    p:
+    - 'Your vest has to carry everything your race says you must have, from the start to the finish. The Montane Lakeland 50 and 100 kit page lists compulsory items including a fully waterproof jacket with a hood and taped seams, spare base layers sealed in a bag, a hat and gloves, a first aid kit, emergency food sealed in a bag, a head torch with spare batteries or a spare torch, a whistle, a fully charged phone, a survival blanket or bag, a solid plastic cup and a bottle or soft flask. Item 10 is simply "a back pack or similar to carry all the above."'
+    - 'There is a kit check at Lakeland registration, and without the required kit you are not allowed to start. HOKA UTMB Mont-Blanc says you must carry its mandatory equipment for the whole race, start to finish, or be penalized, and that race stewards may check it at any time during the race.'
+    - So write out your own race's list first, gather the actual items, and only then look at vests. The volume a maker quotes in liters is a guide; the test is whether your own kit fits with room for food and drink.
+  - h: Two kit lists side by side
+    table:
+      head: [Race, What its page says about the kit, Checks]
+      rows:
+      - ['Montane Lakeland 50 and 100', 'Compulsory items including waterproofs with taped seams and a hood, spare base layers, emergency food, head torch and spares, phone, survival blanket or bag, a solid cup and a bottle or soft flask; a back pack or similar to carry it all', 'Kit check at registration; without the kit you may not start']
+      - ['HOKA UTMB Mont-Blanc', 'A basic list each runner must adapt to their own abilities, suitable for all conditions and for spending one or two nights outdoors on the route, depending on your speed', 'Carry it from start to finish or be penalized; stewards may check at any time']
+    after: 'From the Lakeland kit requirements and UTMB Mont-Blanc mandatory equipment pages, opened on 24 November 2026. Check your own race''s current list: they change.'
+  - h: What to check on the vest itself
+    p:
+    - 'Space for the bulky items. The waterproof jacket, spare layers and survival bag take the most room, and Lakeland wants spare layers and emergency food sealed in bags that stay packed unless there is an emergency. Pack them first and see what is left.'
+    - 'Drinks. Lakeland asks for a bottle or soft flask for cold drinks and a solid plastic cup for hot drinks or soup; its page says a cup that collapses is not solid, and that no plastic cups are provided. Check where the flasks sit and that you can get them out and back in while moving: iRunFar''s testers noted of their top vest that "flasks can be difficult to get back into their sleeves when removed."'
+    - 'Fit and sizing. iRunFar says makers have a size chart and instructions for taking proper measurements, and recommends using these guides and trying on packs in a specialty running store if possible. Try the vest fully loaded, with full flasks, and run in it.'
+    - 'Training. UTMB Mont-Blanc recommends testing your equipment in training sessions under different conditions. Long training runs with the full race load show up rubbing and bounce before race day.'
+  - h: How the picks below were chosen
+    p:
+    - 'The picks come from one independent review, iRunFar''s "Best Running Vests of 2026" by Carly Eisley and Eszter Horanyi, dated 22 November 2026. iRunFar says its team of trail runners takes the most promising packs out on all sorts of terrain to test their comfort, functionality and durability. The labels and quotes are the reviewers'' own words; we have not tested any vest ourselves.'
+    - 'iRunFar also names budget picks, including one for ultramarathons. We could not read that part of the page word for word this time, so it is not shown here. Open the review for the full list, and check any vest against your own race''s kit list.'
+  picks:
+  - item: Running vest
+    why: 'From iRunFar''s November 2026 guide: its overall pick and its pick for ultramarathons. Whether either suits you depends on your race''s kit list and your fit.'
+    options:
+    - tier: top
+      name: Salomon Adv Skin 12
+      label: Best Overall Running Vest
+      quote: It can fit a massive amount of cargo and wears just as comfortably when empty.
+      reviewer: iRunFar
+      review: {title: 'Best Running Vests of 2026', url: 'https://www.irunfar.com/best-running-vests', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=Salomon+Adv+Skin+12'
+    - tier: good
+      name: UltrAspire Alpha 6.0 Race Vest
+      label: Best Trail Running Vest for Ultramarathons
+      quote: The 6-liter capacity makes it an excellent option for ultras without an extensive gear list.
+      reviewer: iRunFar
+      review: {title: 'Best Running Vests of 2026', url: 'https://www.irunfar.com/best-running-vests', checked: '2026-11-24'}
+      buy: 'https://www.amazon.co.uk/s?k=UltrAspire+Alpha+6.0+vest'
+  faq:
+  - q: What size of running vest do I need for an ultra?
+    a: It depends on your race's kit list rather than the distance. Gather the compulsory items your race names (Lakeland's include waterproofs, spare layers, a survival bag and a cup), pack them, and choose a vest that carries all of them with room for food and drink.
+  - q: Will my vest be checked?
+    a: Often, yes. The Lakeland 50 and 100 check kit at registration and will not let you start without it; UTMB Mont-Blanc says stewards may check your equipment at any time and that missing kit is penalized.
+  - q: Can I use a collapsible cup?
+    a: Not at Lakeland, whose kit page asks for a solid plastic cup for hot drinks or soup and says a collapsible cup is not solid. Other races set their own rules, so check yours.
+  - q: Is a vest with a 6-liter capacity enough?
+    a: iRunFar says the 6-liter UltrAspire Alpha 6.0 suits ultras without an extensive gear list. For races with a long list, such as Lakeland or UTMB Mont-Blanc, pack your own kit and see what fits.
+  kit:
+  - {name: Trail running vest (10 to 12 liters), why: 'pack your race''s full kit list into it before buying, and check the flask pockets and sizing guide', url: 'https://www.amazon.co.uk/s?k=trail+running+vest+12l'}
+  - {name: Soft flasks for a running vest, why: 'check they fit your vest''s front pockets and the volume your race asks you to carry', url: 'https://www.amazon.co.uk/s?k=soft+flask+running+500ml'}
+  - {name: Solid reusable race cup, why: 'some races, such as Lakeland, need a solid cup for hot drinks and do not accept a collapsible one; check your race''s rule', url: 'https://www.amazon.co.uk/s?k=reusable+hard+plastic+camping+cup+lightweight'}
+  - {name: Dry bags for spare layers, why: 'Lakeland wants spare layers and emergency food sealed in a bag; check the size fits inside your vest', url: 'https://www.amazon.co.uk/s?k=ultralight+dry+bag+small'}
+  sources:
+  - {label: 'Montane Lakeland 50 and 100, Kit requirements', url: 'https://lakeland100.com/kit-requirements/', checked: '2026-11-24'}
+  - {label: 'HOKA UTMB Mont-Blanc, Mandatory equipment', url: 'https://montblanc.utmb.world/races-runners/runners/mandatory-equipment', checked: '2026-11-24'}
+  - {label: 'iRunFar, Best Running Vests of 2026 (Carly Eisley and Eszter Horanyi, 22 November 2026)', url: 'https://www.irunfar.com/best-running-vests', checked: '2026-11-24'}

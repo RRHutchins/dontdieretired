@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% from "_macros.html" import share_button, affiliate_box %}
+{% extends "base.html" %}{% from "_macros.html" import share_button, affiliate_box, picks_box %}
 {% block title %}{{ g.seo_title or g.title }}{% endblock %}
 {% block description %}{{ (g.description or g.standfirst) | metadesc }}{% endblock %}
 {% block pagetype %}hub{% endblock %}
@@ -23,6 +23,7 @@
   </section>
   {# kit near the top, after the opening section (Robin, 20 Nov 2026) #}
   {% if loop.first and g.kit %}{{ affiliate_box(g.kit, h.kit_text or "Kit to compare against your race's list", h.category) }}{% endif %}
+  {% if loop.first %}{% for pk in g.picks %}{{ picks_box(pk, loop.index) }}{% endfor %}{% endif %}
   {% endfor %}
   {% if g.faq %}
   <section class="fl-faq"><h2>Questions people ask</h2>

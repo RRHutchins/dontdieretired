@@ -36,10 +36,10 @@
 {% endif %}
 {% endmacro %}
 
-{% macro picks_box(pk) %}
-{% if pk %}
-<aside class="aff-box picks" aria-labelledby="picks-h">
-  <h3 class="h4" id="picks-h">{{ pk.item }}: what reviewers recommend</h3>
+{% macro picks_box(pk, n=none) %}
+{% if pk %}{% set hid = "picks-h" ~ (("-" ~ n) if n and n > 1 else "") %}
+<aside class="aff-box picks" aria-labelledby="{{ hid }}">
+  <h3 class="h4" id="{{ hid }}">{{ pk.item }}: what reviewers recommend</h3>
   <p class="picks-why">{{ pk.why }}</p>
   <ul class="picks-list">
   {% for o in pk.options %}
