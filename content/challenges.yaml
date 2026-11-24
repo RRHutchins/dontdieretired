@@ -10608,9 +10608,9 @@
     region: uk
     checked: '2026-11-22'
   - label: 'Natural Voice Network: find a choir or singing group'
-    url: https://naturalvoice.net/find-a-choir/page/2
+    url: https://www.naturalvoice.net/find-a-choir/
     region: uk
-    checked: '2026-11-22'
+    checked: '2026-11-24'
   - label: 'Voices Rock: FAQ'
     url: https://voicesrock.com/faq/
     region: us
@@ -10619,6 +10619,12 @@
     url: https://www.barbershop.org/join/find-or-start-a-chorus
     region: us
     checked: '2026-11-22'
+  finders:
+  - label: 'Natural Voice Network: find a choir or singing group'
+    url: https://www.naturalvoice.net/find-a-choir/
+    why: Choose "By location" and "United Kingdom" to narrow the search by postcode, or zoom in on their map; open a group's listing to see whether it auditions.
+    region: uk
+    checked: '2026-11-24'
   seo_title: Rock Choir and other choirs with no audition near you
   description: 'Rock Choir, Popchoir, Voices Rock and more compared: what a rehearsal is like, free tasters, fees as listed, and how to find a choir near you.'
   detail:
@@ -90130,6 +90136,12 @@
       url: https://usacycling.org/get-started/non-competitive-cycling-for-all-ages
       region: us
       checked: '2026-11-20'
+  finders:
+  - label: 'Cycling UK: find a local group or club'
+    url: https://www.cyclinguk.org/find-your-local-cycling-group
+    why: Type a place name and choose how many miles from it to search; ask the group which of its rides suits a first-timer.
+    region: uk
+    checked: '2026-11-24'
   seo_title: 'Joining a cycling club: what to expect on a club run'
   description: How to find and join a cycling club in the UK or US, what happens on a first club run, how A, B and C groups work, and what to bring with you.
   detail:
