@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-25)
 
-132 sources, 93 statements, 12 event profiles. Core 82, supported 11, thin 0, contested 0.
+134 sources, 93 statements, 12 event profiles. Core 83, supported 10, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -142,6 +142,8 @@
 - 220 Triathlon (Our Media), *6 open water swimming skills to practise in the pool* (2026). Opened 2026-11-24.
 - TRI247 (John Levison, Chief Correspondent), *How should you pace the bike to run better in a triathlon?* (2026). Opened 2026-11-24.
 - McMillan Running (Greg McMillan), *Keep easy runs easy* (2024). Opened 2026-11-24.
+- TrainingPeaks (Hal Higdon), *Should your running workouts only be hard and easy* (2014). Opened 2026-11-25.
+- Carmichael Training Systems (Cliff Pittman, CTS Pro Ultrarunning Coach), *Easy runs: the science behind ultramarathon's greatest training tool* (2026). Opened 2026-11-25.
 
 **1. General**
 - Wanderlust (with advice from the Long Distance Walkers Association and experienced trekkers), *How to prepare for a long-distance trek* (2026). Opened 2026-10-27.
@@ -178,6 +180,7 @@
 | core | 11 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water, nhs-hypothermia |
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
 | core | 10 | key session | Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. | higdon-novice1, bmc-hill-fit, emf-half-beginner, bhf-l2b-training |
+| core | 9 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace, mcmillan-easy-runs, higdon-hard-easy, cts-easy-runs |
 | core | 9 | recovery | Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. | ea-pavey-marathon, bmc-long-distance, nhs-emm-sleep |
 | core | 9 | fuel and drink | On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. | bmc-hill-fit, issn-ultra-2019, cyclinguk-eat-long-ride |
 | core | 9 | fuel and drink | Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. | ea-pavey-marathon, issn-ultra-2019, mcm-first-timer-tips |
@@ -232,7 +235,6 @@
 | core | 5 | warning signs | On hot days drink more cold drinks while you are active, wear light, loose clothing and keep out of the sun between 11am and 3pm where you can. Call 999 (911 in the US) if someone is still unwell after 30 minutes resting somewhere cool, being cooled and drinking, or has a very high temperature, hot skin that is not sweating, a fast heartbeat or breathing, confusion, a fit or loses consciousness. | nhs-heat |
 | core | 5 | warning signs | Call 999 (911 in the US) for tight or squeezing chest pain, pain spreading to the arms, neck or jaw, severe breathlessness, or if someone collapses. Do not drive yourself to hospital. | nhs-heart-attack |
 | core | 5 | intensity | For walking to count as exercise, walk briskly, at about 3 miles an hour, faster than a stroll; you should still be able to talk but not sing. Even a brisk 10-minute walk each day counts. If you are not very active, increase your walking distance gradually. | nhs-walking |
-| supported | 5 | intensity | Keep easy days truly easy. Drifting into a steadier pace on easy days leaves you more tired for the sessions that matter and takes away their benefit. | ea-training-pace, mcmillan-easy-runs |
 | supported | 5 | key session | Train for the ground you will cover. For hill challenges walk hills fast, or use stairs, and add short hill repeats of 50 to 100 metres of climb, four to six times, coming down slowly. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 5 | why | Hill repeats practise exactly what a hill challenge asks of you, climbing again and again, then coming down slowly and with control. | bmc-hill-fit, ydnpa-three-peaks |
 | supported | 5 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit, cicerone-hill-fit |
