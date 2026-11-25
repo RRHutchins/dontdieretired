@@ -51,9 +51,20 @@
   const level = () => (levels.find(r => r.checked) || {}).value || 'active';
   const setLevel = v => { const lv = P.LEVELS.includes(v) ? v : 'active'; levels.forEach(r => { r.checked = r.value === lv; }); };
 
-  // Months from this one, two years ahead
+  // Months from this one, a year ahead (review finding 6, 25 Nov 2026: 25 months was a long list), grouped by year, with
+  // the activity's own best months marked. A suggested or saved month further out is added in its place by setWhen().
   const ty = now.getFullYear(), tm = now.getMonth();
-  if (form) for (let i = 0; i < 25; i++) { const y = ty + Math.floor((tm + i) / 12), m = (tm + i) % 12; const o = document.createElement('option'); o.value = y + '-' + pad(m + 1); o.textContent = P.MONTHS[m] + ' ' + y; monthSel.appendChild(o); }
+  const goodMonths = (A.dates && A.dates.months) || A.when || [], marks = goodMonths.length && goodMonths.length < 12;
+  function addMonth(v) {
+    const y = v.slice(0, 4), m = +v.slice(5, 7);
+    let g = [...monthSel.querySelectorAll('optgroup')].find(x => x.label === y);
+    if (!g) { g = document.createElement('optgroup'); g.label = y; monthSel.insertBefore(g, [...monthSel.querySelectorAll('optgroup')].find(x => x.label > y) || null); }
+    const o = document.createElement('option'); o.value = v;
+    o.textContent = marks && goodMonths.includes(m) ? fill(N.month_good, { month: P.MONTHS[m - 1] + ' ' + y }) : P.MONTHS[m - 1] + ' ' + y;
+    g.insertBefore(o, [...g.children].find(x => x.value > v) || null);
+    return o;
+  }
+  if (form) for (let i = 0; i < 13; i++) { const y = ty + Math.floor((tm + i) / 12), m = (tm + i) % 12; addMonth(y + '-' + pad(m + 1)); }
   if (dateIn) dateIn.min = today;
 
   const by = () => (radios.find(r => r.checked) || {}).value || 'date';
@@ -67,7 +78,7 @@
   radios.forEach(r => r.addEventListener('change', () => setBy(r.value)));
   function setWhen(w) {
     if (!form) return;
-    if (w.month) { if (![...monthSel.options].some(o => o.value === w.month)) { const o = document.createElement('option'); o.value = w.month; o.textContent = P.monthYear(w.month); monthSel.insertBefore(o, monthSel.firstChild); } monthSel.value = w.month; setBy('month'); }
+    if (w.month) { if (![...monthSel.options].some(o => o.value === w.month)) addMonth(w.month); monthSel.value = w.month; setBy('month'); }
     else { dateIn.value = w.date; setBy('date'); }
     setSpan(!!w.until, w.until || '');
   }

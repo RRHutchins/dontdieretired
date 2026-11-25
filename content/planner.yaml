@@ -317,6 +317,8 @@ notes:
   # Under the date picker on an activity page (RUNBOOK §6s, day 3): why the date we fill in was chosen.
   suggest_fixed: "We have filled in the next date we found published. Check it on the organiser's own website before you book anything."
   suggest_season: "We have filled in the first of its best months ({months}) that leaves our usual {weeks}-week run-up. Change it to suit you."
+  # In the month picker, after each of the activity's best months (review finding 6).
+  month_good: "{month}, a good time"
   suggest_any: "Any time of year suits this, so we have filled in a date that leaves our usual {weeks}-week run-up. Change it to suit you."
   # Shown with a saved plan.
   saved_account: "Kept on your Planner Plus account as well as in this browser, so it is in My year on every device where you sign in."

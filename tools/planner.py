@@ -27,7 +27,7 @@ PICK_TIERS = ("top", "good", "value")
 TOUR_AFF = ("viator", "getyourguide")   # the only travel-side affiliate schemes Robin has joined (site.yaml → affiliates)
 NEAR_MAX, GOES_MAX = 6, 4
 COUNTRY = re.compile(r"[A-Z]{2}")
-NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help",
+NOTE_KEYS = ("squeezed", "outside", "too_soon", "train_short", "past", "suggest_fixed", "suggest_season", "suggest_any", "month_good", "saved", "saved_past", "affiliate", "moved_you", "moved_day", "moved_busy", "clash_day", "clash_train", "cal_step", "cal_day_month", "cal_why", "cal_plan", "cal_help",
              "level_q", "level_opt", "level_starter", "level_active", "level_advanced", "level_help", "train_month", "train_offline", "train_week", "train_about", "cal_why_train", "train_level_long", "train_level_short", "clash_span", "span_q", "span_last", "span_help", "span_err",
              "trip_train", "trip_train_key", "trip_train_eve", "with_trip", "book_closed")
 PLUS_KEYS = ("intro", "diy_head", "diy_tag", "diy_help", "diy_open", "diy_book", "diy_place_help", "diy_nearby", "diy_goes", "head", "head_open", "checking",
