@@ -151,8 +151,8 @@ guidance:
     use: safety
     text: Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers.
     for: [eah-consensus-2015, wms-eah-2020-afp, greatrun-hydration]
-    against: [bc-sofa-50km, bc-nutrition-top10]
-    note: British Cycling's beginner plan suggests sipping every 10 to 15 minutes on a ride. The international consensus statement outranks it, so plans say drink to thirst and the cycling statement on fuel does not set a drinking schedule.
+    against: [bc-sofa-50km, bc-nutrition-top10, rtc-first-long-ride]
+    note: British Cycling's beginner plan suggests sipping every 10 to 15 minutes on a ride, and Rails to Trails Conservancy's first long-distance ride guide (opened 25 Nov 2026) says to drink before and during training rides "even when you don't feel thirsty". The international consensus statement outranks them, so plans say drink to thirst and the cycling statement on fuel does not set a drinking schedule.
   - id: snack-little-often
     topic: fuel and drink
     applies: [endurance]
@@ -243,8 +243,8 @@ guidance:
     applies: [multiday]
     use: rule
     text: Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day.
-    for: [bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit, cyclinguk-first-touring]
-    note: Cycling UK's first-time touring tips (opened 24 Nov 2026) say to build your endurance and "get accustomed to riding consecutive days" before a bike tour, so the point holds for multi-day rides as well as walks. Cicerone (opened 23 Nov 2026) suggests back-to-back walks at weekends to build stamina for longer distances before a trek, tapering to about 12 km each day before it; the point about learning how you cope on the second day comes from the BMC and LDWA. Mind's intermediate trekking plan (by Full Potential, opened 23 Nov 2026) pairs 180-minute walks on Saturday and Sunday so you train to move when tired, but for the one-day 3 Peaks Challenge, so it is not counted here.
+    for: [bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit, cyclinguk-first-touring, rtc-first-long-ride]
+    note: Rails to Trails Conservancy's guide to a first long-distance trail ride (opened 25 Nov 2026) says to work up to your goal distance slowly, then ride that distance "and then some, for multiple days in a row". Cycling UK's first-time touring tips (opened 24 Nov 2026) say to build your endurance and "get accustomed to riding consecutive days" before a bike tour, so the point holds for multi-day rides as well as walks. Cicerone (opened 23 Nov 2026) suggests back-to-back walks at weekends to build stamina for longer distances before a trek, tapering to about 12 km each day before it; the point about learning how you cope on the second day comes from the BMC and LDWA. Mind's intermediate trekking plan (by Full Potential, opened 23 Nov 2026) pairs 180-minute walks on Saturday and Sunday so you train to move when tired, but for the one-day 3 Peaks Challenge, so it is not counted here.
   - id: multiday-pacing
     topic: on the day
     applies: [multiday]
@@ -256,13 +256,22 @@ guidance:
     applies: [multiday]
     use: advice
     text: In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race.
-    for: [tanabe-kumano-tips, nps-heat-illness, nhs-heat, fourdaagse-medical]
+    for: [tanabe-kumano-tips, nps-heat-illness, nhs-heat, fourdaagse-medical, mosp-katy-general]
+    note: Missouri State Parks' Katy Trail general information (opened 25 Nov 2026) says water and restrooms are not available at every trailhead and, for long trips, to carry food and water, "especially in the summer"; it backs the carry-water point for trail trips by bike or on foot, not the early start or breaks.
   - id: heat-warning-signs
     topic: warning signs
     applies: [multiday]
     use: safety
     text: On hot days drink more cold drinks while you are active, wear light, loose clothing and keep out of the sun between 11am and 3pm where you can. Call 999 (911 in the US) if someone is still unwell after 30 minutes resting somewhere cool, being cooled and drinking, or has a very high temperature, hot skin that is not sweating, a fast heartbeat or breathing, confusion, a fit or loses consciousness.
     for: [nhs-heat]
+  - id: trail-water-services
+    events: [camino-100km, coast-to-coast]
+    topic: fuel and drink
+    applies: [multiday]
+    use: advice
+    text: On a long-distance trail, water, toilets and food are not available at every stop, and some taps, toilets and cafés close or keep shorter hours in winter. Check what will be open before you set off, carry water and food for the day, especially in summer (two bottles is a sensible start), and top up whenever you can.
+    for: [mosp-katy-general, gap-how-to-prepare]
+    note: Missouri State Parks (Katy Trail general information, opened 25 Nov 2026) says water and restrooms are not at every trailhead, that trailheads with drinking water and modern restrooms are winterized from 1 November to 1 April, and to carry food and water on long trips, especially in summer. The Great Allegheny Passage Conservancy's How To Prepare page (re-opened 25 Nov 2026) says it is best to carry two bottles and top them off whenever possible, that campground water is seasonal, and that trail-town businesses keep limited hours in winter, so call ahead.
   - id: build-day-walks
     topic: key session
     applies: [multiday, walking]

@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-24)
+# Guidance engine report (2026-11-25)
 
-130 sources, 92 statements, 12 event profiles. Core 81, supported 11, thin 0, contested 0.
+132 sources, 93 statements, 12 event profiles. Core 82, supported 11, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -61,6 +61,8 @@
 - British Heart Foundation (with Full Potential), *London to Brighton Bike Ride 16-week training guide* (2026). Opened 2026-11-20.
 - Cycling UK, *Top tips for first-time bike touring and bikepacking (no article date; page copyright 2026)* (2026). Opened 2026-11-24.
 - Great Allegheny Passage Conservancy, *How To Prepare (last modified 11 December 2024)* (2024). Opened 2026-11-24.
+- Missouri State Parks (Missouri Department of Natural Resources), *General Information - Katy Trail* (2026). Opened 2026-11-25.
+- Rails to Trails Conservancy (TrailBlog), *How to Prepare for Your First Long-Distance Trail Ride (14 February 2017, updated 1 February 2018)* (2018). Opened 2026-11-25.
 - Great Run (organiser of the Great North Run), *10k training plans (16-week Beginner, 8-week Run/Walk and 12-week Improver plans)* (2026). Opened 2026-11-02.
 - Great Run (organiser of the Great North Run), *How long does it take to train for a 10k?* (2024). Opened 2026-11-02.
 - Edinburgh Marathon Festival, *How to train for your first half marathon, a beginner's guide to going the distance* (2026). Opened 2026-11-03.
@@ -157,12 +159,13 @@
 | core | 18 | on the day | Start slower than you think you need to; early miles feel easy and are where most people overdo it. | ea-pavey-marathon, ea-training-pace, knechtle-nyc-2026, mcm-first-timer-tips, bc-first-sportive-top10, cyclinguk-first-sportive |
 | core | 18 | altitude | Above 3,000 metres, sleep no more than 500 metres higher than the night before and take a rest day at the same height every three or four days. Avoid going from below 1,200 metres to above 3,500 metres in a day. | nhs-altitude, nathnac-altitude, tanapa-kili, cdc-altitude |
 | core | 17 | intensity | Do most of your training at an easy, conversational effort, about 2 to 3 out of 10, where you could hold a full conversation. Keep a small share for harder work. | ea-training-pace, ijspp-2010-intensity, higdon-novice1, cyclinguk-100km, lme-beginner-plan-2026, mind-marathon-beginner |
+| core | 17 | on the day | In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race. | tanabe-kumano-tips, nps-heat-illness, nhs-heat, fourdaagse-medical, mosp-katy-general |
 | core | 15 | before you start | Start from your current level and build up gradually; repeating a week is fine and is part of the plan, not a failure. | cmo-2019, nhs-c25k, who-2011-older |
 | core | 15 | recovery | Plan rest days into every week, and take an easier day when your legs are heavy. | nhs-c25k, higdon-novice1, bmc-long-distance, lme-beginner-plan-2026, chicago-plan-2026 |
 | core | 15 | altitude | See your GP or a travel clinic before a high-altitude trip, especially if you have a health condition or have had altitude sickness before; they can discuss preventive medicine. Make sure your insurance covers evacuation. | nhs-altitude, nathnac-altitude, cdc-altitude |
 | core | 15 | on the day | Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back. | rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather, swt-snorkel-safety, nps-buis-safety, swimeng-ow-tips |
 | core | 14 | taper | In the final two weeks, cut your training volume by roughly 40 to 60 per cent while keeping the same number of sessions and some of the same effort, so you arrive fresh. | bosquet-2007, ea-pavey-marathon, higdon-novice1, greatrun-half-plan, emf-half-beginner |
-| core | 14 | on the day | In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race. | tanabe-kumano-tips, nps-heat-illness, nhs-heat, fourdaagse-medical |
+| core | 13 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit, cyclinguk-first-touring, rtc-first-long-ride |
 | core | 13 | altitude | Being fit does not protect you from altitude sickness. Choose an itinerary with acclimatisation days and climb slowly however strong you feel. | nathnac-altitude, tanapa-kili, cdc-altitude |
 | core | 13 | altitude | If you fly or drive straight to a high town, rest there for a day or two before you walk any higher, drink enough water, and avoid alcohol for the first two days. | nhs-altitude, cdc-altitude, promperu-inca |
 | core | 12 | progression | Increase your training a little at a time. Big week-to-week jumps (more than about 30 per cent) were linked with more overuse injuries in a study of 874 new runners; the familiar 10 per cent rule is a sensible cap but is not firmly proven. | nielsen-2014, nhs-c25k, greatrun-how-to-half |
@@ -175,7 +178,6 @@
 | core | 11 | warning signs | Get out if your stroke slows, weakens or loses its rhythm, or if you are shivering or slurring your words; these are signs that you are getting too cold. | swimeng-stay-safe, usms-open-water, nhs-hypothermia |
 | core | 10 | before you start | If you have a health condition or are worried about your health, speak to your GP (family doctor) before you start training. | nhs-c25k, nathnac-altitude |
 | core | 10 | key session | Build one long session a week at an easy effort, growing towards the length and duration of the challenge itself. | higdon-novice1, bmc-hill-fit, emf-half-beginner, bhf-l2b-training |
-| core | 10 | key session | Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day. | bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit, cyclinguk-first-touring |
 | core | 9 | recovery | Keep a regular sleep routine through training, going to bed and getting up at around the same time each day; good sleep is part of recovery, and on multi-day trips a warm enough sleeping bag and mat matter more than people expect. | ea-pavey-marathon, bmc-long-distance, nhs-emm-sleep |
 | core | 9 | fuel and drink | On long days eat regularly on the move, a little and often from a variety of foods, rather than one big meal before you start. | bmc-hill-fit, issn-ultra-2019, cyclinguk-eat-long-ride |
 | core | 9 | fuel and drink | Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. | ea-pavey-marathon, issn-ultra-2019, mcm-first-timer-tips |
@@ -194,7 +196,7 @@
 | core | 9 | on the day | In transition, put your helmet on and fasten it before you touch your bike, get on only after the mount line, and take it off only once the bike is back on the rack. | britri-beginners-wales, tri-ireland-rules, usat-multisport-rules |
 | core | 9 | kit | On a hill day carry a waterproof jacket and warm layers, even in summer, plus enough water for the day, food, sun protection and a small first aid kit, and wear sturdy footwear. Ramblers also lists a head torch, a charged phone, a whistle and a survival or bothy bag. | bmc-hill-weather, ramblers-hill-tips, pc-safety-tips |
 | core | 8 | key session | Low-impact exercise such as cycling, swimming or rowing builds fitness with less pounding and is useful for everyone, not just the injured. | ea-training-pace, higdon-novice1, movingmedicine-cycling |
-| core | 8 | fuel and drink | Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. | eah-consensus-2015, wms-eah-2020-afp, greatrun-hydration (against: bc-sofa-50km, bc-nutrition-top10) |
+| core | 8 | fuel and drink | Drink when you are thirsty rather than to a schedule. Drinking far more than you need can dilute the body's sodium, which can be dangerous; it affects walkers and recreational exercisers as well as racers. | eah-consensus-2015, wms-eah-2020-afp, greatrun-hydration (against: bc-sofa-50km, bc-nutrition-top10, rtc-first-long-ride) |
 | core | 8 | warning signs | In cold, wet or windy weather watch yourself and others for hypothermia. Shivering, slurred speech, confusion or clumsiness, and someone going quiet or drowsy are warning signs; drowsiness after the shivering stops is an emergency. Get them out of the wind and wet, replace wet clothes with dry layers and cover their head, and give a warm, sweet, non-alcoholic drink and sugary food if they are fully awake. Do not rub their arms and legs or use hot water bottles, and call 999 (Police, then Mountain Rescue, in the hills). | nhs-hypothermia, ms-hypothermia |
 | core | 8 | key session | Run at least three times a week, with rest days in between; beginner plans from the NHS and from Great Run both start with three runs a week. | nhs-c25k, greatrun-how-to-half, greatrun-half-plan |
 | core | 8 | on the day | Warm up for about 5 to 10 minutes before you run with moving exercises, such as marching on the spot, knee lifts and gentle knee bends, rather than held stretches. | greatrun-how-to-half, nhs-warm-up |
@@ -209,6 +211,7 @@
 | core | 6 | body maintenance | Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. | lauersen-2014, bmc-hill-fit |
 | core | 6 | on the day | In high mountains thunderstorms usually build in the afternoon. Check the forecast before you go and stay away if a high chance of thunderstorms is forecast; start early and plan to be down by noon; keep off hilltops and ridge tops in a storm, and at the first sign of one get below the treeline. Carry rain gear and warm layers. | nws-lightning-outdoors, usfs-elbert |
 | core | 6 | on the day | On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. | bmc-long-distance, wanderlust-trek-prep, ldwa-body-prep |
+| core | 6 | fuel and drink | On a long-distance trail, water, toilets and food are not available at every stop, and some taps, toilets and cafés close or keep shorter hours in winter. Check what will be open before you set off, carry water and food for the day, especially in summer (two bottles is a sensible start), and top up whenever you can. | mosp-katy-general, gap-how-to-prepare |
 | core | 6 | on the day | On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard. | swcpa-safety, wcp-safety |
 | core | 6 | why | Cutting back in the final weeks lets your muscles recover and your body refuel, so you arrive fresh rather than tired. In research, a two-week taper improved performance. | bosquet-2007, ea-pavey-marathon |
 | core | 6 | key session | For a first half marathon, think of the long run as time on your feet rather than miles, at an easy pace. Great Run's beginner plan builds it to about 80 minutes by two weeks before the race. | greatrun-half-plan, rphm-coopah-beginner |
@@ -247,7 +250,7 @@
 - cycling: 6 usable statements of its own
 - endurance: 16 usable statements of its own
 - hill: 14 usable statements of its own
-- multiday: 10 usable statements of its own
+- multiday: 11 usable statements of its own
 - running: 9 usable statements of its own
 - swimming: 20 usable statements of its own
 - walking: 11 usable statements of its own
@@ -255,4 +258,4 @@
 ## Disagreements and how they were resolved
 
 - **strength-twice-weekly**: Higdon's beginner marathon plan suggests people new to weights wait. The official guidance and the injury evidence carry more weight, so plans include strength work, starting light with body weight.
-- **drink-to-thirst**: British Cycling's beginner plan suggests sipping every 10 to 15 minutes on a ride. The international consensus statement outranks it, so plans say drink to thirst and the cycling statement on fuel does not set a drinking schedule.
+- **drink-to-thirst**: British Cycling's beginner plan suggests sipping every 10 to 15 minutes on a ride, and Rails to Trails Conservancy's first long-distance ride guide (opened 25 Nov 2026) says to drink before and during training rides "even when you don't feel thirsty". The international consensus statement outranks them, so plans say drink to thirst and the cycling statement on fuel does not set a drinking schedule.
