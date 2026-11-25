@@ -82,12 +82,11 @@ def main():
                 lines.append(f"{svc}: no text in the pack, skipped"); continue
             if any(p["channelId"] == c["id"] and ps.norm(p["text"]) == ps.norm(text) and p["status"] != "error" for p in have):
                 lines.append(f"{svc}: already in Buffer"); continue
-            v = {"url": meta["video"]}
-            if "thumbnailUrl" in vf: v["thumbnailUrl"] = meta["thumbnail"]
+            v = {"url": meta["video"]}   # Buffer refuses thumbnailUrl; Instagram/TikTok/Pinterest take a thumbnailOffset
             if "metadata" in vf:
                 m = {}
                 if "title" in vmf: m["title"] = meta["title"]
-                if "thumbnailUrl" in vmf: m["thumbnailUrl"] = meta["thumbnail"]
+                if "thumbnailOffset" in vmf and svc in ("instagram", "tiktok", "pinterest"): m["thumbnailOffset"] = 2000
                 if m: v["metadata"] = m
             inp = {"channelId": c["id"], "text": text, "assets": [{"video": v}] if "video" in af else {"videos": [v]},
                    "needsApproval": False, "schedulingType": "automatic"}
@@ -100,7 +99,7 @@ def main():
             mm = {}
             if "type" in sm:
                 kinds = enum(ps.base(sm["type"]))
-                for want in ("reel", "short", "video", "post"):
+                for want in (("short",) if svc == "youtube" else ()) + ("reel", "regularVideo", "post"):
                     if want in kinds: mm["type"] = want; break
             if svc == "instagram" and "shouldShareToFeed" in sm: mm["shouldShareToFeed"] = True
             if "title" in sm: mm["title"] = meta["title"][:100]
