@@ -314,7 +314,10 @@
     const nm = $('[data-fl-name]', root), tg = $('[data-fl-target]', root);
     if (document.activeElement !== nm) nm.value = d.title; if (document.activeElement !== tg) tg.value = d.target;
     const rem = $('[data-fl-remind]', root), last = L.flag('backup_at'), closed = L.flag('remind_closed');
-    rem.hidden = !(c.n >= 5 && !last && !closed);
+    // a signed-in Planner Plus member's list is on the account too (DDRList sync), so "this device only" would be untrue
+    const onAcct = L.flag('acct') === '1' && L.flag('plus') === '1';
+    rem.hidden = onAcct || !(c.n >= 5 && !last && !closed);
+    const kh = $('[data-fl-kept-here]', root), ka = $('[data-fl-kept-acct]', root); if (kh && ka) { kh.hidden = onAcct; ka.hidden = !onAcct; }
     paintAdds(); mail();
   }
   function renderMine() {

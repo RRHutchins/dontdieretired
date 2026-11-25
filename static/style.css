@@ -1601,3 +1601,8 @@ li.prod{display:grid;grid-template-columns:56px minmax(0,1fr);gap:.85em;align-it
 .my-idea-t{margin:0;font-weight:600;overflow-wrap:anywhere}
 .my-idea .pl-acts{margin-top:auto;padding-top:10px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
 .my-idea-other{display:inline-flex;align-items:center;min-height:44px}
+/* A plan on screen but not yet saved (RUNBOOK §6t, review finding 1, 25 Nov 2026): said at the top and the foot, with the button */
+.pl-unsaved{margin:10px 0 0;padding:10px 14px;border-radius:10px;background:#fdf4e6;border:1px solid #ecd3a8}
+.pl-unsaved p{margin:0 0 6px}.pl-unsaved .pl-acts{margin:6px 0 4px}
+.pl-unsaved-end{margin-top:18px}
+.pl-other{margin:2px 0 6px}.pl-other>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--brand-ink);font-weight:600}

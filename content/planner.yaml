@@ -317,6 +317,13 @@ notes:
   suggest_season: "We have filled in the first of its best months ({months}) that leaves our usual {weeks}-week run-up. Change it to suit you."
   suggest_any: "Any time of year suits this, so we have filled in a date that leaves our usual {weeks}-week run-up. Change it to suit you."
   # Shown with a saved plan.
+  saved_account: "Kept on your Planner Plus account as well as in this browser, so it is in My year on every device where you sign in."
+  # A plan on screen but not yet saved (review finding 1, 24 Nov 2026): said at the top and at the foot, each with the button.
+  links_other: "Links for {where} ({n})"
+  unsaved_head: "Not in your year yet."
+  unsaved: "This is a preview. Check the steps below, then add it to keep it."
+  unsaved_end: "Nothing is kept until you press Add to my year."
+  save_btn: "Add to my year"
   saved: "Saved on this device only, with your list. Clearing this browser's data clears it too, so save a backup from your list now and then."
   saved_past: "Your date, {date}, has passed. Mark it done on your list, or pick a new date."
   # The My year page (RUNBOOK §6s, day 4): all of a reader's plans together. The planner flags clashes and leaves the
@@ -380,7 +387,7 @@ trip:
   head_away: "Your trip"
   where_label: "Where"
   where_q: "Where will you do it?"
-  where_help: "Type a town, venue or postcode. It is kept with your plan on this device, and goes to the map or journey planner only if you open one of the links."
+  where_help: "Type a town, venue or postcode. It is kept with your plan, and goes to the map or journey planner only if you open one of the links."
   where_hint: "Our page for this lists {area}."
   where_save: "Show the links"
   where_change: "Change the place"
@@ -407,6 +414,7 @@ trip:
   near_tours_help: "Searches for you to run. We have not checked or chosen any of these tours."
   goes: "Goes well with"
   goes_help: "Activities that go with this one. Add to my year gives one its own plan, on the date shown; change it on its page."
+  goes_help_unsaved: "Activities that go with this one. Add this plan to your year first, then you can add these alongside it; or open one to plan it on its own."
   add: "Add to my year"
   add_on: "for {when}"
   added: "In your year: {when}"

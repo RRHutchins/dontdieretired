@@ -83,6 +83,19 @@
     const reg = multi && l.region === 'uk' ? ' <span class="fl-reg">UK</span>' : multi && l.region === 'us' ? ' <span class="fl-reg">US</span>' : '';
     return '<li><a href="' + esc(aff ? affUrl(l.url, aff) : l.url) + '" target="_blank" rel="' + (aff ? AFF_REL : 'noopener') + '">' + esc(l.label) + '</a>' + reg + (l.why ? '<span class="pl-lwhy">' + esc(l.why) + '</span>' : '') + '</li>';
   }
+  /* A step with links for both countries (review finding 4, 24 Nov 2026: beekeeping's first step had 11): the reader's own
+     country's links (by this browser's time zone, as My year's suggestions do) and the ones for anywhere are shown; the
+     other country's are folded under one line. With no country known, all are shown as before. Nothing is removed. */
+  const myRegion = (() => { let tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    return tz === 'Europe/London' ? 'uk' : /^America\/(New_York|Chicago|Denver|Phoenix|Los_Angeles|Anchorage|Detroit|Boise|Indiana|Kentucky|North_Dakota)|^Pacific\/Honolulu/.test(tz) ? 'us' : ''; })();
+  const REGION = { uk: 'the UK', us: 'the US' };
+  function stepLinks(links, multi) {
+    const other = multi && myRegion ? links.filter(l => REGION[l.region] && l.region !== myRegion) : [];
+    if (!other.length || other.length === links.length) return '<ul class="pl-links">' + links.map(l => linkHtml(l, multi)).join('') + '</ul>';
+    const own = links.filter(l => other.indexOf(l) < 0), r = other[0].region;
+    return '<ul class="pl-links">' + own.map(l => linkHtml(l, multi)).join('') + '</ul>'
+      + '<details class="pl-other"><summary>' + esc(fill(N.links_other, { where: REGION[r], n: other.length })) + '</summary><ul class="pl-links">' + other.map(l => linkHtml(l, multi)).join('') + '</ul></details>';
+  }
   /* ---------- the training (day 6): the engine's sessions, a week at a time ---------- */
   const OPEN_WEEKS = 4;
   const range = (a, b) => (a === b ? dayText(a) : dayText(a) + ' to ' + dayText(b));
@@ -170,7 +183,10 @@
   function goesHtml(plan) {
     const T = S.trip; if (!T || !T.goes) return '';
     const g = ex(plan).goes; if (!g.length) return '';
-    return '<div class="pl-goes"><h4 class="pl-month">' + esc(T.goes) + '</h4><p class="meta">' + esc(T.goes_help) + '</p><ul class="pl-xs">' + g.map(e => xHtml(e, T, !ro())).join('') + '</ul></div>';
+    // review finding 1 (24 Nov 2026): before this plan is saved, no Add buttons here, so the only Add on the page is this
+    // plan's own (a reviewer had saved a goes-well-with activity and left thinking this one was saved)
+    const saved = !!(current && current.saved) && !ro();
+    return '<div class="pl-goes"><h4 class="pl-month">' + esc(T.goes) + '</h4><p class="meta">' + esc(saved || !T.goes_help_unsaved ? T.goes_help : T.goes_help_unsaved) + '</p><ul class="pl-xs">' + g.map(e => xHtml(e, T, saved)).join('') + '</ul></div>';
   }
   /* Where to stay and where to eat (Planner Plus day 9): open for a stay, folded for a single day away */
   function stayEatHtml(r, T, li) {
@@ -206,6 +222,8 @@
       html += '<p class="meta">' + other + ' steps' + (ses ? ' and ' + ses + ' training sessions' : '') + ', from ' + esc(P.longDate(plan.starts)) + '. Each one says why it comes when it does.</p>';
       // a saved plan says so at the top, not only after its last step (interface day, row 24c)
       if (saved && (mode === 'open' || mode === 'member')) html += '<p class="pl-inyear-top"><strong>In My year ✓</strong> <a href="' + yearHref(plan) + '">See it in My year</a></p>';
+      // ...and a plan not yet saved says that at the top too, with the button to save it (review finding 1, 24 Nov 2026)
+      if (!saved && (mode === 'open' || mode === 'member')) html += '<div class="pl-unsaved"><p><strong>' + esc(N.unsaved_head) + '</strong> ' + esc(N.unsaved) + '</p><p class="pl-acts"><button type="button" class="btn" data-pl-save>' + esc(N.save_btn) + '</button></p></div>';
     }
     html += '</div>';
     if (notes.length) html += '<ul class="pl-notes">' + notes.map(n => '<li>' + esc(n) + '</li>').join('') + '</ul>';
@@ -230,7 +248,7 @@
         + (st.done ? ' <span class="pl-tag">Done</span>' : '') + (st.moved ? ' <span class="pl-tag my-tag-moved">Moved</span>' : '') + (gone && !st.done ? ' <span class="pl-tag pl-tag-gone">Gone by</span>' : '') + '</p>'
         + '<p class="pl-text">' + esc(st.text) + '</p>'
         + (st.detail ? '<p class="pl-detail">' + esc(st.detail) + '</p>' : '')
-        + (links.length ? '<ul class="pl-links">' + links.map(l => linkHtml(l, multi)).join('') + '</ul>' : '')
+        + (links.length ? stepLinks(links, multi) : '')
         + ((st.items || []).length ? '<ul class="pl-links pl-kit">' + st.items.map(x => '<li><a href="' + esc(x.aff ? affUrl(x.url, x.aff) : x.url) + '" target="_blank" rel="' + (x.aff ? AFF_REL : 'noopener') + '">' + esc(x.name) + '</a><span class="pl-lwhy">' + esc(x.why) + '</span></li>').join('') + '</ul>' : '')
         + (st.picks ? P.picksHtml(st.picks, S.picks, { esc, aff: u => affUrl(u, 'amazon') }) : '')
         + '<p class="pl-why"><span>Why then:</span> ' + esc(st.why) + '</p>'
@@ -249,12 +267,15 @@
       out.innerHTML = html; return;
     }
     html += saved
-      ? '<div class="pl-saved"><p><strong>In My year ✓</strong> <a class="btn btn-small" href="' + yearHref(plan) + '">See it in My year</a> <a href="/list/#mine">See my list</a></p><p class="meta">' + esc(N.saved) + '</p>'
+      ? '<div class="pl-saved"><p><strong>In My year ✓</strong> <a class="btn btn-small" href="' + yearHref(plan) + '">See it in My year</a> <a href="/list/#mine">See my list</a></p><p class="meta">' + esc(savedNote()) + '</p>'
         + '<div class="pl-cal"><p class="pl-acts"><button type="button" class="btn btn-small" data-pl-ics>Add to my calendar</button></p><p class="meta">' + esc(N.cal_help) + '</p><p class="pl-calmsg" data-pl-calmsg role="status" aria-live="polite"></p></div>'
         + '<p class="pl-acts"><button type="button" class="btn btn-small btn-ghost" data-pl-change>' + (A.event ? 'Change the date or starting point' : 'Change the date') + '</button><button type="button" class="btn btn-small btn-ghost" data-pl-clear>Remove this plan</button></p></div>'
-      : '<p class="pl-acts"><button type="button" class="btn" data-pl-save>Add to my year</button></p><p class="meta">' + esc(N.saved) + '</p>';
+      : '<div class="pl-unsaved pl-unsaved-end"><p><strong>' + esc(N.unsaved_head) + '</strong> ' + esc(N.unsaved_end) + '</p><p class="pl-acts"><button type="button" class="btn" data-pl-save>' + esc(N.save_btn) + '</button></p><p class="meta">' + esc(savedNote()) + '</p></div>';
     out.innerHTML = html;
   }
+  // Where a saved plan is kept: a signed-in member's list goes to the account too (DDRList sync, day 13), so "this device
+  // only" would not be true for them (24 Nov review)
+  const savedNote = () => (mode === 'member' && L.flag && L.flag('acct') === '1' && N.saved_account ? N.saved_account : N.saved);
   // My year opens on the plan's own day (its calendar, row 24b) or, for a month plan, on that month
   const yearHref = plan => '/my-year/#' + (plan.by_month ? plan.date.slice(0, 7) : plan.date);
   function saveFile(text, name) {   // a download made in the browser: nothing is sent anywhere
