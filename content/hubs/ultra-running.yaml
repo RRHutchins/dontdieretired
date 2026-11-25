@@ -2171,6 +2171,229 @@ events:
   - {label: 'Xtrail Kenting by UTMB: registrations', url: 'https://xtrail.utmb.world/registrations', checked: '2026-11-24'}
   entry_dates:
   - {date: '2026-12-31', what: 'Registration closes (first come, first served)', url: 'https://xtrail.utmb.world/registrations', checked: '2026-11-24'}
+- id: cascade-crest-100
+  name: Cascade Crest 100
+  series: independent
+  place: Easton, Washington (Cascade mountains)
+  country: USA
+  continent: north-america
+  km: [161]
+  distances: 100 miles
+  terrain: [mountain, trail]
+  format: single
+  month: [7]
+  entry: [ballot, qualifier]
+  entry_note: 'Places go by lottery, with an entry cap of 180 runners. You need a 100-mile trail finish, or a trail 50-miler run within 16 hours with at least 6,500 ft of climbing between January 1 and June 13 of the race year, plus 8 hours of trail work.'
+  note: A 100-mile race through Washington's Cascade mountains from the Easton Fire House; the organizers say they will very likely need to use an alternate out-and-back course in 2027.
+  link: {label: 'Cascade Crest 100: home page', url: 'https://www.cascadecrest100.com/', checked: '2026-11-25'}
+  more:
+  - {label: 'Cascade Crest 100: registration', url: 'https://www.cascadecrest100.com/registration', checked: '2026-11-25'}
+  entry_dates:
+  - {date: '2027-06-13', what: 'Deadline for race qualifications (qualifying run and trail work) for the 2027 race', url: 'https://www.cascadecrest100.com/registration', checked: '2026-11-25'}
+- id: fat-dog-120
+  name: Fat Dog 120
+  series: independent
+  place: Keremeos to E.C. Manning Provincial Park, British Columbia
+  country: Canada
+  continent: north-america
+  km: [200, 100, 64]
+  distances: 120 miles (the organizer gives the course as about 124 miles), 100 km and 40 miles
+  climb: about 26,000 ft (just under 8,000 m)
+  terrain: [mountain, trail]
+  format: single
+  month: [8]
+  entry: [register, qualifier]
+  entry_note: You register online. For the 120 mile you need at least 100 km of race experience in 2025 or 2026 (without it you go on the waitlist); the 40 mile has no minimum requirement. You must be 18 or over on race day and show volunteer hours or pay into the trail fund.
+  note: A point-to-point mountain race from Keremeos to E.C. Manning Provincial Park, which the organizers aim to make "a hospitable, inclusive, memorable and fun event that is also extremely challenging."
+  link: {label: 'Fat Dog 120: home page', url: 'https://www.fatdog120.ca/', checked: '2026-11-25'}
+  more:
+  - {label: 'Fat Dog 120: registration requirements', url: 'https://www.fatdog120.ca/registration/requirements.html', checked: '2026-11-25'}
+  entry_dates:
+  - {date: '2027-01-05', what: 'Registration opens for the 2027 race (12:00 am Pacific)', url: 'https://www.fatdog120.ca/', checked: '2026-11-25'}
+- id: bear-100
+  name: The Bear 100
+  series: independent
+  place: Logan, Utah to Fish Haven, Idaho (Bear Lake)
+  country: USA
+  continent: north-america
+  km: [161]
+  distances: 100 miles, point to point
+  terrain: [mountain, trail]
+  format: single
+  month: [9]
+  entry: [ballot, qualifier]
+  entry_note: Places go by lottery, with the field capped at 315 runners. You need a qualifying finish (an official 50-miler in under 16 hours, or a 100K, 100-mile or 200-mile race within its cutoff) in the window the lottery page sets, plus eight hours of trail work or volunteer work.
+  note: A point-to-point 100 miles from Logan, Utah, to Bear Lake that the organizers say "joins the ranks of some of the toughest, as well as most scenic, trail races in the world."
+  time_limit: [{km: 161, hours: 36}]
+  link: {label: 'The Bear 100: information', url: 'https://bear100.com/information/', checked: '2026-11-25'}
+  more:
+  - {label: 'The Bear 100: 2027 lottery details', url: 'https://bear100.com/lottery/', checked: '2026-11-25'}
+  entry_dates:
+  - {date: '2026-12-10', what: 'Lottery registration for the 2027 race closes', url: 'https://bear100.com/lottery/', checked: '2026-11-25'}
+- id: bandera-100k
+  name: Bandera Endurance Trail Race
+  series: independent
+  place: Hill Country State Natural Area, Bandera, Texas
+  country: USA
+  continent: north-america
+  km: [100, 50]
+  distances: 100K and 50K, plus a 25K and a youth mile
+  climb: about 6,600 ft (2,000 m) for the 100K
+  terrain: [trail]
+  format: single
+  month: [1]
+  entry: [open]
+  entry_note: You register online until the race is full. The page says 100K finishers under 18 hours qualify for the Western States lottery.
+  note: A Hill Country trail race on a course the organizers describe as one "where everything cuts, stings, or bites."
+  time_limit: [{km: 100, hours: 25}]
+  link: {label: 'Tejas Trails: Bandera Endurance Trail Race', url: 'https://www.tejastrails.com/bandera', checked: '2026-11-25'}
+- id: cradle-mountain-run
+  name: Cradle Mountain Run
+  series: independent
+  place: Cradle Mountain to Lake St Clair (Overland Track), Tasmania
+  country: Australia
+  continent: oceania
+  km: [78]
+  distances: 78 km
+  terrain: [mountain, trail]
+  format: single
+  month: [2]
+  entry: [application, qualifier]
+  entry_note: There are 60 places and a waitlist. You must be 18 or over on race day and have done the Cradle Run before or finished a trail ultra of over 80 km within its cutoff in 2024, 2025 or 2026; self-run ultras and FKTs do not count, and the organizers may refuse applications.
+  note: A one-day 78 km run along the Overland Track through Tasmania's wilderness, which the organizers call "a Run not a Race."
+  link: {label: 'Cradle Mountain Run: about the run', url: 'https://www.cradlemtnrun.asn.au/?page_id=6', checked: '2026-11-25'}
+  more:
+  - {label: 'Cradle Mountain Run: home page', url: 'https://www.cradlemtnrun.asn.au/', checked: '2026-11-25'}
+  - {label: 'Cradle Mountain Run: entries and waitlist', url: 'https://www.cradlemtnrun.asn.au/?page_id=1050', checked: '2026-11-25'}
+- id: champa-ultra-race
+  name: Champa Ultra Race
+  series: independent
+  place: San Javier, Córdoba (Cerro Champaquí)
+  country: Argentina
+  continent: south-america
+  km: [58, 42]
+  distances: 60K Ultra (58.3 km measured) and 42K, plus 30K, 24K, 16K and 10K races
+  climb: 3,480 m (60K)
+  terrain: [mountain, trail]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: You register online through the race site. The organizer says the 60K needs experience of long mountain races and crossings, and runners should already have trained and raced at marathon distance.
+  note: The 60K is run in semi-self-sufficiency with self-evacuation, and climbs to the summit of Cerro Champaquí along the way.
+  time_limit: [{km: 58, hours: 15}]
+  link: {label: 'Champa Ultra Race: 60K Ultra (Spanish)', url: 'https://champaultrarace.com.ar/60k-ultratrail/', checked: '2026-11-25'}
+  more:
+  - {label: 'Champa Ultra Race: home page (Spanish)', url: 'https://champaultrarace.com.ar/', checked: '2026-11-25'}
+- id: nuts-karhunkierros
+  name: NUTS Karhunkierros
+  series: independent
+  place: Ruka, Kuusamo (Oulanka National Park)
+  country: Finland
+  continent: europe
+  km: [166]
+  distances: 166 km from Ruka to the Arctic Circle and back, plus shorter races down to a 13 km sprint
+  terrain: [trail]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: You register online when entries open (for 2027 they opened on 13 October 2026). The pages we opened list no qualifying race.
+  note: The race follows the Karhunkierros, which the organizers call "Finland's most beloved hiking trail," from the hills of Ruka through Oulanka's forests and river valleys.
+  link: {label: 'NUTS: Karhunkierros', url: 'https://nuts.fi/en/events/nuts-karhunkierros/', checked: '2026-11-25'}
+  more:
+  - {label: 'NUTS: Karhunkierros (Finnish)', url: 'https://nuts.fi/fi/tapahtumat/nuts-karhunkierros/', checked: '2026-11-25'}
+- id: julian-alps-trail-run-by-utmb
+  name: Julian Alps Trail Run by UTMB
+  series: utmb
+  place: Kranjska Gora (starts in Radovljica, Bled and Žirovnica)
+  country: Slovenia
+  continent: europe
+  km: [122, 80, 50]
+  distances: 120K (122 km), 80K and 50K, plus 25K, 15K and 10K races
+  climb: 5,855 m (120K)
+  terrain: [mountain, trail]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: You need a UTMB account to register. Places are sold in registration periods; the registration page lists an early-bird week from 8 December 2026 but also says 2027 registration opens in mid December, so check it.
+  note: The 120K starts at 9 pm in Radovljica and climbs to Stol, the highest peak on the Karawanks ridge, before finishing in Kranjska Gora.
+  time_limit: [{km: 122, hours: 32}]
+  link: {label: 'Julian Alps Trail Run by UTMB: the 120K', url: 'https://julianalps.utmb.world/races/120K', checked: '2026-11-25'}
+  more:
+  - {label: 'Julian Alps Trail Run by UTMB: list of races', url: 'https://julianalps.utmb.world/races', checked: '2026-11-25'}
+  - {label: 'Julian Alps Trail Run by UTMB: registration', url: 'https://julianalps.utmb.world/registration', checked: '2026-11-25'}
+  entry_dates:
+  - {date: '2026-12-08', what: 'Early-bird registration for 2027 opens (runs to 15 December)', url: 'https://julianalps.utmb.world/registration', checked: '2026-11-25'}
+  - {date: '2026-12-16', what: 'First registration period for 2027 opens (runs to 11 February 2027)', url: 'https://julianalps.utmb.world/registration', checked: '2026-11-25'}
+- id: wildstrubel-by-utmb
+  name: Wildstrubel by UTMB
+  series: utmb
+  place: Crans-Montana (with Kandersteg, Adelboden, Lenk and Leukerbad)
+  country: Switzerland
+  continent: europe
+  km: [113, 70, 55, 42]
+  distances: Wild 110 (113 km), Wild 70, Wild 55 and the Wild Glacier Marathon, plus a 25 and a 10
+  climb: 6,600 m (Wild 110)
+  terrain: [mountain, trail]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: You register directly on the race website, with no pre-registration, lottery or waiting list. Runners with a valid UTMB Index had a priority window before general registration opened to everyone (both in November 2026).
+  note: The Wild 110 loops around the Wildstrubel massif and the Plaine Morte Glacier over the Gemmi and Rawyl passes, reaching about 2,800 m at the Wildstrubel hut.
+  time_limit: [{km: 113, hours: 30}]
+  link: {label: 'Wildstrubel by UTMB: Wild 110', url: 'https://wildstrubel.utmb.world/races/wild-110', checked: '2026-11-25'}
+  more:
+  - {label: 'Wildstrubel by UTMB: the races', url: 'https://wildstrubel.utmb.world/races', checked: '2026-11-25'}
+  - {label: 'Wildstrubel by UTMB: registration conditions', url: 'https://wildstrubel.utmb.world/races-runners/other-information/registration-conditions', checked: '2026-11-25'}
+- id: hardmoors-110
+  name: Hardmoors 110
+  series: independent
+  place: Helmsley to Filey, North York Moors (Cleveland Way)
+  country: England, UK
+  continent: europe
+  km: [177]
+  distances: 110 miles (the cut-off table gives 111 miles to the Filey finish)
+  climb: 5,000 m (16,500 ft)
+  terrain: [trail]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: You enter online (general entries for 2027 opened on 4 October 2026). The page lists 200 solo places (its header also shows a limit of 150), entries close four weeks before the race, and mandatory kit applies.
+  note: The race follows the Cleveland Way National Trail from Helmsley across the North York Moors and down the coast to Filey.
+  time_limit: [{km: 177, hours: 36}]
+  link: {label: 'Hardmoors: Hardmoors 110', url: 'https://www.hardmoors110.org.uk/hardmoors-110/', checked: '2026-11-25'}
+- id: vietnam-mountain-marathon
+  name: Vietnam Mountain Marathon 100km Ultra Trail
+  series: wtm
+  place: Sa Pa
+  country: Vietnam
+  continent: asia
+  km: [101]
+  distances: 100km Ultra Trail (101 km); the event also has 10, 21, 50 and 70 km races and 100 miles
+  climb: 5,500 m (100 km)
+  terrain: [mountain, trail]
+  format: single
+  entry: [qualifier]
+  entry_note: You need one chip-timed ultra of 50 km or more with significant climbing (loop runs and virtual races do not count), with a link to the result (you can send it after registering, up to 30 days before the race), and you must be 18 or over on race day.
+  note: The course runs from Sapa Square to Topas Ecolodge on mountain singletrack, through rice terraces, river crossings and forest; the page lists it as a World Trail Majors race. The 2027 dates were still "to be updated" when we checked.
+  link: {label: 'Vietnam Trail Series: VMM 100km Ultra Trail', url: 'https://vietnamtrailseries.com/mountain-marathon/100km-ultra-trail/', checked: '2026-11-25'}
+- id: oman-desert-marathon
+  name: Oman Desert Marathon
+  series: independent
+  place: Wahiba Sands to the Arabian Sea
+  country: Oman
+  continent: asia
+  km: [165]
+  distances: 165 km in five stages (there is also a 100 km hike over five stages)
+  terrain: [desert]
+  format: stage
+  month: [1]
+  entry: [register]
+  entry_note: Places are limited. You must be 18 or over at the start and bring a medical certificate and an ECG dated within 30 days of the race; runners carry their own equipment, sleeping bag and food throughout.
+  note: A self-sufficient stage race across the dunes of the Wahiba Sands that finishes on the shores of the Arabian Sea, with bottled water at checkpoints about every 10 km.
+  link: {label: 'Oman Desert Marathon: 165km Classic', url: 'https://omandesertmarathon.com/165km-odm-classic/', checked: '2026-11-25'}
+  more:
+  - {label: 'Oman Desert Marathon: home page', url: 'https://omandesertmarathon.com/', checked: '2026-11-25'}
+  - {label: 'Oman Desert Marathon: 165km and 100km race rules', url: 'https://omandesertmarathon.com/165km-100km-race-rules/', checked: '2026-11-25'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
@@ -2764,3 +2987,94 @@ guides:
   - {label: 'Montane Lakeland 50 and 100, Kit requirements', url: 'https://lakeland100.com/kit-requirements/', checked: '2026-11-24'}
   - {label: 'HOKA UTMB Mont-Blanc, Mandatory equipment', url: 'https://montblanc.utmb.world/races-runners/runners/mandatory-equipment', checked: '2026-11-24'}
   - {label: 'iRunFar, Best Running Vests of 2026 (Carly Eisley and Eszter Horanyi, 22 November 2026)', url: 'https://www.irunfar.com/best-running-vests', checked: '2026-11-24'}
+- slug: headtorches
+  title: Choosing a headtorch for an ultra
+  short: What races ask you to carry after dark, what the numbers on the box mean, and the headtorches two independent reviewers pick
+  seo_title: 'Headtorches for ultras: race rules, lumens and reviewers'' picks'
+  description: How to choose a headtorch (headlamp) for an ultramarathon, from what Western States and UTMB Mont-Blanc ask for, what lumens and burn time measure, and the lights iRunFar and Advnture pick for running.
+  standfirst: Many ultras run on into the dark, and some races want two lights. Start from your race's rules, learn what the numbers on the box mean, then choose; here is what two races ask for and what two independent reviews recommend.
+  detail:
+  - h: Start from what your race asks for
+    p:
+    - 'Western States tells its runners that almost half of the trail may be covered at night, and that each runner should carry two LED flashlights. It says to plan to pick up a flashlight in Foresthill whatever time you get there (Michigan Bluff if you are a 28 to 30-hour runner), and strongly recommends an extra flashlight in your drop bags. Its advice if your lights fail is to wait for another runner with a light, and not to try to find your way in the dark.'
+    - 'HOKA UTMB Mont-Blanc''s 2027 regulations, in the penalty table for its OCC, MCC and ETC races, list "no headlamp" among the gaps in mandatory safety equipment that bring immediate disqualification, and "only one headlamp" among the other missing items that bring a 30-minute penalty. So read your own race''s list for how many lights it wants, and whether it sets a minimum brightness or asks for spare batteries.'
+    - Our guide to running through the night in an ultra, linked at the foot of this page, compares more races' light rules and covers the cold, sleepiness and roads after dark.
+  - h: What the numbers on the box mean
+    p:
+    - 'Petzl measures its lamps to a standard called ANSI/PLATO FL1, and its explainer says the lumen figure is taken between 30 and 120 seconds after the lamp is turned on, with new batteries, and indicates the maximum light output when the lamp is first switched on.'
+    - 'The burn time, Petzl says, is measured from 30 seconds after switch-on for as long as the lamp takes to drop to 10% of its maximum output. The beam distance is how far away the light still gives 0.25 lux, and depends on brightness but mainly on the shape of the beam.'
+    - So a high lumen figure tells you about the first minutes, not the whole night. Check the burn time at the setting you will actually run on, and how long your night will be at your pace.
+  - h: How bright, and what else to check
+    table:
+      head: [What to check, iRunFar, Advnture]
+      rows:
+      - [Brightness, '"we recommend having 200 to 300 lumens for trail running"', '"For technical trails and night navigation, 400-plus lumens fits the bill"; for easier, slower trail running "200 lumens is fine"']
+      - [Battery, '"Battery life is one of the most important considerations when choosing a headlamp"', '"Battery weight is the limiting factor in beam life"']
+      - [Beam, 'Long-throw light, or a spotlight, is "the most common type of lighting used on the trail"', 'It is "handy to have more control over whether the headlamp emits a flood or spotlight beam"']
+      - [Fit, '"A tight headlamp can cause headaches and divots in your forehead"', 'Make sure the headband is easy to adjust, even when you are running']
+    after: 'From iRunFar''s "Best Running Headlamps of 2026" and Advnture''s "The best running headlamps", opened on 25 November 2026. iRunFar warns that with the lightest headlamp "you''ll compromise on brightness and battery life," and that too much and too little light can both cause eye strain; Advnture says to look at a lamp''s other lighting modes, not only its maximum.'
+  - h: How the picks on this page were chosen
+    p:
+    - 'The picks come from two independent reviews. iRunFar''s "Best Running Headlamps of 2026" (Alli Miles, Meghan Hicks and Eszter Horanyi) says its testers took the lights out for sunrise runs, 100-mile races and multi-day fastpacking outings. Advnture''s "The best running headlamps: tested on roads and trails" (Claire Maxted, with Cat Ellis) says she tested them on dark trails, unlit roads and country lanes during winter training, and timed how long each ran on a full charge at each brightness setting.'
+    - The labels and quotes are the reviewers' own words; we have not tested any headtorch ourselves. Open each review for its full list, and check any light against your own race's rules.
+  kit_type: head-torches
+  picks:
+  - item: Running headtorch (iRunFar)
+    why: 'From iRunFar''s 2026 guide: its overall pick, its pick for ultrarunning and its budget pick. Whether any suits you depends on your race''s rules, your night and your fit.'
+    options:
+    - tier: top
+      name: Petzl Nao LT
+      label: Best Overall Running Headlamp
+      quote: Weighing just over 3 ounces, it's incredibly lightweight, especially for a headlamp with a rear battery pack.
+      reviewer: iRunFar
+      review: {title: 'Best Running Headlamps of 2026', url: 'https://www.irunfar.com/best-running-headlamp', checked: '2026-11-25'}
+      buy: 'https://www.amazon.co.uk/s?k=Petzl+Nao+LT'
+    - tier: good
+      name: Petzl Nao RL
+      label: Best Headlamp for Ultrarunning
+      quote: a single battery will give you an entire night of decently lit trail running.
+      reviewer: iRunFar
+      review: {title: 'Best Running Headlamps of 2026', url: 'https://www.irunfar.com/best-running-headlamp', checked: '2026-11-25'}
+      buy: 'https://www.amazon.co.uk/s?k=Petzl+Nao+RL'
+    - tier: value
+      name: Nitecore NU25 MCT UL
+      label: Best Budget Running Headlamp
+      quote: there's no reason not to keep it permanently stowed in your hydration vest.
+      reviewer: iRunFar
+      review: {title: 'Best Running Headlamps of 2026', url: 'https://www.irunfar.com/best-running-headlamp', checked: '2026-11-25'}
+      buy: 'https://www.amazon.co.uk/s?k=Nitecore+NU25+UL'
+  - item: Running headtorch (Advnture)
+    why: 'From Advnture''s guide to running headlamps: its overall pick and its pick for a tighter budget.'
+    options:
+    - tier: top
+      name: Silva Trail Runner Free H
+      label: The best running headlamp overall
+      quote: We rate the Silva Trail Runner Free H as the best running headlamp around in 2026.
+      reviewer: Advnture
+      review: {title: 'The best running headlamps: tested on roads and trails', url: 'https://www.advnture.com/buying-guides/best-running-headlamps', checked: '2026-11-25'}
+      buy: 'https://www.amazon.co.uk/s?k=Silva+Trail+Runner+Free+H'
+    - tier: value
+      name: Proviz LED 360 Antares
+      label: The best cheap running headlamp
+      quote: If you need to be careful with your cash, consider the Proviz LED 360 Antares headlamp.
+      reviewer: Advnture
+      review: {title: 'The best running headlamps: tested on roads and trails', url: 'https://www.advnture.com/buying-guides/best-running-headlamps', checked: '2026-11-25'}
+      buy: 'https://www.amazon.co.uk/s?k=Proviz+LED+360+Antares+head+torch'
+  faq:
+  - q: How many lumens do I need for an ultra?
+    a: iRunFar recommends 200 to 300 lumens for trail running; Advnture says 200 lumens is fine for easier, slower trail running and 400-plus for technical trails and night navigation. Your race may set its own minimum, so check its kit list, and check the burn time at the setting you will use.
+  - q: Do I need two headtorches?
+    a: Some races say so. Western States says each runner should carry two LED flashlights, and UTMB Mont-Blanc's penalty table for its OCC, MCC and ETC races penalizes carrying only one headlamp. Check your own race's rules.
+  - q: Is a higher lumen figure always better?
+    a: No. The lumen figure under the ANSI/PLATO FL1 standard is the output in the first minutes with new batteries, and burn time is measured until the light falls to 10% of that. iRunFar warns that the lightest lamps compromise on brightness and battery life, and Advnture says to look at a lamp's other modes, not only its maximum.
+  kit:
+  - {name: Rechargeable running headtorch, why: 'check the burn time at the setting you will run on, not only the maximum lumens, and whether your race sets a minimum', url: 'https://www.amazon.co.uk/s?k=running+head+torch+rechargeable'}
+  - {name: Second, lighter headtorch, why: 'some races want two lights; check the spare meets your race''s rules too', url: 'https://www.amazon.co.uk/s?k=lightweight+head+torch+running'}
+  - {name: Spare batteries or a power bank, why: 'check they fit your lamp (some take AAA as a backup) and that you can swap or charge them in the dark with cold hands', url: 'https://www.amazon.co.uk/s?k=head+torch+spare+battery'}
+  - {name: Running waist light, why: 'some runners add one for a lower beam; check how it fits with your vest and race belt', url: 'https://www.amazon.co.uk/s?k=running+waist+light'}
+  sources:
+  - {label: 'Western States Endurance Run, 2027 participant guide', url: 'https://www.wser.org/participant-guide/', checked: '2026-11-25'}
+  - {label: 'HOKA UTMB Mont-Blanc, 2027 regulations', url: 'https://montblanc.utmb.world/races-runners/other-information/regulation', checked: '2026-11-25'}
+  - {label: 'Petzl, How is lighting performance measured with the ANSI/PLATO FL1 protocol?', url: 'https://www.petzl.com/US/en/Sport/How-is-lighting-performance-measured-with-the-ANSI-PLATO-FL1-protocol-', checked: '2026-11-25'}
+  - {label: 'iRunFar, Best Running Headlamps of 2026 (Alli Miles, Meghan Hicks and Eszter Horanyi)', url: 'https://www.irunfar.com/best-running-headlamp', checked: '2026-11-25'}
+  - {label: 'Advnture, The best running headlamps: tested on roads and trails (Claire Maxted, with Cat Ellis)', url: 'https://www.advnture.com/buying-guides/best-running-headlamps', checked: '2026-11-25'}

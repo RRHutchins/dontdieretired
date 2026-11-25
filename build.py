@@ -1252,6 +1252,11 @@ def build(make_social=True):
                 sec["p_html"] = [lk.plain(x) for x in sec.get("p") or []]
             for k in g.get("kit") or []:
                 assert k.get("name") and k.get("why") and str(k.get("url", "")).startswith("https://www.amazon.co.uk/"), f"hub guide {g['slug']}: kit needs name, why, amazon.co.uk url"
+            # `kit_type: <id>` links the guide to our consolidated reviews page /kit/<id>/ (RUNBOOK §6w, §6u step 5)
+            if g.get("kit_type"):
+                _kt = [t for t in KIT if t["id"] == g["kit_type"]]
+                assert _kt, f"hub guide {g['slug']}: kit_type {g['kit_type']!r} is not a published /kit/ page"
+                g["kit_type_obj"] = _kt[0]
             # Reviewers' picks on hub guides (RUNBOOK §6u priority step 5, 24 Nov 2026): `picks:` is a list of blocks in the
             # activity shape (§6t row 17: item, why, options of tier top|good|value, name, the reviewer's own label, a quote of
             # at most 30 words copied from the review opened on `checked`, reviewer, review, Amazon UK search `buy`), or keys

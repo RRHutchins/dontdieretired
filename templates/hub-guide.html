@@ -24,6 +24,7 @@
   {# kit near the top, after the opening section (Robin, 20 Nov 2026) #}
   {% if loop.first and g.kit %}{{ affiliate_box(g.kit, h.kit_text or "Kit to compare against your race's list", h.category) }}{% endif %}
   {% if loop.first %}{% for pk in g.picks %}{{ picks_box(pk, loop.index) }}{% endfor %}{% endif %}
+  {% if loop.first and g.kit_type_obj %}<p class="hub-kitlink">Want more than one reviewer's view? <a href="/kit/{{ g.kit_type_obj.id }}/">{{ g.kit_type_obj.name }}: what {{ g.kit_type_obj.reviews | length }} independent reviews recommend</a>, scored and compared.</p>{% endif %}
   {% endfor %}
   {% if g.faq %}
   <section class="fl-faq"><h2>Questions people ask</h2>
