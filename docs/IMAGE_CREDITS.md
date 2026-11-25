@@ -19,6 +19,7 @@ Each photo is resized for the web and not otherwise changed.
 | chieko-asakawa-ai-suitcase | File:Miraikan.jpg | Jason Ruck | Public domain | https://commons.wikimedia.org/wiki/File:Miraikan.jpg | 2026-10-24 |
 | cincinnati-tinker-team-repairs | File:Repair Cafe Katze Cat.jpg | WeltveraenderereV | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Repair_Cafe_Katze_Cat.jpg | 2026-10-24 |
 | clipper-race-atlantic-oban | File:Oban harbour at dawn - geograph.org.uk - 5229949.jpg | Andy Campbell | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Oban_harbour_at_dawn_-_geograph.org.uk_-_5229949.jpg | 2026-10-24 |
+| clyde-tombaugh-pluto-blink-comparator | File:Zeiss Blink comparator at Lowell Observatory used in the discovery of Pluto by Clyde Tombaugh in 1930.jpg | nivium | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Zeiss_Blink_comparator_at_Lowell_Observatory_used_in_the_discovery_of_Pluto_by_Clyde_Tombaugh_in_1930.jpg | 2026-11-25 |
 | craig-johnston-record-ride-across-australia | File:Eyre Highway, Nullarbor, SA, 2017 (02).jpg | Bahnfrend | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Eyre_Highway,_Nullarbor,_SA,_2017_(02).jpg | 2026-10-07 |
 | dave-bell-peru-to-kenya-row | File:Seaside in Kilifi, Kenya.jpg | Arankaka | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Seaside_in_Kilifi,_Kenya.jpg | 2026-10-27 |
 | dave-judy-fox-camino-routes | File:Camiño de Inverno.jpg | Athena Atterdag | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Cami%C3%B1o_de_Inverno.jpg | 2026-11-21 |
