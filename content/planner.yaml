@@ -57,6 +57,10 @@ kinds:
 # A phrase missing from this list prints a LIST WARNING and the activity is treated as any time until it is added here.
 seasons:
   "All year": null
+  "Late June to early September": [6, 7, 8, 9]
+  "October to mid-May": [10, 11, 12, 1, 2, 3, 4, 5]
+  "Mid-May to September": [5, 6, 7, 8, 9]
+  "May to mid-October": [5, 6, 7, 8, 9, 10]
   "June to early October": [6, 7, 8, 9, 10]
   "Late February to late April": [2, 3, 4]
   "Mid-May to late October": [5, 6, 7, 8, 9, 10]
