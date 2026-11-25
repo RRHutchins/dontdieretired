@@ -26,6 +26,22 @@
   {% if loop.first %}{% for pk in g.picks %}{{ picks_box(pk, loop.index) }}{% endfor %}{% endif %}
   {% if loop.first and g.kit_type_obj %}<p class="hub-kitlink">Want more than one reviewer's view? <a href="/kit/{{ g.kit_type_obj.id }}/">{{ g.kit_type_obj.name }}: what {{ g.kit_type_obj.reviews | length }} independent reviews recommend</a>, scored and compared.</p>{% endif %}
   {% endfor %}
+  {% if g.month_lists %}
+  <nav class="hub-browse" aria-label="Months"><p><strong>Jump to a month:</strong> {% for mn, es in g.month_lists %}<a href="#{{ mn | lower }}">{{ mn }}</a>{{ " · " if not loop.last }}{% endfor %}</p></nav>
+  {% for mn, es in g.month_lists %}
+  <section class="fl-detail hub-month" id="{{ mn | lower }}">
+    <h2>{{ mn }}</h2>
+    <ul>{% for e in es %}<li><a href="/{{ h.slug }}/#{{ e.id }}"><strong>{{ e.name }}</strong></a>, {{ e.country }} <span class="meta">(usually {{ e.month_label }}; <a href="{{ e.link.url }}" target="_blank" rel="noopener" data-fl-out>official page</a>)</span></li>{% endfor %}</ul>
+  </section>
+  {% endfor %}
+  {% if g.one_offs %}
+  <section class="fl-detail hub-month" id="other-times">
+    <h2>Seasons given in words</h2>
+    <p>These official pages give a season in words rather than months, so they are not under a month above.</p>
+    <ul>{% for e in g.one_offs %}<li><a href="/{{ h.slug }}/#{{ e.id }}"><strong>{{ e.name }}</strong></a>, {{ e.country }} <span class="meta">({{ e.when }}; <a href="{{ e.link.url }}" target="_blank" rel="noopener" data-fl-out>official page</a>)</span></li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+  {% endif %}
   {% if g.faq %}
   <section class="fl-faq"><h2>Questions people ask</h2>
     {% for f in g.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
@@ -33,6 +49,7 @@
   {% endif %}
   <p class="hub-back"><a class="btn" href="/{{ h.slug }}/#hub-f-h">{{ h.back_text or ("Find a race in the " ~ (h.label | lower) ~ " finder") }}</a></p>
   {% if others or h.acts %}<aside class="hub-more"><h2 class="h4">More on {{ h.label | lower }}</h2><ul>{% for o in others %}<li><a href="{{ o.url }}">{{ o.title }}</a></li>{% endfor %}{% for c in h.acts %}<li><a href="/list/{{ c.id }}/">{{ c.title }}: how to start</a></li>{% endfor %}</ul></aside>{% endif %}
-  <p class="disclosure fl-sources">Where this comes from: {% for x in g.sources %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "" }}{% endfor %}. Opened {{ g.sources_checked }}. Written with AI from these pages and checked against them; {{ h.review_text or "not reviewed by a coach or doctor." }}</p>
+  {% if g.by_month %}<p class="disclosure fl-sources">Where this comes from: the official page linked beside each entry, which gives its usual months or season{% if g.sources %}, and {% for x in g.sources %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "" }}{% endfor %}{% endif %}. Latest opened {{ g.sources_checked }}. Written with AI from these pages and checked against them; {{ h.review_text or "not reviewed by a coach or doctor." }}</p>{% else %}
+  <p class="disclosure fl-sources">Where this comes from: {% for x in g.sources %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.label }}</a>{{ "; " if not loop.last else "" }}{% endfor %}. Opened {{ g.sources_checked }}. Written with AI from these pages and checked against them; {{ h.review_text or "not reviewed by a coach or doctor." }}</p>{% endif %}
 </article>
 {% endblock %}

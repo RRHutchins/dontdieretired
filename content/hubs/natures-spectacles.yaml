@@ -32,7 +32,7 @@ bands_def: []
 facets:
   continent: {europe: Europe, north-america: North America, asia: Asia, africa: Africa, oceania: Oceania, south-america: South America, antarctica: Antarctica}
   type: {sky: In the sky, living: Wildlife and living light, earth: Water and rock, season: Seasons and flowers}
-  see: {own: On your own (no tour needed), guided: Guided tour, boat: Boat or kayak trip, booked: Booked, lottery or permit, vehicle: From a vehicle}
+  see: {own: On your own (no tour needed), guided: Guided tour, boat: Boat or kayak trip, booked: 'Booked, lottery or permit', vehicle: From a vehicle}
 events:
 # ---------- In the sky ----------
 - id: total-solar-eclipse-2027-spain
@@ -1035,6 +1035,145 @@ events:
   see_note: Head into the national park by 4x4, and walk with local guides who know the park; Visit Brasil describes a three-day hike from Barreirinhas to Santo Amaro. Bring cash, because ATMs do not work in the region, plus sun protection and water.
   note: Visit Brasil says thousands of freshwater lagoons lie among the white dunes of the 155,000-hectare park. Only two lagoons, Esperança and Peixe, last through the dry season.
   link: {label: 'Visit Brasil: a three-day trip through the Lençóis Maranhenses', url: 'https://visitbrasil.com/en/embark-on-a-3-day-trip-through-the-lencois-maranhenses/', checked: '2026-11-24'}
+# ---------- Added 25 Nov 2026 ----------
+- id: svalbard-polar-night-aurora
+  name: Northern lights in the Svalbard polar night
+  type: sky
+  place: Longyearbyen, Svalbard
+  country: Norway
+  continent: europe
+  month: [9, 10, 11, 12, 1, 2, 3]
+  when: Late September to mid March, as Visit Svalbard gives it. The polar night runs from November 14 to January 29.
+  see: [own, guided]
+  see_note: Visit Svalbard says you can walk on your own inside Longyearbyen, as long as you do not pass the polar bear warning signs on the roads out of town. Outside town it advises always going with a professional local guide who carries polar bear protection. It suggests 6 pm to midnight and 4 am to 8 am, away from a full moon, and staying several days.
+  note: Visit Svalbard says that in December and January it is possible to see the northern lights around the clock, and calls Svalbard "the only place on earth" for what it terms "daytime Northern Lights". During the polar night the sun stays more than 6 degrees below the horizon.
+  link: {label: 'Visit Svalbard: 10 things you should know about the Northern Lights', url: 'https://en.visitsvalbard.com/inspiration/various/10-things-about-the-northern-lights', checked: '2026-11-25'}
+  more:
+  - {label: 'Visit Svalbard: From Polar Night to Midnight Sun', url: 'https://en.visitsvalbard.com/inspiration/various/the-svalbard-light', checked: '2026-11-25'}
+  - {label: 'Visit Svalbard: FAQ', url: 'https://en.visitsvalbard.com/visitor-information/faq', checked: '2026-11-25'}
+- id: churchill-polar-bears
+  name: The polar bears of Churchill
+  type: living
+  place: Churchill, on Hudson Bay
+  country: Canada
+  continent: north-america
+  month: [10, 11]
+  when: Mid October to mid November, as Travel Manitoba gives it. Smaller numbers can be seen July to September.
+  see: [guided, vehicle]
+  see_note: Travel Manitoba lists tundra vehicle tours, guided walking safaris, helicopter rides and tundra lodges. It advises booking at least a year ahead for October and November. No roads lead to Churchill, so you arrive by train or plane.
+  note: Travel Manitoba says the bears gather on the Hudson Bay shore waiting for the water to freeze so they can get on the ice to hunt seals. Manitoba limits the number of commercial tour operators and vehicles in the Churchill Wildlife Management Area.
+  link: {label: 'Travel Manitoba: Polar Bears in Churchill, Manitoba', url: 'https://www.travelmanitoba.com/things-to-do/outdoor/wildlife/polar-bears/', checked: '2026-11-25'}
+- id: iceland-puffins
+  name: Puffins of Iceland
+  type: living
+  place: Westman Islands, Látrabjarg, Borgarfjörður Eystri and other coasts
+  country: Iceland
+  continent: europe
+  month: [5, 6, 7, 8]
+  when: May to mid August, as Visit Iceland gives it. The birds usually arrive in late April or early May and most leave by mid to late August.
+  see: [own, boat]
+  see_note: Visit Iceland says Dyrhólaey and Hafnarhólmi in Borgarfjörður Eystri can be reached without a boat, and Hafnarhólmi has boardwalks and viewing platforms. Boat tours run from Reykjavík harbor, Stykkishólmur and Djúpivogur. Stay at least 3.3 feet (1 meter) from cliff edges near a colony, move slowly and quietly, and never touch or feed the birds. Burrows are protected by law in the breeding season.
+  note: Visit Iceland says about 60% of the world's Atlantic puffins breed in Iceland, and that the Westman Islands hold the country's largest colony. It notes that Iceland's national Red List rates the puffin Critically Endangered.
+  link: {label: 'Visit Iceland: Meet the puffins in Iceland', url: 'https://www.visiticeland.com/article/meet-the-peculiar-puffins-in-iceland/', checked: '2026-11-25'}
+- id: tasmania-aurora-australis
+  name: The southern lights over Tasmania
+  type: sky
+  place: Southern Tasmania, including Bruny Island, South Arm Peninsula and kunanyi / Mount Wellington
+  country: Australia
+  continent: oceania
+  when: Winter is the prime time, as Discover Tasmania gives it, though displays can happen in any month.
+  see: [own]
+  see_note: Discover Tasmania suggests open ground with a clear view to the south, away from towns, on dark and clear nights. It points to the Bureau of Meteorology's Space Weather Services for alerts and quotes an aurora author who says forecasts are only possible about three days ahead. Drive carefully at night and watch for wildlife.
+  note: Discover Tasmania says the aurora australis is sometimes seen right across the island where there are open views to the south. It names spots such as Cockle Creek, Carlton Beach and Teralina / Eaglehawk Neck.
+  link: {label: 'Discover Tasmania (Tourism Tasmania): How to see the Southern Lights', url: 'https://www.discovertasmania.com.au/experiences/stories/southern-lights/', checked: '2026-11-25'}
+- id: torres-del-paine
+  name: The towers of Torres del Paine
+  type: earth
+  place: Torres del Paine National Park, Magallanes
+  country: Chile
+  continent: south-america
+  see: [booked, guided]
+  see_note: Chile Travel says advance park tickets on pasesparques.cl and confirmed campsite or refuge bookings are mandatory. Hike only in daylight on marked trails; fires, smoking, pets and drones are banned. In winter 2025 (from 1 May), CONAF required a specialized guide on the open mountain trails, such as the W Circuit and Base Torres; check its page for the current winter.
+  note: Chile Travel describes granite towers and the jagged Cuernos del Paine rising above terrain carved by ancient glaciers flowing from the Southern Patagonian Ice Field. The park is a UNESCO Biosphere Reserve with guanacos, Andean condors and pumas.
+  link: {label: 'Chile Travel: Torres del Paine National Park', url: 'https://chile.travel/en/attractions/torres-del-paine-national-park/', checked: '2026-11-25'}
+  more:
+  - {label: 'Chile Travel: Torres del Paine', url: 'https://chile.travel/en/destinations/torres-del-paine/', checked: '2026-11-25'}
+  - {label: 'CONAF: Guides required in the winter period in Torres del Paine (in Spanish)', url: 'https://www.conaf.cl/conaf-exige-guias-a-turistas-durante-periodo-invernal-en-el-parque-nacional-torres-del-paine/', checked: '2026-11-25'}
+- id: wadi-rum-desert-sky
+  name: Wadi Rum desert and night sky
+  type: sky
+  place: Wadi Rum
+  country: Jordan
+  continent: asia
+  see: [guided, vehicle]
+  see_note: Visit Jordan says to book 4x4 tours through your camp or the visitor center. It lists guided stargazing with telescopes and Bedouin-style camping under the night sky.
+  note: Visit Jordan describes Wadi Rum, a UNESCO World Heritage Site nicknamed "The Valley of the Moon", as sandstone and granite mountains with "infinite skies". It says the landscape has stood in for Mars in several Hollywood films.
+  link: {label: 'Visit Jordan (Jordan Tourism Board): Wadi Rum', url: 'https://international.visitjordan.com/wheretogo/wadi-rum/', checked: '2026-11-25'}
+- id: pamukkale-travertines
+  name: The white terraces of Pamukkale
+  type: earth
+  place: Pamukkale and Hierapolis, Denizli
+  country: Türkiye
+  continent: asia
+  see: [own]
+  see_note: GoTürkiye says visitors can walk along the travertines and dip their toes in the warm pools. Next to them is the ancient pool "where Cleopatra is said to have bathed", with marble columns under the water.
+  note: GoTürkiye describes calcite travertines formed millions of years ago and fed by calcium-rich thermal water. The name means "Cotton Castle", and the site is on the UNESCO World Heritage list together with the ancient city of Hierapolis.
+  link: {label: 'GoTürkiye: Healing Waters of Anatolia', url: 'https://goturkiye.com/culturaljourneys/healing-waters-of-anatolia', checked: '2026-11-25'}
+  more:
+  - {label: 'GoTürkiye: Hierapolis', url: 'https://goturkiye.com/hierapolis', checked: '2026-11-25'}
+- id: cappadocia-balloons
+  name: Balloons over the fairy chimneys of Cappadocia
+  type: earth
+  place: Göreme and the valleys of Cappadocia, Nevşehir
+  country: Türkiye
+  continent: asia
+  see: [guided]
+  see_note: GoTürkiye describes balloon flights at sunrise that last about an hour and rise to about 3,300 feet (1,000 meters) over the valleys and canyons. Uçhisar Castle gives views over the Göreme Valley from the ground.
+  note: GoTürkiye says the fairy chimneys, cones topped with stone caps, were shaped by wind and water from volcanic tuff laid down by Mount Erciyes and Mount Hasan.
+  link: {label: 'GoTürkiye: Best Cappadocia viewpoints', url: 'https://goturkiye.com/blog/best-cappadocia-viewpoints', checked: '2026-11-25'}
+  more:
+  - {label: 'GoTürkiye: The Depths of the Earth and the Colors of the Sky', url: 'https://goturkiye.com/culturaljourneys/the-depths-of-the-earth-and-the-colors-of-the-sky', checked: '2026-11-25'}
+- id: kerala-monsoon
+  name: The Kerala monsoon
+  type: season
+  place: Kerala, including the Alappuzha backwaters
+  country: India
+  continent: asia
+  month: [6, 7, 8, 9]
+  when: June to September for the southwest monsoon, as Kerala Tourism gives it; a northeast monsoon follows from October to December.
+  see: [own]
+  see_note: Kerala Tourism suggests packing rain gear and waterproof shoes, and says special monsoon travel packages are offered. Monsoon boat races on the Alappuzha backwaters include the Nehru Trophy Boat Race.
+  note: Kerala Tourism calls the southwest monsoon Edavappathy and says the rains make Kerala "a lush, vibrant destination". It says the monsoon also marks the beginning of the traditional healthcare practices in Kerala, such as Ayurveda.
+  link: {label: 'Kerala Tourism: When does monsoon start in Kerala?', url: 'https://www.keralatourism.org/faq/when-does-monsoon-start-in-kerala', checked: '2026-11-25'}
+  more:
+  - {label: 'Kerala Tourism: 5 reasons to visit Kerala during monsoon', url: 'https://www.keralatourism.org/faq/five-factors-that-make-monsoon-the-best-time-to-visit-kerala', checked: '2026-11-25'}
+- id: staffa-fingals-cave
+  name: Staffa and Fingal's Cave
+  type: earth
+  place: Staffa, off the Isle of Mull, Inner Hebrides
+  country: UK
+  continent: europe
+  month: [4, 5, 6, 7, 8]
+  when: Puffins nest on the clifftops between April and early August, as the National Trust for Scotland gives it.
+  see: [boat]
+  see_note: The National Trust for Scotland says tour boats leave from Fionnphort on Mull and land passengers at Clamshell Cave. From there you walk the causeway to Fingal's Cave, and a ranger checks the path is safe.
+  note: The National Trust for Scotland says the hexagonal columns formed millions of years ago from volcanic eruptions and a vast blanket of lava. The island is about half a mile (0.8 km) long and a quarter mile (0.4 km) wide.
+  link: {label: 'National Trust for Scotland: Staffa', url: 'https://www.nts.org.uk/visit/places/staffa', checked: '2026-11-25'}
+  more:
+  - {label: 'National Trust for Scotland: A day in the life of the Staffa ranger', url: 'https://www.nts.org.uk/stories/a-day-in-the-life-of-the-staffa-ranger', checked: '2026-11-25'}
+- id: kuala-selangor-fireflies
+  name: The fireflies of Kuala Selangor
+  type: living
+  place: Kampung Kuantan and Kampung Bukit Belimbing, Kuala Selangor
+  country: Malaysia
+  continent: asia
+  see: [boat, booked]
+  see_note: Tourism Malaysia says you watch from a sampan, a traditional wooden boat, on the river, and that visitors must book in advance. Its river cruising guide lists firefly cruises on the Sungai Selangor and advises insect repellent for evening and night trips.
+  note: Tourism Malaysia says the fireflies live on Berembang trees along the riverbank and calls this one of the few places in the world to watch the "symphony of lights" of firefly colonies.
+  link: {label: 'Tourism Malaysia: Selangor Map and Guide (PDF)', url: 'https://storage.ebrochures.malaysia.travel/storage/Selangor%20Map%20&%20Guide.pdf', checked: '2026-11-25'}
+  more:
+  - {label: 'Tourism Malaysia: Malaysia Travel Guide, Selangor', url: 'https://ebrochures.malaysia.travel/en/malaysia-travel-guide/selangor/', checked: '2026-11-25'}
+  - {label: 'Tourism Malaysia: Adventure with Nature, River Cruising', url: 'https://ebrochures.malaysia.travel/adventure-with-nature/adventure-with-nature-river-cruising', checked: '2026-11-25'}
 guides:
 - slug: 2027-total-solar-eclipse
   title: How to see the 2027 total solar eclipse safely, and where
@@ -1381,3 +1520,21 @@ guides:
   - {label: 'NASA: eclipse viewing safety', url: 'https://science.nasa.gov/eclipses/safety/', checked: '2026-11-22'}
   - {label: 'NASA: A Guide to Smartphone Astrophotography (Sten Odenwald, PDF)', url: 'https://science.nasa.gov/wp-content/uploads/2023/09/Astrophotography_Guide.pdf', checked: '2026-11-22'}
   - {label: 'Forestry and Land Scotland: Galloway International Dark Sky Park', url: 'https://forestryandland.gov.scot/visit/forest-parks/galloway-forest-park/galloway-international-dark-sky-park', checked: '2026-11-22'}
+- slug: what-to-see-when
+  title: "What to see when: nature's spectacles month by month"
+  short: Month by month
+  seo_title: "Nature's spectacles by month: what to see and when"
+  description: Northern lights, meteor showers, migrations, whale seasons, blossom and fall color, listed under the months the official pages give, with the link to each page.
+  standfirst: Pick a month and see which spectacles the official pages say are usually on then, from the aurora season to puffins, whales, blossom and meteor showers.
+  by_month: true
+  detail:
+  - h: How to use this list
+    p:
+    - Each spectacle appears under every month that its official page gives as its usual season, so a long season, such as the northern lights in Svalbard (late September to mid March), shows up in many months. The months come from those pages, and nature does not keep to a timetable, so they are a guide to when to plan, not a promise.
+    - Tap a name to see its full entry in our finder, with how you see it, what stands out and the official page. Check that page before you book, because seasons, opening times and booking rules change.
+    - "Some pages give a season in words rather than months, such as \"winter\" or \"the rainy season\": those are listed at the end."
+  faq:
+  - q: Why is something listed in a month when I have heard it peaks later?
+    a: We list the months the official page gives, and many give the whole season, not only the peak. The entry in the finder says more where the page does.
+  - q: Are one-off events such as eclipses on this list?
+    a: Yes, under their month, with the date in words. The total solar eclipse of 2 August 2027 is under August; our eclipse guide says how to watch it safely.

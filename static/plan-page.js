@@ -288,6 +288,9 @@
     if (!form) return;
     if (mode === 'guest') { form.hidden = true; if (guestBox) guestBox.hidden = false; return; }   // what Plus does, the price, the sample
     form.hidden = false; setWhen(suggestion());
+    // "Plan this race" on a hub race page (RUNBOOK §6u step 6) arrives with ?on=YYYY-MM-DD: the race day from the organizer's page
+    let on = ''; try { on = new URLSearchParams(location.search).get('on') || ''; } catch (e) {}
+    if (/^\d{4}-\d{2}-\d{2}$/.test(on) && P.parse(on) && on >= today) { setWhen({ date: on }); sug.textContent = 'The race day from the race page you came from: ' + dayText(on) + ' ' + on.slice(0, 4) + '. Check it on the organizer\'s page before you book.'; }
   }
   function paintList() {   // the page's own Save for later / In my year line (static/list.js), drawn before the plan was saved
     if (window.DDRListPaint) window.DDRListPaint();

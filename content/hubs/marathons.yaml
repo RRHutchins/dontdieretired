@@ -26,6 +26,8 @@ bands_def: []
 # Pace filter (RUNBOOK §6u step 3, marathons 22 Nov 2026): "slow" here means a stated limit of 7 hours or more (9.9+ min per km), or no limit.
 pace_slow_min_km: 9.9
 pace_slow_label: 7 hours or more, or no limit
+# "Plan this race" on every race page (RUNBOOK §6u step 6): the planner for this activity trains with the engine's marathon event
+plan_activity: run-a-marathon
 event_pages: true
 # Entry calendar (RUNBOOK §6u step 4, marathons 23 Nov 2026): races may carry `entry_dates` (only dates the official page shows with their year)
 entry_calendar:
@@ -118,6 +120,7 @@ events:
   note: The 131st Boston Marathon is on Monday 19 April 2027. The organisers adjust qualifying times run on courses that drop more than 1,500 ft (457 m).
   link: {label: 'B.A.A.: qualify for the Boston Marathon', url: 'https://www.baa.org/races/boston-marathon/qualify/', checked: '2026-11-19'}
 - id: london-marathon
+  plan_activity: run-the-london-marathon
   name: London Marathon
   series: wmm
   place: London
@@ -404,6 +407,7 @@ events:
   entry_dates:
   - {date: '2026-12-14', what: 'Online registration for the 2027 Honolulu Marathon Weekend opens', url: 'https://www.honolulumarathon.org/key-information/faqs', checked: '2026-11-23'}
 - id: marine-corps-marathon-race
+  plan_activity: marine-corps-marathon
   name: Marine Corps Marathon
   series: independent
   place: Arlington, Virginia, and Washington, DC
@@ -1619,6 +1623,216 @@ events:
   - {km: 42.2, hours: 6}
   time_limit_text: 6 hours (our count from the 6.30am start and 12.30pm final cut-off)
   link: {label: 'Kilimanjaro Marathon: race info', url: 'https://www.kilimanjaromarathon.com/registration-race-info/race-info/', checked: '2026-11-24'}
+# ---------- Added 25 Nov 2026 ----------
+- id: victoria-falls-marathon
+  name: Econet Victoria Falls Marathon
+  series: independent
+  place: Victoria Falls, Zimbabwe, from Baobab Primary School
+  country: Zimbabwe
+  continent: africa
+  km: [42.2]
+  distances: Marathon, also half marathon, team relay, an 18K specially-abled race and a 7.5K fun run
+  terrain: [road]
+  format: single
+  month: [7]
+  entry: [register, tour]
+  entry_note: Entries for 2027 are not open yet; the site says they open in March 2027. Entries close once race capacity is reached, and the FAQ lists a capacity of 800 for the full marathon. Travel packages from Wild Frontiers guarantee a race entry, the site says. Marathon runners must be 20 on race day.
+  note: The 2027 race is on Sunday 4 July 2027. The marathon has a provisional start time of 06h15, and all distances start and finish at Baobab Primary School. The route goes out to a turn-around point on the Zambian side of the bridge, but runners do not enter Zambia. The FAQ asks runners to stay aware of "nature and the animals."
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours, as the FAQ gives it (the race information page gives a 06h15 start and a 12h30 final cut-off for all distances)
+  link: {label: 'Victoria Falls Marathon: home', url: 'https://www.vicfallsmarathon.com/', checked: '2026-11-25'}
+  more:
+  - {label: 'Victoria Falls Marathon: race information', url: 'https://www.vicfallsmarathon.com/race-information/', checked: '2026-11-25'}
+  - {label: 'Victoria Falls Marathon: FAQ', url: 'https://www.vicfallsmarathon.com/race-information/faqs/', checked: '2026-11-25'}
+  entry_dates:
+  - {month: '2027-03', what: 'Race entries open', url: 'https://www.vicfallsmarathon.com/', checked: '2026-11-25'}
+- id: kigali-peace-marathon
+  name: Kigali International Peace Marathon
+  series: independent
+  place: Kigali, Rwanda, from Kigali-Remera in front of Amahoro Stadium
+  country: Rwanda
+  continent: africa
+  km: [42.2]
+  distances: Marathon, also half marathon and a 10K Run for Peace
+  terrain: [road]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: Registration is closed and the site says it opens in January 2027. Bibs are collected at the Marathon Office at Amahoro Stadium, and the site says there is no bib collection or registration on race day. The page does not say how places are allocated or whether there is a cap.
+  note: The 2027 race, the 22nd edition, is on Sunday 13 June 2027, with the 6.2 mile (10K) Run for Peace the day before. The marathon is two laps of a 21.1 km course, AIMS certified, starting and finishing in front of Amahoro Stadium. The page does not give a start time.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours
+  link: {label: 'Kigali International Peace Marathon: home', url: 'https://kigalimarathon.org/', checked: '2026-11-25'}
+  entry_dates:
+  - {month: '2027-01', what: 'Registration opens', url: 'https://kigalimarathon.org/', checked: '2026-11-25'}
+- id: egyptian-marathon
+  name: Egyptian Marathon (Luxor)
+  series: independent
+  place: Luxor, Egypt, from Hatshepsut Temple
+  country: Egypt
+  continent: africa
+  km: [42.2]
+  distances: Marathon, also half marathon, 12K and 5K
+  terrain: [road]
+  format: single
+  month: [1]
+  entry: [register]
+  entry_note: Registration is open online through the event's register page. The page does not say whether there is a cap or how places are allocated. It says the race is "open to all runners, regardless of ability level."
+  note: The 2027 race, the 34th edition, is on Friday 8 January 2027. All races start at 7:00 AM at Hatshepsut Temple. The course passes the Temple of Medinet Habu, the Temple of Amenophis III and the Colossi of Memnon. The marathon course is AIMS certified.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours from the official start
+  link: {label: 'Egyptian Marathon: 34th Egyptian Luxor Marathon', url: 'https://www.egyptianmarathon.com/events/EgyptianLuxorMarathon2027', checked: '2026-11-25'}
+- id: santiago-marathon
+  name: Itaú Maratón de Santiago
+  series: independent
+  place: Santiago, Chile
+  country: Chile
+  continent: south-america
+  km: [42.2]
+  distances: Marathon, also half marathon and 10K
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Registration is online only, through the race website, which links to the Eventrid platform. The race rules allow one registration per national ID or passport number. General sale runs until 16 April 2027 or until places sell out, whichever comes first, with up to 11,000 places at first for the marathon. Marathon runners must be 18 on race day.
+  note: The 2027 race is on Sunday 16 May 2027. The race rules (in Spanish) do not give the marathon start place or time; they say these appear in the runner's manual. Each distance finishes in a different part of the city's civic axis.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours
+  link: {label: 'Maratón de Santiago 2027: race rules (Spanish, PDF)', url: 'https://maratondesantiago.cl/wp-content/uploads/2026/10/BASES-MDS-2027.pdf', checked: '2026-11-25'}
+  entry_dates:
+  - {date: '2027-04-16', what: 'General sale closes (or earlier if places sell out)', url: 'https://maratondesantiago.cl/wp-content/uploads/2026/10/BASES-MDS-2027.pdf', checked: '2026-11-25'}
+- id: adelaide-marathon
+  name: Brooks Adelaide Marathon
+  series: independent
+  place: Adelaide, South Australia
+  country: Australia
+  continent: oceania
+  km: [42.2]
+  distances: Marathon, also half marathon, 10K and 5K
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Registration is online through the festival's registration link. The site's posts say entries for 2027 are open and that the first price tier has sold out. The pages we opened do not say how places are allocated or give a cap or closing date.
+  note: The 2027 race is on Sunday 2 May 2027, as part of the Brooks Adelaide Marathon Festival. The course is AIMS certified, and the organizers call it a "flat, fast, and scenic course." The course map was marked "Coming Soon," and the pages we opened do not give a start place or time.
+  link: {label: 'Brooks Adelaide Marathon Festival: the marathon', url: 'https://adelaidemarathon.com.au/marathon/', checked: '2026-11-25'}
+  more:
+  - {label: 'Adelaide Marathon Festival: FAQ', url: 'https://adelaidemarathon.com.au/faq/', checked: '2026-11-25'}
+  - {label: 'Adelaide Marathon Festival: courses', url: 'https://adelaidemarathon.com.au/courses/', checked: '2026-11-25'}
+- id: rotterdam-marathon
+  name: NN Marathon Rotterdam
+  series: independent
+  place: Rotterdam, Netherlands, crossing the Erasmus Bridge and finishing on the Coolsingel
+  country: Netherlands
+  continent: europe
+  km: [42.2]
+  distances: Marathon, also a quarter marathon, City Run, kids' runs and the Marathon Rotterdam Walk
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [register]
+  entry_note: For 2027, runners first had to pre-register (20 October to 3 November 2026). Pre-registration gave access to registration but did not guarantee a place, and places went "on a first come, first served basis" through personal links. The marathon is now sold out. The organizers announced 3,500 extra places for pre-registered runners who did not get one, with registration opening on Tuesday 1 December. A waiting list is planned, with details to come.
+  note: The 2027 race is on Sunday 11 April 2027 and will start at 09:30, half an hour earlier than before. Right after the start, runners cross the Erasmus Bridge, and the finish is on the Coolsingel. The pages we opened do not give a time limit.
+  link: {label: 'NN Marathon Rotterdam: register for the marathon', url: 'https://nnmarathonrotterdam.nl/en/register/nn-marathon-rotterdam-2/', checked: '2026-11-25'}
+  more:
+  - {label: 'NN Marathon Rotterdam: pre-registration', url: 'https://nnmarathonrotterdam.nl/en/pre-registration/', checked: '2026-11-25'}
+  - {label: 'NN Marathon Rotterdam: 3,500 extra places for 2027 (Dutch)', url: 'https://nnmarathonrotterdam.nl/nn-marathon-rotterdam-2027-ruimte-voor-3-500-extra-startplekken/', checked: '2026-11-25'}
+- id: eryri-marathon
+  name: Marathon Eryri
+  series: independent
+  place: Llanberis, Wales, from just outside the village on the A4086
+  country: UK
+  continent: europe
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: The organizers say that because the 2026 race was cancelled there will be no ballot in 2027; the page we opened does not say how 2027 places are given out, so check it before you plan. In a ballot year, entry is one application per person, free to enter, with payment taken only if you are offered a place and unclaimed places going to a second ballot. There are no good-for-age places.
+  note: The 2027 race is on Saturday 30 October 2027, starting at 10.30am just outside Llanberis and finishing in Llanberis. The organizers describe "The demanding and spectacular route, encircling Snowdon." The route page describes tarmac sections, about 1.2 miles (2 km) of downhill farm track and a short unmetalled stretch on the climb to Bwlch y Groes, which reaches about 1,200 ft. The page says the 2026 race was cancelled. The pages we opened do not give a time limit.
+  link: {label: 'Marathon Eryri: enter the race', url: 'https://www.marathoneryri.com/enter-the-race', checked: '2026-11-25'}
+  more:
+  - {label: 'Marathon Eryri: race route', url: 'https://www.marathoneryri.com/race-route', checked: '2026-11-25'}
+  - {label: 'Marathon Eryri: race day info', url: 'https://www.marathoneryri.com/race-day-info', checked: '2026-11-25'}
+- id: belfast-marathon
+  name: Phoenix Energy Belfast City Marathon
+  series: independent
+  place: Belfast, Northern Ireland, from the Stormont Estate
+  country: UK
+  continent: europe
+  km: [42.2]
+  distances: Marathon and team relay; the organizers also stage a half marathon, a women's 10K and a 5K on other dates
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Entries are handled through eventmaster.ie. When we checked, both the registered and unregistered marathon entries were marked "SOLD OUT." All participants must be 18 or over. The pages we opened do not say how places are allocated or whether a waiting list exists.
+  note: The 2027 race is on Sunday 2 May 2027. It starts at Stormont at 9am and finishes at Ormeau Park. The course is AIMS certified. A five-leg team relay runs on the same day.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours (a tail vehicle picks up runners who cannot keep the pace)
+  walkers: true
+  walkers_note: The FAQ says walking the marathon is allowed, "but it must be completed in under 6 hours." Walking is not allowed in the half marathon.
+  link: {label: 'Belfast City Marathon: 2027 marathon', url: 'https://belfastcitymarathon.com/events/2027-phoenix-energy-belfast-city-marathon', checked: '2026-11-25'}
+  more:
+  - {label: 'Belfast City Marathon: FAQs', url: 'https://belfastcitymarathon.com/event-info/faqs', checked: '2026-11-25'}
+- id: detroit-marathon
+  name: Detroit Free Press Marathon
+  series: independent
+  place: Detroit, Michigan, from Fort Street and 3rd Street, with a crossing into Windsor, Canada
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: The page says registration "officially opens on January 1, 2027." Marathon runners need valid, unexpired, WHTI-compliant travel documents to register and must carry them during the race, because the course crosses the border. The page does not say whether there is a cap or how places are allocated.
+  note: The 2027 race is on Sunday 17 October 2027, starting at 7:00 AM at Fort Street and 3rd Street in three-minute waves, and finishing on Woodward at Congress. The organizers say the course's highest point is on the Ambassador Bridge and its lowest is in the Windsor Tunnel. The 2027 course map will be updated once the course is certified.
+  time_limit: [{km: 42.2, hours: 6.5}]
+  time_limit_text: 6 hours 30 minutes from when the Last Chance Pacer crosses the start (the finish closes at 2:00 p.m.)
+  walkers: true
+  walkers_note: The page says walkers are welcome, but there are no separate prizes or awards for walkers.
+  link: {label: 'Detroit Free Press Marathon: the marathon', url: 'https://www.freepmarathon.com/marathon/', checked: '2026-11-25'}
+  entry_dates:
+  - {date: '2027-01-01', what: 'Registration opens', url: 'https://www.freepmarathon.com/marathon/', checked: '2026-11-25'}
+- id: st-george-marathon
+  name: St. George Marathon
+  series: independent
+  place: St. George, Utah, from the Pine Valley Mountains
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon, also half marathon and 5K
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: Registration is through the City of St. George website. For 2026, registration opened on 1 April 2026 and was to close when caps were reached or on 31 August. The cap was 5,000 for the marathon. The page does not mention a lottery. No 2027 registration dates were shown when we checked.
+  note: The 2026 race was on Saturday 3 October 2026; no 2027 date was shown when we checked. Runners take buses to the start from Vernon Worthen Park between 3:45 and 5:15 AM, and the race starts at 7:00 AM. The organizers describe a "smooth downhill route from the Pine Valley Mountains to the red rock canyons of St. George."
+  time_limit: [{km: 42.2, hours: 6.25}]
+  time_limit_text: 6 hours 15 minutes; runners must reach the 23.1 mile checkpoint at Snow Canyon Parkway by 1:15 PM (the page also says the finish line closes at 2:15 PM)
+  link: {label: 'St. George Marathon: marathon information', url: 'https://www.sgcityutah.gov/activity/special_events/st._george_marathon/marathon_information.php', checked: '2026-11-25'}
+  more:
+  - {label: 'St. George Marathon: registration', url: 'https://sgcityutah.gov/activity/recreation/st._george_marathon/registration.php', checked: '2026-11-25'}
+- id: hokkaido-marathon
+  name: Hokkaido Marathon
+  series: independent
+  place: Sapporo, Japan, from Odori Nishi 4-chome (Sapporo Ekimae-dori Ave.)
+  country: Japan
+  continent: asia
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [8]
+  entry: [open, tour]
+  entry_note: For 2026 the field was capped at 20,000. Runners had to be at least 19 on race day and able to finish within 6 hours. Overseas entrants enter through the official travel agency's website or Run Japan. The English page says entries are taken first come, first served. No 2027 entry dates were shown when we checked.
+  note: The 2026 race was on Sunday 30 August 2026; no 2027 date was shown when we checked. It started in two waves, at 8:30 and 8:45, and starts and finishes at Odori Nishi 4-chome in Sapporo. There are cut-offs along the course, and the page says they may be moved earlier in extreme heat.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours (the finish closes at 14:45), with checkpoint cut-offs along the way
+  link: {label: 'Hokkaido Marathon: overview (English)', url: 'https://www.hokkaido-marathon.com/overview-en/', checked: '2026-11-25'}
 guides:
 - slug: how-to-get-a-place
   title: How to get a place in a big marathon

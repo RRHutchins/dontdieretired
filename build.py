@@ -1156,6 +1156,19 @@ def build(make_social=True):
             # optional `activity`: the Things to do id with our how-to-start guide for this event (shown both ways)
             assert not e.get("activity") or e["activity"] in _chs_by, f"hub {h['id']} event {e['id']}: unknown activity {e.get('activity')}"
             e["act"] = _chs_by.get(e.get("activity") or "")
+            # Priority step 6 (RUNBOOK §6u, 25 Nov 2026): "Plan this race". A race hub may set `plan_activity` (a Things to do id whose
+            # planner trains with an engine event, §6r) and a race may override it; the race page links to that activity's planner,
+            # with ?on=<race day> when the note says "... is on <day> <month> <year>" in its first sentence and that day is still to come.
+            _pa = e.get("plan_activity") or h.get("plan_activity")
+            e["plan_act"], e["race_day"] = None, None
+            if _pa and not PHEN:
+                assert _pa in _chs_by and ((_chs_by[_pa].get("plan") or {}).get("event")), f"hub {h['id']} event {e['id']}: plan_activity {_pa} is not an activity with an engine training plan"
+                e["plan_act"] = _chs_by[_pa]
+                _m1 = re.search(r"\bis on (?:[A-Z][a-z]+day )?(\d{1,2}) (" + "|".join(MONTHS) + r") (20\d\d)\b", re.split(r"(?<=\.)\s", e["note"])[0])
+                if _m1:
+                    _rd = dt.date(int(_m1.group(3)), MONTHS.index(_m1.group(2)) + 1, int(_m1.group(1)))
+                    if _rd >= dt.date.today():
+                        e["race_day"] = {"iso": _rd.isoformat(), "human": _rd.strftime("%A %-d %B %Y"), "year": _rd.year}
             if PHEN:
                 assert e["continent"] in F["continent"] and e["type"] in F["type"] and all(x in F["see"] for x in e["see"]), f"hub {h['id']} event {e['id']}: unknown facet value"
                 e.setdefault("km", []); e.setdefault("terrain", []); e.setdefault("entry", []); e.setdefault("series", ""); e.setdefault("format", ""); e.setdefault("distances", ""); e.setdefault("entry_note", "")
@@ -1244,7 +1257,16 @@ def build(make_social=True):
         h["checked_human"] = max(dt.date.fromisoformat(str(e["link"]["checked"])) for e in h["events"]).strftime("%-d %B %Y")
         lk = Linker(terms, f"/{h['slug']}/")
         for g in h.get("guides") or []:
-            assert re.fullmatch(r"[a-z0-9-]+", g.get("slug", "")) and g.get("title") and g.get("standfirst") and g.get("detail") and g.get("sources"), f"hub {h['id']}: a guide needs slug, title, standfirst, detail, sources"
+            # `by_month: true` (phenomenon hubs, 25 Nov 2026): the build lists every entry under each of its usual months, from the
+            # rows themselves, so the guide's facts are the rows' own (each with its official link); `sources` is then optional.
+            g["month_lists"] = []
+            if g.get("by_month"):
+                assert PHEN, f"hub guide {g.get('slug')}: by_month is for phenomenon hubs"
+                g["month_lists"] = [(MONTHS[m - 1], [e for e in h["events"] if m in (e.get("month") or [])]) for m in range(1, 13)]
+                g["month_lists"] = [x for x in g["month_lists"] if x[1]]
+                g["one_offs"] = [e for e in h["events"] if not e.get("month") and e.get("when")]
+                g.setdefault("sources", [])
+            assert re.fullmatch(r"[a-z0-9-]+", g.get("slug", "")) and g.get("title") and g.get("standfirst") and g.get("detail") and (g.get("sources") or g.get("by_month")), f"hub {h['id']}: a guide needs slug, title, standfirst, detail, sources"
             for sec in g["detail"]:
                 assert sec.get("h") and (sec.get("p") or sec.get("list") or sec.get("table")), f"hub guide {g['slug']}: each section needs h and p, list or table"
                 if sec.get("table"):
@@ -1281,7 +1303,8 @@ def build(make_social=True):
                 _gp.append(pk)
             g["picks"] = _gp
             assert all(str(x.get("url", "")).startswith("https://") and x.get("label") and x.get("checked") for x in g["sources"]), f"hub guide {g['slug']}: sources need url, label, checked"
-            g["sources_checked"] = max(dt.date.fromisoformat(str(x["checked"])) for x in g["sources"]).strftime("%-d %B %Y")
+            _gd = [dt.date.fromisoformat(str(x["checked"])) for x in g["sources"]] + ([dt.date.fromisoformat(str(e["link"]["checked"])) for _, es in g["month_lists"] for e in es] if g.get("by_month") else [])
+            g["sources_checked"] = max(_gd).strftime("%-d %B %Y")
             g["url"] = f"/{h['slug']}/{g['slug']}/"
         # Landing pages for common filters (RUNBOOK §6u priority step 2, 21 Nov 2026): /<slug>/<landing slug>/, each a real page
         # listing the races that match one filter. A race hub opts in with `landings:` (list) and optional `landing_months: true`
