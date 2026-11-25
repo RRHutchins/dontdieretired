@@ -77,7 +77,7 @@ def draw_all(dist):
     n = 0
     for p in load():
         kicker = "Christmas quiz: can you answer this?" if p.get("question") else "The Christmas Quiz Book, on Amazon"
-        ph = bp.photo_for(data(), p["date"])
+        ph = bp.photo_for(data(), p["date"], p)
         if p.get("compare"):
             for sz, sub in (((1080, 1080), "social"), ((1200, 675), "img")):
                 bp.compare_card(ROOT / p["compare"][0], ROOT / p["compare"][1], p["card"], sz, dist / "static" / sub / f"{p['slug']}.png")
@@ -111,15 +111,18 @@ def write_packs():
             if len(xbody) > 254: xbody = p["card"]
         else:
             body = xbody = p["text"]
+        ph = bp.photo_for(data(), p["date"], p)
+        buy = bp.links_block(bp.QUIZ_LINKS) if p["date"] >= bp.LINKS_FROM else ""
+        xlinks = bp.amazon_links(bp.QUIZ_LINKS) if p["date"] >= bp.LINKS_FROM else []
         meta = {
             "title": p["card"], "url": PAGE, "date": p["date"], "category": "think", "kind": "book", "slot": "20:00", "fb_image": True,
             "tags": ["quiz", "quiz-book", "christmas"],
-            "alt": p.get("alt") or (bp.PHOTO_ALT if bp.photo_for(data(), p["date"]) else
+            "alt": p.get("alt") or (bp.photo_alt(ph) if ph else
                     "The covers of the UK and American editions of The Don't Die Retired Christmas Quiz Book, beside the words: ") + p["card"],
             "posts": {
-                "facebook": f"{body}\n\nSee it → {utm('facebook')}",
-                "instagram": f"{body}\n\nLink in our bio (dontdieretired.com/puzzle-books).\n\n{HASHTAGS}",
-                "x": f"{xbody}\n\n{utm('x')}",
+                "facebook": f"{body}\n\n" + (f"{buy}\n\n" if buy else "") + f"See it → {utm('facebook')}",
+                "instagram": f"{body}\n\n" + (f"{buy}\n\n" if buy else "") + f"Link in our bio (dontdieretired.com/puzzle-books).\n\n{HASHTAGS}",
+                "x": bp.x_post(xbody, xlinks, utm("x")),
             },
         }
         if len(xbody) > 254:

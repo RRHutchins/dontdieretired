@@ -95,11 +95,47 @@ def card(cover, headline, kicker, size, out):
 PHOTO_CREDIT = "Photo: Don't Die Retired"
 PHOTO_ALT = ("Printed copies of The Don't Die Retired Christmas Puzzle Book and the UK and American editions of the "
              "Christmas Quiz Book on a wooden table, beside the words: ")
+# Alt text and crop for each of Robin's photos (a post may pick one with `photo:`). Default: PHOTO_ALT, left-anchored crop.
+PHOTOS = {
+    "santa-hat-books.jpg": {   # sent 25 Nov 2026
+        "alt": ("A printed copy of The Don't Die Retired Christmas Puzzle Book tucked into a red Santa hat on a blue checked "
+                "sofa, with the American edition of the Christmas Quiz Book propped in front, beside the words: "),
+        "anchor": "center",
+    },
+}
 
 
-def photo_for(data, date):
-    """Robin's own photo of the printed books (sent 22 Nov 2026), for posts dated on or after `photo_from`.
-    Earlier posts keep the cover card: a sent post is never changed."""
+def photo_alt(photo):
+    return (PHOTOS.get(pathlib.Path(str(photo)).name) or {}).get("alt", PHOTO_ALT)
+
+
+def amazon_links(ids):
+    """Plain Amazon links for social captions (no Associates tag, so no disclosure is needed): UK on amazon.co.uk,
+    US on amazon.com, same ASIN (KDP paperbacks keep one ASIN across marketplaces). Robin, 25 Nov 2026: add the links."""
+    site = yaml.safe_load((ROOT / "site.yaml").read_text(encoding="utf-8"))
+    every = {b["id"]: b for b in (site.get("books") or []) + (site.get("quiz_books") or [])}
+    out = []
+    for label, bid, shop in ids:
+        b = every.get(bid)
+        if b and str(b.get("amazon", "")).startswith("https://www.amazon.") and b.get("asin"):
+            out.append((label, f"https://www.amazon.{shop}/dp/{b['asin']}"))
+    return out
+
+
+PUZZLE_LINKS = [("UK", "christmas", "co.uk"), ("US", "christmas", "com")]
+QUIZ_LINKS = [("UK edition", "quiz-uk", "co.uk"), ("American edition", "quiz-us", "com")]
+
+
+def links_block(ids, head="Buy it on Amazon"):
+    links = amazon_links(ids)
+    return (head + ":\n" + "\n".join(f"{lab}: {url}" for lab, url in links)) if links else ""
+
+
+def photo_for(data, date, post=None):
+    """Robin's own photo of the printed books (sent 22 Nov 2026), for posts dated on or after `photo_from`; a post's own
+    `photo:` picks another of his photos. Earlier posts keep the cover card: a sent post is never changed."""
+    if post and post.get("photo") and str(date) >= str(data.get("photo_from") or "9999"):
+        return ROOT / post["photo"]
     if data.get("photo") and str(date) >= str(data.get("photo_from") or "9999"):
         return ROOT / data["photo"]
     return None
@@ -114,7 +150,9 @@ def photo_card(photo, headline, kicker, size, out):
     pw = round(W * (0.62 if W == H else 0.44))
     sc = max(pw / src.width, H / src.height)
     rs = src.resize((round(src.width * sc) + 1, round(src.height * sc) + 1), Image.LANCZOS)
-    l, t = 0, (rs.height - H) // 2            # left-anchored: keeps the puzzle book's full title in shot
+    anchor = (PHOTOS.get(pathlib.Path(str(photo)).name) or {}).get("anchor", "left")
+    l = (rs.width - pw) // 2 if anchor == "center" else 0
+    t = (rs.height - H) // 2                  # left-anchored by default: keeps the puzzle book's full title in shot
     img.paste(rs.crop((l, t, l + pw, t + H)), (W - pw, 0))
     pad = round(W * 0.05); tw = W - pw - 2 * pad
     kf = font("SourceSans3-SemiBold.ttf", 28 if W == H else 26)
@@ -174,12 +212,24 @@ def draw_all(dist):
     card(cover, book["title"], kicker, (1200, 630), pathlib.Path(dist) / "static" / "img" / "books" / f"og-{book['id']}.png")
     n = 0
     for p in data.get("posts") or []:
-        ph = photo_for(data, p["date"])
+        ph = photo_for(data, p["date"], p)
         draw = (lambda *a: photo_card(ph, *a)) if ph else (lambda *a: card(cover, *a))
         draw(p["card"], "The Christmas Puzzle Book, on Amazon", (1080, 1080), pathlib.Path(dist) / "static" / "social" / f"{p['slug']}.png")
         draw(p["card"], "The Christmas Puzzle Book, on Amazon", (1200, 675), pathlib.Path(dist) / "static" / "img" / f"{p['slug']}.png")
         n += 1
     return n
+
+
+LINKS_FROM = "2026-11-26"   # Amazon links in captions from the first post written after Robin asked (25 Nov 2026)
+
+
+def x_post(text, links, fallback):
+    """X counts every link as 23 characters. Amazon UK and US links when they fit under 280, else our page."""
+    if links:
+        tail = "\n\n" + " · ".join(f"{lab}: {url}" for lab, url in links)
+        if len(text) + len(tail) - sum(len(u) - 23 for _, u in links) <= 280:
+            return text + tail
+    return f"{text}\n\n{fallback}"
 
 
 def write_packs():
@@ -196,14 +246,17 @@ def write_packs():
         if (folder / "meta.json").exists() and p["date"] < today:
             kept += 1; continue                     # already sent: never change its text
         utm = lambda s: f"{PAGE}?utm_source={s}&utm_medium=social&utm_campaign=book-{book['id']}"
+        ph = photo_for(data, p["date"], p)
+        buy = links_block(PUZZLE_LINKS) if p["date"] >= LINKS_FROM else ""
+        xlinks = amazon_links(PUZZLE_LINKS) if p["date"] >= LINKS_FROM else []
         meta = {
             "title": p["card"], "url": PAGE, "date": p["date"], "category": "think", "kind": "book",
             "tags": ["puzzles", "puzzle-book", "christmas"],
-            **({"alt": PHOTO_ALT + p["card"], "fb_image": True} if photo_for(data, p["date"]) else {}),
+            **({"alt": photo_alt(ph) + p["card"], "fb_image": True} if ph else {}),
             "posts": {
-                "facebook": f"{p['text']}\n\nSee it → {utm('facebook')}",
-                "instagram": f"{p['text']}\n\nLink in our bio (dontdieretired.com/puzzle-books).\n\n{HASHTAGS}",
-                "x": f"{p['text']}\n\n{utm('x')}",
+                "facebook": f"{p['text']}\n\n" + (f"{buy}\n\n" if buy else "") + f"See it → {utm('facebook')}",
+                "instagram": f"{p['text']}\n\n" + (f"{buy}\n\n" if buy else "") + f"Link in our bio (dontdieretired.com/puzzle-books).\n\n{HASHTAGS}",
+                "x": x_post(p["text"], xlinks, utm("x")),
             },
         }
         if len(meta["posts"]["x"].split("\n\n")[0]) > 255:   # X counts a link as 23 characters; keep the whole post under 280
