@@ -1,0 +1,63 @@
+## facebook
+
+Karen Kennedy swam between the mainland and Robben Island, off Cape Town in South Africa, four times over.
+
+The four crossings came to nearly 30 km (about 18.5 miles), in cold Atlantic water and with no wetsuit. It took her just over 10 hours, with a short stop on land at each turn. Her swimming partner, Graham du Toit, swam beside her, and a support boat went with them.
+
+Reports in April said she was the first woman to do it without a wetsuit. Guinness World Records has yet to confirm it.
+
+The hardest part came on the third crossing, with a strong current, choppy water and leg cramps. She told the Weekend Argus newspaper: "One crossing at a time. One stroke at a time."
+
+Karen was a promising swimmer at provincial level (South Africa's regional level). Then she stepped away from the water for more than twenty years. She came back, and took up cold-water sea swimming after moving to Cape Town.
+
+Have you ever swum in cold sea water?
+
+Read the full story → https://dontdieretired.com/move/karen-kennedy-quadruple-robben-island-swim/?utm_source=facebook&utm_medium=social&utm_campaign=daily
+
+#DontDieRetired
+
+## instagram
+
+Karen Kennedy swam between the mainland and Robben Island, off Cape Town in South Africa, four times over.
+
+The four crossings came to nearly 30 km (about 18.5 miles), in cold Atlantic water and with no wetsuit. It took her just over 10 hours, with a short stop on land at each turn. Her swimming partner, Graham du Toit, swam beside her, and a support boat went with them.
+
+Reports in April said she was the first woman to do it without a wetsuit. Guinness World Records has yet to confirm it.
+
+The hardest part came on the third crossing, with a strong current, choppy water and leg cramps. She told the Weekend Argus newspaper: "One crossing at a time. One stroke at a time."
+
+Karen was a promising swimmer at provincial level (South Africa's regional level). Then she stepped away from the water for more than twenty years. She came back, and took up cold-water sea swimming after moving to Cape Town.
+
+Have you ever swum in cold sea water?
+
+Full story at the link in our bio (dontdieretired.com).
+
+#DontDieRetired #NeverRetireFromLife #TryNewThings #MoveMore #OpenWater #SeaSwimming
+
+## x
+
+Karen Kennedy swam to Robben Island, off Cape Town, and back twice. No wetsuit, just over 10 hours.
+
+https://dontdieretired.com/move/karen-kennedy-quadruple-robben-island-swim/?utm_source=x&utm_medium=social&utm_campaign=daily
+
+#DontDieRetired #OpenWater
+
+## x_thread
+
+1/ Karen Kennedy swam to Robben Island, off Cape Town, and back twice. No wetsuit, just over 10 hours.
+
+---
+
+2/ How Karen Kennedy, a Cape Town swimmer and coach who returned to the water after two decades away, swam a quadruple Robben Island crossing without a wetsuit in just over 10 hours, how she got through the hardest crossing, what the lifeboat charity says about cold water, and how to start sea swimming with a group or build towards a long swim.
+
+---
+
+3/ The lesson: A very long swim, like a very long break from swimming, is ended one crossing and one stroke at a time.
+
+---
+
+4/ Full story, sources and a plan you can start this week → https://dontdieretired.com/move/karen-kennedy-quadruple-robben-island-swim/?utm_source=x&utm_medium=social&utm_campaign=daily
+
+## pinterest
+
+Through cold Atlantic water off Cape Town, Karen Kennedy swam to Robben Island and back twice | A very long swim, like a very long break from swimming, is ended one crossing and one stroke at a time. | https://dontdieretired.com/move/karen-kennedy-quadruple-robben-island-swim/?utm_source=pinterest&utm_medium=social&utm_campaign=daily

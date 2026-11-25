@@ -2,6 +2,9 @@
 title: "Two plates, a blink comparator and a moving dot: how Clyde Tombaugh found Pluto"
 slug: clyde-tombaugh-pluto-blink-comparator
 date: 2026-11-24
+photo_file: "File:Zeiss Blink comparator at Lowell Observatory used in the discovery of Pluto by Clyde Tombaugh in 1930.jpg"
+photo_caption: "The Zeiss blink comparator at Lowell Observatory, Flagstaff, Arizona, used by Clyde Tombaugh in 1930 in the search that found Pluto. Photographed in 2010."
+photo_alt: "A dark metal viewing machine behind glass: a central eyepiece on a horizontal bar, with two brightly lit circular windows to either side where the photographic plates sit."
 category: curious
 tags: [pluto, astronomy, stargazing, lowell-observatory, arizona, oxford, science, history]
 segments: [learner, changer]
