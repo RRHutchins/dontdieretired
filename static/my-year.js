@@ -25,7 +25,7 @@
   const addMonths = (m, n) => { const y = +m.slice(0, 4), mo = +m.slice(5, 7) - 1 + n; return (y + Math.floor(mo / 12)) + '-' + pad(((mo % 12) + 12) % 12 + 1); };
 
   let S = null, byId = {}, view = 'year', month = thisMonth, all = null, ro = true, gated = false;   // read-only until static/plus.js answers
-  let calMonth = thisMonth, calSel = '';   // the calendar (row 24b): the month shown and the day picked
+  let calMonth = thisMonth, calSel = '', opened = false;   // the calendar (row 24b): the month shown and the day picked
 
   /* ---------- put everything together ---------- */
   function gather() {
@@ -293,12 +293,62 @@
     drawCal(focus ? d : null);
   }
 
+  /* ---------- Saved for later and Suggested for you (Robin, 25 Nov 2026) ----------
+     The list's undated activities, each with a time it could fit (DDRPlan.fit: its own best months, skipping months that
+     already have a plan), and up to six suggestions (DDRPlan.ideas: goes well with the list, or in season soon). Add to
+     my year uses the same handler as everywhere on this page; Save for later only adds to the list (free, so it works
+     read-only too). The member's country: the one their list's activities are in, else their time zone, else none. */
+  function country() {
+    const c = {}; L.live(L.load()).forEach(it => { const a = it.cid && byId[it.cid]; if (a && a.country) c[a.country] = (c[a.country] || 0) + 1; });
+    const k = Object.keys(c).sort((x, y) => c[y] - c[x]); if (k.length) return k[0];
+    let tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    return tz === 'Europe/London' ? 'GB' : /^America\/(New_York|Chicago|Denver|Phoenix|Los_Angeles|Anchorage|Detroit|Boise|Indiana|Kentucky|North_Dakota)|^Pacific\/Honolulu/.test(tz) ? 'US' : '';
+  }
+  function whenWords(f, a) {
+    const at = f.date ? P.longDate(f.date) : P.monthYear(f.month);
+    const base = f.why === 'fixed' ? 'Next date we found: ' + at + '. Check it with the organiser before you book.'
+      : f.why === 'season' ? 'Best ' + P.monthsText((a.dates && a.dates.months) || a.when) + '.' : 'Any time of year.';
+    return base + (f.free && f.why !== 'fixed' ? ' ' + P.monthYear((f.month || f.date).slice(0, 7)) + ' has nothing planned yet.' : '');
+  }
+  function ideaHtml(a, f, why, canSave) {
+    const url = '/list/' + encodeURIComponent(a.id) + '/', at = f.date ? P.longDate(f.date) : P.monthYear(f.month);
+    return '<li class="my-idea"><p class="my-idea-t"><a href="' + url + '">' + esc(a.title) + '</a></p>'
+      + '<p class="meta">' + esc((why ? why + ' ' : '') + whenWords(f, a)) + '</p><p class="pl-acts">'
+      + (ro ? '<a class="btn btn-small btn-ghost" href="' + url + '#plan">See it</a>'
+        : '<button type="button" class="btn btn-small" data-my-add="' + esc(a.id) + '" data-my-when="' + esc(JSON.stringify(f.date ? { date: f.date } : { month: f.month })) + '">Add to my year <span class="pl-xwhen">for ' + esc(at) + '</span></button>'
+          + '<a class="my-idea-other" href="' + url + '#plan">Choose another time</a>')
+      + (canSave ? '<button type="button" class="btn btn-small btn-ghost" data-my-save="' + esc(a.id) + '">Save for later</button>' : '')
+      + '</p></li>';
+  }
+  function drawIdeas() {
+    const live = L.live(L.load());
+    const busy = new Set(all.steps.filter(x => x.id === 'day').map(x => x.date.slice(0, 7)));
+    const und = live.filter(it => !it.date && !it.month && it.status !== 'done');
+    const shown = und.slice(0, 10);
+    $('[data-my-list]').hidden = !und.length;
+    $('[data-my-list-items]').innerHTML = shown.map(it => {
+      const a = it.cid && byId[it.cid];
+      if (!a) return '<li class="my-idea"><p class="my-idea-t">' + esc(it.title || '') + '</p><p class="meta">Your own idea. Give it a date on <a href="/list/#mine">your list</a>.</p></li>';
+      const f = P.fit(a, busy, { today }); busy.add((f.month || f.date).slice(0, 7));   // one suggestion per month, so the times spread out
+      return ideaHtml(a, f, '', false);
+    }).join('');
+    const more = $('[data-my-list-more]'); more.hidden = und.length <= shown.length;
+    more.innerHTML = und.length > shown.length ? (und.length - shown.length) + ' more on <a href="/list/#mine">your list</a>.' : '';
+    const id = P.ideas(S.activities, live, { today, busy, country: country(), n: 6 });
+    $('[data-my-ideas]').hidden = !id.length;
+    $('[data-my-ideas-help]').textContent = id.length && id[0].kind === 'goes' ? 'Picked because they go well with things on your list, at times that fit around your plans.' : 'In season in the next few months. Save one for later or add it to your year.';
+    $('[data-my-idea-items]').innerHTML = id.map(x => {
+      const a = byId[x.id], w = x.with && byId[x.with];
+      return ideaHtml(a, { date: x.when.date, month: x.when.month, why: x.why, free: x.free }, w ? 'Goes well with ' + w.title + '.' : '', true);
+    }).join('');
+  }
+
   /* ---------- the whole page ---------- */
   function draw(focus) {
     gather();
     root.removeAttribute('aria-busy'); $('[data-my-loading]').hidden = true;
     const any = all.plans.length > 0;
-    $('[data-my-empty]').hidden = any || ro; $('[data-my-main]').hidden = !any;
+    $('[data-my-empty]').hidden = any || ro; $('[data-my-main]').hidden = !any; $('[data-my-rest]').hidden = !any;
     const rb = $('[data-my-ro]');
     if (rb) {   // read-only: say why, and what Plus does (with nothing saved here, that is all there is to say)
       const PP = S.plus || {};
@@ -306,8 +356,14 @@
       if (ro) rb.innerHTML = '<p>' + esc(any ? PP.my_ro : PP.what) + '</p><p class="pl-price">' + esc(PP.price) + '</p><p class="pl-acts"><a class="btn" href="/account/">' + esc(PP.join) + '</a>'
         + (any ? '' : '<a class="btn btn-ghost" href="/planner-plus/sample/">' + esc(PP.sample) + '</a>') + '</p><p class="meta"><a href="/account/">' + esc(PP.signin) + '</a></p>';
     }
+    drawIdeas();
     if (!any) return;
     if (!calSel && !location.hash) { const t = dayInfo(today); if (t.days.length || t.prep.length || t.ses.length) calSel = today; }   // today, when there is something on it
+    if (!opened && !calSel && !location.hash) {   // open on the first month with something in it, not an empty one (review, 24 Nov 2026)
+      const first = all.steps.map(x => x.date.slice(0, 7)).filter(m => m >= thisMonth).sort()[0];
+      if (first && !all.steps.some(x => x.date.slice(0, 7) === thisMonth)) calMonth = first;
+    }
+    opened = true;
     drawCal();
     drawClashes();
     $$('[data-my-view]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.myView === view)));
@@ -348,6 +404,12 @@
     const st = e.target.closest('[data-my-step]');
     if (st) { month = addMonths(month, +st.dataset.myStep); draw(); setHash(); if (st.hidden) $('[data-my-month]').focus({ preventScroll: true }); return; }
     if (e.target.closest('[data-my-ics]')) { saveCalendar(); return; }
+    const sv = e.target.closest('[data-my-save]');
+    if (sv) {   // Save for later: onto the list with no date (free, so read-only readers can too)
+      const xid = sv.dataset.mySave; L.add(xid); draw();
+      const t = $$('[data-my-list-items] .my-idea-t a').find(x => x.getAttribute('href') === '/list/' + encodeURIComponent(xid) + '/'); if (t) t.focus();
+      say('Saved for later: ' + (byId[xid] ? byId[xid].title : '') + '.'); return;
+    }
     if (ro) return;   // nothing below changes a plan
     const add = e.target.closest('[data-my-add]');
     if (add) {   // Add to my year (day 10): a plan of its own for that activity, on the date shown

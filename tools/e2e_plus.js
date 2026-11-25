@@ -229,7 +229,7 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '
     await vis(page, '[data-pl-save]'); await page.click('[data-pl-save]');
     await vis(page, '.pl-saved');
   }
-  const myYearHas = async (page, text) => { await page.goto(SITE + '/my-year/'); await page.waitForFunction(t => { const m = document.querySelector('[data-my-main]'); return m && !m.hidden && m.textContent.includes(t); }, text, { timeout: 15000 }); };
+  const myYearHas = async (page, text) => { await page.goto(SITE + '/my-year/'); await page.waitForFunction(t => { const m = document.querySelector('[data-my-main]'), r = document.querySelector('[data-my-rest]'); return m && !m.hidden && (m.textContent + (r ? r.textContent : '')).includes(t); }, text, { timeout: 15000 }); };
 
   const phone = await device('phone', PHONE_W), laptop = await device('laptop', 1280), friend = await device('friend', PHONE_W);
   const ALEX = 'alex.e2e@example.com', BEA = 'bea.e2e@example.com';

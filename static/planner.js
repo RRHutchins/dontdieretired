@@ -90,6 +90,68 @@
     return { date: iso(addDays(today, lead)), why: 'any' };
   }
 
+  /* When an activity could go in the member's year (Robin, 25 Nov 2026: "activities interested in, in a list, and
+     potential calendar time"). PURE. suggest()'s answer, moved on to the next of its own months that has nothing planned
+     yet when that month is taken (busy = Set of 'YYYY-MM'). A fixed date is never moved. An any-time activity moves to
+     the first free month after it, as "some time in" that month. → { date | month, why, free } */
+  function fit(a, busy, opts) {
+    const s = suggest(a, opts), b = busy || new Set(), m0 = (s.month || s.date).slice(0, 7);
+    if (s.why === 'fixed' || !b.has(m0)) return Object.assign(s, { free: !b.has(m0) });
+    const months = s.why === 'season' ? ((a.dates && a.dates.months) || a.when || []) : null, start = parse(m0 + '-01');
+    for (let i = 1; i < 25; i++) {
+      const d = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + i, 1)), k = iso(d).slice(0, 7);
+      if ((!months || months.includes(d.getUTCMonth() + 1)) && !b.has(k)) return { month: k, why: s.why, free: true };
+    }
+    return Object.assign(s, { free: false });
+  }
+
+  /* Suggested for you (Robin, 25 Nov 2026: "suggested activities that DDR identifies that fit by type, dates that fit").
+     PURE. ideas(activities, listItems, { today, busy, country, n }) → [{ id, title, when, free, with, kind }]
+     kind 'goes': goes well with something on the member's list (its `goes`: related first, then the same collection),
+       with = the list activity it goes with; ranked by how close the link is, then a free month, then the soonest.
+     kind 'season': nothing to go on yet (an empty list): activities with a season or a published date coming up in the
+       next six months, gentle or moderate, in an order that changes each month.
+     Never more than one step harder or longer than the list activity it goes with (an empty list: gentle or moderate,
+     nothing that takes a year), and at most two picks from one
+     category or in one month.
+     Never anything already on the list; never an activity for the other country when the member's country is known. */
+  function ideas(acts, items, opts) {
+    const o = opts || {}, n = o.n || 6, byId = {}; acts.forEach(a => { byId[a.id] = a; });
+    const have = new Set((items || []).map(it => it.cid).filter(Boolean));
+    const ok = a => a && !have.has(a.id) && (!o.country || !a.country || a.country === o.country);
+    // never more than one step harder (gentle, moderate, demanding) or one step longer (an afternoon, days, weeks, months,
+    // a year) than the thing on the list it goes with: a first indoor row does not lead to rowing an ocean
+    const LV = { gentle: 0, moderate: 1, demanding: 2 }, lv = a => (a.effort in LV ? LV[a.effort] : 1);
+    const TM = { afternoon: 0, days: 1, weeks: 2, months: 3, year: 4 }, tm = a => (a.time in TM ? TM[a.time] : 2);
+    const score = {}, from = {};
+    (items || []).forEach(it => {
+      const src = it.cid && byId[it.cid]; if (!src || it.status === 'done') return;
+      (src.goes || []).slice(0, 12).forEach((g, i) => {
+        if (!ok(byId[g]) || lv(byId[g]) > lv(src) + 1 || tm(byId[g]) > tm(src) + 1) return;
+        const w = i < 3 ? 3 : 1; score[g] = (score[g] || 0) + w;
+        if (!from[g] || w > from[g].w) from[g] = { w, id: src.id };
+      });
+    });
+    let ids = Object.keys(score); const kind = ids.length ? 'goes' : 'season';
+    if (kind === 'season') ids = acts.filter(a => ok(a) && a.kind !== 'habit' && lv(a) <= 1 && tm(a) <= 3 && ((a.dates && a.dates.next) || (a.when || []).length && a.when.length < 12)).map(a => a.id);
+    const t0 = todayUTC(o.today), horizon = iso(new Date(Date.UTC(t0.getUTCFullYear(), t0.getUTCMonth() + 6, 1))).slice(0, 7);
+    const salt = iso(t0).slice(0, 7), mix = id => { let h = 0; const s = id + salt; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return h; };
+    let out = ids.map(id => {
+      const a = byId[id], f = fit(a, o.busy, o), m = (f.month || f.date).slice(0, 7);
+      return { id, title: a.title, category: a.category, when: f.date ? { date: f.date } : { month: f.month }, why: f.why, free: f.free, with: from[id] ? from[id].id : '', kind,
+        rank: (score[id] || 0) + (f.free ? 2 : 0) + (f.why !== 'any' ? 1 : 0), m };
+    });
+    if (kind === 'season') out = out.filter(x => x.m < horizon && x.why !== 'any').sort((x, y) => (x.m < y.m ? -1 : x.m > y.m ? 1 : mix(x.id) - mix(y.id)));
+    else out.sort((x, y) => y.rank - x.rank || (x.m < y.m ? -1 : x.m > y.m ? 1 : x.title < y.title ? -1 : 1));
+    const per = {}, perM = {}, pick = [];   // spread out: at most two from one category, and two in one month
+    for (const x of out) {
+      if (pick.length >= n) break;
+      if ((per[x.category] || 0) >= 2 || (perM[x.m] || 0) >= 2) continue;
+      per[x.category] = (per[x.category] || 0) + 1; perM[x.m] = (perM[x.m] || 0) + 1; delete x.rank; delete x.m; pick.push(x);
+    }
+    return pick;
+  }
+
   /* Where it is and getting there (RUNBOOK §6t, Planner Plus day 8). PURE. The same links serve the free "plan it
      yourself" box and the paid plan. The place is the activity's own sourced `where`, else what the member typed
      (opts.place); with neither, `needs` is true and the page asks. Every link is one of content/planner.yaml → trip.links,
@@ -643,5 +705,5 @@
       + '</ul><p class="pl-lwhy">' + esc(fill_(W.note, { checked: longDate(parse(pk.checked)) })) + '</p></details>';
   }
 
-  return { VERSION, LEVELS, MAX_SPAN, picksHtml, openWeeks, okUntil, build, suggest, trip, extras, diy, whenLabel, cleanPlace, combine, applyMarks, ics, calendar, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  return { VERSION, LEVELS, MAX_SPAN, picksHtml, openWeeks, okUntil, build, suggest, fit, ideas, trip, extras, diy, whenLabel, cleanPlace, combine, applyMarks, ics, calendar, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });

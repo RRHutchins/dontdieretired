@@ -863,4 +863,37 @@ t('a booking window in dates.yaml dates its start step, fixed, with the source a
   p = P.build(mk({ from: '2027-01-01', by: '' }), data, { date: '2027-09-12', today: TODAY });
   const ds = p.steps.map(x => x.date); assert.deepStrictEqual(ds, ds.slice().sort());
 });
+t('fit: a taken month moves to the next free one of its own months; a fixed date never moves', () => {
+  const a = byId['take-up-beekeeping'], s = P.suggest(a, { today: TODAY }), m = s.month || s.date.slice(0, 7);
+  const f0 = P.fit(a, new Set(), { today: TODAY }); assert.ok(f0.free); assert.strictEqual(f0.month || f0.date.slice(0, 7), m);
+  const f1 = P.fit(a, new Set([m]), { today: TODAY }); assert.ok(f1.free && f1.month > m, 'moved on');
+  assert.ok((a.when || []).includes(+f1.month.slice(5)), 'still one of its own months');
+  const fx = acts.find(x => x.dates && x.dates.next && x.dates.next > plus(TODAY, x.lead_weeks * 7 + 1));
+  if (fx) { const f = P.fit(fx, new Set([fx.dates.next.slice(0, 7)]), { today: TODAY }); assert.strictEqual(f.date, fx.dates.next); assert.strictEqual(f.free, false); }
+  const any = acts.find(x => !(x.when || []).length && !x.dates);
+  if (any) { const d = P.suggest(any, { today: TODAY }).date.slice(0, 7), f = P.fit(any, new Set([d]), { today: TODAY }); assert.ok(f.month > d && f.free); }
+});
+t('ideas: goes-well-with picks, never already on the list, never the other country, at most two per category', () => {
+  const items = [{ cid: 'take-up-beekeeping', status: 'want' }];
+  const out = P.ideas(acts, items, { today: TODAY, n: 6 });
+  assert.ok(out.length > 0 && out.length <= 6);
+  out.forEach(x => { assert.strictEqual(x.kind, 'goes'); assert.notStrictEqual(x.id, 'take-up-beekeeping'); assert.ok(byId[x.id]); assert.ok(x.with === 'take-up-beekeeping'); assert.ok(x.when.date || x.when.month); });
+  const cats = {}; out.forEach(x => { cats[x.category] = (cats[x.category] || 0) + 1; assert.ok(cats[x.category] <= 2); });
+  // effort: a gentle list never gets a demanding suggestion
+  const g = acts.find(a => a.effort === 'gentle' && (a.goes || []).slice(0, 3).some(x => byId[x] && byId[x].effort === 'demanding'));
+  assert.ok(g, 'a gentle activity that goes well with a demanding one');
+  P.ideas(acts, [{ cid: g.id, status: 'want' }], { today: TODAY, n: 20 }).forEach(x => assert.notStrictEqual(byId[x.id].effort, 'demanding', x.id));
+  // time: a weeks-long project never leads to a year-long one
+  P.ideas(acts, [{ cid: 'try-rowing-indoor', status: 'want' }], { today: TODAY, n: 20 }).forEach(x => assert.notStrictEqual(byId[x.id].time, 'year', x.id));
+  assert.ok(byId['take-up-beekeeping'].goes.slice(0, 3).some(g => out.some(x => x.id === g)), 'a closely related one comes first');
+  const us = P.ideas(acts, items, { today: TODAY, country: 'US', n: 20 }); us.forEach(x => assert.ok(!byId[x.id].country || byId[x.id].country === 'US'));
+  // a busy month is avoided when another of the activity's months is free
+  const busy = new Set(out.filter(x => x.when.month).map(x => x.when.month));
+  P.ideas(acts, items, { today: TODAY, busy, n: 6 }).forEach(x => { if (x.free && x.when.month) assert.ok(!busy.has(x.when.month)); });
+});
+t('ideas: an empty list gets things in season in the next six months', () => {
+  const out = P.ideas(acts, [], { today: TODAY, country: 'GB', n: 6 });
+  assert.strictEqual(out.length, 6);
+  out.forEach(x => { assert.strictEqual(x.kind, 'season'); assert.notStrictEqual(byId[x.id].effort, 'demanding'); assert.notStrictEqual(x.why, 'any'); const m = (x.when.month || x.when.date).slice(0, 7); assert.ok(m >= TODAY.slice(0, 7) && m < '2027-05'); });
+});
 console.log(n + ' tests passed');

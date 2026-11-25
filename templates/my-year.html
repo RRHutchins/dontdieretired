@@ -45,6 +45,24 @@
       <ul data-my-clash-list></ul>
     </section>
 
+  </div>
+
+  {# Robin, 25 Nov 2026: the planner in three parts: what you are doing (the calendar above), what you are interested in
+     (your list, each with a time it could fit), and what we suggest (goes well with your list, or in season soon). #}
+  <section class="my-sec" data-my-list hidden aria-labelledby="my-l-h">
+    <h2 id="my-l-h">Saved for later</h2>
+    <p class="meta">Things on your list with no date yet, each with a time it could fit in your year.</p>
+    <ul class="my-ideas" data-my-list-items></ul>
+    <p class="meta" data-my-list-more hidden></p>
+  </section>
+  <section class="my-sec" data-my-ideas hidden aria-labelledby="my-i-h">
+    <h2 id="my-i-h">Suggested for you</h2>
+    <p class="meta" data-my-ideas-help></p>
+    <ul class="my-ideas" data-my-idea-items></ul>
+    <p class="meta"><a href="/list/">Browse everything in Things to do</a></p>
+  </section>
+
+  <div data-my-rest hidden>
     <h2 class="my-all-h">All your plans</h2>
     <div class="my-switch" role="group" aria-label="Show">
       <button type="button" class="chip" data-my-view="year" aria-pressed="true">The year</button>
