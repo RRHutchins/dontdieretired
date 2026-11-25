@@ -45,3 +45,8 @@ jobs:
       - run: python3 post_social.py
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+      # one-off videos in social_video/ (RUNBOOK §6s): posted at once to every DDR channel in Buffer; skips what Buffer holds
+      - run: python3 tools/post_video.py
+        if: always()
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
