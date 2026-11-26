@@ -5,6 +5,9 @@ date: 2026-11-25
 photo_file: "File:Birds on rocky shore of Robben Island with view to Bloubergstrand.jpg"
 photo_caption: "Looking across Table Bay from the rocky shore near the south end of Robben Island toward Bloubergstrand, on the mainland near Cape Town, with a pair of African oystercatchers on the rocks."
 photo_alt: "Rocky brown shoreline in the foreground with two black birds on the rocks, a stretch of blue sea dotted with reefs and kelp, and a low coastline with hills and mountains on the far side."
+photo_checked: 2026-11-26
+# photo_social: false: the photo passes the social checks, but this pack is dated 25 Nov and already in Buffer; adding the credit would change its text and post it again (RUNBOOK §6d).
+photo_social: false
 category: move
 tags: [open-water, sea-swimming, cold-water, marathon-swimming, endurance, south-africa, women]
 segments: [restarter, mover]
