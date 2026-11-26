@@ -58649,6 +58649,7 @@
   time: afternoon
   setting: outdoors
   company: others
+  season: Autumn and winter; courses usually November to April
   regions:
   - uk
   collection: arts
@@ -58725,7 +58726,7 @@
     checked: '2026-11-14'
   - label: 'GOV.UK, Hedgerow management rules: cutting and trimming'
     url: https://www.gov.uk/guidance/hedgerow-management-rules-cutting-and-trimming
-    checked: '2026-11-14'
+    checked: '2026-11-26'
   - label: 'Country Life, Hedgelaying: getting started'
     url: https://www.countrylife.co.uk/country-life/hedgelaying-getting-started-2768
     checked: '2026-11-14'
@@ -71921,6 +71922,7 @@
   time: days
   setting: either
   company: others
+  season: Outdoor ice mid-December to mid-March; indoor ice walls all year
   regions:
   - uk
   - us
@@ -72002,7 +72004,7 @@
     checked: '2026-11-19'
   - label: Ouray Ice Park, FAQ
     url: https://ourayicepark.com/faq
-    checked: '2026-11-19'
+    checked: '2026-11-26'
   - label: Ouray Ice Park, Clinics
     url: https://ourayicepark.com/shop/clinics
     checked: '2026-11-19'
@@ -93235,6 +93237,21 @@
     why: Choose your state to see the RRCA member clubs there, each with its own page; not every town has one.
     region: us
     checked: '2026-11-24'
+  - label: 'Athletics Northern Ireland: find a club (Northern Ireland)'
+    url: https://athleticsni.org/Clubs/Find-A-Club
+    why: A list of the clubs affiliated to Athletics NI, with each club's contacts; RR in the Category column means road running.
+    region: uk
+    checked: '2026-11-26'
+  - label: 'Run NI: find your nearest running group (Northern Ireland)'
+    url: https://athleticsni.org/Go-Run-NI/Find-Your-Nearest-Running-Group
+    why: Running groups registered with Run NI, most with where and when they meet; some run beginners' programmes, so check each group's own line.
+    region: uk
+    checked: '2026-11-26'
+  - label: 'Scottish Athletics: get involved and the Club Finder (Scotland)'
+    url: https://www.scottishathletics.org.uk/athletes/get-involved/
+    why: Scottish Athletics' page for newcomers, with its Club Finder to find and contact clubs near you, and jogscotland's recreational running groups.
+    region: uk
+    checked: '2026-11-26'
   seo_title: 'How to join a running club: RunTogether, RRCA, beginners'
   description: How to find and join a running club or group run in the UK and US, from free RunTogether sessions and walk/run groups to club membership and race perks.
   detail:
@@ -118658,6 +118675,16 @@
     why: England Athletics' look-up of affiliated clubs, with an Adults only filter; ask a club whether it has masters athletes training on the track and in the field.
     region: uk
     checked: '2026-11-24'
+  - label: 'Athletics Northern Ireland: find a club (Northern Ireland)'
+    url: https://athleticsni.org/Clubs/Find-A-Club
+    why: A list of the clubs affiliated to Athletics NI, with each club's contacts and the ages it caters for, including clubs listing Masters.
+    region: uk
+    checked: '2026-11-26'
+  - label: 'Scottish Athletics: get involved and the Club Finder (Scotland)'
+    url: https://www.scottishathletics.org.uk/athletes/get-involved/
+    why: Scottish Athletics' page for newcomers, with its Club Finder to find and contact clubs near you and see what disciplines they offer.
+    region: uk
+    checked: '2026-11-26'
   seo_title: 'Masters athletics: how to start track and field from 35'
   description: How to join masters track and field in the UK or US, from clubs and registration to open meetings and championships, with fees as last listed.
   detail:
@@ -134657,6 +134684,7 @@
   time: days
   setting: outdoors
   company: either
+  season: Mid-October to February; best November to January
   regions:
   - us
   - world
