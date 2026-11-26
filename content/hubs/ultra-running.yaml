@@ -46,6 +46,8 @@ landings:
 - {slug: in-canada, title: Ultramarathons in Canada, short: Canada, group: Where, filter: {country_has: Canada}}
 - {slug: in-south-africa, title: Ultramarathons in South Africa, short: South Africa, group: Where, filter: {country_has: South Africa}}
 - {slug: in-new-zealand, title: Ultramarathons in New Zealand, short: New Zealand, group: Where, filter: {country_has: New Zealand}}
+- {slug: in-australia, title: Ultramarathons in Australia, short: Australia, group: Where, filter: {country_has: Australia}}
+- {slug: in-japan, title: Ultramarathons in Japan, short: Japan, group: Where, filter: {country_has: Japan}}
 - {slug: in-europe, title: Ultramarathons in Europe, short: Europe, group: Where, filter: {continent: europe}}
 - {slug: in-north-america, title: Ultramarathons in North America, short: North America, group: Where, filter: {continent: north-america}}
 - {slug: in-south-america, title: Ultramarathons in South America, short: South America, group: Where, filter: {continent: south-america}}
@@ -2394,6 +2396,203 @@ events:
   more:
   - {label: 'Oman Desert Marathon: home page', url: 'https://omandesertmarathon.com/', checked: '2026-11-25'}
   - {label: 'Oman Desert Marathon: 165km and 100km race rules', url: 'https://omandesertmarathon.com/165km-100km-race-rules/', checked: '2026-11-25'}
+- id: ultra-mirage-el-djerid
+  name: Ultra Mirage El Djerid
+  series: independent
+  place: Tozeur, Djerid region
+  country: Tunisia
+  continent: africa
+  km: [161, 100, 50]
+  distances: 100 miles (161 km, a one-off for 2027), 100 km, 50 km and 25 km
+  terrain: [desert]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: The organizer says the race is open to all types of athletes and names no qualifying race. The next edition is on 2 October 2027 and registration opens on 2 December 2026; the one-off 100 miles is first come, first served.
+  note: The course crosses soft sand, small dunes, rocks, dried river beds and oases; the organizer calls it "the first Ultra taking place in the stunning Tunisian Sahara desert".
+  link: {label: 'Ultra Mirage El Djerid: home page', url: 'https://www.ultramirage.com/', checked: '2026-11-26'}
+  more:
+  - {label: 'Ultra Mirage El Djerid: 2026 registration page', url: 'https://www.ultramirage.com/registration-2026', checked: '2026-11-26'}
+- id: shinetsu-five-mountains-trail
+  name: Shinetsu Five Mountains Trail
+  series: independent
+  place: Shinetsu Kogen (Niigata and Nagano prefectures)
+  country: Japan
+  continent: asia
+  km: [163, 112]
+  distances: 100 miles (163 km) and 110 km (112 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [9]
+  entry: [qualifier, register]
+  entry_note: For the 2026 race, 100-mile runners needed at least one finish within the cutoff of a trail race over 100 km in the past three years; the 110 km named no qualifying race. Overseas runners shared 20 places across both races, first come, first served, through RUN Japan; total capacity was 600 for the 100 miles and 700 for the 110 km. The 2026 edition ran 21 to 23 September; no 2027 date was shown when we checked.
+  note: Both races start at Madarao Kogen and finish at Plaza Aurora.
+  time_limit: [{km: 163, hours: 33}, {km: 112, hours: 22}]
+  link: {label: 'Shinetsu Five Mountains Trail: race outline', url: 'https://sfmt100.com/en/outline-en/', checked: '2026-11-26'}
+- id: malnad-ultra
+  name: Malnad Ultra
+  series: independent
+  place: Mallanduru, Malnad region
+  country: India
+  continent: asia
+  km: [100, 50]
+  distances: 100 km, 50 km (day or night) and 30 km
+  climb: 3,410 m (100 km)
+  terrain: [trail]
+  format: single
+  month: [11]
+  entry: [qualifier]
+  entry_note: 'Every distance has a qualifying standard. For the 100 km you need one of: an earlier Malnad finish at 50 km or more, two marathons under 5 hours 30 in the same calendar year, an ITRA Performance Index above 375, a 50 km or longer trail finish that year, or a 75 km or longer stadium run. Registration for the 28 November 2026 edition had closed when we checked.'
+  note: The course runs through privately owned plantations and forest that the organizer calls "an extremely eco-sensitive zone", and much of it cannot be reached by vehicle.
+  time_limit: [{km: 100, hours: 21}, {km: 50, hours: 10}]
+  time_limit_text: 21 hours for the 100 km; 10 hours for the 50 km by day and 11 hours by night
+  link: {label: 'Malnad Ultra: race guide', url: 'https://malnadultra.com/race-guide/', checked: '2026-11-26'}
+  more:
+  - {label: 'Malnad Ultra: home page (next edition, cutoffs and climb)', url: 'https://malnadultra.com/', checked: '2026-11-26'}
+- id: vietnam-highlands-trail-by-utmb
+  name: Vietnam Highlands Trail by UTMB
+  series: utmb
+  place: Da Lat, Lam Dong (Central Highlands)
+  country: Vietnam
+  continent: asia
+  km: [101, 55]
+  distances: 100K (101.5 km), 50K (54.6 km), 20K (22.2 km) and 10K
+  terrain: [mountain, trail]
+  format: single
+  month: [1]
+  entry: [register]
+  entry_note: Open to all runners whether or not they hold a UTMB Index, first come, first served; Index holders get priority. The entry page says general entries run until 25 December 2026 or until places sell out, but the overview page already showed the 100K and 50K as closed when we checked (the 20K was still open).
+  note: New to the UTMB World Series in 2027 (7 to 10 January), built around four peaks (LangBiang, Elephant Mountain, Pinhatt and Bidoup), over open ridgelines and pine and primary forest.
+  link: {label: 'Vietnam Highlands Trail by UTMB: overview', url: 'https://vietnamhighlands.utmb.world/overview', checked: '2026-11-26'}
+  more:
+  - {label: 'Vietnam Highlands Trail by UTMB: entry info', url: 'https://vietnamhighlands.utmb.world/runners/entry-info', checked: '2026-11-26'}
+  - {label: 'UTMB World Series welcomes Vietnam Highlands Trail by UTMB to its 2027 calendar', url: 'https://utmb.world/news/new-vietnam', checked: '2026-11-26'}
+- id: hiroshima-ultra-trail-by-utmb
+  name: Hiroshima Ultra-Trail by UTMB
+  series: utmb
+  place: Hiroshima
+  country: Japan
+  continent: asia
+  km: [95, 50]
+  distances: 100K (95 km), 50K and 25K
+  climb: 5,600 m (100K)
+  terrain: [mountain, trail]
+  format: single
+  month: [4]
+  entry: [register]
+  entry_note: General entries opened on 20 August 2026, after 48 hours of first-come, first-served priority access to a limited allocation for UTMB Index holders. Runners must be 18 or over on race day.
+  note: The 100K starts and finishes in the city, ending on the Peace Line beneath the A-bomb Dome; in between are steep, hands-on climbs, technical descents and long stretches of forest road.
+  time_limit: [{km: 95, hours: 29}]
+  link: {label: 'Hiroshima Ultra-Trail by UTMB: HIROSHIMA 100K', url: 'https://hiroshima.utmb.world/races/HIROSHIMA100K', checked: '2026-11-26'}
+  more:
+  - {label: 'Hiroshima Ultra-Trail by UTMB: entry info', url: 'https://hiroshima.utmb.world/runners/entry-info', checked: '2026-11-26'}
+- id: trail-of-the-kings-lake-toba-by-utmb
+  name: Trail of the Kings - Lake Toba by UTMB
+  series: utmb
+  place: Samosir Island, Lake Toba
+  country: Indonesia
+  continent: asia
+  km: [100, 60]
+  distances: 100K, 60K, 25K and 17K
+  terrain: [mountain, trail, island]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: General entries run from 12 November 2026 to 30 May 2027, after 48 hours of first-come, first-served priority access to a limited allocation for UTMB Index holders.
+  note: Routes cross valleys, forest, mountains and old Batak villages on Samosir Island; the organizer says "Lake Toba is the largest volcanic lake in the world."
+  link: {label: 'Trail of the Kings - Lake Toba by UTMB: overview', url: 'https://laketoba.utmb.world/overview', checked: '2026-11-26'}
+  more:
+  - {label: 'Trail of the Kings - Lake Toba by UTMB: entry info', url: 'https://laketoba.utmb.world/runners/entry-info', checked: '2026-11-26'}
+- id: two-bays-trail-run
+  name: Two Bays Trail Run
+  series: independent
+  place: Mornington Peninsula, Victoria (Dromana and Cape Schanck)
+  country: Australia
+  continent: oceania
+  km: [56]
+  distances: 56 km and 28 km
+  terrain: [trail]
+  format: single
+  month: [1]
+  entry: [qualifier]
+  entry_note: You must meet a qualifying standard. For the 56 km that is an earlier Two Bays 56 km under 8 hours, or a marathon under 4 hours 30 in the 12 months before the race. Entries for the 17 January 2027 race close at noon on 13 January.
+  note: The 56 km runs out and back between Cape Schanck and Dromana, mostly through national parks; the organizer holds a fallback date a week later in case of high fire risk.
+  time_limit: [{km: 56, hours: 8}]
+  link: {label: 'Two Bays Trail Run: entrant info A to Z', url: 'https://www.twobaystrailrun.com/iEntrantInfo.html', checked: '2026-11-26'}
+  more:
+  - {label: 'Two Bays Trail Run: home page', url: 'https://www.twobaystrailrun.com/', checked: '2026-11-26'}
+- id: bogong-to-hotham
+  name: Bogong to Hotham
+  series: independent
+  place: Mountain Creek to Mt Hotham, Victoria
+  country: Australia
+  continent: oceania
+  km: [64]
+  distances: 64 km, 35 km and 29 km
+  terrain: [mountain, trail]
+  format: single
+  month: [1]
+  entry: [application]
+  entry_note: The organizer assesses entrants on trail experience, endurance and pace, and says the full 64 km "requires that you are in very good shape and have some experience in ultra running". All mandatory gear is required.
+  note: Known as the Rooftop Run, the 64 km climbs Mt Bogong, Victoria's highest mountain, then crosses the Bogong High Plains to finish on the summit of Mt Hotham; 2027 is its 36th running.
+  link: {label: 'Bogong to Hotham: home page', url: 'https://bogong2hotham.com.au/', checked: '2026-11-26'}
+  more:
+  - {label: 'Bogong to Hotham: course maps', url: 'https://bogong2hotham.com.au/course-maps/', checked: '2026-11-26'}
+- id: grand-raid-des-pyrenees
+  name: Grand Raid des Pyrénées
+  series: independent
+  place: Hautes-Pyrénées
+  country: France
+  continent: europe
+  km: [160, 120, 80, 60, 50, 40]
+  distances: Ultra Tour about 160 km; also about 120, 80, 60, 50 and 40 km
+  climb: about 10,000 m (160 km)
+  terrain: [mountain]
+  format: single
+  month: [8]
+  entry: [ballot, qualifier]
+  entry_note: Pre-register on the race website; every race except the relay is allocated by draw. Under the 2026 regulations the ultra races need effort points earned in a single race (130 for the 160 km), and every entrant needs an FFA licence or a PPS health certificate number.
+  note: The route passes the Pic du Midi de Bigorre and the cirques of Gavarnie, Estaubé and Troumouse; the organizer calls it "one of the most legendary and demanding races on the world ultra-trail circuit".
+  link: {label: 'Grand Raid des Pyrénées: races regulations 2026', url: 'https://www.grandraidpyrenees.com/races-regulations-2026/', checked: '2026-11-26'}
+  more:
+  - {label: 'Grand Raid des Pyrénées: home page (2027 dates)', url: 'https://www.grandraidpyrenees.com/en/', checked: '2026-11-26'}
+- id: ecotrail-paris
+  name: EcoTrail Paris
+  series: independent
+  place: Élancourt to the Eiffel Tower, Paris
+  country: France
+  continent: europe
+  km: [82]
+  distances: 80 km (81.8 km)
+  climb: 1,200 m
+  terrain: [trail]
+  format: single
+  month: [3]
+  entry: [register]
+  entry_note: Register online; you need an FFA 2026-2027 licence or a PPS health certificate. When we checked, the 80 km page showed both a link to register for the spring 2027 edition and "Inscriptions terminées" (entries closed) with a waiting list.
+  note: Starts on the Colline d'Élancourt and finishes on the first floor of the Eiffel Tower; the organizer puts the course at 92% in nature.
+  time_limit: [{km: 82, hours: 13.25}]
+  time_limit_text: '"Temps limite : 13h15" (13 hours 15 minutes)'
+  link: {label: 'EcoTrail Paris: Trail 80 km (in French)', url: 'https://www.ecotrailparis.com/course/trail-80-km', checked: '2026-11-26'}
+- id: lake-sonoma-100k
+  name: Lake Sonoma 100K
+  series: independent
+  place: Lake Sonoma, near Healdsburg, California
+  country: USA
+  continent: north-america
+  km: [100, 50]
+  distances: 100 km and 50 km
+  climb: 15,000 ft (100 km)
+  terrain: [trail]
+  format: single
+  month: [4]
+  entry: [register]
+  entry_note: Register through UltraSignup from the race page; no qualifying race is asked for. Finishing the 100K in under 19 hours counts as a Western States qualifier.
+  note: The 100K runs the "original old school LS course" with a climb up Pritchett Peak; pacers are not allowed.
+  time_limit: [{km: 100, hours: 19}]
+  link: {label: 'Run Lake Sonoma: 100K course details', url: 'https://runlakesonoma.com/100k-course-details/', checked: '2026-11-26'}
+  more:
+  - {label: 'Run Lake Sonoma: home page (100K, 50K, directions)', url: 'https://runlakesonoma.com/', checked: '2026-11-26'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
@@ -3078,3 +3277,113 @@ guides:
   - {label: 'Petzl, How is lighting performance measured with the ANSI/PLATO FL1 protocol?', url: 'https://www.petzl.com/US/en/Sport/How-is-lighting-performance-measured-with-the-ANSI-PLATO-FL1-protocol-', checked: '2026-11-25'}
   - {label: 'iRunFar, Best Running Headlamps of 2026 (Alli Miles, Meghan Hicks and Eszter Horanyi)', url: 'https://www.irunfar.com/best-running-headlamp', checked: '2026-11-25'}
   - {label: 'Advnture, The best running headlamps: tested on roads and trails (Claire Maxted, with Cat Ellis)', url: 'https://www.advnture.com/buying-guides/best-running-headlamps', checked: '2026-11-25'}
+- slug: waterproof-jackets
+  title: Choosing a waterproof jacket for an ultra
+  short: What race kit checks ask of a jacket, what the numbers on the label mean, and the jackets two independent reviewers pick for running
+  seo_title: 'Waterproof jackets for ultras: kit rules, ratings and reviewers'' picks'
+  description: How to choose a waterproof running jacket for an ultramarathon, from what Lakeland, Centurion and UTMB Mont-Blanc ask for at kit check, what hydrostatic head and breathability figures measure, and the jackets iRunFar and Advnture pick.
+  standfirst: A waterproof jacket is on most ultra kit lists, and a kit check can stop you starting. Start from your race's rules, learn what the figures on the label mean, then choose; here is what three races ask for and what two independent reviews recommend.
+  detail:
+  - h: Start from what your race asks for
+    p:
+    - 'The Lakeland 50 and 100 kit list asks for waterproof trousers and jacket that are fully waterproof with taped seams, and says wind or showerproof kit is not acceptable. The jacket must have a hood. There is a kit check at registration, and without the required kit you will not be allowed to start.'
+    - 'Centurion Running''s Thames Path 100 rules ask for a jacket of "Gore-tex or similar, minimum 10000mm+" with sealed seams and a hood, and impose a time penalty of one hour for any item found missing on the course. Its guidance on mandatory gear says jackets without sealed seams will not keep you dry, and that a jacket below that water resistance, or one that is only shower or wind proof, will not pass kit check.'
+    - 'HOKA UTMB Mont-Blanc''s 2027 regulations, in the penalty table for its OCC, MCC and ETC races, list "no waterproof jacket with a hood or non-compliant jacket" as a gap that brings immediate disqualification. Its mandatory equipment page says you must carry the kit from start to finish and that stewards may check it at any time.'
+    - So read your own race's list before you buy. The three points that come up again and again are a stated waterproof rating, taped or sealed seams, and a hood.
+  - h: What the numbers on the label mean
+    p:
+    - 'Waterproofing is usually given as a hydrostatic head, or water column, in millimetres. eVent Fabrics explains that the higher the water column, the more water pressure the fabric can withstand, and that it is commonly believed a garment must reach at least 10,000 mm to be called waterproof. iRunFar calls 10,000 millimetres the baseline for waterproof jackets, the same figure Centurion sets as its minimum.'
+    - 'Breathability is often given as a moisture vapor transfer rate (MVTR). eVent describes it as a measurement of the amount of water vapor or body moisture that passes through a fabric, generally expressed in grams per square meter per 24 hours. Advnture calls MVTR a commonly used measure of how breathable a fabric is.'
+    - 'A rating is only part of the story. iRunFar points out that seams are an unavoidable weakness that can let moisture in, which is why races ask for them to be taped or sealed.'
+  - h: What else to check
+    table:
+      head: [What to check, iRunFar, Advnture]
+      rows:
+      - [Hood, '"A well-fitting hood is necessary for keeping rain and snow out."', 'On long trail or mountain races, "having a hood is as wise a choice as having a pair of running gloves."']
+      - [Weight and packing, '"usually, the lighter the jacket, the smaller it will pack down."', '"Where speed is concerned, weight – or the lack of it – is key."']
+      - [Fit with a vest, '"If you want to wear a small pack under your rain jacket, you''ll probably need to size up as well."', 'Check the reviewer''s notes: one jacket it lists is marked as not suitable with a running vest because of its rear vent.']
+      - [Price and breathability, '"Generally, the lighter and more breathable a waterproof jacket is, the higher the price tag."', 'A running jacket should protect you from wind and rain "while remaining breathable, visible, lightweight and packable."']
+    after: 'From iRunFar''s "Best Running Rain Jackets of 2026" and Advnture''s "The best running jackets 2026", opened on 26 November 2026. Many running jackets are windproof rather than waterproof; Advnture''s list includes windshells, which would not pass the kit checks above.'
+  - h: How the picks on this page were chosen
+    p:
+    - 'The picks come from two independent reviews. iRunFar''s "Best Running Rain Jackets of 2026" (Carly Eisley, Meghan Hicks, Bryon Powell and Eszter Horanyi, updated 3 October 2026) says it is the result of several years of testing dozens of jackets. Advnture''s "The best running jackets 2026" (Alex Foxfield, with Craig Taylor, Claire Maxted, Tom Room and Helen Conner, last updated 14 February 2025) says its reviewers tested the jackets in a wide variety of challenging conditions. We list three of Advnture''s waterproof picks (overall, long distances and extreme conditions) and none of its windshells.'
+    - The labels and quotes are the reviewers' own words; we have not tested any jacket ourselves. Open each review for its full list, and check any jacket against your own race's kit rules before you rely on it.
+  kit_type: waterproof-jackets
+  picks:
+  - item: Waterproof running jacket (iRunFar)
+    why: 'From iRunFar''s 2026 guide: its overall pick, its ultralight pick, its heavy-duty pick and its budget pick. Whether any suits you depends on your race''s kit rules, your weather and your fit over a vest.'
+    options:
+    - tier: top
+      name: Patagonia Storm Racer Jacket
+      label: Best Overall Waterproof Running Jacket
+      quote: It finds the right balance between all the components that make a good rain jacket.
+      reviewer: iRunFar
+      review: {title: 'Best Running Rain Jackets of 2026', url: 'https://www.irunfar.com/best-running-rain-jacket', checked: '2026-11-26'}
+      buy: 'https://www.amazon.co.uk/s?k=Patagonia+Storm+Racer+Jacket'
+    - tier: good
+      name: Black Diamond Deploy 3L Shell
+      label: Best Heavy-Duty Trail Running Rain Jacket
+      quote: This three-layer jacket got high marks from our team for its combination of breathability and protection.
+      reviewer: iRunFar
+      review: {title: 'Best Running Rain Jackets of 2026', url: 'https://www.irunfar.com/best-running-rain-jacket', checked: '2026-11-26'}
+      buy: 'https://www.amazon.co.uk/s?k=Black+Diamond+Deploy+3L+Shell'
+    - tier: good
+      name: Rab Phantom Waterproof Jacket
+      label: Best Ultralight Rain Jacket for Running
+      quote: The jacket features a 2.5-layer construction with a Pertex Shield waterproof membrane and fully taped seams
+      reviewer: iRunFar
+      review: {title: 'Best Running Rain Jackets of 2026', url: 'https://www.irunfar.com/best-running-rain-jacket', checked: '2026-11-26'}
+      buy: 'https://www.amazon.co.uk/s?k=Rab+Phantom+Waterproof+Jacket'
+    - tier: value
+      name: Mac in a Sac Origin II
+      label: Best Budget Waterproof Running Jacket
+      quote: The jacket is also windproof and repels moderate precipitation well.
+      reviewer: iRunFar
+      review: {title: 'Best Running Rain Jackets of 2026', url: 'https://www.irunfar.com/best-running-rain-jacket', checked: '2026-11-26'}
+      buy: 'https://www.amazon.co.uk/s?k=Mac+in+a+Sac+Origin+II'
+  - item: Waterproof running jacket (Advnture)
+    why: 'From Advnture''s guide to running jackets: three of its waterproof picks (overall, long distances and extreme conditions); its windshell picks are left out.'
+    options:
+    - tier: top
+      name: R7 Gore-Tex Shakedry Trail Hooded Jacket
+      label: Best overall
+      quote: This jacket really does tick all the boxes.
+      reviewer: Advnture
+      review: {title: 'The best running jackets 2026', url: 'https://www.advnture.com/buying-guides/best-running-jacket', checked: '2026-11-26'}
+      buy: 'https://www.amazon.co.uk/s?k=R7+Gore-Tex+Shakedry+Trail+Hooded+Jacket'
+    - tier: good
+      name: Inov-8 Stormshell
+      label: Best for long distances
+      quote: The Inov-8 Stormshell is as close as it gets to an all-round running jacket.
+      reviewer: Advnture
+      review: {title: 'The best running jackets 2026', url: 'https://www.advnture.com/buying-guides/best-running-jacket', checked: '2026-11-26'}
+      buy: 'https://www.amazon.co.uk/s?k=Inov-8+Stormshell+jacket'
+    - tier: good
+      name: CimAlp Storm Pro Men's Ultrashell Trail Running Jacket
+      label: Best for extreme conditions
+      quote: it's a rugged, high quality jacket that will keep you warm and dry when it matters.
+      reviewer: Advnture
+      review: {title: 'The best running jackets 2026', url: 'https://www.advnture.com/buying-guides/best-running-jacket', checked: '2026-11-26'}
+      buy: 'https://www.amazon.co.uk/s?k=CimAlp+Storm+Pro+Ultrashell'
+  faq:
+  - q: What waterproof rating does an ultra jacket need?
+    a: Check your race. Centurion Running asks for a minimum of 10,000 mm with sealed seams and a hood, and iRunFar calls 10,000 millimetres the baseline for waterproof jackets. Lakeland asks for a fully waterproof jacket with taped seams and a hood, and says wind or showerproof kit is not acceptable.
+  - q: Will a windproof or showerproof jacket pass kit check?
+    a: Not at the races on this page. Lakeland says wind or showerproof kit is not acceptable, and Centurion says a jacket that is only shower or wind proof will not pass kit check.
+  - q: What happens if my jacket does not meet the rules?
+    a: It depends on the race. Lakeland will not let you start without the required kit; Centurion imposes a one-hour time penalty for any missing item on the course; UTMB Mont-Blanc's penalty table for its OCC, MCC and ETC races disqualifies a runner with no waterproof jacket with a hood, or a non-compliant one.
+  kit:
+  - {name: Waterproof running jacket with a hood, why: 'check the label gives a waterproof rating your race accepts, that the seams are taped or sealed, and that the hood fits over a cap', url: 'https://www.amazon.co.uk/s?k=waterproof+running+jacket+taped+seams+hood'}
+  - {name: Waterproof running trousers, why: 'some races, including Lakeland, also ask for waterproof trousers with taped seams; check they go on over shoes', url: 'https://www.amazon.co.uk/s?k=waterproof+running+trousers+taped+seams'}
+  - {name: Waterproof gloves or mitts, why: 'check your race''s list for gloves, and that you can still use zips and your vest pockets in them', url: 'https://www.amazon.co.uk/s?k=waterproof+running+gloves'}
+  - {name: Dry bag for spare layers, why: 'check it fits in your vest with the jacket packed, so spare clothes stay dry', url: 'https://www.amazon.co.uk/s?k=small+dry+bag+running'}
+  sources:
+  - {label: 'The Montane Lakeland 50 and 100, Kit requirements', url: 'https://lakeland100.com/kit-requirements/', checked: '2026-11-26'}
+  - {label: 'Centurion Running, Thames Path 100 2026 rules', url: 'https://onecommunity.centurionrunning.com/races/thames-path-100-2026/section/rules', checked: '2026-11-26'}
+  - {label: 'Centurion Running, Why/What Mandatory Gear?', url: 'https://centurionrunning.com/section/resources/whywhat-mandatory-gear', checked: '2026-11-26'}
+  - {label: 'HOKA UTMB Mont-Blanc, 2027 regulations', url: 'https://montblanc.utmb.world/races-runners/other-information/regulation', checked: '2026-11-26'}
+  - {label: 'HOKA UTMB Mont-Blanc, Mandatory equipment', url: 'https://montblanc.utmb.world/races-runners/runners/mandatory-equipment', checked: '2026-11-26'}
+  - {label: 'eVent Fabrics, Waterproof and Breathability Ratings: Defining Relationships in Outerwear (2025)', url: 'https://www.eventfabrics.com/blog/waterproof-and-breathability-ratings-defining-relationships-in-outerwear', checked: '2026-11-26'}
+  - {label: 'eVent Fabrics, What is MVTR (and why does it matter)? (2025)', url: 'https://eventfabrics.com/what-is-mvtr-and-why-does-it-matter/', checked: '2026-11-26'}
+  - {label: 'iRunFar, Best Running Rain Jackets of 2026 (Carly Eisley, Meghan Hicks, Bryon Powell and Eszter Horanyi)', url: 'https://www.irunfar.com/best-running-rain-jacket', checked: '2026-11-26'}
+  - {label: 'Advnture, The best running jackets 2026 (Alex Foxfield and others)', url: 'https://www.advnture.com/buying-guides/best-running-jacket', checked: '2026-11-26'}
