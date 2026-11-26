@@ -2,6 +2,9 @@
 title: "Through cold Atlantic water off Cape Town, Karen Kennedy swam to Robben Island and back twice"
 slug: karen-kennedy-quadruple-robben-island-swim
 date: 2026-11-25
+photo_file: "File:Birds on rocky shore of Robben Island with view to Bloubergstrand.jpg"
+photo_caption: "Looking across Table Bay from the rocky shore near the south end of Robben Island toward Bloubergstrand, on the mainland near Cape Town, with a pair of African oystercatchers on the rocks."
+photo_alt: "Rocky brown shoreline in the foreground with two black birds on the rocks, a stretch of blue sea dotted with reefs and kelp, and a low coastline with hills and mountains on the far side."
 category: move
 tags: [open-water, sea-swimming, cold-water, marathon-swimming, endurance, south-africa, women]
 segments: [restarter, mover]
