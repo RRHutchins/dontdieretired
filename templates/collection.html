@@ -13,19 +13,50 @@
 {{ share_button(cfg.site.url ~ '/list/' ~ coll.slug ~ '/', coll.plural, 'list') }}</header>
 <p class="meta fl-choices-note"><strong>Add to my year</strong> gives it a date and a step-by-step plan. <strong>Save for later</strong> keeps it on your list with no date.</p>
 
-<ul class="fl-grid">
-{% for c in coll.acts %}
+{% macro card(c, hn='h2') %}
   <li class="fl-item" data-cat="{{ c.category }}" data-id="{{ c.id }}" data-title="{{ c.title }}">
     {% if c.photo %}<img class="fl-photo" src="{{ c.photo.small }}" alt="" width="800" height="450" loading="lazy" decoding="async">{% endif %}
     <p class="kicker">{{ L.effort[c.effort] }}{% if c.region_label %} · {{ c.region_label }}{% endif %}</p>
-    <h2 class="h3"><a href="/list/{{ c.id }}/">{{ c.title }}</a></h2>
+    <{{ hn }} class="h3"><a href="/list/{{ c.id }}/">{{ c.title }}</a></{{ hn }}>
     <p class="fl-why">{{ c.why_short }}</p>
     <p class="fl-meta">{{ L.cost[c.cost] }} · {{ L.time[c.time] }}</p>
     <p class="fl-go" aria-hidden="true">How to start and where to go <span>→</span></p>
     {{ year_acts(c.id) }}
   </li>
+{% endmacro %}
+{% if coll.sections %}
+<nav class="cs-nav" aria-label="Sections on this page">
+  <ul class="gx-chips">{% for sec in coll.sections %}<li><a class="chip" href="#{{ sec.id }}">{{ sec.label }} <span class="gx-c">{{ sec.acts|length }}</span></a></li>{% endfor %}</ul>
+</nav>
+{% if gifts_season %}
+<aside class="cs-gifts" aria-labelledby="cs-gifts-h">
+  <h2 id="cs-gifts-h" class="h3">{{ gifts_season_name }} presents for makers, players and writers</h2>
+  <p>Every page below has a section of present ideas: a class or workshop to book, the starter kit to go with it, and small things for a stocking. Or start from the gift pages:</p>
+  <ul class="gx-chips">
+    <li><a class="chip" href="/gifts/makers/">Makers and artists</a></li>
+    <li><a class="chip" href="/gifts/painters/">Painters and drawers</a></li>
+    <li><a class="chip" href="/gifts/stitchers/">Knitters, stitchers and sewers</a></li>
+    <li><a class="chip" href="/gifts/music-and-dance/">Music and dance</a></li>
+    <li><a class="chip" href="/gifts/writers/">Writers</a></li>
+    <li><a class="chip" href="/gifts/stocking-fillers/makers/">Stocking fillers for makers</a></li>
+    <li><a class="chip" href="/gifts/stocking-fillers/music/">Stocking fillers for musicians</a></li>
+  </ul>
+</aside>
+{% endif %}
+{% for sec in coll.sections %}
+<section class="cs-sec" id="{{ sec.id }}" aria-labelledby="{{ sec.id }}-h">
+  <h2 id="{{ sec.id }}-h">{{ sec.label }}</h2>
+  <p class="cs-intro">{{ sec.intro }}{% if gifts_season and sec.gift %} <a href="/gifts/{{ sec.gift }}/">{{ gifts_season_name }} gift ideas →</a>{% endif %}</p>
+  <ul class="fl-grid">{% for c in sec.acts[:9] %}{{ card(c, 'h3') }}{% endfor %}</ul>
+  {% if sec.acts|length > 9 %}<details class="cs-more"><summary>Show all {{ sec.acts|length }} in {{ sec.label | lower }}</summary>
+  <ul class="fl-grid">{% for c in sec.acts[9:] %}{{ card(c, 'h3') }}{% endfor %}</ul></details>{% endif %}
+</section>
 {% endfor %}
+{% else %}
+<ul class="fl-grid">
+{% for c in coll.acts %}{{ card(c) }}{% endfor %}
 </ul>
+{% endif %}
 
 <div class="prose narrow fl-about">
 <p>{{ coll.note }}</p>

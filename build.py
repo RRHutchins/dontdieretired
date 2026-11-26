@@ -903,7 +903,23 @@ def build(make_social=True):
         COLLECTIONS = {"arts": {"slug": "arts-and-crafts", "label": "Arts and crafts", "plural": "Arts, crafts and music",
                                 "blurb": "Drawing, painting, pottery, printmaking, glass, lettering, yarn, music and writing: things to make and play, with what a first class is really like, what it costs and where to find one in the UK and the US.",
                                 "title": "Arts and crafts classes for beginners: where to start", "meta": "Life drawing, pottery, watercolour, linocut, stained glass, calligraphy, ukulele, knitting and writing: what a first class is like and where to find one.",
-                                "note": "Course prices and dates come from each provider's own page on the day we checked it, and change; the provider's page is always the one to trust."},
+                                "note": "Course prices and dates come from each provider's own page on the day we checked it, and change; the provider's page is always the one to trust.",
+                                # Sections on /list/arts-and-crafts/ (Robin, 26 Nov 2026: "Populate the arts section"). Each activity goes in the
+                                # first section whose pattern matches its id or title; anything left goes in "More to make and try". `gift` is a
+                                # /gifts/ group id, linked while the gift season is on.
+                                "sections": [
+                                    ("singing", "Singing and choirs", "Choirs with no audition, barbershop, gospel, shanties and the great choral works, and lessons for your own voice.", r"choir|\bsing|chorus|shant|messiah|cappella|operatic|gilbert|sacred-harp|chorale|choral", "music-and-dance"),
+                                    ("pottery", "Pottery, clay and ceramics", "The wheel, hand-building, raku firing, painting china and sculpting in clay, with where to find a class with a kiln.", r"pott|(?<!silver-)clay|ceramic|raku|china-painting", "makers"),
+                                    ("painting", "Painting, drawing and lettering", "Watercolor, acrylics, oils, pastels, life drawing, sketching outdoors, illustration and calligraphy.", r"paint|draw|sketch|watercol|pastel|gouache|illustrat|calligraph|signwrit|comic|encaustic|tempera|gild|summer-exhibition|art-society|nature-journal", "painters"),
+                                    ("print", "Printmaking, paper and books", "Linocut, screen printing, etching, cyanotype, letterpress, bookbinding, origami and papercraft.", r"print|lino|etching|engrav|cyanotype|origami|paper|quill|bookbind|collage|marbl|pinhole", "painters"),
+                                    ("textiles", "Yarn, thread and textiles", "Knitting, crochet, embroidery, sewing, quilting, weaving, spinning, lace, dyeing and rugs.", r"knit|crochet|embroider|stitch|needle|sew|quilt|weav(?!e-a-willow)|spin|felt|macram|lace|tatting|rug|dye|shibori|batik|silk|millin|nalbind|kumihimo|smock|sashiko|crewel|hardanger|tapestry|goldwork|tufting|blanket|smocking", "stitchers"),
+                                    ("glass-metal", "Glass, metal and jewelry", "Glassblowing, stained glass, fusing, silver and beaded jewelry, enamelling, blacksmithing and knife making.", r"glass|jewel|silver|enamel|smith|knife|weld|bronze|lapidary|bead", "makers"),
+                                    ("wood", "Wood, stone and things to build", "Spoon carving, woodturning, joinery, furniture, willow, leather, mosaic, stone carving and boats.", r"wood|spoon|carv|turn|joiner|chair|furniture|stone|mosaic|willow|basket|leather|shoe|boat|coracle|upholst|clock|marquetry|pyrograph|wire-sculpture|model-railway|dolls|tile-a-table", "makers"),
+                                    ("music", "Learn an instrument and play with others", "From a first ukulele or tin whistle to the cello, the bagpipes and the oud, and the orchestras, bands and sessions to join.", r"learn-the-|music|band|orchestra|drum|piano|guitar|ukulele|bell|chamber|samba|gamelan|session|jam|busk|dj\b|-dj|conduct|songwrit|handpan|pipe|recorder|piece-for|jazz|steel-pan|cajon|tabla|taiko|bodhran|tin-whistle|bluegrass", "music-and-dance"),
+                                    ("writing", "Writing, poetry and storytelling", "A writing course, a first draft of a book, your own life story, poetry, screenplays and telling stories out loud.", r"writ|poet|story|screenplay|memoir|life-story|storytell", "writers"),
+                                    ("stage", "Stage, screen, photography and festivals", "Acting, improv, stand-up, voice work, puppetry, dance, film and photography, and the festivals worth travelling for.", r"theat|act|comed|improv|voice|film|photo|camera|animation|globe|puppet|danc|hula|swing|crier|festival|fleadh|celtic|magic", "music-and-dance"),
+                                    ("more", "More to make and try", "Candles, soap, perfume, flowers, bonsai, terrariums, cake decorating and other crafts.", r".", "makers"),
+                                ]},
                        "military": {"slug": "military-physical-challenges", "label": "Military physical challenge", "plural": "Military physical challenges",
                                     "blurb": "Marches, runs and loaded carries that are based on military tests or run by forces charities, and that members of the public can enter. Each is hard in its own way, and each has an official page with the entry rules.",
                                     "note": "We list an event here only when its official page shows that the public can enter and that it is still being run. Being listed does not mean the armed forces, or any charity, endorse this site."}}
@@ -1062,8 +1078,21 @@ def build(make_social=True):
                     parts.append(f'<path d="{a["d"]}" data-area="{a["id"]}" data-name="{nm}" aria-hidden="true"><title>{nm}</title></path>')
             (DIST / "static" / "map" / "world.svg").write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{shapes["world"]["viewBox"]}" role="group" aria-label="Map of the world">{"".join(parts)}</svg>', encoding="utf-8")
         for v in colls:
+            if v.get("sections") and not isinstance(v["sections"][0], dict):
+                left, secs = list(v["acts"]), []
+                for sid, lab, intro, pat, gid in v["sections"]:
+                    rx = re.compile(pat)
+                    mine = [c for c in left if rx.search(c["id"]) or rx.search(c["title"].lower())]
+                    left = [c for c in left if c not in mine]
+                    if mine: secs.append({"id": sid, "label": lab, "intro": intro, "acts": mine, "gift": gid})
+                v["sections"] = secs
             item_list = [{"@type": "ListItem", "position": n, "name": c["title"], "url": f"{cfg['site']['url']}/list/{c['id']}/"} for n, c in enumerate(v["acts"], 1)]
             urls.append(out(f"/list/{v['slug']}/", "collection.html", coll=v, L=LBL, total=len(chs), item_list=item_list))
+            if v["id"] == "arts":
+                pages.append({"title": v["title"], "url": f"/list/{v['slug']}/", "category": "think", "excerpt": v["blurb"],
+                              "tags": ["arts", "art", "crafts", "craft", "music", "painting", "pottery", "classes", "instrument", "gifts", "activities"],
+                              "image": "/static/og-default.png", "art": "/static/og-default.png"})
+                continue
             pages.append({"title": f"{v['plural']} you can enter", "url": f"/list/{v['slug']}/", "category": "move", "excerpt": v["blurb"],
                           "tags": ["military", "challenge", "challenges", "march", "tab", "ruck", "yomp", "army", "marines", "paras", "activities"],
                           "image": "/static/og-default.png", "art": "/static/og-default.png"})

@@ -167,32 +167,94 @@ groups:
 - id: makers
   label: Makers and artists
   h1: Presents for makers and artists
-  seo_title: "Craft and art class gifts: pottery, glass, jewellery, wood"
-  description: "Craft and art class present ideas: pottery on the wheel, glassblowing, silver jewellery, knife making, spoon carving, willow weaving, watercolour and photography."
-  lead: "A class where they come home with something they made: a bowl, a ring, a spoon, a knife, a painting."
+  seo_title: "Craft and art class gifts: pottery, glass, jewelry, wood"
+  description: "Craft and art class present ideas: pottery on the wheel, glassblowing, silver jewelry, knife making, spoon carving, stained glass, mosaic, candles and perfume, with starter kits to go with them."
+  lead: "A class where they come home with something they made: a bowl, a ring, a spoon, a knife, a candle, a panel of glass."
   ideas:
-  - id: try-pottery-on-the-wheel
-    gift: "A pottery wheel class"
-    book:
-    - {label: "Search pottery classes on Viator", why: "taster sessions in many towns and cities", url: "https://www.viator.com/searchResults/all?text=pottery+class", aff: viator}
+  - {id: try-pottery-on-the-wheel, gift: "A pottery wheel class"}
   - {id: paint-your-own-pottery, gift: "A paint-your-own pottery session"}
-  - id: try-glassblowing
-    gift: "A glassblowing taster"
-    book:
-    - {label: "Search glassblowing workshops on GetYourGuide", why: "short workshops in glass studios", url: "https://www.getyourguide.com/s/?q=glassblowing+workshop", aff: getyourguide}
-  - id: make-silver-jewellery
-    gift: "A silver jewellery workshop"
-    book:
-    - {label: "Search jewellery workshops on GetYourGuide", why: "make-a-ring and similar one-day classes", url: "https://www.getyourguide.com/s/?q=jewellery+making+workshop", aff: getyourguide}
+  - {id: try-hand-building-with-clay, gift: "A hand-building clay class, or air-dry clay to start at home"}
+  - {id: try-glassblowing, gift: "A glassblowing taster"}
+  - {id: make-silver-jewellery, gift: "A silver jewelry workshop"}
+  - {id: learn-silver-clay-jewellery, gift: "A silver clay kit for a first pendant"}
   - {id: learn-knife-making, gift: "A knife-making course"}
-  - {id: carve-a-wooden-spoon, gift: "A spoon-carving day"}
+  - {id: carve-a-wooden-spoon, gift: "A spoon-carving day, or a carving kit"}
+  - {id: learn-woodcarving, gift: "A woodcarving kit and a first class"}
   - {id: weave-a-willow-basket, gift: "A willow basket workshop"}
   - {id: learn-woodworking, gift: "A woodworking course"}
   - {id: make-a-stained-glass-panel, gift: "A stained glass class"}
-  - {id: paint-in-watercolour, gift: "A watercolour class and a paint set"}
+  - {id: make-a-mosaic, gift: "A mosaic workshop or starter kit"}
+  - {id: learn-leatherwork, gift: "A leatherwork kit for a first wallet"}
+  - {id: learn-candle-making, gift: "A candle-making workshop or kit"}
+  - {id: learn-perfume-making, gift: "A make-your-own perfume session"}
+  - {id: make-a-terrarium, gift: "A terrarium kit"}
+  - {id: learn-kintsugi, gift: "A kintsugi kit, to mend with gold"}
+  - {id: learn-bookbinding, gift: "A bookbinding kit for a first notebook"}
+  - {id: take-a-photography-course, gift: "A photography course or photo walk"}
+  - {id: learn-film-photography, gift: "A film camera and a darkroom class"}
+
+- id: painters
+  label: Painters and drawers
+  h1: Presents for painters and people who want to draw
+  seo_title: "Gifts for painters and artists: classes, paint sets, sketching kits"
+  description: "Present ideas for painters and people who want to learn to draw: watercolor, acrylic, oil and pastel sets, sketching kits, calligraphy sets, printmaking and painting classes."
+  lead: "For the one who keeps saying they used to draw: a set of paints, a sketchbook to fill, or a class to get them started."
+  ideas:
+  - {id: paint-in-watercolour, gift: "A watercolor class and a paint set"}
+  - {id: paint-in-acrylics, gift: "An acrylic painting set with an easel"}
+  - {id: learn-oil-painting, gift: "An oil painting set and a beginners' class"}
+  - {id: learn-to-draw, gift: "A drawing set and a sketchbook"}
+  - {id: go-to-a-life-drawing-class, gift: "A run of life drawing classes"}
+  - {id: learn-to-paint-with-pastels, gift: "A box of soft pastels"}
+  - {id: try-gouache-painting, gift: "A gouache set"}
+  - {id: try-nature-journaling, gift: "A pocket watercolor set for nature journaling"}
+  - {id: join-an-urban-sketchers-meet, gift: "An urban sketching kit"}
+  - {id: learn-botanical-illustration, gift: "Watercolor pencils for botanical drawing"}
+  - {id: learn-chinese-brush-painting, gift: "A Chinese brush painting set"}
   - {id: learn-calligraphy, gift: "A calligraphy class and pens"}
-  - {id: take-a-photography-course, gift: "A photography course"}
+  - {id: make-a-linocut-print, gift: "A linocut printing kit"}
+  - {id: try-screen-printing, gift: "A screen printing workshop"}
+  - {id: try-monoprinting, gift: "A gel printing plate"}
+  - {id: go-on-a-painting-holiday, gift: "A painting holiday"}
+
+- id: stitchers
+  label: Knitters, stitchers and sewers
+  h1: Presents for knitters, stitchers and sewers
+  seo_title: "Gifts for knitters, crocheters and sewers: kits and classes"
+  description: "Present ideas for knitters, crocheters, embroiderers, quilters and dressmakers: beginner kits, a sewing course, a quilting starter set, sashiko, macramé, weaving and spinning."
+  lead: "Yarn, thread and cloth: a kit with everything for a first piece, or a course that ends in something to wear."
+  ideas:
+  - {id: learn-to-knit, gift: "A knitting kit for beginners"}
+  - {id: learn-to-crochet, gift: "A crochet kit for beginners"}
+  - {id: join-a-knitting-group, gift: "Needles, yarn and a seat at a knitting group"}
+  - {id: learn-embroidery, gift: "An embroidery kit or workshop"}
+  - {id: learn-cross-stitch, gift: "A cross stitch kit"}
+  - {id: learn-needlepoint, gift: "A needlepoint kit"}
+  - {id: learn-sashiko, gift: "A sashiko kit"}
   - {id: learn-to-sew-your-own-clothes, gift: "A dressmaking course"}
+  - {id: make-a-patchwork-quilt, gift: "A quilting starter kit"}
+  - {id: learn-macrame, gift: "A macramé kit"}
+  - {id: learn-felt-making, gift: "A needle felting kit"}
+  - {id: learn-to-weave-on-a-loom, gift: "A weaving workshop"}
+  - {id: learn-to-spin-yarn, gift: "A drop spindle kit"}
+  - {id: make-a-rag-rug, gift: "A rag rug kit"}
+  - {id: try-rug-tufting, gift: "A rug tufting workshop"}
+
+- id: writers
+  label: Writers
+  h1: Presents for writers and would-be writers
+  seo_title: "Gifts for writers: writing courses, journals and memoir prompts"
+  description: "Present ideas for writers: a creative writing course, a guided novel-writing journal, a memoir prompt book, a poetry workshop, a writers' group or a screenwriting guide."
+  lead: "For the novel they keep talking about, the family story only they can tell, or the poem they have never read out loud."
+  ideas:
+  - {id: take-a-creative-writing-course, gift: "A creative writing course"}
+  - {id: write-a-book, gift: "A guided journal for writing a novel"}
+  - {id: write-your-life-story, gift: "A memoir journal with prompts"}
+  - {id: take-a-poetry-workshop, gift: "A poetry workshop"}
+  - {id: join-a-writers-group, gift: "A notebook and a place at a writers' group"}
+  - {id: enter-a-short-story-competition, gift: "A short story guide and a competition entry"}
+  - {id: write-a-screenplay, gift: "A screenwriting guide"}
+  - {id: learn-oral-storytelling, gift: "A storytelling course"}
 
 - id: food-and-drink
   label: Cooks and food lovers
@@ -222,20 +284,28 @@ groups:
 - id: music-and-dance
   label: Music and dance
   h1: Presents for music lovers and dancers
-  seo_title: "Music lesson and dance class gift ideas"
-  description: "Present ideas for music lovers and dancers: lessons on the ukulele, piano, guitar or drums, singing lessons, ballroom, salsa and swing classes, and guitar making."
-  lead: The instrument they always meant to learn, or a dance class to go to together.
+  seo_title: "Music lesson, instrument and dance class gift ideas"
+  description: "Present ideas for music lovers and dancers: a ukulele, guitar, violin or drum kit with first lessons, singing lessons, a choir, ballroom, salsa and swing classes, DJing and music production."
+  lead: The instrument they always meant to learn, a choir to join, or a dance class to go to together.
   ideas:
   - {id: learn-the-ukulele, gift: "A ukulele and a beginners' course"}
-  - {id: learn-the-piano, gift: "Piano lessons"}
   - {id: learn-the-guitar, gift: "A guitar and first lessons"}
-  - {id: learn-the-drums, gift: "Drum lessons"}
+  - {id: learn-the-piano, gift: "Piano lessons"}
+  - {id: learn-the-violin, gift: "A violin outfit and first lessons"}
+  - {id: learn-the-drums, gift: "Drum lessons, or a kit they can play with headphones"}
+  - {id: learn-the-banjo, gift: "A banjo and first lessons"}
+  - {id: learn-the-bass-guitar, gift: "A bass guitar and amp"}
+  - {id: learn-the-harmonica, gift: "A harmonica and a tutor book"}
+  - {id: learn-the-tin-whistle, gift: "A tin whistle and a tutor book"}
+  - {id: play-the-handpan, gift: "A steel tongue drum, or handpan lessons"}
   - {id: take-singing-lessons, gift: "Singing lessons"}
+  - {id: join-rock-choir, gift: "A term with a choir, no audition"}
+  - {id: learn-to-dj, gift: "A DJ controller"}
+  - {id: learn-music-production, gift: "A music production course and a MIDI keyboard"}
+  - {id: learn-guitar-making, gift: "A course to build their own guitar"}
   - {id: take-a-ballroom-class, gift: "Ballroom classes for two"}
   - {id: learn-salsa, gift: "Salsa classes"}
   - {id: learn-swing-dancing, gift: "Swing dancing classes"}
-  - {id: learn-music-production, gift: "A music production course"}
-  - {id: learn-guitar-making, gift: "A course to build their own guitar"}
 
 - id: adventure
   label: Adventure and thrills

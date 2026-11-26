@@ -1606,3 +1606,15 @@ li.prod{display:grid;grid-template-columns:56px minmax(0,1fr);gap:.85em;align-it
 .pl-unsaved p{margin:0 0 6px}.pl-unsaved .pl-acts{margin:6px 0 4px}
 .pl-unsaved-end{margin-top:18px}
 .pl-other{margin:2px 0 6px}.pl-other>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--brand-ink);font-weight:600}
+
+/* Sections on the arts collection page (26 Nov 2026) */
+.cs-nav{margin:0 0 1.25rem}
+.cs-gifts{border:2px solid var(--brand);border-radius:12px;padding:1rem 1.1rem;margin:0 0 2rem;background:#fff7f5}
+.cs-gifts h2{margin-top:0}
+.cs-sec{margin:2.25rem 0 0;scroll-margin-top:5rem}
+.cs-intro{max-width:46rem}
+.cs-more{margin:1rem 0 0}
+.cs-more>summary{cursor:pointer;font-weight:600;min-height:44px;display:inline-flex;align-items:center;padding:0 1rem;border:1px solid currentColor;border-radius:999px}
+.cs-more[open]>summary{margin-bottom:1rem}
+.cs-nav .gx-chips,.cs-gifts .gx-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.cs-nav .chip,.cs-gifts .chip{display:inline-flex;align-items:center;gap:.35em;text-decoration:none;line-height:1.25;white-space:normal;height:auto}

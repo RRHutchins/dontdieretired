@@ -90,6 +90,7 @@ posts:
     slug: gift-music
     page: music-and-dance
     card: "The instrument they always meant to learn"
+    ideas: ["A ukulele and a beginners' course", "Piano lessons", "A guitar and first lessons", "Drum lessons"]
     text: "A ukulele and a beginners' course, piano lessons, drums, singing, or ballroom classes for two. Gift ideas for music lovers and dancers."
   - date: "2026-12-05"
     slug: gift-cyclists
@@ -143,6 +144,39 @@ posts:
     kicker: "Left it late?"
     card: "Some of the best presents cost nothing but time"
     text: "A Saturday parkrun with you alongside, a wild swim with company, a walk up a hill you have both been meaning to climb. Write the promise in a card."
+  # Arts gift posts (26 Nov 2026, Robin: "Add social media posts for arts"), reviewed by Claude Sonnet (writer: Claude Opus).
+  - date: "2026-12-10"
+    slug: gift-painters
+    page: painters
+    card: "For the one who keeps saying they used to draw"
+    text: "A watercolor set, a box of pastels, a sketching kit or a life drawing class (drawing from a live model) could get someone who used to draw started again. Gift ideas for painters, each with how to start. Who's the artist in your family?"
+    reviewed: "2026-11-26, Claude Sonnet (writer: Claude Opus)"
+  - date: "2026-12-12"
+    slug: gift-stitchers
+    page: stitchers
+    card: "Presents for knitters, stitchers and sewers"
+    text: "Wool, thread, fabric: gift ideas for people who like to make things, with a beginner's kit or course and how to start. Do you knit, stitch or sew?"
+    reviewed: "2026-11-26, Claude Sonnet (writer: Claude Opus)"
+  - date: "2026-12-14"
+    slug: gift-writers
+    page: writers
+    card: "For the novel they keep talking about"
+    text: "Someone you know keeps saying they'll write a book. A creative writing course, a guided novel journal, a memoir prompt book or a poetry workshop could be the push. Gift ideas for writers. What would you write about?"
+    reviewed: "2026-11-26, Claude Sonnet (writer: Claude Opus)"
+  - date: "2026-12-15"
+    slug: gift-instruments
+    page: music-and-dance
+    card: "A violin, a banjo, or drums they can play with headphones"
+    ideas: ["A violin outfit and first lessons", "A banjo and first lessons", "A bass guitar and amp", "A drum kit they can play with headphones"]
+    text: "Someone you know always meant to learn an instrument. A ukulele, guitar, violin or banjo with first lessons could be the start, or a drum kit they can play with headphones. Which instrument would you learn?"
+    reviewed: "2026-11-26, Claude Sonnet (writer: Claude Opus)"
+  - date: "2026-12-17"
+    slug: gift-craft-classes-late
+    page: makers
+    kicker: "Last-minute idea?"
+    card: "A bowl, a ring, a candle or a glass panel they made"
+    text: "A craft class makes a present they can look forward to. Pottery, glassblowing, silver jewelry, stained glass, candles or a make-your-own perfume session. Which would you book?"
+    reviewed: "2026-11-26, Claude Sonnet (writer: Claude Opus)"
   # Stocking fillers (RUNBOOK §6v): a second gift post at 15:30 UK, 20 Nov to 12 Dec.
   - date: "2026-11-20"
     slug: gift-sf-hub
