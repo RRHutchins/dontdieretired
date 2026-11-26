@@ -1,0 +1,57 @@
+## facebook
+
+Original Medicare doesn't cover gym memberships or fitness programs, says Medicare.gov. But Medicare Advantage Plans, other Medicare health plans and Medigap plans may include them, so it is worth a phone call.
+
+The best-known programs are SilverSneakers, included at no additional cost with many Medicare Advantage plans, and Renew Active, available with select UnitedHealthcare Medicare plans. Both offer gym access plus online and in-person classes.
+
+The catch: plans can change their benefits each year. Your Annual Notice of Change lists what changes in January, and Open Enrollment runs to December 7.
+
+Our guide compares the programs side by side and shows how to check your own plan in a few minutes. Have you checked whether yours includes a gym?
+
+
+Read the full story → https://dontdieretired.com/move/medicare-gym-fitness-benefits/?utm_source=facebook&utm_medium=social&utm_campaign=daily
+
+#DontDieRetired
+
+## instagram
+
+Original Medicare doesn't cover gym memberships or fitness programs, says Medicare.gov. But Medicare Advantage Plans, other Medicare health plans and Medigap plans may include them, so it is worth a phone call.
+
+The best-known programs are SilverSneakers, included at no additional cost with many Medicare Advantage plans, and Renew Active, available with select UnitedHealthcare Medicare plans. Both offer gym access plus online and in-person classes.
+
+The catch: plans can change their benefits each year. Your Annual Notice of Change lists what changes in January, and Open Enrollment runs to December 7.
+
+Our guide compares the programs side by side and shows how to check your own plan in a few minutes. Have you checked whether yours includes a gym?
+
+
+Full story at the link in our bio (dontdieretired.com).
+
+#DontDieRetired #NeverRetireFromLife #TryNewThings #MoveMore #Medicare #MedicareAdvantage
+
+## x
+
+Free gym access with Medicare? It depends on your plan. Here's how to check
+
+https://dontdieretired.com/move/medicare-gym-fitness-benefits/?utm_source=x&utm_medium=social&utm_campaign=daily
+
+#DontDieRetired #Medicare
+
+## x_thread
+
+1/ Free gym access with Medicare? It depends on your plan. Here's how to check
+
+---
+
+2/ A plain guide to gym and fitness benefits for people on Medicare: why Original Medicare doesn't pay, which plans can include programs such as SilverSneakers, Renew Active and Silver&Fit, and what each offers. With a side-by-side table, step-by-step ways to check your own plan, and the catches around networks and yearly plan changes.
+
+---
+
+3/ The lesson: Check your plan's Evidence of Coverage or the program's eligibility checker, then try one class or gym visit before Open Enrollment closes.
+
+---
+
+4/ Full story, sources → https://dontdieretired.com/move/medicare-gym-fitness-benefits/?utm_source=x&utm_medium=social&utm_campaign=daily
+
+## pinterest
+
+Gym and fitness benefits with Medicare: SilverSneakers, Renew Active and how to check what your plan includes | Check your plan's Evidence of Coverage or the program's eligibility checker, then try one class or gym visit before Open Enrollment closes. | https://dontdieretired.com/move/medicare-gym-fitness-benefits/?utm_source=pinterest&utm_medium=social&utm_campaign=daily

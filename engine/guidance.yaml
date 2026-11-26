@@ -178,7 +178,8 @@ guidance:
     applies: [walking, running, multiday]
     use: advice
     text: Deal with a hot spot as soon as you feel it. Cover a blister with a soft or padded plaster and do not burst it; get advice if it shows signs of infection.
-    for: [nhs-blisters, bmc-long-distance]
+    for: [nhs-blisters, bmc-long-distance, apoc-what-to-expect]
+    note: The official Galician Camino site (xunta-keeping-fit, opened 26 Nov 2026) advises pricking blisters with a needle; the NHS says not to burst a blister yourself. We follow the NHS and do not list the Xunta page as support.
   - id: kit-practice
     topic: kit
     applies: [hill, walking, multiday]
@@ -244,7 +245,7 @@ guidance:
     applies: [multiday]
     use: rule
     text: Before a multi-day trip, practise long days back to back, such as a long walk on Saturday and another on Sunday, so you know how your body copes with the second day.
-    for: [bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit, cyclinguk-first-touring, rtc-first-long-ride]
+    for: [bmc-long-distance, ldwa-trailwalker, cicerone-hill-fit, cyclinguk-first-touring, rtc-first-long-ride, apoc-what-to-expect]
     note: Rails to Trails Conservancy's guide to a first long-distance trail ride (opened 25 Nov 2026) says to work up to your goal distance slowly, then ride that distance "and then some, for multiple days in a row". Cycling UK's first-time touring tips (opened 24 Nov 2026) say to build your endurance and "get accustomed to riding consecutive days" before a bike tour, so the point holds for multi-day rides as well as walks. Cicerone (opened 23 Nov 2026) suggests back-to-back walks at weekends to build stamina for longer distances before a trek, tapering to about 12 km each day before it; the point about learning how you cope on the second day comes from the BMC and LDWA. Mind's intermediate trekking plan (by Full Potential, opened 23 Nov 2026) pairs 180-minute walks on Saturday and Sunday so you train to move when tired, but for the one-day 3 Peaks Challenge, so it is not counted here.
   - id: multiday-pacing
     topic: on the day
@@ -257,14 +258,15 @@ guidance:
     applies: [multiday]
     use: advice
     text: In hot, humid weather start walking early to avoid the midday heat, carry water and refill it before you set off each day, and take breaks when you need them, in the shade where you can, rather than treating the walk as a race.
-    for: [tanabe-kumano-tips, nps-heat-illness, nhs-heat, fourdaagse-medical, mosp-katy-general]
+    for: [tanabe-kumano-tips, nps-heat-illness, nhs-heat, fourdaagse-medical, mosp-katy-general, xunta-keeping-fit]
     note: Missouri State Parks' Katy Trail general information (opened 25 Nov 2026) says water and restrooms are not available at every trailhead and, for long trips, to carry food and water, "especially in the summer"; it backs the carry-water point for trail trips by bike or on foot, not the early start or breaks.
   - id: heat-warning-signs
     topic: warning signs
     applies: [multiday]
     use: safety
     text: On hot days drink more cold drinks while you are active, wear light, loose clothing and keep out of the sun between 11am and 3pm where you can. Call 999 (911 in the US) if someone is still unwell after 30 minutes resting somewhere cool, being cooled and drinking, or has a very high temperature, hot skin that is not sweating, a fast heartbeat or breathing, confusion, a fit or loses consciousness.
-    for: [nhs-heat]
+    for: [nhs-heat, cdc-heat-illness]
+    note: The CDC sheet (cdc-heat-illness) backs the heat-stroke signs, calling 911 and cooling down; its threshold for getting help with heat exhaustion is symptoms lasting more than 1 hour, so the 30 minutes here is the NHS figure, and the cold drinks and 11am to 3pm advice rest on the NHS alone.
   - id: trail-water-services
     events: [camino-100km, coast-to-coast]
     topic: fuel and drink
@@ -662,3 +664,17 @@ guidance:
     text: Wind usually gets stronger with height and can make exposed ridges hard or dangerous, and hill fog can come down quickly, slowing you and making it easier to get lost or caught out by dark. Have a shorter or lower alternative route ready and use it, or wait for better weather, if the forecast or the conditions turn against you.
     for: [bmc-hill-weather, ramblers-hill-tips]
     note: The BMC page covers wind strengthening with height, exposed ridges, wind chill, fast-forming hill fog that lengthens the day and raises the risk of getting lost or benighted, and having alternative plans. Ramblers says winds above 40mph make walking harder, to have a plan B (or C) and shorter escape routes, and to choose an easier route or wait for the weather to improve if you are not ready.
+  - id: camino-compostela-stamps
+    topic: before you start
+    applies: [multiday]
+    use: advice
+    text: To receive the Compostela you must walk at least 62 continuous miles (100 km) on one route to the cathedral in Santiago (124 miles, 200 km, by bike). Carry a pilgrim credential; if you walk only the minimum distance, get it stamped, with the date, at the start and end of each stage, even where you stamped the same place the night before.
+    for: [pilgrims-office-compostela]
+    events: [camino-100km]
+  - id: camino-beds-galicia
+    topic: before you start
+    applies: [multiday]
+    use: advice
+    text: Galicia's public pilgrim hostels cannot be booked; beds are given out on arrival, for one night only, with priority to pilgrims with physical limitations and then to walkers. Most private albergues and hotels take reservations, and popular routes get busy from May to September, so book ahead if you need a bed.
+    for: [xunta-public-hostels, apoc-where-to-sleep]
+    events: [camino-100km]
