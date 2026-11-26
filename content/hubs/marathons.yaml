@@ -28,6 +28,11 @@ pace_slow_min_km: 9.9
 pace_slow_label: 7 hours or more, or no limit
 # "Plan this race" on every race page (RUNBOOK §6u step 6): the planner for this activity trains with the engine's marathon event
 plan_activity: run-a-marathon
+# Real stories (RUNBOOK §6u step 7, 26 Nov 2026): our own published, sourced articles about people who took up marathon running
+# after leaving work. `events` are races the article itself names, so those race pages link to the story too.
+stories:
+- {slug: mike-barnes-three-marathons-74, events: [manchester-marathon, london-marathon]}
+- {slug: steve-james-200-marathons-coastline}
 event_pages: true
 # Entry calendar (RUNBOOK §6u step 4, marathons 23 Nov 2026): races may carry `entry_dates` (only dates the official page shows with their year)
 entry_calendar:
@@ -1833,6 +1838,176 @@ events:
   time_limit: [{km: 42.2, hours: 6}]
   time_limit_text: 6 hours (the finish closes at 14:45), with checkpoint cut-offs along the way
   link: {label: 'Hokkaido Marathon: overview (English)', url: 'https://www.hokkaido-marathon.com/overview-en/', checked: '2026-11-25'}
+- id: dubai-marathon
+  name: Dubai Marathon
+  series: independent
+  place: Dubai
+  country: UAE
+  continent: asia
+  km: [42.2]
+  distances: Marathon; the organizers also stage a 10K (6.2 miles) road race and a 4K (2.5 miles) fun run
+  terrain: [road]
+  format: single
+  month: [1]
+  entry: [register]
+  entry_note: Registration is online only, and the organizer reserves the right to limit and refuse entries. Marathon runners must be 18 or over.
+  note: The 2027 race is on Sunday 17 January 2027. The marathon start for the main field is at 6:30am. When we checked, the organizer said the 2027 routes and maps were still to be confirmed.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: an official six-hour finish time limit, after which remaining runners are asked to use the footpaths
+  link: {label: 'Dubai Marathon: news of the 17 January 2027 race', url: 'https://www.dubaimarathon.org/regions-biggest-marathon-set-for-january-17-2027/', checked: '2026-11-26'}
+  more:
+  - {label: 'Dubai Marathon: How to register', url: 'https://www.dubaimarathon.org/race-info/how-to-register/', checked: '2026-11-26'}
+  - {label: 'Dubai Marathon: FAQ', url: 'https://www.dubaimarathon.org/faq/', checked: '2026-11-26'}
+  - {label: 'Dubai Marathon: Routes and maps', url: 'https://www.dubaimarathon.org/race-info/routes-maps/', checked: '2026-11-26'}
+- id: ljubljana-marathon
+  name: NLB Ljubljana Marathon
+  series: independent
+  place: Ljubljana, from Slovenska cesta to Kongresni trg
+  country: Slovenia
+  continent: europe
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, a 10K (6.2 miles) and a kids' run
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: Registration and payment are online only. Entries must be in by 15 September 2027, and late registration is not possible.
+  note: The 2027 race is on Sunday 17 October 2027, starting at 9am, the 30th edition. It starts on Slovenska cesta and finishes at Kongresni trg, and the organizers call the course flat.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours; runners slower than 2 hours 45 minutes at 20 km (12.4 miles) are diverted
+  entry_dates:
+  - {date: '2027-09-15', what: 'Registration closes (no late registration)', url: 'https://ljubljanskimaraton.si/en/marathon', checked: '2026-11-26'}
+  link: {label: 'Ljubljana Marathon: Marathon', url: 'https://ljubljanskimaraton.si/en/marathon', checked: '2026-11-26'}
+- id: helsinki-city-marathon
+  name: Saucony Helsinki City Marathon
+  series: independent
+  place: Helsinki, from beside the Paavo Nurmi statue to the Olympic Stadium
+  country: Finland
+  continent: europe
+  km: [42.2]
+  distances: Marathon; Helsinki City Run also lists a half marathon, a marathon relay, a 5K (3.1 miles) with a walking option and a minimarathon
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: You register online through the organizer's site. The page does not say how many places there are or how they are allocated.
+  note: The 2027 race is on Saturday 8 May 2027. The start is on Mäntymäentie next to the statue of Paavo Nurmi, the first kilometers run along Mannerheimintie, and the race finishes in the Helsinki Olympic Stadium.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: a maximum running time of 6 hours
+  link: {label: 'Helsinki City Run: Helsinki City Marathon', url: 'https://helsinkicityrun.fi/en/helsinkicitymarathon/', checked: '2026-11-26'}
+- id: riga-marathon
+  name: Rimi Riga Marathon
+  series: independent
+  place: Riga, through the city center
+  country: Latvia
+  continent: europe
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, 42 km and 21 km relays, a 10K (6.2 miles), a 5K (3.1 miles), a mile and kids' races
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Registration is online and runs until 8pm on 15 May 2027. Marathon entrants must be born before 16 May 2009. Registration for 2027 opened on 16 June 2026.
+  note: The 2027 race is on Sunday 16 May 2027. The 2027 rules say the course runs through Riga city center and is measured to World Athletics rules.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours
+  walkers: true
+  walkers_note: The 2027 rules say the race "is open to Nordic Walkers and participants with the strollers", and that the time limit must be observed.
+  entry_dates:
+  - {date: '2027-05-15', what: 'Online registration closes at 8pm', url: 'https://rimirigamarathon.com/wp-content/uploads/2026/06/Rimi-Riga-marathon_Rules_2027_16062026.pdf', checked: '2026-11-26'}
+  link: {label: 'Rimi Riga Marathon: Have you saved the 2027 dates yet?', url: 'https://rimirigamarathon.com/en/news/have-you-saved-the-rimi-riga-marathon-2027-dates-yet/', checked: '2026-11-26'}
+  more:
+  - {label: 'Rimi Riga Marathon: 2027 rules and regulations (PDF)', url: 'https://rimirigamarathon.com/wp-content/uploads/2026/06/Rimi-Riga-marathon_Rules_2027_16062026.pdf', checked: '2026-11-26'}
+- id: queenstown-marathon
+  name: Queenstown Marathon
+  series: independent
+  place: Queenstown, from Millbrook Resort around Lake Hayes to the Queenstown Recreation Ground
+  country: New Zealand
+  continent: oceania
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon and a 10K (6.2 miles)
+  terrain: [road, trail]
+  format: single
+  month: [11]
+  entry: [register]
+  entry_note: You register with the organizer. Its entry page says late entries are accepted unless the race has sold out, but does not say how many places there are. Marathon runners must be at least 18 on race day.
+  note: The organizer's site title gives the 2027 race as Saturday 13 November 2027, though its race pages still showed the 2026 race when we checked. The course goes clockwise around Lake Hayes and takes in Lake Wakatipu, and the organizers say about 70% of it is on smooth, hard-packed trails and 30% on road. The 2026 race page said the course officially closes at 4:30pm.
+  link: {label: 'Queenstown Marathon: Marathon', url: 'https://queenstown-marathon.co.nz/race-options/marathon/', checked: '2026-11-26'}
+  more:
+  - {label: 'Queenstown Marathon: Home', url: 'https://queenstown-marathon.co.nz/', checked: '2026-11-26'}
+  - {label: 'Queenstown Marathon: Entry info', url: 'https://queenstown-marathon.co.nz/entry-info/', checked: '2026-11-26'}
+- id: walt-disney-world-marathon
+  name: Walt Disney World Marathon
+  series: independent
+  place: Walt Disney World Resort, Florida
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; runDisney lists a 5K, a 10K, a half marathon and multi-race challenges on the same weekend
+  terrain: [road]
+  format: single
+  month: [1]
+  entry: [register]
+  entry_note: You register with runDisney. General registration for the 2027 race opened on 17 March 2026, and runDisney says all races are subject to age requirements and capacity limits. Runners who expect to finish in 5 hours or less must show proof of time to start in a faster group.
+  note: The 2027 race is on Sunday 10 January 2027, starting at 4:30am Eastern Time, on a course through Walt Disney World Resort.
+  link: {label: 'runDisney: Walt Disney World Marathon', url: 'https://www.rundisney.com/events/disneyworld/disneyworld-marathon-weekend/events/marathon', checked: '2026-11-26'}
+- id: quebec-city-marathon
+  name: Beneva Quebec City Marathon
+  series: independent
+  place: Quebec City, across three boroughs and nine neighborhoods
+  country: Canada
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, a 10K (6.2 miles), a 5K (3.1 miles) and a kids' race
+  terrain: [road]
+  format: single
+  month: [10]
+  entry: [register]
+  entry_note: You register online through the organizer's site, with individual, group and elite entries. The page does not say how many places there are.
+  note: The 2027 race is on Sunday 3 October 2027, part of a race weekend from 1 to 3 October 2027. On their information carried over from 2026, the organizers say the course crosses three boroughs and nine neighborhoods of the city.
+  link: {label: 'Je cours Qc: Beneva Quebec City Marathon races', url: 'https://www.jecoursqc.com/en/beneva-quebec-city-marathon-presented-by-montellier/races/', checked: '2026-11-26'}
+  more:
+  - {label: 'Je cours Qc: Schedule', url: 'https://www.jecoursqc.com/en/beneva-quebec-city-marathon-presented-by-montellier/schedule/', checked: '2026-11-26'}
+- id: cleveland-marathon
+  name: University Hospitals Cleveland Marathon
+  series: independent
+  place: Cleveland, Ohio, through Hingetown, Ohio City, Gordon Square and Lakewood
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, a 10K (6.2 miles), a 5K (3.1 miles), a kids' run and team relays
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Registration for the 2027 race, the 50th anniversary edition, is open online. The pages we opened do not mention a cap on entries.
+  note: The 2027 race is on Sunday 16 May 2027, starting at 7am. It starts and finishes on St. Clair Avenue Northeast at Mall B and runs through Hingetown, Ohio City and Gordon Square into Lakewood.
+  time_limit: [{km: 42.2, hours: 7}]
+  time_limit_text: a 7-hour pace (16 minutes a mile plus a 15-minute buffer); slower participants move to the sidewalks
+  walkers: true
+  walkers_note: The marathon page lists the 7am start for "runners and walkers" and has a walking division, for which you must walk the entire distance.
+  link: {label: 'Cleveland Marathon: Marathon', url: 'https://www.clevelandmarathon.com/races/marathon.aspx', checked: '2026-11-26'}
+  more:
+  - {label: 'Cleveland Marathon: 2027 registration', url: 'https://www.clevelandmarathon.com/2027-registration.aspx', checked: '2026-11-26'}
+- id: ho-chi-minh-city-marathon
+  name: Eximbank HCMC Marathon
+  series: independent
+  place: Ho Chi Minh City, from 30th April Park on Le Duan Street
+  country: Vietnam
+  continent: asia
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon and a 10K (6.2 miles)
+  terrain: [road]
+  format: single
+  month: [1]
+  entry: [open]
+  entry_note: You register online, and registration closes once the maximum quota is reached. Marathon runners must be 18 or over on race day.
+  note: The 2027 race is on Sunday 17 January 2027, starting at 3am. It starts and finishes at 30th April Park on Le Duan Street, in front of the Independence Palace and among landmarks such as Notre-Dame Cathedral; the organizers warn of some interruptions at traffic lights.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours (9am), with cut-off times at checkpoints
+  link: {label: 'HCMC Marathon: Marathon 42 km', url: 'https://hcmcmarathon.com/42km/', checked: '2026-11-26'}
+  more:
+  - {label: 'HCMC Marathon: Race info', url: 'https://hcmcmarathon.com/race-info/', checked: '2026-11-26'}
 guides:
 - slug: how-to-get-a-place
   title: How to get a place in a big marathon

@@ -28,6 +28,15 @@
 </section>
 {% endif %}
 
+{% if h.story_list %}
+<section class="hub-guides hub-stories" aria-labelledby="hub-s-h">
+  <h2 id="hub-s-h">{{ h.stories_title or "Real stories" }}</h2>
+  <ul class="hub-cards">
+  {% for st in h.story_list %}<li><a href="{{ st.a.url }}"><strong>{{ st.a.title }}</strong><span>{{ st.a.standfirst or st.a.excerpt }}</span></a></li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {% if h.landing_groups %}
 <nav class="hub-browse" aria-labelledby="hub-b-h">
   <h2 id="hub-b-h">Browse {{ h.words or "races" }} by</h2>

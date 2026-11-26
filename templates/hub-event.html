@@ -43,6 +43,12 @@
     <p><a href="/list/{{ e.act.id }}/"><strong>{{ e.act.title }}</strong></a>: {{ e.act.why_short }}</p>
   </section>
   {% endif %}
+  {% if e.stories %}
+  <section class="fl-detail" aria-labelledby="race-s-h">
+    <h2 id="race-s-h">A real story from this {{ h.word or "race" }}</h2>
+    <ul>{% for st in e.stories %}<li><a href="{{ st.a.url }}"><strong>{{ st.a.title }}</strong></a>: {{ st.a.standfirst or st.a.excerpt }}</li>{% endfor %}</ul>
+  </section>
+  {% endif %}
   {% if e.plan_act %}
   <section class="fl-detail hub-plan" aria-labelledby="race-plan-h">
     <h2 id="race-plan-h">Plan this {{ h.word or "race" }}</h2>

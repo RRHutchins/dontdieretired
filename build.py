@@ -1254,6 +1254,16 @@ def build(make_social=True):
             h["entry_cal_page"] = EC
         assert not h.get("signup_tag") or re.fullmatch(r"int-[a-z0-9-]+", h["signup_tag"]), f"hub {h['id']}: signup_tag looks like int-<subject>"
         h["acts"] = [_chs_by[i] for i in h.get("activities") or [] if i in _chs_by]
+        # Real stories (RUNBOOK §6u priority step 7, 26 Nov 2026): `stories:` lists our own published articles (already sourced under
+        # the house rules) by slug, with optional `events` (ids of races the story itself names) so those race pages link to it too.
+        _art_by = {a["slug"]: a for a in arts}
+        h["story_list"] = []
+        for st in h.get("stories") or []:
+            assert st.get("slug") in _art_by, f"hub {h['id']}: story {st.get('slug')!r} is not a published article slug"
+            assert all(x in seen_e for x in st.get("events") or []), f"hub {h['id']} story {st['slug']}: unknown event id in events"
+            h["story_list"].append({"a": _art_by[st["slug"]], "events": list(st.get("events") or [])})
+        for e in h["events"]:
+            e["stories"] = [st for st in h["story_list"] if e["id"] in st["events"]]
         h["checked_human"] = max(dt.date.fromisoformat(str(e["link"]["checked"])) for e in h["events"]).strftime("%-d %B %Y")
         lk = Linker(terms, f"/{h['slug']}/")
         for g in h.get("guides") or []:

@@ -1174,6 +1174,110 @@ events:
   more:
   - {label: 'Tourism Malaysia: Malaysia Travel Guide, Selangor', url: 'https://ebrochures.malaysia.travel/en/malaysia-travel-guide/selangor/', checked: '2026-11-25'}
   - {label: 'Tourism Malaysia: Adventure with Nature, River Cruising', url: 'https://ebrochures.malaysia.travel/adventure-with-nature/adventure-with-nature-river-cruising', checked: '2026-11-25'}
+- id: total-solar-eclipse-2028-australia-nz
+  name: The total solar eclipse over Australia and New Zealand
+  type: sky
+  place: A path of totality across Australia and New Zealand, including Sydney
+  country: Australia and New Zealand
+  continent: oceania
+  when: Saturday 22 July 2028, as NASA gives it
+  see: [own]
+  see_note: You need to be inside the path of totality, which NASA gives as 143 miles (230 km) wide. NASA's table for Sydney, which lies inside the path, gives 3 minutes 49 seconds of totality there.
+  note: NASA lists a total solar eclipse on 22 July 2028, with the total phase over Australia and New Zealand and a partial eclipse visible across Southeast Asia and the East Indies too. At the point of greatest eclipse, NASA gives 5 minutes 10 seconds of totality.
+  link: {label: 'NASA Eclipse Web Site: Solar Eclipses, 2021 to 2030', url: 'https://eclipse.gsfc.nasa.gov/SEdecade/SEdecade2021.html', checked: '2026-11-26'}
+  more:
+  - {label: 'NASA Eclipse Web Site: Eclipses during 2028', url: 'https://eclipse.gsfc.nasa.gov/OH/OH2028.html', checked: '2026-11-26'}
+  - {label: 'NASA Eclipse Web Site: Annular and total solar eclipses visible from Sydney, Australia', url: 'https://eclipse.gsfc.nasa.gov/SEcirc/SEcircAU/SydneyAUS3.html', checked: '2026-11-26'}
+- id: annular-solar-eclipse-2027-chile-argentina
+  name: The ring-of-fire eclipse over Chile and Argentina
+  type: sky
+  place: The annular path across Chile, Argentina and the South Atlantic
+  country: Chile and Argentina
+  continent: south-america
+  when: Saturday 6 February 2027, as NASA gives it
+  see: [own]
+  see_note: NASA lists the annular phase over Chile, Argentina and the Atlantic, with a partial eclipse over a much wider area of South America, Antarctica and western and southern Africa. An annular eclipse is never total, so eclipse glasses stay on the whole time.
+  note: In an annular eclipse the Moon covers the middle of the Sun but leaves a bright ring around the edge. NASA gives the central duration of this one as 7 minutes 51 seconds.
+  link: {label: 'NASA Eclipse Web Site: Solar Eclipses, 2021 to 2030', url: 'https://eclipse.gsfc.nasa.gov/SEdecade/SEdecade2021.html', checked: '2026-11-26'}
+- id: ngorongoro-crater
+  name: The wildlife of the Ngorongoro Crater
+  type: living
+  place: Ngorongoro Conservation Area
+  country: Tanzania
+  continent: africa
+  when: All year round, as the Ngorongoro Conservation Area Authority gives it
+  see: [vehicle]
+  see_note: The Ngorongoro Conservation Area Authority says only four-wheel-drive vehicles may enter the crater. Walking safaris are not allowed inside the crater, but they are allowed on the rim and in other parts of the area.
+  note: The authority calls the crater "the world's largest intact and unfilled volcanic caldera". It covers almost 100 square miles (260 square km), is about 12 miles (20 km) across and about 2,000 feet (610 m) deep, and the authority says it is home to over 25,000 animals, including the big five.
+  link: {label: 'Ngorongoro Conservation Area Authority: Ngorongoro Crater', url: 'https://www.ncaa.go.tz/ngorongoro-crater/', checked: '2026-11-26'}
+- id: kakadu-wet-season-waterfalls
+  name: Kakadu's wet-season waterfalls
+  type: season
+  place: Jim Jim and Twin Falls, Kakadu National Park, Northern Territory
+  country: Australia
+  continent: oceania
+  when: From the start of the tropical summer until mid-July for Jim Jim Falls, as Parks Australia gives it
+  see: [guided]
+  see_note: Parks Australia says these waterfalls are best seen by air during the tropical summer, and that day tours leave from Cooinda. It says the Jim Jim and Twin Falls area, including the walks and the Karnamarr campground, is closed in 2026, and that its access report is updated daily, so check it before you plan.
+  note: Parks Australia describes heavy summer rains sending huge volumes of water crashing into the gorge below. In the dry season, it says, you can hike over boulders to the base of the falls.
+  link: {label: 'Parks Australia: Jim Jim and Twin Falls, Kakadu National Park', url: 'https://kakadu.gov.au/discover/regions/jim-jim-twin-falls/', checked: '2026-11-26'}
+- id: turning-of-the-fagus
+  name: The turning of the fagus in Tasmania
+  type: season
+  place: Tarn Shelf and Lake Fenton, Mount Field National Park; Dove Lake and Crater Lake, Cradle Mountain
+  country: Australia
+  continent: oceania
+  when: Mid-autumn in Tasmania, peaking around Anzac Day (25 April) and usually staying vivid for around a month, as the Parks and Wildlife Service gives it
+  see: [own]
+  see_note: Tasmania's Parks and Wildlife Service says the color draws visitors to Lake Fenton and Tarn Shelf at Mount Field National Park, and to Dove Lake and Crater Lake at Cradle Mountain.
+  note: The Parks and Wildlife Service calls fagus (Nothofagus gunnii) Tasmania's only winter deciduous species. Each mid-autumn its leaves turn "from brilliant gold to rust red and orange" across the high country.
+  link: {label: 'Parks and Wildlife Service Tasmania: Fagus', url: 'https://parks.tas.gov.au/discovery-and-learning/plants/fagus', checked: '2026-11-26'}
+- id: death-valley-night-sky
+  name: The night sky over Death Valley
+  type: sky
+  place: Death Valley National Park, California and Nevada
+  country: USA
+  continent: north-america
+  when: Any clear night; the National Park Service says nights around the new moon are darkest, and its Dark Sky Festival is held each spring
+  see: [own]
+  see_note: The National Park Service suggests Mesquite Flat Sand Dunes, Harmony Borax Works, Badwater Basin and Ubehebe Crater for stargazing. It says your eyes take about 30 minutes to adjust, suggests red cellophane over your flashlight, and warns that summer nights can stay above 100°F (38°C). Ranger programs are offered in winter.
+  note: The National Park Service says the park is classified "at the highest (Gold Tier) level by the International Dark-Sky Association".
+  link: {label: 'National Park Service: Night exploration, Death Valley National Park', url: 'https://www.nps.gov/deva/night-exploration.htm', checked: '2026-11-26'}
+- id: plitvice-lakes
+  name: The lakes and waterfalls of Plitvice
+  type: earth
+  place: Plitvice Lakes National Park, Lika-Senj and Karlovac counties
+  country: Croatia
+  continent: europe
+  see: [own, boat]
+  see_note: The park says you explore on trails and wooden walkways, and some of its visit programs combine a panoramic train ride with a boat ride across Lake Kozjak. The park sells tickets online, where you choose an entry timeslot.
+  note: The park says its lake system has 16 named lakes and several smaller unnamed ones, cascading one into the next over tufa, or travertine, barriers. The lakes were inscribed on the UNESCO World Heritage List on 26 October 1979, and the park covers just under 116 square miles (300 square km).
+  link: {label: 'Plitvice Lakes National Park: General information', url: 'https://np-plitvicka-jezera.hr/en/about-the-park/general-information/', checked: '2026-11-26'}
+  more:
+  - {label: 'Plitvice Lakes National Park: Tips and tricks for your visit', url: 'https://np-plitvicka-jezera.hr/en/discover-the-magic-tips-and-tricks-for-your-visit-to-the-plitvice-lakes-national-park/', checked: '2026-11-26'}
+- id: mulu-bat-exodus
+  name: The evening bat exodus at Mulu
+  type: living
+  place: Deer Cave, Gunung Mulu National Park, Sarawak
+  country: Malaysia
+  continent: asia
+  when: Most evenings between 5:30 and 6:30pm, as Mulu National Park gives it
+  see: [own]
+  see_note: Mulu National Park lists the bat exodus as an unguided tour with no booking required. The walk is 2.4 miles (3.8 km) each way on a raised plank walk through the forest, about 45 minutes to the bat observatory area.
+  note: Mulu National Park puts the colony of wrinkle-lipped bats in Deer Cave at between 2.5 and 3.5 million, and says twelve species of bats have been recorded in the cave.
+  link: {label: 'Mulu National Park: Bat exodus', url: 'https://mulupark.com/bat-exodus/', checked: '2026-11-26'}
+- id: northern-lights-greenland
+  name: The northern lights over Greenland
+  type: sky
+  place: Nuuk, Kangerlussuaq and Ilulissat
+  country: Greenland
+  continent: north-america
+  month: [8, 9, 10, 11, 12, 1, 2, 3, 4]
+  when: Late August to April, as Visit Greenland gives it
+  see: [own, guided]
+  see_note: Visit Greenland says you can see the lights from the city center in Nuuk. In Kangerlussuaq you can join a northern lights driving tour to the Greenland Ice Sheet, and in Ilulissat you can combine dog sledding with an aurora trip. It warns that the best show may mean an alarm for 2:30 or even 5 in the morning.
+  note: Visit Greenland says the Greenlandic word for the northern lights is "Arsarnerit", meaning "the ones who play with a ball", and that Greenland's many clear-sky days often put the odds in your favor.
+  link: {label: 'Visit Greenland: Experience Greenland''s northern lights', url: 'https://visitgreenland.com/activities/northern-lights/', checked: '2026-11-26'}
 guides:
 - slug: 2027-total-solar-eclipse
   title: How to see the 2027 total solar eclipse safely, and where
@@ -1379,8 +1483,8 @@ guides:
   title: How to watch wildlife spectacles without disturbing them
   short: Watching wildlife well
   seo_title: 'Watching wildlife responsibly: distances, seasons and the codes'
-  description: How close to get to seals, puffins, elk, whales and other wildlife spectacles, when animals are most vulnerable, and what the official UK and US codes ask of visitors.
-  standfirst: The best wildlife spectacles are the ones the animals barely notice you watching. Here is what the official codes on both sides of the Atlantic ask, and why.
+  description: How close to get to seals, puffins, polar bears, elk, whales and other wildlife spectacles, when animals are most vulnerable, and what the official UK, US, Canadian, Icelandic and Australian rules ask of visitors.
+  standfirst: The best wildlife spectacles are the ones the animals barely notice you watching. Here is what the official codes in the UK, the US and further afield ask, and why.
   detail:
   - h: The one rule every code agrees on
     p:
@@ -1398,7 +1502,7 @@ guides:
     after: The National Park Service suggests a quick check, holding your arm straight out with your thumb up. If your thumb does not cover the animal, you are too close.
   - h: When animals are most easily upset
     p:
-    - "The Marine and coastal wildlife code says animals are especially vulnerable when breeding, in winter, and when resting or moulting, and that disturbed animals may abandon their nests, mates or young. Its breeding seasons: June to January for seals, February to September for birds, and the summer months for dolphins, whales and porpoises. Seals also moult between November and April, and in August."
+    - "The Marine and coastal wildlife code says animals are especially vulnerable when breeding, in winter, and when resting or molting, and that disturbed animals may abandon their nests, mates or young. Its breeding seasons: June to January for seals, February to September for birds, and the summer months for dolphins, whales and porpoises. Seals also molt between November and April, and in August."
     - Several spectacles in our finder fall in these seasons, such as seal pupping and seabird colonies. Some places close or restrict access in these seasons, so follow the signs and the wardens.
     - "If you find a seal pup on a beach, the code says not to move it or chase it into the sea, and not to touch or try to refloat any injured or stranded animal."
   - h: Feeding, noise and calls
@@ -1408,6 +1512,22 @@ guides:
     - Avoid flash photography, and do not get too close for a picture (Marine and coastal wildlife code).
     - Do not fly a drone where it will disturb or endanger wildlife (Marine and coastal wildlife code).
     - "Follow each site's own rules. At Jigokudani, Japan's tourism body asks visitors not to feed, touch or threaten the snow monkeys or stare into their eyes; at Volcanoes National Park in Rwanda, time with each gorilla family is limited to one hour a day."
+  - h: Whales, dolphins and seals in US and Australian waters
+    table:
+      head: [Where, Distance, Who says so]
+      rows:
+      - ['Most whales in US waters', 'At least 100 yards (about 91 m), unless other rules apply', 'NOAA Fisheries']
+      - ['Humpback whales in Hawaii and Alaska', '100 yards (about 91 m), required by federal law for vessels; in Hawaii the ban also covers kayaks, drones, swimmers and any other means', 'NOAA Fisheries']
+      - ['North Atlantic right whales, anywhere in US waters', '500 yards (about 457 m), required by federal law', 'NOAA Fisheries']
+      - ['Dolphins and porpoises in US waters', 'At least 50 yards (about 46 m); 100 yards in some places', 'NOAA Fisheries']
+      - ['Spinner dolphins in Hawaii', 'No swimming with them or staying within 50 yards (about 46 m), by federal law', 'NOAA Fisheries']
+      - ['Seals and sea lions in US waters, in the water or on shore', 'At least 50 yards (about 46 m); NOAA gives different distances for monk seals in Hawaii, so check locally', 'NOAA Fisheries']
+      - ['Whales in Australian waters', 'Boats must not deliberately approach closer than 100 m (330 ft), and must slow down and take care within 300 m (about 1,000 ft)', 'Australian Government (DCCEEW); states and territories may add their own rules for coastal waters']
+    after: NOAA Fisheries also asks you to spend no more than 30 minutes watching any one animal or group, to avoid flying drones near animals, and never to swim with, touch, ride or feed marine mammals or sea turtles; it calls feeding marine mammals harmful and illegal. Australia's rules also ban touching or feeding whales and dolphins.
+  - h: Polar bears and puffins
+    p:
+    - "At Wapusk National Park near Churchill, Parks Canada says \"Never approach a bear for any reason.\" It also says never to feed bears or go near a fresh kill or carcass, which a polar bear will defend. Access to Wapusk is mainly with licensed commercial tour operators from Churchill, which Parks Canada strongly encourages visitors to use; there is no road to Churchill."
+    - "Visit Iceland asks puffin watchers not to go too close and to stay at least 1 meter (3.3 feet) back from any cliff edge near a colony, because the burrows are shallow and the ground above them can collapse without warning. Move slowly and quietly, never touch or feed a puffin, and from a boat keep a respectful distance and avoid loud engines near the nesting cliffs. Disturbing a nest is strictly forbidden."
   - h: Dogs, cars and boats
     p:
     - "The Countryside Code asks you to keep your dog under effective control, away from wildlife, and says that between 1 March and 31 July you must keep it on a lead on open access land, even with no livestock about. Many US parks require a leash, most often 6 feet long, where dogs are allowed at all; Skomer allows no dogs."
@@ -1415,9 +1535,13 @@ guides:
     - On a boat, the UK code asks skippers to slow down when they see an animal, stay under 6 knots, keep their distance if more than two boats are already there, and hold a steady speed and course if dolphins or whales come close, letting them leave when they choose. Look for operators in the WiSe (Wildlife Safe) scheme.
   faq:
   - q: How close can I get to a seal?
-    a: The UK's Marine and coastal wildlife code asks you to try to stay at least 100 metres (330 feet) away, or as far as you can, and to move further away if the seal wakes to look straight at you or heads for the water.
+    a: The UK's Marine and coastal wildlife code asks you to try to stay at least 100 meters (330 feet) away, or as far as you can, and to move further away if the seal wakes to look straight at you or heads for the water.
   - q: How far should I stay from elk or bears in a US national park?
     a: The National Park Service says many parks require 25 yards from most wildlife and 100 yards from predators like bears and wolves. Rocky Mountain National Park asks for at least 75 feet from elk. Each park sets its own rules, so check before you go.
+  - q: How close can a boat get to whales?
+    a: In US waters NOAA Fisheries asks for at least 100 yards from most whales, and the law sets 100 yards for humpbacks in Hawaii and Alaska and 500 yards for North Atlantic right whales. In Australian waters, boats must not deliberately approach a whale closer than 100 meters (330 feet). In the UK, the Marine and coastal wildlife code asks boats to keep 100 meters away and stay under 6 knots.
+  - q: Can I walk up to a puffin colony?
+    a: Visit Iceland asks you to stay at least 1 meter (3.3 feet) back from any cliff edge near a colony, because the ground above the burrows can collapse, and never to touch or feed the birds.
   - q: Is it ever all right to feed wild animals?
     a: No. The Countryside Code says feeding can harm them, and in US national parks it is illegal.
   kit:
@@ -1440,6 +1564,12 @@ guides:
   - {label: 'Japan National Tourism Organization: Jigokudani Snow Monkey Park', url: 'https://www.japan.travel/en/spot/1344/', checked: '2026-11-21'}
   - {label: 'Visit Rwanda: gorilla tracking', url: 'https://visitrwanda.com/interests/gorilla-tracking/', checked: '2026-11-21'}
   - {label: 'The Wildlife Trust of South and West Wales: Skomer Island day trips', url: 'https://www.welshwildlife.org/skomer-island-day-trips', checked: '2026-11-21'}
+  - {label: 'NOAA Fisheries: Marine life viewing guidelines, guidelines and distances', url: 'https://www.fisheries.noaa.gov/topic/marine-life-viewing-guidelines/guidelines-and-distances', checked: '2026-11-26'}
+  - {label: 'NOAA Fisheries: Viewing marine wildlife in Hawaiʻi', url: 'https://www.fisheries.noaa.gov/pacific-islands/marine-life-viewing-guidelines/viewing-marine-wildlife-hawaii', checked: '2026-11-26'}
+  - {label: 'Australian Government (DCCEEW): Whale and dolphin watching', url: 'https://www.dcceew.gov.au/environment/marine/marine-species/cetaceans/whale-and-dolphin-watching', checked: '2026-11-26'}
+  - {label: 'Parks Canada: Avoiding an encounter, Wapusk National Park', url: 'https://parks.canada.ca/pn-np/mb/wapusk/securite-safety/ours-bear/ours-bear1', checked: '2026-11-26'}
+  - {label: 'Parks Canada: How to get here, Wapusk National Park', url: 'https://parks.canada.ca/pn-np/mb/wapusk/visit/directions', checked: '2026-11-26'}
+  - {label: 'Visit Iceland: Puffins in Iceland', url: 'https://www.visiticeland.com/article/meet-the-peculiar-puffins-in-iceland/', checked: '2026-11-26'}
 - slug: photographing-the-night-sky
   title: How to photograph the night sky
   short: Night sky photography
