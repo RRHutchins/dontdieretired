@@ -15,6 +15,8 @@ Read the full story → https://dontdieretired.com/curious/clyde-tombaugh-pluto-
 
 #DontDieRetired
 
+Photo: nivium, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0), via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Zeiss_Blink_comparator_at_Lowell_Observatory_used_in_the_discovery_of_Pluto_by_Clyde_Tombaugh_in_1930.jpg). Cropped.
+
 ## instagram
 
 In February 1930 Clyde Tombaugh was 24 and had never been to college. He had grown up on a farm in Kansas and built his own telescopes.
@@ -29,6 +31,8 @@ Would you have had the patience for that search?
 
 
 Full story at the link in our bio (dontdieretired.com).
+
+Photo: nivium, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0), via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Zeiss_Blink_comparator_at_Lowell_Observatory_used_in_the_discovery_of_Pluto_by_Clyde_Tombaugh_in_1930.jpg). Cropped.
 
 #DontDieRetired #NeverRetireFromLife #TryNewThings #History #Pluto #Astronomy
 
