@@ -9052,6 +9052,17 @@
     url: https://new.uschess.org/become-member
     region: us
     checked: '2026-11-14'
+  finders:
+  - label: 'English Chess Federation: find a club (England)'
+    url: https://englishchess.org.uk/clubs-home-page
+    why: The ECF's clubs page, with its Club Finder to search by location (more than 900 clubs, with contact details and website links) and county and regional club lists.
+    region: uk
+    checked: '2026-11-27'
+  - label: 'US Chess: club search'
+    url: https://new.uschess.org/club-search-and-affiliate-directory
+    why: Enter your postal code and a distance, or pick your state; tick Beginners Welcome and choose Affiliate Type Club to leave out schools and camps.
+    region: us
+    checked: '2026-11-27'
   seo_title: How to join a chess club and get a chess rating
   description: How to find a chess club near you, what a first club night is like, and how English and US chess ratings and membership costs compare.
   detail:
@@ -13159,6 +13170,12 @@
     url: https://www.ramblers.org.uk/go-walking/wellbeing-walks
     region: uk
     checked: '2026-10-06'
+  finders:
+  - label: 'Ramblers Wellbeing Walks: find a walk near you (England)'
+    url: https://www.ramblers.org.uk/go-walking/wellbeing-walks
+    why: Free, short walks across England led by volunteers, some only 10 minutes long, and you don't need to register; follow "find a group near you" on the page, and message the walk organiser if you want to check a route suits you.
+    region: uk
+    checked: '2026-11-27'
   guide: mens-sheds-walking-groups-and-clubs
   kit:
   - name: Comfortable walking shoes
@@ -94829,6 +94846,11 @@
     why: Scottish Athletics' page for newcomers, with its Club Finder to find and contact clubs near you, and jogscotland's recreational running groups.
     region: uk
     checked: '2026-11-26'
+  - label: 'Welsh Athletics: find a club (Wales)'
+    url: https://www.welshathletics.org/en/club
+    why: Welsh Athletics' Find A Club; filter by Road (or Trail, or Cross Country) and by Masters or Senior to see the clubs that run near you.
+    region: uk
+    checked: '2026-11-27'
   seo_title: 'How to join a running club: RunTogether, RRCA, beginners'
   description: How to find and join a running club or group run in the UK and US, from free RunTogether sessions and walk/run groups to club membership and race perks.
   detail:
@@ -120278,6 +120300,11 @@
     why: Scottish Athletics' page for newcomers, with its Club Finder to find and contact clubs near you and see what disciplines they offer.
     region: uk
     checked: '2026-11-26'
+  - label: 'Welsh Athletics: find a club (Wales)'
+    url: https://www.welshathletics.org/en/club
+    why: Welsh Athletics' Find A Club, which you can filter by discipline (including Track & Field) and by Masters, to see which clubs cater for older athletes.
+    region: uk
+    checked: '2026-11-27'
   seo_title: 'Masters athletics: how to start track and field from 35'
   description: How to join masters track and field in the UK or US, from clubs and registration to open meetings and championships, with fees as last listed.
   detail:
