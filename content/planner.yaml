@@ -233,6 +233,9 @@ seasons:
   "Mid-June to mid-October": [6, 7, 8, 9, 10]
   "Outdoor greens from spring to early autumn; indoor rinks and short mat through the winter": null
   "Permits are needed all year; the summer route is usually open from late June to October, the winter route from December to June": null
+  "Summer by boat; spring by dog team or snowmobile over the sea ice": [3, 4, 5, 7, 8, 9]
+  "Late April to late November": [4, 5, 6, 7, 8, 9, 10, 11]
+  "May to November": [5, 6, 7, 8, 9, 10, 11]
 
 # The words the generator (static/planner.js) puts around an activity's own steps (RUNBOOK §6s, day 2).
 # What to DO always comes from the activity itself (start, links, book, kit, safety) or from dates.yaml and the engine;
