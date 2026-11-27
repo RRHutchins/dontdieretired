@@ -81,10 +81,12 @@
     <h1>What do you fancy doing?</h1>
     <form class="finder" action="/list/" method="get" role="search"><label class="sr-only" for="aq">Search things to do</label><input id="aq" type="search" name="q" maxlength="80" placeholder="Swim, paint, fly fish…" autocomplete="off"><button class="btn small" type="submit">Find</button></form>
     ${(H.topics || []).length ? `<p class="chips">${H.topics.map(t => `<a class="chipl" href="/list/?topic=${esc(t.id)}">${esc(t.label)}</a>`).join('')}<a class="chipl" href="/list/">Everything</a></p>` : ''}
+    <div data-plan-today></div>
     ${(H.season || []).length ? `<h2 class="sec">Good to do in ${esc(H.month)}</h2>${acts(H.season, 3)}<a class="more" href="/list/">All things to do →</a>` : ''}
     ${s0 ? `<a class="story" href="${s0.url}" target="_blank" rel="noopener" data-cat="${esc(s0.category)}">${(s0.art || s0.image) ? `<span class="story-img"><img src="${s0.art || s0.image}" alt="" loading="lazy"></span>` : ''}<p class="kick">${me.level || me.interests.length ? 'Picked for you' : 'Today\'s story'}</p><h3>${esc(s0.title)}</h3><p class="muted">${esc(s0.excerpt).slice(0, 150)}…</p></a>` : ''}
     ${tied.length ? `<p class="tie">Have a go yourself: ${tied.map(c => `<a href="/list/${esc(c.id)}/">${esc(c.title)}</a>`).join(' or ')} →</p>` : ''}
     ${s0 ? `<button class="btn ghost small" data-action="share" data-url="${esc(new URL(s0.url, location.origin).href)}" data-title="${esc(s0.title)}">Share this story</button><div style="height:16px"></div>` : ''}
+    <div data-plan-later></div>
     <a class="tile tile-list" href="/list/${(() => { try { return JSON.parse(localStorage.getItem('ddr_list') || '{}').items.some(i => !i.deleted) ? '#mine' : ''; } catch { return ''; } })()}"><p class="kick">My list${(() => { try { const d = JSON.parse(localStorage.getItem('ddr_list') || '{}'), l = d.items.filter(i => !i.deleted); return l.length ? ' · ' + l.filter(i => i.status === 'done').length + ' of ' + d.target + ' done' : ''; } catch { return ''; } })()}</p><h3>Things to do</h3><p class="muted">Things worth doing, with how to start each one, and a list of your own to tick off. Opens the list page (needs a connection).</p></a>
     <h2 class="sec">${fitter ? 'This week\'s challenge' : doneToday ? 'Done for today. Well done.' : finished ? 'You finished the plan.' : 'Ten minutes today?'}</h2>
     ${fitter ? `<div class="card hero"><p class="kick">For you · ${LEVEL_NAME[lvl]}</p><h2 class="chal">${esc(challenge(lvl))}</h2>${S.chal?.[wk] ? '<p><b>✓ Done this week.</b> A new one arrives on Monday.</p>' : '<button class="btn" data-action="chal">I did it ✓</button>'}</div><p class="muted" style="margin:4px 4px 14px">The guided plans below are written for people getting going. Use them as a warm-up or pass them on.</p>` : ''}
@@ -292,6 +294,8 @@
     else if (!S.onboarded && !prof().level) html = You(true);
     else html = Today();
     view.innerHTML = `<div class="fade">${html}</div>`; window.scrollTo(0, 0);
+    // the planner's steps for this week (RUNBOOK §6t row 18): app/plan-today.js fills its own box once the plans are rebuilt
+    const pt = $('[data-plan-today]'); if (pt && window.DDRAppPlan) DDRAppPlan.fill(pt);
   }
   addEventListener('hashchange', render);
 

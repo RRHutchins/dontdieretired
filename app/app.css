@@ -202,3 +202,28 @@ h1{font-size:1.85em;line-height:1.08}
 .act img{flex:0 0 34%;width:34%;height:auto;aspect-ratio:auto;min-height:100%;object-fit:cover}
 .act-t{flex:1;min-width:0;padding:12px 14px 14px}
 .act b{font-size:1.1em}
+
+/* The planner's Today card (RUNBOOK §6t row 18, 27 Nov 2026): this week's steps from Planner (My year) */
+.tile-plan{background:var(--travel)}
+.tile-plan .pt-ios{margin-top:.5em;font-size:.82em}
+.pt h3{margin:.05em 0 .35em}
+.pt-next{margin:0 0 .6em}
+.pt a{color:var(--ink);text-underline-offset:3px}
+.pt-steps{list-style:none;margin:0 0 12px;padding:0}
+.pt-step{padding:12px 0;border-top:1px solid var(--line)}
+.pt-step p{margin:0}
+.pt-when{font-weight:700;font-size:.85em;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pt-when .tag{background:#fff}
+.pt-for{font-size:.85em;margin-top:2px}
+.pt-text{margin-top:4px;overflow-wrap:anywhere}
+.pt-detail{font-size:.85em;margin-top:4px;overflow-wrap:anywhere}
+.pt-tick{display:inline-flex;align-items:center;gap:10px;min-height:44px;margin-top:6px;padding:0 14px;border-radius:12px;background:#fff;font-weight:700;cursor:pointer}
+.pt-tick input{width:22px;height:22px;accent-color:var(--green)}
+.pt-late{font-weight:600}
+.pt-net{font-size:.82em;margin:6px 0 0}
+.pt .btn{margin-top:8px}
+.tile-plan:focus-visible,.pt a:focus-visible,.pt-tick:focus-within,.pt h3:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.pt h3:focus:not(:focus-visible){outline:none}
+.pt-for a{display:inline-block;padding:10px 0}
+.pt-more{display:inline-flex;align-items:center;min-height:44px;font-size:.85em;font-weight:600}
+.pt-more:focus-visible{outline:3px solid var(--gold);outline-offset:2px}

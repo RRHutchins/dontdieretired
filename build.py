@@ -714,6 +714,23 @@ def build(make_social=True):
     _paywall = os.environ.get("DDR_PLUS_PAYWALL") == "1" or (cfg.get("plus") or {}).get("paywall") is True
     assert not _paywall or _acct, "plus.paywall needs accounts.api: membership is kept on the account"
     env.globals.update(plus_paywall=_paywall)
+    # The app's Today card for the planner (RUNBOOK §6t row 18): the app's page is not a template, so its accounts and
+    # paywall tags and the versioned planner scripts are put in here, and the service worker's cache name carries a stamp
+    # of the app's and the site's scripts, so a changed script reaches an installed app the next time it opens.
+    if (DIST / "app").exists():
+        _ai, _sw = DIST / "app" / "index.html", DIST / "app" / "sw.js"
+        _ah = hashlib.sha1(env.globals["asset_v"].encode())
+        for f in sorted((ROOT / "app").glob("*.js")) + sorted((ROOT / "app").glob("*.css")) + [ROOT / "app" / "index.html"]:
+            _ah.update(f.read_bytes())
+        _meta = (f'<meta name="ddr-accounts" content="{_acct}">' if _acct else "") + ('<meta name="ddr-plus" content="paywall">' if _paywall else "")
+        _scripts = "\n".join(f'<script src="{u}?v={env.globals["asset_v"]}"></script>' for u in ("/static/list-store.js", "/static/planner.js", "/static/plus.js")) \
+            + f'\n<script src="/app/plan-today.js?v={_ah.hexdigest()[:8]}"></script>'
+        _t = _ai.read_text()
+        assert "<!--DDR-PLANNER-META-->" in _t and "<!--DDR-PLANNER-SCRIPTS-->" in _t, "app/index.html lost its planner placeholders"
+        _ai.write_text(_t.replace("<!--DDR-PLANNER-META-->", _meta).replace("<!--DDR-PLANNER-SCRIPTS-->", _scripts))
+        _s = _sw.read_text()
+        assert "__DDR_APP_V__" in _s, "app/sw.js lost its version placeholder"
+        _sw.write_text(_s.replace("__DDR_APP_V__", _ah.hexdigest()[:8]))
     env.filters["metadesc"] = metadesc
     env.filters["seotitle"] = lambda t: seo_title(t, cfg["site"]["name"])
     env.globals.update(same_as=[v for k, v in cfg.get("social", {}).items() if isinstance(v, str) and v.startswith("http")])

@@ -896,4 +896,26 @@ t('ideas: an empty list gets things in season in the next six months', () => {
   assert.strictEqual(out.length, 6);
   out.forEach(x => { assert.strictEqual(x.kind, 'season'); assert.notStrictEqual(byId[x.id].effort, 'demanding'); assert.notStrictEqual(x.why, 'any'); const m = (x.when.month || x.when.date).slice(0, 7); assert.ok(m >= TODAY.slice(0, 7) && m < '2027-05'); });
 });
+t('upcoming: today, the week ahead, steps gone by and the next day, for the app\'s Today card', () => {
+  const a = byId['walk-yorkshire-three-peaks'], b = P.build(a, data, { date: '2027-06-19', today: TODAY });
+  const work = b.steps.filter(s => s.strand !== 'day'), d0 = work[2].date;
+  const c = P.combine([entry(a.id, { date: '2027-06-19' })], data, { today: TODAY });
+  const u = P.upcoming(c, { today: d0 });
+  assert.ok(u.now.length >= 1 && u.now.every(s => s.date === d0 && s.strand !== 'day' && !s.done));
+  const end = plus(d0, 6);
+  assert.deepStrictEqual(u.soon.map(s => s.id), c.steps.filter(s => s.strand !== 'day' && s.date > d0 && s.date <= end).map(s => s.id));
+  assert.strictEqual(u.late, c.steps.filter(s => s.strand !== 'day' && s.date < d0).length);
+  assert.ok(u.next && u.next.strand === 'day' && u.next.date === '2027-06-19');
+  // a step ticked off is no longer due; a plan marked done drops out; a day gone by is not "next"
+  const tk = { [u.now[0].id]: { done: true, at: d0 + 'T09:00:00Z' } };
+  const c2 = P.combine([entry(a.id, { date: '2027-06-19', ticks: tk })], data, { today: TODAY });
+  assert.ok(!P.upcoming(c2, { today: d0 }).now.some(s => s.id === u.now[0].id));
+  const c3 = P.combine([entry(a.id, { date: '2027-06-19', status: 'done' })], data, { today: TODAY });
+  const u3 = P.upcoming(c3, { today: d0 }); assert.strictEqual(u3.now.length + u3.soon.length + u3.late, 0); assert.strictEqual(u3.next, null);
+  assert.strictEqual(P.upcoming(c, { today: '2027-06-20' }).next, null);
+  // a month plan in this month is still next; a bare date (no plan saved) has no steps but is the next day
+  const m = P.combine([entry(a.id, { month: '2027-06', plan_made: undefined })], data, { today: TODAY });
+  const um = P.upcoming(m, { today: '2027-06-25' }); assert.ok(um.next && um.next.bare && um.next.by_month); assert.strictEqual(um.now.length + um.soon.length, 0);
+  assert.deepStrictEqual(P.upcoming({}, { today: TODAY }), { now: [], soon: [], late: 0, next: null });
+});
 console.log(n + ' tests passed');

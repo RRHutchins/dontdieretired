@@ -609,6 +609,22 @@
     return { plans, steps: sortSteps(steps), clashes };
   }
 
+  /* upcoming(combined, { today, days }) → { now, soon, late, next }   PURE. The app's Today card (RUNBOOK §6t row 18).
+     combined is what combine() gives. now: the get-ready and training steps dated today that are not ticked off;
+     soon: the same for the `days` days after today (default 6, so a week with today); late: how many such steps before
+     today are not ticked off; next: the nearest day of a plan (strand 'day') that has not gone by, so a stay still under
+     way and a month plan in this month count. A plan marked done is left out altogether. Nothing is reworded: the
+     steps are combine()'s own objects. */
+  function upcoming(c, opts) {
+    opts = opts || {};
+    const today = iso(todayUTC(opts.today)), n = opts.days == null ? 6 : Math.max(0, opts.days), end = iso(addDays(parse(today), n));
+    const over = new Set(((c && c.plans) || []).filter(p => p.status === 'done').map(p => p.id));
+    const live = ((c && c.steps) || []).filter(s => !over.has(s.pid) && !s.done);
+    const work = live.filter(s => s.strand !== 'day' && !s.bare);
+    const next = live.find(s => s.strand === 'day' && (s.by_month ? s.date.slice(0, 7) >= today.slice(0, 7) : (s.until || s.date) >= today)) || null;
+    return { now: work.filter(s => s.date === today), soon: work.filter(s => s.date > today && s.date <= end), late: work.filter(s => s.date < today).length, next };
+  }
+
   /* ---------------- Add to my calendar (RUNBOOK §6s, day 5) ----------------
      ics(groups, settings, { today, stamp, site, name }) → the text of an iCalendar (.ics) file.   PURE.
      groups: [{ id, cid, title, by_month, label, steps }], one per plan (steps as build/applyMarks/combine give them).
@@ -705,5 +721,5 @@
       + '</ul><p class="pl-lwhy">' + esc(fill_(W.note, { checked: longDate(parse(pk.checked)) })) + '</p></details>';
   }
 
-  return { VERSION, LEVELS, MAX_SPAN, picksHtml, openWeeks, okUntil, build, suggest, fit, ideas, trip, extras, diy, whenLabel, cleanPlace, combine, applyMarks, ics, calendar, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
+  return { VERSION, LEVELS, MAX_SPAN, picksHtml, openWeeks, okUntil, build, suggest, fit, ideas, trip, extras, diy, whenLabel, cleanPlace, combine, upcoming, applyMarks, ics, calendar, window: window_, monthsText, longDate: s => longDate(parse(s)), monthYear: s => monthYear(parse(s + '-01')), parse, MONTHS };
 });
