@@ -223,14 +223,21 @@ guidance:
     events: [mount-whitney]
     use: safety
     text: Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month.
-    for: [inyo-whitney-leaflet]
+    for: [inyo-whitney-leaflet, nps-yose-lightning]
+    note: Yosemite's lightning page (2025) says thunderstorms are most common in the afternoon, to plan to summit peaks before noon and to head for lower ground at the first sign of a storm; it backs the timing and the first-sign advice, not the line on snow in any month, which rests on the Inyo leaflet.
   - id: mountain-afternoon-storms
     topic: on the day
     applies: [hill]
     events: [mount-whitney]
     use: safety
     text: In high mountains thunderstorms usually build in the afternoon. Check the forecast before you go and stay away if a high chance of thunderstorms is forecast; start early and plan to be down by noon; keep off hilltops and ridge tops in a storm, and at the first sign of one get below the treeline. Carry rain gear and warm layers.
-    for: [nws-lightning-outdoors, usfs-elbert]
+    for: [nws-lightning-outdoors, usfs-elbert, nps-yose-lightning]
+  - id: lightning-thunder-heard
+    topic: on the day
+    applies: [hill]
+    use: safety
+    text: If you hear thunder, lightning is close enough to be a danger. Get off peaks, ridges and other high, exposed ground at once and head lower; the only safe shelter is a substantial building or a hard-topped vehicle, so make for one if it is near, and stay there until 30 minutes after the last thunder.
+    for: [nps-yose-lightning, usfs-lightning]
   - id: whitney-snow-season
     topic: before you start
     applies: [hill]

@@ -1,6 +1,6 @@
 # Guidance engine report (2026-11-26)
 
-140 sources, 95 statements, 12 event profiles. Core 84, supported 11, thin 0, contested 0.
+142 sources, 96 statements, 12 event profiles. Core 86, supported 10, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -135,6 +135,8 @@
 - Xunta de Galicia (Way of Saint James in Galicia, official web), *Public network of Pilgrims' hostels in The Way of Saint James* (2026). Opened 2026-11-26.
 - Xunta de Galicia (Way of Saint James in Galicia, official web), *Recommendations for keeping fit and healthy* (2026). Opened 2026-11-26.
 - Pilgrim's Reception Office, Santiago de Compostela (SAMI Catedral de Santiago), *The Compostela: accreditation of the pilgrimage to Santiago* (2026). Opened 2026-11-26.
+- U.S. National Park Service, Yosemite National Park, *Lightning Safety (last updated 21 January 2025)* (2025). Opened 2026-11-26.
+- USDA Forest Service, *Lightning (Know before you go; modified 28 November 2023)* (2023). Opened 2026-11-26.
 
 **2. Recognised coach or elite athlete**
 - British Mountaineering Council (Sarah Ridgway, international fell runner and guide), *12 tips for staying fit on the hills* (2026). Opened 2026-10-27.
@@ -194,6 +196,7 @@
 | core | 9 | fuel and drink | Use your long sessions to practise exactly what you will eat and drink on the day, building up gradually so your stomach gets used to it. Nothing new on the day. | ea-pavey-marathon, issn-ultra-2019, mcm-first-timer-tips |
 | core | 9 | feet | Train in the footwear you will use on the day and break new shoes in gradually. Wear moisture-wicking socks and change them if your feet sweat. | nhs-blisters, ea-pavey-marathon, bmc-long-distance |
 | core | 9 | kit | In the later weeks, train with the pack and the kit you will carry on the day so nothing is new. | bmc-hill-fit, ydnpa-three-peaks, wanderlust-trek-prep, cyclinguk-first-touring |
+| core | 9 | on the day | In high mountains thunderstorms usually build in the afternoon. Check the forecast before you go and stay away if a high chance of thunderstorms is forecast; start early and plan to be down by noon; keep off hilltops and ridge tops in a storm, and at the first sign of one get below the treeline. Carry rain gear and warm layers. | nws-lightning-outdoors, usfs-elbert, nps-yose-lightning |
 | core | 9 | key session | Build your training walks from a few miles up to a full day's distance, carrying the pack you will use. | wanderlust-trek-prep, bmc-hill-fit, csj-camino-training, apoc-prepare-camino |
 | core | 9 | on the day | Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard. | rnli-tidal-wales-2026, swcpa-safety, wcp-safety |
 | core | 9 | why | Strength and balance work is what keeps you in one piece. In trials it cut sports injuries to about a third, and it is part of the official guidance for everyone on at least two days a week. | lauersen-2014, cmo-2019 |
@@ -219,7 +222,8 @@
 | core | 7 | why | Easy sessions add fitness without leaving you too tired for the long session. Top endurance athletes do about four in five of their sessions at this low effort. | ea-training-pace, ijspp-2010-intensity |
 | core | 7 | why | Rest days are when your body recovers from the work and adapts to it. The NHS's beginner running plan puts a rest day between every run. | nhs-c25k, rc-down-weeks |
 | core | 6 | body maintenance | Stretch after a long day if it feels good, but do not rely on stretching to prevent injury; trials found it made no difference, unlike strength and balance work. | lauersen-2014, bmc-hill-fit |
-| core | 6 | on the day | In high mountains thunderstorms usually build in the afternoon. Check the forecast before you go and stay away if a high chance of thunderstorms is forecast; start early and plan to be down by noon; keep off hilltops and ridge tops in a storm, and at the first sign of one get below the treeline. Carry rain gear and warm layers. | nws-lightning-outdoors, usfs-elbert |
+| core | 6 | on the day | Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month. | inyo-whitney-leaflet, nps-yose-lightning |
+| core | 6 | on the day | If you hear thunder, lightning is close enough to be a danger. Get off peaks, ridges and other high, exposed ground at once and head lower; the only safe shelter is a substantial building or a hard-topped vehicle, so make for one if it is near, and stay there until 30 minutes after the last thunder. | nps-yose-lightning, usfs-lightning |
 | core | 6 | on the day | On a multi-day trip keep the first few days shorter while you find your rhythm, let the daily distance flex with the terrain and how you feel, and build in easier days or full rest days. | bmc-long-distance, wanderlust-trek-prep, ldwa-body-prep |
 | core | 6 | fuel and drink | On a long-distance trail, water, toilets and food are not available at every stop, and some taps, toilets and cafés close or keep shorter hours in winter. Check what will be open before you set off, carry water and food for the day, especially in summer (two bottles is a sensible start), and top up whenever you can. | mosp-katy-general, gap-how-to-prepare |
 | core | 6 | on the day | On cliff-top stretches keep to the path and away from the edge, especially in wind or when the grass is wet, know the tide times so you are not cut off, and on the coast call 999 or 112 and ask for the Coastguard. | swcpa-safety, wcp-safety |
@@ -247,7 +251,6 @@
 | supported | 5 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit, cicerone-hill-fit |
 | supported | 5 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water, 220tri-ow-pool-skills |
 | supported | 5 | on the day | Ride the last part of the bike leg in an easier gear, then start the run controlled rather than fast; USA Triathlon suggests shortening your stride for the first half mile to a mile. | usat-brick, tri247-bike-pacing-run |
-| supported | 3 | on the day | Thunderstorms and lightning are a serious hazard on a high mountain. If storms are forecast, plan to be off the summit by noon, and at the first sign of lightning leave the summit and any exposed ridge. Be ready for high wind, freezing temperatures, rain or snow in any month. | inyo-whitney-leaflet |
 | supported | 3 | before you start | Plan for the snow-free season, usually July to late September. When snow or ice is on the mountain it needs winter mountaineering skills and equipment. | inyo-whitney, inyo-whitney-leaflet |
 | supported | 3 | before you start | The Coast to Coast is a demanding trail, hardest at the western end through the Lake District, where waymarks usually stop above the fell wall. Some high sections may be difficult in winter or bad weather; know the low-level options and use them when the weather is poor. | govuk-c2c |
 | supported | 3 | key session | For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60. | greatrun-10k-plans |
@@ -259,7 +262,7 @@
 - altitude: 5 usable statements of its own
 - cycling: 6 usable statements of its own
 - endurance: 16 usable statements of its own
-- hill: 14 usable statements of its own
+- hill: 15 usable statements of its own
 - multiday: 13 usable statements of its own
 - running: 9 usable statements of its own
 - swimming: 20 usable statements of its own
