@@ -103,9 +103,9 @@ groups:
   food:
     slug: food-and-drink
     label: Food and drink
-    short: "Cookery classes, baking, brewing, foraging and growing your own"
+    short: "Cookery classes, wine and whisky trips, beer festivals, foraging and growing your own"
     title: "Cookery classes and food experiences: how to start"
-    meta: "Cookery schools, bread and pasta classes, butchery, barista and barbecue courses, cheese, cider, wine and growing your own food."
+    meta: "Cookery schools, bread and pasta classes, barbecue courses, wine, whisky and cider trips, beer festivals, cheese and growing your own food."
     categories: [eat]
     also: "cook|bak(e|ing)|bread|cheese|cider|wine|whisky|gin\\b|pasta|barista|barbecue|butcher|chocolate|brew|marmalade|forag|sushi|distill|vineyard|food"
   gardens:
@@ -182,6 +182,16 @@ groups:
     meta: "Fly in a Spitfire, try gliding, paragliding or a balloon, take a flying lesson, watch a rocket launch or visit Jodrell Bank and Kennedy Space Center."
     match: "\\bfly\\b|flying|glid|balloon|spitfire|rocket|space|kennedy|planetar|drone|airshow|aviation|aircraft|skydiv|paraglid|helicopter|jodrell"
     not: "fish|tying|butterf|trapeze|hawk"
+  # Lists to tick off (Robin, 27 Nov 2026: "Do food and drink and tick off lists"). Sets you collect over months or years:
+  # every Wainwright, every Munro, every US national park, every ballpark. New pages say `groups: [lists]`; the match below
+  # picks up the older pages that are already a set to complete.
+  lists:
+    slug: lists-to-tick-off
+    label: Lists to tick off
+    short: "Every Munro, every national park, every ballpark: sets to collect over the years"
+    title: "Lists to tick off: Wainwrights, Munros, national parks and more"
+    meta: "Collect the set over months or years: the Wainwrights, the Munros, every US national park, the Adirondack 46, every MLB ballpark and the six marathon majors."
+    match: "visit all smithsonian|national three peaks|yorkshire three peaks|unesco world heritage site|walk 1000 miles"
   learning:
     slug: learn-something-new
     label: Learn something new
