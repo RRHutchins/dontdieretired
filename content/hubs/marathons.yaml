@@ -2008,6 +2008,140 @@ events:
   link: {label: 'HCMC Marathon: Marathon 42 km', url: 'https://hcmcmarathon.com/42km/', checked: '2026-11-26'}
   more:
   - {label: 'HCMC Marathon: Race info', url: 'https://hcmcmarathon.com/race-info/', checked: '2026-11-26'}
+- id: eugene-marathon
+  name: Eugene Marathon
+  series: independent
+  place: Eugene, Oregon, from Agate Street beside Hayward Field to a finish on the track inside Hayward Field
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, the Eugene 5K, a kids' Duck Dash and the Doublestack Challenge (the 5K on Saturday plus the marathon or half on Sunday)
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [register]
+  entry_note: Registration for the 2027 race is open online. The pages we opened do not mention a cap. Runners must be at least 16 on race day.
+  note: The 2027 race is on Sunday 25 April 2027, starting at 7am. The course heads south from Agate Street, uses the Ruth Bascom Riverbank Path System and Alton Baker Park, and has a total elevation gain of 417 feet (127 m). The organizers call the finish inside Hayward Field "epic".
+  time_limit: [{km: 42.2, hours: 7}]
+  link: {label: 'Eugene Marathon: Marathon', url: 'https://www.eugenemarathon.com/marathon', checked: '2026-11-27'}
+  more:
+  - {label: 'Eugene Marathon: Registration information', url: 'https://www.eugenemarathon.com/pricing', checked: '2026-11-27'}
+- id: flying-pig-marathon
+  name: Flying Pig Marathon
+  series: independent
+  place: Cincinnati, Ohio, from Rosa Parks Street to Mehring Way near the Roebling Bridge, through Covington and Newport in Kentucky
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; the weekend also has a half marathon, a four-person relay, a 5K, a 10K, the 50 West Mile and other events including the Flying Piglet and Flying Fur
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: You register online with the organizer; the pages we opened do not mention a cap. Marathon runners must be 18 on race day.
+  note: The 2027 race is on Sunday 2 May 2027, starting at 6:30am. The course passes through Cincinnati, Covington, Newport, Mariemont, Fairfax and Columbia Township. Anyone who has not reached the Frisch's Mainliner (between miles 17 and 18) by 12:15pm is taken forward by bus.
+  time_limit: [{km: 42.2, hours: 7}]
+  time_limit_text: a continuous pace of 16 minutes a mile (about 7 hours); slower participants move to the sidewalk
+  link: {label: 'Flying Pig Marathon: Flying Pig Marathon', url: 'https://flyingpigmarathon.com/flying-pig-marathon-weekend/event/flying-pig-marathon', checked: '2026-11-27'}
+- id: fargo-marathon
+  name: Fargo Marathon
+  series: independent
+  place: Fargo, North Dakota, starting outside and finishing inside the FARGODOME
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, a 10K (6.2 miles), a 5K (3.1 miles) and a youth run
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: You register online with the organizer. The pages we opened do not say how many places there are. Registration for mailed race packets closes on 9 May 2027.
+  note: The 2027 race is on Saturday 22 May 2027, starting at 7am. The organizers describe a "mostly flat and fast route that is ideal for first-time marathoners and seasoned veterans alike".
+  link: {label: 'Fargo Marathon: Marathon', url: 'https://fargomarathon.com/marathon/', checked: '2026-11-27'}
+  more:
+  - {label: 'Fargo Marathon: Event details', url: 'https://fargomarathon.com/event-details/', checked: '2026-11-27'}
+- id: bayshore-marathon
+  name: Bayshore Marathon
+  series: independent
+  place: Traverse City, Michigan, out and back along Grand Traverse Bay from Northwestern Michigan College
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, a 10K (6.2 miles) and a kids' marathon
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [open]
+  entry_note: Registration for 2027 opens on 1 December 2026 at 9am Eastern, with a limit of 2,000 runners in the marathon. The organizers say all events sold out early for 2026.
+  note: The 2027 race is on Saturday 29 May 2027, starting at 7:15am. The organizers describe a flat out-and-back course that is "100% paved, and shaded along much of the route", finishing on a track inside the stadium.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: the finish line closes at 1:15pm for all events (6 hours after the marathon start)
+  entry_dates:
+  - {date: '2026-12-01', what: 'Registration for 2027 opens at 9am Eastern', url: 'https://www.bayshoremarathon.org/faqs', checked: '2026-11-27'}
+  link: {label: 'Bayshore Marathon: Full marathon', url: 'https://www.bayshoremarathon.org/full-marathon', checked: '2026-11-27'}
+  more:
+  - {label: 'Bayshore Marathon: FAQs', url: 'https://www.bayshoremarathon.org/faqs', checked: '2026-11-27'}
+- id: newport-marathon
+  name: Newport Marathon
+  series: independent
+  place: Newport, Oregon, from Yaquina Bay State Park by the lighthouse, through the town and along the Yaquina Bay and River estuary
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon and half marathon
+  terrain: [road]
+  format: single
+  month: [6]
+  entry: [open]
+  entry_note: Registration is online only and runs until the race fills. The FAQ gives a cap of 500 for the marathon and says the race generally sells out in advance, as early as February; the homepage says when it is full.
+  note: The 2027 race is on Saturday 5 June 2027. The course loops north through residential streets near the ocean, then follows the estuary to mile 15 and retraces its route. The organizers call it "a flat, very fast, and beautiful course", certified by USA Track & Field, and a Boston Marathon qualifier.
+  walkers: true
+  walkers_note: The FAQ gives walkers a 6am start, an hour before the 7am marathon start.
+  link: {label: 'Newport Marathon: Register', url: 'https://www.newportmarathon.org/register/', checked: '2026-11-27'}
+  more:
+  - {label: 'Newport Marathon: About the course', url: 'https://www.newportmarathon.org/about-the-course/', checked: '2026-11-27'}
+  - {label: 'Newport Marathon: FAQ', url: 'https://www.newportmarathon.org/faq/', checked: '2026-11-27'}
+  - {label: 'Newport Marathon: Home', url: 'https://www.newportmarathon.org/', checked: '2026-11-27'}
+- id: christchurch-marathon
+  name: ASICS Christchurch Marathon
+  series: independent
+  place: Christchurch, from Park Terrace to Hagley Park North, two laps of city streets and park cycle paths
+  country: New Zealand
+  continent: oceania
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, a 10K (6.2 miles), a youth 3K and a kids' mile
+  terrain: [road]
+  format: single
+  month: [4]
+  entry: [register]
+  entry_note: Entries for 2027 are open online with the organizer. The pages we opened do not mention a cap or a closing date.
+  note: The 2027 race is on Sunday 18 April 2027, starting at 7:30am. The organizers describe the two-lap course as "flat, scenic and spectator friendly" and say it is subject to approvals and may change. There is no official walking category in the marathon.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: course controls and marshaling close at 1:30pm (6 hours after the start), on a race-day page still being updated for 2027
+  link: {label: 'ASICS Christchurch Marathon: 42 km marathon', url: 'https://www.christchurchmarathon.co.nz/42km-marathon', checked: '2026-11-27'}
+  more:
+  - {label: 'ASICS Christchurch Marathon: 2027 entries now open', url: 'https://www.christchurchmarathon.co.nz/news-updates/2027-entries-now-open', checked: '2026-11-27'}
+  - {label: 'ASICS Christchurch Marathon: Race day info', url: 'https://www.christchurchmarathon.co.nz/race-day-info', checked: '2026-11-27'}
+- id: wellington-marathon
+  name: Gazley Volkswagen Wellington Marathon
+  series: independent
+  place: Wellington, starting and finishing on the Fran Wilde Walkway at Hnry Stadium, along the harbor past Te Papa and Oriental Bay to the Miramar Peninsula
+  country: New Zealand
+  continent: oceania
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, a 10K (6.2 miles) and a kids' Magic Mile
+  terrain: [road]
+  format: single
+  month: [7]
+  entry: [register]
+  entry_note: You enter online through the organizer's site. The pages we opened give no closing date or cap.
+  note: The 2027 race, the event's 40th anniversary, is on 4 July 2027. The marathon is two laps of an out-and-back harbor course; the organizers say "the only hill is the ramp into Hnry Stadium". Marathon runners must reach the end of the first lap (22.2 km, 13.8 miles) by 11am, and road controls close at 1pm.
+  walkers: true
+  walkers_note: The organizer's options page says "Walkers welcome and every finisher wins a medal."
+  link: {label: 'Wellington Marathon: The course', url: 'https://www.wellingtonmarathon.co.nz/the-course', checked: '2026-11-27'}
+  more:
+  - {label: 'Wellington Marathon: Home', url: 'https://www.wellingtonmarathon.co.nz/', checked: '2026-11-27'}
+  - {label: 'Wellington Marathon: Options', url: 'https://www.wellingtonmarathon.co.nz/options', checked: '2026-11-27'}
 guides:
 - slug: how-to-get-a-place
   title: How to get a place in a big marathon
