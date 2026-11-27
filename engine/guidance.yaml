@@ -368,7 +368,8 @@ guidance:
     events: [coast-to-coast]
     use: safety
     text: Before walking on a beach or below cliffs, check the tide times (ask someone who knows the area if you cannot read a tide table), keep an eye on which way the tide is moving, and plan to be back on safe ground well before you could be cut off. Carry a charged phone. If you are cut off, stay where you are rather than going into the water, and call 999 and ask for the Coastguard.
-    for: [rnli-tidal-wales-2026, swcpa-safety, wcp-safety]
+    for: [rnli-tidal-wales-2026, swcpa-safety, wcp-safety, ncc-holy-island-crossing]
+    note: Northumberland County Council's Holy Island Safe Crossing Times page (opened 27 Nov 2026) backs checking the times and leaving a margin, not the phone or what to do if cut off. It lists safe and unsafe times to cross the causeway, says weather such as high wind can change them and to allow 30 minutes extra, and for the walking route over the sands (to which the times do not apply) says go in daylight with someone who has local knowledge, never cross on a rising tide, and aim to finish before the midpoint of the safe period.
 
   # ---------- why each part of a plan is there (use: why; `role` ties it to a session; `short` is the one-line weekly version) ----------
   - id: why-long
@@ -491,14 +492,15 @@ guidance:
     applies: [swimming]
     use: safety
     text: Never swim alone in open water. Swim with a friend, a club or at a supervised venue, and tell someone on land where you are going and when you will be back.
-    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather, swt-snorkel-safety, nps-buis-safety, swimeng-ow-tips]
-    note: The Scottish Wildlife Trust (never snorkel alone; tell people where you are going) and the Buck Island Reef safety page (do not swim alone) give the same advice to snorkellers.
+    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, swimeng-hot-weather, swt-snorkel-safety, nps-buis-safety, swimeng-ow-tips, rnli-cold-water-dipping]
+    note: The Scottish Wildlife Trust (never snorkel alone; tell people where you are going) and the Buck Island Reef safety page (do not swim alone) give the same advice to snorkellers. The RNLI's cold water dipping page (opened 27 Nov 2026) says never go cold water dipping alone, go with a friend, and tell someone where you are going and how long you will be gone.
   - id: ow-cold-shock
     topic: warning signs
     applies: [swimming]
     use: safety
     text: In water of 15°C (59°F) or below, cold water shock makes you gasp and breathe fast. Walk in slowly rather than jumping or diving, and give your breathing 60 to 90 seconds to settle before you swim. If you get into difficulty, lean back and float until it passes.
-    for: [rnli-cold-water-2025, swimeng-stay-safe, rnli-float, swimeng-hot-weather, oss-cold-water]
+    for: [rnli-cold-water-2025, swimeng-stay-safe, rnli-float, swimeng-hot-weather, oss-cold-water, rnli-cold-water-dipping, nws-cold-water]
+    note: Opened 27 Nov 2026, the RNLI's cold water dipping page says the effect of entering water of 15°C and below is often underestimated, that cold water shock can steal the air from your lungs, tells you not to jump straight in, and gives the float (tilt your head back with your ears submerged, relax and breathe normally); it gives no 60 to 90 second figure. The US National Weather Service's cold water page backs the gasp and fast breathing only, saying sudden immersion can trigger involuntary gasping, rapid breathing or hyperventilating during the first 2 to 3 minutes or more, and that cold shock can be just as severe and dangerous in water of 50 to 60°F (10 to 15°C); it does not cover walking in or floating.
   - id: ow-cold-muscles
     topic: warning signs
     applies: [swimming]
@@ -510,20 +512,22 @@ guidance:
     applies: [swimming]
     use: safety
     text: If you or someone else is in trouble in the water, call 999 or 112 and ask for the Coastguard (911 in the US). Do not go in after them; tell them to float and throw them something that floats.
-    for: [rnli-cold-water-2025, swimeng-stay-safe]
+    for: [rnli-cold-water-2025, swimeng-stay-safe, rnli-cold-water-dipping]
+    note: The RNLI's cold water dipping page (opened 27 Nov 2026) backs only the first part, saying that if you spot someone else in trouble you should call 999 or 112 and, at the coast, ask for the coastguard; it does not cover going in after them or throwing something that floats.
   - id: ow-be-seen
     topic: kit
     applies: [swimming]
     use: advice
     text: Wear a brightly coloured swim cap and tow a float, so boats and other water users can see you and you have something to hold if you tire.
-    for: [rnli-cold-water-2025, usms-open-water, swimeng-stay-safe, bewl-ows, rnli-open-water-swimming]
-    note: Bewl Water, a supervised lake venue in Kent, makes a tow float and a bright hat compulsory for every swimmer.
+    for: [rnli-cold-water-2025, usms-open-water, swimeng-stay-safe, bewl-ows, rnli-open-water-swimming, rnli-cold-water-dipping]
+    note: Bewl Water, a supervised lake venue in Kent, makes a tow float and a bright hat compulsory for every swimmer. The RNLI's cold water dipping page (opened 27 Nov 2026) says to wear a brightly coloured swim cap or beanie so you are easy to spot and to consider a tow float; it does not mention boats or holding the float when tired.
   - id: ow-check-conditions
     topic: on the day
     applies: [swimming]
     use: advice
     text: Before you get in, check the forecast, tides, currents and the water itself, and plan where you will get in and out, with a second exit in case.
-    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, rnli-open-water-swimming]
+    for: [rnli-cold-water-2025, swimeng-stay-safe, usms-open-water, rnli-open-water-swimming, rnli-cold-water-dipping]
+    note: The RNLI's cold water dipping page (opened 27 Nov 2026) backs the first part, saying to check the weather forecast, including the tidal information and swell height, before you dip or swim, and to stay out if in any doubt; it does not cover planning entry and exit points.
   - id: ow-cold-gradually
     topic: key session
     applies: [swimming]
