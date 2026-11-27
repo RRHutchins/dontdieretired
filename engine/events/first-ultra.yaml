@@ -1,0 +1,17 @@
+id: first-ultra
+name: A first ultra (about 50 km)
+kinds: [endurance, running]
+activity: run-an-ultramarathon
+demands: "About 50 km (31 miles) of running and walking, usually on trails with some climbing; the hours on your feet matter more than the pace."
+sources: [higdon-ultra-50k, irunfar-first-ultra]
+key_session:
+  name: long run
+  unit: hours
+  start: {starter: 1.5, active: 2, advanced: 2.5}
+  peak: 5
+  note: at an easy, conversational pace, on trail where you can, walking some hills and when you drink
+second_session: {name: easy run, minutes: 45}
+specific: {name: hilly run, from_week: 4, text: "45 to 60 minutes on a hilly route, walking some of the steeper climbs as you would on the day; every two or three weeks, also practise running down steeper ground with control, no harder than a moderate effort"}
+pack_from_fraction: null
+weeks: {default: 24, min: 16}
+prerequisite: "This plan is for a first ultra of about 50 km (31 miles). The guides it draws on are written for runners who have already trained for or run a marathon; if you have not, train for a marathon first."

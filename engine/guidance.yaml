@@ -685,3 +685,36 @@ guidance:
     text: Galicia's public pilgrim hostels cannot be booked; beds are given out on arrival, for one night only, with priority to pilgrims with physical limitations and then to walkers. Most private albergues and hotels take reservations, and popular routes get busy from May to September, so book ahead if you need a bed.
     for: [xunta-public-hostels, apoc-where-to-sleep]
     events: [camino-100km]
+
+  # ---------- a first ultra, about 50 km (added 27 Nov 2026, RUNBOOK §6u step 6) ----------
+  - id: ultra-from-marathon
+    topic: before you start
+    applies: [running]
+    events: [first-ultra]
+    use: advice
+    text: If you have trained for a marathon, you are well on the way to a first 50 km ultra on similar ground. One 50K plan follows marathon training for its first 18 weeks, then builds the long run to about five hours.
+    for: [irunfar-first-ultra, higdon-ultra-50k]
+  - id: ultra-walking
+    topic: key session
+    applies: [running]
+    events: [first-ultra]
+    use: advice
+    text: Walking is a normal part of an ultra, and it works in training too. Practise it on long runs, for example at aid stations and when you drink (drinking is easier while walking), and walk some hills even when you don't feel you need to.
+    for: [higdon-ultra-50k, irunfar-first-ultra]
+  - id: ultra-terrain
+    topic: key session
+    applies: [running]
+    events: [first-ultra]
+    use: rule
+    text: Train on ground like the race's. Run on trail before a trail ultra, log some climbing, and practise running down steeper hills; you do not need to train on the course itself.
+    for: [irunfar-first-ultra, cts-downhill-2026]
+    note: Opened 27 Nov 2026. iRunFar (Bryon Powell) says it would be beneficial to have run on a trail before a trail ultra, to log some climbing miles and to practise running down some relatively steep hills, without running on the course every weekend. Cliff Pittman of CTS (2 September 2026) suggests one downhill session every two to three weeks, outdoors on trails where possible, matching the typical descent of the goal event, and calls it a skills exercise; he adds that you will be sore after the first one or two.
+  - id: why-specific-ultra
+    topic: why
+    role: specific
+    applies: [running]
+    events: [first-ultra]
+    use: why
+    text: The hilly run practises what a trail ultra is made of. Walking the steep climbs is practice for race day, and running downhill is a skill your legs have to get used to; the first one or two sessions leave you sore, so keep the descents no harder than a moderate effort.
+    short: it practises walking the climbs and running the descents, which your legs need to get used to
+    for: [irunfar-first-ultra, cts-downhill-2026]

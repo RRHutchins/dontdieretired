@@ -53,6 +53,7 @@
   <section class="fl-detail hub-plan" aria-labelledby="race-plan-h">
     <h2 id="race-plan-h">Plan this {{ h.word or "race" }}</h2>
     <p>{% if e.race_day %}The organizer's page gives race day as {{ e.race_day.human }}. {% endif %}Choose {% if e.race_day %}that day{% else %}the race day{% endif %} on our <a href="/list/{{ e.plan_act.id }}/">{{ e.plan_act.title }}</a> page and the planner sets out how to get ready: when to book, each step and why it comes then, and a week-by-week training plan made by our guidance engine from the sources it lists. The dated plan comes with <a href="/planner-plus/">Planner Plus</a>; the links to plan it yourself are free.</p>
+    {% if h.plan_note %}<p>{{ h.plan_note }}</p>{% endif %}
     <p><a class="btn" href="/list/{{ e.plan_act.id }}/{% if e.race_day %}?on={{ e.race_day.iso }}{% endif %}#plan">Plan this {{ h.word or "race" }}</a></p>
     <p class="meta">The training plan has not been checked by a coach, physiotherapist or doctor. If you have a health condition or have not been active for a while, check with your GP or doctor first.</p>
   </section>

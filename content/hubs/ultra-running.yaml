@@ -36,6 +36,11 @@ entry_calendar:
   lead: When lotteries open and close, when draws happen and when registration starts, for the races in our finder that have posted their next dates.
 signup_tag: int-ultra
 landing_noun: Ultras
+# "Plan this race" (RUNBOOK §6u step 6, 27 Nov 2026): the engine's first-ultra plan (about 50 km), so only race pages that offer a
+# distance of 45 to 60 km show it, with plan_note saying which distance the plan is for.
+plan_activity: run-an-ultramarathon
+plan_km: [45, 60]
+plan_note: Our training plan is for a first ultra of about 50 km (31 miles), one of the distances this race offers, and it is written for runners who have already trained for or run a marathon. It is not a plan for the longer distances.
 landings:
 - {slug: in-the-uk, title: Ultramarathons in the UK, short: UK, group: Where, filter: {country_has: UK}}
 - {slug: in-the-usa, title: Ultramarathons in the USA, short: USA, group: Where, filter: {country_has: USA}}
@@ -235,13 +240,16 @@ events:
   terrain: [road]
   format: single
   month: [6]
-  entry: [qualifier]
-  entry_note: You need a qualifying time; for 2027 that includes an officially timed marathon in 4:59:59 or less.
-  note: A point-to-point road race between the two cities, run in June.
+  entry: [qualifier, ballot]
+  entry_note: For 2027, entry windows for Green and Yellow Number holders and Comrades Marathon Association members (first come, first served) came before a general ballot in September 2026. Every entrant must run an officially timed standard marathon in under five hours between 15 June 2026 and 3 May 2027 and submit a medical questionnaire by 3 May 2027.
+  note: The race on Sunday 13 June 2027 is the 100th Comrades Marathon and the 50th down run to Durban, with the entry cap raised to 28,000.
   time_limit: [{km: 90, hours: 12}]
-  link: {label: 'Comrades Marathon: race launch and qualifying times', url: 'https://comrades.com/blogs/launch-of-2025-comrades-marathon', checked: '2026-11-17'}
+  link: {label: 'Comrades Marathon: race information', url: 'https://comrades.com/race-information', checked: '2026-11-27'}
   more:
-  - {label: 'Comrades Marathon: race information (2027 date and 12-hour limit)', url: 'https://comrades.com/race-information', checked: '2026-11-22'}
+  - {label: 'Comrades Marathon: 2027 date announced', url: 'https://comrades.com/blogs/2027-comrades-marathon-date-announced', checked: '2026-11-27'}
+  - {label: 'Comrades Marathon: entry process for 2027', url: 'https://comrades.com/blogs/entry-process-for-2027-comrades-marathon-to-open-25-august', checked: '2026-11-27'}
+  entry_dates:
+  - {date: '2027-05-03', what: 'Last day to run a qualifying marathon and submit the medical questionnaire for 2027', url: 'https://comrades.com/blogs/entry-process-for-2027-comrades-marathon-to-open-25-august', checked: '2026-11-27'}
 - id: two-oceans-ultra
   name: Two Oceans Ultra Marathon
   series: independent
@@ -1019,6 +1027,10 @@ events:
   entry_note: Entries open online at 6.30am on the first Saturday in July and sell out; later entrants go on a waitlist. No qualifying race is listed.
   note: Held on the first Saturday in December on the Kepler Track, one of New Zealand's Great Walks, climbing to 1,400 m with steep climbs and descents.
   link: {label: 'Kepler Challenge: race page', url: 'https://keplerchallenge.co.nz/kepler-challenge/', checked: '2026-11-19'}
+  more:
+  - {label: 'Kepler Challenge: race entry', url: 'https://keplerchallenge.co.nz/race-entry/', checked: '2026-11-27'}
+  entry_dates:
+  - {date: '2027-07-03', what: 'Entries open for the December 2027 race (6.30am NZ time; in 2026 it sold out in about two minutes)', url: 'https://keplerchallenge.co.nz/race-entry/', checked: '2026-11-27'}
 - id: andorra-by-utmb
   name: Trail 100 Andorra by UTMB
   series: utmb
@@ -2593,6 +2605,181 @@ events:
   link: {label: 'Run Lake Sonoma: 100K course details', url: 'https://runlakesonoma.com/100k-course-details/', checked: '2026-11-26'}
   more:
   - {label: 'Run Lake Sonoma: home page (100K, 50K, directions)', url: 'https://runlakesonoma.com/', checked: '2026-11-26'}
+- id: rocky-raccoon-100
+  name: Rocky Raccoon 100 Trail Race
+  series: independent
+  place: Huntsville State Park, Texas
+  country: USA
+  continent: north-america
+  km: [161, 100]
+  distances: 100 miles (five 20-mile laps) and 100 km (a 2-mile short lap, then three 20-mile laps)
+  climb: About 1,250 ft of gain per full 20-mile lap
+  terrain: [trail]
+  format: single
+  month: [2]
+  entry: [register]
+  entry_note: Register online with Tejas Trails from the race page; for 2027 the race shows as waitlisted, so new runners join the waitlist. Finishing the 100 miles within 30 hours qualifies you for the Western States lottery.
+  note: Gently undulating trails on a bed of pine needles, with tree roots underfoot; the organizer calls it "the perfect trail running course for veteran runners wanting a 100mile P.R."
+  time_limit: [{km: 161, hours: 32}, {km: 100, hours: 31}]
+  time_limit_text: The course closes at 2:00pm on Sunday, 32 hours after the 6:00am Saturday start of the 100 miles and 31 hours after the 7:00am start of the 100 km (our count from the page's times)
+  link: {label: 'Tejas Trails: Rocky Raccoon 100 race page', url: 'https://www.tejastrails.com/rocky100', checked: '2026-11-27'}
+- id: hurt-100
+  name: HURT 100
+  series: independent
+  place: Mountains above Honolulu, Oʻahu, Hawaii
+  country: USA
+  continent: north-america
+  km: [161]
+  distances: 100 miles (2027 course, the "2026 Alternate Course" - a 2.5-mile Lower Loop, then five 19.5-mile loops)
+  climb: 24,500 ft (about 7,470 m) of cumulative gain
+  terrain: [mountain, trail, island]
+  format: single
+  month: [1]
+  entry: [ballot, qualifier]
+  entry_note: Apply in a short registration window in July; a weighted lottery picks the field. You need a finish of at least 50 miles in about the two years before registration (with a public results link), must be 18 or over, and must do eight hours of trail work before the race.
+  note: Almost all single-track, with roots, rocks, mud and about 20 stream crossings; the organizer calls it "a very difficult event designed for the adventurous and well prepared ultrarunner."
+  time_limit: [{km: 161, hours: 36}]
+  link: {label: 'HURT: Book of HURT 2027 (alternate course)', url: 'https://hurt100.com/book-of-hurt-2027-alternate-course/', checked: '2026-11-27'}
+  more:
+  - {label: 'HURT: Book of HURT 2027 (entry rules and dates)', url: 'https://hurt100.com/book-of-hurt-2027/', checked: '2026-11-27'}
+- id: umstead-100
+  name: Umstead 100 Mile Endurance Run
+  series: independent
+  place: William B. Umstead State Park, Raleigh, North Carolina
+  country: USA
+  continent: north-america
+  km: [161, 80]
+  distances: 100 miles, with a 50-mile option
+  terrain: [trail]
+  format: single
+  month: [4]
+  entry: [open, ballot, qualifier]
+  entry_note: 265 general entries go first come at the primary registration in September, then 50 are drawn in a Second Chance Lottery. The 100 miles needs a 50-mile race finish (or 50+ miles in a 12-hour race) in the qualifying window; the 50-mile option needs no qualifier. Minimum age 18. The 2027 race is full.
+  note: Run on trails in William B. Umstead State Park, from a relatively flat gravel start and finish area; 2027 is the 32nd annual running.
+  time_limit: [{km: 161, hours: 30}, {km: 80, hours: 30}]
+  link: {label: 'Umstead 100: home page', url: 'https://www.umstead100.org/', checked: '2026-11-27'}
+  more:
+  - {label: 'Umstead 100: race information', url: 'https://www.umstead100.org/race_information.html', checked: '2026-11-27'}
+  - {label: 'Umstead 100: registration', url: 'https://www.umstead100.org/registration.html', checked: '2026-11-27'}
+- id: mds-120-peru
+  name: MDS 120 Peru
+  series: mds
+  place: Ica Desert, near Paracas
+  country: Peru
+  continent: south-america
+  km: [120, 100, 80]
+  distances: 80, 100 or 120 km in three stages, within an eight-day program (four days in the desert)
+  terrain: [desert]
+  format: stage
+  month: [11]
+  entry: [register]
+  entry_note: Register online when registration opens (9 December 2026). You need a medical certificate signed by a doctor less than 90 days before the start. The 2027 race goes ahead only once 250 people have registered (counted with MDS Trek), decided by 31 January 2027, so the organizer says not to book flights before then.
+  note: A stage race over coastal dunes above the Pacific in full food self-sufficiency, with water at checkpoints and nights in a tent at a bivouac; the minimum pace is 3.5 km/h.
+  link: {label: 'Marathon des Sables: MDS 120 Peru', url: 'https://marathondessables.com/en/event/mds-120-perou', checked: '2026-11-27'}
+  entry_dates:
+  - {date: '2026-12-09', what: 'Registration opens for the 2027 race (12:00 CET)', url: 'https://marathondessables.com/en/event/mds-120-perou', checked: '2026-11-27'}
+  - {date: '2027-01-31', what: 'Decision on whether the 2027 race goes ahead (it needs 250 registered, with MDS Trek)', url: 'https://marathondessables.com/en/event/mds-120-perou', checked: '2026-11-27'}
+- id: six-foot-track-marathon
+  name: The Six Foot Track Marathon
+  series: independent
+  place: Katoomba to Jenolan Caves, New South Wales
+  country: Australia
+  continent: oceania
+  km: [45]
+  distances: 45 km trail, point to point
+  terrain: [trail]
+  format: single
+  entry: [ballot, qualifier]
+  entry_note: Everyone needs a valid qualifier under the 2027 rules. Eligible runners can use a short Preferred Entry window; the remaining places go to a lottery split evenly between men and women, with no waitlist.
+  note: Runs from the Explorers Marked Tree near Katoomba to Jenolan Caves, finishing at the Binda Bush Cabins since 2021; the organizer calls it "an iconic race that holds a special place in the hearts of many runners."
+  time_limit: [{km: 45, hours: 7}]
+  link: {label: 'Six Foot Track Marathon: the race', url: 'https://www.sixfoot.com/the-race', checked: '2026-11-27'}
+  more:
+  - {label: 'Six Foot Track Marathon: step by step guide to 2027 entry', url: 'https://www.sixfoot.com/step-by-step-guide-to-2027-entry', checked: '2026-11-27'}
+  entry_dates:
+  - {date: '2026-11-30', what: 'Preferred Entry opens (9:00am; closes 9:00am on 2 December)', url: 'https://www.sixfoot.com/step-by-step-guide-to-2027-entry', checked: '2026-11-27'}
+  - {date: '2026-12-02', what: 'Lottery registration opens (9:00am; closes 5:00pm on 4 December)', url: 'https://www.sixfoot.com/step-by-step-guide-to-2027-entry', checked: '2026-11-27'}
+  - {date: '2026-12-07', what: 'Lottery results published', url: 'https://www.sixfoot.com/step-by-step-guide-to-2027-entry', checked: '2026-11-27'}
+- id: trail-du-saint-jacques-by-utmb
+  name: Trail du Saint-Jacques by UTMB
+  series: utmb
+  place: Saugues and the Le Puy-en-Velay section of the Way of St James
+  country: France
+  continent: europe
+  km: [140, 88, 55]
+  distances: Ultra du Saint Jacques 140 km (100M category), Grand Trail du Saint Jacques 88 km (100K), Monistrail 55 km (50K); shorter races too
+  climb: 6,000 m (140 km), 3,600 m (88 km), 2,100 m (55 km)
+  terrain: [trail]
+  format: single
+  month: [6]
+  entry: [open]
+  entry_note: Direct online registration with no lottery; the first window is for UTMB Index holders only, then it is open to all until sold out, with no waiting list. You must be born in 2007 or before. For 2027 the 88 km and 55 km show as full.
+  note: The organizer calls it "a cultural and spiritual journey through time on and around the famous route to Santiago de Compostela"; the 140 km starts in Saugues on a Friday evening.
+  time_limit: [{km: 140, hours: 30.8}]
+  time_limit_text: 30 hours 50 minutes for the 140 km
+  link: {label: 'Trail du Saint-Jacques by UTMB: home page', url: 'https://saint-jacques.utmb.world/', checked: '2026-11-27'}
+  more:
+  - {label: 'Trail du Saint-Jacques by UTMB: Ultra du Saint Jacques 100M', url: 'https://saint-jacques.utmb.world/races/100M', checked: '2026-11-27'}
+  - {label: 'Trail du Saint-Jacques by UTMB: registration conditions', url: 'https://saint-jacques.utmb.world/races-runners/other-information/registration-conditions', checked: '2026-11-27'}
+- id: grand-raid-ventoux-by-utmb
+  name: Grand Raid Ventoux by UTMB
+  series: utmb
+  place: Malaucène, Mont Ventoux, Provence
+  country: France
+  continent: europe
+  km: [125, 87, 51]
+  distances: Ultra Géant de Provence 125 km (100M category), Grande Epopée Ventoux 87 km (100K), Mistral Marathon Trail 51 km (50K); also a 26 km race
+  climb: 5,700 m (125 km), 4,200 m (87 km), 2,500 m (51 km)
+  terrain: [mountain]
+  format: single
+  month: [4]
+  entry: [ballot, open]
+  entry_note: The 50K went to a lottery for UTMB Index holders and the other races to priority windows for Index holders, then open sale until sold out. You must be born in 2006 or before. Every 2027 race shows as full.
+  note: The 125 km goes up Mont Ventoux with views over the Dentelles de Montmirail, the Baronnies and the Toulourenc Valley, starting at 23:59 on a Friday and finishing back in Malaucène.
+  time_limit: [{km: 125, hours: 29.5}]
+  time_limit_text: 29 hours 30 minutes for the 125 km
+  link: {label: 'Grand Raid Ventoux by UTMB: home page', url: 'https://ventoux.utmb.world/', checked: '2026-11-27'}
+  more:
+  - {label: 'Grand Raid Ventoux by UTMB: Ultra Géant de Provence 100M', url: 'https://ventoux.utmb.world/races/GRV100M', checked: '2026-11-27'}
+  - {label: 'Grand Raid Ventoux by UTMB: registration conditions', url: 'https://ventoux.utmb.world/registration-conditions', checked: '2026-11-27'}
+- id: trail-alsace-by-utmb
+  name: Trail Alsace by UTMB
+  series: utmb
+  place: Lac Blanc to Obernai, Vosges, Alsace
+  country: France
+  continent: europe
+  km: [158]
+  distances: Ultra-Trail des Chevaliers 158 km (100M category); the event also has 100K, 50K, 20K and 10K categories
+  climb: 5,100 m (158 km)
+  terrain: [mountain]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Register online through the organizer's site; the page opened does not say how places are allocated.
+  note: The 158 km route, starting at Station du Lac Blanc at 17:00 on a Friday, is marked out by more than 20 castles, including hilltop ruins such as Landsberg and Bernstein, and ends at the ramparts of Obernai.
+  time_limit: [{km: 158, hours: 40}]
+  link: {label: 'Trail Alsace by UTMB: Ultra-Trail des Chevaliers', url: 'https://alsace.utmb.world/races/UTDC', checked: '2026-11-27'}
+- id: the-fellsman
+  name: The Fellsman
+  series: independent
+  place: Ingleton to Threshfield, Yorkshire Dales
+  country: UK (England)
+  continent: europe
+  km: [98, 48]
+  distances: The Fellsman 61 miles; the Fellsman Dart 30 miles (Redshaw to Threshfield)
+  climb: Over 11,000 ft (Fellsman); over 4,200 ft (Dart)
+  terrain: [mountain]
+  format: single
+  month: [4]
+  entry: [open]
+  entry_note: First come, first served (400 places for the Fellsman, 100 for the Dart) with a waiting list; the entry cut-off date is 19 March 2027, and the organizers may cancel if too few have entered by then. You must be 18 or over and carry the specified kit (see the organizer's kit requirements). The organizer says only fit and experienced runners and walkers should enter.
+  note: A point-to-point route over the fells and moors of the Yorkshire Dales, organized by Keighley Scout Service Network with volunteers; 2027 is the 63rd Fellsman.
+  time_limit: [{km: 98, hours: 31}, {km: 48, hours: 20}]
+  link: {label: 'The Fellsman: home page', url: 'https://fellsman.org.uk/', checked: '2026-11-27'}
+  more:
+  - {label: 'The Fellsman: rules', url: 'https://fellsman.org.uk/the-event/rules/', checked: '2026-11-27'}
+  entry_dates:
+  - {date: '2027-03-19', what: 'Entry cut-off date for the 2027 Fellsman and Fellsman Dart', url: 'https://fellsman.org.uk/the-event/rules/', checked: '2026-11-27'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
@@ -3123,10 +3310,10 @@ guides:
   - {label: 'British Mountaineering Council, How to use trekking poles when hill walking', url: 'https://thebmc.co.uk/en/hill-walking-trekking-poles', checked: '2026-11-23'}
 - slug: running-vests
   title: Choosing a running vest for an ultra
-  short: What your race's kit list asks you to carry, how to check a vest against it, and the vests one independent reviewer picks
+  short: What your race's kit list asks you to carry, how to check a vest against it, and the vests two independent reviewers pick
   seo_title: 'Running vests for ultras: kit lists, fit and reviewers'' picks'
-  description: How to choose a running vest for an ultra from your race's kit list (Lakeland, UTMB Mont-Blanc), what to check on fit and flasks, and the vests iRunFar's testers name in their November 2026 guide.
-  standfirst: In most mountain and trail ultras the vest is what carries the kit list, and the kit is checked. Start from your race's list, then choose the vest that carries all of it comfortably; here is what two organizers ask for and what one independent review recommends.
+  description: How to choose a running vest for an ultra from your race's kit list (Lakeland, UTMB Mont-Blanc), what to check on fit and flasks, and the vests named by iRunFar's testers (November 2026) and Advnture's guide.
+  standfirst: In many mountain and trail ultras the vest is what carries the kit list, and the kit is checked. Start from your race's list, then choose the vest that carries all of it comfortably; here is what two organizers ask for and what two independent reviews recommend.
   detail:
   - h: Start from your race's kit list
     p:
@@ -3148,7 +3335,7 @@ guides:
     - 'Training. UTMB Mont-Blanc recommends testing your equipment in training sessions under different conditions. Long training runs with the full race load show up rubbing and bounce before race day.'
   - h: How the picks below were chosen
     p:
-    - 'The picks come from one independent review, iRunFar''s "Best Running Vests of 2026" by Carly Eisley and Eszter Horanyi, dated 22 November 2026. iRunFar says its team of trail runners takes the most promising packs out on all sorts of terrain to test their comfort, functionality and durability. The labels and quotes are the reviewers'' own words; we have not tested any vest ourselves.'
+    - 'The picks come from two independent reviews. iRunFar''s "Best Running Vests of 2026" by Carly Eisley and Eszter Horanyi, dated 22 November 2026, says its team of trail runners takes the most promising packs out on all sorts of terrain to test their comfort, functionality and durability. Advnture''s guide "The best hydration packs: on-the-go refuelling for your runs" by Alex Foxfield, last updated 12 May 2023, so older and worth checking against current models, gives each pack its own award. The labels and quotes are the reviewers'' own words; we have not tested any vest ourselves.'
     - 'iRunFar also names budget picks, including one for ultramarathons. We could not read that part of the page word for word this time, so it is not shown here. Open the review for the full list, and check any vest against your own race''s kit list.'
   picks:
   - item: Running vest
@@ -3168,6 +3355,30 @@ guides:
       reviewer: iRunFar
       review: {title: 'Best Running Vests of 2026', url: 'https://www.irunfar.com/best-running-vests', checked: '2026-11-24'}
       buy: 'https://www.amazon.co.uk/s?k=UltrAspire+Alpha+6.0+vest'
+  - item: Running vest (Advnture)
+    why: 'From Advnture''s guide to hydration packs (last updated May 2023): three of its running vests, each with the award the guide gives it. It names no single overall winner, so none is shown as a top pick; check capacity and fit against your race''s kit list.'
+    options:
+    - tier: good
+      name: Osprey Duro 6
+      label: Best for long, wild running adventures
+      quote: The Duro 6 is perfectly sized to hold everything you need for a long, adventurous run without weighing you down.
+      reviewer: Advnture
+      review: {title: 'The best hydration packs: on-the-go refuelling for your runs', url: 'https://www.advnture.com/buying-guides/best-hydration-pack', checked: '2026-11-27'}
+      buy: 'https://www.amazon.co.uk/s?k=Osprey+Duro+6'
+    - tier: good
+      name: Camelbak Ultra Pro Vest
+      label: Best for lightweight storage
+      quote: We found this running pack to be the perfect size and fit for whole day runs in the hills and mountains using lightweight kit.
+      reviewer: Advnture
+      review: {title: 'The best hydration packs: on-the-go refuelling for your runs', url: 'https://www.advnture.com/buying-guides/best-hydration-pack', checked: '2026-11-27'}
+      buy: 'https://www.amazon.co.uk/s?k=Camelbak+Ultra+Pro+Vest'
+    - tier: good
+      name: inov-8 Ultrapac Pro 2in1
+      label: Best for versatile storage
+      quote: A fantastic, durable and comfy dual-capacity running pack for short and long runs, with two soft-bottle storage and two pole attachment options.
+      reviewer: Advnture
+      review: {title: 'The best hydration packs: on-the-go refuelling for your runs', url: 'https://www.advnture.com/buying-guides/best-hydration-pack', checked: '2026-11-27'}
+      buy: 'https://www.amazon.co.uk/s?k=inov-8+Ultrapac+Pro+2in1'
   faq:
   - q: What size of running vest do I need for an ultra?
     a: It depends on your race's kit list rather than the distance. Gather the compulsory items your race names (Lakeland's include waterproofs, spare layers, a survival bag and a cup), pack them, and choose a vest that carries all of them with room for food and drink.
@@ -3186,6 +3397,7 @@ guides:
   - {label: 'Montane Lakeland 50 and 100, Kit requirements', url: 'https://lakeland100.com/kit-requirements/', checked: '2026-11-24'}
   - {label: 'HOKA UTMB Mont-Blanc, Mandatory equipment', url: 'https://montblanc.utmb.world/races-runners/runners/mandatory-equipment', checked: '2026-11-24'}
   - {label: 'iRunFar, Best Running Vests of 2026 (Carly Eisley and Eszter Horanyi, 22 November 2026)', url: 'https://www.irunfar.com/best-running-vests', checked: '2026-11-24'}
+  - {label: 'Advnture, The best hydration packs: on-the-go refuelling for your runs (Alex Foxfield, last updated 12 May 2023)', url: 'https://www.advnture.com/buying-guides/best-hydration-pack', checked: '2026-11-27'}
 - slug: headtorches
   title: Choosing a headtorch for an ultra
   short: What races ask you to carry after dark, what the numbers on the box mean, and the headtorches two independent reviewers pick

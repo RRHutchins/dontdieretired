@@ -1,6 +1,6 @@
-# Guidance engine report (2026-11-26)
+# Guidance engine report (2026-11-27)
 
-142 sources, 96 statements, 12 event profiles. Core 86, supported 10, thin 0, contested 0.
+145 sources, 100 statements, 13 event profiles. Core 86, supported 14, thin 0, contested 0.
 
 ## Sources by tier
 
@@ -152,6 +152,9 @@
 - McMillan Running (Greg McMillan), *Keep easy runs easy* (2024). Opened 2026-11-24.
 - TrainingPeaks (Hal Higdon), *Should your running workouts only be hard and easy* (2014). Opened 2026-11-25.
 - Carmichael Training Systems (Cliff Pittman, CTS Pro Ultrarunning Coach), *Easy runs: the science behind ultramarathon's greatest training tool* (2026). Opened 2026-11-25.
+- Hal Higdon (marathon coach and author), *Ultramarathon 50K (26-week programme; page modified 14 January 2019)* (2019). Opened 2026-11-27.
+- iRunFar (Bryon Powell, founder and ultrarunner), *Training for an Ultramarathon (15 October 2007, updated 2009; written for someone who has completed a marathon)* (2007). Opened 2026-11-27.
+- Carmichael Training Systems (Cliff Pittman, CTS Pro Ultrarunning Coach), *Downhill Running: How To Protect Against Muscle Damage (2 September 2026)* (2026). Opened 2026-11-27.
 
 **1. General**
 - Wanderlust (with advice from the Long Distance Walkers Association and experienced trekkers), *How to prepare for a long-distance trek* (2026). Opened 2026-10-27.
@@ -251,6 +254,10 @@
 | supported | 5 | why | Training with your loaded pack matches the conditions of the day and shows you what you really need to carry. | wanderlust-trek-prep, bmc-hill-fit, cicerone-hill-fit |
 | supported | 5 | why | Sighting and breathing to both sides are what open water asks of you that a pool does not, and practising them in the pool makes them a habit before you need them. | usms-open-water, 220tri-ow-pool-skills |
 | supported | 5 | on the day | Ride the last part of the bike leg in an easier gear, then start the run controlled rather than fast; USA Triathlon suggests shortening your stride for the first half mile to a mile. | usat-brick, tri247-bike-pacing-run |
+| supported | 4 | before you start | If you have trained for a marathon, you are well on the way to a first 50 km ultra on similar ground. One 50K plan follows marathon training for its first 18 weeks, then builds the long run to about five hours. | irunfar-first-ultra, higdon-ultra-50k |
+| supported | 4 | key session | Walking is a normal part of an ultra, and it works in training too. Practise it on long runs, for example at aid stations and when you drink (drinking is easier while walking), and walk some hills even when you don't feel you need to. | higdon-ultra-50k, irunfar-first-ultra |
+| supported | 4 | key session | Train on ground like the race's. Run on trail before a trail ultra, log some climbing, and practise running down steeper hills; you do not need to train on the course itself. | irunfar-first-ultra, cts-downhill-2026 |
+| supported | 4 | why | The hilly run practises what a trail ultra is made of. Walking the steep climbs is practice for race day, and running downhill is a skill your legs have to get used to; the first one or two sessions leave you sore, so keep the descents no harder than a moderate effort. | irunfar-first-ultra, cts-downhill-2026 |
 | supported | 3 | before you start | Plan for the snow-free season, usually July to late September. When snow or ice is on the mountain it needs winter mountaineering skills and equipment. | inyo-whitney, inyo-whitney-leaflet |
 | supported | 3 | before you start | The Coast to Coast is a demanding trail, hardest at the western end through the Lake District, where waymarks usually stop above the fell wall. Some high sections may be difficult in winter or bad weather; know the low-level options and use them when the weather is poor. | govuk-c2c |
 | supported | 3 | key session | For a first 10k, measure your runs in minutes rather than miles, at an easy pace; Great Run's beginner plan builds the longest run to 50 minutes and its improver plan to 60. | greatrun-10k-plans |
@@ -264,7 +271,7 @@
 - endurance: 16 usable statements of its own
 - hill: 15 usable statements of its own
 - multiday: 13 usable statements of its own
-- running: 9 usable statements of its own
+- running: 13 usable statements of its own
 - swimming: 20 usable statements of its own
 - walking: 11 usable statements of its own
 

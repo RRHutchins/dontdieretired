@@ -1190,6 +1190,10 @@ def build(make_social=True):
             # with ?on=<race day> when the note says "... is on <day> <month> <year>" in its first sentence and that day is still to come.
             _pa = e.get("plan_activity") or h.get("plan_activity")
             e["plan_act"], e["race_day"] = None, None
+            # A hub may set `plan_km: [min, max]`: only races offering a distance in that range get the hub's plan (the ultra plan is
+            # for a first ultra of about 50 km, so a 100-mile race page must not offer it as if it fitted). A race's own plan_activity wins.
+            if _pa and not e.get("plan_activity") and h.get("plan_km") and not any(h["plan_km"][0] <= float(k) <= h["plan_km"][1] for k in e["km"]):
+                _pa = None
             if _pa and not PHEN:
                 assert _pa in _chs_by and ((_chs_by[_pa].get("plan") or {}).get("event")), f"hub {h['id']} event {e['id']}: plan_activity {_pa} is not an activity with an engine training plan"
                 e["plan_act"] = _chs_by[_pa]
