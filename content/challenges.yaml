@@ -10194,6 +10194,22 @@
     url: https://www.freecodecamp.org/
     region: any
     checked: '2026-10-06'
+  - label: 'Harvard CS50x: course FAQs (free, self-paced, through edX)'
+    url: https://cs50.harvard.edu/x/2026/faqs/
+    region: us
+    checked: '2026-11-27'
+  - label: 'Code First Girls: free Coding Kickstarter classes'
+    url: https://codefirstgirls.com/courses/classes/
+    region: uk
+    checked: '2026-11-27'
+  - label: 'OpenLearn (The Open University): Learn to code for data analysis'
+    url: https://www.open.edu/openlearn/digital-computing/learn-code-data-analysis
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Raspberry Pi Foundation: a beginner''s guide to Scratch, with starter projects'
+    url: https://www.raspberrypi.org/blog/ready-set-scratch-a-beginners-guide-to-creative-coding/
+    region: any
+    checked: '2026-11-27'
   kit:
   - name: Python book for beginners
     why: a gentle first programming language to learn
@@ -10204,6 +10220,148 @@
   - name: Squared notebook
     why: for sketching out how your program should work
     url: https://www.amazon.co.uk/s?k=squared+notebook
+  seo_title: 'Learn to code for free: courses and first projects'
+  description: Free ways to learn to code compared, from freeCodeCamp and Harvard's CS50x to OpenLearn and Code First Girls, with a first project each one leads to.
+  detail:
+  - h: What it's really like
+    p:
+    - The free courses below mix short lessons with exercises and small projects you build yourself. freeCodeCamp's Python certification, for example, mixes lessons that end in three check questions, guided
+      workshops with nothing to install, labs where you build to a set of requirements and pass tests, and 20-question quizzes; you need 18 right to pass each one.
+    - The honest hard part is the gap between following along and building something yourself. Masako Wakamiya, who built a puzzle game app with help from the head of a company that teaches programming,
+      struggled for about six months, The Christian Science Monitor reported, and told it that organizing the whole structure of the app was especially difficult. A small project of your own, finished,
+      is the goal that gets you across that gap.
+  - h: Free and cheap ways in compared
+    table:
+      head:
+      - Course
+      - Format
+      - Language
+      - Cost (as last listed)
+      rows:
+      - - freeCodeCamp
+        - 'Self-paced online: lessons, workshops, labs, quizzes; five projects and a 50-question exam per certification'
+        - HTML and CSS, JavaScript, Python, relational databases
+        - Free; freeCodeCamp is a donor-supported charity
+      - - Harvard CS50x (through edX)
+        - Self-paced lectures and problem sets, ending in a final project of your own
+        - Scratch, C, Python, SQL, HTML, CSS, JavaScript
+        - Free, with a free CS50 certificate; an edX verified certificate costs extra
+      - - OpenLearn (The Open University)
+        - Eight weeks, about three hours a week, at your own pace
+        - Python in Jupyter Notebooks
+        - Free, with a free Statement of Participation and digital badge
+      - - Code First Girls Coding Kickstarter
+        - Eight self-paced online modules of about an hour each; pass within 8 weeks for a certificate
+        - Python, JavaScript, Data and SQL, or C#
+        - Free; aimed at women
+      - - Khan Academy
+        - Self-paced online lessons
+        - JavaScript, SQL, Python
+        - Free; Khan Academy is a nonprofit
+      - - Raspberry Pi Foundation projects
+        - Step-by-step projects online
+        - Scratch, then Python
+        - Free
+      - - Codecademy
+        - Self-paced online courses
+        - See its catalog
+        - A free Basic plan with a core catalog of courses; paid Plus and Pro plans add members-only content and projects
+    after: All prices as listed on 27 November 2026. Codecademy gives its Plus and Pro prices only on its checkout page. The Raspberry Pi Foundation writes its projects for young people and new coders;
+      its Scratch, which it calls free and beginner-friendly, lets you snap blocks together instead of typing code.
+  - h: Pick a first project, then the course
+    table:
+      head:
+      - A first project you could finish
+      - What it teaches
+      - Free course that leads there
+      rows:
+      - - A short animation of a character chasing a bus
+        - Sequences, costume changes, telling a story in code
+        - 'Raspberry Pi Foundation: Catch the bus, in Scratch'
+      - - A game where you steer a boat around obstacles with the mouse
+        - Collision detection, win conditions
+        - 'Raspberry Pi Foundation: Boat race, in Scratch'
+      - - A drawing or animation in the browser
+        - JavaScript basics
+        - 'Khan Academy: Drawing & Animation, in JavaScript'
+      - - Charts from real world health or weather data
+        - Loading, cleaning and grouping data, and visualizations
+        - 'OpenLearn: Learn to code for data analysis (World Health Organization, World Bank and London weather data)'
+      - - A first web app
+        - Python
+        - 'Code First Girls: Python Coding Kickstarter'
+      - - Questions asked of your own table of data
+        - Querying and managing data
+        - 'Khan Academy: Intro to SQL'
+      - - A project you design yourself, with a written explanation
+        - Everything in the course, from C to web pages
+        - 'Harvard CS50x: the final project'
+    after: Start with the row that sounds most like something you would use or show someone. If you are unsure, the Raspberry Pi Foundation suggests Python as the next step after Scratch.
+  - h: How much time it takes
+    p:
+    - Courses vary a lot. OpenLearn's data course is eight weeks at about three hours a week. Code First Girls' Kickstarter is eight modules of about an hour each, which it says you could finish in a couple
+      of evenings or spread over a few weeks. CS50x suggests 10 to 20 hours for each week's problem sets, and each freeCodeCamp certification holds hundreds of hours of material.
+    - CS50x runs in terms; the current one began on 1 January 2026. Its 2026 FAQ gives a final deadline of 30 June 2027 for this term's work, and work carries forward into a new term if you have submitted
+      at least one assignment. Check the FAQ for the current dates.
+  faq:
+  - q: What coding language should I learn first?
+    a: The free courses here start in different places. CS50x and the Raspberry Pi Foundation begin with Scratch, a block-based language, then move on; OpenLearn's data course and the Code First Girls Python
+      class start with Python. Choose the course whose first project appeals, and the language comes with it.
+  - q: Can I learn to code for free?
+    a: Yes. freeCodeCamp, Khan Academy, OpenLearn, Code First Girls' Kickstarter classes and the Raspberry Pi Foundation's projects are free, and CS50x gives a free certificate. Codecademy has a free Basic
+      plan and paid plans.
+  - q: How long does it take to learn to code?
+    a: A first course can take a couple of evenings (Code First Girls' eight one-hour modules) or eight weeks at three hours a week (OpenLearn's data course). Bigger courses take months; CS50x estimates
+      10 to 20 hours a week for problem sets.
+  - q: Do I need any experience to start CS50x?
+    a: No. Harvard's FAQ says there are no prerequisites, though it suggests checking the course map to see if the course fits your level.
+  - q: Do I need to install anything to start coding?
+    a: Not for most beginner courses. freeCodeCamp says you do not need to install a separate application to run Python code in its workshops.
+  sources:
+  - label: freeCodeCamp, freeCodeCamp's new Python certification is now live (December 2025)
+    url: https://www.freecodecamp.org/news/freecodecamps-new-python-certification-is-now-live/
+    checked: '2026-11-27'
+  - label: Harvard University, CS50x 2026 FAQs
+    url: https://cs50.harvard.edu/x/2026/faqs/
+    checked: '2026-11-27'
+  - label: The Open University, OpenLearn, Learn to code for data analysis
+    url: https://www.open.edu/openlearn/digital-computing/learn-code-data-analysis
+    checked: '2026-11-27'
+  - label: Code First Girls, Coding Kickstarter classes
+    url: https://codefirstgirls.com/courses/classes/
+    checked: '2026-11-27'
+  - label: Code First Girls, home page (teaching women to code for free)
+    url: https://codefirstgirls.com/
+    checked: '2026-11-27'
+  - label: Khan Academy Help Center, What programming languages do you teach?
+    url: https://support.khanacademy.org/hc/tr/articles/202260394-What-programming-languages-do-you-teach
+    checked: '2026-11-27'
+  - label: Khan Academy Help Center, Does it cost money to use Khan Academy?
+    url: https://support.khanacademy.org/hc/en-us/articles/202260114-Does-it-cost-money-to-use-Khan-Academy
+    checked: '2026-11-27'
+  - label: Raspberry Pi Foundation, Ready, set, Scratch, a beginner's guide to creative coding (May 2025)
+    url: https://www.raspberrypi.org/blog/ready-set-scratch-a-beginners-guide-to-creative-coding/
+    checked: '2026-11-27'
+  - label: Codecademy Help Center, Price of Codecademy
+    url: https://help.codecademy.com/hc/en-us/articles/360022052834-Price-of-Codecademy
+    checked: '2026-11-27'
+  - label: The Christian Science Monitor, At 82, she coded an app. She just wanted a game she could win
+    url: https://csmonitor.com/World/Making-a-difference/2022/0309/At-82-she-coded-an-app.-She-just-wanted-a-game-she-could-win
+    checked: '2026-11-27'
+  inspire:
+  - kind: read
+    person: Masako Wakamiya, from Japan
+    line: Built and released Hinadan, a puzzle game based on the dolls of Japan's Girls' Day festival, after struggling for about six months, with help from the head of a company that teaches programming,
+      and was invited to Apple's developers' conference.
+    title: At 82, she coded an app. She just wanted a game she could win
+    outlet: The Christian Science Monitor
+    url: https://csmonitor.com/World/Making-a-difference/2022/0309/At-82-she-coded-an-app.-She-just-wanted-a-game-she-could-win
+    checked: '2026-11-27'
+  related:
+  - learn-to-build-a-website
+  - build-a-raspberry-pi-project
+  - build-an-arduino-project
+  - learn-spreadsheets
 - id: free-digital-skills-course
   title: Work through a free digital skills course
   category: tech
@@ -21516,8 +21674,8 @@
   season: Mostly summer and early autumn
   regions:
   - us
-  why: Fire lookouts were built on summits so that one person could watch a whole forest for smoke, which means the view is the entire point of the building. The Forest Service now rents some of them out
-    by the night, including lookouts built by the Civilian Conservation Corps.
+  why: Fire lookouts were built on summits so that a watcher could spot smoke across the forest, which means the view is the entire point of the building. The Forest Service now rents some of them out by
+    the night, including lookouts built by the Civilian Conservation Corps.
   start:
   - Read the Forest Service's cabin and lookout rental page for the national forest region you want to visit.
   - Search Recreation.gov for lookouts in that forest and reserve as soon as dates open, up to six months ahead.
@@ -21526,7 +21684,19 @@
   - label: USDA Forest Service Northern Region, camping, cabins and lookout rentals (Montana and northern Idaho)
     url: https://www.fs.usda.gov/r01/recreation/camping-cabins
     region: us
-    checked: '2026-10-07'
+    checked: '2026-11-27'
+  - label: 'Forest Fire Lookout Association: lookout rentals'
+    url: https://www.firelookout.org/lookout-rentals.html
+    region: us
+    checked: '2026-11-27'
+  - label: 'USDA Forest Service: Calpine Fire Lookout, Tahoe National Forest (rentable all year)'
+    url: https://fs.usda.gov/r05/tahoe/recreation/calpine-fire-lookout
+    region: us
+    checked: '2026-11-27'
+  - label: 'USDA Forest Service: lookouts for overnight use, Mt. Baker-Snoqualmie National Forest (first come, first served)'
+    url: https://www.fs.usda.gov/r06/mbs/recreation/lookouts-overnight-use
+    region: us
+    checked: '2026-11-27'
   safety: Lookouts stand on exposed summits, often up steep stairs and rough roads, so check access and the weather forecast before you set out.
   kit:
   - name: Head torch
@@ -21538,6 +21708,178 @@
   - name: Compact binoculars
     why: for scanning the view in every direction
     url: https://www.amazon.co.uk/s?k=compact+binoculars
+  - name: Collapsible water container
+    why: for carrying in all your drinking, cooking and washing water, as most lookouts have none
+    url: https://www.amazon.co.uk/s?k=collapsible+water+container
+  seo_title: 'Fire lookout rentals: how to book and where to stay'
+  description: How to book a fire lookout on Recreation.gov, seven rentable lookouts compared by access, beds, season and price, what to carry and lightning safety.
+  inspire:
+  - kind: read
+    person: Sandy Sharp
+    line: Staffed the Green Ridge Lookout in the Forest Service's Sisters district one day a week through the summer as a fire prevention volunteer, one of 36 people who took turns there.
+    title: USFS retiree mans lookout tower
+    outlet: The Nugget Newspaper
+    url: https://nuggetnews.com/story/2015/09/08/news/usfs-retiree-mans-lookout-tower/25254.html
+    checked: '2026-11-27'
+  detail:
+  - h: What it's like
+    p:
+    - A lookout is usually one small room on a summit or on top of a tower, with windows on every side so a fire watcher could see smoke in any direction. The rentals are basic. Expect beds or cots, sometimes
+      a stove, often a vault toilet nearby, no drinking water, and in some cases no electricity. The Forest Fire Lookout Association says most are remote with primitive services, and that the rentals are
+      largely run by the US Forest Service and booked on Recreation.gov.
+    - Getting there is part of it. Some you drive right up to; others sit at the end of long forest roads where a high-clearance vehicle is recommended, or need a walk, ski or snowshoe in. Read each listing
+      closely before you book.
+  - h: Seven rentable lookouts compared
+    table:
+      head:
+      - Lookout
+      - State and forest
+      - How you reach it
+      - Sleeps
+      - Season
+      - Price as last listed
+      rows:
+      - - Bear Basin Butte Lookout and Pierson Cabin
+        - California, Six Rivers National Forest
+        - About an hour's drive from the Smith River NRA Visitor Center, the last part on forest road 16N02 to a gate
+        - Rate covers 1 to 8 people, up to 12 (lookout and cabin rented together)
+        - July 1 to September 30
+        - $75 (about £57) a night, plus $5 each person over 8
+      - - Calpine Fire Lookout
+        - California, Tahoe National Forest
+        - Drive to the tower in summer; in winter, a 2-mile (3.2 km) ski, snowshoe or snowmobile with 1,000 feet (305 m) of climb. Three stories of outside stairs
+        - Two twin beds
+        - All year (the road is not plowed in winter)
+        - $75 (about £57) a night
+      - - Up Up 40-Foot Lookout Tower
+        - Montana, Lolo National Forest
+        - Drive to the tower from I-90 exit 26; the Forest says phone and car GPS directions are wrong. 40-foot (12 m) tower with an open stairway
+        - Up to 4 (one twin bed)
+        - Listed June 12 to October 6, 2026; next opens June 11, 2027
+        - $45 (about £34) a night
+      - - Mt. Baldy-Buckhorn Ridge Lookout
+        - Montana, Kootenai National Forest
+        - Drive all the way from Troy on primitive forest roads; high clearance recommended. 26-foot (8 m) tower with a catwalk
+        - 4
+        - Typically late June to late September
+        - $55 (about £42) a night
+      - - Snow Camp Lookout
+        - Oregon, Rogue River-Siskiyou National Forest
+        - About 33 miles (53 km) from Brookings by county and forest road, then a 200-yard (183 m) walk up that can be hard work with gear
+        - A double bed
+        - Not stated on the Forest's page
+        - $65 (about £50) a night
+      - - Bald Butte Lookout
+        - Oregon, Fremont-Winema National Forest
+        - Drive to it, about 1 hour 20 minutes southwest of Paisley on forest roads
+        - 2 (two cots)
+        - June 15 to October 15, depending on snow
+        - $40 (about £30) a night for up to 2
+      - - Hager Mountain Lookout
+        - Oregon, Fremont-Winema National Forest
+        - 'Winter only: walk, ski or snowshoe about 4 miles (6.4 km) from milepost 9 on Forest Road 28; a couple of hours to half a day'
+        - Up to 4 (three beds)
+        - November 15 to May 15 (staffed the rest of the year)
+        - Shown on Recreation.gov when you book
+    after: Prices and seasons are from each Forest Service or Recreation.gov page on 27 November 2026, and none of these lookouts has drinking water. Listings change, and some pages showed a seasonal "closed"
+      banner in November. A lookout can also close outright; Lookout Butte in Idaho's Nez Perce-Clearwater National Forests was closed to all use after engineers found the structure unsound. Check the listing
+      and the forest's alerts page before you go.
+  - h: How booking works
+    p:
+    - 'Rentals are booked online with a credit card on Recreation.gov, first come, first served, and open up to six months ahead. Six Rivers National Forest explains the detail: dates open exactly six months
+      before your first night, Recreation.gov works on Eastern Time (so convert the opening time to your own zone), and only the first night must fall inside the window, so you can add up to three more
+      nights beyond it. It says its lookout often fills as soon as dates become available, especially July to September and at weekends, so keep checking for cancellations.'
+    - The Northern Region (Montana and northern Idaho) says rates and maximum stays vary and a non-refundable recreation fee is charged. The Washington Trails Association put nightly lookout rental fees
+      at $75 to $150 (about £57 to £114) in 2022, and noted some need a refundable key deposit.
+    - Not every lookout is booked. In Washington's Mt. Baker-Snoqualmie National Forest, lookouts that are not rented or staffed are open to visitors first come, first served; the Forest recommends two
+      nights at most, asks you to pack out all garbage, gives volunteer work parties priority, and suggests bringing a tent in case someone is already there. Snow blocks them until mid to late summer. The
+      Washington Trails Association names Winchester Mountain, Park Butte, Hidden Lake and Lookout Mountain on the Mt. Baker Ranger District among them.
+  - h: What to bring
+    list:
+    - All your drinking, cooking and washing water. In winter at Hager Mountain you can melt snow when there is some.
+    - Sleeping bags, pads or linens, and towels; check what beds or mattresses the listing provides.
+    - Food, cooking gear and matches. Up Up has no cooking facilities or refrigeration, so bring your own stove.
+    - A light source and a backup for emergencies.
+    - First aid kit, toilet paper, dish soap and garbage bags. There is no trash collection, so pack everything out.
+    - Firewood where there is a wood stove; Snow Camp and Calpine do not supply it.
+    - In bear country (Up Up and Mt. Baldy-Buckhorn in Montana), store food as the forest advises; Lolo National Forest has a food storage order.
+  - h: Lightning, stairs and roads
+    p:
+    - 'Lookouts sit on the high points that lightning hits. The Forest Service''s general advice is to stay low and off peaks and ridges outdoors, get into a building when you hear thunder, and stay sheltered
+      until at least 30 minutes after the last clap. The Forest Service''s guide to inspecting lookouts describes their lightning protection: air terminals, conductors and ground rods meant to carry the
+      current around the building rather than through the people inside. So once a storm builds, be inside rather than on the catwalk, the stairs or the trail.'
+    - The stairs are steep and often open. Lolo National Forest discourages bringing children to Up Up because of the tower's height and open stairs.
+    - Roads are long, rough and sometimes closed; check the forest's alerts for road closures and trust the listing's directions over a phone map. In winter, Calpine can drop to -21°F (-29°C), and Hager
+      Mountain's listing warns that weather changes fast, to be ready to camp on the trail, and to tell someone your plans. In an emergency call 911 (999 in the UK).
+  faq:
+  - q: How far in advance can you book a fire lookout?
+    a: Up to six months ahead on Recreation.gov. Dates open exactly six months before your first night, on Eastern Time, and popular lookouts often fill as soon as they become available.
+  - q: How much does it cost to rent a fire lookout?
+    a: The seven Forest Service lookouts compared above were listed at $40 to $75 a night (about £30 to £57) on 27 November 2026. The Washington Trails Association put rental fees at $75 to $150 a night
+      in 2022.
+  - q: Is there water at a fire lookout rental?
+    a: Usually not. None of the lookouts in the table has drinking water, so carry in everything you need for drinking, cooking and washing.
+  - q: Can you stay in a fire lookout without a reservation?
+    a: Some, yes. In Mt. Baker-Snoqualmie National Forest in Washington, lookouts that are not rented or staffed are first come, first served; bring a tent in case one is taken.
+  - q: Can you rent a fire lookout in winter?
+    a: A few. Calpine in California is rentable all year, reached in winter by a 2-mile (3.2 km) ski or snowshoe, and Hager Mountain in Oregon is rented only from November 15 to May 15.
+  - q: Are fire lookouts safe in a lightning storm?
+    a: The Forest Service describes lookout lightning protection systems as meant to carry the current around the building rather than through the people inside. Get inside before a storm arrives, keep
+      off the catwalk and stairs, and stay in until at least 30 minutes after the last thunder.
+  sources:
+  - label: USDA Forest Service Northern Region, camping, cabins and lookout rentals
+    url: https://www.fs.usda.gov/r01/recreation/camping-cabins
+    checked: '2026-11-27'
+  - label: Forest Fire Lookout Association, Lookout rentals
+    url: https://www.firelookout.org/lookout-rentals.html
+    checked: '2026-11-27'
+  - label: USDA Forest Service, Bear Basin Butte Lookout and Pierson Cabin (Six Rivers National Forest)
+    url: https://fs.usda.gov/r05/sixrivers/recreation/bear-basin-butte-lookout-pierson-cabin
+    checked: '2026-11-27'
+  - label: USDA Forest Service, Calpine Fire Lookout (Tahoe National Forest)
+    url: https://fs.usda.gov/r05/tahoe/recreation/calpine-fire-lookout
+    checked: '2026-11-27'
+  - label: USDA Forest Service, Up Up 40-Foot Lookout Tower (Lolo National Forest)
+    url: https://fs.usda.gov/r01/lolo/recreation/40-foot-lookout-tower
+    checked: '2026-11-27'
+  - label: USDA Forest Service, Mt. Baldy-Buckhorn Ridge Lookout (Kootenai National Forest)
+    url: https://www.fs.usda.gov/r01/kootenai/recreation/mt-baldy-buckhorn-ridge-lookout
+    checked: '2026-11-27'
+  - label: USDA Forest Service, Snow Camp Lookout (Rogue River-Siskiyou National Forest)
+    url: https://www.fs.usda.gov/r06/rogue-siskiyou/recreation/snow-camp-lookout
+    checked: '2026-11-27'
+  - label: USDA Forest Service, Bald Butte Lookout recreation rental (Fremont-Winema National Forest)
+    url: https://fs.usda.gov/r06/fremont-winema/recreation/bald-butte-lookout-recreation-rental
+    checked: '2026-11-27'
+  - label: Recreation.gov, Hager Mountain Lookout
+    url: https://www.recreation.gov/camping/campgrounds/234187
+    checked: '2026-11-27'
+  - label: Recreation.gov, Hager Mountain Lookout site details
+    url: https://www.recreation.gov/camping/campsites/80537
+    checked: '2026-11-27'
+  - label: USDA Forest Service, Lookout Butte Lookout (Nez Perce-Clearwater National Forests; closure notice)
+    url: https://www.fs.usda.gov/r01/nezperce-clearwater/recreation/lookout-butte-lookout
+    checked: '2026-11-27'
+  - label: USDA Forest Service, Lookouts overnight use (Mt. Baker-Snoqualmie National Forest)
+    url: https://www.fs.usda.gov/r06/mbs/recreation/lookouts-overnight-use
+    checked: '2026-11-27'
+  - label: Washington Trails Association, What you need to know about spending the night in a fire lookout (Fall 2022)
+    url: https://www.wta.org/news/signpost/magazine/features/what-you-need-to-know-about-spending-the-night-in-a-fire-lookout
+    checked: '2026-11-27'
+  - label: USDA Forest Service, Know before you go, lightning
+    url: https://www.fs.usda.gov/visit/know-before-you-go/lightning
+    checked: '2026-11-27'
+  - label: USDA Forest Service MTDC, Evaluating lightning protection on lookouts and communication facilities (2008)
+    url: https://www.fs.usda.gov/t-d/pubs/htmlpubs/htm08732333/index.htm
+    checked: '2026-11-27'
+  - label: currencyconvert.online, GBP to USD (1.3118 on 27 November 2026, for the pound figures)
+    url: https://currencyconvert.online/gbp/usd
+    checked: '2026-11-27'
+  related:
+  - stay-in-a-bothy
+  - learn-to-wild-camp
+  - dark-sky-place
+  - stay-in-a-lighthouse-cottage
 - id: learn-dry-stone-walling
   title: Build a length of dry stone wall
   category: explore
@@ -33306,8 +33648,8 @@
   - uk
   places:
   - northern-ireland
-  why: The National Trust's Red Trail runs along the cliffs above the Causeway's basalt columns, with views out over the North Channel, then drops back down 162 stone steps. It is two miles and takes about
-    an hour and a half, which leaves time to see the columns from the shore.
+  why: The National Trust's Red Trail runs along the cliffs above the Causeway's basalt columns, with views out over the North Channel, then drops back down 162 stone steps. It is two miles and takes up
+    to an hour and a half, which leaves time to see the columns from the shore.
   start:
   - Read the National Trust's Red Trail page and start from car park 1 by the Causeway Hotel.
   - Check the wind forecast before you go, as the cliff edges are unfenced.
@@ -33316,8 +33658,24 @@
   - label: National Trust, Giant's Causeway Red Trail
     url: https://nationaltrust.org.uk/visit/northern-ireland/giants-causeway/giants-causeway-red-trail
     region: uk
-    checked: '2026-10-27'
-  safety: The National Trust warns of unfenced cliff edges, rock falls and high winds; the Green Trail is the step-free option.
+    checked: '2026-11-27'
+  - label: 'National Trust: Giant''s Causeway opening times, Visitor Experience tickets and parking'
+    url: https://www.nationaltrust.org.uk/visit/northern-ireland/giants-causeway
+    region: uk
+    checked: '2026-11-27'
+  - label: 'National Trust: Giant''s Causeway Clifftop Experience (guided walk from Dunseverick)'
+    url: https://nationaltrust.org.uk/visit/northern-ireland/giants-causeway/giants-causeway-clifftop-experience
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Discover Northern Ireland: North Antrim Cliff Path, Dunseverick to Giant''s Causeway'
+    url: https://discovernorthernireland.com/North-Antrim-Cliff-Path-Dunseverick-to-Giant-s-Causeway-Bushmills-P15749
+    region: uk
+    checked: '2026-11-27'
+  - label: 'National Park Service: Devils Postpile National Monument (columnar basalt in California)'
+    url: https://www.nps.gov/depo/
+    region: us
+    checked: '2026-11-27'
+  safety: The National Trust warns of unfenced cliff edges, rock falls and high winds; the Green Trail is the accessible option.
   photo_file: File:Giant's Causeway Basalt Columns - geograph.org.uk - 7441466.jpg
   photo_caption: Basalt columns at the Giant's Causeway, 2023.
   photo_alt: Tall grey basalt columns stand in a row beside a path, under a cloudy sky.
@@ -33332,6 +33690,163 @@
   - name: Walking boots
     why: for grip on cliff paths and steps
     url: https://www.amazon.co.uk/s?k=walking+boots
+  seo_title: 'Giant''s Causeway walk: the clifftop trails compared'
+  description: Every Giant's Causeway walk in one place, from the Blue Trail to the stones to the clifftop path from Dunseverick, with tickets, parking and safety.
+  inspire:
+  - kind: read
+    person: Joanne Etherson, from Kilrea, County Derry
+    line: Completed a 26-mile Mighty Hike along the Giant's Causeway trail for Macmillan Cancer Support in memory of her father, and had raised over £1,600 by the time of the report.
+    title: County Derry woman takes giant feat in her stride for charity
+    outlet: Derry Now
+    url: https://www.derrynow.com/news/home/852679/county-derry-woman-takes-giant-feat-in-her-stride-for-charity.html
+    checked: '2026-11-27'
+  detail:
+  - h: What it's like
+    p:
+    - The Giant's Causeway is more than 40,000 basalt columns, formed about 60 million years ago, at the edge of the sea on the north coast of County Antrim. It was Northern Ireland's first UNESCO World
+      Heritage Site, and 2026 marks 40 years of that status. The columns are at the edge of the sea, just over half a mile (1 km) from the site entrance.
+    - Most people walk straight down the road to the stones and back. The better walk is on top. The Red Trail climbs a steep hill to Weir Snout, a viewpoint with a viewfinder that describes the view, follows
+      the clifftop past the Aird headland, then drops down the 162 Shepherd's Steps to the shore. At the bottom, turn left toward the Grand Causeway and you join the Blue Trail, which takes you back up
+      to the visitor center, so you see the columns from above and from the rocks in one loop.
+    - In the US, Devils Postpile National Monument in California protects what the National Park Service calls one of the world's finest examples of columnar basalt, with columns up to 60 feet (18 m) tall.
+  - h: Every trail and route compared
+    table:
+      head:
+      - Route
+      - Distance
+      - Time
+      - Grade
+      - Start
+      - What it gives you
+      rows:
+      - - Blue Trail
+        - 0.8 miles (1.28 km) one way
+        - About 25 minutes
+        - Easy but steep in places
+        - Visitor center (car park 1)
+        - The direct path to the stones and the Giant's Boot; the shuttle bus uses it too
+      - - Red Trail
+        - 2 miles (3.2 km); short version 0.8 miles (1.28 km)
+        - 30 minutes to 1 hour 30 minutes
+        - Moderate
+        - Car park 1 in front of the Causeway Hotel
+        - Clifftop views from Weir Snout and the 162 Shepherd's Steps
+      - - Green Trail
+        - About 1 mile (1.6 km) loop
+        - About 1 hour 20 minutes
+        - Easy but steep in places
+        - Causeway Hotel car park
+        - The only DDA-compliant trail, accessible as far as Portcoon Cave; clifftop toward Runkerry Head and Portcoon Cave
+      - - Yellow Trail
+        - 1.8 miles (2.88 km) one way
+        - 30 to 40 minutes
+        - Challenging
+        - Runkerry Head beyond Portballintrae
+        - Clifftop path to Hamilton's Seat at the edge of the World Heritage Site
+      - - North Antrim Cliff Path
+        - 4.8 miles (7.7 km) one way
+        - About 2.5 hours walking (the Trust's guided timing)
+        - Needs a certain level of fitness; stiles and steep slopes
+        - Dunseverick Castle car park
+        - Headlands such as Benbane Head and Bengore Head; return by bus
+      - - Clifftop Experience (guided)
+        - 5 miles (8 km)
+        - About 3.5 hours including 2.5 hours walking
+        - Good health and fitness required; age 12 and up
+        - Visitor center (Rambler bus to Dunseverick)
+        - A guide for the cliff path plus the full Visitor Experience
+    after: Distances, times and grades for the four trails are the National Trust's own; the Dunseverick figures come from Discover Northern Ireland and the Trust's Clifftop Experience page. The Yellow
+      Trail and the cliff path are one way, so plan how you get back before you set out. Dogs on leads are welcome on all four Trust trails.
+  - h: Tickets, parking and getting there
+    table:
+      head:
+      - What
+      - Price as last listed (27 November 2026)
+      - What you get
+      rows:
+      - - Visitor Experience
+        - £15 (about $20) adult; £7.50 (about $10) child 5 to 17; under 5s free; family £37.50 (about $49)
+        - Reserved parking, hourly guided tours, audio guides in 11 languages, the exhibition, café and toilets
+      - - Causeway Coast Way car park (Innisfree Farm)
+        - £12 (about $16) a vehicle through the JustPark app
+        - Parking for walkers; free for National Trust members
+      - - Shuttle bus between visitor center and stones
+        - £1 (about $1.30) or €1.20 each way
+        - A ride down or back up the Blue Trail road
+      - - Clifftop Experience
+        - £55 (about $72) a person
+        - Guided walk from Dunseverick with the Rambler bus and the full Visitor Experience
+    after: The main car park by the visitor center is only for members and Visitor Experience ticket holders, and the Trust strongly advises pre-booking. The walking site walkingclub.org.uk notes that the
+      entrance fee is for the visitor experience and the cliffs and beach are free public access. The coastline is open dawn to dusk; the visitor center's hours change through the year (10am to 4pm on 27
+      November 2026), so check the Trust's page on the day. Without a car, take the train from Belfast or Londonderry to Coleraine and then a bus; Translink's 172 runs all year and the Causeway Rambler
+      (402) in summer.
+  - h: The honest hard parts
+    p:
+    - The cliff edges along the Red Trail are not fenced, and the Trust warns of high winds, steep steps and rock falls. It calls the Grand Causeway outcrop and the Aird headland extremely dangerous in
+      high winds; boulders are there to discourage people from walking out onto the Aird, which is not fenced off. On the Yellow Trail, stay on the marked path, as there are sheer cliffs beside it.
+    - The Shepherd's Steps are steep, uneven and of varying depth, with a handrail; the Trust says they are not for the faint-hearted.
+    - Down on the shore, the Causeway stones can be slippery and dangerous when wet, so follow what the rangers tell you. Rock falls do happen; in August 2025 a small one at the Loom, at the back of the
+      Causeway, was cordoned off. The Trust also asks visitors not to wedge coins into the cracks, as it damages the stones.
+  faq:
+  - q: Is it free to walk to the Giant's Causeway?
+    a: The Visitor Experience ticket (£15, about $20, for an adult as last listed) covers the visitor center, tours and reserved parking; walkingclub.org.uk notes the cliffs and beach are free public access.
+      Walkers without a ticket park at the Causeway Coast Way car park for £12 (about $16) a vehicle.
+  - q: How long is the walk down to the Giant's Causeway?
+    a: The Blue Trail from the visitor center to the stones is 0.8 miles (1.28 km) and takes about 25 minutes. A shuttle bus runs on the same road for £1 each way.
+  - q: How many steps are the Shepherd's Steps?
+    a: 162 steep stone steps with a handrail, linking the clifftop Red Trail with the shore near the Organ and the Grand Causeway.
+  - q: Can you walk from Dunseverick Castle to the Giant's Causeway?
+    a: Yes. The North Antrim Cliff Path is 4.8 miles (7.7 km) one way on grassy clifftop paths with stiles. Return by bus (the 402 Causeway Rambler in summer, the 172 all year) or book the Trust's guided
+      Clifftop Experience.
+  - q: Is the Giant's Causeway wheelchair accessible?
+    a: The Green Trail is the only DDA-compliant trail, accessible as far as Portcoon Cave. The Blue Trail's steep slopes may not suit wheelchairs, and the Red and Yellow trails are not suitable.
+  - q: Can I take my dog to the Giant's Causeway?
+    a: Yes, dogs on leads are welcome on the walking trails, and in the visitor center café and shop.
+  sources:
+  - label: National Trust, Giant's Causeway (opening times, prices, parking)
+    url: https://www.nationaltrust.org.uk/visit/northern-ireland/giants-causeway
+    checked: '2026-11-27'
+  - label: National Trust, Giant's Causeway Red Trail
+    url: https://nationaltrust.org.uk/visit/northern-ireland/giants-causeway/giants-causeway-red-trail
+    checked: '2026-11-27'
+  - label: National Trust, Giant's Causeway Blue Trail
+    url: https://www.nationaltrust.org.uk/visit/northern-ireland/giants-causeway/giants-causeway-blue-trail
+    checked: '2026-11-27'
+  - label: National Trust, Giant's Causeway Green Trail
+    url: https://www.nationaltrust.org.uk/visit/northern-ireland/giants-causeway/giants-causeway-green-trail
+    checked: '2026-11-27'
+  - label: National Trust, Giant's Causeway Yellow Trail
+    url: https://www.nationaltrust.org.uk/visit/northern-ireland/giants-causeway/giants-causeway-yellow-trail
+    checked: '2026-11-27'
+  - label: National Trust, Take a hike at the Giant's Causeway
+    url: https://www.nationaltrust.org.uk/giants-causeway/lists/take-a-hike
+    checked: '2026-11-27'
+  - label: National Trust, Giant's Causeway Clifftop Experience
+    url: https://nationaltrust.org.uk/visit/northern-ireland/giants-causeway/giants-causeway-clifftop-experience
+    checked: '2026-11-27'
+  - label: Discover Northern Ireland, Giant's Causeway (shuttle price, buses, park and ride)
+    url: https://discovernorthernireland.com/Giant-s-Causeway-P15748
+    checked: '2026-11-27'
+  - label: Discover Northern Ireland, North Antrim Cliff Path, Dunseverick to Giant's Causeway
+    url: https://discovernorthernireland.com/North-Antrim-Cliff-Path-Dunseverick-to-Giant-s-Causeway-Bushmills-P15749
+    checked: '2026-11-27'
+  - label: walkingclub.org.uk, Visit Giants Causeway for less (cliffs and beach free public access)
+    url: https://walkingclub.org.uk/guide/giants-causeway-parking.html
+    checked: '2026-11-27'
+  - label: RTÉ News, rockfall at the Giant's Causeway (August 2025)
+    url: https://www.rte.ie/news/regional/2025/0808/1527585-giants-causeway
+    checked: '2026-11-27'
+  - label: National Park Service, Devils Postpile National Monument
+    url: https://www.nps.gov/depo/
+    checked: '2026-11-27'
+  - label: currencyconvert.online, GBP to USD (1.3118 on 27 November 2026, for the dollar figures)
+    url: https://currencyconvert.online/gbp/usd
+    checked: '2026-11-27'
+  related:
+  - walk-the-causeway-coast-way
+  - walk-the-tower-trail-at-devils-tower
+  - walk-across-a-tidal-causeway
+  - walk-south-west-coast-path
 - id: hike-angels-landing
   title: Hike Angels Landing in Zion
   category: move
@@ -149756,3 +150271,1784 @@
   - volunteer-at-parkrun
   - couch-to-5k
   - join-a-running-club
+- id: learn-the-melodeon
+  title: Learn the melodeon
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The melodeon is the small button accordion behind English country dancing and the morris, and each button gives one note on the push and another on the pull. A two-row D/G box is the usual first
+    instrument, beginners' days lend them, and some morris sides look for musicians to play for the dance.
+  start:
+  - Decide what music you want to play. English dance and morris players typically use a two-row D/G melodeon; Hobgoblin's guide suggests B/C for Irish music.
+  - Book a beginners' day that lends instruments, such as The Stables' melodeon workshops, before buying a box of your own.
+  - Once you can play a few tunes with both hands, ask a local morris side or folk session whether they need a musician; some say no experience of playing for dancing is needed.
+  links:
+  - label: 'The Stables: Melodeon Beginners workshop (Milton Keynes)'
+    url: https://stables.org/workshop/melodeon-beginners-part-1
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Halsway Manor: DG Melodeon Weekend (Somerset)'
+    url: https://www.halswaymanor.org.uk/event/dg-melodeon-weekend-2026
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Common Ground on the Hill: Diatonic Button Accordion with Peter Brice'
+    url: https://www.commongroundonthehill.org/classes/button-accordion-brice
+    region: us
+    checked: '2026-11-27'
+  - label: 'Hobgoblin Music: Melodeon FAQ'
+    url: https://hobgoblin-usa.com/info/faqmelodeon.htm
+    region: any
+    checked: '2026-11-27'
+  seo_title: 'Learn the melodeon: D/G box, morris tunes and classes'
+  description: How the melodeon differs from other accordions, why English and morris players choose a two-row D/G box, and where beginners can learn in the UK and US.
+  detail:
+  - h: Melodeon, accordion or concertina?
+    p:
+    - The melodeon is a diatonic button accordion. Hobgoblin Music's guide says it was developed in the early 19th century, that the right hand fingers much like a harmonica, and that the same button gives
+      a different note on the push and the pull of the bellows. The left hand plays bass notes and chords.
+    - The letters name the keys of the two rows. Hobgoblin says English dance bands and morris musicians typically use a two-row D/G, which suits those keys and their related minors, while Irish and Scottish
+      players usually prefer chromatic boxes tuned B/C. G/C is preferred in France and most of North and South America. Workshops at The Stables and Halsway Manor ask for a D/G box with at least two rows
+      and eight basses.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - The Stables, Milton Keynes
+        - 'Beginners'' workshop with Mel Biggs: English dance tunes, left hand first, then a first tune with both hands; no reading music needed; a limited number of melodeons to borrow'
+        - Fee not shown on the page
+      - - Common Ground on the Hill (US)
+        - Diatonic button accordion class with Peter Brice during a summer Traditions Week; for beginners; G/D and B/C systems taught; dance music and airs from Irish, Scottish and American traditions
+        - Fee not shown on the page
+      - - Halsway Manor, Somerset
+        - DG Melodeon Weekend (June 2026 run) with three tutors, taught mostly by ear; not for total beginners, the Foundation group should be used to playing tunes with both hands together, even slowly
+        - £180 (about $236) non-resident, to £330 (about $433) single en-suite full board
+      - - Benslow Music (UK)
+        - Magic of the Melodeon, a few-day course with Hazel Askew and Lucy Huzzard; for intermediate to advanced D/G players
+        - Fee not shown on the page
+    after: 'For morris, the Morris Federation has listed workshops for musicians, including one on playing for morris dancing and one described as suitable for any standard morris instrument, particularly
+      melodeons. Some sides recruit openly: Marlings Morris, a North West clog side, says experience of playing for dancing is not necessary.'
+  faq:
+  - q: What is the difference between a melodeon and an accordion?
+    a: A melodeon is a diatonic button accordion, a kind of accordion in which each button gives one note on the push and another on the pull of the bellows.
+  - q: Which melodeon should a beginner buy?
+    a: Hobgoblin's guide recommends starting on a two-row, normally D/G, or B/C for Irish music, and not buying the most expensive model. Consider what key the people you will play with use.
+  - q: Do I need to read music to learn the melodeon?
+    a: No. The Stables' beginners' workshop says reading music is not required, and Halsway Manor's weekend is taught mostly by ear.
+  - q: Can I borrow a melodeon to try one?
+    a: Some beginners' workshops lend them. The Stables has a limited number to borrow; contact the education team before you book.
+  sources:
+  - label: Hobgoblin Music, Melodeon FAQ
+    url: https://hobgoblin-usa.com/info/faqmelodeon.htm
+    checked: '2026-11-27'
+  - label: The Stables, Melodeon Beginners Part 1
+    url: https://stables.org/workshop/melodeon-beginners-part-1
+    checked: '2026-11-27'
+  - label: Halsway Manor, DG Melodeon Weekend
+    url: https://www.halswaymanor.org.uk/event/dg-melodeon-weekend-2026
+    checked: '2026-11-27'
+  - label: Common Ground on the Hill, Diatonic Button Accordion w Peter Brice
+    url: https://www.commongroundonthehill.org/classes/button-accordion-brice
+    checked: '2026-11-27'
+  - label: Benslow Music, Magic of the Melodeon
+    url: https://www.benslowmusic.org/courses/magic-of-the-melodeon/
+    checked: '2026-11-27'
+  - label: The Morris Federation, posts tagged melodeon
+    url: https://www.morrisfed.org.uk/tag/melodeon/
+    checked: '2026-11-27'
+  - label: Marlings Morris, Musicians welcome
+    url: https://sites.google.com/site/marlingsmorris/musicians-welcome
+    checked: '2026-11-27'
+  kit:
+  - name: D/G melodeon tutor book
+    why: a beginners' method for the two-row D/G box
+    url: https://www.amazon.co.uk/s?k=DG+melodeon+tutor+book
+  - name: Melodeon gig bag
+    why: a padded bag to carry the box to sessions and practice nights
+    url: https://www.amazon.co.uk/s?k=melodeon+gig+bag
+  - name: Clip-on tuner
+    why: to check notes while learning tunes by ear
+    url: https://www.amazon.co.uk/s?k=chromatic+clip+on+tuner
+  related:
+  - learn-the-accordion
+  - learn-the-concertina
+  - learn-morris-dancing
+  - play-in-a-folk-session
+- id: learn-the-ocarina
+  title: Learn the ocarina
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The ocarina is a small ceramic vessel flute with a pure, ethereal tone, and you can make one from clay as well as learn to play it. Beginners can start on a simple four-hole pendant or go straight
+    to the Italian transverse ocarina with 10 to 12 holes, used for folk tunes and Irish music.
+  start:
+  - Choose your instrument. A four-hole pendant is the simplest start; Pure Ocarinas' workshops cater to 10, 11 and 12 hole transverse ocarinas and lend ones in G.
+  - Book a workshop that lends instruments, such as Bristol Folk House's transverse ocarina day, or a clay workshop where you make and tune your own.
+  - Practice holding the ocarina with relaxed, gently curved fingers and straight wrists, as Pure Ocarinas' learning pages show.
+  links:
+  - label: 'Bristol Folk House: Transverse Ocarina workshop'
+    url: https://www.bristolfolkhouse.co.uk/courses/transverse-ocarina-sd13-22245
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Pure Ocarinas: ocarina workshops with Robert Hickman'
+    url: https://pureocarinas.com/ocarina-workshops
+    region: uk
+    checked: '2026-11-27'
+  - label: 'NC State Crafts Center: Ocarina Workshop (Raleigh, North Carolina)'
+    url: https://crafts.arts.ncsu.edu/ocarina-workshop
+    region: us
+    checked: '2026-11-27'
+  - label: 'Chautauqua Institution: Play the 4-hole Ocarina, The Jubo Method (New York)'
+    url: https://learn.chq.org/courses/play-the-4-hole-ocarina-the-jubo-method
+    region: us
+    checked: '2026-11-27'
+  seo_title: 'Learn the ocarina: which one to start on, and classes'
+  description: Four-hole pendant or 12-hole transverse ocarina, how to start, and the playing and clay-making workshops open to beginners in the UK and US.
+  detail:
+  - h: Which ocarina to start on
+    p:
+    - Harvard's Office for the Arts describes ocarinas as closed-vessel ceramic flutes. Bristol Folk House calls the tone pure, or ethereal.
+    - The simplest kind is the four-hole pendant. Chautauqua's course uses a four-hole Jubo flute, which it calls the simplest instrument to learn, and includes the instrument and the first stage of the
+      method in a $28 (about £21) materials fee.
+    - For more range, the Italian transverse ocarina has 10, 11 or 12 holes and comes in several keys and as multichamber instruments. Robert Hickman of Pure Ocarinas, who has played seriously since 2011,
+      says it gives better tuning, easy chromatic notes and more room for ornament, and advises against four or six hole English pendants for serious learning. Bristol Folk House teaches on alto G ocarinas.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Bristol Folk House
+        - One-day beginners' workshop on the transverse ocarina, usually Sunday 10:00 to 13:00; alto G ocarinas to borrow; folk tunes, especially Balfolk and Scottish music; not currently scheduled, register
+          interest
+        - Fee not shown on the page
+      - - Pure Ocarinas (Robert Hickman)
+        - 90-minute introductory workshop or a series over several days, booked for festivals and groups; ocarinas in G to lend
+        - Fee not shown on the page
+      - - Chautauqua Institution, New York
+        - Four-hole ocarina with the Jubo method, stage 1, Monday to Friday in the weeks listed; ages 7 and up
+        - $28 (about £21) materials fee, includes the instrument
+      - - NC State Crafts Center, Raleigh
+        - Five-hour beginners' clay workshop where you make ocarinas, add holes and try tunings and fingerings; clay and tools provided
+        - $80 (about £60) for the public
+    after: Clay ocarina workshops teach you to make the instrument, not necessarily to play it. Pure Ocarinas says experience of another instrument is strongly preferred for its workshops.
+  faq:
+  - q: Is the ocarina easy to learn?
+    a: The four-hole kind is one of the simplest instruments to start on; Chautauqua's course says it gets students reading and composing their own tunes quickly. Robert Hickman says the 10 to 12 hole transverse
+      ocarina offers better tuning and easy chromatic notes.
+  - q: Which ocarina should a beginner buy?
+    a: For simple tunes, a four-hole pendant. For more serious playing, Robert Hickman says 4 and 6 hole English pendants are not appropriate for his workshops, which cater to properly tuned 10, 11 and
+      12 hole transverse ocarinas; he lends ones in G.
+  - q: Can I make my own ocarina?
+    a: Yes. Clay workshops such as NC State's Crafts Center ocarina day teach you to build one, cut the holes and tune it, and the piece is fired afterward.
+  - q: Do I need to read music to play the ocarina?
+    a: No. Pure Ocarinas teaches both reading sheet music and playing by ear.
+  sources:
+  - label: Bristol Folk House, Transverse Ocarina
+    url: https://www.bristolfolkhouse.co.uk/courses/transverse-ocarina-sd13-22245
+    checked: '2026-11-27'
+  - label: Pure Ocarinas, Ocarina workshops
+    url: https://pureocarinas.com/ocarina-workshops
+    checked: '2026-11-27'
+  - label: Pure Ocarinas, Learning and ocarina education
+    url: https://pureocarinas.com/ocarina-education
+    checked: '2026-11-27'
+  - label: Chautauqua Institution, Play the 4-hole Ocarina, The Jubo Method
+    url: https://learn.chq.org/courses/play-the-4-hole-ocarina-the-jubo-method
+    checked: '2026-11-27'
+  - label: NC State Crafts Center, Ocarina Workshop
+    url: https://crafts.arts.ncsu.edu/ocarina-workshop
+    checked: '2026-11-27'
+  - label: Office for the Arts at Harvard, Making Clay Ocarinas
+    url: https://ofa.fas.harvard.edu/class/making-clay-ocarinas
+    checked: '2026-11-27'
+  kit:
+  - name: 12-hole alto ocarina in G
+    why: the transverse ocarina most beginners' workshops teach on
+    url: https://www.amazon.co.uk/s?k=12+hole+alto+ocarina+G
+  - name: Four-hole pendant ocarina
+    why: a simple first instrument for easy tunes
+    url: https://www.amazon.co.uk/s?k=4+hole+pendant+ocarina
+  - name: Ocarina songbook
+    why: tunes with fingering charts to learn from
+    url: https://www.amazon.co.uk/s?k=ocarina+songbook
+  related:
+  - learn-the-tin-whistle
+  - learn-the-recorder
+  - try-hand-building-with-clay
+  - play-in-a-folk-session
+- id: learn-the-autoharp
+  title: Learn the autoharp
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - us
+  collection: arts
+  why: You strum the autoharp while pressing chord bars, so beginners start by accompanying songs before picking out melodies. Designed in the 1800s to sit on a table, it was popularized held upright by
+    Maybelle Carter, and it has its own festival, scholarship and Hall of Fame.
+  start:
+  - Borrow before you buy. Some classes lend autoharps, and the John C. Campbell Folk School has a lending library for its beginners' week.
+  - 'Get the basics in hand: picks and a thumb pick, a tuning wrench and a tuner. Tuning is part of every beginners'' course.'
+  - Start with rhythm strums behind songs you know, then move to picking out melodies, the order beginners' classes teach in.
+  links:
+  - label: 'John C. Campbell Folk School: Beginning Autoharp (Brasstown, North Carolina)'
+    url: https://folkschool.configio.com/pd/4001/beginning-autoharp
+    region: us
+    checked: '2026-11-27'
+  - label: Mountain Laurel Autoharp Gathering (Shippensburg, Pennsylvania)
+    url: https://mlag.org/
+    region: us
+    checked: '2026-11-27'
+  - label: 'Mountain Laurel Autoharp Gathering: 2027 pre-Gathering classes'
+    url: https://mlag.org/?p=20200
+    region: us
+    checked: '2026-11-27'
+  seo_title: 'Learn the autoharp: beginner classes and the MLAG festival'
+  description: How beginners learn the autoharp, what to bring, the week-long and festival classes in the US, and what a used autoharp can cost.
+  detail:
+  - h: What learning is like
+    p:
+    - The John C. Campbell Folk School's beginners' week starts with rhythm strums and moves into melody playing, covering tuning, holding the instrument, chord bar layouts, picks and strum patterns, and
+      the history of the instrument, including the Carter Family. It asks students to bring picks and a thumb pick, a tuning wrench and a tuner.
+    - The Greenfield Recorder reports that the autoharp dates to the 1800s and was designed to sit on a table, and that playing it upright was popularized by Maybelle Carter in the 20th century. It says
+      used autoharps can cost hundreds of dollars.
+    - Autoharps come as chromatic or diatonic instruments. The Mountain Laurel Autoharp Gathering's beginners' class asks for a chromatic or GD diatonic autoharp.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - John C. Campbell Folk School, North Carolina
+        - Beginning Autoharp, a week-long class with Karen Mueller, winner of the 1986 International Autoharp Championship; ages 18 and up; bring your own or ask to borrow
+        - $870 (about £663)
+      - - Mountain Laurel Autoharp Gathering, Pennsylvania
+        - '"Autoharp from the Bottom Up" with Lucille Reilly, three 3-hour sessions before the June 2027 Gathering; for new players; workshops capped at 20 students; bring your own'
+        - $130 (about £98)
+      - - Mountain Laurel Autoharp Gathering, Pennsylvania
+        - Five-day festival of workshops, concerts and music-making at Shippensburg University, in its 35th year; June 2027 dates listed
+        - Fees on the Gathering's fees page
+      - - Amherst autoharp workshop, Massachusetts
+        - Weekly jam for all levels, with Zoom players from other states; beginner classes with loaner autoharps announced in 2024
+        - Not given in the report
+    after: The Mountain Laurel Autoharp Gathering also runs an Autoharp Hall of Fame, the Mary Lou Orthey Scholarship and the Autoharp Angels program. The Greenfield Recorder describes Angel Autoharp as
+      a national program that aims to make the instrument more accessible.
+  faq:
+  - q: Is the autoharp easy to learn?
+    a: Beginners' classes assume no experience. The John C. Campbell Folk School's week starts with rhythm strums and chord bar layouts, then moves on to melody playing.
+  - q: Chromatic or diatonic autoharp?
+    a: Either works for a beginner. The Mountain Laurel Autoharp Gathering's beginners' class accepts a chromatic or a GD diatonic instrument.
+  - q: How much does an autoharp cost?
+    a: The Greenfield Recorder says used autoharps can cost hundreds of dollars. Borrowing one through a class lending library first lets you try before buying.
+  - q: Do I need to tune an autoharp?
+    a: Yes, and it is taught from the start. Beginners' classes ask you to bring a tuning wrench and an electronic tuner or app.
+  sources:
+  - label: John C. Campbell Folk School, Beginning Autoharp
+    url: https://folkschool.configio.com/pd/4001/beginning-autoharp
+    checked: '2026-11-27'
+  - label: Mountain Laurel Autoharp Gathering, home page
+    url: https://mlag.org/
+    checked: '2026-11-27'
+  - label: Mountain Laurel Autoharp Gathering, MLAG 2027 Pre-Gathering Classes
+    url: https://mlag.org/?p=20200
+    checked: '2026-11-27'
+  - label: 'Greenfield Recorder, Finger-picking good: Amherst autoharp workshop hosts weekly jams for all levels (6 September 2024)'
+    url: https://www.recorder.com/Autoharp-enthusiasts-in-Amherst-56737585
+    checked: '2026-11-27'
+  inspire:
+  - kind: read
+    person: Marie Hartwell-Walker, from Amherst, Massachusetts
+    line: Turned to the autoharp when arthritis made playing guitar difficult, restored inexpensive autoharps to playable condition and now leads a weekly autoharp workshop open to all levels.
+    title: 'Finger-picking good: Amherst autoharp workshop hosts weekly jams for all levels'
+    outlet: Greenfield Recorder
+    url: https://www.recorder.com/Autoharp-enthusiasts-in-Amherst-56737585
+    checked: '2026-11-27'
+  kit:
+  - name: Autoharp tuning wrench
+    why: for the tuning pins, which need regular adjustment
+    url: https://www.amazon.co.uk/s?k=autoharp+tuning+wrench
+  - name: Thumb pick and finger picks
+    why: the picks beginners' classes ask you to bring
+    url: https://www.amazon.co.uk/s?k=thumb+pick+finger+picks
+  - name: Beginning autoharp book
+    why: chord charts and strum patterns to practice from
+    url: https://www.amazon.co.uk/s?k=beginning+autoharp+book
+  related:
+  - learn-the-appalachian-dulcimer
+  - learn-the-banjo
+  - learn-the-harp
+  - go-to-a-folk-festival
+- id: learn-the-guzheng
+  title: Learn the guzheng
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The guzheng is a 21-string Chinese zither played with picks taped to the fingers, the right hand plucking while the left presses the strings to bend notes and add vibrato. Small group classes, some
+    lending instruments, mean you can start with no experience.
+  start:
+  - Find a small group class that provides instruments in class, so you do not have to buy a guzheng first.
+  - Buy finger picks and tape; some courses ask you to bring your own to every lesson.
+  - Expect to learn to read Chinese music notation alongside the basic plucking and pressing techniques.
+  links:
+  - label: 'UK Chinese Music: guzheng courses at SOAS, London'
+    url: https://ukchinesemusic.org/music-course-oct-2024
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Goldsmiths Confucius Institute: Chinese Music, Guzheng (London)'
+    url: https://www.gold.ac.uk/short-courses/learn-chinese-music-guzheng/
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Pasadena Conservatory of Music: Echoes of China classes (California)'
+    url: https://pasadenaconservatory.org/adult-studies/
+    region: us
+    checked: '2026-11-27'
+  - label: 'Lexington Community Education: Beginner Guzheng Class for Adults'
+    url: https://lexingtoncommunityed.org/?p=67708
+    region: us
+    checked: '2026-11-27'
+  seo_title: 'Learn the guzheng: beginner classes in the UK and US'
+  description: How the 21-string guzheng is played, what beginners need, and small group guzheng classes in London and the US that lend instruments.
+  detail:
+  - h: How it is played
+    p:
+    - The University of Sheffield's Confucius Institute describes the guzheng as a 21-stringed Chinese plucked zither. Goldsmiths' course page says it is played with plectra taped to the fingers of one
+      or both hands; in the traditional style the right hand plucks and the left hand changes pitch and adds vibrato by pressing the strings, while modern playing uses both hands to strike notes.
+    - Beginners' courses cover reading Chinese music notation, the main performance styles and basic techniques. Sheffield's course said no knowledge of music or Chinese was needed, though it is not running
+      at present.
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - UK Chinese Music, SOAS, London
+        - Ten Saturday group lessons; beginner (levels 0 to 3) and intermediate groups; bring your own or hire a guzheng at a modest cost (autumn 2024 listing)
+        - £300 (about $400), 10% concession
+      - - Goldsmiths Confucius Institute, London
+        - Ten-week evening course, groups of up to three or one-to-one; bring finger picks and tape (2024 listing)
+        - One-to-one £45 (about $60) a lesson, minimum five; group fee not shown
+      - - Pasadena Conservatory of Music, California
+        - Echoes of China beginning class (erhu and guzheng), 17 Sundays from February 2027; no experience needed; borrow an instrument free for one semester
+        - $425 (about £320)
+      - - Lexington Community Education
+        - Six one-hour sessions for adults with no prior experience, at Lexington High School; instruments provided for in-class use (May 2025 run)
+        - $230 (about £175)
+    after: Pasadena also runs an Echoes of China ensemble for players with experience of Chinese instruments, with guzheng, pipa and erhu rehearsing together, at $900 (about £686).
+  faq:
+  - q: How many strings does a guzheng have?
+    a: The University of Sheffield's Confucius Institute describes the guzheng as a 21-stringed zither.
+  - q: Is the guzheng hard to learn?
+    a: Beginners' classes assume no experience. You learn basic plucking and left-hand pressing, and to read Chinese music notation, in small groups.
+  - q: Do I need my own guzheng to start?
+    a: Not always. Pasadena Conservatory lends one free for a semester, Lexington's class provides instruments for class use, and UK Chinese Music hires a limited number.
+  sources:
+  - label: University of Sheffield Confucius Institute, Chinese Zither (Guzheng)
+    url: https://www.sheffield.ac.uk/confucius/study/chinese-zither-guzheng
+    checked: '2026-11-27'
+  - label: 'Goldsmiths, University of London, Short course: Chinese Music - Guzheng'
+    url: https://www.gold.ac.uk/short-courses/learn-chinese-music-guzheng/
+    checked: '2026-11-27'
+  - label: UK Chinese Music, Music Courses (autumn 2024)
+    url: https://ukchinesemusic.org/music-course-oct-2024
+    checked: '2026-11-27'
+  - label: Pasadena Conservatory of Music, Adult Studies
+    url: https://pasadenaconservatory.org/adult-studies/
+    checked: '2026-11-27'
+  - label: Lexington Community Education, Beginner Guzheng Class for Adults
+    url: https://lexingtoncommunityed.org/?p=67708
+    checked: '2026-11-27'
+  kit:
+  - name: Guzheng finger picks and tape
+    why: the picks and tape you bring to each lesson
+    url: https://www.amazon.co.uk/s?k=guzheng+finger+picks+tape
+  - name: Guzheng tuning wrench
+    why: for tuning the 21 strings
+    url: https://www.amazon.co.uk/s?k=guzheng+tuning+wrench
+  - name: Guzheng stand
+    why: holds the instrument at playing height at home
+    url: https://www.amazon.co.uk/s?k=guzheng+stand
+  related:
+  - learn-the-koto
+  - learn-the-erhu
+  - learn-chinese-brush-painting
+  - learn-mandarin-chinese
+- id: learn-the-kora
+  title: Learn the kora
+  category: think
+  kind: skill
+  effort: moderate
+  cost: mid
+  time: months
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: The kora is the 21-string harp of the West African griots, built on a calabash and played with thumb and finger patterns. A course or workshop that provides instruments is a good first step, because
+    trying several koras before you buy is hard to arrange.
+  start:
+  - Take a course or workshop before buying, ideally one that provides instruments; Motherland Music in California lends one for $10 (about £8) on its class.
+  - When you buy, choose a seller who offers a guarantee and after-care, and avoid decorated tourist instruments made to look good rather than play well.
+  - Learn to tune it yourself early on; Josh Doughty's beginner's guide covers tuning, string changes and a first complete traditional piece.
+  links:
+  - label: 'SOAS University of London: West African Kora with Kadialy Kouyate'
+    url: https://soas.ac.uk/about/event/west-african-kora
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Josh Doughty: Beginner''s Guide to the Kora'
+    url: https://www.joshdoughty.co.uk/beginners-guide-to-the-kora
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Motherland Music: kora class (Inglewood, California)'
+    url: https://motherlandmusic.com/?p=32667
+    region: us
+    checked: '2026-11-27'
+  - label: 'The Kora Café: list of kora teachers (UK, US and beyond)'
+    url: https://thekoracafe.com/resources/teachers
+    region: any
+    checked: '2026-11-27'
+  seo_title: 'Learn the kora: first lessons and buying a kora'
+  description: What the 21-string West African kora is, how to choose a first instrument, and kora courses and teachers in London, California and beyond.
+  detail:
+  - h: Choosing a first kora
+    p:
+    - The Kora Café's buying guide says a poor instrument wastes money and causes frustration, and that trying several is hard, so it suggests starting with a course or workshop that provides instruments.
+    - 'Its checklist: the sound first, then whether it tunes easily and stays in tune, a straight, strong neck, even string tension, no buzzes or rattles, and evenly cut notches on the bridge. A larger
+      calabash, about 45 cm (18 inches) across, gives more volume. Traditional leather tuning rings are called konso; it says most Western players prefer tuning pegs, which must be big enough for a bottom
+      string over 2 mm thick.'
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - SOAS University of London
+        - One-day kora course, 10:00 to 17:30, with Kadialy Kouyate, a performer and teacher from southern Senegal; part of SOAS's summer music workshops open to the public
+        - £55 (about $72), or £48 (about $63) concession
+      - - Motherland Music, Inglewood, California
+        - Two-hour kora class for all levels, covering history, storytelling and playing; space limited
+        - $30 (about £23), plus $10 (about £8) to use an instrument
+      - - Josh Doughty
+        - Beginner's guide course (marked "coming in 2026"); his site also lists a Basel kora course, retreats and private lessons
+        - Fee not shown on the page
+      - - The Kora Café teacher list
+        - Teachers including The Kora Workshop (UK, France and Senegal; taster sessions, workshops and video lessons) and Will Ridenour (North Carolina, kora lessons)
+        - Varies by teacher
+    after: Afropop Worldwide's kora resources note that American players such as David Gilden and Marc Pevar studied with Gambian griots, or jelis.
+  faq:
+  - q: How many strings does a kora have?
+    a: The kora has 21 strings, as SOAS and Afropop Worldwide both describe it.
+  - q: Where can I try a kora before buying one?
+    a: On a course that provides instruments. The Kora Café recommends this, and Motherland Music in California lends one for $10 (about £8) on its class.
+  - q: How do you tune a kora?
+    a: Either with traditional leather rings, called konso, or with tuning pegs, which the Kora Café says most Western players prefer. Beginners' courses teach tuning from the start.
+  - q: Can I learn the kora online?
+    a: Yes, alongside in-person lessons. The Kora Workshop sells video lessons, and the Kora Café lists teachers in the UK, US and elsewhere.
+  sources:
+  - label: SOAS University of London, West African Kora
+    url: https://soas.ac.uk/about/event/west-african-kora
+    checked: '2026-11-27'
+  - label: SOAS University of London, SOAS Music Workshops
+    url: https://www.soas.ac.uk/soas-music-workshops
+    checked: '2026-11-27'
+  - label: The Kora Café, Buying a Kora
+    url: https://www.thekoracafe.com/learn/buying/
+    checked: '2026-11-27'
+  - label: The Kora Café, List of kora teachers
+    url: https://thekoracafe.com/resources/teachers
+    checked: '2026-11-27'
+  - label: Josh Doughty, Beginner's Guide to the Kora
+    url: https://www.joshdoughty.co.uk/beginners-guide-to-the-kora
+    checked: '2026-11-27'
+  - label: Motherland Music, Kora Class with EsiKora
+    url: https://motherlandmusic.com/?p=32667
+    checked: '2026-11-27'
+  - label: Afropop Worldwide, Kora resources (Banning Eyre, 1 June 2023)
+    url: https://www.afropop.org/articles/kora-resources
+    checked: '2026-11-27'
+  kit:
+  - name: Kora strings
+    why: spare strings, since changing them is part of looking after a kora
+    url: https://www.amazon.co.uk/s?k=kora+strings
+  - name: Clip-on chromatic tuner
+    why: for tuning all 21 strings
+    url: https://www.amazon.co.uk/s?k=chromatic+clip+on+tuner
+  - name: Kora gig bag
+    why: a padded bag to protect the calabash when traveling
+    url: https://www.amazon.co.uk/s?k=kora+bag
+  related:
+  - learn-the-harp
+  - learn-the-djembe
+  - join-a-drumming-circle
+  - go-to-a-folk-festival
+- id: learn-polymer-clay
+  title: Make jewelry and beads from polymer clay
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Polymer clay comes in many colors, can be layered into patterns, and hardens in an ordinary home oven, so you can make beads, pendants and earrings at the kitchen table without a kiln. A one-hour
+    pendant workshop at a craft show is enough to see whether you like it.
+  start:
+  - Try a short taster first, such as a British Polymer Clay Guild pendant workshop at a craft show, or a beginners' course at an arts center or continuing-education program.
+  - Buy a few colors and condition the clay well by kneading before you shape it; poor conditioning causes cracks and air bubbles.
+  - Bake at the temperature on the packet, checked with an oven thermometer, with good ventilation, and never in a microwave.
+  links:
+  - label: 'British Polymer Clay Guild: Lots of Layers pendant workshop (Exeter)'
+    url: https://ticketsales.ichf.co.uk/products/workshop-creative-craft-show-and-the-stitching-show-exeter-autumn-2026-lots-of-layers-beautiful-pendant-with-angela-smith-british-polymer-clay-guild-friday-25th-september-2026-12-45pm
+    region: uk
+    checked: '2026-11-27'
+  - label: 'CraftCourses: polymer clay courses across the UK'
+    url: https://craftcourses.com/categories/polymer-clay
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Kennesaw State University: Polymer Clay for Beginners (Georgia)'
+    url: https://cpe.kennesaw.edu/courses/50/polymer-clay-for-beginners/
+    region: us
+    checked: '2026-11-27'
+  - label: Polymer Clay Guild of Minnesota (Minneapolis)
+    url: https://nemaa.org/partners/polymer-clay-guild-of-mn
+    region: us
+    checked: '2026-11-27'
+  seo_title: 'Polymer clay for beginners: classes and baking tips'
+  description: How polymer clay is shaped and baked at home, the mistakes beginners make, and polymer clay workshops, courses and guilds in the UK and US.
+  detail:
+  - h: Baking it right
+    p:
+    - Sculpey, a clay maker, says polymer clay is safe to bake in the oven you cook in, and that as long as you do not burn it, it gives off no toxic chemicals while curing. If it does burn, the fumes can
+      irritate eyes, nose and mouth, so use good ventilation. Some households prefer to keep clay and food baking separate, and a toaster oven works well.
+    - 'Its list of things to avoid: burnt clay from an oven that runs hot (use an oven thermometer, as settings are often several degrees out), underbaked clay (it is safe to bake again), brittle pieces,
+      dust and lint (work clean and wash your hands), air bubbles and cracks (condition the clay thoroughly). Follow the time and temperature on the packet, preheat fully, turn convection off and never
+      use a microwave.'
+  - h: Ways in compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - British Polymer Clay Guild, craft shows
+        - 60-minute pendant workshops at craft shows (Exeter, September 2026); all abilities, 16 and over; the piece is cured on the guild's stand
+        - £20 (about $26)
+      - - CraftCourses (UK makers)
+        - One-day polymer clay beads or faux gemstone jewelry in Reading; one-day beginner jewelry in Shrewsbury
+        - £85 (about $112) in Reading; £260 (about $341) in Shrewsbury
+      - - Kennesaw State University, Georgia
+        - Six weekly three-hour sessions on rolling, shaping, blending and baking (August to September 2026 run); bring supplies from the list
+        - $105 (about £80)
+      - - Polymer Clay Guild of Minnesota
+        - Monthly evening meetings in Minneapolis; free to come to one meeting to see what the guild does
+        - Free first visit
+    after: The British Polymer Clay Guild is a volunteer-run non-profit that promotes polymer clay as an art medium, and has held meet-ups for people just starting out, such as one in Towcester in 2024.
+  faq:
+  - q: Can you bake polymer clay in a normal oven?
+    a: Yes. Sculpey says it is safe in the oven you cook in, as long as you do not burn it. Use the packet temperature, an oven thermometer and good ventilation.
+  - q: Why does my polymer clay crack?
+    a: Sculpey says cracks often come from poor conditioning, old clay or moisture in the raw clay. Underbaking can also leave pieces brittle.
+  - q: Can I bake polymer clay in a microwave?
+    a: No. Sculpey says to use a conventional or toaster oven with convection off, never a microwave.
+  - q: Do I need a kiln for polymer clay?
+    a: No. Sculpey says it is baked in a conventional or toaster oven at the time and temperature on the packet.
+  sources:
+  - label: ICHF tickets, Lots of Layers Beautiful Pendant with Angela Smith, British Polymer Clay Guild
+    url: https://ticketsales.ichf.co.uk/products/workshop-creative-craft-show-and-the-stitching-show-exeter-autumn-2026-lots-of-layers-beautiful-pendant-with-angela-smith-british-polymer-clay-guild-friday-25th-september-2026-12-45pm
+    checked: '2026-11-27'
+  - label: CraftCourses, Polymer clay courses
+    url: https://craftcourses.com/categories/polymer-clay
+    checked: '2026-11-27'
+  - label: Kennesaw State University, Polymer Clay for Beginners
+    url: https://cpe.kennesaw.edu/courses/50/polymer-clay-for-beginners/
+    checked: '2026-11-27'
+  - label: Northeast Minneapolis Arts Association, Polymer Clay Guild of MN
+    url: https://nemaa.org/partners/polymer-clay-guild-of-mn
+    checked: '2026-11-27'
+  - label: Towcester Town Council, Polymer Clay Meet Up
+    url: https://www.towcester-tc.gov.uk/events-listings/polymer-clay-meet-up
+    checked: '2026-11-27'
+  - label: Sculpey, 6 Things to Avoid When Baking Polymer Clay (9 June 2022)
+    url: https://www.sculpey.com/blogs/blog/6-things-to-avoid-when-baking-polymer-clay
+    checked: '2026-11-27'
+  - label: Sculpey, Where to bake polymer clay (18 April 2019)
+    url: https://www.sculpey.com/blogs/blog/where-to-bake-polymer-clay
+    checked: '2026-11-27'
+  - label: West Dean, Carol Blackburn
+    url: https://www.westdean.ac.uk/tutors/carol-blackburn
+    checked: '2026-11-27'
+  inspire:
+  - kind: read
+    person: Carol Blackburn
+    line: Trained at the Royal College of Art, founded the London Polymer Clay Group, wrote How to Make Polymer Clay Beads and teaches polymer clay jewelry making.
+    title: Carol Blackburn
+    outlet: West Dean College of Arts and Conservation
+    url: https://www.westdean.ac.uk/tutors/carol-blackburn
+    checked: '2026-11-27'
+  kit:
+  - name: Polymer clay starter set
+    why: a range of colors to practice blending and layering
+    url: https://www.amazon.co.uk/s?k=polymer+clay+starter+set
+  - name: Oven thermometer
+    why: to check the real oven temperature before baking clay
+    url: https://www.amazon.co.uk/s?k=oven+thermometer
+  - name: Acrylic roller and clay blades
+    why: for rolling even sheets and slicing canes
+    url: https://www.amazon.co.uk/s?k=polymer+clay+acrylic+roller+blade
+  - name: Earring findings kit
+    why: hooks and jump rings to turn baked pieces into jewelry
+    url: https://www.amazon.co.uk/s?k=earring+findings+kit
+  related:
+  - learn-silver-clay-jewellery
+  - learn-beaded-jewellery
+  - try-hand-building-with-clay
+  - learn-lampwork-glass-beads
+- id: write-haiku
+  title: Learn to write haiku
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: A haiku is a short poem that uses images to catch a moment of nature or the season, with a cut that suggests a relationship between two images or ideas. You don't have to count 5-7-5. The Haiku Society
+    of America says that isn't wrong, but English-language poets stopped counting syllables decades ago, so all you need to start is a notebook and something you have noticed.
+  start:
+  - Read the Haiku Society of America's definitions of haiku and senryu (updated in 2026), then read haiku in a journal such as Blithe Spirit (UK) or Frogpond (US).
+  - 'Take a beginners'' course: a one-day class such as City Lit''s in London, or an online course where you send in written assignments and get tutor feedback.'
+  - Join a society. Members of the British Haiku Society and the Haiku Society of America get the journal and a haiku in the yearly members' anthology.
+  links:
+  - label: 'British Haiku Society: membership'
+    url: https://britishhaikusociety.org.uk/?p=579
+    region: uk
+    checked: '2026-11-27'
+  - label: 'City Lit: Writing Haiku Poetry, one-day beginners'' course (London)'
+    url: https://www.citylit.ac.uk/courses/writing-haiku-poetry/hw525-2526
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Writers & Artists: Introducing...Haiku with Alan Summers (online, 2025 run)'
+    url: https://www.writersandartists.co.uk/events-and-courses/introducinghaiku-asynchronous-online-course-alan-summers
+    region: any
+    checked: '2026-11-27'
+  - label: 'Haiku Society of America: join'
+    url: https://hsa-haiku.org/join.htm
+    region: us
+    checked: '2026-11-27'
+  - label: 'Haiku Society of America: definitions of haiku and senryu'
+    url: https://hsa-haiku.org/hsa-definitions.html
+    region: us
+    checked: '2026-11-27'
+  - label: 'Writers.com: Poems of All Sizes, haiku, tanka and Japanese forms (online)'
+    url: https://writers.com/course/poems-of-all-sizes-haiku-tanka-and-japanese-poetic-forms
+    region: any
+    checked: '2026-11-27'
+  seo_title: 'How to write haiku: courses, societies and 5-7-5'
+  description: What a haiku is, whether it has to be 5-7-5, and where to learn, with one-day and online haiku courses and the British and American haiku societies.
+  detail:
+  - h: What a haiku is (and the 5-7-5 question)
+    p:
+    - The Haiku Society of America defines a haiku as a short poem that uses imagistic language to convey the essence of an experience of nature or the season, with a cut that suggests a meaningful relationship
+      between two or more images, perceptions or ideas. Its sister form, the senryu, highlights the human condition and is often, but not always, humorous.
+    - On 5-7-5, the society says writing that way is not wrong, but it rests on the idea that Japanese sound units are the same as English syllables, which they are not. Most English-language haiku poets
+      dropped syllable counting decades ago.
+    - Courses also teach the Japanese background. Writers.com's online course, for example, covers the history of Japanese short forms, syllable and sound rules, kigo (season words), haiku in America and
+      linked poems.
+  - h: Ways to learn, compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Writing Haiku Poetry: one Saturday, 10:30am to 4:30pm, in person; beginners, no experience needed (February 2026 run)'
+        - £79 (about $104), concession £40 (about $52)
+      - - Writers & Artists, online
+        - 'Introducing...Haiku with Alan Summers: not live; three written assignments with tutor feedback shared with a group of up to eight (autumn 2025 run)'
+        - £135 (about $177), £125 (about $164) early booking
+      - - Writers.com, online
+        - 'Poems of All Sizes: three 2-hour Zoom sessions plus three weeks of one-to-one feedback by email (April 2027 run)'
+        - $295 early bird (about £225), $345 (about £263) full price
+      - - British Haiku Society
+        - 'Membership, January to December: Blithe Spirit four times a year, The Brief newsletter, a handbook for new members, one haiku in the Members'' Anthology'
+        - £31 UK single (about $41), £26 (about $34) concession (60+, unwaged or student), £46 (about $60) outside Europe
+      - - Haiku Society of America
+        - 'Membership, January to December: Frogpond three times a year, a newsletter, the members'' anthology and lower contest fees'
+        - Dues listed from $20 to $50 a year (about £15 to £38); see the join page for print and PDF options
+    after: The British Haiku Society also runs a mentoring service, and the National Poetry Library lists an asynchronous Introducing Haiku course with Call of the Page for up to eight people.
+  faq:
+  - q: Does a haiku have to be 5-7-5 syllables?
+    a: No. The Haiku Society of America says 5-7-5 is not wrong, but English-language poets stopped counting syllables decades ago because Japanese sound units are not the same as English syllables.
+  - q: What is the difference between a haiku and a senryu?
+    a: In the Haiku Society of America's definitions, a haiku conveys an experience of nature or the season, while a senryu highlights the human condition and is often humorous or satirical.
+  - q: Can I learn haiku online?
+    a: Yes. Writers & Artists has run Alan Summers' course by written assignments, and Writers.com runs a three-session Zoom course on haiku, tanka and other Japanese forms.
+  - q: Where can I get a haiku published?
+    a: Joining a society is one way in. British Haiku Society members get one haiku in the annual Members' Anthology, and the Haiku Society of America's anthology includes haiku by all its members.
+  sources:
+  - label: Haiku Society of America, definitions (updated 2026)
+    url: https://hsa-haiku.org/hsa-definitions.html
+    checked: '2026-11-27'
+  - label: Haiku Society of America, about the HSA
+    url: https://www.hsa-haiku.org/about-hsa.htm
+    checked: '2026-11-27'
+  - label: Haiku Society of America, join
+    url: https://hsa-haiku.org/join.htm
+    checked: '2026-11-27'
+  - label: British Haiku Society, about
+    url: https://britishhaikusociety.org.uk/about/
+    checked: '2026-11-27'
+  - label: British Haiku Society, membership and donations
+    url: https://britishhaikusociety.org.uk/?p=579
+    checked: '2026-11-27'
+  - label: City Lit, Writing Haiku Poetry
+    url: https://www.citylit.ac.uk/courses/writing-haiku-poetry/hw525-2526
+    checked: '2026-11-27'
+  - label: Writers & Artists, Introducing...Haiku with Alan Summers
+    url: https://www.writersandartists.co.uk/events-and-courses/introducinghaiku-asynchronous-online-course-alan-summers
+    checked: '2026-11-27'
+  - label: 'Writers.com, Poems of All Sizes: Haiku, Tanka, and Japanese Poetic Forms'
+    url: https://writers.com/course/poems-of-all-sizes-haiku-tanka-and-japanese-poetic-forms
+    checked: '2026-11-27'
+  - label: National Poetry Library, Introducing Haiku with Call of the Page (online)
+    url: https://www.nationalpoetrylibrary.org.uk/events-exhibitions/online-introducing-haiku-call-page
+    checked: '2026-11-27'
+  - label: Currency.me.uk, GBP to USD (1.3121, 27 November 2026)
+    url: https://www.currency.me.uk/convert/gbp/usd?amount=1
+    checked: '2026-11-27'
+  inspire:
+  - kind: read
+    person: Karen Robbie, Pontrhydygroes, Ceredigion
+    line: Stopped painting and began writing haiku in 2018; her first collection, home, came out from Alba Publishing in October 2025 and was shortlisted for The Haiku Foundation's Touchstone Distinguished
+      Book Award 2025.
+    title: Pontrhydygroes poet and artist shares haiku book journey
+    outlet: Cambrian News
+    url: https://www.cambrian-news.co.uk/news/entertainment/pontrhydygroes-poet-and-artist-shares-haiku-book-journey-918209
+    checked: '2026-11-27'
+  kit:
+  - name: Pocket notebook
+    why: for jotting down images and moments as you notice them
+    url: https://www.amazon.co.uk/s?k=pocket+notebook+a6
+  - name: Haiku anthology
+    why: reading plenty of haiku is how most courses start
+    url: https://www.amazon.co.uk/s?k=haiku+anthology+english
+  - name: Haiku handbook
+    why: a guide to the form, season words and the cut
+    url: https://www.amazon.co.uk/s?k=haiku+handbook+how+to+write
+  related:
+  - take-a-poetry-workshop
+  - join-a-poetry-group
+  - read-at-a-poetry-open-mic
+  - learn-japanese-calligraphy
+- id: learn-decoupage
+  title: Learn decoupage
+  category: think
+  kind: project
+  effort: gentle
+  cost: low
+  time: afternoon
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Decoupage means gluing paper cutouts onto an object and varnishing over them so the pieces blend together. It was popular on furniture in 18th-century Europe, and it still turns a plain box, a glass
+    bottle or a tired chest of drawers into something nobody else has.
+  start:
+  - Start small with a box, tray or glass bottle and printed papers you like.
+  - Book a short class to learn cutting, layering and sealing, or try Historic Deerfield's method at home. Paint the object, glue on cutouts, then brush on layers of three parts white glue to one part water.
+  - Then try furniture. On a two-day upcycling course you bring a small piece of furniture and some wallpaper or a poster.
+  links:
+  - label: 'ReVamp Boutique: two-day paint and paper decoupage furniture workshop (Essex, via Craft Courses)'
+    url: https://craftcourses.com/courses/two-day-upcycling-furniture-workshop
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Decoupage Artists Worldwide: the guild''s history of decoupage'
+    url: https://www.decoupage.org/home/history-of-decoupage
+    region: any
+    checked: '2026-11-27'
+  - label: '92NY: Decoupage Objects (New York)'
+    url: https://www.92ny.org/class/decoupage-objects
+    region: us
+    checked: '2026-11-27'
+  - label: 'Crocker Art Museum: Decoupage Crafting (Sacramento)'
+    url: https://www.crockerart.org/events/season/decoupage-crafting
+    region: us
+    checked: '2026-11-27'
+  - label: 'Historic Deerfield: Homage to Decoupage, a project to make at home'
+    url: https://www.historic-deerfield.org/2020-6-19-homage-to-decoupage/
+    region: us
+    checked: '2026-11-27'
+  seo_title: 'Decoupage for beginners: method, classes and costs'
+  description: What decoupage is, how to do it at home with glue and paper cutouts, and what decoupage classes and furniture workshops cost in the UK and the US.
+  detail:
+  - h: What you actually do
+    p:
+    - Historic Deerfield, a museum in Massachusetts, describes decoupage as decorating an object by gluing colored paper cutouts onto it, then varnishing it to harmonize the elements. Its home project paints
+      a box first (spray paint, acrylic or house paint), glues on the cutouts, and builds up repeated layers of a mix of three parts white glue to one part water. Its gold spray-painted box took on an antiqued
+      look under many layers of glue, and stickers worked too, though each had to be cut from its background first.
+    - The word is French. The guild Decoupage Artists Worldwide says it comes from découpeur, to cut out. In the late 17th century, Venetian lacquerers made "lacca contrafatta" (counterfeit lacquer) to
+      meet demand for lacquerwork from the Far East. The craft then spread across Europe, reaching the court of Louis XV, before Victorian makers took it toward sentimental collage with valentines and embossed
+      papers.
+  - h: Ways in, compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Crocker Art Museum, Sacramento, California
+        - 'Decoupage Crafting: one 2.5-hour class decorating a glass bottle; other supplies provided; bring your own papers or use theirs; ages 18+, museum admission included'
+        - $60 (about £46), $45 (about £34) members
+      - - 92NY, New York
+        - 'Decoupage Objects: one 150-minute session decorating an everyday object such as a ceramic container with papers you paint, cut, tear and texture'
+        - $115 (about £88)
+      - - ReVamp Boutique, near Colchester, Essex (via Craft Courses)
+        - 'Two days, 10am to 4pm: bring a small piece of furniture and wallpaper or a poster; paint, light lunch and a take-home pack included; all abilities'
+        - £199 (about $261)
+      - - At home, Historic Deerfield's method
+        - A painted box, paper cutouts or stickers, and white glue mixed three parts to one part water
+        - The cost of materials
+    after: ReVamp asks you to email a photo of your piece and your wallpaper at least five days before the course.
+  faq:
+  - q: What glue do you use for decoupage?
+    a: Historic Deerfield's project uses three parts white glue to one part water, brushed on in repeated layers over the cutouts to seal them.
+  - q: Do I need to be good at art to do decoupage?
+    a: No. The design comes from paper cutouts, and Historic Deerfield's project worked with old holiday cards and stickers.
+  - q: Can you decoupage furniture?
+    a: Yes. Decoupage was popular for furniture in 18th-century Europe, and ReVamp Boutique runs a two-day course where you bring a small piece and transform it with paint and wallpaper or a poster.
+  - q: Where does the word decoupage come from?
+    a: Decoupage Artists Worldwide says it is a 20th-century word from the French découpeur, to cut out.
+  sources:
+  - label: Historic Deerfield, Homage to Decoupage (2020)
+    url: https://www.historic-deerfield.org/2020-6-19-homage-to-decoupage/
+    checked: '2026-11-27'
+  - label: Decoupage Artists Worldwide, History of decoupage
+    url: https://www.decoupage.org/home/history-of-decoupage
+    checked: '2026-11-27'
+  - label: Craft Courses, ReVamp Boutique two-day upcycling paint and paper decoupage furniture workshop
+    url: https://craftcourses.com/courses/two-day-upcycling-furniture-workshop
+    checked: '2026-11-27'
+  - label: 92NY, Decoupage Objects
+    url: https://www.92ny.org/class/decoupage-objects
+    checked: '2026-11-27'
+  - label: Crocker Art Museum, Decoupage Crafting
+    url: https://www.crockerart.org/events/season/decoupage-crafting
+    checked: '2026-11-27'
+  - label: Currency.me.uk, GBP to USD (1.3121, 27 November 2026)
+    url: https://www.currency.me.uk/convert/gbp/usd?amount=1
+    checked: '2026-11-27'
+  kit:
+  - name: Decoupage glue
+    why: to stick the cutouts down and seal them in layers
+    url: https://www.amazon.co.uk/s?k=decoupage+glue+sealer
+  - name: Decoupage paper
+    why: printed sheets made to cut up and apply
+    url: https://www.amazon.co.uk/s?k=decoupage+paper
+  - name: Small curved craft scissors
+    why: for cutting around detailed shapes
+    url: https://www.amazon.co.uk/s?k=curved+craft+scissors+decoupage
+  - name: Flat brush set
+    why: to brush on paint and glue layers
+    url: https://www.amazon.co.uk/s?k=flat+paint+brush+set+craft
+  related:
+  - learn-furniture-restoration
+  - learn-gilding
+  - learn-bookbinding
+  - learn-china-painting
+- id: learn-rosemaling
+  title: Learn rosemaling, Norwegian decorative painting
+  category: think
+  kind: skill
+  effort: gentle
+  cost: mid
+  time: weeks
+  setting: indoors
+  company: others
+  regions:
+  - us
+  - anywhere
+  collection: arts
+  why: Rosemaling is Norway's flowing floral scrollwork, built from C- and S-shaped brushstrokes. It began in rural eastern Norway in the mid-1700s and was revived by Norwegian Americans in the Upper Midwest.
+    There are well over fifteen regional styles, and the Vesterheim museum in Iowa runs a rosemaling exhibition with gold medals.
+  start:
+  - Learn the basic strokes before anything else. Beginner classes practice C- and S-strokes, teardrops, scrolls and leaves on paper or board.
+  - Take a class. Vesterheim Folk Art School in Decorah, Iowa, teaches in person and online over Zoom, and North House Folk School in Grand Marais, Minnesota, has a three-hour introduction.
+  - Settle on one regional style to begin with. Telemark, Hallingdal and Rogaland are among the most popular, and one Minnesota teacher starts her beginners on Telemark.
+  links:
+  - label: 'Vesterheim Folk Art School: Fundamentals of Telemark Style Rosemaling (online, Zoom)'
+    url: https://store.vesterheim.org/collections/all/products/2027-01-21-fundamentals-of-telemark-style-rosemaling-online
+    region: any
+    checked: '2026-11-27'
+  - label: 'Vesterheim Folk Art School: study rosemaling (Decorah, Iowa)'
+    url: https://vesterheim.org/?p=6049
+    region: us
+    checked: '2026-11-27'
+  - label: 'North House Folk School: Introduction to Rosemaling (Grand Marais, Minnesota)'
+    url: https://northhouse.org/course-session/introduction-to-rosemaling-6-17-2027-1400
+    region: us
+    checked: '2026-11-27'
+  - label: 'Nordic Folklife, University of Wisconsin-Madison: rosemaling in the Upper Midwest'
+    url: https://folklife.wisc.edu/projects/revived-and-redesigned-rosemaling-in-the-upper-midwest/
+    region: us
+    checked: '2026-11-27'
+  seo_title: 'Rosemaling classes: learn Norwegian rose painting'
+  description: What rosemaling is, where it came from, and how to learn it, with in-person and online classes at Vesterheim and North House Folk School and their costs.
+  detail:
+  - h: Where it comes from
+    p:
+    - According to Nordic Folklife at the University of Wisconsin-Madison, rosemaling began in rural eastern Norway in the mid-1700s. It drew on Baroque and Rococo acanthus carving, and painters learned
+      through local guilds and painted churches on commission. Over the following century it shifted toward a mass-produced cottage industry.
+    - In America, Per Lysne sold rosemaling in Stoughton, Wisconsin, for extra income in the wake of the Great Depression, and he influenced painters such as Ethel Kvalheim and Vi Thode, among the first
+      rosemaling gold medalists. In 1967 Marion Nelson, director of Vesterheim in Decorah, Iowa, started an annual rosemaling exhibition, and Vesterheim ran workshops with Norwegian painters such as Nils
+      Ellingsgard and Sigmund Aarseth. Exhibitors earn points toward a gold medal.
+    - Styles are named for the regions they came from. Vesterheim describes Telemark work as having an asymmetrical flow.
+  - h: Ways to learn, compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - North House Folk School, Grand Marais, Minnesota
+        - 'Introduction to Rosemaling: one 3-hour session, basic technique and history, painting in oil on paper from the instructor''s patterns (June 2027 run)'
+        - $60 tuition plus a $17 materials fee (about £46 plus £13)
+      - - Vesterheim Folk Art School, online (Zoom)
+        - 'Fundamentals of Telemark Style Rosemaling: three 2.5-hour sessions, beginner friendly; a kit of paints, brushes and bristol boards included for US students (January 2027 run)'
+        - $180 listed (about £137); member and non-member tuition rates differ
+      - - Vesterheim Folk Art School, Decorah, Iowa
+        - 'Beginning Rosemaling Through Christmas Ornaments: two days, 9am to 5pm, simple C- and S-stroke designs on two wooden ornaments (September 2026 run)'
+        - Tuition not shown on the archived listing; see current classes
+      - - Teaching yourself
+        - One Minnesota rosemaler profiled by Nordic Folklife never took a class and learned the basics from a book
+        - A book, brushes and paint
+    after: Vesterheim's online classes need a computer or tablet with a camera and microphone. Students registering from outside the US must supply their own materials and should contact the school first.
+  faq:
+  - q: What is rosemaling?
+    a: A Norwegian decorative painting tradition of floral scrollwork built from C- and S-shaped brushstrokes, which began in rural eastern Norway in the mid-1700s.
+  - q: Can I learn rosemaling online?
+    a: Yes. Vesterheim Folk Art School teaches rosemaling classes on Zoom. Students outside the US can join but must provide their own supplies.
+  - q: What paint is used for rosemaling?
+    a: Both oils and acrylics. North House's introduction paints in oil on paper, while Lisa Severance, one of the Minnesota rosemalers Nordic Folklife profiles, paints freehand in acrylics.
+  - q: What are the styles of rosemaling?
+    a: There are well over fifteen, each named for a region of Norway. Telemark, Hallingdal and Rogaland are especially popular.
+  sources:
+  - label: Nordic Folklife (University of Wisconsin-Madison), Revived and Redesigned, Rosemaling in the Upper Midwest
+    url: https://folklife.wisc.edu/projects/revived-and-redesigned-rosemaling-in-the-upper-midwest/
+    checked: '2026-11-27'
+  - label: 'Nordic Folklife (University of Wisconsin-Madison), A Style of Their Own: Upper Midwestern Rosemalers'
+    url: https://folklife.wisc.edu/projects/a-style-of-their-own-upper-midwestern-rosemalers/
+    checked: '2026-11-27'
+  - label: Vesterheim, Fundamentals of Telemark Style Rosemaling (online)
+    url: https://store.vesterheim.org/collections/all/products/2027-01-21-fundamentals-of-telemark-style-rosemaling-online
+    checked: '2026-11-27'
+  - label: Vesterheim, Beginning Rosemaling Through Christmas Ornaments
+    url: https://store.vesterheim.org/products/2026-09-12-beginning-rosemaling-through-christmas-ornaments
+    checked: '2026-11-27'
+  - label: Vesterheim, Telemark-Style Rosemaling
+    url: https://store.vesterheim.org/products/2026-08-21-telemark-style-rosemaling
+    checked: '2026-11-27'
+  - label: Vesterheim Folk Art School, study rosemaling
+    url: https://vesterheim.org/?p=6049
+    checked: '2026-11-27'
+  - label: North House Folk School, Introduction to Rosemaling
+    url: https://northhouse.org/course-session/introduction-to-rosemaling-6-17-2027-1400
+    checked: '2026-11-27'
+  - label: Currency.me.uk, GBP to USD (1.3121, 27 November 2026)
+    url: https://www.currency.me.uk/convert/gbp/usd?amount=1
+    checked: '2026-11-27'
+  inspire:
+  - kind: read
+    person: Ed Rosencrantz, Rochester, Minnesota
+    line: Went looking for a painting class, found a community education rosemaling class instead, and went on to take several Vesterheim classes, painting mainly in the Rogaland style.
+    title: 'A Style of Their Own: Upper Midwestern Rosemalers'
+    outlet: Nordic Folklife, University of Wisconsin-Madison
+    url: https://folklife.wisc.edu/projects/a-style-of-their-own-upper-midwestern-rosemalers/
+    checked: '2026-11-27'
+  kit:
+  - name: Rosemaling book
+    why: patterns and stroke practice for a chosen style
+    url: https://www.amazon.co.uk/s?k=rosemaling+book
+  - name: Round and liner brushes
+    why: for C- and S-strokes, scrolls and fine linework
+    url: https://www.amazon.co.uk/s?k=round+liner+brush+set+folk+art
+  - name: Unfinished wooden plates
+    why: blank woodenware to paint once the strokes are steady
+    url: https://www.amazon.co.uk/s?k=unfinished+wooden+plate+craft
+  related:
+  - learn-china-painting
+  - learn-woodcarving
+  - learn-chinese-brush-painting
+  - sail-the-norwegian-coast-on-the-hurtigruten
+- id: paint-a-community-mural
+  title: Help paint a community mural
+  category: connect
+  kind: experience
+  effort: gentle
+  cost: free
+  time: afternoon
+  setting: outdoors
+  company: others
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: On a community paint day you help make a real mural. On some, the artist outlines and numbers each shape to match a paint, and volunteers fill it in. Since 1984, Philadelphia's Mural Arts has created
+    nearly 4,000 artworks, with artists making murals alongside members of the community.
+  start:
+  - Look out for paint days. Mural Arts Philadelphia lists free ones on its events page, and city arts offices such as Portland's run painting parties for street murals with no experience needed.
+  - Give your time to a street art festival. Upfest in Bristol takes volunteers over 18, for at least four hours, to prepare walls and help artists.
+  - Planning a mural for your own group? In the UK, Community RePaint passes on reused paint to community groups, and its ReColour paint costs from £1 (about $1.31) a liter.
+  links:
+  - label: 'Mural Arts Philadelphia: community paint day (May 2026, now past)'
+    url: https://muralarts.org/events/built-from-the-block-the-zachery-frazier-mural-project-paint-day/
+    region: us
+    checked: '2026-11-27'
+  - label: 'City of Philadelphia: Mural Arts Philadelphia'
+    url: https://www.phila.gov/departments/mural-arts-philadelphia/
+    region: us
+    checked: '2026-11-27'
+  - label: 'Portland Office of Arts & Culture: Color Our City asphalt art painting party (July 2026, now past)'
+    url: https://www.portland.gov/arts/news/2026/5/12/color-our-city-help-paint-asphalt-art-new-cultural-district-plaza
+    region: us
+    checked: '2026-11-27'
+  - label: 'Upfest, Bristol: volunteering'
+    url: https://www.upfest.co.uk/festival/upfest-2026/volunteering/
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Community RePaint: volunteers at a community scheme with murals (Handsworth)'
+    url: https://communityrepaint.org.uk/?p=7577
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Guildford Borough Council: Ukrainian residents paint the Friary Passage mural (2026)'
+    url: https://www.guildford.gov.uk/article/27771/Guildford-Borough-Council-and-Ukrainian-residents-bring-new-life-to-Friary-Passage
+    region: uk
+    checked: '2026-11-27'
+  seo_title: 'Volunteer to paint a mural: community paint days'
+  description: How a community mural paint day works, whether you need to paint well, and where to join one, from Mural Arts Philadelphia to Upfest in Bristol.
+  detail:
+  - h: How a paint day works
+    p:
+    - WHYY described a 2012 paint day for a Mural Arts mural in Germantown, Philadelphia. Residents gathered in a parking lot, with rolls of parachute cloth for the mural and tables of acrylic paint. Three
+      sections had guidelines drawn and numbered in white chalk, the matching paints sat under a table, and about ten community painters filled them in. The finished sections were later mounted on the wall
+      and sealed. Earlier community sessions had helped shape the design.
+    - Other projects work straight on the ground or the wall. Portland's 2026 asphalt mural, designed by Yinka Ilori, was painted by registered painters aged 5 and up, with no experience needed and all
+      paint and supplies provided. In Guildford, Ukrainian residents and two Ukrainian schools painted a Friary Passage mural alongside the street artist Roo, after workshops that shaped the design.
+  - h: Ways in, compared
+    table:
+      head:
+      - Where
+      - What you do
+      - Cost (as last listed)
+      rows:
+      - - Mural Arts Philadelphia
+        - Community paint days for new murals, open to community members, families and volunteers (May 2026 example)
+        - Free
+      - - Portland Office of Arts & Culture, Oregon
+        - 'Color Our City: a family painting party for a street mural; book a time slot; no experience needed; paint, water and snacks provided (July 2026)'
+        - Not stated on the page
+      - - Upfest, Bristol
+        - 'Volunteer roles at the street art festival: wall preparation (painting walls before artists arrive), artist liaison (mixing paint, holding ladders, sometimes painting); over 18, at least four
+          hours'
+        - Unpaid volunteering
+      - - Community RePaint, UK
+        - Reused paint for community groups, schools and community spaces planning their own project
+        - ReColour paint from £1 a liter (about $1.31)
+    after: Upfest's 2026 festival ran 15 to 31 May across Bedminster, with wall preparation from 2 May; volunteers apply by email through its volunteering page.
+  faq:
+  - q: Do I need to be good at painting to help with a mural?
+    a: No. Portland's painting party needed no experience, and on the Philadelphia paint day WHYY described, volunteers filled in shapes the artist had outlined and numbered.
+  - q: Is volunteering on a mural free?
+    a: Mural Arts Philadelphia's paint day listed here was free, and Portland supplied the paint and painting supplies for its painting party.
+  - q: Can I volunteer at a street art festival?
+    a: Yes. Upfest in Bristol takes volunteers over 18 for at least four hours, in roles from wall preparation to helping artists.
+  - q: Where can a community group get paint for a mural in the UK?
+    a: Community RePaint, a paint reuse network managed by Resource Futures and sponsored by Dulux, supplies reused paint, with its ReColour paint from £1 (about $1.31) a liter.
+  sources:
+  - label: City of Philadelphia, Mural Arts Philadelphia
+    url: https://www.phila.gov/departments/mural-arts-philadelphia/
+    checked: '2026-11-27'
+  - label: 'Mural Arts Philadelphia, Built From The Block: The Zachery Frazier Mural Project Paint Day'
+    url: https://muralarts.org/events/built-from-the-block-the-zachery-frazier-mural-project-paint-day/
+    checked: '2026-11-27'
+  - label: WHYY, 'A nice day to be out' working on Germantown's soon-to-be newest mural (2012)
+    url: https://whyy.org/articles/chelten-ave-community-painting-day/
+    checked: '2026-11-27'
+  - label: 'City of Portland, Color Our City: Help Paint Asphalt Art in the New Cultural District Plaza (2026)'
+    url: https://www.portland.gov/arts/news/2026/5/12/color-our-city-help-paint-asphalt-art-new-cultural-district-plaza
+    checked: '2026-11-27'
+  - label: Upfest, Upfest 2026 volunteering
+    url: https://www.upfest.co.uk/festival/upfest-2026/volunteering/
+    checked: '2026-11-27'
+  - label: Community RePaint, Paint volunteers help at our scheme in Handsworth
+    url: https://communityrepaint.org.uk/?p=7577
+    checked: '2026-11-27'
+  - label: Guildford Borough Council, Guildford Borough Council and Ukrainian residents bring new life to Friary Passage (2026)
+    url: https://www.guildford.gov.uk/article/27771/Guildford-Borough-Council-and-Ukrainian-residents-bring-new-life-to-Friary-Passage
+    checked: '2026-11-27'
+  - label: Currency.me.uk, GBP to USD (1.3121, 27 November 2026)
+    url: https://www.currency.me.uk/convert/gbp/usd?amount=1
+    checked: '2026-11-27'
+  inspire:
+  - kind: read
+    person: Chris Peragine, Roxborough, Philadelphia
+    line: Joined a community paint day in 2012 for a new Germantown mural, filling in numbered sections, and said the work was more enjoyable because it was collaborative.
+    title: '''A nice day to be out'' working on Germantown''s soon-to-be newest mural'
+    outlet: WHYY
+    url: https://whyy.org/articles/chelten-ave-community-painting-day/
+    checked: '2026-11-27'
+  kit:
+  - name: Painter's overalls
+    why: to keep paint off your clothes on the day
+    url: https://www.amazon.co.uk/s?k=painters+overalls
+  - name: Kneeling pad
+    why: for painting a street or ground mural
+    url: https://www.amazon.co.uk/s?k=kneeling+pad+garden
+  - name: Acrylic brush set
+    why: for practice at home or your own group's mural
+    url: https://www.amazon.co.uk/s?k=acrylic+paint+brush+set
+  related:
+  - paint-in-acrylics
+  - try-plein-air-painting
+  - volunteer-at-a-museum
+  - go-to-a-life-drawing-class
+- id: learn-ventriloquism
+  title: Learn ventriloquism
+  category: think
+  kind: skill
+  effort: gentle
+  cost: low
+  time: weeks
+  setting: indoors
+  company: either
+  regions:
+  - uk
+  - us
+  collection: arts
+  why: Ventriloquism has seven hard letters. You keep a slight smile with your lips parted and swap in sounds you can make without moving them, such as T for P and D for B. Scout Life's guide suggests 15
+    to 20 minutes of practice a day, and says the swaps should feel automatic after about a week. After that comes the fun part, giving a puppet a voice and a character of its own.
+  start:
+  - Practice in front of a mirror. Read the 19 easy letters aloud without moving your lips, then work on the hard ones.
+  - Choose a puppet and find it a relaxed voice, higher or lower than your own.
+  - 'Learn with other people: a beginners'' workshop, the British Puppet Guild in the UK, or the Vent Haven ConVENTion in Kentucky, whose 2024 schedule included a first-timers'' orientation and a "Vent
+    101" lecture.'
+  links:
+  - label: 'Scout Life: Learn How To Be a Ventriloquist'
+    url: https://scoutlife.org/hobbies-projects/funstuff/28635/learn-how-to-be-a-ventriloquist/
+    region: any
+    checked: '2026-11-27'
+  - label: 'British Puppet and Model Theatre Guild: membership'
+    url: https://britishpuppetguild.com/membership
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Little Angel Theatre, London: Hands On: Two-in-One puppetry workshop (past session)'
+    url: https://www.littleangeltheatre.com/whats-on/hands-on-two-in-one/
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Lachlan Werner: Ventriloquism & Puppets for Beginners, online workshop (July 2026, now past)'
+    url: https://outsavvy.com/event/37334/ventriloquism-puppets-for-beginners-online-workshop-with-lachlan-werner
+    region: any
+    checked: '2026-11-27'
+  - label: 'Vent Haven ConVENTion: frequently asked questions (Kentucky)'
+    url: https://vhconvention.com/faq
+    region: us
+    checked: '2026-11-27'
+  - label: 'Vent Haven Museum: visiting and tours (Fort Mitchell, Kentucky)'
+    url: https://www.venthaven.org/frequently-asked-questions
+    region: us
+    checked: '2026-11-27'
+  seo_title: 'How to learn ventriloquism: the hard letters and classes'
+  description: How ventriloquists talk without moving their lips, the seven hard letters and their swaps, and where to learn, from workshops to the Vent Haven ConVENTion.
+  detail:
+  - h: The seven hard letters
+    p:
+    - Scout Life's guide starts at the mirror. Sit with a slight smile, lips parted and teeth lightly touching, and adjust until your tongue does not show. Read the 19 easy letters until you can breathe
+      easily and say them without moving your lips. If your voice sounds muffled, try projecting it from higher in your head.
+    - The seven hard letters are B, F, M, P, V, W and Y. You swap each for a sound you can make with still lips while thinking of the real letter.
+    list:
+    - B becomes D, with the tongue held against the roof of the mouth a little longer.
+    - F becomes the "eth" sound.
+    - M becomes N, vibrating against the roof of the mouth.
+    - P becomes T, held briefly and released with a small puff of air.
+    - V becomes "thee".
+    - W and Y come from sliding "O" and "I" together quickly.
+    after: A beginners' online workshop by the ventriloquist Lachlan Werner in 2026 covered voice warm-ups, the ventriloquist alphabet, basic puppetry, building a character, character separation and simple
+      voice throwing.
+  - h: Ways in, compared
+    table:
+      head:
+      - Where
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - Scout Life (Boy Scouts of America), online
+        - A step-by-step guide to lip position, the easy letters and the seven substitutions
+        - Free
+      - - British Puppet and Model Theatre Guild, UK
+        - 'Membership for all skill levels: online and in-person events, a newsletter every two months and The Puppet Master magazine each year'
+        - £25 a year (about $33); £23 (about $30) for members reaching retirement age with more than five years' membership
+      - - Vent Haven ConVENTion, Erlanger, Kentucky
+        - Four days in July (15 to 18 July in 2026) of shows, lectures, workshops, open mics and, on the 2024 schedule, round-table coaching for professional, part-time and hobbyist ventriloquists; first-timers
+          welcome; preregistration only
+        - '2026: $185 (about £141) for the first family member and $135 (about £103) each extra if booked by 1 May, then $250 (about £191) and $175 (about £133)'
+      - - Vent Haven Museum, Fort Mitchell, Kentucky
+        - The ventriloquism museum; guided tours of 60 to 90 minutes, by appointment, May to September
+        - $15 (about £11)
+    after: In London, Little Angel Theatre has run an adults' workshop in two-in-one puppetry, which it calls ventriloquism without the need to hide your vocalization.
+  faq:
+  - q: Can anyone learn ventriloquism?
+    a: Scout Life's beginners' guide breaks it into a lip position, 19 easy letters and seven substitutions you can learn in front of a mirror.
+  - q: How long does it take to learn ventriloquism?
+    a: Scout Life suggests 15 to 20 minutes of practice a day and says the letter swaps should feel automatic after about a week. Building a character and a routine takes longer.
+  - q: Is there a ventriloquist convention?
+    a: Yes. The Vent Haven ConVENTion meets in July near Cincinnati, in Erlanger, Kentucky. First-timers are welcome, and you must preregister because day passes are not guaranteed.
+  - q: Can I visit the ventriloquism museum?
+    a: Vent Haven Museum in Fort Mitchell, Kentucky, gives guided tours by appointment from May to September, at $15 (about £11) a person as last listed.
+  sources:
+  - label: Scout Life, Learn How To Be a Ventriloquist
+    url: https://scoutlife.org/hobbies-projects/funstuff/28635/learn-how-to-be-a-ventriloquist/
+    checked: '2026-11-27'
+  - label: Vent Haven ConVENTion, FAQ
+    url: https://vhconvention.com/faq
+    checked: '2026-11-27'
+  - label: Vent Haven ConVENTion, 2026 registration
+    url: https://vhconvention.com/vhc2026-registration/
+    checked: '2026-11-27'
+  - label: Vent Haven ConVENTion, schedule
+    url: https://vhconvention.com/2024-convention-schedule
+    checked: '2026-11-27'
+  - label: Vent Haven Museum, frequently asked questions
+    url: https://www.venthaven.org/frequently-asked-questions
+    checked: '2026-11-27'
+  - label: British Puppet and Model Theatre Guild, membership
+    url: https://britishpuppetguild.com/membership
+    checked: '2026-11-27'
+  - label: Little Angel Theatre, Hands On, Two-in-One
+    url: https://www.littleangeltheatre.com/whats-on/hands-on-two-in-one/
+    checked: '2026-11-27'
+  - label: OutSavvy, Ventriloquism & Puppets For Beginners (online workshop with Lachlan Werner)
+    url: https://outsavvy.com/event/37334/ventriloquism-puppets-for-beginners-online-workshop-with-lachlan-werner
+    checked: '2026-11-27'
+  - label: Currency.me.uk, GBP to USD (1.3121, 27 November 2026)
+    url: https://www.currency.me.uk/convert/gbp/usd?amount=1
+    checked: '2026-11-27'
+  kit:
+  - name: Ventriloquist puppet
+    why: a figure with a moving mouth to practice with
+    url: https://www.amazon.co.uk/s?k=ventriloquist+puppet
+  - name: Ventriloquism course book
+    why: lessons and exercises to work through at your own pace
+    url: https://www.amazon.co.uk/s?k=ventriloquism+course+book
+  - name: Table mirror
+    why: to check your lips stay still while you practice
+    url: https://www.amazon.co.uk/s?k=table+mirror+desk
+  related:
+  - learn-puppetry
+  - learn-magic-tricks
+  - try-stand-up-comedy
+  - try-improv-comedy
+- id: learn-swedish
+  title: Learn Swedish
+  category: think
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  why: Swedish has a pitch accent that many English speakers hear as a singsong rhythm, and only two genders in the standard language. It is closely related to Norwegian and Danish, and evening classes
+    in London, New York and Minneapolis take beginners from their first words a term at a time.
+  start:
+  - 'Book a beginners'' module: City Lit or the University of Westminster in London, or Scandinavia House in New York or the American Swedish Institute in Minneapolis, most of them online as well as in
+    person.'
+  - Buy the course book the class names; Westminster, Scandinavia House and the American Swedish Institute use Rivstart A1+A2, and Westminster says to wait until the first session.
+  - Move up a module a term at a time. City Lit, Westminster and the American Swedish Institute all split beginners' Swedish into three steps.
+  links:
+  - label: 'City Lit: Swedish courses for beginners (London and online)'
+    url: https://www.citylit.ac.uk/courses/languages/european/swedish/beginners
+    region: uk
+    checked: '2026-11-27'
+  - label: 'University of Westminster: Swedish Beginners short course (London and online)'
+    url: https://www.westminster.ac.uk/zone29/languages-short-courses/swedish/swedish-beginners
+    region: uk
+    checked: '2026-11-27'
+  - label: 'American Swedish Institute: language learning (Minneapolis and online)'
+    url: https://asimn.org/experience/programs/language-learning/
+    region: us
+    checked: '2026-11-27'
+  - label: 'Scandinavia House: Swedish 1.1 for absolute beginners (New York and Zoom)'
+    url: https://www.scandinaviahouse.org/sh/language-courses/swedish-1-1-fall-2026-enrollment-open/
+    region: us
+    checked: '2026-11-27'
+  seo_title: 'Learn Swedish as a beginner: classes in the UK and US'
+  description: Where to learn Swedish from scratch, from City Lit and Westminster in London to Scandinavia House in New York and the American Swedish Institute.
+  detail:
+  - h: What learning Swedish is like
+    p:
+    - Britannica describes Swedish as the official language of Sweden and, with Finnish, one of Finland's two national languages, spoken by about eight million Swedes in the early 21st century. It is closely
+      related to Norwegian and Danish. Standard Swedish has only two genders, neuter and common, and the word for "the" is attached to the end of the noun. The part that takes practice is the tone, or pitch
+      accent.
+    - Beginners' courses build up in steps. At the University of Westminster, Part Two assumes Part One or about 20 hours of study, and Part Three about 40 hours. The Swedish Institute's Learning Swedish
+      online course, a joint project with universities, closed at the end of December 2022 and will not open again.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Beginners' modules 1 to 3, evening, in person at Keeley Street or online; an intensive online module 1/2; a weekend short introduction
+        - Each module £259 (about $340), £168 (about $220) concession; intensive £269 (about $353); short introduction £99 (about $130)
+      - - University of Westminster, London
+        - Beginners in three parts; 12 weeks a part online or 10 weeks on campus; evening classes; Rivstart A1+A2
+        - £315 (about $413) a part online, £380 (about $499) on campus
+      - - Scandinavia House, New York
+        - Swedish 1.1 for absolute beginners, Wednesday evenings, in person or on Zoom, 20 hours in all; books extra
+        - $675 (about £514), $607.50 (about £463) for American-Scandinavian Foundation members
+      - - American Swedish Institute, Minneapolis
+        - New Beginning I, Beginning II and III; 90-minute classes once a week for 12 weeks; most on Zoom, some in person
+        - $240 (about £183), $220 (about £168) for members, for one fall 2026 class
+    after: Classes fill. Scandinavia House's fall 2026 Swedish 1.1 and one of the American Swedish Institute's New Beginning I classes were listed as sold out, the latter with a waitlist, so check the next
+      term early.
+  faq:
+  - q: Is Swedish hard to learn for English speakers?
+    a: Parts of it are friendly. Standard Swedish has only two genders, neuter and common, according to Britannica; the tone or pitch accent, which English speakers often hear as a singsong rhythm, takes
+      practice.
+  - q: Where can I take Swedish classes in the US?
+    a: Scandinavia House in New York and the American Swedish Institute in Minneapolis both run beginners' classes, with Zoom options, so you can join from elsewhere.
+  - q: How much is a Swedish evening class in London?
+    a: As last listed, City Lit charged £259 (about $340) for a beginners' module, or £168 (about $220) concession, and the University of Westminster £315 (about $413) a part online.
+  - q: Is the Swedish Institute's Learning Swedish course still online?
+    a: No. The Swedish Institute says its Learning Swedish online course closed at the end of December 2022 and will not open again.
+  sources:
+  - label: City Lit, Swedish courses, beginners
+    url: https://www.citylit.ac.uk/courses/languages/european/swedish/beginners
+    checked: '2026-11-27'
+  - label: University of Westminster, Swedish Beginners
+    url: https://www.westminster.ac.uk/zone29/languages-short-courses/swedish/swedish-beginners
+    checked: '2026-11-27'
+  - label: American Swedish Institute, Language learning
+    url: https://asimn.org/experience/programs/language-learning/
+    checked: '2026-11-27'
+  - label: American Swedish Institute, New Beginning I Swedish (Thursdays, fall 2026)
+    url: https://asimn.org/events-calendar/thurs-new-beginning-i-swedish-willson-broyles/
+    checked: '2026-11-27'
+  - label: Scandinavia House, Swedish 1.1
+    url: https://www.scandinaviahouse.org/sh/language-courses/swedish-1-1-fall-2026-enrollment-open/
+    checked: '2026-11-27'
+  - label: Britannica, Swedish language
+    url: https://britannica.com/topic/Swedish-language
+    checked: '2026-11-27'
+  - label: Swedish Institute, Learning Swedish
+    url: https://si.se/?p=39825
+    checked: '2026-11-27'
+  kit:
+  - name: Rivstart A1+A2 textbook
+    why: the course book several of these classes ask you to buy
+    url: https://www.amazon.co.uk/s?k=rivstart+a1+a2
+  - name: Swedish-English dictionary
+    why: for looking up words between classes
+    url: https://www.amazon.co.uk/s?k=swedish+english+dictionary
+  - name: Swedish grammar book
+    why: a reference for word order and verb forms at home
+    url: https://www.amazon.co.uk/s?k=essentials+of+swedish+grammar
+  related:
+  - learn-dutch
+  - learn-german
+  - see-the-northern-lights
+  - join-a-language-exchange
+- id: learn-turkish
+  title: Learn Turkish
+  category: think
+  kind: skill
+  effort: moderate
+  cost: low
+  time: months
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  why: Turkish builds words like a train, adding suffix after suffix to a stem, and the vowels in those suffixes change to match the word, a pattern called vowel harmony. It has used the Latin alphabet
+    since 1928, so the letters look familiar from the first lesson.
+  start:
+  - Try a short course first, such as City Lit's two-session holiday kit in London or Howard Community College's five-evening Turkish for Travelers in Maryland.
+  - 'Then book a beginners'' course that runs a term: SOAS in London (online), the University of Edinburgh, or Howard Community College''s online Foundational Turkish I.'
+  - Buy the course book the class names; Edinburgh's beginners use Istanbul Turkish for Foreigners A1.
+  links:
+  - label: 'City Lit: Turkish courses (London and online)'
+    url: https://citylit.ac.uk/courses/languages/african-and-middle-east/turkish
+    region: uk
+    checked: '2026-11-27'
+  - label: 'SOAS Language Centre: Turkish Beginners Course (online)'
+    url: https://soas.ac.uk/study/find-course/turkish-beginners-course
+    region: uk
+    checked: '2026-11-27'
+  - label: 'University of Edinburgh short courses: Turkish Beginners Step 1'
+    url: https://shortcourses.ed.ac.uk/course/turkish-beginners-step-1
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Howard Community College (Maryland): Turkish language courses'
+    url: https://howardcc.edu/programs-courses/continuing-education/courses/world-languages/turkish-language-courses/
+    region: us
+    checked: '2026-11-27'
+  seo_title: 'Learn Turkish as a beginner: classes in the UK and US'
+  description: How to start learning Turkish, with its suffixes and vowel harmony, from a London holiday kit to term-long beginners' courses in the UK and US.
+  detail:
+  - h: What learning Turkish is like
+    p:
+    - Britannica says Turkish is spoken in Turkey, Cyprus and elsewhere in Europe and the Middle East. It was written in Arabic script until the Turkish republic replaced it with the Latin alphabet in 1928.
+      Its word forms follow sound harmony, and the most salient part is vowel harmony, where the vowels of a suffix change to match the stem, and it tends to pile many suffixes onto one stem to carry grammar
+      that English does with separate words.
+    - So the early lessons are about patterns more than vocabulary lists. Edinburgh's Step 1 is taught in Turkish from the start and is the first of three steps to the end of beginners' level. SOAS runs
+      Beginners 1, 2 and 3, each a 10-week term of 15 hours of live online lessons plus at least 5 hours of guided study.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - 'Turkish beginners: holiday kit, two Saturday sessions at Keeley Street'
+        - £119 (about $156) (May 2026 listing)
+      - - SOAS Language Centre, London
+        - Beginners 1 to 3, online and blended, 10 weeks a term, 20 hours including guided study; materials from the teacher
+        - Not on the course page; see SOAS's fees page
+      - - University of Edinburgh short courses
+        - Turkish Beginners Step 1, evening, on campus at Holyrood; course book extra
+        - £175 (about $230) (autumn 2025 listing)
+      - - Howard Community College, Columbia, Maryland
+        - Turkish for Travelers I, five Thursday evenings in person; or Foundational Turkish I, online over a semester
+        - $125 (about £95) for Travelers I; $350 (about £267) for Foundational Turkish I, fees included
+    after: SOAS says each term's courses are subject to a minimum number of students, and City Lit says it offers financial support to make courses affordable; ask before you book.
+  faq:
+  - q: Is Turkish written in the same alphabet as English?
+    a: Mostly. Turkish has used a Latin alphabet since 1928, when it replaced the Arabic script, according to Britannica.
+  - q: What is vowel harmony in Turkish?
+    a: The vowels in a word generally belong to the same class, and the vowels of suffixes change to match the stem. Britannica calls it the most salient feature of the sound harmony in Turkish word forms.
+  - q: Can I learn Turkish online with a teacher?
+    a: Yes. SOAS runs live online beginners' courses from London, and Howard Community College in Maryland runs its Foundational Turkish courses online.
+  - q: Is there a quick Turkish course before a holiday?
+    a: City Lit's holiday kit is two Saturday sessions in central London, and Howard Community College's Turkish for Travelers I is five evenings and needs no prior Turkish.
+  sources:
+  - label: City Lit, Turkish courses
+    url: https://citylit.ac.uk/courses/languages/african-and-middle-east/turkish
+    checked: '2026-11-27'
+  - label: 'City Lit, Turkish beginners: holiday kit'
+    url: https://www.citylit.ac.uk/courses/turkish-beginners-holiday-kit
+    checked: '2026-11-27'
+  - label: SOAS, Turkish Beginners Course
+    url: https://soas.ac.uk/study/find-course/turkish-beginners-course
+    checked: '2026-11-27'
+  - label: University of Edinburgh, Turkish Beginners Step 1
+    url: https://shortcourses.ed.ac.uk/course/turkish-beginners-step-1
+    checked: '2026-11-27'
+  - label: Howard Community College, Continuing Education Turkish Language Courses
+    url: https://howardcc.edu/programs-courses/continuing-education/courses/world-languages/turkish-language-courses/
+    checked: '2026-11-27'
+  - label: Britannica, Turkish language
+    url: https://www.britannica.com/topic/Turkish-language?BoraBora=1
+    checked: '2026-11-27'
+  kit:
+  - name: Istanbul Turkish for Foreigners A1
+    why: the course book and workbook Edinburgh's beginners are asked to buy
+    url: https://www.amazon.co.uk/s?k=istanbul+turkish+for+foreigners+a1
+  - name: Turkish-English dictionary
+    why: for looking up words and their suffixes between classes
+    url: https://www.amazon.co.uk/s?k=turkish+english+dictionary
+  - name: Turkish grammar book
+    why: a reference for suffixes and vowel harmony at home
+    url: https://www.amazon.co.uk/s?k=turkish+grammar+book
+  related:
+  - learn-arabic
+  - learn-modern-greek
+  - learn-italian-before-a-trip
+  - learn-a-language-to-b1
+- id: learn-hindi
+  title: Learn Hindi
+  category: think
+  kind: skill
+  effort: demanding
+  cost: low
+  time: months
+  setting: either
+  company: either
+  regions:
+  - uk
+  - us
+  why: Hindi is the official language of the Indian Union and is spoken or understood by more than 30 percent of India's population. It is written in Devanagari and shares a common form, Hindustani, with
+    Urdu, and beginners' classes start on the script in the first term.
+  start:
+  - 'Book a beginners'' course that includes the script: City Lit or Imperial College evening classes in London, or Howard Community College''s online Fundamental Hindi I in the US.'
+  - Learn the Devanagari letters alongside the speaking from week one; Imperial's beginners aim to recognize and write some of the script by the end of term.
+  - Keep going a module at a time, or try the University of Denver's Hindi for You!, which pairs a small group with a native-speaking language partner.
+  links:
+  - label: 'City Lit: Hindi beginners module 1 (London)'
+    url: https://www.citylit.ac.uk/courses/hindi-beginners-module-1
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Imperial College London evening classes: Hindi 1 (Beginners) Part 1 (online)'
+    url: https://imperial.ac.uk/evening-classes/winter-courses-list/hindi/hindi-1-beginners-part-1
+    region: uk
+    checked: '2026-11-27'
+  - label: 'Howard Community College (Maryland): Hindi language courses (online)'
+    url: https://www.howardcc.edu/programs-courses/continuing-education/courses/world-languages/hindi-language-courses/
+    region: us
+    checked: '2026-11-27'
+  - label: 'University of Denver: Hindi for You! (noncredit, Denver)'
+    url: https://www.du.edu/continuing-education/course/hindi-you
+    region: us
+    checked: '2026-11-27'
+  seo_title: 'Learn Hindi as a beginner: script, classes, online'
+  description: How to start learning Hindi and its Devanagari script, with evening classes in London and online, and noncredit courses in Maryland and Denver compared.
+  detail:
+  - h: What learning Hindi is like
+    p:
+    - The University of Illinois' Department of Linguistics says the Indian Constitution provides for Hindi in the Devanagari script as the official language of the Union, and that the 2001 Census of India
+      counted 422,048,642 speakers, including related dialects. Hindi and Urdu share roots in the Khariboli speech of the Delhi area and a common form known as Hindustani; Urdu is written in Perso-Arabic
+      script.
+    - Two things are new for English speakers. Hindi is verb-final, so the verb comes at the end of the sentence, and it has two genders, masculine and feminine, where the gender of inanimate objects is
+      not predictable from their form or meaning. City Lit's first module covers introductions, family, jobs, where you live, numbers 1 to 10 and an introduction to the alphabet.
+  - h: Ways in compared
+    table:
+      head:
+      - Provider
+      - Format
+      - Cost (as last listed)
+      rows:
+      - - City Lit, London
+        - Hindi beginners module 1, 10 Thursday evenings of 90 minutes at Keeley Street
+        - £259 (about $340), £168 (about $220) concession
+      - - Imperial College London evening classes
+        - Hindi 1 (Beginners) Part 1, 10 weeks of 90-minute classes, live online; no experience needed
+        - £255 (about $335), or £229 (about $300) early bird (autumn 2024 listing)
+      - - Howard Community College, Columbia, Maryland
+        - Fundamental Hindi I, noncredit, flex online over a semester
+        - $350 (about £267), fees included
+      - - University of Denver
+        - Hindi for You!, in person; groups of 1 to 5 with a native Hindi-speaking language partner, one group and one one-to-one session a week
+        - $440 (about £335), no refunds
+    after: Denver's course is for self-directed learners and expects a regular independent study schedule on top of the two weekly sessions.
+  faq:
+  - q: What alphabet is Hindi written in?
+    a: Devanagari. The Indian Constitution provides for Hindi in the Devanagari script as the official language of the Union, according to the University of Illinois.
+  - q: Are Hindi and Urdu the same language?
+    a: They share roots in the Khariboli speech of the Delhi area and a common form called Hindustani, but Hindi is written in Devanagari and Urdu in Perso-Arabic script.
+  - q: Does Hindi have genders?
+    a: Yes, two, masculine and feminine, and the University of Illinois notes that the gender of inanimate objects is not predictable from their form or meaning.
+  - q: Can I learn Hindi online with a teacher?
+    a: Yes. Imperial College London's evening beginners' class is taught live online, and Howard Community College in Maryland runs Fundamental Hindi I online.
+  sources:
+  - label: 'City Lit, Hindi beginners: module 1'
+    url: https://www.citylit.ac.uk/courses/hindi-beginners-module-1
+    checked: '2026-11-27'
+  - label: Imperial College London, Hindi 1 (Beginners) Part 1
+    url: https://imperial.ac.uk/evening-classes/winter-courses-list/hindi/hindi-1-beginners-part-1
+    checked: '2026-11-27'
+  - label: Howard Community College, Continuing Education Hindi Language Courses
+    url: https://www.howardcc.edu/programs-courses/continuing-education/courses/world-languages/hindi-language-courses/
+    checked: '2026-11-27'
+  - label: University of Denver, Hindi for You!
+    url: https://www.du.edu/continuing-education/course/hindi-you
+    checked: '2026-11-27'
+  - label: University of Illinois Department of Linguistics, About Hindi
+    url: https://linguistics.illinois.edu/hindi/about-hindi
+    checked: '2026-11-27'
+  - label: Britannica, Hindi language (summary)
+    url: https://www.britannica.com/summary/Hindi-language
+    checked: '2026-11-27'
+  kit:
+  - name: Devanagari writing practice book
+    why: for practicing the Hindi letters by hand
+    url: https://www.amazon.co.uk/s?k=hindi+devanagari+writing+practice+book
+  - name: Hindi-English dictionary
+    why: for looking up words between classes
+    url: https://www.amazon.co.uk/s?k=hindi+english+dictionary
+  - name: Hindi grammar book for beginners
+    why: a reference for verb endings and gender at home
+    url: https://www.amazon.co.uk/s?k=hindi+grammar+for+beginners
+  related:
+  - see-the-taj-mahal-at-sunrise
+  - learn-bollywood-dance
+  - take-an-indian-cookery-class
+  - learn-the-tabla
+- id: volunteer-on-a-sea-turtle-patrol
+  title: Volunteer on a sea turtle nest patrol
+  category: connect
+  kind: project
+  effort: moderate
+  cost: free
+  time: months
+  setting: outdoors
+  company: others
+  season: May to October
+  regions:
+  - us
+  - world
+  why: At dawn in nesting season, volunteers walk or drive the beach looking for the tracks a sea turtle left overnight, then find, mark and protect the nest. South Carolina alone has more than 30 nest
+    protection projects with over 1,100 participants, some run entirely by volunteers.
+  start:
+  - Find a project on the beach you can reach. South Carolina's Department of Natural Resources (SCDNR) supports projects along its coast; in Texas, the Sea Aggie Sea Turtle Patrol and Padre Island National
+    Seashore take volunteers.
+  - Contact the project coordinator before the season; Kiawah Island's patrol asks for your preferred patrol, your dates and your T-shirt size by email, and says it runs close to capacity.
+  - Expect training first. In South Carolina, volunteers who handle nests need a state permit renewed each year and are trained by SCDNR staff.
+  links:
+  - label: 'South Carolina DNR: sea turtle volunteer program'
+    url: https://www.dnr.sc.gov/seaturtle/volprog.htm
+    region: us
+    checked: '2026-11-27'
+  - label: 'Kiawah Island Turtle Patrol, South Carolina: how to volunteer'
+    url: https://builder1.revize.com/revize/kiawahislandsc/wildlife/volunteer/kiawah_island_turtle_patrol.php
+    region: us
+    checked: '2026-11-27'
+  - label: 'Texas A&M University at Galveston: Sea Aggie Sea Turtle Patrol'
+    url: https://www.tamug.edu/seaturtlepatrol/
+    region: us
+    checked: '2026-11-27'
+  - label: 'Padre Island National Seashore (Texas): volunteers and community support'
+    url: https://home.nps.gov/pais/learn/nature/community_support.htm
+    region: us
+    checked: '2026-11-27'
+  - label: 'ARCHELON, Greece: become a volunteer'
+    url: https://archelon.gr/en/volunteer
+    region: world
+    checked: '2026-11-27'
+  seo_title: 'Sea turtle nest patrol volunteering: how to join'
+  description: How sea turtle nest patrols work in South Carolina and Texas, what volunteers do at dawn, the training and time asked, and ARCHELON in Greece.
+  detail:
+  - h: What a patrol morning is like
+    p:
+    - SCDNR says volunteers survey the beach each morning at dawn for loggerhead tracks, on foot, by ATV or by truck. When they find a nest in a risky spot, they locate the egg chamber with a probe stick,
+      dig a new one somewhere safer and move the eggs. Later they put up cages or screens, watch for predators and, after the hatchlings emerge, count hatched eggs to work out the nest's success.
+    - On Kiawah Island, the nesting patrol checks the beach by truck at sunrise from May 1, and the hatching patrol walks one of seven zones each morning. The Charleston City Paper reported more than 300
+      volunteers there, and 437 nests in 2023. In Texas, the Sea Aggie patrol surveys six days a week from April 1 to July 15, from Rollover Pass to Surfside, and takes eggs it finds to Padre Island National
+      Seashore.
+  - h: Ways in compared
+    table:
+      head:
+      - Project
+      - Season and work
+      - Commitment (as last listed)
+      rows:
+      - - Kiawah Island Turtle Patrol, South Carolina
+        - May 1 to October 31; nesting patrol by truck, hatching patrol on foot in zones
+        - Nesting, one 4-day shift; hatching, two 1-week shifts for residents or one for visitors
+      - - Sea Aggie Sea Turtle Patrol, Galveston area, Texas
+        - April 1 to July 15; walking and UTV patrols for nesting and stranded turtles
+        - Students and community volunteers; patrol calendars on its volunteer resource page
+      - - Padre Island National Seashore, Texas
+        - Nest and nesting-turtle patrols since 1986, plus radio communications, data logging, egg care and hatchling release
+        - Over 100 volunteers a year; contact the park
+      - - ARCHELON, Greece (for example Zakynthos)
+        - Early May to mid-October; morning and night surveys, nest protection, public awareness
+        - At least 4 weeks for field projects; 18 or over; participation fee by dates; bring camping gear
+    after: ARCHELON's fee covers accommodation, training and administration, and it also allows shorter two- or three-week stays in May, June or September for volunteers aged 50 and over; check its fee
+      table and the conditions before you apply.
+  faq:
+  - q: How do I become a sea turtle volunteer?
+    a: Contact a nest protection project on a nesting beach before the season starts. In South Carolina, SCDNR trains volunteers, and those handling nests need an annual state permit.
+  - q: What time do sea turtle patrols start?
+    a: At dawn. SCDNR says volunteers survey each morning at dawn, and Kiawah's nesting patrol starts at sunrise.
+  - q: Can visitors volunteer on a turtle patrol?
+    a: Sometimes. Kiawah Island's hatching patrol asks non-residents and visitors for one 1-week shift, and if you cannot do early mornings you can ask about shadowing a patrol instead.
+  - q: Can I volunteer with sea turtles from the UK?
+    a: Yes, abroad. ARCHELON in Greece takes volunteers 18 and over for at least four weeks on its nesting beach projects, with a participation fee that covers accommodation and training.
+  sources:
+  - label: South Carolina Department of Natural Resources, Volunteer program
+    url: https://www.dnr.sc.gov/seaturtle/volprog.htm
+    checked: '2026-11-27'
+  - label: South Carolina Department of Natural Resources, Marine Turtle Conservation Program
+    url: https://www.dnr.sc.gov/seaturtle/program.htm
+    checked: '2026-11-27'
+  - label: Kiawah Island Turtle Patrol
+    url: https://builder1.revize.com/revize/kiawahislandsc/wildlife/volunteer/kiawah_island_turtle_patrol.php
+    checked: '2026-11-27'
+  - label: Charleston City Paper, The steadfast stewardship of Kiawah Island's sea turtle volunteers
+    url: https://charlestoncitypaper.com/2024/07/12/beach-patrol-the-steadfast-stewardship-of-kiawah-islands-sea-turtle-volunteers/
+    checked: '2026-11-27'
+  - label: Texas A&M University at Galveston, Sea Aggie Sea Turtle Patrol
+    url: https://www.tamug.edu/seaturtlepatrol/
+    checked: '2026-11-27'
+  - label: National Park Service, Padre Island National Seashore, Community support
+    url: https://home.nps.gov/pais/learn/nature/community_support.htm
+    checked: '2026-11-27'
+  - label: ARCHELON, Become a volunteer
+    url: https://archelon.gr/en/volunteer
+    checked: '2026-11-27'
+  - label: ARCHELON, Zakynthos, Laganas Bay project
+    url: https://www.archelon.gr/en/volunteer/project-areas/zakynthos-laganas-bay
+    checked: '2026-11-27'
+  inspire:
+  - kind: read
+    person: Bill Thomae, Kiawah Island, South Carolina
+    line: Drove the Kiawah Island Turtle Patrol truck down the beach and moved the surviving eggs from a nest coyotes had disturbed, in his and his wife Beth's 24th year of volunteering.
+    title: The steadfast stewardship of Kiawah Island's sea turtle volunteers
+    outlet: Charleston City Paper
+    url: https://charlestoncitypaper.com/2024/07/12/beach-patrol-the-steadfast-stewardship-of-kiawah-islands-sea-turtle-volunteers/
+    checked: '2026-11-27'
+  kit:
+  - name: Wide-brim sun hat
+    why: for long mornings on an open beach
+    url: https://www.amazon.co.uk/s?k=wide+brim+sun+hat
+  - name: Insulated water bottle
+    why: for drinking water on patrol
+    url: https://www.amazon.co.uk/s?k=insulated+water+bottle
+  - name: Sunscreen
+    why: for mornings on an open beach in summer
+    url: https://www.amazon.co.uk/s?k=sunscreen+spf+50
+  related:
+  - join-a-turtle-walk-on-jekyll-island
+  - volunteer-at-a-wildlife-hospital
+  - volunteer-us-national-park
+  - wildlife-trust-volunteer
