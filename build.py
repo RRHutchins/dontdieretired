@@ -1028,7 +1028,8 @@ def build(make_social=True):
             for sec in c.get("detail") or []:
                 ps = sec.get("p") or []
                 sec["p_html"] = [lk.plain(x) for x in ([ps] if isinstance(ps, str) else ps)]
-                if sec.get("after"): sec["after_html"] = lk.plain(sec["after"])
+                _after = sec.get("after") or (sec.get("table") or {}).get("after")  # a note inside `table:` shows too (28 Nov 2026: 43 dated price notes were hidden)
+                if _after: sec["after_html"] = lk.plain(_after)
             mk = _ch_kw.get(c["id"], set())
             shown = {c.get("story"), c.get("guide")}
             rn = sorted((a for a in arts if a["slug"] not in shown), key=lambda a: (-(3 * len(mk & _art_kw[a["slug"]]) + (a["category"] == c["category"])), -a["date"].toordinal()))
