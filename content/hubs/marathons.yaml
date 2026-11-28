@@ -2142,6 +2142,209 @@ events:
   more:
   - {label: 'Wellington Marathon: Home', url: 'https://www.wellingtonmarathon.co.nz/', checked: '2026-11-27'}
   - {label: 'Wellington Marathon: Options', url: 'https://www.wellingtonmarathon.co.nz/options', checked: '2026-11-27'}
+- id: malta-marathon
+  name: LifeStar Malta Marathon
+  series: independent
+  place: Malta, from Mdina through countryside, towns and past the creeks to the finish at The Ferries, Sliema
+  country: Malta
+  continent: europe
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, the Endo Walkathon (21.1 km, 13.1 miles), a charity 5K and a kids' race
+  terrain: [road]
+  format: single
+  month: [2]
+  entry: [open]
+  entry_note: Applications opened on 15 April 2026 and close on 15 January 2027, or earlier if no more applications can be accepted; places go on a first come, first served basis. Runners must be at least 18 on race day.
+  note: The 2027 race is on Sunday 28 February 2027, starting in Mdina at 6:45am. The organizers give the marathon 211 m (about 690 feet) of climb.
+  time_limit: [{km: 42.2, hours: 5}]
+  time_limit_text: 5 hours, with earlier cut-offs along the course
+  entry_dates:
+  - {date: '2027-01-15', what: 'Applications close (earlier if no more can be accepted)', url: 'https://maltamarathon.com/malta-marathon/malta-marathon-race-info/', checked: '2026-11-28'}
+  link: {label: 'Malta Marathon: race and route info', url: 'https://maltamarathon.com/malta-marathon/malta-marathon-race-info/', checked: '2026-11-28'}
+- id: luxembourg-night-marathon
+  name: ING Night Marathon Luxembourg
+  series: independent
+  place: Luxembourg City, starting at Luxexpo The Box
+  country: Luxembourg
+  continent: europe
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, a team run, minimarathons for children and a 5K
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [open]
+  entry_note: The entry deadline is 24 March 2027, "if not sold out". The pages we opened give no cap.
+  note: The 2027 race is on Saturday 8 May 2027, an evening race starting at 7pm. The organizers' FAQ describes "a historic town centre grown on steep sandstone rocks".
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours
+  entry_dates:
+  - {date: '2027-03-24', what: 'Entry deadline, if not sold out', url: 'https://www.ing-night-marathon.lu/en/disciplines/marathon.html', checked: '2026-11-28'}
+  link: {label: 'ING Night Marathon Luxembourg: Marathon', url: 'https://www.ing-night-marathon.lu/en/disciplines/marathon.html', checked: '2026-11-28'}
+  more:
+  - {label: 'ING Night Marathon Luxembourg: FAQ', url: 'https://www.ing-night-marathon.lu/en/information/faq.html', checked: '2026-11-28'}
+- id: tallinn-marathon
+  name: Swedbank Tallinn Marathon
+  series: independent
+  place: Tallinn, starting and finishing on the edge of the UNESCO World Heritage-listed Old Town
+  country: Estonia
+  continent: europe
+  km: [42.2]
+  distances: Marathon and relay marathon; the organizers also stage a half marathon, a 10K (6.2 miles) Fall Race, a 5K youth run and children's races
+  terrain: [road]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: You register online through the organizer's site, with registration on site in race week too. Marathon runners must be at least 18. The pages we opened give no cap.
+  note: The 2027 event weekend is 10 to 12 September 2027, with the marathon on Sunday 12 September. The course runs on the streets and light traffic roads of Tallinn.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: the course is open for 6 hours, with checkpoints at the half and at 30 km
+  link: {label: 'Swedbank Tallinn Marathon: about the event', url: 'https://www.jooks.ee/en/tallinn-marathon/about-tallinn-marathon-info', checked: '2026-11-28'}
+  more:
+  - {label: 'Swedbank Tallinn Marathon: regulations', url: 'https://www.jooks.ee/en/tallinn-marathon/42-2-regulations', checked: '2026-11-28'}
+- id: vilnius-marathon
+  name: Swedbank Vilnius Marathon
+  series: independent
+  place: Vilnius, starting at Cathedral Square
+  country: Lithuania
+  continent: europe
+  km: [42.2]
+  distances: Marathon; the organizers also stage a half marathon, 10K (6.2 miles) and 5K runs, a children's run and walks
+  terrain: [road]
+  format: single
+  month: [9]
+  entry: [register]
+  entry_note: You register online through the organizer's site, or on site at the information center on the event day. Marathon runners must be at least 18. The rules we opened give no cap.
+  note: The 2027 race is on 12 September 2027; the organizers say the exact program will be given nearer the time. Support and music stations operate along the course.
+  time_limit: [{km: 42.2, hours: 5.5}]
+  time_limit_text: 5 hours 30 minutes
+  link: {label: 'Swedbank Vilnius Marathon 2027: rules', url: 'https://www.vilniausmaratonas.lt/en/informacija/nuostatai/', checked: '2026-11-28'}
+- id: kiawah-island-marathon
+  name: Kiawah Island Golf Resort Marathon
+  series: independent
+  place: Kiawah Island, South Carolina, starting and finishing at West Beach Village
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon and half marathon
+  terrain: [road]
+  format: single
+  month: [12]
+  entry: [open]
+  entry_note: A limited number of entries are available, and registration closes automatically when it reaches capacity. Marathon runners must be at least 18.
+  note: The 2026 race is on Saturday 12 December 2026, starting at 8am; the pages we opened give no 2027 date yet. The resort describes views of maritime forests, marshes and grand homes, on USATF-certified courses.
+  link: {label: 'Kiawah Island Golf Resort: the Kiawah Island Marathon', url: 'https://kiawahresort.com/recreation/kiawah-island-marathon/', checked: '2026-11-28'}
+- id: bermuda-marathon
+  name: PwC Bermuda Marathon
+  series: independent
+  place: Bermuda, from the Royal Naval Dockyard past Somerset Bridge, Horseshoe Bay and Gibb's Hill Lighthouse to Barr's Bay Park, Hamilton
+  country: Bermuda
+  continent: north-america
+  km: [42.2]
+  distances: Marathon; part of the Bermuda Triangle Challenge weekend, with a mile race, a 10K (6.2 miles) run and walk and a half marathon
+  terrain: [road]
+  format: single
+  month: [1]
+  entry: [register]
+  entry_note: You enter through the Bermuda Triangle Challenge site, on its own or as part of the three-race challenge. Runners must be at least 16 on race day. The page we opened gives no closing date or cap.
+  note: The 2027 race, the 50th, is on Sunday 17 January 2027, starting at 7am. Part of the course runs on the Bermuda Railway Trail.
+  time_limit: [{km: 42.2, hours: 6}]
+  time_limit_text: 6 hours
+  link: {label: 'Bermuda Triangle Challenge: PwC Bermuda Marathon', url: 'https://www.bermudatrianglechallenge.com/race-info/marathon/', checked: '2026-11-28'}
+- id: lincoln-marathon
+  name: Lincoln Marathon
+  series: independent
+  place: Lincoln, Nebraska, starting at 14th and Vine on the University of Nebraska campus and finishing on Memorial Loop
+  country: USA
+  continent: north-america
+  km: [42.2]
+  distances: Marathon and half marathon
+  terrain: [road]
+  format: single
+  month: [5]
+  entry: [register]
+  entry_note: Registration for 2027 opens on Saturday 5 December 2026 at midnight. The pages we opened give no closing date or cap.
+  note: The 2027 race, the 50th, is on 2 May 2027, with waves from 7am. It is a two-loop course; the half marathoners share the first loop, and water stations are never more than 2.5 miles (4 km) apart.
+  time_limit: [{km: 42.2, hours: 6.25}]
+  time_limit_text: 6 hours 15 minutes (14:18 minutes a mile); marathoners not at the half-finish turnoff by 10:20am are sent to the half finish
+  entry_dates:
+  - {date: '2026-12-05', what: 'Registration for 2027 opens at midnight', url: 'https://www.lincolnmarathon.org/', checked: '2026-11-28'}
+  link: {label: 'Lincoln Marathon: Home', url: 'https://www.lincolnmarathon.org/', checked: '2026-11-28'}
+  more:
+  - {label: 'Lincoln Marathon: Race day', url: 'https://www.lincolnmarathon.org/raceday/', checked: '2026-11-28'}
+- id: sunshine-coast-marathon
+  name: Sunshine Coast Marathon
+  series: independent
+  place: Sunshine Coast, Queensland, a single lap from Alexandra Headland out through Twin Waters and Mudjimba
+  country: Australia
+  continent: oceania
+  km: [42.2]
+  distances: Marathon; the festival also has a half marathon, 10K (6.2 miles), 5K, a 5K walk and a 2K
+  terrain: [road]
+  format: single
+  month: [8]
+  entry: [open]
+  entry_note: The 2027 home page asks you to leave your details to hear when entries open, but also shows Register Now buttons, so check the site. The 2026 marathon page said entries ran until sold out, and gave a minimum age of 17.
+  note: The 2027 festival is on 1 August 2027 (the 2026 race was the EVA Air Marathon). The organizers describe a predominately flat, AIMS-certified single-lap course.
+  time_limit: [{km: 42.2, hours: 6.33}]
+  time_limit_text: 6 hours 20 minutes from the 6am gun, with checkpoints along the way (from the 2026 marathon page)
+  link: {label: 'Sunshine Coast Marathon Festival: Home', url: 'https://sunshinecoastmarathon.com.au/', checked: '2026-11-28'}
+  more:
+  - {label: 'Sunshine Coast Marathon: Marathon 42.195 km (2026 details)', url: 'https://sunshinecoastmarathon.com.au/event-info/marathon-42-195km', checked: '2026-11-28'}
+- id: naha-marathon
+  name: NAHA Marathon
+  series: independent
+  place: Naha, Okinawa, from Onoyama Park on the Peace Memorial Park course, finishing at Onoyama Athletics Stadium
+  country: Japan
+  continent: asia
+  km: [42.2]
+  distances: Marathon
+  terrain: [road]
+  format: single
+  month: [12]
+  entry: [register]
+  entry_note: Entry for the 40th race has closed. It is capped at 30,000 runners, including priority places, and runners must be 16 or older on race day. The organizer's pages are in Japanese.
+  note: The 40th race is on Sunday 6 December 2026, starting at 9am; the finish closes at 3:15pm. The pages we opened give no 2027 date yet.
+  time_limit: [{km: 42.2, hours: 6.25}]
+  time_limit_text: 6 hours 15 minutes
+  link: {label: 'NAHA Marathon: race outline (Japanese)', url: 'https://naha-marathon.jp/info/', checked: '2026-11-28'}
+  more:
+  - {label: 'NAHA Marathon: entry (Japanese)', url: 'https://naha-marathon.jp/entry/', checked: '2026-11-28'}
+- id: patagonian-international-marathon
+  name: Patagonian International Marathon
+  series: independent
+  place: Torres del Paine, Chile, mostly on gravel roads (the organizers give 74% gravel and 26% asphalt), finishing at Hotel del Paine, Sector Serrano
+  country: Chile
+  continent: south-america
+  km: [42.2]
+  distances: Marathon (the organizers give the measured course as 42.01 km); the weekend also has 30K, 21K, 15K and 10K races
+  terrain: [trail]
+  format: single
+  month: [9]
+  entry: [open]
+  entry_note: Entry runs in periods, each "or until all available slots for the period are filled".
+  note: The 2027 race, the fifteenth edition, is on Saturday 4 September 2027. The organizers describe vehicle gravel routes with "various curves and steep slopes", and give the marathon 687 m (about 2,250 feet) of climb.
+  time_limit: [{km: 42.2, hours: 7}]
+  time_limit_text: 7 hours, which the organizers call "just a reference"
+  link: {label: 'Patagonian International Marathon: description', url: 'https://www.patagonianinternationalmarathon.com/en/description', checked: '2026-11-28'}
+  more:
+  - {label: 'Patagonian International Marathon: registration 2027', url: 'https://www.patagonianinternationalmarathon.com/en/registration-2027', checked: '2026-11-28'}
+- id: big-five-marathon
+  name: Big Five Marathon
+  series: independent
+  place: Entabeni Safari Conservancy, South Africa
+  country: South Africa
+  continent: africa
+  km: [42.2]
+  distances: Marathon and half marathon
+  terrain: [trail]
+  format: single
+  month: [6]
+  entry: [tour]
+  entry_note: Registration for 2027 is open. Entry is tied to the organizer's tour package (itinerary, transport, meals and accommodation), and registration closes 90 days before the package begins. The field is limited to 300, and marathon runners must be at least 18.
+  note: The 2027 race is on 19 June 2027. The organizers say to expect gravel and sand, and the race page gives 885 m (about 2,900 feet) of elevation gain. Nordic walking and trekking poles are not allowed.
+  time_limit: [{km: 42.2, hours: 7}]
+  time_limit_text: 7 hours after the start
+  link: {label: 'Big Five Marathon: the race', url: 'https://big-five-marathon.com/race', checked: '2026-11-28'}
 guides:
 - slug: how-to-get-a-place
   title: How to get a place in a big marathon

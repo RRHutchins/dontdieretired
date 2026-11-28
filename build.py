@@ -1258,7 +1258,15 @@ def build(make_social=True):
             if (PHEN or h.get("month_range")) and e.get("month"):
                 # Months that wrap the year (September to April) read as a range; otherwise a list
                 ms = e["month"]
-                e["month_label"] = f"{MONTHS[ms[0] - 1]} to {MONTHS[ms[-1] - 1]}" if len(ms) > 2 else " and ".join(MONTHS[m - 1] for m in ms)
+                # Split into runs of consecutive months (in the order listed, wrapping December to January), so two seasons
+                # such as [12, 1, 2, 6, 7, 8, 9] read "December to February and June to September" (28 Nov 2026)
+                _runs = [[ms[0]]]
+                for m in ms[1:]:
+                    if m == _runs[-1][-1] % 12 + 1:
+                        _runs[-1].append(m)
+                    else:
+                        _runs.append([m])
+                e["month_label"] = " and ".join(f"{MONTHS[r[0] - 1]} to {MONTHS[r[-1] - 1]}" if len(r) > 2 else " and ".join(MONTHS[m - 1] for m in r) for r in _runs)
             else:
                 e["month_label"] = " or ".join(MONTHS[m - 1] for m in e.get("month") or [])
             e["search"] = " ".join(x for x in [e["name"], e["place"], e["country"], e["distances"], F.get("type", {}).get(e.get("type"), "")] if x).lower()
