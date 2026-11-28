@@ -1128,9 +1128,12 @@ events:
   format: single
   month: [6]
   entry: [open]
-  entry_note: First come, first served and open to runners aged 18 or over, with a 48-hour priority window for UTMB Index holders.
-  note: Steep mountain trails, single track along mountain streams and ridgeline paths from the hot-spring town of Yamanaka Onsen, with a 27-hour limit.
-  link: {label: 'Kaga Spa by UTMB: KagaSpa 100K', url: 'https://kagaspa.utmb.world/races/KagaSpa100', checked: '2026-11-19'}
+  entry_note: First come, first served and open to runners aged 18 or over on race day, with a 48-hour priority window for UTMB Index holders; registration runs until 31 March 2027 or until the race is full.
+  note: An evening start on steep mountain trails, single track along mountain streams and ridgeline paths, finishing in the hot-spring town of Yamanaka Onsen.
+  time_limit: [{km: 97, hours: 27}]
+  link: {label: 'Kaga Spa by UTMB: KagaSpa 100K', url: 'https://kagaspa.utmb.world/races/KagaSpa100', checked: '2026-11-28'}
+  more:
+  - {label: 'Kaga Spa by UTMB: entry info', url: 'https://kagaspa.utmb.world/runners/entry', checked: '2026-11-28'}
 - id: om-die-dam
   name: Trojan Om Die Dam
   series: independent
@@ -1933,16 +1936,16 @@ events:
   format: single
   month: [4]
   entry: [application, register]
-  entry_note: The 100 miles is by application to the organizing committee. You need at least 12 ITRA points from up to three races in 2024 to 2026 (one of them a non-stop race of 110 km or more), a finish in the Patagonia Run 110K or 100 miles in 2025 or 2026, or a similar non-stop race in 2024 to 2026 with proof of your time. The 110K and 70K pages do not say how places are given out, and the registration page said registration was closed when we checked.
+  entry_note: The 100 miles is by application to the organizing committee. You need at least 12 ITRA points from up to three races in 2025 to 2027 (one of them a non-stop race of 110 km or more), or one of the qualifying finishes the page lists. The 110K and 70K pages do not say how places are given out, and the registration page said registration was closed when we checked.
   note: The 2027 festival runs from 7 to 11 April, with the 100 miles starting on Friday 9 April. The 110K page says 2026 finishers in 27 hours or less can enter the 2027 Western States 100 lottery.
   time_limit: [{km: 160.3, hours: 42}, {km: 107.3, hours: 35}, {km: 71, hours: 23.5}]
   time_limit_text: 'The race pages show 42 hours (100 miles), 35 hours (110K) and 23 hours 30 minutes (70K)'
-  link: {label: 'Patagonia Run: 100 miles', url: 'https://patagoniarun.com/en/100-millas/', checked: '2026-11-23'}
+  link: {label: 'Patagonia Run: 100 miles', url: 'https://patagoniarun.com/en/100-millas/', checked: '2026-11-28'}
   more:
   - {label: 'Patagonia Run 2027: home page', url: 'https://patagoniarun.com/en/', checked: '2026-11-23'}
   - {label: 'Patagonia Run: 110K', url: 'https://patagoniarun.com/en/110k/', checked: '2026-11-23'}
   - {label: 'Patagonia Run: 70K', url: 'https://patagoniarun.com/en/70k/', checked: '2026-11-23'}
-  - {label: 'Patagonia Run 2027: registration', url: 'https://patagoniarun.com/en/inscripciones/', checked: '2026-11-23'}
+  - {label: 'Patagonia Run 2027: registration', url: 'https://patagoniarun.com/en/inscripciones/', checked: '2026-11-28'}
 - id: surf-coast-century
   name: Surf Coast Century
   series: independent
@@ -2780,6 +2783,220 @@ events:
   - {label: 'The Fellsman: rules', url: 'https://fellsman.org.uk/the-event/rules/', checked: '2026-11-27'}
   entry_dates:
   - {date: '2027-03-19', what: 'Entry cut-off date for the 2027 Fellsman and Fellsman Dart', url: 'https://fellsman.org.uk/the-event/rules/', checked: '2026-11-27'}
+- id: el-jefe-100
+  name: El Jefe 100
+  series: destination-trail
+  place: Superior, Arizona
+  country: USA
+  continent: north-america
+  km: [170]
+  distances: 105.8 miles (170 km), point to point
+  climb: 12,548 ft (3,825 m) of gain
+  terrain: [desert, trail]
+  format: single
+  month: [4]
+  entry: [register]
+  entry_note: Register through UltraSignup from the organizer's page; the page names no lottery or qualifying race.
+  note: A point-to-point course that runs almost entirely on remote singletrack through Sonoran Desert country on National Forest land.
+  time_limit: [{km: 170, hours: 36}]
+  link: {label: 'Destination Trail: El Jefe 100', url: 'https://www.destinationtrailrun.com/el-jefe-100', checked: '2026-11-28'}
+  more:
+  - {label: 'Destination Trail: 2027 El Jefe 100 (race calendar)', url: 'https://www.destinationtrailrun.com/race-calendar/2027-el-jefe-100', checked: '2026-11-28'}
+- id: coldwater-hundred
+  name: Coldwater Hundred (Coldwater Rumble)
+  series: aravaipa
+  place: Estrella Mountain Regional Park, Goodyear, Arizona
+  country: USA
+  continent: north-america
+  km: [161, 100, 50]
+  distances: 100 miles (161 km), 100K and 50K, plus 20, 10 and 5 miles
+  climb: 8,687 ft (2,648 m) for the 100 miles
+  terrain: [desert, trail]
+  format: single
+  month: [1]
+  entry: [register]
+  entry_note: Register online through UltraSignup, where registration closes on the Monday before the race; a mail-in entry form is also offered.
+  note: The organizer says you will "mostly be running on rolling single and double track trails without any real substantial climbing in one shot", and because the race is in midwinter there is a long period of running at night.
+  time_limit: [{km: 161, hours: 32}]
+  link: {label: 'Aravaipa Running: Coldwater Hundred', url: 'https://www.aravaiparunning.com/coldwater/', checked: '2026-11-28'}
+- id: ouray-100
+  name: Ouray 100 Mile Endurance Run
+  series: independent
+  place: Ouray, San Juan Mountains, Colorado
+  country: USA
+  continent: north-america
+  km: [164]
+  distances: 102.1 miles (164 km)
+  climb: 41,862 ft (12,760 m) of gain
+  terrain: [mountain, trail]
+  format: single
+  month: [7]
+  entry: [register, qualifier]
+  entry_note: Register through UltraSignup and send proof of one qualifier before the event, such as an Ouray 50 or 100 finish in the last three years, a 100 km or 100-mile trail race finished within the cut-off, or 50 miles in under 11 hours. Ouray 50 starters get an early invitation to register for the next year's 100.
+  note: The organizer calls it "one of the most difficult 100 milers in the world", with over 40,000 ft of climbing from a start and finish at Fellin Park, near the town's hot springs.
+  time_limit: [{km: 164, hours: 52}]
+  link: {label: 'Ouray 100: the 100 miler', url: 'https://www.ouray100.com/100-miler', checked: '2026-11-28'}
+  more:
+  - {label: 'Ouray 100: qualifying', url: 'https://www.ouray100.com/qualifying', checked: '2026-11-28'}
+- id: manaslu-trail-race
+  name: Manaslu Trail Race
+  series: independent
+  place: Manaslu region
+  country: Nepal
+  continent: asia
+  km: [140]
+  distances: About 140 km over seven race days, plus about 40 km of hiking over two days
+  climb: Running between 800 m and 3,800 m, with hiking up to 5,160 m
+  terrain: [mountain, trail]
+  format: stage
+  month: [11]
+  entry: [application]
+  entry_note: Send the pre-registration form describing your running experience; you then get a link to register and pay a deposit. Travel insurance is compulsory.
+  note: A partial circuit of the Manaslu massif with a night at a monastery and a trail above a glacier to Manaslu Base Camp, for a small field of starters.
+  link: {label: 'Manaslu Trail Race', url: 'https://www.manaslutrailrace.org/', checked: '2026-11-28'}
+  more:
+  - {label: 'Manaslu Trail Race: steps to join', url: 'https://www.manaslutrailrace.org/registration/steps-to-join-the-manaslu-trail-race/', checked: '2026-11-28'}
+- id: run-larapinta
+  name: Run Larapinta Stage Race
+  series: independent
+  place: Alice Springs and the MacDonnell Ranges, Northern Territory
+  country: Australia
+  continent: oceania
+  km: [127]
+  distances: Malbunka, four stages (19.5, 41, 33 and 34 km); Namatjira, four shorter stages (83.5 km)
+  terrain: [desert, trail]
+  format: stage
+  month: [8]
+  entry: [ballot, qualifier]
+  entry_note: The 2027 places went by ballot in October 2026 and the race is now sold out with a wait list. Malbunka runners need a 50 km or 100 km trail race, or a marathon under 4 hours 30, within two years of the race.
+  note: Four days on sections of the 223 km Larapinta Trail between the Telegraph Station in Alice Springs and Mt Sonder, on singletrack the organizer calls "not too technical underfoot".
+  link: {label: 'Rapid Ascent: Run Larapinta event overview', url: 'https://runlarapinta.rapidascent.com.au/event-details/event-overview/', checked: '2026-11-28'}
+  more:
+  - {label: 'Rapid Ascent: Run Larapinta entry info', url: 'https://runlarapinta.rapidascent.com.au/event-entry/entry-info-and-fees/', checked: '2026-11-28'}
+- id: ultra-trail-drakensberg
+  name: RMB Ultra-trail Drakensberg
+  series: independent
+  place: Southern Drakensberg, Bushman's Nek to Sani Pass
+  country: South Africa
+  continent: africa
+  km: [162, 100]
+  distances: UTD Miler 162 km and UTD100 100 km, plus the GCU65 (the Giant's Cup hiking trail in a single run) and shorter races
+  climb: 6,200 m (Miler), 3,400 m (UTD100)
+  terrain: [mountain, trail]
+  format: single
+  month: [4]
+  entry: [register]
+  entry_note: Enter through the organizer's ticketing link; the race pages say entries open on 25 August. No qualifying race is stated.
+  note: The Miler runs the full length of the Giant's Cup Trail before a full ascent of Sani Pass; the organizer promises "mountain running at its very finest".
+  time_limit: [{km: 162, hours: 48}, {km: 100, hours: 26}]
+  link: {label: 'RMB Ultra-trail Drakensberg', url: 'https://www.ultratraildrakensberg.com/', checked: '2026-11-28'}
+  more:
+  - {label: 'Ultra-trail Drakensberg: UTD Miler', url: 'https://www.ultratraildrakensberg.com/utd-miler', checked: '2026-11-28'}
+  - {label: 'Ultra-trail Drakensberg: UTD100', url: 'https://www.ultratraildrakensberg.com/utd-100', checked: '2026-11-28'}
+- id: wildcoast-wildrun
+  name: Wildcoast Wildrun
+  series: independent
+  place: Kei Mouth to Hole-in-the-Wall, Wild Coast, Eastern Cape
+  country: South Africa
+  continent: africa
+  km: [112]
+  distances: 112 km in three stages
+  terrain: [trail]
+  format: stage
+  month: [9]
+  entry: [register]
+  entry_note: Sign up through the organizer's entry link; the page states no entry requirements.
+  note: Three days along the Wild Coast over beaches, grassy headlands and coastal forest; the organizer calls it "Three days of free running a wild coastal paradise".
+  link: {label: 'Wildrun: Wildcoast Wildrun 2027', url: 'https://www.wildrun.com/adventure/wildcoast-wildrun-2027', checked: '2026-11-28'}
+- id: racingtheplanet-brazil
+  name: 'RacingThePlanet: Brazil'
+  series: racingtheplanet
+  place: Chapada Diamantina (runners meet in Salvador)
+  country: Brazil
+  continent: south-america
+  km: [250]
+  distances: 250 km (155 miles) in six stages over seven days
+  terrain: [trail]
+  format: stage
+  month: [8]
+  entry: [register]
+  entry_note: Register online and pay a deposit to hold a place; places are limited to 150 competitors. You carry your own food, clothing and mandatory kit, and tents and water are provided.
+  note: A self-supported, fully marked course over dust roads, rocky paths, singletrack and river crossings among flat-topped plateaus, with cut-offs based on a walking speed of 4 km (2.5 miles) an hour.
+  link: {label: 'RacingThePlanet: Brazil 2027 at a glance', url: 'https://www.racingtheplanet.com/brazil/racingtheplanet/at-a-glance', checked: '2026-11-28'}
+  more:
+  - {label: 'RacingThePlanet: Brazil quick facts', url: 'https://www.racingtheplanet.com/brazil/racingtheplanet/quick-facts', checked: '2026-11-28'}
+- id: kat100
+  name: KAT100 by UTMB
+  series: utmb
+  place: Fieberbrunn, Kitzbühel Alps, Tyrol
+  country: Austria
+  continent: europe
+  km: [169, 75, 52]
+  distances: 100 Miles 169 km, Endurance Trail 75 km and Marathon Trail 52 km, plus 24 km and 8 km
+  climb: 9,000 m (100 Miles), 4,100 m (75 km), 3,100 m (52 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [8]
+  entry: [register]
+  entry_note: General registration is open on the UTMB registration site, with a sign-up for news of extra places if a race sells out. The page names no qualifying requirement; the 100 Miles gives 4 Running Stones.
+  note: The 100 Miles starts at 18:00 in Fieberbrunn on what the organizer calls "Fantastic flowing trails on high panoramic paths and rocky passages".
+  time_limit: [{km: 169, hours: 45}]
+  link: {label: 'KAT100 by UTMB', url: 'https://kat.utmb.world/', checked: '2026-11-28'}
+  more:
+  - {label: 'KAT100 by UTMB: 100 Miles', url: 'https://kat.utmb.world/races/100-miles', checked: '2026-11-28'}
+- id: lofoten-ultra-trail
+  name: Lofoten Ultra-Trail
+  series: independent
+  place: Kirkefjorden to Svolvær, Lofoten
+  country: Norway
+  continent: europe
+  km: [160, 87, 48]
+  distances: 100 miles (159.7 km), 50 miles (87.3 km) and 48 km (47.8 km), plus 24 km and 12 km
+  climb: 6,300 m (100 miles), 3,670 m (50 miles), 2,620 m (48 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [6]
+  entry: [register]
+  entry_note: Register through the organizer's registration site; no qualifying race is stated. The race is run in English, and a runner who clearly cannot follow English briefings and safety calls is refused a start.
+  note: The 100 miles crosses the island chain from Kirkefjorden in the west to the square in Svolvær in the east, under the midnight sun.
+  link: {label: 'The Arctic Triple: Lofoten Ultra-Trail', url: 'https://thearctictriple.no/lofoten-ultratrail', checked: '2026-11-28'}
+- id: restonica-trail
+  name: Restonica Trail by UTMB
+  series: utmb
+  place: Corte, Corsica
+  country: France
+  continent: europe
+  km: [110, 69, 52]
+  distances: Ultra-Trail di Corsica 110 km, Restonica Trail 69 km and Pianu Maiò 52 km, plus 33 km and 17 km
+  climb: 7,200 m (110 km), 4,000 m (69 km), 2,900 m (52 km)
+  terrain: [mountain, trail]
+  format: single
+  month: [7]
+  entry: [register]
+  entry_note: Registration for 2027 is open on the UTMB registration site and needs a MyUTMB account. The ultra gives 4 Running Stones.
+  note: The ultra climbs to its high point at Bocca Crucetta (2,415 m), follows sections of the GR20 and passes the shore of Lac du Ninu, with the Capitellu and Melu lakes below, before finishing in Corte.
+  link: {label: 'Restonica Trail: 2027 calendar, registration open', url: 'https://www.restonicatrail.fr/calendrier-2025/', checked: '2026-11-28'}
+  more:
+  - {label: "Restonica Trail: L'Ultra-Trail", url: 'https://www.restonicatrail.fr/lultra-trail-2/', checked: '2026-11-28'}
+- id: oh-meu-deus
+  name: Oh Meu Deus by UTMB
+  series: utmb
+  place: Serra da Lousã, Serra do Açor and Serra da Estrela, central Portugal
+  country: Portugal
+  continent: europe
+  km: [167, 94, 52]
+  distances: 100M 167 km, 100K 94 km and 50K 52 km, plus a 22 km race
+  climb: 8,900 m (100M), 5,300 m (100K), 2,900 m (50K)
+  terrain: [mountain, trail]
+  format: single
+  month: [4, 5]
+  entry: [register]
+  entry_note: Registration is open for every race on the UTMB registration site; the page names no entry requirement. The 100M gives 4 Running Stones.
+  note: The 100M links the Serra da Lousã, Serra do Açor and Serra da Estrela; the organizer calls the event "a tough expedition, where respect for nature is essential".
+  time_limit: [{km: 167, hours: 44}]
+  link: {label: 'Oh Meu Deus by UTMB: overview', url: 'https://ohmeudeus.utmb.world/en/overview', checked: '2026-11-28'}
+  more:
+  - {label: 'Oh Meu Deus by UTMB: 100M', url: 'https://ohmeudeus.utmb.world/races/omd100m', checked: '2026-11-28'}
 guides:
 - slug: kit-by-environment
   title: Ultra running kit for mountains, desert, winter and lowland trails
