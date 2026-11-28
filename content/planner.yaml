@@ -333,6 +333,7 @@ notes:
   book_closed: "The window we found for \"{step}\" ended on {by}, before today. There may be other ways in: check the organiser's own website."
   # Under the date picker on an activity page (RUNBOOK §6s, day 3): why the date we fill in was chosen.
   suggest_fixed: "We have filled in the next date we found published. Check it on the organiser's own website before you book anything."
+  suggest_fixed_soon: "We have filled in the next date we found published. It is closer than our usual {weeks}-week run-up, so start soon. Check the date on the organiser's own website before you book anything."
   suggest_season: "We have filled in the first of its best months ({months}) that leaves our usual {weeks}-week run-up. Change it to suit you."
   # In the month picker, after each of the activity's best months (review finding 6).
   month_good: "{month}, a good time"

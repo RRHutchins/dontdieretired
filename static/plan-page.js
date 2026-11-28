@@ -84,7 +84,7 @@
   }
   function suggestion() {
     const s = P.suggest(A, { today });
-    sug.textContent = fill(N['suggest_' + s.why], { months: P.monthsText(A.when), weeks: A.lead_weeks });
+    sug.textContent = fill(N['suggest_' + s.why + (s.soon ? '_soon' : '')], { months: P.monthsText(A.when), weeks: A.lead_weeks });
     return s;
   }
 

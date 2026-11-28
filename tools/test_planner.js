@@ -134,8 +134,26 @@ t('the suggested date gives a full, unsqueezed plan in the best months', () => {
   for (const a of acts) {
     const s = P.suggest(a, { today: TODAY }), p = P.build(a, data, Object.assign({ today: TODAY }, s));
     assert.strictEqual(p.status, 'ok', a.id);
-    assert.ok(!p.notes.some(x => x.includes('closer together') || x.includes('outside the best months') || x.includes('usually takes')), `${a.id}: ${p.notes}`);
+    assert.ok(!p.notes.some(x => (!s.soon && x.includes('closer together')) || x.includes('outside the best months') || x.includes('usually takes')), `${a.id}: ${p.notes}`);
   }
+});
+
+t('a published date closer than the run-up is still offered (soon), squeezed; not under a week, not under the training minimum', () => {
+  const a = Object.assign({}, byId['see-up-helly-aa'], { dates: Object.assign({}, byId['see-up-helly-aa'].dates, { next: '2027-01-26' }) });
+  const today = plus('2027-01-26', -7 * (a.lead_weeks - 4));
+  const s = P.suggest(a, { today });
+  assert.deepStrictEqual(s, { date: '2027-01-26', why: 'fixed', soon: true });
+  const p = P.build(a, data, Object.assign({ today }, s));
+  assert.strictEqual(p.status, 'ok'); assert.ok(p.notes.some(x => x.includes('closer together')), p.notes);
+  assert.ok(p.steps.every(x => !x.date || x.date >= today), 'no step before today');
+  assert.strictEqual(P.suggest(a, { today: plus('2027-01-26', -6) }).date === '2027-01-26', false, 'under a week: the next season instead');
+  assert.deepStrictEqual(P.suggest(a, { today: plus('2027-01-26', -7 * a.lead_weeks) }), { date: '2027-01-26', why: 'fixed' });
+  assert.strictEqual(P.fit(a, new Set(['2027-01']), { today }).date, '2027-01-26', 'a fixed date is never moved');
+  const ev = acts.find(x => x.event && x.dates && x.dates.next);
+  const e = Object.assign({}, ev, { dates: Object.assign({}, ev.dates, { next: '2027-09-12' }) });
+  assert.ok(!P.suggest(e, { today: plus('2027-09-12', -7 * (e.event.min_weeks - 1)) }).soon, 'not inside the training minimum');
+  const e2 = P.suggest(e, { today: plus('2027-09-12', -7 * e.event.min_weeks) });
+  if (e.event.min_weeks * 7 < e.lead_weeks * 7) { assert.strictEqual(e2.soon, true); assert.strictEqual(P.build(e, data, Object.assign({ today: plus('2027-09-12', -7 * e.event.min_weeks) }, e2)).status, 'ok'); }
 });
 
 t('affiliate links are marked so the page can show the disclosure', () => {

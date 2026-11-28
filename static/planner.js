@@ -77,10 +77,19 @@
 
   /* The suggested date for an activity: this year's fixed date if dates.yaml has one far enough ahead, else the start of
      the next best month that leaves the full run-up, else (any time) the full run-up from today.
-     `why` says which: fixed | season | any (the words are content/planner.yaml → notes.suggest_*). */
+     `why` says which: fixed | season | any (the words are content/planner.yaml → notes.suggest_*).
+     A published date closer than the usual run-up but at least SOON_MIN days away (and, for an engine event, no sooner
+     than its minimum training) is still offered, with soon: true (notes.suggest_fixed_soon; the plan's steps are then
+     squeezed), so Up Helly Aa or a New Year's Day dip planned in late November means this winter, not the next
+     (28 Nov 2026: before this, the plan box offered January 2028). */
+  const SOON_MIN = 7;
   function suggest(a, opts) {
     const today = todayUTC(opts && opts.today), lead = a.lead_weeks * 7;
-    if (a.dates && a.dates.next) { const n = parse(a.dates.next); if (n && diffDays(today, n) >= lead) return { date: a.dates.next, why: 'fixed' }; }
+    if (a.dates && a.dates.next) {
+      const n = parse(a.dates.next), d = n ? diffDays(today, n) : -1;
+      if (n && d >= lead) return { date: a.dates.next, why: 'fixed' };
+      if (n && d >= SOON_MIN && (!a.event || d >= a.event.min_weeks * 7)) return { date: a.dates.next, why: 'fixed', soon: true };
+    }
     const months = (a.dates && a.dates.months) || a.when || [];
     if (!months.length) return { date: iso(addDays(today, Math.max(lead, 7))), why: 'any' };
     for (let i = 0; i < 36; i++) {
