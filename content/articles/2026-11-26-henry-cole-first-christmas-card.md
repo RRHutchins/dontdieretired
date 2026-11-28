@@ -4,7 +4,8 @@ slug: henry-cole-first-christmas-card
 date: 2026-11-26
 photo_file: "File:FirstX-MasPostcard1843.jpg"
 photo_caption: "The first Christmas card, designed by John Callcott Horsley and commissioned by Henry Cole in 1843: a family raising a glass in the middle, scenes of charity on either side, and \"A Merry Christmas and a Happy New Year to you\"."
-photo_alt: "A hand-colored Victorian card framed by a rustic trellis of twigs and vines. In the center a family sits at a table raising glasses of wine; side panels show people giving food and clothing to the poor; a banner below reads A Merry Christmas and a Happy New Year to you."
+photo_checked: 2026-11-28
+photo_alt: "A hand-colored Victorian card framed by a rustic trellis of twigs and vines. In the center a family sits at a table raising glasses of wine; side panels show people giving food and clothing to the poor; a banner below reads A Merry Christmas and a Happy New Year to you. This copy is addressed to Mr Price from F C Hardy."
 # photo_social: false: this pack is dated 26 Nov and already in Buffer; adding the credit would change its text and post it again (RUNBOOK §6d).
 photo_social: false
 category: curious

@@ -2,6 +2,9 @@
 title: "Grocery lists, résumés and a check on every answer: the free AI classes at an Indianapolis library"
 slug: indianapolis-library-ai-class-pam-parks-mike-biro
 date: 2026-11-27
+photo_file: "File:Central Library, Indianapolis Public Library, The Learning Curve.jpg"
+photo_caption: "The Learning Curve, a seating area among the books at the Indianapolis Public Library's Central Library, photographed in 2024. The class in this story was held at the library's Nora Branch."
+photo_alt: "A quiet library space with a round green table and four black chairs on a wooden floor, curved shelves of books behind and strings of small lights overhead."
 category: ai
 tags: [ai, ai-literacy, libraries, learning, careers, indianapolis, women, men]
 segments: [learner, changer]
